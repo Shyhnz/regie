@@ -8,11 +8,20 @@ import Loops from '../components/Loops.jsx';
 import SegmentVideo from '../components/SegmentVideo.jsx';
 import VideoStill from '../components/VideoStill.jsx';
 import { SkillRules, SkillPrompts, SkillRepos, SkillBody } from '../components/Skills.jsx';
+import { t } from '../i18n.js';
 
 const KIND = {
   variant: 'ta variante', guide: 'guide de style', style: 'style', plan: 'plan', video: 'vidéo', etude: 'étude 60 fps', outil: 'outil', technique: 'technique',
   'skill-prompt': 'prompt open source', 'skill-rule': 'règle open source', 'skill-repo': 'dépôt de skill',
 };
+// Le libellé d'un type de fiche, dans la langue de l'interface.
+const kindLabel = (kind) => (KIND[kind] ? t(KIND[kind]) : '');
+
+// « vu dans 12 vidéos, 5 notées 4 ou 5 »
+function seenLabel(n, good) {
+  if (good) return n > 1 ? t('vu dans {n} vidéos, {good} notées 4 ou 5', { n, good }) : t('vu dans {n} vidéo, notée 4 ou 5', { n });
+  return n > 1 ? t('vu dans {n} vidéos', { n }) : t('vu dans {n} vidéo', { n });
+}
 const storedFilm = () => { try { return localStorage.getItem('regie.film') || ''; } catch { return ''; } };
 
 function useTargetFilm(films) {
@@ -31,8 +40,8 @@ function Card({ item, catLabel, added, onAdd }) {
   const [hover, setHover] = useState(false);
   const segment = !item.clip && img?.clip;
   const moving = item.clip || segment;
-  const kicker = catLabel || (item.kind === 'technique' ? null : KIND[item.kind]);
-  const foot = item.kind === 'video' ? `${item.handle} · ${item.familyLabel} · ${item.musicLabel}` : item.seenIn ? `vu dans ${item.seenIn} vidéos${item.goodIn ? `, ${item.goodIn} notées 4 ou 5` : ''}` : null;
+  const kicker = catLabel || (item.kind === 'technique' ? null : kindLabel(item.kind));
+  const foot = item.kind === 'video' ? `${item.handle} · ${item.familyLabel} · ${item.musicLabel}` : item.seenIn ? seenLabel(item.seenIn, item.goodIn) : null;
   return (
     <li className="lib-card">
       <a href={`#/bibliotheque/${item.cat}/${encodeURIComponent(item.id)}`} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} onFocus={() => setHover(true)} onBlur={() => setHover(false)}>
@@ -40,14 +49,14 @@ function Card({ item, catLabel, added, onAdd }) {
           {hover && item.clip ? <video src={item.clip} autoPlay muted loop playsInline />
             : hover && segment ? <SegmentVideo src={segment.src} start={segment.start} end={segment.end} />
               : img?.src ? <img src={img.src} alt="" loading="lazy" />
-                : img?.clip ? <VideoStill clip={img.clip} /> : <span className="frame-empty mono">{KIND[item.kind]}</span>}
-          {moving && !hover && <span className="play-badge" aria-hidden="true">▶ au survol</span>}
+                : img?.clip ? <VideoStill clip={img.clip} /> : <span className="frame-empty mono">{kindLabel(item.kind)}</span>}
+          {moving && !hover && <span className="play-badge" aria-hidden="true">{t('▶ au survol')}</span>}
         </div>
         <div className="lib-body">
           {(kicker || item.kind === 'video') && (
             <div className="lib-kicker">
               {kicker && <span className="eyebrow">{kicker}</span>}
-              {item.kind === 'video' && <span className="craft" title={`Note ${item.craft} sur 5`}>{'★'.repeat(item.craft)}<span className="faint">{'★'.repeat(5 - item.craft)}</span></span>}
+              {item.kind === 'video' && <span className="craft" title={t('Note {n} sur 5', { n: item.craft })}>{'★'.repeat(item.craft)}<span className="faint">{'★'.repeat(5 - item.craft)}</span></span>}
             </div>
           )}
           <strong>{item.title}</strong>
@@ -56,7 +65,7 @@ function Card({ item, catLabel, added, onAdd }) {
         </div>
       </a>
       {onAdd && (
-        <button className={`lib-add ${added ? 'is-added' : ''}`} onClick={() => onAdd(item)} disabled={added} aria-label={added ? `${item.title} est dans le film` : `Ajouter ${item.title} au film`}>
+        <button className={`lib-add ${added ? 'is-added' : ''}`} onClick={() => onAdd(item)} disabled={added} aria-label={added ? t('{title} est dans le film', { title: item.title }) : t('Ajouter {title} au film', { title: item.title })}>
           {added ? '✓' : '+'}
         </button>
       )}
@@ -68,7 +77,7 @@ function InMotion({ clip }) {
   const [on, setOn] = useState(false);
   return on
     ? <SegmentVideo className="detail-clip" src={clip.src} start={clip.start} end={clip.end} controls />
-    : <button className="btn sm" onClick={() => setOn(true)}>▶ Voir en mouvement</button>;
+    : <button className="btn sm" onClick={() => setOn(true)}>{t('▶ Voir en mouvement')}</button>;
 }
 
 function Detail({ id, lib, filmSlug, films, addedIds, onAdd, onClose }) {
@@ -89,31 +98,31 @@ function Detail({ id, lib, filmSlug, films, addedIds, onAdd, onClose }) {
   const md = data?.md ? data.md.replace(/^## .+\n/, '') : null;
   return (
     <div className="drawer-wrap" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
-      <aside className="drawer" ref={panel} tabIndex={-1} aria-label="Fiche de la Bible">
+      <aside className="drawer" ref={panel} tabIndex={-1} aria-label={t('Fiche de la Bible')}>
         <div className="drawer-head">
-          <button className="btn sm ghost" onClick={onClose}>← Retour</button>
+          <button className="btn sm ghost" onClick={onClose}>{t('← Retour')}</button>
           <span className="grow" />
-          {item?.page && <a className="btn sm ghost" href={item.page} target="_blank" rel="noreferrer">Page source</a>}
-          {item?.url && <a className="btn sm ghost" href={item.url} target="_blank" rel="noreferrer">Voir la source</a>}
+          {item?.page && <a className="btn sm ghost" href={item.page} target="_blank" rel="noreferrer">{t('Page source')}</a>}
+          {item?.url && <a className="btn sm ghost" href={item.url} target="_blank" rel="noreferrer">{t('Voir la source')}</a>}
         </div>
-        {error ? <div className="error-box"><strong>Cette fiche ne s’ouvre pas.</strong><span>{error.message}</span></div> : !item ? <div className="skeleton" style={{ height: 300 }} /> : (
+        {error ? <div className="error-box"><strong>{t('Cette fiche ne s’ouvre pas.')}</strong><span>{error.message}</span></div> : !item ? <div className="skeleton" style={{ height: 300 }} /> : (
           <div className="drawer-body">
-            <div className="eyebrow">{lib.categories.find((c) => c.id === item.cat)?.label} · {KIND[item.kind]}</div>
+            <div className="eyebrow">{lib.categories.find((c) => c.id === item.cat)?.label} · {kindLabel(item.kind)}</div>
             <h2 className="drawer-title">{item.title}</h2>
             {item.aka && <p className="lib-aka">{item.aka}</p>}
 
             <div className="add-box">
               {film ? (
-                added ? <span className="status done">Dans la sélection de « {film.title} »</span> : (
+                added ? <span className="status done">{t('Dans la sélection de « {film} »', { film: film.title })}</span> : (
                   <>
                     <div className="field" style={{ flex: 1 }}>
-                      <label htmlFor="add-note">Pour quoi, dans « {film.title} » ? <span className="faint">(facultatif)</span></label>
-                      <input id="add-note" className="input" value={note} onChange={(e) => setNote(e.target.value)} placeholder="l’accroche, les transitions, l’ambiance…" onKeyDown={(e) => e.key === 'Enter' && onAdd(item, note)} />
+                      <label htmlFor="add-note">{t('Pour quoi, dans « {film} » ?', { film: film.title })} <span className="faint">{t('(facultatif)')}</span></label>
+                      <input id="add-note" className="input" value={note} onChange={(e) => setNote(e.target.value)} placeholder={t('l’accroche, les transitions, l’ambiance…')} onKeyDown={(e) => e.key === 'Enter' && onAdd(item, note)} />
                     </div>
-                    <button className="btn primary" onClick={() => onAdd(item, note)}>Ajouter au film</button>
+                    <button className="btn primary" onClick={() => onAdd(item, note)}>{t('Ajouter au film')}</button>
                   </>
                 )
-              ) : <span className="muted">Crée un film pour y ranger des références.</span>}
+              ) : <span className="muted">{t('Crée un film pour y ranger des références.')}</span>}
             </div>
 
             {item.clip && <video className="detail-clip" src={item.clip} controls autoPlay muted loop playsInline />}
@@ -132,22 +141,22 @@ function Detail({ id, lib, filmSlug, films, addedIds, onAdd, onClose }) {
             )}
             {item.summary && <p className="detail-summary">{item.summary}</p>}
             {item.kind?.startsWith('skill-') && <SkillBody item={item} chapters={lib.skills?.chapters} addedIds={addedIds} onAdd={(x) => onAdd(x)} />}
-            {item.when && <div className="when"><span className="eyebrow">Quand l’utiliser</span><p>{item.when}</p></div>}
+            {item.when && <div className="when"><span className="eyebrow">{t('Quand l’utiliser')}</span><p>{item.when}</p></div>}
 
             {item.kind === 'video' && (
               <div className="video-facts">
-                {item.craftReason && <p><strong>Note {item.craft}/5 · </strong>{item.craftReason}</p>}
+                {item.craftReason && <p><strong>{t('Note {n}/5', { n: item.craft })} · </strong>{item.craftReason}</p>}
                 {item.palette?.length > 0 && <div className="palette">{item.palette.map((p) => <span key={p.hex + p.role} title={p.role}><i style={{ background: p.hex }} /> <span className="mono">{p.hex}</span></span>)}</div>}
-                {item.steal?.length > 0 && <div><span className="eyebrow">À lui prendre</span><ul>{item.steal.map((s, i) => <li key={i}>{s}</li>)}</ul></div>}
-                {item.flaws?.length > 0 && <div><span className="eyebrow">Ses défauts</span><ul>{item.flaws.map((s, i) => <li key={i}>{s}</li>)}</ul></div>}
-                {item.techniques?.length > 0 && <div className="tags">{item.techniques.map((t) => <span key={t} className="tag">{t}</span>)}</div>}
-                {item.prompt && <details><summary><strong>Le prompt intégral</strong></summary><pre className="ev-prompt">{item.prompt}</pre></details>}
+                {item.steal?.length > 0 && <div><span className="eyebrow">{t('À lui prendre')}</span><ul>{item.steal.map((s, i) => <li key={i}>{s}</li>)}</ul></div>}
+                {item.flaws?.length > 0 && <div><span className="eyebrow">{t('Ses défauts')}</span><ul>{item.flaws.map((s, i) => <li key={i}>{s}</li>)}</ul></div>}
+                {item.techniques?.length > 0 && <div className="tags">{item.techniques.map((tech) => <span key={tech} className="tag">{tech}</span>)}</div>}
+                {item.prompt && <details><summary><strong>{t('Le prompt intégral')}</strong></summary><pre className="ev-prompt">{item.prompt}</pre></details>}
               </div>
             )}
 
             {item.videos?.length > 0 && (
               <div className="linked">
-                <span className="eyebrow">Vidéos citées · {item.videos.length}</span>
+                <span className="eyebrow">{t('Vidéos citées')} · {item.videos.length}</span>
                 <ul className="linked-grid">
                   {item.videos.filter((s) => bySlug[s]).slice(0, 12).map((s) => (
                     <li key={s}>
@@ -160,7 +169,7 @@ function Detail({ id, lib, filmSlug, films, addedIds, onAdd, onClose }) {
                 </ul>
               </div>
             )}
-            {md && <details className="fulltext"><summary><strong>Texte complet de la fiche</strong> <span className="faint">recettes HyperFrames et After Effects, mesures</span></summary><Markdown text={md} /></details>}
+            {md && <details className="fulltext"><summary><strong>{t('Texte complet de la fiche')}</strong> <span className="faint">{t('recettes HyperFrames et After Effects, mesures')}</span></summary><Markdown text={md} /></details>}
           </div>
         )}
         {box != null && item && <Lightbox items={item.images.filter((im) => im.src).map((im) => ({ src: im.src, label: item.title, caption: im.caption }))} start={box} onClose={() => setBox(null)} />}
@@ -197,31 +206,31 @@ export default function Library({ cat = 'styles', itemId }) {
   }, [lib, category, q, family, minCraft, synced]);
 
   const add = async (item, note = '') => {
-    if (!filmSlug) { toast('Crée d’abord un film', 'bad'); return; }
+    if (!filmSlug) { toast(t('Crée d’abord un film'), 'bad'); return; }
     try {
       await api(`/api/films/${filmSlug}/moodboard`, { method: 'POST', body: { id: item.id, note } });
       setMoodIds((s) => new Set([...s, item.id]));
-      toast(`« ${item.title} » ajouté au film`);
+      toast(t('« {titre} » ajouté au film', { titre: item.title }));
     } catch (e) { toast(e.message, 'bad'); }
   };
   const addSkill = filmSlug ? (x) => add(x) : null;
   const addLoop = async (tile) => {
-    if (!filmSlug) { toast('Crée d’abord un film', 'bad'); return; }
+    if (!filmSlug) { toast(t('Crée d’abord un film'), 'bad'); return; }
     try {
       await api(`/api/films/${filmSlug}/moodboard/loop`, { method: 'POST', body: { id: tile.id, name: tile.name } });
       setMoodIds((s) => new Set([...s, `loop:${tile.id}`]));
-      toast(`Boucle « ${tile.name} » ajoutée au film`);
+      toast(t('Boucle « {nom} » ajoutée au film', { nom: tile.name }));
     } catch (e) { toast(e.message, 'bad'); }
   };
 
-  if (error) return <main className="page"><div className="error-box" role="alert"><strong>La Bibliothèque ne s’est pas chargée.</strong><span>{error.message}</span><div><button className="btn sm" onClick={() => reload()}>Réessayer</button></div></div></main>;
+  if (error) return <main className="page"><div className="error-box" role="alert"><strong>{t('La Bibliothèque ne s’est pas chargée.')}</strong><span>{error.message}</span><div><button className="btn sm" onClick={() => reload()}>{t('Réessayer')}</button></div></div></main>;
   if (!lib) return <div className="lib-layout"><div className="skeleton" style={{ height: 500 }} /><div className="skeleton" style={{ height: 500 }} /></div>;
   const groups = [...new Set(lib.categories.map((c) => c.group))];
   const studioFilms = (films || []).filter((f) => f.studio);
 
   return (
     <div className="lib-layout">
-      <nav className="lib-nav" aria-label="Catégories de la Bible">
+      <nav className="lib-nav" aria-label={t('Catégories de la Bible')}>
         {groups.map((g) => (
           <div key={g} className="lib-group">
             <div className="eyebrow">{g}</div>
@@ -237,36 +246,36 @@ export default function Library({ cat = 'styles', itemId }) {
       <main className="lib-main">
         <div className="lib-head">
           <div>
-            <div className="eyebrow">Bibliothèque de la Bible</div>
-            <h1>{q ? `« ${q} »` : category.label}</h1>
-            <p className="lead" style={{ marginTop: 6 }}>{q ? `${items.length} fiche${items.length > 1 ? 's' : ''} dans toute la Bible` : category.hint || `Chapitre « ${category.label} » : chaque fiche montre l’effet, quand l’utiliser et les vidéos où il est réussi.`}</p>
+            <div className="eyebrow">{t('Bibliothèque de la Bible')}</div>
+            <h1>{q ? t('« {q} »', { q }) : category.label}</h1>
+            <p className="lead" style={{ marginTop: 6 }}>{q ? (items.length > 1 ? t('{n} fiches dans toute la Bible', { n: items.length }) : t('{n} fiche dans toute la Bible', { n: items.length })) : category.hint || t('Chapitre « {chapitre} » : chaque fiche montre l’effet, quand l’utiliser et les vidéos où il est réussi.', { chapitre: category.label })}</p>
           </div>
           <div className="lib-target">
-            <label htmlFor="target" className="eyebrow">Ajouter au film</label>
+            <label htmlFor="target" className="eyebrow">{t('Ajouter au film')}</label>
             {studioFilms.length ? (
               <select id="target" className="select" value={filmSlug} onChange={(e) => setFilmSlug(e.target.value)}>
                 {studioFilms.map((f) => <option key={f.slug} value={f.slug}>{f.title}</option>)}
               </select>
-            ) : <a className="btn sm" href="#/">Créer un film</a>}
-            {filmSlug && <a className="btn sm ghost" href={`#/film/${filmSlug}/scenario`}>Voir la sélection · {moodIds.size}</a>}
+            ) : <a className="btn sm" href="#/">{t('Créer un film')}</a>}
+            {filmSlug && <a className="btn sm ghost" href={`#/film/${filmSlug}/scenario`}>{t('Voir la sélection')} · {moodIds.size}</a>}
           </div>
         </div>
 
         <div className="lib-filters">
           <div className="field search">
-            <label htmlFor="lib-q" className="sr-only">Chercher dans la Bible</label>
-            <input id="lib-q" className="input" type="search" enterKeyHint="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Chercher dans toute la Bible : iris, néon, 3D, curseur, papier…" />
+            <label htmlFor="lib-q" className="sr-only">{t('Chercher dans la Bible')}</label>
+            <input id="lib-q" className="input" type="search" enterKeyHint="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('Chercher dans toute la Bible : iris, néon, 3D, curseur, papier…')} />
           </div>
           {!q && category.id === 'videos' && (
             <>
-              <select className="select" style={{ width: 'auto' }} value={family} onChange={(e) => setFamily(e.target.value)} aria-label="Famille">
-                <option value="">Toutes les familles</option>
+              <select className="select" style={{ width: 'auto' }} value={family} onChange={(e) => setFamily(e.target.value)} aria-label={t('Famille')}>
+                <option value="">{t('Toutes les familles')}</option>
                 {[...new Set(lib.videos.map((v) => v.family))].map((f) => <option key={f} value={f}>{lib.videos.find((v) => v.family === f).familyLabel}</option>)}
               </select>
-              <div className="segmented" role="group" aria-label="Note minimale">
-                {[[5, '5 ★'], [4, '4 ★ et +'], [1, 'Toutes']].map(([v, l]) => <button key={v} type="button" aria-pressed={minCraft === v} onClick={() => setMinCraft(v)}>{l}</button>)}
+              <div className="segmented" role="group" aria-label={t('Note minimale')}>
+                {[[5, '5 ★'], [4, '4 ★ et +'], [1, 'Toutes']].map(([v, l]) => <button key={v} type="button" aria-pressed={minCraft === v} onClick={() => setMinCraft(v)}>{t(l)}</button>)}
               </div>
-              <label className="check"><input type="checkbox" checked={synced} onChange={(e) => setSynced(e.target.checked)} />Animées sur la musique</label>
+              <label className="check"><input type="checkbox" checked={synced} onChange={(e) => setSynced(e.target.checked)} />{t('Animées sur la musique')}</label>
             </>
           )}
         </div>
@@ -281,9 +290,9 @@ export default function Library({ cat = 'styles', itemId }) {
           <SkillRepos />
         ) : items.length === 0 ? (
           <div className="empty">
-            <strong>{q ? `Aucune fiche de la Bible pour « ${q} ».` : 'Aucune fiche avec ces filtres.'}</strong>
-            <span>{q ? `Essaie un mot plus court, ou en anglais : les fiches portent aussi leurs noms anglais.${lib.skills ? ' Les skills open source sont cherchés plus bas.' : ''}` : 'Élargis la note minimale ou la famille.'}</span>
-            <button className="btn sm" onClick={() => { setQ(''); setFamily(''); setMinCraft(1); setSynced(false); }}>Effacer les filtres</button>
+            <strong>{q ? t('Aucune fiche de la Bible pour « {q} ».', { q }) : t('Aucune fiche avec ces filtres.')}</strong>
+            <span>{q ? `${t('Essaie un mot plus court, ou en anglais : les fiches portent aussi leurs noms anglais.')}${lib.skills ? ` ${t('Les skills open source sont cherchés plus bas.')}` : ''}` : t('Élargis la note minimale ou la famille.')}</span>
+            <button className="btn sm" onClick={() => { setQ(''); setFamily(''); setMinCraft(1); setSynced(false); }}>{t('Effacer les filtres')}</button>
           </div>
         ) : (
           <ul className="lib-grid">
@@ -293,13 +302,13 @@ export default function Library({ cat = 'styles', itemId }) {
 
         {/* Les skills open source complètent chaque chapitre, et chaque recherche. */}
         {lib.skills && !q && category.rulesChapter && category.rules > 0 && (
-          <SkillRules key={category.id} chapter={category.rulesChapter} initial={6} title={`Ce que disent les skills open source · ${category.label}`} addedIds={moodIds} onAdd={addSkill} />
+          <SkillRules key={category.id} chapter={category.rulesChapter} initial={6} title={t('Ce que disent les skills open source · {chapitre}', { chapitre: category.label })} addedIds={moodIds} onAdd={addSkill} />
         )}
         {lib.skills && q && (
           <>
-            <SkillRules q={q} chapters={lib.skills.chapters} initial={6} title="Règles des skills open source" hideEmpty addedIds={moodIds} onAdd={addSkill} />
-            <SkillPrompts q={q} types={lib.skills.types} initial={6} title="Prompts des skills open source" hideEmpty addedIds={moodIds} onAdd={addSkill} />
-            <SkillRepos q={q} limit={6} title="Dépôts de skills" hideEmpty />
+            <SkillRules q={q} chapters={lib.skills.chapters} initial={6} title={t('Règles des skills open source')} hideEmpty addedIds={moodIds} onAdd={addSkill} />
+            <SkillPrompts q={q} types={lib.skills.types} initial={6} title={t('Prompts des skills open source')} hideEmpty addedIds={moodIds} onAdd={addSkill} />
+            <SkillRepos q={q} limit={6} title={t('Dépôts de skills')} hideEmpty />
           </>
         )}
       </main>

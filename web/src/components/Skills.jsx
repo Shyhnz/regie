@@ -3,9 +3,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { api } from '../api.js';
 import { useToast } from './Toast.jsx';
+import { t, locale } from '../i18n.js';
 
-const fr = (n) => Number(n || 0).toLocaleString('fr-FR');
-const plural = (n, one, many) => `${fr(n)} ${n > 1 ? many : one}`;
+const num = (n) => Number(n || 0).toLocaleString(locale());
+// one et many sont des textes à traduire, avec {n} : plural(3, '{n} règle', '{n} règles').
+const plural = (n, one, many) => t(n > 1 ? many : one, { n: num(n) });
+const RULES = ['{n} règle', '{n} règles'];
+const PROMPTS = ['{n} prompt', '{n} prompts'];
+const REPOS = ['{n} dépôt', '{n} dépôts'];
 const qsOf = (o) => new URLSearchParams(Object.entries(o).filter(([, v]) => v !== '' && v != null)).toString();
 
 // Une liste paginée : la première page, puis « Voir plus » ajoute la suivante. Repart de zéro quand un filtre change.
@@ -33,25 +38,26 @@ function usePaged(base, params, size) {
 function AddButton({ id, title, added, onAdd }) {
   if (!onAdd) return null;
   return (
-    <button type="button" className={`btn sm ghost skill-add ${added ? 'is-added' : ''}`} onClick={() => onAdd({ id, title })} disabled={added} aria-label={added ? `${title} est dans le film` : `Ajouter « ${title} » au film`}>
-      {added ? '✓ Dans le film' : '+ Au film'}
+    <button type="button" className={`btn sm ghost skill-add ${added ? 'is-added' : ''}`} onClick={() => onAdd({ id, title })} disabled={added} aria-label={added ? t('{title} est dans le film', { title }) : t('Ajouter « {title} » au film', { title })}>
+      {added ? t('✓ Dans le film') : t('+ Au film')}
     </button>
   );
 }
 
 function ListState({ loading, error, retry, empty, count }) {
-  if (error) return <div className="error-box" role="alert"><strong>La liste ne s’est pas chargée.</strong><span>{error.message}</span><div><button className="btn sm" onClick={retry}>Réessayer</button></div></div>;
+  if (error) return <div className="error-box" role="alert"><strong>{t('La liste ne s’est pas chargée.')}</strong><span>{error.message}</span><div><button className="btn sm" onClick={retry}>{t('Réessayer')}</button></div></div>;
   if (loading && !count) return <div className="skill-skeleton">{[0, 1, 2].map((i) => <div key={i} className="skeleton" style={{ height: 76 }} />)}</div>;
   if (!loading && !count && empty) return empty;
   return null;
 }
 
+// unit : la paire de textes [un, plusieurs] de plural().
 function More({ shown, total, loading, onMore, unit }) {
   if (shown >= total) return null;
   return (
     <div className="skill-more">
-      <button type="button" className="btn sm" onClick={onMore} disabled={loading}>{loading ? 'Chargement…' : `Voir ${Math.min(30, total - shown)} de plus`}</button>
-      <span className="faint">{fr(shown)} sur {plural(total, unit, `${unit}s`)}</span>
+      <button type="button" className="btn sm" onClick={onMore} disabled={loading}>{loading ? t('Chargement…') : t('Voir {n} de plus', { n: Math.min(30, total - shown) })}</button>
+      <span className="faint">{t('{shown} sur {total}', { shown: num(shown), total: plural(total, ...unit) })}</span>
     </div>
   );
 }
@@ -66,25 +72,25 @@ export function SkillRules({ chapter = '', q = '', repo = '', chapters = {}, ini
   const list = usePaged('/api/library/skills/rules', { chapter: activeChapter, q, statut, repo }, initial);
   if (hideEmpty && !list.loading && !list.error && list.total === 0) return null;
   return (
-    <section className="skill-section" aria-label={title || 'Règles des skills open source'}>
+    <section className="skill-section" aria-label={title || t('Règles des skills open source')}>
       {title && (
         <div className="skill-section-head">
           <h2>{title}</h2>
-          <span className="faint">{list.loading && !list.total ? '…' : plural(list.total, 'règle', 'règles')}</span>
+          <span className="faint">{list.loading && !list.total ? '…' : plural(list.total, ...RULES)}</span>
         </div>
       )}
       <div className="skill-filters">
         {!chapter && !repo && Object.keys(chapters).length > 0 && (
-          <select className="select" style={{ width: 'auto' }} value={chap} onChange={(e) => setChap(e.target.value)} aria-label="Chapitre de la Bible">
-            <option value="">Tous les chapitres</option>
+          <select className="select" style={{ width: 'auto' }} value={chap} onChange={(e) => setChap(e.target.value)} aria-label={t('Chapitre de la Bible')}>
+            <option value="">{t('Tous les chapitres')}</option>
             {Object.entries(chapters).map(([c, label]) => <option key={c} value={c}>{c.slice(1)} · {label}</option>)}
           </select>
         )}
-        <div className="segmented" role="group" aria-label="Nature des règles">
-          {STATUTS.map(([v, l]) => <button key={v} type="button" aria-pressed={statut === v} onClick={() => setStatut(v)}>{l}</button>)}
+        <div className="segmented" role="group" aria-label={t('Nature des règles')}>
+          {STATUTS.map(([v, l]) => <button key={v} type="button" aria-pressed={statut === v} onClick={() => setStatut(v)}>{t(l)}</button>)}
         </div>
       </div>
-      <ListState {...list} count={list.items.length} empty={<div className="empty"><strong>{q ? `Aucune règle pour « ${q} » ici.` : 'Aucune règle avec ces filtres.'}</strong><span>Essaie un mot plus court, ou en anglais.</span></div>} />
+      <ListState {...list} count={list.items.length} empty={<div className="empty"><strong>{q ? t('Aucune règle pour « {q} » ici.', { q }) : t('Aucune règle avec ces filtres.')}</strong><span>{t('Essaie un mot plus court, ou en anglais.')}</span></div>} />
       {list.items.length > 0 && (
         <ul className="rule-list">
           {list.items.map((r) => {
@@ -93,11 +99,11 @@ export function SkillRules({ chapter = '', q = '', repo = '', chapters = {}, ini
               <li key={r.id} className="rule">
                 <div className="rule-head">
                   <strong>{r.title}</strong>
-                  {r.statut === 'complement' && <span className="tag" title={r.precise ? `Précise : ${r.precise}` : 'Affine une entrée de la Bible'}>précise la Bible</span>}
+                  {r.statut === 'complement' && <span className="tag" title={r.precise ? t('Précise : {precise}', { precise: r.precise }) : t('Affine une entrée de la Bible')}>{t('précise la Bible')}</span>}
                   {!chapter && chapters[r.chapter] && <span className="tag">{r.chapter.slice(1)} · {chapters[r.chapter]}</span>}
                 </div>
                 <p>{r.consigne}</p>
-                {r.recette && <p className="rule-recipe"><span className="eyebrow">Recette</span> {r.recette}</p>}
+                {r.recette && <p className="rule-recipe"><span className="eyebrow">{t('Recette')}</span> {r.recette}</p>}
                 <div className="rule-foot">
                   <a href={r.url} target="_blank" rel="noreferrer" className="mono faint">{r.repo}</a>
                   <AddButton id={id} title={r.title} added={addedIds?.has(id)} onAdd={onAdd} />
@@ -107,7 +113,7 @@ export function SkillRules({ chapter = '', q = '', repo = '', chapters = {}, ini
           })}
         </ul>
       )}
-      <More shown={list.items.length} total={list.total} loading={list.loading} onMore={list.more} unit="règle" />
+      <More shown={list.items.length} total={list.total} loading={list.loading} onMore={list.more} unit={RULES} />
     </section>
   );
 }
@@ -119,20 +125,20 @@ export function SkillPrompts({ q = '', types = {}, initial = 30, title = null, h
   const byType = list.extra?.byType || {};
   if (hideEmpty && !list.loading && !list.error && list.total === 0 && !type) return null;
   return (
-    <section className="skill-section" aria-label={title || 'Prompts des skills open source'}>
+    <section className="skill-section" aria-label={title || t('Prompts des skills open source')}>
       {title && (
         <div className="skill-section-head">
           <h2>{title}</h2>
-          <span className="faint">{list.loading && !list.total ? '…' : plural(list.total, 'prompt', 'prompts')}</span>
+          <span className="faint">{list.loading && !list.total ? '…' : plural(list.total, ...PROMPTS)}</span>
         </div>
       )}
       <div className="skill-filters">
-        <select className="select" style={{ width: 'auto' }} value={type} onChange={(e) => setType(e.target.value)} aria-label="Genre de prompt">
-          <option value="">Tous les genres</option>
-          {Object.entries(types).filter(([t]) => byType[t] || t === type).map(([t, label]) => <option key={t} value={t}>{label} · {fr(byType[t] || 0)}</option>)}
+        <select className="select" style={{ width: 'auto' }} value={type} onChange={(e) => setType(e.target.value)} aria-label={t('Genre de prompt')}>
+          <option value="">{t('Tous les genres')}</option>
+          {Object.entries(types).filter(([g]) => byType[g] || g === type).map(([g, label]) => <option key={g} value={g}>{label} · {num(byType[g] || 0)}</option>)}
         </select>
       </div>
-      <ListState {...list} count={list.items.length} empty={<div className="empty"><strong>{q ? `Aucun prompt pour « ${q} ».` : 'Aucun prompt de ce genre.'}</strong><button className="btn sm" onClick={() => setType('')}>Tous les genres</button></div>} />
+      <ListState {...list} count={list.items.length} empty={<div className="empty"><strong>{q ? t('Aucun prompt pour « {q} ».', { q }) : t('Aucun prompt de ce genre.')}</strong><button className="btn sm" onClick={() => setType('')}>{t('Tous les genres')}</button></div>} />
       {list.items.length > 0 && (
         <ul className="rule-list">
           {list.items.map((p) => {
@@ -146,9 +152,9 @@ export function SkillPrompts({ q = '', types = {}, initial = 30, title = null, h
                 </div>
                 {p.resume && <p>{p.resume}</p>}
                 <div className="rule-foot">
-                  <span className="mono faint">{p.repo} · {fr(Math.round(p.size / 100) / 10)} k caractères</span>
+                  <span className="mono faint">{p.repo} · {t('{n} k caractères', { n: num(Math.round(p.size / 100) / 10) })}</span>
                   <span className="rule-actions">
-                    <a className="btn sm ghost" href={`#/bibliotheque/skill-prompts/${encodeURIComponent(id)}`}>Lire le prompt</a>
+                    <a className="btn sm ghost" href={`#/bibliotheque/skill-prompts/${encodeURIComponent(id)}`}>{t('Lire le prompt')}</a>
                     <AddButton id={id} title={p.title} added={addedIds?.has(id)} onAdd={onAdd} />
                   </span>
                 </div>
@@ -157,7 +163,7 @@ export function SkillPrompts({ q = '', types = {}, initial = 30, title = null, h
           })}
         </ul>
       )}
-      <More shown={list.items.length} total={list.total} loading={list.loading} onMore={list.more} unit="prompt" />
+      <More shown={list.items.length} total={list.total} loading={list.loading} onMore={list.more} unit={PROMPTS} />
     </section>
   );
 }
@@ -180,16 +186,16 @@ export function SkillRepos({ q = '', title = null, limit = 0, hideEmpty = false 
   if (hideEmpty && state.data && !items.length) return null;
   const shown = limit ? items.slice(0, limit) : items;
   return (
-    <section className="skill-section" aria-label={title || 'Dépôts de skills'}>
-      {title && <div className="skill-section-head"><h2>{title}</h2><span className="faint">{state.data ? plural(items.length, 'dépôt', 'dépôts') : '…'}</span></div>}
+    <section className="skill-section" aria-label={title || t('Dépôts de skills')}>
+      {title && <div className="skill-section-head"><h2>{title}</h2><span className="faint">{state.data ? plural(items.length, ...REPOS) : '…'}</span></div>}
       {!limit && (
         <div className="skill-filters">
-          <div className="segmented" role="group" aria-label="Verdict">
-            {VERDICTS.map(([v, l]) => <button key={v} type="button" aria-pressed={verdict === v} onClick={() => setVerdict(v)}>{l}</button>)}
+          <div className="segmented" role="group" aria-label={t('Verdict')}>
+            {VERDICTS.map(([v, l]) => <button key={v} type="button" aria-pressed={verdict === v} onClick={() => setVerdict(v)}>{t(l)}</button>)}
           </div>
         </div>
       )}
-      <ListState loading={!state.data && !state.error} error={state.error} retry={() => setAttempt((n) => n + 1)} count={items.length} empty={<div className="empty"><strong>Aucun dépôt avec ces filtres.</strong></div>} />
+      <ListState loading={!state.data && !state.error} error={state.error} retry={() => setAttempt((n) => n + 1)} count={items.length} empty={<div className="empty"><strong>{t('Aucun dépôt avec ces filtres.')}</strong></div>} />
       {shown.length > 0 && (
         <ul className="repo-grid">
           {shown.map((r) => (
@@ -197,13 +203,13 @@ export function SkillRepos({ q = '', title = null, limit = 0, hideEmpty = false 
               <a className="repo-card" href={`#/bibliotheque/skill-depots/${encodeURIComponent(`skill:repo:${r.id}`)}`}>
                 <span className="repo-name mono">{r.repo}</span>
                 <span className="repo-resume">{r.resume}</span>
-                <span className="faint repo-foot"><span className={`tag verdict-${r.verdict}`}>{r.verdictLabel}</span> {plural(r.prompts, 'prompt', 'prompts')} · {plural(r.rules, 'règle', 'règles')} · lot {r.lot}</span>
+                <span className="faint repo-foot"><span className={`tag verdict-${r.verdict}`}>{r.verdictLabel}</span> {plural(r.prompts, ...PROMPTS)} · {plural(r.rules, ...RULES)} · {t('lot {n}', { n: r.lot })}</span>
               </a>
             </li>
           ))}
         </ul>
       )}
-      {limit > 0 && items.length > limit && <a className="btn sm" href="#/bibliotheque/skill-depots">Voir les {fr(items.length)} dépôts</a>}
+      {limit > 0 && items.length > limit && <a className="btn sm" href="#/bibliotheque/skill-depots">{t('Voir les {n} dépôts', { n: num(items.length) })}</a>}
     </section>
   );
 }
@@ -211,9 +217,9 @@ export function SkillRepos({ q = '', title = null, limit = 0, hideEmpty = false 
 function CopyButton({ text }) {
   const toast = useToast();
   const copy = async () => {
-    try { await navigator.clipboard.writeText(text); toast('Prompt copié'); } catch { toast('Copie impossible : sélectionne le texte à la main', 'bad'); }
+    try { await navigator.clipboard.writeText(text); toast(t('Prompt copié')); } catch { toast(t('Copie impossible : sélectionne le texte à la main'), 'bad'); }
   };
-  return <button type="button" className="btn sm" onClick={copy}>Copier le prompt</button>;
+  return <button type="button" className="btn sm" onClick={copy}>{t('Copier le prompt')}</button>;
 }
 
 const List = ({ title, items, render }) => (items?.length ? <div className="arch-block"><span className="eyebrow">{title}</span><ul>{items.map((x, i) => <li key={i}>{render ? render(x) : x}</li>)}</ul></div> : null);
@@ -224,22 +230,22 @@ export function SkillBody({ item, chapters, addedIds, onAdd }) {
   if (item.kind === 'skill-prompt') {
     return (
       <div className="skill-body">
-        <p className="faint">Dépôt <a href={item.url} target="_blank" rel="noreferrer" className="mono">{item.repo}</a>{item.langue ? ` · langue : ${item.langue}` : ''} · lot {item.lot}</p>
+        <p className="faint">{t('Dépôt')} <a href={item.url} target="_blank" rel="noreferrer" className="mono">{item.repo}</a>{item.langue ? ` · ${t('langue : {langue}', { langue: item.langue })}` : ''} · {t('lot {n}', { n: item.lot })}</p>
         {item.text ? (
           <div className="prompt-full">
-            <div className="prompt-full-head"><span className="eyebrow">Texte intégral</span><CopyButton text={item.text} /></div>
+            <div className="prompt-full-head"><span className="eyebrow">{t('Texte intégral')}</span><CopyButton text={item.text} /></div>
             <pre className="ev-prompt">{item.text}</pre>
           </div>
-        ) : <div className="notice">Le texte de ce prompt n’a pas été retrouvé. Il reste lisible à sa source.</div>}
+        ) : <div className="notice">{t('Le texte de ce prompt n’a pas été retrouvé. Il reste lisible à sa source.')}</div>}
       </div>
     );
   }
   if (item.kind === 'skill-rule') {
     return (
       <div className="skill-body">
-        {item.recette && <div className="when"><span className="eyebrow">Recette</span><p>{item.recette}</p></div>}
-        {item.precise && <p className="faint">Précise : {item.precise}</p>}
-        <p className="faint">Chapitre {item.chapter.slice(1)} · {item.chapterLabel} · dépôt <a href={item.url} target="_blank" rel="noreferrer" className="mono">{item.repo}</a></p>
+        {item.recette && <div className="when"><span className="eyebrow">{t('Recette')}</span><p>{item.recette}</p></div>}
+        {item.precise && <p className="faint">{t('Précise : {precise}', { precise: item.precise })}</p>}
+        <p className="faint">{t('Chapitre {n}', { n: item.chapter.slice(1) })} · {item.chapterLabel} · {t('dépôt')} <a href={item.url} target="_blank" rel="noreferrer" className="mono">{item.repo}</a></p>
       </div>
     );
   }
@@ -248,21 +254,21 @@ export function SkillBody({ item, chapters, addedIds, onAdd }) {
   return (
     <div className="skill-body">
       {item.raison && <p className="faint"><span className={`tag verdict-${item.verdict}`}>{item.verdictLabel}</span> {item.raison}</p>}
-      {(a.type || a.organisation) && <div className="arch-block"><span className="eyebrow">Comment il est construit{a.type ? ` · ${a.type}` : ''}</span><p>{a.organisation}</p></div>}
-      {a.workflow?.length > 0 && <div className="arch-block"><span className="eyebrow">Déroulé</span><ol>{a.workflow.map((w, i) => <li key={i}>{w}</li>)}</ol></div>}
-      <List title="Contrôles qualité" items={a.controles} render={(c) => <><strong>{c.nom}</strong> — {c.comment}</>} />
-      <List title="Outils" items={a.outils} render={(o) => <><span className="mono">{o.chemin}</span> — {o.role}{o.reutilisable ? <span className="faint"> · réutilisable : {o.reutilisable}</span> : null}</>} />
-      <List title="Procédés réutilisables" items={a.procedes} />
-      <List title="À reprendre pour nos skills" items={a.a_reprendre} />
+      {(a.type || a.organisation) && <div className="arch-block"><span className="eyebrow">{t('Comment il est construit')}{a.type ? ` · ${a.type}` : ''}</span><p>{a.organisation}</p></div>}
+      {a.workflow?.length > 0 && <div className="arch-block"><span className="eyebrow">{t('Déroulé')}</span><ol>{a.workflow.map((w, i) => <li key={i}>{w}</li>)}</ol></div>}
+      <List title={t('Contrôles qualité')} items={a.controles} render={(c) => <><strong>{c.nom}</strong> — {c.comment}</>} />
+      <List title={t('Outils')} items={a.outils} render={(o) => <><span className="mono">{o.chemin}</span> — {o.role}{o.reutilisable ? <span className="faint"> · {t('réutilisable : {x}', { x: o.reutilisable })}</span> : null}</>} />
+      <List title={t('Procédés réutilisables')} items={a.procedes} />
+      <List title={t('À reprendre pour nos skills')} items={a.a_reprendre} />
       {item.prompts?.length > 0 && (
         <div className="arch-block">
-          <span className="eyebrow">Ses prompts · {item.prompts.length}</span>
+          <span className="eyebrow">{t('Ses prompts')} · {item.prompts.length}</span>
           <ul>{item.prompts.map((p) => <li key={p.id}><a href={`#/bibliotheque/skill-prompts/${encodeURIComponent(p.id)}`}>{p.title}</a></li>)}</ul>
         </div>
       )}
       {nRules > 0 && (showRules
-        ? <SkillRules repo={item.repo} chapters={chapters} initial={30} title={`Ses règles · ${fr(nRules)}`} addedIds={addedIds} onAdd={onAdd} />
-        : <div><button type="button" className="btn sm" onClick={() => setShowRules(true)}>Voir ses {plural(nRules, 'règle', 'règles')}</button></div>)}
+        ? <SkillRules repo={item.repo} chapters={chapters} initial={30} title={t('Ses règles · {n}', { n: num(nRules) })} addedIds={addedIds} onAdd={onAdd} />
+        : <div><button type="button" className="btn sm" onClick={() => setShowRules(true)}>{nRules > 1 ? t('Voir ses {n} règles', { n: num(nRules) }) : t('Voir sa règle')}</button></div>)}
     </div>
   );
 }

@@ -412,3 +412,7 @@
 .detail-still { aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; }
 .linked-still { aspect-ratio: 4 / 1; border-radius: var(--radius-sm); overflow: hidden; }
 .linked-still video { object-fit: cover; }
+
+/* Langue de l'interface, à droite de la barre du haut. */
+.lang-switch { margin-left: auto; }
+.lang-switch button { padding: 4px 10px; font-size: 12px; font-weight: 650; letter-spacing: 0.04em; }

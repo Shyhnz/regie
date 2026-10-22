@@ -6,6 +6,8 @@ import { hookSettings, HOOK_TOKEN } from '../server/sessions.js';
 import { actionMessage, systemPrompt, buildPrompt, STEPS } from '../server/prompts.js';
 import { BLENDER_MCP } from '../server/config.js';
 
+process.env.REGIE_LANG = 'fr'; // les consignes vérifiées ici sont celles de la Régie en français
+
 test('la session Claude : interactive, sans MCP par défaut, dossiers en dernier', () => {
   const args = claudeArgs({ settings: {}, system: 'SYS', name: 'Régie · t' });
   assert.ok(!args.includes('-p'));

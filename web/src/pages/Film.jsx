@@ -8,11 +8,12 @@ import Storyboard from '../steps/Storyboard.jsx';
 import Plans from '../steps/Plans.jsx';
 import Musique from '../steps/Musique.jsx';
 import Final from '../steps/Final.jsx';
+import { t } from '../i18n.js';
 
 const FilmCtx = createContext(null);
 export const useFilm = () => useContext(FilmCtx);
 
-const STATUS_LABEL = { done: 'fait', running: 'Claude travaille', current: 'en cours', todo: 'à faire' };
+const statusLabel = (s) => ({ done: t('fait'), running: t('Claude travaille'), current: t('en cours'), todo: t('à faire') })[s];
 const PAGES = { scenario: Scenario, storyboard: Storyboard, plans: Plans, musique: Musique, final: Final };
 
 // Blender ou non pour ce film (et toute sa série) : Claude lit la recette Blender et fait les plans 3D lourds dans Blender.
@@ -23,17 +24,20 @@ function BlenderSwitch({ film, reload }) {
   const [saving, setSaving] = useState(false);
   const on = Boolean(film.state.settings?.blender);
   const installed = meta.blender?.installed !== false;
-  const scope = film.serie ? ' pour les 3 vidéos' : '';
+  const serie = Boolean(film.serie);
   const toggle = async () => {
     setSaving(true);
     try {
       await api(`/api/films/${encodeURIComponent(film.slug)}/settings`, { method: 'PUT', body: { blender: !on } });
       await reload(true);
-      toast(!on ? `Blender activé${scope}` : `Blender désactivé${scope} : tout en HyperFrames`);
+      toast(!on
+        ? (serie ? t('Blender activé pour les 3 vidéos') : t('Blender activé'))
+        : (serie ? t('Blender désactivé pour les 3 vidéos : tout en HyperFrames') : t('Blender désactivé : tout en HyperFrames')));
     } catch (e) { toast(e.message, 'bad'); } finally { setSaving(false); }
   };
-  const hint = !installed ? 'Blender introuvable dans /Applications'
-    : on ? `Claude fait les plans 3D lourds dans Blender${scope}` : `Tout en HyperFrames${scope}`;
+  const hint = !installed ? t('Blender introuvable dans /Applications')
+    : on ? (serie ? t('Claude fait les plans 3D lourds dans Blender pour les 3 vidéos') : t('Claude fait les plans 3D lourds dans Blender'))
+      : (serie ? t('Tout en HyperFrames pour les 3 vidéos') : t('Tout en HyperFrames'));
   return (
     <div className="engine-switch">
       <button type="button" role="switch" aria-checked={on} className="switch" onClick={toggle} disabled={saving || (!installed && !on)} aria-describedby="blender-hint">
@@ -86,8 +90,8 @@ export default function Film({ slug, stepId }) {
       const lettre = (s) => film?.serie?.films.find((f) => f.slug === s)?.lettre || s;
       setPanelOpen(true);
       toast(skipped.length
-        ? `Lancé sur ${started.map((r) => lettre(r.slug)).join(', ')} · pas sur ${skipped.map((x) => `${x.lettre} (${x.reason})`).join(', ')}`
-        : 'Lancé sur les 3 vidéos', skipped.length ? 'bad' : undefined);
+        ? t('Lancé sur {lances} · pas sur {sautes}', { lances: started.map((r) => lettre(r.slug)).join(', '), sautes: skipped.map((x) => `${x.lettre} (${x.reason})`).join(', ') })
+        : t('Lancé sur les 3 vidéos'), skipped.length ? 'bad' : undefined);
       await reload(true);
     } catch (err) {
       setStartError({ action, message: err.message });
@@ -104,7 +108,7 @@ export default function Film({ slug, stepId }) {
   if (error && !film) {
     return (
       <main className="page">
-        <div className="error-box" role="alert"><strong>Ce film ne s’est pas ouvert.</strong><span>{error.message}</span><div style={{ display: 'flex', gap: 8 }}><button className="btn sm" onClick={() => reload()}>Réessayer</button><a className="btn sm ghost" href="#/">Retour aux films</a></div></div>
+        <div className="error-box" role="alert"><strong>{t('Ce film ne s’est pas ouvert.')}</strong><span>{error.message}</span><div style={{ display: 'flex', gap: 8 }}><button className="btn sm" onClick={() => reload()}>{t('Réessayer')}</button><a className="btn sm ghost" href="#/">{t('Retour aux films')}</a></div></div>
       </main>
     );
   }
@@ -112,7 +116,7 @@ export default function Film({ slug, stepId }) {
     return <div className="film-layout"><div className="skeleton" style={{ height: 400 }} /><div className="skeleton" style={{ height: 600 }} /><div className="skeleton" style={{ height: 600 }} /></div>;
   }
   if (!film.studio) {
-    return <main className="page"><div className="notice">Ce dossier n’est pas un film du studio (pas de BRIEF.md). Ouvre-le depuis la liste des anciens projets.</div></main>;
+    return <main className="page"><div className="notice">{t('Ce dossier n’est pas un film du studio (pas de BRIEF.md). Ouvre-le depuis la liste des anciens projets.')}</div></main>;
   }
 
   const current = film.steps.find((s) => s.status !== 'done') || film.steps[film.steps.length - 1];
@@ -123,21 +127,21 @@ export default function Film({ slug, stepId }) {
   return (
     <FilmCtx.Provider value={ctx}>
       <div className={`film-layout ${panelOpen ? 'panel-open' : ''}`}>
-        <aside className="steps-nav" aria-label="Étapes du film">
+        <aside className="steps-nav" aria-label={t('Étapes du film')}>
           <div className="steps-film">
-            <div className="eyebrow">Film</div>
+            <div className="eyebrow">{t('Film')}</div>
             <h2 title={film.title}>{film.title}</h2>
             <span className="mono faint">videos/{film.slug}</span>
             <BlenderSwitch film={film} reload={reload} />
           </div>
           {film.serie && (
-            <nav className="serie-nav" aria-label="Vidéos de la série">
-              <div className="eyebrow">Série de 3</div>
+            <nav className="serie-nav" aria-label={t('Vidéos de la série')}>
+              <div className="eyebrow">{t('Série de 3')}</div>
               <div className="serie-tabs">
                 {film.serie.films.map((f) => {
                   const state = f.running ? 'running' : f.step ? f.step.status : 'done';
                   return (
-                    <a key={f.slug} href={`#/film/${f.slug}/${step.id}`} aria-current={f.slug === slug ? 'page' : undefined} title={`Vidéo ${f.lettre}${f.angle ? ` · ${f.angle}` : ''} · ${f.running ? 'Claude travaille' : f.step ? `${f.step.title}, ${STATUS_LABEL[f.step.status]}` : 'livrée'}`}>
+                    <a key={f.slug} href={`#/film/${f.slug}/${step.id}`} aria-current={f.slug === slug ? 'page' : undefined} title={`${t('Vidéo {lettre}', { lettre: f.lettre })}${f.angle ? ` · ${f.angle}` : ''} · ${f.running ? t('Claude travaille') : f.step ? `${f.step.title}, ${statusLabel(f.step.status)}` : t('livrée')}`}>
                       <span className={`serie-dot ${state}`} aria-hidden="true" />{f.lettre}
                     </a>
                   );
@@ -153,14 +157,14 @@ export default function Film({ slug, stepId }) {
                   <span className="step-num" aria-hidden="true">{s.status === 'done' ? '✓' : s.n}</span>
                   <span className="step-text">
                     <strong>{s.title}</strong>
-                    <span className={`status ${s.status}`}>{STATUS_LABEL[s.status]}</span>
+                    <span className={`status ${s.status}`}>{statusLabel(s.status)}</span>
                   </span>
                 </a>
               </li>
             ))}
           </ol>
           <div className="steps-tools">
-            <a className="btn sm ghost" href="#/bibliotheque" onClick={() => { try { localStorage.setItem('regie.film', slug); } catch { /* stockage indisponible */ } }}>Bibliothèque</a>
+            <a className="btn sm ghost" href="#/bibliotheque" onClick={() => { try { localStorage.setItem('regie.film', slug); } catch { /* stockage indisponible */ } }}>{t('Bibliothèque')}</a>
           </div>
         </aside>
 
@@ -173,7 +177,7 @@ export default function Film({ slug, stepId }) {
           <ClaudePanel film={film} target={film.active ? { slug: film.active.slug, step: film.active.step } : { slug, step: step.id }} stepId={step.id} onRunEnd={onRunEnd} onClose={() => setPanelOpen(false)} />
         </aside>
         <button className={`panel-toggle ${running ? 'running' : ''}`} onClick={() => setPanelOpen((o) => !o)} aria-expanded={panelOpen}>
-          <span className={`status ${running ? 'running' : last?.status === 'error' ? 'error' : 'done'}`}>{running ? 'Claude travaille' : 'Claude'}</span>
+          <span className={`status ${running ? 'running' : last?.status === 'error' ? 'error' : 'done'}`}>{running ? t('Claude travaille') : 'Claude'}</span>
         </button>
       </div>
     </FilmCtx.Provider>

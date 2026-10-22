@@ -6,8 +6,9 @@ import { api, fmtDuration, fmtTokens, fmtDate } from '../api.js';
 import { useMeta } from './Meta.jsx';
 import { useToast } from './Toast.jsx';
 import Markdown from './Markdown.jsx';
+import { t } from '../i18n.js';
 
-const RUN_STATUS = { running: 'en cours', done: 'terminé', error: 'erreur', stopped: 'arrêté', interrupted: 'interrompu' };
+const runStatus = (s) => ({ running: t('en cours'), done: t('terminé'), error: t('erreur'), stopped: t('arrêté'), interrupted: t('interrompu') })[s] || s;
 const RUN_CLASS = { running: 'running', done: 'done', error: 'error', stopped: 'review', interrupted: 'review' };
 
 // Suit le flux d'une action Claude (SSE) ; le serveur renvoie l'historique au branchement.
@@ -47,37 +48,37 @@ function Settings({ film, onSaved }) {
   const toast = useToast();
   const s = { ...meta.defaults, ...(film.state.settings || {}) };
   const save = async (patch) => {
-    try { await api(`/api/films/${film.slug}/settings`, { method: 'PUT', body: { ...s, ...patch } }); onSaved(); toast('Réglage enregistré'); } catch (e) { toast(e.message, 'bad'); }
+    try { await api(`/api/films/${film.slug}/settings`, { method: 'PUT', body: { ...s, ...patch } }); onSaved(); toast(t('Réglage enregistré')); } catch (e) { toast(e.message, 'bad'); }
   };
   return (
     <div className="claude-settings">
       <div className="field">
-        <span className="label">Effort de réflexion</span>
-        <div className="segmented" role="group" aria-label="Effort">
+        <span className="label">{t('Effort de réflexion')}</span>
+        <div className="segmented" role="group" aria-label={t('Effort')}>
           {['medium', 'high', 'xhigh', 'max'].map((e) => <button key={e} type="button" aria-pressed={s.effort === e} onClick={() => save({ effort: e })}>{e}</button>)}
         </div>
       </div>
       <div className="field">
-        <label htmlFor="perm">Permissions</label>
+        <label htmlFor="perm">{t('Permissions')}</label>
         <select id="perm" className="select" value={s.permissionMode} onChange={(e) => save({ permissionMode: e.target.value })}>
-          <option value="auto">Auto : Claude juge les commandes sûres (recommandé)</option>
-          <option value="acceptEdits">Fichiers seulement : les commandes sont refusées</option>
-          <option value="bypassPermissions">Tout accepter</option>
+          <option value="auto">{t('Auto : Claude juge les commandes sûres (recommandé)')}</option>
+          <option value="acceptEdits">{t('Fichiers seulement : les commandes sont refusées')}</option>
+          <option value="bypassPermissions">{t('Tout accepter')}</option>
         </select>
       </div>
       <div className="field">
-        <span className="label">Serveurs MCP</span>
-        <div className="segmented" role="group" aria-label="Serveurs MCP">
-          {[['none', 'Aucun (recommandé)'], ['all', 'Tous les miens']].map(([v, l]) => <button key={v} type="button" aria-pressed={s.mcp === v} onClick={() => save({ mcp: v })}>{l}</button>)}
+        <span className="label">{t('Serveurs MCP')}</span>
+        <div className="segmented" role="group" aria-label={t('Serveurs MCP')}>
+          {[['none', t('Aucun (recommandé)')], ['all', t('Tous les miens')]].map(([v, l]) => <button key={v} type="button" aria-pressed={s.mcp === v} onClick={() => save({ mcp: v })}>{l}</button>)}
         </div>
-        <span className="help">Sans eux, chaque tour relit deux fois moins de contexte (≈ 29 k jetons au lieu de 61 k). Le studio n’en a pas besoin.</span>
+        <span className="help">{t('Sans eux, chaque tour relit deux fois moins de contexte (≈ 29 k jetons au lieu de 61 k). Le studio n’en a pas besoin.')}</span>
       </div>
       <div className="field">
-        <label htmlFor="model">Modèle</label>
-        <input id="model" className="input" defaultValue={s.model} placeholder="celui de Claude Code par défaut" onBlur={(e) => e.target.value !== s.model && save({ model: e.target.value })} />
-        <span className="help">Laisse vide pour garder ton modèle habituel (abonnement, pas de clé API).</span>
+        <label htmlFor="model">{t('Modèle')}</label>
+        <input id="model" className="input" defaultValue={s.model} placeholder={t('celui de Claude Code par défaut')} onBlur={(e) => e.target.value !== s.model && save({ model: e.target.value })} />
+        <span className="help">{t('Laisse vide pour garder ton modèle habituel (abonnement, pas de clé API).')}</span>
       </div>
-      <p className="help">Ces réglages valent pour la prochaine ouverture d’une session. Dans la session, /model et /effort changent tout de suite.</p>
+      <p className="help">{t('Ces réglages valent pour la prochaine ouverture d’une session. Dans la session, /model et /effort changent tout de suite.')}</p>
     </div>
   );
 }
@@ -92,7 +93,7 @@ function Stream({ events }) {
     if (e.type === 'start') {
       items.push(
         <details key={`s${e.at}`} className="ev-start">
-          <summary><strong>{e.label}</strong>{e.resumed ? <span className="tag">suite de la session</span> : <span className="tag">session neuve</span>}</summary>
+          <summary><strong>{e.label}</strong>{e.resumed ? <span className="tag">{t('suite de la session')}</span> : <span className="tag">{t('session neuve')}</span>}</summary>
           <pre className="ev-prompt">{e.prompt}</pre>
         </details>,
       );
@@ -109,28 +110,28 @@ function Stream({ events }) {
     } else if (e.type === 'result') {
       items.push(
         <div key="result" className="ev-result">
-          <span>{e.ok ? 'Terminé' : 'Arrêt sur erreur'} en {fmtDuration(e.durationMs)}</span>
-          <span className="faint">· {fmtTokens(e.tokens)} jetons lus, cache compris · {fmtTokens(e.outputTokens)} écrits</span>
+          <span>{e.ok ? t('Terminé en {duree}', { duree: fmtDuration(e.durationMs) }) : t('Arrêt sur erreur en {duree}', { duree: fmtDuration(e.durationMs) })}</span>
+          <span className="faint">· {t('{lus} jetons lus, cache compris · {ecrits} écrits', { lus: fmtTokens(e.tokens), ecrits: fmtTokens(e.outputTokens) })}</span>
           {e.denials?.length > 0 && (
             <div className="ev-denials">
-              <strong>Refusé par les permissions :</strong>
+              <strong>{t('Refusé par les permissions :')}</strong>
               <ul>{e.denials.map((d, i) => <li key={i}>{d}</li>)}</ul>
-              <span className="muted">Change le réglage « Permissions » si ces commandes étaient nécessaires.</span>
+              <span className="muted">{t('Change le réglage « Permissions » si ces commandes étaient nécessaires.')}</span>
             </div>
           )}
         </div>,
       );
     } else if (e.type === 'error') {
-      items.push(<div key={`e${e.at}`} className="error-box" role="alert"><strong>Claude n’a pas pu finir.</strong><span>{e.message}</span></div>);
+      items.push(<div key={`e${e.at}`} className="error-box" role="alert"><strong>{t('Claude n’a pas pu finir.')}</strong><span>{e.message}</span></div>);
     } else if (e.type === 'handoff') {
-      items.push(<div key="handoff" className="ev-handoff">Claude a laissé sa preuve et ses questions dans l’étape, à gauche.</div>);
+      items.push(<div key="handoff" className="ev-handoff">{t('Claude a laissé sa preuve et ses questions dans l’étape, à gauche.')}</div>);
     }
   }
   return (
     <>
       {items}
       {lastIsThinking && !events.some((e) => e.type === 'end') && (
-        <div className="ev-thinking"><span className="spin" />Réfléchit{thinking?.tokens ? ` · ~${fmtTokens(thinking.tokens)} jetons de réflexion` : '…'}</div>
+        <div className="ev-thinking"><span className="spin" />{thinking?.tokens ? t('Réfléchit · ~{n} jetons de réflexion', { n: fmtTokens(thinking.tokens) }) : t('Réfléchit…')}</div>
       )}
     </>
   );
@@ -197,7 +198,7 @@ function SessionTerminal({ slug, step, onStatus }) {
   return (
     <div className="term-wrap">
       <div className="term-box" ref={box} />
-      {conn === 'coupée' && <div className="term-note">Connexion à la session perdue, nouvel essai…</div>}
+      {conn === 'coupée' && <div className="term-note">{t('Connexion à la session perdue, nouvel essai…')}</div>}
     </div>
   );
 }
@@ -224,7 +225,7 @@ export default function ClaudePanel({ film, target, stepId, onRunEnd, onClose })
   const stop = async () => {
     const id = status?.runId || active?.id;
     if (!id) return;
-    try { await api(`/api/runs/${id}/stop`, { method: 'POST' }); toast('Claude est interrompu'); } catch (err) { toast(err.message, 'bad'); }
+    try { await api(`/api/runs/${id}/stop`, { method: 'POST' }); toast(t('Claude est interrompu')); } catch (err) { toast(err.message, 'bad'); }
   };
 
   const history = [...film.state.runs].reverse();
@@ -233,20 +234,20 @@ export default function ClaudePanel({ film, target, stepId, onRunEnd, onClose })
     <div className="claude-panel">
       <div className="claude-head">
         <div>
-          <div className="eyebrow">Claude Code · {step?.title}{target.slug !== film.slug ? ` · vidéo ${film.serie?.films.find((f) => f.slug === target.slug)?.lettre || ''}` : ''}</div>
-          {status?.exited ? <span className="status">session fermée</span>
-            : status?.waiting ? <span className="status review">t’attend dans la session</span>
-              : busy ? <span className="status running">travaille{since ? <> · <Elapsed since={since} /></> : null}</span>
-                : status ? <span className="status done">prête</span>
-                  : <span className="status">ouverture…</span>}
+          <div className="eyebrow">Claude Code · {step?.title}{target.slug !== film.slug ? ` · ${t('vidéo {lettre}', { lettre: film.serie?.films.find((f) => f.slug === target.slug)?.lettre || '' })}` : ''}</div>
+          {status?.exited ? <span className="status">{t('session fermée')}</span>
+            : status?.waiting ? <span className="status review">{t('t’attend dans la session')}</span>
+              : busy ? <span className="status running">{t('travaille')}{since ? <> · <Elapsed since={since} /></> : null}</span>
+                : status ? <span className="status done">{t('prête')}</span>
+                  : <span className="status">{t('ouverture…')}</span>}
         </div>
         <div className="claude-head-actions">
-          {busy && !status?.exited && <button className="btn sm danger" onClick={stop}>Arrêter</button>}
-          <button className="icon-btn panel-close" onClick={onClose} aria-label="Fermer le panneau">✕</button>
+          {busy && !status?.exited && <button className="btn sm danger" onClick={stop}>{t('Arrêter')}</button>}
+          <button className="icon-btn panel-close" onClick={onClose} aria-label={t('Fermer le panneau')}>✕</button>
         </div>
       </div>
       <div className="claude-tabs" role="tablist">
-        {[['session', 'Session'], ['historique', `Historique · ${history.length}`], ['reglages', 'Réglages']].map(([id, label]) => (
+        {[['session', t('Session')], ['historique', t('Historique · {n}', { n: history.length })], ['reglages', t('Réglages')]].map(([id, label]) => (
           <button key={id} role="tab" aria-selected={tab === id} onClick={() => { setTab(id); setShown(null); }}>{label}</button>
         ))}
       </div>
@@ -256,8 +257,8 @@ export default function ClaudePanel({ film, target, stepId, onRunEnd, onClose })
           <SessionTerminal key={`${target.slug}/${target.step}/${gen}`} slug={target.slug} step={target.step} onStatus={onStatus} />
           {status?.exited && (
             <div className="term-closed">
-              <span>La session est fermée. La conversation de l’étape reste là : tu peux la rouvrir.</span>
-              <button className="btn sm" onClick={() => { setStatus(null); setGen((g) => g + 1); }}>Rouvrir la session</button>
+              <span>{t('La session est fermée. La conversation de l’étape reste là : tu peux la rouvrir.')}</span>
+              <button className="btn sm" onClick={() => { setStatus(null); setGen((g) => g + 1); }}>{t('Rouvrir la session')}</button>
             </div>
           )}
         </div>
@@ -266,16 +267,16 @@ export default function ClaudePanel({ film, target, stepId, onRunEnd, onClose })
           <div className="claude-stream">
             {shown ? (
               <>
-                <button className="btn sm ghost" style={{ alignSelf: 'flex-start' }} onClick={() => setShown(null)}>← Historique</button>
-                {events.length === 0 ? <div className="ev-thinking"><span className="spin" />Lecture…</div> : <Stream events={events} />}
+                <button className="btn sm ghost" style={{ alignSelf: 'flex-start' }} onClick={() => setShown(null)}>← {t('Historique')}</button>
+                {events.length === 0 ? <div className="ev-thinking"><span className="spin" />{t('Lecture…')}</div> : <Stream events={events} />}
               </>
-            ) : history.length === 0 ? <div className="empty"><strong>Aucune action pour l’instant.</strong><span>Chaque action et chaque message écrit dans la session s’ajoute ici, avec le résumé de Claude.</span></div> : (
+            ) : history.length === 0 ? <div className="empty"><strong>{t('Aucune action pour l’instant.')}</strong><span>{t('Chaque action et chaque message écrit dans la session s’ajoute ici, avec le résumé de Claude.')}</span></div> : (
               <ol className="run-history">
                 {history.map((r) => (
                   <li key={r.id}>
                     <button onClick={() => setShown(r.id)}>
-                      <span className={`status ${RUN_CLASS[r.status] || ''}`}>{RUN_STATUS[r.status] || r.status}</span>
-                      <strong>{r.label}{r.shared && film.serie ? ' · 3 vidéos' : ''}</strong>
+                      <span className={`status ${RUN_CLASS[r.status] || ''}`}>{runStatus(r.status)}</span>
+                      <strong>{r.label}{r.shared && film.serie ? ` · ${t('3 vidéos')}` : ''}</strong>
                       <span className="faint nowrap">{meta.steps.find((s) => s.id === r.step)?.title} · {fmtDate(r.startedAt)}{r.durationMs ? ` · ${fmtDuration(r.durationMs)}` : ''}{r.tokens ? ` · ${fmtTokens(r.tokens)}` : ''}</span>
                       {r.summary && <span className="run-summary">{r.summary}</span>}
                     </button>

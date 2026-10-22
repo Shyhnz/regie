@@ -17,6 +17,7 @@ import { handleHook, attachClient, HOOK_TOKEN } from './sessions.js';
 import { STEPS, ACTIONS } from './prompts.js';
 import { libraryForClient, findItem, itemMarkdown, getLibrary } from './library.js';
 import { searchRules, searchPrompts, listRepos } from './skills.js';
+import { tr, getLang, setLang } from './i18n.js';
 
 const run = promisify(execFile);
 const dev = process.argv.includes('--dev');
@@ -35,14 +36,18 @@ const TEXT_EXT = /\.(md|js|json|css|html|txt|py|sh)$/i;
 // ——— Référentiel ———
 app.get('/api/meta', (req, res) => {
   res.json({
-    steps: STEPS,
-    actions: Object.fromEntries(Object.entries(ACTIONS).map(([id, a]) => [id, { id, step: a.step, label: a.label, hint: a.hint, perShot: Boolean(a.perShot), fresh: Boolean(a.fresh), needs: a.needs || [], serie: a.serie || null, labelSerie: a.labelSerie || a.label, hintSerie: a.hintSerie || a.hint }])),
+    lang: getLang(),
+    steps: STEPS.map((s) => ({ ...s, title: tr(s.title), phases: tr(s.phases), goal: tr(s.goal) })),
+    actions: Object.fromEntries(Object.entries(ACTIONS).map(([id, a]) => [id, { id, step: a.step, label: tr(a.label), hint: tr(a.hint), perShot: Boolean(a.perShot), fresh: Boolean(a.fresh), needs: a.needs || [], serie: a.serie || null, labelSerie: tr(a.labelSerie || a.label), hintSerie: tr(a.hintSerie || a.hint) }])),
     defaults: DEFAULT_SETTINGS,
     hyperframes: HYPERFRAMES,
     blender: { installed: fs.existsSync(BLENDER_BIN), mcp: fs.existsSync(BLENDER_MCP) },
     deps: { claude: onPath(CLAUDE_BIN), ffmpeg: onPath('ffmpeg'), npx: onPath('npx') },
   });
 });
+
+// L'anglais par défaut, le français au choix : pour l'interface, et pour ce que Claude écrit.
+app.put('/api/lang', express.json(), (req, res) => res.json({ lang: setLang(req.body?.lang) }));
 
 // ——— Films ———
 app.get('/api/films', wrap(async (req, res) => res.json(listFilms())));
@@ -71,11 +76,11 @@ app.put('/api/films/:slug/inputs/:step', express.json(), wrap(async (req, res) =
 app.post('/api/films/:slug/moodboard', express.json(), wrap(async (req, res) => {
   const { id, note = '' } = req.body || {};
   const it = findItem(id);
-  if (!it) throw httpError(404, 'Fiche introuvable');
+  if (!it) throw httpError(404, tr('Fiche introuvable'));
   const cat = getLibrary().categories.find((c) => c.id === it.cat);
   const kindLabel = {
-    variant: 'variante de style', guide: 'guide de style', style: 'style', plan: 'plan', video: 'vidéo de référence', etude: 'étude 60 fps', outil: 'outil',
-    technique: cat?.label?.toLowerCase() || 'technique', loop: 'fond animé', 'skill-prompt': 'prompt open source', 'skill-rule': 'règle open source', 'skill-repo': 'skill open source',
+    variant: tr('variante de style'), guide: tr('guide de style'), style: tr('style'), plan: tr('plan'), video: tr('vidéo de référence'), etude: tr('étude 60 fps'), outil: tr('outil'),
+    technique: cat?.label ? tr(cat.label).toLowerCase() : tr('technique'), loop: tr('fond animé'), 'skill-prompt': tr('prompt open source'), 'skill-rule': tr('règle open source'), 'skill-repo': tr('skill open source'),
   }[it.kind] || it.kind;
   const mb = setMoodboard(req.params.slug, (list) => {
     const rest = list.filter((m) => m.id !== id);
@@ -85,10 +90,10 @@ app.post('/api/films/:slug/moodboard', express.json(), wrap(async (req, res) => 
 }));
 app.post('/api/films/:slug/moodboard/loop', express.json(), wrap(async (req, res) => {
   const { id, name, note = '' } = req.body || {};
-  if (!/^(bg|sh)\.[a-z0-9-]+$/.test(id || '')) throw httpError(400, 'Boucle inconnue');
+  if (!/^(bg|sh)\.[a-z0-9-]+$/.test(id || '')) throw httpError(400, tr('Boucle inconnue'));
   const pack = id.startsWith('bg') ? 'bg' : 'sh';
   const mb = setMoodboard(req.params.slug, (list) => [...list.filter((m) => m.id !== `loop:${id}`), {
-    id: `loop:${id}`, title: `${name || id} (Motion Loops)`, kind: 'loop', kindLabel: 'fond animé', cat: 'boucles',
+    id: `loop:${id}`, title: `${name || id} (Motion Loops)`, kind: 'loop', kindLabel: tr('fond animé'), cat: 'boucles',
     source: `${path.join(LOOPS, 'js', 'tiles', pack)} — tuile « ${id} » ; moteur ${path.join(LOOPS, 'js', 'lib.js')}`, image: null, note, at: new Date().toISOString(),
   }]);
   res.json(mb);
@@ -105,12 +110,12 @@ app.delete('/api/films/:slug/moodboard', express.json(), wrap(async (req, res) =
 // ——— Fichiers du film ———
 app.get('/api/films/:slug/file', wrap(async (req, res) => {
   const p = resolveInFilm(req.params.slug, String(req.query.path || ''));
-  if (!fs.existsSync(p)) throw httpError(404, `Fichier absent : ${req.query.path}`);
+  if (!fs.existsSync(p)) throw httpError(404, tr('Fichier absent : {path}', { path: req.query.path }));
   res.type('text/plain; charset=utf-8').send(fs.readFileSync(p, 'utf8'));
 }));
 app.put('/api/films/:slug/file', express.text({ type: '*/*', limit: '5mb' }), wrap(async (req, res) => {
   const rel = String(req.query.path || '');
-  if (!TEXT_EXT.test(rel)) throw httpError(400, 'Seuls les fichiers texte du studio se modifient ici.');
+  if (!TEXT_EXT.test(rel)) throw httpError(400, tr('Seuls les fichiers texte du studio se modifient ici.'));
   const p = resolveInFilm(req.params.slug, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, typeof req.body === 'string' ? req.body : '');
@@ -118,7 +123,7 @@ app.put('/api/films/:slug/file', express.text({ type: '*/*', limit: '5mb' }), wr
 }));
 app.put('/api/films/:slug/upload', express.raw({ type: '*/*', limit: '2gb' }), wrap(async (req, res) => {
   const rel = String(req.query.path || '');
-  if (!rel.startsWith('assets/')) throw httpError(400, 'Les fichiers déposés vont dans assets/.');
+  if (!rel.startsWith('assets/')) throw httpError(400, tr('Les fichiers déposés vont dans assets/.'));
   const p = resolveInFilm(req.params.slug, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, req.body);
@@ -126,7 +131,7 @@ app.put('/api/films/:slug/upload', express.raw({ type: '*/*', limit: '2gb' }), w
 }));
 app.delete('/api/films/:slug/upload', wrap(async (req, res) => {
   const rel = String(req.query.path || '');
-  if (!rel.startsWith('assets/')) throw httpError(400, 'Seuls les fichiers de assets/ se retirent ici.');
+  if (!rel.startsWith('assets/')) throw httpError(400, tr('Seuls les fichiers de assets/ se retirent ici.'));
   fs.rmSync(resolveInFilm(req.params.slug, rel), { force: true });
   res.json({ ok: true });
 }));
@@ -135,7 +140,7 @@ app.get('/api/films/:slug/probe', wrap(async (req, res) => {
 }));
 app.get('/api/films/:slug/poster', wrap(async (req, res) => {
   const film = listFilms().find((f) => f.slug === req.params.slug);
-  if (!film?.video) throw httpError(404, 'Aucune vidéo');
+  if (!film?.video) throw httpError(404, tr('Aucune vidéo'));
   res.sendFile(await posterFromVideo(req.params.slug, film.video));
 }));
 
@@ -143,11 +148,11 @@ app.get('/api/films/:slug/poster', wrap(async (req, res) => {
 app.post('/api/films/:slug/thumbs', wrap(async (req, res) => {
   const slug = req.params.slug;
   const dir = filmDir(slug);
-  if (!fs.existsSync(path.join(dir, 'index.html'))) throw httpError(400, 'La composition n’existe pas encore : construis d’abord un plan.');
+  if (!fs.existsSync(path.join(dir, 'index.html'))) throw httpError(400, tr('La composition n’existe pas encore : construis d’abord un plan.'));
   const film = getFilm(slug);
   const fps = film.timeline?.fps || 60;
   const shots = film.shots.filter((s) => s.frames);
-  if (!shots.length) throw httpError(400, 'SHOTLIST.md ne donne pas encore les images des plans.');
+  if (!shots.length) throw httpError(400, tr('SHOTLIST.md ne donne pas encore les images des plans.'));
   const times = shots.map((s) => ((s.frames.start + (s.frames.end - s.frames.start) * 0.6) / fps).toFixed(2));
   const out = path.join(dir, '.regie', 'thumbs');
   fs.rmSync(out, { recursive: true, force: true });
@@ -163,7 +168,7 @@ const previewProcs = new Set();
 app.post('/api/films/:slug/preview', wrap(async (req, res) => {
   const slug = req.params.slug;
   const dir = filmDir(slug);
-  if (!fs.existsSync(path.join(dir, 'index.html'))) throw httpError(400, 'La composition n’existe pas encore.');
+  if (!fs.existsSync(path.join(dir, 'index.html'))) throw httpError(400, tr('La composition n’existe pas encore.'));
   if (previews.has(slug)) return res.json({ url: previews.get(slug) });
   const port = 3100 + (listFilms().findIndex((f) => f.slug === slug) % 100);
   const child = spawn('npx', ['--yes', HYPERFRAMES, 'preview', '--no-open', '--foreground', '--port', String(port)], { cwd: dir, stdio: 'ignore', detached: true });
@@ -214,7 +219,7 @@ app.get('/api/runs/:id/events', (req, res) => {
   // Action terminée avant un redémarrage : on rejoue son fichier.
   let events = null;
   try { events = replayRun(String(req.query.slug || ''), req.params.id); } catch { events = null; }
-  if (!events) send({ type: 'error', message: 'Ce flux n’existe plus.' });
+  if (!events) send({ type: 'error', message: tr('Ce flux n’existe plus.') });
   else events.forEach(send);
   if (!events?.some((e) => e.type === 'end')) send({ type: 'end', status: 'interrupted' });
   res.end();
@@ -231,7 +236,8 @@ app.post('/api/library/refresh', (req, res) => { getLibrary({ refresh: true }); 
 app.get('/api/library/item', (req, res) => {
   const it = findItem(String(req.query.id || ''));
   if (!it) return res.status(404).json({ error: 'Fiche introuvable' });
-  res.json({ item: it, md: it.kind?.startsWith('skill-') ? null : itemMarkdown(it.id) });
+  const item = { ...it, ...(it.chapterLabel ? { chapterLabel: tr(it.chapterLabel) } : {}), ...(it.typeLabel ? { typeLabel: tr(it.typeLabel) } : {}) };
+  res.json({ item, md: it.kind?.startsWith('skill-') ? null : itemMarkdown(it.id) });
 });
 // Les skills open source : trop nombreux pour partir avec la Bibliothèque, servis par pages et par recherche.
 const num = (v, d, max) => Math.min(max, Math.max(0, Number.parseInt(v, 10) || d));
@@ -282,7 +288,7 @@ app.use((err, req, res, next) => {
   const status = err.status || (err.type === 'entity.too.large' ? 413 : 500);
   if (status >= 500) console.error(err);
   if (req.path.startsWith('/media/')) return res.status(status === 500 ? 404 : status).end();
-  res.status(status).json({ error: err.message || 'Erreur du serveur de la Régie.' });
+  res.status(status).json({ error: err.message || tr('Erreur du serveur de la Régie.') });
 });
 
 // Les actions marquées « en cours » d'une session précédente du serveur ne tournent plus.

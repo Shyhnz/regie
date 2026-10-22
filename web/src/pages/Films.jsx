@@ -4,6 +4,7 @@ import { go } from '../App.jsx';
 import { useMeta } from '../components/Meta.jsx';
 import Lightbox from '../components/Lightbox.jsx';
 import { Segmented } from '../components/Step.jsx';
+import { t } from '../i18n.js';
 
 const STATUS_LABEL = { done: 'fait', running: 'Claude travaille', current: 'en cours', todo: 'à faire' };
 
@@ -15,7 +16,7 @@ function NewFilm({ onCancel }) {
   const serie = count === '3';
   const submit = async (e) => {
     e.preventDefault();
-    if (!title.trim()) { setError(`Donne un nom ${serie ? 'à la série' : 'au film'}, par exemple « Lancement de l’app 30 s ».`); return; }
+    if (!title.trim()) { setError(serie ? t('Donne un nom à la série, par exemple « Lancement de l’app 30 s ».') : t('Donne un nom au film, par exemple « Lancement de l’app 30 s ».')); return; }
     setBusy(true); setError(null);
     try {
       const { slug } = await api('/api/films', { method: 'POST', body: { title, serie } });
@@ -25,23 +26,23 @@ function NewFilm({ onCancel }) {
   return (
     <form className="panel new-film" onSubmit={submit}>
       <div className="field">
-        <span className="label">Combien de vidéos</span>
-        <Segmented label="Combien de vidéos" value={count} onChange={setCount} options={[['3', '3 vidéos'], ['1', '1 vidéo']]} />
+        <span className="label">{t('Combien de vidéos')}</span>
+        <Segmented label={t('Combien de vidéos')} value={count} onChange={setCount} options={[['3', t('3 vidéos')], ['1', t('1 vidéo')]]} />
         <span className="help">
           {serie
-            ? 'Un brief commun, puis trois vidéos qui ont chacune leur scénario et leur direction artistique. Dossiers videos/<nom>-a, -b et -c.'
-            : 'Une seule vidéo : tu choisis un scénario parmi trois, puis une direction parmi trois.'}
+            ? t('Un brief commun, puis trois vidéos qui ont chacune leur scénario et leur direction artistique. Dossiers videos/<nom>-a, -b et -c.')
+            : t('Une seule vidéo : tu choisis un scénario parmi trois, puis une direction parmi trois.')}
         </span>
       </div>
       <div className="field">
-        <label htmlFor="film-title">{serie ? 'Nom de la série' : 'Nom du film'}</label>
-        <input id="film-title" className="input" autoFocus value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Lancement de l’app 30 s" enterKeyHint="go" aria-invalid={Boolean(error)} aria-describedby={error ? 'film-title-err' : 'film-title-help'} />
+        <label htmlFor="film-title">{serie ? t('Nom de la série') : t('Nom du film')}</label>
+        <input id="film-title" className="input" autoFocus value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t('Lancement de l’app 30 s')} enterKeyHint="go" aria-invalid={Boolean(error)} aria-describedby={error ? 'film-title-err' : 'film-title-help'} />
         {error ? <span id="film-title-err" className="help" style={{ color: 'var(--danger)' }}>{error}</span>
-          : <span id="film-title-help" className="help">Chaque dossier est copié du studio de base (contrat, interdits, outils).</span>}
+          : <span id="film-title-help" className="help">{t('Chaque dossier est copié du studio de base (contrat, interdits, outils).')}</span>}
       </div>
       <div className="row-end">
-        <button type="button" className="btn ghost" onClick={onCancel}>Annuler</button>
-        <button type="submit" className="btn primary" disabled={busy}>{busy && <span className="spin" />}{busy ? 'Création…' : serie ? 'Créer les 3 vidéos' : 'Créer le film'}</button>
+        <button type="button" className="btn ghost" onClick={onCancel}>{t('Annuler')}</button>
+        <button type="submit" className="btn primary" disabled={busy}>{busy && <span className="spin" />}{busy ? t('Création…') : serie ? t('Créer les 3 vidéos') : t('Créer le film')}</button>
       </div>
     </form>
   );
@@ -58,15 +59,15 @@ function FilmCard({ film }) {
       <div className="film-body">
         <div className="film-title-row">
           <h3>{film.title}</h3>
-          {film.imported && <span className="tag">avant la Régie</span>}
+          {film.imported && <span className="tag">{t('avant la Régie')}</span>}
         </div>
-        <ol className="progress" aria-label="Avancement">
-          {film.steps.map((s) => <li key={s.id} className={s.status} title={`${meta.steps.find((x) => x.id === s.id)?.title} : ${STATUS_LABEL[s.status]}`} />)}
+        <ol className="progress" aria-label={t('Avancement')}>
+          {film.steps.map((s) => <li key={s.id} className={s.status} title={t('{etape} : {statut}', { etape: meta.steps.find((x) => x.id === s.id)?.title, statut: t(STATUS_LABEL[s.status]) })} />)}
         </ol>
         <p className="muted">
-          {current ? <>Étape {meta.steps.find((x) => x.id === current.id)?.n} · {current.title} · <span className={`status ${current.status}`}>{STATUS_LABEL[current.status]}</span></> : <span className="status done">livré</span>}
+          {current ? <>{t('Étape {n}', { n: meta.steps.find((x) => x.id === current.id)?.n })} · {current.title} · <span className={`status ${current.status}`}>{t(STATUS_LABEL[current.status])}</span></> : <span className="status done">{t('livré')}</span>}
         </p>
-        <p className="faint nowrap">Dernière activité : {fmtDate(new Date(film.updatedAt).toISOString())}</p>
+        <p className="faint nowrap">{t('Dernière activité : {date}', { date: fmtDate(new Date(film.updatedAt).toISOString()) })}</p>
       </div>
     </a>
   );
@@ -78,13 +79,13 @@ function SerieCard({ films }) {
   const { title } = films[0].serie;
   const updatedAt = Math.max(...films.map((f) => f.updatedAt));
   return (
-    <section className="serie-card" aria-label={`Série ${title}`}>
+    <section className="serie-card" aria-label={t('Série {titre}', { titre: title })}>
       <div className="serie-head">
         <div className="film-title-row">
           <h3>{title}</h3>
-          <span className="tag">série de 3</span>
+          <span className="tag">{t('série de 3')}</span>
         </div>
-        <p className="faint nowrap">Dernière activité : {fmtDate(new Date(updatedAt).toISOString())}</p>
+        <p className="faint nowrap">{t('Dernière activité : {date}', { date: fmtDate(new Date(updatedAt).toISOString()) })}</p>
       </div>
       <div className="serie-films">
         {films.map((f) => {
@@ -95,12 +96,12 @@ function SerieCard({ films }) {
                 {f.poster ? <img src={filmUrl(f.slug, f.poster)} alt="" loading="lazy" /> : <span className="film-initial" aria-hidden="true">{f.serie.lettre}</span>}
               </div>
               <div className="serie-film-body">
-                <div className="serie-film-title"><span className="option-id">{f.serie.lettre}</span><strong>{f.serie.angle || <span className="faint">Scénario à venir</span>}</strong></div>
-                <ol className="progress" aria-label="Avancement">
-                  {f.steps.map((s) => <li key={s.id} className={s.status} title={`${meta.steps.find((x) => x.id === s.id)?.title} : ${STATUS_LABEL[s.status]}`} />)}
+                <div className="serie-film-title"><span className="option-id">{f.serie.lettre}</span><strong>{f.serie.angle || <span className="faint">{t('Scénario à venir')}</span>}</strong></div>
+                <ol className="progress" aria-label={t('Avancement')}>
+                  {f.steps.map((s) => <li key={s.id} className={s.status} title={t('{etape} : {statut}', { etape: meta.steps.find((x) => x.id === s.id)?.title, statut: t(STATUS_LABEL[s.status]) })} />)}
                 </ol>
                 <p className="muted">
-                  {current ? <>Étape {meta.steps.find((x) => x.id === current.id)?.n} · {current.title} · <span className={`status ${current.status}`}>{STATUS_LABEL[current.status]}</span></> : <span className="status done">livrée</span>}
+                  {current ? <>{t('Étape {n}', { n: meta.steps.find((x) => x.id === current.id)?.n })} · {current.title} · <span className={`status ${current.status}`}>{t(STATUS_LABEL[current.status])}</span></> : <span className="status done">{t('livrée')}</span>}
                 </p>
               </div>
             </a>
@@ -132,9 +133,11 @@ function MissingTools() {
   if (!missing.length) return null;
   return (
     <div className="notice" role="status">
-      <strong>Il manque {missing.length > 1 ? 'des outils' : 'un outil'} sur ce Mac : </strong>
+      <strong>{missing.length > 1 ? t('Il manque des outils sur ce Mac :') : t('Il manque un outil sur ce Mac :')}</strong>{' '}
       {missing.map(([k, label, url], i) => <span key={k}>{i ? ', ' : ''}<a href={url} target="_blank" rel="noreferrer">{label}</a></span>)}.
-      {' '}La Régie s’ouvre, mais Claude ne pourra pas fabriquer de film tant {missing.length > 1 ? 'qu’ils ne sont pas installés' : 'qu’il n’est pas installé'}. Installe, puis relance la Régie.
+      {' '}{missing.length > 1
+        ? t('La Régie s’ouvre, mais Claude ne pourra pas fabriquer de film tant qu’ils ne sont pas installés. Installe, puis relance la Régie.')
+        : t('La Régie s’ouvre, mais Claude ne pourra pas fabriquer de film tant qu’il n’est pas installé. Installe, puis relance la Régie.')}
     </div>
   );
 }
@@ -149,27 +152,27 @@ export default function Films() {
     <main className="page">
       <div className="page-head">
         <div>
-          <div className="eyebrow">Studio</div>
-          <h1>Films</h1>
-          <p className="lead" style={{ marginTop: 8 }}>Chaque film suit le parcours de la Bible, du scénario à la vidéo finale. Claude fait une action, tu regardes le résultat, tu passes à la suite ou tu la refais.</p>
+          <div className="eyebrow">{t('Studio')}</div>
+          <h1>{t('Films')}</h1>
+          <p className="lead" style={{ marginTop: 8 }}>{t('Chaque film suit le parcours de la Bible, du scénario à la vidéo finale. Claude fait une action, tu regardes le résultat, tu passes à la suite ou tu la refais.')}</p>
         </div>
-        {!creating && <button className="btn primary lg" onClick={() => setCreating(true)}>Nouvelles vidéos</button>}
+        {!creating && <button className="btn primary lg" onClick={() => setCreating(true)}>{t('Nouvelles vidéos')}</button>}
       </div>
       <MissingTools />
       {creating && <NewFilm onCancel={() => setCreating(false)} />}
       {error && (
-        <div className="error-box" role="alert"><strong>La liste des films ne s’est pas chargée.</strong><span>{error.message}</span><div><button className="btn sm" onClick={() => reload()}>Réessayer</button></div></div>
+        <div className="error-box" role="alert"><strong>{t('La liste des films ne s’est pas chargée.')}</strong><span>{error.message}</span><div><button className="btn sm" onClick={() => reload()}>{t('Réessayer')}</button></div></div>
       )}
       {loading && !data ? (
         <div className="film-grid">{[0, 1, 2].map((i) => <div key={i} className="skeleton" style={{ height: 300 }} />)}</div>
       ) : studio.length === 0 && !error ? (
-        !creating && <div className="empty"><strong>Aucun film dans le studio pour l’instant.</strong><span>Une série de 3 vidéos (ou un film seul) commence par un nom ; la Régie copie le studio de base et t’emmène au scénario.</span><button className="btn primary" onClick={() => setCreating(true)}>Créer les premières vidéos</button></div>
+        !creating && <div className="empty"><strong>{t('Aucun film dans le studio pour l’instant.')}</strong><span>{t('Une série de 3 vidéos (ou un film seul) commence par un nom ; la Régie copie le studio de base et t’emmène au scénario.')}</span><button className="btn primary" onClick={() => setCreating(true)}>{t('Créer les premières vidéos')}</button></div>
       ) : (
         <div className="film-grid">{groupFilms(studio).map((g) => (g.serie ? <SerieCard key={g.key} films={g.serie} /> : <FilmCard key={g.key} film={g.film} />))}</div>
       )}
       {old.length > 0 && (
         <details className="old-projects">
-          <summary><span className="eyebrow">Anciens projets sans studio · {old.length}</span></summary>
+          <summary><span className="eyebrow">{t('Anciens projets sans studio · {n}', { n: old.length })}</span></summary>
           <div className="old-grid">
             {old.map((f) => (
               <button key={f.slug} className="old-card" onClick={() => setPlaying(f)}>

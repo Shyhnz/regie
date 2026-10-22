@@ -7,6 +7,7 @@ import { SYNTHESE, STUDIO, MEMORY_DIR, ROOT, APPORTS, SKILL_PROMPTS, BLENDER_MCP
 import { ACTIONS, MESSAGE, SERIE_SYNC, buildPrompt, systemPrompt, actionMessage, stepOf, STEPS } from './prompts.js';
 import { filmDir, readState, updateState, httpError, getFilm, currentVersion, nextVersion, serieContext, syncSerie } from './films.js';
 import { appendJournal } from './journal.js';
+import { tr } from './i18n.js';
 import { spawnTerm, getTerm, typeInto, interrupt, killAllTerms, onSessionEvents, liveTerms, broadcast } from './sessions.js';
 
 const runs = new Map(); // id -> action en cours ou récente (événements gardés pour les abonnés tardifs)
@@ -143,7 +144,7 @@ export function activeRun(slug) {
 // Pour Régie.app : ce qui serait arrêté en quittant.
 export function busyLabels() {
   const labels = [...runs.values()].filter((r) => r.status === 'running').map((r) => r.name);
-  for (const t of liveTerms()) if (t.busy && !t.runId) labels.push(`${t.slug} · session de l'étape ${stepOf(t.step)?.title || t.step}`);
+  for (const t of liveTerms()) if (t.busy && !t.runId) labels.push(tr('{film} · session de l’étape {step}', { film: t.slug, step: tr(stepOf(t.step)?.title || t.step) }));
   return labels;
 }
 
@@ -173,7 +174,7 @@ function sessionArgs(slug, step, serie, state) {
   // Les autres vidéos de la série restent lisibles, pour que chacune se distingue des deux autres.
   const dirs = serie ? serie.films.filter((f) => f.slug !== slug).map((f) => f.dir) : [];
   const settings = { ...DEFAULT_SETTINGS, ...(state.settings || {}) };
-  return claudeArgs({ settings, system: systemPrompt({ film, step, serie, blender: settings.blender }), name: `Régie · ${film.title} · ${step.title}`, dirs });
+  return claudeArgs({ settings, system: systemPrompt({ film, step, serie, blender: settings.blender }), name: `Régie · ${film.title} · ${tr(step.title)}`, dirs });
 }
 
 // La session interactive de l'étape, prête à recevoir la consigne : celle qui tourne si elle convient, sinon une nouvelle
@@ -187,7 +188,7 @@ function sessionFor({ slug, step, args, fresh, resume }) {
 // Le panneau ouvre la session d'une étape pour qu'on y écrive : la conversation de l'étape reprend, sans consigne.
 export function ensureSession(slug, stepId) {
   const step = stepOf(stepId);
-  if (!step) throw httpError(400, `Étape inconnue : ${stepId}`);
+  if (!step) throw httpError(400, tr('Étape inconnue : {step}', { step: stepId }));
   const live = getTerm(slug, step.id);
   if (live && !live.exited) return live;
   const state = readState(slug);
@@ -199,7 +200,7 @@ export function startRun(requested, { actionId, input = {}, shotN = null, newSes
   filmDir(requested);
   const isMessage = actionId === 'message';
   const action = isMessage ? { ...MESSAGE, step: input.step, serie: SERIE_SYNC[input.serie] ? 'shared' : undefined } : ACTIONS[actionId];
-  if (!action) throw httpError(400, `Action inconnue : ${actionId}`);
+  if (!action) throw httpError(400, tr('Action inconnue : {action}', { action: actionId }));
   // Dans une série, une action commune (brief, 3 scénarios, 3 directions, ou la réponse à l'une d'elles) tourne dans la vidéo A.
   const serieOf = serieContext(requested);
   const shared = Boolean(serieOf) && action.serie === 'shared';
@@ -208,28 +209,29 @@ export function startRun(requested, { actionId, input = {}, shotN = null, newSes
   const dir = filmDir(slug);
   if (shared) {
     const busy = serie.films.find((f) => activeRun(f.slug));
-    if (busy) throw httpError(409, `Claude travaille déjà sur la vidéo ${busy.lettre}. Cette action vaut pour les 3 vidéos : attends la fin ou arrête-la.`);
+    if (busy) throw httpError(409, tr('Claude travaille déjà sur la vidéo {lettre}. Cette action vaut pour les 3 vidéos : attends la fin ou arrête-la.', { lettre: busy.lettre }));
   } else if (activeRun(slug)) {
-    throw httpError(409, sharedFor.has(slug) ? 'Claude fait une action commune aux 3 vidéos. Attends la fin ou arrête-la.' : 'Claude travaille déjà sur ce film. Attends la fin ou arrête-le.');
+    throw httpError(409, sharedFor.has(slug) ? tr('Claude fait une action commune aux 3 vidéos. Attends la fin ou arrête-la.') : tr('Claude travaille déjà sur ce film. Attends la fin ou arrête-le.'));
   }
   const step = stepOf(action.step) || STEPS[0];
-  if (getTerm(slug, step.id)?.busy) throw httpError(409, `Claude travaille dans la session « ${step.title} » : attends la fin de son tour, ou interromps-le (Échap dans le panneau).`);
+  if (getTerm(slug, step.id)?.busy) throw httpError(409, tr('Claude travaille dans la session « {step} » : attends la fin de son tour, ou interromps-le (Échap dans le panneau).', { step: tr(step.title) }));
   if (action.needs) {
-    for (const k of action.needs) if (!String(input[k] || input.notes || '').trim()) throw httpError(400, 'Dis d’abord ce que tu choisis.');
+    for (const k of action.needs) if (!String(input[k] || input.notes || '').trim()) throw httpError(400, tr('Dis d’abord ce que tu choisis.'));
   }
-  if (isMessage && !String(input.text || '').trim()) throw httpError(400, 'Le message est vide.');
+  if (isMessage && !String(input.text || '').trim()) throw httpError(400, tr('Le message est vide.'));
 
   const state = readState(slug);
   const film = { slug, title: state.title || slug };
   let shot = null;
   if (action.perShot) {
     shot = getFilm(slug).shots.find((s) => String(s.n) === String(shotN));
-    if (!shot) throw httpError(400, `Plan ${shotN} introuvable dans SHOTLIST.md`);
+    if (!shot) throw httpError(400, tr('Plan {n} introuvable dans SHOTLIST.md', { n: shotN }));
   }
   const id = randomUUID();
   const firstBuild = actionId === 'build_shot' && !Object.values(state.shots).some((s) => s.status !== 'todo');
   const version = actionId === 'assemble' ? nextVersion(slug) : currentVersion(slug);
-  const label = isMessage ? short(input.text, 80) : ((serie && action.labelSerie) || action.label) + (shot ? ` · plan ${shot.n}` : '');
+  // Le libellé suit la langue de l'app : dans l'historique, et en tête de la consigne tapée dans le panneau.
+  const label = isMessage ? short(input.text, 80) : tr((serie && action.labelSerie) || action.label) + (shot ? tr(' · plan {n}', { n: shot.n }) : '');
   const blender = Boolean({ ...DEFAULT_SETTINGS, ...(state.settings || {}) }.blender);
   const body = buildPrompt(actionId, { film, runId: id, shot, firstBuild, version, serie, blender }, input);
   const prompt = actionMessage({ runId: id, step, label, shared, lettre: serie?.lettre, body, isMessage });
@@ -266,7 +268,7 @@ export function startRun(requested, { actionId, input = {}, shotN = null, newSes
   runs.set(id, run);
   term.runId = id;
   updateState(slug, (s) => { s.runs.push(record); return s; });
-  appendJournal(path.join(dir, 'JOURNAL.md'), { step: step.title, type: isMessage ? 'relance' : action.fresh ? 'critique' : 'action', sent: record.label + (shared ? ' · pour les 3 vidéos' : ''), proof: '—', result: 'en cours' });
+  appendJournal(path.join(dir, 'JOURNAL.md'), { step: tr(step.title), type: tr(isMessage ? 'relance' : action.fresh ? 'critique' : 'action'), sent: record.label + (shared ? tr(' · pour les 3 vidéos') : ''), proof: '—', result: tr('en cours') });
   // Les deux autres vidéos voient l'action commune dans leur propre historique.
   for (const m of mirrors) {
     sharedFor.set(m, id);
@@ -287,14 +289,14 @@ function startFreeRun(t, text) {
   const id = randomUUID();
   const dir = filmDir(t.slug);
   try { fs.rmSync(path.join(dir, '.regie', 'handoff.json'), { force: true }); } catch { /* rien à effacer */ }
-  const label = short(text.replace(/\s+/g, ' ').trim(), 80) || 'Message';
+  const label = short(text.replace(/\s+/g, ' ').trim(), 80) || tr('Message');
   const record = { id, slug: t.slug, step: t.step, action: 'message', label, shot: null, startedAt: new Date().toISOString(), status: 'running', mode: 'session', free: true, resumed: true, sessionId: t.sessionId, settings: { ...DEFAULT_SETTINGS, ...(state.settings || {}) } };
   fs.mkdirSync(path.join(dir, '.regie', 'runs'), { recursive: true });
   const run = { ...record, name: `${state.title || t.slug} · ${label}`, fresh: t.fresh, events: [], listeners: new Set(), log: fs.createWriteStream(path.join(dir, '.regie', 'runs', `${id}.jsonl`)), mirrors: [], term: t };
   runs.set(id, run);
   t.runId = id;
   updateState(t.slug, (s) => { s.runs.push(record); return s; });
-  appendJournal(path.join(dir, 'JOURNAL.md'), { step: step.title, type: 'message', sent: label, proof: '—', result: 'en cours' });
+  appendJournal(path.join(dir, 'JOURNAL.md'), { step: tr(step.title), type: tr('message'), sent: label, proof: '—', result: tr('en cours') });
   emit(run, { type: 'start', id, label, prompt: text, resumed: true });
 }
 
@@ -313,7 +315,7 @@ function finish(run, status, errorMessage = null) {
   if (run.status !== 'running') return;
   const dir = filmDir(run.slug);
   const handoff = readHandoff(run.slug, run);
-  if (status === 'error') emit(run, { type: 'error', message: errorMessage || 'Claude n’a pas pu finir.' });
+  if (status === 'error') emit(run, { type: 'error', message: errorMessage || tr('Claude n’a pas pu finir.') });
   if (handoff) emit(run, { type: 'handoff', handoff });
   emit(run, { type: 'end', status });
   run.log.end();
@@ -322,7 +324,7 @@ function finish(run, status, errorMessage = null) {
   run.endedAt = new Date().toISOString();
   if (run.term?.runId === run.id) { run.term.runId = null; run.term.lastRunId = run.id; }
   const sessionId = run.term?.sessionId || null;
-  const stepTitle = stepOf(run.step)?.title || run.step;
+  const stepTitle = tr(stepOf(run.step)?.title || run.step);
   const outcome = { status, endedAt: run.endedAt, sessionId, costUsd: null, tokens: null, durationMs: Date.parse(run.endedAt) - Date.parse(run.startedAt), summary: handoff?.resume || null, handoff, finalText: null, denials: [] };
   updateState(run.slug, (s) => {
     const r = s.runs.find((x) => x.id === run.id);
@@ -336,10 +338,10 @@ function finish(run, status, errorMessage = null) {
   });
   const entry = {
     step: stepTitle,
-    type: 'résultat',
+    type: tr('résultat'),
     sent: run.label,
     proof: (handoff?.images || []).map((i) => i.path).slice(0, 4).join(', ') || (handoff?.fichiers || []).join(', ') || '—',
-    result: status === 'done' ? (handoff?.resume || 'fait') : status === 'stopped' ? 'arrêté par l’utilisateur' : `erreur${errorMessage ? ` : ${errorMessage}` : ''}`,
+    result: status === 'done' ? (handoff?.resume || tr('fait')) : status === 'stopped' ? tr('arrêté par l’utilisateur') : errorMessage ? tr('erreur : {message}', { message: errorMessage }) : tr('erreur'),
   };
   appendJournal(path.join(dir, 'JOURNAL.md'), entry);
   if (run.mirrors.length) finishShared(run, outcome, entry);
@@ -376,8 +378,8 @@ onSessionEvents({
     const run = t.runId && runs.get(t.runId);
     if (run) {
       finish(run, run.stopped || t.killed ? 'stopped' : 'error', failedResume
-        ? 'La conversation de l’étape n’a pas pu reprendre. Relance l’action : une session neuve s’ouvrira.'
-        : `La session Claude s’est fermée${code ? ` (code ${code})` : ''}.`);
+        ? tr('La conversation de l’étape n’a pas pu reprendre. Relance l’action : une session neuve s’ouvrira.')
+        : code ? tr('La session Claude s’est fermée (code {code}).', { code }) : tr('La session Claude s’est fermée.'));
     }
   },
   session(t, ev) {
@@ -402,7 +404,7 @@ function finishShared(run, outcome, entry) {
         if (r) Object.assign(r, outcome, { sessionId: null });
         return s;
       });
-      appendJournal(path.join(filmDir(m), 'JOURNAL.md'), { ...entry, sent: `${entry.sent} · commune aux 3 vidéos, faite dans videos/${run.slug}`, result: synced ? entry.result : `${entry.result} (copie dans cette vidéo ratée : relance l'action)` });
+      appendJournal(path.join(filmDir(m), 'JOURNAL.md'), { ...entry, sent: tr('{sent} · commune aux 3 vidéos, faite dans videos/{slug}', { sent: entry.sent, slug: run.slug }), result: synced ? entry.result : tr('{result} (copie dans cette vidéo ratée : relance l’action)', { result: entry.result }) });
     } catch (err) { console.error(err); }
   }
 }
@@ -410,22 +412,22 @@ function finishShared(run, outcome, entry) {
 // « Lancer sur les 3 » : la même action dans chaque vidéo de la série, en parallèle. Chacune garde son scénario et sa direction.
 export function startSerieRuns(slug, { actionId, input = {} }) {
   const serie = serieContext(slug);
-  if (!serie) throw httpError(400, 'Ce film ne fait pas partie d’une série.');
+  if (!serie) throw httpError(400, tr('Ce film ne fait pas partie d’une série.'));
   const action = ACTIONS[actionId];
-  if (!action || action.serie !== 'each') throw httpError(400, 'Cette action ne se lance pas sur les 3 vidéos à la fois.');
+  if (!action || action.serie !== 'each') throw httpError(400, tr('Cette action ne se lance pas sur les 3 vidéos à la fois.'));
   const started = [];
   const skipped = [];
   for (const f of serie.films) {
     const own = action.needs?.includes('choix') ? { ...input, choix: f.lettre } : input;
     try {
-      if (activeRun(f.slug)) throw httpError(409, 'Claude y travaille déjà');
+      if (activeRun(f.slug)) throw httpError(409, tr('Claude y travaille déjà'));
       started.push(startRun(f.slug, { actionId, input: own }));
       updateState(f.slug, (s) => { s.inputs = { ...s.inputs, [actionId]: own }; return s; });
     } catch (err) {
       skipped.push({ slug: f.slug, lettre: f.lettre, reason: err.message });
     }
   }
-  if (!started.length) throw httpError(409, skipped.map((x) => `Vidéo ${x.lettre} : ${x.reason}`).join(' · '));
+  if (!started.length) throw httpError(409, skipped.map((x) => tr('Vidéo {lettre} : {reason}', { lettre: x.lettre, reason: x.reason })).join(' · '));
   return { started, skipped };
 }
 

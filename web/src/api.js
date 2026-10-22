@@ -1,5 +1,6 @@
 // Accès au serveur de la Régie.
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { t, locale } from './i18n.js';
 
 export async function api(path, { method = 'GET', body, text, raw, headers } = {}) {
   const init = { method, headers: { ...headers } };
@@ -10,11 +11,11 @@ export async function api(path, { method = 'GET', body, text, raw, headers } = {
   try {
     res = await fetch(path, init);
   } catch {
-    throw new Error('Le serveur de la Régie ne répond pas. Vérifie qu’il tourne (npm start dans regie/).');
+    throw new Error(t('Le serveur de la Régie ne répond pas. Vérifie qu’il tourne (npm start dans regie/).'));
   }
   const type = res.headers.get('content-type') || '';
   const data = type.includes('json') ? await res.json() : await res.text();
-  if (!res.ok) throw new Error((data && data.error) || `Le serveur a répondu ${res.status}.`);
+  if (!res.ok) throw new Error((data && data.error) || t('Le serveur a répondu {status}.', { status: res.status }));
   return data;
 }
 
@@ -58,7 +59,7 @@ export function fmtTokens(n) {
 
 export function fmtDate(iso) {
   if (!iso || iso === 'import') return iso === 'import' ? 'avant la Régie' : '—';
-  return new Date(iso).toLocaleString('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  return new Date(iso).toLocaleString(locale(), { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 }
 
 export const fmtTime = (s) => {

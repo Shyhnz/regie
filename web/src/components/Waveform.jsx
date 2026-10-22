@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import TimelineBar from './TimelineBar.jsx';
 import { pauseOthers } from '../api.js';
+import { t } from '../i18n.js';
 
 // Forme d'onde d'un son du film, posée sur la même frise que l'image : on voit si chaque coup tombe sur son repère.
 // Le lecteur reste le même d'un son à l'autre : le parent (audioRef) peut lancer la lecture dans le geste du clic.
@@ -10,7 +11,7 @@ export default function Waveform({ src, timeline, shots, audioRef }) {
   const audio = audioRef || own;
   const [peaks, setPeaks] = useState(null);
   const [error, setError] = useState(null);
-  const [t, setT] = useState(0);
+  const [now, setNow] = useState(0);
   const [duration, setDuration] = useState(null);
 
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Waveform({ src, timeline, shots, audioRef }) {
         }
         if (alive) { setPeaks(out); setDuration(audioBuf.duration); }
       } catch {
-        if (alive) setError('Ce fichier son ne se décode pas dans le navigateur.');
+        if (alive) setError(true);
       }
     })();
     return () => { alive = false; };
@@ -42,7 +43,7 @@ export default function Waveform({ src, timeline, shots, audioRef }) {
   // La source se pose à la main : React ne la recharge pas quand le parent vient de lancer ce même son.
   useEffect(() => {
     const a = audio.current;
-    if (a && a.src !== new URL(src, window.location.href).href) { a.src = src; setT(0); }
+    if (a && a.src !== new URL(src, window.location.href).href) { a.src = src; setNow(0); }
   }, [src, audio]);
 
   useEffect(() => {
@@ -62,19 +63,19 @@ export default function Waveform({ src, timeline, shots, audioRef }) {
       const y = peaks[i] * (h / 2 - 2);
       g.fillRect(x, h / 2 - y, Math.max(1, (w * scale) / peaks.length - 0.4), y * 2);
     }
-    const playX = (t / span) * w;
+    const playX = (now / span) * w;
     g.fillStyle = '#7CC4FF';
     g.fillRect(playX, 0, 2, h);
-  }, [peaks, t, timeline, duration]);
+  }, [peaks, now, timeline, duration]);
 
   const seek = (s) => { if (audio.current) audio.current.currentTime = s; };
   return (
     <div className="waveform">
-      {error ? <div className="notice">{error}</div> : !peaks ? <div className="skeleton" style={{ height: 96 }} /> : (
-        <canvas ref={canvas} className="wave-canvas" onClick={(e) => { const r = e.currentTarget.getBoundingClientRect(); seek(((e.clientX - r.left) / r.width) * (timeline?.duration || duration)); }} aria-label="Forme d’onde, cliquer pour se placer" />
+      {error ? <div className="notice">{t('Ce fichier son ne se décode pas dans le navigateur.')}</div> : !peaks ? <div className="skeleton" style={{ height: 96 }} /> : (
+        <canvas ref={canvas} className="wave-canvas" onClick={(e) => { const r = e.currentTarget.getBoundingClientRect(); seek(((e.clientX - r.left) / r.width) * (timeline?.duration || duration)); }} aria-label={t('Forme d’onde, cliquer pour se placer')} />
       )}
-      {timeline && <TimelineBar timeline={timeline} shots={shots} playhead={t} onSeek={seek} height={110} />}
-      <audio ref={audio} controls preload="metadata" onPlay={pauseOthers} onTimeUpdate={(e) => setT(e.currentTarget.currentTime)} style={{ width: '100%' }} />
+      {timeline && <TimelineBar timeline={timeline} shots={shots} playhead={now} onSeek={seek} height={110} />}
+      <audio ref={audio} controls preload="metadata" onPlay={pauseOthers} onTimeUpdate={(e) => setNow(e.currentTarget.currentTime)} style={{ width: '100%' }} />
     </div>
   );
 }

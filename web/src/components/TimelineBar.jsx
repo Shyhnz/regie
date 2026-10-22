@@ -1,6 +1,8 @@
 import { fmtTime } from '../api.js';
+import { t, locale } from '../i18n.js';
 
 const SECTION_TONES = ['#2B2723', '#3A2A1F', '#24302B', '#2D2638', '#3A3220'];
+const dec = (x, d) => x.toLocaleString(locale(), { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: false });
 
 // timeline.js vu d'en haut : mesures et temps, sections musicales, plans, événements image et repères son.
 // `playhead` (s) et `onSeek` relient la frise à une vidéo ou à un son.
@@ -8,7 +10,7 @@ export default function TimelineBar({ timeline, shots = [], playhead = null, onS
   if (!timeline || !timeline.duration) return null;
   const { duration, beat, beatsPerBar, fps, sections, events, cues } = timeline;
   const W = 1000;
-  const x = (t) => (t / duration) * W;
+  const x = (sec) => (sec / duration) * W;
   const beats = Math.round(duration / beat);
   const rows = { sections: 4, shots: 30, events: 74, cues: 98 };
   const seek = (e) => {
@@ -18,11 +20,11 @@ export default function TimelineBar({ timeline, shots = [], playhead = null, onS
   };
   return (
     <figure className="timeline-bar">
-      <svg viewBox={`0 0 ${W} ${height}`} preserveAspectRatio="none" role="img" aria-label={`Frise de ${duration.toFixed(1)} s à ${timeline.bpm} BPM`} onClick={seek} style={{ cursor: onSeek ? 'pointer' : 'default' }}>
+      <svg viewBox={`0 0 ${W} ${height}`} preserveAspectRatio="none" role="img" aria-label={t('Frise de {duree} s à {bpm} BPM', { duree: dec(duration, 1), bpm: timeline.bpm })} onClick={seek} style={{ cursor: onSeek ? 'pointer' : 'default' }}>
         {sections.map((s, i) => (
           <g key={s.name + i}>
             <rect x={x(s.from)} y={rows.sections} width={Math.max(1, x(s.to) - x(s.from))} height={height - 8} fill={SECTION_TONES[i % SECTION_TONES.length]} opacity="0.55">
-              <title>{`Section « ${s.name} » · ${fmtTime(s.from)} → ${fmtTime(s.to)}`}</title>
+              <title>{t('Section « {nom} » · {debut} → {fin}', { nom: s.name, debut: fmtTime(s.from), fin: fmtTime(s.to) })}</title>
             </rect>
           </g>
         ))}
@@ -35,7 +37,7 @@ export default function TimelineBar({ timeline, shots = [], playhead = null, onS
           return (
             <g key={s.n} onClick={(e) => { if (onSeek) { e.stopPropagation(); onSeek(a); } }}>
               <rect x={x(a) + 1} y={rows.shots} width={Math.max(2, x(b) - x(a) - 2)} height={36} rx="3" fill={i % 2 ? '#2E2924' : '#36302A'} stroke="#4A433C" vectorEffect="non-scaling-stroke">
-                <title>{`Plan ${s.n} · ${s.plan} · f${s.frames.start}–f${s.frames.end}`}</title>
+                <title>{t('Plan {n} · {plan} · f{debut}–f{fin}', { n: s.n, plan: s.plan, debut: s.frames.start, fin: s.frames.end })}</title>
               </rect>
             </g>
           );
@@ -47,7 +49,7 @@ export default function TimelineBar({ timeline, shots = [], playhead = null, onS
         ))}
         {cues.filter((c) => c.t != null).map((c, i) => (
           <line key={c.event + i} x1={x(c.t)} x2={x(c.t)} y1={rows.cues} y2={rows.cues + 12} stroke="#F44800" strokeWidth="2" vectorEffect="non-scaling-stroke">
-            <title>{`son « ${c.kind} » sur ${c.event} · ${fmtTime(c.t)}`}</title>
+            <title>{t('son « {type} » sur {evenement} · {temps}', { type: c.kind, evenement: c.event, temps: fmtTime(c.t) })}</title>
           </line>
         ))}
         {playhead != null && <line x1={x(playhead)} x2={x(playhead)} y1={0} y2={height} stroke="#7CC4FF" strokeWidth="2" vectorEffect="non-scaling-stroke" />}
@@ -58,11 +60,11 @@ export default function TimelineBar({ timeline, shots = [], playhead = null, onS
         ))}
       </div>
       <figcaption className="timeline-legend">
-        <span className="mono">{timeline.bpm} BPM · {timeline.bars ?? Math.round(beats / beatsPerBar)} mesures · {duration.toFixed(2).replace('.', ',')} s · {Math.round(duration * fps)} images</span>
-        <span className="legend"><i className="lg-shot" />plans</span>
-        <span className="legend"><i className="lg-ev" />événements image ({events.length})</span>
-        <span className="legend"><i className="lg-cue" />repères son ({cues.length})</span>
-        {sections.length > 0 && <span className="legend"><i className="lg-sec" />sections : {sections.map((s) => s.name).join(' · ')}</span>}
+        <span className="mono">{t('{bpm} BPM · {mesures} mesures · {duree} s · {images} images', { bpm: timeline.bpm, mesures: timeline.bars ?? Math.round(beats / beatsPerBar), duree: dec(duration, 2), images: Math.round(duration * fps) })}</span>
+        <span className="legend"><i className="lg-shot" />{t('plans')}</span>
+        <span className="legend"><i className="lg-ev" />{t('événements image ({n})', { n: events.length })}</span>
+        <span className="legend"><i className="lg-cue" />{t('repères son ({n})', { n: cues.length })}</span>
+        {sections.length > 0 && <span className="legend"><i className="lg-sec" />{t('sections : {liste}', { liste: sections.map((s) => s.name).join(' · ') })}</span>}
       </figcaption>
     </figure>
   );

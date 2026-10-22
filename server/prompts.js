@@ -4,6 +4,7 @@
 import path from 'node:path';
 import { SYNTHESE, METHODE, STUDIO, GOUTS, SAVOIR_FAIRE, FILM_TEST_VERDICT, HYPERFRAMES, APPORTS, SKILL_PROMPTS, BLENDER_BIN } from './config.js';
 import { skillsSummary } from './skills.js';
+import { getLang } from './i18n.js';
 
 const HF = `npx --yes ${HYPERFRAMES}`;
 // Les règles des skills open source d'un chapitre : Claude y cherche par mots-clés (fichiers de plusieurs centaines de Ko).
@@ -93,7 +94,9 @@ Règles de la Régie :
 4. À la fin de chaque tour où tu as produit, changé ou demandé quelque chose, réécris le fichier .regie/handoff.json (JSON valide, chemins relatifs au dossier du film) ; "run" vaut l'identifiant de la consigne de la Régie, ou "libre" si l'utilisateur t'a écrit directement :
 {"run":"<identifiant>","resume":"3 à 6 phrases pour l'utilisateur : ce que tu as fait, ce que tu recommandes, ce qui reste ouvert","questions":["…"],"options":[{"id":"A","titre":"…","pitch":"…"}],"images":[{"path":"reviews/…png","label":"…","group":"…"}],"fichiers":["BRIEF.md"]}
    Laisse vides les listes qui ne servent pas. Mets dans images toutes les images que l'utilisateur doit regarder pour décider, et dans fichiers chaque son et chaque vidéo à écouter ou regarder : la Régie les lit directement dans l'app. N'ouvre rien sur le Mac pour les faire écouter.
-5. Écris en français, sans jargon inutile.`;
+5. ${getLang() === 'fr'
+    ? 'Écris en français, sans jargon inutile.'
+    : "L'utilisateur travaille en anglais : écris en anglais, sans jargon inutile — tes messages, le handoff (resume, questions, options, labels des images) et ce que tu rédiges pour lui dans les fichiers du film (BRIEF.md, SCENARIO.md, STYLE.md, SHOTLIST.md, reviews…), même si ces consignes, les gabarits du studio et la Bible sont en français. Les textes à l'écran du film restent dans la langue du brief."}`;
 }
 
 const brief = (inp) => lines(
@@ -454,15 +457,18 @@ export const MESSAGE = {
 };
 
 // Le message que la Régie tape dans la session : l'identifiant (pour le handoff), l'étape, la portée en série, puis la consigne.
+// La première ligne se lit dans le panneau : elle suit la langue de l'app ; les consignes qui suivent restent en français.
 export function actionMessage({ runId, step, label, shared, lettre, body, isMessage }) {
   if (isMessage) return `[Régie · action ${runId}] ${body}`;
+  const en = getLang() !== 'fr';
   return lines(
-    `[Régie · action ${runId}] Étape ${step.n} · ${step.title} — « ${label} ».`,
+    en ? `[Régie · action ${runId}] Step ${step.n} · ${EN_STEP[step.id] || step.title} — “${label}”.` : `[Régie · action ${runId}] Étape ${step.n} · ${step.title} — « ${label} ».`,
     shared ? `Cette action vaut pour les 3 vidéos : tu la fais ici, dans la vidéo ${lettre}, et la Régie recopie ensuite le résultat dans les deux autres. N'écris pas dans leurs dossiers.` : null,
     `Fais seulement cette action, puis arrête-toi après avoir écrit .regie/handoff.json avec "run":"${runId}".`,
     `\n${body}`,
   );
 }
+const EN_STEP = { scenario: 'Scenario', storyboard: 'Storyboard', plans: 'Shot by shot', musique: 'Music', final: 'Final video' };
 
 export function buildPrompt(actionId, ctx, input = {}) {
   const action = actionId === 'message' ? MESSAGE : ACTIONS[actionId];

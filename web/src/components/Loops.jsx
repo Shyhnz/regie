@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { api } from '../api.js';
+import { t } from '../i18n.js';
 
 // Les 80 boucles Motion Loops, dessinées en direct avec leur propre moteur (lib.js + tuiles), comme sur leur page.
 let loading = null;
@@ -10,7 +11,7 @@ function loadScripts() {
   loading = api('/api/library/loops').then(async (m) => {
     await add(m.lib);
     await add(m.sets);
-    for (const t of m.tiles) await add(t);
+    for (const tile of m.tiles) await add(tile);
   });
   return loading;
 }
@@ -60,7 +61,7 @@ function LoopTile({ tile, onAdd, added }) {
       <div className="loop-meta">
         <span className="mono faint">{String(tile.n).padStart(2, '0')}</span>
         <span>{tile.name}</span>
-        {onAdd && <button className="btn sm ghost" onClick={() => onAdd(tile)} disabled={added}>{added ? 'Ajoutée' : '+ Film'}</button>}
+        {onAdd && <button className="btn sm ghost" onClick={() => onAdd(tile)} disabled={added}>{added ? t('Ajoutée') : t('+ Film')}</button>}
       </div>
     </li>
   );
@@ -71,19 +72,19 @@ export default function Loops({ query, onAdd, addedIds }) {
   useEffect(() => {
     loadScripts().then(() => setState({ ready: true, error: null })).catch((e) => setState({ ready: false, error: e }));
   }, []);
-  if (state.error) return <div className="error-box"><strong>Les boucles ne se chargent pas.</strong><span>Le dossier base-connaissance/scenario-motion-loops est-il en place ? ({state.error.message})</span></div>;
+  if (state.error) return <div className="error-box"><strong>{t('Les boucles ne se chargent pas.')}</strong><span>{t('Le dossier base-connaissance/scenario-motion-loops est-il en place ? ({erreur})', { erreur: state.error.message })}</span></div>;
   if (!state.ready) return <div className="loops-grid">{Array.from({ length: 8 }, (_, i) => <div key={i} className="skeleton" style={{ aspectRatio: '16/9' }} />)}</div>;
   const packs = [['bg', 'Fonds'], ['sh', 'Formes']];
   const q = (query || '').toLowerCase();
   return packs.map(([key, label]) => (
     <div key={key} className="loops-pack">
       {window.SETS[key].pages.map((page) => {
-        const tiles = page.tiles.map((t, i) => ({ ...t, n: page.first + i, name: window.TILES[t.id]?.name || t.id, accent: page.accent })).filter((t) => !q || t.name.toLowerCase().includes(q) || page.name.toLowerCase().includes(q));
+        const tiles = page.tiles.map((tl, i) => ({ ...tl, n: page.first + i, name: window.TILES[tl.id]?.name || tl.id, accent: page.accent })).filter((tl) => !q || tl.name.toLowerCase().includes(q) || page.name.toLowerCase().includes(q));
         if (!tiles.length) return null;
         return (
           <section key={page.name} className="loops-page">
-            <div className="section-head"><h3>{label} · {page.name}</h3></div>
-            <ul className="loops-grid">{tiles.map((t) => <LoopTile key={t.id} tile={t} onAdd={onAdd} added={addedIds?.has(`loop:${t.id}`)} />)}</ul>
+            <div className="section-head"><h3>{t(label)} · {page.name}</h3></div>
+            <ul className="loops-grid">{tiles.map((tl) => <LoopTile key={tl.id} tile={tl} onAdd={onAdd} added={addedIds?.has(`loop:${tl.id}`)} />)}</ul>
           </section>
         );
       })}

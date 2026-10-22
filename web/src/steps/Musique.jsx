@@ -4,11 +4,18 @@ import { useFilm, lastDone } from '../pages/Film.jsx';
 import { StepHeader, Section, HandoffCard, ActionRow, NextStep, Segmented, NotesField } from '../components/Step.jsx';
 import Waveform from '../components/Waveform.jsx';
 import Markdown from '../components/Markdown.jsx';
+import { t } from '../i18n.js';
 
 // Toute la musique du film, où que Claude l'ait rangée : groupée par dossier, les mix avant les pistes séparées.
 const STEM = /[-_](lit|coups|bed|hits|stems?|pistes?)\.[a-z0-9]+$|\/stems?\//i;
 const folderOf = (p) => p.replace(/\/[^/]+$/, '').replace(/\/?assets\/audio$/, '');
-const folderLabel = (f) => (!f ? 'Ce film' : f.replace(/^variants\//, 'Variante ').replace(/^films\//, 'Film '));
+const folderLabel = (f) => {
+  if (!f) return t('Ce film');
+  const v = f.match(/^variants\/(.*)$/);
+  if (v) return t('Variante {nom}', { nom: v[1] });
+  const m = f.match(/^films\/(.*)$/);
+  return m ? t('Film {nom}', { nom: m[1] }) : f;
+};
 
 function Sounds({ audio, timeline, shots }) {
   const { slug } = useFilm();
@@ -37,7 +44,7 @@ function Sounds({ audio, timeline, shots }) {
                     <button className={`sound-row ${a.path === pick ? 'is-current' : ''}`} aria-current={a.path === pick ? 'true' : undefined} onClick={() => play(a.path)} title={a.path}>
                       <span className="sound-play" aria-hidden="true">▶</span>
                       <span className="sound-name">{a.path.split('/').pop()}</span>
-                      {STEM.test(a.path) && <span className="tag">piste séparée</span>}
+                      {STEM.test(a.path) && <span className="tag">{t('piste séparée')}</span>}
                       <span className="faint nowrap">{fmtDate(new Date(a.mtime).toISOString())}</span>
                     </button>
                   </li>
@@ -73,37 +80,37 @@ export default function Musique({ step, status }) {
     <div className="step">
       <StepHeader step={step} status={status} />
       <div className="notice">
-        La musique mène l’animation : le tempo, les sections et les repères son se décident au storyboard, dans timeline.js.
-        {tl ? <> Ici : <span className="mono">{tl.bpm} BPM · {tl.sections.length} sections · {tl.cues.length} repères son</span>. Cette étape fabrique le son et le mesure.</> : ' Le storyboard n’a pas encore de grille.'}
+        {t('La musique mène l’animation : le tempo, les sections et les repères son se décident au storyboard, dans timeline.js.')}
+        {' '}{tl ? <>{t('Ici :')} <span className="mono">{t('{bpm} BPM · {sections} sections · {reperes} repères son', { bpm: tl.bpm, sections: tl.sections.length, reperes: tl.cues.length })}</span>. {t('Cette étape fabrique le son et le mesure.')}</> : t('Le storyboard n’a pas encore de grille.')}
       </div>
       <HandoffCard stepId="musique" />
 
-      <Section title="Écouter" aside={audio.length > 1 ? <span className="muted">{audio.length} sons</span> : null}>
+      <Section title={t('Écouter')} aside={audio.length > 1 ? <span className="muted">{t('{n} sons', { n: audio.length })}</span> : null}>
         {audio.length ? <Sounds audio={audio} timeline={tl} shots={film.shots} />
-          : <div className="empty"><strong>Pas encore de son.</strong><span>Lance « Fabriquer la bande-son », ou dépose une piste à l’étape Scénario (elle sera rangée dans assets/audio/). Chaque son que Claude fabrique apparaît ici, où qu’il soit rangé dans le film.</span></div>}
+          : <div className="empty"><strong>{t('Pas encore de son.')}</strong><span>{t('Lance « Fabriquer la bande-son », ou dépose une piste à l’étape Scénario (elle sera rangée dans assets/audio/). Chaque son que Claude fabrique apparaît ici, où qu’il soit rangé dans le film.')}</span></div>}
       </Section>
 
-      <Section title="Actions">
+      <Section title={t('Actions')}>
         <div className="actions">
           <ActionRow n={1} action="sound" done={done.sound} primary={next === 'sound'} input={{ mode, intention, notes }}>
             <div className="field">
-              <span className="label">Source</span>
-              <Segmented label="Source du son" value={mode} onChange={setMode} options={[['code', 'Composé en code'], ['piste', 'Piste fournie (assets/audio)']]} />
+              <span className="label">{t('Source')}</span>
+              <Segmented label={t('Source du son')} value={mode} onChange={setMode} options={[['code', t('Composé en code')], ['piste', t('Piste fournie (assets/audio)')]]} />
             </div>
             <div className="field">
-              <label htmlFor="intention">Intention musicale <span className="faint">(facultatif)</span></label>
-              <textarea id="intention" className="textarea" rows={2} value={intention} onChange={(e) => setIntention(e.target.value)} placeholder="Pad chaud, charleston serré ; drop franc sur la révélation ; silence d’un demi-temps avant le logo" />
+              <label htmlFor="intention">{t('Intention musicale')} <span className="faint">{t('(facultatif)')}</span></label>
+              <textarea id="intention" className="textarea" rows={2} value={intention} onChange={(e) => setIntention(e.target.value)} placeholder={t('Pad chaud, charleston serré ; drop franc sur la révélation ; silence d’un demi-temps avant le logo')} />
             </div>
             <NotesField id="snd-notes" value={notes} onChange={setNotes} />
           </ActionRow>
-          <ActionRow n={2} action="measure" done={done.measure} input={{ notes: mNotes }} disabled={!audio.length ? 'Il n’y a pas encore de son' : null}>
-            <NotesField id="m-notes" value={mNotes} onChange={setMNotes} placeholder="Un coup qui te semble en retard, un passage trop fort" />
+          <ActionRow n={2} action="measure" done={done.measure} input={{ notes: mNotes }} disabled={!audio.length ? t('Il n’y a pas encore de son') : null}>
+            <NotesField id="m-notes" value={mNotes} onChange={setMNotes} placeholder={t('Un coup qui te semble en retard, un passage trop fort')} />
           </ActionRow>
         </div>
       </Section>
 
       {report && (
-        <Section title="Mesures" aside={<span className="mono faint">reviews/son.md</span>}>
+        <Section title={t('Mesures')} aside={<span className="mono faint">reviews/son.md</span>}>
           <div className="panel" style={{ padding: 16 }}><Markdown text={report} /></div>
         </Section>
       )}

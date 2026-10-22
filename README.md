@@ -12,6 +12,7 @@ Brief, scenario, storyboard, shot by shot, music, final cut. Claude does one ste
 <p>
   <a href="https://github.com/Shyhnz/regie/releases/latest"><img src="https://img.shields.io/github/v/release/Shyhnz/regie?style=flat-square&label=release&color=F44800" alt="Latest release"></a>
   <img src="https://img.shields.io/badge/macOS-13%2B-lightgrey?style=flat-square&label=platform" alt="macOS 13 or later">
+  <img src="https://img.shields.io/badge/interface-English%20%C2%B7%20French-lightgrey?style=flat-square" alt="Interface in English and French">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/library-7%2C159%20rules%20%C2%B7%20233%20videos-2ea44f?style=flat-square" alt="Library: 7,159 rules and 233 analysed videos">
 </p>
@@ -36,7 +37,7 @@ Ask Claude for "a 15-second launch video" and you get something that moves, and 
 
 Good motion design is a method. A senior motion designer decides what the viewer must remember, chooses the look on real frames before building anything, cuts on the music, builds each shot against its storyboard, then gets a fresh pair of eyes to critique it. Régie gives Claude that method, and a library of what works, so you can direct instead of prompting.
 
-> The interface, the method and the library are written in French.
+> The interface is in English, with French one click away (top right). The Bible itself is written in French: Claude reads it and writes your films in the language you pick.
 
 ## The library
 
@@ -103,7 +104,7 @@ A switch under the film's title tells Claude whether it may use Blender. On, Cla
 
 ### Your taste wins
 
-"Mes goûts" keeps the effects you love and the ones you reject. Claude reads it before every action, and it overrides the Bible's defaults.
+"My taste" keeps the effects you love and the ones you reject. Claude reads it before every action, and it overrides the Bible's defaults.
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
 
@@ -115,7 +116,7 @@ A switch under the film's title tells Claude whether it may use Blender. On, Cla
 
 1. **Install the tools Régie drives.** [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), logged in to your Claude account; [Node.js](https://nodejs.org) 20 or later; [ffmpeg](https://ffmpeg.org) (`brew install ffmpeg`). Optional: [Blender](https://www.blender.org) 4.2 or later for 3D shots.
 2. **Install Régie.** Open `Regie_<version>_universal.dmg` and drag Régie to Applications. It runs on Apple silicon and Intel Macs, macOS 13 or later.
-3. **Create your first videos.** Click "Nouvelles vidéos", give them a name, answer the brief. Your films live in `~/Documents/Régie`.
+3. **Create your first videos.** Click "New videos", give them a name, answer the brief. Your films live in `~/Documents/Régie`.
 
 <details>
 <summary><strong>First launch on macOS</strong> (the app is not notarized yet)</summary>

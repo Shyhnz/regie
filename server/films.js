@@ -7,6 +7,7 @@ import { VIDEOS, STUDIO, STUDIO_TEMPLATE, APP_DIR, CACHE_DIR } from './config.js
 import { parseShotlist } from './shotlist.js';
 import { loadTimeline } from './timeline.js';
 import { STEPS } from './prompts.js';
+import { tr } from './i18n.js';
 import { appendJournal } from './journal.js';
 
 const run = promisify(execFile);
@@ -22,9 +23,9 @@ export function slugify(title) {
 }
 
 export function filmDir(slug) {
-  if (!/^[a-z0-9][a-z0-9._-]*$/i.test(slug) || IGNORED.has(slug)) throw httpError(404, `Film introuvable : ${slug}`);
+  if (!/^[a-z0-9][a-z0-9._-]*$/i.test(slug) || IGNORED.has(slug)) throw httpError(404, tr('Film introuvable : {slug}', { slug }));
   const dir = path.join(VIDEOS, slug);
-  if (!fs.existsSync(dir)) throw httpError(404, `Film introuvable : ${slug}`);
+  if (!fs.existsSync(dir)) throw httpError(404, tr('Film introuvable : {slug}', { slug }));
   return dir;
 }
 
@@ -36,7 +37,7 @@ export function httpError(status, message) {
 export function resolveInFilm(slug, rel) {
   const dir = filmDir(slug);
   const p = path.resolve(dir, rel || '');
-  if (p !== dir && !p.startsWith(dir + path.sep)) throw httpError(400, 'Chemin hors du film');
+  if (p !== dir && !p.startsWith(dir + path.sep)) throw httpError(400, tr('Chemin hors du film'));
   return p;
 }
 
@@ -140,7 +141,7 @@ export function stepStatuses(state) {
     let status = finished ? 'done' : 'todo';
     if (!finished && !currentFound) { currentFound = true; status = 'current'; }
     if (running) status = 'running';
-    return { id: step.id, n: step.n, title: step.title, status };
+    return { id: step.id, n: step.n, title: tr(step.title), status };
   });
 }
 
@@ -313,10 +314,10 @@ export function ensureStudio() {
 
 export function createFilm({ title, slug: wanted = null, serie = null }) {
   const clean = String(title || '').trim();
-  if (!clean) throw httpError(400, 'Donne un nom au film.');
+  if (!clean) throw httpError(400, tr('Donne un nom au film.'));
   let slug = wanted || slugify(clean);
   let i = 2;
-  if (wanted && fs.existsSync(path.join(VIDEOS, wanted))) throw httpError(409, `Le dossier videos/${wanted} existe déjà.`);
+  if (wanted && fs.existsSync(path.join(VIDEOS, wanted))) throw httpError(409, tr('Le dossier videos/{slug} existe déjà.', { slug: wanted }));
   while (fs.existsSync(path.join(VIDEOS, slug))) slug = `${slugify(clean)}-${i++}`;
   const dir = path.join(VIDEOS, slug);
   ensureStudio();
@@ -340,11 +341,11 @@ export function createFilm({ title, slug: wanted = null, serie = null }) {
   writeState(slug, state);
   writeMoodboard(slug, state);
   appendJournal(path.join(dir, 'JOURNAL.md'), {
-    step: 'Ouverture',
+    step: tr('Ouverture'),
     type: '—',
-    sent: serie ? `Vidéo ${serie.lettre} d'une série de 3 (${serie.films.map((f) => `videos/${f}`).join(', ')}), créée dans la Régie depuis le studio de base` : 'Film créé dans la Régie depuis le studio de base',
+    sent: serie ? tr('Vidéo {lettre} d’une série de 3 ({films}), créée dans la Régie depuis le studio de base', { lettre: serie.lettre, films: serie.films.map((f) => `videos/${f}`).join(', ') }) : tr('Film créé dans la Régie depuis le studio de base'),
     proof: '—',
-    result: `dossier videos/${slug}`,
+    result: tr('dossier videos/{slug}', { slug }),
   });
   return slug;
 }
@@ -356,7 +357,7 @@ export const LETTRES = ['A', 'B', 'C'];
 
 export function createSerie({ title }) {
   const clean = String(title || '').trim();
-  if (!clean) throw httpError(400, 'Donne un nom à la série.');
+  if (!clean) throw httpError(400, tr('Donne un nom à la série.'));
   const root = slugify(clean).slice(0, 56);
   const taken = (b) => [b, ...LETTRES.map((l) => `${b}-${l.toLowerCase()}`)].some((x) => fs.existsSync(path.join(VIDEOS, x)));
   let base = root;
@@ -433,9 +434,9 @@ export function writeMoodboard(slug, state) {
   const rows = state.moodboard.map((m) => `| ${m.title.replace(/\|/g, '/')} | ${m.kindLabel || m.kind} | ${(m.note || '—').replace(/\|/g, '/').replace(/\n/g, ' ')} | ${m.source || '—'} |`);
   const md = `# MOODBOARD — ${state.title}
 
-Sélection faite par l'utilisateur dans la Bibliothèque de la Régie. C'est d'ici que partent le scénario et la direction artistique : ouvre chaque source, regarde ses images et ses vidéos, et respecte la note de l'utilisateur.
+${tr('Sélection faite par l’utilisateur dans la Bibliothèque de la Régie. C’est d’ici que partent le scénario et la direction artistique : ouvre chaque source, regarde ses images et ses vidéos, et respecte la note de l’utilisateur.')}
 
-${rows.length ? `| Fiche | Type | Note de l'utilisateur | Source |\n| --- | --- | --- | --- |\n${rows.join('\n')}` : '_Rien de sélectionné pour l\'instant._'}
+${rows.length ? `${tr('| Fiche | Type | Note de l’utilisateur | Source |')}\n| --- | --- | --- | --- |\n${rows.join('\n')}` : tr('_Rien de sélectionné pour l’instant._')}
 `;
   fs.writeFileSync(path.join(dir, 'MOODBOARD.md'), md);
 }

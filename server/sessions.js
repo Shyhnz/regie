@@ -6,6 +6,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { randomUUID, randomBytes } from 'node:crypto';
 import { CLAUDE_BIN, PORT } from './config.js';
+import { tr } from './i18n.js';
 
 const require = createRequire(import.meta.url);
 const pty = require('node-pty');
@@ -93,9 +94,9 @@ export function whenReady(t, timeoutMs = 15000) {
   const until = Date.now() + timeoutMs;
   return new Promise((resolve, reject) => {
     const tick = () => {
-      if (t.exited) return reject(new Error('La session Claude s’est fermée.'));
+      if (t.exited) return reject(new Error(tr('La session Claude s’est fermée.')));
       if (t.ready && Date.now() - t.lastOutput > 400) return resolve();
-      if (Date.now() > until) return t.ready ? resolve() : reject(new Error('La session Claude ne démarre pas.'));
+      if (Date.now() > until) return t.ready ? resolve() : reject(new Error(tr('La session Claude ne démarre pas.')));
       setTimeout(tick, 100);
     };
     tick();

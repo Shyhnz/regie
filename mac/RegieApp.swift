@@ -15,6 +15,9 @@ let logURL = FileManager.default.homeDirectoryForCurrentUser.appendingPathCompon
 // Test sans écran : REGIE_SNAPSHOT=fichier.png capture la page chargée, REGIE_SNAPSHOT_QUIT=1 quitte ensuite,
 // REGIE_SNAPSHOT_RESTART=1 redémarre d'abord le serveur une fois (sans boîte de dialogue) avant la capture suivante.
 let snapshotPath = env["REGIE_SNAPSHOT"]
+// Langue de l'app (anglais par défaut, français au choix) : la page l'envoie par le message « lang:xx », gardée ici pour les menus.
+var appLang: String { UserDefaults.standard.string(forKey: "lang") ?? "en" }
+func L(_ fr: String, _ en: String) -> String { appLang == "fr" ? fr : en }
 let ink = NSColor(srgbRed: 15 / 255, green: 14 / 255, blue: 13 / 255, alpha: 1)
 
 // MARK: - Processus
@@ -70,7 +73,7 @@ func claudeRuns(in tree: [Proc]) -> [String] {
         if let r = c.range(of: "--name "), let end = c.range(of: " --", range: r.upperBound..<c.endIndex) {
             return String(c[r.upperBound..<end.lowerBound])
         }
-        return "Une action Claude"
+        return L("Une action Claude", "A Claude action")
     }
 }
 
@@ -161,14 +164,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
         if !runs.isEmpty && snapshotPath == nil {
             let a = NSAlert()
             a.alertStyle = .warning
-            a.messageText = runs.count == 1 ? "Claude travaille encore" : "\(runs.count) actions Claude sont en cours"
-            a.informativeText = "\(runs.joined(separator: "\n"))\n\nQuitter la Régie arrête Claude. Tu pourras relancer l'action depuis son étape."
-            a.addButton(withTitle: "Annuler")
-            a.addButton(withTitle: "Quitter et arrêter Claude").hasDestructiveAction = true
+            a.messageText = runs.count == 1 ? L("Claude travaille encore", "Claude is still working") : L("\(runs.count) actions Claude sont en cours", "\(runs.count) Claude actions are running")
+            a.informativeText = "\(runs.joined(separator: "\n"))\n\n" + L("Quitter la Régie arrête Claude. Tu pourras relancer l'action depuis son étape.", "Quitting Régie stops Claude. You can run the action again from its step.")
+            a.addButton(withTitle: L("Annuler", "Cancel"))
+            a.addButton(withTitle: L("Quitter et arrêter Claude", "Quit and stop Claude")).hasDestructiveAction = true
             if a.runModal() == .alertFirstButtonReturn { return .terminateCancel }
         }
         quitting = true
-        splash("Arrêt de la Régie…")
+        splash(L("Arrêt de la Régie…", "Stopping Régie…"))
         let own = server
         DispatchQueue.global(qos: .userInitiated).async {
             stopServer(pid, tree: tree, own: own)
@@ -191,7 +194,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     func start() {
         loaded = false
         slowNotice = false
-        splash("Démarrage de la Régie…")
+        splash(L("Démarrage de la Régie…", "Starting Régie…"))
         ping { up in
             guard up else { return self.launchServer() }
             if let pid = listeningPID(), isRegieServer(pid) { self.serverPID = pid }
@@ -202,7 +205,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     func launchServer() {
         let script = regieDir + "/mac/serve.sh"
         guard FileManager.default.fileExists(atPath: script) else {
-            return failure("Dossier de la Régie introuvable", detail: "\(regieDir)\nReconstruis l'app avec mac/build-app.sh.")
+            return failure(L("Dossier de la Régie introuvable", "Régie folder not found"), detail: "\(regieDir)\n" + L("Reconstruis l'app avec mac/build-app.sh.", "Rebuild the app with mac/build-app.sh."))
         }
         try? FileManager.default.createDirectory(at: logURL.deletingLastPathComponent(), withIntermediateDirectories: true)
         FileManager.default.createFile(atPath: logURL.path, contents: nil)
@@ -222,11 +225,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
                 // Un redémarrage remplace le serveur : l'arrêt de l'ancien n'est pas une panne.
                 guard !self.quitting, self.server === p else { return }
                 self.serverPID = nil
-                self.failure(self.loaded ? "Le serveur de la Régie s'est arrêté" : "La Régie n'a pas pu démarrer")
+                self.failure(self.loaded ? L("Le serveur de la Régie s'est arrêté", "Régie's server stopped") : L("La Régie n'a pas pu démarrer", "Régie could not start"))
             }
         }
         do { try p.run() } catch {
-            return failure("Impossible de lancer le serveur", detail: error.localizedDescription)
+            return failure(L("Impossible de lancer le serveur", "Could not launch the server"), detail: error.localizedDescription)
         }
         server = p
         serverPID = p.processIdentifier
@@ -238,10 +241,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
             guard !self.quitting, self.server?.isRunning == true else { return }
             if up { return self.open() }
             let elapsed = Date().timeIntervalSince(since)
-            if elapsed > 240 { return self.failure("La Régie met trop de temps à démarrer") }
+            if elapsed > 240 { return self.failure(L("La Régie met trop de temps à démarrer", "Régie is taking too long to start")) }
             if elapsed > 6 && !self.slowNotice {
                 self.slowNotice = true
-                self.splash("Démarrage de la Régie…", detail: "Première ouverture après une mise à jour : l'interface se reconstruit, ça prend quelques secondes.")
+                self.splash(L("Démarrage de la Régie…", "Starting Régie…"), detail: L("Première ouverture après une mise à jour : l'interface se reconstruit, ça prend quelques secondes.", "First launch after an update: the interface is being rebuilt, it takes a few seconds."))
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { self.waitForServer(since: since) }
         }
@@ -288,11 +291,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
             .map { $0.split(separator: "\n").suffix(14).joined(separator: "\n") } ?? ""
         web.loadHTMLString(page("""
         <h1>\(esc(title))</h1>
-        <p>\(esc(detail ?? "Le détail est dans le journal du serveur."))</p>
+        <p>\(esc(detail ?? L("Le détail est dans le journal du serveur.", "The details are in the server log.")))</p>
         \(tail.isEmpty ? "" : "<pre>\(esc(tail))</pre>")
         <div class=row>
-          <button class=primary onclick="webkit.messageHandlers.regie.postMessage('retry')">Réessayer</button>
-          <button onclick="webkit.messageHandlers.regie.postMessage('log')">Ouvrir le journal</button>
+          <button class=primary onclick="webkit.messageHandlers.regie.postMessage('retry')">\(L("Réessayer", "Try again"))</button>
+          <button onclick="webkit.messageHandlers.regie.postMessage('log')">\(L("Ouvrir le journal", "Open the log"))</button>
         </div>
         """), baseURL: nil)
         NSApp.requestUserAttention(.informationalRequest)
@@ -302,6 +305,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
         switch message.body as? String {
         case "retry": start()
         case "log": openLog()
+        case let s as String where s.hasPrefix("lang:"):
+            UserDefaults.standard.set(s.dropFirst(5) == "fr" ? "fr" : "en", forKey: "lang")
+            buildMenu()
         default: break
         }
     }
@@ -372,7 +378,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         let e = error as NSError
         let unreachable = e.domain == NSURLErrorDomain && [NSURLErrorCannotConnectToHost, NSURLErrorNetworkConnectionLost, NSURLErrorTimedOut].contains(e.code)
-        if loaded && !quitting && unreachable { failure("La Régie ne répond pas") }
+        if loaded && !quitting && unreachable { failure(L("La Régie ne répond pas", "Régie is not responding")) }
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
@@ -404,7 +410,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
         let a = NSAlert()
         a.messageText = message
         a.addButton(withTitle: "OK")
-        a.addButton(withTitle: "Annuler")
+        a.addButton(withTitle: L("Annuler", "Cancel"))
         a.beginSheetModal(for: window) { completionHandler($0 == .alertFirstButtonReturn) }
     }
 
@@ -415,7 +421,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
         field.frame = NSRect(x: 0, y: 0, width: 300, height: 24)
         a.accessoryView = field
         a.addButton(withTitle: "OK")
-        a.addButton(withTitle: "Annuler")
+        a.addButton(withTitle: L("Annuler", "Cancel"))
         a.window.initialFirstResponder = field
         a.beginSheetModal(for: window) { completionHandler($0 == .alertFirstButtonReturn ? field.stringValue : nil) }
     }
@@ -454,7 +460,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     func download(_ download: WKDownload, didFailWithError error: Error, resumeData: Data?) {
         downloads.removeValue(forKey: ObjectIdentifier(download))
         let a = NSAlert()
-        a.messageText = "Le téléchargement a échoué"
+        a.messageText = L("Le téléchargement a échoué", "The download failed")
         a.informativeText = error.localizedDescription
         a.beginSheetModal(for: window)
     }
@@ -479,47 +485,47 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
             return i
         }
         menu("Régie", [
-            item("À propos de Régie", #selector(NSApplication.orderFrontStandardAboutPanel(_:))),
+            item(L("À propos de Régie", "About Régie"), #selector(NSApplication.orderFrontStandardAboutPanel(_:))),
             .separator(),
-            item("Masquer Régie", #selector(NSApplication.hide(_:)), "h"),
-            item("Masquer les autres", #selector(NSApplication.hideOtherApplications(_:)), "h", [.command, .option]),
-            item("Tout afficher", #selector(NSApplication.unhideAllApplications(_:))),
+            item(L("Masquer Régie", "Hide Régie"), #selector(NSApplication.hide(_:)), "h"),
+            item(L("Masquer les autres", "Hide Others"), #selector(NSApplication.hideOtherApplications(_:)), "h", [.command, .option]),
+            item(L("Tout afficher", "Show All"), #selector(NSApplication.unhideAllApplications(_:))),
             .separator(),
-            item("Quitter Régie", #selector(NSApplication.terminate(_:)), "q"),
+            item(L("Quitter Régie", "Quit Régie"), #selector(NSApplication.terminate(_:)), "q"),
         ])
-        menu("Édition", [
-            item("Annuler", Selector(("undo:")), "z"),
-            item("Rétablir", Selector(("redo:")), "z", [.command, .shift]),
+        menu(L("Édition", "Edit"), [
+            item(L("Annuler", "Undo"), Selector(("undo:")), "z"),
+            item(L("Rétablir", "Redo"), Selector(("redo:")), "z", [.command, .shift]),
             .separator(),
-            item("Couper", #selector(NSText.cut(_:)), "x"),
-            item("Copier", #selector(NSText.copy(_:)), "c"),
-            item("Coller", #selector(NSText.paste(_:)), "v"),
-            item("Tout sélectionner", #selector(NSText.selectAll(_:)), "a"),
+            item(L("Couper", "Cut"), #selector(NSText.cut(_:)), "x"),
+            item(L("Copier", "Copy"), #selector(NSText.copy(_:)), "c"),
+            item(L("Coller", "Paste"), #selector(NSText.paste(_:)), "v"),
+            item(L("Tout sélectionner", "Select All"), #selector(NSText.selectAll(_:)), "a"),
         ])
-        menu("Présentation", [
-            item("Recharger", #selector(reload), "r", mine: true),
-            item("Redémarrer le serveur", #selector(restartServer), "r", [.command, .option], mine: true),
+        menu(L("Présentation", "View"), [
+            item(L("Recharger", "Reload"), #selector(reload), "r", mine: true),
+            item(L("Redémarrer le serveur", "Restart Server"), #selector(restartServer), "r", [.command, .option], mine: true),
             .separator(),
-            item("Taille réelle", #selector(zoomReset), "0", mine: true),
-            item("Agrandir", #selector(zoomIn), "+", mine: true),
-            item("Réduire", #selector(zoomOut), "-", mine: true),
+            item(L("Taille réelle", "Actual Size"), #selector(zoomReset), "0", mine: true),
+            item(L("Agrandir", "Zoom In"), #selector(zoomIn), "+", mine: true),
+            item(L("Réduire", "Zoom Out"), #selector(zoomOut), "-", mine: true),
             .separator(),
-            item("Ouvrir dans le navigateur", #selector(openInBrowser), "o", [.command, .shift], mine: true),
-            item("Journal du serveur", #selector(openLog), "l", [.command, .shift], mine: true),
+            item(L("Ouvrir dans le navigateur", "Open in Browser"), #selector(openInBrowser), "o", [.command, .shift], mine: true),
+            item(L("Journal du serveur", "Server Log"), #selector(openLog), "l", [.command, .shift], mine: true),
             .separator(),
-            item("Plein écran", #selector(NSWindow.toggleFullScreen(_:)), "f", [.command, .control]),
+            item(L("Plein écran", "Enter Full Screen"), #selector(NSWindow.toggleFullScreen(_:)), "f", [.command, .control]),
         ])
-        menu("Aller", [
-            item("Films", #selector(goFilms), "1", mine: true),
-            item("Bibliothèque", #selector(goLibrary), "2", mine: true),
-            item("Mes goûts", #selector(goGouts), "3", mine: true),
+        menu(L("Aller", "Go"), [
+            item(L("Films", "Films"), #selector(goFilms), "1", mine: true),
+            item(L("Bibliothèque", "Library"), #selector(goLibrary), "2", mine: true),
+            item(L("Mes goûts", "My Taste"), #selector(goGouts), "3", mine: true),
             .separator(),
-            item("Précédent", #selector(goBack), "[", mine: true),
-            item("Suivant", #selector(goForward), "]", mine: true),
+            item(L("Précédent", "Back"), #selector(goBack), "[", mine: true),
+            item(L("Suivant", "Forward"), #selector(goForward), "]", mine: true),
         ])
-        let windows = menu("Fenêtre", [
-            item("Placer dans le Dock", #selector(NSWindow.performMiniaturize(_:)), "m"),
-            item("Réduire/agrandir", #selector(NSWindow.performZoom(_:))),
+        let windows = menu(L("Fenêtre", "Window"), [
+            item(L("Placer dans le Dock", "Minimize"), #selector(NSWindow.performMiniaturize(_:)), "m"),
+            item(L("Réduire/agrandir", "Zoom"), #selector(NSWindow.performZoom(_:))),
         ])
         NSApp.mainMenu = main
         NSApp.windowsMenu = windows
@@ -538,17 +544,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
         if snapshotPath == nil {
             let a = NSAlert()
             a.alertStyle = runs.isEmpty ? .informational : .warning
-            a.messageText = "Redémarrer le serveur de la Régie ?"
+            a.messageText = L("Redémarrer le serveur de la Régie ?", "Restart Régie's server?")
             a.informativeText = runs.isEmpty
-                ? "La Régie se recharge avec sa dernière version. Une page ouverte dans ton navigateur se reconnecte toute seule au nouveau serveur."
-                : "\(runs.joined(separator: "\n"))\n\nRedémarrer arrête Claude. Tu pourras relancer l'action depuis son étape."
-            a.addButton(withTitle: "Annuler")
-            a.addButton(withTitle: runs.isEmpty ? "Redémarrer" : "Redémarrer et arrêter Claude").hasDestructiveAction = !runs.isEmpty
+                ? L("La Régie se recharge avec sa dernière version. Une page ouverte dans ton navigateur se reconnecte toute seule au nouveau serveur.", "Régie reloads with its latest version. A page open in your browser reconnects to the new server on its own.")
+                : "\(runs.joined(separator: "\n"))\n\n" + L("Redémarrer arrête Claude. Tu pourras relancer l'action depuis son étape.", "Restarting stops Claude. You can run the action again from its step.")
+            a.addButton(withTitle: L("Annuler", "Cancel"))
+            a.addButton(withTitle: runs.isEmpty ? L("Redémarrer", "Restart") : L("Redémarrer et arrêter Claude", "Restart and stop Claude")).hasDestructiveAction = !runs.isEmpty
             guard a.runModal() == .alertSecondButtonReturn else { return }
         }
         rememberRoute()
         restarting = true
-        splash("Redémarrage de la Régie…")
+        splash(L("Redémarrage de la Régie…", "Restarting Régie…"))
         let own = server
         DispatchQueue.global(qos: .userInitiated).async {
             stopServer(pid, tree: tree, own: own)
@@ -571,8 +577,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     @objc func openLog() {
         if FileManager.default.fileExists(atPath: logURL.path) { NSWorkspace.shared.open(logURL); return }
         let a = NSAlert()
-        a.messageText = "Pas de journal pour l'instant"
-        a.informativeText = "Le serveur a été lancé en dehors de l'app (Régie.command ou un terminal) : son journal est là où il a été lancé."
+        a.messageText = L("Pas de journal pour l'instant", "No log yet")
+        a.informativeText = L("Le serveur a été lancé en dehors de l'app (Régie.command ou un terminal) : son journal est là où il a été lancé.", "The server was started outside the app (Régie.command or a terminal): its log is where it was started.")
         a.beginSheetModal(for: window)
     }
     func route(_ hash: String) { if loaded { web.evaluateJavaScript("location.hash = '\(hash)'") } }

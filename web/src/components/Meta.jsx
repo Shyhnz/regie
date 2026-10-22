@@ -1,7 +1,8 @@
 import { createContext, useContext } from 'react';
 import { useResource } from '../api.js';
+import { t, setLang } from '../i18n.js';
 
-// Le référentiel des étapes et des actions, servi par le serveur (une seule définition : server/prompts.js).
+// Le référentiel des étapes et des actions, servi par le serveur (une seule définition : server/prompts.js), dans la langue de l'app.
 const Ctx = createContext(null);
 export const useMeta = () => useContext(Ctx);
 
@@ -11,13 +12,14 @@ export function MetaProvider({ children }) {
     return (
       <div className="page">
         <div className="error-box" role="alert">
-          <strong>La Régie ne joint pas son serveur.</strong>
+          <strong>{t('La Régie ne joint pas son serveur.')}</strong>
           <span>{error.message}</span>
-          <div><button className="btn sm" onClick={() => reload()}>Réessayer</button></div>
+          <div><button className="btn sm" onClick={() => reload()}>{t('Réessayer')}</button></div>
         </div>
       </div>
     );
   }
   if (!data) return <div className="page"><div className="skeleton" style={{ height: 120 }} /></div>;
-  return <Ctx.Provider value={data}>{children}</Ctx.Provider>;
+  setLang(data.lang);
+  return <Ctx.Provider value={{ ...data, reload }}>{children}</Ctx.Provider>;
 }

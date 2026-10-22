@@ -5,6 +5,7 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { SYNTHESE, METHODE, BIBLE, STYLE_VARIANTS, MEDIA_CACHE, LOOPS, CACHE_DIR } from './config.js';
 import { skillsSummary, skillItem } from './skills.js';
+import { tr } from './i18n.js';
 
 export const CATEGORIES = [
   { id: 'styles', label: 'Styles', group: 'Orienter', hint: 'Familles visuelles, guides de style et tes propres variantes.' },
@@ -24,7 +25,7 @@ export const CATEGORIES = [
   { id: 'methode', label: 'Méthode', group: 'Construire', chapter: 'c12' },
   { id: 'prompts', label: 'Écrire un prompt', group: 'Construire', chapter: 'c13' },
   { id: 'etudes', label: 'Études 60 fps', group: 'Construire', chapter: 'c14' },
-  { id: 'skill-prompts', label: 'Prompts', group: 'Skills open source', hint: 'Les prompts et gabarits des 199 skills vidéo open source, par genre, à copier ou à donner au film.' },
+  { id: 'skill-prompts', label: 'Prompts', group: 'Skills open source', hint: 'Les prompts et gabarits des 198 skills vidéo open source, par genre, à copier ou à donner au film.' },
   { id: 'skill-regles', label: 'Règles', group: 'Skills open source', hint: 'Le savoir-faire tiré des skills open source, rangé par chapitre de la Bible : une règle, sa recette, sa source.' },
   { id: 'skill-depots', label: 'Dépôts', group: 'Skills open source', hint: 'Ce que fait chaque skill, et comment il est construit : déroulé, contrôles qualité, outils.' },
 ];
@@ -268,9 +269,16 @@ export function findItem(id) {
 }
 
 // La liste envoyée au navigateur, sans les prompts intégraux (servis à la demande).
+// Dans la langue de l'app : les noms de catégories, de familles et de genres. Les fiches de la Bible restent en français.
 export function libraryForClient() {
   const lib = getLibrary();
-  return { ...lib, videos: lib.videos.map(({ prompt, ...v }) => ({ ...v, hasPrompt: Boolean(prompt) })) };
+  const trMap = (o) => o && Object.fromEntries(Object.entries(o).map(([k, v]) => [k, tr(v)]));
+  return {
+    ...lib,
+    categories: lib.categories.map((c) => ({ ...c, label: tr(c.label), group: tr(c.group), ...(c.hint ? { hint: tr(c.hint) } : {}) })),
+    skills: lib.skills && { ...lib.skills, chapters: trMap(lib.skills.chapters), types: trMap(lib.skills.types) },
+    videos: lib.videos.map(({ prompt, ...v }) => ({ ...v, familyLabel: tr(v.familyLabel), musicLabel: tr(v.musicLabel), hasPrompt: Boolean(prompt) })),
+  };
 }
 
 // Texte complet d'une fiche, images résolues pour le navigateur.

@@ -12,6 +12,7 @@ const studio = path.join(root, 'videos', '_studio');
 fs.mkdirSync(path.join(studio, 'assets'), { recursive: true });
 for (const f of ['BRIEF.md', 'STYLE.md', 'SHOTLIST.md', 'JOURNAL.md']) fs.writeFileSync(path.join(studio, f), `# ${f} — <film>\n`);
 process.env.REGIE_ROOT = root;
+process.env.REGIE_LANG = 'fr'; // les messages vérifiés ici sont ceux de la Régie en français
 process.env.REGIE_MEMORY_DIR = path.join(root, 'memory');
 process.env.REGIE_CLAUDE_BIN = path.join(path.dirname(fileURLToPath(import.meta.url)), 'fixtures', 'fake-claude.mjs');
 

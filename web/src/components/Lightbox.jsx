@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { t } from '../i18n.js';
 
 // Visionneuse plein écran : flèches pour passer d'une image à l'autre, Échap pour fermer.
 export default function Lightbox({ items, start = 0, onClose }) {
@@ -16,12 +17,12 @@ export default function Lightbox({ items, start = 0, onClose }) {
   }, [items.length, onClose]);
   if (!it) return null;
   return (
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={it.label || 'Image'}>
+    <div className="lightbox" role="dialog" aria-modal="true" aria-label={it.label || t('Image')}>
       <header>
         <span className="mono faint nowrap">{i + 1} / {items.length}</span>
         <div className="grow"><strong>{it.label}</strong>{it.caption && <div className="muted" style={{ fontSize: 13 }}>{it.caption}</div>}</div>
-        <a className="btn sm ghost" href={it.src} target="_blank" rel="noreferrer">Ouvrir le fichier</a>
-        <button className="btn sm" onClick={onClose} autoFocus>Fermer</button>
+        <a className="btn sm ghost" href={it.src} target="_blank" rel="noreferrer">{t('Ouvrir le fichier')}</a>
+        <button className="btn sm" onClick={onClose} autoFocus>{t('Fermer')}</button>
       </header>
       <figure onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
         {it.video ? <video src={it.src} controls autoPlay loop playsInline /> : <img src={it.src} alt={it.label || ''} />}
@@ -29,8 +30,8 @@ export default function Lightbox({ items, start = 0, onClose }) {
       {items.length > 1 && (
         <footer>
           {items.map((x, j) => (
-            <button key={x.src + j} aria-current={j === i} onClick={() => setI(j)} aria-label={x.label || `Image ${j + 1}`}>
-              {x.video ? <span className="tag">vidéo</span> : <img src={x.src} alt="" />}
+            <button key={x.src + j} aria-current={j === i} onClick={() => setI(j)} aria-label={x.label || t('Image {n}', { n: j + 1 })}>
+              {x.video ? <span className="tag">{t('vidéo')}</span> : <img src={x.src} alt="" />}
             </button>
           ))}
         </footer>
