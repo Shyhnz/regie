@@ -1,0 +1,472 @@
+{
+  "slug": "levabashidze-2d713a",
+  "title": "Swiss-style motion showreel",
+  "handle": "@levabashidze",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Système graphique suisse, transitions presque toutes motivées, chaque principe démontré par sa propre animation et chapitres calés sur la mesure : niveau studio ; défauts mineurs (densité, mur de mots flous, 3D générique).",
+  "summary": "Showreel-leçon en 8 mesures de 128 BPM : chaque chapitre démontre un principe en le pratiquant. Balle rebondissante annotée dans une timeline, « EASE IN. » qui bouge en ease-in, formes qui se transforment sur chaque temps, grille isométrique, tuiles de Truchet, mur typographique, faux rendu bloqué à 99 %, puis « Claude. » dont le point tombe comme la balle. HUD de logiciel, 4 couleurs, humour de métier.",
+  "prompt_vs_result": [
+    "Même prompt d'une ligne que d'autres reels : 15 s, showreel de CV qui montre le niveau du designer, « go all out », plus « dont ask just make » (aucune question). Aucun style, palette, musique ni structure imposés.",
+    "Claude a tout décidé : un reel-cours en 7 chapitres numérotés (timing, easing, forme, espace, systèmes, typo, rendu) plus une carte finale, une mesure par chapitre à 128 BPM, un HUD de logiciel, 4 couleurs, 3 familles de caractères, l'humour de métier.",
+    "Le prompt muet a laissé le modèle trouver un concept fort (le reel comme leçon des principes). Il aurait fallu limiter le texte du HUD, interdire le mur de mots flous et exiger un raccord à chaque transition."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0F0F0D", "role": "noir chaud : fonds TIMING, SPACE, TYPE ; texte ; cercle"},
+      {"hex": "#DE5332", "role": "vermillon : balle, fond EASING, étoile, cube, ligne typo, point final, signature"},
+      {"hex": "#F3EEE6", "role": "crème : fonds SHAPE, SYSTEMS et carte finale ; tuiles et cubes"},
+      {"hex": "#3134F0", "role": "outremer : superellipse, O bleu, fond RENDER"},
+      {"hex": "#AF462C", "role": "face gauche ombrée du cube"},
+      {"hex": "#6D2C22", "role": "face droite ombrée du cube"},
+      {"hex": "#8A5CC0", "role": "violet terne de passage pendant le morph bleu → orange (interpolation RVB)"},
+      {"hex": "#555555", "role": "gris des lignes secondaires du mur typographique"}
+    ],
+    "type": "Grotesque Black (type Inter Display) : capitales « EASE IN. » ≈ 12,5 % H, « Claude. » en casse mixte ≈ 20 % H. Serif italique (type Instrument Serif) pour « never » et la signature. Mono capitales espacées pour le HUD (≈ 1,5 % H).",
+    "texture": "Fonds plats avec grille de points pâle et léger grain probable sur le crème ; contours d'écho fins (1 px) autour des formes ; contours fantômes rouge sombre pour l'espacement de la balle ; défocalisation de la balle qui arrive à la caméra ; ombre douce sous le point final ; rendu 3D mat sans reflets ; flou de mouvement à obturateur 180° seulement pendant les gestes rapides.",
+    "style": "Suisse, HUD de logiciel, pédagogique",
+    "coherence": "Tenu par le HUD constant (repères d'angle, libellés mono, timecode juste à 60 fps, barre de 8 chapitres), par 4 couleurs qui s'échangent le rôle de fond, par 3 familles de caractères et par des transitions en raccord de forme (balle → aplat, hexagone → cube → grille → tuiles, O → aplat bleu, barre → fond crème, balle → point final). Seules ruptures : l'image noire isolée entre SYSTEMS et TYPE, et le mur de lignes floues du chapitre TYPE, moins tenu que le reste."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM (127,9 mesuré) : temps de 0,469 s = 28,1 im à 60 fps, mesure de 1,875 s. 15 s = 8 mesures exactes, un chapitre par mesure. Coupes franches détectées à 1,87 / 3,55 / 5,63 / 13,13 s, 3 sur 4 à moins de 30 ms d'un temps ; les autres changements de chapitre sont des raccords continus (7,57 s, 9,37 s, 11,25 s), eux aussi sur les premiers temps (à 4 im près au plus). Dans chaque chapitre, un geste par temps ou demi-temps : rebonds de balle toutes les 28 im, entrées de texte sur les temps et demi-temps, un morph de forme par temps, vagues de tuiles sur les temps. Aucun temps mort avant la carte finale ; seul maintien réel 13,73–14,98 s (1,25 s) sur le logo, animé jusqu'à 14,2 s par la signature ; la musique s'éteint vers 14,4 s.",
+    "timeline": [
+      {"t": "0:00.00-0:00.27", "what": "Fond #0F0F0D, le HUD apparaît, la règle de timeline se dessine du centre vers les bords (f0–f6), graduations et tête de lecture rouge (f8–f10).", "technique": "tracé d'interface, HUD"},
+      {"t": "0:00.30-0:01.50", "what": "La balle vermillon tombe du haut et rebondit 3 fois (contacts f28, f56, f84 = un par temps) avec contours fantômes, trajectoire pointillée, losanges d'images clés et étiquettes tapées (SPACING, SQUASH, STRETCH, SLOW IN · SLOW OUT, ANTICIPATION) ; dernier contact tenu écrasé 7 im.", "technique": "balle rebondissante sur le temps, onion skin, étiquettes tapées"},
+      {"t": "0:01.52-0:01.88", "what": "La balle s'élance puis fonce vers la caméra (×15 en 12 im, défocalisation) et remplit l'écran d'orange sur le premier temps de la mesure 2, quand le kick entre.", "technique": "plongée dans la balle"},
+      {"t": "0:01.88-0:02.12", "what": "« EASE IN. » entre par la gauche en vrai ease-in (immobile 9 im, accélère, arrêt net f127 sur le demi-temps) ; l'éditeur de courbes trace cubic-bezier(.70, 0, .84, 0).", "technique": "le mot bouge selon ce qu'il dit"},
+      {"t": "0:02.37-0:02.67", "what": "« EASE OUT. » part sur le temps depuis la droite (flou), décélère en expo ; courbe cubic-bezier(.16, 1, .30, 1).", "technique": "ease-out démontré"},
+      {"t": "0:02.87-0:03.33", "what": "« never » (serif italique) puis « LINEAR. » (Black) arrivent en ressort, dépassent et se posent sur le temps (f199) ; courbe spring(ƒ 2.3, ζ 0.34).", "technique": "ressort démontré"},
+      {"t": "0:03.47-0:03.80", "what": "Le panneau orange monte et sort par le haut (flou vertical, centré sur le demi-temps), fond crème ; un point noir grossit en cercle et se pose au premier temps de la mesure 3 (f228).", "technique": "poussée vers le haut"},
+      {"t": "0:03.80-0:05.40", "what": "Cercle noir à contours d'écho, puis un morph par temps : superellipse bleue n=4.3 (f252–f260), étoile orange à 8 branches (f280–f288), hexagone (f308–f316), libellés « 0x / 04 ».", "technique": "morphing de formes sur chaque temps"},
+      {"t": "0:05.40-0:05.63", "what": "L'hexagone trace ses arêtes en Y et prend ses ombres : cube isométrique (f324–f331).", "technique": "hexagone → cube"},
+      {"t": "0:05.63-0:06.00", "what": "Coupe sur fond noir au premier temps de la mesure 4, le cube recule et une grille isométrique de tuiles crème pousse sous lui en losanges (f341–f356).", "technique": "raccord sur le cube, grille qui pousse"},
+      {"t": "0:06.00-0:07.05", "what": "Les tuiles deviennent des cubes ; des ondes de cubes soulevés et orangés partent du centre ; la caméra orbite (HUD « CAM YAW 047.3° → 069.8° »).", "technique": "onde de cubes, caméra orbitale"},
+      {"t": "0:07.05-0:07.55", "what": "La caméra bascule en vue de dessus avec zoom et flou (f423–f441) : la grille devient un damier plat.", "technique": "bascule vers la vue de dessus"},
+      {"t": "0:07.57-0:09.35", "what": "Balayage diagonal qui ré-habille les carrés en tuiles de Truchet (premier temps de la mesure 5) ; vagues de tuiles qui pivotent, orange pendant la rotation (f509, f532).", "technique": "re-skin en Truchet, vagues de rotation"},
+      {"t": "0:09.37-0:09.62", "what": "Une image noire (f562), puis 7 lignes « DESIGN THAT MOVES — » entrent en fouetté horizontal flou et se posent (f577, demi-temps).", "technique": "coupe par image noire, fouetté"},
+      {"t": "0:09.62-0:10.88", "what": "Les lignes défilent en sens alternés (Black large / Light étroite par mot, crème, gris, une ligne orange) ; le O de « MOVES » devient un disque bleu (f589).", "technique": "mur de lignes défilantes"},
+      {"t": "0:10.88-0:11.30", "what": "Zoom exponentiel dans le O bleu jusqu'à l'aplat bleu, premier temps de la mesure 7.", "technique": "plongée dans un glyphe"},
+      {"t": "0:11.30-0:12.97", "what": "Écran de rendu : « RENDERING », pourcentage géant en rouleaux 01 → 99 %, barre remplie des vignettes des 6 chapitres, « showreel_FINAL_final_v3.mp4 », « FRAME 0720 / 0900 » ; bloqué à 99 % pendant le break (f758–f778).", "technique": "compteur de rendu récapitulatif"},
+      {"t": "0:12.98-0:13.13", "what": "« 100% » et « RENDER COMPLETE », vignettes désaturées, la barre devient crème et s'étire jusqu'à remplir le cadre (f782–f788).", "technique": "barre de progression → fond"},
+      {"t": "0:13.13-0:13.43", "what": "Sur l'impact, « Claude » monte lettre à lettre derrière un masque de ligne de base (f789–f806), anneaux pâles dans le fond.", "technique": "révélation par masque, décalage par lettre"},
+      {"t": "0:13.45-0:13.80", "what": "Un point orange tombe du haut, atterrit en point final avec écrasement (f818, sur le temps) ; filet tracé sous le mot, « MOTION DESIGNER » et « SHOWREEL 2026 » tapés.", "technique": "point final = balle qui atterrit"},
+      {"t": "0:14.07-0:15.00", "what": "« Let's make things move. » en serif italique orange en fondu (f845–f853, sur le temps), « ● AVAILABLE FOR WORK » ; maintien, musique éteinte vers 14,4 s.", "technique": "carte finale, signature"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Barres des planches (grille 0,486 s + 0,469 n ; attaques réelles ≈ 22 ms après, mesurées à 0,509 / 0,977 / 1,445 / 1,921 s) : 21 gestes clés sur 30 à ±2 im d'une barre bleue ou bleu clair, pour un hasard d'environ 36 % à 128 BPM et 60 fps. Exemples : contacts de la balle f28 / f56 / f84 à −1,2 / −1,3 / −1,4 im des temps ; aplat orange f112 (−1,6) ; « EASE IN. » posé f127 (demi-temps f127,7) ; « EASE OUT. » part f142 (temps f141,8) ; « LINEAR. » part f184 (demi-temps f184,0) ; poussée centrée f212 (demi-temps f212,1) ; morphs centrés vers f256 / f284 / f312 (+1,5 im, probable, planche au pas de 4) ; arêtes du cube f324 (demi-temps f324,7) ; coupe vers le noir f338 (−0,8) ; caméra f423 (temps f423,2) ; vague de tuiles f509 (+1,3) ; lignes typo f563 (−0,9) ; fouetté posé f577 (−1) ; fond crème f788 (−1,1) ; point final posé f818 (+0,7) ; signature f845 (temps f845,4). Ratés : envol de la balle f91, « never » f174, grille complète f356, balayage Truchet f454 (+2,6), O bleu f589 (−3), aplat bleu f673 (−3,6), 100 % f779, fin du mot f806. Les 7 changements de chapitre tombent sur des premiers temps de mesure (5 à ±2 im, 2 à ±4 im). Structure audio calquée : intro d'une mesure sans kick sous la balle, kick à 1,92 s sur l'aplat orange, basse coupée 12,70–13,15 s sous le compteur bloqué à 99 %, impact 13,17 s sur le fond crème et la montée de « Claude », musique éteinte vers 14,4 s. L'image précède l'attaque audible d'environ 2 im (≈ 40 ms), imperceptible. L'indice automatique (départs/demi-temps p = 0,004) va dans le même sens.",
+    "synced": ["coupes", "departs", "impacts", "atterrissages", "apparitions", "texte", "camera", "couleur", "drop"],
+    "style_match": "Électro 128 BPM à kick régulier : colle aux courbes nettes et aux morphs sur chaque temps ; le break sous le 99 % et l'impact du logo dramatisent la fin.",
+    "how_built": "Le prompt ne parle pas de son. Les gestes tombent exactement sur une grille de 0,46875 s (128 BPM) qui part de t = 0 (contacts de la balle à 0,467 / 0,933 / 1,400 s, coupe à 1,867 s), et 15 s = 8 mesures pile : la timeline a été écrite en temps musicaux. Les attaques audio arrivent environ 40 ms après cette grille (décalage d'encodage probable) et la musique épouse la structure (intro sans kick, break sous le 99 %, impact sur le logo) : bande-son probablement générée ou montée pour cette timeline. Le HUD affiche le vrai numéro d'image (« FRAME 0720 / 0900 », timecode juste à 60 fps) et « 60 FPS · 180° SHUTTER » : rendu image par image avec flou de mouvement calculé."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Reel-leçon en chapitres numérotés",
+      "name_en": "chaptered showreel as a lesson",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "8 sections signalées par le HUD (« 01 — TIMING & SPACING », « 02 — EASING », « 03 — SHAPE », « 04 — SPACE », « 05 — SYSTEMS », « 06 — TYPE », « 07 — RENDER », carte finale) et par une barre de 8 tirets en bas au centre. Chaque chapitre démontre un principe en l'appliquant à son propre contenu : la balle illustre timing et espacement, le texte « EASE IN. » bouge en ease-in, les formes illustrent la forme. Le chapitre 07 récapitule les 6 précédents en vignettes, la carte finale reprend la balle en point final. Un seul sujet par chapitre : la densité reste lisible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Un chapitre = une mesure, un geste = un temps",
+      "name_en": "one chapter per bar, one gesture per beat",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "128 BPM : temps 0,469 s (28,1 im), mesure 1,875 s (112,5 im) ; 15 s = 8 mesures. Changements de chapitre observés à f112, f228, f338, f454, f563, f673, f788 pour des premiers temps théoriques à f112,5 / f225 / f337,5 / f450 / f562,5 / f675 / f787,5. Dans une mesure, 4 temps = 4 gestes : chapitre 03 = cercle, superellipse, étoile, hexagone-cube ; chapitre 01 = trois rebonds puis l'envol.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-02.jpg, microM-002-cut-f338.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de logiciel persistant",
+      "name_en": "persistent software HUD frame",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Repères d'angle en L aux 4 coins ; en haut à gauche « CLAUDE / MOTION DESIGNER » (mono capitales espacées, CLAUDE en gras), en haut à droite « SHOWREEL '26 » ; en bas à gauche numéro et nom du chapitre ; en bas au centre 8 tirets, le chapitre courant surligné ; en bas à droite le timecode à 60 fps (00:00:01:12 à f72, juste). Corps ≈ 1,5 % de la hauteur, marges ≈ 2,5 %. La couleur du HUD suit le fond (noir sur crème, crème sur noir, jaune pâle sur bleu). Cadre fixe qui unifie des chapitres très différents.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fausse timeline d'animation qui se dessine",
+      "name_en": "fake animation timeline with draw-on",
+      "t": "0:00.00-0:01.87",
+      "frames": "f0-f112",
+      "fps": 60,
+      "mechanics": "Règle à ≈ 73 % de la hauteur, de 8 % à 92 % de la largeur, graduée 000 à 120 images (2 s à 60 fps) ; elle se dessine du centre vers les bords en ≈ 6 im (f0–f6), graduations et tête de lecture rouge à étiquette apparaissent f8–f10. Losanges blancs posés aux contacts (≈ 030 et ≈ 057), trajectoire en pointillés qui reste à l'écran.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Balle rebondissante sur le temps, avec écrasement et étirement",
+      "name_en": "bouncing ball with squash and stretch on the beat",
+      "t": "0:00.30-0:01.52",
+      "frames": "f18-f91",
+      "fps": 60,
+      "mechanics": "Balle ≈ 4 % de la largeur. x linéaire (≈ +0,7 % de la largeur par image, de 21 % à 71 %) ; y : chute accélérée (pas de 0,01 puis 0,08 H par 2 im entre l'apex f42 et le contact f56), montée décélérée. Contacts f28, f56, f84 : 28 im = 1 temps à 128 BPM, chacun 1,2 à 1,4 im avant la barre. Écrasement ≈ 2,4:1 (f28), 2,6:1 (f56), 2,8:1 tenu 7 im de f84 à f90 (anticipation) ; étirement vertical ≈ 1:1,5 en chute et au décollage. Rebonds de hauteur constante (apex ≈ 0,32 H au-dessus du sol) : un métronome plutôt qu'une balle physique, voulu pour le rythme.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-cut-f112.jpg",
+      "illus": {"from": 44, "to": 72, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contours fantômes qui montrent l'espacement",
+      "name_en": "onion-skin ghosts showing spacing",
+      "t": "0:00.33-0:01.57",
+      "frames": "f20-f94",
+      "fps": 60,
+      "mechanics": "Chaque position passée laisse un contour d'ellipse rouge sombre (opacité ≈ 30 %) : serrés à l'apex, espacés près du sol, ils dessinent l'espacement (spacing) de la courbe ; ils s'effacent en ≈ 20 im. Trajectoire complète en pointillés fins.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Étiquettes tapées avec curseur et filet de rappel",
+      "name_en": "typewriter callout labels with leader lines",
+      "t": "0:00.30-0:01.57",
+      "frames": "f18-f94",
+      "fps": 60,
+      "mechanics": "SPACING (vers f18), SQUASH (f32), STRETCH (f36), SLOW IN · SLOW OUT (f66–f82, à l'apex), ANTICIPATION (f84–f94) : mono ≈ 1,3 % H, tapé à ≈ 1 lettre par image avec curseur bloc, relié à la balle par un filet coudé terminé par un point. Chaque étiquette apparaît au moment exact où le principe se produit.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans la balle jusqu'à l'aplat de couleur",
+      "name_en": "ball flies into camera, color fill",
+      "t": "0:01.52-0:01.88",
+      "frames": "f91-f113",
+      "fps": 60,
+      "mechanics": "Après l'anticipation, la balle part vers le haut (f91–f94) puis vient vers la caméra : diamètre ≈ 4 % de la largeur à f97, 6 % à f106, 12 % à f109, 22 % à f111, ≈ 65 % à f112 avec flou de défocalisation et vignettage sombre radial, aplat orange #DE5332 à f113. Croissance exponentielle (ease-in) en ≈ 12 im ; l'aplat tombe 1,6 im avant le premier temps de la mesure 2, quand le kick entre (1,92 s). La couleur de la balle devient le fond du chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f112.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« EASE IN. » animé en ease-in (le mot fait ce qu'il dit)",
+      "name_en": "self-demonstrating ease-in text",
+      "t": "0:01.88-0:02.12",
+      "frames": "f113-f127",
+      "fps": 60,
+      "mechanics": "Grotesque Black, capitales ≈ 12,5 % H. Le mot part hors cadre à gauche, seul « IN. » dépasse ; il ne bouge presque pas pendant 9 images (f113–f121), puis accélère (f122–f126, flou horizontal croissant) et s'arrête net à f127 (x ≈ 8 %), sans dépassement. Courbe cubic-bezier(.70, 0, .84, 0) affichée dans l'éditeur, dont le point blanc suit la progression. Arrivée à 0,7 im d'un demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f112.jpg",
+      "illus": {"from": 113, "to": 128, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« EASE OUT. » animé en ease-out expo",
+      "name_en": "self-demonstrating ease-out text",
+      "t": "0:02.37-0:02.67",
+      "frames": "f142-f160",
+      "fps": 60,
+      "mechanics": "Part sur le temps (f142) depuis la droite : ≈ 40 % de la largeur parcourus en 6 images avec fort flou (f142–f148), puis les derniers ≈ 10 % en 12 images (f148–f160). Courbe cubic-bezier(.16, 1, .30, 1) affichée. Contraste immédiat avec la ligne du dessus.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« never LINEAR. » en ressort",
+      "name_en": "spring overshoot text",
+      "t": "0:02.87-0:03.33",
+      "frames": "f172-f200",
+      "fps": 60,
+      "mechanics": "« never » en serif italique monte du bas, lettres en rotation (f172–f184) ; « LINEAR. » en grotesque Black apparaît lettre par lettre en vague à partir du demi-temps f184, dépasse sa ligne de base puis oscille et se pose f196–f200 (temps f199). Formule spring(ƒ 2.3, ζ 0.34) : amortissement 0,34, soit ≈ 30 % de dépassement théorique, visible sur la courbe. Le seul mot animé en ressort est « linéaire ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Éditeur de courbes synchronisé avec le texte",
+      "name_en": "live graph editor",
+      "t": "0:01.88-0:03.53",
+      "frames": "f113-f212",
+      "fps": 60,
+      "mechanics": "Boîte « GRAPH EDITOR / VALUE / TIME » à droite (x 73–93 %, y 23–55 %), grille fine, courbe noire tracée à mesure, point blanc qui suit la valeur courante de l'animation du texte, formule en mono dessous ; la courbe change à chaque ligne (ease-in → ease-out → ressort). Le spectateur voit la courbe et son effet en même temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée du panneau vers le haut",
+      "name_en": "push-up slide transition",
+      "t": "0:03.47-0:03.80",
+      "frames": "f208-f228",
+      "fps": 60,
+      "mechanics": "Le panneau orange entier (texte + éditeur) monte et sort par le haut en ≈ 8 im (f208–f216) avec flou vertical, révélant le fond crème #F3EEE6 ; mouvement centré sur le demi-temps (f212). Un point noir apparaît au centre à f216 et grossit en cercle (≈ 46 % de la hauteur) jusqu'au premier temps de la mesure 3 (f228).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morphing de formes sur chaque temps",
+      "name_en": "beat-locked shape morphs",
+      "t": "0:03.80-0:05.27",
+      "frames": "f228-f316",
+      "fps": 60,
+      "mechanics": "Cercle noir → superellipse n = 4,3 tournée de 45° (f252–f260) → étoile à 8 branches arrondies (f280–f288) → hexagone (f308–f316). Chaque forme tient ≈ 20 im et se transforme en ≈ 8 im autour d'un temps (centres probables f256, f284, f312). La couleur suit : noir → bleu #3134F0 (passage marine), bleu → orange #DE5332 (passage violet terne #8A5CC0, interpolation RVB). Libellé mono « 0x / 04 — … » mis à jour à chaque forme. À refaire en interpolant la couleur en OKLCH.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contours d'écho et grille de points",
+      "name_en": "echo offset outlines on a dot grid",
+      "t": "0:03.80-0:05.40",
+      "frames": "f228-f324",
+      "fps": 60,
+      "mechanics": "6 à 8 contours fins (1 px ; gris pour le cercle, rose orangé pour l'étoile) décalés autour de la forme, comme des ondes ou des offset paths, qui suivent le morph avec un léger retard ; grille de points pâle en fond (pas ≈ 2,5 % de la largeur). Donne de la profondeur sans ombre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "L'hexagone devient un cube",
+      "name_en": "hexagon to isometric cube",
+      "t": "0:05.40-0:05.63",
+      "frames": "f324-f337",
+      "fps": 60,
+      "mechanics": "f324–f325 trois arêtes en Y partent du centre de l'hexagone (demi-temps f324,7) ; f326–f331 les trois faces prennent leur valeur (dessus #DF5433, gauche #AF462C, droite #6D2C22) : la forme plate devient un cube isométrique sans aucun mouvement de caméra.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f338.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord sur le cube et grille qui pousse",
+      "name_en": "match cut on the cube, grid grows out",
+      "t": "0:05.63-0:05.93",
+      "frames": "f338-f356",
+      "fps": 60,
+      "mechanics": "f338 coupe sur fond #0F0F0D, le cube garde sa place (0,8 im avant le premier temps de la mesure 4) ; f338–f347 il rétrécit de ≈ 12 % à 4 % de la largeur (recul de caméra) pendant qu'une grille isométrique de tuiles crème pousse sous lui en losanges concentriques, ≈ 1 anneau par image puis ralentissement (ease-out), grille complète vers f356.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f338.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Onde de cubes orangés et caméra en orbite",
+      "name_en": "isometric cube ripple with orbiting camera",
+      "t": "0:06.00-0:07.05",
+      "frames": "f360-f423",
+      "fps": 60,
+      "mechanics": "Les tuiles deviennent des cubes ; des vagues concentriques en losange soulèvent les cubes (≈ 2 fois leur hauteur) en les teintant orange au front de l'onde puis rose derrière, du centre vers le bord en ≈ 1 s ; la caméra orbite lentement, la lecture HUD passe de « CAM YAW 047.3° PITCH 35.3° 0.56× » à « 069.8° … 0.55× » en 0,5 s (≈ 45°/s). Rendu mat générique, sauvé par la palette et la lecture caméra.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Bascule vers la vue de dessus",
+      "name_en": "pitch-down to top view with zoom",
+      "t": "0:07.05-0:07.35",
+      "frames": "f423-f441",
+      "fps": 60,
+      "mechanics": "Rotation de lacet, tangage de ≈ 35° à 90° et zoom ≈ ×3 en 18 im, flou de mouvement fort f431–f436 ; départ sur le temps (f423,2), arrivée à plat vers f441 : la grille 3D devient un damier plat, prêt à être ré-habillé.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f438.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ré-habillage du damier en tuiles de Truchet",
+      "name_en": "re-skin wipe into Truchet tiles",
+      "t": "0:07.35-0:08.00",
+      "frames": "f441-f480",
+      "fps": 60,
+      "mechanics": "Les carrés vus de dessus tiennent ≈ 12 im, puis à f454 (2,6 im après le premier temps de la mesure 5) un balayage diagonal depuis le coin haut gauche retourne les tuiles et révèle des arcs noirs ; en ≈ 25 im le cadre est un labyrinthe de Truchet continu. Même grille, nouvelle peau.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f438.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Vagues de rotation des tuiles de Truchet",
+      "name_en": "Truchet tile rotation waves",
+      "t": "0:08.00-0:09.35",
+      "frames": "f480-f561",
+      "fps": 60,
+      "mechanics": "Tuiles ≈ 8 % de la largeur, deux quarts de cercle noirs épais (≈ 30 % de la tuile). Des grappes de tuiles pivotent de 90° en ≈ 10 im, orange pendant la rotation (traînée rayée), en onde radiale depuis une tuile source (≈ 1 im par anneau) ; départs vers f509 (+1,3 im du temps) et f532 ; le motif reste continu après chaque rotation.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f517.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Image noire isolée entre deux chapitres",
+      "name_en": "single black frame cut",
+      "t": "0:09.37-0:09.38",
+      "frames": "f562",
+      "fps": 60,
+      "mechanics": "Une seule image #0F0F0D (HUD seul) entre le Truchet et la typo, 1,9 im avant le premier temps de la mesure 6. Coupe sèche non motivée, la seule de la vidéo : un raccord sur une tuile ou une courbe aurait tenu la chaîne.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f577.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mur de lignes défilantes « DESIGN THAT MOVES »",
+      "name_en": "kinetic marquee wall",
+      "t": "0:09.38-0:10.88",
+      "frames": "f563-f653",
+      "fps": 60,
+      "mechanics": "7 lignes (≈ 11 % H chacune, interligne serré) alternant par mot une grotesque Black large et une Light étroite, en crème, gris #555/#888 et une ligne orange. f567–f573 fouetté horizontal (flou fort sur toutes les lignes), posé f577 (demi-temps) ; puis défilement alterné gauche/droite à vitesses différentes, flou permanent sur les lignes rapides, mots coupés par les bords. Effet vu partout, peu lisible.",
+      "verdict": "cliche",
+      "evidence": "microM-005-move-f577.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le O bleu",
+      "name_en": "zoom into a glyph to a color fill",
+      "t": "0:09.82-0:11.22",
+      "frames": "f589-f673",
+      "fps": 60,
+      "mechanics": "f589 le O de « MOVES » de la ligne orange devient un disque bleu #3134F0 (annonce de la couleur suivante) ; f653–f673 zoom exponentiel centré sur ce disque (≈ ×20 en 20 im), les autres lignes floutées par la profondeur ; à f673 le bleu remplit le cadre avec un liseré orange aux coins, aplat complet au premier temps de la mesure 7 (≈ f675). Le point de couleur devient le fond du chapitre RENDER.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 648, "to": 678, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de rendu bloqué à 99 % et barre récapitulative",
+      "name_en": "render progress counter with chapter recap",
+      "t": "0:11.30-0:12.98",
+      "frames": "f678-f780",
+      "fps": 60,
+      "mechanics": "Pourcentage géant (≈ 25 % H) : « 0 » fantôme bleu clair, dizaines et unités blanches en rouleaux à flou vertical, « % » en italique fin ; progression non linéaire (01 → 41 % en 15 im, palier, puis 41 → 99 % en ≈ 65 im) ; bloqué à 99 % pendant 20 im (f758–f778) pendant la coupure de basse (12,70–13,15 s) ; 100 % et « RENDER COMPLETE » à f780. Dessous, une barre segmentée « 01 TIMING … 06 TYPE » se remplit des vignettes de chaque chapitre ; « FRAME 0720 / 0900 » = vrai numéro d'image ; nom de fichier « showreel_FINAL_final_v3.mp4 ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f788.jpg",
+      "illus": {"from": 740, "to": 790, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Humour de métier en petit texte",
+      "name_en": "insider jokes as microcopy",
+      "t": "0:02.87-0:15.00",
+      "frames": "f172-f899",
+      "fps": 60,
+      "mechanics": "« never LINEAR. », « showreel_FINAL_final_v3.mp4 », le rendu bloqué à 99 %, « 1920×1080 · 60 FPS · 180° SHUTTER », « ● AVAILABLE FOR WORK » : clins d'œil que tout motion designer reconnaît, posés en mono discret sans ralentir le rythme. Le reel parle à des pairs.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre de progression devient le fond",
+      "name_en": "progress bar expands into the next background",
+      "t": "0:13.02-0:13.13",
+      "frames": "f781-f788",
+      "fps": 60,
+      "mechanics": "f781 les vignettes se désaturent, f782 la barre devient un aplat crème, f783–f787 elle s'étire verticalement (bords flous) jusqu'à couvrir le cadre ; f788 fond crème plein, 1,1 im avant le premier temps de la mesure 8 et l'impact sonore (13,17 s). L'élément d'interface terminé devient le décor de la carte finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo révélé lettre à lettre par un masque de ligne de base",
+      "name_en": "baseline-masked staggered letter rise",
+      "t": "0:13.15-0:13.43",
+      "frames": "f789-f806",
+      "fps": 60,
+      "mechanics": "« Claude » (grotesque Black, casse mixte, ≈ 20 % H, ≈ 64 % de la largeur avec le point) : chaque lettre monte derrière un masque posé sur la ligne de base en ≈ 6 im, décalage ≈ 2,5 im entre lettres (C f789, l f793, a f795, u f798, d f800, e f802), mot complet f806 ; départ sur l'impact. Anneaux concentriques très pâles qui s'étendent dans le fond (f788–f800).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point final tombe et s'écrase comme la balle",
+      "name_en": "falling period lands with squash (callback)",
+      "t": "0:13.45-0:13.80",
+      "frames": "f807-f828",
+      "fps": 60,
+      "mechanics": "f807 un disque orange apparaît en haut (y ≈ 3 %, x ≈ 80 %) au-dessus de la fin du mot ; chute d'environ 0,46 H en ≈ 11 im, étiré verticalement pendant la chute (f813) ; contact à la place du point final vers f818 (sur le temps, +0,7 im), écrasement horizontal ≈ 1,5:1 (f823) puis rond (f828), petite ombre douce dessous. Rappel exact de la balle du chapitre 01 : la boucle narrative tient en un geste.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carte finale éditoriale",
+      "name_en": "editorial end card lockup",
+      "t": "0:13.63-0:15.00",
+      "frames": "f818-f899",
+      "fps": 60,
+      "mechanics": "Sur crème #F3EEE6 : « Claude. » centré ; filet noir 1 px de la largeur du mot tracé de gauche à droite (≈ f820–f830) ; « MOTION DESIGNER » en capitales grasses très espacées à gauche, « SHOWREEL 2026 » en capitales maigres espacées à droite, tapés lettre à lettre ; « Let's make things move. » en serif italique orange ≈ 5 % H, centré, en fondu f845–f853 (sur le temps) ; « ● AVAILABLE FOR WORK » en bas à gauche, le point orange répète celui du logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette de 4 couleurs qui s'échangent le fond",
+      "name_en": "four-color palette rotating as backgrounds",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "#0F0F0D (noir chaud), #DE5332 (vermillon), #F3EEE6 (crème), #3134F0 (outremer). Fonds successifs : noir, vermillon, crème, noir, crème, noir, bleu, crème. La couleur du chapitre suivant est annoncée par l'élément de transition : balle orange → fond orange, O bleu → fond bleu, barre crème → fond crème.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement d'obturateur 180°",
+      "name_en": "180-degree shutter motion blur",
+      "t": "0:01.80-0:13.13",
+      "frames": "f108-f788",
+      "fps": 60,
+      "mechanics": "Flou directionnel proportionnel à la vitesse (texte qui entre, panneau qui monte, lignes fouettées, chiffres qui roulent, caméra), absent au repos ; le HUD annonce « 60 FPS · 180° SHUTTER » : flou calculé comme un obturateur de caméra, probablement par sur-échantillonnage temporel. Aucun flou décoratif.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f112.jpg, microM-005-move-f577.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Gestes posés sur les temps, chapitres sur les premiers temps",
+      "name_en": "beat-locked gestures, bar-locked chapters",
+      "t": "0:00.47-0:14.08",
+      "frames": "f28-f845",
+      "fps": 60,
+      "mechanics": "21 gestes clés sur 30 à ±2 im d'un temps ou demi-temps (hasard ≈ 36 %) : contacts de balle, arrivées et départs de texte, morphs, coupe, départ de caméra, vagues de tuiles, fond crème, point final, signature. Les 7 changements de chapitre tombent sur les premiers temps de mesure. Décalage typique : l'image 1 à 2 im avant l'attaque (≈ 20–40 ms), ce qui fait percevoir le geste pile sur le son.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f112.jpg, microM-002-cut-f338.jpg, microM-003-move-f438.jpg, microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale calquée sur les chapitres",
+      "name_en": "music sections mapped to chapters",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Intro d'une mesure sans kick (pulsations à 0,51 / 0,98 / 1,45 s) sous la balle, dont les contacts tombent juste avant chaque pulsation ; le kick entre à 1,92 s quand l'aplat orange remplit l'écran ; groove de 1,9 à 12,7 s ; basse coupée et montée 12,70–13,15 s sous le compteur bloqué à 99 % ; impact grave à 13,17 s sur le fond crème et la montée de « Claude » ; décroissance puis silence dès 14,4 s pendant que la carte finale tient.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, mesures audio"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt d'une ligne identique à celui d'autres reels du corpus, plus « dont ask just make » : le modèle n'a posé aucune question et a tout inventé (concept, palette, typo, musique probable, identité « Claude. »)."},
+    {"kind": "structure", "insight": "Le modèle a choisi un concept pédagogique : le reel déroule les principes du motion dans l'ordre d'un cours, un par chapitre, chacun démontré par sa propre animation. Un sujet par chapitre rend lisible une densité très élevée."},
+    {"kind": "direction", "insight": "« Go all out » produit encore de la densité (8 chapitres en 15 s), mais disciplinée par un système : HUD fixe, 4 couleurs, 3 familles de caractères, une mesure par chapitre."},
+    {"kind": "build", "insight": "Timecode juste à 60 fps, « FRAME 0720 / 0900 » et « 60 FPS · 180° SHUTTER » dans le HUD : rendu déterministe image par image avec flou de mouvement calculé. Les gestes tombent sur une grille exacte de 0,46875 s (128 BPM) depuis t = 0 et 15 s = 8 mesures : la timeline a été pensée en temps musicaux ; audio décalé d'environ 40 ms à l'export."},
+    {"kind": "other", "insight": "Convergence avec d'autres reels du même prompt : ouverture sur la balle rebondissante dans une timeline, grille de cubes à onde, compteur, « Claude. » avec point orange. Ce sont les motifs par défaut d'Opus 5.5 pour « showreel » ; pour s'en distinguer, il faut les interdire ou imposer un autre concept."},
+    {"kind": "qa", "insight": "Restent à corriger : l'image noire isolée de f562, le HUD et les formules trop petits pour un 720p (≈ 1,5 % de la hauteur), et le violet terne du morph bleu → orange."}
+  ],
+  "steal": [
+    "Faire bouger chaque mot selon ce qu'il dit : « EASE IN. » entre en ease-in, « EASE OUT. » en ease-out, « LINEAR. » en ressort, avec la courbe affichée à côté.",
+    "Caler la structure sur la mesure : 15 s = 8 mesures à 128 BPM, un chapitre par mesure, un geste par temps (morph, rebond, vague).",
+    "Plonger dans un glyphe : changer le O d'un mot en point de couleur, zoomer dedans jusqu'à ce que sa couleur devienne le fond du chapitre suivant.",
+    "Faire d'un élément d'interface le décor suivant : la barre de progression terminée s'étire en hauteur et devient le fond de la carte finale.",
+    "Finir par le point du logo qui tombe et s'écrase comme la balle d'ouverture, sur un temps : la boucle narrative tient en un geste."
+  ],
+  "flaws": [
+    "Mur de lignes « DESIGN THAT MOVES » floues et coupées par le cadre : peu lisible, tic de vidéo IA.",
+    "Densité : 8 chapitres en 15 s et HUD à 1,5 % de hauteur ; formules, libellés et nom de fichier passent sans être lus.",
+    "Seule coupe non motivée : une image noire isolée entre SYSTEMS et TYPE (f562).",
+    "Morph bleu → orange interpolé en RVB : un violet terne apparaît au milieu de la transformation.",
+    "Grille de cubes isométrique à onde orange : rendu générique, motif déjà vu dans d'autres reels du même prompt."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Référence de premier plan à 60 fps natifs : courbes démontrées par le texte, morphs sur le temps, quatre transitions par raccord (balle, cube, O, barre) et synchro à ±2 im. À étudier image par image pour mesurer le dépassement du ressort, les décalages par lettre et le placement des gestes 1 à 2 images avant le temps."
+  }
+}

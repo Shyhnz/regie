@@ -1,0 +1,586 @@
+{
+  "slug": "elliot-garreffa-f334bc",
+  "title": "Muse connector tracker promo",
+  "handle": "@elliot_garreffa",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Système soigné et cohérent (palette, titres bicolores, habillage éditorial) avec trois vraies idées de transition, mais 65 % de maintiens, la même montée masquée partout et une musique à peine suivie.",
+  "summary": "Promo produit 16:9 de 39 s pour le « connector tracker » de Muse (Agent Discoverability). Logo tracé puis rempli, trois piliers sur fond bleu, puis quatre chapitres numérotés en maquettes d'interface (tableau, arborescence, recherche filtrée, comparatif 3D) et CTA. Système graphique très cohérent et quelques transitions malignes (effacement autour de l'icône, cartes changées en pastilles), mais 65 % de maintiens et une musique peu exploitée.",
+  "prompt_vs_result": [
+    "Une ligne : faire de « this » (le contenu fourni, sans doute la page du tracker Muse) une vidéo motion « dynamique », comme le showreel d'un motion designer, « go all out ». Ni durée, ni musique, ni style imposés.",
+    "Claude a choisi une démo produit en chapitres numérotés : logo tracé, trois piliers sur fond bleu, tableau avec curseur, arborescence, recherche filtrée, comparatif de cartes 3D, CTA ; trois irises colorés, une mascotte, un habillage éditorial.",
+    "« Go all out » a donné du soin, pas de l'énergie : 65 % de maintiens. Il fallait imposer une densité (un geste par temps), une durée maximale par écran (≈ 2 s), le BPM et le calage des transitions."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F8FCF8",
+        "role": "fond blanc menthe des plans clairs"
+      },
+      {
+        "hex": "#14201B",
+        "role": "texte principal, noir teinté de vert"
+      },
+      {
+        "hex": "#0163DD",
+        "role": "bleu d'accent : moitié accent des titres, logo Muse, bouton CTA, surbrillances"
+      },
+      {
+        "hex": "#0057C2",
+        "role": "fond bleu roi du plan des trois piliers"
+      },
+      {
+        "hex": "#0A221A",
+        "role": "fond vert forêt du chapitre 04 (comparatif)"
+      },
+      {
+        "hex": "#87B8FE",
+        "role": "bleu clair d'accent sur fond sombre (« the ecosystems. »)"
+      },
+      {
+        "hex": "#A1C2AF",
+        "role": "bandes vertes tramées du fond (jusqu'à #E8F5EA, reflets jaunes)"
+      },
+      {
+        "hex": "#36CE99",
+        "role": "mascotte fantôme Agent Discoverability"
+      },
+      {
+        "hex": "#EBF2FD",
+        "role": "fond de ligne au survol"
+      },
+      {
+        "hex": "#3E7F60",
+        "role": "vert sourd des sourcils mono et pastilles « New on Muse » (probable)"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "cartes d'interface"
+      }
+    ],
+    "type": "Grotesque géométrique (Manrope probable) Medium, casse phrase, interlettrage serré (≈ −3 %), titres 6-10 % de la hauteur avec point final, partie accent en bleu ; sourcils et pieds en mono capitales ≈ 1 % (+15 % d'interlettrage).",
+    "texture": "Trame demi-teinte (dither) de points et petits glyphes sur des bandes vertes floues en diagonale ; cartes blanches à coins ≈ 16 px, bord gris 1 px, ombre portée douce ; anneaux concentriques fins (≈ 10 % d'opacité) sur le fond sombre ; reflet diagonal clair sur la carte en surbrillance. Aucun grain animé, aucun flou de mouvement (rendu Remotion net).",
+    "style": "SaaS éditorial, maquettes UI flottantes",
+    "coherence": "Tient par trois couleurs (blanc menthe, bleu #0163DD, vert forêt) et une seule famille de caractères, le même habillage sur chaque plan (logos dans les coins, sourcil numéroté, URL), la même montée masquée et le même iris. Les fonds de chapitre alternent sans casser le système ; la mascotte verte rattache la marque Agent Discoverability. Rien ne casse, mais tout finit par se ressembler : la répétition tient lieu de rythme."
+  },
+  "rhythm": {
+    "bpm": 110,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "110,1 BPM (netteté 4,87) : temps toutes les 0,545 s = 16,35 im à 30 fps, demi-temps toutes les 8,17 im ; la partie 0-14 s mesurée seule sort à 73,2 BPM (accents pointés tous les 1,5 temps sur la même grille), la partie 23-35 s à 110,2 BPM. Quatre coupes franches : f124 (temps +4,1 im, hors grille), f209 (demi-temps −0,8), f749 (demi-temps −0,3), f970 (temps −0,1) ; les autres passages sont un effacement radial sans coupe (12,8 s) et un fondu au fond (18,5-19,5 s). Plans de 4,1 / 2,8 / ≈ 5,8 / ≈ 5,9 / 6,3 / 7,4 / 6,8 s. Les gestes sont courts et nets (8 à 20 im : iris 8 im, recouvrement 15 im, morph 20 im) mais séparés par de longues attentes : 13 maintiens ≥ 0,4 s totalisant 25,4 s (65 %), dont 1,9-3,83 s (titre), 13,7-18,57 s (4,9 s, seuls des points circulent sur le schéma), 22,23-24,7 s et 34,07-39,0 s (5 s d'écran final). Décalages internes fixes en images (13 im entre lignes de texte, 7-8 im entre cartes, ≈ 0,75 s entre surbrillances), donc sans lien avec la grille. Aucun flou de mouvement.",
+    "timeline": [
+      {
+        "t": "0:00.00-0:00.73",
+        "what": "Contour du « m » gribouillé de Muse tracé au centre, puis tenu",
+        "technique": "tracé de contour (draw-on) en 6 im"
+      },
+      {
+        "t": "0:00.73-0:01.13",
+        "what": "Le logo se remplit en bleu, rétrécit et monte vers le haut du cadre",
+        "technique": "remplissage + réduction ×0,37 en ease-out, sur l'entrée de la musique"
+      },
+      {
+        "t": "0:01.00-0:01.55",
+        "what": "« Meet the Muse » puis « connector tracker. » en bleu ; icônes d'apps et mascotte surgissent autour d'une orbite",
+        "technique": "montée masquée décalée de 7 im, apparitions en échelle"
+      },
+      {
+        "t": "0:01.55-0:03.85",
+        "what": "Titre tenu, seul un point bleu parcourt l'orbite",
+        "technique": "maintien 2 s"
+      },
+      {
+        "t": "0:03.87-0:04.13",
+        "what": "Un point bleu né au centre grossit jusqu'à couvrir le cadre",
+        "technique": "iris plein 8 im à la couleur du plan suivant"
+      },
+      {
+        "t": "0:04.13-0:06.70",
+        "what": "« Discover. / Understand. / Stay updated. » numérotés sur bleu roi, filet tracé, filigrane du logo, mascotte",
+        "technique": "montée masquée décalée de 13 im"
+      },
+      {
+        "t": "0:06.73-0:07.23",
+        "what": "Un calque blanc monte du bas et recouvre le bleu immobile, avec une carte d'interface inclinée",
+        "technique": "recouvrement ease-in-out 15 im"
+      },
+      {
+        "t": "0:07.10-0:09.50",
+        "what": "« • 01 / FOLLOW THE LAUNCHES », « Track new connectors. » ; la carte se pose à plat, trois lignes entrent",
+        "technique": "carte 3D qui se redresse, lignes en cascade"
+      },
+      {
+        "t": "0:10.00-0:12.00",
+        "what": "Curseur sur « Explore connector », la ligne Instagram passe en survol",
+        "technique": "curseur + état de survol, puis maintien"
+      },
+      {
+        "t": "0:12.03-0:12.57",
+        "what": "Poussée avant sur la carte, le titre s'efface",
+        "technique": "zoom ×1,16 en 16 im"
+      },
+      {
+        "t": "0:12.80-0:13.60",
+        "what": "Un disque couleur fond efface la carte depuis l'icône Instagram, qui reste et devient l'en-tête de la carte suivante",
+        "technique": "effacement radial autour d'un élément partagé"
+      },
+      {
+        "t": "0:13.50-0:15.20",
+        "what": "« • 02 / LOOK BENEATH THE LOGO », « Understand what it can do. » : nœud et trois cartes de capacités reliées par des branches courbes",
+        "technique": "arborescence, cartes décalées de 0,5 s"
+      },
+      {
+        "t": "0:15.20-0:18.50",
+        "what": "Des points bleus circulent le long des branches",
+        "technique": "maintien 4,9 s animé par des paquets"
+      },
+      {
+        "t": "0:18.50-0:19.50",
+        "what": "Tout s'efface, la scène suivante apparaît",
+        "technique": "fondu au fond"
+      },
+      {
+        "t": "0:19.50-0:21.60",
+        "what": "« • 03 / FIND YOUR CATEGORY », « Who's going live in your niche? » : cartes de plateformes inclinées en désordre, saisie « Social & marketing »",
+        "technique": "cartes flottantes, recherche tapée"
+      },
+      {
+        "t": "0:21.60-0:22.50",
+        "what": "Les cartes hors sujet tombent, Facebook / Instagram / Pinterest s'alignent sous la recherche",
+        "technique": "filtre puis alignement (FLIP)"
+      },
+      {
+        "t": "0:22.50-0:24.70",
+        "what": "Rangée tenue, légende, mascotte",
+        "technique": "maintien 2,5 s"
+      },
+      {
+        "t": "0:24.70-0:24.97",
+        "what": "Point vert forêt au centre qui couvre le cadre",
+        "technique": "iris plein : point sur le temps, coupe sur le demi-temps"
+      },
+      {
+        "t": "0:25.27-0:27.40",
+        "what": "« • 04 / SEE THE BIGGER PICTURE », « Compare the ecosystems. » ; cartes Muse, ChatGPT, Claude, Grok distribuées en 3D",
+        "technique": "montée masquée sur le temps, cartes basculées qui se posent"
+      },
+      {
+        "t": "0:27.87-0:30.70",
+        "what": "Surbrillance bleue et reflet passent de carte en carte",
+        "technique": "focus sautant ≈ 0,75 s par carte"
+      },
+      {
+        "t": "0:31.00-0:31.67",
+        "what": "Les cartes se changent en pastilles, le titre s'éteint",
+        "technique": "morph carte → pastille en 20 im"
+      },
+      {
+        "t": "0:32.03-0:32.33",
+        "what": "Iris blanc né au centre de la rangée de pastilles",
+        "technique": "iris, éléments persistants"
+      },
+      {
+        "t": "0:32.33-0:34.10",
+        "what": "Mascotte | Muse, « Daily updates. / Straight to your inbox. », pastilles, bouton « Sign up for daily emails » et URL",
+        "technique": "écran final construit par montées masquées"
+      },
+      {
+        "t": "0:34.10-0:39.10",
+        "what": "Écran final immobile",
+        "technique": "maintien 5 s"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille 110,1 BPM (netteté 4,87), temps à 0,183 s + k × 0,545 s, soit toutes les 16,35 im à 30 fps, demi-temps toutes les 8,17 im ; la partie 23-35 s mesurée seule donne 110,2 BPM, la partie 0-14 s 73,2 BPM (accents pointés tous les 1,5 temps, même grille). La piste a une attaque toutes les ≈ 4 im (doubles-croches) : les « 4 coupes sur 4 à 50 ms d'une attaque » ne prouvent rien, et à 30 fps une fenêtre de ±2 im autour des temps et demi-temps couvre 61 % des images. Comptage à ±1 im environ (hasard ≈ 37 %), un événement par geste : 11 sur 20 (attendu 7,4) ; sur les seuls temps, 7 sur 20 (hasard 18 %, attendu 3,6) : excès faible, à la limite du hasard. Calés : remplissage du logo f22 (temps +0,2 im, juste avant l'entrée de la musique à 0,79 s), « Meet the Muse » f30 (demi-temps 0,0), « connector tracker. » f37 (temps −1,2), « Understand. » f137 (temps +0,7), coupe du recouvrement f209 (demi-temps −0,8), libellé Instagram f397 (temps −0,9), iris vert : point f741 (temps −0,2), coupe f749 (demi-temps −0,3), titre « Compare » f758 (temps +0,5) ; cartes Claude f783 et Grok f791 (+0,9 / +0,8) ; iris blanc : point f962 (demi-temps +0,1), coupe f970 (temps −0,1). Libres : iris bleu (coupe f124, temps +4,1, une double-croche à côté), « Stay updated. » f148, « Track new connectors. » f213, effacement radial f384 (+2,5), cartes Muse f769 et ChatGPT f777 (≈ ±3,5), surbrillances toutes les ≈ 0,75 s (≈ 1,4 temps), morph f939 (+1,6), « Daily updates. » f983 (−3,4). Indice automatique : aucune synchro (départs R = 0,09, p = 0,89 ; corrélation aux attaques z = 1,52).",
+    "synced": [
+      "apparitions",
+      "texte",
+      "coupes"
+    ],
+    "style_match": "Électro-pop légère à 110 BPM (probable), doubles-croches nerveuses : le ton optimiste colle au SaaS, mais courbes douces et longs maintiens ignorent cette pulsation serrée.",
+    "how_built": "Le prompt (une ligne) ne parle ni de musique ni de tempo ; pile Remotion, piste probablement ajoutée par l'auteur. Les écarts entre transitions ne sont pas des multiples du temps (5,2 / 10,7 / 10,8 / 11,5 / 13,5 temps) et les décalages internes sont écrits en images fixes (13 im, 7-8 im, 0,75 s) : l'animation a été minutée en images, pas en temps musicaux. Les irises durent 8 im, presque un demi-temps (8,17 im) : deux sur trois tombent pile sur la grille, le premier à une double-croche près. Calage probablement en partie fortuit, ou obtenu en choisissant le point de départ de la piste ; rien de systématique à reprendre tel quel."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Logo tracé, rempli puis réduit",
+      "name_en": "Logo draw-on, fill and shrink",
+      "t": "0:00.00-0:01.13",
+      "frames": "f0-f34",
+      "fps": 30,
+      "mechanics": "Le contour du « m » gribouillé de Muse (trait double ≈ 2 px, bleu) se trace en 6 im (f0-f6) au centre, ≈ 23 % de la hauteur, puis reste en contour 15 im (f7-f21). De f22 à f30 le remplissage passe de #A7CAF0 à #0667E0 (8 im) pendant que le logo rétrécit ×0,37 (23 % → 8,5 % de la hauteur) et monte de y ≈ 45 % à 27,5 % en 13 im (f21-f34 = 0,43 s) : pas de 2 à 2,5 % puis 0,5 % par image, ease-out (power3 probable). Le remplissage démarre sur le temps f21,8, juste avant le premier coup de la piste (0,79 s, +36,5 dB). Le logo libère la place du titre, qui monte aussitôt dessous.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 0,
+        "to": 34,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée masquée avec fondu",
+      "name_en": "Masked line rise with fade",
+      "t": "0:04.10-0:05.30",
+      "frames": "f123-f160",
+      "fps": 30,
+      "mechanics": "Mesure sur « Discover. » : le haut des lettres passe de y = 35 % à 26 % (≈ 9 % de la hauteur, une hauteur de ligne) en 6 im pour 80 % du trajet, posé vers 12 im (0,4 s) ; le bas reste coupé par un masque horizontal à y ≈ 37 % pendant la montée ; opacité ≈ 40 % → 100 % en 6 im. Pas de 2, 2, 1, 1, 1, 1, 0 % = ease-out (expo ou power3). Lignes décalées de 13 im (0,43 s) : f123, f137, ≈ f149. Même recette sur tous les titres : « Meet the Muse » f30 puis « connector tracker. » f37 (7 im d'écart), « Track new connectors. » f213-f219, « Understand what it can do. » f400-f405, « Compare the ecosystems. » f758-f763, « Daily updates. » f983-f987.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f124.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris plein à la couleur du plan suivant",
+      "name_en": "Solid iris wipe into the next background",
+      "t": "0:03.87-0:04.13",
+      "frames": "f116-f124",
+      "fps": 30,
+      "mechanics": "Un point bleu apparaît au centre du titre (x 50 %, y 55 %) et grossit : diamètre 2, 7, 12, 21, 33, 52, 81 % de la hauteur puis plus de 100 % (f116-f123), soit ×1,57 par image = croissance exponentielle (expo-in), 8 im = 0,27 s. Sa couleur #0057C2 est celle du fond du plan suivant : à f124 le cercle couvre et le nouveau plan est déjà là, texte en train de monter. Pas de flou. Repris tel quel à 24,70 s (vert forêt #0B231B, f741-f749, ×1,5 à ×2,2 par image) et à 32,03 s (blanc #F8FBF8, f961-f970, depuis la rangée de pastilles). Ce premier iris est le seul hors grille (coupe 4 im après le temps).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f124.jpg, microM-003-cut-f749.jpg, microM-005-cut-f970.jpg",
+      "illus": {
+        "from": 114,
+        "to": 125,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Recouvrement par le bas en ease-in-out",
+      "name_en": "Bottom cover slide (ease-in-out)",
+      "t": "0:06.73-0:07.23",
+      "frames": "f202-f217",
+      "fps": 30,
+      "mechanics": "Un calque blanc monte du bas et recouvre le plan bleu, qui reste immobile (recouvrement, pas poussée). Part couverte en % de la hauteur : 1, 3, 5, 8, 13, 20, 31, 50, 68, 80, 87, 91,5, 94,5, 97, 98,5 (f202-f216) : ease-in-out cubique sur 15 im (0,5 s), pointe à ≈ 19 % par image vers f208-f210. Le calque apporte la carte « Muse connectors » déjà inclinée en perspective. Coupe détectée f209, sur une attaque audio (6,978 s) et 1 im avant un demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f209.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Carte d'interface inclinée qui se pose à plat",
+      "name_en": "Tilted UI card settling flat",
+      "t": "0:06.97-0:09.00",
+      "frames": "f209-f270",
+      "fps": 30,
+      "mechanics": "La carte (≈ 70 % de la largeur, coins ≈ 16 px, ombre douce) arrive basculée en perspective (rotateX ≈ 15-20°, rotateZ ≈ −4°, probable d'après sa forme trapézoïdale) et se redresse en ≈ 2 s avec une longue fin amortie (ease-out) ; les lignes du tableau apparaissent pendant qu'elle se pose. Donne de la profondeur à une maquette plate sans caméra 3D.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Lignes de tableau en cascade",
+      "name_en": "Staggered table rows",
+      "t": "0:07.60-0:09.50",
+      "frames": "f228-f285",
+      "fps": 30,
+      "mechanics": "Trois lignes (Instagram, Shopify, Granola) entrent une à une, fondu + montée d'≈ 2 % de la hauteur, à ≈ 0,55 s d'intervalle (≈ un temps à 110 BPM, probable, non vérifié image par image). Chaque ligne : icône ≈ 3,5 % de la hauteur dans un carré arrondi, nom, catégorie en gris, pastille verte « • New on Muse », lien « Explore connector → ». Légende « • A growing ecosystem. One place to follow it. » en bas à gauche à 9,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur puis état de survol",
+      "name_en": "Cursor and hover state",
+      "t": "0:10.00-0:12.00",
+      "frames": "f300-f360",
+      "fps": 30,
+      "mechanics": "Une flèche noire arrive sur « Explore connector » de la ligne Instagram vers 10,0 s ; vers 10,5 s la ligne prend un contour bleu ≈ 1,5 px et un fond #EBF2FD (survol). Aucun clic ni pression visible, puis 1,5 s de maintien avant la poussée avant.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée avant sur la carte",
+      "name_en": "Push-in on the card",
+      "t": "0:12.03-0:12.57",
+      "frames": "f361-f377",
+      "fps": 30,
+      "mechanics": "La carte passe de 73 % à 85 % de la largeur (×1,16) en 16 im (0,53 s), ease-out ; le titre « Track new connectors. » descend à ≈ 25 % d'opacité (f366-f374) puis disparaît vers f386. Simple mise à l'échelle 2D, sans flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effacement radial autour de l'élément partagé",
+      "name_en": "Radial erase around a shared element",
+      "t": "0:12.80-0:13.50",
+      "frames": "f384-f405",
+      "fps": 30,
+      "mechanics": "Un disque couleur fond (#F8FCF8) naît sur l'icône Instagram (x ≈ 12 %, y ≈ 47 %) et efface la carte en 6 im (f384-f390) ; l'icône, au-dessus, survit seule. Elle grossit ≈ ×1,25 et glisse vers (14 %, 33 %) pendant que la nouvelle carte se construit autour : libellé « Instagram » f397, contour f398-f399, titre « Understand what it can do. » qui monte f400-f405. Raccord par élément partagé (shared element) : on plonge dans la ligne choisie sans coupe.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 382,
+        "to": 405,
+        "n": 8
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arborescence nœud → cartes",
+      "name_en": "Node-to-cards branch diagram",
+      "t": "0:13.50-0:15.20",
+      "frames": "f405-f456",
+      "fps": 30,
+      "mechanics": "Carte Instagram à gauche (x ≈ 13-31 %), nœud rond à icône de lien au centre (x ≈ 38 %), trois cartes de capacités à droite (x ≈ 55-90 %) : « Profile information », « Posts & media », « Account insights », numérotées 01-03. Les cartes glissent depuis la droite en fondu à 14,0 / 14,5 / 15,0 s (décalage ≈ 15 im = 0,5 s) ; les branches courbes (Bézier, trait gris-bleu ≈ 1 px) se tracent du nœud vers chaque carte.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Paquets qui circulent sur les branches",
+      "name_en": "Flow dots along paths",
+      "t": "0:15.20-0:18.50",
+      "frames": "f456-f555",
+      "fps": 30,
+      "mechanics": "Petits points bleus (≈ 0,6 % de la hauteur) qui parcourent les branches du nœud vers les cartes, ≈ 1 s par trajet, en boucle. C'est le seul mouvement de 13,7 à 18,57 s : 4,9 s de maintien détecté. Bonne idée pour faire vivre un schéma, insuffisante pour tenir 5 s.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au fond",
+      "name_en": "Fade through background",
+      "t": "0:18.50-0:19.50",
+      "frames": "f555-f585",
+      "fps": 30,
+      "mechanics": "Le schéma entier s'efface (≈ 10 % d'opacité à 19,0 s) puis la scène suivante apparaît en fondu + montée (titre, cartes basculées). ≈ 1 s sans geste fort : seule transition non motivée de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Recherche tapée",
+      "name_en": "Typed search query",
+      "t": "0:20.00-0:22.00",
+      "frames": "f600-f660",
+      "fps": 30,
+      "mechanics": "Champ « Explore your category » (pilule ≈ 28 % de la largeur, loupe) ; la saisie « Social & marketing » (18 caractères) se tape entre ≈ 20,5 et 21,5 s, soit ≈ 18 caractères par seconde (≈ 1,7 im par caractère) ; une puce « Muse » apparaît à droite du champ à 22,0 s, comme une validation.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Nuage de cartes filtré puis aligné",
+      "name_en": "Scatter-to-row filter (FLIP)",
+      "t": "0:19.50-0:22.50",
+      "frames": "f585-f675",
+      "fps": 30,
+      "mechanics": "Six cartes de plateformes (Facebook, Instagram, Pinterest, Shopify, Granola, Notion) flottent en désordre, inclinées de ±5 à 10°, à des profondeurs différentes (Notion en fantôme). Après la saisie, les cartes hors sujet (Shopify, Granola, Notion) s'effacent en tombant, les trois retenues se redressent et s'alignent en rangée sous le champ (≈ 0,7 s, 21,6-22,5 s), avec une pastille verte « live » et des traits d'arborescence depuis la barre. La mascotte surgit en bas à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Cartes distribuées en 3D",
+      "name_en": "3D card deal",
+      "t": "0:25.63-0:27.40",
+      "frames": "f769-f822",
+      "fps": 30,
+      "mechanics": "Quatre cartes (Muse, ChatGPT, Claude, Grok ; ≈ 16 % de la largeur × 36 % de la hauteur) apparaissent f769, f777, f783, f791 (décalage ≈ 7-8 im = 0,25 s). Chacune passe de 0 à 100 % d'opacité en ≈ 8 im en partant basculée (rotateY ≈ 40°, rotateZ ≈ −8°, déduits de la largeur apparente 12 % → 16 %) et se pose à plat vers f822 : ≈ 1,7 s de fin amortie (ease-out long). Effet de cartes posées sur une table, sans rebond.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Surbrillance et reflet qui sautent de carte en carte",
+      "name_en": "Hopping focus highlight with sheen",
+      "t": "0:27.87-0:30.70",
+      "frames": "f836-f921",
+      "fps": 30,
+      "mechanics": "Contour bleu 2 px + halo, et reflet diagonal clair qui traverse la carte, de Muse (27,9 s) à ChatGPT (≈ 28,9 s), Claude (≈ 29,5 s) puis Grok (≈ 30,4 s) : ≈ 0,75 s par carte, soit ≈ 1,4 temps, donc hors grille. Légende « See who's live across Muse, ChatGPT, Claude and Grok. » à 27,9 s. À caler sur un saut par temps.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cartes changées en pastilles",
+      "name_en": "Card-to-chip morph",
+      "t": "0:31.00-0:31.67",
+      "frames": "f930-f950",
+      "fps": 30,
+      "mechanics": "Mesure sur la carte Muse : hauteur 36 → 7 % du cadre, largeur 16 → 11 %, bord haut de y = 36 % à 57 % ; 20 im (0,67 s), ease-in-out (0 à 1 % par image au début, ≈ 3 % par image f937-f941, 1 % à la fin). La rangée se resserre vers le centre ; le contenu passe de la carte verticale (logo, nom, lien) à la pastille horizontale (icône + nom). Le titre descend à ≈ 20 % d'opacité. Pic de mouvement f939, 1,6 im après un temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f939.jpg",
+      "illus": {
+        "from": 928,
+        "to": 952,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Éléments persistants à travers l'iris",
+      "name_en": "Persistent elements across an iris",
+      "t": "0:32.03-0:32.80",
+      "frames": "f961-f985",
+      "fps": 30,
+      "mechanics": "L'iris blanc part du centre de la rangée de pastilles (point f961-f962, couvre f969-f970 ; diamètres 4, 6, 8, 14, 21, 32, 47, 68 % de la hauteur, ×1,5 par image). Les quatre pastilles restent à leur place dans l'écran final, où la mascotte et le logo Muse sont déjà posés : la coupe se lit comme un changement de fond, pas de scène. Point sur le demi-temps (f962,0), coupe sur le temps (f970,1).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f970.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Dégradé vert tramé en demi-teinte",
+      "name_en": "Dithered halftone gradient",
+      "t": "0:00.00-0:39.10",
+      "frames": "f0-f1170",
+      "fps": 30,
+      "mechanics": "Fond blanc menthe #F8FCF8 traversé de bandes vertes floues en diagonale (#A1C2AF à #E8F5EA, reflets jaunes) rendues en trame de points et de petits glyphes (dither) qui s'éclaircit vers le centre. Variante sombre au chapitre 04 : #0A221A, même bande tramée + anneaux concentriques fins (≈ 10 % d'opacité) au bas du cadre. Quasi immobile : il ne compense pas les maintiens. Une lente dérive l'aurait fait vivre.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage éditorial constant",
+      "name_en": "Persistent editorial chrome",
+      "t": "0:00.00-0:39.10",
+      "frames": "f0-f1170",
+      "fps": 30,
+      "mechanics": "Sur chaque plan : logo « Agent Discoverability » + fantôme en haut à gauche, « Muse | MCP ECOSYSTEM TRACKER » en haut à droite, « AGENTDISCOVERABILITY.COM » en bas à gauche, étiquette de section en bas à droite (« ILLUSTRATIVE FEATURE PREVIEW », « STAY IN THE LOOP »), en mono capitales ≈ 1 % de la hauteur, marges ≈ 4,5 % ; sourcil numéroté au-dessus de chaque titre (« • 01 / FOLLOW THE LAUNCHES » … « • 04 / SEE THE BIGGER PICTURE ») en mono vert sourd.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre bicolore à point final",
+      "name_en": "Two-tone headline with full stop",
+      "t": "0:01.00-0:34.00",
+      "frames": "f30-f1020",
+      "fps": 30,
+      "mechanics": "Chaque titre sépare une partie neutre (#14201B) et une partie accent (#0163DD) : « Meet the Muse / connector tracker. », « Track new connectors. », « Understand what it can do. », « Who's going live in your niche? », « Compare the ecosystems. » (bleu clair #87B8FE sur fond sombre), « Daily updates. / Straight to your inbox. ». Grotesque géométrique (Manrope probable) Medium, interlettrage ≈ −3 %, 6 à 10 % de la hauteur ; alignés à gauche (x ≈ 6-11 %) aux chapitres 0 et 01, centrés ensuite.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Liste numérotée sur aplat avec filigrane",
+      "name_en": "Numbered list on solid color with logo watermark",
+      "t": "0:04.13-0:06.97",
+      "frames": "f124-f209",
+      "fps": 30,
+      "mechanics": "Sur bleu #0057C2 : trois mots blancs ≈ 9 % de la hauteur alignés à gauche (x ≈ 11 %, y ≈ 26-48 %), numéros « 01-03 » en mono minuscule à x ≈ 8 % ; filet horizontal blanc à ≈ 30 % d'opacité tracé de gauche à droite sous la liste (y ≈ 68 %, x 9-56 %, ≈ 5,0-5,5 s) ; grand « m » de Muse en contour fin à ≈ 15 % d'opacité à droite (≈ 45 % de la hauteur) ; mascotte qui surgit en bas à droite à 5,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Couleur de fond par chapitre",
+      "name_en": "Per-chapter background color",
+      "t": "0:00.00-0:39.10",
+      "frames": "f0-f1170",
+      "fps": 30,
+      "mechanics": "Blanc menthe (accroche) → bleu roi #0057C2 (trois piliers) → blanc (chapitres 01 à 03) → vert forêt #0A221A (04, comparatif) → blanc (CTA). Chaque bascule passe par un iris de la couleur d'arrivée, sauf le retour au blanc à 7 s (recouvrement par le bas). Le changement de fond marque le chapitre mieux que n'importe quel titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Orbite et icônes en satellite",
+      "name_en": "Orbit ring with satellite icons",
+      "t": "0:00.93-0:03.85",
+      "frames": "f28-f115",
+      "fps": 30,
+      "mechanics": "Autour du titre, une ellipse en pointillés (≈ 70 % × 45 % du cadre) et une seconde en trait fin ; un point bleu à halo la parcourt lentement. Six icônes (Instagram, Facebook, Shopify, Granola, une icône rouge, la mascotte) surgissent en échelle 0 → 100 % de f28 à f46 (≈ 3 im d'écart) puis flottent à peine. C'est tout ce qui bouge pendant 2 s de maintien (1,9-3,83 s).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Mascotte en ponctuation",
+      "name_en": "Mascot punctuation",
+      "t": "0:01.33-0:39.10",
+      "frames": "f40-f1170",
+      "fps": 30,
+      "mechanics": "Le fantôme vert #36CE99 de la marque Agent Discoverability (≈ 6 % de la hauteur) surgit en bas à droite à 1,33 s, 5,5 s et 22,5 s, puis signe le logo final à côté de Muse. Apparition en pop, aucun jeu d'acteur (ni clignement, ni rebond, ni regard).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens longs entre les gestes",
+      "name_en": "Long holds between gestures",
+      "t": "0:01.90-0:39.10",
+      "frames": "f57-f1170",
+      "fps": 30,
+      "mechanics": "65 % de la durée en maintiens ≥ 0,4 s (13 maintiens, 25,4 s) : 1,9-3,83 s (titre), 8,67-10,33 et 10,4-11,93 s (tableau), 13,7-18,57 s (4,9 s sur le schéma), 22,23-24,7 s (2,5 s), 34,07-39,0 s (5 s d'écran final). Les gestes eux-mêmes durent 8 à 20 im : la vidéo alterne rafales courtes et attentes, loin d'un geste toutes les 0,5 à 1 s.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche, trois piliers, quatre chapitres numérotés, CTA",
+      "name_en": "Hook, pillars, numbered chapters, CTA",
+      "t": "0:00.00-0:39.10",
+      "frames": "f0-f1170",
+      "fps": 30,
+      "mechanics": "0-4,1 s accroche (logo + « Meet the Muse connector tracker. ») ; 4,1-7 s promesse en trois mots (« Discover. Understand. Stay updated. ») ; puis un chapitre par promesse : 01 Track (tableau), 02 Understand (arborescence), 03 Find (recherche filtrée), 04 Compare (cartes) ; 32,3-39,1 s CTA « Sign up for daily emails » + URL. Structure de page d'accueil transposée en vidéo : claire, mais sans montée d'intensité ni climax.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Iris de la durée d'un demi-temps",
+      "name_en": "Half-beat iris",
+      "t": "0:24.70-0:25.27",
+      "frames": "f741-f758",
+      "fps": 30,
+      "mechanics": "Probable : l'iris vert naît sur le temps (f741, −0,2 im de la barre bleue), couvre et coupe sur le demi-temps suivant (f749, −0,3 im), et le titre « Compare the ecosystems. » démarre sur le temps d'après (f758, +0,5 im) ; l'iris blanc fait de même (point f962 sur le demi-temps, coupe f970 sur le temps). L'iris dure 8 im, presque un demi-temps à 110 BPM (8,17 im). Le premier iris (bleu, coupe f124) tombe une double-croche à côté : rien n'était systématique. Recette à généraliser : point sur un temps, couverture sur le demi-temps, titre sur le temps suivant.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f749.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Logo rempli sur l'entrée de la musique",
+      "name_en": "Logo fill on the music entry",
+      "t": "0:00.73-0:01.25",
+      "frames": "f22-f37",
+      "fps": 30,
+      "mechanics": "Probable : le remplissage du logo démarre f22 (temps f21,8), au moment où la piste entre (premier coup à 0,79 s, +36,5 dB) ; « Meet the Muse » part f30 (demi-temps f30,0, attaque 0,975 s) et « connector tracker. » f37 (temps f38,2, attaque forte 1,242 s). Trois gestes d'ouverture sur trois points de la grille, puis le calage se perd dès le premier iris.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "« Make this » : la vidéo part d'un contenu fourni (page ou visuel du tracker Muse d'Agent Discoverability). Textes, mascotte, logos ChatGPT / Claude / Grok, sourcils et URL en viennent ; Claude a rejoué le produit fidèlement plutôt que d'inventer un spectacle."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Showreel… go all out » a produit une démo soignée mais sage : sans consigne mesurable (densité, durée maximale d'un écran, rôle de la musique), le modèle privilégie la lisibilité de l'interface et tient chaque écran 2 à 5 s."
+    },
+    {
+      "kind": "structure",
+      "insight": "Claude a structuré en chapitres numérotés (01-04) avec sourcils « • 0X / … » et un CTA : réflexe de page web transposé en vidéo, efficace pour la clarté, mais sans courbe d'intensité."
+    },
+    {
+      "kind": "build",
+      "insight": "Remotion : courbes propres et déterministes, aucun flou de mouvement ; décalages écrits en images fixes (13, 7-8 im), d'où l'absence de calage musical systématique."
+    },
+    {
+      "kind": "other",
+      "insight": "Aucune musique demandée : piste posée ensuite, avec quelques coïncidences (deux irises sur la grille, ouverture sur les premiers temps). Il fallait donner le BPM et demander de caler transitions, titres et surbrillances sur les temps."
+    }
+  ],
+  "steal": [
+    "Iris de transition : un point central grossit ×1,5 par image pendant 8 im, couleur du fond suivant ; coupe quand il couvre, idéalement sur un temps.",
+    "Pour plonger d'une liste dans un détail, efface tout avec un disque couleur fond né sur l'icône choisie ; l'icône reste et devient l'en-tête de l'écran suivant.",
+    "Change les cartes en pastilles (hauteur ÷5, ease-in-out 20 im) et garde-les à travers la transition : l'écran final récapitule avec des éléments déjà vus.",
+    "Recouvrement par le bas : le nouveau calque monte en ease-in-out cubique sur 15 im, l'ancien reste immobile ; la carte arrive inclinée puis se pose à plat.",
+    "Habillage éditorial fixe : sourcil numéroté « • 01 / … » en mono capitales, titre bicolore noir/bleu à point final, logos et URL dans les coins."
+  ],
+  "flaws": [
+    "65 % de maintiens : 2 s sur le titre, 4,9 s sur le schéma, 2,5 s sur la rangée filtrée, 5 s d'écran final.",
+    "« Showreel, go all out » non suivi : démo SaaS sage, même montée masquée sur chaque titre, aucun flou de mouvement.",
+    "Décalages fixes en images (13 im entre lignes, 8 im entre cartes, 0,75 s par surbrillance) sans rapport avec le temps de 16,35 im.",
+    "Iris plein utilisé trois fois et fondu au fond à 18,7 s : la grammaire de transitions s'essouffle en seconde moitié.",
+    "Textes d'interface vers 1 % de la hauteur (catégories, sous-titres de cartes, URL) : illisibles hors plein écran."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Vidéo native à 30 fps ; les cinq moments forts (irises, recouvrement, effacement radial, morph carte → pastille, cartes 3D) sont couverts par les planches et mesurés ici. Le reste est maintien ou montée masquée répétée."
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "slug": "twoclipping-221cab",
+  "title": "Photo print app launch film",
+  "handle": "@twoclipping",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Vrai plan-séquence où chaque scène naît de l'objet précédent, verre liquide, iris, ressorts et flou de mouvement à 60 fps ; interface trop rapide à lire, halos gris sur les morphs, gestes peu calés.",
+  "summary": "Film de lancement carré de 29 s pour « develop. », appli qui transforme une photo d'écran en tirage encadré. Un seul plan continu : le logo se comprime dans son point, le point devient pilule, iris, grille, verre liquide, écran verrouillé, téléphone, Mac, Safari, fiche produit, commande, mur réel, puis retour exact au logo. Morphing enchaîné d'un niveau rare, desservi par un débit trop dense.",
+  "prompt_vs_result": [
+    "Prompt très long : film keynote en un seul plan, chaque scène faite de la précédente, liste d'interdits (fondu, flou, lueur, maintien > 1 s), curseur qui clique, verre liquide, zooms type Screen Studio, storyboard battu à 120 BPM et recette technique complète.",
+    "Claude a choisi seul la durée de chaque geste, le fond lilas à rubans bleus de la scène Mac, la mise en page de la fiche produit, les textes d'interface (« Golden hour », « motion study 04 », 129 $) et le trajet du curseur.",
+    "Le storyboard en verbes (comprimer, inonder, contracter, pousser) et les interdits ont parfaitement cadré l'enchaînement. Manquaient : une exigence vérifiable de calage au temps, un plafond de densité et une taille minimale de texte d'interface."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EEEEEA", "role": "toile blanc cassé chaud (ouverture, fin)"},
+      {"hex": "#0A0A0B", "role": "noir de l'interface : pilule, iris, boutons, inondation"},
+      {"hex": "#FFFFFF", "role": "reflets du verre liquide, libellés sur noir"},
+      {"hex": "#6E6E6E", "role": "slogan et textes secondaires gris"},
+      {"hex": "#E9E7FA", "role": "fond lilas de la scène téléphone / Mac"},
+      {"hex": "#3355DD", "role": "rubans de soie bleus du fond de scène"},
+      {"hex": "#B48A5C", "role": "moulure chêne du cadre"},
+      {"hex": "#F2A24A", "role": "lumière d'heure dorée sur la photo de l'arche"},
+      {"hex": "#5E7A4E", "role": "vert brumeux de la photo héroïne (astronaute)"},
+      {"hex": "#E2541F", "role": "orange des barres lumineuses de l'astronaute et de la porte rouge"}
+    ],
+    "type": "Archivo Expanded ExtraBold (wdth 125, 800) en bas de casse : mot-symbole ≈ 78 % de la largeur, titres ≈ 4 % de la hauteur. Geist pour l'interface, 1 à 2,5 %. Heure « 9:41 » en verre ≈ 20 %.",
+    "texture": "Flou de mouvement directionnel réel (4 sous-images mélangées par image), verre liquide à réfraction et bords chromatiques, ombres portées douces sous fenêtres et cartes, halo gris flou autour des formes noires en morphing (artefact), vraie vidéo de mur avec ombres de plantes.",
+    "style": "Keynote Apple, morphing continu, verre liquide",
+    "coherence": "Le système tient par la règle « rien n'apparaît, tout se transforme » : un seul objet noir (point, pilule, iris, bouton, cercle d'inondation) traverse le film, et le même curseur pilote chaque changement. Il se fragilise quand les photos IA et la scène Mac lilas changent d'univers en moins d'une seconde."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Morceau à 120 BPM (grille réelle : grosse caisse sur x,09 s, caisse claire sur x,59 s) ; l'intro 0-5,7 s se lit à 80 BPM (sensation demi-temps), le drop arrive à 5,74 s (+22 dB dans les basses), une accalmie (breakdown) occupe 22,5-26,5 s, le retour du rythme vers 27,8 s. Aucune vraie coupe : les 6 coupes détectées sont des morphs ultra-rapides (f187 cercle → carré, f349 zoom dans la vignette, f1307 inondation noire, f1333 noir → mur, f1589 iris, f1603 contraction). Environ 45 gestes en 29 s, soit un toutes les 0,65 s : densité conforme à la grammaire 1600. Maintiens statiques 22 % mais aucun au-delà de 1,1 s (6,22-7,27 s pendant que les lettres de verre apparaissent, 12,18-13,1 s sur l'écran verrouillé, 27,9-29 s fin). Les gestes durent 7 à 25 im (0,12 à 0,42 s). En revanche les départs et atterrissages ne tombent pas sur la grille des temps (voir music) : la synchro est structurelle, pas battue.",
+    "timeline": [
+      {"t": "0:00-0:00.9", "what": "« develop. » noir sur blanc cassé, slogan gris ; le mot se comprime vers son propre point en 20 im avec flou de mouvement horizontal", "technique": "accordéon du mot-symbole dans son point"},
+      {"t": "0:00.9-0:02.4", "what": "Le point s'étire en pilule noire qui glisse au centre (léger dépassement), « Develop » monte d'une ligne de masque à l'intérieur ; le curseur arrive et clique", "technique": "point → pilule + libellé masqué"},
+      {"t": "0:02.4-0:03.1", "what": "Six lames d'iris se ferment sur le libellé et se rouvrent en hexagone sur une photo ronde (porte rouge)", "technique": "iris à 6 lames"},
+      {"t": "0:03.1-0:05.7", "what": "Le cercle devient carré arrondi (dépassement), rétrécit, la grille 3 × 3 se déplie derrière lui (croix puis coins), puis se réorganise en bento (l'arche passe en 2 × 2)", "technique": "grille qui se déplie + bento"},
+      {"t": "0:05.7-0:06.0", "what": "Clic sur l'arche, zoom ×3 en 13 im avec flou radial : la vignette remplit le cadre au drop", "technique": "zoom-clic sur le drop"},
+      {"t": "0:06.0-0:08.5", "what": "« relight. » en lettres de verre pop une à une, fond en goutte, la goutte s'étire en barre d'outils de verre ; clic sur le cœur, clic sur Réglages", "technique": "mot de verre → goutte → barre d'outils"},
+      {"t": "0:08.5-0:10.2", "what": "La barre devient curseur « Golden hour » ; le glissé de 6 à 100 fait passer la photo du jour à l'heure dorée", "technique": "curseur qui rallume la photo"},
+      {"t": "0:10.2-0:13.1", "what": "Le bouton du curseur devient lentille de verre, puis orbe contenant la photo suivante ; l'orbe envahit le cadre en 7 im : écran verrouillé avec heure en verre, la barre d'accueil s'étire en lecteur de musique", "technique": "lentille → orbe → écran verrouillé"},
+      {"t": "0:13.1-0:15.0", "what": "Recul : l'écran devient téléphone (le cadre pousse depuis le bord) sur fond lilas ; la Dynamic Island s'étire comme un liquide, se détache et devient fenêtre Mac qui s'enroule en store sur Safari", "technique": "recul + Dynamic Island liquide → fenêtre"},
+      {"t": "0:15.0-0:17.4", "what": "Appui long sur le fond d'écran, glisser-déposer vers Safari, la page pousse et l'image devient le héros de « from screen to wall. »", "technique": "glisser-déposer + titre masqué"},
+      {"t": "0:17.4-0:20.0", "what": "Défilement : le héros se transforme en tirage encadré (passe-partout et moulure poussent du bord) ; choix du cadre noir, de la taille 70 × 100, clic « Order print » avec zoom sur le bouton", "technique": "morph héros → produit + zoom Screen Studio"},
+      {"t": "0:20.0-0:22.2", "what": "La même forme noire passe par Ordered ✓, Printing 100 %, puis un cercle ✓ qui inonde le cadre en 8 im ; noir tenu 0,37 s", "technique": "forme d'état unique + inondation noire"},
+      {"t": "0:22.2-0:26.0", "what": "Le noir se contracte en tirage encadré sur une vraie vidéo de mur à ombres de plantes ; des mains le décrochent et l'approchent, poussée jusqu'au plein cadre de la photo", "technique": "incrustation dans une vraie vidéo"},
+      {"t": "0:26.0-0:29.0", "what": "Iris qui se ferme, noir, le noir se contracte en pilule, puis en point, et les lettres jaillissent avec flou pour reformer « develop. » ; dernière image = première", "technique": "boucle inversée"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Trois points de structure sont calés : le zoom dans la vignette démarre à f343 (5,72 s) exactement sur le drop (attaque des basses à 5,74 s) et atterrit à f355 ; la scène du mur (22,5-26 s) tombe dans le breakdown (énergie −5 dB, grosse caisse clairsemée) ; les lettres du logo atterrissent vers f1665-f1680, au retour du rythme (attaques basses 27,84 et 28,09 s). Au niveau du geste, rien n'est battu : 38 gestes clés comptés, 13 à ±2 im d'une barre bleue ou bleu clair (34 %, hasard 28 % avec les grilles par partie : 80 BPM sur 0-6 s et 22-29 s, 120 BPM sur 6-22 s) ; à ±3 im, 16 sur 38 (42 %, hasard 39 %). Exemples hors grille : clic iris f143, dépliage de la grille f224, réorganisation f300, défilement f1033, bouton « Order » f1183, contraction finale f1602. Exemples calés : iris qui s'ouvre f155, ✓ Ordered f1205, plein noir f1310, plein cadre de la photo f1548 (temps f1550). Les attaques audio fortes (0,82 ; 2,32 ; 3,58 ; 3,83 ; 7,58 ; 12,83 s) coïncident avec des gestes (fin de compression, clic, rétrécissement, dépliage, barre d'outils, clic lecture) : ce sont les effets sonores posés sur chaque événement. L'indice automatique (« drop à 1,09 s ») se trompe de drop.",
+    "synced": ["drop", "camera", "atterrissages"],
+    "style_match": "Pop électronique enjouée à 120 BPM avec drop et accalmie : colle aux ressorts vifs et au rythme serré ; l'accalmie sur le mur réel ralentit justement l'image.",
+    "how_built": "Le prompt imposait 120 BPM, 54 temps, « quelque chose sur chaque temps », le zoom sur le drop, le mur dans le breakdown, le retour du logo sur la reprise, et un effet sonore téléchargé par événement placé sur son pic mesuré. Les trois rendez-vous de structure ont été tenus ; le calage temps par temps non, probablement parce que les atterrissages dépendent de ressorts calculés (durée d'amortissement libre) et que la grille réelle du morceau est décalée de 0,09 s avec une intro en demi-temps. Les effets sonores, eux, suivent l'image par construction."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole qui se comprime dans son point",
+      "name_en": "Wordmark accordion squeeze into its period",
+      "t": "0:00.57-0:00.90",
+      "frames": "f34-f54",
+      "fps": 60,
+      "mechanics": "« develop. » (≈ 78 % de la largeur, centré à 42 % de la hauteur) se comprime vers son point final à droite (x ≈ 87 %) : chaque lettre avance vers le point du même facteur et son axe de largeur se resserre, les lettres restent jointives. 20 im (0,33 s), courbe ease-in (presque immobile f34-f38, largeur ≈ 35 % à f46, ≈ 10 % à f50, point seul à f54). Flou de mouvement horizontal net (4 sous-images). Le slogan a disparu avant (≤ f30). Le point reste immobile 14 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 30, "to": 56, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point qui s'étire en pilule, libellé qui monte d'un masque",
+      "name_en": "Dot-to-pill stretch with masked label rise",
+      "t": "0:01.15-0:01.90",
+      "frames": "f69-f114",
+      "fps": 60,
+      "mechanics": "Le point (Ø ≈ 1,5 %) s'étire vers la gauche en pilule noire de ≈ 42 % × 9 % tout en glissant jusqu'au centre : 13 im (f69-f82), flou de mouvement sur le bord arrière. Ressort : largeur 41 % à f82, 43 % à f86, retour à 41 % vers f106, dépassement ≈ 5 %. Le libellé blanc « Develop » (Geist, ≈ 2,5 % de la hauteur) monte d'une ligne de masque à l'intérieur en 7 im (f107-f114), sur un temps (f109,7).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris à six lames",
+      "name_en": "Six-blade iris wipe",
+      "t": "0:02.38-0:02.77",
+      "frames": "f143-f166",
+      "fps": 60,
+      "mechanics": "Au clic sur la pilule, six lames gris anthracite #2C2C2E aux arêtes claires se referment depuis le pourtour : la pilule devient un disque fermé (Ø ≈ 33 % de la largeur) en 7 im (f143-f150), reste fermée ≈ 5 im, puis s'ouvre en ouverture hexagonale sur une photo (porte rouge) en 11 im (f155-f166). L'ouverture tombe sur un demi-temps (f154,7). Réutilisé en miroir à la fin (f1585-f1592).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 140, "to": 168, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cercle qui devient carré arrondi puis rétrécit",
+      "name_en": "Circle-to-squircle morph with overshoot",
+      "t": "0:03.03-0:03.77",
+      "frames": "f182-f226",
+      "fps": 60,
+      "mechanics": "Le disque photo (Ø ≈ 33 %) se transforme en carré arrondi en grandissant à ≈ 76 % de la largeur en 10 im (f182-f192, ease-out), dépasse légèrement puis revient à ≈ 70 % (f193-f207), puis rétrécit à ≈ 30 % en 12 im (f214-f226) pour laisser naître la grille. Défaut : un anneau gris flou de ≈ 2 % entoure la forme pendant le morph (f183-f188), reste du filtre de fusion (goo).",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f187.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille qui se déplie depuis une vignette",
+      "name_en": "Grid unfolding from behind a tile",
+      "t": "0:03.73-0:04.23",
+      "frames": "f224-f254",
+      "fps": 60,
+      "mechanics": "Derrière la vignette centrale, 4 vignettes glissent en croix (haut, gauche, droite, bas) en ≈ 10 im (f224-f234), puis 4 coins sortent de derrière les vignettes latérales (f236-f250), flou de mouvement sur chaque glissement. Résultat : grille 3 × 3 de carrés arrondis ≈ 20 % de la largeur, gouttières ≈ 1,5 %. Comme une carte qu'on déplie, sans aucune apparition en fondu.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 222, "to": 252, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Réorganisation en bento",
+      "name_en": "Grid-to-bento reflow",
+      "t": "0:05.00-0:05.30",
+      "frames": "f300-f318",
+      "fps": 60,
+      "mechanics": "La vignette de l'arche grandit en 2 × 2 en haut à droite pendant que les autres glissent et rétrécissent pour libérer la place : 18 im (0,3 s), flou de mouvement, atterrissage sur un temps (f318 / f319,7). Toutes les vignettes bougent en même temps, pas de décalage.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom au clic dans une vignette, sur le drop",
+      "name_en": "Click-to-zoom into tile on the drop",
+      "t": "0:05.72-0:05.93",
+      "frames": "f343-f356",
+      "fps": 60,
+      "mechanics": "Clic du curseur sur l'arche, puis mise à l'échelle ×3 de toute la grille centrée sur la vignette : 13 im (0,22 s), ease-in-out, flou de mouvement radial très fort sur les vignettes voisines (f346-f352). La vignette remplit le cadre à f355 avec un liseré blanc d'une image, plein cadre net f356. Départ pile sur l'attaque du drop (5,74 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f349.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot en verre liquide lettre à lettre",
+      "name_en": "Liquid-glass letter pop",
+      "t": "0:06.23-0:06.63",
+      "frames": "f374-f398",
+      "fps": 60,
+      "mechanics": "« relight. » (≈ 8 % de la hauteur, haut du cadre à 28 %) apparaît lettre par lettre, ≈ 3 im entre lettres, chaque glyphe en verre qui réfracte le ciel (carte de distance par glyphe). Problème : verre clair sur ciel clair, le mot est presque illisible ; maintien ≈ 0,35 s.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Mot qui fond en goutte, goutte qui devient barre d'outils",
+      "name_en": "Word melts into droplet that stretches into a toolbar",
+      "t": "0:07.00-0:07.77",
+      "frames": "f420-f466",
+      "fps": 60,
+      "mechanics": "Les lettres de verre fondent et s'effacent (f420-f434), une goutte de verre (Ø ≈ 3 %) naît en bas au centre (f436-f442) et s'étire horizontalement en barre d'outils en pilule (≈ 40 % × 6 %) en ≈ 24 im ; les 4 icônes (partager, cœur, infos, réglages) apparaissent dedans. Zoom caméra ×1,3 simultané vers le bas (f442-f462). Puis clic sur le cœur (remplissage blanc à f474), clic sur Réglages et la barre s'allonge en curseur (f498-f510).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f449.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui rallume la photo",
+      "name_en": "Slider-driven relight",
+      "t": "0:08.50-0:10.00",
+      "frames": "f510-f600",
+      "fps": 60,
+      "mechanics": "Curseur de verre « Golden hour » pleine largeur (≈ 85 %) avec valeur à droite. Le curseur souris glisse le bouton de 6 à 100 ; la photo passe d'un ciel bleu à un coucher orangé, soleil dans l'arche, par mélange de deux prises alignées dont le dosage suit la valeur. Seul fondu de la vidéo, mais motivé par l'interaction.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bouton qui devient lentille puis orbe portant la scène suivante",
+      "name_en": "Knob-to-lens-to-orb scene reveal",
+      "t": "0:10.20-0:11.13",
+      "frames": "f612-f668",
+      "fps": 60,
+      "mechanics": "Le curseur de verre descend et s'efface (f612-f622) pendant que son bouton grossit en lentille de verre (Ø ≈ 45 %) qui glisse jusqu'au soleil de l'arche en réfractant l'image (f616-f636). Elle se soulève en orbe contenant la photo suivante (astronaute, croissant), puis l'orbe envahit le cadre en 7 im (f661-f668, ease-in), bord de verre visible au passage. Raccord par l'objet, aucune coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Écran verrouillé en verre et barre d'accueil qui devient lecteur",
+      "name_en": "Glass lock screen, home bar into music player",
+      "t": "0:11.20-0:13.10",
+      "frames": "f672-f786",
+      "fps": 60,
+      "mechanics": "Heure « 9:41 » en chiffres de verre ≈ 20 % de la hauteur sous la date blanche ; la barre d'accueil (trait blanc) s'étire en lecteur de musique en verre (« motion study 04 », précédent / lecture / suivant) ≈ 60 % de la largeur ; clic sur lecture à ≈ 12,83 s (attaque audio). Chiffres de verre peu contrastés sur la photo verte.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul de l'écran vers le téléphone, cadre qui pousse du bord",
+      "name_en": "Pull-back from screen to device",
+      "t": "0:13.13-0:13.53",
+      "frames": "f788-f812",
+      "fps": 60,
+      "mechanics": "L'écran plein cadre rétrécit à un téléphone de ≈ 44 % de la hauteur en 24 im (0,4 s), ease-out ; le fond lilas à rubans bleus apparaît autour. Le cadre noir du téléphone (≈ 1,5 %) et l'îlot poussent depuis le bord de l'écran à f800-f805, sur un temps (f799,7).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f792.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Dynamic Island liquide qui devient fenêtre Mac en store",
+      "name_en": "Liquid Dynamic Island into a rolling-blind window",
+      "t": "0:13.80-0:15.00",
+      "frames": "f828-f900",
+      "fps": 60,
+      "mechanics": "L'îlot s'étire vers la droite comme un liquide, s'amincit, se détache, vole et grossit en rectangle noir (≈ 38 % × 30 %) qui s'enroule vers le haut comme un store pour révéler une fenêtre Safari (page de démarrage, favoris colorés). Moins de 1,2 s pour trois métamorphoses : l'idée est forte mais à peine lisible à vitesse réelle.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Glisser-déposer d'un appareil à l'autre",
+      "name_en": "Cross-device drag and drop",
+      "t": "0:15.20-0:16.30",
+      "frames": "f912-f978",
+      "fps": 60,
+      "mechanics": "Appui long du curseur sur le fond d'écran du téléphone : une carte photo se soulève (inclinaison ≈ 8°, ombre), est traînée jusqu'à la fenêtre Safari et lâchée dans une zone pointillée avec pastille verte « + ». Le geste raconte la promesse du produit (de l'écran au tirage) sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte d'une ligne de masque",
+      "name_en": "Masked line rise",
+      "t": "0:16.28-0:16.60",
+      "frames": "f977-f996",
+      "fps": 60,
+      "mechanics": "La page pousse vers le spectateur (zoom ≈ ×1,4, téléphone qui sort à gauche) et « from screen / to wall. » (Archivo Expanded ExtraBold, ≈ 4 % de la hauteur, ferré à gauche) monte ligne par ligne derrière une ligne de masque : bas des lettres coupé net pendant 5-6 im, décalage ≈ 5 im entre les deux lignes, puis le paragraphe gris arrive. Aucune entrée en flou.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f982.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Défilement qui transforme le héros en tirage encadré",
+      "name_en": "Scroll morph: hero image into framed print",
+      "t": "0:17.22-0:17.58",
+      "frames": "f1033-f1055",
+      "fps": 60,
+      "mechanics": "La page défile vers le haut (flou vertical sur le texte f1033-f1037) ; l'image héros descend et se réduit dans la carte produit de gauche, puis le passe-partout blanc cassé et la moulure chêne #B48A5C poussent depuis le bord de la photo en ≈ 5 im (f1046-f1050). La fiche « the print » se construit autour (pastilles de cadre, tailles, 129 $, bouton noir).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1039.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui pilote chaque changement, zoom Screen Studio",
+      "name_en": "Cursor-driven actions with screen-studio zoom",
+      "t": "0:00-0:29",
+      "frames": "f0-f1741",
+      "fps": 60,
+      "mechanics": "Flèche macOS noire présente tout le film, qui grandit avec le zoom. Chaque changement est provoqué par un clic, un glissé ou un appui long réels (pilule, vignette, cœur, réglages, curseur, lecture, fond d'écran, pastille noire, taille 70 × 100, « Order print »). La caméra recadre sur l'action : sur le bouton « Order print », la carte glisse en haut à gauche et grossit ≈ ×1,3 en 12 im (f1188-f1200).",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1191.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Une seule forme noire pour tous les états de commande",
+      "name_en": "Single morphing status shape",
+      "t": "0:19.72-0:21.70",
+      "frames": "f1183-f1300",
+      "fps": 60,
+      "mechanics": "Le bouton « Order print » devient indicateur de chargement (arc qui tourne, f1183-f1200), puis « ✓ Ordered » monte d'un masque en 5 im (f1205-f1210, sur un demi-temps), la pilule s'allonge en « Printing 100 % » avec barre de progression, puis se rétracte en cercle ✓ (Ø ≈ 10 %, f1292-f1299). L'étape « On its way » avec camionnette n'est pas visible sur les planches, probablement très brève.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1191.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Inondation noire puis contraction sur la scène suivante",
+      "name_en": "Black flood and contract",
+      "t": "0:21.72-0:22.60",
+      "frames": "f1303-f1356",
+      "fps": 60,
+      "mechanics": "Le cercle ✓ grossit jusqu'à dépasser les coins en 8 im (f1303-f1311, ease-in, 0,13 s), plein noir pile sur un temps (f1310). Noir tenu 22 im (0,37 s), puis le noir se contracte en rectangle posé sur la vidéo du mur, qui devient le tirage encadré. Défauts : plus rapide que les 0,3 s demandés (la moitié du cadre change en 2-3 im) et halo gris flou de ≈ 3 % autour du cercle.",
+      "verdict": "adapter",
+      "evidence": "microM-010-cut-f1307.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Tirage incrusté dans une vraie vidéo",
+      "name_en": "Print composited into live footage",
+      "t": "0:22.50-0:26.00",
+      "frames": "f1350-f1560",
+      "fps": 60,
+      "mechanics": "Vidéo de stock : mur gris clair texturé, ombres de plantes mouvantes, puis des mains qui décrochent un cadre noir et l'approchent. La photo de l'astronaute est suivie et incrustée dans le passe-partout. Effet de réel fort (fin du parcours « de l'écran au mur »), mais image fantôme dédoublée dans le cadre vers 24,5 s (f1470), suivi en retard d'une image probable.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée dans le cadre jusqu'au plein cadre",
+      "name_en": "Push-in through the frame mat",
+      "t": "0:25.37-0:25.83",
+      "frames": "f1522-f1550",
+      "fps": 60,
+      "mechanics": "Le cadre tenu grossit jusqu'à ce que la moulure puis le passe-partout sortent du champ (f1530-f1548), ease-in-out, ≈ 28 im ; la photo est plein cadre à f1550, sur un temps (f1549,7). Le support physique se dissout dans l'image pour relancer la boucle.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f1537.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle inversée : iris, noir, pilule, point, lettres",
+      "name_en": "Reverse-chain seamless loop",
+      "t": "0:26.42-0:28.00",
+      "frames": "f1585-f1680",
+      "fps": 60,
+      "mechanics": "L'iris à 6 lames se ferme sur la photo en 7 im (f1585-f1592), noir 10 im, puis le noir plein cadre se contracte en carré arrondi (f1606 ≈ 60 % × 50 %) puis en pilule (f1616 ≈ 42 % × 14 %) en 14 im, ease-out ; la pilule se réduit en point et les lettres jaillissent du point vers la gauche avec flou de mouvement, posées vers f1665-f1680 au retour du rythme. Slogan qui monte, maintien 1,1 s. Dernière image identique à la première : boucle parfaite.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1603.jpg",
+      "illus": {"from": 1586, "to": 1623, "n": 7}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement par sous-images",
+      "name_en": "Subframe-blended motion blur",
+      "t": "0:00-0:29",
+      "frames": "f0-f1741",
+      "fps": 60,
+      "mechanics": "Chaque image de sortie mélange 4 sous-images (ffmpeg tmix) : flou directionnel naturel sur la compression du mot (f42-f50), l'étirement du point (f70-f82), le zoom dans la vignette (f346-f352), le défilement (f1033-f1037), le jaillissement final des lettres. Aucun flou ajouté à l'arrêt : les formes immobiles restent nettes.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f349.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ressorts analytiques et gestes courts",
+      "name_en": "Closed-form springs, short gestures",
+      "t": "0:00-0:29",
+      "frames": "f0-f1741",
+      "fps": 60,
+      "mechanics": "Les gestes durent 7 à 25 im (0,12-0,42 s) et s'enchaînent toutes les ≈ 0,65 s. Les atterrissages ont un petit dépassement de ressort (pilule +5 %, carré arrondi ≈ +8 %), jamais de rebond multiple. Les ressorts calculés laissent la durée d'amortissement libre, ce qui explique probablement le décalage avec la grille des temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rendez-vous musicaux de structure et bruitage par événement",
+      "name_en": "Structural music cues and per-event SFX",
+      "t": "0:05.72-0:28.00",
+      "frames": "f343-f1680",
+      "fps": 60,
+      "mechanics": "Trois rendez-vous tenus : zoom dans la vignette lancé sur l'attaque du drop (5,74 s), scène du mur dans le breakdown (22,5-26 s), lettres reformées au retour du rythme (≈ 27,8 s). Un effet sonore (Mixkit) posé sur chaque geste (fin de compression 0,82 s, clic 2,32 s, dépliage 3,83 s, barre d'outils 7,58 s, lecture 12,83 s). Gestes intermédiaires non calés sur les temps.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Toile blanc cassé, interface noire, photos comme seule couleur",
+      "name_en": "Off-white canvas, black UI, photos as color",
+      "t": "0:00-0:29",
+      "frames": "f0-f1741",
+      "fps": 60,
+      "mechanics": "Fond #EEEEEA chaud et noir #0A0A0B pour tout le graphisme ; la couleur ne vient que des photos (porte rouge, arche dorée, astronaute vert-orange) et d'un fond de scène lilas #E9E7FA à rubans bleus pour la partie téléphone / Mac. Le noir sert de fil conducteur (point, pilule, iris, bouton, inondation).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Le storyboard écrit en métamorphoses (« le point grandit en pilule », « l'orbe s'étend en écran verrouillé », « le cercle inonde puis se contracte ») produit un vrai plan-séquence : chaque transition est un verbe appliqué à l'objet précédent. C'est la clé du résultat."},
+    {"kind": "banned", "insight": "La liste d'interdits (fondu, flou d'entrée, développement par luminosité, retournement 3D, particules, lueurs, maintien > 1 s, gabarit) est presque entièrement respectée : le seul fondu (heure dorée) est motivé par un curseur."},
+    {"kind": "build", "insight": "La recette technique (état calculé à partir du temps, ressorts analytiques, verre par carte de déplacement SVG clonant la scène, goo par flou + seuil, 4 sous-images par image à 60 fps) explique le niveau : flou de mouvement réel, verre crédible, rendu déterministe."},
+    {"kind": "inputs", "insight": "Demander photos, morceau avec drop et accalmie, et vidéo de mur donne au film sa matière réelle. La vidéo fournie contient des mains qui décrochent le cadre : plus vivant que le mur nu demandé, mais l'incrustation fantôme par endroits."},
+    {"kind": "direction", "insight": "« something happens on every beat » sans règle de vérification n'a pas suffi : le calage tient sur 3 rendez-vous nommés (drop, breakdown, reprise) mais pas temps par temps. Nommer les temps en images (f30, f60…) et exiger un contrôle aurait aidé."},
+    {"kind": "qa", "insight": "Le contrôle demandé (une image par temps, recherche de sauts d'une image) n'a pas attrapé les halos gris des morphs ni l'inondation trop rapide (8 im au lieu des ≈ 18 im prévus par la note « gotchas »)."},
+    {"kind": "other", "insight": "La section <start> impose une carte des temps et 4 images fixes avant le film complet : méthode pilote avant production, cohérente avec la qualité obtenue."}
+  ],
+  "steal": [
+    "Écrire le storyboard en métamorphoses : chaque scène est un verbe appliqué à l'objet de la scène précédente (comprimer, étirer, inonder, contracter). Zéro coupe, zéro fondu.",
+    "Ouvrir et fermer sur le même mot-symbole qui se comprime dans son propre point : boucle parfaite et logo mémorisé.",
+    "Un seul objet noir comme fil conducteur (point, pilule, iris, bouton, cercle d'inondation) qui porte tous les états du récit.",
+    "Faire déclencher chaque changement par un clic, un glissé ou un appui long visibles, avec zoom de recadrage sur l'action.",
+    "Flou de mouvement par sous-images mélangées (4 par image à 60 fps) plutôt qu'un flou ajouté : naturel et nul à l'arrêt."
+  ],
+  "flaws": [
+    "Débit trop dense : la Dynamic Island devient fenêtre puis Safari en moins de 1,2 s, illisible à vitesse réelle.",
+    "Textes d'interface Geist à 1-2 % de la hauteur et mot de verre « relight. » sur ciel clair : quasi illisibles.",
+    "Anneau gris flou autour des formes noires pendant les morphs (f183-f188, f1303-f1310, f1602-f1610).",
+    "Inondation noire en 8 im seulement et image fantôme sur le tirage incrusté vers 24,5 s.",
+    "Gestes non calés sur les temps malgré « quelque chose sur chaque temps » : synchro limitée à trois rendez-vous."
+  ],
+  "deep_study": {"worth": true, "why": "Source native à 60 fps avec flou de mouvement réel, chaîne ininterrompue d'une trentaine de morphs (accordéon, iris, dépliage, goutte, orbe, inondation) et ressorts mesurables : chaque transition est une recette à décortiquer image par image, surtout l'ouverture (f0-f260) et la boucle finale (f1580-f1741)."}
+}

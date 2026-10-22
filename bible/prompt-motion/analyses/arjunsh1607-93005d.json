@@ -1,0 +1,398 @@
+{
+  "slug": "arjunsh1607-93005d",
+  "title": "Pixelup Labs studio showreel",
+  "handle": "@arjunsh1607",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept tenu (le carré-pixel), montage à la croche à l'image près en 1080p60, chapitres qui forment le slogan ; quelques tropes (mur isométrique, HUD) et des cas trop brefs pour être lus.",
+  "summary": "Reel de 15 s du studio Pixelup Labs bâti sur un motif : un carré de sélection bleu qui devient le cadre, puis, à la fin, avale tout et devient le logo. Entre les deux, quatre chapitres (Brands, Websites, Products, Proof) dont les titres recomposent le slogan, montés à la croche sur un 120 BPM. Très propre et musical ; cas clients trop brefs, mur d'écrans convenu.",
+  "prompt_vs_result": [
+    "Le prompt fixe la durée (15 s), le genre (showreel motion design), le client (@pixeluplabs) et deux exigences de soin (« extremely detail oriented », « go all out »). Rien sur le style, la musique, la structure ni les contenus.",
+    "Claude a décidé : le carré-pixel comme fil rouge, 4 chapitres (Brands, Websites, Products, Proof) qui recomposent le slogan, un bleu électrique unique, le HUD de régie, la musique 120 BPM et le montage à la croche (probable).",
+    "« @pixeluplabs » a apporté les vrais logos, sites, chiffres et le slogan : d'où la crédibilité. « Go all out » a donné la densité ; rien ne bornait le temps de lecture (cas de 0,25 s) ni les tropes (mur isométrique, HUD)."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0645E2", "role": "bleu électrique, couleur-signal unique (carré, plein cadre, volet, surlignage, puces)"},
+      {"hex": "#000000", "role": "fond noir (intro, Products, Proof, fin)"},
+      {"hex": "#FFFFFF", "role": "texte"},
+      {"hex": "#0A1C3C", "role": "halo bleu nuit du chapitre Proof"},
+      {"hex": "#011543", "role": "halo radial derrière le logo final"},
+      {"hex": "#16346A", "role": "faisceau de lumière volumétrique de la fin"},
+      {"hex": "#2DFF99", "role": "vert néon du logo client en verre"},
+      {"hex": "#01200C", "role": "fond vert sombre du logo client"},
+      {"hex": "#F6FAF2", "role": "fond quadrillé clair du cas reducto"},
+      {"hex": "#DCDFD9", "role": "lignes de grille du quadrillage"},
+      {"hex": "#616363", "role": "flash gris d'une image sur l'impact final"},
+      {"hex": "#9CA7BB", "role": "gris-bleu du slogan final"}
+    ],
+    "type": "Néo-grotesque Medium (probable Inter Display), interlettrage serré, casse de phrase ; titres de chapitre 18-30 % de la hauteur, phrase 7 %, chiffres 12 % ; mono capitales espacées 1,5 % (HUD) ; logotype en capitales larges.",
+    "texture": "Fonds noirs avec halos radiaux bleu nuit et faisceau de lumière volumétrique ; flou de mouvement sur la poussée dans le mur et les permutations de colonnes ; flou gaussien d'entrée sur « Products » ; logo client en verre néon (lueur interne, reflets) ; carrés tramés (halftone) façon pixel ; grilles fines visibles (12 colonnes sur le bleu, papier quadrillé) ; ombres douces sous les cartes et appareils ; pas de grain.",
+    "style": "Reel d'agence tech, grille et pixel",
+    "coherence": "Tout est tenu par le motif du pixel carré, tiré du nom Pixelup : carré de sélection de l'intro, volet en escalier de blocs, carrés tramés, puces carrées des labels, surlignage rectangulaire de « trust. », repli final en carré qui devient le logo. Une seule couleur-signal #0645E2, une seule famille de titrage (néo-grotesque Medium) + la mono du HUD, chapitres numérotés dont les titres forment la phrase finale. Les visuels clients (vert néon, violet, orange, photos) apportent la variété sans casser le système car ils restent encadrés par la grille et le HUD. Rupture : le mur isométrique de captures, plus générique."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Le tempo global du dossier (80,3 BPM) est une erreur ×2/3 : tempo_segment.py donne 120,1 BPM sur 1-11 s et 120,4 BPM sur 11-15 s ; les attaques mesurées tombent toutes à k × 0,25 s + 30-40 ms (latence de fenêtre d'analyse). Grille nominale : croche = 15 im à 60 fps, temps à x,00 et x,50 s. 19 plans, médiane 0,5 s, deux rafales à la croche (3,00-4,25 s : 6 coupes à 15 im d'écart ; 7,00-8,00 s : 5 coupes), un carrousel de colonnes à la croche (9,0-10,5 s). Maintiens statiques mesurés 2,93 s (20 %) : 0-0,9 s (noir quasi vide, seul le petit carré saute), 12,0-12,72 s (stats tenues), 13,73-15,0 s (carte de fin tenue 1,27 s) ; s'y ajoutent deux zones lentes : logo vert 2,35-3,0 s et dérive du mur 5,0-6,2 s. Densité maximale de 3,0 à 4,4 s et de 6,5 à 10,7 s (un événement toutes les 0,25 s).",
+    "timeline": [
+      {"t": "0:00-0:00.88", "what": "Noir, guides en croix, petit carré bleu « 32 × 32 » avec poignées qui saute par petits pas, un clic par saut", "technique": "carré de sélection façon outil de design"},
+      {"t": "0:00.88-0:01.00", "what": "Le carré s'étire en accélérant jusqu'au plein cadre bleu, sur le drop", "technique": "agrandissement expo-in jusqu'au cadre"},
+      {"t": "0:01.00-0:01.20", "what": "« Brands » monte d'un masque, lettres remplies d'images ; liste des clients dessous", "technique": "titre-masque rempli d'images"},
+      {"t": "0:01.25-0:02.10", "what": "Le remplissage change à chaque croche, le nom du client s'allume dans la liste", "technique": "permutation de remplissage à la croche"},
+      {"t": "0:02.10-0:02.37", "what": "Plongée dans le « B » vert, le logo vert apparaît dans le contre-poinçon", "technique": "plongée dans le glyphe"},
+      {"t": "0:02.37-0:03.00", "what": "Logo client en verre néon vert, légère poussée", "technique": "pause sur une pièce maîtresse"},
+      {"t": "0:03.00-0:04.38", "what": "Six visuels clients (Sainapse, Autumn, reducto, Henry Labs, astérisque, « bridge the gap. »), un par croche", "technique": "rafale de coupes à la croche"},
+      {"t": "0:04.35-0:04.55", "what": "Blocs bleus en escalier qui couvrent l'image", "technique": "volet en escalier de pixels"},
+      {"t": "0:04.58-0:06.20", "what": "Mur isométrique de captures de sites, « Websites » en bas à gauche, dérive lente", "technique": "mur isométrique + dérive caméra"},
+      {"t": "0:06.22-0:06.50", "what": "Poussée accélérée floue dans une carte, coupe sur la croche", "technique": "push-in ease-in avec flou"},
+      {"t": "0:06.50-0:08.00", "what": "Cinq sites sur portables et écran, mises en scène différentes, coupes à la croche, coupe au noir", "technique": "rafale de maquettes d'appareils"},
+      {"t": "0:08.00-0:08.50", "what": "Noir, « Products » sort du flou pendant le break musical", "technique": "break + flou → net"},
+      {"t": "0:08.50-0:08.73", "what": "Le mot se fend horizontalement, une bande de téléphones s'ouvre depuis le centre", "technique": "fente horizontale sur le retour du rythme"},
+      {"t": "0:08.73-0:10.75", "what": "Triptyque de colonnes d'appareils ; une colonne change à chaque croche, sortie en cascade", "technique": "carrousel de colonnes à la croche"},
+      {"t": "0:10.77-0:11.27", "what": "« that command / enterprise trust. » monte en blanc sur noir", "technique": "lignes qui montent d'un masque"},
+      {"t": "0:11.28-0:11.33", "what": "Rectangle bleu derrière « trust. »", "technique": "surlignage sur l'attaque"},
+      {"t": "0:11.50-0:12.72", "what": "Stats $25M / 26× / F500 avec clients, tenue", "technique": "chiffres de preuve en colonnes"},
+      {"t": "0:12.73-0:13.00", "what": "Toute la page se replie dans le carré bleu", "technique": "repli vers un point (ease-in)"},
+      {"t": "0:13.00-0:13.15", "what": "Image grise sur l'impact, le carré devient le logo blanc sur halo bleu", "technique": "flash gris + morphing en logo"},
+      {"t": "0:13.15-0:15.00", "what": "Logo, puis « PIXELUP LABS », slogan et URL ; faisceau bleu ; tenue finale", "technique": "carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Les barres bleues des planches suivent la grille globale fausse de 80,3 BPM (×2/3) et ne tombent sur rien. Tempo par segment : 120,1 BPM (1-11 s), 120,4 BPM (11-15 s) ; attaques mesurées à k × 0,25 s + 30-40 ms. Sur cette grille de croches (15 im à 60 fps) : 35 gestes clés sur 36 à ±2 im (hasard 33 %), dont 22 à 0-1 im. 16 coupes franches sur 16 à 0-1 im (f60, f180, f195, f210, f225, f240, f255, f390, f420, f435, f450, f465, f480, f511, f645, f780) ; 4 changements de remplissage de « Brands » pile sur la grille (f75, f90, f105, f120) ; plongée dans le B (pic f133, -2 im) ; fin du volet bleu f272 (+2) ; départ de la poussée f373 (-2) ; 7 permutations de colonnes (départs f538, f553, f568, f584, f598, f615, f630 : -2 à 0 im, pics sur les attaques 9,033 s f542, 9,787 s f587, 10,037 s f602, 10,286 s f617) ; surlignage f677 sur l'attaque 11,279 s ; stats f707 sur 11,784 s ; départ du repli f764 (-1) ; logotype f809 (-1). Seule exception : l'arrivée du mur (f275, +5 im). Macro-structure : intro feutrée (-32 à -22 dB) dont les clics (0,522 / 0,633 / 0,731 / 0,865 s) tombent sur les sauts du carré (f31, f38, f44, f53) ; drop à 1,0 s (RMS -21,8 → -8,6 dB, basse la plus forte à 1,027 s) = plein cadre bleu f60 ; break 8,0-8,5 s (-16/-20 dB) = noir + « Products » qui sort du flou, retour à 8,5 s (-8,5 dB) = ouverture de la fente f511 ; creux 12,5-12,75 s puis impact le plus fort du morceau à 13,0 s (-6,8 dB) = flash gris + logo f780, décroissance jusqu'à 15 s. L'indice automatique « aucune synchro » vient uniquement de la mauvaise grille.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "texte", "flashs", "drop", "camera"],
+    "style_match": "Électro minimale à 120 BPM (grosse caisse à chaque temps, charleston à contretemps, probable) : coupes sèches à la croche, souffles aux pauses, impact grave final sur le logo.",
+    "how_built": "Prompt sans mention de musique (« be extremely detail oriented and go all out »). Les coupes tombent sur des multiples exacts de 15 im (0,25 s à 60 fps), la bande-son a ses pauses et ses impacts exactement aux changements de chapitre (1,0 s ; 8,0-8,5 s ; 13,0 s) et des clics sur les micro-mouvements de l'intro : bande-son très probablement générée en code sur la même grille de 120 BPM que la timeline, avec des événements écrits en multiples de 0,25 s."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitres dont les titres forment le slogan",
+      "name_en": "Chapter titles that spell the tagline",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "HUD « 00 — INTRO » (f0-f60), « 01 — BRANDS » (f60-f272), « 02 — WEBSITES » (f272-f≈500), « 03 — PRODUCTS » (f≈500-f645), « 04 — PROOF » (f645-f780), puis logo. Titres plein écran « Brands », « Websites », « Products », puis la phrase « that command enterprise trust. » ; la carte de fin affiche « Brands, websites and products that command enterprise trust. » : le slogan est la somme des chapitres. Durées ≈ 1 s / 3,5 s / 3,8 s / 2,4 s / 2,25 s / 2 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Carré de sélection façon outil de design",
+      "name_en": "Design-tool selection square",
+      "t": "0:00.35-0:00.88",
+      "frames": "f21-f53",
+      "fps": 60,
+      "mechanics": "Noir, deux guides fins en croix (≈ 10 % d'opacité). Un carré bleu #0645E2 de ≈ 1,7 % de la largeur, étiqueté « 32 × 32 », avec 4 poignées blanches et une étiquette de cote bleue dessous, se déplace par petits sauts (f21-23, f31-33, f37, f43, f53 : 6-10 im d'écart), chaque saut accompagné d'un clic. Métaphore : on dessine le cadre de la vidéo dans un outil de design.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le carré s'étire jusqu'au plein cadre",
+      "name_en": "Selection square scales to full frame",
+      "t": "0:00.88-0:01.00",
+      "frames": "f53-f60",
+      "fps": 60,
+      "mechanics": "Le carré grandit en accélération exponentielle (≈ ×1,6 par image : ≈ 2, 3, 6, 9, 15, 24, 35 % de la largeur de f53 à f59), poignées et étiquette de cote suivent (les dimensions défilent), puis plein cadre bleu à f60 = 1,000 s, pile sur le drop (RMS -21,8 → -8,6 dB, basse la plus forte du morceau à 1,027 s). 7 im, ease-in expo, sans flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte d'un masque, rempli d'images",
+      "name_en": "Masked rise of an image-filled title",
+      "t": "0:01.02-0:01.18",
+      "frames": "f61-f71",
+      "fps": 60,
+      "mechanics": "« Brands » (néo-grotesque Medium, ≈ 30 % de la hauteur, centré) monte depuis une ligne de masque basse en 10 im, ease-out (grands pas puis petits), lettres remplies d'une photo de marque. La liste « SULLY.AI · STREAMLINE · SAINAPSE · MONUMINT · GREPTILE » (mono ≈ 1,3 %) apparaît dessous à f68-f71. Fond bleu #0645E2 rayé de 12 colonnes fines plus claires.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Remplissage du titre qui change à chaque croche, client surligné",
+      "name_en": "Per-8th fill swap synced to a client list",
+      "t": "0:01.25-0:02.10",
+      "frames": "f75-f126",
+      "fps": 60,
+      "mechanics": "Toutes les 15 im (f75, f90, f105, f120 = chaque croche à 120 BPM), le remplissage des lettres passe au visuel du client suivant (beige, blanc + photo, brun, gris argent, vert) par coupe sèche dans le masque (1 im), et le nom correspondant s'allume en blanc dans la liste (les autres à ≈ 40 %). Pics d'énergie 8,6-12,8 exactement sur les images de la grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le « B » vers le logo suivant",
+      "name_en": "Glyph dive through the B into the next logo",
+      "t": "0:02.07-0:02.37",
+      "frames": "f124-f142",
+      "fps": 60,
+      "mechanics": "Sur le remplissage vert, la caméra plonge dans le « B » : échelle ≈ ×1 (f124) → ×1,25 (f128) → ×2,5 (f132) → ×6 (f136), accélération expo-in ; le logo vert de la scène suivante apparaît dans le contre-poinçon du B (f134-f136) et le bleu restant sort par les bords (f136-f140) ; atterrissage en ease-out jusqu'à f142. Pic de mouvement f133 (2,217 s), 2 im avant la croche f135. Raccord motivé : la couleur du remplissage annonce celle du logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 122, "to": 142, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Pause sur une pièce maîtresse en verre néon",
+      "name_en": "Hero piece hold: neon glass logo",
+      "t": "0:02.37-0:03.00",
+      "frames": "f142-f180",
+      "fps": 60,
+      "mechanics": "Logo client vert néon #2DFF99 aux bords en verre (lueur interne, reflets) sur fond radial vert sombre #01200C, plus clair en bas, lignes verticales fines ; légère poussée continue (énergie 0,5-1). Seule respiration (0,63 s) du chapitre Brands, juste avant la rafale.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rafale de cas clients à la croche",
+      "name_en": "8th-note case burst",
+      "t": "0:03.00-0:04.38",
+      "frames": "f180-f262",
+      "fps": 60,
+      "mechanics": "Six visuels clients (Sainapse « Rethink Enterprise Intelligence. », Autumn, reducto, Henry Labs, logo astérisque, « bridge the gap. ») en coupes franches toutes les 15 im exactement (f180, f195, f210, f225, f240, f255) ; chaque coupe est suivie de ≈ 5 im de stabilisation (énergie 10 → 3,5 : léger recul d'échelle en ease-out, probable). Le nom du client s'écrit dans le HUD en bas à gauche (« ■ REDUC… »). Logos lisibles en 0,25 s, textes et photos non.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f210.jpg, microM-002-cut-f255.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet bleu en escalier de pixels",
+      "name_en": "Stepped pixel-block wipe",
+      "t": "0:04.35-0:04.55",
+      "frames": "f261-f273",
+      "fps": 60,
+      "mechanics": "Des blocs bleus #0645E2 rectangulaires envahissent l'image du coin haut gauche vers le bas droit en escalier (marches de hauteurs irrégulières), ≈ 12 im ; plein bleu à f272-f273 (croche f270, +2 im). Reprend le motif pixel de la marque pour passer de Brands à Websites.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f255.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Mur isométrique de captures de sites",
+      "name_en": "Isometric wall of website screenshots",
+      "t": "0:04.58-0:06.20",
+      "frames": "f275-f372",
+      "fps": 60,
+      "mechanics": "Des dizaines de captures de sites en cartes inclinées (≈ 30° de rotation, perspective forte, ombres) ; arrivée f275-f300 (énergie jusqu'à 10 à f281 : seul geste hors grille, +5 im), puis dérive lente de la caméra pendant 1,2 s (énergie 7 → 4,5, ease-out très long). « Websites » blanc ≈ 20 % de la hauteur en bas à gauche, sur-titre mono « FOR FUNDED AI & ENTERPRISE STARTUPS » avec puce bleue. Montre le volume de travail, mais trope de reel d'agence et moment le plus mou.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, microM-003-move-f385.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée accélérée avec flou dans le mur",
+      "name_en": "Accelerating push-in with motion blur",
+      "t": "0:06.22-0:06.50",
+      "frames": "f373-f390",
+      "fps": 60,
+      "mechanics": "La caméra plonge vers une carte : énergie 5,5 → 29,9 (f385) en 12 im (ease-in), flou de mouvement croissant, « Websites » sort à gauche en se floutant ; coupe franche à f390 (6,500 s, pile sur la croche) sur l'ordinateur portable.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f385.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Rafale de maquettes d'appareils mises en scène",
+      "name_en": "Staged device mockup burst",
+      "t": "0:06.50-0:08.00",
+      "frames": "f390-f480",
+      "fps": 60,
+      "mechanics": "Cinq sites, chacun dans une mise en scène différente : portable sur fond blanc qui vire au bleu clair (f390-f405), portable devant un décor à colonnes (f420), site plein écran sur montagne (f435), portable sur un socle de pierre (f450), écran sur dégradé orange (f465). Coupes f390, f420 (0,5 s) puis toutes les 15 im ; coupe au noir à f480 (fondu de 2 im). Chaque plan se stabilise en ≈ 6 im. Mises en scène variées, mais interfaces illisibles en 0,25 s.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f385.jpg, microM-004-move-f453.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Break musical : noir et mot qui sort du flou",
+      "name_en": "Music break: black screen and blur-in title",
+      "t": "0:08.00-0:08.50",
+      "frames": "f480-f510",
+      "fps": 60,
+      "mechanics": "La musique tombe à -16/-20 dB pendant 0,5 s ; l'image passe au noir et « Products » (≈ 18 % de la hauteur) sort d'un flou fort en 30 im (énergie ≤ 1, ease-out), presque immobile : contraste net avec la rafale précédente. Un filet bleu horizontal traverse le mot à f510, juste avant le retour du rythme.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f514.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fente horizontale qui ouvre le mot",
+      "name_en": "Horizontal slit split reveal",
+      "t": "0:08.50-0:08.73",
+      "frames": "f510-f524",
+      "fps": 60,
+      "mechanics": "Le mot se coupe le long du filet : moitié haute qui monte, moitié basse qui descend, et une bande d'images de téléphones s'ouvre depuis le centre : ≈ 15 % de la hauteur (f511), 45 % (f513), 85 % (f515), plein cadre (f517) ; décélération expo-out (énergie 42,7 → 3,6 en 13 im). Départ f511 (8,517 s), 1 im après la croche, sur le retour de la musique (RMS -19,7 → -8,5 dB).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f514.jpg",
+      "illus": {"from": 509, "to": 521, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Triptyque d'appareils en colonnes",
+      "name_en": "Three-column device triptych",
+      "t": "0:08.55-0:10.75",
+      "frames": "f517-f645",
+      "fps": 60,
+      "mechanics": "Trois colonnes verticales de ≈ 33 % de la largeur, gouttières fines, chacune une photo d'appareil en situation (téléphone en main, sur tissu rouge, sur fond lavande, tablette sur pelouse…) ; numéros « 01/02/03 » en mono en haut à gauche, nom du client en bas à gauche de chaque colonne, dégradé sombre en bas pour le HUD.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Carrousel de colonnes à la croche",
+      "name_en": "8th-note column swap carousel",
+      "t": "0:08.97-0:10.75",
+      "frames": "f538-f645",
+      "fps": 60,
+      "mechanics": "À chaque croche, une seule colonne change de contenu par glissement vertical, en rotation gauche → milieu → droite (départs f538, f553, f568, f584, f598, f615 : 0 à 2 im avant la grille de 15 im) ; chaque glissement dure 8-10 im en ease-in-out, pic d'énergie (10-20) 2-3 im après la grille, donc sur l'attaque mesurée. Sortie en cascade, colonne par colonne vers le bas (f630-f645), jusqu'au noir sur la croche f645.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 536, "to": 576, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes de phrase qui montent d'un masque",
+      "name_en": "Line-by-line masked rise",
+      "t": "0:10.77-0:11.27",
+      "frames": "f646-f676",
+      "fps": 60,
+      "mechanics": "« that command / enterprise trust. » en néo-grotesque blanche ≈ 7 % de la hauteur, calée en haut à gauche (x ≈ 5 %) : chaque ligne monte d'une ligne de masque (≈ 10-12 im, ease-out), deuxième ligne décalée de quelques images (probable), sur fond noir avec halo bleu nuit en haut à droite.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Surlignage bleu derrière un mot",
+      "name_en": "Highlight box behind a word",
+      "t": "0:11.28-0:11.33",
+      "frames": "f677-f680",
+      "fps": 60,
+      "mechanics": "Un rectangle bleu #0645E4 se déploie derrière « trust. » en 3-4 im, départ f677 = attaque forte à 11,279 s. Ce rectangle sera le carré dans lequel toute la page se replie à la fin : l'accent prépare la conclusion.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chiffres de preuve en trois colonnes",
+      "name_en": "Three-column proof stats",
+      "t": "0:11.50-0:12.72",
+      "frames": "f690-f763",
+      "fps": 60,
+      "mechanics": "« $25M — Series A in 6 months — GREPTILE », « 26× — Scale in 11 months — SULLY.AI », « F500 — Deployed at Ford & Freshworks — SAINAPSE » : chiffres ≈ 12 % de la hauteur, légende ≈ 2,5 %, tag client mono avec puce bleue, filets verticaux entre colonnes et filet horizontal au-dessus. Apparition échelonnée (≈ f695 puis f707, sur les attaques 11,535 et 11,784 s), premier chiffre qui monte de $21M à $25M (probable). Tenue 0,72 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Repli de la page dans le carré, puis logo",
+      "name_en": "Collapse to a point, then logo reveal",
+      "t": "0:12.73-0:13.15",
+      "frames": "f764-f788",
+      "fps": 60,
+      "mechanics": "Toute la mise en page rétrécit vers le centre en accélérant (échelle ≈ 1 → 0,6 → 0,25 → 0,02 de f768 à f779, ease-in) jusqu'à ne laisser que le carré bleu du surlignage. f780 (13,000 s) : une image gris moyen #616363 plein cadre, sur l'impact le plus fort du morceau (-6,8 dB). f781-f788 : le carré pivote et se transforme en logo blanc, fond qui fonce vers le noir avec halo bleu nuit (ease-out, 8 im). Bouclage parfait avec le carré de l'intro.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f780.jpg",
+      "illus": {"from": 764, "to": 790, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : logo, logotype, slogan, URL",
+      "name_en": "End card with wordmark, tagline and URL",
+      "t": "0:13.15-0:15.00",
+      "frames": "f789-f899",
+      "fps": 60,
+      "mechanics": "Logo seul (f789-f808), puis il glisse à gauche et « PIXELUP LABS » (capitales larges ≈ 7 % de la hauteur) apparaît à sa droite en ≈ 13 im (f809-f822, départ sur le temps 13,5 s) ; slogan gris-bleu #9CA7BB ≈ 3 % puis URL mono avec puce bleue en fondus discrets ; tenue 1,27 s pendant la décroissance de l'impact. Faisceau de lumière bleu en haut à droite. Propre mais statique après un montage à la croche.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une seule couleur-signal : bleu électrique",
+      "name_en": "Single signal colour: electric blue",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "#0645E2 sert à tout ce qui signale la marque : carré initial, fond plein cadre de Brands, volet en escalier, puces des labels, filet sur « Products », surlignage de « trust. », carré final, halo du logo. Le reste est noir, blanc, ou les couleurs propres des visuels clients encadrés.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "HUD de régie avec barre de progression",
+      "name_en": "Broadcast-style HUD with progress bar",
+      "t": "0:00-0:13.00",
+      "frames": "f0-f780",
+      "fps": 60,
+      "mechanics": "Coins en équerre fins ; « ■ PIXELUP LABS » en haut à gauche, « SELECTED WORK 2025–2026 » en haut à droite ; en bas à gauche « TC 00:00:01:40 » et une barre de progression fine qui s'allonge sur la durée, nom du client tapé au-dessus (« ■ REDUC… ») ; en bas à droite le chapitre (« 01 — BRANDS »). Mono capitales espacées ≈ 1,5 % de la hauteur. Retiré au moment du logo. Même gabarit que d'autres reels Claude du corpus.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grilles visibles d'outil de design",
+      "name_en": "Visible design-tool grids",
+      "t": "0:00.35-0:03.75",
+      "frames": "f21-f225",
+      "fps": 60,
+      "mechanics": "Guides en croix de l'intro ; fond bleu de Brands rayé de 12 colonnes fines plus claires ; cas reducto sur papier quadrillé clair #F6FAF2 (lignes #DCDFD9) semé de carrés tramés violets et orange. La grille montre la méthode (système de design) et rappelle le pixel.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f210.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir à faisceau bleu volumétrique",
+      "name_en": "Black with volumetric blue light beam",
+      "t": "0:10.77-0:15.00",
+      "frames": "f646-f899",
+      "fps": 60,
+      "mechanics": "Noir #000000 avec halo bleu nuit #0A1C3C en haut à droite (chapitre Proof), puis faisceau de lumière #16346A tombant du coin haut droit et halo radial #011543 derrière le logo. Statique : la profondeur vient de la lumière, pas du mouvement.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Clics sur les micro-déplacements de l'intro",
+      "name_en": "Click SFX on intro micro-moves",
+      "t": "0:00.35-0:00.90",
+      "frames": "f21-f54",
+      "fps": 60,
+      "mechanics": "Intro feutrée (-32 à -22 dB) ; les attaques à 0,522, 0,633, 0,731 et 0,865 s tombent sur les sauts du carré (f31, f37-38, f43-44, f52-53) à ±1 im : bruitage d'interface calé sur chaque micro-mouvement, qui fait monter l'attente avant le drop de 1,0 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage verrouillé sur la grille de croches",
+      "name_en": "Editing locked to the 8th-note grid",
+      "t": "0:01.00-0:13.00",
+      "frames": "f60-f780",
+      "fps": 60,
+      "mechanics": "16 coupes franches sur 16 à 0-1 im d'un multiple de 15 im (croche à 120 BPM, 60 fps) ; rafales de 0,25 s (3,00-4,25 s et 7,00-8,00 s) ; ruptures musicales alignées sur les chapitres (drop 1,0 s = plein cadre bleu ; break 8,0-8,5 s = noir ; retour 8,5 s = fente ; impact 13,0 s = flash gris + logo). Les coupes tombent sur la grille nominale ; les attaques sont mesurées ≈ 2 im plus tard (latence d'analyse), donc perçues ensemble.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f210.jpg, microM-002-cut-f255.jpg, microM-004-move-f453.jpg, microM-006-cut-f780.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« @pixeluplabs » : le modèle a eu accès aux vrais contenus du studio (logos Greptile, reducto, Henry Labs…, captures de sites et d'apps, chiffres $25M / 26× / F500, slogan). Le handle seul ne suffit pas : il a fallu récupérer le site ou des fichiers fournis (probable). La crédibilité vient de ces contenus."},
+    {"kind": "direction", "insight": "« Extremely detail oriented » se voit dans les micro-détails : étiquette « 32 × 32 », nom du client tapé dans le HUD, barre de progression, puces carrées, compteur de stats. Une demande de soin produit du détail d'interface, pas forcément de la lisibilité."},
+    {"kind": "structure", "insight": "Sans structure demandée, Claude a découpé l'offre du studio en chapitres dont les titres, mis bout à bout, forment le slogan final (« Brands, websites and products that command enterprise trust. ») : procédé narratif à réutiliser tel quel pour une promo SaaS (fonctionnalités → promesse)."},
+    {"kind": "build", "insight": "Montage sur multiples exacts de 0,25 s et bande-son dont les ruptures tombent aux changements de chapitre : timeline probablement écrite en croches de 120 BPM, musique générée sur la même grille. L'écrire dans le prompt (BPM, temps des ruptures) rendrait la synchro voulue et reproductible."},
+    {"kind": "other", "insight": "Même ossature que l'autre showreel « go all out » du lot (andginja-333d32) : HUD de viseur (coins, timecode, chapitre), chapitres numérotés, rafales à la croche, chiffres de preuve, carte de fin. C'est le gabarit par défaut d'Opus 5.5 pour un reel de studio : à varier si l'on veut se distinguer."},
+    {"kind": "qa", "insight": "Rien ne bornait le temps de lecture : 6 cas en 1,4 s et 5 sites en 1,5 s. Ajouter « chaque visuel client ≥ 0,5 s » ou réduire le nombre de cas ; demander aussi une accroche visible dès la première seconde."}
+  ],
+  "steal": [
+    "Un motif tiré du nom de la marque (un pixel carré pour Pixelup) ouvre la vidéo en devenant le cadre et la referme en avalant tout pour devenir le logo.",
+    "Titrer les chapitres avec les mots du slogan (Brands, Websites, Products…) pour que la phrase finale soit la somme de la vidéo.",
+    "Changer le remplissage d'un mot-titre à chaque croche en surlignant le nom du client correspondant dans une liste dessous.",
+    "Pendant un break : noir, mot qui sort du flou en 0,5 s, puis fente horizontale qui coupe le mot et ouvre la scène sur le retour du rythme.",
+    "Triptyque de colonnes : à chaque croche une seule colonne change par glissement vertical, en rotation gauche-milieu-droite ; sortie en cascade."
+  ],
+  "flaws": [
+    "Six cas clients en 1,4 s et cinq sites en 1,5 s : logos lisibles, titres et interfaces non.",
+    "Mur isométrique de captures qui dérive 1,6 s : trope de reel d'agence, le moment le plus mou.",
+    "0,9 s d'écran noir quasi vide en ouverture : l'accroche tarde, le petit carré ne suffit pas dans un fil d'actualité.",
+    "HUD de régie (timecode, barre de progression, « SELECTED WORK ») : même gabarit que d'autres reels Claude, décoratif.",
+    "Carte de fin tenue 1,27 s sans mouvement après un montage à la croche : chute d'énergie."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui (1080p60 natif) : le montage est calé à l'image près sur une grille de croches à 120 BPM et chaque transition (agrandissement du carré, plongée dans le B, fente horizontale, carrousel de colonnes, repli en carré) se mesure image par image ; modèle direct pour une promo HyperFrames, avec le procédé « chapitres = mots du slogan »."
+  }
+}

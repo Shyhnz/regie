@@ -1,0 +1,411 @@
+{
+  "slug": "abderrahmen-g-9e8ed0",
+  "title": "Sketchbook animals come alive",
+  "handle": "@abderrahmen_g",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Dessins d'enfant détourés en stickers, récit d'une journée, transitions motivées (vague, nuit qui tombe, plongée dans la fleur) et montage « planètes » calé sur le temps ; perd une note pour l'animation raide et la nuit lente.",
+  "summary": "« Une journée dans le carnet » : les dessins à la main fournis deviennent des stickers qui surgissent sur une colline, puis une rafale de gros plans en « petites planètes » (« every page is a little world ») accélère jusqu'à la double-croche, un jardin pousse, une vague l'emporte sous la mer, histoire d'amour entre une pieuvre et une méduse, coucher de soleil, nuit, finale en couronne de personnages. Charmant et bien rythmé, mais personnages peu animés et nuit trop statique.",
+  "prompt_vs_result": [
+    "Le prompt demandait une vidéo HD créative, joyeuse, avec des sons calés sur les images en JavaScript, en utilisant au maximum les dessins à la main fournis, inspirée (sans copie) d'une vidéo exemple.",
+    "Claude a choisi le récit matin → jardin → inondation → fond marin → coucher de soleil → nuit → finale, le recadrage des dessins en « planètes », le traitement sticker, les onomatopées, la musique générée avec un tempo plus lent la nuit.",
+    "Les images fournies ont donné l'authenticité ; « sounds matching the frames » a donné une vraie synchro. Rien ne cadrait la durée ni le rythme : la nuit traîne. Il aurait fallu imposer une action toutes les 0,5–1 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F3E9D2", "role": "papier aquarelle crème, fond principal"},
+      {"hex": "#B8CB8C", "role": "colline vert tendre aquarellé"},
+      {"hex": "#E9C21C", "role": "soleil, tournesol, poussin"},
+      {"hex": "#1B1815", "role": "texte et traits d'encre"},
+      {"hex": "#9CC8DE", "role": "ciel bleu pâle des « planètes »"},
+      {"hex": "#5D9CC6", "role": "fond sous-marin"},
+      {"hex": "#E8B6A6", "role": "coucher de soleil rose"},
+      {"hex": "#1F2552", "role": "nuit bleu nuit"},
+      {"hex": "#F2C9A6", "role": "rayons pastel de la finale (avec menthe #CFE0C0, lilas #D9C6DE, beurre #F5DFA0)"},
+      {"hex": "#141110", "role": "noir de fin"}
+    ],
+    "type": "Manuscrite feutre grasse (Caveat Brush probable), bas de casse : « sketchbook » ≈ 10 % de la hauteur, mots du montage ≈ 8 %, « a day in the » ≈ 4 %, onomatopées ≈ 2,5 % en manuscrite fine.",
+    "texture": "Grain de papier aquarelle sur tout le cadre, vignettage doux aux coins, stickers détourés avec liseré blanc ≈ 6 px et ombre portée douce, halos lumineux (lune, fenêtres, lucioles), rayons de lumière et bulles sous l'eau. Flou seulement dans la transition de plongée (3 im).",
+    "style": "Carnet de croquis aquarelle, stickers enfantins",
+    "coherence": "Le papier crème, le trait d'encre noir et le liseré blanc de sticker unifient des dessins de styles différents ; la colline-arc revient comme ligne d'horizon puis comme bord de « planète ». Le fond en rayons pastel de la finale et les halos de la nuit sortent un peu du langage papier mais restent dans les tons."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM confirmés par tempo_segment sur 0–21 s (clarté 5,7), 22–31 s (clarté 11,4), 33–53 s et 66–78 s ; la section coucher de soleil/nuit (54–66 s) passe à ≈ 79 BPM, pulsation floue (clarté 3,0) : la musique ralentit avec le récit. Temps à 0,515 + k × 0,5 s (1 temps = 15 im à 30 fps). Montage « planètes » (22–31 s) : coupes toutes les 2 temps (1 s), puis chaque temps (0,5 s), puis chaque demi-temps (0,25 s), puis chaque quart de temps (≈ 4 im), arrivant 1 im avant la barre de temps. Les entrées d'animaux tombent sur les temps (une toutes les 2 temps puis à chaque temps). Maintiens statiques : 14 % du total, surtout dans la nuit (58,3–64,7 s, ≈ 5 s quasi immobiles hors lucioles) et dans l'intro (tracé lent de la colline, 0,6–2,2 s).",
+    "timeline": [
+      {"t": "0:00-0:02.7", "what": "Papier vierge, un trait d'encre dessine la colline de gauche à droite, puis lavis vert", "technique": "décor qui se dessine"},
+      {"t": "0:03.0-0:06.5", "what": "Soleil qui entre par la droite, nuages, « a day in the » mot à mot puis « sketchbook » lettre à lettre", "technique": "machine à écrire manuscrite"},
+      {"t": "0:07.0-0:09.5", "what": "Un oiseau traverse et le titre s'efface lettre à lettre derrière lui", "technique": "sortie du titre par un personnage"},
+      {"t": "0:10.0-0:21.0", "what": "Les animaux surgissent un à un sur la colline, chacun annoncé par 3 petits traits sur le temps, avec son cri (« tweet! », « meow », « yip! »…) ; une rangée de gros stickers monte au premier plan", "technique": "marque d'anticipation + pop sur le temps"},
+      {"t": "0:19.0-0:20.0", "what": "« good morning! » tapé lettre à lettre en grand", "technique": "machine à écrire"},
+      {"t": "0:21.4-0:21.97", "what": "Tous les personnages sautent hors champ par le haut, cadre vide 2 im, coupe", "technique": "vidage du cadre avant la coupe"},
+      {"t": "0:21.97-0:31.0", "what": "« every / page / is a / little / world » : gros plans de dessins en demi-planètes sur fonds pastel changeants, coupes de plus en plus rapprochées", "technique": "montage en accélération"},
+      {"t": "0:31.0-0:33.3", "what": "Plongée dans le cœur du tournesol, fondu flou, puis recul qui révèle le tournesol sur la colline", "technique": "zoom traversant + recul révélateur"},
+      {"t": "0:33.5-0:41.5", "what": "Le jardin pousse : fleurs, papillons, abeilles, légumes stickers qui surgissent du sol (« hup! hup! »)", "technique": "accumulation décalée"},
+      {"t": "0:43.0-0:44.0", "what": "« uh-oh! » ; une vague dessinée balaie le cadre et révèle le fond marin", "technique": "volet par objet motivé"},
+      {"t": "0:44.0-0:53.5", "what": "Légumes qui flottent vers la surface, poissons, pieuvre triste, méduse qui s'approche, cœurs qui montent", "technique": "mini-récit de personnages"},
+      {"t": "0:53.5-0:57.4", "what": "Fondu par le papier, coucher de soleil aquarellé, « and when the sun goes down… », panoramique vers la plage", "technique": "fondu au papier + panoramique"},
+      {"t": "0:57.4-0:58.3", "what": "La nuit descend du haut avec un bord ondulé", "technique": "rideau de nuit"},
+      {"t": "0:58.3-1:05.5", "what": "Village de nuit : lune et étoiles en fondu, fenêtres qui s'allument, lucioles, « sweet dreams », étoile filante", "technique": "allumage décalé, halos"},
+      {"t": "1:05.6-1:06.0", "what": "Un cercle de rayons pastel s'ouvre depuis le centre", "technique": "iris d'ouverture"},
+      {"t": "1:06.0-1:12.5", "what": "Tous les personnages surgissent en couronne autour du poussin, puis « drawn by hand, brought to life. »", "technique": "pop en rafale"},
+      {"t": "1:14.0-1:15.0", "what": "Explosion de confettis depuis le centre", "technique": "particules"},
+      {"t": "1:15.6-1:17.9", "what": "Iris qui se ferme sur le poussin, noir, « the end » + cœur qui atterrit sur le dernier coup, fondu", "technique": "iris de fermeture + carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Sur les planches microscope, les 10 coupes du montage visibles (f659, f824, f839, f854, f862, f869, f877, f899, f907, f914) tombent toutes 0–1 im avant une barre (6 sur temps plein, 4 sur demi-temps), avec un point vert d'attaque sur la même image. Sur extra-01, les 4 marques d'anticipation des animaux tombent sur les temps (f300, f330, f360, f390 pour des temps à f300,5, f330,5, f360,5, f390,5), le personnage surgit 3 im après. Aussi sur la barre : apparition de « every » (f660), coupe vers le tournesol (f959, barre f960), vague à mi-cadre (f1305), blanc du fondu au papier (f1619, barre f1620), fin du rideau de nuit (f1740), pop du poussin (f1986), « the end » qui se pose à f2310 (temps à 77,018 s). Bilan : 23 gestes clés sur 24 à ±2 im d'une barre de temps ou demi-temps, 19 sur 24 sur temps plein (hasard ≈ 33 %). Seul raté : le départ de l'iris (f1968, +3 im). Indice du dossier : départs/demi-temps p = 3,5e-11, grosse caisse z = 3,78.",
+    "synced": ["coupes", "departs", "apparitions", "texte", "atterrissages", "couleur"],
+    "style_match": "Musique enjouée à 120 BPM pour le jour, ralentie à ≈ 80 BPM pour la nuit : pops et coupes suivent la frappe, la nuit ralentit avec le son.",
+    "how_built": "Le prompt exige « sounds matching the frames using JavaScript » : bande-son et effets probablement synthétisés dans le même code que la timeline, d'où des coupes à la même phase (1 im avant le temps) et un changement de tempo par section narrative."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Décor qui se dessine puis se colore",
+      "name_en": "self-drawing set + watercolor fill",
+      "t": "0:00.6-0:02.7",
+      "frames": "f18-f81",
+      "fps": 30,
+      "mechanics": "Sur papier vierge, un trait d'encre noir (≈ 3 px) trace l'arc de la colline de gauche à droite en ≈ 1,6 s, vitesse quasi constante ; puis un lavis vert apparaît en fondu (≈ 0,5 s) sous le trait. Le soleil glisse depuis le bord droit (≈ 0:03). Lent pour une ouverture : 1,6 s de maintien quasi statique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre manuscrit tapé mot à mot puis lettre à lettre",
+      "name_en": "handwritten typewriter title",
+      "t": "0:04.3-0:06.5",
+      "frames": "f130-f195",
+      "fps": 30,
+      "mechanics": "« a day in the » (≈ 4 % de hauteur) apparaît mot par mot (≈ 0,5 s par mot), puis « sketchbook » (≈ 10 %) lettre par lettre à ≈ 6–7 lettres/s, coupure nette sans fondu, à gauche puis centré. Même recette pour « good morning! », « and when the sun goes down… », « sweet dreams », « drawn by hand, brought to life. ».",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre effacé au passage d'un personnage",
+      "name_en": "character-driven text erase",
+      "t": "0:07.0-0:09.5",
+      "frames": "f210-f285",
+      "fps": 30,
+      "mechanics": "Un oiseau sticker traverse de gauche à droite au-dessus du titre ; les lettres de « sketchbook » disparaissent de gauche à droite dans son sillage (à 9,0 s il ne reste que « o k »), probable effacement lettre à lettre inverse de la frappe. Le personnage « emporte » le titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Marque d'anticipation sur le temps, apparition 3 im après",
+      "name_en": "anticipation spark then pop",
+      "t": "0:10.0-0:13.2",
+      "frames": "f300-f396",
+      "fps": 30,
+      "mechanics": "3 petits traits rayonnants (≈ 2 % du cadre) apparaissent à l'endroit exact où le personnage va surgir, sur le temps (f300, f330, f360, f390) ; 3 im plus tard (0,1 s) le personnage sticker sort de derrière la colline avec son onomatopée (« tweet! », « meow », « yip! », « hoo! »). Le poussin monte, dépasse vers le haut puis redescend (≈ 6–9 im). Une entrée toutes les 2 temps, puis à chaque temps à partir de 14 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-03.jpg",
+      "illus": {"from": 298, "to": 312, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Onomatopées manuscrites qui accompagnent chaque entrée",
+      "name_en": "handwritten sound-word captions",
+      "t": "0:10.5-0:21.0",
+      "frames": "f315-f630",
+      "fps": 30,
+      "mechanics": "Chaque animal porte son cri écrit (≈ 2,5 % de hauteur) juste au-dessus de la tête, avec des traits de vibration ; le mot s'estompe en ≈ 0,8 s. Matérialise l'effet sonore. Trop petit pour être lu à la volée.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Entrées qui accélèrent (2 temps puis 1 temps)",
+      "name_en": "accelerating entrance cadence",
+      "t": "0:10.0-0:18.5",
+      "frames": "f300-f555",
+      "fps": 30,
+      "mechanics": "Entre 10 et 14 s, un animal toutes les 1 s (2 temps) ; de 14 à 18 s, un toutes les 0,5 s (chaque temps), plus la rangée de premier plan. La scène se remplit de plus en plus vite jusqu'à « good morning! ».",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Vidage du cadre avant la coupe (tout le monde saute hors champ)",
+      "name_en": "clear-the-frame exit",
+      "t": "0:21.57-0:21.97",
+      "frames": "f647-f659",
+      "fps": 30,
+      "mechanics": "Le texte s'efface, puis toute la troupe saute vers le haut et sort du cadre en ≈ 10 im (f647–656), rangée du fond d'abord, premier plan ensuite, accélération vers le haut (ease-in). 2 im de paysage vide (f657–658), coupe sur la barre de temps (f659 → barre f660). Le vide prépare le changement de régime.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f659.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Gros plan de dessin en « petite planète »",
+      "name_en": "drawing crop as tiny planet",
+      "t": "0:21.97-0:31.0",
+      "frames": "f659-f940",
+      "fps": 30,
+      "mechanics": "Un détail des dessins fournis (pastèque, araignée, fleurs, maison, tournesol…) agrandi ≈ 5–10 × et masqué par un grand cercle dont seul l'arc supérieur est visible (bord du cercle à ≈ 45–60 % de hauteur, contour noir 2 px). Fond uni de papier coloré au-dessus. Un personnage sticker marche sur l'arc. Illustre littéralement « every page is a little world ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f824.jpg, overview-05.jpg",
+      "illus": {"from": 850, "to": 879, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Montage en accélération : 2 temps → 1 → ½ → ¼",
+      "name_en": "accelerating cut montage",
+      "t": "0:21.97-0:30.97",
+      "frames": "f659-f929",
+      "fps": 30,
+      "mechanics": "Coupes à 21,97 / 22,97 / 23,97 / 24,97 / 25,97 s (toutes les 30 im), puis toutes les 15 im (26,47–28,47), puis toutes les 7–8 im (28,47–29,97), puis toutes les ≈ 4 im (29,97–30,97 : f899, 903, 907, 911, 914, 918, 922, 926, 929). Chaque coupe arrive 1 im avant le temps ou la subdivision. Le mot à l'écran reste, seul le fond et la planète changent : la lecture tient malgré la vitesse.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f862.jpg, microM-004-cut-f903.jpg, microM-005-cut-f926.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Fond pastel qui change à chaque coupe",
+      "name_en": "per-cut pastel background swap",
+      "t": "0:22.0-0:31.0",
+      "frames": "f659-f940",
+      "fps": 30,
+      "mechanics": "Le fond de papier au-dessus de la planète change de teinte à chaque coupe : bleu ciel, jaune, pêche, vert d'eau, menthe, sable, lilas, bleu nuit, rose, saumon, sarcelle, framboise… Le texte reste noir (blanc sur le bleu nuit). Variation de couleur sans changer la composition.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f903.jpg, microM-005-cut-f926.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui grandit depuis un point, un mot par phrase musicale",
+      "name_en": "scale-up word reveal",
+      "t": "0:21.97-0:31.0",
+      "frames": "f660-f665",
+      "fps": 30,
+      "mechanics": "« every » apparaît à ≈ 1 % de hauteur sur la barre de temps (f660), puis 3 % (f661), 5 % (f662), 7–8 % (f663–665) : grossissement de ≈ 10 % à 100 % en 5 im, ease-out, sans dépassement, centré en haut (≈ 20 % du haut). Un mot toutes les 2 coupes, la phrase « every page is a little world » se lit sur 9 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f659.jpg, microM-002-cut-f824.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Sticker qui marche sur l'arc de la planète",
+      "name_en": "sticker walk on curve",
+      "t": "0:21.97-0:22.6",
+      "frames": "f659-f676",
+      "fps": 30,
+      "mechanics": "Le chat sticker (≈ 10 % de hauteur) avance le long de l'arc de gauche à droite, ≈ 1,5 % de la largeur par image, avec une petite rotation qui suit la tangente du cercle et un sautillement de ≈ 1 % à chaque pas. Pas de déformation : le sticker reste rigide.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f659.jpg, microM-002-cut-f824.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans la dernière planète puis recul révélateur",
+      "name_en": "zoom-through + pull-back reveal",
+      "t": "0:31.53-0:33.27",
+      "frames": "f946-f998",
+      "fps": 30,
+      "mechanics": "Poussée dans le cœur du tournesol : échelle ≈ 100 % → 250 % en 9 im (f946–955), accélérée (ease-in) ; 3 im de flou + délavage (f956–958) ; coupe sur le temps (f959, barre f960) vers le même tournesol en très gros plan. Pause de 16 im, puis recul de ≈ 250 % à 100 % en 23 im (f975–998), ease-out fort, qui révèle tige, feuilles, sol, abeille, soleil. Atterrissage sur un demi-temps (f998).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f958.jpg, microM-007-move-f986.jpg",
+      "illus": {"from": 946, "to": 998, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Jardin qui pousse par accumulation",
+      "name_en": "growing garden build",
+      "t": "0:33.5-0:39.0",
+      "frames": "f1005-f1170",
+      "fps": 30,
+      "mechanics": "Lavande, coquelicots, fleurs bleues, roses, campanules apparaissent un bouquet à la fois depuis la ligne de sol (croissance verticale ≈ 0,3–0,5 s), environ un toutes les 0,5–1 s, de gauche à droite puis à droite du tournesol ; papillons et abeilles entrent et volettent sur des trajets sinueux. Le cadre se remplit sans jamais couper.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Légumes stickers qui surgissent du sol en décalé",
+      "name_en": "staggered sticker pop-up",
+      "t": "0:38.5-0:41.0",
+      "frames": "f1155-f1230",
+      "fps": 30,
+      "mechanics": "Carotte, potiron, maïs, poire, champignon, raisin, pastèque, radis montent du bas du cadre l'un après l'autre, décalage ≈ 6 im, montée ≈ 6–8 im ease-out, puis se dandinent (« hup! hup! »). Remplit le premier plan sur ≈ 25 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1177.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet par objet : la vague qui emporte le jardin",
+      "name_en": "object wipe (wave)",
+      "t": "0:43.27-0:44.03",
+      "frames": "f1298-f1321",
+      "fps": 30,
+      "mechanics": "Après « uh-oh! », une vague dessinée et détourée (≈ 60 % de la hauteur) entre par la gauche et traverse le cadre en ≈ 22 im : la moitié du cadre en 7 im (f1298–1305, front à mi-cadre sur la barre de temps f1305), l'autre moitié en 15 im (ease-out). Derrière elle, le fond marin est déjà là, avec les légumes dedans. Transition motivée par le récit.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1309.jpg",
+      "illus": {"from": 1297, "to": 1321, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond marin dessiné : rayons, bulles, algues qui ondulent",
+      "name_en": "underwater ambience",
+      "t": "0:44.0-0:53.9",
+      "frames": "f1320-f1618",
+      "fps": 30,
+      "mechanics": "Dégradé bleu du haut clair vers le bas foncé, rayons de lumière obliques semi-transparents, bulles qui montent en continu, algues vertes qui oscillent, sol sable. Les légumes flottent vers le haut en tournoyant et sortent par le haut (44–46 s), un poisson traverse.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Mini-récit muet : pieuvre triste, méduse, cœurs",
+      "name_en": "wordless micro-story",
+      "t": "0:45.5-0:53.5",
+      "frames": "f1365-f1605",
+      "fps": 30,
+      "mechanics": "La pieuvre monte, un « ! » de surprise apparaît (47,5 s), son visage passe à triste, des méduses descendent ; une méduse rose s'approche, les yeux de la pieuvre deviennent amoureux, des cœurs roses montent en grappe (51–53 s). Jeu d'acteur par changement d'expression et symboles, pas par déformation.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu par le papier",
+      "name_en": "dip to paper",
+      "t": "0:53.57-0:54.27",
+      "frames": "f1607-f1628",
+      "fps": 30,
+      "mechanics": "La scène sous-marine se délave vers le crème du papier en ≈ 12 im (linéaire), image crème pure f1619 (barre de temps f1620), puis le coucher de soleil aquarellé apparaît en ≈ 8 im. Un fondu au blanc qui garde la matière papier.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1619.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique dans un dessin fourni",
+      "name_en": "pan across drawing",
+      "t": "0:55.5-0:57.2",
+      "frames": "f1665-f1716",
+      "fps": 30,
+      "mechanics": "Le dessin du coucher de soleil (oiseaux sur un fil, barque) glisse vers la droite de ≈ 40 % de la largeur en ≈ 1,5 s, ease-in-out, révélant une plage à palmiers sur la gauche. Le texte « and when the sun goes down… » reste fixe en haut.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La nuit tombe comme un rideau à bord ondulé",
+      "name_en": "wavy night curtain",
+      "t": "0:57.27-0:58.0",
+      "frames": "f1718-f1740",
+      "fps": 30,
+      "mechanics": "Une forme bleu nuit à bord ondulé (vagues de ≈ 8 % d'amplitude) descend du haut et couvre la scène rose en ≈ 22 im, ease-in-out ; la scène de village de nuit est révélée dessous. Départ sur un demi-temps (f1718), fin sur un temps (f1740). Illustre le texte « when the sun goes down ».",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f1728.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Allumages décalés avec halos (fenêtres, lune, lucioles)",
+      "name_en": "staggered glow lights",
+      "t": "0:58.5-1:05.5",
+      "frames": "f1755-f1965",
+      "fps": 30,
+      "mechanics": "La lune apparaît en fondu avec un halo large (≈ 25 % du cadre), les étoiles scintillent, les fenêtres des maisons s'allument une par une (≈ toutes les 0,5 s) avec un halo jaune doux, lucioles vertes qui dérivent, étoile filante qui raye « sweet dreams » puis le texte s'estompe. Calme mais très lent : ≈ 5 s de quasi-immobilité.",
+      "verdict": "adapter",
+      "evidence": "overview-10.jpg, overview-11.jpg, microM-012-cut-f1970.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris d'ouverture vers les rayons pastel",
+      "name_en": "iris-out reveal",
+      "t": "1:05.6-1:05.83",
+      "frames": "f1968-f1974",
+      "fps": 30,
+      "mechanics": "Un disque contenant le nouveau fond (rayons pastel) naît au centre (≈ 25 % de la hauteur, f1968), passe à 65 % (f1969), 100 % (f1970), 140 % (f1972), plein cadre f1974 : 6 im, accélération. Puis le poussin surgit au centre (f1983–1987, pop d'échelle, barre f1986).",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1970.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond en rayons de soleil pastel",
+      "name_en": "pastel sunburst",
+      "t": "1:05.8-1:15.7",
+      "frames": "f1974-f2271",
+      "fps": 30,
+      "mechanics": "≈ 32 rayons alternant pêche, menthe, lilas, beurre, bleu gris sur papier crème, centre à ≈ 55 % de hauteur, texture papier conservée, rotation très lente (probable). Fond de fête classique.",
+      "verdict": "cliche",
+      "evidence": "overview-12.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Couronne de personnages en pop rafale",
+      "name_en": "popcorn stagger ring",
+      "t": "1:06.3-1:10.0",
+      "frames": "f1989-f2100",
+      "fps": 30,
+      "mechanics": "≈ 30 stickers (tous les personnages vus) apparaissent autour du poussin en anneau, un toutes les ≈ 3 im (0,1 s), positions dispersées puis complétées, pop d'échelle court. Récapitule le casting, mais l'anneau final est très serré et chaque personnage ne fait que ≈ 6 % de hauteur.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de confettis depuis le centre",
+      "name_en": "confetti burst",
+      "t": "1:14.1-1:15.0",
+      "frames": "f2223-f2250",
+      "fps": 30,
+      "mechanics": "Ronds, étoiles et cœurs pastel jaillissent du poussin dans toutes les directions (≈ 40 particules), décélèrent et tombent en ≈ 0,9 s ; départ ≈ 2 im après le temps (74,023 s). Le poussin saute en même temps.",
+      "verdict": "cliche",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Iris de fermeture sur le héros puis « the end » sur le dernier coup",
+      "name_en": "iris-in + end card on final hit",
+      "t": "1:15.6-1:17.9",
+      "frames": "f2268-f2338",
+      "fps": 30,
+      "mechanics": "Cercle qui se referme sur le poussin en ≈ 21 im (≈ 160 % → point, f2268–2289), noir 0,4 s, puis « the end » grandit de ≈ 10 % à ≈ 105 % (f2301–2307) et se pose à 100 % à f2310, exactement sur le temps et le dernier coup musical (77,0 s) ; un cœur rose se pose sur le « d ». Fondu au noir.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-13.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Traitement sticker des dessins fournis",
+      "name_en": "die-cut sticker treatment",
+      "t": "0:10.0-1:16.0",
+      "frames": "f300-f2280",
+      "fps": 30,
+      "mechanics": "Chaque dessin scanné est détouré avec un liseré blanc ≈ 6 px et une ombre portée grise douce (≈ 4 px, flou ≈ 6 px). Unifie des dessins de styles et d'échelles différents et les sépare du fond aquarellé.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes 1 im avant le temps et tempo qui suit le récit",
+      "name_en": "beat-led cuts + narrative tempo change",
+      "t": "0:10.0-1:17.0",
+      "frames": "f300-f2310",
+      "fps": 30,
+      "mechanics": "À 120 BPM (15 im par temps) : marques d'anticipation sur le temps, coupes du montage 1 im avant le temps puis sur les subdivisions (½, ¼), carton final sur le dernier coup. La section coucher de soleil/nuit passe à ≈ 80 BPM avec une pulsation floue : la musique se calme avec l'image. Onomatopées écrites à chaque entrée, probables effets sonores synthétisés.",
+      "verdict": "reprendre",
+      "evidence": "microM-001..005, extra-01.jpg, extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Les dessins à la main fournis sont la matière de toute la vidéo : détourés en stickers ou recadrés en « planètes », ils donnent une authenticité qu'aucune génération n'aurait eue."},
+    {"kind": "build", "insight": "« that has sounds matching the frames using JavaScript » a conduit à générer le son dans le même code que l'image : coupes et apparitions à la même phase du temps, tempo qui change par section."},
+    {"kind": "direction", "insight": "« playful and joyful » s'est traduit par palette pastel, onomatopées, pops et rayons de soleil ; « professional videographer » n'a pas produit de vraie animation de personnages (pas de squash, pas de rebond)."},
+    {"kind": "inputs", "insight": "La vidéo exemple fournie (video-examples/twitter_claude.mp4) a probablement inspiré la structure en rafale de mots et le carton final ; impossible à vérifier sans elle."},
+    {"kind": "qa", "insight": "Aucune contrainte de durée ni de densité : la nuit compte ≈ 5 s quasi statiques. À préciser : « un événement visuel toutes les 0,5–1 s, aucun maintien au-delà de 1 s »."}
+  ],
+  "steal": [
+    "Recadrer un détail d'illustration dans l'arc d'un grand cercle en bas du cadre : chaque image devient une petite planète sur laquelle un personnage marche.",
+    "Montage en accélération : couper toutes les 2 temps, puis 1, puis ½, puis ¼, en gardant le même mot à l'écran.",
+    "Poser 3 petits traits d'anticipation sur le temps à l'endroit exact où un personnage va surgir 3 images plus tard.",
+    "Vider le cadre (tous les personnages sautent hors champ) juste avant une coupe sur le temps.",
+    "Transition par objet du récit : une vague, la nuit ou une plongée dans une fleur fait passer à la scène suivante."
+  ],
+  "flaws": [
+    "Section nuit (58–65 s) presque immobile : contraire à la règle « quelque chose bouge toutes les 0,5–1 s ».",
+    "Personnages en stickers rigides : pops, glissements et dandinements, aucun écrasement ni rebond d'atterrissage.",
+    "Couronne finale de ≈ 30 stickers serrés et confettis : surcharge générique.",
+    "Onomatopées à ≈ 2,5 % de hauteur, illisibles à la volée."
+  ],
+  "deep_study": {"worth": true, "why": "Le montage « planètes » (21,5–33,3 s) mérite une étude image par image : accélération 2 → 1 → ½ → ¼ temps, coupes 1 im avant le temps, plongée puis recul. Le reste (sections lentes, stickers rigides) n'en vaut pas la peine. Natif 30 fps."}
+}

@@ -1,0 +1,376 @@
+{
+  "slug": "madhav-xo-f97f20",
+  "title": "Personal research intro reel",
+  "handle": "@Madhav_XO",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Synchro exacte image-son (10 transitions sur 10 sur le temps), système HUD cohérent, deux compressions-explosions et extinction cathodique soignées ; mais vocabulaire de bande-annonce tech très vu et tableaux lisibles 0,33 s seulement.",
+  "summary": "Carte de visite de 10 s pour un ingénieur IA : un terminal « compile » Madhav, le code se dissout en particules, un flash ouvre huit tableaux de compétences (réseau neuronal, pile, agents, cadenas, compteur 100K+), un par temps à 120 BPM, puis tout s'écrase en trait de lumière d'où naît le nom chromé. Son synthétique calé à l'image près ; fin en extinction cathodique. Rythme exemplaire, imagerie convenue.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : une vidéo de 10 s sur « tout ce que tu sais de moi ». Il impose la durée et le sujet (la personne, connue par la mémoire de Claude, probable), rien sur la forme ni le son.",
+    "Claude a tout décidé : terminal qui compile « madhav.cpp » en « future », huit compétences en huit temps à 120 BPM, formes en particules, flashs d'impact, titre chromé, slogan en serif italique, bande-son synthétique et extinction cathodique.",
+    "Sans cadrage, Claude a produit une bande-annonce tech très codifiée (terminal, particules, glitch, lens flare). Il aurait fallu préciser le ton, une direction artistique propre et 4 compétences au lieu de 8 pour les laisser lire."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#020205", "role": "fond du terminal (quasi noir)"},
+      {"hex": "#04070C", "role": "fond des tableaux et de la fin, bleu nuit vignetté"},
+      {"hex": "#52D7D8", "role": "cyan d'accent unique : invite, barres, nœuds, curseur"},
+      {"hex": "#707181", "role": "libellés gris du terminal (« compiling »)"},
+      {"hex": "#C4C6D4", "role": "texte clair du terminal"},
+      {"hex": "#F2A36B", "role": "orange de « madhav.cpp » (estimé)"},
+      {"hex": "#9D8CF2", "role": "violet des options « -O3 », « -o » (estimé)"},
+      {"hex": "#B8D27E", "role": "vert-jaune de « future » et « ok » (estimé)"},
+      {"hex": "#D9DCE4", "role": "chrome du nom, haut (bas : #C0CDE0)"},
+      {"hex": "#BFC9D2", "role": "slogan en serif italique"},
+      {"hex": "#7FD3D6", "role": "mot « shouldn't » (estimé, mesuré #7AADB0 anticrénelé)"}
+    ],
+    "type": "Mono (type JetBrains Mono) pour le terminal ; titres de scène en grotesque grasse capitales ≈ 5 % de hauteur ; nom en linéale extra-étendue très grasse chromée (type Monument Extended, probable) 11,5 % ; slogan en serif italique 4,4 % ; sous-titre en capitales espacées.",
+    "texture": "Points lumineux en mélange additif avec halo (bloom), poussière qui flotte au-dessus du nom, vignettage fort sur fond bleu nuit, halo cyan diffus en haut à gauche de la carte de fin. Aberration chromatique et traînées horizontales seulement pendant les glitchs ; halo anamorphique horizontal aux deux impacts. Pas de grain visible, aucun flou de mouvement sur les particules.",
+    "style": "Bande-annonce tech HUD nocturne",
+    "coherence": "Tient par un fil conducteur machine : terminal à l'ouverture, curseur cyan qui revient sous le lien GitHub, extinction cathodique à la fin. Un seul cyan d'accent (#52D7D8) du premier caractère au mot « shouldn't ». Une seule transition (morph de particules) pour les huit tableaux, un habillage HUD constant (coins, timecode, compteur SKILL 0X/08). La fin s'organise sur un axe unique : le trait de lumière, le nom et le point d'extinction partagent la même ligne (y ≈ 309 px, 43 % de la hauteur) et le trait a la largeur exacte du nom. Ce qui casse un peu : les accents orange, rose et vert des satellites et de la barre HUD sortent de la palette ; la serif italique tranche (contraste voulu, probable)."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM mesuré (netteté 6,18) ; dans l'image, la grille tombe exactement sur des multiples de 0,5 s. Trois parties. Terminal 0-2,0 s sans pulsation : bruitages calés sur chaque événement (invite, frappe, lignes, glitch). Montage 2,0-6,5 s : chaque tableau dure exactement un temps (30 im), changements à f120, f150, f180, f210, f240, f270, f300, f330, f360, f390 ; forme lisible ≈ 10 im après le temps, stable ≈ 20 im. Carte de fin 6,5-10 s sur une traîne sans pulsation : sous-titre à 7,0 s et slogan à 7,5 s encore posés sur la grille, puis un mot toutes les 7 im. Densité : un événement toutes les 0,12 à 0,5 s jusqu'à 8,67 s. Seul quasi-maintien : 8,67-9,55 s (0,9 s), où ne bougent que le curseur, la poussière et une poussée lente de 3,3 %. La détection automatique d'un maintien de 0 à 1,58 s est fausse : la frappe bouge en continu, seules les 10 premières images (0,17 s) sont noires.",
+    "timeline": [
+      {"t": "0:00.00-0:00.17", "what": "Écran bleu nuit vignetté, vide (f0-f9) ; silence numérique jusqu'à 0,17 s", "technique": "amorce noire"},
+      {"t": "0:00.17-0:00.88", "what": "Invite cyan « ~/madhav $ » (f10, clic à f11), puis « g++ -O3 madhav.cpp -o future » tapé à ≈ 47 caractères/s (f16-f52)", "technique": "frappe machine sonorisée"},
+      {"t": "0:00.98-0:01.35", "what": "Trois lignes « compiling ai_infra.cpp », « compiling fullstack.cpp », « linking 500+ solutions » toutes les 7-8 im, barres cyan remplies en 6-7 im, « ok » ; nouvelle invite à f81", "technique": "cascade de compilation"},
+      {"t": "0:01.40-0:01.53", "what": "« ./future » tapé à 1 caractère par image, entrée à f92", "technique": "frappe machine"},
+      {"t": "0:01.57-0:01.98", "what": "Glitch du bloc (f94), qui devient un nuage de points glissant en diagonale puis se resserre en un point blanc de ≈ 9 % de la largeur (f119) ; le son se creuse", "technique": "dissolution en particules, compression"},
+      {"t": "0:02.00-0:02.20", "what": "Flash plein cadre blanc-bleu + traînée horizontale (f120), sphère qui éclate en milliers de points, onde de choc ; impact grave à 2,03 s (vrai drop)", "technique": "compression puis explosion sur le temps"},
+      {"t": "0:02.12-0:02.50", "what": "« AI INFRASTRUCTURE » en glitch (f127) ; les points forment un réseau neuronal en colonnes", "technique": "titre glitch + formation de particules"},
+      {"t": "0:02.50-0:03.00", "what": "« FULL-STACK » : morph vers quatre plans isométriques empilés (UI, API, DATA, INFRA)", "technique": "morph de particules sur le temps"},
+      {"t": "0:03.00-0:03.50", "what": "« MULTI-AGENT SYSTEMS » : sphère « ORCHESTRATOR » et six satellites colorés en orbite", "technique": "morph de particules sur le temps"},
+      {"t": "0:03.50-0:04.00", "what": "« ZERO-KNOWLEDGE SECURITY » : cadenas de points et anneaux pointillés", "technique": "morph de particules sur le temps"},
+      {"t": "0:04.00-0:04.50", "what": "« 500+ PROBLEMS » : champ de tuiles en perspective qui ondule", "technique": "morph de particules sur le temps"},
+      {"t": "0:04.50-0:05.00", "what": "« 51K+ → 100K+ STUDENTS » : le titre compte (f272-f290) sur un disque de points en perspective", "technique": "compteur dans le titre"},
+      {"t": "0:05.00-0:05.50", "what": "« 10+ NATIONAL TOURNAMENTS » : tableau de tournoi dont les traits s'illuminent vers « FINAL »", "technique": "morph de particules sur le temps"},
+      {"t": "0:05.50-0:06.00", "what": "« PAPERS → PRODUCTION » : feuille et baie de serveurs reliées par un flux de points", "technique": "morph de particules sur le temps"},
+      {"t": "0:06.00-0:06.50", "what": "Le titre sort en glitch (f360-f367) ; tout s'enroule en tourbillon (f375) puis s'écrase en trait de lumière qui s'étire à 78 % de la largeur (f381-f389) ; le son se creuse", "technique": "compression en trait de lumière"},
+      {"t": "0:06.50-0:06.63", "what": "Flash (f390) + impact grave à 6,525 s ; « MADHAV » s'ouvre verticalement depuis le trait, avec aberration chromatique et anneau ; net à f398", "technique": "nom qui naît du trait"},
+      {"t": "0:06.63-0:07.00", "what": "Nom chromé seul, écho en contour qui s'efface, poussière ; début de la poussée lente", "technique": "titre chromé + poussée lente"},
+      {"t": "0:06.97-0:07.20", "what": "« AI INFRASTRUCTURE · FULL-STACK ENGINEER » apparaît entre deux filets (f418-f432), sur la grille de 7,0 s", "technique": "sous-titre en fondu"},
+      {"t": "0:07.48-0:08.05", "what": "« Build things that shouldn't exist yet. » mot à mot toutes les 7 im ; « shouldn't » en cyan", "technique": "slogan mot à mot"},
+      {"t": "0:08.42-0:08.67", "what": "« github.com/madhav-xo » en fondu (f505-f519) puis curseur cyan qui clignote (période 0,68 s)", "technique": "rappel du curseur du terminal"},
+      {"t": "0:08.67-0:09.55", "what": "Quasi-maintien : poussée lente, poussière, curseur", "technique": "maintien vivant"},
+      {"t": "0:09.57-0:09.92", "what": "Extinction cathodique : l'image s'écrase vers la ligne du nom (10 im), trait 4 im, rétraction en point (6 im), noir à f595 ; glissando descendant", "technique": "extinction d'écran cathodique"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Montage : 10 changements sur 10 démarrent à 1-2 im avant une barre de temps (flash à f120 pour une barre à f122 ; pics de changement du titre à f150-f151, f181, f211, f241, f271, f301, f331, sortie à f360 ; flash à f390 pour une barre à f391-f392). Attaques audio détectées à 2,026 ; 2,543 ; 3,535 ; 4,534 ; 5,033 ; 5,532 ; 6,031 ; 6,525 s (les deux autres, 3,03 et 4,03 s, visibles dans l'enveloppe RMS), soit ≈ 2 im (33 ms) après le début du changement d'image. Hasard : une fenêtre de ±2 im autour des seuls temps couvre 17 % des images, donc 10/10 n'arrive par hasard qu'avec une probabilité d'environ 2×10⁻⁸. Terminal : 5 événements sur 5 à ±2 im d'une attaque (invite f10 / f11, frappe f16 / f17, ligne f59 / f57, « ./ » f84 / f85, glitch f94 / f95). Carte de fin : sous-titre (f418-f420) et slogan (f449) démarrent sur la grille de 7,0 et 7,5 s mais la musique n'a plus de pulsation (traîne de −6 à −37 dB) ; mots (pas de 7 im) et curseur (période 41 im) sont libres. Extinction (f574) avec son glissando à 9,55 s. Indice automatique concordant : départs/temps R = 0,942, p = 2,2×10⁻⁶, décalage −27 ms (l'image précède le son). Le « drop à 0,79 s » du dossier est un artefact (sortie du silence numérique) : le vrai drop est à 2,03 s (−30 → −8 dB).",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "Oui : son de bande-annonce tech synthétique (impacts graves à 120 BPM, accord de ré majeur, glissando final) pour un univers HUD nocturne de particules, glitchs et flashs.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Les changements tombent exactement sur 2,0 ; 2,5 ; … ; 6,5 s, et la bande-son contient des clics de frappe alignés sur le texte tapé, des impacts sinusoïdaux graves (fondamentale ≈ 43-60 Hz) sur chaque temps du montage, un accord pur en partiels (587, 1174, 1470, 1760 Hz) sous le nom et un glissando ≈ 560 → 370 Hz sur l'extinction. Image et son ont donc très probablement été écrits ensemble en code, depuis une même liste d'événements sur une grille de 120 BPM ; le décalage constant de ≈ 30 ms correspond à l'attaque des sons synthétiques. C'est la recette la plus sûre pour HyperFrames : générer la bande-son à partir de la timeline plutôt que de caler l'image sur une musique existante."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Changement de tableau exactement sur chaque temps",
+      "name_en": "Scene change locked to every beat",
+      "t": "0:02.00-0:06.50",
+      "frames": "f120-f390",
+      "fps": 60,
+      "mechanics": "Dix changements à f120, f150, f180, f210, f240, f270, f300, f330, f360 et f390, multiples exacts de 0,5 s : un tableau par temps à 120 BPM (30 im). Le pic de changement du titre tombe 1 im avant la barre bleue, les flashs 1,5 à 2 im avant ; les attaques audio arrivent ≈ 2 im (33 ms) après le début du changement d'image. L'image devance donc légèrement le son, ce que l'œil lit comme parfaitement synchrone. Lien de caractère : chaque impact grave décroît en ≈ 0,5 s, comme chaque tableau, qui se forme vite après le temps puis vit calmement jusqu'au suivant. 10 sur 10 à ±2 im d'un temps (hasard 17 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg ; microM-002-move-f213.jpg ; microM-003-move-f333.jpg ; microM-004-cut-f390.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages calés sur les événements du terminal",
+      "name_en": "Foley clicks on terminal events",
+      "t": "0:00.17-0:01.60",
+      "frames": "f10-f96",
+      "fps": 60,
+      "mechanics": "Pas de pulsation dans l'intro (planéité spectrale 0,71 : bruit plutôt que musique) ; chaque événement visible a son attaque. Invite « ~/madhav $ » à f10, attaque aiguë à 0,186 s (f11). Début de frappe à f16, attaque à 0,284 s (f17). Ligne « compiling » à f59, attaque à 0,952 s (f57 : le son devance de 2 im). « ./ » tapé à f84, attaque à 1,422 s (f85). Glitch à f94, attaque à 1,591 s (f95). 5 sur 5 à ±2 im. Le son fait exister le clavier sans musique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Creux du son pendant la compression, impact sur l'explosion",
+      "name_en": "Silence before the hit",
+      "t": "0:01.88-0:02.10 ; 0:06.30-0:06.60",
+      "frames": "f113-f126 ; f378-f396",
+      "fps": 60,
+      "mechanics": "Avant chaque impact, le son se creuse pendant que l'image se contracte. Premier : RMS −22 dB à 1,9 s puis −30 dB à 2,0 s pendant que le point blanc rétrécit (f113-f119), puis −8 dB à 2,1 s (impact grave, fondamentale ≈ 43-60 Hz, et bruit aigu) avec le flash à f120. Second : −15 dB à 6,4 s, −24 dB à 6,5 s pendant que le trait s'étire, puis −6 dB à 6,6 s avec le flash à f390. Le creux sonore et la compression visuelle préparent ensemble l'explosion.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg ; microM-004-cut-f390.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Accord de résolution sous le nom, glissando pour l'extinction",
+      "name_en": "Resolving chord under the name, pitch-down sweep on power-off",
+      "t": "0:06.53-0:10.00",
+      "frames": "f392-f600",
+      "fps": 60,
+      "mechanics": "Après le second impact, plus aucune pulsation : une traîne tonale décroît de −6 à −37 dB en 3 s. Pics spectraux à 587, 1174, 1470 et 1760 Hz (ré, ré, fa dièse, la) : un accord de ré majeur pur, en partiels de synthèse (probable), qui résout au moment où le nom apparaît net. L'extinction cathodique (f574) a son propre son : glissando descendant ≈ 560 → 370 Hz dès 9,55 s, qui accompagne l'écrasement de l'image.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash d'impact surexposé avec halo anamorphique",
+      "name_en": "Overexposed impact flash with anamorphic streak",
+      "t": "0:01.83-0:02.20",
+      "frames": "f110-f131",
+      "fps": 60,
+      "mechanics": "Le nuage se contracte : de 325 × 417 px (f110) à 113 × 107 px (f119, ≈ 9 % de la largeur avec halo), les deux dernières images presque identiques (point tenu). f120 : image noyée de blanc-bleu (luminance moyenne 8 → 114 en 1 im) et traînée horizontale sur 69 % de la largeur. f121 : sphère de 383 px (30 % de la largeur). f122-f123 : elle éclate et ses points couvrent toute la hauteur, puis un anneau fin s'élargit. La luminance retombe d'un facteur ≈ 0,8 par image (87, 80, 63, 48, 37, 29 de f121 à f126). Titre à f127, réseau formé vers f140. C'est la surexposition comme transition.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg",
+      "illus": {"from": 110, "to": 131, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Morph de particules à travers un nuage",
+      "name_en": "Particle morph through a cloud",
+      "t": "0:03.50-0:03.70",
+      "frames": "f210-f222",
+      "fps": 60,
+      "mechanics": "Exemple mesuré (orbites → cadenas) : f211 nouveau titre ; f211-f212 l'objet se désagrège ; f213-f216 nuage informe qui se densifie en boule ; f217 l'arceau du cadenas apparaît ; f218-f221 la forme se précise ; f222 cadenas net avec anneaux pointillés. Soit dissolution 2 im, nuage 4-5 im, reformation 5-6 im : forme lisible ≈ 10-11 im (0,18 s) après le temps. Même mécanique aux huit changements (f150 à f330), probablement une interpolation de positions perturbée par du bruit, en ease-in-out. Variante machine de « la feuille qui se transforme en logo ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f213.jpg ; microM-003-move-f333.jpg ; extra-02.jpg",
+      "illus": {"from": 209, "to": 223, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre de scène changé sur le temps en glitch",
+      "name_en": "On-beat glitch title swap",
+      "t": "0:02.12-0:06.12",
+      "frames": "f127-f367",
+      "fps": 60,
+      "mechanics": "Chaque titre (grotesque grasse en capitales, blanc froid, capitales ≈ 5 % de la hauteur, 41 à 71 % de la largeur selon la longueur, centré à 78 % de la hauteur) remplace le précédent en 1 im, 1 im avant le temps, avec flou horizontal et aberration chromatique ; net en 2-3 im. Une ligne mono minuscule « // … » se tape dessous. Le dernier (« PAPERS → PRODUCTION ») sort en glitch sur 7 im (f360-f367). Calé et efficace, mais le même glitch revient huit fois de suite.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f213.jpg ; microM-003-move-f333.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur dans le titre",
+      "name_en": "Rolling counter inside the headline",
+      "t": "0:04.50-0:04.83",
+      "frames": "f272-f290",
+      "fps": 60,
+      "mechanics": "Le titre de la scène 6 est un compteur : « 51K+ STUDENTS » à f275, « 87K+ » à f280, « 99K+ » à f285, « 100K+ » à f290. À +3, +8, +13 et +18 im du temps, on est à 51, 87, 99 et 100 % : courbe proche d'un ease-out quartique (power4.out) sur ≈ 18 im (0,30 s). Le chiffre se pose avant la mi-temps du tableau et reste lisible ensuite.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Métaphore de compilation dans un terminal",
+      "name_en": "Compile-yourself terminal metaphor",
+      "t": "0:00.17-0:01.55",
+      "frames": "f10-f93",
+      "fps": 60,
+      "mechanics": "Bloc mono centré (≈ 40 % de la largeur, corps ≈ 2,6 % de la hauteur, interligne 40 px) sur fond #020205. Coloration syntaxique : invite cyan #52D7D8, « g++ » blanc, options violettes, « madhav.cpp » orange, « future » vert-jaune, « compiling » gris #707181. Récit en trois lignes : « compiling ai_infra.cpp », « compiling fullstack.cpp », « linking 500+ solutions », barres cyan, « ok », puis « ./future ». La personne est un programme qu'on compile vers le futur : l'idée porte toute l'ouverture et annonce les compétences.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Frappe machine et lignes de compilation en cascade",
+      "name_en": "Machine typing and cascading build lines",
+      "t": "0:00.27-0:01.53",
+      "frames": "f16-f92",
+      "fps": 60,
+      "mechanics": "« g++ -O3 madhav.cpp -o future » (28 caractères) tapé de f16 à f52 : ≈ 1,3 im par caractère (≈ 47 car./s), régulier, curseur bloc cyan. Entrée à f53. Lignes à f59, f66 et f74 (pas de 7-8 im), chaque barre remplie en 6-7 im ; nouvelle invite à f81 ; « ./future » tapé à 1 caractère par image (f84-f91) ; entrée à f92. Le débit accélère de la frappe aux lignes : montée de tension avant le glitch.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le code se dissout et se resserre en un point",
+      "name_en": "Text dissolves into particles and collapses to a point",
+      "t": "0:01.57-0:02.00",
+      "frames": "f94-f120",
+      "fps": 60,
+      "mechanics": "f94-f99 : glitch du bloc de texte (décalage RVB, tranches horizontales). f100-f105 : le bloc devient un nuage de points incliné qui glisse en diagonale vers le centre en tournant. f106-f112 : il se contracte en masse blanche (luminance moyenne 13 → 18). f113-f119 : le point rétrécit encore, de ≈ 25 à ≈ 9 % de la largeur, puis explose à f120. C'est la figure « texte qui rétrécit en point puis révélation circulaire ».",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg ; extra-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Huit formes d'information en nuages de points",
+      "name_en": "Eight particle-built information diagrams",
+      "t": "0:02.13-0:06.00",
+      "frames": "f128-f360",
+      "fps": 60,
+      "mechanics": "Chaque compétence devient une forme de milliers de points lumineux additifs : réseau neuronal en 5-6 colonnes de nœuds cyan (AI INFRASTRUCTURE) ; quatre plans isométriques empilés UI / API / DATA / INFRA (FULL-STACK) ; sphère « ORCHESTRATOR » et six satellites colorés en orbites elliptiques (MULTI-AGENT SYSTEMS) ; cadenas de points dans des anneaux pointillés (ZERO-KNOWLEDGE SECURITY) ; champ de tuiles en perspective qui ondule (500+ PROBLEMS) ; disque de points (STUDENTS) ; tableau de tournoi dont les traits s'illuminent vers « FINAL » (TOURNAMENTS) ; feuille et baie de serveurs reliées par un flux (PAPERS → PRODUCTION). Après formation, chaque forme garde une vie lente : rotation, impulsions, flux.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg ; overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Un temps par tableau : 0,18 s de morph, 0,33 s de lecture",
+      "name_en": "One beat per scene",
+      "t": "0:02.00-0:06.00",
+      "frames": "f120-f360",
+      "fps": 60,
+      "mechanics": "Chaque tableau dure 30 im : ≈ 10-11 im de morph, puis ≈ 19-20 im de forme stable avant le changement suivant. Le titre, gros et court (2 à 4 mots), se lit ; la forme se reconnaît ; ses étiquettes (≈ 1 à 1,5 % de la hauteur) n'ont pas le temps d'être lues. Rythme exemplaire, mais trop d'information pour lui : deux temps par compétence, ou quatre compétences au lieu de huit, donneraient le même élan avec une vraie lecture.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tourbillon qui s'écrase en trait de lumière à la largeur du nom",
+      "name_en": "Swirl collapsing into a light bar sized to the wordmark",
+      "t": "0:06.00-0:06.50",
+      "frames": "f360-f389",
+      "fps": 60,
+      "mechanics": "Le titre sort en glitch (f360-f367) ; la feuille et le serveur se désagrègent en nuage (f368-f372) qui s'enroule en tourbillon à deux bras (f372-f375, ≈ 32 % de la largeur), s'aplatit en lentille de ≈ 27 % × 14 % (f377-f381), puis s'étire en barre perlée : 450, 567, 735, 856, 939, 985, 1001, 1003 px de f382 à f389 (ease-in-out). La barre finit à 78 % de la largeur, la largeur exacte du nom à venir (986-1019 px), centrée sur y ≈ 309 px, l'axe du nom. Compression sur un temps entier, avec creux du son.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f390.jpg ; extra-02.jpg",
+      "illus": {"from": 372, "to": 399, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom qui naît du trait de lumière",
+      "name_en": "Name emerging from the light bar",
+      "t": "0:06.50-0:06.63",
+      "frames": "f390-f398",
+      "fps": 60,
+      "mechanics": "f390 : flash plein cadre (luminance 26 → 91) avec traînée sur 86 % de la largeur. f391 : la barre et un anneau d'onde de choc au centre. f392-f397 : la barre s'ouvre verticalement en lettres « MADHAV » (hauteur qui grandit autour de l'axe du trait), avec aberration chromatique et traînées horizontales ; net à f398, 8 im après le flash. La luminance redescend de 70 à 28 en 7 im. Un écho en contour, plus grand que le cadre, reste derrière puis s'efface vers f420.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f390.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Nom chromé en linéale extra-étendue",
+      "name_en": "Chrome extended display wordmark",
+      "t": "0:06.63-0:09.57",
+      "frames": "f398-f574",
+      "fps": 60,
+      "mechanics": "« MADHAV » en capitales d'une linéale extra-étendue très grasse (type Monument Extended, probable), 83 px de haut (11,5 % de la hauteur), 986 px de large (77 % de la largeur), centré à 43 % de la hauteur. Dégradé vertical chromé #D9DCE4 → #C0CDE0, poussière lumineuse qui flotte au-dessus, halo cyan diffus en haut à gauche.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Sous-titre espacé et slogan en serif italique",
+      "name_en": "Tracked caps subtitle and italic serif tagline",
+      "t": "0:06.97-0:09.57",
+      "frames": "f418-f574",
+      "fps": 60,
+      "mechanics": "Sous-titre « AI INFRASTRUCTURE · FULL-STACK ENGINEER » en capitales ≈ 2,2 % de la hauteur, interlettrage ≈ 0,3 em, gris bleuté, entre deux filets (cyan à gauche, violet à droite), à 56 % de la hauteur, apparu en fondu de f418 à f432. Slogan en serif italique (type Instrument Serif, probable) ≈ 4,4 % de la hauteur, #BFC9D2, avec « shouldn't » en cyan, à 64 % de la hauteur. Contraste entre linéale technique et serif humaine.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan mot à mot",
+      "name_en": "Word-by-word tagline reveal",
+      "t": "0:07.48-0:08.05",
+      "frames": "f449-f487",
+      "fps": 60,
+      "mechanics": "Six mots à f449, f456, f463, f470, f476 et f483 : pas de 7 im (≈ 0,117 s). Chaque mot apparaît en fondu de 3 à 5 im avec un léger glissement vers la gauche (≈ 5 px, puis dérive lente jusqu'à 13 px). Le premier mot tombe sur la grille (7,5 s) ; les suivants suivent un pas fixe, sans pulsation audible.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente sur la carte de fin",
+      "name_en": "Slow push-in on the end card",
+      "t": "0:06.95-0:09.00",
+      "frames": "f417-f540",
+      "fps": 60,
+      "mechanics": "La largeur du nom passe de 986 à 1019 px (+3,3 %) entre f417 et f540 (2 s), en décélérant jusqu'à l'arrêt vers f540. Imperceptible consciemment, elle empêche la carte de fin de devenir une image figée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Lien GitHub et curseur qui clignote",
+      "name_en": "GitHub link with blinking cursor",
+      "t": "0:08.42-0:09.57",
+      "frames": "f505-f573",
+      "fps": 60,
+      "mechanics": "« github.com/madhav-xo » en mono gris, ≈ 2 % de la hauteur, à 90 % de la hauteur, apparaît en fondu de f505 à f519 (sans frappe). Curseur bloc cyan allumé de f520 à f537, éteint de f540 à f558, rallumé à f561 : période ≈ 41 im (0,68 s), indépendante du tempo. Il rappelle le curseur du terminal d'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Extinction d'écran cathodique",
+      "name_en": "CRT power-off",
+      "t": "0:09.57-0:09.92",
+      "frames": "f574-f595",
+      "fps": 60,
+      "mechanics": "L'image s'écrase verticalement vers la ligne du nom (y ≈ 309 px, 43 % de la hauteur) : hauteur éclairée 69, 58, 38, 25, 19, 12 puis 6 %, et trait de 5 px à f584 (10 im). Le trait, blanc et pleine largeur, tient 4 im (f584-f587), puis se rétracte vers le centre : 1223, 1007, 741, 429, 159 puis 7 px de f588 à f593 (ease-in). Le point s'éteint à f594, noir à f595. Synchronisé avec un glissando descendant.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 572, "to": 596, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle machine : allumage, compilation, extinction",
+      "name_en": "Machine bookend structure",
+      "t": "0:00.00-0:10.00",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Ouverture sur un terminal (la machine s'allume), huit compétences en huit temps, compression, signature, puis extinction cathodique (la machine s'éteint). Le curseur cyan du terminal revient sous le lien GitHub. Proportions : amorce 2,0 s, liste 4,0 s, compression 0,5 s, signature 3,07 s, sortie 0,4 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage HUD de cadre",
+      "name_en": "HUD frame overlay",
+      "t": "0:02.00-0:09.57",
+      "frames": "f120-f574",
+      "fps": 60,
+      "mechanics": "Coins de cadrage aux quatre angles. En haut à gauche, « SYS //MADHAV » avec un point rouge ; en haut à droite, un timecode qui défile (« TC 00:00:0X:XX ») ; en bas à gauche, « SKILL 0X/08 » et une barre de 8 segments multicolores qui se remplit à chaque tableau ; en bas à droite, le numéro et le nom de la scène. Bonne idée de chapitrage, mais corps ≈ 1,2 % de la hauteur et contraste très faible : illisible.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Points additifs, halo, poussière et vignettage",
+      "name_en": "Additive glow points, dust and vignette",
+      "t": "0:02.00-0:09.57",
+      "frames": "f120-f574",
+      "fps": 60,
+      "mechanics": "Tout est fait de points lumineux en mélange additif avec halo (bloom), sur fond bleu nuit #04070C fortement vignetté. Poussière qui flotte au-dessus du nom ; aberration chromatique et traînées seulement dans les glitchs et les flashs. Aucun flou de mouvement sur les particules : leur nombre suffit à donner la vitesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Nuit et cyan unique, accents multicolores ponctuels",
+      "name_en": "Night navy with a single cyan accent",
+      "t": "0:00.00-0:10.00",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Fond quasi noir (#020205 au terminal, #04070C à #0C0A0D dans les tableaux, #02070D à la fin). Un cyan d'accent #52D7D8 du premier caractère au mot « shouldn't » : invite, barres, nœuds, curseur. Blancs et chromes froids pour le texte. Accents ponctuels orange, rose, vert et violet sur les satellites, le tournoi et la barre HUD, qui diluent un peu la rigueur du cyan.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Whatever you know about me » : Claude a puisé dans ce qu'il sait de l'utilisateur (mémoire ou profil, probable) huit faits concrets, dont trois chiffrés (500+ problèmes, 100K+ étudiants, 10+ tournois nationaux). Ce sont eux qui rendent la vidéo personnelle ; sans eux, le même gabarit serait générique."},
+    {"kind": "structure", "insight": "Sans consigne, Claude a adopté une structure de bande-annonce : 2 s d'amorce (terminal), 4 s de liste (8 × 1 temps), 0,5 s de compression, 3 s de signature, 0,4 s de sortie. Le nombre de tableaux vient du contenu, et leur durée découle de « 8 éléments en 4 s »."},
+    {"kind": "build", "insight": "Les changements tombent exactement sur des multiples de 0,5 s et la bande-son contient des clics de frappe alignés sur le texte tapé : image et son ont très probablement été écrits ensemble en code (timeline en temps de 120 BPM, synthèse : impacts sinusoïdaux graves, accord pur, glissando). C'est la recette à reprendre dans HyperFrames."},
+    {"kind": "direction", "insight": "Aucune direction artistique donnée : le modèle retombe sur les codes « tech » attendus (terminal, particules, glitch RVB, halo anamorphique, titre chromé, slogan inspirant). L'exécution est soignée mais l'imagerie prévisible ; un adjectif de style ou une référence aurait suffi à l'en sortir."},
+    {"kind": "qa", "insight": "Rien ne fixait la lisibilité : les libellés HUD (≈ 1,2 % de la hauteur) et les étiquettes des formes sont illisibles, et chaque tableau n'est net que ≈ 0,33 s. Préciser « 4 compétences, 1 s chacune, corps minimal 3 % de la hauteur » aurait amélioré la lecture sans perdre l'élan."}
+  ],
+  "steal": [
+    "Écrire la timeline en temps (120 BPM = 30 im à 60 fps) et changer de tableau exactement sur chaque temps, l'image 1-2 im avant l'attaque du son.",
+    "Compression puis explosion : réduire le contenu en un point ou un trait pendant un creux du son, puis flash plein cadre et impact grave sur le temps.",
+    "Passer d'un tableau au suivant par morph de particules : dissolution 2 im, nuage 4-5 im, reformation 5-6 im, forme lisible ≈ 10 im après le temps.",
+    "Étirer le trait de lumière jusqu'à la largeur exacte du nom, sur son axe, puis l'ouvrir verticalement en lettres au flash.",
+    "Fermer comme on a ouvert : terminal au début, extinction cathodique à la fin (écrasement 10 im, trait 4 im, point 6 im) avec glissando descendant."
+  ],
+  "flaws": [
+    "Imagerie de bande-annonce tech très vue : terminal, particules, glitch RVB, halo anamorphique, titre chromé, slogan « Build things that shouldn't exist yet ».",
+    "Huit tableaux en 4 s : chaque forme n'est nette que ≈ 0,33 s et ses étiquettes restent illisibles.",
+    "Habillage HUD (timecode, SKILL 0X/08, nom de scène) à ≈ 1,2 % de la hauteur et à faible contraste : décor illisible.",
+    "Le même glitch de titre revient huit fois de suite : l'accent devient un tic.",
+    "Carte de fin sans pulsation : mots, lien et curseur avancent sur un tempo libre après 6,5 s de calage serré."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : vidéo native à 60 fps où image et son partagent une grille de 120 BPM à 1-2 im près. Les morphs de particules (≈ 10 im), les deux compressions-explosions et l'extinction cathodique sont trop rapides pour des planches : il faut les lire image par image en continu pour les reproduire."
+  }
+}

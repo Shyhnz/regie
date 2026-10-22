@@ -1,0 +1,624 @@
+{
+  "slug": "sudo-kiran-4f8b59",
+  "title": "DistilBook product explainer",
+  "handle": "@sudo_kiran",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Explainer SaaS solide : structure claire, système tricolore cohérent, iris et volets motivés, coupes calées sur une grille 120 BPM ; quelques superpositions de texte brouillonnes et un carrousel trop rapide pour lire.",
+  "summary": "Explainer de 30 s pour DistilBook (documents transformés en vidéos). Accroche mot à mot dans un anneau de feuilles en orbite, iris blanc vers le logo, trois étapes sur navigateur incliné, rafale de 8 styles d'illustration (un par temps), mur « 15 styles », grille de fonctionnalités, compteurs, CTA cliqué. Force : rythme verrouillé sur la musique. Faiblesse : surcharge d'interface et étiquettes illisibles.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : vidéo dynamique de 30 s, « comme un explainer produit », « very incredible », plus l'URL du produit. Aucune indication de style, de musique, de structure ni de durée par scène.",
+    "Claude a tout décidé : structure problème → solution → 3 étapes → preuve → fonctionnalités → chiffres → CTA, alternance monde sombre / monde clair, système tricolore vert-bleu-rose, grille de 0,5 s (120 BPM), iris, volets, carrousel de styles.",
+    "L'URL a suffi à fournir la matière (illustrations, chiffres, slogan). « Dynamic » a été traduit en coupes au temps. Il aurait fallu préciser : durée de lecture minimale des étiquettes, une seule idée par écran, et limiter les volets répétés."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#070B1A",
+        "role": "fond sombre (accroche, chiffres) avec halos radiaux bleu, rose et vert"
+      },
+      {
+        "hex": "#F2F5FC",
+        "role": "fond clair des scènes produit, taches pastel floues"
+      },
+      {
+        "hex": "#22C55E",
+        "role": "vert de marque : barre 1 du logo, volet, bouton cliqué"
+      },
+      {
+        "hex": "#3B6CF0",
+        "role": "bleu de marque : barre 2, aplat du volet, bouton CTA"
+      },
+      {
+        "hex": "#E0307A",
+        "role": "rose de marque : barre 3, barré, soulignement"
+      },
+      {
+        "hex": "#8B5CF6",
+        "role": "violet de transition dans les dégradés de texte"
+      },
+      {
+        "hex": "#0F172A",
+        "role": "texte sur fond clair"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "texte sur fond sombre"
+      },
+      {
+        "hex": "#FDE68A",
+        "role": "surlignage jaune dans l'éditeur de script"
+      }
+    ],
+    "type": "Grotesque très grasse type Inter Display ExtraBold, casse phrase, interlettrage serré (≈ -3 %) ; titres 9 à 13 % de la hauteur ; numéros d'étape en dégradé ; sur-titres en petites capitales espacées ; une manuscrite bleue type Caveat.",
+    "texture": "Flou de mouvement horizontal sur les entrées de mots (2 à 3 im), flou gaussien pour la profondeur et les coupes du carrousel, halo lumineux sur le point d'iris, ombres portées douces sous les fenêtres inclinées, sol en grille perspective et petites étoiles sur le fond sombre.",
+    "style": "SaaS premium, tricolore, sombre/clair alterné",
+    "coherence": "Le trio vert-bleu-rose du logo est réutilisé partout : barres du logo, volets diagonaux, dégradés des mots clés, numéros d'étape, anneaux d'onde, barré rose. L'alternance fond sombre (problème, émotion, chiffres) / fond clair (produit) structure le récit. Ce qui casse : les illustrations IA du carrousel, de styles très hétérogènes, et la grille de fonctionnalités trop dense."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Musique pop électro entraînante à 120 BPM (pulsation nette 7,32), premier temps à 0,057 s, une mesure = 2 s. Les 13 coupes tombent toutes à ±1 im d'un multiple de 0,5 s (4,0 / 8,0 / 14,0 / 14,5 … / 20,0 / 24,0 / 26,5). Les scènes durent un nombre entier de mesures : accroche 0-4 s (2 mesures), logo 4-8 s, étapes 01, 02, 03 de 2 s chacune (8-14 s), carrousel 14-18 s (8 temps, 1 style par temps), mur 18-20 s, fonctionnalités 20-24 s, chiffres 24-26,5 s, fin 26,5-30 s. Motif récurrent : le geste démarre sur un demi-temps et l'impact ou la coupe tombe sur le temps suivant, avec une avance systématique de 2 im (67 ms) sur la barre. Maintiens : logo 6,3-7,8 s (1,5 s, seules les étiquettes de fichiers dérivent), éditeur de script 10,5-11,9 s (frappe lente, pas vraiment mort), fin 29-30 s. Seul passage hors grille : la grille de fonctionnalités (cycle de langues toutes les 12 im = 0,4 s, couleur de marque toutes les ≈ 22 im).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.1",
+        "what": "« Stop » / « sending » / « documents. » arrivent un mot par temps (0,07 / 0,53 / 1,07 s) au centre d'un anneau de 16 feuilles en orbite 3D",
+        "technique": "mot à mot sur le temps, glissé flou"
+      },
+      {
+        "t": "0:01.27-0:01.55",
+        "what": "Barré rose dessiné de gauche à droite sur « documents. »",
+        "technique": "barré manuscrit animé"
+      },
+      {
+        "t": "0:02.07-0:02.35",
+        "what": "Stop → Start, documents → videos. (dégradé vert-violet-rose) ; les feuilles deviennent des vignettes vidéo",
+        "technique": "substitution de mots en fondu flou"
+      },
+      {
+        "t": "0:02.4-0:03.6",
+        "what": "Les vignettes vidéo s'approchent de la caméra et grossissent, puis s'éparpillent",
+        "technique": "anneau qui explose vers la caméra"
+      },
+      {
+        "t": "0:03.57-0:03.97",
+        "what": "Défocalisation et fondu au noir, point lumineux au centre, cercle blanc qui envahit l'écran",
+        "technique": "point lumineux → iris blanc"
+      },
+      {
+        "t": "0:04.0-0:05.0",
+        "what": "Fond clair pastel, onde verte, chute des 3 barres du logo (vert, bleu, rose) avec 3 ondes, puis mot-symbole « DistilBook »",
+        "technique": "logo construit pièce par pièce"
+      },
+      {
+        "t": "0:05.3-0:08.0",
+        "what": "Slogan « Turn any document into an explainer video » + « in minutes! » manuscrit souligné ; étiquettes de fichiers flottantes",
+        "technique": "annotation manuscrite"
+      },
+      {
+        "t": "0:07.83-0:08.1",
+        "what": "Volet diagonal tricolore de bas-gauche vers haut-droite",
+        "technique": "volet de marque"
+      },
+      {
+        "t": "0:08.0-0:10.0",
+        "what": "Étape 01 « Drop in any document. » : navigateur incliné, fichier déposé, barre de progression 7 % → « 12 pages »",
+        "technique": "maquette d'interface en perspective"
+      },
+      {
+        "t": "0:10.0-0:11.9",
+        "what": "Étape 02 « AI writes the script. » : nouvelle fenêtre empilée, texte tapé, surlignage, clic sur « Approve script »",
+        "technique": "empilement de cartes + frappe + clic"
+      },
+      {
+        "t": "0:11.9-0:13.3",
+        "what": "Étape 03 « Watch it come alive. » : le numéro roule 02 → 03, badges Voiceover / Hand-drawn visuals / Captions",
+        "technique": "numéro roulant, badges en pop"
+      },
+      {
+        "t": "0:13.3-0:14.0",
+        "what": "Poussée dans l'écran jusqu'à l'illustration plein cadre (feuille-usine)",
+        "technique": "push-in dans l'interface"
+      },
+      {
+        "t": "0:14.0-0:18.0",
+        "what": "8 styles d'illustration, un par temps (Isometric, Soft 3D Coral, Inkwash Journal, Cut Paper Collage, Sketch Notebook, Bauhaus Poster, Doodle Color Pop, Editorial Flat Vector)",
+        "technique": "carrousel au tempo, coupe floue d'une image"
+      },
+      {
+        "t": "0:18.07-0:19.9",
+        "what": "Dézoom vers un mur incliné de vignettes assombri, « 15 styles. » + « Original artwork for every scene. »",
+        "technique": "pull-back vers un mur"
+      },
+      {
+        "t": "0:19.8-0:20.1",
+        "what": "Volet tricolore inverse (haut-droite vers bas-gauche)",
+        "technique": "volet de marque"
+      },
+      {
+        "t": "0:20.0-0:23.8",
+        "what": "Grille de 4 cartes : téléphone avec mot qui change de langue toutes les 0,4 s, carte de marque qui change de couleur, format 16:9 ↔ 9:16, anneau de progression 0 → 100 %",
+        "technique": "grille de fonctionnalités vivante"
+      },
+      {
+        "t": "0:23.8-0:24.0",
+        "what": "Un point noir grossit au centre et avale l'écran",
+        "technique": "iris noir"
+      },
+      {
+        "t": "0:24.0-0:26.3",
+        "what": "« Minutes, » puis « not weeks. » ; compteurs 0 → 2,200+ / 1,500+ / 15",
+        "technique": "compteurs roulants"
+      },
+      {
+        "t": "0:26.3-0:26.6",
+        "what": "Volet tricolore",
+        "technique": "volet de marque"
+      },
+      {
+        "t": "0:26.5-0:28.0",
+        "what": "Reconstruction du logo (3 barres en cascade, mot-symbole révélé par masque), slogan, vignettes flottantes autour",
+        "technique": "logo en rime avec 0:04"
+      },
+      {
+        "t": "0:28.0-0:30.0",
+        "what": "Bouton « Try it free → » + distilbook.com ; curseur qui arrive, clic, bouton bleu → vert, onde et confettis",
+        "technique": "CTA cliqué"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120 BPM, temps à 0,057 + 0,5 n s. Les 13 coupes tombent toutes à ±1 im d'un multiple de 0,5 s. Sur les planches, impacts, atterrissages et coupes contre les barres bleues (temps seuls, espacés de 15 im, hasard ±2 im ≈ 33 %) : 20 gestes clés sur 22 à ±2 im (« documents. » f32/f32, éparpillement f107/f107, barre verte f122/f122, révélation après volet f240/f242, fin du push-in f405/f407, 7 coupes du carrousel f420…f510 toutes à -2 im, « 15 styles. » net f557/f557, téléphone f603/f602, « Minutes, » net f722/f722, barre verte finale f797/f797, mot-symbole f812/f812, clic f859/f857 ; ratés : roulement 02→03 f359 et coupe f524 à -3 im). Départs de geste contre les barres bleu clair (demi-temps) : 10 sur 10 à ±1 im (barré f38/f39, point d'iris f114/f114, barre rose f129/f129, volets f235/f234, f595/f594, f790/f789, push-in f399/f399, point noir f715/f714, « not weeks. » f729/f729, barre rose f804/f804). Décalage typique : l'image précède la barre de 2 im (67 ms) sur les coupes. Mesure automatique cohérente : départs/temps R = 0,60, p = 3,8e-6, décalage moyen -80 ms. Seule partie libre : cycle des langues (0,4 s) et changement de couleur de marque (≈ 0,73 s) dans la grille de fonctionnalités.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte",
+      "camera"
+    ],
+    "style_match": "Pop électro corporate à 120 BPM, énergique et propre : colle aux courbes ease-out sèches, aux coupes au temps et à l'esthétique SaaS lumineuse. Aucun moment de respiration musicale exploité.",
+    "how_built": "Probable : la composition a été écrite sur une constante de temps de 0,5 s (un temps à 120 BPM) avec des scènes d'une ou deux mesures de 2 s, et la bande-son 120 BPM démarre son premier temps à t = 0. Le prompt ne parle pas de musique : c'est le choix de l'auteur ou de Claude. L'avance constante de 2 im vient soit de la latence d'encodage audio, soit d'une anticipation volontaire ; elle reste dans la tolérance perceptive. Les micro-animations de la grille de fonctionnalités ont leurs propres périodes (0,4 s) et sortent de la grille."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot sur le temps avec glissé flou",
+      "name_en": "word-on-beat blur slide",
+      "t": "0:00.07-0:01.07",
+      "frames": "f2-f32",
+      "fps": 30,
+      "mechanics": "Chaque mot de « Stop sending documents. » arrive sur un temps (f2, f16, f30, soit 0,07 / 0,53 / 1,00 s ; temps à 0,057 / 0,557 / 1,057 s). Entrée en 2 à 3 im : le mot glisse d'environ 4 % de la largeur depuis la droite avec un flou horizontal fort sur la 1re image, net à la 3e (ease-out expo). Texte blanc ≈ 9 % de la hauteur, centré verticalement, ancré à gauche.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f31.jpg",
+      "illus": {
+        "from": 0,
+        "to": 34,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Barré manuscrit dessiné",
+      "name_en": "animated hand-drawn strikethrough",
+      "t": "0:01.27-0:01.55",
+      "frames": "f38-f46",
+      "fps": 30,
+      "mechanics": "Trait rose #E0307A d'épaisseur ≈ 1 % de la hauteur, légèrement ondulé, tracé de gauche à droite en 8 im (0,27 s), ease-out ; il dépasse le mot d'environ 3 % de chaque côté. Démarre f38, 1 im avant le demi-temps f39 ; se termine f46, 1 im avant le temps f47.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f31.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Substitution de mots en fondu flou",
+      "name_en": "blurred word swap",
+      "t": "0:02.07-0:02.33",
+      "frames": "f62-f70",
+      "fps": 30,
+      "mechanics": "Le barré se retire (f62, sur le temps 2,057 s), puis « Stop » → « Start » et « documents. » → « videos. » en fondu enchaîné flouté de 6 à 8 im ; pendant 2 à 3 im les deux mots se superposent. « videos. » prend un dégradé vert #22C55E → violet → rose. Le mot central reste à la même place : seul le sens change.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Anneau de documents en orbite autour du titre",
+      "name_en": "orbiting 3D ring of cards",
+      "t": "0:00-0:03.6",
+      "frames": "f0-f107",
+      "fps": 30,
+      "mechanics": "Environ 16 feuilles de papier (≈ 5 % de la hauteur chacune) disposées sur une ellipse en perspective autour du texte, tournant lentement avec un léger roulis ; celles de l'arrière passent derrière le texte, celles de l'avant devant. Au changement de mot (f66-f75) les feuilles deviennent des vignettes vidéo bleues, puis l'anneau s'élargit et les cartes avancent vers la caméra jusqu'à ≈ 25 % de la hauteur (f90-f107) avant de s'éparpiller.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg, microM-002-cut-f119.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Point lumineux puis iris blanc",
+      "name_en": "glow dot to white iris",
+      "t": "0:03.57-0:04.0",
+      "frames": "f107-f120",
+      "fps": 30,
+      "mechanics": "f107 (sur le temps) : les cartes s'éparpillent et le texte se défocalise et s'éteint en 6 im (f107-f112). f113 noir avec halo bleu central. f114 (demi-temps) : point blanc de ≈ 0,5 % ; f115 1 %, f116 3 %, f117 8 %, f118 22 % de la largeur : croissance exponentielle (×2,5 à ×3 par image) entourée d'un halo bleu. f119 blanc plein. f120 scène claire. Durée totale de l'iris : 5 im (0,17 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f119.jpg",
+      "illus": {
+        "from": 107,
+        "to": 122,
+        "n": 7
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ondes concentriques à chaque pièce du logo",
+      "name_en": "ripple rings on logo build",
+      "t": "0:04.0-0:04.5",
+      "frames": "f120-f136",
+      "fps": 30,
+      "mechanics": "Un anneau fin (1 px, ≈ 1 % d'épaisseur) part du centre à chaque barre posée : vert f120 (diamètre 15 % → 75 % de la hauteur en 5 im), bleu f126, rose f132, chacun dans la couleur de la barre qui atterrit, opacité décroissante en grandissant. Un petit point rose marque le centre f120-f126.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f119.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo construit pièce par pièce en cascade",
+      "name_en": "staggered logo bar drop",
+      "t": "0:04.03-0:04.5",
+      "frames": "f121-f135",
+      "fps": 30,
+      "mechanics": "Trois barres arrondies (≈ 4 % × 11 % de la hauteur, contour clair, remplissage translucide) tombent penchées d'environ 15° puis se redressent en se posant côte à côte, comme des livres sur une étagère. Décalage 4 im : verte f121 (posée f122, sur le temps), bleue f125 (posée f128), rose f129 (demi-temps, posée f132). Chaque atterrissage déclenche une onde. Même motif repris à la fin (f795-f805) : rime visuelle ouverture / clôture.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f119.jpg, microM-012-cut-f795.jpg",
+      "illus": {
+        "from": 119,
+        "to": 136,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole révélé par masque depuis la ligne de base",
+      "name_en": "wordmark mask rise",
+      "t": "0:26.9-0:27.3",
+      "frames": "f807-f818",
+      "fps": 30,
+      "mechanics": "« DistilBook » (≈ 12 % de la hauteur, noir #0F172A) monte depuis une ligne de masque horizontale lettre par lettre de gauche à droite (« D », « Di », « Dis », « Dist » sur f807-f812, ≈ 1 lettre par image), pendant que les barres glissent vers la gauche pour faire place. Le slogan suit avec la même révélation par masque.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f795.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Annotation manuscrite soulignée",
+      "name_en": "handwritten callout with scribble underline",
+      "t": "0:06.3-0:06.6",
+      "frames": "f189-f198",
+      "fps": 30,
+      "mechanics": "« in minutes! » en manuscrite bleue #3B6CF0 (type Caveat), ≈ 5 % de la hauteur, légèrement inclinée, placée à droite du slogan en grotesque grise ; un soulignement rose ondulé se trace en dessous. Le contraste grotesque neutre / main humaine isole le bénéfice.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquettes de fichiers flottantes autour du logo",
+      "name_en": "floating file chips",
+      "t": "0:05.0-0:08.0",
+      "frames": "f150-f240",
+      "fps": 30,
+      "mechanics": "Six pastilles blanches (Handbook.pdf, SOP-v3.docx, diagram.png, Q3 deck, notes.txt, blog article), ≈ 3 % de la hauteur, avec un mini badge coloré par type (PDF rouge, DOCX bleu, PPTX orange, URL violet), réparties sur un cercle autour du logo et dérivant de 1 à 2 % en 3 s. Elles montrent la matière d'entrée du produit sans texte explicatif.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal tricolore de marque",
+      "name_en": "tri-color diagonal brand wipe",
+      "t": "0:07.83-0:08.1",
+      "frames": "f235-f243",
+      "fps": 30,
+      "mechanics": "Deux bandes fines (rose puis vert, ≈ 4 % de la largeur chacune) suivies d'un aplat bleu #3B6CF0, inclinées à ≈ 60°, balaient le cadre de bas-gauche à haut-droite : couverture totale en 5 im (f235-f239, ease-in), coupe f240, sortie en 3-4 im (f240-f243, ease-out) révélant la scène suivante. Départ 1 im après le demi-temps f234, révélation sur le temps f242. Utilisé 3 fois (8,0 s ; 20,0 s en sens inverse ; 26,5 s).",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f240.jpg, microM-010-cut-f600.jpg, microM-012-cut-f795.jpg",
+      "illus": {
+        "from": 234,
+        "to": 244,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Navigateur incliné en perspective avec dépôt de fichier",
+      "name_en": "tilted browser mockup with file drop",
+      "t": "0:08.0-0:10.0",
+      "frames": "f240-f300",
+      "fps": 30,
+      "mechanics": "Fenêtre de navigateur (≈ 50 % de la largeur, moitié droite) inclinée d'environ -10° en Y et 4° en X, ombre douce, légère dérive continue. Une carte PDF tombe dans la zone de dépôt f253-f256 (la bordure de la zone devient bleue), puis une ligne de fichier apparaît avec barre de progression verte 7 % → « 12 pages » en ≈ 1 s. Colonne gauche : sur-titre « HOW IT WORKS » + trois tirets de progression, numéro « 01 » en dégradé, titre sur 2 lignes, sous-titre gris.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f240.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Numéro d'étape roulant et titres révélés ligne par ligne",
+      "name_en": "rolling step number + line mask reveal",
+      "t": "0:11.9-0:12.4",
+      "frames": "f359-f372",
+      "fps": 30,
+      "mechanics": "Le numéro « 02 » monte et sort par le haut pendant que « 03 » entre par le bas en 2-3 im (f359-f361) dans un masque, comme un compteur. Le titre change ligne par ligne : l'ancienne ligne descend sous son masque, la nouvelle monte (« Watch » f363, « it » f365, « come » f368, « alive. » f370), décalage ≈ 2-3 im par mot. Les trois tirets de progression sous « HOW IT WORKS » se remplissent d'une étape.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f359.jpg, microM-003-cut-f240.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Empilement de fenêtres (la nouvelle étape glisse par-dessus)",
+      "name_en": "card stack push",
+      "t": "0:09.9-0:10.3",
+      "frames": "f297-f306",
+      "fps": 30,
+      "mechanics": "La fenêtre de l'étape suivante arrive depuis la droite en ≈ 9 im (ease-out) et se pose devant la précédente, décalée de ≈ 3 % vers la gauche et le haut ; l'ancienne reste visible derrière quelques images puis s'efface. Même geste entre l'étape 02 et 03 (f357-f366). Donne une sensation de progression empilée sans coupe.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-move-f359.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe, surlignage et clic de validation",
+      "name_en": "typing, highlight and cursor click",
+      "t": "0:10.3-0:11.9",
+      "frames": "f309-f357",
+      "fps": 30,
+      "mechanics": "Le script s'écrit caractère par caractère avec curseur clignotant (≈ 2-3 caractères par image), puis « tiny factory » se surligne en jaune #FDE68A ; un curseur flèche glisse vers « Approve script », clic, le bouton bleu devient vert « ✓ Approved » avec un anneau d'onde (f347-f350). Lisible mais lent : c'est le seul vrai passage de lecture.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-move-f359.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Badges de fonctionnalités qui surgissent autour de la fenêtre",
+      "name_en": "feature badges pop",
+      "t": "0:12.4-0:13.1",
+      "frames": "f370-f393",
+      "fps": 30,
+      "mechanics": "Trois pastilles blanches avec icône ronde colorée (« Voiceover » rose en haut à gauche f370, « Hand-drawn visuals » vert en haut à droite ≈ f385, « Captions » bleu en bas à droite ≈ f390) apparaissent en grossissant de ≈ 80 % à 100 % en 3-4 im avec léger dépassement, débordant du cadre de la fenêtre.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f359.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée dans l'écran jusqu'à l'illustration plein cadre",
+      "name_en": "push-in into UI",
+      "t": "0:13.3-0:13.57",
+      "frames": "f399-f407",
+      "fps": 30,
+      "mechanics": "Départ f399 (demi-temps) : la colonne de texte s'efface pendant que la fenêtre se redresse (inclinaison → 0°) et grossit jusqu'à remplir le cadre en 6 im (f399-f405), ease-in-out ; posée f405-f406, 1-2 im avant le temps f407. L'illustration « leaf factory » devient le plan suivant, qui sert de pont vers le carrousel de styles.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f405.jpg",
+      "illus": {
+        "from": 397,
+        "to": 408,
+        "n": 6
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Carrousel de styles, un plan par temps, coupe floue d'une image",
+      "name_en": "beat-locked style carousel with blur cut",
+      "t": "0:14.0-0:18.0",
+      "frames": "f419-f540",
+      "fps": 30,
+      "mechanics": "8 illustrations plein cadre, 15 im chacune (0,5 s = 1 temps). Chaque changement passe par une seule image très floue (flou gaussien ≈ 3 % du cadre, f419, f449, f464, f479, f494) puis la nouvelle image nette ; l'image nette tombe 2 im avant la barre de temps (f420/f422, f450/f452, f465/f467, f480/f482, f495/f497, f510/f512). Pastille sombre en bas à gauche : numéro « 01 » à « 08 » en dégradé + « STYLE 0X / 15 » + nom du style ; le nom se fond d'un style à l'autre et les deux libellés se superposent 2-3 im.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f405.jpg, microM-006-cut-f449.jpg, microM-007-move-f482.jpg, microM-008-cut-f524.jpg",
+      "illus": {
+        "from": 417,
+        "to": 467,
+        "n": 8
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom vers un mur incliné de vignettes",
+      "name_en": "pull-back to tilted wall",
+      "t": "0:18.07-0:18.57",
+      "frames": "f536-f557",
+      "fps": 30,
+      "mechanics": "Vignettage sombre qui envahit les bords à partir de f536. Départ sur le temps f542 : l'image 08 rétrécit de 100 % à ≈ 30 % de la largeur en ≈ 10 im (ease-in-out) pendant que l'ensemble pivote de ≈ -10° et révèle une grille de 15 vignettes en perspective ; le mur s'assombrit à ≈ 50 %. « 15 styles. » arrive flou f555 et net f557 sur le temps, « 15 » en dégradé, puis le sous-titre. Dérive lente continue jusqu'à f600.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f550.jpg",
+      "illus": {
+        "from": 538,
+        "to": 558,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Grille de fonctionnalités vivante (bento)",
+      "name_en": "living bento feature grid",
+      "t": "0:20.0-0:23.8",
+      "frames": "f600-f715",
+      "fps": 30,
+      "mechanics": "4 cartes entrent en cascade, ≈ 4 im de décalage (téléphone sombre f601-f603 posé sur le temps f602, carte marque f604-f606, carte format f608-f610, « Edit every line » f612-f614, « Export in 1440p » f615-f617). Puis quatre boucles indépendantes : mot de langue toutes les 12 im (0,4 s), couleur de marque (ACME bleu → LUMA rose → VERDE vert → KORA orange) toutes les ≈ 22 im, anneau de progression 0 % → 100 % en ≈ 46 im ease-out, bascule 16:9 ↔ 9:16, frappe « energy » → « food ». Aucune n'est calée sur la grille 120 BPM.",
+      "verdict": "adapter",
+      "evidence": "microM-010-cut-f600.jpg, extra-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Cycle de langues par fondu superposé",
+      "name_en": "language word cycle crossfade",
+      "t": "0:20.6-0:23.5",
+      "frames": "f618-f705",
+      "fps": 30,
+      "mechanics": "Hello → Hola → Bonjour → Olá → Hallo → Ciao → Merhaba → Namaste, un mot toutes les 12 im. Chaque passage est un fondu de 4-6 im où les deux mots se superposent (« Hola / Bonjour » lisibles en même temps), dégradé vert → violet → rose, ≈ 6 % de la hauteur, nom de la langue en petites capitales dessous, forme d'onde vocale animée en dessous.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris noir qui avale l'interface",
+      "name_en": "black iris close",
+      "t": "0:23.83-0:24.0",
+      "frames": "f715-f719",
+      "fps": 30,
+      "mechanics": "Point noir #070B1A au centre f715 (demi-temps f714), puis ≈ 6 %, 13 %, 28 % de la largeur sur f716-f718 (croissance exponentielle), noir plein f719. C'est le miroir exact de l'iris blanc de 0:04 : blanc pour entrer dans le produit, noir pour revenir au monde sombre des chiffres.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f718.jpg",
+      "illus": {
+        "from": 713,
+        "to": 723,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan en deux temps : apparition floue puis glissé",
+      "name_en": "two-beat tagline",
+      "t": "0:24.0-0:24.33",
+      "frames": "f720-f730",
+      "fps": 30,
+      "mechanics": "« Minutes, » (dégradé vert-violet-rose, ≈ 11 % de la hauteur) passe du flou au net en 3 im (f720-f722, net sur le temps f722) ; « not weeks. » blanc glisse depuis la droite avec flou de mouvement en 3 im (f728-f730, sur le demi-temps f729). Le mot dégradé porte le bénéfice, le mot blanc la comparaison.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f718.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs roulants avec suffixe coloré",
+      "name_en": "count-up stats",
+      "t": "0:24.5-0:25.6",
+      "frames": "f734-f768",
+      "fps": 30,
+      "mechanics": "Trois colonnes séparées par des filets verticaux fins : « 0 » apparaît f734, les chiffres montent ensemble en ≈ 1 s avec ease-out (2,138 / 1,385 / 12 à 25,0 s, valeur finale vers 25,5 s), puis « + » vert ou bleu s'ajoute (2,200+ / 1,500+ / 15). Chiffres blancs gras ≈ 6 % de la hauteur, libellés gris 1,5 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-011-cut-f718.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Deux mondes de fond : nuit à grille perspective / jour pastel",
+      "name_en": "dark synth grid vs light pastel blobs",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Monde sombre (accroche, chiffres) : bleu nuit #070B1A, halos radiaux flous bleu, rose et vert dans les coins, sol en grille perspective fine bleutée sous l'horizon à 60 % de la hauteur, petites étoiles. Monde clair (produit) : #F2F5FC avec grandes taches pastel floues (bleu en haut à gauche, vert en haut à droite, rose en bas à droite) et trame de points très légère. On bascule d'un monde à l'autre uniquement par les iris.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Système tricolore de marque décliné partout",
+      "name_en": "tri-color brand system",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Vert #22C55E, bleu #3B6CF0, rose #E0307A : barres du logo, ondes, bandes du volet, dégradé des mots clés (« videos. », « Minutes, », « 15 », numéros 01-03, mots de langue), barré rose, suffixes « + » des compteurs, bouton CTA bleu qui devient vert au clic. Une seule palette d'accent, appliquée à tous les gestes forts.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "CTA cliqué par un curseur avec confettis",
+      "name_en": "cursor-clicked CTA with confetti",
+      "t": "0:28.0-0:29.5",
+      "frames": "f840-f885",
+      "fps": 30,
+      "mechanics": "Bouton pilule bleu « Try it free → » + « distilbook.com » + mention « 30 free credits · no card needed ». Le curseur entre par le bas sur une trajectoire courbe (f843-f851), clic f857-f859 (temps à f857) : le bouton passe au vert, un anneau s'élargit et ≈ 20 confettis tricolores jaillissent puis retombent avec gravité en ≈ 20 im. Les vignettes de styles flottent autour du logo. Fin tenue 1 s.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure explainer en mesures",
+      "name_en": "bar-based explainer structure",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Problème/solution en 2 mesures (0-4 s), marque 2 mesures (4-8 s), 3 étapes d'une mesure chacune (8-14 s), preuve par la variété 2 mesures (14-18 s) + 1 mesure de synthèse (18-20 s), fonctionnalités 2 mesures (20-24 s), chiffres ≈ 1,25 mesure, fin et CTA ≈ 1,75 mesure. Ouverture et fermeture riment (même construction de logo).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Anticipation sur le demi-temps, impact sur le temps",
+      "name_en": "offbeat wind-up, onbeat hit",
+      "t": "0:01.27-0:26.9",
+      "frames": "f38-f812",
+      "fps": 30,
+      "mechanics": "Motif systématique : le geste de préparation (point d'iris, départ de volet, départ du push-in, 3e barre du logo, 2e moitié du slogan) démarre sur un demi-temps (10 cas sur 10 à ±1 im), et le résultat (scène révélée, atterrissage, mot net) tombe sur le temps suivant 7 à 8 im plus tard. Une transition dure donc exactement un demi-temps (0,25 s) et se « résout » sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f119.jpg, microM-003-cut-f240.jpg, microM-005-move-f405.jpg, microM-011-cut-f718.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes en avance de 2 images sur le temps",
+      "name_en": "cuts leading the beat by 2 frames",
+      "t": "0:14.0-0:17.5",
+      "frames": "f420-f524",
+      "fps": 30,
+      "mechanics": "Dans le carrousel, l'image nette suivante apparaît chaque fois 2 im (67 ms) avant la barre bleue ; une seule à -3 im (f524). Comme l'attaque audible arrive encore 0 à 2 im après la barre, l'œil voit la nouvelle image 2 à 4 im avant d'entendre la grosse caisse : anticipation classique de monteur, perçue comme « pile dessus ».",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f449.jpg, microM-007-move-f482.jpg, microM-008-cut-f524.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Scènes taillées en mesures entières",
+      "name_en": "scenes cut to whole bars",
+      "t": "0:00-0:26.5",
+      "frames": "f0-f795",
+      "fps": 30,
+      "mechanics": "Toutes les grandes frontières tombent sur des multiples de 2 s (1 mesure de 4 temps à 120 BPM) : 4,0 / 8,0 / 10,0 / 12,0 / 14,0 / 18,0 / 20,0 / 24,0 s ; seule la fin démarre à 26,5 s (demi-mesure). Le changement de scène coïncide ainsi avec le premier temps de mesure, plus marqué dans la musique.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou comme outil de profondeur et de passage",
+      "name_en": "blur as depth and transition device",
+      "t": "0:00-0:24.3",
+      "frames": "f2-f730",
+      "fps": 30,
+      "mechanics": "Trois usages distincts : flou de mouvement horizontal sur les mots qui entrent (2-3 im), défocalisation de toute la scène avant l'iris (6 im, f107-f112), image unique très floue entre deux styles du carrousel. Jamais de flou permanent : il marque toujours un changement d'état.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-cut-f119.jpg, microM-006-cut-f449.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "La seule entrée est l'URL du produit : toute la matière (illustrations des 15 styles, chiffres 2,200+ / 1,500+, slogan « Turn any document into an explainer video », CTA « 30 free credits ») vient probablement du site. Un prompt minimal fonctionne quand le site est riche en visuels propriétaires."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Dynamic » et « very incredible » ont été traduits en densité : coupe ou geste fort à chaque temps, 3 transitions différentes (iris, volet, empilement), micro-animations partout. Sans consigne de retenue, le modèle sature la grille de fonctionnalités."
+    },
+    {
+      "kind": "structure",
+      "insight": "« Like a product explainer » suffit à déclencher la structure canonique problème → marque → 3 étapes « How it works » → preuve → fonctionnalités → chiffres → CTA, avec rime logo ouverture/fermeture."
+    },
+    {
+      "kind": "build",
+      "insight": "Le prompt ne parle ni de musique ni de BPM, pourtant tout est posé sur une grille de 0,5 s avec des scènes de 2 s : la constante de tempo et la musique 120 BPM ont été choisies par l'auteur ou par Claude. Écrire explicitement « 120 BPM, une scène par mesure, transitions démarrant sur le demi-temps » rendrait ce résultat reproductible."
+    },
+    {
+      "kind": "qa",
+      "insight": "Les défauts restants (libellés de style superposés pendant les fondus, mots de langue superposés, 1,5 s de maintien sur le logo) sont des problèmes de vérification image par image qu'un prompt de contrôle qualité aurait pu attraper."
+    },
+    {
+      "kind": "other",
+      "insight": "Durée respectée au dixième (30,1 s pour 30 s demandées)."
+    }
+  ],
+  "steal": [
+    "Démarrer chaque transition sur le demi-temps et la résoudre sur le temps : volet, iris ou push-in durent 7-8 im à 30 fps et tombent pile.",
+    "Paire d'iris en miroir : point lumineux qui devient cercle blanc pour entrer dans le produit, point noir qui avale l'écran pour en sortir.",
+    "Construire le logo pièce par pièce avec 4 im de décalage, une onde concentrique de la couleur de chaque pièce, et rejouer la même construction en fin.",
+    "Une scène par mesure (2 s à 120 BPM) : chaque étape « How it works » tient exactement 4 temps.",
+    "Décliner les 3 couleurs du logo dans toutes les accentuations : volet, dégradés de mots clés, numéros d'étape, suffixes de chiffres."
+  ],
+  "flaws": [
+    "Carrousel de 8 styles à 0,5 s chacun : les noms de style sont illisibles et se superposent pendant les fondus.",
+    "Cycle de langues en fondu superposé : « Hola » et « Bonjour » lisibles en même temps, effet brouillon.",
+    "Grille de fonctionnalités surchargée : quatre boucles simultanées hors tempo, l'œil ne sait où regarder.",
+    "Volet tricolore utilisé 3 fois : la répétition affaiblit l'effet.",
+    "Maintien de 1,5 s sur le logo (6,3-7,8 s) où seules des étiquettes dérivent."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Excellent cas d'école de montage sur grille 120 BPM : demi-temps de préparation, temps d'impact, coupes en avance de 2 im, scènes en mesures entières, iris en miroir. À étudier image par image à sa cadence native (30 fps, pas de 60 fps disponible), surtout 0-4,5 s, 13,3-18,6 s et 23,8-24,4 s."
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "slug": "twoclipping-6dd14e",
+  "title": "UGC ad generator promo",
+  "handle": "@twoclipping",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Structure verrouillée sur 10 mesures, gestes qui partent sur le temps, vraies vidéos et transitions motivées (mot devenu champ, cercle sorti du bouton) ; mais flou en triple image et textes trop petits.",
+  "summary": "Spot de 20 s pour hooklab, générateur fictif de pubs UGC. Accroche mot à mot sur les temps, le mot « link » devient le champ d'URL, un cercle sort du bouton au drop, puis mur de vrais clips scanné, liste de hooks, carrousel 3D fouetté, téléphone et résultats, trois chiffres en poussées, ticker de trois mots et logo. Une mesure de 2 s par idée, très propre.",
+  "prompt_vs_result": [
+    "Gabarit très détaillé : demander les éléments à l'utilisateur, DA minimale à une couleur, liste d'interdits, storyboard de 10 mesures de 2 s à 120 BPM, construction (seek(t), vidéos en JPEG, analyse numpy, flou par sous-images, effets sonores) et vérifications.",
+    "Les contenus (hooklab, lumadrink, clips, orange) viennent sans doute de l'utilisateur. Claude a décidé les textes (« your next ad is one link away », « before your coffee gets cold »), la mise en page centrée, la bascule clair → sombre et les courbes.",
+    "Le storyboard par mesure a été suivi presque à la lettre et explique la synchro. Faiblesses issues du prompt : 3 sous-images seulement (images fantômes) et « big type » non tenu (liste en petit)."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F6F3EF", "role": "fond clair crème des mesures 1 et 2"},
+      {"hex": "#F3DCD3", "role": "halo rose pâle et anneaux concentriques à peine visibles du fond clair"},
+      {"hex": "#111111", "role": "texte de l'accroche, bouton « generate ads »"},
+      {"hex": "#FF5A36", "role": "couleur d'accent unique : « link », bordure du champ, numéros 01-03, courbe des résultats, « launched », icône"},
+      {"hex": "#FFFFFF", "role": "fenêtre d'app, textes et chiffres sur fond sombre"},
+      {"hex": "#0B0B0B", "role": "fond sombre après le drop"},
+      {"hex": "#1C1C1C", "role": "dégradé radial du haut, panneaux « launch campaign » et résultats"},
+      {"hex": "#2A120D", "role": "lueur chaude en bas à gauche du fond sombre, aire sous la courbe"},
+      {"hex": "#22C55E", "role": "vert de statut : interrupteurs, bouton « 24 ads live », pastilles des pubs générées"},
+      {"hex": "#8A8A8A", "role": "légendes grises (« return on ad spend », sous-titres, en-têtes en capitales)"},
+      {"hex": "#E8384F", "role": "bas du dégradé de l'icône (vers #FF6B4A en haut)"}
+    ],
+    "type": "Grotesque neutre (Inter ou Geist probable) grasse, minuscules sans point, interlettrage serré (≈ -3 %) : accroche ≈ 8 % H, chiffres ≈ 18 % H, ticker ≈ 16 % H, légendes ≈ 1,5 % H ; URL en mono.",
+    "texture": "Aucun grain. Ombres portées très douces sous la fenêtre d'app et les panneaux. Reflets au sol sous le carrousel (miroir ≈ 30 % d'opacité, fondu vers le bas). Flou de mouvement par mélange de 3 sous-images (traînées en triple copie). Légère lueur rouge sous l'icône du logo. Fond sombre en dégradé radial plus clair en haut, lueur chaude en bas à gauche. Fond clair avec halo rose et anneaux concentriques très pâles en haut à gauche.",
+    "style": "Minimal premium SaaS, clair puis sombre",
+    "coherence": "Une seule couleur d'accent qui circule d'un bout à l'autre (mot « link », bordure du champ, numéros des hooks, courbe des résultats, « launched », icône). Une seule police en minuscules sans point final. Une seule langue de caméra : poussées et glissements doux, ease-out, aucun rebond. La bascule clair → sombre au drop sépare la promesse (clair) de la machine (sombre). Le vert n'apparaît que pour les statuts (activé, en ligne, généré). Les vraies vidéos UGC donnent la preuve. Seul écart : les écrans d'interface et la liste de hooks sont nettement plus petits que le reste."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM (netteté de pulsation 5,87), temps à 0,536 + 0,5 k s, soit à 60 fps un temps toutes les 30 im (f32, f62, f92…) et un demi-temps toutes les 30 im décalé de 15 (f17, f47…). La vidéo est construite en 10 mesures de 2 s qui commencent sur les premiers temps 0,04 / 2,04 / 4,04 / … / 18,04 s : une scène par mesure, exactement comme le storyboard du prompt. Les 4 coupes détectées tombent à +1 à +3 im d'un temps (f253 : fin du cercle ouvert au temps f242 ; f364 : temps f362 ; f905 : temps f902 ; f933 : temps f932). Les gestes partent sur le temps (0 à +2 im) et atterrissent 5 à 8 im plus tard. Accélération en fin : chiffres à 1 s puis 0,5 s puis 0,5 s, ticker à 0,5 s par mot, puis logo. Maintiens mesurés 5,7 s (28 %), mais la plupart contiennent de petits mouvements (saisie d'URL, compteurs, vidéos qui jouent) ; vrais temps morts : la liste de hooks figée 0,8 s (7,18-7,98 s) et le logo tenu 1,1 s (18,6-19,7 s).",
+    "timeline": [
+      {"t": "0:00-0:02.04", "what": "Mesure 1 : fond crème, « your », « next », « ad » montent d'un masque, un mot par temps ; « is one link away » en cascade au 4e temps, « link » en orange", "technique": "révélation masquée mot à mot sur les temps"},
+      {"t": "0:02.04-0:02.5", "what": "« link » devient un bloc orange, les autres mots sortent ; la fenêtre d'app apparaît autour et le bloc devient le champ d'URL", "technique": "morph mot → interface"},
+      {"t": "0:02.5-0:03.6", "what": "URL « lumadrink.com/yuzu-spark » tapée en mono, curseur en courbe vers « generate ads », clic", "technique": "saisie + curseur"},
+      {"t": "0:03.6-0:04.04", "what": "Poussée de caméra sur le bouton (≈ ×2,3), libellé qui se brouille en état de chargement", "technique": "dolly-in sur le bouton"},
+      {"t": "0:04.04-0:04.22", "what": "Drop : un disque sombre s'ouvre depuis le bouton et remplit le cadre", "technique": "cercle sorti du bouton (iris)"},
+      {"t": "0:04.22-0:06.04", "what": "Mesure 3 : mur incurvé de 18 vrais clips verticaux, « analyzing 1,148 competitor ads », ligne de scan, 3 gagnants étiquetés, les autres atténués", "technique": "mur de clips + sélection"},
+      {"t": "0:06.04-0:08.04", "what": "Mesure 4 : travelling avant flou et fondu ; liste « 3 hooks already winning in your niche », scores comptés 0 → 94 / 91 / 88", "technique": "liste avec compteurs"},
+      {"t": "0:08.04-0:10.04", "what": "Mesure 5 : carrousel cylindrique de vraies vidéos avec reflets, « generating 0 / 24 ugc ads », pastilles vertes", "technique": "carrousel 3D"},
+      {"t": "0:10.04-0:11.5", "what": "Mesure 6 : le carrousel accélère en fouetté flou puis se pose sur le temps, arrêt sur le clip héros", "technique": "whip spin"},
+      {"t": "0:11.5-0:12.04", "what": "Le clip héros grandit en téléphone, le carrousel s'éteint", "technique": "carte → téléphone"},
+      {"t": "0:12.04-0:13.3", "what": "Mesure 7 : le téléphone glisse à gauche, panneau « launch campaign » à droite ; interrupteur, budget, clic sur « launch 24 ads » → vert « 24 ads live »", "technique": "UI pilotée sur les temps"},
+      {"t": "0:13.3-0:14.04", "what": "Le panneau devient « yuzu spark · day 7 » avec courbe orange montante ; nouveau clip dans le téléphone", "technique": "panneau retourné en résultats"},
+      {"t": "0:14.04-0:15.04", "what": "Mesure 8 : poussée latérale, « 4.2x » compté depuis 1.0x, « return on ad spend »", "technique": "push cut + compteur"},
+      {"t": "0:15.04-0:16.04", "what": "Poussées verticales sur chaque temps : « $9.80 cost per purchase », puis « 24 ads live, zero shoots »", "technique": "chiffres en poussées"},
+      {"t": "0:16.04-0:18.04", "what": "Mesure 9 : ticker « hooks » → « ads » → « launched » (orange), un mot par temps ; « before your coffee gets cold »", "technique": "ticker de 3 mots"},
+      {"t": "0:18.04-0:19.75", "what": "Mesure 10 : icône hooklab qui s'allume, mot-symbole qui glisse de derrière l'icône, « ads that make themselves »", "technique": "révélation du logo"},
+      {"t": "0:19.75-0:20.06", "what": "Fondu au noir en 10 im", "technique": "fondu final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120 BPM vérifiée sur les planches (barres bleues à f242, f362, f632, f722, f842, f902, f992 = temps à 0,536 + 0,5 k s). Un événement clé par geste : 20 sur 21 tombent à ±2 im d'un temps ou demi-temps (hasard ≈ 33 %). Mesurés image par image : cercle du drop part à f244 (temps f242, +2), coupe mur → liste f364 (temps f362, +2), téléphone et panneau partent f721-f722 (temps f722), interrupteur f736 (demi-temps f737), poussée vers les chiffres part f843 (temps f842, +1), « 4.2x » → « $9.80 » part f900-f901 avec milieu f903 sur l'attaque verte (temps f902), « $9.80 » → « 24 » coupe f933 (temps f932), « hooks » → « ads » part f990, milieu f993 sur l'attaque (temps f992). Sur les planches extra (pas de 3 à 5 im) : « next » ≈ f32, « ad » ≈ f62, « is one link away » ≈ f92, morph de « link » ≈ f122, fouetté qui démarre sur l'attaque du demi-temps 10,29 s et se pose vers f662 (temps 11,04 s), « ads » → « launched » milieu f1022 (temps), sous-titre ≈ f1052, extinction de « launched » et allumage de l'icône f1082 (temps), mot-symbole posé f1110 (temps f1112 et attaque forte 18,54 s), fondu au noir ≈ f1186 (demi-temps f1187). Seul écart probable : le clic sur « generate ads », 3 à 7 im avant le temps f212. Décalage typique : départ du geste 0 à +2 im après le temps, milieu des fondus-poussées sur le temps, arrivée 5 à 8 im après. L'indice automatique ne voit rien car les vraies vidéos bougent en permanence.",
+    "synced": ["coupes", "departs", "apparitions", "texte", "camera", "atterrissages"],
+    "style_match": "Pulsation 4/4 régulière à 120 BPM (électro minimal probable) : courbes douces sans rebond, un geste par temps, une scène par mesure de 2 s ; caractère premium cohérent.",
+    "how_built": "Prompt écrit en mesures (« 10 bars at 120 BPM, 2 seconds each », contenu fixé mesure par mesure), analyse du morceau en numpy avec grille calée sur les vraies grosses caisses, consigne « every cut sits on a downbeat, every UI hit on a beat », et rendu déterministe par window.seek(t) qui permet de placer chaque geste à l'image près. Effets sonores placés sur leur pic mesuré (exigés par le prompt, non vérifiables à l'image)."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Accroche mot par mot en révélation masquée, un mot par temps",
+      "name_en": "masked word reveal on the beat",
+      "t": "0:00-0:01.9",
+      "frames": "f0-f114",
+      "fps": 60,
+      "mechanics": "« your » (probablement sur la première attaque à 0,06 s), « next » part ≈ f32, « ad » ≈ f62 : chaque mot monte d'environ 40 % de sa hauteur depuis une ligne de masque et se pose en 6 à 8 im (0,1-0,13 s), ease-out, sans flou. Au 4e temps (≈ f92), « is one link away » arrive en cascade rapide (≈ 4 im entre mots) et la première ligne remonte pour recentrer le bloc. Grotesque grasse noire en minuscules, corps ≈ 8 % H, bloc centré ≈ 37 % L.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Mot clé dans la couleur d'accent unique",
+      "name_en": "single accent keyword",
+      "t": "0:01.65-0:02.04",
+      "frames": "f99-f122",
+      "fps": 60,
+      "mechanics": "Dans « is one link away », seul « link » est en orange #FF5A36 ; tout le reste est noir. Le même orange marquera ensuite chaque élément important (bordure du champ, numéros, courbe, « launched », icône) : l'œil suit la couleur d'un plan à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le mot « link » devient le champ d'URL",
+      "name_en": "word-to-UI morph match cut",
+      "t": "0:02.04-0:02.5",
+      "frames": "f122-f150",
+      "fps": 60,
+      "mechanics": "Sur le temps f122, « link » se remplit en bloc orange arrondi pendant que « your next ad » sort par le haut, « is one » disparaît et « away » file à droite avec flou (f124-f129). Le bloc s'élargit d'environ 17 à 26 % L pendant que la fenêtre blanche de l'app (≈ 65 % L × 68 % H, ombre douce) apparaît autour (f134-f139), puis il cède la place au champ de saisie, dont la bordure reste orange (f144-f149). 27 im = 0,45 s. Positions mesurées pour que le bloc tombe exactement à l'emplacement du champ.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 119, "to": 150, "n": 7}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "URL tapée en mono et curseur en trajectoire courbe",
+      "name_en": "typed URL + curved cursor path",
+      "t": "0:02.57-0:03.5",
+      "frames": "f154-f210",
+      "fps": 60,
+      "mechanics": "« lumadrink.com/yuzu-spark » s'écrit en mono dans le champ en ≈ 45 im (≈ 1 caractère toutes les 2 im, 30 car/s) ; le bouton passe du gris au noir dès le premier caractère. Le curseur entre par le bas droit vers f169, suit une courbe jusqu'au bouton (f194), le survole puis clique vers f205-f209 : la bordure du champ perd son orange (perte de focus). Clic ≈ 3 à 7 im avant le temps f212 (probable).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée de caméra sur le bouton avant le drop",
+      "name_en": "dolly-in on the CTA",
+      "t": "0:03.6-0:04.04",
+      "frames": "f216-f242",
+      "fps": 60,
+      "mechanics": "La caméra pousse sur la zone du bouton (≈ ×2,3 : le titre « drop a product link » passe de ≈ 3 à 7 % H), ease-in-out, flou de mouvement visible jusqu'à f239, posée à f240, 2 im avant le premier temps de la mesure 3. Pendant f238-f244, le libellé « generate ads » se brouille (lettres qui disparaissent) en état de chargement. Le bouton se retrouve au centre, prêt à lancer le cercle.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f253.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Cercle qui s'ouvre depuis le bouton vers la scène sombre (drop)",
+      "name_en": "button-born circle reveal",
+      "t": "0:04.07-0:04.23",
+      "frames": "f244-f254",
+      "fps": 60,
+      "mechanics": "Un disque sombre naît au centre du bouton à f244-f245 (+2 im après le temps f242), rayon ≈ 3 % H, puis ≈ 20 % (f247), 27 % (f248), 37 % (f249), 50 % (f250), 64 % (f251), 86 % (f252), les coins restent clairs à f253, plein cadre à f254. 10 im = 0,17 s, accélération (ease-in). Le disque est un masque : on voit dedans le mur de clips à sa taille finale ; fin liseré gris autour du bord. Bascule clair → sombre sur le premier temps de la mesure 3.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f253.jpg",
+      "illus": {"from": 242, "to": 255, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Mur incurvé de vrais clips verticaux",
+      "name_en": "curved wall of real UGC clips",
+      "t": "0:04.22-0:06.04",
+      "frames": "f253-f364",
+      "fps": 60,
+      "mechanics": "18 clips verticaux réels (6 colonnes × 3 rangées, chacun ≈ 9 % L × 22 % H) disposés en mur concave : colonnes des bords tournées d'environ ±20° vers le centre, coins arrondis, fond noir. Les vidéos jouent (séquences JPEG à 30 fps). Le mur dérive lentement (≈ 1 % par seconde) pendant toute la mesure.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f253.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Analyse : compteur, ligne de scan et 3 gagnants mis en avant",
+      "name_en": "scan line + highlighted winners",
+      "t": "0:04.9-0:06.04",
+      "frames": "f294-f362",
+      "fps": 60,
+      "mechanics": "En-tête « analyzing 1,148 competitor ads » (blanc ≈ 1,5 % H, nombre en gras qui défile). Une ligne verticale fine balaie le mur (probable, visible vers 5,0 s). Trois clips gagnants (haut centre, milieu gauche, bas droite) reçoivent une étiquette en pilule blanche et restent à 100 % de luminosité, légèrement agrandis (≈ 110 %), tous les autres tombent à ≈ 40 %. Sélection lisible sans aucun texte supplémentaire.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f364.jpg, overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Travelling avant flou et fondu enchaîné sur le temps",
+      "name_en": "blurred push-in crossfade",
+      "t": "0:05.98-0:06.1",
+      "frames": "f359-f366",
+      "fps": 60,
+      "mechanics": "Le mur grossit d'environ 5 % par image vers le gagnant du haut (f359-f362), flou de mouvement en triple copie, puis fondu enchaîné de 3 im vers la liste (f363-f365), milieu à f364 = +2 im après le temps f362. La liste est déjà en place à f366.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f364.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Liste de hooks avec scores qui comptent",
+      "name_en": "ranked list with count-up scores",
+      "t": "0:06.04-0:08.04",
+      "frames": "f362-f482",
+      "fps": 60,
+      "mechanics": "En-tête en capitales espacées grises « 3 HOOKS ALREADY WINNING IN YOUR NICHE ». Trois rangées (« pov: you swapped your 3pm coffee for this », « i didn't think a soda could do this », « 3 reasons my fridge is only yuzu now ») en blanc gras ≈ 4 % H, numéros 01-03 orange, score à droite qui compte de 0 à 94 / 91 / 88 en ease-out (0 → 79 en 12 im à partir de f372, puis ralentit). Rangées ajoutées environ une par temps (probable). Poussée lente de ≈ 15 % sur la mesure. Texte trop petit pour la consigne « big type ».",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f364.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Carrousel cylindrique de vraies vidéos avec reflets au sol",
+      "name_en": "3D video carousel with floor reflections",
+      "t": "0:08.04-0:10.04",
+      "frames": "f482-f602",
+      "fps": 60,
+      "mechanics": "Une dizaine de clips verticaux sur un cylindre vu légèrement d'en haut (carte de face ≈ 7 % L × 30 % H, cartes latérales compressées par la perspective), reflets miroir sous chaque carte (≈ 30 % d'opacité, fondu vers le bas). Rotation lente continue. Compteur « generating 0 / 24 ugc ads » en haut, qui monte jusqu'à 24 sur la mesure ; une pastille verte s'allume en haut à droite de chaque carte « générée ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-003-move-f632.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Fouetté du carrousel avec arrêt sur le temps",
+      "name_en": "carousel whip spin",
+      "t": "0:10.2-0:11.3",
+      "frames": "f612-f678",
+      "fps": 60,
+      "mechanics": "La rotation accélère à partir de l'attaque forte du demi-temps 10,29 s (f617), passe le temps f632 en pleine accélération, atteint la vitesse maximale vers f640-f648 (cartes réduites à des traînées, ≈ 15-20 % L par image) avec un léger recul probable (≈ 10 %), puis décélère et redevient lisible vers f660-f663, sur le temps 11,04 s (f662). ≈ 0,8 s, ease-in-out symétrique. Flou par sous-images, visible en copies multiples.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f632.jpg, extra-02.jpg",
+      "illus": {"from": 615, "to": 666, "n": 7}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le clip héros devient un téléphone",
+      "name_en": "hero card to phone",
+      "t": "0:11.5-0:12.04",
+      "frames": "f690-f722",
+      "fps": 60,
+      "mechanics": "La carte centrale du carrousel (le clip héros) s'éclaircit, puis le cadre d'un téléphone apparaît autour et grandit (≈ 13 → 22 % L entre f702 et f708) ; les autres cartes s'éteignent en ≈ 12 im (f709-f720). Le téléphone porte une interface de réseau social (onglets « Following | For You », légende, icônes, bouton « Shop now »).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-004-move-f724.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone et panneau de campagne pilotés sur les temps",
+      "name_en": "beat-driven UI panel",
+      "t": "0:12.04-0:13.3",
+      "frames": "f721-f800",
+      "fps": 60,
+      "mechanics": "Sur le temps f722, le téléphone glisse du centre vers ≈ 33 % L en ≈ 10 im (ease-out, flou au départ) et le panneau sombre « launch campaign » apparaît à droite en fondu + glissement de 8 im. L'interrupteur « tiktok ads » passe au vert à f736 (demi-temps f737). Le curseur entre par le bas droit, le budget passe de $49 à $50 / day, puis clic sur « launch 24 ads » vers 13,0 s : le bouton devient vert « ✓ 24 ads live » (probablement sur le temps 13,04 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f724.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Panneau retourné en résultats avec courbe",
+      "name_en": "panel flip into results",
+      "t": "0:13.3-0:14.04",
+      "frames": "f798-f842",
+      "fps": 60,
+      "mechanics": "Le panneau se retourne (rotation 3D probable autour de l'axe vertical) en tableau « yuzu spark · day 7 » : trois tuiles (4.2x, $9.80, 24) dont les valeurs défilent, courbe orange #FF5A36 avec aire rouge sombre qui monte de gauche à droite. Le téléphone passe à un autre clip héros. Geste rapide, peu lisible en tant que retournement.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-005-move-f848.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée latérale vers le chiffre clé, compté",
+      "name_en": "push cut into count-up stat",
+      "t": "0:14.05-0:14.7",
+      "frames": "f843-f882",
+      "fps": 60,
+      "mechanics": "Sur le temps f842, téléphone et panneau sortent à gauche en 5 im (f843-f848) ; « 1.0x » entre par la droite à f849 et se centre à f854 (ease-out). Le compteur monte pendant le déplacement : 1.0 → 2.2x en 6 im, puis 2.4, 2.6, 2.8, 3.0 (f858)… 4.0x (f868), 4.2x vers f880 : ease-out. Chiffre blanc ≈ 18 % H, légende grise « return on ad spend » ≈ 1,5 % H.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f848.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Chiffres enchaînés en poussées verticales, un par temps",
+      "name_en": "vertical push stat sequence",
+      "t": "0:15.0-0:16.04",
+      "frames": "f900-f962",
+      "fps": 60,
+      "mechanics": "« 4.2x » monte et sort par le haut de f900 à f904 ; « $9.80 » monte du bas de f903 à f908 (milieu du croisement sur l'attaque f903, temps f902). Au temps suivant (f932), « $9.80 » laisse la place à « 24 » (« ads live, zero shoots »). Durées : 1 s, puis 0,5 s, puis 0,5 s : la mesure accélère. 6 à 8 im par poussée, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f905.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement par 3 sous-images (traînées en triple)",
+      "name_en": "3-subframe motion blur",
+      "t": "0:05.98-0:16.6",
+      "frames": "f359-f996",
+      "fps": 60,
+      "mechanics": "Chaque image mélange 3 rendus à t - 1/240, t et t + 1/240 s. Sur les mouvements lents, le flou est propre. Sur les rapides (poussées, compteurs, fouetté, ticker), on voit 3 copies distinctes décalées au lieu d'une traînée continue : « 4.2x » triplé verticalement à f901-f903, chiffres superposés pendant le comptage (« 3.4x » avec un « 4 » fantôme). Il faudrait 8 à 16 sous-images sur un demi-intervalle d'image (obturateur 180°).",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f848.jpg, microM-006-cut-f905.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Ticker de 3 mots, un par temps, le dernier en accent",
+      "name_en": "three-word vertical ticker",
+      "t": "0:16.0-0:17.6",
+      "frames": "f958-f1062",
+      "fps": 60,
+      "mechanics": "« hooks » → « ads » → « launched » au centre, ≈ 16 % H. Chaque passage démarre ≈ 2 im avant le temps (f990 pour le temps f992) : le mot sortant monte d'environ une ligne en passant au gris puis à 10 % d'opacité ; le mot entrant monte d'une ligne en dessous, flou sur 3 im, et se pose en ≈ 7 im (f997). Milieu du croisement sur le temps. « launched » arrive en orange #FF5A36 au temps f1022, tient, puis remonte d'environ 4 % H pour accueillir « before your coffee gets cold » (gris, fondu au temps f1052).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f994.jpg, extra-03.jpg",
+      "illus": {"from": 988, "to": 1000, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo : icône qui s'allume puis mot-symbole qui glisse de derrière",
+      "name_en": "icon-first logo reveal",
+      "t": "0:18.04-0:19.0",
+      "frames": "f1082-f1142",
+      "fps": 60,
+      "mechanics": "Au temps f1082, « launched » s'éteint ; l'icône (carré arrondi ≈ 16 % H, dégradé #FF6B4A → #E8384F, glyphe blanc) apparaît à sa place finale (≈ 36 % L) à 60 % d'opacité et ≈ 85 % d'échelle, puis s'allume en ≈ 16 im. Le mot-symbole « hooklab » blanc gras glisse vers la droite depuis derrière l'icône (masque) de f1100 à f1110, flou au départ, et se pose sur le temps f1112 avec l'attaque forte de 18,54 s. Slogan gris « ads that make themselves » en fondu vers 18,9 s. Tenue ≈ 1,1 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fondu au noir sur le dernier demi-temps",
+      "name_en": "fade to black",
+      "t": "0:19.77-0:19.97",
+      "frames": "f1186-f1198",
+      "fps": 60,
+      "mechanics": "Le logo s'éteint en ≈ 10 im à partir du demi-temps f1187, noir complet à f1198. Fin propre exigée par le prompt.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une scène par mesure de 2 s, coupes sur le premier temps",
+      "name_en": "one idea per bar",
+      "t": "0:00-0:20.06",
+      "frames": "f0-f1200",
+      "fps": 60,
+      "mechanics": "Les 10 mesures commencent à 0,04 / 2,04 / 4,04 / … / 18,04 s ; chaque début de mesure ouvre une nouvelle idée (accroche, interface, drop, mur, liste, carrousel, fouetté, campagne, chiffres, ticker, logo). Les 4 coupes et tous les changements de scène tombent à +1 à +3 im d'un premier temps ou d'un temps. Le storyboard est lisible comme une partition.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-cut-f253.jpg, microM-002-cut-f364.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Le geste part sur le temps, l'arrivée tombe après",
+      "name_en": "motion starts on the beat",
+      "t": "0:00-0:20.06",
+      "frames": "f32-f1112",
+      "fps": 60,
+      "mechanics": "Règle constante : le départ du mouvement est sur le temps (0 à +2 im), l'arrivée 5 à 8 im plus tard (0,08-0,13 s). Pour les croisements (ticker, poussées verticales), c'est le milieu du croisement qui est sur le temps (départ ≈ -2 im). Exception volontaire : le mot-symbole du logo est calé par son arrivée sur l'attaque forte de 18,54 s. Résultat : le mouvement paraît poussé par la grosse caisse, sans saccade.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f848.jpg, microM-006-cut-f905.jpg, microM-007-move-f994.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Demi-temps réservés aux micro-événements",
+      "name_en": "off-beat micro hits",
+      "t": "0:10.29-0:19.78",
+      "frames": "f617-f1187",
+      "fps": 60,
+      "mechanics": "Les petits gestes tombent sur les demi-temps : démarrage du fouetté sur l'attaque du demi-temps 10,29 s (f617), interrupteur « tiktok ads » à f736 (demi-temps f737), fondu final à f1186 (demi-temps f1187). Les grands gestes gardent les temps et les premiers temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f632.jpg, microM-004-move-f724.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fonds discrets : crème à halo, noir à lueur chaude",
+      "name_en": "subtle gradient backgrounds",
+      "t": "0:00-0:20.06",
+      "frames": "f0-f1200",
+      "fps": 60,
+      "mechanics": "Partie claire : crème #F6F3EF avec halo rose pâle en bas à droite et anneaux concentriques à peine visibles en haut à gauche, immobiles. Partie sombre : noir #0B0B0B, dégradé radial plus clair en haut (#1C1C1C), lueur chaude #2A120D en bas à gauche. Aucun fond animé, conformément à la direction « lots of empty space ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Une idée par plan, centrée, beaucoup de vide",
+      "name_en": "one idea per shot",
+      "t": "0:00-0:20.06",
+      "frames": "f0-f1200",
+      "fps": 60,
+      "mechanics": "Chaque plan a un seul sujet centré (mot, fenêtre, mur, liste, carrousel, téléphone + panneau, chiffre, logo) et 40 à 70 % de vide autour. Aucune décoration superflue, aucun texte coupé par le bord. Revers : les écrans d'interface et la liste sont petits (textes 1 à 4 % H) dans ce vide.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule clair → sombre au drop",
+      "name_en": "light-to-dark section switch",
+      "t": "0:04.04-0:04.23",
+      "frames": "f242-f254",
+      "fps": 60,
+      "mechanics": "Les deux premières mesures (promesse, interface) sont sur fond crème ; à partir du drop, tout est sur fond noir jusqu'à la fin. L'inversion de valeur marque la section, comme un changement de partie dans la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f253.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt est un gabarit qui demande d'abord à l'utilisateur nom, promesse, moments d'interface, couleur d'accent, 10 à 20 vrais clips et une musique avec drop. Les vraies vidéos UGC rendent le produit fictif crédible ; c'est ce qui sépare ce résultat des démos à cartes vides."},
+    {"kind": "direction", "insight": "La liste d'interdits (anneaux d'onde, particules, RGB split, tremblement, flares, néons, sols grillagés, fonds qui clignotent, courbes à rebond) a été respectée : courbes ease-out sans dépassement, aucune décoration. Seule entorse légère : une petite lueur rouge sous l'icône."},
+    {"kind": "structure", "insight": "Le storyboard écrit en mesures (« 10 bars at 120 BPM, 2 seconds each ») et en contenu par mesure a été suivi presque à la lettre : cercle sorti du bouton au drop, mur avec ligne de scan et 3 gagnants, carrousel avec reflets et fouetté, téléphone et panneau retourné, chiffres en poussées, ticker de 3 mots, logo, fondu. C'est la cause directe de la synchro."},
+    {"kind": "structure", "insight": "« the key output as big type » est la seule consigne mal tenue : Claude en a fait une liste de hooks en petit corps (≈ 4 % H). Il aurait fallu donner la taille (« au moins 12 % de la hauteur »)."},
+    {"kind": "build", "insight": "« every style is computed from time inside window.seek(t) » rend chaque image déterministe et permet de placer un geste à l'image près sur la grille calée sur les grosses caisses. Recette directement transposable à HyperFrames (timeline en pause)."},
+    {"kind": "build", "insight": "« 3 subframes per frame at t minus, at, and plus 1/240s » produit des copies multiples visibles sur les mouvements rapides. Demander 8 à 16 sous-images, ou réserver le flou aux mouvements lents."},
+    {"kind": "banned", "insight": "« No full stops in on-screen text » est respecté partout (« your next ad is one link away », « before your coffee gets cold ») : le ton minimal tient aussi par la ponctuation."},
+    {"kind": "qa", "insight": "« Probe 20 or more frames… Fix anything cluttered, overlapping or hard to read » a évité tout chevauchement, mais n'a pas corrigé les petits corps de texte de l'interface et de la liste."},
+    {"kind": "other", "insight": "« Measure element positions at runtime for match cuts » explique la précision du morph « link » → champ d'URL et du cercle qui sort exactement du bouton."}
+  ],
+  "steal": [
+    "Écrire le prompt en mesures : 10 mesures de 2 s à 120 BPM, une idée par mesure, coupes sur le premier temps, événements d'interface sur les temps.",
+    "Faire partir chaque geste sur le temps (0 à +2 im) et laisser l'arrivée tomber 5 à 8 im après ; pour un croisement, mettre son milieu sur le temps.",
+    "Morph mot → interface : le mot clé en couleur d'accent devient un bloc, puis le champ de saisie du produit, en 0,45 s.",
+    "Drop : poussée de caméra sur le bouton cliqué, puis cercle qui s'ouvre depuis ce bouton sur le premier temps et fait basculer en fond sombre.",
+    "Fin en ticker de 3 mots, un par temps, le dernier en couleur d'accent, puis logo dont le mot-symbole atterrit sur l'attaque forte."
+  ],
+  "flaws": [
+    "Flou à 3 sous-images seulement : copies fantômes en triple sur les poussées, les compteurs et le fouetté, effet stroboscopique.",
+    "Liste de hooks et textes d'interface trop petits (1 à 4 % H) : illisibles sur mobile.",
+    "La « sortie clé en gros caractères » est devenue une liste discrète ; mesure 4 presque statique (0,8 s figées).",
+    "Logo tenu 1,1 s avant le fondu : fin un peu longue pour un spot de 20 s.",
+    "Panneau retourné en résultats trop rapide et discret pour être lu comme un geste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : 60 fps natifs, synchro à l'image près sur une grille de 120 BPM, construction en mesures transposable telle quelle dans HyperFrames, et plusieurs transitions motivées (mot → champ, cercle depuis le bouton, fouetté du carrousel, ticker). À étudier image par image pour relever les courbes et les décalages exacts par rapport aux temps."
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "slug": "mdaman010-e7226a",
+  "title": "AI data centre 3D film",
+  "craft": 3,
+  "craft_reason": "L'œuvre HTML est un très bel explicatif (maquette 3D cohérente, trois flux codés par couleur, zoom du bâtiment jusqu'au cœur tensoriel), mais la vidéo publiée est un enregistrement d'écran : barre du lecteur, curseur, sauts de lecture, chapitres tronqués, fin coupée.",
+  "style": {
+    "family": "maquette 3D éditoriale, infographie de grand média",
+    "palette": ["#D7DBDF", "#F1F2F2", "#2A2D33", "#E7D06F", "#5C99FD", "#DE575E", "#4BCBB9", "#CE9083", "#88684A"],
+    "type": ["grotesque condensée grasse pour les titres (type Archivo ou Franklin Gothic condensé, probable), ≈ 6 % de la hauteur", "grotesque neutre pour les paragraphes (type Inter, probable), ≈ 1,9 %", "compteur « N of 11 » et étiquettes minuscules"],
+    "texture": "maquette en argile blanche et grise, ombres douces, brouillard de profondeur, flux en tirets lumineux légèrement flous, pas de flou de mouvement",
+    "mood": "calme, didactique, éditorial"
+  },
+  "rhythm": {
+    "bpm": 78,
+    "sync": "aucune",
+    "dead_time": "beaucoup",
+    "acts": [
+      "0-7,4 s : 1/11, bâtiment dans le brouillard, trois flux annoncés",
+      "7,4-22,4 s : 2/11, l'énergie arrive (pylônes, poste, générateurs, onduleurs)",
+      "22,4-28,6 s : 3/11, salle des racks (tronqué)",
+      "28,6-43,2 s : 4/11, un rack, 72 GPU (vague, tiroir)",
+      "43,4-50,5 s : 5/11, le tiroir de calcul (saut à 48,5 s)",
+      "50,6-58,9 s : 6/11, Blackwell en vue éclatée",
+      "58,9-65,7 s : 7/11, cœurs tensoriels, matrice qui se remplit",
+      "65,7-72,6 s : 8/11, épine NVLink en cuivre",
+      "72,6-80,4 s : 9/11, cluster et réseau feuille/épine",
+      "80,4-95,7 s : 10/11, refroidissement jusqu'au toit",
+      "95,7-97,9 s : 11/11, retour au plan d'ensemble et slogan (coupé)"
+    ]
+  },
+  "family": "explainer",
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Coupes : 0/8 à ±1 im d'un temps ou demi-temps (78,5 BPM, pulsation peu fiable, clarté 2,2). Sur les planches marquées, coupes f1718 (+6 im après la barre bleue), f3536 (−10 im) et f4825 (−6 im) ; titres tapés 2 à 3 im après chaque coupe. Ces coupes sont des sauts de lecture d'un enregistrement d'écran. Indice auto : p = 1,0 ; r = −0,09.",
+    "synced": [],
+    "style_match": "Drone très bas (−41 dBFS), presque sans dynamique ni pulsation : le calme colle à la maquette brumeuse et aux travellings lents, mais n'apporte aucun rythme.",
+    "how_built": "Capture d'écran manuelle d'une page HTML interactive (barre de lecteur, sauts de lecture) : impossible de caler l'image sur le son. Le son est probablement l'ambiance générée par la page (bouton « Sound » du lecteur) ; aucune grille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Zoom avant puis arrière en 11 chapitres",
+      "name_en": "powers-of-ten structure",
+      "t": "0:00.0-1:37.9",
+      "frames": "f0-f5874",
+      "fps": 60,
+      "mechanics": "Échelle bâtiment, puis salle, rack, tiroir, puce, cœurs, puis retour par le réseau, la chaleur et le bâtiment ; le dernier chapitre reprend le plan du premier.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Suivre un objet à travers le système",
+      "name_en": "follow-the-object narrative",
+      "t": "0:00.0-0:07.4 / 1:35.7-1:37.9",
+      "frames": "f0-f444 / f5742-f5874",
+      "fps": 60,
+      "mechanics": "Objet suivi : une requête (« Follow a single prompt through the building that answers it »), trois flux annoncés dès l'ouverture (power in, data through, heat out). Chute : « A prompt from a phone in Bengaluru… streams back as tokens ».",
+      "verdict": "reprendre",
+      "evidence": "zoom-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flux codés par couleur",
+      "name_en": "color-coded flows",
+      "t": "0:00.0-1:37.9",
+      "frames": "f0-f5874",
+      "fps": 60,
+      "mechanics": "Énergie #E7D06F, données #5C99FD, chaleur #DE575E, liquide froid #4BCBB9, retour chaud #CE9083. Mêmes couleurs dans la légende, sur les tirets de chapitre et sur les objets.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Légende contextuelle",
+      "name_en": "contextual legend",
+      "t": "0:00.0-1:37.9",
+      "frames": "f60, f5850",
+      "fps": 60,
+      "mechanics": "En haut à droite, 4 lignes. Flux actifs en gras avec une description propre au chapitre (« Power · Grid feed », « Heat · Rejected to air », à la fin « Data · Prompts in, tokens out »), inactifs en gris.",
+      "verdict": "reprendre",
+      "evidence": "zoom-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tirets lumineux en circulation",
+      "name_en": "marching dashes",
+      "t": "0:08.0-0:22.4",
+      "frames": "f480-f1342",
+      "fps": 60,
+      "mechanics": "Câble d'énergie en pointillé jaune à halo doux. Les tirets avancent à vitesse constante (≈ 1 % de la largeur par image pendant les travellings) et suivent pylônes, poste, générateurs, mur. Même principe pour les données, le liquide froid et le retour chaud.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f1078.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Panaches de chaleur ondulants",
+      "name_en": "heat plumes",
+      "t": "0:00.0-0:07.0 / 1:28.0-1:37.9",
+      "frames": "f0-f420 / f5280-f5874",
+      "fps": 60,
+      "mechanics": "Rubans rouges en tirets qui montent en ondulant au-dessus des refroidisseurs (≈ 15 % de la hauteur), en boucle.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f5488.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bloc chapitre en bas à gauche",
+      "name_en": "lower-left chapter block",
+      "t": "0:00.0-1:37.9",
+      "frames": "f0-f5874",
+      "fps": 60,
+      "mechanics": "Tiret de couleur + « N of 11 » (≈ 1,3 % de la hauteur), titre condensé gras ≈ 6 %, paragraphe de 25 à 35 mots ≈ 1,9 % ; bloc ≈ 33 % de la largeur, fixe pendant tout le chapitre.",
+      "verdict": "adapter",
+      "evidence": "zoom-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre tapé lettre par lettre",
+      "name_en": "typewriter title",
+      "t": "0:22.40-0:22.50 / 0:28.68-0:28.85",
+      "frames": "f1344-f1350, f1721-f1731, f3538-f3559, f4827-f4839, f5752-f5796",
+      "fps": 60,
+      "mechanics": "Titre écrit en 7 à 22 im (0,12 à 0,37 s), ≈ 1 à 2 caractères par image, 2 à 3 im après le changement de scène ; paragraphe en fondu ≈ 15 im plus tard. Titre final (32 caractères) plus lent : ≈ 44 im (0,73 s).",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f1718.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au brouillard entre chapitres",
+      "name_en": "dip to fog",
+      "t": "0:07.10-0:07.95",
+      "frames": "f426-f477",
+      "fps": 60,
+      "mechanics": "La scène se fond dans le brouillard #D7DBDF en ≈ 14 im (0,23 s), 6 im de vide, puis la suivante sort du brouillard en ≈ 30 im (0,5 s) pendant que le titre se tape. Même recette à 22,0 s, 50,2 s et 1:35,6.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 420, "to": 480, "n": 8}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Brouillard de profondeur",
+      "name_en": "depth fog",
+      "t": "0:24.0-0:28.6",
+      "frames": "f1440-f1718",
+      "fps": 60,
+      "mechanics": "Les lointains se fondent dans la couleur du fond ; dans l'allée des racks, les rangées passent du gris ardoise au blanc vers le fond. Le brouillard isole le sujet et sert aussi de transition.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1571.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui suit le flux",
+      "name_en": "follow-the-flow camera",
+      "t": "0:08.0-0:22.4",
+      "frames": "f480-f1342",
+      "fps": 60,
+      "mechanics": "Travelling continu le long du câble jaune : pylônes, poste (13 s), générateurs (17 s, ≈ 1,5 % de la largeur par image au plus vite), contournement du bâtiment en orbite (18 s), recul (21-22 s). Vitesse lissée, pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f1025.jpg",
+      "illus": {"from": 1010, "to": 1098, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Étiquettes à filet",
+      "name_en": "leader-line callouts",
+      "t": "0:13.0-1:35.0",
+      "frames": "f780-f5700",
+      "fps": 60,
+      "mechanics": "Titre en gras + une ligne grise (≈ 0,9 % de la hauteur), filet coudé vers la pièce, fondu à l'entrée quand la caméra passe ; masquables via « Callouts ».",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Vague de surlignage sur la pile",
+      "name_en": "wave highlight",
+      "t": "0:30.0-0:31.5",
+      "frames": "f1800-f1890",
+      "fps": 60,
+      "mechanics": "Les 18 tiroirs avancent l'un après l'autre de bas en haut puis reviennent en ≈ 1,5 s (probable), avec l'étiquette « 18 compute trays » : compter sans numéroter.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Tiroir qui sort du rack",
+      "name_en": "drawer slide-out",
+      "t": "0:35.00-0:36.27",
+      "frames": "f2100-f2176",
+      "fps": 60,
+      "mechanics": "Un tiroir au milieu du rack sort de ≈ 60 % de sa profondeur en ≈ 60 im (1 s), ease-in-out, pendant que la caméra tourne ; étiquette « Liquid-cooled tray » 16 im après l'arrêt.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 2096, "to": 2180, "n": 8}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Vue éclatée",
+      "name_en": "exploded view",
+      "t": "0:52.73-0:58.93",
+      "frames": "f3164-f3536",
+      "fps": 60,
+      "mechanics": "Du haut vers le bas : dissipateur cuivre #88684A, couvercle, deux dies et 8 piles HBM, interposeur, substrat, billes. Les couches s'écartent lentement à la verticale sur ≈ 6 s, chacune étiquetée.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg",
+      "illus": {"from": 3164, "to": 3530, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Matrice qui se remplit",
+      "name_en": "matrix fill",
+      "t": "1:00.5-1:05.6",
+      "frames": "f3630-f3936",
+      "fps": 60,
+      "mechanics": "Grille 2D de tuiles grises au-dessus du die ; des tuiles bleues s'allument par colonnes, comme une multiplication de matrices en cours ; étiquettes « Tensor core », « Second-gen Transformer Engine ».",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans l'épine de câbles",
+      "name_en": "push-in",
+      "t": "1:09.5-1:12.5",
+      "frames": "f4170-f4350",
+      "fps": 60,
+      "mechanics": "Le rack se rapproche jusqu'à ce que les câbles cuivre remplissent l'écran ; tirets bleus qui montent le long des câbles.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Arcs de réseau feuille/épine",
+      "name_en": "leaf-spine arcs",
+      "t": "1:12.6-1:20.4",
+      "frames": "f4356-f4825",
+      "fps": 60,
+      "mechanics": "Commutateurs en plaques flottantes au-dessus des rangées, arcs bleus en tirets entre racks et commutateurs ; lisible mais touffu.",
+      "verdict": "adapter",
+      "evidence": "microM-010-cut-f4606.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Matériau maquette d'architecte",
+      "name_en": "clay model look",
+      "t": "0:00.0-1:37.9",
+      "frames": "f0-f5874",
+      "fps": 60,
+      "mechanics": "Volumes blancs et gris, arbres en sphères sur tige, sol brumeux, ombres douces ; seuls les flux sont saturés.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Phrase-slogan finale à trois temps",
+      "name_en": "tricolon tagline",
+      "t": "1:35.75-1:36.60",
+      "frames": "f5745-f5796",
+      "fps": 60,
+      "mechanics": "« Power in. Tokens out. Heat away. » tapé en 0,73 s sur le plan d'ensemble : trois membres pour trois flux.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Lecteur à chapitres",
+      "name_en": "chaptered player UI",
+      "t": "0:00.0-0:06.0 / 0:21.0-0:42.0",
+      "frames": "f0-f360 / f1260-f2520",
+      "fps": 60,
+      "mechanics": "Barre sombre en bas : pause, « 0:23 / 2:40 », progression graduée en 11 chapitres, « Fill window », « Callouts », « Sound », « Full screen ». Bon pour une page interactive, mais incrustée dans la vidéo avec le curseur.",
+      "verdict": "adapter",
+      "evidence": "zoom-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Nappe d'ambiance sans synchro",
+      "name_en": "unsynced ambient bed",
+      "t": "0:00.0-1:37.9",
+      "frames": "f0-f5874",
+      "fps": 60,
+      "mechanics": "≈ 78 BPM (clarté 2,2, peu fiable). Aucune coupe ni apparition calée ; pas de voix (Whisper hallucine une phrase répétée).",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Show me » + stack HTML : le modèle construit une page interactive de 2 min 40 avec lecteur (chapitres, callouts, son, plein écran), pas une vidéo. Pour un livrable vidéo, le dire explicitement et fixer la durée."},
+    {"kind": "structure", "insight": "Sans structure imposée, le modèle choisit un zoom avant puis arrière en 11 chapitres et un fil narratif (suivre une requête, trois flux : power in, data through, heat out)."},
+    {"kind": "other", "insight": "Le modèle remplit l'explication de chiffres techniques précis (NVL72, 72 GPU, ≈ 120 kW par rack, HBM3e, NVLink 1,8 To/s, 45 °C / 65 °C) : crédible, mais tout passe par le texte."},
+    {"kind": "qa", "insight": "La vidéo publiée est une capture d'écran manuelle (1920x982, curseur, barre de lecture, sauts) : un rendu image par image (HyperFrames) aurait évité ces défauts."},
+    {"kind": "inputs", "insight": "La chute « A prompt from a phone in Bengaluru » n'est pas dans le prompt : choix du modèle ou contexte de l'auteur (probable)."}
+  ],
+  "steal": [
+    "Pour un sujet technique, choisir un objet à suivre (une requête) et 3 flux nommés dès l'ouverture, puis les coder en couleur partout : objets, légende, tiret de chapitre.",
+    "Une légende qui change avec le chapitre : flux actifs en gras avec une description du moment, inactifs en gris.",
+    "Zoom avant puis arrière (bâtiment, puce, bâtiment) et dernier plan identique au premier, avec une phrase à trois temps qui résume les trois flux.",
+    "Le brouillard de la couleur du fond sert de profondeur et de transition : la scène s'y fond en 14 im, la suivante en sort en 30 im.",
+    "Montrer l'intérieur par des gestes mécaniques simples : tiroir qui sort (1 s, ease-in-out), vue éclatée lente, vague sur une pile pour compter."
+  ],
+  "flaws": [
+    "Enregistrement d'écran : barre du lecteur visible à 0-6 s, 21-42 s et 88-91 s, curseur visible, hauteur de 982 px.",
+    "Sauts de lecture : 7 changements brutaux au milieu de chapitres, chapitres 3 à 9 tronqués à 6 à 8 s, dernier chapitre coupé à 2,2 s.",
+    "Rythme de documentaire : plans continus lents, 24 % de maintiens, rien n'est calé sur le son.",
+    "Texte trop petit pour une vidéo (paragraphes ≈ 1,9 % de la hauteur, étiquettes ≈ 0,9 %).",
+    "Transcription Whisper hallucinée sur la musique : à ignorer."
+  ]
+}

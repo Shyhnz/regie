@@ -1,0 +1,353 @@
+{
+  "slug": "ai-baymax-0ef9dd",
+  "title": "FigPad product promo",
+  "handle": "@Ai_Baymax",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Système propre et cohérent (gabarit texte + fenêtre, accent bleu marine, zooms de mise au point), mais rythme de page d'accueil : 47 % d'images figées, huit fondus identiques, interfaces illisibles.",
+  "summary": "Promo d'une minute pour FigPad, générateur de figures scientifiques par IA. Question-accroche mot à mot, logo avec mot rotatif, puis six fonctionnalités numérotées : texte à gauche, enregistrement d'écran dans une fausse fenêtre macOS à droite, avec zooms de mise au point. Mur de réalisations, logos d'universités, carte d'appel à l'action. Propre et cohérent, mais gabarit répété, fondus partout, 47 % d'images figées.",
+  "prompt_vs_result": [
+    "Une seule ligne : une promo d'une minute du produit, construite à partir de son code source. Aucun style, aucune musique, aucune structure, aucun public imposés.",
+    "Claude a tout choisi : question-accroche, logo à mot rotatif, six fonctionnalités en gabarit texte + fenêtre navigateur, mur de réalisations, logos d'universités, carte CTA, palette crème et bleu marine, Inter, fondus, bande-son à 100 BPM avec drop.",
+    "Le code a probablement fourni textes, captures et logos de la page d'accueil : fidèle mais générique. Il aurait fallu imposer un tempo (changements sur les temps), une durée maximale par plan, des zooms lisibles, des transitions variées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F7EADA", "role": "fond, coin bas gauche (crème)"},
+      {"hex": "#EAECEE", "role": "fond, centre du dégradé"},
+      {"hex": "#D6E0F4", "role": "fond, coin haut droit (pervenche)"},
+      {"hex": "#1B1B1F", "role": "titres"},
+      {"hex": "#133B88", "role": "accent bleu marine : 2e ligne de l'accroche, mot rotatif, badges, bouton final"},
+      {"hex": "#767070", "role": "texte secondaire, liste d'étapes"},
+      {"hex": "#FFFFFF", "role": "fenêtre navigateur, cartes"},
+      {"hex": "#010101", "role": "logo FigPad"}
+    ],
+    "type": "Grotesque type Inter : Bold pour les titres (accroche 100 px, capitale 6,8 % de la hauteur ; sections 4,6 %), Regular gris pour le corps (2,6 %). Casse de phrase, interlettrage par défaut, mot clé en bleu marine.",
+    "texture": "Aucun grain. Ombre portée large et douce sous la fenêtre (flou ≈ 40 px, opacité faible) et barre de titre gris clair à feux tricolores ; grille de points gris très pâle (pas ≈ 36 px) et anneaux concentriques à peine visibles sur le fond ; aucun flou de mouvement (fondus et zooms nets).",
+    "style": "Promo SaaS claire type page d'accueil",
+    "coherence": "Le système tient : même fond fixe, même gabarit texte à gauche / fenêtre à droite, même accent #133B88 pour la 2e ligne de l'accroche, le « g » du logo, le mot rotatif, les badges, les pastilles et le bouton, même cascade de 37 images à chaque section. Il casse dans les captures (bannière promo orange « 60 % off », sélecteur de fichiers macOS en chinois, PowerPoint) et dans la bande de logos d'universités en couleurs d'origine."
+  },
+  "rhythm": {
+    "bpm": 100,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "Tempo 100 BPM, grille nette (netteté 11,2), soit une barre (temps ou demi-temps) toutes les 9 images à 30 fps. Synchro lâche : seuls deux points macro sont calés, le whoosh du logo (sommet à 3,25 s, fondu dès f96 = 3,20 s) et le drop de la démo (grosse caisse à 7,23 s, passage à la section 01 dès f216 = 7,20 s). Ensuite les sections changent à 13,6 / 19,6 / 25,6 / 32,0 / 38,0 / 43,6 / 49,1 s, des secondes rondes espacées de 5,5 à 6,4 s sans phase constante avec les temps ; 34 gestes clés comptés, 20 à ±2 im d'une barre (59 %) pour un hasard de 56 %. 4 coupes franches (22,73 / 30,10 / 33,10 / 34,43 s), aucune à moins de 50 ms d'un temps (médiane 83 ms). Densité : dans les démos un changement visible toutes les 1 à 2 s (zoom, clic, saisie), mais 23 maintiens ≥ 0,4 s totalisant 25,9 s (47 %) : pauses de l'intro (6,2-7,2 s), attentes de génération où seul un pourcentage bouge (16,07-18,27 s ; 23,57-25,23 s), carte finale figée de 50,0 à 55,3 s hormis un reflet de 0,7 s.",
+    "timeline": [
+      {"t": "0:00-0:01.3", "what": "Question « How long does one / paper figure take? » révélée mot à mot, 2e ligne en bleu marine", "technique": "fondu montant de 20 px, 10 im, décalage 3 im"},
+      {"t": "0:01.7-0:03.2", "what": "Liste grise Read papers · Sketch · Lay out · Recolor · Redo… puis maintien 0,5 s", "technique": "cascade, décalage 6 im"},
+      {"t": "0:03.2-0:03.8", "what": "La question s'efface, le symbole F puis le mot FigPad apparaissent", "technique": "fondu enchaîné 12 im sur un whoosh"},
+      {"t": "0:04.0-0:07.2", "what": "Slogan « Turn your idea / sketch / reference into a polished scientific figure », pastille figpad.ai", "technique": "mot rotatif sous masque, 8 im, toutes les secondes"},
+      {"t": "0:07.2-0:13.6", "what": "01 Text to Figure : saisie du prompt, zoom sur le champ, génération, figure CAR-T", "technique": "drop à 7,23 s ; zoom ease-out 18 im dans un cadre fixe"},
+      {"t": "0:13.6-0:19.6", "what": "02 Sketch to Figure : zoom sur le composeur, progression 0 → 97 %, schéma généré", "technique": "attente compressée, maintien 2,2 s"},
+      {"t": "0:19.6-0:25.6", "what": "03 Reference to Figure : sélecteur de fichiers, 3 références, coupe à 22,73 s, progression 26 → 84 %", "technique": "fondu de raccord 4 im puis coupe franche"},
+      {"t": "0:25.6-0:32.0", "what": "04 Precise Editing : zoom sur Edit Text puis sur CAR construct, modale de saisie, coupe 30,10 s, Apply", "technique": "zooms ×1,8 en 8 im qui suivent le curseur"},
+      {"t": "0:32.0-0:38.0", "what": "05 Editable Export : modale d'export assombrie (coupe 33,10 s), téléchargement (coupe 34,43 s), figure éditable dans PowerPoint", "technique": "modale assombrie, coupes franches"},
+      {"t": "0:38.0-0:43.6", "what": "06 Paper to Poster : PDF déposé, choix de gabarit, affiche générée", "technique": "fondus de raccord courts"},
+      {"t": "0:43.6-0:49.1", "what": "« Trusted by 100K+ researchers » : deux rangées de figures et une rangée de logos d'universités", "technique": "défilement linéaire ≈ 70 px/s, masques en fondu"},
+      {"t": "0:49.1-0:55.45", "what": "Carte finale : logo, 2 lignes, bouton « Start for Free → figpad.ai », mention gratuite", "technique": "cascade puis reflet sur le bouton (21 im) et maintien 3,3 s"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Bande-son très régulière à 100 BPM (autocorrélation 0,90 sur la grosse caisse, clap sur 2 et 4). Deux points macro calés, mesurés sur l'audio et à l'image : le whoosh culmine à 3,25 s alors que le fondu vers le logo commence à f96 (3,20 s), 1-2 im avant ; la grosse caisse entre à 7,23 s et le passage à la section 01 commence à f216 (7,20 s), 1 im avant. Ensuite rien : sur 34 gestes clés comptés sur les planches (départs de zoom, fondus de raccord, coupes, entrées de section, cascade finale), 20 tombent à ±2 im d'une barre bleue ou bleu clair (59 %) pour un hasard de 56 % (barre toutes les 9 images à 30 fps), et 8/34 à ±1 im (24 %, hasard 33 %). Exemples hors grille : section 05 à f960 (temps f955, demi-temps f964), section 06 à f1140 (f1135 / f1144), coupe f682 (temps f685), carte finale f1473 (temps f1477). L'indice automatique ne voit rien (R ≤ 0,11, p ≥ 0,65), ce qui confirme le hasard après l'intro. La musique s'arrête sur un temps à 52,82 s et sa queue s'éteint à 55,4 s, la fin exacte de la vidéo.",
+    "synced": ["drop", "apparitions"],
+    "style_match": "Électro-pop calme à 100 BPM (nappe, charleston à contretemps, grosse caisse régulière, probable) : énergie posée cohérente avec le style SaaS clair, mais les fondus lents ignorent sa pulsation.",
+    "how_built": "Probable bande-son générée en code autour de la timeline (boucle parfaitement quantifiée, intro sans grosse caisse pendant l'accroche, whoosh au logo, drop à la démo, fin ajustée à la durée). Les scènes, elles, sont programmées en secondes rondes (7,2 puis tous les ≈ 6 s) et non en nombre de temps : la synchro s'arrête après le drop. Il aurait suffi de caler chaque section sur un multiple de 4 temps (2,4 s) à partir de 7,22 s."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Accroche mot à mot en fondu montant",
+      "name_en": "Word-by-word fade-up reveal",
+      "t": "0:00.13-0:01.30",
+      "frames": "f4-f39",
+      "fps": 30,
+      "mechanics": "Chaque mot passe de 0 à 100 % d'opacité (gris clair vers #1B1B1F) en montant d'environ 20 px (1,9 % de la hauteur) : pas de 5, 4, 3, 3, 2, 1, 1, 1, 1 px, donc ease-out type power2 sur ≈ 10 images (0,33 s). Décalage de 3 images (0,1 s) entre mots : How f4, long f7, does f10, one f13 ; la ligne 2 (bleu marine) part à f24 après une pause de 8 images : paper f24, figure f27, take? f30. Aucun flou. Rien n'est calé sur la musique (nappe sans pulsation à ce moment).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 3, "to": 34, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Question d'accroche bicolore centrée",
+      "name_en": "Two-tone hook question",
+      "t": "0:00.13-0:03.20",
+      "frames": "f4-f96",
+      "fps": 30,
+      "mechanics": "Deux lignes centrées en Inter Bold ≈ 100 px (capitale ≈ 73 px = 6,8 % de la hauteur), bloc large de 48 % du cadre (x 507-1423 px), lignes à y ≈ 33-42 % et 45-54 %. Ligne 1 noire (#1B1B1F) pour la question, ligne 2 bleu marine (#133B88) pour l'objet du produit (« paper figure take? »). Interlignage serré (≈ 1,3). Le spectateur se reconnaît avant de voir le produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Liste de corvées en cascade",
+      "name_en": "Staggered pain-point list",
+      "t": "0:01.70-0:02.70",
+      "frames": "f51-f81",
+      "fps": 30,
+      "mechanics": "Cinq étapes grises (#6B6867, ≈ 32 px = 3 % de la hauteur) séparées par des points médians : Read papers · Sketch · Lay out · Recolor · Redo…, chacune en fondu + montée de ≈ 8 px sur ≈ 6 images, décalage régulier de 6 images (0,2 s) : f51, f57, f63, f69, f75. Le « Redo… » final suggère une boucle sans fin. Puis maintien de 0,5 s avant le logo. Idée narrative juste, mais texte trop petit et trop pâle pour un écran de téléphone.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu vers le logo en deux temps",
+      "name_en": "Crossfade to two-step logo reveal",
+      "t": "0:03.20-0:03.80",
+      "frames": "f96-f114",
+      "fps": 30,
+      "mechanics": "Fondu enchaîné de 12 images (f96-f107, 0,4 s) : la question s'efface pendant que le symbole « F » noir apparaît au centre par-dessus (image boueuse vers f102, le symbole chevauche « How long ») ; le mot-symbole « FigPad » arrive ensuite en passant du gris au noir (f108-f114). Logo final ≈ 30 % de la largeur et 15,6 % de la hauteur, « g » en bleu marine. Le premier changement (f96, 3,20 s) tombe sur le sommet d'un whoosh (3,25 s).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot rotatif dans une fente soulignée",
+      "name_en": "Rotating word slot (text rotator)",
+      "t": "0:04.90-0:06.13",
+      "frames": "f147-f184",
+      "fps": 30,
+      "mechanics": "Phrase « Turn your ___ into a polished scientific figure » (≈ 5 % de la hauteur, 73 % de la largeur) apparue en fondu de 6 images à f120. Le mot clé bleu marine (#183D8B) posé sur un soulignement de 4 px change toutes les ≈ 29 images (1 s) : idea → sketch (f147-f155) → reference (f176-f184). L'ancien mot monte et sort par le haut pendant que le nouveau monte depuis le bas, tous deux coupés par un masque de la hauteur d'une ligne ; 8 images (0,27 s), ease-in-out, sans flou ; le soulignement s'élargit pour « reference ». Les trois mots annoncent les trois premières fonctionnalités.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 145, "to": 156, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pastille capsule sous le slogan",
+      "name_en": "Outlined pill tag",
+      "t": "0:04.60-0:07.20",
+      "frames": "f138-f216",
+      "fps": 30,
+      "mechanics": "Capsule à contour 1 px gris clair, texte bleu-gris (#39477C) ≈ 2,4 % de la hauteur : « AI Scientific Figure Generator · figpad.ai », centrée à y ≈ 71 %. Fondu de 3 à 6 images, 18 images après le slogan. Même langage graphique que les pastilles de mots-clés des sections (Mechanisms, Workflows, Graphical abstracts…).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop calé sur la révélation du produit",
+      "name_en": "Drop-synced product reveal",
+      "t": "0:03.20-0:07.23",
+      "frames": "f96-f217",
+      "fps": 30,
+      "mechanics": "Intro musicale en construction pendant l'accroche : nappe seule de 0,5 à 4,7 s, whoosh qui culmine à 3,25 s quand le fondu vers le logo démarre (f96, 3,20 s), charleston à contretemps dès 5,12 s, puis grosse caisse + basse + clap à 7,23 s. Le passage à la section 01 (première fenêtre produit) commence à f216 (7,20 s), 1 image avant la grosse caisse : l'image anticipe très légèrement le son, ce qui se perçoit comme simultané. C'est le seul vrai moment de synchro de la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg ; extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de section texte + fenêtre navigateur",
+      "name_en": "Split layout: copy column + browser mockup",
+      "t": "0:07.20-0:43.60",
+      "frames": "f216-f1308",
+      "fps": 30,
+      "mechanics": "Colonne gauche à x = 110 px (marge 5,7 %) : badge rond bleu marine « 01 » (≈ 60 px) + intitulé bleu (« Text to Figure »), titre noir sur deux lignes (≈ 68 px, capitale 4,6 % de la hauteur), corps gris 28 px, trois pastilles à contour. Droite : fausse fenêtre macOS (feux tricolores, URL « figpad.ai ») x 710-1830 px (58 % de la largeur), y 148-943 px (74 % de la hauteur), coins ≈ 12 px, ombre douce. Petit logo en haut à gauche. Identique sur les six sections, seule la hauteur de la fenêtre varie selon la capture.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Cascade d'entrée de la colonne de section",
+      "name_en": "Staggered section copy build",
+      "t": "0:07.20-0:08.43",
+      "frames": "f216-f253",
+      "fps": 30,
+      "mechanics": "Pendant le fondu, badge et ligne 1 apparaissent vers f225, ligne 2 vers f229, corps vers f236, pastilles vers f243 : fondus montants de ≈ 6 images, décalage 6-7 images, du gris vers le noir. Durée totale 37 images (1,23 s), strictement identique aux six sections (f408-f445, f588-f622, f768-f805, f960-f997, f1140-f1177). La fenêtre monte de 8 px en 4 images (feu rouge de y 170 à 162, f226-f230). Lisible, mais la répétition à l'identique installe la monotonie.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f766.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné entre sections",
+      "name_en": "Cross-dissolve between sections",
+      "t": "0:13.60-0:14.00",
+      "frames": "f408-f420",
+      "fps": 30,
+      "mechanics": "Les huit changements de partie (7,2 / 13,6 / 19,6 / 25,6 / 32,0 / 38,0 / 43,6 / 49,1 s) sont tous des fondus de l'ensemble du cadre en 10 à 12 images (0,33-0,4 s), sans mouvement, sans raccord de forme ni de couleur. Pendant 4-5 images deux interfaces se superposent en transparence et rien n'est lisible. Aucun n'est calé sur un temps sauf le premier (drop).",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f398.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom de mise au point dans un cadre fixe",
+      "name_en": "In-frame focus zoom (auto-zoom)",
+      "t": "0:08.10-0:09.73",
+      "frames": "f243-f292",
+      "fps": 30,
+      "mechanics": "La fenêtre et ses feux tricolores restent immobiles (x 728, y 162 px) ; seule la capture grossit à l'intérieur, ×1,5 à ×2, vers la zone d'action (champ de prompt, bouton Edit Text, étiquette CAR construct, bouton Export). Zoom avant f243-f261 : le bord du panneau blanc avance de 56, 22, 29, 28, 27, 24, 23, 18, 14, 12, 10, 7, 6, 4, 4, 3, 1, 2 px, soit un ease-out sur 18 images (0,6 s). Zoom arrière f281-f292 : pas de 11, 25, 33, 34, 22, 24, 9, 13 px, ease-in-out sur ≈ 12 images. Version rapide f801-f810 : ×1,8 en 8 images, puis zoom arrière et nouveau zoom sur la cible suivante (f822-f835). Sans flou de mouvement. Probablement produit par l'enregistreur (type Screen Studio) plutôt que par la composition.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f804.jpg ; microM-006-move-f829.jpg",
+      "illus": {"from": 799, "to": 811, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur agrandi et lissé",
+      "name_en": "Enlarged smoothed cursor",
+      "t": "0:08.00-0:43.50",
+      "frames": "f240-f1305",
+      "fps": 30,
+      "mechanics": "Curseur macOS agrandi ×4-5 (flèche ≈ 80 px = 7 % de la hauteur à zoom 1), I-beam pendant la saisie, main sur les boutons ; trajectoires glissées sans saccade. Il guide l'œil vers l'action même quand l'interface est minuscule. Probablement un réglage de l'enregistreur (type Screen Studio).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Démonstration réelle par enregistrements d'écran",
+      "name_en": "Real product screen recordings",
+      "t": "0:07.20-0:43.60",
+      "frames": "f216-f1308",
+      "fps": 30,
+      "mechanics": "Six captures du vrai produit : saisie d'un long prompt puis figure CAR-T générée ; croquis transformé en schéma ; sélecteur de fichiers macOS (en chinois) et trois images de référence ; modale « Edit text » où « CAR construct » est effacé lettre à lettre jusqu'à « CAR », Save edit puis Apply ; modale d'export (SVG / PPTX / PNG) ; figure éditable dans PowerPoint ; choix d'un gabarit d'affiche (ICML Spotlight). Authentique et démonstratif, mais les textes d'interface font ≈ 8-12 px à l'écran : illisibles hors zoom, et la bannière promo orange reste visible.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg ; overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Attente de génération compressée",
+      "name_en": "Compressed generation wait",
+      "t": "0:15.50-0:19.50",
+      "frames": "f465-f585",
+      "fps": 30,
+      "mechanics": "Les cercles de progression vont de 0 % à 61 % en 1,5 s (f480-f525) puis jusqu'au résultat vers f585, et de 26 % à 84 % en 1 s (f720-f750) : génération probablement accélérée ou coupée. Il reste pourtant des maintiens où seul un pourcentage bouge au centre d'une fenêtre grise : 16,07-18,27 s (2,2 s) et 23,57-25,23 s (1,7 s). À remplacer par une coupe directe vers le résultat ou un compteur animé en grand.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg ; overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord interne en fondu court",
+      "name_en": "Short dissolve jump cut",
+      "t": "0:13.20-0:13.30",
+      "frames": "f396-f399",
+      "fps": 30,
+      "mechanics": "Dans la fenêtre, les segments d'enregistrement sont raccordés par des fondus de 3-4 images (f396-f399, f928, f935-f937, f1130-f1131, f1201-f1206) qui masquent les sauts de temps. Ailleurs, quatre coupes franches sans adoucissement (f682, f903, f993, f1033), dont un changement de cadrage brutal à f682 (zoom puis coupe vers un panneau de texte sombre). Traitement incohérent d'un raccord à l'autre.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f398.jpg ; microM-003-cut-f682.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Modale assombrie pour l'export",
+      "name_en": "Dimmed modal focus",
+      "t": "0:33.07-0:34.43",
+      "frames": "f992-f1033",
+      "fps": 30,
+      "mechanics": "Coupe à f993 : l'interface s'assombrit d'environ 40 % et la modale Export apparaît, mais elle n'occupe que ≈ 13 % de la largeur du cadre et aucun zoom ne la rapproche ; le clic se lit à peine. Coupe à f1033 vers la figure, avec une notification de téléchargement minuscule en bas à droite.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f993.jpg ; microM-010-cut-f1033.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Mur de réalisations en défilement continu",
+      "name_en": "Showcase marquee",
+      "t": "0:43.60-0:49.10",
+      "frames": "f1308-f1473",
+      "fps": 30,
+      "mechanics": "Deux rangées de cartes de figures générées (≈ 24 % de la largeur chacune, coins arrondis, ombre légère) glissent vers la gauche à ≈ 70 px/s (2,3 px par image, 3,6 % de la largeur par seconde), avec des masques en fondu aux deux bords. Rangée de logos dessous, même sens, ≈ 55 px/s. Vitesse linéaire constante pendant 5,5 s : preuve visuelle efficace, mais trop lente et trop longue pour tenir l'attention.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Preuve sociale : titre et logos d'universités",
+      "name_en": "Social proof logo strip",
+      "t": "0:43.60-0:49.10",
+      "frames": "f1308-f1473",
+      "fps": 30,
+      "mechanics": "Titre « Trusted by 100K+ researchers from leading institutions » en Inter Bold noir (capitale ≈ 4 % de la hauteur) centré à y ≈ 10 % ; huit logos d'universités en couleurs d'origine (Stanford, Berkeley, Yale, Cornell, Cambridge, Michigan, UCLA, Baylor) sur une ligne à y ≈ 82 %, fondus aux bords. Les rouges et jaunes des logos cassent la palette crème / bleu marine.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure promo en six fonctionnalités numérotées",
+      "name_en": "Numbered feature-list structure",
+      "t": "0:00.00-0:55.45",
+      "frames": "f0-f1661",
+      "fps": 30,
+      "mechanics": "Accroche question (3,2 s) → logo + slogan rotatif (4,0 s) → six sections numérotées 01-06 de 5,6 à 6,4 s chacune (Text to Figure, Sketch to Figure, Reference to Figure, Precise Editing, Editable Export, Paper to Poster) → preuve sociale (5,5 s) → carte d'appel à l'action (6,3 s). Lisible et complet, mais même durée et même traitement pour chaque fonctionnalité : aucune montée, aucun climax, la vidéo se lit comme une page d'accueil qui défile.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte finale avec bouton à reflet",
+      "name_en": "End card with CTA shimmer",
+      "t": "0:49.10-0:55.45",
+      "frames": "f1473-f1661",
+      "fps": 30,
+      "mechanics": "Fondu de 9 images (f1473-f1482) puis cascade : logo f1476, ligne 1 f1479, ligne 2 f1485, sous-titre gris f1488, bouton capsule bleu marine « Start for Free → figpad.ai » avec ombre douce f1497, mention « Get free credits · No credit card required » f1509 (décalages de 3 à 12 images). Un reflet blanc oblique traverse le bouton de gauche à droite en 21 images (f1533-f1554, 0,7 s). Ensuite 3,3 s totalement figées jusqu'à la fin.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1530, "to": 1556, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond dégradé crème vers pervenche avec grille de points",
+      "name_en": "Static gradient with dot grid",
+      "t": "0:00.00-0:55.45",
+      "frames": "f0-f1661",
+      "fps": 30,
+      "mechanics": "Dégradé diagonal fixe : crème #F7EADA en bas à gauche, #EAECEE au centre, pervenche #D6E0F4 en haut à droite ; grille de points gris très pâle (pas ≈ 36 px) et anneaux concentriques à peine visibles. Strictement immobile (différence entre images nulle pendant les maintiens), ce qui renforce l'impression de temps mort ; une dérive lente du dégradé (mesh gradient) aurait gardé la vie.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Accent unique bleu marine",
+      "name_en": "Single navy accent",
+      "t": "0:00.80-0:55.45",
+      "frames": "f24-f1661",
+      "fps": 30,
+      "mechanics": "Un seul accent saturé, #133B88, réservé à ce qui compte : 2e ligne de l'accroche, « g » du logo, mot rotatif et son soulignement, badges numérotés et intitulés, texte des pastilles, bouton final. Tout le reste en noir #1B1B1F, gris #767070 et blanc. Discipline de couleur nette, reprise de la marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son en boucle ajustée à la durée",
+      "name_en": "Loop soundtrack sized to the edit",
+      "t": "0:00.00-0:55.45",
+      "frames": "f0-f1661",
+      "fps": 30,
+      "mechanics": "Boucle à 100 BPM très régulière (autocorrélation 0,90 sur la grosse caisse, clap sur les temps 2 et 4, basse qui alterne toutes les 4 temps), dernier coup à 52,82 s puis queue qui s'éteint à 55,4 s, juste à la fin de l'image. Probablement générée en code. Après 7,2 s, aucun changement de section ni geste n'est calé dessus (20/34 à ±2 im d'une barre, hasard 56 %).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Fenêtre détachée par une ombre douce",
+      "name_en": "Soft drop shadow mockup",
+      "t": "0:07.20-0:43.60",
+      "frames": "f216-f1308",
+      "fps": 30,
+      "mechanics": "Fenêtre blanche détachée du fond clair par une ombre large et diffuse (flou ≈ 40 px, faible opacité, décalée vers le bas) et une barre de titre gris clair avec feux tricolores et champ d'URL en capsule. Aucun grain, aucun flou de mouvement dans toute la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« from the codebase » : le modèle a probablement puisé dans la page d'accueil du dépôt (intitulés des six fonctionnalités, slogan, « Trusted by 100K+ researchers », galerie, logos d'universités) et dans des enregistrements d'écran existants (curseur agrandi, sélecteur de fichiers en chinois, bannière « 60 % off ») : contenu juste, look de page d'accueil."},
+    {"kind": "direction", "insight": "Aucune direction artistique : Claude retombe sur le gabarit SaaS par défaut (fond clair dégradé, Inter, accent bleu marine repris de la marque, fausse fenêtre macOS, fondus enchaînés)."},
+    {"kind": "structure", "insight": "« 1-min » respecté (55,45 s). Sans consigne de narration, la vidéo devient une liste de six fonctionnalités de durée égale (≈ 6 s), sans montée ni climax."},
+    {"kind": "build", "insight": "La bande-son semble construite pour la timeline (drop à 7,23 s sur la révélation à 7,20 s, queue qui s'éteint à 55,4 s), mais les scènes sont programmées en secondes rondes (13,6 / 19,6 / 25,6 s…) et non en temps : la synchro s'arrête après l'intro."},
+    {"kind": "qa", "insight": "Aucune exigence de lisibilité ni de densité : les interfaces restent à 58 % de la largeur hors zooms, et 47 % des images sont figées (attentes de génération, carte finale de 5,4 s)."},
+    {"kind": "other", "insight": "Pour un prompt d'une ligne, il aurait fallu préciser : tempo et règle « un changement par temps », durée maximale d'un plan (≤ 2 s), zoom obligatoire sur chaque action, transitions variées et motivées, nettoyage des captures (bannières, langue du système)."}
+  ],
+  "steal": [
+    "Accroche en question bicolore révélée mot à mot : fondu + montée de 20 px en 10 images ease-out, décalage 3 images, seconde ligne dans la couleur d'accent.",
+    "Mot rotatif dans une fente soulignée : l'ancien mot monte et sort, le nouveau entre par le bas sous masque, 8 images, chaque seconde ; le soulignement suit la largeur.",
+    "Faire démarrer la révélation du produit sur le drop : premier changement d'image 1 image avant l'entrée de la grosse caisse, intro sans grosse caisse pendant l'accroche.",
+    "Zoom de mise au point dans un cadre fixe : la capture grossit ×1,5 à ×2 vers l'action en 8 à 18 images ease-out, la fenêtre ne bouge pas.",
+    "Bouton d'appel à l'action final traversé par un reflet blanc en 0,7 s pour désigner le geste attendu."
+  ],
+  "flaws": [
+    "Huit fondus enchaînés identiques entre parties : aucune transition motivée, deux interfaces superposées et illisibles pendant 4-5 images.",
+    "47 % d'images figées : attentes de génération de 2,2 s et 1,7 s, carte finale immobile 5,4 s.",
+    "Captures à 58 % de largeur : textes d'interface illisibles, bannière promo et sélecteur de fichiers en chinois laissés tels quels.",
+    "Après le drop de 7,2 s, aucun geste ni changement de section n'est calé sur la musique à 100 BPM.",
+    "Six sections au même gabarit, même cascade de 37 images, même durée de 6 s : effet liste de page d'accueil."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 fps et animations simples (fondus, fondus montants, zooms ease-out) déjà mesurées sur les planches. L'intérêt tient au gabarit, au mot rotatif et au placement du drop, pas au détail image par image."
+  }
+}

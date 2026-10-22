@@ -1,0 +1,358 @@
+{
+  "slug": "palashbagchi11-0a4b6b",
+  "title": "Backlink audit data promo",
+  "handle": "@PalashBagchi11",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo data propre et cohérente : vraie data viz (grille de points qui se recompose en histogramme), compteurs, coupes calées à 1-2 images avant la grosse caisse ; mais maintiens de 2 s et vocabulaire SaaS générique.",
+  "summary": "Pub de 30 s pour bklink, outil d'audit de backlinks. Accroche provocante sur fond noir, puis quatre preuves chiffrées numérotées en style rapport d'audit (81 %, 36 IP, 0 % dofollow, 1 980 $), retournement « Stop paying for PBN spam. », offre et carte de fin. Force : la musique 128 BPM est arrangée scène par scène et les coupes tombent sur la grosse caisse. Faiblesse : longs maintiens de lecture.",
+  "prompt_vs_result": [
+    "Prompt de retouche d'une ligne : ajouter une musique libre de droits « rapide » à une vidéo existante et en sortir deux versions, paysage et portrait. Aucun BPM, aucune consigne de synchro ni de style musical.",
+    "Claude a choisi un morceau électro à 128 BPM, très probablement généré en code : durées de scènes en nombres entiers de temps, charleys et grosse caisse coupés à chaque changement de scène, retour du beat sur l'entrée des détails.",
+    "Le prompt ne cadrait rien sur la musique ; le modèle a quand même calé coupes et sections. Il aurait fallu préciser le genre, le BPM, et demander de réduire les maintiens statiques au passage."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#111111", "role": "fond sombre (accroche, retournement) et texte principal sur fond clair"},
+      {"hex": "#FFFFFF", "role": "texte sur fond sombre, pastilles"},
+      {"hex": "#FCFCFB", "role": "fond clair principal (scènes data)"},
+      {"hex": "#F7F6F2", "role": "fond clair chaud (scènes valeur et offre)"},
+      {"hex": "#A3434A", "role": "rouge brique : grands pourcentages, « 4 already dead. »"},
+      {"hex": "#E27C78", "role": "saumon : points actifs, histogramme, barré"},
+      {"hex": "#DADADA", "role": "gris : points inactifs, filets"},
+      {"hex": "#8C8C8C", "role": "gris secondaire : « No subscription, ever. », métadonnées mono"},
+      {"hex": "#FBEAEA", "role": "rose pâle : ligne de tableau surlignée, pastilles d'état"},
+      {"hex": "#D12A43", "role": "cramoisi du logo bklink"}
+    ],
+    "type": "Grotesque néo (Inter probable) demi-gras, casse phrase, interlettrage serré ; titres ≈ 11-12 % H en capitale, chiffres géants ≈ 18-21 % H ; mono capitales espacées ≈ 1 % H pour libellés ; logo script italique.",
+    "texture": "Aplats purs, aucun grain, aucune ombre, aucun flou de mouvement ; seul relief : filets 1 px et pastilles arrondies.",
+    "style": "Rapport d'audit éditorial suisse",
+    "coherence": "Système tenu par une grille unique : marge gauche ≈ 7 % de la largeur, libellé mono numéroté « 01 · THE REAL FOOTPRINT » au-dessus de chaque preuve, en-tête mono (« … 2026 » à gauche, « 173 URLs » à droite) et barre de progression en bas. Deux couleurs d'accent seulement (brique et saumon). L'alternance sombre/clair marque les actes (provocation en sombre, preuves en clair). Ce qui casse un peu : la sortie animée n'existe que sur la première scène, les autres coupent sec ; le logo script détonne avec la grotesque."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "beaucoup",
+    "notes": "Musique à 128 BPM (1 temps = 14,06 im à 30 fps = 0,469 s). Attention : la grille automatique du dossier est décalée d'un demi-temps ; la grosse caisse réelle (onsets basses mesurés à 7,070 / 7,541 / 8,011 s…) tombe sur les barres bleu clair des planches. Sur cette grille corrigée, les 7 coupes (f84, f140, f393, f506, f618, f703, f787) tombent toutes 1 à 2 images AVANT une grosse caisse. Les intervalles entre coupes valent 3,98 / 26,03 / 7,96 / 6,04 / 5,97 temps : durées de scènes en nombres entiers de temps (4, 26, 8, 6, 6). Densité : 6 scènes en 30 s, plan médian 3,28 s, mais 59 % du temps est statique (11 maintiens, dont 10,53-13,07 s = 2,57 s sur l'histogramme, 14,67-16,83 s sur le tableau, 18,3-20,57 s sur 1 980 $, 27,47-29,93 s sur la carte de fin). Pour le standard 1600 (un mouvement toutes les 0,5-1 s), c'est beaucoup de temps mort ; ils servent à lire les chiffres et la musique comble le vide.",
+    "timeline": [
+      {"t": "0:00-0:01.1", "what": "Fond #111, « You paid for / 173 backlinks. » blanc, mot à mot par masque", "technique": "révélation de mots par masque (mask reveal), stagger 3 im"},
+      {"t": "0:01.4-0:02.6", "what": "Sous-ligne mono grise « Vendor report · 173 URLs · invoice paid » ; maintien", "technique": "métadonnée mono en fondu"},
+      {"t": "0:02.6-0:02.8", "what": "Les mots remontent et sortent par le haut du masque (f78-f83), coupe franche vers blanc f84", "technique": "sortie par masque puis coupe avec inversion de fond"},
+      {"t": "0:02.8-0:04.67", "what": "« What did you / actually get? » noir sur blanc, mot à mot, puis soulignement tracé sous la 2e ligne", "technique": "question-accroche, soulignement qui se trace"},
+      {"t": "0:04.67-0:05.2", "what": "Coupe sur blanc vide 4-5 im, puis en-tête mono, grille de 172 points grise en stagger diagonal, « 0% » brique en fondu", "technique": "coupe sur cadre vide puis construction"},
+      {"t": "0:05.2-0:08.0", "what": "Compteur 0 % → 81 % pendant que les points virent au saumon au hasard ; points noirs ajoutés à 8,0 s ; sous-titre « 140 of 172 publications co-hosted »", "technique": "graphique unitaire (unit chart) piloté par le compteur"},
+      {"t": "0:09.17-0:10.5", "what": "Le bloc texte 81 % s'efface (7 im), la grille reste, se disloque en nuage puis tombe en histogramme de 36 colonnes ; compteur 0 → 36", "technique": "morph persistant grille → nuage → histogramme (constance d'objet)"},
+      {"t": "0:10.8-0:13.1", "what": "« Largest cluster: 9% of the list » + légende d'axe ; maintien 2,57 s", "technique": "maintien de lecture"},
+      {"t": "0:13.1-0:14.3", "what": "Blanc 2 im, libellé « 03 · THE LINK », « 0% dofollow. » noir puis « 4 already dead. » brique", "technique": "titre deux lignes noir/accent"},
+      {"t": "0:14.27-0:15.5", "what": "Tableau 3 lignes (rang, publication, pastille « No link » / « Dead (404) », valeur) en stagger, puis la ligne morte se surligne en rose", "technique": "tableau de preuves + surlignage"},
+      {"t": "0:16.87-0:18.23", "what": "Coupe sur fond chaud, « $0 » → « $1,980 » en ease-out expo, filet qui s'allonge sous le chiffre", "technique": "compteur monétaire ease-out"},
+      {"t": "0:18.03-0:20.6", "what": "« Real value across 173 placements. » + note mono à droite ; maintien 2,3 s", "technique": "sous-titre par masque, note de bas de page"},
+      {"t": "0:20.6-0:21.4", "what": "Coupe vers #111, « Stop paying / for PBN spam. » mot à mot", "technique": "retournement en fond sombre"},
+      {"t": "0:21.93-0:23.43", "what": "Barré saumon tracé de gauche à droite sur « PBN spam. » en 4 im ; maintien", "technique": "barré qui se trace (strikethrough)"},
+      {"t": "0:23.43-0:24.8", "what": "Fond chaud, « THREE WAYS IN », « A dollar an audit. » noir + « No subscription, ever. » gris, trois pastilles en stagger", "technique": "offre en deux lignes contrastées + pastilles"},
+      {"t": "0:26.23-0:27.7", "what": "Blanc, logo bklink en fondu 6 im, « Know what your links are worth. » mot à mot, bouton noir « Start free — $1 credit → », mentions mono", "technique": "carte de fin CTA"},
+      {"t": "0:27.7-0:30.0", "what": "URL bklink.uk passe du gris au noir ; maintien final 2,5 s", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "La grille du dossier est décalée d'un demi-temps : les onsets basses mesurés (7,070 / 7,541 / 16,910 / 20,672 / 23,470 / 26,285 s) tombent sur les barres bleu clair, qui sont donc la grosse caisse. Sur cette grille (1 temps = 14,06 im, hasard ±2 im ≈ 36 %) : 7 coupes sur 7 à 1-2 im avant la grosse caisse (f84→f85, f140→f141, f393→f395, f506→f507, f618→f620, f703→f704, f787→f788,5). Sur 19 gestes clés (coupes, départs de ligne, atterrissages de compteur, entrées de détails), 13 tombent à ±2 im de la grosse caisse (68 % contre 36 %), 15 à ±3 im ; les 3 ratés (« 0% » f147, sortie du 81 % f275, début du tableau f428) tombent sur le contretemps. Intervalles entre coupes = 4 / 26 / 8 / 6 / 6 temps entiers à ±0,04 temps. L'arrangement suit les scènes : les charleys s'arrêtent à 2,80 / 13,16 / 16,91 / 20,66 / 26,05 s (= coupes) et reviennent ≈ 1,2 s plus tard (6,13 / 9,88 / 14,33 / 18,08 / 24,65 / 27,46 s), et ce retour coïncide avec l'entrée des détails : chute de l'histogramme f296, lignes du tableau f428-f437, sous-titre de valeur f541, pastilles f737-f744, bouton CTA f819-f823. Le « drop » du dossier à 30,01 s est la fin du fichier.",
+    "synced": ["coupes", "departs", "atterrissages", "apparitions", "texte"],
+    "style_match": "Électro minimale 128 BPM (grosse caisse, charleys en croches, basse) : sèche et clinique comme la mise en page de rapport et les ease-out courts. Bon accord, sans effet sonore sur les chiffres.",
+    "how_built": "Le prompt ne donne ni BPM ni consigne de synchro. La bande-son a très probablement été composée en code par Claude (synthé Web Audio ou WAV généré), car son arrangement change exactement à chaque coupe : coupure des charleys et de la grosse caisse pendant ≈ 2,5 temps en début de scène, puis retour. Les durées de scènes en nombres entiers de temps suggèrent que la timeline a été recalée sur la grille de 128 BPM (probable). Limite : la synchro est au niveau scène et ligne, pas mot à mot comme chez 1600."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation de mots par masque, en stagger",
+      "name_en": "Word-by-word mask reveal",
+      "t": "0:02.83-0:03.33",
+      "frames": "f85-f100",
+      "fps": 30,
+      "mechanics": "Chaque mot monte d'environ une hauteur de ligne depuis sous la ligne de base, à l'intérieur d'un masque de ligne (débordement caché) : 4-5 im pour s'installer (≈ 0,15 s), ease-out fort (gros pas puis petits pas), sans dépassement ni flou. Stagger 2-3 im entre mots (« What » f85, « did » f87, « you » f89), 2e ligne lancée 8 im après la 1re (« actually » f93, « get? » f96) ; bloc complet en 15 im = 0,5 s. Même recette partout : « Stop » f620 / « paying » f623 / « for » f630 / « PBN » f633 / « spam. » f637, posée f641.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f84.jpg, microM-007-cut-f618.jpg",
+      "illus": {"from": 84, "to": 100, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sortie par le haut du masque, puis coupe",
+      "name_en": "Mask exit upward into hard cut",
+      "t": "0:02.60-0:02.80",
+      "frames": "f78-f84",
+      "fps": 30,
+      "mechanics": "Les mots de « You paid for / 173 backlinks. » remontent et disparaissent par le haut de leur masque en 6 im (0,2 s), ease-in (petits pas puis grands), stagger ≈ 1 im de gauche à droite ; la coupe vers le fond blanc tombe sur f84, 1 im avant la grosse caisse (f85). Seule scène du film à avoir une sortie animée.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f84.jpg",
+      "illus": {"from": 76, "to": 86, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe franche avec inversion de fond sombre/clair",
+      "name_en": "Hard cut with background inversion",
+      "t": "0:02.80 ; 0:20.60 ; 0:23.43",
+      "frames": "f84, f618, f703",
+      "fps": 30,
+      "mechanics": "Passage instantané #111 → blanc (f84), blanc chaud → #111 (f618), #111 → blanc chaud (f703), sans fondu. L'inversion marque les actes : noir = provocation (« You paid for… », « Stop paying… »), clair = preuves et offre. Chaque coupe tombe 1-2 im avant la grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f618.jpg, microM-008-cut-f703.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe sur cadre vide, premier élément sur la grosse caisse",
+      "name_en": "Cut to empty frame, first element on the kick",
+      "t": "0:04.67 ; 0:13.10 ; 0:20.60 ; 0:23.43 ; 0:26.23",
+      "frames": "f140-f145, f393-f395, f618-f620, f703-f707, f787-f789",
+      "fps": 30,
+      "mechanics": "Après chaque coupe, 2 à 5 im de fond nu (respiration), puis le premier élément arrive : libellé f395 (grosse caisse f395), « Stop » f620 (grosse caisse f620), logo f789 (grosse caisse f788,5). La coupe anticipe le temps, le contenu le frappe.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-009-move-f788.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Soulignement qui se trace sous la question",
+      "name_en": "Underline draw-on",
+      "t": "0:03.6-0:04.0",
+      "frames": "f108-f120 (probable)",
+      "fps": 30,
+      "mechanics": "Filet noir ≈ 0,5 % H tracé de gauche à droite sous « actually get? » (≈ 60 % de la largeur du bloc), présent à 4,0 s, absent à 3,5 s. Durée exacte non mesurée (entre deux vignettes). Met l'accent sur le mot clé sans zoom.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grille de points unitaires construite en diagonale",
+      "name_en": "Unit dot matrix, diagonal stagger build",
+      "t": "0:04.80-0:05.23",
+      "frames": "f144-f157",
+      "fps": 30,
+      "mechanics": "≈ 172 points gris #DADADA (une publication = un point) sur une grille ≈ 14 × 12 dans la moitié droite (≈ 55-92 % de la largeur) ; apparition en vague diagonale depuis le coin haut-gauche en ≈ 13 im (0,43 s), chaque point en fondu. Le « 0% » brique arrive en fondu d'opacité f147-f152 (6 im) côté gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f140.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de pourcentage qui pilote le remplissage des points",
+      "name_en": "Counter-driven unit chart fill",
+      "t": "0:05.0-0:08.0",
+      "frames": "f150-f240",
+      "fps": 30,
+      "mechanics": "Le compteur passe de 0 % à 81 % en ≈ 3 s, courbe ease-in-out (0 → 6 % en 1 s, puis ≈ 44 %/s, puis 72 → 81 % en 0,5 s) ; à chaque palier, des points pris au hasard virent au saumon #E27C78, la proportion rouge suit le chiffre. À 8,0 s des points noirs s'ajoutent (seconde couche d'information). Sous-texte mono « 140 of 172 publications co-hosted ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morph persistant : grille → nuage → histogramme",
+      "name_en": "Persistent element morph (object constancy)",
+      "t": "0:09.17-0:10.43",
+      "frames": "f275-f313",
+      "fps": 30,
+      "mechanics": "Entre la preuve 01 et la 02, seule la colonne de texte part (fondu d'opacité f275-f281, 7 im) ; la grille de points reste en place. f284 : nouveau compteur « 0 » en fondu gris → noir. f286-f295 : les points quittent la grille et se dispersent en nuage (déplacements aléatoires ≈ 5-10 % du cadre). f296-f313 : ils tombent et se rangent en 36 colonnes triées sur une ligne de base (rouge haut à gauche, traîne de points noirs isolés à droite), ease-out, ≈ 18 im. Total 38 im = 1,27 s. La chute démarre sur la grosse caisse f296,4. Le même objet raconte deux chiffres : c'est une transition motivée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-004-move-f296.jpg",
+      "illus": {"from": 274, "to": 312, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur entier rapide 0 → 36",
+      "name_en": "Fast integer count-up",
+      "t": "0:09.47-0:10.20",
+      "frames": "f284-f306",
+      "fps": 30,
+      "mechanics": "0 → 36 en 22 im (0,73 s), pas de 2-4 unités au début puis 1, puis paliers répétés (33, 33, 34, 34, 35, 35, 35, 36) : ease-out. Couleur gris clair → noir pendant les 3 premières images. Le sous-titre « unique IPs behind 172 publications. » se révèle par masque f295-f302 pendant le comptage.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f296.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur monétaire en ease-out exponentiel avec filet qui s'allonge",
+      "name_en": "Currency counter with expo ease-out and growing rule",
+      "t": "0:16.87-0:18.23",
+      "frames": "f506-f547",
+      "fps": 30,
+      "mechanics": "« $0 » tenu 4 im (f506-f509), départ f510, incréments par image 180, 168, 155, 144, 134, 122, 114, 103, 95, 87, 79, 72, 65… (rapport ≈ 0,92 par image = décroissance exponentielle) ; atterrissage sur « $1,980 » f547, soit 37 im = 1,23 s, 2 im avant la grosse caisse f549. Chiffre ≈ 21 % H en capitale, aligné à gauche ; un filet gris 1 px s'allonge sous le chiffre de gauche à droite au même rythme. Puis « Real value across 173 placements. » par masque f541-f547 et note mono « Dead links priced out. Estimates, not appraisals. » à droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f506.jpg, microM-006-move-f538.jpg",
+      "illus": {"from": 506, "to": 548, "n": 7}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tableau de preuves en cascade, ligne fautive surlignée",
+      "name_en": "Staggered evidence table with row highlight",
+      "t": "0:14.27-0:15.5",
+      "frames": "f428-f465",
+      "fps": 30,
+      "mechanics": "En-tête mono (RANK · PUBLICATION · LINK · VALUE) sous un filet, puis 3 lignes en fondu + légère montée, stagger ≈ 4-5 im (f428, f432, f437) ; pastilles d'état rose pâle « No link » / « Dead (404) », valeurs à droite ($34, $12, $0). Vers 15,3-15,5 s, la ligne « Dead (404) » prend un fond rose #FBEAEA. La 3e ligne se pose sur le retour de la grosse caisse (f437).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en deux lignes : constat noir, verdict en couleur d'accent",
+      "name_en": "Two-line headline, fact then accent verdict",
+      "t": "0:13.27-0:14.3 ; 0:23.57-0:24.3",
+      "frames": "f398-f430, f707-f730",
+      "fps": 30,
+      "mechanics": "Ligne 1 noire (« 0% dofollow. », « A dollar an audit. »), ligne 2 en brique #A3434A (« 4 already dead. ») ou en gris #8C8C8C (« No subscription, ever. »), même corps (≈ 10 % H en capitale), interligne serré ≈ 1,0. La couleur dit si la 2e ligne aggrave ou rassure.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-008-cut-f703.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Barré qui se trace sur l'objet rejeté",
+      "name_en": "Strikethrough draw-on",
+      "t": "0:21.93-0:22.03",
+      "frames": "f658-f661",
+      "fps": 30,
+      "mechanics": "Trait saumon ≈ 0,6 % H tracé de gauche à droite à mi-hauteur de « PBN spam. » en ≈ 4 im (0,13 s), quasi linéaire, 17 im après la pose du dernier mot (f641). Le blanc du texte reste lisible sous le trait.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 655, "to": 662, "n": 4}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille de rapport d'audit : libellé numéroté, chiffre géant à gauche, viz à droite",
+      "name_en": "Audit-report editorial grid",
+      "t": "0:04.67-0:20.6",
+      "frames": "f140-f618",
+      "fps": 30,
+      "mechanics": "Marge gauche ≈ 7 % de la largeur ; libellé mono capitales espacées gris ≈ 1 % H (« 01 · THE REAL FOOTPRINT », « 02 · THE INFRASTRUCTURE », « 03 · THE LINK », « 04 · THE VALUE ») au-dessus d'un chiffre géant (≈ 18-21 % H) ; phrase d'explication en demi-gras ≈ 3,5 % H ; ligne de source mono ≈ 1 % H ; data viz dans la moitié droite. En-tête mono fixe en haut (« … 2026 » à gauche, « 173 URLs » à droite) sur toutes les scènes claires. Beaucoup de blanc (≈ 50 % du cadre vide).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Barre de progression linéaire en bas du cadre",
+      "name_en": "Linear progress bar",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Filet ≈ 2 px en bas à gauche dont la longueur suit le temps écoulé (≈ 48 % à 14,3 s, ≈ 82 % à 24,5 s, ≈ 91 % à 27,3 s), linéaire, blanc cassé sur fond sombre, gris sur fond clair. Donne au spectateur la promesse que c'est court.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastilles d'options en cascade",
+      "name_en": "Staggered option chips",
+      "t": "0:24.57-0:24.80",
+      "frames": "f737-f744",
+      "fps": 30,
+      "mechanics": "Trois pastilles blanches arrondies (« Upload a CSV or PDF », « Drop in a spreadsheet », « Scan your domain »), mot clé en gras, ≈ 2,5 % H, en fondu + légère montée, stagger 3-4 im (f737, f741, f744), sous les deux lignes de l'offre. Elles entrent avec le retour des charleys (24,65 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche-question puis quatre preuves numérotées puis retournement",
+      "name_en": "Hook question, numbered proofs, reversal, offer",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Structure en 6 actes : constat qui pique (« You paid for 173 backlinks. », 2,8 s) → question (« What did you actually get? », 1,9 s) → 4 preuves chiffrées numérotées 01-04 (16 s) → retournement en noir (« Stop paying for PBN spam. », 2,8 s) → offre (« A dollar an audit. », 2,8 s) → logo + CTA (3,8 s). Le spectateur est mis dans la peau du client floué avant de voir le produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : logo en fondu, promesse, bouton, mentions",
+      "name_en": "End card with CTA",
+      "t": "0:26.23-0:30.0",
+      "frames": "f787-f898",
+      "fps": 30,
+      "mechanics": "Logo script cramoisi ≈ 10 % H centré, fondu d'opacité seul f789-f794 (6 im, aucune échelle) ; « Know what your links are worth. » mot à mot f801-f812 ; bouton noir « Start free — $1 credit → » en fondu f819-f823 ; mentions mono f825-f831 ; URL qui passe du gris au noir vers 28,3 s ; maintien final 2,5 s.",
+      "verdict": "adapter",
+      "evidence": "microM-009-move-f788.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes qui précèdent la grosse caisse de 1-2 images",
+      "name_en": "Cuts leading the kick by 1-2 frames",
+      "t": "0:02.80 ; 0:04.67 ; 0:13.10 ; 0:16.87 ; 0:20.60 ; 0:23.43 ; 0:26.23",
+      "frames": "f84, f140, f393, f506, f618, f703, f787",
+      "fps": 30,
+      "mechanics": "7 coupes sur 7 tombent 1 à 2 im avant une grosse caisse mesurée (f85, f141, f395, f507, f620, f704, f788,5) : l'image change juste avant le coup, l'oreille et l'œil perçoivent un impact commun. Décalage constant, donc voulu.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f84.jpg, microM-005-cut-f506.jpg, microM-007-cut-f618.jpg, microM-008-cut-f703.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Durées de scènes en nombres entiers de temps",
+      "name_en": "Beat-quantized scene lengths",
+      "t": "0:02.80-0:26.23",
+      "frames": "f84-f787",
+      "fps": 30,
+      "mechanics": "Intervalles entre coupes : 56, 366, 112, 85, 84 im = 3,98 / 26,03 / 7,96 / 6,04 / 5,97 temps à 128 BPM (écart ≤ 0,04 temps). Recette : écrire la timeline en temps (1 temps = 0,469 s) et convertir en secondes, plutôt que choisir des durées rondes en secondes.",
+      "verdict": "reprendre",
+      "evidence": "stats.json (cuts), rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Break musical à chaque scène, détails sur le retour du beat",
+      "name_en": "Per-scene drum break, details on beat re-entry",
+      "t": "0:09.88 ; 0:14.33 ; 0:18.08 ; 0:24.65 ; 0:27.46",
+      "frames": "f296, f428-f437, f541-f547, f737-f744, f819-f823",
+      "fps": 30,
+      "mechanics": "Les charleys (et souvent la grosse caisse) s'arrêtent à chaque coupe (2,80 / 13,16 / 16,91 / 20,66 / 26,05 s) et reviennent ≈ 1,2 s plus tard (≈ 2,5 temps). Pendant le break : le titre de la scène. Au retour du beat : la couche de détail (chute de l'histogramme f296, lignes du tableau, sous-titre de valeur, pastilles, bouton CTA). 5 retours sur 6 coïncident à ±2 im avec une entrée de détail. La musique respire avec la hiérarchie de l'information.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-006-move-f538.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots clés posés sur la grosse caisse",
+      "name_en": "Key words on the kick",
+      "t": "0:20.67 ; 0:21.10 ; 0:23.93 ; 0:26.73",
+      "frames": "f620, f633, f718, f801",
+      "fps": 30,
+      "mechanics": "« Stop » démarre f620 (grosse caisse f620), « PBN » f633 (f634), « No subscription, ever. » f718-f720 (f718,4), « Know » f801 (f803). Les lignes secondaires (« actually » f93, « 0% » f147) tombent au contraire sur le contretemps. Calage au niveau de la ligne, pas de chaque mot.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f618.jpg, microM-008-cut-f703.jpg, microM-009-move-f788.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Longs maintiens de lecture sur les chiffres",
+      "name_en": "Long reading holds",
+      "t": "0:10.53-0:13.07 ; 0:14.67-0:16.83 ; 0:18.3-0:20.57 ; 0:27.47-0:29.93",
+      "frames": "f316-f392, f440-f505, f549-f617, f824-f898",
+      "fps": 30,
+      "mechanics": "11 maintiens statiques totalisant 17,6 s (59 % du film), dont 4 de 2,2 à 2,57 s. Rien ne bouge (pas de dérive lente, pas de pulsation), seule la musique avance. Lisible mais loin du « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Deux accents seulement, brique et saumon",
+      "name_en": "Restrained two-accent palette",
+      "t": "0:04.67-0:22.03",
+      "frames": "f140-f661",
+      "fps": 30,
+      "mechanics": "Brique #A3434A pour les chiffres-verdicts (81 %, « 4 already dead. »), saumon #E27C78 pour les éléments de données (points, histogramme, barré) ; tout le reste en noir, gris et blanc. Le rouge veut toujours dire « problème » ; le cramoisi du logo arrive seul à la fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt visible n'est qu'une retouche (« ajoute une musique rapide libre de droits, version paysage et portrait ») : toute la direction visuelle vient d'une conversation précédente qu'on ne voit pas."},
+    {"kind": "build", "insight": "« Royalty free » sans fichier fourni pousse Claude à composer la bande-son en code : c'est ce qui rend possible un arrangement qui coupe les charleys à chaque scène et des coupes à 1-2 images de la grosse caisse."},
+    {"kind": "direction", "insight": "« Fast » a été traduit en 128 BPM électro minimale, cohérent avec la mise en page clinique ; aucun genre n'était imposé."},
+    {"kind": "structure", "insight": "Les durées de scènes en nombres entiers de temps montrent que la timeline a été pensée (ou recalée) sur la grille musicale : à demander explicitement dans un prompt (« timeline en temps à 128 BPM »)."},
+    {"kind": "qa", "insight": "Le prompt n'a pas demandé de revoir le rythme visuel en ajoutant la musique : les maintiens de 2-2,5 s sont restés tels quels alors que la musique aurait pu porter des micro-animations."},
+    {"kind": "other", "insight": "Seule la version paysage est analysée ; la version portrait demandée n'est pas visible."}
+  ],
+  "steal": [
+    "Couper 1-2 images avant la grosse caisse, laisser 2-5 images de fond nu, puis faire arriver le premier élément exactement sur le temps.",
+    "Écrire la timeline en temps (128 BPM = 0,469 s) : scènes de 4, 6 ou 8 temps, converties ensuite en secondes.",
+    "Composer la musique avec un break de ≈ 2,5 temps à chaque scène : titre pendant le break, détails (tableau, pastilles, CTA) au retour du beat.",
+    "Garder le même objet d'une preuve à l'autre : la grille de points se disloque puis retombe en histogramme au lieu de couper.",
+    "Compteur monétaire en ease-out exponentiel (≈ 1,2 s) accompagné d'un filet qui s'allonge sous le chiffre."
+  ],
+  "flaws": [
+    "59 % de temps statique : quatre maintiens de 2,2 à 2,6 s sans aucune micro-animation.",
+    "Sortie animée seulement sur la première scène ; les suivantes coupent sec, grammaire de transition incohérente.",
+    "Logo de fin en simple fondu d'opacité, sans geste ni rebond : fin plate.",
+    "Look SaaS générique (grotesque type Inter, révélation par masque partout), peu d'idée visuelle signature hors le morph de points.",
+    "Synchro au niveau ligne et scène, pas mot à mot : les deuxièmes lignes tombent sur le contretemps."
+  ],
+  "deep_study": {"worth": false, "why": "Source à 30 fps et vocabulaire de mouvement simple (masques, fondus, compteurs) déjà mesuré sur les planches ; la leçon principale (structure break/retour du beat, scènes en temps entiers) se lit à l'échelle de la scène. Seul le morph de points f275-f313 mériterait un regard image par image, déjà couvert par extra-03 et microM-004."}
+}

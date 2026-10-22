@@ -1,0 +1,305 @@
+{
+  "slug": "gonzalomacagno-2de1a9",
+  "title": "Festival lineup promo reel",
+  "handle": "@GonzaloMacagno",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Système propre et cohérent (volet à bandes, ressort mesuré, cascade régulière à 5 im) mais gabarit d'affiche générique répété deux fois, trois maintiens d'environ 1 s et vidéo muette.",
+  "summary": "Reel vertical de 10 s pour Primavera Sound ’26 Buenos Aires : titre d'ouverture porté par deux rubans dessinés, deux affiches de jour (samedi, dimanche) construites en cascade, carte de fin avec dates et bouton qui pulse. Un volet de huit bandes aux couleurs de la marque relie les quatre scènes. Exécution propre (ressort mesuré, décalages réguliers) mais gabarit répété, trois maintiens d'environ 1 s et aucune musique.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne en espagnol : monter un reel de 10 s, « bien publicitario », avec « esta info » (une affiche ou un texte du line-up joint, probable). Il impose la durée, le ton publicitaire et le contenu, rien d'autre.",
+    "Claude a décidé seul : format vertical 720×1280, quatre scènes (titre, samedi, dimanche, carte de fin), volet à bandes répété trois fois, ressort sur les têtes d'affiche, cascade du line-up, bouton « Conseguí tu entrada » qui pulse, et aucun son.",
+    "« Esta info » a fourni le contenu exact et sans doute la charte (lilas, rubans orange et bleus, probable) : vraie cohérence de marque. Il manquait la musique et son tempo, et une limite de noms lisibles en 10 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#C0A1ED", "role": "fond, haut du dégradé vertical (lilas)"},
+      {"hex": "#DBB9ED", "role": "fond, milieu du dégradé"},
+      {"hex": "#F4D1E6", "role": "fond, bas du dégradé (rose pâle)"},
+      {"hex": "#211440", "role": "texte principal (indigo nuit)"},
+      {"hex": "#7D68F1", "role": "accent « ’26 », bande violette (#7C69F1)"},
+      {"hex": "#F1994C", "role": "bande orange ; ruban orange #F09473"},
+      {"hex": "#EF8DC3", "role": "bande rose ; extrémité rose des rubans #EE8FAD"},
+      {"hex": "#90A2F7", "role": "bande pervenche ; ruban bleu #8788F4"},
+      {"hex": "#FBF7FE", "role": "cartouche de date"},
+      {"hex": "#1D1640", "role": "bouton d'achat (texte blanc)"}
+    ],
+    "type": "Grotesque très grasse en capitales serrées (type Archivo Black, probable) : titre ≈ 5,3 % de hauteur par ligne, têtes d'affiche ajustées à 78-88 % de la largeur ; sous-titres en capitales très espacées ; line-up semi-gras, 2,2 à 1,4 %.",
+    "texture": "Aplats nets, aucun grain, aucune ombre, aucun glow, aucun flou de mouvement (les bords des bandes restent nets même à 534 px par image, soit 42 % de la hauteur). Seules matières : le dégradé vertical du fond et le dégradé de couleur le long de chaque ruban (mauve → pervenche → violet ; orange → rose). Rubans épais (≈ 4,5 % de la largeur) à bouts ronds.",
+    "style": "Affiche de festival pop pastel",
+    "coherence": "Tout sort de la même charte : les quatre couleurs des bandes (violet, orange, rose, pervenche) sont celles des rubans et du filet tricolore posé au-dessus des dates et sous le titre final. Le fond et les rubans persistent d'une scène à l'autre : opacité ≈ 100 % sur le titre et la fin, ≈ 35 % sous les line-ups (luminance moyenne 177 contre 201), le changement se faisant sous le volet. Un seul volet, une seule courbe de ressort, un seul décalage de 5 im pour tout le film. Ce qui casse : l'ordre du lieu s'inverse (« BUENOS AIRES · CLUB CIUDAD » au début, « CLUB CIUDAD · BUENOS AIRES » à la fin) et les rubans restent figés après l'ouverture."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Aucune piste audio : le rythme est purement interne. Quatre scènes séparées par trois volets identiques : titre f0-f51 (1,73 s), samedi f52-f144 (3,10 s), dimanche f145-f234 (3,00 s), fin f235-f299 (2,17 s). Les volets démarrent à f46, f139 et f229 (écarts de 93 puis 90 im). Chaque scène se construit par éléments décalés : cartouche de date, tête d'affiche (+7 im après l'échange), seconde tête (+10 im après la première), puis une ligne de noms toutes les 5 im (0,167 s). Ensuite le cadre se fige : 0,8 s sur le titre (f22-f46), 1,03 s sur samedi (f108-f139), 1,10 s sur dimanche (f196-f229) ; la dernière seconde n'est animée que par la pulsation du bouton (8 % d'échelle). 39 % de la durée est statique (3,93 s mesurées). Densité : ≈ 25 apparitions en 10 s, mais toutes groupées dans la première seconde de chaque scène, ce qui donne un rythme en rafales puis en pauses, régulier comme un métronome sans musique pour le justifier.",
+    "timeline": [
+      {"t": "0:00.00-0:00.57", "what": "Fond dégradé lilas → rose (1 im vide à f0) ; deux rubans épais se dessinent : le bleu depuis le bas gauche jusqu'à une boucle en haut (f1-f13), l'orange depuis le bord droit en arche basse (f8-f15)", "technique": "tracé au trait (draw-on) décalé de 7 im"},
+      {"t": "0:00.10-0:00.73", "what": "« PRIMAVERA » monte de 4,2 % avec dépassement (f3), « SOUND ’26 » suit (+5 im), puis « BUENOS AIRES · CLUB CIUDAD » en capitales espacées (+9 im)", "technique": "montée en fondu avec dépassement (back.out) en cascade"},
+      {"t": "0:00.73-0:01.53", "what": "Titre et rubans figés 0,8 s", "technique": "maintien"},
+      {"t": "0:01.53-0:01.83", "what": "Un bloc de huit bandes (violet, orange, rose, pervenche ×2) traverse le cadre de bas en haut en 9 im ; la scène change sous la couverture entre f51 et f52", "technique": "volet à bandes de marque, coupe cachée"},
+      {"t": "0:01.73-0:02.07", "what": "Cartouche blanc « SÁBADO 28 NOV » dévoilé de gauche à droite sous un filet tricolore ; rubans passés à ≈ 35 % d'opacité", "technique": "révélation par masque + décor atténué"},
+      {"t": "0:01.97-0:02.67", "what": "« GORILLAZ » arrive à ×1,5 (déborde du cadre 3 im), creuse à 0,87, rebondit à 1,03 et se pose à f80", "technique": "slam à ressort amorti"},
+      {"t": "0:02.30-0:02.47", "what": "« Yung Lean » monte en fondu sous la tête d'affiche", "technique": "fondu montant"},
+      {"t": "0:02.63-0:03.60", "what": "Six lignes de noms apparaissent toutes les 5 im, en corps décroissant (2,2 → 1,4 % de la hauteur)", "technique": "cascade de line-up"},
+      {"t": "0:03.60-0:04.63", "what": "Affiche du samedi figée 1,03 s", "technique": "maintien de lecture"},
+      {"t": "0:04.63-0:04.93", "what": "Même volet à bandes, image pour image ; cartouche « DOMINGO 29 NOV »", "technique": "volet répété"},
+      {"t": "0:05.07-0:05.83", "what": "« THE STROKES » : slam identique (creux 0,868 à f159, pic 1,028 à f167-f168) ; « FKA twigs · Lily Allen » monte à f161-f162", "technique": "slam à ressort, gabarit répété"},
+      {"t": "0:05.73-0:06.53", "what": "Cinq lignes de noms en cascade toutes les 5 im (f172-f192)", "technique": "cascade de line-up"},
+      {"t": "0:06.53-0:07.63", "what": "Affiche du dimanche figée 1,1 s", "technique": "maintien de lecture"},
+      {"t": "0:07.63-0:07.93", "what": "Troisième volet ; les rubans reviennent à pleine opacité", "technique": "volet + retour du décor"},
+      {"t": "0:07.90-0:08.23", "what": "« PRIMAVERA SOUND ’26 » remonte de 3,4 % avec un léger zoom (0,93 → 1,01 → 1) ; filet tricolore dessous à f244", "technique": "rappel du titre d'ouverture (serre-livres)"},
+      {"t": "0:08.27-0:08.60", "what": "« 28 & 29 NOV » (f248) puis « CLUB CIUDAD · BUENOS AIRES » (f253) en fondu montant", "technique": "cascade de la carte de fin"},
+      {"t": "0:08.67-0:09.00", "what": "Bouton indigo « Conseguí tu entrada → » monte de 4,1 % en passant de 0,87 à 1", "technique": "entrée du bouton d'action"},
+      {"t": "0:09.00-0:10.00", "what": "Le bouton respire (1 → 0,92 → 1, période ≈ 0,85 s) ; tout le reste est figé", "technique": "pulsation du bouton"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (dossier : audio=no ; sync.json : audio false ; rhythm.jpg : « no audio / no tempo »). Aucune barre bleue ni point vert sur les quatre planches microscope, pas de transcription.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le rythme interne (volets toutes les 3,0-3,1 s, lignes toutes les 0,167 s) n'est calé sur aucun tempo.",
+    "how_built": "Rendu sans audio ; le prompt ne parle pas de son. Les intervalles (93 puis 90 im entre volets, 5 im entre lignes, 7 et 10 im entre cartouche et têtes d'affiche) sont des durées de code arrondies, pas une grille de tempo : une musique posée après coup ne tomberait juste que par hasard. Pour un reel publicitaire synchronisé, il faudrait donner le BPM dans le prompt et écrire la timeline en temps (par exemple à 120 BPM : volet toutes les 8 temps = 4 s, une ligne par demi-temps = 7,5 im à 30 fps)."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Volet de huit bandes aux couleurs de la marque",
+      "name_en": "Brand-colour stripe wipe",
+      "t": "0:01.53-0:01.83",
+      "frames": "f46-f55",
+      "fps": 30,
+      "mechanics": "Un bloc rigide de 8 bandes horizontales de 160 px (12,5 % de la hauteur chacune, donc 100 % au total), dans l'ordre violet #7C69F1, orange #F1994C, rose #EF8DC3, pervenche #90A2F7, deux fois, entre par le bas et sort par le haut : trajet de 200 % de la hauteur en 9 im (0,30 s). Vitesses mesurées par image : 30, 78, 156, 256, 383, 534, 533, 381, ≈ 210 px, donc ease-in-out (type power2.inOut), pic à 42 % de la hauteur par image. Aucun flou de mouvement, bords nets, pas de décalage entre bandes. Réutilisé trois fois à l'identique (couverture identique au pixel à f46-f55, f139-f147, f229-f237). Le volet reprend les couleurs des rubans : il sert de rideau de marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f51.jpg ; microM-003-cut-f146.jpg ; microM-004-move-f232.jpg",
+      "illus": {"from": 45, "to": 56, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Échange de scène caché à l'image de couverture maximale",
+      "name_en": "Hidden scene swap at peak coverage",
+      "t": "0:01.70-0:01.73",
+      "frames": "f51-f52",
+      "fps": 30,
+      "mechanics": "La scène change entre f51 (bandes de 373 à 1279 px : le haut découvert ne montre que du fond et des rubans, pas de texte) et f52 (bandes de 0 à 1119 px : le bas découvert, 13 %, ne montre que du fond). L'œil ne voit jamais deux contenus à la fois : la coupe est invisible alors qu'aucune image n'est couverte à 100 %. Le décor change aussi sous le volet (rubans 100 % → 35 % ; 35 % → 100 % au dernier volet).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f51.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tête d'affiche en slam à ressort amorti",
+      "name_en": "Spring scale slam on headliner",
+      "t": "0:01.97-0:02.67",
+      "frames": "f59-f80",
+      "fps": 30,
+      "mechanics": "Échelle mesurée par la largeur du mot (finale 564 px = 78 % de la largeur) : ≈ ×1,5 à f59 (le mot déborde des deux bords pendant 3 im, opacité ≈ 50 → 100 % en 3 im), 1,15 (f62), 1,03, 0,94, 0,89, creux 0,87 à f66 (−13 %), puis 0,90, 0,93, 0,96, 0,99, 1,01, 1,02, pic 1,028 à f74-f75 (+3 %), retour à 1,0 à f80. Ressort amorti à deux oscillations, demi-période 8 im, rapport d'amortissement ≈ 0,22 ; durée totale 21 im (0,70 s). Même courbe au pixel sur « THE STROKES » (f152-f173 : creux 0,868 à f159, pic 1,028 à f167-f168, débordement 4 im). Pas de flou. Le débordement initial coupe le mot au bord pendant 0,1 s : partir de ×1,3 l'éviterait.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f51.jpg ; extra-01.jpg ; extra-03.jpg",
+      "illus": {"from": 59, "to": 80, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Cascade du line-up ligne par ligne",
+      "name_en": "Staggered line-by-line lineup reveal",
+      "t": "0:02.63-0:03.60",
+      "frames": "f79-f108",
+      "fps": 30,
+      "mechanics": "Six lignes de noms démarrent à f79, f84, f89, f94, f99-f100 et f104 : décalage constant de 5 im (0,167 s). Chaque ligne fait un fondu montant : opacité 0 → 100 % en 4-5 im, montée de 12 à 15 px (≈ 1 % de la hauteur), ease-out. Toute la cascade tient en 1,0 s. Le dimanche reprend le même pas (5 lignes à f172, f177, f182, f187, f192). Le mouvement est minimal et lisible, mais le contenu est trop dense pour la durée de lecture qui suit (≈ 1 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; extra-03.jpg",
+      "illus": {"from": 78, "to": 108, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Seconde tête d'affiche en fondu montant",
+      "name_en": "Second-billing fade-up",
+      "t": "0:02.30-0:02.47",
+      "frames": "f69-f74",
+      "fps": 30,
+      "mechanics": "« Yung Lean » démarre 10 im après le début du slam, pendant le rebond de « GORILLAZ » : montée d'≈ 51 px (4 % de la hauteur) en 5-6 im, pas de 4, 3, 2, 2, 1 (ease-out), opacité 25 → 100 % en 4 im. Le dimanche, « FKA twigs · Lily Allen » démarre aussi 10 im après le slam (f161-f162). Superposer l'entrée du second plan au rebond du premier enchaîne les gestes sans temps mort.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cartouche de date dévoilé de gauche à droite",
+      "name_en": "Left-to-right clip reveal of a date pill",
+      "t": "0:01.73-0:02.07",
+      "frames": "f52-f62",
+      "fps": 30,
+      "mechanics": "Cartouche blanc #FBF7FE de 625 × 59 px (87 % de la largeur, 4,6 % de la hauteur), centré entre 21,7 et 26,3 % de la hauteur. Bord gauche fixe à x 47, bord droit mesuré : 475, 563, 611, 639, 654, 663, 668, 671 px de f54 à f61 ; chaque pas vaut ≈ 0,55 fois le précédent : ease-out exponentiel, ≈ 10 im dont les premières cachées sous le volet. Le texte « SÁBADO 28 NOV » est rogné (« SÁBADO 28 NC » à f54), pas écrasé : c'est un masque (clip-path), pas une mise à l'échelle. Un filet tricolore (violet, orange, rose) surmonte le cartouche.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f51.jpg ; microM-003-cut-f146.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rubans dessinés au trait",
+      "name_en": "Stroke draw-on ribbons",
+      "t": "0:00.03-0:00.57",
+      "frames": "f1-f17",
+      "fps": 30,
+      "mechanics": "Deux rubans épais (≈ 4,5 % de la largeur, bouts ronds, dégradé de couleur le long du tracé) se dessinent comme un trait (stroke-dashoffset probable). Le bleu part du bas gauche (f1), traverse le centre et atteint le haut à f5-f6, puis forme une boucle jusqu'à f13 : la tête avance d'≈ 20 % de la hauteur par image au début, puis ralentit (ease-out). L'orange entre par le bord droit à f8 et trace une arche basse jusqu'à f15 (bout rose). Décalage entre les deux tracés : 7 im. Ensuite les rubans ne bougent plus de toute la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f6.jpg",
+      "illus": {"from": 0, "to": 20, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre d'ouverture qui monte avec dépassement",
+      "name_en": "Back-out rise of the title lines",
+      "t": "0:00.10-0:00.73",
+      "frames": "f3-f22",
+      "fps": 30,
+      "mechanics": "« PRIMAVERA » : bord haut à 573 px à f3, 519 px à f9-f10, puis retour à 528 px à f18. Montée de 54 px (4,2 % de la hauteur) en 6-7 im, dépassement de 9 px (17 % du trajet), retour en 8 im : courbe type back.out. Opacité ≈ 40 → 100 % en 3-4 im. « SOUND ’26 » suit à +5 im (f8) avec la même courbe (dépassement ≈ 2 px), « BUENOS AIRES · CLUB CIUDAD » à +9 im (f17). Le titre final (f237-f247) reprend le geste : montée de 44 px (3,4 %), dépassement de 5 px (11 %), échelle 0,93 → 1,01 → 1 en 10 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f6.jpg ; microM-004-move-f232.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Hiérarchie d'affiche de festival en cinq paliers",
+      "name_en": "Five-tier festival billing hierarchy",
+      "t": "0:01.73-0:07.63",
+      "frames": "f52-f229",
+      "fps": 30,
+      "mechanics": "Pile centrée : tête d'affiche en grotesque noire capitales, corps ajusté à la largeur (« GORILLAZ » 78 %, « THE STROKES » 88,5 %, hauteur de capitale ≈ 5,9 et 4,9 % de la hauteur) ; seconde tête ≈ 3 % en bas de casse grasse ; puis lignes de noms séparés par des points médians à 2,2 %, 1,7 % et 1,4 % de la hauteur (la dernière ≈ 18 px sur 1280). Interlignage serré (≈ 1,2). C'est la convention des vraies affiches (billing), mais les deux derniers paliers sont trop petits pour un écran de téléphone et 1 s de lecture.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Accent de couleur sur l'année",
+      "name_en": "Colour accent on the edition year",
+      "t": "0:00.27-0:10.00",
+      "frames": "f8-f299",
+      "fps": 30,
+      "mechanics": "Dans « PRIMAVERA SOUND ’26 », tout est en indigo #211440 sauf « ’26 », en violet #7D68F1 avec une apostrophe typographique. C'est le seul accent chromatique du texte ; il désigne l'édition sans ajouter de mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pile centrée haute, bas du cadre libre",
+      "name_en": "Top-weighted centred stack with free bottom zone",
+      "t": "0:01.73-0:07.63",
+      "frames": "f52-f229",
+      "fps": 30,
+      "mechanics": "Format 9:16. Cartouche à 21,7-26,3 % de la hauteur, tête d'affiche à 30-36 %, line-up jusqu'à ≈ 57 % ; les 40 % du bas ne contiennent que les rubans atténués. Marges latérales ≈ 6,5 % (47 px). Sur la carte de fin, le bloc va de 31 % (titre) à 70 % (bouton). La zone basse vide reste compatible avec l'interface d'Instagram et de TikTok (légende, boutons), intention probable.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Rubans persistants, atténués sous le texte",
+      "name_en": "Persistent ribbons dimmed behind copy",
+      "t": "0:00.00-0:10.00",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Les deux rubans gardent exactement la même forme du début à la fin. Opacité ≈ 100 % sur le titre et la fin, ≈ 35 % sous les line-ups (luminance moyenne des lignes 300-1000 : 177 contre 201), le changement se fait sous le volet. Bonne idée pour la lisibilité et la continuité. Défaut : après f20, plus aucun mouvement, ni dérive, ni respiration ; pendant les maintiens d'1 s, rien ne bouge.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; microM-002-cut-f51.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette pastel de marque en quatre teintes",
+      "name_en": "Four-hue pastel brand palette",
+      "t": "0:00.00-0:10.00",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Fond en dégradé vertical #C0A1ED → #DBB9ED → #F4D1E6, fixe. Quatre teintes saturées d'accent : violet #7C69F1, orange #F1994C, rose #EF8DC3, pervenche #90A2F7, toujours dans le même ordre (bandes, filet tricolore, rubans). Texte en indigo #211440 (contraste fort sur le lilas), cartouche presque blanc #FBF7FE, bouton #1D1640. Aucune autre couleur dans tout le film.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; microM-002-cut-f51.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet tricolore comme signature",
+      "name_en": "Tricolour rule as brand signature",
+      "t": "0:01.80-0:10.00",
+      "frames": "f54-f299",
+      "fps": 30,
+      "mechanics": "Trois filets fins superposés (violet, orange, rose, ≈ 3 px chacun) au-dessus de chaque cartouche de date (≈ 18,5 % de la hauteur) et sous le titre final (≈ 51 %, apparition f244-f247 en fondu avec légère extension depuis le centre). Il relie la typographie aux bandes du volet : le volet « laisse » une trace de ses couleurs.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f232.jpg ; extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en serre-livres",
+      "name_en": "Bookend structure",
+      "t": "0:00.00-0:10.00",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Titre (1,73 s) → samedi (3,10 s) → dimanche (3,00 s) → retour du même titre avec les rubans à pleine opacité, enrichi des dates, du lieu et du bouton (2,17 s). La fin rappelle l'ouverture : le spectateur retrouve la marque au moment de l'appel à l'action.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Cascade de la carte de fin",
+      "name_en": "End-card staggered build",
+      "t": "0:07.90-0:09.00",
+      "frames": "f237-f270",
+      "fps": 30,
+      "mechanics": "Titre (f237) → filet tricolore (f244, +7 im) → « 28 & 29 NOV » (f248, +4 im ; montée ≈ 3 %, fondu 4 im) → « CLUB CIUDAD · BUENOS AIRES » (f253, +5 im ; montée 3,4 %, fondu 5 im) → bouton (f260, +7 im). Même grammaire que les affiches : un élément toutes les 4 à 7 im, chacun en fondu montant ease-out.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg ; microM-004-move-f232.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton d'achat qui entre puis respire",
+      "name_en": "CTA pill entrance and breathing pulse",
+      "t": "0:08.67-0:10.00",
+      "frames": "f260-f299",
+      "fps": 30,
+      "mechanics": "Pilule indigo #1D1640, texte blanc gras « Conseguí tu entrada → », 487 × 82 px (68 % de la largeur, 6,4 % de la hauteur), centrée à 66 % de la hauteur. Entrée f260-f270 : bord haut 858 → 805 px (montée de 4,1 %), largeur 423 → 487 px (échelle 0,87 → 1), fondu en 4-5 im, ease-out sans dépassement notable. Puis pulsation mesurée : largeur 487 (f270-f272) → 449 (f283-f285) → 486 (f296-f297), soit échelle 1 → 0,92 → 1 autour du centre, période ≈ 25,5 im (0,85 s), courbe sinusoïdale. Seul mouvement de la dernière seconde : il évite l'image morte et désigne l'action.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Gabarit de scène réutilisé à l'image près",
+      "name_en": "Frame-identical scene template",
+      "t": "0:01.73-0:07.63",
+      "frames": "f52-f229",
+      "fps": 30,
+      "mechanics": "Samedi et dimanche suivent le même chronogramme, mesuré : échange sous le volet (f52 / f145), tête d'affiche +7 im (f59 / f152), seconde tête +10 im (f69 / f161-f162), première ligne +20 im (f79 / f172), puis une ligne toutes les 5 im. Cohérent et facile à produire en code (une fonction appelée deux fois), mais la seconde moitié devient prévisible : il faudrait varier au moins un paramètre (sens du volet, entrée du nom).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture d'environ 1 s",
+      "name_en": "One-second reading holds",
+      "t": "0:00.73-0:07.63",
+      "frames": "f22-f46 ; f108-f139 ; f196-f229",
+      "fps": 30,
+      "mechanics": "Trois arrêts complets : 0,8 s (titre), 1,03 s (samedi), 1,10 s (dimanche), plus 0,94 s en fin où seul le bouton bouge. 39 % de la durée est statique. Pour une affiche dense, un temps de lecture est légitime, mais 1 s ne suffit pas à lire 20 noms et dépasse la règle « quelque chose bouge toutes les 0,5-1 s ». Mieux : moins de noms, ou un mouvement lent pendant la lecture (dérive des rubans, balayage de surbrillance sur les noms).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg ; extra-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Esta info » renvoie à une pièce jointe (affiche ou liste du line-up, probable) : noms exacts avec accents (SÁBADO, León), dates, lieu, et vraisemblablement la charte visuelle (lilas, rubans). Claude a tout gardé, jusqu'au dernier nom de la sixième ligne : la fidélité au contenu l'emporte sur la lisibilité."},
+    {"kind": "direction", "insight": "« Bien publicitario » a été traduit en codes de publicité événementielle : slam des têtes d'affiche, volet coloré, carte de fin, bouton d'achat qui pulse. Aucune indication de ton musical ou d'énergie, donc aucune bande-son ni rythme calé."},
+    {"kind": "structure", "insight": "« En 10 segundos » est respecté à l'image près (300 im à 30 fps). Faute de structure imposée, Claude a découpé en 1,7 + 3,1 + 3,0 + 2,2 s et donné à chaque jour le même gabarit, ce qui produit deux blocs identiques."},
+    {"kind": "build", "insight": "Rendu muet, probablement en HTML avec GSAP (ressort amorti, back.out et volet en un bloc translaté typiques de cet outil). Les durées sont des valeurs de code (5, 7, 10 im), pas une grille musicale : ajouter une musique au montage ne la synchroniserait pas."},
+    {"kind": "qa", "insight": "Le prompt ne fixe aucune contrainte de lisibilité : la plus petite ligne mesure ≈ 18 px sur 1280 (1,4 %) et reste visible ≈ 1 s. Il aurait fallu préciser par exemple « 12 noms au plus par jour, corps minimal 2,5 % de la hauteur, maintien maximal 0,6 s »."}
+  ],
+  "steal": [
+    "Volet de transition en 8 bandes aux couleurs de la marque : bloc de 100 % de hauteur traversant le cadre en 9 im, ease-in-out ; couper à 70 % de couverture.",
+    "Slam de tête d'affiche : échelle ×1,5 → 1 en ressort amorti (creux −13 % à +7 im, rebond +3 % à +15 im, posé à +21 im).",
+    "Construire chaque affiche en cascade fixe : cartouche, tête (+7 im), seconde tête (+10 im), puis une ligne toutes les 5 im en fondu montant de 4-5 im.",
+    "Garder le décor d'une scène à l'autre et baisser son opacité à ≈ 35 % sous les blocs de texte, en changeant d'opacité sous le volet.",
+    "Faire respirer le bouton final : échelle 1 → 0,92 → 1 en sinus, période ≈ 0,85 s, pour que la dernière seconde ne soit pas figée."
+  ],
+  "flaws": [
+    "Vidéo muette pour un « reel bien publicitario » : aucune musique, aucun effet sonore, aucun mouvement calé sur un tempo.",
+    "Trois maintiens de 0,8 à 1,1 s avec fond et rubans figés : 39 % de la durée est statique.",
+    "Line-up trop dense : jusqu'à 22 noms par jour, dernière ligne à 1,4 % de la hauteur, illisible en 1 s.",
+    "Samedi et dimanche suivent exactement le même gabarit (mêmes décalages à l'image près) : la seconde moitié devient prévisible.",
+    "Incohérence de texte : « BUENOS AIRES · CLUB CIUDAD » à l'ouverture, « CLUB CIUDAD · BUENOS AIRES » à la fin."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : vidéo native à 30 fps et vocabulaire restreint (un volet, un ressort, un fondu montant, une pulsation), déjà mesurés ici au pixel image par image (extra-01 à extra-03 et mesures de largeur). Rien de plus à apprendre en continu."
+  }
+}

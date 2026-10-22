@@ -1,0 +1,462 @@
+{
+  "slug": "steventey-0d20e4",
+  "title": "Dub promo video",
+  "handle": "@steventey",
+  "family": "produit",
+  "craft": 5,
+  "craft_reason": "Transitions motivées en chaîne (URL compressée en point puis éclair, clic qui déclenche le drop, disque du logo devenu fond), rafale de 8 mots à la croche, synchro constante à l'image près.",
+  "summary": "Lancement de 15 s pour Dub. Une URL interminable se tape en accéléré, se compresse en trait de lumière puis en point ; un éclair fait jaillir le lien court, un clic déclenche le drop, un globe et un compteur de clics, puis un tableau de bord, un réseau de partenaires, 8 fonctions à la croche et une signature sur dégradé pastel. Seul bémol : textes d'interface petits.",
+  "prompt_vs_result": [
+    "Deux lignes : « showreel » de 15 s d'un motion designer « pour un CV », « go all out », et « vidéo de lancement SaaS pour https://dub.co ». Rien sur le récit, le style, la musique ou le rythme.",
+    "Claude a tout décidé : récit URL trop longue → lien court → clics → tableau de bord → partenaires → 8 fonctions → slogan, noir et orange de marque, globe, montage à la croche, signature en dégradé pastel.",
+    "L'URL du site a suffi à ancrer le vrai produit (lien court, analytics, partenaires) et sa charte ; « showreel » a poussé la variété des transitions. Il manquait des consignes de lisibilité (textes d'interface petits) et de musique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond des parties sombres (grille fine #0A0A0A)"},
+      {"hex": "#F44800", "role": "orange de marque : curseur, trait compressé, « launch », flash du clic, carte Custom domains, « revenue. »"},
+      {"hex": "#FFFFFF", "role": "texte principal sur noir, disque du logo"},
+      {"hex": "#0C0C0C", "role": "carte du tableau de bord et notifications"},
+      {"hex": "#19B4A7", "role": "courbe des ventes (sarcelle)"},
+      {"hex": "#8C5CFA", "role": "violet : Leads, Affiliates, début du dégradé « partners. » (#9157EB)"},
+      {"hex": "#DE6334", "role": "fin du dégradé « partners. »"},
+      {"hex": "#20C861", "role": "vert des gains : pastilles, compteur, Payouts"},
+      {"hex": "#442D7A", "role": "halo violet du réseau de partenaires"},
+      {"hex": "#381000", "role": "carrés QR clignotants sur noir"},
+      {"hex": "#808080", "role": "image grise unie des coupes du montage"},
+      {"hex": "#FCFCFC", "role": "fond de la signature"},
+      {"hex": "#F9BABF", "role": "rose du dégradé pastel (avec pêche #FDE8D7, lilas #F3E6F5, bleu #C9E5FC)"}
+    ],
+    "type": "Grotesque géométrique grasse (Satoshi probable), casse de phrase + point, interlettrage -3 % ; mots du montage ≈ 12 % de la hauteur. Mono (Geist Mono probable) pour URL, compteurs (≈ 10 %) et étiquettes capitales espacées.",
+    "texture": "Noir profond avec grille fine ; lueurs néon (bord orange du globe, courbes avec glow, pastilles vertes lumineuses, bloom violet du réseau, texte « Payouts. » qui irradie) ; flou de mouvement directionnel dans les filés et la sortie du tableau de bord ; flou gaussien pour le fondu globe → tableau ; image grise unie à chaque coupe du montage ; signature claire avec dégradé pastel très flou et grille quasi blanche.",
+    "style": "Lancement SaaS néon sombre, rafale typographique",
+    "coherence": "L'orange de marque relie tous les moments clés (curseur, trait compressé, « launch », flash du clic, bord du globe, « revenue. ») ; le mono pour les données et la grotesque grasse pour les messages donnent deux voix nettes ; chaque scène sort de la précédente (point → lien, clic → onde → globe, compteur → tableau, logo → réseau, disque du logo → fond). Ce qui casse un peu : le saut du noir au montage multicolore puis au blanc pastel, et les couleurs par fonction (violet, vert, sarcelle) qui multiplient les accents."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "120,1 BPM, pulsation très nette (9,85) : temps toutes les 30 im à partir de f4, demi-temps toutes les 15 im. Kick sur chaque temps (attaques graves f124, 184, 214, 244 … 754), charleston sur les contretemps, montée 1,8-2,07 s puis drop à f124, coupure des graves f742-f753 puis impact à f754. La seconde partie est une grille de croches : 8 cartes de 15 im exactement, coupes grises à f645, 660, 675, 690, 705, 720, 735, 750 (plan médian 0,2 s selon le dossier). Les coupes et déclenchements tombent sur des quarts de seconde ronds (1,5 / 2,0 / 5,5 / 6,0 / 7,25 / 7,75 / 10,75 … 12,5 / 13,25 s), donc 3,4 ± 0,3 im avant l'attaque, et l'image pleine arrive sur le temps ; les arrivées de mouvement (URL au bord f33, compression f78, pastille au maximum f107, compteur f139, tableau net f274, logo f454, filé f619) sont à ±2 im de la grille. Aucun temps mort : les maintiens détectés (0-0,53 s, 0,68-1,5 s, 4,95-6,0 s) contiennent la frappe, le défilement de l'URL et des compteurs qui roulent ; seul le maintien final (14,33-15,07 s, 0,74 s) est immobile, hors dégradé qui dérive.",
+    "timeline": [
+      {"t": "0:00-0:00.23", "what": "f0-f13 : noir à grille fine, curseur orange", "technique": "attente sur curseur"},
+      {"t": "0:00.23-0:01.03", "what": "f14-f62 : URL de 163 caractères tapée en accéléré, compteur « YOUR LINKS, TODAY · 163 CHARS »", "technique": "frappe accélérée + bruits de frappe"},
+      {"t": "0:01.03-0:01.50", "what": "f62-f90 : l'URL se floute puis se compresse en trait orange, puis en point", "technique": "compression en trait de lumière"},
+      {"t": "0:01.52-0:02.00", "what": "f91-f119 : éclair gris, la pastille « dub.sh/launch » jaillit du point, « launch » s'écrit, le curseur arrive", "technique": "éclair + lien court qui jaillit"},
+      {"t": "0:02.00-0:02.42", "what": "f120-f145 : clic, fond orange, ondes concentriques et étincelles, globe qui se lève ; drop à f124", "technique": "clic qui déclenche le drop"},
+      {"t": "0:02.42-0:04.42", "what": "f145-f265 : « CLICKS · LIVE », compteur qui roule jusqu'à 1 284 093 sur un globe à points avec impacts et arcs", "technique": "compteur à rouleaux + globe"},
+      {"t": "0:04.42-0:05.50", "what": "f265-f330 : fondu flou vers le tableau de bord incliné, compteur Clicks qui reprend, courbe bleue tracée", "technique": "fondu flou avec passage du chiffre"},
+      {"t": "0:05.50-0:06.00", "what": "f331-f360 : onglet Leads, courbe violette, compteur 48 210", "technique": "changement d'onglet expo.out"},
+      {"t": "0:06.00-0:07.25", "what": "f361-f435 : onglet Sales (sarcelle), infobulle qui parcourt la courbe, pile de 5 notifications", "technique": "onglet + notifications empilées"},
+      {"t": "0:07.27-0:07.55", "what": "f436-f453 : la carte est jetée en haut à gauche, les notifications partent à droite, noir", "technique": "sortie en ease-in"},
+      {"t": "0:07.57-0:10.30", "what": "f454-f618 : « Grow with partners. », logo central, avatars en orbites, gains verts, compteur $4 218 960", "technique": "réseau qui se peuple + gains"},
+      {"t": "0:10.30-0:10.65", "what": "f618-f639 : filé flouté vers la gauche, carte blanche « Short links. »", "technique": "filé à flou directionnel"},
+      {"t": "0:10.75-0:12.50", "what": "f645-f749 : QR codes. / Custom domains. / Deep links. / Conversions. / Affiliates. / Payouts. / One platform., un mot par croche", "technique": "rafale de mots + coupes par image grise"},
+      {"t": "0:12.50-0:12.77", "what": "f750-f766 : le disque blanc du logo grossit jusqu'à devenir le fond, la marque rétrécit et pivote ; impact à f754", "technique": "iris par le disque du logo"},
+      {"t": "0:12.77-0:13.25", "what": "f766-f795 : logo seul sur blanc, dégradé pastel qui dérive", "technique": "maintien sur dégradé fluide"},
+      {"t": "0:13.25-0:13.83", "what": "f795-f830 : « dub » sort de derrière le logo, « Turn clicks into revenue. » mot à mot", "technique": "révélation du logotype + slogan mot à mot"},
+      {"t": "0:14.13-0:14.28", "what": "f848-f857 : boutons « Start for free → » et « dub.co », soulignement orange", "technique": "appel à l'action"},
+      {"t": "0:14.28-0:15.07", "what": "f857-f904 : signature immobile", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120,1 BPM confirmée par les attaques de graves (kick) à f124, 184, 214, 244, 274, 304, 334, 364 … 694, 724, 754 (temps à 0,067 + 0,5 k s). Deux familles d'événements, toutes deux verrouillées. (1) 15 coupes et déclenchements placés sur des quarts de seconde ronds : éclair f91 (1,5 s), clic f120 (2,0 s), onglets f331 et f361 (5,5 et 6,0 s), sortie du tableau f436, avatars f466, 8 coupes grises du montage f645 à f750 toutes les 15 im, logotype f795, slogan f808 ; tous à -3,4 ± 0,3 im de l'attaque, écart constant impossible par hasard, et l'image pleine tombe sur le temps (QR f648, Custom f663, Deep f678, Conversions f693, Affiliates f708, Payouts f723, One platform f738, iris f753). (2) 9 arrivées de mouvement à ±2 im de la grille : URL au bord f33 (temps f34), curseur éteint f64 (f64), compression f78 (demi-temps f79), pastille au maximum f107 (f108,9), compteur f139 (f138,9), tableau net f274 (f273,8), logo partenaires f454 (f453,6), départ du filé f619 (f618,5), carte blanche f632 (f633,5). Comptage brut sur la grille audio : 9 gestes sur 34 à ±2 im (hasard 33 %), chiffre trompeur à cause de l'avance constante ; en la compensant (+3,5 im) : 19 sur 34. Hors grille : notifications f370 / 385 / 403 / 419, titre « Grow » f462, fondu globe → tableau f265, vague verte f546 (+2,4), boutons f848. Le conteneur ne décale pas l'audio (start_time 0) : l'avance est voulue (coupe juste avant le kick) ou vient d'un décalage de 67 ms du premier temps de la piste. L'arrangement suit l'image : bruits de frappe qui accélèrent avec le texte (0,21 / 0,45 / 0,67 / 0,79 / 0,91 / 1,06 s), aigus qui montent f110-f124 puis drop (+19 dB dans les graves) à f124, 4 im après le clic ; graves coupés f742-f753 (42,9 → 26 dB) pendant une montée d'aigus, impact à f754 quand le disque du logo remplit l'écran. Indice automatique cohérent : départs/demi-temps R = 0,82, p = 2e-9, décalage -39 ms.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "Électro 120 BPM avec montées et drop : colle aux coupes sèches, à l'expo.out de l'interface et à la rafale de mots ; l'impact épouse l'iris du logo.",
+    "how_built": "Timeline écrite en quarts de seconde ronds, soit des croches à 120 BPM (clic 2,0 s, onglets 5,5 et 6,0 s, cartes du montage toutes les 0,25 s de 10,75 à 12,5 s) ; la piste a ses temps à 0,067 + 0,5 k s, d'où l'avance constante de 3,4 im des coupes. L'arrangement colle aux scènes (montée puis drop au clic, coupure des graves puis impact sur l'iris, frappe sonorisée) : bande-son probablement composée ou montée pour cette vidéo. Le prompt n'impose ni musique ni tempo."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc problème → solution → preuves → fonctions → marque",
+      "name_en": "launch narrative arc",
+      "t": "0:00-0:15.07",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "URL interminable (le problème, f14-f90) → compressée en lien court (la solution, f91-f119) → clics en direct (preuve, f120-f265) → tableau de bord clics, leads, ventes (f265-f449) → partenaires (f454-f618) → rafale des 8 fonctions (f632-f749) → logo, slogan, appel à l'action (f750-f904). 7 parties de 1,5 à 3 s, chacune née de l'objet de la précédente.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "URL qui s'allonge en frappe accélérée avec compteur de caractères",
+      "name_en": "accelerating typing with live character counter",
+      "t": "0:00.23-0:01.03",
+      "frames": "f14-f62",
+      "fps": 60,
+      "mechanics": "Texte mono gris clair (≈ 2,4 % de la hauteur) qui part de x = 13 %, y = 48 % : frappe en courbe en S, d'environ 1 caractère par image (f14-f20) à ≈ 8 par image (f28-f33), soit 163 caractères en 48 im. Dès f33 le champ défile vers la gauche avec un masque en fondu à gauche ; curseur orange. En-tête mono capitales espacées « YOUR LINKS, TODAY · 163 CHARS » avec le compteur en orange. Le texte atteint le bord sur le temps f34.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Compression de l'URL en trait de lumière puis en point",
+      "name_en": "squash to a light line, then a point",
+      "t": "0:01.03-0:01.50",
+      "frames": "f62-f90",
+      "fps": 60,
+      "mechanics": "Le curseur s'éteint et l'URL se floute (f62-f64, sur le temps), reste floue 13 im, puis se comprime horizontalement de f78 (demi-temps f79) à f90 : texte → trait orange lumineux (≈ 14 % de la largeur à f88) → point au centre (f90). Bord droit 613 → 503 px (demi-résolution) en accélérant : ease-in. C'est la compression avant l'explosion.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f94.jpg",
+      "illus": {"from": 76, "to": 100, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Éclair puis lien court qui jaillit du point",
+      "name_en": "flash and pop-out from a point",
+      "t": "0:01.52-0:01.92",
+      "frames": "f91-f115",
+      "fps": 60,
+      "mechanics": "f91 (1,50 s) : éclair gris radial plein cadre (luminance moyenne 78/255) qui décroît d'environ ×0,8 par image pendant 10 im. La pastille sombre « ⊙ dub.sh/launch » grandit depuis le point (f92-f107, ease-out, largeur 58 → 451 px en demi-résolution), dépasse puis revient (≈ +6 à +15 %, ressort probable) jusqu'à f115 ; « launch » s'écrit en orange lettre par lettre (f97-f105, ≈ 1 lettre/im). Pastille au maximum f107 sur le demi-temps f108,9.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f94.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui clique le lien et inonde le fond d'orange",
+      "name_en": "cursor click with color flood",
+      "t": "0:01.75-0:02.07",
+      "frames": "f105-f124",
+      "fps": 60,
+      "mechanics": "Curseur flèche qui entre en bas à droite et rejoint la fin de la pastille en ≈ 15 im (ease-out). Clic à f120 (2,00 s) : le fond passe au halo orange radial (luminance moyenne 4 → 26), qui décroît d'environ ×0,8 par image ; le drop des graves arrive 4 im plus tard (f124), comme si le clic déclenchait la musique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ondes concentriques et étincelles du clic",
+      "name_en": "click ripple rings with sparks",
+      "t": "0:02.02-0:02.67",
+      "frames": "f121-f160",
+      "fps": 60,
+      "mechanics": "Depuis le point de clic, un anneau blanc fin s'ouvre (rayon ≈ 4 % → 50 % de la hauteur en ≈ 15 im, ease-out), suivi de 2 à 3 anneaux orange plus fins et d'étincelles orange qui s'éparpillent (f122-f126) ; les anneaux continuent hors cadre pendant que le globe monte. Donne une cause visible au drop.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 118, "to": 140, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Globe à points qui se lève avec impacts et arcs",
+      "name_en": "rising dotted globe with pings and arcs",
+      "t": "0:02.07-0:04.42",
+      "frames": "f124-f265",
+      "fps": 60,
+      "mechanics": "Sphère d'environ 140 % de la hauteur dont seule la calotte est visible, montée depuis le bas (f124-f145) ; continents en points blancs et gris, bord en lueur orange (Fresnel, #4E1903 → #ED4700), rotation lente ; impacts orange avec halo, arcs orange fins qui montent du globe vers le compteur. Exécution soignée d'un motif très vu.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de clics à rouleaux",
+      "name_en": "odometer click counter",
+      "t": "0:02.32-0:04.48",
+      "frames": "f139-f269",
+      "fps": 60,
+      "mechanics": "La pastille monte et rétrécit en haut (f139-f145, sur le demi-temps f138,9) ; étiquette mono orange capitales espacées « ● CLICKS · LIVE » ; compteur mono blanc (capitale ≈ 10,6 % de la hauteur, ≈ 36 % de la largeur) de 0 à 1 284 093 en 124 im (2,07 s), ease-out (≈ 28 000 par image à f150, 1 800 à f225, 58 à f260) ; les derniers chiffres roulent verticalement, le zéro de tête reste grisé.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-move-f268.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou du compteur héros vers le tableau de bord",
+      "name_en": "blur crossfade with number handoff",
+      "t": "0:04.42-0:04.57",
+      "frames": "f265-f274",
+      "fps": 60,
+      "mechanics": "Compteur et globe se floutent et s'effacent (f266-f271) pendant que la carte du tableau de bord apparaît floue puis devient nette à f274, sur le temps. Son compteur Clicks repart de ≈ 187 000 et remonte jusqu'à la même valeur 1 284 093 (f268-f330) : le chiffre semble passer du héros à l'interface. ≈ 9 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f268.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tableau de bord sombre en légère perspective",
+      "name_en": "tilted dark dashboard card",
+      "t": "0:04.57-0:07.25",
+      "frames": "f274-f435",
+      "fps": 60,
+      "mechanics": "Carte #0C0C0C, filet de 1 px, rayon ≈ 24 px, ≈ 75 % de la largeur, inclinée en 3D (rotation X et Y ≈ 5° probable) avec dérive lente ; en-tête « dub.sh/launch » + « Last 30 days », logo à droite ; trois indicateurs (Clicks, Leads, Sales), l'actif en blanc sur fond plus clair avec soulignement coloré ; graphique en aire avec lueur néon.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe tracée avec point lumineux de tête",
+      "name_en": "line draw with leading dot",
+      "t": "0:04.57-0:05.00",
+      "frames": "f274-f300",
+      "fps": 60,
+      "mechanics": "Ligne bleue tracée de gauche à droite en ≈ 26 im avec un point blanc en tête et une aire en dégradé dessous ; départ sur le temps f274.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f268.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Changement d'onglet : soulignement en expo.out et courbe recolorée",
+      "name_en": "tab switch with expo-out underline and chart recolor",
+      "t": "0:05.52-0:05.72 ; 0:06.02-0:06.22",
+      "frames": "f331-f343 ; f361-f373",
+      "fps": 60,
+      "mechanics": "Le soulignement saute de 131-138 px dès la première image puis chaque pas vaut ≈ 0,7 fois le précédent (131-96-66-44-29-19-14-10-7-4-3-2-2 px) : expo.out, 427 px en 12 im. La courbe change de couleur et de forme (bleu → violet → sarcelle #19B4A7) et le compteur actif monte (Leads → 48 210 ; Sales $44 406 → $392 840, ease-out ≈ 30 im). Départs à 5,5 et 6,0 s pile, 2,7 im avant le kick : 80 % du trajet est fait sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Infobulle qui parcourt la courbe et pile de notifications",
+      "name_en": "scrubbing tooltip and stacking toasts",
+      "t": "0:06.17-0:07.25",
+      "frames": "f370-f435",
+      "fps": 60,
+      "mechanics": "Infobulle « Sep 6 $856 » avec trait vertical qui balaie la courbe de gauche à droite (≈ 1 point de donnée par image). 5 notifications (« New lead », « New sale · $249.00 », « New sale · $1,200.00 »…) entrent par la droite (pas de 28 → 3 px, ease-out ≈ 10 im) et poussent la pile vers le haut (≈ 120 px en ≈ 14 im, ease-out), espacées de 15 à 19 im, hors grille (f370, 385, 403, 419).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carte jetée dans la profondeur, puis noir",
+      "name_en": "throw-away exit with ease-in",
+      "t": "0:07.27-0:07.57",
+      "frames": "f436-f454",
+      "fps": 60,
+      "mechanics": "La carte pivote (≈ 15°) et rétrécit en filant vers le haut à gauche pendant que les notifications sortent à droite en accélération forte (pas de 5 → 138 px/im, ease-in) en 13 im ; 4 im de noir (f449-f453) puis la scène suivante éclot pile sur le kick f454.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Réseau de partenaires qui se peuple en orbites",
+      "name_en": "network graph build-up",
+      "t": "0:07.57-0:10.30",
+      "frames": "f454-f618",
+      "fps": 60,
+      "mechanics": "Logo central (disque blanc ≈ 18 % de la hauteur) qui grandit avec un halo violet #442D7A à partir du kick f454 ; ≈ 40 avatars ronds (photos cerclées de couleur) apparaissent par vagues du centre vers l'extérieur (f466-f506), sur des orbites elliptiques pointillées en perspective, reliés au centre par des fils violets fins.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot sorti d'un masque",
+      "name_en": "word-by-word masked rise",
+      "t": "0:07.70-0:07.97",
+      "frames": "f462-f478",
+      "fps": 60,
+      "mechanics": "« Grow » / « with » / « partners. » montent mot par mot (décalage ≈ 5 im, ≈ 6 im par mot, ease-out), centré en haut, capitale ≈ 8,3 % de la hauteur ; « Grow with » en blanc légèrement dégradé (#F7F7F9 → gris), « partners. » en dégradé #9157EB → #DE6334. Départ 6,6 im avant le demi-temps : hors grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Gains qui éclatent et compteur vert",
+      "name_en": "payout pops with green counter",
+      "t": "0:08.03-0:10.37",
+      "frames": "f482-f622",
+      "fps": 60,
+      "mechanics": "Pastilles vertes « +$480 », « +$1,250 », « +$120 »… qui éclatent au-dessus des avatars, dont l'anneau vire au vert lumineux (vague maximale f546, 2,4 im après le temps) ; compteur mono vert #1AB85D « $119,394 → $4,218,960 » en ease-out, sous-titre mono gris espacé « PAID OUT TO PARTNERS ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Filé horizontal flouté vers le montage",
+      "name_en": "whip pan with directional blur",
+      "t": "0:10.30-0:10.65",
+      "frames": "f618-f639",
+      "fps": 60,
+      "mechanics": "La scène des partenaires accélère vers la gauche avec un flou horizontal croissant (écart moyen entre images 2 → 14,5 de f618 à f628), un panneau blanc entre par la droite (f630-f633) et couvre l'écran pile sur le temps f634 ; « Short links. » devient net f634-f639.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f645.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rafale de 8 mots-fonctions, un par croche",
+      "name_en": "eighth-note feature-word montage",
+      "t": "0:10.53-0:12.50",
+      "frames": "f632-f750",
+      "fps": 60,
+      "mechanics": "« Short links. », « QR codes. », « Custom domains. », « Deep links. », « Conversions. », « Affiliates. », « Payouts. », « One platform. » : 15 im chacun (0,25 s = une croche à 120 BPM), centrés, ≈ 50-60 % de la largeur, capitale ≈ 12 % de la hauteur, casse de phrase + point. Des mots de 1-2 syllabes, lisibles en 0,25 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f645.jpg, microM-004-cut-f690.jpg, microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe par une image grise unie",
+      "name_en": "one-frame dip-to-grey cut",
+      "t": "0:10.75-0:12.50",
+      "frames": "f645-f750",
+      "fps": 60,
+      "mechanics": "À f645, 660, 675, 690, 705, 720, 735 et 750 : une image grise unie (#808080 ; #E5E5E5 à f750), puis 2 im de fondu du gris vers la nouvelle carte, image pleine 3 im après la coupe. Toutes les 15 im exactement, 3,4 im avant l'attaque : l'image pleine tombe sur le temps ou le demi-temps.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f645.jpg, microM-004-cut-f690.jpg",
+      "illus": {"from": 643, "to": 665, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un traitement graphique par mot",
+      "name_en": "per-word visual treatment",
+      "t": "0:10.53-0:12.50",
+      "frames": "f632-f749",
+      "fps": 60,
+      "mechanics": "Noir sur blanc ; blanc sur noir avec carrés QR #381000 qui changent à chaque image ; noir sur orange #F44800 avec lettres qui montent à ≈ 1,5 lettre/im ; contour seul sur noir ; noir sur dégradé conique arc-en-ciel (#F9581C, #B0DB52, #6BFD92, #4AA1FE) ; violet #8C5CFA sur blanc ; vert lumineux #23C761 sur noir avec pluie de « $ » ; blanc + logo sur noir. Chaque fonction a sa matière, le gabarit reste identique.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f645.jpg, microM-004-cut-f690.jpg, microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage de présentation : index, catégorie, barre de progression",
+      "name_en": "deck-style frame chrome",
+      "t": "0:10.53-0:12.50",
+      "frames": "f632-f749",
+      "fps": 60,
+      "mechanics": "Sur chaque carte : « ◐ DUB.CO » en haut à gauche, « 0N / 08 » en haut à droite (mono), « [ LINKS ] », « [ ANALYTICS ] », « [ PARTNERS ] » ou « [ DUB ] » en bas à gauche, filet de progression en bas à droite qui se remplit de N/8. Donne un cadre fixe à la rafale et dit où l'on en est.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f690.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le disque du logo devient le fond",
+      "name_en": "logo-disk iris zoom-through",
+      "t": "0:12.50-0:12.77",
+      "frames": "f750-f766",
+      "fps": 60,
+      "mechanics": "Éclair gris clair à f750, puis le disque blanc du logo passe d'environ 40 % de la hauteur au-delà du cadre en 4 im (f751-f755) et devient la toile blanche de la signature ; la marque noire rétrécit (≈ 55 % → 22 % de la hauteur) en pivotant d'environ 90° jusqu'à sa place (ease-out, ≈ 15 im). L'impact grave tombe à f754, après 2 im de graves coupés (f752-f753).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f750.jpg",
+      "illus": {"from": 748, "to": 768, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Logotype qui sort de derrière la marque",
+      "name_en": "lockup reveal",
+      "t": "0:13.25-0:13.38",
+      "frames": "f795-f803",
+      "fps": 60,
+      "mechanics": "La marque glisse de x = 50 % à x = 40 % pendant que « dub » sort de derrière elle vers la droite (masque au bord du logo), ≈ 8 im, ease-out ; déclenché à 13,25 s pile.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan mot à mot, soulignement et boutons",
+      "name_en": "tagline word rise, underline draw and CTA",
+      "t": "0:13.47-0:14.28",
+      "frames": "f808-f857",
+      "fps": 60,
+      "mechanics": "« Turn » / « clicks » / « into » / « revenue. » montent d'un masque toutes les 6 im (0,1 s), capitale ≈ 6,5 % de la hauteur, « revenue. » en orange #FC4600 ; boutons « Start for free → » (noir) et « dub.co » (blanc, mono) en fondu-montée f848-f857 ; soulignement orange ≈ 8 px tracé de gauche à droite f851-f857.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Dégradé fluide pastel sous la signature",
+      "name_en": "pastel mesh gradient",
+      "t": "0:12.77-0:15.07",
+      "frames": "f766-f904",
+      "fps": 60,
+      "mechanics": "Taches très floues rose #F9BABF, pêche #FDE8D7, lilas #F3E6F5, bleu #C9E5FC et vert pâle qui dérivent lentement sous le texte, sur #FCFCFC à grille quasi blanche ; elles animent la fin pendant le maintien de 0,74 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Fil rouge orange de marque",
+      "name_en": "brand-orange through-line",
+      "t": "0:00-0:15.07",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "L'orange #F44800 marque chaque moment clé : curseur, compteur de caractères, trait compressé, « launch », inondation du clic, bord du globe, « CLICKS · LIVE », carte « Custom domains. », « revenue. » et son soulignement. Les autres couleurs (violet, vert, sarcelle) sont réservées à une donnée chacune.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille d'édition en croches à 120 BPM",
+      "name_en": "eighth-note edit grid",
+      "t": "0:01.50-0:13.50",
+      "frames": "f91-f810",
+      "fps": 60,
+      "mechanics": "Les coupes et déclenchements sont posés sur des quarts de seconde ronds (1,5 / 2,0 / 5,5 / 6,0 / 7,25 / 7,75 / 10,75 … 12,5 / 13,25 s) : à 120 BPM, chaque quart de seconde est une croche. Cartes du montage de 15 im, onglets à 30 im d'intervalle, slogan à 6 im par mot. Une grille simple qui donne une synchro gratuite.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-003-cut-f645.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupe 3,4 im avant le kick, image pleine sur le temps",
+      "name_en": "pre-hit cuts",
+      "t": "0:01.50-0:13.25",
+      "frames": "f91-f795",
+      "fps": 60,
+      "mechanics": "15 coupes ou déclenchements tombent tous à -3,4 ± 0,3 im (≈ 57 ms) de l'attaque mesurée ; la nouvelle image est pleine 3 im après la coupe, donc sur le temps (QR f648, Custom f663, Deep f678, Conversions f693…). L'œil voit le changement juste avant d'entendre le coup, ce qui le fait paraître provoqué par l'image.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f645.jpg, microM-004-cut-f690.jpg, microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée puis drop déclenché par le clic",
+      "name_en": "riser and drop on the click",
+      "t": "0:01.83-0:02.10",
+      "frames": "f110-f126",
+      "fps": 60,
+      "mechanics": "Les aigus montent de 52,8 à 57,3 dB entre f110 et f124 pendant que le curseur approche ; clic visuel à f120, drop des graves (+19 dB, 26,5 → 45,5 dB) à f124, maximum f126-f127. Avant, intro sans graves (≈ 2-23 dB) ; après, groove plein.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Graves coupés avant l'impact du logo",
+      "name_en": "bass duck before the logo hit",
+      "t": "0:12.37-0:12.60",
+      "frames": "f742-f756",
+      "fps": 60,
+      "mechanics": "Les graves baissent de 42,9 à 26 dB de f742 à f753 pendant que les aigus montent (55,7 → 60,8 dB) ; impact à f754 (+18 dB) au moment où le disque blanc du logo remplit le cadre. Silence relatif de 2 im juste avant le coup.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruits de frappe qui accélèrent avec le texte",
+      "name_en": "accelerating typing sound effects",
+      "t": "0:00.20-0:01.06",
+      "frames": "f12-f64",
+      "fps": 60,
+      "mechanics": "Attaques à 0,21 / 0,45 / 0,67 / 0,79 / 0,91 / 1,06 s, d'intervalle décroissant (0,24 → 0,12 s) pendant que la frappe passe de 1 à 8 caractères par image (probable : clics de clavier). Le son épouse la courbe d'accélération du texte au lieu de la grille.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Système de courbes : expo.out pour l'interface, ease-in pour les sorties",
+      "name_en": "easing system",
+      "t": "0:00-0:15.07",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Soulignement d'onglet en expo.out (31 % du trajet à la 1re image), compteurs en ease-out sur 0,5 à 2 s, sorties en ease-in fort (notifications 5 → 138 px/im), éclairs qui décroissent d'environ ×0,8 par image, pastille qui dépasse légèrement puis revient. Aucun rebond ailleurs : ton net et rapide.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-move-f94.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "L'URL https://dub.co a suffi à ancrer le vrai produit et sa charte : liens courts dub.sh, analytics clics / leads / ventes, programme de partenaires, orange de marque, logo en disque. Fournir l'URL vaut un brief produit minimal."},
+    {"kind": "direction", "insight": "« Showreel pour un CV » + « go all out » a produit une démonstration de transitions (compression, éclair, ondes, filé, iris) plutôt qu'une simple démo d'interface : le mot oriente vers la variété de techniques."},
+    {"kind": "structure", "insight": "« Launch SaaS video » a déclenché l'arc classique problème → solution → preuves → fonctions → slogan → appel à l'action, avec une rafale de fonctions juste avant la signature."},
+    {"kind": "build", "insight": "Le minutage en quarts de seconde ronds (croches à 120 BPM) explique la synchro : choisir un tempo dont le temps vaut 0,5 s rend chaque valeur ronde musicale. À reprendre en écrivant le BPM dans le prompt."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur la lisibilité : notifications, URL et étiquettes mono (≈ 1,5-2,4 % de la hauteur) passent trop vite pour être lues. Fixer une taille minimale de texte et un temps de lecture."},
+    {"kind": "other", "insight": "Le réflexe « lancement SaaS » du modèle : noir + néon, globe à points, compteur qui roule, tableau de bord incliné, réseau d'avatars, signature sur dégradé pastel. Vocabulaire efficace mais reconnaissable ; la rafale de mots et la compression d'URL sont les idées les plus singulières."}
+  ],
+  "steal": [
+    "Montrer le problème avant la solution : une URL de 163 caractères tapée en accéléré, compressée en trait de lumière, puis un éclair d'où jaillit le lien court.",
+    "Rafale de fonctions : un mot par croche (15 im à 120 BPM), un traitement graphique par mot, un index 0N/08 et une barre de progression.",
+    "Couper 3-4 im avant le kick et faire arriver l'image pleine sur le temps : la coupe semble provoquer le son.",
+    "Passer d'un compteur héros à l'interface par un fondu flou où le même chiffre continue de monter dans le tableau de bord.",
+    "Finir par le disque du logo qui grossit jusqu'à devenir le fond blanc pendant que la marque rétrécit et pivote à sa place."
+  ],
+  "flaws": [
+    "Textes d'interface petits (notifications, URL, étiquettes mono de 1,5 à 2,4 % de la hauteur) : illisibles en 0,25-0,5 s.",
+    "Globe à points, halos néon et avatars de banque d'images : vocabulaire de lancement SaaS très vu.",
+    "Coupes par image grise unie : à 4 par seconde, peut se lire comme un clignotement.",
+    "Notifications et titre « Grow » hors grille alors que tout le reste est calé."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : compression → point → éclair → lien (f62-f107), clic à ondes sur le drop (f118-f145), onglets en expo.out (f331-f373), rafale à la croche et iris du logo (f630-f766) se jouent en 4 à 30 im ; à étudier en continu à 60 fps pour copier timing, courbes et calage."
+  }
+}

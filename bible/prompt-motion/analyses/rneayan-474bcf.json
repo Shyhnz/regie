@@ -1,0 +1,355 @@
+{
+  "slug": "rneayan-474bcf",
+  "title": "Risograph studio intro",
+  "handle": "@rneayan",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Direction artistique riso très cohérente (encres, surimpression, repérage décalé) et coupes verrouillées sur la mesure, mais animation surtout en apparitions sèches, label rogné et carton final figé 11 s.",
+  "summary": "Présentation d'un studio d'animation coréen (Airship Studio) en esthétique risographie : encres fluo, grain, surimpressions et décalages de repérage. Récit en phrases découpées sur 15 plans : l'IA fait des plans, mais une vidéo demande 10 étapes ; le studio les orchestre, preuve par l'expérience, puis dirigeable et logo. Force : un système graphique tenu et des coupes toutes sur la mesure à 145 BPM. Faiblesse : animation minimale et 11 s de carton figé.",
+  "prompt_vs_result": [
+    "Le prompt d'une ligne impose seulement le sujet (présenter « mon studio ») et le style risographie. Rien sur la durée, la langue, la musique, le texte ou la structure.",
+    "Claude a tout décidé : texte coréen, identité du studio (Airship Studio, depuis 2016, réalisateur de 10 ans, probablement tirée du contexte), récit problème → process → preuve → logo, diagrammes, montage calé sur 145 BPM.",
+    "Le mot « Risograph » a suffi pour un système d'encres cohérent. Il aurait fallu préciser les courbes d'animation, une densité de mouvement, des marges de sécurité du texte et la durée du carton final."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EFEBE1", "role": "fond papier crème, vignettage brun aux bords"},
+      {"hex": "#E8458B", "role": "encre rose fluo (cercles, titres, dirigeable final)"},
+      {"hex": "#1F6FB0", "role": "encre bleue (texte principal, flèche, dirigeable)"},
+      {"hex": "#F2CF1D", "role": "encre jaune (étiquettes, bandes, bordure du carton final)"},
+      {"hex": "#EE4F1E", "role": "encre orange (grands chiffres, « 만듭니다. »)"},
+      {"hex": "#1D6B2E", "role": "encre verte (texte sur jaune, extrusion du « 10 »)"},
+      {"hex": "#1E2A6E", "role": "surimpression rose × bleu (intersection du Venn)"}
+    ],
+    "type": "Coréen en sans très gras carré (Black Han Sans probable), chiffres géométriques noirs (Montserrat Black probable). Titres hauts ≈ 6 % de la hauteur, mots héros 20-25 %, « 10 » ≈ 45 %. Signature latine capitales, interlettrage léger.",
+    "texture": "Grain risographie dans chaque aplat (mouchetures blanches) régénéré à chaque image (boil), décalages de repérage en ombre portée de 1-2 % du cadre, surimpression en multiplication, vignettage papier, léger tremblement global du cadre ; aucun flou de mouvement.",
+    "style": "Risographie pop éditoriale, diagrammes à plat",
+    "coherence": "Cinq encres seulement, toutes en aplats grainés, et la même règle de surimpression partout (texte bleu sur rond rose, dirigeable sur soleil, Venn) : le système tient de bout en bout. Il se casse sur l'étoile sombre illisible au centre du Venn et sur le label « 제작 기술 » rogné par le bord du cercle."
+  },
+  "rhythm": {
+    "bpm": 145,
+    "sync": "serree",
+    "dead_time": "beaucoup",
+    "notes": "Tempo 145,2 BPM (1 temps = 0,413 s = 12,4 im à 30 fps), pulsation nette (3,64). Les 14 coupes tombent toutes 1 à 1,5 im avant une barre de temps, et toujours à la même place dans la mesure : le montage avance par blocs de 4, 8 ou 16 temps (plans de 1,65 s, 3,3 s ou 6,6 s ; médiane 3,33 s = 2 mesures). À l'intérieur des plans, les changements (chiffres du compteur, faders, tampon) tombent un par temps. Densité inégale : très vive de 9,9 s à 16,5 s (un événement par temps), puis lente : 1,4 s de cadre vide à 30,0-31,4 s, cercles 1-2-3 un par mesure (1,65 s), titre seul 1,6 s à 46,3 s, et carton final de 56,2 s à 69,3 s dont ≈ 10 s sans aucun nouvel élément (seul le grain bouge) puis fondu au noir 1,7 s. Le détecteur ne voit qu'un maintien de 1,4 s parce que le grain régénéré à chaque image produit du « mouvement » en continu.",
+    "timeline": [
+      {"t": "0:00-0:03.3", "what": "Rond rose qui grandit de 0 au centre (f0-f12), « AI가 » apparaît sec à f12, « 장면을 » s'ajoute vers 2,0 s et la ligne se recentre ; texte bleu surimprimé sur le rose", "technique": "scale-in ease-out + pop de texte + surimpression"},
+      {"t": "0:03.3-0:06.6", "what": "Écran coupé en deux bandes : haut rose à rayures diagonales avec cartouche crème « AI가 장면을 », bas jaune à rayures orange avec « 만듭니다. » géant (≈ 22 % de la hauteur)", "technique": "split-screen à motifs, phrase continuée d'un plan à l'autre"},
+      {"t": "0:06.6-0:08.27", "what": "« 그런데 » (« mais ») sur étiquette jaune, fond de pois roses de tailles variables (trame de demi-teinte)", "technique": "fond à trame de points animée"},
+      {"t": "0:08.27-0:09.9", "what": "« 영상 한 편은? » avec un « ? » rose géant (≈ 75 % de la hauteur) qui surimprime la fin de la phrase, léger balancement", "technique": "glyphe géant en surimpression"},
+      {"t": "0:09.9-0:14.03", "what": "Compteur 01 → 10 des étapes de production (기획, 콘티, 디자인… 납품) : chiffre orange sur bande jaune, mot bleu, 10 pastilles qui se remplissent ; un pas par temps (f297, f310, f322, f335…)", "technique": "compteur au temps + barre de progression en pastilles"},
+      {"t": "0:14.03-0:16.53", "what": "Bande adhésive jaune inclinée ≈ -20° qui barre l'écran en 6 im (f422-f427), « 납품 완료! » apparaît f428", "technique": "tampon / ruban diagonal sur le temps"},
+      {"t": "0:16.53-0:19.83", "what": "« 복잡한 과정을 » (« ce processus complexe ») sur étiquette jaune, fond de moiré rose/bleu qui ondule à chaque image", "technique": "moiré comme métaphore de complexité"},
+      {"t": "0:19.83-0:23.17", "what": "« 하나의 파이프라인으로. » ; flèche bleue qui pousse de gauche à droite en ≈ 17 im, puis 10 pastilles d'encre noire et leurs étiquettes posées une à une (≈ 4 im d'écart)", "technique": "flèche-frise qui se construit"},
+      {"t": "0:23.17-0:29.77", "what": "« AI와 제작 기술을 » : rond rose « AI » et rond bleu « 제작 기술 » entrent des deux bords (≈ 1,1 s), marquent un temps puis se chevauchent (≈ 0,9 s) ; intersection bleu nuit ; étoile sombre qui pousse au centre et « 맞는 곳에. » monte du bas vers 26,5 s", "technique": "Venn par glissement + surimpression"},
+      {"t": "0:29.77-0:36.37", "what": "« 맞는 순서로. » seul 1,4 s, puis pastilles 1 (rose), 2 (jaune), 3 (bleu) avec 준비 / 제작 / 완성, une par mesure", "technique": "séquence numérotée, apparitions à la mesure"},
+      {"t": "0:36.37-0:39.67", "what": "« 10 » orange géant (≈ 45 % de la hauteur) à extrusion verte qui pivote lentement, « 년차 감독이 » à droite, fond jaune", "technique": "chiffre extrudé en fausse 3D"},
+      {"t": "0:39.67-0:43.0", "what": "« 직접 컨트롤합니다. » : 4 faders (기획, 연출, AI, 편집) dont les curseurs roses sautent à une nouvelle hauteur à chaque temps en 2-3 im", "technique": "table de mixage métaphorique au temps"},
+      {"t": "0:43.0-0:46.33", "what": "« 2016 » bleu hachuré à ombre rose décalée + « 년부터. » ; pastilles 광고 / 캐릭터 / 웹툰 영상화 posées une à une (pilule d'abord, texte ensuite)", "technique": "chiffre-date héros + puces séquentielles"},
+      {"t": "0:46.33-0:49.6", "what": "« 실제 납품작으로 » seul ≈ 1,6 s, puis « 증명합니다. » rose sur rond jaune cerclé de vert (tampon) vers 47,97 s", "technique": "tampon de validation"},
+      {"t": "0:49.6-0:56.2", "what": "Dirigeable bleu à ombre rose qui traverse de gauche à droite en ≈ 6 s, nuages en tirets roses, soleil jaune ; vert de surimpression quand il passe devant le soleil ; textes remplacés à chaque mesure (아이디어부터 → 완성까지. → 비행선 스튜디오는 → 여러분과 함께 항해합니다.)", "technique": "mascotte-logo en traversée, sous-titres à la mesure"},
+      {"t": "0:56.2-1:09.27", "what": "Carton final : bordure jaune, dirigeable rose à ombre bleue, « 비행선 스튜디오 » pop à 57,03 s (2 temps après la coupe), « AIRSHIP STUDIO · SINCE 2016 » vers 57,85 s ; maintien ≈ 10 s puis fondu au noir 67,5-69,2 s", "technique": "carton logo + fondu"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 145,2 BPM, 1 temps = 12,4 im. Les 14 coupes sur 14 tombent entre -1 et -1,5 im d'une barre bleue (f99/f100, f198/f199, f496/f497, f595/f596, f893/f894, f1091/f1092, f1190/f1191…), toutes à la même position dans la mesure (indice de temps ≡ 3 modulo 4) : coupes sur la barre de mesure, hasard ≈ 10 %. Dans les plans : changements du compteur f310, f322, f335 à -1 im du temps, ruban f422-423 sur le temps f423, faders f1191 et f1203-1204 sur les temps, pop de « AI가 » f12 (temps f13,5), pop du nom final f1711 (temps f1711,5). Total : 22 gestes clés sur 22 à ±2 im d'un temps (hasard ≈ 40 % pour les seuls temps). Mesure auto : départs/temps R = 0,646, p = 1,7e-12, décalage -22 ms. Les deux attaques audio les plus fortes (29,81 s et 36,40 s) coïncident avec les coupes f893 et f1091.",
+    "synced": ["coupes", "apparitions", "texte", "departs"],
+    "style_match": "Musique à 145 BPM, pulsation franche (probablement pop électronique enjouée) ; apparitions sèches, compteur au temps et coupes par mesure collent à son caractère sautillant et au riso ludique.",
+    "how_built": "Le prompt ne donne ni BPM ni minutage : la synchro vient de la construction. Plans de 4, 8 ou 16 temps exactement et attaques fortes aux coupes : probable bande-son générée en code (ou analysée) avec une constante de tempo, et durées de scènes exprimées en temps ; décalage constant de -1 im = image en avance sur le son."
+  },
+  "techniques": [
+    {
+      "cat": "texture",
+      "name_fr": "Grain risographie régénéré à chaque image",
+      "name_en": "riso grain boil",
+      "t": "0:00-1:09",
+      "frames": "f0-f2075",
+      "fps": 30,
+      "mechanics": "Chaque aplat (rond, lettres, bandes) est moucheté de points blancs/clairs à 5-15 % de couverture, tirage différent à chaque image : la matière vibre même quand rien ne bouge. Fond papier crème #EFEBE1 avec vignettage brun sur ≈ 15 % des bords. C'est ce qui crée la « vie » des plans fixes.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f166.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Surimpression des encres en multiplication",
+      "name_en": "overprint / multiply blend",
+      "t": "0:00.4-0:03.3 ; 0:24.4-0:29.7 ; 0:54.0-0:56.0",
+      "frames": "f12-f99 ; f732-f892 ; f1620-f1680",
+      "fps": 30,
+      "mechanics": "Texte bleu #1F6FB0 posé sur le rond rose : la partie chevauchante devient bleu nuit. Intersection des deux ronds du Venn : bleu nuit #1E2A6E. Dirigeable bleu devant le soleil jaune : vert. Imite l'encre réelle qui se superpose. Mode de fusion multiply probable.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 735, "to": 789, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Décalage de repérage en ombre portée",
+      "name_en": "misregistration offset",
+      "t": "0:36.37-0:39.67 ; 0:43.0-0:46.3 ; 0:49.6-1:09",
+      "frames": "f1091-f1189 ; f1290-f1389 ; f1488-f2075",
+      "fps": 30,
+      "mechanics": "Un double de la forme dans une autre encre, décalé de 1 à 2 % du cadre vers le bas-gauche : « 10 » orange sur vert, « 2016 » bleu hachuré sur rose, dirigeable bleu sur rose puis rose sur bleu au carton final. Donne du relief sans ombre floue.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette limitée à cinq encres",
+      "name_en": "five-ink riso palette",
+      "t": "0:00-1:09",
+      "frames": "f0-f2075",
+      "fps": 30,
+      "mechanics": "Rose fluo, bleu, jaune, orange, vert sur papier crème, sans aucune autre teinte ni dégradé. Chaque plan en utilise 2 ou 3 ; le texte est toujours d'une encre qui contraste (vert sur jaune, bleu sur crème, orange sur jaune).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur la barre de mesure, plans de 4, 8 ou 16 temps",
+      "name_en": "bar-locked cuts",
+      "t": "0:03.3-0:56.2",
+      "frames": "f99, f198, f248, f297, f496, f595, f695, f893, f1091, f1190, f1290, f1390, f1488, f1686",
+      "fps": 30,
+      "mechanics": "Toutes les coupes franches tombent 1 à 1,5 im avant le temps, toujours sur le même temps de la mesure. Durées de plan : 3,30 s (8 temps) en général, 1,65 s (4 temps) pour les questions courtes (« 그런데 », « 영상 한 편은? »), 6,6 s (16 temps) pour les scènes à construction (Venn, 1-2-3, dirigeable).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f496.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'étapes au temps avec pastilles de progression",
+      "name_en": "beat-stepped counter with progress dots",
+      "t": "0:09.9-0:14.03",
+      "frames": "f297-f421",
+      "fps": 30,
+      "mechanics": "Bande jaune à gauche (≈ 25 % de la largeur) avec chiffre orange 01…10 (≈ 25 % de la hauteur), mot bleu à droite, 10 pastilles cerclées en bas. À chaque temps (12-13 im : f297, f310, f322, f335…) chiffre et mot changent en coupe sèche et une pastille se remplit en 2 im (petit point rose au centre puis plein). 10 étapes en 4,1 s : l'accumulation dit « c'est long » sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 297, "to": 342, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ruban-tampon diagonal sur le temps",
+      "name_en": "diagonal tape stamp",
+      "t": "0:14.07-0:14.27",
+      "frames": "f422-f428",
+      "fps": 30,
+      "mechanics": "Une bande jaune inclinée ≈ -20° jaillit du bas-gauche (f422) et traverse tout le cadre en 6 im (≈ 0,2 s), vitesse quasi constante ; le texte vert « 납품 완료! » apparaît d'un coup à f428. Départ 1 im avant le temps f423. Masque une partie du plan précédent (« 납품 » coupé) : effet d'autocollant collé.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f424.jpg",
+      "illus": {"from": 420, "to": 430, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Moiré comme image de la complexité",
+      "name_en": "moire pattern background",
+      "t": "0:16.53-0:19.83",
+      "frames": "f496-f594",
+      "fps": 30,
+      "mechanics": "Deux trames de lignes verticales fines rose et bleu marine qui glissent l'une sur l'autre : des ondes de moiré parcourent l'écran à chaque image. Étiquette jaune « 복잡한 과정을 » centrée (≈ 35 % de la largeur) qui tremble de quelques px. Métaphore juste (complexité), mais fond stroboscopique fatigant sur 3,3 s.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f526.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Trame de pois de tailles variables",
+      "name_en": "halftone dot grid",
+      "t": "0:06.6-0:08.27",
+      "frames": "f198-f247",
+      "fps": 30,
+      "mechanics": "Grille de 9 × 5 pois roses dont le diamètre varie (de ≈ 1 à 3 % de la largeur) comme une trame de demi-teinte, tailles qui changent dans le plan. Étiquette jaune « 그런데 » au centre.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f198.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran en deux bandes à rayures",
+      "name_en": "striped split-screen",
+      "t": "0:03.3-0:06.6",
+      "frames": "f99-f197",
+      "fps": 30,
+      "mechanics": "Bande haute (45 %) à rayures diagonales roses avec cartouche crème pour le début de phrase, bande basse (55 %) jaune à rayures orange pour la fin de phrase en très gros. La hiérarchie de la phrase devient une hiérarchie d'espace.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f99.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Phrase continuée d'un plan à l'autre",
+      "name_en": "sentence carried across cuts",
+      "t": "0:00-0:06.6 ; 0:16.5-0:23.2 ; 0:23.2-0:36.4",
+      "frames": "f0-f197 ; f496-f694 ; f695-f1090",
+      "fps": 30,
+      "mechanics": "Chaque phrase est coupée en segments et chaque segment a son plan : « AI가 장면을 » puis « 만듭니다. » ; « 복잡한 과정을 » puis « 하나의 파이프라인으로. » ; « AI와 제작 기술을 / 맞는 곳에. » puis « 맞는 순서로. ». Le spectateur lit au rythme des coupes, comme dans la grammaire 1600.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Glyphe « ? » géant en surimpression",
+      "name_en": "giant overprinted question mark",
+      "t": "0:08.27-0:09.9",
+      "frames": "f248-f296",
+      "fps": 30,
+      "mechanics": "Point d'interrogation rose ≈ 75 % de la hauteur, côté droit, qui recouvre la fin de « 영상 한 편은? » : le « ? » du texte se fond dedans. Léger balancement de quelques degrés (probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Flèche-frise qui se construit",
+      "name_en": "growing pipeline arrow",
+      "t": "0:19.83-0:23.17",
+      "frames": "f595-f694",
+      "fps": 30,
+      "mechanics": "La pointe apparaît à gauche f595, la tige s'allonge à ≈ 5 % de largeur par image jusqu'à ≈ 85 % à f612 (≈ 17 im, légère décélération finale). Puis 10 pastilles d'encre noire et leurs étiquettes de 1,5 % de hauteur se posent une à une (≈ 4 im d'écart). Rappelle les 10 étapes du compteur : elles deviennent une seule ligne.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f595.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Diagramme de Venn par glissement",
+      "name_en": "sliding Venn diagram",
+      "t": "0:23.17-0:29.77",
+      "frames": "f695-f892",
+      "fps": 30,
+      "mechanics": "Rond rose « AI » et rond bleu « 제작 기술 » (≈ 45 % de la hauteur) entrent depuis les bords gauche et droit en ≈ 33 im, ease-out, s'arrêtent à 35 % / 65 % de la largeur, puis se rapprochent en ≈ 27 im (ease-in-out) jusqu'à se chevaucher sur ≈ 30 % de leur diamètre. Une étoile vert sombre pousse dans l'intersection vers 26,5 s, « 맞는 곳에. » monte du bas. Défaut : « 제작 기술 » rogné par le bord du cercle et lettre « 제 » teintée de rose par la surimpression.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 702, "to": 789, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Éléments numérotés posés un par mesure",
+      "name_en": "one item per bar",
+      "t": "0:29.77-0:36.37",
+      "frames": "f893-f1090",
+      "fps": 30,
+      "mechanics": "Titre « 맞는 순서로. » seul pendant 1,4 s (cadre vide), puis pastilles 1, 2, 3 (≈ 20 % de la hauteur) à 31,4 s, ≈ 33,1 s et ≈ 34,7 s, soit une par mesure de 1,65 s, apparition sèche, positions fixes. Trop lent : 1,65 s entre deux éléments simples.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Chiffre extrudé à perspective qui pivote",
+      "name_en": "extruded numeral swing",
+      "t": "0:36.37-0:39.67",
+      "frames": "f1091-f1189",
+      "fps": 30,
+      "mechanics": "« 10 » orange ≈ 45 % de la hauteur avec une extrusion verte pleine dont la direction se déplace de quelques % pendant le plan (le volume semble tourner lentement). Fausse 3D par empilement de copies, cohérente avec le riso.",
+      "verdict": "adapter",
+      "evidence": "microM-011-cut-f1091.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Faders qui sautent à chaque temps",
+      "name_en": "beat-driven mixer faders",
+      "t": "0:39.67-0:43.0",
+      "frames": "f1190-f1289",
+      "fps": 30,
+      "mechanics": "4 rails bleus verticaux (≈ 40 % de la hauteur) étiquetés 기획 / 연출 / AI / 편집, curseurs roses. À la coupe ils partent du bas ; à chaque temps (f1191, f1203-1204…) chaque curseur saute vers une nouvelle hauteur en 2-3 im, ease-out très fort (≈ 80 % du trajet dès la 1re image), sans dépassement. Métaphore visuelle de « contrôle direct » qui bat la mesure.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1190.jpg",
+      "illus": {"from": 1189, "to": 1206, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Puces posées l'une après l'autre (pilule puis texte)",
+      "name_en": "staggered pill tags",
+      "t": "0:44.9-0:46.33",
+      "frames": "f1347-f1389",
+      "fps": 30,
+      "mechanics": "Sous « 2016년부터. », trois pilules jaunes cerclées de vert (광고, 캐릭터, 웹툰 영상화) apparaissent à ≈ 0,4 s d'écart ; la pilule arrive vide et son texte la remplit quelques images après (vu à 45,5 s).",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Dirigeable-logo en traversée avec nuages",
+      "name_en": "mascot airship crossing",
+      "t": "0:49.6-0:56.2",
+      "frames": "f1488-f1685",
+      "fps": 30,
+      "mechanics": "Le logo du studio (un dirigeable bleu à ombre rose) traverse le cadre de gauche à droite en ≈ 6 s, vitesse constante probable ; tirets roses en guise de nuages sur deux rangs, soleil jaune en haut à droite ; lignes horizontales fines en haut comme des repères d'impression. Les sous-titres changent à chaque mesure au-dessus.",
+      "verdict": "adapter",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit objection → process → réponse → preuve → logo",
+      "name_en": "problem-process-proof structure",
+      "t": "0:00-1:09",
+      "frames": "f0-f2075",
+      "fps": 30,
+      "mechanics": "« L'IA fait des plans. Mais une vidéo entière ? » → 10 étapes → « ce processus complexe en un seul pipeline » → « l'IA et le savoir-faire au bon endroit, dans le bon ordre » → « un réalisateur de 10 ans contrôle tout » → « depuis 2016, pub, personnages, webtoon » → « prouvé par de vraies livraisons » → « de l'idée au final, Airship Studio navigue avec vous » → logo. Chaque idée a son diagramme.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Apparitions sèches sans courbe",
+      "name_en": "hard pop-ins",
+      "t": "0:00-1:09",
+      "frames": "f12, f310, f428, f1711…",
+      "fps": 30,
+      "mechanics": "La grande majorité des textes et pastilles apparaissent d'une image à l'autre, sans fondu, sans échelle, sans glissement (« AI가 » à f12, chiffres du compteur, « 납품 완료! » à f428, nom du studio à f1711). Calé au temps, ça claque ; mais l'ensemble ressemble à un diaporama rythmé plus qu'à du motion.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rond qui grandit en ouverture",
+      "name_en": "circle scale-in open",
+      "t": "0:00-0:00.4",
+      "frames": "f0-f12",
+      "fps": 30,
+      "mechanics": "Rond rose de 0 à ≈ 50 % de la hauteur en 12 im : rayon +8, +5, +5, +4, +3, +4, +3… (unités de vignette), ease-out modéré sans dépassement. Fond qui s'éclaircit au centre pendant l'entrée. Le texte arrive à la fin de la croissance (f12), 1,5 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f7.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Tremblement de repérage du cadre",
+      "name_en": "registration jitter",
+      "t": "0:03.3-0:46.3",
+      "frames": "f99-f1389",
+      "fps": 30,
+      "mechanics": "Les calques bougent de 1 à 4 px d'une image à l'autre (cartouches, étiquettes, mots), comme une feuille mal calée dans la machine. Discret et cohérent avec le riso ; à doser car il s'ajoute au grain qui vibre déjà.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f130.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final encadré, maintenu longtemps",
+      "name_en": "framed end card hold",
+      "t": "0:56.2-1:09.27",
+      "frames": "f1686-f2075",
+      "fps": 30,
+      "mechanics": "Bordure jaune ≈ 4 % du cadre, dirigeable rose à ombre bleue, « 비행선 스튜디오 » pop à f1711 (2 temps après la coupe), signature latine « AIRSHIP STUDIO · SINCE 2016 » 2 temps plus tard. Puis ≈ 10 s sans aucun nouvel élément (seul le grain bouge), fondu au noir de 1,7 s. Un carton de 3 s aurait suffi.",
+      "verdict": "cliche",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1685, "to": 1731, "n": 5}
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Un seul mot de style (« Risograph ») a suffi à produire un système complet et tenu : palette de 5 encres, grain, surimpression multiply, décalage de repérage, papier vignetté. Un nom de technique d'impression est un cadrage de DA très efficace."},
+    {"kind": "inputs", "insight": "Le prompt ne contient aucune info sur le studio ; le nom, la date, l'expérience et les domaines viennent probablement du contexte de conversation ou d'un site. Sans contenu fourni, Claude remplit avec un argumentaire IA + savoir-faire assez générique."},
+    {"kind": "structure", "insight": "Aucune consigne de rythme, pourtant les plans durent exactement 4, 8 ou 16 temps : Claude a structuré la vidéo en mesures. Préciser le BPM et « un événement par temps » éviterait les trous (cadre vide 1,4 s, un élément par mesure)."},
+    {"kind": "direction", "insight": "Rien sur les courbes d'animation : le résultat se contente d'apparitions sèches et de glissements simples. Il faut demander explicitement des entrées à ressort, des écrasements, des transitions enchaînées."},
+    {"kind": "qa", "insight": "Pas de contrôle de lisibilité : label « 제작 기술 » rogné par le cercle, lettre teintée par la surimpression, étoile sombre illisible. Ajouter une règle « aucun texte coupé, contraste vérifié sur les zones de surimpression »."},
+    {"kind": "structure", "insight": "Durée non fixée : le carton final dure 13 s dont 10 s figées. Imposer une durée totale et un carton de fin de 2-3 s."}
+  ],
+  "steal": [
+    "Nommer une technique d'impression (riso, sérigraphie) pour obtenir d'un coup palette limitée, grain, surimpression multiply et décalage de repérage.",
+    "Monter en mesures : chaque plan dure 4, 8 ou 16 temps, la coupe tombe 1 im avant le temps.",
+    "Compteur d'étapes au temps : un chiffre + un mot + une pastille remplie par temps pour faire sentir une longueur.",
+    "Métaphore de contrôle : des faders qui sautent à chaque temps en 2-3 im, ease-out fort.",
+    "Ruban adhésif diagonal qui barre l'écran en 6 im sur le temps pour valider une étape."
+  ],
+  "flaws": [
+    "Carton final de 13 s dont ≈ 10 s sans aucun nouvel élément.",
+    "Label « 제작 기술 » rogné par le bord de son cercle, lettre « 제 » teintée de rose.",
+    "Apparitions presque toutes sèches : diaporama rythmé plutôt que vrai motion.",
+    "Cadre vide 1,4 s puis un élément par mesure dans la scène 1-2-3.",
+    "Fond moiré stroboscopique pendant 3,3 s, fatigant pour l'œil."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo à 30 fps dont l'intérêt est la DA riso et le calage des coupes sur la mesure, déjà mesurés ici ; les mouvements sont rares et simples (pops, glissements), une étude image par image n'apporterait presque rien de plus."}
+}

@@ -1,0 +1,600 @@
+{
+  "slug": "oliahmed205-3e31c4",
+  "title": "Photo retouch app promo",
+  "handle": "@oliahmed205",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo dense et cohérente, calée sur un quart de seconde que la musique 120 BPM suit ; transitions motivées (plongée dans le O, dézoom en grille). Perd un point : flashs gris, micro-textes, HUD générique.",
+  "summary": "Promo de 15 s de l'appli de retouche « Retouch ». Accroche « EVERY PHOTO has a better version. », plongée dans le O jusqu'au visage, quatre fonctions en démo d'interface (peau, filtres, gomme magique, lot), puis logo. Force : chaque geste tombe sur un quart de seconde que la bande-son frappe 4 images plus tard, transitions enchaînées. Faiblesse : deux flashs gris ternes.",
+  "prompt_vs_result": [
+    "Le prompt n'impose que la durée (15 s), l'usage de captures et visuels du produit, et un rôle : « Be a Highly professional Video Editor ». Aucun message, aucune structure, aucune musique, aucune palette.",
+    "Claude a tout décidé : accroche, découpage en cinq chapitres numérotés, textes (« Flawless in one tap. », « Swipe it. Gone. »), palette violet-rose-orange, HUD de diffusion, transitions et une bande-son 120 BPM dont les frappes suivent le montage.",
+    "« Monteur professionnel » a poussé vers la densité et la grammaire de montage (une action toutes les 0,25 à 0,5 s). Il aurait fallu fixer une taille minimale de texte, la couleur des flashs et l'absence de HUD décoratif."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0A0914",
+        "role": "fond quasi noir bleuté"
+      },
+      {
+        "hex": "#2B1E5E",
+        "role": "halo indigo central du fond"
+      },
+      {
+        "hex": "#5C1A3A",
+        "role": "halo lie-de-vin en bas à droite"
+      },
+      {
+        "hex": "#3A2A12",
+        "role": "halo ambré discret en bas à gauche"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "titres et wordmark"
+      },
+      {
+        "hex": "#7C3AED",
+        "role": "départ violet du dégradé de marque (LOOKS., ONE TAP., RE, icône)"
+      },
+      {
+        "hex": "#EC4899",
+        "role": "milieu rose du dégradé, contours de sélection, trait de gomme"
+      },
+      {
+        "hex": "#F97316",
+        "role": "fin orange du dégradé, point final des titres"
+      },
+      {
+        "hex": "#8B5CF6",
+        "role": "sous-titre « has a better version. »"
+      },
+      {
+        "hex": "#6B6B7B",
+        "role": "textes mono du HUD"
+      },
+      {
+        "hex": "#FF3B3B",
+        "role": "point REC du timecode"
+      },
+      {
+        "hex": "#A6A6A6",
+        "role": "flashs gris pleine image (f120, f780)"
+      }
+    ],
+    "type": "Grotesque géométrique large très grasse (probable Unbounded ou Syne), capitales pour les mots-chocs (≈14 % de la hauteur par ligne), « Flawless » ≈9 % doublé d'une version contour ; sans fine pour sous-titres ; mono pour le HUD.",
+    "texture": "Fond sombre à halos radiaux flous (indigo, lie-de-vin, ambre) ; glow rose autour des tuiles sélectionnées ; aberration chromatique et lignes de balayage horizontales sur les transitions glitch ; flou de mouvement radial sur la plongée dans le O et sur le push-in de 12 s ; particules carrées pour la désintégration ; poussière d'étoiles sur la carte de fin.",
+    "style": "Promo appli sombre, néon dégradé",
+    "coherence": "Le dégradé violet → rose → orange relie tout : anneau du O, mots « LOOKS. » et « ONE TAP. », trait de gomme, contours de sélection, « RE » des mots finaux, icône. Le HUD (coins, timecode, numéro de chapitre) cadre chaque scène de la même façon. Ce qui casse : les deux flashs gris ternes et les textes d'interface trop petits à 720p."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Le dossier annonce 80 BPM : faux (rapport 2/3). Les attaques de grosse caisse tombent toutes les 0,5 s à x,08 et x,58 s (2,078 ; 2,577 ; 3,077 … 13,073 s), soit 120 BPM ; l'intro de 0 à 2 s n'a pas de grosse caisse (montée calme, -30 dB) et le premier coup (drop, +13 dB) tombe à 2,08 s. Le montage est posé sur une grille du quart de seconde (multiples de 15 im à 60 fps) : coupes et impacts à f120, f150, f210, f225, f240, f300, f420, f540, f600, f720, f735, f750, f765, f780. La musique frappe 3 à 5 im après chaque point de grille (image en avance d'environ 70 ms, constante). Densité : un événement toutes les 0,25 à 0,5 s. Maintiens : 0,92-1,58 s (titre posé pendant que le sous-titre se décode), 4,17-4,70 s (seul le curseur avant/après bouge), 8,52-8,93 s (sélection rose avant désintégration), 14,05-14,98 s (carte de fin, normale). Un trou de 5 im de fond vide à 4,97-5,03 s.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.25",
+        "what": "Fond sombre seul, puis point blanc et anneaux concentriques qui s'élargissent au centre (f12)",
+        "technique": "onde de choc d'ouverture"
+      },
+      {
+        "t": "0:00.25-0:00.85",
+        "what": "EVERY puis PHOTO lettre par lettre, chaque lettre monte d'un masque en pivotant ; un tic aigu par lettre",
+        "technique": "montée masquée en cascade + SFX par glyphe"
+      },
+      {
+        "t": "0:00.85-0:01.85",
+        "what": "Titre tenu ; « has a better version. » se décode ; le O devient un anneau dégradé contenant un visage",
+        "technique": "décodage de texte, glyphe transformé en objectif"
+      },
+      {
+        "t": "0:01.85-0:02.00",
+        "what": "Plongée dans le O en 9 im jusqu'au visage plein cadre",
+        "technique": "zoom à travers un glyphe (glyph zoom-through)"
+      },
+      {
+        "t": "0:02.00-0:02.50",
+        "what": "Voile gris qui se dissipe sur le visage (drop à 2,08 s), puis le visage recule dans un téléphone",
+        "technique": "flash + recul dans l'appareil"
+      },
+      {
+        "t": "0:02.60-0:03.00",
+        "what": "« Flawless / in one tap. » à droite, maillage de points sur le visage",
+        "technique": "titre plein + contour, repères faciaux"
+      },
+      {
+        "t": "0:03.00-0:04.70",
+        "what": "Curseur avant/après aller-retour ; trois cartes de réglage en cascade à 0,25 s ; compteur 73 → 100 %",
+        "technique": "démo d'interface avant/après"
+      },
+      {
+        "t": "0:04.73-0:05.03",
+        "what": "Sortie par lignes glitch horizontales, 5 im de fond vide",
+        "technique": "sortie glitch"
+      },
+      {
+        "t": "0:05.03-0:05.60",
+        "what": "Six bandes verticales de filtres (CINE, WARM, NOIR, VIVID, FILM, COOL) montent en cascade de 3 im",
+        "technique": "cascade de cartes"
+      },
+      {
+        "t": "0:06.00-0:07.20",
+        "what": "La bande FILM se sélectionne (contour rose) puis s'étend plein cadre ; « ONE-TAP / LOOKS. »",
+        "technique": "carte qui devient plein cadre"
+      },
+      {
+        "t": "0:07.22-0:07.60",
+        "what": "Le texte s'efface en glitch, l'image se brise en tuiles qui laissent voir la plage",
+        "technique": "transition en tuiles (block shuffle)"
+      },
+      {
+        "t": "0:07.60-0:09.55",
+        "what": "MAGIC ERASE (entrée glitch RVB), trait de pinceau rose sur le plot et la poubelle, désintégration en pixels, toast « 2 objects removed »",
+        "technique": "démo gomme magique"
+      },
+      {
+        "t": "0:09.60-0:09.90",
+        "what": "L'image de plage rétrécit en petite tuile lumineuse au centre",
+        "technique": "dézoom vers tuile"
+      },
+      {
+        "t": "0:10.00-0:11.85",
+        "what": "Explosion en grille 3D inclinée de 15 photos ; « EVERY EDIT. / ONE TAP. »",
+        "technique": "grille en perspective"
+      },
+      {
+        "t": "0:11.85-0:12.00",
+        "what": "Push-in rapide dans la grille, flou, flash",
+        "technique": "push-in + surexposition"
+      },
+      {
+        "t": "0:12.00-0:12.98",
+        "what": "RETOUCH → RELIGHT → RESTORE → REIMAGINE, un suffixe toutes les 15 im, lettres remplies de photos",
+        "technique": "mot à suffixe tournant sur double-croches"
+      },
+      {
+        "t": "0:13.00-0:14.00",
+        "what": "Flash gris, anneaux qui s'ouvrent, l'icône arrive en arc, wordmark « Retouch » tapé lettre à lettre",
+        "technique": "révélation de logo"
+      },
+      {
+        "t": "0:14.00-0:15.10",
+        "what": "Carte de fin, tagline « Every photo, perfected. », photos flottantes au fond, fondu musical",
+        "technique": "carte de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle mesurée sur la piste : 120 BPM, grosse caisse à x,08 / x,58 s (les barres bleues des planches suivent une grille 80 BPM fausse et ne servent pas ici). Sur 27 gestes clés relevés (départs, impacts, coupes), 22 tombent à ±2 im d'un multiple de 15 im (quart de seconde) (hasard 33 %), et l'attaque de grosse caisse ou de caisse arrive 3 à 5 im après dans 14 cas sur 16 testés : f120 → kick f125 ; f150 → f155 ; f210 → f215 ; f240 → f245 ; f300 → f305 ; f420 → f425 ; f540 → f545 ; f600 → f605 ; f720 → f724 ; f735 → f740 ; f750 → f754 ; f765 → f770 ; f780 → f784. Intro : tics aigus à f15, f18, f21 puis f29, f31, f34, f37, f40, f42, soit un tic par lettre de EVERY et PHOTO (stagger 3 im), à 0 im de l'apparition. Structure : montée sans grosse caisse 0-2 s, drop à 2,08 s sur la plongée dans le O, double-croches 12,33 / 12,57 / 12,83 s sur les trois changements de suffixe, coup le plus fort à 13,0-13,3 s (-11 dB) sur le flash du logo, fondu 14,25-15 s.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "apparitions",
+      "texte",
+      "flashs",
+      "drop",
+      "camera"
+    ],
+    "style_match": "Électro-pop 120 BPM propre et percussive pour une promo d'appli néon : les courbes sèches, les glitchs et les cascades au quart de seconde collent au caractère de la piste.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Le placement des tics sur chaque lettre et des double-croches sur chaque suffixe indique une bande-son fabriquée sur la même timeline que l'image (synthèse en code ou effets sonores posés sur les événements, probable). L'avance constante de 4 im de l'image vient probablement de l'attaque lente de la grosse caisse ou d'un décalage d'encodage audio."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche promesse en deux mots + sous-titre",
+      "name_en": "Promise hook title",
+      "t": "0:00.25-0:01.95",
+      "frames": "f15-f117",
+      "fps": 60,
+      "mechanics": "« EVERY / PHOTO » en capitales très grasses centrées (deux lignes, ≈14 % de la hauteur chacune, bloc ≈30 %), puis « has a better version. » en violet #8B5CF6 (≈3 % de la hauteur). Le mot PHOTO porte le visuel : son O devient l'objectif qui ouvre la vidéo. Accroche lisible en 1,7 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent d'un masque en pivotant, cascade de 3 images",
+      "name_en": "Staggered masked letter rise with rotation",
+      "t": "0:00.25-0:00.85",
+      "frames": "f15-f51",
+      "fps": 60,
+      "mechanics": "Chaque lettre sort de sous une ligne de masque invisible en montant d'environ 100 % de sa hauteur et en pivotant légèrement (≈10-15°, la ligne EVERY paraît en arc à f30). Durée par lettre ≈9 im (0,15 s), ease-out. Décalage 3 im entre lettres : E f15, V f18, E f21, R f24, Y f27 ; PHOTO P f29, H f32, O f35, T f38, O f41 ; bloc complet f51. Le O de PHOTO apparaît d'abord comme un petit cercle qui grossit. Pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 14,
+        "to": 50,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de choc d'ouverture (point + anneaux concentriques)",
+      "name_en": "Opening shockwave rings",
+      "t": "0:00.20-0:00.55",
+      "frames": "f12-f33",
+      "fps": 60,
+      "mechanics": "Un point blanc central émet un anneau blanc fin (rayon ≈5 % de la hauteur à f12, ≈20 % à f20, ≈30 % à f30) suivi 3 im plus tard d'un anneau rose ; ease-out, opacité qui décroît jusqu'à disparition vers f35. Les lettres naissent pendant l'expansion : l'onde « allume » le titre.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre décodé (texte brouillé qui se résout)",
+      "name_en": "Text scramble decode",
+      "t": "0:01.00-0:01.50",
+      "frames": "f60-f90",
+      "fps": 60,
+      "mechanics": "« has a better version. » apparaît en glyphes brouillés et flous (f60), puis se résout en texte net violet vers f90 (≈30 im = 0,5 s). Petit corps (≈3 % de la hauteur) : l'effet se voit à peine.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le O de PHOTO jusqu'au visage",
+      "name_en": "Glyph zoom-through (into the O)",
+      "t": "0:01.85-0:02.00",
+      "frames": "f111-f120",
+      "fps": 60,
+      "mechanics": "Le O de PHOTO est devenu un anneau dégradé violet → rose → orange dont le trou contient un visage. Zoom centré sur le O en 9 im, ease-in exponentiel : échelle ≈×1,1 (f111), ×1,4 (f113), ×3 (f115), ×6 (f116), l'anneau remplit le cadre à f117, le visage occupe le trou à f118 et le cadre entier à f119. Flou de mouvement radial sur les lettres blanches à f114-f116. La coupe tombe sur f120, 5 im avant le drop de la musique (f125).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg",
+      "illus": {
+        "from": 108,
+        "to": 122,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Voile gris délavé après la plongée",
+      "name_en": "Washed-out flash veil",
+      "t": "0:02.00-0:02.20",
+      "frames": "f120-f132",
+      "fps": 60,
+      "mechanics": "À f120 le visage est couvert d'un voile gris clair (≈#C8C8C8, opacité ≈65 %) qui décroît linéairement jusqu'à 0 vers f130 (10 im). Censé être un flash d'impact, il lit comme une image délavée : un blanc franc sur 2-3 im aurait plus de punch.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f120.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Le visage plein cadre recule dans un téléphone",
+      "name_en": "Full-frame pull-back into device mockup",
+      "t": "0:02.20-0:02.50",
+      "frames": "f132-f150",
+      "fps": 60,
+      "mechanics": "Le visage plein cadre se réduit en ≈18 im (0,3 s, ease-out) jusqu'à l'écran d'un téléphone de ≈65 % de la hauteur à gauche du centre ; le cadre du téléphone et les coins arrondis apparaissent pendant la réduction. Atterrissage f150 sur la grille, grosse caisse f155.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Maillage facial puis teinte de détection",
+      "name_en": "Face landmark mesh + detection tint",
+      "t": "0:02.70-0:03.30",
+      "frames": "f164-f200",
+      "fps": 60,
+      "mechanics": "Points blancs et segments fins se dessinent sur le visage (repères faciaux) de f164 à f180 ; à f184-f196 une teinte rose translucide couvre joues et front (zones détectées). Le téléphone est légèrement tourné en 3D (≈10° en Y, probable) et flotte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur avant/après en aller-retour",
+      "name_en": "Before/after slider sweep",
+      "t": "0:03.07-0:04.70",
+      "frames": "f184-f282",
+      "fps": 60,
+      "mechanics": "Ligne verticale blanche avec poignée ronde : part du bord gauche de l'écran (f188), balaie vers la droite jusqu'à ≈90 % (f232), revient au centre (f244-f282). À droite de la ligne, la peau retouchée ; à gauche, l'original. Mouvement en ease-in-out lent, environ 50 im par passage.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Cartes de réglage en cascade au quart de seconde + compteur",
+      "name_en": "Staggered settings cards with counter",
+      "t": "0:03.53-0:04.50",
+      "frames": "f212-f270",
+      "fps": 60,
+      "mechanics": "Trois cartes sombres arrondies sous le titre : « Blemishes −14 » (f212), « Skin tone 73 % » (f224-f228), « Light +0,8 EV » (f240-f248). Décalage ≈14 im (0,25 s) ; chaque carte glisse de la gauche avec un fondu en ≈8 im. La valeur Skin tone roule de 73 % à 100 % entre f240 et f270. Chaque arrivée précède de 3 im une frappe de la musique (f215, f230, f245). Textes ≈1,5 % de la hauteur : illisibles à 720p.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre plein + ligne en contour",
+      "name_en": "Filled + outline headline pairing",
+      "t": "0:02.60-0:04.95",
+      "frames": "f156-f297",
+      "fps": 60,
+      "mechanics": "« Flawless » en blanc plein, grotesque large grasse ≈9 % de la hauteur ; dessous « in one tap. » dans la même police en contour seul (trait ≈1 px, blanc 70 %). Au-dessus, un surtitre mono magenta « 01 · AI SKIN RETOUCH » (≈1,5 %). Bloc aligné à gauche à ≈60 % de la largeur. Entrée par montée masquée lettre à lettre (f156-f176).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de diffusion (coins, timecode, chapitre, résolution)",
+      "name_en": "Broadcast HUD frame",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Repères d'angle fins, timecode mono en haut à droite avec point rouge REC, numéro et nom de chapitre en bas à gauche (« 00 — INTRO », « 01 · AI SKIN… », « 03 — MAGIC ERASE », « 04 — BATCH »), « 1920×1080 · 60FPS » et barre de progression en bas à droite. Textes ≈1 % de la hauteur, gris #6B6B7B. Structure la promo en chapitres mais l'information technique n'a aucun sens pour le spectateur.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie par lignes glitch horizontales",
+      "name_en": "Horizontal scanline glitch exit",
+      "t": "0:04.73-0:05.03",
+      "frames": "f284-f302",
+      "fps": 60,
+      "mechanics": "Des traits horizontaux fins (blanc, rose, cyan) traversent l'image et la découpent en bandes décalées horizontalement (f284-f296) ; le téléphone glisse à gauche hors cadre, le texte se brouille. Puis 5 im de fond vide (f298-f302) avant l'entrée des bandes. Le vide casse l'enchaînement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, microM-002-move-f314.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bandes verticales de filtres en cascade",
+      "name_en": "Staggered vertical filter strips",
+      "t": "0:05.03-0:05.60",
+      "frames": "f302-f336",
+      "fps": 60,
+      "mechanics": "Six cartes verticales (≈15 % de la largeur, ≈85 % de la hauteur, gouttière ≈1 %) montent du bas, une toutes les 3 im (f302, f305, f309, f312, f314, f317), chacune en ≈18 im ease-out ; hauteurs d'arrivée légèrement décalées (effet escalier) puis alignement à f330-f334. Même photo de rue avec six étalonnages ; étiquette en capitales grasses en bas à gauche (CINE, WARM, NOIR, VIVID, FILM, COOL). Le dernier atterrissage précède de 0 à 2 im la frappe f334.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f314.jpg",
+      "illus": {
+        "from": 300,
+        "to": 334,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélection d'une carte puis extension plein cadre",
+      "name_en": "Select card, expand to fullscreen",
+      "t": "0:06.00-0:07.00",
+      "frames": "f360-f420",
+      "fps": 60,
+      "mechanics": "La bande FILM reçoit un contour rose lumineux (f360-f390), puis la photo étalonnée s'étend jusqu'au plein cadre (f390-f420, probable ease-in-out) et le titre « ONE-TAP / LOOKS. » apparaît par-dessus à f420.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot en dégradé de marque avec point orange",
+      "name_en": "Brand-gradient keyword",
+      "t": "0:07.00-0:11.90",
+      "frames": "f420-f714",
+      "fps": 60,
+      "mechanics": "Deuxième ligne en dégradé horizontal violet #7C3AED → rose #EC4899 → orange #F97316 (« LOOKS. », « ONE TAP. »), première ligne en blanc ; le point final est orange. Capitales grasses larges ≈10 % de la hauteur, centrées. Même dégradé que l'icône : le mot-clé porte la marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Transition en tuiles (rue → plage)",
+      "name_en": "Block shuffle / tile shatter transition",
+      "t": "0:07.22-0:07.60",
+      "frames": "f433-f456",
+      "fps": 60,
+      "mechanics": "Le texte s'efface en glitch (f433-f438). L'image de rue se découpe en ≈10 rectangles de tailles inégales qui glissent et basculent ; la plage apparaît dans les trous, carré par carré (f439-f455). Résolution à f456, 1 im après la frappe f455. Durée 17 im (0,28 s). Lecture un peu confuse : les tuiles montrent des morceaux des deux images sans logique de direction.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f448.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre en glitch RVB (fantômes cyan et rouges)",
+      "name_en": "RGB split glitch title-in",
+      "t": "0:07.62-0:07.80",
+      "frames": "f457-f468",
+      "fps": 60,
+      "mechanics": "« MAGIC ERASE » apparaît avec des copies décalées : « ERASE » en cyan puis en rouge sous la ligne, qui clignotent en alternance (f457-f468, 11 im), avant de se fondre dans le texte blanc. Sous-titre « Swipe it. Gone. ».",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f448.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Gomme magique : trait de pinceau, contour, désintégration en pixels, toast",
+      "name_en": "Magic erase: brush scribble, pixel disintegration, toast",
+      "t": "0:07.90-0:09.50",
+      "frames": "f475-f570",
+      "fps": 60,
+      "mechanics": "Un curseur trace un zigzag rose épais (#EC4899, ≈2 % de la hauteur) sur le plot et la poubelle (f475-f507, 0,5 s) ; le trait s'efface et les objets gardent un liseré rose (f510-f528). Puis désintégration : les objets se cassent en petits carrés qui s'envolent vers le haut à droite et s'estompent (f531-f558, 27 im). Pic de la désintégration à f540, grosse caisse f545. Toast « 2 objects removed » en haut à droite à f564 (pilule sombre, puce rose).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 480,
+        "to": 566,
+        "n": 8
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom vers une tuile puis explosion en grille 3D",
+      "name_en": "Zoom-out to tile, burst into tilted grid",
+      "t": "0:09.60-0:10.20",
+      "frames": "f576-f612",
+      "fps": 60,
+      "mechanics": "L'image de plage passe de ≈85 % de la largeur à ≈17 % en 15 im (f576-f591), d'abord lentement puis vite (ease-in), et devient une tuile arrondie à liseré rose. Pause de 10 im. À f601 les autres photos jaillissent de derrière elle, du centre vers l'extérieur (voisins à f601-f603, bords à f604-f611), dans une grille 5×3 inclinée (rotation ≈−10° et perspective). Frappe la plus forte de la section à f605.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f591.jpg",
+      "illus": {
+        "from": 578,
+        "to": 611,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Push-in dans la grille puis flash de surexposition",
+      "name_en": "Push-in to overexposure flash",
+      "t": "0:11.85-0:12.10",
+      "frames": "f711-f726",
+      "fps": 60,
+      "mechanics": "Après une lente dérive, la caméra fonce vers la tuile de plage : échelle ×1,5 (f713) → ×4 (f719), ease-in, flou de mouvement fort à f718-f719 ; coupe sur un flash blanc grisé à f720 d'où émerge le mot RETOUCH avec des lignes de balayage (f720-f726). Coupe 4 im avant la frappe f724.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f720.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à suffixe tournant sur double-croches (RE + TOUCH/LIGHT/STORE/IMAGINE)",
+      "name_en": "Rotating suffix word swap",
+      "t": "0:12.00-0:12.98",
+      "frames": "f720-f779",
+      "fps": 60,
+      "mechanics": "« RE » fixe en dégradé violet → rose ; le suffixe change toutes les 15 im (0,25 s) : RELIGHT f736, RESTORE f751, REIMAGINE f766. Chaque changement dure 2-3 im : l'ancien suffixe sort vers le haut, le nouveau entre par le haut (glissière de machine à sous), avec des traits horizontaux rose, cyan et orange qui balaient l'écran. Sous le mot, menu mono « RETOUCH · RELIGHT · RESTORE · REIMAGINE » dont l'entrée active se souligne. Le mot ≈12 % de la hauteur. À f777-f779 il rétrécit et bascule légèrement avant le flash.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f720.jpg, microM-006-cut-f780.jpg",
+      "illus": {
+        "from": 730,
+        "to": 772,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Lettres remplies de photo",
+      "name_en": "Image-filled letterforms",
+      "t": "0:12.00-0:13.00",
+      "frames": "f720-f779",
+      "fps": 60,
+      "mechanics": "Les suffixes TOUCH, LIGHT, STORE, IMAGINE sont remplis d'une photo différente (rue, feuillage), cerclés d'un contour fin ; le « RE » reste en dégradé plein. Contraste faible sur fond sombre : le suffixe se lit moins bien que le RE.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f720.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Révélation du logo : flash, anneaux, icône en arc, wordmark tapé",
+      "name_en": "Logo reveal: flash, ring burst, arcing icon, typed wordmark",
+      "t": "0:13.00-0:14.00",
+      "frames": "f780-f840",
+      "fps": 60,
+      "mechanics": "Flash gris plein (#A6A6A6) à f780. Un anneau blanc s'ouvre du centre (rayon ≈8 % de la hauteur à f781, ≈28 % à f787, sort du cadre vers f795, ease-out), suivi 3 im après d'un anneau rose ; le halo violet-rose et des étoiles reviennent. Un point rose à gauche (f783) grossit en icône carrée arrondie (≈10 % de la hauteur) en suivant un arc jusqu'à ≈32 % de la largeur (f797). Le wordmark « Retouch » se tape lettre par lettre dès f797 (≈2,5 im par lettre) puis se recentre avec l'icône vers f840.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f780.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond sombre à halos colorés + photos flottantes en fin",
+      "name_en": "Dark multi-glow background with floating cards",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Fond #0A0914 avec trois halos radiaux très flous (indigo au centre, lie-de-vin en bas à droite, ambre en bas à gauche) qui dérivent lentement. Sur la carte de fin, six petites photos inclinées et sombres flottent aux bords (opacité ≈40 %) avec des points d'étoiles : profondeur sans distraire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille du quart de seconde, grosse caisse 120 BPM qui suit à 4 im",
+      "name_en": "Quarter-second edit grid locked to 120 BPM kick",
+      "t": "0:02.00-0:13.10",
+      "frames": "f120-f784",
+      "fps": 60,
+      "mechanics": "Tous les gestes sont posés sur des multiples de 15 im (0,25 s), soit croches et doubles-croches d'un 120 BPM. La grosse caisse frappe toutes les 30 im à f(30k+5) : l'image d'impact précède la frappe de 3 à 5 im (≈70 ms) de façon constante (f120/f125, f600/f605, f720/f724, f780/f784). Pour HyperFrames : caler les impacts à t = n × 0,25 s et la grosse caisse sur la même grille, l'avance de 2-4 im de l'image est acceptable.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg, microM-004-move-f591.jpg, microM-005-cut-f720.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un tic aigu par lettre pendant l'apparition du titre",
+      "name_en": "Per-glyph tick SFX",
+      "t": "0:00.24-0:00.71",
+      "frames": "f15-f42",
+      "fps": 60,
+      "mechanics": "Attaques aiguës (>2 kHz) à 0,244 / 0,302 / 0,348 s puis 0,476 / 0,522 / 0,569 / 0,615 / 0,662 / 0,708 s, espacées de ≈46 ms (≈3 im) : exactement le décalage entre les lettres de EVERY (f15, f18, f21) et de PHOTO (f29-f42). Écart image/son ≈0 im. Le son « écrit » le titre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée sans grosse caisse puis drop sur la plongée dans le O",
+      "name_en": "Riser intro, drop on glyph zoom",
+      "t": "0:00-0:02.10",
+      "frames": "f0-f125",
+      "fps": 60,
+      "mechanics": "De 0 à 2 s la piste reste à ≈-30 dB, sans grosse caisse ; à 2,08 s premier coup et saut à -14 dB (+13,7 dB). La plongée dans le O culmine à f119-f120 : l'image entre dans le visage juste avant que le morceau démarre. Le niveau reste ensuite stable : pas de second drop avant le logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Doubles-croches sur les changements de suffixe, coup final sur le logo",
+      "name_en": "16th-note stutter on word swaps, final hit on logo",
+      "t": "0:12.25-0:13.30",
+      "frames": "f735-f800",
+      "fps": 60,
+      "mechanics": "Trois attaques médium-aiguës à 12,33 / 12,57 / 12,83 s (f740, f754, f770), à 0,25 s d'écart, chacune 3-4 im après un changement de suffixe (f736, f751, f766). Puis le pic de niveau de la piste (-11 dB) à 13,0-13,3 s sur le flash du logo, et fondu de 14,25 à 15 s sur la carte de fin.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f720.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Densité constante : une action toutes les 0,25 à 0,5 s",
+      "name_en": "Constant event density",
+      "t": "0:00-0:14.00",
+      "frames": "f0-f840",
+      "fps": 60,
+      "mechanics": "27 gestes clés en 14 s (≈1 toutes les 0,5 s, jusqu'à 1 toutes les 0,25 s dans les cascades et le final). Seuls maintiens : titre 0,92-1,58 s (animé par le décodage), carte de fin 14-15 s. Exception : le trou vide de 5 im à 4,97 s.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure accroche → 4 fonctions numérotées → lot → marque",
+      "name_en": "Hook, numbered feature chapters, brand",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Accroche (2 s), retouche peau (3 s), filtres (2,5 s), gomme magique (2 s), lot de photos (2 s), récapitulatif RE- (1 s), logo (2 s). Chaque chapitre a un titre de 2-3 mots et une démonstration d'interface ; le récapitulatif RE- résume la gamme en 1 s avant le logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "Le rôle « Highly professional Video Editor » a orienté Claude vers une grammaire de montage (coupes sur grille, cascades, flashs, chapitres) plutôt que vers une animation d'illustration : la vidéo se lit comme un montage de bande-annonce."
+    },
+    {
+      "kind": "inputs",
+      "insight": "« using product screenshots and assets » : les photos (visage, rue, plage, grille) sont probablement des visuels fournis ; l'interface du téléphone et les cartes semblent reconstruites en HTML (nettes, animées) plutôt que collées en capture (probable)."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure demandée : Claude a choisi un découpage en chapitres numérotés affichés dans le HUD, ce qui donne une promo de fonctionnalités claire mais un peu catalogue."
+    },
+    {
+      "kind": "build",
+      "insight": "Aucune mention de musique, et pourtant tics par lettre, drop à 2 s et doubles-croches sur les suffixes : la bande-son a été construite sur la même timeline que l'image (probable synthèse en code ou SFX placés par Claude)."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité : les cartes d'interface (≈1,5 % de la hauteur) et le HUD sont illisibles à 720p. Il aurait fallu imposer une taille minimale et une couleur de flash (blanc franc)."
+    },
+    {
+      "kind": "other",
+      "insight": "La vidéo est exportée en 1280×720 alors que le HUD affiche « 1920×1080 · 60FPS » : le HUD est décoratif et même faux."
+    }
+  ],
+  "steal": [
+    "Accroche dont une lettre est l'objectif : transformer le O d'un mot en anneau-image, puis plonger dedans en 9 im ease-in pile sur le drop.",
+    "Poser chaque geste sur un multiple de 0,25 s et placer la grosse caisse sur la même grille ; un tic sonore par lettre quand le titre s'écrit.",
+    "Dézoomer l'image courante jusqu'à une tuile, marquer 10 im, puis faire jaillir la grille autour d'elle sur le temps fort.",
+    "Récapituler la gamme avec un préfixe fixe et un suffixe qui tourne toutes les 15 im (RE + TOUCH, LIGHT, STORE, IMAGINE).",
+    "Démo de gomme : trait de pinceau rose 0,5 s, liseré, désintégration en carrés 0,45 s, puis toast de confirmation."
+  ],
+  "flaws": [
+    "Flashs gris délavés (f120, f780) au lieu d'un blanc franc : l'impact paraît terne.",
+    "Cartes d'interface et HUD à ≈1-1,5 % de la hauteur : illisibles à 720p.",
+    "HUD « 1920×1080 · 60FPS » et timecode REC : décor technique sans sens, tic de vidéo IA.",
+    "Transition en tuiles confuse, sans direction lisible.",
+    "Trou de 5 im de fond vide à 4,97 s entre deux scènes."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : rare exemple de promo où image et bande-son partagent une grille du quart de seconde ; la plongée dans le O, la cascade des bandes, le dézoom-grille et les suffixes tournants se mesurent image par image et se reproduisent tels quels dans HyperFrames."
+  }
+}

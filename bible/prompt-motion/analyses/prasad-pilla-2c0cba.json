@@ -1,0 +1,397 @@
+{
+  "slug": "prasad-pilla-2c0cba",
+  "title": "Alan agent platform promo",
+  "handle": "@prasad_pilla",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique rigoureux (papier quadrillé, encre, un seul lime) et métaphores justes (goulot, pipeline, boucle), mais mouvement timide, texte minuscule, logo coupé net à 3,5 s et musique posée.",
+  "summary": "Promo de 15 s pour Alan, « control plane » de livraison logicielle par agents. Quatre affirmations illustrées : un sablier où s'entassent des jetons éclate en vert, un pipeline Plan-Build-Verify-Ship s'allume, un cerveau en étoile pilote cinq lignes d'exécution, une boucle de vérification raccourcit un diagramme avant/après ; la scène se dissout en particules qui forment le logo. Très propre et cohérent, mais dense, petit et sans calage musical.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 15 s « dynamiques » qui prouvent un talent de motion designer, pour @tryAlanAI, « go all out ». Aucun récit, style, palette, musique ni format.",
+    "Claude a décidé seul : le récit en quatre affirmations (goulot, flux, cerveau/exécution, boucle), le papier quadrillé, l'accent lime, les métaphores (sablier, jetons, comètes, avant/après), le volet lime, l'implosion finale et le slogan.",
+    "Le handle a suffi pour le fond (positionnement, logo, URL : recherche probable). Mal cadré : « go all out » a donné un explainer dense plutôt qu'un film rythmé. Il fallait imposer BPM, coupes sur les temps et taille minimale du texte."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FEFEFE", "role": "fond papier au centre, vignette radiale vers #F1F1F1 aux coins"},
+      {"hex": "#EDEDED", "role": "grille fine très pâle (pas ≈ 64 px) et croix de repère tous les 256 px"},
+      {"hex": "#070F16", "role": "encre : titres, sablier, jetons, logo"},
+      {"hex": "#CAE96F", "role": "accent lime : surligneur, volet, halo, soulignement final (variante #C3E662 sur le volet)"},
+      {"hex": "#99B233", "role": "vert olive : barres de progression, puces, points des rayons"},
+      {"hex": "#6D7F27", "role": "olive foncé : numéros de cartes, mot LOOP (#708230)"},
+      {"hex": "#2F4735", "role": "vert sapin : tuile du cerveau"},
+      {"hex": "#F1F6E5", "role": "fond des cartes actives"},
+      {"hex": "#393B3D", "role": "titre gris foncé de la scène 2"},
+      {"hex": "#7B7D7F", "role": "segments « travail » du diagramme avant (attentes en #E7E7E7)"},
+      {"hex": "#9A9A9B", "role": "surtitres en capitales espacées, texte secondaire (#707274)"}
+    ],
+    "type": "Grotesque type Instrument Sans (probable), Bold, bas de casse, titres 5,5 à 8,5 % de la hauteur ; « One » en serif condensé (Instrument Serif probable) ; surtitres en capitales espacées (≈ 0,35 em), 1,6 % de la hauteur.",
+    "texture": "Papier quadrillé très pâle (grille ≈ 64 px, croix tous les 256 px) et vignette radiale douce ; ombres portées diffuses sous les cartes et pastilles ; halo lime radial à l'éclat ; traînées dessinées (étirement + dégradé) sur les jetons rapides ; comètes à traînée de points. Aucun grain, aucun flou de mouvement de rendu.",
+    "style": "Explainer SaaS éditorial, papier quadrillé lime",
+    "coherence": "Tient par un système strict : un fond, une encre, un seul accent lime réservé aux moments d'action (surlignage, éclat, activation des cartes, volet, barre après, soulignement), un surtitre identique en tête de chaque scène, un logo d'angle permanent, des pilules et pastilles de même rayon partout. Ce qui casse : « One » en serif dans la seule scène 3, le logo central coupé sec à 3,50 s, et la multitude de petits libellés (1,6 à 2 % de la hauteur) qui dilue la hiérarchie."
+  },
+  "rhythm": {
+    "bpm": 94.5,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 94,5 BPM (netteté 4,56 ; attaques régulières à la croche, donc 189 possible). Une seule coupe franche détectée (f900 : passage au noir de fin de rendu) ; les autres transitions sont internes : coupe sèche du logo f210, volet lime f430-f452, fondu-montée f607-f615, dissolution f753-f790. Le détecteur annonce 76 % de maintiens, mais c'est un artefact : de petits éléments clairs bougent sous son seuil. Vrais temps morts : ouverture vide f0-f35 (0,58 s), quasi-vide après la coupe du logo f210-f229 (0,32 s, seul le logo d'angle se fond), image figée finale f874-f899 (0,43 s), puis 0,27 s de noir. Densité : pendant les constructions, un micro-événement toutes les 3 à 18 im (mots 3,5-4 im, satellites 3 im, segments 4 im, lignes 8 im, nœuds 10 im, cartes 18 im) ; ensuite des plateaux de 1 à 1,5 s où seules les barres ou les comètes avancent (f520-f606, f697-f752). Durées de scènes : 3,50 / 3,67 / 2,95 / 2,43 / 2,45 s, découpage en secondes et non en mesures (une mesure = 2,54 s). Aucun impact ni coupe calé : 8 gestes clés sur 38 à ±2 im d'une barre (21 % contre ≈ 26 % au hasard).",
+    "timeline": [
+      {"t": "0:00-0:00.58", "what": "Papier quadrillé vide (f0-f35)", "technique": "temps mort d'ouverture"},
+      {"t": "0:00.58-0:01.40", "what": "Surtitre « THE BOTTLENECK MOVED », sablier qui se déplie avec dépassement, jetons noirs sur une ligne graduée, titre mot à mot sur deux lignes", "technique": "fondu-montée mot à mot + back.out"},
+      {"t": "0:01.43-0:01.73", "what": "Rectangle lime qui balaie « bottleneck » de gauche à droite (f86-f104)", "technique": "surligneur ease-out expo"},
+      {"t": "0:01.73-0:02.30", "what": "Les jetons s'entassent contre le col, ombre grise de pression, deux jetons gris passent", "technique": "métaphore littérale du goulot"},
+      {"t": "0:02.30-0:02.67", "what": "Éclat en une image : halo lime, 12 rayons, anneau qui s'étend, triangles éjectés, jetons en traînées, titre qui s'efface", "technique": "éclat de déblocage"},
+      {"t": "0:02.67-0:03.48", "what": "Le logo se construit depuis des points (pilules), mot-symbole « Alan » gris → noir, surtitre et petit soulignement lime", "technique": "construction du logo"},
+      {"t": "0:03.50-0:04.02", "what": "Le lockup disparaît en une image ; 19 im de vide ; logo d'angle en fondu f215-f241", "technique": "relais du logo par coupe sèche"},
+      {"t": "0:03.87-0:05.20", "what": "« ONE FLOW. FULL CONTROL. », « Plan, build, verify, ship — on one durable line. » mot à mot, quatre cartes en cascade de 18 im", "technique": "cartes de pipeline en cascade"},
+      {"t": "0:05.50-0:07.10", "what": "Jetons flous qui glissent sur les connecteurs ; PLAN, BUILD, VERIFY s'allument en lime ; trois puces d'avantages", "technique": "activation par jetons"},
+      {"t": "0:07.17-0:07.55", "what": "Aplat lime qui traverse le cadre de gauche à droite et découvre la scène 3", "technique": "volet couleur traversant"},
+      {"t": "0:07.37-0:08.70", "what": "« One engineering brain. One execution layer. » (serif + grotesque), filet central, cerveau en étoile (7 pastilles dans le sens horaire), 5 lignes d'exécution en cascade", "technique": "écran scindé + hub en étoile"},
+      {"t": "0:08.70-0:10.12", "what": "Les barres olive se remplissent, la ligne terminée pâlit ; plateau d'environ 1,4 s", "technique": "barres de progression"},
+      {"t": "0:10.12-0:10.27", "what": "La scène 3 monte et s'efface en 8 im ; le titre suivant apparaît dessous", "technique": "fondu-montée enchaîné"},
+      {"t": "0:10.22-0:10.62", "what": "« Verification is in the loop, not after it. » mot à mot, cercle tracé en 15 im", "technique": "tracé de contour"},
+      {"t": "0:10.62-0:11.60", "what": "Comètes en orbite, nœuds CI, QA, REVIEW toutes les 10 im, barre avant à 6 segments, barre après lime trois fois plus courte", "technique": "avant/après en barres de Gantt"},
+      {"t": "0:11.60-0:12.55", "what": "Maintien animé : seules les comètes tournent", "technique": "maintien entretenu"},
+      {"t": "0:12.55-0:13.17", "what": "La scène pâlit, se dissout en tirets lime et gris qui convergent au centre et forment la première pilule du logo, puis les deux autres", "technique": "dissolution et implosion en logo"},
+      {"t": "0:13.28-0:14.00", "what": "« Ship software with a factory of agents. » mot à mot, surtitre « CONTROL PLANE FOR SOFTWARE DELIVERY », soulignement lime tracé", "technique": "signature mot à mot + soulignement"},
+      {"t": "0:14.03-0:14.58", "what": "URL « tryalan.ai » et reflet lime qui glisse sur les pilules du logo", "technique": "reflet sur le logo"},
+      {"t": "0:14.58-0:15.30", "what": "Image figée 0,43 s puis 0,27 s de noir (fin du rendu à 15,00 s)", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Comptage sur 38 gestes clés (un par geste : départ ou coupe), datés image par image par analyse de régions : 8 tombent à ±2 im d'un temps ou demi-temps (surligneur f86 +0,7 im, premier point du logo f160 −1,5, titre scène 2 f237 −0,7, carte BUILD allumée f369 −2, volet f430 +1,8, lignes d'exécution f465 −1,3, sortie scène 4 f753 +1, soulignement final f829 +0,8), soit 21 % contre ≈ 26 % au hasard (fenêtre de 10 im sur une période de 38,1 im). Les gros événements ratent la grille : éclat du sablier f138 (−4,5 im du demi-temps f142,5), coupe du logo f210 (−8,7), sortie de la scène 3 f607 (+7,4), logo final f779 (+8), fin f900 (−4,4). Planches : sur microM-001 la barre bleu clair est sous f142, 4 im après l'éclat ; sur microM-002 le volet démarre f430 (barre bleue f428) mais la couverture totale f441 et la sortie ne tombent sur rien ; sur microM-003 la coupe au noir f900 est entre la barre f885 et la barre f904. Indice automatique : aucune synchro (R ≤ 0,5, p ≥ 0,3, z = 0,5), corrélation intensité/mouvement r = 0,05. Les cadences internes sont en secondes : cartes toutes les 18 im (0,30 s) contre un demi-temps de 19,05 im, d'où une dérive continue.",
+    "synced": [],
+    "style_match": "Piste « upbeat » régulière à ≈ 94,5 BPM, énergie moyenne ; l'image, en fondus doux et cadences en secondes, ne la suit jamais : ni impact, ni coupe sur les temps.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. La composition est découpée en secondes rondes (scène 1 = 3,50 s pile, fin = 15,00 s) et la piste a été posée après coup : elle démarre vers 0,78 s, après les premiers mouvements, et continue sur le noir final. Aucune bande-son générée en code, aucun effet sonore sur les pics (éclat, volet, implosion)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Métaphore littérale du mot clé : le goulot devient un sablier",
+      "name_en": "literal visual metaphor (bottleneck hourglass)",
+      "t": "0:00.58-0:02.30",
+      "frames": "f35-f137",
+      "fps": 60,
+      "mechanics": "Le titre parle de goulot (bottleneck) : un sablier noir #070F16 (deux triangles pointe contre pointe, 28 % de la hauteur, x ≈ 62-70 %, y ≈ 55-83 %) est posé sur une ligne de temps graduée (tirets tous les 40 px). Une file de jetons noirs (pilules ≈ 30 × 14 px, pas de 41 px, tremblement vertical ±3 px) s'entasse contre le col ; une ombre grise floue derrière l'amas figure la pression ; seuls deux jetons gris passent de l'autre côté. Libellé « REVIEW · TEST · RELEASE » au-dessus du sablier. Le problème se lit sans le texte, puis l'éclat (f138) transforme le même objet en solution.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Sablier qui se déplie avec un seul dépassement",
+      "name_en": "back-out vertical unfold",
+      "t": "0:00.58-0:01.02",
+      "frames": "f35-f61",
+      "fps": 60,
+      "mechanics": "Apparition à f35 à 12 % de la hauteur, dépliement vertical symétrique depuis le col, largeur fixe (≈ 170 px) : la hauteur grimpe jusqu'à 30 % à f48 (13 im, pas décroissants de 7 à 1 px/im en demi-résolution = ease-out), puis redescend à 28 % à f61 (13 im) : dépassement ≈ 8 %, une seule oscillation, courbe type back.out. Pas de flou. Départ 6,8 im après le demi-temps : hors grille.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (mesure numérique des contours f35-f62)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation mot à mot en fondu-montée",
+      "name_en": "staggered word fade-up",
+      "t": "0:00.62-0:01.40",
+      "frames": "f37-f84",
+      "fps": 60,
+      "mechanics": "Chaque mot passe de l'invisible au noir en ≈ 24 im (0,40 s ; luminance quasi linéaire, 244 → 4 par pas de ≈ 26 toutes les 3 im) en montant de ≈ 10-15 px, sans flou. Décalage ≈ 4 im (0,07 s), les deux lignes s'entrelacent (Coding f37, agents f45, bottleneck f49, moved f53, downstream. f57, the f60). Même recette sur tous les titres, plus vive ensuite : scène 2 un mot toutes les 3,5 im (f237-f261), slogan final toutes les 3,5 im avec 15 im de fondu (f797-f834). La ligne est composée à sa place finale : aucun reflow.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Surligneur lime balayé sur le mot clé",
+      "name_en": "highlighter sweep",
+      "t": "0:01.43-0:01.73",
+      "frames": "f86-f104",
+      "fps": 60,
+      "mechanics": "Rectangle lime #CAE96F (coins ≈ 6 px, déborde d'environ 0,5 % autour de « bottleneck ») qui se dessine derrière le mot de gauche à droite. Bord droit : 17 % du mot (f86), 33, 47, 58, 67, 73, 78, 82, 86 % (f94), 91 (f96), 95 (f99), 98 % (f104). Ease-out expo : la moitié du trajet en 3 im, 18 im au total. Départ f86 sur le temps f85,3 (+0,7 im), seul calage net du début, probablement fortuit. Le surlignage tient jusqu'à l'éclat et disparaît en 1 im (f138-f139).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f141.jpg",
+      "illus": {"from": 84, "to": 104, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Éclat de déblocage : flash, rayons, anneau, triangles éjectés",
+      "name_en": "unlock burst",
+      "t": "0:02.30-0:02.67",
+      "frames": "f138-f160",
+      "fps": 60,
+      "mechanics": "Changement massif en une seule image (f138 : 62 % des pixels changent) : halo radial lime (rayon ≈ 35 % de la hauteur, centré sur le col), 12 rayons fins autour du sablier. Le halo s'éteint en ≈ 6 im (f138-f144). Un anneau lime de ≈ 2 px naît au col et s'étend de ≈ 8 à 22 % de la hauteur en ≈ 12 im (ease-out), puis s'efface vers f160. Le triangle du haut monte à droite en tournant d'environ −90° (il pointe à gauche dès f147) et reste vers x ≈ 65 %, y ≈ 30 % jusqu'à f175 ; celui du bas sort par le bas. Le titre vire au gris olive puis disparaît en ≈ 12 im. Tombe 4,5 im avant le demi-temps : aucun impact musical alors que c'est le climax.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f141.jpg",
+      "illus": {"from": 136, "to": 160, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Traînées dessinées sur les jetons libérés",
+      "name_en": "faked directional motion streaks",
+      "t": "0:02.32-0:03.08",
+      "frames": "f139-f185",
+      "fps": 60,
+      "mechanics": "Au déblocage, chaque jeton devient une traînée horizontale de 3 à 5 fois sa longueur, pointe teintée lime, qui file vers la droite et s'estompe (dernières traînées vers f185). Flou dessiné (étirement + dégradé), pas un flou de mouvement de rendu : le reste de la vidéo n'en a aucun. Même procédé sur les jetons gris de la scène 2 (traînée ≈ 60 px).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f141.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo qui se construit depuis des points",
+      "name_en": "logo build from dots",
+      "t": "0:02.67-0:03.48",
+      "frames": "f160-f209",
+      "fps": 60,
+      "mechanics": "Pendant que les traînées passent, un point apparaît à x ≈ 35 %, y ≈ 50 % (f160), s'allonge en pilule, puis les deux autres pilules naissent à 2-3 im d'écart (f163-f167), gris puis noir. Le mot-symbole « Alan » (≈ 7 % de la hauteur) entre en gris clair f169-f171 et fonce jusqu'au noir à f183 (≈ 13 im). Puis surtitre « CONTROL PLANE FOR SOFTWARE DELIVERY » et court soulignement lime (f185-f205). Premier point à −1,5 im d'un temps. Le lockup complet ne reste que 0,63 s.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Relais du logo par coupe sèche puis fondu d'angle",
+      "name_en": "hard pop-off + corner logo fade-in",
+      "t": "0:03.50-0:04.02",
+      "frames": "f210-f241",
+      "fps": 60,
+      "mechanics": "Le lockup central disparaît en une image (f209 → f210 : 3,4 % des pixels changent, aucune sortie animée) : fin de clip à 3,50 s pile. Le cadre reste vide 19 im ; seul le logo d'angle (haut gauche, x 4,6-13 %, y 6-11 %) apparaît en fondu linéaire f215-f241 (26 im). Il aurait fallu faire voyager le logo du centre vers le coin (réduction + déplacement en ease-in-out, ≈ 20 im) pour un vrai raccord.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Logo d'angle permanent",
+      "name_en": "corner brand bug",
+      "t": "0:03.58-0:12.87",
+      "frames": "f215-f772",
+      "fps": 60,
+      "mechanics": "Symbole + « Alan » en haut à gauche (≈ 5 % de la hauteur), présent des scènes 2 à 4 ; fondu d'entrée 26 im, sortie ≈ 20 im (f753-f772) avec la scène 4. Signe de marque discret qui tient le fil sans gêner les schémas.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes de pipeline en cascade",
+      "name_en": "staggered pipeline cards",
+      "t": "0:04.15-0:05.20",
+      "frames": "f249-f312",
+      "fps": 60,
+      "mechanics": "Quatre cartes blanches arrondies (≈ 16 % × 15,5 % du cadre, rayon ≈ 18 px, ombre diffuse) : numéro « 01 » olive #6D7F27 en capitales espacées, icône au trait en haut à droite, titre en capitales très grasses (≈ 3,5 % de la hauteur), sous-titre gris (« PRD · tasks »). Décalage régulier de 18 im (0,30 s) : PLAN f249, BUILD f267, VERIFY f285, SHIP f303 ; chaque carte s'installe en ≈ 9 im (fondu + légère montée probable). Connecteurs fins à chevrons entre les cartes. Le pas de 18 im dérive par rapport au demi-temps (19,05 im).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Jetons qui allument les étapes du flux",
+      "name_en": "token-driven step activation",
+      "t": "0:05.50-0:07.10",
+      "frames": "f330-f426",
+      "fps": 60,
+      "mechanics": "Des jetons gris à traînée (≈ 60 px) entrent par la gauche (x ≈ 6 %) et glissent sur les connecteurs ; une carte s'active quand un jeton l'atteint : fond #F1F6E5, bord lime, barre de progression lime de 4 px qui pousse sous le titre. PLAN f336, BUILD f369, VERIFY f399 (intervalles 33 et 30 im). Puces « End-to-end visibility », « Automated handoffs », « Real-time feedback » à f365, f375, f384 (≈ 10 im). SHIP ne s'allume jamais : le volet arrive avant la récompense.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet lime traversant",
+      "name_en": "color slab push-through wipe",
+      "t": "0:07.17-0:07.55",
+      "frames": "f430-f452",
+      "fps": 60,
+      "mechanics": "Un aplat lime #C3E662 pleine hauteur entre par la gauche. Bord avant : 1 % (f430), 3, 5, 9,5, 14, 21, 29, 39, 51, 65, 81 %, plein cadre à f441 : pas croissants de 1 à 19 % par image = ease-in (≈ 12 im). Une seule image couvrante, puis le bord arrière file vers la droite : 19 % (f442), 35, 49, 61, 70, 78, 85, 90, 94, 96,5, 98,5 % (f452) = ease-out (≈ 11 im). Le nouveau titre se révèle déjà derrière l'aplat (f443). Total 23 im = 0,38 s, sans flou. Départ f430 à +1,8 im du temps f428, mais la couverture totale et la sortie ne tombent sur rien.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f442.jpg",
+      "illus": {"from": 428, "to": 453, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Contraste serif condensé / grotesque gras",
+      "name_en": "serif/sans emphasis pairing",
+      "t": "0:07.37-0:10.12",
+      "frames": "f442-f606",
+      "fps": 60,
+      "mechanics": "« One engineering brain. One execution layer. » (≈ 6,5 % de la hauteur, centré, y ≈ 23 %) : « One » en serif condensé maigre (Instrument Serif probable), les noms en grotesque gras noir. Le contraste porte le parallélisme de la phrase. Mais c'est le seul titre traité ainsi : rupture du système (choix voulu probable plutôt que police de repli).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran scindé cerveau / exécution",
+      "name_en": "split-screen two-column diagram",
+      "t": "0:07.62-0:10.12",
+      "frames": "f457-f606",
+      "fps": 60,
+      "mechanics": "Deux colonnes symétriques sous le titre, séparées par un filet vertical de 2 px (x = 50 %, y 32-86 %) dont le haut est lime. Surtitres miroirs « THE ENGINEERING BRAIN » (f457) et « THE EXECUTION LAYER » (f461, +4 im), légendes grises sous chaque colonne (f501-f509). Composition lisible : schéma à gauche, liste à droite, mêmes marges.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Hub en étoile avec paquets sur les rayons",
+      "name_en": "hub-and-spoke diagram",
+      "t": "0:07.65-0:10.12",
+      "frames": "f459-f606",
+      "fps": 60,
+      "mechanics": "Tuile vert sapin #2F4735 (≈ 13 % de la hauteur, coins ≈ 22 px, symbole blanc) entourée d'un halo pâle, apparition f469-f479 (10 im). Sept pastilles en capitales espacées (PRD, TASKS, DECISIONS, SESSIONS, TESTS, DEPLOYS, REPOS) arrivent dans le sens horaire depuis le haut, une toutes les 3 im (f459 → f478), ≈ 6 im chacune. Rayons gris fins sur lesquels circulent des points olive vers le centre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Lignes d'exécution à barres de progression",
+      "name_en": "task rows with progress bars",
+      "t": "0:07.75-0:10.12",
+      "frames": "f465-f606",
+      "fps": 60,
+      "mechanics": "Cinq lignes-cartes (≈ 36 % × 6,5 % du cadre) en cascade toutes les ≈ 8 im (f465, f472, f479, f488, f496) : pastille olive avec halo, libellé « agent · write tests » (≈ 2 % de la hauteur), barre olive #99B233 de 180 × 8 px qui se remplit en ≈ 30 im (f521 → f551-f555). La ligne terminée (« refactor auth ») pâlit à ≈ 45 % d'opacité. Ensuite, mises à jour par paliers toutes les ≈ 3,5 im (arrondi des valeurs probable). Texte trop petit pour un téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie en fondu-montée avec chevauchement",
+      "name_en": "fade-up exit with overlap",
+      "t": "0:10.12-0:10.27",
+      "frames": "f607-f616",
+      "fps": 60,
+      "mechanics": "Toute la scène 3 monte d'environ 6 % de la hauteur et s'efface en 8 im (part de pixels qui changent : 16,5 % à f607 puis 13, 10, 8,6, 7, 5,7, 4,4, 3,3 % : ease-out). Le premier mot du titre suivant apparaît dès f613, sous l'ancienne scène encore visible : fondu enchaîné court. Efficace mais anonyme ; départ 7,4 im après le demi-temps.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cercle tracé et comètes en orbite",
+      "name_en": "stroke-drawn ring with orbiting comets",
+      "t": "0:10.20-0:12.55",
+      "frames": "f612-f752",
+      "fps": 60,
+      "mechanics": "Cercle gris clair de 2 px (rayon ≈ 16 % de la hauteur, centre x ≈ 29 %, y ≈ 60 %) tracé en ≈ 15 im (f612-f627). Des comètes (un point lime ou gris suivi de 3-4 points dégressifs) tournent en sens horaire à ≈ 2,5°/im (150°/s, un tour en ≈ 2,4 s) : elles gardent la scène vivante pendant le maintien f697-f752. Au centre « VERIFICATION / LOOP » en capitales espacées, LOOP en olive #708230.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Nœuds de contrôle en cascade sur l'anneau",
+      "name_en": "staggered check nodes",
+      "t": "0:10.82-0:11.20",
+      "frames": "f649-f675",
+      "fps": 60,
+      "mechanics": "Trois pastilles blanches à coche olive posées sur l'anneau à 120° d'écart (« CI » en haut, « QA » en bas à droite, « REVIEW » en bas à gauche) : CI ≈ f649, QA ≈ f659, REVIEW ≈ f669, décalage 10 im (0,17 s), apparition en ≈ 6 im (petit pop d'échelle probable). Bordure lime pâle, ombre douce.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Avant/après en barres de Gantt",
+      "name_en": "before/after timeline bars",
+      "t": "0:10.72-0:12.10",
+      "frames": "f643-f726",
+      "fps": 60,
+      "mechanics": "« The same work, before and after Alan. » (≈ 2,4 % de la hauteur). AVANT : six segments sur 39 % de la largeur, travail gris foncé #7B7D7F (build, review, test, ship) alternant avec des attentes gris pâle #E7E7E7 (wait), apparus de gauche à droite f643-f667 (≈ 4 im par segment). APRÈS : une seule barre lime « build · verify · ship » qui pousse depuis la gauche (f681 → 90 % à f726, ease-out), longue d'un tiers de l'avant, prolongée par un filet et la légende « handoffs, queues, waiting — gone ». Le gain se lit en un coup d'œil.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Dissolution en tirets et implosion en logo",
+      "name_en": "disintegrate-and-implode logo reveal",
+      "t": "0:12.55-0:13.17",
+      "frames": "f753-f790",
+      "fps": 60,
+      "mechanics": "La scène 4 pâlit en ≈ 10 im (f753-f762), puis se dissout en ≈ 60-80 tirets lime et gris (≈ 1 % de la largeur) dispersés sur ≈ 50 % × 30 % du cadre (f762-f768). Ils tournent et convergent vers le centre en ≈ 12 im (f766-f778) ; l'amas devient la première pilule du logo (f780), la 2e et la 3e poussent à f782-f790 (2-4 im d'écart). Départ f753 à +1 im d'un demi-temps (fortuit probable). Idée forte qui relie le contenu à la marque, mais tirets trop fins et pâles : l'implosion se lit mal.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 752, "to": 792, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Signature : slogan mot à mot et soulignement tracé",
+      "name_en": "tagline reveal + underline draw-on",
+      "t": "0:13.28-0:14.00",
+      "frames": "f797-f840",
+      "fps": 60,
+      "mechanics": "« Ship software with a factory of agents. » (≈ 6,7 % de la hauteur, centré, y ≈ 57 %) : un mot toutes les 3-4 im (f797, 801, 804, 808, 812, 815, 818), chacun gris pâle → encre en ≈ 15 im. Surtitre « CONTROL PLANE FOR SOFTWARE DELIVERY » (1,6 %, capitales espacées, #A1A1A2) à f812-f821. Soulignement lime de 4 px sur 70 % de la largeur, tracé de gauche à droite f829-f840 (11 im). Logo à 16 % de la hauteur au-dessus.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Reflet lime sur le logo final",
+      "name_en": "sheen sweep on logo",
+      "t": "0:14.03-0:14.58",
+      "frames": "f842-f875",
+      "fps": 60,
+      "mechanics": "Avec l'URL « tryalan.ai » (bas de casse grasse espacée, ≈ 2,6 % de la hauteur, fondu f843-f858), un dégradé lime → noir glisse sur les pilules du logo de gauche à droite (sur la 1re pilule à f844, sur la 3e à f870). Dernier signe de vie avant 0,43 s d'image figée.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Papier quadrillé à vignette",
+      "name_en": "engineering-grid paper background",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fond quasi blanc #FEFEFE au centre, vignette radiale vers #F1F1F1 aux coins ; grille fine très pâle (pas ≈ 64 px) et petites croix de repère tous les 256 px. Fond statique pendant toute la vidéo. Donne le ton « ingénierie » sans bruit visuel et sert de support aux schémas.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Surtitres en capitales espacées avec puce lime",
+      "name_en": "eyebrow labels",
+      "t": "0:00.60-0:14.00",
+      "frames": "f36-f821",
+      "fps": 60,
+      "mechanics": "Chaque scène s'ouvre sur un surtitre gris #9A9A9B en capitales très espacées (≈ 0,35 em), 1,6 % de la hauteur, précédé d'un point olive : « THE BOTTLENECK MOVED », « ONE FLOW. FULL CONTROL. », « THE ENGINEERING BRAIN », « CONTROL PLANE FOR SOFTWARE DELIVERY ». Repère éditorial constant, mais trop petit pour un écran de téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Hiérarchie de décalages selon la taille des éléments",
+      "name_en": "stagger hierarchy",
+      "t": "0:00.62-0:14.00",
+      "frames": "f37-f840",
+      "fps": 60,
+      "mechanics": "Échelle de décalages cohérente : mots 3,5-4 im, satellites 3 im, segments 4 im, lignes 8 im, nœuds 10 im, cartes 18 im. Les petits éléments arrivent vite, les gros posément : la lecture reste fluide. Mais tout est compté en secondes, rien en temps musicaux, et les plateaux de 1 à 1,5 s entre deux constructions cassent l'élan.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc en quatre affirmations puis signature",
+      "name_en": "four-claim product narrative",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Chaque scène = surtitre + phrase-titre + schéma : 1) le goulot s'est déplacé (problème, 3,50 s), 2) un seul flux Plan-Build-Verify-Ship (3,67 s), 3) un cerveau et une couche d'exécution (2,95 s), 4) la vérification dans la boucle, preuve avant/après (2,43 s), puis signature logo + slogan + URL (2,45 s). Clair et vendeur, mais structure de page d'accueil : quatre idées en 15 s, chacune lue en ≈ 3 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Seule entrée : le handle @tryAlanAI. Le positionnement exact (« control plane for software delivery », « factory of agents », tryalan.ai) et le logo à trois pilules indiquent une recherche sur le site (probable) : un handle suffit si le modèle peut naviguer, et le fond du film est juste."},
+    {"kind": "direction", "insight": "« Show what an incredible motion designer you are… go all out » a produit une démonstration de métaphores (sablier, volet, comètes, implosion) et de schémas propres plutôt qu'un film rythmé : beaucoup de savoir-faire d'explainer, peu d'énergie cinétique."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a choisi quatre scènes d'environ 3 s, chacune surtitre + titre + schéma, puis une signature. C'est le format d'une page d'accueil animée ; trop d'information pour 15 s."},
+    {"kind": "build", "insight": "Pile non indiquée. Rendu 60 fps sans flou de rendu (traînées dessinées), cadences en secondes (scène 1 = 3,50 s pile, cartes toutes les 0,30 s, fin à 15,00 s puis 0,27 s de noir) : timeline HTML/GSAP probable avec des scènes en clips à durée fixe, d'où la coupe sèche du logo à la frontière de clip."},
+    {"kind": "qa", "insight": "La musique n'est pas mentionnée : piste posée après coup, aucun calage. Pour un film calé il faut fournir la piste ou le BPM et exiger départs, impacts et transitions sur les temps, plus une taille de texte minimale (≥ 3 % de la hauteur)."},
+    {"kind": "other", "insight": "La durée de 15 s est tenue (15,00 s + 0,27 s de noir), alors que beaucoup de vidéos du corpus débordent : une durée courte et un seul message de marque gardent le modèle dans le cadre."}
+  ],
+  "steal": [
+    "Rendre le mot clé littéral : un sablier noir pour « bottleneck », des jetons qui s'y entassent, puis un éclat lime qui l'ouvre ; problème et solution dans un seul objet.",
+    "Surligneur sur le mot clé : rectangle lime qui balaie le mot en 18 im, ease-out expo (la moitié du trajet en 3 im), lancé sur un temps.",
+    "Volet couleur traversant : aplat lime qui entre en ease-in (12 im), couvre une image, puis continue vers la droite en ease-out (11 im) en découvrant la scène suivante.",
+    "Avant/après en barres de Gantt : six segments gris avec attentes pâles, puis une seule barre lime trois fois plus courte, et la légende « handoffs, queues, waiting — gone ».",
+    "Signature par implosion : la scène pâlit, se dissout en tirets lime et gris qui convergent en spirale au centre et deviennent la première barre du logo."
+  ],
+  "flaws": [
+    "Musique posée : 8 gestes clés sur 38 à ±2 im d'un temps (21 %, hasard 26 %) ; cadences comptées en secondes.",
+    "Logo central coupé net en une image à 3,50 s, puis 0,3 s presque vide pendant le fondu du logo d'angle.",
+    "Texte minuscule et dense : surtitres à 1,6 % de la hauteur, libellés de lignes à 2 % ; quatre schémas en 15 s.",
+    "Le flux de jetons n'atteint jamais SHIP : le volet lime coupe la séquence avant sa récompense.",
+    "Ouverture vide de 0,6 s et mouvement uniforme (fondus-montées partout, aucune caméra) : peu d'énergie pour un « go all out »."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, mais ciblée : 1,4-3,6 s (surligneur, éclat, construction du logo), 7,1-7,6 s (volet lime à courbes asymétriques) et 12,5-13,3 s (implosion en logo) sont des mécaniques fines, mesurables à 60 fps natifs et directement reproductibles en GSAP. Aucun intérêt pour la synchro musicale (musique posée)."
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "slug": "quickdesignio-dd93d0",
+  "title": "QuickDesign brand promo",
+  "handle": "@quickdesignio",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Récit produit limpide et montage d'outils digne de 1600 (un mot par demi-temps, chacun animé selon sa fonction), transitions motivées ; mais 26 % de maintiens et accents serif italiques répétés.",
+  "summary": "Promo de quickdesign, générateur d'annonces par IA : une question tapée, douze annonces générées en cascade, un avant/après de photo produit, une vidéo UGC à avatar, puis un montage de huit outils au demi-temps, des résultats chiffrés et un logo pixel formé par implosion. Fort quand il coupe sur la musique (120 BPM) ; plus mou dans les maintiens qui laissent l'écran figé.",
+  "prompt_vs_result": [
+    "Une ligne : vidéo de 15 s « dynamique » qui montre à quel point quickdesign est incroyable, et à quel point Claude est un motion designer incroyable. Ni description du produit, ni format, ni musique, ni durée par partie.",
+    "Claude a choisi : format 16:9, marque cliente fictive (sérum Flufie), arc question → génération → démonstrations → chiffres → logo, palette noir / vert acide / crème, HUD « 120 BPM », montage d'outils au demi-temps, logo en pixels.",
+    "Les deux demandes concurrentes (le produit, le talent) donnent une promo sage coupée de rafales démonstratives. Il aurait fallu donner la liste des fonctions, le ton, le BPM et interdire les maintiens de plus de 0,5 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0A0A", "role": "fond noir à trame de points"},
+      {"hex": "#CBFA4E", "role": "vert acide : accent, curseur, compteurs, logo"},
+      {"hex": "#EEEAE2", "role": "fond crème (photo produit, UGC, REPLICATE)"},
+      {"hex": "#F06A5A", "role": "corail (REMOVE BG, LIPSYNC, flacon Flufie)"},
+      {"hex": "#8878C0", "role": "violet (TRANSLATE)"},
+      {"hex": "#EDEDE2", "role": "texte blanc cassé"},
+      {"hex": "#7A7A7A", "role": "gris du mot intermédiaire « Measure. »"},
+      {"hex": "#2B3A1B", "role": "voile olive des flashs (f120, f750)"}
+    ],
+    "type": "Grotesque géométrique grasse en capitales pour les mots-outils (≈ 16 % de la hauteur) ; grotesque grasse bas-de-casse pour les titres (≈ 7 %) ; serif italique contrastée verte pour les accents ; mono pour HUD, compteurs et nom de marque.",
+    "texture": "Fond noir à fine trame de points et vignettage ; vignettage sombre aussi sur les aplats vert, corail et violet ; halo vert diffus derrière le logo et les textes verts (SPY BRANDS) ; flou de mouvement directionnel sur le whip, le zoom et l'arrivée de chaque mot ; ombres douces sous les cartes ; pas de grain marqué.",
+    "style": "Promo SaaS sombre, vert acide",
+    "coherence": "Le vert acide #CBFA4E sert de fil conducteur : curseur, mot accent, compteur, balayage de génération, fond studio, pull de l'avatar, surlignage karaoké, radar, courbe, grille de pixels, logo. Les aplats corail et violet du montage reprennent la gamme des annonces Flufie. Le trio grotesque + serif italique + mono tient partout ; seul l'avatar en illustration plate sort du registre. Le HUD (équerres, timecode, chapitres, « 120 BPM ») est le même gabarit que d'autres vidéos Claude du corpus."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "119,9 BPM, pulsation nette (indice 6,8) ; le HUD affiche lui-même « 120 BPM ». Les événements tombent sur des multiples de 0,25 s, 1 im avant la barre du temps ou du demi-temps : 14 coupes, 10 à moins de 50 ms d'un temps ou demi-temps (l'écart médian au seul temps, 108 ms, vient de ce que la moitié des coupes sont au demi-temps). Trois régimes : intro lente (saisie du prompt, 0-2 s, musique plus douce), sections démonstratives à un geste par temps ou tous les deux temps (2-7,9 s et 10-12 s), rafale au demi-temps dans le montage d'outils (8 mots en 2 s, 7,9-10 s) suivie de l'implosion du logo (12-12,5 s). 5 maintiens ≥ 0,4 s totalisant 3,9 s (26 %) : 1,3-1,7 s (question posée), 3,47-4,3 s (grille d'annonces, seul un léger glissement ; en réalité ≈ 1,6 s quasi figées de f186 à f282), 7,18-7,7 s (avatar qui parle), 10,67-11,45 s (tableau de bord), 13,7-15 s (carton final, curseur clignotant).",
+    "timeline": [
+      {"t": "0:00-0:01.00", "what": "Noir à trame de points, curseur vert, « What are we making? » tapé (≈ 2,8 im par caractère), « making » en serif italique vert", "technique": "machine à écrire + mot accent"},
+      {"t": "0:01.00-0:01.90", "what": "La question rétrécit et monte, barre de saisie, « myflufie.com » tapé, pastilles de formats, lueur verte de validation vers f104-f108", "technique": "interface de prompt"},
+      {"t": "0:02.00-0:02.45", "what": "Voile olive sur le drop (f120), 12 cartes sombres arrivent du fond en perspective, compteur 00/12", "technique": "flash + entrée en profondeur"},
+      {"t": "0:02.45-0:03.10", "what": "Balayages verts qui révèlent les 12 annonces en ≈ 30 im, compteur jusqu'à 12, « One brief. Twelve ads. »", "technique": "génération en cascade"},
+      {"t": "0:03.10-0:04.73", "what": "Grille d'annonces quasi figée, léger glissement", "technique": "maintien"},
+      {"t": "0:04.73-0:04.87", "what": "Panoramique fouetté vers la gauche, la scène crème pousse depuis la droite", "technique": "whip pan"},
+      {"t": "0:05.00-0:06.00", "what": "« Phone pic » monte d'un masque (f302), photo grise « BEFORE », curseur avant/après qui révèle le studio vert (f324-f356)", "technique": "avant / après au curseur"},
+      {"t": "0:05.93-0:06.47", "what": "« Phone pic » barré, « → studio shot. » tapé en serif italique", "technique": "barré + correction"},
+      {"t": "0:06.47-0:07.80", "what": "La carte devient référence, le téléphone monte en tournant, « UGC video. », avatar qui parle, sous-titres karaoké, pastille « auto-translate · 30+ languages »", "technique": "démonstration UGC"},
+      {"t": "0:07.80-0:08.03", "what": "Zoom dans le pull vert de l'avatar → aplat vert, « EDIT IMAGE » atterrit sur le temps (f481)", "technique": "raccord couleur par zoom"},
+      {"t": "0:08.03-0:10.00", "what": "EDIT IMAGE / UPSCALE 4K / REMOVE BG / LIPSYNC / SUBTITLES / TRANSLATE → TRADUCIR / SPY BRANDS / REPLICATE, 15 im chacun, volet en escalier vers le noir", "technique": "montage d'outils au demi-temps"},
+      {"t": "0:10.00-0:11.47", "what": "« Launch. Measure. Scale. », tableau de bord ROAS 0,8× → 4,8×, courbe qui se trace, infobulles", "technique": "compteur + courbe synchronisés"},
+      {"t": "0:11.47-0:12.00", "what": "Dissolution en carrés verts en diagonale jusqu'à une grille pleine", "technique": "volet en demi-teinte (halftone)"},
+      {"t": "0:12.00-0:12.50", "what": "Les carrés tournent et explosent, puis implosent en logo pixel", "technique": "explosion → implosion en logo"},
+      {"t": "0:12.50-0:12.95", "what": "Flash olive, anneau épais, étincelles autour du logo", "technique": "onde de choc sur le temps"},
+      {"t": "0:12.95-0:15.00", "what": "Le logo glisse à gauche, « quickdesign » tapé, « Design smarter. Create faster. », URL, curseur clignotant", "technique": "signature tapée"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille à 119,9 BPM : temps à f31 + 30 n, demi-temps à f16 + 30 n. Comptage, un événement par geste : 24 sur 32 à ±2 im d'une barre (75 % contre ≈ 33 % de hasard). Montage d'outils verrouillé : 9 coupes sur 9 (f481 EDIT IMAGE, f495 UPSCALE, f510 REMOVE BG, f525 LIPSYNC, f540 SUBTITLES, f555 TRANSLATE, f570 SPY BRANDS, f585 REPLICATE, noir f600) à −1 im de la barre, au demi-temps (planches microM-002, 003, 004). Autres gestes sur la grille : voile olive f120 (−1, montée de +11,8 dB à 2,0 s), « Twelve ads. » f180 (−1), whip f284-f286 (demi-temps), « PRODUCT SHOT » et « Phone pic » f301-f302, « → studio shot » f362, atterrissage du téléphone ≈ f406, zoom f468 (+2), « Measure. » f615, « Scale. » f630, ROAS final f660, départ visible de la dissolution f690-f691, flash du logo f750 (−2), glissement du logo et début de saisie f780, signature f810, fin de la question f60. Hors grille : départ du curseur avant/après f322, barré ≈ f354, pastille f424, « Launch. » ≈ f608, logo formé f746, fin de saisie f805, URL f830, volet en escalier f591. L'indice automatique conclut « aucune synchro » (départs/temps R = 0,13) parce que la moitié des gestes tombent sur des demi-temps et que 26 % de la durée est figée ; départs/demi-temps R = 0,46, p = 5,5e-3.",
+    "synced": ["coupes", "departs", "apparitions", "impacts", "flashs", "texte", "drop"],
+    "style_match": "Pop électronique entraînante (probable) à 120 BPM : colle aux coupes nettes et au montage au demi-temps ; l'intro calme sert la saisie, le drop la génération.",
+    "how_built": "Le prompt ne dit rien de la musique, mais le HUD affiche « 120 BPM » : le modèle a écrit sa timeline en multiples de 0,25 s pour un tempo choisi d'avance, chaque coupe 1 im avant le temps ; la bande-son (générée ou choisie à 120 BPM, probable) a son drop exactement à 2,0 s, sur la validation du prompt. Les maintiens, eux, laissent passer plusieurs temps sans geste."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc SaaS en 7 chapitres : question → génération → preuves → chiffres → logo",
+      "name_en": "SaaS promo arc",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Prompt (0-2,0 s) ; génération de 12 annonces (2,0-4,77 s) ; photo produit avant/après (4,77-6,5 s) ; vidéo UGC (6,5-7,9 s) ; montage de 8 outils (7,9-10,0 s) ; lancement et ROAS (10,0-11,75 s) ; logo et URL (12,0-15,0 s). Chapitres numérotés en haut à droite du cadre (lecture probable « 0X/07 »). Chaque chapitre répond à la question d'ouverture « What are we making? ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre d'interface persistant (HUD)",
+      "name_en": "persistent HUD frame",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Équerres aux 4 coins, labels mono ≈ 1 % de la hauteur : chapitre en haut à droite, « TC 00:00:04:30 » en bas à gauche, barre de progression au centre bas, « 1920×1080 · 60 FPS · 120 BPM » en bas à droite. Fixe sur tous les fonds (noir, crème, vert, corail, violet). Même gabarit que d'autres vidéos Claude du corpus.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Saisie de prompt à la machine à écrire puis barre de recherche",
+      "name_en": "typed prompt intro",
+      "t": "0:00.10-0:01.90",
+      "frames": "f6-f114",
+      "fps": 60,
+      "mechanics": "Curseur vert (≈ 8 % de la hauteur) à x ≈ 18 % ; « What are we making? » tapé de f6 à f60 (19 caractères, ≈ 2,8 im par caractère), texte calé à gauche qui pousse vers la droite (18 % → 82 % de la largeur, corps ≈ 9 % de la hauteur). f60-f78 : la question rétrécit à ≈ 5 % et monte à y ≈ 37 % (ease-in-out) pour laisser place à une barre de saisie sombre (≈ 42 % de la largeur) où « myflufie.com » est tapé (f78-f96, ≈ 1,5 im par caractère) ; pastilles « Static Ad · UGC Video · Product Shot · Smart Ad » en fondu ; contour vert de validation vers f104-f108.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot accent en serif italique dans une phrase grotesque",
+      "name_en": "italic serif accent word",
+      "t": "0:00.80-0:14.0",
+      "frames": "f48-f840",
+      "fps": 60,
+      "mechanics": "Serif italique contrastée (type Instrument Serif, probable), souvent en vert #CBFA4E, insérée dans une grotesque grasse : « What are we making? », « One brief. Twelve ads. », « → studio shot. », « UGC video. », « Scale. », « Design smarter. Create faster. ». 6 occurrences, une par chapitre.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Voile vert sur le drop, à la validation du prompt",
+      "name_en": "tinted flash on the drop",
+      "t": "0:02.00-0:02.08",
+      "frames": "f120-f125",
+      "fps": 60,
+      "mechanics": "f120 : tout le cadre passe en olive #2B3A1B (vert acide à ≈ 15-20 % sur noir), 1 im avant le temps f121, au moment exact de la montée de +11,8 dB ; retour au noir en ≈ 5 im pendant que les cartes arrivent. Même voile au logo (f750). Le geste est bien placé mais le ton terne éteint l'image au lieu de la frapper.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-006-cut-f750.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Grille de 12 cartes en perspective qui arrive du fond",
+      "name_en": "perspective card wall fly-in",
+      "t": "0:02.10-0:02.40",
+      "frames": "f126-f144",
+      "fps": 60,
+      "mechanics": "12 cartes sombres (≈ 13 % × 27 % du cadre chacune), 2 rangées de 6, grille inclinée (≈ −10° dans le plan, légère bascule en perspective) ; elles arrivent du fond en se dispersant depuis le centre (f126 quelques cartes, f144 grille complète), ease-out.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Génération carte par carte avec balayage vert et compteur",
+      "name_en": "scan-line reveal with counter",
+      "t": "0:02.47-0:03.00",
+      "frames": "f148-f180",
+      "fps": 60,
+      "mechanics": "Chaque carte sombre est balayée de haut en bas par une bande verte lumineuse (≈ 6-8 im) qui découvre l'annonce ; 12 cartes en ≈ 30 im, ordre dispersé, ≈ 2,5 im d'écart ; compteur mono vert « ADS GENERATED » 00 (f156) → 03 (f162) → 07 (f168) → 10 (f174) → 12 (f180), en phase avec les révélations ; fin sur le temps f181.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Douze annonces fictives cohérentes pour une marque cliente",
+      "name_en": "fake ad set as proof",
+      "t": "0:02.50-0:04.77",
+      "frames": "f150-f286",
+      "fps": 60,
+      "mechanics": "Marque de sérum inventée (Flufie, flacon corail) déclinée en 12 mises en page : « Glow, bottled. », « 30% OFF », « My skin drinks it. », « Meet flufie. », « Hydration hits different. », « New drop. », « 72H », « Clean. Vegan. Yours. », « POV: you found the one », « Buy 2, get 1. », « 12K », « Soft skin season. » ; fonds vert, corail, crème, violet, bleu ciel, jaune, rose, noir. Contenu crédible fabriqué en code (probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan en deux temps : serif italique puis grotesque verte qui monte",
+      "name_en": "two-beat tagline reveal",
+      "t": "0:02.50-0:03.10",
+      "frames": "f150-f186",
+      "fps": 60,
+      "mechanics": "« One brief. » (serif italique blanche, ≈ 8 % de la hauteur, bas gauche) monte d'un masque f150-f156 ; « Twelve ads. » (grotesque grasse vert acide) monte d'un masque f180-f186, sur le temps f181, au moment où le compteur atteint 12.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens longs entre les rafales",
+      "name_en": "long static holds",
+      "t": "0:03.10-0:04.73 ; 0:07.18-0:07.70 ; 0:10.67-0:11.45 ; 0:13.70-0:15.0",
+      "frames": "f186-f284 ; f431-f462 ; f640-f687 ; f822-f899",
+      "fps": 60,
+      "mechanics": "5 maintiens ≥ 0,4 s pour 3,9 s (26 % de la durée). Le pire : la grille d'annonces reste quasi figée ≈ 1,6 s (f186-f282, seul un glissement lent), soit 3 temps sans geste. Le carton final tient 1,3 s avec curseur clignotant (légitime pour une signature).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Panoramique fouetté (whip pan) vers la scène suivante",
+      "name_en": "whip pan push",
+      "t": "0:04.73-0:04.87",
+      "frames": "f284-f292",
+      "fps": 60,
+      "mechanics": "La grille part vers la gauche avec un fort flou de mouvement horizontal pendant que la scène crème pousse depuis la droite avec un bord d'ombre douce : ≈ 50 % couvert à f286 (coupe sur le demi-temps), 85 % à f289, plein à f291 ; la carte photo se pose f292-f297. 8 im (0,13 s), ease-in-out, pic de vitesse f286-f287.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f289.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte d'un masque sur le temps",
+      "name_en": "masked title rise on the beat",
+      "t": "0:05.02-0:05.15",
+      "frames": "f301-f309",
+      "fps": 60,
+      "mechanics": "Sur-titre « ● PRODUCT SHOT » à f301 (temps) ; « Phone pic » en grotesque grasse noire (≈ 6 % de la hauteur, x ≈ 8 %) monte depuis une ligne de masque f302-f309 : 8 im, ease-out, les lettres sortent coupées par le bas puis entières.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f289.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Avant / après au curseur glissant",
+      "name_en": "before/after slider",
+      "t": "0:05.40-0:05.93",
+      "frames": "f324-f356",
+      "fps": 60,
+      "mechanics": "Carte photo « IMG_4821.HEIC » (≈ 50 % × 50 % du cadre, photo grise et terne, étiquette « BEFORE ») ; une poignée ronde à flèches glisse de droite à gauche et découvre la version studio : 5 % (f328), 15 % (f332), 25 % (f336), 45 % (f340), 65 % (f344), 85 % (f348), 95 % (f352), 100 % (f356). 32 im (0,53 s), ease-in-out. Après : fond vert #C8F84A, flacon sur podium blanc, sphères corail et lilas flottantes en parallaxe.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 322, "to": 358, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot barré puis correction tapée en italique",
+      "name_en": "strike-through and retype",
+      "t": "0:05.87-0:06.13",
+      "frames": "f352-f368",
+      "fps": 60,
+      "mechanics": "Un trait corail barre « Phone pic » de gauche à droite (≈ f352-f356) et le mot pâlit ; trois points de saisie (f360) puis « → studio shot. » en serif italique tapé f362-f368, sur le temps f361. Le texte raconte la transformation que l'image vient de montrer.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La carte se réduit en référence, le téléphone monte en tournant",
+      "name_en": "card-to-reference, phone rise",
+      "t": "0:06.47-0:06.93",
+      "frames": "f388-f416",
+      "fps": 60,
+      "mechanics": "La carte studio rétrécit (≈ 55 % → 20 % de la largeur) et glisse à gauche ; un téléphone monte du bas à droite en se redressant (≈ 15° → 0°) et se pose au centre vers f404-f408 (demi-temps f406) ; une flèche pointillée se trace de la carte au téléphone (f404-f412) ; « UGC video. » s'écrit à droite en serif italique (f408-f416).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Avatar UGC illustré avec sous-titres karaoké",
+      "name_en": "illustrated UGC avatar with karaoke captions",
+      "t": "0:06.80-0:07.80",
+      "frames": "f408-f468",
+      "fps": 60,
+      "mechanics": "Femme en illustration plate (chignon, pull vert acide, chambre rose) dans un écran de téléphone façon TikTok (cœur, commentaires) ; tête et bouche qui bougent ; sous-titres « okay this serum » puis « is actually insane » avec le mot courant surligné en vert ; pastille noire « auto-translate · 30+ languages » à f424 ; légende « talking-head ads in one click ».",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le pull vert → aplat vert du plan suivant",
+      "name_en": "zoom-through color match cut",
+      "t": "0:07.80-0:08.03",
+      "frames": "f468-f482",
+      "fps": 60,
+      "mechanics": "Push-in sur le téléphone : échelle ≈ 1,2× à f468, ≈ 3× à f472 (visage énorme, flou), le pull vert remplit le cadre à f476 (ease-in, fort flou de mouvement) ; ce vert devient le fond de « EDIT IMAGE », qui atterrit avec un flou de zoom à f480 et se fige à f481-f482, sur le temps f481. 14 im au total.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-002-cut-f495.jpg",
+      "illus": {"from": 464, "to": 484, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montage d'outils : un mot par demi-temps",
+      "name_en": "one word per half-beat montage",
+      "t": "0:08.00-0:10.00",
+      "frames": "f480-f600",
+      "fps": 60,
+      "mechanics": "8 mots en 120 im : EDIT IMAGE (f480), UPSCALE 4K (f495), REMOVE BG (f510), LIPSYNC (f525), SUBTITLES (f540), TRANSLATE (f555), SPY BRANDS (f570), REPLICATE (f585) ; 15 im chacun (0,25 s), coupe 1 im avant chaque barre. Grotesque grasse en capitales centrée, ≈ 15-17 % de la hauteur, 60-70 % de la largeur ; minuscule sous-titre mono dessous (« inpaint · expand · restyle », « sharpen · enhance · enlarge »…). Fonds alternés : vert, noir, corail, corail, noir, violet, noir, crème. Chaque mot arrive avec 1-2 im de flou de zoom (≈ 105 % → 100 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg, microM-003-cut-f540.jpg, microM-004-cut-f585.jpg",
+      "illus": {"from": 484, "to": 589, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cadre de sélection et curseur autour du mot (EDIT IMAGE)",
+      "name_en": "selection box with handles",
+      "t": "0:08.00-0:08.23",
+      "frames": "f480-f494",
+      "fps": 60,
+      "mechanics": "Rectangle pointillé avec poignées carrées aux coins autour de « EDIT IMAGE » (texte gris foncé sur vert) ; une flèche de curseur glisse vers la poignée bas-droite (f480-f486) comme pour redimensionner.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Dépixelisation du mot (UPSCALE 4K)",
+      "name_en": "depixelate reveal",
+      "t": "0:08.25-0:08.30",
+      "frames": "f495-f498",
+      "fps": 60,
+      "mechanics": "« UPSCALE 4K » (4K en vert) arrive en gros blocs de mosaïque à f495, blocs plus fins à f496, presque net à f497, net à f498 : 3 im. Le mot montre l'effet qu'il nomme.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Damier de transparence qui balaie le fond (REMOVE BG)",
+      "name_en": "transparency checkerboard wipe",
+      "t": "0:08.50-0:08.73",
+      "frames": "f510-f524",
+      "fps": 60,
+      "mechanics": "Sur fond corail, un anneau blanc de gomme au bord gauche (f510-f513), puis le damier gris et blanc des logiciels (fond transparent) entre par la gauche à partir de f513 (≈ 5 % de la largeur par image) derrière le mot noir qui reste intact.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Forme d'onde audio derrière le mot (LIPSYNC)",
+      "name_en": "audio waveform backdrop",
+      "t": "0:08.75-0:09.00",
+      "frames": "f525-f539",
+      "fps": 60,
+      "mechanics": "Barres verticales fines d'une forme d'onde, sombres sur corail, sur toute la largeur derrière « LIPSYNC », qui pulsent légèrement ; légende « sync any audio to a face ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f540.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Surlignage karaoké lettre à lettre (SUBTITLES)",
+      "name_en": "karaoke highlight sweep",
+      "t": "0:09.03-0:09.17",
+      "frames": "f542-f550",
+      "fps": 60,
+      "mechanics": "« SUBTITLES » blanc sur noir se fige à f541 ; un pavé vert acide entre par la gauche à f542 et passe sous les lettres une par une (S f543, SU f544, SUB f545 … SUBTITLES f550) : ≈ 1 lettre par image, linéaire ; le texte passe en noir sur vert. Légende « karaoke captions, word-perfect ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f540.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Changement de langue sur place (TRANSLATE → TRADUCIR)",
+      "name_en": "in-place language swap",
+      "t": "0:09.25-0:09.50",
+      "frames": "f555-f569",
+      "fps": 60,
+      "mechanics": "« TRANSLATE » blanc sur violet #8878C0 atterrit à f555 (flou) et se fige à f556, puis devient « TRADUCIR » à f558, coupe sèche du texte 3 im après l'atterrissage, même position et même corps. Légende « lip-synced · 30+ languages ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f540.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Balayage radar autour du mot (SPY BRANDS)",
+      "name_en": "radar sweep",
+      "t": "0:09.50-0:09.75",
+      "frames": "f570-f584",
+      "fps": 60,
+      "mechanics": "« SPY BRANDS » vert acide avec halo sur noir ; cercles concentriques fins et un cône vert en dégradé qui tourne (≈ 22° par image, un tour en ≈ 16 im) avec quelques points-cibles. Légende « watch what's winning out there ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f585.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le mot se duplique en contours (REPLICATE)",
+      "name_en": "outline echo duplication",
+      "t": "0:09.75-0:09.85",
+      "frames": "f585-f591",
+      "fps": 60,
+      "mechanics": "« REPLICATE » noir sur crème atterrit à f585 (flou), net à f586 ; f587-f589 deux copies au contour apparaissent au-dessus et deux en dessous, interligne serré : le mot se copie lui-même. Légende « match a competitor's ad ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f585.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en escalier de pixels vers le noir",
+      "name_en": "stepped pixel staircase wipe",
+      "t": "0:09.85-0:10.08",
+      "frames": "f591-f605",
+      "fps": 60,
+      "mechanics": "Un escalier de blocs gris puis noirs part du coin haut-droit et descend en diagonale vers le bas-gauche (≈ 9 im), noir complet à f599-f600, 1-2 im avant le temps f601 ; 5 im de noir (f600-f605) avant le chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f585.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Liste en trois styles : blanc, gris, vert italique",
+      "name_en": "three-state word list",
+      "t": "0:10.10-0:10.58",
+      "frames": "f606-f635",
+      "fps": 60,
+      "mechanics": "« Launch. » grotesque grasse blanche (≈ 8 % de la hauteur, x ≈ 10 %) vers f606-f610 ; « Measure. » grise #7A7A7A monte d'un masque à f615 (demi-temps) ; « Scale. » serif italique vert acide monte à f630 (temps). Interligne ≈ 13 % de la hauteur. Trois états visuels pour trois étapes.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur ROAS en ease-in-out calé sur le tracé de la courbe",
+      "name_en": "eased counter synced to line draw",
+      "t": "0:10.17-0:11.00",
+      "frames": "f610-f660",
+      "fps": 60,
+      "mechanics": "Carte de tableau de bord sombre (≈ 45 % × 38 % du cadre, « ● LIVE ON META ») : ROAS mono vert 0,8× (f610), 0,9 (f620), 1,1 (f625), 1,6 (f630), 2,3 (f635), 3,3 (f640), 4,0 (f645), 4,5 (f650), 4,7 (f655), 4,8× (f660). Écarts 0,1 / 0,2 / 0,5 / 0,7 / 1,0 / 0,7 / 0,5 / 0,2 / 0,1 par 5 im = ease-in-out symétrique sur 50 im (0,83 s), fin sur le temps f661. La courbe se trace de gauche à droite au même rythme, point lumineux en tête, aire en dégradé vert, histogramme pâle derrière ; infobulles « CTR 3.1% » et « 12 ads live » qui apparaissent (f640-f655).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Dissolution en carrés (demi-teinte) en diagonale",
+      "name_en": "diagonal halftone pixel wipe",
+      "t": "0:11.47-0:11.75",
+      "frames": "f688-f705",
+      "fps": 60,
+      "mechanics": "Des carrés vert acide naissent au coin haut-gauche et gagnent en diagonale vers le bas-droit ; sur le front de ≈ 15 % de la diagonale, ils grandissent de minuscules à pleins (dégradé en demi-teinte). Départ visible f690-f691 (temps f692), grille pleine à f705 (demi-temps f706) : ≈ 32 × 18 carrés de ≈ 2,8 % de la largeur, joints sombres. 17 im, vitesse à peu près constante.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f697.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "La grille de pixels explose puis implose en logo",
+      "name_en": "pixel grid burst then implode into logo",
+      "t": "0:12.00-0:12.43",
+      "frames": "f720-f746",
+      "fps": 60,
+      "mechanics": "f720 grille pleine ; f721-f730 chaque carré tourne au hasard et s'écarte (chaos) ; f735-f742 les carrés convergent vers le centre en nuage flou (implosion, ease-in) ; f743-f746 ils se posent en logo pixel (≈ 14 carrés formant un anneau carré à queue, ≈ 11 % de la largeur). 26 im. Le logo est fait des mêmes pixels que la transition : motivé.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f750.jpg",
+      "illus": {"from": 718, "to": 760, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flash, anneau et étincelles à l'arrivée du logo",
+      "name_en": "logo shockwave hit",
+      "t": "0:12.50-0:12.95",
+      "frames": "f750-f777",
+      "fps": 60,
+      "mechanics": "f750 (2 im avant le temps f752) : voile olive qui décroît en ≈ 5 im, le logo flou-pop ; anneau vert épais qui s'ouvre de ≈ 5 % à 45 % de la largeur en 6 im (ease-out), anneau gris plus fin et plus lent (f757-f764), étincelles vertes projetées puis dérivant lentement (f753-f780), halo vert diffus derrière le logo.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f750.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo qui glisse, nom tapé au curseur, signature en serif italique",
+      "name_en": "typed lockup and tagline",
+      "t": "0:12.93-0:15.0",
+      "frames": "f776-f899",
+      "fps": 60,
+      "mechanics": "Le logo glisse du centre vers la gauche (≈ 20 % de la largeur en ≈ 5 im, ease-out) sur le temps f781 ; « quickdesign » en mono blanche (≈ 8 % de la hauteur) tapé f780-f805 (11 caractères, ≈ 2,3 im par caractère) avec curseur vert ; « Design smarter. Create faster. » en serif italique tapé f810-f825 (temps f811) ; URL « quickdesign.io » verte soulignée en fondu à f830 ; curseur qui clignote jusqu'à la fin. Bloc final ≈ 63 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes 1 image avant chaque demi-temps dans le montage",
+      "name_en": "cuts one frame ahead of each half-beat",
+      "t": "0:08.00-0:10.00",
+      "frames": "f480-f600",
+      "fps": 60,
+      "mechanics": "9 coupes sur 9 (f480/481, 495, 510, 525, 540, 555, 570, 585, 600) à −1 im de la barre bleue ou bleu clair : la cadence double (demi-temps, 15 im) par rapport au reste de la vidéo (un geste par temps ou tous les deux temps), ce qui crée le pic d'énergie au tiers final, avant les chiffres et le logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg, microM-003-cut-f540.jpg, microM-004-cut-f585.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop sur la validation du prompt",
+      "name_en": "drop on prompt submit",
+      "t": "0:01.73-0:02.10",
+      "frames": "f104-f126",
+      "fps": 60,
+      "mechanics": "Intro plus douce pendant la saisie (0-2 s) ; contour vert de validation vers f104-f108, puis voile vert et arrivée des cartes à f120, 1 im avant le temps f121 et à 3 ms de la montée de +11,8 dB ; quantité de mouvement × 3,5 après le drop.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Entrées de titres et fins de compteurs sur les temps",
+      "name_en": "titles and counter ends on beats",
+      "t": "0:03.00-0:13.50",
+      "frames": "f180-f811",
+      "fps": 60,
+      "mechanics": "« Twelve ads. » + compteur 12 (f180), « PRODUCT SHOT » / « Phone pic » (f301-f302), « → studio shot » (f362), « Measure. » (f615, demi-temps), « Scale. » (f630), ROAS 4,8× (f660), glissement du logo (f780), signature (f810) : chaque entrée de texte ou fin de comptage est posée sur un temps ou un demi-temps, à −1 ou +1 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Noir + vert acide + crème, accents corail et violet",
+      "name_en": "acid-lime system palette",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Noir #0A0A0A pour les chapitres interface et logo, crème #EEEAE2 pour les chapitres produit, vert acide #CBFA4E comme unique accent lumineux, corail #F06A5A et violet #8878C0 seulement en aplats du montage (repris des annonces Flufie). Les changements de fond plein cadre à chaque mot portent l'énergie du montage.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Trame de points, vignettage et halo vert",
+      "name_en": "dot grid, vignette and glow",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fine trame de points sur le noir, vignettage sombre aussi sur les aplats colorés (bords assombris de ≈ 15-20 %), halo diffus derrière les textes verts et le logo, ombres douces sous les cartes. Discret, il donne de la profondeur aux aplats.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f495.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne décrit pas le produit (et contient une coquille, « an incredible quickdesign ») ; la liste de fonctions très précise (UGC, lipsync, spy brands, replicate, upscale 4K) laisse penser que le modèle avait le site ou un contexte sous la main (probable). Il a inventé une marque cliente fictive (Flufie) pour démontrer sans logos réels."},
+    {"kind": "direction", "insight": "« Dynamic » + « show what an incredible motion designer you are » : le modèle a greffé deux passages démonstratifs (montage d'outils au demi-temps, implosion de pixels en logo) sur une promo produit classique, plus posée."},
+    {"kind": "structure", "insight": "Sans structure demandée, il a pris l'arc SaaS standard : question → génération → preuves (avant/après, UGC, outils) → résultats chiffrés → logo + URL. Efficace et lisible en 15 s."},
+    {"kind": "build", "insight": "Le HUD affiche « 120 BPM » : la timeline est écrite sur une grille de 0,25 s et chaque coupe tombe 1 im avant le temps. Annonces, avatar, tableau de bord et logo sont fabriqués en HTML/CSS (probable), pas importés."},
+    {"kind": "qa", "insight": "Aucune consigne sur les temps morts : 26 % de la durée en maintiens, dont ≈ 1,6 s sur la grille d'annonces. Exiger « un geste par temps, aucun maintien > 0,5 s hors carton final » les aurait comblés."},
+    {"kind": "other", "insight": "Deux demandes concurrentes dans une phrase (vanter le produit ET le talent du designer) produisent une alternance sections explicatives calmes / rafales démonstratives ; mieux vaut choisir un seul objectif par prompt."}
+  ],
+  "steal": [
+    "Montage d'outils : un mot par demi-temps (15 im à 60 fps), coupe 1 im avant le temps, et une micro-animation qui montre ce que chaque mot fait.",
+    "Raccord couleur : plonger dans une zone verte de l'image (zoom ×3 en 8 im, flou) pour qu'elle devienne l'aplat vert du plan suivant.",
+    "Logo pixel : dissoudre l'écran en grille de carrés, les faire exploser puis imploser pour former le logo, flash et anneau sur le temps.",
+    "Avant/après : curseur glissant en ease-in-out (≈ 0,5 s), puis barrer le mot « avant » et taper la correction en serif italique sur le temps.",
+    "Caler le drop sur la validation du prompt : intro calme pendant la saisie, flash et arrivée des résultats sur le premier temps fort."
+  ],
+  "flaws": [
+    "26 % de maintiens statiques, dont ≈ 1,6 s sur la grille d'annonces figée : la pulsation retombe entre deux rafales.",
+    "Mot accent en serif italique verte répété à chaque scène : tic de vidéo IA.",
+    "Flashs en voile olive terne (f120, f750) : boueux, ils éteignent l'image au lieu de la frapper.",
+    "Avatar UGC en illustration plate générique ; HUD à micro-labels illisibles repris d'autres vidéos Claude."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : le montage d'outils (8 mots en 2 s, coupe 1 im avant chaque demi-temps, micro-animation propre à chaque mot) et les transitions (whip, raccord couleur par zoom, demi-teinte → explosion → logo) sont exactement la grammaire visée pour une promo SaaS ; à étudier image par image à 60 fps."
+  }
+}

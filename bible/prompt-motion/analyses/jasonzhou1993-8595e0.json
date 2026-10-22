@@ -1,0 +1,607 @@
+{
+  "slug": "jasonzhou1993-8595e0",
+  "title": "Claude motion reel",
+  "handle": "@jasonzhou1993",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept malin (chaque mot exécute son principe, la balle d'intro devient le point final) et synchro à l'image près en première moitié ; DATA, sphère synthwave et glitch final restent génériques.",
+  "summary": "Bande-démo de 15 s en 8 mesures à 128,57 BPM : une balle rebondit puis devient le fond orange de TIMING ; quatre mots exécutent leur propre principe, puis tuiles pulsées, particules FLOW, sphère 3D, tableau de bord, rubans « everything moves. », glitch et signature « claude. » dont le point est la balle de l'intro. Fort par le concept et la synchro, faible par ses modules génériques.",
+  "prompt_vs_result": [
+    "Même prompt d'une ligne que les autres runs : 15 s, motion graphics « dynamique », bande-démo de CV, « go all out ». Ni sujet, ni palette, ni musique imposés.",
+    "Claude a choisi seul : la balle « principles first. », quatre principes (timing, spacing, easing, rhythm) joués par les mots, 128,57 BPM, 7 sections numérotées et une signature, palette orange-bleu-crème, statistiques autoréférentielles, « available for hire. ».",
+    "Le prompt laisse le modèle retomber sur son gabarit de showreel (même squelette qu'itsuki-dev-10942d). Il aurait fallu imposer un concept, un sujet réel ou des références visuelles pour sortir de ce moule."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0C0B10",
+        "role": "encre : fond des sections INTRO, SPACING, SYSTEMS, PARTICLES, FLOW et de la signature"
+      },
+      {
+        "hex": "#FF5A1F",
+        "role": "orange signature : balle, fond de TIMING, tuiles, compteur KEYFRAMES, « moves. », point final, « available for hire. »"
+      },
+      {
+        "hex": "#F2EEE4",
+        "role": "crème papier : texte SPACING, fond EASING et DATA, barres de volet, lettres de « claude »"
+      },
+      {
+        "hex": "#2F45FF",
+        "role": "bleu électrique : texte EASING, fond RHYTHM, barres de volet, anneau et courbe du graphique"
+      },
+      {
+        "hex": "#111433",
+        "role": "bleu nuit : fond de la section DIMENSION (sphère et sol)"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "blanc pur : carte « reel_v26 — performance »"
+      },
+      {
+        "hex": "#F4A88A",
+        "role": "saumon (estimé) : barres de l'histogramme, dernière barre en orange plein"
+      },
+      {
+        "hex": "#3E3D42",
+        "role": "gris : tuiles neutres de la section SYSTEMS"
+      }
+    ],
+    "type": "Néo-grotesque très grasse (Inter Black probable), capitales serrées pour les mots (≈ 20 % H), bas-de-casse pour « claude » (18 % H) ; serif italique (Instrument Serif probable) pour les accroches ; mono capitales espacées pour HUD et légendes.",
+    "texture": "Flou de mouvement sur les barres de volet, l'interlettrage animé et la carte qui monte ; bord défocalisé sur la balle qui remplit le cadre ; vignette radiale sur les fonds sombres ; grain léger ; ombre douce sous la carte DATA ; rubans faits de lignes fines additives ; aucun glow appuyé.",
+    "style": "Reel éditorial tech à HUD",
+    "coherence": "Quatre couleurs (encre, orange, crème, bleu) et trois familles de caractères tenues de bout en bout, HUD constant (coins, « CLAUDE / MOTION REEL ’26 », timecode, « 0X — SECTION », compteur « NNN / 900 »), et la balle orange qui ouvre et ferme la vidéo. Le système se relâche avec la sphère synthwave bleu nuit et les rubans dégradés, deux univers étrangers au graphisme plat du début."
+  },
+  "rhythm": {
+    "bpm": 128.57,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Le tempo de composition est écrit à l'écran : « 1/16 @ 128.57 bpm », soit un temps = 28 im exactement à 60 fps, et une mesure = 112 im. L'analyse automatique annonce 128,5 BPM mais sa grille (barres bleues) s'est calée sur les roulements à contretemps : la grosse caisse tombe sur les barres bleu clair, à +1,5 à 2,5 im des multiples de 28 im (spectrogramme : grosse caisse à hauteur descendante à 2,38 s, 2,85 s, 3,31 s…). Sur cette grille de 28 im partant de t = 0, la vidéo est découpée en 8 mesures : INTRO (f0-f112), KINETIC TYPE (f112-f224, un mot par temps : f112, f140, f168, f196), SYSTEMS (f224-f336, pulsations f252, f280, f308), PARTICLES (f336-f448), DIMENSION (f448-f560, pulsations f476, f504, f532), DATA (f560-f672), FLOW (f672-f784), signature (f784-f899). Les volets couvrent l'écran pendant ≈ 10 im centrées sur le premier temps (f224, f560, f672). La synchro est exacte de 1,87 à 9,3 s, se relâche dans DATA et FLOW (compteurs et frappe de texte hors grille), puis se recale sur le coup final (13,08 s) et le rebond du point (13,53 s). Temps faibles : intro de 1,6 s avec une balle de 2 % H (rebonds jusqu'à f80, balle immobile f80-f92), maintien de FLOW f386-f418 (0,55 s de scintillement), écran presque vide f442-f447, carte de fin immobile après le décodage (f876-f899). Pas de fondu au noir final.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.47",
+        "what": "noir, la balle orange tombe du haut du cadre, une ligne de sol se trace",
+        "technique": "chute avec étirement"
+      },
+      {
+        "t": "0:00.47-0:01.50",
+        "what": "4 rebonds décroissants (impacts f28, f56, f70, f77) avec bruitage, « principles first. » tapé sous la ligne",
+        "technique": "rebonds en accélération + machine à écrire"
+      },
+      {
+        "t": "0:01.53-0:01.83",
+        "what": "la balle grossit vers la caméra et remplit le cadre en orange",
+        "technique": "zoom à travers la balle"
+      },
+      {
+        "t": "0:01.87-0:02.33",
+        "what": "TIMING tapé lettre par lettre sur la première grosse caisse, « // cut on the downbeat »",
+        "technique": "le mot exécute son principe"
+      },
+      {
+        "t": "0:02.33-0:02.80",
+        "what": "SPACING, interlettrage qui se resserre de 150 à -6 en 11 im",
+        "technique": "interlettrage animé"
+      },
+      {
+        "t": "0:02.80-0:03.27",
+        "what": "EASING, lettres qui montent en easeOutBack avec dépassement",
+        "technique": "montée décalée à rebond"
+      },
+      {
+        "t": "0:03.27-0:03.52",
+        "what": "RHYTHM, une lettre toutes les 3,5 im",
+        "technique": "lettres sur les triples-croches"
+      },
+      {
+        "t": "0:03.52-0:04.00",
+        "what": "stores orange et crème qui traversent l'écran de bas en haut",
+        "technique": "volet de barres traversant"
+      },
+      {
+        "t": "0:04.00-0:05.60",
+        "what": "champ de tuiles arrondies en onde, ondulation depuis le centre sur chaque temps, puis tuiles réduites à des points",
+        "technique": "grille-système pulsée"
+      },
+      {
+        "t": "0:05.60-0:07.47",
+        "what": "particules qui forment FLOW (dégradé orange → bleu), maintien, dispersion en traînées vers la droite",
+        "technique": "particules → mot → souffle"
+      },
+      {
+        "t": "0:07.47-0:09.10",
+        "what": "sphère de points sur sol synthwave, pulsation sur les temps, torsion en nœud de trèfle",
+        "technique": "3D en nuage de points"
+      },
+      {
+        "t": "0:09.10-0:09.53",
+        "what": "barres bleues, orange et crème qui traversent de bas en haut",
+        "technique": "volet de barres traversant"
+      },
+      {
+        "t": "0:09.47-0:11.00",
+        "what": "compteurs 534 → 900, 13 → 60, décompte vers 0, carte « reel_v26 — performance »",
+        "technique": "tableau de bord animé"
+      },
+      {
+        "t": "0:11.00-0:11.45",
+        "what": "bandes horizontales orange et noires qui entrent par la gauche, couvrent, sortent à droite",
+        "technique": "volet en bandes horizontales"
+      },
+      {
+        "t": "0:11.30-0:12.70",
+        "what": "« everything » puis « moves. » tapés en serif italique sur des rubans de lignes fines",
+        "technique": "frappe + rubans"
+      },
+      {
+        "t": "0:12.70-0:13.07",
+        "what": "glitch : trois inversions de couleurs, tranches, flash gris",
+        "technique": "sortie en glitch"
+      },
+      {
+        "t": "0:13.07-0:13.35",
+        "what": "« claude » monte lettre par lettre derrière un masque",
+        "technique": "montée derrière masque"
+      },
+      {
+        "t": "0:13.35-0:13.80",
+        "what": "le point orange tombe, rebondit deux fois et devient le point final",
+        "technique": "rappel de la balle"
+      },
+      {
+        "t": "0:13.80-0:14.60",
+        "what": "« MOTION DESIGNER — SHOWREEL 2026 » se décode, « available for hire. », liste des savoir-faire",
+        "technique": "texte décodé + signature"
+      },
+      {
+        "t": "0:14.60-0:15.06",
+        "what": "signature immobile jusqu'à la dernière image",
+        "technique": "maintien final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Attention : la grille automatique (barres bleues) marque ici les roulements à contretemps ; la grosse caisse est sur les barres bleu clair. Comptage à l'œil, un événement clé par geste, sur la grille de 28 im (barres bleu clair et bleues) : 23 gestes sur 31 à ±2 im (hasard ≈ 36 %). Calés : impacts de la balle f28 et f56 (temps) et f70 (demi-temps), TIMING f112 avec la première grosse caisse (1,88 s), coupes SPACING f140, EASING f168, RHYTHM f196 (-1 im de la barre bleu clair, attaque audio à f169), couverture des stores centrée sur f224, ondulations SYSTEMS f252, f280, f308, coupe f336, départ du souffle f420, coupe sphère f448, pulsations f476, f504, f532, couverture des barres centrée sur f560, couverture des bandes centrée sur f672, inversion f770, flash gris f784 (coup final à 13,08 s), atterrissage du point f812 (coup à 13,57 s), début du décodage f828. Ratés : 4e rebond f77, début de frappe f36, remplissage par la balle f109 (-3), atterrissage de FLOW ≈ f385, départ des compteurs f568, frappe de « everything » f678, début du glitch f762, montée de « claude » f788. Bruitages : rebonds à 0,493 s, 0,964 s, 1,196 s, 1,312 s, soit +1,6 à 1,8 im après chaque impact ; petits rebonds du point à f818, f823, f826. L'indice automatique conclut « aucune synchro » (départs/demi-temps R = 0,24, p = 0,27) : il est trompé par la grille décalée et par le mouvement continu de DATA et FLOW.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "pulsations",
+      "flashs",
+      "texte",
+      "drop"
+    ],
+    "style_match": "House électro 128,57 BPM à roulements compressés ↔ coupes sèches sur la grosse caisse, rebonds physiques, pulsations : très juste en première moitié ; DATA et FLOW, plus fluides, décrochent.",
+    "how_built": "Le prompt ne parle pas de musique. Claude a posé une grille de 28 im (128,57 BPM, écrite sous RHYTHM) : une section par mesure de 112 im, un mot par temps, des volets centrés sur le premier temps. Les bruitages (4 rebonds, coup final, rebond du point) tombent sur les images d'impact avec un retard constant de +1,6 à 2,5 im, comme la grosse caisse (probable délai d'encodage AAC) : bande-son très probablement générée en code depuis la même timeline, avec un riser de 12,2 à 13,1 s sous le glitch."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Une section par mesure",
+      "name_en": "Bar-locked sections",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "8 mesures de 112 im (4 temps de 28 im) : 00 INTRO, 01 KINETIC TYPE, 02 SYSTEMS, 03 PARTICLES, 04 DIMENSION, 05 DATA, 06 FLOW, puis la signature sans HUD. Les sections de la première moitié changent pile sur le premier temps (f112, f336, f448) ; dans la seconde, le volet couvre l'écran autour du premier temps (f560, f672) et la signature arrive sur f784.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de 28 images = 128,57 BPM",
+      "name_en": "Frame-integer beat grid",
+      "t": "0:01.87-0:13.53",
+      "frames": "f112-f812",
+      "fps": 60,
+      "mechanics": "Le tempo est choisi pour qu'un temps fasse un nombre entier d'images (28 im à 60 fps = 128,57 BPM) : tous les événements tombent sur des multiples de 28 (f112, f140, f168, f196, f224, f252, f280, f308, f336, f420, f448, f476, f504, f532, f560, f672, f784, f812). La grosse caisse est audible +1,5 à 2,5 im plus tard : l'image précède le son, ce qui se perçoit comme synchrone.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f108.jpg, microM-002-cut-f168.jpg, microM-003-move-f237.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages posés sur les impacts",
+      "name_en": "Impact-synced sound effects",
+      "t": "0:00.47-0:13.80",
+      "frames": "f28-f828",
+      "fps": 60,
+      "mechanics": "Sons de rebond à hauteur descendante (balayage ≈ 1,2 kHz → 500 Hz) à 0,493 s, 0,964 s, 1,196 s, 1,312 s, soit +1,6 à 1,8 im après les impacts f28, f56, f70, f78 ; petit son à f93 au départ du zoom et à f108 quand la balle remplit le cadre ; coup fort à 13,566 s (f814) sur l'atterrissage du point (f812) puis petites attaques sur ses deux rebonds (f818, f823, f826).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Volet centré sur le premier temps",
+      "name_en": "Wipe cover centered on the downbeat",
+      "t": "0:03.52-0:11.45",
+      "frames": "f211-f687",
+      "fps": 60,
+      "mechanics": "Les trois volets de barres entrent sur le contretemps, couvrent tout le cadre ≈ 8-10 im autour du premier temps de la mesure, puis sortent : stores f211-f240 (couverture f220-f228 autour de f224), barres f546-f572 (f555-f565 autour de f560), bandes f659-f687 (f667-f677 autour de f672). La coupe cachée tombe donc sur le temps fort.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-004-move-f570.jpg, microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Balle rebondissante avec écrasement-étirement",
+      "name_en": "Squash-and-stretch bouncing ball",
+      "t": "0:00.20-0:01.50",
+      "frames": "f12-f90",
+      "fps": 60,
+      "mechanics": "Balle orange de ≈ 2,3 % H. En chute elle s'étire verticalement (≈ 1,4:1, f18-f24), à l'impact elle s'écrase horizontalement (≈ 2:1 à f28 et f56), redevient ronde en remontant. Hauteurs de rebond ≈ 27 %, 9 % puis 2 % de H : chaque rebond perd environ deux tiers de sa hauteur. Ligne de sol de 1 px tracée sous la balle. C'est l'exercice d'animation numéro un, annoncé par « principles first. ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rebonds en accélération rythmique",
+      "name_en": "Accelerating bounce roll",
+      "t": "0:00.47-0:01.35",
+      "frames": "f28-f81",
+      "fps": 60,
+      "mechanics": "Intervalles entre impacts : 28 im (f28 → f56), 14 im (f56 → f70), 7-8 im (f70 → f77), soit noire, croche, double-croche : la physique du rebond devient un roulement qui accélère vers la mesure suivante, avant même que la grosse caisse entre (f112).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende tapée à la machine",
+      "name_en": "Typewriter caption",
+      "t": "0:00.60-0:01.05",
+      "frames": "f36-f63",
+      "fps": 60,
+      "mechanics": "« principles first. » en mono minuscule (≈ 1,3 % H) sous la ligne de sol, une lettre toutes les ≈ 1,5 im (19 caractères en ≈ 27 im), avec curseur.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom à travers la balle",
+      "name_en": "Zoom-through object to background",
+      "t": "0:01.53-0:01.87",
+      "frames": "f92-f112",
+      "fps": 60,
+      "mechanics": "La balle posée grossit vers la caméra : 2,3 % H (f92) → 5,5 % (f98) → 10 % (f102) → 25 % (f106) → 50 % (f107) → au-delà du cadre (f108), bord flou défocalisé, plein orange à f110. 16 im, ease-in exponentiel (presque tout dans les 4 dernières images). L'objet devient le fond du plan suivant ; le premier mot s'écrit dessus dès f112, avec la première grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f108.jpg, extra-01.jpg",
+      "illus": {
+        "from": 94,
+        "to": 113,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "TIMING : frappe sur le temps",
+      "name_en": "On-beat typing reveal",
+      "t": "0:01.87-0:02.02",
+      "frames": "f112-f121",
+      "fps": 60,
+      "mechanics": "Les 6 lettres apparaissent à leur place finale de gauche à droite, ≈ 1,5 im par lettre (T f112, I f114, M f115, I f117, N f119, G f120), chacune passe d'un orange pâle (≈ 30 % d'opacité) au noir en 1-2 im ; mot posé à f121. Légende « // cut on the downbeat » : le mot démontre son principe en arrivant sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f108.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "SPACING : interlettrage qui se resserre",
+      "name_en": "Tracking collapse",
+      "t": "0:02.33-0:02.52",
+      "frames": "f140-f151",
+      "fps": 60,
+      "mechanics": "À la coupe f140 le mot apparaît en fondu, lettres très espacées (au-delà de 100 % W) ; l'interlettrage se resserre en 11 im jusqu'à ≈ 47 % W (f151), ease-out, avec flou de mouvement horizontal sur les lettres. Légende « // tracking 150 → -6 ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f168.jpg",
+      "illus": {
+        "from": 139,
+        "to": 152,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "EASING : montée décalée à dépassement",
+      "name_en": "Staggered back-ease rise",
+      "t": "0:02.82-0:03.12",
+      "frames": "f169-f187",
+      "fps": 60,
+      "mechanics": "Lettres bleues #2F45FF qui montent depuis une ligne de masque, décalage ≈ 2,5 im (E f169, A f172, S f174, I f177, N f179, G f180), chacune dépasse sa ligne de base d'environ 10-15 % de sa hauteur puis se repose (easeOutBack de paramètre 2,2 selon la légende « // easeOutBack(2.2) »). Mot posé vers f186, sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f168.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "RHYTHM : une lettre par triple-croche",
+      "name_en": "Letters on 32nd notes",
+      "t": "0:03.28-0:03.60",
+      "frames": "f197-f216",
+      "fps": 60,
+      "mechanics": "Lettres blanches sur bleu, ancrées à gauche, qui surgissent toutes les ≈ 3,5 im (R f197, H f200, Y f203, T f207, H f210, M f214), soit 1/8 de temps ; chacune passe de ≈ 40 % à 100 % de sa taille en 2-3 im avec léger dépassement. Légende « // 1/16 @ 128.57 bpm ». Les stores arrivent avant que le mot soit fini.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot-principe et commentaire de code",
+      "name_en": "Principle word with code-comment caption",
+      "t": "0:01.87-0:03.52",
+      "frames": "f112-f211",
+      "fps": 60,
+      "mechanics": "Un mot en néo-grotesque très grasse, capitale ≈ 20 % H, ≈ 53 % W, centré ; sous lui une légende mono (≈ 2 % H) écrite comme un commentaire de code « // … » qui donne le réglage utilisé. Derrière, deux rangées de mots en contour « TIMING SPACING EASING RHYTHM » en haut et en bas du cadre, à faible contraste, qui défilent.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un couple de couleurs par mot",
+      "name_en": "Color pair per beat",
+      "t": "0:01.83-0:03.52",
+      "frames": "f110-f211",
+      "fps": 60,
+      "mechanics": "TIMING encre sur orange #FF5A1F, SPACING crème sur encre, EASING bleu sur crème #F2EEE4, RHYTHM blanc sur bleu #2F45FF : le fond change à chaque temps. Coupes adoucies par une image de fondu enchaîné (f168, f196).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Stores qui traversent l'écran",
+      "name_en": "Pass-through bar wipe",
+      "t": "0:03.52-0:04.00",
+      "frames": "f211-f240",
+      "fps": 60,
+      "mechanics": "8 barres verticales de 12,5 % W, orange et crème en alternance, montent du bas avec un décalage d'≈ 1 im par barre de gauche à droite (f211-f220), couvrent tout le cadre f220-f228, puis continuent vers le haut avec le même décalage (f229-f240) ; bords d'attaque flous. La scène suivante apparaît sous les barres, en bas à gauche d'abord. 29 im ≈ 1 temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-003-move-f237.jpg",
+      "illus": {
+        "from": 209,
+        "to": 241,
+        "n": 8
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Champ de tuiles en onde",
+      "name_en": "Wave-driven tile field",
+      "t": "0:03.88-0:05.55",
+      "frames": "f233-f333",
+      "fps": 60,
+      "mechanics": "≈ 15 × 9 tuiles carrées arrondies (≈ 6 % H) : pleines orange à opacité variable (#FF5A1F → #BB6749), carrés gris, contours orange, petites croix grises entre elles. Le champ se dévoile depuis le centre (f233-f246), puis l'angle et la taille de chaque tuile suivent une onde radiale continue. Entre 5,0 et 5,5 s les tuiles rétrécissent jusqu'à des points.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f237.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Ondulation depuis le centre sur chaque temps",
+      "name_en": "On-beat center ripple",
+      "t": "0:04.20-0:05.13",
+      "frames": "f252-f310",
+      "fps": 60,
+      "mechanics": "À chaque grosse caisse (f252, f280, f308), les tuiles du centre passent en orange vif (2 × 2 puis 3 × 3 en 4-5 im) et l'impulsion se propage vers l'extérieur : un pic d'énergie d'une image exactement sur le multiple de 28.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f237.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules en mot, puis soufflées",
+      "name_en": "Particle word with wind dispersal",
+      "t": "0:05.60-0:07.47",
+      "frames": "f336-f447",
+      "fps": 60,
+      "mechanics": "Coupe sur le temps (f336) : des milliers de points convergent en « FLOW » (≈ 30 % H), colorés en dégradé horizontal orange → rose → bleu, en ≈ 49 im ease-in-out (f336-f385). Maintien scintillant f386-f418. Sur le temps f420, le mot est soufflé de gauche à droite en traînées horizontales (f420-f441) ; écran presque vide f442-f447, puis coupe sur le temps suivant.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Sphère de points pulsée sur sol synthwave",
+      "name_en": "Beat-pulsed point sphere",
+      "t": "0:07.47-0:09.10",
+      "frames": "f448-f546",
+      "fps": 60,
+      "mechanics": "Sphère de Fibonacci d'≈ 3 000 points roses, orange et bleus (≈ 70 % H), qui tourne avec une ondulation en spirale sur ses bords, au-dessus d'une grille de sol en perspective bleue sur fond #111433 avec vignette. Petite pulsation d'une image sur chaque temps (f476, f504, f532). La sphère se tord puis devient un nœud de trèfle (≈ f510-f540).",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Barres tricolores traversantes",
+      "name_en": "Tricolor pass-through bars",
+      "t": "0:09.10-0:09.53",
+      "frames": "f546-f572",
+      "fps": 60,
+      "mechanics": "Même volet que les stores, en bleu, orange et crème : barres qui montent du bas en escalier descendant de gauche à droite (f546-f555), couverture f555-f565 autour du premier temps f560, sortie vers le haut avec décalage (f566-f572) ; les compteurs apparaissent sous les barres dès f568.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f570.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs qui roulent en ease-out",
+      "name_en": "Ease-out rolling counters",
+      "t": "0:09.47-0:11.00",
+      "frames": "f568-f660",
+      "fps": 60,
+      "mechanics": "Trois nombres en néo-grotesque grasse (≈ 12 % H) avec légende mono : FRAMES RENDERED 426 → 534 → 900, FRAMES / SECOND 13 → 60, KEYFRAMES USED (orange) en décompte 814 → 55 → 1 → 0. Incréments décroissants à chaque image (+44, +39, +34, +30… +4) : ease-out exponentiel, presque arrivé en ≈ 40 im, valeur finale vers f630.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f570.jpg, microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte de performance animée",
+      "name_en": "Animated dashboard card",
+      "t": "0:09.48-0:11.00",
+      "frames": "f569-f660",
+      "fps": 60,
+      "mechanics": "Carte blanche arrondie à ombre douce (≈ 46 % W × 68 % H) qui monte du bas avec flou de mouvement (f569-f576, ≈ 7 im, ease-out) : titre « reel_v26 — performance », pastille « ● LIVE » orange, anneau bleu 0 → 84 % (f600) → 100 % (f630), 14 barres saumon qui poussent de gauche à droite, la dernière en orange plein, courbe bleue tracée par-dessus avec point final, étiquette noire « +301 % » qui continue de compter (+312 % à f660).",
+      "verdict": "cliche",
+      "evidence": "microM-004-move-f570.jpg, microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Méta-données autoréférentielles",
+      "name_en": "Self-referential stats",
+      "t": "0:00-0:11.00",
+      "frames": "f0-f660",
+      "fps": 60,
+      "mechanics": "Le HUD affiche le numéro d'image courant « 640 / 900 » avec une barre de progression, et la section DATA affiche les chiffres de la vidéo elle-même : 900 images rendues, 60 im/s, 0 image clé (tout est procédural). Le spectateur voit le film se compter.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bandes horizontales orange et noires",
+      "name_en": "Horizontal stripe wipe",
+      "t": "0:10.98-0:11.45",
+      "frames": "f659-f687",
+      "fps": 60,
+      "mechanics": "7 bandes orange sur fond noir entrent par la gauche, décalées par rangée (≈ 1 im), en 8 im (f659-f667) ; couverture complète f667-f677 autour du premier temps f672 ; sortie vers la droite avec le même décalage (f678-f687) qui dévoile la scène FLOW pendant que le texte se tape.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f667.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Accroche serif tapée en deux couleurs",
+      "name_en": "Two-tone typed serif tagline",
+      "t": "0:11.30-0:12.70",
+      "frames": "f678-f762",
+      "fps": 60,
+      "mechanics": "« everything » en serif italique crème (≈ 25 % H avec jambages), tapé de gauche à droite à ≈ 1,5 im par lettre (f678-f692), puis « moves. » en orange, décalé à droite sur la ligne suivante, tapé f688-f702. Lignes qui se chevauchent légèrement ; texte ensuite fixe pendant 1 s.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f667.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Rubans de lignes fines",
+      "name_en": "Line-bundle ribbons",
+      "t": "0:11.30-0:12.70",
+      "frames": "f678-f762",
+      "fps": 60,
+      "mechanics": "≈ 5 rubans faits chacun d'≈ 30 lignes parallèles très fines, en dégradé orange → magenta → bleu, qui ondulent lentement en travers du cadre derrière le texte (énergie 1,3-1,5 constante).",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie en glitch avec inversions",
+      "name_en": "Inversion glitch out",
+      "t": "0:12.70-0:13.10",
+      "frames": "f762-f786",
+      "fps": 60,
+      "mechanics": "Sur le riser : image grise f762, image inversée (fond blanc, texte cyan) f763, petits rectangles bleus de glitch f764-f769, inversion f770-f773 (sur le contretemps) avec tranches horizontales sur « moves. », texte doublé et découpé f774-f781, inversion f782-f783, flash gris clair f784-f786 (sur le temps, avec le coup final), puis fondu du gris vers l'encre jusqu'à f800. 22 im de glitch.",
+      "verdict": "cliche",
+      "evidence": "microM-006-cut-f770.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Signature qui monte derrière un masque",
+      "name_en": "Staggered mask rise logotype",
+      "t": "0:13.13-0:13.35",
+      "frames": "f788-f801",
+      "fps": 60,
+      "mechanics": "« claude » en bas-de-casse crème (≈ 18 % H) : chaque lettre monte depuis une ligne de masque, ≈ 8 im par lettre, décalage ≈ 2-3 im, pendant que le fond passe du gris à l'encre ; petites attaques sonores sous les lettres (f788, f790, f795, f799).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La balle revient et devient le point final",
+      "name_en": "Ball callback as the full stop",
+      "t": "0:13.35-0:13.80",
+      "frames": "f801-f828",
+      "fps": 60,
+      "mechanics": "Le point orange (≈ 6 % H) entre par le haut du cadre, étiré verticalement, tombe en ≈ 11 im (f801-f812), s'écrase à côté du « e » sur le temps f812 avec un coup sonore à f814, fait deux petits rebonds (f816-f825) et se pose en point final à f828. Rappel exact de la balle de l'intro : l'objet du premier plan signe le dernier.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 798,
+        "to": 830,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte brouillé qui se décode",
+      "name_en": "Scramble decode",
+      "t": "0:13.80-0:14.60",
+      "frames": "f828-f876",
+      "fps": 60,
+      "mechanics": "Sous un filet gris de 48 % W, une ligne de glyphes aléatoires orange se stabilise de gauche à droite en « MOTION DESIGNER — SHOWREEL 2026 » (mono capitales, interlettrage large, ≈ 2,5 % H) : caractères résolus en blanc, non résolus en orange, 48 im au total.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature « available for hire. »",
+      "name_en": "Hire-me end card",
+      "t": "0:14.25-0:15.06",
+      "frames": "f855-f899",
+      "fps": 60,
+      "mechanics": "« available for hire. » en serif italique orange (≈ 4 % H) en fondu (f855-f866), liste mono grise « TYPE · SYSTEMS · PARTICLES · 3D · DATA · FLOW » en bas (f864-f870), HUD retiré, vignette radiale ; image fixe jusqu'à la fin, sans fondu au noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bande-démo avec compteur d'images",
+      "name_en": "Reel HUD with frame counter",
+      "t": "0:00-0:13.05",
+      "frames": "f0-f783",
+      "fps": 60,
+      "mechanics": "Coins de cadrage en L, « CLAUDE / MOTION REEL ’26 » en haut à gauche, timecode en haut à droite, « 0X — SECTION » en bas à gauche, « NNN / 900 » et barre de progression en bas à droite ; mono ≈ 1,6 % H, couleur adaptée au fond (bleu sur orange, blanc sur encre, encre sur crème).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette de 4 couleurs plates",
+      "name_en": "Four-color flat palette",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Encre #0C0B10, orange #FF5A1F, crème #F2EEE4, bleu #2F45FF, recombinés en couples fond/texte ; le bleu nuit #111433 et les dégradés des rubans sont les seules sorties du système.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Même prompt d'une ligne qu'itsuki-dev-10942d, et presque le même squelette : sujet CLAUDE, HUD de reel avec timecode et sections numérotées, tempo ≈ 128 BPM, 8 sections d'une mesure, mots cinétiques sur les principes du motion, particules qui forment un mot, 3D, accroche en serif italique, signature « CLAUDE. » au point orange, liste de savoir-faire. Le modèle a un gabarit de showreel par défaut."
+    },
+    {
+      "kind": "direction",
+      "insight": "« What an incredible motion designer you are » a été traduit en démonstration des fondamentaux : la balle rebondissante « principles first. », puis TIMING, SPACING, EASING, RHYTHM qui appliquent chacun leur propre principe. C'est la meilleure idée de la vidéo, entièrement inventée par le modèle."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Showreel for a résumé » donne la fin « MOTION DESIGNER — SHOWREEL 2026 / available for hire. » : le prompt est pris au pied de la lettre."
+    },
+    {
+      "kind": "build",
+      "insight": "Tempo choisi pour tomber sur un nombre entier d'images (28 im = 128,57 BPM) et écrit à l'écran ; compteur « NNN / 900 » et « 0 KEYFRAMES USED » révèlent une animation 100 % procédurale où tout dérive d'une même horloge, ce qui rend la synchro exacte."
+    },
+    {
+      "kind": "qa",
+      "insight": "L'analyse automatique a manqué la synchro (grille calée sur les contretemps) : pour ce corpus, toujours vérifier la phase de la grosse caisse sur le spectrogramme avant de conclure."
+    },
+    {
+      "kind": "other",
+      "insight": "Pour éviter le gabarit : imposer un concept unique, un sujet réel, une palette et des références ; demander que chaque section démontre une idée plutôt qu'un catalogue d'effets."
+    }
+  ],
+  "steal": [
+    "Fais faire au mot ce qu'il dit : TIMING arrive sur le temps, SPACING resserre son interlettrage, EASING monte en easeOutBack, RHYTHM tombe lettre par lettre sur les triples-croches.",
+    "Rebonds d'intro qui accélèrent (28 → 14 → 7 im) vers le premier temps, puis zoom à travers la balle, qui devient le fond orange du premier mot.",
+    "Volet de barres qui traverse l'écran de bas en haut, couvrant le cadre ≈ 10 im autour du premier temps : la coupe cachée tombe sur le temps fort.",
+    "Rappel final : l'objet de l'intro revient, tombe, rebondit deux fois et devient le point de la signature, avec un bruitage sur chaque impact.",
+    "Choisis un tempo qui donne un nombre entier d'images par temps (28 im à 60 fps = 128,57 BPM) et place chaque événement sur un multiple."
+  ],
+  "flaws": [
+    "Intro de 1,6 s avec une balle de 2 % H sur fond noir : peu d'énergie, temps mort pour la grammaire 1600.",
+    "Section DATA en tableau de bord générique (carte blanche, pastille LIVE, anneau, +312 %) : cliché d'interface SaaS, et hors grille musicale.",
+    "Sphère de points sur sol synthwave et rubans dégradés : deux clichés de « reel IA » étrangers au système plat du début.",
+    "Sortie en glitch (inversions, tranches, rectangles) : effet facile, déjà vu, qui casse l'élégance du reste.",
+    "Même squelette que l'autre run du prompt (CLAUDE, HUD, 8 sections, point orange) : peu de surprise."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "À étudier image par image à 60 fps pour la première moitié : rebonds avec écrasement et bruitages, zoom à travers la balle, quatre mots qui exécutent leur principe, stores centrés sur le temps, grille entière de 28 im. La seconde moitié apporte moins."
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "slug": "topi-003-9ca6b5",
+  "title": "Kinetic type motion showreel",
+  "handle": "@_topi_003",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Transitions motivées de haut niveau (plongée dans le O, particules en logo, retour au point), rafale calée à l'image ; mais 0,5 s de noir, carton final figé 2 s, gabarit de showreel IA.",
+  "summary": "Showreel de 15 s en 7 séquences, version japonaise du même prompt : point rouge qui gonfle sur le drop, HELLO, MOTION aux O en anneaux rouges, plongée dans le O vers une grille qui mute à chaque temps, sphère de points, rafale de 8 mots à la croche avec compteur 60 FPS, particules qui forment CLAUDE, retour au point rouge. Fort : enchaînements. Faible : fin figée.",
+  "prompt_vs_result": [
+    "Même prompt que d'autres showreels du corpus, en japonais : 15 s, « montre quel motion designer incroyable tu es », esprit showreel de CV, « à fond ». Aucun style, texte, musique ni structure imposés.",
+    "Claude a inventé : 7 séquences titrées, palette primaire rouge-crème-outremer-lime, Anton, plongée dans le O, rafale de 8 mots à la croche, compteur 60 FPS, particules qui forment CLAUDE, touches japonaises (動, 動きで語る), fin sur le point rouge.",
+    "La langue du prompt n'a ajouté que des clins d'œil japonais : le squelette (HELLO, MOTION à O rouges, grille, 3D, mots-principes, signature CLAUDE, point final) est presque celui de la version anglaise. Il fallait imposer un concept et une marque."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F03C1E", "role": "rouge-orangé, fil rouge : point d'ouverture, fond HELLO, O en anneaux, fonds TYPE et TIME, soulignement, point final"},
+      {"hex": "#EFEDE6", "role": "crème : fond MOTION et IMPACT, lettres de CLAUDE"},
+      {"hex": "#2B2BE5", "role": "outremer électrique : contre-poinçon du O, fond de la grille et de RHYTHM"},
+      {"hex": "#D4F53C", "role": "lime : fond SHAPE, accents de la grille, « EVERYTHING. »"},
+      {"hex": "#0A0A0C", "role": "noir : ouverture, 動, COLOR, 60 FPS, carton final"},
+      {"hex": "#0E1030", "role": "bleu marine des scènes 3D (sphère, vortex)"},
+      {"hex": "#6A6AFF", "role": "bleu-violet : « THREE DIMENSIONS. », O de COLOR"},
+      {"hex": "#0E0E0E", "role": "texte noir sur aplats"}
+    ],
+    "type": "Anton (nommée à l'écran), capitales, de 25 % (CLAUDE) à 75 % (TYPE) de la hauteur, approche serrée ; kanji en gothique très grasse ; HUD et légendes en mono ≈ 1-2 %, sous-titres très espacés.",
+    "texture": "Vignettage radial sur les aplats ; flou de mouvement vertical sur les lettres qui tombent, flou radial sur les entrées de mots ; franges RGB (atterrissage du M, entrées glitch, anneau d'onde de choc) ; trame de demi-teinte (halftone) sur SHAPE ; traînées de particules ; scintillement de bruit sur les lettres formées de particules ; pas de grain marqué.",
+    "style": "Showreel pop primaire, typographie cinétique",
+    "coherence": "Tient : le rouge #F03C1E court du point d'ouverture au point final (iris, O en anneaux, fonds TYPE et TIME, soulignement) ; une seule police d'affichage (Anton) ; palette de 4 aplats primaires réutilisée dans la rafale ; HUD constant ; un slogan court par chapitre (« I SPEAK IN KEYFRAMES. », « RHYTHM IS EVERYTHING. », « THINKING IN THREE DIMENSIONS. », « ORDER FROM CHAOS. »). Casse : les scènes 3D (sphère, vortex) sur fond marine changent de registre et de rythme ; le carton final, trop statique, retombe."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120 BPM mesuré (pulsation 5,58), drop à 0,79 s (+22 dB). La grille d'animation est en quarts de seconde exacts (multiples de 15 im à 60 fps = croches) : les 8 coupes de la rafale tombent à f480, f495, f510, f525, f540, f555, f570, f585, toutes 1,6 im avant une barre bleue ou bleu clair (l'attaque audio suit ≈ 27 ms plus tard, perçu comme simultané). La coupe vers DEPTH (f348) est à +1,4 im d'un temps, le flash blanc (f600) et l'onde de choc de CLAUDE (f720) à −1,6 im d'un demi-temps, le soulignement (f738) à +1,4 im d'un temps. Densité très inégale : 2 s de rafale (un changement toutes les 0,25 s) contre des sections lentes (sphère 2,1 s, vortex ≈ 1,1 s). Maintiens statiques mesurés : 0-0,48 s (noir d'ouverture), 1,25-1,63 s (HELLO. tenu), 12,4-14,45 s (carton final, 2,07 s, seuls des textes se tapent), soit 20 % de la durée.",
+    "timeline": [
+      {"t": "0:00.00-0:00.50", "what": "Noir complet (maintien de 0,48 s)", "technique": "temps mort d'ouverture"},
+      {"t": "0:00.50-0:00.90", "what": "Cadran à graduations autour d'un point rouge ; les graduations se rétractent, puis sur le drop (f47) le point gonfle et remplit le cadre en 7 im", "technique": "point rouge → plein cadre"},
+      {"t": "0:00.85-0:01.68", "what": "HELLO. monte lettre par lettre d'un masque (décalage 3 im), légende « A MOTION REEL BY CLAUDE — 2026 », soulignement ; tenu 0,4 s", "technique": "révélation masquée"},
+      {"t": "0:01.68-0:01.93", "what": "Glitch en tranches puis volet à bandes horizontales vers le crème", "technique": "volet à bandes"},
+      {"t": "0:01.93-0:03.60", "what": "MOTION construit lettre à lettre (droites qui tombent, O dessinés en anneaux rouges), échos en contour, annotation « ANTON / 400 PX / TRACKING −20 », « I SPEAK IN KEYFRAMES. », 動きで語る。 en vertical ; le premier O se remplit d'outremer et de points", "technique": "construction par type de glyphe"},
+      {"t": "0:03.60-0:03.95", "what": "Zoom ×6 dans le contre-poinçon du O : sa grille de points devient le plein cadre", "technique": "plongée dans un glyphe"},
+      {"t": "0:03.95-0:05.80", "what": "Grille sur outremer dont les glyphes mutent à chaque temps (points → losanges → croix → tirets en champ radial), « RHYTHM IS EVERYTHING. », widget de courbe expo", "technique": "grille qui mute"},
+      {"t": "0:05.80-0:07.95", "what": "DEPTH : sphère de points née d'un point, orbite et annotation, puis déroulée en ruban 3D ; coup de caméra filé", "technique": "3D de points"},
+      {"t": "0:08.00-0:10.00", "what": "8 mots × 15 im, un par croche : TYPE, 動, SHAPE, RHYTHM, COLOR, compteur 0 → 60 FPS, TIME, IMPACT", "technique": "rafale à la croche"},
+      {"t": "0:10.00-0:11.35", "what": "Fondu au gris, flash blanc, éclat de particules, vortex de traînées, « ORDER / FROM CHAOS. »", "technique": "flash + particules"},
+      {"t": "0:11.35-0:12.05", "what": "Les particules se condensent et forment CLAUDE de gauche à droite, solidification avec onde de choc annulaire (f720)", "technique": "particules → logo"},
+      {"t": "0:12.05-0:14.45", "what": "Carton final : soulignement rouge, « MOTION DESIGNER » décodé, モーションデザイナー, 3 formes primaires, « SHOWREEL — 2026 », « AVAILABLE FOR NEW PROJECTS » (quasi fixe 2 s)", "technique": "signature"},
+      {"t": "0:14.45-0:15.00", "what": "Tout s'écrase vers le centre ; le point rouge glisse au centre, pulse sur la dernière frappe, disparaît", "technique": "retour au point"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille mesurée 120 BPM (départ 0,276 s ; temps = 30 im, demi-temps = 15 im à 60 fps). 18 gestes clés sur 22 tombent à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 33 %) : gonflement du point rouge f47 (barre bleue, drop à 0,79 s, mouvement ×3,7 après/avant), début de la légende f62 (bleu clair), volet à bandes f105, premier anneau du O f120, coupe DEPTH f348, les 8 coupes de la rafale f480 à f585 (toutes à −1,6 im), flash blanc f600, onde de choc de CLAUDE f720, soulignement f738, fin de l'écrasement f871, pulsation du point f894 sur la dernière attaque forte (14,907 s, probable). Ratés : atterrissage du M f119 (−2,6 im), départ et fin du zoom dans le O (f222, f237, à 4-5 im des barres), assemblage de CLAUDE fini f709 (+2,4 im). Points verts f497 (動) et f527 (RHYTHM) sur les barres bleues ; 5 des 8 coupes de la rafale ont une attaque forte ≈ 27 ms après (8,278 / 8,777 / 9,021 / 9,276 / 9,532 s). Sans les 8 coupes de la rafale : 10 sur 14 (71 %). Indice auto : départs/demi-temps R = 0,738, p corrigé = 7,4e-6 (verrouillage réel), atterrissages/demi-temps R = 0,536. Le vortex (10,2-11,3 s) et le carton final (12,4-14,45 s) tournent librement.",
+    "synced": ["coupes", "departs", "apparitions", "texte", "flashs", "drop", "pulsations"],
+    "style_match": "Électro à 120 BPM, drop et croches marquées : la rafale à la croche, les entrées glitch et les flashs collent ; le vortex et le carton final, lents, décrochent.",
+    "how_built": "Animation écrite sur une grille de quarts de seconde exacts (multiples de 15 im à 60 fps, soit des croches à 120 BPM) et musique à 120 BPM partageant la même horloge depuis t = 0 ; l'écart constant de ≈ 27 ms vient probablement du décalage d'encodage audio. Bande-son probablement générée ou choisie au tempo du code ; le prompt ne parlait pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Rafale d'un mot par croche",
+      "name_en": "One word per eighth note montage",
+      "t": "0:08.00-0:10.00",
+      "frames": "f480-f599",
+      "fps": 60,
+      "mechanics": "8 cartes de 15 im exactement (0,25 s = une croche à 120 BPM) : TYPE f480, 動 f495, SHAPE f510, RHYTHM f525, COLOR f540, 60 FPS f555, TIME f570, IMPACT f585. Chaque coupe tombe 1,6 im avant une barre bleue ou bleu clair ; 5 coupes sur 8 précèdent de ≈ 27 ms une attaque forte. Chaque carte : 1-2 im d'entrée (flou ou glitch) puis tenue nette ; mot lisible dès la 2e image. C'est la grammaire 1600 (un mot par subdivision) appliquée à des mots-compétences.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-004-cut-f510.jpg, microM-005-cut-f585.jpg",
+      "illus": {"from": 478, "to": 590, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Plein cadre déclenché sur le drop",
+      "name_en": "Drop-triggered fill",
+      "t": "0:00.70-0:00.90",
+      "frames": "f42-f54",
+      "fps": 60,
+      "mechanics": "Le drop mesuré à 0,79 s (+22,3 dB) tombe sur la barre bleue f47 : le point rouge commence à gonfler exactement là et couvre tout le cadre à f53-f54 (7 im) ; la quantité de mouvement est multipliée par 3,7 après le drop. La musique et l'image démarrent ensemble.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f51.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Point final qui pulse sur la dernière frappe",
+      "name_en": "Final dot pulse on the last hit",
+      "t": "0:14.80-0:14.98",
+      "frames": "f888-f899",
+      "fps": 60,
+      "mechanics": "Le point rouge, immobile au centre depuis f886, grossit d'≈ 30 % de f894 à f897, sur la dernière attaque forte de la piste (14,907 s = f894,4), puis rétrécit et disparaît f898-f899 (probable : écart de taille mesuré sur vignettes).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Point rouge qui gonfle en plein cadre",
+      "name_en": "Dot-to-fullframe iris",
+      "t": "0:00.50-0:00.90",
+      "frames": "f30-f54",
+      "fps": 60,
+      "mechanics": "Cadran : cercle fin (rayon ≈ 22 % de la hauteur) et ≈ 24 graduations blanches et jaune-vert autour d'un point rouge. f36-f44 : les graduations raccourcissent et s'éteignent (compte à rebours). f42-f50 : le point passe d'un rayon de 1 à 4, 10, 18 puis 30 % (ease-in) ; f51 il couvre ≈ 75 % du cadre et les premières lettres de HELLO montent déjà dessous ; f53-f54 plein rouge #F03C1E, le cercle fin reste visible en filigrane jusqu'à f56.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f51.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent d'un masque",
+      "name_en": "Masked rise, staggered",
+      "t": "0:00.85-0:01.18",
+      "frames": "f51-f71",
+      "fps": 60,
+      "mechanics": "HELLO. (≈ 33 % de la hauteur, ≈ 52 % de la largeur, noir sur rouge) : chaque lettre monte d'une ligne de masque en ≈ 5 im (ease-out, pas de dépassement visible), décalage ≈ 3 im (0,05 s) : H f51, E f53, L f57, L f60, O f62, point f68. Soulignement noir tracé f69-f71, légende mono « A MOTION REEL BY CLAUDE — 2026 » qui se tape dès f62 (demi-temps).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f51.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glitch en tranches puis volet à bandes horizontales",
+      "name_en": "Slice glitch into stripe wipe",
+      "t": "0:01.68-0:01.93",
+      "frames": "f101-f116",
+      "fps": 60,
+      "mechanics": "f101-f104 : HELLO. découpé en tranches horizontales décalées de ±3-5 % de la largeur ; f105-f108 : bandes crème (≈ 8 % de la hauteur) qui entrent par les bords ; f109-f112 : alternance de bandes rouges et crème qui glissent en sens opposés, texte étiré ; f113-f115 : crème avec bandes rouges résiduelles ; f116 propre. 16 im (0,27 s), départ du volet sur le temps (f105 pour une barre à f106,6).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f112.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Construction du mot par type de glyphe",
+      "name_en": "Per-glyph build (drops and ring draws)",
+      "t": "0:01.93-0:02.30",
+      "frames": "f116-f138",
+      "fps": 60,
+      "mechanics": "MOTION se construit lettre à lettre avec deux gestes : les droites (M, T, I, N) tombent du haut du cadre en ≈ 4 im avec flou vertical et frange RGB à l'atterrissage (M f116-f119, T f122-f126, I f126-f130, N dès f131) ; les O se dessinent en anneaux rouges épais, tracé circulaire en ≈ 6 im (O1 f120-f125, O2 dès f130). Décalage 4-5 im entre lettres. Le geste dépend de la forme de la lettre.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f112.jpg",
+      "illus": {"from": 115, "to": 133, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en Anton aux O en anneaux rouges",
+      "name_en": "Anton title with red ring O's",
+      "t": "0:02.00-0:03.60",
+      "frames": "f120-f216",
+      "fps": 60,
+      "mechanics": "MOTION ≈ 35 % de la hauteur, ≈ 80 % de la largeur, noir #0E0E0E sur crème #EFEDE6 vignetté ; les deux O remplacés par des anneaux rouges #F03C1E dont l'épaisseur vaut ≈ 30 % du rayon. Derrière, copies de MOTION en contour rouge fin empilées verticalement (écho). À 3,5 s le contre-poinçon du premier O se remplit d'outremer #2B2BE5 avec un point rouge, puis d'une grille de points blancs : il annonce la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-move-f231.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Annotation de spécimen typographique",
+      "name_en": "Type spec redline annotation",
+      "t": "0:02.40-0:03.50",
+      "frames": "f144-f210",
+      "fps": 60,
+      "mechanics": "Au-dessus de MOTION, ligne de cote horizontale et légende mono « ANTON / 400 PX / TRACKING −20 », étiquette rouge à droite ; en dessous « I SPEAK IN KEYFRAMES. » tapé (≈ 2 % de la hauteur) ; à droite, slogan vertical japonais 動きで語る。 (« raconter par le mouvement »). Clin d'œil de designer qui montre ses réglages, mais textes à 1-2 % de la hauteur, illisibles en 720p.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le contre-poinçon du O",
+      "name_en": "Glyph counter dive (zoom-through match cut)",
+      "t": "0:03.60-0:03.95",
+      "frames": "f216-f239",
+      "fps": 60,
+      "mechanics": "Le mot grossit de 100 à ≈ 600 % centré sur le premier O en ≈ 17 im (f220-f237), pas croissants (ease-in), flou horizontal sur M, T, I (f225-f231) ; l'anneau rouge sort du cadre f234-f236 ; la grille de points du contre-poinçon devient la grille plein cadre à f237, à la bonne échelle : continuité parfaite. Barre bleue f227 au milieu du zoom (départ et arrivée à 4-5 im des barres).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f231.jpg",
+      "illus": {"from": 216, "to": 239, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Grille dont les glyphes mutent à chaque temps",
+      "name_en": "Morphing glyph grid",
+      "t": "0:03.95-0:05.80",
+      "frames": "f237-f347",
+      "fps": 60,
+      "mechanics": "Grille ≈ 16 × 9 sur outremer #2B2BE5 : points blancs avec accents rouges et lime, puis losanges (4,5 s), croix (5,0 s), tirets orientés en champ radial (5,5 s) : un état par temps (0,5 s), la mutation part du centre et se propage vers les bords (visible f246-f251). Légende « RHYTHM IS / EVERYTHING. » en bas à gauche (blanc + lime, ≈ 2,5 % de la hauteur).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-move-f231.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Widget de courbe d'accélération",
+      "name_en": "Easing graph widget",
+      "t": "0:04.40-0:05.80",
+      "frames": "f264-f347",
+      "fps": 60,
+      "mechanics": "Panneau encadré en bas à droite (≈ 12 % de la largeur) : légende « EASE · easeOutExpo », courbe expo tracée et point qui la parcourt en boucle. Bonne idée pédagogique, trop petite pour être lue.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Sphère de points annotée qui se déroule en ruban",
+      "name_en": "Annotated dot sphere unwinding into a ribbon",
+      "t": "0:05.80-0:07.95",
+      "frames": "f348-f477",
+      "fps": 60,
+      "mechanics": "Coupe sur un temps (f348, +1,4 im) vers le noir : sphère de points blancs et rouges née d'un point (≈ 8 % de la hauteur à 6,0 s, ≈ 76 % à 6,5 s, ease-out), en rotation, cercle d'orbite rouge avec satellite lime, ligne de rappel et coordonnées façon fenêtre 3D, « DEPTH » géant en contour sombre derrière, légende « THINKING IN / THREE DIMENSIONS. ». Vers 7,5 s les points se déroulent en ruban 3D torsadé ; f474-f477 coup de caméra filé (traînées diagonales) avant la coupe sur TYPE.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une direction artistique par mot",
+      "name_en": "One art direction per word card",
+      "t": "0:08.00-0:10.00",
+      "frames": "f480-f599",
+      "fps": 60,
+      "mechanics": "Mots plein cadre (40 à 75 % de la hauteur), chacun avec son traitement : TYPE noir sur rouge, lettres d'échelles différentes qui débordent puis se réalignent en ≈ 6 im ; 動 kanji blanc à ombre rouge décalée sur noir ; SHAPE noir sur lime avec trame de points qui grossit vers les bords et entrée en flou radial ; RHYTHM crème sur outremer avec anneaux concentriques ; COLOR en lettres rouge, bleu-violet, lime, blanc entre deux bandes de rayures diagonales ; TIME en rangées alternant plein et contour qui défilent en sens opposés ; IMPACT noir sur crème à franges RGB.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-004-cut-f510.jpg, microM-005-cut-f585.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule de 0 à 60 FPS",
+      "name_en": "Rolling counter",
+      "t": "0:09.25-0:09.50",
+      "frames": "f555-f569",
+      "fps": 60,
+      "mechanics": "Grands chiffres blancs (≈ 55 % de la hauteur) qui roulent verticalement avec chiffres fantômes superposés : 03 (f555), 53 (f558), 59 (f561), 60 (f564), ease-out, ≈ 9 im ; « FPS » en rouge à ≈ 10 % de la hauteur à droite ; tenue f564-f569. Le compteur qui roule d'un nombre au suivant, que l'utilisateur aime.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrée glitch RGB d'1-2 images",
+      "name_en": "1-2 frame RGB glitch entry",
+      "t": "0:08.25-0:09.78",
+      "frames": "f495-f496, f540, f585-f586",
+      "fps": 60,
+      "mechanics": "Sur 動, COLOR et IMPACT : la première ou les deux premières images sont découpées en tranches horizontales décalées avec séparation rouge/cyan, puis le mot est net dès l'image suivante (franges résiduelles légères sur IMPACT jusqu'à f596). Accent efficace parce que très court, mais répété 3 fois en 1,5 s.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f510.jpg, microM-005-cut-f585.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au gris, flash blanc, éclat de particules",
+      "name_en": "Fade to grey, white flash, particle burst",
+      "t": "0:09.95-0:10.28",
+      "frames": "f597-f617",
+      "fps": 60,
+      "mechanics": "IMPACT pâlit au gris en 3 im (f597-f599), flash blanc f600 (demi-temps, −1,6 im), puis un éclat elliptique de traînées blanches grandit du centre : ≈ 20 % de la largeur (f601), 55 % (f605), 85 % (f609), pas décroissants (ease-out) ; le fond passe du gris au marine en ≈ 12 im (f605-f617).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f585.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Vortex de traînées",
+      "name_en": "Particle streak vortex",
+      "t": "0:10.28-0:11.35",
+      "frames": "f617-f681",
+      "fps": 60,
+      "mechanics": "Milliers de traînées blanches, bleues et roses en tourbillon elliptique incliné autour d'un centre sombre #0E1030, rotation lente ; « ORDER / FROM CHAOS. » (blanc + rouge, ≈ 2,5 % de la hauteur) tapé en bas à gauche f621-f637. Beau, mais 1,1 s passive au milieu d'une vidéo nerveuse.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Les particules s'assemblent en logo",
+      "name_en": "Particles assemble into the wordmark",
+      "t": "0:11.35-0:12.07",
+      "frames": "f681-f724",
+      "fps": 60,
+      "mechanics": "Le vortex se contracte en nuage dense et lumineux (f681-f693, traînées qui s'allongent : accélération), puis les lettres de CLAUDE se forment de gauche à droite (C f697 → E f709) en texture de points scintillants ; f709-f719 le mot reste granuleux ; f720 (demi-temps, −1,6 im) il se solidifie en crème avec franges RGB tandis qu'un anneau d'onde de choc chromatique s'étend de ≈ 30 à plus de 60 % de la hauteur en 4 im (f720-f724) et que le fond passe au noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-006-move-f724.jpg",
+      "illus": {"from": 689, "to": 727, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre décodé",
+      "name_en": "Scramble decode text",
+      "t": "0:12.40-0:13.50",
+      "frames": "f744-f810",
+      "fps": 60,
+      "mechanics": "« MOTION DESIGNER » (blanc, ≈ 2,2 % de la hauteur, interlettrage ≈ +40 %) se décode à partir de caractères aléatoires rouges (« PA », « TF100E49 ») entre ≈ 12,5 et 13,5 s ; traduction japonaise モーションデザイナー en gris dessous. Classique des vidéos tech, cohérent avec le ton.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carton final complet",
+      "name_en": "Full end card",
+      "t": "0:12.07-0:14.45",
+      "frames": "f724-f867",
+      "fps": 60,
+      "mechanics": "CLAUDE centré (≈ 27 % de la hauteur, ≈ 49 % de la largeur, crème #EFEAE0) ; soulignement rouge tracé de gauche à droite dès f738 (temps, +1,4 im) ; trois formes primaires (cercle rouge, carré bleu, triangle jaune, ≈ 2 % de la hauteur) qui apparaissent l'une après l'autre au-dessus (13,0-13,5 s) ; coins bas « SHOWREEL — 2026 » et « ● AVAILABLE FOR NEW PROJECTS » tapés (13,5-14,0 s). Complet, mais quasi fixe pendant 2 s.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-006-move-f724.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Écrasement vers le point d'origine",
+      "name_en": "Collapse to origin dot",
+      "t": "0:14.45-0:14.98",
+      "frames": "f867-f899",
+      "fps": 60,
+      "mechanics": "Titre et sous-titres s'écrasent et se découpent vers le centre en 4 im (f867-f871, fin sur le demi-temps f871,6) ; il ne reste que le cercle rouge, devenu point, à y ≈ 33 % ; il glisse au centre en ≈ 14 im (f872-f886, ease-in-out, arrivée sur le temps f886,6), pulse f894, disparaît f898-f899. Rappelle le point rouge de l'ouverture (boucle imparfaite à cause des 0,5 s de noir initiales).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Sept chapitres à slogan",
+      "name_en": "Seven tagged chapters",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Séquences numérotées dans le HUD (SEQ 0X / 07 : intro, typographie, rythme, dimension, rafale, chaos, identité), chacune avec un slogan court : « I SPEAK IN KEYFRAMES. », « RHYTHM IS EVERYTHING. », « THINKING IN THREE DIMENSIONS. », « ORDER FROM CHAOS. ». Arc : ouverture lente, montée jusqu'à la rafale (8-10 s, pic d'énergie), respiration sur le vortex, signature. Défaut : accroche après 0,5 s de noir.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Touches bilingues japonaises",
+      "name_en": "Bilingual Japanese accents",
+      "t": "0:03.00-0:14.45",
+      "frames": "f180-f867",
+      "fps": 60,
+      "mechanics": "Le prompt japonais donne trois ajouts : slogan vertical 動きで語る。 à droite de MOTION, carte plein cadre 動 (« mouvement ») dans la rafale, sous-titre モーションデザイナー sous CLAUDE. Le kanji en gothique très grasse tient visuellement face à Anton.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de viseur",
+      "name_en": "Viewfinder HUD",
+      "t": "0:00.50-0:14.45",
+      "frames": "f30-f867",
+      "fps": 60,
+      "mechanics": "Coins en équerre, format et cadence en haut à droite avec point rouge d'enregistrement, timecode en bas à gauche, ligne de progression en bas au centre, « SEQ 0X / 07 — NOM » en bas à droite ; mono gris ≈ 1 % de la hauteur. Même habillage que les autres showreels Claude du corpus : tic IA, illisible en 720p.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette primaire à 4 aplats",
+      "name_en": "Primary four-flat palette",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Rouge-orangé #F03C1E, crème #EFEDE6, outremer #2B2BE5, lime #D4F53C, plus noir et marine pour la 3D. Chaque scène est un aplat ; la rafale les fait défiler à la croche (rouge, noir, lime, outremer, noir, noir, rouge, crème). Le rouge sert de fil : point d'ouverture, O, soulignement, point final.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Contraste rafale / respiration",
+      "name_en": "Burst versus breathing contrast",
+      "t": "0:05.80-0:14.45",
+      "frames": "f348-f867",
+      "fps": 60,
+      "mechanics": "2 s de rafale (un changement toutes les 15 im) encadrées par deux sections lentes (sphère 2,1 s, vortex 1,1 s) : la rafale paraît plus rapide par contraste. Mais le carton final reste quasi fixe 2,07 s et l'ouverture commence par 0,48 s de noir : 20 % de la durée en maintiens.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou, franges RGB et trame",
+      "name_en": "Motion blur, RGB fringes and halftone",
+      "t": "0:01.93-0:12.10",
+      "frames": "f116-f726",
+      "fps": 60,
+      "mechanics": "Flou vertical sur les lettres qui tombent (MOTION), flou radial sur l'entrée de SHAPE, flou horizontal sur le zoom dans le O ; franges rouge/cyan à l'atterrissage du M, sur les entrées glitch et sur l'anneau d'onde de choc ; trame de demi-teinte sur SHAPE ; traînées de particules ; bruit scintillant sur les lettres en particules ; vignettage radial sur tous les aplats.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f112.jpg, microM-003-move-f231.jpg, microM-006-move-f724.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "other", "insight": "Même prompt que tolgayhickiran-e90799 (en anglais) et même squelette : HELLO puis MOTION aux O orange-rouge, grille de points, 3D, mots-principes, CLAUDE + « AVAILABLE FOR… », réduction au point rouge. Le prompt « showreel » déclenche un gabarit par défaut chez Claude."},
+    {"kind": "inputs", "insight": "Prompt en japonais : Claude ajoute 動, 動きで語る。 et モーションデザイナー sans changer la structure ; la langue sert de localisation, pas de direction artistique."},
+    {"kind": "structure", "insight": "Aucune durée de scène imposée : Claude alterne sections lentes (sphère, vortex) et rafale de 8 mots à 15 im, d'où un vrai contraste de rythme, mais il finit sur 2 s de carton quasi fixe."},
+    {"kind": "build", "insight": "Grille d'animation en multiples exacts de 15 im (0,25 s) et musique à 120 BPM : une croche = 15 im à 60 fps. Écrire « 120 BPM, une coupe par croche pendant 2 s » reproduit ce calage."},
+    {"kind": "direction", "insight": "« 全力でやって » (« à fond ») produit une démonstration de techniques (glitch, halftone, compteur, particules, 3D) plutôt qu'un récit : le seul fil est le point rouge."},
+    {"kind": "qa", "insight": "HUD, légendes, annotation de spécimen et widget de courbe (≈ 1-2 % de la hauteur) sont illisibles en 720p ; fixer une taille minimale et interdire le noir d'ouverture."}
+  ],
+  "steal": [
+    "Rafale de mots à la croche : à 120 BPM, un mot toutes les 15 images (60 fps), chaque carte avec son fond propre, entrée glitch d'1-2 images maximum.",
+    "Plonger dans le contre-poinçon d'un O : y placer la texture de la scène suivante, zoomer ×6 en 17 im ease-in ; la texture devient le plein cadre.",
+    "Construire un mot par type de glyphe : les droites tombent du haut avec flou vertical, les O se dessinent en anneaux rouges, décalage 4-5 im.",
+    "Compteur qui roule de 0 à 60 en 9 images, chiffres fantômes superposés pendant le roulement, unité en petit dans la couleur d'accent.",
+    "Particules qui convergent puis s'assemblent en logo de gauche à droite ; solidification sur un demi-temps avec une onde de choc annulaire chromatique."
+  ],
+  "flaws": [
+    "Carton final quasi fixe pendant 2 s (12,4-14,45 s) : seul vrai temps mort, contraire à la règle « toujours en mouvement ».",
+    "0,5 s de noir avant la première image : accroche perdue sur une vidéo de 15 s.",
+    "Squelette identique aux autres showreels Claude du corpus : HUD de viseur, « AVAILABLE FOR… », signature CLAUDE, point rouge final.",
+    "Entrée glitch RGB répétée sur 動, COLOR et IMPACT : même accent trois fois en 1,5 s.",
+    "Textes secondaires (HUD, légendes, widget de courbe) à 1-2 % de la hauteur, illisibles en 720p."
+  ],
+  "deep_study": {"worth": true, "why": "Oui, à 60 fps natif : la rafale de 8 mots calée à la croche, la plongée dans le O, la construction lettre à lettre par type de glyphe, le compteur roulant et l'assemblage des particules en logo sont des recettes précises à mesurer image par image."}
+}

@@ -1,0 +1,429 @@
+{
+  "slug": "reflex-cloud-72ffe5",
+  "title": "Reflex brand motion reel",
+  "handle": "@reflex_cloud",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Concept de marque intelligent, transitions motivées (pupille, mot écrasé en chemin, point avant le drop) et synchro au demi-temps près ; mais scramble répété, milieu illisible et micro-textes trop petits.",
+  "summary": "Bande démo de marque pour reflex.inc, montée au demi-temps sur une électro à 128 BPM probablement composée avec l'animation. Accroche : un flash fait contracter une pupille. Puis see → understand → act, un chemin qui se démêle, un vol à travers des « frames in context », un spectre rouge→violet en volets variés, un logo lettre par lettre. Concept et synchro remarquables ; scramble répété et milieu confus.",
+  "prompt_vs_result": [
+    "Bande démo de 15 s d'un motion designer de haut niveau : accroche dans la première seconde, suite de techniques distinctes (typo, formes, caméra, couleur), image finale nette, rythme « monté sur la musique », promotion de la marque reflex.inc, outils libres.",
+    "Claude a inventé le sens de la marque (voir → comprendre → agir, latence 234 ms, « ultralong context », ν = fréquence), la DA noir/violet en demi-teintes, une grille à 128 BPM affichée à l'écran et probablement la bande-son.",
+    "Prompt bien structuré : chaque consigne a sa séquence, et « cut to music » a produit une vraie grille. « Go crazy » a poussé à la surcharge (scramble partout, collage de cartes) ; il fallait fixer une taille minimale de texte et interdire les arguments inventés."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#111111", "role": "fond principal noir"},
+      {"hex": "#F3F3F1", "role": "fond blanc des mots « act », « e », « x » (vignettage vers #DADAD7)"},
+      {"hex": "#9A76E5", "role": "accent violet : lettres aléatoires du scramble, crochets, soulignement, impulsion, carré, r et f du logo"},
+      {"hex": "#A47DDF", "role": "fond violet de la lettre « f »"},
+      {"hex": "#EFEEEE", "role": "texte blanc cassé du logo et des mots"},
+      {"hex": "#1B1B1B", "role": "fond grainé du carton final"},
+      {"hex": "#4A4552", "role": "flash gris-violet au verrouillage du logo"},
+      {"hex": "#DC0014", "role": "spectre : rouge 428 THz"},
+      {"hex": "#EAE009", "role": "spectre : jaune 508 THz"},
+      {"hex": "#51FF08", "role": "spectre : vert 571 THz"},
+      {"hex": "#14FFEA", "role": "spectre : cyan 612 THz"},
+      {"hex": "#0A5CE6", "role": "spectre : bleu 659-722 THz"}
+    ],
+    "type": "Famille IBM Plex probable : Serif semi-gras pour see/understand/reflex (crochets compris 23-28 % de hauteur), Sans condensé pour « act » à 65 % de hauteur, Mono 1,7 % pour HUD et légendes ; ν en italique mathématique.",
+    "texture": "Trame demi-teinte visible sur les images (œil, robot, ν, iris, ADN), grain fin et vignettage sur tout le film, lueur (glow) sur les lignes, flou de mouvement par échos (act, X), flou radial (zoom dans l'œil du robot, éclat à 8,0 s), tranches de glitch avec franges RVB sur les entrées de lettres, nappes de lumière violette sur le bleu.",
+    "style": "Labo scientifique monochrome, accent violet",
+    "coherence": "Noir #111, blanc cassé et un seul violet #9A76E5 tiennent l'ensemble ; la famille Plex (serif, sans, mono) et le HUD constant (compteur d'images 0000/0900, « 128 bpm 4/4 », points de mesure) posent un cadre de labo. Vraie continuité : les crochets passent de see/understand au logo, le cercle « see » devient ν, « act » devient la ligne du schéma. Ce qui sort du système : le spectre RVB saturé (voulu mais criard) et le collage de cartes de 6 à 9 s."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "Grille de 128 BPM partant de t = 0, affichée à l'écran (« 128 bpm 4/4 », compteur d'images « 0130 / 0900 ») : 1 temps = 28,125 im à 60 fps, 1 demi-temps = 14,06 im. Mesuré 127,9 BPM (netteté 6,85) ; toutes les attaques audio arrivent 28 à 38 ms après la grille. 25 plans, médiane 0,25 s, plus court 0,05 s. Coupes et changements à f15, f141, f169, f225, f253, f309, f323, f352, puis un geste de caméra par temps (f366, f394, f422, f450, f478, f535), puis f563 → f661 toutes les 14 im (couleurs), f675 → f746 toutes les 14 im (lettres), f760, f773, f788. L'image tombe 1-2 im avant l'attaque sonore. Seuls f111 (−3 im), f201 (+3) et f510 (+3) s'écartent. Densité : un événement toutes les 0,23 à 0,47 s. Aucun temps mort : le seul maintien est l'image finale (0,92 s, 14,08-14,98 s), demandée par le prompt et posée sur le fondu musical.",
+    "timeline": [
+      {"t": "0:00-0:00.23", "what": "Œil en très gros plan, pupille dilatée (≈ 58 % de l'iris), crochets blancs, étiquette « stimulus »", "technique": "accroche en demi-teinte"},
+      {"t": "0:00.25-0:00.50", "what": "Flash blanc sur l'impact sonore ; la pupille se contracte, crochets violets, « response · latency 234 ms »", "technique": "réflexe pupillaire + surexposition"},
+      {"t": "0:00.50-0:01.60", "what": "Dérive lente de l'œil, crochets qui clignotent, valeurs qui changent", "technique": "plan vivant"},
+      {"t": "0:01.60-0:01.85", "what": "Poussée accélérée dans la pupille jusqu'au noir", "technique": "plongée dans la pupille"},
+      {"t": "0:01.85-0:02.33", "what": "« see » se décode depuis des glyphes violets, crochets qui glissent depuis les bords", "technique": "scramble + crochets élastiques"},
+      {"t": "0:02.35-0:02.80", "what": "« understand » lettre par lettre en bascule, soulignement violet", "technique": "bascule par lettre"},
+      {"t": "0:02.82-0:03.33", "what": "« act » géant claque sur fond blanc, définition « v. to take action; to respond »", "technique": "arrivée en claque (slam-in)"},
+      {"t": "0:03.35-0:03.73", "what": "Inversion négative, « act » s'écrase en une ligne lumineuse qui se rétracte", "technique": "mot écrasé en ligne"},
+      {"t": "0:03.75-0:04.80", "what": "La ligne devient le chemin see ◉ → □ act ; boucles « deliberation » puis ligne droite « the shortest path »", "technique": "chemin qui se démêle"},
+      {"t": "0:04.82-0:05.15", "what": "Impulsion violette le long du chemin, impact sur le carré, flash violet, onde annulaire", "technique": "impulsion + impact"},
+      {"t": "0:05.15-0:05.60", "what": "Le cercle « see » devient ν ; recul : le schéma devient une petite carte", "technique": "morph en glyphe + recul"},
+      {"t": "0:05.60-0:09.35", "what": "Plongée dans la carte, vol à travers des cartes (robot, œil, ν, ADN) ; compteur « frames in context » 0 → 1 048 576", "technique": "vol caméra + compteur exponentiel"},
+      {"t": "0:09.38-0:11.12", "what": "Spectre rouge 428 THz → bleu 722 THz, une couleur par demi-temps, onde de plus en plus serrée", "technique": "couleurs au demi-temps + volets variés"},
+      {"t": "0:11.13-0:11.23", "what": "Noir avec un seul point violet (7 im)", "technique": "point avant le drop"},
+      {"t": "0:11.25-0:12.65", "what": "Drop : r, e, f, l, e, x, une lettre par demi-temps, un style chacune ; le X fonce vers la caméra", "technique": "logo lettre par lettre"},
+      {"t": "0:12.67-0:13.12", "what": "« reflex » en style lettre de rançon, puis unification en serif blanc", "technique": "unification des lettres"},
+      {"t": "0:13.13-0:14.08", "what": "« reflex [ν] » se verrouille, anneau violet qui s'élargit, slogan qui se décode", "technique": "verrouillage du logo"},
+      {"t": "0:14.08-0:15.06", "what": "Image finale tenue : « reflex [ν] », « Seeing is understanding », « reflex.inc »", "technique": "carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Les barres du dossier (grille 127,9 BPM démarrant à 0,486 s) tombent 1 im après une grille 128 BPM partant de 0 ; les attaques mesurées (bandes 150-1500 Hz et > 4 kHz) arrivent toutes 28 à 38 ms après les multiples de 0,234 s. Comptage, un événement par geste (coupe, apparition, départ de caméra) : 33 sur 36 à ±2 im d'une barre bleue, bleu clair ou d'un point vert (hasard ≈ 36 %). Exemples : flash f15 sur l'impact à 0,263 s (point vert, microM-001) ; coupes couleur f563, f577, f591, f605, f619, f633, f647, f661, toutes à 14 im d'écart ; lettres f675, f690, f704, f718, f732, f746 idem (microM-004, 005) ; verrouillage f788 sur le temps (microM-006). La coupe f289 tombe sur un effet sonore hors grille (4,832 s). Ratés, tous à 3 im : f111, f201, f510. Structure : quasi-silence 0,10-0,25 s puis impact = flash ; groove à 1,9 s = premier mot ; montée 10,1-11,25 s (basses −14 → −41 dB, aigus −30 → −15 dB) = spectre ; drop à 11,28 s = « r » ; fondu 13,6-15 s (−11 → −26 dB) = carton. Indice automatique : synchro forte, attaques z = 3,1, basses z = 3,8.",
+    "synced": ["coupes", "apparitions", "texte", "camera", "couleur", "flashs", "impacts", "drop"],
+    "style_match": "Électro à 128 BPM avec impact, montée et drop : coupes au demi-temps, glitchs secs, fréquence et couleur qui grimpent avec le riser, logo sur le drop. Accord parfait.",
+    "how_built": "Le prompt demande « Pacing should feel like it's cut to music » et laisse Claude choisir ses outils. Claude a écrit la timeline en temps à 128 BPM, l'affiche même dans le HUD, et la bande-son suit exactement la structure (impact, groove, montée, drop, fondu final) : musique probablement composée ou générée en code avec l'animation (tag « Music »). Le décalage constant de +30 ms entre la grille et les attaques vient probablement de l'encodage audio."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche par réflexe pupillaire",
+      "name_en": "pupillary reflex hook",
+      "t": "0:00-0:00.50",
+      "frames": "f0-f30",
+      "fps": 60,
+      "mechanics": "Œil en très gros plan en niveaux de gris (iris ≈ 92 % de la hauteur), pupille dilatée ≈ 58 % de l'iris, crochets blancs, étiquette « stimulus ». À f15 flash blanc sur l'impact (0,263 s) ; la pupille tombe à ≈ 20 % de l'iris en 8 im (f15-f23), puis remonte à ≈ 25 % vers f27 (ressort, comme un vrai réflexe). L'iris recule à ≈ 85 % de la hauteur, les crochets deviennent violets et se resserrent, l'étiquette passe à « response · latency 234 ms » (234 ms = un demi-temps à 128 BPM). Le nom « reflex » est montré, pas écrit.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f18.jpg",
+      "illus": {"from": 12, "to": 30, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash de surexposition sur l'impact",
+      "name_en": "overexposure flash on the hit",
+      "t": "0:00.23-0:00.33",
+      "frames": "f14-f20",
+      "fps": 60,
+      "mechanics": "f14 s'éclaircit, f15 est presque blanc (énergie d'image 103 contre 1-3 avant), puis l'image réapparaît en 5 im (f16-f20) en fondu dégressif. Le flash est la « lumière » qui déclenche le réflexe : effet motivé, pas décoratif. Il précède l'attaque audio d'environ 1 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f18.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant l'impact, vide avant le drop",
+      "name_en": "silence before the hit, gap before the drop",
+      "t": "0:00.10-0:11.28",
+      "frames": "f6-f675",
+      "fps": 60,
+      "mechanics": "Ouverture : un son bref, puis 150 ms de quasi-silence (−42 à −45 dB, 0,10-0,25 s) avant l'impact à 0,263 s qui porte le flash. Drop : de 10,1 à 11,25 s les basses disparaissent (−14 → −41 dB) et les aigus montent (−30 → −15 dB), un creux de 50 ms à 11,2 s, et l'image se vide (noir + un point, f668-f674) avant le drop à 11,278 s qui porte le « r » (f675).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bande démo calé sur le tempo",
+      "name_en": "tempo-aware reel HUD",
+      "t": "0:01.85-0:14.08",
+      "frames": "f111-f844",
+      "fps": 60,
+      "mechanics": "Mono gris de 18 px (1,7 % de la hauteur) : compteur d'images « 0130 / 0900 » en haut à droite (marge 3,2 %), « 128 bpm 4/4 » en bas à gauche, 4 points de mesure en bas à droite (un allumé par temps, probable). Étiquettes techniques sur l'œil (« stimulus », « response · latency 234 ms · pupil 0.xx »). Le HUD rend la grille musicale visible et donne le ton « labo ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans la pupille",
+      "name_en": "dive into the pupil",
+      "t": "0:01.60-0:01.85",
+      "frames": "f96-f111",
+      "fps": 60,
+      "mechanics": "Poussée vers la pupille en 15 im, ease-in (énergie 3,4 à f96 → 29,8 à f109) ; le noir de la pupille remplit le cadre et devient le fond noir de la scène typographique (f111). La coupe arrive 3 im avant le premier temps du groove (1,909 s) : anticipation volontaire probable.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Décodage de texte (scramble)",
+      "name_en": "text scramble decode",
+      "t": "0:01.88-0:02.08",
+      "frames": "f113-f125",
+      "fps": 60,
+      "mechanics": "« see » : glyphes aléatoires violets #9A76E5 (« R », « 9K », « s<V », « sBD », « se2 », « seX ») ; les lettres se figent en blanc de gauche à droite, une toutes les 4 im (f117, f121, f125). Même procédé pour « deliberation » (f230-f242), « the shortest path » (f254-f263), « ultralong context » (6,0-6,5 s), le slogan (f796-f836) et « reflex.inc » : six fois en 15 s.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Crochets élastiques qui suivent le mot",
+      "name_en": "elastic brackets",
+      "t": "0:01.98-0:13.22",
+      "frames": "f119-f793",
+      "fps": 60,
+      "mechanics": "Les crochets « [ ] » arrivent des bords du cadre (f119, flous) et viennent serrer « see » en ≈ 6 im ease-out (f123) ; à f141 ils s'écartent d'un coup (2-3 im, flou) pour la largeur de « understand » (67 % du cadre) ; ils reviennent encadrer le ν du logo « reflex [ν] » (f788-f793). Un même signe graphique relie le début et la fin.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui basculent une à une",
+      "name_en": "per-letter flip-in",
+      "t": "0:02.35-0:02.62",
+      "frames": "f141-f157",
+      "fps": 60,
+      "mechanics": "« understand » : chaque lettre pivote depuis le haut (rotation X ≈ −90° → 0) avec flou vertical, décalage ≈ 1,2 im par lettre (10 lettres de f141 à f153), bascule de 4 à 6 im chacune. Puis un soulignement violet fin se trace de gauche à droite sous le mot (f153-f157). Départ sur le temps (f141).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois mots, trois voix",
+      "name_en": "see / understand / act scale escalation",
+      "t": "0:01.85-0:03.33",
+      "frames": "f111-f200",
+      "fps": 60,
+      "mechanics": "« [see] » et « [understand] » en serif semi-gras blanc sur #111 (bloc 28 % puis 23 % de la hauteur crochets compris, 31 % puis 67 % de la largeur) ; « act » en sans condensé noir sur blanc #F3F3F1, 65 % de la hauteur (702 px) et 60 % de la largeur, avec une ligne de dictionnaire en mono « v. to take action; to respond » en bas à gauche. Le contraste typographique monte avec le sens : voir (petit) → agir (énorme, inversé).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui claque en arrivant",
+      "name_en": "slam-in scale",
+      "t": "0:02.82-0:02.97",
+      "frames": "f169-f178",
+      "fps": 60,
+      "mechanics": "« act » entre à f169 (sur le temps) à ≈ 2,5× sa taille avec 4-5 échos décalés et franges colorées, et revient à 1× en 4 im (énergie 138 → 85 → 66 → 22), puis petite secousse f174-f178. Arrêt sec, sans rebond.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion négative",
+      "name_en": "negative flip",
+      "t": "0:03.35",
+      "frames": "f200-f201",
+      "fps": 60,
+      "mechanics": "En une image, fond blanc → noir et « act » noir → blanc (énergie 207, la plus forte du film). Arrive 2 im après une attaque audio (3,316 s), 3 im après la grille : léger retard. Annonce l'écrasement du mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f201.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mot écrasé en ligne qui devient le chemin",
+      "name_en": "word squashes into a line that becomes the path",
+      "t": "0:03.35-0:03.78",
+      "frames": "f201-f227",
+      "fps": 60,
+      "mechanics": "« act » s'aplatit verticalement (échelle Y 1 → ≈ 0,02) avec flou horizontal en 8 im, ease-in (énergie 2,9 → 30 à f207), et laisse une ligne blanche lumineuse ≈ 95 % de la largeur (f209). La ligne se rétracte à ≈ 45 % en 15 im, ease-out (f209-f224), puis ses extrémités deviennent le cercle « see » et le carré « act » (f227, sur le temps). Raccord par la forme : le mot devient le schéma.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f201.jpg",
+      "illus": {"from": 201, "to": 228, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Chemin qui se démêle",
+      "name_en": "tangled path straightens",
+      "t": "0:03.78-0:04.80",
+      "frames": "f227-f288",
+      "fps": 60,
+      "mechanics": "Entre le cercle « see » et le carré « act », la ligne se couvre de 3-4 boucles qui grandissent f227-f242 (« deliberation »), tiennent, puis à f253 (sur le temps) se resserrent en vagues (f263), en ondulations (f266-f275) et en ligne droite (f278) : ≈ 25 im, ease-out, pendant que le titre devient « the shortest path / between seeing and acting ». Métaphore produit dessinée en un seul tracé.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Impulsion qui voyage puis impact",
+      "name_en": "travelling pulse and impact",
+      "t": "0:04.68-0:05.08",
+      "frames": "f281-f305",
+      "fps": 60,
+      "mechanics": "Un segment violet court sur la ligne de gauche à droite (f281-f287) et frappe le carré à f289 : le carré devient un losange violet (45°), le fond vire au violet sombre, un anneau s'élargit de ≈ 8 % à 40 % de la hauteur en 12 im en s'effaçant, le losange revient à 0° avec un petit dépassement (f293-f305). Calé sur un effet sonore hors grille (4,832 s, 1 im après la coupe).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le cercle devient le glyphe ν",
+      "name_en": "circle-to-glyph morph",
+      "t": "0:05.15-0:05.28",
+      "frames": "f309-f317",
+      "fps": 60,
+      "mechanics": "Sur le temps (f309), le cercle « see » perd son point (f311), se déforme en goutte (f314) et devient le ν italique (f317) : le symbole du logo naît du schéma. 8 im, sans flash.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul qui transforme le plan en carte, puis plongée",
+      "name_en": "pull back to a card, then dive in",
+      "t": "0:05.38-0:05.87",
+      "frames": "f323-f352",
+      "fps": 60,
+      "mechanics": "Au demi-temps f323, tout le schéma rétrécit (flou de mouvement) jusqu'à une petite carte encadrée à ≈ 20 % de l'échelle (f335), en 12 im ease-in-out. À f342 la carte bascule en 3D et la caméra fonce dedans à travers un plan d'anneaux concentriques (moiré), pic de vitesse à f350, arrivée sur la carte robot à f352 (demi-temps).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f352.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Vol à travers des cartes",
+      "name_en": "fly-through of frames",
+      "t": "0:05.87-0:09.35",
+      "frames": "f352-f562",
+      "fps": 60,
+      "mechanics": "Cartes inclinées de −10° à 35°, grilles et images en demi-teinte (robot, œil, ν, hélice d'ADN) défilent ; un nouveau mouvement de caméra par temps (pics d'énergie à f366, f380, f394, f422, f450, f478, f507, f535) ; flou radial dans l'œil du robot (f366-f367) et éclat en X à 8,0 s ; fin sur une rangée de 8 cartes en perspective (9,0 s). Synchro juste, mais lecture difficile : tout bouge, tout est texturé.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur exponentiel",
+      "name_en": "exponential counter",
+      "t": "0:05.73-0:09.33",
+      "frames": "f344-f560",
+      "fps": 60,
+      "mechanics": "« frames in context » en mono avec séparateurs de milliers, en bas à gauche avec barre violette : 0 → 1 040 (f344) → 1 751 (6,0 s) → 4 650 → 12 344 → 32 768 (7,5 s = 2^15) → 86 983 → 230 898 → 612 925 → 1 048 576 (9,33 s = 2^20). Croissance ≈ ×1,033 par image (≈ 2,8 doublements par seconde) : le compteur accélère avec la caméra. Étiquette « ultralong context » qui se décode à droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f352.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Trame demi-teinte et grain",
+      "name_en": "halftone screen and grain",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Toutes les images (œil, robot, ν, iris, ADN, lettre r) sont tramées en points visibles ; grain fin et vignettage permanents, fond final #1B1B1B bruité. Donne une matière « imprimée / scientifique » cohérente à un film entièrement généré.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Spectre : une couleur par demi-temps",
+      "name_en": "spectrum colour shifts on half-beats",
+      "t": "0:09.38-0:11.12",
+      "frames": "f563-f667",
+      "fps": 60,
+      "mechanics": "8 aplats plein cadre, un toutes les 14 im : rouge #DC0014 (428 THz) → rouge-orange #DC2504 (472) → jaune #EAE009 (508) → jaune-vert #C3FF0A (535) → vert #51FF08 (571) → cyan #14FFEA (612) → bleu #0A5CE6 (659) → bleu + nappes violettes (722). Fréquences physiquement justes (700 nm ≈ 428 THz), étiquette « ν … THz » en bas à gauche, barre spectrale en haut avec un repère ▼ qui avance, légende « the rate at which a system sees, decides, and acts ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 563, "to": 667, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Un volet différent à chaque couleur",
+      "name_en": "a different wipe per colour",
+      "t": "0:09.38-0:11.08",
+      "frames": "f563-f665",
+      "fps": 60,
+      "mechanics": "Éclosion radiale depuis un globe rouge (f563), bande diagonale (f578), stores vénitiens à ≈ 10 lames horizontales (f593), balayage diagonal doux (f605), iris en losange depuis le centre (f620), tache liquide depuis le coin haut droit (f635), faisceau lumineux triangulaire (f647), fuite de lumière violette (f662). Chaque volet dure 3 à 6 im et part sur le demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "L'onde accélère avec la montée",
+      "name_en": "wave frequency follows the riser",
+      "t": "0:09.38-0:11.12",
+      "frames": "f563-f667",
+      "fps": 60,
+      "mechanics": "Trois sinusoïdes (une épaisse noire, deux fines décalées) traversent le cadre : ≈ 3 périodes en rouge, 4,5 en jaune, 9 en vert, 16 en cyan, ≈ 30 en bleu avec une enveloppe en fuseau (paquet d'onde). Pendant ce temps la musique retire les basses (−14 → −41 dB) et monte les aigus (−30 → −15 dB) : la tension visuelle (fréquence, couleur) monte avec le riser jusqu'au drop.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tout se réduit à un point avant le drop",
+      "name_en": "collapse to a dot before the drop",
+      "t": "0:11.13-0:11.25",
+      "frames": "f668-f675",
+      "fps": 60,
+      "mechanics": "7 im (0,117 s) totalement figées : fond noir et un seul point violet de ≈ 4 px au centre, pendant le creux sonore. À f675 le drop fait exploser le « r » plein cadre. Version minimale du « texte qui rétrécit en point puis révélation ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo lettre par lettre, un style par demi-temps",
+      "name_en": "one letter per half-beat, one style each",
+      "t": "0:11.25-0:12.65",
+      "frames": "f675-f759",
+      "fps": 60,
+      "mechanics": "r violet en demi-teinte sur gris (f675), e serif noir sur blanc (f690), f blanc extrudé en 3D sur violet #A47DDF (f704), l blanc sur noir (f718), e en contour avec échos de contours violets (f732), x serif noir sur blanc (f746) : exactement 14 im chacune. Chaque entrée : 1-2 im de tranches de glitch ou d'échos, puis léger recul (énergie décroissante sur ≈ 10 im). Chaque lettre rappelle un style déjà vu.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f690.jpg",
+      "illus": {"from": 675, "to": 760, "n": 7}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Traversée de la lettre X",
+      "name_en": "fly through the X",
+      "t": "0:12.55-0:12.67",
+      "frames": "f753-f760",
+      "fps": 60,
+      "mechanics": "Le X grossit vers la caméra (≈ ×1 → ×8) avec traînée d'échos gris, ease-in (énergie 7,5 → 60 à f759) ; ses fûts noirs remplissent le cadre et l'on coupe sur le mot assemblé à f760, sur le temps. Même principe que la plongée dans la pupille : le noir d'une forme devient la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f746.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot « lettre de rançon » puis unification",
+      "name_en": "ransom-note word then unify",
+      "t": "0:12.67-0:13.12",
+      "frames": "f760-f787",
+      "fps": 60,
+      "mechanics": "À f760 « reflex » apparaît avec chaque lettre dans son style précédent (r violet, e blanc en réserve dans un pavé, f violet, l blanc, e contour violet, x blanc), 57 % de la largeur. Au demi-temps f773 les lettres se brouillent (glitch, flou f780) puis se figent en serif blanc unique (net à f787). Récapitulatif du film en un mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f791.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Verrouillage du logo et image finale",
+      "name_en": "logo lockup and end frame",
+      "t": "0:13.13-0:15.06",
+      "frames": "f788-f899",
+      "fps": 60,
+      "mechanics": "Sur le temps f788, fond gris-violet #4A4552 en flash, « [ » glisse à gauche, le ν arrive flou de la droite (f790), « ] » se ferme (f791-f793) : « reflex [ν] » blanc #EFEEEE, 47 % de la largeur, bloc de 160 px (14,8 % de la hauteur) centré. Un anneau violet fin s'élargit depuis le ν (f795-f830), le slogan se décode en « Seeing is understanding » (f796-f836), « reflex.inc » en bas. Image tenue 0,92 s (f844-f899) pendant que la musique s'éteint (−11 → −26 dB).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f791.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Tranches de glitch",
+      "name_en": "glitch slices",
+      "t": "0:11.50-0:13.00",
+      "frames": "f690-f780",
+      "fps": 60,
+      "mechanics": "Décalages horizontaux de bandes avec franges RVB sur 1-2 im à l'entrée de e (f691), f (f704), x (f746-f748) et à l'unification de « reflex » (f780). Dosé, mais c'est un tic des vidéos « tech ».",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f690.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage au demi-temps à 128 BPM",
+      "name_en": "half-beat cutting at 128 BPM",
+      "t": "0:09.38-0:13.13",
+      "frames": "f563-f788",
+      "fps": 60,
+      "mechanics": "Coupes à f563, f577, f591, f605, f619, f633, f647, f661, f675, f690, f704, f718, f732, f746, f760, f788 : multiples de 14,06 im depuis t = 0, arrondis à l'image suivante. L'attaque sonore arrive 28-38 ms après la grille, soit l'image 1-2 im avant le son, constant. Deux mesures entières montées au demi-temps, puis respiration sur le temps (f760, f788).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f746.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale épousée",
+      "name_en": "music structure mapped to the edit",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Impact (0,263 s) = flash et réflexe ; groove (1,909 s) = plongée dans la pupille puis premier mot ; une mesure de démonstration par idée (typo, chemin, caméra) ; montée sans basses (10,1-11,25 s) = spectre ; drop (11,278 s) = logo lettre par lettre ; plus fort moment (13,12 s, −8 dB) = verrouillage du logo ; fondu final = image tenue.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Le prompt donne une ossature (accroche en 1 s, techniques distinctes : typo, formes, caméra, couleur, image finale nette) et Claude la suit à la lettre : flash + pupille à 0,25 s, see/understand/act, chemin, vol de cartes, spectre, logo tenu 0,92 s."},
+    {"kind": "build", "insight": "« Pacing should feel like it's cut to music » + « starting with zero of my tools » : Claude a écrit la timeline en temps à 128 BPM et l'affiche dans le HUD (« 128 bpm 4/4 », compteur /0900) ; la bande-son suit la structure (impact, groove, montée, drop, fondu), donc probablement générée avec l'animation."},
+    {"kind": "inputs", "insight": "La marque n'est qu'un nom (« reflex. inc ») : Claude invente son sens (un réflexe = voir → comprendre → agir), des chiffres (latence 234 ms, 1 048 576 images de contexte), un symbole (ν = fréquence) et un slogan. Bon réflexe créatif, mais arguments produit non vérifiés."},
+    {"kind": "direction", "insight": "« Go crazy » explique la densité (25 plans, médiane 0,25 s) et ses excès : scramble répété six fois, section de cartes surchargée entre 6 et 9 s."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : HUD et légendes à 1,5-1,7 % de la hauteur, illisibles sur mobile. À préciser : taille minimale du texte, nombre maximal de répétitions d'un même effet."},
+    {"kind": "other", "insight": "La DA noir + violet unique en demi-teintes n'est pas demandée : Claude a choisi une esthétique de labo scientifique cohérente avec « reflex » (fréquences, latence, étiquettes de mesure)."}
+  ],
+  "steal": [
+    "Incarne le nom de la marque par un geste dès la première seconde : ici un flash fait contracter une pupille, « reflex » sans un mot.",
+    "Fais naître la scène suivante du dernier mot : « act » s'écrase en ligne, la ligne devient le chemin du schéma suivant.",
+    "Sur la montée musicale, fais grimper un paramètre visuel au demi-temps (couleur du spectre, fréquence d'onde), puis réduis tout à un point 7 im avant le drop.",
+    "Construis le logo une lettre par demi-temps, chacune dans un style déjà vu, puis unifie-les sur le temps fort suivant.",
+    "Écris la timeline en temps (128 BPM = 28,125 im par temps à 60 fps) et coupe 1-2 im avant l'attaque sonore."
+  ],
+  "flaws": [
+    "Décodage de texte (scramble) répété six fois en 15 s : le même accent partout, tic de vidéo IA.",
+    "Section « ultralong context » (6-9 s) : collage de cartes inclinées, demi-teintes et flous où l'œil ne sait plus quoi lire.",
+    "HUD et légendes à 1,5-1,7 % de la hauteur : illisibles sur mobile.",
+    "Arguments produit inventés (latence 234 ms, 1 048 576 images de contexte) présentés comme des faits.",
+    "Spectre RVB saturé qui rompt quelques secondes la DA noir et violet."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : meilleure leçon de synchro du lot. Grille 128 BPM explicite, une couleur puis une lettre par demi-temps, point avant le drop, et trois transitions motivées (pupille, act → ligne → chemin, X traversé) à relever image par image."
+  }
+}

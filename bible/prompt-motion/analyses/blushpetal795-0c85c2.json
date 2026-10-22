@@ -1,0 +1,437 @@
+{
+  "slug": "blushpetal795-0c85c2",
+  "title": "Recruiter self-intro reel",
+  "handle": "@blushpetal795",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Ouverture remarquable (trait → point → O → aplat → anneau photo) et typo sémantique ; module de stats net et calé ; mais formule répétée, tenues mortes sur la carte et synchro inégale.",
+  "summary": "Vidéo de présentation de 15 s pour un recruteur, en noir et orange : le nom s'écrit autour d'un point orange qui devient un flash puis l'anneau du portrait, une promesse animée par le sens des mots, quatre chiffres-preuves enchaînés en volets diagonaux, un projet personnel cartographié, des cartes de compétences et un carton de contact. Ouverture brillante, milieu calé sur la musique, fin plus convenue.",
+  "prompt_vs_result": [
+    "Une consigne courte : 15 s « dynamiques » où la personne se présente à un recruteur, avec toutes les techniques de motion « comme un showreel de CV », « go all out ». Les faits (nom, photo, chiffres, projet, contacts) viennent forcément de pièces fournies.",
+    "Claude a choisi l'arc CV (accroche nom → promesse → 4 preuves chiffrées → projet perso → compétences → contact), la palette noir/orange/blanc, le duo grotesque grasse + serif italique, une data viz différente par chiffre et la bande-son.",
+    "« Toutes tes compétences » a poussé à varier chaque scène (5 data viz, 6 transitions) : riche mais répétitif dans sa formule. Il aurait fallu imposer la grille musicale (scènes sur les temps) et une durée de lecture minimale par chiffre."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#08080A", "role": "noir légèrement froid : fond principal"},
+      {"hex": "#FD5E20", "role": "orange unique : O du nom, flash, anneau du portrait, mots en serif, data viz, fond des scènes 1 → 14 et du carton"},
+      {"hex": "#C5481A", "role": "orange assombri des bords (vignette radiale des fonds orange)"},
+      {"hex": "#F4F6F8", "role": "blanc cassé : texte sur noir, fond de la scène 100+"},
+      {"hex": "#BEC0C2", "role": "gris des bords du fond clair (vignette)"},
+      {"hex": "#A0A3AD", "role": "gris des légendes et sous-titres (estimé)"},
+      {"hex": "#EEEAE7", "role": "crème des cartes de compétences (autres cartes lavande #E8E4EF et menthe #DFE6E6)"}
+    ],
+    "type": "Grotesque très grasse à grand œil (type Inter Display Black / Bricolage, probable) pour nom et chiffres (19-20 % H), serif italique fine (type Instrument Serif) en orange sur le mot clé, sans moyenne grise 3 % H pour légendes.",
+    "texture": "Vignettage radial sur tous les fonds (noir, orange #FD5E20 → #C5481A aux bords, clair #F4F6F8 → #BEC0C2) ; halo orange diffus autour du O, de l'anneau de progression et du faisceau de la carte ; flou de mouvement directionnel réel sur les sorties poussées (4,2 s et 11,3 s) ; ombres portées douces sous les cartes. Pas de grain.",
+    "style": "Personal branding sombre, accent orange unique",
+    "coherence": "Un seul accent (orange) porte tout : le O du nom, le flash, l'anneau du portrait, les mots en serif italique (clarity, Delhi NCR, system, Let's talk), chaque data viz et le carton final. Le motif « trait + point » ouvre (trait qui devient le O) et ferme (filet terminé par un point sous le nom). Ce qui casse : les chiffres 1 → 14 dans une chasse plus large que les autres, l'histogramme en cloche sans rapport avec la donnée, et le mélange de transitions (iris, poussée floue, volets diagonaux, coupe sèche, barres montantes) qui fait catalogue."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120 BPM : grosses caisses mesurées image par image à f5 + 30k (x,08 / x,58 s), soit 1 im après la grille du dossier (x,067 / x,567). Clics aigus sur les demi-temps (f320, f380, f440, f500) et montées de bruit avant certaines frappes. Le module de stats (4,5-8,5 s) est réglé comme un métronome : une scène de 60 im (2 temps) par chiffre, volet diagonal de 5 im qui démarre exactement sur le clic du demi-temps (f320, f380, f440), compteur qui part 2 im avant la grosse caisse suivante (f333, f393, f453, et f274 pour le premier). Hors de ce module, les gestes suivent leur propre horloge : aplat orange plein à f117 (8 im avant l'impact de f125), coupe vers la carte à f510 (entre f500 et f515), carton final couvrant à f780 (5 im avant l'impact de f785). Les coupes détectées tombent toutes à 5-10 im d'un temps. Densité : très forte de 0,3 à 4,1 s puis de 4,5 à 8 s ; creux sur la carte de 9,7 à 11,2 s (1,5 s où seuls des étiquettes et un curseur bougent) ; tenues de 0,45-0,55 s sur la phrase (3,7-4,15 s) et sur 100+ (7,95-8,48 s) ; tenue finale ≈ 0,8 s sur le carton de contact. Plan médian 1,1 s.",
+    "timeline": [
+      {"t": "0:00-0:00.55", "what": "Noir ; un trait orange se trace à 40 % de la hauteur puis se rétracte en pilule puis en point", "technique": "morph trait → pilule → point"},
+      {"t": "0:00.45-0:01.05", "what": "Le point devient le O du prénom ; les lettres montent d'un masque (3 im de décalage) ; « Hi, I'm » en serif italique ; le nom de famille monte en gris", "technique": "lettre remplacée par un disque, révélation masquée"},
+      {"t": "0:01.05-0:01.6", "what": "Sous-titre à puce orange ; le nom de famille passe du gris au blanc lettre par lettre", "technique": "révélation en deux passes"},
+      {"t": "0:01.6-0:01.98", "what": "Le O grossit jusqu'à remplir l'écran pendant que les lettres s'écartent avec flou ; montée de bruit dans la musique", "technique": "glyphe qui remplit l'écran, ease-in"},
+      {"t": "0:01.98-0:02.22", "what": "Aplat orange vignetté tenu ; l'impact de la musique tombe dedans (f125)", "technique": "flash sur le drop"},
+      {"t": "0:02.22-0:02.45", "what": "L'aplat se resserre en anneau pendant que la photo s'ouvre au centre ; texte circulaire autour", "technique": "double iris"},
+      {"t": "0:02.55-0:03.65", "what": "« I turn » monte ; « complexity » arrive en lettres qui tombent en vrac ; « into » ; « clarity. » s'écrit en serif italique orange, souligné", "technique": "typographie sémantique"},
+      {"t": "0:03.65-0:04.15", "what": "Phrase et portrait tenus, seul le texte circulaire tourne", "technique": "tenue de lecture 0,5 s"},
+      {"t": "0:04.15-0:04.5", "what": "Toute la composition part vers la gauche en grossissant, avec flou de mouvement", "technique": "poussée zoom + flou"},
+      {"t": "0:04.57-0:05.35", "what": "Compteur 0K+ → 500K+ et trame de points orange en demi-teinte qui se remplit en diagonale", "technique": "compteur ease-out + trame"},
+      {"t": "0:05.35-0:06.35", "what": "Volet diagonal orange en 5 im ; 1 → 14 ; histogramme qui pousse barre par barre, première barre blanche", "technique": "volet diagonal sur le demi-temps"},
+      {"t": "0:06.33-0:07.35", "what": "Volet diagonal noir ; 0.0 % → 99.4 % ; anneau de progression lumineux « ~10 L »", "technique": "compteur + anneau"},
+      {"t": "0:07.33-0:08.5", "what": "Volet diagonal clair ; 0+ → 100+ ; grille de 10 × 10 pictogrammes qui éclot du centre ; tenue", "technique": "pictogrammes, tenue 0,55 s"},
+      {"t": "0:08.5-0:09.7", "what": "Coupe sèche sur une carte sombre ; titre qui monte ligne à ligne ; faisceau orange vertical qui balaie et révèle trois grappes de points ; chiffres qui comptent", "technique": "révélation par faisceau"},
+      {"t": "0:09.7-0:11.2", "what": "Étiquettes de villes, bouton-lien orange, curseur qui vient cliquer", "technique": "curseur d'interface, creux de 1,5 s"},
+      {"t": "0:11.2-0:11.5", "what": "Le clic déclenche une sortie en zoom avec flou vers la gauche", "technique": "transition motivée par le clic"},
+      {"t": "0:11.6-0:12.35", "what": "Six cartes de compétences lancées depuis les bords avec rotation ; phrase « I build the system behind the product. »", "technique": "cartes lancées, stagger 2-3 im"},
+      {"t": "0:12.75-0:13.0", "what": "Barres orange qui montent du bas en escalier de gauche à droite ; la phrase se contracte en point", "technique": "volet en barres montantes"},
+      {"t": "0:13.05-0:13.75", "what": "Médaillon qui éclot, nom qui monte lettre à lettre (2 im), filet qui se trace avec un point", "technique": "carton final, rappel du trait d'ouverture"},
+      {"t": "0:13.75-0:15.1", "what": "« Let's talk. » tapé en serif italique, trois pastilles de contact en cascade, la musique s'éteint", "technique": "appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille réelle : grosses caisses à f5 + 30k (barres bleues du dossier 1 im plus tôt), demi-temps à f20 + 30k avec un clic aigu. Gestes clés, un par geste, à ±2 im de la grille : module de stats 7 sur 7 (compteur 500K f274 / frappe f275 ; volets f320, f380, f440 pile sur le clic du demi-temps ; compteurs f333, f393, f453, 2 im avant les frappes f335, f395, f455). Ailleurs 8 sur 21 : réussis, départ du trait f20, rampe vers l'orange f96 (frappe f95), « I turn » f153-f155, « into » f183, « clarity » f198, cartes f696 (frappe f695), barres du carton f770, nom f783 (frappe f785) ; ratés, montée du nom de famille f45, sous-titre f69, remplissage blanc f72, aplat orange plein f117 (−8 im de l'impact f125), iris f134, chute de « complexity » f165, soulignement f212, sortie f250, coupe vers la carte f510, faisceau f519, sortie de la carte f672, carton couvrant f780 (−5), « Let's talk » f826. Total 15 sur 28 (54 %, hasard ≈ 33 %). Les trois grandes montées de bruit (vers f125, f695, f785) annoncent bien les trois grandes sections (portrait, cartes, carton), mais l'image arrive souvent 5 à 8 im avant l'impact. Le clic de f500 n'a pas de volet : la 4e scène de stats dure 66 im au lieu de 60, preuve que l'image n'est pas quantifiée sur la musique.",
+    "synced": ["departs", "apparitions", "coupes", "texte"],
+    "style_match": "Électro-pop à 120 BPM avec montées et impacts : colle aux volets secs et aux compteurs, beaucoup moins aux entrées de titres et à la carte, plus lentes et libres.",
+    "how_built": "Le prompt ne parle pas de musique. La bande-son a la structure de la vidéo (montée de bruit avant le portrait, les cartes et le carton ; fondu sur le carton final ; motif clic de demi-temps + montée + grosse caisse qui se répète toutes les 60 im pendant les stats) : probablement générée en code par Claude à partir de la liste des scènes, mais avec des impacts recalés sur une grille à 120 BPM et des scènes non recalées. Résultat : quand un début de scène tombe près d'un temps, la synchro est parfaite (module de stats, cartes, nom final) ; sinon l'image précède l'impact de 5 à 8 im."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc de CV en six temps",
+      "name_en": "résumé narrative arc",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Accroche nom (0-2 s) → promesse « I turn complexity into clarity » (2,2-4,2 s) → 4 preuves chiffrées d'1 s chacune (4,5-8,5 s) → projet personnel cartographié (8,5-11,5 s) → 6 compétences (11,6-12,7 s) → contact « Let's talk » (13-15 s). Chaque section change de traitement et de couleur de fond ; ordre de lecture d'un CV qui se lit en 15 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Trait qui se rétracte en point et devient le O du prénom",
+      "name_en": "line-to-dot morph forming a letter",
+      "t": "0:00.2-0:00.6",
+      "frames": "f12-f36",
+      "fps": 60,
+      "mechanics": "Un trait orange fin se trace à y ≈ 40 % H depuis x ≈ 20 % jusqu'au bord droit (f12-f24), s'épaissit, puis se rétracte en pilule (f27 : de 39 à 89 % de la largeur ; f30 : 56-72 %) et en disque (f33) qui se pose exactement à la place du O du prénom (x ≈ 65 %, Ø ≈ 20 % H). Les lettres apparaissent autour du point pendant la contraction. Départ sur le demi-temps f20.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Lettre remplacée par un disque de couleur",
+      "name_en": "glyph replaced by a brand dot",
+      "t": "0:00.5-0:01.8",
+      "frames": "f33-f108",
+      "fps": 60,
+      "mechanics": "Le O du prénom est un disque orange #FD5E20 plein de la hauteur des capitales (≈ 20 % H) avec un halo diffus ; seul élément de couleur du plan. Il sert ensuite de source à la transition suivante (il grossit jusqu'à remplir l'écran).",
+      "verdict": "reprendre",
+      "evidence": "image f90, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent d'un masque, décalées de 3 im",
+      "name_en": "masked per-letter rise",
+      "t": "0:00.45-0:01.05",
+      "frames": "f27-f63",
+      "fps": 60,
+      "mechanics": "Prénom (capitales grasses, 19 % H) : A f27-f30, N f33, M f36, L f39-f42, chaque lettre coupée à sa ligne de base pendant sa montée (≈ 6 im). « Hi, I'm » (serif italique grise, 5,5 % H) apparaît en fondu à f42. Nom de famille : même montée lettre à lettre de f45 à f63, mais en gris foncé.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation en deux passes : silhouette grise puis remplissage blanc",
+      "name_en": "two-pass reveal (ghost then fill)",
+      "t": "0:00.75-0:01.45",
+      "frames": "f45-f87",
+      "fps": 60,
+      "mechanics": "Le nom de famille arrive d'abord en gris foncé (f45-f63), le sous-titre à puce orange apparaît (f69), puis chaque lettre passe au blanc de gauche à droite, une toutes les 3 im (S f72, E f75, T f78, H f81, I f84). Deux gestes sur un seul mot : la forme, puis la lumière.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Duo grotesque très grasse + serif italique orange sur le mot clé",
+      "name_en": "heavy grotesque with italic serif accent word",
+      "t": "0:00.7-0:15.1",
+      "frames": "f42-f904",
+      "fps": 60,
+      "mechanics": "Tout le texte principal en grotesque très grasse blanche ou noire, interlettrage serré ; un seul mot par phrase en serif italique fine orange : « Hi, I'm » (gris), « clarity. », « Delhi NCR. », « system », « Let's talk. » (noir sur orange). Le contraste de style désigne le mot important sans changer la taille.",
+      "verdict": "reprendre",
+      "evidence": "images f215, f660, f725, f900"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point du O grossit jusqu'à remplir l'écran",
+      "name_en": "glyph dot scale-to-fill",
+      "t": "0:01.6-0:01.98",
+      "frames": "f96-f119",
+      "fps": 60,
+      "mechanics": "« Hi, I'm » et le sous-titre s'effacent (f96-f102) ; le O grossit en ease-in (Ø ≈ 20 % H à f105, 28 % à f108, 45 % à f111, 80 % à f114, > 150 % à f117) pendant que les lettres s'écartent horizontalement avec flou de mouvement et disparaissent ; aplat orange plein à f117-f119, vignetté. L'écart image à image monte de 1,0 à 21,4 en 16 im. La rampe visuelle épouse la montée de bruit de la musique (f96-f123) mais l'aplat est plein 6-8 im avant l'impact (f125).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 99, "to": 120, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Double iris : l'aplat se resserre en anneau, la photo s'ouvre au centre",
+      "name_en": "double iris into a portrait ring",
+      "t": "0:02.22-0:02.45",
+      "frames": "f133-f147",
+      "fps": 60,
+      "mechanics": "Après 0,25 s d'aplat orange tenu, un point apparaît au centre (f133, sur un coup de basse). Le cercle orange extérieur se resserre de ≈ 150 % H à 55 % H en 11 im (f135-f146 : 150 → 120 → 105 → 95 → 85 → 75 → 68 → 62 → 58 → 55, ease-out) pendant que le disque de la photo grandit depuis le centre jusqu'à ≈ 48 % H ; l'orange restant devient l'anneau du portrait. Texte circulaire autour à f145-f147. Le O du nom, le flash et l'anneau sont le même objet.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f139.jpg",
+      "illus": {"from": 132, "to": 147, "n": 8}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Portrait en médaillon à anneau et texte circulaire tournant",
+      "name_en": "portrait medallion with rotating text ring",
+      "t": "0:02.42-0:04.5",
+      "frames": "f145-f270",
+      "fps": 60,
+      "mechanics": "Photo détourée en cercle (Ø ≈ 48 % H) dans un anneau orange de ≈ 10 px, entourée d'un anneau sombre portant un texte sur cercle (« Product ops · Data systems · 0 → 1 execution · Hiring · SOPs that survive scale · », sans 2,5 % H, blanc cassé) qui tourne lentement. Placé au tiers gauche, texte au tiers droit.",
+      "verdict": "reprendre",
+      "evidence": "image f215, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Animation sémantique : le chaos pour « complexity », la netteté pour « clarity »",
+      "name_en": "semantic word animation",
+      "t": "0:02.55-0:03.7",
+      "frames": "f153-f222",
+      "fps": 60,
+      "mechanics": "« I turn » monte d'un masque (f153-f162, départ sur la frappe f155). Les 10 lettres de « complexity » tombent en vrac depuis des positions et rotations aléatoires, en gris pendant le vol, blanches une fois posées, de gauche à droite (f165-f195, ≈ 30 im). « into » monte (f183-f189). « clarity. » en serif italique orange se révèle d'un seul balayage gauche → droite en ≈ 10 im (f198-f207), puis un soulignement orange se trace (≈ f212-f225). Le mouvement illustre le sens de chaque mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 162, "to": 210, "n": 8}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Sortie poussée latérale avec zoom et flou de mouvement",
+      "name_en": "zoom-blur push exit",
+      "t": "0:04.15-0:04.5",
+      "frames": "f249-f270",
+      "fps": 60,
+      "mechanics": "Toute la composition grossit (≈ × 1,2) et glisse vers la gauche d'environ 40 % de la largeur en ≈ 20 im, ease-in (écart image à image 0,4 → 14,8), avec flou directionnel horizontal fort sur les dernières images ; noir complet à f270. Même sortie réutilisée à 11,2-11,5 s (f672-f690) après le clic sur le bouton.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, images f684 et f688"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur en ease-out exponentiel",
+      "name_en": "exponential ease-out counter",
+      "t": "0:04.57-0:07.9",
+      "frames": "f274-f475",
+      "fps": 60,
+      "mechanics": "Quatre compteurs (0K+ → 500K+, 1 → 14, 0.0 % → 99.4 %, 0+ → 100+), chiffres 19-20 % H au tiers gauche. Le nombre arrive en gris et monte en contraste en ≈ 6 im, puis compte dès la grosse caisse. Mesure sur 0.0 → 99.4 % : 16.3, 30.6, 42.8, 53.0, 61.3, 68.2, 73.8, 78.3, 82.1, 85.1, 87.7, 89.7 (f393-f404) puis 99.2 à f420 et 99.4 à f429 : l'écart restant est multiplié par ≈ 0,83 à chaque image (ease-out exponentiel), 90 % de la valeur en 12 im, fin en ≈ 36 im. Même courbe sur 100+ (17, 32, 45, 55, 64, 71…).",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f384.jpg, microM-004-cut-f444.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Trame de points en demi-teinte qui se remplit en diagonale",
+      "name_en": "halftone dot-matrix fill",
+      "t": "0:04.6-0:05.3",
+      "frames": "f278-f318",
+      "fps": 60,
+      "mechanics": "Grille d'environ 20 × 20 points orange à droite (≈ 30 % de la largeur) dont la taille décroît vers un front diagonal : le front progresse du bas-gauche vers le haut-droit au rythme du compteur jusqu'au rectangle plein à 500K+ (f312-f318). Métaphore d'une audience qui se remplit.",
+      "verdict": "reprendre",
+      "evidence": "image f300, microM-002-move-f327.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Histogramme qui pousse barre par barre, l'origine en blanc",
+      "name_en": "staggered bar growth with highlighted origin",
+      "t": "0:05.55-0:06.35",
+      "frames": "f334-f383",
+      "fps": 60,
+      "mechanics": "14 barres noires arrondies (la première blanche = « scaled from one ») apparaissent de gauche à droite avec ≈ 1-2 im de décalage et montent en ease-out pendant ≈ 40 im jusqu'à une silhouette en cloche (≈ 30 % H au maximum). La forme en cloche ne correspond à rien dans la donnée (« 1 → 14 examens »).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f327.jpg, microM-003-cut-f384.jpg, image f360"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Anneau de progression lumineux",
+      "name_en": "glowing progress ring",
+      "t": "0:06.53-0:07.35",
+      "frames": "f392-f440",
+      "fps": 60,
+      "mechanics": "Anneau orange de Ø ≈ 42 % H, épaisseur ≈ 4 % H, halo orange diffus, qui se remplit dans le sens horaire depuis midi en même temps que le compteur (même ease-out) ; au centre « ~10 L » + légende sur deux lignes. Piste grise #1E1E22 visible avant le remplissage.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f384.jpg, image f425"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grille de pictogrammes qui éclot du centre",
+      "name_en": "radial pictogram grid build",
+      "t": "0:07.55-0:07.95",
+      "frames": "f454-f476",
+      "fps": 60,
+      "mechanics": "10 × 10 silhouettes de personnes (noires, ≈ 30 % orange répartis au hasard) qui apparaissent du centre vers les bords en ≈ 20 im (2 icônes à f454, 6 à f456, 9 à f457…), en phase avec le compteur 0+ → 100+.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f444.jpg, image f480"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volets diagonaux éclair qui alternent les fonds",
+      "name_en": "alternating fast diagonal wipes",
+      "t": "0:05.35-0:07.42",
+      "frames": "f320-f325, f380-f385, f440-f445",
+      "fps": 60,
+      "mechanics": "Bord diagonal incliné à ≈ 60° qui balaie du bas-droite vers le haut-gauche en 5 im, ease-in (≈ 2 %, 10 %, 40 %, 70 %, 100 % de couverture), apportant à chaque fois une nouvelle couleur de fond : orange (f320), noir (f380), blanc cassé (f440). Chaque volet démarre exactement sur le clic du demi-temps ; le chiffre suivant apparaît en fondu dans la foulée et commence à compter 2 im avant la grosse caisse suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f327.jpg, microM-003-cut-f384.jpg, microM-004-cut-f444.jpg",
+      "illus": {"from": 318, "to": 334, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rotation des fonds noir / orange / clair",
+      "name_en": "background color rotation",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Noir pour l'identité et la promesse, orange plein pour le flash (2,0 s), la scène 1 → 14 (5,4 s) et le carton final (13 s), noir pour 99.4 %, blanc cassé pour 100+, noir pour la carte et les cartes. Le texte s'inverse avec le fond (blanc sur noir, noir sur orange et sur clair). Le carton final reprend l'orange du flash d'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Vignette radiale sur tous les fonds et halo sur l'orange",
+      "name_en": "radial vignette and orange glow",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Chaque fond plat est assombri vers les bords (orange #FD5E20 au centre → #C5481A dans les coins, clair #F4F6F8 → #BEC0C2) ; halo orange doux autour du O, de l'anneau de progression et du faisceau. Donne du volume sans grain ni dégradé visible.",
+      "verdict": "reprendre",
+      "evidence": "images f120, f360, f480, f900"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de stat : chiffre géant à gauche, visuel à droite",
+      "name_en": "big-number-left, chart-right stat template",
+      "t": "0:04.5-0:08.5",
+      "frames": "f270-f510",
+      "fps": 60,
+      "mechanics": "Même grille pour les 4 chiffres : nombre à x ≈ 8 %, hauteur 19-20 % H, centré verticalement à ≈ 35 % ; légende grise de 2 lignes (≈ 3,5 % H) en dessous ; visuel (trame, histogramme, anneau, pictogrammes) dans la moitié droite. La répétition permet de lire vite, mais transforme la section en formule.",
+      "verdict": "adapter",
+      "evidence": "images f300, f360, f425, f480"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de progression globale",
+      "name_en": "global progress bar",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Ligne orange de ≈ 3 px collée au bord bas, qui s'allonge linéairement de 0 à 100 % de la largeur sur la durée (≈ 10 % à 1,5 s, 33 % à 5 s), façon story. Indique au spectateur que la vidéo est courte.",
+      "verdict": "reprendre",
+      "evidence": "images f90, f215, f300, f660"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Carte révélée par un faisceau qui balaie",
+      "name_en": "scanning light-beam map reveal",
+      "t": "0:08.65-0:10.1",
+      "frames": "f519-f605",
+      "fps": 60,
+      "mechanics": "Grille sombre en fond ; un faisceau vertical orange (trait lumineux avec halo) apparaît à x ≈ 47 % (f519) et balaie jusqu'au bord droit en ≈ 60 im (f575) ; les points (cercles creux blancs et points orange, en trois grappes) n'apparaissent qu'une fois le faisceau passé. Les trois chiffres comptent en parallèle (1,286 → 1,298 ; 2,445 → 2,574 ; 212 → 268) puis les étiquettes de villes en pilules sombres apparaissent (≈ f600-f630). Titre qui monte ligne à ligne à gauche (f521-f540).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f510.jpg, overview-02.jpg, images f545, f575, f605"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui clique le lien et déclenche la sortie",
+      "name_en": "cursor click motivating the transition",
+      "t": "0:10.4-0:11.5",
+      "frames": "f625-f690",
+      "fps": 60,
+      "mechanics": "Bouton pilule orange avec flèche ↗ (≈ 7 % H) qui apparaît sous les chiffres ; une flèche de souris entre (f630), vient se poser sur le bouton (f660) et clique (f672-f678) ; la scène part alors en zoom avec flou vers la gauche (f678-f690). Le geste d'interface justifie la transition, mais l'attente du curseur crée un creux de 1,5 s.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, images f630, f672, f684, f688"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cartes de compétences lancées en vrac",
+      "name_en": "tossed skill cards",
+      "t": "0:11.6-0:12.35",
+      "frames": "f696-f740",
+      "fps": 60,
+      "mechanics": "Six cartes pastel (crème, lavande, menthe ; titre en grotesque grasse, ligne à puce orange ; ombre douce) entrent depuis les coins et les bords (haut-gauche f698, haut f701, droite f702, bas-gauche f704, bas f709, bas-droite f711 : décalage 2-3 im), parcourent 25-35 % du cadre en ≈ 15-20 im en ease-out et se posent inclinées de −6° à +5° autour d'une phrase centrale en pilule sombre qui passe du gris au blanc (f709-f716). Départ sur la grosse caisse f695.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f712.jpg, image f725"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en barres orange montantes, en escalier",
+      "name_en": "rising stepped-bars wipe",
+      "t": "0:12.75-0:13.02",
+      "frames": "f765-f781",
+      "fps": 60,
+      "mechanics": "Des barres verticales orange montent du bas avec un décalage de gauche à droite, formant un escalier (f769 : 5-15 % H à gauche ; f771 : ≈ 45 % ; f773 : ≈ 70 % à gauche, 10 % à droite ; couverture complète à f779), ≈ 14 im en ease-in. La phrase centrale reste au-dessus du volet puis se contracte en un point noir (f779-f781). Accélération visible sur le demi-temps f770, couverture 5 im avant l'impact de f785.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom final qui monte lettre à lettre, médaillon qui éclot",
+      "name_en": "end title letter rise with popping avatar",
+      "t": "0:13.05-0:13.42",
+      "frames": "f783-f805",
+      "fps": 60,
+      "mechanics": "Nom en grotesque très grasse noire (≈ 14 % H) : chaque lettre monte d'un masque à la ligne de base, 2 im de décalage (A f783, n f785, m f787, o f789, l f791, S f795, e f797, t f799, h f801, i f803), ≈ 6 im par lettre. Le médaillon photo à liseré noir grandit d'un point à ≈ 13 % H en ≈ 6 im (f785-f791). Départ sur la grosse caisse f785.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet terminé par un point qui se trace sous le nom",
+      "name_en": "rule with traveling end dot",
+      "t": "0:13.45-0:13.75",
+      "frames": "f807-f825",
+      "fps": 60,
+      "mechanics": "Filet noir de 2 px qui part d'un point à gauche (f807) et s'étire vers la droite en ≈ 18 im, un point plein voyageant à son extrémité, sur toute la largeur du nom ; le sous-titre apparaît en fondu en dessous (f811-f815). Rappel du trait orange de l'ouverture : la vidéo s'ouvre et se ferme sur « trait + point ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, image f900"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton de contact en pastilles et « Let's talk. »",
+      "name_en": "contact pills call to action",
+      "t": "0:13.75-0:15.1",
+      "frames": "f826-f904",
+      "fps": 60,
+      "mechanics": "« Let's talk. » en serif italique noire tapée lettre à lettre (f826-f844) à droite sous le filet ; trois pastilles (deux contours fins : e-mail et profil ; une pleine noire : site du projet) apparaissent en cascade, ≈ 8 im d'écart (f834, f842, f848). Puis maintien ≈ 0,8 s pendant que la musique s'éteint (−10 dB à 13,5 s, −45 dB à 15 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, images f828-f852"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Un chiffre par seconde (deux temps)",
+      "name_en": "one stat per two beats",
+      "t": "0:04.5-0:08.5",
+      "frames": "f270-f510",
+      "fps": 60,
+      "mechanics": "Scènes de stats de 60 im exactement (5,4-6,4 ; 6,4-7,4 s), la première de 50 im et la dernière de 66 im. Chaque scène : 5 im de volet, ≈ 8 im de fondu du chiffre, ≈ 36 im de comptage, ≈ 10 im de tenue. Lisible pour le chiffre, trop court pour la légende de deux lignes (≈ 0,6 s).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f327.jpg, microM-003-cut-f384.jpg, microM-004-cut-f444.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Volet sur le clic du demi-temps, compteur sur la grosse caisse suivante",
+      "name_en": "wipe on the off-beat click, counter on the next kick",
+      "t": "0:05.33-0:07.6",
+      "frames": "f320-f455",
+      "fps": 60,
+      "mechanics": "Dans la musique, motif de 60 im répété : clic aigu sur le demi-temps (f320, f380, f440), courte montée de bruit (f326-f334), grosse caisse (f335, f395, f455). L'image s'y cale : volet diagonal qui part à 0 im du clic, compteur qui démarre 2 im avant la grosse caisse. La transition prend le contretemps, la donnée prend le temps fort.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f327.jpg, microM-003-cut-f384.jpg, microM-004-cut-f444.jpg, analyse audio image par image"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée de bruit puis impact avant chaque grande section",
+      "name_en": "riser-to-hit before each section",
+      "t": "0:01.6-0:13.1",
+      "frames": "f96-f125, f681-f695, f745-f785",
+      "fps": 60,
+      "mechanics": "Trois montées de bruit (aigus de −35 à +33 dB en 27 im avant f125 ; f681-f693 avant f695 ; f745-f782 avant f785) annoncent le portrait, les cartes et le carton final. Calage inégal : cartes à +1 im de l'impact, nom final à −2 im, mais aplat orange plein 8 im avant l'impact (la rampe visuelle épouse pourtant la montée) et carton couvrant 5 im avant. Musique en fondu sur le carton.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-03.jpg, microM-006-move-f712.jpg, analyse audio image par image"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne contient aucun fait : nom, photo, chiffres (500K+, 99.4 %, 100+…), projet de carte et contacts proviennent forcément de pièces jointes (CV, photo). La force du module de stats vient de vrais chiffres fournis."},
+    {"kind": "direction", "insight": "« Use all the motion design skills you have » → une technique différente par scène (iris, poussée floue, volets diagonaux, faisceau, cartes lancées, barres montantes ; trame, histogramme, anneau, pictogrammes) : variété voulue, au prix d'un effet catalogue."},
+    {"kind": "structure", "insight": "Pour « se présenter à un recruteur », Claude a construit seul un arc de CV (nom → promesse → preuves chiffrées → initiative perso → compétences → contact) : bon réflexe à réutiliser comme gabarit de vidéo personnelle."},
+    {"kind": "direction", "insight": "« Go all out » sur 15 s → 9 scènes, chiffres d'1 s chacun avec légendes de deux lignes lisibles 0,6 s. Préciser une durée minimale de lecture (≈ 1,5 s par chiffre) ou moins de preuves."},
+    {"kind": "inputs", "insight": "Aucune musique demandée ; la bande-son suit la liste des scènes mais pas à l'image près. Pour une synchro complète : « 120 BPM, chaque scène démarre sur une grosse caisse, chaque transition sur un contretemps, impacts placés aux mêmes temps que les coupes »."},
+    {"kind": "build", "insight": "Rendu 1280 × 720 à 60 fps (stack non précisée) : la résolution réduite rend les légendes de 22 px fragiles sur mobile ; demander du 1080p pour une vidéo destinée à LinkedIn."}
+  ],
+  "steal": [
+    "Chaîne motivée : un trait se rétracte en point qui devient le O du nom, ce O remplit l'écran, puis l'aplat se resserre en anneau autour de la photo.",
+    "Animer le sens du mot : « complexity » arrive en lettres qui tombent en vrac, « clarity » s'écrit net en serif italique de couleur.",
+    "Série de chiffres d'une seconde : volet diagonal de 5 im sur le contretemps, chiffre qui compte dès le temps fort suivant, fond qui change de couleur.",
+    "Compteur crédible : 90 % de la valeur en 12 im, fin en 36 im (ease-out exponentiel), visuel qui se remplit au même rythme (trame, anneau, pictos).",
+    "Ouvrir et fermer sur le même motif graphique : trait orange qui devient un point au début, filet terminé par un point sous le nom à la fin."
+  ],
+  "flaws": [
+    "Synchro inégale : aplat orange 8 im avant l'impact, coupe vers la carte et carton final 5 im trop tôt.",
+    "Carte tenue 1,5 s où seuls des étiquettes et un curseur bougent ; tenues de 0,5 s sur la phrase et sur 100+.",
+    "Formule « gros chiffre qui compte + mini graphique » répétée 4 fois ; histogramme en cloche sans rapport avec la donnée.",
+    "Légendes de deux lignes en 22 px sur du 720p, affichées 0,6 s : illisibles sur mobile.",
+    "Curseur qui clique un bouton et cartes lancées en vrac : tics d'interface vus partout."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, pour deux passages : la chaîne d'ouverture (trait → pilule → point → O → aplat → double iris en anneau, 0,2-2,45 s) à décortiquer image par image, et le module de stats où volets et compteurs sont calés sur la grille (clic de contretemps, comptage en ease-out mesurable). Le reste (carte, cartes) apporte peu."
+  }
+}

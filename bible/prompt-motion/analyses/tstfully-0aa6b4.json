@@ -1,0 +1,324 @@
+{
+  "slug": "tstfully-0aa6b4",
+  "title": "YouTube transcript product ad",
+  "handle": "@tstfully",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Pub SaaS propre, lisible et cohérente (noir et rouge, accent serif, HUD de chapitres), mais cinq transitions identiques en fondu, aucune caméra, des maintiens d'une seconde et zéro synchro musicale.",
+  "summary": "Pub de 15 s pour un outil inventé, youtubetranscript.dev : six chapitres de 2,4 s (coller l'URL, transcription, vidéos/chaînes/playlists, « pas de sous-titres ? », API JSON, appel à l'action). Point fort : de petites démos d'interface vraies (ligne de scan qui révèle le texte, waveform avec tête de lecture). Point faible : grammaire de transition unique (fondu au noir partiel) et rythme de diaporama posé sur une musique indépendante.",
+  "prompt_vs_result": [
+    "Une ligne : pub produit motion design de 15 s, promesse « colle une vidéo YouTube, obtiens chaque mot ». Aucune marque, aucune DA, aucune musique, aucune structure imposées.",
+    "Claude a tout inventé : nom de domaine, palette noir et rouge YouTube, accent serif italique rouge, HUD (timecode, chapitres, barre de progression), six chapitres, chiffres fictifs (<200ms, 99.9%, 10,000+ users), bande-son à filtre montant.",
+    "La promesse en une phrase a donné une accroche et un récit clairs. Il aurait fallu préciser le BPM et caler les scènes dessus, interdire le fondu unique, exiger des transitions enchaînées et des chiffres réels."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0A0C", "role": "fond quasi noir (bords)"},
+      {"hex": "#2F171D", "role": "halo radial rouge sombre au centre du fond"},
+      {"hex": "#17161B", "role": "panneaux, cartes, champ URL (bordure 1 px plus claire)"},
+      {"hex": "#FFFFFF", "role": "titres en grotesque gras"},
+      {"hex": "#E4312C", "role": "accent unique : mot serif, bouton, scan, waveform, timestamps"},
+      {"hex": "#8A8A90", "role": "texte secondaire, mono, mots en cours d'apparition"},
+      {"hex": "#2FBF6A", "role": "pastille « 200 OK » verte (seule couleur hors système, probable)"}
+    ],
+    "type": "Grotesque gras type Inter 700 (titres ≈ 7,5 % de la hauteur, casse phrase), mot clé en serif italique rouge (probable Newsreader/Source Serif), micro-labels mono minuscules ≈ 1,5 %.",
+    "texture": "Halo radial rouge chaud derrière le centre ; lueur (glow) rouge sous l'icône YouTube, le bouton et le CTA ; ligne de scan rouge avec traînée lumineuse ; pas de grain visible ; panneaux plats à bordure fine.",
+    "style": "Interface sombre premium, accent rouge",
+    "coherence": "Système très tenu : un seul accent rouge, une seule combinaison grotesque + serif italique, HUD identique sur les 6 chapitres, panneaux tous au même style. Ce qui le casse : rien graphiquement ; c'est le mouvement qui est pauvre (même fondu partout)."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Musique électronique quantifiée à 120 BPM (temps à 0,411 s + 0,5 k), pulsation de basse à chaque demi-temps dès 2,15 s, doubles-croches aiguës de 4,4 à 9,4 s, filtre qui s'ouvre (bande aiguë +49 dB de 4,4 à 11,9 s), relâchement vers 12,1 s puis fondu de sortie jusqu'à 15 s. L'image suit sa propre grille : six scènes qui commencent à 0,33 / 2,13 / 5,10 / 7,53 / 9,93 / 12,33 s, soit des blocs fixes de 2,4 s (4,8 temps) qui dérivent par rapport aux temps. Aucune coupe franche : chaque changement est un fondu de 10 à 12 im (0,33-0,4 s). Maintiens réels : 1,2-2,1 s (titre complet, 0,9 s), 6,2-7,5 s (cartes immobiles, 1,3 s), 11,0-11,9 s (JSON + stats, 0,9 s), 13,6-15,0 s (carte de fin, 1,4 s, normal). L'outil compte 60 % de la durée en maintien, mais la waveform et la ligne de scan bougent en petit pendant certains de ces maintiens. Densité : un nouvel élément toutes les 0,2-0,3 s pendant les entrées, puis rien pendant ~1 s : rythme en rafales, pas le flux continu de 1600.",
+    "timeline": [
+      {"t": "0:00-0:00.33", "what": "Noir chaud, icône YouTube rouge avec halo qui apparaît", "technique": "ouverture sur l'icône, halo rouge (glow)"},
+      {"t": "0:00.33-0:01.2", "what": "« Paste a YouTube video. / Get every word. » mot à mot, « word. » en serif italique rouge", "technique": "mot à mot en fondu sur place, stagger 2-3 im, accent serif"},
+      {"t": "0:01.2-0:02.13", "what": "Titre immobile", "technique": "maintien de lecture 0,9 s"},
+      {"t": "0:02.13-0:02.5", "what": "Titre et icône s'éteignent, champ URL + bouton « Get transcript » apparaissent en haut", "technique": "fondu au noir partiel (dim-out) puis fondu d'entrée"},
+      {"t": "0:02.97-0:03.1", "what": "L'URL est collée d'un coup dans le champ", "technique": "collage instantané (paste) sans frappe"},
+      {"t": "0:03.4-0:03.7", "what": "Halo rouge autour du bouton, panneau « // transcript » s'allume dessous", "technique": "clic suggéré par un halo, sans curseur"},
+      {"t": "0:03.8-0:04.9", "what": "Une ligne de scan rouge descend et révèle 5 lignes horodatées (0.0s, 2.6s, 6.1s, 9.8s, 14.2s)", "technique": "révélation par ligne de scan, stagger 6 im"},
+      {"t": "0:05.1-0:05.4", "what": "Panneau s'éteint", "technique": "fondu au noir partiel"},
+      {"t": "0:05.5-0:06.0", "what": "« Videos, channels and playlists. » mot à mot, aligné à gauche", "technique": "mot à mot + accent serif"},
+      {"t": "0:05.9-0:06.3", "what": "Trois cartes Videos / Channels / Playlists entrent une à une", "technique": "cartes en décalage de 6 im"},
+      {"t": "0:06.3-0:07.5", "what": "Cartes immobiles", "technique": "maintien 1,2 s (temps mort)"},
+      {"t": "0:07.53-0:07.9", "what": "Tout s'éteint", "technique": "fondu au noir partiel"},
+      {"t": "0:07.9-0:08.5", "what": "« No captions? / No problem. » à gauche, panneau waveform « captions: none found » à droite", "technique": "objection-réponse en deux lignes, mise en page scindée"},
+      {"t": "0:08.7-0:09.7", "what": "Tête de lecture rouge balaie la waveform et la colore ; deux lignes de transcription et deux pastilles apparaissent", "technique": "barre de progression sur waveform + transcription en direct"},
+      {"t": "0:09.93-0:10.3", "what": "Tout s'éteint", "technique": "fondu au noir partiel"},
+      {"t": "0:10.3-0:11.0", "what": "« Clean transcripts, ready for any AI workflow. » + fenêtre response.json avec « 200 OK » vert", "technique": "mot à mot + fenêtre de code avec pastille de statut"},
+      {"t": "0:11.0-0:12.0", "what": "JSON se remplit, trois stats <200ms / 99.9% / 50K+ entrent en décalage", "technique": "rangée de stats à tiret rouge"},
+      {"t": "0:12.33-0:12.8", "what": "Tout s'éteint", "technique": "fondu au noir partiel"},
+      {"t": "0:12.9-0:14.0", "what": "Logo youtubetranscript.dev, « Join 10,000+ users. », souligné rouge, bouton « Start free → », mentions mono", "technique": "carte de fin CTA empilée"},
+      {"t": "0:14.0-0:15.0", "what": "Carte de fin immobile, musique en fondu", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Comptage à l'œil sur la mesure image par image (différence entre images à 30 fps) : 22 gestes clés (départs de scène, mots clés, panneaux, cartes, logo). Sur les temps seuls (±2 im, hasard ≈ 33 %) : 8 sur 22 = 36 %, soit le hasard. Sur temps + demi-temps (±2 im, hasard ≈ 67 % à 30 fps) : 12 sur 22 = 55 %, sous le hasard. Les débuts de scène suivent une grille fixe de 2,4 s qui dérive : 2,13 s (1 im avant un demi-temps), 5,10 s (2 im avant un demi-temps), 7,53 s (entre deux), 9,93 s (sur un temps), 12,33 s (2,4 im avant un temps). L'indice automatique (R = 0,25, z = 0,05) confirme. Seule coïncidence macro : la musique démarre à f11-f12, juste après le premier mot (f10), et le filtre culmine vers 12,1 s, 7 im avant la carte de fin.",
+    "synced": [],
+    "style_match": "Électro propre à 120 BPM avec filtre montant : colle à l'univers tech sombre, mais les fondus mous de 0,4 s ignorent la pulsation sèche de la basse.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. La bande-son est parfaitement quantifiée (doubles-croches exactes, filtre linéaire, fondu de sortie qui finit pile à 15 s) : probable bande générée ou coupée à la durée, sans lien avec la grille des scènes. Les scènes ont été découpées en blocs fixes de 2,4 s au lieu de 2 s (4 temps) ou 2,5 s, ce qui rend toute synchro impossible."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot en fondu sur place",
+      "name_en": "word-by-word fade-in",
+      "t": "0:00.33-0:01.17",
+      "frames": "f10-f35",
+      "fps": 30,
+      "mechanics": "Chaque mot apparaît à sa position finale (pas de reflux de ligne) par un fondu d'opacité de 4 à 5 im (0,13-0,17 s), d'abord gris puis blanc. Décalage entre mots 2-3 im (Paste f10, a f13, YouTube f15, video. f17), 6 im entre les deux lignes (Get f23, every f26, word f29). Aucun déplacement visible ; la ligne 1 remonte d'environ 1 % quand la ligne 2 entre (bloc recentré, probable). Pas de flou de mouvement. Non calé sur les temps : la cadence de 0,07-0,1 s par mot est 3 fois plus rapide qu'un demi-temps.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 9, "to": 36, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot clé en serif italique rouge dans un titre grotesque",
+      "name_en": "serif italic accent word",
+      "t": "0:00.97-0:13.5",
+      "frames": "f29-f405",
+      "fps": 30,
+      "mechanics": "Titres en grotesque gras blanc (≈ 7,5 % de la hauteur, casse phrase), le dernier mot porteur en serif italique rouge #E4312C de même corps optique : « word. », « playlists. », « problem. », « any », « 10,000+ ». Le mot accent entre en dernier, en 5 im. Répété sur 5 titres sur 6 : c'est le système de marque, mais il devient mécanique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir partiel puis fondu d'entrée",
+      "name_en": "dim-out crossfade",
+      "t": "0:02.13-0:02.5",
+      "frames": "f64-f75",
+      "fps": 30,
+      "mechanics": "Toute la scène baisse en opacité en 8-10 im (0,27-0,33 s), le fond reste, puis la scène suivante entre en fondu sur 3-5 im ; pic d'énergie f65-f69. Utilisé identiquement 5 fois (f64, f153, f226, f298, f370), sans mouvement, sans élément porteur d'une scène à l'autre. Aucune coupe franche dans la vidéo.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Champ URL et collage instantané",
+      "name_en": "URL field paste",
+      "t": "0:02.5-0:03.1",
+      "frames": "f75-f93",
+      "fps": 30,
+      "mechanics": "Barre de saisie sombre (≈ 64 % de la largeur, à 24 % de la hauteur) avec icône YouTube, placeholder « Paste a YouTube URL… » et bouton rouge « Get transcript ». L'URL complète remplace le placeholder d'un coup à f89 (fondu de 2-4 im), fidèle au geste « coller » plutôt qu'une frappe lettre à lettre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic suggéré par un halo sur le bouton",
+      "name_en": "button glow click",
+      "t": "0:03.4-0:03.8",
+      "frames": "f102-f114",
+      "fps": 30,
+      "mechanics": "Pas de curseur : un halo rouge diffus (≈ 3 fois la hauteur du bouton) s'allume autour de « Get transcript » en ≈ 6 im et retombe en ≈ 6 im, pendant que le panneau de transcription s'allume dessous. Le clic se lit, mais sans curseur ni enfoncement du bouton la cause-effet reste faible.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Révélation par ligne de scan lumineuse",
+      "name_en": "scan line reveal",
+      "t": "0:03.8-0:04.9",
+      "frames": "f114-f141",
+      "fps": 30,
+      "mechanics": "Un trait rouge horizontal à cœur clair et longue traînée lumineuse (plus large que le panneau) descend à vitesse constante (linéaire) de la ligne 1 à la ligne 5 en ≈ 25 im (0,83 s). Chaque ligne de transcription s'allume au passage du trait : f114, f120, f126, f132, f138 (décalage régulier de 6 im = 0,2 s). Le trait disparaît en fondu à f141. Métaphore claire de « lecture » de la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 111, "to": 141, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Lignes de transcription horodatées",
+      "name_en": "timestamped transcript rows",
+      "t": "0:04.0-0:05.1",
+      "frames": "f120-f153",
+      "fps": 30,
+      "mechanics": "Panneau #17161B, en-tête mono « // transcript » et « en · timestamps in seconds », lignes avec horodatage mono rouge à gauche (0.0s, 2.6s, 6.1s, 9.8s, 14.2s) et phrase blanche plausible (« Hey everyone, welcome back to the channel. »). Contenu crédible qui vend le produit sans voix off.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Trois cartes de cas d'usage en décalage",
+      "name_en": "staggered use-case cards",
+      "t": "0:05.9-0:06.3",
+      "frames": "f177-f195",
+      "fps": 30,
+      "mechanics": "Sous le titre aligné à gauche (marge ≈ 13 %), trois cartes arrondies (≈ 20 % de largeur chacune, 13 %-87 %) : icône contour, libellé gras, URL type en mono (youtube.com/watch?v=…, youtube.com/@channel, youtube.com/playlist?list=…). Entrée en fondu avec légère montée, décalage 6 im (f177, f183, f189). Seule la première carte tombe sur un temps (5,911 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg",
+      "illus": {"from": 171, "to": 195, "n": 5}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Objection puis réponse en deux lignes",
+      "name_en": "objection-answer headline",
+      "t": "0:07.9-0:08.4",
+      "frames": "f237-f252",
+      "fps": 30,
+      "mechanics": "« No captions? » (f237-f243) puis « No problem. » (f246-f255) avec « problem. » en serif rouge ; répétition du « No » qui crée un parallélisme. Sous-titre mono « AI transcription for videos without them. » à f258. Ligne 1 tombe sur le temps 7,911 s, le reste non.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Waveform balayée par une tête de lecture",
+      "name_en": "waveform playhead progress",
+      "t": "0:08.4-0:09.7",
+      "frames": "f250-f291",
+      "fps": 30,
+      "mechanics": "Panneau à droite (≈ 52-82 % de la largeur) avec icône sous-titres barrée, « captions: none found » en mono et étiquette « AI » rouge. ≈ 70 barres grises ; une tête de lecture rouge à pastille ronde part à f261 et traverse à vitesse constante en ≈ 27 im (0,9 s), en colorant les barres en rouge derrière elle. Les deux lignes de transcription apparaissent pendant le balayage (f273, f282), puis les pastilles « up to 95% accuracy » et « 100+ languages » (f285-f291).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 255, "to": 291, "n": 6}
+    },
+    {
+      "cat": "code",
+      "name_fr": "Fenêtre response.json avec pastille 200 OK",
+      "name_en": "JSON response window",
+      "t": "0:10.8-0:11.5",
+      "frames": "f325-f345",
+      "fps": 30,
+      "mechanics": "Fenêtre type éditeur (trois points de fenêtre, onglet « response.json »), pastille verte « ● 200 OK » avec halo vert, « 134 ms · application/json », puis JSON coloré (clés blanches, valeurs rouges) qui se remplit en ≈ 15 im. Prouve « prêt pour tout workflow IA » par un artefact technique crédible.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Rangée de trois chiffres clés",
+      "name_en": "stat row",
+      "t": "0:11.4-0:12.0",
+      "frames": "f342-f360",
+      "fps": 30,
+      "mechanics": "Sous le titre, trois chiffres en grotesque gras (<200ms, 99.9%, 50K+) avec un petit tiret rouge au-dessus et une légende mono (response, uptime, transcripts) ; entrée en fondu en décalage ≈ 4-5 im. Chiffres fixes, pas de compteur qui roule.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre HUD persistant à chapitres",
+      "name_en": "persistent HUD frame",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Quatre coins fixes en petit corps (≈ 1,5 % de la hauteur) : marque youtubetranscript.dev en haut à gauche, point rouge + timecode qui défile en haut à droite, chapitre mono « // 01 · paste » … « // 06 · start free » en bas à gauche, barre de progression de 6 segments en bas à droite dont le segment actif est rouge. Donne une colonne vertébrale au diaporama et un repère de progression.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Accent rouge unique sur noir chaud",
+      "name_en": "single red accent palette",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Tout ce qui est actif est en #E4312C (mot serif, bouton, scan, tête de lecture, timestamps, souligné, CTA) ; tout le reste en blanc, gris et panneaux #17161B. Seule exception : le vert du 200 OK, sémantique. Couleur empruntée à YouTube, donc lisible immédiatement.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir à halo radial rouge",
+      "name_en": "radial red vignette background",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Fond #0A0A0C aux bords, réchauffé au centre jusqu'à ≈ #2F171D par un halo radial rouge large et doux. Statique d'un bout à l'autre : aucun mouvement de fond pour combler les maintiens.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Lueurs rouges sur les éléments d'appel",
+      "name_en": "red bloom glow",
+      "t": "0:00.3-0:14.0",
+      "frames": "f9-f420",
+      "fps": 30,
+      "mechanics": "Halo rouge diffus (rayon ≈ 2-3 fois l'objet) derrière l'icône YouTube d'ouverture, autour du bouton cliqué, autour de la ligne de scan et sous le bouton « Start free → ». Toujours sur l'élément à regarder : la lueur sert de guide pour l'œil.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Six chapitres de 2,4 s",
+      "name_en": "six-beat product story",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Promesse (paste / get every word) → démo du geste (URL, transcription) → étendue (vidéos, chaînes, playlists) → objection levée (pas de sous-titres) → preuve technique (API JSON, stats) → CTA (Join 10,000+ users, Start free). Chaque chapitre est numéroté dans le HUD. Débuts de scène à 0,33 / 2,13 / 5,10 / 7,53 / 9,93 / 12,33 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin logo, preuve sociale et CTA",
+      "name_en": "end card CTA stack",
+      "t": "0:12.9-0:15.0",
+      "frames": "f386-f448",
+      "fps": 30,
+      "mechanics": "Pile centrée : logo (icône YouTube + « youtubetranscript » blanc + « .dev » rouge) avec souligné rouge sur toute la largeur qui apparaît entre f405 et f420 (tracé probable), « Join 10,000+ users. » (≈ 7,8 % de la hauteur, 10,000+ en serif rouge), bouton pilule rouge « Start free → » avec halo, puis deux lignes mono (prix, couverture). Logo f386, « Join » f390, chiffre ≈ f396-402, CTA f402-f415. Maintien final 1,4 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Micro-labels mono de contexte",
+      "name_en": "mono micro-labels",
+      "t": "0:03.5-0:14.5",
+      "frames": "f105-f435",
+      "fps": 30,
+      "mechanics": "Petits textes monospace gris ou rouges (≈ 1,3-1,8 % de la hauteur) : « // transcript », « // no signup · no configuration », « AI transcription for videos without them. », « $0 · 10 credits/month · no card required ». Ils ajoutent de l'information secondaire sans concurrencer le titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Alternance centré / scindé texte-panneau",
+      "name_en": "centered vs split layout",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Scènes 1, 2 et 6 centrées ; scènes 3, 4 et 5 avec titre aligné à gauche (marge ≈ 7-13 %) et panneau d'interface à droite (≈ 30 % de la largeur), proportion ≈ 45/55. L'alternance varie la lecture mais chaque changement passe par un fondu, sans continuité de position.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Scènes de durée fixe avec maintiens",
+      "name_en": "fixed-length scenes with holds",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Chaque chapitre dure 2,4 s (sauf le 2e, 3,0 s) : ≈ 0,4 s de fondu, 0,5-1,0 s d'entrées en rafale (stagger 2-6 im), puis 0,9-1,3 s sans mouvement. Durée non multiple du temps musical (4,8 temps) : la grille dérive. À reprendre en blocs de 2 s ou 2,5 s calés sur la mesure.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne que la promesse (« paste a YouTube video, get every word »). Claude a fabriqué marque, domaine, chiffres et témoignages chiffrés (10,000+ users, 99.9%) : à remplacer par de vraies données dans un usage réel."},
+    {"kind": "direction", "insight": "Sans direction artistique, Claude prend la couleur évidente de la plateforme (rouge YouTube sur noir) et son couple typographique par défaut, grotesque gras + serif italique en accent."},
+    {"kind": "structure", "insight": "La phrase en deux temps du prompt devient le titre d'ouverture mot pour mot, puis Claude déroule une structure de pub SaaS classique en 6 chapitres, numérotés dans un HUD."},
+    {"kind": "build", "insight": "Aucune contrainte de tempo : les scènes sont découpées en blocs de 2,4 s et la bande-son vit sa vie à 120 BPM. Écrire les durées en temps (« 4 temps à 120 BPM = 2 s par scène ») aurait permis la synchro."},
+    {"kind": "banned", "insight": "Rien n'interdisait le fondu générique : Claude l'utilise pour les 5 transitions. Il faut nommer les transitions voulues (match cut sur l'URL, zoom dans le panneau, etc.)."},
+    {"kind": "other", "insight": "La vidéo est à 30 fps en 1280x720 : le rendu reste net mais les entrées de 4-5 im paraissent un peu saccadées comparées à du 60 fps."}
+  ],
+  "steal": [
+    "Révéler un texte « lu par la machine » avec une ligne de scan lumineuse linéaire qui allume chaque ligne à son passage, 6 im entre lignes.",
+    "Prouver une transcription IA par une waveform grise qu'une tête de lecture colore en rouge pendant que les phrases apparaissent dessous.",
+    "Cadre HUD fixe : marque, timecode, chapitre « // 0N · label » et barre de progression segmentée qui suit les scènes.",
+    "Un seul accent couleur pour tout ce qui est actif (mot clé, bouton, scan, CTA) et une couleur sémantique à part (vert 200 OK).",
+    "Mettre l'objection en titre parallèle (« No captions? / No problem. ») avec le mot de réponse en serif italique accent."
+  ],
+  "flaws": [
+    "Cinq transitions identiques en fondu au noir partiel : aucune transition motivée ni élément qui passe d'une scène à l'autre.",
+    "Scènes de 2,4 s posées sur une musique à 120 BPM : aucun geste calé sur les temps, la grille dérive.",
+    "Maintiens de 0,9 à 1,3 s après chaque entrée en rafale : rythme de diaporama, loin du flux continu 1600.",
+    "Aucune caméra ni fond animé : tout est plat et frontal, rien ne bouge pendant les lectures.",
+    "Accent serif rouge répété sur presque chaque titre, chiffres et preuve sociale inventés."
+  ],
+  "deep_study": {"worth": false, "why": "Source à 30 fps avec des gestes simples (fondus d'opacité, balayages linéaires) déjà lisibles sur les planches extra ; seules la ligne de scan et la waveform méritent d'être reproduites, pas étudiées image par image."}
+}

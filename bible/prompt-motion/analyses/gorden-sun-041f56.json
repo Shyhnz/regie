@@ -1,0 +1,485 @@
+{
+  "slug": "gorden-sun-041f56",
+  "title": "Beat-synced bouncing 3D ball",
+  "handle": "@Gorden_Sun",
+  "family": "3d",
+  "craft": 4,
+  "craft_reason": "Synchro note par rebond exemplaire qui suit l'accélération de Grieg, chutes dans les silences, gags sonores bien placés ; plafonnée par une balle minuscule noyée dans le bloom et une caméra qui traverse le décor.",
+  "summary": "Une balle-personnage orange (yeux globuleux, casque de mineur) dégringole dans une grotte low-poly rouge sur « Dans l'antre du roi de la montagne » de Grieg, synthétisée. Chaque note est un rebond qui allume un champignon ; la musique accélère, les sauts aussi ; les silences deviennent des chutes. Bulles de BD paniquées, « ding », sifflet de chute et fermeture en iris. Synchro remarquable, image brouillonne.",
+  "prompt_vs_result": [
+    "Prompt en chinois : balle 3D qui tombe, calée sur le rythme (« 卡点 »), niveau Blender pro, plusieurs pièces classiques avec changement de scène par morceau, rebonds sur des objets qui s'allument au rythme, un peu d'humour, en three.js et pas en Blender.",
+    "Claude a choisi seul : Grieg (étiqueté « No.4 »), une bande-son synthétisée, la règle un rebond = une note, les chutes dans les silences, le personnage mineur, les bulles chinoises, les gags sonores, l'iris d'ouverture et de fin, les palettes par section.",
+    "« 卡点 » et « allumer au rythme » ont produit une synchro image par image. Un seul morceau visible (extrait probable). Rien sur la taille du héros ni la caméra : il fallait imposer balle ≥ 8 % du cadre, caméra sans traversée."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0A0008",
+        "role": "ombres et fond quasi noir (brouillard sombre)"
+      },
+      {
+        "hex": "#5C1018",
+        "role": "parois low-poly de la grotte, rouge sang facetté (probable)"
+      },
+      {
+        "hex": "#401848",
+        "role": "dalles et sol violets de la section A"
+      },
+      {
+        "hex": "#F08858",
+        "role": "balle-personnage orange"
+      },
+      {
+        "hex": "#7FD060",
+        "role": "traînée lumineuse verte pendant les chutes (approx.)"
+      },
+      {
+        "hex": "#B8C868",
+        "role": "liserés et pois menthe-lime des champignons (sections A-B)"
+      },
+      {
+        "hex": "#F0F8F0",
+        "role": "cœur blanc-vert des éclats d'impact (bloom)"
+      },
+      {
+        "hex": "#E8A068",
+        "role": "fissures de lave incandescente (sections B-D, finale)"
+      },
+      {
+        "hex": "#501830",
+        "role": "croûte de lave violet-brun"
+      },
+      {
+        "hex": "#D8B858",
+        "role": "liserés et ondes or (sections C-E)"
+      },
+      {
+        "hex": "#D82868",
+        "role": "liserés et ondes rose magenta (climax)"
+      },
+      {
+        "hex": "#F0D050",
+        "role": "jaune du carton-titre (filet vertical, « No.4 · E. Grieg »)"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "bulles de BD (fond blanc, contour et texte noirs)"
+      }
+    ],
+    "type": "Carton bas-gauche : filet jaune, « No.4 · E. Grieg » sans grasse jaune ≈2,4 % de la hauteur, titre chinois sans CJK grasse blanche ≈5,3 %, sous-titre anglais italique gris ≈2,2 %. Bulles : CJK grasse noire ≈3,6 %.",
+    "texture": "Rendu temps réel three.js : bloom très fort (halos de 10 à 30 % du cadre), brouillard sombre qui noie les fonds, parois low-poly en aplats facettés, sol de lave à fissures émissives, cristaux low-poly flottants au premier plan, cubes lumineux jaunes, étincelles dorées aux impacts dans la seconde moitié. Aucun flou de mouvement ; la traînée verte de la balle en tient lieu pendant les chutes. Pas d'ombres portées lisibles.",
+    "style": "Grotte néon low-poly, cartoon temps réel",
+    "coherence": "Le système tient par une règle unique (impact = lumière + onde + note) et par un code couleur qui change à chaque section de la musique (vert-cyan, puis menthe-violet sur lave, puis or-rose, puis rose-magenta). Il casse par la lisibilité : héros de 2 à 4 % de la hauteur, bloom qui brûle les détails, parois rouges et fond noir qui se confondent, et caméra qui passe dans les champignons ou les rochers (images pleines de violet ou de gris)."
+  },
+  "rhythm": {
+    "bpm": 107,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "59,1 s à 30 fps, aucun maintien statique. La pièce accélère en continu (accelerando de Grieg) : intervalle médian entre notes 0,279 s (≈8,4 im) de 0 à 12 s, 0,244 s de 12 à 33 s, 0,186 s de 33 à 49 s, 0,139 s (≈4,2 im) de 49 à 55 s, soit une croche à ≈107 BPM au départ et ≈215 BPM à la fin. Le tempo global de 70 BPM du dossier et les grilles fixes par segment (107, 118, 72, 90, 108 BPM) sont donc faux ou dérivent ; la bonne grille est la liste des attaques audio. Sur cette grille : 123 éclats d'impact sur 152 à ±1,5 im d'une attaque (hasard 36 %), 10 coupes sur 12 à ±1 im d'une attaque (hasard ≈24 %). Les silences d'un temps en fin de phrase (0,53 à 1,08 s) portent les longues chutes ; la balle atterrit sur la première note de la phrase suivante, souvent sur une coupe. Densité : un impact toutes les 4 à 13 im, une coupe en moyenne toutes les 4,5 s, quatre coupes en 1,4 s au climax (f1615, f1629, f1643, f1656, toutes les 13-14 im). Seul « repos » : les accords finaux espacés de 1 à 1,4 s (55,2-57,6 s), où la balle fait de grands sauts lents en gros plan.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.40",
+        "what": "Noir, puis cercle qui s'ouvre depuis la balle en haut du cadre jusqu'à plein cadre (f1-f12)",
+        "technique": "ouverture en iris (iris-in)"
+      },
+      {
+        "t": "0:00.40-0:00.73",
+        "what": "La balle tombe vers la caméra en plongée, longue traînée verte ; premier impact sur un champignon à f22 = première note (si grave)",
+        "technique": "chute + premier impact sur la note"
+      },
+      {
+        "t": "0:01.03-0:05.20",
+        "what": "Carton « No.4 · E. Grieg / 格里格《山魔王的大厅》 / In the Hall of the Mountain King » en fondu (f31-f37, sortie f151-f157) ; bulle « 这是哪儿? » (Où suis-je ?) de f31 à f92",
+        "technique": "carton-titre de morceau + bulle de réaction"
+      },
+      {
+        "t": "0:00.73-0:18.03",
+        "what": "Section A, grotte rouge, éclats vert-cyan : un saut court entre champignons voisins par croche (≈8 im), chute pendant chaque silence de phrase (f150-f158, f258-f290) ; coupes sur atterrissages f107, f158, f370, f502",
+        "technique": "rebond = note, chute = silence"
+      },
+      {
+        "t": "0:16.73-0:18.03",
+        "what": "Longue chute avec traînée vers le niveau inférieur pendant la pause de 1 s de la musique (17,04 → 18,05 s)",
+        "technique": "changement de niveau dans le silence"
+      },
+      {
+        "t": "0:18.03-0:32.87",
+        "what": "Coupe f541 sur l'attaque forte de 18,05 s : niveau au-dessus d'un fleuve de lave, liserés menthe et violets ; bulle « 有人吗...? » (Il y a quelqu'un ?) f548-f605 ; notes à 0,244 s",
+        "technique": "attaque forte = nouveau décor + bulle"
+      },
+      {
+        "t": "0:25.47 / 0:27.00",
+        "what": "La caméra traverse un pied puis un chapeau de champignon : 1 à 3 images pleines de violet (f764, f810)",
+        "technique": "collision caméra (défaut)"
+      },
+      {
+        "t": "0:32.73-0:32.87",
+        "what": "Plan éclair de 4 im (f982-f985) : la balle tombe le long d'un escalier de champignons ; coupe f986 sur l'attaque la plus forte de la pièce (32,86 s)",
+        "technique": "plan éclair avant l'atterrissage"
+      },
+      {
+        "t": "0:32.87-0:44.83",
+        "what": "Section C, palette or-rose-magenta, halos ambrés ; bulle « 越来越快了! » (Ça va de plus en plus vite !) f989-f1040 pendant que les notes passent à 0,186 s",
+        "technique": "texte qui commente l'accelerando"
+      },
+      {
+        "t": "0:44.83-0:48.73",
+        "what": "Coupe non détectée à f1345 sur l'attaque de 44,84 s, gros champignon or au premier plan, sol de lave ; bulle « 救命啊!!! » (Au secours !!!) f1349-f1409 ; étincelles dorées",
+        "technique": "escalade de panique"
+      },
+      {
+        "t": "0:48.73-0:53.83",
+        "what": "Coupe sur une plaine de lave : escalier de champignons qui monte en diagonale vers le fond, la balle les dévale, une note toutes les ≈4 im, anneaux roses et or",
+        "technique": "chemin en perspective"
+      },
+      {
+        "t": "0:53.83-0:55.20",
+        "what": "Climax : 4 coupes toutes les 13-14 im, chacune sur une note, gros plans de la balle sur un champignon, grandes ondes roses puis or puis roses ; la caméra passe dans un rocher (f1629-f1631 gris)",
+        "technique": "montage serré sur les accords"
+      },
+      {
+        "t": "0:55.20-0:57.64",
+        "what": "Accords finaux espacés de 1 à 1,4 s : la balle, en gros plan (≈10 % de la hauteur), fait de grands sauts lents avec traînée",
+        "technique": "ralentissement sur les accords"
+      },
+      {
+        "t": "0:57.64-0:58.13",
+        "what": "Petit « ding » aigu (≈990 Hz) puis bulle « ......叮? » (... ding ?) à f1733 ; 0,3 s de quasi-silence",
+        "technique": "gag sonore + temps de réaction"
+      },
+      {
+        "t": "0:58.13-0:59.10",
+        "what": "Coupe f1744 sur une vue plongeante de la lave au départ d'un sifflet descendant (1 860 → 600 Hz en 1 s) ; cercle qui se referme sur la balle f1754-f1770, fin au noir avec la balle minuscule",
+        "technique": "fermeture en iris sur sifflet de chute"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Hauteur dominante mesurée aux attaques : si, do#, ré, mi, fa#, ré, fa#… dans le grave (si2 ≈122 Hz), le thème de Grieg en si mineur, sons purs (synthèse probable). 152 éclats d'impact détectés (hausse de luminance) : 123 tombent à ±1,5 im d'une attaque audio, contre 36 % au hasard ; décaler les éclats de 2 im fait tomber le score à 95, de 4 im à 33 à 51 : verrouillage réel. L'attaque mesurée arrive en médiane 0,7 im après l'éclat (attaque audible 0-2 im après) : l'image d'impact est sur la note ou 1 im avant. 10 coupes sur 12 à ±1 im d'une attaque (f502 à +2 im, f1462 à +4 im ; f1744 tombe sur le départ du sifflet final, pas sur une note). Deux coupes non détectées (f982, f1345) sont aussi sur des attaques fortes. Les 3 attaques les plus fortes du morceau (18,05, 32,86, 44,84 s) portent chacune une coupe, un nouveau décor et une bulle. Les grilles fixes (70 BPM global, ou par segment) ne marchent pas, car le tempo double au fil du morceau : sur elles seulement 11 à 21 éclats sur 24 à 43 par segment, proche du hasard. L'indice automatique (corrélation aux attaques z = 11,1, décalage +23 ms) le confirmait.",
+    "synced": [
+      "impacts",
+      "atterrissages",
+      "coupes",
+      "flashs",
+      "texte",
+      "couleur",
+      "camera",
+      "drop"
+    ],
+    "style_match": "Thème staccato qui accélère et enfle : rebonds secs de plus en plus rapides, palette qui se réchauffe, montage qui se resserre. Le grotesque de Grieg colle au cartoon.",
+    "how_built": "Le prompt exige « 卡点 » (calé sur les temps) et « allumer les objets au rythme ». Bande-son très probablement générée en code à partir d'une partition (sons purs, sifflet de chute en glissando synthétique, « ding » à 990 Hz) : la même liste de notes pilote le son et l'animation, chaque note donnant l'instant d'un atterrissage et la durée du saut précédent, d'où un calage à l'image près sans analyse audio."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Un rebond = une note",
+      "name_en": "Note-locked bounces",
+      "t": "0:00.73-0:55.20",
+      "frames": "f22-f1656",
+      "fps": 30,
+      "mechanics": "Chaque note du thème est un atterrissage de la balle sur un champignon. Section A : sauts courts entre champignons voisins (amplitude ≈3-6 % du cadre) toutes les ≈8 im (0,28 s), impacts mesurés f22, f30, f39, f47, f56, f65, f73 (pas de 8-9 im), chacun à ±1 im d'une attaque. Image d'impact = pic de luminance (le champignon s'allume), sur la note ou 1 im avant. 123 impacts sur 152 à ±1,5 im d'une attaque (hasard 36 %). La durée du saut est l'intervalle jusqu'à la note suivante : la trajectoire est contrainte par la partition, pas par la physique. Écrasement (squash) non visible à cette taille (balle ≈2-4 % de la hauteur), probablement absent.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f31.jpg, microM-002-move-f89.jpg, extra-01.jpg (f51-f75), mesure éclats / attaques",
+      "illus": {
+        "from": 51,
+        "to": 75,
+        "n": 8
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "L'accélération de la musique devient accélération physique",
+      "name_en": "Accelerando mapped to bounce rate",
+      "t": "0:00-0:55.20",
+      "frames": "f0-f1656",
+      "fps": 30,
+      "mechanics": "Intervalle médian entre notes 0,279 s (0-12 s), 0,244 s (12-33 s), 0,186 s (33-49 s), 0,139 s (49-55 s) : le saut passe de ≈8,4 im à ≈4,2 im, la cadence de rebonds double. Les écarts entre éclats détectés suivent : 8 im en section A, 6,5 im en section D (une partie des impacts rapides se fondent dans le bloom). La bulle « 越来越快了! » (de plus en plus vite !) arrive à 32,9 s au moment où la pièce accélère : le personnage commente la musique.",
+      "verdict": "reprendre",
+      "evidence": "mesure des intervalles d'attaques par section, overview-06.jpg (f986-f1040)"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Chute longue pendant les silences, atterrissage sur la phrase suivante",
+      "name_en": "Falls during rests, land on the next phrase",
+      "t": "0:04.73-0:05.27",
+      "frames": "f142-f158",
+      "fps": 30,
+      "mechanics": "Le thème de Grieg finit chaque phrase par un silence d'un temps (0,53 à 1,08 s d'écart entre notes). Claude y place une chute vers un champignon plus bas, avec longue traînée verte (jusqu'à ≈30 % de la hauteur) : f142-f157 chute puis coupe f158 sur la note de 5,28 s ; f258-f290 chute de 1,08 s pendant la pause 8,59 → 9,67 s, atterrissage f290 (+0,1 im de l'attaque) ; f510-f541 descente vers le niveau de lave pendant la pause 17,04 → 18,05 s ; f974-f985 chute avant l'attaque la plus forte (f986). Le silence devient un moment de suspense au lieu d'un temps mort.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f158.jpg, microM-004-cut-f541.jpg, microM-006-cut-f986.jpg, overview-02.jpg (f270-f300)",
+      "illus": {
+        "from": 974,
+        "to": 990,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe franche sur l'image d'atterrissage",
+      "name_en": "Cut on the landing frame",
+      "t": "0:03.57-0:55.20",
+      "frames": "f107-f1656",
+      "fps": 30,
+      "mechanics": "10 coupes sur 12 tombent à ±1 im d'une attaque (f107 +1,0 ; f158 +0,5 ; f370 +0,6 ; f541 +0,6 ; f986 -0,3 ; f1615 +0,8 ; f1629 +0,3 ; f1643 -0,1 ; f1656 +0,9 im), hasard ≈24 %. Le plan suivant s'ouvre souvent sur la balle déjà au contact, éclat en cours : la coupe absorbe la fin de la chute et l'impact sert de point d'accroche à l'œil. Pas de raccord de mouvement soigné entre plans (angles et échelles changent librement).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f158.jpg, microM-004-cut-f541.jpg, microM-006-cut-f986.jpg, microM-010-cut-f1615.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Attaque forte = nouveau niveau + nouvelle palette + bulle",
+      "name_en": "Strong accent triggers scene change and reaction",
+      "t": "0:18.03 / 0:32.87 / 0:44.83",
+      "frames": "f541 / f986 / f1345",
+      "fps": 30,
+      "mechanics": "Les trois attaques les plus fortes du corps du morceau (18,05 s force 0,32 ; 32,86 s force 0,66 ; 44,84 s force 0,61) portent chacune une coupe, un changement de décor (fleuve de lave ; palette or-rose ; gros champignon or au premier plan) et une bulle de réaction qui pop 3 à 7 im plus tard (f548, f989, f1349). Les sections de la musique deviennent les chapitres du récit ; c'est la lecture que Claude a faite de « scènes changées selon la musique » sur un seul morceau.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f541.jpg, microM-006-cut-f986.jpg, microM-007-move-f1346.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Bulles de BD qui font monter la panique",
+      "name_en": "Escalating comic speech bubbles",
+      "t": "0:01.03-0:59.00",
+      "frames": "f31-f1770",
+      "fps": 30,
+      "mechanics": "Bulle blanche à coins arrondis, contour noir ≈2 px, pointe vers la balle, texte CJK gras noir ≈3,6 % de la hauteur, attachée au-dessus de la balle en espace écran. Entrée par échelle en 2-3 im (f31 minuscule, f32 moitié, f33 pleine), tenue ≈2 s (≈60 im), sortie par fondu gris en 2 im (f90-f92). Texte en escalade : « 这是哪儿? » (Où suis-je ?) → « 有人吗...? » (Il y a quelqu'un ?) → « 越来越快了! » (de plus en plus vite !) → « 救命啊!!! » (Au secours !!!) → « ......叮? » (... ding ?). Une bulle par section, posée juste après l'attaque forte.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f31.jpg, microM-007-move-f1346.jpg, image f1380 pleine résolution"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Gag sonore final : « ding », silence, sifflet de chute",
+      "name_en": "Ding, beat of silence, slide-whistle fall",
+      "t": "0:57.64-0:59.10",
+      "frames": "f1729-f1771",
+      "fps": 30,
+      "mechanics": "Après les accords finaux, un petit « ding » aigu (≈990 Hz) à 57,7 s ; la bulle « ......叮? » apparaît 2-4 im après (f1733), comme si la balle l'entendait. Quasi-silence de 0,3 s (-38 à -41 dB, 57,8-58,0 s). À 58,13 s (f1744), coupe sur la lave vue de dessus au départ exact d'un glissando descendant de 1 860 à ≈600 Hz en 1 s (sifflet de chute de dessin animé, +24 dB) : la balle tombe dans la lave. Le gag tient sur un timing classique : stimulus, réaction, pause, chute.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1744.jpg, mesure hauteur et niveau audio 57,6-59,1 s"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fermeture en iris sur la balle, calée sur le sifflet descendant",
+      "name_en": "Cartoon iris-out on a falling whistle",
+      "t": "0:58.47-0:59.00",
+      "frames": "f1754-f1770",
+      "fps": 30,
+      "mechanics": "Masque circulaire à bord net centré sur la balle (≈55 % de la largeur, ≈15 % de la hauteur). Le cercle passe du plein cadre (f1754 coins noirs) à ≈35 % de la largeur (f1758) puis ≈15 % (f1761) et se referme sur la balle seule (f1770) : ≈16 im, progression plutôt linéaire puis lente à la fin (ease-out probable). Il se referme pendant que la hauteur du sifflet descend : l'image et le son « tombent » ensemble. Clin d'œil Looney Tunes qui répond à l'ouverture en iris.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1744.jpg, overview-10.jpg (f1755, f1770)",
+      "illus": {
+        "from": 1744,
+        "to": 1770,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture en iris depuis la balle",
+      "name_en": "Iris-in from the hero",
+      "t": "0:00.03-0:00.40",
+      "frames": "f1-f12",
+      "fps": 30,
+      "mechanics": "Sur fond noir, un cercle à bord net centré sur la balle (en haut au centre, juste sous le bord) s'agrandit : rayon ≈15 % de la largeur à f6, ≈22 % à f8, ≈30 % à f10, ≈37 % à f11, plein cadre à f12. Pas croissants (ease-in). La balle est visible dès f1 dans le petit cercle : le héros est présenté avant le décor. Bon serre-livre avec l'iris final.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f0-f30)"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Champignon qui s'allume et lâche une onde annulaire",
+      "name_en": "Lit-up platform with ring shockwave",
+      "t": "0:53.83-0:54.13",
+      "frames": "f1615-f1624",
+      "fps": 30,
+      "mechanics": "À l'impact, les pois et le liseré du chapeau passent au blanc coloré avec un halo de bloom (rayon 10 à 20 % du cadre), puis un anneau plat (tore fin) part du bord du chapeau et s'élargit en s'estompant : f1615 ≈10 % de la largeur → f1620 ≈30 % → f1624 ≈35 %, grands pas puis petits (ease-out), disparition en ≈10-12 im. Couleur par section : vert, cyan-blanc, jaune (A), menthe et violet (B), or et rose (C-E). C'est la traduction directe de « allumer les objets au rythme ». Le champignon touché garde un liseré coloré qui retombe en ≈15 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1615.jpg, microM-011-cut-f1643.jpg, extra-03.jpg (f22-f30)",
+      "illus": {
+        "from": 1615,
+        "to": 1626,
+        "n": 6
+      }
+    },
+    {
+      "cat": "character",
+      "name_fr": "Balle-personnage mineur aux yeux globuleux",
+      "name_en": "Googly-eyed miner ball",
+      "t": "0:55.50-0:57.50",
+      "frames": "f1665-f1725",
+      "fps": 30,
+      "mechanics": "Sphère orange #F08858, gros yeux saillants à cernes bleu-violet et pupilles noires, petite bouche ronde « o » d'étonnement, chapeau de mineur à bord jaune avec lampe frontale blanche très lumineuse (point de bloom qui signale la balle dans les plans larges). Pas de changement d'expression visible ni de jeu d'acteur au-delà des bulles. Ne se lit qu'en gros plan (≈10 % de la hauteur à 56 s) ; ailleurs 2-4 %.",
+      "verdict": "adapter",
+      "evidence": "image f1680 pleine résolution, overview-10.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carton de morceau bilingue en bas à gauche",
+      "name_en": "Bilingual track lower third",
+      "t": "0:01.03-0:05.20",
+      "frames": "f31-f157",
+      "fps": 30,
+      "mechanics": "Filet vertical jaune #F0D050 (≈0,5 % de la largeur × 17 % de la hauteur) à x ≈5 %, puis trois lignes alignées à gauche : « No.4 · E. Grieg » sans grasse jaune ≈2,4 %, « 格里格《山魔王的大厅》 » CJK grasse blanche ≈5,3 %, « In the Hall of the Mountain King » italique gris clair ≈2,2 %, sur un dégradé sombre. Entrée en fondu ≈6 im (f31-f37) avec la première bulle, sortie en fondu ≈6 im (f151-f157) juste avant la coupe f158. Le « No.4 » suggère un épisode d'une série de morceaux.",
+      "verdict": "reprendre",
+      "evidence": "image f60 pleine résolution, microM-001-move-f31.jpg, microM-003-cut-f158.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Traînée lumineuse verte pendant les chutes",
+      "name_en": "Comet light trail on falls",
+      "t": "0:16.73-0:18.03",
+      "frames": "f502-f541",
+      "fps": 30,
+      "mechanics": "Ruban vert translucide #7FD060 qui s'effile derrière la balle, long de ≈5 % du cadre sur les petits sauts et jusqu'à ≈30 % de la hauteur sur les grandes chutes (f15-f21, f529-f540, f1710-f1725) ; il se courbe avec la trajectoire (arc visible f529-f534). Seul indice de vitesse : pas de flou de mouvement. Lisible et utile, mais la même couleur verte sur fond rouge vire au fluo.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f541.jpg, extra-03.jpg (f12-f22), overview-10.jpg (f1710-f1725)"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Cristaux flottants, cubes lumineux et étincelles",
+      "name_en": "Floating shards, glowing cubes and sparks",
+      "t": "0:00-0:58.13",
+      "frames": "f0-f1744",
+      "fps": 30,
+      "mechanics": "Éclats low-poly roses, menthe et cyan (≈3-8 % du cadre) qui dérivent et tournent lentement, souvent au premier plan (parallaxe) ; cubes jaunes lumineux suspendus (lucioles) ; à partir de 45 s, gerbes d'étincelles dorées (points de 2-4 px) à chaque impact. Remplissent le cadre et donnent de la profondeur, mais ajoutent au fouillis autour d'un héros déjà minuscule.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, overview-08.jpg, image f1380 pleine résolution"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra de poursuite en plongée",
+      "name_en": "High-angle chase camera",
+      "t": "0:00.40-0:53.83",
+      "frames": "f12-f1615",
+      "fps": 30,
+      "mechanics": "Caméra au-dessus et derrière la balle, plongée ≈35-50°, qui suit sa progression avec un léger retard (lissage) et dérive en permanence ; chaque coupe change d'angle (plongée verticale sur la chute à 18 s, contre-plongée le long de l'escalier à 49 s). La balle reste dans le tiers central. Défaut : cadre trop large, la balle ne fait que 2-4 % de la hauteur pendant 50 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-09.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui traverse le décor",
+      "name_en": "Camera clipping through geometry",
+      "t": "0:25.47 / 0:27.00 / 0:54.30",
+      "frames": "f764, f810, f1629-f1631",
+      "fps": 30,
+      "mechanics": "Sans évitement de collision, la caméra entre dans le pied ou le chapeau d'un champignon : image pleine de violet uni à f764 (1-2 im) et f810 (2-3 im), puis voile gris plein cadre f1629-f1631 en traversant un rocher, et un pan de roche noir qui balaie le cadre f1653-f1654. À corriger : collision ou marge de recul caméra, ou coupe avant l'obstacle.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f764, f810), microM-010-cut-f1615.jpg (f1629-f1631), microM-011-cut-f1643.jpg (f1653)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Montage serré au climax : un angle par accord",
+      "name_en": "Rapid angle changes on climax chords",
+      "t": "0:53.83-0:55.20",
+      "frames": "f1615-f1656",
+      "fps": 30,
+      "mechanics": "Quatre coupes toutes les 13-14 im (0,43-0,47 s), chacune à moins de 1 im d'une attaque, chacune en gros plan sur la balle au contact d'un champignon, avec une onde géante (jusqu'à ≈35 % de la largeur) qui alterne rose, or, rose. Le resserrement du montage fait sentir le climax mieux que l'accélération seule.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1615.jpg, microM-011-cut-f1643.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une palette par section de la musique",
+      "name_en": "Per-section palette shift",
+      "t": "0:00-0:59.10",
+      "frames": "f0-f1771",
+      "fps": 30,
+      "mechanics": "Section A (0-18 s) : grotte rouge, dalles violettes, éclats vert-lime et cyan. B (18-33 s) : fleuve de lave orange en contrebas, liserés menthe et violets. C (33-49 s) : liserés or et rose, halos ambrés. D (49-54 s) : plaine de lave, escalier or et rose. E (54-58 s) : rose magenta et or en gros plan. Finale : lave orange plein cadre. Le passage d'une palette froide (vert) à une palette chaude (or, rose, lave) suit le crescendo (niveau moyen -22 dB → -10,5 dB).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg, overview-06.jpg, overview-09.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Crescendo de la musique, crescendo de l'image",
+      "name_en": "Visual crescendo following the music",
+      "t": "0:00-0:55.20",
+      "frames": "f0-f1656",
+      "fps": 30,
+      "mechanics": "Le niveau sonore monte de -22 dB (0-10 s) à -10,5 dB (45-55 s). L'image suit : impacts plus fréquents, halos plus grands et plus chauds, étincelles à partir de 45 s, coupes plus serrées (4 en 1,4 s au climax), bulles de plus en plus paniquées. Corrélation intensité musicale ↔ quantité de mouvement r = 0,3 (modeste, le bloom bouge en permanence).",
+      "verdict": "reprendre",
+      "evidence": "mesure du niveau audio par tranches de 5 s, section « Cohérence musique ↔ animation » du dossier"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Escalier de champignons en perspective",
+      "name_en": "Receding mushroom staircase path",
+      "t": "0:48.73-0:53.83",
+      "frames": "f1462-f1615",
+      "fps": 30,
+      "mechanics": "Après la coupe f1462, caméra basse au-dessus d'une plaine de lave : une file de champignons étagés monte en diagonale du centre vers le coin haut gauche (≈60 % de la hauteur du cadre), montrant tout le chemin que la balle va dévaler. Vraie profondeur et lecture immédiate de la trajectoire, le meilleur cadrage du film.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f1462.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Grotte low-poly facettée et sol de lave émissif",
+      "name_en": "Faceted low-poly cave with emissive lava",
+      "t": "0:00-0:59.10",
+      "frames": "f0-f1771",
+      "fps": 30,
+      "mechanics": "Parois rouges en polygones plats (flat shading), stalactites coniques, dalles violettes, sol de lave en texture de fissures orange émissives sur croûte violet-brun ; champignons à pied cylindrique et chapeau en disque noir à pois. Brouillard sombre qui avale les fonds. Lecture temps réel claire, mais loin du rendu « Blender pro » demandé : pas d'ombres douces, pas de matières, contraste rouge / noir boueux.",
+      "verdict": "adapter",
+      "evidence": "image f60 et f1380 pleine résolution"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Bloom massif sur chaque impact",
+      "name_en": "Heavy bloom on impacts",
+      "t": "0:10.00-0:10.50",
+      "frames": "f300-f315",
+      "fps": 30,
+      "mechanics": "Le bloom des impacts fait des halos blanc-vert ou blanc-cyan de 10 à 30 % du cadre (f300-f315), qui brûlent la balle et le champignon touché pendant 3-6 im. Donne l'énergie du « coup » mais, répété toutes les 8 im, il transforme l'image en taches lumineuses sur fond noir et cache le héros.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg (f300-f315), extra-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "« 卡点 » (calé sur les temps) et « 按音乐的节奏点亮物件 » (allumer les objets au rythme) ont suffi : Claude a construit l'animation à partir de la partition, chaque note donnant un atterrissage et un allumage. Une consigne de synchro explicite dans le prompt produit une synchro réelle, image par image."
+    },
+    {
+      "kind": "build",
+      "insight": "Bande-son générée en code (probable) : sons purs aux hauteurs exactes du thème, « ding » à ≈990 Hz, glissando de sifflet 1 860 → 600 Hz. Quand la musique et l'animation sortent de la même liste de notes, la synchro est gratuite et exacte, même sur un tempo qui double."
+    },
+    {
+      "kind": "structure",
+      "insight": "« Plusieurs pièces classiques, scènes changées selon la musique » : la vidéo ne montre qu'un morceau, étiqueté « No.4 » (extrait probable d'une série). Claude a transposé l'idée à l'intérieur du morceau : chaque section et chaque attaque forte change de niveau et de palette."
+    },
+    {
+      "kind": "direction",
+      "insight": "« 带一些幽默的元素 » (un peu d'humour) a donné un personnage (yeux globuleux, casque de mineur), des bulles qui montent en panique, et surtout des gags sonores (ding, silence, sifflet de chute, iris) : l'humour passe par le son et le timing plus que par le jeu d'acteur."
+    },
+    {
+      "kind": "build",
+      "insight": "« three.js, pas Blender » mais « niveau Blender pro » : contradiction résolue par du temps réel low-poly avec bloom fort. Le niveau Blender n'est pas atteint (pas d'ombres douces ni de matières), ce que le prompt rendait presque inévitable."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité ni la caméra : balle à 2-4 % du cadre, collisions caméra dans les champignons et les rochers. Il fallait imposer une taille minimale du héros, une caméra sans traversée et une vérification image par image des collisions."
+    },
+    {
+      "kind": "other",
+      "insight": "Prompt en chinois, donc bulles et titre en chinois avec sous-titre anglais : Claude adapte la langue de l'habillage à celle du prompt."
+    }
+  ],
+  "steal": [
+    "Partir d'une liste de notes : chaque rebond atterrit sur une note, la durée du saut vaut l'intervalle jusqu'à la suivante ; l'accelerando devient accélération physique.",
+    "Placer les longues chutes dans les silences de la musique et faire atterrir l'objet, avec une coupe, sur la première note de la phrase suivante.",
+    "Attaque forte = coupe + nouveau décor ou palette + réaction du personnage 3 à 7 im après : la structure de la musique devient le récit.",
+    "Ouvrir en iris sur le héros ; fermer en iris pendant un sifflet descendant : le cercle qui rétrécit suit la hauteur qui tombe.",
+    "Impact = l'objet touché s'allume et lâche une onde annulaire qui s'élargit en ease-out ≈10 im ; changer sa couleur à chaque section."
+  ],
+  "flaws": [
+    "Caméra qui traverse le décor : images pleines de violet ou de gris à f764, f810, f1629-f1631.",
+    "Héros à 2-4 % de la hauteur pendant 50 s, noyé dans le bloom et les particules.",
+    "Bloom excessif : halos blancs jusqu'à 30 % du cadre, détails brûlés à chaque impact.",
+    "Grotte rouge sombre et confuse, loin du rendu « Blender pro » demandé.",
+    "Un seul morceau visible alors que le prompt demandait plusieurs pièces (extrait probable)."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, à 30 fps natif avec le son : meilleur exemple du corpus de synchro note par note sur un tempo qui double, avec chutes placées dans les silences, coupes sur les atterrissages et gag sonore final. À étudier pour la mécanique partition → trajectoire, pas pour le rendu."
+  }
+}

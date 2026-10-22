@@ -1,0 +1,355 @@
+{
+  "slug": "iammxfschr-d68f90",
+  "title": "Database client launch video",
+  "handle": "@iamMXFSCHR",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système éditorial crème + serif cohérent et calé au temps près sur 136 BPM, mais vocabulaire de mouvement réduit au flou-fondu, UI petite, aucune caméra.",
+  "summary": "Lancement de QueryGlow 1.3.0, client de base de données. Fond crème, serif condensée, un mot en italique coloré par phrase, maquettes d'interface sombres à droite. Chaque scène dure un nombre entier de temps à 136 BPM : couleurs d'accent qui changent tous les 2 temps, noms de bases un par temps, lignes de terminal sur les demi-temps. Très propre et musical, mais statique : pas de zoom ni de transition motivée.",
+  "prompt_vs_result": [
+    "Une vidéo de lancement pour la release, « à la Anthropic », avec en référence la phrase « modern slick and punchy ». Aucun détail produit, ni durée, ni musique, ni structure.",
+    "Tout le script tiré des vraies fonctions du produit (accès URL, 6 accents, préférences, mise à jour en une commande, garde-fou production, 6 bases, 79 $), le look ivoire + serif et la grille à 136 BPM.",
+    "« À la Anthropic » suffit pour obtenir le look éditorial ivoire. « Punchy » a été traduit en synchro au temps, pas en énergie : il fallait demander des zooms sur l'UI et des transitions enchaînées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EEEEE5", "role": "fond crème (bords)"},
+      {"hex": "#F3F2EC", "role": "halo clair au centre du fond"},
+      {"hex": "#0A0A0A", "role": "texte principal"},
+      {"hex": "#6F24DA", "role": "accent violet (mot italique, logo, boutons UI)"},
+      {"hex": "#111113", "role": "fenêtres d'application sombres"},
+      {"hex": "#497CE2", "role": "accent bleu (cycle de couleurs)"},
+      {"hex": "#2CC0A4", "role": "accent sarcelle (cycle)"},
+      {"hex": "#28C685", "role": "accent vert (cycle, ligne de succès du terminal)"},
+      {"hex": "#E16F28", "role": "accent orange (cycle)"},
+      {"hex": "#D6345E", "role": "accent rose-rouge (cycle)"},
+      {"hex": "#C0121F", "role": "rouge danger (mot « production. », bouton de la modale)"},
+      {"hex": "#8A8A85", "role": "légendes grises en sans-serif"}
+    ],
+    "type": "Serif condensée à fort contraste (type Instrument Serif), casse phrase, titres ≈ 11 % de la hauteur, version « 1.3.0 » ≈ 26 %. Dernier mot en italique coloré. Légendes en grotesque grise ≈ 2 %. Petites capitales espacées (+20 %), URL en mono.",
+    "texture": "Aucun grain. Ombre portée large et douce sous les fenêtres. Flou gaussien uniquement comme état d'entrée des mots (flou → net). Pas de flou de mouvement.",
+    "style": "Éditorial ivoire façon keynote produit",
+    "coherence": "Très forte : un seul fond, une seule serif, une règle fixe (mot final en italique de la couleur d'accent), fenêtres sombres toujours à droite, légende grise sous le titre. L'accent change de sens avec le propos (violet marque, rouge danger, vert succès). Ce qui casse un peu : la répétition mécanique du même gabarit et de la même entrée floue sur 9 scènes."
+  },
+  "rhythm": {
+    "bpm": 136,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 136 BPM (1 temps = 0,441 s = 26,5 im à 60 fps), pulsation très nette (6,92). Toute la timeline est quantifiée en temps entiers : intro 16 temps (0 à 7,05 s), logo et version 4 temps, « Make it yours » 14 temps, préférences 8, terminal 12, modale 6, carrousel 6 × 1 temps, carte de fin 8. Les 7 coupes (f423, f528, f899, f1111, f1429, f1587, f1746) tombent toutes à la même phase, 6 à 7 im (≈ 0,11 s) avant le temps, et le premier élément de la scène finit son entrée sur le temps (exemple : coupe f899, panneau opaque f906 sur la barre bleue et l'attaque). Cycle de couleurs : milieux des 6 changements à f588, f640, f694, f746, f799, f853, soit tous les 2 temps à ±1 im de la grille. Carrousel de bases : changement toutes les 26-27 im, nom net à f1620, f1646, f1673, f1699, f1726, à ±1 im des attaques mesurées (27,005 / 27,446 / 27,887 s). Terminal : commande tapée à 2 im par caractère, puis une ligne de log toutes les 13 im (= un demi-temps). Drop à 7,2 s (+11,8 dB) : le logo QueryGlow est opaque à f430 (7,17 s). Temps morts : 21,7 à 23,8 s (terminal fini, 2,1 s sans rien) et des maintiens de 1,5 à 2 s sur chaque maquette ; l'analyse automatique compte 85 % d'images quasi statiques car les entrées sont petites et douces.",
+    "timeline": [
+      {"t": "0:00-0:01.77", "what": "« Open a URL. » centré, fondu d'entrée 0,15-0,5 s, maintien, fondu de sortie f96-f105", "technique": "accroche texte seule sur fond crème"},
+      {"t": "0:01.90-0:03.52", "what": "« You're in your database. » mot à mot, « database. » en italique violet ; fondu de sortie f202-f211", "technique": "mots flou → net en décalage de 4-5 im"},
+      {"t": "0:03.53-0:04.02", "what": "fenêtre de navigateur sombre apparaît au centre (≈ 70 % de largeur)", "technique": "fondu d'opacité + mise à l'échelle 0,92 → 1, culmine sur le temps 8"},
+      {"t": "0:04.00-0:05.12", "what": "l'URL « db.your-company.com » se tape dans la barre d'adresse, puis la table de données s'affiche", "technique": "machine à écrire dans la barre d'URL puis apparition du contenu"},
+      {"t": "0:05.12-0:07.05", "what": "application QueryGlow affichée, légende « Browse, query and edit your database in the browser. »", "technique": "maintien produit avec légende"},
+      {"t": "0:07.05-0:08.80", "what": "coupe sur fond vide ; logo QueryGlow (f424-f431), « 1.3.0 » chiffre par chiffre qui monte avec flou, trait violet + « OUT NOW »", "technique": "révélation de version sur le drop"},
+      {"t": "0:08.80-0:14.98", "what": "« Make it yours. » à gauche, pastilles de 6 couleurs, application à droite ; le mot italique, l'anneau de sélection et l'accent de l'UI changent ensemble 6 fois", "technique": "cycle de couleurs d'accent tous les 2 temps"},
+      {"t": "0:14.98-0:18.52", "what": "panneau Préférences à droite, anaphore « Your time zone. / Your date format. / Your shortcuts. » ligne par ligne ; défilement du panneau à 17,0-17,38 s", "technique": "texte en anaphore + défilement d'UI qui montre les réglages cités"},
+      {"t": "0:18.52-0:23.82", "what": "« Updates in one command. » + terminal : commande tapée (19,02-19,28 s), 8 lignes de log sur les demi-temps, ligne verte de succès ; maintien 2,1 s", "technique": "terminal rythmé au demi-temps"},
+      {"t": "0:23.82-0:26.45", "what": "« Asks before a query writes to production. » avec « production. » en rouge italique, modale sombre « Run on production? » qui surgit", "technique": "accent sémantique rouge + apparition de modale"},
+      {"t": "0:26.45-0:29.10", "what": "« WORKS WITH » fixe, nom de base au centre remplacé à chaque temps : Postgres, MySQL, MariaDB, SQLite, CockroachDB, TimescaleDB", "technique": "carrousel de noms un par temps"},
+      {"t": "0:29.10-0:32.75", "what": "« Self-hosted. $79 once. Source code included. » mot à mot, puis logo, « queryglow.com » en mono, « Try the live demo. No signup. »", "technique": "carte de fin prix + appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage d'un événement par geste (son arrivée) : 30 gestes clés sur 34 à ±2-3 im d'un temps ou d'un demi-temps (hasard ≈ 33 %). Détail : 6/6 changements de couleur (milieux f588, f640, f694, f746, f799, f853 contre une grille à 588,5 / 641,4 / 694,3 / 747,3 / 800,2 / 853,2) ; 6/6 noms du carrousel nets sur le temps et sur l'attaque à ±1 im ; 8/8 lignes de terminal sur la grille des demi-temps ; 7/7 coupes à phase constante, 6-7 im avant le temps, avec arrivée du premier élément sur le temps (f906 = barre bleue + point vert). Hors grille : le fondu d'entrée du tout premier titre, l'affichage de la table (11,25 temps), la montée des chiffres de la version, le défilement des préférences (38,3 temps). Les attaques audio mesurées tombent 100 à 113 ms après chaque coupe, partout. L'indice automatique (« partielle », départs sur demi-temps p = 1e-5) confirme une phase fixe.",
+    "synced": ["coupes", "apparitions", "couleur", "texte", "drop"],
+    "style_match": "Électro « upbeat » à 136 BPM, propre et régulière : colle aux entrées courtes (6 im) et à l'esthétique nette, mais l'image reste plus calme que la musique.",
+    "how_built": "Probable : durées de scène écrites en nombre de temps à partir d'une constante BPM (16, 4, 14, 8, 12, 6, 1 × 6, 8 temps), avec un départ décalé de ≈ 0,11 s pour que l'entrée (6-7 im) se termine sur le temps. Le décalage constant peut aussi venir d'un silence en tête du fichier audio. Le prompt ne parle ni de musique ni de BPM : la synchro vient de l'agent, probablement avec une piste dont le tempo était connu."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Arrivée sur le temps (et non départ) avec coupe anticipée",
+      "name_en": "land-on-the-beat with anticipated cut",
+      "t": "0:14.98-0:15.10",
+      "frames": "f899-f906",
+      "fps": 60,
+      "mechanics": "Chaque coupe tombe 6-7 im (0,11 s) avant le temps ; l'élément d'ouverture de la scène fait un fondu de 6-7 im et devient opaque exactement sur la barre bleue et l'attaque audio. Même phase sur les 7 coupes (15,75 / 19,72 / 33,73 / 41,74 / 53,75 / 59,72 / 65,73 temps). L'œil reçoit l'image nette au moment du coup de grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f899.jpg",
+      "illus": {"from": 896, "to": 910, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Timeline quantifiée en temps entiers",
+      "name_en": "beat-quantized scene durations",
+      "t": "0:00-0:32.75",
+      "frames": "f0-f1962",
+      "fps": 60,
+      "mechanics": "Durées des blocs : 16 temps d'intro, 4 de logo, 14 de couleurs, 8 de préférences, 12 de terminal, 6 de modale, 6 × 1 de carrousel, 8 de fin (1 temps = 26,47 im). Écarts mesurés entre coupes : 105, 371, 212, 318, 158 im = 3,97 / 14,02 / 8,01 / 12,01 / 5,97 temps.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Le mot en italique porte la couleur d'accent de l'interface",
+      "name_en": "headline accent word mirrors UI accent color",
+      "t": "0:09.75-0:14.25",
+      "frames": "f585-f856",
+      "fps": 60,
+      "mechanics": "« yours. » passe violet #6F24DA → bleu #497CE2 → sarcelle #2CC0A4 → vert #28C685 → orange #E16F28 → rose #D6345E → violet. À chaque fois le bouton principal et les surlignages de l'application changent dans la même image et l'anneau de sélection saute à la pastille suivante. Fondu de couleur de 5-6 im, sans mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 580, "to": 650, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Changement de couleur tous les 2 temps",
+      "name_en": "color swap on every second beat",
+      "t": "0:09.80-0:14.22",
+      "frames": "f588-f853",
+      "fps": 60,
+      "mechanics": "Milieux des 6 fondus de couleur à f588, f640, f694, f746, f799, f853 : intervalle 52-54 im = 2 temps, à ±1 im de la grille (temps 22, 24, 26, 28, 30, 32). Le milieu du fondu (et non son début) est posé sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots flou → net en décalage",
+      "name_en": "staggered word blur-in",
+      "t": "0:23.85-0:24.50",
+      "frames": "f1431-f1449",
+      "fps": 60,
+      "mechanics": "Chaque mot passe d'opacité 0 + flou gaussien fort (≈ 8 px probable) à net en 8-10 im, sans déplacement ni changement d'échelle, à sa place finale. Décalage entre mots 4-5 im (Asks f1431, before f1435, a f1440, query f1443, writes f1447). Utilisé sur tous les titres et légendes.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f1429.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif condensée avec mot final en italique coloré",
+      "name_en": "condensed serif with italic accent word",
+      "t": "0:01.90-0:32.75",
+      "frames": "f114-f1962",
+      "fps": 60,
+      "mechanics": "Serif à fort contraste, étroite (type Instrument Serif), casse phrase, titre ≈ 11 % de la hauteur, interlettrage serré. Règle constante : le dernier mot ou le mot-clé passe en italique de la couleur d'accent (database., yours., zone./format./shortcuts., one command., production., once.).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Numéro de version caractère par caractère qui monte",
+      "name_en": "per-glyph rising version reveal",
+      "t": "0:07.05-0:08.00",
+      "frames": "f423-f480",
+      "fps": 60,
+      "mechanics": "Logo QueryGlow en fondu f424-f431 (8 im). Puis « 1 », « . », « 3 », « . », « 0 » entrent un par un, décalage 3-5 im : chaque glyphe monte d'environ 20 % de sa hauteur en passant de flou à net (12-15 im, ease-out). Chiffres ≈ 26 % de la hauteur du cadre. Trait violet ≈ 12 % de largeur puis « OUT NOW » en petites capitales espacées.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f423.jpg",
+      "illus": {"from": 426, "to": 480, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation de la version sur le drop",
+      "name_en": "version reveal on the drop",
+      "t": "0:07.05-0:07.20",
+      "frames": "f423-f432",
+      "fps": 60,
+      "mechanics": "16 temps d'intro avec deux phrases et la démo d'accès par URL, sur une musique plus légère. La musique monte de 11,8 dB à 7,2 s : le logo est opaque à f430 (7,17 s) et le numéro 1.3.0 monte juste après. La promesse produit précède le nom ; le nom arrive sur le drop.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f423.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe sèche sur fond vide puis reconstruction",
+      "name_en": "cut to empty frame and rebuild",
+      "t": "0:26.45-0:26.55",
+      "frames": "f1587-f1593",
+      "fps": 60,
+      "mechanics": "Toutes les scènes s'enchaînent par une coupe vers le même fond crème vide (parfois avec un élément déjà posé : pastilles, terminal, « WORKS WITH »), puis les éléments entrent en fondu ou flou. Aucune transition motivée, aucun mouvement qui traverse la coupe. 7 occurrences identiques.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f1587.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Entrée de fenêtre par fondu et mise à l'échelle",
+      "name_en": "window fade + scale-up entrance",
+      "t": "0:03.53-0:04.02",
+      "frames": "f212-f240",
+      "fps": 60,
+      "mechanics": "Le texte sort en fondu (f202-f211, 10 im) ; la fenêtre sombre apparaît à f212 à ≈ 65 % de la largeur du cadre et atteint ≈ 71 % vers f230 (échelle 0,92 → 1, ease-out : +10 px les 8 premières images, +5 px les 12 suivantes). Opacité 0 → 1 sur ≈ 25 im : la fenêtre passe par un gris boueux sur le fond crème. Ombre portée large et douce. Pic de mouvement sur le temps 8.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f217.jpg",
+      "illus": {"from": 205, "to": 240, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "URL tapée dans la barre d'adresse",
+      "name_en": "typed URL in browser chrome",
+      "t": "0:04.00-0:05.12",
+      "frames": "f240-f306",
+      "fps": 60,
+      "mechanics": "« db.your-company.com » s'écrit dans la barre d'adresse (≈ 19 caractères en ≈ 1 s), puis l'interface complète (barre latérale, table) s'affiche d'un bloc en ≈ 10 im (f296-f306). Illustre littéralement « Open a URL. You're in your database. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Split éditorial texte à gauche, maquette à droite",
+      "name_en": "editorial split layout",
+      "t": "0:08.80-0:26.45",
+      "frames": "f528-f1587",
+      "fps": 60,
+      "mechanics": "Bloc texte aligné à gauche à x ≈ 7 %, centré verticalement : titre sur 2-3 lignes, légende grise ≈ 2 % de hauteur dessous. Maquette sombre à droite, ≈ 50 % de largeur, bord droit à ≈ 93 %. Même gabarit sur 4 scènes. La maquette est trop petite pour lire les détails, et on ne zoome jamais dessus.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastilles de couleur avec anneau de sélection",
+      "name_en": "swatch picker with moving selection ring",
+      "t": "0:08.80-0:14.98",
+      "frames": "f528-f899",
+      "fps": 60,
+      "mechanics": "Six pastilles ≈ 1,5 % de hauteur sous le titre ; un anneau de contour saute de pastille en pastille à chaque changement. Simule un clic sans curseur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Anaphore en trois lignes",
+      "name_en": "three-line anaphora build",
+      "t": "0:15.10-0:16.50",
+      "frames": "f906-f990",
+      "fps": 60,
+      "mechanics": "« Your time zone. / Your date format. / Your shortcuts. » : chaque ligne entre mot à mot (flou → net), la suivante démarre quand la précédente est posée ; les mots finaux en italique violet forment une colonne. Puis légende grise « Plus theme, page size, auto refresh and how NULL looks. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Défilement du panneau qui montre les réglages cités",
+      "name_en": "settings panel scroll",
+      "t": "0:17.00-0:17.38",
+      "frames": "f1020-f1042",
+      "fps": 60,
+      "mechanics": "Le contenu du panneau Préférences défile vers le haut en 23 im (pic de vitesse à f1023, puis décélération : ease-out marqué), révélant Time zone, Date and time, Keyboard shortcuts, les réglages nommés dans le texte. Seul mouvement hors grille de la vidéo (départ à 38,3 temps).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal qui imprime au demi-temps",
+      "name_en": "half-beat terminal log",
+      "t": "0:19.02-0:21.72",
+      "frames": "f1141-f1302",
+      "fps": 60,
+      "mechanics": "Commande « /queryglow update » tapée à 2 im par caractère (30 car./s). Puis 8 lignes de log (Backing up…, Fast-forwarding…, Re-rendering nginx…, config OK, Building…, Starting…, Waiting for…/health) apparaissent toutes les 13 im (= demi-temps à 136 BPM), fondu de 5-6 im chacune. Dernière ligne « ✓ Update complete » en vert. Texte mono ≈ 1 % de hauteur : illisible en petit écran.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Modale de confirmation rouge",
+      "name_en": "danger confirmation modal",
+      "t": "0:24.00-0:24.53",
+      "frames": "f1446-f1471",
+      "fps": 60,
+      "mechanics": "Modale sombre « Run on production? » avec icône d'alerte, extrait SQL et bouton rouge, en fondu (et léger agrandissement probable) sur ≈ 20 im, pic de mouvement à f1451 (demi-temps 54,5). Arrive pendant que la phrase s'écrit, sous « query ».",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1429.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Accent sémantique : violet marque, rouge danger, vert succès",
+      "name_en": "semantic accent switching",
+      "t": "0:21.70-0:26.45",
+      "frames": "f1302-f1587",
+      "fps": 60,
+      "mechanics": "Le système à une seule couleur d'accent change de sens selon le propos : ligne de succès du terminal en vert, mot « production. » et bouton de la modale en rouge #C0121F, retour au violet pour le prix « $79 once. ». La couleur porte le message sans icône.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Carrousel de noms, un par temps",
+      "name_en": "one-name-per-beat logo wall",
+      "t": "0:26.45-0:29.10",
+      "frames": "f1587-f1746",
+      "fps": 60,
+      "mechanics": "Étiquette « WORKS WITH » fixe (petites capitales espacées ≈ 1 %). Le nom de base (serif ≈ 11 % de hauteur, centré) disparaît en 1 im puis le suivant entre flou → net en 6 im (f1614-f1620, f1640-f1646, f1667-f1673, f1693-f1699, f1720-f1726). Rythme 26-27 im = 1 temps. Remplace un mur de logos par un défilé lisible.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1610, "to": 1650, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Noms nets sur les attaques",
+      "name_en": "names land on audio onsets",
+      "t": "0:26.90-0:28.80",
+      "frames": "f1614-f1726",
+      "fps": 60,
+      "mechanics": "Images nettes f1620, f1646, f1673 contre attaques audio à 27,005 s (f1620,3), 27,446 s (f1646,8), 27,887 s (f1673,2) : à ±1 im. Les entrées commencent 6 im avant l'attaque. Énumération sur une pulsation régulière, comme un compte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Une fonction par scène, en phrase courte",
+      "name_en": "one feature per scene copy structure",
+      "t": "0:00-0:29.10",
+      "frames": "f0-f1746",
+      "fps": 60,
+      "mechanics": "Structure : accès (Open a URL / You're in your database) → nom + version sur le drop → personnalisation → préférences → mise à jour → sécurité production → compatibilité → prix et appel à l'action. Chaque scène : un titre de 3-6 mots + une légende grise qui précise. Ton release notes, sans superlatifs.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin prix + URL",
+      "name_en": "pricing end card",
+      "t": "0:29.10-0:32.75",
+      "frames": "f1746-f1962",
+      "fps": 60,
+      "mechanics": "« Self-hosted. $79 once. Source code included. » mot à mot (29,27-29,75 s), « $79 once. » en violet. Puis logo, « queryglow.com » en mono et « Try the live demo. No signup. » en gris, fondu 30,15-30,55 s qui finit sur le temps 69. Maintien 2,2 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond crème avec halo clair central",
+      "name_en": "ivory background with soft center glow",
+      "t": "0:00-0:32.75",
+      "frames": "f0-f1962",
+      "fps": 60,
+      "mechanics": "Fond #EEEEE5 aux bords, #F3F2EC au centre, halo elliptique très doux. Totalement statique : il ne respire pas, ne suit pas la musique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Micro-étiquettes en capitales espacées",
+      "name_en": "tracked small-caps labels",
+      "t": "0:07.75-0:29.10",
+      "frames": "f465-f1746",
+      "fps": 60,
+      "mechanics": "« OUT NOW » et « WORKS WITH » en grotesque capitales ≈ 1 % de hauteur, interlettrage ≈ +20 %, gris, posées au-dessus ou au-dessous du gros texte serif. Contraste d'échelle 1:10 avec le titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt est une relance (« nice. ») dans une session où Claude avait déjà le produit : il en a tiré le nom, la version, les fonctions, le prix et les bases supportées. Le contexte produit fait le script, pas le prompt."},
+    {"kind": "direction", "insight": "« À la Anthropic » a suffi pour produire fond ivoire, serif éditoriale, un seul accent et une grande retenue. Une référence de marque vaut une page de direction artistique."},
+    {"kind": "other", "insight": "La phrase citée (vidéo pour une startup d'inférence) a été ignorée sur le fond et gardée pour le ton : Claude a privilégié le vrai produit."},
+    {"kind": "build", "insight": "Rien sur la musique, pourtant la timeline est quantifiée à 136 BPM avec arrivée sur le temps : l'agent a probablement posé une constante de tempo et compté les scènes en temps."},
+    {"kind": "direction", "insight": "« Punchy » a été traduit en précision rythmique, pas en énergie visuelle : aucun zoom, aucune caméra. Pour une promo plus vive, il faut nommer les gestes voulus (zoom sur le bouton d'accent, transition par la fenêtre)."},
+    {"kind": "qa", "insight": "Aucune consigne de lisibilité : maquettes à 50 % de largeur et terminal à ≈ 1 % de hauteur de texte, illisibles sur téléphone."}
+  ],
+  "steal": [
+    "Commencer chaque entrée 6-7 im avant le temps pour que l'élément soit net sur le temps : on cale l'arrivée, pas le départ.",
+    "Écrire les durées de scène en nombre de temps (16, 4, 8, 12…) à partir d'une constante BPM plutôt qu'en secondes.",
+    "Le mot-clé du titre en italique prend la couleur d'accent de l'UI ; quand l'accent change, titre et interface changent dans la même image.",
+    "Énumérer des compatibilités par un nom au centre remplacé à chaque temps, sous une étiquette fixe, au lieu d'un mur de logos.",
+    "Faire imprimer les lignes d'un terminal au demi-temps : la démo technique devient une partie rythmique."
+  ],
+  "flaws": [
+    "Même transition sept fois (coupe sur fond vide puis fondu flou) : aucune transition motivée ni enchaînée.",
+    "Maquettes à 50 % de largeur jamais zoomées : la fonction montrée reste illisible.",
+    "Fenêtre sombre en fondu d'opacité : passage par un gris boueux sur le fond crème.",
+    "2,1 s de terminal figé (21,7-23,8 s) et maintiens de 1,5-2 s sur chaque maquette.",
+    "Entrée floue mot à mot partout : tic de vidéo IA, aucun mouvement de position ni d'échelle sur le texte."
+  ],
+  "deep_study": {"worth": true, "why": "Pas pour l'image, simple, mais pour le système de temps : arrivée sur le temps avec 6-7 im d'anticipation, couleurs tous les 2 temps, carrousel au temps, terminal au demi-temps. C'est le meilleur modèle du corpus pour apprendre à quantifier une démo produit sur un BPM."}
+}

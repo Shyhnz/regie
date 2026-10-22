@@ -1,0 +1,340 @@
+{
+  "slug": "axtonliu-0b861d",
+  "title": "Pelican riding a bicycle",
+  "handle": "@AxtonLiu",
+  "family": "3d",
+  "craft": 4,
+  "craft_reason": "Vrai découpage de cinéma en 6 plans, lumière d'heure dorée cohérente, profondeur de champ et bande-son qui change à chaque coupe ; mais le pélican reste raide (ailes en plaques, pattes en tubes).",
+  "summary": "Court-métrage 3D de 38 s : un pélican pédale sur un ponton au coucher du soleil. Plan large, plan moyen en travelling, insert sur le pédalier, gros plan sur la poche orange translucide, contre-plongée où il déploie les ailes, puis il s'éloigne et la caméra s'élève sur la mer pour le titre bilingue. Fort par la mise en scène et la lumière, faible par l'animation du personnage.",
+  "prompt_vs_result": [
+    "Prompt en chinois : le pélican à vélo, test classique des modèles, mais « le plus complexe, fin et beau possible », toute technique permise, « prends une journée ». Aucune durée, aucun plan, aucune musique imposés.",
+    "Claude a choisi seul : rendu 3D procédural (« computed from pure mathematics »), ponton au coucher du soleil, 6 plans à grammaire de cinéma, passage au crépuscule violet, ailes déployées en climax, bande-son par sections calées sur les coupes, sonnette de vélo, titre bilingue.",
+    "Le prompt ne cadre que l'ambition ; le modèle a inventé un vrai film. Il aurait fallu préciser le niveau d'animation du personnage (cycle de pédalage, ailes articulées) et un tempo musical pour caler l'action, pas seulement les coupes."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F4A574", "role": "ciel orangé du coucher de soleil (plans 1 à 4)"},
+      {"hex": "#FFE6C8", "role": "soleil, halo et reflets sur l'eau"},
+      {"hex": "#2A1530", "role": "ombres du ponton, noirs écrasés violets"},
+      {"hex": "#C98BA0", "role": "ciel mauve du crépuscule (plans 5 et 6)"},
+      {"hex": "#22344A", "role": "nuages sombres bleu canard"},
+      {"hex": "#E9E4DE", "role": "plumage blanc du pélican"},
+      {"hex": "#F28C28", "role": "bec et poche (accent unique), pattes"},
+      {"hex": "#1C2038", "role": "cadre du vélo bleu nuit"},
+      {"hex": "#F6EDE4", "role": "texte du titre, blanc chaud"}
+    ],
+    "type": "Titre final seul : serif didone fine (probable Bodoni Moda), casse normale, ≈ 5 % de la hauteur, interlettrage large ; filet fin ; sous-titre chinois ≈ 2,3 % ; slogan en petites capitales ≈ 1 %, très espacé.",
+    "texture": "Rendu 3D éclairé à contre-jour : bloom sur le soleil, chemin de reflets scintillants sur la mer, profondeur de champ courte (fonds flous plans 2 à 4), anneau fantôme de flare (lens ghost) à gauche, flou de mouvement directionnel sur les rayons et les planches au sol, translucidité (subsurface) de la poche, vignettage léger.",
+    "style": "court-métrage 3D, heure dorée cinématographique",
+    "coherence": "Le système tient par la lumière (soleil bas à contre-jour, une seule couleur d'accent orange répétée par le bec, les pattes et le soleil) et par la cohérence du décor d'un plan à l'autre (lampadaires, bouées, rambarde). Il se casse au plan 5 : le ciel passe d'orange à violet sans transition, ce qui se lit comme un saut de temps non motivé, et le modèle du pélican (plaques, tubes) jure avec la finesse de l'eau et de la lumière."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "lache",
+    "dead_time": "aucun",
+    "notes": "Tempo global estimé à 85 BPM (pulsation nette 3,06) mais variable par section : 85,7 BPM (0-7 s), 79,8 (7-13 s), 75,2 (13-22,5 s), 78,5 (22,5-31 s), 85,4 (31-38 s). Six plans de 7,0 / 6,0 / 4,0 / 5,5 / 8,5 / 7,0 s, coupes franches à 0:06.97 (f209), 0:12.97 (f389), 0:16.97 (f509), 0:22.47 (f674), 0:30.97 (f929), c'est-à-dire aux secondes rondes 7, 13, 17, 22,5 et 31 : une liste de plans écrite en secondes. Aucun maintien statique : tout bouge en permanence (caméra en travelling, pédalage, mouette, eau) ; la courbe d'énergie oscille toutes les ≈ 0,43 s pendant les plans 2 et 3 (chaque coup de pédale). Le rythme est contemplatif, à l'opposé de la grammaire 1600 : un événement narratif toutes les 4 à 8 s, pas toutes les 0,5 à 1 s. Les coupes tombent sur des changements de section de la bande-son (voir music), mais le mouvement à l'intérieur des plans n'est pas calé sur les temps.",
+    "timeline": [
+      {"t": "0:00-0:01.0", "what": "Fondu depuis le noir (f3 à f30) sur un plan large en légère plongée : ponton, soleil bas, pélican à vélo petit dans le tiers gauche (≈ 20 % de la hauteur)", "technique": "fondu d'ouverture depuis le noir"},
+      {"t": "0:01.0-0:06.97", "what": "Travelling latéral : les lampadaires du premier plan traversent le cadre de droite à gauche en ≈ 47 im (1,6 s), le pélican dérive de x ≈ 35 % à x ≈ 75 %, une mouette traverse le ciel", "technique": "travelling latéral avec parallaxe de premier plan"},
+      {"t": "0:06.97", "what": "Coupe franche vers un plan moyen de profil ; la bande-son monte de 7 dB pile sur la coupe", "technique": "coupe sur changement de section musicale"},
+      {"t": "0:06.97-0:12.97", "what": "Plan moyen de profil, caméra qui roule à la vitesse du vélo : le pélican reste fixe (≈ 60 % de la hauteur), rambarde et bouée défilent floues derrière, anneau de flare à gauche", "technique": "travelling d'accompagnement, sujet verrouillé"},
+      {"t": "0:12.97-0:16.97", "what": "Insert au ras du sol sur la roue arrière, le plateau à 5 trous et les pieds palmés orange sur les pédales ; flou de mouvement sur les rayons et les planches", "technique": "insert mécanique en contre-plongée"},
+      {"t": "0:16.97-0:22.47", "what": "Gros plan de profil sur la tête : poche orange translucide éclairée par le soleil, légère oscillation de la poche, rambarde et bouée qui défilent", "technique": "gros plan matière, translucidité"},
+      {"t": "0:22.47-0:25.23", "what": "Coupe vers une contre-plongée héroïque ; le ciel est devenu mauve et bleu canard ; la caméra entame une orbite vers l'avant du vélo", "technique": "changement de lumière + orbite en contre-plongée"},
+      {"t": "0:25.23-0:26.20", "what": "Le pélican lâche le guidon et déploie les ailes en 29 im (ease-in-out), envergure ≈ 45 % de la largeur ; la musique enfle à -14 dB", "technique": "climax gestuel synchronisé à la montée musicale"},
+      {"t": "0:26.20-0:30.97", "what": "Ailes ouvertes, la caméra finit son orbite face au vélo, point de fuite du ponton au centre ; repli des ailes vers 30,3-30,9 s", "technique": "maintien du climax en mouvement"},
+      {"t": "0:30.97-0:35.30", "what": "Plan de dos : le pélican s'éloigne sur le ponton en perspective centrale, la caméra s'élève et pivote vers la mer ; sonnette de vélo vers 32,4-33,9 s", "technique": "plan de sortie + grue montante"},
+      {"t": "0:35.30-0:37.00", "what": "Titre « Pelican on a Bicycle » + « 鹈鹕骑自行车 » + slogan apparaissent en fondu (21 im) dans le ciel laissé libre, pélican réduit à ≈ 10 % en bas à droite", "technique": "carton titre en fondu sur espace négatif"},
+      {"t": "0:37.00-0:37.93", "what": "Fondu au noir de l'image et du titre (28 im), la musique s'éteint avec", "technique": "fondu de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "La grille globale (85 BPM) ne tombe sur rien : 0/5 coupes à ±50 ms d'un temps. Mais la bande-son change de section à chaque coupe : pics de nouveauté spectrale à 6,99 / 13,03 / 17,04 / 22,48 / 31,14 s pour des coupes à 6,97 / 12,97 / 16,97 / 22,47 / 30,97 s (5 sur 5 à 0-5 im près). Trois coupes portent une attaque audio forte (point vert) à 0 à +2 im : f209→f210, f389→f391, f674→f674. Avec la grille mesurée par section, la coupe f209 tombe 1 im avant un temps (7,003 s, grille 85,7 BPM) et les coupes f209 et f389 tombent sur les temps extrapolés de la section 2 (6,984 et 12,999 s, grille 79,8 BPM). Les longueurs de section collent aux plans : plan 2 = 6,0 s = 8 temps exacts à 79,8 BPM ; plan 1 = 7,0 s = 10 temps à 85,7 BPM. Volume : +7 dB pile à la première coupe (-23 → -16 dB à 7,0 s), pic à -14 dB à 25,5 s pendant le déploiement des ailes (25,23-26,20 s), retrait à -23 dB à 35 s pour laisser le titre, extinction à 37,5 s avec le fondu au noir. En revanche, à l'intérieur des plans, rien n'est calé : le pédalage (un coup toutes les ≈ 0,43 s) ignore le temps local (0,70-0,80 s), et sur les planches microscope les barres bleues (f338, f359, f380, f422, f465) ne tombent sur aucun événement visible. Le seul événement audio diégétique, la sonnette (attaques à 32,43 / 32,78 / 33,14 / 33,47 / 33,86 s), n'a pas de geste visible associé.",
+    "synced": ["coupes", "drop", "texte"],
+    "style_match": "Musique tonale douce, notes claires type piano ou marimba sur nappe et ressac : contemplative, elle épouse la lumière dorée et les mouvements de caméra lents et linéaires.",
+    "how_built": "Probable bande-son générée en code et composée plan par plan : chaque section dure un nombre entier de temps ajusté à la durée du plan (d'où un tempo qui varie de 75 à 86 BPM), ce qui place les changements de section sur les coupes. La macro-structure (entrée à la 1re coupe, montée au climax, retrait sous le titre, fin avec le fondu) est donc synchrone ; la micro-animation (pédalage, ailes, caméra) a été écrite en secondes, sans grille de temps."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Découpage de cinéma en six plans",
+      "name_en": "Shot progression wide-medium-insert-close-up-hero-exit",
+      "t": "0:00-0:37.93",
+      "frames": "f0-f1138",
+      "fps": 30,
+      "mechanics": "Six plans qui resserrent puis libèrent : plan large d'exposition (7,0 s), plan moyen de profil (6,0 s), insert mécanique sur le pédalier (4,0 s), gros plan sur la tête (5,5 s), contre-plongée héroïque avec climax des ailes (8,5 s), plan de sortie de dos qui s'élève pour le titre (7,0 s). La taille du sujet suit l'arc : ≈ 20 % de la hauteur, 60 %, hors champ partiel, 80 %, 55 %, puis 10 %. Chaque plan montre une seule information (le lieu, le geste, la mécanique, la matière, l'émotion, la fin).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu d'ouverture depuis le noir",
+      "name_en": "Fade in from black",
+      "t": "0:00.10-0:01.00",
+      "frames": "f3-f30",
+      "fps": 30,
+      "mechanics": "Noir complet f0-f2, puis luminosité qui monte en 27 im (0,9 s) : f6 encore très sombre, f12 à mi-chemin, f18 presque pleine, f30 pleine. Courbe proche d'un ease-in-out. Le fondu se lit comme un lever de lumière sur le coucher de soleil.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling latéral avec parallaxe de premier plan",
+      "name_en": "Lateral truck with foreground parallax",
+      "t": "0:01.0-0:06.97",
+      "frames": "f30-f208",
+      "fps": 30,
+      "mechanics": "Caméra en légère plongée qui longe le ponton. Les lampadaires proches entrent par le bord droit (f87) et sortent par la gauche (f134) : traversée de tout le cadre en ≈ 47 im (1,6 s), vitesse constante (linéaire). Le pélican, plus loin, dérive lentement de x ≈ 35 % à x ≈ 75 % en 6 s ; soleil et horizon quasi fixes. Trois vitesses de défilement = trois plans de profondeur.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f97.jpg, microM-003-move-f122.jpg",
+      "illus": {"from": 87, "to": 134, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling d'accompagnement, sujet verrouillé",
+      "name_en": "Tracking shot locked on subject",
+      "t": "0:06.97-0:12.97",
+      "frames": "f209-f388",
+      "fps": 30,
+      "mechanics": "La caméra roule à la vitesse exacte du vélo : le pélican reste au même endroit (vélo ≈ 60 % de la hauteur, centré), seul le fond bouge (rambarde, bouée vers 12,2 s, poteaux) de droite à gauche, flou par la profondeur de champ. Le mouvement est porté par le pédalage et le défilement, pas par le cadre.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f209.jpg, microM-005-move-f342.jpg, microM-006-move-f368.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Insert mécanique au ras du sol",
+      "name_en": "Low-angle mechanical insert",
+      "t": "0:12.97-0:16.97",
+      "frames": "f389-f508",
+      "fps": 30,
+      "mechanics": "Caméra au niveau du moyeu, cadrage serré : roue arrière à gauche (≈ 80 % de la hauteur), plateau à 5 trous au centre, pieds palmés orange qui poussent les pédales, roue avant coupée à droite. Les planches au premier plan sont étirées par un flou radial. Plan de 4,0 s, le plus court du film : il accélère le rythme au milieu.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f389.jpg, microM-008-move-f418.jpg, microM-009-move-f458.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel",
+      "name_en": "Directional motion blur",
+      "t": "0:12.97-0:16.97",
+      "frames": "f389-f508",
+      "fps": 30,
+      "mechanics": "Les rayons de la roue deviennent des traînées claires, les planches du sol filent en lignes horizontales, les pieds en mouvement sont légèrement brouillés. Le flou est présent à chaque image, orienté selon la vitesse : il vend la vitesse sans accélérer la caméra.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f418.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Profondeur de champ courte et flare fantôme",
+      "name_en": "Shallow depth of field and lens ghost",
+      "t": "0:06.97-0:22.47",
+      "frames": "f209-f673",
+      "fps": 30,
+      "mechanics": "Fonds flous dans les plans 2 à 4 (rambarde et horizon en bokeh), sujet net. Un anneau de flare (cercle fin ≈ 35 % de la hauteur) reste accroché à gauche du cadre dans le plan 2, bloom sur le soleil à droite. Effets d'optique qui font « vraie caméra ».",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Poche translucide et oscillation secondaire",
+      "name_en": "Translucent pouch with secondary jiggle",
+      "t": "0:16.97-0:22.47",
+      "frames": "f509-f673",
+      "fps": 30,
+      "mechanics": "Gros plan de profil : le bec et la poche orange (≈ 45 % de la largeur) sont rétroéclairés par le soleil, la poche s'illumine de l'intérieur (#FF9A30) comme une matière translucide. La poche se creuse et ondule légèrement (bord inférieur qui retarde vers f540) : mouvement secondaire (secondary action) qui donne du poids.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f509.jpg, microM-011-cut-f674.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule de l'heure dorée au crépuscule violet",
+      "name_en": "Golden hour to violet dusk shift",
+      "t": "0:22.47",
+      "frames": "f673-f674",
+      "fps": 30,
+      "mechanics": "À la coupe f674, le ciel passe d'un orange #F4A574 à un mauve #C98BA0 avec de gros nuages bleu canard #22344A, en une image, sans fondu. Effet voulu : changer d'émotion pour le climax. Mais rien ne motive ce saut de temps, il se lit comme une faute de raccord.",
+      "verdict": "adapter",
+      "evidence": "microM-011-cut-f674.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Orbite en contre-plongée héroïque",
+      "name_en": "Low-angle hero orbit",
+      "t": "0:22.47-0:30.97",
+      "frames": "f674-f928",
+      "fps": 30,
+      "mechanics": "Caméra basse, sous le guidon, qui tourne d'environ 45° autour du vélo en 8,5 s, de trois quarts avant gauche à plein face ; le point de fuite de la rambarde glisse de la droite vers le centre. Vitesse lente et constante, le ciel occupe ≈ 60 % du cadre et grandit le personnage.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Déploiement des ailes en climax",
+      "name_en": "Wing spread climax",
+      "t": "0:25.23-0:26.20",
+      "frames": "f757-f786",
+      "fps": 30,
+      "mechanics": "Le pélican lâche le guidon et ouvre les ailes en 29 im (0,97 s) : départ lent (f757-f763, la pointe noire apparaît derrière l'épaule), accélération au milieu (f768-f778), arrivée douce (f780-f786) = ease-in-out. Envergure finale ≈ 45 % de la largeur, rémiges noires #141428 qui se découpent sur le ciel. Ailes tenues ≈ 4 s avec un léger flottement, repli vers 30,3-30,9 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 757, "to": 786, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan de sortie de dos et grue montante",
+      "name_en": "Rear follow shot into crane up",
+      "t": "0:30.97-0:37.00",
+      "frames": "f929-f1110",
+      "fps": 30,
+      "mechanics": "Plan de dos en perspective centrale (lampadaires symétriques, point de fuite au centre), le pélican à ≈ 45 % de la hauteur. La caméra ralentit, s'élève et pivote vers la gauche sur la mer : à 34 s plongée de trois quarts, à 36 s vue haute où le pélican ne fait plus que ≈ 10 % en bas à droite. La montée libère le ciel pour le titre.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f929.jpg, overview-06.jpg, extra-02.jpg",
+      "illus": {"from": 929, "to": 1080, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carton titre bilingue serif",
+      "name_en": "Bilingual serif title card",
+      "t": "0:35.30-0:37.93",
+      "frames": "f1059-f1138",
+      "fps": 30,
+      "mechanics": "Bloc centré dans le tiers haut (titre à y ≈ 17 %) : « Pelican on a Bicycle » en serif didone fine, ≈ 5 % de la hauteur, interlettrage ≈ +10 % ; filet de ≈ 8 % de la largeur ; « 鹈鹕骑自行车 » ≈ 2,3 % ; slogan « EVERY FEATHER, SPOKE AND WAVE COMPUTED FROM PURE MATHEMATICS » en petites capitales ≈ 1 %, interlettrage ≈ +30 %, presque illisible sur l'eau. Blanc chaud #F6EDE4.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre en simple fondu",
+      "name_en": "Opacity-only title fade",
+      "t": "0:35.30-0:36.00",
+      "frames": "f1059-f1080",
+      "fps": 30,
+      "mechanics": "Les trois lignes apparaissent ensemble en fondu d'opacité de 21 im (0,7 s), sans mouvement ni décalage ; la caméra, elle, continue de monter, ce qui fait vivre le titre. Une mouette traverse le titre vers 36,5 s.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1056, "to": 1083, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir final",
+      "name_en": "Fade to black",
+      "t": "0:37.00-0:37.93",
+      "frames": "f1110-f1138",
+      "fps": 30,
+      "mechanics": "Image et titre s'éteignent ensemble en 28 im (0,93 s), à peu près linéaire ; la musique s'éteint dans la même fenêtre (-26 dB à 37,0 s, -46 dB à 37,5 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur les changements de section musicale",
+      "name_en": "Cuts on music section changes",
+      "t": "0:06.97, 0:12.97, 0:16.97, 0:22.47, 0:30.97",
+      "frames": "f209, f389, f509, f674, f929",
+      "fps": 30,
+      "mechanics": "Les 5 coupes tombent à 0-5 im d'un changement de texture de la bande-son (pics de nouveauté spectrale 6,99 / 13,03 / 17,04 / 22,48 / 31,14 s), 3 portent une attaque forte à 0 à +2 im. La première coupe s'accompagne d'une entrée de la musique pleine (+7 dB) : le passage au plan moyen est vécu comme « la musique démarre ». Chaque section dure un nombre entier de temps (plan 2 = 8 temps à 79,8 BPM).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f209.jpg, microM-007-cut-f389.jpg, microM-011-cut-f674.jpg",
+      "illus": {"from": 205, "to": 214, "n": 5}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arc dynamique calé sur la dramaturgie",
+      "name_en": "Dynamic arc following the story",
+      "t": "0:07.0-0:37.5",
+      "frames": "f210-f1125",
+      "fps": 30,
+      "mechanics": "Le volume suit l'histoire : entrée à -16 dB sur la première coupe, pic à -14 dB à 25,5 s pendant le déploiement des ailes, retrait à -23 dB dès 34,5-35 s pour laisser respirer le titre, extinction avec le fondu au noir. La synchro est macro (sections, climax, fin), pas image par image.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sonnette de vélo diégétique",
+      "name_en": "Diegetic bicycle bell",
+      "t": "0:32.43-0:33.86",
+      "frames": "f973-f1016",
+      "fps": 30,
+      "mechanics": "Cinq attaques espacées de ≈ 0,35 s (« dring-dring ») pendant que le pélican s'éloigne de dos ; aucun geste visible ne les déclenche (le guidon est caché). Petit clin d'œil sonore qui humanise le personnage.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Décor procédural complet",
+      "name_en": "Full procedural environment",
+      "t": "0:00-0:37.93",
+      "frames": "f0-f1138",
+      "fps": 30,
+      "mechanics": "Ponton en planches avec rambarde, lampadaires, bouées rouges et blanches, mer animée avec chemin de reflets scintillants sous le soleil, ciel nuageux, mouettes qui traversent le cadre dans 4 plans sur 6 (vie secondaire). Le slogan revendique un calcul « from pure mathematics » : modélisation procédurale probable (SDF ou Blender scripté, non confirmé).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Étalonnage heure dorée à accent orange unique",
+      "name_en": "Golden hour grade with single orange accent",
+      "t": "0:00-0:22.47",
+      "frames": "f0-f673",
+      "fps": 30,
+      "mechanics": "Contre-jour permanent, hautes lumières pêche #FFE6C8, ombres écrasées violet #2A1530, sujet blanc #E9E4DE. Un seul accent saturé, l'orange #F28C28, répété sur le bec, la poche, les pattes et les pieds : l'œil va toujours au personnage.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Cycle de pédalage et pose sur le guidon",
+      "name_en": "Pedal cycle and handlebar pose",
+      "t": "0:06.97-0:22.47",
+      "frames": "f209-f673",
+      "fps": 30,
+      "mechanics": "Pattes orange en tubes fins articulés au genou, pieds palmés posés sur les pédales ; un coup de pédale toutes les ≈ 0,43 s (≈ 70 tours/min) d'après la courbe d'énergie. Le corps ne bouge presque pas (pas de balancement des hanches ni de la tête), les ailes reposent à plat sur le guidon comme des plaques rigides : animation mécanique, sans poids.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f342.jpg, microM-006-move-f368.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Espace négatif préparé pour le titre",
+      "name_en": "Negative space reserved for title",
+      "t": "0:34.0-0:37.0",
+      "frames": "f1020-f1110",
+      "fps": 30,
+      "mechanics": "Pendant la grue, le sujet glisse vers le coin inférieur droit (≈ 10 % de la hauteur) et la moitié haute devient une surface de mer et de ciel quasi uniforme ; le titre s'y pose centré à y ≈ 17 %. Le cadre est composé pour le texte avant qu'il n'apparaisse.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Plans longs à durées rondes",
+      "name_en": "Long shots on round-second durations",
+      "t": "0:00-0:37.93",
+      "frames": "f0-f1138",
+      "fps": 30,
+      "mechanics": "Coupes à 7,0 / 13,0 / 17,0 / 22,5 / 31,0 s : plans de 4 à 8,5 s, médiane 6,5 s. Aucun temps mort grâce au mouvement continu de la caméra, mais la densité d'événements est basse (un événement narratif toutes les 4-8 s). Rythme de film contemplatif, pas de motion design rythmé.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Le plus complexe, le plus fin, le plus beau », « toute technique » et « prends une journée » ont poussé Claude hors du SVG attendu vers un rendu 3D cinématographique : l'ambition explicite plus la liberté technique change de catégorie de résultat."},
+    {"kind": "structure", "insight": "Aucun plan n'était demandé : Claude a plaqué une grammaire de cinéma classique (large, moyen, insert, gros plan, héroïque, sortie + titre). Pour un prompt court, c'est le découpage par défaut à attendre ; pour autre chose, il faut l'écrire."},
+    {"kind": "build", "insight": "Les coupes aux secondes rondes et la bande-son dont chaque section remplit exactement un plan indiquent un pipeline où la liste de plans (en secondes) pilote à la fois l'image et la musique générée : bonne recette pour une synchro de structure sans effort."},
+    {"kind": "other", "insight": "Le prompt cite le test du pélican à vélo (mème de benchmark) : le titre bilingue et le slogan « computed from pure mathematics » transforment le test en œuvre signée, ce qui joue sur la viralité."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur l'animation du personnage : le modèle a soigné décor, lumière et caméra (faciles à rendre beaux) et laissé le pélican raide. Il faut demander explicitement poids, balancement et rig des ailes."}
+  ],
+  "steal": [
+    "Pour un film produit en 3D : large d'exposition, insert mécanique, gros plan matière, plan héroïque, plan de sortie qui libère le ciel pour le titre.",
+    "Composer la musique section par section, chaque section durant un nombre entier de temps égal au plan : les coupes tombent sur les changements musicaux.",
+    "Faire entrer la musique pleine (+6 dB) sur la première coupe : la deuxième image devient le vrai départ du film.",
+    "Climax gestuel unique (ailes qui s'ouvrent en ≈ 30 im, ease-in-out) placé sur le pic de volume, en contre-plongée, ciel dégagé derrière.",
+    "Finir par une grue montante qui réduit le sujet à 10 % dans un coin et laisse la moitié haute vide pour le titre en fondu."
+  ],
+  "flaws": [
+    "Pélican raide : ailes posées en plaques sur le guidon, pattes en tubes, corps immobile pendant le pédalage.",
+    "Saut orange → violet à la coupe de 22,5 s sans motivation : se lit comme une faute de raccord.",
+    "Slogan en petites capitales ≈ 1 % de la hauteur sur la mer scintillante : illisible.",
+    "Animation dans les plans non calée sur la musique : seule la structure est synchrone.",
+    "Rythme lent (plans de 4 à 8,5 s) : beau film, mais aucune leçon de rythme pour une promo."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo à 30 fps sans courbes fines ni typographie animée : les leçons (découpage, lumière, structure musicale par plan) se lisent entièrement sur les planches overview et quelques extras ; une étude image par image n'apporterait que le détail du déploiement des ailes, déjà mesuré."}
+}

@@ -1,0 +1,420 @@
+{
+  "slug": "reyzostyle-b55864",
+  "title": "Chunku product promo",
+  "handle": "@reyzostyle",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Ouverture au niveau 1600 (un mot par croche, slam sur le drop), système sombre cohérent et récit produit limpide en 10 s ; mais démo d'interface à texte minuscule et deux fondus au noir banals.",
+  "summary": "Promo de 10 s pour Chumoku, outil qui repère les Shorts « outliers » d'une niche et les adapte à votre chaîne. Ouverture en trois mots-chocs sur les croches (GUESS. FILM. POST.), slam « Stop guessing. » sur le drop, mur de vignettes scanné, carte héros à 31×, titre décodé, script tapé, puis la fleur-logo éclot sur le coup final. Structure calée sur 120 BPM, interface trop petite au milieu.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 10 s « dynamiques » sur le site du produit (lien seul), façon showreel de CV, « go all out ». Ni récit, ni style, ni musique, ni plan.",
+    "Claude a décidé seul : quatre chapitres numérotés (old way, find, adapt, script) dans un cadre d'interface, l'ouverture en trois mots-chocs, le mur de vignettes scanné, le décodage du titre, la fleur-logo qui éclot sur le dernier coup.",
+    "Le lien a bien cadré le fond (promesse, slogan, flux produit). Calage sur une piste à 120 BPM : réussi sur la structure, libre dans les micro-animations d'interface. Il fallait imposer une taille de texte minimale pour l'interface."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0A0A", "role": "fond noir, halo central #111111 et vignettage"},
+      {"hex": "#FFFFFF", "role": "mots-chocs, titres, logo"},
+      {"hex": "#818181", "role": "seconde moitié grise des titres (contrepoint)"},
+      {"hex": "#A0A0A0", "role": "compteur de vues de l'ancienne méthode"},
+      {"hex": "#808080", "role": "étiquettes mono (surtitres, chapitres, marque)"},
+      {"hex": "#4ADE80", "role": "vert de preuve : point du scan, coches, « Fits your channel », « SCRIPT READY » (mesuré #53DE91 à #6CE09A)"},
+      {"hex": "#141414", "role": "panneaux et cartes d'interface (liseré gris ≈ #2A2A2A)"},
+      {"hex": "#404040", "role": "flash de fond du drop"},
+      {"hex": "#B2B2B2", "role": "flash de fond du coup final"},
+      {"hex": "#8D24E7", "role": "vignette violette « 3 AI TOOLS »"},
+      {"hex": "#81BDFB", "role": "ciel des vignettes NOOB, GTA, PARKOUR"},
+      {"hex": "#E6CF79", "role": "texte jaune des vignettes « 90 DAYS », « 1 YEAR LATER »"}
+    ],
+    "type": "Grotesque type Inter Display (probable) : mots-chocs Black en capitales, capitale ≈ 23 % de la hauteur ; titres Medium ≈ 6 % avec seconde moitié grise ; étiquettes mono capitales espacées ≈ 1 % ; CHUMOKU espacé ≈ 0,12 em.",
+    "texture": "Fond noir à halo central et vignettage, grille fine à peine visible, liserés gris de 1 px sur les panneaux, ombres très légères. Aucun grain, aucun flou de mouvement (les sorties rapides restent nettes). Deux flashs de fond gris sont les seules lumières fortes.",
+    "style": "Interface sombre, HUD éditorial, typo-choc",
+    "coherence": "Tient par le cadre HUD immobile (équerres, marque, numéro de chapitre), un noir unique, le blanc réservé aux affirmations, le gris à l'ancien monde et à « their title », le vert à la preuve, et une seule famille grotesque déclinée (Black, Medium, contour) plus une mono pour les étiquettes. Les vignettes saturées sont le seul écart, justifié (contenu YouTube). Ce qui casse un peu : la démo d'interface du milieu, bien plus petite et plus lente que l'ouverture."
+  },
+  "rhythm": {
+    "bpm": 120.1,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120,1 BPM, pulsation très nette (8,59) : une marque (temps ou demi-temps) toutes les 15 im, à f1,5 + 15k. La structure suit ce pas : changements de bloc à 0,03 / 1,50 / 1,75 / 2,27 / 3,77 / 4,52 / 7,02 / 8,50 s, tous à ±1,5 im d'une marque, durée totale 10,0 s pile. Ouverture 1600 : un mot-choc par croche (GUESS. f2, FILM. f17, POST. f32, compteur f46), 1 à 2 im de noir entre eux, aucun temps mort. Coupe-flash f90 sur le drop (attaque la plus forte du morceau à 1,509 s, après une cassure de 0,75 s à −24 dB) ; flash final f510 sur le coup de 8,51 s, puis la musique s'éteint en 1,25 s pendant le logo. 18 gestes clés sur 32 à ±2 im d'une marque (56 % contre 33 % au hasard) ; les ratés sont des pré-roulements (assombrissements de 5-6 im avant les coupes), des cascades d'interface comptées en secondes (puces toutes les 6 im, lignes toutes les 5 im) et la bulle et la frappe du script. Départs calés, atterrissages libres (durées de 6 à 26 im). Maintiens : panneau « Your version » 4,63-5,5 s (seuls de petits textes apparaissent), titre décodé figé 6,52-6,88 s (0,37 s), image finale 9,6-10 s (0,4 s). Densité : un événement toutes les 0,25 à 0,5 s dans les 4 premières secondes ; ensuite toutes les 0,1 s, mais en petit.",
+    "timeline": [
+      {"t": "0:00.03-0:00.25", "what": "« GUESS. » blanc géant, lettres qui montent d'un masque une par image (f2-f14)", "technique": "masque montant par lettre"},
+      {"t": "0:00.28-0:00.48", "what": "Coupe : « FILM. » en contour seul, qui se réduit de ×1,13 à ×1 (f17-f29)", "technique": "mot en contour"},
+      {"t": "0:00.53-0:00.73", "what": "Coupe : « POST. » très espacé et gris qui se resserre et blanchit (f32-f44)", "technique": "resserrement d'interlettrage"},
+      {"t": "0:00.77-0:01.42", "what": "« YOUR LAST SHORT » : compteur gris 0 → 395 → 412 views, courbe plate, barré blanc f74-f77, assombrissement f85-f89", "technique": "compteur qui plafonne + barré"},
+      {"t": "0:01.50-0:01.73", "what": "Drop : fond qui flashe en gris, « Stop guessing. » géant qui se pose de ×1,30 à ×1", "technique": "slam sur le drop"},
+      {"t": "0:01.75-0:02.25", "what": "« Steal what already works. » mot à mot (2 im), sortie expo.in vers le haut f128-f135", "technique": "fondu-montée + sortie accélérée"},
+      {"t": "0:02.27-0:03.00", "what": "« 01 / FIND WHAT WORKS » : mur de vignettes Shorts incliné qui se redresse, rangées en sens alterné, « SCANNING YOUR NICHE FOR OUTLIERS »", "technique": "mur 3D en marquee"},
+      {"t": "0:03.00-0:03.52", "what": "Ligne de scan qui balaie le mur ; les outliers s'allument (liseré blanc), les autres s'éteignent", "technique": "scan qui trie"},
+      {"t": "0:03.58-0:03.85", "what": "Poussée vers NOOB, fondu enchaîné sur la carte héros, « Proven outliers, not guesses. »", "technique": "match dissolve"},
+      {"t": "0:03.85-0:04.25", "what": "Compteur 1× → 31× (ease-out), barre « THIS SHORT » contre « CHANNEL USUAL »", "technique": "compteur multiplicateur"},
+      {"t": "0:04.37-0:04.53", "what": "Fondu au noir de 9 im, noir sur la marque f270", "technique": "fondu au noir calé"},
+      {"t": "0:04.53-0:05.45", "what": "« 02 / ADAPT TO YOUR CHANNEL » : « Your version, not their title. », panneau à deux colonnes, coches toutes les 6 im, « What it learned »", "technique": "cascade d'interface"},
+      {"t": "0:05.45-0:06.52", "what": "Le panneau glisse à gauche, carte « THEIR TITLE » qui entre, fleur qui tourne, titre brouillé puis décodé de gauche à droite", "technique": "décodage de texte"},
+      {"t": "0:06.52-0:06.88", "what": "Étiquette « YOUR VERSION », titre adapté figé (0,37 s)", "technique": "bascule d'étiquette"},
+      {"t": "0:06.88-0:07.03", "what": "Fondu au noir, noir sur la marque f421", "technique": "fondu au noir calé"},
+      {"t": "0:07.03-0:08.40", "what": "« 03 / GET THE SCRIPT » : étapes 1-2-3, bulle de demande, hook tapé, lignes de script en mono, « SCRIPT READY »", "technique": "démo de chat + frappe"},
+      {"t": "0:08.40-0:08.50", "what": "Assombrissement de 6 im avant le coup final", "technique": "pré-roulement"},
+      {"t": "0:08.50-0:08.97", "what": "Flash gris clair, anneau en onde de choc, fleur qui éclot pétale par pétale en tournant", "technique": "éclosion du logo"},
+      {"t": "0:09.05-0:09.60", "what": "La fleur rétrécit et glisse à gauche, « CHUMOKU » monte lettre par lettre, slogan, bouton « Get started → », « chumoku.co »", "technique": "lockup qui se déplie"},
+      {"t": "0:09.60-0:10.00", "what": "Image finale 0,4 s, la musique s'éteint", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille à 120,1 BPM (netteté 8,59) : une barre bleue ou bleu clair toutes les 15 im, à f1,5 + 15k. Comptage sur 32 gestes clés (un par geste) datés image par image : 18 à ±2 im d'une barre (56 % contre 33 % au hasard), écart typique −1,5 à +0,5 im. Calés : GUESS. f2 (+0,5), FILM. f17 (+0,5), POST. f32 (+0,5), compteur f46 (−0,5), coupe-flash f90 (−1,4 ; attaque audio à f90,5), « Steal » f106 (−0,4), mur f136 (−0,4), scan f180 (−1,4), fondu enchaîné f226 (−0,3), 31× posé f255 (−1,3), noir f270 (−1,3), lignes « What it learned » f301 (−0,3), brouillage f331 (−0,2), décodage fini f391 (−0,2), noir f421 (−0,2), flash final f510 (−1,2), glissement du logo f543 (+1,9), slogan f556 (−0,1). Ratés : barré f74 (−2,4), assombrissements f85, f262, f414, f504 (−6 à −7), sortie f128 (+6,6), surtitre du scan f147 (−4,4), poussée f215 (+3,7), roulement du compteur f231 (+4,7), coches f278 (+6,7), glissement de mise en page f326 (−5,2), bulle f439 (+2,8), champ f446 (−5,1), lignes de script f484 (+2,9), nom CHUMOKU f551 (−5,1), bouton f564 (−7). Planches : microM-001, coupe f90 encadrée 1 im avant la barre bleu clair et le point vert de f91, « Steal » sur la barre bleue f106 ; microM-002, mur sur la barre bleue f136 ; microM-003, fondu enchaîné sur la barre bleue f226 ; microM-004, flash f510 1 im avant la barre bleu clair f511. Audio : cassure 0,75-1,5 s (−19 à −27 dB) puis drop à 1,509 s (attaque la plus forte) ; pic de volume final à 8,5-8,75 s (−6 dB), puis extinction. Indice automatique : départs/demi-temps R = 0,75, p = 0,0018 ; atterrissages non calés (R = 0,03 sur les temps).",
+    "synced": ["coupes", "departs", "apparitions", "texte", "flashs", "drop"],
+    "style_match": "Piste électro (probable) à 120 BPM avec cassure puis drop : mots-chocs sur les croches, slam et flashs sur le drop et le coup final ; courbes sèches assorties à l'énergie.",
+    "how_built": "Le prompt ne mentionne pas la musique. Pile HyperFrames : timeline écrite en multiples de 0,25 s, piste à 120,1 BPM dont la grille tombe à 25 ms près sur ces multiples. Le drop (1,5 s) et le coup final (8,5 s) coïncident exactement avec les deux coupes-flash, et la cassure musicale couvre la scène grise de l'ancienne méthode : piste choisie ou analysée pour la timeline, ou timeline écrite sur la piste (probable). Les micro-cascades d'interface, réglées en secondes (0,1 s), échappent au calage."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-choc dont les lettres montent d'un masque",
+      "name_en": "per-letter masked rise",
+      "t": "0:00.03-0:00.25",
+      "frames": "f2-f14",
+      "fps": 60,
+      "mechanics": "« GUESS. » en grotesque Black blanc, hauteur de capitale ≈ 23 % de la hauteur, 52 % de la largeur, centré. Les lettres montent derrière une ligne de masque posée sur la ligne de base (y ≈ 63 %) : une lettre de plus par image (largeur visible 9 → 20 → 29 → 39 → 48 % de f2 à f7), chaque lettre parcourt ≈ 21 % de la hauteur en ≈ 8 im, pas de 87, 52, 32, 19, 11, 6, 3 px = ease-out expo. Point final à f10. Le bas commence à être rogné f12-f14 (sortie par le masque amorcée), coupe à f15, 2 im de noir. Départ f2 à +0,5 im d'une marque.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 0, "to": 46, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot en contour seul",
+      "name_en": "outline-only word",
+      "t": "0:00.28-0:00.48",
+      "frames": "f17-f29",
+      "fps": 60,
+      "mechanics": "« FILM. » en contour blanc fin (≈ 2-3 px), même famille Black. Apparition franche à f17, puis réduction de ×1,13 à ×1 en ≈ 9 im (largeur 41,7 → 38,6 → 37,3 → 36,9 → 36,8 %, ease-out). Contraste plein / creux / espacé sur trois mots consécutifs : trois traitements pour trois idées. Coupe à f30, 2 im de noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Resserrement d'interlettrage et passage du gris au blanc",
+      "name_en": "tracking-in with brighten",
+      "t": "0:00.53-0:00.73",
+      "frames": "f32-f44",
+      "fps": 60,
+      "mechanics": "« POST. » apparaît très espacé et gris (#B4B4B4). Largeur 49,7 % (f32) → 46,6 → 44,7 → 43,4 → 42,6 → 42,1 → 41,5 % (f40) à hauteur constante (20 %) : c'est l'interlettrage qui se resserre (≈ −17 % de largeur), ease-out ; luminance 180 → 206 → 224 → 234 → 242 → 250 en 6 im. Coupe à f45, 1 im de noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un mot par croche",
+      "name_en": "one word per eighth note",
+      "t": "0:00.03-0:00.77",
+      "frames": "f2-f46",
+      "fps": 60,
+      "mechanics": "GUESS. f2, FILM. f17, POST. f32, compteur f46 : pas exact de 15 im (0,25 s = une croche à 120 BPM), chacun à 0,5-1,5 im d'une barre bleue ou bleu clair et à 1-2 im des attaques audio (0,058 / 0,267 / 0,517 s). 1 à 2 im de noir entre les mots : la coupe sur le noir fait claquer chaque entrée. Grammaire 1600 pure : aucun temps mort, un événement par subdivision, sous l'introduction forte de la piste (−9 dB).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de vues qui plafonne, puis barré",
+      "name_en": "stalling view counter + strike-through",
+      "t": "0:00.77-0:01.30",
+      "frames": "f46-f78",
+      "fps": 60,
+      "mechanics": "« YOUR LAST SHORT » (mono capitales espacées, ≈ 1,2 % de la hauteur, #808080), chiffre gris #A0A0A0 (≈ 9 % de la hauteur) qui roule de 0 (f46) à 14 (f47) … 395 (f60) puis ralentit jusqu'à 412 (f67) : ease-out, ≈ 21 im ; courbe grise plate dessous (sparkline sans relief). Un trait blanc barre « 412 » en 4 im (f74-f77). Tout est gris et petit : l'ancienne méthode, sous la cassure de la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f90.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Assombrissement d'anticipation avant chaque coupe",
+      "name_en": "pre-cut dim (anticipation)",
+      "t": "0:01.42-0:01.50",
+      "frames": "f85-f89",
+      "fps": 60,
+      "mechanics": "5 im avant le drop, toute la scène grise s'assombrit (compteur d'environ 60 % à 30 % de luminosité) : le cadre se vide avant le choc, comme une inspiration. Même pré-roulement de 5 à 9 im avant chaque coupe calée (f128, f262, f413, f504) : le départ du geste est libre, c'est la coupe qui tombe sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f90.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Slam sur le drop avec flash de fond",
+      "name_en": "drop slam with background flash",
+      "t": "0:01.50-0:01.73",
+      "frames": "f90-f104",
+      "fps": 60,
+      "mechanics": "Coupe franche à f90, sur l'attaque la plus forte du morceau (1,509 s = f90,5, après une cassure de 0,75 s à −24 dB). Le fond passe d'un coup à gris #404040 puis s'éteint en 13 im (luminance 64 → 56 → 48 → 42 → 36 → 31 → 26 → 24 → 21 → 17 → 15 → 13). « Stop guessing. » en grotesque Black blanc occupe 91 % de la largeur à f90 et se pose à 70 % : ×1,30 → ×1 en ≈ 10 im, bord droit qui recule de 73, 44, 30, 19, 12, 8, 6, 3, 2 px = expo.out. Tenu 15 im (0,25 s, une croche), coupe au noir à f105.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f90.jpg",
+      "illus": {"from": 88, "to": 104, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot puis sortie accélérée vers le haut",
+      "name_en": "word stagger in, expo-in exit up",
+      "t": "0:01.77-0:02.25",
+      "frames": "f106-f135",
+      "fps": 60,
+      "mechanics": "« Steal what already works. » (≈ 9 % de la hauteur, 71,5 % de la largeur, blanc, Medium) : un mot toutes les 2 im (Steal f106 sur la barre bleue, what f108, already f110, works. f112), chacun monte légèrement et passe du gris au blanc en ≈ 6 im. Tenu jusqu'à f127, puis sortie vers le haut en 7 im : pas de 1, 3, 7, 17, 29, 49, 72 px (expo.in, ≈ 16 % de la hauteur) avec fondu (luminance 250 → 64). Le mur de vignettes entre à f136, sur la barre bleue suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f90.jpg, microM-002-move-f146.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Mur de vignettes incliné qui se redresse",
+      "name_en": "tilted thumbnail wall rising into place",
+      "t": "0:02.27-0:02.67",
+      "frames": "f136-f160",
+      "fps": 60,
+      "mechanics": "Trois rangées de vignettes Shorts (cartes 9:16 arrondies, ≈ 9 % × 12 % du cadre) sortent du noir, inclinées en perspective (rotation X probable ≈ 20-30°, cartes trapézoïdales) : rangée 1 à f136, rangée 2 ≈ f139, rangée 3 ≈ f142 (décalage 3 im). Le mur monte d'environ 28 % de la hauteur (rangée 1 de y ≈ 52 % à 24 %) en ≈ 24 im, ease-out, et garde une légère inclinaison ensuite. Départ f136 sur un temps (−0,4 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f146.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Rangées de vignettes en sens alterné",
+      "name_en": "alternating marquee rows",
+      "t": "0:02.27-0:03.58",
+      "frames": "f136-f215",
+      "fps": 60,
+      "mechanics": "Rangées 1 et 3 vers la gauche, rangée 2 vers la droite, ≈ 2,4 px/im (≈ 7,5 % de la largeur par seconde), avec un zoom lent d'environ 8 % : le mur vit sans distraire. Vignettes crédibles : titres gras condensés (« 90 DAYS » en jaune #E6CF79, « 3 AI TOOLS » sur violet #8D24E7, ciel #81BDFB, « $20 » sur brun), pastilles de multiplicateur en mono (0,8×, 17×, 110×).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Ligne de scan qui trie le mur",
+      "name_en": "scan line sorting",
+      "t": "0:03.00-0:03.52",
+      "frames": "f180-f211",
+      "fps": 60,
+      "mechanics": "Une ligne verticale blanche lumineuse balaie le mur de gauche à droite en ≈ 30 im (un temps). À son passage, les cartes banales tombent à ≈ 25 % d'opacité, les outliers (17×, 11×, 20×, 65×, NOOB, 110×, 6,1×, 24×, 9×) gagnent un liseré blanc de 2 px et une pastille blanche. Surtitre « • SCANNING YOUR NICHE FOR OUTLIERS » en mono espacée, point vert. Départ f180 à −1,4 im d'une marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-move-f227.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée puis fondu enchaîné sur la carte héros",
+      "name_en": "push-in match dissolve",
+      "t": "0:03.58-0:03.85",
+      "frames": "f215-f231",
+      "fps": 60,
+      "mechanics": "Le mur zoome vers la carte NOOB (x ≈ 48-58 %) en ease-in à partir de f215, puis s'efface de f226 à f231 (opacité ≈ 100 → 20 → 0 %) pendant que la même carte NOOB, 2,1 fois plus grande, apparaît en fondu à sa place finale (x 18-37 %, y 26-82 %) avec « Proven outliers, not guesses. ». Pas de déplacement continu : deux copies de la même image en fondu enchaîné (match dissolve), d'où un dédoublement visible f226-f229. Cœur de la transition f226, à −0,3 im d'un temps. Un vrai déplacement de la carte (FLIP) serait plus lisible.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f227.jpg",
+      "illus": {"from": 214, "to": 232, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur multiplicateur et barres comparées",
+      "name_en": "multiplier count-up with comparison bars",
+      "t": "0:03.85-0:04.25",
+      "frames": "f231-f255",
+      "fps": 60,
+      "mechanics": "« 31× » en grotesque Black blanc (≈ 16 % de la hauteur) : 1× gris à f231, puis 4, 7, 10, 12, 15, 17, 19, 21, 22, 24, 25, 26, 27× de f235 à f247 (un pas par image, pas décroissants = ease-out), posé sur 31× à f255, à −1,3 im d'une marque. Sous « more views than that channel usually gets. », deux barres : CHANNEL USUAL (un point, 1×) et THIS SHORT (barre blanche qui pousse avec le compteur, 31×). Puce « • PROVEN OUTLIER » verte.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f227.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir calé sur le temps",
+      "name_en": "beat-locked dip to black",
+      "t": "0:04.37-0:04.53",
+      "frames": "f262-f272",
+      "fps": 60,
+      "mechanics": "Toute la scène s'assombrit en 8-9 im (f262-f270, puis de nouveau f413-f420) ; l'image noire tombe sur une marque (f270 et f421, à −1,3 et −0,2 im) et la scène suivante démarre l'image d'après. Propre et calé, mais anonyme : ce sont les seules transitions non motivées du film.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Panneau d'analyse en cascade",
+      "name_en": "staggered analysis panel",
+      "t": "0:04.53-0:05.45",
+      "frames": "f272-f327",
+      "fps": 60,
+      "mechanics": "« Your version, not their title. » puis un panneau sombre #141414 (liseré gris, coins ≈ 16 px, ≈ 32 % × 20 % du cadre) à deux colonnes. Gauche « Reading your uploads » : 4 titres de la chaîne avec coche verte, un toutes les 6 im (f278, f284, f290, f296). Droite « What it learned » : 3 lignes clé/valeur (NICHE Minecraft rankings, FORMAT 30-45s no face, WORKS BEST a ranking you argue with), une toutes les 5 im à partir de f301 (sur une marque). Texte ≈ 1,2 % de la hauteur : illisible sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Glissement de mise en page pour accueillir la carte",
+      "name_en": "layout shift to make room",
+      "t": "0:05.43-0:05.70",
+      "frames": "f326-f342",
+      "fps": 60,
+      "mechanics": "Le panneau glisse vers la gauche et rétrécit (du centre à x ≈ 3-25 %) pendant que la carte « THEIR TITLE » (vignette NOOB + titre) entre par la droite en fondu, ease-out ≈ 15 im ; entre les deux, la fleur de Chumoku sert de connecteur. Départ f326, à −5 im d'une marque (hors grille).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Décodage de titre brouillé",
+      "name_en": "text scramble decode",
+      "t": "0:05.52-0:06.52",
+      "frames": "f331-f391",
+      "fps": 60,
+      "mechanics": "Le titre copié s'affiche en glyphes aléatoires qui changent à chaque image (« a pwDLTa p DLTa pwDLTa… »), départ f331 sur une marque (−0,2 im). À partir de ≈ f358, il se résout de gauche à droite (« I joined a rich serveq EMUb qxE… » à f372) et se fige à f391, de nouveau sur une marque : « I joined a rich server with one dirt block ». Trope de vidéo IA, mais motivé : la version adaptée sort du brouillage du titre original.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Étiquette qui bascule : THEIR TITLE → YOUR VERSION",
+      "name_en": "label flip as payoff",
+      "t": "0:06.52-0:06.60",
+      "frames": "f391-f396",
+      "fps": 60,
+      "mechanics": "À la fin du décodage, l'étiquette mono en contour « THEIR TITLE » devient une pastille pleine gris clair « YOUR VERSION » et le liseré de la carte s'éclaircit (≈ 5 im). Le changement d'étiquette dit le bénéfice sans phrase supplémentaire.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Logo en indicateur de traitement",
+      "name_en": "brand mark as spinner",
+      "t": "0:05.67-0:06.52",
+      "frames": "f340-f391",
+      "fps": 60,
+      "mechanics": "Entre le panneau et la carte, la fleur de Chumoku (≈ 3 % de la hauteur) tourne sur elle-même pendant le brouillage et s'arrête quand le titre est résolu : la marque joue le rôle de l'indicateur de chargement.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Démo de chat : étapes, bulle, frappe, script",
+      "name_en": "chat demo with typed script",
+      "t": "0:07.03-0:08.40",
+      "frames": "f422-f504",
+      "fps": 60,
+      "mechanics": "« Get the script. Ready to film. » + trois pastilles d'étapes (1 Your angle, 2 Outline, 3 Script) en cascade de ≈ 6 im à partir de f422 (sur une marque). Bulle de demande « write the script for my saved idea » alignée à droite, qui monte en ≈ 10 im (f439). Champ de texte f446, puis « Hook: “Everyone on this server is rich. I have one dirt block.” » tapé à ≈ 2,6 caractères par image avec curseur ; trois lignes de script en mono (0-3s, 3-30s, 30-40s) f484-f498 ; « • SCRIPT READY · 40S · WRITTEN FOR YOUR CHANNEL » ; les numéros d'étapes passent au blanc. Micro-départs libres par rapport à la grille ; frappe trop rapide pour se lire comme une frappe.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-004-cut-f510.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Éclosion du logo sur le coup final, avec onde de choc",
+      "name_en": "logo bloom with shockwave ring",
+      "t": "0:08.50-0:08.97",
+      "frames": "f510-f538",
+      "fps": 60,
+      "mechanics": "Coupe à f510 sur le dernier accent du morceau (8,51 s, pic de volume) : fond gris clair #B2B2B2 qui s'éteint en ≈ 10 im, fin anneau au centre (rayon ≈ 11 % de la hauteur). La fleur à six pétales naît pétale par pétale en tournant (1 pétale f512, 2 à f516, 3-4 à f520-f524, 6 à f534-f538). Entre f522 et f530, l'anneau s'élargit de ≈ 11 à 48 % de la hauteur (onde de choc, ease-out) puis s'efface. Les premiers pétales, gris sur gris, se lisent mal pendant ≈ 6 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f510.jpg",
+      "illus": {"from": 508, "to": 538, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lockup qui se déplie : la fleur glisse, le nom monte du masque",
+      "name_en": "logo lockup unfold",
+      "t": "0:09.05-0:09.60",
+      "frames": "f543-f576",
+      "fps": 60,
+      "mechanics": "La fleur (≈ 12 % de la hauteur) rétrécit à ≈ 6 % et glisse à gauche en ≈ 9 im (f543-f552) ; « CHUMOKU » (grotesque géométrique Bold, capitales espacées ≈ 0,12 em, ≈ 6 % de la hauteur) sort de derrière elle, lettres montant d'un masque avec ≈ 1,5 im de décalage (f551-f562). Slogan « Steal what already works. » mot à mot à partir de f556 (sur une marque), bouton blanc « Get started → » f564-f572, « chumoku.co » en mono f568-f576. Le lockup final couvre x 22-78 %, y 33-69 %. Image finale 0,4 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes-flash sur les deux accents du morceau",
+      "name_en": "flash cuts on drop and final hit",
+      "t": "0:01.50 et 0:08.50",
+      "frames": "f90, f510",
+      "fps": 60,
+      "mechanics": "Les deux seuls flashs du film tombent sur les deux attaques majeures de la piste : drop à 1,509 s (f90,5) après une cassure de 0,75 s, coup final à 8,51 s (pic à −6 dB). La coupe précède l'attaque mesurée de 0,5 à 1,2 im. Sous la cassure (0,75-1,5 s), la scène grise et calme de l'ancienne méthode ; après le coup final, la musique s'éteint en 1,25 s pendant que le logo se pose : arc musical et arc narratif coïncident.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f90.jpg, microM-004-cut-f510.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Blocs calés sur la grille, micro-animations libres",
+      "name_en": "macro on the beat, micro free",
+      "t": "0:00-0:10.00",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Tous les changements de bloc tombent à ±1,5 im d'une marque (f2, f17, f32, f46, f90, f105, f136, f180, f226, f255, f270, f331, f391, f421, f510, f556) : 18 gestes clés sur 32 (56 % contre 33 % au hasard). Ce qui rate : pré-roulements de 5-9 im, cascades d'interface comptées en secondes (coches 6 im, lignes 5 im), bulle et frappe. Départs et coupes calés, atterrissages libres (R = 0,03 sur les temps).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-002-move-f146.jpg, microM-003-move-f227.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre HUD permanent",
+      "name_en": "persistent HUD frame",
+      "t": "0:00-0:10.00",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Équerres aux quatre coins (≈ 2 % du cadre, gris), marque « ✿ CHUMOKU » en mono minuscule en haut à gauche, numéro de chapitre en bas à gauche (« 00 / THE OLD WAY », « 01 / FIND WHAT WORKS », « 02 / ADAPT TO YOUR CHANNEL », « 03 / GET THE SCRIPT », puis « CHUMOKU.CO »). Le cadre ne bouge jamais : il tient l'unité malgré les coupes et les flashs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en chapitres numérotés",
+      "name_en": "numbered chapter structure",
+      "t": "0:00-0:10.00",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "00 l'ancienne méthode (deviner, filmer, poster ; 412 vues barrées) → pivot « Stop guessing. » / « Steal what already works. » sur le drop → 01 trouver les outliers (scan, 31×) → 02 adapter à sa chaîne (analyse, titre réécrit) → 03 obtenir le script → logo, slogan, bouton, URL. Démo produit complète en 10 s ; chaque chapitre = une phrase-titre + une preuve d'interface.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur sémantique : gris, blanc, vert",
+      "name_en": "semantic color coding",
+      "t": "0:00-0:10.00",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Gris (#A0A0A0, #818181) = l'ancien monde et ce qui n'est pas à vous (compteur, « not guesses », « not their title ») ; blanc = Chumoku et les affirmations ; vert #4ADE80 probable = preuve et succès (scan, coches, « Fits your channel », « SCRIPT READY ») ; couleurs saturées réservées aux vignettes. Les deux flashs gris marquent les deux chocs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titres en deux tons : affirmation blanche, contrepoint gris",
+      "name_en": "two-tone headline",
+      "t": "0:03.77-0:08.50",
+      "frames": "f226-f509",
+      "fps": 60,
+      "mechanics": "« Proven outliers, » blanc + « not guesses. » gris #818181 ; « Your version, » + « not their title. » ; « Get the script. » + « Ready to film. ». Grotesque Medium ≈ 6 % de la hauteur, centré en haut (y ≈ 11-17 %). La seconde moitié en gris permet une phrase complète sans concurrencer la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir à halo central et grille fine",
+      "name_en": "dark vignette background with faint grid",
+      "t": "0:00-0:10.00",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Noir #0A0A0A, halo radial à peine plus clair au centre (#111111), grille fine très discrète et vignettage : de la profondeur sans texture ni grain. Fond statique ; toute l'énergie vient des coupes et des flashs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Seule entrée : le lien du site (raccourci t.co). Claude en a tiré le nom, le slogan « Steal what already works. », les trois étapes du produit (trouver, adapter, scénariser) et des exemples crédibles de niche Minecraft : un lien suffit à écrire une démo produit juste."},
+    {"kind": "direction", "insight": "« Like its your showreel for a resume… go all out » a poussé à aligner des démonstrations de savoir-faire (trois traitements typographiques en 0,75 s, slam, scan, décodage, éclosion du logo) tout en restant au service du produit."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a choisi des chapitres numérotés 00 à 03 dans un cadre HUD, une phrase-titre par chapitre et un pivot problème → solution placé sur le drop. La durée de 10 s est tenue à l'image près (600 im)."},
+    {"kind": "build", "insight": "Pile HyperFrames : timeline en pas de 0,25 s (croches à 120 BPM), rendu 60 fps sans flou de mouvement, transitions par coupes, flashs et fondus au noir. Le calage exact du drop et du coup final suppose une piste analysée ou une timeline écrite sur la piste (probable)."},
+    {"kind": "qa", "insight": "Le prompt ne parle pas de musique, pourtant la synchro est réelle sur la structure : timeline en multiples de 0,25 s + piste à 120 BPM qui démarre sur un temps = tout tombe juste. À exiger explicitement pour la reproduire : BPM, position du drop, coupes sur les temps, et micro-cascades en divisions du temps (0,125 s) plutôt qu'en 0,1 s."},
+    {"kind": "banned", "insight": "Rien d'interdit : deux tropes de vidéo IA apparaissent (texte brouillé qui se décode, frappe ultra-rapide), ici motivés par le récit. Une liste d'interdits et une taille minimale de texte auraient évité la démo d'interface minuscule du milieu."}
+  ],
+  "steal": [
+    "Ouverture en mots-chocs : un mot toutes les 15 im (une croche à 120 BPM), chacun traité autrement (masque montant, contour, resserrement d'approche), 1 à 2 im de noir entre eux.",
+    "Slam sur le drop : coupe franche sur l'attaque, fond qui flashe en gris et s'éteint en 13 im, mot géant qui passe de ×1,30 à ×1 en 10 im (expo.out).",
+    "Mur de vignettes à rangées en sens alterné, balayé par une ligne de scan d'un temps : les cartes banales s'éteignent, les outliers gagnent un liseré blanc et leur multiplicateur.",
+    "Décodage à sens : le titre copié se brouille en glyphes aléatoires puis se résout de gauche à droite en votre version, et l'étiquette « THEIR TITLE » bascule en « YOUR VERSION ».",
+    "Signature sur le coup final : flash gris, anneau qui s'élargit en onde de choc, fleur-logo qui éclot pétale par pétale, puis glisse à gauche pour laisser sortir le nom."
+  ],
+  "flaws": [
+    "Démo d'interface à texte minuscule (listes et lignes de script ≈ 1,2 % de la hauteur) : illisible sur téléphone en 2,5 s.",
+    "Deux fondus au noir de 9 im entre chapitres : propres et calés, mais les seules transitions non motivées du film.",
+    "Micro-animations d'interface en secondes libres (coches toutes les 6 im, bulle, frappe) : le calage musical retombe au milieu.",
+    "Décodage de texte et frappe ultra-rapide (≈ 2,6 caractères par image) : tropes de vidéo IA, la frappe ne se lit pas comme telle.",
+    "Flash final gris clair #B2B2B2 un peu terne, et pétales gris sur gris au début de l'éclosion : la fleur se lit mal pendant 6 im."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : 0-1,8 s (trois mots-chocs sur les croches, assombrissement d'anticipation, slam sur le drop) et 8,4-9,6 s (flash, éclosion, lockup) sont des modèles de synchro image/musique à étudier image par image à 60 fps, directement reproductibles en GSAP. Le milieu (démo d'interface) a moins d'intérêt."
+  }
+}

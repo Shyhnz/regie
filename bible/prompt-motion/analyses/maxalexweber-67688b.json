@@ -1,0 +1,441 @@
+{
+  "slug": "maxalexweber-67688b",
+  "title": "ODATANO Cardano hype edit",
+  "handle": "@maxalexweber",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Synchro exemplaire (montée, accélération à 150 BPM, coupure, drop) et système typo cohérent, mais vocabulaire d'effets générique : flash + onde de choc + glitch RGB répétés sur chaque impact, textes terminal illisibles.",
+  "summary": "« Hype edit » de 18 s pour l'écosystème ODATANO (OData pour Cardano et Midnight). Trois mots-piliers claquent (SAP, CARDANO, MIDNIGHT), convergent en réseau vers un anneau qui devient le logo, puis 12 produits défilent à 0,4 s chacun avec gros numéros fantômes, une coupure façon terminal « odatano.connect() » et un drop final sur le logo. Force : la structure musicale (montée, accélération, silence, drop) est construite avec l'image. Faiblesse : effets de bande-annonce crypto vus et revus.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : « Make a ODATANO edit that goes hard ». Seuls le nom de la marque et l'énergie (« goes hard ») sont imposés.",
+    "Claude a choisi la structure (trois piliers, convergence, logo, défilé de 12 produits, coupure, drop), la palette bleu nuit, une couleur par entité, la bande-son à tempo changeant et les effets (flash, onde, glitch, warp). Produits et logo : dépôt ou site, probablement.",
+    "« Goes hard » a été traduit en codes de bande-annonce crypto (glitch, flash, étoiles filantes). Il aurait fallu donner une référence de style, limiter les effets répétés, imposer une taille minimale de texte et 60 fps."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#05070D",
+        "role": "fond noir bleuté"
+      },
+      {
+        "hex": "#0B1A3A",
+        "role": "halo bleu nuit central"
+      },
+      {
+        "hex": "#E8ECF5",
+        "role": "texte principal, SAP, DATA"
+      },
+      {
+        "hex": "#3B7FE0",
+        "role": "CARDANO"
+      },
+      {
+        "hex": "#7F8FF0",
+        "role": "MIDNIGHT, suffixes des noms de produits, NO du logo"
+      },
+      {
+        "hex": "#5A7FE8",
+        "role": "moitié bleue de l'anneau logo"
+      },
+      {
+        "hex": "#A0A4B0",
+        "role": "moitié grise de l'anneau logo"
+      },
+      {
+        "hex": "#C8CCD8",
+        "role": "flash d'impact gris clair"
+      },
+      {
+        "hex": "#FF3B8A",
+        "role": "frange magenta du glitch RGB"
+      },
+      {
+        "hex": "#3A6FD0",
+        "role": "bande lumineuse de balayage derrière les noms"
+      },
+      {
+        "hex": "#23273A",
+        "role": "gros numéros fantômes 01-12"
+      }
+    ],
+    "type": "Grotesque géométrique extra-grasse (Inter ou Manrope probable) en capitales, ≈ 16 % de la hauteur pour les piliers, ≈ 5 % pour les produits ; logo en sans géométrique fin très espacé (≈ +15 %) ; légendes mono ≈ 1,2 %.",
+    "texture": "Vignette forte, traînées d'étoiles radiales, glitch RGB (décalage horizontal magenta/bleu) intermittent, flashs gris clair, anneaux d'onde de choc fins, pas de grain ni de flou de mouvement.",
+    "style": "Bande-annonce tech crypto, glitch néon",
+    "coherence": "Système très tenu : un seul fond bleu nuit, une couleur par entité réutilisée dans le logo (gris + bleu), le même gabarit d'impact (noir → flash → mot → onde) et le même gabarit de liste (numéro fantôme + icône + nom bicolore + compteur 01/12). Ce qui l'affaiblit : l'effet d'impact est identique à chaque fois et le glitch tombe aussi pendant les maintiens, ce qui devient du bruit."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Trois tempos. 0-7,8 s : 119,6 BPM (netteté 11,2), temps à 0,506 + n × 0,502 s ; les impacts SAP / CARDANO / MIDNIGHT tombent toutes les 30 im (1 s = 2 temps), 1 à 1,5 im avant le temps. 7,8-12,8 s : la musique accélère à ≈ 150 BPM (pics d'énergie toutes les 0,40 s ; tempo_segment donne 74,8, la moitié) et les 12 produits changent toutes les 12 im (0,4 s), coupes 0,5 à 1,7 im avant chaque attaque, 12/12. 12,8-13,9 s : coupure (breakdown), le son descend de -14 à -29 dB puis remonte en montée (riser) ; drop à 14,0-14,2 s (+19 dB) sur le flash du logo f419. Fin : fondu de 17,0 à 17,9 s calé sur le fondu sonore. Temps morts : intro 0,3-1,43 s (texte terminal minuscule, 1,1 s), coupure 12,8-13,6 s (voulue), carton final 14,5-17,0 s presque immobile (2,5 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.47",
+        "what": "Noir puis fond bleu nuit, « > connecting enterprise data_ » tapé en mono minuscule ; montée sonore de -53 à -20 dB",
+        "technique": "intro terminal + montée"
+      },
+      {
+        "t": "0:01.47-0:02.47",
+        "what": "1 im de noir, flash gris, « SAP » claque avec frange RGB et anneau d'onde qui s'élargit ; légende « 01 / ENTERPRISE »",
+        "technique": "impact flash + onde de choc"
+      },
+      {
+        "t": "0:02.47-0:03.47",
+        "what": "Même gabarit : « CARDANO » bleu, « 02 / LEDGER »",
+        "technique": "couleur par entité"
+      },
+      {
+        "t": "0:03.47-0:04.43",
+        "what": "« MIDNIGHT » lavande, « 03 / ZERO KNOWLEDGE », glitchs intermittents",
+        "technique": "impact sur 2 temps"
+      },
+      {
+        "t": "0:04.43-0:06.40",
+        "what": "Réseau : SAP, CARDANO, MIDNIGHT reliés par des lignes à un nœud central qui grandit en anneau bicolore ; les étiquettes sont aspirées vers le centre, les étoiles accélèrent",
+        "technique": "convergence vers le logo, montée"
+      },
+      {
+        "t": "0:06.40-0:07.97",
+        "what": "2 im de noir, flash, logo ODATANO + slogan « ODATA FOR CARDANO & MIDNIGHT » avec onde, puis ligne de stack",
+        "technique": "révélation du logo"
+      },
+      {
+        "t": "0:07.97-0:12.77",
+        "what": "12 produits, 0,4 s chacun : numéro fantôme géant, icône, nom bicolore, bande lumineuse qui balaie, compteur 01/12",
+        "technique": "défilé numéroté à 150 BPM"
+      },
+      {
+        "t": "0:12.77-0:13.97",
+        "what": "Presque noir, « > odatano.connect() » tapé, étoiles qui reviennent ; le son retombe puis monte",
+        "technique": "coupure avant le drop"
+      },
+      {
+        "t": "0:13.97-0:14.40",
+        "what": "Flash blanc 2 im, logo qui claque avec double onde de choc, drop sonore",
+        "technique": "drop"
+      },
+      {
+        "t": "0:14.40-0:17.00",
+        "what": "Logo tenu, étoiles qui ralentissent, glitch à 15,1 s, « odatano.dev » apparaît à 15,4 s",
+        "technique": "carton final"
+      },
+      {
+        "t": "0:17.00-0:17.93",
+        "what": "Fondu au noir en 0,9 s avec la musique",
+        "technique": "fondu de fin synchronisé"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Sur 27 événements clés, 24 tombent à ±2 im d'un temps ou d'une attaque de leur partie (hasard ≈ 1/3). Partie 1 (119,6 BPM) : coupes f44, f74, f104, f194 à 1,2-1,7 im avant les temps 1,51 / 2,51 / 3,52 / 6,53 s, barres bleues + points verts sur f45, f76, f106, f196 ; départ du réseau f135 et début de l'aspiration f165 sur des temps. Partie 2 (≈ 150 BPM) : 12 coupes de produits sur 12 à 0,5-1,7 im avant les attaques 8,022 / 8,417 / 8,824 / 9,218 / 9,625 / 10,019 / 10,426 / 10,820 / 11,215 / 11,622 s et les pics de 12,0 et 12,4 s. Partie 3 : début de frappe terminal sur le temps 12,967 s, flash du drop f419 juste avant la remontée à +19 dB, fondu final sur le temps 17,009 s. Ratés : glitch de 15,1 s et apparition de l'URL à 15,4 s. Corrélation attaques z = 4,49 (basses z = 4,58), énergie musique ↔ mouvement r = 0,53.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "apparitions",
+      "flashs",
+      "texte",
+      "camera",
+      "drop"
+    ],
+    "style_match": "Électro de bande-annonce (montée, accélération de 120 à 150 BPM, coupure, drop) et impacts secs en 5 im : caractère cohérent, énergie « hard » tenue jusqu'au drop.",
+    "how_built": "Prompt sans indication musicale. Le changement de tempo pile au changement de section et la coupure/drop alignés sur la frappe terminal indiquent une bande-son générée en code (probable) ou une image montée sur une piste structurée ; l'image précède le son de 1 à 1,5 im de façon constante."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Intro terminal sur une montée sonore",
+      "name_en": "Terminal intro over riser",
+      "t": "0:00.3-0:01.43",
+      "frames": "f9-f43",
+      "fps": 30,
+      "mechanics": "Fond bleu nuit #0B1A3A en halo, « > connecting enterprise data_ » tapé au centre en mono ≈ 1 % de la hauteur, ≈ 1 caractère toutes les 1-2 im, curseur souligné. Le son monte de -53 à -20 dB pendant 1,4 s. Idée juste (tension avant l'impact), mais le texte est illisible à cette taille et l'image est quasi statique 1,1 s.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f47.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Image noire puis flash d'impact",
+      "name_en": "Black frame then flash cut",
+      "t": "0:01.43-0:01.63",
+      "frames": "f43-f49",
+      "fps": 30,
+      "mechanics": "La dernière image avant chaque impact est noire ou vidée (f43, f73, f103 ; 2 im f192-f193 avant le logo). Puis f44 : fond gris clair #C8CCD8 avec traînées radiales et vignette, qui retombe au bleu nuit en 5 im (f44 → f49), ease-out. Le contraste noir → blanc maximise le choc. Calé 1 à 1,5 im avant le temps.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f47.jpg",
+      "illus": {
+        "from": 42,
+        "to": 55,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneau d'onde de choc",
+      "name_en": "Shockwave ring",
+      "t": "0:01.47-0:01.83",
+      "frames": "f44-f55",
+      "fps": 30,
+      "mechanics": "Cercle fin (trait ≈ 0,5 % de la hauteur, blanc à ≈ 60 %) centré sur le mot : ≈ 20 % de la hauteur en f45, 40 % en f47, 70 % en f49, sort du cadre vers f52-f55 en s'estompant. Ease-out (grands pas puis petits). Repris à l'identique sur CARDANO, MIDNIGHT, le logo (double anneau f421-f430).",
+      "verdict": "cliche",
+      "evidence": "microM-002-cut-f74.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot impact avec glitch RGB",
+      "name_en": "Glitch slam word",
+      "t": "0:01.47-0:01.63",
+      "frames": "f44-f49",
+      "fps": 30,
+      "mechanics": "Le mot entre à ≈ 110 % avec copies décalées magenta #FF3B8A et bleu (décalage horizontal 2-4 % de la largeur), se resserre en 3 im et se pose à 100 % en f49 (5 im). Pas de flou. Cap height ≈ 16 % de la hauteur, centré.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f104.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une couleur par entité et légende numérotée",
+      "name_en": "Color-coded entities with numbered captions",
+      "t": "0:01.47-0:04.43",
+      "frames": "f44-f132",
+      "fps": 30,
+      "mechanics": "SAP en blanc #E8ECF5, CARDANO en bleu #3B7FE0, MIDNIGHT en lavande #7F8FF0 ; dessous, une légende mono ≈ 1 % de la hauteur « 01 / ENTERPRISE », « 02 / LEDGER », « 03 / ZERO KNOWLEDGE ». Ces couleurs reviennent ensuite dans le logo (gris + bleu) et les suffixes des produits : codage cohérent.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glitchs intermittents pendant les maintiens",
+      "name_en": "Intermittent glitch flicker",
+      "t": "0:02.0-0:04.4",
+      "frames": "f66-f111",
+      "fps": 30,
+      "mechanics": "Pendant qu'un mot est tenu, une image isolée sur 3 à 7 montre le mot décalé en RGB ou tranché horizontalement (f66, f71, f81, f88, f91, f95, f99, f111). Ça garde le cadre vivant mais en bruit répétitif, sans lien vérifiable avec la grille.",
+      "verdict": "cliche",
+      "evidence": "microM-002-cut-f74.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Traînées d'étoiles et halo bleu nuit",
+      "name_en": "Warp streaks with vignette",
+      "t": "0:01.47-0:17.0",
+      "frames": "f44-f510",
+      "fps": 30,
+      "mechanics": "Fond #05070D, bande centrale plus claire #0B1A3A, vignette forte ; traînées fines bleu pâle qui partent du centre, plus longues et plus nombreuses pendant les montées (5,5-6,4 s, 14,0-14,5 s), presque absentes pendant la coupure. La densité des traînées sert de jauge d'énergie.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Convergence en réseau vers le logo",
+      "name_en": "Network convergence into logo",
+      "t": "0:04.43-0:06.40",
+      "frames": "f133-f192",
+      "fps": 30,
+      "mechanics": "f133 vide, puis SAP (gauche, x ≈ 20 %), CARDANO (haut centre) et MIDNIGHT (droite, x ≈ 80 %) apparaissent en fondu à ≈ 3 % de la hauteur, reliés par 3 lignes fines à un nœud central (f135-f141). Le nœud grossit de ≈ 3 % à ≈ 10 % de la hauteur et devient un anneau bicolore (f141-f163). Dès f165 les étiquettes sont aspirées vers le centre (SAP passe de x ≈ 20 % à ≈ 40 % en 24 im), l'anneau tourne et glitche, les traînées s'allongent. Métaphore lisible : trois briques → un produit.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 135,
+        "to": 191,
+        "n": 8
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée implicite pendant la montée",
+      "name_en": "Implied dolly-in build-up",
+      "t": "0:05.50-0:06.37",
+      "frames": "f165-f191",
+      "fps": 30,
+      "mechanics": "Pas de vraie caméra : l'accélération des traînées radiales et le resserrement des étiquettes vers le centre donnent une sensation d'avancée qui s'accélère (ease-in) sur 26 im, en phase avec la montée sonore (-12 → -4,7 dB).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bloc logo en trois niveaux",
+      "name_en": "Logo lockup hierarchy",
+      "t": "0:06.47-0:07.97",
+      "frames": "f194-f238",
+      "fps": 30,
+      "mechanics": "L'anneau bicolore (moitié grise #A0A4B0, moitié bleue #5A7FE8, ligne pointillée verticale) sert de « O » ; « DATA » blanc + « NO » bleu en sans géométrique fin très espacé, cap height ≈ 13 % ; slogan en petites capitales espacées ≈ 2 % ; à 7,5 s une ligne mono « SAP CAP · OData V4 · Cardano · Midnight » ≈ 1 %. L'ensemble occupe ≈ 60 % de la largeur, centré.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f194.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Défilé numéroté à un temps par produit",
+      "name_en": "Numbered roll call on the beat",
+      "t": "0:07.97-0:12.77",
+      "frames": "f239-f383",
+      "fps": 30,
+      "mechanics": "12 produits, chacun 12 im (11 à 13 selon l'arrondi) = 0,4 s = 1 temps à 150 BPM : ODATANO CORE, NIGHTGATE, NIGHTPASS, NIGHTGATE MCP, …, QUANTIX, FINCA, x402, DAYPASS, DAYZERO, WATCH, ODATANO ASTRA. Chaque entrée : 1 im de flash clair avec glitch, pose en 3 im, puis 8 im tenues. Le tempo plus rapide que l'intro (0,4 s contre 1 s) crée l'accélération.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f242.jpg",
+      "illus": {
+        "from": 237,
+        "to": 264,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Bande lumineuse qui balaie derrière le nom",
+      "name_en": "Light bar wipe",
+      "t": "0:07.97-0:08.07",
+      "frames": "f239-f243",
+      "fps": 30,
+      "mechanics": "Un rectangle bleu clair #3A6FD0 (hauteur ≈ 18 % du cadre) couvre la moitié gauche en f240, se déplace vers la droite en f241, s'étale à pleine largeur et pâlit en f242, disparaît en f243. Balayage en 3-4 im qui « imprime » le nom. Identique sur les 12 produits.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f362.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Numéros fantômes géants en alternance",
+      "name_en": "Giant ghost numbers",
+      "t": "0:07.97-0:12.77",
+      "frames": "f239-f383",
+      "fps": 30,
+      "mechanics": "Derrière chaque nom, le numéro 01 à 12 en grotesque grasse ≈ 45 % de la hauteur, gris-bleu #23273A presque invisible, placé alternativement à droite puis à gauche (parfois coupé par le bord). En haut : « ODATANO ECOSYSTEM » à gauche et « 01 / 12 » à droite en mono minuscule. Donne profondeur et progression sans encombrer.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Noms bicolores avec icône carrée",
+      "name_en": "Two-tone product names with icon tile",
+      "t": "0:07.97-0:12.77",
+      "frames": "f239-f383",
+      "fps": 30,
+      "mechanics": "Préfixe blanc + suffixe lavande (NIGHT/GATE, NIGHT/PASS, DAY/PASS, ODATANO/ASTRA), grotesque extra-grasse ≈ 5 % de la hauteur, précédé d'une icône linéaire dans un carré arrondi bleu foncé ≈ 7 % de la hauteur. Le suffixe coloré fait lire la famille de produits.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f362.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Coupure terminal avant le drop",
+      "name_en": "Terminal breakdown before drop",
+      "t": "0:12.77-0:13.97",
+      "frames": "f383-f418",
+      "fps": 30,
+      "mechanics": "Coupe sur un fond presque noir ; « > odatano.connect() » tapé en mono ≈ 1 % de la hauteur, 1 caractère toutes les 2 im (f390 « > _ » → f408 « > odatano.connect()_ »). Les traînées réapparaissent faiblement f408-f416 pendant que le son remonte. Rime avec l'intro (connecting → connect()) : la boucle narrative est bonne, mais le texte reste minuscule.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Drop : flash et double onde sur le logo",
+      "name_en": "Drop flash logo reveal",
+      "t": "0:13.97-0:14.37",
+      "frames": "f419-f431",
+      "fps": 30,
+      "mechanics": "2 im de blanc vignetté (f419-f420), puis le logo apparaît avec copies RGB et deux anneaux (blanc extérieur de 25 % à > 100 % de la hauteur, bleu intérieur plus lent) en 10 im ; fond qui retombe au bleu nuit, pose nette en f431. Calé sur la remontée de +19 dB.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f419.jpg",
+      "illus": {
+        "from": 417,
+        "to": 432,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final avec URL et fondu synchronisé",
+      "name_en": "End card with URL and synced fade",
+      "t": "0:14.40-0:17.93",
+      "frames": "f432-f538",
+      "fps": 30,
+      "mechanics": "Logo tenu 2,6 s ; glitch d'1 im à 15,1 s ; « odatano.dev » apparaît sous le slogan à 15,4 s (≈ 1,5 % de la hauteur) ; fondu au noir de f510 à f537 (0,9 s) qui suit le fondu sonore (-19 → -44 dB). Lisible mais long et presque statique.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette monochrome bleu nuit",
+      "name_en": "Monochrome navy palette",
+      "t": "0:00-0:17.93",
+      "frames": "f0-f538",
+      "fps": 30,
+      "mechanics": "Tout tient dans un dégradé bleu nuit (#05070D → #0B1A3A) avec blanc froid et deux bleus d'accent ; le magenta n'existe que dans les franges de glitch. Les flashs gris clair sont les seuls pics de luminance et marquent les impacts.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Impacts toutes les deux temps à 120 BPM",
+      "name_en": "Slams every two beats",
+      "t": "0:01.47-0:06.53",
+      "frames": "f44-f196",
+      "fps": 30,
+      "mechanics": "SAP, CARDANO, MIDNIGHT et le logo claquent toutes les 30 im (1 s = 2 temps), avec la coupe 1 à 1,5 im avant l'attaque (barres bleues + points verts sur f45, f76, f106, f196). Entre les impacts, le mot est tenu une mesure entière : respiration, pas de grammaire mot-par-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f194.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Accélération du tempo pour le défilé",
+      "name_en": "Tempo lift for the roll call",
+      "t": "0:07.97-0:12.77",
+      "frames": "f239-f383",
+      "fps": 30,
+      "mechanics": "La musique passe de 120 à ≈ 150 BPM au moment où commence le défilé ; 12 coupes sur 12 tombent 0,5 à 1,7 im avant une attaque (8,022 / 8,417 / 8,824 / 9,218 s…). Changer de tempo avec la section rend l'accélération physique.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f242.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée, coupure et drop alignés sur l'image",
+      "name_en": "Riser, breakdown and drop",
+      "t": "0:00-0:14.2",
+      "frames": "f0-f426",
+      "fps": 30,
+      "mechanics": "Montée 0-1,4 s sous l'intro terminal ; montée 5,5-6,9 s sous la convergence ; coupure 12,8-13,6 s (son à -29 dB) sous le terminal presque noir ; remontée 13,7-14,0 s pendant que les traînées reviennent ; drop à 14,0-14,2 s (+19 dB) sur le flash du logo. Énergie musique ↔ mouvement r = 0,53.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Les 12 noms de produits, le logo bicolore et le slogan exact ne sont pas dans le prompt : Claude avait probablement le dépôt ou le site ODATANO en contexte. Sans ces données, le défilé numéroté n'existerait pas."
+    },
+    {
+      "kind": "direction",
+      "insight": "« goes hard » seul a déclenché le vocabulaire bande-annonce crypto par défaut (glitch RGB, flash, onde de choc, étoiles filantes) : énergie tenue, mais aucun parti pris visuel propre."
+    },
+    {
+      "kind": "structure",
+      "insight": "Claude a construit une vraie forme musicale (montée, couplet à 120, accélération à 150, coupure, drop, fondu) sans qu'on la demande ; c'est ce qui fait tenir 18 s sans ennui."
+    },
+    {
+      "kind": "build",
+      "insight": "Rendu en 30 fps faute d'indication : les impacts en 3-5 im et les ondes de choc paraissent saccadés ; préciser 60 fps."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucune règle de lisibilité : textes terminal et légendes à ≈ 1 % de la hauteur, illisibles sur mobile. Imposer une taille minimale (≈ 3 % de la hauteur) aurait corrigé."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien ne limitait la répétition : le même gabarit flash + onde + glitch revient 5 fois et le glitch tombe aussi pendant les maintiens."
+    }
+  ],
+  "steal": [
+    "Changer de tempo avec la section : 1 impact toutes les 2 temps à 120 BPM, puis 1 produit par temps à 150 BPM pour accélérer.",
+    "Défilé produit : numéro fantôme géant (≈ 45 % de la hauteur, presque invisible) en alternance gauche/droite derrière icône + nom bicolore, compteur 01/12.",
+    "Avant le drop, couper sur un écran presque noir avec une ligne de code tapée, puis flash blanc 2 im sur le logo.",
+    "Convergence : relier les briques du produit par des lignes à un nœud qui grandit et devient le logo, aspirées vers le centre pendant la montée.",
+    "Une couleur par entité, réutilisée ensuite dans le logo et les suffixes de noms."
+  ],
+  "flaws": [
+    "Même gabarit flash + onde de choc + glitch RGB répété à chaque impact : l'accent s'use.",
+    "Glitchs isolés pendant les maintiens : bruit visuel sans rapport avec la musique.",
+    "Textes terminal et légendes à ≈ 1 % de la hauteur : illisibles.",
+    "Intro 1,1 s quasi statique et carton final de 2,6 s presque immobile.",
+    "Traînées d'étoiles et glitch néon : codes génériques de bande-annonce crypto."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : la synchro est très bonne et vaut d'être retenue (changement de tempo, coupure, drop), mais elle se lit déjà sur les planches ; les gestes eux-mêmes (flash, onde, glitch) sont génériques, et la vidéo native est en 30 fps."
+  }
+}

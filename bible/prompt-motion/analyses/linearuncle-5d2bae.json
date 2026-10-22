@@ -1,0 +1,380 @@
+{
+  "slug": "linearuncle-5d2bae",
+  "title": "Derivative concept explainer",
+  "handle": "@LinearUncle",
+  "family": "explainer",
+  "craft": 3,
+  "craft_reason": "Pédagogie solide, code couleur rigoureux, compteurs vivants et loupe ×100 bien pensés, mais esthétique Manim par défaut, fondus uniformes et 65 % d'images figées : bon explainer, motion générique.",
+  "summary": "Cours de 7 min 37 en chinois sur la dérivée, en Manim avec voix edge-tts et sous-titres incrustés. Accroche par le paradoxe du compteur de vitesse (0÷0), puis vitesse moyenne, sécante qui pivote jusqu'à la tangente avec compteurs vivants, définition annotée, calcul de x², dérivée tracée en direct, collines et vallées, loupe ×100, contre-exemple |x|, bilan et questions. Clair et rigoureux, mais lent et visuellement générique.",
+  "prompt_vs_result": [
+    "Une ligne en chinois : faire en Manim une vidéo d'apprentissage de la dérivée, facile à comprendre, avec des exemples, qui fasse réfléchir ; voix off avec edge-tts. Ni durée, ni style, ni format imposés.",
+    "Claude a tout inventé : arc en 13 sections (paradoxe du compteur, moyenne, limite, définition, calcul, fonction dérivée, pentes, loupe, contre-exemple, bilan, questions, rappel final), thème bleu nuit, code couleur, sous-titres incrustés, durée 7 min 37.",
+    "« 通俗易懂、有例子、引人思考 » a bien cadré la pédagogie (analogies, questions). Rien sur le rythme : animation puis attente de la voix, maintiens jusqu'à 9 s. Il aurait fallu fixer durée, densité de mouvement et transitions."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0E121F", "role": "fond bleu nuit uni"},
+      {"hex": "#06070E", "role": "bandeau des sous-titres"},
+      {"hex": "#FFFFFF", "role": "texte courant, sous-titres"},
+      {"hex": "#F4D474", "role": "titres de section, résultats clés, tangente, pente nulle"},
+      {"hex": "#58C3DD", "role": "fonction, courbes, voiture"},
+      {"hex": "#F08A2E", "role": "sécante, vitesse moyenne, flash d'insistance"},
+      {"hex": "#F0584F", "role": "problème (0÷0), Δs, pente négative, termes à annuler"},
+      {"hex": "#8BC06A", "role": "Δt, dérivée, pente positive, validation"},
+      {"hex": "#8A898F", "role": "axes, graduations"}
+    ],
+    "type": "Une seule sans-serif CJK (PingFang SC probable), maths comprises, sans LaTeX. Titres de section jaunes ≈ 6 % de la hauteur, haut gauche ; titre d'ouverture gras ≈ 19 % ; étiquettes 2,5-3,5 % ; sous-titres ≈ 4,6 %.",
+    "texture": "Aucune : aplat bleu nuit, traits vectoriels nets de 3-4 px, points pleins, aucun grain, glow, ombre ni flou de mouvement (rendu Manim 30 fps).",
+    "style": "Manim pédagogique façon 3Blue1Brown simplifié",
+    "coherence": "Le système tient par un code couleur sémantique respecté pendant 7 min 37 (cyan = fonction, orange = moyenne, jaune = résultat, vert = positif, rouge = négatif ou problème), une seule police pour texte et maths, un titre de section toujours au même endroit (haut gauche, 3,5 % du bord) et le même fond. Ce qui le casse : quelques collisions (étiquette « 斜率 = +2.62 » sur la flèche d'axe et la parabole à 4:15, tangente qui sort du repère), et le bandeau de sous-titres noir qui double le texte à l'écran."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de musique : rythme entièrement dicté par la voix TTS (99 changements de sous-titre en 457 s, une phrase toutes les 4,6 s en moyenne). Aucune coupe franche : un seul plan continu, sections séparées par une douzaine de fondus vers l'écran vide (0:04, 0:28, 0:35, 1:37, 2:38, 3:17, 4:01, 4:40, 5:34, 6:39, 7:04, 7:27, 7:34). Densité : 126 départs d'animation, soit un toutes les 3,6 s ; avec un seuil sensible (variation ≥ 3 niveaux de gris), 35 % des images contiennent du mouvement hors sous-titres, donc 65 % sont strictement figées ; la mesure automatique du dossier (seuil grossier, insensible aux fondus et aux traits fins) donne même 97 % de maintiens, médiane 4,4 s. Maintiens les plus longs : 9,1 s (7:17.8-7:26.8, écran des questions), 8,6 s (5:25-5:34, liste d'usages), 8,6 s (6:30-6:39), 8,4 s (6:00-6:08), 7,6 s (2:16-2:24). Schéma constant : une animation de 1 à 1,6 s (courbe smooth, ease-in-out de Manim) au début de la phrase, puis attente immobile jusqu'à la phrase suivante. Seuls les passages démonstratifs bougent longtemps : tangente glissante 7,3 s (4:09-4:17), loupe 3,3 s (5:42-5:45.5 et 6:18-6:22), sécante par paliers de 1,5 s (1:46-2:01).",
+    "timeline": [
+      {"t": "0:00-0:04", "what": "Titre « 导数 » jaune gras (19 % de la hauteur) écrit trait par trait puis rempli, question « 如何描述“一瞬间”的变化? » en dessous ; fondu de sortie", "technique": "Write (contour puis remplissage) + FadeOut"},
+      {"t": "0:05-0:28", "what": "Route, voiture cyan qui roule de 12 % à 68 % de la largeur (0:06-0:10), compteur 60 km/h en haut à droite ; « 速度 = 路程 ÷ 时间 », ligne orange « 一瞬间 : 路程≈0，时间≈0 », puis « 0 ÷ 0 = ? » rouge (0:22) ; flash jaune du compteur (0:25)", "technique": "accroche par paradoxe, empilement de lignes colorées"},
+      {"t": "0:28-0:35", "what": "Fondu vers l'écran vide, « 导数 » revient seul au centre en fondu (0:29.5-0:31)", "technique": "reset de section par fondu"},
+      {"t": "0:36-1:00", "what": "« 第一步 : 平均速度 » ; droite graduée 0-10 m, « s = t² » ; la voiture accélère en t² (0:48.9-0:52) et dépose un point jaune à chaque seconde ; accolades 1 m / 3 m / 5 m", "technique": "courbe d'animation = loi physique"},
+      {"t": "1:01-1:36", "what": "Repère s(t) tracé, parabole cyan (1:03-1:04), points A(1,1) et B(3,9), côtés Δt vert et Δs rouge en pointillés, bloc de calcul « = 4 米/秒 », sécante orange (1:20), « 割线的斜率 = 平均变化率 »", "technique": "construction de graphe par couches"},
+      {"t": "1:37-2:24", "what": "« 第二步 : 从平均到瞬间 » ; la sécante pivote autour de A par paliers Δt = 2 → 1 → 0,1 → 0,01 → 0,001, compteurs à 3 décimales, tableau qui se remplit, « ↓ 越来越接近 2 » ; la sécante devient tangente jaune « 切线 : 斜率 = 2 » (2:10)", "technique": "ValueTracker, compteurs vivants, tableau cumulatif"},
+      {"t": "2:24-2:38", "what": "Tableau effacé, 3 lignes empilées à droite jusqu'à « 这就是「极限」 » en jaune plus gros", "technique": "pile de texte avec chute mise en valeur"},
+      {"t": "2:39-3:17", "what": "« 导数的定义 » : f'(x) = lim … écrite, cadres bleu (numérateur), vert (h), jaune (lim) avec légendes ; flash orange (2:51) ; cartes « 几何意义 » et « 物理意义 »", "technique": "annotations encadrées colorées, cartes"},
+      {"t": "3:18-4:01", "what": "« 例子 : f(x) = x² 的导数 » : calcul ligne à ligne, termes x² en rouge, = 2x + h, ligne verte h → 0 ; résultat encadré « (x²)' = 2x » et vérification x = 1", "technique": "dérivation pas à pas, résultat encadré"},
+      {"t": "4:02-4:40", "what": "« 导函数 » : deux repères côte à côte ; la tangente jaune glisse de x = -2 à x = 2 en 7,3 s, pente lue en direct, le point de droite trace y = 2x (barre rouge puis verte) ; retour à x = 0, tangente horizontale", "technique": "double panneau, tracé de la dérivée en direct"},
+      {"t": "4:41-5:34", "what": "« 读懂曲线 : 导数就是坡度 » : cubique ; un point gravit puis descend, tangente et statut colorés vert / jaune / rouge selon le signe ; repères « 山顶 f'=0 », « 谷底 f'=0 » ; liste usine / GPS / fusée", "technique": "code couleur du signe, repères persistants"},
+      {"t": "5:35-6:12", "what": "« 放大镜下的导数 » : loupe dessinée, zoom ×1 → ×100 en 3,3 s sur (1,1) ; la parabole devient droite ; droite pointillée verte de pente 2 superposée ; 3 lignes de conclusion", "technique": "zoom loupe avec compteur, preuve par superposition"},
+      {"t": "6:13-6:39", "what": "Même loupe sur y = |x| : zoom ×1 → ×100, le V reste identique ; étiquettes pente -1 (rouge) et +1 (vert) ; « |x| 在原点没有导数 »", "technique": "contre-exemple avec le même dispositif"},
+      {"t": "6:40-7:27", "what": "« 一分钟回顾 » : 4 points numérotés, un par phrase ; « 想一想 » : 3 questions une à une, maintien 9 s", "technique": "liste récapitulative, questions ouvertes"},
+      {"t": "7:28-7:37", "what": "Rappel du compteur de vitesse (blanc puis jaune), puis carton « 导数 · 看清每一个瞬间 » jaune gras, 9 % de la hauteur", "technique": "bouclage sur l'accroche, carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Aucune musique : bande-son = voix TTS seule. Entre les phrases le signal tombe au silence numérique (-inf dB sur 538 fenêtres sur 2 275, soit 24 %, entre 0:20 et 1:20) : aucun lit musical. Le tempo de 112 BPM du dossier est un artefact (netteté 1,41, non fiable) et le « drop » à 0:53 est une reprise de voix après un silence. La synchro réelle est avec la voix : sur 99 changements de sous-titre (= débuts de phrase), 46 tombent à ±1 image d'un départ d'animation (hasard ≈ 3 % : 126 départs sur 13 709 images), 59 à ±6 im (0,2 s), 77 à ±15 im (0,5 s). Exemple vérifié image par image : le palier Δt 1 → 0,1 démarre à f3297 (1:49.90), image même où le sous-titre « 间隔 0.1 秒 » apparaît. Décalages typiques : 0 im (cas majoritaire), +5 à +9 im (petite pause avant l'animation), -24 à -30 im (fondu de fin de section joué avant la phrase suivante).",
+    "synced": ["departs", "apparitions", "texte"],
+    "style_match": "Voix TTS neutre au débit calme : cohérente avec le ton pédagogique et les courbes douces de Manim. Sans musique, rien ne porte l'énergie, d'où une impression de lenteur.",
+    "how_built": "Probable : script découpé en phrases, chaque phrase synthétisée par edge-tts, sa durée mesurée puis utilisée comme durée du segment (self.play(animation) au début, puis self.wait(durée restante)) ; les sous-titres incrustés viennent du même découpage, d'où des départs d'animation à l'image près sur les débuts de sous-titre. Aucune musique demandée ni ajoutée."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche par paradoxe concret",
+      "name_en": "paradox hook",
+      "t": "0:05-0:28",
+      "frames": "f150-f846",
+      "fps": 30,
+      "mechanics": "Situation familière (voiture, compteur 60 km/h en haut à droite, ≈ 10 % de la largeur) puis contradiction construite en 3 lignes empilées sous le titre de formule : blanc « 速度 = 路程 ÷ 时间 » (0:11), orange « 一瞬间 : 路程≈0，时间≈0 » (0:16), rouge et plus gros « 0 ÷ 0 = ? » (0:22, ≈ 6 % de la hauteur). La couleur monte du neutre vers l'alarme. À 0:25, le compteur passe en jaune 1 s (flash d'insistance) quand la voix dit « 瞬间的速度 ». La question est posée avant tout contenu.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre écrit trait par trait puis rempli",
+      "name_en": "Write (stroke then fill)",
+      "t": "0:00-0:01.6",
+      "frames": "f0-f48",
+      "fps": 30,
+      "mechanics": "Animation Write de Manim sur « 导数 » (19 % de la hauteur, jaune #F4D474 gras, centré à 45 % de la hauteur) : les contours fins des traits se dessinent de f0 à ≈ f30 (导 d'abord, 数 décalé d'environ 10 im), puis le remplissage monte du gris-olive au jaune de f24 à f48. La question en dessous (≈ 7 % de la hauteur) apparaît en fondu de f8 à ≈ f40 sans déplacement. Durée totale 48 im = 1,6 s, puis maintien jusqu'à f107 (3,57 s) et fondu de sortie sans translation.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 0, "to": 54, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu vers l'écran vide puis nouveau titre de section",
+      "name_en": "fade-out reset",
+      "t": "0:28.2-0:29.5",
+      "frames": "f846-f885",
+      "fps": 30,
+      "mechanics": "Tout le contenu disparaît en fondu (≈ 0,5-0,8 s), l'écran reste vide (aplat #0E121F) 0,3 à 1 s, puis la section suivante se construit (titre jaune en haut à gauche, puis éléments). Même transition une douzaine de fois (0:04, 0:28, 0:35, 2:38, 3:17, 4:01, 4:40, 5:34, 6:39, 7:04, 7:27, 7:34). Seule variante à 1:37 : fondu enchaîné où le même graphe revient avec un nouveau titre (pseudo-continuité entre deux scènes).",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-14.jpg, overview-24.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "La courbe d'animation est la loi physique",
+      "name_en": "physics-driven rate function",
+      "t": "0:48.9-0:56",
+      "frames": "f1467-f1680",
+      "fps": 30,
+      "mechanics": "Sur une droite graduée 0-10 m (≈ 75 % de la largeur), la voiture parcourt 0 → 9 m en 3 s réelles avec une loi s = t² : positions lues ≈ 1,3 m à 0:50, 3,3 m à 0:51, 6,3 m à 0:52, 9 m à 0:53 (pas croissants 1,3 / 2 / 3 = accélération visible, ease-in quadratique). À chaque seconde elle dépose un point jaune légendé « 第1秒 / 第2秒 / 第3秒 ». Puis 3 accolades colorées 1 m, 3 m, 5 m poussent au-dessus des intervalles (0:54-0:56), une par une.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Construction du graphe par couches",
+      "name_en": "layered graph build",
+      "t": "1:02-1:27",
+      "frames": "f1860-f2610",
+      "fps": 30,
+      "mechanics": "Repère créé (axes gris #8A898F, flèches pleines, 1:02), parabole cyan tracée de gauche à droite en ≈ 1 s (1:03-1:04), points A (1,1) jaune et B (3,9) orange avec étiquettes en fondu (1:08), côtés pointillés Δt = 2 秒 (vert) et Δs = 8 米 (rouge) tracés (1:11), bloc de calcul à droite (1:16, 4 lignes, dernière en jaune plus grande), sécante orange prolongée au-delà des points (1:20), phrase-règle orange « 割线的斜率 = 平均变化率 » (1:26). Une couche par phrase de voix, graphe à gauche (≈ 45 % de la largeur), texte à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Sécante qui pivote avec compteurs vivants et tableau cumulatif",
+      "name_en": "ValueTracker secant with live DecimalNumber",
+      "t": "1:46.2-2:01",
+      "frames": "f3186-f3630",
+      "fps": 30,
+      "mechanics": "Un paramètre Δt pilote tout : B glisse sur la parabole, la sécante pivote autour de A, et deux compteurs à 3 décimales (Δt vert, vitesse moyenne orange) se mettent à jour à chaque image. Palier 2 → 1 en ≈ 45 im (1,5 s) avec courbe smooth : décréments par 3 im 0,068 / 0,104 / 0,138 / 0,157 / 0,147 / 0,116 / 0,079 / 0,048 / 0,029 / 0,016 / 0,009 (vitesse maximale au milieu, ease-in-out symétrique). Maintien 2,2 s, puis palier 1 → 0,1 qui démarre à f3297, image exacte du changement de sous-titre, et se termine ≈ f3345. À chaque palier une ligne (Δt, vitesse) s'ajoute au tableau en fondu de 12 im (0,4 s) pendant le mouvement. Quatre paliers au total, puis « ↓ 越来越接近 2 » (2:05).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-09.jpg, overview-10.jpg, overview-11.jpg",
+      "illus": {"from": 3186, "to": 3345, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Changement de couleur qui change le statut de l'objet",
+      "name_en": "semantic recolor",
+      "t": "2:10-2:11",
+      "frames": "f3900-f3930",
+      "fps": 30,
+      "mechanics": "Quand Δt ≈ 0, la sécante orange (moyenne) devient jaune (résultat) et s'épaissit légèrement, avec l'étiquette « 切线 : 斜率 = 2 » qui apparaît sur la droite en ≈ 1 s. Le changement de couleur suffit à dire « ce n'est plus une moyenne, c'est la tangente ». Même logique à 4:48-5:14 : vert / jaune / rouge selon le signe de la pente.",
+      "verdict": "reprendre",
+      "evidence": "overview-11.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Pile de texte qui finit sur la chute en plus gros",
+      "name_en": "stacked text punchline",
+      "t": "2:25-2:35",
+      "frames": "f4350-f4650",
+      "fps": 30,
+      "mechanics": "Trois lignes centrées dans la colonne droite, une par phrase : blanc 3 % de la hauteur « 我们没有计算 0÷0 » (2:25), blanc « 而是看它“趋向于”哪个数 » (2:29), puis jaune ≈ 4,5 % « 这就是「极限」 » (2:34). Chaque ligne entre en fondu d'environ 0,7 s ; la hiérarchie (taille × 1,5 + jaune) désigne le mot-clé.",
+      "verdict": "reprendre",
+      "evidence": "overview-13.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadres colorés qui annotent les morceaux d'une formule",
+      "name_en": "SurroundingRectangle annotations",
+      "t": "2:44-2:56",
+      "frames": "f4920-f5280",
+      "fps": 30,
+      "mechanics": "Sur f'(x) = lim (f(x+h) − f(x)) / h (≈ 5 % de la hauteur, centrée en haut) : cadre bleu autour du numérateur + légende bleue au-dessus « 函数值变化了多少 » (2:44), cadre vert autour de h + légende verte en dessous (2:48), cadre jaune autour de lim + légende « 让 h 无限趋近 0 » (2:55). Chaque cadre se dessine en ≈ 0,7 s, un par phrase. Les couleurs reprennent celles du graphe (vert = Δt), ce qui relie la formule au dessin.",
+      "verdict": "reprendre",
+      "evidence": "overview-14.jpg, overview-15.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Flash d'insistance (couleur + léger grossissement)",
+      "name_en": "Indicate",
+      "t": "2:51",
+      "frames": "f5130-f5160",
+      "fps": 30,
+      "mechanics": "Numérateur et dénominateur passent en orange avec un grossissement d'environ 10-20 % puis reviennent, en ≈ 1 s (Indicate de Manim). Répété : compteur jaune à 0:25, numérateur rouge à 3:31, « f'(x) = 2x » à 4:22, point de la loupe à 6:22. Fonctionnel mais toujours le même geste.",
+      "verdict": "adapter",
+      "evidence": "overview-15.jpg, overview-18.jpg, overview-22.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Deux cartes de sens côte à côte",
+      "name_en": "meaning cards",
+      "t": "3:09-3:17",
+      "frames": "f5670-f5910",
+      "fps": 30,
+      "mechanics": "Rectangles arrondis (≈ 20 % × 11 % du cadre), fond légèrement plus clair que le fond, contour jaune pour « 几何意义 / 曲线在该点的切线斜率 » (3:09) et vert pour « 物理意义 / 瞬时变化率 » (3:13), titre coloré et légende blanche. Chaque carte en fondu d'≈ 1 s sur sa phrase, sous la formule.",
+      "verdict": "reprendre",
+      "evidence": "overview-16.jpg, overview-17.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Dérivation pas à pas sans annulation visible",
+      "name_en": "step-by-step algebra",
+      "t": "3:24-3:49",
+      "frames": "f6120-f6870",
+      "fps": 30,
+      "mechanics": "Fraction (x+h)² − x² / h écrite (3:24), puis « = x² + 2xh + h² − x² / h » avec les deux x² en rouge (3:27), flash rouge de tout le numérateur (3:31), nouvelle ligne « = 2xh + h² / h » (3:36), « = 2x + h » en fondu (3:39), ligne verte « 当 h → 0 时 : 2x + h → 2x » (3:44). Chaque étape est une nouvelle ligne en fondu ; les termes rouges ne sont jamais barrés ni effacés alors que la voix dit qu'ils s'annulent.",
+      "verdict": "adapter",
+      "evidence": "overview-18.jpg, overview-19.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Résultat encadré puis vérifié",
+      "name_en": "boxed takeaway",
+      "t": "3:50-3:58",
+      "frames": "f6900-f7140",
+      "fps": 30,
+      "mechanics": "Fondu de tout le calcul, puis « (x²)' = 2x » jaune ≈ 7 % de la hauteur écrit au centre dans un rectangle arrondi jaune dessiné en même temps (≈ 1,5 s). Ligne verte de vérification « x = 1 时 : 2 × 1 = 2 ✓ 正是小车第 1 秒的速度 » (3:54) qui relie le calcul à l'exemple de la voiture.",
+      "verdict": "reprendre",
+      "evidence": "overview-20.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tangente glissante qui trace la dérivée dans un second repère",
+      "name_en": "dual-panel derivative tracer",
+      "t": "4:02-4:31",
+      "frames": "f7260-f8130",
+      "fps": 30,
+      "mechanics": "Deux repères de même taille (≈ 40 % de la largeur chacun). À gauche y = x² cyan et une tangente jaune courte (≈ 12 % de la hauteur) centrée sur un point ; à droite le point (x, pente) en vert, relié à l'axe par une barre verticale rouge si la pente est négative, verte si positive, et un tracé vert qui laisse y = 2x derrière lui. Glissement x = -2 → 2 en ≈ 7,3 s, courbe linéaire : la pente lue gagne 1,09-1,10 par seconde de façon constante (-3,96 / -2,87 / -1,77 / -0,67 / +0,42 / +1,52 / +2,62 / +3,71). Étiquette « f'(x) = 2x » en fondu (4:17) puis flash (4:22). Retour à x = 0 en ≈ 1,5 s (4:29-4:31) : tangente horizontale, pente +0,00.",
+      "verdict": "reprendre",
+      "evidence": "overview-21.jpg, overview-22.jpg, overview-23.jpg",
+      "illus": {"from": 7440, "to": 7710, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur du signe de la pente (montée, plat, descente)",
+      "name_en": "sign color coding",
+      "t": "4:48-5:14",
+      "frames": "f8640-f9420",
+      "fps": 30,
+      "mechanics": "Sur une cubique (≈ 55 % de la largeur), un point blanc cerclé gravit puis descend, une jambe par phrase (montée 4:51-4:56, descente 5:00-5:05, remontée 5:10-5:14), chacune ≈ 4-5 s en smooth. La tangente, la lecture « 坡度 f'(x) = +5.76 » et le statut « ↗ 上坡 : 导数 > 0 » changent ensemble de couleur : vert (#8BC06A) en montée, jaune au sommet et au creux (« → 平地 »), rouge (#F0584F) en descente. Les flèches ↗ → ↘ doublent la couleur pour la lisibilité.",
+      "verdict": "reprendre",
+      "evidence": "overview-25.jpg, overview-26.jpg, overview-27.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Repères persistants aux extremums",
+      "name_en": "persistent extrema markers",
+      "t": "5:00-5:34",
+      "frames": "f9000-f10020",
+      "fps": 30,
+      "mechanics": "Au passage du sommet et du creux, un petit point jaune et une étiquette « 山顶 f'=0 » / « 谷底 f'=0 » (≈ 2 % de la hauteur) restent posés après le départ du point mobile : le parcours laisse une mémoire, qui sert ensuite à énoncer la règle « 找最大/最小值，先找 f'(x)=0 的点 » (5:21) et une liste de 3 usages en fondu, une ligne par seconde (5:26-5:28).",
+      "verdict": "reprendre",
+      "evidence": "overview-26.jpg, overview-27.jpg, overview-28.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom à la loupe avec compteur ×1 → ×100",
+      "name_en": "magnifier zoom with counter",
+      "t": "5:42.2-5:45.5",
+      "frames": "f10266-f10365",
+      "fps": 30,
+      "mechanics": "Loupe dessinée (cercle blanc ≈ 78 % de la hauteur, centré à 30 % de la largeur, manche gris à 45° en bas à droite), point jaune (1,1) au centre. Le facteur de zoom passe de ×1 à ×100 en 99 im (3,3 s) ; valeurs par pas de 3 im : 1, 1, 2, 2, 2, 3, 3, 4, 5, 7, 9, 11, 15, 19, 24, 29, 36, 42, 49, 56, 62, 68, 74, 79, 83, 86, 89, 92, 94, 96, 97, 98, 99, 100. Interpolation smooth appliquée au facteur lui-même (pas en échelle logarithmique) : la parabole est déjà presque droite à ×9 (f10296, 30 % de la durée), le reste du zoom ne change plus rien à l'image. La courbe est recalculée en vectoriel à chaque image, découpée au cercle : aucune pixellisation. Compteur « 放大倍数 : × N » qui roule à droite.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-29.jpg",
+      "illus": {"from": 10260, "to": 10380, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Preuve par superposition d'une droite pointillée",
+      "name_en": "dashed overlay proof",
+      "t": "5:50-5:51",
+      "frames": "f10500-f10530",
+      "fps": 30,
+      "mechanics": "Sur la courbe zoomée ×100, une droite pointillée vert clair de pente 2 apparaît en fondu (≈ 1 s) exactement superposée, avec « 这条直线的斜率 = 2 = 导数 » en jaune à droite. La coïncidence visuelle tient lieu de démonstration.",
+      "verdict": "reprendre",
+      "evidence": "overview-30.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Contre-exemple avec le même dispositif",
+      "name_en": "counterexample reuse",
+      "t": "6:13-6:39",
+      "frames": "f11190-f11970",
+      "fps": 30,
+      "mechanics": "La parabole est remplacée par y = |x| dans la même loupe (6:13), même zoom ×1 → ×100 en ≈ 3,3 s (×2 à 6:19, ×32 à 6:20, ×94 à 6:21) : le V reste identique, le point grossit en flash (6:22). Étiquettes « 斜率 −1 » rouge et « 斜率 +1 » vert de part et d'autre (6:25), conclusion rouge « |x| 在原点没有导数 » + jaune « 可导 ⇔ 足够“光滑” » (6:31). Réutiliser le dispositif rend le contraste immédiat.",
+      "verdict": "reprendre",
+      "evidence": "overview-32.jpg, overview-33.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre de section fixe en haut à gauche",
+      "name_en": "persistent chapter header",
+      "t": "0:36-6:39",
+      "frames": "f1080-f11970",
+      "fps": 30,
+      "mechanics": "Chaque section porte un titre jaune ≈ 6 % de la hauteur, aligné à 3,5 % du bord gauche et 6 % du haut (« 第一步 : 平均速度 », « 第二步 : 从平均到瞬间 », « 导数的定义 », « 例子 », « 导函数 », « 读懂曲线 », « 放大镜下的导数 », « 一分钟回顾 »). Il reste affiché toute la section : repère de navigation constant dans un cours de 7 min.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-22.jpg, f255 (image pleine résolution)"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bilan numéroté et questions ouvertes",
+      "name_en": "recap list and open questions",
+      "t": "6:40-7:27",
+      "frames": "f12000-f13410",
+      "fps": 30,
+      "mechanics": "« 一分钟回顾 » : 4 lignes ①-④ blanches ≈ 3 % de la hauteur, alignées à gauche dans une colonne centrée, une par phrase (6:42, 6:47, 6:51, 6:57), fondu ≈ 0,7 s. Puis « 想一想 » jaune centré et 3 questions numérotées (7:08, 7:13, 7:18) ; le dernier écran reste figé 9,1 s. Contenu pédagogique fort, mise en scène de diapositive.",
+      "verdict": "adapter",
+      "evidence": "overview-34.jpg, overview-35.jpg, overview-36.jpg, overview-37.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Bouclage sur l'accroche et carton final",
+      "name_en": "bookend callback",
+      "t": "7:28-7:37",
+      "frames": "f13440-f13708",
+      "fps": 30,
+      "mechanics": "Deux lignes centrées : blanc « 下次看到仪表盘上的数字， » puis jaune « 别忘了——那就是一个导数。 » (fondu ≈ 1 s), qui renvoient au compteur de l'ouverture. Fondu, puis carton « 导数 · 看清每一个瞬间 » jaune gras ≈ 9 % de la hauteur, 56 % de la largeur, en fondu ≈ 0,8 s, maintenu 3 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-38.jpg, overview-39.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Chaque animation démarre sur la première image de sa phrase de voix",
+      "name_en": "voice-locked animation onsets",
+      "t": "0:00-7:37",
+      "frames": "f0-f13708",
+      "fps": 30,
+      "mechanics": "Sur 99 débuts de phrase (changements de sous-titre, coupés net en 1 image), 46 coïncident à ±1 im avec un départ d'animation (hasard ≈ 3 %), 59 à ±6 im, 77 à ±15 im. Schéma : self.play(animation de 1-1,6 s) au début de la phrase, puis self.wait jusqu'à la phrase suivante. Les fondus de fin de section partent 24-30 im (0,8-1 s) avant la phrase suivante. Exemple mesuré : palier Δt 1 → 0,1 et sous-titre « 间隔 0.1 秒 » à la même image f3297.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f3297), mesure par différence d'images"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Animer puis attendre la fin de la phrase",
+      "name_en": "play then wait",
+      "t": "0:00-7:37",
+      "frames": "f0-f13708",
+      "fps": 30,
+      "mechanics": "126 départs d'animation en 457 s (un toutes les 3,6 s) ; 65 % des images strictement figées hors sous-titres ; maintiens médians 4,4 s, jusqu'à 9,1 s. Les animations elles-mêmes durent 1 à 1,6 s en courbe smooth (ease-in-out) ou linéaire pour les balayages. Lisible et calme pour un cours, mais à l'opposé de la règle « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "adapter",
+      "evidence": "stats.json (holds), overview-16.jpg, overview-37.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Sous-titres incrustés en bandeau",
+      "name_en": "burned-in subtitle bar",
+      "t": "0:00-7:33",
+      "frames": "f0-f13590",
+      "fps": 30,
+      "mechanics": "Bandeau quasi noir #06070E (≈ 8 % de la hauteur, jusqu'à 84 % de la largeur selon la phrase) à 2 % du bas, texte blanc ≈ 4,6 % de la hauteur, centré, changé en coupe sèche à chaque phrase. Accessibilité utile, mais le bandeau mange le bas du cadre et répète souvent le texte déjà affiché dans l'image.",
+      "verdict": "adapter",
+      "evidence": "f255 (image pleine résolution), toutes les planches"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Illustration plate voiture et compteur",
+      "name_en": "flat car and gauge",
+      "t": "0:05-0:28",
+      "frames": "f150-f846",
+      "fps": 30,
+      "mechanics": "Voiture cyan en formes simples (≈ 5 % de la largeur), roues grises, route blanche fine + ligne pointillée ; elle roule de 12 % à 68 % de la largeur en ≈ 3,5 s (smooth). Compteur en arc gris avec aiguille rouge fixe sur 60 km/h, apparu en fondu en ≈ 2 s (0:06-0:08). Économe et clair, mais naïf ; l'aiguille ne bouge jamais alors que le sujet est la vitesse.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt d'une ligne sans durée, format ni style : Claude a choisi 1080p 30 fps, 7 min 37, thème bleu nuit façon 3Blue1Brown et une palette sémantique de 6 couleurs."},
+    {"kind": "direction", "insight": "« 通俗易懂 » (facile à comprendre) a produit une progression sans saut : exemple concret (voiture), nombres qui convergent dans un tableau, puis seulement la formule. « 引人思考 » (faire réfléchir) a produit des questions rhétoriques (« 这是巧合吗? »), un contre-exemple (|x|) et 3 questions ouvertes à la fin."},
+    {"kind": "direction", "insight": "« 有例子 » (avec des exemples) a été pris au pied de la lettre et bien exploité : un seul fil rouge (s = t², voiture à t = 1 s) réutilisé dans la moyenne, la limite, le calcul de x² (vérification x = 1 → 2) et la loupe sur (1,1)."},
+    {"kind": "build", "insight": "edge-tts imposé : la piste est découpée phrase par phrase et le montage Manim suit les durées audio, d'où la synchro voix-image à l'image près (46 phrases sur 99) et des sous-titres incrustés issus du même script."},
+    {"kind": "build", "insight": "Pas de LaTeX visible : toutes les maths sont en police CJK sans-serif, probablement pour éviter les problèmes de rendu chinois dans MathTex. Effet secondaire positif : typographie homogène."},
+    {"kind": "qa", "insight": "Aucune consigne de rythme ni de contrôle des collisions : maintiens jusqu'à 9 s, étiquette « 斜率 » posée sur la flèche d'axe, termes à annuler jamais barrés. Pour un rendu motion, il faut écrire la densité visée (un mouvement par seconde) et exiger une vérification des chevauchements."},
+    {"kind": "other", "insight": "Format cours long, sans musique : intéressant comme banque de procédés de visualisation mathématique (compteurs liés à la géométrie, double panneau, loupe), pas comme modèle de rythme pour une promo SaaS."}
+  ],
+  "steal": [
+    "Faire porter la loi par la courbe d'animation : la voiture avance en t² et dépose un point par seconde, l'accélération se voit sans explication.",
+    "Lier un compteur à la géométrie : un seul paramètre fait pivoter la sécante et fait rouler les valeurs à 3 décimales ; une ligne de tableau par palier.",
+    "Tenir un code couleur sémantique sur toute la vidéo : cyan = objet, orange = moyenne, jaune = résultat, vert = positif, rouge = négatif ou problème.",
+    "Démarrer chaque animation sur la première image de sa phrase de voix : découper le script, mesurer chaque audio, caler animation puis attente dessus.",
+    "Loupe et compteur ×1 → ×100 redessinés en vectoriel, puis même loupe sur un contre-exemple : le zoom devient la démonstration. Interpoler le zoom en logarithmique."
+  ],
+  "flaws": [
+    "65 % des images figées, maintiens jusqu'à 9 s pendant que la voix parle : rythme de diaporama, à l'opposé de la grammaire 1600.",
+    "Une seule transition, répétée une douzaine de fois : fondu vers l'écran vide puis nouveau titre.",
+    "La voix dit que les x² rouges s'annulent, mais rien ne s'annule à l'écran : ni barré ni disparition.",
+    "Collisions : « 斜率 = +2.62 » chevauche la flèche d'axe et la parabole ; tangente qui sort du repère à x = ±2.",
+    "Zoom ×100 en interpolation linéaire du facteur : tout se joue dans le premier tiers, le reste est un compteur qui tourne à vide."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Source à 30 fps, courbes Manim standard (smooth et linéaire) déjà mesurées sur les planches extra, longs maintiens : une étude image par image n'apprendrait rien de plus. L'intérêt est dans la logique pédagogique et la synchro voix, déjà documentées."
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "slug": "demonugc-4c5753",
+  "title": "Morphing UI states loop",
+  "handle": "@demonugc",
+  "family": "showreel",
+  "craft": 3,
+  "craft_reason": "Concept et timing excellents (une forme qui ne coupe jamais, chaque état sur un temps à 120 BPM, ressorts propres), mais éléments minuscules sans zoom caméra, flou stroboscopique, deux bugs d'état et aucun son.",
+  "summary": "Boucle carrée de 14 s : un seul conteneur noir ou blanc se transforme 12 fois (bouton, loader, check, îlot dynamique, lecteur, volume, toggle, onglets, graphique, ⌘K, toast, bouton), piloté par un curseur qui clique et glisse. Force : continuité absolue et changements calés sur une grille de 120 BPM. Faiblesse : l'objet occupe souvent moins de 15 % du cadre, le flou à 4 sous-images fait des fantômes, et la vidéo publiée est muette.",
+  "prompt_vs_result": [
+    "Prompt très structuré : une forme jamais coupée, curseur réel, fond gris chaud, noir et blanc + un accent, Geist, ressorts, zoom caméra pour remplir le cadre, boucle parfaite, 120 BPM sur 7 mesures, liste d'états, rendu Playwright 4 sous-images.",
+    "Claude a choisi l'accent vert, les libellés (Continue, Night Drive, Overview/Activity/Chart, Export as PNG), la place de chaque état dans le cadre, des ressorts sans dépassement et la valeur 0.80 de l'infobulle.",
+    "Le découpage en mesures a donné un timing exact (14,00 s, 15 gestes sur 20 sur un temps). Mal tenu : le zoom caméra, l'étirement au-delà du max, l'indicateur « liquide » inversé, la boucle et la musique absente."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F2F0EB", "role": "fond gris chaud"},
+      {"hex": "#131310", "role": "composants noirs (bouton, îlot, lecteur, slider, indicateur)"},
+      {"hex": "#FFFFFF", "role": "composants blancs (onglets, graphique, ⌘K, toast) et textes sur noir"},
+      {"hex": "#1EA85D", "role": "accent unique : remplissages, toggle actif, courbe, anneau de clic, point du toast"},
+      {"hex": "#3A3A38", "role": "piste du toggle éteint, textes secondaires (probable)"}
+    ],
+    "type": "Geist (grotesque UI) en graisse medium à semibold, casse phrase, très petit : libellés ≈ 1-1,4 % de la hauteur (« Night Drive » ≈ 20 px sur 1440). Aucun titre.",
+    "texture": "Ombres portées douces et larges sous chaque composant, aucun glow, aucun dégradé ; flou de mouvement obtenu par 4 sous-images fusionnées (tmix), visible en copies fantômes sur les gestes rapides ; flou court sur les échanges de contenu.",
+    "style": "Micro-interactions UI minimalistes, style Dribbble",
+    "coherence": "Très forte : un seul objet, deux valeurs (noir, blanc), un accent vert, une police, une famille de ressorts. Ce qui casse : l'échelle (l'objet change de 4 % à 60 % de la largeur sans recadrage) et les fantômes du flou à 4 sous-images."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio, mais l'image suit une grille de 120 BPM partant de 0 : un temps = 30 im à 60 fps, 7 mesures = 14,00 s pile. Changements d'état à f30, f121, f151, f180, f240, f270, f300, f360, f390, f420, f450, f480, f600, f690, f720, f810 : presque tous 0 à 1 im après un temps. La courbe du graphique avance d'un segment toutes les ≈ 7,5 im (une double-croche). L'outil compte 87 % de maintiens, mais c'est un artefact : l'objet est petit et l'énergie est moyennée sur tout le carré. Vrais creux : 0-0,5 s (seul le curseur bouge, nécessaire à la boucle), 1,7-2,0 s (check immobile 0,3 s) et surtout 12,45-13,5 s (toast immobile ≈ 1 s, seuls le curseur et une légère dérive de caméra bougent). Temps sans geste : 2 (f60), 7 (f210), 11 (f330), 21-22 (frappe continue), 25-26 (toast).",
+    "timeline": [
+      {"t": "0:00-0:00.5", "what": "Bouton noir « Continue » centré, le curseur s'approche", "technique": "état de départ = état de fin (boucle)"},
+      {"t": "0:00.5-0:00.85", "what": "Clic : le texte se floute, la pilule se rétracte en cercle de 64 px, anneau vert autour du curseur", "technique": "morph bouton → loader, échange de contenu flouté"},
+      {"t": "0:00.85-0:01.7", "what": "Arc blanc qui tourne, se referme sur le temps f90, check qui se trace", "technique": "loader puis coche tracée"},
+      {"t": "0:02.0-0:02.5", "what": "Le cercle monte de 44 % de la hauteur et s'aplatit en îlot 128x38", "technique": "vol vers le haut en ressort critique, îlot dynamique"},
+      {"t": "0:02.5-0:02.85", "what": "L'îlot s'ouvre en lecteur « Night Drive / Home », ▶, barre de progression", "technique": "expansion du conteneur + contenu qui entre flouté"},
+      {"t": "0:03.0-0:03.3", "what": "Clic sur lecture : ▶ devient ❚❚ puis redevient ▶ en ≈ 16 im", "technique": "morph lecture/pause (état incohérent probable)"},
+      {"t": "0:03.3-0:04.0", "what": "La progression avance en vert", "technique": "remplissage continu"},
+      {"t": "0:04.0-0:05.0", "what": "Le curseur saisit la tête de lecture et la fait aller et venir", "technique": "glisser en manipulation directe (scrub)"},
+      {"t": "0:05.0-0:05.35", "what": "Le lecteur s'aplatit en slider de volume, la barre verte devient le remplissage", "technique": "héritage d'élément entre deux états"},
+      {"t": "0:05.35-0:06.0", "what": "Glisser jusqu'au maximum, la pilule s'allonge d'environ 1,5 %", "technique": "étirement au-delà du max (rubber band) à peine visible"},
+      {"t": "0:06.0-0:06.25", "what": "Le slider se rétracte en toggle, bouton blanc à gauche", "technique": "morph slider → toggle"},
+      {"t": "0:06.5-0:06.9", "what": "Clic : le bouton glisse à droite, la piste passe au vert", "technique": "toggle sur le temps"},
+      {"t": "0:07.0-0:07.4", "what": "Le toggle devient une barre d'onglets blanche, le bouton devient l'indicateur noir « Overview »", "technique": "inversion de couleur bouton → indicateur"},
+      {"t": "0:07.5-0:07.95", "what": "Clic sur « Chart », l'indicateur glisse… jusqu'à « Activity » en se comprimant", "technique": "indicateur à deux ressorts (inversé, bug de cible)"},
+      {"t": "0:08.0-0:08.45", "what": "La barre d'onglets s'ouvre en carte graphique blanche 868x486", "technique": "expansion du conteneur"},
+      {"t": "0:08.4-0:09.6", "what": "Courbe verte qui se dessine segment par segment avec un point en tête", "technique": "tracé de courbe sur la double-croche"},
+      {"t": "0:09.6-0:09.95", "what": "Survol : infobulle noire « 0.80 » sur un point", "technique": "infobulle au survol"},
+      {"t": "0:10.0-0:10.45", "what": "Le contenu pâlit, la carte se replie en barre ⌘K 552x60", "technique": "morph graphique → palette de commandes"},
+      {"t": "0:10.6-0:11.5", "what": "La barre s'ouvre en liste, frappe « export cha », Export as PNG / CSV / PDF se filtrent", "technique": "frappe qui filtre une liste"},
+      {"t": "0:11.5-0:11.95", "what": "Entrée : la ligne sélectionnée passe au noir", "technique": "validation sur le temps"},
+      {"t": "0:12.0-0:12.45", "what": "La palette rétrécit et tombe de 70 % de la hauteur en toast blanc à point vert, en bas à droite", "technique": "vol vers le bas, morph palette → toast"},
+      {"t": "0:12.45-0:13.5", "what": "Toast immobile, le curseur traverse le cadre", "technique": "maintien ≈ 1 s (temps mort)"},
+      {"t": "0:13.5-0:14.0", "what": "Le toast noircit et remonte au centre en bouton « Continue »", "technique": "retour à l'état initial pour la boucle"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Le fichier publié n'a aucune piste audio. L'image, elle, est construite sur une grille de 120 BPM : 15 gestes clés sur 20 démarrent à ±2 im d'un temps (hasard ≈ 17 % pour une fenêtre de 5 im sur 30), décalage typique +1 im. Exemples : morph bouton f30-f31, vol de l'îlot f121, expansion f151, clic lecture f180, scrub f240 et f270, slider f300, toggle f360 et f390, onglets f420 et f450, graphique f480, ⌘K f600, entrée f690, toast f720, retour f810. Hors grille : check f94-f102, début du tracé f504, infobulle f574-f580, ouverture de la liste f637.",
+    "synced": [],
+    "style_match": "Sans objet : aucun son. Les ressorts sans dépassement et le rythme d'un changement par temps appelleraient une électro minimale à 120 BPM.",
+    "how_built": "Le prompt écrit la structure en mesures (« 120 BPM, 7 bars, something happens on every beat »), calcule tout en fonction du temps dans seek(t) et demande d'analyser la chanson avec numpy pour poser chaque son d'interface. La chanson devait être fournie par l'utilisateur : la vidéo postée est muette (son non fourni ou perdu à l'export, probable). La grille visuelle est donc exploitable telle quelle, il suffit de poser une piste à 120 BPM commençant sur un premier temps à 0 s."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Une seule forme qui ne coupe jamais",
+      "name_en": "single morphing container",
+      "t": "0:00-0:14",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Un même conteneur change de taille, de rayon, de couleur et de position 12 fois sans aucune coupe : bouton 216x64 → cercle 64x64 → îlot 128x38 → lecteur 432x136 → slider 428x58 → toggle ≈ 90x50 → onglets 372x58 → graphique 868x486 → ⌘K 552x60 puis 544x330 → toast 316x68 → bouton 212x64 (pixels sur 1440). Le noir passe au blanc au passage toggle → onglets. L'œil ne quitte jamais l'objet.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg",
+      "illus": {"from": 120, "to": 172, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Chaque changement d'état sur un temps à 120 BPM",
+      "name_en": "beat-grid state changes",
+      "t": "0:00.5-0:13.5",
+      "frames": "f30-f810",
+      "fps": 60,
+      "mechanics": "Un temps = 30 im à 60 fps, départ sur un premier temps à 0 s, 7 mesures = 840 im. 15 gestes sur 20 démarrent 0 à 1 im après un temps (f30, f121, f151, f180, f240, f270, f300, f360, f390, f420, f450, f480, f600, f690, f720, f810). Les états durent 1 à 4 temps. Seule la frappe, le tracé et l'infobulle vivent entre les temps.",
+      "verdict": "reprendre",
+      "evidence": "mesure image par image (bbox) + extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ressorts critiques sans dépassement",
+      "name_en": "critically damped springs",
+      "t": "0:02.0-0:12.5",
+      "frames": "f121-f750",
+      "fps": 60,
+      "mechanics": "Toutes les transformations suivent une réponse de ressort amortie critique : démarrage en 2-3 im, vitesse max ≈ 50 px/im, puis longue décroissance. Îlot : 90 % du trajet en 15 im, arrêt en 30 im. Lecteur : largeur 128 → 432, 90 % en 13 im. Graphique : 372 → 868, 90 % en 18 im. Toast : chute de 1000 px, 90 % en ≈ 22 im. Aucun dépassement mesurable (la cible n'est jamais franchie) : doux et premium, un peu raide comparé au « tiny overshoot » autorisé.",
+      "verdict": "adapter",
+      "evidence": "mesure image par image (bbox)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Échange de contenu dans un flou court",
+      "name_en": "blur content swap",
+      "t": "0:00.5-0:13.5",
+      "frames": "f30-f810",
+      "fps": 60,
+      "mechanics": "À chaque morph, le contenu sortant (Continue, Night Drive, libellés d'onglets, courbe, liste) se floute et s'efface en ≈ 4-6 im pendant que le conteneur commence à bouger, puis le nouveau contenu entre flouté et se met au point en ≈ 6-8 im une fois la forme presque arrivée. Le contenu a son propre timing, il ne se chevauche jamais avec l'ancien.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f30, f158), extra-02.jpg (f302, f422), extra-03.jpg (f604)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur réel et anneau de clic vert",
+      "name_en": "cursor click ripple",
+      "t": "0:00.5-0:13.5",
+      "frames": "f30-f810",
+      "fps": 60,
+      "mechanics": "Une flèche système se déplace vers chaque cible et déclenche chaque état. Au clic, un anneau vert fin (≈ 2-3 fois la taille du curseur) s'agrandit et s'efface en 15-20 im (f38-f50, f182-f198, f390-f406, f454-f470, f640-f652). Les déplacements rapides du curseur laissent 3-4 copies fantômes.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton qui devient loader puis coche",
+      "name_en": "button to loader to check",
+      "t": "0:00.5-0:01.7",
+      "frames": "f30-f102",
+      "fps": 60,
+      "mechanics": "Clic sur f30 : la largeur passe de 216 à 64 px en 20 im (pas de 8, 12, 12, 16, 12… puis 2 : ease-in-out puis ease-out), la hauteur reste 64 px, le rayon devient un cercle. Un arc blanc tourne dedans de f34 à f90, se referme sur le temps f90, puis une coche se trace de f94 à f102.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 28, "to": 104, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Envol en îlot dynamique puis lecteur",
+      "name_en": "dynamic island expand",
+      "t": "0:02.0-0:02.85",
+      "frames": "f121-f172",
+      "fps": 60,
+      "mechanics": "Le cercle monte de y = 772 à y = 134 px (44 % de la hauteur) en 30 im en s'aplatissant en pilule 128x38, puis sur le temps suivant (f151) s'élargit en lecteur 432x136 (30 % de la largeur) en ≈ 20 im. Le contenu « Night Drive / Home », ▶ et barre de progression entre flouté. Placement sémantique : l'îlot va en haut, comme sur iPhone.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Morph lecture / pause",
+      "name_en": "play-pause morph",
+      "t": "0:03.0-0:03.3",
+      "frames": "f180-f198",
+      "fps": 60,
+      "mechanics": "Clic sur le temps f180 : ▶ devient ❚❚ en 2 im (f182), puis repasse à ▶ vers f190-f198 alors que la progression avance. Le lecteur joue donc en affichant « lecture » : incohérence d'état probable.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Glisser en manipulation directe",
+      "name_en": "direct-manipulation scrub",
+      "t": "0:04.0-0:06.0",
+      "frames": "f240-f359",
+      "fps": 60,
+      "mechanics": "Pendant que le curseur tient la tête de lecture puis la poignée du volume, la valeur suit exactement sa position (remplissage vert #1EA85D collé au curseur), aller-retour sur la progression de f240 à f300, montée du volume de ≈ 55 % à 98 % de f310 à f358. Pas de lissage : la sensation de « vraie main ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La barre de progression devient le volume",
+      "name_en": "element inheritance progress to volume",
+      "t": "0:05.0-0:05.35",
+      "frames": "f300-f323",
+      "fps": 60,
+      "mechanics": "Sur le temps f300, le texte du lecteur se floute et disparaît, la hauteur passe de 124 à 58 px en ≈ 20 im et la ligne de progression verte devient le remplissage épais du slider de volume. Un élément survit au changement d'état et porte la continuité.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Étirement au-delà du maximum",
+      "name_en": "rubber-band overdrag",
+      "t": "0:05.6-0:06.0",
+      "frames": "f335-f359",
+      "fps": 60,
+      "mechanics": "Quand le curseur dépasse la fin du slider, la pilule ne s'allonge que de 428 à 434 px (+1,4 %) : effet demandé par le prompt, presque invisible. Il faudrait 6-10 % d'allongement avec résistance progressive et un retour en ressort au relâchement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Toggle qui bascule sur le temps",
+      "name_en": "toggle flip",
+      "t": "0:06.0-0:06.9",
+      "frames": "f360-f416",
+      "fps": 60,
+      "mechanics": "Sur f360 le slider se rétracte en toggle (piste #3A3A38, bouton blanc à gauche) en ≈ 15 im. Clic sur le temps f390 : le bouton glisse à droite en ≈ 20 im, légèrement allongé pendant le trajet (f398, probable), la piste passe au vert #1DAA58, anneau de clic.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le bouton du toggle devient l'indicateur d'onglet",
+      "name_en": "knob to tab indicator",
+      "t": "0:07.0-0:07.4",
+      "frames": "f420-f446",
+      "fps": 60,
+      "mechanics": "Sur le temps f420, la piste verte devient une barre d'onglets blanche de 372 px et le bouton blanc devient l'indicateur noir sous « Overview » : inversion des valeurs noir/blanc qui marque le passage. Libellés flous à f422, nets à f430.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 388, "to": 446, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Indicateur « liquide » à deux ressorts",
+      "name_en": "two-spring liquid tab indicator",
+      "t": "0:07.5-0:07.95",
+      "frames": "f450-f476",
+      "fps": 60,
+      "mechanics": "Mesure des bords : le bord arrière (gauche) part en premier et arrive en ≈ 15 im (538 → 662 px), le bord avant (droit) traîne et arrive en ≈ 24 im (656 → 776 px). La pilule se comprime de 118 à 92 px (−22 %) au lieu de s'étirer vers l'avant : ressorts inversés par rapport à l'intention. Et le curseur clique « Chart » alors que l'indicateur s'arrête sur « Activity ».",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f446-f478) + mesure bbox"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe qui se trace sur la double-croche",
+      "name_en": "self-drawing line chart",
+      "t": "0:08.0-0:09.6",
+      "frames": "f480-f574",
+      "fps": 60,
+      "mechanics": "Les onglets s'ouvrent en carte blanche 868x486 (60 % x 34 %) en 18 im. Après un point d'ancrage (f496), une courbe verte #39A66B de 10 points se trace segment par segment avec un point en tête : un segment toutes les ≈ 7,5 im (une double-croche à 120 BPM), de f506 à f574. Lignes de grille très pâles.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 496, "to": 580, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Infobulle au survol",
+      "name_en": "hover tooltip",
+      "t": "0:09.6-0:09.95",
+      "frames": "f574-f597",
+      "fps": 60,
+      "mechanics": "Le curseur entre dans le graphique ; une pastille noire « 0.80 » de 68x30 px apparaît au-dessus d'un point en ≈ 6 im (gris à f574, noir à f580), puis pâlit avec la courbe à f598 avant le morph suivant.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Palette ⌘K qui filtre à la frappe",
+      "name_en": "command palette filter",
+      "t": "0:10.0-0:11.95",
+      "frames": "f600-f717",
+      "fps": 60,
+      "mechanics": "Sur le temps f600 la carte se replie en barre 552x60 (hauteur 470 → 60 en ≈ 22 im) avec « ⌘K » et un curseur texte. À f637 elle s'ouvre vers le bas jusqu'à 330 px de haut en ≈ 20 im ; la frappe « export cha » filtre la liste Export as PNG / CSV / PDF (ligne en surbrillance grise). Entrée sur le temps f690 : la ligne passe au noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Palette qui tombe en toast",
+      "name_en": "palette to toast drop",
+      "t": "0:12.0-0:12.45",
+      "frames": "f720-f748",
+      "fps": 60,
+      "mechanics": "Sur le temps f720 la palette rétrécit (524 → 316 px) et tombe d'environ 1000 px (70 % de la hauteur) vers le bas à droite en ressort critique (pas de 200, 240, 200, 140, 90, 60, 34… px par 3 im), pour devenir un toast blanc 316x68 avec un point vert. Placement sémantique : le toast vit en bas.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle presque fermée",
+      "name_en": "seamless loop attempt",
+      "t": "0:13.5-0:14.0",
+      "frames": "f810-f839",
+      "fps": 60,
+      "mechanics": "Sur le temps f810 le toast noircit et remonte au centre en bouton « Continue ». À la dernière image, le bouton est encore 10 px trop bas et bouge encore (≈ 3 px/im) alors que la première image est immobile, et le curseur saute d'environ 140 px. La boucle accroche légèrement.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg + mesure bbox"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement à 4 sous-images",
+      "name_en": "4-subframe tmix motion blur",
+      "t": "0:02.0-0:13.9",
+      "frames": "f121-f839",
+      "fps": 60,
+      "mechanics": "Chaque image est la moyenne de 4 sous-images (ffmpeg tmix). Sur les gestes lents, le flou est propre et directionnel. Sur les gestes rapides (îlot à ≈ 50 px/im, curseur, chute du toast), on voit 3-4 copies distinctes espacées d'environ 12 px : flou en escalier. Il faudrait 8 à 16 sous-images ou un flou par vecteur.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg (f122-f142), extra-03.jpg (f724)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dérive d'échelle lente au lieu d'un vrai cadrage",
+      "name_en": "slow scale drift",
+      "t": "0:02.9-0:13.5",
+      "frames": "f174-f808",
+      "fps": 60,
+      "mechanics": "Une caméra existe : pendant les maintiens, l'échelle dérive lentement autour du centre du cadre (lecteur −8 % en 2 s, graphique −3 %, toast +4 %), ce qui fait glisser l'objet. Mais elle ne zoome jamais pour que l'état remplisse le cadre, contrairement au prompt.",
+      "verdict": "adapter",
+      "evidence": "mesure bbox"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Objet repositionné selon la sémantique UI",
+      "name_en": "semantic repositioning",
+      "t": "0:00-0:14",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Bouton au centre (y ≈ 55 %), îlot et lecteur en haut (y 10-22 %), onglets et graphique au centre haut, ⌘K en haut, toast en bas à droite (y 86-93 %, x 51-73 %), retour au centre. Logique d'interface réelle, mais dans un carré de 1440 px l'objet n'occupe que 4 à 60 % de la largeur : beaucoup de vide, textes illisibles sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Noir, blanc et un seul vert",
+      "name_en": "monochrome plus one accent",
+      "t": "0:00-0:14",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Fond #F2F0EB, composants #131310 ou #FFFFFF, accent #1EA85D réservé à ce qui est actif (remplissage, toggle allumé, courbe, anneau de clic, point de succès). Le passage noir → blanc au moment des onglets relance l'attention à mi-parcours.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres portées douces sans glow",
+      "name_en": "soft drop shadows",
+      "t": "0:00-0:14",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Chaque composant porte une ombre large, très diffuse et décalée vers le bas (≈ 10-20 px), qui détache le blanc du fond gris chaud sans bordure. Conforme à l'interdiction des glows et des dégradés.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Libellés UI en Geist à taille réelle",
+      "name_en": "Geist UI labels",
+      "t": "0:00-0:14",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Textes en Geist medium/semibold, casse phrase, à taille d'interface réelle (≈ 14-20 px sur 1440, soit 1-1,4 % de la hauteur) : « Continue », « Night Drive », « Overview / Activity / Chart », « Export as PNG ». Fidèle à une vraie UI, mais trop petit pour une vidéo sans zoom caméra.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Écrire « 120 BPM, 7 bars, something happens on every beat » a donné une durée exacte (840 im = 14,00 s) et 15 gestes sur 20 calés à 0-1 im d'un temps : la structure en mesures marche."},
+    {"kind": "build", "insight": "seek(t) pur et ressorts en forme fermée donnent un rendu déterministe et des courbes propres ; « a tiny overshoot at most » a été lu comme zéro dépassement."},
+    {"kind": "build", "insight": "« 4 subframes per frame, tmix » est trop peu pour des gestes à 50 px/im : fantômes en escalier. Préciser 8-16 sous-images ou un flou proportionnel à la vitesse."},
+    {"kind": "direction", "insight": "« The camera zooms so each state fills the frame » n'a pas été tenu. Une règle de contrôle chiffrée (objet ≥ 50 % de la largeur sur chaque image de temps) aurait été vérifiable."},
+    {"kind": "build", "insight": "Le truc des deux bords sur deux ressorts est implémenté mais inversé (le bord arrière est le plus rapide). Il faut nommer quel bord mène et donner les raideurs des deux ressorts."},
+    {"kind": "qa", "insight": "Le rendu d'une image par temps vérifie la grille et la lisibilité, pas la logique : clic sur « Chart » qui finit sur « Activity », icône lecture/pause fausse. Ajouter une vérification « état attendu après chaque clic »."},
+    {"kind": "inputs", "insight": "Le prompt demande la chanson à l'utilisateur ; la vidéo publiée est muette. Toute la partie synchro des sons d'interface est perdue, seule la grille visuelle reste."},
+    {"kind": "qa", "insight": "La consigne « dernière image identique à la première, curseur et vitesse compris » n'est qu'à moitié tenue : bouton à 10 px et encore en mouvement, curseur qui saute de ≈ 140 px."}
+  ],
+  "steal": [
+    "Écrire la structure en mesures (« 120 BPM, 7 mesures ») et lancer chaque changement d'état 0-1 im après un temps.",
+    "Une seule forme qui ne coupe jamais : animer taille, rayon et couleur du conteneur, et échanger le contenu dans un flou court avec son propre timing.",
+    "Faire survivre un élément d'un état à l'autre : barre de progression → remplissage du volume, bouton du toggle → indicateur d'onglet.",
+    "Tracer une courbe segment par segment, un segment par double-croche (7,5 im à 60 fps), avec un point en tête.",
+    "Curseur qui clique vraiment, anneau de clic de 15-20 im dans la couleur accent, et glisser où la valeur suit exactement le curseur."
+  ],
+  "flaws": [
+    "Pas de zoom caméra : l'objet occupe 4 à 60 % de la largeur d'un carré vide, textes à 1 % de la hauteur.",
+    "Flou à 4 sous-images : copies fantômes en escalier sur l'îlot, le curseur et la chute du toast.",
+    "Bugs d'état : clic sur « Chart » mais indicateur sur « Activity », icône lecture affichée pendant la lecture.",
+    "Indicateur « liquide » inversé : la pilule se comprime de 22 % au lieu de s'étirer vers l'avant.",
+    "Vidéo muette malgré un prompt construit sur une chanson ; toast immobile ≈ 1 s ; la boucle accroche."
+  ],
+  "deep_study": {"worth": true, "why": "Source native à 60 fps avec ressorts en forme fermée, morphs continus et grille de 120 BPM précise à l'image : idéale pour mesurer image par image les courbes de ressort, le timing contenu/conteneur et l'héritage d'éléments, à reproduire dans HyperFrames."}
+}

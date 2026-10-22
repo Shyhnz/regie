@@ -1,0 +1,366 @@
+{
+  "slug": "l3d1c-0e35a3",
+  "title": "PicTwin AI app ad",
+  "handle": "@l3d1c",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Démo produit bien racontée, où les selfies voyagent du téléphone à l'app, mais UI desktop illisible en 9:16, 30 % de maintiens, fondus au noir répétés et aucune bande-son.",
+  "summary": "Pub verticale de 30 s pour PicTwin AI, une app qui génère des photos de studio à partir de selfies. Le récit suit un objet : les selfies quittent la galerie du téléphone, volent dans la zone d'upload, tournent en anneau autour du visage pendant l'entraînement, puis se multiplient en mur de portraits. Bonne logique de démo en 5 étapes, mais UI illisible en vertical, maintiens longs et aucune bande-son.",
+  "prompt_vs_result": [
+    "Une seule ligne : demander à Claude d'écrire un prompt de motion design pour une pub du site. Aucun format, durée, ton, musique ni contenu imposés.",
+    "Claude a tout décidé : format vertical de 30 s, parcours en 5 étapes numérotées, vraie interface de l'app reconstruite, selfies qui voyagent du téléphone à l'app, anneau d'entraînement en accéléré, mur de photos, carte de fin ambre.",
+    "Le méta-prompt a produit un vrai storyboard (étapes, légendes, accroches). Il manquait la musique et le BPM, la lisibilité mobile de l'UI (zooms sur les zones utiles), l'équilibre des durées et des transitions variées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0908", "role": "fond quasi noir"},
+      {"hex": "#F5A623", "role": "accent ambre : « AI », « STILL YOU. », boutons, étiquettes d'étape, balayages"},
+      {"hex": "#FFFFFF", "role": "accroches et légendes"},
+      {"hex": "#161514", "role": "panneaux et fenêtre d'interface"},
+      {"hex": "#2A2418", "role": "cartes en attente (placeholders) teintées ambre"},
+      {"hex": "#3A2A08", "role": "lueur radiale chaude et flash de fin d'entraînement"},
+      {"hex": "#34C759", "role": "statut « Ready » vert"},
+      {"hex": "#0A84FF", "role": "coches de sélection iOS"}
+    ],
+    "type": "Grotesque très grasse en capitales serrées pour les accroches (≈5-6 % de la hauteur) ; légendes en sans grasse en casse phrase (≈2 %) ; micro-étiquettes en mono capitales interlettrées orange (≈0,8 %) ; UI en sans type Inter.",
+    "texture": "Lueur radiale ambre au centre du fond noir, trame de points très légère, ombres portées douces sous les cartes photo, flou de profondeur (bokeh) sur les photos qui volent vers la caméra, traînées d'écho sur l'anneau en accéléré, flou d'entrée des mots.",
+    "style": "Démo SaaS sombre, accent ambre",
+    "coherence": "Tenu par un fil rouge d'objet (les selfies, du téléphone au mur), un seul accent ambre et le même gabarit de légende « 0X · ÉTAPE / phrase » à chaque scène. Ce qui casse : l'interface desktop réduite dans un cadre vertical (texte illisible, tiers bas vide) et le fondu au noir répété comme seule ponctuation."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio. Le montage est découpé en secondes rondes : coupures au noir à 3,0 / 9,0 / 15,0 / 23,0 / 26,0 s, coupe sèche à 24,53 s. Durées très inégales : intro 3 s, upload 6 s, entraînement 6 s, génération 8 s, édition 1,5 s, animation 1,5 s, carte de fin 4 s. Les maintiens de 0,4 s ou plus totalisent 9,1 s, soit 30 % du temps : formulaire 4,3-5,83 s, attente 7,6-8,67 s, interface vide « No photos yet » 15,4-17,3 s, carte de fin 27,5-29,97 s (2,5 s). Les passages denses sont rares mais forts : vol des 12 selfies (1 tous les 3 im), anneau qui accélère de 9,5 à 13,5 s (énergie de mouvement en hausse continue), rafale de générations de 19,67 à 21,6 s (une nouvelle série toutes les 10 à 20 im), recul vers le mur à 21,7 s.",
+    "timeline": [
+      {"t": "0:00-0:02", "what": "Téléphone avec galerie « Recents », « YOUR SELFIES. » mot à mot, sous-titre mono « THE ONES ALREADY ON YOUR PHONE », coches bleues de 3 à 12 photos", "technique": "mots qui sortent du flou + sélection iOS"},
+      {"t": "0:02-0:03", "what": "Les photos sélectionnées se soulèvent de la grille et volent vers la caméra en se floutant, fondu au noir", "technique": "envol des photos vers la caméra"},
+      {"t": "0:03-0:06", "what": "App PicTwin : « Train Your AI Model First », clic du curseur, formulaire « Create New AI Model », saisie de « Marcus », menu Pro Quality", "technique": "curseur simulé + formulaire"},
+      {"t": "0:06-0:09", "what": "12 selfies volent dans la zone d'upload, « 12 FILES SELECTED », case cochée, « Creating… », notification, fondu au noir ; légende « 01 · UPLOAD / Upload 10–20 selfies »", "technique": "vol de cartes dans la dropzone + notification"},
+      {"t": "0:09-0:13.7", "what": "Carte portrait « Marcus », anneau de 12 selfies en orbite qui accélère avec traînées, arc de progression, ligne de scan, étiquette « TIME-LAPSE » ; « 02 · TRAIN »", "technique": "orbite en accéléré + progression"},
+      {"t": "0:13.7-0:15", "what": "L'anneau s'effondre, la carte passe en couleur « Ready », flash ambre, « YOUR AI TWIN LEARNS YOUR FACE. » mot à mot, fondu au noir", "technique": "flash de fin + mots qui sortent du flou"},
+      {"t": "0:15-0:19.6", "what": "Interface vide, saisie du prompt « as a CEO in a sleek glass-walled office », touche Entrée, 4 cartes en attente, balayage orange qui révèle chaque photo ; « 03 · GENERATE »", "technique": "prompt + révélation par balayage"},
+      {"t": "0:19.6-0:21.7", "what": "Rafale de prompts (costume en ville, randonnée, vernissage, studio, Taj Mahal), la grille se réorganise à chaque série", "technique": "réorganisation en maçonnerie"},
+      {"t": "0:21.7-0:23", "what": "L'interface recule et s'incline au milieu d'un mur de portraits générés, « EVERY PHOTO. STILL YOU. »", "technique": "recul dans un mur de résultats + accroche"},
+      {"t": "0:23-0:24.53", "what": "Portrait « BEFORE », clic sur Edit, saisie « put me in a navy blazer and white shirt », curseur avant/après ; « 04 · EDIT »", "technique": "curseur de comparaison avant/après"},
+      {"t": "0:24.53-0:26", "what": "Selfie au Taj Mahal, clic sur « Bring to Life », la photo s'anime ; « 05 · ANIMATE », fondu au noir", "technique": "photo qui devient vidéo"},
+      {"t": "0:26-0:30", "what": "Mur de portraits incliné en filigrane, « PicTwin AI » lettre par lettre, « Selfies in. Studio photos out. », bouton « Get started → », pictwinai.com, mentions de garantie ; maintien de 2,5 s", "technique": "logo tapé + carte de fin en cascade"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no) : pas de grille de temps, pas d'attaques.",
+    "synced": [],
+    "style_match": "Sans musique : la pub verticale perd son levier rythmique ; rien ne porte les accélérations (anneau, rafale de générations) ni ne justifie les coupures.",
+    "how_built": "Le prompt demandait seulement un prompt de motion design. Aucune bande-son n'a été prévue ou ajoutée, et les scènes sont calées en secondes rondes sans référence à un tempo."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Fil rouge d'objet : les selfies voyagent",
+      "name_en": "Object throughline (selfies travel between scenes)",
+      "t": "0:00-0:23",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "Le même objet relie les scènes : les selfies sont sélectionnés dans la galerie (0-2 s), s'envolent du téléphone (2-3 s), atterrissent dans la zone d'upload (6-7,3 s), orbitent autour du visage pendant l'entraînement (9-13,6 s), puis deviennent le mur de portraits générés (21,7-23 s) et le fond de la carte de fin. Chaque transition est motivée par le trajet de l'objet, pas par un effet.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-move-f87.jpg, microM-002-move-f186.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Démo chapitrée en 5 étapes numérotées",
+      "name_en": "Numbered step chaptering",
+      "t": "0:04.5-0:26",
+      "frames": "f135-f779",
+      "fps": 30,
+      "mechanics": "Sous l'interface, au même endroit (y ≈75-80 %), on lit une micro-étiquette mono orange « 01 · UPLOAD », « 02 · TRAIN », « 03 · GENERATE », « 04 · EDIT », « 05 · ANIMATE » (≈0,8 % de la hauteur, interlettrage large), puis une phrase-bénéfice blanche en casse phrase (≈2 %). Elle apparaît en fondu en 3 im (f737-f739) et disparaît 3 à 5 im avant chaque coupe.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-011-cut-f736.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui sortent du flou",
+      "name_en": "Blur-in word-by-word reveal",
+      "t": "0:00.27-0:00.53",
+      "frames": "f8-f16",
+      "fps": 30,
+      "mechanics": "Chaque mot entre flou, à ≈115 % de sa taille, en opacité partielle, et devient net à 100 % en 2 à 4 im. Décalage de 6 im pour « YOUR » → « SELFIES. » (f8, f14), de 3 im pour « YOUR / AI / TWIN / LEARNS… » (f419, f422, f425, f428), de 4 im pour « EVERY / PHOTO. / STILL / YOU. » (f657, f661, f665, f669). Pas de translation notable. Les mots-clés « AI TWIN » et « STILL YOU. » sont en ambre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-006-cut-f411.jpg, extra-01.jpg",
+      "illus": {"from": 655, "to": 673, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélection dans la galerie iOS",
+      "name_en": "Gallery multi-select checkmarks",
+      "t": "0:00.7-0:01.9",
+      "frames": "f22-f56",
+      "fps": 30,
+      "mechanics": "Dans un téléphone de ≈35 % de la largeur centré en haut, des coches bleues #0A84FF apparaissent une à une sur la grille de selfies, environ une toutes les 3 im, et le compteur passe de « 3 Photos Selected » à « 12 Photos Selected ». La scène est reconnaissable immédiatement et pose l'entrée du produit : les photos qu'on a déjà.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Envol des photos vers la caméra",
+      "name_en": "Photo lift-off fly-through",
+      "t": "0:01.93-0:03.0",
+      "frames": "f58-f90",
+      "fps": 30,
+      "mechanics": "Les photos sélectionnées se détachent de la grille avec un bord blanc et une ombre (f58-f64), pendant que les autres et le titre s'assombrissent (f66-f70). Elles grossissent ensuite vers la caméra en s'écartant du centre. Un flou de profondeur croissant gagne les plus proches (f80-f89), jusqu'à ≈3× leur taille. Une image noire (f90) précède l'interface, qui apparaît en fondu en 3 im (f91-f93).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-move-f87.jpg",
+      "illus": {"from": 60, "to": 92, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur simulé et formulaire rempli",
+      "name_en": "Simulated cursor form fill",
+      "t": "0:03.5-0:06",
+      "frames": "f105-f179",
+      "fps": 30,
+      "mechanics": "Un curseur macOS va cliquer « Create Your AI Model » (≈4,0 s). Le formulaire « Create New AI Model » apparaît, « Marcus » est tapé lettre à lettre (≈5,0 s), le menu Style s'ouvre (Default / Fast / Pro Quality) et Pro Quality est choisi (≈5,8 s). Tout se joue à l'échelle de l'interface complète, sans zoom : les gestes font moins de 2 % du cadre.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-002-move-f186.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Selfies qui volent dans la zone d'upload",
+      "name_en": "Cards flying into a dropzone",
+      "t": "0:06.03-0:07.30",
+      "frames": "f181-f219",
+      "fps": 30,
+      "mechanics": "12 cartes photo à bord blanc (≈12 % de la largeur), inclinées de ±10° avec ombre portée, entrent par le haut ou le coin supérieur droit hors cadre. Chacune traverse en ≈5-6 im vers la zone de dépôt, qui passe en pointillé orange, puis rétrécit en vignette ajoutée à la rangée. Une carte arrive toutes les ≈3 im (12 en 38 im), et le compteur affiche « 12 FILES SELECTED ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f186.jpg, microM-003-move-f209.jpg",
+      "illus": {"from": 180, "to": 222, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton « Creating… » et notification",
+      "name_en": "Loading button and toast",
+      "t": "0:08.4-0:09",
+      "frames": "f252-f269",
+      "fps": 30,
+      "mechanics": "Le bouton « Create AI Model » passe en « Creating… » avec un spinner. Une notification « AI Model Training Started » glisse en haut à droite en ≈3 im (f257-f260). L'interface s'assombrit et disparaît (f263-f269) vers le noir (f270). C'est un détail d'état réaliste qui crédibilise la démo.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f264.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir entre chapitres",
+      "name_en": "Dip to black",
+      "t": "0:14.90-0:15.13",
+      "frames": "f447-f454",
+      "fps": 30,
+      "mechanics": "L'image s'assombrit en 3 im (f447-f449), reste noire 1 im (f450), puis la scène suivante apparaît en fondu en 3-4 im (f451-f454). Cela fait ≈0,25 s par passage, répété 5 fois (3,0 / 9,0 / 15,0 / 23,0 / 26,0 s). C'est propre, mais c'est la ponctuation par défaut, sans lien avec le contenu, sauf la première fois, où le noir prolonge l'envol des photos.",
+      "verdict": "cliche",
+      "evidence": "microM-007-cut-f450.jpg, microM-010-cut-f690.jpg, microM-012-cut-f780.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Anneau de selfies en orbite, en accéléré",
+      "name_en": "Accelerating orbit ring with echo trails",
+      "t": "0:09.17-0:13.60",
+      "frames": "f275-f408",
+      "fps": 30,
+      "mechanics": "Les 12 selfies sortent un à un de la droite de la carte portrait (f275-f281, ≈1 par im) et forment un anneau elliptique d'un diamètre d'environ 85 % de la largeur. L'anneau tourne de plus en plus vite : l'énergie de mouvement monte en continu de 9,5 à 12 s, puis plafonne jusqu'à 13,5 s. Dès ≈11 s, chaque vignette laisse 3 ou 4 copies fantômes décalées (écho, time-lapse). À 13,6 s, l'anneau disparaît en 3 im (f406-f408).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f264.jpg, microM-005-move-f352.jpg, microM-006-cut-f411.jpg",
+      "illus": {"from": 340, "to": 410, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Progression d'entraînement et étiquette « TIME-LAPSE »",
+      "name_en": "Training progress arc with time-lapse badge",
+      "t": "0:09.5-0:13.6",
+      "frames": "f285-f408",
+      "fps": 30,
+      "mechanics": "Un arc orange fin entoure la carte et se remplit de 0 à 100 %. Une ligne de scan horizontale orange balaie le visage. Sous la carte, « TRAINING IN PROGRESS » et un pourcentage montent jusqu'à « 100% ». En haut à droite, une puce mono « TIME-LAPSE » assume l'accélération : une étiquette honnête pour un traitement qui dure en réalité des minutes.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Passage en couleur et flash ambre à 100 %",
+      "name_en": "Completion warm flash",
+      "t": "0:13.67-0:13.87",
+      "frames": "f410-f416",
+      "fps": 30,
+      "mechanics": "À la fin de l'entraînement, la carte portrait passe du gris désaturé à la couleur avec le statut vert « Ready » (f410). Le fond s'éclaire d'un voile ambre #3A2A08 pendant 1 im (f411), qui décroît en ≈5 im, et la carte garde un liseré lumineux orange. C'est une ponctuation de réussite chaude, avant l'accroche mot à mot qui démarre 8 im plus tard (f419).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f411.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Prompt tapé avec jeton et touche Entrée",
+      "name_en": "Prompt input with token chip and Enter hint",
+      "t": "0:15.5-0:17.2",
+      "frames": "f465-f516",
+      "fps": 30,
+      "mechanics": "Dans le champ en bas de l'interface, un avatar « Marcus » est suivi d'un jeton orange « PICTWIN » et du texte tapé « as a CEO in a sleek glass-walled office ». Une puce « ↵ Enter » apparaît au-dessus du bouton d'envoi orange (≈17,0 s), puis « No photos yet » disparaît en fondu (f515). La saisie est lente : 1,9 s de maintien quasi statique.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Révélation de l'image par balayage",
+      "name_en": "Scanline generation reveal",
+      "t": "0:17.23-0:19.20",
+      "frames": "f517-f576",
+      "fps": 30,
+      "mechanics": "Quatre cartes en attente, sombres et teintées ambre avec une puce « QUEUED », apparaissent en décalé (f519, f521, f523, f529). Elles deviennent des aperçus flous avec une puce « GENERATING » et un pourcentage, puis une ligne orange descend dans chaque carte : flou sous la ligne, net au-dessus. Le balayage dure ≈1 s par carte, décalé de quelques images d'une carte à l'autre. Tout est net vers f575.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 517, "to": 577, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Réorganisation en maçonnerie à chaque série",
+      "name_en": "Masonry reflow on new batch",
+      "t": "0:19.60-0:21.60",
+      "frames": "f588-f648",
+      "fps": 30,
+      "mechanics": "À chaque nouveau prompt (costume en ville, randonnée au lever du soleil, vernissage, studio, Taj Mahal), une nouvelle carte floue s'insère en haut à gauche. Les cartes existantes glissent à leur nouvelle place en ≈4-5 im (animation de mise en page type FLIP), puis la carte se révèle par balayage. Une série arrive toutes les 10 à 20 im : c'est le passage le plus dense, qui exprime l'abondance.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f590.jpg, microM-009-move-f630.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul dans un mur de résultats",
+      "name_en": "Pull-back reveal into a tilted results wall",
+      "t": "0:21.70-0:22.97",
+      "frames": "f651-f689",
+      "fps": 30,
+      "mechanics": "La fenêtre d'interface passe de ≈95 % à ≈62 % de la largeur en ≈10 im (f651-f660), en décélérant à la fin, et s'incline jusqu'à ≈-8°. Derrière elle, un mur de portraits générés incliné à ≈-12° et assombri apparaît en fondu (f654-f658). Le mouvement continue lentement jusqu'à la sortie au noir (f687-f689). L'accroche « EVERY PHOTO. STILL YOU. » s'écrit mot à mot en bas (y ≈77-82 %) pendant le recul.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-010-cut-f690.jpg",
+      "illus": {"from": 648, "to": 672, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur de comparaison avant/après",
+      "name_en": "Before/after comparison slider wipe",
+      "t": "0:23.3-0:24.37",
+      "frames": "f699-f731",
+      "fps": 30,
+      "mechanics": "Le portrait « BEFORE » (t-shirt) reçoit un clic sur « Edit » (bouton qui passe en orange, f699). L'instruction « put me in a navy blazer and white shirt » est tapée dans la carte (f703-f716). Une ligne verticale avec poignée balaie ensuite le portrait de gauche à droite en ≈7 im (f725-f731) et découvre la version « AFTER » en blazer. C'est le geste standard des outils d'édition par IA, lisible même en petit.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f690.jpg, microM-011-cut-f736.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Photo qui devient vidéo",
+      "name_en": "Photo-to-video animate demo",
+      "t": "0:24.53-0:26",
+      "frames": "f736-f779",
+      "fps": 30,
+      "mechanics": "Coupe sèche vers un selfie devant le Taj Mahal : la carte grandit d'environ 90 à 100 % en ≈5 im (f736-f741), en ease-out. Clic du curseur sur « Bring to Life » (f749-f750), puce « ANIMATING », puis la photo s'anime (mouvements de tête, sourire) avec une barre de lecture blanche en bas. La scène dure 1,5 s : trop court pour la fonction la plus spectaculaire.",
+      "verdict": "adapter",
+      "evidence": "microM-011-cut-f736.jpg, microM-012-cut-f780.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo tapé lettre par lettre avec rebond",
+      "name_en": "Per-letter pop typewriter logo",
+      "t": "0:26.17-0:26.85",
+      "frames": "f785-f805",
+      "fps": 30,
+      "mechanics": "« PicTwin » s'écrit à partir de sa position finale gauche, une lettre toutes les ≈2 im (P f785, i f787, c f789, T f791, w f793, i f795, n f797), puis « AI » en ambre. Chaque lettre naît à ≈60 % de sa taille, sous la ligne de base et en gris, puis monte à 100 % en blanc en 2-3 im. À 30 fps, l'effet ressemble à un indice qui sautille plus qu'à un rebond propre.",
+      "verdict": "adapter",
+      "evidence": "microM-012-cut-f780.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin en cascade avec signaux de confiance",
+      "name_en": "Staggered end card with trust line",
+      "t": "0:26.9-0:30",
+      "frames": "f807-f900",
+      "fps": 30,
+      "mechanics": "Sous le logo (y ≈33 %), les éléments arrivent toutes les ≈0,4-0,5 s : la signature « Selfies in. / Studio photos out. » (blanc puis ambre, chiasme, y ≈42-45 %), la pilule « Get started → » ambre (≈27,3 s, y ≈51 %), puis « pictwinai.com » et la mention mono « 30-DAY MONEY-BACK GUARANTEE · COMMERCIAL LICENSE » (≈27,7 s, y ≈56-61 %). Ensuite, maintien figé de 2,5 s et 40 % bas du cadre vide.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de portraits en filigrane",
+      "name_en": "Ghosted tilted photo wall",
+      "t": "0:26-0:30",
+      "frames": "f781-f900",
+      "fps": 30,
+      "mechanics": "Le mur de portraits générés, incliné à ≈-12°, reste derrière la carte de fin à ≈20 % de luminosité. Il apparaît en fondu en 4 im (f781-f784). C'est un rappel de la promesse « EVERY PHOTO. STILL YOU. », qui donne de la matière au fond sans gêner la lecture.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-012-cut-f780.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Lueur radiale chaude sur fond noir",
+      "name_en": "Warm radial glow backdrop",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Fond quasi noir #0A0908 avec une lueur ambre diffuse au centre (≈#2A1A05) et une trame de points très légère, visible sur les images de noir (f0, f90, f270). Ce fond unique relie toutes les scènes d'interface et rappelle l'accent ambre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-move-f87.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Système typographique à trois voix",
+      "name_en": "Three-voice type system",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Accroches en grotesque très grasse, capitales serrées, ≈5-6 % de la hauteur, centrées (« YOUR SELFIES. », « EVERY PHOTO. STILL YOU. »). Légendes en sans grasse, casse phrase, ≈2 %. Micro-étiquettes en mono capitales, interlettrage ≈+30 %, ≈0,8 %, en orange ou gris (« 01 · UPLOAD », « TIME-LAPSE », « THE ONES ALREADY ON YOUR PHONE »). L'ambre sert de surlignage sémantique : AI, TWIN, STILL YOU, Studio photos out.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Interface desktop réduite dans un cadre 9:16",
+      "name_en": "Desktop UI shrunk into vertical frame",
+      "t": "0:03-0:26",
+      "frames": "f91-f779",
+      "fps": 30,
+      "mechanics": "La fenêtre de navigateur occupe 3-97 % de la largeur et 10-70 % de la hauteur. Les titres d'interface font ≈1,2 % de la hauteur et le texte courant ≈0,5 %, illisibles sur un téléphone. La légende est en bas (75-80 %), et les 20 % du bas restent vides. Aucun zoom ne cadre la zone utile (champ, bouton, carte) : il aurait fallu des recadrages serrés de 2 à 3×.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Durées de chapitres déséquilibrées",
+      "name_en": "Unbalanced chapter pacing",
+      "t": "0:03-0:26",
+      "frames": "f90-f780",
+      "fps": 30,
+      "mechanics": "Upload : 6 s, dont 1,5 s de formulaire quasi figé. Entraînement : 6 s. Génération : 8 s, dont 1,9 s d'interface vide. Édition et animation, les fonctions les plus spectaculaires : 1,5 s chacune. Les maintiens de 0,4 s ou plus font 30 % du temps : l'ordre de récit est bon, mais l'attention se dépense au mauvais endroit.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Our site » : Claude a reconstruit l'interface réelle de PicTwin (Studio, « Train Your AI Model First », onglets « Upload selfies / Invent a character », bouton « Bring to Life »), probablement depuis le code ou le site du projet. Une démo crédible, mais à l'échelle desktop."},
+    {"kind": "structure", "insight": "Le méta-prompt (« écris un prompt de motion design ») a produit un storyboard très structuré : 5 étapes numérotées, une légende-bénéfice par étape, trois accroches mot à mot, une carte de fin avec garantie. Faire écrire le prompt avant de produire structure le récit."},
+    {"kind": "direction", "insight": "Aucune direction de style : Claude a pris le code par défaut des SaaS d'IA (fond noir, lueur chaude, accent ambre, mots qui sortent du flou, fondu au noir). C'est propre, mais attendu."},
+    {"kind": "build", "insight": "Aucune musique n'a été demandée, aucune n'a été faite : la pub est muette et ses accélérations (anneau, rafale de prompts) n'ont pas de pulsation à suivre. Il fallait demander une piste et un BPM, puis caler les chapitres dessus."},
+    {"kind": "qa", "insight": "Aucun contrôle de lisibilité mobile : l'interface desktop est restée à pleine largeur dans un cadre vertical. Une consigne comme « zoomer 2-3× sur chaque zone d'action, texte d'UI ≥ 2 % de la hauteur » aurait corrigé le principal défaut."},
+    {"kind": "other", "insight": "Le format 9:16 est une décision de Claude, car le prompt n'en dit rien. Il convient à une pub sociale, mais entre en conflit avec le choix de montrer l'interface desktop entière."}
+  ],
+  "steal": [
+    "Faire voyager le même objet d'une scène à l'autre : les selfies quittent la galerie, volent dans la zone d'upload, orbitent pendant l'entraînement, puis deviennent le mur final.",
+    "Montrer un traitement long en accéléré avec une étiquette « TIME-LAPSE » : rotation qui accélère, traînées d'écho, pourcentage qui court, flash chaud à 100 %.",
+    "Révéler une image générée par une ligne de balayage colorée qui descend : flou sous la ligne, net au-dessus, décalée de quelques images d'une carte à l'autre.",
+    "Pour la promesse, reculer : l'interface rétrécit et s'incline au milieu d'un mur de résultats, et l'accroche s'écrit mot à mot par-dessus.",
+    "Chapitrer une démo en étapes numérotées : micro-étiquette mono « 01 · UPLOAD » plus une phrase-bénéfice en casse phrase, au même endroit à chaque scène."
+  ],
+  "flaws": [
+    "L'interface desktop est réduite dans un cadre 9:16 : les textes d'UI font moins de 1,5 % de la hauteur, illisibles sur un téléphone.",
+    "Aucune bande-son : une pub verticale muette, sans pulsation pour porter le montage.",
+    "Cinq fondus au noir identiques (3, 9, 15, 23, 26 s) comme ponctuation par défaut.",
+    "Maintiens longs (30 % du temps) : formulaire, « No photos yet » 1,9 s, carte de fin figée 2,5 s.",
+    "Durées déséquilibrées : 6 s pour l'upload, 1,5 s chacune pour l'édition et l'animation, les fonctions les plus spectaculaires."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Natif 30 fps et muet, donc rien à apprendre côté musique. Trois passages valent pourtant une étude image par image pour une démo SaaS dans HyperFrames : le vol des 12 cartes dans la zone d'upload (6,0-7,3 s), le balayage et la réorganisation en maçonnerie (17,2-21,6 s), et le recul vers le mur de résultats avec l'accroche mot à mot (21,7-23 s)."
+  }
+}

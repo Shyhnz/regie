@@ -1,0 +1,598 @@
+{
+  "slug": "polydao-7a572b",
+  "title": "Jev engineering showreel",
+  "handle": "@polydao",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Direction artistique forte et tenue (deck brutaliste en trame), transitions motivées et chaînées, synchro de structure exacte ; perd un point pour la surcharge de texte et quelques gestes hors grille.",
+  "summary": "Pitch produit déguisé en showreel : une fausse présentation en 7 chapitres explique « Jev », le modèle de décision de Typesafe AI. Une réponse d'IA bavarde devient 10 000 décisions payées trop cher, on plonge dans son « yes. » pour révéler JEV en iris tramé, puis schémas, cascade, course chronométrée, chiffres et prix. Transitions remarquables, impacts sonores sur chaque chapitre ; beaucoup trop de texte à lire.",
+  "prompt_vs_result": [
+    "Le prompt (gabarit à trous) imposait : 24 s de motion graphics « comme un showreel », « go all out », un seul sujet ([TOPIC]), les couleurs de la marque ([BRAND COLORS]) et un son calé sur les coupes.",
+    "Claude a décidé seul : le cadre « fausse présentation » en 7 chapitres avec barre de progression, le papier tramé rose/bleu à ombres dures, le récit problème → produit → preuve → prix, chaque transition et la bande-son à impacts.",
+    "« Go all out » a poussé la variété (≈ 15 transitions) ; « sound synced to the cuts » a donné un impact par chapitre. Rien ne limitait la lecture : textes mono minuscules, schémas denses. Il fallait plafonner les mots par plan."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F4F0EB",
+        "role": "fond papier crème"
+      },
+      {
+        "hex": "#131313",
+        "role": "encre, bordures, ombres dures, fond de la carte 193.6x"
+      },
+      {
+        "hex": "#EB1290",
+        "role": "rose vif : rôle JEV, étiquettes, trames, fonds de chapitre"
+      },
+      {
+        "hex": "#2451EC",
+        "role": "bleu : rôle LLM, trames d'angle"
+      },
+      {
+        "hex": "#FBFAFA",
+        "role": "cartes et fenêtres blanches"
+      },
+      {
+        "hex": "#F8CAE6",
+        "role": "rose pâle : carte « 04 · YOU », zones de jauge"
+      },
+      {
+        "hex": "#C8C2BC",
+        "role": "gris chaud des barres neutres (probable)"
+      }
+    ],
+    "type": "Linéale condensée très grasse en capitales (Barlow/Fira Extra Condensed Black probable) : titres 6-7 % de la hauteur, héros « JEV » 34 % ; mono (JetBrains Mono probable) : légendes 1,6-2 %, surtitres roses espacés ≈ +40 %.",
+    "texture": "Grain papier fin sur tout le cadre ; taches en trame de points (halftone) roses et bleues ; ombres portées dures noires décalées d'≈ 8-10 px en bas à droite ; bordures noires ≈ 3-4 px ; flou directionnel fort sur les mouvements rapides (filés, plongée, recul) ; décalage chromatique bleu sur les lettres de JEV à l'iris ; tranches glitch sur la carte STATE.",
+    "style": "Deck brutaliste éditorial en trame",
+    "coherence": "Tout vit dans une fausse fenêtre de présentation (« jev-engineering.deck », chapitres 0X / 07, barre de progression rose linéaire, signature @polydao). Une seule grammaire de cartes (bord noir, en-tête coloré, ombre dure) sert au terminal, au schéma, aux jauges, à la cascade et à la course. Les couleurs sont des rôles tenus d'un bout à l'autre : rose = JEV, bleu = LLM, noir = code. Ce qui fragilise : la densité de texte mono et la variété de transitions, virtuose mais parfois démonstrative."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, pulsation d'une régularité de machine (9,9). Intro calme de 0 à 2 s (≈ −24 dBFS), la grosse caisse entre à 2,0 s avec le recul sur le mur de fenêtres. Les changements de chapitre tombent sur des premiers temps de mesure (4, 6, 8, 12, 16, 18, 20, 22 s) et la bande-son y place un impact grave mesuré (−7 à −9 dBFS contre −16 en croisière) à 2, 4, 12, 16, 18, 20 et 22 s. Section preuve : une coupe par temps (18,0 ; 18,5 ; 19,0 s), première image du plan 1 im avant la barre. Dans les scènes, des micro-événements tombent sur les temps (f391, f421, f451, f691), mais beaucoup de mouvement est continu (frappe, texte en flux, compteurs, paquets, barre de progression), ce qui trompe l'indice automatique. 10 maintiens ≥ 0,4 s (5,4 s, 22 %), surtout des temps de lecture ; seule vraie pause : fondu au noir 19,58-19,83 s puis noir 0,27 s avant le prix ; carte de fin tenue 0,9 s pendant que la musique s'éteint.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.08",
+        "what": "chapitre 01/07 THE LEAK : la fenêtre « FRONTIER LLM · AGENT LOOP » monte du bas en pivotant",
+        "technique": "entrée de fenêtre avec rotation"
+      },
+      {
+        "t": "0:00.22-0:01.75",
+        "what": "« > is this email fraud? answer yes or no » tapé à 1 caractère par image, réponse verbeuse en flux, compteur OUTPUT 0 → 152 TOKENS",
+        "technique": "frappe et texte en flux"
+      },
+      {
+        "t": "0:01.75",
+        "what": "« yes. » surgit dans une boîte rose, ping sonore",
+        "technique": "chute comique"
+      },
+      {
+        "t": "0:02.03-0:02.60",
+        "what": "la musique démarre ; recul sur un mur de fenêtres identiques, compteur × 10,000 DECISIONS",
+        "technique": "recul qui multiplie, compteur"
+      },
+      {
+        "t": "0:02.37-0:03.50",
+        "what": "étiquettes « DECISIONS PAID FOR » (noire) puis « AT A GENERATION PRICE » (rose) balayées",
+        "technique": "étiquettes balayées"
+      },
+      {
+        "t": "0:03.55-0:04.00",
+        "what": "plongée dans la boîte « yes. » jusqu'au plein cadre rose",
+        "technique": "plongée dans la forme"
+      },
+      {
+        "t": "0:04.02-0:04.27",
+        "what": "chapitre 02/07 MEET JEV : iris en trame de points, lettres J-E-V en cascade, impact grave",
+        "technique": "iris tramé"
+      },
+      {
+        "t": "0:04.38-0:04.45",
+        "what": "sous-titre « THE SYSTEM ONE MODEL FROM TYPESAFE AI » décodé",
+        "technique": "texte décodé"
+      },
+      {
+        "t": "0:04.98-0:05.15",
+        "what": "tampon rose « BUILT TO DECIDE » claque sur le temps, puis 3 pilules",
+        "technique": "tampon"
+      },
+      {
+        "t": "0:05.73-0:06.27",
+        "what": "chapitre 03/07 THREE ROLES : JEV rétrécit dans la carte centrale, cartes LLM et CODE arrivent, titre tombe",
+        "technique": "le héros devient composant"
+      },
+      {
+        "t": "0:06.50-0:07.75",
+        "what": "flèches, légende colorée, barres et lignes de code qui se remplissent sur les temps",
+        "technique": "schéma qui se construit"
+      },
+      {
+        "t": "0:07.78-0:08.28",
+        "what": "chapitre 04/07 TYPED ANSWERS : cartes latérales sortent, la carte JEV grossit en relief et devient CHOICE",
+        "technique": "mise au point sur une carte"
+      },
+      {
+        "t": "0:08.30-0:09.45",
+        "what": "probabilités qui se disputent puis « lead » gagne",
+        "technique": "barres en course"
+      },
+      {
+        "t": "0:09.47-0:11.75",
+        "what": "carrousel filé vers SCORE (jauge à 2.5) puis NOUL (aiguille à 0.93)",
+        "technique": "whip carrousel, jauges"
+      },
+      {
+        "t": "0:11.75-0:12.60",
+        "what": "chapitre 05/07 THE CASCADE : la carte se plie et devient l'étage JEV ; titre ligne à ligne, THINKING surligné",
+        "technique": "continuité de carte, surlignage"
+      },
+      {
+        "t": "0:12.60-0:15.50",
+        "what": "paquets qui tombent dans la cascade et s'arrêtent au premier étage sûr ; pilule « code → jev → llm → you »",
+        "technique": "particules-données"
+      },
+      {
+        "t": "0:15.50-0:16.10",
+        "what": "chapitre 06/07 PROOF : paquets qui s'envolent, carte STATE entre en glitch",
+        "technique": "sortie en particules, glitch"
+      },
+      {
+        "t": "0:16.10-0:18.00",
+        "what": "course JEV 0.114 s / $0.000081 contre LLM 8.566 s / $0.013880, tampons DONE",
+        "technique": "course chronométrée"
+      },
+      {
+        "t": "0:18.00-0:19.58",
+        "what": "193.6x FASTER, 444.6x CHEAPER, 0 TYPE ERRORS, une carte par temps",
+        "technique": "chiffres sur les temps"
+      },
+      {
+        "t": "0:19.58-0:20.10",
+        "what": "fondu au noir, noir tenu",
+        "technique": "respiration avant le prix"
+      },
+      {
+        "t": "0:20.10-0:21.45",
+        "what": "chapitre 07/07 THE PRICE : révélation en escalier, prix qui roule jusqu'à $0.042 / M, puis « 10,000 DECISIONS = ~42¢ »",
+        "technique": "machine à sous, tampon"
+      },
+      {
+        "t": "0:21.45-0:21.70",
+        "what": "trait diagonal qui s'épaissit en bande rose et couvre le cadre",
+        "technique": "coup de taille diagonal"
+      },
+      {
+        "t": "0:21.70-0:22.25",
+        "what": "étiquette ENGINEERING, JEV tombe et s'écrase sur l'impact final",
+        "technique": "squash & stretch"
+      },
+      {
+        "t": "0:22.40-0:24.04",
+        "what": "« GIVE YOUR AGENTS A DECISION BRAIN » tapé, pilule « llm writes → jev decides → code acts », fondu musical",
+        "technique": "carte de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage à l'œil, un événement clé par geste, ±2 im à 60 fps (hasard ≈ 33 %) : 28 gestes sur 40 sur une barre bleue ou bleu clair. Calés : « yes. » f105 (demi-temps), iris f241 (temps), tampon f301, pilules f316, cartes f362, titre f374, micro-événements f391/f421/f451, carte agrandie f481, coupes 193.6x f1080/f1081, 444.6x f1110/f1111, 0 f1140/f1141, tampon ~42¢ f1260, JEV final f1320. Hors grille : révélation du prix f1207 (+6 im), tampon DONE f999 (+8), trait diagonal f1286 (−4), fondu au noir f1175 (+4). Audio : impacts graves mesurés à 2,03 / 4,03 / 12,03 / 16,03 / 18,03 / 20,03 / 22,03 s, tous sur un changement de chapitre ; creux à −29 dBFS de 21,83 à 22,0 s juste avant l'impact final. L'indice automatique (R = 0,13-0,32) rate la synchro à cause du mouvement continu (frappe, flux, compteurs, barre de progression).",
+    "synced": [
+      "coupes",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte",
+      "drop"
+    ],
+    "style_match": "Électro rythmée et métronomique (probable), impacts graves aux chapitres : colle aux tampons secs, coupes nettes et au deck brutaliste ; énergie constante, peu de nuances.",
+    "how_built": "Le prompt demande « sound synced to the cuts ». La bande-son, d'une régularité de machine (pulsation 9,9), porte un impact grave sur chaque changement de chapitre, un « ping » sur l'apparition de « yes. » (1,77 s) et des creux avant les deux derniers impacts : probablement générée en code sur la timeline. La timeline elle-même est découpée en mesures de 2 s (chapitres sur les premiers temps, coupes de preuve sur chaque temps) ; les animations internes (frappe, flux, compteurs, paquets) restent libres."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Pitch en 7 chapitres dans une fausse présentation",
+      "name_en": "deck-framed chaptered pitch",
+      "t": "0:00-0:24.04",
+      "frames": "f0-f1439",
+      "fps": 60,
+      "mechanics": "Le film se présente comme un fichier « jev-engineering.deck » : 01 THE LEAK (0-4 s, le problème), 02 MEET JEV (4-6 s), 03 THREE ROLES (6-8 s), 04 TYPED ANSWERS (8-12 s), 05 THE CASCADE (12-16 s), 06 PROOF (16-20 s), 07 THE PRICE puis JEV ENGINEERING (20-24 s). Arc problème → produit → mécanisme → preuve → prix → slogan. Chaque chapitre commence sur un premier temps de mesure.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Chrome persistant de fenêtre avec barre de progression",
+      "name_en": "persistent deck chrome",
+      "t": "0:00-0:24.04",
+      "frames": "f0-f1439",
+      "fps": 60,
+      "mechanics": "Barre de fenêtre en haut (≈ 3,5 % de la hauteur, bord noir, ombre dure) : trois points, « jev-engineering.deck » en mono, « 0X / 07 » + nom du chapitre et bouton ⊠ à droite. Sous le titre, une barre rose avance linéairement avec le temps (22,9 % à 5,5 s, 54 % à 13 s, soit exactement la fraction écoulée). Étiquette « @polydao » en bas à droite. Le cadre bouge en permanence sans charger le centre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre qui monte en pivotant puis frappe rapide",
+      "name_en": "window drop-in + fast typing",
+      "t": "0:00-0:00.50",
+      "frames": "f0-f30",
+      "fps": 60,
+      "mechanics": "Image 0 déjà en mouvement : la fenêtre terminal monte d'≈ 35 % de la hauteur en 5 im (f0-f5) avec flou vertical, rotation +3° → −2° → 0° (léger dépassement en rotation), ease-out. Le prompt « > is this email fraud? answer yes or no » se tape à partir de f13 à ≈ 1 caractère par image (60 car./s), curseur bloc rose.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f4.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Le verbiage de l'IA comme problème, puis la chute",
+      "name_en": "verbose stream, one-word punchline",
+      "t": "0:00.50-0:02.00",
+      "frames": "f30-f120",
+      "fps": 60,
+      "mechanics": "La réponse du LLM coule en texte mono (≈ 1,6 % de la hauteur) pendant ≈ 1,2 s, compteur « OUTPUT » 0 → 25 → 113 → 152 TOKENS en haut à droite ; la conclusion « yes. » surgit dans une boîte rose à f105 (demi-temps) avec un ping sonore. La longueur du texte est le propos : on ne le lit pas, on en mesure le coût.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul qui multiplie, avec compteur",
+      "name_en": "multiplying pull-back",
+      "t": "0:02.07-0:02.60",
+      "frames": "f124-f156",
+      "fps": 60,
+      "mechanics": "La caméra recule (×≈ 4) de la fenêtre unique vers un mur de ≈ 40 fenêtres identiques, flou de zoom radial f133-f141 ; certaines fenêtres s'entourent de rose. Un compteur en boîte à ombre dure « × N DECISIONS » monte de ≈ 2 000 à 10,000 en 32 im (f124-f156), ease-out (pas de ≈ 400 puis de 5). Démarre 2 im après l'entrée de la grosse caisse (2,03 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f139.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Étiquettes balayées en deux temps",
+      "name_en": "label wipe-in",
+      "t": "0:02.37-0:02.75",
+      "frames": "f142-f165",
+      "fps": 60,
+      "mechanics": "Barre noire (≈ 6 % de la hauteur) balayée de gauche à droite en 6 im (f142-f147), puis le texte blanc « DECISIONS PAID FOR » monte dans la barre masquée en 5 im (f147-f152, posé sur le temps f151) ; deuxième barre rose balayée f154-f158 pour « AT A GENERATION PRICE ». Ombres dures sous chaque barre, décalage ≈ 12 im entre les deux.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f139.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans la boîte « yes. » jusqu'au plein cadre rose",
+      "name_en": "dive into the answer box",
+      "t": "0:03.55-0:04.00",
+      "frames": "f213-f240",
+      "fps": 60,
+      "mechanics": "Poussée accélérée (ease-in exponentiel) vers la boîte rose « yes. » : part claire du cadre 82 % (f233) → 70 % → 46 % → 7 % → 0 % (f237), flou de zoom radial et bord en relief sombre sur les dernières images. Plein cadre rose #EB1290 tenu 4 im (f237-f240) : le flash de couleur. Le mouvement part ≈ 2 im après un temps (f213) et finit sur le suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f248.jpg",
+      "illus": {
+        "from": 230,
+        "to": 257,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris en trame de points",
+      "name_en": "halftone iris reveal",
+      "t": "0:04.02-0:04.27",
+      "frames": "f241-f256",
+      "fps": 60,
+      "mechanics": "Sur le temps (f241), un petit amas de points apparaît au centre du rose ; le cercle s'ouvre avec un bord en trame (points qui rétrécissent vers l'extérieur) : rayon équivalent 3,5 % de la hauteur (f241) → 7 % (f242) → 15 % (f243) → 27 % (f246) → 45 % (f249) → 57 % (f251) → 65 % (f255), ease-out, 15 im = un demi-temps, fini sur le demi-temps f256. Le rose résiduel reste en taches tramées dans les coins, qui deviennent le décor du chapitre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f248.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres du nom en cascade avec décalage chromatique",
+      "name_en": "staggered letters with chromatic offset",
+      "t": "0:04.05-0:04.17",
+      "frames": "f243-f250",
+      "fps": 60,
+      "mechanics": "Dans l'iris, « J » apparaît f243, « E » f245, « V » tombe du haut f247-f249 (fantôme gris puis plein), décalage ≈ 2-3 im ; chaque lettre porte une ombre bleue décalée (séparation chromatique) qui se résorbe en ≈ 6 im. « JEV » final : 34 % de la hauteur, 43 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f248.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre décodé",
+      "name_en": "scramble decode",
+      "t": "0:04.38-0:04.45",
+      "frames": "f263-f266",
+      "fps": 60,
+      "mechanics": "« THE SYSTEM ONE MODEL FROM TYPESAFE AI » en mono capitales espacées (≈ 2,5 % de la hauteur) apparaît en caractères brouillés qui se fixent en ≈ 4 im ; tombe entre deux temps, hors grille.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f248.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tampon qui claque",
+      "name_en": "stamp slam",
+      "t": "0:04.98-0:05.15",
+      "frames": "f299-f309",
+      "fps": 60,
+      "mechanics": "Étiquette rose « BUILT TO DECIDE » (texte noir condensé, ombre dure noire) : f299 à ≈ 1,18× avec rotation ≈ −10° et flou de mouvement, f300 ≈ 1,12×, f301 1× net (temps), puis la rotation se résorbe de ≈ −8° à ≈ −2° en 8 im (f301-f309), ease-out, sans rebond. Un impact sonore tombe à 5,03 s. Les pilules « TYPED ANSWER », « CONFIDENCE », « 70-500 MS » surgissent ensuite à f314-f319 (demi-temps f316), décalées de ≈ 2 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f299.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le héros devient un composant du schéma",
+      "name_en": "hero-to-component match cut",
+      "t": "0:05.73-0:06.27",
+      "frames": "f344-f376",
+      "fps": 60,
+      "mechanics": "Sous-titre, tampon et pilules s'effacent en flou en ≈ 4 im (f346-f353) ; le grand « JEV » descend et rétrécit jusqu'à devenir le titre de la carte centrale (≈ 50 % → 10 % de la largeur, f354-f363) pendant que les cartes « LLM » (en-tête bleu) et « CODE » (en-tête noir) arrivent du bas à gauche et à droite avec flou. Atterrissage f362-f364 (temps f361) avec léger dépassement (≈ 5 %), stable f366. Puis le groupe descend d'≈ 12 % pendant que le titre « PUT EACH CALL WHERE IT BELONGS » tombe du haut (f371-f374).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f361.jpg",
+      "illus": {
+        "from": 346,
+        "to": 366,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Système de cartes-fenêtres à ombre dure",
+      "name_en": "hard-shadow card system",
+      "t": "0:06.00-0:18.00",
+      "frames": "f360-f1080",
+      "fps": 60,
+      "mechanics": "Toutes les données passent par la même carte : bord noir ≈ 3-4 px, en-tête plein coloré selon le rôle (bleu « WRITES », rose « DECIDES », noir « ACTS »), deux carrés à droite, ombre noire décalée ≈ 8-10 px en bas à droite, titre condensé géant (« LLM », « JEV », « CODE ») et lignes mono (« research · drafts · code »). Les éléments internes (flèches, légende colorée, barres billing 0.91 / support 0.06, ligne « route → billing ») s'allument sur les temps f391, f421, f451.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-005-move-f361.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mise au point sur une carte qui grossit en relief",
+      "name_en": "focus card transition",
+      "t": "0:07.78-0:08.28",
+      "frames": "f467-f497",
+      "fps": 60,
+      "mechanics": "Le contenu de la carte JEV s'efface (f467-f471), le titre sort par le haut, les cartes LLM et CODE filent à gauche et à droite avec flou (f473-f479), la carte vide se recentre (f481, temps) puis grandit avec un relief gris visible (extrusion 3D, f483) jusqu'à ≈ 55 % de la largeur ; son en-tête devient « CHOICE » (f485), le nouveau titre tombe (f489-f493) et le contenu apparaît (f491-f497). 30 im exactement, d'un demi-temps à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barres de probabilité qui se disputent",
+      "name_en": "racing probability bars",
+      "t": "0:08.25-0:09.45",
+      "frames": "f495-f567",
+      "fps": 60,
+      "mechanics": "Carte CHOICE « what does the sender want from us? » : cinq barres (customer, lead, vendor, fraud, other) oscillent autour de 0,2 avec valeurs mono qui changent à chaque image (f497-f513), puis « lead » s'étend en rose à 0.99 et passe en gras (≈ f539, temps f541) avant de redescendre à 0.89. Légende « USE WHEN named options: queues, workers, categories ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carrousel filé entre les cartes",
+      "name_en": "whip-pan carousel",
+      "t": "0:09.47-0:10.93",
+      "frames": "f568-f656",
+      "fps": 60,
+      "mechanics": "Les trois types de réponse sont des cartes côte à côte dont on voit le bord de la suivante (≈ 3 % à droite). CHOICE → SCORE : glissé horizontal f568-f587 (0,32 s), flou maximal f577 ; SCORE → NOUL : f647-f656 (0,15 s), flou directionnel très fort f648-f652, départ sur le demi-temps f646. Ease-in-out, arrêt net sans rebond.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f651.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Jauges à curseur",
+      "name_en": "score gauge and confidence needle",
+      "t": "0:10.00-0:11.75",
+      "frames": "f600-f705",
+      "fps": 60,
+      "mechanics": "SCORE : barre noire qui avance sur une échelle 0-3 jusqu'à 2.5, repère rose étiqueté « 2.5 » ; NOUL : échelle 0-1 en trois zones (likely no gris, can't tell gris clair, likely yes rose), l'aiguille glisse jusqu'à 0.93 (départ ≈ f691, sur le temps) puis étiquette rose « 0.93 » et légende « high means yes, and your code routes on it ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-006-move-f651.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carte qui se plie et devient un étage du schéma",
+      "name_en": "card-to-diagram continuity",
+      "t": "0:11.75-0:12.30",
+      "frames": "f705-f737",
+      "fps": 60,
+      "mechanics": "Le contenu de NOUL s'efface (f707-f709), la carte rétrécit avec un relief en biseau (f711-f719), pivote et file à droite (f721, temps) pour devenir l'étage « 02 · JEV » de la cascade ; les étages 03 LLM (bleu), 04 YOU (rose pâle) puis 01 CODE (noir) entrent avec flou (f723-f737). Le spectateur suit un même objet d'un chapitre à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre ligne à ligne puis surlignage rose",
+      "name_en": "line stagger + highlight wipe",
+      "t": "0:12.22-0:12.67",
+      "frames": "f733-f760",
+      "fps": 60,
+      "mechanics": "« THE CASCADE THAT / PAYS FOR THINKING / ONLY WHEN IT HAS TO » (≈ 6,8 % de la hauteur par ligne) : chaque ligne monte d'un masque avec léger flou, décalage ≈ 4 im (f735, f739, f743), la première posée sur le demi-temps f736 ; puis un bloc rose se balaie derrière « THINKING » de gauche à droite à partir du temps f751, en ≈ 5 im. Surtitre rose mono espacé « JEV ENGINEERING · THE CASCADE ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Paquets de décisions qui tombent dans la cascade",
+      "name_en": "decision packets",
+      "t": "0:12.60-0:16.00",
+      "frames": "f756-f960",
+      "fps": 60,
+      "mechanics": "De petits carrés (≈ 1 % de la hauteur) noirs, roses ou bleus tombent du haut, traversent les étages et s'arrêtent au premier qui est sûr ; chaque étage accumule une rangée de carrés comme compteur. Légendes aux flèches (« not an exact rule », « confidence under your threshold », « only what cannot be undone ») et coûts par étage (« free · instant », « $0.042/M · 70-500ms », « $0.20-$10 / M in », « a few a day »). Sortie : les paquets s'envolent vers la gauche en arc (f930-f951) et les étages filent à droite.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Entrée glitchée de la carte d'état",
+      "name_en": "glitch-in card",
+      "t": "0:15.75-0:16.05",
+      "frames": "f945-f963",
+      "fps": 60,
+      "mechanics": "La carte « STATE · one customer, as plain text » apparaît petite à gauche, déformée en tranches horizontales et biaisée, grandit et se redresse avec un léger relief 3D (f957-f960), posée juste avant l'impact grave de 16,03 s ; le titre « SAME STATE, SAME QUESTIONS » arrive à f963.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Course chronométrée côte à côte",
+      "name_en": "side-by-side race timers",
+      "t": "0:16.10-0:18.00",
+      "frames": "f966-f1080",
+      "fps": 60,
+      "mechanics": "Deux barres : JEV (en-tête rose, « TYPED DECISIONS ») et FRONTIER LLM (en-tête bleu, « SHOWN SPED UP » puis « STREAMING TEXT »). Les chronos partent de 0.000 s (f975) ; JEV s'arrête à 0.114 s / $0.000081 vers f990 (temps f991), tampon « DONE » incliné vers f999, puces « choice ✓ score ✓ noul ✓ » ; le LLM continue jusqu'à 8.566 s / $0.013880 vers 17,5 s, sa barre bleue avançant lentement. Chiffres géants (≈ 7 % de la hauteur) en rose et bleu. Légende mono « TypeSafe's recorded demo against GPT-5.6 Terra ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Chiffres de preuve, un par temps, en double exposition",
+      "name_en": "beat-cut stat cards",
+      "t": "0:18.00-0:19.58",
+      "frames": "f1080-f1175",
+      "fps": 60,
+      "mechanics": "Trois cartes de 30 im chacune, coupées sur les temps : « 193.6x FASTER » rose sur noir #131313 (f1081), « 444.6x CHEAPER » noir sur rose (f1111), « 0 TYPE ERRORS » noir à ombre rose sur crème (f1141). Entre deux, une seule image de double exposition : le chiffre entrant en fantôme sur la carte sortante (f1080 voile gris, f1110 rose sombre, f1140 rose pâle). Chiffre ≈ 15-20 % de la hauteur ; le mot dessous monte d'un masque 3-5 im après la coupe ; surtitre rose mono.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1080.jpg, microM-008-cut-f1141.jpg",
+      "illus": {
+        "from": 1078,
+        "to": 1146,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir puis révélation en escalier",
+      "name_en": "dip to black + staircase wipe",
+      "t": "0:19.58-0:20.32",
+      "frames": "f1175-f1219",
+      "fps": 60,
+      "mechanics": "Fondu au noir en 14 im (f1175-f1189), ease-in-out, noir #191818 tenu 16 im (0,27 s) sous une musique allégée ; puis le crème est révélé par un bord en escalier (blocs noirs qui reculent du haut gauche vers le bas droit, liserés roses) en ≈ 12 im (f1207-f1219). La révélation part 6 im après l'impact grave de 20,03 s : léger retard.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f1216.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Prix en machine à sous",
+      "name_en": "slot-machine price roll",
+      "t": "0:20.15-0:20.60",
+      "frames": "f1209-f1236",
+      "fps": 60,
+      "mechanics": "Le prix géant (≈ 15 % de la hauteur) défile vers le bas de « $1.xxx » à « $0.042 » : chiffres flous verticalement qui se verrouillent de gauche à droite (« $0. » f1222, « 4 » f1229, « 2 » f1234), « / M » rose posé à f1216 (demi-temps). La ligne mono « per million input tokens · no output-token charge » se tape en même temps. Puis « 10,000 DECISIONS = ~42¢ » avec tampon rose incliné posé sur le temps f1260.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f1216.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coup de taille diagonal",
+      "name_en": "diagonal slash wipe",
+      "t": "0:21.43-0:21.70",
+      "frames": "f1286-f1302",
+      "fps": 60,
+      "mechanics": "Un trait noir fin traverse le cadre en diagonale (≈ −8°) à f1286, s'épaissit en bande rose (f1294-f1298), puis la bande s'élargit d'un coup et couvre le cadre en 3 im (f1299-f1302) pendant que le contenu est poussé avec flou vertical. Plein rose à f1302, pendant le creux sonore qui précède l'impact final. Départ 4 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1300.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Chute du logo avec écrasement et ressort",
+      "name_en": "drop with squash and spring",
+      "t": "0:21.88-0:22.20",
+      "frames": "f1313-f1332",
+      "fps": 60,
+      "mechanics": "L'étiquette noire « ENGINEERING » monte d'un masque (f1303-f1306, demi-temps). Puis « JEV » tombe du haut en ease-in (gravité) : bord bas 9 % → 42 % de la hauteur en 6 im (pas de 4,8 à 6,3 %), impact f1320-f1321 sur l'impact sonore de 22,03 s ; écrasement : le haut des lettres descend d'≈ 4,7 % de la hauteur (≈ 17 % de la hauteur du mot), rebond en étirement ≈ 1,6 % au-dessus du repos (f1323), puis ressort amorti sur ≈ 12 im (oscillation d'≈ 8 im). Traînée d'écho grise à l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1300.jpg",
+      "illus": {
+        "from": 1312,
+        "to": 1330,
+        "n": 8
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Impacts graves sur les premiers temps de chapitre",
+      "name_en": "downbeat chapter hits",
+      "t": "0:02.03-0:22.03",
+      "frames": "f122-f1322",
+      "fps": 60,
+      "mechanics": "Le niveau de croisière est ≈ −16 dBFS ; des impacts montent à −7/−9 dBFS à 2,03 (la musique démarre, recul), 4,03 (iris JEV), 12,03 (cascade), 16,03 (preuve), 18,03 (193.6x), 20,03 (prix) et 22,03 s (JEV final). Tous tombent sur un premier temps de mesure (mesures de 2 s à 120 BPM) et sur un changement de chapitre. Creux à −28/−29 dBFS de 21,83 à 22,0 s, musique allégée de 19,5 à 20,0 s : respiration avant les deux derniers impacts. Un « ping » marque « yes. » à 1,77 s.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes de preuve sur chaque temps, 1 image avant la barre",
+      "name_en": "one cut per beat",
+      "t": "0:18.00-0:19.02",
+      "frames": "f1080-f1141",
+      "fps": 60,
+      "mechanics": "Dans la section preuve, la coupe tombe à chaque temps : f1080/f1081, f1110/f1111, f1140/f1141 ; l'image de double exposition précède la barre d'1 im et la nouvelle carte est nette sur la barre. Ailleurs, gestes clés à ±2 im : iris f241, tampon f301, cartes f362, JEV f1320 ; 28 gestes sur 40 au total.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1080.jpg, microM-008-cut-f1141.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Papier crème à taches tramées",
+      "name_en": "halftone blob background",
+      "t": "0:00-0:24.04",
+      "frames": "f0-f1439",
+      "fps": 60,
+      "mechanics": "Fond crème #F4F0EB avec grain fin ; 3 à 5 grandes taches en trame de points (rose #EB1290, parfois bleu #2451EC en coin), points de ≈ 0,5 % de la hauteur, diamètre des taches 20-40 % du cadre ; elles dérivent lentement et se recomposent à chaque chapitre ; sur les cartes sombres et roses elles restent en ton sur ton. Alternative imprimée au dégradé fluide, cohérente avec la trame de l'iris.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Condensée grasse et mono, étiquettes en boîte",
+      "name_en": "condensed black + mono labels",
+      "t": "0:00-0:24.04",
+      "frames": "f0-f1439",
+      "fps": 60,
+      "mechanics": "Titres en linéale condensée très grasse, capitales, interlettrage serré (6-7 % de la hauteur par ligne, héros 34 %) ; tout le reste en mono : surtitres roses en capitales espacées (≈ +40 %), légendes et contenus de cartes à 1,6-2,2 % de la hauteur. Les mots-clés vont dans des boîtes (noir sur rose, blanc sur noir) avec ombre dure, inclinées de −2 à −5° quand elles sont des tampons.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt publié est un gabarit ([24], [TOPIC], [BRAND COLORS]) : les vraies entrées ne sont pas visibles. Les chiffres précis (193.6x, 444.6x, $0.042 / M, 70-500 ms, démo contre « GPT-5.6 Terra ») viennent probablement d'un document produit fourni par l'utilisateur."
+    },
+    {
+      "kind": "direction",
+      "insight": "« like it's your showreel for a resume. Go all out » pousse la variété : ≈ 15 transitions différentes en 24 s (plongée, iris tramé, morph, carrousel, pliage, glitch, double exposition, escalier, coup de taille, squash). Virtuose, mais le film devient aussi une démonstration de techniques."
+    },
+    {
+      "kind": "build",
+      "insight": "« sound synced to the cuts » a produit une bande-son à impacts placés sur les changements de chapitre, eux-mêmes posés sur les premiers temps de mesure. La consigne ne visait que les coupes : les animations internes (frappe, flux, compteurs) sont restées libres."
+    },
+    {
+      "kind": "structure",
+      "insight": "« Only about [TOPIC] » a conduit Claude à un récit de pitch (problème → produit → mécanisme → preuve → prix → slogan) et à un cadre méta « jev-engineering.deck » qui justifie chapitres numérotés et barre de progression."
+    },
+    {
+      "kind": "other",
+      "insight": "Aucune contrainte de densité : paragraphes mono à 1,6-2 % de la hauteur, légendes partout. Pour un format de 24 s, il aurait fallu imposer un plafond de mots par plan et une taille minimale de texte."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Style: [BRAND COLORS] » réduit à une palette : Claude a inventé tout le reste du système (papier tramé, ombres dures, cartes-fenêtres) et lui a donné des rôles de couleur constants (rose = JEV, bleu = LLM, noir = code)."
+    }
+  ],
+  "steal": [
+    "Plonger dans la boîte de réponse jusqu'au plein cadre coloré (4 im, ease-in), tenir 4 im, puis ouvrir un iris tramé (15 im, ease-out) sur le nom.",
+    "Le héros devient un composant : le grand mot rétrécit dans l'en-tête de la carte centrale pendant que les deux autres cartes arrivent, atterrissage sur le temps.",
+    "Chapitres sur le premier temps de chaque mesure, avec un impact grave, et un creux de 0,2 s juste avant les impacts les plus importants.",
+    "Preuve en trois chiffres de 0,5 s, une coupe par temps, fonds alternés sombre/rose/crème, une seule image de double exposition entre chaque.",
+    "Logo final : chute en ease-in de 6 im, écrasement ≈ 17 % de la hauteur du mot, rebond puis ressort amorti sur ≈ 12 im, calé sur l'impact."
+  ],
+  "flaws": [
+    "Trop de texte pour 24 s : paragraphes mono à 1,6-2 % de la hauteur, légendes de cascade, coûts ; impossible à tout lire.",
+    "Une quinzaine de transitions différentes : virtuose mais démonstratif, le film perd un fil visuel unique.",
+    "Quelques gestes hors grille : révélation du prix 6 im après l'impact, tampon DONE 8 im après le temps.",
+    "Le gabarit « showreel » a produit un pitch dense en lecture, pas une pièce visuelle légère."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : 60 fps natif et une collection rare de transitions enchaînées et motivées (plongée → flash rose → iris tramé, héros devenu composant, chiffres sur les temps, chute avec squash) à décomposer image par image."
+  }
+}

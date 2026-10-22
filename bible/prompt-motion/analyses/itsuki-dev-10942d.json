@@ -1,0 +1,645 @@
+{
+  "slug": "itsuki-dev-10942d",
+  "title": "Kinetic type showreel",
+  "handle": "@itsuki_dev",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Système complet (6 couleurs, 3 familles de caractères, HUD) et 24 gestes clés sur 28 calés au temps à ±2 im ; pas de fil narratif, et la grille et le tunnel restent génériques.",
+  "summary": "Bande-démo de 15 s en 8 sections d'une mesure à 128 BPM : titre CLAUDE ouvert par une fente, quatre mots cinétiques un par temps, morphing élastique, grille Bauhaus, 6 000 particules qui forment 2026 puis explosent, tunnel, harmonographe, carte de fin. Chaque coupe tombe à une image du temps. Forte par la précision rythmique et la cohérence graphique ; faible par son côté catalogue sans récit.",
+  "prompt_vs_result": [
+    "Le prompt imposait seulement 15 s, une vidéo « dynamique » de motion graphics façon bande-démo de CV, et « go all out ». Aucun sujet, aucune palette, aucune musique.",
+    "Claude a tout décidé : sujet CLAUDE, 8 sections nommées dans un HUD, palette orange-bleu-lavande-jaune, trois polices, musique électro 128 BPM, grille 15 s = 32 temps, annotations techniques et liste finale de savoir-faire.",
+    "« Showreel » a bien cadré l'intention : le modèle a montré un menu de techniques. Rien n'imposait de fil conducteur : il aurait fallu un concept unique, un sujet réel et une durée par section."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0C0A14",
+        "role": "encre : fond sombre des sections OPEN, SHAPE MORPH, END CARD et texte noir"
+      },
+      {
+        "hex": "#FF4C20",
+        "role": "accent signature orange-rouge : fond du titre, fond de TIME, formes du morphing, point final, sous-titre de fin"
+      },
+      {
+        "hex": "#2C34FF",
+        "role": "bleu électrique : fond de SHAPE, quarts de cercle de la grille, soulignement"
+      },
+      {
+        "hex": "#FFD33C",
+        "role": "jaune : mot RHYTHM, fond de la section GENERATIVE, points de la grille"
+      },
+      {
+        "hex": "#C4B5FF",
+        "role": "lavande : fond de FEEL., satellites, liste de fin"
+      },
+      {
+        "hex": "#F1EDF8",
+        "role": "blanc cassé : mots clairs, fond de la grille Bauhaus"
+      },
+      {
+        "hex": "#10123A",
+        "role": "bleu nuit : tunnel DEPTH et fond des particules (centre #151143)"
+      },
+      {
+        "hex": "#943231",
+        "role": "rouge sourd : halo central de l'explosion de particules"
+      }
+    ],
+    "type": "Grotesque ultra-étendue Black en capitales (CLAUDE 18 % H, mots 25 % H), serif italique éditoriale en bas-de-casse (sous-titres 6 à 11 % H), mono capitales pour le HUD (1,6 % H, interlettrage large).",
+    "texture": "Grain léger sur les fonds sombres ; flou de mouvement directionnel (traînée de 3-4 échos) et franges chromatiques rouge/bleu sur les entrées de mots ; flou de mouvement sur les quarts de cercle qui tournent ; liseré orangé lumineux au bord de l'iris ; particules en traînées lors de l'explosion ; contour rouge doublé (écho) dans le tunnel ; aucune ombre portée.",
+    "style": "Reel graphique néo-suisse, HUD technique",
+    "coherence": "Le système tient par 6 jetons de couleur recombinés dans chaque section, trois familles de caractères (grotesque étendue, serif italique, mono), un HUD constant (coins de cadrage, timecode, compteur 0X/08, « 128 BPM » et ses 4 carrés) dont la couleur s'adapte au fond, et la grille musicale qui découpe tout. Il se relâche dans le tunnel DEPTH (bleu nuit et lignes blanches, moins typographique) et dans la grille Bauhaus, motif emprunté plutôt qu'inventé."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 128 BPM (netteté 7,58), un temps = 0,469 s = 28,1 im à 60 fps. La vidéo dure exactement 32 temps (15,0 s) = 8 mesures, et le HUD numérote 8 sections (01/08 OPEN à 08/08 END CARD) : chaque section commence sur un premier temps de mesure (1,88 s SHAPE, 3,77 s iris, 5,63 s cascade de tuiles, 9,38 s flash DEPTH, 13,13 s fin du volet en escalier), sauf PARTICLES qui démarre sur un demi-temps (7,70 s). À l'intérieur des sections, un événement par temps : 4 mots (f113, f141, f169, f197), 4 morphings (f226-240, f254, f282, f310), 4 réassignations de la grille (f366, f394, f422, f450). Les coupes franches mesurées tombent à -0,2 à -1,4 im de la barre bleue (l'image précède la barre de 8 à 25 ms, cohérent avec une grille de composition exacte à k × 0,46875 s depuis t = 0). Densité : quelque chose change au moins tous les 14 im (demi-temps) pendant 11 s. Deux maintiens : 11,55-12,75 s, section GENERATIVE quasi immobile (énergie 0,2-0,4, seul le point-stylo rouge bouge) pendant le pont musical sans grosse caisse ; 13,52-14,50 s, carte de fin avec seulement le point qui apparaît et la liste en fondu. Fondu au noir sur le temps de 14,53 s puis 0,45 s de noir.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.38",
+        "what": "noir, point blanc au centre (≈ 0,8 % H)",
+        "technique": "ouverture minimale"
+      },
+      {
+        "t": "0:00.38-0:01.00",
+        "what": "onde circulaire qui naît du point (f23), ligne rouge tracée du centre vers les bords (f29-f41), deux anneaux qui s'élargissent et s'effacent",
+        "technique": "point → onde → ligne"
+      },
+      {
+        "t": "0:01.00-0:01.15",
+        "what": "la ligne s'épaissit en bande et ouvre tout le cadre en orange (f61-f69)",
+        "technique": "fente (slit open)"
+      },
+      {
+        "t": "0:01.08-0:01.88",
+        "what": "CLAUDE monte lettre par lettre, sous-titre serif « a motion design reel » puis soulignement bleu tracé",
+        "technique": "montée derrière masque + soulignement tracé"
+      },
+      {
+        "t": "0:01.88-0:03.75",
+        "what": "SHAPE, TIME, RHYTHM, FEEL. : un mot par temps, le fond change de couleur à chaque mot, flash d'inversion sur SHAPE",
+        "technique": "mot qui claque + sortie en tranches"
+      },
+      {
+        "t": "0:03.75-0:04.00",
+        "what": "un anneau rouge sur la ligne devient point, le point grossit en iris qui révèle la scène de morphing",
+        "technique": "iris né d'un point"
+      },
+      {
+        "t": "0:04.00-0:05.62",
+        "what": "carré → triangle → étoile → hexagone, un morph élastique par temps, cadran gradué, satellites, courbe d'easing en direct",
+        "technique": "morphing élastique d'un temps"
+      },
+      {
+        "t": "0:05.62-0:05.97",
+        "what": "l'hexagone se découpe en tuiles qui envahissent l'écran depuis le centre",
+        "technique": "cascade radiale de tuiles"
+      },
+      {
+        "t": "0:05.97-0:07.65",
+        "what": "grille 16 × 9 de quarts de cercle qui tournent, couleurs réassignées sur chaque temps",
+        "technique": "grille Bauhaus pulsée"
+      },
+      {
+        "t": "0:07.65-0:07.75",
+        "what": "bande dorée diagonale qui balaie le cadre",
+        "technique": "balayage de lumière"
+      },
+      {
+        "t": "0:07.75-0:08.88",
+        "what": "6 000 particules convergent en « 2026 », légende mono, maintien",
+        "technique": "particules → chiffres"
+      },
+      {
+        "t": "0:08.90-0:09.37",
+        "what": "explosion radiale en traînées, fond rouge qui retombe vers le bleu nuit",
+        "technique": "explosion sur le temps"
+      },
+      {
+        "t": "0:09.38-0:09.43",
+        "what": "image surexposée crème puis voile gris, arrivée du tunnel",
+        "technique": "flash surexposé"
+      },
+      {
+        "t": "0:09.43-0:11.33",
+        "what": "tunnel de ≈ 30 carrés en spirale, lignes de vitesse, poussée et rotation continues",
+        "technique": "vortex de carrés"
+      },
+      {
+        "t": "0:11.33-0:11.55",
+        "what": "blocs jaunes rectangulaires qui envahissent le cadre par rangées",
+        "technique": "volet en blocs de glitch"
+      },
+      {
+        "t": "0:11.55-0:12.77",
+        "what": "« every curve, by hand. » en serif italique, harmonographe parcouru par un point rouge",
+        "technique": "respiration sur le pont musical"
+      },
+      {
+        "t": "0:12.77-0:13.13",
+        "what": "colonnes orange, bleues, lavande puis noires montent en escalier",
+        "technique": "volet en escalier multicolore"
+      },
+      {
+        "t": "0:13.10-0:13.50",
+        "what": "CLAUDE monte lettre par lettre, « motion designer » en serif orange",
+        "technique": "montée derrière masque"
+      },
+      {
+        "t": "0:13.55-0:14.13",
+        "what": "point orange après CLAUDE, liste des 6 savoir-faire en fondu décalé",
+        "technique": "carte de fin + récapitulatif"
+      },
+      {
+        "t": "0:14.53-0:15.06",
+        "what": "fondu au noir lancé sur le temps, noir final",
+        "technique": "sortie sur le temps"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage à l'œil sur les planches microscope et extra (un événement clé par geste) : 24 gestes sur 28 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 36 % à 128 BPM). Les 17 événements durs sont presque tous à ±1 im : coupes SHAPE f113 (-0,5 im), TIME f141 (-0,7), RHYTHM f169 (-0,8), FEEL. f197 (-0,9) ; arrivée du point f226 (0,0) ; iris complet f240 sur le demi-temps (-0,1) ; morphings f254 (-0,2), f282 (-0,3), f310 (-0,4) ; départ de la cascade f338 (-0,5) ; réassignations de grille f366, f394, f422, f450 (-0,7 à -1,0) ; explosion f534 (-1,4) ; flash f563 (-0,5) ; fin du volet en escalier f788 (-0,5) ; atterrissage des lettres f803 (+0,4) ; fondu f872 (-0,9). Ratés : onde initiale (f23, -6 im), fente pleine à f69 (-2,3 im, mais son départ f60-61 coïncide avec le boum grave à 1,0 s), fondu du sous-titre (f80), balayage doré f462 (-3,1 im). Indice automatique : départs/temps R = 0,57, p = 4e-5 ; 9 coupes sur 15 à 50 ms d'un temps. Spectrogramme : carillon sinusoïdal 0-0,5 s pendant le point et l'onde, entrée de la grosse caisse à 1,88 s pile sur la coupe SHAPE, riser de bruit 7,9-8,85 s qui aboutit à l'explosion, pont sans grosse caisse 11,3-12,7 s pendant la section calme, riser 12,2-12,85 s avant le volet de fin, carillon final avec le fondu.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "flashs",
+      "texte",
+      "couleur",
+      "drop"
+    ],
+    "style_match": "Électro synthétique 128 BPM (kick 4/4, risers, carillons) ↔ courbes expo sèches, élastiques d'un temps, coupes nettes ; le pont sans kick reçoit la seule section calme.",
+    "how_built": "Le prompt ne parle pas de musique. Claude a fixé 128 BPM (écrit dans le HUD, avec un compteur de 4 carrés qui avance à chaque temps) et placé chaque événement à k × 60/128 s depuis t = 0 ; la piste démarre sur un temps (attaque à 0,058 s) et sa forme (carillon, entrée du kick au temps 4, riser → explosion, pont, riser → carte de fin, carillon final) épouse les sections. Bande-son très probablement générée en code sur la même grille que l'image, avec des whooshes placés avant plusieurs transitions (probable)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Une section par mesure",
+      "name_en": "Bar-locked sections",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "15 s = 32 temps à 128 BPM = 8 mesures de 4 temps (1,875 s). Le HUD numérote 8 sections : 01 OPEN, 02 KINETIC TYPE, 03 SHAPE MORPH, 04 GRID SYSTEM, 05 PARTICLES, 06 DEPTH, 07 GENERATIVE, 08 END CARD. Chaque section démarre sur le premier temps d'une mesure (f113, f226, f338, f563, f676, f788) sauf PARTICLES (demi-temps f462-465). Une barre de progression sous le compteur avance d'une section à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de composition = grille musicale",
+      "name_en": "Shared beat grid",
+      "t": "0:01.88-0:14.55",
+      "frames": "f113-f872",
+      "fps": 60,
+      "mechanics": "Tous les événements durs sont placés à k × 28,125 im (60/128 s) depuis t = 0 : f112,5 → coupe f113, f140,6 → f141, f168,75 → f169, f196,9 → f197, f253,1 → morph f254, f281,25 → f282, f309,4 → f310, f337,5 → f338, f365,6 → f366, f393,75 → f394, f421,9 → f422, f450 → f450, f534,4 → explosion f534, f562,5 → flash f563, f787,5 → fin de volet f788, f871,9 → fondu f872. Écart à la barre bleue mesurée : -0,2 à -1,4 im, toujours du même côté (l'image précède très légèrement le son).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg, microM-002-cut-f197.jpg, microM-003-move-f241.jpg, microM-004-cut-f563.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Anticipation avant le temps, impact sur le temps",
+      "name_en": "Pre-beat exit, on-beat hit",
+      "t": "0:02.23-0:03.30",
+      "frames": "f134-f198",
+      "fps": 60,
+      "mechanics": "Chaque mot sort pendant les 7 à 8 im qui précèdent le temps (SHAPE f134-f140, RHYTHM f189-f196) et le mot suivant arrive à son échelle maximale sur l'image du temps (f141, f197, barre bleue à +1 im). L'œil reçoit l'impact exactement avec la grosse caisse ; la sortie sert d'élan.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg, microM-002-cut-f197.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son construite sur les sections",
+      "name_en": "Structure-matched sound design",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Carillon sinusoïdal (1,4-5,8 kHz) pendant le point et l'onde (0-0,5 s) ; boum grave à 1,0 s au départ de la fente ; grosse caisse 4/4 qui entre à 1,88 s sur la coupe SHAPE ; riser de bruit 7,9-8,85 s pendant la convergence des particules qui aboutit à l'explosion f534 ; pont sans grosse caisse 11,3-12,7 s sur la seule section calme ; riser 12,2-12,85 s avant le volet de fin ; carillon final avec le fondu au noir.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Compteur de temps dans le HUD",
+      "name_en": "On-screen beat counter",
+      "t": "0:01.00-0:14.98",
+      "frames": "f60-f899",
+      "fps": 60,
+      "mechanics": "En bas à droite, « 128 BPM » suivi de 4 carrés de 1,3 % H ; un carré se remplit par temps, le premier sur les premiers temps de mesure (f113 SHAPE, f226 iris, f563 flash…). Le spectateur voit littéralement la mesure défiler.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point → onde → ligne",
+      "name_en": "Dot, ripple, line draw",
+      "t": "0:00.35-0:01.00",
+      "frames": "f21-f60",
+      "fps": 60,
+      "mechanics": "Point blanc central (≈ 0,8 % H). f23-f27 : onde circulaire qui naît du point (diamètre 4 → 20 % H, doublée à f27). f29-f41 : ligne rouge #FE451D de 2 px tracée du centre vers les deux bords, 30 % → 100 % de la largeur en 12 im, ease-out (grands pas puis petits). Deux anneaux (40 et 55 % H) s'élargissent lentement puis s'effacent d'ici f59. Départ de la ligne sur le premier temps (f29, -0,2 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fente : la ligne ouvre le cadre",
+      "name_en": "Line-to-frame slit open",
+      "t": "0:01.00-0:01.15",
+      "frames": "f60-f69",
+      "fps": 60,
+      "mechanics": "La ligne rouge s'épaissit (f61-f63, 2 % H), devient une bande orange de 12 % H (f65), 75 % H (f67), puis plein cadre #FF4C20 (f69) : 8 im, ease-in-out (vitesse maximale f66-f67). Les lettres du titre montent déjà dans la bande. Départ sur le boum grave à 1,0 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 59,
+        "to": 79,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent derrière un masque, décalées",
+      "name_en": "Staggered mask rise",
+      "t": "0:01.08-0:01.32",
+      "frames": "f65-f79",
+      "fps": 60,
+      "mechanics": "CLAUDE : chaque lettre monte depuis une ligne de masque horizontale, ≈ 8-10 im par lettre, ease-out, décalage ≈ 2 im entre lettres (C à f65, E posé à f79). Réutilisé sur la carte de fin f786-f803 (C visible f786, E posé ≈ f801, atterrissage sur le demi-temps).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-006-move-f781.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre serif et soulignement tracé",
+      "name_en": "Serif subtitle with drawn underline",
+      "t": "0:01.32-0:01.52",
+      "frames": "f79-f91",
+      "fps": 60,
+      "mechanics": "« a motion design reel » en serif italique noir (≈ 6 % H) apparaît en fondu f79-f85 sous le titre ; soulignement bleu #3537F7 de 4 px tracé de gauche à droite f85-f91 (6 im, 27 % de la largeur), départ sur le temps (f85, -0,4 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'inversion sur le premier temps fort",
+      "name_en": "Negative flash cut",
+      "t": "0:01.88-0:01.92",
+      "frames": "f113-f115",
+      "fps": 60,
+      "mechanics": "Coupe titre → SHAPE : f113 image aux couleurs inversées (fond olive, lettres sombres, HUD violet), f114 voile gris désaturé, f115 couleurs normales. 2 im de flash, uniquement sur la coupe où la grosse caisse entre ; les coupes suivantes n'en ont pas, ce qui garde l'effet rare.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui claque : échelle 1,7 → 1, skew et flou",
+      "name_en": "Scale slam-in with skew and echo blur",
+      "t": "0:02.35-0:02.58",
+      "frames": "f141-f155",
+      "fps": 60,
+      "mechanics": "Le HUD écrit lui-même « scale 1.70 → 1.00 · outExpo · 14f ». Mesuré sur TIME : f141 le mot déborde du cadre (≈ 120 % W), incliné d'environ 12-15°, traînée horizontale de 3-4 échos ; f142-f146 l'échelle chute vite (grands pas), l'inclinaison est nulle vers f147 ; posé vers f150-f155 (9-14 im, ease-out expo). FEEL. et SHAPE ajoutent une frange chromatique rouge/rose d'environ 1 % W qui disparaît en 8 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg, microM-002-cut-f197.jpg",
+      "illus": {
+        "from": 133,
+        "to": 152,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sortie en tranches : scanline puis écrasement",
+      "name_en": "Scanline slice-and-collapse exit",
+      "t": "0:02.17-0:02.33",
+      "frames": "f130-f140",
+      "fps": 60,
+      "mechanics": "Une fine ligne horizontale (rouge sur SHAPE, bleue sur RHYTHM) traverse le mot à mi-hauteur (f130-f134) ; le mot se coupe en 2-3 bandes qui glissent en sens opposés (±5 à 20 % W), puis s'écrase verticalement en une bande de 2-3 % H (f138-f140). 7 im, accélération continue jusqu'à la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg, microM-002-cut-f197.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot géant sur fond de mots en contour",
+      "name_en": "Hero word over outline-text pattern",
+      "t": "0:01.88-0:03.75",
+      "frames": "f113-f225",
+      "fps": 60,
+      "mechanics": "Mot en grotesque ultra-étendue Black, hauteur de capitale 25 % H, largeur 81 % W, centré. Derrière, 6 rangées du même mot en contour 2 px (« SHAPE / SHAPE / »), décalées en quinconce, teinte voisine du fond à faible contraste ; défilement horizontal lent probable (énergie résiduelle 1,5-2 pendant les maintiens). Petit index mono « [01] » à « [04] » au-dessus à gauche du mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur de fond par temps",
+      "name_en": "Color change per beat",
+      "t": "0:01.15-0:03.75",
+      "frames": "f69-f225",
+      "fps": 60,
+      "mechanics": "Fond orange (titre) → bleu #2C34FF (SHAPE, texte blanc) → orange #FF4C20 (TIME, texte encre) → encre #0C0A14 (RHYTHM, texte jaune #FFD33C) → lavande #C4B5FF (FEEL., texte encre) : un couple fond/texte par temps, tous tirés de la même palette de 6 jetons.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bande-démo",
+      "name_en": "Reel HUD overlay",
+      "t": "0:01.00-0:14.98",
+      "frames": "f60-f899",
+      "fps": 60,
+      "mechanics": "Coins de cadrage en L à 2,5 % des bords ; en haut à gauche « CLAUDE   MOTION REEL 2026 », en haut à droite timecode « TC 00:00:02:00 » qui défile ; en bas à gauche « 02/08  KINETIC TYPE » sur une barre de progression ; en bas à droite « 128 BPM » et ses 4 carrés. Mono capitales ≈ 1,6 % H. La couleur du HUD change avec le fond (bleu sur orange, jaune sur bleu, blanc sur encre, bleu sur jaune).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Annotations techniques visibles",
+      "name_en": "On-screen making-of annotations",
+      "t": "0:01.88-0:12.77",
+      "frames": "f113-f766",
+      "fps": 60,
+      "mechanics": "Notes en mono à faible taille (1,5 % H) qui exposent les réglages : « scale 1.70 → 1.00 · outExpo · 14f », liste « K1 circle → square » à « K4 star → hexagon » (clé active en orange), « outElastic(t) · 0.48s », « 6,000 particles · converge → hold → burst », « f1 3.004 : f2 2.002 · damping 0.012 ». Elles disent au spectateur ce qu'il regarde.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris né d'un point",
+      "name_en": "Dot-to-iris reveal",
+      "t": "0:03.77-0:04.00",
+      "frames": "f226-f240",
+      "fps": 60,
+      "mechanics": "Sur le premier temps (f226) le mot a disparu : fond lavande, ligne rouge et petit anneau rouge (3 % H) au centre. L'anneau se remplit en point (f230), le point grossit (6 % H f234, 10 % f235, 16 % f236) puis devient un iris qui s'ouvre de 45 % H (f237) à 100 % H (f238) et dépasse les coins à f240 : ≈ ×10 en 4 im, ease-in. Le bord de l'iris porte un liseré orangé lumineux. Le carré de la scène suivante est déjà dans l'iris (clé K1 cercle → carré). Fin sur le demi-temps (f240, -0,1 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f241.jpg",
+      "illus": {
+        "from": 228,
+        "to": 241,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morphing élastique, une forme par temps",
+      "name_en": "Elastic shape morph on the beat",
+      "t": "0:03.93-0:05.62",
+      "frames": "f236-f337",
+      "fps": 60,
+      "mechanics": "Forme pleine orange #FF4C20 (≈ 45 % H) au centre : cercle → carré (pendant l'iris), carré → triangle (f254), triangle → étoile (f282), étoile → hexagone (f310), chaque départ sur un temps (-0,2 à -0,4 im). Courbe outElastic de 0,48 s (29 im ≈ 1 temps) : le carré oscille en rotation de ±5° f240-f253 avant de se poser. Contours fantômes (onion skin) bleu, jaune et blanc qui traînent derrière la forme pendant le morph.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f241.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe d'easing en direct",
+      "name_en": "Live easing graph",
+      "t": "0:03.93-0:05.62",
+      "frames": "f236-f337",
+      "fps": 60,
+      "mechanics": "À droite (cadre de 17 % W × 19 % H) : courbe outElastic tracée en lavande avec dépassement affiché d'environ 35-40 % au-dessus de la ligne pointillée 1,0, un point rouge qui parcourt la courbe au rythme du morph, lecture « v = 1.028 » au-dessus, légende « outElastic(t) · 0.48s ».",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadran gradué et satellites",
+      "name_en": "Ticked dial with orbiting satellites",
+      "t": "0:04.00-0:05.62",
+      "frames": "f240-f337",
+      "fps": 60,
+      "mechanics": "Cercle fin gris de 82 % H avec graduations (type rapporteur) autour de la forme ; trois points (bleu #2C34FF, lavande, jaune) de 1,8 % H tournent sur l'orbite ; réticule en croix très léger.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Cascade radiale de tuiles",
+      "name_en": "Radial tile flood",
+      "t": "0:05.63-0:05.97",
+      "frames": "f338-f358",
+      "fps": 60,
+      "mechanics": "Départ sur le premier temps (f338, -0,5 im) : l'hexagone se quadrille en 5 × 5 carrés (f340), des petits carrés bleus apparaissent en anneaux autour (f343), le champ couvre tout le cadre à f346 avec des tuiles blanches au centre, puis chaque tuile prend son motif de quart de cercle de l'intérieur vers l'extérieur (f349-f358). 20 im (0,33 s), décalage proportionnel à la distance au centre, les tuiles grandissent jusqu'à fermer les joints.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille Bauhaus de quarts de cercle pulsée",
+      "name_en": "Beat-pulsed Truchet grid",
+      "t": "0:05.97-0:07.65",
+      "frames": "f358-f459",
+      "fps": 60,
+      "mechanics": "16 × 9 cellules de 120 px (1/9 H) sur fond #F1EDF8 : quarts et demi-cercles bleus, orange et encre, petits quarts jaunes et orange dans les coins, organisés en colonnes de couleur. Les pièces tournent en continu avec flou de mouvement ; à chaque temps (f366, f394, f422, f450, pics d'énergie ×4 sur une image) les couleurs et orientations sont réassignées d'un coup.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Balayage de lumière diagonal",
+      "name_en": "Diagonal light-sweep wipe",
+      "t": "0:07.65-0:07.75",
+      "frames": "f459-f465",
+      "fps": 60,
+      "mechanics": "Une bande dorée semi-transparente de 3 filets parallèles traverse le cadre en diagonale du bas gauche vers le coin bas droit et révèle derrière elle le champ de particules : 6 im (0,1 s), arrivée sur le demi-temps (f465).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules qui convergent en chiffres",
+      "name_en": "Particles converge into text",
+      "t": "0:07.72-0:08.88",
+      "frames": "f463-f533",
+      "fps": 60,
+      "mechanics": "6 000 points (blanc #EDEBFA, rouge, lavande) d'abord dispersés sur fond bleu nuit en dégradé radial (#151143 au centre → #0C0A14), resserrés en bande horizontale (f475), puis en chiffres « 2026 » de 35 % H (lisibles f490, nets f499) : ≈ 35 im, ease-out (énergie qui décroît régulièrement). Légende mono « 6,000 particles · converge → hold → burst ». Maintien scintillant f500-f533.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion radiale en traînées",
+      "name_en": "Radial streak burst",
+      "t": "0:08.90-0:09.37",
+      "frames": "f534-f562",
+      "fps": 60,
+      "mechanics": "Sur le temps (f534, -1,4 im), au bout du riser : les particules deviennent des traînées radiales qui atteignent les bords en 4 im, le fond s'embrase en rouge (#943231 au centre) ; les traînées raccourcissent et le rouge retombe vers le violet puis le bleu nuit en ≈ 28 im (ease-out).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-004-cut-f563.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash surexposé d'une image",
+      "name_en": "Overexposed flash cut",
+      "t": "0:09.38-0:09.43",
+      "frames": "f563-f566",
+      "fps": 60,
+      "mechanics": "Sur le premier temps de mesure (f563, -0,5 im) : une image crème surexposée où le tunnel apparaît en jaune pâle, puis un voile gris (f564), puis le tunnel avec un reste de voile (f565), net à f566. 1 im de flash + 2 im de retour.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f563.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Tunnel de carrés en spirale",
+      "name_en": "Square vortex tunnel",
+      "t": "0:09.43-0:11.33",
+      "frames": "f566-f680",
+      "fps": 60,
+      "mechanics": "≈ 30 carrés imbriqués, chacun tourné un peu plus que le précédent (spirale), points aux sommets, fond intérieur #10123A, carré extérieur bordé de rouge doublé (écho) qui passe brièvement au jaune après le flash (f565-f569) ; lignes de vitesse blanches et rouges dans tous les sens. Poussée de caméra et rotation continues (énergie 6-12 sans calage net sur les temps).",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f563.jpg, microM-005-move-f687.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en blocs de glitch",
+      "name_en": "Block glitch wipe",
+      "t": "0:11.33-0:11.55",
+      "frames": "f680-f692",
+      "fps": 60,
+      "mechanics": "Des rectangles jaunes #FFD33C de largeurs aléatoires apparaissent par rangées horizontales aux bords (f680-f683), s'allongent et fusionnent jusqu'à remplir le cadre (f692) : 12 im. Le texte apparaît pendant le volet ; la seconde ligne « by hand. » arrive à ≈ 40 % d'opacité puis fonce jusqu'à f695 (décalage ≈ 6 im). Fin sur le demi-temps.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f687.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Harmonographe parcouru par un stylo",
+      "name_en": "Damped harmonograph with pen dot",
+      "t": "0:11.55-0:12.77",
+      "frames": "f692-f766",
+      "fps": 60,
+      "mechanics": "Courbe de Lissajous amortie (≈ 15 boucles, trait noir de 2 px) sur la moitié droite (45 % W), paramètres affichés « f1 3.004 : f2 2.002 · damping 0.012 » ; un point rouge lumineux la parcourt comme un stylo ; légère rotation. Quasi immobile : énergie 0,2-0,4 pendant 1,2 s.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f687.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif italique éditoriale en contrepoint",
+      "name_en": "Editorial italic serif counterpoint",
+      "t": "0:11.45-0:12.77",
+      "frames": "f687-f766",
+      "fps": 60,
+      "mechanics": "« every curve, / by hand. » en serif italique noire sur jaune, ≈ 11 % H par ligne, ferré à gauche à 8 % de marge, interlignage serré ; s'oppose à la grotesque étendue des titres. Même serif pour « a motion design reel » et « motion designer ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Respiration sur le pont musical",
+      "name_en": "Breathing hold on the breakdown",
+      "t": "0:11.55-0:12.75",
+      "frames": "f693-f765",
+      "fps": 60,
+      "mechanics": "Seul moment calme : pendant que la grosse caisse disparaît (11,3-12,7 s), l'image reste presque fixe 1,2 s (énergie 0,2-0,4, seul le point-stylo bouge). Contraste voulu avant le volet final, mais trop long pour une grammaire sans temps mort.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en escalier multicolore",
+      "name_en": "Staggered multi-color stair wipe",
+      "t": "0:12.77-0:13.13",
+      "frames": "f766-f788",
+      "fps": 60,
+      "mechanics": "6 colonnes montent du bas en escalier (la colonne de gauche en tête), en 4 couches successives : orange #FF4C20 (f767), bleu #2C34FF (≈ f771), lavande #C4B5FF (≈ f775), encre #0C0A14 (≈ f778), chaque couche 3-4 im derrière la précédente. 22 im (0,37 s), accélération puis freinage (pic d'énergie f779), dernière couche posée sur le premier temps de la dernière mesure (f788, -0,5 im). Le volet récapitule la palette avant la carte de fin.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f781.jpg",
+      "illus": {
+        "from": 766,
+        "to": 790,
+        "n": 8
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : point accent et récapitulatif",
+      "name_en": "End card with accent dot and skills recap",
+      "t": "0:13.10-0:14.53",
+      "frames": "f786-f872",
+      "fps": 60,
+      "mechanics": "« CLAUDE » blanc #F1EDF8 (capitale 16 % H, 62 % W) sur encre, « motion designer » serif italique orange en dessous (≈ 6 % H). Point orange #FF4B20 ajouté après CLAUDE vers f816 (sur le temps, probable : il est absent à f812 et présent à f822). Liste mono lavande « KINETIC TYPE · SHAPE · GRID SYSTEMS · PARTICLES · 3D · GENERATIVE » en fondu de gauche à droite, ≈ 5 im d'écart par mot (f818-f848). Fondu au noir lancé sur le temps f872.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f781.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Durées calibrées sur le tempo",
+      "name_en": "Tempo-derived durations",
+      "t": "0:01.88-0:05.62",
+      "frames": "f113-f337",
+      "fps": 60,
+      "mechanics": "Les durées découlent du temps de 28 im : entrée de mot 14 im = un demi-temps ; sortie 7 im = un quart de temps ; morph élastique 0,48 s ≈ un temps ; mot affiché un temps ; section = 4 temps. Rien n'est réglé « à l'œil » : tout est une fraction de la mesure.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg, microM-003-move-f241.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement, franges et grain",
+      "name_en": "Motion blur, chroma fringe and grain",
+      "t": "0:01.88-0:14.98",
+      "frames": "f113-f899",
+      "fps": 60,
+      "mechanics": "Flou directionnel par échos (3-4 copies) sur les entrées de mots ; frange chromatique rouge/bleu d'environ 1 % W qui retombe en 8 im ; flou de mouvement sur les pièces de grille qui tournent ; écho rouge doublé sur les bords du tunnel ; grain fin sur les fonds sombres (visible sur la carte de fin).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f197.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette de 6 jetons recombinée",
+      "name_en": "Six-token palette system",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Encre #0C0A14, orange #FF4C20, bleu #2C34FF, jaune #FFD33C, lavande #C4B5FF, blanc cassé #F1EDF8 (+ bleu nuit #10123A pour la profondeur). Chaque section est une recombinaison : fond orange/texte encre, fond bleu/texte blanc, fond encre/texte jaune, etc. Le volet final rejoue les 4 couleurs dans l'ordre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Prompt d'une ligne sans sujet, sans marque, sans musique : le modèle a pris « CLAUDE » comme sujet et « 2026 » comme texte de particules, et a inventé tout le contenu."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Like it's your showreel for a résumé » a été lu littéralement : une liste de compétences (8 sections nommées dans le HUD, récapitulées sur la carte de fin) plutôt qu'une idée unique. D'où l'effet catalogue."
+    },
+    {
+      "kind": "structure",
+      "insight": "« 15-second » a été converti en mathématique musicale : 15 s = 32 temps à 128 BPM = 8 mesures = 8 sections. Une durée cible compatible avec un tempo rond donne une structure parfaite."
+    },
+    {
+      "kind": "build",
+      "insight": "Le HUD affiche « 128 BPM » et un compteur de temps : une constante de tempo partagée par l'animation et la bande-son. Tous les événements sont à k × 60/128 s, ce qui explique la synchro à ±1 im."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go all out » a poussé à la variété (10 types de transitions différents) et aux annotations techniques visibles ; sans contrainte de cohérence de concept, la variété l'emporte sur le récit."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucun défaut technique visible : textes jamais coupés sauf débordement voulu à l'entrée des mots, aucune image cassée, sortie sur le temps puis noir propre."
+    },
+    {
+      "kind": "other",
+      "insight": "Pour reproduire : écrire dans le prompt le BPM, la règle « une section par mesure, un événement par temps » et demander une bande-son générée sur la même grille."
+    }
+  ],
+  "steal": [
+    "Découpe la durée en mesures : 15 s à 128 BPM = 32 temps = 8 mesures. Une section par mesure, un événement par temps, placé à k × 60/BPM.",
+    "Mot cinétique : sortie en tranches dans les 7 im avant le temps, entrée sur le temps en scale 1,7 → 1 outExpo 14 im, skew et flou décroissants.",
+    "Fais naître chaque transition d'un élément de la scène : le point devient iris, la ligne devient fente, l'hexagone se découpe en tuiles qui forment la grille suivante.",
+    "Volet de fin en escalier qui récapitule la palette (orange, bleu, lavande, noir) en 22 im et atterrit sur le premier temps de la dernière mesure.",
+    "Riser d'une seconde → particules qui explosent en traînées sur le temps → flash surexposé d'une image sur le premier temps de la mesure suivante."
+  ],
+  "flaws": [
+    "Catalogue de vignettes sans fil narratif : chaque mesure change d'univers, rien ne relie la grille Bauhaus, le tunnel et l'harmonographe.",
+    "HUD technique (timecode, BPM, courbes d'easing affichées) : séduisant, mais tic de « reel IA » qui encombre les quatre coins.",
+    "Section GENERATIVE quasi immobile pendant 1,2 s, seul un point rouge bouge : temps mort pour la grammaire 1600.",
+    "Tunnel DEPTH confus : lignes blanches dans tous les sens, profondeur peu lisible, rupture avec le reste du système.",
+    "Grille de quarts de cercle façon Bauhaus : motif génératif déjà vu partout."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Cas d'école de synchro : chaque coupe, morph, réassignation et volet tombe à ±1 im du temps sur une grille 128 BPM, avec 10 transitions différentes et motivées (fente, tranches, flash d'inversion, iris, cascade de tuiles, escalier) à décortiquer image par image à 60 fps."
+  }
+}

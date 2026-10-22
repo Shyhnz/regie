@@ -1,0 +1,294 @@
+{
+  "slug": "ercankeskinx-ec2568",
+  "title": "Five scroll-based sections",
+  "handle": "@ercankeskinx",
+  "family": "showreel",
+  "craft": 3,
+  "craft_reason": "Cinq sections web soignées et vraiment différentes, avec de bonnes idées d'animation au défilement, mais filmées en capture d'écran manuelle : rythme subi, curseur visible, allers-retours répétés, 4,7 s de fin figée.",
+  "summary": "Capture d'écran d'un site fictif « ~Whatever » qui enchaîne cinq sections animées au défilement : portfolio d'architecture avec liste collante, enregistreur audio en grille de cartes, carte de train de nuit dont le tracé se dessine, éventail de nuanciers de peinture, pied de page avec logotype géant. Les idées web sont bonnes ; la vidéo, elle, n'est pas mise en scène.",
+  "prompt_vs_result": [
+    "Le prompt demande cinq sections pilotées par le défilement, totalement différentes, en laissant à Claude le choix du contexte et de la mise en page.",
+    "Claude a inventé la marque parapluie « ~Whatever », cinq univers (architecture, audio, train de nuit, peinture, contact), une police et une palette par section, des photos, et des animations liées à la position du défilement, réversibles.",
+    "Le prompt cadre la variété mais rien sur la vidéo : ni défilement automatisé, ni durée par section, ni cadrage sans curseur. D'où un enregistrement manuel au rythme irrégulier et une fin immobile."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#E3E2DC", "role": "fond gris chaud, section architecture"},
+      {"hex": "#1A1A1A", "role": "texte principal et boutons"},
+      {"hex": "#A9A8A2", "role": "éléments de liste inactifs"},
+      {"hex": "#E6E7EA", "role": "fond gris froid, section audio"},
+      {"hex": "#4353D6", "role": "tirets de la jauge de batterie"},
+      {"hex": "#D4452F", "role": "bouton d'enregistrement, fleur orange de la photo"},
+      {"hex": "#26161F", "role": "nuit prune, début de la section train"},
+      {"hex": "#141627", "role": "nuit bleu marine, fin de la section train"},
+      {"hex": "#E9B07A", "role": "tracé et tête lumineuse du train, lueur d'aube"},
+      {"hex": "#C9973A", "role": "nuancier Quince"},
+      {"hex": "#A8432F", "role": "nuancier Rust Gate"},
+      {"hex": "#6E7F45", "role": "nuancier Moss Wall"},
+      {"hex": "#5A2D45", "role": "nuancier Damson"},
+      {"hex": "#3E4D5A", "role": "nuancier North Slate"},
+      {"hex": "#E8E4DA", "role": "nuancier Frost Chalk"},
+      {"hex": "#070B0B", "role": "fond du pied de page, avec halos vert #0E3B2E et violet #2A1F4A"},
+      {"hex": "#F2F2F5", "role": "logotype géant « ~Whatever »"}
+    ],
+    "type": "Une famille par section : grotesque + mono pour l'architecture (liste ≈ 2,5 % de la hauteur), grotesque élargie extra-grasse pour l'audio (≈ 5 %), serif de texte pour le train (≈ 4 %), grotesque grasse pour la peinture, logotype géométrique ≈ 22 %.",
+    "texture": "Photos réalistes (architecture, produit, trains), cartes arrondies à ombre douce, petite lueur sur la tête du train, champ d'étoiles très discret, halos radiaux flous dans le pied de page. Aucun grain, aucun flou de mouvement.",
+    "style": "Site éditorial premium, sections contrastées",
+    "coherence": "Seuls la barre de navigation « ~Whatever » et une rigueur de grille commune relient les sections ; chaque bloc change de police, de palette et de luminosité. C'est voulu par le prompt (« completely different »), mais l'ensemble se lit comme cinq sites différents."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio. Le rythme est celui d'une main sur la molette : sections de 4,7 s (architecture), 9 s (audio), 5,3 s (train), 4,2 s (peinture), 6,4 s (pied de page). 39 % de maintiens statiques (11,7 s), dont 1,27 s au départ et 4,7 s à la fin (25,1-29,9 s) où seul le curseur bouge. Dans la section audio, l'utilisateur remonte et redescend trois fois (7,0-8,0 s, 10,3-11,5 s, 12,5-13,5 s) : la même animation de cartes et de compteur est rejouée à l'endroit et à l'envers. Les passages d'une section à l'autre sont de simples défilements rapides de 8 à 15 im (≈ 10 à 20 % de la hauteur par image). Aucune coupe réelle : les deux « coupes » détectées (f412, f705) sont des défilements.",
+    "timeline": [
+      {"t": "0:00.00-0:01.27", "what": "Section architecture « Selected projects, 2016 to 2024 » : liste de 6 projets à gauche, photo à droite, « Two Courtyards » actif ; rien ne bouge", "technique": "section collante liste + image (sticky)"},
+      {"t": "0:01.33-0:03.73", "what": "Le défilement fait passer l'élément actif : Leaning Wall (f40), White Stair (f70), Cypress Row (f84), Brick and Timber (f95), The Chimney (f112) ; la photo est remplacée par un volet vertical de 2 à 3 im", "technique": "volet d'image piloté par le défilement"},
+      {"t": "0:04.70-0:05.00", "what": "Défilement rapide vers la section suivante (f141-f150)", "technique": "défilement de page"},
+      {"t": "0:05.33-0:05.90", "what": "Section audio : titre « Records what you meant to hear. » en fondu, photo produit qui monte, 3 cartes de caractéristiques en décalé de ≈ 3 im", "technique": "entrée en grille de cartes (bento)"},
+      {"t": "0:05.97-0:06.50", "what": "Compteur de batterie 0 → 28 h en ease-out, jauge en tirets bleus, forme d'onde qui se dessine", "technique": "compteur et forme d'onde liés au défilement"},
+      {"t": "0:07.00-0:13.50", "what": "Trois allers-retours : le compteur revient à 0 (37 → 0 en 12 im, f307-f319), les cartes s'effacent dans l'ordre inverse, puis tout se rejoue jusqu'à 40 h", "technique": "animation réversible au défilement (scrub)"},
+      {"t": "0:13.73-0:14.40", "what": "Défilement vers la section train de nuit", "technique": "défilement de page"},
+      {"t": "0:14.40-0:19.00", "what": "« Fall asleep in one country. Wake up in another. » : un point lumineux trace la ligne Amsterdam → Köln → Frankfurt → Nürnberg → Wien ; la photo et le nom de gare changent à chaque arrêt ; le fond passe du prune au bleu marine, une lueur d'aube monte en bas", "technique": "tracé de parcours piloté par le défilement + fond qui suit l'heure"},
+      {"t": "0:19.00-0:20.00", "what": "Défilement vers la section peinture ; la pile de nuanciers monte depuis le bas puis s'ouvre en éventail", "technique": "éventail de nuanciers"},
+      {"t": "0:20.40-0:23.40", "what": "Chaque nuance prend tour à tour la première place (Quince, Rust Gate, Moss Wall, Damson, North Slate, Frost Chalk) et teinte le fond de la page", "technique": "fond teinté par l'élément actif"},
+      {"t": "0:23.50-0:24.20", "what": "Défilement vers le pied de page sombre", "technique": "défilement de page"},
+      {"t": "0:24.20-0:25.07", "what": "Logotype géant « ~Whatever » qui monte depuis le bas lettre par lettre, coupé par le bord inférieur", "technique": "lettres qui montent en décalé"},
+      {"t": "0:25.07-0:29.90", "what": "Pied de page immobile, le curseur survole les liens", "technique": "maintien de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no). Rien à compter.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette, simple capture d'écran d'un site.",
+    "how_built": "Enregistrement d'écran d'un navigateur (format 1920×972, curseur visible) sans bande-son ; aucune synchro n'était possible ni recherchée."
+  },
+  "techniques": [
+    {
+      "cat": "layout",
+      "name_fr": "Section collante liste + image",
+      "name_en": "Sticky index with image preview",
+      "t": "0:00.00-0:04.70",
+      "frames": "f0-f141",
+      "fps": 30,
+      "mechanics": "Section épinglée pendant ≈ 4,7 s de défilement : chapô en mono minuscule en haut à gauche, liste de 6 projets (≈ 2,5 % de la hauteur, gris #A9A8A2, actif en noir), photo ≈ 30 % de la largeur à droite aux coins arrondis ≈ 4 %, ligne de métadonnées dessous (Place, Programme, Floor area) et compteur « 1 of 6 » en haut à droite. Le défilement fait avancer l'élément actif au lieu de faire monter la page.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f40.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet vertical éclair entre deux photos",
+      "name_en": "Fast vertical clip wipe",
+      "t": "0:01.33-0:03.73",
+      "frames": "f40-f112",
+      "fps": 30,
+      "mechanics": "La nouvelle photo recouvre l'ancienne par un volet du bas vers le haut : à f40 elle occupe la moitié basse, à f41 ≈ 95 %, à f42 tout le cadre (2 à 3 im = 0,07-0,1 s, quasi linéaire). Même geste à f70, f84, f95, f112. Assez rapide pour paraître une coupe, ce qui garde la liste lisible.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f40.jpg, microM-002-move-f70.jpg, microM-003-move-f95.jpg",
+      "illus": {"from": 38, "to": 48, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Indicateur d'élément actif qui glisse",
+      "name_en": "Sliding active indicator",
+      "t": "0:01.50-0:03.80",
+      "frames": "f45-f114",
+      "fps": 30,
+      "mechanics": "Un filet vertical de 1 px à gauche de la liste s'étire de l'ancien élément au nouveau puis se rétracte (≈ 3 im, f45-f48), pendant que le texte passe du gris au noir en ≈ 6 im. La liste réagit ≈ 5 im après le changement de photo : l'image mène, le texte suit.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f40.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Héros produit en grille de cartes",
+      "name_en": "Bento product hero",
+      "t": "0:05.33-0:13.70",
+      "frames": "f160-f411",
+      "fps": 30,
+      "mechanics": "Titre grotesque élargie extra-grasse sur deux lignes en haut à gauche (≈ 5 % de la hauteur), prix « €389 » et pilule « Pre-order » à droite, grande photo produit ≈ 58 % de la largeur, colonne de 3 cartes blanches à droite (batterie, enregistrement 32-bit, finitions avec pastilles et vignette photo). Marges ≈ 3 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Entrée des cartes en décalé",
+      "name_en": "Staggered card entrance",
+      "t": "0:05.33-0:05.90",
+      "frames": "f160-f177",
+      "fps": 30,
+      "mechanics": "f160 : titre en fondu gris → noir (≈ 5 im). f162-f167 : photo produit de ≈ 20 % à 100 % d'opacité en montant de ≈ 4 % de la hauteur. Puis cartes de droite à f168, f171, f174, f177 (décalage 3 im), chacune glisse de ≈ 3 % depuis la droite en ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f167.jpg",
+      "illus": {"from": 158, "to": 178, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de batterie avec jauge en tirets",
+      "name_en": "Count-up with dashed gauge",
+      "t": "0:05.97-0:06.50",
+      "frames": "f179-f195",
+      "fps": 30,
+      "mechanics": "Le chiffre « hours » compte 2, 7, 11, 14, 15, 17… (f179-f184) puis ralentit jusqu'à 28 puis 40 : ease-out marqué. Une jauge de tirets bleus #4353D6 se remplit de gauche à droite au même rythme. Chiffre ≈ 3 % de la hauteur, chasse fixe probable.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f167.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Forme d'onde dessinée par une tête de lecture",
+      "name_en": "Waveform draw-on",
+      "t": "0:06.00-0:09.50",
+      "frames": "f180-f285",
+      "fps": 30,
+      "mechanics": "Dans la carte « 32-bit float, nothing clips », une forme d'onde grise pâle devient noire de gauche à droite derrière un trait vertical bleu ; le minuteur à droite avance avec elle.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-007-cut-f412.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Animation réversible liée au défilement",
+      "name_en": "Scroll-scrubbed reversible animation",
+      "t": "0:07.00-0:13.50",
+      "frames": "f210-f405",
+      "fps": 30,
+      "mechanics": "Les animations suivent la position du défilement, pas le temps : en remontant, le compteur redescend de 37 à 0 en 12 im (f307-f319), la forme d'onde se rétracte, les cartes disparaissent dans l'ordre inverse (finitions d'abord, f320-f327). L'utilisateur fait trois allers-retours pour le prouver : utile comme démonstration technique, répétitif comme vidéo.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f319.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé de parcours avec tête lumineuse",
+      "name_en": "Glowing route line draw",
+      "t": "0:14.40-0:19.00",
+      "frames": "f432-f570",
+      "fps": 30,
+      "mechanics": "Sur une carte abstraite, cinq gares sont posées sur une courbe ondulée qui monte vers la droite. Un point lumineux pêche #E9B07A (≈ 0,6 % de la largeur, petit halo) avance et laisse derrière lui une ligne fine de la même couleur (tracé progressif). Le point ralentit à chaque gare. Tête et tracé suivent le défilement.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-03.jpg, overview-04.jpg",
+      "illus": {"from": 432, "to": 528, "n": 8}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond qui suit l'heure du récit",
+      "name_en": "Time-of-night background shift",
+      "t": "0:14.40-0:19.00",
+      "frames": "f432-f570",
+      "fps": 30,
+      "mechanics": "Le fond glisse du prune #26161F (départ 22 h) au bleu marine #141627 au fil du trajet, puis une lueur d'aube rosée monte depuis le bas du cadre à l'arrivée à Wien (≈ 18,5-19 s). Champ d'étoiles très discret. La couleur raconte la nuit qui passe.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-008-move-f570.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Carte photo qui change à chaque gare",
+      "name_en": "Per-stop photo crossfade",
+      "t": "0:15.70-0:18.50",
+      "frames": "f471-f555",
+      "fps": 30,
+      "mechanics": "La carte de gauche (≈ 15 % de la largeur) affiche une photo par gare (quai d'Amsterdam, train à Köln, vue de fenêtre à Frankfurt, Nürnberg, Wien) ; changement en fondu enchaîné de ≈ 6 im au moment où le point atteint la gare, avec le nom en serif qui se fond en même temps (f471, f498, f528).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Éventail de nuanciers de peinture",
+      "name_en": "Paint chip fan deck",
+      "t": "0:19.00-0:23.50",
+      "frames": "f570-f705",
+      "fps": 30,
+      "mechanics": "Six bandes de couleur à étiquette blanche en bas, pivotant autour d'un axe commun en bas au centre comme un vrai nuancier. Entrée : la pile monte depuis le bas (f571-f587), puis s'ouvre sur ≈ 40° d'ouverture totale. La nuance active pivote vers la verticale, grandit de ≈ 15 % et passe devant en ≈ 6 im (Quince → Rust Gate f640-f644, Rust Gate → Moss Wall f650-f656), le nom et le texte se fondent en même temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-008-move-f570.jpg",
+      "illus": {"from": 612, "to": 660, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Fond de page teinté par la couleur active",
+      "name_en": "Active color page tint",
+      "t": "0:20.40-0:23.50",
+      "frames": "f612-f705",
+      "fps": 30,
+      "mechanics": "Le fond passe en ≈ 10 im à une version très désaturée de la nuance active : #E3DCC8 pour Quince, #DCCBC0 pour Rust Gate, #D4D5C9 pour Moss Wall, #D3CBCB pour Damson, #CDD0D3 pour North Slate, #E6E4DF pour Frost Chalk. La page entière respire avec la couleur choisie.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-04.jpg, microM-009-cut-f705.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype géant qui monte lettre par lettre",
+      "name_en": "Staggered wordmark rise",
+      "t": "0:24.20-0:25.07",
+      "frames": "f726-f752",
+      "fps": 30,
+      "mechanics": "« ~Whatever » blanc, ≈ 95 % de la largeur, hauteur de capitale ≈ 22 % : les lettres montent depuis sous le bord inférieur, ≈ 1,5 im de décalage par lettre (~W f737, Wh f741, What f745, Whatev f749), chaque lettre en ease-out sur ≈ 8 im, alignement final f752. Le bas des lettres reste rogné par le bord : effet voulu de pied de page.",
+      "verdict": "adapter",
+      "evidence": "microM-010-move-f749.jpg",
+      "illus": {"from": 737, "to": 752, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Pied de page sombre à halos colorés",
+      "name_en": "Dark footer with soft glows",
+      "t": "0:24.20-0:29.90",
+      "frames": "f726-f896",
+      "fps": 30,
+      "mechanics": "Fond quasi noir #070B0B avec deux halos radiaux très flous, vert #0E3B2E en haut à gauche et violet #2A1F4A au centre droit, à ≈ 30 % d'opacité, immobiles. Accroche blanche sur trois lignes, pilule « Write to us », quatre colonnes d'adresses en très petit.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une famille de caractères par section",
+      "name_en": "Per-section type system",
+      "t": "0:00.00-0:29.90",
+      "frames": "f0-f896",
+      "fps": 30,
+      "mechanics": "Architecture : grotesque légère + mono pour les métadonnées. Audio : grotesque élargie extra-grasse, interlignage serré. Train : serif de texte en blanc. Peinture : grotesque grasse sur trois lignes. Pied de page : grotesque medium + logotype géométrique. Chaque section a sa voix, conforme au prompt, mais sans fil commun hors navigation.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Passage de section par simple défilement",
+      "name_en": "Plain scroll between sections",
+      "t": "0:04.70-0:24.20",
+      "frames": "f141-f726",
+      "fps": 30,
+      "mechanics": "Entre deux sections, la page monte de ≈ 10 à 20 % de la hauteur par image pendant 8 à 15 im (f141-f150, f412-f430, f567-f575, f705-f722), sans aucun effet. Les blocs se succèdent comme dans un navigateur ; aucune transition n'est pensée pour la vidéo.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f142.jpg, microM-007-cut-f412.jpg, microM-009-cut-f705.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Capture d'écran au défilement manuel",
+      "name_en": "Manual scroll screen capture",
+      "t": "0:00.00-0:29.90",
+      "frames": "f0-f896",
+      "fps": 30,
+      "mechanics": "Format 1920×972 (fenêtre de navigateur), curseur visible tout du long, vitesse de défilement irrégulière, allers-retours, 1,27 s d'immobilité au début et 4,7 s à la fin. 39 % du temps sans mouvement. Rien n'est cadré ni rythmé pour le spectateur.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Completely different » a été pris au pied de la lettre : cinq palettes, cinq familles de caractères, alternance clair / sombre. La variété est réussie, la cohérence d'ensemble sacrifiée (seule la navigation « ~Whatever » relie les blocs)."},
+    {"kind": "structure", "insight": "« Scroll-based » a conduit à des animations liées à la position du défilement (sections épinglées, compteurs et tracés qui se rejouent à l'envers). Elles n'existent que si quelqu'un fait défiler : d'où une vidéo qui dépend de la main de l'auteur."},
+    {"kind": "inputs", "insight": "« Decide the context yourself » : Claude a choisi des contextes éditoriaux haut de gamme (architecture, audio, train de nuit, peinture) avec photos réalistes, ce qui donne un rendu crédible de site primé."},
+    {"kind": "qa", "insight": "Rien dans le prompt ne concerne la capture vidéo. Il aurait fallu demander un défilement automatisé à vitesse réglée, une durée par section, le curseur masqué et une fin de 1 s au plus."},
+    {"kind": "build", "insight": "La résolution 1920×972 et le curseur montrent un enregistrement d'écran du navigateur, pas un rendu image par image : aucune maîtrise des courbes au niveau de la vidéo."}
+  ],
+  "steal": [
+    "Liste collante + photo : le défilement change l'élément actif, la photo se remplace par un volet vertical de 2 à 3 images, la liste suit 5 images après.",
+    "Tracé de trajet : un point lumineux dessine la ligne entre les étapes et la photo change à chaque arrêt.",
+    "Faire suivre au fond l'heure du récit : prune → bleu nuit → lueur d'aube pendant le trajet.",
+    "Nuancier en éventail pivotant sur un axe bas ; la couleur active passe devant en 6 images et teinte tout le fond.",
+    "Compteur en ease-out avec jauge en tirets qui se remplit au même rythme."
+  ],
+  "flaws": [
+    "Capture d'écran manuelle : curseur visible, vitesse irrégulière, aucune intention de rythme.",
+    "Trois allers-retours sur la même section audio : la même animation rejouée trois fois.",
+    "4,7 s de pied de page immobile en fin de vidéo, 39 % du temps sans mouvement.",
+    "Passages entre sections réduits à un défilement brut, sans transition pensée.",
+    "Textes secondaires (métadonnées, adresses) minuscules, illisibles en vidéo."
+  ],
+  "deep_study": {"worth": false, "why": "Muette, à 30 fps et pilotée par la main de l'auteur : les courbes ne sont pas écrites pour la vidéo. Les idées (liste collante, tracé de trajet, nuancier) se comprennent sur les planches existantes."}
+}

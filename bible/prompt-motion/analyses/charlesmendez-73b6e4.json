@@ -1,0 +1,374 @@
+{
+  "slug": "charlesmendez-73b6e4",
+  "title": "Datagran ChatGPT ads explainer",
+  "handle": "@charlesmendez",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Film produit cohérent (HUD de film, néon vert sur noir, chapitres) et calé au temps près sur 120 BPM, accroche et récap très réussis ; texte d'interface minuscule, caméra fixe et même transition dix fois.",
+  "summary": "Démo SaaS de Datagran en chapitres : lancer une campagne ChatGPT Ads, connecter les métriques, attribuer, brancher un agent vocal, l'appel, les relances, l’humain dans la boucle, l’analytics. Interfaces sur fond noir à lueur verte, dans un HUD de film. Forces : accroche « Be the answer. » mot à mot sur les croches, coupes au noir sur les temps, récap d'un verbe par croche. Faiblesses : UI illisible sur mobile, aucun zoom.",
+  "prompt_vs_result": [
+    "Le prompt impose un ton (« modern slick and punchy »), le produit (lien du site) et un scénario utilisateur en 8 étapes précises, de la création de campagne ChatGPT Ads jusqu'à l'analytics.",
+    "Claude a choisi la DA noir + vert néon, le HUD « Film 01 — The Growth Loop » qui affiche « 120 BPM », l'accroche, le client fictif Brightside Solar et la lead Maya Chen, le récap de verbes et le montage au tempo.",
+    "La liste d'étapes est devenue des chapitres un pour un : un scénario détaillé donne un récit limpide. Il aurait fallu cadrer la lisibilité (taille du texte UI), des zooms sur l'info clé, la variété des transitions."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond noir"},
+      {"hex": "#0B2A0B", "role": "lueur radiale verte derrière le contenu"},
+      {"hex": "#22F21E", "role": "accent vert néon (mots clés, boutons actifs, barres Datagran, « Grow. »)"},
+      {"hex": "#FFFFFF", "role": "titres et texte principal"},
+      {"hex": "#141414", "role": "cartes et fenêtres d'interface"},
+      {"hex": "#2A2A2A", "role": "bordures et barres inactives"},
+      {"hex": "#8A8A8A", "role": "texte secondaire, HUD mono"},
+      {"hex": "#F5B800", "role": "icône soleil du client fictif"}
+    ],
+    "type": "Grotesque bold (Inter Display probable), casse phrase, interlettrage serré. Accroche ≈ 9 % de la hauteur, titres de chapitre ≈ 4,5 % sur 2 lignes, texte UI ≈ 1-1,3 %. HUD en mono capitales espacées (≈ +20 %).",
+    "texture": "Lueur verte radiale (vignette inversée) derrière chaque scène, grille de points très discrète, halo (bloom) sur les éléments verts actifs, flou directionnel vertical sur la sortie de l'accroche, flou gaussien sur les mots qui entrent, traits de glitch verts sur l'impact du drop.",
+    "style": "Film produit SaaS sombre néon",
+    "coherence": "Un seul accent (vert) réservé à ce que Datagran apporte, une seule mise en page (titre à gauche, interface à droite), un HUD permanent (titre du film, chapitre numéroté, timecode, barre de progression) et une même transition : très tenu. Revers : la répétition rend le milieu monotone."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM exacts (1 temps = 0,5 s = 15 im à 30 fps), pulsation très nette (7,52) et tempo écrit dans le HUD (« 1920×1080 · 30 FPS · 120 BPM »). Les 10 changements de chapitre (4, 9, 12, 17, 23, 26, 33, 38, 44, 51 s) font tous apparaître la nouvelle scène sur un temps, la sortie (assombrissement + flou + noir) occupant les 3-4 im juste avant. L'accroche pose ses mots sur les croches (temps, demi-temps, temps) et le récap final enchaîne 8 verbes à 7-8 im d'écart (une croche chacun). Le détecteur annonce 64 % de « maintiens » parce que la caméra ne bouge jamais et que les changements d'interface (frappe, compteurs, curseur) sont petits en surface ; en pratique un micro-événement survient toutes les 0,3 à 1 s, mais il n'y a pas de grand mouvement entre deux chapitres. Plans de 3 à 7 s.",
+    "timeline": [
+      {"t": "0:00-0:02", "what": "« Your buyers / now ask / ChatGPT. » : chaque ligne monte depuis un masque en 3-4 im, une par temps (f2, f16, f31), « ChatGPT. » en vert ; légende mono « …AND CHATGPT NOW HAS ADS. »", "technique": "révélation de lignes masquées au temps"},
+      {"t": "0:01.9-0:02.6", "what": "Le bloc file vers le haut en 3 im avec flou (f57-f59), « Be » atterrit net à f61 sur le drop avec deux traits de glitch verts, puis « the » (f68, demi-temps) et « answer. » (f76, temps) entrent par défloutage", "technique": "sortie fouettée + mot sur le drop + mots sur les croches"},
+      {"t": "0:02.6-0:04", "what": "Soulignement vert tracé sous « answer. », légende mono « DATAGRAN · FROM CHATGPT AD TO CLOSED REVENUE », extinction en 3 im (f116-f118), noir f119", "technique": "soulignement d'accent + fondu au noir"},
+      {"t": "0:04-0:09", "what": "01 LAUNCH : « Launch on ChatGPT Ads. » à gauche, fenêtre d'agent à droite : prompt tapé (≈ 50 caractères/s), « Building campaign… », carte de campagne construite par lignes, clic sur « Launch campaign » → bouton vert « Live ● » avec halo", "technique": "frappe + construction de carte + clic à changement d'état"},
+      {"t": "0:09-0:12", "what": "« Your ad, inside the answer. » : interface type ChatGPT, question, réponse qui s'écrit, carte sponsorisée qui passe de grisée à vive avec liseré vert, curseur sur « Get my estimate »", "technique": "UI simulée du produit tiers + mise en avant par liseré"},
+      {"t": "0:12-0:17", "what": "02 CONNECT : logo Datagran au centre avec anneaux qui pulsent, 6 sources (ChatGPT Ads, Google Ads, Meta Ads, HubSpot CRM, Stripe, Web pixel) qui apparaissent toutes les 2-4 im, liens et points qui coulent vers le centre ; 4 compteurs qui roulent (184 218 impressions, 612 leads, 356 k$)", "technique": "hub en étoile + compteurs"},
+      {"t": "0:17-0:19.5", "what": "03 ATTRIBUTE : frise horizontale de 6 étapes (ChatGPT ad → Site visit → Meta retarget → Google search → Voice call → Closed-won) parcourue par un point lumineux qui allume chaque nœud, « $18,400 » en vert", "technique": "parcours client animé"},
+      {"t": "0:19.5-0:23", "what": "Barres d'attribution « Last click » ; clic sur la bascule « Datagran » à f624, barres qui se réordonnent en ≈ 16 im (ChatGPT Ads 6 % → 41 %), badge d'écart, phrase « Last click credited Google. The journey started in ChatGPT. »", "technique": "comparatif par bascule"},
+      {"t": "0:23-0:26", "what": "04 VOICE AGENT : carte de l'agent « Nova » (déclencheur, délai 30 s, objectif, escalade), clic sur l'interrupteur, notification « New lead · Maya Chen », anneau qui pulse autour de l'orbe", "technique": "configuration UI + notification"},
+      {"t": "0:26-0:33", "what": "05 THE CALL : orbe verte au centre d'un rayonnement de barres (vertes quand l'agent parle, blanches quand la cliente parle), transcription en bulles qui s'écrivent, étiquettes Homeowner / Bill / Intent 92/100, carte verte « Booked · Thu 10:00 AM »", "technique": "orbe vocale à forme d'onde radiale"},
+      {"t": "0:33-0:38", "what": "06 FOLLOW UP : téléphone avec SMS qui arrivent, liste à cocher à gauche (Text confirmation, Savings estimate, Reminder, HubSpot updated) et canaux SMS / EMAIL / WHATSAPP", "technique": "maquette de téléphone + check-list"},
+      {"t": "0:38-0:44", "what": "07 HUMANS IN THE LOOP : « AI executes. Humans decide. » (2e ligne en vert), carte « Needs approval », clic sur « Take over », « Ana López joined the call », toast « Deal moved to Proposal · $18,400 »", "technique": "carte d'approbation + passage de main"},
+      {"t": "0:44-0:51", "what": "08 ANALYTICS : 5 cartes KPI qui comptent (240 s → 28 s, 1 284 leads, 6,8× ROAS) en décalé de 3 im, courbe de revenus tracée de gauche à droite, chat « Ask Datagran », bouton « Apply shift », « Budget updated for next week »", "technique": "tableau de bord vivant"},
+      {"t": "0:51-0:53.5", "what": "Récap : Launch. Connect. Attribute. Call. Follow up. Hand off. Measure. Grow. — un mot centré par croche (7-8 im), coupe sèche, « Grow. » en vert par fondu de 3 im", "technique": "montage de verbes sur les croches"},
+      {"t": "0:53.5-0:57", "what": "Logo Datagran (pastille + barre) avec nom tapé lettre à lettre, « Your autonomous growth team. », URL en vert, fondu au noir final", "technique": "carton logo avec frappe"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120 BPM : temps aux im 0,8 + 15n, demi-temps 7,5 im plus loin. Accroche : « now ask » posé f16 (temps f15,8), « ChatGPT. » ≈ f31 (temps f30,8), « Be » net f61 (temps f60,8, attaque audio la plus forte à 2,009 s = drop), « the » f68 (demi-temps f68,3), « answer. » f76 (temps f75,8). Changements de chapitre : première image de la scène suivante à -2/0 im d'un temps pour les 10 (f119-121, f270, f359-361, f689, f779, f989, f1139, f1319, f1529). Récap : 8 mots sur 8 à -2 im d'un temps ou demi-temps (f1529, f1536, f1544, f1551, f1559, f1566, f1574, f1581). Clic de bascule f624 sur le demi-temps f623,3. Total : 25 gestes clés sur 25 à ±2 im de la grille des croches (hasard ≈ 67 % pour temps + demi-temps), dont 19 sur les temps seuls (hasard ≈ 33 %). Décalage typique : l'image précède la barre de 1-2 im. Mesures : atterrissages/demi-temps R = 0,804, p = 2,2e-05 ; basses z = 3,81. Les attaques audio tombent à des secondes et demi-secondes rondes (0,511 ; 1,01 ; 2,009 ; 29,013 ; 40,519) et coïncident avec des événements d'UI (réponse de l'agent à 29,0 s, clic « Take over » à 40,5 s).",
+    "synced": ["coupes", "texte", "impacts", "apparitions", "drop"],
+    "style_match": "Électro enjouée à 120 BPM, pulsation franche : coupes au noir sur les temps, mots sur les croches et changements d'état secs collent au « punchy » demandé et au néon.",
+    "how_built": "Le prompt ne parle pas de musique ; Claude a fixé une constante de 120 BPM (écrite dans le HUD) et placé chapitres, mots et clics sur des temps et demi-temps entiers. Les attaques audio exactement aux secondes et demi-secondes rondes suggèrent une bande-son générée en code au même tempo (probable), avec accents sur certains événements d'UI."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "HUD de film permanent avec chapitres",
+      "name_en": "cinematic HUD frame",
+      "t": "0:00-0:57",
+      "frames": "f0-f1709",
+      "fps": 30,
+      "mechanics": "Quatre coins en mono capitales gris ≈ 1,2 % de la hauteur, croix « + » aux angles : en haut « DATAGRAN / FILM 01 — THE GROWTH LOOP » et un timecode « T+20.033S » qui défile ; en bas le chapitre « 03 — ATTRIBUTE » (numéro en vert) et « 1920×1080 · 30 FPS · 120 BPM ». Une ligne verte en bas à gauche s'allonge pendant chaque chapitre (barre de progression). Oriente le spectateur et donne un caractère « film » à une démo.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes qui montent depuis un masque",
+      "name_en": "masked line rise",
+      "t": "0:00-0:01.1 ; 0:04.1-0:04.3 ; 0:12.1-0:12.3",
+      "frames": "f0-f32 ; f123-f129 ; f364-f369",
+      "fps": 30,
+      "mechanics": "Chaque ligne de titre glisse vers le haut d'environ une hauteur de ligne (≈ 5 % du cadre) dans un masque, en 3-4 im, ease-out (moitié du trajet à la 1re image, ≈ 85 % à la 2e). Lignes successives décalées de 2 im dans les titres de chapitre, d'un temps (15 im) dans l'accroche.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f2.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie fouettée vers le haut, mot qui atterrit sur le drop",
+      "name_en": "whip-up exit into drop word",
+      "t": "0:01.87-0:02.03",
+      "frames": "f56-f61",
+      "fps": 30,
+      "mechanics": "Le bloc de 3 lignes accélère vers le haut (ease-in) : ≈ 2 % puis ≈ 5 % puis sorti du masque en 3 im, avec flou vertical. « Be » apparaît flou à f59, barré de deux traits verts horizontaux (glitch) à f60, net à f61 : image d'impact sur le temps f60,8 et sur l'attaque la plus forte du morceau (2,009 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f58.jpg",
+      "illus": {"from": 56, "to": 77, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui entrent par défloutage sur les croches",
+      "name_en": "blur-in words on eighth notes",
+      "t": "0:02.03-0:02.53",
+      "frames": "f61-f76",
+      "fps": 30,
+      "mechanics": "« Be » (f61, temps), « the » (f66-f68, demi-temps), « answer. » (f74-f76, temps) : chaque mot apparaît déjà à sa place finale, très flou et gris, puis net en 3 im, sans déplacement. La phrase se construit à gauche d'un bloc centré, sans recentrage.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f58.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Soulignement vert sous le mot clé",
+      "name_en": "accent underline draw",
+      "t": "0:02.6-0:03",
+      "frames": "f78-f90",
+      "fps": 30,
+      "mechanics": "Trait vert néon d'épaisseur ≈ 0,5 % de la hauteur tracé de gauche à droite sous « answer. » seulement, avec halo. Utilisé une seule fois, il désigne le mot de la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée au noir floue entre chapitres",
+      "name_en": "blur dip-to-black",
+      "t": "0:03.87 ; 0:11.9 ; 0:22.9 ; 0:25.9 ; 0:32.9 ; 0:37.9 ; 0:43.9 ; 0:50.9",
+      "frames": "f116-f121 ; f357-f361 ; f687-f690 ; f777-f780 ; f987-f990 ; f1137-f1140 ; f1317-f1320 ; f1527-f1529",
+      "fps": 30,
+      "mechanics": "Toute la scène perd ≈ 40 % de luminosité (f-1), puis se floute et descend à ≈ 20 % (f0), noir à f+1, seule la lueur verte reste 1-3 im ; la nouvelle interface apparaît en fondu ≈ 4 im pendant que le titre monte de son masque. Nouvelle scène toujours sur un temps. Propre, mais identique 10 fois.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f358.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit titre à gauche, interface à droite",
+      "name_en": "headline-left / UI-right template",
+      "t": "0:04-0:51",
+      "frames": "f120-f1528",
+      "fps": 30,
+      "mechanics": "Titre de chapitre en 2 lignes dans le tiers gauche (≈ 4,5 % de hauteur de capitale), sous-titre gris en dessous ; fenêtre d'interface sur ≈ 55-60 % de la largeur à droite. Même gabarit dans 8 chapitres. Défaut : le texte d'UI fait ≈ 1 % de la hauteur, illisible sur un téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Prompt tapé puis carte construite ligne à ligne",
+      "name_en": "typed prompt then card build",
+      "t": "0:04.3-0:08",
+      "frames": "f129-f240",
+      "fps": 30,
+      "mechanics": "Le prompt s'écrit avec curseur à ≈ 50 caractères/s (≈ 1,6 s pour 80 caractères), puis « Building campaign… » en mono vert, puis les lignes de la carte (canal + budget, intentions en puces, aperçu de la pub, cases cochées) apparaissent par fondu-montée toutes les 0,3-0,5 s.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic qui fait basculer un bouton en état actif lumineux",
+      "name_en": "click-to-live button state",
+      "t": "0:07.5-0:08.6",
+      "frames": "f225-f258",
+      "fps": 30,
+      "mechanics": "Curseur qui rejoint « Launch campaign » (bouton blanc), clic, le bouton devient vert néon « Live ● » avec un halo (bloom) de ≈ 2× sa taille qui retombe. Même grammaire pour l'interrupteur de l'agent vocal (23,9-24,4 s) et « Take over » (40,5 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f270.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pub insérée dans une réponse qui s'écrit",
+      "name_en": "sponsored card in streamed answer",
+      "t": "0:09-0:12",
+      "frames": "f270-f357",
+      "fps": 30,
+      "mechanics": "Interface de chat sombre : question à droite, réponse qui s'écrit mot à mot, puis carte sponsorisée grisée (10,5 s) qui s'allume en pleine couleur avec liseré vert et étiquette « Sponsored » (11,0 s), curseur sur son bouton. Montre le produit dans son contexte réel.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Hub en étoile avec sources qui se branchent",
+      "name_en": "hub-and-spoke integrations",
+      "t": "0:12.3-0:17",
+      "frames": "f369-f509",
+      "fps": 30,
+      "mechanics": "Logo au centre dans un disque à halo, anneaux concentriques qui s'élargissent ; 6 pilules de sources apparaissent autour toutes les 2-4 im (f371, f373, f377, f381, f383, f387), reliées au centre par des traits fins où circulent de petits points lumineux vers le logo.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 369, "to": 429, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs qui roulent en ease-out",
+      "name_en": "rolling counters",
+      "t": "0:13.0-0:16.5 ; 0:44.4-0:46.3",
+      "frames": "f390-f495 ; f1332-f1389",
+      "fps": 30,
+      "mechanics": "Impressions 0 → 22 081 (13,5 s) → 89 161 (14,0) → 134 595 (14,5) → 162 602 (15,0) → 177 397 (15,5) → 184 218 (16,5) : forte décélération (expo) sur 3,5 s. KPI d'analytics : 240 s → 28 s (compte à rebours), 0,4× → 6,8×, cartes décalées de 3 im, en ≈ 1,9 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Frise de parcours parcourue par un point lumineux",
+      "name_en": "journey timeline with travelling dot",
+      "t": "0:17.3-0:19.5",
+      "frames": "f519-f585",
+      "fps": 30,
+      "mechanics": "Ligne horizontale à ≈ 55 % de la hauteur avec 6 nœuds ronds étiquetés ; un point vert brillant voyage de nœud en nœud (≈ 0,3 s par segment) et allume chacun ; le dernier devient « $ » vert avec « $18,400 ». Rend l'attribution multi-touch lisible en une image.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Comparatif par bascule : les barres se réordonnent",
+      "name_en": "toggle comparison bar re-sort",
+      "t": "0:20.8-0:21.8",
+      "frames": "f624-f654",
+      "fps": 30,
+      "mechanics": "Clic sur la bascule « Datagran » à f624 (demi-temps), la pastille glisse en 2 im et devient verte ; la barre ChatGPT Ads passe de 6 % à 41 % en ≈ 16 im en ease-in-out (6, 7, 8, 10, 12, 16, 20, 25, 30, 33, 36, 38, 39, 40, 41) et devient verte, Google Search tombe de 58 % à 27 % en même temps ; badge vert d'écart à f642-644 ; phrase de conclusion en fondu de 3 im à f652.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 622, "to": 654, "n": 7}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Orbe vocale à rayonnement, couleur par locuteur",
+      "name_en": "radial waveform voice orb",
+      "t": "0:26-0:33",
+      "frames": "f780-f989",
+      "fps": 30,
+      "mechanics": "Orbe verte (≈ 12 % de la hauteur) qui naît dans un cercle pointillé (f780-f783) puis s'entoure de barres radiales dont la longueur suit la voix (jusqu'à ≈ 2× le rayon). Barres vertes quand l'agent parle, blanches quand la cliente parle ; transcription à droite en bulles qui s'écrivent. Une forme pour « voix », lisible sans son.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f778.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone et liste à cocher des relances",
+      "name_en": "phone mock with checklist",
+      "t": "0:33-0:38",
+      "frames": "f990-f1139",
+      "fps": 30,
+      "mechanics": "Maquette de téléphone au centre-droit (≈ 75 % de la hauteur), SMS qui arrivent un par un ; à gauche, 4 lignes cochées en vert l'une après l'autre (≈ 1 s d'écart), reliées par des pointillés aux étiquettes de canaux à droite du téléphone. Lent pour l'information donnée.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'approbation et passage de main à un humain",
+      "name_en": "approval card handoff",
+      "t": "0:38-0:44",
+      "frames": "f1140-f1319",
+      "fps": 30,
+      "mechanics": "Carte « Needs approval » avec 4 champs, boutons Approve / Edit / Take over ; le curseur clique « Take over » à 40,5 s (attaque audio 40,519 s) ; la ligne de boutons est remplacée par « Ana López joined the call » avec avatar, puis toast vert « Deal moved to Proposal · $18,400 ».",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tableau de bord qui se remplit puis répond",
+      "name_en": "live dashboard with AI answer",
+      "t": "0:44-0:51",
+      "frames": "f1320-f1528",
+      "fps": 30,
+      "mechanics": "5 cartes KPI en décalé de 3 im, courbe de revenus tracée de gauche à droite en ≈ 1,4 s (45,5-46,9 s) avec aire verte, étiquette de valeur au bout ; panneau « Ask Datagran » : question tapée, réponse avec chiffres verts, bouton « Apply shift » cliqué, confirmation cochée. Très dense pour 7 s.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récap d'un verbe par croche",
+      "name_en": "eighth-note verb recap",
+      "t": "0:51-0:53.5",
+      "frames": "f1529-f1604",
+      "fps": 30,
+      "mechanics": "Fond noir à lueur, un mot centré ≈ 7 % de la hauteur : Launch. Connect. Attribute. Call. Follow up. Hand off. Measure. Grow. — coupe sèche toutes les 7-8 im (une croche à 120 BPM), chaque changement 2 im avant la barre. Le dernier, « Grow. », passe du vert sombre au vert néon en 3 im. Résume les 8 chapitres en 2,5 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-move-f1567.jpg",
+      "illus": {"from": 1527, "to": 1585, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche en problème → promesse",
+      "name_en": "problem-promise hook",
+      "t": "0:00-0:04",
+      "frames": "f0-f119",
+      "fps": 30,
+      "mechanics": "« Your buyers now ask ChatGPT. » (constat, mot clé en vert) puis « Be the answer. » (promesse, sur le drop) : 7 mots, 4 s, avant toute interface.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton logo avec nom tapé",
+      "name_en": "typed logo end card",
+      "t": "0:53.5-0:57",
+      "frames": "f1605-f1709",
+      "fps": 30,
+      "mechanics": "Pastille + barre verte du logo, nom « data gran » qui s'écrit lettre à lettre en ≈ 0,4 s, tagline grise « Your autonomous growth team. » puis URL mono verte en fondu, maintien ≈ 2,5 s, fondu au noir sur la dernière demi-seconde.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Vert sémantique : ce que le produit apporte",
+      "name_en": "semantic accent color",
+      "t": "0:00-0:57",
+      "frames": "f0-f1709",
+      "fps": 30,
+      "mechanics": "Le vert n'apparaît que sur ce qui relève de Datagran ou du gain : « ChatGPT. », « Humans decide. », la barre ChatGPT Ads après bascule, « Booked », « Grow. ». Tout le reste est blanc ou gris. Le regard trouve le message en 0,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Noir à lueur radiale verte et grille de points",
+      "name_en": "radial glow dark background",
+      "t": "0:00-0:57",
+      "frames": "f0-f1709",
+      "fps": 30,
+      "mechanics": "Fond noir pur avec une lueur verte très sombre (#0B2A0B) centrée derrière le contenu, plus visible pendant les noirs de transition ; grille de points à ≈ 3 % d'opacité. Profondeur sans bruit visuel.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f358.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Nouvelle scène sur le temps, image 1-2 im en avance",
+      "name_en": "scene changes on the beat",
+      "t": "0:04 ; 0:09 ; 0:12 ; 0:17 ; 0:23 ; 0:26 ; 0:33 ; 0:38 ; 0:44 ; 0:51",
+      "frames": "f120, f270, f360, f510, f690, f780, f990, f1140, f1320, f1530",
+      "fps": 30,
+      "mechanics": "Les chapitres commencent tous sur un temps entier (secondes rondes à 120 BPM) ; la sortie (assombrissement, flou, noir) occupe les 3-4 im qui précèdent, si bien que le noir tombe ≈ 2 im avant la barre et la nouvelle interface sur le temps. Les fins de chapitre ne respectent pas toujours la mesure (9, 17, 23, 33 s tombent en milieu de mesure).",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1138.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots d'accroche et de récap sur la grille des croches",
+      "name_en": "words on eighth-note grid",
+      "t": "0:00-0:02.6 ; 0:51-0:53.5",
+      "frames": "f16, f31, f61, f68, f76 ; f1529-f1581",
+      "fps": 30,
+      "mechanics": "Accroche : une ligne par temps (0,5 s) puis, après le drop, un mot par croche (0,25 s). Récap : un mot par croche pendant 2 mesures. Accélération du débit (noire → croche) au moment du drop et au final : le texte suit l'énergie de la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f1528.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Caméra fixe pendant tout le film",
+      "name_en": "locked-off camera",
+      "t": "0:04-0:51",
+      "frames": "f120-f1528",
+      "fps": 30,
+      "mechanics": "Aucun zoom, panoramique ni parallaxe : tout le mouvement est interne aux interfaces (frappe, compteurs, curseur). Le détecteur compte 64 % de maintiens. Un zoom calibré sur la valeur clé (41 %, « Booked », 6,8×) aurait guidé l'œil et réglé la lisibilité.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Le prompt liste 8 étapes dans l'ordre (« creating… then connecting… then… ») : Claude en fait 8 chapitres numérotés plus une accroche et un récap. Un scénario utilisateur explicite produit un récit clair et complet."},
+    {"kind": "direction", "insight": "« modern slick and punchy » a donné noir + néon, grotesque serrée, coupes au noir et mots sur les croches. Le mot « punchy » semble avoir poussé vers le tempo et les verbes courts du récap."},
+    {"kind": "inputs", "insight": "Un simple lien vers le site suffit pour le nom, la promesse (« autonomous growth team ») et la couleur de marque probable ; le client fictif (Brightside Solar, Maya Chen) est inventé pour rendre la démo concrète."},
+    {"kind": "build", "insight": "Le HUD affiche « 30 FPS · 120 BPM » : Claude a construit la timeline sur une constante de tempo, ce qui explique la synchro alors que le prompt ne dit rien de la musique. Demander explicitement « BPM fixe, scènes en temps » rend cela reproductible."},
+    {"kind": "qa", "insight": "Aucune consigne de format de diffusion : texte d'interface à ≈ 1 % de la hauteur et aucun zoom. Pour les réseaux, imposer une taille minimale de texte ou des recadrages sur l'info clé."},
+    {"kind": "other", "insight": "Sans demande de variété, Claude répète la même transition à chaque chapitre ; préciser 2-3 transitions motivées (zoom dans un élément, match cut) casserait la monotonie."}
+  ],
+  "steal": [
+    "Encadrer une démo d'un HUD de film : titre, chapitre numéroté, timecode, barre de progression, en mono capitales à 1 % de hauteur.",
+    "Accroche : sortie fouettée vers le haut en 3 im, premier mot net sur le drop avec trait glitch, puis un mot par croche.",
+    "Récap final : un verbe par croche (7-8 im à 120 BPM), coupe sèche, le dernier en couleur d'accent.",
+    "Comparatif avant/après par bascule : clic, barres qui se réordonnent en 16 im ease-in-out, badge d'écart.",
+    "Couleur sémantique : l'accent ne marque que ce que le produit apporte, tout le reste en blanc et gris."
+  ],
+  "flaws": [
+    "Texte d'interface à ≈ 1 % de la hauteur : illisible sur mobile, aucun zoom pour cadrer l'info.",
+    "Même transition (assombrissement flou puis noir) répétée 10 fois.",
+    "Caméra fixe pendant 50 s : tout le mouvement reste confiné dans les fenêtres.",
+    "Chapitre analytics surchargé : 5 KPI, une courbe et un chat lus en 7 s."
+  ],
+  "deep_study": {"worth": true, "why": "Vidéo native à 30 fps, mais l'accroche (0-4 s) et le récap (51-54 s) sont des modèles reproductibles de calage texte/musique à 120 BPM (lignes au temps, mots aux croches, image 1-2 im en avance) et le comparatif par bascule mérite d'être relevé image par image ; le reste de l'UI n'en a pas besoin."}
+}

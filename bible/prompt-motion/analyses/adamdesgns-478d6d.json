@@ -1,0 +1,412 @@
+{
+  "slug": "adamdesgns-478d6d",
+  "title": "Fitters Bible app promo",
+  "handle": "@Adamdesgns",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo d'app cohérente et documentée (vraies formules de tuyauteur, interface crédible), coupes calées à l'image près sur 120 BPM ; mais milieu lent, glitchs et bandes diagonales génériques, signature finale trop brève.",
+  "summary": "Promo de 15 s pour Fitters Bible, appli de référence des tuyauteurs, déguisée en showreel : étincelle de soudure qui trace un tuyau coté, croquis au doigt qui se redresse en isométrique, calcul d'offset roulé en 3D avec la vraie formule, compteurs, téléphone, puis rafale de huit fonctions en glitch sur les demi-temps et logo-bride révélé par un flare. Forte cohérence métier et synchro ; quelques effets génériques.",
+  "prompt_vs_result": [
+    "Même prompt de showreel que d'autres vidéos du corpus (« go all out »), plus une parenthèse : « About the pipefitters bible ». Rien sur le produit, la palette, la musique ni la structure.",
+    "Claude a inventé l'appli Fitters Bible, ses fonctions (iso pad, takeouts, offsets, photo measure, mode nuit), ses chiffres, le slogan, le logo-bride, la vraie formule d'offset roulé et 7 chapitres calés à 120 BPM.",
+    "La parenthèse a suffi à transformer un showreel en promo produit très documentée. Il aurait fallu fournir les vraies fonctions et captures de l'appli, la musique, et imposer une tenue finale plus longue du logo."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#030404", "role": "fond quasi noir de toutes les scènes"},
+      {"hex": "#E0E4E6", "role": "gris métal clair : titres et chiffres en dégradé vers #909090"},
+      {"hex": "#F8C038", "role": "or ambré : CUT ONCE., chiffres de calcul, OFFSETS, fond PHOTO MEASURE (dégradé vers #C09028)"},
+      {"hex": "#48A0F8", "role": "bleu électrique : tuyau isométrique, valeurs vérifiées, anneau du logo, fond ONE HAND."},
+      {"hex": "#0D6DCD", "role": "bleu bouton : « Clean up drawing »"},
+      {"hex": "#E09818", "role": "orange de lueur : tuyau du calcul, nœuds, angles"},
+      {"hex": "#2F68A2", "role": "bleu acier : fond du mot TAKEOUTS"},
+      {"hex": "#DEE0E2", "role": "gris clair radial : fond du mot ISO PAD"}
+    ],
+    "type": "Grotesque condensée très grasse en capitales (probable Anton), remplissage en dégradé métal ou or, 9-33 % de la hauteur ; mono espacée (type JetBrains Mono) pour HUD, cotes et tableaux ; grotesque neutre grasse (type Inter) pour l'interface.",
+    "texture": "Fond quasi noir avec grille fine (carrée sur l'ouverture, isométrique sur ISO PAD, trame de points sur la base de données). Dégradés métalliques sur les titres et le tuyau, halos bleus et orangés (glow), étincelles en particules, aberration chromatique et voile clair sur les impacts, flou de mouvement directionnel, vignettage radial sur les fonds du montage final, traits de vitesse radiaux.",
+    "style": "Industriel technique sombre, or et bleu",
+    "coherence": "Le système tient par le HUD discret (« FITTERS BIBLE — SHOWREEL », time code, chapitre numéroté, barre de progression segmentée), par le vocabulaire du dessin technique (cotes en pieds-pouces, angles, nœuds, grilles, bride) et par une bichromie or/bleu sur noir : l'or porte la mesure et le calcul, le bleu porte l'appli et les données vérifiées. Le montage final change de fond à chaque mot (bleu acier, noir, gris clair, or, bleu), ce qui casse volontairement le système pour l'énergie ; les volets à bandes diagonales et les glitchs sont les seuls éléments étrangers à l'univers tuyauterie."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120 BPM (pulsation nette 5,66) : 1 temps = 0,5 s = 30 im, demi-temps = 15 im. L'animation est écrite en secondes rondes (2,00 ; 4,00 ; 6,50 ; 8,50 ; 10,50 ; 10,75 … 13,00 s), qui sont toutes des temps ou des demi-temps à 120 BPM ; la grille audio tombe 1 im plus tard (temps à f1 + 30k, demi-temps à f16 + 30k), donc chaque coupe devance l'attaque d'1 im (17 ms). Chapitres d'environ 4 temps (2 s) : changements à 2,0 / 4,0 / 6,5 / 8,5 / 10,5 / 12,5 s. Montage final : 9 coupes espacées de 15 im (croches) de f630 à f750, puis flare à f780. Creux d'énergie : 2,7-3,1 s (trait du croquis qui avance lentement), 3,3-3,9 s (dessin redressé, étiquettes qui apparaissent une à une) et 4,2-4,7 s (frappe de valeurs en petit corps), soit 1,6 s où rien de gros ne bouge. Densité inégale : environ un geste par seconde entre 2,5 et 8,5 s, puis un mot par demi-temps de 10,5 à 12,5 s. La fin se dissout trop vite : signature complète vers 14,4 s, fondu au noir dès 14,6 s.",
+    "timeline": [
+      {"t": "0:00-0:00.15", "what": "Noir et silence", "technique": "amorce"},
+      {"t": "0:00.15-0:00.50", "what": "Étincelle de soudure qui s'allume en bas à gauche et crépite, sur l'attaque la plus forte de la piste", "technique": "étincelle en particules + bruitage"},
+      {"t": "0:00.50-0:01.25", "what": "« MEASURE TWICE. » monte derrière un masque ; l'étincelle trace un tuyau métallique à deux coudes, les cotes apparaissent derrière elle", "technique": "tracé guidé par une tête lumineuse"},
+      {"t": "0:01.35-0:01.80", "what": "« CUT ONCE. » claque en or avec séparation RVB et voile clair, sur l'entrée du gros de la musique", "technique": "claquage de texte"},
+      {"t": "0:01.80-0:02.03", "what": "La caméra plonge et pivote le long du tuyau, traits de vitesse, coupe sur le temps", "technique": "plongée le long de l'objet"},
+      {"t": "0:02.03-0:03.15", "what": "Grille isométrique, un cercle de doigt dessine un trait tremblé ; « SKETCH IT. » ; bouton « Clean up drawing »", "technique": "croquis au doigt"},
+      {"t": "0:03.15-0:03.95", "what": "Clic : le trait se redresse en tuyau isométrique bleu lumineux, « SNAP IT. », nœuds et cotes qui claquent", "technique": "avant/après par redressement"},
+      {"t": "0:03.95-0:04.10", "what": "Bandes diagonales jaunes qui balaient l'écran", "technique": "volet à bandes diagonales"},
+      {"t": "0:04.10-0:06.50", "what": "« ROLLED OFFSET » : valeurs tapées, boîte filaire 3D, tuyau qui s'allume en diagonale, formule, compteur 0 → 28.284 converti en 28-5/16\"", "technique": "schéma technique 3D + compteur expo"},
+      {"t": "0:06.50-0:08.50", "what": "Voile gris, iris en trame de points, compteur à rouleaux jusqu'à 5,820, barre vérifiés/calculés, un point bleu par fiche ; « 04 — 5,820 RECORDS »", "technique": "compteur à rouleaux"},
+      {"t": "0:08.50-0:10.50", "what": "Bandes bleues ; téléphone incliné qui s'allume, 36 FITTING TAKEOUTS, coude dessiné, recherche tapée, fiche résultat 3\", bascule nuit/jour", "technique": "démo d'interface"},
+      {"t": "0:10.50-0:12.50", "what": "Rafale de fonctions en glitch, un mot par demi-temps, un fond par mot, compteur « 0X / 08 »", "technique": "montage mot par croche"},
+      {"t": "0:12.50-0:13.00", "what": "« ONE BOOK. » en petit sur un tunnel de vitesse, montée sonore", "technique": "chute par changement d'échelle"},
+      {"t": "0:13.00-0:13.30", "what": "Traînées qui convergent, flare en croix, anneaux d'onde, le logo-bride jaillit", "technique": "révélation de logo par flare"},
+      {"t": "0:13.30-0:14.50", "what": "Le logo glisse à gauche, les lettres de FITTERS BIBLE arrivent de la droite, slogan et puces de fonctions", "technique": "signature et puces"},
+      {"t": "0:14.50-0:15.06", "what": "Fondu au noir avec fondu sonore", "technique": "fondu final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Tempo 120 BPM ; temps audio à f1 + 30k, demi-temps à f16 + 30k (attaques fortes à 4,017 / 6,525 / 8,522 / 10,019 / 10,774 / 11,018 / 11,273 / 11,517 / 11,773 / 12,016 / 12,272 s). Sur 33 gestes clés datés à l'image près : 25 tombent à ±2 im d'un temps ou d'un demi-temps (76 %, hasard ≈ 33 %). Parmi eux, les 14 coupes et volets (f120, f240, f390, f510, f630, f645, f660, f675, f690, f705, f720, f735, f750, f780), tous exactement 1 im avant la barre ; le montage final fait 10 sur 10. Les 11 autres : titre f30, « SKETCH IT. » f137, redressement f195, nœuds f207-213, départ de la lueur f286, arrivée f301, compteur f528, « FITTING » f541, « TAKEOUTS » vers f571 (probable), fiche résultat f601, bascule nuit/jour f616. Sur les 8 gestes hors grille, 4 tombent sur un bruitage : allumage de l'étincelle f9 (attaque la plus forte de la piste, 0,13 s), « CUT ONCE. » f81 (accent f82 et montée de +7 dB entre 1,35 et 1,50 s), clic du bouton f189 (3,15 s, sur une double croche), ouverture de la trame f410. Hors grille et sans attaque : apparition du bouton f173, départ et arrivée du compteur d'offset (f320, f366-371), arrivée de 5,820 vers f474. L'indice automatique (« synchro forte », départs/demi-temps p = 1e-8, corrélation aux attaques z = 5,1) confirme ce comptage.",
+    "synced": ["coupes", "apparitions", "texte", "flashs", "couleur", "impacts", "departs"],
+    "style_match": "Électro cinématique à 120 BPM avec bruitages (étincelle, clic, cliquetis, montée) : coupes sèches, glitchs sur les croches, flare sur la montée. Ton technique et industriel cohérent.",
+    "how_built": "Le prompt ne parle pas de son. La timeline est écrite en secondes rondes, toutes sur la grille de 120 BPM (1 temps = 0,5 s), et des bruitages tombent exactement sur des événements visuels hors grille (étincelle à 0,13 s, clic à 3,15 s, trois clics de nœuds à 3 im d'écart, montée avant le flare) : image et bande-son ont très probablement été composées ensemble sur la même horloge (en code), ou une musique à 120 BPM a été choisie puis habillée de bruitages placés sur l'image. Le fondu sonore final (−9 dB à 13,8 s, −41 dB à 15 s) suit le fondu au noir."
+  },
+  "techniques": [
+    {
+      "cat": "particles",
+      "name_fr": "Étincelle de soudure qui trace le tuyau",
+      "name_en": "welding-spark path reveal",
+      "t": "0:00.15-0:01.25",
+      "frames": "f9-f75",
+      "fps": 60,
+      "mechanics": "Point lumineux chaud (cœur presque blanc, halo orangé) qui s'allume à f9 sur l'attaque la plus forte de la piste et projette des étincelles (≈ 30-60 traits courts qui retombent). À partir de f31 il avance et laisse derrière lui un tuyau métallique (dégradé gris, reflet clair, ≈ 2 % de la hauteur d'épaisseur) : course horizontale, coude à 45°, montée, second coude, sortie à droite vers f75. Vitesse quasi constante (≈ 2,2 % de la largeur par image), sans ralentir aux coudes. Les cotes (24'-0\", 9'-0\", 45° en orange) apparaissent derrière la tête.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f84.jpg",
+      "illus": {"from": 9, "to": 78, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte derrière un masque, sur le temps",
+      "name_en": "masked rise reveal",
+      "t": "0:00.48-0:00.55",
+      "frames": "f29-f33",
+      "fps": 60,
+      "mechanics": "« MEASURE TWICE. » (grotesque condensée très grasse, dégradé blanc → gris, hauteur de capitale ≈ 9 % du cadre, coin haut-gauche à ≈ 6 % des bords) monte derrière une ligne de masque en ≈ 4 im (f29-f33), sur le temps f31. Même entrée pour « SKETCH IT. » (f137-f141, demi-temps f136) et pour le slogan final.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Claquage de texte avec séparation RVB et voile",
+      "name_en": "text slam with RGB split",
+      "t": "0:01.35-0:01.45",
+      "frames": "f81-f87",
+      "fps": 60,
+      "mechanics": "« CUT ONCE. » (or #F8C038 → #C09028, hauteur de capitale ≈ 13 % du cadre, quart bas-droit) apparaît à ≈ 135 % d'échelle, dédoublé en rouge, vert et bleu et flou, pendant que tout le cadre s'éclaircit (voile gris) ; retour à 100 % en 6 im (ease-out), séparation RVB qui se résorbe, voile disparu à f87. Calé sur l'accent audio f82 et la montée de +7 dB, pas sur la grille (+5 im après le demi-temps f76).",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f84.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée en vrille le long du tuyau",
+      "name_en": "fly-along with roll",
+      "t": "0:01.77-0:02.03",
+      "frames": "f106-f122",
+      "fps": 60,
+      "mechanics": "La caméra part vers f106-108 (demi-temps), zoome en accélérant (ease-in) sur la partie verticale du tuyau en pivotant d'environ 80° ; traits de vitesse radiaux, flou directionnel, voile clair, « CUT ONCE. » sort à droite avec flou. À f120 gros plan sur le tuyau avec la cote « 9'-0\" » tournée, coupe sur le temps f121 vers la grille isométrique. Transition motivée par l'objet lui-même.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Croquis au doigt qui se redresse en isométrique",
+      "name_en": "sketch-to-snap before/after",
+      "t": "0:02.25-0:03.70",
+      "frames": "f135-f222",
+      "fps": 60,
+      "mechanics": "Un cercle de toucher (≈ 3 % de hauteur) dessine un trait blanc tremblé de f138 à f186 (0,8 s, vitesse constante, gigue aléatoire) ; le bouton « Clean up drawing » (pilule sombre puis bleue #0D6DCD, centré en bas) apparaît à f173 ; clic à f189 avec bruitage. En 6 im (f189-f195) le trait devient 4 segments isométriques bleus lumineux (#48A0F8 avec halo) et le titre passe de « SKETCH IT. » gris à « SNAP IT. » bleu ; petite oscillation amortie des segments (f198-f204) ; nœuds orange et « 90° » apparaissent à f207-f213 avec trois clics sonores décalés d'environ 3 im (f212, f215, f218), puis les cotes en pieds-pouces.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 183, "to": 216, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet à bandes diagonales colorées",
+      "name_en": "diagonal stripe wipe",
+      "t": "0:03.95-0:04.07",
+      "frames": "f237-f244",
+      "fps": 60,
+      "mechanics": "3 bandes parallèles inclinées d'environ 65° (or foncé, jaune #F8C038, jaune clair) traversent l'écran de gauche à droite en 7 im ; la scène change sous les bandes à f240, 1 im avant le temps ; liseré RVB sur les bords. Reprise à l'identique en bleus à f507-f513 (changement à f510). Ponctue les deux changements de chapitre les plus nets, mais n'a aucun lien avec l'univers tuyauterie.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f240.jpg, microM-003-move-f513.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Schéma technique 3D avec calcul en direct",
+      "name_en": "live technical diagram",
+      "t": "0:04.10-0:05.35",
+      "frames": "f246-f321",
+      "fps": 60,
+      "mechanics": "Étiquette « ROLLED OFFSET » (mono orange, interlettrage large, souligné) ; valeurs tapées caractère par caractère (≈ 1 caractère toutes les 1,5 im) : SET 12.000, ROLL 16.000. Boîte filaire en pointillés en perspective, plan triangulaire bleu translucide, étiquettes en pilule « SET 12\" », « ROLL 16\" », « TRUE OFFSET 20\" ». Le tuyau s'allume en orange en diagonale de f286 (demi-temps) à f301 (temps), tête lumineuse comme sur l'ouverture. Formule √(12² + 16²) = 20.000 puis × 1.4142, 45° : la vraie formule de l'offset roulé à 45°, contenu métier exact.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur en ease-out exponentiel puis conversion en fraction",
+      "name_en": "expo counter + unit conversion",
+      "t": "0:05.33-0:06.18",
+      "frames": "f320-f371",
+      "fps": 60,
+      "mechanics": "« TRAVEL » 0 → 28.284 en ≈ 46 im (f320-f366) ; valeurs relevées toutes les 5 im : 1,1 ; 15,4 ; 22,6 ; 25,8 ; 27,3 ; 27,8 ; 28,04 ; 28,20 ; 28,25 ; 28,284 : l'écart restant est divisé par ≈ 2,2 toutes les 5 im (expo.out, constante ≈ 6 im). Chiffres or condensés ≈ 17 % de la hauteur, flou vertical sur les chiffres qui tournent. À f368-371 le décimal devient « 28-5/16\" » (unité de chantier, arrondi au seizième exact) : la donnée passe du calcul à l'usage.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 316, "to": 372, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris en trame de points",
+      "name_en": "halftone dot iris",
+      "t": "0:06.50-0:07.02",
+      "frames": "f390-f421",
+      "fps": 60,
+      "mechanics": "À f390 (1 im avant le temps) voile gris plein cadre avec bruitage grave, puis un disque de trame de points apparaît au centre (f396) et s'élargit en anneau (f401-f421) qui révèle le panneau du compteur ; vignettage fort. Le motif de points annonce la légende « one dot each ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur à rouleaux",
+      "name_en": "odometer counter",
+      "t": "0:06.83-0:07.93",
+      "frames": "f410-f476",
+      "fps": 60,
+      "mechanics": "Chaque chiffre est une roue qui défile verticalement avec flou et images fantômes ; 0 → 5,820 en ≈ 65 im (2,25x à f426, 3,9xx à f431, 4,333 à f436, 4,571 à f441, 5,095 à f446, 5,7x7 à f451, 5,820 à f471-476) ; les chiffres de gauche se figent avant ceux de droite. Chiffres blanc-gris ≈ 14 % de la hauteur dans un panneau sombre ; légende mono « CANONICAL RECORDS · ONE DOT EACH ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barre partagée vérifiés/calculés et un point par fiche",
+      "name_en": "split progress bar + dot field",
+      "t": "0:07.60-0:08.42",
+      "frames": "f456-f505",
+      "fps": 60,
+      "mechanics": "Barre fine sous le compteur : segment bleu « 141 VERIFIED » et blanc « 5,679 CALCULATED », les deux compteurs montent ensemble (somme exacte 5,820) ; des points bleus lumineux apparaissent un à un sur une trame de fond. Corps ≈ 1,5 % de la hauteur : illisible en vidéo, l'idée passe surtout par les points.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f513.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone incliné qui s'allume dans le noir",
+      "name_en": "phone reveal from darkness",
+      "t": "0:08.55-0:09.02",
+      "frames": "f513-f541",
+      "fps": 60,
+      "mechanics": "Après le volet bleu, le téléphone apparaît à droite, d'abord sombre et très incliné (perspective d'environ 25°), puis s'éclaire et se redresse en partie en ≈ 15 im (f513-f527) ; liseré bleu lumineux autour de la coque, légère rotation résiduelle (≈ −10°). Interface sombre crédible : 9:41, titre gras « Fitters Bible », champ de recherche, barre d'onglets Search / Takeouts / Iso Pad / Calc.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f513.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grand chiffre, mot empilé et schéma de raccord",
+      "name_en": "stat with stacked label and diagram",
+      "t": "0:08.80-0:10.00",
+      "frames": "f528-f600",
+      "fps": 60,
+      "mechanics": "Grand nombre gris métal (≈ 25 % de la hauteur) qui compte 01 → 36 avec flou (01, 05, 09, 15, 17, 20 de f528 à f533, puis ralentissement) ; « FITTING » bleu apparaît sur le temps f541, « TAKEOUTS » blanc vers f571 (probable), empilés à droite du nombre. À gauche, un coude à 90° tracé en contour bleu avec axe en tirets et cote « C-E » : le chiffre, le mot et le schéma disent la même chose.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f513.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Recherche tapée, fiche résultat, bascule nuit/jour",
+      "name_en": "typed search, result card, theme toggle",
+      "t": "0:09.00-0:10.50",
+      "frames": "f540-f630",
+      "fps": 60,
+      "mechanics": "Dans le téléphone : « 2 in » puis « 2 in 90 LR takeout » tapés ; la fiche « 90° LR ELBOW · 2 IN · BW » avec un énorme « 3\" » et « Center to end » apparaît sur le temps f601 (attaque audio à 10,02 s) ; à f616 (demi-temps, attaque à 10,26 s) l'interface passe du thème sombre au thème clair et le libellé « NIGHT / DAY » allume DAY en or. Démonstration d'usage complète en 1,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rafale de fonctions, un mot par croche",
+      "name_en": "eighth-note word montage",
+      "t": "0:10.50-0:12.50",
+      "frames": "f630-f750",
+      "fps": 60,
+      "mechanics": "SEARCH (f630), TAKEOUTS (f645), OFFSETS (f660), ISO PAD (f675), DRAWING PDFS (f690), PHOTO MEASURE (f705), NIGHT MODE (f720), ONE HAND. (f735), ONE BOOK. (f750) : une coupe toutes les 15 im (croche à 120 BPM), chaque fois 1 im avant l'attaque audio. Mots en grotesque condensée, hauteur de capitale ≈ 33 % du cadre, centrés ; HUD propre « 0X / 08 » en haut à gauche, « FITTERS BIBLE » en haut à droite, fine ligne de progression en bas. 0,25 s par mot : lisible pour 1-2 mots courts, limite pour « DRAWING PDFS ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f675.jpg, microM-005-cut-f720.jpg",
+      "illus": {"from": 672, "to": 695, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Transition glitch en tranches horizontales",
+      "name_en": "horizontal slice glitch",
+      "t": "0:10.50-0:12.30",
+      "frames": "f630-f738",
+      "fps": 60,
+      "mechanics": "À chaque changement de mot : 1re image avec l'ancien et le nouveau mot superposés, découpés en tranches horizontales décalées latéralement (≈ 5-10 % de largeur) ; 2 à 3 images où le nouveau mot reste dédoublé et étiré, damier de pixels sur les bords ; net à +4 im. Répété 9 fois à l'identique.",
+      "verdict": "cliche",
+      "evidence": "microM-004-cut-f675.jpg, microM-005-cut-f720.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un fond par mot",
+      "name_en": "per-word background swap",
+      "t": "0:10.50-0:12.50",
+      "frames": "f630-f750",
+      "fps": 60,
+      "mechanics": "Chaque mot a son fond, changé sur la coupe : bleu acier #2F68A2 (TAKEOUTS), noir (OFFSETS en or), gris clair radial #DEE0E2 (ISO PAD en noir), noir (DRAWING PDFS en gris), or #F6B936 (PHOTO MEASURE en noir), noir avec disque sombre (NIGHT MODE), bleu #48A0F7 (ONE HAND. en noir). Vignettage radial ; un pictogramme en bas à droite et un motif fantôme en fond (axes isométriques, viseur, téléphone) rappellent la fonction.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f675.jpg, microM-005-cut-f720.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chute par changement d'échelle : ONE HAND. → ONE BOOK.",
+      "name_en": "scale-drop punchline",
+      "t": "0:12.25-0:13.00",
+      "frames": "f735-f780",
+      "fps": 60,
+      "mechanics": "Après sept fonctions en capitales énormes, « ONE HAND. » (noir sur bleu) puis « ONE BOOK. » en petit, mono très espacé (≈ 4 % de la hauteur, tiers haut) sur un tunnel de vitesse sombre avec lueur bleue au centre : le changement d'échelle et le calme visuel font la chute. Une montée sonore (attaques de plus en plus serrées de f748 à f776) prépare le flare.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f783.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Révélation du logo par flare en croix",
+      "name_en": "cross flare logo reveal",
+      "t": "0:12.87-0:13.28",
+      "frames": "f772-f797",
+      "fps": 60,
+      "mechanics": "Traînées lumineuses horizontales puis verticales qui convergent vers le centre (f772-f779) ; éclat plein cadre gris-bleu à f780 (1 im avant le temps) avec flare en croix aux bords RVB ; anneaux concentriques qui s'élargissent et sortent du cadre en ≈ 6 im (f781-f787) ; le logo jaillit au centre et grossit d'environ 6 % à 13 % de la hauteur jusqu'à f797 (ease-out), entouré d'étoiles filantes radiales.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f783.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo métier : une bride de tuyauterie",
+      "name_en": "trade-object logo",
+      "t": "0:13.00-0:15.06",
+      "frames": "f780-f899",
+      "fps": 60,
+      "mechanics": "Anneau gris clair à 8 trous de boulon avec un anneau intérieur bleu #4090E0 : une bride, objet que tout tuyauteur reconnaît, lisible à petite taille, qui reprend le bleu de l'appli. Rapport logo/mot-symbole ≈ 1 : 1 en hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f783.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres du mot-symbole qui arrivent de la droite",
+      "name_en": "staggered letter slide-in",
+      "t": "0:13.50-0:14.40",
+      "frames": "f811-f864",
+      "fps": 60,
+      "mechanics": "Le logo glisse vers la gauche avec flou (≈ f811-f825) ; les lettres de « FITTERS BIBLE » (grotesque condensée, dégradé blanc → gris, ≈ 15 % de la hauteur) arrivent de la droite une à une avec traînée et flou horizontal, décalage ≈ 2-3 im par lettre, gris sombre → blanc en se posant ; le slogan « Field answers. One hand. Night or day. » (grotesque grasse grise ≈ 4 %) monte derrière un masque ; les puces de fonctions apparaissent en cascade.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Puces de fonctions sous la signature",
+      "name_en": "feature chips row",
+      "t": "0:14.20-0:14.98",
+      "frames": "f852-f899",
+      "fps": 60,
+      "mechanics": "5 pilules en contour, mono ≈ 1,8 % de la hauteur : 5,820 RECORDS, 141 VERIFIED (contour et texte bleus), ISO PAD, DRAWING PDFS, PHOTO MEASURE ; apparition en cascade par petits pops. Les deux dernières se touchent (chevauchement) et l'ensemble n'est complet que ≈ 0,3 s avant le fondu.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD discret de showreel",
+      "name_en": "subtle reel HUD",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "« FITTERS BIBLE — SHOWREEL » en haut à gauche, time code en haut à droite, chapitre « 0X — NOM » en bas à gauche (01 THE WELD, 02 ISO PAD, 03 ROLLED OFFSET, 04 5,820 RECORDS, 05 TAKEOUTS, 07 FITTERS BIBLE), barre de progression segmentée (≈ 30 tirets) et viseur en bas à droite ; mono gris sombre ≈ 1,5 % de la hauteur, opacité d'environ 40 %. Le montage final a son propre HUD plus contrasté (« 04 / 08 », « FITTERS BIBLE »).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-004-cut-f675.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitres de 2 s qui suivent un parcours d'usage",
+      "name_en": "use-case chapter structure",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Devise du métier (« MEASURE TWICE. CUT ONCE. », 0-2 s) → dessiner (2-4 s) → calculer (4-6,5 s) → la base de données (6,5-8,5 s) → chercher dans l'appli (8,5-10,5 s) → rafale de fonctions (10,5-12,5 s) → promesse « ONE BOOK. » et logo (12,5-15 s). Chapitres d'environ 4 temps ; chacun montre un geste concret ; le montage accélère à un mot par croche avant la signature.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grilles de dessin technique en fond",
+      "name_en": "drafting-grid backgrounds",
+      "t": "0:00.00-0:13.00",
+      "frames": "f0-f780",
+      "fps": 60,
+      "mechanics": "Grille carrée fine (pas ≈ 4 % de la largeur) sur l'ouverture, grille isométrique triangulaire sur ISO PAD, trame de points sur la base de données, tunnel de traits sur la fin ; toujours à faible contraste (≈ 5-8 %) : contexte de bureau d'études sans bruit.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Vocabulaire de cotes et d'angles",
+      "name_en": "dimension annotations",
+      "t": "0:00.80-0:06.50",
+      "frames": "f48-f390",
+      "fps": 60,
+      "mechanics": "Lignes de cote fines avec tirets d'extrémité, valeurs en pieds-pouces en mono (24'-0\", 9'-0\", 3'-0\", 4'-6\", 5'-2\"), angles en orange gras (45°, 90°), nœuds en cercle cerclé, étiquettes en pilule : le langage du plan de tuyauterie sert d'ornement et de preuve de crédibilité.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes 1 image avant l'attaque, timeline en secondes rondes",
+      "name_en": "round-second timeline at 120 BPM",
+      "t": "0:02.00-0:13.00",
+      "frames": "f120-f780",
+      "fps": 60,
+      "mechanics": "À 120 BPM, 1 temps = 0,5 s = 30 im : toutes les coupes sont à des secondes rondes ou des quarts (2,00 ; 4,00 ; 6,50 ; 8,50 ; 10,50 ; 10,75 … 12,50 ; 13,00 s) et devancent l'attaque audio d'1 im (17 ms), ce qui se perçoit comme parfaitement synchrone. 14 coupes sur 14 sur la grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f240.jpg, microM-004-cut-f675.jpg, microM-005-cut-f720.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages posés sur les gestes",
+      "name_en": "hit-point sound design",
+      "t": "0:00.13-0:15.06",
+      "frames": "f8-f899",
+      "fps": 60,
+      "mechanics": "Allumage de l'étincelle (f8-9, attaque la plus forte de la piste), accent et montée de +7 dB sur « CUT ONCE. » (f81-90), clic du bouton (f189), trois clics décalés de 3 im sur les nœuds (f212-f218), cliquetis pendant la frappe et le compteur (f302-f348), impact grave sur le voile gris (f392), montée accélérée de f748 à f776 avant le flare, fondu sonore final avec le fondu au noir. Ces bruitages rattrapent les gestes hors grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f84.jpg, extra-02.jpg, microM-006-move-f783.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Creux d'énergie au milieu",
+      "name_en": "mid-section energy dip",
+      "t": "0:02.68-0:04.68",
+      "frames": "f161-f281",
+      "fps": 60,
+      "mechanics": "2,7-3,1 s, 3,3-3,9 s et 4,2-4,7 s : 1,6 s au total où seuls un trait fin, de petites étiquettes ou une frappe en petit corps bougent, sur un plan large et sombre ; le détecteur les classe en maintiens statiques. À corriger par une poussée de caméra lente ou un élément secondaire en mouvement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Une seule parenthèse (« About the pipefitters bible ») suffit à faire basculer le prompt de showreel générique vers une promo produit : Claude invente l'appli, ses fonctions, ses chiffres (5 820 fiches, 141 vérifiées) et son slogan."},
+    {"kind": "direction", "insight": "« showreel for a résumé » + sujet produit donne un hybride : HUD « SHOWREEL » et chapitres numérotés, mais contenu d'usage. Le registre showreel pousse à varier les techniques (étincelle, 3D, compteurs, téléphone, glitch, flare) au détriment d'un fil visuel unique."},
+    {"kind": "structure", "insight": "Sans structure imposée, Claude adopte un parcours devise → gestes → calcul → preuve chiffrée → appli → rafale de fonctions → promesse → logo, en chapitres de 2 s."},
+    {"kind": "build", "insight": "La timeline écrite en secondes rondes (2,0 ; 4,0 ; 6,5 ; 10,75…) suffit à caler l'image sur 120 BPM. Pour reproduire : « BPM 120, coupes aux multiples de 0,25 s, bruitage sur chaque geste hors grille »."},
+    {"kind": "qa", "insight": "Les données inventées sont cohérentes entre elles (141 + 5 679 = 5 820 ; 20 × 1,4142 = 28,284 ≈ 28-5/16\") : le modèle vérifie ses propres chiffres ; en vrai projet, il faut fournir les chiffres réels et les captures de l'appli."},
+    {"kind": "other", "insight": "Comparé au même prompt sans sujet, le sujet entre parenthèses pèse plus que la consigne de style : on obtient un récit produit plutôt qu'un catalogue de motion design."}
+  ],
+  "steal": [
+    "À 120 BPM, écrire la timeline en secondes rondes : 1 temps = 0,5 s = 30 im ; couper 1 image avant l'attaque pour une synchro perçue parfaite.",
+    "Montrer une fonction par son geste : trait tremblé au doigt, clic, le dessin se redresse en 6 im avec un petit rebond, nœuds qui claquent en décalé.",
+    "Compteur en expo.out puis conversion dans l'unité du métier (28.284 → 28-5/16\") : la donnée devient concrète pour le public visé.",
+    "Finir sur une rafale de fonctions, un mot par croche et un fond par mot, puis une réponse en petit (« ONE BOOK. ») avant le logo.",
+    "Prendre le langage graphique du métier (cotes, angles, grilles isométriques, bride) comme ornement : chaque détail prouve que le produit connaît son public."
+  ],
+  "flaws": [
+    "Milieu lent : 1,6 s de quasi-immobilité entre 2,7 et 4,7 s (trait fin, étiquettes, frappe en petit corps).",
+    "Transition glitch en tranches répétée neuf fois à l'identique : tic de vidéo IA, l'accent devient du bruit.",
+    "Volets à bandes diagonales génériques, sans lien avec l'univers de la tuyauterie.",
+    "Signature complète à peine 0,3 s avant le fondu ; deux puces finales se chevauchent.",
+    "HUD, légendes et barres à environ 1,5 % de la hauteur : illisibles sur mobile."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Modèle de promo produit synchronisée : timeline en secondes rondes à 120 BPM, bruitages sur les gestes hors grille, démonstration d'usage en 1,5 s. À étudier à 60 fps : le redressement du croquis, la courbe du compteur et le montage en croches."
+  }
+}

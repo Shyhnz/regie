@@ -1,0 +1,532 @@
+{
+  "slug": "amol909s-27533e",
+  "title": "Commotion app showreel",
+  "handle": "@Amol909S",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système cohérent (logo = grille), transitions motivées et gestes calés sur 120 BPM ; mais l'interface est trop petite pour être lue et le style reste un SaaS crème générique.",
+  "summary": "Démo de Commotion, poste de pilotage d'agents Codex : le logo 2×2 s'ouvre en grille de fils, qui se replie dans un téléphone ; un iris mène au routage des modèles (luna/sol), puis à une mosaïque de 4 fonctionnalités qui se referme en logo. Force : transitions nées de la forme du logo, calage sur 120 BPM. Faiblesse : interface illisible.",
+  "prompt_vs_result": [
+    "Le prompt imposait 20 s de « showreel » pour l'app Commotion, en mettant en avant la disposition en tuiles et le classifieur automatique de modèles, plus d'autres fonctions au choix, « go all out ».",
+    "Claude a choisi : le logo 2×2 comme fil conducteur (il devient la grille puis la mosaïque), le passage au mobile, le routeur Jev vers gpt-6-luna ou gpt-6-sol, quatre fonctions (kanban, notes, palette, sonnerie) et la grille de 120 BPM.",
+    "Prompt bien cadré sur les fonctions à montrer (contexte du produit fourni, probable), muet sur la musique, le public et la lisibilité : démo fidèle mais dense, interface à 1-2 % de hauteur. Préciser : textes ≥ 4 %, un message par plan."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#ECE4DC",
+        "role": "fond papier crème des scènes produit"
+      },
+      {
+        "hex": "#DCD4CC",
+        "role": "taches plus sombres du fond marbré"
+      },
+      {
+        "hex": "#FCFCF4",
+        "role": "panneaux et cartes blanc chaud"
+      },
+      {
+        "hex": "#3C3C34",
+        "role": "carré anthracite du logo"
+      },
+      {
+        "hex": "#C3BDB1",
+        "role": "trois carrés gris du logo"
+      },
+      {
+        "hex": "#1C1C1C",
+        "role": "texte, logotype"
+      },
+      {
+        "hex": "#2C2C2C",
+        "role": "pilules de légende"
+      },
+      {
+        "hex": "#141C2C",
+        "role": "fond bleu nuit du routeur"
+      },
+      {
+        "hex": "#1C243C",
+        "role": "cartes du routeur"
+      },
+      {
+        "hex": "#848CFC",
+        "role": "pervenche : « Auto », route simple, gpt-6-luna"
+      },
+      {
+        "hex": "#EC8C2C",
+        "role": "orange : route complexe, gpt-6-sol"
+      },
+      {
+        "hex": "#B45C34",
+        "role": "note rouille (Browser notes)"
+      },
+      {
+        "hex": "#D48C04",
+        "role": "flash ambre final sur le carré du logo"
+      }
+    ],
+    "type": "Logotype grotesque géométrique demi-grasse bas de casse (type Satoshi, probable) ; titres grotesque neutre medium (type Inter) ≈ 6 % de hauteur, casse phrase ; légendes ≈ 3,5 % ; mono pour modèles et code.",
+    "texture": "Fond papier crème marbré de taches plus sombres (lumière douce), panneaux blanc chaud aux ombres très diffuses, coins arrondis ≈ 1,5 % de la hauteur ; scène routeur bleu nuit avec nuages légers et halos colorés sur les nœuds et les tracés ; pas de flou de mouvement sauf un léger flou sur les sorties de légendes ; pas de grain.",
+    "style": "SaaS éditorial crème, minimaliste",
+    "coherence": "Le logo 2×2 (un carré anthracite, trois gris) est le système : il s'ouvre en grille de fils à 1,5 s, la mosaïque finale reprend ses 4 cases et s'y referme à 17,5 s ; l'accent ambre final rappelle la notification. Deux mondes cohérents : crème et anthracite pour le produit, bleu nuit, pervenche et orange pour le routeur (froid = simple, chaud = complexe). La seule rupture (passage au sombre) est motivée par l'iris né du bouton d'envoi du téléphone."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM (temps = 15 im, demi-temps = 7,5 im à 30 fps). 3 coupes détectées seulement (8,10 s iris, 13,10 s volet, 17,47 s repli) : la vidéo est faite de 6 plans-séquences liés par des morphs. Les gestes tombent sur les temps et demi-temps, souvent 2-3 im en avance ; un événement toutes les 0,25-0,5 s dans les scènes de démonstration (routage : une étape par demi-temps). Maintiens de 0,4-0,6 s (9,5 s, 10,5 s, 11,1 s, 12,5 s, fin 18,6-19,6 s) : courtes respirations après chaque « réponse » du routeur, pas de vrai temps mort. L'intro (0-2 s) est calme (−19 dB) jusqu'à l'entrée du beat à 2,0 s, au moment où la grille se remplit ; la musique retombe à −17 dB à 17,5 s quand tout se replie en logo.",
+    "timeline": [
+      {
+        "t": "0:00.00-0:00.50",
+        "what": "Un carré anthracite surgit d'un point, dépasse, puis se divise en logo 2×2",
+        "technique": "pop avec dépassement + division"
+      },
+      {
+        "t": "0:00.57-0:01.07",
+        "what": "Le logotype « commotion » monte lettre par lettre",
+        "technique": "révélation par masque, décalage 1,5 im"
+      },
+      {
+        "t": "0:01.27-0:01.80",
+        "what": "Le logotype sort par le haut, les 4 carrés du logo deviennent les 4 tuiles de l'app",
+        "technique": "match cut logo → interface"
+      },
+      {
+        "t": "0:01.80-0:03.60",
+        "what": "Les fils de discussion se remplissent, la grille passe de 4 à 6 tuiles, « Every thread in view. »",
+        "technique": "re-pavage + légende en pilule (entrée du beat à 2,0 s)"
+      },
+      {
+        "t": "0:03.57-0:04.40",
+        "what": "Une tuile s'agrandit, les autres se tassent, « Focus one. Keep the rest. »",
+        "technique": "reflow sur le temps"
+      },
+      {
+        "t": "0:04.30-0:05.40",
+        "what": "Carte d'approbation, le curseur clique « Approve », « Answer from the grid. »",
+        "technique": "interaction au curseur"
+      },
+      {
+        "t": "0:05.43-0:05.80",
+        "what": "La grille se replie dans un iPhone",
+        "technique": "morph grille → téléphone"
+      },
+      {
+        "t": "0:05.80-0:07.90",
+        "what": "« Same workspace, on your phone. » à gauche, onglets et notification dans le téléphone",
+        "technique": "titre mot à mot + micro-démo"
+      },
+      {
+        "t": "0:07.90-0:08.13",
+        "what": "Un disque bleu nuit jaillit du bouton d'envoi et couvre l'écran",
+        "technique": "iris motivé"
+      },
+      {
+        "t": "0:08.13-0:08.70",
+        "what": "« Auto picks the model. », schéma entrée → Jev → luna / sol se construit",
+        "technique": "construction de schéma décalée"
+      },
+      {
+        "t": "0:08.95-0:10.90",
+        "what": "Ticket simple : il vole vers Jev, jauge 0.92, la lumière court vers luna",
+        "technique": "routage pas à pas (pervenche)"
+      },
+      {
+        "t": "0:11.00-0:12.97",
+        "what": "Ticket complexe : jauge 0.88 orange, tracé vers sol",
+        "technique": "routage pas à pas (orange)"
+      },
+      {
+        "t": "0:12.97-0:13.57",
+        "what": "Volet crème qui monte, 4 cartes de fonctionnalités arrivent des 4 coins",
+        "technique": "volet + mosaïque 2×2"
+      },
+      {
+        "t": "0:13.57-0:17.40",
+        "what": "Micro-démos : kanban, note sur un bouton, palette ⌘K, sonnerie de fin",
+        "technique": "démos parallèles sur la grille des temps"
+      },
+      {
+        "t": "0:17.40-0:18.03",
+        "what": "Les cartes grisent et se replient en logo",
+        "technique": "morph inverse mosaïque → logo"
+      },
+      {
+        "t": "0:18.03-0:18.85",
+        "what": "Logotype et slogan « The command center for Codex. »",
+        "technique": "signature mot à mot"
+      },
+      {
+        "t": "0:19.07-0:20.07",
+        "what": "Le carré du logo flashe ambre puis revient, maintien final",
+        "technique": "clin d'œil couleur sur le temps"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille de 120 BPM (temps toutes les 15 im à 30 fps, demi-temps toutes les 7,5 im). À ±2 im le test est faible à 30 fps (hasard ≈ 67 %), donc comptage à ±1,3 im (hasard ≈ 40 %) : 17 gestes clés sur 24. Pop du carré f8 (demi-temps), logotype f17 (temps), sortie du logotype f39 (demi-temps), atterrissage de la grille f54 (demi-temps), reflow focus f107 (temps), « Answer » f137 (temps), téléphone f167 (temps), « Same » f174 (demi-temps), iris plein cadre f243 (+1), titre « Auto » et nœud Jev f249 (demi-temps), luna allumée f309 et sol allumée f369 (demi-temps), volet crème f393 (+1), dernière carte posée f407 (temps), logo replié f534 (demi-temps), logotype final f542 (temps), flash ambre f572 (temps). Sur les 7 autres, 5 partent 2 à 4 im avant une barre (reflow d'approbation f127, envol des tickets f269 et f343, ouverture de la palette f464, anneau de sonnerie f494). Mesure automatique des départs de mouvement : 22 sur 38 démarrent 2 à 4 im avant un temps ou demi-temps, dont 13 à exactement −2,7 im : l'image suit une grille de 0,25 s avec ≈ 90 ms d'avance constante sur l'attaque audio, ce qui se perçoit comme synchrone. Le test automatique (départs/demi-temps, p = 0,025, décalage −82 ms) va dans le même sens.",
+    "synced": [
+      "departs",
+      "impacts",
+      "apparitions",
+      "texte",
+      "coupes",
+      "couleur"
+    ],
+    "style_match": "Musique électronique (probable) à 120 BPM, intro calme puis entrée du beat : colle à l'interface sobre, aux ease-out nets et aux mots qui montent sur les demi-temps.",
+    "how_built": "Probable minutage écrit en multiples de 0,25 s (temps et demi-temps de 120 BPM) avec une bande-son à 120 BPM démarrant vers t = 0 : la synchro découle de ce choix de grille (toute musique à 120 BPM posée à zéro tomberait juste). Décalage constant ≈ 60-90 ms (image en avance), cohérent avec un léger retard de l'audio à l'encodage. Des accents sonores sur l'ouverture de la palette (15,49 s, l'attaque la plus forte), l'anneau de sonnerie (16,5 s), le repli en logo (souffle aigu à 17,5 s), le logotype (18,12 s) et le flash ambre (son tonal à 19,12 s) suggèrent des bruitages placés sur les événements (probable). Le prompt ne parle pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Pop du carré avec dépassement puis division en 2×2",
+      "name_en": "Square pop with overshoot, split into logo mark",
+      "t": "0:00.10-0:00.50",
+      "frames": "f3-f15",
+      "fps": 30,
+      "mechanics": "Un carré anthracite (#3C3C34) naît d'un point (≈ 1,5 % de la hauteur) au centre-gauche à f3, avec le tout premier son (0,13 s), grandit jusqu'à ≈ 17 % de la hauteur à f8-f9 (5-6 im, ease-out), retombe à ≈ 14 % (f10-f12, dépassement ≈ 20 %), puis se fend en 4 carrés arrondis (2×2, gouttière ≈ 1 %) entre f12 et f15 : le haut gauche reste anthracite, les trois autres virent au gris chaud (#C3BDB1). Le maximum du pop tombe sur le demi-temps (f9).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f15.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype qui monte lettre par lettre derrière un masque",
+      "name_en": "Staggered mask-rise wordmark",
+      "t": "0:00.57-0:01.07",
+      "frames": "f17-f32",
+      "fps": 30,
+      "mechanics": "Sur le temps (f17), le logo glisse de ≈ 15 % de la largeur vers la gauche (f16-f18, ease-out) pendant que « commotion » (grotesque géométrique bas de casse, #1C1C1C, hauteur d'œil ≈ 10 % du cadre) apparaît lettre par lettre : chaque lettre monte de ≈ 3 % de la hauteur depuis sous une ligne de base masquée, décalage ≈ 1,5 im par lettre (9 lettres en ≈ 14 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f15.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sortie du logotype par le haut, lettre par lettre",
+      "name_en": "Staggered wordmark exit",
+      "t": "0:01.27-0:01.47",
+      "frames": "f38-f44",
+      "fps": 30,
+      "mechanics": "Au demi-temps (f39), les lettres s'élèvent et disparaissent dans un masque de gauche à droite à ≈ 1 lettre par image (≈ 6 im) ; le logo reste seul et peut se transformer. Sortie miroir de l'entrée.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f47.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le logo devient la grille de l'application",
+      "name_en": "Logo mark expands into the tiling layout",
+      "t": "0:01.47-0:02.07",
+      "frames": "f44-f62",
+      "fps": 30,
+      "mechanics": "Les 4 carrés du logo grandissent en 4 panneaux qui remplissent le cadre avec ≈ 1 % de gouttière : largeur du bloc ≈ 12 % (f44) → 25 % (f45) → 45 % (f46) → 55 % (f47, sur le temps) → 65 % → 75 % → 85 % → 92 % → 97 % (f53), en passant de l'anthracite et du gris au blanc chaud (#FCFCF4) ; ≈ 10 im (0,33 s), fin en ease-out, atterrissage sur le demi-temps (f54). Le contenu des fils (en-têtes, lignes de code rouges et vertes) apparaît en fondu f56-f62, juste avant l'entrée du beat à 2,0 s. Le logo EST la disposition en tuiles.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f47.jpg",
+      "illus": {
+        "from": 43,
+        "to": 55,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Grille de fils qui se re-pave quand on en ajoute",
+      "name_en": "Auto-tiling layout reflow",
+      "t": "0:02.00-0:03.60",
+      "frames": "f60-f108",
+      "fps": 30,
+      "mechanics": "4 tuiles de fils (titre type « ledger #3 Speed up the CSV export », lignes de diff rouges/vertes, champ « Ask Codex… ») tapent leur contenu en direct ; une 5e puis une 6e tuile entrent (≈ f65, f82) et la grille se réorganise de 2×2 en 3 + 3 colonnes, chaque reflow en ≈ 6-8 im, ease-in-out. Démontre la fonction « tiling layout » sans un mot d'explication.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-move-f108.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légendes en pilule, mot à mot",
+      "name_en": "Word-by-word caption pills",
+      "t": "0:02.30-0:05.50",
+      "frames": "f69-f165",
+      "fps": 30,
+      "mechanics": "Pilule sombre (#2C2C2C, rayon ≈ 1 % de la hauteur) en bas à gauche (x ≈ 3 %, y ≈ 88 %), texte blanc grotesque medium ≈ 3,5 % de la hauteur : « Every thread in view. » / « Focus one. Keep the rest. » / « Answer from the grid. ». Changement : l'ancien texte se floute et descend (≈ 3 im, f105-f107), la pilule se redimensionne (f108-f110), les nouveaux mots montent un par un toutes les ≈ 2 im (f111 « Focus », f113 « one. », f115 « Keep », f117 « the », f119 « rest. »). « Answer » tombe sur le temps (f137). Une légende ≈ 1 s = 2 temps, 3 à 5 mots.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f108.jpg, microM-004-move-f134.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Focus : une tuile s'agrandit, les autres se tassent",
+      "name_en": "Focus reflow",
+      "t": "0:03.57-0:04.40",
+      "frames": "f107-f132",
+      "fps": 30,
+      "mechanics": "Sur le temps (f107), la tuile haut gauche passe de ≈ 50 % à ≈ 62 % de la largeur en ≈ 3-4 im, les autres se compriment en deux colonnes étroites à droite (≈ 18 % chacune) ; second reflow vers f127-f132 (demi-temps f129) : la rangée basse remonte et une carte d'approbation s'ouvre dans une tuile. Les reflows sont secs (pas de dépassement).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f108.jpg, microM-004-move-f134.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Approbation au curseur dans une tuile",
+      "name_en": "In-tile approval with cursor click",
+      "t": "0:04.30-0:05.10",
+      "frames": "f129-f153",
+      "fps": 30,
+      "mechanics": "Une carte « Run this command? » avec la commande et les boutons « Approve » (sombre) / « Deny » apparaît dans une tuile (f132) ; le curseur parcourt ≈ 10 % de la largeur (f139-f147) et clique « Approve » vers f148, sur une attaque audio forte (4,92 s). Illustre « Answer from the grid » : on répond à un agent sans quitter la grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f134.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La grille se replie dans le téléphone",
+      "name_en": "Grid collapses into the phone",
+      "t": "0:05.43-0:05.80",
+      "frames": "f163-f174",
+      "fps": 30,
+      "mechanics": "f163-f164 : les tuiles blanchissent en panneaux fantômes ; f165-f169 : la tuile du fil actif glisse vers le centre gauche et rétrécit pendant que les autres se réduisent en petits carrés arrondis qui filent vers l'écran du téléphone ; le cadre de l'iPhone (≈ 75 % de la hauteur, x ≈ 72 %) apparaît à f166-f167, sur le temps, et le fil devient l'écran ; posé à f173. ≈ 10 im, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f165.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre à gauche, appareil à droite",
+      "name_en": "Split layout: headline left, device right",
+      "t": "0:05.80-0:08.05",
+      "frames": "f174-f241",
+      "fps": 30,
+      "mechanics": "« Same workspace, on your phone. » en grotesque medium noire ≈ 6 % de la hauteur, ferré à gauche à x ≈ 6 %, sur 2 lignes vers y ≈ 40-50 %, mots montant toutes les ≈ 2 im à partir du demi-temps (f174) ; sous-titre gris « One window at a time. Every thread a tap away. » ≈ 2 % ; téléphone à droite (x 65-82 %). Composition asymétrique avec beaucoup de crème vide.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f165.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Micro-démo dans le téléphone : onglets et notification",
+      "name_en": "Phone micro-demo: tabs and notification",
+      "t": "0:06.45-0:07.90",
+      "frames": "f194-f237",
+      "fps": 30,
+      "mechanics": "Les onglets « #1 #2 #3 » en haut de l'écran changent sur les temps (f194, f209 : « commotion #1 Fix the pagination footer » cède la place à « atlas #2 Move sign-in to passkeys »), une bannière « Thread finished » descend en haut du téléphone (f221, demi-temps), puis le bouton d'envoi est pressé (f233-f237). Chaque micro-événement tombe sur un temps ou demi-temps, 2-3 im en avance.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-006-cut-f243.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris sombre jailli du bouton d'envoi",
+      "name_en": "Circular wipe from the send button",
+      "t": "0:07.90-0:08.13",
+      "frames": "f237-f244",
+      "fps": 30,
+      "mechanics": "Un disque bleu nuit (#141C2C) naît en point sur le bouton d'envoi du téléphone (x ≈ 82 %, y ≈ 88 %) à f237 et grandit : diamètre ≈ 4 % de la largeur (f238) → 6 % (f239) → 13 % (f240) → 24 % (f241) → 42 % (f242, sur le temps) → ≈ 80 % (f243) → plein cadre (f244) : ≈ 7 im, ease-in exponentiel, bord net, sans flou. Le titre sort lettre par lettre en même temps (f239-f243). Impact grave à 8,06 s au moment où le disque couvre l'écran. L'envoi du message ouvre littéralement la scène du routeur.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f243.jpg",
+      "illus": {
+        "from": 237,
+        "to": 244,
+        "n": 6
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Schéma de routage qui se construit",
+      "name_en": "Routing diagram build-on",
+      "t": "0:08.13-0:08.70",
+      "frames": "f244-f261",
+      "fps": 30,
+      "mechanics": "Sur fond bleu nuit : à gauche la carte « Ask Codex… » avec l'étiquette « Auto · routing » (≈ 22 % de la largeur), au centre le nœud « Jev / System One » (carré arrondi ≈ 12 % de la hauteur, contour pervenche lumineux), à droite deux cartes « gpt-6-luna » (lune, « Direct changes, fast ») et « gpt-6-sol » (soleil, « Open or hard work »), reliées par des courbes fines depuis le port droit de Jev ; jauge « simple | complex » sous Jev. Entrée : mots du titre « Auto picks the model. » qui montent (f246-f254, « Auto » en pervenche), Jev grandit depuis ≈ 60 % avec un halo (f248-f252, demi-temps f249), cartes de droite en fondu glissé avec ≈ 4 im de décalage (f253, f257).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f243.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Le ticket voyage jusqu'au nœud, la jauge tranche, la lumière court",
+      "name_en": "Ticket-to-model routing with travelling light",
+      "t": "0:08.95-0:12.97",
+      "frames": "f269-f389",
+      "fps": 30,
+      "mechanics": "Le ticket tapé « Fix the off-by-one in the pagination footer » devient une pilule qui vole vers Jev (f269-f285, ≈ 16 im, ease-in-out), Jev pulse (anneau ≈ +20 %, f285-f294), la jauge se remplit jusqu'à « simple 0.92 » avec un chiffre qui roule (f288-f294, demi-temps), un point lumineux sort du port (f297-f300) et court le long de la courbe haute jusqu'à luna en ≈ 9 im (f300-f309) en traçant le trait derrière lui (pervenche #848CFC avec halo) ; la carte luna s'allume sur le demi-temps (f309-f310) et l'entrée reçoit « Auto · gpt-6-luna ». Même séquence en orange (#EC8C2C) pour « Add SSO across the host and the client » → « complex 0.88 » → gpt-6-sol allumée à f369-f370 (demi-temps). Une étape par demi-temps (7,5 im = 0,25 s), puis ≈ 0,4 s de maintien.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 296,
+        "to": 312,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur froid/chaud des deux routes",
+      "name_en": "Cool/warm route color coding",
+      "t": "0:08.13-0:12.97",
+      "frames": "f244-f389",
+      "fps": 30,
+      "mechanics": "Tâche simple = pervenche + lune (luna), tâche complexe = orange + soleil (sol) : le contour de Jev, la jauge, le tracé et la carte cible changent tous de couleur avec la route ; « Auto » est en pervenche dans le titre. Une seule variable visuelle porte toute l'explication.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet crème qui monte",
+      "name_en": "Cream slide-up wipe",
+      "t": "0:12.97-0:13.17",
+      "frames": "f389-f395",
+      "fps": 30,
+      "mechanics": "La surface crème (#ECE4DC) monte du bas du cadre : ≈ 3 % (f390) → 7 % (f391) → 20 % (f392, sur le temps) → 70 % (f393) → 90 % (f394) → 100 % (f395) : ≈ 6 im, ease-in (accélération), bord net, sans flou ; souffle aigu (centroïde ≈ 4 400 Hz) à 13,05 s. Efficace mais plus banal que les autres passages, nés d'un objet.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f393.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mosaïque 2×2 de fonctionnalités qui arrive des quatre coins",
+      "name_en": "2×2 feature mosaic flying in",
+      "t": "0:13.17-0:13.57",
+      "frames": "f396-f407",
+      "fps": 30,
+      "mechanics": "4 cartes blanc chaud (#FCFCF4, rayon ≈ 1,5 %, gouttière ≈ 1 %) : Task board (depuis le haut gauche), Browser notes (haut droit), Command palette (bas gauche), Finish chime (bas droit) glissent avec ≈ 3 im de décalage, chacune en ≈ 8-10 im, ease-out ; la dernière se pose sur le temps (f407). Chaque carte : titre demi-gras ≈ 2,5 % + description grise. Le 2×2 rappelle le logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f393.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Quatre micro-démos en parallèle, une par temps",
+      "name_en": "Four parallel micro-demos on the beat grid",
+      "t": "0:13.57-0:17.40",
+      "frames": "f407-f522",
+      "fps": 30,
+      "mechanics": "Dans la mosaïque, les démos se relaient : la carte « Fix the pagination » passe de Queued à Running ; Browser notes : sélection en pointillés autour de « Pay $48 » (f432), note rouille « Button sits 2px low » tapée (f435-f444) puis envolée en étiquette « → commotion #3 · 1 note » (f447-f450, temps) ; Command palette : touches ⌘ puis K enfoncées (f459, demi-temps), palette ouverte (f464, attaque audio la plus forte à 15,49 s), « new t » tapé, « New thread » surligné (f479) ; Finish chime : un anneau s'étend depuis la ligne « ledger #3 » (f494) sur un son tonal, puis le toast « Thread finished · 50k rows in 1.2 s » descend (f501). L'œil passe d'une carte à l'autre, mais chaque démo n'occupe que ≈ 25 % du cadre avec du texte à ≈ 1,5 %.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les cartes se replient en logo",
+      "name_en": "Feature mosaic collapses back into the logo",
+      "t": "0:17.40-0:18.03",
+      "frames": "f522-f541",
+      "fps": 30,
+      "mechanics": "f524 : les cartes grisent (voile ≈ 50 %, contenu effacé) ; f525-f534 : elles rétrécissent jusqu'au logo, largeur du bloc ≈ 75 % → 60 % → 50 % (f527, sur le temps) → 40 % → 33 % → 27 % → 21 % → 17 % → 14 % → 12 % (f534, demi-temps) → 10 % (f541), ease-out expo ; la carte haut gauche devient anthracite, les autres gris chaud : l'inverse exact du morph d'ouverture. La musique tombe à −17 dB avec un souffle aigu à 17,5 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f524.jpg",
+      "illus": {
+        "from": 523,
+        "to": 535,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Bouclage logo → interface → logo",
+      "name_en": "Logo-to-UI-to-logo bookend",
+      "t": "0:00.00-0:20.07",
+      "frames": "f0-f601",
+      "fps": 30,
+      "mechanics": "Le logo 2×2 s'ouvre en grille de l'app à 1,5 s et la mosaïque 2×2 des fonctions s'y referme à 17,5 s : la marque est littéralement la disposition du produit. Entre les deux, chaque scène naît d'un objet de la précédente (tuile → téléphone, bouton d'envoi → iris), sauf le volet crème. Structure : promesse (grille), extension (mobile), intelligence (routage), boîte à outils (4 fonctions), signature.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f47.jpg, microM-008-cut-f524.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Signature finale : logotype puis slogan mot à mot",
+      "name_en": "End card: wordmark then word-by-word tagline",
+      "t": "0:18.03-0:18.85",
+      "frames": "f541-f565",
+      "fps": 30,
+      "mechanics": "Le logo glisse à gauche, « commotion » monte d'un bloc depuis un masque (f541-f545, sur le temps, avec un impact sonore à 18,12 s), puis le slogan « The command center for Codex. » (gris, ≈ 2 % de la hauteur) apparaît mot à mot toutes les ≈ 2 im (f555-f565). Bloc final ≈ 66 % de la largeur, centré à ≈ 48 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash ambre sur le carré du logo",
+      "name_en": "Amber accent blink on the logo square",
+      "t": "0:19.07-0:19.57",
+      "frames": "f572-f587",
+      "fps": 30,
+      "mechanics": "Sur le temps (f572), avec un son tonal (≈ 1 300 Hz) à 19,12 s, le carré haut gauche du logo passe à l'ambre (#D48C04) pendant ≈ 9 im, puis s'assombrit en ocre (≈ #B8861A, f583) et brun (≈ #5A4630, f585) jusqu'à l'anthracite à f587, sur le temps suivant. Clin d'œil « notification » qui rappelle la sonnerie de fin, dernier mouvement avant le maintien.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond papier crème marbré",
+      "name_en": "Mottled cream paper background",
+      "t": "0:00.00-0:20.07",
+      "frames": "f0-f601",
+      "fps": 30,
+      "mechanics": "#ECE4DC avec de grandes taches douces plus sombres (#DCD4CC), comme du papier ou du plâtre sous une lumière diffuse, fixe sur toutes les scènes claires ; la scène du routeur en est l'inverse (bleu nuit #141C2C avec nuages plus clairs #1C2C3C). Donne de la matière sans distraire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Typographie sobre : grotesque, casse phrase, mono",
+      "name_en": "Restrained type: grotesque, sentence case, mono",
+      "t": "0:00.00-0:20.07",
+      "frames": "f0-f601",
+      "fps": 30,
+      "mechanics": "Logotype grotesque géométrique demi-grasse en bas de casse (type Satoshi, probable) ; titres en grotesque neutre medium (type Inter) ≈ 6 % de la hauteur, casse phrase, phrases courtes à point final ; légendes ≈ 3,5 % ; noms de modèles et code en mono. Lisible pour les titres, trop petit dans l'interface (≈ 1-1,5 %).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de 0,25 s : chaque geste sur un temps ou un demi-temps",
+      "name_en": "Quarter-second grid: every gesture on a beat or half-beat",
+      "t": "0:00.00-0:20.07",
+      "frames": "f0-f601",
+      "fps": 30,
+      "mechanics": "Tout le minutage suit la grille de 120 BPM : pops, entrées de mots, reflows, morphs, allumages des cartes du routeur et micro-démos tombent sur un temps ou un demi-temps (17 gestes clés sur 24 à ±1,3 im). Les départs de mouvement précèdent l'attaque audio de ≈ 2,7 im (≈ 90 ms) de façon constante : l'image devance le son, ce qui se lit comme parfaitement synchrone. Dans le routeur, une étape par demi-temps donne un rythme d'horloge (ticket, nœud, jauge, lumière, modèle).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f47.jpg, microM-003-move-f108.jpg, microM-005-move-f165.jpg, extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement calé sur la structure : entrée du beat, souffles, sons de notification",
+      "name_en": "Arrangement and SFX mapped to story beats",
+      "t": "0:00.13-0:19.20",
+      "frames": "f4-f576",
+      "fps": 30,
+      "mechanics": "Intro calme (−19 dB) pendant le logo, entrée du beat (+10 dB) à 2,0 s quand la grille se remplit ; impact grave quand l'iris couvre l'écran (8,06 s) ; souffle aigu sur le volet crème (13,05 s) ; attaque la plus forte de la vidéo à l'ouverture de la palette (15,49 s) ; son tonal sur l'anneau de sonnerie (16,5 s) ; retombée à −17 dB avec souffle au repli en logo (17,5 s) ; impact sur le logotype (18,12 s) ; son tonal sur le flash ambre (19,12 s). Les « respirations » de la musique suivent les chapitres (bruitages placés sur les événements, probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f243.jpg, microM-007-cut-f393.jpg, microM-008-cut-f524.jpg, extra-02.jpg, extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt nomme deux fonctions (tiling layout, auto model classifier) et laisse choisir les autres : la vidéo montre des fonctions précises (task board, browser notes, command palette, finish chime, noms de fils réalistes) qui viennent d'un contexte produit fourni hors prompt (dépôt ou documentation, probable)."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Show what an incredible motion designer you are » + « go all out » a produit de la rigueur (système logo = grille, morphs motivés) plutôt que des effets spectaculaires : le modèle a interprété « motion designer » comme cohérence de système."
+    },
+    {
+      "kind": "structure",
+      "insight": "Les deux fonctions demandées reçoivent les deux plus longues scènes (grille ≈ 4 s, routeur ≈ 5 s), les fonctions « au choix » sont regroupées dans une mosaïque de 4 s : le prompt hiérarchise implicitement le temps d'écran."
+    },
+    {
+      "kind": "build",
+      "insight": "Minutage en multiples de 0,25 s : avec une musique à 120 BPM démarrant à zéro, la synchro est automatique. Écrire le prompt en temps (« un geste par demi-temps à 120 BPM ») rendrait ce calage volontaire et vérifiable."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité : le texte d'interface fait 1-1,5 % de la hauteur, illisible sur mobile. Demander un zoom ou un recadrage sur l'élément démontré plutôt que l'interface entière."
+    },
+    {
+      "kind": "banned",
+      "insight": "Aucun interdit donné ; le modèle a quand même évité les clichés d'IA (pas de particules, pas de glow excessif, pas d'étoiles), probablement guidé par l'esthétique crème du produit."
+    }
+  ],
+  "steal": [
+    "Faire du logo la grille du produit : ses formes s'ouvrent en interface au début et l'interface s'y referme à la fin.",
+    "Lancer la transition depuis un geste de l'interface : l'iris naît du bouton d'envoi, la grille se replie dans le téléphone.",
+    "Expliquer un routage en une étape par demi-temps : ticket qui vole, nœud qui pulse, jauge qui roule, lumière qui court, cible qui s'allume.",
+    "Coder deux options par une seule variable visuelle (froid/lune = simple, chaud/soleil = complexe) appliquée au nœud, au tracé et à la cible.",
+    "Caler le minutage sur des multiples de 0,25 s et faire partir les gestes 2-3 images avant le temps pour que l'arrivée tombe dessus."
+  ],
+  "flaws": [
+    "Texte d'interface à ≈ 1-1,5 % de la hauteur : on voit des fenêtres, on ne lit rien.",
+    "Mosaïque finale de 4 démos simultanées : chaque fonction est minuscule, l'œil ne sait pas où regarder.",
+    "Volet crème générique entre routeur et mosaïque, en rupture avec les autres transitions nées d'un objet.",
+    "Esthétique SaaS crème + Inter très attendue : propre mais sans signature graphique forte."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui (vidéo native à 30 fps) pour trois passages : le morph logo → grille (f43-f62), l'iris issu du bouton d'envoi (f237-f244) et le routage pas à pas (f269-f372) ; modèles de transitions motivées et d'explication sur une grille de demi-temps, à décortiquer image par image."
+  }
+}

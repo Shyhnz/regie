@@ -1,0 +1,345 @@
+{
+  "slug": "madebyjmayala-b9204d",
+  "title": "Gene Spectra promo",
+  "handle": "@madebyjmayala",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Métaphore du prisme (ADN blanc → spectre de catégories → logo) tenue de bout en bout, synchro serrée à 120 BPM ; perd un point sur 4,2 s de plan final figé et des libellés minuscules.",
+  "summary": "Promo de 15 s pour une appli d'analyse ADN privée. Accroche serif sur fond de données génétiques, triplet « No upload / No account / No server » sur les temps, fichier glissé-déposé qui se désintègre en hélice d'ADN, hélice qui traverse un prisme et se diffracte en spectre de 7 catégories, compteur 0 → 154, puis la barre de couleur devient le logo. Concept fort, mais fin statique trop longue.",
+  "prompt_vs_result": [
+    "Une ligne : promo dynamique de 15 s sur Gene Spectra, reprendre les éléments du site en ligne, « go all out ». Aucune indication de structure, de style, de musique ni de rythme.",
+    "Claude a choisi l'angle vie privée, le récit en 5 actes, la métaphore du prisme, la typo serif condensée, la palette spectre sur bleu nuit, la grille à 120 BPM et la barre qui devient logo.",
+    "Le site a fourni le texte et la marque, d'où la cohérence. Il aurait fallu imposer une fin courte (≤ 1,5 s), une taille minimale des libellés et un mouvement continu jusqu'à la dernière image."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B111A", "role": "fond bleu nuit quasi noir, léger vignettage"},
+      {"hex": "#26364A", "role": "colonnes de données génétiques en fond (texture)"},
+      {"hex": "#E8ECF1", "role": "texte principal blanc cassé"},
+      {"hex": "#5F7F9E", "role": "bordure du cadre navigateur, 1 px"},
+      {"hex": "#5EEAD4", "role": "surbrillance turquoise du dépôt de fichier"},
+      {"hex": "#6366F1", "role": "spectre : indigo (haut, Methylation)"},
+      {"hex": "#22D3EE", "role": "spectre : cyan"},
+      {"hex": "#A3E635", "role": "spectre : vert-jaune (milieu)"},
+      {"hex": "#FB923C", "role": "spectre : orange"},
+      {"hex": "#F472B6", "role": "spectre : rose (bas, Drug response)"},
+      {"hex": "#34D399", "role": "URL verte du plan final"}
+    ],
+    "type": "Serif éditoriale condensée (Instrument Serif probable), graisse normale, casse phrase : accroche ≈ 9 % de la hauteur, chiffres ≈ 14 %, logo ≈ 13 %. Grotesque (Inter probable) pour l'interface ≈ 1,5-2,5 %. Mono pour les données.",
+    "texture": "Lueur additive (glow) sur les points de l'hélice et les brins colorés ; vignettage doux ; voiles de flash blanc-bleu à ~15-25 % sur les coupes ; traînée verticale (smear) sur la coupe de 0:02.97 ; pas de grain.",
+    "style": "Tech privée nocturne, prisme spectral",
+    "coherence": "Un seul accent de couleur (le spectre) dans un film monochrome bleu nuit ; la barre spectrale circule du plan de données au logo, ce qui soude tout. Le cadre navigateur et la serif éditoriale tiennent le système. Seule rupture : la phase brouillonne du nuage de particules."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "beaucoup",
+    "notes": "Le dossier annonce 75,7 BPM : faux. Mesuré sur 2,5-10,6 s avec tempo_segment : 120,2 BPM, netteté 6,45 (pulsation très claire), temps à x,03 et x,53 s. L'intro 0-2,4 s est un cliquetis montant (riser) sans pulsation fixe, mais les trois lignes de l'accroche tombent quand même sur la grille 0,53 / 1,03 / 1,53 s prolongée. De 0:00.47 à 0:10.5, chaque geste démarre 2 images avant un temps (à 30 fps : 0,067 s) pour que l'atterrissage, 2-3 im plus tard, tombe sur l'attaque : lignes de texte espacées de 15 im exactement (0,5 s). Coupes : 0:02.97 (f89, −2 im du temps 3,03), flash de dépôt 0:05.47 (f164, −2 im du temps 5,53), flash final 0:09.97 (f299, −2 im du temps 10,02). Densité : un événement toutes les 0,5 s jusqu'à 10,5 s. Temps morts : maintien de l'accroche f50-f85 (1,2 s, fond qui défile quand même), maintien du compteur à 154 de 9,4 à 9,8 s, puis plan final figé de 10,7 à 14,93 s (4,2 s, 28 % de la durée), avec fondu sonore de 12 à 14,5 s.",
+    "timeline": [
+      {"t": "0:00-0:00.47", "what": "Fond bleu nuit, colonnes de données brutes 23andMe (rsID, chromosome, position, génotype) en mono très sombre, montée depuis le noir en ~10 im", "technique": "fond texturé de données"},
+      {"t": "0:00.47-0:01.6", "what": "« You can't rotate / a genome / like a password. » : trois morceaux sortent d'un masque par le bas, un toutes les 15 im", "technique": "révélation par masque sur la grille"},
+      {"t": "0:01.6-0:02.83", "what": "Maintien de l'accroche, le fond de données continue de défiler", "technique": "maintien de lecture"},
+      {"t": "0:02.83-0:03.0", "what": "Les deux lignes remontent hors du masque en 4 im, traînée verticale, voile de flash f89", "technique": "sortie par masque + flash"},
+      {"t": "0:03.0-0:03.43", "what": "Cadre navigateur dessiné depuis les coins, reflet qui court sur la bordure, pastille d'adresse « genespectra.app »", "technique": "tracé de cadre (stroke draw)"},
+      {"t": "0:03.47-0:04.6", "what": "« No upload. » « No account. » « No server. » : une ligne par temps, 2-3 im chacune, pulsation lumineuse du cadre à chaque ligne", "technique": "anaphore sur les temps"},
+      {"t": "0:04.8-0:05.3", "what": "Liste qui sort par le haut, zone de dépôt en pointillés, carte « genome_raw_data.txt » avec curseur glisse en diagonale et se pose", "technique": "glisser-déposer d'interface"},
+      {"t": "0:05.47", "what": "Dépôt : la zone passe en turquoise, voile clair sur tout le cadre, après un creux sonore", "technique": "flash d'impact"},
+      {"t": "0:05.53-0:06.5", "what": "La carte se désintègre en particules qui se réorganisent en double hélice horizontale de points", "technique": "morphing particules"},
+      {"t": "0:06.3-0:07.2", "what": "L'hélice se stabilise et défile vers la droite ; fente verticale blanche et barre spectrale apparaissent en fondu", "technique": "mise en place du prisme"},
+      {"t": "0:07.2-0:09.2", "what": "L'hélice traverse la fente et ressort en faisceau de brins colorés qui atterrissent sur la barre ; 7 libellés de catégories ; compteur 0 → 154 « genetic markers across 20 health categories »", "technique": "diffraction en prisme + compteur"},
+      {"t": "0:09.2-0:09.97", "what": "Les brins s'estompent, le chiffre s'assombrit (f297-f298)", "technique": "décompression avant coupe"},
+      {"t": "0:09.97-0:10.37", "what": "Voile de flash f299, l'interface disparaît en 5 im, la barre rétrécit et glisse au centre-gauche pour devenir le symbole du logo", "technique": "continuité d'objet barre → logo"},
+      {"t": "0:10.4-0:11.8", "what": "« Gene Spectra » sort du masque, puis « Private DNA analysis in your browser. », l'URL verte et « No data uploaded, ever. » à ~0,45 s d'écart", "technique": "plan final en cascade"},
+      {"t": "0:11.8-0:15.06", "what": "Plan final figé, musique en fondu de sortie", "technique": "maintien final (temps mort)"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle mesurée : 120,2 BPM (netteté 6,45), temps à x,034 / x,534 s ; la grille globale de 75,7 BPM des planches est fausse. Attaques fortes relevées à 3,529 s (f105,9), 4,029 (f120,9), 4,528 (f135,8), 5,526 (f165,8), 10,031 (f300,9) : ce sont exactement les apparitions de « No upload », « No account », « No server », le flash de dépôt et le flash final. Comptage (départ de chaque geste) : accroche f14 (−2 im), f30 (−1), f44 (−2), coupe f89 (−2), No upload f104 (−2), No account f119 (−2), No server f134 (−2), dépôt f164 (−2), départ du compteur f227 (+1), flash f299 (−2) tombent à ±2 im d'un temps ou demi-temps ; hélice → prisme f216, logo f312 (−4), sous-titre f324, URL f339, slogan f352 hors grille. 10 gestes sur 15 à ±2 im (hasard ≈ 33 %), 10 sur 12 avant le plan final. Décalage typique : l'image de départ précède le temps de 2 im, l'atterrissage tombe 0-1 im après. Le creux sonore à 5,0-5,5 s (−27 dB contre −17) précède le dépôt.",
+    "synced": ["coupes", "apparitions", "texte", "flashs", "impacts", "drop"],
+    "style_match": "Électro propre à 120 BPM, intro en cliquetis montant, impacts nets : colle au ton tech et confidentiel ; révélations sèches de 2-3 im sur chaque temps, flashs sur les impacts.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Les attaques tombent exactement sur les révélations et un creux sonore précède le dépôt : bande-son probablement générée ou montée sur la même timeline que l'animation (grille de 0,5 s). Le plan final n'est plus calé : révélations à 0,43 s d'écart, hors grille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche par affirmation de problème",
+      "name_en": "problem-statement hook",
+      "t": "0:00.47-0:02.83",
+      "frames": "f14-f85",
+      "fps": 30,
+      "mechanics": "Une phrase-choc de 7 mots, « You can't rotate a genome like a password. », pose l'enjeu (on ne peut pas changer son ADN comme un mot de passe) avant tout produit. 2 lignes, ferrées à gauche à ~8 % du bord, centre optique à ~45 % de la hauteur. Tenue 1,2 s après la dernière ligne, assez pour lire.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond de données brutes qui défile",
+      "name_en": "scrolling raw-data texture",
+      "t": "0:00-0:03.0",
+      "frames": "f0-f89",
+      "fps": 30,
+      "mechanics": "Colonnes de lignes d'un fichier génétique brut (rsID, numéro de chromosome, position, génotype AA/CT…) en mono ≈ 1 % de la hauteur, #26364A sur #0B111A (contraste très faible), en défilement vertical continu. Donne du mouvement aux plans de texte fixes sans voler la lecture. Réapparaît en filigrane dans le cadre navigateur jusqu'à 0:05.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f62.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation de groupes de mots par masque, sur la grille",
+      "name_en": "masked line rise on the beat grid",
+      "t": "0:00.47-0:01.6",
+      "frames": "f14-f50",
+      "fps": 30,
+      "mechanics": "Trois groupes (« You can't rotate », « a genome », « like a password. ») montent d'environ 40 % de leur hauteur de capitale derrière un masque horizontal, en 4-5 im (0,13-0,17 s), ease-out : moitié du trajet dès la 1re image. Départs à f14, f30, f44 = 15 im d'écart, soit un temps à 120 BPM, chacun 1-2 im avant le temps. Pas de flou de mouvement. Pas d'opacité, le masque seul fait l'apparition.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie par le haut, traînée verticale et voile de flash",
+      "name_en": "mask exit + vertical smear + flash wash",
+      "t": "0:02.83-0:03.0",
+      "frames": "f85-f90",
+      "fps": 30,
+      "mechanics": "f85-f88 : les deux lignes remontent et disparaissent dans le masque en 4 im (ease-in) ; les colonnes de fond s'étirent verticalement (smear) ; f89 : voile clair gris-bleu (~+20 % de luminosité) sur tout le cadre, 1 im de pic puis retombée en 3 im. Le départ (f85) tombe sur le demi-temps, le flash 2 im avant le temps de 3,03 s, où le niveau sonore saute de −21 à −15 dB.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f89.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadre navigateur tracé depuis les coins avec reflet courant",
+      "name_en": "stroke-drawn browser frame with travelling glint",
+      "t": "0:03.0-0:03.43",
+      "frames": "f94-f103",
+      "fps": 30,
+      "mechanics": "Bordure de 1 px #5F7F9E, coins arrondis, inset ≈ 3 % du cadre : les segments partent des coins et se rejoignent au milieu des côtés en ~6 im (f96-f101). Puis pastille d'adresse « genespectra.app » avec cadenas, centrée en haut, en fondu (f103). Un reflet blanc court ensuite le long de la bordure supérieure et inférieure à chaque nouvelle ligne de texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f89.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Anaphore en trois lignes, une par temps, avec pulsation du cadre",
+      "name_en": "beat-locked anaphora list",
+      "t": "0:03.47-0:04.6",
+      "frames": "f104-f137",
+      "fps": 30,
+      "mechanics": "« No upload. » (f104), « No account. » (f119), « No server. » (f134) : 15 im d'écart exact. Une im avant chaque ligne, un petit tiret double « - - » apparaît à l'emplacement (marqueur d'amorce), puis la ligne sort du masque en 2 im et se pose à la 3e (ease-out sec). À chaque ligne, le cadre et le fond s'éclaircissent ~2 im (pulsation) et un reflet court sur la bordure. Serif ≈ 8 % de la hauteur, interligne serré ≈ 1,05. Atterrissage sur les attaques mesurées à 3,529 / 4,029 / 4,528 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f120.jpg",
+      "illus": {"from": 103, "to": 137, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Glisser-déposer d'un fichier avec curseur",
+      "name_en": "drag-and-drop file card",
+      "t": "0:04.8-0:05.47",
+      "frames": "f145-f164",
+      "fps": 30,
+      "mechanics": "La liste sort par le haut ; une zone de dépôt en pointillés apparaît ; une carte « genome_raw_data.txt — 24.1 MB, stays on this device » (nom en mono) avec flèche de curseur arrive en diagonale du haut-droite et se pose au centre de la zone en ~8 im (f150-f158), ease-out marqué (grands pas puis micro-pas). Légende « Drop in your 23andMe or AncestryDNA file. » en bas-gauche. La carte attend ~6 im au-dessus de la zone avant le dépôt : petite anticipation.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f164.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash turquoise au dépôt, après un creux sonore",
+      "name_en": "drop-confirm flash after audio dip",
+      "t": "0:05.47-0:05.57",
+      "frames": "f164-f167",
+      "fps": 30,
+      "mechanics": "f164 : bordure de la zone et contour de la carte passent en turquoise #5EEAD4, voile clair sur tout le cadre (~+15 %), retour en 2-3 im. Le son se creuse de 5,0 à 5,5 s (−27 dB contre −17 avant) puis l'impact tombe à 5,526 s (f165,8) : l'image précède le son de 2 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f164.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Le fichier se désintègre et se recompose en hélice d'ADN",
+      "name_en": "file-to-helix particle morph",
+      "t": "0:05.53-0:06.5",
+      "frames": "f166-f195",
+      "fps": 30,
+      "mechanics": "f166-f170 : la carte se fragmente en points blancs lumineux (dissolution en pixels) ; f171-f175 : nuage resserré au centre-gauche ; f176-f187 : les points s'organisent en double hélice horizontale (≈ 45 % de la largeur, 20 % de la hauteur) mais avec des pointes en dents de scie pendant ~0,4 s ; f189-f195 : les brins se lissent en sinusoïdes propres. Lueur additive sur les points.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f164.jpg",
+      "illus": {"from": 164, "to": 195, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Double hélice en nuage de points qui défile",
+      "name_en": "point-cloud DNA helix scroll",
+      "t": "0:06.3-0:09.2",
+      "frames": "f189-f276",
+      "fps": 30,
+      "mechanics": "Deux brins sinusoïdaux déphasés, barreaux verticaux fins entre eux, points plus lumineux sur le brin avant (pseudo-profondeur). L'hélice translate vers la droite à vitesse constante (linéaire) d'environ 30 % de la largeur en 2 s et disparaît progressivement dans la fente.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Prisme : l'ADN blanc se diffracte en spectre de catégories",
+      "name_en": "prism refraction into a data spectrum",
+      "t": "0:07.2-0:09.3",
+      "frames": "f216-f280",
+      "fps": 30,
+      "mechanics": "Une fente verticale blanche (≈ 30 % de la hauteur, x ≈ 57 %) fait office de prisme. À partir de f216 (temps de 7,2 s), ce qui la traverse ressort en brins colorés qui s'éventent vers une barre verticale segmentée (x ≈ 82 %, de 12 à 82 % de la hauteur). Ordre d'arrivée : indigo en haut d'abord, puis cyan, vert, jaune, orange, rose en bas ; chaque segment de barre s'allume quand son brin arrive. L'éventail passe de 10° à ~60° d'ouverture en 2 s. Lueur additive. Idée de nom de marque mise en image : Gene + Spectra.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 213, "to": 270, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Libellés de catégories en cascade le long de la barre",
+      "name_en": "staggered category labels",
+      "t": "0:07.8-0:09.3",
+      "frames": "f235-f280",
+      "fps": 30,
+      "mechanics": "7 libellés en grotesque ≈ 1,2 % de la hauteur, gris clair, à droite de la barre : Methylation, Cardiovascular, Nutrition, Fitness, Brain health, Athletic performance, Drug response. Chacun apparaît en fondu quand son brin atteint la barre, ~6-8 im d'écart. Trop petits pour être lus sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur serif 0 → 154",
+      "name_en": "rolling counter",
+      "t": "0:07.57-0:09.3",
+      "frames": "f227-f280",
+      "fps": 30,
+      "mechanics": "Chiffres serif ≈ 14 % de la hauteur, bas-gauche (x ≈ 5 %, base ≈ 85 %). Départ f227 (+1 im du demi-temps 7,53 s) : 0, 0, 3, 8, 14 (démarrage progressif), puis ~3,9 par image (linéaire) jusqu'à 132 à f269, puis ralentit jusqu'à 154 vers f280 : ease-in-out. Label « genetic markers » en grotesque à droite, 2e ligne « across 20 health categories » en gris à f255. Le nombre change à chaque image, pas de roulement vertical.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre de données devient le symbole du logo",
+      "name_en": "object-continuity bar-to-logo",
+      "t": "0:09.9-0:10.6",
+      "frames": "f297-f317",
+      "fps": 30,
+      "mechanics": "f297-f298 : tout s'assombrit sauf la barre ; f299 : voile de flash (2 im avant le temps de 10,02 s, attaque à 10,031 s) ; f299-f304 : l'interface, les brins et les libellés disparaissent en fondu ; f303-f311 : la barre perd ses segments visibles, rétrécit de ~70 % à ~25 % de la hauteur et glisse de x ≈ 82 % à x ≈ 32 % (ease-in-out, ~8 im) ; f312-f317 : « Gene Spectra » sort du masque à sa droite. Le dernier élément de la démonstration devient la marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f299.jpg",
+      "illus": {"from": 296, "to": 317, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Plan final en cascade",
+      "name_en": "end-card stagger",
+      "t": "0:10.4-0:11.8",
+      "frames": "f312-f357",
+      "fps": 30,
+      "mechanics": "« Gene Spectra » (serif ≈ 13 % de la hauteur) sort du masque en 5-6 im ; « Private DNA analysis in your browser. » (grotesque ≈ 2,5 %) à f324 ; URL verte #34D399 à f339 ; « No data uploaded, ever. » (≈ 1,3 %, gris) en fondu à f352, centré en bas. Écart régulier ~13-14 im (0,43-0,47 s) : plus sur la grille de 0,5 s.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio serif éditoriale / grotesque / mono",
+      "name_en": "editorial serif + grotesque + mono system",
+      "t": "0:00-0:15",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Serif condensée à contraste moyen (Instrument Serif probable), casse phrase, interlettrage serré, pour la voix de marque (accroche, liste, chiffres, logo) ; grotesque neutre (Inter probable) pour l'interface et les sous-titres ; mono pour les données et le nom de fichier. Chaque famille a un rôle fixe, jamais mélangé.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Le spectre comme seul accent de couleur",
+      "name_en": "spectrum as sole accent",
+      "t": "0:06.3-0:15",
+      "frames": "f189-f449",
+      "fps": 30,
+      "mechanics": "Tout le film est en bleu nuit et blanc cassé ; la couleur n'arrive qu'à la diffraction (7,2 s), en dégradé indigo #6366F1 → cyan #22D3EE → vert-jaune #A3E635 → orange #FB923C → rose #F472B6, puis survit seule dans le symbole du logo. Seul autre accent : turquoise au dépôt et vert de l'URL.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en cinq actes en 10 s",
+      "name_en": "five-beat product story",
+      "t": "0:00-0:10.6",
+      "frames": "f0-f317",
+      "fps": 30,
+      "mechanics": "Problème (accroche, 3 s) → promesse (3 refus, 1,5 s) → geste (déposer le fichier, 1 s) → transformation (fichier → ADN → spectre, 3,5 s) → preuve chiffrée (154 marqueurs, 20 catégories) → marque. Chaque acte se termine par un flash ou une sortie par masque.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Départ 2 images avant le temps, atterrissage sur l'attaque",
+      "name_en": "2-frame pre-roll to land on the beat",
+      "t": "0:00.47-0:10.4",
+      "frames": "f14-f311",
+      "fps": 30,
+      "mechanics": "Grille 120 BPM (temps à x,03 et x,53 s). Les révélations par masque durent 2-5 im ; elles démarrent 2 im avant le temps (f14, f44, f104, f119, f134), si bien que l'image où le texte se pose coïncide avec l'attaque audio (3,529 / 4,029 / 4,528 s). Même décalage pour les flashs (f89, f164, f299 : 2 im avant). Lien caractère : électro propre et régulière ↔ révélations sèches, sans rebond.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f120.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Creux sonore avant l'impact du geste clé",
+      "name_en": "pre-drop dip",
+      "t": "0:05.0-0:05.53",
+      "frames": "f150-f166",
+      "fps": 30,
+      "mechanics": "Niveau moyen −17 dB avant, −27 dB de 5,0 à 5,5 s pendant que la carte glisse, puis attaque à 5,526 s avec grosse caisse : le flash de dépôt (f164) tombe dessus. Deuxième creux (−25 dB) de 6,0 à 6,5 s pendant la formation de l'hélice, remontée à −17 dB à 7,0 s juste avant la diffraction.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f164.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Lueur additive sur les points et les brins",
+      "name_en": "additive glow",
+      "t": "0:05.6-0:09.5",
+      "frames": "f168-f285",
+      "fps": 30,
+      "mechanics": "Points de l'hélice et brins spectraux en mode additif avec halo de ~2-4 px ; là où les brins se superposent (sortie de fente, arrivée sur la barre), la couleur sature vers le blanc, ce qui donne l'impression de lumière réelle. Vignettage doux sur tout le film.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Plan final figé de 4,2 s",
+      "name_en": "static end-card hold",
+      "t": "0:10.7-0:14.93",
+      "frames": "f321-f448",
+      "fps": 30,
+      "mechanics": "Après la dernière révélation (f357), plus aucun mouvement : ni dérive, ni pulsation, ni respiration du symbole. 4,2 s de maintien statique mesuré (28 % de la durée), pendant le fondu sonore de sortie. Contraire à la règle « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "cliche",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Hiérarchie gauche-droite du plan de données",
+      "name_en": "left-to-right data layout",
+      "t": "0:07.2-0:09.9",
+      "frames": "f216-f297",
+      "fps": 30,
+      "mechanics": "Lecture en Z : hélice à gauche (cause), fente au centre (transformation), barre et libellés à droite (résultat), gros chiffre en bas-gauche (preuve). Le tout dans le cadre navigateur à 3 % des bords. Marges constantes à ~5 % ; le chiffre et l'hélice partagent la même colonne gauche.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« use assets from the current live site » : tout le texte (Private DNA analysis in your browser, Drop in your 23andMe or AncestryDNA file, 20 health categories, l'URL) vient probablement du site. C'est ce qui donne un discours juste et un angle vie privée sans que le prompt le dise."},
+    {"kind": "direction", "insight": "« go all out » a été traduit en métaphore visuelle forte (prisme) et en morphing de particules, pas en surcharge d'effets : la direction ouverte a laissé Claude construire un concept à partir du nom de marque."},
+    {"kind": "structure", "insight": "Seule contrainte : 15 s. Claude a mis 10,5 s de récit et 4,5 s de plan final. Sans consigne sur la fin, le modèle « tient » le logo : préciser « plan final ≤ 1,5 s, toujours en mouvement »."},
+    {"kind": "build", "insight": "Aucune mention de musique ni de BPM, pourtant tout est calé sur une grille de 0,5 s avec un décalage constant de 2 im : signe probable d'une timeline unique où son et image partagent les mêmes temps (bande-son générée ou posée en code)."},
+    {"kind": "qa", "insight": "Les libellés d'interface (≈ 1,2-1,5 % de la hauteur) et le slogan final sont illisibles en petit écran : il aurait fallu une taille minimale de texte dans le prompt."},
+    {"kind": "other", "insight": "Prompt d'une ligne, résultat solide : la richesse vient du site source (contenu) et du nom de marque (métaphore), pas du prompt lui-même."}
+  ],
+  "steal": [
+    "Mettez le nom de marque en image : l'objet du produit traverse un prisme et ressort en spectre qui atterrit sur les catégories de données.",
+    "Grille à 120 BPM : faites démarrer chaque révélation 2 images avant le temps pour que l'atterrissage tombe pile sur l'attaque.",
+    "Faites du dernier élément de la démo (barre de données) le symbole du logo final : rétrécir, glisser, poser le nom à côté.",
+    "Liste de refus en anaphore (No upload. No account. No server.) : une ligne par temps, pulsation du cadre à chaque ligne.",
+    "Creusez le son 0,5 s avant le geste clé, puis flash et impact sur le temps."
+  ],
+  "flaws": [
+    "Plan final figé 4,2 s (28 % de la durée) : temps mort, aucun mouvement résiduel.",
+    "Morphing fichier → hélice brouillon : nuage de points en dents de scie pendant ~0,4 s avant de se lisser.",
+    "Libellés d'interface et slogan final minuscules (≈ 1,2-1,5 % de la hauteur), illisibles sur mobile.",
+    "Liste « No upload… » plate : aucun zoom, aucune hiérarchie, simple empilement à gauche.",
+    "Cascade du plan final à 0,43 s d'écart, décrochée de la grille musicale tenue jusque-là."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour la séquence 5,4-10,6 s (dépôt → particules → hélice → prisme → barre-logo) : chorégraphie de continuité d'objet et calage à 2 im près à étudier image par image. Mais source native en 30 fps : l'étude se fait à 30 fps, pas à 60."}
+}

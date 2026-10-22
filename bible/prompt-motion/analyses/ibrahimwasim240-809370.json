@@ -1,0 +1,676 @@
+{
+  "slug": "ibrahimwasim240-809370",
+  "title": "Personal skills showreel",
+  "handle": "@ibrahimwasim240",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept fort tenu sur 25 s, transitions motivées (barre de déploiement → navigateur, dézoom vers la carte, plongée dans la porte), un niveau par mesure ; HUD illisible en petit, flashs grisâtres.",
+  "summary": "CV animé façon jeu d'arcade 8-bit : écran cathodique, PRESS START, puis chaque compétence devient un niveau (construire un niveau, coder le saut du héros, site responsive, kanban, boss « le dernier bug »), montée de niveau, carte du monde et plongée dans la porte « votre projet ». Force : métaphore tenue de bout en bout, une mesure par niveau. Faiblesse : textes HUD minuscules, scènes chargées.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : 25 s de motion design dynamique montrant « mes compétences » comme un showreel de CV, « go all out ». Rien sur le style, la musique ou les compétences elles-mêmes.",
+    "Claude a tout décidé : la métaphore jeu vidéo (1 compétence = 1 niveau), le HUD avec chrono, le boss « dernier bug », la carte du monde, la palette néon et une bande-son (probable) découpée en 9 mesures.",
+    "« Go all out » a suffi pour un concept fort, mais le nom et les 4 compétences viennent d'un contexte absent du prompt publié (probable). Il aurait fallu préciser : public, taille minimale des textes, musique."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0C0C14",
+        "role": "fond nuit (toutes les scènes de jeu)"
+      },
+      {
+        "hex": "#14142C",
+        "role": "panneaux, grille de level design, colonnes kanban"
+      },
+      {
+        "hex": "#BCF840",
+        "role": "accent principal citron néon : héros, nom, tampons, Game design"
+      },
+      {
+        "hex": "#48F0F8",
+        "role": "cyan : PLAYER 1, code, particules, Software dev"
+      },
+      {
+        "hex": "#EC2888",
+        "role": "rose : PRESS START, plateformes, boss, -25 %, Web dev"
+      },
+      {
+        "hex": "#7848F8",
+        "role": "violet : sol, porte, cadres, halo du navigateur"
+      },
+      {
+        "hex": "#F8B838",
+        "role": "ambre : blocs « ? », pièces, rayures de danger, Project mgmt"
+      },
+      {
+        "hex": "#F4F0FC",
+        "role": "blanc lavande : fenêtre du navigateur, titre final"
+      },
+      {
+        "hex": "#BCB4C4",
+        "role": "flash lavande-gris (allumage CRT, mise à mort)"
+      },
+      {
+        "hex": "#241444",
+        "role": "centre du dégradé radial du titre final"
+      },
+      {
+        "hex": "#14041C",
+        "role": "fond prune de la scène du boss"
+      }
+    ],
+    "type": "Trois voix : pixel (type Silkscreen, probable) pour le jeu ; mono (type JetBrains Mono) pour HUD et code ≈ 1,6 % de hauteur ; grotesque condensée très grasse (type Anton) pour exclamations et titre ≈ 9-10 %. Capitales.",
+    "texture": "Halo néon (glow) sur les éléments citron et autour des fenêtres (halo violet du navigateur) ; flou de mouvement horizontal sur les tampons et les cartes kanban ; flou de zoom sur les mouvements de caméra ; flashs lavande-gris ; particules carrées et tirets ; glitch par tranches horizontales ; grille de level design et silhouettes de ville en fond ; ni grain ni scanlines malgré le thème rétro.",
+    "style": "Arcade 8-bit néon, HUD de jeu",
+    "coherence": "Tout tient par la métaphore : HUD permanent (score cumulé, cœurs, LVL, chrono TIME 22.0 → 00.0 égal au temps restant), même héros pixel dans chaque niveau, palette de 5 néons où chaque compétence garde sa couleur jusqu'aux barres de la fiche personnage, carte du monde dont chaque case est une vignette vivante d'une scène passée, fin qui reboucle sur PRESS START. Rupture légère : les scènes web et kanban (interface claire, texte fin) sont plus chargées et moins lisibles que le reste."
+  },
+  "rhythm": {
+    "bpm": 86.4,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "86,4 BPM (temps 0,694 s = 41,7 im à 60 fps), mesure de 4 temps = 2,78 s = 1 niveau, 9 mesures = 25,0 s. 9 coupes détectées (médiane de plan 2,24 s) mais la plupart des passages sont des transitions internes (morph, push, volet, dézoom, plongée). Les 8 changements de niveau tombent sur le premier temps d'une mesure (f168, f334, f501, f667, f834, f1001, f1167, f1335) ; dans chaque mesure, les gestes secondaires (reflows, push sur le drapeau, volet de danger) sont libres, à +3-5 im des temps. Densité élevée : un geste toutes les 0,2-0,5 s dans les niveaux, un vol de carte kanban toutes les 6-12 im. Temps morts : fiche personnage 18,0-19,5 s (seules les barres avancent), fin 23,1-23,6 s et 24,5-25,0 s ; le chrono et le score du HUD continuent de tourner, ce qui atténue l'arrêt.",
+    "timeline": [
+      {
+        "t": "0:00.00-0:00.67",
+        "what": "Écran noir, trait blanc horizontal qui s'ouvre en écran lavande puis s'éteint",
+        "technique": "allumage cathodique (CRT power-on)"
+      },
+      {
+        "t": "0:00.52-0:01.70",
+        "what": "Particules cyan qui convergent et écrivent IBRAHIM WASIM en matrice de points",
+        "technique": "assemblage de particules sur la première note"
+      },
+      {
+        "t": "0:01.50-0:02.55",
+        "what": "PRESS START clignote, balayage glitch sur le nom, le curseur vient cliquer",
+        "technique": "clignotement 5 Hz + curseur"
+      },
+      {
+        "t": "0:02.55-0:02.80",
+        "what": "Le titre se désagrège en pixels, trou de son, puis impact",
+        "technique": "dissolution glitch + silence avant impact"
+      },
+      {
+        "t": "0:02.80-0:03.30",
+        "what": "DESIGN IT : sol et plateformes se construisent, palette d'outils à gauche",
+        "technique": "construction en escalier sur le premier temps (mesure 2)"
+      },
+      {
+        "t": "0:03.30-0:05.00",
+        "what": "PLAY IT : le héros saute, ramasse des pièces, +100",
+        "technique": "gameplay + compteur qui roule"
+      },
+      {
+        "t": "0:05.00-0:05.57",
+        "what": "LEVEL CLEAR! claque, push-in éclair sur le drapeau qui devient la fenêtre d'aperçu",
+        "technique": "tampon + push-in + match cut"
+      },
+      {
+        "t": "0:05.57-0:08.33",
+        "what": "LVL 02 Software dev : code tapé, aperçu en direct, tests, déploiement",
+        "technique": "code qui pilote l'aperçu (mesure 3)"
+      },
+      {
+        "t": "0:08.33-0:08.72",
+        "what": "La barre de déploiement grandit et devient la fenêtre du navigateur",
+        "technique": "morph motivé sur le premier temps (mesure 4)"
+      },
+      {
+        "t": "0:08.72-0:10.45",
+        "what": "Filaire puis site BUILD. SHIP. PLAY., reflow desktop → tablette → mobile",
+        "technique": "interface responsive"
+      },
+      {
+        "t": "0:10.45-0:11.12",
+        "what": "Anneaux 100/100/100/99 autour du mobile",
+        "technique": "pop-in de données"
+      },
+      {
+        "t": "0:11.12-0:13.15",
+        "what": "LVL 04 : tableau kanban, cartes qui volent vers DONE, burndown en escalier",
+        "technique": "coupe franche sur le temps 1 (mesure 5) + vols de cartes floutés"
+      },
+      {
+        "t": "0:13.15-0:13.60",
+        "what": "SPRINT COMPLETE claque",
+        "technique": "tampon sur le 4e temps"
+      },
+      {
+        "t": "0:13.62-0:13.90",
+        "what": "Volet diagonal en rayures de danger, WARNING",
+        "technique": "volet texturé"
+      },
+      {
+        "t": "0:13.90-0:15.98",
+        "what": "Le boss tombe, combat : tirs, -25 %, barre de vie",
+        "technique": "entrée de boss sur le temps 1 (mesure 6)"
+      },
+      {
+        "t": "0:15.98-0:16.66",
+        "what": "Flash de mise à mort, explosion en pixels, BUG SQUASHED, +5000, barre d'XP",
+        "technique": "flash sur le 4e temps"
+      },
+      {
+        "t": "0:16.67-0:17.83",
+        "what": "LEVEL UP! sur sunburst qui s'assombrit",
+        "technique": "sunburst sur le temps 1 (mesure 7)"
+      },
+      {
+        "t": "0:17.83-0:19.46",
+        "what": "Fiche personnage LV 99, barres de compétences jusqu'à MAX",
+        "technique": "barres décalées (plan quasi statique)"
+      },
+      {
+        "t": "0:19.46-0:20.50",
+        "what": "Dézoom : la fiche devient une case de la carte du monde",
+        "technique": "dézoom récapitulatif parti du temps 1 (mesure 8)"
+      },
+      {
+        "t": "0:20.50-0:21.60",
+        "what": "Carte : chemin pointillé, étoiles, porte « 07 NEXT LEVEL – YOUR PROJECT »",
+        "technique": "carte récapitulative"
+      },
+      {
+        "t": "0:21.60-0:22.80",
+        "what": "Push puis plongée dans la porte (plein cadre sur le temps 1 de la mesure 9), battants qui s'ouvrent sur la lumière",
+        "technique": "plongée dans un objet"
+      },
+      {
+        "t": "0:22.80-0:23.40",
+        "what": "Titre IBRAHIM WASIM qui se résout puis prend un halo",
+        "technique": "résolution glitch + glow"
+      },
+      {
+        "t": "0:23.40-0:25.00",
+        "what": "Compétences tapées, pilule @ibrahimwasim240 cliquée, 1UP, CONTINUE? PRESS START",
+        "technique": "fin interactive qui boucle"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille parfaitement régulière à 86,4 BPM (temps toutes les 41,67 im). Comptage à un événement clé par geste : 12 gestes sur 21 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 24 % à ce tempo). Sur des temps : construction du niveau f168, bascule vers le code f334, morph barre → navigateur f501, coupe vers le kanban f667, SPRINT COMPLETE f792, chute du boss f834, flash de mise à mort f959 (barre bleue et point vert sur la même image), sunburst f1001, départ du dézoom f1167, porte plein cadre f1335 ; sur des demi-temps : pilule PLAY f189, filaire f522. Hors grille : particules f31 (mais sur la toute première note), clic PRESS START f150 (+3 im), PLAY IT f198, push sur le drapeau f323, reflows f588 et f609 (+4 im), volet de danger f817 (+3,5 im), coupe vers la fiche f1070, résolution du titre f1371. Les 8 changements de niveau sont tous sur le premier temps d'une mesure de 4 temps, et les gros impacts sont espacés de nombres entiers de temps (4, 7, 1, 3, 1, 5, 3). L'attaque audio détectée tombe sur la même image (0 à 1 im). L'indice automatique (p = 0,29, « aucune synchro ») est trompé par les éléments qui bougent en permanence (HUD, aperçus, particules) : l'image le contredit.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "flashs",
+      "camera",
+      "apparitions"
+    ],
+    "style_match": "Musique électronique type chiptune (probable) à 86,4 BPM avec arpège en doubles croches : même univers que l'image ; arrêts secs, flashs et tampons collent à son attaque nette.",
+    "how_built": "Probable bande-son générée en code avec le même minutage : tempo parfaitement régulier, arpège toutes les 10,4 im, 36 temps = 25,0 s pile (le tempo semble choisi pour faire tenir 9 mesures dans la durée demandée), trous de son placés sous les transitions. Le prompt ne dit rien de la musique : le modèle a écrit les scènes en temps et en mesures. Le « 144 BPM » affiché sur l'écran titre est décoratif et ne correspond pas au tempo mesuré."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Métaphore filée : le CV comme jeu vidéo",
+      "name_en": "Extended metaphor: resume as a video game",
+      "t": "0:00.00-0:25.00",
+      "frames": "f0-f1499",
+      "fps": 60,
+      "mechanics": "Toute la vidéo est une partie : écran titre (BOOT), puis 1 compétence = 1 niveau (LVL 01 Game design : construire un niveau ; LVL 02 Software dev : coder le saut du héros ; LVL 03 Web dev : site responsive ; LVL 04 Project mgmt : tableau kanban « quest board » ; LVL 05 boss « The last bug » ; LVL 06 Level up : fiche personnage LV 99), carte du monde récapitulative, puis porte « 07 Next level – your project » qui mène à l'appel à l'action. Chaque compétence est montrée en action, jamais énoncée en liste.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de jeu permanent",
+      "name_en": "Persistent game HUD",
+      "t": "0:02.75-0:25.00",
+      "frames": "f165-f1499",
+      "fps": 60,
+      "mechanics": "Bandeau haut : « SCORE » cyan + 7 chiffres blancs mono (≈ 1,6 % de la hauteur, centré à ≈ 40 % de la largeur), trois cœurs roses + « LVL 01…06 / MAP / LVL ?? » en haut à droite. Bas gauche : étiquette du niveau (« LVL 01 – GAME DESIGN », ≈ 1 %). Bas droite : chrono « TIME 22.0 » qui décompte jusqu'à 00.0 sur la dernière image (= temps restant de la vidéo). Fine ligne citron (≈ 0,3 % de la hauteur) en pied de cadre. Le HUD reste fixe pendant les transitions : c'est lui qui assure la continuité entre 9 scènes très différentes.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Allumage d'écran cathodique",
+      "name_en": "CRT power-on",
+      "t": "0:00.03-0:00.67",
+      "frames": "f2-f40",
+      "fps": 60,
+      "mechanics": "f2-f11 : trait blanc horizontal à mi-hauteur (≈ 0,3 % de la hauteur) qui s'étire de ≈ 45 % à 100 % de la largeur ; f12-f13 il s'épaissit et blanchit ; f14-f20 ouverture verticale 2 % → 10 % → 30 % → 63 % → 80 % → 90 % → 97 % de la hauteur (6 im = 0,1 s, ease-in-out, bords adoucis ≈ 2 %) ; puis l'écran lavande-gris (#C4C0D0) s'éteint vers le fond nuit en ≈ 20 im (0,33 s), comme la rémanence d'un phosphore. Un bruit sourd accompagne le trait (−12 dB à f2-f8), puis quasi-silence jusqu'à f31.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f17.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Nom assemblé par particules",
+      "name_en": "Particle text assembly",
+      "t": "0:00.52-0:01.70",
+      "frames": "f31-f102",
+      "fps": 60,
+      "mechanics": "À f31, sur la première note de musique (attaque à 0 im), des tirets cyan (#48F0F8, ≈ 0,5 × 2 % du cadre, orientés selon leur trajectoire) arrivent de tous les bords et se posent en matrice de points (carrés arrondis ≈ 1 % de la hauteur, lettres ≈ 9 %). IBRAHIM se forme d'abord (≈ 1,0 s), WASIM ≈ 0,5 s plus tard ; les points passent du cyan au citron (#BCF840) en se posant. « PLAYER 1 » cyan au-dessus, « 2026 · 1 PLAYER · 144 BPM » en pied.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f17.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Balayage glitch sur le nom",
+      "name_en": "Glitch scan highlight",
+      "t": "0:01.85-0:02.10",
+      "frames": "f111-f126",
+      "fps": 60,
+      "mechanics": "Un bloc clair bruité (≈ 1,5 lettre de large, toute la hauteur de capitale) glisse de la 4e à la dernière lettre en ≈ 15 im (≈ 1 lettre toutes les 2 im), comme une tête de lecture ; les lettres dessous sont inversées. Petit accent d'attente avant le clic.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "PRESS START clignotant et clic de curseur",
+      "name_en": "Blinking PRESS START with cursor click",
+      "t": "0:01.50-0:02.55",
+      "frames": "f90-f153",
+      "fps": 60,
+      "mechanics": "« ▸ PRESS START » rose (#EC2888, police pixel ≈ 3 % de la hauteur) clignote sur une période de 12 im (6 allumées, 6 éteintes = 5 Hz). Une flèche de curseur blanche glisse de ≈ (62 %, 77 %) jusqu'au libellé (ease-out ≈ 0,4 s) ; à f150 le libellé passe au vert = clic, la transition part 3 im plus tard. Le spectateur « lance » le CV.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Dissolution glitch en pixels avec silence",
+      "name_en": "Pixel glitch dissolve with pre-hit silence",
+      "t": "0:02.55-0:02.80",
+      "frames": "f153-f168",
+      "fps": 60,
+      "mechanics": "f153-f165 (12 im = 0,2 s) : le titre se découpe en tranches horizontales décalées puis en fragments de pixels, des blocs rose/violet clignotent au bord gauche, la scène suivante (skyline, « DESIGN IT ») apparaît en fondu dessous. Le son tombe à −50 dB pendant f160-f164, puis la scène démarre sur le premier temps (f168) avec l'impact le plus fort de la vidéo (−7 dB à f170).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Construction du niveau en escalier",
+      "name_en": "Staggered level build",
+      "t": "0:02.80-0:03.30",
+      "frames": "f168-f198",
+      "fps": 60,
+      "mechanics": "Les blocs de sol violets (#7848F8, arête citron) montent du bas du cadre de gauche à droite avec ≈ 1-2 im de décalage par bloc (≈ 15 im pour 40 % de la largeur) ; les plateformes roses apparaissent une à une toutes les ≈ 3 im (f183-f192) ; la pilule « PLAY » arrive à f189 sur le demi-temps ; mât du drapeau à f195. Une palette d'outils à gauche (TILES) déplace son cadre de sélection sur la tuile en train d'être posée. À f198, « DESIGN IT » devient « PLAY IT » et le héros apparaît.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Gameplay du héros pixel",
+      "name_en": "Pixel hero platforming",
+      "t": "0:03.30-0:05.00",
+      "frames": "f198-f300",
+      "fps": 60,
+      "mechanics": "Héros citron (≈ 6 % de la hauteur) qui court et saute sur des arcs paraboliques (≈ 0,4 s par saut), touche les blocs « ? » et ramasse des pièces ambre (#F8B838) qui deviennent des « +100 » orange montant de ≈ 5 % de la hauteur en s'effaçant (≈ 0,5 s). Le score roule de 0000000 à 0000588 puis 0001300.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tampon d'exclamation incliné",
+      "name_en": "Tilted stamp slam",
+      "t": "0:05.00-0:05.40 ; 0:13.15-0:13.60 ; 0:16.05-0:16.30",
+      "frames": "f295-f325 ; f789-f810 ; f963-f978",
+      "fps": 60,
+      "mechanics": "Recette utilisée 3 fois (LEVEL CLEAR!, SPRINT COMPLETE, BUG SQUASHED) : grotesque condensée très grasse citron (≈ 9 % de la hauteur), inclinée ≈ −4°, halo vert sombre, cadre fin arrondi derrière. Elle arrive surdimensionnée (≈ 180 % de sa taille finale, ≈ 70 % de la largeur) avec un fort flou horizontal, se pose en ≈ 4-5 im, puis continue de rétrécir ≈ 10 im (ease-out expo, sans dépassement) et oscille légèrement (±3 % d'échelle) jusqu'à la sortie. SPRINT COMPLETE se pose à f792, sur le 4e temps de la mesure (B19).",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f325.jpg, extra-02.jpg, microM-006-cut-f959.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Push-in éclair sur un détail qui devient la fenêtre suivante",
+      "name_en": "Snap push-in into a match-cut window",
+      "t": "0:05.38-0:05.57",
+      "frames": "f323-f334",
+      "fps": 60,
+      "mechanics": "Le tampon s'envole flouté (f323-f324), la caméra grossit ≈ ×2 vers le drapeau et le héros (tiers droit) en 4 im (f323-f327, flou de zoom marqué à f325), se pose sur le gros plan (f327-f333), puis à f334, sur le premier temps (B8), ce gros plan devient la fenêtre « PREVIEW • LIVE » (≈ 45 % droite du cadre) de la scène suivante pendant que l'éditeur de code apparaît à gauche. Le push lui-même est hors temps, la bascule est sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f325.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Code tapé qui pilote l'aperçu en direct",
+      "name_en": "Live-coding drives the preview",
+      "t": "0:05.57-0:08.33",
+      "frames": "f334-f500",
+      "fps": 60,
+      "mechanics": "Panneau « hero.js » à gauche (≈ 45 % de la largeur, fond #14142C, mono ≈ 1,6 % de la hauteur) : 5 lignes tapées caractère par caractère (≈ 1,3 s), la ligne en cours surlignée en vert sombre. Dans l'aperçu à droite, le héros saute dès que « hero.vy = -JUMP_FORCE » est écrit. Puis « $ npm test » et 4 tests cochés avec leurs ms apparaissent ligne à ligne, « 42 passing », une pilule verte « ✓ 42 PASSING » surgit en haut à droite, enfin « $ npm run deploy » et une barre citron qui monte à 93 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre de déploiement devient le navigateur",
+      "name_en": "Progress bar morphs into browser window",
+      "t": "0:08.33-0:08.72",
+      "frames": "f500-f523",
+      "fps": 60,
+      "mechanics": "À f500 tout s'efface sauf la barre citron de déploiement (bas gauche, ≈ 33 % × 1 % du cadre). À f501, sur le premier temps (B12), elle devient blanc lavande (#F4F0FC) et grandit : hauteur 1 % → 3 % (f506) → 5 % (f510) → 10 % (f513) → 25 % (f515) → 45 % (f517) → 60 % (f518) → 68 % (f520), largeur 30 % → 75 %, en remontant vers le centre ; démarrage lent puis expansion rapide (ease-in-out, ≈ 20 im), léger flou de mouvement. Les pastilles de fenêtre apparaissent à f518, le filaire se dessine à f523 (demi-temps). Le produit du déploiement naît littéralement de la barre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f515.jpg",
+      "illus": {
+        "from": 500,
+        "to": 520,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Du filaire à la maquette finale",
+      "name_en": "Wireframe to hi-fi",
+      "t": "0:08.70-0:09.70",
+      "frames": "f522-f582",
+      "fps": 60,
+      "mechanics": "Dans la fenêtre (halo violet ≈ 30 % d'opacité autour), des rectangles en pointillés (en-tête, bloc héros, bouton, 3 cartes) se dessinent de haut en bas à partir de f523, puis le contenu final les remplace vers 9,5 s : titre « BUILD. SHIP. PLAY. » en grotesque noire très grasse (≈ 5 % de la hauteur), pilule citron « PLAY NOW », 3 cartes en dégradé (citron → vert, violet → cyan, orange → rose). Étiquette cyan « DESKTOP • 1440 » sous la fenêtre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f515.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Reflow responsive desktop → tablette → mobile",
+      "name_en": "Responsive breakpoint reflow",
+      "t": "0:09.80-0:10.45",
+      "frames": "f588-f627",
+      "fps": 60,
+      "mechanics": "f588-f596 (8 im = 0,13 s) : la fenêtre passe de ≈ 75 % à ≈ 55 % de la largeur, la 3e carte descend sur une nouvelle ligne avec un flou horizontal, le titre se brouille pendant le mouvement ; l'étiquette devient « TABLET • 768 » à f594. Vers f609-f627, second palier à ≈ 35 % de largeur, « MOBILE • 390 », cartes empilées. Départ 4 im après le temps : non calé.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f593.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Anneaux de score 100/100/100/99",
+      "name_en": "Lighthouse score rings",
+      "t": "0:10.45-0:11.12",
+      "frames": "f627-f666",
+      "fps": 60,
+      "mechanics": "Quatre anneaux citron lumineux (≈ 10 % de la hauteur) avec chiffres blancs (100, 100, 100, 99) et libellés PERF, SEO, A11Y, BEST apparaissent par paires de part et d'autre du mobile (pop-in ≈ 0,3 s, probable). Les chiffres ne roulent pas et les anneaux ne se remplissent pas. Coupe franche à f667 sur le premier temps (B16).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes kanban qui volent de colonne en colonne",
+      "name_en": "Kanban cards flying between columns",
+      "t": "0:11.12-0:13.15",
+      "frames": "f667-f789",
+      "fps": 60,
+      "mechanics": "« QUEST BOARD • SPRINT 07 » : colonnes TODO / DOING / DONE / BURNDOWN sur fond #14142C. Environ 10 déplacements de cartes en ≈ 1,3 s (f714-f789) : chaque vol dure ≈ 6-9 im avec un flou horizontal très marqué (traînée ≈ 15 % de la largeur), les départs se chevauchent (un toutes les ≈ 6-12 im). À l'arrivée, la carte reçoit une coche citron ; les compteurs de colonnes changent (TODO 4 → 0, DONE 0 → 6) et le score monte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Burndown en escalier et jalons qui s'allument",
+      "name_en": "Stepped burndown with milestone lights",
+      "t": "0:11.90-0:13.20",
+      "frames": "f714-f792",
+      "fps": 60,
+      "mechanics": "Dans la 4e colonne, une ligne citron descend par marches (≈ 7 marches, une par carte terminée) ; les losanges ALPHA, BETA, V1.0 passent du gris au citron l'un après l'autre (≈ 12,2 s, 12,7 s, 13,2 s). Le graphique est piloté par le mouvement des cartes : la donnée découle du geste.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal en rayures de danger",
+      "name_en": "Hazard-stripe diagonal wipe",
+      "t": "0:13.62-0:13.77",
+      "frames": "f817-f826",
+      "fps": 60,
+      "mechanics": "Une bande de rayures ambre/noir (#F8B838, ≈ 25 % de la largeur, inclinée ≈ 65-70°, bords flous) traverse le cadre de gauche à droite en ≈ 9 im (0,15 s, vitesse quasi constante) et révèle derrière elle la scène prune (#14041C) « WARNING ». Départ ≈ 3,5 im après le demi-temps (hors fenêtre). Le motif du volet annonce le danger avant le boss : transition motivée par le contenu.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f825.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Entrée du boss",
+      "name_en": "Boss entrance",
+      "t": "0:13.77-0:14.50",
+      "frames": "f826-f870",
+      "fps": 60,
+      "mechanics": "« WARNING » en pixel rose (≈ 7 % de la hauteur) seul 8 im ; à f834, sur le premier temps (B20), des bordures à rayures de danger glissent en haut et en bas (≈ 2 % de la hauteur) et l'insecte pixel rose (≈ 15 % de la hauteur) tombe du haut du cadre (f836-f845, ≈ 8 % de la hauteur par image puis freinage) avant de dériver à ≈ (55 %, 42 %). Titre « BOSS • THE LAST BUG » et barre de vie rose en 4 segments en haut.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f825.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Combat : tirs, flash de dégât, -25 %",
+      "name_en": "Boss fight hit feedback",
+      "t": "0:14.50-0:15.98",
+      "frames": "f870-f958",
+      "fps": 60,
+      "mechanics": "Le héros (bas gauche) tire des projectiles cyan en tirets avec traînée ; à chaque touche, l'insecte devient une silhouette blanche ≈ 3 im, un « -25% » rose surgit et s'empile, la barre de vie perd un segment (qui flashe blanc avant de se vider). 4 touches à ≈ 0,35 s d'écart.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-006-cut-f959.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash de mise à mort sur le temps et explosion en pixels",
+      "name_en": "On-beat kill flash with pixel burst",
+      "t": "0:15.98-0:16.22",
+      "frames": "f959-f973",
+      "fps": 60,
+      "mechanics": "À f959, exactement sur le temps (B23, barre bleue et point vert sur la même image), tout le cadre passe au lavande-gris (#BCB4C4) ; plein pendant 3 im puis décroissance en ≈ 11 im jusqu'au fond prune. L'insecte éclate en ≈ 60 carrés rose/blanc (≈ 1 % de la hauteur) projetés en cercle puis retombant avec gravité (≈ 1 s). « BUG SQUASHED » arrive à f963 (4 im après le flash), « +5000 » en orange.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f959.jpg",
+      "illus": {
+        "from": 955,
+        "to": 975,
+        "n": 6
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de score qui roule en continu",
+      "name_en": "Rolling score counter",
+      "t": "0:03.30-0:25.00",
+      "frames": "f198-f1499",
+      "fps": 60,
+      "mechanics": "Score à 7 chiffres (mono blanc, ≈ 1,6 % de la hauteur) qui roule à chaque action : +100 par pièce, cartes kanban, +5000 sur le boss (0009047 → 0014300 en ≈ 0,5 s), 0026000 à la fin. Popups orange « +100 / +5000 » qui montent et s'effacent. Sensation d'accumulation sur toute la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-006-cut-f959.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barre d'XP avec traînée de particules",
+      "name_en": "XP bar fill with particle stream",
+      "t": "0:16.45-0:16.66",
+      "frames": "f987-f999",
+      "fps": 60,
+      "mechanics": "Une barre citron (≈ 1 % de la hauteur, ≈ 45 % de la largeur) à ≈ 60 % de la hauteur se remplit de ≈ 5 % à ≈ 50 % en 11 im, suivie d'une gerbe de traits citron qui fuse le long de la barre (f997-f999) ; l'image suivante est déjà le sunburst.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1003.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Sunburst LEVEL UP sur le premier temps",
+      "name_en": "On-downbeat LEVEL UP sunburst",
+      "t": "0:16.67-0:17.83",
+      "frames": "f1000-f1069",
+      "fps": 60,
+      "mechanics": "f1000 : rayons en fondu par-dessus la scène (1 im) ; f1001, sur le premier temps (B24) : ≈ 24 rayons alternés citron (#ACF43C) / gris (#949C9C) plein cadre, centre à ≈ (50 %, 55 %). Les rayons s'assombrissent en ≈ 20 im vers olive (#2C3C1C), cramoisi (#743444) et violet (#54448C) en tournant lentement. « LEVEL UP! » citron à halo vert grandit depuis le centre de ≈ 8 % à ≈ 50 % de la largeur en ≈ 14 im (f1005-f1019, ease-out, sans dépassement) ; étincelles blanches, cyan et roses projetées en rayons. Les premières images citron/gris sont boueuses.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f1003.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Fiche personnage, barres de compétences jusqu'à MAX",
+      "name_en": "Character stat sheet with maxing skill bars",
+      "t": "0:17.83-0:19.46",
+      "frames": "f1070-f1167",
+      "fps": 60,
+      "mechanics": "Coupe à f1070 (hors temps). Héros ≈ 20 % de la hauteur sur une ombre elliptique, étiquette « LV 99 », nom en grotesque blanche grasse (≈ 5 %), « CLASS • GAME DEV / ENGINEER / PM » cyan. Quatre barres segmentées (≈ 20 segments, ≈ 1,5 % de la hauteur) dans la couleur de chaque compétence (citron, cyan, rose, orange) se remplissent en décalé (≈ 0,15-0,25 s d'écart), chacune finie par une pilule « MAX » qui surgit. Pied : « HP 999 • XP MAX • BUGS 0 ». Plan quasi statique 1,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom vers la carte du monde",
+      "name_en": "Pull-back reveal to world map",
+      "t": "0:19.46-0:20.50",
+      "frames": "f1167-f1230",
+      "fps": 60,
+      "mechanics": "Départ sur le premier temps (B28, f1167) avec un ease-in très doux (la vitesse devient visible vers f1180), pic de vitesse à f1204-f1207 (flou de mouvement, fiche à ≈ 35 % de sa taille) près du temps suivant (B29, f1209), freinage jusqu'à ≈ f1230. La fiche se réduit à ≈ 25 % du cadre et devient une case d'une grille 4 × 2 de toutes les scènes précédentes (00 BOOT … 07 NEXT LEVEL), chaque case étant une vignette vivante cerclée de citron. ≈ 60 im = 1 s, ease-in-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1207.jpg",
+      "illus": {
+        "from": 1185,
+        "to": 1215,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte récapitulative avec chemin et étoiles",
+      "name_en": "Recap map with path and stars",
+      "t": "0:20.50-0:21.60",
+      "frames": "f1230-f1296",
+      "fps": 60,
+      "mechanics": "Les libellés des cases s'écrivent, un chemin en pointillés relie les cases dans l'ordre (rangée haute de gauche à droite, descente, rangée basse de droite à gauche), une étoile jaune se pose au coin de chaque case terminée (≈ 21,0 s) et un petit objet avance vers la case « 07 NEXT LEVEL – YOUR PROJECT », une porte pixel violette lumineuse : le spectateur est la suite du parcours.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans la porte et ouverture sur la lumière",
+      "name_en": "Dive into the door, doors open to light",
+      "t": "0:21.60-0:22.80",
+      "frames": "f1296-f1368",
+      "fps": 60,
+      "mechanics": "f1296-f1317 : push lent vers la porte (≈ 100 → 125 %, ease-in). f1317-f1335 : plongée accélérée (≈ ×4) avec flou de zoom sur les autres cases ; la porte passe de ≈ 10 % à 25 % (f1326), 55 % (f1332) puis remplit le cadre à f1335, sur le premier temps (B32). f1338-f1356 : la porte se fend au milieu et ses deux battants s'écartent (écart 2 % → 8 % → 15 % → 50 % → 75 %, ease-in) sur une lumière lavande (#D8D4E8). La percussion s'arrête pendant la lumière (aucune attaque f1335-f1376), puis le nom apparaît flou dans la lumière.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-009-cut-f1368.jpg",
+      "illus": {
+        "from": 1311,
+        "to": 1371,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre final : résolution glitch puis halo",
+      "name_en": "Glitch-resolve title with glow bloom",
+      "t": "0:22.70-0:23.10",
+      "frames": "f1362-f1386",
+      "fps": 60,
+      "mechanics": "« IBRAHIM WASIM » (grotesque condensée très grasse blanc lavande #F4F0FC, ≈ 10 % de la hauteur, ≈ 75 % de la largeur, centré à ≈ 48 % de la hauteur) passe de flou et pixelisé, avec tranches horizontales décalées, à net en ≈ 6 im (f1365-f1371), sur un fond radial violet (#241444 → #0C0C14). Un halo blanc-vert s'allume à f1385, 9 im après le temps : un peu lâche.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f1368.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin interactive qui boucle sur PRESS START",
+      "name_en": "Interactive end card looping to PRESS START",
+      "t": "0:23.40-0:25.00",
+      "frames": "f1404-f1499",
+      "fps": 60,
+      "mechanics": "Sous le nom, « GAME DESIGN · SOFTWARE DEV · WEB DEV · PROJECT MANAGEMENT » s'écrit à la machine (mono ≈ 1,5 %, interlettrage large) ; « FOLLOW ON X » et une pilule citron « @ibrahimwasim240 » avec logo X (≈ 4 % de la hauteur) ; le curseur vient cliquer la pilule (contour qui pulse), un sprite « 1UP » avec pièces surgit en haut à droite sur un impact sonore précédé de 4 im de silence (f1456-f1460), et « CONTINUE? ▸ PRESS START » rose rappelle l'écran titre. TIME atteint 00.0 sur la dernière image.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Système typographique à trois voix",
+      "name_en": "Three-voice type system",
+      "t": "0:00.00-0:25.00",
+      "frames": "f0-f1499",
+      "fps": 60,
+      "mechanics": "Pixel (type Silkscreen, probable) pour la voix « jeu » : PLAYER 1, PRESS START, DESIGN IT, WARNING ; mono (type JetBrains Mono) pour le HUD, le code et les légendes, ≈ 1-1,6 % de la hauteur ; grotesque condensée très grasse (type Anton, probable) pour les exclamations et le titre final, ≈ 9-10 %. Tout en capitales. Les rôles ne se mélangent jamais.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur par compétence",
+      "name_en": "Color-coded skills",
+      "t": "0:00.00-0:25.00",
+      "frames": "f0-f1499",
+      "fps": 60,
+      "mechanics": "Fond nuit #0C0C14 et 5 néons : citron #BCF840 (héros, Game design, accents), cyan #48F0F8 (Software dev, code), rose #EC2888 (Web dev, plateformes, boss), ambre #F8B838 (Project mgmt, pièces, danger), violet #7848F8 (sol, porte). Chaque compétence garde sa couleur jusqu'aux barres de la fiche personnage : la couleur sert de légende.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Halo néon et flous directionnels",
+      "name_en": "Neon glow and directional blur",
+      "t": "0:00.00-0:25.00",
+      "frames": "f0-f1499",
+      "fps": 60,
+      "mechanics": "Halo (glow) sur les textes citron et autour des fenêtres (halo violet du navigateur) ; flou de mouvement horizontal sur les tampons et les cartes kanban, flou de zoom sur les mouvements de caméra (f325, f1204, f1323) ; pas de grain ni de scanlines malgré le thème rétro, ce qui garde l'image propre.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f325.jpg, extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une mesure par niveau, changement sur le premier temps",
+      "name_en": "One bar per level, scene changes on the downbeat",
+      "t": "0:00.00-0:25.00",
+      "frames": "f1-f1500",
+      "fps": 60,
+      "mechanics": "Tempo 86,4 BPM (temps = 41,67 im = 0,694 s), mesure de 4 temps = 2,78 s. Les 8 changements de niveau tombent sur le premier temps d'une mesure, à 0-1 im de la barre bleue et de l'attaque audio : f168 (B4), f334 (B8), f501 (B12), f667 (B16, coupe franche), f834 (B20), f1001 (B24), f1167 (B28, départ du dézoom), f1335 (B32, porte plein cadre). La vidéo s'arrête sur B36 (f1500 = 25,0 s) : 9 mesures exactes. Les gestes secondaires à l'intérieur des mesures restent libres.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f325.jpg, microM-003-cut-f515.jpg, microM-005-move-f825.jpg, microM-007-move-f1003.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Chute sur le 4e temps, niveau suivant sur le 1er",
+      "name_en": "Payoff on beat 4, next level on beat 1",
+      "t": "0:13.20-0:13.91 ; 0:15.98-0:16.68",
+      "frames": "f792-f834 ; f959-f1001",
+      "fps": 60,
+      "mechanics": "La « chute » d'un niveau est placée sur le dernier temps de sa mesure et le niveau suivant démarre un temps plus tard : SPRINT COMPLETE se pose à f792 (B19) → boss à f834 (B20) ; flash de mise à mort à f959 (B23) → sunburst LEVEL UP à f1001 (B24). Deux impacts espacés d'exactement 1 temps (42 im = 0,69 s) font un « bam… BAM » qui propulse vers la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-005-move-f825.jpg, microM-006-cut-f959.jpg, microM-007-move-f1003.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silences avant impact et bruitages calés",
+      "name_en": "Pre-hit silences and synced SFX",
+      "t": "0:00.03-0:25.00",
+      "frames": "f2-f1466",
+      "fps": 60,
+      "mechanics": "Bruit sourd sous l'allumage CRT (f2-f8) ; première note à f31 avec l'arrivée des particules ; trou de son à −50 dB pendant la dissolution glitch (f160-f164) puis impact maximal (−7 dB, f170) au démarrage du niveau 1 ; percussion coupée pendant l'ouverture de la porte (f1335-f1376) ; 4 im de silence (f1456-f1460) avant l'impact du « 1UP ». Les respirations du son coïncident avec les transitions de l'image.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f17.jpg, extra-01.jpg, extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "« Go all out » sans aucune autre contrainte a poussé le modèle vers un concept total (métaphore jeu vidéo filée) plutôt qu'une suite de titres : la consigne d'ambition suffit à obtenir de la densité et de l'invention."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Le prompt publié ne contient ni le nom ni les compétences, alors que la vidéo affiche « IBRAHIM WASIM » et quatre compétences précises : contexte fourni hors prompt (profil, mémoire, conversation) probable. Le prompt seul n'est donc pas reproductible."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure demandée : le modèle a choisi une grille musicale (9 mesures de 4 temps = 25 s) et une scène par mesure, ce qui donne une vidéo très régulière, presque métronomique ; pour un 1600, on demanderait des mesures de longueur variable."
+    },
+    {
+      "kind": "build",
+      "insight": "Le tempo de 86,4 BPM fait exactement 36 temps en 25 s : signe probable d'une bande-son générée en code et d'un minutage écrit en temps. Le « 144 BPM » affiché à l'écran est décoratif et ne correspond pas au tempo mesuré."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité : HUD et textes d'interface à 1-1,6 % de la hauteur, scènes code et kanban trop chargées pour 2,8 s. Préciser une taille minimale (≈ 4 % de la hauteur) et un temps de lecture par mot."
+    },
+    {
+      "kind": "other",
+      "insight": "« Showreel for a resume » a été lu comme un CV-jeu plutôt qu'une démonstration de motion design : préciser si l'on veut montrer des compétences de motion ou un parcours professionnel."
+    }
+  ],
+  "steal": [
+    "Découper la vidéo en mesures : 1 scène = 1 mesure de 4 temps, changement sur le premier temps, « chute » de la scène sur le 4e temps.",
+    "Faire naître la scène suivante d'un élément de la précédente : la barre de déploiement grandit et devient le navigateur du site.",
+    "Finir par un dézoom qui transforme toutes les scènes en vignettes d'une carte, puis plonger dans la case suivante (« votre projet ») comme appel à l'action.",
+    "Un HUD permanent (score qui roule, chrono égal au temps restant, niveau) donne continuité et sensation de progression à une suite de scènes disparates.",
+    "Avant un gros impact, couper le son 4-5 images (−50 dB) pendant la transition, puis frapper sur le temps fort."
+  ],
+  "flaws": [
+    "Textes du HUD et des panneaux à ≈ 1-1,6 % de la hauteur : illisibles sur mobile, purement décoratifs.",
+    "Même tampon incliné et flouté répété trois fois (LEVEL CLEAR, SPRINT COMPLETE, BUG SQUASHED) : l'accent s'use.",
+    "Flashs lavande-gris (#BCB4C4) plutôt que blancs : l'impact paraît terne, et le sunburst citron-gris est boueux.",
+    "Scènes code et kanban trop denses pour 2,8 s : on perçoit l'agitation, pas le contenu.",
+    "Fiche personnage quasi statique 1,5 s (18,0-19,5 s) alors que tout le reste va vite."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : référence rare de structure musicale (9 mesures, un niveau par mesure, impacts sur les temps 1 et 4) et de transitions motivées (barre → navigateur, dézoom-carte, plongée dans la porte). L'étude à 60 fps permettrait de relever les courbes des tampons, du morph et des vols de cartes."
+  }
+}

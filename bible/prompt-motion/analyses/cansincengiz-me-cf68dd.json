@@ -1,0 +1,563 @@
+{
+  "slug": "cansincengiz-me-cf68dd",
+  "title": "Lidlezz app promo",
+  "handle": "@cansincengiz_me",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Récit produit limpide, vrai laptop 3D, transition Zzz → logo → iris motivée, structure musicale alignée ; perd un point : logo coupé en haut du cadre et 42 % de maintiens statiques.",
+  "summary": "Promo carrée de 15 s pour une app Mac qui garde les agents de code actifs capot fermé. Le capot d'un laptop 3D claque, des « Zzz » montent, grossissent et deviennent le logo « zz. », révélé par un iris bleu sur le drop. Suivent quatre fiches d'interface chiffrées puis une carte finale blanche. Forte par la logique du récit, faible par sa cadence répétitive.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne en turc : prouver son niveau de motion designer avec une vidéo de 15 s présentant un lien (le site lidlezz.app) pour 10 000 personnes sur X. Aucune direction visuelle, sonore ni structurelle.",
+    "Claude a tout inventé : le récit « agent au travail → capot fermé → sommeil → ça tourne encore », le laptop 3D, les couleurs nuit/bleu/blanc, le duo grotesque + serif italique, les cartes d'interface chiffrées, l'iris sur le drop et la carte finale.",
+    "Le lien a suffi : les textes du site (slogan, essai 7 jours, Apple Silicon) sont repris. Il aurait fallu préciser la zone de sécurité du logo en en-tête, la musique et un rythme plus serré entre les fiches."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#07080B",
+        "role": "fond nuit, vignetage radial depuis #1A1D24 au centre"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "titres, logo sur bleu, fond de la carte finale"
+      },
+      {
+        "hex": "#6B7280",
+        "role": "texte « It falls asleep. » et Z en contour : gris du sommeil"
+      },
+      {
+        "hex": "#1428C8",
+        "role": "haut du dégradé bleu de marque"
+      },
+      {
+        "hex": "#1F6BFF",
+        "role": "milieu du dégradé"
+      },
+      {
+        "hex": "#BFE6FF",
+        "role": "bas du dégradé, quasi blanc"
+      },
+      {
+        "hex": "#DDF0FF",
+        "role": "cartes d'interface façon verre dépoli"
+      },
+      {
+        "hex": "#A9AFC8",
+        "role": "aluminium du laptop éclairé par le bleu"
+      },
+      {
+        "hex": "#22C55E",
+        "role": "pastille « working », batterie, coche"
+      },
+      {
+        "hex": "#E5484D",
+        "role": "accent rouge « 15 % » et zone chaude de la jauge"
+      },
+      {
+        "hex": "#0B0B0C",
+        "role": "logo et texte sur la carte finale, bouton d'appel à l'action"
+      }
+    ],
+    "type": "Grotesque grasse (Inter Display ou SF Pro probable), ≈ 5 % de la hauteur, approche serrée, plus serif italique (Instrument Serif probable) même corps en seconde ligne. Logo « lidlezz. » grotesque noire italique, ≈ 60 % de la largeur.",
+    "texture": "Rendu 3D réaliste (aluminium, reflets spéculaires qui balaient le capot), ombres portées douces sous les cartes, flou gaussien sur toutes les entrées et sorties de texte, flou de mouvement sur le glissement « lidle ». Pas de grain.",
+    "style": "Keynote Apple, 3D produit, verre",
+    "coherence": "Le système tient par trois constantes : la paire grotesque + italique serif sur deux lignes à chaque scène, l'objet héros (le laptop) toujours au centre, la carte d'interface toujours en bas. La couleur raconte l'histoire (nuit = travail et sommeil, bleu = marque, blanc = appel à l'action). Seule fausse note : le logo laissé à moitié hors cadre en haut de 6,2 à 12,2 s."
+  },
+  "rhythm": {
+    "bpm": 86,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo 85,8 BPM (temps toutes les 0,70 s = 42 im à 60 fps), pulsation de doubles croches très nette (une attaque toutes les 0,174 s). Une seule coupe franche (l'iris, f248) tombe pile sur le temps (0 im). Les changements de scène suivent une cadence de 1,2 à 1,4 s (≈ 2 temps) : sorties de texte à f79, f154, f446, f525, f614, f701, entrées de cartes à f415 et f458 (sur le temps), mais les sorties de légendes partent souvent 4 à 9 im avant le demi-temps. 8 maintiens statiques de 0,5 à 1 s (42 % du temps) : le laptop flotte lentement mais l'œil attend. Structure musicale calée : intro à −15 dB, chute à −22 dB dès le claquement du capot (2,4 s), drop à −8 dB au moment de l'iris (4,0-4,3 s), décrescendo à −15/−19 dB sur la carte finale (13 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.3",
+        "what": "Laptop 3D ouvert, terminal type Claude Code à l'écran ; « Your agent is / two hours in. » monte ligne à ligne avec flou",
+        "technique": "accroche situationnelle, montée flou + décalage"
+      },
+      {
+        "t": "0:01.3-0:02.0",
+        "what": "Les deux lignes sortent vers le haut en flou, « You close / the lid. » entre par le bas ; léger travelling avant sur le laptop",
+        "technique": "relais de légendes, push-in lent"
+      },
+      {
+        "t": "0:02.05-0:02.2",
+        "what": "Le capot se ferme en 9 im et claque sur l'accent le plus fort de la piste",
+        "technique": "charnière 3D en ease-in, impact sur attaque"
+      },
+      {
+        "t": "0:02.6-0:03.8",
+        "what": "« It falls asleep. » en gris ; des Z en contour montent du laptop ; la musique chute",
+        "technique": "couleur sémantique, breakdown"
+      },
+      {
+        "t": "0:03.8-0:04.13",
+        "what": "Les Z deviennent pleins et grossissent jusqu'à remplir le cadre en « zz. »",
+        "technique": "zoom dans le glyphe"
+      },
+      {
+        "t": "0:04.13-0:04.3",
+        "what": "Coupe sur le temps : disque blanc puis anneau qui s'élargit, fond bleu révélé ; drop à 4,32 s",
+        "technique": "iris + onde de choc sur le drop"
+      },
+      {
+        "t": "0:04.55-0:05.2",
+        "what": "« zz. » rétrécit puis « lidle » glisse depuis la gauche avec flou : le nom « lidlezz. » se compose ; slogan sous le logo",
+        "technique": "construction du logo à partir du signe"
+      },
+      {
+        "t": "0:05.2-0:06.0",
+        "what": "Maintien du logo",
+        "technique": "maintien de lecture"
+      },
+      {
+        "t": "0:06.0-0:06.5",
+        "what": "Le laptop fermé monte du bas en fondu, le logo file en haut (et y reste à moitié coupé)",
+        "technique": "relais vertical d'éléments"
+      },
+      {
+        "t": "0:06.3-0:07.4",
+        "what": "« Lid closed. Still working. » + carte « working » ; compteur d'appels d'outils qui défile ; agent qui change : Claude Code → Cursor → opencode",
+        "technique": "carte d'interface vivante, carrousel de noms"
+      },
+      {
+        "t": "0:07.45-0:09.0",
+        "what": "« Stays cool in the bag. » ; carte température 40° → 62° avec jauge dégradée et puces qui apparaissent ; reflet qui balaie le capot",
+        "technique": "compteur ease-out, jauge, sheen"
+      },
+      {
+        "t": "0:09.0-0:10.3",
+        "what": "« Never drains your battery. » ; batterie 85 % → 84 %, seuil « 15 % » en rouge",
+        "technique": "carte batterie"
+      },
+      {
+        "t": "0:10.3-0:11.7",
+        "what": "Fondu flouté vers « Task finished » (coche verte, 2 h 31, 214 appels), légende « Sleeps when the job's done. »",
+        "technique": "fondu enchaîné flou"
+      },
+      {
+        "t": "0:11.7-0:12.2",
+        "what": "Les Z reviennent, carte « Mac sleeps » avec l'icône zz",
+        "technique": "rappel du motif d'ouverture"
+      },
+      {
+        "t": "0:12.0-0:12.5",
+        "what": "Tout glisse vers le haut, le fond passe du bleu au blanc, le logo monte du bas en passant du gris au noir",
+        "technique": "poussée verticale + fondu de couleur"
+      },
+      {
+        "t": "0:12.5-0:15.0",
+        "what": "Carte finale : logo, « Close the lid. / Keep it running. », bouton « lidlezz.app → », mentions légales ; la musique décroît",
+        "technique": "carte finale + appel à l'action"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille 85,8 BPM (barres des planches). Un événement clé par geste : 11 sur 21 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 24 %, fenêtre de 5 im sur 21 im entre deux demi-temps). Calés : sortie de la 1re légende f79 (temps f80,6), départ du capot f123 (temps f122,5), impact du capot f132 sur l'attaque la plus forte de la piste f133 (point vert), grossissement des Z f230 (demi-temps f227,5), iris f248 (temps f248,4, 0 im), glissement « lidle » f289 (temps f290), entrée de « Lid closed » f376 (temps f374), changement d'agent f415 (temps f416), carte température f458 (temps f458), slogan final f749-752 (temps f752), bouton f773 (demi-temps f773). Libres : rétrécissement de « zz. » f274, montée du laptop f359, sorties de légendes f446, f525, f614 (4 à 9 im avant le demi-temps), Z finaux f701, poussée finale f720. Surtout, la structure est calée : la piste chute de 7 dB au claquement du capot (2,4 s), le drop (+15 dB à 4,32 s) arrive 11 im après l'iris, la piste décroît sur la carte finale (13 s). Une grille alternative à 114 BPM (outil de segment) est un regroupement par 3 des doubles croches : rejetée.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "departs",
+      "drop",
+      "texte"
+    ],
+    "style_match": "Électro pop brillante en doubles croches : colle au rendu Keynote. Le breakdown pendant « It falls asleep » et le drop sur le logo traduisent le récit en musique.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. L'alignement des sections (breakdown sur le sommeil, drop sur la révélation, coupe sur le temps à 0 im) laisse penser que l'auteur a calé le montage sur une piste choisie, ou que Claude a placé ses scènes sur une grille d'environ 2 temps (probable). À l'intérieur des scènes, les légendes suivent leur propre cadence de 1,2 à 1,4 s et dérivent de la grille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en problème → geste → révélation → preuves → appel à l'action",
+      "name_en": "Problem-gesture-reveal-proof-CTA arc",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "4,1 s de mise en situation (agent au travail, capot fermé, sommeil), révélation de marque à 4,13 s, 4 preuves de 1,2 à 1,4 s chacune (agents compatibles, température, batterie, fin de tâche), carte finale de 2,5 s. Chaque légende est une phrase de 3 à 5 mots en deux lignes.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Paire grotesque grasse + serif italique sur deux lignes",
+      "name_en": "Bold grotesk + italic serif line pair",
+      "t": "0:00.2-0:12.0",
+      "frames": "f12-f720",
+      "fps": 60,
+      "mechanics": "Ligne 1 en grotesque grasse blanche (≈ 5 % de la hauteur, interlettrage serré ≈ −2 %), ligne 2 en serif italique de même corps, centrées dans les 15 % supérieurs du cadre. La seconde ligne porte la chute (« two hours in. », « the lid. », « Still working. »). Le même duo revient sur la carte finale en noir.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée des lignes avec flou et décalage",
+      "name_en": "Staggered blur-rise line reveal",
+      "t": "0:00.1-0:00.5",
+      "frames": "f6-f30",
+      "fps": 60,
+      "mechanics": "Chaque ligne monte d'environ 3 % de la hauteur en passant de flou ≈ 8 px et opacité 0 à net, en ≈ 15 im (0,25 s), ease-out. Décalage de 3 im entre les mots de la ligne serif (« two » f15, « hours » f18, « in. » f21) et ≈ 6 im entre les deux lignes. Sortie symétrique vers le haut (f79-f90).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 6,
+        "to": 30,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Relais de légendes vers le haut",
+      "name_en": "Upward caption hand-off",
+      "t": "0:01.32-0:01.75",
+      "frames": "f79-f105",
+      "fps": 60,
+      "mechanics": "L'ancienne légende part vers le haut en flou (≈ 10 im), la nouvelle entre par le bas 2 à 3 im après, ligne par ligne (« You close » f90, « the lid. » f96-f105). Même mécanique à chaque scène (f446-f478, f525-f560, f614-f650) : efficace mais unique transition de texte de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Laptop 3D réaliste avec terminal vivant",
+      "name_en": "Real-time 3D laptop hero with live screen",
+      "t": "0:00-0:02.2",
+      "frames": "f0-f132",
+      "fps": 60,
+      "mechanics": "Laptop en vue plongeante 3/4, ≈ 75 % de la largeur, aluminium avec reflets, écran affichant un terminal type Claude Code (lignes Read/Update/Bash en vert et rouge). Rotation légère et continue de la caméra (≈ 3°) : 3D temps réel probable (Three.js). Le même objet, fermé, reste le héros jusqu'à 12 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f130.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant lent et flottement continu",
+      "name_en": "Slow push-in and idle float",
+      "t": "0:00-0:12.0",
+      "frames": "f0-f720",
+      "fps": 60,
+      "mechanics": "De 0 à 2 s le laptop grossit d'environ 10 % (push-in linéaire lent). Ensuite, le laptop fermé dérive et tourne de quelques degrés pendant les maintiens (f714-f728 : montée de ≈ 4 % de la hauteur). Ce flottement empêche l'image de geler mais ne suffit pas à remplir les maintiens de 0,8 s.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f729.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Fermeture du capot en ease-in, arrêt sec",
+      "name_en": "Lid close with gravity ease-in and hard stop",
+      "t": "0:02.05-0:02.2",
+      "frames": "f123-f132",
+      "fps": 60,
+      "mechanics": "Rotation de la charnière de ≈ 110° à 0° en 9 im (0,15 s). Petits pas de f123 à f126, grands pas de f127 à f131 : ease-in (accélération façon gravité). Contact à f132, arrêt sec sans rebond ni écrasement. Départ sur le temps f122,5 ; contact 1 im avant l'attaque la plus forte de la piste (f133).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f130.jpg",
+      "illus": {
+        "from": 120,
+        "to": 134,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Gris sémantique du sommeil",
+      "name_en": "Desaturated sleep state",
+      "t": "0:02.6-0:04.0",
+      "frames": "f154-f240",
+      "fps": 60,
+      "mechanics": "La légende « It falls asleep. » passe en gris #6B7280 au lieu du blanc, les Z apparaissent en contour gris : la couleur dit l'état (veille) avant le texte.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Z de sommeil qui montent du laptop",
+      "name_en": "Rising Zzz glyphs",
+      "t": "0:03.0-0:03.95",
+      "frames": "f180-f237",
+      "fps": 60,
+      "mechanics": "Trois Z en contour de tailles croissantes montent en diagonale depuis le coin arrière droit du laptop, décalés de quelques images, avec un point blanc qui apparaît (f235) : c'est déjà le point du logo « zz. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f248.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom dans le glyphe : les Z deviennent le logo",
+      "name_en": "Glyph zoom match cut into the logo mark",
+      "t": "0:03.83-0:04.12",
+      "frames": "f230-f247",
+      "fps": 60,
+      "mechanics": "Les Z passent de contour à plein gris puis blanc et grossissent de ≈ 10 % à ≈ 55 % de la largeur en 17 im, ease-in (les derniers pas f244-f247 sont les plus grands). Le laptop reste dessous puis disparaît sous l'iris. Le signe « dormir » devient la marque « zz. » sans coupure de sens.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f248.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris blanc avec onde de choc annulaire",
+      "name_en": "Circular iris reveal with shockwave ring",
+      "t": "0:04.13-0:04.3",
+      "frames": "f248-f258",
+      "fps": 60,
+      "mechanics": "À f248 un disque blanc translucide de ≈ 70 % de la largeur couvre le laptop ; dès f249 il s'ouvre sur le fond bleu et un anneau blanc fin s'élargit de 75 % à ≈ 140 % du cadre en 8 im (ease-out, grands pas puis petits). Le logo « zz. » reste fixe au centre. Coupe à 0 im du temps, drop audio 11 im plus tard.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f248.jpg",
+      "illus": {
+        "from": 244,
+        "to": 258,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le nom se construit à partir du signe",
+      "name_en": "Wordmark built from the symbol",
+      "t": "0:04.57-0:05.1",
+      "frames": "f274-f306",
+      "fps": 60,
+      "mechanics": "« zz. » rétrécit de ≈ 55 % à ≈ 22 % de la largeur en 15 im (f274-f289, ease-in-out), puis glisse vers la droite pendant que « lidle » arrive depuis la gauche avec flou de mouvement horizontal et opacité croissante en ≈ 14 im (f289-f304, ease-out). Le slogan « Lid-closed runs for AI coding agents. » apparaît en fondu flou à f300-f306. Départ du glissement à 1 im du temps f290.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 272,
+        "to": 306,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Relais vertical : le logo monte, le produit arrive",
+      "name_en": "Vertical relay of logo and product",
+      "t": "0:05.98-0:06.25",
+      "frames": "f359-f375",
+      "fps": 60,
+      "mechanics": "Le laptop fermé monte du bas du cadre en fondu (opacité 0 → 1 en ≈ 10 im) pendant que le logo remonte et rétrécit, puis file vers le haut en ease-in (grands pas f369-f374). Il s'arrête à moitié hors cadre et reste coupé en en-tête jusqu'à 12,2 s.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f369.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'état en verre avec compteur vivant",
+      "name_en": "Glass status card with live counter",
+      "t": "0:06.3-0:07.8",
+      "frames": "f379-f468",
+      "fps": 60,
+      "mechanics": "Carte arrondie (rayon ≈ 2 % du cadre), fond #DDF0FF translucide, ombre douce, ≈ 50 % de la largeur, centrée à 80 % de la hauteur. Pastille verte « LID CLOSED · WORKING », nom de l'agent, « TOOL CALLS » qui défile de +1 toutes les ≈ 2 im (130 → 174). Entrée en fondu + montée de ≈ 2 % en 10 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f369.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Carrousel de noms d'agents",
+      "name_en": "Agent name carousel",
+      "t": "0:06.9-0:07.45",
+      "frames": "f415-f446",
+      "fps": 60,
+      "mechanics": "Dans la même carte, le nom change toutes les ≈ 0,4 s (Claude Code → Cursor → opencode) pendant que le compteur continue (133 → 150 → 168) : preuve de compatibilité sans texte supplémentaire. Changement à f415, sur le temps f416.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Remplacement de carte par fondu flou",
+      "name_en": "Blur cross-dissolve card swap",
+      "t": "0:07.63-0:07.73",
+      "frames": "f458-f464",
+      "fps": 60,
+      "mechanics": "L'ancienne carte se floute (≈ 8 px) et s'efface pendant que la nouvelle apparaît floue puis nette, en 6 im (0,1 s), sans déplacement. Même geste à 10,5 s (batterie → « Task finished »). Sur le temps f458.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de température en ease-out + jauge dégradée",
+      "name_en": "Ease-out temperature counter with gradient gauge",
+      "t": "0:07.7-0:08.5",
+      "frames": "f462-f510",
+      "fps": 60,
+      "mechanics": "40° → 60° en 16 im par pas décroissants (40, 46, 50, 53, 55, 57, 58, 59, 60 toutes les 2 im) : ease-out net. Puis 60 → 61 → 62 au ralenti (f490, f510). La barre se remplit en dégradé vert → jaune → rouge avec deux repères « 85° throttle » et « 95° sleep ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 458,
+        "to": 480,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puces d'état décalées",
+      "name_en": "Staggered status chips",
+      "t": "0:07.97-0:08.2",
+      "frames": "f478-f492",
+      "fps": 60,
+      "mechanics": "Trois puces grises (« E-cores », « Low Power », « Time Machine paused ») apparaissent en fondu de gauche à droite, ≈ 5 im d'écart, sans déplacement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Reflet qui balaie le capot",
+      "name_en": "Specular sheen sweep",
+      "t": "0:08.3-0:08.6",
+      "frames": "f496-f516",
+      "fps": 60,
+      "mechanics": "Pendant que le laptop tourne de quelques degrés, la lumière d'environnement fait éclaircir le capot de #A9AFC8 à presque blanc en ≈ 20 im : effet « métal froid » qui illustre « Stays cool » sans graphisme ajouté.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Carte batterie avec seuil rouge",
+      "name_en": "Battery card with red threshold",
+      "t": "0:09.4-0:10.3",
+      "frames": "f564-f618",
+      "fps": 60,
+      "mechanics": "Icône batterie verte, « 85 % » qui passe à « 84 % », mention « ALLOW SLEEP AT 15 % battery » avec « 15 % » en rouge #E5484D. Seul accent rouge de la vidéo, réservé au seuil.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Rappel du motif d'ouverture",
+      "name_en": "Callback to the opening motif",
+      "t": "0:11.4-0:12.2",
+      "frames": "f684-f731",
+      "fps": 60,
+      "mechanics": "Les Z reviennent au-dessus du laptop et la carte devient « Mac sleeps · Everything back to normal » avec l'icône zz : la boucle sommeil → travail → sommeil se referme avant la carte finale.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-move-f729.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée verticale + bascule bleu → blanc",
+      "name_en": "Vertical push with blue-to-white color wipe",
+      "t": "0:12.0-0:12.45",
+      "frames": "f720-f747",
+      "fps": 60,
+      "mechanics": "Laptop et carte accélèrent vers le haut et sortent du cadre en ≈ 14 im (ease-in) ; le dégradé glisse du bleu vers le blanc ; le logo « lidlezz. » monte du bas en passant de gris #8A8F98 à noir #0B0B0C en ≈ 15 im (f731-f745), ease-out. Pic de mouvement sur le demi-temps f731.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f729.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte finale avec bouton d'appel à l'action",
+      "name_en": "End card with CTA pill",
+      "t": "0:12.5-0:15.0",
+      "frames": "f750-f899",
+      "fps": 60,
+      "mechanics": "Fond blanc, logo noir ≈ 60 % de la largeur dans le tiers supérieur, slogan en paire grotesque + italique (« Close the lid. / Keep it running. ») qui entre ligne par ligne à f749-f752, bouton noir arrondi « lidlezz.app → » en fondu (gris → noir) vers f773, mentions « 7-day free trial · One-time purchase · Apple Silicon Macs » en gris 1,5 % de la hauteur. Maintien de 2 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Trois couleurs pour trois actes",
+      "name_en": "Color-coded acts",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Nuit #07080B pour le problème et le sommeil, dégradé bleu #1428C8 → #BFE6FF pour la marque et les preuves, blanc pour l'appel à l'action. Chaque bascule passe par une transition motivée (iris, poussée verticale).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pile verticale fixe en format carré",
+      "name_en": "Fixed vertical stack in 1:1",
+      "t": "0:06.3-0:12.0",
+      "frames": "f379-f720",
+      "fps": 60,
+      "mechanics": "Format 1080 × 1080. Légende dans la bande 6-18 % de la hauteur, objet héros centré à 45-65 %, carte à 72-88 %. Les éléments changent mais leurs emplacements ne bougent jamais : lecture instantanée.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Dégradé vertical bleu statique",
+      "name_en": "Static vertical blue gradient",
+      "t": "0:04.13-0:12.2",
+      "frames": "f248-f731",
+      "fps": 60,
+      "mechanics": "Dégradé linéaire vertical #1428C8 → #1F6BFF → #BFE6FF, sans animation. Propre mais immobile : un dégradé fluide animé aurait comblé les maintiens.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale calée sur le récit",
+      "name_en": "Song sections mapped to story beats",
+      "t": "0:02.2-0:13.0",
+      "frames": "f132-f780",
+      "fps": 60,
+      "mechanics": "Intro à ≈ −15 dB pendant que l'agent travaille ; la piste tombe à −22/−25 dB juste après le claquement du capot (2,4 à 3,9 s) : le breakdown est le sommeil. Le drop (+15 dB à 4,32 s) arrive 11 im après l'iris de marque. Décrescendo à −15/−19 dB sur la carte finale à 13 s, fondu à 14,75 s.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-002-cut-f248.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Impact visuel sur l'accent le plus fort",
+      "name_en": "Hero impact on the strongest accent",
+      "t": "0:02.05-0:02.22",
+      "frames": "f123-f133",
+      "fps": 60,
+      "mechanics": "Le capot part sur le temps (f123, barre bleue) et touche à f132, 1 im avant l'attaque la plus forte de toute la piste (2,218 s = f133, point vert). Le geste dure exactement un quart de temps environ (9 im ≈ 0,15 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f130.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes et entrées sur le temps",
+      "name_en": "Cuts and entrances on the beat",
+      "t": "0:04.13-0:12.6",
+      "frames": "f248-f773",
+      "fps": 60,
+      "mechanics": "Iris f248 sur le temps à 0 im ; glissement « lidle » f289 (temps f290) ; entrée « Lid closed » f376 (temps f374) ; changement d'agent f415 (temps f416) ; carte température f458 (temps f458) ; slogan final f749 (temps f752) ; bouton f773 (demi-temps f773). Les sorties de légendes, elles, partent 4 à 9 im avant le demi-temps.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f248.jpg, microM-003-move-f369.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence de 2 temps par scène avec maintiens",
+      "name_en": "Two-beat scene cadence with reading holds",
+      "t": "0:06.3-0:12.0",
+      "frames": "f374-f720",
+      "fps": 60,
+      "mechanics": "Une scène toutes les 1,2 à 1,4 s (≈ 2 temps à 86 BPM) : ≈ 0,4 s d'entrée, ≈ 0,8 s de maintien. Les 8 maintiens de 0,5 à 1 s font 42 % de la durée. Lisible, mais un élément secondaire (compteur, puce) bouge seul pendant le maintien : le reste est immobile.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Un simple lien a suffi : Claude a récupéré le nom, le slogan, les mentions (essai 7 jours, achat unique, Apple Silicon) et probablement le bleu et le logo « zz. » du site. Donner l'URL du produit vaut une page de brief."
+    },
+    {
+      "kind": "direction",
+      "insight": "Aucune direction visuelle : Claude est allé vers son style par défaut pour un produit Mac (Keynote Apple, 3D réaliste, verre dépoli, paire grotesque + serif italique). Résultat soigné mais attendu."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le défi « prouve-moi ton niveau » a produit un vrai concept de récit (le produit raconté par le geste de fermer le capot) plutôt qu'une liste de fonctions. Le récit vient du modèle, pas du prompt."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le logo laissé à moitié hors cadre en haut pendant 6 s montre qu'aucune vérification de zone de sécurité n'a été demandée ni faite. Exiger « aucun élément coupé par le bord » dans le prompt."
+    },
+    {
+      "kind": "other",
+      "insight": "Le prompt ne mentionne pas de musique, pourtant les sections de la piste collent au récit (breakdown sur le sommeil, drop sur l'iris) : synchro probablement obtenue au montage ou par une grille de scènes de 2 temps. Préciser le BPM aurait permis de caler aussi les sorties de légendes."
+    }
+  ],
+  "steal": [
+    "Fais naître le logo d'un signe du récit : les « Zzz » du sommeil grossissent et deviennent le « zz. » de la marque, puis le nom se construit autour.",
+    "Révèle la marque par un iris sur le temps, avec un anneau fin qui s'élargit en ease-out en 8 im, juste avant le drop.",
+    "Garde une pile verticale fixe (légende en haut, objet au centre, carte en bas) : seuls les contenus changent, l'œil ne cherche jamais.",
+    "Compteurs en ease-out par pas décroissants (40, 46, 50, 53… toutes les 2 im) pour qu'un chiffre semble se stabiliser au lieu de défiler.",
+    "Place le breakdown de la musique sur le moment calme du récit et le drop sur la révélation de marque."
+  ],
+  "flaws": [
+    "Logo « lidlezz. » laissé à moitié coupé par le bord supérieur de 6,2 à 12,2 s : défaut de zone de sécurité.",
+    "42 % de maintiens statiques : chaque légende attend 0,8 s sans que rien d'autre ne bouge.",
+    "Une seule transition de texte (montée floue) répétée à chaque scène : la répétition se voit dès la troisième.",
+    "Fond bleu immobile et style Keynote attendu : propre, mais sans signature visuelle propre."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui pour trois passages précis : la fermeture du capot calée sur l'accent (f115-f135), la chaîne Z → logo → iris → construction du nom (f230-f306) et le compteur ease-out (f458-f480). Ce sont des recettes directement reproductibles dans HyperFrames ; le reste est répétitif."
+  }
+}

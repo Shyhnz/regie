@@ -1,0 +1,353 @@
+{
+  "slug": "itsolelehmann-e47532",
+  "title": "Four seasons train window",
+  "handle": "@itsolelehmann",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Boucle de 30 s cohérente et riche : symétrie Wes Anderson, quatre transitions motivées par le décor (train, rafale, tunnel, pétales), son calé ; illustration clip-art, plan figé sans roulis, poteau fantôme répétitif.",
+  "summary": "Vue fixe et symétrique depuis un wagon-salon rose et violet façon Grand Budapest Hotel : rideaux, deux lampes, une tasse fumante. Dehors, le paysage défile en parallaxe et les saisons passent en 4 × 7,5 s ; chaque changement est caché par un événement du voyage (train croisé, rafale de feuilles, tunnel, nuée de pétales). Boucle parfaite, bande-son et bruitages calés sur les transitions. Fort en idée, sage en animation.",
+  "prompt_vs_result": [
+    "Une phrase : quatre saisons derrière une fenêtre de train, wagon douillet, tasse de café sur la table, style Grand Budapest Hotel. Aucune durée, aucun format, aucune transition, aucun son, aucune boucle demandés.",
+    "Claude a choisi : plan fixe symétrique, 30 s en boucle, 4 saisons de 7,5 s, transitions par occultation (train, tunnel) et par particules (feuilles, pétales), hôtel rose récurrent, téléphérique, averse puis arc-en-ciel, lampes allumées au tunnel, musique à 128 BPM et bruitages.",
+    "La référence « Grand Budapest Hotel » a suffi pour la symétrie, le rose-violet et l'hôtel sur sa colline. Rien ne cadrait le mouvement : il aurait fallu demander un léger roulis du wagon, des poteaux nets, et caler les gestes sur le temps."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#B57B83", "role": "mur rose poudré du wagon (printemps)"},
+      {"hex": "#5B3373", "role": "rideaux et cantonnière violet profond"},
+      {"hex": "#CEA254", "role": "dorures : embrasses, galons, glands, pieds de lampe, médaillon"},
+      {"hex": "#F1E6E1", "role": "nappe au printemps (neutre rosé)"},
+      {"hex": "#FCF1DA", "role": "nappe en été (étalonnage chaud)"},
+      {"hex": "#D68D9E", "role": "abat-jour roses plissés (éteints)"},
+      {"hex": "#F3E0D1", "role": "abat-jour allumés (tunnel, hiver)"},
+      {"hex": "#6D422D", "role": "café dans la tasse"},
+      {"hex": "#ADD2E6", "role": "ciel de printemps"},
+      {"hex": "#A8DA95", "role": "prairie de printemps"},
+      {"hex": "#D2DAE7", "role": "montagnes low poly (printemps)"},
+      {"hex": "#902E3E", "role": "caisse rouge du train croisé"},
+      {"hex": "#F6E7D2", "role": "bandeau crème du train croisé"},
+      {"hex": "#D2A9BF", "role": "ciel d'automne rose-mauve"},
+      {"hex": "#E7BAB4", "role": "montagnes d'automne"},
+      {"hex": "#291F32", "role": "noir violacé du tunnel"},
+      {"hex": "#E1DDE9", "role": "neige"},
+      {"hex": "#724C65", "role": "mur du wagon en hiver (étalonnage froid et sombre)"}
+    ],
+    "type": "Aucun texte : pièce purement illustrée. Seul signe graphique : un médaillon doré à couronne au centre de la cantonnière (≈ 3 % de la largeur), clin d'œil probable au blason du film.",
+    "texture": "Illustration vectorielle plate à contour d'encre sombre ≈ 2-3 px ; grain papier fin sur les murs, les montagnes et le ciel ; léger vignettage ; flou de mouvement horizontal sur le poteau et le train ; gouttes rondes à reflet blanc et ruissellements diagonaux sur la vitre pendant l'averse ; halo doux des lampes allumées ; reflets des lampes et de la tasse dans la vitre au tunnel ; vapeur de café translucide ; rais de lumière dans le tunnel.",
+    "style": "Illustration plate symétrique façon Wes Anderson",
+    "coherence": "Tout tient par le cadre fixe et symétrique (rideaux, lampes à ±18 % de l'axe, tasse sur l'axe) et par un intérieur dont l'étalonnage suit la saison, pendant que le même vocabulaire (montagnes low poly, arbres sucette, hôtel rose) se recolore dehors. Les transitions sont toutes tirées du monde du voyage, ce qui les rend invisibles. Ce qui casse : le poteau semi-transparent qui se lit comme une trace grise sur la vitre, et des arbres clip-art moins raffinés que le décor intérieur."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "lache",
+    "dead_time": "aucun",
+    "notes": "128 BPM (pulsation nette 6,8 ; 30 s = 64 temps exacts). Plan unique de 30 s : aucune coupe, aucun maintien statique, le mouvement est continu (parallaxe à vitesse constante). La courbe d'énergie montre un plateau toutes les 1,5 s (passage du poteau, 45 im) et quatre pics : train croisé f207-f258 (6,9-8,6 s), rafale de feuilles f436-f457 (14,5-15,2 s), tunnel f647-f719 (21,6-24,0 s, pic le plus fort), pétales f868-f888 (28,9-29,6 s). Les transitions suivent une horloge de saison de 7,5 s (= 16 temps = 4 mesures), pas une écriture temps par temps : 6 événements clés sur 12 tombent à ±2 im d'un temps (hasard ≈ 36 %), et les poteaux (période 3,2 temps) dérivent contre la grille. Densité : un événement majeur toutes les 7,5 s, entre les deux 5-6 s d'ambiance ponctuées de petits événements (averse, arc-en-ciel, montgolfières, vol d'oiseaux, neige). Trop lent pour la grammaire 1600, juste pour une boucle d'ambiance.",
+    "timeline": [
+      {"t": "0:00-0:02", "what": "Printemps clair : prairies, arbres en fleurs, pétales qui tombent, hôtel rose sur sa colline, poteau qui traverse toutes les 1,5 s", "technique": "parallaxe multicouche, poteau périodique"},
+      {"t": "0:02-0:05", "what": "Le ciel se couvre, pluie en stries, gouttes et ruissellements sur la vitre", "technique": "micro-récit météo, vitre matérialisée"},
+      {"t": "0:05-0:06.9", "what": "Éclaircie, arc-en-ciel en fondu derrière l'hôtel, téléphérique rouge", "technique": "petit événement de saison"},
+      {"t": "0:06.9-0:08.6", "what": "Un train rouge et crème croise et couvre toute la fenêtre ; derrière lui, l'été", "technique": "volet par occultation + souffle synchrone"},
+      {"t": "0:08.6-0:14.5", "what": "Été : vert profond, bandes de lavande, bottes de foin, montgolfières rayées, soleil et oiseaux, nappe plus chaude", "technique": "étalonnage intérieur par saison"},
+      {"t": "0:14.5-0:15.2", "what": "Une rafale de feuilles rousses balaie de droite à gauche et recolore le paysage", "technique": "volet particulaire + bruit de vent"},
+      {"t": "0:15.2-0:21.5", "what": "Automne : ciel rose-mauve, arbres roux, peupliers jaunes, vol en V, feuilles qui tombent en continu", "technique": "particules de saison"},
+      {"t": "0:21.57-0:22.4", "what": "La façade de pierre du tunnel entre sur un temps, la vitre devient noire, les lampes s'allument d'un coup (f664)", "technique": "passage au noir motivé, lampes pratiques"},
+      {"t": "0:22.4-0:23.2", "what": "Noir du tunnel : plafonniers et rais de lumière, reflets des lampes et de la tasse dans la vitre, vapeur du café", "technique": "reflets dans la vitre, son étouffé"},
+      {"t": "0:23.2-0:24.0", "what": "Une bande de lumière s'ouvre à droite et découvre l'hiver, entièrement révélé sur un temps (f718)", "technique": "révélation par la sortie du tunnel"},
+      {"t": "0:24-0:28.9", "what": "Hiver : neige, arbres nus, montagnes blanches, lampes allumées, intérieur lavande, carillons aigus", "technique": "étalonnage froid, particules"},
+      {"t": "0:28.9-0:30", "what": "Nuée de pétales de droite à gauche, lampes qui s'éteignent, retour exact à l'image 0", "technique": "volet de pétales + boucle parfaite"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Indice automatique nul (R 0,19-0,35, p > 0,3 ; corrélation aux attaques z = -1,8) : normal, car poteaux et parallaxe bougent en continu sans rapport au temps. Comptage à l'œil sur 12 gestes clés des transitions : 6 à ±2 im d'une barre bleue (temps) — entrée des feuilles f437 (temps f436,7), automne installé f451 (temps fort de phrase 15,03 s), façade du tunnel f647 (temps f647,7), lampes allumées f664 (+2), hiver révélé f718 (temps f718,0), printemps réinstallé f887 (temps f886,7) ; hors grille : tête du train f207 (-5), couverture totale f223 (-3), début de la queue f244 (+4), été révélé f258 (+4), sortie du tunnel f695 (-2 d'un demi-temps), arrivée des pétales f870 (-3). Hasard ≈ 36 % (fenêtre de 5 im pour un temps toutes les 14 im) : signal faible. Macro-structure partagée : 30 s = 64 temps, une saison = 7,5 s = 16 temps = 4 mesures, et la musique change de couleur avec les saisons (ré majeur probable au printemps, Fa 174 Hz et La 220 Hz, couleur ré mineur, en hiver 22,5-24,5 s). Les vrais calages sont des bruitages : souffle du train 7,0-8,25 s (−22 → −14 dB, part > 2 kHz 5 % → 41 %) sur le passage f207-f258 ; vent 14,5-15,25 s (aigus 26 %) sur la rafale ; aigus coupés (0-3 %) dès 22,0 s, à l'instant où le tunnel devient noir, et jusqu'à 28,75 s ; carillons aigus 27-29,5 s puis aigus qui remontent avec les pétales. Les poteaux (45 im = 3,2 temps) dérivent : aucune pulsation visuelle n'est calée.",
+    "synced": ["departs", "atterrissages", "couleur"],
+    "style_match": "Boucle instrumentale douce à 128 BPM, probablement synthétisée, harmonie qui s'assombrit en hiver : le caractère calme et nostalgique colle à la scène, mais le tempo dansant n'anime aucun geste.",
+    "how_built": "Le prompt ne parle ni de son ni de durée. Tout indique une seule timeline en code (probable) : durée de 30 s divisible par toutes les périodes (poteau 1,5 s, saison 7,5 s, 64 temps à 128 BPM), bande-son générée avec des sections par saison et des bruitages programmés aux instants des transitions. La synchro est donc structurelle (blocs de 4 mesures, effets sonores) mais pas gestuelle : les mouvements continus (parallaxe, poteaux, particules) tournent sur leurs propres horloges. Pour la rendre serrée, il aurait fallu exprimer les périodes visuelles en temps (poteau toutes les 2 ou 4 temps, entrées de transition sur le temps fort)."
+  },
+  "techniques": [
+    {
+      "cat": "layout",
+      "name_fr": "Cadrage symétrique en avant-scène de théâtre",
+      "name_en": "Symmetrical proscenium framing",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Fenêtre ouverte x 14-86 % / y 12-74 % ; rideaux violets #5B3373 de part et d'autre (x 6-19 % et 81-95 %) noués par des embrasses dorées à y ≈ 45 % ; cantonnière festonnée y 1-12 % avec 8 glands et un médaillon à couronne sur l'axe ; table x 20-80 %, y 78-100 % ; lampes à x 32 % et 68 % (±18 % de l'axe), hauteur ≈ 22 % ; tasse sur l'axe, y 77-88 %. Symétrie miroir quasi parfaite : l'intérieur fixe est une scène de théâtre dont l'extérieur est le décor qui change.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan fixe verrouillé",
+      "name_en": "Locked-off static shot",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Recalage mesuré de la zone de la table entre f100, f107, f115 et f123 : décalage optimal 0 px, erreur résiduelle 0,01-0,02/255 ; rideaux et lampes immobiles. Tout le mouvement vient de l'extérieur. Lisible et reposant, mais sans roulis ni vibration le wagon semble posé à quai. À reprendre avec un roulis vertical de 2-4 px (sinusoïde ≈ 1,5 s, ou calée sur 2 temps) et une secousse au croisement du train.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Défilement en parallaxe multicouche",
+      "name_en": "Multi-layer parallax scroll",
+      "t": "0:01.0-0:02.5",
+      "frames": "f30-f75",
+      "fps": 30,
+      "mechanics": "4 à 5 couches qui défilent de droite à gauche à vitesse constante : montagnes low poly quasi fixes (< 20 px/s), hôtel rose et champs ≈ 100 px/s, arbres du premier plan ≈ 250-300 px/s, poteau ≈ 1 500 px/s ; nuages en lente dérive propre. Rapport ≈ 0 : 1 : 3 : 15. Pas d'ease, pas de flou sauf sur le poteau. Donne la profondeur et la vitesse sans aucun mouvement de caméra.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 30, "to": 75, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Poteau caténaire périodique",
+      "name_en": "Periodic catenary pole pass",
+      "t": "0:00.33-0:01.23",
+      "frames": "f10-f37",
+      "fps": 30,
+      "mechanics": "Barre verticale floue ≈ 50 px (2,6 % de la largeur), pleine hauteur de fenêtre, gris-brun semi-transparent (≈ 50 %), flou de mouvement horizontal. Traverse la fenêtre (≈ 1 380 px) en ≈ 27 im (0,9 s), soit ≈ 50 px/im, linéaire ; un passage toutes les 45 im (1,5 s), 20 passages en 30 s, d'où les plateaux réguliers de la courbe d'énergie. Période = 3,2 temps à 128 BPM : dérive contre la musique. Trop transparent, il se lit comme une trace sur la vitre plutôt qu'un poteau.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f22.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Fils caténaires en chaînette",
+      "name_en": "Sagging overhead wires",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "2 à 3 lignes sombres fines (≈ 2 px) en chaînette dans le haut de la fenêtre (y 15-30 %) ; leur pente et leur creux changent quand un poteau passe, comme si le point d'attache glissait. Signe minimal et juste du voyage en train, qui ajoute un mouvement lent au-dessus du paysage.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f22.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Train croisé : volet par occultation",
+      "name_en": "Passing-train occlusion wipe",
+      "t": "0:06.90-0:08.60",
+      "frames": "f207-f258",
+      "fps": 30,
+      "mechanics": "Un train rouge #902E3E et crème #F6E7D2 à fenêtres jaunes floutées entre par le bord droit à f207 ; la tête traverse la fenêtre en 14 im (≈ 99 px/im ≈ 3 000 px/s, deux fois la vitesse des poteaux : logique de croisement) ; occultation totale f221-f244 (23 im = 0,77 s) pendant laquelle le printemps est remplacé par l'été ; la queue découvre l'été de droite à gauche en 14 im (f244-f258). Mouvement linéaire, fort flou horizontal sur les fenêtres du train, intérieur assombri ≈ 20 % pendant le passage (nappe #F1E6E1 → #C5B9AD). Souffle large bande synchrone (7,0-8,25 s). Les gouttes de l'averse restent visibles sur la vitre devant le train.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f210.jpg, microM-003-move-f231.jpg, microM-004-move-f258.jpg",
+      "illus": {"from": 205, "to": 260, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rafale de feuilles : volet particulaire",
+      "name_en": "Leaf-gust particle wipe",
+      "t": "0:14.53-0:15.23",
+      "frames": "f436-f457",
+      "fps": 30,
+      "mechanics": "Une bourrasque de feuilles rousses entre par la droite à f436-f437 (sur un temps, 14,56 s). Le front traverse la fenêtre en ≈ 14 im (≈ 95 px/im) et recolore derrière lui : arbres verts → orange et rouge, ciel #77BFD5 → #D2A9BF, sol vert → ocre, montagnes → rose. L'automne est installé à f451, pile sur le temps fort de phrase 15,03 s (début du 3e bloc de 4 mesures). Les feuilles continuent ensuite de tomber en diagonale. Bruit de vent (aigus 26 %) de 14,5 à 15,25 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f440.jpg",
+      "illus": {"from": 434, "to": 457, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tunnel : passage au noir motivé",
+      "name_en": "Tunnel blackout transition",
+      "t": "0:21.57-0:23.97",
+      "frames": "f647-f719",
+      "fps": 30,
+      "mechanics": "La façade de pierre beige du tunnel (≈ 15 % de la largeur) entre à droite à f647, sur le temps 21,59 s, et traverse en ≈ 25 im ; noir complet f672-f695 (≈ 0,8 s) avec deux plafonniers et des rais de lumière diagonaux qui balaient la vitre ; l'intérieur perd ≈ 70 % de luminance (mur #B97072 → #3E272A). Sortie : bande de lumière par la droite à f695, hiver entièrement révélé à f718-f719 (24 im), sur le temps 23,93 s. Aigus coupés dès 22,0 s (son étouffé). Le noir sert de remise à zéro : l'hiver arrive comme une nouvelle scène, pas comme une évolution.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-009-move-f663.jpg, microM-010-move-f706.jpg",
+      "illus": {"from": 645, "to": 720, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Lampes de table qui s'allument dans le noir",
+      "name_en": "Practical lamps switching on",
+      "t": "0:22.10-0:29.47",
+      "frames": "f663-f884",
+      "fps": 30,
+      "mechanics": "f663 abat-jour roses #D68D9E éteints → f664 crème #F3E0D1 avec halo (rayon ≈ 8 % de la hauteur) : saut d'une seule image, comme un vrai interrupteur, 2 im après le temps 22,06 s. Les lampes restent allumées tout l'hiver (intérieur cosy contre extérieur froid) et s'éteignent en fondu ≈ 6 im (f878-f884) quand le printemps revient. La nuit du tunnel motive l'éclairage, l'hiver le garde.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f663.jpg, microM-012-move-f878.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Reflets de l'intérieur dans la vitre",
+      "name_en": "Interior reflections on the glass",
+      "t": "0:22.2-0:23.6",
+      "frames": "f666-f708",
+      "fps": 30,
+      "mechanics": "Quand l'extérieur est noir, la vitre renvoie un reflet atténué (≈ 40 % d'opacité probable) des deux abat-jour et de la tasse, décalé vers le haut d'≈ 7 % de la hauteur ; il disparaît dès que la lumière de sortie revient. Détail physique juste qui matérialise le verre et rend le noir habité.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f663.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Vapeur de café",
+      "name_en": "Coffee steam wisps",
+      "t": "0:22-0:29",
+      "frames": "f660-f870",
+      "fps": 30,
+      "mechanics": "2 à 3 volutes blanches translucides montent de la tasse sur ≈ 10 % de la hauteur. Peu visibles sur fond clair, elles se lisent sur le noir du tunnel et le gris lavande de l'hiver : le détail chaleureux apparaît quand il fait froid.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Étalonnage de l'intérieur par saison",
+      "name_en": "Seasonal interior grade",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Nappe #F1E6E1 (printemps, neutre rosé) → #FCF1DA (été, chaud) → #F9DECC (automne, pêche) → #9D8673 (tunnel, seule lumière des lampes) → #C4B6C2 (hiver, lavande froide) ; mur #B57B83 → #BE7E7B → #B97072 → #3E272A → #724C65. Le changement suit le front de chaque transition. L'intérieur raconte la lumière de la saison autant que le paysage.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette rose, violet et or",
+      "name_en": "Pink-violet-gold palette",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Intérieur bâti sur trois teintes : rose poudré #B57B83, violet profond #5B3373, or #CEA254 (galons, glands, pieds de lampe). L'extérieur reste en pastels (ciel #ADD2E6, prairie #A8DA95, montagnes #D2DAE7). Contraste chaud/riche dedans, pastel/aéré dehors : c'est cette palette, plus que le dessin, qui porte la référence au film.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Micro-récit météo du printemps",
+      "name_en": "Spring shower then rainbow",
+      "t": "0:00-0:06.5",
+      "frames": "f0-f195",
+      "fps": 30,
+      "mechanics": "f0 ciel clair et pétales ; vers 0:02-0:03 nuages gris, pluie en stries diagonales, gouttes rondes (≈ 6-14 px) et ruissellements sur la vitre ; 0:05-0:06.5 éclaircie et arc-en-ciel en fondu derrière l'hôtel. Chaque saison reçoit ainsi un petit événement interne (montgolfières et soleil l'été, vol en V l'automne, neige et carillons l'hiver) qui évite que 7,5 s d'ambiance soient vides.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Vitre matérialisée par la pluie",
+      "name_en": "Raindrops on the window layer",
+      "t": "0:02-0:08.6",
+      "frames": "f60-f258",
+      "fps": 30,
+      "mechanics": "Gouttes rondes à reflet blanc et filets diagonaux (≈ 30° de la verticale) posés sur un calque vitre fixe, distinct du paysage qui défile. Elles restent en place pendant que le train croisé passe derrière : on comprend qu'il y a du verre entre le spectateur et le monde.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f210.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules de saison",
+      "name_en": "Seasonal particle systems",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Pétales roses qui tournoient lentement (printemps), feuilles rousses en chute diagonale vers la gauche avec le vent relatif (automne), flocons blancs ≈ 4-10 px en chute lente avec dérive (hiver), gouttes (averse). Densité modérée, jamais de mur de particules ; les mêmes particules servent ensuite de front de transition (feuilles, pétales).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Paysage vectoriel plat à contour",
+      "name_en": "Flat outlined vector landscape",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Arbres sucette à contour sombre, sapins triangulaires, montagnes low poly à facettes (3 tons), maisons à toits colorés, moutons, bottes de foin, bandes de lavande, grain papier. Lisible et cohérent d'une saison à l'autre (seules les couleurs changent), mais générique, proche du clip-art, en deçà du soin apporté à l'intérieur.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Hôtel rose récurrent et téléphérique",
+      "name_en": "Recurring pink hotel landmark",
+      "t": "0:00-0:21.5",
+      "frames": "f0-f645",
+      "fps": 30,
+      "mechanics": "Un grand bâtiment rose à coupole lilas et drapeau sur sa colline (≈ 12 % de la largeur), avec un téléphérique à cabine rouge : hommage probable à l'hôtel du film. Il revient au printemps, en été et en automne, recoloré selon la saison. Bonne ancre visuelle qui relie les saisons, mais il réapparaît sans logique de trajet.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Nuée de pétales et boucle parfaite",
+      "name_en": "Petal wipe into seamless loop",
+      "t": "0:28.93-0:29.97",
+      "frames": "f868-f898",
+      "fps": 30,
+      "mechanics": "Un front à bord fondu (≈ 25-30 % de la largeur) passe de droite à gauche en ≈ 20 im (f868-f888) avec une nuée de pétales roses en tête ; l'hiver s'efface sous le printemps, les lampes s'éteignent, l'intérieur repasse au rose. Le printemps est réinstallé à f887 (sur le temps 29,56 s) et f898 reproduit f0 (mêmes arbres, même poteau) : boucle sans couture.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-move-f878.jpg, overview-06.jpg",
+      "illus": {"from": 866, "to": 898, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en 4 blocs égaux bouclée",
+      "name_en": "Four equal-block loop structure",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "30 s = 4 saisons × 7,5 s (225 im) ; centres des transitions ≈ 7,7 / 14,9 / 22,8 / 29,3 s. Poteau 1,5 s (× 20), musique 128 BPM (64 temps = 30 s) : toutes les périodes divisent la durée, condition d'une boucle parfaite. Pas d'accroche ni de chute : pièce d'ambiance à regarder en fond, type fenêtre lofi.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Mouvements linéaires à vitesse constante",
+      "name_en": "Constant-speed linear motion",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Poteau, train, façade du tunnel, fronts de transition : pas égaux image après image, aucune accélération ni dépassement. Juste pour un décor vu d'un train, mais sans aucune respiration : pas de ralenti à l'approche du tunnel, pas de secousse au croisement, pas de variation de vitesse entre saisons.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f210.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages calés sur les transitions",
+      "name_en": "Transition-synced sound effects",
+      "t": "0:07.0-0:29.5",
+      "frames": "f210-f885",
+      "fps": 30,
+      "mechanics": "Souffle large bande du train 7,0-8,25 s : niveau −22 → −14 dB, part > 2 kHz 5 % → 41 %, qui démarre ≈ 3 im après l'entrée de la tête (f207) et s'éteint avec la queue. Vent 14,5-15,25 s (aigus 26 %) pendant la rafale de feuilles. Aigus coupés à 0-3 % dès 22,0 s, à l'instant où le tunnel devient noir, et gardés feutrés tout l'hiver (neige = son étouffé). Carillons aigus (La6 1 760 Hz, Fa6, Sol6) 27-29,5 s, puis aigus qui remontent à 14-16 % avec les pétales. Le son vend chaque occultation.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Phrases musicales de 4 mesures alignées sur les saisons",
+      "name_en": "Season-aligned musical phrases",
+      "t": "0:00-0:30",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "128 BPM, pulsation nette ; une saison = 7,5 s = 16 temps = 4 mesures. L'automne s'installe pile sur le temps fort de phrase 15,03 s (f451), la façade du tunnel entre sur le temps 21,59 s (f647), l'hiver se découvre sur le temps 23,93 s (f718). Harmonie probable en ré majeur au printemps (Ré, Fa#, La) et couleur ré mineur en hiver (Fa 174 Hz, La 220 Hz, 22,5-24,5 s). En revanche poteaux, parallaxe et particules ignorent le temps : synchro de structure, pas de geste.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f440.jpg, extra-01.jpg, microM-010-move-f706.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Quatre noms concrets (saisons, fenêtre de train, wagon douillet, tasse de café) suffisent à fixer un dispositif complet : « fenêtre » impose le plan fixe et le moteur de parallaxe, « tasse » donne le point central de la symétrie."},
+    {"kind": "direction", "insight": "« Grand Budapest Hotel style » a été traduit en palette rose-violet-or, symétrie frontale, hôtel rose sur sa colline, téléphérique et médaillon à couronne. Une référence de film transmet une direction artistique entière, mais surtout par la couleur et la composition, pas par le mouvement."},
+    {"kind": "structure", "insight": "« 4 seasons passing » a donné 4 blocs égaux de 7,5 s en boucle. Le contexte du voyage a fourni les transitions (train croisé, tunnel) : quand le décor contient ses propres occultants, le modèle invente des transitions motivées sans qu'on les demande."},
+    {"kind": "build", "insight": "Aucune pile technique n'est indiquée ; la cohérence des périodes (poteau 1,5 s, saison 7,5 s, 64 temps à 128 BPM = 30 s) et les bruitages placés aux transitions laissent penser à une seule timeline en code avec son généré (probable)."},
+    {"kind": "qa", "insight": "Rien ne cadrait la qualité du mouvement : d'où un wagon immobile, des vitesses toutes linéaires et un poteau transparent. Il aurait fallu préciser « roulis du wagon 2-4 px », « poteaux opaques toutes les 2 temps », « entrée de chaque transition sur le temps fort »."},
+    {"kind": "other", "insight": "Sans texte ni personnage, la vidéo est une boucle d'ambiance : excellente comme fond ou comme exercice de transitions motivées, peu utile comme modèle de rythme 1600."}
+  ],
+  "steal": [
+    "Cacher chaque changement d'état derrière un élément du décor qui occulte tout le cadre (train croisé, tunnel) : changer la scène pendant ≥ 0,7 s d'occultation.",
+    "Plan fixe symétrique et extérieur en parallaxe à 4 vitesses (≈ 0, 100, 300, 1 500 px/s) : un monde riche sans bouger la caméra.",
+    "Étalonner l'intérieur avec l'extérieur : nappe, murs et lampes changent de température à chaque saison ; l'intérieur raconte le temps.",
+    "Boucle parfaite : choisir des périodes qui divisent la durée (1,5 s, 7,5 s, 64 temps à 128 BPM = 30 s) et finir sur l'image 0.",
+    "Poser un bruitage sur chaque transition (souffle, vent, son étouffé dans le noir, carillon) : le son vend l'occultation."
+  ],
+  "flaws": [
+    "Wagon parfaitement figé : aucun roulis ni vibration, le train ne semble pas rouler.",
+    "Poteau semi-transparent toutes les 1,5 s : lu comme une trace grise sur la vitre, et décalé du tempo.",
+    "Arbres sucette et montagnes low poly génériques, moins soignés que l'intérieur.",
+    "Mouvements tous linéaires, gestes non calés sur le temps : la musique accompagne sans dialoguer.",
+    "5 à 6 s d'ambiance pure entre deux transitions : trop lent pour un format promo."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 fps natifs et mouvements linéaires sans courbe à étudier. Les leçons (transitions par occultation, étalonnage par saison, boucle, bruitages) se lisent entièrement sur les planches microscope et les mesures audio."
+  }
+}

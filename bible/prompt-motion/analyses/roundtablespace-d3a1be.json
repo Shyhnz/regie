@@ -1,0 +1,549 @@
+{
+  "slug": "roundtablespace-d3a1be",
+  "title": "Easing and morphing showreel",
+  "handle": "@RoundtableSpace",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Niveau studio sur le concept et le calage : chaque mot bouge selon la courbe qu'il nomme, chaque objet devient le suivant, tout tombe sur la grille 128 BPM ; Truchet et 3D restent génériques.",
+  "summary": "Bobine de motion designer conçue comme une leçon : identité, tableau de six courbes d'accélération, morphing, pavage génératif, 3D filaire, typo cinétique « EASE IN. EASE OUT. NEVER LINEAR. » où chaque mot bouge selon la courbe qu'il nomme. Tout s'enchaîne par des objets qui se transforment (lettres → points → billes) et tombe sur une grille 128 BPM affichée dans le HUD. Seuls les chapitres génératifs restent génériques.",
+  "prompt_vs_result": [
+    "Une ligne : une bobine de 15 s qui prouve que le modèle est un motion designer incroyable, avec « go all out » (donne tout). Aucune indication de musique, de marque, de palette ni de structure.",
+    "Claude a choisi un fil pédagogique (identité, accélérations, morphing, systèmes, profondeur, typo, fin), 8 mesures à 128 BPM affichées dans le HUD, une palette rouge-crème-bleu-citron, des transitions par objets transformés et la devise « EASE IN. EASE OUT. NEVER LINEAR. ».",
+    "« Go all out » a poussé à la densité et à l'ambition (graphique d'easings, polices variables, Truchet, 3D). Le prompt aurait dû fixer la musique et son drop, interdire le remplissage génératif et demander une accroche plus forte que le point rouge initial."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0C0C0E",
+        "role": "fond sombre (ouverture, Truchet, 3D, IN., LINEAR.)"
+      },
+      {
+        "hex": "#EF4A3A",
+        "role": "rouge corail : astérisque, aplat du titre, carte finale, points finaux"
+      },
+      {
+        "hex": "#F2EEE6",
+        "role": "crème : graphique d'easings, formes du morphing, typo sur fond sombre"
+      },
+      {
+        "hex": "#111111",
+        "role": "noir typo et logo"
+      },
+      {
+        "hex": "#2D2DF5",
+        "role": "bleu électrique : fond du morphing, OUT., billes, EASE condensé"
+      },
+      {
+        "hex": "#DDF53A",
+        "role": "citron vert : fond de NEVER"
+      },
+      {
+        "hex": "#F7B5A8",
+        "role": "rose des ondes sur le pavage de Truchet"
+      },
+      {
+        "hex": "#6A4BFF",
+        "role": "violet : frange des iris, confettis"
+      }
+    ],
+    "type": "Grotesque très grasse à chasse variable (type Archivo, probable) : étendue pour CLAUDE (capitale ≈ 20 %), condensée pour EASE (≈ 70 %) ; italique serif (type Instrument Serif) pour « motion designer » ; mono pour le HUD.",
+    "texture": "Aplats nets, sans grain. Flou de mouvement directionnel très long sur les fouettés (IN., OUT., LINEAR. : traînée de 15 à 25 % de la largeur) et sur les rotations de morph. Frange chromatique violette au bord des disques d'iris. Cercles fantômes et graduations d'espacement dans le graphique d'easings. Contours rouges fins (échos) autour des formes en morph. Confettis minuscules sur la carte finale.",
+    "style": "Bobine éditoriale suisse et didactique",
+    "coherence": "Tout est tenu par le concept (une leçon de motion par chapitre, nommée dans le HUD : 01 IDENTITY, 02 EASING, 03 MORPHING, 04 SYSTEMS, 05 DEPTH, 06 KINETIC TYPE, 07 FIN), par une palette de 5 couleurs dont le fond change à chaque chapitre, et par des objets qui passent d'une scène à l'autre : astérisque → point → iris ; 6 lettres → 6 points → 6 billes → 1 bille → cercle ; carré → tuile de Truchet ; point de LINEAR. → fond rouge ; astérisque d'ouverture → logo final. Le pavage de Truchet et la 3D filaire sont les seuls passages qui ne disent rien de plus que « je sais faire du génératif »."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "Tempo 128 BPM (128,1 mesuré, pulsation 7,68) : un temps = 28,1 im, une croche = 14 im, une mesure de 4 temps = 1,875 s ; 8 mesures = 15,0 s pile. Chaque chapitre démarre sur un premier temps de mesure : titre à 1,88 s (f113), graphique d'easings à 3,78 s (f227), morphing à 5,63 s (f338), Truchet à 7,52 s (f451), profondeur vers 9,4-9,8 s (probable), typo à 11,25 s (f675), fin à 13,13 s (f788). À l'intérieur : un geste par temps (cadran f30, rayons épaissis f58, lettres → points f199, morphs f368, f397, f424, ondes de Truchet) et, dans la typo cinétique, un mot par croche (14 im). Les coupes précèdent la barre de 1,7 à 2 im, ce qui revient à placer l'image pile sur la grille théorique (multiples de 0,469 s) : la mesure audio situe les temps ≈ 36 ms plus tard. Aucun temps mort : maintien de 0,48 s au début (point rouge minuscule) et ≈ 1 s de carte finale où les confettis dérivent. Densité : un changement toutes les 0,23 à 0,47 s.",
+    "timeline": [
+      {
+        "t": "0:00.00-0:00.50",
+        "what": "Noir, HUD qui s'allume ; point rouge dans un anneau fin (apparition f9 sur une attaque)",
+        "technique": "amorce minimale"
+      },
+      {
+        "t": "0:00.50-0:01.00",
+        "what": "Sur le temps f30 : cadran épais et aiguille ; l'aiguille balaie et laisse 12 rayons, l'anneau s'élargit en onde ; sur le temps f58 les rayons s'épaississent",
+        "technique": "cadran → astérisque"
+      },
+      {
+        "t": "0:01.00-0:01.70",
+        "what": "Astérisque rouge épais qui tourne, texte circulaire en orbite",
+        "technique": "texte en anneau"
+      },
+      {
+        "t": "0:01.70-0:02.15",
+        "what": "L'astérisque se réduit en point (f110), double iris crème puis rouge (f113-f129), « CLAUDE » monte lettre à lettre dès le temps f115",
+        "technique": "effondrement + double iris"
+      },
+      {
+        "t": "0:02.15-0:03.30",
+        "what": "« CLAUDE » plein cadre, vague de chasse sur les lettres, « motion designer » en italique",
+        "technique": "police variable"
+      },
+      {
+        "t": "0:03.30-0:03.80",
+        "what": "Les 6 lettres deviennent 6 points (temps f199), volet diagonal crème, les points volent en colonne (dernier sur le temps f227)",
+        "technique": "lettres → points → billes"
+      },
+      {
+        "t": "0:03.80-0:05.15",
+        "what": "« Six ways to get from A to B. » : course de 6 billes, une courbe chacune (linear → bounce), traînées et graduations",
+        "technique": "tableau d'espacement (spacing chart)"
+      },
+      {
+        "t": "0:05.15-0:05.63",
+        "what": "Les billes convergent et fusionnent en une bille bleue écrasée ; coupe en négatif sur le temps f338",
+        "technique": "fusion + inversion"
+      },
+      {
+        "t": "0:05.63-0:06.10",
+        "what": "Cercle crème sur bleu qui grossit et émet 12 satellites",
+        "technique": "émission de satellites"
+      },
+      {
+        "t": "0:06.10-0:07.35",
+        "what": "Morphs sur les temps : cercle → triangle (f368) → étoile (f397) → carré (f424), rotation + ressort, satellites assortis",
+        "technique": "morphing par temps"
+      },
+      {
+        "t": "0:07.35-0:07.63",
+        "what": "Satellites aspirés, coupe sur le temps vers le noir en gardant le carré, qui se divise en tuiles",
+        "technique": "raccord sur la forme"
+      },
+      {
+        "t": "0:07.63-0:09.70",
+        "what": "Pavage de Truchet plein cadre, ondes rouges de rotation qui convergent vers le centre, une par temps",
+        "technique": "pavage génératif"
+      },
+      {
+        "t": "0:09.70-0:11.25",
+        "what": "Chap. 05 DEPTH : maillage 3D en tirets, plan enroulé, sphère, tore en rotation rapide (transition d'entrée non vue)",
+        "technique": "3D filaire"
+      },
+      {
+        "t": "0:11.25-0:12.18",
+        "what": "Sur l'attaque la plus forte : EASE / IN. (accélère) / EASE (monte) / OUT. (freine), un mot par croche ; drop audio à 11,54 s",
+        "technique": "mots qui miment leur courbe"
+      },
+      {
+        "t": "0:12.18-0:12.92",
+        "what": "NEVER puis rangées de NEVER en contour qui défilent ; LINEAR. dérive à vitesse constante",
+        "technique": "typo cinétique"
+      },
+      {
+        "t": "0:12.92-0:13.13",
+        "what": "LINEAR. part en fouetté, plongée dans son point rouge qui remplit le cadre",
+        "technique": "zoom dans le point"
+      },
+      {
+        "t": "0:13.13-0:13.60",
+        "what": "Fond rouge, onde de choc, astérisque noir qui se déplie, confettis",
+        "technique": "éclosion du logo"
+      },
+      {
+        "t": "0:13.60-0:14.05",
+        "what": "L'astérisque glisse à gauche et déroule « CLAUDE » de droite à gauche ; « motion designer » en italique, ligne d'infos",
+        "technique": "révélation par le logo"
+      },
+      {
+        "t": "0:14.05-0:15.06",
+        "what": "Carte de fin, confettis qui dérivent",
+        "technique": "carte de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage à l'œil (un événement clé par geste) : 27 gestes sur 31 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 36 % à 128 BPM et 60 fps). Détail : cadran f30 et rayons épaissis f58 sur les temps (attaque à 0,96 s) ; iris crème f113 (-1,6 im) et première lettre f115 sur le temps ; rouge plein f129 au demi-temps ; lettres → points f199 sur le temps (attaque 3,31 s), fin du volet f212 au demi-temps, dernier point posé f227 sur le temps ; fusion des billes f326 au demi-temps (attaque 5,42 s) ; coupe f338 (-1,4 im, attaque 5,65 s) ; morphs f368, f397, f424 sur les temps (+0,3 à +1,4 im, attaques 6,59 et 7,06 s) ; coupe f451 (attaque 7,54 s) ; typo : EASE f675, IN. f689, EASE f703, OUT. f717, NEVER f731, rangées f745, LINEAR. f759, fouetté f775, fin f788 = 9 mots sur 9 sur la grille des croches, à -2 à 0 im, dont 7 sur des attaques fortes (11,27, 11,98, 12,21, 12,45, 12,68, 12,91, 13,15 s) ; révélation du mot f817 (temps), CLAUDE complet f831 (demi-temps), ligne d'infos f845 (temps). Hors grille : apparition du point f9 (sur une double croche et une attaque), fin de l'effondrement f110 (-4,6 im), aspiration des satellites f440 (+2,2 im), arrêt de IN. f695 (2,6 im après le drop de 11,54 s). L'indice automatique confirme (départs/demi-temps p corrigé = 9,7e-04).",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte",
+      "drop"
+    ],
+    "style_match": "Électro entraînante à 128 BPM avec montée puis drop vers 11,5 s : morphs et ondes respirent sur les temps, la typo cinétique éclate en croches au drop.",
+    "how_built": "Le prompt ne parle pas de musique. Le modèle a choisi 128 BPM parce que 8 mesures de 4 temps font exactement 15,0 s ; le HUD l'affiche (« 128 BPM », 4 pastilles de temps, numéro de mesure : lecture probable). Les événements tombent sur les multiples exacts de 0,469 s (f113, f338, f450, f675, f788 = mesures 1, 3, 4, 6, 7) : une horloge unique en code pilote l'animation. La piste suit la même grille (premier temps mesuré à 0,505 s) et son drop arrive avec la typo cinétique : bande-son générée au même tempo ou morceau choisi à 128 BPM et calé à t = 0, non déterminable."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Aiguille de cadran qui balaie et laisse des rayons",
+      "name_en": "clock-hand sweep into starburst",
+      "t": "0:00.50-0:01.00",
+      "frames": "f30-f60",
+      "fps": 60,
+      "mechanics": "Sur le temps f30, un anneau gris foncé épais (≈ 25 % de la hauteur) apparaît avec une aiguille rouge verticale. L'aiguille tourne et laisse une copie à chaque pas : 3-4 rayons à f33, 6 à f36, 8 à f39, 12 à f42 (≈ 1 rayon par image), traits fins ≈ 0,5 % de la hauteur, astérisque de ≈ 40 % de la hauteur. L'anneau s'élargit en onde (45 % → 75 % → plus de 100 %) en s'estompant (f33-f54). Sur le temps f58, les rayons s'épaississent ×5 avec bouts arrondis et longueurs inégales (astérisque façon logo).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte circulaire en orbite autour du logo",
+      "name_en": "orbiting circular text ring",
+      "t": "0:00.95-0:01.65",
+      "frames": "f57-f99",
+      "fps": 60,
+      "mechanics": "Une phrase en mono capitales (« CLAUDE · MOTION DESIGNER · SHOWREEL 2026 », lecture probable) est posée sur un cercle de rayon ≈ 25 % de la hauteur autour de l'astérisque et tourne lentement, entre deux anneaux fins rouge sombre. Elle disparaît à f99, juste avant l'effondrement. Version 2D de l'anneau de texte en orbite.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement en point puis double iris (crème puis rouge)",
+      "name_en": "collapse to point + double iris reveal",
+      "t": "0:01.70-0:02.15",
+      "frames": "f102-f129",
+      "fps": 60,
+      "mechanics": "L'astérisque tourne en rétrécissant : 30 % (f102) → 25 % (f106) → 18 % (f107) → 10 % (f108) → 4 % (f109) → point blanc de 1 % (f110), ease-in. Le point tient 2 im (f111-f112). À f113 un disque crème jaillit du point déjà à 78 % de la hauteur (105 % à f114, 130 % à f115) : ease-out explosif, bord frangé de violet. Un disque rouge #EF4A3A naît au même centre à f115 (5 %), 45 % à f116, 80 % à f117, 110 % à f119, déborde à f123 ; les coins crème disparaissent à f129, sur le demi-temps. Le texte monte déjà dans le rouge.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f120.jpg, extra-01.jpg",
+      "illus": {
+        "from": 108,
+        "to": 123,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée masquée lettre à lettre",
+      "name_en": "masked per-letter rise",
+      "t": "0:01.92-0:02.18",
+      "frames": "f115-f131",
+      "fps": 60,
+      "mechanics": "« CLAUDE » sort d'un masque posé sur la ligne de base : chaque lettre apparaît par le haut et monte d'environ 5 % de la hauteur en ≈ 10 im, ease-out. Stagger ≈ 2 im (C f115, L et A f119, U f121, D f123, E f125). Première lettre sur le temps f115, mot complet à f131.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f120.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque étendue géante + italique serif + micro-labels mono",
+      "name_en": "extended grotesk with italic serif pairing",
+      "t": "0:02.15-0:03.32",
+      "frames": "f129-f199",
+      "fps": 60,
+      "mechanics": "« CLAUDE » en capitales très grasses et étendues, noir #111111 sur rouge, de 7 % à 93 % de la largeur, capitale ≈ 20 % de la hauteur, centré à ≈ 48 %. Filet fin en haut (≈ 21 % de la hauteur) avec labels mono « ST.01 » à gauche et « SHOWREEL — 2026 » à droite. « motion designer » en italique serif crème (≈ 7 % de la hauteur) sous le mot. Contraste masse noire / italique fine.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-move-f213.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Vague de chasse sur une police variable",
+      "name_en": "variable-width wave",
+      "t": "0:02.65-0:03.32",
+      "frames": "f160-f199",
+      "fps": 60,
+      "mechanics": "Les lettres changent de largeur l'une après l'autre (axe de chasse d'une police variable, probable) : à 3,0 s « CLA » étroites et « UDE » larges, à f198 l'inverse (« CLA » larges, « UDE » condensées), la largeur totale du mot restant à peu près constante. Le mot respire sans bouger de place. Mesures fines non vérifiées (planche à 2 im/s), probable.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-move-f213.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les 6 lettres deviennent 6 points puis les 6 billes du graphique",
+      "name_en": "letters-to-dots match transition",
+      "t": "0:03.32-0:03.78",
+      "frames": "f199-f227",
+      "fps": 60,
+      "mechanics": "Sur le temps f199, chaque lettre de « CLAUDE » se réduit en point noir (≈ 2 % de la hauteur) en ≈ 3 im, de gauche à droite, décalage ≈ 1,5 im (C f200-f202 … E f207-f209). Les 6 points, étirés par le flou de mouvement, se rangent en diagonale (f210-f216) puis filent sur des trajectoires courbes vers une colonne à x ≈ 33 % : ce sont les départs « A » des six pistes. Ils se posent de haut en bas de f219 à f227 (dernier sur le temps) et prennent leurs couleurs (noir, bleu, rouge alternés).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f213.jpg",
+      "illus": {
+        "from": 199,
+        "to": 227,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal à bord flou",
+      "name_en": "feathered diagonal wipe",
+      "t": "0:03.45-0:03.53",
+      "frames": "f207-f212",
+      "fps": 60,
+      "mechanics": "Le crème #F2EEE6 balaie le rouge du coin bas droit au coin haut gauche, bord en dégradé doux (≈ 10 % du cadre), en 5 à 6 im, pendant que les points voyagent ; dernier coin rouge effacé à f212, sur le demi-temps. « motion designer » glisse vers le bas et sort sous le volet.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f213.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tableau de six courbes d'accélération (même distance, même durée)",
+      "name_en": "easing comparison spacing chart",
+      "t": "0:03.78-0:05.15",
+      "frames": "f227-f309",
+      "fps": 60,
+      "mechanics": "Titre « Six ways to get from A to B. » en italique serif (≈ 4,5 % de la hauteur, en haut à gauche), mention mono à droite (« same distance · same duration », lecture probable). Six rangées espacées de ≈ 8,5 % : numéro rouge, nom mono (linear, ease-in-out, expo-out, back-out, elastic, bounce), mini-graphe de la courbe, piste fine de A (34 % de la largeur) à B (89 %), bille de ≈ 4,5 % de la hauteur. Course simultanée, départ probable sur le temps f255 : à 4,5 s la bille linear est à ≈ 30 % de la piste, ease-in-out à ≈ 5 %, expo-out à ≈ 82 %, back-out dépasse B, elastic oscille autour de B, bounce rebondit ; toutes à B vers 5,0-5,15 s. Cercles fantômes derrière chaque bille et graduations le long des pistes (une par image) : l'espacement devient visible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-move-f213.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Six billes qui fusionnent en une, écrasement puis coupe en négatif",
+      "name_en": "merge + squash + inversion cut",
+      "t": "0:05.15-0:05.63",
+      "frames": "f309-f338",
+      "fps": 60,
+      "mechanics": "Les billes quittent B et convergent en diagonale vers le centre avec flou de mouvement (f323-f326), fusionnent en une bille bleue de ≈ 5 % de la hauteur (f329, demi-temps f326), qui s'écrase en ellipse ≈ 1,5:1 pendant 7 im (f331-f337, anticipation). Coupe sur le temps (f338, -1,4 im) : couleurs inversées, cercle crème cerclé de rouge sur fond bleu #2D2DF5.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f338.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Cercle qui grossit et émet ses satellites",
+      "name_en": "emitting satellite ring",
+      "t": "0:05.63-0:05.88",
+      "frames": "f338-f353",
+      "fps": 60,
+      "mechanics": "Le cercle crème passe de 15 % à 42 % de la hauteur en 15 im, ease-out. Douze points blancs (≈ 1,5 % de la hauteur) sortent un par un de son bord et partent en spirale jusqu'à un anneau de ≈ 75 % de diamètre (f339-f353). Puis des contours rouges fins concentriques apparaissent autour (f352-f358). Légende mono à gauche « MORPH: CIRCLE → … » (lecture probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f338.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morph par temps avec rotation, ressort et échos",
+      "name_en": "beat-locked morph with spin and spring",
+      "t": "0:06.13-0:07.33",
+      "frames": "f368-f440",
+      "fps": 60,
+      "mechanics": "Un morph par temps : cercle → triangle à f368 (+0,5 im), triangle → étoile à f397 (+1,4 im), étoile → carré à f424 (+0,3 im). Chaque morph passe par une forme molle floutée (1 à 2 im), tourne d'environ un tour avec flou de mouvement puis oscille et se pose en ≈ 20 im (ressort). Des contours rouges fins (échos des états intermédiaires) tournent autour. Les 12 satellites changent de forme en même temps (points → triangles → étoiles → carrés).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 365,
+        "to": 392,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Satellites aspirés et coupe sur la forme (fond bleu → noir)",
+      "name_en": "shape-hold match cut",
+      "t": "0:07.33-0:07.63",
+      "frames": "f440-f458",
+      "fps": 60,
+      "mechanics": "Les satellites filent en traits radiaux flous et disparaissent en 3 im (f440-f443). Le carré crème (≈ 33 % de la hauteur) tient 8 im seul sur le bleu, puis coupe sur le temps (f451) vers un fond noir : le carré reste identique. Il se marque d'un carré intérieur (f455), puis se divise en 3 × 3 tuiles à arcs avec des étincelles radiales (f458) qui vont remplir l'écran.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Pavage de Truchet traversé d'ondes de rotation",
+      "name_en": "Truchet tiling with rotation waves",
+      "t": "0:07.63-0:09.70",
+      "frames": "f458-f582",
+      "fps": 60,
+      "mechanics": "Plein cadre d'arcs crème (trait ≈ 1,5 % de la hauteur) sur tuiles noires de ≈ 9 % de la hauteur. Des ondes en anneau carré partent des bords et convergent vers le centre : les tuiles touchées pivotent de 90° et virent au rouge-rose (#EF4A3A → #F7B5A8), puis redeviennent blanches derrière le front. Une onde par temps (départ au bord sur le temps f536, plein rouge au demi-temps f550, petit losange rouge au centre au temps f564). Légende technique en mono sous le motif.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f547.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Maillage 3D en tirets (plan enroulé, sphère, tore)",
+      "name_en": "dashed wireframe 3D mesh",
+      "t": "0:09.70-0:11.25",
+      "frames": "f582-f675",
+      "fps": 60,
+      "mechanics": "Maillage de tirets blancs avec quelques points rouges : à 10,0 s un plan qui s'enroule en tube vers la gauche, à 10,5 s une sphère à facettes (≈ 55 % de la hauteur) avec légende « VERTICES … · FOCAL … » (lecture probable), à 11,0 s un tore en rotation rapide, flou de mouvement sur les tirets. Projection perspective probable en code. Entrée et morphs non vus image par image (planches à 2 im/s).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui miment leur courbe (IN. accélère, OUT. freine, LINEAR. dérive)",
+      "name_en": "words animated with the easing they name",
+      "t": "0:11.48-0:12.92",
+      "frames": "f689-f775",
+      "fps": 60,
+      "mechanics": "« IN. » (crème sur noir, capitale ≈ 44 % de la hauteur) entre par la droite en ease-in pur : bord gauche à 74, 74, 71, 65, 54, 37 % de la largeur (pas de 0, 3, 6, 11, 17 %), traînée floue de 15-20 % sur f693-f694, arrêt net à 25 % (f695). Label « ACCELERATE → » en haut à gauche. « OUT. » (crème sur bleu) entre par la gauche en ease-out : bord droit à 50, 62, 72, 77, 82, 85 % (pas de 12, 10, 5, 5, 3 %), flou qui décroît, label « ← DECELERATE ». « LINEAR. » glisse à vitesse constante (0,73 % de la largeur par image, de 26 % à 15 % en 15 im) pendant qu'un trait droit se dessine à vitesse constante en bas à gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f703.jpg, microM-006-cut-f759.jpg",
+      "illus": {
+        "from": 688,
+        "to": 696,
+        "n": 6
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un mot par croche, du premier temps au drop",
+      "name_en": "one word per eighth note",
+      "t": "0:11.25-0:13.13",
+      "frames": "f675-f788",
+      "fps": 60,
+      "mechanics": "EASE f675, IN. f689, EASE f703, OUT. f717, NEVER f731, rangées NEVER f745, LINEAR. f759, fouetté f775, fin f788 : 9 événements sur 9 sur la grille des croches (14 im), de -2 à 0 im de la barre, dont 7 sur des attaques fortes. La section démarre sur l'attaque la plus forte du morceau (11,27 s) et le drop (+18,7 dB à 11,54 s) est frappé par l'arrivée de IN. (f695, 2,6 im après). La phrase lue en 1,9 s : « EASE IN. EASE OUT. NEVER LINEAR. », grammaire 1600 au mot près.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f703.jpg, microM-006-cut-f759.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée verticale décalée avec flou (EASE condensé)",
+      "name_en": "staggered vertical rise with motion blur",
+      "t": "0:11.72-0:11.87",
+      "frames": "f703-f712",
+      "fps": 60,
+      "mechanics": "Coupe sur fond crème, « EASE » bleu #2D2DF5 en version condensée géante (capitale ≈ 70 % de la hauteur, 6 % à 94 % de la largeur) : chaque lettre monte du bas avec un flou vertical fort, décalage 1 à 2 im (E f704, A f705, S f706, E f707), posée à f711-f712, ease-out. Le même mot que 2 plans plus tôt, mais condensé et deux fois plus haut : la police variable change la voix.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f703.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rangées de NEVER en contour qui défilent en sens alternés",
+      "name_en": "alternating outlined marquee rows",
+      "t": "0:12.18-0:12.65",
+      "frames": "f731-f758",
+      "fps": 60,
+      "mechanics": "« NEVER » noir très gras étendu (capitale ≈ 25 % de la hauteur) sur citron #DDF53A, seul pendant 14 im ; au demi-temps f745 il devient la rangée centrale d'une pile de 5 rangées, les 4 autres en contour noir sur fond citron, qui défilent en sens alternés (≈ 1 % de la largeur par image). Le mot répété martèle « jamais ».",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f759.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fouetté et plongée dans le point de LINEAR.",
+      "name_en": "whip-out + zoom through the period",
+      "t": "0:12.92-0:13.13",
+      "frames": "f775-f788",
+      "fps": 60,
+      "mechanics": "Au demi-temps f775, « LINEAR. » accélère vers la gauche avec un flou horizontal très long et grossit (×1,5 à f780, ×2,2 à f782, ×3,5 à f784) comme si la caméra fonçait dessus. Le point rouge grossit en même temps et se recentre : 2 % (f776) → 18 % (f782) → 55 % (f784) → 150 % à bord flou (f786) → plein cadre f788, sur le temps. Ease-in expo en 12 im : le point devient le fond du chapitre final.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de choc et astérisque qui se déplie",
+      "name_en": "shockwave + logo unfold burst",
+      "t": "0:13.13-0:13.60",
+      "frames": "f788-f816",
+      "fps": 60,
+      "mechanics": "Sur le temps f788 (attaque forte 13,15 s) : un anneau rose pâle de 12 % s'élargit à 35, 60, 85 % puis sort du cadre en ≈ 10 im, ease-out, en s'estompant ; au centre un astérisque noir se déplie en tournant (tache → 12 rayons épais en ≈ 8 im, ≈ 22 % de la hauteur) ; des confettis minuscules violets, blancs et noirs giclent autour et dérivent. L'astérisque tourne lentement jusqu'à f816.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le logo glisse et déroule le mot",
+      "name_en": "logo slide reveals wordmark",
+      "t": "0:13.60-0:14.00",
+      "frames": "f816-f840",
+      "fps": 60,
+      "mechanics": "Sur le temps f817, l'astérisque glisse du centre vers x ≈ 15 % (ease-out, flou de mouvement sur f818-f820) et les lettres apparaissent derrière lui de droite à gauche (E f818, D f820, U f822, A f824, L f826, C f830) avec un interlettrage large (≈ 0,5 em) qui se resserre jusqu'à f836. « CLAUDE » complet au demi-temps f831. « motion designer » en italique serif monte sous le mot (f816-f820).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carte de fin éditoriale",
+      "name_en": "editorial end card",
+      "t": "0:14.00-0:15.06",
+      "frames": "f840-f900",
+      "fps": 60,
+      "mechanics": "Sur rouge #EF4A3A : astérisque noir (≈ 18 % de la hauteur) à 13-24 % de la largeur, « CLAUDE » (capitale ≈ 15 %) de 26 % à 86 %, « motion designer » en italique serif (≈ 6 %) dessous, filet fin, puis une ligne mono qui s'écrit de gauche à droite vers le temps f845 : « SHOWREEL 2026 · 15 SECONDS · EVERY FRAME WRITTEN IN CODE · ◉ AVAILABLE FOR NEW PROJECTS ». Maintien ≈ 1 s, confettis qui dérivent pour garder la vie.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bobine musical (chapitre, BPM, mesure, timecode)",
+      "name_en": "music-aware reel HUD",
+      "t": "0:00.10-0:15.06",
+      "frames": "f6-f900",
+      "fps": 60,
+      "mechanics": "Équerres fines aux 4 coins ; en haut à droite « 0X · NOM DU CHAPITRE » ; en bas à gauche timecode « 00:00:0X:XX » et « 60 FPS » ; en bas à droite « 128 BPM », 4 pastilles qui s'allument au temps et un numéro de mesure (lecture probable) ; fine barre de progression. Mono ≈ 1 % de la hauteur, couleur adaptée au fond. Le HUD expose la grille musicale sur laquelle tout est construit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un chapitre par mesure, départ sur le premier temps",
+      "name_en": "one chapter per bar",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "15 s = 8 mesures de 1,875 s à 128 BPM. Les changements de chapitre tombent sur les premiers temps de mesure : f113 (1,88 s), f227 (3,78 s), f338 (5,63 s), f451 (7,52 s), f675 (11,25 s), f788 (13,13 s) ; ouverture et titre occupent deux mesures. À l'intérieur, les gestes tombent sur les temps (morphs, ondes) ; les mots, sur les croches. Hiérarchie musicale = hiérarchie visuelle.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-003-cut-f338.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Bobine construite comme une leçon de motion",
+      "name_en": "reel as a motion design lesson",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Sept chapitres nommés : 01 IDENTITY (astérisque + titre, 3,8 s), 02 EASING (graphique, 1,85 s), 03 MORPHING (1,9 s), 04 SYSTEMS (Truchet, ≈ 2 s), 05 DEPTH (3D, ≈ 1,6 s), 06 KINETIC TYPE (1,9 s), 07 FIN (1,9 s). La typo cinétique reprend en mots la leçon du chapitre 02 (EASE IN, EASE OUT, LINEAR) : la vidéo se cite elle-même. L'astérisque d'ouverture revient comme logo final.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel dosé selon la vitesse",
+      "name_en": "speed-dependent directional motion blur",
+      "t": "0:11.48-0:13.10",
+      "frames": "f689-f786",
+      "fps": 60,
+      "mechanics": "Le flou n'apparaît que sur les images rapides : traînée horizontale de 15 à 25 % de la largeur sur IN. (f693-f694), OUT. (f717-f719) et le fouetté de LINEAR. (f778-f784), flou vertical sur la montée de EASE, rien sur les maintiens. Le flou rend lisible la courbe : il grandit en ease-in, décroît en ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f703.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un fond par chapitre dans une palette de cinq couleurs",
+      "name_en": "chapter color blocking",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Noir #0C0C0E (ouverture) → rouge #EF4A3A (titre) → crème #F2EEE6 (easings) → bleu #2D2DF5 (morphing) → noir (Truchet, 3D) → rouge, noir, crème, bleu, citron #DDF53A, noir en croches (typo) → rouge (fin). Le changement de fond signale chaque chapitre et, dans la typo, chaque mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Aucune matière fournie : le modèle s'est pris pour sujet (astérisque façon logo Claude, « CLAUDE motion designer », « AVAILABLE FOR NEW PROJECTS »)."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Proves what an incredible motion designer you are » a été traduit en démonstration des notions du métier (easing, morphing, systèmes, profondeur, typo), nommées dans le HUD : la vidéo est autant un cours qu'une bobine."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go all out » a poussé la densité : 7 chapitres, un geste par temps, un mot par croche, aucun maintien hors carte finale."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le modèle a fixé 128 BPM pour que 8 mesures fassent 15,0 s, puis a aligné chapitres, gestes et mots sur cette grille ; le HUD affiche le tempo et la mesure (lecture probable)."
+    },
+    {
+      "kind": "build",
+      "insight": "« EVERY FRAME WRITTEN IN CODE » sur la carte finale : composition pilotée par une horloge unique ; les coupes tombent sur les multiples exacts de 1,875 s (f113, f338, f450, f675, f788)."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien n'interdisait les démonstrations génériques : Truchet et 3D filaire remplissent ≈ 3,5 s sans servir le propos. Préciser « chaque plan démontre un principe d'animation nommé »."
+    },
+    {
+      "kind": "qa",
+      "insight": "Pas de contrainte de lisibilité : légendes du graphique et HUD à ≈ 1 % de la hauteur, illisibles à vitesse réelle ; « OUT. » entre coupé par le bord gauche."
+    }
+  ],
+  "steal": [
+    "Faire bouger chaque mot selon la courbe qu'il nomme : IN. accélère et s'arrête net, OUT. freine, LINEAR. dérive à vitesse constante.",
+    "Compter les lettres du titre et en faire les objets de la scène suivante : 6 lettres → 6 points → 6 billes d'un graphique.",
+    "Durée = mesures : à 128 BPM, 8 mesures de 4 temps font 15,0 s ; un chapitre par mesure, un geste par temps, un mot par croche.",
+    "Réduire le logo en point, tenir 2 im, puis ouvrir deux iris successifs (crème puis couleur du titre) décalés de 2 im.",
+    "Montrer six courbes sur la même distance et la même durée, avec traînées et graduations : la leçon d'easing devient un plan du film."
+  ],
+  "flaws": [
+    "Pavage de Truchet et 3D filaire en tirets : démonstrations génératives génériques, sans lien avec le propos.",
+    "Ouverture lente : 0,5 s de point rouge minuscule dans un anneau avant le premier geste.",
+    "HUD et légendes en mono ≈ 1 % de la hauteur : illisibles à vitesse réelle, comme les étiquettes du graphique.",
+    "Rangées de mots en contour qui défilent (NEVER) : tic de typo cinétique très répandu."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, en priorité : le graphique des six courbes, les mots qui miment leur easing et les transitions par objets se mesurent image par image ; c'est une leçon d'animation complète calée sur 128 BPM. Les chapitres Truchet et 3D ne sont vus qu'à 2 im/s."
+  }
+}

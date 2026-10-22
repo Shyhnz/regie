@@ -1,0 +1,307 @@
+{
+  "slug": "gautam-mer1-2ae354",
+  "title": "Matra caption app promo",
+  "handle": "@gautam_mer1",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Grammaire Apple propre et lisible, vraies images produit, compteur et plongée dans l'écran réussis ; mais tout passe par fondu et flou, 38 % du temps est statique et une transition vire au gris boueux.",
+  "summary": "Promo verticale de 30 s pour Matra, appli de sous-titres en gujarati. Huit actes d'environ 3,5 s : logo à halo, téléphone qui monte, plongée dans l'écran vers une vraie vidéo sous-titrée en karaoké, timeline mot à mot, grille de styles, bento, export avec compteur, carte de fin. Crédible grâce aux vraies images, mais lent et monotone : chaque titre entre en flou, chaque scène sort en fondu.",
+  "prompt_vs_result": [
+    "Une seule ligne : une vidéo de 30 s « style Apple » de l'appli de l'auteur. Aucune scène, aucun texte, aucune musique, aucun rythme imposé.",
+    "Claude a tout décidé : 8 actes, accroches courtes (« Listens. Writes. », « 32 looks. One tap. », « Export. Share. Done. »), alternance noir / clair / noir, halo violet-orangé, bento, compteur d'export, carte App Store. Écrans et vidéo de démo viennent de l'auteur.",
+    "« Apple-style » a été traduit en clichés sûrs (flou d'entrée, « Introducing », dégradé, bento). Il aurait fallu préciser le tempo, une durée maximale de maintien (0,5 s), un vocabulaire de transitions autre que le fondu et des marges de sécurité."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond des actes sombres (intro, timeline, export, fin)"},
+      {"hex": "#F2F2F7", "role": "fond des actes clairs (grille de styles, bento), gris système Apple"},
+      {"hex": "#FFFFFF", "role": "titres sur noir, cartes du bento"},
+      {"hex": "#1D1D1F", "role": "titres sur fond clair"},
+      {"hex": "#8E8E93", "role": "deuxième ligne secondaire (« One tap. »), sous-titres gris"},
+      {"hex": "#7C3AED", "role": "violet de marque : icône, puces actives, boutons Export / Share"},
+      {"hex": "#A855F7", "role": "début du dégradé des deuxièmes lignes"},
+      {"hex": "#EC4899", "role": "milieu du dégradé (rose)"},
+      {"hex": "#FB923C", "role": "fin du dégradé (orange), halo chaud derrière le logo"}
+    ],
+    "type": "Grotesque néo type SF Pro / Inter (probable), gras, casse de phrase, interlettrage serré. Titres ≈ 4,5 % de la hauteur sur 2 lignes, ligne 2 en dégradé ; « Matra » ≈ 8 % ; légendes ≈ 1,5 %.",
+    "texture": "Halo radial très flou violet #6D28D9 et orange #F97316 derrière l'icône et derrière le téléphone final ; flou gaussien d'entrée sur tous les mots ; ombres portées douces sous les cartes claires ; aucun grain, aucun flou de mouvement directionnel.",
+    "style": "Keynote Apple, produit sombre et clair",
+    "coherence": "Le système tient par une seule police, un seul dégradé violet-rose-orange réservé aux mots forts, un seul geste d'entrée (flou + fondu) et l'alternance noir / gris clair par acte. Il se casse sur le fondu gris intermédiaire (f490-f499) et sur « Export. Share. Done. » collé aux bords."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "Musique à 80 BPM (pulsation nette 7,6 sur 0-8 s ; la fin 18-30 s ressort à 120 BPM, probablement la subdivision en triolets du même morceau). Aucune coupe franche : 7 transitions, toutes en fondu, fondu au noir ou fondu au blanc de 6 à 15 im (0,2 à 0,5 s). 9 maintiens statiques = 11,4 s, soit 38 % du film : 0-1,87 s (écran noir puis « Introducing » immobile), 4,67-6,9 s (2,2 s sur le téléphone), 18,17-19,93 s (1,8 s sur la grille), 28,5-30 s. Densité faible : environ 1 événement par seconde dans les passages actifs, 0 pendant les maintiens. Les débuts de titres tombent souvent sur un temps ou un demi-temps (voir music), les sorties en fondu non. Loin de la grammaire 1600 : quelque chose bouge toutes les 2 à 3 s, pas toutes les 0,5 à 1 s.",
+    "timeline": [
+      {"t": "0:00-0:01.9", "what": "Noir, puis « Introducing » gris, petit, centré ; entrée en flou f9-f15, sortie en fondu f48-f54", "technique": "pré-titre « Introducing » (keynote)"},
+      {"t": "0:01.9-0:03.4", "what": "Icône violette « મ » qui s'allume dans un halo violet-orangé, puis « Matra » en blanc gras entre en flou f69-f75", "technique": "logo à halo radial"},
+      {"t": "0:03.4-0:07.0", "what": "Le logo s'éteint en flou pendant qu'un iPhone monte du bas (f103-f130) ; « Captions that / write themselves. » entre mot à mot, ligne 2 en dégradé ; maintien de 2,2 s", "technique": "montée du téléphone en ease-out + titre mot à mot en flou"},
+      {"t": "0:07.0-0:08.6", "what": "Le titre s'efface ; poussée caméra dans l'écran du téléphone (×3), puis fondu enchaîné vers la vidéo plein cadre", "technique": "plongée dans l'écran (dive into screen)"},
+      {"t": "0:08.6-0:12.1", "what": "Vraie vidéo d'une créatrice qui parle gujarati, sous-titres karaoké à pastille violette ; « Listens. / Writes. / Times every word. » s'empilent en haut à gauche", "technique": "démo produit plein cadre + mots-clés empilés"},
+      {"t": "0:12.1-0:16.0", "what": "Fondu au noir, interface de timeline : pellicule, puces de mots qui défilent sous une tête de lecture fixe, onde violette ; « Every word, right on time. » et « Tap any word to fix it. »", "technique": "timeline défilante sous tête de lecture"},
+      {"t": "0:16.0-0:16.8", "what": "Fondu au noir puis montée vers le gris clair : un écran gris uni passe à mi-parcours", "technique": "fondu par le gris (raté)"},
+      {"t": "0:16.8-0:20.1", "what": "« 32 looks. One tap. » sur fond clair ; 6 cartes de styles (Classic, Highlight, Pop, Neon, Marker, Boxed) arrivent une à une puis la grille remonte ; maintien 1,8 s", "technique": "grille de variantes en cascade"},
+      {"t": "0:20.1-0:24.0", "what": "Fondu au blanc, « Built for / Gujarati creators. » ; bento de 5 cartes (texte mixte, édition, timing mot à mot, HD, .SRT .VTT) avec micro-animations", "technique": "bento de fonctionnalités"},
+      {"t": "0:24.0-0:27.1", "what": "Retour au noir ; écran d'export dans le téléphone, compteur 3 % → 100 %, coche ; « Export. Share. Done. » s'accumule mot à mot, « Done. » en dégradé", "technique": "compteur de progression en S + triptyque de mots"},
+      {"t": "0:27.1-0:30.0", "what": "Fondu vers la carte de fin : icône à halo, « Matra », « Gujarati captions in one tap. », mascotte 3D violette, pilule « Download on the App Store » ; maintien final", "technique": "carte de fin + appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille à 80 BPM (0,75 s = 22,5 im à 30 fps ; temps à f114.8, f362.3, f497.3, f609.8…). Un événement clé par geste, 30 gestes : 20 à ±2 im d'une barre bleue ou bleu clair, soit 67 % contre environ 44 % au hasard (fenêtre de 5 im sur 11,25). Les débuts de titres de scène sont presque tous calés : « Captions » f115 (temps f114.8), « Matra » f69 (temps f69.8), logo f57 (demi-temps f58.5), fondu au noir f363 (temps f362, attaque verte f362), « Every » f373 (demi-temps f373.5), « 32 » f499 (temps f497), « Built » f611 (temps f610), « Export. » f733 (demi-temps f733.5), sortie finale f812 (temps f812). Sur 0-8 s, 6 gestes sur 6 tombent à ±2 im. En revanche les sorties en fondu (f254, f480, f603) et plusieurs mots secondaires (« Writes. » f287, « time. » f391, « Done. » f784) sont à 3-6 im de toute barre. L'indice automatique ne voit rien (p = 0,38) car le défilement de la timeline et la vidéo de démo bougent en continu.",
+    "synced": ["apparitions", "texte", "coupes"],
+    "style_match": "Morceau calme à 80 BPM, pulsation nette (genre non identifiable à l'image) : colle au ton feutré des flous et fondus, mais l'énergie reste plate du début à la fin.",
+    "how_built": "Le prompt ne dit rien de la musique. Les débuts de scène tombent sur la grille de 0,75 s, ce qui suggère des durées de scène pensées en multiples du temps (22,5 im) ou un calage manuel au montage, probable. Les sorties et les décalages internes ne sont pas calculés sur la grille. La voix de la vidéo de démo (transcription gujarati réelle : « Hi friends, aaje hu… dhokla… 10 minute ma ») est audible et pilote la surbrillance karaoké, ce qui est une vraie synchro son-image, mais celle du produit, pas du montage."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Pré-titre « Introducing »",
+      "name_en": "Keynote pre-title",
+      "t": "0:00.30-0:01.80",
+      "frames": "f9-f54",
+      "fps": 30,
+      "mechanics": "Mot gris #8E8E93 ≈ 2,5 % de la hauteur, centré à 48 % de la hauteur, entrée en flou + fondu en 6 im (f9-f15), immobile 33 im, sortie en fondu + flou en 6 im (f48-f54). 0,3 s de noir avant. Calque de keynote Apple.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Logo à halo radial bicolore",
+      "name_en": "Glow halo logo reveal",
+      "t": "0:01.87-0:03.40",
+      "frames": "f56-f102",
+      "fps": 30,
+      "mechanics": "Icône carrée arrondie violette ≈ 27 % de la largeur, glyphe gujarati blanc. Derrière, un disque très flou (rayon ≈ 45 % de la largeur) mêlant violet #6D28D9 et orange #F97316 décalé en bas à gauche. L'icône et le halo montent ensemble en opacité et en netteté en ≈ 7 im (f56-f63). « Matra » blanc gras ≈ 8 % de la hauteur entre en flou f69-f75 (6 im) sous l'icône. Sortie en fondu + flou de 9 im (f102-f110). Repris à l'identique en carte de fin.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrée de mots en flou décalée",
+      "name_en": "Blur-in word stagger",
+      "t": "0:03.83-0:04.40",
+      "frames": "f115-f132",
+      "fps": 30,
+      "mechanics": "Chaque mot passe de flou fort + opacité ≈ 20 % à net + opaque en 4 im (0,13 s), sans déplacement mesurable. Décalages : « Captions » f115 → « that » f119 (4 im) → « write » f127 (8 im, changement de ligne) → « themselves. » f131 (4 im). Même geste pour tous les titres de la vidéo (Every word, 32 looks, Built for, Export Share Done, Tap any word…). Signature de la vidéo, mais répétée sans variation.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f115.jpg",
+      "illus": {"from": 113, "to": 132, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en deux lignes, deuxième ligne en dégradé",
+      "name_en": "Two-line headline with gradient second line",
+      "t": "0:03.83-0:07.00",
+      "frames": "f115-f210",
+      "fps": 30,
+      "mechanics": "Ligne 1 blanche (ou #1D1D1F sur clair), ligne 2 remplie d'un dégradé horizontal violet #A855F7 → rose #EC4899 → orange #FB923C. Centré, ≈ 4,5 % de la hauteur, haut du cadre (8-12 % de la hauteur). Utilisé 4 fois (write themselves, right on time, Gujarati creators, Done.). Variante grise #8E8E93 sur fond clair (« One tap. »).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone qui monte du bas en ease-out",
+      "name_en": "Phone rise with ease-out",
+      "t": "0:03.43-0:04.33",
+      "frames": "f103-f130",
+      "fps": 30,
+      "mechanics": "Mockup iPhone (cadre gris titane, écran de l'appli) entrant par le bas : il parcourt ≈ 63 % de la hauteur du cadre en ≈ 27 im (0,9 s). Pas successifs du bord haut : 21, 21, 19, 17, 15, 14, 11, 10, 8, 8, 6, 6, 5, 5, 4, 3, 1 px (vignette) : ease-out cubique à expo, aucun dépassement. Démarre pendant que le logo s'éteint (chevauchement de 7 im), le titre entre à f115 quand le téléphone est aux deux tiers.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f115.jpg",
+      "illus": {"from": 102, "to": 130, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans l'écran du téléphone",
+      "name_en": "Push into device screen",
+      "t": "0:07.10-0:08.65",
+      "frames": "f213-f260",
+      "fps": 30,
+      "mechanics": "Le titre s'efface (f207-f215), puis le téléphone grossit d'environ ×3 : largeur ≈ 57 % du cadre à f210, 70 % à f225, au-delà du cadre à f233. Pas croissants (5, 4, 6, 7, 9, 12, 14 px/im) puis longue traîne lente f237-f252 : ease-in-out à queue longue. Le téléphone passe en lecture (bouton pause f229). Fondu enchaîné de 6 im (f254-f260) de l'écran zoomé vers la même vidéo plein cadre ; l'en-tête « Dhokla recipe » reste visible en surimpression pendant le fondu. Raccord propre : on entre dans le produit.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f237.jpg",
+      "illus": {"from": 222, "to": 262, "n": 7}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sous-titres karaoké à pastille",
+      "name_en": "Karaoke caption highlight",
+      "t": "0:08.60-0:12.10",
+      "frames": "f258-f362",
+      "fps": 30,
+      "mechanics": "Sous-titres blancs gras ≈ 2 % de la hauteur, centrés à 88 % de la hauteur, sur 1 ou 2 lignes, mélange gujarati et anglais. Le mot prononcé est posé sur une pastille violette #7C3AED à coins arrondis ; la pastille saute de mot en mot toutes les 6 à 12 im, calée sur la voix de la démo. Changement de phrase en coupe sèche (f303). C'est la preuve de la fonctionnalité, montrée en direct.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mots-clés empilés en haut à gauche sur la vidéo",
+      "name_en": "Stacked keyword list over footage",
+      "t": "0:08.80-0:12.10",
+      "frames": "f264-f362",
+      "fps": 30,
+      "mechanics": "« Listens. » f264, « Writes. » f287, « Times every word. » f307 : trois lignes empilées, ferrées à gauche à ≈ 4 % de marge, ≈ 4,5 % de la hauteur, espacement ≈ 0,7-0,8 s (presque un temps). Les deux premières en blanc, la troisième en dégradé violet-rose. Problème : le dégradé passe sur le mur clair de la cuisine et devient presque illisible ; aucun voile sombre derrière.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir entre actes",
+      "name_en": "Dip to black",
+      "t": "0:12.10-0:12.45",
+      "frames": "f363-f373",
+      "fps": 30,
+      "mechanics": "La vidéo s'assombrit linéairement en ≈ 8 im (f363-f370) pendant que la scène suivante remonte dès f368 : fondu croisé par le noir de 10 im (0,33 s). Le départ tombe sur un temps (f362, attaque audio). Utilisé 4 fois (f363, f480, f713, f811) : unique vocabulaire de transition.",
+      "verdict": "cliche",
+      "evidence": "microM-004-move-f364.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Timeline défilante sous tête de lecture fixe",
+      "name_en": "Scrolling caption timeline under fixed playhead",
+      "t": "0:12.30-0:16.00",
+      "frames": "f369-f480",
+      "fps": 30,
+      "mechanics": "Bande centrale à ≈ 45-65 % de la hauteur : pellicule de 6 vignettes vidéo, rangée de puces de mots, onde audio violette, tête de lecture blanche verticale fixe au centre avec point. Le contenu défile vers la gauche à vitesse constante (≈ 36 % de la largeur par seconde, linéaire). Quand une puce passe sous la tête, sa surbrillance violette s'allume en fondu croisé de 3 im (f400-f403). Mouvement continu de 3,7 s : la seule partie sans temps mort.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f402.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende révélée mot à mot",
+      "name_en": "Word-by-word caption reveal",
+      "t": "0:13.50-0:14.35",
+      "frames": "f405-f430",
+      "fps": 30,
+      "mechanics": "« Tap any word to fix it. » gris #8E8E93 ≈ 1,5 % de la hauteur, centré à 80 % de la hauteur. Chaque mot entre en flou en 3-4 im, décalage de 4 à 5 im entre mots (Tap f405, any f409, word f414, to f420, fix f425, it. f430). Effet machine à écrire doux.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f427.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Passage du sombre au clair par le gris",
+      "name_en": "Dark-to-light fade through grey",
+      "t": "0:16.00-0:16.80",
+      "frames": "f480-f505",
+      "fps": 30,
+      "mechanics": "Fondu au noir f480-f489 (9 im), puis montée de luminance uniforme du noir vers #F2F2F7 en 15 im (f489-f504) sans aucun contenu : on voit un écran gris moyen plein cadre (f494-f498). « 32 » arrive à f499 seulement. L'idée d'un changement de thème est bonne, l'exécution donne 0,5 s de gris boueux. Mieux : un balayage ou une révélation circulaire de la couleur claire.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f500.jpg",
+      "illus": {"from": 480, "to": 512, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Actes alternés sombre / clair",
+      "name_en": "Dark and light acts",
+      "t": "0:00-0:30",
+      "frames": "f0-f900",
+      "fps": 30,
+      "mechanics": "Noir pour l'intro, la démo, la timeline (f0-f489), gris clair #F2F2F7 pour les arguments (f500-f712), noir pour l'export et la fin (f728-f900). La luminance marque les chapitres : sombre = le produit en action, clair = la liste d'arguments. Typo inversée en conséquence (#1D1D1F sur clair).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille de variantes en cascade",
+      "name_en": "Staggered variant grid",
+      "t": "0:16.90-0:20.10",
+      "frames": "f507-f603",
+      "fps": 30,
+      "mechanics": "Six cartes vidéo verticales (≈ 28 % de la largeur chacune, coins arrondis, ombre douce, étiquette en haut à gauche : Classic, Highlight, Pop, Neon, Marker, Boxed) chacune avec un style de sous-titre différent. Entrée en fondu + flou + léger glissement depuis la gauche, décalage de 5 im (f507, f512, f517…). La grille se réorganise et remonte (de ≈ 55 % à ≈ 35 % de la hauteur) quand la deuxième rangée arrive. Puis 1,8 s immobile. Sortie en fondu au blanc de 9 im (f603-f612).",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f500.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bento de fonctionnalités",
+      "name_en": "Feature bento grid",
+      "t": "0:20.40-0:24.00",
+      "frames": "f611-f720",
+      "fps": 30,
+      "mechanics": "Sous le titre « Built for / Gujarati creators. » (ligne 2 en dégradé), 5 cartes blanches à coins arrondis sur #F2F2F7 : une pleine largeur (« Gujarati + English, mixed. » avec texte en dégradé), puis 2 × 2 (Edit any word. avec vignette sombre ; Word-by-word timing. avec puces qui s'allument tour à tour ; Export in HD avec « HD » en dégradé géant ; Subtitle files, too. avec pilules noires .SRT .VTT). Entrée en cascade d'environ 7-8 im par carte (fondu + flou + légère montée en échelle). Micro-animation interne : la puce violette saute de mot (friends → બનાવવાની) toutes les ≈ 0,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de progression en S",
+      "name_en": "Eased progress counter",
+      "t": "0:25.07-0:26.00",
+      "frames": "f752-f780",
+      "fps": 30,
+      "mechanics": "Dans l'écran du téléphone, « Exporting your video » : pourcentage 3 → 5 → 10 → 21 → 42 → 70 → 87 → 95 → 99 → 100 % relevé toutes les 3 im. Courbe en S (ease-in-out) : lent au départ, ≈ 9 %/im au milieu, très lent à la fin ; 28 im (0,93 s). Bascule à f783 vers « Export complete » avec coche et halo chaud derrière le téléphone.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 750, "to": 786, "n": 7}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Triptyque de mots qui s'accumulent",
+      "name_en": "Accumulating three-word line",
+      "t": "0:24.43-0:26.20",
+      "frames": "f733-f786",
+      "fps": 30,
+      "mechanics": "« Export. » f733 (demi-temps), « Share. » f758 (+25 im), « Done. » f784 (+26 im, en dégradé violet-rose) s'ajoutent sur une seule ligne ferrée à gauche, chacun en flou d'entrée de 4 im. Espacement régulier ≈ 0,85 s, proche du temps. Chaque mot suit l'état de l'écran (réglages → progression → terminé). Défaut : la ligne occupe ≈ 96 % de la largeur, marges de 2 %.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin avec mascotte et App Store",
+      "name_en": "End card with mascot and store badge",
+      "t": "0:27.10-0:30.00",
+      "frames": "f811-f900",
+      "fps": 30,
+      "mechanics": "Même composition que le logo d'ouverture (rime visuelle) : icône à halo, « Matra » en flou f820, slogan gris « Gujarati captions in one tap. » ≈ f838, mascotte 3D violette à antenne + pilule contour « Download on the App Store » ≈ f852. Maintien final de 1,5 s.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Débuts de scène calés sur le temps",
+      "name_en": "Scene in-points on the beat",
+      "t": "0:01.87-0:27.10",
+      "frames": "f56-f812",
+      "fps": 30,
+      "mechanics": "Sur une grille de 80 BPM (22,5 im), le premier mot de chaque scène tombe à ±2 im d'un temps ou d'un demi-temps : f57, f69, f115, f363, f373, f499, f611, f733, f812. Les sorties en fondu et les mots secondaires sont libres (3-6 im d'écart). Synchro de structure, pas de geste : aucun impact, aucune pulsation, aucun mot calé sur une attaque forte.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f115.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Vraie vidéo de démo comme héroïne",
+      "name_en": "Real product footage as hero",
+      "t": "0:08.60-0:20.10",
+      "frames": "f258-f603",
+      "fps": 30,
+      "mechanics": "La même vidéo réelle (créatrice en cuisine, 10 s) sert dans l'écran du téléphone, en plein cadre, en pellicule dans la timeline et dans les 6 cartes de styles. Un seul asset décliné 4 fois donne la continuité et la preuve. Sa voix est audible et pilote le karaoké.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Apple-style » suffit à déclencher un vocabulaire complet : fond noir, grotesque gras, entrée en flou, « Introducing », halo coloré, dégradé sur la ligne 2, bento, alternance sombre / clair, App Store. Le résultat est sûr mais générique : le mot-clé convoque des clichés, pas une idée."},
+    {"kind": "inputs", "insight": "« my app » sous-entend des écrans et une vidéo de démo réels fournis à Claude : c'est ce qui rend la pièce crédible (vraie interface, vraie voix, vrais sous-titres gujarati). Fournir ses propres assets vaut plus que n'importe quelle description de style."},
+    {"kind": "structure", "insight": "Avec seulement « 30s », Claude découpe en 8 scènes de ≈ 3,5 s, chacune avec un titre et un écran. Sans consigne de rythme, il remplit chaque scène par un maintien de 1 à 2 s : 38 % de temps statique."},
+    {"kind": "banned", "insight": "Rien n'interdit le fondu : il devient l'unique transition (7 sur 7). Il aurait fallu lister les transitions voulues (plongée, balayage, match cut) ou bannir le fondu au noir."},
+    {"kind": "qa", "insight": "Aucune consigne de marges ni de lisibilité : la ligne « Export. Share. Done. » touche presque les bords et le dégradé sur la vidéo claire devient illisible. Une règle de zone de sécurité (8 % de marge) et de contraste aurait suffi."},
+    {"kind": "build", "insight": "Remotion + React : les débuts de scène tombent sur la grille de 0,75 s, signe probable de durées pensées en temps musicaux, mais rien ne le confirme dans le prompt."}
+  ],
+  "steal": [
+    "Plonger dans l'écran du téléphone (zoom ×3 en ease-in-out) puis fondre vers la même vidéo plein cadre : on entre dans le produit sans coupe.",
+    "Réutiliser un seul asset réel (la vidéo de démo) dans 4 contextes : téléphone, plein cadre, timeline, grille de styles. Continuité et preuve gratuites.",
+    "Compteur de progression en courbe en S (3 → 100 % en 28 im) puis bascule sur un écran « terminé » : petit récit de réussite en 1 s.",
+    "Triptyque de mots qui s'accumulent sur une ligne, chacun calé sur un changement d'état de l'écran, le dernier en couleur d'accent.",
+    "Alterner actes sombres (produit en action) et actes clairs (arguments) pour chapitrer un film produit sans titre de chapitre."
+  ],
+  "flaws": [
+    "38 % de temps statique : maintiens de 1,9 s en ouverture, 2,2 s sur le téléphone, 1,8 s sur la grille.",
+    "Une seule transition (fondu ou fondu au noir) répétée 7 fois, et une seule entrée de texte (flou) pour tous les mots.",
+    "Passage sombre → clair par un écran gris uni de 0,5 s, boueux.",
+    "Dégradé violet-rose posé sur la vidéo claire sans voile : « Times every word. » presque illisible.",
+    "« Introducing » en ouverture et « Export. Share. Done. » à 2 % des bords : cliché keynote et marges trop serrées."
+  ],
+  "deep_study": {"worth": false, "why": "Source à 30 fps et vocabulaire réduit à des fondus et des entrées en flou ; les deux gestes intéressants (plongée dans l'écran, compteur en S) sont déjà mesurés sur les planches. Rien qui justifie une étude image par image."}
+}

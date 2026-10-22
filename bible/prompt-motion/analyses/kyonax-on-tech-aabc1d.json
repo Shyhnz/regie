@@ -1,0 +1,439 @@
+{
+  "slug": "kyonax-on-tech-aabc1d",
+  "title": "org2html product showreel",
+  "handle": "@kyonax_on_tech",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système noir-or cohérent, transitions motivées (logo ASCII → code → arbre → page) et calage serré sur 128 BPM ; mais texte mono minuscule illisible et trois maintiens d'environ 1 s.",
+  "summary": "Démo d'org2html (Org → HTML) en 15 s. Le logo ASCII s'allume façon écran cathodique, se désagrège en particules qui forment le code source, puis le pipeline défile en étapes numérotées (LEX, PARSE, RENDER, STYLE), une étape tous les deux temps. Suivent « One flag. New look. », la grille des fichiers produits, quatre cas d'usage à un mot par temps, le logo et la commande npm. Synchro exemplaire, lisibilité faible.",
+  "prompt_vs_result": [
+    "Prompt « showreel » standard (15 s, « go all out ») complété par une consigne produit : montrer les cas d'usage, le flux et le fonctionnement d'org2html, réutiliser le logo ASCII du dépôt kyo-web-online et respecter la palette de la marque.",
+    "Tout le découpage : allumage et extinction cathodiques, logo ASCII résolu puis désagrégé en code, HUD numéroté LEX→STYLE, balayage lumineux du changement de thème, grille « Everything out », un mot par temps, carte npm, et probablement la grille de 128 BPM.",
+    "Consigne produit et assets de marque ont donné un système cohérent et un vrai récit d'usage. Rien ne bornait la densité : il fallait imposer un mot clé par écran, un corps minimal (≈ 4 % de la hauteur), aucun maintien > 0,5 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0A09", "role": "fond noir, léger vignettage"},
+      {"hex": "#F2C12E", "role": "accent or unique : « Org. », numéros d'étape, chutes de slogan, curseur, HUD, logo final"},
+      {"hex": "#F3F1EA", "role": "titres blancs (mots géants)"},
+      {"hex": "#8A877E", "role": "texte secondaire, code atténué, libellés HUD"},
+      {"hex": "#16160F", "role": "panneaux, cartes et fenêtres (filets ≈ #2C2B27)"},
+      {"hex": "#E6E4DE", "role": "page claire du thème « style-book » (démonstration du New look)"},
+      {"hex": "#C9C6BD", "role": "logo pixel blanc-gris de l'ouverture"},
+      {"hex": "#B8901F", "role": "ombres or du logo pixel final"}
+    ],
+    "type": "Titres en grotesque très grasse (Inter/Satoshi Black probable), casse phrase à point final, ≈ 7 % de la hauteur, interlettrage serré ; numéros or ≈ 13 % ; libellés capitales ≈ 5 % ; code et HUD en mono ≈ 1–1,5 %.",
+    "texture": "Esthétique terminal/CRT : lueur (bloom) or sur les surbrillances et la barre de balayage, deux flashs surexposés avec vignettage, une image de glitch avec décalage RVB (aberration chromatique), flou radial sur le zoom traversant, flou gaussien sur les fondus entre mots, particules-glyphes or. Pas de grain visible, aplats nets.",
+    "style": "Terminal néo-rétro noir et or",
+    "coherence": "Trois règles tiennent tout : noir/blanc/or uniquement ; mono pour la machine (code, HUD, chiffres) et grotesque grasse pour le message ; un HUD fixe (équerres, timecode, libellé de scène, barre de progression) sur tous les plans. Le logo ASCII ouvre (blanc) et ferme (or), les effets cathodiques font serre-livres. Seule rupture, voulue : la page claire du « style-book », qui démontre le changement de thème."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 128,1 BPM (pulsation nette, 7,38) ; la timeline semble quantifiée sur 28 im = 1 temps (128,6 BPM à 60 fps). Coupes : noir f222-f224 puis flash f225, 1 im avant le temps 3,774 s qui ouvre le drop ; f530 est un faux positif (balayage lumineux) ; f676 et f788 tombent sur le temps à 0–0,5 im. Les étapes du pipeline changent tous les 56 im (2 temps = 0,93 s), les cas d'usage tous les 28 im (1 temps = 0,47 s). Densité : un événement toutes les 0,47 à 0,93 s entre 3,75 et 13,6 s, conforme à la grammaire 1600. Temps morts : 2,42–3,47 s (frappe de la commande), 9,75–10,93 s (grille de fichiers), 13,62–14,75 s (carte de fin), soit ≈ 3,4 s quasi statiques (23 %) ; le mesureur annonce 37 % car il compte aussi des maintiens de 0,45–0,7 s en fin de construction d'étape, qui sont des respirations normales.",
+    "timeline": [
+      {"t": "0:00-0:00.25", "what": "noir (f0-f14)", "technique": "ouverture au noir"},
+      {"t": "0:00.25-0:00.50", "what": "un trait or s'ouvre verticalement en bande de glyphes ASCII", "technique": "allumage cathodique (CRT power-on)"},
+      {"t": "0:00.50-0:01.00", "what": "licorne ASCII or brouillée qui se résout en logo pixel blanc ; glitch d'une image à f57, sur le temps", "technique": "décodage ASCII + glitch"},
+      {"t": "0:01.00-0:01.47", "what": "logo pixel blanc-gris seul, centré (≈ 55 % de la hauteur)", "technique": "maintien 0,47 s"},
+      {"t": "0:01.47-0:02.10", "what": "le logo se désagrège en glyphes or qui volent en diagonale et deviennent le code source Org", "technique": "désagrégation en particules → texte"},
+      {"t": "0:02.15-0:02.30", "what": "« Write / in Org. » monte en deux lignes à droite du code", "technique": "révélation de lignes sous masque, décalage 4–5 im"},
+      {"t": "0:02.30-0:03.48", "what": "la commande « org2html build post.org -o site/ » se tape puis s'encadre d'or", "technique": "frappe terminal (quasi-maintien 1,05 s)"},
+      {"t": "0:03.70-0:03.95", "what": "3 im de noir puis flash surexposé sur le drop", "technique": "noir + flash (dip-to-black flash)"},
+      {"t": "0:03.75-0:04.70", "what": "« 01 LEX » : une barre or balaie les lignes de code, étiquettes de type dans la marge", "technique": "barre de balayage + numéro qui se remplit"},
+      {"t": "0:04.70-0:05.63", "what": "« 02 PARSE » : le code se recompose en arbre syntaxique", "technique": "morphing code → arbre"},
+      {"t": "0:05.63-0:06.57", "what": "« 03 RENDER » : l'arbre se dissout et le HTML se reconstruit", "technique": "brouillage de caractères (text scramble)"},
+      {"t": "0:06.57-0:07.50", "what": "« 04 STYLE » : page rendue sombre + 6 pastilles de couleur", "technique": "code → interface"},
+      {"t": "0:07.50-0:08.33", "what": "page recentrée avec annotations à filets (canonical, OG, JSON-LD…)", "technique": "annotations à filets (callouts)"},
+      {"t": "0:08.33-0:08.93", "what": "« One flag. » + option --style-book ; balayage diagonal, la page devient claire, « New look. » en or sur le temps", "technique": "balayage lumineux + slogan en deux temps"},
+      {"t": "0:09.38-0:09.75", "what": "« One .org in. » ; la page file à droite, floue, et rétrécit dans une grille", "technique": "réduction dans une grille"},
+      {"t": "0:09.75-0:10.95", "what": "grille 3×3 de fichiers produits, « Everything out. » en or, ligne de chiffres en bas", "technique": "maintien 1,2 s"},
+      {"t": "0:10.95-0:11.27", "what": "zoom avant accéléré dans la carte centrale, coupe sur le temps", "technique": "zoom traversant (push-in)"},
+      {"t": "0:11.27-0:12.97", "what": "« Blogs. » « Docs. » « Vue apps. » « Pipelines. » avec leur capture d'interface, un par temps", "technique": "un mot par temps, fondus flous"},
+      {"t": "0:12.97-0:13.13", "what": "« Pipelines. » s'efface en flou, 4 im de noir", "technique": "fondu flou + noir"},
+      {"t": "0:13.13-0:13.55", "what": "flash, anneau or qui s'étend, logo ASCII or, « org2html » lettre par lettre", "technique": "onde de choc + mot-symbole en cascade"},
+      {"t": "0:13.55-0:14.78", "what": "carte de fin : commande npm qui se tape, version, licence, « BUILT BY KYONAX »", "technique": "appel à l'action = commande d'installation"},
+      {"t": "0:14.78-0:15.06", "what": "l'image s'écrase en trait lumineux qui s'éteint", "technique": "extinction cathodique (CRT power-off)"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "16 gestes clés sur 19 à ±2 im d'un temps ou d'un demi-temps (hasard ≈ 36 %), dont 13 sur un temps plein (hasard ≈ 18 %). Étapes du pipeline : f282, f338, f394, f450 pour une grille à f282,7 / 338,9 / 395,0 / 451,3. Cas d'usage : f676, f704, f732, f760 puis flash du logo f788, pour une grille à 676,1 / 704,2 / 732,3 / 760,4 / 788,5. Ouverture : allumage f15 (demi-temps f15,7), résolution du logo f57 (temps f57,8, attaque 0,964 s), titre f129 (demi-temps f128,1). Flash f225 sur l'attaque 3,773 s qui ouvre le drop (+12 dB). « New look. » posé f535 (temps f535,6), « One .org in. » f563 (temps f563,7), extinction f887 (demi-temps f886,9). L'image précède le temps de 0 à 1,4 im (≈ 0,7 im en moyenne). Hors grille : désagrégation f88 (+2,1 im), validation de commande f209 (−3,4 im), « One flag. » f500 (entre deux temps). Les attaques audio fortes coïncident avec les gestes (f58, f226, f395, f451, f564, f789). Indice automatique : départs/temps p = 1,3e-3, corrélation basses z = 4,26.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "Électro/house enjouée à 128 BPM, intro calme puis drop : courbes sèches, flashs et coupes nettes collent à l'énergie ; l'intro douce accompagne la naissance du logo, le drop lance le pipeline.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Mais la timeline est quantifiée : 56 im par étape et 28 im par mot à 60 fps, soit 128,6 BPM, à moins de 1,5 im d'une piste mesurée à 128,1 BPM. La même piste (même attaque maximale à 13,142 s, même profil de volume après 3,75 s) sert dans au moins deux autres vidéos de ce prompt (manuelogomigo-f33ca9, johnsavage-ai-b091c0) : bande-son probablement fournie avec le défi ou l'outil, donc connaissable d'avance. Claude a donc probablement écrit ses repères en temps de cette piste (constante de tempo) ; ici l'intro est en plus atténuée de 10 à 20 dB jusqu'au drop de 3,77 s, ce que les autres versions n'ont pas. Probable, non vérifiable sans le code."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Allumage cathodique : un trait qui s'ouvre en image",
+      "name_en": "CRT power-on",
+      "t": "0:00.25-0:00.50",
+      "frames": "f15-f30",
+      "fps": 60,
+      "mechanics": "f15 : trait horizontal or ≈ 35 % de la largeur, ≈ 1 % de la hauteur, centré, avec lueur. Il s'ouvre verticalement en bande de glyphes ASCII : ≈ 3 % de la hauteur (f18), 6 % (f21), 12 % (f24), 35 % (f27), 55 % (f30). Ouverture accélérée (ease-in) en 15 im = 0,25 s, reflets horizontaux sur les bords de la bande. Départ f15 sur le demi-temps (f15,7), ouverture complète f30 sur le premier temps (0,495 s = f29,7).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo ASCII qui se décode puis se fige en pixels",
+      "name_en": "ASCII scramble resolve",
+      "t": "0:00.50-0:01.00",
+      "frames": "f30-f60",
+      "fps": 60,
+      "mechanics": "La silhouette de licorne (≈ 55 % de la hauteur, centrée) est faite de glyphes or qui changent à chaque image (brouillage, scramble) ; la part de glyphes or baisse au profit de blocs blanc-gris de f33 à f54. Une seule image de glitch à f57, puis logo pixel net à f60. 27 im de brouillage (0,45 s) + 3 im de résolution. Résolution sur le temps 0,964 s (f57,8), qui porte une attaque forte (0,48).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Image de glitch unique posée sur le temps",
+      "name_en": "single-frame glitch hit",
+      "t": "0:00.95",
+      "frames": "f57",
+      "fps": 60,
+      "mechanics": "1 im (0,017 s) : tranches horizontales du logo décalées de ≈ 2–4 % de la largeur, séparation RVB (aberration chromatique), deux filets fins qui traversent tout le cadre à ≈ 40 % et 60 % de la hauteur. Sur le temps f57,8. Reprise une seule fois, à f788 (aberration RVB sur le logo flashé). Dosage : 2 occurrences en 15 s, donc accent et non tic.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-004-cut-f788.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Le logo se désagrège en glyphes qui deviennent le code",
+      "name_en": "particle dissolve into text",
+      "t": "0:01.47-0:02.10",
+      "frames": "f88-f126",
+      "fps": 60,
+      "mechanics": "Le logo se désagrège de haut en bas en particules-glyphes or (sommet à f90, moitié à f96, totalité à f102). Le nuage glisse en diagonale vers le bas-gauche (f105-f111) puis se dépose ligne par ligne en code source Org dans un panneau éditeur à gauche (≈ 45 % de la largeur, f114-f126). Énergie en cloche : départ f88, pic f110, retombée f148 = ease-in-out sur 0,63 s. Départ +2 im après le temps 1,432 s. Transition motivée : la marque devient la matière première du produit (le texte).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 86, "to": 132, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre en deux lignes qui montent sous masque",
+      "name_en": "staggered line mask reveal",
+      "t": "0:02.15-0:02.30",
+      "frames": "f129-f138",
+      "fps": 60,
+      "mechanics": "« Write » monte sous un masque (haut coupé à f129, entier à f132), puis « in Org. » apparaît flou et atténué à f132 et se pose à f138 : décalage ≈ 4–5 im, course ≈ 3 % de la hauteur, ease-out avec flou d'entrée. Bloc titre ≈ 13 % de la hauteur sur deux lignes, tiers droit (x ≈ 62–80 %). « Org. » en or. Départ f129 sur le demi-temps (f128,1).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Commande tapée dans un terminal, validée par un encadré or",
+      "name_en": "terminal typing + enter highlight",
+      "t": "0:02.40-0:03.48",
+      "frames": "f144-f209",
+      "fps": 60,
+      "mechanics": "« $ org2html build post.org -o site/ » se tape caractère par caractère sous le titre (≈ 30 caractères/s probable), curseur bloc or. À f209 (3,48 s) le champ entier passe en encadré or (validation). Mouvement minime pendant 1,05 s (maintien mesuré 2,42–3,47 s) : seul temps mort de l'intro. Validation à −3,4 im du demi-temps : hors grille.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-001-cut-f225.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Noir de 3 images puis flash surexposé sur le drop",
+      "name_en": "dip-to-black flash cut",
+      "t": "0:03.70-0:03.95",
+      "frames": "f222-f237",
+      "fps": 60,
+      "mechanics": "f222-f224 noir pur (3 im = 0,05 s) ; f225 image surexposée gris clair avec vignettage où la scène suivante apparaît en fantôme, puis décroissance exponentielle en 12 im (énergie 177 → 97 → 67 → 47 → 26 → 16). Le flash tombe 1 im avant le temps 3,774 s (f226,4), sur l'attaque 3,773 s qui ouvre le drop (+12 dB). Même recette à f784-f788 : 4 im de noir puis flash, sur l'attaque la plus forte du morceau.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f225.jpg, microM-004-cut-f788.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Barre de balayage qui classe chaque ligne de code",
+      "name_en": "scanning highlight bar",
+      "t": "0:03.78-0:04.50",
+      "frames": "f227-f270",
+      "fps": 60,
+      "mechanics": "Une bande or lumineuse (≈ 3 % de la hauteur, largeur du panneau de code ≈ 45 % du cadre) descend sur 15 lignes en 43 im (0,72 s) à vitesse constante (énergie stable ≈ 4 par image = linéaire). À son passage, une étiquette de type apparaît dans la marge gauche de chaque ligne (KEYWORD, HEADING, TEXT, SRC…). Visualise littéralement l'analyse lexicale (lexer) : le concept devient un geste.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f225.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Numéro d'étape géant qui se remplit d'or comme une jauge",
+      "name_en": "numeral fill reveal",
+      "t": "0:03.75-0:07.50",
+      "frames": "f225-f450",
+      "fps": 60,
+      "mechanics": "Numéros or « 01 » à « 04 » ≈ 13 % de la hauteur, tiers droit (x ≈ 78–90 %). À chaque étape, l'ancien chiffre sort en ≈ 2 im, le nouveau apparaît en contour sombre puis se remplit d'or du bas vers le haut en 30–45 im (0,5–0,75 s). Libellé (LEX, PARSE, RENDER, STYLE) en capitales blanches ≈ 5 %, révélé sous masque en 2–3 im ; dessous, sous-titre mono or et mini-barres de comptage. Le remplissage fait bouger l'écran entre deux temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une étape tous les deux temps",
+      "name_en": "two-beat scene cadence",
+      "t": "0:04.70-0:07.50",
+      "frames": "f282-f450",
+      "fps": 60,
+      "mechanics": "Changements d'étape à f282, f338, f394, f450 : pas fixe de 56 im (0,933 s = 2 temps à 128 BPM). Grille mesurée f282,7 / 338,9 / 395,0 / 451,3 : l'image tombe 0,7 à 1,3 im avant le temps. Les deux derniers portent une attaque audio (6,583 s et 7,523 s). Chaque changement est un saut net d'une image (énergie 11 à 18) suivi d'une construction qui occupe les deux temps, ce qui évite tout temps mort dans le pipeline.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Le code se recompose en arbre syntaxique",
+      "name_en": "code-to-tree morph",
+      "t": "0:04.72-0:05.32",
+      "frames": "f283-f319",
+      "fps": 60,
+      "mechanics": "Les lignes Org perdent leurs caractères (f289-f291), les fragments filent vers des nœuds encadrés en mono qui apparaissent de haut en bas : document, metadata (f293-f297), heading, paragraph (f299-f303), heading, codeBlock (f305-f311), décalage ≈ 3–4 im par rang ; connecteurs or tracés, puis propriétés tapées (f305-f319). 36 im (0,6 s). Étiquettes ≈ 1,2 % de la hauteur : illisibles en 0,9 s d'exposition.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "L'arbre se dissout et le HTML se reconstruit par brouillage",
+      "name_en": "text scramble rebuild",
+      "t": "0:05.65-0:06.35",
+      "frames": "f339-f381",
+      "fps": 60,
+      "mechanics": "Les nœuds se fragmentent (f347-f351), puis les lignes HTML (article, div org-root, header, section, h2…) se reconstruisent ligne par ligne avec des caractères or et bleus qui défilent avant de se fixer, en ≈ 40 im (0,7 s), indentation conservée. Même grammaire que l'étape précédente, variée par le brouillage.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Le code devient la page rendue, avec la palette de jetons",
+      "name_en": "code-to-UI render reveal",
+      "t": "0:06.57-0:07.10",
+      "frames": "f394-f426",
+      "fps": 60,
+      "mechanics": "À f394 le HTML laisse place à une fenêtre de navigateur sombre « index.html » (≈ 45 % de la largeur, centre-gauche) : titre « From Org to AST », puces, table des matières. Sous « 04 STYLE », six pastilles de couleur (or, orange, rouge, magenta, bleu, violet probable) en cascade. Construction ≈ 32 im (0,53 s) puis maintien 0,45 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Annotations à filets or autour de la page",
+      "name_en": "callout leader lines",
+      "t": "0:07.50-0:08.33",
+      "frames": "f450-f500",
+      "fps": 60,
+      "mechanics": "Le panneau d'étape sort et la page se recentre (≈ 18 im en accélération, f450-f468, arrêt net f469). Trois étiquettes mono or reliées par des filets fins pointent l'en-tête : « canonical · OG · JSON-LD » à gauche, « +FILETAGS → chips » à droite, « +DESCRIPTION → meta → OG » en bas à gauche (lectures probables). Texte ≈ 1 % de la hauteur. Départ f450 sur le temps (f451,3).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan en deux temps, la chute en or",
+      "name_en": "two-part punchline",
+      "t": "0:08.33-0:10.00",
+      "frames": "f500-f600",
+      "fps": 60,
+      "mechanics": "« One flag. » blanc (≈ 7 % de la hauteur, tiers gauche) entre à f500 avec dessous la ligne de commande portant l'option --style-book ; « New look. » or se pose 35 im plus tard (f535, sur le temps) après un fondu flou de 8 im. Même patron ensuite : « One .org in. » (f563, sur le temps) puis « Everything out. » en or (≈ temps 9,86 s, probable). Grammaire d'agence « X. Y. », la chute toujours dans la couleur d'accent.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f533.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Balayage lumineux diagonal qui change le thème",
+      "name_en": "diagonal light-sweep wipe",
+      "t": "0:08.77-0:08.92",
+      "frames": "f526-f535",
+      "fps": 60,
+      "mechanics": "Une bande blanche diagonale (≈ 20° de la verticale, bord dégradé, ≈ 8 % de la largeur de la page) traverse la page de gauche à droite en 8 im (f526-f533 = 0,13 s) ; derrière elle, la page sombre devient la page claire du thème « style-book » (titre en capitales condensées). Énergie en cloche 4 → 19 → 42 → 54 → 65 → 53 → 29 → 9 = ease-in-out, pic f530. Fin du balayage et pose de « New look. » à f535, sur le temps 8,926 s (f535,6).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f533.jpg",
+      "illus": {"from": 524, "to": 537, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La page rétrécit et devient la case centrale d'une grille de fichiers",
+      "name_en": "scale-down into grid",
+      "t": "0:09.38-0:10.00",
+      "frames": "f563-f600",
+      "fps": 60,
+      "mechanics": "À f563 (temps 9,395 s) le slogan est remplacé par « One .org in. ». La page claire glisse vers la droite et rétrécit avec un fort flou de mouvement horizontal (f565-f583, 18 im = 0,3 s, énergie en cloche avec pic f573 = ease-in-out) pour se loger au centre d'une grille 3×3 de cartes de fichiers (index.vue, metadata.json, structured-data.json, relations.json, sitemap, feed.json, routes.js…), ≈ 20 % de largeur chacune. Le concept « un fichier entre, tout sort » est montré, pas dit.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Ligne de chiffres-clés en mono or, posée à plat",
+      "name_en": "stat strip",
+      "t": "0:10.00-0:11.20",
+      "frames": "f600-f672",
+      "fps": 60,
+      "mechanics": "Sous la grille, une ligne mono or ≈ 1,2 % de la hauteur aligne des chiffres (« 15 PAGES », « 0 NETWORK CALLS »…, lecture probable) séparés par des points. Aucun compteur qui roule : apparition statique pendant le maintien de 1,2 s (9,75–10,93 s). Occasion manquée de compteurs animés calés sur les temps.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom avant accéléré à travers la carte, coupe sur le temps",
+      "name_en": "push-in zoom-through",
+      "t": "0:10.95-0:11.27",
+      "frames": "f657-f676",
+      "fps": 60,
+      "mechanics": "La carte centrale grossit de ≈ 18 % à plus de 100 % de la largeur en 19 im (0,32 s) ; accélération continue (ease-in expo : énergie 1,8 → 8 → 18 → 44 → 88 → 219 → 287), flou radial et traînées sur les cartes voisines dès f670, la page remplit le cadre à f675, coupe franche à f676 = temps 11,268 s (f676,1). Le plan suivant entre lui-même flou pendant 3 im (f676-f678) : le flou est raccordé de part et d'autre de la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f676.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un cas d'usage par temps",
+      "name_en": "word-per-beat montage",
+      "t": "0:11.27-0:13.13",
+      "frames": "f676-f788",
+      "fps": 60,
+      "mechanics": "« Blogs. » f676, « Docs. » f704, « Vue apps. » f732, « Pipelines. » f760, logo f788 : pas fixe de 28 im (0,467 s = 1 temps à 128 BPM). Grille mesurée 676,1 / 704,2 / 732,3 / 760,4 / 788,5 : chaque mot tombe sur l'image du temps (0 à 0,5 im d'avance). Mot blanc ≈ 7 % de la hauteur, tiers gauche (x ≈ 5–25 %, y ≈ 45 %), petit libellé or au-dessus (numérotation probable), capture d'interface à droite (≈ 55 % de la largeur) qui change avec le mot. Grammaire 1600 pure.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-003-cut-f676.jpg",
+      "illus": {"from": 697, "to": 736, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou express entre deux mots",
+      "name_en": "blur dissolve swap",
+      "t": "0:11.67-0:11.77",
+      "frames": "f700-f706",
+      "fps": 60,
+      "mechanics": "Sortie : le mot et la carte prennent un flou gaussien croissant et perdent l'opacité en 4 im (f700-f703). Entrée : le nouveau mot apparaît flou à ≈ 50 % d'opacité sur l'image du temps (f704) et devient net 2 im plus tard (f706). Total 7 im = 0,12 s, sans aucun déplacement : seul le flou porte la transition. Répété à f728-f733 et f756-f761.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flash et anneau d'onde de choc autour du logo",
+      "name_en": "flash + shockwave ring",
+      "t": "0:13.05-0:13.30",
+      "frames": "f784-f797",
+      "fps": 60,
+      "mechanics": "4 im de noir (f784-f787), flash gris clair à f788, 1 im avant le temps 13,142 s qui porte l'attaque la plus forte du morceau, avec le logo ASCII or en aberration RVB. Un anneau or fin (≈ 0,5 % de la hauteur d'épaisseur) part du centre du logo : rayon ≈ 20 % de la hauteur à f790, ≈ 45 % à f792, hors cadre à f797 (9 im = 0,15 s, ease-out). Le vignettage clair décroît en 7 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f788.jpg",
+      "illus": {"from": 783, "to": 808, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole lettre par lettre, le « 2 » en or à part",
+      "name_en": "staggered wordmark build",
+      "t": "0:13.25-0:13.55",
+      "frames": "f795-f812",
+      "fps": 60,
+      "mechanics": "Les lettres montent d'une ligne de base masquée, de gauche à droite, ≈ 1,5–2 im par lettre (o à f795, Or f797, Org f800, org2 f801, org2h f802, org2ht f805, org2htm f807). Le « 2 » or arrive à part, plus gros et estompé en bas à droite (f798), puis se réduit et se pose (≈ f803). Mot-symbole ≈ 9 % de la hauteur, grotesque très grasse blanche, à droite du logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f788.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin dont l'appel à l'action est la commande d'installation",
+      "name_en": "install-command end card",
+      "t": "0:13.55-0:14.78",
+      "frames": "f813-f886",
+      "fps": 60,
+      "mechanics": "Logo pixel or à gauche (≈ 45 % de la hauteur), mot-symbole à droite, au-dessus un libellé mono or (« ORG-MODE → HTML · VUE · SEO », lecture probable), dessous une ligne de mots-clés, un champ « $ npm i -g @kyonax/org2html » qui se tape de f832 à ≈ f870 (≈ 40 caractères/s) avec curseur bloc or, puis version, licence, dépôt et « BUILT BY KYONAX » en or. Maintien quasi statique 1,15 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f892.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Extinction cathodique finale",
+      "name_en": "CRT power-off",
+      "t": "0:14.78-0:15.00",
+      "frames": "f887-f899",
+      "fps": 60,
+      "mechanics": "L'image s'éclaircit (f890-f891), s'écrase verticalement à ≈ 35 % de la hauteur avec traînée horizontale (f892), puis en bande fine (f893) et en trait de 1 px (f894) : 7 im = 0,12 s, accélération (ease-in). Le trait se résorbe et s'éteint de f895 à f899. Départ sur le demi-temps 14,782 s (f886,9), pendant le fondu de la musique (−20 à −28 dB). Boucle avec l'allumage de f15.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f892.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage HUD permanent",
+      "name_en": "persistent HUD overlay",
+      "t": "0:00.25-0:14.90",
+      "frames": "f15-f893",
+      "fps": 60,
+      "mechanics": "Sur tous les plans : équerres d'angle, timecode et format en mono gris en haut à droite, libellé de scène « ■ 0X · NOM » en bas à gauche, barre de progression or au centre bas (≈ 20 % de la largeur, curseur qui avance, probable), compteur en bas à droite. Texte ≈ 0,8 % de la hauteur. Assure la continuité entre des scènes très différentes (logo, code, arbre, page, grille).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Phrases d'un ou deux mots à point final, mono pour la machine",
+      "name_en": "period-ended bold headlines",
+      "t": "0:02.15-0:13.13",
+      "frames": "f129-f788",
+      "fps": 60,
+      "mechanics": "Tous les messages sont des phrases courtes avec point final (« Write in Org. », « One flag. », « Blogs. »), en grotesque très grasse blanche ≈ 7 % de la hauteur, interlettrage serré, mot-clé en or. Tout ce qui relève de la machine (code, HUD, libellés, chiffres) est en mono ≈ 1–1,5 %. Deux voix typographiques, aucune troisième police.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Accent or unique, logo qui passe du blanc à l'or",
+      "name_en": "single-accent palette",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fond #0A0A09, texte #F3F1EA, accent unique or #F2C12E (≈ 5–10 % de la surface), gris #8A877E pour le secondaire. Une seule exception : la page claire #E6E4DE du thème « style-book » (8,9–11,2 s), qui sert de démonstration du « New look ». Le logo est blanc-gris à l'ouverture et or à la fin : la couleur signe la conclusion.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-004-cut-f788.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Flashs réservés au drop et à l'attaque maximale",
+      "name_en": "flash on drop",
+      "t": "0:03.75 ; 0:13.13",
+      "frames": "f225 ; f788",
+      "fps": 60,
+      "mechanics": "Les deux attaques audio les plus fortes (3,773 s, force 0,56 ; 13,142 s, force 1,0) portent les deux seuls flashs, chacun précédé de 3–4 im de noir. Le flash arrive 1 im avant l'attaque mesurée (l'attaque audible arrive 0–2 im après la barre) : l'œil reçoit l'image avec le son. Avant 3,75 s la musique est 10 à 20 dB plus basse : l'intro calme couvre le logo et la promesse, le drop lance la démonstration.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f225.jpg, microM-004-cut-f788.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit produit : marque, entrée, pipeline, option, sorties, usages, installation",
+      "name_en": "product walkthrough arc",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Marque (logo, 0–1,5 s) → entrée (« Write in Org. » + commande, 1,5–3,7 s) → drop + pipeline en étapes numérotées (3,75–8,3 s) → option (« One flag. New look. », 8,3–9,4 s) → sorties (« One .org in. Everything out. », 9,4–11,3 s) → usages (4 mots, 11,3–13,1 s) → logo + commande npm (13,1–14,8 s) → extinction. Le drop sépare la promesse de la démonstration ; chaque transition est motivée par la matière (texte qui change d'état).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Trois respirations d'environ 1 s pour lire",
+      "name_en": "reading holds",
+      "t": "0:02.42-0:03.47 ; 0:09.75-0:10.93 ; 0:13.62-0:14.75",
+      "frames": "f145-f208 ; f585-f656 ; f817-f885",
+      "fps": 60,
+      "mechanics": "Maintiens quasi statiques (énergie < 1) de 1,05 s, 1,2 s et 1,15 s, placés là où le texte est le plus dense (frappe, grille, carte de fin). Animés seulement par une frappe ou une ligne de chiffres : au regard de la grammaire 1600 (un geste toutes les 0,5–1 s) ce sont des temps morts ; un surlignage ou un compteur sur chaque temps aurait suffi.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "L'accès au dépôt (logo ASCII, palette) a fourni l'identité : Claude a bâti tout le système noir-or et le motif terminal/CRT autour du logo ASCII au lieu d'inventer une direction artistique."},
+    {"kind": "direction", "insight": "« showcase properly the usecases, the flow… how it works » a produit une vraie démonstration : chaque étape du moteur (lexer, parser, rendu, style) est visualisée par un geste propre, et les quatre usages ont chacun un écran."},
+    {"kind": "structure", "insight": "Aucun tempo dans le prompt, mais une timeline quantifiée à 28 im (1 temps à 128 BPM). Pour reproduire à coup sûr : écrire « timeline en temps de 128 BPM, une scène tous les 2 temps, un mot par temps dans le final, flash sur le drop »."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : le texte mono à 1–1,5 % de la hauteur (arbre, annotations, grille) est illisible à 0,5–0,9 s d'exposition. Fixer un corps minimal et un nombre de mots par écran."},
+    {"kind": "direction", "insight": "« go all out » pousse à l'empilement d'effets (CRT, glitch, particules, flash, onde de choc) ; ici chaque effet n'apparaît qu'une ou deux fois, à une charnière du récit, ce qui évite le cliché."},
+    {"kind": "build", "insight": "Stack non précisée ; rendu 60 fps net et déterministe, flou de mouvement simulé seulement là où il sert (zoom traversant, page qui file, fondus entre mots)."}
+  ],
+  "steal": [
+    "Quantifie la timeline : 1 temps = 28 im à 128 BPM et 60 fps ; une étape tous les 2 temps, un mot par temps dans le final.",
+    "Pour expliquer un moteur, montre la matière changer d'état : logo → glyphes → code → arbre → HTML → page, une étape numérotée par mutation.",
+    "Sur le drop : 3 im de noir, puis une image surexposée qui décroît en 12 im ; réserve ce flash aux deux charnières du récit.",
+    "Slogan en deux temps : premier membre blanc, chute en or posée sur le temps suivant (« One flag. / New look. »).",
+    "Boucle cathodique : ouvre sur un trait qui s'allume, ferme en écrasant l'image en trait ; serre-livres lisibles instantanément."
+  ],
+  "flaws": [
+    "Texte mono à 1–1,5 % de la hauteur (arbre, grille, annotations) : illisible en moins d'une seconde, effet « mur de code ».",
+    "Trois maintiens d'environ 1 s (frappe, grille, carte de fin) : 23 % de la durée sans geste calé.",
+    "Ligne de chiffres posée à plat sous la grille : aucun compteur qui roule, aucune hiérarchie.",
+    "Densité très élevée pour 15 s : chaque étape porte titre, sous-titre, mini-graphique et code ; on ne retient que les mots géants."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : rare pièce où toute la timeline est quantifiée sur 128 BPM (56 im par étape, 28 im par mot). Une étude continue à 60 fps donnerait les courbes exactes du balayage, du zoom traversant, du fondu flou et de l'anneau, transposables telles quelles en GSAP."
+  }
+}

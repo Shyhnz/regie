@@ -1,0 +1,448 @@
+{
+  "slug": "hqmank-7c61f1",
+  "title": "Browser automation skill launch",
+  "handle": "@hqman",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique serré (crème, noir, orange, HUD à chapitres), démo lisible et transitions franches ; mais son en retard constant de 5 im, kick seul, et gestes hors de la grille du tempo.",
+  "summary": "Vidéo de lancement de 23 s d'un outil open source qui pilote un navigateur. Manifeste en 3 lignes, titre lettre à lettre, schéma site → objectif → exécution, terminal, puis démo où un agent clique jusqu'à « GOAL REACHED ». Trois arguments en un mot (« ISOLATED. », « RECORDED. », « AGENT-READY. ») et appel à l'action « git clone ». Bande-son codée calée sur les événements, mais pauvre.",
+  "prompt_vs_result": [
+    "Vidéo de lancement dynamique de 20 s pour le projet jev-browser-skill, slogan « Give a site. Write a goal. Jev clicks. », ton « vidéo héros de README GitHub », consigne « Go all out ».",
+    "Structure en 5 chapitres avec HUD, typo extra-grasse, palette crème/noir/orange, commande « jb run » inventée, site factice « acme », panneau d'agent avec journal d'étapes, trois arguments produit, bande-son codée (kick à 120 BPM, clics, silences et impacts).",
+    "Le prompt d'une ligne a suffi pour la structure (le slogan est repris tel quel). Manquaient : vraie commande et vraies fonctions (risque d'inventer), style musical, tolérance de synchro son/image, taille minimale du texte UI."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#ECE8E0",
+        "role": "fond papier crème"
+      },
+      {
+        "hex": "#1A1A1A",
+        "role": "texte titres, panneaux sombres"
+      },
+      {
+        "hex": "#E9683B",
+        "role": "accent unique : mots clés, traits d'union, panneaux de volet, curseur de clic, barre de progression"
+      },
+      {
+        "hex": "#141414",
+        "role": "fond terminal, panneau d'agent, écran « RECORDED. »"
+      },
+      {
+        "hex": "#E0402F",
+        "role": "point rouge d'enregistrement"
+      },
+      {
+        "hex": "#F6F3EE",
+        "role": "cartes et fenêtre du navigateur"
+      },
+      {
+        "hex": "#8C8780",
+        "role": "étiquettes mono, sous-titres secondaires"
+      }
+    ],
+    "type": "Grotesque extra-grasse large en capitales (Archivo Black ou Archivo Expanded probable), 7 à 9 % de la hauteur, approche serrée ; grotesque grasse en casse phrase pour le sous-titre (≈ 3 %) ; mono espacée en capitales pour étiquettes, HUD et terminal (≈ 1 %).",
+    "texture": "Aplats nets, ombres portées douces sous les fenêtres, flou de mouvement horizontal bref sur les entrées « slam », légère lueur sur la ligne de balayage orange ; pas de grain.",
+    "style": "Brutalisme éditorial tech, README open source",
+    "coherence": "Tout tient par trois couleurs et deux familles (grotesque extra-grasse + mono). Le HUD (chapitre « 02 / THE COMMAND » en bas à gauche entre crochets d'angle, « OPEN SOURCE · v0.1.0 » en haut à droite, minutage en bas à droite, barre de progression orange par chapitre) encadre chaque scène. L'orange revient aux mêmes endroits : traits d'union du nom, volets, clics. Seule rupture : le site factice gris et générique."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Bande-son générée par code : un seul kick toutes les 30 im exactement (0,500 s, 120 BPM), audible à f5 + 30k, avec silence numérique entre les coups. Le montage suit des événements, pas la grille : les 3 lignes du manifeste montent à f9, f35, f60 (coups à f5, f35, f65 : une ligne par temps, à ±5 im) ; ensuite les gestes clés tombent au hasard sur la grille (6 sur 17 à ±2 im d'un temps ou demi-temps, hasard 33 %). En revanche les sons suivent l'image avec un retard constant de 5 im (83 ms) : clic f112 → son f117, clic f882 → son f887, coupe f1034 → impact f1039, coupe f1088 → impact f1093. Structure : kick pendant l'intro et le schéma, coupure du kick pendant le terminal (7,0-10,0 s, seuls des tics à −38 dB sur les lignes de journal), retour du kick à f605 quand le navigateur entre, silences de 0,43 s avant chaque argument. Cadence : plans de 0,9 s (54 im) dans la séquence « ISOLATED / RECORDED / AGENT-READY ». Temps morts : cadre presque vide 3,05-3,5 s, terminal de 3 s où seul le texte s'écrit, carton final tenu 1,3 s.",
+    "timeline": [
+      {
+        "t": "0:00-0:01.2",
+        "what": "Étiquette mono orange « A BROWSER YOUR AGENT CAN HAND OFF TO », puis « GIVE A SITE. / WRITE A GOAL. / JEV CLICKS. » ligne par ligne, « CLICKS. » en orange",
+        "technique": "lignes qui montent d'un masque, une par temps"
+      },
+      {
+        "t": "0:01.1-0:02.3",
+        "what": "Le curseur entre par la droite, clique après « CLICKS. » : étoile de traits orange puis anneau pointillé qui s'élargit",
+        "technique": "retour visuel de clic"
+      },
+      {
+        "t": "0:02.8-0:03.05",
+        "what": "Les trois lignes sortent vers le haut en cascade, cadre vide",
+        "technique": "sortie masquée en cascade"
+      },
+      {
+        "t": "0:03.3-0:04.3",
+        "what": "Étiquette « ISOLATED CHROMIUM · DRIVEN BY JEV » tapée, puis « JEV-BROWSER-SKILL » lettre à lettre avec rotation, sous-titre",
+        "technique": "assemblage du titre lettre à lettre"
+      },
+      {
+        "t": "0:04.7-0:06.5",
+        "what": "Trois cartes reliées par un trait orange : 01 SITE (URL), 02 GOAL (texte tapé), 03 RUN (commande)",
+        "technique": "schéma de fonctionnement en 3 étapes"
+      },
+      {
+        "t": "0:06.55-0:06.85",
+        "what": "Volet orange qui monte, couvre, puis se retire vers le haut sur un terminal noir",
+        "technique": "volet traversant (wipe-through)"
+      },
+      {
+        "t": "0:07-0:10",
+        "what": "Commande « jb run --url … --goal … » tapée, journal à puces orange (daemon, chromium, recording, jev is driving…)",
+        "technique": "terminal en frappe, coupure du kick"
+      },
+      {
+        "t": "0:10.0-0:10.5",
+        "what": "Le terminal s'assombrit, glisse à droite et devient le panneau latéral de l'agent pendant que le navigateur apparaît",
+        "technique": "transformation terminal → panneau"
+      },
+      {
+        "t": "0:10.5-0:16.2",
+        "what": "Démo : balayage orange de la page, curseur sur « Pricing », clic, page Pricing, défilement, clic « Get Started », carte « status: done », pastille « GOAL REACHED »",
+        "technique": "démo d'agent pas à pas avec journal"
+      },
+      {
+        "t": "0:16.25-0:17.2",
+        "what": "Panneau noir puis panneau orange glissent depuis la gauche ; « ISOLATED. » sur orange",
+        "technique": "volet double empilé"
+      },
+      {
+        "t": "0:17.23-0:18.1",
+        "what": "Coupe franche : « RECORDED. » crème sur noir, point rouge",
+        "technique": "entrée « slam » (approche + flou) sur impact"
+      },
+      {
+        "t": "0:18.13-0:19.0",
+        "what": "Coupe franche : « AGENT-READY. » sur crème, invite « >_ » orange",
+        "technique": "entrée « slam » sur impact"
+      },
+      {
+        "t": "0:19.0-0:20.0",
+        "what": "Volet orange traversant, « JEV-BROWSER-SKILL » se reforme lettre à lettre",
+        "technique": "rappel du titre (callback)"
+      },
+      {
+        "t": "0:20.0-0:23.0",
+        "what": "Pastille noire « $ git clone github.com/hqman/jev-browser-skill [COPY] », mots clés mono, clic sur COPY : pastille orange « COPIED »",
+        "technique": "appel à l'action cliquable"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Analyse du son image par image : kick seul toutes les 30 im (f5 + 30k), silence numérique entre les coups, pas de mélodie. Les gestes clés tombent au hasard sur la grille : 6 sur 17 à ±2 im d'un temps ou demi-temps (hasard 33 %), sauf les 3 lignes d'ouverture (une par temps, ±5 im). Les sons ponctuels, eux, suivent l'image avec un retard constant de 5 im : 6 événements sur 6 (clics f112 et f882, atterrissage « ISOLATED. » f985 = impact f985, coupes f1034 et f1088, volet f1142 sur le sommet de la montée f1144). Structure calée sur le récit : kick coupé pendant le terminal (f425-f604), retour à f605 au moment où le navigateur entre (« drop » détecté à 10,29 s), silences de 26 im avant les impacts de « RECORDED. » et « AGENT-READY. ».",
+    "synced": [
+      "coupes",
+      "impacts",
+      "drop",
+      "texte"
+    ],
+    "style_match": "Pulsation électronique sèche à 120 BPM, accordée aux coupes franches et aux courbes rapides ; mais un kick seul sonne comme un métronome, trop pauvre pour « Go all out ».",
+    "how_built": "Bande-son générée par code à partir de la même liste d'événements que l'animation (clics, coupes, volets, changement de scène), d'où des sons exactement sur les gestes. Le retard constant de 83 ms vient probablement de l'assemblage (attaque du son ou décalage d'encodage) et n'a pas été vérifié. Les mouvements n'ont pas été placés sur la grille de 0,5 s, sauf l'ouverture."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Manifeste ligne par ligne, une ligne par temps",
+      "name_en": "Line-by-line masked rise on the beat",
+      "t": "0:00.13-0:01.15",
+      "frames": "f8-f69",
+      "fps": 60,
+      "mechanics": "Trois lignes en capitales extra-grasses (≈ 8,5 % de la hauteur, alignées à gauche à 5 % du bord, interligne ≈ 11 %). Chaque ligne monte d'environ une hauteur de capitale depuis un masque sous sa ligne de base en ≈ 8 im (0,13 s), ease-out. Départs à f9, f35, f60, contre des coups à f5, f35, f65 : une ligne par temps. Le dernier mot « CLICKS. » est orange.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Retour visuel de clic : étoile + anneau pointillé",
+      "name_en": "Click burst with dashed ripple",
+      "t": "0:01.07-0:02.27",
+      "frames": "f64-f136",
+      "fps": 60,
+      "mechanics": "Le curseur entre par le bas à droite (f64-f72) et glisse jusqu'après « CLICKS. » en ≈ 36 im, ease-in-out. Clic à f112 : étoile de 8 traits orange autour de la pointe (2-3 im), puis anneau pointillé orange qui s'élargit de ≈ 3 à 5 % de la hauteur et s'efface en ≈ 20 im (f116-f136). Même signe sur « Get Started » (f882-f900, le bouton passe au noir 8 im) et sur COPY. Son de clic 5 im après.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sortie des lignes vers le haut en cascade",
+      "name_en": "Staggered masked line exit",
+      "t": "0:02.82-0:03.05",
+      "frames": "f169-f183",
+      "fps": 60,
+      "mechanics": "Chaque ligne monte et disparaît derrière son propre masque (coupée net à son bord haut) en ≈ 6 im, ease-in. Décalage : ligne 1 à f169, ligne 2 à f172, ligne 3 à f177 (3 à 5 im). Cadre vide à f183, 2 im avant un coup (f185).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f176.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Étiquette tapée lettre à lettre",
+      "name_en": "Typed mono eyebrow",
+      "t": "0:03.35-0:03.75",
+      "frames": "f201-f225",
+      "fps": 60,
+      "mechanics": "Étiquette mono espacée en capitales (≈ 1 % de la hauteur), centrée au-dessus du titre : « ISOLATED CHROMIUM · DRIVEN BY JEV » apparaît caractère par caractère (≈ 1 caractère par image). Annonce le titre avant qu'il arrive. Même procédé pour « ONE COMMAND. ONE GOAL. ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre assemblé lettre à lettre avec rotation",
+      "name_en": "Per-letter rise with rotation",
+      "t": "0:03.5-0:04.15",
+      "frames": "f210-f249",
+      "fps": 60,
+      "mechanics": "« JEV-BROWSER-SKILL » (≈ 7 % de la hauteur, 90 % de la largeur, traits d'union orange) : chaque lettre monte depuis un masque sous la ligne de base avec une rotation de ≈ 10-15° qui revient à 0, ≈ 8 im par lettre, décalage ≈ 2 im entre lettres ; 17 caractères en ≈ 36 im. Puis le sous-titre « Give a site. Write a goal. Jev clicks. » monte d'un bloc (f249-f258).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 210,
+        "to": 258,
+        "n": 8
+      }
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de chapitres, minutage et barre de progression",
+      "name_en": "Chapter HUD with progress bar",
+      "t": "0:00-0:23",
+      "frames": "f0-f1378",
+      "fps": 60,
+      "mechanics": "Bas gauche, entre crochets d'angle : « 01 / THE IDEA », « 02 / THE COMMAND », « 03 / JEV DRIVES », « 04 / WHY », « 05 / GET IT ». Haut droite : « OPEN SOURCE · v0.1.0 ». Bas droite : minutage « 00:00:04:00 ». Fine barre orange sur le bord bas qui se remplit pendant chaque chapitre et repart à zéro au suivant. Mono ≈ 0,8 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Schéma en 3 cartes : site → objectif → exécution",
+      "name_en": "Three-step pipeline diagram",
+      "t": "0:04.7-0:06.55",
+      "frames": "f282-f393",
+      "fps": 60,
+      "mechanics": "Trois petites cartes (≈ 12 % de largeur) à ≈ 70 % de la hauteur, reliées par un trait orange tracé de gauche à droite, chacune avec une pastille numérotée orange et un libellé mono (01 SITE, 02 GOAL, 03 RUN). Apparitions décalées d'environ 0,15-0,25 s ; l'objectif se tape avec curseur clignotant. Résume le produit en une image avant la démo.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet traversant orange (couvre puis se retire dans le même sens)",
+      "name_en": "Wipe-through panel",
+      "t": "0:06.55-0:06.85",
+      "frames": "f393-f410",
+      "fps": 60,
+      "mechanics": "Un aplat #E9683B monte du bas : 3 %, 6 %, 12 %, 17 %, 26 %, 40 %, 65 %, 100 % du cadre de f393 à f400 (8 im, ease-in). Puis il continue vers le haut et découvre la scène suivante par le bas : bord bas à 63 %, 38 %, 27 %, 18 %, 12 %, 7 %, 4 %, 2 % de f401 à f408 (8 im, ease-out). Total 0,27 s. Le terminal apparaît en fondu (gris → noir en ≈ 12 im). Répété à f1136-f1150 avant le titre final.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f400.jpg",
+      "illus": {
+        "from": 392,
+        "to": 410,
+        "n": 8
+      }
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal en frappe avec journal à puces",
+      "name_en": "Typed terminal with status log",
+      "t": "0:07.0-0:10.0",
+      "frames": "f420-f600",
+      "fps": 60,
+      "mechanics": "Fenêtre noire (≈ 50 % de largeur, centrée) : invite orange « › », « jb run --url https://example.com \\ --goal … » tapé à ≈ 20 caractères/s, puis 4 lignes de journal à puces orange qui tombent toutes les ≈ 12 im (daemon started · pid, chromium launched · isolated profile, recording · chemin du .webm, jev is driving…), chacune avec un petit tic sonore à −38 dB. Le kick est coupé pendant toute la scène.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le terminal devient le panneau latéral de l'agent",
+      "name_en": "Terminal-to-sidebar morph",
+      "t": "0:10.0-0:10.7",
+      "frames": "f600-f640",
+      "fps": 60,
+      "mechanics": "f600 : le texte du terminal s'assombrit (fondu en ≈ 6 im). f614-f630 : la fenêtre noire glisse à droite et se rétrécit de ≈ 50 % à ≈ 18 % de largeur en s'allongeant (16 im, ease-out), pendant que le navigateur apparaît à gauche en fondu. La continuité dit « la commande lance l'agent ». Le kick revient à f605, 9 im avant l'entrée du navigateur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f623.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Démo d'agent : balayage, étiquettes de cible, journal d'étapes",
+      "name_en": "Agent run demo with target tags",
+      "t": "0:10.5-0:16.2",
+      "frames": "f630-f972",
+      "fps": 60,
+      "mechanics": "Navigateur factice « acme » à gauche (≈ 60 % de largeur), panneau noir à droite avec GOAL et STEPS. Une ligne orange lumineuse balaie la page (≈ 11,5 s) pendant « 01 OBSERVE example.com · 14 nodes ». Le curseur va sur « Pricing », une étiquette orange « link 'Pricing' » s'accroche au-dessus de la cible, clic, « 02 CLICK ». La page passe en fondu enchaîné à Pricing (≈ 0,3 s, probable). « 03 SCROLL », étiquette « button 'Get Started' », clic, « 04 CLICK ». Chaque nouvelle étape s'allume en surbrillance orange foncé dans le journal.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Confirmation de réussite : carte de statut + pastille",
+      "name_en": "Success state badge",
+      "t": "0:15.1-0:15.25",
+      "frames": "f906-f914",
+      "fps": 60,
+      "mechanics": "Une carte orange « ✓ status: done · 4 steps · video saved » apparaît en bas du journal (≈ 4 im), et une pastille noire « ✓ GOAL REACHED » en haut à droite du navigateur (≈ 4 im), toutes deux 24 im après le clic. f906 tombe sur un coup (f905).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet double empilé : noir puis orange depuis la gauche",
+      "name_en": "Stacked double slide wipe",
+      "t": "0:16.25-0:16.42",
+      "frames": "f975-f985",
+      "fps": 60,
+      "mechanics": "Un panneau noir entre par la gauche : 8 %, 17 %, 45 %, 66 %, 100 % de f975 à f980 (5 im, ease-in). Un panneau orange suit par la gauche de f981 à f985 (≈ 50 → 100 %, ease-out), portant le mot « ISOLATED. » flou qui se pose avec lui. Une montée de son couvre le volet ; l'impact tombe à f985, image exacte de l'atterrissage.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f979.jpg",
+      "illus": {
+        "from": 974,
+        "to": 990,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrée « slam » : approche large + flou qui se resserre en 2 im",
+      "name_en": "Tracking slam-in",
+      "t": "0:17.23 / 0:18.13",
+      "frames": "f1034-f1036, f1088-f1090",
+      "fps": 60,
+      "mechanics": "Sur coupe franche, le mot arrive avec un interlettrage très large (le mot déborde le cadre) et un flou horizontal fort (f1034), puis se resserre à f1035 et se pose net à f1036 : 2 im. Ensuite le petit signe apparaît au-dessus (point rouge f1043-f1046, invite « >_ » f1097) et la ligne mono dessous. Mot ≈ 9 % de la hauteur, centré.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f1034.jpg",
+      "illus": {
+        "from": 1032,
+        "to": 1048,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Trois arguments en un mot, un écran chacun",
+      "name_en": "One-word value props",
+      "t": "0:16.3-0:19.0",
+      "frames": "f979-f1142",
+      "fps": 60,
+      "mechanics": "« ISOLATED. » (fond orange, icône fenêtre), « RECORDED. » (fond noir, point rouge), « AGENT-READY. » (fond crème, « >_ »), chacun 54 im (0,9 s) avec une ligne mono d'explication. Le fond change à chaque argument : orange → noir → crème. Rythme régulier de 0,9 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance de fonds pleins pour séparer les arguments",
+      "name_en": "Full-bleed color alternation",
+      "t": "0:16.3-0:19.2",
+      "frames": "f979-f1150",
+      "fps": 60,
+      "mechanics": "Les trois couleurs du système passent chacune en plein cadre (orange, noir, crème, puis volet orange). Le texte s'inverse selon le fond (noir sur orange, crème sur noir, noir sur crème). Contraste maximal entre plans de 0,9 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Rappel du titre avant l'appel à l'action",
+      "name_en": "Title callback",
+      "t": "0:19.0-0:20.0",
+      "frames": "f1136-f1200",
+      "fps": 60,
+      "mechanics": "Même volet orange traversant qu'à 6,55 s (f1136-f1150), puis « JEV-BROWSER-SKILL » se réassemble lettre à lettre exactement comme à 3,5 s (f1147-f1195). La boucle ferme le récit et ramène au nom.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1142.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Commande d'installation cliquable",
+      "name_en": "Copyable install command CTA",
+      "t": "0:20.3-0:21.7",
+      "frames": "f1218-f1300",
+      "fps": 60,
+      "mechanics": "Pastille noire mono « $ git clone github.com/hqman/jev-browser-skill [COPY] » sous le sous-titre (≈ 25 % de largeur), ligne mono « PLAYWRIGHT CHROMIUM · CODING AGENTS · OPEN SOURCE » dessous. Le curseur clique COPY (son f1279) : la pastille passe à l'orange, « COPIED ✓ », petites étincelles. Adapté au contexte README.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupure du rythme pendant la démo technique, retour au changement de scène",
+      "name_en": "Breakdown and drop on reveal",
+      "t": "0:06.6-0:10.1",
+      "frames": "f400-f605",
+      "fps": 60,
+      "mechanics": "Le kick s'arrête juste après le volet vers le terminal (dernier coup f395). Pendant 3,4 s, seuls des tics à −38 dB accompagnent la frappe et les lignes de journal. Silence complet f596-f604, puis le kick revient à f605 au moment où le terminal s'assombrit (f600) et 9 im avant l'entrée du navigateur. Le changement d'énergie marque le passage commande → exécution.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f623.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence puis impact sur chaque argument",
+      "name_en": "Stop-and-hit",
+      "t": "0:16.8-0:18.3",
+      "frames": "f1012-f1093",
+      "fps": 60,
+      "mechanics": "Après l'impact de « ISOLATED. » (f985), le son s'éteint de f1012 à f1037 (26 im) puis un impact à −9 dB (plus fort que le kick à −14 dB) frappe à f1039 sur « RECORDED. » ; même schéma f1065-f1091 puis f1093 sur « AGENT-READY. ». Une montée (f1129-f1160, sommet f1144) accompagne le volet orange. Les impacts tombent 5 im après les coupes.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f1088.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sons de clic sur chaque clic du curseur",
+      "name_en": "Click SFX on cursor clicks",
+      "t": "0:01.87-0:21.32",
+      "frames": "f112, f882, f1274",
+      "fps": 60,
+      "mechanics": "Chaque clic visuel déclenche un son court (attaque à −16/−17 dB, durée ≈ 8 im) par-dessus le kick : f112 → f117, f882 → f887, COPY → f1279. Retard constant de 5 im (83 ms) entre l'image et le son.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Retard constant du son de 5 images",
+      "name_en": "Constant 83 ms audio lag",
+      "t": "0:00-0:23",
+      "frames": "f112-f1093",
+      "fps": 60,
+      "mechanics": "Sur 4 sons ponctuels mesurés à l'image près, l'attaque arrive 5 im après le geste (clics f112/f117 et f882/f887, coupes f1034/f1039 et f1088/f1093). Seul l'atterrissage de « ISOLATED. » tombe pile (f985). Défaut d'assemblage à corriger : avancer la piste son de 83 ms ou placer les sons 5 im plus tôt.",
+      "verdict": "cliche",
+      "evidence": "microM-005-cut-f1034.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le slogan fourni entre parenthèses (« Give a site. Write a goal. Jev clicks. ») a été repris mot pour mot comme manifeste d'ouverture et comme sous-titre : donner sa phrase clé dans le prompt garantit qu'elle porte la vidéo."
+    },
+    {
+      "kind": "direction",
+      "insight": "« like it's the hero video on its GitHub README » a orienté tout le vocabulaire : terminal, commande, HUD de version « v0.1.0 », appel à l'action « git clone » avec bouton COPY. Un contexte d'usage précis vaut une direction artistique."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go all out » a produit une structure riche (5 chapitres, démo complète, 3 arguments) mais pas de musique riche : sans consigne audio, Claude a codé un kick seul à 120 BPM."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Aucune vraie commande ni fonction fournie : la commande « jb run --url --goal » et les arguments « ISOLATED / RECORDED / AGENT-READY » sont probablement inventés ou déduits du nom. Pour un vrai produit, fournir le README."
+    },
+    {
+      "kind": "build",
+      "insight": "Sons générés depuis la même liste d'événements que l'animation : synchro structurelle juste (clics, impacts, coupure, retour du kick), mais retard constant de 83 ms non vérifié. Ajouter au prompt une étape QA « mesurer l'écart son/image sur 3 événements »."
+    },
+    {
+      "kind": "structure",
+      "insight": "« 20-second » a donné 23 s : la contrainte de durée est tenue à 15 % près ; préciser « exactement 20 s » si la durée compte."
+    }
+  ],
+  "steal": [
+    "Volet traversant : aplat de la couleur d'accent qui couvre le cadre en 8 im (ease-in) puis se retire dans le même sens en 8 im (ease-out), 0,27 s au total.",
+    "Arguments en un mot, 0,9 s chacun, fond plein qui change à chaque mot, entrée « slam » en 2 im (approche large + flou), précédée de 0,4 s de silence.",
+    "Pour une démo d'outil en ligne de commande : faire rétrécir le terminal en panneau latéral de journal pendant que l'interface pilotée apparaît.",
+    "Clic lisible : étoile de 8 traits + anneau pointillé de 20 im + étiquette de cible « button 'Get Started' » accrochée au-dessus de l'élément.",
+    "Bande-son en structure : kick pendant l'exposé, coupure pendant la frappe, retour au moment où le produit apparaît, silence puis impact sur chaque argument."
+  ],
+  "flaws": [
+    "Son en retard constant de 5 im (83 ms) sur chaque clic et chaque coupe.",
+    "Mouvements placés hors de la grille de 120 BPM, hormis les trois lignes d'ouverture.",
+    "Bande-son réduite à un kick avec silence numérique entre les coups : effet métronome.",
+    "Texte du navigateur et du journal à ≈ 1 % de la hauteur, illisible.",
+    "Site factice « acme » générique, à barres grises, qui casse la qualité typographique du reste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Volets traversants et doubles mesurés à l'image, entrée « slam » en 2 im, assemblage lettre à lettre, transformation terminal → panneau et architecture sonore (coupure, retour, silence-impact) : un bon modèle de lancement produit à décortiquer à 60 fps, défaut de synchro compris."
+  }
+}

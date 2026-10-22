@@ -1,0 +1,290 @@
+{
+  "slug": "majorbaguette-fb11d7",
+  "title": "Brieform product presentation",
+  "handle": "@MajorBaguette",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Récit en 3 étapes clair et bien écrit, DA noir chaud + citron cohérente ; mais tout passe par des fondus au noir, aucune caméra, interface petite dans le cadre et longs maintiens, sans son.",
+  "summary": "Démo produit muette de 30 s (Remotion) pour Brieform, un outil de formulaires piloté par l'IA via MCP. Accroche « Need a form? Just ask your AI. » avec surligneur citron, puis trois chapitres numérotés : demander dans le chat, partager le lien (formulaire rempli par une cliente), lire les réponses résumées. Fin sur logo, slogan qui récapitule les 3 étapes et bouton d'appel à l'action. Lisible et honnête, mais visuellement plat.",
+  "prompt_vs_result": [
+    "Une ligne : vidéo de présentation de Brieform, 30 secondes. Aucune indication de style, de structure, de musique, de ton ni de public.",
+    "Claude a inventé la structure en 3 chapitres numérotés, l'accroche question/réponse, les maquettes de chat et de formulaire, les noms d'outils MCP, la palette noir + citron, le slogan récapitulatif et l'absence totale de son.",
+    "La durée est tenue à l'image près (900 im). Il aurait fallu préciser : zooms sur l'interface, vocabulaire de transitions autre que le fondu au noir, musique et tempo, taille minimale du texte d'interface."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1B1B19", "role": "fond noir chaud"},
+      {"hex": "#2A2A1E", "role": "halo radial olive au centre du fond"},
+      {"hex": "#D4F23A", "role": "accent citron : surligneur, coches, contour du lien, étiquettes, bouton d'appel"},
+      {"hex": "#F5F5F2", "role": "texte principal blanc"},
+      {"hex": "#8C8C86", "role": "texte secondaire gris"},
+      {"hex": "#232321", "role": "fenêtre de chat"},
+      {"hex": "#2E2E2B", "role": "bulle du message utilisateur"},
+      {"hex": "#F2F1ED", "role": "carte du formulaire web (clair)"},
+      {"hex": "#161616", "role": "bouton Submit et icône de succès"}
+    ],
+    "type": "Grotesque grasse (Inter Display Bold probable), casse phrase, interlettrage serré : accroche ≈ 9 % et 6 % de la hauteur. Interface en grotesque ≈ 2 %. Mono (Geist Mono ou JetBrains Mono probable) pour étiquettes de chapitre, noms d'outils et URL.",
+    "texture": "Ombre portée douce sous les fenêtres ; halo radial olive très léger au centre du fond ; aucun grain, aucun flou de mouvement, aucun glow.",
+    "style": "Démo d'interface sobre, sombre, accent citron",
+    "coherence": "Un seul accent citron pour tout ce qui est action ou réussite, une étiquette de chapitre et une légende à emplacement fixe, le même surligneur au début et à la fin : le système tient. Seule la carte de formulaire blanche rompt volontairement (c'est la page publique)."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Aucune piste audio. 30,00 s à 30 fps, aucune coupe franche : les 5 scènes sont reliées par des fondus au noir (dip to black) de ~15-18 im. La mesure automatique compte 84 % de maintiens statiques parce que la frappe au clavier ne bouge qu'une petite zone ; en réalité, les vrais maintiens sans aucun changement sont : accroche 1,63-2,73 s (1,1 s), après le lien 9,0-11,2 s (2,2 s), écran de succès 17,0-18,0 s (1 s), résumé 23,0-24,7 s (1,7 s), plan final 27,3-30,0 s (2,7 s), soit ≈ 8,7 s sur 30 (29 %). Ailleurs, le seul mouvement est la frappe (≈ 1,3 caractère par image) ou un élément qui apparaît en fondu toutes les 0,5-1 s. Pics de mouvement isolés : surligneur (1,3 s), fondus de scène (2,9 s, 11,6 s, 18,2 s, 25,0 s), validation du formulaire (16,7 s).",
+    "timeline": [
+      {"t": "0:00-0:00.5", "what": "Fond noir chaud avec halo olive ; « Need a form? » apparaît en fondu, en gris", "technique": "fondu d'apparition"},
+      {"t": "0:00.9-0:01.1", "what": "« Just ask your AI. » apparaît en gris sous la question, légère montée", "technique": "fondu + montée"},
+      {"t": "0:01.3-0:01.63", "what": "La ligne passe au blanc, un surligneur citron balaie « ask your AI. » de gauche à droite en 10 im, texte en réserve sombre", "technique": "surligneur balayé (marker wipe)"},
+      {"t": "0:01.63-0:02.73", "what": "Maintien de l'accroche", "technique": "maintien de lecture"},
+      {"t": "0:02.73-0:03.33", "what": "Fondu au noir, fenêtre « Your AI chat » en fondu, étiquette « 01 ASK IN CHAT »", "technique": "fondu au noir"},
+      {"t": "0:03.33-0:05.6", "what": "Frappe du message : « Create a client intake form: name, email, budget and project details. Then publish it. » ; légende « Describe it. Brieform builds and publishes it. »", "technique": "frappe au clavier"},
+      {"t": "0:06.3-0:08.5", "what": "Lignes d'outils « brieform · create_form » puis « publish_form » : spinner puis coche citron, 1 s chacune", "technique": "appels d'outils animés"},
+      {"t": "0:09.0-0:11.2", "what": "« Done. Your form is live at its own link: » + pastille « brieform.app/f/client-intake » ; maintien 2,2 s", "technique": "résultat + maintien"},
+      {"t": "0:11.23-0:11.83", "what": "Le chat s'éteint, la carte blanche du formulaire monte en opacité ; « 02 SHARE THE LINK »", "technique": "fondu enchaîné via le noir"},
+      {"t": "0:12.0-0:16.6", "what": "Remplissage champ par champ : Léa Martin, lea@studionord.fr, $5k to $10k, détails du projet ; légende « … never see an AI. »", "technique": "remplissage de formulaire"},
+      {"t": "0:16.7-0:18.0", "what": "Validation : écran « Thanks, we got it. » avec coche ronde ; maintien 1 s", "technique": "état de succès"},
+      {"t": "0:18.0-0:18.6", "what": "Fondu au noir, retour au chat, « 03 READ THE ANSWERS »", "technique": "fondu au noir"},
+      {"t": "0:18.6-0:19.5", "what": "Frappe « Summarize the responses so far. » ; légende « The answers come back in the same thread. »", "technique": "frappe au clavier"},
+      {"t": "0:20.5-0:23.0", "what": "« get_responses » spinner puis coche ; « You have 8 responses this week: » puis 3 puces toutes les 0,5 s, « Studio Nord » en citron", "technique": "résumé en cascade"},
+      {"t": "0:23.0-0:24.7", "what": "Maintien sur le résumé", "technique": "maintien"},
+      {"t": "0:24.7-0:25.4", "what": "Fondu au noir, logo Brieform en fondu (gris vers blanc)", "technique": "révélation de logo"},
+      {"t": "0:25.6-0:27.3", "what": "« Forms your AI builds, publishes, and reads. », surligneur sur « reads. », « Works with Claude, ChatGPT, Cursor… », bouton « brieform.app » + « Free to start »", "technique": "plan final en cascade"},
+      {"t": "0:27.3-0:30.0", "what": "Plan final figé 2,7 s", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no). Rien à compter.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Une frappe, des coches et un surligneur appelaient pourtant des effets sonores légers.",
+    "how_built": "Le prompt ne demande pas de son ; le rendu Remotion est sorti sans piste audio."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche question / réponse",
+      "name_en": "question-answer hook",
+      "t": "0:00.2-0:02.73",
+      "frames": "f6-f82",
+      "fps": 30,
+      "mechanics": "Deux lignes centrées : la question (« Need a form? », gris #8C8C86, ≈ 6 % de la hauteur) puis la réponse (« Just ask your AI. », ≈ 9 %, plus grasse). La question arrive à 0,2-0,5 s, la réponse 0,6 s plus tard, la mise en valeur 0,4 s après. Tenue 1,1 s une fois complète. Le problème et la promesse en 5 mots.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Passage du gris au blanc puis surligneur balayé",
+      "name_en": "grey-to-white flip + marker wipe",
+      "t": "0:00.9-0:01.63",
+      "frames": "f27-f49",
+      "fps": 30,
+      "mechanics": "f27-f33 : « Just ask your AI. » apparaît en fondu, gris, avec une montée d'environ 2 % de la hauteur. f39 : la ligne passe d'un coup au blanc. f39-f49 : un rectangle citron #D4F23A se déploie de gauche à droite derrière « ask your AI. » (≈ 60 % de la ligne) en 10 im ; avancée régulière puis ralentie sur « AI. » (ease-out léger). Le texte couvert passe en sombre (réserve, knockout). Pas de dépassement, pas de flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 27, "to": 50, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque grasse serrée à deux niveaux de gris",
+      "name_en": "bold tight grotesque, two-tone hierarchy",
+      "t": "0:00-0:02.73",
+      "frames": "f0-f82",
+      "fps": 30,
+      "mechanics": "Grotesque grasse (Inter Display Bold probable), interlettrage négatif, casse phrase. Hiérarchie par la couleur plus que par la taille : question grise et plus petite, réponse blanche, mot clé surligné. Bloc centré à ≈ 45 % de la hauteur, largeur ≈ 57 % du cadre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir chaud à halo olive",
+      "name_en": "warm black with radial glow",
+      "t": "0:00-0:30",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Fond #1B1B19 uni avec un halo radial #2A2A1E au centre (≈ 50 % de la largeur), visible seulement pendant les fondus au noir. Le halo ne bouge pas : aucun fond animé.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f546.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir entre chaque scène",
+      "name_en": "dip to black",
+      "t": "0:02.73-0:03.33",
+      "frames": "f82-f100",
+      "fps": 30,
+      "mechanics": "Même recette 4 fois (f82, f337, f540, f741) : sortie en baisse d'opacité sur ~8-10 im, 3-4 im de fond vide avec le halo, entrée en hausse d'opacité sur ~6-8 im, aucune échelle, aucun déplacement. Total ≈ 15-18 im (0,5-0,6 s). La carte du formulaire, claire, monte du gris au blanc sur 13 im (f342-f355).",
+      "verdict": "cliche",
+      "evidence": "microM-002-move-f546.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Système de chapitres : étiquette numérotée en haut, légende en bas",
+      "name_en": "numbered chapter chip + caption",
+      "t": "0:03.2-0:24.7",
+      "frames": "f96-f741",
+      "fps": 30,
+      "mechanics": "En haut au centre (y ≈ 7 %) : pastille citron avec numéro mono « 01 » « 02 » « 03 » + libellé mono gris en capitales espacées (« ASK IN CHAT », « SHARE THE LINK », « READ THE ANSWERS »), ≈ 1,5 % de la hauteur. En bas (y ≈ 92 %) : une phrase en grotesque ≈ 2,5 %, dont la seconde moitié est en citron (« builds and publishes it. », « never see an AI. », « in the same thread. »). Les deux apparaissent en fondu ~0,5 s après l'interface.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre de chat avec statut MCP connecté",
+      "name_en": "AI chat window mock",
+      "t": "0:03.0-0:11.2",
+      "frames": "f94-f337",
+      "fps": 30,
+      "mechanics": "Fenêtre façon macOS (3 pastilles, titre « Your AI chat », à droite « MCP · brieform connected » avec « brieform » en citron), ≈ 66 % de la largeur × 58 % de la hauteur, centrée, coins arrondis, ombre douce. Le texte d'interface fait ≈ 2 % de la hauteur : lisible sur ordinateur, limite sur téléphone. Aucun zoom pendant toute la scène.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe du message caractère par caractère",
+      "name_en": "typewriter prompt",
+      "t": "0:03.33-0:05.6",
+      "frames": "f100-f168",
+      "fps": 30,
+      "mechanics": "Bulle alignée à droite qui s'élargit au fil de la frappe puis passe sur 2 lignes. Cadence linéaire ≈ 1,3 caractère par image (≈ 40 caractères/s), curseur vertical en fin de texte. 86 caractères en ≈ 2,2 s. Même procédé pour « Summarize the responses so far. » (f559-f585) et dans les champs du formulaire.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Appels d'outils : spinner puis coche citron",
+      "name_en": "tool-call status lines",
+      "t": "0:06.3-0:09.0",
+      "frames": "f189-f270",
+      "fps": 30,
+      "mechanics": "Sous le message, une ligne mono « brieform · create_form » apparaît avec un spinner gris (f195), la coche citron remplace le spinner ≈ 1 s plus tard (f225) et la ligne « publish_form » apparaît en même temps avec son spinner ; coche à f255. Puis « Done. Your form is live at its own link: » et une pastille mono « ↗ brieform.app/f/client-intake » à contour citron (f270). Cadence régulière de 30 im par étape.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg",
+      "illus": {"from": 189, "to": 275, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Remplissage du formulaire champ par champ",
+      "name_en": "form fill sequence",
+      "t": "0:12.0-0:16.6",
+      "frames": "f360-f498",
+      "fps": 30,
+      "mechanics": "Carte claire #F2F1ED ≈ 58 % × 52 % du cadre : « Client intake », 4 champs, bouton Submit noir. L'anneau de focus passe de champ en champ (Name f360, Email ≈ f388, Budget ≈ f415, Project details ≈ f432) et chaque valeur est tapée (« Léa Martin », « lea@studionord.fr », « $5k to $10k », « A new site for our design studio, live before March. »). Environ 1 s par champ, 4,6 s en tout, sans zoom : on regarde taper de petits caractères.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "État de succès après validation",
+      "name_en": "success state swap",
+      "t": "0:16.7-0:18.0",
+      "frames": "f500-f540",
+      "fps": 30,
+      "mechanics": "Le contenu de la carte est remplacé en fondu enchaîné par une coche blanche dans un disque noir, « Thanks, we got it. » en gras et « We will get back to you within two days. » en gris. Seul pic de mouvement de la scène (16,7 s). Maintien 1 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Résumé IA en puces qui arrivent en cascade",
+      "name_en": "staggered AI summary bullets",
+      "t": "0:20.5-0:23.0",
+      "frames": "f615-f700",
+      "fps": 30,
+      "mechanics": "Ligne « get_responses » (spinner f615, coche f630), puis « You have 8 responses this week: » (f645), puis 3 puces à 15 im d'écart (f660, f675, f690), chacune passant de ~35 % d'opacité au blanc en ~10 im. Mot clé « Studio Nord » en citron dans la 3e puce. Les puces font le lien avec les données saisies plus tôt (budget $5k-$10k, Studio Nord, mars).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Trois chapitres récapitulés par le slogan",
+      "name_en": "three-step story with recap tagline",
+      "t": "0:03.0-0:27.3",
+      "frames": "f94-f820",
+      "fps": 30,
+      "mechanics": "Demander (01) → partager (02) → lire (03), avec la même cliente fictive (Léa, Studio Nord) d'un bout à l'autre ; le slogan final « Forms your AI builds, publishes, and reads. » reprend les 3 verbes dans l'ordre. Le surligneur du dernier mot « reads. » rime avec celui de l'accroche « ask your AI. » : boucle début-fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Plan final en cascade avec appel à l'action",
+      "name_en": "end card with CTA",
+      "t": "0:25.1-0:27.3",
+      "frames": "f753-f820",
+      "fps": 30,
+      "mechanics": "Logo (glyphe blanc en drapeau plié + « Brieform » gras, ≈ 6 % de la hauteur) en fondu gris → blanc f753-f762 ; slogan ≈ 3 % en fondu f768-f774 ; surligneur citron sur « reads. » en ~6 im (f786-f792) ; « Works with Claude, ChatGPT, Cursor and any MCP client. » gris ≈ 1,5 % f792-f801 ; bouton citron « brieform.app » (mono, texte sombre) + « Free to start » f807-f816. Écarts de 6 à 18 im. Puis 2,7 s figées.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 750, "to": 816, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Accent citron unique réservé à l'action",
+      "name_en": "single accent for success and emphasis",
+      "t": "0:00-0:30",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Le citron #D4F23A n'apparaît que sur : les mots clés surlignés, la seconde moitié des légendes, les coches d'outils, le contour du lien, les numéros de chapitre, « Studio Nord » et le bouton final. Tout le reste est en noir chaud, gris et blanc. Code couleur lisible : citron = ce qu'il faut retenir ou ce qui a réussi.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens longs après chaque état",
+      "name_en": "long holds",
+      "t": "0:09.0-0:30.0",
+      "frames": "f270-f899",
+      "fps": 30,
+      "mechanics": "2,2 s figées après le lien (f270-f337), 1 s sur le succès, 1,7 s sur le résumé, 2,7 s sur le plan final : ≈ 8,7 s sans aucun changement sur 30 s. Combiné à l'absence de son et de caméra, le rythme retombe à chaque fin de chapitre.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra absente",
+      "name_en": "locked-off camera",
+      "t": "0:00-0:30",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Aucun push, zoom, recadrage ni parallaxe en 30 s : les fenêtres restent à la même taille et au même endroit. Le geste clé (le message tapé, la coche, le lien, le bouton Submit) n'est jamais cadré seul. Un zoom calibré sur chaque geste aurait réglé la lisibilité et le rythme.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombre portée douce des fenêtres",
+      "name_en": "soft drop shadow",
+      "t": "0:03.0-0:24.7",
+      "frames": "f94-f741",
+      "fps": 30,
+      "mechanics": "Ombre floue large (~40 px à 1080p, opacité faible) sous la fenêtre de chat et la carte de formulaire, qui décolle les surfaces du fond noir. Pas de reflet, pas de grain : rendu d'interface propre.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne aucune information sur le produit, pourtant les noms d'outils (create_form, publish_form, get_responses), le statut MCP et l'URL brieform.app/f/… sont précis : Claude avait probablement accès au code ou au site du produit dans le projet Remotion."},
+    {"kind": "direction", "insight": "Sans direction artistique, Claude a pris le registre « démo SaaS sobre » : fond sombre, un accent, fondus. Résultat propre mais générique ; « présentation » a été lu comme « démo pas à pas », pas comme « film de marque »."},
+    {"kind": "structure", "insight": "« 30 seconds long » est la seule contrainte et elle est tenue à l'image près ; la structure en 3 chapitres numérotés + slogan récapitulatif est entièrement inventée et c'est le meilleur de la vidéo."},
+    {"kind": "build", "insight": "Remotion, aucune piste audio : sans demande explicite de musique ou d'effets sonores, le modèle livre une vidéo muette."},
+    {"kind": "qa", "insight": "Aucun contrôle de lisibilité mobile : interface à ≈ 2 % de la hauteur, jamais agrandie. Une règle « texte ≥ 3 % ou zoom sur le geste clé » aurait changé la vidéo."},
+    {"kind": "other", "insight": "Un prompt d'une ligne produit ici une vidéo correcte et lisible mais sans craft de mouvement : il faut nommer transitions, caméra et rythme pour sortir du fondu au noir par défaut."}
+  ],
+  "steal": [
+    "Accroche question/réponse : la réponse passe du gris au blanc, puis un surligneur citron balaie le mot clé en 10 images.",
+    "Découpez la démo en 3 chapitres numérotés (étiquette mono en haut, légende en bas) et récapitulez les 3 verbes dans le slogan final.",
+    "Appels d'outils en lignes mono : spinner gris puis coche couleur d'accent, une étape par seconde.",
+    "Bouclez début et fin : même surligneur sur le dernier mot du slogan que sur l'accroche.",
+    "Gardez la même cliente fictive d'un chapitre à l'autre pour que le résumé final cite ce qu'on a vu saisir."
+  ],
+  "flaws": [
+    "Quatre fondus au noir identiques comme seule transition : aucune continuité entre chat, formulaire et retour au chat.",
+    "Caméra fixe : interface à 66 % du cadre, texte ≈ 2 % de la hauteur, jamais de zoom sur le geste clé.",
+    "≈ 8,7 s de maintiens figés sur 30 s (après le lien, le succès, le résumé, à la fin).",
+    "Remplissage du formulaire de 4,6 s en petit : on regarde taper.",
+    "Vidéo muette : ni musique ni effets sonores pour la frappe, les coches ou la validation."
+  ],
+  "deep_study": {"worth": false, "why": "Non : fondus d'opacité et frappe linéaire, rien de fin à mesurer image par image ; le surligneur balayé (10 im) est déjà couvert par extra-01. Source native en 30 fps."}
+}

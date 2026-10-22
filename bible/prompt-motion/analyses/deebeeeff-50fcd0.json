@@ -1,0 +1,401 @@
+{
+  "slug": "deebeeeff-50fcd0",
+  "title": "Recipe brand 20th anniversary",
+  "handle": "@deebeeeff",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Propre et lisible, avec trois gestes réussis (compteur d'années, iris né d'un point, pop du logo avec dépassement) ; mais kit fête générique, temps mort central de 2,7 s et musique posée.",
+  "summary": "Post carré de 10 s pour les 20 ans d'un site de recettes. Acte 1 sur rayons crème : « 20 » qui surgit, confettis, compteur 2006 → 2026. Un point doré s'ouvre en iris vers l'acte 2 sur rayons bruns : logo qui jaillit en tournant, sceau « 20 YEARS », script « Happy 20th Anniversary! », merci, pilule de dates. Exécution soignée, idées de template.",
+  "prompt_vs_result": [
+    "Une vidéo « dynamique » de 10 s qui célèbre les 20 ans de The Ferguson Recipes. Rien sur le format, le style, la musique ni la structure ; le logo illustré de la marque a probablement été fourni.",
+    "Claude a choisi le carré 30 fps, la palette crème/orange/brun tirée du logo, les rayons de soleil, le compteur 2006 → 2026, l'iris, le sceau doré, le script « Happy 20th Anniversary! », la pilule de dates et les confettis.",
+    "« Dynamic » + « celebrating » donnent le kit fête par défaut. Il aurait fallu un concept lié à la cuisine (ingrédients, assiette), une musique et ses temps, l'ordre des messages, et proscrire confettis et étincelles."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#FBE9CF",
+        "role": "rayons crème clairs (acte 1)"
+      },
+      {
+        "hex": "#F6D6A9",
+        "role": "rayons crème foncés (acte 1)"
+      },
+      {
+        "hex": "#E8892B",
+        "role": "orange : « 20 », « 2026 », pilule de dates"
+      },
+      {
+        "hex": "#4A2A14",
+        "role": "brun foncé : contour du « 20 », « YEARS »"
+      },
+      {
+        "hex": "#6C421E",
+        "role": "rayons bruns clairs (acte 2)"
+      },
+      {
+        "hex": "#4E2E14",
+        "role": "rayons bruns foncés, vignette (acte 2)"
+      },
+      {
+        "hex": "#F7C548",
+        "role": "or : script, sceau, liseré de l'iris, étincelles"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "carte du logo"
+      },
+      {
+        "hex": "#FFF4E6",
+        "role": "sous-titre de remerciement"
+      },
+      {
+        "hex": "#D62E2E",
+        "role": "confettis rouges (avec vert #6BBE45, blanc, brun)"
+      }
+    ],
+    "type": "Linéale ronde très grasse (type Poppins Black) : « 20 » ≈ 32 % de la hauteur, orange contouré brun ; « YEARS » ≈ 8 %, capitales serrées ; script rond (type Pacifico) or ≈ 7 % ; sous-textes 3-4 %.",
+    "texture": "Ombres portées douces sous le « 20 », la carte et le sceau ; vignette sur les rayons ; liseré or de l'iris ; confettis plats sans flou ; étincelles à 4 branches ; aucun grain ni flou de mouvement.",
+    "style": "Carte d'anniversaire festive, esthétique template",
+    "coherence": "La palette vient du logo (orange du poulet, brun de la sauce, crème) et l'or relie iris, sceau et script. Ce qui casse : l'illustration du logo (style clipart, typo système probable) ne partage pas la typo Poppins/Pacifico, et la décoration (confettis, étincelles, sceau) n'a aucun lien avec la cuisine."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Tempo auto 79,9 BPM (pulsation 6,09), mais les attaques audio tombent toutes les 0,25 s (1,139 ; 1,389 ; 1,639 ; 1,889 s…) : pulsation réelle probable de 120 BPM en croches. Une seule coupe (iris, f90 = 3,00 s) : 2 plans de 3,0 s et 7,05 s. Densité : acte 1 très chargé (un nouvel événement toutes les 0,2-0,6 s de f4 à f91), acte 2 creux : après le sceau (f133, 4,43 s), rien de nouveau jusqu'au final (f213, 7,10 s), soit 2,7 s où seuls étincelles, confettis et rotation des rayons bougent ; le détecteur ne voit aucun maintien statique à cause de ces mouvements décoratifs. Final dense : 4 entrées en 1,8 s (recomposition, script, sous-titre, pilule) puis 1,1 s de tenue. Aucun geste ne se cale sur la musique.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.13",
+        "what": "Rayons crème en rotation (≈ 14°/s), cadre vide",
+        "technique": "fond sunburst rotatif"
+      },
+      {
+        "t": "0:00.13-0:00.47",
+        "what": "« 20 » orange à contour brun surgit de 0 à ≈ 50 % de la largeur en 10 im",
+        "technique": "pop d'échelle ease-out"
+      },
+      {
+        "t": "0:00.53-0:00.90",
+        "what": "Explosion de confettis depuis le creux entre « 2 » et « 0 »",
+        "technique": "burst radial de confettis"
+      },
+      {
+        "t": "0:00.73-0:00.90",
+        "what": "« YEARS » apparaît en fondu montant sous le chiffre",
+        "technique": "fade-up"
+      },
+      {
+        "t": "0:01.03-0:02.07",
+        "what": "« 2006 » apparaît, tient, puis roule jusqu'à 2026 ; la ligne « of Recipes, Plain & Simple » entre en fondu",
+        "technique": "compteur qui roule"
+      },
+      {
+        "t": "0:02.27",
+        "what": "« 2026 » passe du brun à l'orange",
+        "technique": "accent couleur d'arrivée"
+      },
+      {
+        "t": "0:02.67-0:03.03",
+        "what": "Point doré au centre qui s'ouvre en cercle à liseré or et dévoile les rayons bruns",
+        "technique": "iris né d'un point"
+      },
+      {
+        "t": "0:03.10-0:03.57",
+        "what": "Carte du logo jaillit de 12 % à 62 % puis se pose à ≈ 52 % en se redressant de −15° à 0°",
+        "technique": "pop avec dépassement et rotation"
+      },
+      {
+        "t": "0:04.27-0:04.43",
+        "what": "Sceau doré « 20 YEARS » claque en haut à droite, sur le coin de la carte",
+        "technique": "tampon (stamp)"
+      },
+      {
+        "t": "0:04.43-0:07.10",
+        "what": "Tenue : étincelles qui scintillent, pluie de confettis qui démarre vers 5,5 s",
+        "technique": "temps mort décoré"
+      },
+      {
+        "t": "0:07.10-0:07.77",
+        "what": "Carte + sceau rétrécissent de ≈ 21 % et montent de ≈ 13 % de la hauteur ; nouveau burst de confettis depuis la carte",
+        "technique": "recomposition pour l'écran final"
+      },
+      {
+        "t": "0:07.70-0:08.10",
+        "what": "« Happy 20th Anniversary! » en script or révélé de gauche à droite",
+        "technique": "balayage à bord doux"
+      },
+      {
+        "t": "0:08.27-0:08.40",
+        "what": "« Thank you for 20 years of cooking with us » en fondu",
+        "technique": "fondu simple"
+      },
+      {
+        "t": "0:08.70-0:08.90",
+        "what": "Pilule orange « 2006 • 2026 » surgit",
+        "technique": "pop d'échelle"
+      },
+      {
+        "t": "0:08.90-0:10.05",
+        "what": "Écran final tenu, confettis et étincelles",
+        "technique": "tenue finale"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Indice auto : aucune synchro (R ≤ 0,30, p ≥ 0,5), corrélation attaques z = 1,66, énergie ↔ mouvement r = 0,05. Comptage sur 16 gestes clés : 9/16 à ±1 im d'une barre de la grille 80 BPM (hasard 27 %), mais sur la vraie pulsation de 0,25 s seulement 7/16 à ±1 im (hasard 40 %) : rien au-delà du hasard. La coupe-iris (f90) et le pop du logo (f93) tombent dans des creux d'attaque (percentiles 10-12) ; le départ du final (f213) et la révélation du script (f231) sur des creux (percentile 0). Seules coïncidences : le burst de confettis f16 avec l'attaque la plus forte du début (0,557 s), et le final qui démarre près d'un changement de texture musicale (7,0-7,3 s), probablement fortuit.",
+    "synced": [],
+    "style_match": "Musique rythmée et festive (pulsation 0,25 s) en accord d'humeur avec la fête et les confettis, mais aucun geste n'est calé dessus.",
+    "how_built": "Prompt muet sur la musique, pile non précisée : bande-son très probablement ajoutée au montage après le rendu, sans recaler les animations sur ses temps."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Pop d'échelle du chiffre-titre",
+      "name_en": "Hero number scale-in",
+      "t": "0:00.13-0:00.47",
+      "frames": "f4-f14",
+      "fps": 30,
+      "mechanics": "« 20 » centré à ≈ 37 % de la hauteur, échelle 0 → ≈ 50 % de la largeur en 10 im (0,33 s) : f4 ≈ 3 %, f5 ≈ 13 %, f7 ≈ 30 %, f9 ≈ 42 %, f11 ≈ 50 %, f13-f14 stable. Grands pas puis petits pas = ease-out fort ; pas de dépassement visible. Pas de flou.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f10.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de confettis depuis le chiffre",
+      "name_en": "Confetti burst from the numeral",
+      "t": "0:00.53-0:00.90",
+      "frames": "f16-f27",
+      "fps": 30,
+      "mechanics": "Une poignée de confettis (rectangles rouge, vert, blanc, orange, brun) jaillit du creux entre « 2 » et « 0 » à f16 et s'étale radialement jusqu'à ≈ 80 % de la largeur en 11 im, puis retombe en tournoyant. Coïncide avec l'attaque audio la plus forte du début (0,557 s, f17).",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f10.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Fondu montant du mot sous le chiffre",
+      "name_en": "Fade-up subtitle",
+      "t": "0:00.73-0:00.90",
+      "frames": "f22-f27",
+      "fps": 30,
+      "mechanics": "« YEARS » (≈ 8 % de la hauteur, brun) passe d'≈ 20 % à 100 % d'opacité en 5-6 im en montant d'≈ 1 % de la hauteur. Geste standard, propre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f10.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'années qui roule",
+      "name_en": "Rolling year counter",
+      "t": "0:01.37-0:02.27",
+      "frames": "f41-f68",
+      "fps": 30,
+      "mechanics": "« 2006 » tient de ≈ f31 à f41, puis roule jusqu'à 2026 en 21 im (0,7 s) : 2007 f42, 2008 f44, 2009-2012 un an par image (f46-f49), puis 1-2 ans par image jusqu'à 2023 f57, ralentit (2024 f58-59, 2025 f60-61, 2026 f62) = ease-in-out. À f68 le chiffre passe du brun à l'orange (accent d'arrivée 6 im après l'arrêt). Mauvais placement : il coupe la phrase « 20 YEARS of Recipes ».",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 40,
+        "to": 68,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris né d'un point doré",
+      "name_en": "Dot-to-iris reveal",
+      "t": "0:02.67-0:03.07",
+      "frames": "f80-f92",
+      "fps": 30,
+      "mechanics": "Un petit point or apparaît f80-f84 au centre (dans le creux du « 20 »), puis s'agrandit en cercle à liseré or (≈ 1 % de la largeur) contenant la scène suivante : diamètre ≈ 8 % f85, 25 % f86, 40 % f87, 55 % f88, 78 % f89, 100 % f90, coins couverts f92. Croissance presque linéaire légèrement accélérée, 8 im (0,27 s). Le texte ne rétrécit pas : le cercle passe par-dessus.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f90.jpg",
+      "illus": {
+        "from": 78,
+        "to": 92,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion de palette clair → sombre à la transition",
+      "name_en": "Light-to-dark palette flip",
+      "t": "0:03.00",
+      "frames": "f90",
+      "fps": 30,
+      "mechanics": "Acte 1 sur rayons crème (#FBE9CF / #F6D6A9), acte 2 sur rayons bruns (#6C421E / #4E2E14) avec vignette sombre : l'iris marque à la fois le changement de scène et de valeur. La carte blanche du logo ressort fortement sur le brun.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f90.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Pop du logo avec dépassement et rotation",
+      "name_en": "Logo card overshoot pop",
+      "t": "0:03.10-0:04.00",
+      "frames": "f93-f120",
+      "fps": 30,
+      "mechanics": "Carte blanche à coins arrondis et liseré or : largeur ≈ 12 % f93, 33 % f94, 52 % f95, 62 % f96 (maximum), retombe à ≈ 52 % vers f99-f101 et se stabilise (dépassement ≈ +20 %). Rotation −15° → −8° pendant le pop puis redressement lent jusqu'à 0° vers f120 : l'échelle se pose en 8 im, la rotation en ≈ 27 im. Type back.out / ressort.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f90.jpg",
+      "illus": {
+        "from": 92,
+        "to": 107,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Sceau doré en tampon",
+      "name_en": "Badge stamp slam",
+      "t": "0:04.27-0:04.43",
+      "frames": "f128-f133",
+      "fps": 30,
+      "mechanics": "Rosette dentelée or « 20 YEARS » : entre à ≈ 30 % de la largeur, semi-transparente et tournée d'≈ 30°, puis rétrécit à ≈ 13 % en 4-5 im en devenant opaque et en se redressant ; se pose à ≈ (88 %, 12 %) en chevauchant le coin de la carte, bord dentelé à ≈ 1-3 % du bord du cadre. Pas de rebond.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f131.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Rayons de soleil rotatifs (sunburst)",
+      "name_en": "Rotating sunburst",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f298",
+      "fps": 30,
+      "mechanics": "24 paires de rayons (période 15°) centrées sur le cadre. Crème : rotation continue ≈ 14°/s mesurée. Brun : ≈ 10°/s juste après l'iris puis quasi immobile (mesure bruitée, probable). Vignette radiale plus sombre aux bords. Fond le plus courant des templates festifs.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Étincelles qui scintillent et pluie de confettis",
+      "name_en": "Twinkling sparkles and confetti rain",
+      "t": "0:03.50-0:10.05",
+      "frames": "f105-f298",
+      "fps": 30,
+      "mechanics": "Étoiles à 4 branches or et blanches (2-5 % de la largeur) qui grossissent et s'éteignent en ≈ 10 im autour de la carte ; confettis qui tombent du haut à partir de ≈ 5,5 s et s'intensifient au final. Décor permanent sans lien avec la cuisine ni avec la musique.",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Recomposition pour l'écran final",
+      "name_en": "End-card relayout",
+      "t": "0:07.10-0:07.77",
+      "frames": "f213-f233",
+      "fps": 30,
+      "mechanics": "La carte passe de ≈ 52 % à ≈ 41 % de la largeur et son centre remonte de ≈ 45 % à ≈ 32 % de la hauteur en ≈ 20 im (0,67 s), ease-in-out (petits pas f213-f215, grands f216-f222, petits f226-f233) ; le sceau suit vers (74 %, 9 %). Libère la moitié basse pour le message. Un second burst de confettis part de la carte à f226.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f219.jpg",
+      "illus": {
+        "from": 210,
+        "to": 236,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation du script par balayage",
+      "name_en": "Left-to-right soft wipe on script",
+      "t": "0:07.70-0:08.10",
+      "frames": "f231-f243",
+      "fps": 30,
+      "mechanics": "« Happy 20th Anniversary! » (script or, ≈ 83 % de la largeur, centré à ≈ 64 % de la hauteur) apparaît de gauche à droite derrière un masque à bord dégradé : « H » f232, « Happy 20th » f236, « Annive… » f239, complet f242-f243. Vitesse quasi linéaire, 12 im (0,4 s). Évoque l'écriture à la main sans tracé lettre à lettre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Fondu du remerciement",
+      "name_en": "Thank-you line fade",
+      "t": "0:08.27-0:08.40",
+      "frames": "f248-f252",
+      "fps": 30,
+      "mechanics": "Ligne blanche cassée (≈ 3 % de la hauteur, linéale moyenne) en fondu d'opacité 0 → 100 % en 4-5 im, sans déplacement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pilule de dates qui surgit",
+      "name_en": "Date pill pop",
+      "t": "0:08.70-0:08.90",
+      "frames": "f261-f267",
+      "fps": 30,
+      "mechanics": "Capsule orange (≈ 31 % de la largeur) « 2006 • 2026 » en blanc gras : échelle ≈ 30 % → 100 % en 6 im, ease-out, sans dépassement visible. Répète l'information du compteur de l'acte 1.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Chiffre géant contouré, linéale ronde + script",
+      "name_en": "Outlined chunky numeral with script pairing",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f298",
+      "fps": 30,
+      "mechanics": "« 20 » ≈ 32 % de la hauteur en linéale ronde très grasse orange #E8892B, contour brun #4A2A14 ≈ 1,2 % de la largeur, ombre douce ; hiérarchie claire 32 % / 8 % / 4,5 % / 3,6 %. Acte 2 : script rond or + linéale. Le contour épais donne un côté sticker cohérent avec le logo clipart.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Deux actes : chiffre → marque → message",
+      "name_en": "Number, brand, message structure",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f298",
+      "fps": 30,
+      "mechanics": "Acte 1 (3,0 s) : le chiffre et le compteur posent l'idée « 20 ans » ; iris ; acte 2 (7,05 s) : la marque (logo + sceau), puis l'écran final message + remerciement + dates. Structure claire, mais l'acte 2 attend 2,7 s avant son message.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Temps mort central décoré",
+      "name_en": "Decorated dead time",
+      "t": "0:04.43-0:07.10",
+      "frames": "f133-f213",
+      "fps": 30,
+      "mechanics": "80 im (2,7 s) sans nouvelle information : seuls les étincelles, les confettis et un léger flottement probable de la carte (± 0,7 % de la hauteur) animent l'écran. Sur 10 s, plus d'un quart de la durée.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le logo illustré (assiette, poulet, salade, « Established 2006 ») a manifestement été fourni : Claude en a tiré la palette (orange, brun, crème), l'idée du compteur 2006 → 2026 et la pilule de dates. Un bon asset suffit à donner une cohérence chromatique."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Dynamic » et « celebrating » sans autre direction produisent le kit fête par défaut : rayons de soleil, confettis, étincelles, sceau doré, script « Happy Anniversary! ». Pour sortir du template, nommer un concept propre au sujet (ingrédients qui forment le 20, assiette qui tourne)."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure demandée : le modèle a choisi un plan en deux actes avec iris, et a chargé l'acte 1 (un événement toutes les 0,2-0,6 s) tout en laissant 2,7 s creuses dans l'acte 2. Préciser une grille temporelle (« un nouvel élément toutes les 0,5 s ») aurait évité le creux."
+    },
+    {
+      "kind": "banned",
+      "insight": "Sans liste d'interdits, les tics IA de célébration apparaissent tous ; il aurait fallu proscrire confettis, étincelles et rayons de soleil si l'on vise un rendu de studio."
+    },
+    {
+      "kind": "other",
+      "insight": "Rien sur la musique : la bande-son a visiblement été posée après coup ; demander une piste avec BPM connu et caler iris, pop du logo et script sur ses temps aurait transformé la vidéo."
+    }
+  ],
+  "steal": [
+    "Faire naître un point doré dans le creux du titre, puis l'agrandir en iris à liseré or : la transition sort du contenu au lieu de s'y superposer.",
+    "Compteur d'années en ease-in-out (lent, rapide, lent sur 0,7 s), puis changement de couleur 6 im après l'arrêt : l'arrivée devient un accent.",
+    "Pop de logo : échelle 12 % → 62 % en 3 im (≈ +20 % de dépassement) avec une rotation de −15° qui se redresse plus lentement que l'échelle.",
+    "Inverser la valeur du fond (crème → brun profond) au moment de la transition pour marquer le passage du chiffre à la marque.",
+    "Avant l'écran final, rétrécir et remonter le logo (−21 %, +13 % de hauteur, ease-in-out 20 im) pour libérer la place du message."
+  ],
+  "flaws": [
+    "« 2026 » glissé entre « YEARS » et « of Recipes, Plain & Simple » casse la phrase « 20 years of recipes ».",
+    "Temps mort de 2,7 s (4,4-7,1 s) : seule la décoration bouge, aucun message nouveau.",
+    "Kit fête générique : rayons de soleil, confettis, étincelles, sceau doré, script « Happy Anniversary! ».",
+    "Musique posée : coupe, pop du logo et révélations ne tombent sur aucun temps.",
+    "Écran final chargé : logo, sceau, script, merci, pilule et confettis tous centrés, dates répétées."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Vidéo de template sans synchro musicale ; ses trois bons gestes (iris né d'un point, compteur ease-in-out, pop du logo avec dépassement) sont entièrement mesurés sur les planches microscope et extra à 30 fps."
+  }
+}

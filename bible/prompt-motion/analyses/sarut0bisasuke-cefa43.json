@@ -1,0 +1,436 @@
+{
+  "slug": "sarut0bisasuke-cefa43",
+  "title": "White Russian recipe animation",
+  "handle": "@Sarut0biSasuke",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Mise en page éditoriale soignée, typographie juste (vraies fractions, mono + écriture pinceau), liquides crédibles (la liqueur coule au fond, la crème marbre) ; mais lent, action petite dans le cadre, muet.",
+  "summary": "Recette du White Russian en 30 s, plan unique 16:9 : verre au centre, colonne d'étape à gauche, fiche recette à droite qui se coche, barre de progression en 5 segments en haut. Point fort : la physique des liquides (panache de liqueur qui tombe au fond, crème qui flotte et marbre) et la typographie. Points faibles : 4,5 s avant la première étape, pauses entre étapes, verre petit dans le cadre, aucun son.",
+  "prompt_vs_result": [
+    "Quasi copie du prompt Negroni de @Ror_Fly : recette animée en HTML/JS, style explainer, du verre vide au cocktail fini, ingrédients et doses visibles au versement, 30 s.",
+    "Le format 16:9, la fiche recette latérale, la palette café-crème, l'écriture pinceau, les fractions d'once avec ml, la densité des liquides, le mot de fin « Good drink. » et les conseils (« big cubes melt slower »).",
+    "Même prompt, même squelette que le Negroni (verre tracé, glaçons à traits d'impact, bouteille qui bascule, graduations, compteur, étapes cochées) : c'est le modèle par défaut. Rien sur le rythme ni le son : intro lente, vidéo muette."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F5F0E8",
+        "role": "fond papier crème (scène)"
+      },
+      {
+        "hex": "#EBDCC8",
+        "role": "panneau recette latéral"
+      },
+      {
+        "hex": "#483020",
+        "role": "encre brun café : titres, contours"
+      },
+      {
+        "hex": "#B06A3A",
+        "role": "accent cuivre : progression, coches, flèche, repère cible (estimé)"
+      },
+      {
+        "hex": "#402018",
+        "role": "liqueur de café dans le verre"
+      },
+      {
+        "hex": "#E8D8C0",
+        "role": "crème"
+      },
+      {
+        "hex": "#D8E0E8",
+        "role": "vodka, bleu très pâle"
+      },
+      {
+        "hex": "#EDEFEA",
+        "role": "intérieur du verre"
+      },
+      {
+        "hex": "#A09080",
+        "role": "texte secondaire, étapes à venir"
+      },
+      {
+        "hex": "#D8B890",
+        "role": "bâtonnet en bois"
+      }
+    ],
+    "type": "Écriture pinceau (probable Caveat Brush) pour le titre (≈ 10 % de H par ligne) et les doses (≈ 12 %) ; mono capitales très espacées (probable IBM Plex Mono) ≈ 1,6 % pour étiquettes et ml ; vraies fractions ¼ ½ ¾ 1½.",
+    "texture": "Contours crayonnés à double trait sur le verre, reflets verticaux blancs ; ombre intérieure sur le bord gauche du panneau latéral (effet page de carnet) ; panache de liqueur et nuages de crème en flou gaussien ; éclaboussures d'encre en points ; aucun flou de mouvement ; glaçons qui flottent d'1-2 px en continu.",
+    "style": "carnet de recettes éditorial, café-crème",
+    "coherence": "Toute la palette vient de la boisson (café, crème, cuivre, papier) ; trois voix typographiques à rôles fixes ; le cuivre est réservé à la progression (barre, coches, flèche, repère), donc il guide l'œil. Seul le bleu de la vodka sort de la gamme, brièvement."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Plan unique de 30,00 s (900 im à 30 fps), aucune coupe. Le détecteur automatique annonce 85 % de maintiens statiques, mais la mesure image à image ne trouve que 0,93 s d'images strictement identiques (f1-f13 et f99-f113) : les mouvements sont simplement petits dans un cadre 1920×1080 (glaçons qui flottent, barre de progression qui se remplit en continu, bouteille hors du verre). Perceptivement c'est lent : 4,5 s d'intro avant l'étape 1, une colonne gauche vide ≈ 0,5 s entre chaque étape (8,0 - 13,5 - 19,0 - 24,5 s), versements de 2,5 à 3 s. Blocs : intro 0-4,5 s, glace 4,5-8,0, vodka 8,5-13,5, liqueur 13,6-19,0, crème 19,5-24,5, service 25,0-27,4, fin 27,4-30,0. Les pics d'énergie (13,8 - 14,6 - 17,0 - 17,8 s) sont l'entrée, la bascule, le retour et la sortie de la bouteille de liqueur.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.8",
+        "what": "intérieur du verre déjà là, son contour se trace ; étiquette mono « CLASSIC · ROCKS GLASS · SERVES 1 » en fondu",
+        "technique": "tracé progressif (draw-on)"
+      },
+      {
+        "t": "0:00.6-0:01.6",
+        "what": "« White » puis « Russian » s'écrivent lettre à lettre dans le panneau de droite",
+        "technique": "écriture lettre à lettre"
+      },
+      {
+        "t": "0:00.9-0:01.1",
+        "what": "colonne gauche « Start with a cold glass / ROCKS GLASS · 6-10 OZ »",
+        "technique": "fondu"
+      },
+      {
+        "t": "0:02.0",
+        "what": "soulignement manuscrit sous le titre",
+        "technique": "trait tracé"
+      },
+      {
+        "t": "0:02.5-0:04.0",
+        "what": "liste des 4 ingrédients, barre de progression en 5 segments, graduations du verre, pied de page apparaissent l'un après l'autre",
+        "technique": "construction progressive de l'interface"
+      },
+      {
+        "t": "0:04.0-0:04.5",
+        "what": "colonne gauche remplacée par « STEP 1 / 5 Fill with ice / 0 cubes », flèche cuivre sur l'ingrédient 1",
+        "technique": "changement d'étape en fondu"
+      },
+      {
+        "t": "0:04.9-0:06.6",
+        "what": "3 glaçons tombent, traits d'impact, compteur 0 → 3 cubes",
+        "technique": "chute + traits d'impact"
+      },
+      {
+        "t": "0:07.5-0:08.4",
+        "what": "coche cuivre sur la glace, colonne gauche vide",
+        "technique": "respiration entre étapes"
+      },
+      {
+        "t": "0:08.5-0:13.0",
+        "what": "bouteille de vodka descend, bascule de ≈ 110°, filet, compteur ¼ → 1½ oz (45 ml), repère ▸ à 1½, retour et sortie",
+        "technique": "versement + compteur en quarts d'once"
+      },
+      {
+        "t": "0:13.6-0:18.5",
+        "what": "liqueur de café : panache sombre qui tombe au fond, nappe qui remonte, ¾ oz",
+        "technique": "liquide plus dense qui coule"
+      },
+      {
+        "t": "0:19.5-0:24.0",
+        "what": "pot à lait entre en haut à droite, verse la crème : couche claire en surface et nuages qui marbrent",
+        "technique": "crème flottante et marbrure"
+      },
+      {
+        "t": "0:25.0-0:27.4",
+        "what": "bâtonnet descend dans le verre, flèche elliptique cuivre autour du bord, « 3 oz · about 90 ml »",
+        "technique": "indication de geste par flèche"
+      },
+      {
+        "t": "0:27.4-0:29.0",
+        "what": "colonne gauche s'efface, « Good drink. » s'écrit en bas à gauche, éclaboussures d'encre près du pied du verre",
+        "technique": "mot de fin manuscrit"
+      },
+      {
+        "t": "0:29.0-0:30.0",
+        "what": "légende mono « 3 OZ IN THE GLASS · ABOUT 90 ML », maintien final",
+        "technique": "carton de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no) : pas de temps ni d'attaques à comparer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le ton café-carnet appellerait un lo-fi doux ou des bruitages de bar.",
+    "how_built": "Le prompt ne demandait pas de son ; rendu HTML capturé sans audio."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre écrit lettre à lettre en pinceau",
+      "name_en": "Per-letter handwritten reveal",
+      "t": "0:00.63-0:01.60",
+      "frames": "f19-f48",
+      "fps": 30,
+      "mechanics": "« White » se révèle lettre par lettre de f19 à f27 (W sur 2-3 im, puis ≈ 1,5 im par lettre), pause de 11 im, puis « Russian » de f38 à f48. Chaque lettre apparaît d'un coup ou par un balayage très court (pas de tracé du pinceau, probable masque par caractère). Écriture pinceau brun #483020, ≈ 10 % de H par ligne, deuxième ligne décalée à droite comme une vraie écriture. Le soulignement manuscrit se trace à 2,0 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 18,
+        "to": 48,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contour du verre tracé sur un fond déjà posé",
+      "name_en": "Outline draw-on over pre-filled shape",
+      "t": "0:00.40-0:01.20",
+      "frames": "f12-f36",
+      "fps": 30,
+      "mechanics": "L'intérieur gris pâle du verre est visible dès f0 ; le contour brun se trace à partir de f12 (coin haut droit et paroi gauche d'abord), fermé vers f36 : ≈ 24 im (0,8 s), vitesse régulière (probable linéaire). Le verre occupe ≈ 19 % de la largeur (x 28-47 %) et 46 % de la hauteur (y 40-86 %). Ordre inverse du Negroni (remplissage puis contour), plus doux mais le rectangle sans contour au début ressemble à un bug.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Construction progressive de l'interface",
+      "name_en": "Staggered UI build-up",
+      "t": "0:00.3-0:04.0",
+      "frames": "f9-f120",
+      "fps": 30,
+      "mechanics": "Les éléments arrivent en fondu, l'un après l'autre, sans déplacement : étiquette mono f9-f18, colonne « Start with a cold glass » f28-f31, soulignement 2,0 s, ingrédients de la liste à 2,5 / 2,7 / 3,0 / 3,3 s environ (décalage ≈ 0,25 s), barre de progression et ses libellés 3,0-3,5 s, graduations du verre 3,5 s, pied de page « BUILD OVER ICE · FLOAT THE CREAM » 3,5-4,0 s. Clair, mais 4,5 s avant la première action.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Scène + fiche recette latérale",
+      "name_en": "Stage plus recipe sidebar",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Cadre coupé à 67 % : à gauche la scène crème (colonne d'étape x 4-25 %, verre x 28-47 %, objets qui entrent par le haut à x 45-60 %), à droite un panneau beige #EBDCC8 avec ombre intérieure sur son bord gauche, comme une page de carnet (titre, liste cochable, pied de page). En haut de la scène, barre en 5 segments (x 4-63 %, y ≈ 7 %) avec libellés mono. Hiérarchie nette, mais l'action (le verre) ne fait que 19 % de la largeur.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois voix typographiques et vraies fractions",
+      "name_en": "Brush script, wide mono and true fractions",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Voix 1 : écriture pinceau (probable Caveat Brush) pour le titre, la consigne « Add coffee liqueur » (≈ 5 % H) et la dose « ¼ oz » (≈ 12 % H, unité « oz » en petit). Voix 2 : mono capitales espacées (interlettrage ≈ +20 %) pour « STEP 3 / 5 » en cuivre, « 11 ML », les libellés de barre et le pied de page. Voix 3 : manuscrite gris-brun pour les notes (« Kahlúa or similar »). Les doses utilisent de vraies fractions ¼ ½ ¾ 1½, aussi sur les graduations (¾, 1½, 2¼, 3 oz).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Liste d'ingrédients qui se coche",
+      "name_en": "Checklist with drawn checks and current-step arrow",
+      "t": "0:04.2-0:24.0",
+      "frames": "f126-f720",
+      "fps": 30,
+      "mechanics": "Chaque ingrédient a un cercle vide ; l'ingrédient en cours reçoit une flèche cuivre « → » à gauche, les suivants restent gris. À la fin de l'étape une coche cuivre se trace en débordant du cercle (glace 7,5 s, vodka 13,0 s, liqueur ≈ 18,5 s, crème 24,0 s), puis la flèche descend d'une ligne au début de l'étape suivante. Lecture immédiate de la progression.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de progression en segments qui se remplit en continu",
+      "name_en": "Segmented progress bar",
+      "t": "0:04.5-0:28.0",
+      "frames": "f135-f840",
+      "fps": 30,
+      "mechanics": "5 segments ICE / VODKA / COFFEE / CREAM / SERVE de longueurs différentes (proportionnelles à la durée probable de chaque étape). Le segment actif se remplit en cuivre de gauche à droite sans arrêt pendant l'étape (mesuré : différence d'images de 1-2 px par image à y ≈ 74-80 px), le libellé passe du gris au brun. C'est la seule chose qui bouge à chaque image et elle donne un sentiment de temps qui avance.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur en quarts d'once avec ml et repère cible",
+      "name_en": "Quarter-ounce counter with target marker",
+      "t": "0:09.5-0:12.0",
+      "frames": "f285-f360",
+      "fps": 30,
+      "mechanics": "Le compteur ne glisse pas : il saute de fraction en fraction, comme un doseur (0 → ¼ à 10,0 s → ½ à 10,5 s → 1 à 11,0 s → 1¼ à 11,5 s → 1½ à 12,0 s), avec les ml en mono dessous (9 ML, 18 ML… 45 ML). Au début du versement, un petit triangle cuivre « ▸ » apparaît sur la graduation à atteindre (1½, puis 2¼ pour la liqueur, 3 oz pour la crème). Le niveau du liquide atteint le repère quand le compteur atteint la dose.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg",
+      "illus": {
+        "from": 285,
+        "to": 360,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Chute des glaçons, arrêt sec et traits d'impact",
+      "name_en": "Ice drop with impact strokes",
+      "t": "0:04.93-0:06.60",
+      "frames": "f148-f198",
+      "fps": 30,
+      "mechanics": "Chaque glaçon naît au-dessus du verre, tombe jusqu'au fond en ≈ 6 im (0,2 s) avec accélération (petits pas puis grands pas), s'arrête net sans rebond, et 3 petits traits (un vertical, deux obliques) jaillissent au-dessus pendant ≈ 10 im puis s'effacent. Décalage entre glaçons ≈ 20 puis 16 im (0,67 puis 0,53 s) ; le 3e tombe tourné à 45° et se pose en pyramide. Compteur « 0 cubes » → « 1 cubes » (faute de pluriel) → « 3 cubes ».",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg",
+      "illus": {
+        "from": 148,
+        "to": 198,
+        "n": 7
+      }
+    },
+    {
+      "cat": "image",
+      "name_fr": "Bouteille qui descend, bascule et remonte",
+      "name_en": "Bottle drop-in, tilt and exit",
+      "t": "0:08.5-0:13.0",
+      "frames": "f255-f390",
+      "fps": 30,
+      "mechanics": "La bouteille arrive par le haut à droite du verre (x ≈ 50 %) et se pose en ≈ 4 im avec une très légère retombée, reste droite ≈ 0,3 s, puis bascule de ≈ 110° en ≈ 10 im (f267-f277, 0,33 s) en glissant au-dessus du verre : petits pas, grands pas, petits pas = ease-in-out. Après le versement elle se redresse et ressort par le haut (liqueur : retour f510-f519, sortie f531-f537). Bouteilles différenciées (vodka bleu pâle, liqueur brune trapue, pot à lait pour la crème).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 255,
+        "to": 299,
+        "n": 7
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet qui descend avant que le niveau monte",
+      "name_en": "Pour stream with leading edge",
+      "t": "0:09.30-0:09.50",
+      "frames": "f279-f285",
+      "fps": 30,
+      "mechanics": "Le filet sort du goulot à f279 et son extrémité descend jusqu'au fond du verre en ≈ 4 im (f279-f283) ; le liquide commence à apparaître au fond seulement ensuite (f285). Ordre physique respecté : la goutte arrive avant que le niveau monte. Filet fin, couleur du liquide, légèrement transparent pour la vodka.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Liqueur plus dense qui coule au fond",
+      "name_en": "Sinking dense-liquid plume",
+      "t": "0:14.90-0:17.00",
+      "frames": "f447-f510",
+      "fps": 30,
+      "mechanics": "La liqueur brune #402018 ne s'ajoute pas par le haut : elle forme dans la vodka un panache flou (flou gaussien, bords doux) qui descend de la surface au fond en ≈ 12 im (f450-f462), reste en colonne pendant le versement, s'étale en monticule au fond (f483-f492), puis la nappe sombre remonte depuis le bas jusqu'à couvrir tout le liquide (f495-f510). Effet de densité crédible et très lisible.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 447,
+        "to": 510,
+        "n": 7
+      }
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Crème qui flotte et marbre",
+      "name_en": "Floating cream with marbling clouds",
+      "t": "0:20.5-0:23.0",
+      "frames": "f615-f690",
+      "fps": 30,
+      "mechanics": "Le pot verse un filet crème #E8D8C0 : une couche claire se forme en surface (entre 2¼ et 3 oz) et des nuages clairs flous apparaissent dans la liqueur sombre puis s'étalent (21,0-22,5 s), comme une crème qui descend en volutes. Les nuages restent ensuite figés en marbrure jusqu'à la fin. Joli, mais les nuages ressemblent à des taches floues plutôt qu'à des volutes.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flèche elliptique pour indiquer le geste",
+      "name_en": "Elliptical stir arrow",
+      "t": "0:25.0-0:27.4",
+      "frames": "f750-f822",
+      "fps": 30,
+      "mechanics": "Un bâtonnet en bois glisse du haut du cadre dans le verre (25,0-25,5 s) et se pose en biais ; une ellipse cuivre avec pointe de flèche se trace autour du bord du verre (26,0-27,0 s) pour dire « remuer ». Le liquide, lui, ne se mélange pas (la consigne propose aussi « or sip it layered ») : l'indication remplace l'action.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Mot de fin manuscrit avec éclaboussure",
+      "name_en": "Handwritten sign-off with ink splatter",
+      "t": "0:27.83-0:29.00",
+      "frames": "f835-f870",
+      "fps": 30,
+      "mechanics": "La colonne d'étape s'efface (f821-f825), puis des points d'encre brune (un gros, plusieurs petits) éclosent près du pied droit du verre (f835-f841) et « Good drink. » s'écrit lettre à lettre en bas à gauche (f837-f851, ≈ 1,5 im par lettre, ≈ 8 % de H). La légende mono « 3 OZ IN THE GLASS · ABOUT 90 ML » arrive en fondu vers f869. Fin chaleureuse qui reprend la voix du titre.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 833,
+        "to": 870,
+        "n": 6
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Respiration à colonne vide entre les étapes",
+      "name_en": "Empty-column breath between steps",
+      "t": "0:08.0-0:08.5",
+      "frames": "f240-f255",
+      "fps": 30,
+      "mechanics": "Après chaque coche, la colonne gauche se vide ≈ 0,5 s avant que l'étape suivante arrive en fondu (8,0 - 13,5 - 19,0 - 24,5 s). Ponctuation nette entre les étapes, mais quatre trous de 0,5 s plus 4,5 s d'intro font perdre ≈ 6,5 s sur 30.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glaçons qui flottent en continu",
+      "name_en": "Idle ice bob",
+      "t": "0:07.0-0:30.0",
+      "frames": "f210-f899",
+      "fps": 30,
+      "mechanics": "Mesuré pendant le maintien final : seule la zone des glaçons change d'une image à l'autre (x 562-874, y 516-630 px), ≈ 200 pixels modifiés par image, soit un flottement d'1-2 px. Sur toute la vidéo, seulement 0,93 s d'images strictement identiques : l'image n'est jamais morte, même quand rien d'important ne se passe.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette tirée de la boisson",
+      "name_en": "Drink-derived palette",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Fond crème, panneau beige, encre brun café, accent cuivre : la vidéo a la couleur du White Russian. La couleur du verre suit les ingrédients (vodka bleu très pâle, liqueur #402018, crème #E8D8C0). Le cuivre #B06A3A est réservé aux signaux de progression (barre, flèche, coches, repère ▸, ellipse).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure recette en 5 étapes",
+      "name_en": "Five-step recipe structure",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Intro 4,5 s → glace 3,5 s → vodka 5,0 s → liqueur 5,4 s → crème 5,0 s → service 2,4 s → fin 2,6 s ; 30,00 s pile. Chaque étape : consigne + dose à gauche, action au centre, coche à droite. Ajouts de contenu utiles non demandés : « big cubes melt slower », « Kahlúa or similar », « heavy cream or whole milk », « or sip it layered ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt est presque mot pour mot celui du Negroni de @Ror_Fly avec « White Russian » : on obtient le même squelette (verre tracé, glaçons à traits d'impact, bouteille qui bascule, graduations, compteur, étapes cochées). C'est le modèle par défaut de Claude pour ce prompt."
+    },
+    {
+      "kind": "direction",
+      "insight": "Sans direction artistique, la boisson dicte la palette et le ton : rouge cartoon pour le Negroni, café-crème éditorial ici. Le format a aussi changé seul (1:1 contre 16:9)."
+    },
+    {
+      "kind": "inputs",
+      "insight": "« showing the ingredients and measurements as they go into the glass » a donné les vraies fractions d'once, les ml, le repère cible sur les graduations et le compteur qui saute de quart en quart."
+    },
+    {
+      "kind": "other",
+      "insight": "Claude a ajouté de la vraie connaissance de bar (densité de la liqueur qui coule, crème qui flotte, conseils sur les glaçons) : le réalisme des liquides vient du sujet, pas du prompt."
+    },
+    {
+      "kind": "structure",
+      "insight": "Rien sur le rythme : 4,5 s d'intro et des pauses de 0,5 s entre étapes. Il aurait fallu imposer « première action avant 1,5 s » et des enchaînements sans colonne vide."
+    },
+    {
+      "kind": "qa",
+      "insight": "« 1 cubes » : le pluriel n'est pas géré, aucune relecture du rendu n'était demandée."
+    },
+    {
+      "kind": "other",
+      "insight": "Aucun son demandé : vidéo muette, alors que glaçons et versements appellent des bruitages."
+    }
+  ],
+  "steal": [
+    "Faire respecter la densité : liquide lourd en panache flou qui tombe au fond puis remonte, crème qui flotte et marbre.",
+    "Compter dans l'unité du métier : fractions ¼ ½ ¾ qui sautent comme un doseur, ml en mono dessous.",
+    "Poser un repère cible (petit triangle) sur la graduation avant de verser, le niveau le rejoint quand le compteur atteint la dose.",
+    "Écrire le titre et le mot de fin lettre à lettre dans la même écriture pinceau (≈ 1,5 im par lettre) pour encadrer la vidéo.",
+    "Réserver une couleur d'accent aux seuls signaux de progression : barre, flèche, coches, repère."
+  ],
+  "flaws": [
+    "4,5 s d'intro avant la première action et 0,5 s de colonne vide entre chaque étape.",
+    "Le verre ne fait que 19 % de la largeur : action petite, aucun zoom ni recadrage.",
+    "« 1 cubes » : faute de pluriel visible à l'écran.",
+    "Glaçons qui s'arrêtent net sans rebond ni écrasement ; flèche elliptique au lieu d'un vrai mélange.",
+    "Vidéo muette."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "30 fps, pas de musique, mouvements lents et simples : les planches suffisent. À étudier plutôt pour le panache de liqueur et la mise en page, en comparaison directe avec le Negroni (même prompt)."
+  }
+}

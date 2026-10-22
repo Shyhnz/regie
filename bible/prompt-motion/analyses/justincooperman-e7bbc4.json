@@ -1,0 +1,345 @@
+{
+  "slug": "justincooperman-e7bbc4",
+  "title": "Tented image gen product video",
+  "handle": "@justincooperman",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Démo produit chaleureuse et lisible : caméra continue qui suit l'action, vol de l'image du chat vers l'email, révélation organique. Mais frappe de 4,8 s, maintiens morts et étincelle cliché.",
+  "summary": "Démo de génération d'images de Tented, en un seul plan-séquence sur une interface 2D. On tape une demande dans le chat, l'agent peint une photo de café « Harvest Roast » avec le logo, puis l'image vole jusqu'en tête de l'email. Fond crème avec halos pêche et sauge, légendes en pilule noire, carte de fin logo. Le point fort : la caméra virtuelle et le vol d'image motivé. Le point faible : des longueurs.",
+  "prompt_vs_result": [
+    "Un clip animé sur la génération d'images de Tented : l'utilisateur demande des images à sa marque et les voit ajoutées à son contenu. Ni style, ni durée, ni musique, ni scénario.",
+    "Le cas client fictif (Marlowe Coffee, email d'automne), le décor chat + aperçu email, la photo générée, la caméra continue, les cinq légendes en pilule, la palette crème-pêche-sauge et la carte de fin « Agentic marketing is here. ».",
+    "Les deux verbes du prompt (« demander », « voir ajouté ») ont donné les deux actes et le vol d'image, très bien. Il fallait préciser : durée de frappe courte, pas de maintiens, légendes plus grosses."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F9F7F4", "role": "fond crème (centre)"},
+      {"hex": "#F6E0CF", "role": "halo pêche (coin haut droit)"},
+      {"hex": "#DEE6D8", "role": "halo sauge (coin bas gauche)"},
+      {"hex": "#F6F3ED", "role": "fond uni de la carte de fin"},
+      {"hex": "#5A7F5D", "role": "vert sauge d'accent (mot clé, icône tente, pilule CTA)"},
+      {"hex": "#1F1E1D", "role": "texte titres et logotype"},
+      {"hex": "#131313", "role": "pilules de légende"},
+      {"hex": "#FFFFFF", "role": "cartes d'interface (chat, email)"},
+      {"hex": "#F1ECE4", "role": "bulles de chat et champ de saisie beige"},
+      {"hex": "#5F311A", "role": "brun café (bouton Shop Harvest Roast)"},
+      {"hex": "#D58F4C", "role": "ambre de la photo générée"}
+    ],
+    "type": "Grotesque grasse (type Inter Bold) pour le titre, casse phrase, ≈ 5 % de hauteur, mot clé en vert sauge. Légendes blanches demi-grasses ≈ 1,8 % dans des pilules noires. Logotype « tented » gras arrondi ≈ 14 % de hauteur.",
+    "texture": "Halos radiaux très doux en fond, ombres portées larges et légères sous les cartes, liseré lumineux autour des taches pendant la révélation de l'image, reflet balayant sur l'emplacement vide. Pas de grain, pas de flou de mouvement.",
+    "style": "SaaS chaleureux, interface en plan-séquence",
+    "coherence": "La photo générée (ambre, bois, automne) prolonge le halo pêche du fond, et le vert sauge de la marque revient sur le mot clé, les pilules, l'icône et le bouton final. Un seul plan continu, sans coupe. L'étincelle blanche et la carte de fin sur fond uni sortent un peu du système."
+  },
+  "rhythm": {
+    "bpm": 110,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "110 BPM (1 temps = 0,545 s = 16,4 im à 30 fps), pulsation nette (6,53), musique qui démarre vers 1,06 s. Aucune coupe : un seul plan avec 7 mouvements de caméra (poussée 2,5-4,5 s, suivi 8,77-9,33 s, recul 16,6-17,7 s, vol et poussée 17,7-20,2 s, descente 22,0-24,1 s, recul 24,3-25,4 s). La structure se cale sur des phrases de 8 temps : un événement clé tombe sur chacun des temps 8 (pilule 1, f139), 16 (suivi caméra, pic f270), 24 (fin de la révélation, f400), 32 (décollage de l'image, f531), 40 (début de la descente, f661) et 48 (fondu vers le logo). Le vol de l'image dure exactement 2 temps (f531 → f565). Entre ces repères, la frappe (1 caractère par image) et les mouvements de caméra sont libres. Temps morts : 13,3-14,0 s, 15,0-16,2 s (1,2 s figé), 20,2-22,0 s (seulement la fin de la poussée), 28,4-30,0 s (carte de fin). La frappe du prompt dure 4,8 s, trop longue pour le rythme.",
+    "timeline": [
+      {"t": "0:00-0:01.47", "what": "question « Need an on-brand image for your next email? » centrée sur fond crème à halos, fondu d'entrée f6-f16", "technique": "accroche question avec mot clé coloré"},
+      {"t": "0:01.47-0:02.50", "what": "le titre sort en flou sur place ; le panneau de chat monte du bas, l'aperçu email glisse depuis la droite", "technique": "entrée de l'interface sous le titre qui se dissout"},
+      {"t": "0:02.50-0:04.50", "what": "la caméra plonge sur le champ de saisie du chat (≈ ×1,8) ; la frappe commence vers 3,2 s", "technique": "poussée de caméra sur l'interface"},
+      {"t": "0:04.63-0:08.00", "what": "le prompt s'écrit (1 caractère par image) ; pilule « Just describe the image you need » au temps 8 ; un curseur entre vers 7,0 s et clique sur envoyer vers 7,93 s", "technique": "frappe + légende en pilule + clic"},
+      {"t": "0:08.77-0:09.33", "what": "la caméra remonte pour suivre le message envoyé (pic sur le temps 16)", "technique": "panoramique de suivi"},
+      {"t": "0:09.53-0:11.13", "what": "réponse de l'agent « Creating an on-brand image for Marlowe Coffee Co. / Working on it », emplacement vide qui apparaît au temps 18, reflet balayant ; pilule « Tented's agent creates it with your brand »", "technique": "état de chargement (squelette + spinner)"},
+      {"t": "0:11.90-0:13.33", "what": "la photo apparaît par taches organiques qui grandissent, finie au temps 24", "technique": "révélation par masque de bruit"},
+      {"t": "0:13.33-0:16.60", "what": "texte de l'agent mis à jour, pilule « Your logo, painted right into the scene » (14,63 s), maintien", "technique": "maintien de lecture"},
+      {"t": "0:16.60-0:17.70", "what": "recul de caméra : chat à gauche, email à droite", "technique": "recul pour révéler le contexte"},
+      {"t": "0:17.70-0:18.83", "what": "l'image quitte le chat, grossit et vole en tête de l'email, le contenu de l'email descend pour lui faire place (temps 32 → 34)", "technique": "vol d'élément partagé + reflux de mise en page"},
+      {"t": "0:18.83-0:20.17", "what": "poussée vers l'email ; étincelle blanche au coin haut droit (19,43-19,70 s)", "technique": "poussée + étincelle de confirmation"},
+      {"t": "0:20.17-0:22.03", "what": "plein cadre sur l'image en tête d'email avec pilule « Added to your email automatically » posée sur la photo", "technique": "légende incrustée dans l'image"},
+      {"t": "0:22.03-0:24.10", "what": "la caméra descend le long de l'email : titre, deux paragraphes, bouton « Shop Harvest Roast »", "technique": "descente de lecture"},
+      {"t": "0:24.30-0:26.17", "what": "recul en plan large, pilule « Your brand. In any image. Just ask. » au temps 46", "technique": "plan large de synthèse"},
+      {"t": "0:26.17-0:27.63", "what": "tout s'efface vers un crème uni ; icône tente (26,70 s) puis « tented » lettre par lettre", "technique": "carte de fin, logotype écrit"},
+      {"t": "0:27.77-0:30.06", "what": "« Agentic marketing is here. » puis pilule verte « Try it free at tented.ai », maintien 1,6 s", "technique": "slogan + appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Un événement par geste : 17 gestes clés sur 22 à ±2 im d'un temps ou demi-temps, mais à 30 fps et 110 BPM le hasard couvre ≈ 60 % à cette tolérance. Plus parlant : 13 gestes sur 22 à ±2 im d'un temps entier (hasard ≈ 31 %), et chacune des 6 frontières de phrase de 8 temps porte un événement : pilule 1 à f139 (temps 8 à f138,4), suivi caméra à f270 (temps 16 à f269,3), fin de révélation à f400 (temps 24 à f400,2), décollage de l'image à f531 (temps 32 à f531,1), départ de la descente à f661 (temps 40 à f661,9), fondu vers le logo autour du temps 48. Aussi : emplacement vide f302 (temps 18), atterrissage de l'image f565 (temps 34), pilule finale f761 (temps 46), icône f801 et slogan f833 sur des demi-temps. Hors grille : entrée des panneaux, pilule 2, mise à jour du texte, étincelle (+3 im), pilule CTA (+3 im). Les mouvements de caméra et la frappe ne pulsent pas. L'indice automatique dit « aucune synchro » : il est aveuglé par la caméra en mouvement continu.",
+    "synced": ["apparitions", "camera", "texte"],
+    "style_match": "Pop « upbeat » à 110 BPM, légère et chaleureuse : colle aux courbes douces, au crème-pêche et au ton amical. Pas d'accents forts, donc peu d'impacts à caler.",
+    "how_built": "Probable : timeline écrite en phrases de 8 temps à 110 BPM, avec les grandes actions placées en début de phrase. Le prompt ne parle pas de musique. Les mouvements longs (caméra, frappe) ont été réglés en secondes, d'où le décalage entre les repères."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Vol de l'image du chat vers l'email",
+      "name_en": "shared-element flight",
+      "t": "0:17.70-0:18.83",
+      "frames": "f531-f565",
+      "fps": 30,
+      "mechanics": "L'image (≈ 25 % de la largeur du cadre) se détache de sa bulle dans le chat, monte en diagonale vers la droite en grossissant jusqu'à ≈ 37 % de largeur et se pose en tête de l'email. 34 im = 2 temps, ease-in-out (pas serrés au départ et à l'arrivée, larges au milieu, f545-f557). Ombre portée qui grandit pendant le vol. Une copie reste dans le chat. Pas de flou de mouvement. Décollage sur le temps 32, atterrissage sur le temps 34 (+1 im). C'est la traduction littérale de « voir l'image ajoutée au contenu ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 529, "to": 571, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Reflux de l'email pour accueillir l'image",
+      "name_en": "layout reflow on insert",
+      "t": "0:18.50-0:19.00",
+      "frames": "f555-f570",
+      "fps": 30,
+      "mechanics": "Pendant l'atterrissage, le titre « The Harvest Roast is Here » et le corps de l'email glissent vers le bas (≈ 20 % de la hauteur de la carte) en ≈ 15 im, ease-out, pour libérer la place de l'image. Le logo Marlowe reste en haut. L'insertion devient physique : le contenu pousse le contenu.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f553.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Révélation de l'image par taches organiques",
+      "name_en": "noise-threshold blob reveal",
+      "t": "0:11.90-0:13.33",
+      "frames": "f357-f400",
+      "fps": 30,
+      "mechanics": "La photo apparaît à travers des taches irrégulières qui naissent et grossissent (seuil animé sur un bruit), avec un liseré clair autour de chaque tache. Courbe accélérée : quelques taches à f362, ≈ 40 % révélé à f380, ≈ 70 % à f390, image entière à f400. ≈ 43 im = 1,4 s, fin pile sur le temps 24. Illustre le mot « painted » de la légende suivante.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 362, "to": 400, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée sur le champ de saisie",
+      "name_en": "push-in on chat input",
+      "t": "0:02.50-0:04.50",
+      "frames": "f75-f135",
+      "fps": 30,
+      "mechanics": "Caméra virtuelle sur un plan d'interface 2D : on passe du plan large (chat + email) à un cadrage serré sur le champ de saisie, grossissement ≈ ×1,8 en ≈ 60 im, ease-in-out. Le texte tapé devient lisible. Pas de flou. L'email reste en bord de cadre comme repère.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul pour révéler le contexte",
+      "name_en": "pull-back reveal",
+      "t": "0:16.60-0:17.70",
+      "frames": "f499-f531",
+      "fps": 30,
+      "mechanics": "De l'image dans le chat (≈ ×1,8) au plan large chat + email en 32 im = 2 temps (temps 30 → 32), ease-in-out ; le chat glisse à gauche, l'email entre par la droite. Le recul prépare le vol : la destination doit être visible avant le départ.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f514.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Suivi du message envoyé",
+      "name_en": "follow pan",
+      "t": "0:08.77-0:09.33",
+      "frames": "f263-f279",
+      "fps": 30,
+      "mechanics": "Après le clic, la caméra remonte de ≈ 25 % de la hauteur en 17 im (≈ 1 temps), pic de vitesse sur le temps 16 (f270), pour garder la bulle envoyée puis la réponse de l'agent dans le cadre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée dans l'email puis descente de lecture",
+      "name_en": "push-in then scroll-down tilt",
+      "t": "0:18.83-0:24.10",
+      "frames": "f565-f722",
+      "fps": 30,
+      "mechanics": "Poussée jusqu'à l'image en tête d'email (fin f605, demi-temps 36,5), longue traîne de ralentissement jusqu'à ≈ 20,9 s. Puis descente de 61 im (≈ 2 s, temps 40 → 43,7) le long de l'email : titre, paragraphes, bouton brun. Ease-in-out. Lisible mais lent.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f669.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan large de synthèse",
+      "name_en": "final wide pull-back",
+      "t": "0:24.30-0:25.40",
+      "frames": "f729-f762",
+      "fps": 30,
+      "mechanics": "Recul de ≈ ×1,8 à ×0,9 en ≈ 30 im (départ sur le temps 44, pic f742 sur le temps 45) : chat avec l'image à gauche, email complet à droite, plus petits qu'au début. Résume l'avant/après dans un seul cadre avant la légende finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f746.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Légendes en pilule noire",
+      "name_en": "dark pill captions",
+      "t": "0:04.63-0:26.17",
+      "frames": "f139-f785",
+      "fps": 30,
+      "mechanics": "Pilule #131313 centrée en bas (y ≈ 85-90 %), hauteur ≈ 3,5 % du cadre, texte blanc demi-gras ≈ 1,8 %, un mot en vert clair (describe, your brand, Your logo, automatically, Just ask.). Fondu de 11 im ; sortie par passage au gris. Cinq légendes, une par étape. Petites pour un écran de téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Prompt tapé dans le chat",
+      "name_en": "typed prompt",
+      "t": "0:03.20-0:08.00",
+      "frames": "f96-f240",
+      "fps": 30,
+      "mechanics": "« Create a hero image of our Harvest Roast bag and a latte on a cozy café counter, with our logo on the bag, and add it to the top of the email. » s'écrit à 1 caractère par image (30 car./s), barre de saisie verticale. ≈ 140 caractères en 4,8 s : la scène la plus longue et la plus plate.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui clique sur envoyer",
+      "name_en": "cursor click to send",
+      "t": "0:07.00-0:08.10",
+      "frames": "f210-f243",
+      "fps": 30,
+      "mechanics": "Flèche système qui entre depuis la droite vers 7,0 s, glisse vers le bouton rond vert d'envoi, clic vers f238 (temps 14, +1 im) ; la pilule de légende passe au gris dans la foulée.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "État de chargement de l'agent",
+      "name_en": "agent loading state with skeleton shimmer",
+      "t": "0:09.53-0:11.90",
+      "frames": "f286-f357",
+      "fps": 30,
+      "mechanics": "Réponse « Tented — Creating an on-brand image for Marlowe Coffee Co. » + spinner « Working on it », puis un rectangle beige arrondi (≈ 22 % de largeur) apparaît en 3-4 im sur le temps 18 (f302) ; une bande de lumière diagonale le traverse (squelette scintillant) pendant ≈ 1 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f302.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Titre qui se dissout pendant que l'interface monte",
+      "name_en": "title blur-out under rising UI",
+      "t": "0:01.47-0:02.50",
+      "frames": "f44-f75",
+      "fps": 30,
+      "mechanics": "La question reste en place et sort en flou + fondu (≈ 15 im) pendant que le panneau de chat monte du bas (≈ 60 % de la hauteur) et que l'email glisse depuis la droite (≈ 20 % de la largeur), ease-out, ≈ 30 im. Flou probable sur les panneaux en mouvement. Superposition propre mais générique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Étincelle de confirmation",
+      "name_en": "sparkle glint",
+      "t": "0:19.43-0:19.70",
+      "frames": "f583-f591",
+      "fps": 30,
+      "mechanics": "Étoile blanche à 4 branches (≈ 4 % de la hauteur) qui grossit puis disparaît au coin haut droit de l'email, ≈ 8 im, 3 im après le temps 35. Une seule occurrence.",
+      "verdict": "cliche",
+      "evidence": "microM-004-move-f576.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Légende posée sur l'image",
+      "name_en": "in-image caption",
+      "t": "0:20.17-0:22.07",
+      "frames": "f605-f662",
+      "fps": 30,
+      "mechanics": "Au lieu du bas du cadre, la pilule « Added to your email automatically » se pose sur le bas de la photo, centrée, au moment où la caméra cadre l'image plein écran. Sort en fondu de 5 im (f662-f667) sur le temps 40, juste avant la descente.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond crème à halos pêche et sauge",
+      "name_en": "warm two-glow gradient background",
+      "t": "0:00-0:26.83",
+      "frames": "f0-f805",
+      "fps": 30,
+      "mechanics": "Centre #F9F7F4, halo pêche #F6E0CF en haut à droite, halo sauge #DEE6D8 en bas à gauche, très diffus (dégradé type mesh, quasi statique). Il reste fixe pendant que la caméra bouge sur l'interface : effet de profondeur gratuit. Remplacé par un crème uni #F6F3ED sur la carte de fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype écrit lettre par lettre",
+      "name_en": "letter-by-letter wordmark reveal",
+      "t": "0:26.70-0:27.63",
+      "frames": "f801-f829",
+      "fps": 30,
+      "mechanics": "L'icône tente verte apparaît seule en fondu (f801-f805, demi-temps 48,5), déjà à sa place finale (glisse de ≈ 3 % vers la gauche). Puis « t-e-n-t-e-d » entrent à sa droite, décalage 2-3 im par lettre (t f811, e f813, n f817, t f819, e f823, d f825) : chaque lettre passe du gris clair au noir en ≈ 6 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 799, "to": 841, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin slogan + CTA",
+      "name_en": "end card tagline and CTA",
+      "t": "0:26.17-0:30.06",
+      "frames": "f785-f899",
+      "fps": 30,
+      "mechanics": "Fondu de toute l'interface vers un crème uni en ≈ 20 im (départ au demi-temps 47,5), logotype, puis « Agentic marketing is here. » (« Agentic marketing » en vert) en fondu f833-f841 au demi-temps 50,5, et pilule verte « Try it free at tented.ai » f845-f851. Maintien final 1,6 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche en question au client",
+      "name_en": "question hook",
+      "t": "0:00-0:01.47",
+      "frames": "f0-f44",
+      "fps": 30,
+      "mechanics": "« Need an on-brand image for your next email? » sur deux lignes centrées, grotesque grasse ≈ 5 % de hauteur, « on-brand » en vert sauge. Fondu de 10 im au temps 0, maintien ≈ 1 s. Le besoin avant le produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Cas client fictif concret",
+      "name_en": "concrete fictional customer case",
+      "t": "0:02.50-0:26.17",
+      "frames": "f75-f785",
+      "fps": 30,
+      "mechanics": "Au lieu d'images abstraites, un scénario complet : Marlowe Coffee Co. prépare l'email « The Harvest Roast is Here » et demande une photo de son paquet de café avec logo. Le texte de l'email, l'adresse, le bouton « Shop Harvest Roast » sont rédigés. Rend la démo crédible et lisible en une phrase.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Photo générée accordée au fond",
+      "name_en": "generated image matched to palette",
+      "t": "0:13.33-0:26.17",
+      "frames": "f400-f785",
+      "fps": 30,
+      "mechanics": "La photo (lumière dorée d'automne, bois, ambre #D58F4C, brun #5F311A) reprend la chaleur du halo pêche ; le bouton de l'email est du même brun que le paquet. L'image ne jure pas avec l'interface crème : la démo paraît designée de bout en bout.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Repères de phrase tous les 8 temps",
+      "name_en": "phrase-level sync every 8 beats",
+      "t": "0:04.62-0:26.43",
+      "frames": "f139-f793",
+      "fps": 30,
+      "mechanics": "Les grandes actions démarrent ou finissent sur la première temps d'une phrase de 8 temps (2 mesures) : temps 8 pilule 1, 16 suivi caméra, 24 fin de révélation, 32 décollage de l'image, 40 début de la descente, 48 fondu vers le logo, chaque fois à ±1 im. Le vol de l'image dure exactement 2 temps (32 → 34). Entre les repères, mouvements libres. Synchro de structure plutôt que de pulsation, adaptée à une démo calme.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Courbes douces et maintiens de lecture",
+      "name_en": "soft ease-in-out with reading holds",
+      "t": "0:13.33-0:16.60",
+      "frames": "f400-f499",
+      "fps": 30,
+      "mechanics": "Tous les mouvements en ease-in-out sans dépassement ni rebond. Après chaque révélation, un maintien de 1 à 2 s pour lire (13,3-14,0 s, 15,0-16,2 s, 20,2-22,0 s). Confortable, mais le 15,0-16,2 s figé casse l'élan.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Les deux verbes du prompt (« ask for branded images », « see them added to content ») ont fixé les deux actes : la demande tapée, puis le vol de l'image dans l'email. Un prompt qui décrit l'action de l'utilisateur donne un scénario, pas une liste de fonctions."},
+    {"kind": "inputs", "insight": "Logo tente, vert de marque et nom de domaine tented.ai sont exacts : la marque était probablement disponible dans la session. Le client Marlowe Coffee et la photo sont inventés pour l'exemple, et la photo est probablement sortie du générateur du produit lui-même."},
+    {"kind": "direction", "insight": "Aucun style demandé : Claude a pris son registre SaaS par défaut (crème, halos doux, pilules noires, grotesque grasse). Propre mais interchangeable avec d'autres démos du corpus."},
+    {"kind": "build", "insight": "La musique n'est pas mentionnée, pourtant les grandes actions tombent sur les phrases de 8 temps à 110 BPM. Les mouvements longs (frappe, caméra) ne sont pas quantifiés : il faut demander « chaque geste commence ou finit sur un temps »."},
+    {"kind": "qa", "insight": "Rien sur la durée des étapes : la frappe dure 4,8 s et trois maintiens dépassent 1 s. Préciser « frappe ≤ 2 s, aucun maintien > 0,8 s » aurait resserré la vidéo."},
+    {"kind": "other", "insight": "Le tag « Stack: Blender » ne correspond pas à l'image : tout ressemble à une composition HTML/2D avec une photo générée. Probablement une erreur de métadonnée."}
+  ],
+  "steal": [
+    "Pour montrer qu'un élément « s'ajoute » ailleurs : reculer pour montrer la destination, puis faire voler l'élément en 2 temps et pousser le contenu d'arrivée.",
+    "Révéler une image générée par des taches de bruit qui grossissent avec un liseré clair, finie sur un temps fort.",
+    "Filmer l'interface comme un plan-séquence : une caméra virtuelle qui pousse, suit et recule, sans aucune coupe.",
+    "Caler les grandes actions sur les débuts de phrase de 8 temps quand la démo est trop calme pour pulser sur chaque temps.",
+    "Accorder la photo de démo à la palette du fond (mêmes ambres que le halo) pour que l'exemple paraisse designé."
+  ],
+  "flaws": [
+    "Frappe du prompt de 4,8 s à 1 caractère par image : la scène la plus longue est la moins visuelle.",
+    "Maintiens morts à 15,0-16,2 s et 20,2-22,0 s, et 1,6 s de carte de fin figée.",
+    "Étincelle blanche sur l'email : accent de vidéo IA, inutile après le vol.",
+    "Légendes et texte d'interface petits (≈ 1,8 % de hauteur) : illisibles sur téléphone en plan large.",
+    "Aucun dépassement ni rebond : toutes les courbes en ease-in-out identiques, un peu mou."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour 16,6-20,2 s (recul, vol de l'image, reflux de l'email, poussée) et 11,9-13,4 s (révélation par taches) : chorégraphie caméra + élément partagé à reproduire. Source native en 30 fps, donc étude image par image à 30 fps."}
+}

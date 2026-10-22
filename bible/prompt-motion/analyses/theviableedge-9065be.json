@@ -1,0 +1,411 @@
+{
+  "slug": "theviableedge-9065be",
+  "title": "Second brain service promo",
+  "handle": "@TheViableEdge",
+  "family": "produit",
+  "craft": 5,
+  "craft_reason": "Plan-séquence sans coupe où chaque objet devient le suivant (carrés, frise, ligne, fenêtre, puce, logo), courbes soignées et boucle parfaite. Défauts mineurs : texte d'interface minuscule, rendu 720p.",
+  "summary": "Vidéo héro en boucle pour une formation sur les « second brains » professionnels. Thèse « It's not a prompting problem. It's a context problem. », puis une méthode en quatre étapes colorées (audit, copie de travail, tests, livraison) suivie à travers un seul exemple de prix contradictoire. Aucune coupe : chaque objet devient le suivant, jusqu'au logo qui redevient la première image. Bémol : beaucoup de petit texte.",
+  "prompt_vs_result": [
+    "Le prompt demande 15 s dynamiques montrant quel motion designer incroyable est Claude, utilisables comme vidéo héro de la page d'une formation. Rien sur le sujet, le style, les couleurs ou le son.",
+    "Claude (ou le contexte de session, probablement le programme de la formation) a choisi la thèse « context problem », la méthode en 4 étapes, l'exemple du prix, le système de 4 carrés colorés, le plan-séquence et la boucle.",
+    "« Hero asset » a été bien lu : boucle sans couture, lecture muette, aucune voix. Le prompt ne fixait ni taille minimale de texte ni résolution : d'où l'interface minuscule et le rendu 1280 × 720."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F5F3ED", "role": "fond papier chaud (mesuré), grille de 64 px à peine visible"},
+      {"hex": "#141414", "role": "texte des titres et ligne d'écrasement (estimé)"},
+      {"hex": "#DB4F0F", "role": "orange étape 01 audit : carré, mot « context », étiquettes CONFLICT, connecteurs (mesuré)"},
+      {"hex": "#784EDE", "role": "violet étape 02 copie de travail (mesuré)"},
+      {"hex": "#2A62E8", "role": "bleu étape 03 tests (mesuré)"},
+      {"hex": "#19B371", "role": "vert étape 04 livraison : PASS, SOURCED, TESTED (mesuré)"},
+      {"hex": "#0A090E", "role": "fond de la fenêtre de code (mesuré)"},
+      {"hex": "#5ED6C1", "role": "sarcelle des noms de dossiers et du connecteur en S (estimé)"},
+      {"hex": "#F1E4A3", "role": "post-it jaune « who owns this? » (estimé)"},
+      {"hex": "#9C8F80", "role": "mot biffé « prompting » (estimé)"}
+    ],
+    "type": "Grotesque gras (probable IBM Plex Sans ou Inter) pour les titres, ≈ 6 % de la hauteur, casse phrase, approche serrée ; mono (probable IBM Plex Mono) en capitales espacées pour étiquettes, minuscules dans le code, 1,2-1,6 %.",
+    "texture": "Fond papier chaud avec une grille de 64 px (5 % de la largeur) plus sombre d'à peine 1-2 niveaux et estompée vers les bords ; documents à ombre portée douce et légère rotation ; post-it jaune ; fenêtre noire à grande ombre et reflet de verre diagonal ; lueur chaude derrière la ligne de scan ; aucun grain, aucun flou de mouvement.",
+    "style": "Éditorial technique, système à quatre couleurs",
+    "coherence": "Tout dérive des 4 carrés du logo : couleurs des étapes, marqueurs de la frise, étiquettes (orange = problème, vert = validé), soulignement final. Deux familles de caractères seulement (grotesque gras + mono). La fenêtre noire de la copie de travail est le seul grand contraste, justifié comme « l'atelier ». Rien ne casse le système ; seule l'échelle du texte d'interface est trop petite pour la vidéo."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Rythme interne : accroche 0-3,27 s, audit 3,27-5,63 s (≈ 2,4 s), copie de travail 5,63-8,48 s (≈ 2,85 s), tests 8,48-10,72 s (≈ 2,25 s), livraison 10,72-11,8 s (≈ 1,1 s), logo et titre 11,8-14,15 s, sortie et boucle 14,15-15 s : les étapes raccourcissent vers la fin. Aucune coupe franche (un seul plan). Le détecteur annonce 55 % de maintiens statiques, mais l'essentiel (7,27-10,77 s) est de la frappe de code et des puces PASS trop petites pour son seuil. Vraies pauses : ≈ 0,85 s sur « It's a context problem. » (f145-f196, avec micro-dérive des documents) et ≈ 0,65 s sur le titre final (f810-f849). Cadences fixes : chaque changement d'étape de la frise dure 20 im ; cascades de 4-6 im (carrés, mots) ; une puce PASS toutes les 6-7 im.",
+    "timeline": [
+      {"t": "0:00-0:00.33", "what": "f0-f20. Les 4 carrés du logo au centre, immobiles 12 im, puis ils rétrécissent à ≈ 75 % et se resserrent (anticipation).", "technique": "anticipation"},
+      {"t": "0:00.35-0:01.90", "what": "f21-f114. Explosion : les carrés pivotent à 45°, jaillissent en arcs puis retombent en freinant dans les 4 cases de la frise du bas ; les documents en désordre apparaissent autour.", "technique": "explosion en arcs + frise persistante"},
+      {"t": "0:00.62-0:01.10", "what": "f37-f66. « It's not a prompting problem. » monte mot à mot sous masque.", "technique": "titre mot à mot sous masque"},
+      {"t": "0:01.68-0:02.42", "what": "f101-f145. « prompting » est biffé, « not » tombe hors de la ligne, « context » (orange) monte à la place de « prompting », la ligne se recentre.", "technique": "remplacement de mot"},
+      {"t": "0:02.42-0:03.27", "what": "f145-f196. Tenue de lecture sur « It's a context problem. ».", "technique": "pause de lecture"},
+      {"t": "0:03.27-0:04.47", "what": "f196-f268. Étape 01 AUDIT : le titre sort, une ligne de scan traverse le cadre de gauche à droite ; étiquettes CONFLICT et SOURCED, courbes orange avec badges ≠, compteur « AUDIT FINDINGS 00 → 09 ».", "technique": "ligne de scan révélatrice + compteur"},
+      {"t": "0:05.00-0:05.63", "what": "f300-f338. Une ligne noire pivote de 43° à l'horizontale, puis tout le bureau s'écrase verticalement dedans.", "technique": "compression dans une ligne"},
+      {"t": "0:05.63-0:06.33", "what": "f338-f380. Le trait tient 12 im, devient barre noire et s'ouvre en fenêtre de code ; la frise passe à 02 WORKING COPY ; reflet de verre.", "technique": "expansion en fenêtre"},
+      {"t": "0:06.32-0:08.90", "what": "f379-f535. Arborescence PRACTICE-KB tapée ligne à ligne ; les puces $219/yr et $189/yr volent vers « Service plan » ; $189 biffé « SUPERSEDED · 2024 », $219 « ACTIVE » ; CHANGELOG tapé au curseur.", "technique": "code tapé + puces de données"},
+      {"t": "0:08.48-0:10.70", "what": "f509-f642. Étape 03 RETRIEVAL TESTS : question « What does the service plan cost? », connecteur en S depuis la source, réponse $219/yr PASS, suite de 8 tests qui passent au vert.", "technique": "connecteur source → réponse + tests au vert"},
+      {"t": "0:10.72-0:11.75", "what": "f643-f705. Étape 04 HANDOFF : la fenêtre se réduit en puce « handoff-package/ ✓ TESTED », qui plonge dans la frise et devient le marqueur vert.", "technique": "réduction en puce + puce qui devient marqueur"},
+      {"t": "0:11.80-0:12.73", "what": "f706-f764. Les 4 marqueurs décollent en cascade, volent en arcs avec rotation et s'alignent en logo.", "technique": "assemblage du logo"},
+      {"t": "0:12.75-0:14.15", "what": "f765-f849. « FROM PAID AUDIT TO TESTED HANDOFF » + « Build and deliver professional second brains. » + soulignement en 4 segments colorés.", "technique": "carton de fin typographique"},
+      {"t": "0:14.15-0:15.00", "what": "f849-f899. Accroche effacée lettre à lettre, titre qui redescend sous masque, soulignement rétracté ; les carrés reviennent au centre, image identique à f0.", "technique": "sortie inversée + boucle parfaite"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans musique : pensée pour une lecture automatique muette en boucle sur une page d'atterrissage ; le rythme vient des courbes et des cascades.",
+    "how_built": "Pas de bande-son générée ni ajoutée, ce qui colle à l'usage de vidéo héro (lecture muette, en boucle). Pour la sonoriser, il faudrait caler a posteriori des sons sur les impacts déjà nets : explosion f21, chute du mot « not » f117, écrasement dans la ligne f338, ouverture de la fenêtre f352, puce qui touche la frise f702, carrés posés f748-f764."
+  },
+  "techniques": [
+    {
+      "cat": "timing",
+      "name_fr": "Anticipation avant l'explosion",
+      "name_en": "Anticipation squeeze",
+      "t": "0:00.22-0:00.33",
+      "frames": "f13-f20",
+      "fps": 60,
+      "mechanics": "Après 12 im d'immobilité, les 4 carrés (20 px = 2,8 % de la hauteur, espacés de 2,1 % de la largeur) rétrécissent à ≈ 75 % et se resserrent vers le centre (orange 46,8 → 47,4 %, vert 53,0 → 52,4 %) en 8 im, puis éclatent à f21. Ce recul prépare l'explosion comme une inspiration avant le saut.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Explosion des quatre carrés en arcs, chute dans la frise",
+      "name_en": "Burst and settle into slots",
+      "t": "0:00.35-0:01.90",
+      "frames": "f21-f114",
+      "fps": 60,
+      "mechanics": "À f21 les carrés pivotent à 45° et grandissent (≈ ×1,25) en partant en éventail vers le haut : sommet en 5 im (f26 ; orange à x 28 %, y 34 %), écartement maximal x 9-82 %. Ils retombent en accélérant (jusqu'à ≈ 1,8 % de hauteur par image vers f33-f37), puis freinent longuement (ease-out) jusqu'aux cases de la frise du bas (x 9,3 / 29,7 / 50,0 / 70,3 %, y 92,5 %), atteintes vers f114. La rotation décroît jusqu'à 0°, la taille finale vaut ≈ 65 % de l'initiale. Pas de flou de mouvement, pas de rebond.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 10, "to": 60, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Frise de progression persistante à quatre étapes",
+      "name_en": "Persistent four-stage progress rail",
+      "t": "0:01.15-0:11.75",
+      "frames": "f69-f705",
+      "fps": 60,
+      "mechanics": "Ligne fine en bas du cadre (y ≈ 92,5 %) avec 4 marqueurs carrés aux couleurs des étapes et des libellés mono en capitales (« 01 AUDIT », « 02 WORKING COPY », « 03 RETRIEVAL TESTS », « 04 HANDOFF »). Le marqueur actif grossit (≈ ×1,5) et son libellé passe en noir ; chaque passage d'étape remplit le trait jusqu'au marqueur suivant en exactement 20 im (f353-f372, f509-f528, f649-f668). La frise sert de sommaire et de chronomètre du récit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, microM-003-move-f694.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bureau d'artefacts en désordre",
+      "name_en": "Messy artifact desk",
+      "t": "0:00.50-0:01.20",
+      "frames": "f30-f72",
+      "fps": 60,
+      "mechanics": "Pendant que les carrés retombent, une dizaine de documents apparaissent autour du titre, légèrement tournés, en fondu avec mise à l'échelle : tableur « pricing-2024.xlsx », post-it jaune « who owns this? », message « where's the latest price sheet? », e-mail « Re: Re: warranty terms — I thought it was 2 years? », mémo vocal avec forme d'onde, page « Pricing — Service plan $219/yr », fiche « Warranty: 1 year ». Cartes de 12 à 20 % de la largeur, ombres très douces. Chaque artefact porte une contradiction réelle.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot sous masque",
+      "name_en": "Word-by-word masked rise",
+      "t": "0:00.62-0:01.10",
+      "frames": "f37-f66",
+      "fps": 60,
+      "mechanics": "« It's not a prompting problem. » (grotesque gras, ≈ 6 % de hauteur, centré à y 50 %) : chaque mot monte de derrière un masque calé sur sa ligne de base. Départs ≈ f37 (It's), f41 (not), f47 (a), f54-f56 (prompting problem.) : décalage ≈ 5 im, chaque montée ≈ 8-10 im en ease-out.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Remplacement de mot : biffure, chute, permutation",
+      "name_en": "Strike, drop and swap word replacement",
+      "t": "0:01.68-0:02.42",
+      "frames": "f101-f145",
+      "fps": 60,
+      "mechanics": "1) Un trait barre « prompting » de gauche à droite en 10 im (x 37 → 62 %, pas 1-2-2-3-5-4-3-3-2 % : ease-in-out) et le mot passe en gris-brun (f101-f110). 2) « not » décroche, pivote et tombe hors de la ligne (f113-f126). 3) « prompting » sort par le haut pendant que « context », en orange #DB4F0F, monte du bas à sa place, comme un rouleau de machine à sous (f126-f138). 4) La ligne glisse pour se recentrer et fermer le trou laissé par « not » (f117-f145, ease-out). Résultat : « It's a context problem. ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 99, "to": 145, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pause de lecture sur la phrase clé",
+      "name_en": "Reading hold on the thesis",
+      "t": "0:02.42-0:03.27",
+      "frames": "f145-f196",
+      "fps": 60,
+      "mechanics": "Environ 0,85 s de tenue sur « It's a context problem. », animée seulement d'une micro-dérive des documents (f167-f180). C'est la seule pause avant la fin : elle laisse lire la thèse avant l'audit.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ligne de scan qui révèle les conflits",
+      "name_en": "Scanner line reveal",
+      "t": "0:03.27-0:04.47",
+      "frames": "f196-f268",
+      "fps": 60,
+      "mechanics": "Une fine ligne verticale grise se dessine de haut en bas à x 4,1 % en 4 im (f196-f200), tient 6 im, puis traverse le cadre jusqu'à x 95,8 % en 62 im (1,03 s). Pas par 2 im : 0,3-0,4-0,6-0,8-1,2-1,4-1,8-2,2-2,7-3,5-4,2-5,2-6,2-7,4-8,0 % puis symétrique : ease-in-out (cubique probable), vitesse maximale ≈ 4 %/im au centre (f236). Elle traîne une lueur chaude ; à son passage, les étiquettes CONFLICT (orange) et SOURCED (vertes) apparaissent. Elle reste ensuite garée au bord droit. Le titre est sorti juste avant, mot par mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f321.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de constats couplé au balayage",
+      "name_en": "Findings counter tied to the sweep",
+      "t": "0:03.50-0:04.50",
+      "frames": "f210-f270",
+      "fps": 60,
+      "mechanics": "En haut au centre, « AUDIT FINDINGS » en mono capitales suivi d'un nombre gras : 00 (f210) → 06 (f240) → 09 (f270). Le compte monte avec l'avancée de la ligne de scan : chaque constat révélé incrémente le compteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Connecteurs courbes avec badge ≠ entre sources contradictoires",
+      "name_en": "Conflict connectors with not-equal badges",
+      "t": "0:03.90-0:05.00",
+      "frames": "f234-f300",
+      "fps": 60,
+      "mechanics": "Des courbes orange (≈ 2 px, tangentes douces) relient les documents qui se contredisent (prix du service plan, durée de garantie 2 ans contre 1 an) ; un rond orange « ≠ » se pose au milieu de chaque courbe. Les étiquettes CONFLICT (orange, mono capitales) se placent en coin des cartes ; SOURCED (vert) marque les sources fiables. Le diagnostic devient visible sans voix.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tout le bureau s'écrase dans une ligne",
+      "name_en": "Collapse into a line",
+      "t": "0:05.00-0:05.63",
+      "frames": "f300-f338",
+      "fps": 60,
+      "mechanics": "À f300 une ligne noire apparaît en diagonale (43°, du haut-centre au bas-droit ; provenance non vérifiée, probable relais de la ligne de scan) et pivote jusqu'à l'horizontale en 10 im (43 → 30 → 18 → 10 → 3 → 0°, ease-out), posée à y 50 % sur x 14-90 %. Puis tous les documents s'écrasent verticalement dans cette ligne : hauteur du contenu 78 % (f318) → 60 % (f326) → 35 % (f333) → 11 % (f337) → 0,8 % (f338), pas croissants : ease-in qui claque sur la ligne en 20 im (0,33 s), avec un léger resserrement horizontal (x 2-95 % → 14-87 %). Il ne reste qu'un trait gris.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f321.jpg, extra-02.jpg",
+      "illus": {"from": 300, "to": 380, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La ligne s'ouvre en fenêtre de code",
+      "name_en": "Line-to-window expansion",
+      "t": "0:05.63-0:06.33",
+      "frames": "f338-f380",
+      "fps": 60,
+      "mechanics": "Le trait gris tient 12 im (f338-f350), devient barre noire à f352 (2,8 % de hauteur, 68 % de largeur) puis s'ouvre en fenêtre : hauteur 2,8 → 10 → 19 → 28 → 37 → 45 → 52 → 57 → 62 → 66 → 68 → 70 → 71 → 72 % de f352 à f380 (pas de 7-9 % puis 1 % : ease-out fort), largeur 68 → 75 % avec un dépassement imperceptible (75,2 puis 74,8 %). Le marqueur violet « 02 WORKING COPY » s'active pendant ce temps (f353-f372). Compression puis expansion : le chaos devient un seul objet ordonné.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Reflet de verre diagonal sur la fenêtre",
+      "name_en": "Diagonal glass sheen",
+      "t": "0:06.27-0:06.53",
+      "frames": "f376-f392",
+      "fps": 60,
+      "mechanics": "Une bande diagonale légèrement plus claire traverse la fenêtre noire de gauche à droite pendant ≈ 16 im, juste après son ouverture, comme un reflet sur une vitre. Discret, utilisé une seule fois, mais purement décoratif.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Arborescence de fichiers tapée ligne à ligne",
+      "name_en": "File tree typed line by line",
+      "t": "0:06.32-0:07.25",
+      "frames": "f379-f435",
+      "fps": 60,
+      "mechanics": "Colonne gauche de la fenêtre (x 13-40 %), mono ≈ 1,6 % de hauteur : « PRACTICE-KB/ », dossiers en sarcelle (« 01-audit/ », « 02-working-copy/ », « 03-tests/ », « 04-handoff/ ») et fichiers en blanc (« context-health-report.md », « SPINE.md », « 6-decisions-rationale.md », « CHANGELOG.md »…), une ligne toutes les ≈ 4-5 im. La ligne du fichier ouvert reçoit un surlignage sarcelle sombre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Puces de prix qui volent à leur place, ancien prix biffé",
+      "name_en": "Flying value chips with superseded strike",
+      "t": "0:06.87-0:08.00",
+      "frames": "f412-f480",
+      "fps": 60,
+      "mechanics": "« $219/yr » entre par la droite du panneau (f412) et « $189/yr » sort de l'arborescence (f418) ; les deux puces à bord orange glissent jusqu'à la ligne « Service plan » (f420-f450). Puis « $189/yr » est biffé et étiqueté « SUPERSEDED · 2024 », « $219/yr » reçoit « ACTIVE » en vert. Le conflit révélé à l'audit est tranché sous nos yeux.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Journal CHANGELOG tapé au curseur",
+      "name_en": "Typed changelog entry",
+      "t": "0:08.00-0:08.90",
+      "frames": "f480-f535",
+      "fps": 60,
+      "mechanics": "Sous la décision, un bloc « CHANGELOG.md » se tape caractère par caractère avec un curseur bloc : « 2026-03-05 — Recorded the service-plan price decision. Why: audit conflict. Approved: client. ». La trace écrite de la décision prolonge l'histoire du prix.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Connecteur en S de la source vers la question",
+      "name_en": "S-curve source connector",
+      "t": "0:09.15-0:09.45",
+      "frames": "f549-f567",
+      "fps": 60,
+      "mechanics": "Au début de l'étape 03, le panneau droit se vide et affiche la requête « What does the service plan cost? » (étiquette RETRIEVAL TEST) ; une courbe en S sarcelle se trace depuis « 6-decisions-rationale.md » dans l'arborescence jusqu'à la carte de requête, puis la réponse « $219/yr » apparaît avec « ↳ source: pricing call, 2026-03-04 » et une puce verte PASS. Le lien source → réponse est dessiné au lieu d'être dit.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Suite de tests qui passe au vert ligne à ligne",
+      "name_en": "Test suite turning green row by row",
+      "t": "0:09.55-0:10.60",
+      "frames": "f573-f636",
+      "fps": 60,
+      "mechanics": "Liste « RETRIEVAL TEST SUITE » de 8 tests (Top priorities, Stakeholder context, Project history and decisions, Voice-consistent drafting, Open commitments, Stale information detection, Source traceability, Sensitive data boundaries) : une puce verte PASS se pose environ toutes les 6-7 im, compteur « 8/8 PASS », pied de page « No handoff until this suite passes. ». Texte des tests ≈ 1,2 % de hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-002-move-f652.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La fenêtre se réduit en puce de livraison",
+      "name_en": "Window shrinks into a delivery chip",
+      "t": "0:10.77-0:11.20",
+      "frames": "f646-f672",
+      "fps": 60,
+      "mechanics": "La fenêtre (75 × 72 % du cadre) se contracte vers son centre en 26 im : largeur 74,8 → 72,3 → 67,0 → 60,8 → 54,2 → 48,6 → 43,6 → 39,8 → 37,0 → 35,2 → 33,6 → 33,0 → 32,3 % (pas 2,5-5,3-6,2-6,6-5,6-5,0-3,8-2,8 % : ease-in-out), hauteur 72 → 11 %. Le contenu se fond en « handoff-package/ » avec icône de dossier, puis l'étiquette verte « ✓ TESTED » apparaît à droite (f661-f665). Le marqueur vert « 04 HANDOFF » s'active en même temps (f649-f668).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f652.jpg",
+      "illus": {"from": 644, "to": 704, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La puce plonge dans la frise et devient le marqueur vert",
+      "name_en": "Chip drops into the rail and becomes the marker",
+      "t": "0:11.43-0:11.73",
+      "frames": "f686-f704",
+      "fps": 60,
+      "mechanics": "La puce rapetisse (largeur 32,6 → 11,7 %) en filant vers la case « 04 HANDOFF » (centre de x 50 / y 47 % à x 63 / y 77 % en 10 im ; pas verticaux 1,7-3,3-5,5-9,5-10,5 % : ease-in qui accélère jusqu'à l'impact), vire du noir au vert #19B371 vers f694-f697 et se pose comme marqueur à f702-f704 (x 70,2 %, y 92,4 %). Le marqueur gonfle ensuite (côté 16 → 24 px) le temps de l'activation.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f694.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Les marqueurs s'envolent en cascade pour former le logo",
+      "name_en": "Markers fly up to assemble the logo",
+      "t": "0:11.83-0:12.73",
+      "frames": "f710-f764",
+      "fps": 60,
+      "mechanics": "Les libellés de la frise s'effacent (f700-f706), puis les 4 marqueurs décollent l'un après l'autre : orange f710, violet f714, bleu f720, vert f726 (décalage 4-6 im). Chacun monte d'abord à la verticale puis s'incurve vers la droite (orange : de x 9,4 / y 92,6 % à x 31,4 / y 36,2 % en 38 im, vitesse maximale ≈ 4 %/im vers f720-f724), tourne à 45° pendant le vol, grossit de 13 à 18 px et se pose sans rebond (ease-out). Arrivées en ligne à f748, f752, f756, f764, y 36,2 %, x 31,4 / 33,5 / 35,6 / 37,7 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-003-move-f694.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Accroche mono et promesse en grotesque gras",
+      "name_en": "Mono kicker plus bold headline",
+      "t": "0:12.75-0:14.15",
+      "frames": "f765-f849",
+      "fps": 60,
+      "mechanics": "À droite des 4 carrés, l'accroche « FROM PAID AUDIT TO TESTED HANDOFF » en mono capitales (≈ 1,2 % de hauteur, interlettrage large) ; dessous, « Build and deliver / professional second brains. » en grotesque gras (≈ 6 % de hauteur), deux lignes centrées, interlignage serré ; les lignes montent sous masque (f765-f780). Hiérarchie nette : signe, étiquette technique, promesse.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Soulignement en quatre segments aux couleurs des étapes",
+      "name_en": "Four-color segmented underline",
+      "t": "0:13.20-0:13.50",
+      "frames": "f792-f810",
+      "fps": 60,
+      "mechanics": "Sous le titre, 4 segments (≈ 4 % de largeur chacun, écart 0,6 %, x 41,2-58,7 %, ≈ 2 px d'épaisseur) se tracent de gauche à droite dans l'ordre orange (f792), violet (f796), bleu (f798), vert (f798-f810) : décalage 2-4 im, chacun en ≈ 8-12 im, ease-out. Ils récapitulent les 4 étapes sous la promesse.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sortie inversée : effacement lettre à lettre et titre qui redescend",
+      "name_en": "Reversed exit: backspace and masked drop",
+      "t": "0:14.15-0:14.62",
+      "frames": "f849-f877",
+      "fps": 60,
+      "mechanics": "L'accroche mono s'efface caractère par caractère depuis la gauche (« FROM PAID… » → « …OFF », f849-f861) ; les deux lignes du titre redescendent derrière leur masque, mot par mot (f858-f873) ; les segments du soulignement se rétractent vers leur extrémité droite (f850-f862). La sortie rejoue l'entrée à l'envers.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite : la dernière image est la première",
+      "name_en": "Seamless loop",
+      "t": "0:14.30-0:15.00",
+      "frames": "f858-f899",
+      "fps": 60,
+      "mechanics": "Les 4 carrés quittent la position du logo (x 31-38 %, y 36 %) et glissent en ligne droite vers le centre (x 47-53 %, y 50 %) en 30 im ; pas 0,2-0,5-1,1-1,5-2,2-2,6-2,2-1,5-1,1-0,7-0,2 % : ease-in-out symétrique. Ils s'arrêtent à f890 sur la position exacte de l'image 0 : écart moyen entre f899 et f0 = 0,13 niveau sur 255. Lue en boucle sur une page d'atterrissage, la vidéo n'a pas de couture.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, extra-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un seul exemple chiffré traverse les quatre étapes",
+      "name_en": "One data thread through every stage",
+      "t": "0:00.50-0:10.60",
+      "frames": "f30-f636",
+      "fps": 60,
+      "mechanics": "Le prix du « service plan » sert de fil rouge : deux prix contradictoires dans le bureau ($189/yr dans le tableur 2024 probable, $219/yr sur la page Pricing), conflit signalé à l'audit, décision tranchée et journalisée dans la copie de travail ($219 actif, $189 périmé), test « What does the service plan cost? » qui répond $219/yr avec sa source, puis livraison testée. Le spectateur suit une seule donnée de bout en bout.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur à quatre étapes réutilisé partout",
+      "name_en": "Four-stage color code",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Orange #DB4F0F, violet #784EDE, bleu #2A62E8, vert #19B371 : ce sont les 4 carrés du logo, les marqueurs de la frise, le mot « context » (orange = audit), les étiquettes CONFLICT (orange) et PASS / SOURCED / TESTED (vert = livrable), le soulignement final. Hors de ces 4 couleurs, tout est noir, blanc cassé ou gris. Chaque couleur garde un seul sens.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Plan-séquence morphé, zéro coupe",
+      "name_en": "Continuous morphing one-shot",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Aucune coupe franche en 15 s (détecteur : un seul plan). Chaque scène naît d'un objet de la précédente : carrés → marqueurs de frise ; ligne diagonale → ligne d'écrasement → fenêtre → puce → marqueur → logo → carrés de départ. L'œil ne perd jamais son point d'attention.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Fenêtre de code trop dense pour la vidéo",
+      "name_en": "Over-dense code window",
+      "t": "0:06.30-0:10.70",
+      "frames": "f378-f642",
+      "fps": 60,
+      "mechanics": "Pendant ≈ 4,4 s, la fenêtre affiche arborescence, panneau de décision, changelog puis 8 tests, en texte de 1,2 à 1,6 % de hauteur (≈ 9-12 px en 720p). Les gestes restent lisibles (puces qui volent, prix biffé, PASS verts), le texte non. Un zoom calibré sur la décision ou sur « 8/8 PASS » aurait cadré l'essentiel.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Can be the hero asset for the course landing page » a orienté toute la forme : boucle parfaite (f899 = f0), aucun son, récit lisible sans voix. Une contrainte d'usage dans le prompt pèse plus qu'un adjectif de style."},
+    {"kind": "inputs", "insight": "Le contenu (méthode en 4 étapes, arborescence PRACTICE-KB, SPINE.md, CHANGELOG, suite de tests de récupération) est trop précis pour être inventé : le contexte de session contenait probablement le programme de la formation."},
+    {"kind": "structure", "insight": "« Montre quel motion designer tu es » a été traduit en démonstration de transitions motivées (zéro coupe, chaque objet devient le suivant) plutôt qu'en accumulation d'effets."},
+    {"kind": "build", "insight": "Stack Remotion à 60 fps mais rendu 1280 × 720 : pour une vidéo héro plein écran, il fallait exiger 1920 × 1080 dans le prompt."},
+    {"kind": "qa", "insight": "Le texte d'interface à 1-1,6 % de hauteur n'a pas été contrôlé : il manque une règle de taille minimale ou un zoom sur les passages à lire."}
+  ],
+  "steal": [
+    "Construis la vidéo sur un signe simple (4 carrés colorés) qui devient tour à tour particules, frise de progression, étiquettes, soulignement et logo.",
+    "Remplace un mot en trois gestes : biffure, la négation tombe hors de la ligne, le nouveau mot monte du bas à sa place en couleur.",
+    "Compression puis expansion : écrase tout le chaos dans une ligne en ease-in, tiens 12 im, puis ouvre la ligne en fenêtre en ease-out fort.",
+    "Pour une vidéo héro, finis sur l'image exacte du départ : le dernier geste ramène les éléments à leur position initiale en ease-in-out.",
+    "Fais traverser toutes les étapes par un seul exemple chiffré (un prix contradictoire) : audit, décision, test, livraison."
+  ],
+  "flaws": [
+    "Texte d'interface à 1-1,6 % de la hauteur dans les documents et la fenêtre : illisible sur mobile.",
+    "Rendu 1280 × 720 pour une vidéo héro destinée à une page web plein écran.",
+    "Reflet de verre diagonal sur la fenêtre : tic décoratif de promo d'interface, sans rôle narratif.",
+    "Aucun rebond ni dépassement : carrés, fenêtre et puces se posent tous en ease-out lisse, un peu uniforme.",
+    "Étape « copie de travail » très dense : arborescence, décision et journal en même temps, l'œil ne sait où lire."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : chaîne complète de transitions motivées (anticipation, explosion en arcs, écrasement dans une ligne, ouverture en fenêtre, réduction en puce, plongée dans la frise, assemblage du logo, boucle). Chaque geste a une courbe nette, à décortiquer à 60 fps pour la reproduire."
+  }
+}

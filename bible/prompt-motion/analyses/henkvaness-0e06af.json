@@ -1,0 +1,593 @@
+{
+  "slug": "henkvaness-0e06af",
+  "title": "Prompting mistakes video tutorial",
+  "handle": "@henkvaness",
+  "family": "explainer",
+  "craft": 3,
+  "craft_reason": "Système éditorial très cohérent (papier, serif, rouge/vert) et voix calée à la frame, mais mouvement minimal : fondus, frappe, une transition répétée dix fois, 720p 25 im/s, textes minuscules, longs maintiens.",
+  "summary": "Tutoriel de 5 min 37 tiré d'un article de Henk van Ess : huit façons dont nos questions orientent les chatbots, et cinq règles. Voix off, décor papier crème, cartes de chat, photocopieuse métaphorique, huit chapitres au même gabarit (mauvaise question, réponse, meilleure question, correctif chiffré), graphique final avec intervalles. Très clair et honnête sur les données ; faible en mouvement, monotone et souvent statique.",
+  "prompt_vs_result": [
+    "Une seule ligne : transformer un article en vidéo éducative. Aucune durée, aucun format, aucune indication de style, de voix ou de musique.",
+    "Claude a tout décidé : script en voix off (synthèse vocale probable), durée de 5 min 37, esthétique papier éditorial, métaphore photocopieuse et tache d'encre, gabarit de chapitre en quatre cases, son de page, données chiffrées et graphique final.",
+    "Sans cadrage, le modèle reste fidèle à l'article (exhaustif, long) au lieu de le monter. Il aurait fallu fixer : 90 s maximum, 1080p 60 im/s, une idée par plan, taille de texte minimale, transitions variées, musique."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#EEE6DB",
+        "role": "fond papier crème (centre)"
+      },
+      {
+        "hex": "#D1CABA",
+        "role": "vignettage radial des bords"
+      },
+      {
+        "hex": "#1A1812",
+        "role": "encre : texte, cartes sombres « WHAT PEOPLE TYPED », traits des illustrations"
+      },
+      {
+        "hex": "#F8F2EA",
+        "role": "cartes claires (réponses, pastilles, sommaire)"
+      },
+      {
+        "hex": "#C8503F",
+        "role": "rouge accent = faute : tache d'encre, surlignage, icônes de chapitre, cases du unit chart, barre Gemini"
+      },
+      {
+        "hex": "#DD3030",
+        "role": "rouge vif du tampon « MADE IT UP »"
+      },
+      {
+        "hex": "#1A7048",
+        "role": "vert = correctif : pastille « THE FIX », barres Claude/Copilot, case juste, icônes des règles"
+      },
+      {
+        "hex": "#F0CF45",
+        "role": "jaune surligneur, une seule fois (« steer ») — estimé"
+      },
+      {
+        "hex": "#D8D0B8",
+        "role": "beige de la photocopieuse"
+      },
+      {
+        "hex": "#404040",
+        "role": "cartes sombres atténuées quand le correctif arrive"
+      }
+    ],
+    "type": "Serif condensée contrastée (type Instrument Serif) : chiffres ≈19 % de la hauteur, titres 9-16 %, mot clé en italique ; numéros de chapitre en contour 25 % ; prompts en mono ≈2,5 % ; étiquettes en petites capitales ≈1 %.",
+    "texture": "Papier crème uni, vignettage radial (coins ≈15 % plus sombres), ombres portées très douces sous les cartes, aucun grain visible, aucun flou de mouvement. Flou gaussien seulement pour faire apparaître les mots (flou → net en 2-8 im). Tampon à texture d'encre usée ; tache d'encre avec gouttelettes. Illustrations plates au trait noir ≈1,5 px.",
+    "style": "Explainer éditorial papier, sobre",
+    "coherence": "Système strict : un seul fond, trois encres à sens fixe (noir = neutre, rouge = faute, vert = correctif), une serif pour l'auteur et les réponses, une mono pour ce que l'humain tape, une sans pour les étiquettes. Un fil visuel relie l'ouverture et la métaphore : la tache d'encre du titre est la tache sur l'original photocopié. Le code rouge/vert court jusqu'au graphique final (Gemini en rouge). Ce qui casse : la répétition mécanique (10 tournes de page identiques, 8 chapitres identiques) et les textes secondaires de 7 à 17 px, illisibles en 720p."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de musique de fond : vrais silences à -86 dB (5,45-6,07 s) et -70 dB (86,7-87,5 s), plancher ≈-45 dB entre les mots. Le 89,1 BPM du dossier (netteté 1,53, peu fiable) vient du débit de la voix. Le rythme est celui de la voix off : un événement visuel toutes les 2 à 5 s (frappe d'un prompt, surlignage, réponse, colonne de droite, barre « THE FIX »), cartons de chapitre tenus 5 à 7 s, écrans de comparaison 20 à 28 s. Le détecteur compte 88 maintiens ≥0,4 s pour 304,7 s, soit 90 % de la durée. Aucune coupe franche : fondus et tournes de page uniquement. Entre deux chapitres, la mécanique est réglée à l'image près sur 8 occurrences : fin de la voix, 34-37 im (1,4-1,5 s) d'écran figé, départ de la tourne, effet sonore à +7/+9 im, numéro à +10 im, reprise de la voix à +29/+32 im. Soit ≈2,7 s sans parole par changement de chapitre, dont 1,4 s totalement immobiles. Densité très loin de la grammaire 1600 (un mouvement toutes les 0,5-1 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:01",
+        "what": "papier vide puis carte de chat (YOU en bulle sombre, CHATBOT en lignes grises) en fondu",
+        "technique": "fondu d'entrée"
+      },
+      {
+        "t": "0:01.96-0:02.12",
+        "what": "tampon rouge « MADE IT UP » qui claque sur la réponse",
+        "technique": "tampon (stamp slam) 4 im"
+      },
+      {
+        "t": "0:05-0:06.5",
+        "what": "flèche « ← » désigne la carte (on accuse le chatbot)",
+        "technique": "flèche d'accusation"
+      },
+      {
+        "t": "0:07-0:12",
+        "what": "compteur 0 → 522,607, légende « QUESTIONS PEOPLE TYPED INTO », crédit italique",
+        "technique": "compteur roulant ease-in-out 5 s"
+      },
+      {
+        "t": "0:12.5-0:15.5",
+        "what": "pastilles ChatGPT, Claude, Grok, Gemini, Copilot posées une à une",
+        "technique": "apparition décalée sur l'énumération"
+      },
+      {
+        "t": "0:17.5-0:20.4",
+        "what": "fondu vers le schéma YOU → CHATBOT",
+        "technique": "fondu enchaîné"
+      },
+      {
+        "t": "0:20.5-0:21.4",
+        "what": "la flèche pivote de 180°, contour rouge sur YOU, « It's also you. » passe du flou au net",
+        "technique": "retournement sémantique par rotation"
+      },
+      {
+        "t": "0:22.8-0:23.2",
+        "what": "tourne de page",
+        "technique": "page turn wipe"
+      },
+      {
+        "t": "0:23.2-0:27.5",
+        "what": "titre « It's also you. » mot à mot, tache d'encre rouge, sous-titre, ligne de crédits",
+        "technique": "blur-in mot à mot + éclaboussure"
+      },
+      {
+        "t": "0:27.6-0:36.5",
+        "what": "photocopieuse au trait, original taché ; phrase sous-titrée mot à mot en bas",
+        "technique": "sous-titre cinétique sur la voix"
+      },
+      {
+        "t": "0:37-0:41",
+        "what": "l'original entre dans la machine, 5 copies éjectées et empilées en éventail",
+        "technique": "mini animation narrative"
+      },
+      {
+        "t": "0:41.5-0:44",
+        "what": "zoom ×1,25 sur l'original + « the smudge is on your original » en rouge",
+        "technique": "zoom explicatif unique"
+      },
+      {
+        "t": "0:46-0:50",
+        "what": "pastilles cleaner / sharper / +500 words / just as wrong (rouge plein)",
+        "technique": "liste à puces sur la voix, chute en rouge"
+      },
+      {
+        "t": "0:51-1:01",
+        "what": "tableau de 4 chiffres roulants alignés (questions, langues, échanges, jugés)",
+        "technique": "compteurs alignés à droite"
+      },
+      {
+        "t": "1:03-1:06",
+        "what": "« ask » barré, « steer » surligné en jaune",
+        "technique": "rature + surligneur"
+      },
+      {
+        "t": "1:07-1:23",
+        "what": "prompt « cost problem » surligné rouge, canapé « rode in as furniture », grille 19/20",
+        "technique": "unit chart rempli case par case"
+      },
+      {
+        "t": "1:23.6-1:27",
+        "what": "sommaire : 8 cartes en grille 4 × 2",
+        "technique": "apparition décalée 4 im"
+      },
+      {
+        "t": "1:27.5-1:35",
+        "what": "carton 01 Smuggling (numéro en contour, verre rouge, définition)",
+        "technique": "carton de chapitre"
+      },
+      {
+        "t": "1:35-1:56.7",
+        "what": "écran de comparaison 01 : prompt tapé, surlignage, réponse verbatim, meilleure question, forme de la réponse, barre THE FIX, atténuation",
+        "technique": "gabarit 4 cases + focus dim"
+      },
+      {
+        "t": "1:56.7-4:46",
+        "what": "chapitres 02 à 08 au même gabarit (tournes à 1:56.8, 2:25.3, 2:53.1, 3:11.5, 3:33.1, 4:00.5, 4:26.0)",
+        "technique": "gabarit répété"
+      },
+      {
+        "t": "4:46.3-4:47.5",
+        "what": "tourne de page vers la synthèse",
+        "technique": "page turn wipe"
+      },
+      {
+        "t": "4:48-5:11",
+        "what": "« Eight mistakes. One habit. Five rules. » tapé mot à mot, puis 5 règles avec tuiles d'icônes vertes",
+        "technique": "liste progressive sur la voix"
+      },
+      {
+        "t": "5:12-5:28",
+        "what": "« Don't count on the machine to catch you. » + barres Claude 20,1 %, Copilot 18,6 %, Gemini 3,7 % avec intervalles ; « a speed bump, not a brake » ; « Which leaves the checking with you. »",
+        "technique": "bar chart avec intervalles de confiance"
+      },
+      {
+        "t": "5:28.8-5:37.2",
+        "what": "tourne de page, carton final « It's also you. », 3 parties de la série, signature, note méthodologique, fondu au papier",
+        "technique": "outro de série"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Aucune musique : vrais silences (-86 dB à 5,45-6,07 s, -70 dB à 86,7-87,5 s), plancher ≈-45 dB entre les mots ; le 89,1 BPM (netteté 1,53) vient du débit vocal. Contrôle sur les 12 planches microscope : 6 gestes clés sur 12 (apparition de carte f2572, f3817, f3975, f4566 ; départ de tourne f2918, f3632, f4326, f4787, f5326, f6011, f6648, f7156) à ±2 im d'une barre, soit 50 % pour un hasard ≈60 % (demi-temps = 8,4 im à 89 BPM et 25 im/s) : aucune synchro musicale. Indice automatique : p corrigé = 1,0, z basses = -0,94. Tout est en revanche calé sur la voix : sur les 8 changements de chapitre, la voix s'arrête 34-37 im avant la tourne, le même effet sonore (enveloppe 300-3400 Hz identique à ±1 dB : -25, -21, -18 … -31 dB sur 20 im = 0,8 s) attaque à +7/+9 im, le numéro apparaît à +10 im, la voix annonce « Two », « Three »… à +29/+32 im. Pastilles, règles et barres apparaissent sur leur phrase (≤1 s d'écart à la résolution des planches d'ensemble).",
+    "synced": [],
+    "style_match": "Pas de musique : la voix posée et documentaire colle aux fondus doux, au papier crème et aux serifs ; seul un bruit de page ponctue la transition unique.",
+    "how_built": "Timeline construite à partir de la voix off (synthèse vocale probable, avec pauses insérées de ≈2,7 s entre chapitres) : la régularité à ±2 im des 8 changements de chapitre montre des temps calculés depuis les horodatages des phrases, pas un calage à l'oreille. L'effet sonore de page est un même échantillon placé par code à un décalage fixe du départ de la transition. Le prompt ne demandait ni musique ni voix : Claude a choisi la voix seule, ce qui convient à un tutoriel mais laisse 1,4 s de silence figé à chaque chapitre."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc accroche → chiffre → retournement → métaphore → méthode → chapitres → règles → preuve",
+      "name_en": "Hook-twist-method explainer arc",
+      "t": "0:00-5:37.2",
+      "frames": "f0-f8429",
+      "fps": 25,
+      "mechanics": "0-6,5 s : accroche (« quand un chatbot invente, on accuse le chatbot ») avec tampon et flèche vers la machine. 7-17 s : chiffre massif (522,607 questions, 5 chatbots). 18-22 s : retournement (la flèche se retourne vers YOU, « It's also you. »). 23-27 s : titre. 28-51 s : métaphore de la photocopieuse (la tache est sur ton original). 52-83 s : méthode et preuve (tableau de chiffres, exemple, 19 sur 20). 84-87 s : sommaire des 8 erreurs. 88-286 s : 8 chapitres au même gabarit (≈20-28 s chacun). 288-311 s : 5 règles. 312-328 s : graphique « ne compte pas sur la machine ». 330-337 s : carton de série. Structure solide de journalisme de données, mais 5 min 37 pour un format social.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-29.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tampon qui claque (« MADE IT UP »)",
+      "name_en": "Rubber stamp slam",
+      "t": "0:01.92-0:02.12",
+      "frames": "f48-f53",
+      "fps": 25,
+      "mechanics": "f48 : rien. f49 : tampon à ≈158 % de sa taille finale, opacité ≈40 %, rotation ≈-8°. f50 : 126 %, opaque. f51 : 109 %. f52 : 100 %, posé. Pas d'échelle 0,32 → 0,17 → 0,09 : chaque pas vaut la moitié du précédent = ease-out exponentiel, sans dépassement ni rebond, sans flou. 4 im = 0,16 s. Contour rouge #DD3030 ≈2 px, capitales sans grasses, texture d'encre usée, posé en travers du bas droit de la carte (≈35 % de la largeur de la carte, ≈9 % de celle du cadre). Tombe sur « makes something up » (probable). Aucun tremblement de la carte à l'impact : on pourrait ajouter 2 im de secousse.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 47,
+        "to": 53,
+        "n": 6
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur roulant jusqu'au chiffre clé",
+      "name_en": "Rolling number counter",
+      "t": "0:07-0:12",
+      "frames": "f175-f300",
+      "fps": 25,
+      "mechanics": "Chiffre serif condensée ≈19 % de la hauteur, centré à ≈45 % de la hauteur. Valeurs relevées chaque seconde : 0 (7 s), 159,336, 388,267, 492,590, 521,297, 522,607 (12 s) → incréments 159k, 229k, 104k, 29k, 1,3k : ease-in-out, départ doux, vitesse maximale vers 8,5 s, atterrissage très long (les 2 dernières secondes ne font que 6 % du chemin). Durée ≈5 s (125 im). Légende petites capitales espacées « QUESTIONS PEOPLE TYPED INTO » (≈1,2 %) apparue en cours de roulement, crédit italique « analysed by Henk van Ess » à ≈75 % de la hauteur. Chiffres proportionnels probables : le bloc centré change de largeur pendant le roulement.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pastilles posées une à une à leur place finale",
+      "name_en": "Pre-laid-out chip reveal",
+      "t": "0:12.5-0:15.5",
+      "frames": "f312-f387",
+      "fps": 25,
+      "mechanics": "5 pastilles blanches arrondies (texte sans gras ≈1,5 %, ombre douce) sous le chiffre. La rangée est calculée centrée dès le départ : chaque pastille apparaît directement à sa place (ChatGPT seule à 0:13 à gauche du centre, Claude et Grok à 0:14, Gemini et Copilot à 0:15), sans recentrage de la rangée. ≈0,4-0,5 s entre deux pastilles, au fil de l'énumération vocale. Fondu (légère montée probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flèche qui pivote de 180° pour retourner la responsabilité",
+      "name_en": "Arrow flip reversal",
+      "t": "0:20.48-0:21.04",
+      "frames": "f512-f526",
+      "fps": 25,
+      "mechanics": "Schéma : carte YOU (sombre, à gauche) → flèche rouge fine (≈1 px, ≈12 % de la largeur) → carte CHATBOT (claire, à droite). f512-f514 flèche vers la droite ; f516 inclinée ≈20° ; f518 ≈60° (pointe vers le bas) ; f520 ≈110° ; f522 ≈160° ; f524-f526 pointe à gauche. Rotation ≈180° en ≈12 im (0,48 s) autour de son centre, pas plus grands au milieu = ease-in-out. À f518, un contour rouge 2 px s'allume autour de la carte YOU. Le mouvement dit la phrase : le reproche change de cible. À f526, « It's also you. » arrive dessous.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 512,
+        "to": 526,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Phrase qui passe du flou au net",
+      "name_en": "Blur-to-sharp reveal",
+      "t": "0:21.04-0:21.36",
+      "frames": "f526-f534",
+      "fps": 25,
+      "mechanics": "« It's also you. » serif ≈7 % de la hauteur, centrée sous le schéma, « you. » en italique. f526 : flou gaussien fort (≈6 px) et opacité ≈60 % ; f528 : presque nette ; f534 : nette. ≈8 im = 0,32 s, sans déplacement ; léger rétrécissement probable (≈105 → 100 %) d'après la vignette de 0:21. Même recette, plus rapide (2-4 im par mot), pour les titres et les noms de chapitre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tourne de page (liseré qui balaie de droite à gauche)",
+      "name_en": "Page turn wipe",
+      "t": "1:56.72-1:57.32",
+      "frames": "f2918-f2933",
+      "fps": 25,
+      "mechanics": "f2918 : les contenus commencent à s'estomper (cartes sombres #1A1812 → gris). f2919 : ≈60 %. f2920 : un liseré vertical (bande claire + filet d'ombre, comme la tranche d'une feuille) apparaît au bord droit (≈95 % de la largeur). Il balaie vers la gauche : 79 % (f2922), 67 % (f2923), 52 % (f2924), 32 % (f2925), 4 % (f2926) ; pas croissants de 12 à 28 % du cadre par image = ease-in (accélération), 6 im = 0,24 s. Contenus à ≈10 % sous le liseré. f2927-f2928 : papier vide avec traces verticales. f2929 : le numéro suivant arrive. Départ → numéro : 11 im = 0,44 s. Aucun flou de mouvement : à 25 im/s le liseré saute de 12-28 % par image et se lit comme un défaut vertical plutôt qu'une page. Utilisée 10 fois à l'identique (0:22.8, 1:56.8, 2:25.3, 2:53.1, 3:11.5, 3:33.1, 4:00.5, 4:26.0, 4:46.3, 5:28.8).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f2919.jpg, microM-003-move-f3633.jpg, microM-006-move-f4327.jpg",
+      "illus": {
+        "from": 2918,
+        "to": 2932,
+        "n": 8
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Son de page placé à décalage fixe sur chaque changement de chapitre",
+      "name_en": "Fixed-offset transition SFX",
+      "t": "1:55.36-1:58.04",
+      "frames": "f2884-f2951",
+      "fps": 25,
+      "mechanics": "Même échantillon à chaque chapitre : enveloppe 300-3400 Hz identique à ±1 dB sur les 8 tournes (-25, -21, -18, -18, -18, -19, -17 … -31 dB sur 20 im = 0,8 s). Séquence mesurée, régulière à ±2 im sur les 8 occurrences : fin de la voix (f2884), 34-37 im d'écran figé, départ du fondu et de la tourne (f2918), attaque du son à +7/+9 im (f2928), soit 1 im avant l'apparition du numéro (f2929), reprise de la voix « Two » à +29/+32 im (f2949). Le son ponctue le chapitre ; aucune musique ne le soutient.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f2919.jpg + enveloppe audio mesurée"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot en flou → net, avec tache d'encre",
+      "name_en": "Word-by-word blur-in with ink splat",
+      "t": "0:23.28-0:23.76",
+      "frames": "f582-f594",
+      "fps": 25,
+      "mechanics": "Après la tourne : « It's » flou à f582, net à f584 ; « also » flou f586, net f588 ; « you. » (italique) flou f588, net f590-f592. Décalage ≈2-3 im (0,1 s) entre mots, chaque mot 2-4 im de flou à net, sans déplacement. Titre ≈16 % de la hauteur, centré à ≈45 % de la hauteur. Tache d'encre rouge #C8503F au-dessus du « u » : point (≈1 % de la largeur) à f586, forme pleine avec gouttelettes à f588, taille finale (≈7 % de la largeur) à f590 ; croissance ease-out en 4 im. Puis sous-titre sans (≈2 %) à 0:25 et ligne de crédits en petites capitales espacées. La tache annonce la tache de l'original photocopié.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Métaphore animée de la photocopieuse",
+      "name_en": "Photocopier metaphor animation",
+      "t": "0:36.9-0:40.6",
+      "frames": "f922-f1014",
+      "fps": 25,
+      "mechanics": "Illustration plate au trait noir ≈1,5 px : photocopieuse beige #D8D0B8 (≈30 % de la largeur, centre-gauche), afficheur noir avec LED verte ; feuille originale (« ? », lignes grises, tache rouge) au-dessus. 0:37.0-0:37.5 : l'original descend dans la machine (≈12 im, ease-in-out) pendant qu'une ligne de scan bleu pâle passe sur la vitre. 0:38.08 (f952) : première copie éjectée à droite (glisse ≈5 % de la largeur + fondu en 2-3 im), puis une copie toutes les ≈12 im (0,48 s), empilées en éventail (décalage ≈1 %, rotation ±3°), 5 copies à 0:40.5, toutes avec la même tache. L'image explique seule l'idée « la machine copie fidèlement ton erreur ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg, overview-04.jpg",
+      "illus": {
+        "from": 924,
+        "to": 1000,
+        "n": 8
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom unique sur l'original taché",
+      "name_en": "Explanatory push-in on detail",
+      "t": "0:41.5-0:44",
+      "frames": "f1038-f1100",
+      "fps": 25,
+      "mechanics": "L'original grossit de ≈100 à ≈125 % (ancré vers le bas, il passe devant la machine), légende serif italique rouge « the smudge is on your original » (≈2,5 %) à droite. Tenu ≈1,5 s puis retour à la taille d'origine. Seul zoom de la vidéo, et il est motivé : il cadre la tache au moment où la voix la nomme.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pastilles empilées sur la voix, chute en rouge",
+      "name_en": "Spoken list chips with red punchline",
+      "t": "0:46-0:50",
+      "frames": "f1150-f1250",
+      "fps": 25,
+      "mechanics": "Pastilles blanches (sans gras ≈1,3 %) empilées verticalement à droite de la pile de copies : « cleaner », « sharper », « +500 words », puis « just as wrong » en rouge plein #C8503F, texte blanc. Une par mot dit, ≈0,5-1 s d'écart. La couleur porte la chute de la phrase.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tableau de chiffres roulants alignés à droite",
+      "name_en": "Aligned rolling stat table",
+      "t": "0:52-1:01",
+      "frames": "f1300-f1525",
+      "fps": 25,
+      "mechanics": "4 lignes : nombre serif ≈7 % de la hauteur aligné à droite sur un axe vertical (x ≈45 %), libellé sans gras ≈1,3 % aligné à gauche juste après, interligne ≈7,5 % de la hauteur. Chaque ligne arrive sur sa phrase et son compteur roule ≈1-1,5 s : 420,494 → 522,607 ; 8 → 19 ; 32,760 → 46,287 ; 7,241 → 9,000. Lignes décalées de ≈2 s. Bloc dans le quart haut gauche ; le reste du cadre vide.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rature puis surligneur jaune (ask → steer)",
+      "name_en": "Strike-through and highlighter swap",
+      "t": "1:03-1:06",
+      "frames": "f1575-f1650",
+      "fps": 25,
+      "mechanics": "« ask » serif gris + « steer » serif noir (≈4 %) sous le tableau, à droite. À 1:04, une rature horizontale fine traverse « ask » ; à 1:05, un rectangle jaune #F0CF45 (≈110 % de la hauteur du mot) apparaît derrière « steer ». Calé sur « not looking for the questions that ask, looking for the ones that steer ». Seule occurrence du jaune : l'exception attire l'œil.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Surlignage rouge au feutre sur les mots qui orientent",
+      "name_en": "Marker highlight wipe",
+      "t": "1:36.9-1:38",
+      "frames": "f2422-f2450",
+      "fps": 25,
+      "mechanics": "Dans la carte sombre mono, un fond rouge #C8503F se dessine de gauche à droite derrière la portion fautive (« The French Foreign Legion is a legitimately great idea for nations. ») : à 1:37 seul le « T » est couvert, à 1:38 toute la portion ; ≤1 s ; texte clair sur rouge. Deux surlignages peuvent pousser en même temps (« chose to » et « got it », 2:04). Même geste à 1:08.5 (« ignore the obvious cost problem »), 2:35, 2:59, 3:18, 3:43, 4:10, 4:38.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe machine des prompts dans une carte qui apparaît en fondu",
+      "name_en": "Typewriter prompt reveal",
+      "t": "1:42.88-1:43.48",
+      "frames": "f2572-f2587",
+      "fps": 25,
+      "mechanics": "f2572 : rectangle gris à ≈40 % d'opacité ; f2573 : ≈60 % ; f2574 : sombre + premiers caractères. Fondu de carte en 3 im (0,12 s), sans déplacement ; l'étiquette « ● TYPE THIS INSTEAD » apparaît en même temps. Frappe à ≈3-4,5 caractères par image (70-110 car./s) : « Which states operate a foreign legion, and which have ended o » (61 car.) en 14 im ; un prompt de 130-140 caractères est tapé en 1,2-1,6 s. Pas de curseur visible. Mono ≈2,3 % de la hauteur, texte crème sur #1A1812, coins ≈6 px. La frappe ne suit pas la voix, qui paraphrase.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f2573.jpg, microM-004-move-f3818.jpg, microM-005-move-f3977.jpg, microM-007-move-f4568.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de comparaison en 4 cases + barre de correctif",
+      "name_en": "Before/after prompt comparison template",
+      "t": "1:35-1:56.7",
+      "frames": "f2375-f2918",
+      "fps": 25,
+      "mechanics": "En-tête en haut à gauche (icône rouge + « 01 / 08 » en petites capitales + nom serif ≈3 %). Colonne gauche (x 7-46 %) : « ● WHAT PEOPLE TYPED » (point rouge) carte sombre mono, puis « REPLY · VERBATIM » carte claire, citation serif. Colonne droite (x 52-93 %) : « ● TYPE THIS INSTEAD » (point vert) carte sombre, puis « REPLY · SHAPE OF THE ANSWER » carte en pointillés, texte sans gris. Bas (y ≈85-95 %) : barre pleine largeur, pastille verte « THE FIX », phrase serif, statistique « ≈ 1 in 5 questions » + légende minuscule. Les cases arrivent dans l'ordre de lecture, une toutes les 3-6 s. Pendant la première moitié, ≈60 % du cadre reste vide (droite et bas).",
+      "verdict": "adapter",
+      "evidence": "overview-09.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Atténuation du contexte quand le correctif arrive",
+      "name_en": "Focus dim",
+      "t": "1:49-1:50",
+      "frames": "f2725-f2750",
+      "fps": 25,
+      "mechanics": "Quand la barre « THE FIX » monte en fondu (≈0,5 s), toutes les cartes du dessus passent à ≈70 % d'opacité : cartes sombres #1A1812 → #404040, citations grisées. La barre reste à 100 % et devient le seul élément contrasté. Hiérarchie par le contraste, sans mouvement. Même geste dans les 8 chapitres.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg, microM-002-move-f2919.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carton de chapitre : numéro en contour, icône rouge, titre, définition",
+      "name_en": "Outlined-numeral chapter card",
+      "t": "1:57.16-1:58.5",
+      "frames": "f2929-f2962",
+      "fps": 25,
+      "mechanics": "Numéro serif condensée en contour seul (trait ≈1,5 px, sans remplissage) ≈25 % de la hauteur ; à sa droite une icône rouge au trait ≈8 % (verre, crayon, Y, marteau, étiquette, personnage coché, ∞, angle) ; dessous titre serif ≈9 % ; définition en italique gris ≈2,5 %. Construction : numéro à +10 im du départ de la tourne (fondu 0 → 100 % en 4 im, échelle ≈88 → 100 %, ease-out), titre ≈5 im plus tard en flou → net, icône et définition ≈0,5-1 s après. Puis tenu 5-7 s sans aucun mouvement.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f2919.jpg, microM-009-move-f5327.jpg, overview-13.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu par le papier vide (carton → écran de détail)",
+      "name_en": "Dip-to-paper dissolve",
+      "t": "2:32.40-2:32.76",
+      "frames": "f3810-f3819",
+      "fps": 25,
+      "mechanics": "f3810-f3811 : carton net ; f3812 : ≈10 % résiduel ; f3813-f3816 : papier vide (3-4 im = 0,14 s) ; f3817 : en-tête + carte grise à ≈40 % ; f3818 : ≈60 % ; f3819 : carte pleine, frappe « Tr ». Sortie 2 im, vide 3-4 im, entrée 2-3 im : ≈9 im = 0,36 s, sans déplacement. Propre, mais toujours identique.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f3818.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Unit chart 19 cases rouges sur 20",
+      "name_en": "Unit chart fill",
+      "t": "1:17-1:20.5",
+      "frames": "f1925-f2012",
+      "fps": 25,
+      "mechanics": "Grille 2 × 10 cases arrondies (≈2,4 % de la largeur chacune) d'abord vides (crème, contour pâle), puis remplies en rouge #C8503F case par case, de gauche à droite et rangée par rangée, ≈3 im (0,12 s) par case (2 cases à 1:18, 10 à 1:19, 20 à 1:20) ; la 14e case en vert #1A7048. Puis « 19 out of 20 replies let the claim stand » (« 19 » serif ≈10 %). À gauche, canapé au trait + « rode in as furniture » (serif, italique) + « NEVER CHECKED » rouge en petites capitales.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Sommaire des 8 erreurs en grille 4 × 2",
+      "name_en": "Staggered card grid index",
+      "t": "1:23.6-1:25",
+      "frames": "f2090-f2125",
+      "fps": 25,
+      "mechanics": "8 cartes claires (≈19 % de la largeur, ombre douce), chacune avec icône au trait, numéro en petites capitales et nom serif. Apparition décalée ≈4 im (0,16 s) par carte, en fondu + montée ≈2 % de la hauteur (à 1:24 la 3e carte est encore pâle et plus basse). Grille en haut du cadre ; les icônes reviennent ensuite dans chaque carton de chapitre.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre cinétique mot à mot sur la voix",
+      "name_en": "Voice-led word-by-word caption",
+      "t": "0:32-0:36",
+      "frames": "f800-f900",
+      "fps": 25,
+      "mechanics": "Phrase serif ≈2,5 % en bas, centrée : les mots s'ajoutent au fil de la voix (« Part » 0:32, « Part of your answer » 0:33, « … is already » 0:34, « … in your question. » 0:35) ; « question. » en italique d'abord gris puis noir. Même procédé pour « Eight mistakes. One habit. Five rules. » (4:48) et « Don't count on the machine to catch you. » (5:12). Décalage sur la voix ≤1 s à la résolution des planches.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-25.jpg, overview-27.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Liste des 5 règles avec tuiles d'icônes",
+      "name_en": "Icon-tile rules list",
+      "t": "4:48-5:11",
+      "frames": "f7200-f7775",
+      "fps": 25,
+      "mechanics": "Titre centré en haut (≈5 %), tapé mot à mot. Règles alignées à gauche (x ≈13 %), chaque ligne : tuile carrée arrondie (≈3,5 % de la largeur, icône verte au trait), numéro, règle serif ≈3 %, exemple sans gris ≈1 %. Lignes arrivées à 4:51, 4:53, 4:56, 5:00, 5:05 pour une voix à 4:50.0, 4:52.2, 4:56.2, 4:59.6, 5:04.5 : chaque ligne sur sa phrase. Fondu, sans déplacement visible. Les exemples de 1 % sont illisibles.",
+      "verdict": "reprendre",
+      "evidence": "overview-25.jpg, overview-26.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Graphique en barres avec intervalles de confiance",
+      "name_en": "Bar chart with confidence intervals",
+      "t": "5:12-5:28",
+      "frames": "f7800-f8200",
+      "fps": 25,
+      "mechanics": "Titre tapé mot à mot (« catch you. » en italique), sous-titre en petites capitales « SHARE OF REPLIES THAT QUERIED A RIGGED PREMISE · 95% INTERVAL ». Pour chaque modèle, le nom (serif ≈3 %) apparaît d'abord en gris, puis la barre pousse de gauche à droite (≈0,5-1 s, ease-out probable) : Claude 20,1 % (29 of 144) et Copilot 18,6 % (19 of 102) en vert #1A7048, Gemini 3,7 % (34 of 910) en rouge. Une moustache noire fine traverse chaque barre (intervalle à 95 %) ; valeur en gras + effectif en gris à droite. Barres posées sur les noms dits (5:14-5:15, 5:18, 5:19). Puis icône dos d'âne + « a speed bump, not a brake » (5:23), remplacée par « Which leaves the checking with you. » (5:26).",
+      "verdict": "reprendre",
+      "evidence": "overview-27.jpg, overview-28.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton de fin de série",
+      "name_en": "Series end card",
+      "t": "5:29.5-5:37.2",
+      "frames": "f8238-f8429",
+      "fps": 25,
+      "mechanics": "Après une tourne : « It's also you. » (≈11 %), puis 3 cartes PART ONE / PART TWO / PART THREE (la 3e encadrée de noir = épisode en cours), signature « Henk van Ess · Digital Digging » serif + italique, note méthodologique minuscule (≈0,8 %). Fondu final au papier vide en ≈1 s (5:36.3-5:37.2). La boucle titre-début / titre-fin ferme le récit.",
+      "verdict": "reprendre",
+      "evidence": "overview-28.jpg, overview-29.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une police par locuteur",
+      "name_en": "Voice-coded typography",
+      "t": "0:00-5:37.2",
+      "frames": "f0-f8429",
+      "fps": 25,
+      "mechanics": "Serif condensée contrastée (type Instrument Serif) pour l'auteur, les chiffres, les titres et les réponses citées ; italique pour l'emphase (you., catch you., Five rules., with you.). Mono (type JetBrains Mono ou IBM Plex Mono, probable) pour tout ce qu'un humain tape. Sans (type Inter) pour les pastilles, libellés et formes de réponse. Petites capitales sans espacées (≈+15 %, probable) pour les étiquettes de section. Changer de police = changer de locuteur (humain, machine, auteur).",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg, overview-27.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur sémantique rouge / vert tenu jusqu'au graphique",
+      "name_en": "Semantic red/green coding",
+      "t": "0:00-5:37.2",
+      "frames": "f0-f8429",
+      "fps": 25,
+      "mechanics": "Rouge #C8503F = erreur (tampon, tache, surlignage, point « WHAT PEOPLE TYPED », cases 19/20, barre Gemini, « just as wrong »). Vert #1A7048 = correctif (point « TYPE THIS INSTEAD », pastille THE FIX, case juste, barres Claude/Copilot, icônes des règles). Jaune une seule fois (« steer »). Aucune autre couleur saturée sur 5 min 37 : le sens est lisible sans lire.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-10.jpg, overview-27.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond papier fixe avec vignettage",
+      "name_en": "Static paper background with vignette",
+      "t": "0:00-5:37.2",
+      "frames": "f0-f8429",
+      "fps": 25,
+      "mechanics": "#EEE6DB au centre, #D1CABA aux coins (vignettage radial ≈15 % plus sombre), sans mouvement ni texture animée de toute la vidéo. Donne l'unité « page imprimée » et laisse toute la place à l'information ; rien ne bouge quand les éléments sont posés.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens longs et densité faible",
+      "name_en": "Long holds, low motion density",
+      "t": "1:28-1:35",
+      "frames": "f2200-f2375",
+      "fps": 25,
+      "mechanics": "88 maintiens ≥0,4 s couvrant 90 % de la durée. Cartons de chapitre tenus 5-7 s sans un pixel qui bouge ; écrans de comparaison 20-28 s pour 6 événements (un toutes les 3-6 s) ; 1,4 s d'écran figé et de silence avant chaque tourne. Acceptable pour un tutoriel lu, rédhibitoire pour un format social ou pour la grammaire 1600.",
+      "verdict": "cliche",
+      "evidence": "overview-08.jpg, overview-13.jpg, rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "L'article est la seule matière : tout le contenu (522,607 questions, 19 langues, 9,000 jugées, 8 erreurs, 5 règles, taux par chatbot avec intervalles) en vient, d'où la richesse et l'honnêteté des données, mais aussi l'exhaustivité : rien n'a été coupé."
+    },
+    {
+      "kind": "direction",
+      "insight": "Aucune direction artistique : Claude a choisi une esthétique de page imprimée (papier, serif, encre rouge) cohérente avec une newsletter de journalisme d'investigation. Bon choix par défaut, mais sans mouvement signature."
+    },
+    {
+      "kind": "structure",
+      "insight": "Sans durée imposée, la vidéo suit l'article section par section : 5 min 37 et 8 chapitres au même gabarit. Préciser « 60-90 s, 3 erreurs maximum » aurait forcé un montage."
+    },
+    {
+      "kind": "build",
+      "insight": "Pipeline voix d'abord (synthèse vocale probable, pauses de ≈2,7 s entre chapitres) puis timeline calculée sur les horodatages : la synchro voix/image est exacte à ±2 im sur 8 chapitres. Le rendu par défaut (1280×720, 25 im/s) dégrade la tourne de page et les petits textes."
+    },
+    {
+      "kind": "qa",
+      "insight": "Pas de contrôle de lisibilité : étiquettes à ≈1 % de la hauteur (≈7 px), exemples à ≈1 %, statistiques des barres de correctif illisibles en 720p. Une règle « aucun texte sous 3 % de la hauteur » manquait."
+    },
+    {
+      "kind": "other",
+      "insight": "Claude a inventé un fil visuel absent du prompt : la tache d'encre du titre devient la tache de l'original photocopié, et la flèche du schéma se retourne pour dire « It's also you »."
+    }
+  ],
+  "steal": [
+    "Tampon qui claque : 4 images, échelle 160 → 100 % en ease-out expo, opacité 40 → 100 %, rotation -8°, sans rebond. Pour un verdict ou un mot accusateur.",
+    "Retourner le sens par le mouvement : une flèche qui pivote de 180° en 0,5 s et un contour rouge qui change de cible valent une phrase entière.",
+    "Quand la conclusion arrive, atténuer tout le contexte à 70 % d'opacité : l'œil va seul au seul élément encore contrasté.",
+    "Une police par locuteur (mono pour ce que l'humain tape, serif pour l'auteur, sans pour les étiquettes) et deux couleurs à sens fixe : rouge = faute, vert = correctif.",
+    "Données honnêtes en motion : unit chart 19/20 rempli case par case (3 im par case), barres qui poussent sur le nom dit, moustaches d'intervalle de confiance."
+  ],
+  "flaws": [
+    "Une seule transition (tourne de page) répétée dix fois et huit chapitres au gabarit identique : monotone sur 5 min 37.",
+    "Textes secondaires de 7 à 17 px en 720p (étiquettes, exemples, statistiques) : illisibles sur mobile.",
+    "Cartons tenus 5 à 7 s, écrans de 20 s, 1,4 s figées avant chaque tourne : 90 % du temps sans mouvement.",
+    "Tourne de page à 25 im/s sans flou de mouvement : le liseré saute de 12-28 % par image et ressemble à un défaut.",
+    "Écrans de détail calés en haut à gauche : droite et bas restent vides pendant la moitié de chaque chapitre."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 25 im/s et peu de gestes (fondus, frappe, une tourne répétée), tous mesurés sur les planches. L'intérêt de la pièce est la conception de l'information (gabarit, code couleur, data viz, calage voix), qui se lit sur les planches d'ensemble."
+  }
+}

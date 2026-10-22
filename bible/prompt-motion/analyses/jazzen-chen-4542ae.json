@@ -1,0 +1,393 @@
+{
+  "slug": "jazzen-chen-4542ae",
+  "title": "AgentHud project motion video",
+  "handle": "@Jazzen_Chen",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système très cohérent (bordure dégradé vert→rouge de l'île partout), ouverture lumineuse soignée, tout calé sur une grille 128 BPM ; mais milieu répétitif et textes d'interface illisibles.",
+  "summary": "Promo d'une « Dynamic Island » pour agents IA. Ouverture : deux points lumineux tracent l'encoche, quatre agents s'y posent un par temps. Puis catalogue de rendus ASCII (points, blocs, braille, binaire) qui accélère, six états réels de l'île (terminé, alerte quota, approbation, survol), dézoom vers un MacBook et logo final. Fort sur la cohérence et la synchro ; faible sur la lisibilité et la variété du milieu.",
+  "prompt_vs_result": [
+    "Une seule ligne : faire une vidéo motion « dynamique » sur le projet AgentHud. Aucune direction de style, durée, musique, structure ni texte.",
+    "Tout : fond quasi noir, bordure dégradé vert→jaune→rouge comme signature, intro au tracé lumineux, catalogue de styles ASCII, scénario des états d'interface, légendes mono, grille 128 BPM, dézoom MacBook, carton GitHub.",
+    "Le prompt marche car Claude avait probablement le dépôt sous les yeux (vrais états d'UI, lien GitHub). Il aurait fallu imposer une taille de texte minimale, une durée et varier le milieu."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#05070A", "role": "fond quasi noir"},
+      {"hex": "#0E1426", "role": "halo radial bleu nuit au centre"},
+      {"hex": "#3DDC84", "role": "vert quota sain (bord gauche de l'île, DeepSeek, Allow once)"},
+      {"hex": "#E5B53A", "role": "jaune quota moyen (Grok, milieu du dégradé)"},
+      {"hex": "#E5484D", "role": "rouge quota critique (bord droit, Claude, Codex)"},
+      {"hex": "#E8A070", "role": "orange du bouton « View usage statistics » et de l'icône flamme"},
+      {"hex": "#F2F2F2", "role": "texte principal"},
+      {"hex": "#8A8F98", "role": "sous-titres et libellés secondaires"}
+    ],
+    "type": "Mono grotesque grasse probable (JetBrains Mono) en casse phrase : légendes ≈4,5 % de la hauteur, titre final ≈7 %. Interface en sans neutre type Inter ≈1 %. Interlettrage normal.",
+    "texture": "Lueur (glow) diffuse autour de la bordure de l'île, flare anamorphique horizontal, gerbes d'étincelles, flou d'apparition (blur-in) sur les mots, image fantôme d'1 à 3 im aux changements de style. Pas de grain, pas de flou de mouvement.",
+    "style": "Interface produit sombre néon dégradé",
+    "coherence": "Le dégradé vert→jaune→rouge de la bordure code le niveau de quota et revient partout : encoche, champs ASCII, mots « at a glance », lien GitHub, pilule finale. Fond, police mono et île en haut-centre ne changent jamais. Seule rupture : le MacBook à fond d'écran coloré à 24,5 s, voulue comme révélation du contexte."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 128,1 BPM, pulsation très nette (8,16). La vidéo est construite sur une grille exacte de 128 BPM partant de l'image 0 : un temps = 28,125 im à 60 fps. Coupe flash f225 = 8 temps, styles ASCII f450/f507/f563 = 16/18/20 temps, coupes f591/f619 = 21/22 temps, f633 = 22,5 temps, expansion « Completed » f675 = 24 temps, clic f1154 = 41 temps. Par rapport aux temps détectés dans l'audio (premier temps à 0,076 s), l'image arrive donc toujours 3 à 4 im en avance. Densité : forte de 0 à 11 s (un événement par temps ou tous les deux temps), plus lâche ensuite (un changement d'état de l'île toutes les 1,5 à 2 s). 51 % de maintiens statiques mesurés mais la lueur de l'île respire en continu ; vrais temps morts : la carte Claude figée 14,85-16,28 s (1,43 s) et le carton final 27,35-29,73 s (2,4 s, acceptable en fin).",
+    "timeline": [
+      {"t": "0:00-0:00.45", "what": "Encoche noire seule (≈46 % de largeur, 16 % de hauteur) sur fond bleu nuit ; deux points lumineux s'allument aux coins supérieurs", "technique": "mise en place de la forme signature"},
+      {"t": "0:00.45-0:01.10", "what": "Les deux points descendent les arrondis et suivent le bord inférieur en laissant un trait fin, se rejoignent au centre f63-f66", "technique": "tracé lumineux du contour (stroke draw)"},
+      {"t": "0:01.10-0:01.70", "what": "Fusion en un seul point qui gonfle, flare horizontal pleine largeur f87, extinction f105", "technique": "flare anamorphique"},
+      {"t": "0:01.75-0:03.70", "what": "Quatre comètes colorées viennent frapper le dessous de l'encoche, un agent par temps (DeepSeek vert, Grok jaune, Claude rouge, Codex), chacune avec gerbe d'étincelles et étiquette à filet", "technique": "particules + étiquettes (callouts) calées sur les temps"},
+      {"t": "0:03.75-0:04.40", "what": "Flash surexposé f225 puis l'île remonte coller au bord haut du cadre, lueur chaude qui décroît en ≈40 im", "technique": "flash d'impact + recadrage"},
+      {"t": "0:04.40-0:06.50", "what": "« Every agent's quota, at a glance. » mot à mot en flou→net, « at a glance. » coloré en dégradé vert→rouge", "technique": "mot à mot avec blur-in"},
+      {"t": "0:06.50-0:07.40", "what": "La phrase se floute et s'efface ; l'île grossit vers le cadre", "technique": "sortie floue + poussée de caméra"},
+      {"t": "0:07.50-0:09.85", "what": "Macro sur la bordure de l'île rendue en matrice de caractères : Dots, ASCII, Blocks, Braille, Binary, un style tous les 2 temps, libellé brouillé en bas à gauche", "technique": "catalogue de styles + texte brouillé (scramble)"},
+      {"t": "0:09.85-0:10.60", "what": "Libellé « 6 styles × 6 effects » ; les styles défilent tous les temps puis tous les demi-temps", "technique": "accélération de cadence"},
+      {"t": "0:10.60-0:11.25", "what": "Retour à l'échelle réelle : petite pilule en haut au centre", "technique": "dézoom de recadrage"},
+      {"t": "0:11.25-0:12.90", "what": "L'île s'élargit « Codex · ✓ Completed », deux contours d'écho s'en échappent et s'éteignent", "technique": "morphing d'île + contours d'écho"},
+      {"t": "0:13.15-0:14.60", "what": "État « Claude · 🔥 ~18m left »", "technique": "état d'interface"},
+      {"t": "0:14.60-0:16.45", "what": "L'île devient une grande carte « Quota warning » : 94 %, 18m, 2h 14m, barre de progression, bouton orange ; repli qui atterrit sur le temps f988", "technique": "morphing en carte"},
+      {"t": "0:16.45-0:18.10", "what": "État « landing-page · Waiting ×1 » avec écho", "technique": "état d'interface"},
+      {"t": "0:18.10-0:19.25", "what": "Carte d'approbation (diff retries 3→5, Deny / Always allow / Allow once) ; légende « Approve right from the island. » mot à mot ; curseur vers « Allow once »", "technique": "démo d'interface au curseur"},
+      {"t": "0:19.25-0:20.50", "what": "Clic f1154 : deux anneaux verts en onde de choc débordent du cadre, l'île se replie f1163-f1167", "technique": "onde de choc au clic"},
+      {"t": "0:20.90-0:21.90", "what": "État « ↻ Reset » avec contours d'écho", "technique": "état d'interface"},
+      {"t": "0:22.00-0:24.30", "what": "Le curseur survole l'île qui s'ouvre en tableau de bord (barres de quota, histogramme empilé « Token usage ») ; légende « Hover for more. »", "technique": "révélation au survol + data"},
+      {"t": "0:24.30-0:25.60", "what": "Dézoom : l'écran devient celui d'un MacBook à fond d'écran ondulé bleu-violet-orange, l'île dans l'encoche", "technique": "dézoom de révélation du contexte"},
+      {"t": "0:25.60-0:26.40", "what": "Le portable s'éteint, l'île seule devient une pilule centrée à liseré dégradé", "technique": "isolement de l'objet signature en logo"},
+      {"t": "0:26.40-0:28.00", "what": "« Agent HUD » décodé lettre à lettre avec curseur bloc, sous-titre « Dynamic Island for your AI agents. », lien GitHub en dégradé", "technique": "titre façon terminal"},
+      {"t": "0:28.00-0:30.10", "what": "Carton final tenu puis fondu au noir", "technique": "maintien du carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Musique électronique entraînante sans voix (Whisper : « upbeat music »), 128,1 BPM, pulsation nette 8,16. Les gestes clés tombent sur une grille exacte de 128 BPM partant de 0 (multiples de 28,125 im) : coupe flash f225 (8 temps), styles f450, f507, f563 (16, 18, 20 temps), coupes f591, f619 (21, 22 temps), style f633 (22,5), expansion f675 (24 temps), dépliage d'approbation f1084 (38,5), clic f1154 (41 temps). 10 gestes sur 11 à ±1 im de cette grille (hasard ≈21 % sur demi-temps). Sur les planches, chacun précède la barre bleue de 3 à 4 im (f225 vs barre f229, f450 vs f454, f507 vs f510, f563 vs f567, f619 vs f623) : avance constante ≈70 ms, identique au décalage moyen mesuré (−70 ms, départs/demi-temps R = 0,82, p = 6e-6). En tolérance stricte ±2 im : 4 sur 12 seulement ; en fenêtre −4/+2 : 11 sur 12. Exception : le repli de la carte Claude atterrit pile sur la barre f988 (point vert d'attaque). Dans l'intro, un agent se pose par temps (2,0 / 2,5 / 3,0 / 3,5 s) et les changements de style passent de 2 temps à 1 temps puis au demi-temps.",
+    "synced": ["coupes", "departs", "atterrissages", "apparitions", "flashs", "texte"],
+    "style_match": "Électro 128 BPM propre et entraînante : colle aux courbes sèches, au néon et aux changements de style ASCII ; un peu trop énergique pour le milieu, plus calme et répétitif.",
+    "how_built": "Prompt d'une ligne sans musique ni BPM : la grille vient de Claude. Les événements tombent sur des multiples exacts de 60/128 s depuis l'image 0, signe probable d'une constante BPM = 128 dans le code et d'une piste choisie à ce tempo. L'avance de ≈70 ms vient probablement d'un léger blanc en tête de piste : la grille aurait dû partir du premier temps réel."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture par le tracé lumineux de la forme signature",
+      "name_en": "Light trace reveal of the hero shape",
+      "t": "0:00.25-0:01.10",
+      "frames": "f15-f66",
+      "fps": 60,
+      "mechanics": "Deux points blancs à lueur (≈2 % de la hauteur) apparaissent aux coins supérieurs de l'encoche (≈46 % de largeur) et y restent ≈12 im. Ils démarrent f27, descendent les arrondis (f27-f39), puis suivent le bord inférieur vers le centre (f39-f66) en laissant un trait gris clair de 1 à 2 px (tracé progressif, trim path). Pas de 3 % de largeur par 3 im au départ, ≈1,5 % à l'arrivée : ease-out. Rencontre au centre f63-f66 (≈39 im de trajet = 0,65 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 15, "to": 72, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Fusion des points et flare anamorphique",
+      "name_en": "Merge glow and anamorphic lens flare",
+      "t": "0:01.10-0:01.75",
+      "frames": "f66-f105",
+      "fps": 60,
+      "mechanics": "Les deux points fusionnent f66-f69 en un seul qui gonfle (halo ≈6 % de la hauteur, f69-f84). À f87 une ligne horizontale fine traverse toute la largeur au niveau du bord inférieur de l'encoche, avec halo blanc-bleu ; elle décroît en ≈18 im (f87-f105). Le flare arrive à +2 im du 3e temps de la grille (f84).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Comètes et gerbes d'étincelles, un agent par temps",
+      "name_en": "Comet impacts with spark bursts on the beat",
+      "t": "0:01.75-0:03.70",
+      "frames": "f105-f222",
+      "fps": 60,
+      "mechanics": "Chaque agent arrive comme une comète colorée (traînée courbe, tête lumineuse) depuis le bas du cadre et frappe le dessous de l'encoche : halo coloré (vert, jaune, rouge, rouge) sous l'encoche et gerbe d'étincelles de 15 à 25 points qui retombent en ≈20 im. Quatre impacts espacés d'un temps (≈28 im) : ≈2,0 / 2,5 / 3,0 / 3,5 s. Les halos s'additionnent et forment le dégradé de la bordure.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquettes à filet en quinconce",
+      "name_en": "Staggered leader-line callouts",
+      "t": "0:02.00-0:04.40",
+      "frames": "f120-f264",
+      "fps": 60,
+      "mechanics": "Chaque impact fait naître une étiquette reliée par un filet fin : logo + nom en blanc (≈1,3 % de la hauteur) et valeur colorée (« Balance ¥86.40 », « Weekly credits 70% », « Session · 5h 94% », « Weekly 94% »). Hauteurs alternées (haut, bas, haut, bas) pour éviter les chevauchements sur ≈60 % de largeur. Restent visibles pendant le flash puis s'effacent avec la lueur.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-001-cut-f225.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash d'impact et recadrage vers le haut",
+      "name_en": "Impact flash with reframe",
+      "t": "0:03.75-0:04.50",
+      "frames": "f225-f270",
+      "fps": 60,
+      "mechanics": "Coupe f225 : l'image se surexpose d'un coup (fond gris clair), l'encoche disparaît, une ligne de lumière blanche à halo vert-jaune-rouge apparaît à ≈38 % de la hauteur. Pic de luminosité f226-f229, puis décroissance exponentielle sur ≈40 im, en dégradé chaud vert à gauche, rouge à droite. La ligne monte de ≈38 % à ≈18 % (f245) puis l'île vient se coller au bord haut (f270) : on passe du gros plan d'intro au cadrage réel. Tombe pile sur 8 temps de la grille, 4 im avant la barre bleue f229.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f225.jpg",
+      "illus": {"from": 222, "to": 270, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Dégradé sémantique vert→jaune→rouge comme signature",
+      "name_en": "Semantic traffic-light gradient as brand signature",
+      "t": "0:02.00-0:30.10",
+      "frames": "f120-f1804",
+      "fps": 60,
+      "mechanics": "La bordure de l'île porte un dégradé horizontal #3DDC84 → #E5B53A → #E5484D avec lueur extérieure (≈1,5 % de la hauteur) : il code la santé du quota. Repris dans les champs ASCII, les mots « at a glance. », le lien GitHub et la pilule finale. Seule couleur vive de la vidéo sur un fond #05070A.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Phrase mot à mot en flou→net, fin colorée",
+      "name_en": "Word-by-word blur-in tagline",
+      "t": "0:04.40-0:07.00",
+      "frames": "f264-f420",
+      "fps": 60,
+      "mechanics": "« Every agent's quota, at a glance. » en mono grasse blanche ≈4,5 % de la hauteur, centrée sur deux lignes (≈42 % et 48 %). Chaque mot apparaît flou et gris puis se met au point en ≈15 im ; nouveau mot environ tous les temps (probable). Les lettres de « at a glance. » prennent le dégradé vert→jaune→orange. Sortie à 6,5 s : toute la phrase se floute et s'estompe en ≈20 im.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée macro dans la bordure de l'île",
+      "name_en": "Macro push into the hero outline",
+      "t": "0:06.90-0:07.50",
+      "frames": "f414-f450",
+      "fps": 60,
+      "mechanics": "L'île en haut du cadre grossit (≈×1,3 entre f438 et f449) et se décale, son coin gauche descend vers le centre ; à f450 la bordure, vue de très près, devient un ruban épais (≈35 % de la hauteur) qui épouse l'arrondi gauche puis traverse le cadre. Le passage à la matrice de caractères est une coupe sèche sur le 16e temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contour rendu en matrice de caractères (points, ASCII, blocs, braille, binaire)",
+      "name_en": "Outline rendered as character / dot-matrix field",
+      "t": "0:07.50-0:10.60",
+      "frames": "f450-f636",
+      "fps": 60,
+      "mechanics": "Le ruban est une grille de ≈40 colonnes × 10 rangées de glyphes colorés selon le dégradé horizontal. Cinq rendus vus : Dots (pastilles), ASCII (= * % @ #), Blocks (barres verticales), Braille (points épars), Binary (0/1). Chacun a un effet propre : Ripple, Flow, Scan, Shimmer, Breathe (onde de taille, défilement, balayage, scintillement, respiration). Les glyphes en bordure se raréfient (densité décroissante vers le bas).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg, microM-003-move-f510.jpg, microM-004-move-f566.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Libellé en texte brouillé à chaque changement",
+      "name_en": "Text scramble / decode label",
+      "t": "0:07.50-0:10.60",
+      "frames": "f450-f640",
+      "fps": 60,
+      "mechanics": "En bas à gauche (x ≈5 %, y ≈80 %), nom du style en mono grasse ≈4,5 % de la hauteur, nom de l'effet dessous en gris ≈1,2 %. À chaque changement, les lettres défilent en glyphes aléatoires (« D_- », « Do=* », « Dot0 ») et se figent de gauche à droite en ≈7-8 im (f450 → « Dots » net f458, sous-titre « Ripple » net f460). Glyphes non résolus en vert #7CD94A.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg, microM-004-move-f566.jpg",
+      "illus": {"from": 450, "to": 462, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Changement de style par image fantôme de 3 im",
+      "name_en": "Ghosting glitch swap",
+      "t": "0:08.45-0:08.50",
+      "frames": "f507-f510",
+      "fps": 60,
+      "mechanics": "Entre deux rendus, 2 à 3 images superposent l'ancien et le nouveau avec un léger décalage vertical (doublement de type RGB) : f507-f509 pour ASCII→Blocks, f563-f565 pour Braille→Binary, f619-f621 pour ASCII→Blocks. Rendu net à f510 et f566, pile sur la grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f510.jpg, microM-005-cut-f619.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Accélération de la cadence du catalogue",
+      "name_en": "Accelerating cut cadence",
+      "t": "0:07.50-0:10.60",
+      "frames": "f450-f636",
+      "fps": 60,
+      "mechanics": "Changements f450, f507, f563 : tous les 2 temps (56-57 im = 0,94 s). Puis le libellé devient « 6 styles × 6 effects » et les rendus changent à f591, f619 (1 temps = 28 im) puis f633 (demi-temps = 14 im). Le catalogue finit en crescendo avant le retour au calme.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f619.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom de retour à l'échelle réelle",
+      "name_en": "Pull-back to real scale",
+      "t": "0:10.60-0:11.10",
+      "frames": "f636-f666",
+      "fps": 60,
+      "mechanics": "Le ruban se rétracte et le cadre revient à la petite pilule (≈8 % de largeur, 3 % de hauteur) collée en haut au centre, sur fond noir pur. Environ 25 im ; la scène devient presque vide (f660) avant l'état suivant sur le 24e temps.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "États d'une Dynamic Island par morphing",
+      "name_en": "Dynamic Island state morphs",
+      "t": "0:11.25-0:22.00",
+      "frames": "f675-f1320",
+      "fps": 60,
+      "mechanics": "La pilule s'élargit en ≈10 im (f675-f684, de ≈8 % à ≈45 % de largeur) et dévoile un nom de tâche à gauche et un statut à droite (« ✓ Completed », « 🔥 ~18m left », « Waiting ×1 », « ↻ Reset »). Ease-out fort, pas de dépassement visible. Chaque état tient ≈1,5 s puis se replie. Le contenu entre ≈5 im après le contenant.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contours d'écho à l'ouverture de l'île",
+      "name_en": "Expanding echo outlines",
+      "t": "0:11.35-0:12.25",
+      "frames": "f681-f735",
+      "fps": 60,
+      "mechanics": "Quand l'île s'ouvre, deux contours de même forme (trait 1 px, vert-gris) s'en détachent, décalés de ≈1,5 % puis ≈3 % de la hauteur. Ils s'écartent et s'estompent en ≈50 im. Répété à chaque ouverture (13,5 s, 17,0 s, 21,0 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Île qui se déplie en carte d'alerte puis se replie sur le temps",
+      "name_en": "Island-to-card morph with on-beat collapse",
+      "t": "0:14.60-0:16.50",
+      "frames": "f876-f990",
+      "fps": 60,
+      "mechanics": "L'île devient une carte ≈37 % de largeur × 40 % de hauteur : en-tête Claude + « Quota warning » orange, phrase d'explication, trois chiffres (94 %, 18m, 2h 14m ≈2,5 % de hauteur), barre de progression orange, bouton plein #E8A070. Repli : contenu effacé f978-f980, carte qui se contracte très vite f979-f983 puis à petits pas f984-f990 (ease-out expo), pilule posée f988, pile sur la barre bleue et l'attaque audio.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f981.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Légendes mono en bas du cadre",
+      "name_en": "Monospace lower captions",
+      "t": "0:18.10-0:24.30",
+      "frames": "f1086-f1458",
+      "fps": 60,
+      "mechanics": "« Approve right from the island. » et « Hover for more. » en mono grasse blanche ≈3,5 % de la hauteur, centrées à ≈80 % de la hauteur, mot à mot en flou→net (« Approve » f1091-f1095, « right » ≈f1105). Le dernier mot reste flou et gris quelques images avant de se mettre au point.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f1087.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'approbation avec diff de code",
+      "name_en": "Approval card with code diff",
+      "t": "0:18.10-0:19.30",
+      "frames": "f1084-f1160",
+      "fps": 60,
+      "mechanics": "La pilule « Waiting » s'allonge vers le bas en ≈6 im (f1084-f1090, ease-out), contenu en fondu f1091-f1094 : « landing-page · EDIT · client.ts », chemin du fichier, diff « − retries: 3, » rouge / « + retries: 5, » vert, boutons Deny (rouge), Always allow, Allow once (vert plein). Le dépliage démarre sur le demi-temps 38,5 de la grille (f1083).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1087.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic en onde de choc qui déclenche le repli",
+      "name_en": "Click shockwave rings",
+      "t": "0:19.15-0:20.50",
+      "frames": "f1154-f1230",
+      "fps": 60,
+      "mechanics": "Le curseur se pose sur « Allow once » ; f1154 un anneau vert de 1 px naît autour du bouton (rayon ≈3 % de la largeur), s'agrandit à ≈25 % en 9 im puis continue en ralentissant (ease-out) ; un second anneau naît à l'intérieur ≈6 im plus tard. Les deux débordent du cadre et s'éteignent en ≈60 im. L'île se replie f1163-f1167 pendant l'onde. Clic sur le 41e temps de la grille (f1153), 3 im avant la barre bleue f1157.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1164.jpg",
+      "illus": {"from": 1150, "to": 1180, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tableau de bord révélé au survol",
+      "name_en": "Hover-reveal usage dashboard",
+      "t": "0:22.00-0:24.30",
+      "frames": "f1320-f1458",
+      "fps": 60,
+      "mechanics": "Le curseur entre sur l'île qui s'ouvre vers le bas en panneau ≈27 % de largeur × 75 % de hauteur : lignes par agent avec barre de quota (jaune 70 %, rouge 88 %), puis histogramme empilé « Token usage » multicolore (vert, jaune, rose, bleu, violet) sur ≈30 barres. Tout le texte fait ≈1 % de la hauteur : illisible en vidéo.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom de révélation : l'écran devient un MacBook",
+      "name_en": "Context-reveal zoom-out to device",
+      "t": "0:24.30-0:25.60",
+      "frames": "f1458-f1536",
+      "fps": 60,
+      "mechanics": "Le panneau se referme, le fond s'assombrit (f1461-f1464), un fond d'écran ondulé bleu nuit, violet et orange entre en fondu plein cadre (f1467), puis l'ensemble rétrécit de ≈100 % à ≈62 % de largeur en ≈27 im (f1467-f1494) en grands pas puis petits pas (ease-out), révélant un MacBook dont l'encoche porte l'île. Maintien f1500-f1536.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1461, "to": 1500, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le portable s'éteint, l'île reste et devient logo",
+      "name_en": "Hero object isolated as logo",
+      "t": "0:25.60-0:26.40",
+      "frames": "f1536-f1584",
+      "fps": 60,
+      "mechanics": "Le fond d'écran et le portable s'assombrissent en ≈15 im (f1539-f1551) pendant que l'île s'éclaire et grossit ; à 26,0 s il ne reste qu'une pilule à liseré dégradé (≈11 % de largeur, 6 % de hauteur) centrée à ≈35 % de la hauteur, avec halo bleu nuit.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre final décodé avec curseur bloc",
+      "name_en": "Terminal-style decode title",
+      "t": "0:26.40-0:28.00",
+      "frames": "f1584-f1680",
+      "fps": 60,
+      "mechanics": "« Agent HUD » en mono grasse blanche ≈7 % de la hauteur, centré sous la pilule : les lettres arrivent de gauche à droite, la dernière dans une case grise surlignée qui affiche un glyphe aléatoire (« A# », « Agent1 ») avant de se fixer ; ≈1 lettre toutes les 6 im (probable). Puis sous-titre « Dynamic Island for your AI agents. » gris ≈1,5 % (27,5 s) et lien GitHub en mono dégradé vert→rouge (28,0 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure produit en quatre actes",
+      "name_en": "Four-act product structure",
+      "t": "0:00-0:30.10",
+      "frames": "f0-f1804",
+      "fps": 60,
+      "mechanics": "1) Mythe d'origine abstrait : la forme signature naît de la lumière, les agents s'y branchent (0-4 s). 2) Promesse en une phrase (4-7 s). 3) Démo : personnalisation (styles), puis états réels (terminé, alerte, approbation, survol) (7-24 s). 4) Contexte (MacBook) et logo + lien (24-30 s). Fin tenue 2,4 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir à halo radial bleu nuit",
+      "name_en": "Near-black background with navy radial halo",
+      "t": "0:00-0:30.10",
+      "frames": "f0-f1804",
+      "fps": 60,
+      "mechanics": "Fond #05070A avec halo elliptique #0E1426 centré (≈60 % de la largeur), statique. Fait ressortir les lueurs de l'île ; aucun mouvement de fond, donc chaque maintien d'interface paraît plus figé.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille BPM écrite en code depuis l'image 0",
+      "name_en": "Code-driven BPM grid",
+      "t": "0:00-0:24.00",
+      "frames": "f0-f1440",
+      "fps": 60,
+      "mechanics": "Tous les gestes clés tombent à ±1 im sur des multiples de 28,125 im (60/128 s à 60 fps) depuis f0 : f225, f450, f507, f563, f591, f619, f633, f675, f1084, f1154. La musique ayant son premier temps à 0,076 s, l'image précède le son de 3 à 4 im de façon constante. Recette : beat = 60/BPM, chaque entrée posée en multiples de beat ou de beat/2, puis décaler toute la grille du premier temps réel de la piste.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f225.jpg, microM-002-move-f453.jpg, microM-005-cut-f619.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un agent, un temps ; un style, deux temps",
+      "name_en": "One element per beat",
+      "t": "0:01.90-0:10.60",
+      "frames": "f114-f636",
+      "fps": 60,
+      "mechanics": "Les quatre impacts de l'intro sont espacés d'un temps (≈28 im) ; les styles ASCII changent tous les 2 temps puis tous les temps puis tous les demi-temps. Les impacts sont des événements brefs (gerbe, flash, coupe sèche) qui marquent la grosse caisse ; le repli de la carte Claude atterrit pile sur une attaque (f988).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-006-move-f981.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne décrit rien, mais la vidéo montre de vrais états d'interface (tâches, diff, quotas par agent, lien GitHub) : Claude travaillait probablement dans le dépôt du projet et a reconstruit les composants réels. Le contexte fourni compte plus que le texte du prompt."},
+    {"kind": "direction", "insight": "« dynamic motion graphics » a été traduit en lueurs néon, texte brouillé, styles ASCII et grille rythmique : un vocabulaire d'interface développeur cohérent avec le produit, mais générique dans sa grammaire (déplier/replier)."},
+    {"kind": "structure", "insight": "Sans structure imposée, Claude a choisi un schéma promo classique : origine abstraite, promesse, fonctionnalités, contexte, logo. Le milieu est une liste de fonctionnalités traitée de façon identique, d'où la monotonie de 11 à 24 s."},
+    {"kind": "build", "insight": "La synchro sans indication de tempo montre que Claude a posé une constante BPM et des multiples de temps ; il n'a pas recalé la grille sur le premier temps réel de la piste (avance ≈70 ms)."},
+    {"kind": "qa", "insight": "Aucun contrôle de lisibilité : les cartes d'interface sont reproduites à l'échelle native (textes ≈1 % de la hauteur). Il aurait fallu demander un texte minimal de 3 % de la hauteur ou des zooms sur le chiffre clé."}
+  ],
+  "steal": [
+    "Poser une constante BPM dans le code et placer chaque entrée en multiples de 60/BPM ; recaler la grille sur le premier temps réel de la piste.",
+    "Ouvrir sur le tracé lumineux du contour du produit : deux points qui se rejoignent au centre, fusion puis flare horizontal.",
+    "Faire défiler un catalogue en accélérant : tous les 2 temps, puis chaque temps, puis chaque demi-temps, pour finir la section en crescendo.",
+    "Libellé en texte brouillé de 7-8 im à chaque changement, glyphes non résolus dans la couleur d'accent.",
+    "Clic = deux anneaux en onde de choc qui débordent du cadre et déclenchent le repli du panneau."
+  ],
+  "flaws": [
+    "Textes d'interface à ≈1 % de la hauteur : chiffres des cartes et du tableau de bord illisibles en vidéo.",
+    "Milieu répétitif : six cycles déplier-tenir-replier de l'île, même cadrage, même grammaire, pendant 13 s.",
+    "Carte d'alerte figée 1,4 s (14,85-16,28 s) sur fond statique : temps mort face à une musique à 128 BPM.",
+    "Aucun zoom sur le mot ou le chiffre clé (94 %, Allow once) : l'œil ne sait pas où regarder.",
+    "Image en avance constante de ≈70 ms sur le son : grille non recalée sur le premier temps de la piste."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour deux passages : 0-4 s (tracé lumineux, flare, comètes calées sur chaque temps, flash de recadrage) et 7,5-10,6 s (changements de style à cadence accélérée avec texte brouillé). Bon cas d'école de grille BPM écrite en code, à étudier image par image avec la piste."}
+}

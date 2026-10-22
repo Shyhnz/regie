@@ -1,0 +1,644 @@
+{
+  "slug": "jesscaroline7-1ff7cb",
+  "title": "Ondefica app motion reel",
+  "handle": "@jesscaroline7",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique solide et ouverture de niveau studio (chaque carton sur la grosse caisse, raccord par le point) ; le milieu ralentit (maintiens de 2-3 s), un volet cale et les dioramas IA détonnent.",
+  "summary": "Reel vertical de 60 s pour Onde Fica, appli brésilienne de lieux à Curitiba, construit sur ses vraies données. Ouverture remarquable : logo qui s'assemble, question qui roule sur chaque temps, plongée dans la flèche dont le point devient la donnée. Suivent cartes de points, dioramas, interface éclatée, badges, podium. Synchro serrée sur une musique à 120 BPM ; milieu plus lent et dioramas IA moins cohérents.",
+  "prompt_vs_result": [
+    "Le prompt imposait seulement : une vidéo de motion design dynamique façon showreel de CV, « go all out ». Ni sujet, ni format, ni durée, ni musique, ni marque.",
+    "Claude (ou le contexte de la session) a tout choisi : en faire le reel de l'appli Onde Fica avec ses vraies données, format vertical 9:16 de 60 s, palette orange/noir/crème, musique à 120 BPM et coupes sur la grosse caisse.",
+    "Prompt d'une ligne, très ouvert : le résultat repose sur des éléments extérieurs (logo, captures, données, illustrations IA) probablement fournis dans le projet. Il aurait fallu préciser le rythme du milieu (maintiens de 2-3 s) et le style des illustrations."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#ED5406",
+        "role": "orange de marque : fonds des cartons, barres, épingles, carte finale"
+      },
+      {
+        "hex": "#DD4F08",
+        "role": "grand point d'interrogation en filigrane, ton sur ton sur l'orange"
+      },
+      {
+        "hex": "#12110D",
+        "role": "noir chaud des scènes sombres"
+      },
+      {
+        "hex": "#F3F2EC",
+        "role": "crème des scènes de données claires et des dioramas"
+      },
+      {
+        "hex": "#F2F0ED",
+        "role": "texte clair sur fond noir"
+      },
+      {
+        "hex": "#1F160C",
+        "role": "lueur radiale brune derrière les téléphones"
+      },
+      {
+        "hex": "#AD5A2A",
+        "role": "badge bronze (puis or #EBAF28, diamant #044296)"
+      }
+    ],
+    "type": "Grotesque très condensée grasse, capitales (titres ≈ 10 % de la hauteur, chiffres 10-19 %), serif italique minuscule pour les légendes, mono capitales très espacées pour les étiquettes, logo en géométrique noire large.",
+    "texture": "Aplats nets, aucun grain ; lueur radiale orange-brun derrière les téléphones ; points (particules) comme matière des données ; flou de mouvement directionnel sur les mots qui frappent et roulent ; dioramas 3D isométriques au rendu doux (ombres, lumière chaude) ; champ d'étoiles avec traînées radiales à la fin.",
+    "style": "éditorial data, orange et noir",
+    "coherence": "Le système tient par le cadre permanent (coins de visée, petit logo en haut à gauche, pied de page mono daté), le trio orange/noir/crème, le trio typographique et le point comme unité (point du logo → donnée → épingle → iris final). Les dioramas IA et les badges 3D rendus cassent ce langage plat."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo réel 120 BPM. Repli des attaques basses (30-120 Hz) modulo 0,5 s : grosse caisse sur x,00 et x,50 s, charleys sur les contretemps x,25/x,75. La grille globale des planches (départ 0,244 s) est décalée d'un demi-temps : ses barres bleues marquent les charleys et ses barres bleu clair la grosse caisse ; le comptage temps + demi-temps n'en dépend pas. 0-10 s : un changement toutes les 30 im (f240, f270, f300, f330 à f480), puis toutes les 7,5 im (doubles croches) de f480 à f540 ; l'image précède l'attaque de 1 à 2 im (grosse caisse mesurée à +15-35 ms). 10-59 s : une idée toutes les 1 à 3 s, transitions lancées sur les contretemps (18,25 / 32,25 / 54,25 s). La musique est en phrases de 8 s (pics à -9 dB vers 28, 36, 44 et 56 s, creux à -21 dB vers 52-53 s) et les parties visuelles démarrent dessus. 40 % de maintiens (23,8 s) : 3,1 s sur la vue éclatée (36,48-39,6 s), 2,7 s sur le donut (21,57-24,28 s), 2,1 s sur le premier diorama ; la fin (podium, 1.056) garde les maintiens vivants par des pulsations sur le temps.",
+    "timeline": [
+      {
+        "t": "0:00-0:01.52",
+        "what": "Point orange, anneaux de sonar, « L » blanc, puis la barre diagonale arrive du coin et s'emboîte sur le temps avec flash",
+        "technique": "construction du logo + flash d'impact"
+      },
+      {
+        "t": "0:01.52-0:03.70",
+        "what": "Le mot-symbole ONDE FICA apparaît sous la flèche ; léger glissement",
+        "technique": "révélation du logo"
+      },
+      {
+        "t": "0:03.70-0:04.00",
+        "what": "Le point orange grossit jusqu'au plein cadre en 18 im",
+        "technique": "iris depuis le point du logo"
+      },
+      {
+        "t": "0:04.00-0:05.00",
+        "what": "« ONDE » noir sur orange puis « FICA » orange sur noir frappent sur deux grosses caisses",
+        "technique": "slam + inversion de couleur au temps"
+      },
+      {
+        "t": "0:05.00-0:09.00",
+        "what": "ONDE FICA + seconde ligne qui roule (O BRUNCH? O DATE? O CAFÉ? A PIZZA?…), un mot par temps puis un par double croche, grand « ? » en filigrane",
+        "technique": "roulette de mots calée"
+      },
+      {
+        "t": "0:09.00-0:10.00",
+        "what": "Noir : ONDE FICA ↙ aqui. ; zoom exponentiel dans la flèche, coupe sur le temps vers un point seul",
+        "technique": "réponse + plongée dans le glyphe"
+      },
+      {
+        "t": "0:10.00-0:12.00",
+        "what": "Le point lâche un anneau, devient compteur 0 → 1.087 et globe de points, puis grille",
+        "technique": "raccord par le point"
+      },
+      {
+        "t": "0:12.00-0:14.73",
+        "what": "Grille 1 point = 1 lieu balayée par une colonne orange, chute des points, 1.272 puis 1.534 lugares ativos",
+        "technique": "data viz par points"
+      },
+      {
+        "t": "0:14.73-0:18.25",
+        "what": "Les points s'envolent pour dessiner la carte de Curitiba, tiges orange (hauteur = « querer ir »), étiquettes, assombrissement à 18,0 s",
+        "technique": "carte en sucettes"
+      },
+      {
+        "t": "0:18.25-0:19.40",
+        "what": "Volet en chevron crème : carte inversée, les points se regroupent en « 6.000+ »",
+        "technique": "volet + particules en chiffres"
+      },
+      {
+        "t": "0:19.40-0:24.30",
+        "what": "6.000+ usuários (+37 % desde agosto), dissolution à 20,5 s en ruban puis donut de points 4.517 avaliações · 96,8 %, tenu 2,7 s",
+        "technique": "morphing de nuage de points"
+      },
+      {
+        "t": "0:24.30-0:24.60",
+        "what": "Volet horizontal qui s'arrête à 62 % de la largeur, puis le reste saute",
+        "technique": "raccord raté"
+      },
+      {
+        "t": "0:24.60-0:27.60",
+        "what": "« do sofá » + carrousel de dioramas isométriques (sexta · 20h → sábado · 21h à 27,0 s)",
+        "technique": "carrousel de cartes"
+      },
+      {
+        "t": "0:27.60-0:30.00",
+        "what": "Le salon se transforme en restaurant (clip ≈ 12 im/s), « do sofá » s'envole, « à mesa. » tombe lettre à lettre",
+        "technique": "métamorphose + texte qui suit l'image"
+      },
+      {
+        "t": "0:30.00-0:32.25",
+        "what": "Carrousel « à mesa. » (domingo · 13h à 30,66 s)",
+        "technique": "carrousel de cartes"
+      },
+      {
+        "t": "0:32.25-0:36.00",
+        "what": "Volet en chevron orange, téléphone incliné, « os mais desejados » avec barres et compteurs",
+        "technique": "classement dans l'interface"
+      },
+      {
+        "t": "0:36.00-0:40.70",
+        "what": "Vue éclatée de l'écran du lieu avec 7 légendes, recomposition, téléphone centré, tap avec onde",
+        "technique": "UI éclatée + tap simulé"
+      },
+      {
+        "t": "0:40.70-0:44.00",
+        "what": "Carrousel de téléphones : MAPA (épingles orange), LISTAS, ROTEIRO",
+        "technique": "carrousel d'écrans"
+      },
+      {
+        "t": "0:44.00-0:48.00",
+        "what": "« cada lugar conta. » : trois badges montent de niveau (bronze, prata, ouro, diamante) au rythme du temps",
+        "technique": "gamification au tempo"
+      },
+      {
+        "t": "0:48.00-0:51.00",
+        "what": "« quem faz a curadoria » : podium orange, compteurs 157 / 81 / 59, pulsation sur chaque temps",
+        "technique": "podium + pulsations"
+      },
+      {
+        "t": "0:51.00-0:54.25",
+        "what": "Fondu enchaîné, compteur 0 → 1.056 listas, cartes en éventail, flashs à 53,0 et 54,0 s",
+        "technique": "compteur expo + flashs au temps"
+      },
+      {
+        "t": "0:54.25-0:56.00",
+        "what": "Volet en chevron orange, champ d'étoiles en vitesse lumière, flèche 3D extrudée qui tourne et approche",
+        "technique": "montée avant la chute"
+      },
+      {
+        "t": "0:56.00-0:59.56",
+        "what": "Iris orange depuis le point de la flèche, ONDE FICA lettre à lettre, « Saia mais. Procure menos. », ONDEFICA.APP",
+        "technique": "carte finale en écho de l'ouverture"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "34 gestes clés sur 49 à ±2 im d'un temps ou d'un contretemps (hasard ≈ 33 %). 0-10 s : 14/16, dont 11 pile sur la grosse caisse (f240, f270, f300, f330 à f480 tous les 30 im, f540, f600) et un roulement en doubles croches (f488, f496, f503, f510, f518, f526, f533, à ±1 im de la grille de 7,5 im). 10-59 s : 20/33 (assombrissement f1080, dissolution f1230, carrousel 1 au pic f1620, lettres « à mesa. » f1772, explosion de l'interface f2160, coupes f2640 et f2880, pulsations du podium f2940-f3030, flashs f3180 et f3240, iris final f3361). Hors grille : anneau f619, chute de la grille f806, inclinaison de la carte f1040, volet de 24,3 s, carrousel 2 (pic f1840), décalage de liste à 13 im, badges à +7,5 im (période d'un temps tenue), lettres du logo final. Grille des planches décalée d'un demi-temps (ses barres bleues = charleys) ; vraie phase mesurée sur l'audio. Changements de partie sur les phrases de 8 s (28, 36, 44, 56 s).",
+    "synced": [
+      "coupes",
+      "texte",
+      "impacts",
+      "pulsations",
+      "flashs",
+      "couleur",
+      "departs",
+      "camera"
+    ],
+    "style_match": "Pop électronique enjouée (probable) à 120 BPM, grosse caisse régulière, charleys en contretemps : colle aux coupes sèches, aux flous de vitesse, à l'orange franc ; les dioramas détonnent.",
+    "how_built": "Probable : timeline écrite en secondes rondes et demi-secondes sur une piste à 120 BPM dont les temps tombent sur x,00/x,50, si bien que chaque carton placé à 4,0 / 4,5 / 5,0 s frappe la grosse caisse. La pile HyperFrames offre une commande de détection des temps ; les débuts de partie sur les phrases de 8 s suggèrent une lecture de la structure de la musique. Le prompt ne parle pas de musique : la synchro vient du modèle ou du contexte de session. Les passages pilotés par des médias (clip IA à ≈ 12 im/s, défilement du téléphone) ou par des décalages en dixièmes (13 im, 8 im) sortent de la grille."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Logo qui s'assemble avec flash d'impact",
+      "name_en": "logo assembly + impact flash",
+      "t": "0:00-0:01.75",
+      "frames": "f0-f105",
+      "fps": 60,
+      "mechanics": "Point orange seul (0 s), anneaux de sonar (≈ 0,5 s), « L » blanc (≈ 0,75-0,95 s). La barre diagonale entre par le coin haut droit et glisse en 11 im (f79-f90) en accélérant (ease-in), s'emboîte à f90 (temps) ; flash plein cadre à f91 : luminance moyenne 33 → 189, puis 172, 124, 88, 63, 47, 38, retour à 33 en 8 im (décroissance ≈ ×0,7 par image). Onde orange et étincelles partent du point (f92-f104).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f91.jpg",
+      "illus": {
+        "from": 79,
+        "to": 98,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point du logo devient un cercle plein écran (iris)",
+      "name_en": "logo dot circle reveal",
+      "t": "0:03.65-0:04.00",
+      "frames": "f219-f240",
+      "fps": 60,
+      "mechanics": "Le point orange au coin de la flèche grossit : couverture du cadre 0,1 % (f219) → 1 % (f225) → 9,5 % (f230) → 45 % (f234) → 92 % (f236) → 100 % (f237), soit ≈ ×1,5 par image (courbe exponentielle, ease-in expo) en 18 im (0,30 s). 3 im d'orange plein, puis « ONDE » frappe sur la grosse caisse (f240). Même geste en écho à la fin (f3361).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f240.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui frappe avec flou directionnel",
+      "name_en": "word slam with motion blur",
+      "t": "0:04.00-0:04.12",
+      "frames": "f240-f247",
+      "fps": 60,
+      "mechanics": "« ONDE » en grotesque condensée noire sur orange arrive à ≈ ×1,6 (35 % de la hauteur, coupé des deux côtés) et se pose à ×1 (21 % de la hauteur, 78 % de la largeur) en 7 im : hauteur 35 → 30 → 27 → 24 → 23 → 22 → 21 % (ease-out expo, sans dépassement), flou horizontal sur f240-f242. Départ pile sur la grosse caisse. Même mouvement pour « FICA » à f270.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f240.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion orange / noir à chaque temps",
+      "name_en": "beat-by-beat colour inversion",
+      "t": "0:04.00-0:05.00",
+      "frames": "f240-f300",
+      "fps": 60,
+      "mechanics": "f240 fond orange #ED5406 et texte noir ; f270 fond noir #12110D et texte orange ; f300 retour à l'orange. Chaque coupe sur la grosse caisse inverse fond et texte : la couleur devient un instrument rythmique.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f300.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Roulette de mots qui accélère en doubles croches",
+      "name_en": "accelerating slot-machine word roll",
+      "t": "0:05.00-0:09.00",
+      "frames": "f300-f540",
+      "fps": 60,
+      "mechanics": "« ONDE FICA » fixe, seconde ligne qui roule verticalement derrière un masque (sortie vers le haut, entrée par le bas, flou vertical, 5-6 im par changement) : O BRUNCH?, O DATE?, O CAFÉ?, A PIZZA?, O SUSHI?, O JANTAR?… un mot toutes les 30 im (f331, f360, f390, f420, f450, f480), puis toutes les 7,5 im (f488 à f533 : O TACO?, O SORVETE?, O ALMOÇO?, O BOTECO?) et coupe à f540. Un émoji par mot au centre ; rangée de tirets qui avance comme une pagination.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f540.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grand « ? » en filigrane ton sur ton",
+      "name_en": "tone-on-tone giant question mark",
+      "t": "0:04.00-0:09.00",
+      "frames": "f240-f540",
+      "fps": 60,
+      "mechanics": "Point d'interrogation géant (≈ 85 % de la hauteur) en orange plus sombre #DD4F08 sur #ED5406, derrière la question tapée à gauche (lignes ≈ 10 % de la hauteur chacune, marge ≈ 8 %) ; coins de visée et petit logo en haut à gauche.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Le nom de marque est la question, la flèche la réponse",
+      "name_en": "brand-name-as-question hook",
+      "t": "0:05.00-0:09.67",
+      "frames": "f300-f580",
+      "fps": 60,
+      "mechanics": "« Onde fica… ? » (« où se trouve… ? ») décliné sur dix envies, puis réponse « ONDE FICA ↙ aqui. » : la flèche du logo désigne la réponse. L'accroche explique le produit en 5 s sans phrase de promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Ligne qui monte derrière un masque",
+      "name_en": "masked line rise",
+      "t": "0:09.02-0:09.15",
+      "frames": "f541-f549",
+      "fps": 60,
+      "mechanics": "« ↙ aqui. » (flèche orange + serif italique blanc) monte d'≈ 4 % de la hauteur derrière un masque en 8 im, ease-out, 1 im après la coupe de f540. Même procédé pour « O BRUNCH? » (f302-f307).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f540.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans le glyphe de la flèche",
+      "name_en": "dive into the arrow glyph",
+      "t": "0:09.65-0:10.00",
+      "frames": "f579-f600",
+      "fps": 60,
+      "mechanics": "Zoom sur la flèche orange de « aqui. » : surface orange 0,9 % (f578) → 1,6 % (f588) → 4,8 % (f593) → 17 % (f597) → 22 % (f599), soit une accélération exponentielle (≈ ×1,35 par image en fin de course) sur 21 im (0,35 s). Coupe sur le temps (f600) vers le noir avec un seul point blanc au centre : la plongée aboutit au point qui va porter les données.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f592.jpg",
+      "illus": {
+        "from": 584,
+        "to": 600,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point devient la donnée (raccord par le point)",
+      "name_en": "dot-to-data match cut",
+      "t": "0:10.00-0:12.00",
+      "frames": "f600-f720",
+      "fps": 60,
+      "mechanics": "Point seul tenu 19 im ; à f619 un anneau orange de 1 px en sort (rayon 13 % → 52 % de la largeur en 10 im, ease-out, s'efface en ≈ 35 im) ; « 0 » apparaît à f626 ; le point devient un globe de points (f632-f644) qui grossit de ≈ 5 % à 45 % de la largeur ; le compteur roule dès f644 (101 à f660, 736 à f690, 1.087 à f720) ; le globe s'aplatit en grille posée sur le temps (f720). Légende « lugares em Curitiba · um ponto por lugar ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 600,
+        "to": 694,
+        "n": 8
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grille « un point par lieu » balayée puis réorganisée",
+      "name_en": "unit dot grid with scanning column",
+      "t": "0:12.00-0:14.73",
+      "frames": "f720-f884",
+      "fps": 60,
+      "mechanics": "≈ 1 087 points blancs en grille carrée (≈ 55 % de la largeur) ; une colonne orange la balaie de gauche à droite (12,0-13,2 s, une colonne par image) ; à 13,4 s les points du bas tombent comme du sable et forment un second bloc (« 445 fora de Curitiba ») ; compteur 1.087 → 1.272 → 1.534, légende changée en « lugares ativos no mapa ». Sens de la colonne orange peu clair.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Les points s'envolent pour dessiner la carte, tiges orange",
+      "name_en": "dots fly into a lollipop map",
+      "t": "0:14.73-0:18.00",
+      "frames": "f884-f1080",
+      "fps": 60,
+      "mechanics": "Départ sur le contretemps (f884) : la grille se désordonne puis chaque point vole à sa position géographique (nuage dense au centre = Curitiba), les lieux hors ville s'empilent en colonne à droite. Vers 15,6 s des tiges orange montent des points (« altura da haste = querer ir · acumulado ») ; à 16,5 s trois étiquettes mono (Café e Livraria Arte e Letra, Pickles Burger, Café Flor de Laranjeira) ; légère inclinaison à 17,3-17,8 s ; le chiffre passe au gris sur le temps à 18,0 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en chevron qui inverse la palette",
+      "name_en": "chevron wipe theme flip",
+      "t": "0:18.27-0:18.42",
+      "frames": "f1096-f1105",
+      "fps": 60,
+      "mechanics": "Un polygone crème #F3F2EC à bord coudé (deux segments, comme un chevron) balaie du coin haut droit vers le bas gauche en 9 im (0,15 s), ease-in-out (vitesse maximale à f1101). Dessous, la même carte de points en noir sur crème : les données restent, seul le thème s'inverse. Départ sur le contretemps (f1095 + 1 im). Même forme en orange #ED5406 suivie de noir à 32,25 s (f1935-f1944) et 54,25 s (f3255-f3264).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1101.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Le nuage de points se change en chiffres puis en donut",
+      "name_en": "particle cloud morphing into numerals and donut",
+      "t": "0:18.42-0:21.67",
+      "frames": "f1105-f1300",
+      "fps": 60,
+      "mechanics": "Les points de la carte se dispersent et se regroupent en « 6.000+ » pointillé noir (≈ 85 % de la largeur, ≈ 19 % de la hauteur, posé vers f1144-f1160) avec « usuários no Onde Fica » et une pastille orange « +37 % desde agosto ». À 20,5 s (temps) les chiffres se dissolvent, passent par un ruban 3D orange et noir (21,0 s) et forment un donut de points (21,5 s) : 96,8 % au centre, arcs orange (ótimo 3.088), noir (bom 1.283), gris (não gostei 146). Un seul système de particules porte 14 s de données (10,0-24,3 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs qui roulent en décélération exponentielle",
+      "name_en": "expo-out rolling counters",
+      "t": "0:51.20-0:52.50",
+      "frames": "f3072-f3150",
+      "fps": 60,
+      "mechanics": "Compteur des listes : 0 (f3072) → 105 → 199 → 284 → 360 → 429 → 491 → 546 → 596 → 642 … → 1.054 (f3120) → 1.056 ; incréments ×0,9 par image (ease-out expo), ≈ 80 im (1,3 s). Séparateur de milliers « . » (format brésilien). Même logique pour 0 → 1.087 (10,7-12 s) et les compteurs du podium (0 → 157 / 81 / 59 en ≈ 1 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f3075.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet horizontal qui cale à 62 %",
+      "name_en": "stalled horizontal reveal",
+      "t": "0:24.30-0:24.60",
+      "frames": "f1458-f1476",
+      "fps": 60,
+      "mechanics": "Le nouveau plan (crème, « do sofá », diorama) se révèle depuis la gauche en ease-out expo (bord à 31 % de la largeur à f1458, 47 % à f1459, 55 % à f1461, 59 % à f1464, 62 % à f1470, sur le temps) puis s'arrête ; les 38 % restants de l'ancien plan (donut) basculent d'un coup à f1476, 6 im plus tard. Raccord visiblement cassé.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Carrousel de dioramas isométriques",
+      "name_en": "isometric diorama card carousel",
+      "t": "0:24.60-0:32.25",
+      "frames": "f1476-f1935",
+      "fps": 60,
+      "mechanics": "Pièces 3D isométriques découpées en hexagone (≈ 60 % de la largeur, voisines coupées aux bords) : couple au salon « sexta · 20h », amis au salon « sábado · 21h », restaurant, déjeuner « domingo · 13h » ; étiquette mono et trait orange de progression sous chaque carte. Glissements en 27 im, ease-in-out symétrique : le premier a sa vitesse maximale pile sur le temps (f1620), le second hors grille (pic f1840). Rendu 3D doux, probablement généré par IA, hors du langage plat du reste.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f1621.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Métamorphose du salon en restaurant (clip vidéo)",
+      "name_en": "living-room-to-restaurant morph clip",
+      "t": "0:27.60-0:29.80",
+      "frames": "f1658-f1788",
+      "fps": 60,
+      "mechanics": "Les cadres quittent le mur, les meubles flottent et s'effritent en morceaux, les personnages se lèvent et se retrouvent sur une banquette rouge de restaurant. Nouvelle image toutes les 5 im (fronts de différence réguliers de f1674 à f1754) : cadence ≈ 12 im/s, saccadée face au 60 im/s du reste. Probable clip vidéo généré par IA. Démarre avec la montée musicale de 28 s.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui s'envolent puis retombent une à une",
+      "name_en": "letters scatter up, new word drops in",
+      "t": "0:28.25-0:30.13",
+      "frames": "f1694-f1808",
+      "fps": 60,
+      "mechanics": "« do sofá » (serif italique noir ≈ 3 % de la hauteur) : les lettres s'écartent, montent de 5-10 % de la hauteur en tournant jusqu'à ≈ 30° et s'effacent (f1694-f1716, départ sur le contretemps). Puis « à mesa. » tombe lettre par lettre depuis le haut avec une légère rotation, décalage ≈ 5-6 im par glyphe (à f1768 → point f1796), première lettre posée à f1772, mot complet sur le temps (f1800). Le texte suit la métamorphose de l'image.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone incliné et classement en barres",
+      "name_en": "tilted phone + ranking bars",
+      "t": "0:32.40-0:36.00",
+      "frames": "f1944-f2160",
+      "fps": 60,
+      "mechanics": "Fond noir chaud avec lueur radiale brune ; téléphone (≈ 32 % de la largeur) incliné d'≈ -10° avec légère perspective ; titre « os mais desejados » en serif italique ; classement à droite : rangs, noms, barres orange et compteurs (74, 53, 48, 46, 43, 42), lignes ajoutées toutes les ≈ 13 im (0,22 s, hors grille) pendant que la liste du téléphone défile.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Vue éclatée de l'interface avec légendes",
+      "name_en": "exploded UI view with callouts",
+      "t": "0:36.00-0:40.15",
+      "frames": "f2160-f2409",
+      "fps": 60,
+      "mechanics": "Départ sur le temps et sur la montée musicale de 36 s : le téléphone pivote (≈ 25-30° en Y) et ses couches se séparent en profondeur en ≈ 0,6 s (photo, en-tête, boutons, chiffres, horaires, adresse). Sept légendes mono capitales reliées par un filet orange s'écrivent à droite, une toutes les ≈ 8 im : CARROSSEL · 10 FOTOS, PERFIL DO LUGAR, QUERO IR · JÁ FUI · SALVAR · ENVIAR, CATEGORIA E OCASIÃO, 53 QUEREM IR · 27 JÁ FORAM, HORÁRIO, ENDEREÇO + WAZE. Tenu 3,1 s, recomposition 39,6-40,15 s, téléphone recentré à ≈ 70 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 2160,
+        "to": 2240,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tap simulé avec onde et éclats",
+      "name_en": "simulated tap ripple",
+      "t": "0:40.13-0:40.70",
+      "frames": "f2408-f2442",
+      "fps": 60,
+      "mechanics": "Sans curseur : un disque gris marque la pression sur le bouton « salvar » (f2408-f2416), puis un anneau orange s'ouvre (f2424) et de petits éclats partent (f2432-f2440). Le geste est lisible même minuscule.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carrousel de trois écrans légendés",
+      "name_en": "three-screen phone carousel",
+      "t": "0:40.72-0:44.00",
+      "frames": "f2443-f2640",
+      "fps": 60,
+      "mechanics": "Le téléphone rétrécit et glisse à gauche (départ f2443, contretemps) ; entrent par la droite MAPA (carte sombre, ≈ 100 épingles orange), LISTAS (vignettes photo) puis ROTEIRO (parcours orange, « 26 paradas », f2534) ; légendes mono sous chaque écran ; la rangée dérive lentement vers la gauche jusqu'à la coupe sur le temps (f2640).",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Badges qui montent de niveau au tempo",
+      "name_en": "tempo-driven badge level-ups",
+      "t": "0:44.00-0:47.00",
+      "frames": "f2640-f2820",
+      "fps": 60,
+      "mechanics": "« cada lugar conta. » : trois badges hexagonaux rendus en 3D (Explorador, Crítico, Influenciador) passent de gris à bronze #AD5A2A, prata, ouro #EBAF28 puis diamante #044296. Un changement toutes les 30 im exactement (départs f2677, f2708, f2738, f2767), mais 7,5 im après chaque grosse caisse (une double croche de retard) : creux de luminosité puis scintillement, ≈ 15-18 im par passage. Étiquettes de niveau en mono orange, puis lignes de stats (339 lugares mapeados, 4.517 avaliações, 2.473 curtidas).",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Podium de contributeurs",
+      "name_en": "contributor podium",
+      "t": "0:48.00-0:51.00",
+      "frames": "f2880-f3060",
+      "fps": 60,
+      "mechanics": "Coupe sur le temps (f2880). Trois barres orange (1er au centre ≈ 22 % de la largeur × 30 % de la hauteur, 2e à gauche, 3e à droite), « 1º 2º 3º » en grotesque condensée, pastilles d'initiales (J, K, L) et prénoms ; compteurs 0 → 157 / 81 / 59 « curadorias » en ≈ 1 s, la barre la plus basse finissant en dernier ; titre « quem faz a curadoria » en serif italique.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Cartes de listes en éventail",
+      "name_en": "fanned list covers",
+      "t": "0:51.03-0:52.50",
+      "frames": "f3062-f3150",
+      "fps": 60,
+      "mechanics": "Fondu enchaîné de ≈ 15 im depuis le podium (départ f3062, sur le temps à 2 im près) ; trois couvertures de listes (« 10 lugares para almoçar », « Bares para ser fofocar », « Lugares para date ») montent du bas et s'ouvrent en éventail (≈ -15°, 0°, +15°) sous « listas criadas por 599 pessoas ».",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f3075.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Cartons et coupes sur la grosse caisse",
+      "name_en": "cuts on the kick drum",
+      "t": "0:04.00-0:10.00",
+      "frames": "f240-f600",
+      "fps": 60,
+      "mechanics": "Chaque carton de l'ouverture change pile sur une grosse caisse : f240, f270, f300, puis tous les 30 im jusqu'à f480, f540, f600 ; la frappe audio mesurée arrive 15 à 35 ms (1 à 2 im) après l'image, ce qui se perçoit comme simultané. Les coupes de partie suivent la même règle (f1080, f2160, f2640, f2880, f3361). Musique au caractère sec : courbes ease-out courtes (7 im) et flous de vitesse plutôt que ressorts.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f300.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Accélération en doubles croches avant la reprise",
+      "name_en": "16th-note acceleration into the drop back",
+      "t": "0:08.00-0:09.00",
+      "frames": "f480-f540",
+      "fps": 60,
+      "mechanics": "La roulette passe d'un mot par temps (30 im) à un mot par double croche (7,5 im : f488, f496, f503, f510, f518, f526, f533) pendant que la musique baisse (≈ -17 dB vers 7-8 s), puis coupe sur f540 quand elle revient (≈ -10 dB). L'image densifie le rythme exactement là où la musique se creuse, et la reprise tombe sur la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f540.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Parties calées sur les phrases de 8 s",
+      "name_en": "sections on 8-second phrases",
+      "t": "0:28.00-0:56.00",
+      "frames": "f1680-f3360",
+      "fps": 60,
+      "mechanics": "La musique monte à ≈ -9 dB vers 28, 36, 44 et 56 s (toutes les 8 s = 4 mesures à 120 BPM) ; l'image lance au même moment la métamorphose du diorama (28,0 s), la vue éclatée (36,0 s), la coupe vers les badges (44,0 s) et l'iris final (56,0 s). Le creux de 52-53 s (≈ -21 dB) porte des flashs isolés, puis le champ d'étoiles accélère comme une montée avant la dernière frappe.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pulsations et flashs sur les temps pendant les maintiens",
+      "name_en": "beat pulses on held frames",
+      "t": "0:49.00-0:54.00",
+      "frames": "f2940-f3240",
+      "fps": 60,
+      "mechanics": "Podium tenu : à 49,0 / 49,5 / 50,0 / 50,5 s, les barres orange s'éclaircissent d'≈ +37 niveaux de rouge sur une image (f3000) puis reviennent en ≈ 5 im. Écran 1.056 tenu : à 53,0 et 54,0 s (f3180, f3240), toute la scène s'éclaircit d'≈ +37 niveaux (≈ +15 %) et retombe en ≈ 12 im. Un plan de lecture reste vivant sans bouger.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Champ d'étoiles en vitesse lumière et flèche 3D extrudée",
+      "name_en": "warp starfield + extruded 3D logo",
+      "t": "0:54.40-0:56.00",
+      "frames": "f3264-f3360",
+      "fps": 60,
+      "mechanics": "Fond noir constellé ; les points s'étirent en traînées radiales de plus en plus longues (énergie de mouvement 0,6 → 3,6 de f3290 à f3360, accélération continue) ; la flèche orange extrudée tourne sur son axe vertical (vue de tranche vers f3271-f3275) et approche de ≈ 6 % à 25 % de la largeur. Montée efficace mais imagerie 3D convenue.",
+      "verdict": "adapter",
+      "evidence": "microM-011-move-f3264.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris final depuis le point de la flèche, avec onde",
+      "name_en": "closing iris from the logo dot",
+      "t": "0:56.02-0:56.08",
+      "frames": "f3361-f3365",
+      "fps": 60,
+      "mechanics": "Un cercle orange sort du point de la flèche et couvre le cadre en 4 im (≈ 24 % → 60 % → 95 % → 100 %), 1 im après la grosse caisse et sur la dernière montée musicale ; un anneau blanc s'ouvre et s'efface (f3361-f3372) ; la flèche passe au noir. Écho exact de l'iris d'ouverture (f219-f237), mais 4,5 fois plus rapide : le film se referme sur son premier geste.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f3362.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole lettre à lettre et signature",
+      "name_en": "staggered wordmark + tagline",
+      "t": "0:56.18-0:59.56",
+      "frames": "f3371-f3573",
+      "fps": 60,
+      "mechanics": "« ONDE » puis « FICA » : chaque lettre grandit d'≈ 50 % à 100 % en apparaissant, décalage ≈ 2-3 im (O f3371, N f3374, D f3376, E f3379). Signature « Saia mais. Procure menos. » en serif italique noir, mot par mot vers 57,0-57,5 s, puis « ONDEFICA.APP » en mono ; carte orange tenue ≈ 2 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f3362.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre éditorial permanent",
+      "name_en": "persistent editorial frame",
+      "t": "0:04.00-0:59.56",
+      "frames": "f240-f3573",
+      "fps": 60,
+      "mechanics": "Coins de visée fins à ≈ 4 % des bords, petit logo « ↙ ONDE FICA » en mono en haut à gauche (≈ 1 % de la hauteur), pied de page mono daté à droite (« ACUMULADO · SETEMBRO 2026 », « APP · SETEMBRO 2026 »). Présent sur toutes les scènes, quel que soit le fond : il unifie orange, noir et crème.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio grotesque condensée, serif italique, mono",
+      "name_en": "condensed grotesque + italic serif + mono trio",
+      "t": "0:04.00-0:59.56",
+      "frames": "f240-f3573",
+      "fps": 60,
+      "mechanics": "Titres et chiffres en grotesque très condensée grasse, capitales (questions ≈ 10 % de la hauteur, 1.534 ≈ 10 %, 6.000+ et 1.056 ≈ 19 %) ; légendes en serif italique minuscule (« lugares em Curitiba », « do sofá », « à mesa. », « cada lugar conta. », « quem faz a curadoria ») ; étiquettes en mono capitales très espacées ; logo en géométrique noire large. Contraste de corps fort entre chiffre géant et légende fine.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt ne fournit rien, mais la vidéo utilise un logo, des captures d'appli, des données réelles (1.534 lieux actifs, 6.000+ usuários, 4.517 avaliações, prénoms des curatrices) et des illustrations : ces éléments venaient forcément du projet ou de la session (pile HyperFrames)."
+    },
+    {
+      "kind": "direction",
+      "insight": "« shows what an incredible motion designer you are… go all out » a été traduit en démonstration de savoir-faire sur un vrai produit : chaque partie montre une compétence (logo, typographie cinétique, data viz par points, interface éclatée, gamification, 3D)."
+    },
+    {
+      "kind": "structure",
+      "insight": "Structure de pub produit sans consigne : accroche-question (« onde fica… ? »), réponse (« aqui. »), preuves chiffrées, usages (du canapé à la table), interface, communauté, chute avec signature « Saia mais. Procure menos. » et URL."
+    },
+    {
+      "kind": "build",
+      "insight": "Synchro obtenue sans consigne : timeline en demi-secondes sur une piste à 120 BPM dont les temps tombent sur x,00/x,50 (détection des temps probable via HyperFrames) ; débuts de partie sur les phrases de 8 s de la musique."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le volet qui cale à 24,3 s, les maintiens de 2-3 s et les éléments hors grille (badges à +7,5 im, liste à 13 im) montrent qu'aucune passe de contrôle image par image n'a suivi."
+    },
+    {
+      "kind": "other",
+      "insight": "Format vertical 9:16 et durée de 60 s choisis sans consigne : adaptés au réseau social où le reel est publié."
+    },
+    {
+      "kind": "other",
+      "insight": "Un prompt « showreel » a produit une pub produit : sans sujet imposé, le modèle s'appuie sur ce qu'il a sous la main. Préciser « sans produit » ou « pour mon appli X » change complètement le résultat."
+    }
+  ],
+  "steal": [
+    "Écrire la timeline en demi-secondes sur une musique à 120 BPM calée sur x,00/x,50 : chaque carton à 4,0, 4,5 ou 5,0 s frappe la grosse caisse.",
+    "Faire rouler un mot (machine à sous) : un mot par temps, puis un par double croche (7,5 im) sur la dernière mesure, et couper sur la reprise.",
+    "Plonger dans un glyphe : zoom exponentiel de 21 im sur la flèche, coupe sur le temps vers un point seul qui devient ensuite la donnée.",
+    "Un point = une donnée : faire naître globe, grille, carte, chiffres et donut d'un même nuage de points pour enchaîner 14 s sans coupe.",
+    "Tenir un plan de lecture vivant : pulsation de luminosité (+15 %, retour en 5-12 im) sur chaque temps au lieu d'un maintien figé."
+  ],
+  "flaws": [
+    "Milieu plus lent : 40 % de maintiens, dont 3,1 s figées sur la vue éclatée et 2,7 s sur le donut.",
+    "Volet de 24,3 s qui cale à 62 % de la largeur, puis le reste de l'image saute 6 im plus tard.",
+    "Dioramas isométriques IA au rendu 3D doux, hors du système graphique plat ; leur métamorphose tourne à ≈ 12 im/s et saccade.",
+    "Textes d'interface et légendes mono minuscules (≈ 1 % de la hauteur) : illisibles sur téléphone.",
+    "Badges et liste décalés de la grille (+7,5 im, pas de 13 im) : la seconde moitié perd la précision de l'ouverture."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : l'ouverture (0-10 s) est une leçon de calage à l'image près (logo, iris, slam, roulette en doubles croches, plongée dans le glyphe) et la chaîne point → globe → grille → carte → chiffres → donut (10-24 s) mérite d'être suivie image par image à 60 im/s."
+  }
+}

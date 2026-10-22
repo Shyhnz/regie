@@ -1,0 +1,357 @@
+{
+  "slug": "1littlecoder-9fef89",
+  "title": "Claude self-intro motion graphic",
+  "handle": "@1littlecoder",
+  "family": "typo",
+  "craft": 4,
+  "craft_reason": "Concept tenu par un seul motif (le point orange), raccords tous motivés, synchro serrée sur 120 BPM ; quelques maintiens plats (candid, rigorous) et des mots tronqués par le cadre l'éloignent du niveau studio.",
+  "summary": "Autoportrait de Claude en 10 s. Un point orange dessine un point d'interrogation, se perd dans un gribouillis, puis ponctue trois adjectifs traités chacun selon leur sens (curious, rigorous, candid), une pile d'usages qui défile au demi-temps, avant de devenir l'iris puis la virgule décimale de « Claude Opus 5.5 ». Concept fort, palette bleu outremer / lavande / orange, coupes calées sur la pulsation ; quelques maintiens mous.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : 10 s pour montrer « qui tu es » en tant qu'Opus 5.5, le plus créatif et dynamique possible, sans cadres ni textes dans les coins (tics de vidéo IA).",
+    "Tout le reste : le point orange fil rouge, les trois adjectifs, la liste d'usages (code, essays, proofs, your 3 a.m. questions), la palette en trois couleurs, la signature « let's think it through. » et le calage des scènes sur 120 BPM.",
+    "L'interdit négatif (coins, cadres) a été respecté à la lettre et a poussé vers une composition centrée. Rien sur la musique, le tempo ni les maintiens : préciser BPM et durée maximale de pause aurait évité les creux."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1E1BA6", "role": "fond bleu outremer des plans sombres, texte des plans clairs"},
+      {"hex": "#D8DAF8", "role": "fond lavande des plans clairs"},
+      {"hex": "#D3D5F6", "role": "texte lavande sur fond bleu (rigorous, titre final)"},
+      {"hex": "#F0583A", "role": "point orange : point du ?, points des i, points finaux, virgule de 5.5"},
+      {"hex": "#A9ABE8", "role": "mots inactifs de la pile (≈ 35-40 % d'opacité)"},
+      {"hex": "#EEF0FF", "role": "trait blanc du gribouillis et du connecteur final"},
+      {"hex": "#FBFBF9", "role": "fond papier du plan « candid »"},
+      {"hex": "#111111", "role": "texte serif noir de « candid »"},
+      {"hex": "#3B38B8", "role": "lignes de grille de construction (bleu clair sur bleu, faible contraste)"}
+    ],
+    "type": "Grotesque géométrique (Avenir Next ou proche, probable), demi-gras à extra-gras, bas de casse ; mots ≈ 9-10 % de la hauteur, titre ≈ 13 %. Serif transitionnel (Times/Georgia probable) pour « candid ». Interlettrage serré.",
+    "texture": "Aplats purs, aucun grain. Flou de mouvement directionnel (vertical) de 1 à 3 images sur chaque pas de la pile ; flou de zoom radial sur le titre qui jaillit du point ; bord de l'iris adouci (≈ 6 % du rayon) ; échos fantômes du gribouillis sur l'image de coupe f120.",
+    "style": "Typo cinétique minimaliste à motif-point",
+    "coherence": "Trois couleurs et deux familles de caractères seulement. Le point orange est présent dans chaque plan et occupe la même position de part et d'autre de chaque coupe (écart < 2 % du cadre) : c'est lui qui tient le système. La rupture blanc papier + serif de « candid » casse volontairement le système pour illustrer « sans filtre » ; elle est motivée mais crée un creux de rythme."
+  },
+  "rhythm": {
+    "bpm": 120.2,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 120,2 BPM (netteté 8,55, très claire), premier temps à 0,525 s, donc un temps toutes les 30 im à 60 fps et un demi-temps toutes les 15 im. Les coupes sont posées sur des multiples exacts de 0,5 s : f120 (2,0 s), f210 (3,5 s), f300 (5,0 s), f360 (6,0 s), soit 1 im avant les barres bleues f121, f211, f301, f361 (décalage constant, dû au datage des barres). Les pas de la pile de mots tombent au demi-temps (f376, f391, f406 = barres f376, f391, f406). L'atterrissage du point sur le i (f182) tombe sur le temps f181 ; l'éclosion du titre (f481) tombe exactement sur l'attaque la plus forte (8,011 s) et sur le temps f481. Le détecteur annonce 56 % de maintiens, mais il rate le tracé fin du gribouillis (0-2 s, en mouvement continu). Vrais creux : « rigorous » terminé puis figé ≈ 0,7 s (4,3-5,0 s), « candid » figé 0,98 s hormis l'apparition de « (no filter) » à 5,47 s, « your 3 a.m. questions » figé 0,6 s (6,9-7,5 s), carton final 0,7 s (9,3-10 s). Densité : 6 plans en 10 s, plan médian 1,25 s.",
+    "timeline": [
+      {"t": "0:00-0:00.40", "what": "Fond bleu vide ; le point orange apparaît (attaque à 0,116 s) puis s'écrase horizontalement f22", "technique": "apparition + écrasement (squash) du point"},
+      {"t": "0:00.40-0:01.00", "what": "Un trait blanc pousse depuis le point et dessine un « ? » dont le point orange est le point", "technique": "tracé progressif (draw-on) d'un chemin"},
+      {"t": "0:01.00-0:02.00", "what": "Le trait continue en boucles qui s'emmêlent : gribouillis de réflexion de plus en plus dense", "technique": "gribouillis accumulé (scribble)"},
+      {"t": "0:02.00-0:02.35", "what": "Coupe sur le temps avec inversion bleu → lavande ; le gribouillis se déroule en 5 lignes horizontales en 2 im puis converge en une ligne d'horizon", "technique": "coupe inversée + déroulé du tracé"},
+      {"t": "0:02.05-0:02.65", "what": "Le point est lancé vers le haut (ease-out) ; « curious » monte lettre par lettre de derrière la ligne", "technique": "montée masquée par l'horizon, décalage 2-3 im"},
+      {"t": "0:02.65-0:03.17", "what": "Le point retombe et se pose sur le i (f182, sur le temps) ; la ligne d'horizon se rétracte", "technique": "trajectoire balistique, atterrissage sur le temps"},
+      {"t": "0:03.50-0:04.25", "what": "Coupe sur le temps vers le bleu, point au même endroit ; grille de construction tracée puis « rigorous » tapé lettre à lettre, le point glisse sur le i", "technique": "raccord sur le point + grille typographique"},
+      {"t": "0:04.25-0:05.00", "what": "« rigorous » figé", "technique": "maintien"},
+      {"t": "0:05.00-0:06.00", "what": "Coupe sur le temps vers papier blanc : « candid » en serif noir, i pointé orange ; « (no filter) » italique apparaît à 5,47 s", "technique": "rupture de style motivée par le sens"},
+      {"t": "0:06.00-0:06.85", "what": "Coupe sur le drop, fond lavande ; le point file vers le point final de « code. » ; la pile alignée à droite défile : code, essays, proofs, your 3 a.m. questions, un cran par demi-temps", "technique": "pile de mots défilante au demi-temps"},
+      {"t": "0:06.85-0:07.55", "what": "« your 3 a.m. questions. » figé sur deux lignes", "technique": "maintien de lecture"},
+      {"t": "0:07.55-0:07.83", "what": "Les lettres titubent ; le point final grossit en iris bleu qui avale l'écran en 13 im", "technique": "iris depuis le point final"},
+      {"t": "0:07.83-0:08.00", "what": "Point seul sur bleu, légère dérive", "technique": "respiration avant l'impact"},
+      {"t": "0:08.00-0:08.27", "what": "Sur l'attaque la plus forte, « Claude Opus 5.5 » jaillit du point (le point devient la virgule de 5.5)", "technique": "mise à l'échelle depuis un point d'ancrage + flou de zoom"},
+      {"t": "0:08.60-0:09.30", "what": "Un trait entre par la gauche, révèle « let's think it through. », remonte en crochet jusqu'au point, puis se rétracte par la queue", "technique": "connecteur tracé puis effacé (trim path)"},
+      {"t": "0:09.30-0:10.05", "what": "Carton final figé", "technique": "titre de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage à l'œil, un événement clé par geste : 13 gestes sur 18 tombent à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 33 % à 120 BPM / 60 fps). Sur la barre : coupes f120, f210, f300, f360 (toutes à -1 im d'une barre bleue), atterrissage du point sur le i f182 (barre f181), apparition du « r » f225 (bleu clair f226), pas de pile f376 / f391 / f406 (barres f376, f391, f406), coupe d'iris f465 (bleu clair f466), éclosion du titre f481 (barre bleue + point vert d'attaque), titre posé f495 (bleu clair f496), crochet du connecteur sur le point f539 (barre f541). Hors grille : écrasement du point f22, départ du gribouillis f64, montée de « curious » f141, « (no filter) » f328 (-3 im), départ du connecteur f516. Les trois attaques les plus fortes (3,518 s, 6,014 s, 8,011 s) portent les trois plus gros événements (coupe vers rigorous, coupe-drop vers la pile, éclosion du titre). Mesures auto concordantes : départs/demi-temps R = 0,84, p corrigé 1e-5 ; corrélation grosse caisse z = 3,47.",
+    "synced": ["coupes", "impacts", "atterrissages", "apparitions", "texte", "drop"],
+    "style_match": "Pulsation électronique nette à 120 BPM avec drop vers 6 s (probable) ; les coupes sèches, les pas de pile au demi-temps et l'éclosion sur l'attaque collent à ce caractère précis et léger.",
+    "how_built": "Les scènes sont posées sur des multiples exacts de 0,5 s (2,0 / 3,5 / 5,0 / 6,0 / 8,0 s), soit la grille d'un 120 BPM, et la pile avance par quarts de seconde. La musique mesure 120,2 BPM avec un temps à 0,525 s : écart constant ≈ 1 im. Le prompt ne dit rien de la musique : Claude a probablement écrit la timeline en temps de 0,5 s et choisi ou généré une piste à 120 BPM (pile technique non indiquée)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Point orange fil rouge",
+      "name_en": "recurring dot motif",
+      "t": "0:00-0:10.05",
+      "frames": "f7-f600",
+      "fps": 60,
+      "mechanics": "Un seul disque orange #F0583A (≈ 1,3 % de la hauteur) est présent dans tous les plans. Il est successivement : le point du « ? » dessiné, le point du i de « curious », celui de « rigorous » et de « candid », le point final de « code. », « essays. », « proofs. », « questions. », l'origine de l'iris, puis la virgule décimale de « 5.5 » et l'arrivée du connecteur final. C'est la seule couleur chaude de la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord sur le point (le point garde sa place à travers la coupe)",
+      "name_en": "match cut on a persistent dot",
+      "t": "0:02.00 / 0:03.50 / 0:06.00",
+      "frames": "f119-f120, f209-f210, f359-f360",
+      "fps": 60,
+      "mechanics": "À chaque coupe franche, tout change (fond, couleurs, typo) sauf le point orange, qui reste au même endroit : f119 (50 %, 76 %) → f120 (50 %, 74 %) ; f209 i de « curious » (50 %, 37 %) → f210 point seul (50 %, 40 %) ; f359 i de « candid » (58 %, 41 %) → f360 (58 %, 41 %), puis il file en 4 im avec une traînée vers le point final de « code. » (79 %, 54 %). L'œil reste accroché au point, la coupe paraît fluide.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f210.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé d'un point d'interrogation depuis le point",
+      "name_en": "path draw-on question mark",
+      "t": "0:00.43-0:01.00",
+      "frames": "f26-f60",
+      "fps": 60,
+      "mechanics": "Un trait blanc de ≈ 2 px à bouts ronds pousse vers le haut depuis le point (tête de tracé, pas de queue) : tige f26-f34, crosse f38-f46, boucle fermée f50-f58. Le « ? » mesure ≈ 30 % de la hauteur, centré ; le point orange en devient le point. Vitesse à peu près constante (≈ 1 % du cadre par image).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Gribouillis de réflexion",
+      "name_en": "tangled scribble build-up",
+      "t": "0:01.00-0:02.00",
+      "frames": "f62-f119",
+      "fps": 60,
+      "mechanics": "Le même trait sort du « ? » et trace des boucles libres qui s'emmêlent jusqu'à couvrir ≈ 45 % × 55 % du cadre. Le tracé accélère : ≈ 1 boucle par 10 im au début, ≈ 2 boucles par 10 im à la fin. Il évoque la réflexion qui s'emballe avant la coupe.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-001-move-f123.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe inversée et gribouillis déroulé en lignes",
+      "name_en": "inverted cut with scribble unravelling into lines",
+      "t": "0:02.00-0:02.05",
+      "frames": "f119-f123",
+      "fps": 60,
+      "mechanics": "f120 : inversion bleu → lavande, le gribouillis passe en bleu avec des échos fantômes (traînée). f121 : il est étiré horizontalement à ≈ 90 % de la largeur. f122 : 5 lignes ondulées pleine largeur. f123 : lignes presque droites. Déroulé en 3 im, avec un effet de fouet. Coupe 1 im avant le temps (f121).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f123.jpg",
+      "illus": {"from": 118, "to": 142, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Lignes qui convergent en ligne d'horizon",
+      "name_en": "lines collapsing into a horizon line",
+      "t": "0:02.05-0:02.35",
+      "frames": "f123-f141",
+      "fps": 60,
+      "mechanics": "Les 5 lignes parallèles (écart ≈ 3 % de la hauteur) se resserrent vers y ≈ 62 % en ease-in-out sur ≈ 18 im et fusionnent en une seule ligne f141. Cette ligne sert de masque aux lettres qui montent. Elle se rétracte ensuite vers la droite f182-f190.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f123.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent de derrière l'horizon",
+      "name_en": "masked letter rise with stagger",
+      "t": "0:02.35-0:02.65",
+      "frames": "f141-f160",
+      "fps": 60,
+      "mechanics": "« curious » (≈ 10 % de la hauteur) émerge de sous la ligne qui sert de masque : « c » f141, « cur » f146, « curi o » f150, « curiou » f154, mot complet f158. Décalage ≈ 2-3 im par lettre, montée de chaque lettre ≈ 8 im en ease-out, sans dépassement visible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Lancer balistique du point jusqu'au i",
+      "name_en": "ballistic toss and landing",
+      "t": "0:02.03-0:03.03",
+      "frames": "f122-f182",
+      "fps": 60,
+      "mechanics": "À la coupe, le point est lancé de y ≈ 64 % à y ≈ 14 % en 18 im, en ease-out net : pas successifs de 5, 4, 5, 4, 4, 4, 3, 3, 3, 3, 2, 3, 2, 1, 2, 1, 1, 1, 0 % de hauteur. Apogée tenue f140-f150 en dérivant vers la gauche, puis chute en ease-in jusqu'au i, atteint à f182 (temps f181) avec un léger écrasement probable. Il dessine une vraie courbe de gravité.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f123.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille de construction typographique",
+      "name_en": "typographic construction grid",
+      "t": "0:03.50-0:05.00",
+      "frames": "f210-f299",
+      "fps": 60,
+      "mechanics": "Sur le bleu, des filets de 1 px #3B38B8 se tracent depuis la gauche : lignes de pied, de hauteur d'x et de capitale à y ≈ 50, 58 et 66 %. Des repères verticaux poussent f217-f224 avant toute lettre. Le mot est ensuite posé sur ce plan de construction, qui reste visible en faible contraste : le sens « rigoureux » est montré par un tracé d'architecte.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f210.jpg, microM-003-cut-f300.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Apparition lettre à lettre en fondu",
+      "name_en": "staggered letter fade-in (type-on)",
+      "t": "0:03.75-0:04.25",
+      "frames": "f225-f256",
+      "fps": 60,
+      "mechanics": "« rigorous » (≈ 10 % de la hauteur, lavande #D3D5F6) apparaît lettre par lettre : chaque lettre passe de ≈ 40 % à 100 % d'opacité en 2-3 im, une nouvelle lettre toutes les ≈ 4 im (r f225 sur le demi-temps f226, i f229…). Le point, posé seul au centre dès f210, glisse ensuite pour pointer le i (25 %, 37 %). Mot complet ≈ f256 : 0,5 s de frappe un peu lente.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f210.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Typographie qui incarne le sens du mot",
+      "name_en": "semantic typography",
+      "t": "0:02.00-0:06.00",
+      "frames": "f120-f359",
+      "fps": 60,
+      "mechanics": "Chaque adjectif reçoit un traitement qui illustre ce qu'il dit : « curious » bondit et joue avec son point (balle lancée) ; « rigorous » est construit sur une grille de mise en page ; « candid » est un serif noir nu sur papier blanc, sans aucun effet, avec la note « (no filter) ». Le sens passe par la forme, pas par une légende.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance de fonds par plan",
+      "name_en": "per-shot palette inversion",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Bleu #1E1BA6 (0-2 s) → lavande #D8DAF8 (2-3,5 s) → bleu (3,5-5 s) → papier #FBFBF9 (5-6 s) → lavande (6-7,8 s) → bleu (7,8-10 s). Le texte prend toujours la couleur opposée du fond, seul l'orange reste fixe. Chaque coupe est donc aussi un flash de valeur (clair/sombre).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "L'absence d'effet comme effet (« candid »)",
+      "name_en": "deliberate stillness as meaning",
+      "t": "0:05.00-0:06.00",
+      "frames": "f300-f359",
+      "fps": 60,
+      "mechanics": "Coupe franche vers blanc papier, « candid » en serif transitionnel noir (≈ 9 % de la hauteur), centré, i pointé orange. Rien ne bouge pendant 27 im, puis « (no filter) » en italique ≈ 1,5 % de la hauteur apparaît d'un coup à f328 (sans fondu), 3 im avant le temps. Plan figé 0,98 s au total. L'idée est drôle, mais elle crée le plus long temps mort de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f300.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pile de mots défilante au demi-temps",
+      "name_en": "vertical word roller / list scroll",
+      "t": "0:06.00-0:06.85",
+      "frames": "f360-f410",
+      "fps": 60,
+      "mechanics": "Liste alignée à droite (bord droit ≈ 82 %) : code, essays, proofs, your 3 a.m. questions. Le mot actif est en bleu plein #1E1BA6 avec un point final orange, les autres sont en lavande à ≈ 35-40 % d'opacité, au-dessus et en dessous. La pile monte d'une ligne (≈ 6 % de la hauteur) toutes les 15 im exactement : f360 code, f376 essays, f391 proofs, f406 your 3 a.m. Chaque pas dure ≈ 3-4 im, avec un flou de mouvement vertical d'1 à 2 images (f376, f390, f406) et un arrêt sec. Le point orange saute d'un mot à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg",
+      "illus": {"from": 360, "to": 410, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pile qui déborde du cadre",
+      "name_en": "list bleeding off frame edges",
+      "t": "0:06.00-0:07.55",
+      "frames": "f360-f453",
+      "fps": 60,
+      "mechanics": "Les mots inactifs de la pile sortent par le haut et le bas : « essays » coupé à mi-hauteur en bas (f360), « proofs » tronqué par le bord haut (f410-f453). C'est voulu pour suggérer une liste infinie, mais ces mots coupés par le cadre sont un défaut pour l'utilisateur.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui titubent avant l'engloutissement",
+      "name_en": "per-letter jitter / tumble",
+      "t": "0:07.58-0:07.78",
+      "frames": "f454-f467",
+      "fps": 60,
+      "mechanics": "Chaque lettre de « your 3 a.m. questions » et de « proofs » prend une rotation (≈ ±15-20°) et un décalage vertical aléatoires qui grandissent en ≈ 10 im, comme si les lettres perdaient l'équilibre, juste avant d'être avalées par l'iris.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f462.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris depuis le point final",
+      "name_en": "period-to-iris wipe",
+      "t": "0:07.62-0:07.83",
+      "frames": "f457-f470",
+      "fps": 60,
+      "mechanics": "Le point final de « questions. » (79 %, 58 %) devient un disque bleu #1E1BA6 qui garde un petit point orange en son centre. Diamètre en % de la hauteur : 14 (f459), 20, 31, 44, 60, 79 (f464), puis au-delà du cadre f466-f469 ; écran couvert à f470. Croissance ≈ ×1,4 par image, soit un ease-in exponentiel sur 13 im (0,22 s), bord adouci. La coupe détectée f465 tombe 1 im avant le demi-temps f466. Le point orange survit seul sur le bleu.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f462.jpg",
+      "illus": {"from": 455, "to": 470, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui jaillit du point",
+      "name_en": "title burst scaling from an anchor dot",
+      "t": "0:08.00-0:08.27",
+      "frames": "f481-f496",
+      "fps": 60,
+      "mechanics": "Sur l'attaque la plus forte (8,011 s = f481), « Claude Opus 5.5 » sort du point : l'origine de la mise à l'échelle est la virgule de 5.5, qui reste fixe à (71 %, 59 %). L'échelle passe de ≈ 5 % (f482, seul « 5.5 » visible) à ≈ 55 % (f486), ≈ 85 % (f490), puis 100 % (f494). C'est un ease-out expo de 15 im (0,25 s), sans dépassement visible. Flou de zoom radial plus fort sur « Claude », la ligne la plus éloignée de l'origine. Les lignes arrivent dans l'ordre 5.5 → Opus → Claude. Titre sur deux lignes ≈ 13 % de la hauteur chacune, lavande #D3D5F6.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f462.jpg, extra-03.jpg",
+      "illus": {"from": 480, "to": 498, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Connecteur qui écrit la signature et se raccroche au logo",
+      "name_en": "trim-path connector line revealing tagline",
+      "t": "0:08.60-0:09.30",
+      "frames": "f516-f556",
+      "fps": 60,
+      "mechanics": "Un filet lavande de ≈ 1,5 px entre par le bord gauche à y ≈ 72 % (f516) et file vers la droite. Sa tête révèle la signature « let's think it through. » (≈ 2,5 % de la hauteur) lettre à lettre, f524-f532. Il remonte ensuite en crochet arrondi jusqu'à la virgule orange de 5.5 (f538-f540, temps f541). La queue se rétracte depuis la gauche f542-f556 (début du tracé animé) et le filet a disparu à f558 ; la signature reste.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes posées sur les temps",
+      "name_en": "cuts on the beat",
+      "t": "0:02.00 / 0:03.50 / 0:05.00 / 0:06.00",
+      "frames": "f120, f210, f300, f360",
+      "fps": 60,
+      "mechanics": "Les quatre coupes franches tombent sur des multiples exacts de 0,5 s, 1 im avant les barres bleues (f121, f211, f301, f361). Deux portent les attaques les plus fortes de la piste : 3,518 s (coupe vers rigorous) et 6,014 s (drop, coupe vers la pile). Les durées de plan valent 4, 3, 3 et 2 temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f210.jpg, microM-003-cut-f300.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pas de liste sur les demi-temps",
+      "name_en": "half-beat list steps",
+      "t": "0:06.00-0:06.77",
+      "frames": "f360, f376, f391, f406",
+      "fps": 60,
+      "mechanics": "Après le drop, la pile avance d'un cran exactement toutes les 15 im, soit au demi-temps (barres f376, f391, f406, à 0 im d'écart). Le mot change sur la croche : la densité double au moment où la musique monte (mouvement ×1,57 après le drop).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Gros événements sur les attaques fortes",
+      "name_en": "hero hits on strongest onsets",
+      "t": "0:03.03 / 0:08.01",
+      "frames": "f182, f481",
+      "fps": 60,
+      "mechanics": "Le point se pose sur le i sur le temps f181 (±1 im) et le titre éclot du point exactement sur l'attaque la plus forte (8,011 s, point vert f481 + barre bleue). L'événement le plus important de chaque phrase est placé sur l'accent le plus fort. Le connecteur atteint le point final sur le temps f541 (-2 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f462.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Scènes écrites en multiples de 0,5 s",
+      "name_en": "beat-grid scene durations",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Découpage : intro 2,0 s, curious 1,5 s, rigorous 1,5 s, candid 1,0 s, pile + iris 2,0 s (pile à 0,25 s par mot), titre 2,0 s. Toutes les frontières tombent sur des multiples de 0,5 s, la durée d'un temps à 120 BPM. Écrire la timeline en temps plutôt qu'en secondes libres suffit à caler l'image sur la musique.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc question → traits → usages → signature",
+      "name_en": "question-to-signature arc",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Quatre temps en 10 s. Une question (« ? » puis gribouillis). Trois adjectifs de caractère. Une liste d'usages qui finit par une touche humaine (« your 3 a.m. questions »). Le nom, puis la promesse « let's think it through. ». Le « ? » d'ouverture et le « think it through » final se répondent.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "banned", "insight": "L'interdit « pas de cadres ni de textes dans les coins » a été suivi à la lettre : aucun label de coin, aucune interface, tout est centré ou en colonne de droite. Nommer les tics d'IA à éviter fonctionne."},
+    {"kind": "direction", "insight": "« Montre qui tu es » a poussé Claude vers un autoportrait par adjectifs, avec un motif personnel (le point = la pensée) plutôt qu'une démonstration d'effets."},
+    {"kind": "direction", "insight": "« Créatif et dynamique » sans autre précision : la vidéo reste sobre (trois couleurs, aplats) mais tous ses raccords sont motivés. La consigne n'a pas produit de surenchère d'effets."},
+    {"kind": "structure", "insight": "Seule la durée (10 s) était imposée. Claude a découpé en 6 plans de 1 à 2 s sur une grille de 0,5 s, donc en temps de 120 BPM, ce qui explique la synchro serrée sans qu'aucun BPM ne soit demandé."},
+    {"kind": "other", "insight": "Rien n'encadrait les maintiens : les plans conceptuels (candid, rigorous terminé) restent figés 0,7 à 1 s. Une règle « quelque chose bouge toutes les 0,5 s » aurait comblé ces creux."}
+  ],
+  "steal": [
+    "Faire d'un point de couleur le fil rouge : il pointe chaque i, finit chaque mot, sert de raccord à chaque coupe et devient la virgule du logo.",
+    "Finir une scène en gonflant le point final en iris (13 im, ease-in exponentiel), puis faire jaillir le titre de ce même point.",
+    "Pile de mots alignée à droite qui avance d'un cran par demi-temps : mot actif plein, autres à 35 % d'opacité, 1 à 2 im de flou vertical.",
+    "Donner à chaque adjectif une forme qui l'illustre : lettres lancées pour « curieux », grille d'architecte pour « rigoureux », serif nu pour « franc ».",
+    "Un trait part du bord, révèle la signature avec sa tête, se raccroche au logo puis se rétracte par la queue, en 0,7 s."
+  ],
+  "flaws": [
+    "Plan « candid » figé près d'1 s : l'idée « sans filtre » est juste mais casse le flux à mi-vidéo.",
+    "Mots de la pile coupés par les bords haut et bas du cadre (« proofs », « essays »).",
+    "Gribouillis d'intro générique, trait blanc de 2 px peu présent à l'écran pendant 1 s.",
+    "« rigorous » tapé en 0,5 s puis figé 0,7 s : nettement plus mou que le reste.",
+    "Carton final statique 0,7 s, sans dernier accent visuel."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "En 10 s à 60 fps, la vidéo contient plusieurs recettes mesurables image par image : raccords sur le point, lancer balistique, iris exponentiel depuis un point final, titre mis à l'échelle depuis un point d'ancrage, pile au demi-temps, connecteur tracé puis effacé. Elle montre aussi une synchro obtenue simplement en écrivant la timeline en temps de 0,5 s."
+  }
+}

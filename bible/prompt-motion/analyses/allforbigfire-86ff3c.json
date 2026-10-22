@@ -1,0 +1,335 @@
+{
+  "slug": "allforbigfire-86ff3c",
+  "title": "Anime robot combining sequence",
+  "handle": "@allforbigfire",
+  "family": "personnages",
+  "craft": 3,
+  "craft_reason": "Grammaire d'anime de robots parfaitement respectée (appel des machines, onomatopées, flashs d'impact, regard qui s'allume, pose finale sur soleil rayonnant) et bruitages calés à l'image ; mais modèles en boîtes, 720p, fin figée.",
+  "summary": "Séquence verticale de 25 s façon anime de robots géants (gattai) en 3D cel-shading : un jet rouge, une voiture bleue et un char jaune sont présentés chacun avec un cartouche, se regroupent, se transforment en tête, torse et jambes, s'emboîtent sur deux impacts flashés, le robot allume ses yeux et lève le poing. Fort par les codes du genre et les bruitages calés ; faible par des modèles simplistes.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne en japonais : peux-tu faire, en 3D CG style anime, la scène d'anime de robots où trois véhicules se transforment et fusionnent en un robot ? Rien sur la durée, le format, le son ni les véhicules.",
+    "Claude a choisi seul : jet, voiture, char codés rouge, bleu, jaune ; appel des machines avec cartouches « 1号機 JET » ; onomatopées « ガキィン!! » ; format vertical ; bande-son générée avec un bruitage sur chaque impact ; pose finale « 合体完了!! ».",
+    "Le prompt nomme un genre très codifié : le modèle en a reproduit fidèlement les conventions. Il aurait fallu préciser le niveau de détail des modèles (pas des boîtes), la résolution, et une fin qui ne reste pas figée 3 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#2E7BE6", "role": "ciel haut (plans jet et groupe)"},
+      {"hex": "#CFE6FA", "role": "ciel bas, dégradé"},
+      {"hex": "#4A4D5A", "role": "asphalte du plan voiture"},
+      {"hex": "#C49A62", "role": "sable du plan char"},
+      {"hex": "#E0283A", "role": "jet, tête-poitrine du robot, couleur 1"},
+      {"hex": "#2457D6", "role": "voiture, torse et bras, couleur 2"},
+      {"hex": "#F8C51C", "role": "char, jambes, emblème V, couleur 3"},
+      {"hex": "#7FE3F5", "role": "verrières et visière cyan"},
+      {"hex": "#14123A", "role": "fond nuit violet des plans de transformation"},
+      {"hex": "#5A6AD8", "role": "lignes de vitesse radiales"},
+      {"hex": "#3A0A14", "role": "fond rouge sombre des gros plans"},
+      {"hex": "#B5562A", "role": "rayons rouille du soleil final"},
+      {"hex": "#F4D9A0", "role": "rayons clairs et halo du soleil final"},
+      {"hex": "#0E0F18", "role": "cartouches de présentation"}
+    ],
+    "type": "Onomatopées en gothique japonaise extra-grasse penchée ≈ 10° (probable Noto Sans JP Black), ≈ 6-8 % de la hauteur, rouge à contour jaune et extrusion bordeaux, ou blanc à contour bleu ; cartouches en sans condensée ≈ 2,5 %.",
+    "texture": "Cel-shading à deux tons avec contour noir fin sur chaque arête, aucune texture ni grain ; flashs blancs plein cadre sur les impacts ; étoiles de brillance (glint) sur les yeux ; lignes de vitesse radiales animées image par image ; lumière plate.",
+    "style": "anime de robots, 3D cel-shading low-poly",
+    "coherence": "Le code couleur rouge, bleu, jaune tient tout : chaque véhicule garde sa couleur dans son cartouche, sa transformation et sa partie du robot (tête, torse, jambes), et les trois se lisent ensemble dans le robot final. La mise en page verticale empile les véhicules dans l'ordre exact du corps final (haut, milieu, bas), ce qui annonce l'assemblage. Le système se fragilise par des modèles en boîtes trop simples face à des effets de mise en scène très codés."
+  },
+  "rhythm": {
+    "bpm": 70,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 70,1 BPM (pulsation nette 10,3 sur 0-6,5 s), avec des attaques sur les demi-temps (1,741 / 3,448 / 5,166 s) : ressenti probable de 140 BPM. 14 plans, médiane 1,37 s. Les trois plans d'appel durent exactement 2,2 s chacun (coupes f65, f131, f197) : une liste de plans écrite en secondes, dont seule la première coupe tombe sur un temps (2,168 s). La synchro serrée n'est pas celle de la grille musicale mais celle des bruitages : chaque impact visuel a son attaque sonore à -2 à +2 im (voir music), souvent précédée d'un creux de 1 à 3 im (-27 à -34 dB). Densité forte : un événement toutes les 0,5 à 1,5 s jusqu'à 22 s. Deux creux : 12,5-14,2 s (pièces qui flottent sans action, ≈ 1,7 s) et la fin 22,2-25,05 s (pose figée ≈ 2,8 s, seul le texte reste).",
+    "timeline": [
+      {"t": "0:00-0:02.17", "what": "Appel du jet rouge dans le ciel : il entre par le bas à droite, se cale au centre et pivote lentement ; cartouche « 1号機 JET » qui glisse de la gauche en 4 im (f4-f8)", "technique": "appel des machines avec cartouche"},
+      {"t": "0:02.17-0:04.37", "what": "Coupe sur un temps ; voiture bleue qui entre par la gauche en 12 im sur une route aux pointillés qui défilent ; cartouche « 2号機 CAR » 5 im après la coupe", "technique": "appel des machines avec cartouche"},
+      {"t": "0:04.37-0:06.57", "what": "Char jaune qui entre par la droite en 9 im dans un désert ; cartouche « 3号機 TANK »", "technique": "appel des machines avec cartouche"},
+      {"t": "0:06.57-0:08.37", "what": "Ciel à lignes de vitesse verticales, les trois véhicules entrent décalés de 5 im ; « 3機合体!! » claque à f208 avec flash, montée sonore avant", "technique": "titre claqué + flash + bruitage"},
+      {"t": "0:08.37-0:09.30", "what": "Fond nuit violet à lignes radiales, véhicules empilés jet / voiture / char ; « 変形! » claque à f254", "technique": "mise en page verticale qui annonce le corps"},
+      {"t": "0:09.30-0:12.50", "what": "Transformation en cascade de haut en bas : jet → tête-poitrine (9,2-10,7 s), voiture → torse et bras (10,2-11,7 s), char → jambes (10,8-12,5 s), avec bruits de servomoteurs", "technique": "transformation en cascade chevauchée"},
+      {"t": "0:12.50-0:14.97", "what": "Les trois blocs flottent séparés, puis les jambes accélèrent vers le torse", "technique": "anticipation par accélération"},
+      {"t": "0:14.97", "what": "Emboîtement 1 : flash blanc ≈ 85 % décroissant en 8 im, « ガキィン!! » claque en 3 im, attaque sonore +2 im après un silence", "technique": "impact flash + onomatopée + bruitage"},
+      {"t": "0:15.00-0:16.17", "what": "Le bloc tête-poitrine descend en accélérant vers le torse ; emboîtement 2 « ガシィン!! » avec le même flash", "technique": "impact flash + onomatopée + bruitage"},
+      {"t": "0:16.97-0:18.57", "what": "Coupe en contre-plongée sur la poitrine, fond rouge à lignes radiales ; la tête surgit de derrière la poitrine en 10 im (f541-f550), bruitage à l'image d'arrivée", "technique": "révélation de la tête"},
+      {"t": "0:18.57-0:20.57", "what": "Très gros plan sur le visage, yeux éteints ; voile rose à f578 puis les yeux s'allument avec étoiles de brillance (f583-f592) et son « kiiin » montant", "technique": "regard qui s'allume (glint)"},
+      {"t": "0:20.57-0:21.87", "what": "Coupe avec flash sur le robot en pied sur soleil rayonnant, dézoom de ≈ 115 % à 100 % en 9 im ; le bras droit se lève en 13 im (f633-f646)", "technique": "pose finale (kime) sur soleil rayonnant"},
+      {"t": "0:21.87-0:25.05", "what": "« 合体完了!! » claque en bas avec flash, sous-titre « COMBINATION COMPLETE » 5 im plus tard ; pose tenue jusqu'à la fin", "technique": "carton final claqué + maintien"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Bande-son clairement générée en code (spectrogramme : balayages de fréquence purs, montées de hauteur, sons tenus sinusoïdaux) : un fond musical entraînant à 70,1 BPM (ressenti 140) plus des bruitages placés sur les événements de l'image. Mesure image par image du volume : « 3機合体!! » f208 → attaque f209-f210 (-21 → -10 dB) ; « 変形! » f254 → attaque f253 après un trou à -34 dB en f250 ; « ガキィン!! » f449 → attaque f451 (-21 → -8 dB) ; « ガシィン!! » f485 → f487 (-24 → -8 dB) ; arrivée de la tête f550 → f550 ; voile et yeux f578 → f576 ; coupe finale f617 → f619 après un creux à -27 dB ; départ du bras f633 → f632, bras en haut f645 → f645 ; « 合体完了!! » f656 → f658. Au total 13 gestes clés sur 16 à ±2 im d'une attaque (hasard ≈ 37 % avec 2,8 attaques par seconde), décalage typique +2 im (l'attaque suit l'image). Par rapport à la grille musicale, en revanche : 4/13 coupes à ±50 ms d'un temps ; les trois plans d'appel durent 2,2 s chacun, ce qui ne colle pas à la grille (0,856 s). Seuls quelques gestes tombent aussi sur un temps : coupe f65 (2,168 s), départ du bras (21,065 s), attaque de « 合体完了!! » (21,92 s). L'indice automatique (« aucune synchro ») rate cette synchro car elle porte sur les bruitages, pas sur le temps.",
+    "synced": ["impacts", "flashs", "texte", "coupes", "drop"],
+    "style_match": "Musique synthétique entraînante, ressenti 140 BPM, avec montées et coups de bruitage : colle à l'énergie d'anime de robots et aux courbes sèches (claquements de 3 im, arrêts nets).",
+    "how_built": "Stack Python : la même liste d'événements (en secondes) pilote probablement le rendu des images et la synthèse audio, chaque événement déclenchant un bruitage (montée avant, silence de 1 à 3 im, coup sur l'impact, son de brillance sur les yeux, servos pendant la transformation). Le fond musical tourne à son propre tempo : la synchro est celle du bruitage sur l'image (mickeymousing), pas d'une animation calée sur les temps de la musique."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Séquence de fusion d'anime de robots",
+      "name_en": "Mecha combining sequence structure (gattai bank)",
+      "t": "0:00-0:25.05",
+      "frames": "f0-f748",
+      "fps": 30,
+      "mechanics": "Structure canonique en 7 temps : appel des trois machines (3 × 2,2 s), regroupement + titre (1,8 s), annonce « 変形! » (0,9 s), transformation en cascade (3,2 s), deux emboîtements flashés (14,97 et 16,17 s), révélation de la tête puis des yeux (3,6 s), pose finale + carton « 合体完了!! » (4,5 s). Chaque étape a son propre décor ou cadrage, ce qui rend la progression lisible sans un mot de narration.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cartouche de présentation glissé",
+      "name_en": "Slide-in name plate lower third",
+      "t": "0:00.13-0:00.27",
+      "frames": "f4-f8",
+      "fps": 30,
+      "mechanics": "Parallélogramme noir #0E0F18 ≈ 45 % de la largeur × 4 % de la hauteur à y ≈ 80 %, bande colorée inclinée à gauche (rouge, bleu ou jaune selon la machine), « 1号機 » blanc ≈ 1,5 % au-dessus de « JET » en sans condensée colorée ≈ 2,5 %. Glisse depuis le bord gauche en 4-5 im, ease-out fort, sans dépassement. Il arrive 5 im après le début du plan (voiture : coupe f65, cartouche f70-f73 ; char : coupe f131, cartouche f136-f139). Aucune sortie : il disparaît à la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f6.jpg, microM-002-cut-f65.jpg, microM-003-cut-f131.jpg",
+      "illus": {"from": 64, "to": 74, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Entrée de véhicule avec rotation lente",
+      "name_en": "Vehicle entrance with slow turntable yaw",
+      "t": "0:02.17-0:02.60",
+      "frames": "f66-f78",
+      "fps": 30,
+      "mechanics": "La voiture entre par la gauche et parcourt ≈ 60 % de la largeur en 12 im, ease-out (grands pas au début, petits pas f75-f78), puis reste au centre avec un léger roulis. Le char entre par la droite en 9 im (f133-f142). Le jet arrive par le bas à droite en ≈ 15 im puis pivote d'environ 40° en lacet sur 2 s pour montrer son volume en trois quarts. Chaque décor défile (nuages et traits de vitesse horizontaux, pointillés de route, cailloux) pour vendre la vitesse sans bouger la caméra.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f65.jpg, microM-003-cut-f131.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Cel-shading à contours",
+      "name_en": "Toon shading with outlines",
+      "t": "0:00-0:25.05",
+      "frames": "f0-f748",
+      "fps": 30,
+      "mechanics": "Aplats de couleur avec une seule ombre franche par face, contour noir fin sur chaque arête, aucune texture. Modèles bâtis en boîtes et prismes (low-poly). La lumière plate et le contour donnent le rendu « anime 3D CG » demandé, mais la géométrie en cubes trahit le côté programmatique.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Onomatopée claquée avec flash",
+      "name_en": "Slammed onomatopoeia with flash",
+      "t": "0:06.93-0:07.03",
+      "frames": "f208-f211",
+      "fps": 30,
+      "mechanics": "Le texte apparaît d'un coup à ≈ 170 % (coupé par les bords du cadre, voulu), puis 130 % à f209, 110 % à f210, 100 % à f211 : réduction d'échelle en 3 im, ease-out fort, sans rebond. Voile blanc ≈ 40 % sur les 2 premières images. Même recette pour « 変形! » (f254-f257), « ガキィン!! » (f449-f452), « ガシィン!! » (f485-f488), « 合体完了!! » (f656-f659). Le texte est incliné de -8 à -12°, tenu ≈ 1 s puis fondu en ≈ 6 im (f245-f250).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-005-cut-f251.jpg, microM-006-cut-f449.jpg",
+      "illus": {"from": 206, "to": 213, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Lettrage d'anime à contour et extrusion",
+      "name_en": "Anime title lettering with stroke and extrusion",
+      "t": "0:06.93-0:25.05",
+      "frames": "f208-f748",
+      "fps": 30,
+      "mechanics": "Gothique japonaise extra-grasse penchée. « 3機合体!! », « ガキィン!! », « 合体完了!! » : remplissage rouge #E8231E, contour jaune #FFD21F épais (≈ 8 % de la hauteur des lettres), extrusion bordeaux décalée en bas à droite. « 変形! » : blanc à contour bleu #2C5BD8. Largeur 85 à 95 % du cadre. Sous-titre « COMBINATION COMPLETE » en capitales condensées blanches ≈ 1,2 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Entrée décalée du trio",
+      "name_en": "Staggered group entrance",
+      "t": "0:06.70-0:07.17",
+      "frames": "f201-f215",
+      "fps": 30,
+      "mechanics": "Sur un ciel à traits de vitesse verticaux (les véhicules montent), le jet entre par la gauche à f201, la voiture à f206, le char à f211 : décalage de 5 im, chacun en ≈ 6 im ease-out. Le titre claque au milieu de la séquence (f208), entre la 2e et la 3e entrée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Lignes de vitesse radiales (集中線)",
+      "name_en": "Manga focus speed lines",
+      "t": "0:08.37-0:20.57",
+      "frames": "f251-f616",
+      "fps": 30,
+      "mechanics": "Traits fins partant des bords vers le centre, bleu-violet #5A6AD8 sur nuit #14123A, puis rouge #E85A50 sur bordeaux #3A0A14 pour les gros plans. Les traits sont retirés au hasard à chaque image (scintillement permanent), ce qui fait vibrer un fond sinon statique. Ils deviennent blancs pendant les flashs.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f251.jpg, microM-008-move-f548.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Empilement vertical qui annonce le corps",
+      "name_en": "Vertical stack foreshadowing the body",
+      "t": "0:08.37-0:14.97",
+      "frames": "f251-f448",
+      "fps": 30,
+      "mechanics": "En 9:16, les trois machines sont alignées verticalement : jet à y ≈ 20 % (future tête), voiture à y ≈ 40 % (futur torse), char à y ≈ 60-70 % (futures jambes). Elles se transforment sur place, puis il ne reste qu'à fermer les écarts. Le format vertical sert directement la silhouette du robot.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Transformation en cascade chevauchée",
+      "name_en": "Overlapping cascade transformation",
+      "t": "0:09.20-0:12.50",
+      "frames": "f276-f375",
+      "fps": 30,
+      "mechanics": "De haut en bas avec chevauchement : la verrière du jet se détache (f273), le jet se cabre nez en l'air et ses ailes se replient en antennes (f297-f321) ; la voiture se scinde, ses roues pivotent en épaules (f306-f348) ; le char se redresse, ses chenilles deviennent les flancs des jambes puis se divisent en deux jambes (f321-f372). Pièces en rotation autour de pivots, ease-in-out, ≈ 1,5 s par véhicule, départs décalés de ≈ 0,5-1 s.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 279, "to": 372, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Accélération vers l'emboîtement",
+      "name_en": "Ease-in into docking contact",
+      "t": "0:14.57-0:14.97",
+      "frames": "f437-f449",
+      "fps": 30,
+      "mechanics": "Les jambes montent d'environ 13 % de la hauteur en 12 im avec des pas qui grandissent (ease-in), et s'arrêtent net au contact à f449, sur le flash. Même schéma pour le bloc tête-poitrine qui descend f473-f485. Contraire de l'ease-out habituel : l'accélération donne le poids et le choc.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f449.jpg, microM-007-cut-f485.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash blanc d'impact décroissant",
+      "name_en": "Decaying white impact flash",
+      "t": "0:14.97-0:15.23",
+      "frames": "f449-f457",
+      "fps": 30,
+      "mechanics": "Voile blanc ≈ 85 % sur toute l'image à l'image du contact, puis ≈ 70 % (f450), 55 % (f451), 40 % (f452), et retour au fond normal vers f457 : décroissance en 8 im, ease-out. Les lignes radiales passent au blanc pendant le voile. Variante courte (≈ 50 %, 5 im) sur la coupe finale f617 et sur « 合体完了!! » f656.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f449.jpg, microM-007-cut-f485.jpg",
+      "illus": {"from": 446, "to": 457, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Révélation de la tête",
+      "name_en": "Head pop-up reveal",
+      "t": "0:18.03-0:18.33",
+      "frames": "f541-f550",
+      "fps": 30,
+      "mechanics": "Contre-plongée sur la poitrine (≈ 100 % de la largeur), fond rouge. Les antennes en V apparaissent derrière la poitrine à f541, la tête monte et se cale en 10 im, ease-out (grands pas f544-f547, petits pas f548-f550). Le bruitage frappe à f550, image d'arrivée.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f548.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Regard qui s'allume",
+      "name_en": "Eye shine glint",
+      "t": "0:19.27-0:19.80",
+      "frames": "f578-f594",
+      "fps": 30,
+      "mechanics": "Très gros plan sur le visage (≈ 60 % de la largeur). Voile rose ≈ 35 % à f578-f582, puis les yeux passent du gris foncé au blanc, avec des étoiles de brillance horizontales à 4 branches qui débordent du casque (f583-f590), et se calment en yeux blancs lumineux à f594. Son de brillance montant (balayage jusqu'à ≈ 2,7 kHz) qui démarre 2 im avant.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f583.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Soleil rayonnant de pose finale",
+      "name_en": "Sunburst background for hero pose",
+      "t": "0:20.57-0:25.05",
+      "frames": "f617-f748",
+      "fps": 30,
+      "mechanics": "Rayons alternés crème #F4D9A0 et rouille #B5562A depuis un halo clair placé derrière la tête du robot, vignettage sombre aux bords. Le robot occupe ≈ 80 % de la hauteur, centré. Fond quasi statique.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f617.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom d'impact à la coupe",
+      "name_en": "Punch-out zoom on cut",
+      "t": "0:20.57-0:20.87",
+      "frames": "f617-f626",
+      "fps": 30,
+      "mechanics": "La coupe arrive avec un flash ≈ 50 % et le robot cadré à ≈ 115 % ; il recule à 100 % en 9 im, ease-out. Donne un « coup » de caméra à l'arrivée de la pose finale sans mouvement continu ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f617.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Poing levé de victoire",
+      "name_en": "Victory arm raise",
+      "t": "0:21.10-0:21.53",
+      "frames": "f633-f646",
+      "fps": 30,
+      "mechanics": "Le bras droit pivote d'environ 120° vers l'extérieur et le haut en 13 im : départ lent (f633-f636), passage rapide à l'horizontale (f638-f640), arrivée verticale f644 avec un léger dépassement de 1-2 im puis retombée de quelques degrés jusqu'à f650. Bruitage au départ (f632) et à l'arrivée (f645). Le texte final claque 10 im après l'arrivée du bras.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 633, "to": 658, "n": 7}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitage calé sur chaque impact",
+      "name_en": "Hit-synced sound effects",
+      "t": "0:06.93-0:21.93",
+      "frames": "f208-f658",
+      "fps": 30,
+      "mechanics": "13 gestes clés sur 16 ont leur attaque sonore à ±2 im : titres claqués, emboîtements, arrivée de la tête, yeux, coupe finale, bras, carton final. L'attaque suit l'image de 0 à +2 im (impacts f449 → f451, f485 → f487, f656 → f658). Les coups sont d'autant plus forts que le niveau juste avant est bas (-21 à -24 dB → -7 à -8 dB, soit +14 à +16 dB).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f449.jpg, microM-007-cut-f485.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant le coup",
+      "name_en": "Pre-hit silence gap",
+      "t": "0:08.33, 0:14.20-0:14.90, 0:20.60",
+      "frames": "f250, f426-f447, f618",
+      "fps": 30,
+      "mechanics": "Le son se creuse juste avant les gros événements : -34 dB à f250 (1 im avant la coupe « 変形! »), plage à -24/-27 dB de 14,0 à 14,9 s avec une montée de hauteur (300 Hz → 1 kHz) avant « ガキィン!! », -27 dB à f618 avant l'attaque de la pose finale. Le contraste rend le coup énorme.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f251.jpg, microM-006-cut-f449.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montées (risers) et servos synthétisés",
+      "name_en": "Synth risers and servo whirs",
+      "t": "0:06.50-0:06.93, 0:09.00-0:13.50",
+      "frames": "f195-f208, f270-f405",
+      "fps": 30,
+      "mechanics": "Balayages de hauteur montants de ≈ 0,4 s qui aboutissent sur les claquements (« 3機合体!! », emboîtements) ; pendant la transformation, une dizaine de courts balayages 600-800 Hz (bruits de servomoteurs) accompagnent les rotations de pièces. Tout est visiblement synthétisé en code (sons purs sur le spectrogramme).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Plans d'appel de durée égale",
+      "name_en": "Equal-length roll-call shots",
+      "t": "0:00-0:06.57",
+      "frames": "f0-f196",
+      "fps": 30,
+      "mechanics": "Trois plans de 66 im (2,2 s) exactement, même recette (entrée ease-out, cartouche +5 im, rotation lente), seul le décor et le sens d'entrée changent (droite, gauche, droite). La régularité installe un compte « 1, 2, 3 » avant la fusion ; mais la durée ne tombe pas sur la grille musicale (0,856 s).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fin figée trop longue",
+      "name_en": "Overlong static end hold",
+      "t": "0:22.20-0:25.05",
+      "frames": "f666-f748",
+      "fps": 30,
+      "mechanics": "Après le carton « 合体完了!! », plus rien ne bouge pendant ≈ 2,8 s (courbe d'énergie à zéro) : ni respiration du robot, ni rotation des rayons, ni brillance. Même creux, plus court, de 12,5 à 14,2 s quand les pièces flottent sans action.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Nommer un genre très codifié (« la scène de fusion d'anime de robots ») suffit pour que Claude reproduise toute sa grammaire : appel des machines, onomatopées, flashs, regard qui s'allume, pose finale sur soleil rayonnant. Le genre fait office de cahier des charges."},
+    {"kind": "build", "insight": "Stack Python : la même chronologie d'événements semble piloter les images et la synthèse audio, d'où des bruitages à ±2 im de chaque impact. Écrire le son dans le même script que l'animation est la façon la plus sûre d'obtenir cette synchro."},
+    {"kind": "inputs", "insight": "Aucun modèle 3D fourni : les véhicules et le robot sont construits en primitives (boîtes, prismes). Pour un rendu plus fin, il faut fournir des modèles ou exiger un niveau de détail."},
+    {"kind": "structure", "insight": "Le prompt ne fixe ni durée ni format : Claude a choisi le 9:16 et 25 s, et a exploité le vertical pour empiler les trois machines dans l'ordre du corps final."},
+    {"kind": "qa", "insight": "Rien ne demandait de vie dans la pose finale : la vidéo finit sur 2,8 s figées. Préciser « tout plan tenu doit garder un mouvement secondaire » éviterait ce temps mort."}
+  ],
+  "steal": [
+    "Impact : ease-in jusqu'au contact, arrêt net, flash blanc 85 % éteint en 8 im, onomatopée claquée de 170 % à 100 % en 3 im, bruitage à +0-2 im.",
+    "Creuser le son 1 à 3 im avant chaque gros coup (silence ou montée) : le coup paraît deux fois plus fort.",
+    "Présenter chaque élément d'un trio par un plan identique : entrée ease-out, cartouche coloré glissé 5 im après, même durée, couleur propre à chaque élément.",
+    "En vertical, empiler les éléments dans l'ordre de leur assemblage final : la mise en page annonce le résultat avant la transformation.",
+    "Générer la bande-son dans le même script que l'animation, chaque événement déclenchant son bruitage : synchro parfaite sans calage manuel."
+  ],
+  "flaws": [
+    "Modèles en boîtes et prismes : le robot final ressemble à un jouet en blocs, loin de l'anime visé.",
+    "Pose finale figée ≈ 2,8 s sans aucun mouvement secondaire.",
+    "Pièces qui flottent ≈ 1,7 s sans action avant le premier emboîtement.",
+    "Plans d'appel de 2,2 s qui ignorent la grille musicale : seule la première coupe tombe sur un temps.",
+    "Résolution 720 × 1280 : contours et petits textes (« COMBINATION COMPLETE ») baveux."
+  ],
+  "deep_study": {"worth": false, "why": "Source à 30 fps et techniques simples : la recette d'impact (ease-in, flash, claquement, bruitage) est entièrement mesurable sur les planches microscope existantes ; une étude continue à 60 fps n'apporterait rien de plus."}
+}

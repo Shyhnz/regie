@@ -1,0 +1,624 @@
+{
+  "slug": "agonaliu-466a8f",
+  "title": "Trezio app motion reel",
+  "handle": "@agonaliu_",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Transitions motivées et variées, synchro 96 BPM à l'image près, logo construit avec rebond : très solide. Perd un point sur les textes d'interface illisibles et deux maintiens figés.",
+  "summary": "Promo de 15 s pour l'app Trezio en 6 chapitres numérotés : chaos d'onglets (mots-chocs sur la croche), capture, recherche, couche IA, coffre-fort, logo. Chaque passage a sa transition motivée : implosion en point puis iris, filé, élément partagé, recul sur un réseau, bandes diagonales, plongée dans le trou de serrure. Synchro musicale réelle à 96 BPM. Faiblesse : interfaces denses aux textes minuscules.",
+  "prompt_vs_result": [
+    "Le prompt n'impose que le produit (Trezio), la durée (15 s) et un cadrage « showreel de motion designer » pour un CV. Aucune fonction, couleur, musique ni structure.",
+    "Claude a tout décidé : récit problème → 4 fonctions → logo, 6 chapitres numérotés, textes, logo dont le T est un marque-page, palette marine/bleu, habillage de showreel, une transition différente par chapitre.",
+    "Le mot « showreel » a produit un catalogue de transitions brillant mais trop d'interface à lire. Il aurait fallu limiter les mots par écran, fixer une taille minimale de texte et donner le tempo."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0C0C1C",
+        "role": "fond sombre (chaos, coffre) et texte sur fond clair"
+      },
+      {
+        "hex": "#141C34",
+        "role": "centre éclairci du fond sombre (vignettage radial)"
+      },
+      {
+        "hex": "#F4F4F4",
+        "role": "fond clair (capture, recherche, IA, logo)"
+      },
+      {
+        "hex": "#E4E4F4",
+        "role": "taches lavande floues du fond clair, surlignage de mot"
+      },
+      {
+        "hex": "#2B40EA",
+        "role": "accent unique : italiques, badge, bouton, cadenas, disque d'iris, bande"
+      },
+      {
+        "hex": "#64A4F4",
+        "role": "bleu clair des transitions (premier disque d'iris, première bande)"
+      },
+      {
+        "hex": "#8494FC",
+        "role": "chiffres des mots-chocs sur fond sombre"
+      },
+      {
+        "hex": "#A2AEFF",
+        "role": "italique serif sur fond sombre (« somewhere. », « sealed. »), texte chiffré"
+      },
+      {
+        "hex": "#FCFCFC",
+        "role": "titres sur fond sombre"
+      },
+      {
+        "hex": "#F6EA8A",
+        "role": "post-it du nuage de fragments"
+      }
+    ],
+    "type": "Grotesque néo noire 800-900 serrée (≈ −5 %), ≈ 12 % H, pour le verbe ; italique serif contrastée (type Instrument Serif) bleue pour l'objet ; mono capitales espacées (+25 %) pour surtitres ; sans d'interface type Inter.",
+    "texture": "Profondeur de champ sur le nuage de fragments (premiers plans flous ≈ 10-15 px), aberration chromatique rose/cyan sur les mots-chocs, flou de mouvement horizontal sur le filé, flou de mise au point sur l'élément partagé et l'entrée du coffre, halo bleu radial et étoiles 1-2 px derrière le cadenas, carte en verre dépoli, ombres douces bleutées sous cartes et bouton, reflet diagonal final sur le bouton.",
+    "style": "Promo SaaS éditoriale à chapitres",
+    "coherence": "Le système tient par un seul bleu (#2B40EA) et son bleu clair, réservés aux accents et aux transitions (disques de l'iris, bandes, cadenas plein cadre), par l'alternance sombre = problème/coffre et clair = solution/logo, et par la même grammaire de titre à chaque chapitre (surtitre mono, verbe gras, objet en italique serif). Ce qui le fragilise : les pastilles vert/ambre/rose des étiquettes, la densité d'interface et l'habillage HUD permanent."
+  },
+  "rhythm": {
+    "bpm": 96,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "96 BPM (netteté 7,6), croche = 18,75 im à 60 fps, mesure = 2,5 s. Les gestes structurants tombent sur les temps et demi-temps : 17 gestes clés sur 24 à ±2 im d'une barre (hasard ≈ 27 %), dont les 4 changements de mot de l'ouverture (f19, f38, f57, f75). L'image précède l'attaque audible de 1-2 im (mots f19/f38/f57 contre attaques f21/f40/f59, iris f151-152 contre impact f153, T f750 contre impact f752-753), de façon constante : délai d'encodage audio probable. Ratés : début d'implosion f120, recul f523, coupe blanche f738 (+5,5 im après le temps), bouton f817, reflet f852 ; les 4 étiquettes (écart ≈ 10 im) ignorent la grille. Environ 1 transition majeure par mesure (2,5 s). Maintiens mesurés : 9 plages ≥ 0,4 s, 42 % du temps, mais la plupart portent une micro-action (frappe à 30 caractères/s, compteur, impulsions sur les liens). Vrais temps morts : grille de cartes figée 4,05-4,65 s (0,6 s) et carte de fin 13,9-15,06 s (1,1 s animée seulement par deux reflets).",
+    "timeline": [
+      {
+        "t": "0:00-0:00.95",
+        "what": "« 37 open tabs », « 148 screenshots », « 5 note apps » sur un nuage de fragments en profondeur",
+        "technique": "mots-chocs sur la croche avec aberration chromatique"
+      },
+      {
+        "t": "0:00.97-0:01.95",
+        "what": "« I saved it / somewhere. » montés par masque, caméra qui avance dans le nuage",
+        "technique": "montée par masque, profondeur de champ"
+      },
+      {
+        "t": "0:01.95-0:02.32",
+        "what": "tout est aspiré vers le centre jusqu'à un point bleu",
+        "technique": "implosion en un point"
+      },
+      {
+        "t": "0:02.32-0:02.47",
+        "what": "point bleu seul tenu 9 im sur le creux du riser",
+        "technique": "respiration avant l'impact"
+      },
+      {
+        "t": "0:02.47-0:02.70",
+        "what": "trois disques bleu clair, bleu, blanc sortent du point",
+        "technique": "iris à trois disques décalés"
+      },
+      {
+        "t": "0:02.70-0:04.05",
+        "what": "« Save anything. », touches ⌃ ⇧ S, onde, 4 cartes qui arrivent en vol",
+        "technique": "raccourci pressé puis capture"
+      },
+      {
+        "t": "0:04.05-0:04.65",
+        "what": "grille de 4 cartes figée",
+        "technique": "maintien (temps mort)"
+      },
+      {
+        "t": "0:04.65-0:05.00",
+        "what": "la scène file à gauche, « Find everything. » arrive de droite",
+        "technique": "filé avec flou directionnel"
+      },
+      {
+        "t": "0:05.15-0:06.25",
+        "what": "requête tapée, mots-clés qui virent au bleu",
+        "technique": "frappe avec surlignage"
+      },
+      {
+        "t": "0:06.25-0:07.00",
+        "what": "résultats : FOUND, 1 EXACT MATCH · 0.04 S",
+        "technique": "résultat avec preuve chiffrée"
+      },
+      {
+        "t": "0:07.00-0:07.42",
+        "what": "la vignette quitte la liste et devient le héros au centre",
+        "technique": "élément partagé"
+      },
+      {
+        "t": "0:07.42-0:08.40",
+        "what": "orbite, 4 étiquettes, résumé IA tapé",
+        "technique": "étiquettes en orbite"
+      },
+      {
+        "t": "0:08.40-0:09.48",
+        "what": "zoom arrière sur un réseau de 9 nœuds, titre « Saves that find each other. », impulsions sur les liens",
+        "technique": "recul qui révèle un réseau"
+      },
+      {
+        "t": "0:09.48-0:09.88",
+        "what": "deux bandes diagonales balaient le cadre et laissent le marine",
+        "technique": "volet à deux bandes diagonales"
+      },
+      {
+        "t": "0:09.88-0:10.15",
+        "what": "6 im de marine vide puis coffre-fort sous voile gris flou",
+        "technique": "respiration sombre, entrée floue surexposée"
+      },
+      {
+        "t": "0:10.15-0:11.20",
+        "what": "« Your passwords, sealed. », mot de passe brouillé, compteur PBKDF2",
+        "technique": "brouillage de chiffrement, compteur qui roule"
+      },
+      {
+        "t": "0:11.23-0:11.60",
+        "what": "l'anse se ferme, badge SEALED, onde circulaire",
+        "technique": "cadenas qui se ferme avec onde"
+      },
+      {
+        "t": "0:11.73-0:12.30",
+        "what": "le texte sort à gauche, zoom accéléré dans le trou de serrure jusqu'au blanc",
+        "technique": "plongée dans le trou de serrure"
+      },
+      {
+        "t": "0:12.30-0:12.50",
+        "what": "blanc cassé vide, quasi-silence",
+        "technique": "silence avant le logo"
+      },
+      {
+        "t": "0:12.42-0:12.97",
+        "what": "barre du T lâchée, rebond, tige marque-page, poussière, lettres REZIO en cascade",
+        "technique": "chute avec rebond, lettres en cascade, soulignement balayé"
+      },
+      {
+        "t": "0:13.10-0:13.45",
+        "what": "« Your internet memory, fixed. » avec soulignement manuscrit",
+        "technique": "slogan avec trait tracé"
+      },
+      {
+        "t": "0:13.60-0:15.06",
+        "what": "bouton « Start saving — trezio.app », plateformes, reflet, maintien",
+        "technique": "carte de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 96 BPM confirmée par les attaques (0,325 / 0,639 / 0,952 / 9,706 / 10,96 / 11,273 / 12,527 s tombent sur temps ou demi-temps). 17 gestes clés sur 24 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 27 %) : changements de mot f19 (temps f20), f38 (demi-temps f38,75), f57 (temps f57,5), « somewhere. » f75 (f76,25), iris f149-152 (f151,25), « Save » posé f170 (f170), touche S f188 (f188,75), filé f282 (f282,5), résultats f375 (f376,25), vignette au pic f433 (f432,5), bandes f582 (f582,5), coffre f600 (f601,25), « sealed. » f620 (f620), cadenas f675 (f676,25), T f750 (f751,25), slogan f787 (f788,75), mentions f827 (f826,25). Ratés : implosion f120, recul f523, poussée f710, blanc f738, lettres REZIO f767 (mais pile sur le gonflement +7,8 dB à 12,78 s), bouton f817, reflet f852. Mesure image par image du son : l'image devance l'attaque de 1-2 im, de façon constante (délai d'encodage audio probable). Risers sans basses sous l'implosion (2,0-2,5 s, centroïde 3,9 kHz, basses 9 %) et sous la plongée (12,0-12,5 s, centroïde 5,7 kHz, basses 4 %), quasi-silence f741-f751 (−20 à −25 dB) avant l'impact du logo f752-753. Indice automatique : départs/demi-temps R = 0,61, p = 0,006 (p corrigé 0,024).",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte",
+      "drop"
+    ],
+    "style_match": "Électro à 96 BPM en croches piquées, risers et impacts : mots-chocs secs, zooms accélérés et rebonds courts suivent ce caractère ; seules les scènes d'interface flottent hors grille.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo et la stack n'est pas indiquée. Les gestes tombent sur des multiples de 0,3125 s (croche à 96 BPM) : iris 2,52 s, résultats 6,25 s, coffre 10,0 s, cadenas 11,23 s, T 12,5 s. Probable : timeline écrite sur une constante de tempo (ou sur une piste fournie), puis bande-son montée avec risers et impacts placés sur les deux plongées et un trou de silence avant le logo."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en 6 chapitres numérotés",
+      "name_en": "numbered chapter structure",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Problème (chaos, fond sombre) 0-2,5 s → Capture (clair) 2,5-4,7 s → Find 4,7-7,2 s → AI layer 7,2-9,9 s → Vault (sombre) 10,0-12,3 s → logo et appel à l'action (clair) 12,3-15 s. Chapitres ≈ 2,5 s = 1 mesure à 96 BPM. Compteur « 0X / 06 — NOM » en haut à droite. L'alternance sombre/clair code problème/solution puis sécurité/marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage de viseur de showreel",
+      "name_en": "showreel HUD overlay",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Coins de visée de 25 px à 2,5 % des bords ; « TREZIO — MOTION REEL 2026 » en mono 15 px (≈ 1,4 % H, +20 %) en haut à gauche ; chapitre en haut à droite, qui se brouille 6-8 im à chaque coupe (« Kg8 » → « 05 / 06 — VAULT » entre f600 et f608) ; timecode « TC 00:00:SS:FF » en bas à gauche ; « 1920×1080 · 60 FPS » en bas à droite ; barre de progression 1 px de 19 % à 81 % de la largeur qui se remplit. Couleurs inversées selon le fond.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f600.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots-chocs sur la croche avec aberration chromatique",
+      "name_en": "beat-locked word slams with chromatic aberration",
+      "t": "0:00-0:00.95",
+      "frames": "f0-f57",
+      "fps": 60,
+      "mechanics": "« 37 open tabs » f0, « 148 screenshots » f19, « 5 note apps » f38, sortie sèche f57 : un remplacement toutes les 19 im (0,317 s ≈ croche à 96 BPM, 18,75 im). Chaque mot entre à 137 % de sa largeur finale et se pose à 100 % en 5 im (137 → 120 → 110 → 105 → 102 → 100 %, expo.out), avec un dédoublement RVB rose/cyan d'environ 1,5 % de la largeur qui s'éteint en 4 im. Chiffre en pervenche #8494FC, mot en blanc, grotesque noire ≈ 11 % H, centré. Coupe franche entre les mots, aucun fondu. Chaque changement précède de 2 im l'attaque audible (f21, f40, f59).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f22.jpg",
+      "illus": {
+        "from": 17,
+        "to": 40,
+        "n": 6
+      }
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Nuage de fragments numériques en profondeur",
+      "name_en": "floating 3D clutter field",
+      "t": "0:00-0:02.30",
+      "frames": "f0-f138",
+      "fps": 60,
+      "mechanics": "Environ 30 fragments répartis en profondeur : onglets « New Tab », noms de fichiers en mono (« screenshot (148).png », « ideas_FINAL_2.txt », « passwords.xlsx ?? »), post-it jaunes #F6EA8A (« hunter2 (old) »), vignettes d'écran. Premiers plans flous (profondeur de champ), avancée lente de la caméra et rotations légères : énergie de mouvement constante de f79 à f100. Métaphore concrète du désordre numérique, lisible en une image.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée par masque, ligne par ligne",
+      "name_en": "line-by-line mask rise",
+      "t": "0:00.97-0:01.45",
+      "frames": "f58-f87",
+      "fps": 60,
+      "mechanics": "« I saved it » (blanc, grotesque) monte de derrière un masque horizontal en 10 im (f58-f68, ease-out), départ sur le temps f57,5. « somewhere. » (italique serif pervenche #A2AEFF, ≈ 1,3 fois plus grand) monte en 12 im à partir de f75 (demi-temps f76,25). Même procédé pour tous les titres : « Save » f162-f170 posé sur le temps f170, « Your passwords, » f606-f614, « sealed. » f613-f621 posé sur le temps f620.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-003-cut-f152.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion en un point",
+      "name_en": "implode to a point",
+      "t": "0:01.95-0:02.32",
+      "frames": "f117-f139",
+      "fps": 60,
+      "mechanics": "Tout le plan (titre et fragments) est aspiré vers le centre en 22 im : accélération de f117 à un pic de vitesse f129, puis décélération à mesure que tout rapetisse. Le titre bascule d'environ −10°, les post-it tournent. À f139 il ne reste qu'un point bleu #2B40EA (≈ 1 % H) avec halo, tenu 9 im (f139-f147, 0,15 s) pendant que le riser creuse les basses. Le départ (f120) ne tombe pas sur la grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-003-cut-f152.jpg",
+      "illus": {
+        "from": 117,
+        "to": 162,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris à trois disques décalés",
+      "name_en": "layered circular reveal",
+      "t": "0:02.47-0:02.70",
+      "frames": "f148-f162",
+      "fps": 60,
+      "mechanics": "Trois disques concentriques sortent du point : bleu clair #64A4F4 dès f149, bleu #2B40EA dès f151 (+2 im), blanc cassé #F4F4F4 dès f155 (+6 im). Chacun couvre le cadre en environ 7 im ; le dernier en ease-out (rayon +0,43, +0,36, +0,32, +0,22 H par image). Durée totale 14 im (0,23 s). Le disque bleu principal (f151-152) tombe sur le demi-temps f151,25 ; l'impact grave sonne à f153.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f152.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Verbe gras et objet en italique serif",
+      "name_en": "bold verb + italic serif object",
+      "t": "0:02.70-0:13.45",
+      "frames": "f162-f807",
+      "fps": 60,
+      "mechanics": "Même grammaire à chaque chapitre : surtitre mono capitales bleu (+25 % d'interlettrage, ≈ 1,7 % H), verbe en grotesque noire 800-900 très serrée (≈ −5 %, ≈ 12 % H), objet en italique serif à fort contraste (type Instrument Serif), bleu #2B40EA sur clair, pervenche #A2AEFF sur sombre, de taille égale ou supérieure (« sealed. » ≈ 16 % H). « Save anything. », « Find everything. », « Saves that find each other. », « Your passwords, sealed. », « fixed. ». Titres alignés à gauche à 8 % du bord ou centrés.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Raccourci pressé puis capture",
+      "name_en": "keystroke-triggered capture",
+      "t": "0:03.05-0:04.05",
+      "frames": "f183-f243",
+      "fps": 60,
+      "mechanics": "Trois touches blanches « ⌃ ⇧ S » (≈ 5 % H, coins arrondis, ombre). Vers f188 (demi-temps f188,75) la touche S passe au bleu plein et une onde circulaire de 1 px lavande s'élargit jusqu'à ≈ 25 % H en ≈ 0,4 s en s'effaçant ; « one keystroke, from any app » apparaît en mono. Quatre cartes (lien de diagramme, note texte, tableur, note vocale avec forme d'onde) arrivent en vol depuis le haut et la droite avec flou de mouvement et une inclinaison de 5 à 8° qui se redresse, décalées d'environ 0,15-0,2 s ; la vignette du diagramme se remplit en dernier.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Filé horizontal avec flou directionnel",
+      "name_en": "whip pan with directional motion blur",
+      "t": "0:04.63-0:05.00",
+      "frames": "f278-f300",
+      "fps": 60,
+      "mechanics": "La scène part vers la gauche sur environ 100 % de la largeur ; ease-in-out, départ franc f282 (temps f282,5), pic de vitesse f288-289, nouvelle scène « Find everything. » arrivée de la droite et posée à f300 (demi-temps f301,25). Traînée uniquement horizontale d'environ 20-30 % de la largeur au pic. 22 im (0,37 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f289.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Requête tapée avec mots-clés surlignés",
+      "name_en": "typed query with keyword highlight",
+      "t": "0:05.15-0:06.00",
+      "frames": "f309-f360",
+      "fps": 60,
+      "mechanics": "Barre de recherche de 62 % × 11 % du cadre, anneau de focus lavande, raccourci « CTRL K ». « that AI tool for diagrams » tapé à 1 caractère toutes les 2 im (30 caractères/s) avec curseur ; « AI » et « diagrams » virent au bleu #2B40EA pendant la frappe ; ligne d'état mono « SEARCHING 2,418 SAVES. ». Micro-action qui évite le temps mort sans bouger la composition.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Résultat trouvé avec preuve chiffrée",
+      "name_en": "search result with proof metrics",
+      "t": "0:06.25-0:07.00",
+      "frames": "f375-f420",
+      "fps": 60,
+      "mechanics": "À f375 (demi-temps f376,25) les résultats tombent : « 1 EXACT MATCH · 0.04 S · TITLES, NOTES & TRANSCRIPTS » en mono gris, carte avec badge « FOUND » bleu plein, « — saved 4 months ago » en italique serif, pastille verte « Exact match », mot « diagrams » surligné d'un rectangle lavande #E4E4F4. Deuxième résultat atténué à ≈ 40 % d'opacité pour hiérarchiser.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Élément partagé : la vignette devient le héros",
+      "name_en": "shared-element transition",
+      "t": "0:07.00-0:07.42",
+      "frames": "f420-f445",
+      "fps": 60,
+      "mechanics": "La vignette du résultat se détache, grossit d'environ ×1,6 et glisse au centre pendant que le reste de l'interface se floute et s'efface. 25 im (0,42 s), ease-in-out, pic de vitesse f433 sur le temps f432,5 (attaque audio 7,21 s). La carte posée occupe ≈ 22 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Étiquettes en orbite et résumé IA tapé",
+      "name_en": "orbiting tags and typed AI summary",
+      "t": "0:07.55-0:08.40",
+      "frames": "f453-f504",
+      "fps": 60,
+      "mechanics": "Cercle d'orbite de 1 px autour de la carte ; 4 étiquettes à pastille (« AI tools » bleu, « Diagrams » ambre, « Research » vert, « Reading list » rose, teintes probables) apparaissent avec ≈ 10 im d'écart (f456, f467, f476, f487), sans suivre la grille ; boîte « AI SUMMARY » qui tape « Turns plain text into flowcharts & mind maps. ». Texte des étiquettes ≈ 1,2 % H : illisible au passage.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul qui révèle un réseau",
+      "name_en": "pull-back network reveal",
+      "t": "0:08.40-0:09.48",
+      "frames": "f505-f568",
+      "fps": 60,
+      "mechanics": "Zoom arrière : la carte passe d'environ 22 % à 13 % de la largeur (×0,6) en 40 im, ease-in-out, pic f523 (hors grille). Huit nœuds satellites (« Dataset registry », « Sparse attention paper », « Glacier melt models »…) apparaissent reliés au centre par des traits de 1 px #C8CCF0 ; le titre « Saves that find each other. » descend par masque en haut. Puis de petits points sombres voyagent le long des liens (f546-f566) pour garder le plan vivant.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet à deux bandes diagonales",
+      "name_en": "double diagonal stripe wipe",
+      "t": "0:09.48-0:09.88",
+      "frames": "f569-f592",
+      "fps": 60,
+      "mechanics": "Deux bandes parallèles inclinées d'environ 25° (bleu clair #64A4F4 ≈ 18 % de la largeur, puis bleu #2B40EA ≈ 20 %) entrent en bas à droite et balaient le cadre vers la gauche ; derrière la seconde apparaît le marine #0C0C1C de la scène suivante. 23 im (0,38 s), départ franc f582 sur le temps f582,5, pic de vitesse f584-585.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f600.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Respiration sombre puis entrée floue surexposée",
+      "name_en": "dark beat then defocused overexposed entrance",
+      "t": "0:09.88-0:10.15",
+      "frames": "f593-f609",
+      "fps": 60,
+      "mechanics": "6 im de fond marine vide (f593-f598). À f600 (demi-temps f601,25) la scène du coffre apparaît d'un coup sous un voile gris clair (≈ +25 % de luminance) et un flou d'environ 15 px, qui se résorbent en 8 im (net à f608). Le voile gris donne un rendu terne plutôt qu'un vrai flash.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f600.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Brouillage de chiffrement de gauche à droite",
+      "name_en": "left-to-right scramble decrypt",
+      "t": "0:10.50-0:11.20",
+      "frames": "f630-f672",
+      "fps": 60,
+      "mechanics": "Le mot de passe « correct-horse-battery-staple » (mono blanc) est remplacé de gauche à droite par des caractères aléatoires pervenche qui se figent en « q7Fz9+Lk2Vb0XwR1mT8cJ4hN6yvT » ; le front avance d'environ 4 caractères toutes les 8 im, les caractères de tête sont retirés au sort à chaque image. L'effet a un sens (chiffrement). Même brouillage, plus court, sur le libellé de chapitre du HUD.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'itérations qui roule",
+      "name_en": "rolling counter",
+      "t": "0:10.40-0:11.30",
+      "frames": "f624-f678",
+      "fps": 60,
+      "mechanics": "« PBKDF2 × 112,178 iterations » → 588,622 → 598,578 → 600,000 en ≈ 0,9 s, ease-out (les chiffres ralentissent avant 600 000). Chiffre en blanc, reste en gris mono, sous la ligne « AES-256-GCM · encrypted on your device ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadenas qui se ferme avec onde",
+      "name_en": "lock snap with ripple ring",
+      "t": "0:11.25-0:11.60",
+      "frames": "f675-f696",
+      "fps": 60,
+      "mechanics": "À f675 l'anse descend d'un coup (1-2 im), un badge « ✓ SEALED » apparaît sous le cadenas et un anneau fin s'élargit d'environ 20 % à 35 % H en s'effaçant (≈ 20 im). Fermeture 1 im avant le demi-temps f676,25 ; attaque audio à 11,273 s (f676). Cadenas : anse en dégradé argent-lavande, corps bleu #2B40EA arrondi, trou de serrure blanc.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Coffre en verre dépoli sur ciel étoilé",
+      "name_en": "frosted glass vault card on starfield",
+      "t": "0:10.00-0:12.30",
+      "frames": "f600-f738",
+      "fps": 60,
+      "mechanics": "Carte d'identifiants translucide (≈ 6 % de blanc, bord 1 px ≈ 12 % de blanc, coins ≈ 24 px), champs encastrés sombres, libellés mono espacés. Fond marine #0C0C1C avec halo radial bleu #1C2C7C derrière le cadenas, étoiles de 1-2 px à ≈ 40 % d'opacité, grille très pâle. Le texte chiffré passe en pervenche.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le trou de serrure",
+      "name_en": "keyhole dive",
+      "t": "0:11.73-0:12.30",
+      "frames": "f704-f738",
+      "fps": 60,
+      "mechanics": "La colonne de texte glisse hors champ à gauche (f704-f721) pendant que le cadenas grossit ; dès f726 le zoom accélère (≈ ×1,25 par image à la fin : cadenas ≈ 18 % H à f721, corps plein cadre à f732, trou de serrure plein cadre à f735-737). Le blanc lumineux du trou devient à f738 le fond blanc cassé #F4F4F4 du plan logo : raccord par le glyphe, sans coupe visible. 34 im (0,57 s) sous un riser aigu. La coupe blanche f738 tombe 5,5 im après le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f736.jpg",
+      "illus": {
+        "from": 721,
+        "to": 738,
+        "n": 6
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Riser sous les plongées, impact à l'arrivée",
+      "name_en": "riser into impact",
+      "t": "0:02.00-0:02.55",
+      "frames": "f120-f153",
+      "fps": 60,
+      "mechanics": "Les deux grandes transitions reposent sur un souffle aigu sans basses : 2,0-2,5 s (basses < 150 Hz à 9 % de l'énergie, centroïde 3,9 kHz) sous l'implosion, 12,0-12,5 s (basses 4 %, centroïde 5,7 kHz) sous la plongée dans la serrure. Chacun se résout par un impact grave : f153 (−9 dB) sur l'iris, f752-753 (−8 dB) sur la chute du T. Tension visuelle et tension sonore montent ensemble.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-003-cut-f152.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant le logo",
+      "name_en": "silence before the drop",
+      "t": "0:12.30-0:12.55",
+      "frames": "f738-f753",
+      "fps": 60,
+      "mechanics": "Après le blanc (f738), le son retombe à −20/−25 dB pendant 11 im (f741-f751, 0,18 s) ; la barre du T se pose à f750 et l'impact sonne à f752-753 (−8 dB, basses +13 dB). Le gonflement mesuré (+7,8 dB à 12,78 s) tombe sur la montée des lettres REZIO (pic f767).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f736.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Image calée 1-2 im avant l'attaque audible",
+      "name_en": "visual lead on audio attacks",
+      "t": "0:00.32-0:12.55",
+      "frames": "f19-f753",
+      "fps": 60,
+      "mechanics": "Mesuré image par image : changements de mots f19, f38, f57 contre attaques audio f21, f40, f59 ; disque bleu de l'iris f151-152 contre impact f153 ; T posé f750 contre impact f752-753 ; cadenas f675 contre attaque f676. Avance constante de 1-2 im (17-33 ms). Le même écart constant (+2 à +2,5 im) se retrouve sur ajith-io-b5626e, dont l'image est exactement sur la grille du code : probablement le délai d'encodage audio (AAC ≈ 40 ms) plutôt qu'un choix. Règle utile malgré tout : un son qui arrive jusqu'à ≈ 40 ms après l'image reste perçu synchrone, l'inverse se voit.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f22.jpg, microM-003-cut-f152.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Grille de croches à 96 BPM",
+      "name_en": "eighth-note timing grid",
+      "t": "0:00-0:13.80",
+      "frames": "f0-f827",
+      "fps": 60,
+      "mechanics": "Les gestes structurants tombent sur des multiples de 0,3125 s (croche à 96 BPM ; 8 croches = 2,5 s = 1 mesure ; 15 s = 6 mesures exactes, autant que de chapitres) : iris 2,52 s, « Save » posé 2,83 s, filé 4,70 s, résultats 6,25 s, vignette 7,22 s, bandes 9,70 s, coffre 10,0 s, cadenas 11,25 s, T 12,5 s, slogan 13,13 s, mentions 13,78 s. 17 gestes clés sur 24 à ±2 im (hasard ≈ 27 %). Les micro-actions (frappe, étiquettes, impulsions) restent libres.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Barre lâchée, rebond et poussière",
+      "name_en": "dropped crossbar with bounce and dust",
+      "t": "0:12.42-0:12.60",
+      "frames": "f745-f756",
+      "fps": 60,
+      "mechanics": "La barre marine arrondie du T tombe du bord haut à ≈ 30 % H en 6 im avec des pas croissants (2, 4, 7, 7, 8 % H : accélération de chute), rebondit d'environ 3 % H à f751 et se pose à f752-753 ; la tige bleue en marque-page pousse vers le bas en 6 im (f751-f756) ; de petites particules sombres sont projetées à gauche à l'impact (f756-f783).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f736.jpg, extra-03.jpg",
+      "illus": {
+        "from": 744,
+        "to": 760,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres en cascade avec soulignement balayé",
+      "name_en": "staggered letter rise with underline sweep",
+      "t": "0:12.65-0:13.15",
+      "frames": "f759-f789",
+      "fps": 60,
+      "mechanics": "« REZIO » monte d'un masque à la ligne de base, une lettre toutes les 3 im (R f759, E f762, Z f765, I f768, O f771), environ 6 im chacune ; un trait bleu de 2 px se dessine dessous de gauche à droite en suivant les lettres, puis se rétracte vers la droite (f777-f789) et disparaît. Le pic de mouvement (f767) coïncide avec le gonflement musical de 12,78 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo-métaphore : le T est un marque-page",
+      "name_en": "bookmark-shaped logo letter",
+      "t": "0:12.50-0:15.06",
+      "frames": "f750-f899",
+      "fps": 60,
+      "mechanics": "Fût du T en ruban bleu #2B40EA terminé par une encoche en V, barre marine #0C0C1C ; « TREZIO » en grotesque géométrique grasse ≈ 16 % H, interlettrage large, centré à ≈ 35 % de la hauteur. Le geste « sauvegarder » est inscrit dans la lettre et se construit à l'écran (barre, puis tige).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan avec soulignement manuscrit",
+      "name_en": "tagline with hand-drawn underline",
+      "t": "0:13.10-0:13.45",
+      "frames": "f786-f807",
+      "fps": 60,
+      "mechanics": "« Your internet memory, » (grotesque grasse ≈ 4,5 % H) monte à partir de f786-788 (demi-temps f788,75) ; « fixed. » en italique serif bleu arrive avec un trait courbe tracé dessous (draw-on de gauche à droite), posé vers f804-807 (temps f807,5).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : bouton, plateformes, reflet",
+      "name_en": "end card with CTA",
+      "t": "0:13.60-0:15.06",
+      "frames": "f816-f899",
+      "fps": 60,
+      "mechanics": "Bouton pilule bleu « Start saving — trezio.app » (≈ 25 % de la largeur × 8 % H, ombre portée bleue) qui s'ouvre d'un trait en 6 im (f817-f822), hors grille ; ligne mono grise « WEB APP · CHROME EXTENSION · ANDROID » (+30 % d'interlettrage) en fondu f827-f833 (demi-temps f826,25) ; reflet diagonal sur le bouton f852-f858 puis sur le T vers f869-f872 ; ensuite 0,45 s immobile jusqu'à f899.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Les transitions portent la couleur de marque",
+      "name_en": "brand colors carried by transitions",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Les deux bleus (#64A4F4, #2B40EA) n'apparaissent en aplat que pendant les transitions : disques de l'iris, bandes diagonales, corps du cadenas qui remplit le cadre. Les scènes restent en marine #0C0C1C ou blanc cassé #F4F4F4 avec un seul accent bleu (italique, badge, bouton). Résultat : chaque passage est un « flash de marque » sans saturer les plans.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f152.jpg, microM-005-cut-f600.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond clair à taches lavande et grille fine",
+      "name_en": "soft lavender blob background with faint grid",
+      "t": "0:02.70-0:09.88",
+      "frames": "f162-f592",
+      "fps": 60,
+      "mechanics": "Blanc cassé #F4F4F4 avec 2-3 taches lavande floues #E4E4F4 (40 à 60 % de la largeur) qui dérivent lentement, grille de 1 px très pâle (pas ≈ 80 px). Même fond pour le logo final. Variante discrète du dégradé fluide : donne de la profondeur sans voler l'attention.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Prompt d'une phrase : nom du produit, durée, ton « showreel ». Aucune description : les 4 fonctions, les textes, le slogan « Your internet memory, fixed. » et le logo sont inventés par Claude, ou tirés d'un contexte non montré (dépôt, site), probable."
+    },
+    {
+      "kind": "direction",
+      "insight": "« shows what an incredible motion designer you are » a poussé Claude à changer de transition à chaque chapitre (6 procédés différents) et à ajouter un habillage « MOTION REEL 2026 » avec timecode : la vidéo démontre un savoir-faire autant qu'elle vend."
+    },
+    {
+      "kind": "structure",
+      "insight": "96 BPM est le tempo qui fait tomber 15 s sur 6 mesures exactes de 2,5 s : 6 chapitres pour 6 mesures, avec compteur « 0X / 06 » ; 3 des 5 passages tombent pile sur une barre de mesure (2,52 s, 10,0 s, 12,5 s). Pour reproduire : « 1 chapitre par mesure, 1 transition motivée par chapitre, 1 titre verbe + objet »."
+    },
+    {
+      "kind": "build",
+      "insight": "La synchro n'est pas demandée mais réelle : gestes à des multiples de 0,3125 s, risers sous les deux plongées, silence avant le logo. Pour l'obtenir à coup sûr, écrire le BPM dans le prompt et demander une bande-son au même arrangement que le montage."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité : étiquettes, résumé IA et nœuds du graphe à ≈ 1 % H passent sans être lus. Préciser une taille minimale (≥ 3 % H) et un nombre maximal de mots par écran."
+    },
+    {
+      "kind": "banned",
+      "insight": "Aucun interdit : Claude a gardé ses réflexes (habillage HUD de showreel, duo grotesque noire + italique serif, reflet sur le bouton). Les exclure explicitement si on veut une signature propre."
+    }
+  ],
+  "steal": [
+    "Mots-chocs sur la croche : un mot toutes les 18,75 im (96 BPM), entrée à 137 % → 100 % en 5 im, aberration RVB éteinte en 4 im.",
+    "Implosion → point → iris : tout aspirer au centre en 22 im, tenir le point 9 im, puis 3 disques de couleur décalés de 2 à 4 im.",
+    "Plongée dans un glyphe : zoom accéléré (×1,25 par image) dans le trou de serrure, dont le blanc devient le fond suivant ; 0,18 s de silence avant l'impact.",
+    "Logo qui tombe : barre lâchée en 6 im en accélérant, rebond de 3 % H, tige qui pousse en 6 im, poussière, lettres à 3 im d'écart.",
+    "Caler l'image exactement sur la grille du tempo : un son 1-2 im plus tard (délai d'encodage) reste perçu synchrone ; jamais l'image après le son."
+  ],
+  "flaws": [
+    "Textes d'interface trop petits pour 15 s : étiquettes, résumé IA et nœuds du graphe ≈ 1 % H, illisibles au passage.",
+    "Deux vrais temps morts : grille de cartes figée 0,6 s (4,05-4,65 s) et carte de fin animée par deux reflets seulement (1,1 s).",
+    "Entrée du coffre sous un voile gris flou : rendu terne, moins net qu'un flash blanc ou une coupe franche.",
+    "Habillage « MOTION REEL 2026 » (timecode, résolution, coins de visée) : tic de showreel IA qui charge le cadre.",
+    "Duo grotesque noire + italique serif bleue sur chaque titre : élégant mais devenu un réflexe des vidéos IA."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : implosion → point → iris à 3 disques, plongée dans le trou de serrure, chute du T avec rebond et poussière, et une synchro mesurable à l'image près (gestes sur la croche, risers, 0,18 s de silence avant le logo) à décortiquer en continu à 60 fps."
+  }
+}

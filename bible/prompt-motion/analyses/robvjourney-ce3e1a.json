@@ -1,0 +1,516 @@
+{
+  "slug": "robvjourney-ce3e1a",
+  "title": "Nohandslabs brand promo",
+  "handle": "@robvjourney",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système citron sur noir très tenu, coupes calées 4 im avant la grosse caisse, slogans un par temps, morphing de particules main → 95 %. Perd un point : intro lente en micro-texte, interfaces illisibles.",
+  "summary": "Promo de 15 s de nohandslabs, studio d'entreprises gérées par des agents IA. Démarrage de terminal, main en pixels qui se défait en particules puis se reforme en « 95% », slogans « No founders / No teams / No meetings / NO HANDS » un par temps, tableau de bord d'agents, portefeuille, logo. Force : montage verrouillé sur un 120 BPM. Faiblesse : micro-textes.",
+  "prompt_vs_result": [
+    "Le prompt ne donne qu'une URL, la durée (15 s) et une ambition : « Go ALL OUT », « use everything you've got ». Aucun message, aucune structure, aucune musique, aucune palette.",
+    "Claude a tout décidé à partir du site (probable) : promesse « Companies that build themselves », chiffre 95 % IA / 5 % humain, slogans, portefeuille de 5 sociétés, terminal, palette citron sur noir, particules, glitchs, bande-son 120 BPM et montage calé dessus.",
+    "« Go ALL OUT » a produit neuf scènes et presque toutes les techniques possibles en 15 s, au prix des micro-textes. Il aurait fallu imposer une accroche visible dès la première seconde et une taille minimale de texte."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0B0D0B",
+        "role": "fond quasi noir, légèrement vert"
+      },
+      {
+        "hex": "#151A15",
+        "role": "trame de grille fine du fond, cartes"
+      },
+      {
+        "hex": "#C5F23C",
+        "role": "vert citron de marque : mot-clé, matrices de points, rubans, curseur"
+      },
+      {
+        "hex": "#F2F2F0",
+        "role": "texte principal blanc cassé"
+      },
+      {
+        "hex": "#E8EAEC",
+        "role": "fond clair de « No meetings. » et flash de 13 s"
+      },
+      {
+        "hex": "#6E8E1E",
+        "role": "flash olive pleine image à 2 s"
+      },
+      {
+        "hex": "#8A8F88",
+        "role": "texte secondaire gris (« More on the way. », sous-titres)"
+      },
+      {
+        "hex": "#555955",
+        "role": "flashs gris de transition (f541, f660)"
+      }
+    ],
+    "type": "Grotesque géométrique moyenne (probable Space Grotesk), titres ≈8 % de la hauteur par ligne, mot-clé citron ; matrice de points pour « 95% » (≈30 %) et « NO HANDS » (≈22 %) ; mono pour terminal et HUD.",
+    "texture": "Fond noir à grille fine et vignette ; particules carrées citron ; tranches glitch horizontales avec aberration chromatique ; flou de mouvement d'une image sur les entrées de mots ; halo vert diffus derrière le logo final ; strobe de teinte verte avant le flash final.",
+    "style": "Terminal hacker, citron sur noir",
+    "coherence": "Tout part du logo : une main en pixels dont les carrés s'envolent. Ces carrés deviennent les particules, la matrice du « 95% », celle de « NO HANDS », puis reforment la main du logo. Citron unique, mono + grotesque, HUD qui répète « 95 % AI / 5 % HUMAN ». Ce qui casse : interfaces et HUD trop petits, deux flashs gris ternes."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Le dossier annonce 80 BPM : faux (rapport 2/3). Sur la piste : grosse caisse toutes les 0,5 s à x,08 / x,58 s et charleston en doubles-croches (0,125 s) de 2,08 à 12,6 s, soit 120 BPM. Les 9 coupes franches tombent sur des multiples de 0,5 s (f120, f300, f420, f450, f480, f510, f540, f660, f780) et précèdent toutes la grosse caisse de 4 à 5 im (≈75 ms). De 7,0 à 9,0 s, un plan par temps (30 im). L'intro 0-1,6 s est lente : texte de terminal à ≈1,5 % de la hauteur, seul le curseur et les lignes bougent (maintien mesuré 0,07-1,6 s). Fin tenue 14,1-15,05 s (normal). Ailleurs, un geste toutes les 0,25 à 0,5 s.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.75",
+        "what": "Curseur seul, puis « $ nohandslabs --boot » tapé à ≈2 im par caractère",
+        "technique": "frappe de terminal"
+      },
+      {
+        "t": "0:00.75-0:01.60",
+        "what": "Sept lignes de démarrage « [ ok ] kernel … autonomous », « agent.intake … online », « headcount … 0 », « > no hands required », une toutes les 6 im, un tic sonore par ligne",
+        "technique": "liste de boot + SFX par ligne"
+      },
+      {
+        "t": "0:01.65-0:02.00",
+        "what": "L'écran s'effondre en une ligne horizontale verte avec tranches glitch",
+        "technique": "extinction CRT"
+      },
+      {
+        "t": "0:02.00-0:02.40",
+        "what": "Flash olive (drop à 2,08 s), la ligne éclate en nuage de particules qui se rassemble en main pixelisée à droite ; « Companies » se tape",
+        "technique": "particules qui forment le logo"
+      },
+      {
+        "t": "0:02.50-0:04.50",
+        "what": "« Companies / that build / themselves█ », un groupe de mots par temps, curseur qui clignote au tempo ; sous-titre tapé mot à mot",
+        "technique": "frappe calée sur les temps"
+      },
+      {
+        "t": "0:04.60-0:05.10",
+        "what": "Le texte se tranche en glitch, la main se défait en flux de particules ; flash gris à 5,0 s",
+        "technique": "sortie glitch + dissolution"
+      },
+      {
+        "t": "0:05.10-0:06.90",
+        "what": "Les particules se reforment en « 95% » à matrice de points ; « built by AI. », barre 95/5, « 5% by humans. »",
+        "technique": "morphing de particules + donnée"
+      },
+      {
+        "t": "0:06.80-0:07.00",
+        "what": "Le 95 % se désagrège avec des tranches glitch",
+        "technique": "désintégration"
+      },
+      {
+        "t": "0:07.00-0:09.00",
+        "what": "« No founders standing watch. » (fond citron), « No teams clocking in. » (noir), « No meetings. » (blanc), « NO HANDS » géant (noir) : un plan par temps, rubans diagonaux défilants",
+        "technique": "rafale de slogans un par temps"
+      },
+      {
+        "t": "0:09.00-0:11.00",
+        "what": "Flash gris, « The company / is the system. », journal d'agents qui passent de queued à running, compteur 0 → 12 833, bouton « sign-off ✓ »",
+        "technique": "tableau de bord vivant"
+      },
+      {
+        "t": "0:11.00-0:12.75",
+        "what": "Glitch, carte 01 qui s'abat, « Two live. More on the way. », carrousel de 5 sociétés qui défile vers la gauche",
+        "technique": "carrousel de cartes"
+      },
+      {
+        "t": "0:12.75-0:13.00",
+        "what": "Strobe de teinte verte et aberration chromatique pendant la coupure musicale",
+        "technique": "strobe de tension"
+      },
+      {
+        "t": "0:13.00-0:13.80",
+        "what": "Flash blanc (coup le plus fort à 13,07 s), anneau de particules qui se resserre ; « n » commence à se taper",
+        "technique": "flash + rassemblement de particules"
+      },
+      {
+        "t": "0:13.80-0:15.10",
+        "what": "Logo main + « nohandslabs· », tagline tapée, boutons « nohandslabs.com ↗ [ join waitlist ] x.com/nohandslabs », note « // built 95% by AI. finished by hand. »",
+        "technique": "carte de fin avec appel à l'action"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille mesurée sur la piste (les barres des planches suivent une grille 80 BPM fausse) : 120 BPM, grosse caisse à x,08 / x,58 s, charleston en doubles-croches. Les 9 coupes franches sur 9 précèdent une frappe de 4 à 5 im : f120 → f125, f300 → f305, f420 → f425, f450 → f455, f480 → f485, f510 → f515, f540 → f545, f660 → f665, f780 → f784. Sur 27 gestes clés (coupes, entrées de mots, atterrissages), 22 tombent à ±2 im d'un multiple de 15 im (hasard 33 %). Intro : tics médium-aigus à f56, f61, f68, f74, f79, f86, 3-4 im après chaque ligne de boot (f52, f58, f64, f70, f76, f82). Structure : montée 0-2 s (-43 → -15 dB), drop à 2,08 s sur le flash olive, coupure 12,5-12,9 s (-20 dB) pendant le strobe, coup le plus fort à 13,07 s sur le flash blanc, fondu 14,25-15 s. Même gabarit sonore que oliahmed205-3e31c4 (120 BPM, grosse caisse à x,08, drop 2,08 s, coup 13,07 s).",
+    "synced": [
+      "coupes",
+      "texte",
+      "apparitions",
+      "flashs",
+      "drop",
+      "couleur",
+      "pulsations"
+    ],
+    "style_match": "Électro 120 BPM à charleston serré, énergique et mécanique : colle à l'esthétique terminal, aux glitchs secs et aux slogans en rafale.",
+    "how_built": "Le prompt ne parle pas de musique. Coupes posées sur des secondes et demi-secondes rondes, bande-son 120 BPM dont les temps tombent sur ces mêmes instants, tics placés sur chaque ligne de boot : bande-son construite sur la timeline de l'image (probable synthèse en code). L'avance constante de 4-5 im de l'image, identique dans oliahmed205-3e31c4, signe probablement un décalage du pipeline audio (≈75 ms)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture en démarrage de terminal",
+      "name_en": "Terminal boot cold open",
+      "t": "0:00-0:01.60",
+      "frames": "f0-f96",
+      "fps": 60,
+      "mechanics": "Prompt « $ nohandslabs --boot » en haut à gauche (texte mono ≈1,5 % de la hauteur), puis sept lignes d'état avec « [ ok ] » vert et pointillés de remplissage : kernel autonomous, agents online, « headcount … 0 », « > no hands required ». Le concept (une entreprise sans mains) est posé dès la première seconde, mais en micro-texte sur un écran presque vide pendant 1,6 s : accroche faible sur un fil social.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe de terminal caractère par caractère",
+      "name_en": "Terminal type-on",
+      "t": "0:00.50-0:01.50",
+      "frames": "f30-f90",
+      "fps": 60,
+      "mechanics": "« --boot » tapé à 2 im par caractère (- f35, -- f37, --b f39, --bo f41, --boo f43, --boot f44), curseur bloc citron en fin de ligne, retour chariot à f45. Les lignes suivantes apparaissent entières en 1 im (fondu de 1-2 im), une toutes les 6 im (f52, f58, f64, f70, f76, f82).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Extinction CRT en ligne puis flash et éclatement en particules",
+      "name_en": "CRT collapse to line, flash, particle burst",
+      "t": "0:01.65-0:02.10",
+      "frames": "f99-f126",
+      "fps": 60,
+      "mechanics": "L'écran se réduit à une ligne horizontale verte centrale (≈60 % de la largeur) traversée de tranches glitch qui sautent d'une image à l'autre (f108-f119). À f120, flash olive plein cadre (#6E8E1E) où la ligne brille ; de f121 à f126 la ligne se brise en particules réparties en bande horizontale, le fond redevient noir en ≈6 im. Le drop musical tombe à f125.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f123.jpg",
+      "illus": {
+        "from": 108,
+        "to": 143,
+        "n": 6
+      }
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Les particules se rassemblent en logo (main pixelisée)",
+      "name_en": "Particles assemble into logo mark",
+      "t": "0:02.05-0:02.40",
+      "frames": "f123-f143",
+      "fps": 60,
+      "mechanics": "Nuage de ≈600 carrés citron étalé sur ≈70 % de la largeur ; il se contracte vers la droite (centre ≈72 % de la largeur) en ≈20 im, ease-out, et prend la silhouette d'une main ouverte (≈45 % de la hauteur) faite de petits carrés. Pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f123.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Main en pixels dont les carrés s'envolent du bout des doigts",
+      "name_en": "Pixel hand shedding squares",
+      "t": "0:02.40-0:04.60",
+      "frames": "f144-f276",
+      "fps": 60,
+      "mechanics": "Les carrés du haut des doigts se détachent et montent en diagonale vers le haut à droite, de plus en plus gros et espacés ; certains clignotent. Motif « la main lâche » (légende HUD « FIG.01 — THE HAND LETS GO »). Le logo devient l'illustration de la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre tapé un groupe de mots par temps, curseur au tempo",
+      "name_en": "Beat-paced headline type-on with tempo cursor",
+      "t": "0:02.00-0:04.20",
+      "frames": "f121-f252",
+      "fps": 60,
+      "mechanics": "« Companies » f121-f132, « that build » f151-f166, « themselves » f181-f194 : chaque ligne démarre sur un temps (f120, f150, f180), tapée à ≈1,4 im par lettre. Curseur bloc citron qui clignote sur une période de 30 im (allumé f210-f224, éteint f226-f238, allumé f240-f252) : il bat la mesure à 120 BPM. Sous-titre « Businesses that run on AI agents instead of headcount. » tapé mot à mot à ≈3 im par mot (f206-f236).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-move-f123.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre blanc + mot-clé citron, étiquette mono « // »",
+      "name_en": "White headline with accent keyword",
+      "t": "0:02.00-0:05.00",
+      "frames": "f120-f300",
+      "fps": 60,
+      "mechanics": "Trois lignes en grotesque moyenne bas de casse, ≈8 % de la hauteur chacune, alignées à gauche à ≈5 % de la largeur ; « themselves » seul en citron #C5F23C. Au-dessus, « // venture builder for autonomous companies » en mono ≈1 %. Sous-titre gris avec « AI agents » en blanc gras.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie en tranches glitch + main dissoute en flux de particules",
+      "name_en": "Glitch slice exit with particle dissolve",
+      "t": "0:04.70-0:05.10",
+      "frames": "f283-f306",
+      "fps": 60,
+      "mechanics": "Le texte se découpe en bandes horizontales décalées de 1-3 % de la largeur, avec liserés citron et gris, et s'efface par le haut (f283-f299). La main s'est déjà effritée en traînée de particules vers le bas à droite. Flash gris à bandes à f300, 2 im noirs avec particules (f302-f303).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f295.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Morphing de particules : la main devient « 95% »",
+      "name_en": "Particle morph from logo to number",
+      "t": "0:05.05-0:05.50",
+      "frames": "f303-f330",
+      "fps": 60,
+      "mechanics": "Les mêmes carrés repartent du bas à droite, traversent l'écran vers le centre-gauche en nuage (f304-f315), puis se rangent en chiffres « 95% » à matrice de points (≈30 % de la hauteur) vers f330. Ease-in-out, ≈27 im. Le spectateur voit la main se transformer en chiffre.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f295.jpg, overview-01.jpg",
+      "illus": {
+        "from": 280,
+        "to": 330,
+        "n": 6
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chiffre-choc en matrice de points + barre 95/5",
+      "name_en": "Dot-matrix stat with split bar",
+      "t": "0:05.50-0:06.90",
+      "frames": "f330-f414",
+      "fps": 60,
+      "mechanics": "« 95% » en carrés citron lumineux, « built by AI. » en blanc dessous (≈5 %), barre horizontale qui se remplit en citron jusqu'à 95 % avec un segment blanc pour 5 %, légendes mono « AI 95 / HUMAN 05 », puis « 5% by humans. » en gris à droite (≈6,5 s) et une note « // we're not chasing zero. the 5% is where the quality lives. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Désintégration du chiffre et coupe sur fond citron",
+      "name_en": "Number disintegration to color cut",
+      "t": "0:06.80-0:07.00",
+      "frames": "f408-f420",
+      "fps": 60,
+      "mechanics": "Les points du « 95% » se dispersent (f411-f415), tranches glitch grises à f408-f409 et f416-f419, le texte « built by AI. » se décale horizontalement ; coupe sèche sur plein citron à f420, 5 im avant la grosse caisse f425.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f420.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rafale de slogans négatifs, un plan par temps",
+      "name_en": "One-slogan-per-beat negation run",
+      "t": "0:07.00-0:09.00",
+      "frames": "f420-f540",
+      "fps": 60,
+      "mechanics": "Quatre plans de 30 im exactement (0,5 s = 1 temps) : « No founders standing watch. » (f420), « No teams clocking in. » (f450), « No meetings. » (f480), « NO HANDS » (f510). Chaque mot entre en 1 im avec flou de mouvement horizontal puis net à l'image suivante (« No founders » flou f421, net f422 ; « standing watch. » flou f425, net f426) : la 2e ligne arrive 4 im après la 1re. Texte ≈8 % de la hauteur, aligné à gauche. Grammaire 1600 : un message par temps, aucun temps mort.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f420.jpg, microM-004-cut-f480.jpg, extra-03.jpg",
+      "illus": {
+        "from": 418,
+        "to": 515,
+        "n": 8
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion de palette à chaque slogan",
+      "name_en": "Palette swap per beat",
+      "t": "0:07.00-0:09.00",
+      "frames": "f420-f540",
+      "fps": 60,
+      "mechanics": "Fond citron / texte noir (f420), fond noir / texte blanc et « No » citron (f450), fond blanc cassé #E8EAEC / texte noir (f480), fond noir / matrice citron (f510). Le ruban change aussi (noir, citron, noir, citron + blanc). Chaque temps est un flash de couleur sans effet ajouté.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Rubans diagonaux défilants (bande de chantier)",
+      "name_en": "Diagonal scrolling marquee tape",
+      "t": "0:07.00-0:09.00",
+      "frames": "f420-f540",
+      "fps": 60,
+      "mechanics": "Bande pleine largeur inclinée d'environ −5° à −8°, haute de ≈4 % de la hauteur, texte mono capitales « /// NO TEAMS CLOCKING IN /// 95% AI / 5% HUMAN /// NO HANDS /// NO FOUNDERS STANDING WATCH » qui défile vers la gauche en continu. Sur « NO HANDS », deux bandes se croisent (citron en haut, blanche en bas, inclinaisons opposées).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f420.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mélange police LED et grotesque dans un même slogan",
+      "name_en": "Pixel font accent within grotesk line",
+      "t": "0:07.00-0:09.00",
+      "frames": "f420-f540",
+      "fps": 60,
+      "mechanics": "Le mot « No » est composé en police à matrice de points (style afficheur LED), le reste en grotesque : la négation porte la signature visuelle de la marque. « NO HANDS » est entièrement en matrice de points citron, ≈22 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f480.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "« NO HANDS » qui entre trop grand puis se pose, avec scintillement de couleur",
+      "name_en": "Oversize punch-in and settle with color flicker",
+      "t": "0:08.50-0:09.00",
+      "frames": "f510-f540",
+      "fps": 60,
+      "mechanics": "À f510-f511 le mot déborde des deux bords (≈115 % de la largeur), puis rétrécit à ≈90 % en 12 im (f511-f523), ease-out, sans dépassement. Ensuite glitch : lettres doublées en aberration chromatique (f527), passage au blanc (f529-f531), retour au citron (f533), tranches (f537), blanc (f539), flash gris f541. Le débordement initial ne dure que 2 im : pas de mot coupé lisible.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash gris à bandes entre sections",
+      "name_en": "Grey banded glitch flash",
+      "t": "0:09.00-0:09.05",
+      "frames": "f540-f543",
+      "fps": 60,
+      "mechanics": "Plein cadre gris moyen (#555955) barré de lignes horizontales claires et citron, 1-2 im, utilisé à f300, f540 et f660. Ponctue la coupe mais paraît terne à côté des flashs couleur.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-005-move-f663.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tableau de bord d'agents vivant : statuts en cascade, compteur qui roule",
+      "name_en": "Live agent dashboard with status cascade",
+      "t": "0:09.05-0:11.00",
+      "frames": "f543-f660",
+      "fps": 60,
+      "mechanics": "Titre « The company / is the system. » tapé lettre à lettre (f543-f561, citron sur la 2e ligne). Panneau « runtime.log » à droite : une barre de surbrillance descend la liste (intake f557, draft f561, review f565, deploy f573, support f581, billing f587), chaque ligne passe de « queued » à « running » en citron, décalage ≈4 im. Compteur « TASKS RUN » de 0 (f543) à 12 165 (f600) puis 12 833 (f630), ease-out (≈450 par image au début, ≈60 à la fin). Bouton « sign-off ✓ » sur « human.designer » vers f630. Textes du panneau ≈1 % de la hauteur : illisibles.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-02.jpg",
+      "illus": {
+        "from": 543,
+        "to": 600,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carrousel de cartes du portefeuille",
+      "name_en": "Portfolio card carousel",
+      "t": "0:11.00-0:12.75",
+      "frames": "f660-f765",
+      "fps": 60,
+      "mechanics": "Sortie glitch du tableau (f649-f659), flash gris f660, la carte 01 arrive floue et teintée violette en 3 im (f661-f663) et se pose à f664. « Two live. » tapé en blanc (f663-f670), « More on the way. » en gris (f671-f683). Carte 02 en fondu glissé f673-f677. Cartes numérotées 01-05 en gros chiffres contour, pastille d'état (LIVE, WAITLIST, COMING SOON, RESEARCH), nom, accroche. Le carrousel glisse d'une carte vers la gauche à ≈12,0 s puis à ≈12,5 s.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f663.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Strobe de teinte verte pendant la coupure musicale",
+      "name_en": "Green tint strobe before final hit",
+      "t": "0:12.80-0:13.00",
+      "frames": "f768-f779",
+      "fps": 60,
+      "mechanics": "Une image sur deux ou trois passe en teinte olive (f768-f770, f772-f773, f776-f777), avec aberration chromatique sur les textes (f771, f774, f777) et tranches horizontales (f774, f779). 12 im de tension pendant que la musique baisse à -20 dB, puis flash blanc.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc puis anneau de particules qui se resserre en logo",
+      "name_en": "White flash to particle ring gather",
+      "t": "0:13.00-0:14.00",
+      "frames": "f780-f840",
+      "fps": 60,
+      "mechanics": "Flash blanc cassé plein cadre à f780 (4 im avant le coup le plus fort de la piste, f784). Le blanc décroît vers le noir en ≈12 im (f781-f793) pendant qu'un anneau elliptique de particules citron (≈70 % de la largeur) apparaît autour d'un vide central. Les particules se contractent vers le centre-haut et forment l'icône de la main (≈13,5-14 s, probable) ; le wordmark se tape à partir de « n » (≈f810).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f780.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : logo, tagline tapée, appel à l'action, note ironique",
+      "name_en": "End card with CTA row",
+      "t": "0:14.00-0:15.10",
+      "frames": "f840-f904",
+      "fps": 60,
+      "mechanics": "Main blanche aux carrés citron (≈14 % de la hauteur) au-dessus de « nohandslabs· » (≈9 %, point citron), halo vert diffus derrière. Tagline « Companies that build themselves█ » tapée avec curseur, puis rangée « nohandslabs.com ↗ [ join waitlist ] x.com/nohandslabs » (bouton à contour citron) et note mono « // built 95% by AI. finished by hand. ». Tout centré.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de console (SYS LIVE, TARGET 95 % AI, UPTIME, FIG.)",
+      "name_en": "System console HUD",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Barre du haut en mono ≈0,8 % de la hauteur : « SYS LIVE », « TARGET 95 AI / 5% HUMAN », « UPTIME 24/7 », horloge ; coins en équerre ; légendes « FIG.01 — THE HAND LETS GO », « [03] THE RATIO », « [05] _RUN », « RENDER: LIVE » en bas. Le contenu reprend le message (95/5), ce qui le rend moins gratuit que d'habitude, mais il reste illisible.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond noir à grille fine et vignette",
+      "name_en": "Subtle grid background",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Noir #0B0D0B avec grille de lignes à peine visibles (#151A15, pas ≈5 % de la largeur), vignette sombre aux bords, halo vert derrière le logo final. Fixe : tout le mouvement est porté par le texte et les particules.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes une demi-seconde ronde, 4-5 im avant la grosse caisse 120 BPM",
+      "name_en": "Cuts lead the 120 BPM kick by 4-5 frames",
+      "t": "0:02.00-0:13.10",
+      "frames": "f120-f784",
+      "fps": 60,
+      "mechanics": "Les 9 coupes franches sont posées sur des multiples de 30 im (0,5 s) ; la grosse caisse frappe à f(30k+5), soit 4-5 im après chaque coupe (≈75 ms), une avance de l'image que l'oreille tolère (le son en retard jusqu'à ≈100 ms paraît synchrone). De 7 à 9 s, une coupe par temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f420.jpg, microM-004-cut-f480.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un tic sonore par ligne de démarrage",
+      "name_en": "Per-line boot tick SFX",
+      "t": "0:00.85-0:01.45",
+      "frames": "f52-f88",
+      "fps": 60,
+      "mechanics": "Attaques médium-aiguës à 0,929 / 1,022 / 1,126 / 1,231 / 1,324 / 1,428 s (f56, f61, f68, f74, f79, f86), 3-4 im après chaque apparition de ligne (f52, f58, f64, f70, f76, f82), au rythme de 6 im. Avant, d'autres tics accompagnent la frappe de « --boot » (0,650 / 0,743 / 0,813 s). Le terminal « sonne » ligne par ligne.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop à 2 s, coupure + strobe, coup final sur le flash du logo",
+      "name_en": "Drop, break and final hit structure",
+      "t": "0:00-0:15.1",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Montée 0-2 s (-43 → -15 dB) sur le terminal ; drop à 2,08 s (+6 dB, première grosse caisse) sur le flash olive et l'éclatement en particules ; groove 120 BPM stable 2-12,5 s ; coupure 12,5-12,9 s (-20 dB) pendant le strobe vert ; coup le plus fort de la piste à 13,07 s sur le flash blanc ; fondu 14,25-15 s sur la carte de fin.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-move-f123.jpg, microM-006-cut-f780.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Densité inégale : intro lente, puis un geste par demi-temps",
+      "name_en": "Slow intro, dense body",
+      "t": "0:00-0:14.00",
+      "frames": "f0-f840",
+      "fps": 60,
+      "mechanics": "0-1,6 s : seuls la frappe et les lignes de terminal bougent, sur ≈15 % de l'écran. Après 2 s : changement toutes les 0,25 à 0,5 s, culminant à un plan par temps de 7 à 9 s. L'intro aurait pu durer 1 s.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Seule entrée : l'URL du site. Promesse, chiffre 95/5, slogans, noms des 5 sociétés et palette citron semblent tirés de la page (probable) : donner un site suffit à Claude pour écrire un récit de marque complet."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go ALL OUT … use everything you've got » a donné du maximalisme maîtrisé : neuf scènes, particules, glitchs, matrice de points, rubans, tableau de bord, carrousel. Le système tient parce qu'une seule couleur d'accent et un seul motif (la main en pixels) relient tout."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure demandée : Claude a choisi terminal → promesse → chiffre → négations → preuve (tableau de bord) → portefeuille → logo et appel à l'action, un arc de pitch complet en 15 s."
+    },
+    {
+      "kind": "build",
+      "insight": "Aucune musique demandée, mais bande-son 120 BPM dont les temps tombent sur les coupes (posées sur des demi-secondes rondes) et tics par ligne de terminal. Le gabarit sonore est le même que oliahmed205-3e31c4 (drop 2,08 s, coup 13,07 s, fondu 14,25 s, image 4-5 im en avance) : probable bande-son générée en code avec un squelette type pour 15 s."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité : terminal, tableau de bord, cartes et HUD sont à 0,8-1,5 % de la hauteur. Il aurait fallu un plancher de taille (≥3 % de la hauteur) et une accroche lisible dès la première seconde."
+    }
+  ],
+  "steal": [
+    "Faire porter tout le film par le logo : ses pixels deviennent particules, puis chiffre, puis slogan, puis reforment le logo.",
+    "Rafale de négations « No X. » : un plan par temps (30 im à 120 BPM), palette inversée à chaque plan, ruban diagonal défilant.",
+    "Curseur bloc qui clignote sur une période d'un temps : le texte tapé bat la mesure sans effet ajouté.",
+    "Taper chaque ligne du titre sur un temps (f120, f150, f180), à ≈1,4 im par lettre.",
+    "Avant le coup final, couper la musique 0,4 s et faire stroboscoper une teinte de marque, puis flash blanc sur la frappe."
+  ],
+  "flaws": [
+    "Intro de 1,6 s en texte de terminal à 1,5 % de la hauteur : accroche invisible sur mobile.",
+    "Tableau de bord, cartes et HUD illisibles (≈1 % de la hauteur) : la preuve ne se lit pas.",
+    "Flashs gris à bandes ternes aux coupes de 5, 9 et 11 s.",
+    "HUD de console omniprésent, tic de vidéo IA « techno », même s'il répète le message."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : morphing de particules main → 95 % → logo, rafale de slogans un par temps avec inversions de palette, curseur au tempo et coupes toutes 4-5 im avant la grosse caisse : une leçon complète de synchro et de motif de marque à mesurer image par image."
+  }
+}

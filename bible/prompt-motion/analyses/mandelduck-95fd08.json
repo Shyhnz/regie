@@ -1,0 +1,262 @@
+{
+  "slug": "mandelduck-95fd08",
+  "title": "Starry Night cat-spotting game",
+  "handle": "@MandelDuck",
+  "family": "3d",
+  "craft": 3,
+  "craft_reason": "Direction artistique remarquable (monde 3D peint, UI dans la matière de la toile, transition d'entrée dans le tableau) mais vidéo = capture brute : virages souris saccadés, aucun montage, aucun son.",
+  "summary": "Capture d'un jeu web en 3D : on entre dans « La Nuit étoilée » par son cadre doré, puis on marche à la première personne dans le village peint pour repérer 12 chats cachés. Chaque découverte déclenche une gerbe de coups de pinceau et une bannière nommée (Vincent, Cyprès, Lune, Gauguin). Le monde et l'interface sont cohérents et inventifs ; la vidéo elle-même n'est qu'un enregistrement de partie, sans rythme ni son.",
+  "prompt_vs_result": [
+    "Un jeu 3D où l'on se promène et repère des chats dans un tableau de Van Gogh, en commençant par « La Nuit étoilée » et son village. Rien sur le style d'interface, la durée ou la vidéo.",
+    "Claude a inventé le titre « Vincent's Cats », 12 chats nommés et cachés dans les icônes du tableau, le rendu peint, l'écran titre façon musée, l'entrée « Step into the painting », l'UI en papier peint, le chrono, les indices et le menu pause.",
+    "« Inside of a van gogh painting » a bien cadré le rendu et la transition d'entrée. Le prompt ne demandait pas de vidéo : l'auteur a filmé sa partie. Pour une promo, il faudrait un trajet de caméra scripté et du son."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0E0C0A", "role": "fond de l'écran titre (mur de musée)"},
+      {"hex": "#2752B8", "role": "ciel outremer, cartes d'interface"},
+      {"hex": "#1C2F6E", "role": "bleu nuit des façades et du sol"},
+      {"hex": "#A9C4F0", "role": "tourbillons clairs du ciel"},
+      {"hex": "#F5D33C", "role": "étoiles, titres manuscrits, boutons coup de pinceau"},
+      {"hex": "#F5B342", "role": "fenêtres éclairées, flaques de lumière des lampadaires"},
+      {"hex": "#3A6A6A", "role": "collines vert-de-gris"},
+      {"hex": "#1F2E1C", "role": "cyprès vert sombre"},
+      {"hex": "#5B4FD0", "role": "iris violets (accent)"},
+      {"hex": "#C8A04A", "role": "cadre doré, anneaux et médaillons de découverte"},
+      {"hex": "#D86A2A", "role": "chat roux (le seul orange vif du monde)"}
+    ],
+    "type": "Titres en manuscrite pinceau jaune (type Kalam/Caveat Brush probable) ≈5-6 % de hauteur ; textes en serif garalde italique (Cormorant probable) ≈2 % ; surtitres en petites capitales très espacées ≈1,8 % ; touches clavier en pastilles.",
+    "texture": "Toutes les surfaces portent des coups de pinceau directionnels (ciel, sol, façades, herbe) ; étoiles à halos concentriques ; flaques de lumière chaude au sol ; cartes d'interface en papier bleu déchiré à texture de touches ; boutons en aplat jaune à bord de pinceau. Pas de flou de mouvement : les virages rapides restent nets et saccadés.",
+    "style": "jeu 3D peint post-impressionniste",
+    "coherence": "Tout vient du tableau : palette réduite aux bleus de cobalt, jaune de chrome et vert-de-gris, interface peinte dans la même matière, noms des chats tirés de l'œuvre. Seuls le chat roux 3D lisse et la barre du navigateur visible en bas cassent l'illusion."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Une seule prise continue (capture de partie) : les 9 « coupes » détectées sont des virages à la souris de 60-90° en 3-5 im (f331, f780, f1076, f1149, f1242, f1363, f1586). Le rythme est celui du joueur : marche continue, quatre découvertes à 9,4 s, 13,0 s, 20,5 s et 30,7 s (espacement 3,6 à 10 s). Maintiens statiques : 3,2 s sur l'écran titre (0-3,17 s), 0,75 s sur la toile plein écran (4,5-5,25 s), 1 s sur l'anneau du dernier chat (31,5-32,5 s), 0,5 s sur le menu pause. 16 % du film immobile.",
+    "timeline": [
+      {"t": "0:00-0:03.2", "what": "Écran titre : « La Nuit étoilée » dans un cadre doré sur mur noir, cartel de musée dessous, carte « Vincent's Cats » à droite, le curseur va au bouton", "technique": "écran titre muséal"},
+      {"t": "0:03.2-0:04.2", "what": "Clic : la carte s'efface en 16 im, le cadre grossit au-delà de l'écran en 36 im (ease-in)", "technique": "entrée dans le tableau (push-in à travers le cadre)"},
+      {"t": "0:04.2-0:05.5", "what": "La toile occupe tout l'écran et devient le ciel du monde 3D ; les icônes du HUD apparaissent en haut à droite", "technique": "toile = skybox"},
+      {"t": "0:05.5-0:07.0", "what": "La caméra pique vers le bas : le chemin, les iris et le village apparaissent", "technique": "tilt down de révélation"},
+      {"t": "0:07.0-0:09.2", "what": "Marche à la première personne sur le chemin vers un muret ; un chat roux est assis dessus", "technique": "caméra subjective"},
+      {"t": "0:09.2-0:10.0", "what": "Clic : gerbe de traits de pinceau jaunes et blancs, anneau orbital autour du chat, bannière « Vincent — strolling along the wall by the road 1/12 »", "technique": "feedback de découverte"},
+      {"t": "0:10.0-0:13.5", "what": "Regard vers le cyprès : chat caché dans une volute, anneau doré pointillé et médaillon-photo qui vole jusqu'au HUD (« Cyprès 2/12 »)", "technique": "médaillon qui rejoint le HUD"},
+      {"t": "0:13.5-0:18.0", "what": "Descente vers le village, maisons aux fenêtres orange", "technique": "exploration"},
+      {"t": "0:18.0-0:21.0", "what": "Regard vers le ciel : chat endormi sur le croissant de lune (« Lune 3/12 »), médaillon vers le HUD", "technique": "chat caché dans une icône du tableau"},
+      {"t": "0:21.0-0:30.0", "what": "Ruelles, place, bancs, charrette, lampadaires et flaques de lumière ; virages rapides", "technique": "exploration, whip pans à la souris"},
+      {"t": "0:30.0-0:32.6", "what": "Chat qui dépasse du puits : gerbe puis anneau qui se resserre et orbite, bannière « Gauguin — peeking over the rim of the village well 4/12 »", "technique": "feedback de découverte"},
+      {"t": "0:32.6-0:33.57", "what": "Menu pause « The night will wait » en fondu sur la scène assombrie", "technique": "menu pause dans la DA"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier : pas de mesure possible.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette, alors que le jeu propose un réglage Sound (On) dans son menu pause.",
+    "how_built": "Capture d'écran d'une partie sans enregistrement du son du système. Le prompt ne parlait ni de vidéo ni de musique."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Entrer dans le tableau : le cadre grossit au-delà de l'écran",
+      "name_en": "step-into-the-painting push-in",
+      "t": "0:03.20-0:05.85",
+      "frames": "f192-f351",
+      "fps": 60,
+      "mechanics": "La carte de menu s'efface en 16 im (f196-f212, 0,27 s). Puis le cadre doré, d'abord à ≈84 % de la largeur, s'agrandit à 92 % (f228), 98 % (f236) et sort de l'écran à f248 : 36 im = 0,6 s, pas croissants (ease-in). La toile plein écran devient le ciel du monde 3D, tenue 1,3 s, puis la caméra pique vers le bas à partir de f331 (≈5 % du cadre par image au début, puis décélère : ease-out) et révèle le village. Passage sans coupure du 2D au 3D.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-cut-f331.jpg",
+      "illus": {"from": 190, "to": 345, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran titre en salle de musée",
+      "name_en": "museum-wall title screen",
+      "t": "0:00-0:03.2",
+      "frames": "f0-f192",
+      "fps": 60,
+      "mechanics": "Toile dans un cadre doré #C8A04A occupant ≈83 % de la largeur et 82 % de la hauteur sur mur noir, cartel en petites capitales sous le cadre (« VINCENT VAN GOGH · The Starry Night · SAINT-RÉMY-DE-PROVENCE, JUNE 1889 · OIL ON CANVAS »). La carte de menu (≈30 % × 57 %) chevauche le bord droit du cadre de ≈3 %, ce qui crée de la profondeur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Interface peinte dans la matière de l'œuvre",
+      "name_en": "diegetic painted UI",
+      "t": "0:00-0:33.57",
+      "frames": "f0-f2014",
+      "fps": 60,
+      "mechanics": "Cartes en papier bleu #2752B8 aux bords déchirés et à texture de touches de pinceau ; bouton principal = aplat jaune #F5D33C à bords de coup de pinceau (≈8 % de hauteur) ; ornement en spirale dessinée ; touches clavier en pastilles arrondies. Même matière pour l'écran titre, les bannières de découverte et le menu pause.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio manuscrite pinceau, serif italique, petites capitales",
+      "name_en": "brush script + italic serif + tracked small caps",
+      "t": "0:00-0:33.57",
+      "frames": "f0-f2014",
+      "fps": 60,
+      "mechanics": "Titres (« Vincent's Cats », « The night will wait », noms des chats) en manuscrite pinceau jaune ≈5-6 % de hauteur ; descriptions en serif garalde italique ≈2 % (« — strolling along the wall by the road ») ; surtitres « A HIDE & SEEK IN OILS », « PAUSED », « QUALITY » en petites capitales espacées ≈1,8 %. Hiérarchie nette en trois voix.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu 3D peint : coups de pinceau sur toutes les surfaces",
+      "name_en": "painterly 3D shading",
+      "t": "0:05.5-0:32.6",
+      "frames": "f331-f1956",
+      "fps": 60,
+      "mechanics": "Ciel en tourbillons de traits clairs #A9C4F0 sur outremer, étoiles à halos concentriques jaunes, sol et collines à touches directionnelles, façades bleu nuit, herbe en brins, iris violets #5B4FD0. Le cyprès est reconstruit en volume en forme de flamme. La texture tient même en marche rapide.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flaques de lumière chaude dans la nuit bleue",
+      "name_en": "warm lamp light pools",
+      "t": "0:21.0-0:30.0",
+      "frames": "f1260-f1800",
+      "fps": 60,
+      "mechanics": "Les lampadaires et fenêtres projettent au sol des taches orange #F5B342 à bords doux (≈20-30 % de la largeur du cadre) sur un sol bleu nuit : contraste chaud/froid qui guide le regard le long des ruelles.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Gerbe de coups de pinceau puis anneau orbital à la découverte",
+      "name_en": "brushstroke burst into orbiting ring",
+      "t": "0:09.27-0:10.33",
+      "frames": "f556-f620",
+      "fps": 60,
+      "mechanics": "Au clic sur le chat, ≈30-40 traits jaunes #F5D33C et blancs (longueur ≈3-5 % de la largeur) jaillissent autour de lui et s'écartent jusqu'à ≈35 % de la largeur en ≈30 im (0,5 s). Ils s'enroulent ensuite en une ellipse de rayon ≈12 % qui tourne autour du chat, ancrée dans le monde (elle suit le chat quand la caméra tourne). Sur le chat du puits (f1836-f1956), l'anneau se resserre de ≈15 % à ≈7 % de rayon en ≈24 im puis orbite plus d'une seconde.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, extra-03.jpg, microM-003-move-f593.jpg",
+      "illus": {"from": 552, "to": 620, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bannière de découverte nommée et empilée",
+      "name_en": "stacked discovery toast",
+      "t": "0:09.4-0:13.5",
+      "frames": "f564-f810",
+      "fps": 60,
+      "mechanics": "≈0,2 s après le clic, une bannière (≈31 % de largeur, 11 % de hauteur, centrée en haut) apparaît : icône de chat dans un ovale doré, nom en manuscrite jaune, description en italique, compteur « 1 / 12 ». La découverte suivante s'empile dessous (Vincent puis Cyprès), puis l'ancienne s'efface.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Médaillon-photo qui vole jusqu'au HUD",
+      "name_en": "snapshot medallion fly-to-HUD",
+      "t": "0:12.75-0:13.33",
+      "frames": "f765-f800",
+      "fps": 60,
+      "mechanics": "Un anneau doré pointillé (rayon ≈5 % de la largeur) cerne le chat caché ; un ovale doré contenant un instantané du chat apparaît à côté. Après le virage de caméra (f780), l'ovale part vers l'icône de la bannière en haut à gauche, passe de ≈10 % à ≈4 % de largeur et s'efface en ≈20 im (0,33 s). Même geste pour la Lune (f1242-f1262).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f780.jpg, microM-007-cut-f1242.jpg",
+      "illus": {"from": 765, "to": 800, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Compteur à silhouettes qui se remplissent",
+      "name_en": "silhouette progress row",
+      "t": "0:09.4-0:33.57",
+      "frames": "f564-f2014",
+      "fps": 60,
+      "mechanics": "En haut à gauche : « 1 / 12 » en manuscrite et une rangée de 12 silhouettes de chats ; chaque découverte remplit la suivante en jaune. En haut à droite : chrono avec icône de lune, boutons indice, son et pause avec leur touche en exposant.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Personnages cachés dans les icônes de l'œuvre",
+      "name_en": "hiding spots drawn from the artwork",
+      "t": "0:09.2-0:32.6",
+      "frames": "f552-f1956",
+      "fps": 60,
+      "mechanics": "Quatre chats montrés sur 12 : sur le muret du chemin (Vincent), dans une volute du cyprès (Cyprès), endormi sur le croissant de lune (Lune), au bord du puits (Gauguin, clin d'œil à l'ami du peintre). Le level design force à regarder les éléments célèbres du tableau.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, overview-04.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Microcopie à la voix de marque",
+      "name_en": "on-brand microcopy",
+      "t": "0:00-0:33.57",
+      "frames": "f0-f2014",
+      "fps": 60,
+      "mechanics": "« Twelve cats have slipped into Vincent's starry night. Can you find them all? », « Step into the painting », « The night will wait », « I · THE STARRY NIGHT, 1889 » (numérotation qui annonce une série). Chaque texte prolonge l'univers au lieu de décrire une fonction.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette restreinte au tableau, orange réservé à la cible",
+      "name_en": "source-limited palette with target accent",
+      "t": "0:05.5-0:32.6",
+      "frames": "f331-f1956",
+      "fps": 60,
+      "mechanics": "Monde entièrement en bleus de cobalt et d'outremer, jaune de chrome, vert-de-gris et violet ; le chat roux #D86A2A est le seul orange saturé hors fenêtres, ce qui le rend repérable une fois qu'on l'a vu (et le jeu reste difficile tant qu'il est caché).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Virages à la souris en 3-5 images (fausses coupes)",
+      "name_en": "mouse-look whip pans",
+      "t": "0:13.0-0:26.5",
+      "frames": "f780-f1586",
+      "fps": 60,
+      "mechanics": "Rotations de 60-90° en 3-5 im (f780-f784, f1073-f1076, f1146-f1149, f1360-f1363, f1584-f1587), sans flou de mouvement : le décor saute d'une image à l'autre et l'outil les compte comme des coupes. En jeu c'est normal ; en vidéo, c'est saccadé et désorientant.",
+      "verdict": "cliche",
+      "evidence": "microM-005-cut-f1076.jpg, microM-008-cut-f1363.jpg, microM-011-cut-f1586.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Menu pause dans la DA, sur scène assombrie",
+      "name_en": "in-style pause overlay",
+      "t": "0:32.6-0:33.57",
+      "frames": "f1956-f2014",
+      "fps": 60,
+      "mechanics": "La scène s'assombrit à ≈40 % et la carte (≈35 % × 72 %, centrée) apparaît en fondu en ≈20 im (0,33 s), sans déplacement. Contenu : « PAUSED », titre manuscrit, « 4 of 12 cats found · 0:29 », bouton jaune « Resume [Enter] », sélecteur Quality High/Medium/Low, curseur pointillé Look speed, interrupteurs, légende des touches, « START OVER ».",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Vidéo = enregistrement brut d'une partie",
+      "name_en": "raw gameplay capture",
+      "t": "0:00-0:33.57",
+      "frames": "f0-f2014",
+      "fps": 60,
+      "mechanics": "Une prise unique de 33,6 s au format 1280 × 708 avec la barre du navigateur visible en bas et le curseur ; 3,2 s d'écran titre immobile en ouverture, fin coupée net sur le menu pause. Aucun montage, aucune musique : le savoir-faire du jeu est montré, pas mis en scène.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Une phrase a suffi : « inside of a van gogh painting » a dicté à la fois le rendu peint, l'interface en papier peint et la transition d'entrée par le cadre. Nommer une œuvre précise donne au modèle une palette, des motifs et des noms tout faits."},
+    {"kind": "direction", "insight": "« Spot cats » a été traduit en vraie mécanique (clic, gerbe, bannière, compteur 12, chrono, indice) : le modèle invente le game feel complet quand le verbe d'action est clair."},
+    {"kind": "structure", "insight": "« We can start with Starry Night » a produit « I · THE STARRY NIGHT, 1889 » : le modèle a lu une série et l'a numérotée."},
+    {"kind": "qa", "insight": "Le prompt ne demandait pas de vidéo : la capture garde les défauts d'une démo (virages saccadés, barre du navigateur, muet). Pour montrer un projet interactif, demander un mode démo avec trajet de caméra scripté, ralentis sur les découvertes et bande-son."},
+    {"kind": "build", "insight": "Pile non précisée ; un rendu 3D temps réel dans le navigateur (Three.js probable) avec textures peintes suffit à donner un rendu « tableau » sans post-traitement lourd."}
+  ],
+  "steal": [
+    "Entrer dans l'œuvre : effacer l'interface en 0,25 s, agrandir le cadre au-delà de l'écran en 0,6 s (ease-in), puis faire de l'image le ciel du monde et piquer dessous.",
+    "Feedback de découverte : gerbe de traits de pinceau qui rayonnent 0,5 s, puis se resserrent en anneau qui orbite autour de l'objet trouvé.",
+    "Peindre l'interface dans la matière du sujet : cartes en papier déchiré, bouton = coup de pinceau, titres manuscrits, sous-titres serif italique.",
+    "Médaillon-instantané qui vole jusqu'au HUD en 0,33 s : la récompense et l'inventaire en un seul geste.",
+    "Cacher les éléments dans les icônes connues de l'œuvre et les nommer par des clins d'œil."
+  ],
+  "flaws": [
+    "Capture brute : barre du navigateur et curseur visibles, aucun montage.",
+    "Virages souris de 60-90° en 3-5 im sans flou : saccadé et illisible en vidéo.",
+    "Aucun son alors que le jeu en a un : la vidéo perd la moitié de son charme.",
+    "3,2 s d'écran titre figé en ouverture, fin coupée net sur le menu pause."
+  ],
+  "deep_study": {"worth": false, "why": "Non pour une étude continue : c'est une capture de jeu au rythme du joueur. Seules trois séquences méritent un arrêt image par image : l'entrée dans le tableau (f192-f351), la gerbe en anneau (f552-f620) et le médaillon vers le HUD (f765-f800)."}
+}

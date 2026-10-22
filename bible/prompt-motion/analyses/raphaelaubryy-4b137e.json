@@ -1,0 +1,391 @@
+{
+  "slug": "raphaelaubryy-4b137e",
+  "title": "Motion designer résumé reel",
+  "handle": "@RaphaelAubryy",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Synchro exemplaire (1 scène = 1 mesure à 120 BPM, chaque changement 3 im avant la grosse caisse), palette Claude stricte, courbes nettes ; mais inventaire de démos génériques reliées par des coupes, avec maintiens.",
+  "summary": "Bande démo de 15 s où Claude se présente comme motion designer « Opus 5.5 ». Sept scènes de 2 s, une par mesure d'un morceau house à 120 BPM : titre sur ligne d'horizon, plongée dans le O, morphs de formes, chiffres en pixels, particules qui écrivent OPUS, métaballes, mur typographique, cube 3D, signature. Force : synchro au temps près et palette crème/terracotta/noir. Faiblesse : îlots de démo sans transitions motivées.",
+  "prompt_vs_result": [
+    "Une vidéo de motion graphics de 15 s, dynamique, présentée comme la bande démo d'un CV de motion designer, avec « go all out ». Aucune consigne de musique, de palette, de texte, de structure ou de transitions.",
+    "Claude s'est pris pour sujet (« Opus 5.5 ») : 7 scènes de 2 s, une compétence chacune (morph, pixels, particules, métaballes, mur typo, cube 3D), palette Anthropic crème/terracotta/noir, habillage timecode, nom révélé par morceaux.",
+    "La durée ronde a donné une grille de 2 s qui épouse un morceau à 120 BPM. « Go all out » a produit un inventaire : il fallait exiger un fil narratif, des transitions enchaînées, zéro plan figé et une fin musicale."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F0EFE6", "role": "fond crème (titre, grille, mur de mots), texte et métaballes sur terracotta"},
+      {"hex": "#090B0A", "role": "noir : texte, fond des scènes formes/particules/cube/carton (#080B0A)"},
+      {"hex": "#CF6F57", "role": "accent terracotta : disque et formes, pixels du 5.5, fond métaballes, bandeau OPUS 5.5, face 3D, « 5.5 » du carton"},
+      {"hex": "#D3D0C6", "role": "gris des mots secondaires du mur typographique"},
+      {"hex": "#5A2E22", "role": "5.5 éteint pendant la dissolution en particules (1 image)"},
+      {"hex": "#2A2A2A", "role": "cercles guides et onde annulaire sur fond noir"},
+      {"hex": "#858682", "role": "sous-titre du carton « motion designer · showreel 2026 »"},
+      {"hex": "#545552", "role": "mention « EVERY FRAME IS CODE »"}
+    ],
+    "type": "Grotesque néo bold (Inter/Helvetica Bold probable), capitales, approche serrée ; titre 17 % de hauteur, mur 9,8 %, bandeau 15 %, carton « Opus 5.5 » casse mixte 14,6 % ; mono capitales 1,6 % pour timecode et légendes.",
+    "texture": "Aplats nets, aucun grain ni ombre portée. Flou de mouvement simulé par échos gris pendant la plongée dans le O, flou directionnel pendant les quarts de tour du cube et la rotation du triangle. Particules dessinées en traits étirés selon la vitesse. Métaballes à bord net (flou + seuil alpha probable). Grille de pixels à filets fins.",
+    "style": "Bande démo minimaliste, palette Claude",
+    "coherence": "Trois couleurs (crème, noir, terracotta) et une seule famille de grotesque tiennent les 7 scènes ; la valeur du fond s'inverse à chaque coupe (clair/sombre), ce qui fait lire chaque mesure comme un bloc. Le nom « Opus 5.5 » sert de fil (5.5, puis OPUS, puis OPUS 5.5, puis signature). Ce qui casse : aucune forme ne passe d'une scène à l'autre, chaque scène est un îlot technique raccordé par une coupe d'une image."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Morceau house à 120,0 BPM (pulsation nette 7,2) : grosse caisse sur chaque temps (attaque mesurée à x,05/x,55 s), charleys à contretemps (x,30/x,80 s), intro filtrée de 2 s à −27 dB puis drop à 2,0 s (+16 dB). L'animation est écrite sur une grille de 0,5 s : coupes à 2,0 / 4,0 / 6,0 / 8,0 / 10,0 / 12,0 / 14,0 s (f120 à f840, une par mesure de 4 temps), changements internes à f30, f60, f150, f180, f210, f510, f541, f660, f750, f780, f810, tous à un multiple exact de 30 im. Chaque événement précède l'attaque de la grosse caisse de ≈ 3 im (57 ms), décalage constant à ±1 ms : perçu comme synchrone. Densité : une action par temps dans les scènes titre, formes, métaballes, mur typo et cube ; les scènes pixels et particules suivent leurs propres courbes (départs à 4,12, 5,37, 6,15 et 7,45 s, hors grille). Temps morts : 0,58 s figées sur le 5.5 (4,78-5,35 s), ≈ 0,5 s de tremblement sur OPUS (6,92-7,45 s), 0,45 s sur OPUS 5.5 (11,52-11,97 s), 0,28 s sur le carton : ≈ 16 % du film quasi immobile.",
+    "timeline": [
+      {"t": "0:00-0:00.28", "what": "Fond crème ; un filet noir de 2 px se trace du centre jusqu'à 77,7 % de la largeur, à mi-hauteur", "technique": "tracé de ligne expo-out depuis le centre"},
+      {"t": "0:00.50-0:00.75", "what": "« SHOW » monte de derrière la ligne et se pose dessus", "technique": "révélation masquée par la ligne d'horizon"},
+      {"t": "0:01.00-0:01.25", "what": "« REEL » descend sous la ligne, un temps plus tard", "technique": "révélation masquée symétrique"},
+      {"t": "0:01.50-0:01.60", "what": "Timecode en haut à droite, liste MOTION / TYPE / 3D / PARTICLES / CODE en bas à gauche", "technique": "habillage de bande démo"},
+      {"t": "0:01.60-0:02.00", "what": "Zoom accéléré dans le O de SHOW, échos de flou, l'écran devient noir", "technique": "plongée dans le glyphe"},
+      {"t": "0:02.00-0:02.50", "what": "Drop : fond noir à cercles guides, un disque terracotta naît au centre et grossit jusqu'à 48 % de la hauteur", "technique": "naissance du disque sur le drop"},
+      {"t": "0:02.50-0:04.00", "what": "Disque → carré → triangle → étoile, un morph par temps, chacun avec une onde annulaire", "technique": "morph calé sur les temps"},
+      {"t": "0:04.00-0:04.78", "what": "Coupe sur une grille crème ; les cellules basculent du centre vers les bords et écrivent « 5.5 » en pixels terracotta sur noir", "technique": "révélation en grille de pixels"},
+      {"t": "0:04.78-0:06.00", "what": "« 5.5 » figé 0,58 s puis scintillement de traînées horizontales (5,37-5,87 s)", "technique": "maintien de fin de scène"},
+      {"t": "0:06.00-0:06.92", "what": "Le 5.5 s'éteint, champ de particules plein cadre, convergence en traînées, les particules écrivent « OPUS »", "technique": "particules vers texte"},
+      {"t": "0:06.92-0:08.00", "what": "OPUS tremble, explose vers les bords (7,45-7,78 s), puis 11 im de noir", "technique": "explosion de particules"},
+      {"t": "0:08.00-0:10.00", "what": "Fond terracotta : 7 disques crème s'attirent, fusionnent (impulsion à 8,5 s), se scindent (9,0 s), la molécule tourne", "technique": "métaballes"},
+      {"t": "0:10.00-0:11.00", "what": "Mur de 7 lignes de mots noirs/gris défilant en sens alternés à 55 % de la largeur par seconde", "technique": "défilement alterné"},
+      {"t": "0:11.00-0:11.30", "what": "Arrêt sec sur le temps ; un bandeau terracotta s'ouvre depuis une ligne ; « OPUS 5.5 » monte dedans", "technique": "arrêt sec + bandeau qui s'ouvre"},
+      {"t": "0:11.30-0:12.00", "what": "Maintien sur OPUS 5.5 (≈ 0,45 s parfaitement figé)", "technique": "maintien"},
+      {"t": "0:12.00-0:14.00", "what": "Cube 3D FLUID / TYPE / 3D / PARTICLES, un quart de tour par temps (12,0 / 12,5 / 13,0 / 13,5 s)", "technique": "cube de compétences"},
+      {"t": "0:14.00-0:15.06", "what": "Carton « Opus 5.5 », « motion designer · showreel 2026 », « EVERY FRAME IS CODE », puis fondu au noir", "technique": "carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Les barres bleues du dossier (x,29/x,79 s) tombent sur les charleys à contretemps ; les barres bleu clair (x,04/x,54 s) sur la grosse caisse, et c'est sur elles que tout tombe. Les coupes f120, f240, f480, f600, f720 précèdent chacune de 2 im une barre bleu clair (microM-001 à 006) ; l'attaque mesurée de la grosse caisse (bande 150-1500 Hz) arrive 57 ms (≈ 3 im) après chaque multiple de 0,5 s, sur toute la durée. Comptage, un événement par geste (coupe, départ de morph, de mot, de quart de tour, arrêt) : 19 sur 23 à ±2 im d'une barre (hasard ≈ 33 %). Les 4 ratés sont les départs des simulations : pixels (f247), scintillement (f322), convergence des particules (f369), explosion (f447). Le drop à 2,0 s (+16 dB) coïncide avec la fin de la plongée et la naissance du disque (f120-f121). Test automatique : départs/temps R = 0,74, p = 4e-5, décalage +227 ms = la vraie grille, décalée d'un contretemps par rapport aux barres bleues.",
+    "synced": ["coupes", "departs", "apparitions", "texte", "drop"],
+    "style_match": "House 120 BPM, grosse caisse sur chaque temps : snaps de 12 im, arrêts secs, un changement par temps épousent le groove ; seule la fin tombe à plat.",
+    "how_built": "Le prompt ne parle pas de musique. La timeline est écrite en multiples exacts de 0,5 s (2 s par scène, 1 s pour le carton) ; le morceau, house à 120,0 BPM, démarre à t = 0 avec une intro d'une mesure, donc ses temps et son drop tombent sur la grille. Bande-son probablement ajoutée par l'auteur ou choisie au bon BPM ; le décalage constant de 57 ms vient probablement de l'encodage audio. La musique continue pendant le fondu au noir et s'arrête net à 15,06 s."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Une scène par mesure",
+      "name_en": "one scene per bar",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "7 scènes de 120 im (2,0 s = 1 mesure de 4 temps à 120 BPM) puis un carton de 60 im. Coupes à f120, f240, f360, f480, f600, f720, f840, chacune sur la grosse caisse du premier temps de la mesure (image 3 im avant l'attaque). Chaque scène démontre une compétence : titre cinétique, morph de formes, grille de pixels, particules, métaballes, mur typographique, cube 3D.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un changement par temps, image en avance de 3 im",
+      "name_en": "on-beat change with visual lead",
+      "t": "0:00.50-0:13.50",
+      "frames": "f30-f810",
+      "fps": 60,
+      "mechanics": "Les départs internes tombent à f30, f60, f150, f180, f210, f510, f541, f660, f750, f780, f810 : multiples exacts de 30 im (0,5 s = 1 temps). L'attaque de la grosse caisse arrive 57 ms après (≈ 3,4 im), constant sur tout le film ; le pic de vitesse du geste (2 à 5 im après le départ) tombe donc pile sur le coup. Courbes sèches (expo-out, snaps de 12 im) cohérentes avec une house à quatre temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Titre sur l'intro, première coupe sur le drop",
+      "name_en": "title over intro, first cut on the drop",
+      "t": "0:00-0:02.05",
+      "frames": "f0-f123",
+      "fps": 60,
+      "mechanics": "Les 2 premières secondes (une mesure) sont une intro filtrée à −26/−31 dB sans grosse caisse : le titre SHOW REEL s'y construit calmement (ligne, deux mots, un par temps). La plongée dans le O se termine à f119 ; à f120 (2,0 s) le fond noir et le disque terracotta apparaissent, 3 im avant la première grosse caisse du drop (+16 dB à 2,05 s). La bande démo « démarre » avec la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f111.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ligne d'horizon tracée depuis le centre",
+      "name_en": "center-out line draw",
+      "t": "0:00-0:00.28",
+      "frames": "f0-f17",
+      "fps": 60,
+      "mechanics": "Filet noir de 2 px à 50 % de la hauteur, déjà visible à f0 (≈ 5 % de largeur). Largeur : 34 % à f2, 51 % à f4, 62 % à f6, 72 % à f10, 77 % à f16, final 77,7 % (x 214-1705) : ease-out exponentiel, 90 % du trajet en 10 im, posé à f17. Puis tenu 13 im avant le premier mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui sortent de la ligne",
+      "name_en": "line-masked word reveal",
+      "t": "0:00.50-0:01.30",
+      "frames": "f30-f78",
+      "fps": 60,
+      "mechanics": "La ligne sert de bord de masque. SHOW monte de derrière elle : départ f30, pic de vitesse f33, posé vers f45 (15 im = 0,25 s, ease-out fort, léger flou vertical à f32-f34), base du mot collée à la ligne. REEL descend sous la ligne : départ f60-f61, pic f63, posé vers f75, final 59 px sous la ligne. 30 im d'écart = un temps entre les deux mots.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 28, "to": 72, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre grotesque sur filet",
+      "name_en": "bold grotesque title on a rule",
+      "t": "0:00.75-0:01.60",
+      "frames": "f45-f96",
+      "fps": 60,
+      "mechanics": "Grotesque néo bold (Inter/Helvetica Bold probable), capitales, approche serrée, noir #090B0A sur crème #F0EFE6. SHOW : hauteur de capitale 184 px (17 % du cadre), largeur 37 %, posé sur le filet ; REEL : 177 px (16,4 %), 28,5 % de large. Bloc centré, filet plus large que les mots (77,7 %).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage de bande démo",
+      "name_en": "reel chrome (timecode + skill list)",
+      "t": "0:01.50-0:01.98",
+      "frames": "f90-f119",
+      "fps": 60,
+      "mechanics": "Deux légendes mono en capitales de 17 px (1,6 % de la hauteur), grises : timecode « 00:00:01:35 » en haut à droite (marge 3,4 %), liste « MOTION / TYPE / 3D / PARTICLES / CODE » en bas à gauche (marges 64 et 60 px). Fondu d'apparition f90-f95. Elles signalent « bande démo » sans gêner le titre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f111.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le glyphe O",
+      "name_en": "dive into the glyph",
+      "t": "0:01.60-0:02.00",
+      "frames": "f96-f120",
+      "fps": 60,
+      "mechanics": "Zoom de 24 im (0,4 s) centré sur le O de SHOW (à droite du centre). Largeur du mot : 95 px (f96) → 101 → 117 → 125 → 135 → 153 → 175 → 205 → 240 px (f108) sur une vignette de 254 px : facteur ×1,13 à ×1,17 par image puis plus vite, ease-in exponentiel jusqu'à ≈ ×40. 2-3 copies grises décalées (échos) simulent le flou de mouvement (f103-f115). L'écran se remplit du fût noir du O (f117-f119) ; à f120 la scène noire suivante arrive par une image fondue, sur le drop.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f111.jpg",
+      "illus": {"from": 98, "to": 121, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Naissance du disque",
+      "name_en": "dot birth scale-up",
+      "t": "0:02.02-0:02.50",
+      "frames": "f121-f150",
+      "fps": 60,
+      "mechanics": "Disque terracotta #CF6F57 au centre : 1 px à f121, ≈ 25 % de la hauteur à f131 (croissance quasi linéaire de 3-4 px par image en vignette), ≈ 48 % à f150 (ease-out). Il naît à l'intérieur d'un cercle guide fin ; c'est la première forme après le drop.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f111.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morph de formes sur chaque temps",
+      "name_en": "beat-locked shape morph",
+      "t": "0:02.50-0:04.00",
+      "frames": "f150-f239",
+      "fps": 60,
+      "mechanics": "Disque → carré (f150) → triangle (f180) → étoile organique à 5 branches (f210). Chaque morph : interpolation des sommets en 6 im (f181-f186) via des polygones irréguliers, puis rotation d'environ 135° en 8 im (f186-f194), ease-out, léger flou sur les arêtes (f188-f191), puis dérive lente ≈ 1° par image jusqu'au temps suivant. Pic de mouvement 2 im après le départ (f152 : 2,6 contre 0,6 avant). Formes intermédiaires un peu cabossées.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 179, "to": 196, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde annulaire à chaque morph",
+      "name_en": "ring pulse",
+      "t": "0:03.00-0:03.10",
+      "frames": "f180-f186",
+      "fps": 60,
+      "mechanics": "À l'image exacte du morph (f180, f210, et f150 probable), un anneau fin (≈ 1 px, gris #2A2A2A à #3A3A3A) part à 1,1× la taille de la forme et s'élargit à ≈ 2× en 5-6 im en s'effaçant. Accent discret qui marque le temps sans flash.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Cercles guides concentriques",
+      "name_en": "concentric guide circles",
+      "t": "0:02.00-0:04.00",
+      "frames": "f120-f239",
+      "fps": 60,
+      "mechanics": "Sur le fond noir #080B0A, 2-3 cercles de 1 px gris très sombre (#1E1F1F à #2A2A2A), de 40 % à 180 % de la hauteur, en partie hors cadre, centrés sur la forme ; ils donnent profondeur et idée d'orbite sans concurrencer l'orange.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe adoucie d'une image",
+      "name_en": "one-frame dissolve cut",
+      "t": "0:04.00",
+      "frames": "f239-f241",
+      "fps": 60,
+      "mechanics": "Toutes les coupes (f240, f360, f480, f600, f720, f840) passent par une seule image mélangée à 50 % entre les deux scènes (étoile sur grille, blobs gris sur brun, blob sur mur rosé, cube sur mur). Pic d'énergie sur 2 im seulement. Fonctionnel mais non motivé : aucune forme ne fait le lien.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f240.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Chiffres en grille de pixels",
+      "name_en": "pixel-grid number reveal",
+      "t": "0:04.00-0:04.78",
+      "frames": "f240-f286",
+      "fps": 60,
+      "mechanics": "Grille crème d'environ 38 × 22 cellules (≈ 50 px) à filets noirs fins. À partir de f247, les cellules basculent du centre vers l'extérieur en ellipse qui s'agrandit ; le front de chaque ligne est décalé, d'où un peigne de traînées horizontales. Cellules noires d'abord, puis cellules terracotta d'un « 5.5 » en police bitmap. 39 im (0,65 s), ease-in-out (pic de vitesse f266-f270), posé à f286.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f240.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Dissolution en champ de particules",
+      "name_en": "dissolve to particle field",
+      "t": "0:06.00-0:06.13",
+      "frames": "f359-f368",
+      "fps": 60,
+      "mechanics": "À f360 le 5.5 s'assombrit en brun #5A2E22 (image mélangée) pendant qu'environ 2 000 points de 2-3 px (crème, rose, terracotta) couvrent tout le cadre ; dès f361 il ne reste que les particules, en dérive uniforme (énergie constante 5,9 jusqu'à f368). Les particules ne naissent pas des cellules : c'est un fondu, pas une désintégration.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules qui écrivent OPUS",
+      "name_en": "particles-to-text",
+      "t": "0:06.15-0:07.98",
+      "frames": "f369-f479",
+      "fps": 60,
+      "mechanics": "Convergence f369-f415 (46 im = 0,77 s), ease-in-out, pic de vitesse f382 ; chaque particule est un trait étiré dans le sens de sa vitesse. Le nuage se resserre en ellipse ≈ 50 % × 18 % du cadre (f400) puis se range dans les lettres OPUS (hauteur ≈ 22 %), lisibles f406-f408, immobiles à f415. Tremblement jusqu'à f447, explosion horizontale vers les bords f447-f467 (ease-in, pic f459), puis 11 im de noir. Départs hors grille musicale.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Métaballes",
+      "name_en": "metaballs (goo)",
+      "t": "0:08.00-0:10.00",
+      "frames": "f480-f599",
+      "fps": 60,
+      "mechanics": "7 disques crème sur terracotta : central r ≈ 9,5 % de la hauteur, 6 satellites r ≈ 3,5 à 5 %. Attraction lente f481-f509, premiers ponts gluants à f489 ; impulsion de fusion à f510 (8,5 s, pic f513) ; scission à f541 (9,0 s, pic f549) en bourgeons ; puis la « molécule » tourne lentement jusqu'à f599. Bords nets (flou + seuil alpha probable). Les deux impulsions tombent sur la grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f480.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Fond qui s'inverse à chaque scène",
+      "name_en": "background value flip per scene",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Crème → noir → grille crème puis noire → noir → terracotta → crème → noir → noir. Chaque coupe change la valeur du fond (clair/sombre ou saturé), si bien que chaque mesure se lit comme un bloc neuf malgré une palette de 3 couleurs.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette Claude à trois couleurs",
+      "name_en": "three-color brand palette",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Crème #F0EFE6, noir #090B0A, terracotta #CF6F57, plus un gris #D3D0C6 pour les mots secondaires. Aucune autre teinte en 15 s. Le terracotta porte toujours l'élément clé (disque, 5.5, bandeau, face 3D, « 5.5 » du carton) : la couleur désigne le sujet.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mur de mots en défilement alterné",
+      "name_en": "alternating marquee wall",
+      "t": "0:10.00-0:11.00",
+      "frames": "f601-f659",
+      "fps": 60,
+      "mechanics": "7 lignes au pas de 150 px (13,9 % de la hauteur), capitales de 106 px (9,8 %), mots MOTION DESIGN TYPE RHYTHM TIMING SPACE en alternance noir #090B0A / gris #D3D0C6. Défilement linéaire mesuré à 17-18 px par image (≈ 1 050 px/s = 55 % de la largeur par seconde), sens alterné une ligne sur deux. Net, sans flou, mais trop rapide pour être lu.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f603.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Arrêt sec sur le temps",
+      "name_en": "hard stop on the beat",
+      "t": "0:11.00-0:11.30",
+      "frames": "f660-f678",
+      "fps": 60,
+      "mechanics": "À f660 (11,0 s) toutes les lignes passent de 17 px à 1 px par image en une seule image, 3 im avant la grosse caisse. Ensuite les lignes visibles au-dessus et au-dessous du bandeau glissent d'environ 190 px en ease-in-out (pic 25 px par image, f662-f678) pour se recaler. Le gel brutal donne l'impact que le bandeau confirme.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f650.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Bandeau qui s'ouvre depuis une ligne",
+      "name_en": "band opening from a line",
+      "t": "0:11.00-0:11.97",
+      "frames": "f660-f718",
+      "fps": 60,
+      "mechanics": "Bandeau terracotta pleine largeur : filet de 1 px à f660, 299 px (27,7 % de la hauteur, centré à 50 %) en ≈ 8 im, ease-out. « OPUS 5.5 » crème, grotesque bold, capitale ≈ 15 % de la hauteur, monte depuis le bord bas du bandeau (masqué) f668-f676. Puis maintien parfaitement figé f691-f718 (0,45 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f650.jpg",
+      "illus": {"from": 657, "to": 677, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Cube de compétences",
+      "name_en": "skills cube",
+      "t": "0:12.00-0:14.00",
+      "frames": "f720-f839",
+      "fps": 60,
+      "mechanics": "Cube CSS 3D, face ≈ 56 % de la hauteur, caméra légèrement au-dessus (face supérieure gris foncé visible, inclinaison ≈ −15°). Faces FLUID (terracotta sur crème), TYPE (noir sur crème), 3D (crème sur terracotta), PARTICLES (blanc sur noir). Un quart de tour par temps à f720, f750, f780, f810 : ≈ 12 im (0,2 s), ease-out, pic de vitesse 2-5 im après le départ, flou directionnel horizontal f723-f726, petite reprise f734-f745 puis dérive lente.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f720.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement simulé",
+      "name_en": "simulated motion blur",
+      "t": "0:01.72-0:12.10",
+      "frames": "f103-f726",
+      "fps": 60,
+      "mechanics": "Trois façons de rendre la vitesse en image par image : échos gris décalés (2-3 copies) pendant la plongée f103-f115 ; flou directionnel pendant les quarts de tour du cube (f723-f726) et la rotation du triangle (f188-f191) ; particules dessinées en traits orientés selon la vitesse (f380-f402). Rien quand c'est lent.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f111.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Nom révélé par morceaux",
+      "name_en": "piecemeal name reveal",
+      "t": "0:04.00-0:15.00",
+      "frames": "f240-f899",
+      "fps": 60,
+      "mechanics": "Le nom du modèle se construit en quatre temps : « 5.5 » en pixels (4-6 s), « OPUS » en particules (6-8 s), « OPUS 5.5 » dans le bandeau (11 s), puis signature « Opus 5.5 » (14 s). Chaque étape réutilise une technique différente ; le spectateur assemble l'identité avant le carton.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final de signature",
+      "name_en": "end card",
+      "t": "0:14.00-0:15.06",
+      "frames": "f840-f899",
+      "fps": 60,
+      "mechanics": "« Opus » crème + « 5.5 » terracotta, grotesque bold casse mixte, capitale 158 px (14,6 %), 43,6 % de la largeur, centré à 43,5 % de la hauteur ; dessous « motion designer · showreel 2026 » (#858682, ≈ 2,5 %) et « EVERY FRAME IS CODE » (#545552, capitales espacées minuscules). Apparition f841-f847 (6 im), lisible ≈ 0,55 s, fondu au noir f877-f899 (22 im) par paliers de 2 im ; la musique continue.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de fin de scène",
+      "name_en": "end-of-scene holds",
+      "t": "0:04.78-0:11.97",
+      "frames": "f287-f718",
+      "fps": 60,
+      "mechanics": "Chaque scène se construit en ≈ 0,7 s puis se fige : 0,58 s immobiles sur le 5.5 (f287-f321), ≈ 0,5 s de tremblement sur OPUS (f415-f447), 0,45 s parfaitement figées sur OPUS 5.5 (f691-f718), 0,28 s sur le carton. ≈ 16 % du film sans mouvement réel, contraire à la règle « quelque chose bouge toutes les 0,5 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt d'une ligne sans contenu imposé : Claude a pris son propre nom (« Opus 5.5 ») comme sujet et a construit une révélation du nom en morceaux (5.5, OPUS, OPUS 5.5, signature)."},
+    {"kind": "structure", "insight": "« 15-second » + « showreel » → découpage en 7 blocs de 2 s, une compétence par bloc. Cette grille ronde (2 s, 0,5 s) correspond exactement à 1 mesure et 1 temps à 120 BPM : c'est elle qui rend la synchro possible."},
+    {"kind": "direction", "insight": "« Go all out » a produit un inventaire (morph, pixels, particules, métaballes, mur typo, cube) plutôt qu'une idée forte ; sans consigne de transitions, Claude a raccordé les scènes par des coupes d'une image fondue."},
+    {"kind": "build", "insight": "La musique n'est pas dans le prompt. Le morceau house à 120 BPM démarre à t = 0 avec une intro d'une mesure : ses temps tombent sur les multiples de 0,5 s de la timeline. Pour reproduire : écrire la timeline en temps (BPM) et choisir ou générer la piste au même tempo, drop sur la première coupe."},
+    {"kind": "qa", "insight": "Aucun contrôle des maintiens ni de la fin : 0,45 à 0,6 s figées en fin de scène et musique qui continue sous le fondu au noir. À préciser : « aucun plan figé plus de 0,3 s, dernier coup de musique sur le carton »."},
+    {"kind": "other", "insight": "Palette Anthropic (crème #F0EFE6, terracotta #CF6F57, noir) choisie sans consigne : l'auto-branding donne une cohérence que le prompt n'a jamais demandée."}
+  ],
+  "steal": [
+    "À 120 BPM, une scène = une mesure (120 im à 60 fps), un changement = un temps (30 im) ; lance chaque geste 2-3 im avant la grosse caisse.",
+    "Laisse le titre vivre sur l'intro musicale et fais tomber la première coupe pile sur le drop : la bande démo démarre avec la musique.",
+    "Ligne d'horizon tracée du centre (expo-out, 17 im), puis un mot qui monte au-dessus et un autre qui descend dessous, à un temps d'écart.",
+    "Sors d'un titre en plongeant dans une lettre noire : zoom ease-in ≈ ×40 en 24 im, échos de flou, le noir du glyphe devient le fond suivant.",
+    "Fais défiler un mur de mots en linéaire, arrête-le sec sur un temps, puis ouvre un bandeau couleur depuis une ligne pour poser le nom."
+  ],
+  "flaws": [
+    "Inventaire de démos (morph, pixels, particules, métaballes, cube) reliées par des coupes d'une image, sans transition motivée hormis la plongée dans le O.",
+    "Maintiens de 0,45 à 0,6 s en fin de scène, ≈ 16 % du film : la règle « rien ne s'arrête » est rompue.",
+    "Les particules ne naissent pas des pixels du 5.5 : simple fondu vers un champ aléatoire, et départs hors grille musicale.",
+    "Carton final lisible ≈ 0,55 s puis fondu au noir pendant que la musique continue : aucune conclusion sonore.",
+    "Cube CSS à mots et particules qui écrivent un nom : effets de démo vus partout."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : cas rare et propre de grille 120 BPM (1 scène = 1 mesure, 1 changement = 1 temps, image 3 im avant la grosse caisse). La plongée dans le O, les morphs, les quarts de tour du cube et l'arrêt sec du mur se relèvent image par image pour HyperFrames."
+  }
+}

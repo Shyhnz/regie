@@ -1,0 +1,4293 @@
+{
+ "chapter": "c01",
+ "title": "Styles",
+ "lead_file": "lead.md",
+ "summary": "233 vidéos rangées en 11 familles de style + 3 hors famille ; une entrée par famille (ordre : style cible d'abord, puis vidéos × note moyenne × utilité pour une promo SaaS) et une entrée finale « La cohérence d'un style ».",
+ "order_rule": "score = nombre de vidéos × note moyenne × utilité promo SaaS (typo 1,0 ; SaaS nuit 1,0 ; SaaS clair 0,9 ; néo-suisse 0,7 ; éditorial 0,7 ; aplats pop 0,6 ; nuit électrique 0,5 ; carnet 0,4 ; 3D 0,3 ; illustration 0,3 ; pixel 0,15). Exception voulue : la typographie cinétique (style cible 1600, 25/25 notées 4-5) passe en tête bien que le néo-suisse ait le score le plus haut (126).",
+ "method": "Classement manuel vidéo par vidéo d'après style, palette, typo, matière et résumé (SYN/c01/styles.jsonl ; analyses/*.json pour les 10 vidéos sans fiche de style). Comptages par script : notes et musique (videos.json), BPM, durée, plans (KB media work/<slug>/stats.json), courbes (études 60 fps), renvois (part des vidéos de la famille membres d'une entrée des chapitres 2-10, et rapport à la part dans le corpus).",
+ "template_notes": "Gabarit par famille (brief transversal, chapitre 1 + CAP méthode) : titre ; ce qui définit le style (palette 4-6 hex et rôles, polices et tailles, matières, mouvement) ; « Vu dans N vidéos, dont M notées 4 ou 5 » ; planche de style ; tableau | Vidéo | Ce qui la rend exemplaire | Palette | (4-8 lignes, depuis best) ; Quand le choisir ; tempo et cadence mesurés ; courbes signature ; transitions types (renvois c04) ; structure type (renvois c10) ; Règles du style (3-6 chiffrées) ; Verdict ; HyperFrames (GSAP) 15-30 lignes ; After Effects 3-5 puces (noms anglais d'abord) ; À cocher (3-6 cases). Règle musique : les modèles de calage viennent seulement des vidéos « animee-sur-la-musique ».",
+ "unclassified": [
+  {
+   "slug": "emollick-8661a8",
+   "title": "Recursion explained in genres",
+   "craft": 5,
+   "why": "pastiche de neuf genres (terminal, 8-bit, documentaire, film noir…) : le changement de style est le sujet ; à citer dans « La cohérence d'un style » (tient par 3 constantes d'habillage)"
+  },
+  {
+   "slug": "jacksonfall-54b2ac",
+   "title": "Branding agency showreel",
+   "craft": 3,
+   "why": "portfolio de branding, une police et une palette par marque"
+  },
+  {
+   "slug": "sab8a-364a5a",
+   "title": "Talking-head clip edit",
+   "craft": 4,
+   "why": "montage YouTube : un monde visuel différent par idée dite (lo-fi, manga, pop art)"
+  }
+ ],
+ "doubts": [
+  "zheke-38deff (5/5) classée en typographie cinétique pour sa grammaire (un verbe par temps, point fil rouge) alors que sa palette 4 couleurs est celle du néo-suisse.",
+  "reyzostyle-b55864, utopyaszx-1b2f94, jesscaroline7-1ff7cb, kloss-xyz-fe0c31 (documentaire de 2:52) : typographie cinétique plutôt que promo SaaS, les mots plein cadre dominant l'interface.",
+  "Les familles SaaS nuit et SaaS clair alternent souvent fonds sombres et clairs ; le partage suit le fond dominant et le rythme (plan médian 2,3 s contre 3,6 s).",
+  "andginja-333d32 (vraies images du studio) et sahildesigner23-ee3155 (3D chromée) gardées dans le néo-suisse pour leur gabarit HUD + chapitres par mesure.",
+  "reflex-cloud-72ffe5 (monochrome sombre à trame, IBM Plex Serif) et theviableedge-9065be (papier, grotesque) rangées en éditorial imprimé ; gautam-mer1-2ae354 (keynote sombre et clair) et itisrazak-3ad902 (livre, papier, néon) en SaaS clair.",
+  "arjunsh1607-93005d et influencer-seo-ce8c33 rangées en nuit électrique plutôt qu'en SaaS nuit ; buildfastwithai-53234e (risographie) en aplats pop plutôt qu'en éditorial ; allforbigfire-86ff3c (anime 3D cel-shading) en 3D plutôt qu'en illustration."
+ ],
+ "families": [
+  {
+   "rank": 1,
+   "key": "typo-cinetique",
+   "title": "La typographie cinétique à accent unique, façon 1600",
+   "title_en": "kinetic typography, single accent, word-by-word on the beat",
+   "entry_file": "entries/01-typo-cinetique.md",
+   "scope": "Le mot est l'image : des mots ou phrases courtes plein cadre, sur fond uni (noir chaud, crème ou une couleur de marque), un seul accent chaud, calés mot à mot sur le temps ou la voix, avec quelques inserts d'interface ou de chiffres comme preuves. C'est la famille du style cible (vidéo de l'agence 1600 : noir chaud, orange #FC833B, typo calée sur la voix) et la seule dont toutes les vidéos sont notées 4 ou 5. Quand la choisir : promo SaaS de 15 à 45 s, manifeste, lancement, présentation de soi ; public large ; ton affirmé.",
+   "criteres_de_classement": "Plus de la moitié des plans sont des mots plein cadre ; fond uni ; 1 accent (2 au plus) ; peu ou pas de HUD décoratif ; l'interface n'apparaît que comme preuve.",
+   "n": 25,
+   "n45": 25,
+   "n5": 3,
+   "members": [
+    "1littlecoder-9fef89",
+    "anthonyriera-9b1b2a",
+    "apoorvjain25-d24184",
+    "astrodevil-3f2054",
+    "blushpetal795-0c85c2",
+    "davidmarcus-a28a60",
+    "devius-maximus-beab45",
+    "gdgtify-287ddf",
+    "heyiammallik-e72d17",
+    "jesscaroline7-1ff7cb",
+    "jhylee95-e1152f",
+    "kloss-xyz-15182a",
+    "kloss-xyz-fe0c31",
+    "majin-appsheet-2d3c1a",
+    "melvynx-6cde6c",
+    "micheleharmonic-77628e",
+    "reyzostyle-b55864",
+    "samaote-5e2fc2",
+    "souravbhar871-61f424",
+    "steventey-0d20e4",
+    "sudiyasa-f48ac9",
+    "tankazunori0914-0fc886",
+    "ultimaxbt-bbebf5",
+    "utopyaszx-1b2f94",
+    "zheke-38deff"
+   ],
+   "variantes": [
+    "Noir chaud + orange (le plus proche de 1600) : steventey-0d20e4, astrodevil-3f2054, anthonyriera-9b1b2a, blushpetal795-0c85c2, tankazunori0914-0fc886, apoorvjain25-d24184, kloss-xyz-15182a, kloss-xyz-fe0c31, sudiyasa-f48ac9, reyzostyle-b55864 (noir + blanc + vert de preuve).",
+    "Crème ou blanc + un accent, grotesque XXL : melvynx-6cde6c, davidmarcus-a28a60 (monochrome), souravbhar871-61f424, ultimaxbt-bbebf5, utopyaszx-1b2f94, heyiammallik-e72d17 (cartes rouge / crème / noir).",
+    "Un fond de couleur de marque : jhylee95-e1152f (indigo), 1littlecoder-9fef89 (bleu), gdgtify-287ddf (vert profond), jesscaroline7-1ff7cb (orange).",
+    "Point d'accent fil rouge (le point devient iris, virgule, logo) : zheke-38deff, 1littlecoder-9fef89, melvynx-6cde6c, blushpetal795-0c85c2, ultimaxbt-bbebf5.",
+    "Pastiches et clips : samaote-5e2fc2 (clip de paroles), majin-appsheet-2d3c1a (carton Evangelion), micheleharmonic-77628e (anime edit)."
+   ],
+   "evidence": {
+    "videos": 25,
+    "notes": {
+     "4": 22,
+     "5": 3
+    },
+    "notees_4_5": 25,
+    "notees_5": 3,
+    "note_moyenne": 4.12,
+    "musique": {
+     "animee-sur-la-musique": 18,
+     "sans-musique": 3,
+     "partielle": 2,
+     "voix-off": 1,
+     "musique-posee": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 18,
+     "mediane": 120.0,
+     "quartiles": [
+      120.0,
+      126.05
+     ],
+     "frequents": [
+      [
+       120,
+       12
+      ],
+      [
+       150,
+       2
+      ],
+      [
+       128,
+       2
+      ],
+      [
+       100,
+       1
+      ],
+      [
+       158,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 20.1,
+     "quartiles": [
+      15.05,
+      38.06
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 1.1,
+     "n_videos": 21,
+     "animees_sur_la_musique": 0.5,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 2,
+    "part_image_figee_mediane": 0.29,
+    "temps_mort_juge": {
+     "un-peu": 20,
+     "aucun": 2,
+     "beaucoup": 3
+    },
+    "fps": {
+     "60/1": 17,
+     "30/1": 8
+    },
+    "typo_traits_videos": {
+     "capitales": 19,
+     "mono": 18,
+     "serif": 12,
+     "casse phrase/minuscules": 10,
+     "condensée": 10,
+     "italique": 7,
+     "étendue/large": 7,
+     "point final": 3,
+     "manuscrite": 1
+    },
+    "matieres_videos": {
+     "flou de mouvement": 15,
+     "lueur/halo": 15,
+     "vignettage": 14,
+     "aplats nets": 10,
+     "grain": 8,
+     "flash/surexposition": 7,
+     "aberration/glitch RVB": 6,
+     "profondeur de champ": 5,
+     "grille fine": 5
+    },
+    "polices_citees_videos": {
+     "Inter": 12,
+     "Anton": 7,
+     "Inter Display": 6,
+     "Instrument Serif": 4,
+     "Archivo Black": 3,
+     "Bricolage": 2,
+     "Playfair": 2,
+     "Satoshi": 2,
+     "Noto": 2,
+     "Mincho": 2
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "noir",
+      "videos": 25,
+      "hex_frequents": [
+       "#111111",
+       "#141414",
+       "#0A0A0A"
+      ]
+     },
+     {
+      "teinte": "blanc-creme",
+      "videos": 24,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#FBFBF9",
+       "#F5F5F5"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 17,
+      "hex_frequents": [
+       "#F0583A",
+       "#EF3507",
+       "#7C1F07"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 16,
+      "hex_frequents": [
+       "#808080",
+       "#8F8A86",
+       "#6E6863"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 12,
+      "hex_frequents": [
+       "#E8A060",
+       "#F3D9B0",
+       "#F28C28"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 9,
+      "hex_frequents": [
+       "#1E1BA6",
+       "#D8DAF8",
+       "#D3D5F6"
+      ]
+     },
+     {
+      "teinte": "cyan-teal",
+      "videos": 8,
+      "hex_frequents": [
+       "#2CE5B5",
+       "#22E0F0",
+       "#2FB5E8"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#0B0908",
+      "role": "fond noir chaud (astrodevil-3f2054 ; #000000 chez steventey-0d20e4)"
+     },
+     {
+      "hex": "#F44800",
+      "role": "accent unique orange : curseur, point, mot clé, flash (steventey-0d20e4 ; #F2552E astrodevil, #EF3507 anthonyriera)"
+     },
+     {
+      "hex": "#EDE8E3",
+      "role": "texte principal blanc cassé sur noir (astrodevil-3f2054)"
+     },
+     {
+      "hex": "#818181",
+      "role": "seconde moitié grise des titres, mots déjà dits (reyzostyle-b55864, davidmarcus-a28a60)"
+     },
+     {
+      "hex": "#3A1410",
+      "role": "lueur radiale rouge sombre derrière le mot (astrodevil-3f2054)"
+     },
+     {
+      "hex": "#4ADE80",
+      "role": "couleur de preuve, rare : coches, gains (reyzostyle-b55864)"
+     }
+    ],
+    "typographie": "Grotesque très grasse (Inter Display Black, Satoshi, Plus Jakarta ExtraBold) en casse de phrase avec point final pour les phrases, ou condensée Black (Anton) en capitales pour les mots-chocs à 20-40 % de la hauteur ; mono capitales espacées ≈ 1-1,5 % pour étiquettes et compteurs ; une serif (souvent italique, Instrument Serif) en voix d'accent dans 12 vidéos sur 25.",
+    "tempo_cadence": "18 vidéos sur 25 animées sur la musique ; 120 BPM dans 12 d'entre elles (médiane 120, quartiles 120-126). Durée médiane 20 s (quartiles 15-38 s). Plan médian 1,1 s, 0,5 s dans les vidéos calées. Un mot par temps ou par croche, rafales à la croche avant le drop (steventey-0d20e4 : 8 mots à 15 im à 120 BPM ; zheke-38deff : rafale 1/16 puis 1/32).",
+    "courbes_signature": "Études 60 fps (steventey-0d20e4, zheke-38deff, samaote-5e2fc2) : entrées de mots power2.out à power3.out en 10-18 im ; sorties power2.in à power4.in en 6-15 im qui finissent sur la coupe ; ce qui naît d'un point en ressort amorti (ζ ≈ 0,5, dépassement 12-15 %, repos ≈ 30 im = 1 temps à 120 BPM) ou elastic.out(1, 0.5) pour l'impact des lettres ; compteurs power3.out de 33 à 140 im. Dépassement ou rebond décrit dans 15 vidéos sur 25.",
+    "transitions_types": "Plongée dans un glyphe (40 %), filé (28 %, 2× le corpus), poussée et volet plein (28 %), flash ou surexposition (28 %), iris né d'un point (28 %), objet relais (24 %) ; peu de fondus (16 % contre 29 % dans le corpus). Entre mots, la coupe sèche sur le temps domine mais est rarement relevée comme technique.",
+    "structure_type": "Arc problème → solution → preuves → appel (40 %, 1,9× le corpus) ; chute « constat puis retournement » (24 %, 2,5×) ; signature finale (40 %) ; serre-livres et boucle (32 %).",
+    "score_ordre": 103.0
+   },
+   "best": [
+    {
+     "slug": "steventey-0d20e4",
+     "title": "Dub promo video",
+     "url": "https://prompt-motion.com/steventey-0d20e4",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : transitions motivées en chaîne (URL compressée en point puis éclair), rafale de 8 mots à la croche, un seul orange de marque #F44800 sur noir, chaque coupe 4 im avant la grosse caisse à 120 BPM."
+    },
+    {
+     "slug": "zheke-38deff",
+     "title": "Kinetic type showreel",
+     "url": "https://prompt-motion.com/zheke-38deff",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : chaque verbe s'exécute (SQUASH s'écrase, BLUR glisse flou), point orange qui relie tout jusqu'à la boucle, coupes à ±1 image d'une grille 128 BPM."
+    },
+    {
+     "slug": "samaote-5e2fc2",
+     "title": "Synced lyrics motion video",
+     "url": "https://prompt-motion.com/samaote-5e2fc2",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : clip de paroles, mots posés sur les syllabes à ±2 im, un chapitre par mesure (6/8 à 158 croches/min), le soleil comme unique personnage."
+    },
+    {
+     "slug": "reyzostyle-b55864",
+     "title": "Chunku product promo",
+     "url": "https://prompt-motion.com/reyzostyle-b55864",
+     "craft": 4,
+     "why": "4/5 : ouverture au niveau 1600 (GUESS. FILM. POST. un mot par croche, slam « Stop guessing. » sur le drop) en 10 s, noir et blanc, titres à seconde moitié grise."
+    },
+    {
+     "slug": "heyiammallik-e72d17",
+     "title": "Portfolio motion reel",
+     "url": "https://prompt-motion.com/heyiammallik-e72d17",
+     "craft": 4,
+     "why": "4/5 : manifeste d'un mot par carte sur la croche (I BUILD / COMPLEX / PRODUCTS…), mots à 90 % de la largeur, point rouge qui devient iris."
+    },
+    {
+     "slug": "jhylee95-e1152f",
+     "title": "Supademo launch video",
+     "url": "https://prompt-motion.com/jhylee95-e1152f",
+     "craft": 4,
+     "why": "4/5 : dix verbes produit en minuscules, un toutes les 2 temps à 120 BPM, chacun démontre sa fonction ; point indigo de la marque."
+    },
+    {
+     "slug": "astrodevil-3f2054",
+     "title": "Studio1 intro showreel",
+     "url": "https://prompt-motion.com/astrodevil-3f2054",
+     "craft": 4,
+     "why": "4/5 : manifeste ligne par ligne, chiffres qui roulent, rafale de 8 services au demi-temps, logo révélé dans le silence puis flash sur l'impact grave (128 BPM)."
+    },
+    {
+     "slug": "davidmarcus-a28a60",
+     "title": "Lightspark social promo video",
+     "url": "https://prompt-motion.com/davidmarcus-a28a60",
+     "craft": 4,
+     "why": "4/5 : typographie suisse monochrome seule, hiérarchie par la valeur (ligne active noire, précédentes grises), un code de devise par demi-temps."
+    }
+   ],
+   "planche": [
+    "steventey-0d20e4@11.7",
+    "zheke-38deff@7.17",
+    "samaote-5e2fc2@19.68",
+    "reyzostyle-b55864@1.68",
+    "heyiammallik-e72d17@2.8",
+    "jhylee95-e1152f@9.62",
+    "astrodevil-3f2054@6.7",
+    "davidmarcus-a28a60@16.9",
+    "apoorvjain25-d24184@19.5"
+   ],
+   "planche_file": "illus/style-typo-cinetique.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-typo-cinetique.jpg steventey-0d20e4@11.7 zheke-38deff@7.17 samaote-5e2fc2@19.68 reyzostyle-b55864@1.68 heyiammallik-e72d17@2.8 jhylee95-e1152f@9.62 astrodevil-3f2054@6.7 davidmarcus-a28a60@16.9 apoorvjain25-d24184@19.5 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-typo-cinetique.jpg (9 vignettes vérifiées : Conversions., SWARM, paroles sur le soleil, Stop guessing., RELIABLE, measure., 11,988, Open. Neutral., YOU BLINKED.). Bande d'appoint possible : rafale de steventey-0d20e4 f645-f749 (10,75-12,50 s).",
+   "links": [
+    {
+     "chapter": "c03",
+     "entry": "03-calage",
+     "title": "Le calage mot à mot : un mot par temps, mot à mot sur la voix (word-per-beat kinetic type, eighth-note word montage, voice-synced word-by-word captions, karaoke highlight)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "01-masque",
+     "title": "La montée sous masque (masked rise, baseline mask reveal, staggered line / word / letter rise)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "05-vol",
+     "title": "Lettres en vol : chute, rebond, écrasement, trajectoire courbe (letter drop, bounce, squash and stretch, curved fly-in, whip-in with motion blur)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "02-echelle",
+     "title": "Le claquement d'échelle : slam, tampon, pop (scale slam, stamp slam, punch-in, scale pop)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "11-accent",
+     "title": "Le mot accent : couleur, italique, deux tons (accent keyword, italic serif accent word, two-tone headline)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "13-semantique",
+     "title": "Le mot qui fait ce qu'il dit (semantic typography, self-demonstrating ease, words acting their meaning)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "03-element-par-temps",
+     "title": "Un élément par temps, les détails sur les demi-temps (one word per beat, eighth-note word cuts, rhythmic hierarchy)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "02-temps-fort",
+     "title": "Le temps fort : montée, silence d'un temps, impact sur la révélation (riser, pre-drop silence, drop on the reveal, hero hit)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "06-acceleration-rafale",
+     "title": "L'accélération par subdivisions et la rafale (accelerando, subdivision build-up, rapid-fire burst, burst and breathe)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "12-calage-voix",
+     "title": "Le calage sur la voix off (voice-over sync, karaoke captions, picture leads the voice, dead-air jump cuts)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "06-coupe-sur-le-temps",
+     "title": "La coupe sèche sur le temps (hard cut on the beat, polarity flip, black-frame blink, beat-cut montage)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "01-objet-relais-complement",
+     "title": "L'objet relais (object morph, match cut d'objet, shared element)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "02-plongee-eclair-complement",
+     "title": "La plongée éclair (zoom-through, glyph counter dive, scale-to-fill, shrink-back)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "08-file",
+     "title": "Le filé (whip pan, directional motion blur, echo whip)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "02-arc-probleme-solution",
+     "title": "L'arc de pitch : problème → solution → preuves → appel (problem-solution-proof-CTA arc, launch narrative)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "07-chute",
+     "title": "La chute : constat puis retournement (punchline, setup-twist, rule of three, label flip)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "02-palette",
+     "title": "La palette fermée et l'accent qui a un sens (restricted palette, single accent color, semantic color coding)"
+    },
+    {
+     "chapter": "c14",
+     "entry": "10-steventey-0d20e4",
+     "title": "Dub promo video — @steventey"
+    },
+    {
+     "chapter": "c14",
+     "entry": "14-zheke-38deff",
+     "title": "Kinetic type showreel — @zheke"
+    },
+    {
+     "chapter": "c14",
+     "entry": "09-samaote-5e2fc2",
+     "title": "Synced lyrics motion video — @samaote"
+    }
+   ]
+  },
+  {
+   "rank": 2,
+   "key": "neo-suisse-hud",
+   "title": "Le néo-suisse pop à HUD de bande démo",
+   "title_en": "neo-Swiss flat colour, camera HUD, showreel template",
+   "entry_file": "entries/02-neo-suisse-hud.md",
+   "scope": "Le gabarit par défaut d'Opus 5.5 pour « showreel… go all out » : 15 s = 8 mesures à 128 BPM, un chapitre numéroté par mesure, aplats en 3 à 5 couleurs (noir chaud, crème, vermillon, outremer, citron), grotesque extra-grasse en capitales, HUD de caméra permanent (repères d'angle, timecode, mono). C'est la famille la plus nombreuse et celle qui compte le plus de 5/5 (8). Quand la choisir : bande démo, ouverture d'agence, promo « déguisée en showreel », chapitres d'une promo SaaS qui veut montrer de la virtuosité ; à éviter quand le message doit primer sur la démonstration (effet catalogue).",
+   "criteres_de_classement": "Aplats multicolores à rôles tournants, HUD de cadre ou de timeline, chapitres numérotés calés sur la mesure, démonstrations de formes (grille, morph, particules, 3D simple).",
+   "n": 43,
+   "n45": 43,
+   "n5": 8,
+   "members": [
+    "3xtihor-0f6911",
+    "ajith-io-b5626e",
+    "andginja-333d32",
+    "ayushunleashed-ece3e3",
+    "blue-clarity-ef56d0",
+    "chatgptastra-0d95c7",
+    "codestackr-c071bf",
+    "crazyalphaaa-bc7e75",
+    "eyishazyer-af035b",
+    "ghinaiya-nirmal-5d8fec",
+    "grace-sunnyy-29bc61",
+    "hanifproduktif-54bdee",
+    "himanshutwtxs-5f4b43",
+    "itsuki-dev-10942d",
+    "jasonzhou1993-8595e0",
+    "johnsavage-ai-b091c0",
+    "leonkohli-6dc01b",
+    "levabashidze-2d713a",
+    "lukasersil-0ed38e",
+    "m1n9-k7-ff9ab9",
+    "motiondsgnr-9dcfa6",
+    "mrtanviir-132457",
+    "ndhabarde11-f155b4",
+    "pankajkumar-dev-0bee87",
+    "raphaelaubryy-4b137e",
+    "rendesr-86be44",
+    "roundtablespace-d3a1be",
+    "safarkhanshuvo-ffd52d",
+    "sahildesigner23-ee3155",
+    "samuel-spitz-974923",
+    "shinskinakamoto-20190b",
+    "shneural-2abdfa",
+    "stephanlivera-df17a2",
+    "sudeepsd-1a3485",
+    "sudo-kiran-49176d",
+    "tequilafunks-97f6c9",
+    "teslachartz-c58b32",
+    "tolgayhickiran-e90799",
+    "topi-003-9ca6b5",
+    "umangratani-57f86a",
+    "vanshwtfff-db0466",
+    "web3wesley-7bb108",
+    "zaqailo-212ad3"
+   ],
+   "variantes": [
+    "HUD de caméra et chapitres numérotés (le gros du groupe) : grace-sunnyy-29bc61, sudo-kiran-49176d, crazyalphaaa-bc7e75, ghinaiya-nirmal-5d8fec, eyishazyer-af035b, itsuki-dev-10942d, rendesr-86be44, stephanlivera-df17a2, codestackr-c071bf…",
+    "Bauhaus primaire et géométrie (rouge, bleu, jaune ; cercle, carré, triangle) : lukasersil-0ed38e, tequilafunks-97f6c9, web3wesley-7bb108, ajith-io-b5626e, leonkohli-6dc01b, umangratani-57f86a, mrtanviir-132457, pankajkumar-dev-0bee87, vanshwtfff-db0466.",
+    "Pédagogique : chaque mot exécute le principe qu'il nomme : roundtablespace-d3a1be, levabashidze-2d713a, chatgptastra-0d95c7, himanshutwtxs-5f4b43, hanifproduktif-54bdee, jasonzhou1993-8595e0, blue-clarity-ef56d0.",
+    "Promo de produit sous gabarit de showreel : sudeepsd-1a3485 (Flexprice), andginja-333d32 (studio, vraies images), sahildesigner23-ee3155 (3D chromée)."
+   ],
+   "evidence": {
+    "videos": 43,
+    "notes": {
+     "4": 35,
+     "5": 8
+    },
+    "notees_4_5": 43,
+    "notees_5": 8,
+    "note_moyenne": 4.19,
+    "musique": {
+     "animee-sur-la-musique": 40,
+     "partielle": 1,
+     "musique-posee": 1,
+     "sans-musique": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 40,
+     "mediane": 128.0,
+     "quartiles": [
+      120.0,
+      128.0
+     ],
+     "frequents": [
+      [
+       128,
+       25
+      ],
+      [
+       120,
+       13
+      ],
+      [
+       130,
+       1
+      ],
+      [
+       129,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 15.06,
+     "quartiles": [
+      15.06,
+      15.06
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 1.29,
+     "n_videos": 43,
+     "animees_sur_la_musique": 1.11,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 0,
+    "part_image_figee_mediane": 0.13,
+    "temps_mort_juge": {
+     "aucun": 13,
+     "un-peu": 30
+    },
+    "fps": {
+     "60/1": 33,
+     "30/1": 10
+    },
+    "typo_traits_videos": {
+     "capitales": 41,
+     "mono": 37,
+     "étendue/large": 22,
+     "serif": 20,
+     "italique": 19,
+     "condensée": 12,
+     "casse phrase/minuscules": 9,
+     "manuscrite": 2
+    },
+    "matieres_videos": {
+     "flou de mouvement": 41,
+     "aplats nets": 30,
+     "vignettage": 26,
+     "grain": 24,
+     "lueur/halo": 21,
+     "aberration/glitch RVB": 20,
+     "flash/surexposition": 11,
+     "grille fine": 8,
+     "trame/demi-teinte": 7
+    },
+    "polices_citees_videos": {
+     "Inter": 19,
+     "Instrument Serif": 10,
+     "Archivo": 7,
+     "Archivo Black": 6,
+     "Anton": 6,
+     "Archivo Expanded": 3,
+     "Inter Display": 3,
+     "Montserrat": 2,
+     "Caveat": 2,
+     "Monument Extended": 2
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "blanc-creme",
+      "videos": 43,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#F2EEE6",
+       "#F4F1E9"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 42,
+      "hex_frequents": [
+       "#111111",
+       "#0A0A0C",
+       "#141414"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 36,
+      "hex_frequents": [
+       "#EF3F22",
+       "#F0907E",
+       "#EC4434"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 36,
+      "hex_frequents": [
+       "#2F31F6",
+       "#343CF4",
+       "#3A3AF0"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 22,
+      "hex_frequents": [
+       "#8A8A8A",
+       "#2A2A2A",
+       "#5A5753"
+      ]
+     },
+     {
+      "teinte": "lime",
+      "videos": 19,
+      "hex_frequents": [
+       "#D4F53C",
+       "#D6FF42",
+       "#7A8657"
+      ]
+     },
+     {
+      "teinte": "jaune-or",
+      "videos": 14,
+      "hex_frequents": [
+       "#F3C744",
+       "#FEC42F",
+       "#FFD33C"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#0F0F0D",
+      "role": "fond noir chaud (levabashidze-2d713a ; #131110 grace-sunnyy-29bc61)"
+     },
+     {
+      "hex": "#F3EEE6",
+      "role": "crème : fonds clairs et texte sur noir"
+     },
+     {
+      "hex": "#DE5332",
+      "role": "vermillon : balle, point final, fond de chapitre (#EF4A3A roundtablespace, #FF4B1F web3wesley)"
+     },
+     {
+      "hex": "#3134F0",
+      "role": "outremer : formes, fonds de chapitre (#2D2DF5, #305CF8)"
+     },
+     {
+      "hex": "#D4F53C",
+      "role": "citron : soulignements, fonds de mot (19 vidéos sur 43)"
+     },
+     {
+      "hex": "#F3C744",
+      "role": "jaune Bauhaus, variante primaire (14 vidéos)"
+     }
+    ],
+    "typographie": "Grotesque très grasse étendue ou condensée en capitales (Archivo Black / Archivo VF largeur 125, Anton, Inter Display Black, Monument Extended) à 15-50 % de la hauteur, axes variables animés ; serif italique (Instrument Serif) pour « Claude. » et la signature (19 vidéos) ; mono capitales espacées ≈ 1-1,5 % pour le HUD (37 vidéos sur 43).",
+    "tempo_cadence": "40 vidéos sur 43 animées sur la musique ; 128 BPM dans 25, 120 BPM dans 13. Durée 15,06 s pour presque toutes (8 mesures à 128 BPM). Plan médian 1,29 s (1,11 s dans les vidéos calées) ; image figée médiane 13 % (la plus basse avec la 3D) ; aucun plan-séquence. Une scène par mesure, un geste par temps, détails sur les croches.",
+    "courbes_signature": "Neuf études 60 fps : entrées expo.out ou power4.out en 8-26 im ; plongées et sorties qui accélèrent jusqu'à la coupe (power2.in à power4.in, expo.in) en 4-14 im ; ressorts d'objets back.out(1.7) à back.out(3) ou elastic.out(1, 0.3) ; transformations d'exactement 1 temps en expo.inOut ou power3.inOut (14 im à 30 fps, 28 im à 60 fps) ; balles en power1.in (chute) + sine.out (montée). Dépassement chiffré médian ≈ 40 % (17 mesures citées).",
+    "transitions_types": "Plongée dans un glyphe ou un objet (79 % des vidéos, 2,1× le corpus), compression puis éclosion (63 %), iris né d'un point (60 %), stores et bandes (44 %), objet relais : chaque chapitre naît de la forme du précédent.",
+    "structure_type": "Un chapitre par mesure (72 %, 2,1× le corpus), signature finale (56 %), serre-livres et boucle (37 %), dispositif unique (21 %).",
+    "score_ordre": 126.1
+   },
+   "best": [
+    {
+     "slug": "grace-sunnyy-29bc61",
+     "title": "Keyframe motion design reel",
+     "url": "https://prompt-motion.com/grace-sunnyy-29bc61",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : une seule horloge (scène = mesure, transition = croche), son généré sur la même grille avec silence écrit, interface de timeline brutaliste permanente."
+    },
+    {
+     "slug": "levabashidze-2d713a",
+     "title": "Swiss-style motion showreel",
+     "url": "https://prompt-motion.com/levabashidze-2d713a",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : système suisse en 4 couleurs qui s'échangent le fond, chaque principe démontré par sa propre courbe (EASE IN. en expo.in), chapitres sur la mesure."
+    },
+    {
+     "slug": "lukasersil-0ed38e",
+     "title": "Motion techniques showreel",
+     "url": "https://prompt-motion.com/lukasersil-0ed38e",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : fil Kandinsky (point → ligne → plan → volume), triade bleu/rouge/jaune liée aux formes, chaque chapitre né du précédent, 128 BPM."
+    },
+    {
+     "slug": "roundtablespace-d3a1be",
+     "title": "Easing and morphing showreel",
+     "url": "https://prompt-motion.com/roundtablespace-d3a1be",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : chaque mot bouge selon la courbe qu'il nomme, chaque objet devient le suivant, tout sur la grille 128 BPM."
+    },
+    {
+     "slug": "sudo-kiran-49176d",
+     "title": "Claude motion design showreel",
+     "url": "https://prompt-motion.com/sudo-kiran-49176d",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : huit chapitres d'une mesure à 120 BPM, palette de 6 couleurs qui tourne (un fond par chapitre), transitions toutes motivées."
+    },
+    {
+     "slug": "tequilafunks-97f6c9",
+     "title": "Claude motion design reel",
+     "url": "https://prompt-motion.com/tequilafunks-97f6c9",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : la courbe d'accélération comme fil rouge, Archivo variable dont les axes sont animés, accelerando final 15-15-7,5-3,75 im."
+    },
+    {
+     "slug": "web3wesley-7bb108",
+     "title": "Type, form, space showreel",
+     "url": "https://prompt-motion.com/web3wesley-7bb108",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : un seul vermillon #FF4B1F porte toute la continuité (point final, O de FORM, balle), CV en serre-livres, balle sur chaque temps."
+    },
+    {
+     "slug": "sahildesigner23-ee3155",
+     "title": "3D motion design showreel",
+     "url": "https://prompt-motion.com/sahildesigner23-ee3155",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : orange, crème, noir ; le point protagoniste du premier au dernier plan ; plongée dans le O vers des métaballes chromées."
+    }
+   ],
+   "planche": [
+    "grace-sunnyy-29bc61@8.15",
+    "levabashidze-2d713a@10.44",
+    "lukasersil-0ed38e@10.9",
+    "roundtablespace-d3a1be@11.85",
+    "sahildesigner23-ee3155@6.72",
+    "sudo-kiran-49176d@5.19",
+    "tequilafunks-97f6c9@7.29",
+    "web3wesley-7bb108@7.58",
+    "stephanlivera-df17a2@6.78"
+   ],
+   "planche_file": "illus/style-neo-suisse-hud.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-neo-suisse-hud.jpg grace-sunnyy-29bc61@8.15 levabashidze-2d713a@10.44 lukasersil-0ed38e@10.9 roundtablespace-d3a1be@11.85 sahildesigner23-ee3155@6.72 sudo-kiran-49176d@5.19 tequilafunks-97f6c9@7.29 web3wesley-7bb108@7.58 stephanlivera-df17a2@6.78 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-neo-suisse-hud.jpg (9 vignettes vérifiées, toutes de vidéos notées 5 sauf stephanlivera-df17a2) ; remplace l'ancienne planche d'essai du même nom.",
+   "links": [
+    {
+     "chapter": "c02",
+     "entry": "01-habillage-persistant",
+     "title": "L'habillage persistant : HUD, chapitres et gabarit fixe (persistent frame chrome, HUD overlay, chapter labels, fixed layout template)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "01-chapitre-par-mesure",
+     "title": "Le chapitrage : un chapitre par mesure (chaptering, one bar per chapter, numbered sections, step tabs)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "01-grille-tempo",
+     "title": "La grille de tempo : une horloge, une scène par mesure (beat grid, BPM frame grid, shared beat clock, bar-locked scenes)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "10-geste-physique",
+     "title": "Le geste physique sur le temps : anticipation, chute, rebond (bouncing ball on the beat, squash and stretch, anticipation wind-up)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "11-systeme-courbes",
+     "title": "Le système de courbes : expo-out pour entrer, ease-in pour sortir (easing system, damped springs, spacing, hold-keyframe snap)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "02-plongee-eclair-complement",
+     "title": "La plongée éclair (zoom-through, glyph counter dive, scale-to-fill, shrink-back)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "03-compression-eclosion",
+     "title": "La compression : en point ou en ligne, puis l'éclosion (implode to a point, squash to line, CRT power-off/on, implode-then-explode)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "04-iris-ne-dun-point",
+     "title": "L'iris né d'un point (iris wipe, circular reveal, dot-to-fullscreen, iris-out)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "07-stores-bandes",
+     "title": "Les stores et les bandes en escalier (venetian blinds, staggered stripe wipe, stair-step wipe)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "01-fonds-pleins",
+     "title": "Les fonds pleins qui changent sur le temps (full-bleed color blocking, background color rotation, figure-ground swap on the beat)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "06-morph",
+     "title": "Le morphing de forme : un objet qui change au lieu de couper (shape morph, path morph, single morphing container, metaballs, dot-to-pill)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "08-grilles",
+     "title": "La grille générative en onde : tuiles, Truchet, trame de points (procedural tile grid, Truchet rotation wave, halftone dot field ripple, radial stagger)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "11-nuage-forme",
+     "title": "Le nuage de particules qui prend forme (particle swarm into text or logo, point-cloud morph, flow field, disintegration)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "09-interlettrage",
+     "title": "L'interlettrage et les axes variables (tracking-in, tracking expansion, variable-font weight / width wave)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "14-motif",
+     "title": "Le texte en motif : anneaux, orbites, échos, bandeaux (text ring, orbiting circular text, outline echo stack, kinetic marquee rows)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "09-outil-animation-ecran",
+     "title": "Le logiciel d'animation à l'écran : courbes d'easing, timeline, poignées (live easing graph, fake animation timeline, design-tool transform gizmo)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "06-forme-generative",
+     "title": "La forme 3D générative : nuage de points, filaire et métaballes (point-cloud morph, wireframe mesh, metaballs, dotted globe, shatter and reassemble)"
+    },
+    {
+     "chapter": "c14",
+     "entry": "02-grace-sunnyy-29bc61",
+     "title": "Keyframe motion design reel — @Grace_sunnyy"
+    },
+    {
+     "chapter": "c14",
+     "entry": "04-levabashidze-2d713a",
+     "title": "Swiss-style motion showreel — @levabashidze"
+    },
+    {
+     "chapter": "c14",
+     "entry": "13-web3wesley-7bb108",
+     "title": "Type, form, space showreel — @Web3Wesley"
+    }
+   ]
+  },
+  {
+   "rank": 3,
+   "key": "saas-nuit",
+   "title": "La promo SaaS sur fond nuit : interface, halo et accent néon",
+   "title_en": "dark SaaS promo, glowing UI, single neon accent",
+   "entry_file": "entries/03-saas-nuit.md",
+   "scope": "L'interface du produit, reconstruite, est le héros : cartes sur fond nuit (marine, violet, noir) avec halo radial, un accent néon ou or (vert, violet, or, citron), chapitres et preuves chiffrées, respirations claires possibles. Le rythme est celui d'une promo (plan médian 2,3 s), plus vif que la démo claire. Quand la choisir : lancement de produit SaaS, fintech, outil dev ou IA, 15 à 30 s, public d'acheteurs ; à éviter si l'interface ne peut pas être agrandie (texte d'interface minuscule = premier défaut de la famille).",
+   "criteres_de_classement": "Fond sombre dominant, interface ou cartes d'interface dans plus de la moitié des plans, lueur ou halo (29 vidéos sur 32), un accent de marque.",
+   "n": 32,
+   "n45": 25,
+   "n5": 0,
+   "members": [
+    "0xfemyn-e114d3",
+    "adamdesgns-478d6d",
+    "agonaliu-466a8f",
+    "aistocksavvy-3fb9f5",
+    "aschapmann-131210",
+    "brainextends-e19ac3",
+    "bthreeagency-b9b8d9",
+    "cansincengiz-me-cf68dd",
+    "ceowinkz-7c776b",
+    "charlesmendez-73b6e4",
+    "daniel-haida-8691d4",
+    "deifosv-04e4d3",
+    "ezshine-c90d73",
+    "imthatcarlos-e04bfe",
+    "jayscambler-3f8889",
+    "jazzen-chen-4542ae",
+    "kmasiff-cc72cb",
+    "l3d1c-0e35a3",
+    "leadnotifi-e83f94",
+    "listudio-820c7b",
+    "madebyjmayala-b9204d",
+    "majorbaguette-fb11d7",
+    "marklaunches-3b9492",
+    "marouanegazouzi-6071d5",
+    "misbahsy-80eaec",
+    "oliahmed205-3e31c4",
+    "quickdesignio-dd93d0",
+    "robj3d3-b18fad",
+    "sudo-kiran-4f8b59",
+    "sudo-kiran-b055de",
+    "tstfully-0aa6b4",
+    "viktoroddy-98c1d8"
+   ],
+   "variantes": [
+    "Interface premium et accent or ou vert : daniel-haida-8691d4, bthreeagency-b9b8d9, jayscambler-3f8889, jazzen-chen-4542ae, listudio-820c7b.",
+    "Promo chapitrée à HUD et halo violet ou bleu : misbahsy-80eaec, marouanegazouzi-6071d5, ceowinkz-7c776b, aistocksavvy-3fb9f5, kmasiff-cc72cb, oliahmed205-3e31c4.",
+    "Alternance nuit / clair, mots-chocs sur la croche : agonaliu-466a8f, quickdesignio-dd93d0, 0xfemyn-e114d3, sudo-kiran-4f8b59, sudo-kiran-b055de.",
+    "Néon sportif ou cinématique : deifosv-04e4d3, marklaunches-3b9492, leadnotifi-e83f94, madebyjmayala-b9204d, adamdesgns-478d6d.",
+    "Démos lentes en fondus (contre-exemples notés 3) : majorbaguette-fb11d7, tstfully-0aa6b4, ezshine-c90d73, imthatcarlos-e04bfe, brainextends-e19ac3."
+   ],
+   "evidence": {
+    "videos": 32,
+    "notes": {
+     "3": 7,
+     "4": 25
+    },
+    "notees_4_5": 25,
+    "notees_5": 0,
+    "note_moyenne": 3.78,
+    "musique": {
+     "animee-sur-la-musique": 20,
+     "sans-musique": 6,
+     "partielle": 5,
+     "musique-posee": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 20,
+     "mediane": 120.0,
+     "quartiles": [
+      120.0,
+      123.5
+     ],
+     "frequents": [
+      [
+       120,
+       12
+      ],
+      [
+       128,
+       5
+      ],
+      [
+       96,
+       2
+      ],
+      [
+       122,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 18.28,
+     "quartiles": [
+      15.06,
+      30.1
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 2.28,
+     "n_videos": 22,
+     "animees_sur_la_musique": 2.01,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 10,
+    "part_image_figee_mediane": 0.31,
+    "temps_mort_juge": {
+     "un-peu": 26,
+     "aucun": 1,
+     "beaucoup": 5
+    },
+    "fps": {
+     "30/1": 16,
+     "60/1": 16
+    },
+    "typo_traits_videos": {
+     "mono": 22,
+     "capitales": 21,
+     "casse phrase/minuscules": 13,
+     "serif": 10,
+     "italique": 8,
+     "étendue/large": 4,
+     "condensée": 3,
+     "point final": 2,
+     "manuscrite": 1
+    },
+    "matieres_videos": {
+     "lueur/halo": 29,
+     "flou de mouvement": 20,
+     "vignettage": 11,
+     "ombres portées douces": 10,
+     "aberration/glitch RVB": 8,
+     "flash/surexposition": 8,
+     "profondeur de champ": 7,
+     "trame/demi-teinte": 5,
+     "dégradé": 5
+    },
+    "polices_citees_videos": {
+     "Inter": 15,
+     "JetBrains Mono": 8,
+     "Instrument Serif": 7,
+     "Inter Display": 6,
+     "Plus Jakarta": 3,
+     "SF Pro": 3,
+     "Unbounded": 3,
+     "Anton": 2,
+     "Manrope": 1,
+     "Source Sans": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "noir",
+      "videos": 32,
+      "hex_frequents": [
+       "#141414",
+       "#000000",
+       "#070B1A"
+      ]
+     },
+     {
+      "teinte": "blanc-creme",
+      "videos": 32,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#FCFCFC",
+       "#F7F7F4"
+      ]
+     },
+     {
+      "teinte": "vert",
+      "videos": 21,
+      "hex_frequents": [
+       "#22C55E",
+       "#34D399",
+       "#39D7A1"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 20,
+      "hex_frequents": [
+       "#E5484D",
+       "#F4C3B8",
+       "#E8513A"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 20,
+      "hex_frequents": [
+       "#8A8F98",
+       "#2B2B2B",
+       "#222223"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 17,
+      "hex_frequents": [
+       "#3B82F6",
+       "#48A0F8",
+       "#0D6DCD"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 11,
+      "hex_frequents": [
+       "#F59E0B",
+       "#E4601F",
+       "#F6D9C9"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#0A0D18",
+      "role": "fond marine vignetté (daniel-haida-8691d4 ; #0B0716 violet chez misbahsy-80eaec)"
+     },
+     {
+      "hex": "#161B2D",
+      "role": "surfaces des cartes d'interface"
+     },
+     {
+      "hex": "#2A1B5C",
+      "role": "halo radial derrière chaque scène (misbahsy-80eaec)"
+     },
+     {
+      "hex": "#E8B84B",
+      "role": "accent de marque or : logo, courbe, contours (daniel-haida-8691d4) ; ou #7C5CFF violet, #CBFA4E citron"
+     },
+     {
+      "hex": "#34D399",
+      "role": "vert positif : états validés, gains (vert présent dans 21 vidéos sur 32)"
+     },
+     {
+      "hex": "#F4F4F4",
+      "role": "respiration claire d'un chapitre (agonaliu-466a8f)"
+     }
+    ],
+    "typographie": "Grotesque néo grasse (Inter, Inter Display, Plus Jakarta Sans) en casse de phrase avec point final pour les titres (5-12 % de la hauteur) ; mono (JetBrains Mono) pour chiffres, code et HUD dans 22 vidéos sur 32 ; serif italique contrastée (Instrument Serif) pour le mot accent dans 8 vidéos.",
+    "tempo_cadence": "20 vidéos sur 32 animées sur la musique ; 120 BPM dans 12, 128 dans 5. Durée médiane 18 s (15-30 s). Plan médian 2,3 s (2,0 s dans les vidéos calées), 10 plans-séquence ou quasi ; image figée médiane 31 % ; 5 vidéos jugées « beaucoup » de temps mort.",
+    "courbes_signature": "Étude 60 fps de daniel-haida-8691d4 : arrivées power2.out en 22-42 im, aspirations power2.in ou sine.in en 9-14 im, transformations de forme power1.inOut à power2.inOut en 18-58 im, révélations sine.out ; plus doux que la typo cinétique. Dépassement décrit dans 16 vidéos sur 32, ressort dans 4.",
+    "transitions_types": "Fondu ou passage par le fond (44 %, à limiter : c'est le défaut des vidéos notées 3), objet relais (31 %), flash ou surexposition (31 %), glitch en tranches (22 %, cliché).",
+    "structure_type": "Signature finale (69 %), arc problème → solution → preuves → appel (38 %, 1,8× le corpus), chapitres par mesure (38 %).",
+    "score_ordre": 121.0
+   },
+   "best": [
+    {
+     "slug": "daniel-haida-8691d4",
+     "title": "Taxtello bookkeeping app film",
+     "url": "https://prompt-motion.com/daniel-haida-8691d4",
+     "craft": 4,
+     "why": "4/5, étude 60 fps : chaîne de transitions par objets (ticket aspiré dans sa pastille, barre devenue anneau, anneau devenu « o » du logo), or retenu sur marine, 120 BPM ; défaut : interface sombre et minuscule."
+    },
+    {
+     "slug": "misbahsy-80eaec",
+     "title": "LiteLLM promo reel",
+     "url": "https://prompt-motion.com/misbahsy-80eaec",
+     "craft": 4,
+     "why": "4/5 : aspiration puis explosion en « ONE API. », plongée dans le O, iris depuis le badge 200 OK ; 26 gestes sur 34 calés sur 128 BPM."
+    },
+    {
+     "slug": "agonaliu-466a8f",
+     "title": "Trezio app motion reel",
+     "url": "https://prompt-motion.com/agonaliu-466a8f",
+     "craft": 4,
+     "why": "4/5 : six chapitres, une transition motivée chacun (implosion en point puis iris, élément partagé, plongée dans le trou de serrure), synchro 96 BPM à l'image près."
+    },
+    {
+     "slug": "quickdesignio-dd93d0",
+     "title": "QuickDesign brand promo",
+     "url": "https://prompt-motion.com/quickdesignio-dd93d0",
+     "craft": 4,
+     "why": "4/5 : montage d'outils digne de 1600 (un mot par demi-temps, chacun animé selon sa fonction), vert acide #CBFA4E sur noir."
+    },
+    {
+     "slug": "marouanegazouzi-6071d5",
+     "title": "Crux motion design showreel",
+     "url": "https://prompt-motion.com/marouanegazouzi-6071d5",
+     "craft": 4,
+     "why": "4/5 : serif bold + mono + bleu signal, 23 gestes sur 28 calés à ±1 image sur 120 BPM."
+    },
+    {
+     "slug": "0xfemyn-e114d3",
+     "title": "AIsa API key promo",
+     "url": "https://prompt-motion.com/0xfemyn-e114d3",
+     "craft": 4,
+     "why": "4/5 : récit chaos → « One key. » → preuves en 15 s, tricolore orange / noir / blanc, montage calé sur 128 BPM."
+    },
+    {
+     "slug": "sudo-kiran-b055de",
+     "title": "DistilBook motion explainer",
+     "url": "https://prompt-motion.com/sudo-kiran-b055de",
+     "craft": 4,
+     "why": "4/5 : chaos → distillation → clarté porté par implosion, surexposition et pastilles devenues logo ; fil chromatique tiré du logo."
+    },
+    {
+     "slug": "ceowinkz-7c776b",
+     "title": "Amazon wholesale pitch video",
+     "url": "https://prompt-motion.com/ceowinkz-7c776b",
+     "craft": 4,
+     "why": "4/5 : logo → point → point final, plongée dans le point, prix qui glisse puis carte qui se retourne sur flash ; 128 BPM."
+    }
+   ],
+   "planche": [
+    "daniel-haida-8691d4@3.4",
+    "0xfemyn-e114d3@6.83",
+    "agonaliu-466a8f@1.8",
+    "misbahsy-80eaec@5.02",
+    "quickdesignio-dd93d0@10.8",
+    "marouanegazouzi-6071d5@8.09",
+    "sudo-kiran-b055de@5.8",
+    "madebyjmayala-b9204d@8.5",
+    "ceowinkz-7c776b@6.3"
+   ],
+   "planche_file": "illus/style-saas-nuit.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-saas-nuit.jpg daniel-haida-8691d4@3.4 0xfemyn-e114d3@6.83 agonaliu-466a8f@1.8 misbahsy-80eaec@5.02 quickdesignio-dd93d0@10.8 marouanegazouzi-6071d5@8.09 sudo-kiran-b055de@5.8 madebyjmayala-b9204d@8.5 ceowinkz-7c776b@6.3 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-saas-nuit.jpg (9 vignettes vérifiées, dont 2 respirations claires ou colorées : 0xfemyn-e114d3 orange, agonaliu-466a8f nuit).",
+   "links": [
+    {
+     "chapter": "c07",
+     "entry": "06-maquette-appareil",
+     "title": "La maquette d'appareil et l'interface reconstruite (device mockup, browser frame, tilted UI, rebuilt product UI)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "01-compteur-qui-roule",
+     "title": "Le compteur qui roule (rolling counter, count-up, odometer, slot reel)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "05-cascade-cartes",
+     "title": "Les cartes et lignes en cascade (staggered card build, list rows, chips, bento cascade, card deal)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "02-frappe-et-reponse",
+     "title": "Le prompt tapé et la réponse en flux (typed prompt, simulated typing, streaming AI answer, chat demo)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "15-fond-ambiance",
+     "title": "Le fond d'ambiance : halo radial, dégradé fluide, grille fine (radial glow background, vignette, mesh gradient, drifting blurred blobs, faint grid or dot grid)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "02-palette",
+     "title": "La palette fermée et l'accent qui a un sens (restricted palette, single accent color, semantic color coding)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "11-accent",
+     "title": "Le mot accent : couleur, italique, deux tons (accent keyword, italic serif accent word, two-tone headline)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "10-doux",
+     "title": "L'entrée douce : flou vers net, fondu montant (blur-in, word-by-word fade-up, rack focus, soft wipe)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "03-element-par-temps",
+     "title": "Un élément par temps, les détails sur les demi-temps (one word per beat, eighth-note word cuts, rhythmic hierarchy)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "05-maintien-temps-mort",
+     "title": "Le maintien : temps de lecture ou temps mort (reading hold, living hold, dead hold, static end card)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "01-objet-relais-complement",
+     "title": "L'objet relais (object morph, match cut d'objet, shared element)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "14-fondu-passage-fond",
+     "title": "Le fondu et le passage par le fond (crossfade, dip to black, dip to background, blur dissolve)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "05-flash-surexposition",
+     "title": "Le flash et la surexposition (flash frame, overexposure white-out, impact flash, shockwave ring)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "05-plans-inclines",
+     "title": "Les cartes en perspective : murs inclinés, redressements et retournements (perspective card wall, tilt settle, 3D card flip, CSS 3D panels)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "02-arc-probleme-solution",
+     "title": "L'arc de pitch : problème → solution → preuves → appel (problem-solution-proof-CTA arc, launch narrative)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "03-signature-finale",
+     "title": "La signature finale : logo, slogan, appel, sans temps mort (end card, logo lockup, tagline + URL + CTA, outro)"
+    },
+    {
+     "chapter": "c14",
+     "entry": "18-daniel-haida-8691d4",
+     "title": "Taxtello bookkeeping app film — @daniel_haida"
+    }
+   ]
+  },
+  {
+   "rank": 4,
+   "key": "saas-clair",
+   "title": "La démo produit claire : keynote, verre et plan-séquence",
+   "title_en": "light product demo, Apple-style keynote, frosted glass, continuous shot",
+   "entry_file": "entries/04-saas-clair.md",
+   "scope": "Fond blanc ou crème, grotesque neutre (Inter, Geist) en casse de phrase, ombres portées douces, verre dépoli ou halo pastel ; l'interface vit à l'écran (frappe, curseur, changements d'état) souvent en plan-séquence. Famille la plus calme du corpus (plan médian 3,6 s, 42 % d'image figée) et la moins bien notée en moyenne (3,62) : sa force est la crédibilité, son risque le diaporama. Quand la choisir : démo de fonctionnalité, page d'accueil animée, tutoriel produit, public déjà intéressé ; à éviter pour une accroche de réseau social sans la rythmer.",
+   "criteres_de_classement": "Fond clair dominant, interface au centre, typographie neutre en casse de phrase, peu d'accents (1 couleur de marque), mouvements de caméra continus plutôt que coupes.",
+   "n": 37,
+   "n45": 23,
+   "n5": 0,
+   "members": [
+    "ai-baymax-0ef9dd",
+    "ajith-io-c52e09",
+    "amol909s-27533e",
+    "antonio-kodheli-490109",
+    "danilowm-d3720d",
+    "ddryo-loos-300829",
+    "demonugc-4c5753",
+    "elliot-garreffa-f334bc",
+    "en-ra-81c6dd",
+    "ercankeskinx-ec2568",
+    "fractadev-149adc",
+    "gautam-mer1-2ae354",
+    "itisrazak-3ad902",
+    "justincooperman-e7bbc4",
+    "kikelopezdesign-7cc9e8",
+    "lester-tyy-f897f7",
+    "lexnlin-6161a6",
+    "macrohou-33959d",
+    "mehul4795-4a7007",
+    "miskinho-443898",
+    "notdwd-7de38a",
+    "notdwd-c2037d",
+    "palashbagchi11-0a4b6b",
+    "prasad-pilla-2c0cba",
+    "rammanq-f5a90f",
+    "ratheejaisal-1f4538",
+    "rossaxbt-3085b7",
+    "samuel-yostt-891f87",
+    "sudo-kiran-6609ed",
+    "thayto-dev-44b911",
+    "thismacapital-dfba20",
+    "twoclipping-221cab",
+    "twoclipping-5cba86",
+    "twoclipping-6dd14e",
+    "ultimaxbt-2ddf1e",
+    "visheshbaghell-3aba37",
+    "wozu-co-242285"
+   ],
+   "variantes": [
+    "Morphing continu d'un seul conteneur (plan-séquence) : twoclipping-5cba86, twoclipping-221cab, en-ra-81c6dd, demonugc-4c5753, antonio-kodheli-490109.",
+    "Keynote Apple en verre dépoli : notdwd-7de38a, notdwd-c2037d, gautam-mer1-2ae354, wozu-co-242285.",
+    "Landing page animée à halo pastel : samuel-yostt-891f87, miskinho-443898, thismacapital-dfba20, mehul4795-4a7007, ratheejaisal-1f4538, fractadev-149adc.",
+    "Crème éditorial et interface : macrohou-33959d, amol909s-27533e, lexnlin-6161a6, prasad-pilla-2c0cba, sudo-kiran-6609ed, thayto-dev-44b911.",
+    "Démo lente en fondus (contre-exemples notés 3) : ai-baymax-0ef9dd, ajith-io-c52e09, lester-tyy-f897f7, visheshbaghell-3aba37, elliot-garreffa-f334bc."
+   ],
+   "evidence": {
+    "videos": 37,
+    "notes": {
+     "3": 14,
+     "4": 23
+    },
+    "notees_4_5": 23,
+    "notees_5": 0,
+    "note_moyenne": 3.62,
+    "musique": {
+     "partielle": 14,
+     "animee-sur-la-musique": 14,
+     "sans-musique": 4,
+     "musique-posee": 4,
+     "voix-off": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 14,
+     "mediane": 120.0,
+     "quartiles": [
+      120.0,
+      127.25
+     ],
+     "frequents": [
+      [
+       120,
+       8
+      ],
+      [
+       128,
+       3
+      ],
+      [
+       144,
+       1
+      ],
+      [
+       125,
+       1
+      ],
+      [
+       124,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 23.08,
+     "quartiles": [
+      15.06,
+      33.51
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 3.62,
+     "n_videos": 20,
+     "animees_sur_la_musique": 3.62,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 12,
+    "part_image_figee_mediane": 0.42,
+    "temps_mort_juge": {
+     "beaucoup": 13,
+     "un-peu": 24
+    },
+    "fps": {
+     "60/1": 19,
+     "30/1": 16,
+     "60000/1001": 2
+    },
+    "typo_traits_videos": {
+     "casse phrase/minuscules": 28,
+     "mono": 16,
+     "capitales": 13,
+     "serif": 6,
+     "point final": 5,
+     "étendue/large": 3,
+     "manuscrite": 2,
+     "italique": 1,
+     "condensée": 1
+    },
+    "matieres_videos": {
+     "lueur/halo": 21,
+     "flou de mouvement": 19,
+     "ombres portées douces": 14,
+     "aplats nets": 9,
+     "profondeur de champ": 7,
+     "dégradé": 6,
+     "vignettage": 5,
+     "verre": 5,
+     "grille fine": 4
+    },
+    "polices_citees_videos": {
+     "Inter": 26,
+     "Geist": 8,
+     "Plus Jakarta": 5,
+     "Inter Display": 4,
+     "Manrope": 3,
+     "JetBrains Mono": 3,
+     "Patrick Hand": 2,
+     "SF Pro": 2,
+     "Satoshi": 1,
+     "Geist Mono": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "blanc-creme",
+      "videos": 37,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#FAFAF8",
+       "#F7F7F4"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 35,
+      "hex_frequents": [
+       "#111111",
+       "#000000",
+       "#1C1C1C"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 23,
+      "hex_frequents": [
+       "#B7CFEB",
+       "#294376",
+       "#769CC2"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 20,
+      "hex_frequents": [
+       "#8A8A8A",
+       "#6B7280",
+       "#6E6E6E"
+      ]
+     },
+     {
+      "teinte": "vert",
+      "videos": 20,
+      "hex_frequents": [
+       "#22C55E",
+       "#4ED6A0",
+       "#30D860"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 19,
+      "hex_frequents": [
+       "#F0442C",
+       "#E64B43",
+       "#E83909"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 18,
+      "hex_frequents": [
+       "#F7EADA",
+       "#E86818",
+       "#DCD4CC"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#FDFDFB",
+      "role": "page blanc cassé, fond principal (notdwd-7de38a ; #FFFFFF samuel-yostt-891f87)"
+     },
+     {
+      "hex": "#F3EEE6",
+      "role": "variante crème des scènes produit (macrohou-33959d)"
+     },
+     {
+      "hex": "#111111",
+      "role": "texte principal et coques d'appareils"
+     },
+     {
+      "hex": "#9A9A9A",
+      "role": "mot variable ou texte secondaire en gris"
+     },
+     {
+      "hex": "#EE5B30",
+      "role": "accent de marque unique : point, pilule, sélection (samuel-yostt-891f87 ; #1E73BE lexnlin-6161a6, #4A7559 macrohou-33959d)"
+     },
+     {
+      "hex": "#F9C6AE",
+      "role": "halo pastel flou ou dégradé de verre (pêche ; #B7CFEB brume bleue chez notdwd-7de38a)"
+     }
+    ],
+    "typographie": "Grotesque neutre (Inter dans 26 vidéos sur 37, Geist dans 8, Plus Jakarta, Manrope) en casse de phrase (28 vidéos), demi-gras, interlettrage serré (≈ -3 %), souvent avec point final ; titres 5-12 % de la hauteur ; mono pour URL et code ; mot variable en gris.",
+    "tempo_cadence": "Seulement 14 vidéos sur 37 animées sur la musique (14 partielles) ; 120 BPM dans 8. Durée médiane 23 s (15-34 s). Plan médian 3,6 s ; 12 plans-séquence ou quasi ; image figée médiane 42 % ; 13 vidéos jugées « beaucoup » de temps mort (le plus fort taux).",
+    "courbes_signature": "Étude 60 fps de twoclipping-5cba86 : ressorts amortis partout (ω 16-19, ζ 0,62-0,74 ≈ back.out(1.0-1.4) quand le conteneur grandit ; ζ 0,78-0,90 ≈ sine.out quand il rétrécit), bord avant et bord arrière décalés (étirement ×1,26-1,32), compteurs power2.out 22-30 im. Ressort décrit dans 13 vidéos sur 37 (le plus haut taux des familles SaaS), dépassement médian ≈ 5 %.",
+    "transitions_types": "Fondu ou fondu flou (51 %, le tic de la famille), objet relais (49 %), poussée et volet plein (35 %) ; la recomposition de mise en page (FLIP) est 3,3× plus fréquente qu'ailleurs.",
+    "structure_type": "Signature finale (57 %), arc problème → solution (30 %), boucle (27 %) ; peu de chapitres calés sur la mesure (24 %).",
+    "score_ordre": 120.5
+   },
+   "best": [
+    {
+     "slug": "twoclipping-5cba86",
+     "title": "Shape morphing through UI states",
+     "url": "https://prompt-motion.com/twoclipping-5cba86",
+     "craft": 4,
+     "why": "4/5, étude 60 fps : une seule forme sans coupe sur 12 états d'interface, ressorts amortis, flou d'échange, boucle parfaite, chaque pic de vitesse sur un temps."
+    },
+    {
+     "slug": "twoclipping-221cab",
+     "title": "Photo print app launch film",
+     "url": "https://prompt-motion.com/twoclipping-221cab",
+     "craft": 4,
+     "why": "4/5 : vrai plan-séquence où chaque scène naît de l'objet précédent, verre liquide, iris et ressorts à 60 fps."
+    },
+    {
+     "slug": "notdwd-7de38a",
+     "title": "Frame by Frame launch video",
+     "url": "https://prompt-motion.com/notdwd-7de38a",
+     "craft": 4,
+     "why": "4/5 : entrées exponentielles, flou calé sur la vitesse, coupes en avance sur le temps, raccords de forme, verre dépoli."
+    },
+    {
+     "slug": "macrohou-33959d",
+     "title": "Ren app launch video",
+     "url": "https://prompt-motion.com/macrohou-33959d",
+     "craft": 4,
+     "why": "4/5 : transitions enchaînées (point puis iris, plongée dans le logo, liste devenue bouton) calées sur une bande-son composée à l'image."
+    },
+    {
+     "slug": "rossaxbt-3085b7",
+     "title": "Ora 2 image model launch film",
+     "url": "https://prompt-motion.com/rossaxbt-3085b7",
+     "craft": 4,
+     "why": "4/5 : lancement façon labo IA, voix, légendes et rafales d'images calées à l'image près, une seule grotesque (Geist)."
+    },
+    {
+     "slug": "lexnlin-6161a6",
+     "title": "Cinetic skill launch film",
+     "url": "https://prompt-motion.com/lexnlin-6161a6",
+     "craft": 4,
+     "why": "4/5 : le curseur de texte relie toutes les scènes, accent bleu unique #1E73BE, montage verrouillé sur 120 BPM."
+    },
+    {
+     "slug": "samuel-yostt-891f87",
+     "title": "ViralGrow product promo",
+     "url": "https://prompt-motion.com/samuel-yostt-891f87",
+     "craft": 4,
+     "why": "4/5 : transitions toutes motivées (avatar → bobine, carte → téléphone, mur → logo) et vraie synchro à 128 BPM."
+    },
+    {
+     "slug": "antonio-kodheli-490109",
+     "title": "Prompt Motion site promo",
+     "url": "https://prompt-motion.com/antonio-kodheli-490109",
+     "craft": 4,
+     "why": "4/5 : caméra continue exacte, raccords géométriques parfaits, synchro au temps près ; mais 6,5 s de maintiens."
+    }
+   ],
+   "planche": [
+    "twoclipping-5cba86@3.5",
+    "twoclipping-221cab@7.0",
+    "notdwd-7de38a@6.83",
+    "macrohou-33959d@13.02",
+    "rossaxbt-3085b7@8.83",
+    "lexnlin-6161a6@15.41",
+    "samuel-yostt-891f87@5.36",
+    "antonio-kodheli-490109@10.39",
+    "amol909s-27533e@5.02"
+   ],
+   "planche_file": "illus/style-saas-clair.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-saas-clair.jpg twoclipping-5cba86@3.5 twoclipping-221cab@7.0 notdwd-7de38a@6.83 macrohou-33959d@13.02 rossaxbt-3085b7@8.83 lexnlin-6161a6@15.41 samuel-yostt-891f87@5.36 antonio-kodheli-490109@10.39 amol909s-27533e@5.02 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-saas-clair.jpg (9 vignettes vérifiées).",
+   "links": [
+    {
+     "chapter": "c07",
+     "entry": "02-frappe-et-reponse",
+     "title": "Le prompt tapé et la réponse en flux (typed prompt, simulated typing, streaming AI answer, chat demo)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "04-curseur-acteur",
+     "title": "Le curseur acteur (cursor-driven demo, click ripple, drag and drop, acting cursor)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "03-changement-d-etat",
+     "title": "Le changement d'état : bouton, toggle, toast, tampon (UI state change, button morph, toggle, toast, stamp slam, strike-through verdict)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "05-cascade-cartes",
+     "title": "Les cartes et lignes en cascade (staggered card build, list rows, chips, bento cascade, card deal)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "05-recomposition",
+     "title": "La mise en page qui se recompose (layout reflow, FLIP, make-room shift, pre-laid-out reveal)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "04-grilles-bento",
+     "title": "Grilles, bento et rangées de cartes (modular grid, bento grid, staggered card row)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "06-morph",
+     "title": "Le morphing de forme : un objet qui change au lieu de couper (shape morph, path morph, single morphing container, metaballs, dot-to-pill)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "14-flou",
+     "title": "Le flou de mouvement et les traînées (directional motion blur, sub-frame accumulation, onion skin, echo outlines, comet trail)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "15-fond-ambiance",
+     "title": "Le fond d'ambiance : halo radial, dégradé fluide, grille fine (radial glow background, vignette, mesh gradient, drifting blurred blobs, faint grid or dot grid)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "03-poussee-calibree",
+     "title": "La poussée vers le sujet : lente, calibrée ou en punch sur le temps (push-in, punch-in, camera creep, beat zoom bump, calibrated reframe)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "08-canevas-parcouru",
+     "title": "Parcourir un canevas (pan, whip pan, page scroll, lateral truck, follow pan, single-canvas camera)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "01-objet-relais-complement",
+     "title": "L'objet relais (object morph, match cut d'objet, shared element)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "14-fondu-passage-fond",
+     "title": "Le fondu et le passage par le fond (crossfade, dip to black, dip to background, blur dissolve)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "05-maintien-temps-mort",
+     "title": "Le maintien : temps de lecture ou temps mort (reading hold, living hold, dead hold, static end card)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "05-fil-rouge",
+     "title": "Le fil rouge : un objet, un exemple ou un plan continu traverse le film (throughline object, running example, one continuous shot, powers of ten)"
+    },
+    {
+     "chapter": "c14",
+     "entry": "17-twoclipping-5cba86",
+     "title": "Shape morphing through UI states — @twoclipping"
+    }
+   ]
+  },
+  {
+   "rank": 5,
+   "key": "editorial-papier",
+   "title": "L'éditorial imprimé : papier, serif et encre",
+   "title_en": "editorial print look, paper, serif, ink, halftone",
+   "entry_file": "entries/05-editorial-papier.md",
+   "scope": "Un livre ou une planche imprimée qui s'anime : fond papier crème (ou noir chaud), serif de texte (Newsreader, Tiempos, EB Garamond) avec mot en italique, encre noire et un seul vermillon ou orange, trame de points, figures numérotées. Petite famille mais 5 vidéos notées 5 sur 17 (le meilleur taux après le néo-suisse) ; elle se casse en diaporama quand le mouvement se réduit à des fondus (4 vidéos notées 2-3). Quand la choisir : marque premium, produit d'écriture ou de lecture, explainer posé, public exigeant ; à éviter si le produit est très coloré.",
+   "criteres_de_classement": "Serif de texte en voix principale (16 vidéos sur 17), papier ou fond uni chaud, 2-3 encres, mise en page éditoriale (légendes, folios, figures).",
+   "n": 17,
+   "n45": 12,
+   "n5": 5,
+   "members": [
+    "1stnoel-c20a89",
+    "amitsingha89-150378",
+    "bogdandragomir-35e024",
+    "fionntobin-97b7af",
+    "francoxavier33-d2dfd2",
+    "gabrielbuzziv-4ff0c6",
+    "hbcoop-de365c",
+    "henkvaness-0e06af",
+    "ho-ba-f3f0e9",
+    "iammxfschr-d68f90",
+    "lexnlin-038035",
+    "manuelogomigo-f33ca9",
+    "reflex-cloud-72ffe5",
+    "sachaarbonel-8f14f4",
+    "theviableedge-9065be",
+    "wani-shola-16ca7a",
+    "xelandre-363f00"
+   ],
+   "variantes": [
+    "Planche scientifique ou manuel : hbcoop-de365c (FIG. N), fionntobin-97b7af (crème et cobalt, huit disciplines), reflex-cloud-72ffe5 (monochrome à trame).",
+    "Gravure et collage : lexnlin-038035 (gravures, corail, blanc pur).",
+    "Promo éditoriale serif + trame orange : manuelogomigo-f33ca9, xelandre-363f00, ho-ba-f3f0e9, iammxfschr-d68f90.",
+    "Papier calme, e-ink, magazine : bogdandragomir-35e024, 1stnoel-c20a89, sachaarbonel-8f14f4, francoxavier33-d2dfd2, gabrielbuzziv-4ff0c6.",
+    "Plan-séquence de documents : theviableedge-9065be (sans coupe, 4 couleurs tirées du logo)."
+   ],
+   "evidence": {
+    "videos": 17,
+    "notes": {
+     "2": 1,
+     "3": 4,
+     "4": 7,
+     "5": 5
+    },
+    "notees_4_5": 12,
+    "notees_5": 5,
+    "note_moyenne": 3.94,
+    "musique": {
+     "animee-sur-la-musique": 10,
+     "voix-off": 3,
+     "sans-musique": 2,
+     "partielle": 2
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 10,
+     "mediane": 120,
+     "quartiles": [
+      120.0,
+      128.0
+     ],
+     "frequents": [
+      [
+       128,
+       3
+      ],
+      [
+       120,
+       3
+      ],
+      [
+       96,
+       1
+      ],
+      [
+       136,
+       1
+      ],
+      [
+       110,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 29.06,
+     "quartiles": [
+      15.06,
+      54.0
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 1.81,
+     "n_videos": 7,
+     "animees_sur_la_musique": 1.06,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 8,
+    "part_image_figee_mediane": 0.52,
+    "temps_mort_juge": {
+     "beaucoup": 5,
+     "un-peu": 10,
+     "aucun": 2
+    },
+    "fps": {
+     "60/1": 10,
+     "30/1": 6,
+     "25/1": 1
+    },
+    "typo_traits_videos": {
+     "serif": 16,
+     "capitales": 12,
+     "italique": 11,
+     "mono": 9,
+     "casse phrase/minuscules": 7,
+     "condensée": 3,
+     "étendue/large": 2,
+     "point final": 2
+    },
+    "matieres_videos": {
+     "lueur/halo": 8,
+     "ombres portées douces": 6,
+     "flou de mouvement": 6,
+     "vignettage": 5,
+     "grain": 4,
+     "trame/demi-teinte": 4,
+     "papier": 4,
+     "verre": 2,
+     "grille fine": 2
+    },
+    "polices_citees_videos": {
+     "Inter": 11,
+     "Newsreader": 7,
+     "Source Serif": 3,
+     "Tiempos": 3,
+     "Fraunces": 2,
+     "Instrument Serif": 2,
+     "IBM Plex": 2,
+     "Cormorant": 1,
+     "League Gothic": 1,
+     "Archivo Black": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "blanc-creme",
+      "videos": 17,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#F4EDDF",
+       "#F9F5EB"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 15,
+      "hex_frequents": [
+       "#241E17",
+       "#221E1B",
+       "#2A1F17"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 13,
+      "hex_frequents": [
+       "#6B6157",
+       "#8A847B",
+       "#2A2826"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 11,
+      "hex_frequents": [
+       "#FAD8AB",
+       "#E6D9C3",
+       "#B5532E"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 8,
+      "hex_frequents": [
+       "#D54A30",
+       "#C85A40",
+       "#E8A898"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 8,
+      "hex_frequents": [
+       "#2923C5",
+       "#3E6FD6",
+       "#497CE2"
+      ]
+     },
+     {
+      "teinte": "violet",
+      "videos": 7,
+      "hex_frequents": [
+       "#6E4FB0",
+       "#472C62",
+       "#634187"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#F0EBDD",
+      "role": "papier crème (hbcoop-de365c ; #F3F1EC manuelogomigo-f33ca9)"
+     },
+     {
+      "hex": "#0D0B08",
+      "role": "encre : texte, traits, objets"
+     },
+     {
+      "hex": "#C85A40",
+      "role": "vermillon unique : annotations, FIG. N, curseur (#E8501C manuelogomigo, #D97757 lexnlin)"
+     },
+     {
+      "hex": "#6E6A5D",
+      "role": "en-têtes et légendes en petites capitales grises"
+     },
+     {
+      "hex": "#2923C5",
+      "role": "variante cobalt (fionntobin-97b7af)"
+     },
+     {
+      "hex": "#0B0908",
+      "role": "noir chaud des scènes sombres (manuelogomigo-f33ca9)"
+     }
+    ],
+    "typographie": "Serif de texte (Newsreader ×7, Tiempos ×3, Source Serif, EB Garamond, Fraunces) en romain avec mot clé en italique (11 vidéos) ; petites capitales grises espacées pour les légendes ; mono pour URL et code (9) ; parfois une condensée (League Gothic) en contrepoint.",
+    "tempo_cadence": "10 vidéos sur 17 animées sur la musique, 3 en voix off ; 120 et 128 BPM (3 chacun), 96 BPM chez bogdandragomir-35e024. Durée médiane 29 s (15-54 s). 8 plans-séquence ou quasi ; plan médian 1,8 s quand il y a des coupes ; image figée médiane 52 % (la plus haute) : le calme est le style, le figé est son piège.",
+    "courbes_signature": "Six études 60 fps : gestes longs sine.inOut ou power1.inOut (22-180 im), titres serif qui montent d'un masque en power3.out (14-35 im), passages de scène expo.inOut ≈ 1 temps, sorties power1.in ou circ.in qui finissent sur la coupe, pop de logo seul en back.out(3) ; fionntobin-97b7af claque ses arrivées en expo.out 4-6 im. Ressort cité dans 2 vidéos sur 17 seulement : le rebond est réservé au logo.",
+    "transitions_types": "Objet relais (41 %), fondu (41 %), compression puis éclosion (35 %) ; trame de points et iris dans les meilleures.",
+    "structure_type": "Signature finale (71 %), chapitres par mesure (41 %), fil rouge d'un seul objet (24 %, 1,6× le corpus : le point de hbcoop-de365c, la trame de manuelogomigo-f33ca9).",
+    "score_ordre": 46.9
+   },
+   "best": [
+    {
+     "slug": "hbcoop-de365c",
+     "title": "Full Stop figure sequence",
+     "url": "https://prompt-motion.com/hbcoop-de365c",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : un seul point traverse tout le film, trois couleurs (crème, encre, vermillon), FIG. N qui change pile sur la mesure (f120, f240…)."
+    },
+    {
+     "slug": "fionntobin-97b7af",
+     "title": "Blue editorial motion showreel",
+     "url": "https://prompt-motion.com/fionntobin-97b7af",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : deux couleurs, cinq polices à rôle fixe, marges de 96 px, ligne de base commune à y ≈ 92,5 %, une horloge 128 BPM."
+    },
+    {
+     "slug": "lexnlin-038035",
+     "title": "Engraving-style Claude ad",
+     "url": "https://prompt-motion.com/lexnlin-038035",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : trois encres (blanc, noir, corail) sur gravures désaturées, morphs de texte à double sens, 67 coupes sur 87 juste avant une attaque du son."
+    },
+    {
+     "slug": "manuelogomigo-f33ca9",
+     "title": "Flowdrive motion showreel",
+     "url": "https://prompt-motion.com/manuelogomigo-f33ca9",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : un seul atome graphique (le point de trame) décliné partout, une serif pour les titres, une couleur d'accent."
+    },
+    {
+     "slug": "theviableedge-9065be",
+     "title": "Second brain service promo",
+     "url": "https://prompt-motion.com/theviableedge-9065be",
+     "craft": 5,
+     "why": "5/5, étude 60 fps : plan-séquence sans coupe où chaque objet devient le suivant, tout dérive des 4 carrés du logo, boucle parfaite (sans musique)."
+    },
+    {
+     "slug": "bogdandragomir-35e024",
+     "title": "Product intro synced to music",
+     "url": "https://prompt-motion.com/bogdandragomir-35e024",
+     "craft": 4,
+     "why": "4/5, étude 60 fps : l'encre électronique pilote ouverture et transitions, serif Newsreader, 96 BPM, chapitres au 1er temps de mesure."
+    },
+    {
+     "slug": "ho-ba-f3f0e9",
+     "title": "mdfor.dev product intro video",
+     "url": "https://prompt-motion.com/ho-ba-f3f0e9",
+     "craft": 4,
+     "why": "4/5 : crème, terracotta, serif + mono, montage verrouillé sur 128 BPM et sur la structure du morceau."
+    }
+   ],
+   "planche": [
+    "fionntobin-97b7af@8.42",
+    "hbcoop-de365c@14.6",
+    "lexnlin-038035@3.46",
+    "manuelogomigo-f33ca9@6.83",
+    "theviableedge-9065be@4.05",
+    "bogdandragomir-35e024@9.3",
+    "ho-ba-f3f0e9@16.17",
+    "xelandre-363f00@14.5",
+    "gabrielbuzziv-4ff0c6@8.72"
+   ],
+   "planche_file": "illus/style-editorial-papier.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-editorial-papier.jpg fionntobin-97b7af@8.42 hbcoop-de365c@14.6 lexnlin-038035@3.46 manuelogomigo-f33ca9@6.83 theviableedge-9065be@4.05 bogdandragomir-35e024@9.3 ho-ba-f3f0e9@16.17 xelandre-363f00@14.5 gabrielbuzziv-4ff0c6@8.72 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-editorial-papier.jpg (9 vignettes vérifiées ; xelandre-363f00 remplace reflex-cloud-72ffe5, dont l'image verte à 10,5 s n'était pas représentative).",
+   "links": [
+    {
+     "chapter": "c03",
+     "entry": "06-voix",
+     "title": "Le casting typographique : deux ou trois voix à rôles fixes (type system, font pairing, grotesque + italic serif + mono)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "11-accent",
+     "title": "Le mot accent : couleur, italique, deux tons (accent keyword, italic serif accent word, two-tone headline)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "08-mot-change",
+     "title": "Le mot qui change sur place : roulette, palettes, morph (slot-machine word roll, word swap, split-flap, glyph-travel morph)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "12-trait-main",
+     "title": "Le trait sur le mot : souligner, surligner, raturer, écrire (underline draw-on, highlighter wipe, strike-through, handwriting write-on)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "05-trace",
+     "title": "Le tracé qui se dessine : plume, connecteur, logo au trait (stroke draw-on, trim path, write-on, path reveal led by a pen head)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "09-construction",
+     "title": "La construction pièce par pièce : logo et pictogrammes assemblés (logo build, piece-by-piece assembly, converging fragments, logo sting)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "13-finition",
+     "title": "La finition de rendu : grain, vignette, halo, ombres douces, reflets (film grain, vignette, bloom and glow, soft drop shadows, sheen sweep, paper texture)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "01-objet-relais-complement",
+     "title": "L'objet relais (object morph, match cut d'objet, shared element)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "03-compression-eclosion",
+     "title": "La compression : en point ou en ligne, puis l'éclosion (implode to a point, squash to line, CRT power-off/on, implode-then-explode)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "11-trame-tuiles-particules",
+     "title": "La décomposition en trame, tuiles et particules (dither fade, halftone wipe, tile flood, particle dissolve)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "11-designer-la-donnee",
+     "title": "Désigner : balayage, surlignage, annotation (scan line sweep, highlight, leader-line callout, before/after slider)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "05-fil-rouge",
+     "title": "Le fil rouge : un objet, un exemple ou un plan continu traverse le film (throughline object, running example, one continuous shot, powers of ten)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "03-signature-finale",
+     "title": "La signature finale : logo, slogan, appel, sans temps mort (end card, logo lockup, tagline + URL + CTA, outro)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "05-maintien-temps-mort",
+     "title": "Le maintien : temps de lecture ou temps mort (reading hold, living hold, dead hold, static end card)"
+    },
+    {
+     "chapter": "c14",
+     "entry": "03-hbcoop-de365c",
+     "title": "Full Stop figure sequence — @HBCoop_"
+    },
+    {
+     "chapter": "c14",
+     "entry": "01-fionntobin-97b7af",
+     "title": "Blue editorial motion showreel — @fionntobin"
+    },
+    {
+     "chapter": "c14",
+     "entry": "05-lexnlin-038035",
+     "title": "Engraving-style Claude ad — @LexnLin"
+    },
+    {
+     "chapter": "c14",
+     "entry": "15-manuelogomigo-f33ca9",
+     "title": "Flowdrive motion showreel — @manuelogomigo"
+    },
+    {
+     "chapter": "c14",
+     "entry": "16-theviableedge-9065be",
+     "title": "Second brain service promo — @TheViableEdge"
+    },
+    {
+     "chapter": "c14",
+     "entry": "20-bogdandragomir-35e024",
+     "title": "Product intro synced to music — @BogdanDragomir"
+    }
+   ]
+  },
+  {
+   "rank": 6,
+   "key": "aplats-pop",
+   "title": "Les aplats pop : néo-brutalisme, autocollants et risographie",
+   "title_en": "flat pop, neo-brutalism, stickers, bento, risograph",
+   "entry_file": "entries/06-aplats-pop.md",
+   "scope": "Aplats francs et joyeux sur fond crème ou clair : contours noirs épais et ombres dures décalées (néo-brutalisme), autocollants, mascottes, tuiles bento, ou trame et repérage décalé de risographie. Les objets naissent en ressort (dépassement dans 11 vidéos sur 15). Quand la choisir : produit grand public, créateurs, éducation, ton ludique, réseaux sociaux ; à éviter pour une marque B2B premium. Moyenne 3,53 : le risque est le gabarit d'affiche générique et la vidéo muette (5 sur 15).",
+   "criteres_de_classement": "Aplats sans dégradé réaliste, couleurs vives à rôles (jaune, bleu, rose, rouge), contours ou ombres dures, objets plats qui rebondissent.",
+   "n": 15,
+   "n45": 9,
+   "n5": 0,
+   "members": [
+    "0xnfrith-5be616",
+    "alex-prompter-1ea044",
+    "bizibeast-10f264",
+    "buildfastwithai-53234e",
+    "deebeeeff-50fcd0",
+    "gonzalomacagno-2de1a9",
+    "hqmank-7c61f1",
+    "kangaroohere-b10f8d",
+    "paulo-kombucha-96431c",
+    "polydao-7a572b",
+    "rneayan-474bcf",
+    "slvdev-64c45a",
+    "techyoutbe-945b56",
+    "thilina-a-891c09",
+    "triglyceee-bd5b08"
+   ],
+   "variantes": [
+    "Néo-brutalisme à contours et ombres dures : 0xnfrith-5be616, polydao-7a572b, hqmank-7c61f1.",
+    "Autocollants, mascotte et bento : kangaroohere-b10f8d, paulo-kombucha-96431c, bizibeast-10f264, thilina-a-891c09, slvdev-64c45a.",
+    "Risographie et affiche imprimée : buildfastwithai-53234e, rneayan-474bcf, gonzalomacagno-2de1a9, triglyceee-bd5b08.",
+    "Flat générique ou template (contre-exemples notés 2-3) : alex-prompter-1ea044, deebeeeff-50fcd0, techyoutbe-945b56."
+   ],
+   "evidence": {
+    "videos": 15,
+    "notes": {
+     "2": 1,
+     "3": 5,
+     "4": 9
+    },
+    "notees_4_5": 9,
+    "notees_5": 0,
+    "note_moyenne": 3.53,
+    "musique": {
+     "animee-sur-la-musique": 7,
+     "sans-musique": 5,
+     "partielle": 2,
+     "musique-posee": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 7,
+     "mediane": 120,
+     "quartiles": [
+      113.25,
+      120.0
+     ],
+     "frequents": [
+      [
+       120,
+       4
+      ],
+      [
+       96,
+       1
+      ],
+      [
+       145,
+       1
+      ],
+      [
+       106,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 25.05,
+     "quartiles": [
+      19.03,
+      46.55
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 2.0,
+     "n_videos": 11,
+     "animees_sur_la_musique": 2.06,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 2,
+    "part_image_figee_mediane": 0.28,
+    "temps_mort_juge": {
+     "un-peu": 10,
+     "beaucoup": 3,
+     "aucun": 2
+    },
+    "fps": {
+     "30/1": 10,
+     "60/1": 5
+    },
+    "typo_traits_videos": {
+     "capitales": 11,
+     "casse phrase/minuscules": 7,
+     "mono": 5,
+     "point final": 3,
+     "serif": 3,
+     "condensée": 3,
+     "italique": 2,
+     "étendue/large": 2
+    },
+    "matieres_videos": {
+     "aplats nets": 11,
+     "ombres portées douces": 7,
+     "flou de mouvement": 6,
+     "trame/demi-teinte": 3,
+     "grain": 3,
+     "lueur/halo": 3,
+     "papier": 3,
+     "vignettage": 3,
+     "grille fine": 2
+    },
+    "polices_citees_videos": {
+     "Inter": 4,
+     "Archivo Black": 3,
+     "Bricolage": 2,
+     "Baloo": 2,
+     "Helvetica": 1,
+     "Anton": 1,
+     "Poppins": 1,
+     "Archivo Expanded": 1,
+     "Playfair": 1,
+     "DM Serif": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "blanc-creme",
+      "videos": 13,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#FBFBF2",
+       "#ECF4F8"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 10,
+      "hex_frequents": [
+       "#111111",
+       "#0A0B26",
+       "#1A1A1A"
+      ]
+     },
+     {
+      "teinte": "jaune-or",
+      "videos": 10,
+      "hex_frequents": [
+       "#F2CF4A",
+       "#ECB814",
+       "#FDC207"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 10,
+      "hex_frequents": [
+       "#4484C8",
+       "#80B4E0",
+       "#64748B"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 8,
+      "hex_frequents": [
+       "#FD504F",
+       "#EE3D1F",
+       "#FF3E8E"
+      ]
+     },
+     {
+      "teinte": "rose-magenta",
+      "videos": 7,
+      "hex_frequents": [
+       "#F07FD8",
+       "#98659D",
+       "#F4D1E6"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 7,
+      "hex_frequents": [
+       "#FFB21C",
+       "#FBE9CF",
+       "#F6D6A9"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#F6F3EC",
+      "role": "fond crème principal (kangaroohere-b10f8d ; #F4F0EB polydao-7a572b)"
+     },
+     {
+      "hex": "#13120C",
+      "role": "noir chaud : texte, contours, ombres dures"
+     },
+     {
+      "hex": "#223FF2",
+      "role": "bleu électrique : colonne, fond de scène (#2580FA bizibeast, #2451EC polydao)"
+     },
+     {
+      "hex": "#FDDE4C",
+      "role": "jaune : surligneurs, stickers, pastilles (10 vidéos sur 15)"
+     },
+     {
+      "hex": "#EB1290",
+      "role": "rose vif : étiquettes, trames (polydao-7a572b ; #F07FD8 0xnfrith)"
+     },
+     {
+      "hex": "#FD504F",
+      "role": "rouge corail : prix du problème, alertes (bizibeast-10f264)"
+     }
+    ],
+    "typographie": "Grotesque très grasse à caractère (Bricolage Grotesque, Archivo Black, Inter Display) en casse de phrase avec point final ou en capitales ; condensée Black pour les héros (polydao-7a572b 34 % de la hauteur) ; serif display contrastée en contrepoint (kangaroohere-b10f8d) ; ronde (Baloo) pour le kawaii ; mono pour les légendes.",
+    "tempo_cadence": "7 vidéos sur 15 animées sur la musique, 5 sans musique ; 120 BPM dans 4. Durée médiane 25 s (19-47 s). Plan médian 2,0 s ; image figée médiane 28 %.",
+    "courbes_signature": "Pas d'étude 60 fps. Ressort ou pop avec dépassement : dépassement décrit dans 11 vidéos sur 15 et ressort dans 8 (le plus haut taux du corpus) ; gonzalomacagno-2de1a9 mesure un ressort régulier et une cascade à 5 im ; back.out cité explicitement dans 3 vidéos.",
+    "transitions_types": "Poussée et volet plein de couleur (47 %, 2,4× le corpus), stores et bandes (33 %), iris né d'un point (33 %) ; la couleur suivante sert souvent de volet (bizibeast-10f264).",
+    "structure_type": "Arc problème → solution (33 %), boucle (33 %), accroche de la première seconde (20 %).",
+    "score_ordre": 31.8
+   },
+   "best": [
+    {
+     "slug": "kangaroohere-b10f8d",
+     "title": "Motion designer showreel",
+     "url": "https://prompt-motion.com/kangaroohere-b10f8d",
+     "craft": 4,
+     "why": "4/5 : crème, bleu, jaune, noir ; serif + grotesque noire ; le kangourou écrit le logo en sautant de lettre en lettre ; 29 gestes sur 44 calés au temps."
+    },
+    {
+     "slug": "polydao-7a572b",
+     "title": "Jev engineering showreel",
+     "url": "https://prompt-motion.com/polydao-7a572b",
+     "craft": 4,
+     "why": "4/5 : deck brutaliste en trame (contours 3-4 px, ombres dures 8-10 px), transitions motivées et chaînées, synchro de structure exacte."
+    },
+    {
+     "slug": "slvdev-64c45a",
+     "title": "Claude self-promo spot",
+     "url": "https://prompt-motion.com/slvdev-64c45a",
+     "craft": 4,
+     "why": "4/5 : huit transitions différentes mais motivées (iris en anneaux, plongée dans l'écran, point devenu disque), palette crème / bleu / jaune / rose tenue."
+    },
+    {
+     "slug": "buildfastwithai-53234e",
+     "title": "Indian civilisation history film",
+     "url": "https://prompt-motion.com/buildfastwithai-53234e",
+     "craft": 4,
+     "why": "4/5 : planches risographie (grain, repérage décalé 3-4 px), frise reliée par un fil rouge, tout calé sur une grille 96 BPM générée en code."
+    },
+    {
+     "slug": "bizibeast-10f264",
+     "title": "Bento.surf product video",
+     "url": "https://prompt-motion.com/bizibeast-10f264",
+     "craft": 4,
+     "why": "4/5 : palette du logo, transitions qui passent par la couleur suivante, fin logo soignée, bande-son calée sur les scènes."
+    },
+    {
+     "slug": "thilina-a-891c09",
+     "title": "sweetRegret app update reel",
+     "url": "https://prompt-motion.com/thilina-a-891c09",
+     "craft": 4,
+     "why": "4/5 : 3 fonds, un rose, une police arrondie, étiquette de version continue, synchro à l'image près."
+    },
+    {
+     "slug": "0xnfrith-5be616",
+     "title": "Celld job ownership explainer",
+     "url": "https://prompt-motion.com/0xnfrith-5be616",
+     "craft": 4,
+     "why": "4/5 : explainer technique limpide en néo-brutalisme pastel, chaque animation montre un changement d'état (sans musique)."
+    }
+   ],
+   "planche": [
+    "kangaroohere-b10f8d@11.2",
+    "polydao-7a572b@12.3",
+    "slvdev-64c45a@5.44",
+    "bizibeast-10f264@16.38",
+    "thilina-a-891c09@7.15",
+    "0xnfrith-5be616@11.02",
+    "buildfastwithai-53234e@46.57",
+    "paulo-kombucha-96431c@10.37",
+    "hqmank-7c61f1@5.87"
+   ],
+   "planche_file": "illus/style-aplats-pop.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-aplats-pop.jpg kangaroohere-b10f8d@11.2 polydao-7a572b@12.3 slvdev-64c45a@5.44 bizibeast-10f264@16.38 thilina-a-891c09@7.15 0xnfrith-5be616@11.02 buildfastwithai-53234e@46.57 paulo-kombucha-96431c@10.37 hqmank-7c61f1@5.87 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-aplats-pop.jpg (9 vignettes vérifiées).",
+   "links": [
+    {
+     "chapter": "c06",
+     "entry": "07-elastique",
+     "title": "La physique élastique : pop en ressort, écrasement, tampon (spring pop-in with overshoot, squash and stretch, stamp slam)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "01-fonds-pleins",
+     "title": "Les fonds pleins qui changent sur le temps (full-bleed color blocking, background color rotation, figure-ground swap on the beat)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "15-fond-ambiance",
+     "title": "Le fond d'ambiance : halo radial, dégradé fluide, grille fine (radial glow background, vignette, mesh gradient, drifting blurred blobs, faint grid or dot grid)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "15-lettre-image",
+     "title": "La lettre comme image : contour, ombre empilée, remplissage, mot géant (outline type, stacked offset shadow, image-filled letters, knockout, full-bleed giant word)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "02-echelle",
+     "title": "Le claquement d'échelle : slam, tampon, pop (scale slam, stamp slam, punch-in, scale pop)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "09-poussee-volet-plein",
+     "title": "La poussée et le volet plein (push, slide, solid color wipe, wipe-through panel)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "07-stores-bandes",
+     "title": "Les stores et les bandes en escalier (venetian blinds, staggered stripe wipe, stair-step wipe)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "04-iris-ne-dun-point",
+     "title": "L'iris né d'un point (iris wipe, circular reveal, dot-to-fullscreen, iris-out)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "12-schema-qui-se-construit",
+     "title": "Le schéma qui se construit et le flux qui circule (node diagram build-on, hub and spoke, travelling packet, timeline)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "03-changement-d-etat",
+     "title": "Le changement d'état : bouton, toggle, toast, tampon (UI state change, button morph, toggle, toast, stamp slam, strike-through verdict)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "02-mascotte-de-marque",
+     "title": "La mascotte tirée de la marque, qui agit sur l'écran (brand mascot, logo character, glyph-to-character, mascot interacting with UI)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "04-grilles-bento",
+     "title": "Grilles, bento et rangées de cartes (modular grid, bento grid, staggered card row)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "02-arc-probleme-solution",
+     "title": "L'arc de pitch : problème → solution → preuves → appel (problem-solution-proof-CTA arc, launch narrative)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "06-accroche",
+     "title": "L'accroche de la première seconde (hook, cold open, question / number / problem opener)"
+    }
+   ]
+  },
+  {
+   "rank": 7,
+   "key": "nuit-electrique",
+   "title": "La nuit électrique : terminal, néon et data-art",
+   "title_en": "dark tech, terminal, neon, generative data art, oscilloscope",
+   "entry_file": "entries/07-nuit-electrique.md",
+   "scope": "Fond quasi noir, lumière émise plutôt que réfléchie : texte de terminal en mono, tracés néon (cyan, magenta, citron, phosphore), particules et visualisations génératives, flashs et décalages RVB. Le contenu est la machine elle-même (code, signal, données). Quand la choisir : outil développeur, infra, crypto, data, science, intro de chaîne tech ; à éviter pour un public non technique et si le texte doit être lu (mono minuscule illisible, flash répété : ses deux défauts).",
+   "criteres_de_classement": "Fond noir ou nuit, lueurs dans 18 vidéos sur 20, mono dominante (15 sur 20), formes génératives, terminal ou instruments de mesure.",
+   "n": 20,
+   "n45": 16,
+   "n5": 0,
+   "members": [
+    "arjunsh1607-93005d",
+    "dale-vaz-cc612a",
+    "gigabit-million-16b3a0",
+    "gizakdag-cf4ae6",
+    "influencer-seo-ce8c33",
+    "ismailfahmi-557268",
+    "kamstudiolabs-447565",
+    "kantamk-61f410",
+    "kyonax-on-tech-aabc1d",
+    "linearuncle-5d2bae",
+    "madhav-xo-f97f20",
+    "math-files-39c9d0",
+    "maxalexweber-67688b",
+    "monokern-ade5b6",
+    "parkerrex-1a54fe",
+    "rames-jusso-589f80",
+    "rneayan-ea6129",
+    "robvjourney-ce3e1a",
+    "spearwtf-3c1fd1",
+    "yunn260414-60d996"
+   ],
+   "variantes": [
+    "Terminal et code : robvjourney-ce3e1a, kyonax-on-tech-aabc1d, madhav-xo-f97f20, dale-vaz-cc612a, parkerrex-1a54fe, rames-jusso-589f80.",
+    "Data-art et science génératifs : math-files-39c9d0, ismailfahmi-557268, rneayan-ea6129 (oscilloscope), kamstudiolabs-447565, linearuncle-5d2bae, yunn260414-60d996, gigabit-million-16b3a0.",
+    "Psychédélique et glitch : monokern-ade5b6, gizakdag-cf4ae6, maxalexweber-67688b, spearwtf-3c1fd1, influencer-seo-ce8c33.",
+    "Physique ludique néon : kantamk-61f410 ; reel d'agence tech : arjunsh1607-93005d."
+   ],
+   "evidence": {
+    "videos": 20,
+    "notes": {
+     "3": 4,
+     "4": 16
+    },
+    "notees_4_5": 16,
+    "notees_5": 0,
+    "note_moyenne": 3.8,
+    "musique": {
+     "animee-sur-la-musique": 14,
+     "sans-musique": 2,
+     "partielle": 2,
+     "voix-off": 2
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 14,
+     "mediane": 120,
+     "quartiles": [
+      120.0,
+      124.0
+     ],
+     "frequents": [
+      [
+       120,
+       7
+      ],
+      [
+       124,
+       1
+      ],
+      [
+       96,
+       1
+      ],
+      [
+       128,
+       1
+      ],
+      [
+       140,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 20.05,
+     "quartiles": [
+      15.09,
+      47.02
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 1.67,
+     "n_videos": 12,
+     "animees_sur_la_musique": 1.77,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 6,
+    "part_image_figee_mediane": 0.3,
+    "temps_mort_juge": {
+     "un-peu": 14,
+     "beaucoup": 4,
+     "aucun": 2
+    },
+    "fps": {
+     "60/1": 11,
+     "30/1": 9
+    },
+    "typo_traits_videos": {
+     "mono": 15,
+     "capitales": 12,
+     "italique": 7,
+     "étendue/large": 6,
+     "serif": 6,
+     "casse phrase/minuscules": 5,
+     "condensée": 3,
+     "pixel/bitmap": 1,
+     "point final": 1
+    },
+    "matieres_videos": {
+     "lueur/halo": 18,
+     "vignettage": 14,
+     "flash/surexposition": 12,
+     "aberration/glitch RVB": 9,
+     "grille fine": 6,
+     "flou de mouvement": 5,
+     "grain": 4,
+     "trame/demi-teinte": 3,
+     "dégradé": 3
+    },
+    "polices_citees_videos": {
+     "Inter": 6,
+     "JetBrains Mono": 5,
+     "Manrope": 2,
+     "Noto": 2,
+     "Space Grotesk": 2,
+     "Unbounded": 2,
+     "Poppins": 2,
+     "PingFang": 2,
+     "Inter Display": 1,
+     "Instrument Serif": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "noir",
+      "videos": 20,
+      "hex_frequents": [
+       "#000000",
+       "#01200C",
+       "#070B10"
+      ]
+     },
+     {
+      "teinte": "blanc-creme",
+      "videos": 17,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#F2F2F0",
+       "#F6FAF2"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 14,
+      "hex_frequents": [
+       "#0645E2",
+       "#16346A",
+       "#9CA7BB"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 11,
+      "hex_frequents": [
+       "#616363",
+       "#5D5B69",
+       "#7A808C"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 10,
+      "hex_frequents": [
+       "#F0506E",
+       "#F2908A",
+       "#E85A5F"
+      ]
+     },
+     {
+      "teinte": "cyan-teal",
+      "videos": 10,
+      "hex_frequents": [
+       "#3EE0E8",
+       "#2EC4B6",
+       "#6FC3D9"
+      ]
+     },
+     {
+      "teinte": "gris-clair",
+      "videos": 9,
+      "hex_frequents": [
+       "#8A96A8",
+       "#B8B8BC",
+       "#C9C6BD"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#0B0D0B",
+      "role": "fond quasi noir (robvjourney-ce3e1a ; #06060E math-files-39c9d0)"
+     },
+     {
+      "hex": "#151A15",
+      "role": "grille fine ou panneaux à peine plus clairs"
+     },
+     {
+      "hex": "#C5F23C",
+      "role": "accent citron ou phosphore (robvjourney-ce3e1a ; #6CFFB0 rneayan-ea6129)"
+     },
+     {
+      "hex": "#48E8F8",
+      "role": "cyan lumineux des tracés (math-files-39c9d0 ; #52D7D8 madhav-xo-f97f20)"
+     },
+     {
+      "hex": "#F04888",
+      "role": "magenta, second tracé (math-files-39c9d0)"
+     },
+     {
+      "hex": "#F2C12E",
+      "role": "or, accent unique en variante (kyonax-on-tech-aabc1d)"
+     }
+    ],
+    "typographie": "Mono (JetBrains Mono, SF Mono) pour terminal, HUD et chiffres (15 vidéos sur 20) ; grotesque géométrique (Space Grotesk, Manrope, Inter) pour les titres ; étendue chromée (Monument Extended, Unbounded) pour les noms ; serif italique mathématique ou éditoriale en contrepoint (7).",
+    "tempo_cadence": "14 vidéos sur 20 animées sur la musique ; 120 BPM dans 7, 140 chez rames-jusso-589f80. Durée médiane 20 s (15-47 s). Plan médian 1,7 s ; 6 plans-séquence ou quasi ; image figée médiane 30 %.",
+    "courbes_signature": "Pas d'étude 60 fps. Mouvement surtout mécanique : mouvement linéaire décrit dans 13 vidéos sur 20 (balayages, tracés, défilement de terminal), flashs à décroissance rapide (12 vidéos), peu de rebonds (5 sur 20). Frappe à la croche et coupes 4 im avant la grosse caisse (robvjourney-ce3e1a).",
+    "transitions_types": "Flash et surexposition (55 %, 2,5× le corpus), glitch en tranches et RVB (30 %, cliché), compression puis éclosion (30 %), plongée traversante (40 % en caméra).",
+    "structure_type": "Accroche de la première seconde (30 %, 2,5×), signature finale (45 %), boucle (30 %) ; accélération par subdivisions et rafale (50 %, 2,1×).",
+    "score_ordre": 38.0
+   },
+   "best": [
+    {
+     "slug": "monokern-ade5b6",
+     "title": "Psychedelic hypnotic eye showreel",
+     "url": "https://prompt-motion.com/monokern-ade5b6",
+     "craft": 4,
+     "why": "4/5 : concept bouclé (l'œil s'ouvre, on plonge, il se ferme en ligne CRT), synchro serrée sur la grosse caisse à 120 BPM, transitions motivées."
+    },
+    {
+     "slug": "math-files-39c9d0",
+     "title": "Mathematics motion showreel",
+     "url": "https://prompt-motion.com/math-files-39c9d0",
+     "craft": 4,
+     "why": "4/5 : huit visualisations mathématiques justes (Fourier, Julia, phyllotaxie, Euler), cyan / magenta / ambre sur noir, sur une vraie grille musicale."
+    },
+    {
+     "slug": "ismailfahmi-557268",
+     "title": "Drone Emprit showreel",
+     "url": "https://prompt-motion.com/ismailfahmi-557268",
+     "craft": 4,
+     "why": "4/5 : un seul système de particules qui se transforme en trois visualisations de données puis en logo."
+    },
+    {
+     "slug": "robvjourney-ce3e1a",
+     "title": "Nohandslabs brand promo",
+     "url": "https://prompt-motion.com/robvjourney-ce3e1a",
+     "craft": 4,
+     "why": "4/5 : citron sur noir très tenu, slogans un groupe de mots par temps, coupes 4 im avant la grosse caisse, main en particules → 95 %."
+    },
+    {
+     "slug": "madhav-xo-f97f20",
+     "title": "Personal research intro reel",
+     "url": "https://prompt-motion.com/madhav-xo-f97f20",
+     "craft": 4,
+     "why": "4/5 : 10 transitions sur 10 sur le temps, deux compressions-explosions et une extinction cathodique soignées."
+    },
+    {
+     "slug": "kyonax-on-tech-aabc1d",
+     "title": "org2html product showreel",
+     "url": "https://prompt-motion.com/kyonax-on-tech-aabc1d",
+     "craft": 4,
+     "why": "4/5 : noir et or, logo ASCII → code → arbre → page, calage serré sur 128 BPM ; mono minuscule à corriger."
+    },
+    {
+     "slug": "rneayan-ea6129",
+     "title": "Oscilloscope-style studio motion graphic",
+     "url": "https://prompt-motion.com/rneayan-ea6129",
+     "craft": 4,
+     "why": "4/5 : système oscilloscope phosphore de bout en bout, signal chaos → ordre, timeline écrite en temps à 110 BPM."
+    }
+   ],
+   "planche": [
+    "monokern-ade5b6@9.2",
+    "math-files-39c9d0@9.3",
+    "arjunsh1607-93005d@1.6",
+    "ismailfahmi-557268@7.86",
+    "robvjourney-ce3e1a@3.8",
+    "madhav-xo-f97f20@4.83",
+    "kyonax-on-tech-aabc1d@7.17",
+    "gizakdag-cf4ae6@5.2",
+    "rneayan-ea6129@26.13"
+   ],
+   "planche_file": "illus/style-nuit-electrique.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-nuit-electrique.jpg monokern-ade5b6@9.2 math-files-39c9d0@9.3 arjunsh1607-93005d@1.6 ismailfahmi-557268@7.86 robvjourney-ce3e1a@3.8 madhav-xo-f97f20@4.83 kyonax-on-tech-aabc1d@7.17 gizakdag-cf4ae6@5.2 rneayan-ea6129@26.13 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-nuit-electrique.jpg (9 vignettes vérifiées ; monokern-ade5b6 pris à 9,2 s sur le mercure, pas sur un flash blanc).",
+   "links": [
+    {
+     "chapter": "c07",
+     "entry": "10-terminal-et-code",
+     "title": "Le terminal qui tape et le code qui pilote le rendu (terminal typing, block caret, log output, typed code, live code-to-render)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "08-courbe-tracee",
+     "title": "La courbe qui se trace (line chart draw-on, leading dot, synced counter, scrubbing tooltip)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "06-forme-generative",
+     "title": "La forme 3D générative : nuage de points, filaire et métaballes (point-cloud morph, wireframe mesh, metaballs, dotted globe, shatter and reassemble)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "11-nuage-forme",
+     "title": "Le nuage de particules qui prend forme (particle swarm into text or logo, point-cloud morph, flow field, disintegration)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "10-radial",
+     "title": "Les motifs radiaux : orbites, cadrans, rayons et tunnels (orbit rings with satellites, dial and radar sweep, sunburst, speed lines, concentric ring tunnel)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "03-flash",
+     "title": "Le coup de flash : surexposition, image négative, glitch RVB (flash frame, overexposure flash, invert flash, RGB split glitch hit)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "05-flash-surexposition",
+     "title": "Le flash et la surexposition (flash frame, overexposure white-out, impact flash, shockwave ring)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "12-glitch-tranches",
+     "title": "Le glitch en tranches et RVB, un cliché (slice glitch, RGB split, block glitch)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "03-compression-eclosion",
+     "title": "La compression : en point ou en ligne, puis l'éclosion (implode to a point, squash to line, CRT power-off/on, implode-then-explode)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "01-plongee-traversante",
+     "title": "La plongée traversante (zoom-through, push-through, fly-through, tunnel, warp)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "06-acceleration-rafale",
+     "title": "L'accélération par subdivisions et la rafale (accelerando, subdivision build-up, rapid-fire burst, burst and breathe)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "02-temps-fort",
+     "title": "Le temps fort : montée, silence d'un temps, impact sur la révélation (riser, pre-drop silence, drop on the reveal, hero hit)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "06-accroche",
+     "title": "L'accroche de la première seconde (hook, cold open, question / number / problem opener)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "04-frappe-decodage",
+     "title": "Le texte qui s'écrit sur place : frappe, décodage, glitch (typewriter, caret, backspace retype, text scramble decode, slice glitch)"
+    }
+   ]
+  },
+  {
+   "rank": 8,
+   "key": "3d-cinema",
+   "title": "La 3D et la lumière de cinéma",
+   "title_en": "3D render, cinematic lighting, camera work",
+   "entry_file": "entries/08-3d-cinema.md",
+   "scope": "Volumes rendus (Three.js, WebGL), lumière motivée (heure dorée, braises, néon, espace), profondeur de champ, vrai découpage de caméra : orbite, grue, poursuite. Les vidéos racontent plus qu'elles ne calent (2 sur 16 animées sur la musique) et durent longtemps (41 s médiane). Quand la choisir : métaphore produit forte (fission, trou noir, diorama), explainer d'infrastructure, court-métrage de marque ; à éviter pour une promo SaaS courte si la 3D n'est pas au service du message (« 3D générique » est la première cause de casse de style dans les vidéos notées 4-5).",
+   "criteres_de_classement": "Scènes en volume éclairé, caméra qui tourne dans l'espace (62 % des vidéos), lumière qui raconte (44 %).",
+   "n": 16,
+   "n45": 9,
+   "n5": 0,
+   "members": [
+    "ajith-io-4c248f",
+    "allforbigfire-86ff3c",
+    "anas0ra-e57aea",
+    "anilraok-eff262",
+    "axtonliu-0b861d",
+    "blueoctopusai-dd17bd",
+    "buildfastwithai-ed9447",
+    "davidshulmanfl-371638",
+    "gorden-sun-041f56",
+    "mandelduck-95fd08",
+    "mdaman010-e7226a",
+    "nft-chen-5f8bb0",
+    "nolkeeg-bf062e",
+    "rebutonepress-810f78",
+    "sayan-shanky-f850d8",
+    "tdinh-me-815acb"
+   ],
+   "variantes": [
+    "Cinéma de marque et métaphore : ajith-io-4c248f (nucléaire), nolkeeg-bf062e (une seconde), rebutonepress-810f78 (trou noir).",
+    "Personnages 3D et récit : anilraok-eff262 (tuile de Scrabble), axtonliu-0b861d (pélican), anas0ra-e57aea (diorama cosy), allforbigfire-86ff3c (anime cel-shading), davidshulmanfl-371638 (pâte à modeler).",
+    "Monde temps réel stylisé : nft-chen-5f8bb0 (Ghibli), mandelduck-95fd08 (Nuit étoilée), gorden-sun-041f56 (grotte néon low-poly).",
+    "Maquette explicative : sayan-shanky-f850d8, mdaman010-e7226a, blueoctopusai-dd17bd, buildfastwithai-ed9447, tdinh-me-815acb."
+   ],
+   "evidence": {
+    "videos": 16,
+    "notes": {
+     "3": 7,
+     "4": 9
+    },
+    "notees_4_5": 9,
+    "notees_5": 0,
+    "note_moyenne": 3.56,
+    "musique": {
+     "partielle": 9,
+     "musique-posee": 3,
+     "animee-sur-la-musique": 2,
+     "sans-musique": 2
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 2,
+     "mediane": 111.5,
+     "quartiles": [
+      109.25,
+      113.75
+     ],
+     "frequents": [
+      [
+       116,
+       1
+      ],
+      [
+       107,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 41.05,
+     "quartiles": [
+      31.44,
+      69.52
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 2.83,
+     "n_videos": 11,
+     "animees_sur_la_musique": 2.33,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 5,
+    "part_image_figee_mediane": 0.13,
+    "temps_mort_juge": {
+     "un-peu": 9,
+     "aucun": 4,
+     "beaucoup": 3
+    },
+    "fps": {
+     "30/1": 8,
+     "60/1": 7,
+     "24/1": 1
+    },
+    "typo_traits_videos": {
+     "capitales": 8,
+     "serif": 6,
+     "condensée": 6,
+     "mono": 5,
+     "casse phrase/minuscules": 4,
+     "italique": 4,
+     "étendue/large": 3,
+     "pixel/bitmap": 1,
+     "manuscrite": 1
+    },
+    "matieres_videos": {
+     "lueur/halo": 11,
+     "profondeur de champ": 7,
+     "vignettage": 6,
+     "flou de mouvement": 5,
+     "grain": 4,
+     "flash/surexposition": 3,
+     "papier": 2,
+     "dégradé": 2,
+     "ombres portées douces": 2
+    },
+    "polices_citees_videos": {
+     "Inter": 8,
+     "Noto": 2,
+     "Bodoni": 2,
+     "Archivo": 2,
+     "Bebas": 1,
+     "Barlow": 1,
+     "Big Shoulders": 1,
+     "Anton": 1,
+     "Impact": 1,
+     "Caveat": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "orange",
+      "videos": 15,
+      "hex_frequents": [
+       "#FFB347",
+       "#E8641E",
+       "#C8A97A"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 12,
+      "hex_frequents": [
+       "#9FD8FF",
+       "#4F8BFF",
+       "#2E7BE6"
+      ]
+     },
+     {
+      "teinte": "blanc-creme",
+      "videos": 12,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#F2F2F2",
+       "#EEF2E8"
+      ]
+     },
+     {
+      "teinte": "jaune-or",
+      "videos": 11,
+      "hex_frequents": [
+       "#FFF4D6",
+       "#F8C51C",
+       "#F4D9A0"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 10,
+      "hex_frequents": [
+       "#000000",
+       "#050403",
+       "#0E0F18"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 9,
+      "hex_frequents": [
+       "#E0283A",
+       "#C98BA0",
+       "#E5252A"
+      ]
+     },
+     {
+      "teinte": "vert",
+      "videos": 7,
+      "hex_frequents": [
+       "#3DDC84",
+       "#86C9AA",
+       "#E9FBF4"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#050403",
+      "role": "noir de fond qui laisse la lumière sculpter (ajith-io-4c248f ; #000000 nolkeeg-bf062e)"
+     },
+     {
+      "hex": "#FFB347",
+      "role": "lumière chaude : braises, soleil, villes (orange dans 15 vidéos sur 16)"
+     },
+     {
+      "hex": "#E8641E",
+      "role": "matière en fusion, feu, accent chaud"
+     },
+     {
+      "hex": "#9FD8FF",
+      "role": "lumière froide en contrepoint : faisceaux, halo atmosphérique (#CFE0FF nolkeeg)"
+     },
+     {
+      "hex": "#F4A574",
+      "role": "ciel d'heure dorée (axtonliu-0b861d)"
+     },
+     {
+      "hex": "#F2EEE8",
+      "role": "blanc chaud des chiffres et titres posés sur la 3D"
+     }
+    ],
+    "typographie": "Peu de texte. Grotesque très grasse pour chiffres et titres (Inter Display Black, 14-18 % de la hauteur chez nolkeeg-bf062e) ; serif didone fine ou italique pour les cartons de cinéma (Bodoni, Cormorant, Instrument Serif) ; mono capitales pour la télémétrie.",
+    "tempo_cadence": "2 vidéos sur 16 animées sur la musique, 9 partielles, 3 musique posée ; BPM rarement exploités. Durée médiane 41 s (31-70 s). Plan médian 2,8 s ; image figée médiane 13 % (la caméra bouge en continu).",
+    "courbes_signature": "Pas d'étude 60 fps. Caméra en mouvement continu (orbite lente, travelling) ; mouvement linéaire décrit dans 7 vidéos sur 16 ; anticipation et écrasement pour les personnages (anilraok-eff262 : écrasement f635-f639 avant le regard).",
+    "transitions_types": "Fondu ou passage par le fond (44 %), coupe sur le temps (19 %) ; la transition est souvent un mouvement de caméra (poussée calibrée 44 %, canevas parcouru 25 %).",
+    "structure_type": "Chute (25 %, 2,7×), escalade puis résolution (19 %), dispositif unique (19 %) ; musique calquée sur le montage (50 %, 2,2×).",
+    "score_ordre": 17.1
+   },
+   "best": [
+    {
+     "slug": "ajith-io-4c248f",
+     "title": "Distilbook promo showreel",
+     "url": "https://prompt-motion.com/ajith-io-4c248f",
+     "craft": 4,
+     "why": "4/5 : métaphore nucléaire filée (les lettres s'enflamment, une sphère fissionne en scènes), bloom et particules, compte à rebours à ±1 im sur 116 BPM."
+    },
+    {
+     "slug": "nolkeeg-bf062e",
+     "title": "What happens in one second",
+     "url": "https://prompt-motion.com/nolkeeg-bf062e",
+     "craft": 4,
+     "why": "4/5 : rendu 3D, particules et système typographique de niveau studio (compteurs géants sur la Terre en points), concept « une seconde »."
+    },
+    {
+     "slug": "anilraok-eff262",
+     "title": "Scrabble tile character story",
+     "url": "https://prompt-motion.com/anilraok-eff262",
+     "craft": 4,
+     "why": "4/5 : vraie histoire en 3 actes, jeu d'acteur lisible (yeux, sourcils, squash), lumière PBR, chute qui relie l'histoire au produit."
+    },
+    {
+     "slug": "axtonliu-0b861d",
+     "title": "Pelican riding a bicycle",
+     "url": "https://prompt-motion.com/axtonliu-0b861d",
+     "craft": 4,
+     "why": "4/5 : découpage de cinéma en 6 plans, heure dorée cohérente, profondeur de champ, bande-son qui change à chaque coupe."
+    },
+    {
+     "slug": "gorden-sun-041f56",
+     "title": "Beat-synced bouncing 3D ball",
+     "url": "https://prompt-motion.com/gorden-sun-041f56",
+     "craft": 4,
+     "why": "4/5 : synchro note par rebond qui suit l'accélération de Grieg, chutes dans les silences."
+    },
+    {
+     "slug": "nft-chen-5f8bb0",
+     "title": "Porco Rosso sunset dogfight",
+     "url": "https://prompt-motion.com/nft-chen-5f8bb0",
+     "craft": 4,
+     "why": "4/5 : rendu Three.js remarquable (nuages cel-shadés, coucher de soleil violet, flare), texte posé sur les notes."
+    }
+   ],
+   "planche": [
+    "ajith-io-4c248f@20.54",
+    "anilraok-eff262@21.78",
+    "axtonliu-0b861d@20.54",
+    "nolkeeg-bf062e@11.73",
+    "gorden-sun-041f56@11.98",
+    "nft-chen-5f8bb0@5.65",
+    "anas0ra-e57aea@8.38",
+    "sayan-shanky-f850d8@32.45",
+    "mandelduck-95fd08@16.43"
+   ],
+   "planche_file": "illus/style-3d-cinema.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-3d-cinema.jpg ajith-io-4c248f@20.54 anilraok-eff262@21.78 axtonliu-0b861d@20.54 nolkeeg-bf062e@11.73 gorden-sun-041f56@11.98 nft-chen-5f8bb0@5.65 anas0ra-e57aea@8.38 sayan-shanky-f850d8@32.45 mandelduck-95fd08@16.43 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-3d-cinema.jpg (9 vignettes vérifiées).",
+   "links": [
+    {
+     "chapter": "c05",
+     "entry": "09-tournage-3d",
+     "title": "Filmer une scène 3D : orbite, grue, poursuite et angles (orbit, crane, chase cam, low-angle, turntable, camera roll)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "03-poussee-calibree",
+     "title": "La poussée vers le sujet : lente, calibrée ou en punch sur le temps (push-in, punch-in, camera creep, beat zoom bump, calibrated reframe)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "10-mise-au-point-profondeur",
+     "title": "La mise au point et la profondeur sans 3D (rack focus, depth of field, layered 2.5D depth, foreground blur)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "04-plat-au-volume",
+     "title": "Du plat au volume : bascule 2D vers 3D, extrusion et blocs isométriques (2D-to-3D tilt, extrusion, isometric blocks, cube ripple, exploded view)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "04-eclairage",
+     "title": "Le script couleur : étalonnage, désaturation et lumière qui racontent (color script, narrative grade shift, semantic desaturation, motivated light)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "13-finition",
+     "title": "La finition de rendu : grain, vignette, halo, ombres douces, reflets (film grain, vignette, bloom and glow, soft drop shadows, sheen sweep, paper texture)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "12-impact",
+     "title": "L'impact : onde de choc annulaire et gerbe d'éclats (shockwave ring, ripple rings, radial burst, sparks, confetti)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "01-poids-saut",
+     "title": "Le poids du personnage : se ramasser, sauter, s'écraser à l'atterrissage (squash and stretch, anticipation, jump and landing, impact)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "03-visage-yeux",
+     "title": "Le visage minimal : jouer par les yeux, le clignement et les signes (minimal face acting, eye swaps, blink, cartoon reaction marks)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "08-musique-calquee",
+     "title": "La musique calquée sur le montage (arrangement mirrors the edit, score to picture, song form drives visual form)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "07-bruitage-image",
+     "title": "Le bruitage à l'image près et la sonification (hit-point SFX, picture-locked sound design, per-glyph ticks, mickey-mousing, sonification)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "07-chute",
+     "title": "La chute : constat puis retournement (punchline, setup-twist, rule of three, label flip)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "10-escalade-resolution",
+     "title": "L'escalade puis la résolution (escalation arc, build and release, three-act story)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "14-fondu-passage-fond",
+     "title": "Le fondu et le passage par le fond (crossfade, dip to black, dip to background, blur dissolve)"
+    }
+   ]
+  },
+  {
+   "rank": 9,
+   "key": "carnet-dessin",
+   "title": "Le carnet : feutre, crayon et papier dessiné",
+   "title_en": "hand-drawn notebook, marker, pencil, whiteboard, paper cut-out",
+   "entry_file": "entries/09-carnet-dessin.md",
+   "scope": "Tout semble tracé à la main sur papier : feutre de tableau blanc, graphite tremblé image par image, aquarelle détourée en autocollant, écriture manuscrite (Caveat, Patrick Hand). Le trait qui se dessine (88 % des vidéos) et la voix off structurent le film. Quand la choisir : tutoriel, explainer intime, recette, onboarding, ton humain et artisanal ; à éviter pour un lancement énergique (une seule vidéo sur 8 animée sur la musique, durée médiane 45 s).",
+   "criteres_de_classement": "Écriture manuscrite dans les 8 vidéos, tracés qui s'écrivent, texture papier ou tableau, peu ou pas d'aplats numériques.",
+   "n": 8,
+   "n45": 7,
+   "n5": 0,
+   "members": [
+    "abderrahmen-g-9e8ed0",
+    "ajith-io-ea7f2d",
+    "ik-builds-b8bdcf",
+    "lemomo-ai-0d9cff",
+    "nikolajankovic-ce4ff4",
+    "ror-fly-9950f1",
+    "sarut0bisasuke-cefa43",
+    "tak3sh8-be5012"
+   ],
+   "variantes": [
+    "Tableau blanc et feutre sur la voix : lemomo-ai-0d9cff, tak3sh8-be5012.",
+    "Graphite stop-motion : nikolajankovic-ce4ff4.",
+    "Aquarelle et autocollants d'enfant : abderrahmen-g-9e8ed0.",
+    "Crayonné qui se transforme (plan-séquence) : ajith-io-ea7f2d ; papier et feutre physique : ik-builds-b8bdcf.",
+    "Infographie recette illustrée : ror-fly-9950f1, sarut0bisasuke-cefa43 (même prompt)."
+   ],
+   "evidence": {
+    "videos": 8,
+    "notes": {
+     "3": 1,
+     "4": 7
+    },
+    "notees_4_5": 7,
+    "notees_5": 0,
+    "note_moyenne": 3.88,
+    "musique": {
+     "sans-musique": 3,
+     "partielle": 2,
+     "voix-off": 2,
+     "animee-sur-la-musique": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 1,
+     "mediane": 120,
+     "quartiles": [
+      120.0,
+      120.0
+     ],
+     "frequents": [
+      [
+       120,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 45.02,
+     "quartiles": [
+      30.0,
+      72.87
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 0.75,
+     "n_videos": 3,
+     "animees_sur_la_musique": 0.27,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 4,
+    "part_image_figee_mediane": 0.23,
+    "temps_mort_juge": {
+     "un-peu": 7,
+     "beaucoup": 1
+    },
+    "fps": {
+     "30/1": 4,
+     "60/1": 2,
+     "24/1": 1,
+     "12/1": 1
+    },
+    "typo_traits_videos": {
+     "manuscrite": 8,
+     "casse phrase/minuscules": 3,
+     "mono": 3,
+     "capitales": 3,
+     "serif": 2,
+     "étendue/large": 1
+    },
+    "matieres_videos": {
+     "lueur/halo": 5,
+     "papier": 5,
+     "vignettage": 4,
+     "grain": 3,
+     "ombres portées douces": 3,
+     "flou de mouvement": 2,
+     "verre": 2
+    },
+    "polices_citees_videos": {
+     "Caveat": 4,
+     "Patrick Hand": 3,
+     "Inter": 2,
+     "IBM Plex": 2,
+     "Anton": 1,
+     "Luckiest Guy": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "blanc-creme",
+      "videos": 8,
+      "hex_frequents": [
+       "#F3E9D2",
+       "#EDEAE3",
+       "#F7F7F2"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 6,
+      "hex_frequents": [
+       "#E8B6A6",
+       "#D2603F",
+       "#E8453C"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 6,
+      "hex_frequents": [
+       "#F2C9A6",
+       "#F07A22",
+       "#F3C9A0"
+      ]
+     },
+     {
+      "teinte": "gris",
+      "videos": 6,
+      "hex_frequents": [
+       "#2B2B2B",
+       "#2A2A2A",
+       "#32332E"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 5,
+      "hex_frequents": [
+       "#9CC8DE",
+       "#5D9CC6",
+       "#3B82F6"
+      ]
+     },
+     {
+      "teinte": "jaune-or",
+      "videos": 4,
+      "hex_frequents": [
+       "#E9C21C",
+       "#FFF6E0",
+       "#F6C21B"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 4,
+      "hex_frequents": [
+       "#1B1815",
+       "#141110",
+       "#0F172A"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#F2F1EC",
+      "role": "papier ou tableau blanc (lemomo-ai-0d9cff ; #EDEAE3 ajith-io-ea7f2d)"
+     },
+     {
+      "hex": "#2A2A2A",
+      "role": "feutre ou graphite noir : titres, contours"
+     },
+     {
+      "hex": "#D8693F",
+      "role": "feutre orange : étapes, accents (lemomo-ai-0d9cff ; #D2603F ajith-io-ea7f2d)"
+     },
+     {
+      "hex": "#2F5DB8",
+      "role": "feutre ou stylo bleu : annotations (#4B4BB0 nikolajankovic-ce4ff4)"
+     },
+     {
+      "hex": "#B23A3E",
+      "role": "rouge des seuils et alertes (nikolajankovic-ce4ff4)"
+     },
+     {
+      "hex": "#E6DC9E",
+      "role": "surligneur jaune translucide"
+     }
+    ],
+    "typographie": "Manuscrite (Caveat ×4, Patrick Hand ×3, Caveat Brush, Luckiest Guy pour les titres de recette) en bas de casse, 2,5-10 % de la hauteur ; machine à écrire ou mono pour les cartes et chiffres ; une grotesque seulement pour le logo.",
+    "tempo_cadence": "1 vidéo sur 8 animée sur la musique, 2 en voix off, 3 sans musique. Durée médiane 45 s (30-73 s). 4 plans-séquence ou quasi (un canevas parcouru) ; image figée médiane 23 %. Le dessin suit la voix (lemomo-ai-0d9cff : feutres au rythme de la voix ; tak3sh8-be5012 : image 0,5 s avant la voix).",
+    "courbes_signature": "Pas d'étude 60 fps. Tracés à vitesse de main (trim path), tremblé image par image en stop-motion (nikolajankovic-ce4ff4), panoramiques filés entre zones du canevas (lemomo-ai-0d9cff), squash et pelure d'oignon sur la balle physique (ik-builds-b8bdcf).",
+    "transitions_types": "Coupe sur le temps (38 %), volet par la matière (25 %, 4,9× : vague, nuit qui tombe), objet relais (38 %), vider le cadre (12 %).",
+    "structure_type": "Signature finale (62 %), fil rouge (38 %, 2,5× : le thermomètre de nikolajankovic-ce4ff4), récapitulatif en rafale (25 %).",
+    "score_ordre": 12.4
+   },
+   "best": [
+    {
+     "slug": "lemomo-ai-0d9cff",
+     "title": "Whiteboard skill tutorial",
+     "url": "https://prompt-motion.com/lemomo-ai-0d9cff",
+     "craft": 4,
+     "why": "4/5 : un seul canevas parcouru en panoramiques filés, feutres qui dessinent au rythme de la voix, croquis qui deviennent de vraies interfaces."
+    },
+    {
+     "slug": "ajith-io-ea7f2d",
+     "title": "Distilbook motion showreel",
+     "url": "https://prompt-motion.com/ajith-io-ea7f2d",
+     "craft": 4,
+     "why": "4/5 : plan-séquence de 32 s où chaque forme engendre la suivante (point → lentille, papier → faisceau → arc-en-ciel → pellicule), texture crayonnée."
+    },
+    {
+     "slug": "ik-builds-b8bdcf",
+     "title": "Paper-style product launch film",
+     "url": "https://prompt-motion.com/ik-builds-b8bdcf",
+     "craft": 4,
+     "why": "4/5 : récit produit porté par une balle physique (squash, pelure d'oignon), notes au feutre, musique en sections comme demandé."
+    },
+    {
+     "slug": "abderrahmen-g-9e8ed0",
+     "title": "Sketchbook animals come alive",
+     "url": "https://prompt-motion.com/abderrahmen-g-9e8ed0",
+     "craft": 4,
+     "why": "4/5 : dessins d'enfant détourés en stickers, transitions motivées (vague, nuit qui tombe, plongée dans la fleur), montage « planètes » sur le temps."
+    },
+    {
+     "slug": "nikolajankovic-ce4ff4",
+     "title": "DeFi Saver stop-motion explainer",
+     "url": "https://prompt-motion.com/nikolajankovic-ce4ff4",
+     "craft": 4,
+     "why": "4/5 : stop-motion graphite d'une cohérence rare (tremblé image par image, cartes jetées, fil rouge du thermomètre)."
+    }
+   ],
+   "planche": [
+    "lemomo-ai-0d9cff@48.41",
+    "ajith-io-ea7f2d@2.3",
+    "ik-builds-b8bdcf@2.5",
+    "abderrahmen-g-9e8ed0@27.84",
+    "nikolajankovic-ce4ff4@30.25",
+    "sarut0bisasuke-cefa43@11.43"
+   ],
+   "planche_file": "illus/style-carnet-dessin.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-carnet-dessin.jpg lemomo-ai-0d9cff@48.41 ajith-io-ea7f2d@2.3 ik-builds-b8bdcf@2.5 abderrahmen-g-9e8ed0@27.84 nikolajankovic-ce4ff4@30.25 sarut0bisasuke-cefa43@11.43 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-carnet-dessin.jpg (6 vignettes vérifiées ; ajith-io-ea7f2d pris à 2,3 s sur le crayonné, ik-builds-b8bdcf à 2,5 s sur la pelure d'oignon).",
+   "links": [
+    {
+     "chapter": "c03",
+     "entry": "12-trait-main",
+     "title": "Le trait sur le mot : souligner, surligner, raturer, écrire (underline draw-on, highlighter wipe, strike-through, handwriting write-on)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "05-trace",
+     "title": "Le tracé qui se dessine : plume, connecteur, logo au trait (stroke draw-on, trim path, write-on, path reveal led by a pen head)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "13-finition",
+     "title": "La finition de rendu : grain, vignette, halo, ombres douces, reflets (film grain, vignette, bloom and glow, soft drop shadows, sheen sweep, paper texture)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "08-illustration-explicative",
+     "title": "L'illustration qui explique : construite au fil de la voix, objet qui joue la métaphore (narration-synced illustration build, living diagram, animated metaphor object)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "01-poids-saut",
+     "title": "Le poids du personnage : se ramasser, sauter, s'écraser à l'atterrissage (squash and stretch, anticipation, jump and landing, impact)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "12-calage-voix",
+     "title": "Le calage sur la voix off (voice-over sync, karaoke captions, picture leads the voice, dead-air jump cuts)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "10-volet-matiere",
+     "title": "Le volet par la matière du décor (object wipe, liquid wipe, ink drip, torn paper, occlusion)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "06-coupe-sur-le-temps",
+     "title": "La coupe sèche sur le temps (hard cut on the beat, polarity flip, black-frame blink, beat-cut montage)"
+    },
+    {
+     "chapter": "c05",
+     "entry": "08-canevas-parcouru",
+     "title": "Parcourir un canevas (pan, whip pan, page scroll, lateral truck, follow pan, single-canvas camera)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "05-fil-rouge",
+     "title": "Le fil rouge : un objet, un exemple ou un plan continu traverse le film (throughline object, running example, one continuous shot, powers of ten)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "08-recap-rafale",
+     "title": "Le récapitulatif en rafale avant la signature (recap montage, accelerating rewind, recap grid)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "08-courbe-tracee",
+     "title": "La courbe qui se trace (line chart draw-on, leading dot, synced counter, scrubbing tooltip)"
+    }
+   ]
+  },
+  {
+   "rank": 10,
+   "key": "illustration-recit",
+   "title": "L'illustration narrative et les personnages",
+   "title_en": "narrative illustration, character animation, cartoon, shadow theatre",
+   "entry_file": "entries/10-illustration-recit.md",
+   "scope": "Un récit porté par des personnages ou un décor illustré 2D : cartoon, ombres chinoises, aquarelle, estampe, anime pop. La lumière raconte (73 % des vidéos) et le son est posé à l'image près (bruitages 73 %). Toutes les vidéos sont notées 4, mais aucune 5 : les personnages restent raides. Quand la choisir : film de marque émotionnel, conte, histoire d'utilisateur, boucle d'ambiance ; à éviter pour une promo SaaS courte (durée médiane 46 s, 8 vidéos sur 11 en synchro partielle).",
+   "criteres_de_classement": "Personnages ou décor illustré au centre, récit en actes, lumière et étalonnage narratifs, peu de texte.",
+   "n": 11,
+   "n45": 11,
+   "n5": 0,
+   "members": [
+    "chrisjdimarco-f068db",
+    "demitiyageekzen-7770ad",
+    "faroukzy-9ff23e",
+    "itsolelehmann-e47532",
+    "jake11moran-a269c4",
+    "kamstudiolabs-0b0824",
+    "kamstudiolabs-c9bb28",
+    "loicrambo-ad6830",
+    "ryzoft-4f85bd",
+    "topi-003-b0e12c",
+    "x4b47x-9cc84f"
+   ],
+   "variantes": [
+    "Cartoon et gags : kamstudiolabs-c9bb28 (le bug), jake11moran-a269c4 (sitcom aquarelle), ryzoft-4f85bd (space-opera toon).",
+    "Vectoriel plat à concept : loicrambo-ad6830 (ligne d'ECG), itsolelehmann-e47532 (symétrie Wes Anderson).",
+    "Clair-obscur et silhouettes : kamstudiolabs-0b0824 (phare), x4b47x-9cc84f (théâtre d'ombres), faroukzy-9ff23e (court-métrage 2,5D).",
+    "Estampe, anime et pop : chrisjdimarco-f068db (samouraï de feu), demitiyageekzen-7770ad (estampe chinoise), topi-003-b0e12c (anime pop-art)."
+   ],
+   "evidence": {
+    "videos": 11,
+    "notes": {
+     "4": 11
+    },
+    "notees_4_5": 11,
+    "notees_5": 0,
+    "note_moyenne": 4.0,
+    "musique": {
+     "partielle": 8,
+     "animee-sur-la-musique": 2,
+     "sans-musique": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 2,
+     "mediane": 134.65,
+     "quartiles": [
+      126.97,
+      142.32
+     ],
+     "frequents": [
+      [
+       119,
+       1
+      ],
+      [
+       150,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 45.65,
+     "quartiles": [
+      25.05,
+      73.55
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 2.8,
+     "n_videos": 5,
+     "animees_sur_la_musique": 0.4,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 3,
+    "part_image_figee_mediane": 0.08,
+    "temps_mort_juge": {
+     "aucun": 4,
+     "un-peu": 5,
+     "beaucoup": 2
+    },
+    "fps": {
+     "60/1": 5,
+     "30/1": 3,
+     "24/1": 2,
+     "29910/557": 1
+    },
+    "typo_traits_videos": {
+     "capitales": 8,
+     "serif": 7,
+     "étendue/large": 5,
+     "italique": 4,
+     "casse phrase/minuscules": 3,
+     "condensée": 3,
+     "mono": 2
+    },
+    "matieres_videos": {
+     "lueur/halo": 10,
+     "vignettage": 8,
+     "grain": 5,
+     "dégradé": 4,
+     "flou de mouvement": 4,
+     "profondeur de champ": 3,
+     "papier": 3,
+     "flash/surexposition": 2,
+     "aplats nets": 2
+    },
+    "polices_citees_videos": {
+     "Cormorant": 3,
+     "Inter": 3,
+     "Bebas": 2,
+     "Oswald": 2,
+     "Mincho": 1,
+     "Noto": 1,
+     "Cinzel": 1,
+     "Anton": 1,
+     "Permanent Marker": 1,
+     "Fraunces": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "orange",
+      "videos": 11,
+      "hex_frequents": [
+       "#FF7A20",
+       "#E8B060",
+       "#E8C8A0"
+      ]
+     },
+     {
+      "teinte": "jaune-or",
+      "videos": 11,
+      "hex_frequents": [
+       "#FFF0A0",
+       "#F4DDA8",
+       "#F2DFB4"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 10,
+      "hex_frequents": [
+       "#D02010",
+       "#F06A5A",
+       "#C0302F"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 9,
+      "hex_frequents": [
+       "#000000",
+       "#0A0303",
+       "#2A0A0A"
+      ]
+     },
+     {
+      "teinte": "blanc-creme",
+      "videos": 8,
+      "hex_frequents": [
+       "#FFFFFF",
+       "#F3E9D2",
+       "#DDE6F0"
+      ]
+     },
+     {
+      "teinte": "violet",
+      "videos": 7,
+      "hex_frequents": [
+       "#6E5AAE",
+       "#8F6E9A",
+       "#5B3373"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 7,
+      "hex_frequents": [
+       "#2F6FB5",
+       "#3A4570",
+       "#ADD2E6"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#0B1030",
+      "role": "nuit bleu marine : ouverture, nuit, fin (loicrambo-ad6830)"
+     },
+     {
+      "hex": "#F7C948",
+      "role": "soleil, lumière chaude, disque d'accent (jaune présent dans les 11 vidéos)"
+     },
+     {
+      "hex": "#EF4B4F",
+      "role": "rouge d'accent porté par un personnage (casquette, sweat)"
+     },
+     {
+      "hex": "#5B3373",
+      "role": "violet profond des rideaux et crépuscules (itsolelehmann-e47532)"
+     },
+     {
+      "hex": "#8ED3D8",
+      "role": "ciel clair d'un acte heureux"
+     },
+     {
+      "hex": "#F4A15D",
+      "role": "ciel de coucher ou d'aube (faroukzy-9ff23e)"
+     }
+    ],
+    "typographie": "Très peu de texte. Serif fine en capitales très espacées pour les titres (Cinzel, Cormorant, EB Garamond) ; condensée (Bebas, Oswald) pour chiffres et horloges ; manuscrite pour les citations.",
+    "tempo_cadence": "2 vidéos sur 11 animées sur la musique (topi-003-b0e12c à 150 BPM, jake11moran-a269c4 à 119), 8 partielles. Durée médiane 46 s (25-74 s). Image figée médiane 8 % (le décor vit) mais plans fixes longs.",
+    "courbes_signature": "Pas d'étude 60 fps. Poses tenues sur le temps et cycles (55 %, 8,5× le corpus), anticipation puis coup en 6-8 images et traînée qui s'éteint (chrisjdimarco-f068db), physique d'objets réglée (jake11moran-a269c4).",
+    "transitions_types": "Volet par la matière du décor (36 %, 7× le corpus : train, rafale de feuilles, pétales), iris né d'un point (36 %, iris en cœur chez loicrambo-ad6830), coupe sur le temps (27 %).",
+    "structure_type": "Escalade puis résolution (36 %, 4,5×), serre-livres et boucle parfaite (45 %), dispositif unique (18 %).",
+    "score_ordre": 13.2
+   },
+   "best": [
+    {
+     "slug": "loicrambo-ad6830",
+     "title": "Cycle of life animation",
+     "url": "https://prompt-motion.com/loicrambo-ad6830",
+     "craft": 4,
+     "why": "4/5 : concept et transitions de très haut niveau (ligne d'ECG qui donne et reprend la vie, iris en cœur, boucle parfaite)."
+    },
+    {
+     "slug": "kamstudiolabs-c9bb28",
+     "title": "Animated short about a bug",
+     "url": "https://prompt-motion.com/kamstudiolabs-c9bb28",
+     "craft": 4,
+     "why": "4/5 : vrai récit en trois actes porté par des gags visuels (le bug s'éteint pour se cacher, imite le curseur texte)."
+    },
+    {
+     "slug": "itsolelehmann-e47532",
+     "title": "Four seasons train window",
+     "url": "https://prompt-motion.com/itsolelehmann-e47532",
+     "craft": 4,
+     "why": "4/5 : boucle de 30 s en symétrie Wes Anderson, quatre transitions motivées par le décor (train, rafale, tunnel, pétales), son calé."
+    },
+    {
+     "slug": "jake11moran-a269c4",
+     "title": "Animated agent session story",
+     "url": "https://prompt-motion.com/jake11moran-a269c4",
+     "craft": 4,
+     "why": "4/5 : jeu d'acteur cartoon et physique d'objets réglée, partition calée à l'image près ; plan fixe frontal de 45 s à éviter."
+    },
+    {
+     "slug": "x4b47x-9cc84f",
+     "title": "Shadow theatre home story",
+     "url": "https://prompt-motion.com/x4b47x-9cc84f",
+     "craft": 4,
+     "why": "4/5 : théâtre d'ombres crédible (mise au point des découpages, plans en profondeur), ciel qui change avec le texte."
+    },
+    {
+     "slug": "chrisjdimarco-f068db",
+     "title": "Fiery samurai kata",
+     "url": "https://prompt-motion.com/chrisjdimarco-f068db",
+     "craft": 4,
+     "why": "4/5 : frappes construites (anticipation, coup en 6-8 im, traînée), escalade jusqu'à un final embrasé, palette feu tenue."
+    }
+   ],
+   "planche": [
+    "loicrambo-ad6830@10.72",
+    "kamstudiolabs-c9bb28@40.52",
+    "itsolelehmann-e47532@14.96",
+    "jake11moran-a269c4@24.0",
+    "faroukzy-9ff23e@132.4",
+    "x4b47x-9cc84f@29.26",
+    "chrisjdimarco-f068db@10.38",
+    "topi-003-b0e12c@7.51",
+    "kamstudiolabs-0b0824@12.0"
+   ],
+   "planche_file": "illus/style-illustration-recit.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-illustration-recit.jpg loicrambo-ad6830@10.72 kamstudiolabs-c9bb28@40.52 itsolelehmann-e47532@14.96 jake11moran-a269c4@24.0 faroukzy-9ff23e@132.4 x4b47x-9cc84f@29.26 chrisjdimarco-f068db@10.38 topi-003-b0e12c@7.51 kamstudiolabs-0b0824@12.0 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-illustration-recit.jpg (9 vignettes vérifiées ; kamstudiolabs-0b0824 pris à 12,0 s sur l'intérieur éclairé, le minutage par défaut tombait sur un noir).",
+   "links": [
+    {
+     "chapter": "c08",
+     "entry": "07-corps-poses-cycles",
+     "title": "Le corps : poses tenues sur le temps, cycles et mouvement secondaire (pose-to-pose on beat, walk cycle, puppet rig, secondary motion, follow-through)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "01-poids-saut",
+     "title": "Le poids du personnage : se ramasser, sauter, s'écraser à l'atterrissage (squash and stretch, anticipation, jump and landing, impact)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "03-visage-yeux",
+     "title": "Le visage minimal : jouer par les yeux, le clignement et les signes (minimal face acting, eye swaps, blink, cartoon reaction marks)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "04-langage-image",
+     "title": "Un seul langage d'image : style maison ou pastiche de genre (consistent illustration style, art direction, genre pastiche)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "04-eclairage",
+     "title": "Le script couleur : étalonnage, désaturation et lumière qui racontent (color script, narrative grade shift, semantic desaturation, motivated light)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "07-bruitage-image",
+     "title": "Le bruitage à l'image près et la sonification (hit-point SFX, picture-locked sound design, per-glyph ticks, mickey-mousing, sonification)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "08-musique-calquee",
+     "title": "La musique calquée sur le montage (arrangement mirrors the edit, score to picture, song form drives visual form)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "10-volet-matiere",
+     "title": "Le volet par la matière du décor (object wipe, liquid wipe, ink drip, torn paper, occlusion)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "04-iris-ne-dun-point",
+     "title": "L'iris né d'un point (iris wipe, circular reveal, dot-to-fullscreen, iris-out)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "06-axe-central-symetrie",
+     "title": "L'axe central, la symétrie et le placement du sujet (centre-axis composition, one idea per shot, symmetrical staging, rule of thirds)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "10-escalade-resolution",
+     "title": "L'escalade puis la résolution (escalation arc, build and release, three-act story)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "04-bouclage-serre-livres",
+     "title": "Le bouclage : serre-livres, rappel et boucle parfaite (bookend, callback, seamless loop)"
+    }
+   ]
+  },
+  {
+   "rank": 11,
+   "key": "pixel-retro",
+   "title": "Le pixel art et le rétro numérique",
+   "title_en": "pixel art, 8/16-bit game UI, retro web",
+   "entry_file": "entries/11-pixel-retro.md",
+   "scope": "Grammaire de jeu vidéo 8 ou 16 bits : police bitmap, tramage ordonné, flashs d'impact d'une image, chiffres de dégâts, HUD de score ; une parodie de web 2003 s'y rattache. Petite famille (6 vidéos, 4 notées 4) souvent muette (4 sur 6). Quand la choisir : produit gaming, crypto, communauté de développeurs, gag nostalgique, CV ludique ; à éviter dès que la lisibilité prime (personnages et chiffres minuscules).",
+   "criteres_de_classement": "Police bitmap ou pixel (5 vidéos sur 6), images en grille de pixels, codes de jeu (niveau, score, impact).",
+   "n": 6,
+   "n45": 4,
+   "n5": 0,
+   "members": [
+    "0xevinho-3777d8",
+    "aisongman-71ffac",
+    "henkpoley-3d3407",
+    "hoyoyoda-3a5c08",
+    "ibrahimwasim240-809370",
+    "pluginplay-3d4006"
+   ],
+   "variantes": [
+    "Scène de jeu nocturne : 0xevinho-3777d8, hoyoyoda-3a5c08, pluginplay-3d4006.",
+    "Interface de jeu : aisongman-71ffac (cartes), ibrahimwasim240-809370 (arcade, CV par niveaux).",
+    "Parodie rétro web : henkpoley-3d3407."
+   ],
+   "evidence": {
+    "videos": 6,
+    "notes": {
+     "3": 2,
+     "4": 4
+    },
+    "notees_4_5": 4,
+    "notees_5": 0,
+    "note_moyenne": 3.67,
+    "musique": {
+     "sans-musique": 4,
+     "animee-sur-la-musique": 1,
+     "partielle": 1
+    },
+    "bpm_videos_animees_sur_la_musique": {
+     "n": 1,
+     "mediane": 86.4,
+     "quartiles": [
+      86.4,
+      86.4
+     ],
+     "frequents": [
+      [
+       86,
+       1
+      ]
+     ]
+    },
+    "duree_s": {
+     "mediane": 22.52,
+     "quartiles": [
+      16.25,
+      25.8
+     ]
+    },
+    "plan_median_s": {
+     "toutes": 2.22,
+     "n_videos": 4,
+     "animees_sur_la_musique": 2.24,
+     "note": "durée médiane des plans par détection automatique de coupes (stats.json), vidéos à 4 plans ou plus"
+    },
+    "plans_sequence_ou_quasi": 2,
+    "part_image_figee_mediane": 0.25,
+    "temps_mort_juge": {
+     "aucun": 2,
+     "beaucoup": 2,
+     "un-peu": 2
+    },
+    "fps": {
+     "60/1": 4,
+     "30/1": 1,
+     "15/1": 1
+    },
+    "typo_traits_videos": {
+     "capitales": 6,
+     "pixel/bitmap": 5,
+     "mono": 2,
+     "manuscrite": 1,
+     "condensée": 1
+    },
+    "matieres_videos": {
+     "grille fine": 3,
+     "vignettage": 3,
+     "flash/surexposition": 3,
+     "aberration/glitch RVB": 3,
+     "dégradé": 2,
+     "lueur/halo": 2,
+     "grain": 1,
+     "aplats nets": 1,
+     "flou de mouvement": 1
+    },
+    "polices_citees_videos": {
+     "Silkscreen": 2,
+     "Press Start": 2,
+     "Inter": 2,
+     "Comic Sans": 1,
+     "Impact": 1,
+     "Anton": 1,
+     "JetBrains Mono": 1
+    },
+    "teintes_frequentes": [
+     {
+      "teinte": "jaune-or",
+      "videos": 6,
+      "hex_frequents": [
+       "#E8D8A0",
+       "#E8C060",
+       "#EAD9B0"
+      ]
+     },
+     {
+      "teinte": "nuit-violet",
+      "videos": 5,
+      "hex_frequents": [
+       "#1A1530",
+       "#2D0B49",
+       "#1E1640"
+      ]
+     },
+     {
+      "teinte": "noir",
+      "videos": 5,
+      "hex_frequents": [
+       "#0E1020",
+       "#12142A",
+       "#000000"
+      ]
+     },
+     {
+      "teinte": "orange",
+      "videos": 5,
+      "hex_frequents": [
+       "#F09030",
+       "#6B3A1E",
+       "#F0A830"
+      ]
+     },
+     {
+      "teinte": "rouge",
+      "videos": 5,
+      "hex_frequents": [
+       "#B02020",
+       "#E03030",
+       "#F06080"
+      ]
+     },
+     {
+      "teinte": "violet",
+      "videos": 4,
+      "hex_frequents": [
+       "#3A2858",
+       "#7711D7",
+       "#3A2A6E"
+      ]
+     },
+     {
+      "teinte": "bleu",
+      "videos": 4,
+      "hex_frequents": [
+       "#4A90E0",
+       "#B8B8D0",
+       "#3346A8"
+      ]
+     }
+    ],
+    "palette_type": [
+     {
+      "hex": "#1A1530",
+      "role": "ciel de nuit violet profond (0xevinho-3777d8 ; #140F2E hoyoyoda)"
+     },
+     {
+      "hex": "#3A2858",
+      "role": "bande d'aurore ou dégradé tramé vers l'horizon"
+     },
+     {
+      "hex": "#E8D8A0",
+      "role": "lune, titres dorés (#F9E3A0 hoyoyoda-3a5c08)"
+     },
+     {
+      "hex": "#F09030",
+      "role": "feu, horizon orange"
+     },
+     {
+      "hex": "#E03030",
+      "role": "rouge d'impact et de dégâts"
+     },
+     {
+      "hex": "#60D060",
+      "role": "vert de gain ou de validation"
+     }
+    ],
+    "typographie": "Police bitmap (Press Start 2P, Silkscreen) en capitales, chasse fixe, sans lissage ; titres à contour et ombre ; mono pour HUD.",
+    "tempo_cadence": "1 vidéo sur 6 animée sur la musique (ibrahimwasim240-809370, 86,4 BPM, un niveau par mesure), 4 sans musique. Durée médiane 22,5 s.",
+    "courbes_signature": "Pas d'étude 60 fps. Paliers et images tenues plutôt que courbes lisses (cadence de jeu), frappe à 1 lettre par image, flash d'1 image au départ et de 2 images à l'impact (0xevinho-3777d8) ; le vectoriel lisse mêlé au pixel casse le style.",
+    "transitions_types": "Stores et bandes (33 %), compression puis éclosion (33 %), fondu tramé (dither) depuis le noir.",
+    "structure_type": "Escalade puis résolution (33 %, 4×), chute (33 %), dispositif unique (33 %).",
+    "score_ordre": 3.3
+   },
+   "best": [
+    {
+     "slug": "0xevinho-3777d8",
+     "title": "Pixel wizard crypto animation",
+     "url": "https://prompt-motion.com/0xevinho-3777d8",
+     "craft": 4,
+     "why": "4/5 : grammaire de jeu maîtrisée (flash d'impact, chiffres de dégâts, anneaux de choc, fondu tramé) et escalade en 4 cycles."
+    },
+    {
+     "slug": "hoyoyoda-3a5c08",
+     "title": "Chuseok pixel night scene",
+     "url": "https://prompt-motion.com/hoyoyoda-3a5c08",
+     "craft": 4,
+     "why": "4/5 : monde pixel cohérent, chaîne de causes lisible, boucle parfaite par volet coloré."
+    },
+    {
+     "slug": "ibrahimwasim240-809370",
+     "title": "Personal skills showreel",
+     "url": "https://prompt-motion.com/ibrahimwasim240-809370",
+     "craft": 4,
+     "why": "4/5 : CV en niveaux d'arcade, transitions motivées (barre de déploiement → navigateur, plongée dans la porte), un niveau par mesure."
+    },
+    {
+     "slug": "pluginplay-3d4006",
+     "title": "Pixel art LLM history",
+     "url": "https://prompt-motion.com/pluginplay-3d4006",
+     "craft": 4,
+     "why": "4/5 : métaphore du boomerang tenue jusqu'au gag final, synthwave pixel, escalade minutée."
+    }
+   ],
+   "planche": [
+    "0xevinho-3777d8@9.19",
+    "hoyoyoda-3a5c08@7.34",
+    "ibrahimwasim240-809370@12.44",
+    "pluginplay-3d4006@16.5",
+    "aisongman-71ffac@10.52",
+    "henkpoley-3d3407@41.73"
+   ],
+   "planche_file": "illus/style-pixel-retro.jpg",
+   "planche_cmd": "PY TOOLS/planche.py SYN/c01/illus/style-pixel-retro.jpg 0xevinho-3777d8@9.19 hoyoyoda-3a5c08@7.34 ibrahimwasim240-809370@12.44 pluginplay-3d4006@16.5 aisongman-71ffac@10.52 henkpoley-3d3407@41.73 --cols 3",
+   "illus": "Planche de style SYN/c01/illus/style-pixel-retro.jpg (6 vignettes, toute la famille : aisongman-71ffac et henkpoley-3d3407 sont notées 3).",
+   "links": [
+    {
+     "chapter": "c06",
+     "entry": "03-flash",
+     "title": "Le coup de flash : surexposition, image négative, glitch RVB (flash frame, overexposure flash, invert flash, RGB split glitch hit)"
+    },
+    {
+     "chapter": "c06",
+     "entry": "02-palette",
+     "title": "La palette fermée et l'accent qui a un sens (restricted palette, single accent color, semantic color coding)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "04-frappe-decodage",
+     "title": "Le texte qui s'écrit sur place : frappe, décodage, glitch (typewriter, caret, backspace retype, text scramble decode, slice glitch)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "02-echelle",
+     "title": "Le claquement d'échelle : slam, tampon, pop (scale slam, stamp slam, punch-in, scale pop)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "15-lettre-image",
+     "title": "La lettre comme image : contour, ombre empilée, remplissage, mot géant (outline type, stacked offset shadow, image-filled letters, knockout, full-bleed giant word)"
+    },
+    {
+     "chapter": "c07",
+     "entry": "07-jauge-progression",
+     "title": "La jauge qui se remplit (progress bar, radial gauge, ring, stepper, checklist ticking)"
+    },
+    {
+     "chapter": "c08",
+     "entry": "07-corps-poses-cycles",
+     "title": "Le corps : poses tenues sur le temps, cycles et mouvement secondaire (pose-to-pose on beat, walk cycle, puppet rig, secondary motion, follow-through)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "11-trame-tuiles-particules",
+     "title": "La décomposition en trame, tuiles et particules (dither fade, halftone wipe, tile flood, particle dissolve)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "10-escalade-resolution",
+     "title": "L'escalade puis la résolution (escalation arc, build and release, three-act story)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "07-chute",
+     "title": "La chute : constat puis retournement (punchline, setup-twist, rule of three, label flip)"
+    }
+   ]
+  },
+  {
+   "key": "coherence",
+   "title": "La cohérence d'un style",
+   "title_en": "visual system coherence, design system for motion",
+   "scope": "Ce qui fait tenir un système graphique, d'après les champs « cohérence » de 223 vidéos (les 10 autres n'en ont pas) : les vidéos notées 5 tiennent par un objet fil rouge et une horloge commune, pas par la seule palette. Entrée de synthèse pour l'étape « système de design » du parcours : règles chiffrées, exemples, et ce qui casse un style. Se termine par la liste « À cocher » du système de design.",
+   "evidence": {
+    "source": "SYN/c01/styles.jsonl, champ coherence (« tient par … ; se casse par … »), 223 vidéos ; repérage par mots clés, à relire",
+    "objet_fil_rouge_cite": {
+     "notees_5": "10/17 (59 %)",
+     "notees_4": "41/162 (25 %)",
+     "notees_2_3": "3/44 (7 %)"
+    },
+    "horloge_grille_bpm_citee": {
+     "notees_5": "7/17 (41 %)",
+     "notees_4": "46/162 (28 %)",
+     "notees_2_3": "2/44 (5 %)"
+    },
+    "palette_restreinte_ou_accent_citee": {
+     "notees_5": "13/17 (76 %)",
+     "notees_4_5": "128/179 (72 %)",
+     "notees_2_3": "35/44 (80 %)",
+     "lecture": "nécessaire mais pas discriminante"
+    },
+    "habillage_hud_gabarit_cite": {
+     "notees_5": "12/17 (71 %)",
+     "notees_4_5": "104/179 (58 %)",
+     "notees_2_3": "18/44 (41 %)"
+    },
+    "fil_rouge_par_famille": {
+     "neo-suisse-hud": "66 %",
+     "typo-cinetique": "29 %",
+     "editorial-papier": "29 %",
+     "saas-clair": "17 %",
+     "carnet-dessin": "14 %",
+     "aplats-pop": "13 %",
+     "saas-nuit": "10 %",
+     "nuit-electrique": "10 %",
+     "illustration-recit": "10 %",
+     "3d-cinema": "0 %",
+     "pixel-retro": "0 %"
+    },
+    "ce_qui_casse_notees_4_5": {
+     "3D ou démo générique, rupture de rendu": "27/179 (15 %)",
+     "glitch, RVB ou flash répétés": "23/179 (13 %)",
+     "micro-texte illisible": "18/179 (10 %)",
+     "mots coupés par le cadre": "13/179 (7 %)",
+     "couleur hors système": "13/179 (7 %)"
+    },
+    "ce_qui_casse_notees_2_3": {
+     "fondus génériques": "8/44 (18 %)",
+     "micro-texte illisible": "8/44 (18 %)",
+     "mots coupés par le cadre": "6/44 (14 %)"
+    },
+    "exemples_5": [
+     "web3wesley-7bb108 : un seul vermillon #FF4B1F porte la continuité (point final, O de FORM, balle de SPACE, soulignement final)",
+     "hbcoop-de365c : un seul objet (le point) traverse le film ; 3 couleurs ; même système de page (FIG. N)",
+     "fionntobin-97b7af : 2 couleurs, 5 polices à rôle fixe, marges de 96 px, ligne de base commune y ≈ 92,5 %, une horloge 128 BPM",
+     "theviableedge-9065be : tout dérive des 4 carrés du logo (couleurs des étapes, marqueurs, soulignement final), 2 familles de caractères",
+     "grace-sunnyy-29bc61 : une horloge (128 BPM, 8 mesures = 8 scènes), 4 tons, 2 polices, interface permanente",
+     "zheke-38deff : 4 constantes (palette qui tourne à chaque coupe, en-tête « I CAN » fixe f169-f675, deux grotesques Black, point orange)",
+     "emollick-8661a8 : les palettes changent à chaque niveau ; le système tient par 3 constantes d'habillage (fil d'Ariane, compteur DEPTH, même plongée)"
+    ],
+    "contre_exemples": [
+     "sachaarbonel-8f14f4 (3/5) : DA premium mais 12 fondus identiques à voile gris 25 %",
+     "jacksonfall-54b2ac (3/5) : une police par marque, plans de 1 à 5 images",
+     "itsuki-dev-10942d (4/5) : système complet mais 6 couleurs et 3 familles sans fil narratif"
+    ],
+    "guide_otom": "Le guide autorise plusieurs couleurs d'accent si chacune a un rôle (section 4 du digest, correction de la Bible) : sudo-kiran-49176d (5/5) fait tourner 6 couleurs, une par chapitre."
+   },
+   "planche": null,
+   "links": [
+    {
+     "chapter": "c06",
+     "entry": "02-palette",
+     "title": "La palette fermée et l'accent qui a un sens (restricted palette, single accent color, semantic color coding)"
+    },
+    {
+     "chapter": "c03",
+     "entry": "06-voix",
+     "title": "Le casting typographique : deux ou trois voix à rôles fixes (type system, font pairing, grotesque + italic serif + mono)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "01-habillage-persistant",
+     "title": "L'habillage persistant : HUD, chapitres et gabarit fixe (persistent frame chrome, HUD overlay, chapter labels, fixed layout template)"
+    },
+    {
+     "chapter": "c10",
+     "entry": "05-fil-rouge",
+     "title": "Le fil rouge : un objet, un exemple ou un plan continu traverse le film (throughline object, running example, one continuous shot, powers of ten)"
+    },
+    {
+     "chapter": "c04",
+     "entry": "01-objet-relais-complement",
+     "title": "L'objet relais (object morph, match cut d'objet, shared element)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "01-grille-tempo",
+     "title": "La grille de tempo : une horloge, une scène par mesure (beat grid, BPM frame grid, shared beat clock, bar-locked scenes)"
+    },
+    {
+     "chapter": "c09",
+     "entry": "11-systeme-courbes",
+     "title": "Le système de courbes : expo-out pour entrer, ease-in pour sortir (easing system, damped springs, spacing, hold-keyframe snap)"
+    },
+    {
+     "chapter": "c02",
+     "entry": "03-hierarchie-bloc",
+     "title": "La hiérarchie du bloc texte : titre, surtitre, pastilles, filigrane (text block hierarchy, stacked lockup, eyebrow pill, ghost word, end card)"
+    }
+   ],
+   "illus": "Pas de planche obligatoire ; idée : diptyque fil rouge, web3wesley-7bb108 (point vermillon sur 4-5 chapitres) contre jacksonfall-54b2ac (une police par marque), ou bande de hbcoop-de365c sur les FIG. N.",
+   "rank": 12,
+   "entry_file": "entries/12-coherence.md"
+  }
+ ]
+}

@@ -1,0 +1,459 @@
+{
+  "slug": "sudiyasa-f48ac9",
+  "title": "EyezOn 100 users thank-you",
+  "handle": "@Sudiyasa_",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept limpide (le chiffre 100 en huit traitements) et squelette calé sur 120 BPM ; mais transitions surtout en coupes franches, 29 % de plans figés et finale de 2,3 s presque statique.",
+  "summary": "Showreel de remerciement pour les 100 premiers utilisateurs d'EyezOn : le chiffre 100 décliné en huit traitements (courbe d'accélération, chiffres qui tombent en ressort, serif italique, morphing vers l'œil-logo, trame de points, grille isométrique 10 × 10, orbite de 100 points, mot à mot THANK YOU ONE HUNDRED). Toutes les coupes tombent sur les temps à 120 BPM ; concept tenu, palette chaude, mais 29 % de plans quasi figés.",
+  "prompt_vs_result": [
+    "Même prompt showreel « go all out » que d'autres vidéos du corpus, avec une seule contrainte en plus : remercier les 100 premiers utilisateurs de @eyezonbot. Ni durée par scène, ni palette, ni musique, ni logo fourni.",
+    "Claude a choisi de décliner le chiffre 100 dans chaque scène, d'ouvrir sur une courbe de Bézier, la palette moutarde-rose-crème, le duo grotesque condensée et serif italique, une grille à 120 BPM affichée dans le HUD et un logo œil (probablement inventé).",
+    "La contrainte « 100 premiers utilisateurs » a donné un fil conducteur que le prompt showreel seul ne donne pas. Il aurait fallu préciser l'identité réelle de la marque, interdire les maintiens > 0,5 s et demander des transitions liées plutôt que des coupes."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0B0A08",
+        "role": "noir chaud : fonds de l'ouverture, du morphing, de l'isométrique, de l'orbite et du carton final"
+      },
+      {
+        "hex": "#E2B25A",
+        "role": "moutarde : fond de « 100 » et de THANK, triangle, œil, point final du logo"
+      },
+      {
+        "hex": "#FF2E93",
+        "role": "rose vif : carré, onde de trame, colonnes, « +17 », fond de YOU"
+      },
+      {
+        "hex": "#F3ECDD",
+        "role": "crème papier : fond de la trame et de ONE, plateau isométrique, texte de YOU"
+      },
+      {
+        "hex": "#F5D9A0",
+        "role": "or pâle : point lumineux, œil, HUNDRED, logo"
+      },
+      {
+        "hex": "#15110A",
+        "role": "brun-noir : texte sur fonds clairs, fond de HUNDRED"
+      },
+      {
+        "hex": "#8A6A3A",
+        "role": "bronze : courbe de Bézier, anneaux de la révélation"
+      }
+    ],
+    "type": "Grotesque condensée très grasse en capitales (type Anton, probable) : 100 ≈ 48 % de la hauteur, mots finaux 27 % ; serif didone italique (type Playfair, probable) pour « one hundred » (12 %) ; mono capitales espacées ≈ 1,2 %.",
+    "texture": "Halo orangé (bloom) autour du point d'ouverture, étiré le long de la courbe à vitesse maximale ; flou de mouvement en copies empilées (≈ 6 fantômes) sur les chiffres qui tombent ; flou directionnel sur les mots de la finale ; trame de points et grille de points fine façon papier imprimé ; poussière de particules autour de l'orbite ; aplats partout ailleurs, pas de grain visible.",
+    "style": "Éditorial chaud, rétro-print, minimal",
+    "coherence": "Le chiffre 100 relie toutes les scènes (chiffres, mot, trame, grille 10 × 10, orbite de 100 points, anneau « 100 USERS », ONE HUNDRED) ; palette moutarde, rose, crème et noir chaud reprise de scène en scène puis redistribuée dans la finale ; duo grotesque condensée / serif italique ; HUD constant (« EYEZON — SHOWREEL '26 », timecode, « 120 BPM · 30 FPS », barre de progression). Le morphing aboutit à l'œil du logo et le point lumineux de l'ouverture revient en point moutarde après « EyezOn » (rappel probable). La scène isométrique rose est la plus faible graphiquement."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "beaucoup",
+    "notes": "120,0 BPM (tempo_segment sur 0-15 s ; le HUD affiche lui-même « 120 BPM · 30 FPS ») : temps = 15 im, demi-temps = 7,5 im. Les 7 coupes de scène tombent toutes 1,8 im avant un temps (f29, f74, f119, f164, f224, f329, f374) : décalage constant, d'où le « 0 coupe à 50 ms » de l'indice automatique (elles sont à 60 ms). Durées : 1 s d'intro puis 3, 3, 3, 4, 7, 3 et 5 temps. Les 3 coupes internes de la finale (f340, f351, f362) suivent une cadence de 11-12 im (3 doubles-croches). Densité très inégale : dense dans le morphing (une forme toutes les 11 im) et la finale (un mot toutes les 0,37 s), mais 4 maintiens totalisent 4,33 s (29 %) : 0-0,4 s (point en attente), 2,0-2,43 s (« one hundred »), 4,37-5,43 s (trame 100, seul « +17 THIS WEEK » apparaît), 12,63-14,93 s (carton final : deux fondus de texte et une poussée lente 100 → 110 %). S'y ajoutent 0,53 s de colonnes isométriques figées (6,87-7,4 s) et une orbite qui tourne librement pendant 2 s.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.40",
+        "what": "Noir chaud, courbe en S avec poignées de Bézier, label « cubic-bezier(.83, 0, .17, 1) », point lumineux au départ",
+        "technique": "ouverture sur la courbe d'accélération"
+      },
+      {
+        "t": "0:00.40-0:00.77",
+        "what": "Le point parcourt la courbe en ease-in-out avec traînée, s'arrête sur l'ancre haute à f23",
+        "technique": "point qui suit son propre ease"
+      },
+      {
+        "t": "0:00.77-0:00.97",
+        "what": "Point immobile 6 im",
+        "technique": "attente avant le drop"
+      },
+      {
+        "t": "0:00.97-0:01.80",
+        "what": "Coupe sur moutarde : 1, 0, 0 tombent du haut avec 2 im de décalage, dépassement vers le bas et retour en ressort, traînées empilées",
+        "technique": "chute en ressort sur le drop"
+      },
+      {
+        "t": "0:01.80-0:02.47",
+        "what": "Fondu en 3 im vers « one hundred » en serif italique, légende « EYEZONBOT USERS »",
+        "technique": "fondu chiffre → mot"
+      },
+      {
+        "t": "0:02.47-0:03.97",
+        "what": "Noir : cercle → carré (vire au rose) → triangle (vire au moutarde) → œil avec pupille, dans un cadre de transformation qui tourne, lecture « ROT / SHAPE »",
+        "technique": "morphing vers le symbole de la marque"
+      },
+      {
+        "t": "0:03.97-0:04.37",
+        "what": "Papier crème : le 100 en trame de points passe du flou au net pendant qu'une onde de trame rose s'élargit",
+        "technique": "mise au point + onde de choc"
+      },
+      {
+        "t": "0:04.37-0:05.47",
+        "what": "Maintien sur le 100 tramé, « +17 THIS WEEK » rose apparaît",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:05.47-0:06.03",
+        "what": "Noir : plateau isométrique 10 × 10, « 100 / USERS · 10 × 10 » en fondu",
+        "technique": "grille unitaire"
+      },
+      {
+        "t": "0:06.03-0:06.87",
+        "what": "17 tuiles virent au rose et montent en colonnes en cascade, « +17 NEW THIS WEEK »",
+        "technique": "colonnes en cascade"
+      },
+      {
+        "t": "0:06.87-0:07.47",
+        "what": "Colonnes figées",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:07.47-0:08.00",
+        "what": "Étoile au centre qui pousse en 6 bras spiraux de points",
+        "technique": "éclosion en spirale"
+      },
+      {
+        "t": "0:08.00-0:09.50",
+        "what": "Orbite de 100 points qui tourne, légende « 100 users, one orbit. »",
+        "technique": "orbite de particules"
+      },
+      {
+        "t": "0:09.50-0:09.97",
+        "what": "L'orbite s'effondre en un point, tenu 4 im",
+        "technique": "effondrement en ease-in"
+      },
+      {
+        "t": "0:09.97-0:10.17",
+        "what": "Onde d'anneaux bronze sur le temps, révélation du logo œil et d'un anneau de texte",
+        "technique": "onde d'anneaux"
+      },
+      {
+        "t": "0:10.17-0:10.97",
+        "what": "Anneau « 100 USERS · SEE THE AURA FIRST · EYEZONBOT » en rotation lente autour du logo",
+        "technique": "anneau de texte en rotation"
+      },
+      {
+        "t": "0:10.97-0:12.47",
+        "what": "THANK (moutarde) / YOU (rose) / ONE (crème) / HUNDRED (noir) : un mot toutes les 11-12 im, entrée en surtaille avec flou",
+        "technique": "mot à mot en rythme pointé"
+      },
+      {
+        "t": "0:12.47-0:12.73",
+        "what": "Logo EyezOn en fondu sur noir (8 im)",
+        "technique": "fondu d'apparition"
+      },
+      {
+        "t": "0:12.73-0:14.93",
+        "what": "Carton : « EyezOn. », « 100 users · thank you », « @EYEZONBOT · EYEZON.GG », poussée lente, fondu au noir",
+        "technique": "carton final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "tempo_segment sur 0-15 s : 120,0 BPM (temps à 0,526 s + n × 0,5 s), le HUD de la vidéo affiche « 120 BPM · 30 FPS ». Les 7 coupes de scène (f29, f74, f119, f164, f224, f329, f374) tombent toutes 1,8 im avant une barre bleue : même phase à chaque fois, probabilité nulle au hasard. Le « 1 » touche le sol à f34 (1,13 s) sur le drop mesuré à 1,16 s (+17 dB) : l'intro calme (courbe de Bézier) débouche sur la chute des chiffres. Gestes clés à ±2 im d'un temps ou demi-temps : 19 sur 24 (79 %), mais à 30 fps le hasard couvre déjà ≈ 67 % des images, ce comptage seul ne prouve rien ; la preuve est la phase constante des coupes. Sur la grille : point qui se pose f23 (½ f23,3), légende f59 (f60,8), carré qui vire au rose f85 (½ f83,3), début du morphing en œil f99 (½ f98,3), pupille f107 (f105,8), colonnes f182 (f180,8), légende de l'orbite f239 (f240,8), anneaux f299 (f300,8). Hors grille : départ du point f12, morphing en triangle f88 (−2,8 im), triangle moutarde f96, « +17 » f191, ONE f351 (−2,3 im). Finale : THANK f329 (temps), YOU f340, ONE f351, HUNDRED f362, logo f374 (temps) : un mot toutes les 11-12 im = 3 doubles-croches à 120 BPM, soit 4 mots en 3 temps ; ONE tombe sur le demi-temps, YOU et HUNDRED en syncope face aux attaques en croches (11,52 ; 11,77 ; 12,03 ; 12,27 s). Les débuts de morphing suivent la même cadence de 11 im (f77, f88, f99). Libres : la rotation de l'orbite et les maintiens.",
+    "synced": [
+      "coupes",
+      "drop",
+      "atterrissages",
+      "texte",
+      "couleur",
+      "apparitions"
+    ],
+    "style_match": "Musique « upbeat » à 120 BPM avec drop à 1,16 s : ressorts, fondus courts et couleurs chaudes collent à son énergie modérée.",
+    "how_built": "Le prompt ne parle pas de musique : Claude a construit la composition sur une constante de tempo, affichée dans le HUD (« 120 BPM · 30 FPS »), avec des scènes de 3, 4 ou 7 temps et des mots sur des fractions de temps (3 doubles-croches). La bande-son à 120 BPM est en phase dès 0 s (probablement générée ou choisie pour ce tempo). L'avance constante de 1,8 im vient probablement d'une image perdue en tête d'export (449 images au lieu de 450) ou d'un choix de couper juste avant le temps."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Un chiffre-concept décliné dans chaque scène",
+      "name_en": "one number, eight treatments",
+      "t": "0:00.97-0:12.47",
+      "frames": "f29-f373",
+      "fps": 30,
+      "mechanics": "Le chiffre 100 est le sujet de chaque plan : chiffres pleins qui tombent, « one hundred » en serif italique, 100 en trame de points, plateau isométrique de 10 × 10 tuiles (« 1 tuile = 1 utilisateur »), orbite de 100 points, anneau « 100 USERS », finale THANK YOU ONE HUNDRED. La variété de techniques sert un seul message : le remerciement arrive à 11 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture sur la courbe d'accélération",
+      "name_en": "easing-curve opener",
+      "t": "0:00-0:00.97",
+      "frames": "f0-f28",
+      "fps": 30,
+      "mechanics": "Sur noir chaud, une courbe en S façon éditeur de graphes : ancre basse (≈ 22 %, 75 % du cadre) et ancre haute (≈ 79 %, 25 %), poignées horizontales, label mono « cubic-bezier(.83, 0, .17, 1) ». Un point or pâle avec halo (≈ 3 fois son diamètre) attend 0,4 s puis parcourt la courbe : 16 % de la course à f15, 36 % à f17, 50 % à f18, 66 % à f19, 79 % à f20, 91 % à f22, arrêt à f23 (ease-in-out, pic de vitesse ≈ 15 % par image), étiré en traînée à vitesse maximale. Se pose sur le demi-temps f23,3, tient 6 im, coupe.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f29.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Chiffres qui tombent en ressort avec traînées",
+      "name_en": "spring drop with echo blur",
+      "t": "0:00.97-0:01.53",
+      "frames": "f29-f46",
+      "fps": 30,
+      "mechanics": "Coupe sur moutarde #E2B25A vide (f29), puis 1, 0, 0 tombent du haut avec 2 im de décalage (départs f30, f32, f34). Le « 1 » touche à f34 à 46-88 % de la hauteur, soit ≈ 22 % plus bas que sa place finale (24-61 %), et remonte en ressort jusqu'à f38-f39 ; les zéros font de même avec 2 et 4 im de retard, alignés à f43. Flou de mouvement en ≈ 6 copies empilées pendant la chute (f30-f37). Le « 1 » touche le sol au drop musical (1,13 s contre 1,16 s). Chiffres ≈ 48 % de la hauteur, 42 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg, microM-002-move-f55.jpg",
+      "illus": {
+        "from": 29,
+        "to": 44,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné chiffre → mot",
+      "name_en": "numeral-to-word crossfade",
+      "t": "0:01.80-0:02.07",
+      "frames": "f54-f62",
+      "fps": 30,
+      "mechanics": "« 100 » cède la place à « one hundred » (serif italique ≈ 12 % de la hauteur, ≈ 70 % de la largeur) par un fondu de 3 im sans mouvement (f54-f57), départ sur le demi-temps f53,3 ; la légende « EYEZONBOT USERS » (mono grasse ≈ 1,3 %) monte en opacité f59-f62, sur le temps f60,8. Puis 0,43 s de maintien.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f55.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Duo grotesque condensée / serif italique",
+      "name_en": "condensed grotesque and italic didone pairing",
+      "t": "0:00.97-0:14.93",
+      "frames": "f29-f448",
+      "fps": 30,
+      "mechanics": "Les chiffres et les mots criés en grotesque condensée très grasse (100 ≈ 48 % de la hauteur, THANK ≈ 27 %), les phrases douces en serif italique à fort contraste (« one hundred » 12 %, « 100 users, one orbit. » ≈ 3 %, « 100 users · thank you »), la marque en serif romaine, les données en mono capitales espacées. Le contraste de voix (cri / murmure) structure toute la pièce.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morphing cercle → carré → triangle → œil",
+      "name_en": "shape morph converging on the brand eye",
+      "t": "0:02.47-0:03.63",
+      "frames": "f74-f109",
+      "fps": 30,
+      "mechanics": "Cercle crème (≈ 32 % de la hauteur, f74-f76) → carré arrondi en 5 im (f77-f81) → vire au rose #FF2E93 en 1 im (f85) et tourne → triangle en 5 im avec flou (f88-f92) → vire au moutarde (f96) → amande en 5 im avec flou (f99-f103) → or pâle et pupille noire qui grandit en 3 im (f107-f109). Un morphing toutes les 11 im (f77, f88, f99 : 3 doubles-croches), chacun en ease-in-out de 5 im. La suite aboutit à l'œil, symbole d'EyezOn.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-003-cut-f119.jpg",
+      "illus": {
+        "from": 74,
+        "to": 109,
+        "n": 8
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cadre de transformation façon logiciel",
+      "name_en": "design-tool transform box overlay",
+      "t": "0:02.47-0:03.97",
+      "frames": "f74-f118",
+      "fps": 30,
+      "mechanics": "Autour de la forme, un cadre de sélection gris fin à 8 poignées carrées, comme dans Figma ou After Effects, qui tourne avec elle (0° → ≈ 50°, accélération pendant les morphings) ; en haut à droite, une lecture mono « ROT 023.0° / SHAPE TRIANGLE » mise à jour en direct. Montre l'outil du motion designer, comme la courbe de Bézier de l'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule de couleur en une image",
+      "name_en": "one-frame color flip",
+      "t": "0:02.83-0:12.10",
+      "frames": "f85, f96, f107, f340-f363",
+      "fps": 30,
+      "mechanics": "La forme change de couleur sans transition : crème → rose à f85 (demi-temps f83,3), rose → moutarde à f96, moutarde → or pâle à f107 (temps f105,8). Dans la finale, chaque mot change à la fois le fond et la couleur du texte : moutarde/noir, rose/crème, crème/noir, noir/or. Rythme visuel par la couleur, sans mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mise au point et onde de trame",
+      "name_en": "focus pull with halftone shockwave",
+      "t": "0:03.97-0:04.33",
+      "frames": "f119-f130",
+      "fps": 30,
+      "mechanics": "Coupe sur papier crème #F3ECDD à grille de points fine. Le 100 arrive flou au centre et devient net en 3 im (f119-f122) ; en même temps un anneau de trame rose part du centre et s'élargit au-delà du cadre en ≈ 10 im (≈ 20 % → 80 % de la hauteur à f122, sorti à f129-f130, ease-out). L'onde « imprime » le chiffre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f119.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Chiffres en trame de points",
+      "name_en": "halftone dot numerals",
+      "t": "0:03.97-0:05.47",
+      "frames": "f119-f163",
+      "fps": 30,
+      "mechanics": "Le 100 est dessiné par des points noirs d'≈ 1,2 % de la hauteur (≈ 5 points par fût) sur papier crème à fine grille de points : rendu sérigraphie ou risographie. La légende rose « +17 THIS WEEK » (mono ≈ 1,2 %) apparaît vers 5,0 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f119.jpg, microM-004-cut-f164.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pause d'une seconde sur le chiffre",
+      "name_en": "one-second hold",
+      "t": "0:04.37-0:05.43",
+      "frames": "f131-f163",
+      "fps": 30,
+      "mechanics": "Le 100 tramé reste figé 1,07 s (32 im) ; seule la légende « +17 THIS WEEK » s'ajoute. Deux temps entiers sans geste au milieu d'une pièce de 15 s : à couper de moitié ou à animer (respiration de la trame, compteur).",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f164.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Plateau isométrique 10 × 10 et colonnes en cascade",
+      "name_en": "isometric unit grid with rising columns",
+      "t": "0:05.47-0:07.40",
+      "frames": "f164-f222",
+      "fps": 30,
+      "mechanics": "Dalle isométrique crème de 100 tuiles (≈ 40 % de la largeur) en coupe franche ; « 100 / USERS · 10 × 10 » (en haut à gauche, ≈ 12 %) en fondu sur 6 im (f164-f170). Sur le temps f180,8, 17 tuiles virent au rose (f181-f182) et deviennent des colonnes qui montent une à une (décalage ≈ 1,5 im, f182-f206) à des hauteurs aléatoires (5-25 % de la hauteur) ; « +17 / NEW THIS WEEK » rose en fondu f191-f194. Puis 0,53 s figées.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f164.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Orbite de 100 points en bras spiraux",
+      "name_en": "100-dot spiral orbit",
+      "t": "0:07.47-0:09.50",
+      "frames": "f224-f285",
+      "fps": 30,
+      "mechanics": "Sur le temps (f224, −1,8 im), une petite étoile à 6 branches naît au centre et pousse en 6 bras spiraux : 3 → 10 → 22 → 32 → 45 → 52 → 55 % de la largeur (f224-f236, ease-out). Points crème à pointes roses, poussière de particules autour, rotation lente continue. Légende « 100 users, one orbit. » (serif italique ≈ 3 %) en fondu f239-f246, sur le temps f240,8.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement en point puis onde d'anneaux",
+      "name_en": "collapse to a point, ring-burst reveal",
+      "t": "0:09.53-0:10.17",
+      "frames": "f286-f305",
+      "fps": 30,
+      "mechanics": "L'orbite se contracte : ≈ 40 → 30 → 15 → 8 → 3 → 1 % de la largeur (f290-f295, ease-in, taille divisée par 2 à chaque image en fin de course). Le point rose tient 4 im (f295-f298). Sur le temps (f299), 4 à 5 anneaux bronze fins explosent du centre (≈ 55 → 110 → 145 → 175 % de la hauteur en 3 im) et dévoilent le logo œil (3 → 7 → 10 % de la hauteur, f299-f301) et l'anneau de texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f302.jpg",
+      "illus": {
+        "from": 288,
+        "to": 305,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Anneau de texte en rotation",
+      "name_en": "rotating circular text",
+      "t": "0:10.00-0:10.97",
+      "frames": "f300-f328",
+      "fps": 30,
+      "mechanics": "« 100 USERS · SEE THE AURA FIRST · EYEZONBOT · » en mono capitales (≈ 2 % de la hauteur) sur un cercle de rayon ≈ 30 % de la hauteur autour du logo ; apparaît avec l'onde d'anneaux (f300) et tourne lentement en continu jusqu'à la coupe. Version 2D, sans perspective, de l'anneau de texte en orbite.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f302.jpg, microM-006-move-f332.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot plein cadre en rythme pointé",
+      "name_en": "full-frame word slams on dotted eighths",
+      "t": "0:10.97-0:12.47",
+      "frames": "f329-f373",
+      "fps": 30,
+      "mechanics": "THANK (f329) / YOU (f340) / ONE (f351) / HUNDRED (f362) / logo (f374) : 11-12 im d'écart = 3 doubles-croches à 120 BPM, du temps f330,8 au temps f375,8. Chaque mot change le fond et la couleur du texte (moutarde/noir, rose/crème, crème/noir, noir/or), entre à ≈ 125 % et se pose à 100 % en 3-4 im avec flou directionnel (THANK : 129 → 122 → 108 → 100 %), après une image de fondu entre les deux mots. Mots centrés, capitales ≈ 27 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f332.jpg, extra-03.jpg",
+      "illus": {
+        "from": 328,
+        "to": 375,
+        "n": 8
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur le temps, avec 2 images d'avance",
+      "name_en": "cuts on the beat, two frames early",
+      "t": "0:00.97-0:12.47",
+      "frames": "f29, f74, f119, f164, f224, f329, f374",
+      "fps": 30,
+      "mechanics": "Les 7 coupes de scène tombent toutes 1,8 im (60 ms) avant le temps détecté, durées de 3, 3, 3, 4, 7 et 3 temps. Couper 1 à 2 im avant le temps fait percevoir la coupe « sur » le coup ; ici l'avance vient peut-être aussi d'une image perdue à l'export. Caractère : coupes franches et ressorts sur une pulsation régulière.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-cut-f29.jpg, microM-003-cut-f119.jpg, microM-004-cut-f164.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Le chiffre touche le sol sur le drop",
+      "name_en": "numeral lands on the drop",
+      "t": "0:00.97-0:01.17",
+      "frames": "f29-f35",
+      "fps": 30,
+      "mechanics": "L'intro (courbe de Bézier) se joue sur une musique plus calme ; la coupe arrive au temps f30,8 et le « 1 » touche le sol à f34 (1,13 s), quand l'énergie musicale bondit de 17 dB (drop mesuré à 1,16 s, ≈ 1 im plus tard). L'impact visuel et le drop coïncident.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de showreel qui affiche son tempo",
+      "name_en": "showreel HUD with BPM readout",
+      "t": "0:00-0:14.93",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "« EYEZON — SHOWREEL '26 » en haut à droite, timecode en bas à gauche, « 120 BPM · 30 FPS » en bas à droite, barre de progression graduée en bas (remplissage rose). Mono ≈ 1,2 % de la hauteur, clair sur fond sombre et sombre sur fond clair. Unifie les scènes et documente la grille, mais reste illisible.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton logo avec poussée lente",
+      "name_en": "end card with slow push",
+      "t": "0:12.47-0:14.93",
+      "frames": "f374-f448",
+      "fps": 30,
+      "mechanics": "Sur noir, le logo (œil dans un cadre à crochets, « EyezOn » en serif ≈ 9 % de la hauteur, point moutarde) apparaît en fondu sur 8 im (f374-f382) et grossit de 100 à 110 % en 1,5 s ; « 100 users · thank you » (serif italique moutarde) vers 13,3 s, « @EYEZONBOT · EYEZON.GG » (mono gris) vers 13,8 s, fondu au noir à 14,9 s. 2,3 s presque statiques.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette chaude à quatre teintes",
+      "name_en": "warm four-tone palette",
+      "t": "0:00-0:14.93",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Noir chaud #0B0A08, moutarde #E2B25A, rose vif #FF2E93, crème papier #F3ECDD (+ or pâle #F5D9A0 pour la lumière). Alternance fond sombre / fond clair d'une scène à l'autre ; le rose est l'accent unique (carré, onde, colonnes, +17, YOU).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "La seule donnée concrète, « les 100 premiers utilisateurs de @eyezonbot », est devenue le fil rouge : le chiffre 100 est décliné dans chaque scène. Un chiffre ou un mot-clé dans le prompt suffit à transformer un catalogue de techniques en récit."
+    },
+    {
+      "kind": "direction",
+      "insight": "« showreel… go all out » a produit, comme ailleurs dans le corpus, une suite de disciplines (courbe d'accélération, ressort, morphing, trame, isométrique, particules, typo cinétique) ; le remerciement n'arrive qu'à 11 s."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le modèle s'est donné une grille 120 BPM, affichée dans le HUD : scènes de 3, 4 ou 7 temps, finale en doubles-croches pointées. Rien n'imposait de rythme à l'intérieur des scènes, d'où des maintiens de 1 à 2,3 s ; exiger « un changement visible toutes les 0,5 s » les aurait comblés."
+    },
+    {
+      "kind": "build",
+      "insight": "Rendu à 30 fps avec 449 images au lieu de 450 : une image probablement perdue en tête d'export, cohérente avec l'avance constante de ≈ 2 im des coupes sur les temps. Vérifier le nombre d'images après rendu."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Aucun logo ni charte fournis : l'œil dans un cadre à crochets et le wordmark serif « EyezOn. » sont probablement inventés ; pour une vraie marque, joindre les assets."
+    }
+  ],
+  "steal": [
+    "Choisir un chiffre-concept et le décliner dans chaque scène (chiffres, mot, trame, grille 10 × 10, orbite de 100 points) : la variété de techniques devient un récit.",
+    "Ouvrir un showreel sur la courbe d'accélération elle-même : poignées de Bézier, label cubic-bezier, point lumineux qui la parcourt en ease-in-out avec traînée.",
+    "Morphing de formes qui converge vers le symbole de la marque (cercle → carré → triangle → œil), une forme toutes les 11 im, bascule de couleur en 1 image.",
+    "Finale mot à mot plein cadre en rythme pointé (un mot toutes les 3 doubles-croches) : fond et texte inversés à chaque mot, entrée à 125 % avec flou.",
+    "Révéler un logo par effondrement : l'élément de la scène se contracte en point (ease-in), 4 im de silence visuel, puis onde d'anneaux sur le temps."
+  ],
+  "flaws": [
+    "29 % de plans quasi figés : trame 100 tenue 1 s, colonnes 0,5 s, carton final 2,3 s avec deux fondus seulement.",
+    "Transitions surtout en coupes franches : seules l'orbite et la trame naissent d'un geste ; les scènes s'enchaînent sans objet commun.",
+    "Colonnes roses isométriques à hauteurs aléatoires : sans signification, et le « +17 » n'est pas expliqué face au « 100 ».",
+    "HUD et légendes en mono ≈ 1,2 % de la hauteur, anneau de texte à 2 % : illisibles sur mobile."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 fps natifs et beaucoup de plans fixes ; les moments utiles (chute des chiffres en ressort, morphing vers l'œil, effondrement puis anneaux, finale en rythme pointé) sont déjà couverts image par image par les planches microscope et extra."
+  }
+}

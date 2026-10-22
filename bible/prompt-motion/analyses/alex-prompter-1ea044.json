@@ -1,0 +1,217 @@
+{
+  "slug": "alex-prompter-1ea044",
+  "title": "Animated business explainer",
+  "handle": "@alex_prompter",
+  "family": "explainer",
+  "craft": 2,
+  "craft_reason": "Propre et lisible, couleurs de marque respectées, mais quasi statique : fondus au vide entre scènes, maintiens de 3 à 3,7 s, émoji en guise d'icône ; aucune idée de mise en scène.",
+  "summary": "Explainer de 30 s pour la newsletter AI Superpowers, précédé de 4 s où le prompt se tape dans l'interface Claude. Cinq scènes sur fond bleu pâle : problème entouré de pastilles « New… », icône ⚡ et promesse, 3 cartes d'étapes, compteur 2 000+ abonnés, signature. Chaque scène entre en fondu montant, tient 3 à 4 s puis s'efface dans le vide : lisible mais sans rythme ni idée.",
+  "prompt_vs_result": [
+    "Rôle d'expert motion designer, explainer de 30 s en une page HTML, 5 scènes imposées (problème, solution, 3 étapes, une preuve, nom), « bold text, smooth transitions », couleurs de marque ; description remplie : newsletter IA gratuite, 2 000 abonnés, bleu clair et jaune.",
+    "Claude a choisi seul : les textes (« A new AI tool drops every day. »), les pastilles flottantes, l'émoji ⚡ comme logo, le compteur animé, la typo système (Helvetica probable), le fond bleu pâle et des fondus au vide entre scènes.",
+    "Le prompt cadre bien le contenu (5 scènes, preuve chiffrée) mais pas le mouvement : « smooth transitions » a donné des fondus ; rien n'impose rythme, durée, musique ou idée visuelle. Il fallait demander des transitions enchaînées et un plan toutes les 1-2 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#ECF4F8", "role": "fond unique bleu très pâle"},
+      {"hex": "#1C2838", "role": "texte principal navy (titres, compteur, libellés)"},
+      {"hex": "#4484C8", "role": "bleu secondaire : phrase de chute, sous-titres, « HOW IT WORKS », texte des pastilles"},
+      {"hex": "#80B4E0", "role": "carré de l'icône ⚡"},
+      {"hex": "#ECB814", "role": "jaune de marque : pastilles numérotées, coche de l'étape 3"},
+      {"hex": "#FCFCFC", "role": "cartes et pastilles blanches"},
+      {"hex": "#64748B", "role": "gris de la signature « by Alex Prompter » (probable)"},
+      {"hex": "#F8F6F1", "role": "intro : fond crème de l'interface Claude (hors système)"}
+    ],
+    "type": "Grotesque système (Helvetica Neue probable) grasse partout : titres ≈7 % de la hauteur, compteur ≈15 %, sous-titres bleus même taille, labels ≈3 % ; « HOW IT WORKS » en capitales espacées (≈0,15 em) ; casse phrase, point final.",
+    "texture": "Aucune texture : aplats, ombres portées très douces sous les cartes et les pastilles (flou ≈20 px, opacité faible), coins arrondis (≈24 px sur les cartes, ≈22 % sur la tuile d'icône). Pas de flou de mouvement, pas de grain, pas de dégradé. L'émoji Apple ⚡ en couleur est le seul élément « matière ».",
+    "style": "Explainer plat façon diapositives",
+    "coherence": "Cohérent par pauvreté : un seul fond, deux bleus, un jaune ponctuel, une seule police, la même entrée pour tout. Le jaune de marque est sous-employé (pastilles de numéro, coche, éclair de l'émoji) et ne sert jamais d'accent de mouvement ; l'émoji ⚡ tient lieu de logo et affaiblit la marque ; l'intro en interface Claude (crème, orange, serif) n'appartient pas au système."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio. Aucune coupe franche : un seul plan de 34,5 s où les scènes se succèdent par fondu au fond vide (≈14 im de fondu sortant puis 5 à 15 im de fond vide). Durées : intro 3,93 s, problème 6 s, solution 5,8 s, étapes 7,8 s, preuve 4,6 s, nom 5 s. Les entrées (≈8 à 11 im chacune) occupent ≈17 % du temps ; 83 % du film est en maintien (mesure automatique confirmée à l'œil) : tenues de 3,7 s, 3,5 s, 3,1 s, 1,8 s et 2,9 s sans événement, avec seulement une dérive lente des pastilles (≈7 px/s) et des cartes (±3 px), imperceptible. Seules cadences régulières : une carte toutes les 48 im (1,6 s) et un compteur sur 48 im. Très loin de la règle « un événement toutes les 0,5 à 1 s ».",
+    "timeline": [
+      {"t": "0:00-0:03.93", "what": "Interface Claude (« Evening, Alex Prompter ») : le prompt rempli se tape à ≈7-15 caractères par image, tenue, puis fondu vers le bleu pâle (f0-f117)", "technique": "accroche « prompt reveal » (ajout probable de l'auteur)"},
+      {"t": "0:04.13-0:05.73", "what": "Six pastilles « New model / agent / app / plugin / feature / update » en fondu décalé, titre en fondu montant, puis phrase de chute bleue (f124-f172)", "technique": "fondu montant, décalage ≈4 im"},
+      {"t": "0:05.73-0:09.47", "what": "Tenue 3,7 s, pastilles en dérive lente (f172-f283)", "technique": "temps mort"},
+      {"t": "0:09.47-0:10.13", "what": "Tout s'efface en 14 im puis 6 im de fond vide (f284-f303)", "technique": "fondu au vide"},
+      {"t": "0:10.13-0:10.47", "what": "Tuile ⚡ qui entre en tournant de -35° à 0° et en grossissant de ×0,6 à ×1 (f304-f314)", "technique": "pop avec rotation"},
+      {"t": "0:10.63-0:11.93", "what": "« Meet AI Superpowers. » puis « One AI superpower, every week. » en fondu montant (f319-f358)", "technique": "fondu montant"},
+      {"t": "0:11.93-0:16.10", "what": "Tenue 3,5 s, fondu sortant, fond vide (f358-f482)", "technique": "temps mort + fondu au vide"},
+      {"t": "0:16.10-0:20.27", "what": "« HOW IT WORKS » puis cartes 1, 2, 3 en fondu montant toutes les 48 im (f483-f608)", "technique": "construction séquentielle à cadence fixe"},
+      {"t": "0:20.27-0:24.23", "what": "Tenue 3,1 s des trois cartes, fondu sortant, fond vide (f608-f727)", "technique": "temps mort + fondu au vide"},
+      {"t": "0:24.27-0:25.87", "what": "Compteur « 0+ » → « 2,000+ », « subscribers. » en fondu pendant la décélération (f728-f776)", "technique": "compteur ease-out cubique"},
+      {"t": "0:26.33-0:29.40", "what": "Ligne de preuve « From the founder who built God of Prompt from $0 to $500K. » en fondu, tenue ≈1,8 s, fondu sortant (f790-f882)", "technique": "preuve d'autorité"},
+      {"t": "0:29.43-0:31.53", "what": "Tuile ⚡ (même pop), « AI Superpowers », « Free newsletter, every week. », « by Alex Prompter » en fondus successifs (f883-f946)", "technique": "signature"},
+      {"t": "0:31.53-0:34.47", "what": "Plan fixe final de 2,9 s (f946-f1034)", "technique": "tenue finale"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (audio=no dans le dossier, sync.json vide) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le rythme uniforme (une entrée toutes les 1,6 s, tenues de 3 s) ne suggère aucune pulsation ; une musique ne masquerait pas les temps morts.",
+    "how_built": "Le prompt ne mentionne ni musique ni son ; la page HTML est muette. Les durées sont posées en secondes rondes (cartes à 1,6 s d'écart, compteur de 1,6 s, tenues de ≈3 s), sans grille rythmique."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche « prompt reveal » : le prompt se tape dans l'interface Claude",
+      "name_en": "Prompt-reveal hook in the Claude UI",
+      "t": "0:00-0:03.93",
+      "frames": "f0-f117",
+      "fps": 30,
+      "mechanics": "Reproduction (ou capture accélérée, probable) de l'accueil claude.ai : « Evening, Alex Prompter » en serif avec l'astérisque orange, champ de saisie blanc, « Opus 5.5 Extended », bouton d'envoi orange. Le prompt rempli s'écrit à ≈7 à 15 caractères par image (≈500 caractères entre f15 et f78, ≈2,1 s), curseur visible ; tenue ≈0,5 s ; le champ se délave (f95-f118) en fondu vers le bleu pâle de l'explainer. Format typique des posts X « voici le prompt, voici le résultat », qui retarde le contenu de 4 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg (f0-f105), image f60 pleine résolution"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Fondu montant générique pour tous les textes",
+      "name_en": "Generic fade-up",
+      "t": "0:10.63-0:11.00",
+      "frames": "f319-f330",
+      "fps": 30,
+      "mechanics": "« Meet AI Superpowers. » : opacité 0 → 1 et montée de 34 px (3,1 % de la hauteur) en 11 im, pas décroissants (6, 6, 4, 4, 3, 3, 2, 2, 1, 1 px par image = ease-out), sans flou ni décalage par mot ou par lettre. Même entrée pour tous les textes du film (titre de la scène 1 : montée ≈32 px en 10 im, f126-f136 ; sous-titres en 6 à 8 im ; ligne de preuve ; signature) et pour les cartes (≈40 px en 9 im). Lisible mais interchangeable : aucune hiérarchie de mouvement entre un titre et une légende.",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg (f318-f356), extra-01.jpg (f126-f172)"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pastilles « New… » en couronne autour du titre",
+      "name_en": "Floating tag pills around the headline",
+      "t": "0:04.13-0:09.87",
+      "frames": "f124-f296",
+      "fps": 30,
+      "mechanics": "Six pastilles blanches (bord bleu pâle, texte bleu #4484C8 gras ≈3,5 % de la hauteur), inclinées de ±3 à 5°, disposées 3 en haut et 3 en bas autour du titre centré. Elles apparaissent en fondu une à une toutes les ≈4 im (f124 model, f128 agent, f132 app, f138 plugin, f142 feature, f148 update, ≈6 im de fondu chacune), puis dérivent très lentement (≈20 px en 3 s, ≈7 px/s, chacune dans sa direction). Bonne illustration de « un nouvel outil chaque jour », mais statique à l'œil : il aurait fallu qu'elles s'accumulent jusqu'à saturer le cadre pour rendre la surcharge sensible.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg (f124-f212), image f240 pleine résolution"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en deux temps : constat navy, chute en bleu de marque",
+      "name_en": "Two-tone setup and punchline headline",
+      "t": "0:04.20-0:09.87",
+      "frames": "f126-f296",
+      "fps": 30,
+      "mechanics": "« A new AI tool drops every day. » en navy #1C2838 (75 % de la largeur, capitale ≈7 % de la hauteur, centré à 41 % de la hauteur) puis, 38 im plus tard, « Nobody has time to test them all. » en bleu #4484C8 même taille et même graisse (82 % de la largeur), sur la ligne suivante. La couleur sépare le constat et la douleur ; grotesque grasse (Helvetica Neue probable), casse phrase, point final. Composition centrée et symétrique, ≈35 % de vide en haut et en bas.",
+      "verdict": "reprendre",
+      "evidence": "image f240 pleine résolution, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tuile d'icône qui entre en tournant",
+      "name_en": "Icon tile spin-in pop",
+      "t": "0:10.13-0:10.47",
+      "frames": "f304-f314",
+      "fps": 30,
+      "mechanics": "Le carré bleu #80B4E0 (≈18 % de la hauteur, coins ≈22 %) qui contient l'émoji ⚡ entre en tournant de ≈-35° (f304) à -25° (f306), -15° (f308), -5° (f310), -1° (f313) puis 0° (f314), en grossissant de ×0,6 à ×1,0 (atteint à f311) et en passant de ≈20 % à 100 % d'opacité : ≈10 im, ease-out, aucun dépassement ni rebond. Réutilisé à l'identique pour la signature (f883-f893). Un dépassement d'≈8 % et un rebond de rotation lui donneraient du caractère.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f304-f316), recadrage f303-f314 vérifié en pleine résolution",
+      "illus": {"from": 282, "to": 316, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Émoji en guise de logo",
+      "name_en": "Emoji used as a brand mark",
+      "t": "0:10.13-0:34.47",
+      "frames": "f304-f1034",
+      "fps": 30,
+      "mechanics": "L'émoji Apple ⚡ (« high voltage ») posé dans un carré arrondi sert de logo de marque (scène 2), d'icône de l'étape 2 et de signature finale. Raccourci de génération IA : rendu qui dépend du système, détails impossibles à contrôler, peu crédible pour une marque ; les deux autres icônes d'étape sont, elles, des pictos au trait (enveloppe, cercle coché), d'où un mélange de styles.",
+      "verdict": "cliche",
+      "evidence": "images f650 et f1000 pleine résolution"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Trois cartes d'étapes construites une à une",
+      "name_en": "Step cards built one by one",
+      "t": "0:16.10-0:20.27",
+      "frames": "f483-f608",
+      "fps": 30,
+      "mechanics": "Label « HOW IT WORKS » (bleu #4484C8, capitales espacées ≈0,15 em, ≈3 % de la hauteur, à 21 % du haut), puis 3 cartes blanches (≈24,5 % × 40 % du cadre, rayon ≈24 px, ombre douce, écart 60 px) avec pastille jaune numérotée #ECB814 (Ø ≈6 % de la hauteur), icône au trait (enveloppe, tuile ⚡, cercle coché jaune) et libellé gras ≈3 % de la hauteur. Chaque carte monte d'≈40 px en fondu en 9 im (f503-f512, f551-f560, f599-f608) : cadence fixe d'une carte toutes les 48 im (1,6 s). Grille figée dès le départ : pendant 3 s la carte 1 est seule à gauche, cadre déséquilibré.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg (f488-f629), image f650 pleine résolution",
+      "illus": {"from": 500, "to": 610, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'abonnés en ease-out cubique",
+      "name_en": "Cubic ease-out subscriber counter",
+      "t": "0:24.27-0:25.87",
+      "frames": "f728-f776",
+      "fps": 30,
+      "mechanics": "« 0+ » → « 2,000+ » : incréments par image de 130, 125, 119, 113… 65 (f742)… 18 (f757), soit une vitesse qui décroît comme (1-t)², donc un ease-out cubique (power2.out de GSAP) sur ≈48 im (1,6 s) ; valeurs 698 (f734), 1 211 (f740), 1 697 (f749), 1 910 (f757), 1 984 (f765), 2 000 (≈f776). Chiffres navy ≈15 % de la hauteur, « + » collé ; « subscribers. » apparaît en fondu dessous (f744-f750) pendant la décélération. Le seul moment vivant du film.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f740.jpg, overview-05.jpg",
+      "illus": {"from": 728, "to": 776, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Preuve d'autorité en sous-titre du chiffre",
+      "name_en": "Founder credibility line under the stat",
+      "t": "0:26.33-0:28.87",
+      "frames": "f790-f866",
+      "fps": 30,
+      "mechanics": "Sous le compteur, « From the founder who built God of Prompt from $0 to $500K. » en bleu #4484C8 gras (≈3,3 % de la hauteur, 75 % de la largeur), en fondu ; deux preuves empilées (volume d'abonnés et succès du fondateur) au lieu d'une seule comme demandé. Phrase longue tenue ≈2 s : lisible, mais elle aurait mérité son propre temps et sa propre mise en valeur (le « $500K » en jaune, par exemple).",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg (f795-f855), image f820 pleine résolution"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au vide entre les scènes",
+      "name_en": "Fade-through-empty scene change",
+      "t": "0:09.47-0:10.13",
+      "frames": "f284-f303",
+      "fps": 30,
+      "mechanics": "Tous les éléments s'effacent ensemble en ≈14 im (opacité seule, aucun mouvement, f284-f297), puis 6 im de fond vide avant la scène suivante ; même schéma à f463-f482, f701-f727 et f853-f882 (fond vide de 5 à 15 im). C'est l'interprétation minimale de « smooth transitions » : aucune continuité, aucun élément ne passe d'une scène à l'autre, alors que la tuile ⚡ aurait pu relier les scènes 2, 3 et 5.",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg (f280-f304), overview-03.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de 3 à 3,7 s sans événement",
+      "name_en": "Long static holds",
+      "t": "0:05.73-0:34.47",
+      "frames": "f172-f1034",
+      "fps": 30,
+      "mechanics": "Après chaque entrée : tenue de 3,7 s (scène 1, f172-f283), 3,5 s (scène 2, f358-f462), 3,1 s (scène 3, f608-f700), 1,8 s (scène 4, f798-f852) et 2,9 s (fin, f946-f1034) ; 83 % du film statique selon la mesure automatique, confirmé à l'œil. Les textes se lisent en ≈1 s : le reste est du temps mort. ≈20 événements en 30 s, dont la plupart groupés dans les 1,5 premières secondes de chaque scène.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg (maintiens gris), overview-02.jpg à overview-06.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en 5 scènes suivie à la lettre",
+      "name_en": "Literal five-scene pitch structure",
+      "t": "0:03.93-0:34.47",
+      "frames": "f118-f1034",
+      "fps": 30,
+      "mechanics": "Problème (6 s) → solution (5,8 s) → 3 étapes (7,8 s) → preuve (4,6 s) → nom (5 s) : l'argumentaire classique du prompt, dans l'ordre, avec des scènes de durée quasi égale, sans crescendo, sans appel à l'action (ni lien, ni « subscribe ») et sans retour visuel du problème. Un diaporama plutôt qu'un récit.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt publié est un gabarit avec un champ « [DESCRIBE WHAT YOU SELL…] » ; la vidéo montre la version remplie (AI Superpowers, newsletter gratuite, 2 000 abonnés, God of Prompt de 0 à 500 K$, bleu clair et jaune). Tous les textes à l'écran sortent de ces deux phrases : Claude n'a rien inventé de factuel."},
+    {"kind": "structure", "insight": "« 5 scenes » suivi de la liste (problème, ce que je fais, 3 étapes, une preuve, mon nom) donne exactement 5 scènes dans l'ordre, de durée quasi égale (4,6 à 7,8 s) : une structure énumérée produit un diaporama, pas un récit."},
+    {"kind": "direction", "insight": "« Bold text, smooth transitions » a été lu au plus simple : gras partout et fondus au vide. « Adopt the role of an expert motion designer » ne suffit pas à déclencher des transitions enchaînées ni un mouvement continu ; il faut les décrire."},
+    {"kind": "build", "insight": "« Single HTML page » : polices système (Helvetica probable), émoji ⚡ comme icône, animations simples (fondu montant, pop, compteur). Sans logo ni pictos fournis, Claude a comblé avec un émoji."},
+    {"kind": "banned", "insight": "Rien n'interdit les temps morts ni les émojis ; aucune contrainte de rythme (« un changement toutes les X s ») ni de musique : la vidéo reste immobile 83 % du temps et sort muette."},
+    {"kind": "other", "insight": "Les 4 premières secondes (interface Claude où le prompt se tape) sont un habillage de post X, probablement ajouté par l'auteur : le livrable de Claude commence à 3,93 s et dure bien 30,5 s."}
+  ],
+  "steal": [
+    "Compteur de preuve : ease-out cubique sur 1,6 s, libellé qui apparaît en fondu pendant la décélération, signe « + » collé au nombre.",
+    "Titre en deux temps : constat dans la couleur du texte, chute (la douleur) dans la couleur de marque, même taille, ligne suivante.",
+    "Entrée d'icône : rotation de -35° à 0° couplée à une échelle ×0,6 → ×1 en 10 im ; ajouter un léger dépassement pour du caractère.",
+    "Problème « trop d'outils » : pastilles inclinées en couronne autour du titre ; les faire s'accumuler jusqu'à saturer le cadre pour rendre la surcharge visible."
+  ],
+  "flaws": [
+    "83 % du film immobile : tenues de 3 à 3,7 s après chaque entrée, alors que les textes se lisent en 1 s.",
+    "Transitions réduites à des fondus au vide répétés 4 fois ; aucun élément ne relie deux scènes.",
+    "Émoji ⚡ en guise de logo et d'icône : rendu système non maîtrisé, peu crédible pour une marque.",
+    "Même fondu montant pour tout (titres, cartes, légendes) : aucune hiérarchie de mouvement.",
+    "Muette, et 4 s d'interface Claude avant le premier message : l'accroche arrive tard."
+  ],
+  "deep_study": {"worth": false, "why": "Non : mouvements génériques (fondus montants, un pop d'icône, un compteur) déjà mesurés ici ; seul le compteur ease-out mérite un coup d'œil image par image, le reste est statique."}
+}

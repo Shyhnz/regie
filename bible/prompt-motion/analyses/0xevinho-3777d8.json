@@ -1,0 +1,367 @@
+{
+  "slug": "0xevinho-3777d8",
+  "title": "Pixel wizard crypto animation",
+  "handle": "@0xEvinho",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Grammaire de jeu vidéo maîtrisée (flash d'impact, chiffres de dégâts, anneaux de choc, fondu tramé) et escalade claire ; mais personnages minuscules, vecteurs lisses mêlés au pixel art, et aucun son.",
+  "summary": "Scène pixel art nocturne au bord d'un lac : quatre classes se relaient devant un mannequin d'entraînement (mage de givre, mage de feu, chevalier, trader crypto). Chaque cycle suit le même gabarit : cercle d'invocation, flash, nom du sort tapé lettre à lettre, effet, flash d'impact, total des dégâts, nuage de fumée. Le dernier sort transforme un graphique boursier en arme : bougies vertes, krach rouge, LIQUIDATION puis REKT.",
+  "prompt_vs_result": [
+    "Le prompt demande seulement « une version similaire » d'une vidéo précédente (absente ici), avec une référence crypto. Il ne dit rien de la durée, du format, du style ni du son.",
+    "Claude a décidé seul : décor pixel art nocturne, structure en 4 classes à gabarit identique (probable reprise de l'original), et une 4e classe « trader » dont le sort est un krach boursier avec dégâts en dollars négatifs et « REKT ».",
+    "Le prompt s'appuie sur le contexte de la conversation. La crypto n'occupe que le dernier quart (probable). Il aurait fallu préciser : tout en crypto ou en final seulement, taille des personnages, bruitages."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1A1530", "role": "ciel de nuit violet profond"},
+      {"hex": "#3A2858", "role": "bande d'aurore violette derrière les sapins"},
+      {"hex": "#0E1020", "role": "silhouettes de sapins"},
+      {"hex": "#12142A", "role": "lac et reflets"},
+      {"hex": "#E8D8A0", "role": "lune et reflet en tirets"},
+      {"hex": "#F09030", "role": "feu de camp, flammes"},
+      {"hex": "#B02020", "role": "bannière rouge"},
+      {"hex": "#4A90E0", "role": "givre, cercle du mage bleu"},
+      {"hex": "#15204A", "role": "étalonnage bleu pendant Blizzard"},
+      {"hex": "#3A1530", "role": "étalonnage magenta pendant Meteor"},
+      {"hex": "#60D060", "role": "bougies vertes (bull run), cercle du trader"},
+      {"hex": "#E03030", "role": "bougies rouges, pilier, REKT"},
+      {"hex": "#E8C060", "role": "titres de sort et flèches dorées"},
+      {"hex": "#F06080", "role": "total des dégâts rose"},
+      {"hex": "#B8B8D0", "role": "flash d'impact blanc lavande"}
+    ],
+    "type": "Police bitmap pixel, capitales. Titre de sort doré ≈ 3 % de la hauteur, centré en haut entre deux flèches. Chiffres de dégâts pixel jaunes sur cartouche noir ≈ 2,5 %. REKT pixel rouge contouré ≈ 13 % de la hauteur.",
+    "texture": "Pixel art à gros grain, tramage ordonné (dither Bayer) pour fondus et explosions, reflets du lac en lignes horizontales ondulantes, étoiles scintillantes, feu de camp qui vacille. Anneaux de choc et rayon laser tracés en vectoriel fin et lisse, hors grille pixel.",
+    "style": "pixel art RPG, VFX de jeu",
+    "coherence": "Tient par un décor fixe (caméra immobile, même lac, même mannequin), un gabarit de cycle identique et un code couleur par classe (cyan, or, rouge, vert). Se casse avec les cercles et lasers vectoriels lisses qui trahissent la grille pixel, et avec des chiffres trop petits pour être lus."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "aucun",
+    "notes": "Pas de piste audio. Aucun maintien statique ≥ 0,4 s : le feu, les étoiles, les reflets et les chiffres bougent en permanence. Les 8 « coupes » détectées sont en fait des flashs de palette : 4 flashs d'incantation d'1 image (f60 0:02.00, f177 0:05.90, f312 0:10.40, f450 0:15.00) et 4 flashs d'impact de 2 images (f111-112 0:03.70, f234-235 0:07.80, f378-379 0:12.60, f514-515 0:17.13). Durée incantation → impact : 1,7 s, 1,95 s, 2,2 s, 2,17 s (escalade). Cycles de 3,9 à 4,6 s entre flashs d'incantation. Densité interne élevée : un nouveau chiffre de dégâts toutes les 3-4 images (0,1-0,13 s), titre tapé à 1 lettre par image. Le seul ralentissement est la phase de charge (≈ 1 s de cercle d'invocation) avant chaque sort, qui sert d'anticipation.",
+    "timeline": [
+      {"t": "0:00-0:00.37", "what": "Fondu d'entrée tramé depuis le noir, la lune apparaît en grille de points", "technique": "fondu tramé (dither fade)"},
+      {"t": "0:00.4-0:02.0", "what": "Mage bleu au repos, cercle d'invocation cyan qui s'ouvre sous lui (f26-f28), étincelles montantes", "technique": "anticipation par cercle d'invocation"},
+      {"t": "0:02.0-0:02.3", "what": "Flash d'incantation 1 image, étalonnage bleu, BLIZZARD tapé lettre à lettre entre deux flèches", "technique": "flash de palette + titre tapé"},
+      {"t": "0:02.3-0:03.7", "what": "Tourbillon de neige devant la lune, éclats de glace, pics de cristal sous le mannequin, pile de chiffres de dégâts", "technique": "VFX de sort + damage numbers"},
+      {"t": "0:03.7-0:04.2", "what": "Flash d'impact 2 images, anneau de choc, total 1312177 en rose près de la lune, retour à la nuit violette, titre effacé", "technique": "hit flash + shockwave"},
+      {"t": "0:04.3-0:04.9", "what": "Le mage se change en nuage de fumée pixel, un mage rouge en sort", "technique": "poof de changement de classe"},
+      {"t": "0:05.0-0:05.9", "what": "Cercle d'invocation doré, charge du bâton", "technique": "anticipation"},
+      {"t": "0:05.9-0:07.8", "what": "Flash, METEOR, étalonnage magenta, vortex de feu dans le ciel, météore en diagonale depuis le coin haut droit, boules de feu sur le mannequin", "technique": "étalonnage par sort + projectile"},
+      {"t": "0:07.8-0:08.6", "what": "Flash d'impact beige, explosion tramée géante, anneaux et ellipses au sol, total 4433763", "technique": "explosion tramée + anneaux"},
+      {"t": "0:08.6-0:09.5", "what": "Retour à la nuit, fumée, chevalier", "technique": "poof"},
+      {"t": "0:10.4-0:11.0", "what": "Flash, DRAGON FURY tapé, trois coups d'épée en croissants blancs-rouges", "technique": "slash arcs"},
+      {"t": "0:11.0-0:12.6", "what": "Dragon de feu en serpent qui sort de l'épée, monte vers la lune et retombe en crochet sur le mannequin", "technique": "chaîne de segments suiveurs (follow the leader)"},
+      {"t": "0:12.6-0:13.5", "what": "Flash d'impact, anneau rouge, total 4482359, effacement du titre, fumée", "technique": "hit flash"},
+      {"t": "0:13.9-0:15.0", "what": "Trader encapuchonné avec torche, cercle vert, bougies vertes qui montent en escalier (bull run) au-dessus de lui", "technique": "graphique boursier en sort"},
+      {"t": "0:15.0-0:17.0", "what": "Flash, LIQUIDATION en rouge, étalonnage cramoisi, laser rose vers le mannequin, les bougies rouges s'effondrent en diagonale, dégâts en dollars négatifs", "technique": "krach en bougies rouges"},
+      {"t": "0:17.0-0:17.2", "what": "Une bougie rouge géante tombe du haut du cadre en 4 images et écrase le mannequin, flash beige", "technique": "slam vertical"},
+      {"t": "0:17.2-0:18.5", "what": "Écran rouge, anneaux, -$9,999,999, REKT tamponné en grand blanc puis rouge", "technique": "tampon de texte (stamp)"},
+      {"t": "0:18.5-0:19.6", "what": "Le pilier se désintègre en pixels, retour à la nuit, mannequin calciné, REKT reste affiché", "technique": "désintégration tramée"},
+      {"t": "0:19.6-0:20.0", "what": "Fondu de sortie tramé vers le noir (boucle possible)", "technique": "fondu tramé"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no). Aucune grille de temps ni attaque à mesurer.",
+    "synced": [],
+    "style_match": "Sans son. Une pièce de jeu vidéo pixel art dont chaque flash d'impact réclamait un bruitage 8-bit et une boucle chiptune.",
+    "how_built": "Rendu muet : le prompt ne parle pas de son et la composition n'en génère pas. Les flashs d'impact réguliers (≈ toutes les 4,5 s) offriraient pourtant des points d'ancrage évidents pour des effets sonores."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle de classes à gabarit identique avec escalade",
+      "name_en": "class rotation loop with escalation",
+      "t": "0:00-0:20",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "4 cycles de 3,9 à 4,6 s : charge (≈ 1 s), flash d'incantation, sort (1,7 à 2,2 s), flash d'impact, total, effacement du titre, fumée. Chaque sort est plus gros que le précédent : pics de glace, explosion plein cadre, dragon qui traverse le ciel, puis écran rouge et REKT. Le dernier casse le gabarit (pas de fumée, final qui reste).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg … overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu tramé depuis et vers le noir",
+      "name_en": "ordered dither fade",
+      "t": "0:00-0:00.37 / 0:19.6-0:20.0",
+      "frames": "f0-f11 / f587-f599",
+      "fps": 30,
+      "mechanics": "L'image apparaît par une trame de points ordonnée (Bayer) qui se densifie en 11 images (0,37 s) : la lune est d'abord une grille de points, le décor des points épars. Sortie symétrique en 12 images (0,4 s). Les premières et dernières images sont presque noires : la vidéo peut boucler.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg",
+      "illus": {"from": 0, "to": 12, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'incantation d'une image",
+      "name_en": "single-frame cast flash",
+      "t": "0:02.00 / 0:05.90 / 0:10.40 / 0:15.00",
+      "frames": "f60, f177, f312, f450",
+      "fps": 30,
+      "mechanics": "Une seule image où toute la scène passe en palette désaturée lavande-gris (#6A6A8A) avec les sprites en couleur pâle. Elle marque le départ du sort ; le titre commence à l'image suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f71.jpg (f59), microM-004-cut-f312.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'impact en deux images (palette inversée)",
+      "name_en": "two-frame hit flash",
+      "t": "0:03.70 / 0:07.80 / 0:12.60 / 0:17.13",
+      "frames": "f111-f112, f234-f235, f378-f379, f514-f515",
+      "fps": 30,
+      "mechanics": "Image 1 : lavis presque blanc (#B8B8D0), les sprites deviennent des silhouettes blanches. Image 2 : gris lavande ou beige (#B8A878 pour Meteor, orangé pour REKT), palette inversée. Image 3 : retour à la scène avec l'anneau de choc déjà lancé. Le total des dégâts apparaît dès l'image 1.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f111.jpg, microM-003-cut-f234.jpg",
+      "illus": {"from": 109, "to": 121, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Étalonnage de toute la scène par sort",
+      "name_en": "per-spell scene regrade",
+      "t": "0:02.0-0:04.0 / 0:06.0-0:08.9 / 0:15.0-0:18.9",
+      "frames": "f61-f119, f178-f265, f451-f567",
+      "fps": 30,
+      "mechanics": "Tant que le sort dure, ciel, sapins et lac basculent d'un coup dans la teinte du sort : bleu nuit #15204A (Blizzard), magenta #3A1530 (Meteor), cramoisi puis rouge plein #8A1A1A (Liquidation, REKT). Bascule franche sur le flash, retour franc à la nuit violette après l'impact. Dragon Fury n'a pas d'étalonnage (incohérence).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom du sort tapé lettre à lettre avec lettre de tête surélevée",
+      "name_en": "letter-by-letter typing with raised leading glyph",
+      "t": "0:02.03-0:02.30",
+      "frames": "f60-f69",
+      "fps": 30,
+      "mechanics": "f60 : deux petites flèches apparaissent au centre et s'écartent. f61 « B », f62 « BL »… f69 « BLIZZARD » : 1 lettre par image (8 lettres en 8 im = 0,27 s). La dernière lettre arrivée est décalée vers le haut d'environ un demi-corps, puis retombe sur la ligne à l'image suivante. DRAGON FURY : 11 caractères de f314 à f325. Les traits des flèches s'allongent en même temps vers les bords (≈ 25 % de la largeur de chaque côté).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f71.jpg, microM-004-cut-f312.jpg",
+      "illus": {"from": 60, "to": 70, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Effacement du titre à rebours",
+      "name_en": "reverse typing erase",
+      "t": "0:04.00-0:04.20",
+      "frames": "f120-f126",
+      "fps": 30,
+      "mechanics": "BLIZZA (f120), BLIZZ (f122), BLIZ (f123), BL (f124), B (f125), vide (f126) : ≈ 1,3 lettre par image, plus rapide que l'entrée. Les flèches se rétractent vers le centre. Même mécanique sur METEOR (f247-f251) et DRAGON FURY (f384-f389).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f111.jpg, microM-003-cut-f234.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Pile de chiffres de dégâts",
+      "name_en": "stacking damage numbers",
+      "t": "0:02.4-0:03.7",
+      "frames": "f73-f110",
+      "fps": 30,
+      "mechanics": "En haut à droite du mannequin (≈ 85 % de la largeur, 30-40 % de la hauteur), une pile de 4 lignes de chiffres pixel. Chaque nouveau coup ajoute une ligne en blanc qui passe au jaune à l'image suivante, la plus ancienne disparaît par le haut. Cadence : une ligne toutes les 3-4 images (f73, f76, f80, f83, f86). Pour la crypto, les dégâts deviennent des pertes en dollars (-$38,120).",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f71.jpg, microM-007-move-f456.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Total des dégâts sur la lune",
+      "name_en": "damage total callout",
+      "t": "0:03.70-0:05.30",
+      "frames": "f111-f158",
+      "fps": 30,
+      "mechanics": "Au flash d'impact, un nombre rose #F06080 contouré de sombre (1312177, 4433763, 4482359, -$9,999,999) apparaît collé à la lune, précédé d'une étincelle « + ». La lune devient un croissant pendant l'affichage, puis redevient pleine quand le total disparaît (f159).",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f111.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneaux de choc en cercle et en ellipse au sol",
+      "name_en": "shockwave rings",
+      "t": "0:03.77-0:04.10",
+      "frames": "f113-f121",
+      "fps": 30,
+      "mechanics": "Cercle fin centré sur le mannequin, rayon ≈ 4 % de la hauteur (f113), 10 % (f114), 14 % (f115), 16 %, 17 %, 19 %, 20 % (f119) : ease-out fort. Fondu en 2 images. Sur Meteor et REKT, une ellipse aplatie s'étale sur le sol et le lac en parallèle (perspective). Trait vectoriel lisse, hors grille pixel.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f111.jpg, microM-003-cut-f234.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Nuage de fumée pour changer de personnage",
+      "name_en": "smoke poof character swap",
+      "t": "0:04.30-0:04.90",
+      "frames": "f129-f147",
+      "fps": 30,
+      "mechanics": "Le sprite est remplacé par une boule de fumée grise pixel (≈ 4 % de la largeur), qui gonfle en 3-4 bouffées (f130-f134), se disperse en tramé (f135-f142) et laisse voir le nouveau personnage (complet à f147). ≈ 18 im = 0,6 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cercle d'invocation au sol, couleur de classe",
+      "name_en": "summoning circle",
+      "t": "0:00.87-0:02.0",
+      "frames": "f26-f60",
+      "fps": 30,
+      "mechanics": "Une ellipse runique s'ouvre sous le personnage en 3 images (f26-f28), largeur ≈ 9 % du cadre, avec étincelles qui montent et reflet dans le lac. Couleur par classe : cyan, or, rouge, vert (puis rouge pendant Liquidation). Sert d'anticipation ≈ 1 s avant chaque sort.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Blizzard : vortex céleste, pluie d'éclats et pics de cristal",
+      "name_en": "blizzard VFX",
+      "t": "0:02.1-0:03.7",
+      "frames": "f62-f110",
+      "fps": 30,
+      "mechanics": "Un tourbillon de neige en ellipse se forme devant la lune (≈ 15 % de la largeur), des traits de glace tombent en diagonale sur le mannequin, puis des pics de cristal bleus jaillissent du sol (≈ 15 % de la hauteur) à f99-f110 juste avant l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f71.jpg, microM-002-cut-f111.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Météore en diagonale et explosion tramée",
+      "name_en": "meteor strike with dithered explosion",
+      "t": "0:07.40-0:08.60",
+      "frames": "f222-f258",
+      "fps": 30,
+      "mechanics": "Un gros météore pixel avec traînée de flamme descend du coin haut droit vers le mannequin en ≈ 12 images, quasi linéaire. Après le flash, boule de feu tramée qui grossit jusqu'à ≈ 45 % de la hauteur (f236-f245), avec anneaux et ellipses au sol, puis se dissout en tramé rouge sombre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f234.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Coups d'épée en croissants",
+      "name_en": "slash arcs",
+      "t": "0:10.47-0:10.93",
+      "frames": "f314-f328",
+      "fps": 30,
+      "mechanics": "Trois croissants blancs bordés de rouge partent de l'épée et volent vers le mannequin (≈ 25 % de la largeur en 4 images), espacés de ≈ 4 images. Ils traversent le mannequin sans flash individuel.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f312.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Dragon serpent en segments suiveurs",
+      "name_en": "follow-the-leader serpent",
+      "t": "0:10.97-0:12.60",
+      "frames": "f329-f377",
+      "fps": 30,
+      "mechanics": "Une tête de dragon sort de l'épée (f329), le corps de ≈ 25 segments à piques suit exactement le chemin de la tête : S horizontal jusqu'au mannequin (f338-f349), montée en crochet jusqu'à la lune (f350-f360), retombée sur le mannequin (f366-f377). Braises qui se détachent du corps. ≈ 1,6 s de trajet.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f350.jpg, microM-006-cut-f378.jpg",
+      "illus": {"from": 338, "to": 377, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Graphique boursier comme sort : bull run puis krach",
+      "name_en": "candlestick chart as spell",
+      "t": "0:14.00-0:16.00",
+      "frames": "f420-f480",
+      "fps": 30,
+      "mechanics": "Pendant la charge, des bougies vertes montent en escalier depuis le bâton (de ≈ 5 % à 40 % de la largeur, de 45 % à 15 % de la hauteur), une par 2-3 images. Au flash, le sommet bascule et des bougies rouges dégringolent en diagonale vers le sol à ≈ 1 bougie par image (f452-f465) ; un laser rose relie le bâton au mannequin et les dégâts deviennent des dollars négatifs.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f456.jpg, overview-03.jpg",
+      "illus": {"from": 444, "to": 468, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Bougie géante qui s'écrase du haut du cadre",
+      "name_en": "vertical candle slam",
+      "t": "0:17.00-0:17.13",
+      "frames": "f510-f514",
+      "fps": 30,
+      "mechanics": "Une bougie rouge pleine (≈ 4 % de la largeur) descend du bord haut en 4 images, en accélérant (ease-in) : ≈ 5 %, 10 %, 25 %, 50 % de la hauteur. Elle touche le mannequin à f513, flash beige-orangé à f514-f515.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f515.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "REKT tamponné en grand puis rétréci",
+      "name_en": "oversized stamp text",
+      "t": "0:17.33-0:17.43",
+      "frames": "f520-f523",
+      "fps": 30,
+      "mechanics": "REKT apparaît en blanc à ≈ 29 % de la largeur pendant 2 images (f520-f521), saute à ≈ 20 % à f522 sans image intermédiaire, puis passe au rouge contouré à f523. Pas d'ease : un tampon en 2 tailles. Il reste jusqu'au fondu final (≈ 2,3 s).",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f515.jpg",
+      "illus": {"from": 509, "to": 524, "n": 8}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Désintégration tramée du pilier",
+      "name_en": "dither disintegration",
+      "t": "0:18.50-0:18.90",
+      "frames": "f555-f567",
+      "fps": 30,
+      "mechanics": "Le pilier rouge se perce de pixels qui disparaissent par trame jusqu'à révéler le mannequin calciné (brun sombre), en ≈ 12 images. L'étalonnage rouge bascule vers la nuit violette à f568.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Décor vivant : lac miroir, étoiles, feu",
+      "name_en": "living pixel backdrop",
+      "t": "0:00-0:20",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Horizon à ≈ 57 % de la hauteur, scène reflétée dans le lac avec lignes horizontales qui ondulent, reflet de lune en tirets crème, étoiles qui scintillent, feu de camp et bannière animés en boucle de quelques images. Caméra fixe pendant 20 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mise en scène de jeu de combat latéral",
+      "name_en": "side-view battle staging",
+      "t": "0:00-0:20",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Lanceur à ≈ 20 % de la largeur, mannequin cible à ≈ 70 %, lune à 87 % / 15 %. Titre centré en haut (≈ 5 % de la hauteur), HUD de dégâts en haut à droite. Personnages ≈ 8-10 % de la hauteur seulement : lisible sur grand écran, minuscule sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Anticipation, action, impact, bilan",
+      "name_en": "anticipation-action-impact-aftermath beat",
+      "t": "0:00.9-0:04.9",
+      "frames": "f26-f147",
+      "fps": 30,
+      "mechanics": "Charge lente ≈ 1 s (cercle), départ marqué par un flash d'1 image, action dense 1,7-2,2 s (événement toutes les 3-4 images), impact marqué par 2 images de flash, bilan ≈ 0,5 s (anneau, total), sortie 0,6 s (fumée). Les deux flashs servent de ponctuation sans aucune coupe de caméra.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-move-f71.jpg, microM-002-cut-f111.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Mélange pixel art et vecteurs lisses",
+      "name_en": "mixed-resolution rendering",
+      "t": "0:03.77-0:17.5",
+      "frames": "f113-f527",
+      "fps": 30,
+      "mechanics": "Les anneaux de choc, le laser et les traits de flèche sont des lignes fines anticrénelées à la résolution native 1080p, alors que tout le reste est en gros pixels (≈ 4-6 px réels par pixel). Le contraste trahit la construction en code.",
+      "verdict": "cliche",
+      "evidence": "microM-003-cut-f234.jpg, microM-008-cut-f515.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« make a similar version » suppose une vidéo précédente dans la conversation : le style pixel art, le décor et le gabarit de classes viennent probablement de là, pas du prompt."},
+    {"kind": "direction", "insight": "« crypto reference » a été traduit en mécanique de jeu, pas en décor : un sort dont la forme est un graphique en bougies, des dégâts en dollars négatifs et l'argot « LIQUIDATION », « REKT ». La métaphore est forte parce qu'elle réutilise la grammaire existante."},
+    {"kind": "structure", "insight": "Claude a placé l'élément demandé en dernier et en a fait l'apogée (écran rouge, tampon, pilier) : bon réflexe de structure en escalade."},
+    {"kind": "other", "insight": "Aucune mention du son ni du format mobile : rendu muet et personnages minuscules. Un prompt aurait dû demander des bruitages 8-bit sur chaque flash et un cadrage plus serré."}
+  ],
+  "steal": [
+    "Ponctuer sans couper : 1 image de flash au départ d'une action, 2 images (blanc puis palette inversée) à l'impact.",
+    "Taper un titre à 1 lettre par image, dernière lettre surélevée d'un demi-corps, entre deux traits qui s'étirent ; l'effacer plus vite qu'on l'a écrit.",
+    "Transformer la donnée métier en arme : un graphique boursier qui monte puis s'effondre devient le sort lui-même.",
+    "Rebasculer toute la palette de la scène dans la couleur de l'action pendant qu'elle dure, retour franc après l'impact.",
+    "Entrer et sortir par un fondu tramé (dither) depuis le noir pour une boucle propre."
+  ],
+  "flaws": [
+    "Personnages à ≈ 8-10 % de la hauteur : l'action se lit mal sur téléphone.",
+    "Anneaux et laser en vecteurs lisses qui cassent la grille pixel art.",
+    "Chiffres de dégâts trop petits et trop rapides pour être lus : du bruit décoratif.",
+    "Aucun son sur une pièce de jeu vidéo bâtie sur des impacts.",
+    "Gabarit répété 4 fois à l'identique : la surprise ne vient que du dernier sort."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Vidéo native à 30 fps, animée par sprites et flashs d'1-2 images déjà résolus sur les planches microscope ; utile comme référence de grammaire VFX de jeu, peu transposable au style 1600 visé."
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "slug": "blueoctopusai-dd17bd",
+  "title": "First & 10 yellow line explainer",
+  "craft": 3,
+  "craft_reason": "Explication exacte et complète posée dans un monde 3D cohérent, mais rythme de documentaire lent (36 % de maintiens, images figées jusqu'à 3,8 s), paragraphes à lire sans voix off et aucune synchro musicale.",
+  "style": {
+    "family": "documentaire technique 3D, habillage de retransmission sportive",
+    "palette": ["#4A8A3D", "#FCE038", "#3D7ADE", "#0D0F14", "#498E95", "#17A3AC", "#D8DADC"],
+    "type": ["capitales condensées grasses (type Bebas ou Barlow Condensed, probable)", "sans serif pour les paragraphes (≈ 1,6 % de la hauteur)", "mono pour surtitres, étiquettes et télémétrie"],
+    "texture": "3D temps réel low-poly, ombres douces, halos de projecteurs, foule en pixels, voile sombre en dégradé derrière le texte, pas de flou de mouvement",
+    "mood": "didactique, posé, technique"
+  },
+  "rhythm": {
+    "bpm": 100,
+    "sync": "aucune",
+    "dead_time": "beaucoup",
+    "acts": [
+      "0-8,5 s : accroche, la ligne se trace, titre FIRST & TEN",
+      "8,5-19,5 s : câblage du stade (CABLE TO EVERY POSITION)",
+      "19,5-32,5 s : encodeurs de la nacelle (EVERY MOVE IS MEASURED)",
+      "32,5-44 s : données sur l'audio, schéma de chaîne",
+      "44-55,5 s : terrain bombé, maillage cyan",
+      "55,5-69,5 s : calibrage de l'objectif",
+      "69,5-84,5 s : recalage sur les marques, montage qui accélère",
+      "84,5-96,5 s : apprentissage des couleurs",
+      "96,5-109 s : projection, formule p = K·R·(X−C)",
+      "109-121,5 s : incrustation sous les joueurs (canaux, volet masque / rendu)",
+      "121,5-133 s : retard d'image",
+      "133-145 s : ce qui casse le système",
+      "145-156,5 s : neige, cas limite",
+      "156,5-167,5 s : boucle de fin sur FIRST & TEN"
+    ]
+  },
+  "family": "explainer",
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Coupes : 10/55 à ±1 im d'un temps (≈ 9 attendues par hasard) et 18/55 d'un temps ou demi-temps (≈ 18 attendues). Sur les planches marquées, coupes f255 et f1665 à +3 im après la barre bleue, f1935 sur un demi-temps par hasard ; titres 13 à 14 im après chaque coupe, quel que soit le temps. Montage accéléré (1:13–1:21.6) : plans de 25 à 3 im sans rapport avec la période de 18 im. Indice auto : p = 1,0 ; intensité/mouvement r = 0,02.",
+    "synced": [],
+    "style_match": "Nappe discrète (−30 dBFS) à ≈ 100 BPM, pulsation faible : le ton neutre colle à la lenteur documentaire, mais rien ne s'y accroche.",
+    "how_built": "Le prompt ne demande ni musique ni tempo ; le montage suit le texte (chapitres de 9 à 15 s, titres 14 im après la coupe) et la nappe est posée dessous sans grille ; aucun bruitage."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitres en phrase-thèse",
+      "name_en": "thesis headlines",
+      "t": "0:08.5-2:36.5",
+      "frames": "f255-f4695",
+      "fps": 30,
+      "mechanics": "Douze chapitres de 9 à 15 s (≈ 11,5 s en moyenne). Chaque titre affirme une conclusion en 3 à 5 mots (« THE FIELD ISN'T FLAT », « THE LINE GOES UNDER »), suivi d'un paragraphe de 30 à 45 mots.",
+      "verdict": "adapter",
+      "evidence": "overview-fix-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle début/fin",
+      "name_en": "bookend",
+      "t": "0:02.4 / 2:42.0",
+      "frames": "f73 / f4860",
+      "fps": 30,
+      "mechanics": "Même type de plan et même titre FIRST & TEN au début et à la fin. En fin, surtitre qui récapitule les étapes (« MIC LINE · SURVEY · LENS · REGISTRATION · COLOURS · RENDER », lecture probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-14.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé de la ligne en perspective",
+      "name_en": "3D line draw-on",
+      "t": "0:01.10-0:01.83",
+      "frames": "f33-f55",
+      "fps": 30,
+      "mechanics": "Lignes jaune #FCE038 et bleue #3D7ADE dessinées du fond du terrain vers la caméra en ≈ 20 im (0,67 s), vitesse presque constante. Elles épousent la perspective et passent sous les joueurs.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 31, "to": 57, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Voile latéral puis titre en fondu",
+      "name_en": "scrim + title fade",
+      "t": "0:02.17-0:03.17",
+      "frames": "f65-f95",
+      "fps": 30,
+      "mechanics": "Dégradé sombre sur ≈ 40 % gauche (≈ 8 im), puis FIRST & TEN en fondu en ≈ 12 im, légèrement flou au départ. Surtitre mono et paragraphe ≈ 0,3 s plus tard.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre de chapitre en fondu retardé",
+      "name_en": "delayed title fade-in",
+      "t": "0:08.50-0:56.00",
+      "frames": "f255, f584, f974, f1665",
+      "fps": 30,
+      "mechanics": "Coupe franche, titre visible 14 im (0,47 s) après la coupe, du gris au blanc en ≈ 15 à 20 im, paragraphe ≈ 1 s après. Le titre s'éteint ≈ 6 à 10 im avant la coupe suivante. Même recette 13 fois.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f255.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titres condensés et mot accent jaune",
+      "name_en": "condensed headline + accent word",
+      "t": "0:02.4-2:47.5",
+      "frames": "f73-f5023",
+      "fps": 30,
+      "mechanics": "« FIRST & » blanc, « TEN » jaune ; capitales condensées grasses, interlettrage serré, deux lignes ferrées à gauche. Ouverture ≈ 11 % de la hauteur, chapitres ≈ 4,5 %, paragraphes ≈ 1,6 %. Le jaune du mot reprend celui de la ligne.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Un seul monde 3D",
+      "name_en": "single explanatory world",
+      "t": "0:00.0-2:47.5",
+      "frames": "f0-f5023",
+      "fps": 30,
+      "mechanics": "Stade low-poly, foule en pixels, joueurs, camions, nacelles. Toutes les étapes se passent dans ce décor, auquel on ajoute des couches (maillage, cadres, schémas).",
+      "verdict": "reprendre",
+      "evidence": "overview-fix-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plans lents et continus",
+      "name_en": "slow dolly / orbit",
+      "t": "0:08.5-0:19.5",
+      "frames": "f255-f584",
+      "fps": 30,
+      "mechanics": "Un plan par chapitre en travelling ou orbite quasi linéaire sur 8 à 12 s (ici, approche du mur du stade). Pas d'accélération ni de coupe interne.",
+      "verdict": "adapter",
+      "evidence": "overview-fix-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Assemblage de l'objet expliqué",
+      "name_en": "assembly build",
+      "t": "0:19.63-0:23.00",
+      "frames": "f589-f690",
+      "fps": 30,
+      "mechanics": "Bloc posé (f589), trépied qui déplie ses jambes en ≈ 7 im (f590-f596), puis tête et corps de caméra (20-23 s) ; étiquettes des encodeurs ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f584.jpg",
+      "illus": {"from": 586, "to": 601, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Étiquettes à filet",
+      "name_en": "callouts with leader lines",
+      "t": "0:12.0-0:32.0",
+      "frames": "f360-f960",
+      "fps": 30,
+      "mechanics": "Petites étiquettes mono sur fond sombre reliées par un filet fin aux pièces (camions, fibres, encodeurs). Texte ≈ 1 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "overview-fix-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chaîne du signal dessinée",
+      "name_en": "signal-flow diagram",
+      "t": "0:39.0-0:43.5",
+      "frames": "f1170-f1305",
+      "fps": 30,
+      "mechanics": "Bande sombre en bas (≈ 30 % de la hauteur), 8 blocs reliés de la tête de caméra au PC de suivi (lecture probable). Une sinusoïde verte parcourt la chaîne : les données voyagent sur l'audio.",
+      "verdict": "reprendre",
+      "evidence": "overview-fix-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Maillage du terrain bombé",
+      "name_en": "wireframe terrain overlay",
+      "t": "0:45.0-0:51.0",
+      "frames": "f1350-f1530",
+      "fps": 30,
+      "mechanics": "Grille cyan #498E95 posée sur la pelouse, qui montre le bombement central (exagéré). Panneau « FIELD MODEL » avec valeurs.",
+      "verdict": "reprendre",
+      "evidence": "overview-fix-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Panneaux de télémétrie",
+      "name_en": "telemetry panels",
+      "t": "0:56.0-2:24.0",
+      "frames": "f1680-f4320",
+      "fps": 30,
+      "mechanics": "Petits tableaux sombres translucides en haut à droite (zoom, focale, pan, tilt) dont les chiffres changent. Mono ≈ 1 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "microM-009-move-f1912.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Montage qui accélère",
+      "name_en": "accelerating montage",
+      "t": "1:12.97-1:21.57",
+      "frames": "f2189-f2447",
+      "fps": 30,
+      "mechanics": "Trente-six plans, un par caméra, avec cadres jaunes de recalage sur les marques. Durée des plans de 0,83 s à 0,1 s (3 im), sans calage sur la musique.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 2190, "to": 2448, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Incrustation de l'espace colorimétrique",
+      "name_en": "color-space inset",
+      "t": "1:25.0-1:36.5",
+      "frames": "f2550-f2895",
+      "fps": 30,
+      "mechanics": "Carré sombre ≈ 30 % de la largeur à droite : nuage de points, cercles verts (gazon) et rouges (maillots).",
+      "verdict": "reprendre",
+      "evidence": "overview-fix-08.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Formule à l'écran",
+      "name_en": "on-screen equation",
+      "t": "1:45.0-1:49.0",
+      "frames": "f3150-f3270",
+      "fps": 30,
+      "mechanics": "« p = K · R · (X − C) » dans une pastille mono en bas à gauche : projection d'un point du terrain dans l'image.",
+      "verdict": "reprendre",
+      "evidence": "overview-fix-09.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Décomposition en trois canaux",
+      "name_en": "channel breakdown split",
+      "t": "1:49.0-1:53.57",
+      "frames": "f3270-f3407",
+      "fps": 30,
+      "mechanics": "Trois panneaux verticaux de même largeur : luminance en gris, différence bleue en jaune #8E8E35, différence rouge en cyan #17A3AC, chacun étiqueté.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet masque / rendu",
+      "name_en": "comparison wipe",
+      "t": "1:53.60-1:55.00",
+      "frames": "f3408-f3450",
+      "fps": 30,
+      "mechanics": "Coupe sur la vue masque (pelouse verte = ligne visible, joueurs rouges = ligne masquée). Filet jaune vertical du bord droit (x 97 %) au centre (x 50 %) en ≈ 14 im, ease-out ; à droite, rendu final où la ligne passe sous les joueurs. Partage tenu ≈ 6 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 3404, "to": 3450, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Schéma de chaîne avec retards d'image",
+      "name_en": "pipeline delay diagram",
+      "t": "2:03.0-2:13.0",
+      "frames": "f3690-f3990",
+      "fps": 30,
+      "mechanics": "Moitié basse assombrie, blocs reliés (caméra, retard d'image, incrustateur, antenne, PC de suivi et de rendu), puis bande de timecodes en bas.",
+      "verdict": "adapter",
+      "evidence": "overview-11.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Cas limite pour finir",
+      "name_en": "edge case reveal",
+      "t": "2:25.0-2:36.5",
+      "frames": "f4350-f4695",
+      "fps": 30,
+      "mechanics": "La neige recouvre le terrain en ≈ 2 s (fondu vers #D8DADC), les lignes peintes disparaissent, la ligne calculée reste.",
+      "verdict": "reprendre",
+      "evidence": "overview-13.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bandeau de score",
+      "name_en": "scorebug",
+      "t": "2:37.0-2:47.5",
+      "frames": "f4710-f5023",
+      "fps": 30,
+      "mechanics": "Pastille « 1ST & 10 · BALL ON OWN 25 » en bas à gauche ; tableau « HOME 47 AWAY 13 » dans le stade.",
+      "verdict": "adapter",
+      "evidence": "overview-14.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Marque intégrée au décor",
+      "name_en": "in-world branding",
+      "t": "1:04.5-2:47.0",
+      "frames": "f1935-f5010",
+      "fps": 30,
+      "mechanics": "Pieuvre bleue de l'auteur peinte à la ligne des 50, visible dans des dizaines de plans ; absente du prompt affiché (fournie hors prompt, probable).",
+      "verdict": "adapter",
+      "evidence": "microM-010-cut-f1935.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Musique d'ambiance sans synchro",
+      "name_en": "unsynced music bed",
+      "t": "0:00.0-2:47.5",
+      "frames": "f0-f5023",
+      "fps": 30,
+      "mechanics": "≈ 100 BPM (clarté 3,65). 10 coupes sur 55 à moins de 50 ms d'un temps (le hasard) ; pas de voix, pas de bruitage.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Prompt d'une ligne (« explique comment fonctionne la ligne jaune ») : le modèle choisit seul un documentaire 3D en 12 chapitres, fidèle à la vraie chaîne technique (encodeurs, données sur l'audio, bombement, calibrage, couleurs, retard d'image)."},
+    {"kind": "structure", "insight": "Sans durée imposée, le résultat dure 2 min 48 s avec un chapitre par étape : fixer une durée et un nombre d'idées évite le documentaire exhaustif."},
+    {"kind": "other", "insight": "Sans voix off demandée, l'explication passe par des paragraphes de 30 à 45 mots : le modèle écrit un article et le pose sur des images. Demander une voix off ou limiter le texte à l'écran."},
+    {"kind": "inputs", "insight": "La pieuvre bleue au centre du terrain n'est pas dans le prompt affiché : la marque a probablement été fournie hors prompt."},
+    {"kind": "other", "insight": "Le mot « motion graphics » n'a pas suffi à obtenir du rythme : sans musique ni tempo imposés, aucune coupe n'est calée et 36 % du film est en maintien."}
+  ],
+  "steal": [
+    "Une phrase-thèse par chapitre (« THE FIELD ISN'T FLAT ») : le titre donne la conclusion, l'image la prouve.",
+    "Un seul monde 3D pour toute l'explication ; on y ajoute des couches (maillage, cadres, schémas) au lieu de changer de décor.",
+    "Rendre visible un mécanisme caché par décomposition : trois canaux côte à côte, puis volet masque / rendu final qui se pose au centre.",
+    "Réserver la couleur du sujet (le jaune de la ligne) au mot clé du titre et à rien d'autre.",
+    "Finir par le cas limite (la neige efface la peinture, la ligne reste), puis boucler sur le plan d'ouverture."
+  ],
+  "flaws": [
+    "36 % de maintiens, avec des images strictement figées jusqu'à 3,8 s (34,8-38,6 s ; 39,5-43,2 s).",
+    "Pas de voix off : paragraphes de 30 à 45 mots en ≈ 1,6 % de la hauteur, illisibles sur mobile et en concurrence avec la 3D.",
+    "Musique de fond sans lien avec l'image.",
+    "Une seule transition répétée 13 fois : coupe franche puis titre en fondu 14 im plus tard.",
+    "Personnages et foule low-poly façon jeu vidéo ; panneaux de télémétrie illisibles.",
+    "2 min 48 s pour un réseau social : trop long pour la densité visuelle."
+  ]
+}

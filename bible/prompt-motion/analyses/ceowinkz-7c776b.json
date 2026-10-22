@@ -1,0 +1,556 @@
+{
+  "slug": "ceowinkz-7c776b",
+  "title": "Amazon wholesale pitch video",
+  "handle": "@ceowinkz",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Transitions motivées enchaînées (logo → point → point final, plongée dans le point, fiche → icône, flèche du graphique → logo) calées sur 128 BPM ; habillage HUD générique et frappe répétée.",
+  "summary": "Pitch de 15 s d'un grossiste Amazon (Winkz) adressé aux marques. Récit problème → solution en 5 chapitres numérotés : guerre des prix, prix protégé, achat comptant, fiches refaites, multi-marketplaces, croissance, logo. Fond bleu nuit, accent cyan, rouge pour le problème. La force : chaque passage réutilise un élément du plan précédent (le point, la carte, la flèche), et les coupes tombent sur les temps.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : vidéo de 15 s « dynamique » qui vend la société de gros Amazon Winkz Enterprises à une marque, montrer pourquoi la laisser vendre ses produits, « go all out ».",
+    "Claude a inventé les 5 arguments (prix protégé, commande payée d'avance, fiches refaites, Amazon/Walmart/eBay, croissance), les chiffres (5 000-10 000 $), la DA HUD bleu nuit, les transitions d'objet à objet et la musique à 128 BPM probable.",
+    "Le prompt ne donnait ni arguments réels, ni charte, ni musique : tout est plausible mais inventé (prix, fourchettes). Il aurait fallu fournir logo, couleurs, vrais chiffres et interdire l'habillage HUD décoratif."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0A1A28",
+        "role": "fond bleu nuit (bords, vignette)"
+      },
+      {
+        "hex": "#12324A",
+        "role": "centre du fond en dégradé radial"
+      },
+      {
+        "hex": "#1EB4E6",
+        "role": "accent cyan : logo, point, 2e ligne des titres, lignes, courbe"
+      },
+      {
+        "hex": "#F2F5F7",
+        "role": "titres blancs"
+      },
+      {
+        "hex": "#C3C9CF",
+        "role": "1re ligne grise des titres (« PRICE »)"
+      },
+      {
+        "hex": "#E03A3E",
+        "role": "rouge problème : « SELLERS. », « SLIDING. », carte et marqueurs"
+      },
+      {
+        "hex": "#2FBF71",
+        "role": "vert validation : tampon « PAID UPFRONT », barres de signal, « In Stock »"
+      },
+      {
+        "hex": "#F2A01F",
+        "role": "bouton « Add to Cart » de la fiche"
+      },
+      {
+        "hex": "#F4F6F8",
+        "role": "carte de fiche produit blanche"
+      }
+    ],
+    "type": "Sans humaniste très grasse en capitales (probable Lato Black), titres ≈ 8 % de la hauteur par ligne, 2 lignes : 1re blanche ou grise, 2e colorée. Sous-titres en petites capitales espacées ≈ +20 %. HUD en mono.",
+    "texture": "Halo radial cyan derrière le logo, lueur (glow) sur les cartes et les lignes, poussières flottantes, vignette forte, flou de mouvement directionnel sur les whips et la plongée, flash blanc voilé sur deux coupes.",
+    "style": "HUD fintech bleu nuit néon",
+    "coherence": "Système tenu : même gabarit (titre 2 lignes à gauche, carte à droite), cadre HUD fixe (coins en L, chapitre « 01 PRICE WAR » en haut à gauche, « WINKZ BRANDS × YOUR BRAND » en haut à droite, timecode en bas), code couleur rouge = problème, cyan = Winkz, vert = preuve. Ce qui affaiblit : l'habillage HUD décoratif sans fonction et le même effet de frappe sur chaque titre."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "128,1 BPM (netteté 7,6), un temps = 28,1 im à 60 fps, demi-temps 14 im, premier temps f30. 4 coupes sur 5 à moins de 50 ms d'un temps (médiane 21 ms) : f170, f282, f450, f583/592 ; la 5e (flash du logo f791) arrive 2,6 im après le temps f788. Plans de 1,8 à 3,5 s, mais à l'intérieur quelque chose change toutes les 0,25-0,5 s (frappe, compteur, marqueurs, impulsions sur les lignes). Corrélation basses z = 4,68 (grosse caisse ↔ mouvement). Drop +13,5 dB à 2,15 s pendant l'apparition du sous-titre. Maintiens courts : 12,48-12,97 s (courbe finie, 0,5 s) et le carton final 13,95-14,98 s. Après 9 s, attaques régulières toutes les 14 im (croches) : le fond bouge en continu (impulsions lumineuses) pour tenir ce débit.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.30",
+        "what": "Disque noir, un anneau cyan se trace autour en sens horaire (f0-f18), le W apparaît dedans",
+        "technique": "tracé d'anneau (draw-on)"
+      },
+      {
+        "t": "0:00.45-0:00.70",
+        "what": "La flèche du W pousse vers le haut-droite (f27-f39, temps f30), « WINKZ BRANDS » se décode dessous",
+        "technique": "décodage de texte"
+      },
+      {
+        "t": "0:00.70-0:01.05",
+        "what": "Logo tenu dans un halo radial cyan",
+        "technique": "glow"
+      },
+      {
+        "t": "0:01.05-0:01.20",
+        "what": "Le logo rétrécit et se réduit à un point cyan (f63-f72, demi-temps f72)",
+        "technique": "effondrement en point"
+      },
+      {
+        "t": "0:01.20-0:01.55",
+        "what": "Le point file à gauche en s'étirant (comète) et s'arrête au tiers gauche (temps f86)",
+        "technique": "étirement de vitesse"
+      },
+      {
+        "t": "0:01.55-0:01.90",
+        "what": "Le point repart à droite et écrit « YOUR BRAND » derrière lui, puis devient le point final (f114, temps)",
+        "technique": "point tête d'écriture → point final"
+      },
+      {
+        "t": "0:01.95-0:02.35",
+        "what": "« DESERVES BETTER THAN A PRICE WAR. » se tape en petites capitales",
+        "technique": "frappe machine"
+      },
+      {
+        "t": "0:02.67-0:02.95",
+        "what": "Plongée dans le point : flou horizontal, échelle ×6+, le point cyan remplit l'écran f171 (temps), puis un iris sombre s'ouvre depuis le centre (f172-f177)",
+        "technique": "plongée dans un glyphe + flash couleur + iris"
+      },
+      {
+        "t": "0:03.0-0:03.6",
+        "what": "Chapitre « 01 PRICE WAR » : « TOO MANY SELLERS. » (rouge) ; carte Buy Box rouge « $33.49 · 24 SELLERS »",
+        "technique": "gabarit titre + carte"
+      },
+      {
+        "t": "0:03.6-0:04.7",
+        "what": "« PRICE SLIDING. » ; le prix descend 33,49 → 29,95 → 24,99 → 22,40 ; une trentaine de marqueurs rouges de vendeurs se multiplient autour",
+        "technique": "compteur descendant + prolifération"
+      },
+      {
+        "t": "0:04.70",
+        "what": "Coupe sur flash blanc voilé + onde de choc circulaire autour de la carte (f282, temps)",
+        "technique": "flash + onde de choc"
+      },
+      {
+        "t": "0:04.75-0:04.95",
+        "what": "La carte se retourne de rouge à cyan « $34.99 · SOLD BY WINKZ · PRICE PROTECTED » ; « SLIDING. » s'efface, « PROTECTED. » se tape en cyan",
+        "technique": "retournement de carte (flip)"
+      },
+      {
+        "t": "0:05.0-0:05.55",
+        "what": "« One authorized seller. A clean buy box. » ; maintien court",
+        "technique": "frappe machine"
+      },
+      {
+        "t": "0:05.55-0:05.67",
+        "what": "Tout part à gauche en flou horizontal, la nouvelle carte arrive de la droite (f332-f340, temps f339)",
+        "technique": "panoramique filé (whip pan)"
+      },
+      {
+        "t": "0:05.67-0:06.75",
+        "what": "« 02 CAPITAL » « WE BUY UPFRONT. » ; compteur $0 → $10,000 en ease-out (f352-f404), 10 cubes cyan se remplissent",
+        "technique": "compteur qui roule"
+      },
+      {
+        "t": "0:06.77-0:06.83",
+        "what": "Tampon vert « PAID UPFRONT » qui s'écrase en 4 im (f404-f408), incliné ≈ -8°",
+        "technique": "tampon (stamp slam)"
+      },
+      {
+        "t": "0:07.43-0:07.52",
+        "what": "Faisceau de lumière cyan en diagonale balaie le cadre, coupe f450 (temps) sur la fiche produit grise « BEFORE »",
+        "technique": "volet de lumière (light sweep)"
+      },
+      {
+        "t": "0:07.55-0:07.95",
+        "what": "« 03 LISTINGS » « LISTINGS, REBUILT. » se tape en haut au centre",
+        "technique": "frappe machine"
+      },
+      {
+        "t": "0:08.0-0:09.0",
+        "what": "Une barre verticale cyan lumineuse balaie la fiche de gauche à droite et la transforme : photos nettes, titre, prix, « Add to Cart », liste cochée ; badge « BEFORE » → « AFTER »",
+        "technique": "scanner avant/après"
+      },
+      {
+        "t": "0:09.65-0:09.87",
+        "what": "La fiche rétrécit avec flou vers la gauche et devient l'icône « YOUR BRAND » (f579-f592, temps f592)",
+        "technique": "objet qui devient icône"
+      },
+      {
+        "t": "0:09.88-0:10.1",
+        "what": "« 04 CHANNELS » : cartes Amazon, Walmart, eBay apparaissent à 4 im d'écart par mise au point, lignes courbes tracées depuis l'icône ; « ONE PARTNER. EVERY MARKETPLACE. »",
+        "technique": "arbre de connexions + stagger"
+      },
+      {
+        "t": "0:10.1-0:11.7",
+        "what": "Impulsions lumineuses voyagent sur les lignes, barres de signal vertes se remplissent",
+        "technique": "flux lumineux sur tracés"
+      },
+      {
+        "t": "0:11.70-0:11.80",
+        "what": "La scène s'éteint en fondu (f702-f708, temps f704)",
+        "technique": "fondu au fond"
+      },
+      {
+        "t": "0:11.85-0:12.47",
+        "what": "« 05 SCALE » « LET'S SCALE YOUR BRAND. » se tape ; une tête de flèche trace une courbe de croissance avec aire en dégradé (M01-M08)",
+        "technique": "courbe tracée par la flèche"
+      },
+      {
+        "t": "0:12.48-0:12.97",
+        "what": "Maintien sur la courbe complète",
+        "technique": "temps de lecture"
+      },
+      {
+        "t": "0:12.97-0:13.15",
+        "what": "Titre et courbe tombent avec flou vertical, seule la tête de flèche reste et monte au centre",
+        "technique": "élément rescapé"
+      },
+      {
+        "t": "0:13.18-0:13.47",
+        "what": "Flash + anneau ; la flèche devient celle du W, « Winkz » se construit de gauche à droite (f792-f808)",
+        "technique": "flèche du graphique → flèche du logo"
+      },
+      {
+        "t": "0:13.5-0:15.0",
+        "what": "« BRANDS », filet, « Your growth partner on Amazon, Walmart and eBay. », URL décodée",
+        "technique": "carton de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 128,1 BPM (temps tous les 28,1 im, demi-temps 14 im, premier temps f30). Un événement clé par geste : flèche du W f30 (temps 29,7) ✓ ; logo réduit en point f72 (demi-temps 71,9) ✓ ; point qui devient point final f112-114 (temps 114) ✓ ; départ du sous-titre f117 ✗ ; écran rempli de cyan f171 (barre bleue f170) ✓ ; départ « TOO MANY SELLERS » f183 (barre bleu clair f184) ✓ ; prix 24,99 → 22,40 f268-269 (barre bleu clair f269) ✓ ; flash f282 (barre bleue f283) ✓ ; carte retournée posée f295-296 (barre bleu clair f297) ✓ ; nouvelle carte du whip f338-340 (temps 338,9) ✓ ; départ du compteur f352 (demi-temps 352,9) ✓ ; compteur à 10 000 f404 ✗ ; tampon écrasé f406-408 (attaque 406,1, demi-temps 409) ✓ ; coupe du faisceau f450 (barre bleue f451) ✓ ; fiche posée en icône f591-592 (barre bleue f592, point vert f591) ✓ ; fondu de sortie f704 (temps 704,2) ✓ ; flèche de la courbe arrivée f748 (demi-temps 746) ✓ ; flash du logo f791 (temps 788,4, +2,6 im) ✗ ; logo complet f808 ✗. Total : 15 gestes clés sur 19 à ±2 im d'une barre, contre ≈ 36 % au hasard (fenêtre 5 im sur 14). Décalage typique 0 à +1 im. Les ratés sont des fins de geste (compteur, logo), pas des départs ni des coupes. Corrélation basses z = 4,68 confirme.",
+    "synced": [
+      "coupes",
+      "flashs",
+      "impacts",
+      "apparitions",
+      "texte",
+      "departs"
+    ],
+    "style_match": "Électro à 128 BPM, énergique et régulière : colle au registre fintech néon, aux whips et aux flashs secs ; les ease-out rapides suivent la pulsation house.",
+    "how_built": "Le prompt ne parle pas de musique. Coupes à 21 ms des temps en médiane, attaque sur le tampon et sur l'icône : bande-son très probablement générée en code avec une grille fixe (128 BPM, premier temps 0,495 s) sur laquelle Claude a placé coupes et impacts, avec des effets ponctuels (impact du tampon). Possible aussi : piste choisie puis animations calées sur sa grille."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Anneau tracé autour du logo",
+      "name_en": "ring draw-on logo reveal",
+      "t": "0:00-0:00.70",
+      "frames": "f0-f42",
+      "fps": 60,
+      "mechanics": "Disque noir ≈ 25 % de la hauteur au centre. Un trait cyan (#1EB4E6 → blanc en dégradé, épaisseur ≈ 1,5 % de la hauteur) se trace en sens horaire depuis le bas : ≈ 1/4 à f3, 3/4 à f12, fermé à f18 ; ease-out. Le W apparaît par segments f9-f21, sa flèche pousse f27-f39 (temps f30). Halo radial cyan diffus ≈ 2× le disque. « WINKZ BRANDS » se décode en petites capitales dessous (f33-f42).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Logo réduit en point qui écrit le titre et en devient le point final",
+      "name_en": "logo-to-dot write-on period",
+      "t": "0:01.05-0:01.90",
+      "frames": "f63-f114",
+      "fps": 60,
+      "mechanics": "Le logo rétrécit de ≈ 25 % à ≈ 8 % de la hauteur en perdant son anneau (f63-f69), puis n'est plus qu'un point cyan ≈ 1,5 % (f72, demi-temps). Le point file vers la gauche en s'étirant en ellipse (comète, f75-f84), s'arrête à ≈ 13 % de la largeur (f84-f93), repart à droite : les lettres de « YOUR BRAND » apparaissent derrière lui à mesure qu'il passe (f96-f111), il s'étire en vol et redevient rond en se posant comme point final (f111-f114, temps f114). Un seul objet relie le logo au titre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 63,
+        "to": 114,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe machine sur chaque titre",
+      "name_en": "typewriter type-on",
+      "t": "0:01.95-0:12.47",
+      "frames": "f117-f748",
+      "fps": 60,
+      "mechanics": "Tous les titres et sous-titres apparaissent lettre par lettre de gauche à droite, ≈ 1 lettre par 1-2 im (« DESERVES BETTER THAN A PRICE WAR. » ≈ 24 im ; « TOO MANY SELLERS. » ≈ 15 im), lettres qui montent légèrement de la ligne de base avec un fondu. Sortie : effacement lettre par lettre depuis la gauche (« SLIDING. » f282-f286, « LISTINGS, REBUILT. » f585-f594). Utilisé 10 fois : efficace mais répétitif.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg, microM-002-cut-f282.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le point final, flash cyan, iris inversé",
+      "name_en": "dive into the period",
+      "t": "0:02.67-0:02.95",
+      "frames": "f160-f177",
+      "fps": 60,
+      "mechanics": "Zoom avant accéléré (ease-in) sur le point de « YOUR BRAND. » avec flou de mouvement horizontal croissant : léger à f160, lettres traînées à f162-f164, « ND. » géant à f167, le point ≈ 30 % de la hauteur à f169, ≈ 70 % à f170, écran entièrement cyan #1EB4E6 à f171 (barre bleue f170). Puis un disque sombre à bord doux s'ouvre depuis le centre : ≈ 10 % à f172, ≈ 50 % à f173, ≈ 100 % à f175, la nouvelle scène est là à f177. 17 im au total, 1 image de couleur pleine.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f167.jpg",
+      "illus": {
+        "from": 158,
+        "to": 178,
+        "n": 8
+      }
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit titre deux lignes + carte",
+      "name_en": "two-line headline with side card",
+      "t": "0:03.0-0:09.65",
+      "frames": "f180-f579",
+      "fps": 60,
+      "mechanics": "Titre à gauche (≈ 5 % du bord, centré verticalement) : ligne 1 blanche ou grise #C3C9CF, ligne 2 colorée selon le sens (rouge #E03A3E problème, cyan #1EB4E6 solution), ≈ 8 % de la hauteur chacune, point final coloré. Sous-titre blanc fin ≈ 2 %. Carte d'interface à droite (≈ 30 % de la largeur, ≈ 50-75 % de la largeur), bord lumineux. Repris sur 4 scènes.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Prix qui glisse et vendeurs qui prolifèrent",
+      "name_en": "falling price with spawning markers",
+      "t": "0:03.0-0:04.70",
+      "frames": "f180-f282",
+      "fps": 60,
+      "mechanics": "Carte « BUY BOX » rouge : le prix descend par paliers (33,49 → 29,95 → 24,99 → 22,40 $), « ▼ 14 % → 36 % AND FALLING », compteur de vendeurs 24 → 39. Les chiffres roulent avec flou vertical en ≈ 2-3 im ; un palier tombe sur le demi-temps f269. Autour, des marqueurs rouges cerclés avec un petit prix (≈ 1 % de la hauteur) apparaissent un par un jusqu'à ≈ 30, dispersés dans la moitié droite. Lueur rouge de la carte qui s'intensifie.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-cut-f282.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur problème / solution / preuve",
+      "name_en": "semantic color coding",
+      "t": "0:03.0-0:13.0",
+      "frames": "f180-f780",
+      "fps": 60,
+      "mechanics": "Rouge #E03A3E = concurrence et chute (mot, carte, marqueurs). Bascule en cyan #1EB4E6 au moment exact de la solution (f282-f296). Vert #2FBF71 réservé aux preuves (tampon « PAID UPFRONT », coche « PRICE PROTECTED », barres de signal, « In Stock »). Fond bleu nuit constant : le rouge ne dure que 1,7 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash voilé et onde de choc sur la coupe",
+      "name_en": "flash with shockwave ring",
+      "t": "0:04.70-0:04.80",
+      "frames": "f282-f288",
+      "fps": 60,
+      "mechanics": "À f282 (barre bleue f283) un voile blanc-gris ≈ 60 % d'opacité couvre l'image, avec un anneau concentrique clair centré sur la carte (≈ 30 % de la hauteur). Le voile retombe en ≈ 5 im (f283-f287) pendant que l'anneau s'agrandit vers ≈ 80 % de la hauteur et s'estompe. Marque le retournement problème → solution.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f282.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Retournement de carte rouge → cyan",
+      "name_en": "card flip state change",
+      "t": "0:04.75-0:04.95",
+      "frames": "f285-f296",
+      "fps": 60,
+      "mechanics": "La carte rouge se comprime horizontalement (rotation Y) jusqu'à une tranche verticale ≈ 2 % de la largeur (f286-f290), puis la face cyan s'ouvre « $34.99 · SOLD BY WINKZ · ✓ PRICE PROTECTED · ONE CLEAN SELLER » (f291-f296), ease-in puis ease-out, ≈ 5 im par moitié. Les marqueurs rouges disparaissent pendant le flip. Posée sur la barre bleu clair f297.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f282.jpg",
+      "illus": {
+        "from": 281,
+        "to": 297,
+        "n": 6
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique filé vers la gauche",
+      "name_en": "whip pan",
+      "t": "0:05.55-0:05.67",
+      "frames": "f332-f340",
+      "fps": 60,
+      "mechanics": "Tout le contenu (titre + carte) glisse vers la gauche avec un fort flou directionnel horizontal : décalage ≈ 10 % à f334, sorti à f336 (traînées). La nouvelle carte « OPENING ORDER » arrive de la droite floue à f338 et se pose à f340 (temps 338,9). 8 im, ease-in-out, cadre HUD fixe pendant le mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule jusqu'à 10 000 $",
+      "name_en": "rolling odometer counter",
+      "t": "0:05.87-0:06.73",
+      "frames": "f352-f404",
+      "fps": 60,
+      "mechanics": "Chiffres à la façon d'un compteur kilométrique : les deux derniers chiffres floutés verticalement en roulement permanent, les premiers se figent. Valeurs : 2 8xx (f354), 6 8xx (f360), 8 6xx (f366), 9 5xx (f374), 9 8xx (f382), 10 9xx en transition (f390), 10 000 (f404). Ease-out marqué : 70 % de la valeur en 8 im, les 30 % restants en 44 im. Départ sur le demi-temps f353. Dessous, 10 cubes cyan isométriques s'allument un par un (f356-f372), barre de progression cyan.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 350,
+        "to": 406,
+        "n": 8
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tampon « PAID UPFRONT » écrasé",
+      "name_en": "stamp slam",
+      "t": "0:06.73-0:06.80",
+      "frames": "f404-f408",
+      "fps": 60,
+      "mechanics": "Rectangle arrondi vert #2FBF71 en contour avec texte capitales, incliné ≈ -8°, posé en bas à droite de la carte. Arrive à ≈ ×1,6 avec flou (f404-f406) et se pose à ×1,0 à f408, sans dépassement visible, 4 im. Attaque audio à 406,1 (effet sonore probable), demi-temps 409.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-003-cut-f450.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Faisceau de lumière en diagonale",
+      "name_en": "diagonal light sweep",
+      "t": "0:07.43-0:07.55",
+      "frames": "f446-f453",
+      "fps": 60,
+      "mechanics": "Une bande cyan saturée à bords doux, inclinée ≈ 60°, large ≈ 25 % du cadre, entre par la gauche à f446 et traverse en ≈ 6 im ; la nouvelle scène (fiche produit grise) est révélée derrière la bande. Coupe franche f450 (barre bleue f451) au milieu du passage, bande sortie à f452-f453. Effet de « reflet » qui sert de volet.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f450.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Scanner avant / après",
+      "name_en": "before/after scan wipe",
+      "t": "0:08.0-0:09.0",
+      "frames": "f480-f540",
+      "fps": 60,
+      "mechanics": "Une barre verticale cyan lumineuse (≈ 2 % de la largeur, glow) balaie la fiche produit de gauche à droite en ≈ 60 im, quasi linéaire. À gauche de la barre la fiche est déjà « après » (bouteilles bleues nettes, titre « Insulated Steel Bottle, 16 oz, 2 Pack », prix, bouton orange « Add to Cart », 4 coches vertes) ; à droite elle reste « avant » (photo floue grise, titre mal écrit, croix rouges). Badge « BEFORE » → « AFTER ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La fiche se réduit et devient l'icône de la marque",
+      "name_en": "card shrinks into icon",
+      "t": "0:09.65-0:09.87",
+      "frames": "f579-f592",
+      "fps": 60,
+      "mechanics": "La fiche (≈ 45 % de la largeur) rétrécit vers la gauche-bas avec flou de mouvement : ≈ 35 % à f583, ≈ 20 % à f587, ≈ 8 % à f589, et se change en icône carrée arrondie cyan avec silhouette de bouteille (≈ 7 % de la hauteur) à f591-f592 (barre bleue f592, attaque f591). 13 im, ease-in-out. Le titre s'efface en même temps. Le produit devient « YOUR BRAND », nœud du schéma suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f586.jpg",
+      "illus": {
+        "from": 578,
+        "to": 594,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arbre de connexions vers les marketplaces",
+      "name_en": "branching connector lines",
+      "t": "0:09.88-0:11.7",
+      "frames": "f593-f702",
+      "fps": 60,
+      "mechanics": "Depuis l'icône, trois courbes de Bézier cyan fines se tracent vers trois cartes (Amazon, Walmart, eBay) empilées à droite (≈ 15 % de la largeur chacune). Cartes en stagger de 4 im (f593, f597, f601), chacune entrant floue puis nette (mise au point). Ensuite de petites impulsions lumineuses parcourent les lignes en boucle et des barres de signal vertes se remplissent : mouvement continu pendant 1,8 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f586.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe de croissance tracée par une tête de flèche",
+      "name_en": "arrow-led growth line",
+      "t": "0:11.85-0:12.47",
+      "frames": "f711-f748",
+      "fps": 60,
+      "mechanics": "Une tête de flèche cyan part du bas gauche (≈ 2 % de la largeur, f710) et trace une courbe lissée vers le haut droit, en déposant des points-jalons (8 mois M01-M08) ; aire sous la courbe en dégradé cyan → transparent. ≈ 37 im, accélération progressive (la pente et la vitesse augmentent à la fin, ease-in). Arrivée en haut à droite f748 (demi-temps 746). Titre « LET'S SCALE / YOUR BRAND. » tapé en parallèle.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La flèche du graphique devient la flèche du logo",
+      "name_en": "graph arrow to logo match",
+      "t": "0:12.97-0:13.47",
+      "frames": "f778-f808",
+      "fps": 60,
+      "mechanics": "Titre et courbe tombent vers le bas avec flou vertical (f781-f784). Seule la tête de flèche reste, monte au centre-haut (f784-f790). Flash voilé + anneau à f791 (2,6 im après le temps 788). La flèche s'allonge en jambe droite du W (f792-f795), la jambe gauche cyan apparaît (f796-f797), puis « in » (f799-f801) et « kz » (f801-f808) se construisent de gauche à droite. Logo ≈ 60 % de la largeur. Boucle avec l'ouverture (flèche du W).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f791.jpg",
+      "illus": {
+        "from": 778,
+        "to": 808,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Décodage de texte façon terminal",
+      "name_en": "glyph scramble decode",
+      "t": "0:00.55-0:00.70 / 0:14.0-0:14.5",
+      "frames": "f33-f42 / f840-f870",
+      "fps": 60,
+      "mechanics": "Petites capitales espacées (« WINKZ BRANDS », « WINKZENTERPRISES.COM ») qui apparaissent en caractères aléatoires (« WI3E>Y<H » à f840) avant de se fixer sur le bon texte de gauche à droite en ≈ 10-30 im.",
+      "verdict": "cliche",
+      "evidence": "overview-03.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Habillage HUD permanent",
+      "name_en": "HUD overlay frame",
+      "t": "0:03.0-0:13.0",
+      "frames": "f180-f780",
+      "fps": 60,
+      "mechanics": "Cadre fixe : coins en L fins aux 4 coins (≈ 3 % de marge), en haut à gauche « ◦ 01 PRICE WAR » / « 02 CAPITAL » / « 03 LISTINGS » / « 04 CHANNELS » / « 05 SCALE » en mono, en haut à droite « ◎ WINKZ BRANDS × YOUR BRAND », en bas à gauche un timecode qui défile, en bas à droite une barre de progression en tirets cyan. Texte ≈ 1 % de la hauteur, illisible en lecture normale. Donne une structure mais relève du décor « IA tech ».",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond bleu nuit radial avec poussières",
+      "name_en": "radial navy backdrop with dust",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Dégradé radial #12324A au centre → #0A1A28 aux bords, vignette forte, fines poussières claires qui dérivent lentement, légère texture de bruit. Halo cyan local derrière le logo d'ouverture et de fin. Fond constant sur tous les chapitres : la couleur porte le sens, pas le fond.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Pitch problème → solution en 5 arguments numérotés",
+      "name_en": "numbered problem-solution pitch",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Logo (1,2 s) → accroche « YOUR BRAND. Deserves better than a price war. » (1,5 s) → problème (01, 1,9 s) → solution (prix protégé, 0,9 s) → 02 achat comptant (1,8 s) → 03 fiches refaites (2,2 s) → 04 multi-marketplaces (1,8 s) → 05 croissance (1,3 s) → logo + promesse + URL (1,8 s). Chaque argument = un titre de 2-3 mots + une preuve visuelle chiffrée. Le logo ouvre et ferme (boucle par la flèche).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes et flashs sur le temps",
+      "name_en": "beat-locked cuts and flashes",
+      "t": "0:02.85 / 0:04.70 / 0:05.65 / 0:07.50 / 0:09.87",
+      "frames": "f171 / f282 / f339 / f450 / f592",
+      "fps": 60,
+      "mechanics": "Les cinq grands changements de scène tombent sur des temps pleins (barres bleues f170, f283, f339, f451, f592), à 0-1 im : image de couleur pleine, flash voilé, arrivée du whip, coupe du faisceau, icône posée. Le geste est construit pour que son image la plus forte (couleur pleine, flash, pose) soit sur le temps, le mouvement le précède de 6-17 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f167.jpg, microM-002-cut-f282.jpg, microM-003-cut-f450.jpg, microM-004-move-f586.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Détails calés sur les demi-temps",
+      "name_en": "half-beat micro events",
+      "t": "0:01.20 / 0:03.05 / 0:04.48 / 0:04.93 / 0:05.87",
+      "frames": "f72 / f183 / f269 / f296 / f352",
+      "fps": 60,
+      "mechanics": "Les petits événements tombent entre les temps : logo réduit en point (f72), départ du titre « TOO MANY SELLERS » (f183), palier de prix (f269), carte retournée posée (f296), départ du compteur (f352), tampon (f408, sur une attaque d'effet sonore). La densité double (un événement toutes les 14 im) sans que les coupes quittent le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f167.jpg, microM-002-cut-f282.jpg, extra-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt ne fournit ni logo, ni couleurs, ni arguments, ni chiffres : Claude a dessiné un logo W à flèche, inventé « Winkz Brands », 5 arguments et des chiffres plausibles (5 000-10 000 $ de commande). À réutiliser seulement si l'on remplace tout par du vrai."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Dynamic » + « go all out » ont produit un rythme dense (un changement toutes les 0,25-0,5 s), des whips et des flashs, et l'esthétique « tech HUD » par défaut des vidéos IA."
+    },
+    {
+      "kind": "structure",
+      "insight": "« show why they should let us sell their products » a donné une structure d'argumentaire numérotée (01 à 05) avec preuve visuelle par argument : une bonne consigne de pitch en une phrase."
+    },
+    {
+      "kind": "build",
+      "insight": "Aucune mention de musique, pourtant les coupes tombent à 21 ms des temps : Claude a probablement généré la piste en code avec une grille fixe à 128 BPM et calé les transitions dessus."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien n'interdisait l'habillage HUD (coins, timecode, labels mono) ni le décodage de caractères : préciser « pas de HUD décoratif, pas d'effet de décodage » pour sortir du cliché."
+    }
+  ],
+  "steal": [
+    "Garder un objet d'un plan à l'autre : le logo devient un point qui écrit le titre puis en devient le point final.",
+    "Plonger dans le point final jusqu'à l'image de couleur pleine sur le temps, puis ouvrir un iris sombre sur la scène suivante (17 im).",
+    "Changer l'état d'une carte par un retournement en Y (5 im + 5 im) avec bascule de couleur problème → solution.",
+    "Fermer la vidéo en recyclant l'élément du dernier plan : la flèche de la courbe de croissance devient la flèche du logo.",
+    "Placer l'image la plus forte (couleur pleine, flash, pose) sur le temps et les petits événements sur les demi-temps."
+  ],
+  "flaws": [
+    "Habillage HUD décoratif (coins, timecode, labels mono minuscules) : cliché de vidéo IA « tech », sans information.",
+    "Même effet de frappe lettre à lettre sur 10 titres : la typographie cinétique ne varie jamais.",
+    "Texte des cartes et des marqueurs à ≈ 1 % de la hauteur : illisible au rythme de la vidéo.",
+    "Décodage de caractères aléatoires sur le nom et l'URL : effet « hacker » générique.",
+    "Arguments et chiffres entièrement inventés par le modèle à partir d'un prompt d'une ligne."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Chaîne de transitions par objet conservé (logo → point → point final → plongée → iris ; fiche → icône ; flèche → logo) et synchro réelle à 128 BPM : à étudier image par image à 60 fps pour reproduire les courbes et les placements sur temps / demi-temps."
+  }
+}

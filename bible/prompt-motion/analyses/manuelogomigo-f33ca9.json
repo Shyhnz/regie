@@ -1,0 +1,451 @@
+{
+  "slug": "manuelogomigo-f33ca9",
+  "title": "Flowdrive motion showreel",
+  "handle": "@manuelogomigo",
+  "family": "produit",
+  "craft": 5,
+  "craft_reason": "Niveau agence : chaque transition naît d'un objet de la scène, motif de trame de points tenu de bout en bout, serif élégante ; bémols : synchro relâchée après 5 s et URL figée 0,8 s.",
+  "summary": "Pub produit pour Flowdrive (hébergement vidéo pour Webflow) racontée par un seul fichier : il est déposé, téléversé, diffusé en 4K, livré sur un globe, protégé sur votre domaine, servi sans limite puis intégré à Webflow, avant que tout soit aspiré dans le logo. Chaque transition naît d'un objet (barre, cadenas, ligne, point) et un motif de trame de points tient l'ensemble. Synchro serrée au début seulement.",
+  "prompt_vs_result": [
+    "Le prompt « showreel » standard d'une ligne (15 s, « go all out ») avec un seul ajout : « for a flowdrive ». Ni fonctions, ni palette, ni structure, ni musique.",
+    "Tout : récit en six fonctions autour d'un même fichier, motif de trame de points, palette crème-orange-noir, titres serif, chaîne de transitions par objets (barre, bandes, poussée, iris, ligne, tourbillon), compteurs, globe et carte de fin tapée.",
+    "Une ligne a suffi parce que le contexte produit était riche (fonctions et URL réelles, probablement lues dans le projet du créateur). Il manquait le tempo à tenir après 5 s et l'interdiction des maintiens > 0,5 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F3F1EC", "role": "fond crème des scènes claires (upload, domaine, Webflow, fin)"},
+      {"hex": "#E8501C", "role": "orange de marque : accent, plein cadre de transition, icône"},
+      {"hex": "#0B0908", "role": "noir chaud des scènes stream et globe"},
+      {"hex": "#FF7A2E", "role": "orange lumineux des lueurs, particules et villes"},
+      {"hex": "#1C1A18", "role": "titres et mot-symbole sur fond clair"},
+      {"hex": "#9A958E", "role": "texte secondaire, HUD, trame de points grise"},
+      {"hex": "#F8E3DA", "role": "rose-orangé de la zone de dépôt active et des halos"},
+      {"hex": "#22C55E", "role": "vert de la coche 100 % et du cadenas fermé"},
+      {"hex": "#FFFFFF", "role": "comète et titres sur fond orange"}
+    ],
+    "type": "Titres en serif de texte regular (Newsreader/Tiempos probable), casse phrase à point final, ≈ 7 % de la hauteur ; libellés capitales orange espacées ≈ 1 % ; chiffres serif, « % » orange ; mot-symbole sans géométrique medium ; URL en mono.",
+    "texture": "Lueurs (glow) orange sur fond noir, flou de mouvement sur le curseur, la poussée et le tourbillon, bords flous des masques et de l'iris, trame de points omniprésente, une image de tramage hachuré (dither), ombres portées très douces sous les cartes claires. Pas de grain.",
+    "style": "Éditorial serif et trame orange",
+    "coherence": "Un seul atome graphique (le point de trame) décliné partout, une seule couleur d'accent, une seule serif pour les titres et un gabarit de scène répété (libellé capitales, titre à point final, visuel-métaphore). Chaque transition naît d'un objet de la scène (barre, cadenas, ligne, point). Seule scène plus faible : la maquette Webflow, générique."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Même piste à 128 BPM que kyonax-on-tech-aabc1d (volume identique après ≈ 4 s, attaque maximale à 13,142 s) ; l'intro diffère et le détecteur a pris les contretemps pour des temps (grille à 0,252 s) : sur les planches, barre bleue = contretemps, bleu clair = temps de grosse caisse. Coupes détectées : f219/f224 (barre qui devient l'écran, plein orange f225, 1 im avant le temps 3,774 s), f445 (milieu de la poussée, entre deux temps ; départ f437 sur le contretemps, arrivée ≈ f451 sur le temps), f557/f561 (iris, plein orange f563 sur le temps), f666 (compression, hors grille), f752 (tramage, hors grille). Densité : une scène toutes les 1,5 à 2 s, un geste toutes les 0,25 à 0,5 s dans le premier tiers. Temps morts : URL figée 7,63–8,43 s (0,8 s, le seul vrai) ; globe 6,12–7,27 s et carte de fin 13,72–14,98 s restent animés par la rotation, les arcs et la frappe.",
+    "timeline": [
+      {"t": "0:00-0:00.25", "what": "fond crème vide avec HUD discret", "technique": "ouverture en blanc"},
+      {"t": "0:00.25-0:00.55", "what": "un point orange, puis un anneau de trame de points qui s'étend jusqu'aux bords", "technique": "pulsation de trame (halftone)"},
+      {"t": "0:00.55-0:00.95", "what": "les points convergent en icône de fichier avec triangle lecture ; « hero-film.mp4 » se décode", "technique": "convergence de points + décodage"},
+      {"t": "0:00.97-0:01.90", "what": "curseur, zone de dépôt qui glisse, fichier incliné puis balancé et déposé sur le temps", "technique": "glisser-déposer avec anticipation"},
+      {"t": "0:01.90-0:02.15", "what": "la carte s'écrase en barre de progression en trame de points ; « Upload anything. » monte", "technique": "morphing carte → barre"},
+      {"t": "0:02.15-0:03.32", "what": "compteur 1 % → 100 %, tête lumineuse, coche verte sur le temps", "technique": "compteur ease-in-out"},
+      {"t": "0:03.48-0:03.75", "what": "la barre pleine grandit jusqu'à remplir l'écran d'orange", "technique": "objet qui devient le fond"},
+      {"t": "0:03.75-0:04.10", "what": "orange tenu 5 im, vignettage, bandes horizontales qui se retirent sur la scène noire", "technique": "volets en bandes décalées"},
+      {"t": "0:04.00-0:05.30", "what": "« Stream in 4K. » + pile isométrique de couches 1440p→480p posées sur les demi-temps", "technique": "pile isométrique au demi-temps"},
+      {"t": "0:05.30-0:06.00", "what": "la couche du haut s'évapore en particules qui dessinent le globe ; « Delivered everywhere. »", "technique": "particules → globe"},
+      {"t": "0:06.00-0:07.28", "what": "globe en trame qui tourne, villes et arcs, compteur jusqu'à « 200+ edge locations »", "technique": "compteur ease-out + arcs"},
+      {"t": "0:07.28-0:07.60", "what": "la scène claire pousse la scène noire avec flou directionnel", "technique": "poussée fouettée (whip push)"},
+      {"t": "0:07.55-0:08.45", "what": "« Your domain. » + URL qui se décode dans un champ d'adresse, puis maintien", "technique": "décodage de caractères"},
+      {"t": "0:08.45-0:09.18", "what": "cadenas vert sur le temps, « Locked down. », six puces de sécurité en cascade", "technique": "changement d'état + cascade"},
+      {"t": "0:09.18-0:09.40", "what": "le cadenas devient un disque orange qui envahit le cadre", "technique": "iris depuis une icône"},
+      {"t": "0:09.42-0:10.95", "what": "une comète trace un ruban infini ; « Unlimited bandwidth. » lettre à lettre", "technique": "tracé de comète + révélation de lettres"},
+      {"t": "0:10.95-0:11.45", "what": "l'infini s'aplatit, l'orange se comprime en ligne qui devient le cadre du navigateur", "technique": "compression en ligne → cadre"},
+      {"t": "0:11.35-0:12.53", "what": "« Built for Webflow. » + maquette de site d'agence avec vidéo en trame", "technique": "maquette d'interface"},
+      {"t": "0:12.53-0:13.00", "what": "tramage hachuré puis tourbillon qui aspire l'écran en un point", "technique": "aspiration en tourbillon"},
+      {"t": "0:13.00-0:13.13", "what": "point rouge immobile pendant le creux de la musique", "technique": "respiration avant le coup"},
+      {"t": "0:13.13-0:13.50", "what": "anneau et icône Flowdrive qui jaillissent sur l'attaque la plus forte", "technique": "onde annulaire + pop d'icône"},
+      {"t": "0:13.50-0:14.10", "what": "l'icône rétrécit et glisse à gauche, « Flowdrive » lettre par lettre", "technique": "mot-symbole en cascade"},
+      {"t": "0:14.10-0:15.06", "what": "tagline et « TRYFLOWDRIVE.COM » tapés, maintien final", "technique": "carte de fin tapée"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Union temps + demi-temps (la grille du dossier est décalée d'un demi-temps) : 18 gestes clés sur 31 à ±2 im (58 %, hasard ≈ 36 %). Répartition nette. 0–5,3 s : 11 sur 12, au pas exact de 28 im : curseur f58, balancement f86, dépôt f114, 100 % f199, plein orange f225 (temps f57,8 / 85,9 / 114,0 / 198,4 / 226,4), titre f129 et « Stream » f240 (demi-temps), couches f269, f283, f297 (un demi-temps chacune) ; seul raté : vignettage f230. 5,3–15 s : 7 sur 19 (37 %, niveau du hasard) ; restent calés le départ de la poussée f437 (demi-temps) et son arrivée ≈ f451 (temps), le cadenas vert f507, l'iris f551 → plein f563, la comète f565, la compression f660 (−2 im), l'icône f788 sur l'attaque 13,142 s, et la tagline f846. Hors grille : passage au globe f320, titre f345, compteur f358 et « 200+ » f398, « Unlimited » f570, cadre f681, contenu du site f699, tramage f752, tourbillon f757-f779, glissement de l'icône f811, mot-symbole f819, URL f864. L'image tombe 0 à 1,4 im avant le temps. Indice automatique : départs/temps p = 2e-4 mais corrélation aux attaques faible (z = 1,29).",
+    "synced": ["departs", "impacts", "apparitions", "atterrissages", "drop"],
+    "style_match": "Même house enjouée à 128 BPM que kyonax : énergie franche, animation plus souple et éditoriale (serif, ease-out doux) ; ça colle au début et au coup final, moins au milieu.",
+    "how_built": "Prompt d'une ligne, sans musique ni tempo. La bande-son est la même que dans au moins deux autres vidéos de ce prompt (kyonax-on-tech-aabc1d, johnsavage-ai-b091c0, même attaque maximale à 13,142 s) : piste probablement fournie avec le défi ou l'outil, donc connaissable d'avance. Le premier tiers au pas exact de 28 im (1 temps à 128 BPM) et l'icône posée sur l'attaque 13,142 s après un point immobile pendant le creux suggèrent des repères écrits sur la piste ; le milieu, aux scènes de 1,5 à 2 s non multiples du temps, dérive (probable minutage en secondes)."
+  },
+  "techniques": [
+    {
+      "cat": "particles",
+      "name_fr": "Onde de trame de points qui part d'un point",
+      "name_en": "halftone ring pulse",
+      "t": "0:00.25-0:00.55",
+      "frames": "f15-f33",
+      "fps": 60,
+      "mechanics": "f15 un point orange (≈ 1 % de la hauteur) au centre ; dès f18 un anneau de points de trame (halftone) jaillit : rayon ≈ 8 % de la hauteur (f18), 18 % (f21), 30 % (f24), 40 % (f27), 48 % (f30), bords du cadre à f33. Points gros et orange sur le front de l'onde, fins et gris derrière. 15 im (0,25 s), ease-out (pic d'énergie f26). Départ sur le demi-temps f15,7.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Les points convergent et dessinent l'icône de fichier",
+      "name_en": "dot convergence into icon",
+      "t": "0:00.55-0:00.95",
+      "frames": "f33-f57",
+      "fps": 60,
+      "mechanics": "Au centre, un amas de points (f33) devient un disque (f36, ≈ 12 % de la hauteur) puis la silhouette d'un document à coin replié (f39, ≈ 25 %) ; le triangle « lecture » blanc se découpe à f45-f48. 15 im (0,25 s). Dessous, « hero-film.mp4 » se décode depuis des caractères aléatoires (f51-f57) et « 2.4 GB · 4K » apparaît : le fichier devient le personnage du film.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Glisser-déposer avec anticipation et balancement",
+      "name_en": "drag-and-drop with anticipation",
+      "t": "0:00.97-0:01.90",
+      "frames": "f58-f114",
+      "fps": 60,
+      "mechanics": "f58 (temps f57,8) : le curseur entre en bas à droite avec flou de mouvement, la zone « Drop files to upload » glisse depuis la droite (≈ 10 im, ease-out). Le curseur saisit le fichier ; anticipation : inclinaison ≈ −15° (f81-f84), balancement rapide et flou vers la zone (pic f87, temps f85,9), arrivée inclinée (f90), la zone se teinte en rose-orangé (f93), le fichier se redresse (f96). Dépôt f114, sur le temps : le triangle disparaît, le fichier devient une trame fine. Trois gestes à 28 im d'écart.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La carte de dépôt se transforme en barre de progression",
+      "name_en": "card-to-progress-bar morph",
+      "t": "0:01.90-0:02.15",
+      "frames": "f114-f129",
+      "fps": 60,
+      "mechanics": "Après le dépôt, la carte prend un double contour (f117) puis s'écrase verticalement et s'élargit en pilule (f120-f126) ; les points du fichier s'étalent horizontalement et deviennent la barre de progression en trame (f123-f129). 15 im (0,25 s). « Upload anything. » monte sous masque à f129 (demi-temps f128,1), libellé « UP TO 5 GB PER FILE » au-dessus.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de pourcentage en ease-in-out, barre à tête lumineuse",
+      "name_en": "eased percentage counter",
+      "t": "0:02.15-0:03.32",
+      "frames": "f129-f199",
+      "fps": 60,
+      "mechanics": "Compteur serif : 1 % (f129), 3 % (f132), 5 % (f135), 28 % (f150), 93 % (f180), 100 % (f199) : ≈ 0,6 %/im au départ, 2,2 %/im au milieu, 0,4 %/im à la fin = ease-in-out sur 70 im (1,17 s). La barre de points se remplit d'orange avec une tête floue et lumineuse. À 100 % (f199, sur le temps 3,306 s) la trame devient une pilule orange pleine et une coche verte apparaît. Chiffres ≈ 5,5 % de la hauteur, « % » orange.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f224.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre pleine grandit jusqu'à devenir l'écran",
+      "name_en": "object-to-fullscreen fill",
+      "t": "0:03.48-0:03.82",
+      "frames": "f209-f229",
+      "fps": 60,
+      "mechanics": "La pilule orange (≈ 65 % × 3 % du cadre) grandit surtout en hauteur : ≈ 9 % (f215), 13 % (f218), 30 % (f219, saut), 41 % (f222), 47 % (f223), plein cadre f225 ; accélération (ease-in, énergie 1,7 → 15 puis 70 → 150), bords flous, fond qui rosit avec vignettage. 16 im (0,27 s). Plein orange à f225, 1 im avant le temps 3,774 s ; maintien de 5 im (f225-f229). L'objet devient le fond : transition motivée.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f224.jpg",
+      "illus": {"from": 209, "to": 229, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volets en bandes horizontales décalées vers la scène noire",
+      "name_en": "staggered horizontal slat wipe",
+      "t": "0:03.83-0:04.10",
+      "frames": "f230-f246",
+      "fps": 60,
+      "mechanics": "f230 : vignettage sombre soudain sur l'orange (1 im, hors grille). f231-f246 : l'orange se découpe en bandes horizontales de hauteurs inégales (≈ 4–10 % de la hauteur) qui se retirent vers la gauche ou la droite avec quelques images de décalage entre bandes et des extrémités floues, révélant la scène noire. 15 im (0,25 s), pic d'énergie f238 (demi-temps f240,5). Variante des stores vénitiens.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f224.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titres serif qui montent sous masque, ligne par ligne",
+      "name_en": "line-by-line mask rise",
+      "t": "0:04.00-0:04.37",
+      "frames": "f240-f262",
+      "fps": 60,
+      "mechanics": "« Stream » monte sous un masque de f240 à f250, « in 4K. » de f250 à f262 (décalage ≈ 10 im), course ≈ 4 % de la hauteur, ease-out. Serif regular blanc ≈ 7 % de la hauteur, « 4K. » en orange, libellé « HLS · ADAPTIVE BITRATE » au-dessus. Même mécanique pour « Delivered everywhere. », « Your domain. Locked down. » et « Built for Webflow. ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-cut-f224.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Pile isométrique de couches de résolution posées au demi-temps",
+      "name_en": "isometric layer stack",
+      "t": "0:04.10-0:05.30",
+      "frames": "f246-f318",
+      "fps": 60,
+      "mechanics": "Plans translucides en perspective isométrique (≈ 30°), ≈ 30 % de la largeur, moitié gauche : la couche du haut porte une texture orange lumineuse (image vidéo abstraite) ; les couches inférieures apparaissent à f269, f283, f297 (pas de 14 im = 1 demi-temps) avec libellés 1440p, 1080p, 720p, 480p reliés par des filets. Trames de points plus grossières vers le bas (probable) : le débit adaptatif devient une image.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "La couche s'évapore en particules qui deviennent le globe",
+      "name_en": "particle morph into globe",
+      "t": "0:05.30-0:06.00",
+      "frames": "f320-f360",
+      "fps": 60,
+      "mechanics": "La texture orange de la couche du haut se détache en nuage de particules (f322-f334) qui file vers le haut-droite pendant que la pile et le titre s'effacent ; un disque sombre (globe) apparaît en fondu (f326-f338) ; le nuage se pose sur la sphère et dessine l'Europe et l'Afrique en trame de points (f338-f358). ≈ 40 im (0,67 s), énergie en plateau (5–8) = mouvement continu. Départ hors grille (f320).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Globe en trame avec arcs et compteur qui roule jusqu'à « 200+ »",
+      "name_en": "dot globe with rolling counter",
+      "t": "0:06.00-0:07.28",
+      "frames": "f360-f437",
+      "fps": 60,
+      "mechanics": "Sphère ≈ 75 % de la hauteur, moitié droite, continents en points orange, océan noir. Les villes s'allument (points lumineux à étiquette mono) et des arcs orange les relient (f366-f418). Compteur serif orange : 140 (f370), 160 (f374), 184 (f378), 193 (f382), 197 (f386), 199 (f390), « 200+ » (f398) = ease-out, ≈ 6/im puis 0,5/im, suffixe « + » au dernier pas ; libellé « edge locations ». Rotation lente du globe pendant 1,2 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée fouettée avec flou directionnel",
+      "name_en": "whip push",
+      "t": "0:07.28-0:07.60",
+      "frames": "f437-f456",
+      "fps": 60,
+      "mechanics": "f437 (contretemps) : la scène noire prend un flou horizontal (texte étiré f438-f441) et part vers la gauche ; la scène claire la pousse depuis la droite, bord avant flou : ≈ 3 % de la largeur (f440), 10 % (f442), 25 % (f444), 45 % (f445), 75 % (f446), 90 % (f448), ≈ 97 % (f451, sur le temps). 16 im (0,27 s), cloche d'énergie centrée f445-f446 = ease-in-out. Départ sur un demi-temps, arrivée sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f445.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "URL qui se décode caractère par caractère",
+      "name_en": "URL text scramble",
+      "t": "0:07.47-0:08.00",
+      "frames": "f448-f480",
+      "fps": 60,
+      "mechanics": "Dans un champ d'adresse en pilule blanche (≈ 45 % de la largeur, ombre douce), des caractères aléatoires se fixent de gauche à droite (≈ 1,3 caractère/im) jusqu'à « https://files.youragency.com/hero-film.mp4 », « youragency » surligné en orange pâle ; « Your domain. » monte au-dessus (f454-f461). Puis maintien 0,8 s (7,63–8,43 s), seul vrai temps mort.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f445.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cadenas qui passe au vert, puis puces de fonctions en cascade",
+      "name_en": "state change + chip cascade",
+      "t": "0:08.45-0:09.18",
+      "frames": "f507-f551",
+      "fps": 60,
+      "mechanics": "f507 (sur le temps 8,458 s) le cadenas gris ouvert devient vert fermé ; « Locked down. » monte à droite de « Your domain. » (f509-f525). Puis six puces à icône orange (Password protection, Time-limited links, IP restrictions, Country blocking, VPN detection, Download tracking) apparaissent en deux rangées, décalées de quelques images. Texte des puces ≈ 1 % de la hauteur : illisible.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-003-move-f564.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris qui naît de l'icône du cadenas",
+      "name_en": "icon-born iris out",
+      "t": "0:09.18-0:09.40",
+      "frames": "f551-f563",
+      "fps": 60,
+      "mechanics": "Le cadenas vert devient un disque orange (f551, +1,4 im après le demi-temps) qui grossit autour de sa position (x ≈ 30 %, y ≈ 55 %) : ≈ 5 % de la hauteur (f552), 25 % (f556), 70 % (f558), plein cadre f561-f562 ; bord légèrement flou, accélération (ease-in, énergie 0,7 → 2,5 → 5,9 → 12 → 23 → 42 → 111). 12 im (0,2 s). Plein orange f563, sur le temps 9,395 s. L'icône qui « verrouille » devient le passage.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f564.jpg",
+      "illus": {"from": 549, "to": 566, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Comète qui trace un ruban infini",
+      "name_en": "comet-drawn infinity ribbon",
+      "t": "0:09.42-0:10.95",
+      "frames": "f565-f656",
+      "fps": 60,
+      "mechanics": "f565 (+1 im après le temps) une tête blanche lumineuse (≈ 1 % de la hauteur, halo) part du centre et trace une lemniscate ≈ 55 % de la largeur ; elle laisse un ruban de tirets blancs perpendiculaires à la trajectoire (≈ 3 % de long) qui s'estompe vers la queue. Vitesse quasi constante (énergie 3–6) sur ≈ 90 im (1,5 s). L'image dit « illimité » sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f564.jpg, microM-004-cut-f666.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre révélé lettre par lettre en fondu montant",
+      "name_en": "per-letter fade-up reveal",
+      "t": "0:09.50-0:09.73",
+      "frames": "f570-f584",
+      "fps": 60,
+      "mechanics": "« Unlimited bandwidth. » serif blanc ≈ 7 % de la hauteur, centré en bas (y ≈ 83 %), révélé de gauche à droite : chaque lettre monte d'≈ 1 % et passe de 0 à 100 % d'opacité, décalage ≈ 0,7 im par lettre, 14 im au total. Libellé capitales « NO OVERAGE FEES · FLAT MONTHLY RATE » au-dessus vers f580. Départ hors grille (7 im avant le contretemps).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f564.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Compression en ligne qui devient le cadre de la scène suivante",
+      "name_en": "squeeze-to-line match transition",
+      "t": "0:10.95-0:11.45",
+      "frames": "f657-f687",
+      "fps": 60,
+      "mechanics": "Le ruban infini s'aplatit en traînée horizontale (f657-f664) ; le fond orange se comprime verticalement, le blanc entrant par le haut et le bas : bande ≈ 50 % de la hauteur (f666), 25 % (f667), 15 % (f668), 8 % (f669), 4 % (f670), 1 % (f672) = ease-out expo ; la ligne orange devient un filet gris clair (f674-f675), se raccourcit à ≈ 50 % de la largeur et ses extrémités descendent pour dessiner la fenêtre de navigateur (f681-f686). 30 im (0,5 s). Départ f660 (−2 im du contretemps), coupe f666 hors grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f666.jpg",
+      "illus": {"from": 658, "to": 686, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Maquette de site Webflow avec vidéo en trame",
+      "name_en": "website mockup reveal",
+      "t": "0:11.35-0:12.53",
+      "frames": "f681-f752",
+      "fps": 60,
+      "mechanics": "Fenêtre de navigateur ≈ 50 % de la largeur à droite : site « Agency » (menu, bouton orange, titre serif « Films that move people. », bouton noir, vidéo héros, trois vignettes). Le contenu apparaît en fondu vers f699-f712 (hors grille) ; la vidéo joue une animation de carrés orange en trame (f723-f751). À gauche « Built for Webflow. » serif ≈ 8 % et « Asset Manager · CMS · Forms ». Scène la plus générique.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Bascule d'une image en tramage hachuré",
+      "name_en": "single-frame dither switch",
+      "t": "0:12.53",
+      "frames": "f752",
+      "fps": 60,
+      "mechanics": "En 1 im (f752, énergie 100) toute l'image passe en version hachurée grise façon gravure (dither) avec touches orange : la page « se désagrège » avant d'être aspirée. Hors grille (+5,6 im du contretemps) ; l'effet est fort mais tombe dans le vide musical.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f775.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Aspiration en tourbillon jusqu'à un point",
+      "name_en": "twirl collapse to a dot",
+      "t": "0:12.62-0:13.00",
+      "frames": "f757-f780",
+      "fps": 60,
+      "mechanics": "L'image tramée tourne autour du centre de plus en plus vite en rétrécissant (≈ 15° à f770, ≈ 90° à f775) avec flou de rotation ; énergie 2 → 22 (f776) puis arrêt net : il ne reste qu'un point rouge à halo rose (≈ 9 % de la hauteur) à f779-f780. 22 im (0,37 s), ease-in. Version « tout rétrécit en point » qui prépare la révélation circulaire.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f775.jpg",
+      "illus": {"from": 760, "to": 798, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Respiration de 8 images avant le coup final",
+      "name_en": "pre-hit hold",
+      "t": "0:13.00-0:13.13",
+      "frames": "f780-f788",
+      "fps": 60,
+      "mechanics": "Le point reste immobile de f780 à f787 (0,13 s) pendant le creux de la musique (−22 dB vers 13,0 s), puis l'anneau et l'icône partent à f788, 0,5 im avant le temps 13,142 s qui porte l'attaque la plus forte du morceau. Silence visuel avant le drop : le coup final frappe plus fort.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f775.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde annulaire et pop de l'icône depuis le point",
+      "name_en": "ring burst + icon pop",
+      "t": "0:13.13-0:13.50",
+      "frames": "f788-f810",
+      "fps": 60,
+      "mechanics": "Un anneau fin orange pâle part du point : rayon ≈ 6 % de la hauteur (f789), 15 % (f790), 27 % (f792), 32 % (f793), 36 % (f795) = ease-out. L'icône carrée arrondie orange grandit en même temps de ≈ 2 % (f790) à 10 % (f795), 13 % (f798) et ≈ 14 % (f804), léger dépassement probable (≈ 13 % à f810), entourée de points de trame ; le pictogramme blanc apparaît f801-f804. Anneaux de points concentriques en fond.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f775.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "L'icône glisse, le mot-symbole monte lettre par lettre",
+      "name_en": "logo lockup build",
+      "t": "0:13.50-0:14.05",
+      "frames": "f810-f843",
+      "fps": 60,
+      "mechanics": "L'icône rétrécit de ≈ 14 % à 8 % de la hauteur et glisse du centre (x ≈ 49 %) à x ≈ 37 % en ≈ 9 im (f810-f819, ease-out) ; « Flowdrive » (sans géométrique medium, ≈ 5 % de la hauteur, gris très foncé) apparaît lettre par lettre, chaque lettre montant d'une ligne de base masquée, ≈ 2,7 im par lettre (9 lettres, f819-f843). Départ du glissement hors grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : tagline et URL tapées",
+      "name_en": "typed end card",
+      "t": "0:14.10-0:15.06",
+      "frames": "f846-f899",
+      "fps": 60,
+      "mechanics": "« The easiest way to host videos and files on Webflow. » (serif gris ≈ 2 % de la hauteur) se tape de f846 (temps f844,7 +1 im) à f867 (≈ 2,5 caractères/im), puis « TRYFLOWDRIVE.COM » en capitales orange soulignées (≈ 1,2 %) de f864 à ≈ f882. Maintien final ≈ 0,3 s, musique en fondu (−38 dB à 14,75 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Une fonction par scène sur un gabarit fixe",
+      "name_en": "repeatable feature-scene template",
+      "t": "0:02.15-0:12.53",
+      "frames": "f129-f752",
+      "fps": 60,
+      "mechanics": "Chaque scène : petit libellé en capitales orange espacées (≈ 1 % de la hauteur : « UP TO 5 GB PER FILE », « HLS · ADAPTIVE BITRATE », « GLOBAL CDN », « YOUR DOMAIN · AUTO-PROVISIONED SSL », « NO OVERAGE FEES · FLAT MONTHLY RATE », « BUILT FOR WEBFLOW TEAMS »), titre serif de 2 à 4 mots à point final ≈ 7 %, visuel-métaphore sur l'autre moitié du cadre. 6 fonctions en 10,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance crème / orange / noir comme ponctuation de chapitre",
+      "name_en": "chapter color switching",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fond crème #F3F1EC (upload, domaine, Webflow, fin), plein orange #E8501C (3,75–3,83 s et 9,4–11,1 s), noir chaud #0B0908 avec lueurs orange (stream, globe). Chaque changement de fond est porté par un objet (barre, bandes, poussée, iris, ligne, tourbillon) : la couleur ponctue les chapitres sans jamais couper sec.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La trame de points comme fil rouge graphique",
+      "name_en": "halftone dot motif system",
+      "t": "0:00.25-0:13.50",
+      "frames": "f15-f810",
+      "fps": 60,
+      "mechanics": "Le point est l'atome de toute la vidéo : onde de trame d'ouverture, icône de fichier, barre de progression, couches de résolution, globe, ruban de l'infini (tirets), vidéo du site, point final et anneaux de l'icône. Un seul motif décliné donne une cohérence immédiate et rend chaque transition naturelle (les points se réorganisent).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, microM-005-move-f775.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage HUD discret",
+      "name_en": "subtle HUD frame",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Repères d'angle en croix, timecode mono minuscule en haut à droite (point orange), numéro de scène en bas à gauche, filet de progression au centre bas avec segment orange, URL en bas à droite ; texte ≈ 0,7 % de la hauteur, gris clair (lectures probables). Assez discret pour ne jamais concurrencer le titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Premier tiers au pas du temps et du demi-temps",
+      "name_en": "beat-quantized opening",
+      "t": "0:00.97-0:04.95",
+      "frames": "f58-f297",
+      "fps": 60,
+      "mechanics": "Cinq gestes au pas exact de 28 im (1 temps à 128 BPM) : curseur f58, balancement f86, dépôt f114, 100 % f199, plein orange f225 ; puis trois couches au pas de 14 im (demi-temps) f269, f283, f297. 11 gestes sur 12 à ±2 im d'une barre (hasard ≈ 36 %), image 0 à 1,4 im avant le temps. Après 5,3 s seuls les gestes charnières restent calés.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, microM-001-cut-f224.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Respirations de 0,5 à 1,2 s",
+      "name_en": "reading holds",
+      "t": "0:06.12-0:07.27 ; 0:07.63-0:08.43 ; 0:08.65-0:09.18 ; 0:13.72-0:14.98",
+      "frames": "f367-f436 ; f458-f506 ; f519-f551 ; f823-f899",
+      "fps": 60,
+      "mechanics": "Maintiens mesurés : globe (seuls rotation, arcs et compteur bougent), URL figée 0,8 s (énergie < 0,5, vrai temps mort), puces 0,5 s, carte de fin 1,2 s animée par la frappe. Au regard de la grammaire 1600, l'URL figée et la fin sont trop longues ; un surlignage ou une puce par temps aurait suffi.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un même fichier traverse toutes les fonctions",
+      "name_en": "single-object product journey",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "« hero-film.mp4 » est déposé (0–2 s), téléversé (2–3,7 s), diffusé en 4K (3,8–5,3 s), livré partout (5,3–7,3 s), servi sur votre domaine (7,3–9,2 s), sans limite (9,4–11 s), dans un site Webflow (11,1–12,5 s), puis tout est aspiré dans le logo (12,5–15 s). La liste de fonctions devient une histoire, sans voix off.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne décrit pas le produit : les fonctions précises (5 Go par fichier, HLS, CDN 200+ points, domaine et SSL, sécurité, Webflow) et l'URL tryflowdrive.com viennent probablement du contexte de travail du créateur (site ou dépôt Flowdrive) accessible à Claude."},
+    {"kind": "direction", "insight": "« go all out » sans cadre a produit ici une pièce sobre d'agence : Claude a choisi la retenue (une couleur, une serif, un motif) plutôt que l'empilement d'effets."},
+    {"kind": "structure", "insight": "Sans consigne de récit, Claude a inventé un fil conducteur (un même fichier traverse toutes les fonctions), ce qui rend la liste de fonctions lisible comme une histoire."},
+    {"kind": "other", "insight": "Même piste à 128 BPM que d'autres vidéos du même prompt : le tempo était connaissable. Seul le premier tiers est calé. Préciser « entrées et transitions sur les temps de 128 BPM, coup final sur 13,14 s » aurait tenu le milieu."},
+    {"kind": "qa", "insight": "Aucune consigne de lisibilité : libellés et puces à ≈ 1 % de la hauteur passent inaperçus ; fixer un corps minimal et un maintien maximal (0,5 s)."}
+  ],
+  "steal": [
+    "Fais de chaque transition un objet de la scène : la barre de progression remplit l'écran, le cadenas devient iris, la ligne devient le cadre suivant.",
+    "Choisis un atome graphique (le point de trame) et décline-le partout : icône, barre, couches, globe, ruban, anneaux de fin.",
+    "Avant le coup final, aspire tout en un point, laisse-le immobile 8 im pendant le creux de la musique, puis fais jaillir l'icône sur l'attaque.",
+    "Gabarit de scène fixe : libellé capitales orange, titre serif de 2 à 4 mots à point final, visuel-métaphore sur l'autre moitié du cadre.",
+    "Empile des couches au demi-temps (pas de 14 im à 128 BPM et 60 fps) : la cadence fait sentir la notion de niveaux."
+  ],
+  "flaws": [
+    "Synchro serrée jusqu'à 5,3 s puis au niveau du hasard (7 gestes sur 19) : la musique décroche au milieu.",
+    "URL figée 0,8 s (7,63–8,43 s) et carte de fin quasi statique 1,2 s : temps morts.",
+    "Puces de fonctions et libellés à ≈ 1 % de la hauteur : illisibles en une demi-seconde.",
+    "Maquette de site Webflow générique (agence fictive) : la scène la moins inventive."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : chaîne de transitions par objets (barre → écran, bandes, poussée, iris du cadenas, compression en ligne, tourbillon → point → icône) à relever image par image à 60 fps pour en extraire courbes et durées ; le premier tiers sert aussi d'exemple de calage au temps."
+  }
+}

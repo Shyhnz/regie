@@ -1,0 +1,436 @@
+{
+  "slug": "shneural-2abdfa",
+  "title": "Bold kinetic type showreel",
+  "craft": 4,
+  "craft_reason": "Note de la partie Claude (0,8-15,85 s) : 8 mesures à 128 BPM calées à 10 ms près, une balle fil rouge du début à la fin, mais démos 3D et particules génériques. La partie GPT 6 Astra Max (16,8-31,8 s) vaudrait 3/5 : belles diapositives chromées quasi statiques.",
+  "style": {
+    "family": "éditorial pop + HUD technique + démos génératives (partie Claude) ; diapositives chrome et lime (partie GPT)",
+    "palette": ["#0C0B0E", "#EA4A22", "#EDE9E3", "#3439F0", "#CCFF26", "#0A0A08"],
+    "type": ["grotesque étendue Black en capitales", "grotesque à graisse variable (Thin à Black)", "condensée grasse (CODE)", "mono capitales (HUD, texte décodé)", "italique serif pour la signature", "GPT : grotesque Black serrée sur deux lignes"],
+    "texture": "aplats, flou de mouvement directionnel et radial, glitch RGB, vraie 3D avec occlusion ambiante et profondeur de champ, particules additives ; GPT : chrome et verre réalistes",
+    "mood": "virtuose, ludique, démonstratif"
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "acts": [
+      "0-0,8 s : carton « Opus 5.5 Max 01/02 » (ajouté par l'auteur du post)",
+      "0,8-2,75 s : squash and stretch, balle qui rebondit sur les temps puis devient le fond",
+      "2,75-4,65 s : typo, EVERY / FRAME / is / CODE, extinction CRT",
+      "4,65-6,53 s : grille générative qui germe d'un point",
+      "6,53-8,38 s : bascule en 3D, champ de colonnes et balle brillante",
+      "8,38-10,27 s : mur de bandes MOTION, inversion et italique sur les temps",
+      "10,27-12,12 s : désintégration en particules, sphère, galaxie",
+      "12,12-14,03 s : récapitulatif en mosaïque puis doubles croches, effondrement, flash",
+      "14,03-15,85 s : CLAUDE, texte décodé, la balle revient en point final, appel",
+      "15,85-31,8 s : carton puis vidéo GPT 6 Astra Max (6 diapositives, 144 BPM)"
+    ]
+  },
+  "family": "showreel",
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Partie Claude (0,8–15,85 s), grille recalculée à 127,9 BPM (premier temps 0,905 s), car les marques des planches suivent la grille globale à 72 BPM, fausse ici (rien ne se passe sur la barre de f832). 20/33 événements à ±1 im d'un temps ou demi-temps (impacts de balle f82, f110, f138, coupes f195, f223, f308, f336, f392, f730, f758, f786, f814, flashs f279 et f842, inversion f533, italique f561, point final f898…), 26/33 en comptant la double croche (montage f814-f842 toutes les 7 im ; extinction CRT une double croche avant le flash, bascule 3D une double croche après la coupe). Décalage typique 0 à 1 im. Partie GPT (16,8–31,8 s) : volets posés sur le temps à 144 BPM toutes les 2,5 s (f1457, f1757), mais texte et 3D tenus 2 s sans accent : synchro partielle.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "atterrissages",
+      "flashs",
+      "couleur",
+      "texte"
+    ],
+    "style_match": "Électro probable à 128 BPM, dense et grave : colle aux rebonds, coupes sèches et glitchs. Partie GPT : 144 BPM très grave, contredite par des maintiens de 2 s.",
+    "how_built": "Même recette que stephanlivera-df17a2 : tempo de 128 BPM choisi par le modèle et affiché dans le HUD, sections d'une mesure, événements quantifiés à l'image près ; le prompt ne mentionne pas la musique. Les marques automatiques suivent une grille globale à 72 BPM faussée par le montage comparatif : vérification faite sur une grille recalculée sur la seule partie Claude."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitres d'une mesure",
+      "name_en": "bar-grid chaptering",
+      "t": "0:00.80-0:15.85",
+      "frames": "f48-f951",
+      "fps": 60,
+      "mechanics": "Huit sections d'environ 1,875 s (une mesure à 128 BPM) : squash and stretch, typo, grille, 3D, bandes, particules, récapitulatif, fin. Bornes sur les barres (premier temps à 0,905 s).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur la grille de tempo",
+      "name_en": "beat-grid sync",
+      "t": "0:03.25-0:14.03",
+      "frames": "f195, f223, f279, f308, f336, f392, f561, f730, f758, f786, f814, f842",
+      "fps": 60,
+      "mechanics": "Écart au temps de −8 à +6 ms (grille 127,9 BPM recalculée sur la seule partie Claude). Les coupes en avance de 47 à 91 ms (f164, f246, f274, f727) lancent un effet qui se pose sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rebonds sur le temps",
+      "name_en": "squash and stretch on beat",
+      "t": "0:01.20-0:02.47",
+      "frames": "f72-f148",
+      "fps": 60,
+      "mechanics": "Impacts à f82, f110 et f138, toutes les 28 im (un temps à 128 BPM, à 10 ms près). Balle ≈ 8 % de la hauteur, étirée ≈ 1,6:1 en chute, écrasée ≈ 3,5:1 pendant 1 à 2 im à l'impact, puis ronde. Arcs pointillés de trajectoire, points de contact, fantômes.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 72, "to": 112, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La balle fonce vers la caméra et devient le fond",
+      "name_en": "object-to-background zoom",
+      "t": "0:02.30-0:02.75",
+      "frames": "f138-f165",
+      "fps": 60,
+      "mechanics": "Écrasement long d'anticipation (≈ 10 im) en glissant à droite, envol en diagonale étiré le long de la trajectoire. La balle grossit de ≈ 8 % à plus de 100 % de la hauteur en ≈ 14 im (ease-in exponentiel, bord flou). Fond orange #EA4A22 plein à f165, juste avant la barre 2.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée par masque et soulignement",
+      "name_en": "mask rise + underline",
+      "t": "0:02.78-0:02.97",
+      "frames": "f167-f178",
+      "fps": 60,
+      "mechanics": "Les lettres de EVERY montent depuis une ligne de base masquée, décalées de ≈ 1,5 im, ≈ 6 à 8 im chacune. Mot complet à f178 (≈ 31 % de la hauteur). Soulignement tracé de gauche à droite (f176-f178). Index « [01] ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Graisse animée dans un cadre de sélection",
+      "name_en": "variable weight + selection box",
+      "t": "0:03.25-0:03.37",
+      "frames": "f195-f202",
+      "fps": 60,
+      "mechanics": "Coupe sur le temps. FRAME (orange sur noir) passe de Thin à Black en 7 im. Un cadre de sélection bleu à 8 poignées se resserre du plein cadre aux limites du mot (≈ 6 im, ease-out), étiquette bleue dessous : métaphore d'outil de design.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 195, "to": 203, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le point du i",
+      "name_en": "zoom into glyph dot",
+      "t": "0:03.72-0:04.10",
+      "frames": "f223-f246",
+      "fps": 60,
+      "mechanics": "« is » bleu fin sur crème, légère oscillation (probable ± 5°). Zoom ×3 centré sur le point du i en ≈ 10 im (f233-f243), flou sur le s. Le point grossit jusqu'à remplir l'écran, qui devient le fond bleu de CODE.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f223.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot-terminal",
+      "name_en": "code word with cursor",
+      "t": "0:04.10-0:04.53",
+      "frames": "f246-f271",
+      "fps": 60,
+      "mechanics": "CODE en condensée grasse blanche sur #3439F0, curseur rouge vertical après le E, lignes de code mono bleu clair (≈ 2 % de la hauteur) qui défilent en fond.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f279.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glitch RGB à tranches",
+      "name_en": "RGB split glitch",
+      "t": "0:04.42-0:13.67",
+      "frames": "f265, f268, f814-f820",
+      "fps": 60,
+      "mechanics": "Décalage des canaux et tranches horizontales déplacées : 1 im à chaque fois sur CODE, puis 7 im au récapitulatif.",
+      "verdict": "cliche",
+      "evidence": "microM-008-cut-f828.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Extinction de tube cathodique",
+      "name_en": "CRT power-off",
+      "t": "0:04.53-0:04.63",
+      "frames": "f272-f278",
+      "fps": 60,
+      "mechanics": "Compression verticale : bande de 60 % puis 35 % de la hauteur en 2 im avec surexposition, ligne fine (f274-f276), point lumineux à reflet horizontal (f277-f278). 7 im au total.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f279.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash, puis le point germe en grille",
+      "name_en": "seed-to-grid",
+      "t": "0:04.65-0:04.98",
+      "frames": "f279-f299",
+      "fps": 60,
+      "mechanics": "Flash gris sur la barre 3, anneau fin au centre, 3×3 points (f285), puis grille de points qui pousse en disque depuis le centre en ≈ 15 im ; points rouges sur le pourtour.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f279.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de formes sur grille",
+      "name_en": "grid shape wave",
+      "t": "0:05.00-0:06.53",
+      "frames": "f300-f392",
+      "fps": 60,
+      "mechanics": "Grille d'environ 16×12 cellules. Onde diagonale qui remplace points, croix, losanges, carrés ; cellules rouges et bleues aléatoires.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Bascule 2D vers 3D par inclinaison de caméra",
+      "name_en": "dimension reveal tilt",
+      "t": "0:06.67-0:06.97",
+      "frames": "f400-f418",
+      "fps": 60,
+      "mechanics": "La grille de carrés vue de dessus s'incline et révèle des colonnes extrudées de hauteurs variables en ≈ 18 im, ease-in-out : le motif plat était le dessus des colonnes.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f415.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Champ de colonnes 3D et balle brillante",
+      "name_en": "instanced box field",
+      "t": "0:06.97-0:08.35",
+      "frames": "f418-f501",
+      "fps": 60,
+      "mechanics": "Colonnes blanches, rouges et bleues aux hauteurs qui ondulent, occlusion ambiante, profondeur de champ. Balle rouge spéculaire qui rebondit sur les sommets.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f415.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flou radial puis entrée des bandes",
+      "name_en": "zoom blur to marquee slide-in",
+      "t": "0:08.35-0:08.63",
+      "frames": "f501-f518",
+      "fps": 60,
+      "mechanics": "3 im de flou radial, noir, puis 7 rangées qui entrent par la droite avec un flou de mouvement fort, décalées de 1 à 2 im par rangée, posées en ≈ 14 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f516.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mur de bandes MOTION",
+      "name_en": "striped marquee wall",
+      "t": "0:08.40-0:10.20",
+      "frames": "f504-f612",
+      "fps": 60,
+      "mechanics": "Bande centrale orange avec MOTION noir. Autres rangées bleues ou blanches qui répètent « MOTION · MOTION » en alternant étendue grasse et condensée fine, défilement alterné.",
+      "verdict": "cliche",
+      "evidence": "microM-005-cut-f561.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Changements d'état sur les temps forts",
+      "name_en": "on-beat state flips",
+      "t": "0:08.88-0:09.35",
+      "frames": "f533, f561",
+      "fps": 60,
+      "mechanics": "À 8,88 s, les rangées passent de bleu/blanc à blanc/bleu en 2 im. À 9,35 s, toute la typo passe en italique (≈ 12°) en 1 im. Les deux sur des attaques fortes de la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f561.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement de la bande centrale en ligne",
+      "name_en": "band collapse",
+      "t": "0:10.17-0:10.27",
+      "frames": "f610-f616",
+      "fps": 60,
+      "mechanics": "Les rangées sortent avec flou (3 im), la bande orange se réduit à une ligne (2 im), il reste MOTION blanc ≈ 5 % de la hauteur sur noir.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f613.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Mot qui se désintègre en particules",
+      "name_en": "text-to-particles dissolve",
+      "t": "0:10.37-0:10.60",
+      "frames": "f622-f636",
+      "fps": 60,
+      "mechanics": "Les lettres se dissolvent en poussière de gauche à droite, environ 4 im par lettre.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f613.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Morph de nuage de particules",
+      "name_en": "particle morph",
+      "t": "0:10.60-0:12.12",
+      "frames": "f636-f727",
+      "fps": 60,
+      "mechanics": "Plusieurs milliers de particules blanches, rouges et bleues : sphère ≈ 45 % de la hauteur (11,0 s), anneaux entrelacés (11,5 s), galaxie spirale (12,0 s).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récapitulatif en mosaïque",
+      "name_en": "split-screen recap",
+      "t": "0:12.17-0:13.57",
+      "frames": "f730-f814",
+      "fps": 60,
+      "mechanics": "Deux écrans (12,17 s), quatre (12,63 s, panneaux qui apparaissent avec 2 im de décalage), mosaïque de sept (13,10 s). Chaque panneau rejoue sa scène en direct ; changement sur chaque temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f758.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Accélération en doubles croches",
+      "name_en": "16th-note montage",
+      "t": "0:13.57-0:14.03",
+      "frames": "f814-f842",
+      "fps": 60,
+      "mechanics": "Plein écran toutes les 7 im (une double croche à 128 BPM) : CODE glitché, colonnes en négatif cyan et jaune, particules en RGB, grille. Les coupes suivent un roulement de batterie (attaques à 13,571 / 13,687 / 13,803 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f828.jpg",
+      "illus": {"from": 813, "to": 842, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement rotatif en un point puis flash",
+      "name_en": "spin-collapse + flash",
+      "t": "0:13.92-0:14.03",
+      "frames": "f835-f842",
+      "fps": 60,
+      "mechanics": "La grille tourne d'environ 20° et se contracte avec flou radial en 5 im jusqu'à un point (f841). Flash gris clair 1 im (f842, barre 8), qui décroît vers le noir en ≈ 8 im pendant que CLAUDE monte par masque.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f828.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte qui se décode",
+      "name_en": "text scramble",
+      "t": "0:14.60-0:14.90",
+      "frames": "f876-f894",
+      "fps": 60,
+      "mechanics": "« MOTION DESIGNER » et « SHOWREEL 2026 » en mono : caractères aléatoires résolus de gauche à droite en ≈ 18 im.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La balle revient en point final",
+      "name_en": "callback period drop",
+      "t": "0:14.80-0:15.13",
+      "frames": "f888-f908",
+      "fps": 60,
+      "mechanics": "Point rouge (≈ 4 % de la hauteur) qui tombe du haut à droite en 9 im, étiré ≈ 1,5:1. Écrasé ≈ 3:1 pendant 3 im (f898-f900, 14,97 s, sur le temps), petit rebond, anneau d'impact qui s'étend (f903-f908). Le principe de la première mesure signe la dernière.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 886, "to": 908, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin et appel",
+      "name_en": "end card + CTA",
+      "t": "0:15.20-0:15.85",
+      "frames": "f912-f951",
+      "fps": 60,
+      "mechanics": "Sous CLAUDE (≈ 22 % de la hauteur) : « ● AVAILABLE FOR NEW PROJECTS » en mono à gauche, « every frame of this reel is code. » en italique serif à droite, fondu en ≈ 6 im ; maintien ≈ 0,5 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre HUD de bande démo",
+      "name_en": "showreel HUD",
+      "t": "0:00.80-0:15.85",
+      "frames": "f48-f951",
+      "fps": 60,
+      "mechanics": "« 128 BPM · 60 FPS · 1920×1080 » en haut à droite (lecture probable), timecode en bas à gauche, label de section en bas à droite, équerres aux coins. Identique au tirage stephanlivera-df17a2.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette resserrée et fil rouge orange",
+      "name_en": "accent thread",
+      "t": "0:00.80-0:15.85",
+      "frames": "f48-f951",
+      "fps": 60,
+      "mechanics": "Noir #0C0B0E, vermillon #EA4A22, crème #EDE9E3, bleu #3439F0. L'orange suit la balle de scène en scène : fond de EVERY, balle 3D, bande MOTION, point final.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Diapositive titre et objet 3D",
+      "name_en": "hero slide layout",
+      "t": "0:16.80-0:31.82",
+      "frames": "f1008-f1909",
+      "fps": 60,
+      "mechanics": "Partie GPT 6 Astra Max (pas Claude). Titre sur deux lignes à gauche (≈ 18 % de la hauteur par ligne, grotesque Black, seconde ligne lime #CCFF26), objet 3D à droite (≈ 45 % de la hauteur), sous-titre mono, flèche ↗, compteur « 01 — 06 » et progression segmentée ; barres de forme d'onde dans « HIT THE BEAT. ».",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Objets chromés et lime en rotation lente",
+      "name_en": "chrome + lime 3D",
+      "t": "0:16.80-0:31.82",
+      "frames": "f1008-f1909",
+      "fps": 60,
+      "mechanics": "Partie GPT (pas Claude). Nœud torique, ruban de Möbius couvert de texte, blob en 8, étoile gonflée, étoile verre et lime ; rotation continue lente, reflets de studio.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet plein de la couleur suivante",
+      "name_en": "solid panel wipe",
+      "t": "0:24.20-0:29.30",
+      "frames": "f1452-f1457, f1603-f1608, f1752-f1757",
+      "fps": 60,
+      "mechanics": "Partie GPT (pas Claude). Panneau plein qui entre par la gauche et couvre l'écran en ≈ 5 im, toutes les 2,5 s (6 temps à 144 BPM), lancé ≈ 80 ms avant le temps pour se poser dessus.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f1455.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot unique avec échos en contour",
+      "name_en": "outline echo stack",
+      "t": "0:26.75-0:29.25",
+      "frames": "f1605-f1755",
+      "fps": 60,
+      "mechanics": "Partie GPT (pas Claude). BOLD., PRECISE., ALIVE. : mot plein au centre, copies en contour au-dessus et en dessous, montée du gris au plein en ≈ 9 im.",
+      "verdict": "cliche",
+      "evidence": "microM-010-move-f1608.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Slogans à la première personne",
+      "name_en": "copy-driven slides",
+      "t": "0:16.80-0:31.82",
+      "frames": "f1008-f1909",
+      "fps": 60,
+      "mechanics": "Partie GPT (pas Claude). « I MAKE IT LOUD. », « HIT THE BEAT. », « I MOVE ATTENTION. », appel « LET'S MAKE IT MOVE » : le texte affirme ce que le mouvement ne montre pas ; maintiens de 1,8 à 2 s.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "other", "insight": "Même prompt que stephanlivera-df17a2 et résultat presque jumeau : 8 mesures à 128 BPM, une compétence par mesure, HUD qui affiche le tempo, même palette, même carte de fin. Pour ce prompt, le modèle a une structure par défaut stable."},
+    {"kind": "structure", "insight": "La partie Claude dure 15,05 s pour 15 s demandées, et ses sections tombent sur les barres de mesure à 10 ms près : le tempo choisi par le modèle pilote tout le montage."},
+    {"kind": "direction", "insight": "Sans sujet imposé, Claude montre des techniques (« show ») là où GPT écrit des slogans (« tell ») : I MAKE IT LOUD., HIT THE BEAT., avec du texte tenu jusqu'à 2 s."},
+    {"kind": "qa", "insight": "Les mesures automatiques (72 BPM, 1 coupe sur 31 sur le temps) sont faussées par le montage comparatif : recalculer le tempo sur chaque partie donne 127,9 BPM (Claude) et 144 BPM (GPT)."},
+    {"kind": "inputs", "insight": "Les cartons « Opus 5.5 Max 01/02 » et « GPT 6 Astra Max 02/02 » sont ajoutés par l'auteur du post : seule la partie 0,8-15,85 s est une sortie de Claude."}
+  ],
+  "steal": [
+    "Un objet fil rouge qui ouvre et ferme le film : la balle du squash and stretch devient le fond du premier mot, puis revient en point final du nom.",
+    "Rebonds sur le temps : un impact toutes les 28 im à 60 fps (un temps à 128 BPM), écrasement ≈ 3:1 pendant 1 à 2 im, étirement ≈ 1,6:1 en chute.",
+    "Montrer un axe de police variable avec une métaphore d'interface : cadre de sélection qui se resserre pendant que la graisse passe de Thin à Black en 7 im.",
+    "Faire passer chaque transition par un point : point du i vers aplat bleu ; extinction CRT vers point puis graine de la grille ; grille vers point, flash, nom.",
+    "Récapitulatif qui accélère : 2, 4, puis 7 écrans sur les temps, puis plein écran en doubles croches (7 im) jusqu'à l'effondrement et au flash."
+  ],
+  "flaws": [
+    "Glitch RGB à tranches sur CODE : tic de vidéo IA « tech ».",
+    "Mur de bandes « MOTION · MOTION » : mot répété en papier peint.",
+    "Colonnes 3D instanciées et particules sphère vers galaxie : démos WebGL génériques sans message.",
+    "Texte qui se décode en caractères aléatoires : effet « hacker » convenu.",
+    "HUD mono minuscule identique à l'autre tirage : signature IA, illisible sur mobile.",
+    "Partie GPT : maintiens de 1,8 à 2 s sans animation de texte, mots en contour répétés, slogans qui disent au lieu de montrer."
+  ]
+}

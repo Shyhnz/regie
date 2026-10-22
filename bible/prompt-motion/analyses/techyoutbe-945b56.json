@@ -1,0 +1,315 @@
+{
+  "slug": "techyoutbe-945b56",
+  "title": "Visual guides library launch",
+  "handle": "@techyoutbe",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Système de marque propre et lisible (bleu électrique, jaune, bleu nuit, grotesque grasse) et ouverture rythmée, mais vidéo muette, 45 % de plans figés et fondus génériques : un gabarit de lancement correct, sans signature.",
+  "summary": "Lancement de « Tech Fusionist », bibliothèque de guides visuels Cloud, DevOps et IA. Ouverture en coupes sèches sur cinq mots de jargon, antithèse « lire prend des semaines / voir prend des minutes » prouvée par un schéma d'architecture qui se construit, puis logo, carrousel de couvertures, liste de bénéfices, démo terminal, nuage de tags, carte de prix cliquée et appel à l'action. Propre et lisible, mais muette et lente.",
+  "prompt_vs_result": [
+    "Le prompt imposait un SaaS connu, de vrais visuels récupérés sur Internet et le style des vidéos de lancement de Twitter : fonctionnalités, bénéfices, montage très professionnel.",
+    "Claude a choisi Tech Fusionist (guides vendus sur Gumroad, probablement le produit de l'auteur), redessiné les couvertures en aplats, inventé l'antithèse semaines/minutes, la palette bleu/jaune et une structure en neuf actes ; aucune musique.",
+    "Le prompt décrivait un genre, pas un rythme : rien sur la musique, la durée, les transitions ou la densité. D'où un gabarit générique, muet, avec des fondus par défaut et de longs maintiens."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EDF1F8", "role": "fond clair"},
+      {"hex": "#0B1230", "role": "texte, fond sombre du logo, boutons"},
+      {"hex": "#1D3FE0", "role": "bleu électrique : fonds d'actes, pastilles, bouton cliqué"},
+      {"hex": "#FDD13A", "role": "jaune : volets de transition, couverture phare, pastille URL, points de données"},
+      {"hex": "#FF6A3D", "role": "orange d'une couverture"},
+      {"hex": "#12A06A", "role": "vert d'une couverture et du message de succès du terminal"},
+      {"hex": "#A9B6FF", "role": "lavande d'une couverture"},
+      {"hex": "#6B7590", "role": "texte secondaire gris"}
+    ],
+    "type": "Grotesque grasse à caractère (type Bricolage Grotesque, probable), casse phrase avec point final, interlettrage serré ; titres 5 à 12 % de hauteur, listes ≈ 2 % ; mono pour étiquettes, terminal et URL.",
+    "texture": "Aplats sans grain ; ombres portées douces sous les couvertures et les cartes ; grille fine de plan d'architecte sur le bleu ; lignes de texte fantômes gris pâle sur le fond clair ; aucun flou de mouvement, aucune lueur.",
+    "style": "Flat SaaS bleu électrique et jaune",
+    "coherence": "Système tenu de bout en bout : quatre couleurs (bleu nuit, bleu électrique, jaune, gris clair), une seule grotesque grasse avec point final, une mono pour le technique, le logo à deux anneaux qui ouvre et ferme. Ce qui le casse : chaque acte change de fond par un fondu enchaîné qui passe par un gris boueux, et le volet jaune revient à l'identique sans lien avec le contenu."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio, donc pas de tempo. L'ouverture est rapide et régulière : 5 mots en 68 im, un toutes les 13 à 15 im (0,43-0,5 s à 30 fps), en coupes sèches. Puis le rythme s'effondre : actes de 2,5 à 6 s, maintiens statiques sur 18 s soit 45 % du temps (logo 10,4-12,9 s, liste et terminal 21,4-26,8 s où seul un petit élément change, carte de prix 32,5-36,1 s, fin 37,6-40 s). Les seules accélérations sont les deux volets jaunes (15 im) et les arrivées en cascade (couvertures décalées de 3 im, items de liste toutes les 12-15 im, nœuds du schéma toutes les 10-14 im). Le travelling sur les couvertures dure 6 s sur une seule courbe ease-in-out. Changements de fond presque tous en fondu enchaîné de 6 à 9 im.",
+    "timeline": [
+      {"t": "0:00-0:02.27", "what": "Kubernetes. / Terraform. / IAM policies. / CI/CD. / System design. en plein centre, sur des lignes de texte fantômes", "technique": "mots-problèmes en coupes sèches, léger rétrécissement"},
+      {"t": "0:02.27-0:04.1", "what": "« Reading about it / takes weeks. » qui fonce du gris au bleu nuit, lignes de texte qui défilent vers le haut et disparaissent", "technique": "antithèse, partie 1"},
+      {"t": "0:04.1-0:04.55", "what": "Le texte s'efface, le fond clair vire au bleu électrique", "technique": "fondu de couleur"},
+      {"t": "0:04.43-0:04.9", "what": "« Seeing it takes minutes. » révélé de gauche à droite en haut à gauche", "technique": "balayage de texte"},
+      {"t": "0:04.6-0:07.0", "what": "Schéma Users → CDN → Load balancer → Auth/Orders/Payments → Postgres/Redis construit nœud par nœud sur grille", "technique": "diagramme qui se construit"},
+      {"t": "0:07.0-0:09.0", "what": "Points jaunes qui circulent dans les liens du schéma", "technique": "paquets de données en boucle"},
+      {"t": "0:09.0-0:09.5", "what": "Volet jaune qui traverse l'écran de gauche à droite, révèle un fond bleu nuit", "technique": "volet de couleur aller-retour"},
+      {"t": "0:09.5-0:13.1", "what": "Deux anneaux (jaune, blanc), « Tech Fusionist » révélé, sous-titre en fondu, maintien 2,5 s", "technique": "révélation du logo"},
+      {"t": "0:13.1-0:13.5", "what": "Fondu du bleu nuit au gris clair par un gris moyen", "technique": "fondu enchaîné"},
+      {"t": "0:13.5-0:14.0", "what": "« Every guide. One library. », couvertures qui montent en cascade", "technique": "arrivée décalée de 3 im"},
+      {"t": "0:14.0-0:20.3", "what": "Travelling latéral le long de 8 couvertures de guides colorées", "technique": "travelling ease-in-out, légère perspective en bord de cadre"},
+      {"t": "0:20.3-0:21.0", "what": "Fondu au clair puis au bleu, la couverture AWS entre en se redressant", "technique": "fondu, rotation qui se pose"},
+      {"t": "0:21.0-0:24.1", "what": "« Beginner to job-ready. » révélé, puis 5 bénéfices cochés un par un", "technique": "liste cochée en cascade"},
+      {"t": "0:24.3-0:27.0", "what": "Fenêtre terminal en fondu sur la liste, « terraform apply -auto-approve » tapé, sorties, ligne verte de succès", "technique": "démo terminal"},
+      {"t": "0:27.0-0:27.5", "what": "Fondu au clair puis au jaune", "technique": "fondu enchaîné"},
+      {"t": "0:27.5-0:31.6", "what": "Quatre rangées de pastilles de technologies qui défilent, « Explained visually. » au centre", "technique": "nuage de tags en défilement continu"},
+      {"t": "0:31.6-0:32.3", "what": "Fondu au clair, carte d'achat qui apparaît", "technique": "fondu + léger agrandissement"},
+      {"t": "0:32.3-0:36.2", "what": "« Pay what you want. », curseur jusqu'au bouton « I want this! », clic, toast « Added to your library »", "technique": "carte de prix avec curseur et clic"},
+      {"t": "0:36.2-0:36.7", "what": "Volet jaune identique au premier, révèle le bleu électrique", "technique": "volet de couleur aller-retour"},
+      {"t": "0:36.7-0:40.0", "what": "Anneaux qui grandissent, « Start learning visually. », pastille URL jaune, nom ; maintien 2,3 s", "technique": "écran final d'appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans musique : les coupes sèches de l'ouverture appelaient une piste rythmée ; le silence rend toute la vidéo plate.",
+    "how_built": "Le prompt ne mentionne ni musique ni son ; la vidéo est sortie sans piste audio (probable : rendu des images seules, sans étape de bande-son)."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots-problèmes en coupes sèches",
+      "name_en": "rapid word cuts",
+      "t": "0:00-0:02.27",
+      "frames": "f0-f67",
+      "fps": 30,
+      "mechanics": "Cinq mots du jargon de la cible, centrés, grotesque grasse bleu nuit ≈ 12 % de hauteur, chacun 13 à 15 im (0,43-0,5 s) : Kubernetes. f0, Terraform. f15, IAM policies. f28, CI/CD. f42, System design. f55. Coupe sèche entre deux mots ; chaque mot apparaît ≈ 5-7 % plus grand et se pose à 100 % en 2-3 im (ease-out), un micro-impact sans flou. Une image vide (f68) avant la phrase suivante. Proche de la grammaire 1600, mais sans musique pour porter les coupes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f29.jpg, microM-002-cut-f56.jpg",
+      "illus": {"from": 0, "to": 68, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Lignes de texte fantômes qui défilent",
+      "name_en": "skeleton text lines",
+      "t": "0:00-0:03.5",
+      "frames": "f0-f105",
+      "fps": 30,
+      "mechanics": "Barres horizontales gris pâle (≈ #D5DCEA, 0,5 % de hauteur, longueurs variées) façon page de documentation, sur tout le fond clair. Pendant « Reading about it takes weeks. » elles remontent et disparaissent par le haut (≈ 1 s). Elles disent « lecture » sans un mot lisible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Antithèse semaines / minutes",
+      "name_en": "weeks-vs-minutes contrast hook",
+      "t": "0:02.27-0:09.0",
+      "frames": "f68-f270",
+      "fps": 30,
+      "mechanics": "Deux phrases au même gabarit : « Reading about it takes weeks. » (deux lignes, ≈ 7 % de hauteur, à gauche, fond clair, texte qui fonce du gris #6B7590 au bleu nuit en ≈ 20 im) puis « Seeing it takes minutes. » (≈ 5 %, en haut à gauche, fond bleu électrique) aussitôt prouvée par un schéma qui se construit. Le changement de fond porte l'opposition.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-cut-f136.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation de texte par balayage gauche → droite",
+      "name_en": "linear wipe-on text",
+      "t": "0:04.43-0:04.9",
+      "frames": "f133-f147",
+      "fps": 30,
+      "mechanics": "Un masque avance de gauche à droite à vitesse constante (24 caractères en ≈ 15 im, lettres coupées en plein glyphe : « Seeing it t », « takes m »). Même procédé pour « Tech Fusionist » (f298-f315) et « Beginner to job-ready. » (f633-f640, ≈ 2-3 caractères par image). Linéaire, sans ease ni curseur : se lit comme une frappe mécanique.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f136.jpg, microM-008-move-f620.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Schéma d'architecture construit nœud par nœud",
+      "name_en": "node-by-node diagram build",
+      "t": "0:04.6-0:07.0",
+      "frames": "f139-f210",
+      "fps": 30,
+      "mechanics": "Pour chaque nœud : le lien se trace (≈ 4 im), le contour arrondi blanc 1,5 px se dessine depuis un coin (≈ 6 im), le libellé (≈ 1,5 % de hauteur) apparaît en fondu (≈ 6 im). Ordre : Users f140, CDN f150, Load balancer f164, Auth/Orders/Payments f168-f182 (décalés de 2-4 im), Postgres/Redis cache f182-f196, liens courbes jusqu'à f206. Un nœud toutes les 10-14 im. Le schéma occupe la bande 30-75 % de hauteur ; boîtes ≈ 6 % de hauteur, petites.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 139, "to": 212, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Paquets de données qui circulent dans les liens",
+      "name_en": "flowing data dots",
+      "t": "0:07.0-0:09.0",
+      "frames": "f212-f270",
+      "fps": 30,
+      "mechanics": "Des points jaunes #FDD13A (≈ 0,6 % de hauteur) glissent le long des liens de gauche à droite, en boucle, plusieurs à la fois et décalés. Ils rendent le schéma vivant pendant 2 s sans rien ajouter de lisible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille de plan d'architecte sur bleu électrique",
+      "name_en": "blueprint grid",
+      "t": "0:04.5-0:09.0",
+      "frames": "f135-f270",
+      "fps": 30,
+      "mechanics": "Grille fine bleu plus clair (≈ 2,5 % de la hauteur par case) sur #1D3FE0, immobile. Elle situe le schéma dans un univers d'ingénieur sans charger l'image.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet de couleur plein écran aller-retour",
+      "name_en": "full-frame color wipe",
+      "t": "0:09.0-0:09.5 et 0:36.2-0:36.7",
+      "frames": "f270-f285 et f1086-f1101",
+      "fps": 30,
+      "mechanics": "Un panneau jaune #FDD13A entre par la gauche et couvre 30 %, 55 %, 83 %, 97 %, 100 % de la largeur en 5 im (ease-out), reste plein 3 im, puis repart vers la droite en 7-8 im (3, 10, 34, 55, 68, 89, 99 %, ease-in-out) en révélant la scène suivante (bleu nuit, puis bleu électrique). Bord net, aucun flou. Identique les deux fois, sans lien avec le contenu.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f282.jpg, microM-011-cut-f1098.jpg",
+      "illus": {"from": 268, "to": 288, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation du logo avec promesse",
+      "name_en": "logo reveal lockup",
+      "t": "0:09.4-0:13.1",
+      "frames": "f283-f392",
+      "fps": 30,
+      "mechanics": "Deux anneaux entrelacés (jaune, blanc, ≈ 8 % de hauteur) apparaissent en fondu en se rapprochant (f283-f290), « Tech Fusionist » blanc ≈ 9 % révélé de gauche à droite (f298-f315), sous-titre « Visual guides for Cloud, DevOps and AI engineers. » ≈ 2 % en fondu gris → gris clair (f325-f345). Puis 2,5 s de maintien sans aucun mouvement.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f282.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné par le gris",
+      "name_en": "muddy crossfade",
+      "t": "0:13.1-0:13.5 (et 20.3, 27.0, 31.6 s)",
+      "frames": "f393-f405, f608-f626, f812-f826, f948-f955",
+      "fps": 30,
+      "mechanics": "Le passage d'un fond à l'autre se fait par opacité linéaire en 6 à 9 im ; du bleu nuit au gris clair, l'image passe par un gris moyen terne (f396-f399), et du bleu au clair par un bleu délavé. Utilisé quatre fois : c'est la transition par défaut de la vidéo.",
+      "verdict": "cliche",
+      "evidence": "microM-005-move-f399.jpg, microM-009-move-f821.jpg, microM-010-move-f950.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Couvertures de guides redessinées en aplats",
+      "name_en": "flat book covers",
+      "t": "0:13.5-0:20.5",
+      "frames": "f405-f615",
+      "fps": 30,
+      "mechanics": "Huit couvertures (≈ 37 % de hauteur) chacune d'une couleur pleine (jaune, bleu nuit, orange, bleu, blanc, vert, bleu nuit, lavande) avec titre en grotesque grasse, un pictogramme au trait (couches, terminal, workflow, grille, courbe pointillée, bouclier, graphe) et le petit logo en pied ; ombre portée douce. Système graphique cohérent mais inventé : pas les vrais visuels demandés.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling le long d'une rangée de couvertures",
+      "name_en": "lateral pan along product row",
+      "t": "0:13.7-0:20.3",
+      "frames": "f409-f608",
+      "fps": 30,
+      "mechanics": "Les couvertures montent en cascade (fondu + glissement vers le haut, décalage ≈ 3 im, f409-f416), puis la rangée défile vers la gauche pendant ≈ 6 s sur une seule courbe ease-in-out (vitesse maximale vers 17 s). Les couvertures qui entrent par la droite sont légèrement tournées en perspective et se redressent en avançant (effet carrousel discret). Long et sans accent.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f399.jpg, microM-006-move-f498.jpg, microM-007-move-f536.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Plan produit : couverture à gauche, promesse à droite",
+      "name_en": "hero product split layout",
+      "t": "0:20.7-0:27.0",
+      "frames": "f621-f810",
+      "fps": 30,
+      "mechanics": "Couverture AWS seule à gauche (x 5-35 %, ≈ 55 % de hauteur), entrée en fondu avec une rotation ≈ 10° qui se pose à 0° en 8 im (f621-f629) ; à droite étiquette mono ≈ 1,2 % (« AWS Cloud Engineer Mastery Guide 2026 »), titre « Beginner to job-ready. » ≈ 5,5 %, puis contenu (liste, terminal) dans la même colonne. Composition classique de page produit.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f620.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Liste de bénéfices cochée un par un",
+      "name_en": "staggered checklist",
+      "t": "0:21.7-0:24.1",
+      "frames": "f651-f723",
+      "fps": 30,
+      "mechanics": "Cinq lignes (case arrondie cochée + texte blanc ≈ 2 % de hauteur) : chacune apparaît en fondu d'opacité en ≈ 6 im, une toutes les 12 à 15 im (f651, f663, f675, f690, f702). Aucun déplacement, aucune animation de la coche. Texte trop petit pour un écran de téléphone.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal qui tape la commande et confirme en vert",
+      "name_en": "terminal typing demo",
+      "t": "0:24.3-0:27.0",
+      "frames": "f729-f810",
+      "fps": 30,
+      "mechanics": "Fenêtre bleu nuit à pastilles rouge/jaune/verte (≈ 40 % de largeur) qui apparaît en fondu de 9 im par-dessus la liste (les deux textes se superposent, f729-f738). Puis « $ terraform apply -auto-approve » tapé avec curseur bloc (≈ 3 caractères par 0,1 s), trois lignes de sortie qui tombent une à une, enfin « Apply complete! Resources: 12 added. » en vert #12A06A. Mono ≈ 1,5 % de hauteur.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Nuage de pastilles en défilement continu",
+      "name_en": "scrolling tag marquee",
+      "t": "0:27.5-0:31.6",
+      "frames": "f823-f950",
+      "fps": 30,
+      "mechanics": "Fond jaune #FDD13A, quatre rangées de pastilles de technologies (≈ 4 % de hauteur : AWS, Azure, GCP, Terraform, Kubernetes, LLMs, IAM…), deux au-dessus et deux au-dessous du titre « Explained visually. » (≈ 8 %). Quatre styles alternés : plein bleu nuit, plein bleu électrique, plein blanc, contour bleu nuit. Les rangées défilent en continu (sens alternés, probable), pastilles coupées par les bords. Entrée en fondu (pastilles f823-f830, titre f833-f838).",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f821.jpg, overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'achat avec curseur, clic et toast",
+      "name_en": "pricing card click-through",
+      "t": "0:31.8-0:36.2",
+      "frames": "f955-f1086",
+      "fps": 30,
+      "mechanics": "Carte façon page Gumroad (visuel jaune, titre, « $3+ », bouton bleu nuit « I want this! ») qui apparaît en fondu + léger agrandissement (≈ 10 im). « Pay what you want. » ≈ 7 % à droite. Le curseur part du bas à droite et rejoint le bouton en ≈ 20 im (f987-f1007, départ lent, milieu rapide, arrivée lente = ease-in-out), petit survol, clic vers f1023 : le bouton passe instantanément au bleu électrique, sans enfoncement. Toast « ✓ Added to your library » en fondu + montée sous la carte (f1029-f1033). Puis 1,7 s d'attente.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-010-move-f950.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Écran final d'appel à l'action",
+      "name_en": "CTA end card",
+      "t": "0:36.7-0:40.0",
+      "frames": "f1101-f1200",
+      "fps": 30,
+      "mechanics": "Sur bleu électrique : les anneaux du logo grandissent de ≈ 0,2 à 1 en 6 im (f1102-f1107, ease-out), « Start learning visually. » blanc ≈ 7 % en fondu de 8 im (f1108-f1115), pastille jaune avec URL en mono bleu nuit (f1120-f1130), « Tech Fusionist » ≈ 1,5 % en pied. Maintien figé de 2,3 s.",
+      "verdict": "adapter",
+      "evidence": "microM-011-cut-f1098.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette de marque à fonds alternés",
+      "name_en": "alternating brand backgrounds",
+      "t": "0:00-0:40.0",
+      "frames": "f0-f1200",
+      "fps": 30,
+      "mechanics": "Chaque acte a son fond plein : clair #EDF1F8 (problème, catalogue, prix), bleu électrique #1D3FE0 (preuve, produit, fin), bleu nuit #0B1230 (logo), jaune #FDD13A (tags, volets). L'alternance sépare les actes ; le jaune sert d'accent (points, URL, couverture phare).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ouverture en rafale puis plans longs",
+      "name_en": "front-loaded pacing",
+      "t": "0:00-0:40.0",
+      "frames": "f0-f1200",
+      "fps": 30,
+      "mechanics": "0-2,3 s : un changement toutes les 13-15 im. Ensuite : actes de 2,5 à 6 s, 45 % du temps en maintien statique, plus longues attentes de 2,3 à 3,5 s (logo, carte de prix, fin). La promesse de rythme de l'ouverture n'est pas tenue ; sans musique, rien ne soutient les plans longs.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt demandait un SaaS connu et de vrais visuels récupérés sur Internet ; le résultat montre « Tech Fusionist » (guides vendus sur Gumroad, probablement le produit de l'auteur du post) avec des couvertures redessinées en aplats : aucune capture ni photo réelle."},
+    {"kind": "direction", "insight": "« Typical Twitter launch videos » a produit le gabarit attendu, sans signature : mots-problèmes, antithèse, logo, rangée de produits, liste de bénéfices, démo terminal, nuage de tags, carte de prix cliquée, appel à l'action."},
+    {"kind": "build", "insight": "Pas un mot sur le son : la vidéo sort muette alors que ce format vit de la musique et des coupes sur le temps. Il faut demander explicitement une piste et la caler (BPM, temps des coupes)."},
+    {"kind": "qa", "insight": "Aucune consigne de durée ni de densité : 40 s dont 45 % de maintiens statiques. Une règle « quelque chose bouge toutes les 0,5 à 1 s, maintien maximal 1 s » aurait resserré le montage."},
+    {"kind": "structure", "insight": "« Showing off the features, the benefits » a donné un acte par bénéfice, chacun relié au suivant par un fondu générique : il manquait une consigne de transitions enchaînées et motivées."}
+  ],
+  "steal": [
+    "Ouvrir sur 5 mots du jargon de la cible en coupes sèches toutes les 13-15 images, chacun posé par un rétrécissement 105 → 100 % en 2 images.",
+    "Antithèse en deux plans : « Reading about it takes weeks. » sur fond clair, puis « Seeing it takes minutes. » sur bleu, aussitôt prouvée par l'image.",
+    "Construire un schéma d'architecture nœud par nœud (lien, contour tracé, libellé), puis faire circuler des points d'accent dans les liens.",
+    "Rangées de pastilles de tags en défilement continu, quatre styles alternés, autour d'un titre central : tout le catalogue en un plan.",
+    "Volet de couleur plein écran aller-retour en 15 images (entrée ease-out 5 im, maintien 3 im, sortie 7 im) pour séparer deux actes."
+  ],
+  "flaws": [
+    "Aucune musique ni effet sonore : les coupes rapides de l'ouverture tombent à plat.",
+    "45 % de maintiens statiques : logo 2,5 s, carte de prix 3,5 s, écran final 2,3 s.",
+    "Fondus enchaînés par défaut qui passent par un gris boueux entre fond sombre et fond clair.",
+    "Le terminal arrive en fondu par-dessus la liste : deux textes superposés pendant 9 images.",
+    "Prompt non respecté : ni SaaS connu ni vrais visuels, couvertures redessinées."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : courbes simples (fondus et balayages linéaires, un seul ease-in-out), peu de transitions remarquables, pas de musique ; les planches à 2 im/s et les trois planches extra suffisent."
+  }
+}

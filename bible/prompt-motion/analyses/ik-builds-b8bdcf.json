@@ -1,0 +1,424 @@
+{
+ "slug": "ik-builds-b8bdcf",
+ "title": "Paper-style product launch film",
+ "craft": 4,
+ "craft_reason": "Vrai récit produit porté par une balle physique (squash, pelure d'oignon), des notes au feutre et une musique en sections exactement comme demandé ; énergie faible sur le papier et deux transitions génériques (réseau, bandes).",
+ "style": {
+  "family": "explainer papier et feutre, physique cartoon, alternance clair/sombre",
+  "palette": [
+   "#F7F7F2",
+   "#D6D7D0",
+   "#161712",
+   "#54D8C0",
+   "#9C5448",
+   "#2F5B47",
+   "#E9E3CD",
+   "#171E17",
+   "#3C6C54"
+  ],
+  "type": [
+   "Anton capitales (titre cinétique)",
+   "Caveat (notes manuscrites)",
+   "mono type IBM Plex Mono (axes, URL)",
+   "grotesque semi-grasse type Inter (logotype)",
+   "serif de labeur (accroche)"
+  ],
+  "texture": "grain fin, vignettage papier, ombres portées douces, sphère ombrée avec ombre de contact, halo teal en mode sombre, ombre empilée bicolore",
+  "mood": "artisanal, concret, chaleureux, pédagogique"
+ },
+ "rhythm": {
+  "bpm": 120,
+  "sync": "serree",
+  "dead_time": "un-peu",
+  "acts": [
+   "0-1,5 s : accroche, une balle tombe sur le papier et rebondit (pelure d'oignon)",
+   "1,2-5,0 s : « your firm » ; les documents métier l'entourent ; notes au feutre",
+   "5,0-6,45 s : bascule sombre, absorption des documents, réseau, envol",
+   "6,5-8,6 s : « MEBBIAN LEARNS ALL OF IT » pleut lettre à lettre, soulignement",
+   "8,6-11,15 s : le titre s'effondre en graphe, plafond barré, courbe en S",
+   "11,2-12,5 s : bandes vers le clair, la balle vole en arc vers une cible",
+   "12,5-15,06 s : la balle devient le logo, accroche, URL entourée"
+  ]
+ },
+ "techniques": [
+  {
+   "cat": "narrative",
+   "name_fr": "La balle = le client, puis la marque",
+   "name_en": "brand-derived hero object",
+   "t": "0:00.30-0:13.00",
+   "frames": "f18-f780",
+   "fps": 60,
+   "mechanics": "La sphère teal est « your firm », puis l'IA qui absorbe, le point du titre, le curseur du graphe et enfin une des 3 sphères du logo ; le personnage est tiré du logo.",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg"
+  },
+  {
+   "cat": "timing",
+   "name_fr": "Rebond physique avec écrasement",
+   "name_en": "physical bounce with squash",
+   "t": "0:00.30-0:01.53",
+   "frames": "f18-f92",
+   "fps": 60,
+   "mechanics": "Chute de y 20 % à y 70 % en 12 im avec étirement 1,3:1 ; écrasement 2:1 à l'impact f32 (sur le kick f31) ; rebond 1 haut de 21 % du cadre (f32-f60, restitution ~0,65), rebond 2 ~6 % (~12 im), roulement de x 33 % à 50 %, arrêt f90.",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg",
+   "illus": {
+    "from": 18,
+    "to": 92,
+    "n": 8
+   }
+  },
+  {
+   "cat": "texture",
+   "name_fr": "Pelure d'oignon",
+   "name_en": "onion skin",
+   "t": "0:00.33-0:12.80",
+   "frames": "f20-f790",
+   "fps": 60,
+   "mechanics": "Chaque position passée de la balle reste en contour pointillé gris 1 px (toutes les 2-3 im), effacé en ~16 im (f156-f172) ; sur le graphe, cercles fantômes teal tous les ~110 px.",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Notes au feutre qui s'écrivent",
+   "name_en": "handwriting stroke-on",
+   "t": "0:01.17-0:04.75",
+   "frames": "f70-f285",
+   "fps": 60,
+   "mechanics": "Caveat tracée au stroke-dashoffset, ~14-25 im par note, chacune avec une flèche dessinée ; vert sapin pour les données (past bids, drawings, pricing), brique pour l'humain (your firm, the rules in your estimator's head).",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "character",
+   "name_fr": "Respiration de la balle sur le temps",
+   "name_en": "anticipation breath",
+   "t": "0:02.47-0:02.60",
+   "frames": "f148-f156",
+   "fps": 60,
+   "mechanics": "Écrasement (f148) puis étirement ~1,5:1 (f152, sur le temps f151), retour rond (f156) ; la balle appelle les documents.",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "ui",
+   "name_fr": "Documents métier en accessoires",
+   "name_en": "concrete product props",
+   "t": "0:02.60-0:02.87",
+   "frames": "f156-f172",
+   "fps": 60,
+   "mechanics": "4 cartes (BID SUMMARY tamponné SUBMITTED, FLOOR PLAN A-101, UNIT PRICING en CY/LF/SF, post-it) entrent depuis les coins en tournant, décalage 4 im, posées à ±2-4°.",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "layout",
+   "name_fr": "Composition en 4 coins autour du héros",
+   "name_en": "radial corner layout",
+   "t": "0:02.87-0:05.00",
+   "frames": "f172-f300",
+   "fps": 60,
+   "mechanics": "Cartes aux 4 coins, balle au centre sur sa ligne, notes qui pointent vers l'intérieur ; l'œil revient toujours au centre.",
+   "verdict": "reprendre",
+   "evidence": "overview-01.jpg"
+  },
+  {
+   "cat": "timing",
+   "name_fr": "Nettoyage avant la coupe",
+   "name_en": "pre-cut clean-up",
+   "t": "0:04.75-0:05.00",
+   "frames": "f285-f299",
+   "fps": 60,
+   "mechanics": "Notes puis ligne de sol s'effacent en ~10 im juste avant la bascule ; la coupe ne tranche aucun geste en cours.",
+   "verdict": "reprendre",
+   "evidence": "microM-001-cut-f300.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Bascule clair/sombre franche",
+   "name_en": "hard light/dark switch",
+   "t": "0:05.00",
+   "frames": "f300",
+   "fps": 60,
+   "mechanics": "Coupe sèche sur le temps ; même composition, cartes passées en mode sombre, halo teal (rayon ~12 % de la hauteur), fond #171E17 à trame de points ; la batterie s'arrête au même instant.",
+   "verdict": "reprendre",
+   "evidence": "microM-001-cut-f300.jpg"
+  },
+  {
+   "cat": "shape",
+   "name_fr": "Absorption dans la balle",
+   "name_en": "absorb into hero",
+   "t": "0:05.20-0:05.80",
+   "frames": "f312-f348",
+   "fps": 60,
+   "mechanics": "Chaque carte tourne de 30-60°, rétrécit et plonge dans la balle en ~10-12 im (ease-in), décalage ~9 im ; la balle s'écrase vers la carte (~1,3:1 à f324, f333, f342) et projette des traits blancs ; le halo grossit.",
+   "verdict": "reprendre",
+   "evidence": "extra-02.jpg",
+   "illus": {
+    "from": 312,
+    "to": 348,
+    "n": 6
+   }
+  },
+  {
+   "cat": "shape",
+   "name_fr": "Réseau qui jaillit",
+   "name_en": "network burst",
+   "t": "0:05.85-0:06.20",
+   "frames": "f351-f372",
+   "fps": 60,
+   "mechanics": "~8 lignes de la balle vers des nœuds blancs et saumon (rayon ~15-20 % du cadre) reliés en polygone ; tracé ~12 im, effacement ~6 im. Image toute faite du graphe de connaissances.",
+   "verdict": "adapter",
+   "evidence": "extra-02.jpg"
+  },
+  {
+   "cat": "character",
+   "name_fr": "Envol avec anticipation",
+   "name_en": "stretch-and-launch",
+   "t": "0:06.25-0:06.45",
+   "frames": "f375-f387",
+   "fps": 60,
+   "mechanics": "Étirement jusqu'à ~2,5:1 puis sortie par le haut avec traînée verticale de cercles teal ; pas de batterie pendant le vol.",
+   "verdict": "reprendre",
+   "evidence": "extra-02.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Pluie de lettres avec traînées colorées",
+   "name_en": "letter rain with smear echoes",
+   "t": "0:06.50-0:07.12",
+   "frames": "f390-f427",
+   "fps": 60,
+   "mechanics": "Lettres Anton qui tombent du haut, chacune avec 2 copies décalées (teal, brique) qui se résorbent à l'arrivée, petit rebond ; décalage ~1,5-2 im par lettre ; ligne 1 f390-f411, ligne 2 f409-f427 ; batterie de retour sur l'attaque f392.",
+   "verdict": "reprendre",
+   "evidence": "microM-002-move-f413.jpg",
+   "illus": {
+    "from": 388,
+    "to": 428,
+    "n": 8
+   }
+  },
+  {
+   "cat": "type-design",
+   "name_fr": "Titre massif à ombre empilée",
+   "name_en": "stacked offset shadow",
+   "t": "0:07.12-0:08.58",
+   "frames": "f427-f515",
+   "fps": 60,
+   "mechanics": "Capitales crème #ECE8DF, ligne 1 = 73 % de la largeur, capitale ~17,6 % de la hauteur ; 3-4 copies décalées alternant vert #3C6C54 et brique #9C5448 ; bloc dans la moitié haute ; la balle teal en point final.",
+   "verdict": "reprendre",
+   "evidence": "overview-02.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Soulignement au feutre",
+   "name_en": "marker underline",
+   "t": "0:07.90-0:08.10",
+   "frames": "f474-f486",
+   "fps": 60,
+   "mechanics": "Trait ondulé brique sous « ALL OF IT », tracé en ~10 im sur l'attaque f482.",
+   "verdict": "reprendre",
+   "evidence": "overview-02.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Effondrement physique du titre",
+   "name_en": "gravity collapse",
+   "t": "0:08.58-0:09.20",
+   "frames": "f515-f556",
+   "fps": 60,
+   "mechanics": "Les lettres quittent leur place, tournent au hasard et tombent en accélérant hors du cadre (~40 im) pendant que les axes du graphe se tracent derrière ; trois impacts sonores à 8,37 / 8,45 / 8,53 s.",
+   "verdict": "reprendre",
+   "evidence": "microM-003-move-f540.jpg"
+  },
+  {
+   "cat": "data",
+   "name_fr": "Plafond barré puis courbe en S",
+   "name_en": "qualitative chart story",
+   "t": "0:09.20-0:11.15",
+   "frames": "f552-f669",
+   "fps": 60,
+   "mechanics": "La balle longe une ligne plate, « the ceiling » s'écrit ; la ligne ondule, le mot est barré ; courbe en S teal 6 px tracée pendant que la balle la monte ; « more bids ✓ », accolade « same team » ; aucun chiffre.",
+   "verdict": "reprendre",
+   "evidence": "overview-02.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Stores horizontaux vers le clair",
+   "name_en": "bars wipe",
+   "t": "0:11.18-0:11.48",
+   "frames": "f671-f689",
+   "fps": 60,
+   "mechanics": "Bandes horizontales claires de longueurs aléatoires glissant depuis les 2 bords, ~18 im ; seule la balle survit. Effet glitch générique, non motivé.",
+   "verdict": "adapter",
+   "evidence": "microM-004-cut-f682.jpg"
+  },
+  {
+   "cat": "timing",
+   "name_fr": "Trajectoire en arc vers une cible tracée",
+   "name_en": "arc to drawn target",
+   "t": "0:11.48-0:12.50",
+   "frames": "f690-f750",
+   "fps": 60,
+   "mechanics": "Long arc de droite à gauche avec pelure d'oignon ; un cercle au feutre brique se trace d'avance comme cible ; la balle y entre à f750, sur le coup le plus fort du morceau.",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "La balle devient le logo",
+   "name_en": "object-to-logo morph",
+   "t": "0:12.50-0:12.67",
+   "frames": "f750-f760",
+   "fps": 60,
+   "mechanics": "Écrasement à l'impact (f752), le cercle s'efface, la balle grossit en ~6 im et se divise en 3 sphères reliées (la marque) ; dépassement probable.",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg",
+   "illus": {
+    "from": 744,
+    "to": 772,
+    "n": 8
+   }
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Logotype lettre à lettre en fondu",
+   "name_en": "per-letter fade-in",
+   "t": "0:12.67-0:12.87",
+   "frames": "f760-f772",
+   "fps": 60,
+   "mechanics": "« Mebbian » de gauche à droite, ~2 im entre lettres, chaque lettre du gris clair au noir en ~10 im.",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Accroche mot à mot puis URL",
+   "name_en": "word-by-word reveal",
+   "t": "0:12.97-0:13.50",
+   "frames": "f778-f810",
+   "fps": 60,
+   "mechanics": "Accroche serif grise révélée mot par mot (~3 im par mot), URL mono en fondu.",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg"
+  },
+  {
+   "cat": "narrative",
+   "name_fr": "CTA entouré au feutre",
+   "name_en": "marker-circled CTA",
+   "t": "0:13.60-0:14.00",
+   "frames": "f816-f840",
+   "fps": 60,
+   "mechanics": "Ellipse brique tracée à la main autour de l'URL en ~20 im ; la grammaire du feutre ferme le film.",
+   "verdict": "reprendre",
+   "evidence": "overview-03.jpg"
+  },
+  {
+   "cat": "color",
+   "name_fr": "Palette papier, encre et 2 accents",
+   "name_en": "paper/ink/2-accent palette",
+   "t": "0:00.00-0:15.06",
+   "frames": "f0-f899",
+   "fps": 60,
+   "mechanics": "Papier #F7F7F2, encre #161712, teal #54D8C0 pour le produit, brique #9C5448 pour l'annotation humaine ; mode sombre anthracite vert #171E17 accordé à la palette.",
+   "verdict": "reprendre",
+   "evidence": "overview-01.jpg"
+  },
+  {
+   "cat": "texture",
+   "name_fr": "Papier vignetté et grainé",
+   "name_en": "paper vignette and grain",
+   "t": "0:00.00-0:15.06",
+   "frames": "f0-f899",
+   "fps": 60,
+   "mechanics": "Centre #F7F7F2, coins #D6D7D0, grain fin constant ; trame de points discrète en mode sombre.",
+   "verdict": "reprendre",
+   "evidence": "overview-03.jpg"
+  },
+  {
+   "cat": "sound",
+   "name_fr": "Musique en sections",
+   "name_en": "sectioned score",
+   "t": "0:00.00-0:15.06",
+   "frames": "f0-f899",
+   "fps": 60,
+   "mechanics": "Kick d'entrée sur le 1er impact (f31) ; batterie coupée à 5,0 s (bascule) et 11,25-12,5 s (vol) ; retour à 6,53 s (titre) et 12,5 s (logo, -9,3 dB, moment le plus fort) ; petits sons sur chaque impact.",
+   "verdict": "reprendre",
+   "evidence": "rhythm.jpg"
+  },
+  {
+   "cat": "timing",
+   "name_fr": "Maintiens calmes",
+   "name_en": "low-energy holds",
+   "t": "0:01.53-0:15.06",
+   "frames": "f92-f899",
+   "fps": 60,
+   "mechanics": "0,9 s de balle immobile (1,53-2,45 s), 1,75 s de traits fins seulement (3,0-4,75 s), 1,5 s de carte finale ; le détecteur mesure 70 % d'images quasi fixes.",
+   "verdict": "adapter",
+   "evidence": "rhythm.jpg"
+  }
+ ],
+ "prompt_insights": [
+  {
+   "kind": "build",
+   "insight": "Écrire le vocabulaire exact de l'animation (squash/stretch, stagger, overlap, onion skin, smear, follow-through) : chaque terme devient une technique visible à l'écran."
+  },
+  {
+   "kind": "structure",
+   "insight": "Un plan musical écrit en sections (« drums drop on the dark switch and while the ball is airborne, slam back on the type and the logo ») est suivi au signal près : la musique devient une structure, pas un fond."
+  },
+  {
+   "kind": "direction",
+   "insight": "« Name what the product learns, never the abstraction » produit des objets concrets du métier (bid summary, plan A-101, unit pricing, post-it) au lieu d'icônes génériques."
+  },
+  {
+   "kind": "banned",
+   "insight": "« No animator jargon on screen » est utile : sans cette règle, le modèle affiche le nom des techniques (voir l'anneau « SPRINGS · EASING » d'une autre vidéo)."
+  },
+  {
+   "kind": "banned",
+   "insight": "« No invented results » donne un graphe sans chiffres (plafond barré, courbe en S, « more bids ») : la preuve devient qualitative et reste crédible."
+  },
+  {
+   "kind": "inputs",
+   "insight": "Prompt-gabarit à variables (produit, docs de positionnement, couleurs, polices, logo) : la même mécanique peut produire un film par marque ; le résultat montre que les variables bien remplies suffisent."
+  },
+  {
+   "kind": "direction",
+   "insight": "« One primary move per transition; no generic push/slide » est surtout respecté, sauf la transition par bandes aléatoires et le burst réseau, qui restent génériques."
+  },
+  {
+   "kind": "qa",
+   "insight": "Mastering demandé à -14 LUFS / -2 dBTP « re-measured after AAC encode » : mesuré sur le fichier publié -14,2 LUFS intégrés et -2,7 dBTP. La cible chiffrée et la re-mesure après encodage sont tenues."
+  }
+ ],
+ "steal": [
+  "Tirer le personnage du logo (une sphère de la marque) pour que la fin « objet -> logo » soit évidente et méritée.",
+  "Annoter au feutre en 2 couleurs : une pour les données produit, une pour l'humain.",
+  "Couper la batterie pendant les moments suspendus (bascule, vol) et la relancer sur l'impact visuel suivant.",
+  "Faire du titre la matière de la scène suivante : ses lettres tombent par gravité pendant que le graphe se trace derrière.",
+  "Écrire dans le prompt le vocabulaire exact de l'animation : chaque terme devient une technique visible."
+ ],
+ "flaws": [
+  "Énergie faible sur le papier : 0,9 s de balle immobile et 1,75 s de traits fins.",
+  "Burst « réseau de nœuds » : image toute faite de l'IA.",
+  "Transition par bandes aléatoires : glitch générique, non motivé.",
+  "Textes des cartes et des notes petits (~3,5 % de la hauteur), peu lisibles sur téléphone.",
+  "Carte finale tenue 1,5 s, un peu longue pour 15 s."
+ ],
+ "family": "produit",
+ "music": {
+  "verdict": "partielle",
+  "evidence": "La structure suit la musique : la batterie s'arrête à 5,0 s sur la bascule sombre (coupe f300, +1,6 im après la barre bleue f298) et pendant le vol de la balle (11,25–12,5 s) ; elle repart sur la 1re lettre du titre (f390, +1,6 im) et sur l'impact du logo (f750, +1,3 im, moment le plus fort du morceau). L'impact 1 (f32) tombe sur l'attaque audible (−0,7 im). Mais à l'intérieur des scènes la physique mène : 7/20 gestes-clés à ±2 im d'une barre bleue ou bleu clair (hasard 33 %) ; absorptions, réseau, envol, effondrement et logo formé à 4–7 im de la grille. Les bruitages sont posés sur les impacts (le son suit l'image).",
+  "synced": [
+   "coupes",
+   "couleur",
+   "impacts",
+   "texte",
+   "drop"
+  ],
+  "style_match": "Électro légère à 120 BPM, chaleureuse, avec bruitages de papier et de feutre : colle à l'univers artisanal ; les coupures de batterie soulignent les moments suspendus.",
+  "how_built": "Plan musical écrit par sections dans le prompt (« drums drop on the dark switch and while the ball is airborne, slam back on the type and the logo ») et « a sound on every hit » : arrangement et bruitages suivent le récit, mais aucune grille de temps n'est imposée aux mouvements."
+ }
+}

@@ -1,0 +1,580 @@
+{
+  "slug": "0xfemyn-e114d3",
+  "title": "AIsa API key promo",
+  "handle": "@0xfemyn",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Montage calé à l'image près sur un 128 BPM, transitions motivées et enchaînées, récit net en 15 s ; perd un point sur les micro-textes illisibles et le hub lumineux générique.",
+  "summary": "Promo de 15 s pour AIsa, une clé API unique pour agents IA. Le récit va du chaos (compteur qui grimpe à 5 000 clés, mur de puces d'erreur) à la solution (« One key. »), puis aux preuves chiffrées et au logo. Force : montage verrouillé sur la croche à 128 BPM, transitions motivées (implosion puis révélation circulaire, iris noir, volet double). Faiblesse : micro-textes illisibles.",
+  "prompt_vs_result": [
+    "Le prompt n'impose que la durée (15 s), la marque (AIsa) et l'ambition (« Go all out »). Aucun message, aucune palette, aucune musique, aucun chiffre.",
+    "Claude a tout décidé : récit problème → solution → preuves → appel à l'action, textes, palette orange/noir/blanc tirée du logo, bande-son 128 BPM et montage calé sur la croche, six transitions différentes.",
+    "« Go all out » a poussé vers la densité (6 transitions, 3 scènes de compteurs) au détriment des micro-textes. Il aurait fallu fixer le message clé, des chiffres réels et une taille de texte minimale."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#E4601F",
+        "role": "orange de marque : fond de la scène « One key. », accents, « + », icône"
+      },
+      {
+        "hex": "#141414",
+        "role": "fond sombre à trame de points (scènes problème et hub)"
+      },
+      {
+        "hex": "#F7F7F4",
+        "role": "blanc cassé : fonds des mots-chocs et de la carte de fin"
+      },
+      {
+        "hex": "#F8F4EE",
+        "role": "crème : fond de la scène des statistiques"
+      },
+      {
+        "hex": "#F4C3B8",
+        "role": "rose intermédiaire du compteur qui chauffe"
+      },
+      {
+        "hex": "#E8513A",
+        "role": "rouge-orangé du compteur à 5 000 (alerte)"
+      },
+      {
+        "hex": "#1E1E20",
+        "role": "puces et cartes d'interface sombres"
+      },
+      {
+        "hex": "#F6D9C9",
+        "role": "halo pêche radial en bas de la carte de fin"
+      },
+      {
+        "hex": "#2B2B2B",
+        "role": "gris anthracite du « sa » du logotype"
+      }
+    ],
+    "type": "Grotesque géométrique lourde (probable Plus Jakarta Sans ou Manrope ExtraBold) : capitales serrées ≈ 22 % H pour les mots-chocs, casse phrase pour « One key. » ; mono capitales espacées ≈ 1,5 % H pour étiquettes et puces.",
+    "texture": "Trame de points discrète sur le fond noir ; halo orange (glow) autour de l'icône et du point d'implosion ; flou de profondeur sur une partie des puces ; aberration chromatique RGB sur le compteur ; flou de bougé horizontal sur le panoramique filé ; dégradé radial pêche en fin. Pas de grain.",
+    "style": "Promo SaaS tech tricolore contrastée",
+    "coherence": "Trois couleurs seulement (orange, noir, blanc) recombinées à chaque plan, une seule famille grotesque plus une mono : le système tient malgré six types de transitions. L'orange marque toujours le mot qui compte (key, needs, +, One key). Le hub à câbles lumineux et le curseur de clic cassent un peu le ton éditorial en tirant vers le gabarit SaaS générique."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM, pulsation nette (7,67). À 30 fps, 1 temps = 14,06 im et 1 croche = 7,03 im. Les 5 mots-chocs durent exactement 7 im chacun (f21, f28, f35, f42, f49, f56) et les 5 mots « Another … » changent toutes les 14 im (f70, f84, f98, f112, f126) : la durée des plans est écrite en croches et en temps. Les gestes tombent en général 1 im avant la barre (≈ 20-30 ms), donc 1 à 3 im avant l'attaque audible. Plus forte attaque de la piste à 5,631 s (f169) = flash et révélation de « One key. » (f168). Densité très forte jusqu'à 5,6 s (un changement toutes les 7 à 14 im), puis respiration. Maintiens quasi statiques : 6,33-7,03 s (carte de clé, 0,7 s, seul le libellé « API KEYS TO MANAGE: 1 » apparaît), 9,17-10,03 s (hub, 0,9 s, seules des impulsions courent sur les câbles), fin 14,13-14,93 s (0,8 s, normal pour une carte de fin). Le début 0-0,47 s n'est pas mort : la puce terminal se tape.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.70",
+        "what": "Fond noir à trame de points, petite puce terminal centrée « > your agent need▮ » tapée lettre à lettre, curseur orange",
+        "technique": "frappe machine terminal (typewriter)"
+      },
+      {
+        "t": "0:00.70-0:01.87",
+        "what": "DATA, SEARCH, MODELS, SKILLS, PAYMENTS en plein cadre, un mot toutes les 7 im, la puce « > your agent needs » épinglée en haut ; pied de page mono et pagination 01/05 à 05/05",
+        "technique": "mots-chocs sur la croche, inversion de palette à chaque coupe"
+      },
+      {
+        "t": "0:01.87-0:04.57",
+        "what": "Compteur « API KEYS TO MANAGE » de 1 à 5 000, sous-ligne « Another key. / contract. / invoice. / rate limit. / dashboard. » qui change à chaque temps ; puces d'erreur et noms de clés s'accumulent autour",
+        "technique": "compteur accéléré qui chauffe + mur de puces"
+      },
+      {
+        "t": "0:04.20-0:04.60",
+        "what": "Éclats RGB sur le chiffre (f126-127, f133-134, f137-138), arrêt sec sur 5,000 rouge",
+        "technique": "glitch d'aberration chromatique sur les temps"
+      },
+      {
+        "t": "0:04.93-0:05.57",
+        "what": "Le chiffre pâlit, les puces filent en traits radiaux vers le centre et s'effondrent en un point orange lumineux qui rétrécit pendant un temps",
+        "technique": "implosion en point + respiration avant le drop"
+      },
+      {
+        "t": "0:05.60-0:06.33",
+        "what": "Flash gris d'une image, disque orange qui s'ouvre en plein cadre ; « One » vient de gauche, « key. » de droite ; anneaux concentriques ; carte de clé qui se relève en 3D et se tape « sk-aisa-Egr••••••6mEY »",
+        "technique": "révélation circulaire sur le drop, mots convergents, ondes de choc"
+      },
+      {
+        "t": "0:06.33-0:07.10",
+        "what": "Carte de clé tenue, libellé mono « API KEYS TO MANAGE: 1 » en haut à gauche",
+        "technique": "rappel narratif (callback)"
+      },
+      {
+        "t": "0:07.13-0:07.47",
+        "what": "« One key. » se défocalise et monte, la carte bascule ; un point noir naît au centre et grossit jusqu'à avaler tout le cadre",
+        "technique": "iris trou noir"
+      },
+      {
+        "t": "0:07.47-0:07.87",
+        "what": "L'icône AIsa éclot du noir avec rotation et halo ; « Everything your agent needs. » apparaît mot à mot, « needs. » en orange",
+        "technique": "pop d'icône + titre mot à mot flou-net"
+      },
+      {
+        "t": "0:07.87-0:10.17",
+        "what": "Hub : icône centrale reliée par câbles courbes à 4 cartes (APIs 5,000+, MODELS 110+, SKILLS 40+, PAYMENTS x402) ; compteurs qui roulent, impulsions lumineuses, bandeau de sources défilant en bas",
+        "technique": "diagramme en étoile à câbles lumineux"
+      },
+      {
+        "t": "0:10.17-0:10.30",
+        "what": "Tout part à gauche avec un flou de bougé horizontal jusqu'au quasi-noir",
+        "technique": "panoramique filé (whip pan)"
+      },
+      {
+        "t": "0:10.30-0:11.93",
+        "what": "Fond crème : « 250,000+ agents running on AIsa » et « 100,000,000+ transactions processed » comptent en ease-out ; carte « LIVE · PAY PER CALL » qui défile ; pastilles « WORKS WITH Claude Code, Cursor, Codex, Manus, OpenClaw »",
+        "technique": "compteurs ease-out décalés + flux en direct"
+      },
+      {
+        "t": "0:11.93-0:12.40",
+        "what": "Volet double noir puis orange de gauche à droite, l'orange ressort à droite en découvrant la carte de fin ; les 6 fragments du logo se rassemblent",
+        "technique": "volet à panneaux superposés + logo assemblé"
+      },
+      {
+        "t": "0:12.40-0:13.40",
+        "what": "Logo, onde annulaire, logotype « AIsa » qui monte lettre à lettre, slogan « Everything your agent needs. One key. » mot à mot",
+        "technique": "verrouillage logo (lockup) révélé par masque"
+      },
+      {
+        "t": "0:13.40-0:14.13",
+        "what": "Soulignement manuscrit orange sous « One key. », pastilles « aisa.one » et « Get started → », curseur qui vient cliquer",
+        "technique": "appel à l'action avec curseur"
+      },
+      {
+        "t": "0:14.13-0:15.06",
+        "what": "Carte de fin tenue",
+        "technique": "maintien final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille du dossier juste (128 BPM, premier temps 0,486 s ; barres bleues des planches cohérentes). Les durées de plans sont des multiples exacts de la croche à 30 fps : 7 im pour les 5 mots-chocs (f21, f28, f35, f42, f49, f56), 14 im pour les 5 mots « Another … » (f70, f84, f98, f112, f126), 14 im pour le volet de fin (f358-f372). Comptage d'un geste clé par geste, à ±1 im d'une barre bleue ou bleu clair : 23 sur 29 (hasard ≈ 43 % à 30 fps, car une demi-période ne fait que 7 im ; à ±2 im le hasard monte à 71 % et le test ne discrimine plus). Calés : DATA f21 (attaque à 0,708 s, f21), 5 coupes, 5 changements de mot, flash f168 (plus forte attaque à 5,631 s, f169), carte qui se relève f177 (barre f176), frappe de la clé f182 (f183), point noir f218 (f218), icône f225 (f226), coupe après le panoramique f309 (f310), second compteur f316 (f317), volet f358 (f359), logo verrouillé f372 (f373), slogan f393 (f394), soulignement f409 (f408), clic du curseur f422 (f422). Ratés : arrivée sur 5,000 f137 (double croche), traits d'implosion f150 (+2), début du flou de sortie f214, titre du hub f228, départ du panoramique f305, onde du logo f382. Décalage typique : l'image précède la barre d'1 im. L'indice automatique (« aucune synchro ») échoue parce que le compteur, les puces et les impulsions bougent en permanence.",
+    "synced": [
+      "coupes",
+      "texte",
+      "apparitions",
+      "impacts",
+      "flashs",
+      "drop",
+      "couleur",
+      "departs"
+    ],
+    "style_match": "Électro/house à 128 BPM, kick sec : coupes franches à la croche, arrêt sec sur 5 000 et flash sur l'attaque la plus forte collent ; le hub ralentit l'énergie.",
+    "how_built": "Prompt d'une ligne sans tempo ni musique : la synchro vient de Claude. Les durées en 7 et 14 im prouvent une constante de tempo (60/128 s) utilisée pour placer les scènes ; la bande-son est probablement générée ou choisie au même tempo et calée au premier temps. Le drop de la piste et la révélation de « One key. » coïncident à l'image près, donc la structure (5,6 s de problème, puis solution) a été écrite sur la forme du morceau (probable)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Phrase à compléter épinglée (ancre de phrase)",
+      "name_en": "sentence-completion anchor",
+      "t": "0:00-0:01.87",
+      "frames": "f0-f55",
+      "fps": 30,
+      "mechanics": "Puce sombre façon terminal « > your agent needs ▮ » (texte mono ≈ 1,5 % H, curseur orange) tapée au centre de f0 à f20 (≈ 1 caractère par image), puis épinglée en haut au centre (y ≈ 12 %) pendant toutes les coupes. Elle reste identique d'un plan à l'autre : seul le mot qui complète la phrase change dessous. Constante visuelle qui rend lisibles 5 coupes en 1,2 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f35.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots-chocs coupés sur la croche",
+      "name_en": "word slam cuts on eighth notes",
+      "t": "0:00.70-0:01.87",
+      "frames": "f21-f56",
+      "fps": 30,
+      "mechanics": "5 coupes franches (hard cuts) espacées d'exactement 7 im = 0,233 s = une croche à 128 BPM : DATA f21, SEARCH f28, MODELS f35, SKILLS f42, PAYMENTS f49, compteur f56. Chaque coupe tombe 1 im avant la barre (bleue sur les temps f29, f43, f57 ; bleu clair sur les demi-temps f36, f50) ; DATA tombe pile sur l'attaque de 0,708 s. Mot plein cadre, aucun mouvement de caméra.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f35.jpg, microM-002-cut-f56.jpg",
+      "illus": {
+        "from": 21,
+        "to": 57,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe d'entrée par échelle (punch-in)",
+      "name_en": "scale punch-in settle",
+      "t": "0:00.93-0:01.70",
+      "frames": "f28-f52",
+      "fps": 30,
+      "mechanics": "Chaque mot entre à ≈ 115-118 % et se pose à 100 % en 3 im, ease-out : PAYMENTS occupe 92 % de la largeur à f49, 83 % à f50, 79 % à f51, 78 % à f52 ; SEARCH 71 % → 63 % entre f28 et f29. Pas de flou de bougé. Les étiquettes du pied de page apparaissent en fondu de 1 à 2 im après le mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f35.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rotation de palette à chaque coupe",
+      "name_en": "palette rotation / figure-ground swap",
+      "t": "0:00.70-0:01.87",
+      "frames": "f21-f55",
+      "fps": 30,
+      "mechanics": "Trois couleurs seulement, recombinées à chaque plan de 7 im : DATA noir sur orange #E4601F, SEARCH orange sur blanc #F7F7F4, MODELS blanc sur noir #141414, SKILLS blanc sur orange, PAYMENTS noir sur blanc. Fond et lettre s'inversent à chaque coupe : effet stroboscopique maîtrisé sans ajouter de couleur.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f35.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pied de page éditorial et pagination",
+      "name_en": "editorial footer and pagination",
+      "t": "0:00.70-0:01.87",
+      "frames": "f21-f55",
+      "fps": 30,
+      "mechanics": "Chaque mot-choc porte en bas à gauche (x ≈ 5 %, y ≈ 88 %) une ligne mono capitales espacées listant des fournisseurs (« PERPLEXITY · EXA · TAVILY », ≈ 1,2 % H) et en bas à droite une pagination « 02/05 ». Grammaire de diaporama éditorial qui donne de la matière, mais illisible en 7 im.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur accéléré qui chauffe",
+      "name_en": "accelerating counter with heat color ramp",
+      "t": "0:01.87-0:04.57",
+      "frames": "f56-f137",
+      "fps": 30,
+      "mechanics": "« 1 » entre en fondu de 3 im (f56-f58), tient 6 im, puis compte de façon quasi exponentielle (2, 3, 4, 6, 8, 11, 14, 18, 23, 28, 35… ≈ ×1,25 par image) puis +140 à +190 par image en fin (2 995 → 3 134 → … → 4 952) : courbe ease-in. Arrêt sec sur 5,000 à f137, sans ralenti. Chiffre centré, hauteur de capitale ≈ 14 % H, grotesque lourde. Couleur qui suit la valeur : blanc jusqu'à ≈ 1 600, rose #F4C3B8 vers 2 500, saumon puis rouge-orangé #E8513A à 5 000. Surtitre mono « API KEYS TO MANAGE » ≈ 1 % H.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f56.jpg, extra-03.jpg, microM-003-move-f136.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sous-ligne qui change de mot à chaque temps",
+      "name_en": "beat-locked word swap",
+      "t": "0:02.33-0:04.20",
+      "frames": "f70-f126",
+      "fps": 30,
+      "mechanics": "Sous le compteur, « Another key. » puis « contract. », « invoice. », « rate limit. », « dashboard. » : changements à f70, f84, f98, f112, f126, soit exactement 14 im = 1 temps à 128 BPM, chacun 1 im avant la barre bleue (f71, f85, f99, f113, f127). Le mot neuf (orange) entre en fondu de 2 im. Énumération de la douleur au rythme du kick.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Éclats d'aberration chromatique sur le compteur",
+      "name_en": "RGB split glitch hits",
+      "t": "0:04.20-0:04.60",
+      "frames": "f126-f138",
+      "fps": 30,
+      "mechanics": "Le chiffre se dédouble en cyan et magenta, décalage ≈ 1 % de la largeur, pendant 2 im, trois fois : f126-127 (temps), f133-134 (demi-temps), f137-138 (arrivée sur 5,000). Accent de tension qui monte vers l'implosion.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f136.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Mur de puces d'erreur qui s'accumule",
+      "name_en": "accumulating chip wall",
+      "t": "0:02.47-0:04.93",
+      "frames": "f74-f148",
+      "fps": 30,
+      "mechanics": "Puces sombres arrondies (#1E1E20, texte mono ≈ 1 % H) : noms de clés (MODEL_PROVIDER_KEY, X_BEARER_TOKEN…) et alertes (« 429 · rate limited », « quota exceeded », « contract · 12-mo min », « usage alert · 92% »). Une nouvelle toutes les 2 à 4 im à partir de f74, inclinées de ±5°, certaines plus petites et floues (fausse profondeur de champ), dérive lente. De 1 puce à ≈ 35 en 2,5 s : le chaos visuel monte avec le chiffre.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion en un point lumineux (compression)",
+      "name_en": "implode to a point",
+      "t": "0:04.93-0:05.10",
+      "frames": "f148-f153",
+      "fps": 30,
+      "mechanics": "f148-150 : le chiffre pâlit à ≈ 50 %. f151-152 : les puces s'étirent en traits radiaux (lignes de vitesse) et filent vers le centre. f153 : tout s'est effondré en un point orange avec halo ≈ 3 % de la largeur. 5 im au total, courbe ease-in (le mouvement accélère vers le centre). Départ sur la barre bleu clair de f148.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f136.jpg",
+      "illus": {
+        "from": 146,
+        "to": 176,
+        "n": 8
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Respiration du point avant le drop",
+      "name_en": "anticipation hold before the drop",
+      "t": "0:05.10-0:05.57",
+      "frames": "f153-f167",
+      "fps": 30,
+      "mechanics": "Le point lumineux rétrécit pendant 14 im (1 temps) : halo ≈ 6 % → 0,3 % de la largeur, ease-in, cadre presque vide. C'est le silence visuel avant l'impact : l'œil est fixé au centre exact où la révélation va naître.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f171.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash puis révélation circulaire sur le drop",
+      "name_en": "flash frame + circular iris reveal",
+      "t": "0:05.60-0:05.70",
+      "frames": "f168-f171",
+      "fps": 30,
+      "mechanics": "f168 : une seule image grise #C5C5C3 avec un disque pêche ≈ 20 % H au centre (flash). f169 : disque orange ≈ 110 % H. f171 : orange plein cadre. Ouverture en 3 im depuis le point d'implosion. Tombe 1 im avant la plus forte attaque de la piste (5,631 s = f169, barre bleue f169).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f171.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots convergents gauche-droite",
+      "name_en": "converging word slide",
+      "t": "0:05.63-0:05.83",
+      "frames": "f169-f175",
+      "fps": 30,
+      "mechanics": "« One » arrive du bord gauche, « key. » du bord droit ; à f171 l'écart entre eux vaut ≈ 30 % de la largeur, ≈ 15 % à f172, ≈ 3 % à f174, posé à f175. 7 im, ease-out fort. Bloc final ≈ 67 % de la largeur, capitale ≈ 20 % H, grotesque lourde blanche, centrée. Pas de flou de bougé.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f171.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneaux d'onde de choc concentriques",
+      "name_en": "concentric shockwave rings",
+      "t": "0:05.63-0:06.07",
+      "frames": "f169-f182",
+      "fps": 30,
+      "mechanics": "2 à 3 cercles blancs (trait ≈ 0,5 % H, opacité 40-60 %) partent du centre avec ≈ 3 im de décalage et s'agrandissent au-delà du cadre en ≈ 12 im, ease-out. Ils prolongent l'impact du flash et soulignent la naissance du mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f171.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte de clé qui se relève en 3D puis se tape",
+      "name_en": "3D flip-up input card with typing",
+      "t": "0:05.90-0:06.30",
+      "frames": "f177-f189",
+      "fps": 30,
+      "mechanics": "Champ blanc arrondi (icône orange, étiquette noire « ONE KEY ») couché à plat (rotation X ≈ 85°) à f177, en trapèze à f178, presque de face à f180, posé à f182 : 5 im, ease-out. Puis la clé se tape à ≈ 1,5 caractère par image (« s », « sk- », « sk-ai », « sk-ais », « sk-aisa- »…), le milieu masqué par des points : « sk-aisa-Egr••••••6mEY ». Départ sur la barre bleu clair f176, frappe sur la barre f183.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f171.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Rappel du compteur (callback)",
+      "name_en": "callback label",
+      "t": "0:06.40-0:07.10",
+      "frames": "f192-f213",
+      "fps": 30,
+      "mechanics": "Petit libellé mono « API KEYS TO MANAGE: 1 » en haut à gauche (x ≈ 6 %, y ≈ 7 %, ≈ 1 % H) sur la scène solution : il répond au compteur à 5 000 de la scène problème. Réplique visuelle discrète qui ferme la boucle du récit.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris trou noir qui avale la scène",
+      "name_en": "black-hole iris wipe",
+      "t": "0:07.13-0:07.47",
+      "frames": "f214-f224",
+      "fps": 30,
+      "mechanics": "f214-218 : « One key. » se défocalise (flou ≈ 0 → 15 px), s'efface et monte de ≈ 3 % ; la carte bascule de ≈ -6° et descend. f218 : un point noir naît au centre (barre bleu clair f218). Diamètre ≈ 3 % de la largeur à f219, 10 % à f220, 22 % à f221, 47 % à f222, 87 % à f223, plein cadre à f224 : ≈ ×2,2 par image, ease-in. La carte passe sous le disque comme aspirée. La scène suivante naît du noir.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f220.jpg",
+      "illus": {
+        "from": 212,
+        "to": 228,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Éclosion de l'icône avec rotation et halo",
+      "name_en": "icon pop with rotation and glow",
+      "t": "0:07.47-0:07.87",
+      "frames": "f224-f236",
+      "fps": 30,
+      "mechanics": "f224 : contour de carré arrondi seul. f225-228 : l'icône orange passe de ≈ 40 % à 100 % avec une rotation ≈ -15° → 0°, ease-out, halo orange autour. f228-236 : un second carré arrondi (contour orange 30 %) s'agrandit autour de l'icône jusqu'à ≈ 2× sa taille et s'efface. Icône ≈ 12 % H, centrée.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f220.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot du flou au net",
+      "name_en": "word-by-word blur-in",
+      "t": "0:07.60-0:07.87",
+      "frames": "f228-f236",
+      "fps": 30,
+      "mechanics": "« Everything your agent needs. » en haut au centre (capitale ≈ 5 % H, grotesque grasse blanche, « needs. » orange). Un mot toutes les 2 im (f228, f230, f232, f234), chacun passe du flou au net en ≈ 3 im en montant de ≈ 1 %. Très rapide mais lisible car la phrase est tenue 2,3 s ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f220.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Hub en étoile à câbles lumineux",
+      "name_en": "hub-and-spoke glow diagram",
+      "t": "0:07.87-0:10.17",
+      "frames": "f236-f305",
+      "fps": 30,
+      "mechanics": "Icône au centre, 4 cartes sombres (APIs, MODELS, SKILLS, PAYMENTS) à ±25 % de la largeur et ±10 % de la hauteur, reliées par des câbles courbes orange à 30 % d'opacité où courent des impulsions lumineuses (comètes). Cartes apparues en décalé : APIs à 8,0 s, Models et Skills vers 8,4 s, Payments vers 8,9 s. Le plan reste quasi statique de 9,17 à 10,03 s. Gabarit vu dans beaucoup de promos IA.",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg, microM-006-cut-f309.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs de cartes et brouillage de texte",
+      "name_en": "rolling stat counters and text scramble",
+      "t": "0:08.00-0:09.50",
+      "frames": "f240-f285",
+      "fps": 30,
+      "mechanics": "Les chiffres des cartes roulent (APIs 356 → 4 986 → 5,000+ ; MODELS 93 → 110+ ; SKILLS 8 → 40+), ease-out en ≈ 1 s. PAYMENTS affiche des signes aléatoires « x%&$ » avant de se fixer sur « x402 » (brouillage, text scramble). Chiffres ≈ 4 % H blancs gras, étiquette mono ≈ 0,8 % H.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Bandeau défilant de sources",
+      "name_en": "logo-name marquee ticker",
+      "t": "0:08.00-0:10.17",
+      "frames": "f240-f305",
+      "fps": 30,
+      "mechanics": "En bas du hub (y ≈ 93 %), ligne « YouTube · Instagram · Pinterest · Perplexity · Exa · Tavily · Firecrawl · CoinGecko » à ≈ 15 % d'opacité, ≈ 1,5 % H, qui défile vers la gauche en continu. Remplissage d'arrière-plan qui maintient du mouvement pendant le maintien.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Panoramique filé sombre vers clair, mouvement repris par l'entrée",
+      "name_en": "whip pan with directional continuity",
+      "t": "0:10.17-0:10.43",
+      "frames": "f305-f313",
+      "fps": 30,
+      "mechanics": "Sortie : le hub glisse à gauche de ≈ 1 % (f305), 4 % (f306), 10 % avec fort flou de bougé horizontal et assombrissement (f307), quasi-noir flou (f308). Coupe f309 (barre f310) sur fond crème : les « 0+ » arrivent flous de la droite (x ≈ 85 % à f309) et se posent à x ≈ 7 % à f313, ease-out ; la carte de flux entre par la droite f311-f314. Le mouvement vers la gauche continue d'un plan à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f309.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Deux compteurs ease-out décalés",
+      "name_en": "staggered ease-out counters",
+      "t": "0:10.33-0:11.50",
+      "frames": "f310-f345",
+      "fps": 30,
+      "mechanics": "« 250,000+ » et « 100,000,000+ » alignés à gauche (x ≈ 5 %), noir #141414 gras, capitale ≈ 11 % H, « + » orange, libellés mono dessous. Compteur 1 : 979 (f312), 37 837, 70 443, 99 139, 124 249, 146 086… pas décroissants (+36,9k, +32,6k, +28,7k, +25k) = ease-out expo sur ≈ 1,2 s. Compteur 2 démarre 6 im plus tard (f316, barre bleu clair f317).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f309.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte de flux en direct",
+      "name_en": "live feed card",
+      "t": "0:10.37-0:11.93",
+      "frames": "f311-f357",
+      "fps": 30,
+      "mechanics": "Carte sombre type téléphone à droite (x ≈ 75-92 %, ≈ 55 % H) : « ● LIVE · PAY PER CALL », liste d'appels API (twitter.user_tweets, tavily.search…) avec coche verte et statut « 200 » qui défile vers le haut, pied « MEDIAN API CALL $0.012 / call · one key ». Puis pastilles « WORKS WITH » en fondu décalé vers 11,4 s. Preuve vivante, mais texte ≈ 0,8 % H illisible.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet à panneaux superposés noir puis orange",
+      "name_en": "layered panel wipe",
+      "t": "0:11.93-0:12.40",
+      "frames": "f358-f372",
+      "fps": 30,
+      "mechanics": "Entrée de gauche à droite : un panneau noir mène, un panneau orange le suit (bord avant noir à 10 %, 27 %, 48 %, 80 %, 100 % de f360 à f364 ; orange à 20 % à f362, 63 % à f364), plein orange à f365. Sortie : l'orange repart vers la droite en découvrant la carte de fin blanche (8 %, 43 %, 67 %, 82 %, 92 %, 97 %, 100 % de f366 à f372 = ease-out fort). 14 im au total = 1 temps ; départ sur la barre bleu clair f359, plein orange ≈ temps f366.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 358,
+        "to": 373,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo assemblé à partir de fragments",
+      "name_en": "logo assembly from fragments",
+      "t": "0:12.23-0:12.40",
+      "frames": "f367-f372",
+      "fps": 30,
+      "mechanics": "Les 6 segments du nœud hexagonal arrivent de ≈ ±10 % autour de leur place avec une rotation ≈ 30° et se verrouillent en 6 im (ease-out), pendant que le panneau orange finit de sortir. Logo ≈ 22 % H, placé d'emblée à x ≈ 34 %, sa position finale dans le verrouillage.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype qui monte lettre à lettre + onde annulaire",
+      "name_en": "masked letter rise + ring pulse",
+      "t": "0:12.73-0:13.20",
+      "frames": "f382-f396",
+      "fps": 30,
+      "mechanics": "f382 : un cercle fin pêche entoure le logo (≈ 25 % H) puis s'agrandit jusqu'à ≈ 60 % H en s'effaçant (f382-f396). f383-f389 : « AIsa » (« AI » orange gras, « sa » anthracite) monte lettre à lettre depuis une ligne de base masquée, ≈ 1,5 im entre lettres, ≈ 3 im par lettre. Petites étincelles orange de 2 px dans le cadre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Soulignement manuscrit tracé",
+      "name_en": "hand-drawn underline draw-on",
+      "t": "0:13.63-0:13.73",
+      "frames": "f409-f412",
+      "fps": 30,
+      "mechanics": "Trait orange légèrement ondulé sous « One key. » (≈ 0,5 % H d'épaisseur), tracé de gauche à droite en 4 im, sur la barre f408. Le slogan était venu mot à mot (≈ 2 im entre mots, flou → net) de f393 à f402.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Appel à l'action avec curseur qui clique",
+      "name_en": "CTA pills with cursor click",
+      "t": "0:13.57-0:14.13",
+      "frames": "f407-f424",
+      "fps": 30,
+      "mechanics": "Pastille contour « aisa.one » en fondu f407-408, pastille orange « Get started → » 3 im après (f410-412). Curseur flèche macOS entré par le bas à f416 (x ≈ 70 %, y ≈ 80 %), trajectoire courbe ease-out jusqu'au bouton à f421 (x ≈ 62 %, y ≈ 71 %), clic à f422 sur la barre bleue. Procédé courant des promos SaaS.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fonds unis à trame de points et halo pêche",
+      "name_en": "dot grid and radial glow backgrounds",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Scènes sombres : #141414 avec trame de points à peine visible (#1E1E1E) et halo orange radial derrière l'icône. Scène « One key. » : orange avec vignette plus claire au centre. Carte de fin : blanc #FAFAF8 avec un dégradé radial pêche #F6D9C9 qui monte du bas sur ≈ 30 % H. Aucun fond animé.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc problème → solution → preuve → appel en 15 s",
+      "name_en": "problem-solution-proof-CTA arc",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Accroche (besoins de l'agent) 1,9 s ; problème (5 000 clés, chaos) 3,7 s ; solution (« One key. ») 1,9 s ; offre (hub) 2,8 s ; preuves (250 000 agents, 100 M transactions) 1,7 s ; carte de fin et appel 2,9 s. Le basculement problème → solution est placé sur le drop de la musique (5,6 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "Prompt d'une ligne (« make a dynamic 15-second motion graphics video for AIsa. Go all out. ») : sans direction, Claude a choisi un récit problème → solution classique et une palette tirée de la marque (orange du logo + noir + blanc)."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Aucun contenu fourni : les arguments (une clé pour APIs, modèles, skills, paiements x402, aisa.one, compatibilité Claude Code, Cursor, Codex) viennent probablement du site de la marque consulté par Claude. Les chiffres (250 000 agents, 100 M transactions, $0.012 par appel) sont peut-être inventés : à vérifier avant toute réutilisation."
+    },
+    {
+      "kind": "build",
+      "insight": "Rien sur la musique dans le prompt, pourtant les plans durent 7 et 14 im (croche et temps à 128 BPM) : Claude a écrit la timeline en unités musicales et placé le basculement du récit sur le drop. C'est reproductible : fixer un BPM et exprimer chaque durée en temps."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go all out » a été lu comme « montre tout » : 6 transitions différentes, 3 scènes de compteurs, puces, câbles, flux en direct, curseur. Énergie réussie, mais surcharge de micro-textes que le prompt n'a pas freinée."
+    },
+    {
+      "kind": "qa",
+      "insight": "Sans critère de lisibilité, beaucoup de textes font moins de 1,5 % de la hauteur et restent moins d'une seconde (pied de page des mots-chocs, puces, cartes du hub, flux). Il aurait fallu imposer une taille minimale et un temps de lecture."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le format 15 s a été découpé en 6 scènes de 1,7 à 3,7 s avec un rappel narratif (« API KEYS TO MANAGE: 1 ») : Claude sait construire une boucle problème/solution sans qu'on la demande."
+    }
+  ],
+  "steal": [
+    "Compteur qui grimpe jusqu'à l'absurde, implose en un point, tient un temps, puis explose en révélation circulaire pile sur le drop.",
+    "Ancre de phrase épinglée en haut et un mot plein cadre par croche, avec inversion fond/lettre à chaque coupe.",
+    "Rappeler le chiffre du problème sur la scène solution (« API KEYS TO MANAGE: 1 ») pour fermer la boucle sans voix off.",
+    "Transition iris noir : un point noir grossit ×2 par image, avale l'objet sortant, et l'objet suivant naît du noir.",
+    "Écrire chaque durée en temps : à 128 BPM et 30 fps, plans de 7 im (croche) ou 14 im (temps), geste 1 im avant le temps."
+  ],
+  "flaws": [
+    "Micro-textes mono (pieds de page, puces, cartes, flux) sous 1,5 % de la hauteur et tenus moins d'une seconde : décor illisible.",
+    "Hub en étoile à câbles lumineux et impulsions : gabarit de promo IA vu partout, quasi statique 0,9 s.",
+    "Curseur qui vient cliquer « Get started » : procédé SaaS usé.",
+    "Brouillage « x%&$ » sur PAYMENTS : se lit comme une erreur plutôt qu'une révélation.",
+    "Éclats RGB sur le compteur : accent bon marché, hors du ton éditorial du reste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, image par image (la source est à 30 fps natifs) : montage verrouillé sur la croche à 128 BPM avec des durées exactes, et trois transitions que l'utilisateur aime (compression en point puis révélation circulaire, iris noir, volet double) bien exécutées et réutilisables telles quelles dans HyperFrames."
+  }
+}

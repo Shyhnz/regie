@@ -1,0 +1,361 @@
+{
+  "slug": "1stnoel-c20a89",
+  "title": "Sotto reading app explainer",
+  "handle": "@1stnoel_",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Explainer produit éditorial très cohérent, chaque carton calé sur la voix, idées de data et de karaoké justes ; mais vocabulaire de mouvement minimal (fondus, glissés) et 84 % de maintiens.",
+  "summary": "Explainer d'une minute pour une appli de lecture graduée, narré par une voix de synthèse. Ouverture data (page de mots qui se remplit, compteur 0 → 98/100), puis comparaison texte original / texte simplifié, puis démo de l'appli dans un téléphone en 4 étapes numérotées (lire, toucher, écouter, parler), tarifs et carton final. Fort : clarté, DA crème-encre-pêche, synchro voix au mot. Faible : peu de mouvement, longs maintiens.",
+  "prompt_vs_result": [
+    "Une seule ligne : vidéo éducative d'une minute sur le site de l'appli, avec narration en voix de synthèse. Ni style, ni structure, ni musique, ni durée par scène.",
+    "Claude a tout décidé : script en 25 phrases, ouverture par une statistique sourcée (98 mots sur 100), DA éditoriale crème, téléphone avec captures réelles, chapitrage 01-04, karaoké sur la narration française, carton tarifaire, CTA.",
+    "L'URL a suffi pour un fond juste (fonctions, prix, ton). Il aurait fallu préciser la densité de mouvement (un événement toutes les 0,5-1 s), les transitions et une musique : sans consigne, le modèle a choisi fondus et maintiens."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F4EDDF", "role": "fond crème uni"},
+      {"hex": "#F9F5EB", "role": "cartes et page du livre"},
+      {"hex": "#241E17", "role": "encre (titres, mots lus, onglet actif)"},
+      {"hex": "#B2AB9E", "role": "mots pas encore lus (karaoké), textes secondaires"},
+      {"hex": "#EBE2D2", "role": "pilules de mots non lus de l'intro"},
+      {"hex": "#FAD8AB", "role": "pêche : mot inconnu, mot sauvé, URL"},
+      {"hex": "#D54A30", "role": "rouge brique : boutons de l'appli, indicateur de tap, pastille essai gratuit"},
+      {"hex": "#221E1B", "role": "carte sombre du tarif payant"}
+    ],
+    "type": "Serif de texte légère (probable Newsreader ou Source Serif Light), casse phrase, titres ≈ 9 % de la hauteur ; surtitres en mono capitales ≈ 2 %, interlettrage large ; grotesque UI (Inter probable) pour les légendes.",
+    "texture": "Aucun grain ni glow. Ombres portées très douces et diffuses sous les cartes et le téléphone (≈ 40 px de flou, opacité faible). Coins arrondis ≈ 16 px. Captures d'écran de l'appli légèrement adoucies (raster agrandi).",
+    "style": "Éditorial crème, livre et encre",
+    "coherence": "Système tenu de bout en bout : un seul fond crème, une seule serif, un mono pour les étiquettes, et la pêche réservée à un sens unique (mot inconnu, mot sauvé, adresse). Le rouge brique vient de l'appli elle-même. Les cartes reprennent la page du livre. Rien ne casse le système ; la seule rupture voulue est la carte sombre du tarif payant."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de musique rythmée : une voix de synthèse sur une nappe tenue. Aucune coupe franche en 60 s (1 seul plan), toutes les transitions sont des fondus ou des glissés. Le détecteur compte 21 maintiens statiques pour 50,3 s (84 %), dont 29,9-36,7 s (6,8 s) et 38,3-46,0 s (7,7 s). En réalité de petits changements y vivent (mots du karaoké qui noircissent, répliques du tuteur qui s'ajoutent, items de liste), mais ils sont minuscules à l'échelle du cadre. Cadence réelle : un nouveau carton ou écran toutes les 1,5 à 3 s, chacun lancé par la phrase de narration correspondante (0 à 0,4 s avant le mot). Fin : carton final tenu 4,1 s (55,9-60 s).",
+    "timeline": [
+      {"t": "0:00-0:03.3", "what": "Surtitre mono « LEARNING A LANGUAGE BY READING », question serif « How many words do you need to know? » à gauche ; à droite une page « CHAPTER 1 » faite de pilules de mots qui passent du beige au noir de gauche à droite, ligne par ligne (≈ 20 mots/s), deux pilules restent pêche.", "technique": "Page de mots-pilules qui se « lit » toute seule"},
+      {"t": "0:03.2-0:04.1", "what": "La question s'efface (4 im), le compteur « 0 / 100 » roule jusqu'à 98 en 22 im, gris puis noir ; légende « words you need to know, out of every 100… » puis source mono Hu & Nation (2000).", "technique": "Compteur roulant ease-out expo"},
+      {"t": "0:05.8-0:06.5", "what": "Fondu enchaîné vers une carte centrée : texte original de Perrault 1697 + traduction anglaise en italique.", "technique": "Fondu enchaîné via le fond"},
+      {"t": "0:07.4-0:08.6", "what": "Les mots difficiles (gentilhomme, épousa, secondes noces, hautaine, fière, eût) se surlignent en pêche un par un.", "technique": "Surlignage progressif des mots inconnus"},
+      {"t": "0:08.97-0:09.5", "what": "La carte glisse à gauche, une carte « GRADED FOR A1 · SOTTO » entre par la droite, titre « The same story, rewritten for your level. »", "technique": "Comparaison côte à côte avant / après"},
+      {"t": "0:11.5-0:12.0", "what": "Fondu au fond, puis surtitre « A FREE GRADED READER » et nom « Sotto » en serif ≈ 14 % de la hauteur.", "technique": "Révélation du nom après le problème"},
+      {"t": "0:12.5-0:13.0", "what": "Téléphone avec la vraie appli (« I'm learning », liste de langues) entre par la droite en 16 im ; pilule « readsotto.app » puis « Runs in your browser. Nothing to install. »", "technique": "Entrée du téléphone en glissé ease-out"},
+      {"t": "0:15.8-0:19.0", "what": "« Pick a language. » + liste de langues en ligne, « Français » surligné pêche ; indicateur de tap sur la ligne Français ; écran « Your level » ; « Then your level. » + puces A0-C1, A1 activée.", "technique": "Légende éditoriale miroir de l'UI"},
+      {"t": "0:19.0-0:22.0", "what": "Chapitrage mono « 01 Read 02 Tap 03 Listen 04 Speak » apparaît (01 actif) ; « A book at your level. » ; écran « You're set up » poussé dans le téléphone ; « Cendrillon / Cinderella, by Charles Perrault / FRENCH · A1 · 8 MIN » en cascade.", "technique": "Barre d'étapes persistante + navigation push"},
+      {"t": "0:22.5-0:26.5", "what": "Écran lecteur ; onglet 02 actif, « Tap any word. » ; « belle-mère » surligné, carte dictionnaire agrandie à gauche (belle-mère / stepmother / Not “beautiful mother.”) ; ligne « In this passage » + cadre rouge dans le téléphone.", "technique": "Carte loupe extraite de l'UI"},
+      {"t": "0:27.0-0:29.0", "what": "« Save it. It stays marked on the page. » ; pastille « Saved to your words » ; toast « Saved to your vocabulary » dans le téléphone.", "technique": "Retour d'action doublé gauche/téléphone"},
+      {"t": "0:29.5-0:36.5", "what": "Onglet 03, « Hear it read aloud. », « CHAPITRE 1 · NARRATION » ; la phrase française noircit mot par mot avec la voix française (31,8-34,0 s), le téléphone met les mêmes mots en gras ; traduction anglaise italique à 34,4 s.", "technique": "Karaoké mot à mot sur la narration"},
+      {"t": "0:37.0-0:42.5", "what": "Tap sur le bouton, onglet 04, « Talk about it. » ; écran tuteur vocal ; dialogue TUTOR / YOU / TUTOR qui se construit à gauche et dans le téléphone (38,5 / 40,0 / 41,5 s).", "technique": "Transcription de dialogue ligne par ligne"},
+      {"t": "0:43.0-0:47.0", "what": "Le dialogue est remplacé par une liste numérotée mono 01 « Quizzes you on the story », 02 « Explains the grammar », 03 « Coaches your pronunciation », un item par phrase dite ; l'onglet du téléphone passe de Discuss à Pronunciation.", "technique": "Liste numérotée au mot"},
+      {"t": "0:47.3-0:51.0", "what": "Le téléphone sort par la droite en ≈ 6 im ; carte « FREE, FOR GOOD / Read and listen. » à gauche, 4 puces ajoutées une par une (48,0 / 48,5 / 49,0 / 50,5 s).", "technique": "Carte tarif gratuit à puces"},
+      {"t": "0:51.2-0:53.0", "what": "Carte sombre « THE VOICE TUTOR $9.99 a month, or $79 a year » apparaît en 12 im ; pastille rouge « 3-day free trial » à 52,5 s.", "technique": "Contraste clair / sombre gratuit vs payant"},
+      {"t": "0:53.3-0:56.5", "what": "Tout s'efface en 6 im, icône « S » + « Read a page. » (53,6 s), « Then talk about it. » (54,5 s), pilule pêche « readsotto.app » (55,9 s), mentions mono en pied (56,5 s).", "technique": "Carton final slogan + URL"},
+      {"t": "0:56.5-1:00.0", "what": "Carton final immobile.", "technique": "Maintien de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Le spectrogramme montre une nappe tenue continue (bandes fixes 600-1 300 Hz et grave continu), présente aussi après la dernière phrase (58,5-60 s : -34 dB décroissant à -50 dB), sans aucune attaque rythmique ; 0-0,5 s est quasi muet (-55 à -65 dB). Le tempo de 91,6 BPM (netteté 2,3, peu fiable) vient de la parole. Indice automatique : aucune synchro (meilleur p corrigé 0,19 ; basses z = 0,03). Sur les 6 planches microscope, les entrées (téléphone f375, push f576, carte sombre f1537, fondu final f1600) ne tombent sur aucune barre de façon répétée. En revanche la voix commande tout : 16 cartons ou écrans sur 16 apparaissent 0 à 0,4 s avant le mot qui les nomme (« Pick a language » 15,7 s, « Tap any word » 23,0 s, « Hear it read aloud » 29,5 s, « Talk about it » 37,4 s, items 01-03 à 43,0 / 44,5 / 45,5 s, carte $9.99 à 51,3 s pour « The tutor » à 51,7 s, « Read a page » 53,6 s pour 54,0 s).",
+    "synced": [],
+    "style_match": "Nappe douce et voix posée, cohérentes avec la DA livresque et les fondus lents ; aucune énergie rythmique, donc aucun accent visuel à caler.",
+    "how_built": "Narration générée par synthèse vocale puis horodatée : chaque phrase déclenche son carton et son écran, et la narration française est découpée mot à mot pour le karaoké (alignement forcé ou horodatage TTS probable). La nappe a été posée en fond sans grille de temps : le prompt ne parlait pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc statistique → problème → solution → démo en 4 étapes → prix → slogan",
+      "name_en": "Stat hook into stepped product walkthrough",
+      "t": "0:00-1:00",
+      "frames": "f0-f1798",
+      "fps": 30,
+      "mechanics": "0-6 s : question + chiffre sourcé (98/100). 6-12 s : le problème montré (texte original surligné) et la solution (texte gradué à côté). 12-16 s : nom du produit. 16-47 s : quatre étapes numérotées Read / Tap / Listen / Speak, chacune avec un titre de 3-5 mots à gauche et l'écran réel à droite. 47-53 s : gratuit vs payant. 53-60 s : slogan en deux temps « Read a page. / Then talk about it. » + URL. Chaque phrase du script (25 au total) = un changement visuel.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-10.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Page de mots-pilules qui se lit toute seule",
+      "name_en": "Redacted word-block reading fill",
+      "t": "0:00.5-0:04.5",
+      "frames": "f15-f135",
+      "fps": 30,
+      "mechanics": "Carte « CHAPTER 1 » (≈ 40 % de la largeur, 67 % de la hauteur, droite) remplie de 10 lignes de pilules arrondies de longueurs variées (mots abstraits, hauteur ≈ 1,7 % du cadre). Chaque pilule passe beige #EBE2D2 → gris #7A756C → encre #241E17 en ≈ 2-3 im, dans l'ordre de lecture, ≈ 20 mots/s (5 mots noirs à 1,0 s, ≈ 27 à 2,0 s, ≈ 45 à 3,0 s). Deux pilules par page restent pêche #FAD8AB : les mots inconnus. Métaphore visuelle directe de « 98 mots sur 100 ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg",
+      "illus": {"from": 15, "to": 135, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur roulant 0 → 98 en ease-out expo",
+      "name_en": "Rolling counter with expo ease-out",
+      "t": "0:03.33-0:04.07",
+      "frames": "f100-f122",
+      "fps": 30,
+      "mechanics": "La question s'efface en 4 im (f96-f100). Le nombre serif (≈ 16 % de la hauteur) + « / 100 » plus petit et gris apparaît à f102 en gris clair et noircit en ≈ 6 im. Valeurs relevées toutes les 2 im : 5, 27, 45, 59, 71, 80, 87, 92, 95, 97, 98 : incréments 22, 18, 14, 12, 9, 7, 5, 3, 2, 1, soit un ease-out puissance 3 à expo sur 22 im = 0,73 s. Légende grotesque (≈ 2 %) en fondu f114-f120 pendant la fin du compte, source mono f134-f138.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 98, "to": 124, "n": 7}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio serif de lecture + mono étiquettes + grotesque UI",
+      "name_en": "Editorial serif / mono label / UI sans pairing",
+      "t": "0:00-1:00",
+      "frames": "f0-f1798",
+      "fps": 30,
+      "mechanics": "Titres en serif de texte légère (probable Newsreader ou Source Serif Light), casse phrase, ≈ 9 % de la hauteur (≈ 100 px), interlignage ≈ 1,0, alignés au fer à gauche à x ≈ 7 %. Surtitres et chapitrage en mono capitales ≈ 2 % (« LEARNING A LANGUAGE BY READING », « CHAPITRE 1 · NARRATION »), interlettrage ≈ +15 %. Légendes et puces en grotesque (Inter probable) ≈ 2 %. Italique serif pour les traductions et le titre du livre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Surlignage pêche progressif des mots inconnus",
+      "name_en": "Sequential marker highlight",
+      "t": "0:07.4-0:08.6",
+      "frames": "f222-f258",
+      "fps": 30,
+      "mechanics": "Sur la carte du texte original (Perrault 1697), un fond pêche #FAD8AB à coins arrondis apparaît derrière « gentilhomme » puis « épousa », « secondes noces », « hautaine », « fière », « eût », en ≈ 1,2 s au total (≈ 0,2 s entre mots), en fondu, sans balayage gauche-droite. Montre la difficulté du texte sans un mot de plus.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Comparaison côte à côte : la carte glisse, la jumelle entre",
+      "name_en": "Side-by-side before/after slide",
+      "t": "0:08.97-0:09.43",
+      "frames": "f269-f283",
+      "fps": 30,
+      "mechanics": "La carte originale centrée glisse vers le tiers gauche (≈ 23 % de la largeur) en ≈ 14 im ease-out (grands pas f271-f276, petits pas f279-f283) ; la carte « GRADED FOR A1 » entre par la droite en fondu + glissé (opacité 0 → 1 f270-f276), le titre « The same story, rewritten for your level. » apparaît en fondu f272-f276. Léger recadrage (les cartes grossissent ≈ 5 %) en fin de mouvement. Aucun flou, aucun dépassement.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f275.jpg",
+      "illus": {"from": 266, "to": 284, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné via le fond (dip to background)",
+      "name_en": "Dip-to-background crossfade",
+      "t": "0:53.33-0:53.77",
+      "frames": "f1600-f1613",
+      "fps": 30,
+      "mechanics": "Toutes les transitions de scène fonctionnent ainsi (6,0 s, 11,6 s, 47,4 s, 53,4 s) : la scène sortante perd son opacité en ≈ 6 im (f1600-f1606, linéaire ou ease-in léger), le cadre est vide 1 im, la scène entrante monte en ≈ 6 im (f1607-f1613) avec une remontée de ≈ 0,3 % de la hauteur. Propre et lisible, mais aucune transition motivée ni enchaînée : c'est le geste par défaut.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f1602.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone qui entre par la droite, ease-out sans rebond",
+      "name_en": "Phone mockup slide-in",
+      "t": "0:12.50-0:13.03",
+      "frames": "f375-f391",
+      "fps": 30,
+      "mechanics": "Maquette de téléphone (cadre noir épais, ≈ 86 % de la hauteur) avec captures réelles de l'appli. Entrée depuis hors-champ droit jusqu'à x ≈ 72 % (centre) en ≈ 16 im = 0,53 s. Pas mesurés : ≈ 3 % puis 2 % puis 1,5 % puis < 0,5 % de la largeur par image, ease-out cubique, aucun dépassement, aucun flou, aucune rotation. Sortie symétrique à 47,4 s en ≈ 6 im (ease-in). Ombre douce portée vers le bas.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f383.jpg, microM-004-move-f1423.jpg",
+      "illus": {"from": 375, "to": 392, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Navigation push dans le téléphone",
+      "name_en": "In-device push navigation",
+      "t": "0:19.17-0:19.37",
+      "frames": "f575-f581",
+      "fps": 30,
+      "mechanics": "Changement d'écran de l'appli comme sur iOS : l'écran « Your level » glisse vers la gauche, « You're set up » arrive par la droite, en ≈ 6 im = 0,2 s, ease-out ; le cadre du téléphone ne bouge pas. Le titre de gauche change en même temps en fondu (f569-f575). Réutilisé à 22,0 s (lecteur) et 37,8 s (tuteur).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f579.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Indicateur de tap : disque rouge translucide",
+      "name_en": "Tap indicator dot",
+      "t": "0:16.0 ; 0:18.0 ; 0:37.5",
+      "frames": "f480 ; f540 ; f1125",
+      "fps": 30,
+      "mechanics": "Disque rouge brique #D54A30 à ≈ 40 % d'opacité, ≈ 2 % de la hauteur, posé sur la ligne choisie (Français, A1, bouton) pendant ≈ 0,3-0,5 s, en fondu. Aucune onde, aucun écrasement du bouton : l'action est indiquée plutôt que jouée.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-04.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran partagé : légende éditoriale à gauche, appareil à droite",
+      "name_en": "Editorial caption + device split layout",
+      "t": "0:12.5-0:47.4",
+      "frames": "f375-f1423",
+      "fps": 30,
+      "mechanics": "Colonne gauche alignée à x ≈ 7 % : logo « Sotto » (≈ 4 %) à y ≈ 8 %, chapitrage à y ≈ 15 %, titre 2 lignes à y ≈ 30-45 %, puis détails (≈ 2 %) en dessous. Téléphone centré à x ≈ 72 %, ≈ 86 % de la hauteur. Le côté gauche reformule en grand ce qui se passe en petit dans l'écran (Français surligné, A1 actif, belle-mère, dialogue), donc l'œil lit à gauche et vérifie à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitrage persistant 01 Read / 02 Tap / 03 Listen / 04 Speak",
+      "name_en": "Persistent step tabs",
+      "t": "0:19.0-0:47.4",
+      "frames": "f570-f1423",
+      "fps": 30,
+      "mechanics": "Quatre étiquettes mono ≈ 1,7 % de la hauteur, bordées d'un filet fin, en haut à gauche ; l'étape active passe en inversé (fond encre #241E17, texte crème) au moment où la voix l'annonce (19,0 / 23,0 / 29,5 / 37,5 s), changement instantané ou en ≈ 3 im. Donne la carte du récit en permanence.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte loupe extraite de l'interface",
+      "name_en": "UI detail callout card",
+      "t": "0:24.20-0:25.40",
+      "frames": "f726-f762",
+      "fps": 30,
+      "mechanics": "Quand le mot « belle-mère » est touché, une feuille monte dans le téléphone (f722-f728) et, en même temps, une carte agrandie (≈ 22 % de la largeur) apparaît à gauche en fondu de ≈ 6 im (f726-f732) : mot en serif ≈ 4 %, traduction, note « Not “beautiful mother.” ». À 25,3 s (f758-f762) la ligne « In this passage: … » apparaît sous la carte, et un cadre rouge fin entoure la même zone dans le téléphone : le petit détail de l'UI devient lisible à 3 m.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 720, "to": 764, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cadre rouge de mise en évidence dans l'écran",
+      "name_en": "Outline highlight on UI region",
+      "t": "0:25.33-0:29.0",
+      "frames": "f760-f870",
+      "fps": 30,
+      "mechanics": "Rectangle à coins arrondis, filet rouge brique ≈ 2 px, autour de la section « In this passage » du téléphone, apparu en fondu en ≈ 2-4 im en même temps que la ligne correspondante à gauche. Statique ensuite. Lien visuel entre légende et UI, mais pas de tracé animé ni de ligne de rappel.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Karaoké mot à mot sur la narration",
+      "name_en": "Word-by-word karaoke fill",
+      "t": "0:31.70-0:34.40",
+      "frames": "f951-f1032",
+      "fps": 30,
+      "mechanics": "La phrase « Une jeune fille habite avec son père et sa belle-mère. » (serif ≈ 4,5 % de la hauteur) est affichée en gris #B2AB9E ; chaque mot passe à l'encre #241E17 quand la voix française le prononce : Une 31,8 s, jeune 32,2, fille 32,4, habite 32,7, avec 33,0, son 33,2, père 33,4, et 33,6, sa 33,8, belle-mère 34,0 (≈ 0,2-0,4 s par mot, bascule en ≤ 3 im). Dans le téléphone, les mêmes mots passent en gras au même instant. La traduction anglaise italique arrive en fondu à 34,4 s, juste après le dernier mot. C'est la seule synchro fine de la vidéo, et elle est sur la voix.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-06.jpg",
+      "illus": {"from": 948, "to": 1035, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Transcription de dialogue construite réplique par réplique",
+      "name_en": "Chat transcript build",
+      "t": "0:38.5-0:42.5",
+      "frames": "f1155-f1275",
+      "fps": 30,
+      "mechanics": "Sous « Talk about it. », trois répliques apparaissent à 1,5 s d'intervalle (38,5 / 40,0 / 41,5 s) avec étiquette mono (TUTOR, YOU) au-dessus de chaque ligne grotesque ≈ 2,3 %. La réplique de l'utilisateur apparaît d'abord en gris puis passe au noir (≈ 0,5 s), comme une saisie vocale validée. Le téléphone affiche les mêmes répliques dans sa zone de sous-titres.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Liste numérotée révélée au mot",
+      "name_en": "Numbered list reveal on narration",
+      "t": "0:42.8-0:45.8",
+      "frames": "f1284-f1374",
+      "fps": 30,
+      "mechanics": "Le dialogue s'efface, puis trois lignes serif ≈ 3 % précédées d'un petit numéro mono (01, 02, 03) apparaissent en fondu de ≈ 6-9 im (le 03 est encore à ≈ 30 % d'opacité à 45,5 s), à 43,0 / 44,5 / 45,5 s, chacune au moment où la voix dit le verbe (quiz, explain, coach). Aucun déplacement.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Deux cartes tarifs : claire à puces, sombre payante",
+      "name_en": "Free vs paid card contrast",
+      "t": "0:47.4-0:53.3",
+      "frames": "f1423-f1600",
+      "fps": 30,
+      "mechanics": "Carte claire #F9F5EB (≈ 20 % de largeur) « FREE, FOR GOOD / Read and listen. » : 4 puces ajoutées une par une, chacune grise puis noire en ≈ 6 im (48,0 / 48,5 / 49,0 / 50,5 s). Puis carte sombre #221E1B « THE VOICE TUTOR / $9.99 » : fondu d'opacité de 12 im (f1538-f1550) qui fait passer la carte de beige grisé à presque noir, avec un glissé de ≈ 2 % vers la gauche. Pastille rouge « 3-day free trial » à 52,5 s. Le passage clair → sombre dit gratuit → payant sans texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1540.jpg, overview-09.jpg",
+      "illus": {"from": 1536, "to": 1552, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Pêche à sens unique",
+      "name_en": "Single-meaning accent color",
+      "t": "0:00-1:00",
+      "frames": "f0-f1798",
+      "fps": 30,
+      "mechanics": "La pêche #FAD8AB ne signifie qu'une chose, « mot à apprendre » : pilules inconnues de l'intro, mots surlignés du texte original, Français choisi, belle-mère, pastille « Saved to your words », puis la pilule URL finale (le mot à retenir). Le rouge brique #D54A30, lui, reste réservé aux actions (boutons, tap, essai gratuit).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Cartons calés sur la voix off",
+      "name_en": "Captions cued to voice-over",
+      "t": "0:00-0:58.5",
+      "frames": "f0-f1755",
+      "fps": 30,
+      "mechanics": "Chaque phrase de la narration déclenche son carton ou son écran 0 à 0,4 s avant le mot clé : « Pick a language » 15,7 s, « Tap any word » 23,0 s, « Save it » 26,8-27,0 s, « Hear it read aloud » 29,5 s, « Talk about it » 37,4 s, 01/02/03 à 43,0 / 44,5 / 45,5 s, « Read and listen » 47,5 s pour « Reading » 47,6 s, $9.99 51,3 s pour « The tutor » 51,7 s, « Read a page » 53,6 s pour 54,0 s, URL 55,9 s. 16 changements sur 16 vérifiés.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg à overview-10.jpg, transcription"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final : icône, slogan en deux temps, URL, mentions",
+      "name_en": "Two-beat tagline end card",
+      "t": "0:53.6-1:00",
+      "frames": "f1607-f1798",
+      "fps": 30,
+      "mechanics": "Centré : icône carrée « S » (≈ 5 % de la hauteur) à y ≈ 25 %, « Read a page. » serif ≈ 6 %, puis « Then talk about it. » en gris qui noircit (54,5 s), pilule pêche « readsotto.app » (55,9 s), mentions mono minuscules en pied (56,5 s). Le slogan reprend en 7 mots les deux moitiés du produit. Puis 3,5 s d'immobilité totale.",
+      "verdict": "adapter",
+      "evidence": "overview-10.jpg, microM-006-move-f1602.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Captures réelles de l'appli dans une maquette",
+      "name_en": "Real app screenshots in device frame",
+      "t": "0:12.5-0:47.4",
+      "frames": "f375-f1423",
+      "fps": 30,
+      "mechanics": "Les écrans sont les vraies pages de l'appli (couverture Cendrillon illustrée, bouton « Start reading », lecteur, tuteur), en raster agrandi : texte légèrement adouci à 1080p. Le téléphone ne bouge jamais pendant 35 s (ni flottement, ni parallaxe, ni zoom sur l'écran).",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Longs maintiens à micro-changements",
+      "name_en": "Long holds with micro-updates",
+      "t": "0:29.9-0:46.0",
+      "frames": "f897-f1380",
+      "fps": 30,
+      "mechanics": "Le détecteur mesure 84 % de maintiens (21 maintiens, 50,3 s). Les plus longs (6,8 s et 7,7 s) contiennent des changements de 2-3 % du cadre (mots qui noircissent, répliques) mais aucun mouvement de caméra, aucun déplacement : l'énergie de mouvement reste à plat entre les pics. Lisible pour un tutoriel, mais loin de la grammaire « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres douces et cartes papier",
+      "name_en": "Soft drop shadows on paper cards",
+      "t": "0:00-0:53.3",
+      "frames": "f0-f1600",
+      "fps": 30,
+      "mechanics": "Cartes #F9F5EB sur fond #F4EDDF (écart de luminosité très faible) détachées par une ombre portée large et très légère, coins ≈ 16 px. Aucun grain, aucun dégradé. Donne un rendu « papier » cohérent avec le sujet (livres).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-09.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "L'URL seule a fourni le contenu exact (fonctions, prix 9,99 $ / 79 $, essai 3 jours, langues) et l'identité (rouge brique, couverture Cendrillon) : Claude a visiblement récupéré des captures de l'appli. Donner l'URL du produit suffit pour un fond juste."},
+    {"kind": "direction", "insight": "« Educational » a orienté vers une ouverture par une donnée sourcée (Hu & Nation 2000) et un rythme de cours, pas de promo : ton calme, aucun effet."},
+    {"kind": "build", "insight": "« Synthesized voice narration » a imposé une voix TTS horodatée, qui devient l'horloge de toute la vidéo : chaque carton tombe sur sa phrase, et la narration française permet un karaoké mot à mot."},
+    {"kind": "other", "insight": "Sans consigne de musique, Claude a mis une simple nappe tenue : aucune pulsation, donc aucune synchro musicale possible. Pour un rendu plus vivant, demander une piste à tempo connu et des gestes sur les temps."},
+    {"kind": "structure", "insight": "Aucune consigne de densité : le modèle a choisi 1 changement toutes les 1,5-3 s et des fondus partout. Préciser « un événement visuel toutes les 0,5-1 s, transitions motivées, pas de maintien > 1 s » changerait le résultat."}
+  ],
+  "steal": [
+    "Montrer une statistique par sa métaphore : une page de mots-pilules qui se remplit, deux mots restent en couleur = 98 sur 100.",
+    "Compteur 0 → valeur cible en 22 im, ease-out expo, nombre gris qui noircit, légende qui arrive pendant le freinage.",
+    "Écran partagé : à gauche, un titre de 3-5 mots qui reformule en grand ce que fait l'UI en petit à droite.",
+    "Chapitrage mono persistant (01 Read, 02 Tap…) dont l'onglet actif s'inverse quand la voix annonce l'étape.",
+    "Karaoké : phrase en gris, chaque mot passe à l'encre sur sa syllabe, la traduction arrive juste après le dernier mot."
+  ],
+  "flaws": [
+    "84 % de maintiens statiques : 6,8 s et 7,7 s sans aucun déplacement visible, loin du rythme 1600.",
+    "Toutes les transitions sont des fondus via le fond, aucune n'est motivée ni enchaînée.",
+    "Téléphone immobile pendant 35 s : ni zoom sur l'action, ni flottement, ni parallaxe.",
+    "Taps indiqués par un disque statique sans onde ni enfoncement du bouton.",
+    "Carton final immobile 3,5 s à la fin, sans boucle ni dernier geste."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Mouvements rares, lents et standards (fondus, glissés ease-out, push iOS) déjà bien mesurés à 30 fps sur les planches ; les idées utiles sont de structure et de synchro à la voix, pas de courbe fine."
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "slug": "francoxavier33-d2dfd2",
+  "title": "Parenting app hype video",
+  "handle": "@francoxavier33",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Système éditorial chaleureux très propre (serif à mot italique surligné, cartes inclinées, mise au point), mais même gabarit frappe-montée-cartes répété six fois, aucune énergie « hype », interface minuscule.",
+  "summary": "Pub verticale de 28 s pour Momwise, des assistants IA pour parents. Six actes au même gabarit : un titre serif tapé au clavier (romain noir + mot-clé italique coloré et surligné) se réduit en en-tête, puis des preuves d'interface (téléphone, cartes d'agents, fil de discussion, liste de courses, bénéfices) entrent inclinées. Fin en boucle de slogan « Meet your village ». Soigné et cohérent, mais calme et répétitif.",
+  "prompt_vs_result": [
+    "Une seule ligne : une vidéo de lancement « hype » pour le compte @momwiseai. Aucun format, style, durée, musique ni message imposés.",
+    "Claude a tout choisi : format vertical 9:16, palette crème-orange, serif éditorial avec italiques surlignés, frappe au clavier, slogan « It takes a village » en fil rouge, quatre agents codés par couleur, curseur « You », icône finale.",
+    "Le mot « hype » n'a pas été traduit en rythme : frappe à vitesse de lecture, maintiens d'1 s. Il aurait fallu préciser tempo, coupes par seconde, durée par acte et variété des transitions."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FAF6EF", "role": "fond crème"},
+      {"hex": "#F3D6BC", "role": "halo pêche flou, coin haut gauche"},
+      {"hex": "#E5DFEA", "role": "halo lavande flou, coin bas droit"},
+      {"hex": "#1C1A17", "role": "titres romains, curseur, pastille sombre"},
+      {"hex": "#B5651D", "role": "accent orange brûlé : mots italiques, caret de frappe, boucle sous « together »"},
+      {"hex": "#F2C9A1", "role": "surlignage marqueur pêche sous le mot-clé"},
+      {"hex": "#6E4FB0", "role": "violet de « planned. » (couleur de l'agent Meal planner)"},
+      {"hex": "#D9CDF1", "role": "surlignage lavande sous « planned. »"},
+      {"hex": "#FFFFFF", "role": "cartes d'interface"},
+      {"hex": "#0F5B2E", "role": "bouton vert « Send to Instacart »"},
+      {"hex": "#3E6FD6", "role": "agent Scheduler (pastille #E4ECFB)"},
+      {"hex": "#2F8A55", "role": "agent Sidekick (pastille #E3F4E8)"}
+    ],
+    "type": "Serif de texte type Lora (probable) : romain Regular noir + italique couleur, casse de phrase, capitale ≈ 5,6 % de la hauteur centrée, ≈ 2,8 % en en-tête. Interface en grotesque type Inter, 1 à 1,5 %.",
+    "texture": "Aucun grain. Halos pêche et lavande très flous sur fond crème, quasi fixes. Cartes blanches à rayon ≈ 3 % de la largeur et ombre portée douce (décalage ≈ 8 px, flou ≈ 30 px, ≈ 10 % de noir). Flou gaussien utilisé comme outil : mise au point sur le téléphone, sortie floue de chaque acte. Aucun flou de mouvement directionnel.",
+    "style": "Pub d'app éditoriale chaleureuse",
+    "coherence": "Le système tient de bout en bout : même fond, même serif, même caret orange, même règle « mot-clé italique coloré + surlignage », mêmes cartes blanches inclinées, codes couleur des quatre agents repris dans les avatars, les pastilles, les compteurs et le titre « planned. » violet. Il se fige par excès de constance : six fois le même enchaînement frappe → montée → cartes → flou."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "L'estimation automatique (80 BPM) est fausse : les attaques fortes tombent toutes les 1,00 s à x,62 s (1,625 ; 2,624 ; 3,622 … 25,623) et l'autocorrélation du flux spectral donne 0,62 à 1,0 s, 0,39 à 0,5 s, 0,36 à 0,25 s : pulsation à 120 BPM en demi-temps (grosse caisse chaque seconde, croches à 0,25 s), temps à 0,122 + 0,5 k s, soit toutes les 15 images à 30 fps (f19, f34, f49 …). Les barres bleues des planches suivent la mauvaise grille ; j'ai compté sur la grille 120 BPM. La musique entre à 0,79 s (+13,7 dB). Six actes de 3,8 à 7,3 s séparés par une sortie floue (f182, f296, f516, f649, f767) ; 4 des 5 changements d'acte tombent à ±2 im d'un temps, celui de f296 tombe sur une croche. À l'intérieur, la frappe (≈ 1 car./im, pauses de 2-5 im), les montées de titre (f219, f336, f549) et les cascades (décalage 7-8 im = 0,23-0,27 s, proche de la croche de 7,5 im mais qui dérive) tournent sur leur propre horloge. Un événement visible toutes les 0,3 à 1 s dans les actes, mais 12 maintiens ≥ 0,4 s (13,2 s, 47 %) mesurés, souvent de faux maintiens (seules de petites pastilles bougent) ; vrais temps morts : 23,9-25,3 s (liste complète figée 1,4 s) et la carte finale 26,5-28,1 s.",
+    "timeline": [
+      {"t": "0:00-0:01.6", "what": "« AI helpers for busy parents. » tapé, mot « busy parents » en italique orange surligné ; image 0 = titre final", "technique": "machine à écrire à caret orange"},
+      {"t": "0:01.6-0:03.0", "what": "Le téléphone (tableau de bord « Friday ») monte du bas pendant que le titre se réduit en en-tête", "technique": "montée ease-out 16 im sur la grosse caisse de 1,62 s"},
+      {"t": "0:03.0-0:06.0", "what": "Le téléphone passe au flou, la carte « Create todo » vole en biais, badge Done, pastille sombre « 3 things done while you slept »", "technique": "mise au point + carte inclinée"},
+      {"t": "0:06.0-0:07.3", "what": "Sortie floue, « It takes a / village. » tapé puis surligné", "technique": "sortie floue montante 4 im + frappe"},
+      {"t": "0:07.3-0:09.9", "what": "Le titre monte, 4 cartes d'agents entrent en alternance gauche/droite, notification push Momwise", "technique": "cascade alternée inclinée, décalage 7 im"},
+      {"t": "0:09.9-0:11.2", "what": "« They work / together. » avec boucle dessinée sous le mot", "technique": "frappe + soulignement manuscrit"},
+      {"t": "0:11.2-0:17.2", "what": "Fil « Saturday logistics » : 4 pastilles « joined » toutes les 0,8-0,9 s, compteur 1 → 4 helpers, carte calendrier, badges Sam / You", "technique": "fil qui se remplit, avatars qui s'empilent"},
+      {"t": "0:17.2-0:18.3", "what": "« Dinner / planned. » en violet surligné lavande", "technique": "couleur d'accent = couleur de l'agent"},
+      {"t": "0:18.3-0:21.4", "what": "3 photos de plats lancées en éventail, liste de courses cochée 2/5 → 5/5, curseur « You » clique, « ✓ Sent to Instacart »", "technique": "photos inclinées décalées de 5 im, clic sur la grosse caisse"},
+      {"t": "0:21.4-0:22.6", "what": "Le logo manuscrit « mw » apparaît en haut, sortie floue, « Less mental / load. »", "technique": "logo pont à travers la transition (coupe détectée f649)"},
+      {"t": "0:22.6-0:25.4", "what": "4 bénéfices en alternance, puis « More room to be present. »", "technique": "cascade alternée 8 im, 1re pastille sur la grosse caisse"},
+      {"t": "0:25.4-0:28.1", "what": "L'icône d'app jaillit du mot « load. », « Meet your / village. » tapé, mot-symbole Momwise ; maintien 1,5 s", "technique": "icône qui jaillit + boucle de slogan"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Comptage sur la grille 120 BPM recalculée (temps toutes les 15 im, ±2 im = 33 % des images par hasard) : 16 gestes clés sur 31 à ±2 im d'un temps (52 %). Les moments forts sont posés sur la grosse caisse de chaque seconde (x,62 s) : montée du téléphone f49 (temps 1,62 s = f48,7 : 0 im), clic « Sent » f617 (20,62 s = f618,6 : -2 im), coupe vers l'acte final f649 (21,62 s : 0 im), 1re pastille de bénéfice f679 (22,62 s : 0 im), atterrissage de l'icône f769 (25,62 s : 0 im) ; changements d'acte f182 (-2 im) et f516 (+2 im) sur un temps. Hors grille : sortie f296 (croche 9,87 s), montées de titre f222 (+8/-7 im), f338 (+4), f550 (+6), coches de liste f577 / f585 / f593 (+3 / -4 / +4), badge Done f112 (+3), pastille Meal planner f401. L'indice automatique ne voit rien (p corrigé 0,39) car il teste la grille 80 BPM.",
+    "synced": ["coupes", "departs", "atterrissages"],
+    "style_match": "Pop électro légère à 120 BPM jouée en demi-temps (grosse caisse chaque seconde, croches, probable) : l'énergie posée colle au style éditorial doux, mais pas au mot « hype ».",
+    "how_built": "Stack Remotion, timings écrits en images fixes (cascades de 7-8 im, frappe à ≈ 1 car./im) sans référence au tempo. Quelques débuts d'acte et le clic tombent exactement sur la grosse caisse : soit le morceau a été recalé à la main par l'auteur sur ces points, soit Claude a placé les grands repères à la seconde (x,62 s) ; le reste flotte. Il aurait fallu écrire chaque geste en multiples de 15 im (un temps) ou 7,5 im (une croche) à partir de 0,62 s."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire à caret couleur",
+      "name_en": "Typewriter with accent caret",
+      "t": "0:00.03-0:01.4 ; 0:06.07-0:07.0 ; 0:09.9-0:11.0 ; 0:17.2-0:18.2 ; 0:21.6-0:22.4 ; 0:25.6-0:27.0",
+      "frames": "f1-f42, f182-f210, f297-f330, f517-f545, f647-f670, f769-f810",
+      "fps": 30,
+      "mechanics": "Les lettres apparaissent sans fondu, environ 1 caractère par image (« It takes a » = 10 caractères en 12 im, f182-f194 ; « Less mental » = 11 caractères en 14 im), cadence humanisée : 2-3 im sur certaines lettres. Caret vertical orange #B5651D (≈ 2 px, hauteur ≈ 1,2 × capitale) qui clignote par paquets de 4-6 im pendant les maintiens. Après la ligne romaine, le caret saute à la ligne et attend 4-5 im (≈ 0,15 s) avant le mot italique coloré, qui reçoit ainsi un petit suspense. Utilisée six fois, une par acte.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f182.jpg",
+      "illus": {"from": 182, "to": 199, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre bicolore romain + italique coloré",
+      "name_en": "Roman + colored italic two-line headline",
+      "t": "0:00-0:28",
+      "frames": "f0-f840",
+      "fps": 30,
+      "mechanics": "Ligne 1 en serif romain Regular noir #1C1A17, ligne 2 = mot-clé en italique de la même famille, couleur d'accent, point final inclus (« busy parents. », « village. », « together. », « planned. », « load. »). Bloc centré, capitale ≈ 5,6 % de la hauteur (≈ 107 px sur 1920), largeur ≈ 78 % du cadre, interlignage serré ≈ 1,05. La phrase se lit comme une réplique : constat en romain, chute émotionnelle en italique.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Surlignage marqueur sous le mot-clé",
+      "name_en": "Highlighter underline accent",
+      "t": "0:01.2 ; 0:07.0 ; 0:18.0 ; 0:22.4 ; 0:27.0",
+      "frames": "f36, f210, f540, f671, f810",
+      "fps": 30,
+      "mechanics": "Bande pêche #F2C9A1 (ou lavande #D9CDF1 pour « planned. ») d'environ 35 % de la hauteur d'x, posée sur la moitié basse des lettres, débordant de ≈ 3-4 % de chaque côté, légèrement inclinée comme un coup de surligneur. Elle apparaît en ≤ 2 im à la fin de la frappe (balayage probable, trop rapide pour être mesuré). Variante « together. » : boucle manuscrite fine orange (≈ 2 px) en ellipse sous le mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f222.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre qui se réduit en en-tête",
+      "name_en": "Headline lift to header",
+      "t": "0:07.30-0:07.67",
+      "frames": "f219-f230",
+      "fps": 30,
+      "mechanics": "Le bloc titre passe de y ≈ 45 % à y ≈ 12 % et de 100 % à ≈ 55 % d'échelle en 11 im (0,37 s). Positions du mot « village. » : 45, 43, 41, 38, 32, 24, 19, 15, 13, 12, 11 % : départ doux (ease-in sur 3 im), vitesse maximale ≈ 8 % de la hauteur par image à f223-f224, arrivée amortie sans dépassement : ease-in-out à sortie forte. Même geste à f49 (avec le téléphone), f336 et f549. Libère la place pour les preuves d'interface tout en gardant le message à l'écran.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f222.jpg",
+      "illus": {"from": 218, "to": 232, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone qui surgit du bas",
+      "name_en": "Phone rise from bottom",
+      "t": "0:01.60-0:02.13",
+      "frames": "f48-f64",
+      "fps": 30,
+      "mechanics": "Le téléphone (cadre noir arrondi, écran « Friday » à 3 rendez-vous) entre par le bas : bord haut à 70 % de la hauteur à f49 puis 58, 49, 42, 37, 33, 31, 29, 27, 25 … 22 % à f64. Pas de 12, 9, 7, 5, 4, 2, 2, 2 % : ease-out exponentiel / ressort critique sans dépassement, 16 im (0,53 s). Le titre se réduit en même temps. Départ exactement sur la grosse caisse de 1,62 s (f48,7).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f51.jpg",
+      "illus": {"from": 47, "to": 62, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Mise au point sur la carte (arrière-plan au flou)",
+      "name_en": "Rack focus to overlay card",
+      "t": "0:03.03-0:03.37",
+      "frames": "f91-f101",
+      "fps": 30,
+      "mechanics": "En 5 im (f91-f96) le téléphone reçoit un flou gaussien ≈ 6-8 px et un voile blanc ≈ 45 % ; la carte « Household did / Create todo » arrive nette par la droite, inclinée ≈ +8°, et se pose à f101 inclinée ≈ -2° (ease-out, 5-6 im). Badge vert « Done » qui gonfle de 0 à 100 % en ≈ 3 im à f112. La hiérarchie se lit sans zoom : ce qui compte est net, le contexte reste visible.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f97.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastille de statut sombre à avatars empilés",
+      "name_en": "Dark status pill with stacked avatars",
+      "t": "0:04.37-0:04.70",
+      "frames": "f131-f141",
+      "fps": 30,
+      "mechanics": "Pastille noire #1F1D1B, texte blanc « 3 things done while you slept », trois avatars carrés pastel (Sc, Mp, Hh) chevauchés à gauche. Entre par la gauche en ≈ 6 im et se pose légèrement inclinée (≈ -2°) sur le téléphone flou. Résume en une ligne la preuve d'usage.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie floue montante",
+      "name_en": "Blur-up exit",
+      "t": "0:05.97-0:06.10 ; 0:09.83-0:09.97 ; 0:17.13-0:17.30 ; 0:21.57-0:21.70 ; 0:25.43-0:25.60",
+      "frames": "f179-f183, f295-f299, f514-f519, f647-f651, f763-f768",
+      "fps": 30,
+      "mechanics": "Tout l'acte précédent monte d'environ 4-6 % de la hauteur, passe d'un flou nul à ≈ 15 px et d'une opacité 100 % à 0 en 4-5 im, en accélérant (ease-in). Le texte du nouvel acte commence à se taper sur le fond crème dès la 2e image : chevauchement de 2-3 im, jamais d'image vide. Même transition aux cinq changements d'acte ; 4 sur 5 tombent à ±2 im d'un temps.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f296.jpg",
+      "illus": {"from": 293, "to": 301, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cascade de cartes alternées inclinées",
+      "name_en": "Alternating tilted card cascade",
+      "t": "0:07.47-0:08.40",
+      "frames": "f224-f252",
+      "fps": 30,
+      "mechanics": "Quatre cartes d'agents (avatar pastel, nom en gras, action en gris) entrent hors cadre alternativement par la gauche (Scheduler f224, Household f238) et la droite (Meal planner f231, Sidekick ≈ f245), inclinées ≈ ±5° et redressées à 0° en 5-6 im, ease-out sans dépassement ; décalage constant de 7 im (0,23 s). Première carte posée à f228-f229, sur le temps de 7,62 s. Les cartes s'empilent en colonne de 88 % de largeur, interligne ≈ 1 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f222.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Notification push de l'app",
+      "name_en": "Push notification drop-in",
+      "t": "0:08.8-0:09.1",
+      "frames": "f264-f273",
+      "fps": 30,
+      "mechanics": "Carte de notification façon iOS (logo manuscrit, « Momwise / Meal planner », « now ») qui monte du bas sous la colonne de cartes, inclinée ≈ -2° et y reste. Preuve que l'agent agit seul. Probable même ressort que les cartes.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fil de discussion qui se remplit",
+      "name_en": "Thread fill with joined pills",
+      "t": "0:11.6-0:16.2",
+      "frames": "f348-f486",
+      "fps": 30,
+      "mechanics": "Carte « Saturday logistics » qui tombe sous l'en-tête (f348-f352), bulle bleue du message, puis 4 pastilles « X joined — … » colorées par agent, entrées alternées gauche/droite à f372, f396, f420, f447 (décalage 24-27 im = 0,8-0,9 s), posées en ≈ 6 im. À chaque entrée, un avatar s'ajoute en haut à droite de la carte et le compteur passe de « 1 helper in » à « 4 helpers in ». Carte calendrier « Saturday, Apr 25 » qui monte du bas inclinée ≈ -6° à f468 et se redresse à f480, badges « Sam » / « You » qui gonflent à f483. Raconte la coordination sans un mot de voix off ; mais textes à ≈ 1 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur par agent",
+      "name_en": "Per-agent color coding",
+      "t": "0:07.5-0:21.6",
+      "frames": "f224-f649",
+      "fps": 30,
+      "mechanics": "Quatre couples pastel/foncé constants : Scheduler bleu (#E4ECFB / #3E6FD6), Meal planner violet (#EEE7FA / #7A5BC9), Household pêche (#FCE8D6 / #C0651F), Sidekick vert (#E3F4E8 / #2F8A55). Repris dans les avatars, les pastilles du fil, les coches des bénéfices, et dans le titre « Dinner planned. » passé en violet parce que c'est l'agent Meal planner qui agit : la couleur du titre annonce l'acteur de la scène.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Photos de plats lancées en éventail",
+      "name_en": "Tossed photo fan",
+      "t": "0:18.33-0:18.73",
+      "frames": "f550-f562",
+      "fps": 30,
+      "mechanics": "Trois photos carrées à bord blanc ≈ 3 % (façon tirage), inclinées ≈ -8°, -3°, +8°, entrent depuis le bas gauche en grossissant de ≈ 80 à 100 % avec un décalage de 5 im (f550, f555, f560) et restent superposées en éventail. La 3e se pose sur la grosse caisse de 18,62 s (f559). Puis la carte « Weekly Groceries » monte du bas inclinée ≈ -6° et se redresse en 6 im (f562-f568).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f551.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Liste cochée avec barre de progression",
+      "name_en": "Checklist auto-complete with progress bar",
+      "t": "0:19.23-0:19.77",
+      "frames": "f577-f593",
+      "fps": 30,
+      "mechanics": "Cases cochées en violet une par une à f577, f585, f593 (décalage 8 im = 0,27 s), libellé grisé et barré à la même image, compteur 2/5 → 5/5, barre violette qui s'allonge par paliers. Lisible comme « l'agent fait le travail ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur multijoueur nommé « You » et clic",
+      "name_en": "Named multiplayer cursor click",
+      "t": "0:19.83-0:20.57",
+      "frames": "f595-f617",
+      "fps": 30,
+      "mechanics": "Flèche noire avec étiquette sombre « You » (style curseur Figma) qui entre par le bas droit à f595, glisse vers le bouton en ≈ 18 im ease-out, clique à f615 ; le libellé du bouton vert devient « ✓ Sent to Instacart » à f617, 2 im avant la grosse caisse de 20,62 s. L'utilisateur garde la main sur la dernière action : bon message produit.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Logo pont à travers la transition",
+      "name_en": "Bridge logo across the cut",
+      "t": "0:21.43-0:22.6",
+      "frames": "f643-f679",
+      "fps": 30,
+      "mechanics": "Le logo manuscrit « mw » apparaît en fondu (≈ 3 im) en haut du cadre à f643, 6 im avant la sortie floue ; il ne subit pas le flou et reste en place quand « Less mental load. » se tape dessous (coupe détectée f649, sur la grosse caisse de 21,62 s). Il annonce l'acte de marque et sert d'ancrage visuel entre deux scènes.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f649.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bénéfices en cascade alternée",
+      "name_en": "Alternating benefit checklist",
+      "t": "0:22.63-0:23.90",
+      "frames": "f679-f717",
+      "fps": 30,
+      "mechanics": "Quatre pastilles blanches (« Things done while you sleep »…) entrent alternativement par la gauche et la droite à f679, f687, f695, f703 (décalage 8 im), inclinées ≈ ±3° et redressées en ≈ 6 im ; la coche colorée de chaque pastille apparaît 6-8 im après son entrée. La 1re entre exactement sur la grosse caisse de 22,62 s. Signature « More room to be present. » en fondu à f717.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Icône d'app qui jaillit du mot",
+      "name_en": "App icon pop-through",
+      "t": "0:25.37-0:25.63",
+      "frames": "f761-f769",
+      "fps": 30,
+      "mechanics": "L'icône (carré arrondi crème, scribble « m » noir, ombre douce) naît au centre du mot « load. » à ≈ 35 % de sa taille et grossit jusqu'à 100 % en 8 im ease-out, pendant que l'acte derrière monte et passe au flou (f764-f768). Elle se pose à y ≈ 32 % exactement sur la grosse caisse de 25,62 s (f769) et « Meet your » commence à se taper dessous à la même image. Transition motivée : le soulagement (« load. ») donne naissance à la marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f767.jpg",
+      "illus": {"from": 759, "to": 772, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle de slogan « village »",
+      "name_en": "Slogan callback ending",
+      "t": "0:06.1-0:28.1",
+      "frames": "f182-f840",
+      "fps": 30,
+      "mechanics": "Le 2e acte pose « It takes a village. », la carte finale répond « Meet your village. » avec le même surlignage pêche, l'icône et le mot-symbole Momwise en grotesque ≈ 1 % à y ≈ 78 %. Six actes : promesse → preuve (téléphone) → équipe (agents) → coordination (fil) → action (courses) → bénéfice → marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Gabarit d'acte frappe → montée → preuves",
+      "name_en": "Type, lift, proof act template",
+      "t": "0:00-0:25.6",
+      "frames": "f0-f767",
+      "fps": 30,
+      "mechanics": "Chaque acte suit le même schéma : titre tapé au centre (≈ 1 s), montée en en-tête (11 im), éléments d'interface qui entrent inclinés (2-4 s), sortie floue (4 im). Répété cinq fois sans variation de transition ni de cadrage : très lisible, mais la répétition devient prévisible dès le 3e acte.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond crème à halos flous",
+      "name_en": "Soft glow cream background",
+      "t": "0:00-0:28",
+      "frames": "f0-f840",
+      "fps": 30,
+      "mechanics": "Fond #FAF6EF avec un halo pêche #F3D6BC très flou dans le quart haut gauche et un halo lavande #E5DFEA dans le quart bas droit, à peine animés (dérive lente probable). Il réchauffe l'image sans concurrencer le texte ; jamais coupé entre les actes, il assure la continuité.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grands repères posés sur la grosse caisse",
+      "name_en": "Hero moments on the kick",
+      "t": "0:01.62 ; 0:20.57 ; 0:21.63 ; 0:22.63 ; 0:25.63",
+      "frames": "f49, f617, f649, f679, f769",
+      "fps": 30,
+      "mechanics": "Sur une pulsation 120 BPM en demi-temps (grosse caisse chaque seconde à x,62 s), cinq moments forts tombent à 0-2 im de la grosse caisse : montée du téléphone, clic « Sent », coupe vers l'acte de marque, 1re pastille de bénéfice, atterrissage de l'icône. Les gestes secondaires ignorent la grille. Effet : les virages du récit claquent, le reste flotte.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f649.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Image 0 = vignette du titre final",
+      "name_en": "Poster frame at frame 0",
+      "t": "0:00.00-0:00.03",
+      "frames": "f0-f1",
+      "fps": 30,
+      "mechanics": "L'image 0 montre le titre complet « AI helpers for busy parents. » surligné ; dès f1 on repart à « AI helpers » + caret, la frappe reprend. Sert de vignette pour le réseau social, mais crée un flash d'une image à la lecture.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne qu'un identifiant de compte. Le nom Momwise, les quatre agents (Scheduler, Meal planner, Household, Sidekick), le logo manuscrit et le slogan « village » viennent probablement du profil ou du site, ou de fichiers fournis hors prompt : l'interface est crédible et spécifique."},
+    {"kind": "direction", "insight": "« Hype » n'est pas défini et Claude l'a interprété en ton éditorial chaleureux : pas de coupes rapides, frappe à vitesse de lecture. Pour obtenir de l'énergie, il faut la chiffrer (BPM, une action par temps, durée maximale d'un plan)."},
+    {"kind": "structure", "insight": "Sans structure imposée, Claude a fabriqué un gabarit d'acte et l'a répété six fois. Demander explicitement une transition différente par acte et un acte sans frappe aurait cassé la monotonie."},
+    {"kind": "build", "insight": "Remotion à 30 fps : timings en images fixes (frappe ≈ 1 car./im, cascades 7-8 im), d'où une animation interne indépendante de la musique ; seuls les grands repères tombent sur la grosse caisse."},
+    {"kind": "qa", "insight": "Aucune vérification visible : image 0 de vignette qui flashe, textes d'interface à ≈ 1 % de la hauteur sur un format vertical destiné au téléphone."},
+    {"kind": "other", "insight": "Claude a choisi seul le 9:16 (886 × 1920) et une colonne centrée à marges ≈ 6 % : choix pertinent pour X et Instagram."}
+  ],
+  "steal": [
+    "Titre en deux lignes : constat en serif romain noir, chute en italique couleur surlignée au marqueur ; la couleur du mot-clé reprend celle de l'acteur de la scène.",
+    "Avant de faire voler la carte importante, mettre l'arrière-plan au flou (≈ 6 px, voile blanc 45 %, 5 im) : hiérarchie lisible sans zoom.",
+    "Cartes d'interface entrant alternativement par la gauche et la droite, inclinées de ±5°, redressées en 5-6 im ease-out, décalage 7-8 im.",
+    "Faire apparaître le logo en haut 0,2 s avant la transition et le garder net pendant le flou : il fait le pont vers l'acte de marque.",
+    "Fermer en boucle de slogan (« It takes a village » → « Meet your village ») avec l'icône qui jaillit du mot précédent, posée sur la grosse caisse."
+  ],
+  "flaws": [
+    "Même gabarit répété six fois : frappe au clavier, titre qui monte, cartes, puis même sortie floue montante.",
+    "Rien de « hype » : frappe à vitesse de lecture, liste complète figée 1,4 s, énergie de pub éditoriale calme.",
+    "Textes d'interface minuscules (pastilles ≈ 1 % de la hauteur) : illisibles sur téléphone.",
+    "Image 0 = titre final complet, puis retour à la frappe dès f1 : flash d'une image à l'ouverture.",
+    "Frappe, montées de titre et cascades indifférentes à la pulsation à 120 BPM ; seuls cinq repères tombent sur la grosse caisse."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 fps et gestes simples (ease-out sans dépassement, flou-fondu de 4 im, frappe) déjà mesurés sur les planches. L'intérêt est dans le système typographique et le code couleur par agent, pas dans le détail image par image."
+  }
+}

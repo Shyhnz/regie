@@ -1,0 +1,407 @@
+{
+  "slug": "sahildesigner23-ee3155",
+  "title": "3D motion design showreel",
+  "handle": "@sahildesigner23",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Chaque transition naît de l'objet précédent (point, O, goutte, écran, rembobinage, iris) et tout est calé mesure par mesure sur 128 BPM ; seuls le mur de lignes et les métaballes font gabarit.",
+  "summary": "Showreel en 8 chapitres, un par mesure de 128 BPM : point qui devient MOTION, mur de lignes, typo 3D, plongée dans le O vers des métaballes chromées, goutte qui devient téléphone, écran qui devient champ de cubes, recul dans un faux logiciel de montage qui rembobine tout, iris sur le drop, point final. Force : transitions enchaînées. Faiblesse : presque aucun texte.",
+  "prompt_vs_result": [
+    "Imposé : 15 s, « dynamic », showreel de motion designer pour un CV, « go all out ». Rien sur le style, la palette, la musique, les textes ni la structure.",
+    "Claude a choisi : 8 chapitres pour 8 mesures à 128 BPM affichées dans le HUD, une palette orange-crème-noir, un point qui traverse toute la vidéo, des transitions qui naissent de l'objet précédent et un faux logiciel de montage qui rembobine.",
+    "Même prompt que safarkhanshuvo-ffd52d (craft 4) : la différence vient du tirage, pas du cadrage. Il manquait des textes : MOTION occupe trois chapitres ; il aurait fallu donner messages, nom et durée du carton final."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FE4D1E", "role": "orange : point, accents de lettres, fond SIMULATION, tuiles, cubes centraux, tête de lecture, point final"},
+      {"hex": "#EDE8E0", "role": "crème : fonds PRODUCT UI et carton final, iris"},
+      {"hex": "#F2ECE5", "role": "crème clair : texte MOTION, faces avant de la typo 3D, anneau de cubes"},
+      {"hex": "#0E0E0E", "role": "quasi-noir : fonds KINETIC TYPE, RHYTHM, GENERATIVE, EDIT ; texte « Claude. »"},
+      {"hex": "#171717", "role": "anthracite : fond de la typo 3D"},
+      {"hex": "#C74727", "role": "orange ombré : flancs de l'extrusion 3D"},
+      {"hex": "#BFBFBF", "role": "chrome (probable) : métaballes et première forme du téléphone"}
+    ],
+    "type": "Grotesque géométrique grasse (O rond, probable Inter Display) : MOTION en capitales, 13 % de la hauteur, de filaire à gras ; « Claude. » en bas de casse, 16 % ; mono espacée 1,5 % pour HUD et interface.",
+    "texture": "Grain fin sur les fonds sombres, flou de mouvement directionnel et copies fantômes sur la plongée dans le O et le zoom dans l'écran, reflets chromés (champ de distance), ombres portées douces sous le téléphone et la typo 3D, légère frange chromatique sur le texte du HUD, vignettage faible.",
+    "style": "Tech éditorial orange, crème, noir",
+    "coherence": "Ce qui tient : trois couleurs seulement (orange = accent partout), une grotesque et une mono, un protagoniste (le point) du premier au dernier plan, des transitions qui réutilisent l'objet présent (O, goutte, tuiles), le HUD métronome et la grille de 8 mesures. Ce qui casse : le mur de lignes en contour (chapitre RHYTHM) et les métaballes chromées, plus génériques que le reste."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo réel 128 BPM : le global 85,5 BPM est une erreur ×2/3 (tempo_segment 0-7,5 s = 127,9 BPM ; balayage de phase à 128 BPM : grosse caisse à 0,366 s + n × 0,469 s, phase identique sur les quatre quarts ; le HUD affiche « 128 BPM »). Temps = 28,125 im, mesure = 112,5 im (1,875 s), 8 mesures = la vidéo. Le métronome du HUD change à f49, f77, f105… f780 : 23 changements sur 23 entre −1,8 et +0,2 im d'une grosse caisse. Changements de chapitre sur les barres de mesure : f217, f330, f442, f555, f669, f780 (−2 à 0 im), sauf l'entrée du mur de lignes (+5 im). Densité : en moyenne un geste par temps, plus des mouvements continus dans les scènes 3D. Le détecteur ne trouve que 8 coupes car la plupart des passages sont des zooms et des morphs continus ; f700, f711, f721 sont les sauts du rembobinage. Temps morts : 6 im figés avant le fondu vers le téléphone (f436-f441), « Exported » figé 15 im (f516-f530), carton final quasi immobile 1,2 s (f836-f891) animé seulement par un ping à f864.",
+    "timeline": [
+      {"t": "0:00.00-0:00.37", "what": "Cible (deux anneaux gris) et point orange ; le point s'étire en pilule puis en ligne (01 KINETIC TYPE)", "technique": "point → ligne"},
+      {"t": "0:00.37-0:01.05", "what": "Sur la grosse caisse f22, la ligne se dédouble en filets et MOTION se déplie entre eux ; graisse filaire → grasse", "technique": "dépliage vertical + morphing de graisse"},
+      {"t": "0:01.05-0:01.75", "what": "Accent orange qui saute M, O, T, I un demi-temps après l'autre ; les filets s'allongent et s'effacent", "technique": "accent de couleur au demi-temps"},
+      {"t": "0:01.75-0:03.60", "what": "10 lignes de MOTION en contour défilent en sens alternés derrière le mot plein (02 RHYTHM)", "technique": "mur de lignes en défilement"},
+      {"t": "0:03.62-0:05.05", "what": "Flash sur la barre, le mot prend une extrusion orange, rotations 3D sur les temps (03 3D TYPE)", "technique": "plat → 3D"},
+      {"t": "0:05.07-0:05.50", "what": "La caméra pivote, avance et plonge dans le O ; les métaballes apparaissent à travers la contreforme", "technique": "plongée dans un glyphe"},
+      {"t": "0:05.50-0:07.38", "what": "Métaballes chromées sur orange, annotation technique ; la goutte fusionnée s'étire en forme de téléphone (04 SIMULATION)", "technique": "SDF + morph de forme"},
+      {"t": "0:07.37-0:08.85", "what": "Fondu de 2 im vers un téléphone noir sur crème ; app Render : compteur 0 → 100 %, tuiles, Exported (05 PRODUCT UI)", "technique": "compteur qui roule + interface"},
+      {"t": "0:08.85-0:09.25", "what": "Poussée dans l'écran jusqu'à ce que la grille de tuiles remplisse le cadre", "technique": "zoom traversant"},
+      {"t": "0:09.25-0:11.13", "what": "Les tuiles deviennent un champ de 1 066 cubes 3D ; anneau crème qui s'étend, groupe orange qui pompe sur les temps (06 GENERATIVE)", "technique": "champ génératif + pompe"},
+      {"t": "0:11.15-0:11.45", "what": "Recul : l'image devient la fenêtre d'aperçu d'un faux logiciel de montage (07 EDIT)", "technique": "recul révélateur"},
+      {"t": "0:11.45-0:12.98", "what": "Rembobinage à 5,6× puis 10× de tous les chapitres jusqu'au point du début", "technique": "rembobinage autoréférentiel"},
+      {"t": "0:13.00-0:13.12", "what": "Sur le drop, le point explose en anneaux puis en iris crème plein cadre", "technique": "révélation circulaire"},
+      {"t": "0:13.12-0:13.93", "what": "« Claude » monte lettre à lettre, le point glisse et devient le point final ; sous-titre décodé (08 END)", "technique": "point qui devient ponctuation"},
+      {"t": "0:13.93-0:14.87", "what": "Pied de page EVERY FRAME RENDERED FROM CODE, maintien, ping du point sur le temps f864", "technique": "carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille globale fausse (85,5 BPM, ×2/3) : les barres des planches microscope ne tombent juste qu'une fois sur deux. Grille refaite : 128 BPM, grosse caisse à 0,366 s (tempo_segment 0-7,5 s = 127,9 BPM ; même phase sur chaque quart ; HUD « 128 BPM · BAR n/8 »). Métronome du HUD : 23 changements sur 23 à −1,8…+0,2 im d'une grosse caisse. Comptage (un événement par geste) : 21 gestes clés sur 28 à ±2 im d'un temps ou demi-temps (hasard ≈ 36 %). Calés : MOTION se déplie f22 (temps f22,0) ; accents de lettre M f64, O f78, T f90, I f105 (demi-temps 64,1, temps 78,2, demi-temps 92,2, temps 106,3 ; attaques fortes à 1,08 et 1,544 s) ; fin du mur de lignes f204 (demi-temps 204,7) ; flash f217 (temps 218,8, attaque basse forte à 3,646 s) ; rotations 3D f246, f274, f304 (temps 247,0 / 275,1 / 303,2) ; départ de la plongée f316 (demi-temps 317,2), atterrissage f330 (temps 331,3) ; fondu vers le téléphone f442 (443,8) ; relance f473 (472,0) ; atterrissage dans l'écran f555 (556,3) ; pompes des cubes f583, f611, f639 (584,5 / 612,6 / 640,7) ; recul f669 (668,8) ; iris f780 (781,3 : attaque la plus forte du morceau à 13,015 s, après un break visible dans la forme d'onde affichée) ; ping final f864 (865,7). Ratés : entrée du mur de lignes f111 (+5), allumage de l'écran f449 (+5), départ du zoom f531 (+3), départ du rembobinage f687 (+4), montée des lettres de Claude f787, sursaut f798. Indice automatique « partielle » avec corrélation des basses z = 4,02 (réelle).",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "pulsations", "texte", "camera", "couleur", "drop"],
+    "style_match": "Électro probable à 128 BPM, grosse caisse franche, break puis drop à 13 s : poussées, pompes et transitions suivent la grosse caisse ; l'iris éclate sur le drop.",
+    "how_built": "Le prompt ne parle pas de musique, mais le modèle a construit la vidéo en mesures et l'affiche : « 128 BPM · BAR n/8 », métronome à 4 carrés, 8 chapitres = 8 × 1,875 s = 15 s, forme d'onde réelle dans le faux logiciel de montage. La grille du code devance la grosse caisse d'environ 1 im, de façon constante : timeline calculée depuis le tempo, sur une piste choisie ou générée à 128 BPM (probable). Les pompes de cubes et le ping final sont des animations déclenchées sur les temps."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Une mesure par chapitre, 8 mesures = 15 s",
+      "name_en": "One bar per chapter, 8 bars = 15 s",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "À 128 BPM, une mesure = 112,5 im (1,875 s) ; 8 mesures = 15 s = la vidéo. Barres de mesure du code (lues sur le métronome du HUD) : f105, f218, f330, f444, f555, f667, f780. Chapitres : 01 KINETIC TYPE, 02 RHYTHM, 03 3D TYPE, 04 SIMULATION, 05 PRODUCT UI, 06 GENERATIVE, 07 EDIT, 08 END, chacun affiché « BAR n/8 ». Chaque passage atterrit sur la barre (−2 à 0 im), sauf l'entrée du mur de lignes (+5).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-move-f220.jpg, microM-003-cut-f442.jpg, microM-006-cut-f782.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Métronome affiché dans le HUD",
+      "name_en": "On-screen metronome",
+      "t": "0:00.50-0:13.00",
+      "frames": "f30-f780",
+      "fps": 60,
+      "mechanics": "4 petits carrés (≈ 1 % de la hauteur) en bas à droite, l'un allumé en orange à chaque temps. Changements mesurés à f49, f77, f105, f133, f161, f189, f218, f246, f274, f302, f444… f752, f780 : tous les 28-29 im, 23 sur 23 entre −1,8 et +0,2 im de la grosse caisse audible. La grille du code devance le son d'une image, ce qui paraît parfaitement calé. Le spectateur voit littéralement le tempo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pompe des cubes sur la grosse caisse",
+      "name_en": "Kick-driven cube pump",
+      "t": "0:09.72-0:11.10",
+      "frames": "f583-f666",
+      "fps": 60,
+      "mechanics": "Le groupe de cubes orange au centre monte à chaque temps : surface orange visible +2 800 px de f611 à f617, +5 400 px de f639 à f647 (montée en 6-8 im, ease-out), puis retombée lente sur ≈ 20 im ; sursauts de différence d'image exactement à f583, f611, f639 (grosses caisses à 584,5 / 612,6 / 640,7). Enveloppe attaque courte / relâche longue, comme un sidechain : le champ respire avec la musique.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-004-move-f547.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Point → ligne → mot qui se déplie",
+      "name_en": "Dot stretches into a line, word unfolds",
+      "t": "0:00.00-0:00.67",
+      "frames": "f0-f40",
+      "fps": 60,
+      "mechanics": "Cible de deux anneaux gris fins (≈ 65 % et 39 % de la hauteur) et point orange #FE4D1E (≈ 5 %). De f5 à f20, le point s'étire en pilule puis en ligne (≈ 6 % → 30 % → 58 % de la largeur), passe de l'orange au rose puis au blanc, les anneaux grandissent et s'effacent. Sur la grosse caisse f22, la ligne se dédouble en deux filets et MOTION se déplie verticalement entre eux : hauteur de la boîte 10, 54, 104, 144 px (échelle 540 p) de f22 à f40, ease-out, ≈ 18 im ; texte filaire, interlettrage très large au départ.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 0, "to": 40, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Morphing de graisse (fonte variable)",
+      "name_en": "Variable-weight morph",
+      "t": "0:00.40-0:01.03",
+      "frames": "f24-f62",
+      "fps": 60,
+      "mechanics": "MOTION passe de filaire à gras pendant ≈ 38 im : surface claire du texte 1 800 px (f24) → 20 000 (f45) → 27 800 (f62), ease-out ; les lettres s'épaississent de gauche à droite (à f48, « MOTI » gras, « ON » encore fin) et l'interlettrage se resserre. Le « I » reste une barre orange, comme un curseur. Cap ≈ 13 % de la hauteur, entre deux filets ≈ 60 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Accent de couleur qui saute de lettre en lettre au demi-temps",
+      "name_en": "Letter-by-letter colour step on off-beats",
+      "t": "0:01.05-0:01.80",
+      "frames": "f64-f108",
+      "fps": 60,
+      "mechanics": "Une lettre à la fois vire à l'orange-rose : M f64 (demi-temps 64,1), O f78 (temps 78,2), T f90 (demi-temps 92,2), I f105 (temps 106,3), soit un pas tous les 14 im ; montée ≈ 4 im, retour ≈ 10 im. Les attaques audio fortes à 1,08 s (f65) et 1,544 s (f93) tombent sur M et T. Les filets s'allongent à ≈ 70 % de la largeur puis s'effacent (f90-f100).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mur de lignes en défilement alterné (RHYTHM)",
+      "name_en": "Alternating marquee rows",
+      "t": "0:01.83-0:03.60",
+      "frames": "f110-f216",
+      "fps": 60,
+      "mechanics": "10 lignes de MOTION en contour (calque « rows[10] » : contours gris ou orange, certaines en italique, ≈ 10-11 % de la hauteur chacune) défilent horizontalement en sens alternés derrière le MOTION plein crème (≈ 14 %) ; fondu d'entrée f110-f121 (5 im après la barre), défilement constant (différence d'image 3,5-5,5), fondu de sortie de f204 (demi-temps 204,7) à f216. Gabarit très vu de « kinetic type », et un mur de mots.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg, microM-001-move-f220.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash d'éclairage sur la barre",
+      "name_en": "Light flash on the downbeat",
+      "t": "0:03.62",
+      "frames": "f217-f218",
+      "fps": 60,
+      "mechanics": "Le fond s'éclaircit en gris pendant 1 im (différence d'image 22 contre 0,2 juste avant), le HUD passe à « 03 3D TYPE » ; grosse caisse à f218,8 (−2 im) et forte attaque basse à 3,646 s. Ponctuation minimale qui marque le chapitre sans changer d'objet.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f220.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Le texte plat prend de l'épaisseur",
+      "name_en": "Flat type gains extrusion",
+      "t": "0:03.63-0:05.05",
+      "frames": "f218-f303",
+      "fps": 60,
+      "mechanics": "MOTION, encore de face, se dote d'une extrusion orange (flancs #C74727) qui s'allonge vers le bas et la droite de f223 à f245 ; puis les rotations 3D démarrent sur les temps : f246 (temps 247,0), f274 (275,1), f304 (303,2), lacet et inclinaison ≈ 15-25°, caméra en orbite lente ; faces avant crème #F2ECE5, ombre douce au sol ; mot ≈ 20 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f220.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le O",
+      "name_en": "Dive through the O counter",
+      "t": "0:05.07-0:05.50",
+      "frames": "f304-f330",
+      "fps": 60,
+      "mechanics": "La caméra pivote et glisse (f304-f313, pic de différence f309), le mot passe à droite, coupé par le bord (« MOTI »), puis une poussée accélérée (ease-in : différence 2,7 → 60 à f327) plonge dans la contreforme du O, avec flou de mouvement et copies fantômes (f325-f327). La scène suivante (fond orange, métaballes chromées) est déjà visible dans le O dès f326 ; l'anneau du O se démultiplie en cercles crème concentriques (f328) et s'efface : atterrissage propre à f330 (barre, grosse caisse 331,3).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f328.jpg",
+      "illus": {"from": 314, "to": 331, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Métaballes chromées en champ de distance (SDF)",
+      "name_en": "Chrome SDF metaballs",
+      "t": "0:05.50-0:07.25",
+      "frames": "f330-f435",
+      "fps": 60,
+      "mechanics": "4 sphères chromées (≈ 8-10 % de la hauteur, reflets orange du fond) fusionnent puis se séparent par mélange doux (smooth-min) : fusion f333-f337 en une masse liquide, séparation en 3 gouttes (f360-f390), nouvelle fusion (f420). Fond orange plat #FE4D1E, mouvement continu (différence 1-3), sans calage net sur les temps. Belle matière, mais trope de showreel IA.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f328.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Annotation technique à ligne d'appel",
+      "name_en": "Technical callout with leader line",
+      "t": "0:06.30-0:07.00",
+      "frames": "f378-f420",
+      "fps": 60,
+      "mechanics": "Fine ligne noire coudée qui part d'une goutte vers un bloc mono en haut à droite (3 lignes en capitales espacées, ≈ 1,8 % de la hauteur) : « SIGNED DISTANCE FIELD / SMOOTH-MIN k 0.15 / 80³ VOXELS · 060 » ; l'ancrage suit la goutte. Donne un vernis d'ingénierie et nomme la technique montrée.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La goutte devient le téléphone",
+      "name_en": "Blob morphs into the phone",
+      "t": "0:07.00-0:07.38",
+      "frames": "f420-f443",
+      "fps": 60,
+      "mechanics": "La goutte fusionnée s'étire en rectangle vertical à coins arrondis aux proportions d'un téléphone (≈ 40 % de la hauteur), ralentit jusqu'à l'arrêt (f436-f441 figés, 6 im), puis un fondu de 2 im (f442-f443) change le fond orange en crème et le chrome en téléphone noir mat (grosse caisse 443,8). La continuité de silhouette masque le changement de monde (morph cut).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f442.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Écran de rendu : compteur qui roule et tuiles qui se remplissent",
+      "name_en": "Render screen: rolling counter and filling tiles",
+      "t": "0:07.40-0:08.83",
+      "frames": "f444-f530",
+      "fps": 60,
+      "mechanics": "Téléphone noir mat (≈ 55 % de la hauteur, incliné ≈ 5°, ombre douce) sur crème #EDE8E0 ; écran allumé f449-f451. App « Render · showreel_2026.mp4 · 1080p60 » : grand pourcentage (≈ 7 % de la hauteur, % en orange) dont les chiffres roulent avec flou : 1 % f451, 22 % f462, 56 % f480, 98 % f510, 100 % ≈ f513 (≈ 2 %/im puis ralentissement) ; « FRAME 0588 / 0900 », barre de progression ; grille 6 × 6 de tuiles arrondies (« BUCKETS 23/42 ») qui s'allument en orange une à une (fondu ≈ 4 im) et dessinent une forme ; bouton « Export » qui devient orange « Exported ». Puis 15 im figés.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f442.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans l'écran : les tuiles deviennent des cubes",
+      "name_en": "Zoom into the screen, UI tiles become 3D cubes",
+      "t": "0:08.85-0:10.00",
+      "frames": "f531-f600",
+      "fps": 60,
+      "mechanics": "Poussée vers l'écran qui accélère (ease-in : différence 0,7 → 29,6 à f549-f550, flou vertical f540-f550) ; les bords du téléphone sortent du cadre et la grille de tuiles le remplit à f552 ; atterrissage f553-f555 (grosse caisse 556,3). Puis la grille bascule en perspective et les tuiles s'extrudent en cubes 3D (f562-f600) : l'interface est littéralement le champ génératif du chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f547.jpg, extra-02.jpg",
+      "illus": {"from": 531, "to": 600, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Champ de cubes avec onde annulaire",
+      "name_en": "Cube field with ring ripple",
+      "t": "0:09.25-0:11.13",
+      "frames": "f555-f668",
+      "fps": 60,
+      "mechanics": "Champ de 1 066 cubes arrondis (calque « field[1066] »), noirs ; un anneau de cubes crème surélevés s'élargit (rayon ≈ 30 % → 45 % de la largeur de f600 à f660) autour du groupe orange central (la forme des tuiles) qui pompe sur les temps ; quelques cubes orange épars ; la caméra s'incline et tourne lentement (perspective qui s'aplatit). Noir sur noir un peu terne.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul qui révèle le logiciel de montage",
+      "name_en": "Pull-back reveals the editing software",
+      "t": "0:11.15-0:11.43",
+      "frames": "f669-f686",
+      "fps": 60,
+      "mechanics": "Sur la barre (grosse caisse 668,8), l'image plein cadre rétrécit à ≈ 60 % en ≈ 17 im (ease-out : pic de différence f674-f675) et devient la fenêtre d'aperçu d'un logiciel de montage : panneau de calques à gauche, éditeur de courbe à droite, timeline et forme d'onde en bas. Le cadre « vidéo » est remis dans son contexte de fabrication.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-005-move-f703.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Faux logiciel de montage autoréférentiel",
+      "name_en": "Self-referential fake NLE",
+      "t": "0:11.43-0:12.98",
+      "frames": "f686-f779",
+      "fps": 60,
+      "mechanics": "« CLAUDE / SHOWREEL 2026 » ; 12 calques nommés d'après les scènes (01 dot, 02 slit_lines, 03 MOTION, 04 rows[10], 05 type_3d, 06 portal_O, 07 fluid_sdf, 08 phone, 09 ui_render, 10 field[1066], 11 camera, 12 post_fx), le calque actif surligné en orange ; éditeur « GRAPH / SPRING » avec la courbe de ressort (dépassement ≈ +12 % puis stabilisation, point orange qui la parcourt ; stiffness 144.0, damping 0.55, mass 1.00, blur 180°) ; piste V1 avec les 8 clips de chapitre, piste A1 avec la vraie forme d'onde (break visible vers 12,6-13 s), rangée de losanges-clés (gris sur les temps, orange aux chapitres), tête de lecture orange ; tout en mono ≈ 1,5 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f703.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Rembobinage accéléré de toute la vidéo",
+      "name_en": "Accelerating rewind of the whole reel",
+      "t": "0:11.45-0:12.98",
+      "frames": "f687-f779",
+      "fps": 60,
+      "mechanics": "La tête de lecture recule (« ◀◀ 5.6× » à f690, « 10.0× » à f735 : ease-in), l'aperçu rejoue les chapitres à l'envers (cubes → téléphone, compteur 100 → 0 % en 8 im → goutte → typo 3D → mur de lignes → MOTION filaire), le timecode décompte (00:00:10:28 → 00:00:02:48), calque et clip actifs suivent. Sauts du rembobinage à f700, f711 (sur un demi-temps), f721. Finit sur la toute première image : le point dans son anneau (f769-f779). Récapitulatif complet en 1,5 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f703.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point explose en iris sur le drop",
+      "name_en": "Dot bursts into an iris on the drop",
+      "t": "0:13.00-0:13.12",
+      "frames": "f780-f787",
+      "fps": 60,
+      "mechanics": "Sur l'attaque la plus forte du morceau (13,015 s = f780,9, après un break), le point émet des anneaux gris concentriques (f780, ≈ 25 % de la hauteur) puis un disque crème à bord annelé s'ouvre : 80 % (f781), 115 % (f782), coins encore sombres jusqu'à f784, plein cadre f785-f786 : 7 im, ease-out, légère frange froide sur le bord. C'est la révélation circulaire à partir d'un point.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f782.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le point d'ouverture devient le point final de « Claude. »",
+      "name_en": "Opening dot becomes the full stop",
+      "t": "0:13.12-0:13.50",
+      "frames": "f787-f810",
+      "fps": 60,
+      "mechanics": "Après l'iris, le point orange (≈ 2 % de la hauteur) garde un anneau fin orange (≈ 30 % → 70 % de la hauteur, qui s'efface) et glisse vers la droite et le bas pendant que « Claude » monte lettre à lettre à travers un masque de ligne de base (décalage ≈ 2-3 im : C f787, Cl f791, Cla f797, Claud f800, Claude f806-f808) ; le point se pose comme point final à f810 (≈ 0,4 s). Grotesque grasse en bas de casse, capitale ≈ 22 % de la hauteur, interlettrage serré, centrée.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f782.jpg, extra-03.jpg",
+      "illus": {"from": 778, "to": 812, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre décodé (texte brouillé)",
+      "name_en": "Scramble-decode subtitle",
+      "t": "0:13.30-0:14.10",
+      "frames": "f798-f846",
+      "fps": 60,
+      "mechanics": "« MOTION DESIGNER / SHOWREEL 2026 » (mono espacée ≈ 1,6 % de la hauteur) se résout de gauche à droite à partir de caractères aléatoires, les caractères non résolus en orange, les résolus en gris : f798-f836, ≈ 38 im (0,63 s), ≈ 1 caractère par image. Puis le pied de page « EVERY FRAME RENDERED FROM CODE » (≈ 1 %, gris très clair) apparaît en fondu (f840-f846). Effet fréquent dans les vidéos IA, ici discret.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ping final sur le temps",
+      "name_en": "Final ping on the beat",
+      "t": "0:14.40-0:14.80",
+      "frames": "f864-f888",
+      "fps": 60,
+      "mechanics": "Après 28 im d'immobilité totale (différence d'image 0,0-0,1), un anneau orange fin s'étend depuis le point final et s'efface : pixels orange 744 → 1 121 (pic f869) → retour à f888. Départ sur le temps du HUD f864 (grosse caisse 865,7, −2 im). Seul mouvement des 1,2 dernières secondes : le carton respire une fois.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle complète : un seul protagoniste, le point",
+      "name_en": "Full loop with a single protagonist",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "Le point orange de la première image devient ligne, filets et « I » orange de MOTION ; le rembobinage ramène exactement la première image (point dans l'anneau, f769-f779), qui explose en iris et finit comme point de « Claude. », lequel pulse sur le dernier temps. Toute la vidéo est une boucle racontée par un seul objet.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-006-cut-f782.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "HUD de viseur : chapitre, tempo, timecode",
+      "name_en": "Viewfinder HUD with chapter, tempo and timecode",
+      "t": "0:00.00-0:13.00",
+      "frames": "f0-f779",
+      "fps": 60,
+      "mechanics": "Coins de cadre aux 4 angles ; en bas à gauche « ■ 0n CHAPITRE » avec carré rouge clignotant (enregistrement) ; en bas à droite « 128 BPM · BAR n/8 » + 4 carrés-métronome ; en haut à droite « TC 00:00:0s:ff » à 60 images, qui décompte pendant le rembobinage. Mono ≈ 1,5 % de la hauteur, gris sur sombre, plus foncé sur crème ; absent du carton final.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette en trois couleurs, l'orange comme fil",
+      "name_en": "Three-colour palette, orange as the thread",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "Orange #FE4D1E, crème #EDE8E0 / #F2ECE5, quasi-noir #0E0E0E (+ chrome et orange ombré #C74727). L'orange marque toujours l'objet à suivre (point, I, flancs 3D, fond des métaballes, tuiles, cubes centraux, tête de lecture, point final). Fonds : noir (01-03, 06-07) → orange (04) → crème (05, 08).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une grotesque grasse + une mono technique",
+      "name_en": "One bold grotesque plus a technical mono",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "MOTION et « Claude. » dans une grotesque géométrique grasse à O rond (probable Inter Display ou General Sans), capitales pour MOTION (≈ 13 % de la hauteur), casse mixte pour « Claude. » (capitale ≈ 22 %) ; graisse filaire au départ (fonte variable) ; mono espacée pour HUD, interface, annotations et sous-titres. Deux familles seulement sur toute la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Tout sur l'axe central, pour zoomer dans l'axe",
+      "name_en": "Centre-axis composition enabling axial transitions",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "Le héros de chaque plan est centré (point, MOTION, métaballes, téléphone, groupe de cubes, « Claude. ») : l'œil ne voyage jamais et les transitions peuvent se faire dans l'axe (plongée dans le O, poussée dans l'écran, recul dans le logiciel, iris depuis le point). Seule exception voulue : l'annotation SDF en haut à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain fin et flous de mouvement sur les zooms",
+      "name_en": "Fine grain and motion blur on zooms",
+      "t": "0:00.00-0:14.87",
+      "frames": "f0-f891",
+      "fps": 60,
+      "mechanics": "Bruit fin sur les fonds sombres ; flou directionnel et copies fantômes sur la plongée dans le O (f325-f327) et la poussée dans l'écran (flou vertical f540-f550) ; chiffres du compteur flous en roulant ; reflets chromés ; légère frange chromatique (≈ 1 px) sur le texte du HUD ; vignettage faible (orange #FE4D1E au centre, #FA4B1D aux coins).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f328.jpg, microM-004-move-f547.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Prompt identique à safarkhanshuvo-ffd52d (craft 4) : ici le modèle a choisi un fil conducteur (le point) et un concept (le reel se fabrique puis se rembobine dans son propre logiciel) au lieu d'un catalogue de looks. Avec un prompt d'une ligne, le concept dépend du tirage : il faut l'écrire."},
+    {"kind": "structure", "insight": "La structure musicale est écrite à l'écran (« 128 BPM · BAR n/8 ») : le modèle a découpé la timeline en 8 mesures et calé sa grille à 1 image près sur la grosse caisse. Demander « une scène par mesure, transition qui atterrit sur la barre, une pulsation par temps » reproduirait ce résultat volontairement."},
+    {"kind": "build", "insight": "« EVERY FRAME RENDERED FROM CODE » et les calques nommés (dot, slit_lines, rows[10], type_3d, portal_O, fluid_sdf, field[1066]) révèlent la construction : rendu 3D et champ de distance en code (WebGL probable), bande-son au même tempo ; le faux logiciel affiche même la courbe de ressort utilisée (stiffness 144, damping 0,55)."},
+    {"kind": "inputs", "insight": "Sans texte fourni, le modèle n'écrit presque rien : MOTION pendant trois chapitres, « Render », « Claude. ». Pour une promo SaaS, il faut donner les mots (accroche, bénéfices, appel à l'action) et leur placement sur les temps."},
+    {"kind": "banned", "insight": "Rien d'interdit : métaballes chromées et texte décodé (scramble), tics fréquents, apparaissent ; le glitch, lui, est absent. Une liste d'interdits ciblée aurait poussé à remplacer les métaballes par un objet lié au sujet."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : rembobinage à 10× et chapitres de 1,875 s laissent peu de temps pour reconnaître chaque scène. Préciser « 2 mesures pour la scène clé » ou « rembobinage ≤ 4× » améliorerait la lecture sans casser la grille."}
+  ],
+  "steal": [
+    "Afficher le métronome : « 128 BPM · BAR n/8 » et 4 carrés qui s'allument au temps ; 8 chapitres = 8 mesures = 15 s.",
+    "Chaque transition naît de l'objet présent : plonger dans le O, changer la goutte en téléphone, zoomer dans l'écran jusqu'à ce que ses tuiles deviennent des cubes.",
+    "Révéler la fabrication : reculer dans un faux logiciel de montage (calques nommés, courbe de ressort, forme d'onde) et rembobiner toute la vidéo en accélérant.",
+    "Un seul protagoniste : le point du début devient ligne puis mot, explose en iris sur le drop et atterrit comme point final du nom.",
+    "Faire pomper un groupe d'objets sur la grosse caisse : montée en 6 images (ease-out), retombée en 20, comme un sidechain."
+  ],
+  "flaws": [
+    "Mur de 10 lignes de MOTION en contour qui défilent : gabarit de « kinetic type » générique, entré 5 images après la mesure.",
+    "Un seul mot pendant trois chapitres (5,5 s) : MOTION ; aucun message, aucune promesse.",
+    "Métaballes chromées et champ de cubes : tropes de showreel IA ; le champ noir sur noir reste terne.",
+    "Rembobinage à 5,6-10× : les chapitres défilent trop vite pour être reconnus.",
+    "Carton final immobile 1,2 s, animé seulement par un léger ping au temps f864."
+  ],
+  "deep_study": {"worth": true, "why": "Oui : meilleure démonstration du lot de transitions motivées et enchaînées sur une grille de mesures ; la plongée dans le O, le morph goutte → téléphone, le zoom écran → cubes, le recul dans le logiciel et l'iris se jouent en 6 à 24 images, à décortiquer image par image à 60 fps."}
+}

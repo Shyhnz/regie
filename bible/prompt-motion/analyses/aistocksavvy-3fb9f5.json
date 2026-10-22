@@ -1,0 +1,538 @@
+{
+  "slug": "aistocksavvy-3fb9f5",
+  "title": "Stock analysis app promo",
+  "handle": "@AIStockSavvy",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo produit tenue : intro mot à mot sur le temps, système HUD + chapitres cohérent, cartes UI 3D avec flou ; mais le même wipe revient 5 fois, chapitres au gabarit identique.",
+  "summary": "Promo de 15 s de l'app boursière Stockwhiz. Intro « THE MARKET / NEVER / SLEEPS. » claquée un mot par temps avec split RGB, puis 5 chapitres de 2 s calqués sur les onglets de l'app (news, résultats, calendrier, notes d'analystes, watchlist), reliés par le même wipe diagonal violet. Finale : mur de captures incliné, flash, logo tapé. Rythme impeccable, grammaire répétitive.",
+  "prompt_vs_result": [
+    "Prompt générique « showreel » : vidéo de 15 s audacieuse et dynamique, timing net, transitions fluides, visuels marquants, « make every second count ». Aucun produit, aucune marque, aucune musique mentionnés.",
+    "Tout le reste : sujet Stockwhiz, vraies captures de l'app, chapitres = onglets de navigation, palette nuit violette, wipe diagonal, compteurs, mur de captures, logo final avec badge BETA, grille de 0,5 s calée sur 120 BPM.",
+    "Le prompt publié est incomplet : les captures et la marque ont forcément été fournies à part (probable). « Make every second count » a donné des chapitres de 2 s sans temps mort ; il aurait fallu demander des transitions variées."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0D0B18",
+        "role": "fond nuit (bords)"
+      },
+      {
+        "hex": "#29225D",
+        "role": "halo central du fond (vignette radiale)"
+      },
+      {
+        "hex": "#5D55EA",
+        "role": "aplat du wipe, bande ticker du haut, soulignement nav"
+      },
+      {
+        "hex": "#7870EE",
+        "role": "accent texte (2e ligne des titres, « SLEEPS. »)"
+      },
+      {
+        "hex": "#FCFCFC",
+        "role": "titres et cartes UI"
+      },
+      {
+        "hex": "#D8D8F0",
+        "role": "bande ticker du bas (lavande)"
+      },
+      {
+        "hex": "#22C55E",
+        "role": "gains, badges BEAT, curseur de prix (estimé)"
+      },
+      {
+        "hex": "#E8E8F5",
+        "role": "flash surexposé de la finale"
+      }
+    ],
+    "type": "Titres en sans humaniste grasse (Source Sans 3 Bold probable), casse phrase, 2 lignes ≈ 8 % de hauteur ; slams en capitales grasses ≈ 13 % ; labels et ticker en mono capitales espacées ; wordmark géométrique (Poppins probable).",
+    "texture": "Vignette radiale violette sur fond nuit, flou de mouvement directionnel sur toutes les entrées de cartes et sur les chiffres qui roulent, aberration chromatique (split rouge/cyan) et tranches de glitch sur les slams d'intro, halo vert lumineux sur le curseur de prix, ombres portées douces sous les cartes UI.",
+    "style": "Promo SaaS fintech, nuit violette, HUD",
+    "coherence": "Système très tenu : HUD permanent (STOCKWHIZ en haut à gauche, chrono qui défile en haut à droite, 5 onglets en bas avec soulignement de progression), numérotation « 01 LIVE NEWS », même mise en page titre gauche / carte droite, un seul accent violet, le vert réservé aux gains. Ce qui casse : la finale passe en lavande délavée, seul moment hors palette."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Grille à 120,2 BPM (netteté 6,85, pulsation claire), un temps = 15 im à 30 fps, premiers temps f16, f31, f46. La vidéo est construite en unités de 0,5 s : intro de 3 mots à un mot par temps (f46, f61, f76), puis 5 chapitres de 60 im = 4 temps exactement, chacun ouvert par le même wipe dont la révélation tombe pile sur le temps (f91, f151, f211, f271, f331). Plans médians de 0,5 s (coupes détectées en paires autour des aplats violets). Un seul maintien statique mesuré : 4,20-4,67 s (chapitre news posé, 0,47 s). Le premier demi-seconde (f0-f14) est un fond nuit presque vide. Densité forte : quelque chose bouge environ toutes les 0,25 à 0,5 s, mais l'énergie de mouvement retombe à plat dans la seconde moitié de chaque chapitre (après l'installation des cartes).",
+    "timeline": [
+      {
+        "t": "0:00-0:00.5",
+        "what": "Fond nuit avec vignette, presque vide",
+        "technique": "ouverture au noir"
+      },
+      {
+        "t": "0:00.5-0:01.0",
+        "what": "Logo Stockwhiz (3 barres obliques) apparaît au centre avec halo",
+        "technique": "apparition sur le temps f15"
+      },
+      {
+        "t": "0:01.0-0:01.37",
+        "what": "Anneau fin ≈ 70 % de la hauteur + légende mono « STOCKWHIZ · SHOWREEL 2026 »",
+        "technique": "légende HUD"
+      },
+      {
+        "t": "0:01.37-0:01.5",
+        "what": "Le logo grossit ×4 en 4 im avec flou, la légende se dédouble en glitch",
+        "technique": "zoom à travers le logo (zoom-through)"
+      },
+      {
+        "t": "0:01.5-0:02.0",
+        "what": "« THE MARKET » claque entre deux bandes de ticker inclinées",
+        "technique": "slam + split RGB sur le temps"
+      },
+      {
+        "t": "0:02.0-0:02.5",
+        "what": "« NEVER » remplace le mot, même slam",
+        "technique": "mot à mot sur le temps"
+      },
+      {
+        "t": "0:02.5-0:02.8",
+        "what": "« SLEEPS. » en violet accent avec traînées d'écho",
+        "technique": "mot à mot sur le temps"
+      },
+      {
+        "t": "0:02.8-0:03.1",
+        "what": "Bandes diagonales blanc / lavande / violet balaient l'écran, aplat violet 4 im",
+        "technique": "wipe diagonal à bandes"
+      },
+      {
+        "t": "0:03.1-0:04.8",
+        "what": "Chapitre 01 LIVE NEWS : carte article entre en 3D, titre « Headlines, as they break. », pile de 3 mini-cartes, pastille LIVE",
+        "technique": "carte UI 3D + titre 2 lignes"
+      },
+      {
+        "t": "0:04.8-0:05.1",
+        "what": "Même wipe diagonal",
+        "technique": "wipe diagonal à bandes"
+      },
+      {
+        "t": "0:05.1-0:06.8",
+        "what": "Chapitre 02 EARNINGS : carte de résultats COST, compteurs EPS / REVENUE / NET INCOME qui roulent, puis zoom ×2 sur la carte et pastille « BEAT +3.37% »",
+        "technique": "compteurs + push-in"
+      },
+      {
+        "t": "0:06.8-0:07.1",
+        "what": "Même wipe diagonal",
+        "technique": "wipe diagonal à bandes"
+      },
+      {
+        "t": "0:07.1-0:08.8",
+        "what": "Chapitre 03 CALENDAR : 5 cartes jour tombent en cascade 3D, puis un scanner violet balaie la rangée",
+        "technique": "cascade + balayage lumineux"
+      },
+      {
+        "t": "0:08.8-0:09.1",
+        "what": "Même wipe diagonal",
+        "technique": "wipe diagonal à bandes"
+      },
+      {
+        "t": "0:09.1-0:10.8",
+        "what": "Chapitre 04 RATINGS : carte OKTA en 3D, axe de prix, curseur vert glisse de 187 $ à 230 $ avec compteur",
+        "technique": "curseur + compteur synchronisés"
+      },
+      {
+        "t": "0:10.8-0:11.1",
+        "what": "Même wipe diagonal",
+        "technique": "wipe diagonal à bandes"
+      },
+      {
+        "t": "0:11.1-0:12.4",
+        "what": "Chapitre 05 WATCHLIST : « Your tickers. Always on. », 12 cartes ticker volent en cascade",
+        "technique": "cascade de cartes"
+      },
+      {
+        "t": "0:12.4-0:13.43",
+        "what": "Fondu vers un mur incliné de captures de l'app qui défile en diagonale",
+        "technique": "mur de captures (UI mosaic)"
+      },
+      {
+        "t": "0:13.43-0:13.9",
+        "what": "Coupe vers un flash lavande délavé, fondu au sombre, les 3 barres du logo arrivent en traînées",
+        "technique": "flash surexposé"
+      },
+      {
+        "t": "0:13.9-0:14.6",
+        "what": "Wordmark « Stockwhiz » tapé lettre à lettre, badge BETA, slogan « Every move. The moment it hits the wire. »",
+        "technique": "révélation de logo"
+      },
+      {
+        "t": "0:14.6-0:15.05",
+        "what": "Rangée des onglets sous le slogan puis fondu au noir",
+        "technique": "fondu de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120,2 BPM, temps toutes les 15 im (f16, f31, f46…). Structure : 5 chapitres de 60 im = 4 temps exactement ; les 5 wipes ont la même phase, entrée f84/f144/f204/f264/f324 (demi-temps ±1 im), aplat violet 4 im, révélation f91/f151/f211/f271/f331 pile sur le temps (barres bleues sous f91 et f151 sur microM-002 et microM-003). Intro : logo f15 (temps f16), anneau f30 (f31), « THE MARKET » posé f46 (f46), « NEVER » f61 (f61), « SLEEPS. » f76 (f76) = un mot par temps. Comptage d'un événement par geste : 16 gestes sur 26 à ±2 im d'un temps plein (hasard 33 %) ; 24 sur 26 à ±2 im d'un temps ou demi-temps (hasard ≈ 67 % à 30 fps, la preuve forte est donc sur les temps pleins et la phase constante des wipes). Accents secondaires sur demi-temps : 2e ligne des titres (f98, f218, f339), pastille BEAT f188, badge BETA f428. Ratés : le flash f403 (3 im avant le temps f406) et l'arrivée du curseur f313 (3 im avant f316). Les mouvements continus (compteurs, ticker, panoramique du mur) ne sont pas calés. L'indice automatique (p = 0,02, départs/demi-temps) sous-estime à cause de ces mouvements continus.",
+    "synced": [
+      "coupes",
+      "texte",
+      "apparitions",
+      "impacts",
+      "departs"
+    ],
+    "style_match": "Électro pulsée à 120 BPM probable (onsets réguliers) : slams secs, wipes sur la mesure et cartes rapides collent au ton finance « toujours en mouvement ».",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. La synchro vient d'une timeline découpée en unités de 0,5 s (chapitre = 2 s = 4 temps) et d'une piste à 120 BPM alignée sur t = 0 (temps mesurés à +35 ms, soit le décalage d'analyse). Probable : bande-son choisie ou générée à 120 BPM puis timeline construite en temps. Impossible de savoir sans le code si la piste a été générée."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture logo + légende HUD",
+      "name_en": "logo sting opener",
+      "t": "0:00.5-0:01.37",
+      "frames": "f15-f41",
+      "fps": 30,
+      "mechanics": "Logo (3 barres obliques violet/blanc, ≈ 8 % de la hauteur) apparaît au centre f15 sur fond nuit à vignette radiale, sur le temps f16. f30 : anneau fin ≈ 70 % de la hauteur et légende mono capitales espacées « STOCKWHIZ · SHOWREEL 2026 » ≈ 1,5 % de hauteur, sur le temps f31. 0,9 s d'installation.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-001-move-f45.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom à travers le logo avec glitch",
+      "name_en": "logo zoom-through glitch",
+      "t": "0:01.30-0:01.50",
+      "frames": "f39-f45",
+      "fps": 30,
+      "mechanics": "f39-f41 : la légende se dédouble verticalement (2 à 3 copies décalées, glitch). f41-f44 : le logo grossit ≈ ×1,2 → ×1,6 → ×2,5 → ×4 (accélération, ease-in), flou de mouvement et léger tremblement ; f44 les bandes de ticker et « THE MARKET » apparaissent derrière à travers le logo agrandi. 4 im de zoom, aucune image noire entre les deux plans.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f45.jpg",
+      "illus": {
+        "from": 39,
+        "to": 50,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slam mot à mot sur le temps",
+      "name_en": "word-per-beat slam",
+      "t": "0:01.47-0:02.60",
+      "frames": "f44-f78",
+      "fps": 30,
+      "mechanics": "« THE MARKET » (blanc), « NEVER » (blanc), « SLEEPS. » (violet #7870EE), capitales grasses ≈ 13 % de hauteur, centrées. Chaque mot entre à ≈ 150 % (f45 « THE MARKET » remplit 95 % de la largeur) et se pose à 100 % (≈ 62 % de la largeur) en 4 à 5 im, ease-out fort, sans dépassement. Une image avant, le mot suivant apparaît en fantôme géant (≈ 140 %, opacité ≈ 30 %) derrière le mot courant (f59 « NEVER », f74 « SLEEPS. ») : anticipation. Intervalle entre mots = 15 im = 1 temps (posés f46, f61, f76).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f45.jpg, microM-002-cut-f86.jpg",
+      "illus": {
+        "from": 44,
+        "to": 78,
+        "n": 8
+      }
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Aberration chromatique et tranches de glitch à l'impact",
+      "name_en": "RGB split glitch on impact",
+      "t": "0:01.47-0:02.60",
+      "frames": "f44-f50, f59-f63, f74-f78",
+      "fps": 30,
+      "mechanics": "À chaque slam, copies rouge et cyan décalées horizontalement de ≈ 2 à 3 % de la largeur, tranches horizontales déplacées (f45), puis décroissance en 3 à 4 im jusqu'à un texte net (f49-f50). Sur « SLEEPS. » f75, échos horizontaux répétés qui fabriquent des points en trop (« SLEEPS... ») avant de se résorber f78.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f45.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Bandes de ticker inclinées en sens opposés",
+      "name_en": "counter-scrolling ticker tapes",
+      "t": "0:01.47-0:02.87",
+      "frames": "f44-f86",
+      "fps": 30,
+      "mechanics": "Deux bandes pleine largeur inclinées ≈ -4° : en haut violet #5D55EA texte mono blanc (TSLA, AAPL, AMD…), en bas lavande texte sombre (COST EPS ▲3.37 %, OKTA PT ▲22.99 %…). Hauteur ≈ 6 % chacune, à ≈ 15 % et 80 % de la hauteur. Elles défilent en sens opposés (haut vers la gauche, bas vers la droite) pendant les slams : cadre éditorial et contexte bourse sans un mot de plus.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD permanent avec nav de chapitres et progression",
+      "name_en": "persistent HUD with chapter nav",
+      "t": "0:01.5-0:12.4",
+      "frames": "f45-f372",
+      "fps": 30,
+      "mechanics": "« STOCKWHIZ » mono ≈ 1,2 % de hauteur en haut à gauche, chrono qui défile en haut à droite (« 01.75 », « 03.45 » = temps écoulé), et en bas 5 onglets mono espacés NEWS / EARNINGS / CALENDAR / RATINGS / WATCHLIST répartis sur toute la largeur ; l'onglet actif passe en violet et un soulignement violet #5D55EA se remplit sous lui comme barre de progression du chapitre. Marges ≈ 3 % gauche/droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chapitres = onglets du produit",
+      "name_en": "product-tab chapter structure",
+      "t": "0:03.1-0:12.4",
+      "frames": "f91-f372",
+      "fps": 30,
+      "mechanics": "5 chapitres de 2 s numérotés « 01 LIVE NEWS », « 02 EARNINGS · AI-ANALYZED », « 03 EARNINGS CALENDAR », « 04 ANALYST RATINGS », « 05 WATCHLIST » (filet + numéro violet + label mono). Chaque chapitre = un onglet réel de l'app, une promesse en 2 lignes (blanc puis accent) et une capture. Même ordre que la nav : la vidéo est une visite guidée du produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Wipe diagonal à bandes avec aplat violet",
+      "name_en": "diagonal band wipe",
+      "t": "0:02.80-0:03.10",
+      "frames": "f84-f93",
+      "fps": 30,
+      "mechanics": "Bandes inclinées ≈ 20° de la verticale (blanc, gris translucide, lavande, violet) entrent par la gauche : f84 filet, f85 ≈ 40 % couvert, f86 ≈ 75 %, f87 plein violet #5D55EA avec 2 dernières bandes à droite. Aplat plein f87-f90 (4 im). Sortie f91-f93 par bandes sombres diagonales vers la droite. Le plan sortant prend un flou et glisse ≈ 2 % vers la droite en f85. Total 10 im = 0,33 s ; entrée sur le demi-temps, révélation sur le temps. Répété à l'identique 5 fois (f84, f144, f204, f264, f324).",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f86.jpg, microM-003-cut-f146.jpg, microM-006-cut-f326.jpg",
+      "illus": {
+        "from": 83,
+        "to": 94,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Entrée de carte UI en perspective avec flou",
+      "name_en": "3D card fly-in with motion blur",
+      "t": "0:03.10-0:03.23",
+      "frames": "f93-f97, f152-f157, f273-f279",
+      "fps": 30,
+      "mechanics": "Vraie capture de l'app posée sur une carte blanche à coins arrondis, ombre douce, ≈ 40 % de la largeur à droite. Elle entre de la droite (ou du dessous au chapitre 2) tournée en perspective (rotation Y ≈ -30°, Z ≈ -8°), échelle ≈ 110 %, flou de mouvement fort, et se pose en 4 à 6 im, ease-out sans dépassement ; au chapitre 4 la carte garde une légère inclinaison finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f86.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre 2 lignes en fondu-flou décalé",
+      "name_en": "staggered blur-in headline",
+      "t": "0:03.23-0:03.43",
+      "frames": "f97-f103",
+      "fps": 30,
+      "mechanics": "Ligne 1 blanche « Headlines, » : f97 floue et grise, f98 lisible, f99 nette (3 im). Ligne 2 « as they break. » monte de ≈ 2 % depuis un masque avec flou f100, nette f101, puis sa couleur passe d'un violet sombre à l'accent #7870EE f101-f103. Décalage entre lignes 3 im. Même recette sur « Price targets, / decoded. » (f274-f278) et « Your tickers. / Always on. » (f333-f340, décalage 4 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f86.jpg, microM-006-cut-f326.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pile de mini-cartes de notification",
+      "name_en": "stacked notification cards",
+      "t": "0:03.5-0:04.0",
+      "frames": "f103-f120",
+      "fps": 30,
+      "mechanics": "3 mini-cartes d'articles (≈ 18 % de largeur) arrivent du bas avec flou et rotation, se superposent en escalier sous la carte principale (décalage ≈ 2 % en x et 5 % en y). Pastille verte « ● LIVE » + « Whiz Insights on every story » s'ajoute sous le titre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs financiers qui roulent avec flou",
+      "name_en": "rolling counters with digit blur",
+      "t": "0:05.27-0:06.37",
+      "frames": "f158-f191",
+      "fps": 30,
+      "mechanics": "Trois gros chiffres blancs (EPS 6,75 $, REVENUE 95,72 B$, NET INCOME 3,00 B$, ≈ 6 % de hauteur) avec label mono violet au-dessus et « vs 6,53 $ exp. » en dessous. Ils montent de ≈ 0 à la valeur en ≈ 33 im (1,1 s), ease-out : f180 6,66, f185 6,75 (les derniers centièmes traînent). Les chiffres qui changent portent un flou vertical, les chiffres stables restent nets.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f146.jpg, microM-004-move-f190.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Push-in sur la carte quand le badge claque",
+      "name_en": "card push-in on badge pop",
+      "t": "0:06.20-0:06.47",
+      "frames": "f186-f194",
+      "fps": 30,
+      "mechanics": "Pastille verte « BEAT +3.37% » pop en haut à droite de la carte f186-f188 (échelle 0 → 100 % avec flou, sur le demi-temps f188). En même temps la carte passe de ≈ 45 % à ≈ 105 % de la largeur et monte au tiers haut en 8 im, flou de mouvement f189-f191, ease-out, posée f194 (2 im avant le temps f196). La carte déborde à droite : colonnes coupées par le cadre.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f190.jpg",
+      "illus": {
+        "from": 180,
+        "to": 196,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cascade 3D de cartes calendrier",
+      "name_en": "staggered 3D card cascade",
+      "t": "0:07.23-0:07.87",
+      "frames": "f219-f236",
+      "fps": 30,
+      "mechanics": "5 cartes jour (≈ 12 % de largeur chacune) tombent du coin haut droit en basculant en perspective, semi-transparentes et doublées en vol, et se rangent de gauche à droite. Décalage ≈ 3 im entre cartes, vol ≈ 10 im chacune, posées vers f223, f226, f229, f232, f235. Pas de rebond.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f229.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Scanner lumineux qui balaie la rangée",
+      "name_en": "light scan sweep",
+      "t": "0:08.03-0:08.60",
+      "frames": "f241-f258",
+      "fps": 30,
+      "mechanics": "Une barre verticale violette lumineuse (≈ 2 % de largeur, halo + fines lignes) part du bord gauche sur le temps f241 et traverse la rangée de cartes en ≈ 17 im, vitesse quasi linéaire ; chaque carte se soulève de ≈ 2 % de hauteur au passage. Met en valeur une liste sans nouvelle entrée.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f229.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Curseur sur axe de prix avec compteur lié",
+      "name_en": "price slider with linked counter",
+      "t": "0:09.77-0:10.53",
+      "frames": "f285-f316",
+      "fps": 30,
+      "mechanics": "Axe gradué 180 $ à 240 $ (≈ 30 % de largeur, bas gauche) apparaît en fondu f283-f292. Curseur vert à halo apparaît f293 à « 187,00 $ » et glisse jusqu'à 230 $ en 20 im (f293-f313), ease-in-out (départ lent jusqu'à f297, rapide f301-f308, arrivée douce), le compteur au-dessus roule avec lui et se floute pendant la course. « NEW PT » + « +11.30% upside » vert en fondu f314-f316. Marqueur « NOW 206,64 $ » fixe sous l'axe.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 285,
+        "to": 316,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes watchlist en vol puis flottement",
+      "name_en": "ticker cards fly-in and float",
+      "t": "0:11.17-0:12.40",
+      "frames": "f335-f372",
+      "fps": 30,
+      "mechanics": "12 cartes ticker (2 colonnes × 6, ≈ 18 % de largeur chacune) arrivent du haut droit en vol incliné avec fort flou de mouvement, décalage ≈ 2 im, rangées vers f346 (temps). Ensuite léger flottement vertical de ≈ 0,5 % (f360-f371) pour éviter l'image figée.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f326.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mur de captures incliné en panoramique",
+      "name_en": "tilted UI mosaic wall",
+      "t": "0:12.40-0:13.43",
+      "frames": "f372-f402",
+      "fps": 30,
+      "mechanics": "Fondu enchaîné de 6 im (f372-f377, fini sur le temps f376) vers un mur de ≈ 16 captures de l'app tournées ≈ -12° et en légère perspective, gouttières sombres. Le mur glisse en diagonale vers le haut à droite ≈ 15 % de largeur en 25 im, vitesse constante, léger flou. Récapitule tout le produit avant le logo.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 370,
+        "to": 420,
+        "n": 8
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash surexposé puis retour au sombre",
+      "name_en": "whiteout flash to dark",
+      "t": "0:13.43-0:13.87",
+      "frames": "f403-f416",
+      "fps": 30,
+      "mechanics": "Coupe franche f403 vers le mur délavé à ≈ 15 % d'opacité sur lavande #E8E8F5 (surexposition), puis désaturation vers gris f405-f410 et descente au fond nuit f411-f414 (≈ 12 im). Tombe 3 im avant le temps f406 : seul accent visiblement hors grille.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation de logo en traînées puis frappe",
+      "name_en": "logo streak-in and type-on",
+      "t": "0:13.70-0:15.05",
+      "frames": "f411-f448",
+      "fps": 30,
+      "mechanics": "Les 3 barres du logo arrivent en traînées lumineuses depuis la droite (f411-f416) et s'assemblent f417. Le wordmark « Stockwhiz » (géométrique medium, ≈ 6 % de hauteur) se tape de gauche à droite en 6 im (f417-f422, dernière lettre floue), complet sur le temps f421. Badge « BETA » violet pop f427-f430 (demi-temps f428). Slogan « Every move. The moment it hits the wire. » en fondu f432-f437 (posé sur le temps f436), rangée d'onglets en fondu f438-f441, fondu au noir f444-f448 (5 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette nuit violette à accent unique",
+      "name_en": "single-accent night palette",
+      "t": "0:00-0:15.05",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Fond #0D0B18 avec vignette radiale #29225D au centre ; un seul accent violet (#5D55EA pour les aplats, #7870EE pour le texte) ; blanc pour les titres et les cartes ; vert #22C55E réservé aux hausses et aux badges. Les captures UI blanches donnent le contraste maximal sur le fond nuit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio typographique titre / mono / wordmark",
+      "name_en": "headline-mono-wordmark type system",
+      "t": "0:00-0:15.05",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Sans humaniste grasse (Source Sans 3 Bold probable) pour titres et slams, casse phrase sauf l'intro en capitales ; mono capitales à interlettrage large (JetBrains Mono probable) pour HUD, ticker, labels de chapitres et de chiffres ; géométrique (Poppins probable) pour le seul wordmark. Titres alignés à gauche à ≈ 4 % du bord, bloc titre centré verticalement à ≈ 40 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un mot par temps dans l'accroche",
+      "name_en": "one word per beat hook",
+      "t": "0:01.5-0:02.6",
+      "frames": "f46-f76",
+      "fps": 30,
+      "mechanics": "Logo f15, anneau f30, puis « THE MARKET » posé f46, « NEVER » f61, « SLEEPS. » f76 : 5 événements à 0 à 1 im des temps f16, f31, f46, f61, f76 (15 im = 1 temps à 120 BPM). Le fantôme du mot suivant apparaît 1 à 2 im avant le temps, l'impact tombe sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f45.jpg, microM-002-cut-f86.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Chapitres sur la mesure, révélation sur le temps",
+      "name_en": "bar-locked chapter wipes",
+      "t": "0:02.8-0:11.1",
+      "frames": "f84-f333",
+      "fps": 30,
+      "mechanics": "Chaque chapitre dure 60 im = 4 temps. Le wipe démarre sur le demi-temps qui précède (f84 ≈ demi-temps f83,5), l'aplat violet couvre 4 im, la révélation du nouveau plan démarre pile sur le temps (f91, f151, f211, f271, f331) et le contenu est lisible 2 im après, au moment où l'attaque est audible. Phase identique sur les 5 wipes.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f86.jpg, microM-003-cut-f146.jpg, microM-006-cut-f326.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Accents secondaires sur les demi-temps",
+      "name_en": "offbeat secondary accents",
+      "t": "0:03.27-0:14.27",
+      "frames": "f98, f188, f218, f339, f428",
+      "fps": 30,
+      "mechanics": "Les éléments secondaires d'un chapitre tombent sur le demi-temps entre deux temps : 2e ligne de titre (f98, f218, f339), pastille « BEAT +3.37% » (f188), badge « BETA » (f428). Les éléments principaux (wipe, mots, logo, slogan) restent sur les temps pleins : hiérarchie rythmique temps = message, demi-temps = détail.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f190.jpg, microM-005-move-f229.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Chapitre en deux temps : arrivée dense puis pose",
+      "name_en": "front-loaded chapter timing",
+      "t": "0:03.1-0:04.8",
+      "frames": "f91-f146",
+      "fps": 30,
+      "mechanics": "Dans chaque chapitre de 60 im, toutes les entrées (carte, titre, mini-cartes) se font dans les 15 à 25 premières images, puis l'image tient ≈ 20 à 30 im avec un seul micro-mouvement (compteur, scan, curseur) avant le wipe. Maintien statique mesuré 4,20-4,67 s au chapitre 1 : le seul vrai creux.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt publié est le prompt générique « showreel / portfolio », mais la vidéo montre des captures réelles de l'app Stockwhiz, un article Tesla daté et un slogan : le créateur a fourni la marque et les captures hors du texte publié (probable). La richesse de la vidéo vient de ces entrées, pas du prompt."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Smooth transitions » a été lu comme un seul wipe soigné, réutilisé 5 fois. Sans consigne de variété, Claude choisit une transition maison et la répète."
+    },
+    {
+      "kind": "structure",
+      "insight": "« Make every second count » + 15 s ont produit un découpage strict en unités de 0,5 s : accroche de 3 mots, 5 chapitres de 2 s, finale de 3 s. La structure par onglets du produit est une décision de Claude."
+    },
+    {
+      "kind": "build",
+      "insight": "Grille en temps de 0,5 s alignée sur une piste à 120 BPM : la synchro tient sans que le prompt la demande ; écrire le prompt en BPM la rendrait volontaire."
+    },
+    {
+      "kind": "other",
+      "insight": "Fuite du prompt dans l'image : la légende d'intro dit « SHOWREEL 2026 » alors que la vidéo est une promo produit."
+    }
+  ],
+  "steal": [
+    "Accroche de 3 mots, un par temps : chaque mot entre à 150 % puis se pose en 4 im, split RGB décroissant, fantôme du mot suivant juste avant.",
+    "Chapitres = onglets du produit : nav en bas, onglet actif qui se remplit, numéro « 01 » + label mono ; un chapitre = une mesure de 4 temps.",
+    "Transition : bandes diagonales qui partent sur le demi-temps, aplat de couleur 4 im, révélation pile sur le temps.",
+    "Compteurs qui roulent 1 s avec flou vertical, puis push-in ×2 sur la carte au moment où un badge « BEAT » claque.",
+    "Hiérarchie rythmique : message principal sur le temps plein, détails (2e ligne, badge) sur le demi-temps."
+  ],
+  "flaws": [
+    "Le même wipe diagonal revient 5 fois à l'identique : mécanique dès la 3e occurrence.",
+    "Gabarit titre gauche / carte droite répété sur 5 chapitres ; captures trop petites pour être lues en 2 s.",
+    "Le push-in sur la carte de résultats coupe les colonnes au bord droit du cadre.",
+    "Flash lavande de la finale hors grille (3 im avant le temps) et hors palette.",
+    "Légende « SHOWREEL 2026 » : le prompt de portfolio fuit dans une promo produit."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Modèle direct pour une promo SaaS : accroche mot à mot sur le temps, système HUD/chapitres, wipes calés sur la mesure, compteurs et cartes 3D. Seulement 30 fps, mais l'étude image par image de l'intro (f0-f93) et d'un chapitre complet donne une recette reproductible dans HyperFrames."
+  }
+}

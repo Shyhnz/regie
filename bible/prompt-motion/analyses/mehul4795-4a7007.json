@@ -1,0 +1,350 @@
+{
+  "slug": "mehul4795-4a7007",
+  "title": "ocrX app launch video",
+  "handle": "@mehul4795",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Récit produit limpide et bonnes démonstrations (rature, ligne de scan, compteur, filtrage de recherche), mais transitions en double exposition qui ressemblent à des bugs, 65 % d'images figées et musique posée.",
+  "summary": "Promo verticale de 33 s pour ocrX, appli Android de reconnaissance de texte. Accroche « Stop retyping. » rayée en rouge, icône qui se matérialise, puis cinq fonctionnalités au même gabarit (sur-titre + titre deux lignes + démonstration) : scan d'un document, 140 langues, écriture manuscrite, export, recherche dans l'historique ; preuve sociale à compteurs et carte Google Play. Lisible et cohérent, mais lent et enchaîné maladroitement.",
+  "prompt_vs_result": [
+    "Une seule ligne : une vidéo de lancement produit pour l'appli Android ocrX. Aucun style, format, durée, musique ni liste de fonctionnalités imposés.",
+    "Claude a tout choisi : format 9:16, palette pastel tirée du logo, accroche « Stop retyping. », cinq fonctionnalités avec démonstrations simulées, statistiques Play Store (4.4, 1M+, 26K+), carte CTA « Free on Google Play ».",
+    "Le prompt ne cadrait ni rythme ni transitions : Claude a produit un gabarit de page d'accueil animée. Il aurait fallu un tempo, une durée maximale de maintien, des transitions motivées et une vérification des enchaînements."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F1F2FA", "role": "fond lavande très pâle"},
+      {"hex": "#F6C9CF", "role": "bokeh rose flou, haut gauche"},
+      {"hex": "#D9DDFB", "role": "bokeh bleu flou, droite"},
+      {"hex": "#F7E3B8", "role": "bokeh jaune flou, bas gauche"},
+      {"hex": "#D3EDE3", "role": "bokeh vert flou, bas droit"},
+      {"hex": "#1C2238", "role": "bleu nuit : titres, mot-symbole, boutons, cadre du téléphone"},
+      {"hex": "#A3A8BA", "role": "gris de départ des mots, sur-titres"},
+      {"hex": "#F0524A", "role": "rouge corail : rature, « + », crochet haut gauche du logo"},
+      {"hex": "#F2B65A", "role": "jaune : crochet bas gauche du logo"},
+      {"hex": "#2FA866", "role": "vert : coche du logo, ligne de scan, badge 2.1s"},
+      {"hex": "#FBF6EA", "role": "papier crème du document scanné"},
+      {"hex": "#FFF4C2", "role": "note jaune lignée"},
+      {"hex": "#DDE0F7", "role": "surlignage lavande des lignes détectées"},
+      {"hex": "#F7D774", "role": "surlignage du terme trouvé « Wi-Fi »"}
+    ],
+    "type": "Grotesque géométrique type Plus Jakarta Sans (probable), Bold bleu nuit, casse de phrase : accroche ≈ 5 % de la hauteur, titres ≈ 3,8 %, compteur ≈ 11 % ; sur-titres capitales grises ≈ 0,8 %, interlettrage +25 %.",
+    "texture": "Aucun grain. Quatre grands disques flous (bokeh) aux couleurs du logo, quasi fixes. Cartes blanches à rayon ≈ 3 % et ombre douce et large (≈ 40 px, opacité faible). Halo vert autour de la ligne de scan. Aucun flou de mouvement.",
+    "style": "Promo d'app SaaS pastel claire",
+    "coherence": "Le système vient du logo : ses quatre crochets (rouge, bleu nuit, jaune, vert) deviennent le viseur qui cadre chaque document, ses couleurs teintent le bokeh du fond, la coche verte devient la ligne de scan et le badge de vitesse, le rouge ne sert qu'à la rature et au « + ». Même gabarit sur-titre + titre à chaque scène. Le système casse aux raccords : titres superposés en double exposition pendant 7-12 images, coupes franches sèches."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "aucune",
+    "dead_time": "beaucoup",
+    "notes": "Grille 120 BPM fiable (autocorrélation du flux 0,88 à 1,0 s, 0,79 à 0,5 s), temps à x,17 et x,67 s, soit toutes les 15 images à 30 fps (f5, f20, f35…). La batterie entre vers 4,67 s, pendant que le logo est figé ; le défilement vers la scène suivante part 8 im plus tard (f148). Huit scènes de durées irrégulières (4,9 / 6,0 / 3,7 / 4,4 / 3,3 / 4,3 / 2,8 / 4,0 s), sans multiple de mesure (2 s). Deux coupes franches détectées : 10,97 s (f329, entre deux temps) et 26,73 s (f802, +2 im d'un temps). 16 maintiens ≥ 0,4 s totalisant 21,7 s (65 %) : certains sont des démonstrations lentes (texte en flux 8,1-9,9 s), mais les vrais temps morts sont le logo tenu 2,8-4,9 s, le résultat de recherche 24,6-26,7 s et la carte finale 30,7-33,4 s. Densité correcte pendant les démonstrations (un changement toutes les 0,2-0,5 s : mots, pastilles, tuiles), nulle pendant les maintiens.",
+    "timeline": [
+      {"t": "0:00-0:01.1", "what": "« Stop / retyping. » mot à mot, puis rature rouge sur « retyping. »", "technique": "mot à mot gris → encre ; rature tracée en 10 im"},
+      {"t": "0:01.2-0:02.3", "what": "« Your camera already captured the words. » mot à mot", "technique": "décalage 2-4 im par mot"},
+      {"t": "0:02.3-0:04.9", "what": "L'icône se matérialise sur « Stop », coupe sur l'icône seule, coche tracée, « ocrX », tagline, pastille « Freshly redesigned for Android » ; maintien 2 s", "technique": "icône qui se matérialise ; tracé de la coche"},
+      {"t": "0:04.9-0:05.4", "what": "Tout monte, « Image to text / Photo to text in one tap. » arrive du bas", "technique": "défilement vertical linéaire à arrêt sec"},
+      {"t": "0:05.4-0:07.5", "what": "Document « Harbor Lane Books » cadré par les crochets du logo, ligne de scan verte", "technique": "viseur aux couleurs du logo ; balayage 1,3 s"},
+      {"t": "0:07.6-0:10.6", "what": "Carte « Extracted text » qui monte, texte en flux, badge 2.1s, toast « Copied »", "technique": "flux de texte ≈ 90 car./s"},
+      {"t": "0:10.6-0:11.0", "what": "Le titre et le compteur suivants apparaissent par-dessus, coupe f329", "technique": "double exposition puis coupe"},
+      {"t": "0:11.0-0:14.6", "what": "« Reads 140+ languages. » : compteur 0 → 140, nuage de pastilles en écritures natives, « + » rouge, « and 130+ more »", "technique": "compteur ease-out 50 im ; pastilles qui éclosent"},
+      {"t": "0:14.6-0:19.0", "what": "Poussée latérale vers « Handwriting works too. » : note jaune tapée, crochets, flèche, résultat tapé", "technique": "poussée ease-in-out 10 im"},
+      {"t": "0:18.8-0:22.4", "what": "Double exposition puis « Copy once, paste anywhere. » : carte Details, tuiles Copy / PDF / TXT / Share, toast", "technique": "tuiles qui éclosent, décalage 6 im"},
+      {"t": "0:22.4-0:26.7", "what": "Poussée vers « Every scan, one search away. » : téléphone, saisie « wi-fi », le bon résultat monte en tête", "technique": "filtrage de liste en 8 im ; maintien 2 s"},
+      {"t": "0:26.5-0:29.4", "what": "Double exposition, coupe f802, « Over a million downloads. » : 3 cartes à compteurs 4.4 / 1M+ / 26K+", "technique": "cartes décalées de 7 im, compteurs"},
+      {"t": "0:29.2-0:33.5", "what": "L'icône se matérialise de nouveau, « ocrX / Image to Text Converter », bouton « Free on Google Play », arguments, « By Aculix » ; maintien 2,7 s", "technique": "logo en serre-livre ; bouton qui jaillit d'un trait"}
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Comptage sur la grille 120 BPM (temps toutes les 15 im, ±2 im = 33 % par hasard), un événement par geste : 11 sur 29 à ±2 im d'un temps (38 %), soit le hasard. Sur la grille : icône seule f79 (-1), 1er mot du sous-titre f36 (+1), carte résultat f229 (-1), poussée f439 (-1), tuile Copy f575 (0), filtrage f727 (+2), coupe f802 (+2), bouton CTA f905 (0). Hors grille : apparition des mots f2 / f8 (±3), départ de la rature f23 (+3), défilement f148 (+8 après l'entrée de la batterie à 4,67 s), crochets f160 (+5), ligne de scan f176 (+6), coupe f329 (+9), tuiles PDF / TXT / Share (décalage 6 im ≠ 7,5 im), poussée f672 (+7). Les durées de scènes ne sont pas des multiples de mesure. L'indice automatique ne voit rien (p corrigé 1,0 ; z = 0,42).",
+    "synced": [],
+    "style_match": "Pop d'entreprise enjouée à 120 BPM (« upbeat music », batterie qui entre vers 4,67 s, probable) : ton léger cohérent avec le pastel SaaS, mais l'animation ignore sa pulsation.",
+    "how_built": "Stack non précisée et aucune musique demandée : la bande-son a probablement été ajoutée après coup. Scènes à durées irrégulières et décalages de 2 à 7 im sans lien avec le tempo ; la batterie démarre pendant un logo figé."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot du gris à l'encre",
+      "name_en": "Word-by-word grey-to-ink reveal",
+      "t": "0:00.07-0:01.80 ; 0:05.10-0:05.50 ; 0:22.50-0:22.97",
+      "frames": "f2-f12, f36-f54, f152-f166, f675-f690",
+      "fps": 30,
+      "mechanics": "Chaque mot apparaît en gris clair (#C8CBD8) puis passe au bleu nuit #1C2238 en 4-6 im, avec une montée d'environ 1 % de la hauteur, sans flou. Décalage de 2-4 im entre mots : Your f36, camera f40, already f42, captured f46, the f48, words. f52 ; « Photo » f153, « to » f155, « text » f158, « in » f159, « one » f161, « tap. » f164. La lecture suit l'apparition ; le gris intermédiaire évite le pop sec.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rature rouge tracée sur le mot-problème",
+      "name_en": "Hand-drawn strike-through",
+      "t": "0:00.77-0:01.10",
+      "frames": "f23-f33",
+      "fps": 30,
+      "mechanics": "Trait rouge corail #F0524A épais d'environ 0,6 % de la hauteur, incliné d'environ -3°, tracé de gauche à droite sur « retyping. » en ≈ 10 im (pas décroissants : ease-out), dépassant le mot d'environ 3 % de chaque côté, extrémités arrondies. Le mot rayé reste lisible : la douleur est nommée puis annulée.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 20, "to": 36, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Icône qui se matérialise sur le titre",
+      "name_en": "Icon materialize over headline",
+      "t": "0:02.33-0:03.20 ; 0:29.17-0:30.00",
+      "frames": "f70-f96, f875-f900",
+      "fps": 30,
+      "mechanics": "Un carré arrondi blanc translucide grandit d'environ 55 à 100 % centré sur « Stop » (opacité 0 → 70 % en 9 im), puis coupe à f79 : le titre disparaît d'un coup, l'icône reste seule (à 1 im du temps de 2,67 s). Son contenu se construit ensuite : crochets présents, « text » en fondu f80-f84, coche verte tracée f86-f93 (7 im), mot-symbole « ocrX » du gris au bleu nuit f92-f100, tagline et pastille. Même mécanique à la fin par-dessus les statistiques.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f78.jpg",
+      "illus": {"from": 70, "to": 95, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Coche tracée dans l'icône",
+      "name_en": "Checkmark draw-on",
+      "t": "0:02.87-0:03.10",
+      "frames": "f86-f93",
+      "fps": 30,
+      "mechanics": "La coche verte #2FA866 de l'icône se dessine par son tracé (stroke draw-on) en 7 im : branche courte puis longue, ease-out. Donne vie au logo sans le déformer.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f78.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo en serre-livre",
+      "name_en": "Bookend logo reveal",
+      "t": "0:02.3-0:04.9 ; 0:29.2-0:33.5",
+      "frames": "f70-f147, f875-f1003",
+      "fps": 30,
+      "mechanics": "La même révélation d'icône ouvre et ferme le film ; à la fin la tagline devient « Image to Text Converter » et un bouton CTA remplace la pastille. Structure : douleur → marque → 5 fonctionnalités → preuve sociale → marque + CTA.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Défilement vertical à arrêt sec",
+      "name_en": "Linear vertical scroll push",
+      "t": "0:04.93-0:05.33",
+      "frames": "f148-f160",
+      "fps": 30,
+      "mechanics": "Le bloc logo monte d'environ 8,5 % de la hauteur par image, vitesse constante (linéaire), et sort par le haut ; la scène suivante monte du bas au même pas et s'arrête net à f159 (titre de 50 % à 16 % de la hauteur en 5 im, sans amorti). Lisible, mais mécanique ; part 8 im après l'entrée de la batterie.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f149.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Viseur aux crochets du logo",
+      "name_en": "Logo-bracket scanner frame",
+      "t": "0:05.33-0:05.47",
+      "frames": "f160-f164",
+      "fps": 30,
+      "mechanics": "Quatre équerres en L aux couleurs des coins du logo (rouge en haut à gauche, bleu nuit en haut à droite, jaune en bas à gauche, vert en bas à droite) convergent d'environ 110 % vers le document en ≈ 4 im avec fondu. Réutilisées pour la note manuscrite (16,5 s). Le logo devient l'outil de démonstration.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f149.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Ligne de scan qui surligne au passage",
+      "name_en": "Scan line sweep with line highlights",
+      "t": "0:05.87-0:07.53",
+      "frames": "f176-f226",
+      "fps": 30,
+      "mechanics": "Ligne verte #2FA866 entourée d'un halo (≈ 2 % de la hauteur) qui balaie le document de haut en bas en ≈ 40 im (1,33 s), vitesse presque constante ; chaque ligne de texte reçoit un surlignage lavande #DDE0F7 dès que la ligne la dépasse. Fondu de la ligne en bas f216-f226. Le document est légèrement incliné (≈ -3°) sur papier crème #FBF6EA en serif.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 176, "to": 216, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte résultat et texte en flux",
+      "name_en": "Result card with streamed text",
+      "t": "0:07.63-0:10.50",
+      "frames": "f229-f315",
+      "fps": 30,
+      "mechanics": "La carte « Extracted text » monte du bas (≈ +8 % → 0, fondu, 7 im ease-out) ; le texte arrive en flux à ≈ 3 caractères par image (≈ 90 car./s) dès f238 avec caret ; badge vert « ⚡ 2.1s » qui éclôt f243 ; bouton « Copy » bleu nuit ; toast sombre « Copied » à coche verte qui monte du bas vers f298-f310. Démonstration complète d'un geste en 3 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Double exposition puis coupe",
+      "name_en": "Overlapping crossfade then hard cut",
+      "t": "0:10.57-0:10.97 ; 0:18.80-0:19.07 ; 0:26.50-0:26.73",
+      "frames": "f317-f329, f564-f572, f795-f802",
+      "fps": 30,
+      "mechanics": "Les éléments de la scène suivante (titre, compteur « 0 », carte Details) apparaissent à 30-60 % d'opacité par-dessus la scène précédente restée à 100 % pendant 7 à 12 im, puis l'ancienne disparaît sur une coupe franche. Les titres se chevauchent (« Rhoto to text », « Kandwriting ») : effet de bug d'enchaînement, aucune motivation.",
+      "verdict": "cliche",
+      "evidence": "microM-003-cut-f329.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur roulant puis « + » en chute",
+      "name_en": "Ease-out rolling counter with punchline plus",
+      "t": "0:10.83-0:13.00",
+      "frames": "f325-f390",
+      "fps": 30,
+      "mechanics": "Nombre ExtraBold bleu nuit, capitale ≈ 11 % de la hauteur, de 0 à 140 en ≈ 50 im : incréments 8, 8, 7, 7, 7, 6, 6, 6, 6, 5, 5, 5, 5, 4… (ease-out cubique), 135 à f360, 140 à f375. Pause ≈ 0,4 s, puis « + » rouge #F0524A qui éclôt vers f388 avec la pastille « and 130+ more » : le chiffre devient une chute. Largeur des chiffres variable (pas de chiffres tabulaires).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f329.jpg",
+      "illus": {"from": 326, "to": 346, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Nuage de pastilles en écritures natives",
+      "name_en": "Scattered native-script language pills",
+      "t": "0:10.97-0:13.00",
+      "frames": "f329-f390",
+      "fps": 30,
+      "mechanics": "Neuf pastilles blanches (English, ગુજરાતી, Deutsch, हिन्दी, 日本語, Español, العربية, Français, 한국어) éclosent d'un point à 100 % en ≈ 4 im, décalage 3-5 im (English f329, ગુજરાતી f332, Deutsch f336, हिन्दी f339, 日本語 f344…), dispersées en couronne autour du compteur, puis flottent doucement (dérive ≈ ±0,5 %). Les écritures natives prouvent la diversité mieux qu'une liste.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f329.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée latérale",
+      "name_en": "Horizontal push",
+      "t": "0:14.63-0:14.97 ; 0:22.40-0:22.73",
+      "frames": "f439-f449, f672-f682",
+      "fps": 30,
+      "mechanics": "La scène sort vers la gauche sur ≈ 100 % de la largeur en ≈ 10 im ease-in-out ; la suivante entre par la droite, la carte (note jaune, téléphone) précède le titre d'environ 2 im (léger effet de parallaxe). Propre mais générique ; la première tombe sur un temps (f440), la seconde non.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f439.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Note manuscrite tapée",
+      "name_en": "Handwritten note typed on",
+      "t": "0:14.90-0:18.50",
+      "frames": "f447-f555",
+      "fps": 30,
+      "mechanics": "Note jaune lignée #FFF4C2 inclinée d'environ -2°, police script type Caveat (probable), texte « Milk, eggs, fresh basil. / Pick up the birthday cake! / Call Nana about Sunday lunch. » qui s'écrit lettre à lettre (≈ 2 car./im). Puis crochets du logo, flèche ↓ et carte résultat dont le texte arrive en flux. Démonstration sans voix off.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tuiles d'action qui éclosent",
+      "name_en": "Action tiles pop-in grid",
+      "t": "0:19.17-0:20.00",
+      "frames": "f575-f600",
+      "fps": 30,
+      "mechanics": "Sous la carte « Details », quatre tuiles 2 × 2 (Copy bleu nuit, PDF rouge, TXT noir, Share vert) éclosent d'un point à 100 % en ≈ 5 im ease-out sans dépassement, décalage ≈ 6 im (Copy f575 sur un temps, PDF f581, TXT ≈ f588, Share ≈ f594). Toast « Copied to clipboard » vers 21,0 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f571.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Recherche qui fait monter le bon résultat",
+      "name_en": "Search filter reorder",
+      "t": "0:23.30-0:24.83",
+      "frames": "f699-f745",
+      "fps": 30,
+      "mechanics": "La requête « wi-fi » se tape à ≈ 4 im par caractère (w f699, wi f703, wi- f707, wi-f f713, wi-fi f717), pause de 0,3 s, puis la ligne correspondante remonte de la 5e à la 1re place en 8 im ease-out (f727-f735) pendant que les autres passent à ≈ 30 % d'opacité et glissent vers le bas ; « Wi-Fi » surligné jaune #F7D774 à f737, « 1 result » à f743. Puis maintien 2 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 723, "to": 745, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone dessiné au trait",
+      "name_en": "Outline phone mockup",
+      "t": "0:22.4-0:26.7",
+      "frames": "f672-f801",
+      "fps": 30,
+      "mechanics": "Téléphone simplifié : contour bleu nuit épais (≈ 1,5 % de la largeur), coins arrondis ≈ 8 %, sans encoche, écran blanc à liste de scans multilingues (anglais, espagnol, grec). Largeur ≈ 78 % du cadre : les lignes de la liste restent petites (≈ 1 % de la hauteur).",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Cartes de statistiques à compteurs",
+      "name_en": "Stat cards with counters",
+      "t": "0:26.73-0:28.00",
+      "frames": "f802-f840",
+      "fps": 30,
+      "mechanics": "Trois cartes blanches entrent par la droite avec fondu (≈ 8 im), décalage 7 im (f802, f809, f816). La note roule de 0,6 à 4,4 (pas de 0,3 puis 0,1 : ease-out sur ≈ 38 im) et passe donc par « 2.5 ★ » ; « 1M+ » affiche « 0M+ » pendant son entrée ; les avis roulent 2K → 26K. Bonne preuve sociale, exécution maladroite.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f802.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton CTA qui jaillit d'un trait",
+      "name_en": "CTA pill grow from dash",
+      "t": "0:30.17-0:30.43",
+      "frames": "f905-f913",
+      "fps": 30,
+      "mechanics": "Le bouton bleu nuit « Free on Google Play » naît d'un trait d'environ 10 % de sa largeur et s'ouvre à 100 % en ≈ 8 im ease-out, ombre douce, exactement sur le temps de 30,17 s. Puis ligne d'arguments « 99%+ accuracy • 140+ languages • Handwriting » à puces rouges en fondu f917-f925 et « BY ACULIX » en capitales espacées.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f911.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond à bokeh aux couleurs du logo",
+      "name_en": "Logo-color bokeh background",
+      "t": "0:00-0:33.5",
+      "frames": "f0-f1003",
+      "fps": 30,
+      "mechanics": "Fond #F1F2FA avec quatre grands disques très flous (≈ 30 % de la largeur) : rose en haut à gauche, bleu à droite, jaune en bas à gauche, vert en bas à droite, reprenant les quatre couleurs du logo, quasi immobiles. Le fond porte l'identité sans gêner la lecture.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Sur-titre espacé + titre deux lignes",
+      "name_en": "Eyebrow + two-line headline template",
+      "t": "0:05.0-0:29.2",
+      "frames": "f152-f875",
+      "fps": 30,
+      "mechanics": "Chaque fonctionnalité : sur-titre en capitales grises ≈ 0,8 % de la hauteur, interlettrage ≈ +25 % (« IMAGE TO TEXT », « AUTO LANGUAGE DETECTION »…), puis titre Bold bleu nuit sur deux lignes (capitale ≈ 3,8 %), centré à y ≈ 10-14 %, formule courte à chute (« Copy once, / paste anywhere. »). Démonstration sous le titre dans les 60 % inférieurs.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rouge réservé à la rupture",
+      "name_en": "Single red accent for punchlines",
+      "t": "0:00.8 ; 0:13.0 ; 0:30.6",
+      "frames": "f23, f388, f917",
+      "fps": 30,
+      "mechanics": "Le rouge corail #F0524A n'apparaît que sur la rature, le « + » de « 140+ », les puces finales et un coin du logo : l'œil associe le rouge à « ce qui change ». Le reste est bleu nuit, gris et pastel.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture longs",
+      "name_en": "Long reading holds",
+      "t": "0:02.83-0:04.90 ; 0:24.63-0:26.70 ; 0:30.73-0:33.40",
+      "frames": "f85-f147, f739-f801, f922-f1002",
+      "fps": 30,
+      "mechanics": "Après chaque démonstration, l'image reste figée 2 à 2,7 s (logo, résultat de recherche, carte finale) ; 65 % des images sont quasi figées. Le rythme devient celui d'une page d'accueil qu'on fait défiler, à l'opposé d'une règle « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne que le nom de l'appli. Le logo exact, l'éditeur Aculix et les chiffres Play Store (4.4, 1M+, 26K+) laissent penser que Claude a consulté la fiche Play Store ou reçu des fichiers ; la mention « Freshly redesigned for Android » est probablement inventée ou tirée du post."},
+    {"kind": "direction", "insight": "Sans direction artistique, Claude a dérivé tout le système du logo (crochets, quatre couleurs, coche) : bon réflexe, à demander explicitement dans un prompt."},
+    {"kind": "structure", "insight": "Claude a choisi seul une structure de page d'accueil : douleur, marque, cinq fonctionnalités au même gabarit, preuve sociale, CTA. Claire, mais chaque scène suit le même tempo lent."},
+    {"kind": "build", "insight": "Les scènes semblent montées comme des blocs qui se chevauchent : la suivante entre en fondu avant que la précédente sorte, d'où la double exposition. Il fallait un fondu croisé complet ou une coupe nette."},
+    {"kind": "qa", "insight": "Aucune relecture image par image visible : titres superposés, compteur « 0M+ », note qui passe par 2,5 étoiles, maintiens de 2 s non corrigés."},
+    {"kind": "other", "insight": "Aucune musique demandée : la bande à 120 BPM est posée et rien n'est calé dessus. Préciser le BPM et caler chaque scène sur des mesures de 2 s aurait suffi."}
+  ],
+  "steal": [
+    "Ouvrir sur la douleur rayée : mot-problème barré d'un trait rouge incliné de -3°, tracé en 10 im, puis la promesse mot à mot du gris à l'encre.",
+    "Réutiliser le motif du logo comme outil : ses quatre crochets colorés deviennent le viseur qui cadre chaque document scanné.",
+    "Ligne de scan verte qui balaie le document en 1,3 s et surligne chaque ligne au passage : la fonction se comprend sans texte.",
+    "Compteur ease-out de 0 à 140 en 50 im, pause de 0,4 s, puis « + » rouge qui éclôt comme une chute.",
+    "Pour la recherche : taper la requête, puis faire monter le bon résultat en tête en 8 im pendant que les autres s'estompent à 30 %."
+  ],
+  "flaws": [
+    "Raccords en double exposition : le titre suivant apparaît à 30-60 % par-dessus l'ancien pendant 7-12 im avant la coupe, trois fois.",
+    "Musique à 120 BPM posée : 11 gestes sur 29 sur un temps, au niveau du hasard.",
+    "65 % d'images quasi figées : logo tenu 2 s, résultat de recherche 2,1 s, carte finale 2,7 s.",
+    "Compteurs maladroits : « 0M+ » affiché pendant l'entrée, note qui démarre à 0,6 et passe par 2,5 étoiles.",
+    "Défilement linéaire à arrêt sec et poussées latérales génériques, sans amorti ni motivation."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 fps, mouvements simples (fondus, éclosions, poussées) mesurés sur les planches. Les idées utiles (rature, viseur du logo, ligne de scan, filtrage) se reprennent depuis les planches ; l'exécution des raccords est un contre-exemple."
+  }
+}

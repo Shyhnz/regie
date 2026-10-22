@@ -1,0 +1,541 @@
+{
+  "slug": "gizakdag-cf4ae6",
+  "title": "Overthinking motion study",
+  "handle": "@gizakdag",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Récit en arc limpide, transitions variées et motivées (iris sur le drop, plongée dans l'œil, stores), son pensé avec l'image ; perd des points sur le chaos glitché illisible et les coupes hors temps.",
+  "summary": "Étude verticale sur la rumination, montée sur les illustrations jointes de l'artiste : un point et « one thought. », une spirale de mots qui s'emplit, un titre rétro OVER/THINKING sur un buste psychédélique, quatre tableaux de plus en plus courts, un chaos de bandeaux glitchés, puis noir, silence et « breathe. ». Arc limpide et transitions motivées ; glitch et aberration RVB surexploités.",
+  "prompt_vs_result": [
+    "Imposait : 15 s « dynamiques » façon showreel prouvant le talent du motion designer, sur le concept « Overthinking », inspirées des illustrations jointes (collages rétro psychédéliques de l'artiste).",
+    "Claude a choisi le 9:16, un arc une pensée → spirale → chaos → respiration, les 5 illustrations comme décors animés, des légendes tapées, un HUD de caméra, le titre rétro et un final « breathe. ».",
+    "Le concept et les images ont bien cadré récit et palette ; rien sur la musique ni le rythme, d'où une synchro au temps limitée à la séquence titre. Il aurait fallu fixer le BPM, les coupes sur les temps et la lisibilité mobile."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#070818",
+        "role": "fond nuit étoilé : intro, noir, carton final"
+      },
+      {
+        "hex": "#141F74",
+        "role": "fond indigo de la spirale, centre plus clair"
+      },
+      {
+        "hex": "#F2CC21",
+        "role": "jaune : point, étoile, « what if », faisceaux, crédits"
+      },
+      {
+        "hex": "#DBA8C4",
+        "role": "rose : « but », anneaux, « breathe. »"
+      },
+      {
+        "hex": "#E0752A",
+        "role": "orange : cube filaire, anneaux, étiquette de légende, stores"
+      },
+      {
+        "hex": "#EDE1CA",
+        "role": "crème : OVER THINKING, flash, titre final"
+      },
+      {
+        "hex": "#1B3FC6",
+        "role": "bleu roi : grilles des collages, stores"
+      }
+    ],
+    "type": "Grotesque condensée grasse crème à ombres empilées arc-en-ciel (OVER ≈ 13 % de la hauteur, THINKING 8 %) ; serif italique grasse pour les pensées et « breathe. » (2-5 %) ; mono pour légendes et HUD (≈ 1,5 %) ; didone capitales au final.",
+    "texture": "Grain animé permanent (change à chaque image, visible sur les fonds noirs), aberration chromatique en impulsions et sur les transitions, bloom jaune sur les flashs, surexposition crème, tranches glitch, halo des yeux et des faisceaux, vignettage ; matière des illustrations jointes (aérographe, collage années 70, trame).",
+    "style": "Collage psychédélique rétro, glitch nocturne",
+    "coherence": "Tenue par la nuit bleu marine (intro, spirale, fin), les accents jaune, rose et orange repris des illustrations jointes, le HUD de caméra constant (REEL 26, timecode, compteur THOUGHTS, REC) et le point jaune qui ouvre et ferme la vidéo. Le chaos glitch et les étiquettes de légende de couleurs différentes cassent l'unité, en partie volontairement."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "aucun",
+    "notes": "Tempo réel 120 BPM : grosse caisse toutes les 0,5 s (attaques mesurées à 4,042 + 0,5 × k s) et charleston à la double-croche. L'estimation automatique 79,9 BPM est une erreur ×2/3 (période de 3 croches) : les barres bleues des planches tombent alternativement sur un temps et sur une croche. À 30 fps, un temps = 15 im. Le groupe n'existe qu'entre 4,04 et 10,6 s ; avant : coups sourds isolés puis montée sans pulsation ; de 10,6 à 12,1 s : roulement qui accélère ; 12,27-12,48 s : silence numérique ; ensuite nappe sans pulsation qui s'éteint (−57 dB). Montage qui accélère (plans de 3,0 / 1,3 / 0,87 / 0,73 / 0,70 s), non quantifié sauf la coupe f317 posée sur la grosse caisse. Séquence titre : impulsion RVB exactement toutes les 15 im (f119, f134, f149, f164, f179). Aucun temps mort : le noir dure 8 im (0,27 s) et le carton final s'anime (médaillon, interlettrage, étincelles).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.27",
+        "what": "Nuit étoilée granuleuse ; petit point jaune au centre qui bat comme un cœur (f4/f12, f27/f35) ; « one thought. » tapé dessous (f11-f25)",
+        "technique": "point unique + texte tapé, battements sonores"
+      },
+      {
+        "t": "0:01.27-0:01.57",
+        "what": "Le point éclate : couronne de traits (f38), étoile jaune et blanche à 4 branches qui remplit le cadre en 3 im en tournant, traits rose et orange projetés",
+        "technique": "éclatement en étoile"
+      },
+      {
+        "t": "0:01.57-0:01.70",
+        "what": "Flash crème plein cadre (f47) qui s'éteint en 4 im sur la scène indigo",
+        "technique": "flash de surexposition"
+      },
+      {
+        "t": "0:01.70-0:03.70",
+        "what": "Spirale de pensées : anneaux concentriques nés au centre, cube filaire orange en rotation, mots qui naissent en grossissant et tournent avec le champ (what if, but, maybe, should i, too late?, did they, replay, rewind, no—, unless…)",
+        "technique": "spirale de mots (rumination)"
+      },
+      {
+        "t": "0:03.70-0:03.97",
+        "what": "Un cercle cerné de jaune s'ouvre au centre sur l'œil du buste et remplit le cadre en 7 im ; bloom jaune (f119-f121) sur l'entrée du groupe",
+        "technique": "iris sur le drop"
+      },
+      {
+        "t": "0:04.13-0:04.53",
+        "what": "OVER claque en haut (f124), THINKING arrive plus large que le cadre, se réduit avec décalage RVB et se pose sur la grosse caisse (f136)",
+        "technique": "titre rétro qui cadre le visage"
+      },
+      {
+        "t": "0:04.53-0:06.30",
+        "what": "Buste-collage aux yeux bleus lumineux, couronne de fleurs, grille bleue ; impulsion RVB sur chaque grosse caisse (f149, f164, f179) ; « again. » / « again? » surgit à divers endroits ; clignement des yeux (f183-f185)",
+        "technique": "pulsation au temps sur image fixe"
+      },
+      {
+        "t": "0:06.30-0:06.97",
+        "what": "Poussée dans l'œil gauche : le titre sort par le haut et le bas, défocalisation, décalage RVB, surexposition jusqu'au blanc (f204-f209)",
+        "technique": "plongée dans l'œil + surexposition"
+      },
+      {
+        "t": "0:06.97-0:08.20",
+        "what": "Le jardin du palais sort du blanc en 3 im ; chemin de lumière qui ondule, anneaux sur la place ; légende « what if i took the other path? » tapée (f214-f225)",
+        "technique": "illustration animée en 2,5D + légende tapée"
+      },
+      {
+        "t": "0:08.20-0:08.27",
+        "what": "Stores vénitiens orange et bleu qui ferment le cadre en 2 im, coupe sur la salle (f248) lavée de jaune",
+        "technique": "stores vénitiens"
+      },
+      {
+        "t": "0:08.27-0:09.10",
+        "what": "Salle de cinéma, faisceau arc-en-ciel, étincelle qui scintille ; « replay. replay. replay. » tapé (f252-f262)",
+        "technique": "légende tapée répétitive"
+      },
+      {
+        "t": "0:09.10-0:09.87",
+        "what": "Filé le long du faisceau (f273-f274), atterrissage glitché sur le sentier en pixels ; « every possible ending » tapé (f277-f288) ; légère poussée",
+        "technique": "whip le long d'une ligne de fuite"
+      },
+      {
+        "t": "0:09.87-0:10.57",
+        "what": "Tranches glitchées (f296-f298) vers le canapé sous un anneau volant ; « at 3:07 a.m. » tapé ; l'anneau bascule et ravale son faisceau",
+        "technique": "glitch par tranches + objet qui bascule en 3D"
+      },
+      {
+        "t": "0:10.57-0:12.13",
+        "what": "Flash puis mosaïque inclinée de toutes les scènes ; bandeaux « OVERTHINKING » avec décalage RVB qui se multiplient (1 → 6 rangées) et défilent en sens alternés ; roulement de batterie",
+        "technique": "chaos glitch en mur de mots"
+      },
+      {
+        "t": "0:12.17-0:12.43",
+        "what": "Coupe franche au noir ; le son s'arrête net (0,21 s de silence)",
+        "technique": "rupture noir + silence"
+      },
+      {
+        "t": "0:12.43-0:13.23",
+        "what": "Le point jaune revient avec le son (f373) et devient un médaillon rond (canapé et anneau, liseré orange, étincelles) qui grandit en ease-out ; « breathe. » rose apparaît en haut",
+        "technique": "rappel du point d'ouverture"
+      },
+      {
+        "t": "0:13.50-0:15.00",
+        "what": "« OVERTHINKING » en didone interlettrée passe du gris au crème en se resserrant ; crédits jaunes « A MOTION STUDY · ART BY GIZAKDAG » ; la nappe s'éteint",
+        "technique": "titre final qui se resserre (tracking-in)"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Le son suit fidèlement le récit, mais le calage au temps n'existe que par moments. Décalage constant mesuré : l'image précède le son d'environ 2 im (≈ 70 ms) sur chaque événement vérifié. Bruitages (avant et après le groupe) : pulsations du point f4 et f27 ↔ coups sourds à f5,8 et f28,9 ; éclatement f38 ↔ coup f38,7 ; flash f47 ↔ coup f49,3 ; coupe au noir f365 ↔ silence dès f368 ; retour du point f373 ↔ retour du son f374,5 : 6 sur 6. Dans le groupe à 120 BPM (temps toutes les 15 im), sur 17 gestes clés, 7 tombent à ±2 im d'un temps une fois le décalage corrigé (41 %, hasard ≈ 33 %) : les 5 impulsions de la séquence titre (f119, f134, f149, f164, f179, exactement toutes les 15 im, à −2,2 im de l'attaque), le pic de surexposition f209 et le début de la légende f299 ; la légende f252 rate de 0,1 im. Comptés contre l'attaque brute à ±2 im, ils sortent tous de justesse (−2,2 à −2,3 im). Les changements de scène f248, f273 et f296 sont libres (montage qui accélère), seule f317 tombe sur une grosse caisse. La séquence titre est donc la seule partie vraiment animée au temps. Indice auto (aucune synchro, calé sur une grille fausse à 80 BPM) non pertinent.",
+    "synced": [
+      "pulsations",
+      "flashs",
+      "drop",
+      "impacts",
+      "texte"
+    ],
+    "style_match": "Battements, montée puis groove électro à 120 BPM coupé net au noir, nappe finale : suit l'arc anxiété → chaos → apaisement ; flashs et impulsions RVB nerveux collent au groove.",
+    "how_built": "Bande-son probablement écrite (ou montée) pour ce récit : coups sourds sur les battements du point, montée pendant la spirale, entrée du groupe sur l'iris, roulement qui accélère pendant le chaos, silence sur le noir, nappe pour « breathe. ». Le prompt ne dit rien de la musique ni du tempo : seule la séquence titre applique une grille (une impulsion toutes les 15 im = 1 temps à 120 BPM à 30 fps) ; les coupes du milieu sont posées en secondes (8,27 / 9,10 / 9,87 / 10,57 s). Le décalage constant d'environ 70 ms vient probablement de l'encodage audio."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc en quatre temps : une pensée, spirale, chaos, respiration",
+      "name_en": "escalation and release arc",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Une pensée (point + « one thought. », 1,6 s) → rumination (spirale de mots qui s'emplit, 2,4 s) → titre (3 s) → quatre tableaux de plus en plus courts (1,3 / 0,87 / 0,73 / 0,70 s) → chaos (1,6 s) → rupture (noir + silence 0,27 s) → apaisement (« breathe. », 2,8 s). Le même point jaune ouvre et ferme la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Point qui bat comme un cœur sur des coups sourds",
+      "name_en": "heartbeat dot with thump SFX",
+      "t": "0:00-0:01.23",
+      "frames": "f0-f37",
+      "fps": 30,
+      "mechanics": "Point jaune de ≈ 1,1 % de la largeur, à 46 % de la hauteur. Doubles pulsations façon « boum-boum », la première plus forte : f4 puis f12, f27 puis f35 (taille ×2,4, surface ≈ ×5, pendant 3 à 4 im, retour en ease-out). Coups sourds dans le son à f5,8 et f28,9 : l'image précède de ≈ 2 im. Aucune pulsation musicale ici, c'est du bruitage calé sur l'image.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f47.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte tapé centré qui se recentre en grandissant",
+      "name_en": "centered typewriter text",
+      "t": "0:00.37-0:00.83",
+      "frames": "f11-f25",
+      "fps": 30,
+      "mechanics": "« one thought. » en mono blanc minuscule (≈ 1,9 % de la hauteur), 12 caractères en 15 im (≈ 0,8 caractère par image), centré sous le point : le bloc s'élargit des deux côtés à chaque lettre. Lisible mais petit pour un format vertical.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point éclate en étoile à 4 branches puis flash crème",
+      "name_en": "starburst to white flash",
+      "t": "0:01.27-0:01.70",
+      "frames": "f38-f51",
+      "fps": 30,
+      "mechanics": "f38 : couronne de 16 petits traits radiaux autour du point. f39 : étoile jaune et blanche à 4 branches (45 % de la largeur), f40 : 64 %, f42 : déborde du cadre, en tournant d'environ 15° ; traits rose et orange projetés vers l'extérieur. f47 : flash crème plein cadre (luminance 194 contre 12), éteint en 4 im (151, 109, 66, 41) sur le fond indigo. Coup sonore à f49,3.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f47.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Spirale de pensées : mots qui naissent en grossissant et tournent avec le champ",
+      "name_en": "rumination word vortex",
+      "t": "0:01.70-0:03.70",
+      "frames": "f51-f111",
+      "fps": 30,
+      "mechanics": "Environ 17 mots en 2 s (« what if », « but », « maybe », « should i », « too late? », « did they », « replay », « rewind », « no— », « unless »…), un nouveau toutes les 3 à 6 im. Chacun naît petit et grossit en 4 à 6 im (ease-out), en serif italique grasse jaune, rose, blanc ou orange (2 à 5 % de la hauteur), orienté selon le rayon ; tout le champ tourne lentement dans le sens horaire. Aucun mot ne sort : au bout d'1 s le champ est saturé, volontairement.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-001-cut-f47.jpg",
+      "illus": {
+        "from": 52,
+        "to": 111,
+        "n": 8
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Anneaux concentriques qui naissent au centre et cube filaire en rotation",
+      "name_en": "expanding ripple rings",
+      "t": "0:01.70-0:03.70",
+      "frames": "f51-f111",
+      "fps": 30,
+      "mechanics": "Des anneaux fins jaune, rose et orange naissent au centre et s'élargissent (le premier passe d'un diamètre de 16 % à 100 % de la largeur en 5 im, f51-f56, presque linéaire avec légère décélération), puis se multiplient jusqu'à remplir le fond indigo. Au centre, un treillis cubique filaire orange tourne en 3D. Donne la profondeur et le tourbillon.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f47.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de caméra avec compteur de pensées qui s'emballe",
+      "name_en": "camera HUD with thought counter",
+      "t": "0:01.70-0:12.13",
+      "frames": "f51-f364",
+      "fps": 30,
+      "mechanics": "Équerres aux coins, « OVERTHINKING / REEL 26 » en haut à gauche, timecode en haut à droite, « ● REC » en bas à droite, et compteur « THOUGHTS » en bas à gauche qui grimpe (0004 à 2 s, 0017 à 4 s, puis des centaines, probable). Mono minuscule (≈ 1 % de la hauteur), illisible sur téléphone ; l'idée du compteur sert le concept.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture en iris sur l'œil, posée sur l'entrée du groupe",
+      "name_en": "iris reveal on the drop",
+      "t": "0:03.70-0:04.03",
+      "frames": "f111-f121",
+      "fps": 30,
+      "mechanics": "Un petit cercle cerné de jaune s'ouvre au centre de la spirale (f111) et montre déjà l'œil du buste. Rayon ≈ 4 → 13 → 28 → 44 → 50 → 70 → 90 % de la largeur (f111-f117) : départ qui accélère puis ≈ +15 à 20 % par image ; cadre plein à f118. Bloom jaune sur 3 im (f119-f121). Première grosse caisse du groupe à f121,2 : l'image arrive 2 im avant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f120.jpg, extra-01.jpg",
+      "illus": {
+        "from": 110,
+        "to": 122,
+        "n": 6
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée pendant la spirale, drop sur la révélation",
+      "name_en": "riser into drop on reveal",
+      "t": "0:02.00-0:04.04",
+      "frames": "f60-f121",
+      "fps": 30,
+      "mechanics": "Pendant la spirale, nappe qui monte de −25 à −16 dB sans pulsation, ponctuée de petits coups (probablement un par mot, non vérifié). Le groupe entre à 4,042 s (−9 dB) exactement quand l'iris a rempli le cadre et que le bloom jaune éclate (f119). L'énergie visuelle et sonore change d'état au même instant.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-002-move-f120.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre rétro OVER / THINKING à ombres portées arc-en-ciel empilées",
+      "name_en": "stacked rainbow drop shadow title",
+      "t": "0:04.13-0:06.50",
+      "frames": "f124-f195",
+      "fps": 30,
+      "mechanics": "Grotesque condensée grasse crème (#EDE1CA) cernée de foncé, avec ombres décalées en bas à droite en bandes orange, jaune, bleu et violet (style affiche années 70). OVER en haut (≈ 13 % de la hauteur avec ombre, 67 % de la largeur), THINKING en bas (8 %, 82 %) : les deux mots encadrent le visage.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f120.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "OVER puis THINKING claquent en se réduisant, le second sur la grosse caisse",
+      "name_en": "scale-down title slams",
+      "t": "0:04.13-0:04.53",
+      "frames": "f124-f136",
+      "fps": 30,
+      "mechanics": "OVER apparaît d'un coup à f124, plus haut et plus grand, et se pose en 2 im (f126) ; calé sur un coup syncopé (4,19 s, image 1,7 im avant). THINKING arrive plus large que le cadre (f134 : seules les lettres « HINKIN » sont visibles), se réduit en 2 im avec décalage RVB et se pose net à f136, sur la grosse caisse (f136,2).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f120.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Impulsion de décalage RVB sur chaque grosse caisse",
+      "name_en": "on-beat chromatic punch",
+      "t": "0:03.97-0:05.97",
+      "frames": "f119-f179",
+      "fps": 30,
+      "mechanics": "Toutes les 15 im exactement (f119, f134, f149, f164, f179 = un temps à 120 BPM à 30 fps), tout le cadre subit un décalage des canaux rouge et bleu : différence moyenne 26 contre 7 entre deux images, répartie sur toute l'image, retombée de moitié à l'image suivante et en 2 à 3 im au total. Chaque impulsion précède l'attaque mesurée de 2,2 im. Fait vivre une illustration fixe au rythme.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f120.jpg, microM-003-move-f192.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Le buste cligne des yeux, regard lumineux",
+      "name_en": "statue blink",
+      "t": "0:06.10-0:06.17",
+      "frames": "f183-f185",
+      "fps": 30,
+      "mechanics": "Les yeux bleus lumineux du buste se ferment à moitié à f183 et rouvrent en 3 im. Petit signe de vie sur une illustration fixe, juste avant la poussée dans l'œil qui l'utilise comme cible.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f192.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot manuscrit qui change de place (again. / again?)",
+      "name_en": "popping handwritten aside",
+      "t": "0:04.83-0:06.30",
+      "frames": "f145-f189",
+      "fps": 30,
+      "mechanics": "Petit mot en jaune manuscrit (≈ 2 % de la hauteur) qui réapparaît à d'autres endroits du visage toutes les 0,25 à 0,5 s en changeant de ponctuation (« again. », « again? »). Commentaire intérieur discret, mais trop petit pour un téléphone.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f192.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée dans l'œil, défocalisation puis surexposition",
+      "name_en": "push into eye to overexposure",
+      "t": "0:06.30-0:07.07",
+      "frames": "f189-f212",
+      "fps": 30,
+      "mechanics": "Zoom vers l'œil gauche en ease-in (différence entre images 11 → 45 de f189 à f195) : OVER sort par le haut, THINKING par le bas ; l'œil remplit le cadre vers f198 avec décalage RVB et flou croissant (f198-f203). Surexposition en 5 im (luminance 125 → 133 → 153 → 172 → 191 → 200, f204-f209), puis redescente en 3 im (166, 132, 97) sur le jardin, avec franges RVB. Pic blanc 2 im avant la grosse caisse f211.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f192.jpg, extra-03.jpg",
+      "illus": {
+        "from": 188,
+        "to": 213,
+        "n": 8
+      }
+    },
+    {
+      "cat": "image",
+      "name_fr": "Illustrations jointes animées en 2,5D",
+      "name_en": "2.5D animated illustrations",
+      "t": "0:04.00-0:10.57",
+      "frames": "f120-f316",
+      "fps": 30,
+      "mechanics": "Les 5 illustrations fournies servent de décors plein cadre, animées par zones : chemin de lumière qui ondule comme un liquide et anneaux qui s'élargissent sur la place (jardin), étincelle qui scintille au bout du faisceau (salle), légère poussée (sentier pixel), faisceau pulsant, couronne de fleurs et yeux lumineux (buste). Peu de mouvement de caméra, beaucoup de vie locale.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-004-cut-f248.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légendes tapées à la machine sur étiquette de couleur",
+      "name_en": "typed captions on colored labels",
+      "t": "0:07.13-0:10.27",
+      "frames": "f214-f308",
+      "fps": 30,
+      "mechanics": "Mono minuscule foncé sur étiquette (≈ 1,5 % de la hauteur, bas du cadre) avec curseur « _ » : « what if i took the other path? » sur orange (30 caractères en 11 im, f214-f225, ≈ 2,7 par image), « replay. replay. replay. » sur jaune (f252-f262), « every possible ending » sur rose (f277-f288, ≈ 1,7 par image), « at 3:07 a.m. » sur crème (f299-f308). Écrit la voix intérieure ; un tableau = une pensée.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-004-cut-f248.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Stores vénitiens orange et bleu",
+      "name_en": "venetian blinds wipe",
+      "t": "0:08.20-0:08.33",
+      "frames": "f246-f250",
+      "fps": 30,
+      "mechanics": "Des bandes horizontales alternées bleu roi et orange (≈ 12 bandes) descendent du haut et couvrent le tiers supérieur en 1 im (f246), tout le cadre à f247 (quelques fentes laissent voir le jardin). Coupe franche à f248 sur la salle, lavée de jaune et surexposée, qui revient à la normale en 3 im (f248-f250).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f248.jpg, extra-03.jpg",
+      "illus": {
+        "from": 244,
+        "to": 251,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Filé le long du faisceau puis atterrissage glitché",
+      "name_en": "whip along the light beam",
+      "t": "0:09.10-0:09.27",
+      "frames": "f273-f278",
+      "fps": 30,
+      "mechanics": "La caméra fonce le long du faisceau arc-en-ciel : zoom + rotation avec fort flou directionnel en 2 im (f273-f274). La scène du sentier pixel arrive à f275 décalée et à franges RVB, nette à f277-f278. La ligne de fuite du faisceau motive le mouvement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glitch par tranches horizontales",
+      "name_en": "slice displacement glitch",
+      "t": "0:09.87-0:09.97",
+      "frames": "f296-f299",
+      "fps": 30,
+      "mechanics": "Le canapé apparaît découpé en bandes horizontales décalées à gauche et à droite, étiré, avec décalage RVB et dominante jaune (f296-f298), propre à f299. 3 im, aucun mouvement entre les deux plans : transition générique.",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Anneau volant qui bascule et ravale son faisceau",
+      "name_en": "flipping ring retracts beam",
+      "t": "0:10.17-0:10.53",
+      "frames": "f305-f316",
+      "fps": 30,
+      "mechanics": "L'anneau à cercles concentriques au-dessus du canapé passe d'une ellipse fine à une ellipse ouverte puis redevient fine (rotation 3D sur son axe, f305-f316) ; le cône de lumière jaune se rétracte vers lui en 3 im (f305-f308). Donne du volume à une illustration plate.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f317.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Montage qui accélère jusqu'au chaos",
+      "name_en": "accelerating edit",
+      "t": "0:06.97-0:12.17",
+      "frames": "f209-f365",
+      "fps": 30,
+      "mechanics": "Durées des plans : titre 3,0 s, jardin 1,3 s, salle 0,87 s, sentier 0,73 s, canapé 0,70 s, puis chaos 1,6 s dont les rangées se multiplient. Le rythme du montage dit l'emballement. Les coupes sont posées en secondes, pas sur les temps (seule f317 tombe sur une grosse caisse).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mur de bandeaux OVERTHINKING qui défilent avec décalage RVB",
+      "name_en": "glitch marquee wall",
+      "t": "0:10.57-0:12.13",
+      "frames": "f317-f364",
+      "fps": 30,
+      "mechanics": "Après un flash (f317), mosaïque inclinée d'environ −5° ; bandeaux « OVERTHINKING » (grotesque condensée cernée, franges cyan, magenta et jaune) qui se multiplient : 1 rangée à f318, 2 à f325, 3 à f331, 6 vers f353, défilant en sens alternés ; pavés de couleur pleine qui clignotent. Énergie maximale mais mur de mots flous illisible.",
+      "verdict": "cliche",
+      "evidence": "microM-005-cut-f317.jpg, microM-006-cut-f365.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Mosaïque récapitulative de toutes les scènes",
+      "name_en": "recap mosaic",
+      "t": "0:10.57-0:11.10",
+      "frames": "f317-f333",
+      "fps": 30,
+      "mechanics": "Au début du chaos, les plans précédents (buste, fleurs, œil, jardin, salle, canapé) réapparaissent en vignettes inclinées qui glissent, d'abord pâles (f317-f318) puis saturées : rappel de tout ce qui a été ruminé, juste avant la saturation.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f317.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Roulement qui accélère puis coupe au noir et silence",
+      "name_en": "drum fill to hard stop",
+      "t": "0:10.60-0:12.48",
+      "frames": "f318-f374",
+      "fps": 30,
+      "mechanics": "Pendant le chaos, les coups de grosse caisse se rapprochent (10,67 / 10,77 / 10,83 / 10,90 s…), puis coupe franche au noir à f365 et silence numérique de 12,266 à 12,479 s (0,21 s). L'image coupe 3 im avant le son. Le son revient (nappe douce, −23 dB) avec le point jaune (f373).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f365.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Retour du point d'ouverture qui devient médaillon",
+      "name_en": "callback dot becomes badge",
+      "t": "0:12.43-0:13.23",
+      "frames": "f373-f397",
+      "fps": 30,
+      "mechanics": "Après 8 im de noir, le point jaune du début revient au centre (f373), devient à f376 un médaillon rond (canapé et anneau dans un cercle cerné d'orange, étincelles autour) qui grandit en ease-out (étincelles comprises) : ≈ 13 % de la largeur à f379, 51 % à f383, 65 % à f387, 70 % à f389, 75 % à f395.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f365.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre final interlettré qui se resserre (tracking-in)",
+      "name_en": "tracking-in end title",
+      "t": "0:12.67-0:14.67",
+      "frames": "f380-f440",
+      "fps": 30,
+      "mechanics": "« breathe. » en serif italique grasse rose (≈ 3 % de la hauteur) apparaît en haut (f380-f393). « OVERTHINKING » en didone capitales (3,9 %) apparaît gris et très espacé à f407 (86 % de la largeur), se resserre à 77 % vers f421 puis 76 % à f440 (ease-out) en passant au crème. Crédits mono jaunes « A MOTION STUDY · ART BY GIZAKDAG » à f427.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain animé permanent et aberration chromatique",
+      "name_en": "animated grain and chromatic aberration",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Grain qui change à chaque image (différence de fond 1,5 à 2 même sur le noir) ; décalage RVB sur le titre, les impulsions, les transitions (iris, œil, filé, tranches) et tout le chaos ; bloom jaune sur les flashs ; vignettage. Unifie les illustrations jointes, mais le décalage RVB finit par s'user.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f120.jpg, microM-006-cut-f365.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Image en avance d'environ 2 images sur le son",
+      "name_en": "constant AV offset",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Sur chaque événement vérifié (pulsations du point, flash, impulsions RVB, pic de surexposition, retour du point), l'image précède l'attaque sonore de 1,4 à 2,3 im (≈ 50 à 75 ms). Sous le seuil de détection courant, perçu comme synchrone ; à connaître pour mesurer la synchro (compter contre l'attaque brute fait tout sortir de ±2 im de justesse).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Les illustrations jointes fournissent presque toute la richesse visuelle (buste, jardin, salle, sentier pixel, canapé) : Claude les anime par zones en 2,5D plutôt que de créer son propre univers. La qualité perçue vient en grande partie de l'art fourni."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Overthinking » a donné un vrai récit (rumination qui s'accélère, puis rupture et respiration) : un concept émotionnel produit une structure, là où « montre ce que tu sais faire » seul produit un catalogue."
+    },
+    {
+      "kind": "structure",
+      "insight": "15 s + concept → arc en quatre temps avec montage qui accélère (3,0 → 0,7 s par plan) et rupture noir + silence : la structure mime le sujet."
+    },
+    {
+      "kind": "build",
+      "insight": "Aucun tempo dans le prompt : seule la séquence titre applique une grille (impulsion toutes les 15 im = 1 temps à 120 BPM), les coupes du milieu sont posées en secondes. Donner le BPM et demander les coupes sur les temps aurait calé tout le groupe."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien sur la lisibilité mobile : légendes, HUD et mots secondaires à 1 à 2 % de la hauteur dans un 9:16, spirale et chaos illisibles."
+    },
+    {
+      "kind": "other",
+      "insight": "« Dynamic » et « incredible motion designer » ont probablement poussé à empiler les effets (glitch, décalage RVB, flashs) jusqu'au mur de mots du climax."
+    }
+  ],
+  "steal": [
+    "Construire l'arc en quatre temps : une seule pensée (point + texte), escalade (spirale qui s'emplit), chaos (montage qui accélère), puis coupe au noir et respiration.",
+    "Transition œil : pousser dans l'œil en ease-in, défocaliser, surexposer en 5 images jusqu'au blanc, redescendre en 3 images sur la scène suivante.",
+    "Sur un groove, une impulsion de décalage RVB de 2 à 3 images sur chaque grosse caisse suffit à faire vivre une illustration fixe.",
+    "Couper le son quand l'image passe au noir (0,2 s de silence), puis faire revenir le son avec le premier élément qui réapparaît.",
+    "Faire naître un mot à chaque idée et faire tourner tout le champ : la spirale qui s'emplit montre la rumination sans phrase."
+  ],
+  "flaws": [
+    "Climax en mur de bandeaux « OVERTHINKING » flous à décalage RVB : illisible, cliché glitch.",
+    "Aberration chromatique et glitch partout (titre, transitions, chaos) : l'effet s'use.",
+    "Légendes, HUD et mots secondaires minuscules (1 à 2 % de la hauteur) pour un 9:16 vu sur téléphone.",
+    "Coupes du milieu (salle, sentier, canapé) hors temps alors que le groove est net.",
+    "Transition par tranches glitchées vers le canapé, générique et sans lien avec les plans."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Vidéo native à 30 fps, mais à étudier image par image pour ses transitions motivées (éclatement puis flash, iris sur le drop, poussée dans l'œil puis surexposition, stores vénitiens), les impulsions au temps sur image fixe et l'arc sonore (battements, montée, groove, silence, nappe)."
+  }
+}

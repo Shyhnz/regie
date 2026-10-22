@@ -1,0 +1,411 @@
+{
+  "slug": "ajith-io-c52e09",
+  "title": "Distilbook product video",
+  "handle": "@ajith_io",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Propre, lisible et fidèle au produit, avec deux vraies idées (logo devenu barre d'étapes, mur de styles calé sur les temps), mais 65 % de plans quasi figés et des transitions génériques.",
+  "summary": "Démo produit 16:9 de 40 s pour DistilBook, qui transforme un PDF en vidéo explicative dessinée. Accroche manuscrite, logo en trois livres qui deviennent la barre d'étapes, puis Add / Edit / Watch rejoués avec curseur, voix et dessin qui se construit au rythme de la narration, avant cinq preuves et un CTA. Propre et claire, mais lente pour un prompt « showreel ».",
+  "prompt_vs_result": [
+    "Une ligne : se renseigner sur Distilbook et faire une vidéo « dynamique » de 40 s, comme le showreel d'un motion designer, « Go all out ». Aucun contenu, format, musique ni style imposés.",
+    "Claude a choisi une démo produit sobre : accroche manuscrite, logo en livres, 3 étapes avec curseur, voix de synthèse et dessin synchronisé, cinq preuves (6 minutes, styles, formats, 19 langues, logo) et CTA.",
+    "« Go all out » n'a pas été suivi : la recherche a donné une démo fidèle mais lente, 65 % quasi figée. Il fallait fixer une densité (un événement par temps), une durée maximale par étape et le rôle de la musique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FAFAF8", "role": "fond blanc cassé"},
+      {"hex": "#12131F", "role": "texte et logotype (marine presque noir)"},
+      {"hex": "#4062E8", "role": "bleu d'accent : « They draw it. », mots clés, chiffres, CTA, étape Edit"},
+      {"hex": "#30D860", "role": "vert : étape Add, validations, coches"},
+      {"hex": "#C8087A", "role": "magenta : étape Watch, mot prononcé des sous-titres"},
+      {"hex": "#88F8A8", "role": "remplissage de la tranche verte du logo"},
+      {"hex": "#90C0F8", "role": "remplissage de la tranche bleue du logo"},
+      {"hex": "#F098D0", "role": "remplissage de la tranche rose du logo"},
+      {"hex": "#7A7F89", "role": "voile gris ardoise hors de la fenêtre 9:16"},
+      {"hex": "#E86818", "role": "orange du badge « YOUR LOGO » et pastille de marque"},
+      {"hex": "#20C8A0", "role": "pastille sarcelle « brand colours »"}
+    ],
+    "type": "Grotesque néo grasse (Inter ExtraBold probable), casse phrase, interlettrage serré ; titres ≈ 5-6 % de hauteur, chiffres jusqu'à 20 % ; étiquettes STEP en capitales espacées ≈ 1,2 % ; accroche manuscrite (Patrick Hand probable).",
+    "texture": "Fond uni sans grain ; cartes blanches à grands rayons et ombres très douces ; défocalisation (flou gaussien) en entrée et sortie de cartes ; flou de mouvement directionnel sur les barres qui tombent, le mur de vignettes et la fenêtre 9:16 ; illustrations type aquarelle ou trait manuscrit dans les cartes.",
+    "style": "Démo SaaS épurée, touches dessinées",
+    "coherence": "Le système tient par le logo : trois tranches de livre vert, bleu, rose = les trois étapes = la barre d'étapes, couleurs reprises par étape (vert Add, bleu Edit, rose Watch), et le trait manuscrit de l'accroche revient en soulignements. Il se dilue dans la seconde moitié (badge orange, sarcelle, voile gris ardoise) et par des transitions presque toutes en fondu ou montée masquée."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "120 BPM (netteté 5,48), temps à f32 + 30k, soit chaque demi-seconde à x,026 s. Aucune coupe franche : tout est fondu, montée masquée ou glissement. Les changements de section tombent sur les secondes paires, donc sur les débuts de mesure probables : 2,0 (logo), 4,0 (étape 1), 10,0 (étape 2), 16,0 (étape 3), 22,0, 24,0, 28,0, 30,0, 32,0, 34,0 s. À l'intérieur, la démo d'interface vit au temps de lecture : 6,2-9,5 s (fichier prêt puis 2 s d'attente), 10,5-15,45 s (script, clics), 34,4-40 s (fin tenue 5,6 s). 65 % de la durée détectée comme figée ; les petits gestes (curseur, frappe, karaoké) n'y changent pas grand-chose. Le tiers final (24-34 s) est plus dense : un événement par temps sur le mur de styles, glissements du 9:16 sur temps et demi-temps.",
+    "timeline": [
+      {"t": "0:00-0:01.75", "what": "« A good teacher doesn't read the page. » en manuscrite, puis « They draw it. » en bleu avec soulignement tracé", "technique": "accroche manuscrite en deux temps"},
+      {"t": "0:01.8-0:02.4", "what": "Fondu du texte, trois tranches de livre tombent et forment le logo, logotype révélé par volet", "technique": "logo en barres qui tombent, sur le coup musical de 2,0 s"},
+      {"t": "0:02.4-0:03.6", "what": "Logo + accroche « Turn any PDF into a hand-illustrated explainer video. »", "technique": "maintien 1,2 s"},
+      {"t": "0:03.6-0:04.1", "what": "Le logotype s'efface, les tranches s'envolent et deviennent la barre d'étapes 1 Add / 2 Edit / 3 Watch", "technique": "raccord logo → barre d'étapes"},
+      {"t": "0:04.1-0:05.1", "what": "« STEP 1 / Add your material. », carte de dépôt qui monte, puces de formats", "technique": "gabarit d'étape, montée avec mise au point"},
+      {"t": "0:05.5-0:06.2", "what": "Le curseur saisit la puce PDF et la dépose dans la zone", "technique": "glisser-déposer au curseur"},
+      {"t": "0:06.2-0:09.5", "what": "Lecture du fichier, barre verte, « 24 pages, ready » puis attente", "technique": "progression puis temps mort ≈ 2 s"},
+      {"t": "0:09.5-0:10.8", "what": "Sortie de l'étape 1, panneau « Narration » qui se tape, « Read the script. Fix any line. »", "technique": "montée masquée, frappe"},
+      {"t": "0:12.2-0:14.2", "what": "Le curseur remplace « holes » par « pores », puis valide « Approve narration » → « Approved ✓ » ; « you approve it. » se souligne", "technique": "édition en direct + soulignement manuscrit"},
+      {"t": "0:15.45-0:16.5", "what": "Illustration finie (feuille-usine), titre « Watch every idea get drawn. »", "technique": "fondu enchaîné de carte"},
+      {"t": "0:16.6-0:21.3", "what": "Voix « Roots drink water from the soil… », sous-titres karaoké, dessin qui se construit mot à mot", "technique": "dessin et sous-titres calés sur la voix"},
+      {"t": "0:21.3-0:21.95", "what": "Musique coupée, image tenue", "technique": "silence avant la chute"},
+      {"t": "0:21.95-0:22.6", "what": "Sortie en défocalisation, « Not a week. » barré en rouge", "technique": "rature sur une attaque"},
+      {"t": "0:22.6-0:23.5", "what": "« About 6 minutes » bleu avec horloge, « to your first narrated slide. »", "technique": "correction chiffrée"},
+      {"t": "0:23.7-0:24.3", "what": "Mur de vignettes en perspective qui arrive du fond", "technique": "envol de caméra avec mise au point"},
+      {"t": "0:24.3-0:28", "what": "« Hand-drawn whiteboard or full motion graphics. », surbrillance qui saute de style en style", "technique": "surbrillance calée sur les temps"},
+      {"t": "0:28-0:28.2", "what": "Coupe au blanc, carte 16:9 qui monte, « 16:9 or 9:16. »", "technique": "coupe au blanc"},
+      {"t": "0:28.5-0:29.95", "what": "Fenêtre téléphone qui glisse au centre puis à droite, reste du cadre voilé", "technique": "fenêtre 9:16 glissante"},
+      {"t": "0:30-0:31.9", "what": "Grand chiffre 1 → 19 pendant que les puces de langues apparaissent", "technique": "compteur lié aux puces"},
+      {"t": "0:32-0:33.9", "what": "« Your logo on every video. » : carte qui monte, badge, pastilles de couleur, prix", "technique": "badge qui se pose"},
+      {"t": "0:34-0:35", "what": "Les trois tranches retombent et reforment le logo", "technique": "logo en serre-livres, coup musical de 34,0 s"},
+      {"t": "0:35-0:37.5", "what": "Accroche, « Free to try. No card needed. », bouton « distilbook.com »", "technique": "CTA"},
+      {"t": "0:37.5-0:40", "what": "Curseur qui survole le bouton, image tenue", "technique": "maintien final ≈ 2,2 s"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille 120 BPM (netteté 5,48), temps à f32 + 30k, demi-temps à f17 + 30k. Un événement clé par geste : 25 gestes sur 41 à ±2 im d'une barre ou d'une attaque (61 %, hasard ≈ 33 %). Calés : arrivée des tranches du logo f121-f127 sur le temps f122 et le coup musical de 2,0 s ; barre d'étapes posée f242 ; carte f256 (demi-temps f257) ; prise et dépôt du PDF f332 et f363 ; entrée de l'étape 2 f572 ; 6 sauts de surbrillance sur 6 temps consécutifs (f1502, f1532, f1562, f1592, f1622, f1652, départ sur le temps, pic 2-3 im après) ; coupe au blanc f1680 ; fenêtre 9:16 posée f1740 et f1772 ; chiffre « 1 » f1803 ; carte « Your logo » f1920 ; tranches de fin f2041-f2046 autour du temps f2042 et du coup de 34,0 s. La sortie de l'étape 3 (f1318) et la rature (f1346) tombent sur des attaques audio hors grille (21,954 et 22,43 s, points verts). Libres : frappes manuscrites, frappe du script, clic d'approbation (+4 im), entrée de l'étape 3 (−5 im), badge, pastilles, CTA. Le karaoké et le dessin de l'étape 3 suivent la voix, pas la musique. Indice auto : aucune synchro (p corrigé 0,11), faussé par 65 % de plans quasi figés.",
+    "synced": ["coupes", "atterrissages", "apparitions", "pulsations"],
+    "style_match": "Pop électronique légère à 120 BPM (probable) : ton propre et optimiste comme l'interface, mais l'énergie musicale dépasse l'animation, souvent immobile pendant la démo.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. La bande-son épouse la structure : intro douce jusqu'à 2,0 s puis attaque sur le logo, creux à 16,0 s pour laisser entrer la voix, silence de 21,0 à 21,95 s avant « Not a week. », montée à 24,0 s sur le mur, coup final à 34,0 s sur le logo puis extinction. Piste probablement composée ou montée en code d'après la timeline, avec un extrait de narration de synthèse du produit. Les sections tombent sur les mesures (secondes paires), mais la démo d'interface est animée au temps de lecture, pas au temps musical."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche manuscrite en deux temps",
+      "name_en": "Handwritten two-beat hook",
+      "t": "0:00.15-0:01.75",
+      "frames": "f9-f105",
+      "fps": 60,
+      "mechanics": "Ligne 1 « A good teacher doesn't read the page. » en manuscrite noire (≈ 4,6 % de hauteur, ≈ 55 % de largeur, y ≈ 37 %) qui apparaît mot par mot (un mot toutes les ≈ 8 im, f9-f50). Ligne 2 « They draw it. » en bleu #4062E8, ≈ 8 % de hauteur, écrite à partir de f58, puis soulignement manuscrit tracé de gauche à droite f90-f100. Musique encore douce : l'accroche précède le premier coup.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo construit par des tranches qui tombent",
+      "name_en": "Falling-bars logo build",
+      "t": "0:01.8-0:02.4",
+      "frames": "f108-f143",
+      "fps": 60,
+      "mechanics": "Fondu du texte en 8 im (f108-f116, départ sur le demi-temps f107). Trois tranches de livre tombent du haut du cadre, chacune en 5-6 im (accélération de gravité, traînée de flou vertical) avec 3 im de décalage : verte f116-f121, bleue f119-f124, rose f122-f127 ; elles se posent autour du temps f122, sur la première attaque musicale (2,0 s, −10 dB). Le logotype « DistilBook » est ensuite révélé par un volet de masque gauche → droite en 12 im (f131-f143). Lockup ≈ 48 % de largeur, centré.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 114, "to": 143, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord : le logo devient la barre d'étapes",
+      "name_en": "Match cut: logo spines become the stepper",
+      "t": "0:03.6-0:04.1",
+      "frames": "f216-f246",
+      "fps": 60,
+      "mechanics": "Le logotype s'efface par volet droite → gauche (f216-f226) et l'accroche disparaît. Les trois tranches grossissent, pivotent de 90° (vertical → horizontal), s'étirent ≈ ×3 et filent vers le haut à droite avec flou de mouvement (f224-f238) pour devenir les trois pilules vert, bleu, rose de la barre d'étapes « 1 Add / 2 Edit / 3 Watch » (y ≈ 6 %, ≈ 44 % de largeur). Posées à f240-f242, sur le temps f242. ≈ 18 im de vol.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 214, "to": 246, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit d'étape : titre à gauche, interface à droite",
+      "name_en": "Step layout: headline left, UI right",
+      "t": "0:04.1-0:22",
+      "frames": "f246-f1320",
+      "fps": 60,
+      "mechanics": "Colonne gauche (x ≈ 7-30 %) : étiquette « STEP 1/2/3 » en capitales espacées de la couleur de l'étape (≈ 1,2 %), titre gras en 2 lignes (≈ 5-6 % de hauteur), texte gris. Colonne droite : carte d'interface blanche ≈ 38 % de largeur, coins arrondis, ombre douce. Barre d'étapes centrée en haut sur toute la démo.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes qui montent d'un masque (et y repartent)",
+      "name_en": "Masked line rise and exit",
+      "t": "0:04.17-0:04.37",
+      "frames": "f250-f262",
+      "fps": 60,
+      "mechanics": "Titres révélés mot par mot depuis une ligne de base masquée : « Add » f250, « your » f254, « material. » f258-f262 (≈ 12 im, ease-out) ; le texte courant suit ≈ 8 im plus tard. Sortie = geste inverse, les lignes remontent dans le masque en ≈ 6-8 im (f1318-f1326, f1676-f1679, f1795-f1798, f2032-f2037). Même entrée pour tous les titres de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte qui monte avec mise au point",
+      "name_en": "Card rise with blur-to-focus",
+      "t": "0:04.1-0:04.27",
+      "frames": "f246-f256",
+      "fps": 60,
+      "mechanics": "La carte de dépôt monte de ≈ 8 % depuis le bas droit, opacité 0 → 1 et flou → net en ≈ 10 im (ease-out), posée sur le demi-temps f257. Même entrée pour la carte 16:9 (f1682-f1690) et la carte « Your logo » (f1920-f1931, départ sur le temps f1922).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puces de formats flottantes",
+      "name_en": "Floating file-type chips",
+      "t": "0:04.5-0:06",
+      "frames": "f270-f360",
+      "fps": 60,
+      "mechanics": "Puces PDF (rouge), DOCX (bleu), Web link (vert), TXT (gris) qui apparaissent autour de la carte en grossissant, décalées de 4-8 im (PDF f270 sur le temps f272, DOCX f276, TXT f278, Web link f286), puis flottent doucement (oscillation lente). Elles disent « tous formats acceptés » sans texte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Glisser-déposer au curseur",
+      "name_en": "Cursor drag and drop",
+      "t": "0:05.53-0:07.5",
+      "frames": "f332-f450",
+      "fps": 60,
+      "mechanics": "Curseur flèche noir qui saisit la puce PDF sur le temps f332 et la dépose au centre de la zone à f363 (temps +1). La zone passe en vert pâle à bord vert, une ligne « Photosynthesis_Chapter7.pdf » apparaît avec « Reading pages 4 of 24 » et une barre verte qui se remplit en ≈ 1 s, puis « 24 pages, ready » et une coche verte vers 7,4 s. Suivi de ≈ 2 s sans rien (temps mort).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barre d'étapes qui progresse",
+      "name_en": "Stepper progress",
+      "t": "0:04-0:22",
+      "frames": "f240-f1320",
+      "fps": 60,
+      "mechanics": "Chaque pilule de la barre d'étapes se remplit d'une teinte plus foncée pendant son étape ; l'étiquette passe en gras puis prend une coche (« 1 Add ✓ » vers 10,5 s, « 2 Edit ✓ » vers 16,5 s). Repère permanent de progression dans la démo.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Script corrigé en direct",
+      "name_en": "Live script edit",
+      "t": "0:10.1-0:14.2",
+      "frames": "f607-f850",
+      "fps": 60,
+      "mechanics": "Panneau « Narration · Slide 2 of 6 » : trois paragraphes tapés en machine à écrire (f607-f646, puis suite jusqu'à ≈ 11,5 s). Le curseur clique « holes » (≈ f736, demi-temps) : le mot devient « pores » en vert avec bord gauche vert et étiquette « Edited ✓ ». Clic sur « Approve narration » (≈ f816, +4 im du temps) : le bouton bleu devient « Approved ✓ » vert. Lisible mais lent : ≈ 4 s pour deux clics.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Soulignement manuscrit déclenché par l'interface",
+      "name_en": "UI action triggers a hand-drawn underline",
+      "t": "0:13.9-0:14.1",
+      "frames": "f834-f846",
+      "fps": 60,
+      "mechanics": "Quand « Approved ✓ » se pose, « you approve it. » dans la colonne gauche reçoit un soulignement bleu manuscrit tracé de gauche à droite en ≈ 10 im. Relie l'action dans l'interface au texte, et rappelle le trait de l'accroche.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Illustration qui se dessine au rythme de la voix",
+      "name_en": "Voice-synced drawing build",
+      "t": "0:16-0:21.3",
+      "frames": "f960-f1278",
+      "fps": 60,
+      "mechanics": "L'illustration finie (infographie aquarelle « leaf factory ») est montrée, puis passe à ≈ 15 % d'opacité (17,0 s) et la scène se redessine élément par élément quand la voix les nomme : sol, racines et gouttes sur « Roots drink water » (17,5 s), tige et feuilles, flèche et étiquette manuscrite (18,0 s), étiquette « Sends water up the stem to the factory » et usine sur « factory » (21,0 s). Barre de lecture rose sous la carte.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg",
+      "illus": {"from": 1020, "to": 1262, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sous-titres karaoké calés sur la voix",
+      "name_en": "Voice-synced karaoke captions",
+      "t": "0:16.66-0:21.34",
+      "frames": "f1000-f1280",
+      "fps": 60,
+      "mechanics": "Deux lignes de sous-titres gras sous la carte (≈ 2,2 % de hauteur) : mot prononcé en magenta #C8087A souligné, mots déjà dits en noir, mots à venir en gris clair ; un mot toutes les ≈ 0,45 s en suivant la voix de synthèse (« Roots drink water from the soil and send it up the stem to the factory. »). La musique se creuse à 16,0 s pour laisser la voix passer.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie en défocalisation",
+      "name_en": "Defocus exit",
+      "t": "0:21.95-0:22.27",
+      "frames": "f1317-f1336",
+      "fps": 60,
+      "mechanics": "Après ≈ 1 s de silence musical, la musique repart sur une attaque à 21,954 s (f1317) et la sortie démarre à f1318 : texte gauche et barre d'étapes remontent dans leur masque (f1318-f1326), la carte rétrécit d'≈ 5 %, se floute fortement et descend d'≈ 10 % hors du cadre (f1325-f1336) pendant que « Not a week. » apparaît à travers le flou.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f1327.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rature puis correction chiffrée",
+      "name_en": "Strike-through then numeric correction",
+      "t": "0:22.13-0:23.5",
+      "frames": "f1328-f1410",
+      "fps": 60,
+      "mechanics": "« Not a week. » (≈ 5 % de hauteur, centré) monte mot par mot (f1328-f1339). Un trait rouge barre « week. » de gauche à droite en ≈ 5 im (f1345-f1350), sur une attaque audio (22,43 s, point vert f1346). Puis « Not a week. » remonte et passe en gris, « About 6 minutes » (bleu #4062E8, ≈ 8 % de hauteur) monte du bas avec une icône d'horloge dont l'aiguille tourne (départ f1366, demi-temps f1367), et « to your first narrated slide. » dessous.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f1327.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Mur de vignettes en perspective qui arrive du fond",
+      "name_en": "Perspective thumbnail wall fly-in",
+      "t": "0:23.7-0:24.3",
+      "frames": "f1422-f1460",
+      "fps": 60,
+      "mechanics": "Une grille d'≈ 30 vignettes d'illustrations, inclinée en perspective (rangées qui fuient vers le haut), arrive de loin : ≈ 20 % → 100 % de taille en ≈ 35 im, flou de mouvement horizontal et défocalisation qui se résorbe ; net vers f1457 (demi-temps). Ensuite dérive latérale lente (≈ 1-2 % par seconde). Bas du mur fondu en blanc par un dégradé pour laisser la place au titre.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f1453.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Surbrillance qui saute de style en style sur les temps",
+      "name_en": "Beat-locked highlight hop",
+      "t": "0:25.03-0:27.6",
+      "frames": "f1502-f1660",
+      "fps": 60,
+      "mechanics": "Sur chaque temps (f1502, f1532, f1562, f1592, f1622, f1652), la carte en surbrillance (contour bleu, soulevée ≈ ×1,15 avec ombre, pilule-étiquette du style : « Navy Red Editorial », « Cel Motion Cream Navy Spot », « Soft 3D Coral », « Cut Paper Collage », « Earthy Sage Orange », « Inkwash Journal ») saute vers une autre vignette en ≈ 5 im ; l'ancienne se repose. Présente un catalogue de 6 styles en 3 s sans couper.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1499, "to": 1538, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe au blanc",
+      "name_en": "Cut to blank",
+      "t": "0:27.93-0:28.17",
+      "frames": "f1676-f1690",
+      "fps": 60,
+      "mechanics": "Les lignes du titre remontent dans leur masque (f1676-f1679), le mur disparaît d'un coup à f1680 (2 im avant le temps f1682) : 2 images de fond vide, puis la carte 16:9 monte avec mise au point et « 16:9 or 9:16. » se tape (f1685-f1697).",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f1690.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre 9:16 qui glisse sur le 16:9",
+      "name_en": "Sliding 9:16 crop window",
+      "t": "0:28.45-0:29.53",
+      "frames": "f1707-f1772",
+      "fps": 60,
+      "mechanics": "Un cadre de téléphone apparaît sur le tiers gauche d'une illustration 16:9 et tout l'extérieur est voilé en gris ardoise #7A7F89 (f1707-f1710). Le téléphone glisse au centre en ≈ 9 im (f1731-f1740, flou de traînée, ease-in-out, posé 2 im avant le temps f1742), puis à droite (f1758-f1772, posé sur le temps f1772). La pilule sous le cadre bascule « 16:9 / 9:16 ». Montre le recadrage vertical sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1736.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur lié aux puces de langues",
+      "name_en": "Counter tied to appearing chips",
+      "t": "0:30.05-0:31",
+      "frames": "f1803-f1860",
+      "fps": 60,
+      "mechanics": "Après un fondu au blanc (f1797-f1802), un grand chiffre bleu (≈ 20 % de hauteur) apparaît à f1803 (temps f1802) et compte 1 → 19 en chiffres coupés pendant que les puces de langues (« English (US) », « Français », « Deutsch »…) entrent une à une dans une grille de 3 colonnes, ≈ 3-5 im d'écart : chaque puce incrémente le compte. Puis « narration languages. » et « Written in your language, not translated. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1798.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Badge logo qui se pose",
+      "name_en": "Logo badge pop and settle",
+      "t": "0:32.4-0:33.6",
+      "frames": "f1944-f2016",
+      "fps": 60,
+      "mechanics": "Le badge « YOUR LOGO » (hexagone orange + texte) apparaît en grand sur le coin haut droit de la carte (f1944-f1948, fondu + grossissement), puis se range en petit dans la carte ; trois pastilles de couleur de marque (orange, noir, sarcelle) entrent une à une avec « and your brand colours ». Hors temps (f1945 : −7 im).",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f1930.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo en serre-livres",
+      "name_en": "Bookend logo build",
+      "t": "0:33.9-0:35",
+      "frames": "f2032-f2100",
+      "fps": 60,
+      "mechanics": "La fin reprend la construction d'ouverture : les tranches verte, bleue, rose retombent avec 3 im de décalage et se posent à f2041, f2043, f2046, autour du temps f2042 et du dernier coup musical (34,0 s), puis le logotype se révèle par volet (f2050-f2058) et l'accroche revient (≈ 35 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f2035.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "CTA avec survol du curseur",
+      "name_en": "CTA with cursor hover",
+      "t": "0:36-0:40",
+      "frames": "f2156-f2400",
+      "fps": 60,
+      "mechanics": "« Free to try. No card needed. » + pilule bleue « distilbook.com » qui grossit en place (f2156-f2170) ; le curseur entre vers 37,5 s et survole le bouton, qui s'éclaircit (f2263-f2276). Puis ≈ 2 s figées jusqu'à la fin.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur par étape",
+      "name_en": "Color-coded steps",
+      "t": "0:02-0:22",
+      "frames": "f120-f1320",
+      "fps": 60,
+      "mechanics": "Vert = Add, bleu = Edit, magenta = Watch : couleur de l'étiquette STEP, de la pilule de la barre d'étapes, des validations et du mot surligné. Ce sont les trois tranches du logo, donc la palette de marque explique le fonctionnement du produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure promesse → 3 étapes → preuves → CTA",
+      "name_en": "Promise, three steps, proofs, CTA",
+      "t": "0:00-0:40",
+      "frames": "f0-f2400",
+      "fps": 60,
+      "mechanics": "Accroche 2 s, logo 2 s, trois étapes de ≈ 6 s (Add, Edit, Watch), cinq preuves de 2 à 4 s (6 minutes au lieu d'une semaine, styles, formats, 19 langues, logo), logo et CTA 6 s. Clair et complet ; les étapes trop longues concentrent les temps morts.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Sections posées sur la mesure",
+      "name_en": "Section changes on the bar",
+      "t": "0:02-0:34",
+      "frames": "f120-f2042",
+      "fps": 60,
+      "mechanics": "Changements de section à 2,0 / 4,0 / 10,0 / 16,0 / 22,0 / 24,0 / 28,0 / 30,0 / 32,0 / 34,0 s : toujours sur une seconde paire, donc toutes les 4 ou 8 temps à 120 BPM. Le squelette est musical même quand l'intérieur des plans ne l'est pas.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son qui épouse la structure",
+      "name_en": "Score shaped to the edit",
+      "t": "0:00-0:40",
+      "frames": "f0-f2400",
+      "fps": 60,
+      "mechanics": "Intro douce (−17 à −20 dB) jusqu'à 2,0 s puis attaque (−10 dB) sur la pose du logo ; creux à 16,0 s pour l'entrée de la voix ; silence de 21,0 à 21,95 s (−32 à −35 dB) avant « Not a week. » ; niveau monté à 24,0 s sur le mur ; coup à 34,0 s sur le logo final puis extinction. Le silence avant la reprise donne son poids à la rature.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Blanc cassé, cartes à ombres douces",
+      "name_en": "Off-white canvas with soft-shadow cards",
+      "t": "0:00-0:40",
+      "frames": "f0-f2400",
+      "fps": 60,
+      "mechanics": "Fond #FAFAF8 uni, cartes blanches à grands rayons (≈ 1 % de la largeur) et ombres très diffuses de faible opacité, aucun grain ni dégradé. Propre et lisible, mais c'est le rendu SaaS par défaut.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Research Distilbook » : Claude a récupéré le vrai produit (promesse « Turn any PDF into a hand-illustrated explainer video », 3 étapes, styles nommés, 19 langues, 15 $ par mois) et l'a rejoué fidèlement. La recherche a orienté vers la démo plutôt que vers le spectacle."},
+    {"kind": "direction", "insight": "« Like it's your showreel - Go all out » n'a pas produit d'audace : sans consigne mesurable (densité, rythme, nombre de transitions), le modèle a privilégié la clarté de la démo et des transitions en fondu ou montée masquée."},
+    {"kind": "structure", "insight": "Structure inventée : accroche, logo, trois étapes de ≈ 6 s, cinq preuves de 2 à 4 s, CTA. Les étapes trop longues (téléversement, relecture du script) concentrent les temps morts."},
+    {"kind": "build", "insight": "Voix de synthèse et dessin synchronisé produits sans demande ; la musique semble montée sur la structure (creux pour la voix, silence avant la rature, coups sur les deux logos). La timeline est pilotée par la narration du produit, pas par le tempo."},
+    {"kind": "qa", "insight": "Aucun critère de rythme : « aucun plan figé plus de 0,8 s » ou « un événement par temps à 120 BPM » aurait corrigé les 65 % de plans quasi immobiles."},
+    {"kind": "other", "insight": "Format 16:9 et durée de 40 s respectés ; le mot « dynamic » n'a pas été traduit en densité de mouvement."}
+  ],
+  "steal": [
+    "Construis le logo avec les éléments qui serviront ensuite : les trois tranches de livre deviennent, par un raccord, la barre d'étapes de la démo.",
+    "Pour présenter un catalogue (styles, modèles), fais sauter une surbrillance de carte en carte sur chaque temps, sans couper.",
+    "Pendant une narration, dessine chaque élément au moment où la voix le nomme et surligne le mot dit en couleur d'accent.",
+    "Rature puis correction chiffrée : « Not a week. » barré en rouge sur une attaque après un silence, puis « About 6 minutes » en grand.",
+    "Relie un compteur à l'apparition de ce qu'il compte : 1 → 19 au fil des puces de langues."
+  ],
+  "flaws": [
+    "65 % de la durée quasi figée : fichier prêt puis 2 s d'attente, script lu en entier, fin tenue 5,6 s.",
+    "Prompt « showreel, go all out » ignoré : démo sobre, transitions en fondu ou montée masquée presque partout.",
+    "Textes d'interface vers 1 % de la hauteur (onglets, lignes de fichier) : illisibles hors plein écran.",
+    "La seconde moitié ajoute orange, sarcelle et gris ardoise au système vert-bleu-magenta : cohérence diluée.",
+    "Clics et frappes de la démo ignorent la musique : ils tombent au temps de lecture, pas sur les temps."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Seuls trois moments valent l'étude (raccord logo → barre d'étapes, sauts de surbrillance sur les temps, dessin calé sur la voix) et les planches les couvrent ; le reste est lent et générique."
+  }
+}

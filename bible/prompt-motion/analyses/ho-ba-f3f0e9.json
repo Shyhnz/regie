@@ -1,0 +1,679 @@
+{
+  "slug": "ho-ba-f3f0e9",
+  "title": "mdfor.dev product intro video",
+  "handle": "@HO_BA",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique cohérent (crème, terracotta, serif + mono), montage verrouillé sur une grille de 128 BPM et sur la structure du morceau ; pénalisé par l'intro lente, l'UI minuscule et le catalogue de transitions.",
+  "summary": "Présentation de l'éditeur markdown mdfor.dev. Un curseur tape « # Write », la syntaxe mono devient serif, tout s'effondre en un point pendant un silence, puis le logo jaillit sur le drop. Suivent un éditeur reconstruit en HTML, cinq fonctionnalités d'une mesure chacune, une rafale de mots au demi-temps et le logo final. Force : synchro avec la structure musicale. Faiblesses : intro lente, texte d'interface minuscule.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 30 s façon showreel pour présenter mdfor.dev, de vrais assets (logo, captures), une musique avec un mouvement calé dessus, un rendu professionnel et non une démo, des captures décomposées en composants animables, des mouvements « juicy ».",
+    "Claude a décidé seul : le concept « la syntaxe markdown devient typographie rendue », la palette crème/terracotta/expresso, le duo serif + mono, une grille de 128 BPM (une mesure par fonctionnalité), 5 scènes numérotées, la rafale de mots et le logo en serre-livres.",
+    "Bien cadré : la synchro exigée et l'interdiction des captures brutes ont donné une interface reconstruite et un montage calé sur les temps. Non cadré : la longueur de l'intro, la taille du texte de l'interface et l'unité des transitions (catalogue disparate)."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#FAF6EE",
+        "role": "fond crème (centre du cadre)"
+      },
+      {
+        "hex": "#F3E4D8",
+        "role": "taches pêche floues du fond"
+      },
+      {
+        "hex": "#E9DED4",
+        "role": "vignette chaude des bords"
+      },
+      {
+        "hex": "#2C2622",
+        "role": "texte principal, brun expresso (titres romains, logotype)"
+      },
+      {
+        "hex": "#B05838",
+        "role": "accent terracotta (italiques, icône du logo, bouton Export, traits, anneaux)"
+      },
+      {
+        "hex": "#1F1B16",
+        "role": "fond du mode sombre (scènes 04-05, mur d'icônes)"
+      },
+      {
+        "hex": "#ECE4DC",
+        "role": "texte crème en mode sombre"
+      },
+      {
+        "hex": "#D88C60",
+        "role": "terracotta éclairci pour l'italique sur fond sombre"
+      },
+      {
+        "hex": "#75685E",
+        "role": "traits des icônes du mur (estimé)"
+      },
+      {
+        "hex": "#7B716E",
+        "role": "pic du flash gris de 22,5 s"
+      }
+    ],
+    "type": "Serif gras à empattements (type Fraunces/Newsreader, probable), titres ≈ 15 % de hauteur en ouverture puis 8 % ; 2e ligne italique terracotta ; mono capitales interlettrées (étiquettes, code) ; grotesque neutre pour le texte courant.",
+    "texture": "Fond crème avec 2-3 taches pêche floues (dégradés radiaux) et vignette chaude ; grille de points très légère (≈ 8 % d'opacité, pas ≈ 40 px) ; ombres portées très diffuses sous cartes et fenêtres ; bande surligneur terracotta translucide derrière les italiques ; grain filmique visible sur les scènes sombres ; flou de mise au point sur l'entrée des mots ; flou de filé directionnel sur les whips, rendu en copies fantômes discrètes.",
+    "style": "éditorial chaleureux, interface reconstruite",
+    "coherence": "Trois constantes tiennent le système : la paire titre romain brun / italique terracotta avec point final, les étiquettes mono numérotées 01 à 05, et les glyphes markdown (#, *, [ ]) utilisés comme particules de marque. Le passage en mode sombre est motivé par une fonction du produit, et le logo en serre-livres referme la boucle. Ce qui casse un peu : chaque scène a sa propre transition (whip vertical, whip horizontal, volet, iris, flash gris), le cercle vert du lint sort de la palette et le flash gris est boueux."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM (netteté 5,3), grille parfaitement régulière (temps = 0,46875 s = 28,1 im à 60 fps). Toutes les frontières de scène tombent sur des multiples exacts de 4 temps (1 mesure = 1,875 s) : 7,5 / 15,0 / 16,875 / 18,75 / 20,625 / 22,5 / 24,375 / 26,25 s. Coupes et flashs 1 à 2 im avant la barre mesurée (f450/f452, f1350/f1352, f1463/f1464, f1575/f1577), ce qui correspond à l'instant exact du temps dans la composition. Atterrissages des whips et du volet pile sur la barre (f1014, f1127, f1239). Rafale de mots : un mot toutes les 14 im (demi-temps). Densité : une action par temps dans la seconde moitié (15-26 s). Maintiens détectés : 34 % du film, concentrés sur l'intro (0-6 s : frappe, puis « Write markdown. » fixe environ 2,5 s pendant que 4 pastilles arrivent) et sur le carton final (27-30 s, normal). Micro-trou : 2 à 4 im de fond vide à 15,0 s, au milieu de la traversée floue.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.97",
+        "what": "Curseur terracotta qui clignote sur fond crème, frappe de « # Write » en mono",
+        "technique": "frappe au curseur"
+      },
+      {
+        "t": "0:00.97-0:01.25",
+        "what": "Le « # » éclate en fragments, le mot mono devient « Write » en serif gras, lettre par lettre",
+        "technique": "morph syntaxe mono → serif rendu"
+      },
+      {
+        "t": "0:01.9-0:03.5",
+        "what": "« Write » remonte, « *markdown » se tape puis devient italique terracotta avec une gerbe d'astérisques",
+        "technique": "morph syntaxe (2e occurrence)"
+      },
+      {
+        "t": "0:03.8-0:05.7",
+        "what": "4 pastilles (bold, | quote, done, render()) arrivent aux 4 coins, une par temps",
+        "technique": "pastilles de syntaxe"
+      },
+      {
+        "t": "0:06.1-0:07.03",
+        "what": "Titre et pastilles tournent en spirale et sont aspirés vers le centre, étoile de traits radiaux",
+        "technique": "vortex qui aspire tout en un point"
+      },
+      {
+        "t": "0:07.03-0:07.5",
+        "what": "Étoile immobile et point central, le fond s'assombrit pendant le silence musical",
+        "technique": "retenir son souffle avant le drop"
+      },
+      {
+        "t": "0:07.5-0:07.85",
+        "what": "Flash crème sur le drop, anneau qui s'étend, l'icône du logo s'assemble à partir de glyphes",
+        "technique": "flash + anneau + assemblage de particules"
+      },
+      {
+        "t": "0:07.9-0:09.4",
+        "what": "Les lettres de « mdfor.dev » arrivent de la droite, sous-titre tapé et trait terracotta",
+        "technique": "logotype lettre à lettre"
+      },
+      {
+        "t": "0:09.43-0:10.5",
+        "what": "Le logo laisse place à l'éditeur plein cadre qui recule en fenêtre flottante",
+        "technique": "fondu avec recul"
+      },
+      {
+        "t": "0:10.5-0:14.05",
+        "what": "Frappe en direct dans l'éditeur reconstruit, aperçu rendu à droite, caméra qui suit le curseur",
+        "technique": "UI reconstruite + caméra qui suit la frappe"
+      },
+      {
+        "t": "0:14.08-0:14.8",
+        "what": "Recul éclair vers une fenêtre inclinée en 3D qui dérive",
+        "technique": "recul éclair en fenêtre 3D"
+      },
+      {
+        "t": "0:14.82-0:15.05",
+        "what": "La fenêtre grossit vers la caméra en se floutant jusqu'au fond vide",
+        "technique": "traversée floue"
+      },
+      {
+        "t": "0:15.05-0:16.78",
+        "what": "01 — LIVE PREVIEW : étiquette brouillée, « Instant / live preview. », deux cartes et badge éclair",
+        "technique": "gabarit de scène fonctionnalité"
+      },
+      {
+        "t": "0:16.78-0:16.9",
+        "what": "La scène file vers le haut, la suivante monte",
+        "technique": "whip vertical"
+      },
+      {
+        "t": "0:16.9-0:18.62",
+        "what": "02 — PRIVATE BY DEFAULT : ordinateur tracé au trait, cadenas qui surgit, anneaux radar, nuages barrés",
+        "technique": "pictogramme tracé au trait"
+      },
+      {
+        "t": "0:18.62-0:18.78",
+        "what": "La scène file vers la gauche avec un filé en copies fantômes",
+        "technique": "whip horizontal à filé échantillonné"
+      },
+      {
+        "t": "0:18.78-0:20.53",
+        "what": "03 — BUILT-IN LINTING : badge d'alerte, ligne MD022 surlignée, correction et cercle vert",
+        "technique": "erreur de lint corrigée en direct"
+      },
+      {
+        "t": "0:20.53-0:20.77",
+        "what": "Bande terracotta diagonale à bords striés qui balaie le cadre",
+        "technique": "volet diagonal"
+      },
+      {
+        "t": "0:20.77-0:21.6",
+        "what": "04 — LIGHT & DARK : tuile soleil qui surgit, 4 pastilles de couleur",
+        "technique": "apparition en échelle"
+      },
+      {
+        "t": "0:21.6-0:22.05",
+        "what": "Clic, onde, disque sombre qui envahit l'écran, le soleil devient lune (dans le creux musical)",
+        "technique": "bascule de thème en révélation circulaire"
+      },
+      {
+        "t": "0:22.5-0:24.38",
+        "what": "Flash gris sur la reprise ; 05 — IMPORT & EXPORT : clic sur Export, menu, fichiers .md et .html",
+        "technique": "flash gris + démo curseur"
+      },
+      {
+        "t": "0:24.38-0:25.78",
+        "what": "Coupe sur un mur d'icônes sombre ; Fast. Private. Linted. Themed. Portable. Free. au demi-temps",
+        "technique": "rafale de mots au demi-temps"
+      },
+      {
+        "t": "0:25.78-0:26.25",
+        "what": "La grille est aspirée dans un point orange, le point tient 6 im, flash",
+        "technique": "implosion en un point"
+      },
+      {
+        "t": "0:26.25-0:27.5",
+        "what": "Même anneau et même assemblage du logo qu'à 7,5 s",
+        "technique": "logo en serre-livres"
+      },
+      {
+        "t": "0:27.5-0:30.0",
+        "what": "Carton final : logo, sous-titre, 3 pastilles en cascade, curseur qui clignote au temps, musique qui s'éteint",
+        "technique": "carton final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "15 gestes clés vérifiés image par image : 14 tombent à ±2 im d'une barre bleue ou bleu clair (93 %, contre environ 36 % par hasard à 128 BPM et 60 fps). Détail (geste / barre) : morph « Write » f58/f58 (0) ; flash du drop f450/f452 (−2) ; recul de caméra, flou maximal f849 contre barre f845 (+4, seul raté, départ probable sur le temps en ease-in) ; image vide de la traversée f901/f902 (0) ; whip vertical posé f1014/f1014 (0) ; whip horizontal lisible f1127/f1127 (0) ; volet, révélation f1239/f1239 (0) ; onde du clic thème f1297/f1295 (+2) ; tuile soleil posée vers f1253/f1253 (0) ; flash gris f1350/f1352 (−2) ; coupe vers le mur d'icônes f1463/f1464 (−1) ; Private. f1477/f1478 (−1) ; Portable. f1519/f1520 (−1) ; Free. f1533/f1534 (−1) ; flash de l'implosion f1575/f1577 (−2). En plus : pastilles d'ouverture lancées 2 à 4 im après chaque temps (départs f229, f259, f287, f314 mesurés par différence d'image) ; curseur final qui bascule toutes les 28 im (f1688, f1716, f1744 contre barres f1689, f1717, f1745). Structure (enveloppe RMS par fenêtres de 50 ms) : montée 5,6-7,0 s (−26 → −16 dB) = vortex ; silence 7,10-7,45 s (−30 dB) = étoile immobile et fond assombri ; drop à 7,50-7,55 s (−6,3 dB) = flash et logo ; breakdown 21,5-22,45 s (−25 dB) = bascule en mode sombre ; reprise à 22,50 s (−6,6 dB) = flash gris ; montée sans grosse caisse 25,75-26,25 s = implosion ; impact à 26,3 s = flash et logo ; queue 27-30 s = carton final. L'indice automatique (« partielle », p corrigé = 0,04, drop daté à 7,78 s) sous-estime : le drop réel est à 7,50 s et la plupart des événements mesurés sont des fins de courbe lissées.",
+    "synced": [
+      "coupes",
+      "departs",
+      "atterrissages",
+      "apparitions",
+      "pulsations",
+      "flashs",
+      "texte",
+      "camera",
+      "couleur",
+      "drop"
+    ],
+    "style_match": "House/électro 128 BPM, grosse caisse à chaque temps, montées et drops : courbes expo sèches, whips et flashs sur les drops collent ; l'élégance éditoriale tempère l'énergie club.",
+    "how_built": "Timeline construite sur une grille de 128 BPM : chaque frontière de scène est un multiple exact de 4 temps de 0,46875 s (7,5 s = 16 temps, 22,5 s = 48 temps, 26,25 s = 56 temps), 1,6 im avant la barre mesurée (décalage de la fenêtre d'analyse). Silences, breakdown et montées coïncident exactement avec les scènes : bande-son probablement générée en code ou arrangée sur le même plan de temps par Claude. Déclencheur : la consigne explicite « motion must match the music » du prompt."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Morph syntaxe mono → serif rendu",
+      "name_en": "source-to-render letter swap",
+      "t": "0:00.97-0:01.25",
+      "frames": "f58-f75",
+      "fps": 60,
+      "mechanics": "« # Write » en mono gris (≈ 5 % de la hauteur) devient « Write » en serif gras (≈ 15 %). Le « # » terracotta éclate en une dizaine de fragments qui tombent et s'éteignent en ≈ 40 im. Chaque lettre serif monte d'environ 30 % de sa hauteur depuis sous la ligne de base, avec un décalage d'environ 2 im par lettre (W d'abord, e en dernier), pendant que la lettre mono s'efface en ≈ 6 im ; ease-out, sans dépassement visible. Le curseur saute en fin de mot et grandit à la hauteur du serif. Durée 17 im = 0,28 s, départ sur la barre f58 (0 im). Répété à 2,83 s (f170) : « *markdown » devient italique terracotta avec une gerbe d'astérisques.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {
+        "from": 56,
+        "to": 76,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Concept : la syntaxe devient rendu",
+      "name_en": "syntax-becomes-render concept",
+      "t": "0:00-0:30",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Fil conducteur du film : le markdown brut (mono, #, *, [ ]) se transforme en typographie rendue (serif). À l'ouverture (morph), dans la démo (volet markdown à gauche, rendu à droite), dans la scène 01 (deux cartes) et pour le logo, qui naît des glyphes de syntaxe. La promesse du produit (« écris du markdown, vois le rendu tout de suite ») devient la grammaire visuelle.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-cut-f450.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Couple titre romain gras / italique terracotta",
+      "name_en": "roman + italic headline pair",
+      "t": "0:03.5-0:24.38",
+      "frames": "f210-f1462",
+      "fps": 60,
+      "mechanics": "Tous les titres tiennent sur deux lignes : ligne 1 en serif gras brun #2C2622, ligne 2 en italique du même serif, en terracotta #B05838, avec point final (« Write / markdown. », « Instant / live preview. », « Stays on / your device. », « Lint as / you write. », « Easy on / the eyes. », « Take it / anywhere. »). Hauteur de capitale ≈ 15 % du cadre à l'ouverture, ≈ 8 % dans les scènes de fonctionnalités. Une bande surligneur terracotta translucide (≈ 15 % d'opacité) passe derrière la ligne italique. En mode sombre : crème #ECE4DC et terracotta éclairci #D88C60.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de scène fonctionnalité",
+      "name_en": "feature slide template",
+      "t": "0:15.05-0:24.38",
+      "frames": "f903-f1462",
+      "fps": 60,
+      "mechanics": "Bloc texte ferré à gauche dans la moitié gauche (marge ≈ 8 % de la largeur) : étiquette mono, titre sur 2 lignes, texte courant en grotesque (≈ 2,5 % de hauteur). Démonstration visuelle à droite (≈ 40 % de la largeur), centrée verticalement. Même gabarit pour les 5 scènes, en clair puis en sombre : la répétition rend chaque fonctionnalité lisible en une mesure.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Étiquette mono numérotée en brouillage",
+      "name_en": "text scramble eyebrow",
+      "t": "0:15.05-0:15.5",
+      "frames": "f903-f930",
+      "fps": 60,
+      "mechanics": "Au-dessus de chaque titre, une étiquette « 0N — NOM » en mono capitales terracotta (≈ 1,8 % de hauteur, interlettrage ≈ +15 %) se résout de gauche à droite à partir de caractères aléatoires (« 01 — LIVE PREV+1_ », « 02 — PRIVATE BY *·_]{ », « 04 — LIGHT 8·+] ») en ≈ 25 im. Elle numérote les 5 fonctionnalités et rappelle l'univers du code.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg (f930), overview-04.jpg (f1140, f1260)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte lettre à lettre",
+      "name_en": "staggered rise-in title",
+      "t": "0:15.08-0:15.55",
+      "frames": "f905-f933",
+      "fps": 60,
+      "mechanics": "« Instant » apparaît lettre par lettre en montant d'un masque (≈ 20 % de la hauteur de lettre), décalage ≈ 1,5 im par lettre, ≈ 8-10 im par lettre en ease-out. La ligne italique suit avec ≈ 6 im de retard, puis le texte courant en fondu. Les deux cartes arrivent en fondu avec mise au point ; le badge éclair pousse d'un point à sa taille entre f927 et f931, avec un léger dépassement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastilles de syntaxe aux quatre coins",
+      "name_en": "markdown syntax chips",
+      "t": "0:03.82-0:05.67",
+      "frames": "f229-f340",
+      "fps": 60,
+      "mechanics": "4 pastilles blanches arrondies à ombre douce, chacune stylée comme l'élément qu'elle nomme : « bold » en grotesque gras, « | quote » en italique serif, « done » avec case terracotta cochée, « render() » en mono rouge framboise. Elles entrent depuis hors cadre avec une rotation de 10-15° et se posent avec une inclinaison résiduelle de 3-5°. Différence d'image par coin : départs f229, f259, f287, f314 (2 à 4 im après un temps), arrivées ≈ f255, f274, f311, f340, soit une pastille par temps. Petite gerbe de points à l'arrivée de render().",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, mesure de différence d'image par coin"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Vortex qui aspire tout en un point",
+      "name_en": "vortex collapse to a point",
+      "t": "0:06.1-0:07.03",
+      "frames": "f366-f422",
+      "fps": 60,
+      "mechanics": "Titre et pastilles tournent autour du centre en accélérant (≈ 2°/im vers f380, ≈ 8°/im vers f395-f400 : ease-in) et rétrécissent jusqu'à ≈ 10 % de leur taille à f415. Les lettres se dispersent sur une spirale (« m a r k d o w n »). Une quarantaine de traits radiaux fins (terracotta et gris) jaillissent du centre en étoile. Départ probable sur le temps f366, aspiration terminée vers f420, sur la montée musicale (5,6-7,0 s, −26 → −16 dB). C'est le « texte qui rétrécit en point » suivi d'une révélation circulaire.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f395.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Retenir son souffle avant le drop",
+      "name_en": "pre-drop visual hold",
+      "t": "0:07.03-0:07.5",
+      "frames": "f422-f449",
+      "fps": 60,
+      "mechanics": "Après l'aspiration, il ne reste que l'étoile de traits et un point terracotta au centre, immobiles pendant 27 im (0,45 s), tandis que le fond crème s'assombrit progressivement d'environ 15 % vers un gris chaud. La musique fait exactement la même chose : silence de 7,10 à 7,45 s (−30 dB contre −16 dB juste avant). Le film se tait avec la musique, puis explose avec elle.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f450.jpg, enveloppe RMS 50 ms"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash sur le drop, anneau et logo qui s'assemble",
+      "name_en": "drop flash with shockwave ring and particle logo assembly",
+      "t": "0:07.5-0:07.85",
+      "frames": "f450-f470",
+      "fps": 60,
+      "mechanics": "f450 : image intermédiaire grise (fondu d'une image) ; f451 : fond crème plein, surexposé. Un anneau terracotta fin (≈ 4 px, opacité ≈ 40 %) part d'un rayon ≈ 3 % de la largeur et atteint ≈ 45 % en 20 im (ease-out), un second anneau suit. Une quarantaine de glyphes markdown (#, *, [ ], >, -) convergent en ≈ 10 im pour former l'icône document « T », qui dépasse d'environ 8 % en échelle puis se pose (f462-f470). Coupe f450, 2 im avant la barre f452, sur le drop mesuré (−30 → −6 dB à 7,50-7,55 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f450.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype qui arrive lettre à lettre en flou",
+      "name_en": "wordmark letter fly-in with blur",
+      "t": "0:07.9-0:09.0",
+      "frames": "f474-f540",
+      "fps": 60,
+      "mechanics": "Les lettres de « mdfor.dev » glissent depuis la droite en passant d'une échelle ≈ 1,5 à 1, avec flou de mouvement et un décalage d'environ 3 im ; le point terracotta du logotype arrive en dernier. Le sous-titre « Instant markdown editor » (grotesque, ≈ 3 % de hauteur) se tape, puis un trait terracotta (≈ 6 % de la largeur, 4 px) se dessine dessous de gauche à droite. Les glyphes de l'explosion dérivent vers l'extérieur et s'éteignent. Même animation rejouée à 26,25 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (f480-f540), microM-010-cut-f1575.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Glyphes markdown comme particules de marque",
+      "name_en": "syntax glyph particles",
+      "t": "0:00.97-0:27.5",
+      "frames": "f58-f1650",
+      "fps": 60,
+      "mechanics": "Les signes #, *, [ ], [x], >, ` et - servent de confettis : ils jaillissent quand la syntaxe se transforme (f58, f170), composent l'icône du logo (f452-f462, f1577-f1590), puis dérivent lentement vers l'extérieur avec une légère gravité. Terracotta et brun, opacité 40-80 %, taille 1-2 % de la hauteur. Ils remplacent les étincelles génériques par une matière propre au produit.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-cut-f450.jpg, microM-010-cut-f1575.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu avec recul vers l'éditeur",
+      "name_en": "scale crossfade into the UI",
+      "t": "0:09.43-0:10.5",
+      "frames": "f566-f630",
+      "fps": 60,
+      "mechanics": "Le logo laisse place à l'éditeur plein cadre en 16 im (f566-f582, pic de changement f574-f575, près du demi-temps f578) ; la luminosité moyenne passe de 229 à 239 (fond de l'interface plus clair). L'éditeur recule ensuite en fenêtre flottante avec ombre (f600 → f630). Probablement un fondu enchaîné avec mise à l'échelle : c'est la transition la plus faible du film.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, mesure de différence d'image f556-f615"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Éditeur reconstruit en HTML, frappe en direct",
+      "name_en": "rebuilt live-typing editor UI",
+      "t": "0:10.0-0:14.05",
+      "frames": "f600-f843",
+      "fps": 60,
+      "mechanics": "Aucune capture d'écran : la fenêtre est recomposée (barre avec logo, boutons Import et Export terracotta, deux volets MARKDOWN / PREVIEW). À gauche, le markdown se tape en mono (≈ 1,5 % de hauteur) avec curseur ; à droite, l'aperçu se met à jour en serif (« Release notes », liste, case [x] qui devient une case terracotta cochée, citation, bloc de code). La ligne active est surlignée ; un trait terracotta courbe souligne la ligne de code (f838-f848).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg, microM-003-move-f852.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui suit la frappe",
+      "name_en": "follow-cam push-in on typing",
+      "t": "0:11.0-0:14.05",
+      "frames": "f660-f843",
+      "fps": 60,
+      "mechanics": "La caméra pousse dans l'éditeur (échelle ≈ 1 → 1,6) avec une légère inclinaison en perspective, puis glisse vers le haut ligne après ligne pour garder le curseur au tiers supérieur. Mouvements lents en ease-in-out (≈ 1 s chacun) : la frappe reste lisible sans couper. Le texte reste pourtant petit à l'écran.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg (f690), overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul éclair en fenêtre 3D",
+      "name_en": "snap pull-back to a tilted 3D window",
+      "t": "0:14.08-0:14.8",
+      "frames": "f845-f887",
+      "fps": 60,
+      "mechanics": "Depuis le gros plan, recul jusqu'à une fenêtre d'environ 75 % de la largeur, inclinée (rotation Y ≈ −10°, X ≈ 5°), en ≈ 4 im visibles (f847-f851), avec un fort flou de mouvement à f849-f850. Départ probable sur la barre f845 en ease-in, atterrissage f851-f855. Ensuite la fenêtre dérive lentement (≈ 2° de rotation en 40 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f852.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Traversée floue de la fenêtre",
+      "name_en": "push-through defocus",
+      "t": "0:14.82-0:15.05",
+      "frames": "f889-f903",
+      "fps": 60,
+      "mechanics": "La fenêtre inclinée grossit vers la caméra (≈ ×2,5) en se floutant (flou croissant jusqu'à ≈ 30 px) et se fond dans le fond en ≈ 10 im. f901-f903 : fond crème vide pendant 2 à 4 im, exactement sur le temps de 15,0 s (barre f902). La scène suivante se construit ensuite à partir du vide (f905).",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Deux cartes markdown et aperçu reliées par un badge",
+      "name_en": "split source/preview cards with sync badge",
+      "t": "0:15.3-0:16.78",
+      "frames": "f918-f1007",
+      "fps": 60,
+      "mechanics": "Carte MARKDOWN et carte PREVIEW (≈ 22 % de la largeur chacune, coins ≈ 12 px, ombre douce), badge rond terracotta avec éclair (≈ 4 % de la largeur) entre les deux. « # Hello / This is **bold** / - fast / - private » se tape à gauche et s'affiche rendu à droite à la même image : la fonctionnalité montrée sans un mot d'explication.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Whip vertical flou",
+      "name_en": "vertical whip with motion blur",
+      "t": "0:16.78-0:16.9",
+      "frames": "f1007-f1014",
+      "fps": 60,
+      "mechanics": "La scène sort vers le haut en ≈ 3 im (f1007-f1009) avec un flou de filé vertical (traînée ≈ 20 % de la hauteur) ; la suivante entre par le bas et se pose en ≈ 4 im. Lancé 7 im avant le temps pour que l'atterrissage (f1013-f1014) tombe sur la barre f1014 (0 im).",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f1008.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pictogramme tracé au trait et anneaux radar",
+      "name_en": "line-art draw-on with radar rings",
+      "t": "0:16.9-0:18.5",
+      "frames": "f1013-f1110",
+      "fps": 60,
+      "mechanics": "Un cercle puis un ordinateur portable se dessinent au trait (≈ 3 px, brun) en ≈ 15 im (f1013-f1028) ; deux nuages barrés et un serveur barré apparaissent autour. Un badge cadenas terracotta (carré arrondi, ≈ 6 % de la largeur) surgit au centre de l'écran avec dépassement, puis 3 anneaux concentriques pâles pulsent vers l'extérieur comme un radar : « rien ne quitte l'appareil ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1008.jpg, microM-005-move-f1122.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Whip horizontal à filé échantillonné",
+      "name_en": "horizontal whip with stepped motion blur",
+      "t": "0:18.62-0:18.78",
+      "frames": "f1117-f1133",
+      "fps": 60,
+      "mechanics": "La scène file vers la gauche d'environ une largeur en ≈ 6 im (f1117-f1123). Le flou de filé est rendu en 6 à 8 copies fantômes discrètes (effet stroboscopique, signe d'un flou échantillonné avec trop peu d'échantillons). La nouvelle scène est lisible à f1127, pile sur la barre, et se fige vers f1133.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f1122.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Erreur de lint corrigée en direct",
+      "name_en": "live lint fix",
+      "t": "0:18.78-0:20.6",
+      "frames": "f1127-f1236",
+      "fps": 60,
+      "mechanics": "Carte d'éditeur avec badge « ⚠ 1 » en haut à droite et ligne surlignée « MD022: Heading should have blank line after » ; une ligne vide s'insère dans le code, puis un cercle vert fin (≈ 7 % de la largeur) avec des confettis multicolores apparaît sur le badge (validation). Micro-récit erreur → correction bien vu, mais le vert sort de la palette et l'ensemble est minuscule.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, microM-006-cut-f1239.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal terracotta à bords striés",
+      "name_en": "feathered diagonal color wipe",
+      "t": "0:20.53-0:20.77",
+      "frames": "f1232-f1246",
+      "fps": 60,
+      "mechanics": "Une bande terracotta pleine (#B05838) inclinée d'environ 15° balaie le cadre de gauche à droite, précédée et suivie de 4 à 5 bandes parallèles d'opacité décroissante. Couverture totale f1237-f1238 (2 im), la nouvelle scène se découvre dès f1239, exactement sur la barre. Environ 14 im au total, vitesse presque constante au centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1239.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tuile icône qui surgit",
+      "name_en": "icon tile pop-in",
+      "t": "0:20.73-0:20.9",
+      "frames": "f1244-f1254",
+      "fps": 60,
+      "mechanics": "Après le volet, la tuile blanche du soleil (coins ≈ 20 % de sa taille, ombre douce, ≈ 9 % de la largeur) part d'un point et atteint sa taille en ≈ 10 im (ease-out), posée vers f1253 sur la barre bleu clair ; 4 pastilles de couleur (crème, blanc, noir, terracotta) arrivent ensuite en cascade sous la tuile.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1239.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bascule de thème en révélation circulaire",
+      "name_en": "theme-toggle circular reveal",
+      "t": "0:21.6-0:22.05",
+      "frames": "f1296-f1323",
+      "fps": 60,
+      "mechanics": "Clic sur la tuile soleil : une onde fine terracotta s'étend en ≈ 10 im (f1297-f1306). Puis un disque sombre (#1F1B16) à bord flou naît de l'icône et grossit en accélérant (rayon ≈ 3 %, 6 %, 9 %, 13 %, 18 %, 26 %, 40 % de la largeur entre f1310 et f1316 : expo-in) et couvre tout à f1320 (12 im). Le soleil se transforme en lune (rayons rentrés, croissant) entre f1313 et f1323 ; textes et pastilles passent en palette sombre. Placée dans le creux musical (breakdown 21,5-22,45 s) : la lumière s'éteint quand la grosse caisse s'arrête. Transition motivée par la fonction elle-même.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 1305,
+        "to": 1322,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash gris sur la reprise",
+      "name_en": "grey flash on the re-drop",
+      "t": "0:22.5-0:22.6",
+      "frames": "f1350-f1356",
+      "fps": 60,
+      "mechanics": "Sur fond sombre, l'image f1350 monte à #544C49, f1351 à #7B716E (pic), puis redescend vers #403A35 en ≈ 6 im pendant que le titre suivant s'écrit. Tombe 2 im avant la barre f1352, au retour de la grosse caisse (−25 → −6,6 dB à 22,50-22,55 s). L'idée est juste, mais le gris est boueux : un flash crème ou terracotta se lirait mieux.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f1350.jpg, mesure de couleur moyenne f1348-f1356"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic sur Export et fichiers qui sortent",
+      "name_en": "cursor export demo",
+      "t": "0:22.9-0:24.38",
+      "frames": "f1375-f1462",
+      "fps": 60,
+      "mechanics": "Un curseur flèche va sur « Export », clique (le bouton s'enfonce), le menu « Download .md / Download .html » se déplie et la 2e ligne est survolée. Deux cartes fichiers (.md avec « release-notes.md », .html) jaillissent, inclinées de ±8°, avec une gerbe de points.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg (f1440), microM-008-cut-f1463.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rafale de mots au demi-temps",
+      "name_en": "one-word-per-eighth-note salvo",
+      "t": "0:24.38-0:25.78",
+      "frames": "f1463-f1546",
+      "fps": 60,
+      "mechanics": "« Fast. / Private. / Linted. / Themed. / Portable. / Free. » : un mot toutes les 14 im (0,234 s, une croche à 128 BPM), centré, ≈ 20 % de la hauteur. Alternance serif romain crème #F0E8DC et italique terracotta #D88C60. Chaque mot entre flou (≈ 10 px), parfois légèrement tourné (Private. ≈ 5°), et devient net en 2 à 3 im. Entrées mesurées f1463, f1477, f1519, f1533, chaque fois 1 im avant les barres f1464, f1478, f1520, f1534. Grammaire 1600 pure.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1463.jpg, microM-009-move-f1522.jpg",
+      "illus": {
+        "from": 1462,
+        "to": 1540,
+        "n": 6
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur d'icônes au trait",
+      "name_en": "icon wall backdrop",
+      "t": "0:24.38-0:25.78",
+      "frames": "f1463-f1547",
+      "fps": 60,
+      "mechanics": "Grille d'environ 12 × 6 icônes au trait de type Lucide (#75685E sur #1F1B16). Quelques tuiles s'allument en terracotta (≈ #B07050) avec une rotation de 5 à 10° et de petites étincelles ; la grille dérive lentement. Fond texturé pour la rafale de mots, et matière que l'implosion va aspirer.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, microM-008-cut-f1463.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion en un point puis éclat",
+      "name_en": "implode-to-dot then burst",
+      "t": "0:25.78-0:26.3",
+      "frames": "f1547-f1578",
+      "fps": 60,
+      "mechanics": "La grille se pince vers le centre (déformation en perspective, f1560-f1565), les tuiles terracotta filent vers un point orange lumineux, et tout a disparu à f1569. Le point reste seul 6 im (f1569-f1574), s'étire en trait horizontal à f1575 (image grise #8D8981), puis f1576 passe en fond crème plein (#FAF4EB) avec le même anneau et le même assemblage du logo qu'à 7,5 s. Flash 2 im avant la barre f1577, au bout d'une montée sans grosse caisse (25,75-26,25 s) qui aboutit à l'impact de 26,3 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1575.jpg",
+      "illus": {
+        "from": 1558,
+        "to": 1580,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo en serre-livres et carton final",
+      "name_en": "bookend logo and end card",
+      "t": "0:26.25-0:30.0",
+      "frames": "f1575-f1799",
+      "fps": 60,
+      "mechanics": "Le logo jaillit deux fois de la même façon (7,5 s et 26,25 s). Au 2e passage, le carton final ajoute 3 pastilles (éclair « Instant preview », cadenas « Private », demi-lune « Light & dark ») qui poussent en cascade à environ un demi-temps d'écart (pics de mouvement f1682 et f1697). Le curseur terracotta de l'ouverture revient clignoter après « mdfor.dev » : il bascule à f1688, f1716 et f1744, soit toutes les 28 im, un temps exact. Tenue finale ≈ 2,5 s pendant que la musique s'éteint.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, overview-06.jpg, mesure de différence d'image f1600-f1760"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en mesures",
+      "name_en": "bar-based structure",
+      "t": "0:00-0:30",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Intro de 4 mesures (0-7,5 s : frappe, pastilles, aspiration), logo sur 1 mesure, démo de l'éditeur sur environ 3 mesures (9,4-15 s), 5 fonctionnalités numérotées d'une mesure chacune (15,0 / 16,875 / 18,75 / 20,625 / 22,5 s), rafale de mots sur 3 temps, implosion sur 1 temps, logo final sur 2 mesures. Chaque frontière tombe sur un multiple exact de 4 temps de 0,46875 s.",
+      "verdict": "reprendre",
+      "evidence": "stats.json (coupes), microM-002 à microM-010"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale mise en image",
+      "name_en": "arrangement-mapped visuals",
+      "t": "0:05.6-0:26.3",
+      "frames": "f336-f1578",
+      "fps": 60,
+      "mechanics": "Chaque section du morceau a son geste visuel : montée 5,6-7,0 s = aspiration en vortex ; silence 7,10-7,45 s = étoile immobile et fond qui s'assombrit ; drop à 7,50 s = flash, anneau et logo ; breakdown 21,5-22,45 s (−25 dB) = bascule en mode sombre ; reprise à 22,50 s = flash gris ; montée sans grosse caisse 25,75-26,25 s = implosion ; impact à 26,3 s = flash et logo ; queue 27-30 s = carton final immobile. Le caractère de chaque section (tension, vide, explosion) est traduit, pas seulement les temps.",
+      "verdict": "reprendre",
+      "evidence": "enveloppe RMS 50 ms, microM-002-cut-f450.jpg, microM-007-cut-f1350.jpg, microM-010-cut-f1575.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Atterrir sur le temps plutôt que partir",
+      "name_en": "land-on-the-beat transitions",
+      "t": "0:16.78-0:20.77",
+      "frames": "f1007-f1246",
+      "fps": 60,
+      "mechanics": "Les whips et le volet sont lancés 4 à 7 im avant le temps pour que l'image clé (nouvelle scène lisible, couverture totale) tombe sur la barre : whip vertical lancé f1007, posé f1014 (barre f1014) ; whip horizontal lancé f1117, lisible f1127 (barre f1127) ; volet lancé f1232, couverture f1238, révélation f1239 (barre f1239). Les flashs, eux, tombent 1 à 2 im avant la barre (f450, f1350, f1575), à l'instant exact du temps dans la composition.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1008.jpg, microM-005-move-f1122.jpg, microM-006-cut-f1239.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond crème à taches pêche et grille de points",
+      "name_en": "warm blurred-blob backdrop with dot grid",
+      "t": "0:00-0:21.9",
+      "frames": "f0-f1315",
+      "fps": 60,
+      "mechanics": "Fond #FAF6EE avec 2 à 3 taches pêche floues (#F3E4D8, rayon ≈ 30 % du cadre) qui changent de place d'une scène à l'autre (dérive lente probable), vignette chaude #E9DED4 sur les bords et grille de points très légère. Donne de la profondeur sans distraire ; presque statique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Surligneur, grain et ombres diffuses",
+      "name_en": "highlighter, grain and soft shadow finish",
+      "t": "0:03.5-0:30",
+      "frames": "f210-f1799",
+      "fps": 60,
+      "mechanics": "Bande surligneur terracotta translucide (≈ 15 %) derrière les mots en italique ; grain filmique visible sur fond sombre ; ombres portées très diffuses (≈ 30 px de flou, ≈ 10 % d'opacité) sous cartes, pastilles et fenêtres. Finition « papier » qui évite le rendu plat d'une interface web.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "build",
+      "insight": "« Must have music and motion must match the music » est la phrase clé : Claude a construit la timeline sur une grille de 128 BPM (frontières à des multiples exacts de 4 temps) et la bande-son a des silences, breakdowns et montées exactement aux changements de scène. Une consigne de synchro explicite suffit quand le modèle maîtrise aussi la musique."
+    },
+    {
+      "kind": "direction",
+      "insight": "« what an incredible motion designer you are… go all out… juicy » pousse Claude à exhiber un maximum de procédés : 8 familles de transitions en 30 s (aspiration en un point, flash et anneau, fondu, traversée floue, whip, volet, iris, coupe). Résultat brillant mais disparate ; demander « une seule famille de transitions, déclinée » aurait unifié le film."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Un lien vers le produit et « use actual product screenshot/logo/assets » : Claude a repris le logo, le nom, les fonctionnalités et probablement la palette et la typo du site, sans jamais montrer de capture brute."
+    },
+    {
+      "kind": "banned",
+      "insight": "« avoid using screenshots as raw; break them down into components/icons » produit l'éditeur recomposé en HTML, les cartes, le mur d'icônes et les glyphes-particules : l'interdit crée la matière animable."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le prompt ne fixe que la durée de 30 s ; Claude a choisi seul une structure en mesures (intro de 4 mesures, une mesure par fonctionnalité, logo en serre-livres). Écrire cette structure dans le prompt la rendrait reproductible et permettrait de raccourcir l'intro."
+    },
+    {
+      "kind": "other",
+      "insight": "Rien sur la typographie ni sur la couleur : Claude a choisi une direction éditoriale (serif + italique terracotta + mono) cohérente avec un éditeur de texte. Le texte d'interface minuscule montre qu'il faut imposer une taille minimale de texte à l'écran."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucune consigne de contrôle : le fondu logo → éditeur, les images vides à 15,0 s et le filé en copies fantômes du whip horizontal sont les défauts qu'une passe image par image aurait repérés."
+    }
+  ],
+  "steal": [
+    "Caler chaque scène sur une mesure entière (4 temps = 1,875 s à 128 BPM) et poser chaque transition sur le premier temps : le montage respire avec la musique.",
+    "Au silence avant le drop, tout se réduit à un point et le fond s'assombrit ; sur le drop, flash crème, anneau et logo qui s'assemble.",
+    "Rafale de mots au demi-temps (14 im à 60 fps), en alternant romain crème et italique terracotta, chaque mot entrant par une mise au point de 3 im.",
+    "Faire d'une fonction du produit la transition : le bouton de thème lance un disque sombre qui envahit l'écran en 12 im (expo-in).",
+    "Prendre les signes de la syntaxe du produit (#, *, [ ]) comme particules de marque : ils composent le logo et éclatent à chaque transformation."
+  ],
+  "flaws": [
+    "Intro lente : 6 s de frappe et de pastilles sur un titre presque fixe avant le premier vrai mouvement.",
+    "Texte de l'éditeur trop petit (≈ 1,5 % de la hauteur) : la démo d'interface de 10 à 14 s se lit mal.",
+    "Catalogue de transitions (whip vertical, whip horizontal, volet, iris, flash gris, coupe) : chaque scène change de grammaire.",
+    "Filé du whip horizontal en copies fantômes visibles ; flash gris boueux sur fond sombre.",
+    "Cercle vert du lint hors palette et minuscule ; 2 à 4 images vides à 15,0 s qui se lisent comme un trou."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : c'est un modèle de synchro construite (grille de 128 BPM, silence, drop, breakdown et montée tous mis en image), avec des transitions variées et mesurables image par image, et un morph syntaxe → rendu à décortiquer à 60 fps pour le reproduire dans HyperFrames."
+  }
+}

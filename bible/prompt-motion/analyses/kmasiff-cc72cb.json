@@ -1,0 +1,398 @@
+{
+  "slug": "kmasiff-cc72cb",
+  "title": "Email verification tool promo",
+  "handle": "@KmAsiff",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système SaaS très cohérent (un violet, une grotesque, mise en page split, barre d'onglets), vraie UI animée, iris et logo soignés, carrousel calé sur 3 temps ; textes d'interface minuscules et transition floue répétée.",
+  "summary": "Promo SaaS de 20 s pour QuickEmailVerify : accroche raturée « Stop bounces before you hit send. », iris vers une démo (saisie, étapes, score), grille des six statuts, puis six cas d'usage en carrousel d'onglets (CSV, formulaire, API, agent IA, intégrations, Docker), tarifs cochés au temps et logo construit. Très propre et crédible ; la densité d'interface dépasse le temps de lecture.",
+  "prompt_vs_result": [
+    "Deux lignes : 20 s de motion design « dynamique » montrant tous les cas d'usage imaginables d'un outil de vérification d'e-mails, style SaaS moderne, inspiré des vidéos YC et des vidéos sociales de Claude.",
+    "Tout le reste : nom affiché, accroche raturée, six statuts, six cas d'usage avec barre d'onglets, palette violette, alternance sombre/clair, iris, bande diagonale, tarif « $79 once », logo construit, et probablement la grille de 3 temps par scène.",
+    "« Tous les cas d'usage » a poussé vers l'exhaustivité : 6 scènes de 1,38 s trop denses pour être lues. Il aurait fallu fixer le nombre de cas, la taille minimale du texte, la musique et son tempo."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B0920", "role": "fond sombre indigo quasi noir (accroche, statuts, tarifs, logo)"},
+      {"hex": "#3A22A8", "role": "halo radial violet derrière les titres sombres"},
+      {"hex": "#F2F0FA", "role": "fond clair lavande des scènes produit"},
+      {"hex": "#5B3CF0", "role": "violet d'action : boutons, onglet actif, icône, bande de transition"},
+      {"hex": "#A08CFF", "role": "violet clair d'accent : « send. », « Verify », chiffres clés « $0 », « 100,000 »"},
+      {"hex": "#FFFFFF", "role": "titres sur fond sombre, fenêtres claires"},
+      {"hex": "#17142E", "role": "titres sur fond clair, fenêtres sombres (API, terminal)"},
+      {"hex": "#6F6A8E", "role": "second vers des titres de cas (gris violet)"},
+      {"hex": "#E5484D", "role": "rature sur « bounces », statut invalid"},
+      {"hex": "#22C55E", "role": "statut valid, barre de progression"},
+      {"hex": "#F59E0B", "role": "statut catch_all"},
+      {"hex": "#EC4899", "role": "statut disposable"},
+      {"hex": "#3B82F6", "role": "statut role"}
+    ],
+    "type": "Grotesque display très grasse (Inter Tight 800 probable), interlettrage négatif, casse phrase ; accroche ≈13 % de hauteur par ligne, titres de cas ≈6 % en deux tons ; surtitres et données en mono (JetBrains Mono probable) ≈1,5 %.",
+    "texture": "Halo radial violet sur fond indigo et trame de caractères mono à ≈5 % d'opacité derrière l'accroche ; fond clair avec grille fine et lueur violette diffuse sous chaque fenêtre ; ombres portées très douces ; cartes de statut en verre sombre avec dégradé coloré propre à chaque statut ; flou gaussien non directionnel dans les transitions ; aucun grain.",
+    "style": "SaaS lavande-violet façon YC",
+    "coherence": "Un seul violet d'accent, une grotesque grasse + une mono, mise en page split identique pour les 6 cas et barre d'onglets persistante : le système tient de bout en bout. L'alternance sombre (promesse, statuts, prix, logo) / clair (produit) découpe le récit. Seul écart : les 6 couleurs de statut, justifiées par le contenu."
+  },
+  "rhythm": {
+    "bpm": 130.4,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo 130,4 BPM fiable (netteté 7,13) : temps = 0,46 s = 27,6 im à 60 fps, demi-temps 13,8 im. Changements de scène à 1,97 / 5,23 / 7,75 s puis toutes les ≈1,38 s (3 temps) de 9,2 à 14,7 s, fondu à 15,8 s et logo à 18,0 s. La mesure automatique compte 12 maintiens (55 % du temps) mais presque tous contiennent du micro-mouvement (saisie, compteurs, points qui circulent) : vrais temps morts = 6,18-7,62 s (1,45 s sur la grille « Six answers ») et la carte de fin 18,92-19,98 s (1,06 s, normale). Densité : un événement toutes les 0,2-0,5 s dans les scènes produit. Les 5 premières secondes (accroche, démo) vivent sur leur propre tempo (mots toutes les ≈7 im, saisie 2 im/caractère) ; à partir de 5,2 s la structure (impacts de scène, lignes de la liste, logo) se cale sur la grille.",
+    "timeline": [
+      {"t": "0:00-0:01.90", "what": "« Stop bounces before you hit send. » mot à mot, rature rouge sur « bounces », « send. » en violet clair, sur fond indigo à trame mono", "technique": "mots qui montent d'un masque + rature tracée"},
+      {"t": "0:01.90-0:02.02", "what": "un disque blanc naît sur « send. » et grandit jusqu'à couvrir l'écran, révélant la scène claire", "technique": "iris circulaire depuis le mot clé"},
+      {"t": "0:02.0-0:02.15", "what": "la carte « Will this address bounce? » arrive inclinée en perspective et se pose à plat", "technique": "bascule 3D qui se redresse"},
+      {"t": "0:02.15-0:02.9", "what": "saisie de « anna@northwind.io » avec curseur texte", "technique": "frappe simulée 2 im/caractère"},
+      {"t": "0:02.9-0:04.0", "what": "clic sur « Verify email », bouton « Checking… », frise syntax → disposable → dns → smtp → score qui se remplit", "technique": "état de bouton + stepper séquentiel"},
+      {"t": "0:04.0-0:05.15", "what": "panneau résultat « valid », score 63 → 85 /100, puces « 0.7s » et « 0 emails sent »", "technique": "compteur roulant + puces de preuve"},
+      {"t": "0:05.15-0:05.32", "what": "un panneau sombre monte du bas et pousse la carte vers le haut", "technique": "feuille qui monte avec parallaxe"},
+      {"t": "0:05.32-0:07.60", "what": "« Six answers. » + sous-titre, grille 3×2 de cartes de statut en cascade, puis maintien", "technique": "titre par masque + cascade de cartes"},
+      {"t": "0:07.60-0:07.80", "what": "une bande violette inclinée balaie l'écran de gauche à droite et laisse la scène claire", "technique": "volet diagonal coloré"},
+      {"t": "0:07.80-0:09.15", "what": "cas 1 « Clean the list before you send. » : CSV, barre empilée multicolore, compteurs, tuiles 7,214 / 1,852 / 780", "technique": "split layout + data viz produit"},
+      {"t": "0:09.15-0:10.58", "what": "cas 2 « Catch the typo at the door. » : formulaire, « dana@gmai », suggestion « Did you mean dana@gmail.com? », clic, puce valid", "technique": "transition floue + démo formulaire"},
+      {"t": "0:10.58-0:11.88", "what": "cas 3 « One POST. One clear answer. » : fenêtre sombre, lignes d'API qui arrivent une à une avec statut et score", "technique": "flux de données ligne à ligne"},
+      {"t": "0:11.88-0:13.35", "what": "cas 4 « Your agent cleans the list. » : chat d'agent, appels verify_email, réponse de l'agent", "technique": "chat d'agent IA avec appels d'outils"},
+      {"t": "0:13.35-0:14.73", "what": "cas 5 « Plugs into your stack. » : icône centrale, 8 intégrations reliées, points qui circulent sur les liens", "technique": "graphe de nœuds en étoile"},
+      {"t": "0:14.73-0:15.78", "what": "cas 6 « Keep the list in the building. » : terminal docker compose, curl health, puce « Your list never touches our servers. »", "technique": "terminal tapé"},
+      {"t": "0:15.78-0:16.05", "what": "l'écran s'assombrit en fondu vers la section prix", "technique": "fondu au sombre"},
+      {"t": "0:16.10-0:17.90", "what": "« HONEST BILLING » : « Unknowns cost $0. », « Credits never expire. », « $79 once. 100,000 credits. » une ligne par temps", "technique": "liste cochée sur le temps"},
+      {"t": "0:17.90-0:18.35", "what": "la liste s'efface en flou, un carré violet apparaît incliné, tourne et grandit, le glyphe loupe-coche se dessine", "technique": "construction de logo"},
+      {"t": "0:18.35-0:19.98", "what": "le wordmark « QuickEmailVerify » se démasque depuis l'icône, tagline et pilule URL en cascade, maintien final", "technique": "révélation du wordmark + carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille de 130,4 BPM (temps tous les 27,6 im, demi-temps 13,8 im ; ±2 im autour des temps et demi-temps ≈ 36 % des images). Un geste clé par mouvement : 12 sur 22 tombent à ±2 im d'une barre (55 % contre 36 % au hasard) ; 0 sur 6 avant 5,2 s, 12 sur 16 après (75 %). Calés : impacts des scènes de cas d'usage f553, f636, f719, f884 sur les temps (≤0,5 im, intervalle constant de 83 im = 3 temps) ; lignes de prix f968, f996, f1024 sur trois temps consécutifs ; carré du logo f1078 sur le temps 1077,6, 14 im avant le drop mesuré à 18,20 s ; départ de la bande violette f457 sur le demi-temps 456,6 et l'attaque 7,605 s ; « Six » f319 sur le demi-temps 318,5 ; première carte de statut f331 sur le temps 332,3. Non calés : mots de l'accroche (écart ≈7 im proche du quart de temps mais phase décalée de 2 à 3 im), iris f114 (+2,5 im après le temps 111,5), saisies, fondu au sombre f946 (+6 im), wordmark f1100 (−5 im). L'indice automatique ne voyait rien (meilleur test atterrissages/demi-temps p corrigé = 0,04) : c'est la régularité des 83 im qui trahit la grille. Attaque forte à 2,90 s hors grille, au moment du clic sur « Verify email » : bruitage de clic probable.",
+    "synced": ["coupes", "impacts", "apparitions", "texte", "drop"],
+    "style_match": "Électro nette à 130 BPM, pulsation franche : colle aux courbes sèches et au carrousel à 3 temps ; l'accroche typographique ignore la pulsation.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. La régularité de 83 im par scène, phase verrouillée sur les temps, suggère une timeline écrite en temps musicaux (scène = 3 temps, ligne de liste = 1 temps), probablement demandée en itération ou calculée après analyse de la piste. Les micro-animations internes (saisie, compteurs, cascade de mots) gardent leur propre horloge, d'où la synchro seulement structurelle."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Accroche mot à mot sortant d'un masque",
+      "name_en": "word-by-word mask rise",
+      "t": "0:00.00-0:00.87",
+      "frames": "f0-f52",
+      "fps": 60,
+      "mechanics": "« Stop » présent dès f0 ; chaque mot monte depuis une ligne de base masquée (le bas du mot est coupé pendant l'entrée) en 6-7 im (0,10-0,12 s), ease-out. « bounces » f3-f10, « before » f26-f32, « you » f34-f38, « hit » f39-f44, « send. » f46-f52. Décalage ≈7 im (0,11 s) entre mots. Pas de flou de mouvement. Titre centré, 2 lignes, ≈13 % de la hauteur par ligne.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Rature rouge sur le mot problème",
+      "name_en": "animated strikethrough",
+      "t": "0:00.35-0:00.47",
+      "frames": "f21-f28",
+      "fps": 60,
+      "mechanics": "Un trait rouge #E5484D (épaisseur ≈ 6 % de la hauteur du mot) se trace de gauche à droite sur « bounces » en 7 im (0,12 s), ease-out ; le mot reste lisible sous le trait. Pose la négation du problème avant la promesse, et « send. » passe en violet clair comme mot-cible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris circulaire né du mot clé",
+      "name_en": "circular iris reveal from word",
+      "t": "0:01.90-0:02.02",
+      "frames": "f114-f121",
+      "fps": 60,
+      "mechanics": "Un point blanc apparaît sur « send. » (≈78 % de la largeur, 56 % de la hauteur) et grandit en accélérant : diamètre ≈4 % de la largeur à f114, 11 % f115, 20 % f116, 33 % f117, 47 % f118, 79 % f119, plein écran f121. Courbe ease-in (expo), 7 im = 0,12 s. L'intérieur montre déjà la scène claire suivante (carte UI inclinée). Départ 2,5 im après le temps (f111,5).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f118.jpg",
+      "illus": {"from": 110, "to": 124, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Carte d'interface qui se redresse",
+      "name_en": "perspective tilt settle",
+      "t": "0:02.00-0:02.12",
+      "frames": "f119-f127",
+      "fps": 60,
+      "mechanics": "La carte « Will this address bounce? » entre inclinée en perspective (rotation Y ≈15-20°, probable) et légèrement plus grande, puis se pose à plat et à l'échelle 1 en ≈8 im (0,13 s), ease-out, sans dépassement. Carte centrée, ≈64 % de la largeur, ombre violette diffuse.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f118.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Saisie simulée au clavier",
+      "name_en": "simulated typing",
+      "t": "0:02.17-0:02.90",
+      "frames": "f130-f174",
+      "fps": 60,
+      "mechanics": "« anna@northwind.io » s'écrit à 1 caractère toutes les 2 im (30 car/s), curseur texte visible. Même procédé pour « dana@gmai » (9,3 s) et « docker compose up -d --build » (14,8 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f118.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic sur le bouton et vérification en étapes",
+      "name_en": "button state + progress stepper",
+      "t": "0:02.90-0:04.00",
+      "frames": "f174-f240",
+      "fps": 60,
+      "mechanics": "Le curseur flèche clique « Verify email » (attaque audio à 2,90 s, bruitage de clic probable) ; le bouton fonce et affiche « Checking… ». Une frise de 5 nœuds (syntax, disposable, dns, smtp, score) se remplit de gauche à droite, ≈10 im (0,17 s) par étape, le nœud actif cerclé.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Score qui roule et puces de preuve",
+      "name_en": "rolling score counter + proof chips",
+      "t": "0:04.00-0:04.60",
+      "frames": "f238-f276",
+      "fps": 60,
+      "mechanics": "Le panneau résultat se déplie (la carte gagne en hauteur, pas de zoom caméra) : puce « valid » verte, phrase d'explication, score géant 63 → 85 /100 en ≈0,45 s (ease-out probable) avec 4 mini-barres de détail. Puce sombre « 0.7s » qui entre floue en haut à droite (f240), puis « 0 emails sent » en bas à gauche (f265).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Feuille sombre qui monte et pousse la scène",
+      "name_en": "slide-up sheet push",
+      "t": "0:05.15-0:05.32",
+      "frames": "f309-f319",
+      "fps": 60,
+      "mechanics": "Un panneau sombre à bord supérieur arrondi monte du bas : bord à ≈85 % de la hauteur à f310, 60 % f313, 48 % f314, 35 % f315, 24 % f316, 16 % f317, 0 vers f319. ≈10 im (0,17 s), courbe proche du linéaire légèrement accélérée. La carte claire monte aussi mais moins vite (parallaxe). Atterrissage f317 sur le demi-temps 318,5 ; départ 5 im après le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f314.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille 3×2 des statuts en cascade",
+      "name_en": "staggered status card grid",
+      "t": "0:05.52-0:06.15",
+      "frames": "f331-f369",
+      "fps": 60,
+      "mechanics": "Titre « Six answers. » (≈7 % de la hauteur, centré haut) puis 6 cartes de verre sombre (≈27 % de largeur chacune) avec puce de statut, e-mail en mono et consigne « → Send. / → Remove. ». Chaque carte : fondu + montée ≈2 % + défloutage en ≈6 im. Départs f331, f337, f345, f349, f357, f363 : décalage moyen 6,4 im (0,11 s), proche du quart de temps (6,9 im). Chaque carte porte un dégradé coloré propre (vert, bleu, orange, rose, gris, rouge). Puis maintien 1,45 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal violet",
+      "name_en": "diagonal color band wipe",
+      "t": "0:07.62-0:07.80",
+      "frames": "f457-f468",
+      "fps": 60,
+      "mechanics": "Une bande violette inclinée (≈15° d'inclinaison, ≈10 % de largeur, dégradé #5B3CF0 → #A08CFF) traverse de gauche à droite en 11 im (0,18 s), laissant derrière elle le fond clair de la scène suivante. Position du bord : ≈3 % f458, 15 % f461, 30 % f463, 50 % f464, 70 % f465, 90 % f467 : ease-in-out à accélération centrale. Départ f457 sur le demi-temps 456,6 et sur l'attaque 7,605 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f465.jpg",
+      "illus": {"from": 456, "to": 470, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit split texte / fenêtre produit",
+      "name_en": "split layout template",
+      "t": "0:07.80-0:15.78",
+      "frames": "f468-f947",
+      "fps": 60,
+      "mechanics": "Six scènes sur le même gabarit : à gauche (marge ≈6 %, tiers gauche) surtitre mono violet en capitales (« BEFORE THE CAMPAIGN », « ON THE FORM »…) ≈1,2 %, titre deux lignes ≈6 % (ligne 1 #17142E, ligne 2 #6F6A8E), paragraphe ≈1,8 % ; à droite fenêtre produit ≈45 % de largeur, coins arrondis, barre de fenêtre à 3 points, ombre violette diffuse.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Barre d'onglets comme sommaire du récit",
+      "name_en": "tab bar as chapter index",
+      "t": "0:07.80-0:15.78",
+      "frames": "f468-f947",
+      "fps": 60,
+      "mechanics": "Pilule blanche centrée en haut (≈45 % de largeur, ≈3 % de hauteur) avec 6 onglets : Campaigns, Signup forms, Your app, AI agents, Your stack, Self-host. L'indicateur sombre glisse d'un onglet au suivant pendant chaque transition (≈6 im). Le spectateur sait où il en est et combien il en reste.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f635.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou entre cas d'usage",
+      "name_en": "blur dissolve",
+      "t": "0:10.47-0:10.67",
+      "frames": "f628-f640",
+      "fps": 60,
+      "mechanics": "La fenêtre sortante se floute, pâlit et rétrécit légèrement (≈97 %) pendant que son titre glisse vers le haut de ≈2 % en s'effaçant (f628-f633) ; la fenêtre entrante apparaît floue et semi-transparente (≈60 % à f636) puis nette à f638-f640. ≈12 im (0,2 s), flou gaussien non directionnel. Même recette à 9,15 / 11,88 / 13,35 / 14,73 s.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f635.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre deux tons révélé ligne par ligne",
+      "name_en": "staggered line reveal",
+      "t": "0:10.67-0:10.82",
+      "frames": "f640-f649",
+      "fps": 60,
+      "mechanics": "Chaque ligne du titre monte depuis un masque de ligne de base : « One POST. » f640-f644, « One clear answer. » f645-f649 ; décalage ≈5-6 im (0,09 s), ≈5 im par ligne, ease-out. Le paragraphe fond ensuite. Même patron sur les 6 cas.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f635.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barre empilée et compteurs du nettoyage de liste",
+      "name_en": "stacked bar + counters",
+      "t": "0:07.90-0:09.10",
+      "frames": "f474-f546",
+      "fps": 60,
+      "mechanics": "Fichier « webinar-leads-sept.csv » : barre verte de progression, puis barre empilée en 6 segments colorés (valid, role, catch_all, disposable, unknown, invalid) avec légende chiffrée, compteur de lignes qui roule, puis 3 tuiles de synthèse « Safe to send 7,214 », « Review 1,852 », « Remove 780 » et bouton « Download clean list ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Correction de faute dans un formulaire",
+      "name_en": "typo suggestion",
+      "t": "0:09.30-0:10.45",
+      "frames": "f558-f627",
+      "fps": 60,
+      "mechanics": "Formulaire « Create your account » : frappe « dana@gmai », bulle « Did you mean: dana@gmail.com? » sous le champ, le curseur clique, le champ se corrige et une puce verte « ✓ valid » apparaît dans le champ. Mini-récit complet en ≈1,1 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Flux d'API ligne par ligne",
+      "name_en": "streaming API rows",
+      "t": "0:10.68-0:11.75",
+      "frames": "f641-f705",
+      "fps": 60,
+      "mechanics": "Fenêtre sombre « POST https://quickemailverify.com/v1/verify » : 5 lignes (horodatage, e-mail mono, puce de statut colorée, score) apparaissent une à une toutes les ≈9-12 im (0,15-0,2 s), en fondu + léger glissement.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f713.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Chat d'agent IA avec appels d'outils",
+      "name_en": "agent chat with tool calls",
+      "t": "0:11.95-0:13.30",
+      "frames": "f717-f798",
+      "fps": 60,
+      "mechanics": "Fenêtre « agent chat · MCP » : bulle utilisateur sombre « Check these three leads before I email them. », trois lignes « verify_email … » avec indicateur d'attente qui se résolvent en puces valid / role / invalid, puis bulle de réponse de l'agent. Ancre le produit dans l'usage IA du moment.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Hub d'intégrations avec impulsions",
+      "name_en": "integration hub with traveling pulses",
+      "t": "0:13.35-0:14.70",
+      "frames": "f801-f882",
+      "fps": 60,
+      "mechanics": "L'icône violette apparaît seule au centre de la fenêtre, puis 8 étiquettes (Mailchimp, Claude Desktop, Cursor, Zapier, n8n, Make, Google Sheets, HubSpot) se placent en étoile, reliées par des traits fins ; de petits points violets voyagent le long des traits vers le centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f884.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal tapé avec sortie colorée",
+      "name_en": "terminal typing",
+      "t": "0:14.75-0:15.70",
+      "frames": "f886-f942",
+      "fps": 60,
+      "mechanics": "Fenêtre sombre : « $ docker compose up -d --build » tapé à ≈2 im/caractère, ligne « ✓ Container … Started » en vert, « $ curl localhost:8099/health » puis {\"ok\":true} ; une puce cadenas « Your list never touches our servers. » glisse en bas de fenêtre (f936-f939).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f947.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Carrousel de scènes verrouillé sur 3 temps",
+      "name_en": "beat-locked scene cadence",
+      "t": "0:09.22-0:14.74",
+      "frames": "f553-f884",
+      "fps": 60,
+      "mechanics": "Les images d'impact des fenêtres entrantes tombent à f553, f636, f719, (f801), f884 : intervalle constant de 83 im = 1,38 s = 3 temps à 130,4 BPM, chaque impact à ≤0,5 im d'un temps. La transition floue (≈12 im) démarre donc ≈7 im avant le temps pour que la fenêtre nette tombe dessus. Recette : aligner l'arrivée, pas le départ.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f713.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu vers le sombre",
+      "name_en": "dip to dark",
+      "t": "0:15.78-0:16.03",
+      "frames": "f947-f962",
+      "fps": 60,
+      "mechanics": "Toute la scène claire s'assombrit vers l'indigo en 15 im (0,25 s), linéaire, sans mouvement. Départ f946, 6 im après le temps (939,6) : hors grille. Seule transition sans idée graphique.",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f947.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Liste d'arguments cochée au temps",
+      "name_en": "on-beat checklist",
+      "t": "0:16.13-0:17.10",
+      "frames": "f968-f1030",
+      "fps": 60,
+      "mechanics": "Trois lignes (« Unknowns cost $0. », « Credits never expire. », « $79 once. 100,000 credits. ») entrent chacune depuis un masque de ligne de base en ≈6 im avec leur case cochée, départs f968, f996, f1024 : exactement 28 im = 1 temps d'écart, sur les temps 967,2 / 994,8 / 1022,4. Texte blanc ≈6 % de la hauteur, chiffres en #A08CFF.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 966, "to": 1034, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Construction du logo puis wordmark démasqué",
+      "name_en": "logo build + wordmark unmask",
+      "t": "0:17.90-0:18.70",
+      "frames": "f1074-f1122",
+      "fps": 60,
+      "mechanics": "La liste s'efface en flou (f1070-f1076). Un petit carré violet arrondi apparaît incliné ≈-30° à f1078 (sur le temps), tourne jusqu'à 0° en grandissant ≈×3 en 12 im (ease-out) ; le glyphe loupe-coche se trace comme un arc (« C » qui se ferme, f1086-f1098). L'icône glisse ensuite vers la gauche et le wordmark « QuickEmailVerify » se démasque de droite à gauche depuis derrière elle (« erify » f1102, « ailVerify » f1106, complet f1118 : 18 im). Le drop mesuré à 18,20 s (f1092) tombe pendant le tracé du glyphe. Tagline f1120, pilule URL f1128.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1076, "to": 1122, "n": 8}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fonds en deux régimes : indigo à halo, lavande à grille",
+      "name_en": "dual background system",
+      "t": "0:00-0:19.98",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Sombre : #0B0920 avec halo radial violet #3A22A8 décentré (≈40 % de largeur, en haut à gauche), trame de colonnes de caractères mono à ≈5 % d'opacité sur l'accroche. Clair : #F2F0FA avec grille fine et lueur violette diffuse sous chaque fenêtre. Fonds quasi fixes (pas de dégradé animé).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance sombre / clair comme ponctuation",
+      "name_en": "dark-light section rhythm",
+      "t": "0:00-0:19.98",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Sombre pour les affirmations (accroche, « Six answers. », prix, logo), clair pour le produit (démo, 6 cas). Chaque bascule passe par une transition différente : iris (sombre → clair), feuille qui monte (clair → sombre), volet violet (sombre → clair), fondu (clair → sombre).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintien de lecture sur la grille de statuts",
+      "name_en": "reading hold",
+      "t": "0:06.18-0:07.62",
+      "frames": "f371-f457",
+      "fps": 60,
+      "mechanics": "1,45 s (86 im) sans aucun mouvement après la cascade des 6 cartes : seul vrai temps mort de la vidéo, contraire à la règle « quelque chose bouge toutes les 0,5-1 s ». Une pulsation de puce ou un surlignage carte par carte au temps l'aurait comblé.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne décrit aucune fonctionnalité, mais la vidéo cite des détails très précis (six outils MCP, docker compose, port 8099, $79 pour 100 000 crédits, « 5 free checks a day ») : Claude avait probablement accès au dépôt ou au site du produit. C'est ce qui rend l'UI crédible."},
+    {"kind": "direction", "insight": "« YC videos and Claude social videos » se lit directement : fond lavande, fenêtres produit flottantes, surtitres mono, grotesque grasse en casse phrase, couleur d'accent unique. La référence nommée a suffi à fixer la DA."},
+    {"kind": "structure", "insight": "« Put all the use case you can imagine » a produit 6 cas en 8 s : chaque scène dure 1,38 s, trop peu pour lire les textes d'UI. Une consigne « 3 cas maximum, un message par scène » aurait gagné en lisibilité."},
+    {"kind": "build", "insight": "Scènes de 83 im verrouillées sur les temps et lignes de prix espacées d'exactement 1 temps : la timeline a été écrite en unités musicales, alors que le prompt publié n'en parle pas. Consigne probablement ajoutée en itération ; à écrire dès le départ (« 130 BPM, une scène = 3 temps »)."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur la taille minimale du texte : les libellés d'UI descendent à ≈1,5 % de la hauteur (≈11 px en 720p). Fixer un minimum (≈3 % de la hauteur) pour la diffusion mobile."},
+    {"kind": "other", "insight": "« Go all out » a été compris comme « tout montrer » (quantité de cas) plutôt que « transitions spectaculaires » : seules l'iris et le volet violet sortent de la recette floue répétée."}
+  ],
+  "steal": [
+    "Faire naître l'iris de la scène suivante sur le mot clé du titre : disque 7 im en ease-in, déclenché sur le temps.",
+    "Carrousel de cas d'usage : barre d'onglets en pilule comme sommaire, l'indicateur glisse à chaque scène, une scène = 3 temps.",
+    "Caler l'arrivée nette de la nouvelle fenêtre sur le temps, pas le début de la transition : démarrer le flou ≈7 im avant.",
+    "Liste d'arguments : une ligne cochée par temps, chiffres clés dans la couleur d'accent, entrée par masque de ligne de base.",
+    "Logo : carré qui tourne et grandit sur le temps, glyphe tracé, puis wordmark démasqué depuis derrière l'icône."
+  ],
+  "flaws": [
+    "Textes d'interface à ≈1,5 % de la hauteur, affichés 1,38 s : illisibles sur mobile.",
+    "Même fondu flou répété cinq fois entre les cas d'usage : prévisible dès la troisième.",
+    "Maintien de 1,45 s sans mouvement sur la grille « Six answers. ».",
+    "Accroche et démo (0-5 s) hors grille musicale : la synchro n'arrive qu'au milieu.",
+    "Fondu au sombre à 15,8 s sans idée graphique, 6 im après le temps."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Cas d'école d'une promo SaaS proche de la cible de l'utilisateur : l'iris né d'un mot, la feuille qui pousse, le carrousel verrouillé sur 3 temps et la construction du logo se mesurent image par image à 60 fps et se reproduisent directement dans HyperFrames."
+  }
+}

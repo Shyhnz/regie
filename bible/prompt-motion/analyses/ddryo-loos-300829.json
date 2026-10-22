@@ -1,0 +1,431 @@
+{
+  "slug": "ddryo-loos-300829",
+  "title": "Lism CSS 1.0 release video",
+  "handle": "@ddryo_loos",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique rigoureux et transitions par continuité de forme presque toutes motivées ; manquent la synchro fine à la musique, des textes de code lisibles et une durée proche de la consigne.",
+  "summary": "Vidéo de sortie de Lism CSS 1.0 : dix chapitres numérotés démontrent les vraies notions du framework (spirale de Fibonacci devenue histogramme, échelle « Aa », demi-interlignage, primitives, props, @layer en pile isométrique, composants, gabarits, agent IA). Chaque transition naît d'une forme de la scène précédente (aplat orange découpé en cartes, carré noir qui envahit puis rétrécit en bouton). Boucle parfaite, mais 55,7 s au lieu de 15.",
+  "prompt_vs_result": [
+    "Prompt en japonais : une vidéo pour annoncer Lism CSS 1.0 sur les réseaux, simple mais dynamique, 15 secondes, qui prouve le talent de motion designer du modèle.",
+    "Claude a choisi seul : visite en dix chapitres numérotés des notions réelles (jetons, typographie, interlignage, primitives, props, @layer, UI, gabarits, agent IA), une couleur par chapitre, transitions par continuité de forme, boucle logo → logo.",
+    "La durée n'a pas tenu : 55,7 s, près de quatre fois la consigne. « Simple et dynamique » a bien donné un système sobre et des transitions enchaînées ; il aurait fallu limiter les notions et fixer musique et synchro."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F2F2F2", "role": "fond constant"},
+      {"hex": "#111113", "role": "texte, aplats noirs de transition, icône, éditeur"},
+      {"hex": "#BCA2F9", "role": "violet des petits jetons Fibonacci"},
+      {"hex": "#E6D7FC", "role": "violet pâle des grands carrés"},
+      {"hex": "#E83909", "role": "rouge-orange : courbe typographique, aplat Layout Primitives"},
+      {"hex": "#82E2EB", "role": "cyan des boîtes de demi-interlignage"},
+      {"hex": "#187AE9", "role": "bleu : props, responsive, calques, bouton"},
+      {"hex": "#62D87F", "role": "vert : poignée de point de rupture, valeurs actives"},
+      {"hex": "#3061F2", "role": "début du dégradé du « 1.0 »"},
+      {"hex": "#6C34E9", "role": "fin du dégradé du « 1.0 »"}
+    ],
+    "type": "Grotesque néo (type Inter ou Geist) semi-gras : étiquettes de chapitre à capitale 3,5 % de la hauteur, intertitres plein cadre 10 %. Mono (type JetBrains Mono) pour code et classes. Casse de phrase, interlettrage serré.",
+    "texture": "Aplats nets, ombres portées douces sous cartes et composants, flou de mouvement directionnel réservé aux images rapides (cartes qui glissent, carré noir qui grossit ou rétrécit, titres en vol), flou de profondeur sur la mosaïque de gabarits, pointillés et lignes de cote fines pour les annotations ; aucun grain.",
+    "style": "Système suisse épuré, piloté par données",
+    "coherence": "Tient par le fond #F2F2F2 constant, l'étiquette de chapitre numérotée en haut à gauche, les rectangles arrondis partout et une seule couleur d'accent par chapitre ; surtout par les transitions qui recyclent une forme (carré, barres, cartes, aplat noir) d'une scène à l'autre. Se relâche dans le chapitre gabarits (captures photo hors charte, 10,9 s) et dans la séquence de l'agent IA (texte minuscule)."
+  },
+  "rhythm": {
+    "bpm": 120.6,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120,6 BPM (netteté 6,7), confirmé par segment (0-15 s : 120,7 ; 30-45 s : 120,6) ; une barre toutes les 7,5 images à 30 fps, grille si dense que le hasard place 40 % des images à ±1 im d'une barre. Synchro lâche : quatre repères audio sont posés sur des transitions (whoosh / effondrement du logo à 0,40 s ; retour de la basse après 0,2 s de silence / bandes orange à 11,73 s ; montée / rétrécissement vers l'icône à 51,03 s ; carillon / reflet du « 1.0 » à 54,0 s), mais les 41 départs de mouvement mesurés tombent au hasard (16/41 à ±1 im d'une barre, hasard 40 %) et les 11 changements de chapitre aussi (6/11 à ±2 im, hasard 67 %). Chapitres de durée libre : 5,1 / 2,2 / 3,3 / 6,4 / 2,9 / 3,7 / 3,9 / 4,8 / 10,9 / 7,1 s, puis logo 4,6 s. 4 coupes détectées (13,77 / 29,13 / 30,53 / 45,60 s) qui sont en fait des morphings très rapides, pas des coupes franches. Densité forte : un geste toutes les 0,5 à 1 s dans les chapitres 1 à 8 ; 26 maintiens ≥ 0,4 s (45 % du temps) mais presque tous de 0,4 à 1,6 s, des pauses de lecture après chaque démonstration ; un creux de 4,2 s pendant le travail de l'agent (46,1-50,2 s, seuls du texte minuscule et des coches changent) et le logo final tenu 3 s.",
+    "timeline": [
+      {"t": "0:00-0:00.4", "what": "Logo final « Lism CSS 1.0 » (la vidéo commence par sa dernière image)", "technique": "boucle"},
+      {"t": "0:00.4-0:00.8", "what": "Le mot-symbole glisse sous la ligne de base, l'icône rétrécit en carré violet de 32 px", "technique": "effondrement en graine sur un whoosh"},
+      {"t": "0:00.9-0:02.0", "what": "01 Fibonacci Spacing Tokens : sept carrés s'ajoutent en spirale, l'arc se trace", "technique": "poussées ease-out expo, 2 à 10 images chacune"},
+      {"t": "0:02.8-0:03.6", "what": "Les carrés glissent le long de l'arc et se rangent en histogramme", "technique": "morphing spirale → ligne de base, 24 images"},
+      {"t": "0:04.1-0:05.5", "what": "Jetons intermédiaires insérés (2xs à 5xl) avec étiquettes", "technique": "glissements latéraux"},
+      {"t": "0:05.6-0:07.6", "what": "02 Harmonic Typography : les barres deviennent des « Aa » croissants, courbe rouge tracée, ratios 8/11 à 8/2", "technique": "raccord de forme boîte → caractère, tracé de ligne"},
+      {"t": "0:08.1-0:11.3", "what": "03 Half-Leading : paragraphe et titres tapés, bandes cyan, pastille line-height qui s'étire en calc()", "technique": "frappe par ligne, smear de code"},
+      {"t": "0:11.4-0:12.0", "what": "Texte caviardé en barres noires, rideau de bandes orange jusqu'au plein cadre", "technique": "drop à 11,725 s après 0,2 s de silence"},
+      {"t": "0:12.3-0:14.0", "what": "« Layout Primitives » blanc sur orange, puis une grille découpe l'aplat en 8 cartes .l--columns", "technique": "intertitre plein cadre, aplat → cartes"},
+      {"t": "0:14.7-0:17.8", "what": "04 Les cartes se réagencent : columns → stack → cluster → mosaïque de 9 primitives", "technique": "réagencement avec flou directionnel"},
+      {"t": "0:17.8-0:20.7", "what": "05 Props : attributs tapés un à un, la boîte « Aa » se restyle en direct", "technique": "code et rendu synchronisés"},
+      {"t": "0:20.7-0:24.4", "what": "06 Responsive : la boîte vole dans la grille, poignée verte sur la règle, grille 3+1 → 2×2 → 1×4 → 4", "technique": "glissement continu + saut de mise en page"},
+      {"t": "0:24.4-0:28.3", "what": "07 CSS @layer : 4 boîtes fusionnent, la carte bascule en losange, 6 calques s'empilent, calque « unlayered » pointillé", "technique": "fusion puis 3D isométrique"},
+      {"t": "0:28.3-0:30.3", "what": "Le calque du dessus se redresse, noircit, envahit le cadre ; « Lism UI » sur noir", "technique": "carré noir zoom avant ease-in-out 11 images"},
+      {"t": "0:30.3-0:33.1", "what": "08 Le noir rétrécit en bouton bleu, les composants éclosent autour et s'animent", "technique": "plein cadre → élément, apparitions décalées"},
+      {"t": "0:33.1-0:36.0", "what": "Accordéon FAQ qui s'ouvre et se ferme, titre « Patterns & Templates »", "technique": "fondu flou"},
+      {"t": "0:36.0-0:39.6", "what": "09 Le titre file vers l'étiquette, mosaïque de ≈ 20 gabarits qui se net", "technique": "FLIP de titre, mise au point et recul"},
+      {"t": "0:39.6-0:44.0", "what": "Six grands aperçus de sites qui défilent dans leur cadre", "technique": "plongée floue, défilement passif"},
+      {"t": "0:44.0-0:45.7", "what": "La carte « Point » noircit et envahit le cadre ; « AI Agent Skills & MCP » ; le noir rétrécit en éditeur", "technique": "zoom avant puis rétrécissement vers l'élément"},
+      {"t": "0:45.7-0:51.0", "what": "10 Agent IA : prompt tapé, skill et 4 outils MCP cochés, code tapé, cartes de prix construites", "technique": "séquence d'interface pas à pas"},
+      {"t": "0:51.0-0:52.8", "what": "L'éditeur rétrécit en icône, glyphe « L », le mot-symbole et « 1.0 » montent depuis un masque", "technique": "plein cadre → icône ease-out, montée de la musique puis arrêt"},
+      {"t": "0:52.8-0:55.74", "what": "Logo tenu, reflet sur « 1.0 » à 54,0 s, retour à la première image", "technique": "reflet sur carillon, boucle"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille à 120,6 BPM (netteté 6,7) stable sur toute la durée. Quatre repères sonores tombent à 0-2 images d'un geste : whoosh dans les aigus dès 0,43 s quand le logo commence à s'effondrer (f12, 0,40 s) ; basse coupée de 11,49 à 11,70 s puis de retour à 11,725 s, et les bandes orange entrent à f352 (11,73 s), 0 image d'écart ; montée des aigus dès 51,03 s au départ exact du rétrécissement vers l'icône (f1531, 51,03 s), dernier coup de basse à 51,74 s quand le glyphe « L » apparaît (f1551-f1554) ; carillon à 54,03 s, reflet du « 1.0 » dès f1619 (53,97 s), l'image précède de 2 images. Hors de ces points, rien : 41 départs de mouvement mesurés (liste automatique vérifiée sur les planches), 16 à ±1 im d'une barre bleue ou bleu clair (39 %) pour un hasard de 40 % ; 17/41 à ±2 im d'un temps seul (41 %, hasard 33 %) ; changements de chapitre 6/11 à ±2 im d'une barre (55 %, hasard 67 %). Exemples hors grille : arrivée de .l--stack f452 (-3,7 im d'un temps), titre « Lism UI » f886 (-2,5 im), éditeur posé f1370 (+3,9 im). L'indice automatique reste faible (départs/temps R = 0,31, p corrigé 0,19).",
+    "synced": ["drop", "departs", "flashs"],
+    "style_match": "Électro « upbeat » à 120 BPM, propre et régulière : colle au ton tech et aux courbes expo sèches ; le drop sur l'aplat orange est le seul choc.",
+    "how_built": "Bande-son probablement construite (ou montée) après l'animation autour de quatre repères : whoosh sur l'effondrement du logo, silence de 0,2 s puis retour de la basse sur l'aplat orange, montée et arrêt sur la transition vers l'icône, carillon sur le reflet du « 1.0 ». Les chapitres sont minutés en secondes (de 2,2 à 10,9 s) sans grille de mesures, donc rien ne relie les gestes internes aux temps ; un minutage en mesures de 2 s (4 temps à 120 BPM) aurait suffi."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Logo qui s'effondre en graine",
+      "name_en": "Logo collapse into a seed",
+      "t": "0:00.40-0:00.83",
+      "frames": "f12-f25",
+      "fps": 30,
+      "mechanics": "La vidéo démarre sur le logo final. Le mot-symbole « Lism CSS » et le « 1.0 » glissent vers le bas et disparaissent sous un masque à la ligne de base (f12-f19, 7 images, la surface sombre passe de 2,8 % à 0 % du cadre), pendant que l'icône noire (≈ 95 px) rétrécit et vire au violet jusqu'à un carré de 32-40 px (f21-f25). Ce carré est le premier jeton de la spirale qui suit : le logo devient littéralement la graine de la démonstration. Whoosh dans les aigus dès 0,43 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Spirale de Fibonacci construite carré par carré",
+      "name_en": "Square-by-square Fibonacci spiral build",
+      "t": "0:00.90-0:02.00",
+      "frames": "f27-f60",
+      "fps": 30,
+      "mechanics": "Sept carrés violets (#BCA2F9 pour les petits, #E6D7FC pour les grands, étiquetés s20 à s70) s'ajoutent en tournant (gauche, bas, droite, haut, gauche, bas, droite), chacun poussé depuis son bord avec un ease-out expo et un bord d'attaque flou : le s60 gagne 218, 110, 54, 28, 16, 6 px en 6 images, le s70 276, 220, 116, 64, 36, 24, 12, 8, 2, 2 px en 10 images. Départs à f27, f29, f32, f35, f40, f44, f51 (intervalles de 2 à 7 images qui grandissent avec la taille). L'arc noir de la spirale se trace en même temps. Construction finale : 64 % de la largeur, 70 % de la hauteur, tenue 0,9 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Spirale qui se déroule en histogramme",
+      "name_en": "Spiral unrolls into a bar chart",
+      "t": "0:02.80-0:03.60",
+      "frames": "f84-f108",
+      "fps": 30,
+      "mechanics": "Les carrés se détachent, glissent le long de l'arc en tournant légèrement et se rangent du plus petit au plus grand ; l'arc lui-même s'aplatit en ligne de base sous eux (f99-f108). 24 images (0,8 s), départ doux, arrivée ease-out, sans coupe ni fondu. La même forme change de sens : de la proportion d'or à l'échelle d'espacement utilisable.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 84, "to": 108, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Insertion de jetons intermédiaires",
+      "name_en": "Interleaved token insertion",
+      "t": "0:04.13-0:04.70",
+      "frames": "f124-f141",
+      "fps": 30,
+      "mechanics": "Les barres existantes s'écartent latéralement et de nouvelles barres plus pâles s'intercalent (13 au total, de 2xs à 5xl) avec leurs étiquettes mono sous la ligne de base ; glissements de 6 à 9 images. Les étiquettes font ≈ 1 % de la hauteur : illisibles hors plein écran.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Barres devenues spécimens « Aa »",
+      "name_en": "Bars turn into type specimens",
+      "t": "0:05.60-0:06.90",
+      "frames": "f168-f207",
+      "fps": 30,
+      "mechanics": "Les barres violettes pâlissent en rectangles blancs à contour fin (f168-f180), puis chaque rectangle est remplacé de gauche à droite par un « Aa » noir de taille croissante (2xs à 5xl, f195-f207, ≈ 1 image d'écart par spécimen), le plus grand montant depuis un masque. Ratios rouges sous chacun (8/11 … 8/2). Raccord de forme : la boîte d'espacement devient la boîte du caractère, le chapitre change sans rupture.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe exponentielle tracée sur l'échelle typographique",
+      "name_en": "Exponential curve draw-on",
+      "t": "0:07.10-0:07.60",
+      "frames": "f213-f228",
+      "fps": 30,
+      "mechanics": "Une courbe rouge-orange (#E83909, ≈ 2 px) se trace de gauche à droite en ≈ 15 images à travers le haut des spécimens, avec un point sur chaque sommet : la progression harmonique devient visible d'un coup d'œil. Tracé régulier qui décélère en fin de course.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte tapé ligne par ligne avec boîtes de ligne cyan",
+      "name_en": "Per-line typewriter with line boxes",
+      "t": "0:08.20-0:09.00",
+      "frames": "f246-f270",
+      "fps": 30,
+      "mechanics": "Les « Aa » s'effacent et deux colonnes se tapent en parallèle (« The half-leading is a fixed length… » et « Headings keep the same gaps. ») : chaque ligne démarre ≈ 3 images après la précédente, ≈ 2 caractères par image. Des bandes cyan (#82E2EB) matérialisent le demi-interlignage au-dessus et au-dessous de chaque ligne, identiques pour le corps et les titres ; cotes mono « --hl 6px / 1em » avec accolades.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Pastille de code étirée d'une valeur à l'autre",
+      "name_en": "Code pill smear morph",
+      "t": "0:09.77-0:09.93",
+      "frames": "f293-f298",
+      "fps": 30,
+      "mechanics": "La pastille noire « line-height: 1.75; » s'étire horizontalement avec un flou directionnel (f293-f295) ; le nouveau texte « line-height: calc(1em + var(--hl) * 2); » apparaît flou à f296 et se net à f298 : largeur ×2 (≈ 13 % → 26 % du cadre) en 5 images. Les cotes « --hl 6px » arrivent en même temps. Départ 1-2 images après un temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f297.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Texte caviardé puis rideau de bandes orange",
+      "name_en": "Redaction bars into striped color wipe",
+      "t": "0:11.43-0:12.03",
+      "frames": "f343-f361",
+      "fps": 30,
+      "mechanics": "Chaque ligne de texte devient une barre noire arrondie de même longueur (f343-f346, 3 images), les barres s'étirent vers la gauche avec flou (f350-f351), puis des bandes orange (#E93905) descendent du haut en s'empilant et absorbent les barres (f352-f358) ; le bord inférieur adouci finit de balayer le cadre à f361 (≈ 9 images, 0,3 s). Le plein orange arrive pile sur le retour de la basse (11,725 s), après 0,2 s de silence pendant lequel les barres s'étirent.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f356.jpg",
+      "illus": {"from": 343, "to": 361, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Intertitre plein cadre sur aplat",
+      "name_en": "Full-bleed chapter title card",
+      "t": "0:12.30-0:13.00",
+      "frames": "f369-f389",
+      "fps": 30,
+      "mechanics": "Trois intertitres seulement, aux pivots : « Layout Primitives » blanc sur orange (59 % de la largeur, capitale ≈ 9,7 % de la hauteur), « Lism UI » et « AI Agent Skills & MCP » blancs sur #111113. Grotesque semi-gras, interlettrage serré, fondu d'apparition de 4-5 images, tenue 0,5-0,7 s, puis l'aplat lui-même devient le contenu suivant.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Aplat découpé par une grille en cartes",
+      "name_en": "Color field split into cards",
+      "t": "0:12.97-0:14.00",
+      "frames": "f389-f420",
+      "fps": 30,
+      "mechanics": "Des repères en croix blancs apparaissent sur l'orange et s'allongent en lignes (3 verticales, 1 horizontale, f401-f406) ; les interstices s'ouvrent (f406-f410), les 8 tuiles prennent des coins arrondis, rétrécissent et passent à 4 tons d'orange et de blanc (f411-f418, ease-out, léger flou) pour devenir les cartes du composant .l--columns ; contour pointillé et étiquette mono arrivent à f418-f420. L'aplat d'intertitre devient la matière de la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f413.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cartes qui se réagencent d'une primitive à l'autre",
+      "name_en": "Cards reflow between layout primitives",
+      "t": "0:14.70-0:17.30",
+      "frames": "f441-f518",
+      "fps": 30,
+      "mechanics": ".l--columns (grille 4×2) → .l--stack (4 rangées pleine largeur) en ≈ 12 images avec flou directionnel horizontal et décalage de 1-2 images entre rangées (f441-f455) → .l--cluster (pastilles de largeurs variées qui passent à la ligne, f470-f483) → mosaïque des 9 primitives étiquetées (.l--center, .l--frame, .l--flow, .l--withSide, .l--flex, .l--grid, .l--autoColumns, .l--switchColumns, .l--tileGrid) en apparitions décalées. Les mêmes objets changent de mise en page : la notion se comprend sans phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f448.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Code et rendu synchronisés, prop après prop",
+      "name_en": "Live code-to-render props demo",
+      "t": "0:18.30-0:20.70",
+      "frames": "f549-f620",
+      "fps": 30,
+      "mechanics": "Sur « <Lism> », les attributs s'ajoutent un à un, surlignés en cyan, toutes les ≈ 8 images : p=40 fait apparaître une zone de padding verte hachurée (comme un inspecteur), bdrs=40 arrondit, bxsh=50 ajoute l'ombre, fz=2xl grossit le « Aa », bgc=brand remplit la boîte de bleu (#187AE9) par un disque qui s'élargit depuis le centre, c=base passe le texte en blanc. La ligne « class= » se met à jour en fondu flou. Cause et effet visibles à chaque pas, mais code à ≈ 1,5 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Poignée de point de rupture et grille qui saute",
+      "name_en": "Breakpoint scrubber with snapping grid",
+      "t": "0:20.77-0:24.40",
+      "frames": "f623-f732",
+      "fps": 30,
+      "mechanics": "La boîte « Aa » vole avec un fort flou jusqu'à la première case (f623-f630). Une poignée verte (#62D87F) glisse en continu sur une règle (base, sm 480, md 800, lg 1120), le conteneur pointillé suit sa largeur et les cases s'étirent avec flou ; au passage d'un seuil la grille saute en une seule image (3+1 → 2×2 à f654, 2×2 → 1×4 à f662) et la valeur active du code se surligne en vert au même instant. Glissement continu + saut discret : le comportement CSS réel.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fusion des boîtes en une carte qui bascule en isométrique",
+      "name_en": "Boxes merge, card tilts into isometric",
+      "t": "0:24.40-0:26.00",
+      "frames": "f732-f780",
+      "fps": 30,
+      "mechanics": "Code et règle s'effacent (f734-f739), les 4 boîtes bleues glissent l'une dans l'autre avec flou horizontal et fusionnent en une seule carte (f741-f750, 9 images), tenue 10 images, puis la carte pivote (≈ 8° à f765) et se couche en losange isométrique qui devient le calque de base de la pile @layer (f780).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f746.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Pile isométrique de calques avec étiquettes",
+      "name_en": "Isometric layer stack with callouts",
+      "t": "0:25.60-0:28.50",
+      "frames": "f768-f855",
+      "fps": 30,
+      "mechanics": "Six losanges bleus translucides (#276EBF à #5DA1F8, coins arrondis, lueur douce) s'empilent de bas en haut, chacun avec une étiquette mono reliée par un trait à droite (@layer lism-base … lism-utility) ; puis un calque fantôme à contour pointillé rouge (#D56753) se pose au-dessus : « Property Classes (unlayered) ». La priorité des couches se lit dans l'empilement. La pile se tasse ensuite (f855).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carré noir qui envahit le cadre",
+      "name_en": "Black square zoom-through",
+      "t": "0:28.73-0:29.40",
+      "frames": "f862-f882",
+      "fps": 30,
+      "mechanics": "Le calque du dessus se redresse face caméra en virant du bleu marine au noir #111113 (f862-f870), puis grandit jusqu'à remplir l'écran : largeur 558, 674, 944, 1424, 1640, 1752, 1820, 1864, 1892, 1908, 1916, 1920 px (f871-f882), soit 3 images d'accélération puis 8 de décélération, ease-in-out type expo sur 11 images (0,37 s), flou de mouvement sur les 3 images rapides. Le noir devient le fond de l'intertitre « Lism UI ».",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f874.jpg",
+      "illus": {"from": 864, "to": 882, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plein cadre noir qui rétrécit en élément suivant",
+      "name_en": "Full-frame shrink into the next element",
+      "t": "0:30.27-0:30.63",
+      "frames": "f908-f919",
+      "fps": 30,
+      "mechanics": "Inverse du précédent, utilisé trois fois. Vers le bouton : largeur 1916, 1908, 1892, 1864, 1820, 1744, 1620, 1332 px (f908-f915, ease-in qui accélère, liseré blanc puis flou), puis à f916 l'aplat devient le bouton bleu « Button » qui se pose en 3 images. Vers l'éditeur de code (f1360-f1372, 12 images, ease-in-out). Vers l'icône de l'app (f1539-f1548 : 916 → 304 px par pas de 120, 136, 116, 86, 58, 40, 28, 18, 10 px, ease-out). L'intertitre se transforme en objet de la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f916.jpg ; microM-011-cut-f1368.jpg ; microM-012-move-f1541.jpg",
+      "illus": {"from": 906, "to": 920, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Composants qui éclosent autour du bouton",
+      "name_en": "Component gallery bloom",
+      "t": "0:30.63-0:33.10",
+      "frames": "f919-f993",
+      "fps": 30,
+      "mechanics": "Autour du bouton, les composants apparaissent en fondu + glissement court, décalés de 1 à 3 images (Callout et Badges f920, Alert f921-f924, Tooltip ≈ f926, Tabs f929-f931, Avatars f930-f933), puis vivent : onglet « Keys » actif avec texte qui change, info-bulle, modale, Details ouvert, avatars superposés. Grille de 9 démos lisibles (texte ≈ 1,5-2 % de la hauteur).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f916.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui vole vers l'étiquette de chapitre",
+      "name_en": "Title-to-label FLIP",
+      "t": "0:35.97-0:36.17",
+      "frames": "f1079-f1085",
+      "fps": 30,
+      "mechanics": "Le grand titre centré (« Patterns & Templates », puis « AI Agent Skills & MCP » à f1361-f1372) rétrécit et file vers sa place d'étiquette en haut à gauche avec un fort flou de mouvement, en ≈ 6 images ; le même mot sert d'intertitre puis de repère de chapitre, sans fondu.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1091.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul flou sur une mosaïque de gabarits",
+      "name_en": "Rack-focus pull-back on a template mosaic",
+      "t": "0:36.00-0:39.63",
+      "frames": "f1080-f1189",
+      "fps": 30,
+      "mechanics": "La mosaïque de ≈ 20 gabarits (5 colonnes) apparaît floue et se net en ≈ 15 images (f1083-f1097) pendant que l'ensemble remonte d'environ 290 px en 15 images : effet de mise au point et de recul de caméra. À f1177-f1189, voile blanc flou puis plongée vers 6 grands aperçus (fondu flou + grossissement, 12 images). Efficace mais générique.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f1091.jpg ; microM-009-move-f1177.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Aperçus de sites qui défilent",
+      "name_en": "Auto-scrolling template previews",
+      "t": "0:39.60-0:44.00",
+      "frames": "f1188-f1320",
+      "fps": 30,
+      "mechanics": "Six aperçus pleine page (photo, éditorial, blog) sur deux rangées défilent verticalement à l'intérieur de leur cadre comme de vrais sites ; caméra presque fixe (dérive < 25 px/s). 4,4 s de contenu photo qui sort de la charte (couleurs des photos, textes illisibles) : le passage le plus faible, le rythme retombe.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Agent IA qui construit une section",
+      "name_en": "AI agent build sequence",
+      "t": "0:45.70-0:51.00",
+      "frames": "f1371-f1530",
+      "fps": 30,
+      "mechanics": "Trois panneaux : chat « AI agent » à gauche, éditeur sombre en haut à droite, aperçu en bas. Le prompt se tape (≈ 46-47,5 s), le bouton d'envoi passe au bleu, la skill « lism-css-guide » puis 4 outils MCP (get_component, get_props_system, get_tokens, search_docs) passent de la roue de chargement à la coche verte toutes les ≈ 0,3-0,5 s, « EDIT src/components/Pricing.astro », le code se tape avec coloration et l'aperçu construit les 3 cartes de prix (Free, $19.80, $99.80). Récit complet, mais texte ≈ 1 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg ; overview-09.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo reconstruit et boucle parfaite",
+      "name_en": "Logo rebuild and seamless loop",
+      "t": "0:51.50-0:55.74",
+      "frames": "f1545-f1672",
+      "fps": 30,
+      "mechanics": "L'icône noire (300 px, 28 % de la hauteur) reçoit son glyphe « L » blanc (f1551-f1557), glisse vers la gauche pendant que « Lism CSS » et « 1.0 » montent depuis un masque à la ligne de base avec flou (f1563-f1578), l'ensemble se réduit à sa taille finale (60 % de la largeur, f1578-f1587), l'URL mono « lism-css.com » apparaît (f1584-f1590). Un reflet blanc balaie le « 1.0 » en dégradé #3061F2 → #6C34E9 en 6 images (f1619-f1624). La dernière image est la première : la vidéo boucle sans couture.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop sur l'aplat orange après un silence",
+      "name_en": "Pre-drop gap into color takeover",
+      "t": "0:11.49-0:12.03",
+      "frames": "f345-f361",
+      "fps": 30,
+      "mechanics": "La basse s'arrête 0,2 s (11,49-11,70 s) pendant que les barres caviardées s'étirent, puis revient à 11,725 s : les bandes orange entrent à f352 (11,73 s), 0 image d'écart, et le cadre est plein orange 9 images plus tard. Le mix passe de -21 dB (8-12 s) à -16 dB (12-16 s) : c'est le seul vrai drop, et il tombe sur le changement de couleur le plus fort de la vidéo. Respiration visuelle pendant le silence, choc chromatique sur le retour.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f356.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Effets sonores posés sur les transitions clés",
+      "name_en": "Cue-point sound design",
+      "t": "0:00.43-0:54.20",
+      "frames": "f12-f1626",
+      "fps": 30,
+      "mechanics": "Whoosh dans les aigus (0,43-0,85 s) sur l'effondrement du logo (f12-f25) ; montée des aigus dès 51,03 s au départ exact du rétrécissement vers l'icône (f1531), dernier coup de basse à 51,74 s quand le glyphe « L » apparaît (f1551-f1554), puis la musique s'éteint sous la reconstruction du logo ; carillon à 54,03 s, 2 images après le début du reflet sur « 1.0 » (f1619). Quatre repères au total avec le drop, tous à 0-2 images ; le reste de la musique tourne en boucle sans lien avec les gestes.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquette de chapitre numérotée",
+      "name_en": "Numbered chapter label",
+      "t": "0:00.90-0:51.10",
+      "frames": "f27-f1533",
+      "fps": 30,
+      "mechanics": "En haut à gauche : numéro mono gris minuscule (« 01 ») à x ≈ 3,8 %, puis titre grotesque semi-gras noir à x ≈ 6,5 %, capitale 3,5 % de la hauteur, à y ≈ 7-11 %. Il change en fondu à chaque chapitre ou reçoit le grand titre qui s'y pose (FLIP). Seul élément fixe : il porte la structure de la visite.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur d'accent par chapitre",
+      "name_en": "Chapter color coding",
+      "t": "0:00.90-0:51.10",
+      "frames": "f27-f1533",
+      "fps": 30,
+      "mechanics": "Fond #F2F2F2 et texte #111113 constants ; l'accent change avec le sujet : violets #BCA2F9-#E6D7FC (espacement), rouge-orange #E83909 (courbe typographique, primitives), cyan #82E2EB (interlignage), bleu #187AE9 (props, responsive, calques, UI) avec vert #62D87F pour les valeurs actives, noir pour les pivots, dégradé bleu-violet pour la version. Chaque chapitre se reconnaît à sa couleur, l'ensemble reste sobre.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg ; overview-05.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel sur les gestes rapides",
+      "name_en": "Directional motion blur",
+      "t": "0:14.73-0:15.10",
+      "frames": "f442-f453",
+      "fps": 30,
+      "mechanics": "Flou appliqué uniquement aux images les plus rapides : cartes qui glissent (.l--stack f444-f450, traînée ≈ 5-8 % de la largeur), boîte « Aa » qui vole (f626-f630), bords du carré noir qui grossit (f872-f874) ou rétrécit (f913-f917), titres en vol (f1080-f1084). Aux arrêts tout redevient net : le flou vend la vitesse sans salir la lecture.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f448.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Visite en dix chapitres numérotés",
+      "name_en": "Ten-chapter feature tour",
+      "t": "0:00.00-0:55.74",
+      "frames": "f0-f1672",
+      "fps": 30,
+      "mechanics": "Dix notions réelles du framework, de la plus fondamentale (jetons d'espacement) à la plus récente (agent IA et serveur MCP), chacune démontrée par une animation de données plutôt que par une phrase : 5,1 / 2,2 / 3,3 / 6,4 / 2,9 / 3,7 / 3,9 / 4,8 / 10,9 / 7,1 s, puis logo 4,6 s. Ouverture et fin sur le même logo. Trop long pour un post demandé à 15 s ; les chapitres 9 et 10 s'étirent.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Montre quel motion designer tu es » + « simple mais dynamique » a poussé vers un système sobre (fond gris, une couleur par chapitre) et des transitions spectaculaires mais motivées : la consigne de style a été bien comprise."},
+    {"kind": "structure", "insight": "« 15 secondes » n'a pas été tenu : 55,7 s et dix chapitres. Le modèle a privilégié l'exhaustivité des fonctionnalités (ou l'utilisateur a rallongé ensuite) ; pour 15 s il fallait imposer 3 ou 4 notions maximum."},
+    {"kind": "inputs", "insight": "Le contenu vient visiblement de la documentation réelle de Lism CSS (jetons s10-s70, ratios 8/11 à 8/2, classes .l--*, @layer lism-*, props p / bdrs / bxsh, outils MCP get_component…) : la vidéo démontre au lieu d'affirmer, ce qui la rend crédible pour des développeurs."},
+    {"kind": "build", "insight": "Transitions construites comme des morphings d'éléments persistants (même objet qui change de taille, de couleur, de rotation), typique d'une timeline GSAP unique : c'est ce qui permet la continuité de forme d'une scène à l'autre."},
+    {"kind": "other", "insight": "Aucune consigne audio : la bande-son a quatre repères calés à l'image près (whoosh, drop, montée, carillon) mais les chapitres ne suivent pas la mesure ; écrire « chaque chapitre dure un nombre entier de mesures à 120 BPM » aurait verrouillé le reste."},
+    {"kind": "qa", "insight": "Pas d'exigence de lisibilité mobile alors que la cible est un réseau social : code, étiquettes et chat de l'agent tombent à 1-1,5 % de la hauteur, illisibles sur un téléphone."}
+  ],
+  "steal": [
+    "Faire naître chaque scène d'une forme de la précédente : carré noir qui envahit le cadre, devient intertitre, puis rétrécit en bouton ou en icône (expo, 8-12 images).",
+    "Démontrer une notion par la même forme qui change de sens : spirale de Fibonacci déroulée en histogramme, barres devenues spécimens « Aa ».",
+    "Caviarder le texte en barres noires, les étirer pendant un silence de 0,2 s, puis balayer en bandes de couleur pile sur le retour de la basse.",
+    "Découper un aplat plein cadre par une grille de lignes blanches : les tuiles rétrécissent et deviennent les cartes de la scène suivante.",
+    "Boucler : première image = dernière ; le logo s'effondre en un point qui lance l'animation, puis se reconstruit à la fin."
+  ],
+  "flaws": [
+    "55,7 s pour une consigne de 15 s : dix chapitres au lieu de trois ou quatre, inutilisable tel quel en post court.",
+    "Code, étiquettes et chat de l'agent à 1-1,5 % de la hauteur : illisibles sur téléphone.",
+    "Chapitre gabarits de 10,9 s : captures photo hors charte et défilement passif, le rythme retombe.",
+    "Seuls quatre repères sonores calés ; gestes internes et changements de chapitre ignorent la mesure à 120 BPM.",
+    "Logo final tenu 3 s presque immobile après une vidéo très dense."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, image par image (30 fps natifs, pas de 60 fps disponible) : la chaîne de transitions par continuité de forme (logo → graine → spirale → histogramme → « Aa » ; texte → barres → aplat → cartes ; carré noir → plein cadre → bouton, éditeur, icône) est exactement la grammaire enchaînée que l'utilisateur veut reproduire, avec des courbes expo mesurables."
+  }
+}

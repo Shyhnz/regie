@@ -1,0 +1,316 @@
+{
+  "slug": "0xnfrith-5be616",
+  "title": "Celld job ownership explainer",
+  "handle": "@0xnfrith",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Explainer technique limpide en néo-brutalisme cohérent, chaque animation montre un changement d'état ; mais un titre coupé par le bord pendant 9 s, une coupe sèche isolée et des autocollants décoratifs répétés.",
+  "summary": "Explication muette de 53 s : pourquoi « celld » (un arbitre de tâches planifiées sur plusieurs machines) mérite sa place. Problème (une machine meurt, le déclencheur s'arrête), fausse solution (deux machines, tout part deux fois), solution (un seau partagé qui désigne un seul propriétaire, bail de 10 s), cas limites, comparatif. Force : récit pas à pas, animations qui portent le sens. Faiblesse : aucun son, mise en page serrée à gauche.",
+  "prompt_vs_result": [
+    "Une phrase : faire une animation qui explique pourquoi celld « mérite sa place ». Aucune contrainte de durée, de style, de format ni de son.",
+    "Claude a tout construit : récit problème → fausse solution → solution → cas limites → comparatif, style néo-brutaliste, code couleur par machine (A rose, B cyan, C vert), métaphores (seau partagé, arbitre, bail), chiffres techniques précis.",
+    "Le prompt s'appuie sur le contexte du dépôt (bail de 10 s, renouvellement toutes les ≈ 3 s, S3/R2) : Claude a lu le code. Il aurait fallu demander une bande-son, des marges de sécurité et une durée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FBFBF2", "role": "fond crème à grille de points"},
+      {"hex": "#111111", "role": "contours, ombres portées, texte"},
+      {"hex": "#F07FD8", "role": "machine A, option A"},
+      {"hex": "#BFF3F5", "role": "machine B, en-tête du canal"},
+      {"hex": "#A0F08A", "role": "machine C, fond de la scène « deux machines », validation"},
+      {"hex": "#F2CF4A", "role": "seau partagé, surlignages, option B"},
+      {"hex": "#9A9A9A", "role": "état mort hachuré"},
+      {"hex": "#9E8A9E", "role": "machine arrêtée d'elle-même"}
+    ],
+    "type": "Grotesque très grasse en capitales (Archivo Black ou Inter Black probable) : titres ≈ 5 % de la hauteur, horloges « 8:00 » ≈ 12-14 % ; étiquettes en pilules capitales ≈ 1 % ; légendes en sans-serif ≈ 1,5 %.",
+    "texture": "Contours noirs épais (≈ 3 px à 1080p), ombres portées dures décalées en bas à droite (≈ 6 px, sans flou), aplats pastel, hachures diagonales pour les états morts, rubans de ruban adhésif hachurés, aucun dégradé, aucun flou de mouvement.",
+    "style": "néo-brutalisme pastel type autocollants",
+    "coherence": "Le code couleur par machine (A rose, B cyan, C vert) et le seau jaune restent fixes du début à la fin, et chaque état a un signe stable (hachures grises = mort, pilule noire = verdict, coche verte = envoyé). Ce qui casse : les autocollants décoratifs (soleil, étoile, éclat) qui changent à chaque scène sans rôle, et la mise en page collée au bord gauche."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Vidéo muette (bande-son silencieuse à 100 %, Whisper n'a produit que « you »). 30 fps, 53,06 s, 8 scènes de 4,5 à 9 s. Rythme interne : une information nouvelle toutes les 0,5 à 1 s pendant la démonstration, puis une pause de lecture de 1,2 à 1,7 s en fin d'idée (3,5-5,0 s ; 10,8-12,0 s ; 16,4-18,0 s ; 23,8-25,0 s ; 38,4-40,0 s ; 47,0-48,0 s). Les maintiens « statiques » détectés de 31,3 à 35,7 s ne sont pas morts : la jauge de bail de A se vide (10 s → 0 s), mouvement lent mais lisible. Mots des titres décalés de ≈ 3-4 im (0,1-0,13 s). Transitions de 6 à 9 im (0,2-0,3 s). Fin : ≈ 1,3 s de maintien sur la phrase finale.",
+    "timeline": [
+      {"t": "0:00-0:01.0", "what": "Carte « MACHINE A » rose qui surgit en s'agrandissant, titre « TODAY: ONE MACHINE RUNS THE TIMER » mot à mot, panneau « CHANNEL » qui glisse depuis la droite, soleil jaune", "technique": "apparition élastique inclinée, titre mot à mot"},
+      {"t": "0:01.0-0:02.6", "what": "L'horloge passe de 7:59 à 8:00, un fil courbe se trace et emmène un ticket « 8:00 TRIGGER » dans le canal, coche verte", "technique": "ticket qui voyage le long d'un fil"},
+      {"t": "0:02.6-0:05.0", "what": "« THE MACHINE DIES… » : la carte devient grise hachurée et penchée, tampon « DOWN », le fil pâlit, l'horloge du canal saute à 13:00 puis 20:00, case pointillée « NO MESSAGE »", "technique": "état mort par hachures, absence dessinée"},
+      {"t": "0:05.0-0:06.1", "what": "Légende « …and the trigger just stops. Nobody gets told. » surlignée jaune", "technique": "légende de chute"},
+      {"t": "0:06.1-0:06.4", "what": "Le fond vert pousse la scène vers la gauche", "technique": "transition par poussée"},
+      {"t": "0:06.4-0:09.0", "what": "« SO RUN TWO MACHINES? » : machines A et B, deux tickets 8:00 partent en parallèle sur deux fils en S", "technique": "tickets jumeaux"},
+      {"t": "0:09.0-0:12.1", "what": "Les deux tickets s'empilent dans le canal, ellipse tracée à la main autour, pilule « SENT TWICE » avec traits d'éclat, titre « NOW EVERY TRIGGER FIRES TWICE. »", "technique": "ellipse dessinée + éclat de bande dessinée"},
+      {"t": "0:12.1-0:18.1", "what": "Fondu vers le crème, seau jaune qui surgit, « CELLD: MANY MACHINES, ONE REFEREE », machines A, B, C reliées au seau, fiche « JOB OWNER: ___ », légende « The bucket is shared storage. It decides who runs the job. »", "technique": "métaphore objet, apparition élastique"},
+      {"t": "0:18.1-0:25.2", "what": "« STEP 1 CLAIM THE JOB », règle « WRITE YOUR NAME ONLY IF THE LINE IS BLANK », trois jetons A, B, C foncent vers la ligne, A arrive premier, B et C rebondissent avec « × REJECTED », « ONE WINNER. NO VOTE, NO MEETING. »", "technique": "course de jetons et rejet"},
+      {"t": "0:25.2-0:30.97", "what": "« STEP 2 CHECK IN, OR LOSE IT » : trois jauges de bail de 10 s qui se vident et se rechargent à chaque ping, A envoie 8:00 une seule fois, pilule « SENT ONCE »", "technique": "jauges de bail et pings le long des fils"},
+      {"t": "0:30.97-0:40.1", "what": "Coupe sèche vers « THE OWNER DIES » (titre coupé par le bord gauche) : A passe « DOWN », sa jauge descend 10 → 6 → 2 → 1 → 0 s, tampon « EXPIRED », le nom A s'efface et B est retapé avec curseur, horloges 19:59 → 20:00, « STILL EXACTLY ONCE »", "technique": "compte à rebours, tampon, ressaisie au curseur"},
+      {"t": "0:40.1-0:46.1", "what": "« WHAT IF A WAKES BACK UP? » : les hachures de A se retirent (« AWAKE »), flèche pointillée « CHECK LEASE », « × NOT YOURS », A devient mauve « OFF », bandeau « STOPPED ITSELF », « NO LEASE, NO SENDING. IT CAN'T DOUBLE-FIRE. »", "technique": "cas limite, retrait de hachures"},
+      {"t": "0:46.1-0:46.4", "what": "Poussée vers la gauche", "technique": "transition par poussée"},
+      {"t": "0:46.4-0:49.5", "what": "Comparatif « OPTION A ONE VM + TIMER » / « OPTION B CELLD ON 2-3 VMS », coches et croix une à une, autocollants « SIMPLE » et « RELIABLE »", "technique": "tableau de compromis"},
+      {"t": "0:49.5-0:53.06", "what": "« SEVERAL CHEAP MACHINES. ONE TIMER. NEVER TWICE. » mot à mot, « NEVER TWICE. » dans un bloc jaune, ligne « COSTS: A storage bucket (S3/R2) + auto-restart… »", "technique": "phrase-signature avec surlignage"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Bande-son silencieuse à 100 % (aucune attaque audio, netteté de pulsation 0,0) ; la transcription « you » est une hallucination de Whisper sur du silence. Aucun comptage possible.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le rythme visuel régulier (mots toutes les 0,1 s, étapes toutes les 0,5-1 s) se prêterait à une piste lo-fi ou pop vers 100-110 BPM.",
+    "how_built": "Le prompt ne demandait pas de son et Claude n'en a pas produit : la piste audio existe mais est vide."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Problème → fausse solution → solution → cas limites → compromis",
+      "name_en": "problem / naive fix / solution / edge cases / trade-off",
+      "t": "0:00-0:53",
+      "mechanics": "8 scènes, chacune une seule idée avec un titre-question ou titre-affirmation : une machine (et sa panne), deux machines (doublons), celld = arbitre, étape 1 réclamer, étape 2 se signaler, le propriétaire meurt, A se réveille, comparatif, phrase-signature. Chaque scène se termine par une légende de chute (« Nobody gets told. », « ONE WINNER. NO VOTE, NO MEETING. », « IT CAN'T DOUBLE-FIRE. »). Le spectateur voit l'échec avant la solution.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre mot à mot qui monte depuis le gris",
+      "name_en": "word-by-word headline build",
+      "t": "0:00.13-0:00.80",
+      "frames": "f4-f24",
+      "fps": 30,
+      "mechanics": "Chaque mot apparaît gris clair et ≈ 1 % plus bas, puis passe au noir en montant en ≈ 3 im (0,1 s), ease-out. Décalage entre mots ≈ 3-4 im : TODAY: f4, ONE f8, MACHINE f11, RUNS f15, THE f18, TIMER f22. Retour à la ligne naturel. Même geste à chaque titre de scène ; sur la phrase finale, le premier mot sort d'un flou (f1500).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f12.jpg",
+      "illus": {"from": 3, "to": 25, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Carte qui surgit inclinée",
+      "name_en": "tilted pop-in card",
+      "t": "0:00.13-0:00.35",
+      "frames": "f4-f10",
+      "fps": 30,
+      "mechanics": "La carte « MACHINE A » passe de ≈ 30 % à 100 % de sa taille en ≈ 6 im (0,2 s) avec une inclinaison de ≈ -3° qu'elle garde ensuite ; ease-out avec léger dépassement probable. Toutes les cartes du film gardent une légère rotation (-3° à +3°) qui donne l'effet autocollant posé à la main.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f12.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ticket qui voyage le long d'un fil courbe",
+      "name_en": "token travelling along a bezier wire",
+      "t": "0:07.67-0:08.50",
+      "frames": "f230-f255",
+      "fps": 30,
+      "mechanics": "Les tickets jaunes « 8:00 TRIGGER » sortent des cartes machine vers la droite (f230-f240), puis suivent des fils en S jusqu'au canal en ≈ 13 im (0,43 s), ease-in-out ; le fil se trace derrière le ticket. Les deux tickets partent avec ≈ 1-2 im d'écart et s'empilent. Même mécanique à 1,5-2,5 s pour un seul ticket : la donnée qui circule est rendue visible.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f242.jpg",
+      "illus": {"from": 230, "to": 256, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "État mort par hachures grises et tampon",
+      "name_en": "hatched dead state with stamp",
+      "t": "0:02.80-0:03.50",
+      "frames": "f84-f105",
+      "fps": 30,
+      "mechanics": "La carte rose devient grise, se couvre de hachures diagonales et s'incline davantage ; l'horloge est remplacée par une pilule noire « DOWN » ; la pastille passe de « RUNNING » à « STOPPED » ; le fil vers le canal pâlit en gris clair. Un seul signe visuel réutilisé ensuite pour toute machine morte.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Absence dessinée : case pointillée « NO MESSAGE »",
+      "name_en": "drawn absence placeholder",
+      "t": "0:04.00-0:05.00",
+      "mechanics": "L'horloge du canal saute 8:00 → 13:00 → 20:00 (saut de temps), une ligne « 20:00 » apparaît avec une case vide qui devient pointillée « NO MESSAGE ». Le message manquant est montré par sa place vide plutôt que par un texte.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée latérale avec changement de fond",
+      "name_en": "push transition",
+      "t": "0:06.10-0:06.40",
+      "frames": "f183-f192",
+      "fps": 30,
+      "mechanics": "Le nouveau fond vert #A0F08A entre par la droite en poussant toute l'ancienne scène vers la gauche : ≈ 3 %, 10 %, 20 %, 37 %, 55 %, 75 %, 88 %, 95 %, 100 % du cadre de f183 à f191, soit 9 im (0,3 s) en ease-in-out. Les cartes de la nouvelle scène arrivent déjà inclinées, le titre se construit mot à mot pendant la poussée. Même geste à 46,1 s (f1383-f1391) sur fond crème.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f186.jpg",
+      "illus": {"from": 182, "to": 193, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ellipse tracée à la main + pilule à éclats",
+      "name_en": "hand-drawn circle callout with burst",
+      "t": "0:09.40-0:10.10",
+      "frames": "f282-f303",
+      "fps": 30,
+      "mechanics": "Une ellipse noire irrégulière (double trait, effet feutre) se dessine autour des deux tickets en double ; puis une pilule jaune inclinée « SENT TWICE » apparaît sur le fil avec 8 petits traits rayonnants façon bande dessinée. L'emphase est posée sur la preuve du problème.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au crème et objet qui surgit",
+      "name_en": "dissolve with scale pop",
+      "t": "0:12.13-0:12.37",
+      "frames": "f364-f371",
+      "fps": 30,
+      "mechanics": "La scène verte pâlit vers le crème en ≈ 5 im (f364-f369) pendant que le seau jaune grandit de ≈ 40 % à 100 % au centre en ≈ 4 im (f368-f371). Le titre « CELLD: MANY MACHINES, ONE » se construit, puis « REFEREE » arrive dans un bloc jaune qui apparaît en fondu (f377-f381).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f366.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné avec léger zoom (zoom-through)",
+      "name_en": "zoom dissolve",
+      "t": "0:18.10-0:18.30",
+      "frames": "f543-f549",
+      "fps": 30,
+      "mechanics": "L'ancienne scène grandit d'environ 5-10 % en s'effaçant pendant que la nouvelle apparaît en surimpression : ≈ 6 im (0,2 s), doubles contours visibles sur 3 images. Utilisé 3 fois (18,1 s ; 25,2 s f753-f759 ; 40,1 s f1203-f1209) entre deux étapes du même système, ce qui donne une impression d'avancer d'un cran dans le même schéma.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f546.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Course de jetons : un gagnant, deux rejetés",
+      "name_en": "token race with rejection",
+      "t": "0:19.60-0:21.60",
+      "frames": "f588-f648",
+      "fps": 30,
+      "mechanics": "Trois petits jetons carrés A, B, C sortent de leurs cartes et filent le long des fils vers la ligne « JOB OWNER » à des vitesses différentes. A entre dans la case en ≈ 1 s (f600-f632) avec un petit rebond d'échelle ; B et C arrivent ≈ 0,2 s plus tard sur le bord droit de la fiche, sont repoussés et restent penchés, et des pilules noires « × REJECTED » surgissent sous chacun (f642-f646, ≈ 4 im). Le principe d'exclusion mutuelle devient une course visible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 596, "to": 648, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Jauges de bail qui se vident et se rechargent",
+      "name_en": "draining lease bars with heartbeat pings",
+      "t": "0:25.50-0:30.90",
+      "mechanics": "Trois barres horizontales (rose, cyan, vert) avec pilule « 10s » : la partie restante se vide vers la droite en laissant des hachures, puis un petit point part de la carte machine le long du fil (ping) et la barre se remplit d'un coup. Les pings sont décalés entre machines. Légende « Each check-in (a LEASE) is good for 10 seconds. Machines renew every ~3. ».",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compte à rebours puis tampon « EXPIRED »",
+      "name_en": "countdown to expired stamp",
+      "t": "0:32.00-0:34.70",
+      "frames": "f960-f1040",
+      "fps": 30,
+      "mechanics": "A est « DOWN », sa jauge descend sans ping : 10 s → 6 s → 2 s → 1 s → 0 s en ≈ 2,5 s (le chiffre suit la barre). À 0, une pilule jaune « EXPIRED » surgit sur la barre en ≈ 3-4 im (f1036-f1040), passant de 0 à 100 % d'opacité et d'échelle, et la lettre A pâlit en rose clair.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom effacé puis retapé avec curseur",
+      "name_en": "erase and retype with caret",
+      "t": "0:35.40-0:36.60",
+      "frames": "f1062-f1098",
+      "fps": 30,
+      "mechanics": "Le jeton B sort de sa carte et monte vers la fiche (f1062-f1072) ; la case « JOB OWNER: A » se vide, un curseur texte « | » clignote (f1072), puis « B » s'écrit avec le curseur qui continue de clignoter jusqu'à f1098. L'écriture dans le registre partagé est montrée comme une vraie saisie.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1060, "to": 1100, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Réveil : les hachures se retirent comme un volet",
+      "name_en": "hatch-pattern retract reveal",
+      "t": "0:40.27-0:40.57",
+      "frames": "f1208-f1217",
+      "fps": 30,
+      "mechanics": "La carte de A arrive hachurée (état mort) ; la zone hachurée se rétracte vers la droite en ≈ 9 im (0,3 s) et révèle le rose plein, la pastille passe à « AWAKE ». Le changement d'état est un balayage, pas un fondu.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1206.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Vérification refusée : flèche pointillée, « NOT YOURS », « STOPPED ITSELF »",
+      "name_en": "dashed check arrow with refusal verdict",
+      "t": "0:41.80-0:45.00",
+      "mechanics": "Ticket fantôme « ABOUT TO SEND 20:00 » en pointillés, flèche pointillée courbe « CHECK LEASE » vers le seau, la ligne « JOB OWNER: B » se surligne en jaune, pilule noire « × NOT YOURS » (43,0 s), la carte de A vire au mauve-gris « OFF » et un bandeau noir incliné « STOPPED ITSELF » se pose dessus (44,5 s).",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Tableau de compromis à deux colonnes avec autocollants",
+      "name_en": "trade-off cards with stickers",
+      "t": "0:46.40-0:49.50",
+      "mechanics": "Deux cartes de même taille (≈ 30 % de la largeur), en-têtes rose « ONE VM + TIMER » et jaune « CELLD ON 2-3 VMS ». Les lignes arrivent une à une (≈ 0,5 s) avec coche verte ou croix noire. Puis deux autocollants inclinés résument : « SIMPLE » (cyan) et « RELIABLE » (vert). Honnête : l'option A gagne sur le coût.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Phrase-signature avec bloc surligné",
+      "name_en": "tagline build with highlight block",
+      "t": "0:50.00-0:51.70",
+      "frames": "f1500-f1551",
+      "fps": 30,
+      "mechanics": "« SEVERAL CHEAP MACHINES. » mot à mot (≈ 4 im entre mots, premier mot qui sort d'un flou), pause de ≈ 8 im, « ONE TIMER. », puis un bloc jaune incliné se déroule de gauche à droite en ≈ 4 im (f1530-f1534) et « NEVER », « TWICE. » s'y inscrivent. Ligne de coût en pied à f1550.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Néo-brutalisme : contours noirs et ombres dures",
+      "name_en": "neo-brutalist sticker style",
+      "t": "0:00-0:53",
+      "mechanics": "Contour noir ≈ 3 px sur chaque élément, ombre portée noire pleine décalée ≈ 6 px en bas à droite, aplats pastel, titres en grotesque noire capitales, étiquettes en pilules à contour. Rotation de -3° à +3° sur les cartes et autocollants. Fond crème #FBFBF2 avec grille de points très fine.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur fixe par acteur",
+      "name_en": "consistent actor colour coding",
+      "t": "0:00-0:53",
+      "mechanics": "A = rose #F07FD8, B = cyan #BFF3F5, C = vert #A0F08A, le seau / l'arbitre = jaune #F2CF4A. Les jetons, jauges, lettres dans la fiche et en-têtes de comparatif reprennent ces couleurs, si bien qu'on suit qui fait quoi sans lire.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Autocollants décoratifs dans le coin à chaque scène",
+      "name_en": "decorative corner stickers",
+      "t": "0:00.6-0:53",
+      "mechanics": "Un soleil jaune, une étoile rose, une étoile verte, un éclat rose ou vert apparaît en haut à droite de presque chaque scène (pop en ≈ 5 im avec rotation), plus des bouts de ruban hachurés dans les coins. Aucun rôle explicatif : remplissage répété.",
+      "verdict": "cliche"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe sèche isolée",
+      "name_en": "unmotivated hard cut",
+      "t": "0:30.97",
+      "frames": "f928-f929",
+      "fps": 30,
+      "mechanics": "Seul passage sans transition : de « CHECK IN, OR LOSE IT » à « THE OWNER DIES » en une image, alors que toutes les autres scènes sont liées par poussée ou fondu-zoom. La mise en page change entièrement (cartes à horloge, canal jaune), ce qui désoriente.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f929.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre coupé par le bord et marges serrées",
+      "name_en": "headline clipped by frame edge",
+      "t": "0:31.0-0:40.1",
+      "frames": "f933-f1203",
+      "fps": 30,
+      "mechanics": "Le titre « THE OWNER DIES » se construit puis glisse vers la gauche jusqu'à n'afficher que « NER DIES » (f938) et reste coupé 9 s. La légende « B sees the lease expired… » colle au bord gauche (≈ 1 %). Ailleurs, la marge gauche ne dépasse pas ≈ 2-3 % de la largeur. Bug de mise en page probable (conteneur décalé).",
+      "verdict": "cliche",
+      "evidence": "microM-007-cut-f929.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt cite un outil interne (« celld ») sans l'expliquer ; la précision technique du résultat (bail de 10 s, renouvellement toutes les ≈ 3 s, seau S3/R2, redémarrage automatique) montre que Claude a lu le dépôt. Le contexte vivait dans le code, pas dans le prompt."},
+    {"kind": "direction", "insight": "« Why it earns its place » a été traduit en argumentaire : montrer d'abord l'échec de l'option simple, puis la fausse bonne idée, puis la solution et ses cas limites, et finir par un comparatif honnête (« Cheapest » reste à l'option A)."},
+    {"kind": "build", "insight": "Aucune demande de son : la vidéo est muette. Pour un explainer diffusé sur X, il faut demander explicitement une piste et des sons sur les gestes (rejet, tampon, ping)."},
+    {"kind": "qa", "insight": "Aucune consigne de marges ni de vérification d'image : un titre reste coupé par le bord pendant 9 s et une scène perd sa transition. Une étape « vérifier chaque scène sur une image fixe » aurait suffi."},
+    {"kind": "other", "insight": "Sans consigne de style, le modèle choisit un néo-brutalisme pastel cohérent : bon choix pour un sujet d'infrastructure, qui devient chaleureux et lisible."}
+  ],
+  "steal": [
+    "Montrer l'échec avant la solution : option simple qui casse, fausse bonne idée qui double, puis le mécanisme, puis ses cas limites.",
+    "Rendre la donnée visible : un ticket ou un jeton qui voyage sur un fil courbe en ≈ 13 im ease-in-out, le fil se traçant derrière lui.",
+    "Exclusion mutuelle = course : un jeton entre dans la case, les autres rebondissent et reçoivent une pilule noire « REJECTED ».",
+    "Un signe par état, gardé tout le film : hachures grises = mort, pilule noire = verdict, coche verte = envoyé, case pointillée = absent.",
+    "Écrire dans un registre partagé avec un curseur qui clignote : effacer l'ancien nom, retaper le nouveau."
+  ],
+  "flaws": [
+    "Titre « THE OWNER DIES » coupé par le bord gauche pendant 9 s ; marges gauches de 1 à 3 % seulement.",
+    "Vidéo totalement muette : aucune piste ni effet sonore pour appuyer rejets, tampons et pings.",
+    "Autocollants étoile, soleil, éclat répétés dans chaque coin sans rôle explicatif.",
+    "Une coupe sèche isolée à 30,97 s au milieu de transitions par poussée et fondu-zoom.",
+    "Légendes à ≈ 1,5 % de la hauteur, petites pour un téléphone."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo native en 30 fps aux courbes simples (fondus, poussées, apparitions élastiques). Les gestes clés (course de jetons, tampon EXPIRED, ressaisie au curseur, phrase finale) sont déjà couverts image par image par les planches extra-01 à 03 ; la valeur est dans le découpage narratif, pas dans le détail des courbes."}
+}

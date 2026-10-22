@@ -1,0 +1,309 @@
+{
+  "slug": "tdinh-me-815acb",
+  "title": "TypingMind logo reveal",
+  "handle": "@tdinh_me",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Concept fidèle au logo et finale précise (flash sur le drop, frappe en double-croches, curseur au temps), mais 13 s d'assemblage lent, minuscule et répétitif sur un fond vide.",
+  "summary": "Révélation lente du logo TypingMind : un cerveau filaire se dessine, des facettes low-poly colorées s'y emboîtent une à une pendant 9 s, puis un flash de surexposition sur le drop le change en icône d'app, qui glisse à gauche pendant que le nom se tape lettre par lettre. Finale nette et calée au tempo ; assemblage long, petit et monotone.",
+  "prompt_vs_result": [
+    "Une transition de révélation lente qui assemble puis révèle le logo TypingMind, « impressionnante ». Rien sur la durée, la musique, le décor, le texte final ni le format.",
+    "Claude a choisi seul le tracé filaire, les facettes qui volent, le flash avec anneau, le morph en icône d'app, la frappe du nom, le slogan, la palette nuit et la synchro au tempo.",
+    "« Assembles » pris au pied de la lettre : 13 s d'assemblage sur 21. Il aurait fallu fixer la durée de chaque phase, l'échelle de l'objet, un mouvement de caméra et le rythme."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#05060B", "role": "fond, bords de la vignette"},
+      {"hex": "#0E0F1C", "role": "centre de la vignette radiale (bleu nuit)"},
+      {"hex": "#9C9EC8", "role": "fil de fer et nœuds du cerveau (≈ 40 % d'opacité)"},
+      {"hex": "#E4F1F7", "role": "facettes blanc glacé, tige"},
+      {"hex": "#AFC3D2", "role": "facettes bleu-gris"},
+      {"hex": "#F0786A", "role": "facettes corail"},
+      {"hex": "#E0404E", "role": "facettes rouges"},
+      {"hex": "#F5D486", "role": "facettes jaune pâle"},
+      {"hex": "#D8B48C", "role": "facettes beige"},
+      {"hex": "#8A2C50", "role": "facettes prune"},
+      {"hex": "#2A1824", "role": "halo chaud derrière le cerveau (10-14 s)"},
+      {"hex": "#7C2A4C", "role": "squircle d'icône, coin haut gauche (magenta)"},
+      {"hex": "#A0603C", "role": "squircle d'icône, coin haut droit (orange)"},
+      {"hex": "#1E3354", "role": "squircle d'icône, bas (marine)"},
+      {"hex": "#E8E9F2", "role": "wordmark « TypingMind »"},
+      {"hex": "#B8BCC9", "role": "slogan"},
+      {"hex": "#E0604E", "role": "curseur de frappe (probable)"}
+    ],
+    "type": "Grotesque néo type Inter (probable), gras pour « TypingMind » (capitale ≈ 10 % de la hauteur, casse mixte, interlettrage serré), slogan en regular gris ≈ 3,3 % de la hauteur.",
+    "texture": "Fond quasi noir à vignette radiale avec anneaux concentriques à peine visibles (probable effet d'escalier du dégradé 8 bits) ; traits filaires de 1 px ; facettes en aplat sans ombre ; halo prune diffus derrière le cerveau en fin d'assemblage ; flash de surexposition (bloom) blanc rosé au drop ; ombre portée douce sous le squircle ; flou de mouvement directionnel sur le glissement de l'icône.",
+    "style": "Low-poly géométrique sur fond nuit",
+    "coherence": "Tout dérive du vrai logo (cerveau low-poly) : le fil de fer, les couleurs des facettes et l'icône finale forment une seule chaîne de transformation. Le système casse un peu à la carte finale, générique (lockup centré façon page d'accueil) et sans lien de mouvement avec les facettes."
+  },
+  "rhythm": {
+    "bpm": 96,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 95,9 BPM (probable 96 dans le code : temps = 37,5 im à 60 fps, double-croche = 9,4 im). Deux régimes. 0-14,37 s : assemblage libre, sans coupe ; l'énergie de mouvement n'a aucune périodicité au temps (R ≈ 0,03) ; le détecteur voit 78 % de « maintiens » car les éléments sont minuscules (traits de 1 px, facettes de 1 à 2 % du cadre) : ce n'est pas un vrai arrêt, mais la lecture est molle. Vrais temps morts : 13,15-14,37 s (1,2 s, cerveau complet immobile, voulu comme respiration avant le drop) et 19,8-21,06 s (carte finale fixe 1,3 s). 14,38-19,8 s : tout est verrouillé sur la grille (flash au drop f863, glissement de l'icône au demi-temps, 10 lettres en double-croches, slogan sur le temps, curseur qui clignote au temps). Une seule coupe détectée (f863), qui est en fait le flash.",
+    "timeline": [
+      {"t": "0:00-0:00.35", "what": "Noir à vignette radiale, rien à l'écran (f0-f21)", "technique": "ouverture au noir"},
+      {"t": "0:00.35-0:02.0", "what": "Le cerveau filaire se dessine trait par trait depuis le haut de la tige vers les bords ; montée aiguë (riser) dans la musique", "technique": "tracé filaire progressif (draw-on)"},
+      {"t": "0:01.4-0:02.5", "what": "Deux éclats blancs montent du bas du cadre et forment la tige", "technique": "pièce qui vole et se pose (ease-out)"},
+      {"t": "0:02.5-0:04.2", "what": "Cerveau filaire complet, quasi immobile, une facette bleu-gris arrive", "technique": "maintien d'attente"},
+      {"t": "0:04.2-0:09.5", "what": "Facettes colorées une à une (2 à 3 en vol), remplissage par le bas autour de la tige ; la basse entre à 5,03 s", "technique": "assemblage de facettes qui tournoient (tumbling shards)"},
+      {"t": "0:09.5-0:13.15", "what": "Cadence accélérée : 4 à 6 facettes en vol venant de tous côtés, y compris du haut ; halo chaud qui grandit derrière", "technique": "rampe de densité"},
+      {"t": "0:13.15-0:14.37", "what": "Cerveau complet immobile ; basse coupée à 13,65 s, montée aiguë", "technique": "respiration avant le drop"},
+      {"t": "0:14.38-0:14.65", "what": "Flash de surexposition blanc rosé + anneau qui s'étend hors cadre, sur le drop", "technique": "flash de surexposition + onde annulaire"},
+      {"t": "0:14.6-0:14.75", "what": "Un disque dégradé grandit derrière le cerveau et devient le squircle de l'icône", "technique": "morph disque → squircle"},
+      {"t": "0:14.75-0:15.85", "what": "Icône d'app pleine (≈ 63 % de la hauteur), dérive d'échelle lente", "technique": "maintien du logo"},
+      {"t": "0:15.85-0:16.07", "what": "L'icône rétrécit à ≈ 27 % et glisse au tiers gauche avec flou de mouvement", "technique": "glissement en lockup"},
+      {"t": "0:16.07-0:16.27", "what": "Curseur corail seul à droite de l'icône", "technique": "curseur d'attente"},
+      {"t": "0:16.27-0:17.70", "what": "« TypingMind » tapé lettre par lettre, une lettre toutes les 9,4 im", "technique": "machine à écrire en double-croches"},
+      {"t": "0:18.15-0:18.40", "what": "Slogan « The best frontend for LLMs » révélé de gauche à droite", "technique": "balayage en fondu"},
+      {"t": "0:18.45-0:19.8", "what": "Curseur qui clignote au temps puis disparaît", "technique": "clignotement au tempo"},
+      {"t": "0:19.8-0:21.06", "what": "Carte finale fixe, musique en fondu jusqu'à 20,5 s", "technique": "carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Finale 14,38-19,8 s : 19 gestes sur 19 à ±2 im d'une barre. Flash f863 contre temps f864 et saut de basse de +38 dB mesuré à 14,40 s (f864) : l'image précède le son d'1 im. Pic du glissement de l'icône f956 contre demi-temps f958. « T » f977 contre temps f976,4. Les 10 lettres franchissent le seuil à f977, 987, 996, 1005, 1015, 1024, 1033, 1043, 1052, 1062 : intervalle moyen 9,44 im contre double-croche de 9,38 im (écart 0,6 %), toutes à +0,6 à +1,2 im de la grille (le fondu de 3 im commence 1 im avant). Slogan f1090 contre temps f1089. Curseur : éteint f1090 (temps f1089), allumé f1107 (demi-temps f1108), éteint f1127 (temps f1127), allumé f1145 (demi-temps f1145), éteint f1165 (temps f1164), allumé f1182 (demi-temps f1183). Assemblage 0-14,37 s : aucune périodicité du mouvement au temps, croche ou double-croche (R ≈ 0,02-0,03) ; 3 atterrissages mesurés sur extra-02 (f274, f280, f300) : 2 sur 3 près d'une barre (hasard ≈ 27 %), échantillon trop faible. Seule la fin de l'assemblage (cerveau complet ≈ 13,15 s contre temps 13,146 s) et le tracé filaire sous le riser de 0-2,5 s suivent la structure musicale.",
+    "synced": ["flashs", "drop", "texte", "departs", "pulsations"],
+    "style_match": "Pop électro enjouée à 96 BPM : le riser porte le tracé, le drop porte le flash, la frappe suit les double-croches. L'assemblage, lent et uniforme, ignore cette énergie.",
+    "how_built": "Le prompt ne parle pas de musique. La précision (intervalle de frappe = double-croche exacte, clignotement = 1 temps, flash à 1 im du drop) indique une timeline écrite à partir d'une constante de tempo (probable 96 BPM) et une bande-son composée ou générée à la longueur de la vidéo : intro riser 0-2,5 s, entrée de la basse à 5,03 s, break sans basse à 13,65 s, drop à 14,40 s, fondu final terminé à 20,5 s. Petites bosses de volume sur chaque lettre (17,23 / 17,36 / 17,53 / 17,70 s) : clics de frappe probables. L'assemblage n'a pas été découpé au temps, d'où la synchro partielle."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Tracé filaire qui se dessine (draw-on)",
+      "name_en": "Wireframe line draw-on",
+      "t": "0:00.35-0:02.0",
+      "frames": "f21-f120",
+      "fps": 60,
+      "mechanics": "Les arêtes du maillage du cerveau apparaissent une à une, en partant du haut de la tige vers les bords du crâne : ≈ 8 traits à f45, ≈ 30 à f90, maillage complet (≈ 60 arêtes, ≈ 35 nœuds) à f120. Traits de 1 px lavande #9C9EC8 à ≈ 40 % d'opacité, nœuds en points plus clairs. Croissance régulière, presque linéaire, sans easing visible sur l'ensemble. Le cerveau occupe ≈ 22 % de la largeur et ≈ 37 % de la hauteur avec la tige. Très faible contraste : illisible sur mobile les 1,5 premières secondes.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 21, "to": 120, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Facettes low-poly qui volent en tournoyant et s'emboîtent",
+      "name_en": "Tumbling low-poly shard assembly",
+      "t": "0:04.2-0:13.15",
+      "frames": "f252-f789",
+      "fps": 60,
+      "mechanics": "Chaque triangle part de 15 à 40 % du cadre de sa place (bas, côtés, puis haut à partir de 10 s), tourne en 3D pendant le vol (sa largeur se contracte puis se rouvre, rotation probable sur 1 ou 2 axes) et ralentit fortement à l'arrivée : pas de ≈ 4 % du cadre au départ puis < 0,5 % sur les 6 dernières images (ease-out fort, type expo/power3). Vol visible ≈ 17 à 20 im (0,28-0,33 s) sur extra-02 (gris f261 → f280 ; petit triangle f283 → f300), probable 0,6-0,9 s en tout. Arrêt net sans dépassement. Taille d'une facette ≈ 1 à 2,5 % de la hauteur. Remplissage du bas (tige) vers le haut du crâne.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-02.jpg, overview-03.jpg",
+      "illus": {"from": 255, "to": 302, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rampe de densité de l'assemblage",
+      "name_en": "Assembly density ramp",
+      "t": "0:04.2-0:13.15",
+      "frames": "f252-f789",
+      "fps": 60,
+      "mechanics": "4,2-9,5 s : 2 à 3 facettes en vol à la fois, ≈ 1 atterrissage toutes les 0,3-0,5 s. 9,5-13,15 s : 4 à 6 facettes en vol, venant de toutes les directions, plus grandes et plus colorées (jaune, beige, prune). La courbe d'énergie de rhythm.jpg monte de 9,5 à 13 s. Bonne idée d'accélération vers le climax, mais la variation reste trop faible : même geste répété ≈ 60 fois sans changement d'échelle ni de caméra.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette de facettes chaud-froid sur fond nuit",
+      "name_en": "Warm-cool faceted palette on night background",
+      "t": "0:04.2-0:21.06",
+      "frames": "f252-f1259",
+      "fps": 60,
+      "mechanics": "Facettes tirées d'une palette de 8 teintes (blanc glacé #E4F1F7, bleu-gris #AFC3D2, corail #F0786A, rouge #E0404E, jaune pâle #F5D486, beige #D8B48C, prune #8A2C50) : les froides dominent en bas (tige, base), les chaudes arrivent en fin d'assemblage, ce qui réchauffe l'image vers le climax. Reprend les couleurs du vrai logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Vignette nuit et halo chaud qui grandit",
+      "name_en": "Night vignette with growing warm halo",
+      "t": "0:00-0:14.37",
+      "frames": "f0-f862",
+      "fps": 60,
+      "mechanics": "Fond radial #0E0F1C au centre → #05060B aux bords, fixe. À partir de ≈ 10 s, un halo prune #2A1824 de ≈ 45 % de la hauteur apparaît derrière le cerveau et s'intensifie jusqu'à 14 s, comme si l'objet se chargeait d'énergie avant le flash. Anneaux concentriques faibles visibles : probable escalier de dégradé (banding) dû à l'encodage.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Respiration avant le drop",
+      "name_en": "Pre-drop hold",
+      "t": "0:13.15-0:14.37",
+      "frames": "f789-f862",
+      "fps": 60,
+      "mechanics": "Le cerveau complet reste immobile 73 im (1,2 s ≈ 2 temps). Dans la musique, la basse est coupée à 13,65 s et une montée aiguë (centroïde 3 700 → 6 600 Hz) dure jusqu'à 14,37 s. L'arrêt visuel commence presque sur un temps (13,146 s). Tension par contraste : image fixe, son qui monte.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-cut-f863.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash de surexposition sur le drop",
+      "name_en": "Overexposure bloom flash on the drop",
+      "t": "0:14.38-0:14.52",
+      "frames": "f863-f872",
+      "fps": 60,
+      "mechanics": "En 1 image (f862 → f863), le cerveau passe au blanc presque pur avec un bloom rosé de ≈ 40 % de la hauteur ; les couleurs des facettes réapparaissent progressivement sur 9 im (f863 → f872), décroissance ease-out. Le flash tombe 1 im avant le saut de basse (f864), sur le temps. C'est la charnière entre « objet assemblé » et « logo de marque ».",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f863.jpg",
+      "illus": {"from": 860, "to": 883, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde annulaire (anneau qui s'étend)",
+      "name_en": "Expanding shockwave ring",
+      "t": "0:14.38-0:14.75",
+      "frames": "f863-f885",
+      "fps": 60,
+      "mechanics": "Anneau de ≈ 4 px brun-gris #4A3A40 à ≈ 50 % d'opacité, rayon ≈ 15 % de la hauteur à f863, ≈ 35 % à f869, ≈ 50 % à f875, sort du cadre vers f885 : pas décroissants (ease-out), opacité qui baisse. Lit le drop mais reste terne et générique.",
+      "verdict": "cliche",
+      "evidence": "microM-001-cut-f863.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morph disque → squircle d'icône",
+      "name_en": "Circle-to-squircle morph",
+      "t": "0:14.60-0:14.75",
+      "frames": "f875-f885",
+      "fps": 60,
+      "mechanics": "Un disque flou en dégradé (magenta en haut à gauche, orange en haut à droite, marine en bas) apparaît derrière le cerveau à f875, grandit et se change en carré à coins arrondis (rayon ≈ 20 % du côté) en ≈ 8 im (f877 → f883). Il atteint ≈ 63 % de la hauteur à 15 s. Le cerveau ne bouge pas : c'est le support qui naît autour de lui, transformation motivée (le logo devient une icône d'app).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f863.jpg, overview-03.jpg",
+      "illus": {"from": 872, "to": 900, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Rétrécissement et glissement de l'icône avec flou de mouvement",
+      "name_en": "Icon scale-down slide to lockup with motion blur",
+      "t": "0:15.83-0:16.07",
+      "frames": "f950-f964",
+      "fps": 60,
+      "mechanics": "L'icône passe de ≈ 63 % à ≈ 27 % de la hauteur et son centre glisse de 50 % à ≈ 26 % de la largeur en ≈ 12 im (f950 → f962), ease-in-out (pas petits, grands à f955-f957, puis petits). Flou de mouvement directionnel horizontal net à f955-f957. Pic de vitesse f956, sur le demi-temps f958. Légère dérive de rétrécissement avant (f941-f950).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f956.jpg",
+      "illus": {"from": 948, "to": 966, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire calée en double-croches",
+      "name_en": "Typewriter on sixteenth notes",
+      "t": "0:16.27-0:17.70",
+      "frames": "f977-f1062",
+      "fps": 60,
+      "mechanics": "« TypingMind » apparaît lettre par lettre : une lettre toutes les 9,44 im en moyenne (intervalles 9 à 10 im), soit exactement la double-croche à 96 BPM (9,38 im). Chaque lettre entre par un fondu de ≈ 3 im (grise puis blanche, visible sur « i » f1004, « M » f1032, « d » f1060), sans déplacement. Le curseur avance avec la lettre. 10 lettres en 1,42 s = 1 mesure de 4 temps moins 6 double-croches.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 972, "to": 1064, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur corail qui clignote au temps",
+      "name_en": "Beat-synced caret blink",
+      "t": "0:16.07-0:19.8",
+      "frames": "f964-f1189",
+      "fps": 60,
+      "mechanics": "Barre verticale corail #E0604E ≈ 10 % de la hauteur, ≈ 0,4 % de la largeur. Apparaît seule à f964 (avant la première lettre), suit la frappe, puis clignote avec une période de 37 à 38 im = 1 temps : allumée sur le demi-temps, éteinte sur le temps (bascules f1090, f1107, f1127, f1145, f1165, f1182). Disparaît à f1189. Bascules nettes, sans fondu.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-002-move-f956.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan révélé par balayage en fondu",
+      "name_en": "Left-to-right fade wipe tagline",
+      "t": "0:18.15-0:18.40",
+      "frames": "f1090-f1104",
+      "fps": 60,
+      "mechanics": "« The best frontend for LLMs » se révèle de gauche à droite en ≈ 14 im (0,23 s), lettres en fondu décalé (probable masque dégradé ou stagger de ≈ 0,6 im par caractère), sans déplacement vertical. Départ sur le temps f1089. Gris #B8BCC9, ≈ 3,3 % de la hauteur, aligné sur le bord gauche du wordmark.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Lockup icône + wordmark + slogan",
+      "name_en": "Icon-wordmark-tagline lockup",
+      "t": "0:18.40-0:21.06",
+      "frames": "f1104-f1259",
+      "fps": 60,
+      "mechanics": "Icône squircle ≈ 26 % de la hauteur à gauche (x 18-33 %), wordmark grotesque gras blanc #E8E9F2, capitale ≈ 10 % de la hauteur, x 36-81 %, slogan regular gris dessous. Bloc centré optiquement (centre ≈ 50 % de la largeur), hauteur du bloc alignée sur l'icône. Propre mais générique, façon en-tête de site.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Objet petit au centre d'un grand vide",
+      "name_en": "Small centered hero object",
+      "t": "0:00-0:14.37",
+      "frames": "f0-f862",
+      "fps": 60,
+      "mechanics": "Pendant 14 s, le cerveau occupe ≈ 22 % de la largeur et ≈ 37 % de la hauteur, centré, sans recadrage ni mouvement de caméra. Les facettes en vol font 1 à 2,5 % de la hauteur. Résultat : l'action est minuscule, surtout sur mobile, et le cadre semble vide. Un push lent de la caméra (de 100 à 130 %) aurait donné de la progression.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Flash et onde calés sur le drop",
+      "name_en": "Flash locked to the drop",
+      "t": "0:14.38-0:14.40",
+      "frames": "f863-f864",
+      "fps": 60,
+      "mechanics": "Le flash de surexposition et l'anneau partent à f863 ; le saut de basse (+38 dB en 1/30 s, fin du break) arrive à 14,40 s (f864) et le temps de la grille est à f863,8. L'image précède le son d'1 im, ce qui est l'écart idéal pour que l'œil et l'oreille fusionnent. Le contraste avant/après est maximal : objet fixe + riser, puis flash + basse.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f863.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Frappe, slogan et curseur sur la grille rythmique",
+      "name_en": "Typing, tagline and caret on the beat grid",
+      "t": "0:16.27-0:19.8",
+      "frames": "f977-f1189",
+      "fps": 60,
+      "mechanics": "Hiérarchie de subdivisions : première lettre sur le temps (f977), lettres sur les double-croches (10/10 à ≤ 1,2 im), slogan sur le temps (f1090), curseur qui clignote au temps (allumé au demi-temps, éteint au temps). Le caractère musical (pop électro pulsée) se retrouve dans des bascules sèches, sans easing. Clics de frappe probables sur chaque lettre (petites bosses de volume à 17,23 / 17,36 / 17,53 / 17,70 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale calquée sur les phases",
+      "name_en": "Music structure mirrors the visual phases",
+      "t": "0:00-0:21.06",
+      "frames": "f0-f1259",
+      "fps": 60,
+      "mechanics": "Riser aigu 0-2,5 s pendant le tracé filaire ; entrée de la basse à 5,03 s quand les facettes colorées commencent à s'accumuler ; break sans basse à 13,65 s pendant le maintien du cerveau complet ; drop à 14,40 s sur le flash ; décrescendo 17-19,5 s pendant la carte ; fondu 19,5-20,5 s, fin 0,5 s avant la dernière image. La macro-structure est calée, la micro-structure de l'assemblage ne l'est pas.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation en quatre états de matière",
+      "name_en": "Four-state reveal: wireframe, facets, icon, name",
+      "t": "0:00-0:21.06",
+      "frames": "f0-f1259",
+      "fps": 60,
+      "mechanics": "Squelette filaire (2 s) → chair en facettes (9 s) → flash qui « cuit » l'objet en icône d'app (0,4 s) → nom et promesse (3 s). Chaque état découle du précédent, sans coupe. Répartition déséquilibrée : 62 % de la durée sur l'assemblage, 7 s pour tout le reste.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Le prompt d'une ligne ne donne que « slow-reveal », « assembles » et « impressive » : Claude a traduit « assembles » littéralement (montage pièce à pièce) et « slow » par 13 s d'assemblage, ce qui explique la longueur et la monotonie."},
+    {"kind": "inputs", "insight": "Le logo réel (cerveau low-poly dans un squircle dégradé) a probablement été fourni ou retrouvé : les facettes, leurs couleurs et la tige reproduisent fidèlement la marque, ce qui donne une transformation motivée plutôt qu'un effet plaqué."},
+    {"kind": "structure", "insight": "« Eventually reveals » a donné la phase de marque finale (icône, nom tapé, slogan). Le slogan « The best frontend for LLMs » n'est pas dans le prompt : repris du site ou inventé (probable)."},
+    {"kind": "build", "insight": "Aucune consigne musicale, pourtant la finale est calée à 1 im près : la timeline a probablement été écrite depuis une constante de tempo (96 BPM) avec une bande-son composée à la longueur. L'assemblage, piloté par une boucle de facettes, n'a pas été quantifié."},
+    {"kind": "qa", "insight": "Il aurait fallu préciser : durée de chaque phase (ex. assemblage ≤ 6 s), taille de l'objet (≥ 60 % de la hauteur), un mouvement de caméra et « chaque arrivée de facette sur une croche »."}
+  ],
+  "steal": [
+    "Construire un logo en états lisibles : tracé filaire, facettes qui s'emboîtent, puis flash de surexposition qui le transforme en icône d'app.",
+    "Taper le nom de marque en double-croches (9,4 im à 60 fps pour 96 BPM), chaque lettre en fondu de 3 im.",
+    "Faire clignoter le curseur au tempo : allumé sur le demi-temps, éteint sur le temps.",
+    "Figer l'objet terminé 2 temps pendant la montée sans basse, puis flash et onde 1 im avant le drop.",
+    "Rétrécir l'icône et la glisser au tiers gauche en 12 im, ease-in-out avec flou de mouvement, pour faire place au nom."
+  ],
+  "flaws": [
+    "Assemblage de 13 s monotone : le même vol de facette répété ≈ 60 fois, sans variation d'échelle ni de caméra.",
+    "Objet minuscule (≈ 37 % de la hauteur, facettes de 1 à 2 %) perdu au centre d'un fond vide.",
+    "Quatre premières secondes quasi noires : traits de 1 px à faible contraste, illisibles sur mobile.",
+    "Onde annulaire brun terne au drop : effet générique de vidéo IA.",
+    "Carte finale centrée façon en-tête de site, figée 1,3 s à la fin."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour la finale 14,3-19,8 s seulement : flash 1 im avant le drop, morph disque → squircle en 8 im, glissement avec flou de mouvement, frappe exactement en double-croches et curseur au tempo. C'est un cas d'école de synchro fine à 60 fps. L'assemblage ne mérite pas l'étude image par image."}
+}

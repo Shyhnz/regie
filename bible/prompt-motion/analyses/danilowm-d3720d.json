@@ -1,0 +1,419 @@
+{
+  "slug": "danilowm-d3720d",
+  "title": "Motion designer showreel",
+  "handle": "@danilowm",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Transitions motivées (épingle → carte, bouton → logo), squash et rebonds mesurés, palette tenue ; mais 37 % de temps statique, sections 3D et data génériques et synchro surtout structurelle.",
+  "summary": "Le prompt du showreel, plus « utilise tout le contexte du projet », devient une promo de 15 s pour l'app brésilienne Meu Pet Pode Ir : six chapitres titrés (typo, carte, chiffres, caméra 3D, interface, marque). Les transitions naissent des objets (l'épingle ouvre la carte, le bouton de recherche devient le logo) ; l'ouverture est calée mot à mot sur les temps, mais 37 % du film est statique.",
+  "prompt_vs_result": [
+    "Même phrase que le prompt showreel classique (15 s, « go all out ») appelée via /hyperframes, plus en portugais « utilise tout le contexte du projet ». Aucune consigne de structure, de couleur, de musique ni de durée de plan.",
+    "Claude a pris le projet (app Meu Pet Pode Ir, Araçatuba, 1.317 lieux, teal) comme matière : six chapitres nommés comme des savoir-faire, transitions tirées des objets du produit, bande-son à 120 BPM avec effets calés sur les événements.",
+    "Le contexte projet a donné un vrai sujet et une marque cohérente. Il manquait une règle de rythme : sans « quelque chose bouge toutes les 0,5 s » ni grille imposée, l'interface traîne et les sections finissent sur des maintiens."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F7F7F7", "role": "fond blanc cassé avec trame de points gris clair"},
+      {"hex": "#222222", "role": "texte principal (titres, chiffres, chip sélectionné)"},
+      {"hex": "#13B7A7", "role": "teal d'action : épingles, soulignement, barres, bouton de recherche, aplat de transition, icône d'app"},
+      {"hex": "#0E766C", "role": "teal foncé d'accent : mot « ir », épingle sélectionnée, bande haute du volet"},
+      {"hex": "#CCFBF2", "role": "menthe : parcs de la carte, zones d'icône des cartes"},
+      {"hex": "#E7F1EE", "role": "sol de la carte (rues en blanc pur)"},
+      {"hex": "#A7E8DE", "role": "rivière de la carte"},
+      {"hex": "#BEE6E2", "role": "pattes décoratives qui avancent"},
+      {"hex": "#D2EBEA", "role": "halo radial derrière l'icône finale"},
+      {"hex": "#8A8A8A", "role": "texte secondaire gris (estimé)"}
+    ],
+    "type": "Grotesque géométrique ExtraBold (type Manrope/Plus Jakarta Sans, probable), casse phrase, approche négative : titre 16 % de la hauteur, chiffres 17 %, interface 3-6 % ; mono capitales espacées (~1,7 %) pour HUD et surtitres teal.",
+    "texture": "Aplats propres, aucun grain ; trame de points gris clair sur le fond ; ombres portées douces sous la barre de recherche, les cartes et l'infobulle ; flou de profondeur (≈ 4-6 px) sur les cartes hors mise au point ; flou gaussien d'entrée sur « Seu » et pendant les fondus ; halo radial teal pâle derrière l'icône finale ; seule traînée de mouvement visible : l'épingle qui tombe (étirée ×2 sur 1 im).",
+    "style": "UI produit clair, teal, HUD technique",
+    "coherence": "Tenue par une seule couleur d'action (teal #13B7A7 : épingles, soulignement, barres, bouton, icône) et sa version foncée #0E766C pour l'accent, sur un blanc cassé à trame de points ; le HUD (coins, mono, timecode, chapitre n/06) relie les six scènes ; les objets passent d'une scène à l'autre (épingle → carte, bouton → icône). Ce qui casse : la grille de cartes 3D floutée, plus terne (#8ACCC2), qui semble venir d'une autre vidéo, et des intitulés de chapitres qui promettent des techniques (SVG PATH DRAW) à peine montrées."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "120 BPM (temps = 0,5 s = 15 im à 30 fps), musique qui démarre à 0,5 s avec le premier mot. Les trois mots d'ouverture partent exactement sur les temps 1, 2 et 3 (f15, f30, f45). Six chapitres de 2,5 / 2,5 / 2,5 / 3,0 / 2,0 / 2,5 s, dont les changements tombent à ±2 im d'un temps (f77 +2, f150 0, f223 −2, f314 −1, f375 0). En revanche, l'intérieur des scènes est libre (vol de caméra en ease-in-out sur 31 im, compteur sur 31 im, frappe au clavier, like) et 37 % du film est statique : 7 maintiens ≥ 0,4 s (0-0,47 ; 4,33-4,87 ; 6,73-7,33 ; 9,17-9,77 ; 9,83-10,3 ; 11,1-12,2 ; 13,37-14,93 s). Temps morts nets : tableau de bord figé ~1 s, attente après le like, signature tenue 1,6 s. Énergie de mouvement : pics aux transitions (f77, f153-160, f261, f314, f371-377), quasi nulle pendant la frappe (< 0,5).",
+    "timeline": [
+      {"t": "0:00-0:00.50", "what": "Fond blanc cassé à trame de points, HUD qui s'allume (MEU PET PODE IR / MOTION REEL 2026, timecode, 01/06 KINETIC TYPE) ; silence", "technique": "ouverture sur fond vide"},
+      {"t": "0:00.50-0:00.75", "what": "« Seu » sort du flou et passe du gris au noir, sur le 1er temps", "technique": "mise au point (déflou) sur le temps"},
+      {"t": "0:01.00-0:01.20", "what": "« pet » glisse depuis la droite, penché et gris, se redresse et noircit, sur le 2e temps", "technique": "glissé avec inclinaison (skew)"},
+      {"t": "0:01.50-0:01.93", "what": "« pode ir » monte (3e temps), « ir » vire au teal foncé, soulignement teal tracé de gauche à droite ; pattes qui avancent à droite", "technique": "mot-clé coloré + soulignement tracé"},
+      {"t": "0:02.13-0:02.43", "what": "L'épingle teal tombe à côté de « ir » en 2 im, s'écrase de 17 % puis se stabilise", "technique": "chute avec squash et rebond"},
+      {"t": "0:02.57-0:02.77", "what": "Zoom éclair dans l'épingle (coussinets blancs plein cadre), iris circulaire qui révèle la carte", "technique": "plongée dans l'objet + iris"},
+      {"t": "0:02.77-0:04.33", "what": "Panneau blanc qui glisse de la gauche, « ARAÇATUBA · SP → BRASIL », « Descubra onde ele é bem-vindo. », rivière tracée, épingles en cascade, épingle sélectionnée avec anneau radar, infobulle et badge « + 24 por perto »", "technique": "écran partagé + cascade d'épingles"},
+      {"t": "0:04.33-0:04.90", "what": "Carte figée", "technique": "maintien (temps mort)"},
+      {"t": "0:04.90-0:05.47", "what": "Deux bandes teal (foncée puis claire) montent du bas, couvrent l'écran puis le découvrent", "technique": "volet en bandes empilées"},
+      {"t": "0:05.27-0:06.30", "what": "Compteur 0 → 1.317 en ease-out, barres horizontales de six catégories qui poussent en cascade avec leurs valeurs", "technique": "compteur + barres en cascade"},
+      {"t": "0:06.30-0:07.40", "what": "Tableau de bord figé", "technique": "maintien (temps mort)"},
+      {"t": "0:07.40-0:07.60", "what": "Fondu flou vers une grille de cartes de lieux en perspective", "technique": "fondu flouté"},
+      {"t": "0:07.60-0:08.67", "what": "Vol de caméra au-dessus de la grille inclinée (ease-in-out, 31 im)", "technique": "caméra 3D sur plan incliné"},
+      {"t": "0:08.70-0:09.17", "what": "La grille se redresse face caméra, mise au point sur « Shopping Praça Nova Araçatuba », les autres cartes floues", "technique": "redressement + flou de profondeur"},
+      {"t": "0:09.17-0:10.33", "what": "Le cœur de la carte se remplit en teal avec un éclat de particules ; maintien", "technique": "micro-interaction de like"},
+      {"t": "0:10.33-0:10.63", "what": "La carte sort par le haut, « Para onde vamos hoje? » et la barre de recherche montent en sortant du flou, le bouton arrive en volant depuis le coin bas droit", "technique": "poussée vers le haut + entrée floutée"},
+      {"t": "0:10.63-0:12.20", "what": "Chips en cascade, frappe « café » qui active le chip « Cafés », puis « café em Araçatuba » ; le curseur vient sur le bouton, survol, clic", "technique": "chorégraphie d'interface"},
+      {"t": "0:12.23-0:12.50", "what": "Le bouton grossit en cercle teal jusqu'à remplir l'écran, posé sur le temps après 150 ms de silence", "technique": "expansion du bouton cliqué"},
+      {"t": "0:12.53-0:12.83", "what": "L'aplat teal se rétracte en icône d'app (carré arrondi) à gauche", "technique": "forme qui devient logo"},
+      {"t": "0:12.83-0:13.40", "what": "Halo, patte blanche dans l'icône, « Meu Pet Pode Ir » mot à mot, slogan « Onde ele é bem-vindo. »", "technique": "signature de marque"},
+      {"t": "0:13.40-0:14.13", "what": "Pattes en haut à droite, pilule « meupetpodeir.com.br », crédits mono en bas à droite", "technique": "appel à l'action"},
+      {"t": "0:14.13-0:14.97", "what": "Signature figée", "technique": "maintien final (temps mort)"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille vraie : temps aux multiples de 0,5 s (f0, f15, f30…), demi-temps à +7,5 im ; la musique commence à 0,54 s mesuré (premier temps à 0,5 s, l'audio du fichier est en retard de ~40 ms). Un événement clé par geste, 25 gestes : 14 à ±1 im d'un temps ou demi-temps (hasard ≈ 40 % à 30 fps), 21 à ±2 im (hasard ≈ 67 %), 10 à ±1 im d'un temps entier (hasard 20 %). Sur la grille : « Seu » f15, « pet » f30, « pode » f45 (d = 0), « ir » f52-53, atterrissage de l'épingle f66-67 (−1), texte de la carte f90 (0), départ du volet f150 (0), découverte f158 (+0,5), entrée de la recherche f314 (−1), chip « Cafés » activé f331 (+1), écran teal plein f374-375 (0), icône posée f382-383, patte f389 (−1), crédits f421 (+1). Hors grille (±1 im) : iris f77 (+2), cascade d'épingles (continue), arrivée du compteur f189 (+1,5), fondu 3D f223 (−2), vol de caméra (départ ~f229, −3,5), redressement f261 (−1,5), like f288 (+3), clic f365 (−2), pilule URL f414 (+1,5). Sur les planches : coupe f77 juste après la barre bleue f76, point vert f91 sur l'apparition du texte, f375 point vert (attaque la plus forte) sur l'écran plein. Mesures auto : départs/temps R = 0,16 (non significatif), corrélation basses z = 4,2 : les gros mouvements coïncident avec les grosses caisses.",
+    "synced": ["texte", "coupes", "impacts", "atterrissages", "apparitions", "drop"],
+    "style_match": "Électro minimale à 120 BPM, grosse caisse sèche et plucks clairs : colle au style propre et aéré ; les effets (chute, tics, clics, carillon) collent mieux que la pulsation.",
+    "how_built": "Le prompt ne parle pas de musique ; pile HyperFrames. La bande-son semble générée pour l'image (probable) : silence numérique jusqu'à 0,54 s puis grosse caisse sur chaque temps à 120 BPM ; le son est coupé net (−100 à −180 dB) 30 ms avant chaque frappe, signe d'enveloppes générées note par note ; coupure de 60 ms (2,19-2,25 s) puis son de chute au moment où l'épingle tombe ; plucks pendant l'éclosion des épingles (3-4,5 s) ; série de tics dont la hauteur monte de 1,2 à 2 kHz pendant le compteur (5,6-6,4 s) ; souffle (whoosh) pendant la caméra 3D ; arpège montant sur le like (≈ 9,55 s) ; clics de frappe à 2,2 kHz (11,2-11,9 s) ; montée (riser) de 11,9 à 12,34 s, silence numérique de 150 ms, impact à −1 dB à 12,54 s ; nappe grave et carillon descendant pour le logo (12,7-13,2 s) puis pour l'URL (13,9-14,2 s). Les sons suivent les gestes (synchro par l'effet sonore) plus que les gestes ne suivent la pulsation : seuls l'ouverture, les changements de scène et l'impact de marque sont posés sur la grille. Le retard de ~40 ms de l'audio vient probablement du réencodage."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Showreel appliqué à un produit, six chapitres titrés",
+      "name_en": "skills reel applied to a real product",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Chapitres affichés dans le HUD : 01/06 KINETIC TYPE (0-2,57 s), 02/06 SVG PATH DRAW (2,57-5,1 s), 03/06 DATA IN MOTION (5,1-7,5 s), 04/06 3D CAMERA FLIGHT (7,5-10,5 s), 05/06 UI CHOREOGRAPHY (10,5-12,5 s), 06/06 BRAND RESOLVE (12,5-15 s). Chaque chapitre est une scène du produit (slogan, carte, chiffres, catalogue, recherche, marque) : le récit va de la promesse (« Seu pet pode ir ») à la preuve (carte, 1.317 lieux) à l'usage (recherche) puis à la signature.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Un mot par temps, trois entrées différentes",
+      "name_en": "one word per beat, varied entrances",
+      "t": "0:00.50-0:01.93",
+      "frames": "f15-f58",
+      "fps": 30,
+      "mechanics": "« Seu » (f15-f22) : flou gaussien fort → net et gris → noir #222222 en 7 im, ease-out. « pet » (f30-f36) : entre décalé d'environ +12 % de la largeur à droite, incliné (skew ≈ −15°) et gris, glisse et se redresse en 6 im (pic d'énergie f33, ease-out). « pode ir » (f45-f53) : monte d'environ 5 % de la hauteur en passant du gris au noir en 8 im. Départs exactement sur les temps 1, 2, 3 (0,5 / 1,0 / 1,5 s, d = 0). Titre en deux lignes alignées à gauche (marge 8 %), capitales ≈ 16 % de la hauteur, approche négative.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 14, "to": 58, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot-clé coloré et souligné",
+      "name_en": "highlighted keyword with drawn underline",
+      "t": "0:01.73-0:01.93",
+      "frames": "f52-f58",
+      "fps": 30,
+      "mechanics": "« ir » (le verbe : « peut aller ») vire au teal foncé #0E766C à f52 (demi-temps) ; un filet teal #13B7A7 d'environ 1 % de la hauteur se trace de gauche à droite sous « pode ir » en ~5 im (ease-out) et dépasse le texte jusqu'à 70 % de la largeur, comme une route qui file vers l'épingle.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Épingle qui tombe avec écrasement et rebond",
+      "name_en": "map pin drop with squash and settle",
+      "t": "0:02.13-0:02.43",
+      "frames": "f64-f73",
+      "fps": 30,
+      "mechanics": "Mesures image par image : l'épingle (≈ 7 % de la largeur, 10 % de la hauteur) entre par le haut à f64, est à mi-course à f65 étirée verticalement ×2 (traînée), touche à f66 (centre à 51 % de la hauteur). Écrasement maximal à f67 : largeur +14 %, hauteur −17 %, et 6 px plus bas que la position de repos ; retour f68-f70, léger étirement de +2 % à f71-f72, repos à f73. Chute en 2 im, rebond amorti en 7 im (0,23 s). Atterrissage f66-67 = demi-temps 2,25 s −1 im ; un son de chute démarre au même instant.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f77.jpg, extra-01.jpg",
+      "illus": {"from": 63, "to": 74, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom éclair dans l'épingle puis iris sur la carte",
+      "name_en": "smash zoom into the pin, iris reveal",
+      "t": "0:02.53-0:02.77",
+      "frames": "f76-f83",
+      "fps": 30,
+      "mechanics": "Entre f76 et f77, sans image intermédiaire, le cadre est agrandi d'environ ×10 autour de l'épingle : les coussinets blancs de la patte et le soulignement remplissent l'écran sur fond teal. Dès f78, un cercle (la carte) s'ouvre au centre : Ø ≈ 45 % de la largeur à f78, 65 % à f79, 75 % à f80, 95 % à f81, plein cadre à f82 (expo-out). Coupe à 2,567 s, soit 2 im après le temps (et ~1 im après l'impact audio du fichier).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f77.jpg",
+      "illus": {"from": 75, "to": 84, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Pattes qui avancent",
+      "name_en": "paw print trail",
+      "t": "0:00.67-0:02.50 ; 0:13.23-0:14.33",
+      "frames": "f20-f76 ; f397-f430",
+      "fps": 30,
+      "mechanics": "Empreintes de patte teal pâle #BEE6E2 (≈ 3 % de la hauteur) qui apparaissent une à une le long d'une diagonale, du bas vers le haut à droite, en alternant gauche/droite comme une démarche (environ une toutes les 5 im, probable) ; ~8 empreintes à f60. Reprises à la fin : 4 empreintes en haut à droite pendant la signature.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran partagé texte / carte",
+      "name_en": "split layout, text panel over map",
+      "t": "0:02.77-0:05.10",
+      "frames": "f83-f152",
+      "fps": 30,
+      "mechanics": "Un panneau blanc glisse depuis la gauche de f83 à f90 (bord à 17 % → 39 % de la largeur, ease-out) par-dessus la carte. Dedans : surtitre mono teal « ARAÇATUBA · SP → BRASIL » (f90, sur le temps 3,0 s), titre « Descubra onde ele é bem-vindo. » sur 3 lignes (capitales ≈ 6 % de la hauteur) qui monte ligne à ligne par masque (f92-f98), sous-titre gris « Parques, cafés, hotéis e shoppings no mapa. ». Carte stylisée : sol #E7F1EE, rues blanches épaisses en grille légèrement tournée, parcs menthe #CCFBF2, rivière #A7E8DE.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f77.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Épingles qui éclosent en cascade avec dépassement",
+      "name_en": "staggered pin pop with overshoot",
+      "t": "0:03.00-0:04.33",
+      "frames": "f90-f130",
+      "fps": 30,
+      "mechanics": "Environ 25 épingles teal apparaissent par mise à l'échelle depuis 0. Mesure sur deux épingles : celle du bas naît à f107, culmine à f113 à 120 % de sa taille finale, revient à 100 % à f118 ; celle de gauche naît à f110, culmine à f115-116, se pose à f121. Donc 6 im de montée, 5 im de retour, dépassement de 20 % (type back-out) ; décalage d'environ 3 im entre épingles voisines, ordre non calé sur les temps. Un pluck sonore accompagne la cascade.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (mesure de surface image par image)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Épingle sélectionnée, anneau radar et infobulle",
+      "name_en": "selected pin with radar ring and tooltip",
+      "t": "0:03.50-0:04.50",
+      "frames": "f105-f135",
+      "fps": 30,
+      "mechanics": "Une épingle plus grande (≈ 1,5×) en teal foncé #0E766C avec patte blanche au centre de la carte ; un anneau teal fin s'ouvre autour d'elle (Ø ≈ 4 % → 12 % de la largeur entre 3,5 et 4,0 s, probable pulsation) ; une pilule blanche ombrée « ● Shopping Praça Nova » apparaît à côté (~4,0 s), puis un badge « + 24 por perto » en haut à droite (~4,5 s).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-002-cut-f153.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rivière tracée (tracé SVG)",
+      "name_en": "SVG path draw (river)",
+      "t": "0:03.03-0:03.33",
+      "frames": "f91-f100",
+      "fps": 30,
+      "mechanics": "La rivière, une bande ondulée #A7E8DE d'environ 6 % de la hauteur, se dessine de gauche à droite en bas de la carte (f91-f100, probable tracé progressif). C'est le seul tracé réellement visible du chapitre « SVG PATH DRAW » : les rues sont déjà en place quand l'iris s'ouvre.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f77.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en deux bandes teal qui montent",
+      "name_en": "two-band stacked wipe up",
+      "t": "0:05.00-0:05.47",
+      "frames": "f150-f164",
+      "fps": 30,
+      "mechanics": "Une bande teal foncé #0E766C puis une bande teal #13B7A7 montent du bas (départ f150, sur le temps 5,0 s) et couvrent l'écran à f154 (4 im, accélération) ; plein teal f155-f157 ; à f158 (demi-temps) les bandes continuent vers le haut et découvrent la scène suivante par le bas, terminé à f164. Total 14 im (0,47 s). Le compteur roule déjà quand il apparaît sous la bande.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f153.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur 0 → 1.317 en ease-out",
+      "name_en": "eased counting number",
+      "t": "0:05.27-0:06.30",
+      "frames": "f158-f189",
+      "fps": 30,
+      "mechanics": "Grand nombre noir (≈ 17 % de la hauteur, approche très serrée, séparateur de milliers brésilien « . ») qui compte de 0 à 1.317 en ~31 im. Valeurs relevées : 387 (f161), 595 (f163), 762 (f165), 959 (f168), 1.057 (f170), 1.192 (f174), 1.287 (f180), 1.314 (f186), 1.317 (f189). 58 % de la valeur à 22 % du temps, 80 % à 38 % : ease-out proche d'un cubique. Surtitre mono teal « LUGARES PET-FRIENDLY », légende « lugares onde seu pet é bem-vindo. », sous-légende mono « 10 categorias · publicados e verificados ». Tics sonores dont la hauteur monte pendant le comptage.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f153.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barres horizontales en cascade",
+      "name_en": "staggered horizontal bar chart",
+      "t": "0:05.60-0:06.50",
+      "frames": "f168-f195",
+      "fps": 30,
+      "mechanics": "Six lignes (Hotéis 601, Restaurantes 345, Shoppings 98, Cafés 80, Pet shops 62, Passeios 57) à droite d'un filet vertical : libellé, piste grise #EFEFEF, remplissage teal, valeur. Les lignes apparaissent toutes les ~3 im (2 lignes à f171, 4 à f174, 6 à f180) ; chaque barre et sa valeur montent en ease-out (Hotéis : 283 à f171, 453 à f174, 574 à f180, 600 à f189, 601 à f192).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flouté vers le plan 3D",
+      "name_en": "blur crossfade",
+      "t": "0:07.40-0:07.60",
+      "frames": "f222-f228",
+      "fps": 30,
+      "mechanics": "Le tableau de bord disparaît en fondu (pic de changement f223, 2 im avant le temps 7,5 s) tandis que la grille de cartes entre floue en bas à droite et se précise en ~5 im. Aucun objet commun entre les deux scènes : c'est la transition la moins motivée du film.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Vol de caméra sur une grille de cartes inclinée",
+      "name_en": "3D camera flight over a tilted card grid",
+      "t": "0:07.60-0:09.17",
+      "frames": "f228-f275",
+      "fps": 30,
+      "mechanics": "Grille de cartes de lieux (5 colonnes visibles, cartes ≈ 18 % de la largeur, icônes fourchette, lit, sac, tasse) posée sur un plan incliné d'environ 55° et tourné d'environ −8°. Mouvement 1 (f228-f260) : translation et légère rotation en ease-in-out, courbe d'énergie en cloche sur 31 im avec pic à f242 (8,07 s). Arrêt d'une image (f260). Mouvement 2 (f261-f275) : le plan se redresse face caméra et grossit, départ brusque puis ease-out sur 14 im (départ à −1,5 im du demi-temps 8,75 s).",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f242.jpg, microM-004-move-f263.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de profondeur sur les cartes hors focus",
+      "name_en": "depth of field focus pull",
+      "t": "0:08.83-0:10.40",
+      "frames": "f265-f312",
+      "fps": 30,
+      "mechanics": "Une fois la grille face caméra, toutes les cartes sauf « Shopping Praça Nova Araçatuba » sont floutées (≈ 4-6 px à 1280 px de large) ; la carte en focus est nette, blanche, ombrée et légèrement agrandie (≈ ×1,05) comme soulevée. Isole le lieu à retenir sans changer de plan.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f263.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Like avec éclat de particules",
+      "name_en": "heart like micro-interaction",
+      "t": "0:09.60-0:10.00",
+      "frames": "f288-f300",
+      "fps": 30,
+      "mechanics": "Le cœur en contour en haut à droite de la carte se remplit en teal (f288-f291) et projette 6 à 8 petits points teal sur ~3 % de la largeur, qui se dissipent en ~9 im. Arpège sonore montant au même moment. Départ à +3 im du temps 9,5 s : non calé.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, microM-005-move-f314.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée vers le haut et entrée floutée de la recherche",
+      "name_en": "push up with blur-in, flying button",
+      "t": "0:10.33-0:10.63",
+      "frames": "f310-f319",
+      "fps": 30,
+      "mechanics": "La carte en focus part vers le haut (≈ −40 % de la hauteur en 5 im) et s'efface ; « Para onde vamos hoje? » et la barre de recherche montent d'environ 5 % en passant de flou à net en ~6 im ; le bouton de recherche (cercle teal avec anneau) arrive en volant du coin bas droit (78 %, 93 %) jusqu'à sa place (78 %, 53 %) en 4 im, trajectoire légèrement courbe, ease-out. Pic d'énergie f314 = temps 10,5 s −1 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f314.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Chorégraphie de recherche : chips, frappe, curseur, clic",
+      "name_en": "search UI choreography",
+      "t": "0:10.73-0:12.20",
+      "frames": "f322-f366",
+      "fps": 30,
+      "mechanics": "Quatre chips à icône (Parques, Cafés, Hotéis, Shoppings) apparaissent en montant avec 2 im de décalage (f322-f328). Frappe de « café » à ~1 caractère toutes les 1,5 im (f324-f330) ; à f331 (temps 11,0 s +1 im) le chip « Cafés » passe en noir, sélectionné par le texte tapé ; la frappe continue « café em Araçatuba » à ~1 caractère toutes les 2 im avec curseur clignotant. Un curseur flèche entre par le coin bas droit vers f340, glisse jusqu'au bouton (f352-f355, ease-in-out), un halo de survol grossit (f355-f361), pulsation de clic vers f364-f366. Clics de clavier synthétiques pendant la frappe.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f314.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le bouton cliqué envahit l'écran",
+      "name_en": "clicked button expands to fill frame",
+      "t": "0:12.23-0:12.50",
+      "frames": "f367-f375",
+      "fps": 30,
+      "mechanics": "Mesuré : le cercle teal part du bouton (Ø ≈ 113 px sur 1280 à f367), puis 201 px (f368), 333 px (f369), 517 px (f370), touche le haut et le bas à f371 et couvre toute la largeur à f374 : croissance ×1,6 à ×1,8 par image, ease-in (accélération). Plein écran à f375 = temps 12,5 s, d = 0, au milieu d'un silence numérique de 150 ms ; l'impact sonore le plus fort du morceau arrive juste après.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f377.jpg, extra-03.jpg",
+      "illus": {"from": 364, "to": 385, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "L'aplat se rétracte en icône d'app",
+      "name_en": "full-frame fill morphs into app icon",
+      "t": "0:12.53-0:12.83",
+      "frames": "f376-f385",
+      "fps": 30,
+      "mechanics": "L'aplat teal devient un carré arrondi qui rapetisse et glisse vers la gauche. Largeur mesurée (fraction du cadre) : 0,73 (f376), 0,50, 0,35, 0,26, 0,20, 0,16, 0,14, 0,13, 0,127 (f384) ; rapport d'une image à l'autre de 0,68 au début à 0,96 à la fin : expo-out. Centre de x = 0,44 à 0,22. Icône finale ≈ 22 % de la hauteur, coins arrondis ≈ 22 % du côté ; posée au demi-temps 12,75 s (+0 à +1,5 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f377.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature de marque construite pièce par pièce",
+      "name_en": "brand resolve end card",
+      "t": "0:12.83-0:14.97",
+      "frames": "f385-f448",
+      "fps": 30,
+      "mechanics": "Halo radial #D2EBEA (rayon ≈ 45 % de la hauteur) qui s'ouvre derrière l'icône (f385-f389) ; patte blanche qui éclot dans l'icône (f389, temps 13,0 s −1 im) ; « Meu Pet Pode Ir » (capitales ≈ 9 % de la hauteur) monte mot à mot par masque avec ~3 im de décalage (f390-f400) ; slogan gris « Onde ele é bem-vindo. » (f403-f406) ; empreintes en haut à droite ; pilule contour « ● meupetpodeir.com.br » en mono teal (f412-f418) ; crédits mono « 1.317 lugares · 10 categorias / motion · design · código » (f421-f424). Puis 0,8 s figé. Carillon sonore descendant sur l'icône et sur l'URL.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f377.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD technique et trame de points",
+      "name_en": "technical HUD overlay with dot grid",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Coins en L ; en haut à gauche « MEU PET PODE IR / MOTION REEL 2026 » (mono capitales ≈ 1,7 % de la hauteur) ; en haut à droite timecode « ● 00:00:02:00 » dont le point teal clignote ; en bas à gauche « 0N/06 NOM DU CHAPITRE » avec une barre de progression noire qui avance sur un filet gris pleine largeur ; en bas à droite « 1920×1080 · 30 FPS » (le fichier publié fait 1280×720). Trame de points gris clair sur tout le fond.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une seule couleur d'action",
+      "name_en": "single action color system",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Tout ce qui agit est teal #13B7A7 (épingles, soulignement, barres, bouton, aplat de transition, icône) ; l'accent sémantique est teal foncé #0E766C (« ir », épingle choisie) ; tout le reste est blanc cassé, quasi-noir #222222 et gris. Les deux aplats plein écran (volet, cercle du bouton) sont teal : la couleur de marque sert de matière de transition.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque géométrique ExtraBold et mono",
+      "name_en": "geometric grotesk with mono labels",
+      "t": "0:00.50-0:15.00",
+      "frames": "f15-f448",
+      "fps": 30,
+      "mechanics": "Titrage en grotesque géométrique ExtraBold, casse phrase, approche négative (type Manrope / Plus Jakarta Sans, probable) : « Seu pet pode ir » ≈ 16 % de la hauteur, « 1.317 » ≈ 17 %, « Meu Pet Pode Ir » ≈ 9 %, titres d'écran ≈ 6 %, textes d'interface 2-4 %. Mono capitales espacées (~+12 %) pour le HUD et les surtitres teal, mono minuscules grises pour les légendes. Gris léger pour les textes secondaires.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Ouverture et changements de scène sur les temps",
+      "name_en": "beat-locked opening and scene changes",
+      "t": "0:00.50-0:12.50",
+      "frames": "f15, f30, f45, f77, f150, f223, f314, f375",
+      "fps": 30,
+      "mechanics": "La musique démarre à 0,5 s avec « Seu » ; « pet » et « pode » partent sur les temps 2 et 3 (d = 0). Les changements de scène tombent à ±2 im d'un temps : iris f77 (+2), volet f150 (0), fondu 3D f223 (−2), recherche f314 (−1), écran teal f375 (0). Le reste de la chorégraphie interne n'est pas calé.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-cut-f77.jpg, microM-002-cut-f153.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant l'impact de la marque",
+      "name_en": "pre-drop silence",
+      "t": "0:11.90-0:12.55",
+      "frames": "f357-f376",
+      "fps": 30,
+      "mechanics": "Montée sonore de 11,9 à 12,34 s pendant le survol et le clic, puis silence numérique total pendant 150 ms (mesuré de 12,38 à 12,53 s) pendant que le cercle envahit l'écran ; le cercle est plein à f375 et l'impact le plus fort du morceau (−1 dB) arrive à 12,54 s, suivi d'une nappe grave pour la signature. Le vide sonore fait sentir le coup de la marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f377.jpg, mesures audio"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Effets sonores calés sur chaque micro-événement",
+      "name_en": "event-mapped sound effects",
+      "t": "0:02.20-0:14.20",
+      "frames": "f66-f426",
+      "fps": 30,
+      "mechanics": "Son de chute quand l'épingle tombe (coupure de 60 ms puis attaque à ~2,22 s) ; plucks pendant l'éclosion des épingles (3-4,5 s) ; tics dont la hauteur monte de 1,2 à 2 kHz pendant le compteur (5,6-6,4 s) ; souffle pendant le vol de caméra ; arpège montant sur le like ; clics à 2,2 kHz pendant la frappe (11,2-11,9 s) ; carillon descendant de 4 notes sur l'icône (12,7-13,2 s) puis de 3 notes sur l'URL (13,9-14,2 s). Ici c'est le son qui suit l'image.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg (attaques vertes), mesures audio"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fins de section sur des maintiens longs",
+      "name_en": "long static holds at section ends",
+      "t": "0:04.33-0:04.87 ; 0:06.73-0:07.33 ; 0:09.17-0:10.30 ; 0:13.37-0:14.93",
+      "frames": "f130-f146 ; f202-f220 ; f275-f309 ; f401-f448",
+      "fps": 30,
+      "mechanics": "Chaque scène joue son animation puis attend la transition : 7 maintiens ≥ 0,4 s pour 5,57 s au total (37 % du film), dont 0,6 s sur le tableau de bord, ~1 s autour du like et 1,6 s sur la signature. Pendant la frappe (11,1-12,2 s), seuls le texte et le curseur bougent (énergie < 0,5). Contraire à la règle « quelque chose bouge toutes les 0,5 à 1 s ».",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg (zones grises)"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« use todo o contexto do projeto » a tout changé : au lieu d'un showreel abstrait, Claude a utilisé le projet réel (nom Meu Pet Pode Ir, ville d'Araçatuba, 1.317 lieux, 10 catégories, teal, URL meupetpodeir.com.br) et en a fait une promo produit. Le contexte projet est le meilleur levier de ce prompt."},
+    {"kind": "direction", "insight": "Le cadre « showreel pour un CV » survit dans les intitulés de chapitres (KINETIC TYPE, SVG PATH DRAW, DATA IN MOTION, 3D CAMERA FLIGHT, UI CHOREOGRAPHY, BRAND RESOLVE) : chaque scène produit est étiquetée comme une démonstration de technique. Hybride intéressant, mais certaines étiquettes promettent plus que l'image."},
+    {"kind": "build", "insight": "Appel via /hyperframes : composition HTML à 30 fps, HUD qui affiche « 1920×1080 · 30 FPS » alors que le fichier publié est en 1280×720 (réencodage probable). La bande-son, coupée net avant chaque temps et ponctuée d'effets alignés sur les gestes, semble générée dans la même chaîne (probable)."},
+    {"kind": "structure", "insight": "Claude a fixé seul six scènes de 2 à 3 s et posé les changements sur les temps, mais rien n'imposait de remplir chaque scène jusqu'au bout : chaque section se termine par un maintien, d'où 37 % de temps statique."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : textes d'interface et crédits à 1,5-3 % de la hauteur, sur une vidéo publiée en 720p. Un critère « taille minimale de texte » et « durée minimale de lecture » manquait."}
+  ],
+  "steal": [
+    "Ouvre sur les temps : un mot par temps (0,5 s), chacun avec une entrée différente (déflou, glissé penché, montée), puis le mot-clé en couleur et souligné.",
+    "Fais naître chaque transition d'un objet du produit : on plonge dans l'épingle pour ouvrir la carte, le bouton cliqué grossit jusqu'à l'écran puis se rétracte en icône.",
+    "Épingle qui tombe : 2 images de chute étirée, écrasement de 17 % à l'impact, léger rebond, repos en 7 images ; les suivantes éclosent avec 20 % de dépassement.",
+    "Avant l'impact de la marque, coupe tout le son pendant 150 ms ; le cercle qui envahit l'écran se pose sur le temps, juste avant le coup.",
+    "Sonorise chaque micro-événement : tic dont la hauteur monte avec le compteur, clic par lettre tapée, pluck par épingle, carillon pour le logo."
+  ],
+  "flaws": [
+    "37 % du film est statique : tableau de bord figé ~1 s, attente après le like, signature tenue 1,6 s.",
+    "Grille de cartes 3D floutée et terne : démo de perspective générique, plus pâle que le reste du film.",
+    "Les intitulés de chapitres (SVG PATH DRAW, 3D CAMERA FLIGHT) promettent plus que l'image ne montre ; HUD « 1920×1080 · 30 FPS » purement décoratif.",
+    "Textes d'interface et de crédits à 1,5-3 % de la hauteur, illisibles sur mobile.",
+    "Synchro seulement structurelle : la caméra, le compteur, le like et la frappe ignorent la grille."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : la vidéo est en 30 fps natifs (pas d'images intermédiaires à étudier à 60 fps) et les moments utiles (chute de l'épingle, iris, bouton → icône) sont déjà mesurés image par image dans les planches ; le reste est statique ou générique."
+  }
+}

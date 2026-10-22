@@ -1,0 +1,393 @@
+{
+  "slug": "en-ra-81c6dd",
+  "title": "Website analyzer product promo",
+  "handle": "@en______ra",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système de morph cohérent, détails soignés (texte en flux, compteurs, dépassement du curseur horaire, boucle) ; mais UI minuscule dans le carré et un seul type de transition répété douze fois.",
+  "summary": "Démo produit de 16 s pour RedSeed AI, un outil (inventé par Claude) qui trouve des fils Reddit et rédige des réponses. Un seul conteneur se métamorphose sans coupe, pastille sombre d'état ↔ carte blanche, en gardant un accent orange qui change de rôle. Très propre, en boucle parfaite et calé sur une grille à 120 BPM, mais l'interface reste petite et le même morph se répète.",
+  "prompt_vs_result": [
+    "15 s de motion « dynamique » pour RedSeed AI, façon showreel de motion designer pour un CV, « go all out ». Aucun contenu produit, aucune DA, aucune musique, aucun format imposés.",
+    "Tout le récit produit : outil de marketing Reddit (URL → subreddits → fils → réponse rédigée → planification → clics), client fictif SkinPal, mascotte, palette orange sur blanc cassé, morph de conteneur unique et boucle parfaite.",
+    "« Showreel, go all out » n'a produit aucun spectacle : avec un nom de produit, Claude a choisi une démo UI sobre. Il aurait fallu préciser le niveau d'énergie, la taille du texte (mobile) et le rôle de la musique (BPM)."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F0EEEA", "role": "fond uni, blanc cassé chaud"},
+      {"hex": "#FFFFFF", "role": "cartes de contenu"},
+      {"hex": "#1A1814", "role": "pastilles d'état sombres, texte principal"},
+      {"hex": "#E24E23", "role": "accent unique : boutons, barres, points, mascotte"},
+      {"hex": "#2E3648", "role": "feuilles de la mascotte"},
+      {"hex": "#F8F6F4", "role": "panneau du brouillon de réponse"},
+      {"hex": "#FCF1EE", "role": "aire sous la courbe du graphe"},
+      {"hex": "#6B6863", "role": "texte secondaire gris chaud (estimé)"}
+    ],
+    "type": "Grotesque géométrique arrondie (type Figtree / Plus Jakarta Sans, probable). Mot-symbole gras 5,4 % de la hauteur ; titres UI semi-gras ≈ 2,4 %, corps regular ≈ 1,7 %, méta 1,4 %. Casse phrase, interlettrage neutre.",
+    "texture": "Aucun grain. Ombres portées très douces sous cartes et pastilles (flou ≈ 40 à 60 px, opacité ≈ 8 à 10 %, décalage vers le bas). Flou gaussien non directionnel utilisé uniquement comme transition de contenu (≈ 8 à 12 px au pic). Pas de flou de mouvement, pas de glow, pas de dégradé.",
+    "style": "Démo UI à morphs, minimalisme chaud",
+    "coherence": "Le système tient par trois constantes : un seul objet centré à l'écran, l'orange #E24E23 comme unique couleur saturée qui passe d'un rôle à l'autre, et l'alternance sémantique sombre (la machine travaille) / blanc (l'utilisateur décide). Rien ne casse la cohérence ; la limite est la monotonie : même cadrage, même morph de 15 images, aucune caméra."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, et la vidéo dure 16 s = 8 mesures exactes. Mesure audio maison : grosse caisse à x,27 / x,77 s (pics à −6 dB, barres bleues), charleston à x,02 / x,52 s (barres bleu clair, attaques aiguës les plus nettes). Tous les gestes principaux partent sur un multiple de 0,5 s (0,0 ; 2,0 ; 2,5 ; 4,0 ; 6,0 ; 7,0 ; 8,0 ; 9,0 ; 10,0 ; 11,5 ; 12,0 ; 13,0 ; 14,0 ; 14,5 ; 15,0 s), donc sur le charleston ; chaque morph dure 15 im (0,25 s = une croche) et se pose sur la grosse caisse suivante. Aucune coupe franche : un seul plan continu, 14 états d'écran en 16 s (un toutes les 1,1 s) et une micro-interaction (frappe, clic, case cochée, compteur) environ toutes les 0,5 s. Les « maintiens » détectés (61 % du temps) contiennent presque tous un mouvement faible (curseur, compteurs, texte qui s'écrit). Vrais temps morts : champ vide 0,23 à 0,5 s, curseur seul 9,1 à 10,0 s, carton final 15,13 à 16,0 s (normal pour une boucle).",
+    "timeline": [
+      {"t": "0:00.00-0:00.23", "what": "Image 0 = dernière image (mascotte, « RedSeed AI », curseur sur le ventre). La mascotte s'écrase en pastille, vire de l'orange au blanc et devient le champ « Paste your product URL ».", "technique": "ouverture en boucle, morph logo → champ"},
+      {"t": "0:00.50-0:01.50", "what": "« skinpalai.app » se tape lettre à lettre ; le bouton « Analyze » passe du gris à l'orange ; le curseur glisse dessus.", "technique": "frappe + état actif"},
+      {"t": "0:01.50-0:02.00", "what": "Clic sur « Analyze », une icône de chargement tourne dans le bouton.", "technique": "état de chargement"},
+      {"t": "0:02.00-0:02.18", "what": "Le champ blanc se contracte en pastille sombre « Reading skinpalai.app » ; le bouton orange s'étire en barre de progression qui se remplit jusqu'à 2,5 s.", "technique": "morph champ → pastille, élément partagé"},
+      {"t": "0:02.50-0:02.77", "what": "La pastille sombre s'ouvre en carte blanche « SkinPal » ; la barre orange remonte et rétrécit en bouton « Looks right ».", "technique": "morph pastille → carte"},
+      {"t": "0:03.00-0:04.00", "what": "La carte se remplit : description, ligne « Audience », puis 2 et 4 étiquettes ; le curseur va sur « Looks right ».", "technique": "révélation progressive"},
+      {"t": "0:04.00-0:04.30", "what": "Clic, la carte devient « Where SkinPal fits · 3 of 24 subreddits » : 3 lignes avec barres de score 94, 88, 81 %.", "technique": "morph carte → carte, liste de données"},
+      {"t": "0:04.50-0:06.00", "what": "Le curseur coche r/SkincareAddiction puis r/acne, « 2 selected », clique « Start scan » (icône de chargement à 6,0 s).", "technique": "curseur fantôme"},
+      {"t": "0:06.00-0:06.27", "what": "La carte se replie en pastille sombre « Scanning 2 subreddits » ; le bouton orange glisse à gauche et devient le point d'état ; « threads » compte jusqu'à 139.", "technique": "morph carte → pastille, compteur"},
+      {"t": "0:06.50-0:07.00", "what": "Le texte de la pastille devient « 3 opportunities found ».", "technique": "toast d'état"},
+      {"t": "0:07.00-0:07.27", "what": "La pastille s'ouvre en carte de post Reddit ; le point orange grossit en bouton « Draft reply » ; la jauge de pertinence monte de 0 à 76 puis 92.", "technique": "morph + jauge circulaire"},
+      {"t": "0:08.00-0:08.90", "what": "Clic « Draft reply » : la carte s'allonge, panneau V1/V2/V3, la réponse s'écrit mot à mot avec une traîne estompée ; le bouton glisse à droite et devient « Approve ».", "technique": "carte qui s'allonge, texte en flux"},
+      {"t": "0:09.00-0:09.50", "what": "Clic sur V2 : la puce sombre glisse et le texte est remplacé par une autre version.", "technique": "sélecteur segmenté"},
+      {"t": "0:10.00-0:10.30", "what": "Clic « Approve » : la carte devient « Schedule reply » avec une frise 6 AM–12 PM.", "technique": "morph carte → carte"},
+      {"t": "0:10.50-0:11.50", "what": "Le bouton noir de la frise glisse de 7:30 à 9:05 puis revient à 9:00 ; l'étiquette « Peak » s'allume ; clic « Schedule ».", "technique": "curseur horaire avec dépassement"},
+      {"t": "0:11.50-0:11.77", "what": "La carte se replie en pastille « Scheduled · Tue 9:00 AM », le bouton devient l'icône horloge orange.", "technique": "morph carte → pastille"},
+      {"t": "0:12.00-0:12.30", "what": "La pastille s'ouvre en carte « Posted to r/SkincareAddiction » ; votes 12 → 31 → 48.", "technique": "morph + compteur"},
+      {"t": "0:13.00-0:14.00", "what": "La carte s'agrandit : « Clicks this week 186 », courbe à 7 points qui se dessine avec aire rose ; le dernier point monte, devient orange, infobulle « Sun 52 clicks » ; 186 → 212.", "technique": "graphe qui se dessine, infobulle"},
+      {"t": "0:14.00-0:14.27", "what": "La carte se replie en pastille « 3 new opportunities » (la coche orange devient le point).", "technique": "morph carte → pastille"},
+      {"t": "0:14.50-0:14.90", "what": "La pastille se transforme en mascotte (probable, non vérifié image par image).", "technique": "morph pastille → logo"},
+      {"t": "0:15.00-0:15.13", "what": "La mascotte cligne des yeux, « RedSeed AI » sort du flou ; le curseur glisse sur le ventre de la mascotte.", "technique": "carton final vivant"},
+      {"t": "0:15.13-0:16.00", "what": "Carton final tenu 0,85 s, identique à l'image 0 : la vidéo boucle.", "technique": "boucle parfaite"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille vérifiée par analyse audio : 120 BPM exacts, grosse caisse à x,27 / x,77 s (barres bleues), charleston à x,02 / x,52 s (barres bleu clair). 15 départs de geste sur 15 tombent à ±1 im d'une barre bleu clair (hasard ≈ 33 %) : 9 vérifiés à l'image près (f1, f121, f151, f361, f421, f481, f691, f841, f901), 6 estimés sur la courbe d'énergie (4,0 ; 9,0 ; 10,0 ; 12,0 ; 13,0 ; 14,5 s). Les 6 morphs au microscope démarrent sur la barre bleu clair (f151, f361, f421, f481, f691, f841, première image modifiée) et ont fini leur flou 13 à 15 im plus tard, à 0 à 2 im de la barre bleue (f166, f376, f436, f496, f706, f856), où tombe aussi un point vert d'attaque dans 5 cas sur 6. Indice du dossier : départs/temps R = 0,998, décalage +237 ms (= un demi-temps). Limites : les accents de phrase toutes les 2 mesures (1,27 ; 5,27 ; 9,27 ; 13,27 s) n'ont pas d'événement visuel distinct, l'énergie de mouvement ne suit pas la musique (r = −0,39) et la musique est simplement coupée à 16 s.",
+    "synced": ["departs", "atterrissages", "apparitions"],
+    "style_match": "Boucle électronique régulière à 120 BPM (probable) : sa pulsation métronomique colle aux morphs identiques de 15 im, mais ses accents de phrase ne trouvent aucun écho visuel.",
+    "how_built": "Calage par construction, probable. La timeline est écrite en multiples de 0,5 s (un temps à 120 BPM) et dure 16 s = 8 mesures ; la piste démarre à t = 0 (charleston à 0,02 s, première grosse caisse à 0,27 s). Chaque geste part donc sur un contretemps et son morph de 15 im (une croche) se termine sur la grosse caisse. Le prompt ne parle ni de musique ni de BPM : la piste a sans doute été choisie ou générée à 120 BPM pour coller à la grille. La fin coupe net à 16,0 s, en phase avec le début : la musique boucle avec l'image (probable)."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Morph de conteneur pastille → carte",
+      "name_en": "container morph (pill to card)",
+      "t": "0:02.50-0:02.77",
+      "frames": "f150-f166",
+      "fps": 60,
+      "mechanics": "La pastille sombre #1A1814 (≈ 66 % × 12 % du cadre, rayon plein) grandit en carte blanche (≈ 80 % × 43 %, rayon ≈ 3 % du cadre), centrée. Hauteur toutes les 2 im : 12 → 16 → 23 → 30 → 35 → 38,5 → 41 → 43 % (rampe de 2 im puis long ease-out, ≈ power3.out). La couleur passe par les gris (#5A5856 à f152, #8E8C8A à f154, #C8C6C4 à f156) et atteint le blanc vers f161. L'ancien texte se floute et disparaît en 2 à 3 im (f151-f153), le nouveau contenu sort du flou de f159 à f164. Conteneur posé à f160-f161 (10 im = 0,17 s), contenu net à f164, total ≈ 15 im = 0,25 s. Aucun dépassement, aucun flou directionnel. Départ sur la barre bleu clair f151, fin à 0 à 2 im de la barre bleue f166.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f155.jpg",
+      "illus": {"from": 149, "to": 167, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Repli carte → pastille, le bouton devient point d'état",
+      "name_en": "card-to-pill collapse with button-to-dot",
+      "t": "0:06.00-0:06.27",
+      "frames": "f360-f376",
+      "fps": 60,
+      "mechanics": "La carte blanche « Where SkinPal fits » (≈ 66 % × 47 %) se replie en pastille sombre « Scanning 2 subreddits » (≈ 70 % × 13 %). Gris de f362 à f366, sombre à f368, forme de pastille à f370-f371, texte net de f373 à f376. Le bouton orange « Start scan » (≈ 17 % de large, en bas à droite) glisse d'environ 45 % de la largeur vers la gauche en rétrécissant jusqu'au point d'état (≈ 1,4 %), posé vers f374-f375, ease-out. Même durée de 15 im. Même recette à 11,50 s (bouton « Schedule » → icône horloge, f691-f706) et à 14,00 s (coche → point, f841-f856).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f365.jpg, microM-005-move-f694.jpg, microM-006-move-f845.jpg",
+      "illus": {"from": 359, "to": 377, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Accent orange persistant qui change de rôle",
+      "name_en": "persistent accent shared element",
+      "t": "0:01.40-0:14.90",
+      "frames": "f84-f894",
+      "fps": 60,
+      "mechanics": "La seule couleur saturée (#E24E23) survit à chaque morph et change de fonction : bouton « Analyze » → barre de progression (f121-f131, ≈ 60 % × 0,5 %) → bouton « Looks right » (f151-f162 : rétrécit à ≈ 20 % de large en remontant de y ≈ 56 % à 37 %) → barres de score → bouton « Start scan » → point d'état (f361-f375) → bouton « Draft reply » (f421-f437, le point grossit en bouton) → « Approve » (f481-f496, le bouton s'étire et glisse à droite) → « Schedule » → icône horloge (f691-f706) → coche → point (f841-f856) → mascotte (probable). L'œil suit l'orange d'un écran à l'autre, ce qui remplace la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f155.jpg, microM-003-move-f425.jpg, microM-004-move-f486.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture en boucle : le logo s'écrase en champ de saisie",
+      "name_en": "looping logo-to-UI morph",
+      "t": "0:00.00-0:00.23",
+      "frames": "f0-f14",
+      "fps": 60,
+      "mechanics": "f0 est identique à la dernière image (mascotte ≈ 30 % × 37 %, mot-symbole, curseur sur le ventre). Dès f1, la mascotte s'écrase horizontalement en pastille (≈ 25 % × 10 % à f4), descend de 43 % à 49 % de la hauteur et vire de l'orange #E24E23 au saumon (f5), au rose pâle (f8) puis au blanc (f12). Le mot-symbole se floute et s'efface en 6 à 8 im. Le contenu du champ (texte d'invite, bouton gris « Analyze ») apparaît de f10 à f14. Fin à f14 (0,23 s), ease-out.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 0, "to": 14, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite image et son",
+      "name_en": "seamless loop",
+      "t": "0:15.13-0:16.00 → 0:00.00",
+      "frames": "f908-f959, f0",
+      "fps": 60,
+      "mechanics": "La dernière image (mascotte, « RedSeed AI », curseur posé au centre du ventre) est exactement la première. Le récit part du logo et y revient : le produit devient le cadre. La durée de 16 s = 8 mesures à 120 BPM et la musique coupée net à 16,0 s (encore à −7 dB à 15,85 s) reprennent en phase au redémarrage (probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole qui sort du flou",
+      "name_en": "blur-in wordmark",
+      "t": "0:15.02-0:15.13",
+      "frames": "f901-f908",
+      "fps": 60,
+      "mechanics": "« RedSeed AI » (≈ 38 % de large, 5,4 % de haut, centré à 72 % de la hauteur) passe de transparent et très flou à net en 8 im, sans déplacement mesurable (≤ 1 %). Lancé sur la barre bleu clair de 15,0 s, en même temps que le clignement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Clignement de la mascotte",
+      "name_en": "mascot blink",
+      "t": "0:15.02-0:15.08",
+      "frames": "f901-f905",
+      "fps": 60,
+      "mechanics": "Les deux yeux de la visière deviennent des arcs fermés pendant 4 im puis se rouvrent ; le corps ne bouge pas. Petite touche de vie sur le carton final, au moment où le mot-symbole apparaît.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur fantôme qui pilote chaque étape",
+      "name_en": "ghost cursor",
+      "t": "0:00.23-0:15.35",
+      "frames": "f14-f921",
+      "fps": 60,
+      "mechanics": "Flèche noire à liseré blanc type macOS (≈ 2,3 % de la hauteur). Elle survole puis « clique » : Analyze (≈ 1,5-1,8 s), Looks right (≈ 4,0), cases (≈ 4,8 et 5,3), Start scan (≈ 5,8), Draft reply (8,0), V2 (9,0), Approve (10,0), glissé de la frise (10,5-11,3), Schedule (≈ 11,4). Pas d'onde de clic : le clic se lit au changement d'état (icône de chargement, coche). Dernier trajet de (77 %, 69 %) au ventre de la mascotte (52 %, 53 %) en ≈ 15 im (f906-f921), ease-out, pour se poser sur l'image de boucle.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe dans le champ et bouton qui s'active",
+      "name_en": "typing with enabled-state button",
+      "t": "0:00.50-0:02.00",
+      "frames": "f30-f120",
+      "fps": 60,
+      "mechanics": "« skinpalai.app » s'écrit lettre à lettre avec caret (11 caractères en ≤ 0,5 s, ≈ 20 car./s, fini vers 1,1 s). Le bouton « Analyze » passe du gris #E5E2DC à l'orange #E24E23 une fois l'URL complète (entre 1,0 et 1,5 s). À 2,0 s une icône de chargement tourne dans le bouton juste avant le morph.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastille de lecture avec barre de progression",
+      "name_en": "loading pill with progress bar",
+      "t": "0:02.00-0:02.50",
+      "frames": "f120-f150",
+      "fps": 60,
+      "mechanics": "Le champ blanc (≈ 78 % × 10 %) devient gris à f122, sombre à f126 et se contracte en pastille « Reading skinpalai.app » (≈ 64 % × 12 %) ; forme posée à f131 (11 im = 0,18 s). Le bouton orange de droite s'étire vers le centre et devient une barre fine sous le texte, qui se remplit jusqu'à toute la largeur à 2,5 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carte pré-dimensionnée remplie par étapes",
+      "name_en": "progressive disclosure card",
+      "t": "0:02.77-0:04.00",
+      "frames": "f166-f240",
+      "fps": 60,
+      "mechanics": "La carte SkinPal (≈ 75 % × 42 %) arrive avec titre, URL et une ligne ; la moitié basse reste vide ≈ 0,5 s. Puis « Audience · People fighting acne and dry skin » et 2 étiquettes (3,5 s), puis 4 étiquettes (4,0 s), en deux vagues. Lisible, mais le trou blanc à 3,0 s se voit.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Liste de correspondance avec barres de score",
+      "name_en": "match list with score bars",
+      "t": "0:04.00-0:06.00",
+      "frames": "f240-f360",
+      "fps": 60,
+      "mechanics": "« Where SkinPal fits · 3 of 24 subreddits » : 3 lignes (case, nom, barre orange, pourcentage 94 / 88 / 81 %). Le curseur coche la 1re puis la 3e ligne, le compteur « 2 selected » se met à jour, « Start scan » passe en icône de chargement à 6,0 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-move-f365.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs qui roulent en ease-out",
+      "name_en": "counter roll",
+      "t": "0:06.20-0:06.50 ; 0:12.50-0:14.00",
+      "frames": "f373-f390 ; f750-f840",
+      "fps": 60,
+      "mechanics": "« threads » monte d'environ 96 à 134 entre f373 et f385 (≈ +3 par image au début, +1 à la fin) puis atteint 139 vers 6,5 s : ease-out. Votes 12 → 31 → 48 entre 12,5 et 13,5 s (quasi linéaire). Clics 186 → 210 → 212 entre 13,5 et 14,0 s (ease-out). Les chiffres changent en place, sans roulement vertical.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f365.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Jauge circulaire de pertinence",
+      "name_en": "radial score gauge",
+      "t": "0:07.15-0:08.00",
+      "frames": "f430-f480",
+      "fps": 60,
+      "mechanics": "Anneau orange avec nombre au centre, en haut à droite de la carte de post (≈ 4 % du cadre). Le nombre passe de 0 à 76 en 12 im (f432-f444), puis 86 à 7,5 s et 92 à 8,0 s : ease-out très marqué (≈ expo.out) sur ≈ 0,9 s ; l'arc se remplit dans le sens horaire avec le nombre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f425.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte qui s'allonge pour révéler le brouillon",
+      "name_en": "card expand",
+      "t": "0:08.00-0:08.27",
+      "frames": "f480-f496",
+      "fps": 60,
+      "mechanics": "La carte de post passe d'environ 41 % à 57 % de la hauteur en restant centrée (haut 30 → 23 %, bas 71 → 80 %). Le bouton « Draft reply » se floute, s'étire et glisse en bas à droite pour devenir « Approve ». Un panneau #F8F6F4 avec puces V1/V2/V3 sort du flou. ≈ 15 im, ease-out, départ sur la barre bleu clair f481.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f486.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte d'IA en flux avec traîne estompée",
+      "name_en": "streaming text with fading tail",
+      "t": "0:08.15-0:08.90",
+      "frames": "f489-f534",
+      "fps": 60,
+      "mechanics": "Environ 37 mots apparaissent mot à mot, ≈ 1 mot par image (50 à 60 mots/s), sur des lignes déjà en place. Les 2 à 3 derniers mots apparus sont gris clair et foncent jusqu'au noir : une traîne en dégradé qui imite la génération d'un LLM. À 9,0-9,5 s, le clic sur V2 remplace tout le texte par une autre version.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f486.jpg, overview-02.jpg",
+      "illus": {"from": 488, "to": 506, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélecteur de versions segmenté",
+      "name_en": "segmented control",
+      "t": "0:09.00-0:09.50",
+      "frames": "f540-f570",
+      "fps": 60,
+      "mechanics": "Trois puces V1/V2/V3 sur fond beige ; la pastille noire glisse de V1 à V2 au clic du curseur, puis le texte de réponse change. Montre en une seconde qu'il existe plusieurs brouillons.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur horaire avec dépassement",
+      "name_en": "time scrubber with overshoot",
+      "t": "0:10.50-0:11.50",
+      "frames": "f630-f690",
+      "fps": 60,
+      "mechanics": "Carte « Schedule reply » : frise 6 AM–12 PM avec graduations. Le bouton noir est glissé de 7:30 à 9:05 puis revient à 9:00 : dépassement de 5 min, soit ≈ 1,4 % de la frise, comme un ressort. L'heure en haut à droite se met à jour en direct (7:30 → 9:05 → 9:00 AM) et l'étiquette orange « Peak » s'allume au-dessus de 9 h.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-005-move-f694.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Pastilles d'état sombres comme ponctuation",
+      "name_en": "status toasts as chapter beats",
+      "t": "0:06.27-0:07.00 ; 0:11.77-0:12.00 ; 0:14.27-0:14.50",
+      "frames": "f376-f420 ; f706-f720 ; f856-f870",
+      "fps": 60,
+      "mechanics": "Entre deux cartes blanches, une pastille #1A1814 (≈ 70 % × 13 %) avec icône orange résume ce que la machine vient de faire : « Scanning 2 subreddits · 139 threads », « 3 opportunities found », « Scheduled · Tue 9:00 AM », « 3 new opportunities ». Tenue 0,25 à 0,7 s, elle sert de titre de chapitre et de respiration.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Graphe linéaire qui se dessine avec infobulle",
+      "name_en": "line chart draw-on with tooltip",
+      "t": "0:13.00-0:14.00",
+      "frames": "f780-f840",
+      "fps": 60,
+      "mechanics": "La carte « Posted » s'agrandit vers le bas pour accueillir « Clicks this week » et une courbe noire à 7 points blancs avec aire #FCF1EE, tracée de gauche à droite. Vers 13,9 s le dernier point monte, devient orange et une infobulle noire « Sun 52 clicks » apparaît ; le compteur passe de 186 à 212.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-006-move-f845.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Sombre = la machine travaille, blanc = l'utilisateur décide",
+      "name_en": "semantic dark/light alternation",
+      "t": "0:02.00-0:14.50",
+      "frames": "f120-f870",
+      "fps": 60,
+      "mechanics": "Les états système (lecture, scan, planifié, nouvelles opportunités) sont des pastilles #1A1814 ; les écrans de décision (valider, cocher, rédiger, planifier) sont des cartes #FFFFFF. Chaque bascule passe par les gris moyens en ≈ 10 im. Le contraste fort crée un battement visuel régulier sans changer de fond.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f155.jpg, microM-002-move-f365.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Grille temporelle de 0,5 s et morphs de 15 images",
+      "name_en": "half-second grid",
+      "t": "0:00.00-0:16.00",
+      "frames": "f0-f959",
+      "fps": 60,
+      "mechanics": "Tous les gestes principaux démarrent à un multiple de 0,5 s ; chaque morph dure ≈ 15 im (10 im de forme + 5 im de netteté) ; temps de lecture de 0,5 à 1,8 s entre deux morphs. 14 états d'écran en 16 s et une micro-interaction environ toutes les 0,5 s. Régulier et lisible, mais sans accélération ni climax.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Départ sur le contretemps, arrivée sur la grosse caisse",
+      "name_en": "off-beat start, on-beat landing",
+      "t": "0:02.50-0:14.27",
+      "frames": "f151-f166, f361-f376, f421-f436, f481-f496, f691-f706, f841-f856",
+      "fps": 60,
+      "mechanics": "Chaque morph part sur le charleston (x,00 / x,50 s, barre bleu clair) et ses 15 im, soit une croche à 120 BPM, se terminent sur la grosse caisse (x,27 / x,77 s, barre bleue). Le contenu devient net 0 à 2 im avant la barre bleue ; un point vert d'attaque tombe sur l'image d'arrivée dans 5 morphs sur 6. Effet d'anacrouse : le geste « prend son élan » sur le temps faible et se pose sur le temps fort. Calage probablement obtenu par construction (grille de 0,5 s + piste à 120 BPM démarrant à t = 0).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f155.jpg, microM-003-move-f425.jpg, microM-006-move-f845.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Durée de 8 mesures pour boucler la musique",
+      "name_en": "8-bar loop length",
+      "t": "0:00.00-0:16.00",
+      "frames": "f0-f959",
+      "fps": 60,
+      "mechanics": "16,0 s = 32 temps = 8 mesures à 120 BPM. La musique est coupée net à 16,0 s, sans fondu, au milieu de sa pulsation ; comme elle commence par un charleston à 0,02 s, la lecture en boucle repart en phase avec l'image de boucle (probable). Les accents de phrase toutes les 2 mesures (1,27 ; 5,27 ; 9,27 ; 13,27 s) ne sont pas exploités visuellement.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Typo UI unique, hiérarchie par la graisse",
+      "name_en": "single-family UI typography",
+      "t": "0:00.00-0:16.00",
+      "frames": "f0-f959",
+      "fps": 60,
+      "mechanics": "Une seule grotesque géométrique arrondie (type Figtree, probable) : titres semi-gras ≈ 34 px (2,4 % de la hauteur), corps regular ≈ 24 px (1,7 %) en gris chaud, méta ≈ 20 px (1,4 %), boutons gras blancs sur orange. Mot-symbole gras de 78 px (5,4 %) sur 38 % de la largeur. Propre, mais pensé pour un écran d'ordinateur, pas pour une vidéo vue sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Un seul objet centré sur fond uni",
+      "name_en": "single centred focus",
+      "t": "0:00.00-0:16.00",
+      "frames": "f0-f959",
+      "fps": 60,
+      "mechanics": "Chaque état est un seul élément centré (cartes de 60 à 80 % de la largeur, centre à ≈ 51 % de la hauteur) sur un fond uni #F0EEEA ; pas de cadre d'appareil, pas de décor, aucun mouvement de caméra. L'œil ne cherche jamais, mais 20 à 40 % du cadre reste vide et aucun zoom ne cadre le mot clé.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres douces et flou de contenu",
+      "name_en": "soft shadows and content blur",
+      "t": "0:00.00-0:16.00",
+      "frames": "f0-f959",
+      "fps": 60,
+      "mechanics": "Cartes et pastilles posées sur une ombre très diffuse (flou ≈ 40 à 60 px, opacité ≈ 8 à 10 %, décalée vers le bas). Le flou gaussien (≈ 8 à 12 px au pic) ne sert qu'à masquer le changement de contenu pendant les morphs ; pas de grain, pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f155.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Showreel… go all out » n'a déclenché aucun effet spectaculaire : avec un nom de produit, Claude a basculé vers une démo d'interface sobre de style produit. Le mot « showreel » ne suffit pas ; il faut nommer l'énergie ou les effets voulus."},
+    {"kind": "inputs", "insight": "Aucun asset fourni : Claude a tout tiré du nom « RedSeed » (Red → Reddit, Seed → semer des réponses) : le métier du produit, un client fictif SkinPal, une mascotte, l'orange #E24E23. Le nom seul a suffi à générer un récit produit cohérent."},
+    {"kind": "structure", "insight": "Le prompt demande 15 s ; le résultat dure 16 s = 8 mesures à 120 BPM, avec une timeline en multiples de 0,5 s : une structure qui rend la synchro et la boucle automatiques dès qu'on pose une piste à 120 BPM."},
+    {"kind": "other", "insight": "« (Replace with your Project) » trahit un gabarit de prompt partagé : le même texte donne ailleurs des showreels abstraits. Ce que le nom du produit évoque pèse plus que le mot « showreel »."},
+    {"kind": "qa", "insight": "Rien sur la lisibilité ni sur le format : l'UI est rendue à l'échelle 1:1 dans un carré 1440, corps de texte ≈ 24 px (1,7 % de la hauteur), trop petit pour un fil social."},
+    {"kind": "build", "insight": "Pile non indiquée ; le flou CSS, les morphs de boîtes et les 60 fps réguliers suggèrent un rendu HTML (probable). Recette transposable en GSAP : une seule div dont on anime width, height, border-radius et background, plus un filter: blur sur le contenu qui change."}
+  ],
+  "steal": [
+    "Un seul conteneur qui se métamorphose (pastille sombre ↔ carte blanche) : forme et couleur en 10 im, contenu flouté puis net en 5 im, 15 im au total.",
+    "Garde un élément orange persistant qui change de rôle à chaque morph (bouton → barre de progression → point d'état) : l'œil suit la couleur, aucune coupe nécessaire.",
+    "Écris la timeline en multiples de 0,5 s et pose une piste à 120 BPM démarrant à t = 0 : chaque geste tombe sur la grille.",
+    "Lance le geste sur le contretemps pour que son arrivée (15 im plus tard à 120 BPM) tombe sur la grosse caisse.",
+    "Boucle parfaite : la dernière image (logo + curseur) est la première, et le logo s'écrase en premier élément d'interface dès l'image 1."
+  ],
+  "flaws": [
+    "Interface à l'échelle 1:1 dans un carré 1440 : corps de texte ≈ 1,7 % de la hauteur, illisible sur mobile, sans zoom.",
+    "Le même morph de 15 im revient une douzaine de fois : cohérent mais monotone, sans montée ni climax.",
+    "Prompt « showreel, go all out » non tenu : démo produit sage, aucun moment spectaculaire.",
+    "Carte pré-dimensionnée vide pendant ≈ 0,5 s vers 3,0 s avant l'arrivée de son contenu.",
+    "Synchro de grille seulement : les accents de phrase de la musique n'ont aucun écho visuel."
+  ],
+  "deep_study": {"worth": true, "why": "Le morph de conteneur (taille, rayon, couleur, flou du contenu, élément orange partagé) se joue en 15 images : seule une lecture image par image à 60 fps permet d'en copier les courbes et les décalages pour des promos SaaS en HyperFrames."}
+}

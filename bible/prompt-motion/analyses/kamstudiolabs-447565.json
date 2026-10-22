@@ -1,0 +1,335 @@
+{
+  "slug": "kamstudiolabs-447565",
+  "title": "Collision-driven music machine",
+  "handle": "@KamStudioLabs",
+  "family": "formes",
+  "craft": 4,
+  "craft_reason": "Système physique cohérent, synchronisé à l'image près, partition réellement composée et lisible ; mais plan fixe de 47 s, éléments minuscules dans un cadre sombre, presque aucun crescendo visuel.",
+  "summary": "Machine à billes « Étude for Falling Bodies » : cinq instruments (glockenspiel, marimba, basses, cymbales, batterie) rangés en lignes ; des canons tirent des billes lumineuses et chaque collision joue une note. 443 notes, 7 sections nommées (INTRO → CODA), synchro image-son parfaite par construction. Forte par sa logique et son écriture musicale ; faible en mise en scène : plan fixe, objets minuscules, peu de montée visuelle.",
+  "prompt_vs_result": [
+    "Une machine de 45 s qui joue un morceau original, chaque note devant venir d'une collision visible. Rien sur le style, les instruments, le tempo, le format ni le cadrage.",
+    "Claude a tout inventé : titre, ré mineur → ré majeur, 96 BPM, g = 1500 px/s², cinq instruments, canons et godets, 7 sections nommées, compteur de notes, palette nuit codée par couleur, vol d'un temps par bille.",
+    "La contrainte « chaque note = une collision » impose la synchro par construction : excellent cadrage. Il manquait : cadrage dynamique (zooms sur solos, tutti), taille des objets pour mobile, climax visuel, format vertical."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0E1A", "role": "fond nuit"},
+      {"hex": "#121829", "role": "vignette radiale claire au centre"},
+      {"hex": "#6FC3D9", "role": "glockenspiel (repos terne ≈ #3E6F80)"},
+      {"hex": "#D9963A", "role": "marimba ambre, barre de progression"},
+      {"hex": "#FFE2A0", "role": "cœur de flash d'impact marimba"},
+      {"hex": "#8E7FE0", "role": "barres de basse violettes (impact ≈ #D8CCFF)"},
+      {"hex": "#E85A5F", "role": "batterie corail (halo ≈ #FF9A9A)"},
+      {"hex": "#E3C55A", "role": "cymbales or, grand halo jaune"},
+      {"hex": "#E8E6E1", "role": "titre et horloge"},
+      {"hex": "#7A808C", "role": "texte secondaire, noms de notes"}
+    ],
+    "type": "Titre serif italique condensé (type Instrument Serif) ≈ 3,2 % de la hauteur ; tout le reste en mono (type JetBrains Mono) : horloge grasse ≈ 1,8 %, étiquettes capitales interlettrées ≈ 1 %, noms de notes ≈ 0,9 %.",
+    "texture": "Lueurs additives (glow, bloom) uniquement aux impacts ; traînées de comète derrière les billes (seul flou de mouvement) ; vignette radiale très douce ; aucun grain ; étincelles fines et anneaux d'onde elliptiques sur la batterie et les cymbales.",
+    "style": "Machine musicale générative, nuit néon pastel",
+    "coherence": "Un instrument = une couleur = une rangée ; même grammaire d'impact partout (flash, halo, rebond) ; le HUD de partition (section, horloge, compteur de notes, barre segmentée) relie image et musique. Ce qui casse : rien ne change d'échelle, le cadre ne réagit jamais aux changements de section, le fond reste inerte même au tutti."
+  },
+  "rhythm": {
+    "bpm": 96,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "96 BPM affiché à l'écran et mesuré (pulsation 10,22, très nette) : temps = 37,5 im à 60 fps (0,625 s), croche = 18,75 im, double croche ≈ 9,4 im. Aucune coupe : un seul plan fixe de 47,06 s. Les impacts tombent sur la grille : flashs détectés par zone et comparés aux attaques audio, 30/32 kick, 25/27 caisse claire, 86/91 cymbales, 71/73 glockenspiel, 136/160 marimba, 49/51 basses à ±2 im d'une attaque (médiane −0,7 im : l'image précède le son d'environ 12 ms). Densité : 443 notes en 42,5 s ≈ 10 notes/s, jusqu'à 12 billes en vol au tutti. Le détecteur signale 37 % de « maintiens » mais ce sont des passages où seules 1 à 3 billes de 12 px bougent (intro, FALL 36-41 s) : pas de vrai temps mort. Vrais temps morts : 0-0,40 s (machine au repos avant le premier tir) et la fin 44,6-47,0 s (2,4 s d'image figée pendant que l'accord résonne). Le « drop » auto à 1,25 s n'est que l'entrée du son après le silence initial.",
+    "timeline": [
+      {"t": "0:00-0:00.40", "what": "Machine au repos : cinq instruments éteints, HUD à 0:00.0, 0 / 443 notes", "technique": "plan d'exposition fixe"},
+      {"t": "0:00.40-0:01.00", "what": "Premier tir du canon marimba sur le temps (f24), vol d'un temps, impact sur D3 à f60 (horloge 0:00.0)", "technique": "anacrouse, vol d'un temps"},
+      {"t": "0:01-0:06", "what": "INTRO : marimba seul en croches (16 coups), 2 billes en vol en alternance", "technique": "ostinato visible, entrée par couches"},
+      {"t": "0:06-0:11", "what": "THEME : entrée simultanée du glockenspiel (mélodie) et des basses à f360", "technique": "entrée d'instrument = nouvelle couleur"},
+      {"t": "0:11-0:16", "what": "Charleston (hat) en croches à partir de f660", "technique": "pulsation visible"},
+      {"t": "0:16-0:26", "what": "GROOVE : crash + kick sur f960 (grand halo corail), kick 1 / 2& / 3&, caisse claire sur 2 et 4 ; une bille rebondit du kick à la caisse claire en 1 temps", "technique": "rebond enchaîné, halo d'impact"},
+      {"t": "0:25.38-0:25.85", "what": "Roulement de caisse claire en doubles croches (f1523, 1532, 1542, 1551)", "technique": "fill avant section"},
+      {"t": "0:26-0:36", "what": "LIFT : crash à f1560, le marimba passe en doubles croches (64 coups en 10 s), écran le plus dense", "technique": "densification = montée"},
+      {"t": "0:36-0:41", "what": "FALL : allègement, glockenspiel presque seul, kick épars (36,0 ; 38,5 ; 40,07 s), plus de caisse claire", "technique": "breakdown visible"},
+      {"t": "0:41-0:43.50", "what": "RISE : kick sur chaque temps (f2460, 2498, 2535, 2573), roulement de caisse claire en doubles croches f2535-f2601", "technique": "montée en tension"},
+      {"t": "0:43.50", "what": "CODA : tutti, ≈ 12 billes frappent ensemble les 5 instruments (f2610), crash et kick en grand halo", "technique": "tutti sur le temps fort"},
+      {"t": "0:43.55-0:44.60", "what": "Toutes les billes rebondissent puis filent vers les godets aux extrémités ; l'écran se vide", "technique": "vidange, fin physique"},
+      {"t": "0:44.60-0:47.06", "what": "Image figée, horloge 0:45.0, 443 / 443 notes, l'accord résonne", "technique": "fin en résonance"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Pas de planche microscope fournie : 3 planches extra avec barres de temps fabriquées. extra-01 : la bille quitte le canon sur la barre bleue f24 et touche D3 à f60, barre bleue f61 (impact 1 im avant la barre). extra-02 : impact kick f960, barre bleue + point vert f961 ; la bille rebondit et frappe la caisse claire à f998 (1 temps plus tard). extra-03 : tutti à f2610, temps à f2611. Mesure par zones sur toute la vidéo : 397 flashs d'impact sur 434 (91 %) à ±2 im d'une attaque audio, 395/434 à ±2 im d’un temps ou demi-temps (hasard ≈ 27 %), médiane −0,7 à −0,9 im. Indice auto : départs/demi-temps R = 0,997, p = 3,6e-9. Corrélation croisée flashs ↔ enveloppe audio maximale à −1 im (r = 0,58).",
+    "synced": ["impacts", "departs", "atterrissages", "flashs", "drop"],
+    "style_match": "Pièce de chambre percussive à 96 BPM (marimba, glockenspiel, batterie) : trajectoires balistiques et flashs brefs collent au caractère mallets ; la forme INTRO → CODA est lisible à l'écran.",
+    "how_built": "Synchro par construction : une partition (liste de notes horodatées, 443 notes) pilote à la fois le son (synthèse probable en WebAudio ou rendu hors ligne) et la physique ; chaque bille est tirée un temps avant sa note avec une vitesse calculée à rebours pour g = 1500 px/s² (balistique inverse), et ses rebonds sont visés sur la note suivante. Le prompt ne donne aucun tempo : c'est la contrainte « chaque note vient d'une collision visible » qui oblige à unifier son et image."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Collision = note (synchro par construction)",
+      "name_en": "Collision-triggered notes",
+      "t": "0:01.00-0:43.50",
+      "frames": "f60-f2610",
+      "fps": 60,
+      "mechanics": "Chaque son correspond à l'image exacte d'un contact bille/objet. Mesuré par zone (hausse de luminance) contre les attaques audio : 397/434 flashs à ±2 im, médiane −0,7 im (l'image précède le son de ≈ 12 ms, sens le plus tolérable). Kick f960 : flash et barre bleue + point vert f961. Aucun son sans collision visible, aucune collision muette.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 954, "to": 968, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Vol d'un temps (balistique inverse)",
+      "name_en": "One-beat flight, inverse ballistics",
+      "t": "0:00.40-0:01.02",
+      "frames": "f24-f61",
+      "fps": 60,
+      "mechanics": "La bille sort du canon marimba sur le temps (barre bleue f24) et touche D3 à f60, temps suivant à f61 : vol de 36-37 im ≈ 1 temps (37,5 im). Le rebond kick f960 → caisse claire f998 dure aussi 38 im. La vitesse de tir est calculée à rebours depuis l'heure de la note : départ ET arrivée tombent sur la grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 24, "to": 62, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Trajectoires physiques vraies au lieu de courbes d'accélération",
+      "name_en": "True ballistic motion (no easing)",
+      "t": "0:00.60-0:01.00",
+      "frames": "f36-f60",
+      "fps": 60,
+      "mechanics": "Vitesse horizontale constante (≈ 11 px/im = 660 px/s, pas réguliers de f36 à f60), verticale parabolique avec g = 1500 px/s² affiché dans le sous-titre ; apex vers f44-f46 puis chute qui accélère jusqu'à l'impact. Aucun ease : la gravité fait office de courbe (ease-in naturel à la chute, ease-out à la montée).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rebond qui enchaîne la note suivante",
+      "name_en": "Chained bounce",
+      "t": "0:16.00-0:16.63",
+      "frames": "f960-f998",
+      "fps": 60,
+      "mechanics": "Après le kick f960, la bille repart vers le haut-gauche (montée f961-f975, apex vers f976-f980), redescend en arc et frappe la caisse claire à f998, 1 temps plus tard. Une bille joue deux instruments ; même logique sur le marimba (rebonds vers la droite après l'impact f60). Économie d'objets et lien visuel entre deux sons.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Traînée de comète",
+      "name_en": "Comet trail",
+      "t": "0:00.40-0:44.60",
+      "frames": "f24-f2676",
+      "fps": 60,
+      "mechanics": "Chaque bille (≈ 12 px de diamètre, halo ≈ 30 px) laisse 6 à 8 échantillons fantômes de plus en plus transparents sur ≈ 5 diamètres (60-80 px), de la couleur de l'instrument. Seul flou de mouvement de la vidéo ; il rend la trajectoire lisible même sur une image fixe.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'impact et halo qui décroît",
+      "name_en": "Hit flash with decaying bloom",
+      "t": "0:01.00-0:01.17",
+      "frames": "f60-f70",
+      "fps": 60,
+      "mechanics": "À l'impact, la barre passe quasi blanche (#FFE2A0 au cœur) avec halo ambre ≈ 2× sa hauteur sur f60-f61, redescend en ambre f62-f65 puis s'éteint vers f69 : ≈ 10 im (0,17 s), décroissance rapide type ease-out. Kick : halo corail de rayon ≈ 15 % de la hauteur du cadre, décroît sur 12-15 im (f960-f975).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneau d'onde elliptique",
+      "name_en": "Elliptical ripple ring",
+      "t": "0:16.03-0:16.20",
+      "frames": "f962-f972",
+      "fps": 60,
+      "mechanics": "Un fin contour d'ellipse s'élargit autour de la peau du kick après l'impact et s'estompe en ≈ 10 im ; même anneau discret autour des barres touchées (G4 du marimba, A2 des basses sur l'image 16,0 s). Très faible contraste : lisible seulement en plein écran.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Étincelles d'impact sur la batterie et les cymbales",
+      "name_en": "Impact sparks",
+      "t": "0:43.50",
+      "frames": "f2610",
+      "fps": 60,
+      "mechanics": "4 à 8 courts traits radiaux autour de la caisse claire et des cymbales au moment du coup ; sur les cymbales s'ajoutent des petits arcs de vibration aux bords du plateau. Durée ≈ 6-8 im. Accent réservé aux métaux et peaux, pas aux lames.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Crash en grand halo sur les temps forts de section",
+      "name_en": "Crash bloom on section downbeats",
+      "t": "0:16.00 / 0:26.00 / 0:43.50",
+      "frames": "f960, f1560, f2610",
+      "fps": 60,
+      "mechanics": "La cymbale crash ne sonne que 3 fois, sur le premier temps de GROOVE, LIFT et CODA ; son halo jaune doux atteint un rayon ≈ 20 % de la hauteur du cadre, le plus grand de la vidéo. Accent rare = repère de structure.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-05.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement par couches rendu visible",
+      "name_en": "Visible layered arrangement",
+      "t": "0:01-0:43.50",
+      "frames": "f60-f2610",
+      "fps": 60,
+      "mechanics": "Chaque entrée d'instrument allume une nouvelle couleur : marimba seul (16 croches, 1-6 s) ; glockenspiel + basses à f360 (6,0 s) ; charleston en croches à f660 (11,0 s) ; kick + caisse claire + crash à f960 (16,0 s) ; marimba doublé en doubles croches au LIFT (64 coups en 10 s) ; FALL dépouillé (kick 3, caisse claire 0) ; RISE kick à chaque temps. Densité visuelle et intensité sonore corrélées (r = 0,58).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Roulement en doubles croches avant le changement de section",
+      "name_en": "Snare fill into section change",
+      "t": "0:25.38-0:25.85 / 0:42.25-0:43.35",
+      "frames": "f1523-f1551, f2535-f2601",
+      "fps": 60,
+      "mechanics": "4 coups de caisse claire espacés de 9-10 im (doubles croches) juste avant LIFT (f1560), puis 8 coups f2535-f2601 avant la CODA ; chaque coup est une bille visible, plusieurs billes rouges en vol simultané. Le spectateur voit la tension monter avant de l'entendre résoudre.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 2580, "to": 2612, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Tutti final sur le temps fort",
+      "name_en": "Final tutti hit",
+      "t": "0:43.50",
+      "frames": "f2604-f2620",
+      "fps": 60,
+      "mechanics": "≈ 12 billes frappent ensemble à f2610 (1 im avant le temps f2611) : 3 lames de glockenspiel, crash, 5 lames de marimba, 2 basses, kick. Tous les flashs et halos s'allument sur la même image, puis toutes les billes rebondissent vers le haut en éventail (f2612-f2620). Seul moment où tout l'écran s'illumine.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 2604, "to": 2622, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Cycle de vie complet : canon → rebonds → godet",
+      "name_en": "Launcher-to-bucket lifecycle",
+      "t": "0:43.55-0:44.60",
+      "frames": "f2612-f2676",
+      "fps": 60,
+      "mechanics": "Chaque rangée a un canon et un godet trapézoïdal à chaque extrémité. Après le tutti, les billes filent en arcs vers les godets latéraux et y tombent entre f2630 et f2672 ; l'écran se vide sans fondu ni disparition magique. Fin physiquement motivée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 2620, "to": 2676, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Anacrouse : la première bille part avant l'horloge",
+      "name_en": "Pickup launch before downbeat",
+      "t": "0:00.40-0:01.00",
+      "frames": "f24-f60",
+      "fps": 60,
+      "mechanics": "L'horloge reste à 0:00.0 jusqu'à 1,0 s ; la première bille est tirée à 0,40 s pour que la première note tombe exactement sur 0:00 de la partition. L'ouverture est un geste, pas un fondu.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Partition spatiale : un instrument par rangée, grave à gauche",
+      "name_en": "Spatial score layout",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Glockenspiel en haut (≈ 27 % de la hauteur), marimba au centre (≈ 56 %), basses en bas (≈ 92 %), cymbales en haut à droite, batterie en bas à droite. Hauteurs rangées de gauche (grave) à droite (aigu) comme un clavier, nom de note sous chaque lame (C♯5, B♭3…). Marges ≈ 2,5 % ; cadre très large, beaucoup de vide sombre entre les rangées.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Skeuomorphisme sobre des instruments",
+      "name_en": "Restrained skeuomorphic instruments",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Lames de marimba plus larges dans le grave, tubes résonateurs qui raccourcissent de G2 à C5 ; glockenspiel en petites lames arrondies ; basses en blocs rectangulaires ; caisse claire et kick en ellipses vues de 3/4 ; charleston à deux plateaux. Traits fins, remplissages sombres à ≈ 30 % de luminosité au repos.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur par instrument sur fond nuit",
+      "name_en": "Per-instrument color coding",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Cinq teintes : cyan (glockenspiel), ambre (marimba), violet (basses), corail (batterie), or (cymbales). Objets, billes, étiquettes et halos de chaque instrument partagent la teinte ; au repos elle est désaturée, à l'impact elle monte vers le blanc. On sait quel instrument joue sans entendre.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "HUD de partition : titre serif + données mono",
+      "name_en": "Score HUD",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Haut gauche : « Étude for Falling Bodies » en serif italique condensé ≈ 3,2 % de la hauteur, sous-titre mono gris « D minor → D major · 96 bpm · g = 1500 px/s² ». Haut droite : horloge mono grasse « 0:15.0 / 0:45.0 », puis nom de section en capitales et compteur « 101 / 443 notes struck » qui s'incrémente à chaque impact.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de progression segmentée par section",
+      "name_en": "Section-segmented progress bar",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Filet en haut du cadre découpé en 7 segments proportionnels aux sections (5 / 10 / 10 / 10 / 5 / 2,5 / 2,5 s) qui se remplissent en ambre en continu (linéaire). Les noms de section (INTRO, THEME, GROOVE, LIFT, FALL, RISE, CODA) changent à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond nuit inerte à vignette douce",
+      "name_en": "Static dark vignette background",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Bleu nuit #0A0E1A avec centre légèrement plus clair (#121829), sans aucune animation : il ne pulse ni au kick ni au tutti. Lisibilité maximale des lueurs, mais aucune contribution au crescendo.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan fixe intégral",
+      "name_en": "Locked-off single shot",
+      "t": "0:00-0:47",
+      "frames": "f0-f2819",
+      "fps": 60,
+      "mechanics": "Aucune coupe, aucun zoom, aucun recadrage pendant 47 s. Avantage : la machine entière reste lisible comme un schéma. Défaut : le FALL (glockenspiel seul) et la CODA auraient mérité un push-in ; les billes restent à ≈ 0,6 % de la largeur.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fin en résonance figée",
+      "name_en": "Static ring-out ending",
+      "t": "0:44.60-0:47.06",
+      "frames": "f2676-f2819",
+      "fps": 60,
+      "mechanics": "Une fois les billes dans les godets, l'image ne bouge plus pendant 2,4 s (147 im) : horloge 0:45.0, 443 / 443 notes. Le son de l'accord final résonne ; à l'image, rien ne l'accompagne (ni décroissance de lumière ni titre).",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Une seule phrase-contrainte (« every note comes from a visible collision ») suffit à garantir une synchro parfaite : elle oblige le modèle à générer son et image à partir de la même liste d'événements. Leçon : formuler la synchro comme une règle causale plutôt que comme « sync to the beat »."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a écrit une vraie forme musicale en 7 sections (INTRO, THEME, GROOVE, LIFT, FALL, RISE, CODA) avec entrées d'instruments, fills et tutti, puis l'a affichée à l'écran. Demander « an original piece » pousse le modèle à composer, pas seulement à boucler."},
+    {"kind": "build", "insight": "Pile HTML : simulation déterministe (g = 1500 px/s²) avec vitesses de tir calculées à rebours depuis l'heure de chaque note, vol d'un temps, et son synthétisé à partir de la même partition (probable). Résidu mesuré : image ≈ 0,7 im avant le son."},
+    {"kind": "qa", "insight": "Le compteur « x / 443 notes struck » sert d'auto-vérification visible : il prouve que chaque note a sa collision. Bon réflexe à réutiliser pour toute pièce générée à partir de données."},
+    {"kind": "inputs", "insight": "Rien sur le format, l'échelle ni la caméra : le modèle choisit un 16:9 plan fixe façon schéma, avec des objets minuscules. Il aurait fallu préciser : vertical ou 16:9, taille minimale des objets, zooms sur les moments clés, climax visuel."},
+    {"kind": "other", "insight": "Le style « nuit + lueurs néon pastel + titre serif italique + données mono » est le registre par défaut de Claude pour les pièces génératives : élégant mais peu distinctif ; une direction artistique explicite l'aurait sorti de ce défaut."}
+  ],
+  "steal": [
+    "Écrire la partition d'abord (notes horodatées), puis lancer chaque objet un temps avant sa note : la synchro devient une propriété du code, plus un réglage à l'œil.",
+    "Un instrument = une couleur = une rangée, hauteurs rangées du grave à gauche à l'aigu à droite : l'œil lit la mélodie comme sur un clavier.",
+    "Grammaire d'impact unique : flash quasi blanc 1-2 im, halo qui s'éteint en 8-15 im, rebond ; image d'impact 0-1 im avant le son.",
+    "Afficher la structure (nom de section, barre de progression segmentée, compteur de notes) transforme une simulation en morceau lisible.",
+    "Annoncer un changement de section par un roulement visible en doubles croches, puis un accent rare (grand halo de crash) sur le premier temps."
+  ],
+  "flaws": [
+    "Plan fixe de 47 s : aucun zoom ni recadrage sur le solo du FALL ou sur le tutti final.",
+    "Objets minuscules (billes ≈ 12 px sur 1920) et beaucoup de vide sombre : illisible sur téléphone.",
+    "Peu de crescendo visuel : fond, échelle et lumière ne suivent pas la montée LIFT → RISE → CODA.",
+    "Fin figée de 2,4 s après la vidange des billes : l'accord résonne sur une image morte.",
+    "Look « lueurs néon sur fond nuit » générique, déjà vu dans beaucoup de pièces génératives IA."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Cas d'école de synchro par construction (vol d'un temps, impact 0-1 im avant le son, fills et tutti visibles) : l'étude image par image à 60 fps de la réponse d'impact (flash, halo, rebond) et des trajectoires donne des valeurs directement transposables en GSAP. La mise en scène, elle, est pauvre."
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "slug": "antonio-kodheli-490109",
+  "title": "Prompt Motion site promo",
+  "craft": 4,
+  "craft_reason": "Caméra continue exacte, raccords géométriques parfaits et synchro au temps près ; pas de typographie cinétique et 6,5 s de maintiens (Copied + carte finale) cassent la règle « rien ne s'arrête ».",
+  "style": {
+    "family": "interface produit réelle, minimal éditorial, caméra continue",
+    "palette": ["#F7F7F4", "#111111", "#F1EFEB", "#FCFCFC", "#F0442C", "#E64B43", "#C9FF26", "#312FF1"],
+    "type": ["Geist Semibold (titres)", "Geist Regular (accroche, UI)", "Geist Mono Regular (prompt)"],
+    "texture": "aplats, ombres portées douces, filet 1 px sur les tuiles, flou de zoom fort sur les mouvements caméra",
+    "mood": "calme, précis, crédible ; énergie apportée par les clips de la galerie"
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "acts": [
+      "0-0,7 s : accroche, recul depuis un reel plein cadre jusqu'à la page d'accueil",
+      "0,7-6,2 s : page vivante, dérive caméra, défilement de la grille",
+      "6,2-8,3 s : whip dans une tuile, rafale de 3 reels sur le drop, retour par rétrécissement",
+      "8,3-13,0 s : curseur, clic, la tuile s'ouvre en page d'entrée",
+      "13,0-16,1 s : poussée sur le prompt, surligneur, Copy -> Copied",
+      "16,1-18,0 s : la page sort, la pastille devient l'URL, titre et accroche montent, rail de tuiles",
+      "18,0-23,1 s : carte finale fixe (poster)"
+    ]
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Le produit comme seul matériau",
+      "name_en": "product-as-footage",
+      "t": "0:00.00-0:23.08",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "Aucune image inventée : header, grille, page d'entrée, prompt et bouton Copy réels ; chaque clip garde son @handle. Récit = parcours utilisateur réel : découvrir, regarder, ouvrir, copier, aller sur le site.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul depuis le plein cadre",
+      "name_en": "pull-back reveal",
+      "t": "0:00.10-0:00.67",
+      "frames": "f3-f20",
+      "fps": 30,
+      "mechanics": "Plein cadre tenu 3 im (f0-f2). Échelle 100 % -> 27 % (taille d'une tuile) : 90 % du trajet en 9 im (f3-f12), atterrissage en 8 im (f12-f20). Ease-in-out sur échelle logarithmique. Flou de zoom fort f4-f9. Rayon de coin 0 -> ~8 px.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f8.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Accroche posée sur le temps 1",
+      "name_en": "tagline landing on beat 1",
+      "t": "0:00.60-0:00.67",
+      "frames": "f18-f20",
+      "fps": 30,
+      "mechanics": "La ligne d'accroche apparaît floue à f18, nette à f19 (2 im) ; 3-5 im après b1 (f15). Le header arrive porté par le recul caméra.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f8.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dérive caméra pendant les maintiens",
+      "name_en": "camera creep",
+      "t": "0:01.00-0:04.50",
+      "frames": "f30-f135",
+      "fps": 30,
+      "mechanics": "Poussée quasi linéaire x1,15 en 3,5 s (titre de 45 % à 53 % de la largeur). Garde le maintien vivant sans attirer l'œil.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille vivante à boucles déphasées",
+      "name_en": "staggered live previews",
+      "t": "0:05.83-0:06.20",
+      "frames": "f175-f186",
+      "fps": 30,
+      "mechanics": "Chaque tuile boucle une fenêtre sans coupe ; fondu enchaîné d'environ 10-12 im à la couture ; coutures des tuiles voisines décalées de 1 à 10 im. Le fond ne gèle jamais.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Défilement de page",
+      "name_en": "page scroll",
+      "t": "0:04.60-0:05.50",
+      "frames": "f138-f165",
+      "fps": 30,
+      "mechanics": "La page monte d'environ 45 % de la hauteur (le header sort), ease-in-out sur ~25 im, sans flou. Départ sur b9 (4,5 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f148.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée éclair dans une tuile",
+      "name_en": "whip-in zoom",
+      "t": "0:06.20-0:06.40",
+      "frames": "f186-f192",
+      "fps": 30,
+      "mechanics": "Tuile de ~22 % à 100 % de la largeur (x4,5) en 6 im : petit pas (f186), très grands pas avec flou de zoom (f187-f190), petit pas (f191), arrêt (f192). Coins -> 0. Atterrit 3 im avant b13 pour que le coup fort de 6,5 s tombe sur le plein cadre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 184, "to": 193, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rafale sur le drop",
+      "name_en": "beat burst montage",
+      "t": "0:06.40-0:08.03",
+      "frames": "f192-f240",
+      "fps": 30,
+      "mechanics": "3 reels plein cadre, coupes franches à f209 (6,97 s) et f224 (7,47 s) ; durées 17 / 15 / 17 im (~1 temps chacun). Coupes 1 im avant le temps théorique. Pastille @handle sombre en bas à gauche (x ~4 %, y ~88 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f209.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord par rétrécissement dans sa tuile",
+      "name_en": "shrink-back match cut",
+      "t": "0:08.03-0:08.30",
+      "frames": "f241-f249",
+      "fps": 30,
+      "mechanics": "Le reel rouge passe de 100 % à ~22 % de la largeur et se range dans sa case. 8 im : petits pas (f241-f242), très grands avec flou de zoom (f243-f246), petits (f247-f249). Départ sur b16. Géométrie du whip inversée.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f246.jpg",
+      "illus": {"from": 240, "to": 250, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur à halo d'accent",
+      "name_en": "cursor halo",
+      "t": "0:08.90-0:14.60",
+      "frames": "f268-f438",
+      "fps": 30,
+      "mechanics": "Flèche noire + disque #F0442C à ~45 % d'opacité, diamètre ~34 px (2,7 % de la largeur). Trajets ~10 im en ease-out. À f268, 3 curseurs à l'écran (le nôtre + 2 dans les clips) ; notre curseur passe sur un handle.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f286.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tuile qui s'ouvre en page",
+      "name_en": "container transform",
+      "t": "0:10.53-0:10.93",
+      "frames": "f316-f328",
+      "fps": 30,
+      "mechanics": "Clic sur b21. La tuile grandit (~x1,4) et glisse à gauche pour devenir la carte vidéo (x 10-43 %) ; la grille s'efface en fondu f323-f327 ; la colonne droite apparaît. 12 im, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f327.jpg",
+      "illus": {"from": 314, "to": 330, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Construction en cascade de la colonne d'info",
+      "name_en": "staggered build",
+      "t": "0:10.90-0:11.23",
+      "frames": "f327-f337",
+      "fps": 30,
+      "mechanics": "Titre (f327), boîte du prompt (f331-f333), méta Model/Stack/Posted (f335-f337) : fondu + légère montée, ~4 im entre blocs.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f327.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée x1,5 sur le prompt",
+      "name_en": "push-in",
+      "t": "0:12.97-0:13.40",
+      "frames": "f389-f402",
+      "fps": 30,
+      "mechanics": "Poussée de 13 im en ease-in-out centrée sur la boîte du prompt ; la carte vidéo sort à gauche en 5 im (f392-f397) en accélérant. Départ sur b26.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f396.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Surligneur balayé",
+      "name_en": "highlighter wipe",
+      "t": "0:13.53-0:13.80",
+      "frames": "f406-f414",
+      "fps": 30,
+      "mechanics": "Bloc plein #F0442C qui pousse de gauche à droite derrière « One shape, never cut: » en 7 im (ease-out probable) ; le texte passe en blanc à f413-f414. Départ sur b27.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Copy devient Copied",
+      "name_en": "button state morph",
+      "t": "0:14.50-0:14.60",
+      "frames": "f435-f438",
+      "fps": 30,
+      "mechanics": "Pastille blanche -> grise (f436) -> noire avec « ✓ Copied » (f438) ; largeur ~x1,6 ; 3 im. Clic sur b29.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie latérale de la page",
+      "name_en": "slide-off",
+      "t": "0:16.13-0:16.27",
+      "frames": "f484-f488",
+      "fps": 30,
+      "mechanics": "La page sort à gauche en 4-5 im en accélérant (~10, 12, 18, 22 % de la largeur par image), sans aucun flou de mouvement : léger stroboscope.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f484.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Élément relais qui devient le CTA",
+      "name_en": "hero element relabel",
+      "t": "0:16.27-0:16.80",
+      "frames": "f488-f504",
+      "fps": 30,
+      "mechanics": "La pastille « Copied » reste quand la page part, suit un arc de (83 %, 26 %) à (~10 %, 62 %) en 16 im (ease-in-out) ; à mi-course (f496-f498) son texte passe en fondu flou à « ● prompt-motion.com », largeur ~x1,8 ; elle se pose à sa place de carte finale.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 486, "to": 506, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée à travers un masque",
+      "name_en": "mask slide-up reveal",
+      "t": "0:16.80-0:17.20",
+      "frames": "f504-f516",
+      "fps": 30,
+      "mechanics": "« Prompt Motion » monte depuis une ligne de coupe invisible en 4 im (f504-f508, ease-out) ; ligne 1 de l'accroche f508-f510, ligne 2 f513-f516 : décalage de 4-6 im. Accroche citée mot pour mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Rail vertical de tuiles",
+      "name_en": "rising rail",
+      "t": "0:17.13-0:18.00",
+      "frames": "f514-f540",
+      "fps": 30,
+      "mechanics": "Colonne de 3 tuiles (x 64-95 %) qui monte du bas en ~26 im, ease-out, puis dérive à peine ; pose finale : 2 tuiles entières + handles, la 3e coupée en haut.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f517.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte finale poster",
+      "name_en": "end card",
+      "t": "0:18.00-0:23.08",
+      "frames": "f540-f689",
+      "fps": 30,
+      "mechanics": "Titre à gauche (x 6 %, largeur 52 %, capitale ~10 % de la hauteur), accroche sur 2 lignes, pastille noire 61 px avec ombre douce ; rail à droite. 5 s sans action nouvelle (seuls les clips jouent).",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Peau neutre et un seul accent",
+      "name_en": "single-accent system",
+      "t": "0:00.00-0:23.08",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "Fond #F7F7F4, noir #111111, gris chaud #F1EFEB ; accent #F0442C utilisé 3 fois seulement (surligneur, halo, point de l'URL). Toute la couleur saturée vient des clips.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Paire Geist et Geist Mono",
+      "name_en": "UI + mono pairing",
+      "t": "0:10.93-0:16.13",
+      "frames": "f328-f484",
+      "fps": 30,
+      "mechanics": "UI en Geist (titres Semibold ~5,6 % de la hauteur), prompt en Geist Mono ~2,4 % de la hauteur après la poussée (17 px en 720p) : à peine lisible, illisible sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pastilles d'attribution",
+      "name_en": "handle chips",
+      "t": "0:06.40-0:08.03",
+      "frames": "f192-f240",
+      "fps": 30,
+      "mechanics": "Pastille sombre (avatar + @handle blanc) en bas à gauche des reels plein cadre, dans la zone sûre ; ligne avatar + handle sous chaque tuile.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f209.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Timeline écrite en temps musicaux",
+      "name_en": "beat-grid timeline",
+      "t": "0:00.00-0:23.08",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "120 BPM = 15 im par temps. Actions sur b1, b9, b13, b14, b15, b16, b21, b26, b27, b29, b32, b34 ; toutes à 1-4 im du temps, souvent 1 im avant.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement réservé à la caméra",
+      "name_en": "camera-only motion blur",
+      "t": "0:00.13-0:08.20",
+      "frames": "f4-f246",
+      "fps": 30,
+      "mechanics": "Flou de zoom fort sur les 3 grands mouvements d'échelle (f4-f9, f187-f190, f243-f246) ; aucun flou sur les micro-mouvements d'UI ; manque sur la sortie latérale f484-f488.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f246.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens morts en fin de film",
+      "name_en": "dead holds",
+      "t": "0:14.60-0:23.08",
+      "frames": "f438-f689",
+      "fps": 30,
+      "mechanics": "1,5 s figé sur « Copied » (14,6-16,1 s) puis 5 s de carte finale : 6,5 s sans action nouvelle, 28 % de la durée.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Structure écrite en temps musicaux (b0-46) dans un fichier de timeline : toutes les actions tombent à 1-4 images d'un temps. Écrire en temps plutôt qu'en secondes produit la synchro."},
+    {"kind": "build", "insight": "Caméra pilotée par (focus x, focus y, échelle log) et rayon de coin qui tombe à 0 au plein cadre : cette règle géométrique rend exacts le recul, le whip et le raccord retour."},
+    {"kind": "inputs", "insight": "Matériau limité au vrai site (header, grille, page d'entrée, prompt réel) : aucune invention, crédibilité maximale."},
+    {"kind": "direction", "insight": "Un seul accent réservé à 3 usages nommés : l'accent devient un signal de lecture au lieu d'une décoration."},
+    {"kind": "banned", "insight": "L'interdit « pas de bouton Generate » ne visait que les inventions ; deux clips réels choisis en montrent un. Il faut étendre les interdits au contenu réel sélectionné."},
+    {"kind": "banned", "insight": "« Dead holds » interdit, mais la structure donne 7 s d'outro (b32-46) : la structure l'emporte et produit 5 s de carte fixe."},
+    {"kind": "qa", "insight": "Rendus fixes à chaque coupe, contrôle des gels et des sauts d'une image, critique neuf : aucun glitch visible. Mix demandé à -14 LUFS : mesuré -14,1 LUFS intégrés (-2,6 dBTP)."},
+    {"kind": "other", "insight": "Prompt en 1920x1080, fichier publié en 1280x720 (recompression probable de la plateforme)."}
+  ],
+  "steal": [
+    "Écrire la timeline en temps (120 BPM à 30 fps = 15 im par temps) et poser chaque action sur le temps ou 1 image avant.",
+    "Entrer dans un contenu par un zoom éclair de 6 im avec flou de zoom et coins -> 0 au plein cadre ; atterrir 2-3 im avant le coup fort.",
+    "Sortir en rétrécissant le dernier plan dans sa place d'origine (8 im, ease-in-out) : raccord gratuit et lisible.",
+    "Faire survivre un élément d'UI à la transition et le relabelliser en CTA pendant un trajet en arc de ~16 im.",
+    "Peau neutre et un seul accent, réservé aux 3 signaux à lire (quoi lire, où cliquer, où aller)."
+  ],
+  "flaws": [
+    "6,5 s sans action nouvelle (1,5 s sur Copied + 5 s de carte finale), 28 % de la durée.",
+    "Texte du prompt en mono à ~2,4 % de la hauteur après la poussée : illisible sur téléphone.",
+    "Bouton « Generate » visible dans deux clips réels malgré l'interdit du prompt.",
+    "Jusqu'à 3 curseurs à l'écran à 0:08.9 ; notre curseur passe sur un handle.",
+    "Sortie latérale de la page sans flou de mouvement (~20 % de la largeur par image) : saccade.",
+    "Aucune typographie cinétique : tout le texte est de l'UI fixe."
+  ],
+  "family": "produit",
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "12 gestes-clés sur 16 à ±2 im d'une barre bleue (hasard 33 %, p ≈ 8e-4), 5/16 à ±1 im. Planches : rétrécissement f241, clic qui ouvre la tuile f316, poussée f390 et 1re ligne d'accroche f509 sur une barre bleue (±1 im) ; surligneur de la barre bleue f405 à la bleu clair f413 (attaque forte) ; les 2 coupes de la rafale (f209, f224) 2 im avant les barres bleues f211 et f226. La musique cesse de « respirer » (creux toutes les 2 s) à 6,5 s, sur l'atterrissage du whip et la rafale. Ratés : whip posé 4 im avant le temps, sortie de page et rail 3,5 im avant un demi-temps. L'indice automatique (aucune synchro) est faussé par les previews qui bougent sans cesse dans les tuiles.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "camera",
+      "texte",
+      "drop"
+    ],
+    "style_match": "Électro entraînante à 120 BPM, pulsation nette, sans voix : colle à l'UI calme et précise ; le drop porte la rafale de reels, seul moment nerveux.",
+    "how_built": "Prompt écrit en temps (120 BPM, 46 temps, scènes b0–b46), tous les repères dans timeline.ts en temps, piste conformée à 120 BPM avec le drop sur la rafale, bruitages posés sur leurs pics mesurés, mix à −14 LUFS (mesuré −14,1)."
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "slug": "nft-chen-5f8bb0",
+  "title": "Porco Rosso sunset dogfight",
+  "handle": "@NFT_Chen",
+  "family": "3d",
+  "craft": 4,
+  "craft_reason": "Rendu Three.js remarquable (nuages cel-shadés, palette coucher de soleil, grain, flare) et texte d'intro posé sur les notes ; mais un seul plan de 14 s, adversaire invisible, typo d'intro tassée.",
+  "summary": "Hommage temps réel à Porco Rosso : un chasseur crème à cocardes tricolores vole au coucher du soleil entre des cumulus violets, filmé en caméra de poursuite continue. Un poème s'empile mot à mot (NATURE BRINGS YOU PEACE) puis laisse place à « just breathe. » juste avant l'entrée de la musique, qui coïncide avec l'ouverture de la lumière. Très belle ambiance, mais aucun montage et un combat seulement suggéré.",
+  "prompt_vs_result": [
+    "Recréer en web 3D le combat aérien de Porco Rosso au coucher du soleil sur la mer : chasseur blanc-vert-rouge, cumulus violets, reflets sur l'eau, mouvements de caméra « Ghibli », et écrire « just breathe. » à l'écran.",
+    "Claude a choisi : caméra de poursuite verrouillée derrière l'avion, nuages en aplats cel-shadés, grain pellicule, flare anamorphique, traçantes, sous-titres de manœuvre (Swallow, Raven, Scissors, Spiral dive) et probablement le poème NATURE BRINGS YOU PEACE.",
+    "Les noms visuels du prompt (livrée, nuages violets, reflets) sont tous rendus fidèlement. « 空战 » et « 吉卜力运镜 » sans découpage donnent un plan unique où l'ennemi n'apparaît jamais : il fallait lister les plans, la durée et l'adversaire."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#22223A", "role": "ciel de nuit indigo (intro)"},
+      {"hex": "#3C243C", "role": "ombres prune, fond dominant"},
+      {"hex": "#6C3C9C", "role": "cumulus violets, aplat principal"},
+      {"hex": "#84549C", "role": "cumulus violets éclairés"},
+      {"hex": "#B4546C", "role": "nuages roses magenta, mer au couchant"},
+      {"hex": "#CC846C", "role": "corail du ciel au coucher"},
+      {"hex": "#E49C6C", "role": "pêche lumineux, crêtes des nuages et reflets"},
+      {"hex": "#F5D2A8", "role": "fuselage crème de l'avion"},
+      {"hex": "#2E9E6A", "role": "vert des cocardes et de la dérive"},
+      {"hex": "#C8303A", "role": "rouge des cocardes et de la dérive"},
+      {"hex": "#D8C8E8", "role": "rubans de traînée lavande et traçantes"},
+      {"hex": "#FFFFFF", "role": "texte"}
+    ],
+    "type": "Serif didone (Bodoni probable) : NATURE, PEACE en capitales grasses ≈ 6 % de la hauteur, BRINGS, YOU maigres ≈ 4 %, interlignage négatif ; « just breathe. » bas de casse ≈ 3 % ; légendes sans serif très espacées ≈ 1,5 %.",
+    "texture": "Grain pellicule fin et rayures blanches verticales/diagonales visibles sur les fonds sombres ; vignettage ; flare anamorphique horizontal avec orbes de bokeh (5,0-6,0 s) ; léger bloom sur les crêtes des nuages ; nuages en ombrage toon (3-4 aplats à bords doux) ; mer avec scintillement spéculaire ; avion en ombrage plat ; pas de flou de mouvement.",
+    "style": "Ghibli temps réel, couchant violet",
+    "coherence": "Le système tient par la palette complémentaire violet/orange appliquée à tout (nuages, mer, avion teinté), par le grain unique et par une seule famille serif pour le texte. Il se fissure sur les légendes HUD en sans serif technique (ton jeu vidéo) qui contredisent le ton contemplatif de « just breathe. », et sur la lumière violette qui fait virer les cocardes vertes au bleu."
+  },
+  "rhythm": {
+    "bpm": 76,
+    "sync": "lache",
+    "dead_time": "aucun",
+    "notes": "Tempo global estimé 93,3 BPM (netteté 6,1), mais la piste a deux parties : une intro calme (0-4,0 s, ≈ -33 dB, notes de piano isolées à f4, f12, f26, f44, f57, f92) puis une entrée pleine à 4,00 s (f120, +20 dB, basses), mesurée seule à 76,2 BPM (netteté 7,2, temps à 3,996 / 4,783 / 5,57 / 6,358 / 7,145 / 7,933 s…). Aucune coupe (1 plan de 13,9 s, 417 im à 30 fps) et aucun maintien statique : la caméra bouge en permanence. Densité d'événements faible : 4 apparitions de mots en 3,3 s, 2 changements de légende, 3 rafales de traçantes, 1 flare, 1 tonneau. L'intro est calée sur les notes (mots 2 à 4 im avant les attaques), la suite vole librement ; seule la courbe d'énergie globale suit la musique (r = 0,56 ; mouvement ×1,6 après l'entrée).",
+    "timeline": [
+      {"t": "0:00-0:00.8", "what": "Ciel de nuit indigo, avion crème vu de derrière-dessus en virage à gauche ; NATURE en capitales grasses au centre ; légende « REVERSAL — RAVEN TAKES THE LEAD » en bas", "technique": "caméra de poursuite + titre serif"},
+      {"t": "0:00.8-0:01.4", "what": "BRINGS apparaît sec à f24, YOU à f42, empilés sous NATURE avec interlignage négatif", "technique": "apparition mot à mot sur les notes"},
+      {"t": "0:02.0-0:02.3", "what": "La légende se fond (f60-f65) puis « SWALLOW · SCISSORS » apparaît (f66-f69) ; l'avion roule d'environ 50° vers la droite (f56-f80)", "technique": "légende HUD en fondu enchaîné"},
+      {"t": "0:02.77-0:04.0", "what": "Rafale de traçantes blanches tombant du haut à droite (dès f83)", "technique": "traçantes = adversaire hors champ"},
+      {"t": "0:03.27", "what": "PEACE en capitales grasses à f98 ; bloc de 4 lignes complet", "technique": "apparition mot à mot"},
+      {"t": "0:03.87", "what": "Le bloc disparaît en 1 image, remplacé par « just breathe. » minuscule (f116), 4 im avant l'entrée de la musique (f120)", "technique": "remplacement sec avant le drop"},
+      {"t": "0:04.0-0:05.0", "what": "La musique entre ; l'avion pique, la mer au couchant apparaît avec ses reflets orange, le ciel passe de l'indigo au corail", "technique": "ouverture de lumière sur l'entrée musicale"},
+      {"t": "0:05.0-0:06.0", "what": "Flare anamorphique horizontal qui traverse le cadre de y ≈ 25 % à 65 % avec orbes ; légende effacée (f155-f161) ; traçantes à droite", "technique": "lens flare anamorphique"},
+      {"t": "0:06.5-0:06.8", "what": "Tonneau : la caméra passe du ventre violet au dos crème de l'avion en ≈ 8 im (f197-f204), sur l'attaque audio de 6,56 s", "technique": "tonneau caméra liée"},
+      {"t": "0:07.0-0:08.0", "what": "Avion crème incliné devant un mur de cumulus éclairés ; traçantes horizontales entrant par la gauche à f235", "technique": "traçantes + parallaxe des nuages"},
+      {"t": "0:08.0-0:09.5", "what": "Montée vers les cumulus violets, l'avion passe devant le nuage, l'horizon bascule à ≈ -30°", "technique": "roulis de caméra"},
+      {"t": "0:09.5-0:11.3", "what": "Avion dans l'ombre violette (cocardes virées au bleu), îlots minuscules sur la mer, horizon qui tourne", "technique": "lumière ambiante teintée"},
+      {"t": "0:11.3-0:13.9", "what": "Légende « SWALLOW · SPIRAL DIVE » (≈ f339) ; spirale lente, horizon presque vertical (≈ 80°), mur de nuages pêche ; fin sans titre ni résolution", "technique": "piqué en spirale, fin ouverte"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Calage mesuré à l'image (luminance de la zone de texte) et à l'audio (flux spectral image par image). Intro : NATURE présent dès f0 (note à f4, -4 im), BRINGS à f24 (note f26, -2 im), YOU à f42 (note f44, -2 im), PEACE à f98 (note f92, +6 im), « just breathe. » à f116 (entrée pleine à f120, -4 im). Sur la grille globale à 93,3 BPM : BRINGS +1 im, YOU 0, PEACE -2, remplacement -4. Bilan intro : 4 événements sur 5 tombent 2 à 4 im avant une attaque (hasard ≈ 45 % vu la densité des notes). Partie principale (76,2 BPM) : tonneau f197 sur l'attaque de 6,56 s mais à 6 im du temps, traçantes f235 à -3 im du temps 7,933, légende SPIRAL DIVE f339 à -7 im du temps et -5 im du demi-temps, flare et piqué non calés : 1 sur 4, niveau du hasard. Indice automatique : aucune synchro (meilleur p corrigé = 1,0), corrélation d'énergie r = 0,56.",
+    "synced": ["texte", "apparitions", "couleur"],
+    "style_match": "Piano calme puis nappe chaude à 76 BPM : colle à la contemplation (« just breathe. ») et aux courbes douces, pas à l'idée de combat aérien.",
+    "how_built": "Prompt sans aucune indication sonore ni temporelle. La scène Three.js est probablement capturée puis la musique ajoutée au montage par l'auteur (probable) : le texte d'intro a pu être placé sur les notes, le vol, lui, tourne librement. L'ouverture de lumière à 4 s vient de la trajectoire de vol plus que d'un calage."
+  },
+  "techniques": [
+    {
+      "cat": "camera",
+      "name_fr": "Caméra de poursuite verrouillée derrière l'avion",
+      "name_en": "Locked chase cam",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Caméra fixée derrière et au-dessus de l'avion, à ≈ 1,5 envergure. L'avion reste dans une zone stable : centre à ≈ 55 % en x et 65-72 % en y, envergure ≈ 30-35 % de la largeur. Il ne dérive que de 3-5 % du cadre pendant les virages (léger retard de la caméra). C'est le monde qui défile et tourne autour. Aucune coupe en 13,9 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Roulis de caméra lié à l'avion (horizon qui bascule)",
+      "name_en": "Banking camera roll",
+      "t": "0:08.0-0:13.9",
+      "frames": "f240-f416",
+      "fps": 30,
+      "mechanics": "La caméra hérite du roulis de l'avion : l'horizon passe de ≈ -30° (f255) à presque vertical (≈ 80°, f390-f416) en ≈ 5 s, rotation lente et continue (≈ 20°/s), ease-in-out. L'avion garde son orientation à l'écran (incliné ≈ 25-30°) pendant que mer et nuages tournent : sensation de piqué en spirale sans perte de lisibilité du sujet.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Tonneau éclair : passage du ventre au dos de l'avion",
+      "name_en": "Quick aileron roll reveal",
+      "t": "0:06.57-0:06.80",
+      "frames": "f197-f204",
+      "fps": 30,
+      "mechanics": "De f196 à f204 l'avion, vu ventre violet ailes à plat, roule jusqu'à montrer son dos crème incliné ≈ 30° : ≈ 8 im (0,27 s), grands pas au milieu (f199-f202), ease-in-out. Le départ (f197) tombe sur l'attaque audio de 6,56 s mais à 6 im du temps de la grille 76 BPM. Pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f198.jpg",
+      "illus": {"from": 194, "to": 206, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Cumulus cel-shadés en aplats « Ghibli »",
+      "name_en": "Toon-shaded cumulus clouds",
+      "t": "0:04.5-0:13.9",
+      "frames": "f135-f416",
+      "fps": 30,
+      "mechanics": "Nuages volumétriques en boules agglomérées, ombrés en 3-4 aplats à bords doux : violet #6C3C9C côté ombre, rose #B4546C au milieu, pêche #E49C6C sur les crêtes éclairées par le soleil couchant. Ils occupent 30-60 % du cadre et forment des murs que l'avion longe, avec parallaxe nette entre premier plan et lointain. Aucun bruit fin : lecture peinture à la gouache.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Mer au couchant à reflets spéculaires",
+      "name_en": "Glittering sunset sea",
+      "t": "0:04.3-0:13.9",
+      "frames": "f130-f416",
+      "fps": 30,
+      "mechanics": "Plan d'eau avec ondulation fine et scintillement orange (#E49C6C) concentré sous le soleil, dégradé vers le prune (#3C243C) loin du soleil. Petits îlots sombres à l'échelle (≈ 1 % du cadre) pour donner l'altitude. Reflets sans réfraction complexe : texture bruitée + spéculaire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rubans de traînée aux bouts d'ailes",
+      "name_en": "Wingtip contrail ribbons",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Deux larges rubans lavande translucides (#D8C8E8, ≈ 60-70 % d'opacité) partent des saumons d'aile et s'élargissent en perspective jusqu'à sortir du cadre en bas, larges de ≈ 5-8 % du cadre au premier plan. Ils changent de côté à chaque roulis et matérialisent la trajectoire passée. Effet de vitesse sans flou de mouvement.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f68.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Rafales de traçantes : l'ennemi hors champ",
+      "name_en": "Off-screen tracer fire",
+      "t": "0:02.77-0:09.5",
+      "frames": "f83-f285",
+      "fps": 30,
+      "mechanics": "Fines lignes blanches en tirets (≈ 0,3 % du cadre d'épaisseur, longueur 10-25 %) qui filent en rafales de 6-10 traits : du haut à droite à f83-f120, de la droite à f150-f190, de la gauche à f235-f290. Entrée en 1-2 im, traversée du cadre en ≈ 6-8 im. Elles suggèrent le second avion (« Raven ») qu'on ne voit jamais.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f68.jpg, microM-004-move-f238.jpg, microM-005-move-f272.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flare anamorphique et orbes de bokeh",
+      "name_en": "Anamorphic lens flare",
+      "t": "0:05.0-0:06.0",
+      "frames": "f150-f184",
+      "fps": 30,
+      "mechanics": "Une raie horizontale fine et blanche-rosée traverse toute la largeur, accompagnée d'orbes circulaires semi-transparents (≈ 4-6 % du cadre). Elle glisse de y ≈ 25 % (f155) à y ≈ 65 % (f177) quand la caméra roule face au soleil, puis s'éteint. Pic de luminosité au moment où le soleil passe derrière l'avion.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f167.jpg",
+      "illus": {"from": 152, "to": 182, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain et rayures de pellicule",
+      "name_en": "Film grain and scratches",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Grain fin constant et fines rayures claires verticales ou obliques (1 px, 5-20 % de la hauteur) qui changent à chaque image, surtout visibles sur le ciel indigo de l'intro. Vignettage léger aux coins. Donne l'aspect film ancien qui rattache le rendu 3D au dessin animé des années 1990.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Pile serif didone alternant gras et maigre",
+      "name_en": "Stacked didone weight contrast",
+      "t": "0:00-0:03.87",
+      "frames": "f0-f115",
+      "fps": 30,
+      "mechanics": "Quatre lignes centrées en x à 50 %, de y ≈ 40 % à 57 % : NATURE et PEACE en capitales grasses (≈ 6 % de la hauteur), BRINGS et YOU en capitales maigres plus petites (≈ 4 %). Interlignage négatif : le haut de BRINGS touche le bas de NATURE. Blanc pur sans ombre posé sur le ciel sombre. Contraste de graisse lisible, mais bloc tassé.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Apparition mot à mot sèche sur les notes de l'intro",
+      "name_en": "Word-by-word hard-on reveal",
+      "t": "0:00-0:03.27",
+      "frames": "f0-f98",
+      "fps": 30,
+      "mechanics": "Chaque mot s'allume en 1 image, sans fondu ni mouvement (luminance de la zone : saut unique à f24, f42, f98). Écarts : NATURE→BRINGS 24 im (0,8 s), BRINGS→YOU 18 im (0,6 s), YOU→PEACE 56 im (1,87 s). Les mots arrivent 2 im avant les notes de piano (f26, f44) ; PEACE tombe 6 im après la note f92. Rythme de lecture lent qui installe la respiration.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 18, "to": 102, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Remplacement sec par la phrase-clé avant l'entrée musicale",
+      "name_en": "Hard swap to key line before the drop",
+      "t": "0:03.87",
+      "frames": "f115-f116",
+      "fps": 30,
+      "mechanics": "Le bloc NATURE BRINGS YOU PEACE disparaît en 1 image et « just breathe. » apparaît au même instant, centré à y ≈ 50 %, en bas de casse serif ≈ 3 % de la hauteur. Le remplacement tombe à f116, 4 im (0,13 s) avant l'entrée pleine de la musique à f120 (+20 dB) : on lit l'injonction dans le dernier souffle de silence (-48 dB à 3,9 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 110, "to": 140, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Petite phrase-chuchotement au centre du cadre",
+      "name_en": "Whisper-size centered line",
+      "t": "0:03.87-0:13.9",
+      "frames": "f116-f416",
+      "fps": 30,
+      "mechanics": "« just breathe. » reste fixe 10 s, minuscule (≈ 3 % de la hauteur, ≈ 9 % de la largeur), blanc, au centre exact. Le contraste d'échelle avec le ciel et les nuages qui tournent autour en fait un point d'ancrage calme. Lisibilité réduite quand il passe sur les crêtes pêche (contraste ≈ 1,6:1 vers 9-10 s).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Légendes de manœuvre façon HUD en fondu enchaîné",
+      "name_en": "Maneuver lower-third captions",
+      "t": "0:00-0:05.37 ; 0:11.3-0:13.9",
+      "frames": "f0-f161 ; f339-f416",
+      "fps": 30,
+      "mechanics": "Ligne en sans serif capitales très espacée (interlettrage ≈ +300, ≈ 1,5 % de la hauteur), blanc à ≈ 70 %, centrée à y ≈ 89 %. Trois états : « REVERSAL — RAVEN TAKES THE LEAD », « SWALLOW · SCISSORS », « SWALLOW · SPIRAL DIVE ». Fondu de sortie ≈ 5 im (f60-f65), 1 im de vide, fondu d'entrée ≈ 4 im (f66-f69) ; effacement f155-f161 ; retour à f339-f341. Le fondu de sortie est centré sur le temps 2,056 s.",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f68.jpg, microM-002-move-f167.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Ouverture de la lumière sur l'entrée de la musique",
+      "name_en": "Light opens with the music",
+      "t": "0:04.0-0:05.0",
+      "frames": "f120-f150",
+      "fps": 30,
+      "mechanics": "Pendant l'intro calme, le cadre reste indigo/prune (#22223A, luminance basse). Dès l'entrée musicale à f120, l'avion pique et la mer orange au couchant envahit le cadre en ≈ 30 im (1 s) : la palette passe du froid au chaud et la quantité de mouvement est multipliée par 1,6. Calage probablement dû à la trajectoire plus qu'à un réglage précis.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Lumière ambiante violette qui teinte le sujet",
+      "name_en": "Purple ambient tint on subject",
+      "t": "0:09.5-0:13.9",
+      "frames": "f285-f416",
+      "fps": 30,
+      "mechanics": "Côté ombre, le fuselage crème vire au mauve (#84549C) et les cocardes vertes-blanches-rouges deviennent bleu-blanc-rouge, on croirait des cocardes RAF. Bonne intégration de l'avion dans la palette, mais la livrée « blanc-vert-rouge » demandée se perd.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Sujet centre-bas, texte dans le ciel, légende au pied",
+      "name_en": "Three-tier vertical layout",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Trois étages fixes : texte à 40-57 % de hauteur, avion à 60-75 %, légende à 89 %. Le texte est posé au-dessus de l'hélice, qui passe parfois sous « just breathe. » sans le masquer. Composition stable qui laisse bouger tout le décor.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Roulis lents en ease-in-out",
+      "name_en": "Eased banking turns",
+      "t": "0:01.9-0:02.7 ; 0:07.7-0:08.1",
+      "frames": "f56-f80 ; f230-f244",
+      "fps": 30,
+      "mechanics": "Virages de 50-65° en 14-24 im (0,47-0,8 s) : petits pas au départ, grands au milieu, petits à la fin, aucun dépassement. L'avion garde l'inertie d'un vrai appareil : jamais d'arrêt sec. Seul le tonneau de f197 est plus vif (8 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f68.jpg, microM-004-move-f238.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots posés 2 im avant les notes de piano",
+      "name_en": "Words leading piano notes",
+      "t": "0:00-0:03.9",
+      "frames": "f0-f116",
+      "fps": 30,
+      "mechanics": "Sur une intro piano clairsemée (attaques à f4, f26, f44, f92, puis entrée pleine à f120), les mots arrivent 2 à 4 im avant l'attaque (BRINGS -2, YOU -2, NATURE -4, « just breathe. » -4) ; PEACE fait exception (+6). L'image précède le son, ce qui se lit comme synchrone. Caractère : apparitions sèches et immobiles sur des notes isolées, cohérent avec un piano lent.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure en respiration : nuit, ouverture, spirale",
+      "name_en": "Breath-shaped arc",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Trois temps : 4 s d'intro sombre et lente avec poème, 1 s d'ouverture lumineuse sur l'entrée musicale, 10 s de vol au couchant qui se termine en piqué en spirale. Pas d'accroche forte, pas de titre de fin : la vidéo s'arrête en plein mouvement, comme une boucle.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Combat aérien suggéré mais jamais montré",
+      "name_en": "Implied off-screen dogfight",
+      "t": "0:00-0:13.9",
+      "frames": "f0-f416",
+      "fps": 30,
+      "mechanics": "Le duel n'existe que par les légendes (Raven prend la tête, ciseaux, piqué en spirale) et par les traçantes. Le second avion n'entre jamais dans le cadre et aucun plan large ne montre les deux trajectoires. Le spectateur voit un vol solitaire.",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Les noms visuels concrets du prompt (livrée blanc-vert-rouge, cumulus violets, reflets sur la mer, coucher de soleil) sont tous rendus et dominent l'image : chaque nom précis devient un élément fort."},
+    {"kind": "direction", "insight": "« 吉卜力运镜 » (mouvements de caméra Ghibli) est trop vague : Claude en fait une caméra de poursuite avec roulis, sans plan large ni panoramique en couches, qui serait la vraie grammaire Ghibli."},
+    {"kind": "structure", "insight": "Aucun découpage ni durée : on obtient un seul plan continu de 14 s. Il fallait lister 4-5 plans (plan large d'établissement, passage de l'ennemi, ciseaux, piqué, titre) avec leurs durées."},
+    {"kind": "inputs", "insight": "Le prompt demande un « combat aérien » sans décrire l'adversaire : Claude le laisse hors champ et le remplace par des traçantes et des légendes. Nommer les deux avions et leur chorégraphie aurait forcé leur présence à l'écran."},
+    {"kind": "other", "insight": "Prompt d'une ligne en chinois ; Claude invente des légendes techniques en anglais (Swallow, Raven, Scissors) au ton jeu vidéo, en décalage avec la demande contemplative « just breathe. »."},
+    {"kind": "build", "insight": "Three.js temps réel : ombrage toon, caméra continue et capture d'écran. La musique n'est pas demandée et a probablement été ajoutée au montage, d'où une synchro limitée à l'intro."},
+    {"kind": "qa", "insight": "Points qu'un contrôle aurait relevés : cocardes qui virent au bleu sous la lumière violette, interlignage négatif du poème, « just breathe. » peu lisible sur les crêtes pêche."}
+  ],
+  "steal": [
+    "Empiler le texte mot à mot sur les notes d'une intro calme, puis basculer sur la phrase-clé 3 à 4 images avant l'entrée de la musique.",
+    "Ouvrir la lumière (nuit indigo vers mer orange) à l'instant où la musique entre : la palette suit l'énergie sonore.",
+    "Nuages cel-shadés en 3-4 aplats (violet #6C3C9C, rose #B4546C, pêche #E49C6C) plus grain pellicule : le look Ghibli en temps réel.",
+    "Suggérer un adversaire hors champ par des rafales de traçantes venant chaque fois d'une direction différente.",
+    "Garder le sujet fixe dans le cadre et faire tourner l'horizon jusqu'à 80° pour un piqué lisible et vertigineux."
+  ],
+  "flaws": [
+    "Un seul plan de 14 s : aucune coupe, aucun plan large, la chorégraphie de poursuite n'est jamais montrée.",
+    "L'adversaire n'apparaît jamais : le combat aérien se réduit à des traçantes et des légendes.",
+    "Interlignage négatif : BRINGS touche le bas de NATURE, bloc tassé et peu lisible en petit.",
+    "Légendes HUD en anglais technique : tic de vidéo IA, hors ton avec « just breathe. ».",
+    "Sous la lumière violette, les cocardes italiennes virent au bleu : la livrée demandée se perd."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo à 30 fps en un seul plan continu sans transition ni animation typographique fine : les planches suffisent. Seuls le tonneau (8 im) et le remplacement avant l'entrée musicale méritent un regard, déjà couverts."}
+}

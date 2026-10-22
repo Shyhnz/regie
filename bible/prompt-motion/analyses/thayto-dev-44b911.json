@@ -1,0 +1,364 @@
+{
+  "slug": "thayto-dev-44b911",
+  "title": "AjustaCV Pro pricing promo",
+  "handle": "@thayto_dev",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Montage verrouillé à l'image près sur une grille à 128 BPM et sur les sections du morceau, DA SaaS cohérente ; mais mouvements limités à des fondus et textes d'interface minuscules.",
+  "summary": "Promo tarifaire en portugais pour AjustaCV Pro (adaptation de CV par IA) en six scènes : question d'accroche avec pile de candidatures, tableau de prix qui s'allonge, grille bento des fonctions, coût de l'inaction sur fond sombre, offre PIX, bouton qui devient le carton de fin. Force : chaque ligne, carte et coupe tombe sur la grille musicale. Faiblesse : peu de mouvement, beaucoup de petit texte.",
+  "prompt_vs_result": [
+    "Le prompt affiché est le prompt « showreel » générique : 15 s, dynamique, « montre quel motion designer tu es », « go all out ». Il ne cite ni produit, ni langue, ni marque, ni musique.",
+    "Tout le reste vient du contexte de session (probable : dépôt du produit AjustaCV) : promo tarifaire en portugais, vrais prix, bleu de marque, composants d'interface, structure problème → offre → appel à l'action, bande-son à 128 BPM et calage sur la grille.",
+    "Le prompt publié n'explique pas le résultat : le contexte a pesé plus que la consigne. « Go all out » n'a produit ni caméra ni typo cinétique ; il aurait fallu exiger zooms sur les chiffres clés, taille minimale du texte et transitions motivées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FCFEFD", "role": "fond clair des scènes 1, 2, 3 et 5 (mesuré)"},
+      {"hex": "#255FEC", "role": "bleu de marque : carte héro, bouton, carton de fin, mots clés (mesuré, proche de #2563EB)"},
+      {"hex": "#111111", "role": "texte principal sur fond clair"},
+      {"hex": "#6B7280", "role": "libellés et texte secondaire d'interface (estimé)"},
+      {"hex": "#F1F5FD", "role": "fond bleu très pâle du panneau Pro et de la carte d'offre, bord #AFC2EC (estimé)"},
+      {"hex": "#ECFDF3", "role": "encart vert « o Pro já se pagou », texte #15803D (estimé)"},
+      {"hex": "#22C55E", "role": "pastille « Economize 34% » (estimé)"},
+      {"hex": "#191814", "role": "fond quasi noir chaud de la scène « coût de l'inaction » (mesuré)"},
+      {"hex": "#F3EFE8", "role": "texte crème sur fond sombre (estimé)"},
+      {"hex": "#93A8F4", "role": "accent bleu pervenche « R$ 0,43 por dia » (estimé)"}
+    ],
+    "type": "Serif de titrage semi-gras (probable DM Serif Display) pour titres, prix et logo, corps ≈ 4-5 % de la hauteur ; grotesque (probable DM Sans) pour l'interface, 1-1,5 % ; casse phrase, interlettrage neutre ; mot clé en bleu.",
+    "texture": "Aplats sans grain ni dégradé ; cartes à coins arrondis et bord fin gris-bleu ; ombre portée très douce sur les cartes « VAGA » de l'ouverture ; aucun glow, aucun flou de mouvement ; tous les changements d'état sont des fondus d'opacité.",
+    "style": "Promo SaaS éditoriale, cartes d'interface",
+    "coherence": "Le système tient par trois constantes : le bleu #255FEC (mot clé, carte héro, bouton, carton de fin), le duo serif de titrage + grotesque d'interface, les cartes à coins arrondis sur fond presque blanc. La scène sombre casse volontairement le système pour le moment « coût de l'inaction » mais garde la même serif et un accent bleu. Le bouton d'offre qui devient l'aplat bleu du carton de fin relie l'achat à la marque. Ce qui affaiblit l'ensemble : l'échelle des textes d'interface, trop petite pour un format vidéo."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM confirmé (pulsation nette 7,19 ; un temps = 28,1 im à 60 fps ; grille à 0,486 + k × 0,469 s). Mesure image par image (différence entre images successives, localisée par zone) : 29 gestes clés sur 34 tombent à ±2 im d'un temps ou demi-temps, la plupart à ±1 im (hasard ≈ 36 %). Les coupes tombent sur les débuts de mesure : f113 (temps 3), f338 (11), f563 (19), f675 (23), apparition du logo f790 (27), écarts −1 à +1,5 im. Durées des scènes en mesures : intro 1, prix 2, bento 2, scène sombre 1, offre 1, fin ≈ 1. Densité : compteur « N vagas » toutes les 7 im (double croche), une ligne de tableau toutes les 14 im (croche), une carte bento toutes les 28 im (noire). L'indice automatique annonce 74 % de maintiens statiques : c'est faux, les fondus discrets passent sous son seuil (le maintien 5,88-9,37 s contient en réalité cinq apparitions de cartes). Vrais temps morts : 0,8 s après la biffure (f290-f337), 0,45 s en fin de grille (f536-f562), 0,55 s en scène sombre (f641-f674), 0,6 s de tenue finale (f866-f900).",
+    "timeline": [
+      {"t": "0:00-0:01.88", "what": "f0-f112. Question « Quantas vagas você vai mandar até ser contratado? » en 3 lignes, la dernière en bleu ; des cartes « VAGA » volent du coin bas-droit et s'empilent en éventail ; compteur bleu « 1 vaga → 10 vagas ». Musique : intro sans basse.", "technique": "révélation de lignes sous masque + pile de cartes en doubles croches"},
+      {"t": "0:01.88-0:02.30", "what": "f113-f137. Coupe sèche sur un blanc vide au temps 3, quand la basse entre ; les deux panneaux de prix apparaissent en fondu (contours f117-f126, contenu f126-f137).", "technique": "coupe sur la section + reconstruction en fondu"},
+      {"t": "0:02.35-0:04.62", "what": "f141-f277. Tableau « Avulso, vaga por vaga » : 10 lignes « Vaga N R$ 7,80 » ajoutées une par croche ; total de R$ 7,80 à R$ 78,00 ; prix Pro par vaga recalculé de 13,17 à 1,32 ; encart vert « Você está em N » dès la 3e ligne (temps 5).", "technique": "data en direct calée sur les croches"},
+      {"t": "0:04.70-0:05.62", "what": "f282-f337. Biffure tracée sur « R$ 78,00 » en 8 im au temps 9, puis maintien de lecture de 0,8 s.", "technique": "biffure animée + pause de lecture"},
+      {"t": "0:05.63-0:06.03", "what": "f338-f362. Coupe au temps 11 : la carte héro « O que entra no Pro » s'encre du bleu pâle au bleu de marque en 15 im, titre blanc qui monte sous masque, pastille PRO.", "technique": "encrage de carte"},
+      {"t": "0:06.10-0:09.37", "what": "f366-f562. Cinq cartes de fonctions (PDF sans marque, modèles premium, IA illimitée, analyse ATS, lettre de motivation) arrivent sur les temps 12 à 16, puis leurs micro-démos s'animent (bouton « + Melhorar com IA », coches ATS, boutons PDF/Word).", "technique": "grille bento, une carte par temps"},
+      {"t": "0:09.38-0:11.24", "what": "f563-f674. Coupe au temps 19, début du break : fond sombre, « A conta que ninguém faz », « Cada semana sem esse emprego custa R$ 924,00 » avec compteur d'un temps, puis « O Pro custa R$ 0,43 por dia. » au temps 21 et note de calcul.", "technique": "bascule clair → sombre + compteur roulant"},
+      {"t": "0:11.25-0:12.66", "what": "f675-f759. Coupe au temps 23, retour de la basse : carte « 6 meses no PIX — R$ 79 de uma vez » ; détails au temps 24, bouton au demi-temps 24,5, garantie au temps 25, ligne carte bancaire vers 25,5.", "technique": "carte d'offre construite au temps"},
+      {"t": "0:12.67-0:13.10", "what": "f760-f786. Pression du bouton « Gerar PIX de R$ 79,00 » au temps 26, puis le bouton s'étend jusqu'à remplir le cadre en bleu (14 im, ease-in-out).", "technique": "bouton qui devient le fond (container transform)"},
+      {"t": "0:13.17-0:14.40", "what": "f790-f865. Carton de fin : icône poignée de main (temps 27), « AjustaCV » lettre à lettre, badge PRO (temps 28), « Tem mais vagas pela frente? / Com o Pro, você adapta o currículo pra todas. », pastille « ajustacv.com/pro → » qui s'ouvre depuis un point.", "technique": "logo lettre à lettre + pastille qui s'ouvre"},
+      {"t": "0:14.40-0:15.06", "what": "f866-f900. Tenue finale pendant que la musique s'éteint.", "technique": "tenue de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Signal de différence image par image daté sur la grille 128 BPM : 29 gestes clés sur 34 à ±2 im d'un temps ou demi-temps (hasard ≈ 36 %). Dont : 10 lignes de tableau à −0,8…+0,1 im des croches (f141, 155, 169, 183, 198, 212, 226, 240, 254, 268) ; 5 cartes bento à −0,7…+0,3 im des temps 12 à 16 (f367, 395, 423, 451, 479) ; biffure f282 (temps 9, −0,3 im) ; coupes f113, f338, f563, f675 à −0,5, −0,5, −0,5, −1 im ; compteur f576 (demi-temps, −1,6 im) ; ligne « O Pro custa » f621 (+1,2 im) ; détails, bouton et garantie de l'offre f704, f718, f732 (−0,2, −0,2, −0,3 im) ; pression du bouton f760 (−0,4 im) ; logo f790 (+1,5 im) ; badge PRO f816 (−0,7 im). Ratés : ligne carte bancaire f742 (−4,3 im), début d'expansion f771 (−3,5 im), slogan f826 et f833 (−4,7 et +2,3 im), pastille URL f850 (+5,2 im). Sur les planches microscope, les coupes f563 et f675 tombent sur une barre bleue (f563 avec point vert). L'énergie audio mesurée par temps épouse le montage : intro sans basse (−30 dB) jusqu'au temps 2, basse qui entre au temps 3 pile sur la coupe f113, pleine énergie (−6 à −7,5 dB) dès le temps 7, break (−15 à −24 dB) des temps 19 à 22 pile sur la scène sombre, retour plein (−5,8 dB) au temps 23 pile sur la coupe vers l'offre, décroissance (−11 → −22 dB) sur le carton de fin. L'indice automatique (« partielle », p = 0,05) sous-estime la synchro : son détecteur rate les fondus discrets.",
+    "synced": ["coupes", "apparitions", "departs", "texte", "couleur", "drop"],
+    "style_match": "Électro-house probable à 128 BPM, temps réguliers : fondus courts en ease-out et placement en croches collent ; le break sombre puis le retour sur l'offre servent le récit.",
+    "how_built": "Probable : une constante de tempo (128 BPM → un temps = 0,46875 s) pilote toute la timeline GSAP de HyperFrames ; les positions sont des multiples du demi-temps et les durées des fractions de temps (compteur = 1 temps, lignes = 1/2 temps, compteur de vagas = 1/4 de temps). La bande-son a des sections qui tombent exactement sur les coupes (intro sans basse = 1 mesure, break = scène sombre, retour = offre, extinction = logo) : soit elle a été générée en code d'après le plan des scènes, soit les scènes ont été découpées sur ses sections. Le prompt publié ne parle pas de musique : ce calage vient du contexte de session ou d'un skill."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Coupes de scène sur le premier temps de la mesure",
+      "name_en": "Cuts on the downbeat",
+      "t": "0:01.88 / 0:05.63 / 0:09.38 / 0:11.25 / 0:13.17",
+      "frames": "f113, f338, f563, f675, f790",
+      "fps": 60,
+      "mechanics": "Les quatre coupes franches et l'apparition du logo tombent sur les temps 3, 11, 19, 23 et 27 de la grille, tous de même rang dans la mesure (multiples de 4 + 3), donc des débuts de mesure (probable, cohérent avec l'entrée de la basse au temps 3). Écarts : −0,5, −0,5, −0,5, −1,0 et +1,5 im : la nouvelle image arrive une demi-image avant la barre, l'attaque audible tombe dessus. Les scènes durent 1, 2, 2, 1, 1 et ≈ 1 mesure.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f563.jpg, microM-002-cut-f675.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Scènes posées sur les sections du morceau",
+      "name_en": "Edit mapped to song sections",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Énergie audio mesurée par temps : intro sans basse (−30 dB) pendant la question d'accroche ; la basse entre au temps 3, exactement sur la coupe f113 ; pleine énergie dès le temps 7 ; break (−15 à −24 dB) du temps 19 au temps 22, exactement la durée de la scène sombre du coût de l'inaction ; retour plein (−5,8 dB) au temps 23, exactement la coupe vers l'offre PIX ; décroissance sur le carton de fin. Le problème vit dans le creux musical, la solution arrive avec le retour de la basse : la structure musicale fait la dramaturgie.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-cut-f563.jpg, microM-002-cut-f675.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Hiérarchie de subdivisions : double croche, croche, noire",
+      "name_en": "Rhythmic subdivision hierarchy",
+      "t": "0:00.50-0:08.00",
+      "frames": "f32-f89 / f141-f268 / f367-f479",
+      "fps": 60,
+      "mechanics": "Chaque type d'élément a sa subdivision. Compteur « N vagas » : un incrément toutes les 7 im (f32, 39, 46, 53, 60, 68, 75, 82, 89), soit la double croche à 128 BPM (7,03 im), avec une phase constante d'environ +3 im. Lignes du tableau : toutes les 14 im (croche). Cartes bento : toutes les 28 im (noire). Scènes : 1 à 2 mesures. Plus l'élément est petit, plus il arrive vite : la densité visuelle suit la densité rythmique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Lignes de tableau ajoutées à chaque croche",
+      "name_en": "Line items stacking on eighth notes",
+      "t": "0:02.35-0:04.62",
+      "frames": "f141-f277",
+      "fps": 60,
+      "mechanics": "10 lignes « Vaga N … R$ 7,80 » apparaissent à f141, 155, 169, 183, 198, 212, 226, 240, 254, 268 : écart à la croche de −0,8 à +0,1 im. Chaque ligne entre en 9 im (0,15 s) par fondu avec un léger glissement vers le bas, en ease-out (changement décroissant d'image en image). Le panneau s'allonge d'environ 3,5 % de la hauteur par ligne ; au même instant le total serif gris passe de R$ 7,80 à R$ 78,00 et le compteur « Você está em N » de l'encart vert s'incrémente.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg",
+      "illus": {"from": 138, "to": 276, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Coût unitaire recalculé en direct",
+      "name_en": "Live per-unit price",
+      "t": "0:02.35-0:04.62",
+      "frames": "f141-f277",
+      "fps": 60,
+      "mechanics": "Dans le panneau Pro, sous le prix fixe « R$ 13,17 por mês no semestral » (serif ≈ 4 % de hauteur), la ligne bleue « R$ X por vaga » est redivisée à chaque ligne ajoutée : 13,17 → 4,39 (3 vagas) → 2,63 (5) → 1,65 (8) → 1,32 (10). À la 3e ligne (temps 5, f169) apparaît l'encart vert « A partir de 2 vagas por mês o Pro já se pagou ». L'argument d'amortissement est démontré par le chiffre qui baisse, sans voix.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Biffure tracée sur l'ancien total",
+      "name_en": "Animated strikethrough",
+      "t": "0:04.70-0:04.82",
+      "frames": "f282-f289",
+      "fps": 60,
+      "mechanics": "Un trait horizontal gris traverse « R$ 78,00 » de gauche à droite (x 23 → 39 % du cadre, y 73 %) en 8 im (0,13 s) ; pas successifs 3, 3, 3, 1, 2, 2, 1, 1 % : ease-out. Départ f282, temps 9 à −0,3 im. Suivi d'un maintien de 0,8 s (f290-f337) avant la coupe du temps 11.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation de ligne sous masque",
+      "name_en": "Masked line rise",
+      "t": "0:00.05-0:00.30 / 0:05.75-0:05.93 / 0:09.48-0:09.70",
+      "frames": "f3-f18 / f345-f356 / f569-f582",
+      "fps": 60,
+      "mechanics": "Chaque ligne monte de derrière un masque invisible calé sur sa ligne de base : on voit d'abord le haut des lettres, coupées net. Montée d'environ 6-7 im par ligne, en ease-out, sans flou. Décalage entre lignes : 3-4 im pour la question d'ouverture, 5 im pour « O que entra / no Pro », 7 im (une double croche) pour « Cada semana… / custa R$… » dans la scène sombre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, microM-001-cut-f563.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pile de candidatures qui s'empile en éventail",
+      "name_en": "Card stack cascade",
+      "t": "0:00-0:01.58",
+      "frames": "f0-f95",
+      "fps": 60,
+      "mechanics": "Des cartes « VAGA / Analista de Marketing, Social Media, Analista de SEO… » (≈ 13 % de la largeur, ombre douce) arrivent du coin bas-droit, hors cadre, et se posent sur une pile à x ≈ 62-90 %, y ≈ 45-65 %, chacune décalée d'environ 1 % en diagonale et légèrement tournée. Une carte toutes les 7 im ; le libellé bleu « N vagas » s'incrémente à chaque pose. Vol d'environ 10-15 im, arrivée en ease-out probable, pas de flou ni d'écrasement. La vidéo démarre en plein vol (f0 déjà animée).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe sur fond vide puis reconstruction en fondu",
+      "name_en": "Cut to blank, then rebuild",
+      "t": "0:01.88-0:02.28",
+      "frames": "f113-f137",
+      "fps": 60,
+      "mechanics": "Coupe sèche f113 vers un blanc vide pendant 4 im, puis les contours des deux panneaux apparaissent en fondu (f117-f126) et leur contenu ensuite (f126-f137). Aucun lien graphique entre la question et le tableau : seule l'entrée de la basse porte la transition.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Encrage de la carte héro",
+      "name_en": "Hero card ink-in",
+      "t": "0:05.63-0:05.88",
+      "frames": "f338-f352",
+      "fps": 60,
+      "mechanics": "Après la coupe f338, la carte « O que entra no Pro » (x 7-34 %, y 13-48 %) apparaît en bleu très pâle puis s'encre jusqu'au bleu de marque : couleur moyenne RVB (237, 243, 252) → (45, 102, 237) en 15 im (0,25 s), pas décroissants (−29, −26, −22, −20 … −4) : fondu d'opacité en ease-out, sans changement d'échelle. Le titre blanc monte ensuite sous masque (f345-f356), puis la pastille PRO apparaît en fondu (f357-f362).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille bento 3 × 2 avec carte héro",
+      "name_en": "Bento grid with hero tile",
+      "t": "0:05.63-0:09.37",
+      "frames": "f338-f562",
+      "fps": 60,
+      "mechanics": "Six cases d'environ 28 % × 33 % du cadre, gouttières ≈ 1 %, zone x 7-92 %, y 12-82 %. La case héro bleue en haut à gauche porte le titre serif blanc ; les cinq autres sont blanches à bord fin, avec un titre court en grotesque (≈ 1,4 % de hauteur), une mini-illustration d'interface et une pastille de coche bleue en haut à droite. Ordre d'apparition en Z : ligne du haut de gauche à droite, puis ligne du bas.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Une carte bento par temps",
+      "name_en": "One card per beat",
+      "t": "0:06.10-0:08.00",
+      "frames": "f366-f479",
+      "fps": 60,
+      "mechanics": "Les cartes 2 à 6 démarrent à f367, 395, 423, 451 et 479, soit les temps 12 à 16, à −0,7…+0,3 im. Chaque carte entre en fondu en environ 12 im (f366-f378), puis sa mini-démo s'anime pendant le temps suivant (bouton « + Melhorar com IA » f437-f448, coches ATS f502-f535). Le détecteur automatique voit ce passage comme un maintien statique de 3,5 s : la variation est faible mais régulière.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg",
+      "illus": {"from": 364, "to": 482, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Micro-démos d'interface dans les cartes",
+      "name_en": "Micro UI demos inside tiles",
+      "t": "0:06.10-0:08.92",
+      "frames": "f366-f535",
+      "fps": 60,
+      "mechanics": "Chaque carte montre sa fonction en miniature : page PDF qui se dessine, trois vignettes de modèles, bouton noir « + Melhorar com IA » avec barre de texte, liste ATS (Palavras-chave, Conteúdo, Formatação) dont les coches apparaissent une à une, aperçu de lettre avec boutons « Baixar PDF / Baixar Word ». Le texte de ces démos fait 0,8 à 1 % de la hauteur : illisible dans le temps donné.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-001-cut-f563.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule clair → sombre pour le coût de l'inaction",
+      "name_en": "Light-to-dark mood switch",
+      "t": "0:09.38-0:11.25",
+      "frames": "f563-f674",
+      "fps": 60,
+      "mechanics": "Seule scène sur fond quasi noir chaud #191814, texte crème en serif, accent bleu pervenche #93A8F4 sur « R$ 0,43 por dia. ». La bascule tombe sur le début du break musical (temps 19) : le ton devient grave pour l'argument de douleur, puis le blanc revient avec la basse sur l'offre (f675). Texte aligné à gauche à x ≈ 8 %, y 23-64 %.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f563.jpg, microM-002-cut-f675.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'argent d'un temps en ease-out",
+      "name_en": "Rolling money counter, power3.out",
+      "t": "0:09.60-0:10.07",
+      "frames": "f576-f604",
+      "fps": 60,
+      "mechanics": "« custa R$ … » compte de 0 à 924,00 en environ 28 im (un temps), départ f576 (demi-temps, −1,6 im). Valeurs relevées : f578 107, f579 273, f580 343, f581 408, f582 468, f583 524, f600 918. 57 % de la valeur au quart de la durée, conforme à un power3.out (1 − (1 − t)³). La ligne monte sous masque pendant que le compte démarre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f563.jpg, overview-02.jpg",
+      "illus": {"from": 574, "to": 606, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Coût de l'inaction contre prix par jour, avec note de calcul",
+      "name_en": "Cost-of-inaction anchoring",
+      "t": "0:09.38-0:11.24",
+      "frames": "f563-f674",
+      "fps": 60,
+      "mechanics": "Argument en deux temps : « Cada semana sem esse emprego custa R$ 924,00 » (temps 19-20), puis « O Pro custa R$ 0,43 por dia. » (temps 21). Une note grise minuscule « Exemplo da calculadora: vaga de R$ 4.000 por mês · Pro semestral » source le chiffre. Le prix est recadré en coût par jour face à une perte par semaine.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-002-cut-f675.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'offre construite élément par élément au temps",
+      "name_en": "Offer card build-up on the beat",
+      "t": "0:11.25-0:12.55",
+      "frames": "f675-f752",
+      "fps": 60,
+      "mechanics": "Carte centrée (x 24-76 %, y 26-64 %), fond bleu très pâle, bord bleu-gris. Contour et titre serif en fondu f676-f693 ; ligne « Sai R$ 13,17 por mês » et pastille verte « Economize 34% » f704 (temps 24, −0,2 im) ; bouton bleu f718 (demi-temps, −0,2 im) ; « 7 dias de garantia · pagamento único » f732 (temps 25, −0,3 im) ; ligne carte bancaire f742 (−4,3 im). Tous les éléments entrent en fondu de 8 à 12 im, sans déplacement visible.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f675.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bouton d'appel à l'action qui s'étend en plein cadre",
+      "name_en": "Button-to-fullscreen container transform",
+      "t": "0:12.67-0:13.10",
+      "frames": "f760-f786",
+      "fps": 60,
+      "mechanics": "Pression au temps 26 (f760, −0,4 im) : la largeur du bouton passe de 46,4 % à 45,0 % du cadre en 3 im puis revient (f760-f766). Le bleu se fonce de #4274E8 à #255FEC (f769-f771) et le texte disparaît. Le bouton grandit ensuite jusqu'à remplir le cadre en 14 im (f771-f785, 0,23 s) : largeur 46 → 100 %, hauteur 7 → 100 % ; pas de largeur 0,9-0,9-1,6-3,4-4,1-7,5-9,2-9,2-6,6-4,2-2,4-1,8-0,8 : ease-in-out symétrique, vitesse maximale f777-f779, coins peu arrondis. Aplat complet 3,5 im avant le temps 27 ; le logo apparaît 1,5 im après. Pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f779.jpg",
+      "illus": {"from": 758, "to": 788, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo lettre à lettre en fondu",
+      "name_en": "Staggered letter fade logo",
+      "t": "0:13.17-0:13.70",
+      "frames": "f790-f822",
+      "fps": 60,
+      "mechanics": "Icône poignée de main en fondu f790-f795 (temps 27, +1,5 im), puis les 8 lettres de « AjustaCV » (serif blanc, ≈ 7 % de hauteur) apparaissent en fondu de gauche à droite, environ 1,5 im de décalage par lettre et 6 im de fondu chacune ; lockup complet à f808. Badge « PRO » blanc à texte bleu en fondu f816-f822 (temps 28, −0,7 im) dans un espace déjà réservé : le lockup ne glisse pas pour se recentrer.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-003-cut-f779.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pastille URL qui s'ouvre depuis un point",
+      "name_en": "Pill expanding from a dot",
+      "t": "0:14.17-0:14.37",
+      "frames": "f850-f862",
+      "fps": 60,
+      "mechanics": "Sous le slogan, un point blanc de 2,9 % de largeur s'élargit horizontalement depuis le centre en pastille « ajustacv.com/pro → » de 19 % en 12 im ; largeurs 2,9-5,6-8,2-10,6-12,2-14,0-15,0-16,2-17,1-17,8-18,2-18,6-19,0 % : ease-out. Départ 5 im après le temps 29, donc hors grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Entonnoir publicitaire tarifaire en six scènes",
+      "name_en": "Pricing ad funnel",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Question qui touche la douleur (1 mesure) → comparatif chiffré à l'unité contre abonnement (2 mesures) → contenu de l'offre (2 mesures) → coût de l'inaction (1 mesure, sur le break) → offre ferme avec garantie (1 mesure) → marque, promesse, URL (≈ 1 mesure). Aucune voix : tout le récit passe par le texte à l'écran.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Duo serif de titrage + grotesque d'interface, mot clé en bleu",
+      "name_en": "Display serif + UI grotesque pairing",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Titres, prix (« R$ 13,17 », « R$ 78,00 ») et logo en serif semi-gras (probable DM Serif Display), interface en grotesque (probable DM Sans). Le mot clé de chaque scène est en bleu : « até ser contratado? », « R$ X por vaga », « R$ 0,43 por dia. ». Texte aligné à gauche à x ≈ 8-11 % du cadre, sauf l'offre et le logo, centrés.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Contenu ancré en haut, bas du cadre vide",
+      "name_en": "Top-anchored layout",
+      "t": "0:02.0-0:04.6",
+      "frames": "f120-f276",
+      "fps": 60,
+      "mechanics": "Le tableau et la grille commencent à y ≈ 12-14 % et poussent vers le bas : à f150 le contenu occupe y 13-47 %, la moitié basse du cadre est vide ; il ne remplit y 13-76 % qu'à la 10e ligne. Les textes d'interface restent à 1-1,5 % de hauteur au lieu d'être agrandis pour la vidéo.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Cadre fixe, aucune caméra",
+      "name_en": "Locked-off frame",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Pas un zoom ni un panoramique en 15 s : toute l'énergie vient des apparitions et des coupes. Un zoom calibré sur « R$ 1,32 por vaga » ou « R$ 0,43 por dia » aurait cadré le chiffre clé seul et rendu le petit texte lisible.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pauses de lecture juste avant la coupe",
+      "name_en": "Reading holds before the cut",
+      "t": "0:04.83-0:05.62 / 0:08.93-0:09.37 / 0:10.68-0:11.24",
+      "frames": "f290-f337 / f536-f562 / f641-f674",
+      "fps": 60,
+      "mechanics": "Trois maintiens réels de 0,8 s, 0,45 s et 0,55 s, chacun après le chiffre ou l'élément clé et juste avant une coupe sur un début de mesure : la pause laisse lire puis prépare l'impact suivant. Rien ne bouge pendant ces pauses : une micro-dérive (push de 2-3 %) éviterait l'effet de temps mort.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt publié (showreel générique) ne contient ni le produit, ni les prix, ni la langue : l'agent travaillait forcément avec le contexte d'AjustaCV (dépôt, textes, couleurs, tarifs). Avec HyperFrames, le contexte fourni pèse plus que la phrase de prompt."},
+    {"kind": "direction", "insight": "« Go all out » a été lu comme « soigné et complet » (six scènes, 34 gestes calés) et non comme « spectaculaire » : sans consigne de style, Claude reste dans une grammaire d'interface faite de fondus et de cartes."},
+    {"kind": "build", "insight": "La précision du calage (±1 im sur une vingtaine d'éléments) suppose une constante de BPM dans le code de la timeline ; la superposition exacte des sections audio et des coupes suggère une bande-son générée ou choisie d'après le plan des scènes."},
+    {"kind": "structure", "insight": "L'entonnoir problème → preuve chiffrée → contenu → coût de l'inaction → offre → appel à l'action vient probablement des données tarifaires du produit : le modèle a écrit une annonce, pas une démo de savoir-faire."},
+    {"kind": "qa", "insight": "Rien n'a filtré le texte d'interface à 1-1,5 % de hauteur : il manque au prompt une règle de taille minimale (≈ 3 % de la hauteur pour un texte à lire) et de temps de lecture par élément."}
+  ],
+  "steal": [
+    "Fixe une constante BPM et place chaque apparition sur un multiple du demi-temps ; donne une subdivision par type d'élément : double croche, croche, noire.",
+    "Cale les scènes sur les sections du morceau : le problème dans le break, l'offre sur le retour de la basse, la coupe sur le premier temps de la mesure.",
+    "Pour un argument d'amortissement, empile les lignes au rythme et recalcule en direct le coût unitaire : le chiffre qui baisse fait la démonstration.",
+    "Transforme le bouton d'appel à l'action en fond du carton de fin : pression au temps, expansion ease-in-out de 14 im, aplat complet juste avant le temps suivant.",
+    "Compteur d'argent en power3.out sur exactement un temps : 57 % de la valeur au premier quart, puis il se pose doucement sur le chiffre final."
+  ],
+  "flaws": [
+    "Textes d'interface à 1-1,5 % de la hauteur, illisibles sur mobile et impossibles à lire en 0,5 s par carte.",
+    "Vocabulaire de mouvement pauvre : fondus et montées sous masque partout, aucune caméra, alors que le prompt demandait un showreel spectaculaire.",
+    "Mise en page ancrée en haut : la moitié basse du cadre reste vide pendant la construction du tableau.",
+    "Transitions par coupe sèche sur fond blanc vide : aucun lien graphique entre les scènes, sauf le bouton final.",
+    "Fin moins calée : slogan, deuxième ligne et pastille URL tombent 4 à 5 im hors de la grille."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui pour la synchro : référence très nette d'une grille à 128 BPM appliquée à l'image près (subdivisions 1/16, 1/8, 1/4 ; coupes sur les débuts de mesure ; scènes sur les sections du morceau). À étudier avec le son. Le mouvement lui-même (fondus) apprend peu, sauf l'expansion du bouton en plein cadre."
+  }
+}

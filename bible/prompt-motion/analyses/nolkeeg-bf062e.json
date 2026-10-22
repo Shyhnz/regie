@@ -1,0 +1,371 @@
+{
+  "slug": "nolkeeg-bf062e",
+  "title": "What happens in one second",
+  "handle": "@nolkeeg",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Rendu 3D, particules et système typographique de niveau studio, concept fort et fin méta ; pénalisé par 35 % de maintiens, un HUD illisible et des images noires parasites.",
+  "summary": "Court film « ONE SECOND » : ce qui se passe en une seconde, ralentie à 0,21×, en cinq chapitres chiffrés (lumière, Terre, éclairs, Soleil, toi). Compteurs géants sur rendus 3D (Terre en points lumineux, Soleil), particules bicolores, HUD de viseur, et une fin qui affiche le temps que tu viens de passer. Très beau et intelligent, mais lent.",
+  "prompt_vs_result": [
+    "Impressionner, « écraser GPT 6 », éviter le « PowerPoint glorifié » ; style, sujet et look laissés libres ; interdiction d'utiliser mémoires et skills.",
+    "Claude a tout choisi : le concept « une seconde » en 5 chapitres de faits réels, la 3D Terre et Soleil, les particules, le HUD, le trio typographique, la bande-son à 120 BPM et la fin méta.",
+    "Prompt d'ambiance sans contrainte : Claude a misé sur la profondeur (film contemplatif) plutôt que sur le rythme. Il aurait fallu préciser durée, densité d'événements et taille minimale des textes."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond spatial"},
+      {"hex": "#F2EEE8", "role": "blanc chaud des chiffres et du titre"},
+      {"hex": "#E5533A", "role": "rouge d'accent : labels de chapitre, barre ELAPSED, électrocardiogramme"},
+      {"hex": "#E8A060", "role": "particules orange, couronne solaire"},
+      {"hex": "#CFE0FF", "role": "particules bleu-blanc, halo atmosphérique"},
+      {"hex": "#FFB36B", "role": "lumières des villes en points"},
+      {"hex": "#F9D58B", "role": "surface granuleuse du Soleil"},
+      {"hex": "#6B6B6B", "role": "texte mono secondaire du HUD"},
+      {"hex": "#2E2E2E", "role": "zéros de tête grisés des compteurs"},
+      {"hex": "#140606", "role": "fond rouge très sombre du chapitre 05"}
+    ],
+    "type": "Grotesque très grasse (type Inter Display Black) pour titre et chiffres tabulaires, 14-18 % de la hauteur ; serif italique (type Instrument Serif) ≈ 5 % ; mono capitales espacées (+30 %) ≈ 1,5 %, gris ou rouge.",
+    "texture": "Grain fin global, forte lueur (bloom) sur soleil, éclair et halo de la Terre, vignette, particules à profondeur de champ (bokeh quand elles approchent la caméra), titre composé de particules au grain visible.",
+    "style": "cinéma data spatial contemplatif",
+    "coherence": "Le HUD de viseur (repères d'angle, « ONE SECOND / A FIELD GUIDE », timecode, barre ELAPSED, PLAYBACK 0.21×) et le gabarit fixe label rouge + chiffre + ligne italique tiennent les cinq chapitres. Les deux couleurs des particules (orange / bleu-blanc) annoncent Soleil et Terre. Le rouge relie labels, barre et cœur. Seule rupture : le chapitre 05 sur fond rouge sombre, voulue."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "120 BPM stable de 0 à 32 s (tempo par segment : 119,1 / 120,0 / 119,8 BPM, temps à x,015 et x,515 s = f1 + 30k à 60 fps). Seulement 10 coupes ; le film avance par mouvements de caméra continus et transitions. Les grands événements du squelette tombent sur les temps (explosion f181, flash du titre f241, blanc f1921, flash final f2521), mais l'intérieur des chapitres est libre : compteurs continus de 4 à 5 s, éclairs aléatoires. 35 % de la durée en maintien statique : 0-3 s (point et horloge, très discrets), 4,3-5,8 s (titre), 12,6-13,6 s, 19,0-20,0 s (compteurs arrêtés), 33,6-39,4 s (cœur, naissances, effondrement très lents), 42,3-44,2 s (titre final).",
+    "timeline": [
+      {"t": "0:00-0:03.0", "what": "Noir, un point apparaît à 0,5 s, anneau fin, label mono « HOW MUCH HAPPENS IN », compteur 0.000 s, arc rouge qui fait le tour de 2,0 à 3,0 s", "technique": "horloge d'une seconde en deux temps"},
+      {"t": "0:03.02-0:04.0", "what": "Flash et explosion de particules orange / bleu-blanc en spirale", "technique": "burst de particules sur le temps"},
+      {"t": "0:04.0-0:06.0", "what": "Les particules se condensent en ONE SECOND, flash gris-blanc à f241, sous-titre italique « a short film about a very short time »", "technique": "titre par convergence + flash de verrouillage"},
+      {"t": "0:06.0-0:06.4", "what": "Le titre se désagrège en bande de particules qui fonce vers la caméra", "technique": "désintégration vers la caméra"},
+      {"t": "0:06.4-0:07.5", "what": "Champ d'étoiles, deux astres, traînées d'hyperespace, la Terre approche", "technique": "saut en hyperespace"},
+      {"t": "0:07.5-0:14.0", "what": "01 — LIGHT : compteur 0 → 299,792 km, « light circles the Earth », lumière qui tourne autour de la Terre (7,5 tours)", "technique": "compteur à zéros grisés + orbite lumineuse"},
+      {"t": "0:14.0-0:15.6", "what": "Textes sortent à gauche, la Terre recule, un arc d'orbite apparaît", "technique": "sortie masquée + travelling arrière"},
+      {"t": "0:15.6-0:20.3", "what": "02 — EARTH : 0.5 → 29.8 km, « we race around the Sun », traînée orange derrière la Terre", "technique": "trajectoire orbitale"},
+      {"t": "0:20.3-0:21.0", "what": "Poussée avec traînées vers un gros plan des Amériques", "technique": "push-in rapide"},
+      {"t": "0:21.0-0:25.9", "what": "03 — STORMS : 3 → 44 bolts, éclairs blancs sur la Terre en points lumineux", "technique": "flashs ponctuels"},
+      {"t": "0:25.9-0:27.4", "what": "Caméra qui passe le limbe : lever de soleil, puis hyperespace vers le Soleil", "technique": "révélation par le limbe"},
+      {"t": "0:27.5-0:31.6", "what": "04 — THE SUN : 1,067,274 → 4,000,000 tonnes « of matter become pure light »", "technique": "compteur révélé par masque"},
+      {"t": "0:31.6-0:32.9", "what": "Plongée dans le Soleil jusqu'au blanc (f1921), 2 im noires, gris qui s'éteint", "technique": "surexposition puis coupure au noir"},
+      {"t": "0:32.9-0:35.0", "what": "05 — YOU : électrocardiogramme rouge qui se trace, « your heart beats once »", "technique": "tracé de ligne avec tête lumineuse"},
+      {"t": "0:35.0-0:37.2", "what": "Quatre points naissent sur la ligne avec ondes, « and four new people are born »", "technique": "apparitions décalées + carillons"},
+      {"t": "0:37.2-0:39.4", "what": "Tout se contracte en un seul point, « All of that. »", "technique": "effondrement en point"},
+      {"t": "0:39.4-0:41.3", "what": "« Every single second. » puis « AND YOU JUST SPENT 40.35 → 41.20 s »", "technique": "compteur méta du temps réel"},
+      {"t": "0:41.42-0:42.02", "what": "Le point explose en particules qui reforment ONE SECOND, flash à f2521", "technique": "boucle du titre"},
+      {"t": "0:42.0-0:45.0", "what": "ONE SECOND, « make the next one count », générique mono, fondu au noir", "technique": "titre final + fondu"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille 120 BPM vérifiée par segments (0-32 s). Gestes clés à ±2 im d'un temps : point 0,5 s (f30 / attaque f31), départ de l'arc f121 (temps), explosion f181 (temps), flash du titre f241 (temps), début de la désintégration f360 (temps f361), push vers les éclairs f1230 (temps f1231), blanc f1921 (temps), pic de l'ECG ≈ f1980 (temps f1981), 1re naissance f2099 (f2101), « All of that. » f2310 (temps + attaque forte f2311), flash final f2521 (temps) : 11 sur 17 (65 %, hasard ≈ 17 % sur les temps seuls). Hors grille : coupe vers les étoiles f384 (-7), révélation du compteur solaire f1662 (+11), compteur méta f2421 (-10), explosion finale f2485 (-6), naissances 2 à 4 (pas de 14 im au lieu de 15, dérive de -3 à -5). Pics de luminosité de l'orbite lumineuse espacés de 25 à 44 im et éclairs mesurés au hasard : intérieur non calé. Corrélation basses z = 7,8 à décalage 0, tirée par les grands événements.",
+    "synced": ["flashs", "coupes", "apparitions", "texte"],
+    "style_match": "Électro « upbeat » à 120 BPM bien pulsée : elle porte les explosions et flashs, mais tranche avec le ton contemplatif des longs compteurs et du chapitre cœur.",
+    "how_built": "Le générique mono indique « DESIGNED, ANIMATED & SCORED BY … » (texte en cours de décodage) : bande-son probablement composée en code à 120 BPM. La timeline est écrite en secondes rondes (3,0 / 4,0 / 6,0 / 32,0 / 42,0 s), qui tombent toutes sur des temps à 120 BPM : calage automatique du squelette. Whisper détecte des effets sonores sur les événements : souffles à 30 s, 37,7 s et 41,4 s, carillons à 35,1 s (naissances). L'intérieur des chapitres n'a pas été calé."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Une seconde ralentie en chapitres chiffrés",
+      "name_en": "chaptered slowed-down second",
+      "t": "0:07.5-0:41.3",
+      "frames": "f450-f2478",
+      "fps": 60,
+      "mechanics": "Cinq chapitres numérotés en label rouge mono (01 — LIGHT, 02 — EARTH, 03 — STORMS, 04 — THE SUN, 05 — YOU), du cosmique à l'intime, chacun avec un compteur qui part de 0 et un fait réel (299,792 km, 29.8 km, 44 éclairs, 4 millions de tonnes, un battement et 4 naissances). Puis effondrement en point, « All of that. Every single second. »",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Horloge d'une seconde en deux temps",
+      "name_en": "one-second progress ring",
+      "t": "0:02.00-0:03.02",
+      "frames": "f121-f181",
+      "fps": 60,
+      "mechanics": "Point blanc central, anneau fin, compteur mono 0.000 s dessous. Un arc rouge part de midi à f121 (sur le temps) et fait 360° en 60 im, linéaire, pendant que le compteur monte à 1.000 s ; à la fin du tour (f180), l'image suivante f181 explose sur le temps. Deux temps à 120 BPM = une seconde exacte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-cut-f181.jpg",
+      "illus": {"from": 120, "to": 200, "n": 8}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de particules bicolore sur le temps",
+      "name_en": "two-tone particle burst",
+      "t": "0:03.02-0:04.00",
+      "frames": "f181-f240",
+      "fps": 60,
+      "mechanics": "f181 : flash gris-blanc avec anneau rouge au centre ; f182-f186 : un nuage de particules jaillit, orange (#E8A060) à gauche et bleu-blanc (#CFE0FF) à droite, enroulé en spirale comme une galaxie ; vignette qui s'éteint en 10 im ; le nuage tourne lentement pendant 1 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f181.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre formé par convergence + flash de verrouillage",
+      "name_en": "particle title lock-in",
+      "t": "0:03.77-0:04.22",
+      "frames": "f226-f253",
+      "fps": 60,
+      "mechanics": "Les particules se resserrent dans les lettres de ONE SECOND (grain dispersé f226, net f238, ease-in). Au temps f241, flash gris-blanc (fond à ≈ 70 % de luminance) avec une onde circulaire très pâle qui s'agrandit (f242-f250), puis retour au noir en 12 im ease-out. Titre ≈ 18 % de la hauteur, ≈ 80 % de la largeur, lettres granuleuses avec halo. Même geste à la fin (f2506-f2533).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f241.jpg, microM-011-cut-f2521.jpg",
+      "illus": {"from": 226, "to": 253, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Désintégration du titre vers la caméra",
+      "name_en": "title disintegration toward camera",
+      "t": "0:06.00-0:06.40",
+      "frames": "f360-f384",
+      "fps": 60,
+      "mechanics": "Les lettres se dissolvent en une bande horizontale de particules floues (f360-f375) qui s'élargit, puis les particules grossissent en bokeh comme si elles fonçaient sur la caméra (f381-f383, points de 1 à 2 % du cadre). Coupe à f384 sur un champ d'étoiles.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f384.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Saut en hyperespace",
+      "name_en": "warp-speed star streaks",
+      "t": "0:06.45-0:07.50",
+      "frames": "f387-f450",
+      "fps": 60,
+      "mechanics": "Les étoiles s'étirent en traînées qui rayonnent du centre et s'allongent image après image (ease-in, de 1 % à 30 % de la largeur en 20 im) ; deux astres (blanc et orange) dérivent. La Terre arrive : diamètre ≈ 15 % de la hauteur à f420, ≈ 45 % à f450 (ease-out). Repris à 26,9-27,4 s vers le Soleil avec des éclats en éventail.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f384.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "HUD de viseur",
+      "name_en": "viewfinder HUD",
+      "t": "0:07.5-0:37.2",
+      "frames": "f450-f2232",
+      "fps": 60,
+      "mechanics": "Repères d'angle (équerres à ≈ 3 % des bords), « ONE SECOND / A FIELD GUIDE » en haut à gauche, point rouge + « TC 00:10:08 » en haut à droite, barre ELAPSED rouge graduée en bas (≈ 75 % de la largeur) avec valeur « 0.458 s » au-dessus de la tête, « PLAYBACK 0.21× » et « 1.000 s » en bas à droite. Mono capitales ≈ 1 % de la hauteur, gris #6B6B6B.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur à zéros de tête grisés",
+      "name_en": "counter with dimmed leading zeros",
+      "t": "0:08.30-0:13.00",
+      "frames": "f498-f780",
+      "fps": 60,
+      "mechanics": "Chiffres tabulaires, la largeur reste fixe : les zéros de tête sont affichés à ≈ 20 % d'opacité (« 015,458 », « 083,599 »). Le nombre change à chaque image : +1 150 km/im à f540, +1 650 km/im vers f600, +1 300 km/im à f670, puis ease-out jusqu'à 299,792 (299,471 à 12,5 s, valeur finale vers 12,9 s), maintien 0,8 s. Chiffre ≈ 14 % de la hauteur à gauche (x ≈ 8 %), unité « km » ≈ 3 %.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f554.jpg, microM-005-move-f608.jpg",
+      "illus": {"from": 539, "to": 574, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barre ELAPSED et facteur de ralenti",
+      "name_en": "elapsed bar with playback rate",
+      "t": "0:07.8-0:37.2",
+      "frames": "f468-f2232",
+      "fps": 60,
+      "mechanics": "La seconde du film est étalée sur ≈ 4,7 s réelles (PLAYBACK 0.21×) : la barre rouge avance de 0 à 1.000 s pendant chaque chapitre, avec une tête ronde et la valeur au-dessus. Rend le ralenti tangible et donne un repère de progression.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio grotesque grasse / serif italique / mono espacée",
+      "name_en": "three-voice type system",
+      "t": "0:08.3-0:41.3",
+      "frames": "f498-f2478",
+      "fps": 60,
+      "mechanics": "Chiffre en grotesque très grasse blanc chaud (≈ 14 % de la hauteur), phrase en serif italique (≈ 5 %) juste dessous, précision en mono capitales grises (≈ 1,5 %, interlettrage +30 %), compteur secondaire en mono rouge (« LAP 3.26 / 7.50 »). Label de chapitre rouge au-dessus. Ferré à gauche, x ≈ 8 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Décodage de texte mono",
+      "name_en": "text scramble decode",
+      "t": "0:40.35-0:41.20",
+      "frames": "f2421-f2472",
+      "fps": 60,
+      "mechanics": "Les labels mono apparaissent en caractères aléatoires qui se résolvent lettre par lettre (« AND YOU JSF0 /GNJK » → « AND YOU JUST SPENT », générique « … & 6/9QXS 8Q5 » → « SCORED BY … »). Aussi sur le label d'intro « HOW MUCH HAPPENS IN » (0,9-1,6 s).",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation par masque et bascule 3D",
+      "name_en": "masked slide-up and flip reveal",
+      "t": "0:27.70-0:27.82",
+      "frames": "f1662-f1669",
+      "fps": 60,
+      "mechanics": "Les chiffres montent dans un masque à la ligne de base : seul le haut est visible à f1662, entier à f1669 (≈ 8 im, ease-out). Les phrases italiques basculent depuis le bas (rotation sur l'axe horizontal, ligne de base courbée visible) en ≈ 20 im. Sorties : glissement à gauche sous masque (f835-f845) ou bascule inverse.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1649.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Terre en points lumineux",
+      "name_en": "dot-matrix night Earth",
+      "t": "0:07.0-0:26.6",
+      "frames": "f420-f1596",
+      "fps": 60,
+      "mechanics": "Globe sombre dont les continents sont faits de points, villes en points orange #FFB36B, halo atmosphérique bleu #9CC4FF en bord, rotation lente. Chapitre 01 : centre x ≈ 70 %, diamètre ≈ 55 % de la hauteur ; chapitre 03 : ≈ 120 % de la hauteur, coupé à droite, lumière de bord chaude venant du Soleil.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Lumière qui fait le tour de la Terre",
+      "name_en": "orbiting light flare",
+      "t": "0:08.3-0:12.9",
+      "frames": "f498-f774",
+      "fps": 60,
+      "mechanics": "Un éclat blanc avec forte lueur (≈ 15 % de la hauteur) orbite autour du globe et laisse des ellipses fines qui s'accumulent (une par tour). Un tour toutes les 25 à 44 im (pics mesurés f517, f553, f583, f608, f636, f667, f711), plus rapide au milieu : il suit l'ease-in-out du compteur, pas la musique. Le compteur LAP x / 7.50 suit.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f554.jpg, microM-006-move-f655.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arc d'orbite et traînée orange",
+      "name_en": "orbit arc with motion trail",
+      "t": "0:15.0-0:20.3",
+      "frames": "f900-f1218",
+      "fps": 60,
+      "mechanics": "Une ligne fine blanche courbe part de la Terre vers le coin haut droit (trajectoire autour du Soleil) ; une traînée orange lumineuse pousse sous la Terre et s'allonge jusqu'à ≈ 45 % de la hauteur pendant que le compteur monte de 0.5 à 29.8 km.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Éclairs en flashs ponctuels",
+      "name_en": "lightning flash points",
+      "t": "0:21.3-0:25.6",
+      "frames": "f1278-f1536",
+      "fps": 60,
+      "mechanics": "Des éclats blancs avec lueur (2 à 6 % du cadre) s'allument à des points aléatoires du globe, environ 10 par seconde, 3 à 6 im chacun. Le compteur « bolts » suit (3 → 44). Pics mesurés sans rapport avec la grille musicale.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Lever de soleil derrière le limbe",
+      "name_en": "over-the-limb sunrise reveal",
+      "t": "0:25.83-0:26.42",
+      "frames": "f1550-f1585",
+      "fps": 60,
+      "mechanics": "La caméra monte et pivote au-dessus du bord de la Terre : le limbe éclairé passe d'un arc vertical à droite à un arc horizontal en bas (≈ 20 im), puis le Soleil émerge derrière avec un halo qui grossit (f1567-f1576, ease-out) et se stabilise à ≈ 15 % de la hauteur. La phrase précédente sort à gauche pendant ce temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1565.jpg",
+      "illus": {"from": 1552, "to": 1584, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le Soleil, blanc, coupure au noir",
+      "name_en": "sun whiteout to black",
+      "t": "0:31.78-0:32.58",
+      "frames": "f1907-f1955",
+      "fps": 60,
+      "mechanics": "Poussée dans le Soleil : le disque envahit le cadre et tout passe au blanc en 15 im (ease-in), blanc plein à f1921 sur le temps ; 2 im noires (f1922-f1923) ; puis un gris clair qui s'éteint en ≈ 30 im vers le fond rouge sombre du chapitre 05. Surexposition puis silence visuel avant l'intime.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1922.jpg",
+      "illus": {"from": 1905, "to": 1945, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Électrocardiogramme qui se trace",
+      "name_en": "self-drawing ECG line",
+      "t": "0:32.65-0:34.75",
+      "frames": "f1959-f2085",
+      "fps": 60,
+      "mechanics": "Ligne rouge #E5533A tracée de gauche à droite par une tête lumineuse ; pic QRS ≈ 20 % de la hauteur à x ≈ 22 %, dessiné vers f1973-f1980 (temps f1981) ; puis onde T et tracé plat jusqu'au bord droit à vitesse constante (≈ 1,75 s). Label « 05 — YOU » rouge au-dessus.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Naissances ponctuées de carillons",
+      "name_en": "chime-synced births",
+      "t": "0:34.98-0:35.68",
+      "frames": "f2099-f2141",
+      "fps": 60,
+      "mechanics": "Quatre points blancs apparaissent sur la ligne (x ≈ 35 à 60 %) toutes les 14 im, chacun avec deux ondes circulaires qui s'agrandissent et s'effacent en ≈ 30 im. Whisper entend des cloches à 35,1 s : effet sonore placé sur chaque apparition. 1re naissance 2 im avant le temps, les suivantes dérivent (pas de 14 im au lieu de 15).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Effondrement en un point",
+      "name_en": "collapse to a single dot",
+      "t": "0:37.20-0:38.50",
+      "frames": "f2232-f2310",
+      "fps": 60,
+      "mechanics": "La ligne ECG raccourcit vers le centre, les quatre points glissent l'un contre l'autre (f2239-f2253), fusionnent en un seul point avec anneau (38,0 s). « All of that. » apparaît sous le point à 38,5 s, sur le temps et l'attaque forte f2311. Souffle détecté à 37,7 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin méta : ton propre temps écoulé",
+      "name_en": "meta elapsed-time counter",
+      "t": "0:40.35-0:41.30",
+      "frames": "f2421-f2478",
+      "fps": 60,
+      "mechanics": "Un compteur grotesque grasse (≈ 12 % de la hauteur) affiche le timecode réel de la vidéo (40.35 s à f2421, 41.20 s à f2472, au centième près), encadré de « AND YOU JUST SPENT » et d'une ligne dessous en mono décodée. Il monte dans un masque à l'entrée, sort vers le haut à 41,25 s, ne reste qu'un point qui explose.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle du titre avec nouvelle phrase",
+      "name_en": "bookend title loop",
+      "t": "0:41.42-0:45.00",
+      "frames": "f2485-f2699",
+      "fps": 60,
+      "mechanics": "Même geste qu'au début : explosion bicolore, convergence en ONE SECOND, flash sur le temps f2521. Le sous-titre change : « a short film about a very short time » devient « make the next one count ». Générique mono minuscule, fondu au noir en ≈ 40 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f2521.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Squelette en secondes rondes sur 120 BPM",
+      "name_en": "round-second timeline on a 120 BPM grid",
+      "t": "0:00-0:42.02",
+      "frames": "f0-f2521",
+      "fps": 60,
+      "mechanics": "À 120 BPM, chaque seconde ronde tombe sur un temps (f1 + 30k). Les grands événements écrits à 3,0 / 4,0 / 6,0 / 32,0 / 42,0 s se retrouvent automatiquement sur la musique (11 gestes clés sur 17 à ±2 im). Les événements écrits en durées libres (révélations à 27,7 s, 40,35 s) ratent la grille.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f181.jpg, microM-002-cut-f241.jpg, microM-010-cut-f1922.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rouge comme fil conducteur",
+      "name_en": "single red accent",
+      "t": "0:02.0-0:37.2",
+      "frames": "f121-f2232",
+      "fps": 60,
+      "mechanics": "Dans un monde noir et blanc chaud, seul le rouge #E5533A porte l'information de structure : l'arc de l'horloge, les labels de chapitre, la barre ELAPSED, le compteur LAP, puis tout le chapitre 05 (ECG, fond #140606). Les couleurs des astres restent dans l'image 3D.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Show off » sans style imposé : Claude vise le film d'auteur (concept, 3D, typographie soignée) plutôt que le montage nerveux. L'ambition est lue comme profondeur et finition, pas comme rythme."},
+    {"kind": "inputs", "insight": "« Do not reference any previous memories or skills » : aucun style maison, Claude invente un système complet (HUD de viseur, trio typographique, rouge unique)."},
+    {"kind": "structure", "insight": "Structure en chapitres numérotés du cosmique à l'intime (lumière → Terre → orages → Soleil → toi) puis chute méta sur le spectateur : schéma très efficace, réutilisable pour tout sujet chiffré."},
+    {"kind": "build", "insight": "Bande-son probablement composée en code (générique « SCORED BY ») à 120 BPM + timeline en secondes rondes = squelette calé sans effort. Pour un calage complet, écrire aussi les révélations internes en multiples de 0,25 s."},
+    {"kind": "other", "insight": "La pique contre le « PowerPoint glorifié » de GPT pousse Claude vers la continuité : 10 coupes seulement, tout passe par la caméra, les particules et les transitions."},
+    {"kind": "qa", "insight": "Images noires d'1 im (f1642, f1648, f1807) où le Soleil disparaît : pas de contrôle image par image du rendu WebGL avant l'export."}
+  ],
+  "steal": [
+    "Compteur à zéros de tête grisés (≈ 20 % d'opacité) : la largeur du nombre reste fixe et on lit la progression.",
+    "Écrire la timeline en secondes rondes sur une musique à 120 BPM : chaque début de seconde tombe sur un temps.",
+    "Titre formé par particules qui convergent, verrouillé par un flash gris-blanc et une onde circulaire pile sur le temps.",
+    "HUD de viseur (repères d'angle, timecode, barre ELAPSED, facteur PLAYBACK) pour rendre crédible un ralenti et unifier les chapitres.",
+    "Fin méta : afficher le temps réel déjà passé par le spectateur, puis boucler sur le titre avec une nouvelle phrase."
+  ],
+  "flaws": [
+    "35 % de maintiens statiques : compteurs longs et chapitre cœur de 6 s, loin d'un mouvement toutes les 0,5-1 s.",
+    "Textes mono du HUD à ≈ 1 % de la hauteur : illisibles sur mobile.",
+    "Images noires parasites d'une image (f1642, f1648, f1807) : rendu 3D pas prêt à la capture.",
+    "Même gabarit répété quatre fois (label, chiffre, phrase italique) : structure prévisible au 3e chapitre.",
+    "Hyperespace en traînées d'étoiles : cliché de science-fiction, deux fois."
+  ],
+  "deep_study": {"worth": true, "why": "60 fps natifs et gestes très propres à mesurer : convergence des particules et flash sur le temps, courbe des compteurs, révélations par masque, montée au-dessus du limbe, blanc puis 2 im noires. Peu de coupes : il faut le voir en continu pour comprendre les mouvements de caméra."}
+}

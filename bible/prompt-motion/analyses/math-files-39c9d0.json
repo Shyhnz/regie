@@ -1,0 +1,429 @@
+{
+  "slug": "math-files-39c9d0",
+  "title": "Mathematics motion showreel",
+  "handle": "@Math_files",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Huit visualisations mathématiques justes et soignées (Fourier, Julia, phyllotaxie, Euler) sur une vraie grille musicale ; perd un point pour le même glitch répété aux 8 coupes et un mouvement souvent en roue libre.",
+  "summary": "Showreel de 20 s où chaque section de 2 s (une mesure à 120 BPM) montre une idée mathématique : cercle trigonométrique, épicycles de Fourier qui dessinent π, Lissajous 3D, onde en surface, fractale de Julia, phyllotaxie, puis l'identité d'Euler qui sert de chute avant le titre « CLAUDE ». Un HUD de caméra et une pulsation sur chaque temps tiennent l'ensemble. Riche et juste, mais un seul type de transition.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 20 secondes de motion graphics « dynamique » sur les mathématiques, présentées comme le showreel d'un motion designer matheux pour un CV, avec « go all out ». Rien sur la musique, le format, le nombre de sections ni le style.",
+    "Claude a décidé seul : 8 sections de 2 s (une mesure à 120 BPM), un HUD de caméra (compteur, timecode, numéro d'image), la pulsation sur chaque temps, le glitch à chaque coupe, Euler comme chute, la signature « CLAUDE » et probablement la bande-son.",
+    "Prompt d'une ligne bien servi par « go all out » : le modèle a empilé huit démonstrations au lieu d'une idée filée. Il aurait fallu demander des transitions variées et motivées (une figure qui devient la suivante) plutôt qu'un glitch unique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#06060E", "role": "fond quasi noir bleuté (coins #050407)"},
+      {"hex": "#14121A", "role": "centre du vignettage radial"},
+      {"hex": "#48E8F8", "role": "cyan : cercle trigonométrique, cos θ, arc inférieur d'Euler, début du soulignement (#48BCE6)"},
+      {"hex": "#F04888", "role": "magenta : onde sin θ, points de phyllotaxie, fin du soulignement (#CA3F8F)"},
+      {"hex": "#F8B858", "role": "ambre lumineux : tracé de π, arc supérieur d'Euler, « −1 »"},
+      {"hex": "#2E1836", "role": "remplissage prune translucide de π"},
+      {"hex": "#7868F8", "role": "violet : Lissajous 3D, fractale (#5838C8), milieu du soulignement (#8772DB)"},
+      {"hex": "#382888", "role": "indigo : maillage de la surface ondulée"},
+      {"hex": "#CDD3FE", "role": "bas du dégradé de « CLAUDE » (haut #FFFFFF)"},
+      {"hex": "#B8285A", "role": "point rouge du HUD qui change sur chaque temps (probable ; #91234E mesuré avec l'antialiasing)"},
+      {"hex": "#A09DA0", "role": "textes du HUD (lignes secondaires #55575B)"},
+      {"hex": "#2C2C34", "role": "gris du flash de transition"}
+    ],
+    "type": "Trois familles : serif mathématique italique type Computer Modern pour les formules (≈ 4-6 % de la hauteur), mono à capitales très espacées pour le HUD (≈ 1-2 %), sans géométrique demi-gras pour « CLAUDE » (capitale 11 %, interlettrage ≈ 0,3 em).",
+    "texture": "Tracés fins (2-4 px) en couleurs saturées avec halo lumineux (glow) de 10-20 px ; traînée en dégradé derrière la tête de comète ; vignettage radial ; grille de points très discrète en fond ; grain fin probable. Aucun flou de mouvement. Transitions : flash gris, bandes horizontales décalées, copies fantômes, lignes de couleur pleine largeur.",
+    "style": "HUD scientifique néon sur noir",
+    "coherence": "Le HUD fixe (coins de viseur, « CLAUDE / MOTION × MATHEMATICS · REEL 2026 », compteur « 03 / 08 » + nom de section, « t = 07.50 s », « FRAME 0450 · 1920×1080 · 60 FPS », barre de progression graduée toutes les 2 s) encadre les 8 sections et raconte la devise finale « every frame is a function of t ». Fond, halo, trois familles de police et palette néon commune restent constants ; chaque section prend une couleur dominante. Ce qui casse : le même glitch à chaque coupe, sans lien avec le contenu."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 119,9 BPM (pulsation très nette, 6,79) ; l'image suit une grille exacte de 120 BPM : 8 coupes toutes les 120 im (2 s = une mesure de 4 temps, la section Fourier en dure deux), point rouge du HUD qui change toutes les 30 im (chaque temps), signes de l'identité d'Euler toutes les 15 im (croches). La grosse caisse arrive ≈ 30 ms après la grille : coupes, flashs et pulsations précèdent la barre de 1-2 im, ce qui se perçoit comme synchrone. Les 48 % de « maintiens » détectés automatiquement sont en fait des tracés lents et continus (pointe qui dessine π, rotation de la surface, zoom de la fractale) : il y a toujours un élément en mouvement et un accent à chaque temps. Vrai temps mort : la tenue de la carte finale complète (≈ 0,57 s, f1128-f1162) avant le fondu au noir, et une intro de 2 s très discrète (éléments fins sur fond noir). Densité : une idée mathématique toutes les 2 s, un accent visuel toutes les 0,5 s.",
+    "timeline": [
+      {"t": "0:00-0:00.20", "what": "Petit anneau cyan au centre qui s'ouvre en onde et laisse un point blanc (f0-f12)", "technique": "ouverture point-anneau"},
+      {"t": "0:00.20-0:00.95", "what": "« A SHOWREEL IN ONE VARIABLE » se décode, axes gradués qui s'étirent depuis le centre (à partir de f17)", "technique": "décodage de texte + tracé d'axes"},
+      {"t": "0:00.50-0:01.15", "what": "« let t ∈ [0, 20] » tapé en serif italique à partir de f30 ; anneau pulsé autour du point sur chaque temps (f31, f61, f91)", "technique": "machine à écrire + pulsation"},
+      {"t": "0:01.27-0:01.85", "what": "Arc cyan qui trace le cercle unité (départ f76, demi-temps), axes et textes s'effacent", "technique": "tracé de cercle"},
+      {"t": "0:01.95-0:02.27", "what": "Glitch puis flash gris sur la coupe (f117-f136)", "technique": "transition glitch-flash"},
+      {"t": "0:02.00-0:04.00", "what": "Le rayon tourne, sin θ (magenta) et cos θ (cyan) se déroulent en ondes ; pulsations à f180 et f210", "technique": "cercle → sinusoïdes"},
+      {"t": "0:04.00-0:07.20", "what": "Épicycles de Fourier (180 termes) qui dessinent π en ambre, spectre |c_n| à gauche ; pulsation sur les 7 temps", "technique": "épicycles + pulsation"},
+      {"t": "0:07.20-0:08.00", "what": "π se remplit d'un dégradé prune (f432-f465), tenue, glitch", "technique": "remplissage"},
+      {"t": "0:08.00-0:10.00", "what": "Lissajous 3D (sin 3t, sin 2t, sin 5t) en comète lumineuse ; grille 3 × 3 de variantes qui apparaît à f496", "technique": "courbe paramétrique + planche de variantes"},
+      {"t": "0:10.00-0:12.00", "what": "Point magenta qui éclot en surface filaire z = cos(kr − ωt)/(1 + r), caméra qui bascule puis tourne, sonde avec valeurs", "technique": "surface 3D"},
+      {"t": "0:12.00-0:14.00", "what": "Fractale de Julia révélée par un iris (f721-f731), zoom continu, bascule vers la poussière (f800-f812)", "technique": "iris + fractale"},
+      {"t": "0:14.00-0:16.00", "what": "Phyllotaxie : disque qui grandit en √t, φ et Fibonacci qui s'écrivent, vague de couleur f904-f918, pulsations f870, f900, f930", "technique": "génératif à l'angle d'or"},
+      {"t": "0:16.00-0:16.65", "what": "Glitch, puis les points s'enroulent et convergent en cercle unité (f970-f999)", "technique": "morphing points → cercle"},
+      {"t": "0:16.55-0:18.00", "what": "e^{iπ} (f993), le rayon tourne de 0 à π (f1005-f1052), « + », « 1 », « = » toutes les 15 im", "technique": "formule sur les croches"},
+      {"t": "0:18.00-0:18.40", "what": "Flash sur la coupe, « 0 » rose avec onde circulaire, l'équation rétrécit et monte (f1090-f1112)", "technique": "chute + recomposition"},
+      {"t": "0:18.25-0:18.97", "what": "« CLAUDE » se lève lettre à lettre (f1095-f1128), sous-titre décodé, soulignement en dégradé, devise en italique", "technique": "carte titre en cascade"},
+      {"t": "0:18.80-0:19.37", "what": "Tenue de la carte complète", "technique": "maintien"},
+      {"t": "0:19.37-0:19.95", "what": "Fondu au noir de 35 im pendant que la musique s'éteint", "technique": "fondu de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille de 120 BPM vérifiée image par image. (1) Coupes : 8 sur 8 à 1-2 im avant la barre bleue (f120/f121, f240/f241, f480/f481, f600/f601, f720/f722, f840/f842, f960/f962, f1080/f1082). (2) Pulsation de tous les tracés sur les temps : 14 temps sur 22 au seuil strict dans les sections 2 à 7 (20 sur 22 au seuil 1,1), contre 1 demi-temps sur 39 et 0 image témoin sur 31 ; dans l'intro, l'anneau du point central pulse exactement sur les barres f31, f61, f91 (4 im chacun). (3) Point rouge du HUD qui change sur les 40 temps (f30, f60 … f1170). (4) Gestes clés : 20 sur 30 à ±2 im d'une barre (67 %, hasard ≈ 33 %), dont un cas limite (« CLAUDE », −2/−3 im) ; hors coupes 12 sur 22 (55 %). Calés : axes f17 (demi-temps f16), frappe f30 (f31), arc f76 (f76), vignettes f496 (f496), bascule de Julia f810 (f812), couleur de phyllotaxie f904 (f902), e^{iπ} f993 (f992), rotation f1005 (f1007), « + » f1022, « 1 » f1037, « = » f1052 (barres f1022, f1037, f1052). Hors grille : décodage du titre (f10-f12), effacement des axes (f97), remplissage de π (f432), morphing points → cercle (f970), « −1 » (f1062), montée de l'équation (f1090), sous-titre (f1106), soulignement (f1116), devise (f1123), fondu final (f1162). Décalage typique : l'image précède la barre de 1-2 im (−27 ms mesurés), la grosse caisse arrive ≈ 30 ms après la grille.",
+    "synced": ["coupes", "flashs", "pulsations", "departs", "apparitions", "texte", "couleur", "impacts", "drop"],
+    "style_match": "Électro probable à 120 BPM, grosse caisse sur chaque temps, métronomique : colle au HUD scientifique, aux flashs secs et aux pulsations ; les tracés continus ignorent le groove.",
+    "how_built": "Le prompt ne parle pas de musique. Tout indique une construction sur une seule horloge : sections de durée multiple de 0,5 s, signes posés toutes les 0,25 s, et une bande-son arrangée sur le même découpage (mesures audio : intro sans grosse caisse 0-2 s à −20 dB ; grosse caisse sur chaque temps de 2 à 16 s, −13 dB sur les temps contre −16 dB entre ; aigus qui s'allument une section sur deux, énergie 82 / 22 / 22 / 85 / 27 / 85 / 28 par tranche de 2 s ; cassure sans grosse caisse pendant la construction d'Euler 16-18 s ; impact à 18,0 s à −12 dB sur « = 0 » ; extinction de −21 à −32 dB pendant le fondu au noir). Probablement une constante BPM = 120 dans le code et une bande-son générée ou choisie à ce tempo, démarrant à t = 0. Le HUD rend la grille visible (point qui change à chaque temps, barre graduée toutes les 2 s)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Une idée mathématique par mesure",
+      "name_en": "one math idea per bar",
+      "t": "0:00-0:18.00",
+      "frames": "f0-f1080",
+      "fps": 60,
+      "mechanics": "8 sections annoncées par le compteur « 01 / 08 » à « 08 / 08 » : intro (axes, variable t), cercle trigonométrique, épicycles de Fourier (seule section double, 4 s), Lissajous 3D, surface ondulée, fractale de Julia, phyllotaxie, identité d'Euler. Chaque section dure exactement 120 im (2 s = une mesure à 120 BPM). Montée vers une chute : e^{iπ} + 1 = 0 réunit les objets vus avant (π, cercle, e, i), puis le nom de l'auteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glitch à flash gris sur chaque coupe",
+      "name_en": "glitch-flash cut",
+      "t": "0:01.95-0:02.27",
+      "frames": "f117-f136",
+      "fps": 60,
+      "mechanics": "2-3 im avant la coupe, l'image se découpe en bandes horizontales décalées de 50 à 100 px, avec copies fantômes décalées (textes doublés « CLAUDÆUDE », « 02 / 08 / 08 ») et lignes de couleur pleine largeur (magenta, ambre, cyan). Sur la coupe, flash : la luminance moyenne passe de ≈ 9 à 42-51 (fond gris #2C2C34), puis décroît presque linéairement en 15-16 im (0,25 s, un demi-temps) pendant que la section suivante apparaît. Rigoureusement identique aux 8 coupes : exécution propre, mais tic de vidéo IA répété sans lien avec le contenu.",
+      "verdict": "cliche",
+      "evidence": "microM-001-cut-f120.jpg",
+      "illus": {"from": 115, "to": 140, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur le premier temps de chaque mesure",
+      "name_en": "cuts on the downbeat",
+      "t": "0:02.00-0:18.00",
+      "frames": "f120, f240, f480, f600, f720, f840, f960, f1080",
+      "fps": 60,
+      "mechanics": "Toutes les coupes tombent à 120 im d'intervalle exact, sur le temps 1 d'une mesure de 4/4 à 120 BPM, 1 à 2 im avant la barre bleue (la grosse caisse arrive ≈ 30 ms après la grille). Le flash de la coupe coïncide avec la grosse caisse et avec un changement d'arrangement : les aigus s'allument ou s'éteignent toutes les 2 s, si bien que chaque section a aussi sa couleur sonore.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1080.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pulsation de tout le dessin sur chaque temps",
+      "name_en": "beat-synced global pulse",
+      "t": "0:00.52-0:15.50",
+      "frames": "f31-f930",
+      "fps": 60,
+      "mechanics": "Sur chaque temps (images 30k), tous les tracés de la section s'illuminent ensemble (contour de π, cercles d'épicycles, barres du spectre et annotations ; grille de Lissajous ; points de phyllotaxie) puis retombent en 4-5 im. Énergie d'image ×1,5 à ×5 sur les temps (f330 ×2,6 ; f450 ×5,0 ; f870 ×2,2), contre ≈ ×1 aux demi-temps (1 sur 39) et sur des images témoins (0 sur 31). Dans l'intro, c'est un anneau autour du point central qui pulse exactement sur les barres f31, f61, f91 (4 im). Présente dans 7 sections sur 9 ; absente pendant Euler et sur la carte finale, où le texte prend le relais.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg ; énergie image par image aux temps f330, f360, f390, f420, f450, f870, f900, f930"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Métronome du HUD",
+      "name_en": "HUD record dot as a metronome",
+      "t": "0:00.50-0:19.50",
+      "frames": "f30-f1170",
+      "fps": 60,
+      "mechanics": "Le point rouge (#B8285A probable) à gauche du compteur de section change d'état exactement toutes les 30 im (f30, f60, f90 … f1170) : 40 temps sur 40, 1 im avant la barre bleue. Il rend la grille musicale visible même quand le contenu ne pulse pas (Euler, carte finale) et donne au spectateur le tempo avant même de l'entendre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (point rouge en haut à droite)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Signes de la formule posés sur les croches",
+      "name_en": "equation typed on eighth notes",
+      "t": "0:16.55-0:18.02",
+      "frames": "f993-f1081",
+      "fps": 60,
+      "mechanics": "e^{iπ} apparaît à f993 (temps f992), puis « + » à f1022, « 1 » à f1037, « = » à f1052 : 15 im d'écart exactement (0,25 s, une croche à 120 BPM), chaque signe en fondu de ≈ 3 im, à 0 im de la barre. Le « 0 » saute un temps et tombe sur la coupe f1080-f1081 (temps 1 de la mesure suivante), avec l'impact musical de 18,0 s. Pendant ce temps la musique a perdu sa grosse caisse : la formule fait elle-même le rythme.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1018, "to": 1085, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le rayon balaie de 0 à π en ease-in-out",
+      "name_en": "radius sweep from 0 to π",
+      "t": "0:16.75-0:17.53",
+      "frames": "f1005-f1052",
+      "fps": 60,
+      "mechanics": "Le vecteur e^{iθ} part de 0° à f1005 (demi-temps f1007) et atteint 180° à f1050-f1052 (temps f1052) : 47 im (0,78 s, 1,5 temps). Pas angulaire ≈ 2° par image au début, 5-7° au milieu, ≈ 1° à la fin : ease-in-out. L'arc balayé passe à l'ambre #F8B858, un petit arc d'angle grandit au centre, et « −1 » s'allume en ambre à l'arrivée. L'arrivée à π et le signe « = » tombent sur le même temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les points deviennent le cercle suivant",
+      "name_en": "particles regroup into the next shape",
+      "t": "0:16.17-0:16.65",
+      "frames": "f970-f999",
+      "fps": 60,
+      "mechanics": "Après le glitch de f960, les points de la phyllotaxie s'enroulent le long de spirales et convergent vers un cercle situé à x ≈ 33 % du cadre pendant que le disque glisse à gauche et rétrécit : 30 im (0,5 s), énergie qui monte 17 im (pic f986-f987) puis atterrissage en 12 im (ease-in-out). Le cercle passe au blanc puis au cyan et devient le cercle unité d'Euler. Seule transition motivée du film, et la plus élégante ; elle ne tombe pas sur la grille (départ 7 im avant le demi-temps).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 966, "to": 1002, "n": 7}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris circulaire sur la fractale",
+      "name_en": "circular iris reveal",
+      "t": "0:12.02-0:12.20",
+      "frames": "f721-f731",
+      "fps": 60,
+      "mechanics": "Juste après le flash de f720, un disque contenant la fractale s'ouvre au centre : ≈ 10 % de la largeur à f721, 25 % à f722, 35 % à f723, 50 % à f724, 60 % à f725, puis il dépasse le cadre vers f728-f731 (ease-out). Un fin anneau blanc borde l'iris ; les deux premières images restent tranchées par le glitch. Départ 1 im avant la barre du temps (f722) : la révélation fait l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f723.jpg",
+      "illus": {"from": 718, "to": 732, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Épicycles de Fourier qui dessinent π",
+      "name_en": "Fourier epicycles drawing",
+      "t": "0:04.25-0:07.20",
+      "frames": "f255-f432",
+      "fps": 60,
+      "mechanics": "Une chaîne de cercles gris fins (K = 180 termes) tourne bout à bout ; la pointe trace le contour de π en ambre #F8B858 avec halo, en ≈ 177 im (2,95 s), jusqu'à « t/2π = 1.000 ». À gauche, le spectre |c_n| (n = −24 … 24 ; barres cyan au centre, violettes puis magenta vers les bords) ; en bas, f(t) = Σ c_n e^{int} en serif (≈ 4 % de la hauteur). On voit la méthode, pas seulement le résultat.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Remplissage de π en dégradé",
+      "name_en": "shape fill fade-in",
+      "t": "0:07.20-0:07.75",
+      "frames": "f432-f465",
+      "fps": 60,
+      "mechanics": "Dès que le contour se ferme, l'intérieur de π se remplit d'un dégradé prune-violet translucide (#2E1836 vers le violet) : luminance intérieure de 14 à 64 en 33 im (0,55 s), progression linéaire (+1,5 par image). Départ 4 im avant le demi-temps f436, fin à 1 im du demi-temps f466 : c'est l'arrivée qui est calée, pas le départ. Linéaire et un peu plat : un ease-out et un départ sur le temps auraient plus de punch.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f480.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Lissajous 3D en comète lumineuse",
+      "name_en": "3D Lissajous comet trail",
+      "t": "0:08.05-0:10.00",
+      "frames": "f483-f597",
+      "fps": 60,
+      "mechanics": "Une tête blanche part du centre à f483 et dessine (sin 3t, sin 2t, sin 5t) en rotation 3D ; la traînée passe du bleu au violet puis au magenta (#7868F8 vers #F04888) avec halo, plus épaisse et plus claire au premier plan, ce qui donne la profondeur sans éclairage. La courbe occupe ≈ 45 % de la largeur à gauche ; formule en bas à gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f480.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Planche de variantes en vignettes",
+      "name_en": "variant grid sidebar",
+      "t": "0:08.27-0:10.00",
+      "frames": "f496-f597",
+      "fps": 60,
+      "mechanics": "À droite, une grille 3 × 3 de petites figures de Lissajous 2D (rapports 1:1, 1:2, 2:3…) apparaît en fondu à partir de f496 (demi-temps) sur ≈ 25 im ; une case est encadrée en cyan. Elle place la courbe principale dans une famille : on comprend le paramètre sans explication. Elle pulse avec le reste sur les temps f540 et f570.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Surface filaire d'une onde",
+      "name_en": "wireframe wave surface",
+      "t": "0:10.00-0:12.00",
+      "frames": "f600-f718",
+      "fps": 60,
+      "mechanics": "Sur la coupe, un point magenta éclot à f601 (temps) et grandit en surface filaire z = cos(kr − ωt)/(1 + r) (maillage ≈ 60 × 60, dégradé indigo #382888 vers magenta) en ≈ 20 im ; la caméra bascule d'une vue de dessus vers une vue de trois quarts puis tourne lentement, l'onde se propage depuis le centre. Une sonde orange avec trait d'appel affiche ses valeurs (r, z). Pulsations faibles sur f631, f661, f691 (masquées par la rotation).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f603.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Fractale de Julia qui se transforme",
+      "name_en": "animated Julia set",
+      "t": "0:12.20-0:14.00",
+      "frames": "f731-f838",
+      "fps": 60,
+      "mechanics": "Ensemble de Julia z_{n+1} = z_n² + c plein cadre, palette violet #5838C8, magenta, orange et cyan ; zoom continu et paramètre c qui suit un cercle (encart du plan complexe en haut à droite, point mobile et valeurs Re c / Im c). Entre f800 et f812 la figure bascule de spirales pleines à une poussière à intérieurs noirs, pic de changement à f810, 2 im avant le temps f812 : la bascule la plus spectaculaire est posée sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f809.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Phyllotaxie à l'angle d'or",
+      "name_en": "golden-angle phyllotaxis",
+      "t": "0:14.10-0:16.00",
+      "frames": "f846-f958",
+      "fps": 60,
+      "mechanics": "Les points sont posés à θ_n = n · 137,508° et r_n = c√n ; le disque passe de 8 % à 40 % de la largeur entre f846 et f902 et sa croissance ralentit d'elle-même (r ∝ √t) : un ease-out donné par la formule. À gauche, φ s'écrit de plus en plus précis (1.6… puis 1.6180339887…), la suite de Fibonacci s'allonge, compteur n et spirales « 21 ↺ 34 ↻ ». Pulsations nettes sur f870, f900, f930.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Vague de couleur sur le temps",
+      "name_en": "colour wash on the beat",
+      "t": "0:15.07-0:15.30",
+      "frames": "f904-f918",
+      "fps": 60,
+      "mechanics": "Les points de la phyllotaxie passent du blanc au magenta et au violet (#F04888 / #6848F8) : saturation moyenne de 0,08 à 0,63 en 14 im, départ 2 im après le temps f902, fin sur le demi-temps f917. Le changement de couleur remplace l'ajout d'un nouvel élément pour relancer l'image au milieu de la section.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte qui se décode",
+      "name_en": "text scramble decode",
+      "t": "0:00.17-0:00.95",
+      "frames": "f10-f57",
+      "fps": 60,
+      "mechanics": "« A SHOWREEL IN ONE VARIABLE » (mono, capitales très espacées, ≈ 1,5 % de la hauteur) apparaît en caractères aléatoires qui se fixent un à un (« A SHOYCERI AS H+V FIRPTAJS » à f30, lisible vers f55). Même procédé pour « MOTION DESIGN × MATHEMATICS » sur la carte finale (f1106-f1127, résolu sur le demi-temps). Effet « machine » répandu : à réserver aux étiquettes courtes.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Formule tapée à la machine",
+      "name_en": "typewriter math",
+      "t": "0:00.50-0:01.15",
+      "frames": "f30-f69",
+      "fps": 60,
+      "mechanics": "« let t ∈ [0, 20] » en serif italique (≈ 2,5 % de la hauteur) s'écrit caractère par caractère, ≈ 1 caractère toutes les 2-3 im, départ à f30 sur le temps (barre f31). Pose la règle du film : t va de 0 à 20 s, et le timecode du HUD le montre ensuite à chaque image.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ouverture : anneau, point, axes",
+      "name_en": "ring-point-axes opening",
+      "t": "0:00-0:00.67",
+      "frames": "f0-f40",
+      "fps": 60,
+      "mechanics": "Un petit anneau cyan au centre (≈ 2 % de la largeur) s'ouvre jusqu'à ≈ 8 % et s'efface comme une onde (f0-f12) en laissant un point blanc ; les axes gradués s'étirent ensuite symétriquement depuis le centre à partir de f17 (demi-temps f16) jusqu'à ≈ 80 % de la largeur. Puis un anneau repart du point à chaque temps (f31-f34, f61-f64, f91-f94). Tout naît d'un seul point : la « variable » du titre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé du cercle unité",
+      "name_en": "unit circle stroke draw-on",
+      "t": "0:01.27-0:01.85",
+      "frames": "f76-f111",
+      "fps": 60,
+      "mechanics": "Un arc cyan #48E8F8 part de 0° à f76 (demi-temps) et fait le tour en ≈ 35 im (0,58 s) en ease-in-out : ≈ 20° à f84, 100° à f93, 180° à f96, 300° à f102, 360° à f111. Une tête lumineuse mène le trait. Axes et « let t » s'effacent pendant le tracé (dès f97) pour ne laisser que le cercle avant la coupe.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Cercle trigonométrique qui déroule sin et cos",
+      "name_en": "unit circle unrolling into sine waves",
+      "t": "0:02.00-0:04.00",
+      "frames": "f120-f237",
+      "fps": 60,
+      "mechanics": "Le rayon tourne à vitesse constante (≈ 4,3 rad/s, ≈ 0,7 tour par seconde, probable) ; sa projection verticale déroule sin θ en magenta #F04888 vers la droite, cos θ en cyan plus discret, avec pointillés de liaison, triangle rectangle et angle θ en ambre. Valeurs en direct sous le cercle (θ = 0.151 rad, sin θ = 0.150), « y = sin θ » en bas à gauche. Vitesse linéaire : pas de courbe, seule la pulsation des temps f180 et f210 rythme la section.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f120.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "HUD de caméra autoréférent",
+      "name_en": "self-referential camera HUD",
+      "t": "0:00-0:19.95",
+      "frames": "f0-f1197",
+      "fps": 60,
+      "mechanics": "Coins de viseur gris, « CLAUDE » + « MOTION × MATHEMATICS · REEL 2026 » en haut à gauche, compteur « 03 / 08 » + nom de section (« FOURIER EPICYCLES », « EULER'S IDENTITY ») en haut à droite, « t = 07.50 s » et « FRAME 0450 · 1920×1080 · 60 FPS » en bas à droite, barre de progression qui se remplit en dégradé bleu → magenta avec une graduation toutes les 2 s. Le film affiche sa propre variable t. Bonne idée, mais textes à 1-2 % de la hauteur et habillage « tech » très répandu.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chute mathématique avant la signature",
+      "name_en": "punchline formula before the name",
+      "t": "0:16.55-0:18.40",
+      "frames": "f993-f1112",
+      "fps": 60,
+      "mechanics": "e^{iπ} + 1 = 0 se construit signe par signe ; le « 0 » rose (≈ 5,5 % de la hauteur, halo) arrive sur la coupe avec une onde circulaire rose qui s'élargit d'environ 30 à 160 px et s'efface en ≈ 45 im. Puis toute l'équation et son cercle réduisent à ≈ 70 % et montent de ≈ 15 % de la hauteur (boîte y 256-588 → 148-380 px, f1090-f1112, 0,37 s) pour devenir l'en-tête de la carte « CLAUDE ».",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1080.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom révélé lettre à lettre sous un masque",
+      "name_en": "staggered masked letter rise",
+      "t": "0:18.25-0:18.80",
+      "frames": "f1095-f1128",
+      "fps": 60,
+      "mechanics": "« CLAUDE » (sans géométrique demi-gras, capitale 120 px = 11 % de la hauteur, interlettrage ≈ 0,3 em, dégradé #FFFFFF → #CDD3FE) : chaque lettre monte d'environ sa hauteur depuis sous la ligne de base, coupée par un masque, en ≈ 18 im avec ease-out fort (pas de 20-28 px puis 4 px). Décalage ≈ 2,8 im par lettre (C f1095, L f1096, A f1099, U f1101, D f1105, E f1109). Départ sur le « drop » détecté à 18,27 s, 2-3 im avant le demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Carte finale en cascade",
+      "name_en": "staggered end-card build",
+      "t": "0:18.43-0:18.97",
+      "frames": "f1106-f1138",
+      "fps": 60,
+      "mechanics": "Pendant et après le nom : « MOTION DESIGN × MATHEMATICS » (mono espacée, ≈ 1,9 % de la hauteur) se décode de f1106 à f1127 et se fixe sur le demi-temps ; le soulignement en dégradé #48BCE6 → #8772DB → #CA3F8F (4 px, 44 % de la largeur) s'étire depuis le centre vers f1116-f1125 ; « every frame is a function of t. » en serif italique gris #BCBCC6 arrive en fondu de ≈ 15 im (f1123-f1138). Quatre couches en 0,55 s, chacune décalée de 8-10 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois voix typographiques",
+      "name_en": "three typographic voices",
+      "t": "0:00-0:19.95",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Serif mathématique italique type Computer Modern pour tout ce qui est formule (f(t) = Σ c_n e^{int} ≈ 4 %, e^{iπ} + 1 = 0 ≈ 5-6 % de la hauteur), mono pour le HUD et les valeurs (1-2 %, capitales espacées), sans géométrique très espacé pour le nom. Chaque voix a un rôle : la science, la machine, l'auteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Néon sur noir avec halo",
+      "name_en": "neon strokes with bloom",
+      "t": "0:00-0:19.95",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Tracés fins (2-4 px) en couleurs saturées sur fond #06060E à vignettage radial (#14121A au centre, #050407 aux coins), chacun avec un halo de 10-20 px ; grille de points très discrète en fond. Une couleur dominante par section (cyan, ambre, violet, indigo, magenta) tirée d'une même palette. Aucun flou de mouvement, ce qui garde les tracés nets à 60 fps.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement musical calé sur le montage",
+      "name_en": "music arranged to the edit",
+      "t": "0:00-0:20.00",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Mesures audio : intro sans grosse caisse (0-2 s, −20 dB), grosse caisse sur chaque temps de 2 à 16 s (−13 dB sur les temps, −16 dB entre), aigus qui s'allument une section sur deux, cassure sans grosse caisse pendant Euler (16-18 s, −19 dB) : tension avant la chute. Impact à 18,0 s (−12 dB) sur « = 0 », puis extinction (−21 → −32 dB) pendant le fondu au noir. La musique a la même structure que l'image : construction, tension, chute, sortie.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fondu au noir final avec la musique",
+      "name_en": "fade to black with the music",
+      "t": "0:19.37-0:19.95",
+      "frames": "f1162-f1197",
+      "fps": 60,
+      "mechanics": "Après ≈ 0,57 s de tenue sur la carte complète, toute l'image descend linéairement de la luminance 12,6 à 0 en 35 im (0,58 s), en même temps que la musique s'éteint. Sortie propre, sans dernier accent.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« like it's your showreel for a résumé » : le modèle a construit une démonstration de savoir-faire en 8 numéros plutôt qu'un récit, avec un HUD de caméra qui donne l'air d'un reel de studio et une signature finale « CLAUDE »."},
+    {"kind": "other", "insight": "« go all out » a été lu comme « montrer le plus de techniques possible » : épicycles de Fourier à 180 termes, fractale, surface 3D, phyllotaxie, Lissajous 3D, chacune avec sa formule et ses valeurs en direct. Densité et exactitude mathématique plutôt qu'une idée unique développée."},
+    {"kind": "structure", "insight": "« 20-second » + 8 sections : le modèle a choisi 2 s par section (une mesure à 120 BPM), sauf Fourier (4 s) qui a besoin du temps de dessiner π. Ce découpage régulier facilite la synchro mais impose le même rythme à toutes les idées."},
+    {"kind": "build", "insight": "Pile non précisée ; 60 fps, mathématiques calculées à chaque image (le HUD affiche t et le numéro d'image), grille temporelle exacte au quart de seconde : rendu programmatique (canvas ou WebGL piloté par une horloge globale) probable. La devise « every frame is a function of t » décrit littéralement la méthode."},
+    {"kind": "inputs", "insight": "Aucune consigne sonore, pourtant la bande-son suit le découpage (intro sans grosse caisse, cassure avant Euler, impact sur « = 0 », extinction au fondu) : soit générée avec la vidéo sur la même horloge, soit choisie à 120 BPM et calée à t = 0 (probable)."},
+    {"kind": "banned", "insight": "Rien n'interdisait les tics de reel IA : le glitch revient aux 8 coupes et le texte qui se décode deux fois. Demander « une transition différente et motivée par section » aurait multiplié les passages comme points → cercle."}
+  ],
+  "steal": [
+    "Une section = une mesure : à 120 BPM, couper toutes les 120 im (60 fps) et poser chaque signe d'une formule toutes les 15 im, une croche.",
+    "Faire pulser tout le dessin sur chaque temps : tracés plus lumineux sur 1-2 im, retour en 4-5 im ; rien sur les demi-temps.",
+    "Rendre la grille visible : point de HUD qui change à chaque temps, barre de progression graduée par section, timecode à l'écran.",
+    "Faire de la fin d'une figure le début de la suivante : les points de la phyllotaxie convergent en 0,5 s vers le cercle unité d'Euler.",
+    "Arranger la musique sur le montage : retirer la grosse caisse pendant la construction de la chute, impact sur le dernier signe, extinction avec le fondu."
+  ],
+  "flaws": [
+    "Le même glitch (bandes, fantômes, flash gris) aux 8 coupes : accent répété partout, sans lien avec le contenu de chaque section.",
+    "Une seule transition motivée (points → cercle) ; les autres sections se succèdent sans se répondre.",
+    "Dans les sections, les tracés défilent à vitesse constante : la synchro repose sur coupes et pulsations, pas sur les courbes.",
+    "HUD et annotations à 1-2 % de la hauteur : illisibles sur téléphone, ils deviennent du décor « tech ».",
+    "Intro de 2 s discrète (point, axes fins, texte à 1,5 %) : accroche faible pour un showreel."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : une des rares pièces bâties sur une horloge musicale exacte à 60 fps (coupes par mesure, pulsation par temps, signes par croche, glitch qui encadre la coupe sur 18 im). Une lecture continue de 16 à 18,8 s (points → cercle, rotation vers π, formule sur les croches, chute, carte finale) montre comment enchaîner synchro et transition motivée."
+  }
+}

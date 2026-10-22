@@ -1,0 +1,427 @@
+{
+  "slug": "devius-maximus-beab45",
+  "title": "Dubz Up motion showreel",
+  "handle": "@Devius_Maximus",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Concept limpide et une métaphore visuelle par phrase, transitions motivées (bouton → iris, traînée → bandeau) ; manque le dernier cran : musique posée, maintiens morts, personnages figés.",
+  "summary": "Promo de 44 s pour l'app Dubz Up, pilotée par une voix off : du constat « tu n'avances pas » à la solution (bouton I WON, reçus, verrou d'apps) puis à l'App Store. Titres condensés mot à mot calés sur la voix, bonhommes au feutre, trois fonds en rotation, tampons d'impact, transitions motivées (bouton → iris). Force : une idée visuelle par phrase. Faiblesses : musique posée, quelques plans figés.",
+  "prompt_vs_result": [
+    "Une ligne : une vidéo de motion « dynamique » pour leur projet Dubz Up, digne de la bande démo d'un motion designer, « go all out ». Ni script, ni durée, ni musique, ni charte, ni format.",
+    "Claude a tout inventé : script en voix off (probablement synthétique), structure problème → solution → fonctions → appel à l'action, une métaphore par phrase (barre bloquée, rejeu, L, tampons, fusée), rotation crème/orange/noir, sept types de transitions.",
+    "« Showreel » a poussé à varier transitions et idées ; l'accès au projet a fourni écrans, dessins et logo (probable). Rien sur la musique : il fallait fournir un morceau ou un BPM et exiger coupes et tampons sur les temps."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F2EEE6", "role": "fond crème principal (vignettage doux vers #E6E1D8 sur les bords)"},
+      {"hex": "#F04E23", "role": "orange de marque : aplats plein cadre, mots-clés, tampons, bouton, bandeau final"},
+      {"hex": "#141414", "role": "noir chaud : fonds des scènes « déni » et « verrou », texte sur crème, trait des bonhommes"},
+      {"hex": "#FFFFFF", "role": "texte sur orange et noir, étiquettes de victoires"},
+      {"hex": "#3A3A3A", "role": "étiquettes éteintes (gris) sur fond noir"},
+      {"hex": "#1A1A1A", "role": "carte de rejeu et cartes d'interface sombres"},
+      {"hex": "#2FB5E8", "role": "icônes d'apps multicolores (bleu, vert #34C759, rose #FF4D8D, violet #9B5CF6) : rupture volontaire de palette = distraction"}
+    ],
+    "type": "Grotesque condensée très grasse (type Anton, probable), capitales, interlettrage serré, titres ≈ 10 % de la hauteur, mot-clé orange ; manuscrite type Caveat pour étiquettes et notes ; logo script au feutre ; micro-labels en capitales espacées.",
+    "texture": "Grain papier fin visible sur les aplats orange ; vignettage doux sur le crème ; ombres portées douces sous le téléphone, les cartes et les étiquettes ; halo radial orange derrière le téléphone à chaque « +1 WIN » ; flou directionnel sur les entrées rapides (téléphone, cartes, mots de la carte de rejeu) ; hachures de feutre dans les lettres tamponnées (L, WIN.) ; bords de papier déchiré sur les volets et le bandeau final ; confettis orange, noirs et gris.",
+    "style": "Typo cinétique et doodles au feutre",
+    "coherence": "Le système tient par trois couleurs (crème, orange, noir) qui tournent comme fonds de scène, une seule famille de titres (condensée grasse, mot-clé orange), un trait de feutre commun aux bonhommes, au logo, aux tampons et aux bords déchirés, et la récurrence du téléphone à droite. Les transitions varient (volet déchiré, push, coupe partielle, volet diagonal, iris, traînée) mais réutilisent toutes la matière du système (papier déchiré, orange, bouton I WON). Seules entorses : les icônes d'apps multicolores (voulues, elles incarnent la distraction) et un léger tic du geste « tampon » répété 7 fois."
+  },
+  "rhythm": {
+    "bpm": 95,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Musique de fond à 95 BPM (netteté de pulsation 5,64), mais le métronome réel est la voix off : 125 mots en 41,2 s (≈ 3 mots/s) et un mot ou un élément nouveau toutes les 0,2 à 0,5 s à l'intérieur des plans. 12 coupes franches détectées + 6 transitions graphiques (volet déchiré f631-f655, push f808-f824, volet diagonal f1811-f1829, iris f2026-f2039, traînée f2285-f2313) ; plan médian 2,9 s. Coupes contre grille musicale : 1/12 à 50 ms d'un temps, distance médiane 146 ms ; mon comptage sur les planches microscope : 5 gestes clés sur 19 à ±2 im d'une barre (26 %, hasard ≈ 26 % à 95 BPM / 60 fps), donc aucune synchro musicale. Synchro voix serrée : le mot apparaît 2 à 4 im avant sa syllabe (YOUR visible f264, voix f268 ; THAT'S f1116, voix f1118-1120 ; EVERY f1402, voix f1406) et le tampon WIN. se pose f876 sur l'attaque de « Win » (f876-879). Temps morts : 11 maintiens ≥ 0,4 s totalisant 6,67 s (15 %) ; les plus gênants : aplat orange vide 2,32-2,82 s (0,5 s pendant « The thing is ») et plan des reçus quasi figé 24,27-25,73 s (1,48 s). Ouverture : 0,4 s de crème vide. Fin : carton final tenu ≈ 2,3 s (41,5-43,8 s) animé seulement par la dérive des confettis.",
+    "timeline": [
+      {"t": "0:00-0:00.4", "what": "Crème vide", "technique": "maintien d'ouverture (temps mort court)"},
+      {"t": "0:00.4-0:02.28", "what": "EVER FEEL LIKE YOU'RE GETTING NOWHERE? mot à mot ; carte YOUR PROGRESS 4 % → 12 % puis retombe à 7-8 %, « still loading… »", "technique": "compteur qui recule, révélation mot à mot par masque"},
+      {"t": "0:02.28-0:04.30", "what": "Coupe sur aplat orange vide 0,5 s, puis YOU'RE WINNING ALL DAY. et 9 étiquettes de victoires qui apparaissent en décalé", "technique": "coupe couleur, étiquettes en cascade"},
+      {"t": "0:04.30-0:06.12", "what": "Coupe sur noir : mêmes étiquettes à la même place mais grises ; YOUR BRAIN'S TRAINED TO MISS IT.", "technique": "désaturation sémantique (raccord de mise en page)"},
+      {"t": "0:06.12-0:07.87", "what": "Coupe sur orange : IT REPLAYS EVERY MISTAKE. + carte REPLAY ×1…×4 qui rejoue MISTAKE / REJECTION / BAD DAY avec flou horizontal", "technique": "boucle de rejeu, flou de défilement"},
+      {"t": "0:07.87-0:10.52", "what": "Coupe sur crème : bonhomme prostré en fondu, nuages REJECTION/MISTAKE/BAD DAY ; FEELING STUCK. LIKE YOU'RE LOSING. ; L géant qui s'écrase à 10,0 s", "technique": "fondu d'apparition, lettre-tampon"},
+      {"t": "0:10.52-0:10.92", "what": "Bande orange à bords déchirés qui balaie en diagonale", "technique": "volet de papier déchiré"},
+      {"t": "0:10.92-0:13.47", "what": "Logo Dubz Up qui s'écrit, bonhomme qui dégage le nuage DOUBT d'un coup de pied ; TRAINS YOUR BRAIN TO CATCH YOUR WINS.", "technique": "révélation de marque, écriture du logo"},
+      {"t": "0:13.47-0:13.73", "what": "Tout le plan glisse à gauche, scène du lever de soleil, téléphone qui arrive avec flou", "technique": "push latéral avec entrée décalée"},
+      {"t": "0:13.73-0:18.50", "what": "WOKE UP TODAY? / MADE YOUR BED? / DID THE HARD THING? : à chaque fois WIN. tamponné, bouton I WON enfoncé, pastille +1 WIN, halo, confettis ; côté gauche coupé, téléphone fixe", "technique": "triplet question → tampon, coupe partielle avec pivot"},
+      {"t": "0:18.50-0:20.00", "what": "Coupe sur noir, confettis qui continuent ; THAT'S A WINNING STREAK. + flamme + 3 pastilles WIN", "technique": "particules à travers la coupe, pastilles en cascade"},
+      {"t": "0:20.00-0:23.28", "what": "Coupe sur orange (retour de la basse) : bonhomme aux jumelles ; THE MORE YOU NOTICE, THE MORE THEY SHOW UP. ; étiquettes qui reviennent des bords", "technique": "rappel (callback) des étiquettes"},
+      {"t": "0:23.28-0:27.25", "what": "Coupe sur crème, téléphone qui monte (écran RECEIPTS) ; EVERY WIN'S SAVED. ; maintien 1,5 s ; tampon circulaire W et « proof you're moving. » manuscrit", "technique": "montée avec flou vertical, tampon caoutchouc, écriture manuscrite"},
+      {"t": "0:27.25-0:30.18", "what": "Coupe sur crème : NO WIN IN SIGHT? GO MAKE ONE. ; bonhomme qui tire WIN à la corde ; 3 cartes de tâches en éventail ; coche tamponnée", "technique": "cartes en éventail, tampon coche"},
+      {"t": "0:30.18-0:30.48", "what": "Volet noir diagonal à bord déchiré, puis téléphone révélé par la même diagonale", "technique": "volet diagonal aller-retour"},
+      {"t": "0:30.48-0:33.73", "what": "WIN FIRST. SCROLL SECOND. ; 6 icônes d'apps à notifications → cadenas gris → déverrouillées", "technique": "échange d'icônes verrou/déverrou"},
+      {"t": "0:33.73-0:33.98", "what": "Le bouton I WON s'enfonce, devient un anneau qui s'ouvre en iris", "technique": "bouton → iris"},
+      {"t": "0:33.98-0:38.08", "what": "Bonhomme sur une fusée ; LITTLE WINS → BIG WINS. → BIG GOALS. → BIG DREAMS. empilés, de plus en plus grands, filet orange qui devient flèche", "technique": "gradation typographique empilée"},
+      {"t": "0:38.08-0:38.55", "what": "La fusée part en haut à droite, sa traînée orange envahit le cadre", "technique": "traînée → volet plein cadre"},
+      {"t": "0:38.55-0:41.50", "what": "Confettis, l'orange se contracte en bandeau déchiré ; logo écrit, bonhommes couronné et « Be Delusional », START YOUR WINNING STREAK. mot à mot, badge App Store, URL", "technique": "carton final en cascade"},
+      {"t": "0:41.50-0:43.83", "what": "Carton final tenu, confettis qui dérivent", "technique": "maintien final (appel à l'action)"}
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Grille 95 BPM (netteté 5,64), barres relues sur les 12 planches microscope : 5 gestes clés sur 19 à ±2 im d'une barre bleue ou bleu clair (26 %, hasard ≈ 26 %). Hors temps : coupes f137 (+3 im du temps f134), f258 (+10), f367 (+6), f472 (-3), f1111, f1200 (+5 du temps f1195), f1397, iris f2033 (+4) ; impact du L f600 (-8 du demi-temps f608) ; push f808-f820 ; volet f1811. Touchés, mais portés par la voix : YOUR f264, THAT'S f1120, EVERY f1402, entrée du volet orange f2294, bandeau f2311. Indice automatique : aucune synchro (meilleur p corrigé 0,61 ; corrélation basses z = 2,49 < 3). La voix, elle, commande tout : mots affichés 2-4 im avant leur syllabe (enveloppe 300-3400 Hz), tampon WIN. posé f876 sur l'attaque de « Win ». Seule coïncidence musicale : la basse (< 120 Hz) disparaît de 19,25 à 20,0 s (-45 à -56 dB) et revient à 20,00 s, pile sur la coupe f1200.",
+    "synced": [],
+    "style_match": "Beat régulier à 95 BPM (caractère probable : pop entraînante), cohérent avec les tampons secs et l'orange ; mais les gestes suivent la voix, jamais les temps.",
+    "how_built": "Tout est placé sur la voix off, très probablement à partir d'un horodatage mot à mot (TTS ou alignement forcé) : avance constante de 2 à 4 im du texte sur la syllabe, impacts sur les attaques de mots. La musique a été ajoutée en fond sans grille : le prompt ne parlait ni de musique ni de BPM. La coupe f1200 sur le retour de la basse après 0,75 s de coupure est le seul point commun (calage ponctuel ou coïncidence)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Structure problème → cause → solution → preuves → appel à l'action",
+      "name_en": "Problem-agitation-solution arc",
+      "t": "0:00-0:43.83",
+      "frames": "f0-f2629",
+      "fps": 60,
+      "mechanics": "0-10,5 s : problème en 4 phrases (tu n'avances pas, tu gagnes pourtant, ton cerveau ne le voit pas, il rejoue tes erreurs), une couleur de fond par phrase. 10,9 s : révélation de la marque juste après le volet déchiré. 13,7-33,9 s : trois fonctions (bouton I WON ×3, reçus, suggestions + verrou d'apps). 34-38 s : gradation « little wins → big dreams ». 38,5-43,8 s : carton final + App Store. Chaque phrase de voix reçoit une métaphore visuelle propre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de progression qui recule",
+      "name_en": "Regressing progress counter",
+      "t": "0:00.40-0:02.28",
+      "frames": "f24-f137",
+      "fps": 60,
+      "mechanics": "Carte « YOUR PROGRESS » dans la moitié droite : pourcentage orange ≈ 14 % de la hauteur, barre à contour noir (≈ 35 % de la largeur) à remplissage orange. Le chiffre monte 4 % (0,5 s) → 12 % (1,0 s), puis retombe à 8 % (2,0 s) et oscille 7-8 % image après image (f122-f136) ; « still loading… » manuscrit + spinner. Gag visuel littéral de « getting nowhere ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-cut-f137.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation mot à mot par masque, du bas vers le haut",
+      "name_en": "Word-by-word masked rise",
+      "t": "0:04.40-0:04.67",
+      "frames": "f264-f280",
+      "fps": 60,
+      "mechanics": "Chaque mot monte d'environ sa hauteur de capitale derrière un masque horizontal (bas du mot coupé au départ) : 6-7 im (0,10-0,12 s), ease-out (grands pas puis petits), sans flou ni dépassement. Le mot suivant part quand la voix le prononce (YOUR f264 → BRAIN'S f276 = 12 im ; WOKE f826-f831 ; THAT'S f1116-f1120 ; EVERY f1402-f1407). Lignes alignées à gauche, 2-3 lignes maximum.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f258.jpg, microM-006-move-f813.jpg, microM-007-cut-f1111.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Calage du mot sur la voix off, avec 2 à 4 images d'avance",
+      "name_en": "Text leading the voice-over",
+      "t": "0:04.40-0:23.45",
+      "frames": "f264-f1407",
+      "fps": 60,
+      "mechanics": "Mesuré sur l'enveloppe de la bande voix (300-3400 Hz) : YOUR visible f264, voix f268 (-4 im) ; BRAIN'S f276, voix f278 (-2) ; THAT'S f1116, voix f1118-1120 (-2 à -4) ; EVERY f1402, voix f1406 (-4). Le texte devance le son de 0,03-0,07 s, ce qui fait coïncider lecture et écoute. Le texte à l'écran est un condensé de la voix (mots-clés), pas une transcription : « The thing is » et « Hit … » ne sont pas écrits.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f258.jpg, microM-007-cut-f1111.jpg, microM-009-cut-f1397.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot-clé en orange, reste en noir ou blanc",
+      "name_en": "Keyword colour emphasis",
+      "t": "0:01.90-0:33.60",
+      "frames": "f114-f2016",
+      "fps": 60,
+      "mechanics": "Dans chaque phrase, la fin porteuse de sens passe en orange #F04E23 : NOWHERE?, TO MISS IT., LIKE YOU'RE LOSING., TODAY?, BED?, THING?, WINNING STREAK., SAVED., GO MAKE ONE., WIN (FIRST.), SECOND. Sur fond orange l'accent bascule en noir (ALL DAY., SHOW UP.). Condensée très grasse, capitales, ≈ 10 % de la hauteur, interlignage serré (≈ 1,0).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rotation de trois fonds comme ponctuation",
+      "name_en": "Background colour rotation on cuts",
+      "t": "0:02.28-0:33.98",
+      "frames": "f137-f2039",
+      "fps": 60,
+      "mechanics": "Coupes franches entre crème #F2EEE6, orange #F04E23 et noir #141414 : crème → orange (f137) → noir (f258) → orange (f367) → crème (f472) … noir (f1111) → orange (f1200) → crème (f1397) → noir (f1818) → crème (f2039). Une phrase de voix = un fond. Code sémantique : orange = victoire/énergie, noir = déni, rumination ou verrou, crème = récit et produit.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f137.jpg, microM-002-cut-f258.jpg, microM-003-cut-f367.jpg, microM-008-cut-f1200.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Désaturation sémantique (raccord de mise en page)",
+      "name_en": "Semantic desaturation match cut",
+      "t": "0:04.28-0:04.30",
+      "frames": "f257-f258",
+      "fps": 60,
+      "mechanics": "Coupe franche orange → noir sans aucune image de transition : les 9 étiquettes gardent exactement leur place et leur inclinaison, mais passent de blanc + coche orange à gris #3A3A3A + texte gris. La couleur retirée dit « ton cerveau ne les voit plus ». Le titre est vidé puis réécrit mot à mot (YOUR dès f264).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f258.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquettes de victoires en nuage décalé",
+      "name_en": "Scattered sticker chips",
+      "t": "0:03.30-0:04.20",
+      "frames": "f198-f252",
+      "fps": 60,
+      "mechanics": "9 étiquettes blanches arrondies (≈ 11-13 % de la largeur, ≈ 3 % de la hauteur), coche orange, écriture manuscrite type Caveat, inclinées de ±3 à 8°, ombre douce, réparties dans la moitié droite et le bas autour du titre. Apparition en décalé : 4 visibles à 3,5 s, 9 à 4,0 s (≈ 1 toutes les 5-6 im, probable). Contenu concret (made the bed, called mum, read 10 pages…) qui illustre « winning all day ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-cut-f258.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Rappel des étiquettes (callback)",
+      "name_en": "Callback of opening elements",
+      "t": "0:22.30-0:23.28",
+      "frames": "f1338-f1397",
+      "fps": 60,
+      "mechanics": "Les étiquettes du début reviennent, en couleur cette fois, depuis l'extérieur du cadre (haut, gauche, bas) vers le bonhomme aux jumelles en ≈ 0,5 s (22,3 → 23,0 s), au moment où la voix dit « the more they show up ». Elles bouclent l'argument ouvert à 3-6 s (visibles → éteintes → retrouvées).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, microM-009-cut-f1397.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte de rejeu en boucle avec flou de défilement",
+      "name_en": "Looping replay card with scrub blur",
+      "t": "0:06.12-0:07.85",
+      "frames": "f367-f471",
+      "fps": 60,
+      "mechanics": "Carte #1A1A1A arrondie (≈ 22 % × 18 % du cadre, à droite) : libellé « REPLAY ×1 » → ×4, icône rejouer orange, barre de lecture à tête blanche. Le mot (MISTAKE., REJECTION., BAD DAY.) arrive avec un fort flou horizontal qui se résorbe en 8-10 im (f367 flou → f377 net), la tête parcourt la barre, puis la boucle repart (≈ 18-30 im par boucle) en incrémentant le compteur. Image de la rumination.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f367.jpg, microM-004-cut-f472.jpg",
+      "illus": {"from": 367, "to": 387, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettre-tampon géante qui s'écrase (L de « loser »)",
+      "name_en": "Giant letter slam",
+      "t": "0:09.90-0:10.02",
+      "frames": "f594-f601",
+      "fps": 60,
+      "mechanics": "« L » orange à contour noir et hachures de feutre, incliné ≈ -20°. Mesure de surface orange : f594 apparition translucide, f595 opaque à ≈ 1,7× la taille finale, puis 1,66× / 1,59× / 1,52× / 1,43× / 1,24× / 1,0× (f596-f601) : courbe qui accélère vers l'impact (ease-in) et arrêt sec, 7 im = 0,12 s. Atterrit sur le « l » de « losing » ; LOSING. monte ensuite en orange (f600-f605).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f599.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tampon « WIN. » et réaction en chaîne sur le bouton",
+      "name_en": "Stamp slam with chain reaction",
+      "t": "0:14.48-0:14.80",
+      "frames": "f869-f888",
+      "fps": 60,
+      "mechanics": "WIN. (≈ 26 % de la hauteur une fois posé, bas gauche) apparaît f869-f870 translucide, incliné, à ≈ 2,6× ; échelle mesurée 2,6 → 2,5 → 2,3 → 2,0 → 1,6 → 1,0 (f871-f876) : ease-in, arrêt sec, 7 im = 0,12 s, micro-recul ≈ 2 % f877-f878. L'impact déclenche une chaîne : bouton I WON enfoncé (≈ 0,85×) f876-f878, éclats f877-f879, halo orange radial f880-f890, pastille « +1 WIN » qui jaillit f881-f885, confettis 0,5-1 s. Impact posé sur l'attaque du mot « Win » (voix f876-879). Répété 3 fois à ≈ 1,6 s d'écart.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 868, "to": 888, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Coupe partielle avec téléphone pivot",
+      "name_en": "Split cut with persistent anchor",
+      "t": "0:15.03-0:15.05",
+      "frames": "f902-f903",
+      "fps": 60,
+      "mechanics": "Le côté gauche (bonhomme + question) change en coupe franche tandis que le téléphone (≈ 60 % de la hauteur, centré à ≈ 68 % de la largeur), sa pastille « +1 WIN » et le halo restent immobiles. Même schéma vers 16,9 s. La répétition question → WIN se lit comme un compteur qui monte sans rupture de lecture.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone avec les vrais écrans de l'app",
+      "name_en": "Phone mockup with real app screens",
+      "t": "0:13.70-0:33.98",
+      "frames": "f822-f2039",
+      "fps": 60,
+      "mechanics": "Téléphone à cadre orange-brun, ombre douce, ≈ 60-65 % de la hauteur, tiers droit. Écrans : bouton I WON, RECEIPTS (138 / 4 827, liste de victoires), écran verrou. Trois entrées différentes : glissement latéral avec flou horizontal (f817-f824, ease-out), montée par le bas avec flou vertical ≈ 15-20 % de la hauteur en 6 im (f1397-f1403), révélation par volet diagonal (f1825-f1829).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f813.jpg, microM-009-cut-f1397.jpg, microM-010-move-f1812.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet de papier déchiré orange",
+      "name_en": "Torn-paper wipe",
+      "t": "0:10.52-0:10.92",
+      "frames": "f631-f655",
+      "fps": 60,
+      "mechanics": "Bande orange à bords déchirés, inclinée ≈ 60°, qui entre par le coin bas-gauche, couvre la moitié du cadre en ≈ 4 im, tout le cadre de f639 à f643 (≈ 4-6 im), puis son bord arrière déchiré découvre la nouvelle scène ; le logo commence à s'écrire pendant que la bande sort (f647-f655). ≈ 20 im (0,33 s) au total. Marque le pivot problème → marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (10,5 → 11,0 s), pic de mouvement de rhythm.jpg à 10,7 s"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Push latéral avec entrée décalée du téléphone",
+      "name_en": "Lateral push with delayed element",
+      "t": "0:13.47-0:13.73",
+      "frames": "f808-f824",
+      "fps": 60,
+      "mechanics": "Le plan entier glisse vers la gauche sur ≈ 100 % de la largeur en ≈ 12 im (f808-f820), en ease-in-out (lent f808-f810, rapide f812-f816, lent f818-f820) ; la scène du lever de soleil arrive de la droite. Le téléphone suit avec ≈ 8 im de retard, flou directionnel horizontal f818-f821, se pose f822-f824 en ease-out. Le décalage crée une profondeur de parallaxe simple.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f813.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Confettis qui traversent la coupe",
+      "name_en": "Particle carry-over across a cut",
+      "t": "0:18.50-0:18.63",
+      "frames": "f1110-f1118",
+      "fps": 60,
+      "mechanics": "À la coupe vers le noir (f1111), les confettis orange, blancs et gris du plan précédent restent à l'image 6-8 im et poursuivent leur dérive pendant que THAT'S monte : la coupe franche paraît liée, l'énergie du « +1 WIN » déborde sur la phrase suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1111.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pastilles WIN en cascade",
+      "name_en": "Staggered pill pop",
+      "t": "0:18.65-0:18.85",
+      "frames": "f1119-f1131",
+      "fps": 60,
+      "mechanics": "Trois pastilles orange « WIN » (≈ 5 % de la largeur) apparaissent centrées sous le titre toutes les 5-6 im (f1119, f1125, f1130), chacune passe de ≈ 0,5× à 1× en ≈ 3 im ; flamme orange dans un cercle blanc au-dessus. Composition centrée qui tranche avec les titres à gauche : c'est la phrase pivot.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1111.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Tampon caoutchouc « W » et note manuscrite",
+      "name_en": "Rubber stamp and handwritten note",
+      "t": "0:26.00-0:27.00",
+      "frames": "f1560-f1620",
+      "fps": 60,
+      "mechanics": "Un tampon circulaire orange (anneau de texte + grand W, ≈ 30 % de la hauteur, légèrement incliné) se pose sur l'écran RECEIPTS entre 26,0 et 26,5 s ; « proof you're moving. » s'écrit en orange, manuscrit, de gauche à droite (26,4-27,0 s). Même grammaire « tampon » que L et WIN., ici comme preuve officielle.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes de tâches en éventail et coche tamponnée",
+      "name_en": "Card fan-in with check stamp",
+      "t": "0:28.90-0:30.13",
+      "frames": "f1734-f1808",
+      "fps": 60,
+      "mechanics": "Trois cartes (GO FOR A WALK, SEND THE MESSAGE, PUSH-UPS) montent du bas-droit avec flou de mouvement (29,0 s) et s'ouvrent en éventail (±8-10°). Une coche orange dans un disque arrive à ≈ 2,5× translucide et se pose sur la carte centrale en 4 im (f1805-f1808).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-010-move-f1812.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet diagonal noir à bord déchiré, aller-retour",
+      "name_en": "Diagonal torn wipe in and out",
+      "t": "0:30.18-0:30.48",
+      "frames": "f1811-f1829",
+      "fps": 60,
+      "mechanics": "Aplat #141414 au bord irrégulier, incliné ≈ 60°, qui balaie du bas-gauche vers le haut-droit en ≈ 7 im (f1811-f1818) en accélérant ; 7 im de noir ; le téléphone est ensuite découvert par la même diagonale en 4-5 im (f1825-f1829). Même angle à l'aller et au retour : le geste se lit comme un seul mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f1812.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Icônes d'apps qui se verrouillent puis se déverrouillent",
+      "name_en": "App icons lock and unlock swap",
+      "t": "0:31.90-0:33.60",
+      "frames": "f1914-f2016",
+      "fps": 60,
+      "mechanics": "Six icônes multicolores avec pastilles de notification (99+, 12, 3, 47, 8) en rangée sous le titre (32,0 s) ; elles deviennent des cadenas sur tuiles grises (32,5 s), un bonhomme coche à droite ; avec SCROLL SECOND. (33,5 s) les couleurs reviennent, cadenas ouverts, éclats. Les couleurs iOS cassent volontairement la palette pour incarner la distraction.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, microM-011-cut-f2033.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le bouton devient un iris",
+      "name_en": "Button-to-iris transition",
+      "t": "0:33.73-0:33.98",
+      "frames": "f2024-f2039",
+      "fps": 60,
+      "mechanics": "Le bouton orange I WON s'enfonce (f2024-f2025), se change en anneau orange à intérieur crème (f2026-f2027) qui grandit en accélérant : diamètre ≈ 10 → 18 → 25 → 32 → 46 → 56 → 74 → 95 % de la hauteur (f2026-f2033), sort du cadre et son bord gauche balaie l'écran jusqu'à f2039. 13 im (0,22 s), ease-in proche d'une exponentielle (≈ ×1,3 par image), épaisseur de l'anneau constante. L'intérieur révèle la scène fusée sur le même crème.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f2033.jpg",
+      "illus": {"from": 2024, "to": 2040, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Gradation typographique empilée",
+      "name_en": "Stacked escalating type",
+      "t": "0:34.40-0:38.00",
+      "frames": "f2064-f2280",
+      "fps": 60,
+      "mechanics": "LITTLE WINS (≈ 5 % de la hauteur) puis, au-dessus, BIG WINS. (≈ 7 %), BIG GOALS. (≈ 9 %), BIG DREAMS. (≈ 12 %) s'ajoutent un par mot de la voix (≈ 35,47 / 36,40 / 37,33 s), en fondu gris → noir de ≈ 8 im, sans déplacement visible, bloc ancré en bas. Un filet orange vertical grandit à gauche (dès f2084) et finit en flèche (38,0 s). La taille croissante dit la gradation ; la fusée flotte en idle à gauche.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Traînée de fusée → volet plein cadre → bandeau déchiré",
+      "name_en": "Rocket trail to wipe to band",
+      "t": "0:38.08-0:38.70",
+      "frames": "f2285-f2322",
+      "fps": 60,
+      "mechanics": "La fusée accélère vers le haut-droit et sort du cadre en laissant une traînée orange qui s'épaissit (f2285-f2299) ; un grand aplat orange entre par le bas-gauche (f2294) et couvre tout le cadre à f2305 (≈ 11 im) ; f2309 rafale de confettis au centre ; f2311-f2322 l'orange se contracte en bandeau à bords déchirés incliné ≈ -3° (≈ 40 % puis ≈ 20 % de la hauteur), découvrant le crème. Continuité de matière parfaite jusqu'au carton final.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-move-f2300.jpg, extra-02.jpg",
+      "illus": {"from": 2288, "to": 2316, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final assemblé en cascade",
+      "name_en": "Cascading end card build",
+      "t": "0:38.55-0:41.50",
+      "frames": "f2313-f2490",
+      "fps": 60,
+      "mechanics": "Logo script « Dubz Up » qui s'écrit en ≈ 14 im (f2314-f2328), bonhomme au drapeau f2330, bonhomme couronné f2346-f2352, pancarte « Be Delusional » f2354-f2360, puis START / YOUR / WINNING / STREAK. montent sur le bandeau au rythme de la voix (f2358, f2376, f2392, ≈ f2410) ; badge App Store qui grossit 40,5 → 41,0 s puis prend un liseré orange (41,5 s), URL en petites capitales. Confettis qui dérivent jusqu'à la fin.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Bonhommes au feutre en illustrations fixes",
+      "name_en": "Static doodle characters",
+      "t": "0:07.90-0:41.50",
+      "frames": "f474-f2490",
+      "fps": 60,
+      "mechanics": "Une douzaine de poses (prostré avec nuages REJECTION/MISTAKE/BAD DAY, coup de pied dans DOUBT, lever de soleil, lit, cible, jumelles, porte une coche, tire WIN à la corde, fusée, couronne, pancarte, drapeau), trait noir irrégulier, accents orange. Animées par apparition (fondu de 12 im f474-f486), glissement d'entrée ou flottement (fusée) ; aucun mouvement de membres, aucun écrasement à l'atterrissage.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f472.jpg, overview-02.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Matière papier : grain, vignettage, bords déchirés",
+      "name_en": "Paper texture system",
+      "t": "0:00-0:43.83",
+      "frames": "f0-f2629",
+      "fps": 60,
+      "mechanics": "Grain fin visible sur les aplats orange, vignettage doux du crème (bords plus sombres), ombres portées douces sous téléphone, cartes et étiquettes, hachures de feutre dans L et WIN., bords déchirés des volets et du bandeau. Aucune lueur numérique ni dégradé : tout reste « imprimé ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-005-move-f599.jpg, microM-010-move-f1812.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille à deux zones : titre en haut à gauche, objet à droite",
+      "name_en": "Two-zone layout grid",
+      "t": "0:00.40-0:38.00",
+      "frames": "f24-f2280",
+      "fps": 60,
+      "mechanics": "Titres alignés à gauche (marge ≈ 5-8 % de la largeur, haut du bloc ≈ 20-30 % de la hauteur), 2-3 lignes ; téléphone, carte ou bonhomme dans le tiers droit ou en bas. Exceptions centrées aux moments pivots (WINNING STREAK, carton final). Petit logo « Dubz Up » (≈ 2 % de la hauteur) en haut à gauche dans les plans vérifiés de 10,5 à 27,3 s (probablement partout).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens morts sous la voix",
+      "name_en": "Dead holds under voice-over",
+      "t": "0:02.32-0:25.73",
+      "frames": "f139-f1544",
+      "fps": 60,
+      "mechanics": "Aplat orange vide 0,5 s (2,32-2,82 s) pendant « The thing is » ; plan des reçus quasi figé 1,48 s (24,27-25,73 s) ; au total 11 maintiens ≥ 0,4 s = 6,67 s (15 % de la durée). Correction possible : flottement du téléphone, défilement de la liste RECEIPTS, compteur qui roule, ou mot affiché pendant la respiration.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Show what an incredible motion designer you are… go all out » a poussé Claude à multiplier les idées (une métaphore par phrase) et les transitions (7 types). Le récit produit et la palette à 3 couleurs ont évité l'effet catalogue."},
+    {"kind": "inputs", "insight": "« Our project dubz up » : accès probable au projet (écrans réels de l'app, bonhommes au feutre, logo script, slogan « Be Delusional »). Ces actifs fixent la DA et expliquent sa cohérence ; sans eux, le modèle aurait inventé une marque générique."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a écrit un script de 24 phrases (problème → cause → solution → 3 fonctions → gradation → appel à l'action) et a tout calé dessus. La voix remplace la musique comme métronome."},
+    {"kind": "build", "insight": "Avance constante de 2-4 im du texte sur la syllabe et impacts sur les attaques de mots : signe probable d'un horodatage mot à mot de la voix (TTS ou alignement) utilisé pour placer chaque tween."},
+    {"kind": "other", "insight": "Aucune consigne musicale : musique de fond à 95 BPM sans grille, seule la coupe f1200 tombe sur le retour de la basse. Pour une synchro, il fallait fournir un morceau ou un BPM et demander de caler coupes et tampons sur les temps."},
+    {"kind": "qa", "insight": "Pas de règle « quelque chose bouge toutes les 0,5-1 s » : il reste 15 % de maintiens, dont 1,48 s figé sur les reçus. Une passe de contrôle sur les maintiens aurait suffi."}
+  ],
+  "steal": [
+    "Tampon d'impact : le mot surgit à ≈ 2,5× sa taille, incliné et translucide, puis s'écrase en 7 im (ease-in, arrêt sec) sur l'attaque du mot prononcé.",
+    "Faire de l'élément d'interface la transition : le bouton pressé devient un anneau qui s'ouvre en iris (13 im, ease-in) sur la scène suivante.",
+    "Désaturation sémantique : même mise en page, coupe franche vers un fond sombre et étiquettes passées au gris pour dire « tu ne les vois plus ».",
+    "Rappel : réutiliser plus tard les éléments du début (étiquettes de victoires), qui reviennent en couleur depuis les bords du cadre pour boucler l'argument.",
+    "Afficher chaque mot 2 à 4 im avant sa syllabe dans la voix, par montée derrière un masque en 6 im, mot-clé de la phrase en orange."
+  ],
+  "flaws": [
+    "Musique posée en fond : coupes et impacts tombent au hasard sur la grille à 95 BPM (5 gestes sur 19, hasard ≈ 26 %).",
+    "Plan des reçus quasi figé 1,5 s (24,3-25,7 s) et aplat orange vide 0,5 s à 2,3 s : temps morts pendant que la voix parle.",
+    "Bonhommes en illustrations fixes : seulement apparitions et glissements, aucun jeu de membres ni écrasement à l'atterrissage.",
+    "Le geste « tampon » revient 7 fois (L, WIN ×3, W, coches) : motif de marque qui frôle le tic.",
+    "Mise en page répétée (titre en haut à gauche, objet à droite) dans presque tous les plans : lisible mais prévisible."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : la mécanique des tampons (échelle, opacité, rotation sur 7 im), le bouton → iris, les volets déchirés et l'avance de 2-4 im du texte sur la voix se mesurent bien mieux image par image à 60 fps. C'est une leçon complète de typographie calée sur la voix."
+  }
+}

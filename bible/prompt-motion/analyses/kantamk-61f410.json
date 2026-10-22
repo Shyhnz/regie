@@ -1,0 +1,419 @@
+{
+  "slug": "kantamk-61f410",
+  "title": "Ball escaping twelve rings",
+  "handle": "@kantamk",
+  "family": "formes",
+  "craft": 4,
+  "craft_reason": "Format viral connu exécuté proprement : chaque rebond joue la note suivante de « La Lettre à Élise », chaque sortie d'anneau a son retour visuel et sonore ; seule la carte de fin statique retombe.",
+  "summary": "Vidéo verticale de 32 s : une bille rebondit dans 12 anneaux concentriques à brèche qui tournent, du rose au cyan. Question d'accroche, compteur « N RINGS LEFT », chaque rebond joue la note suivante de « La Lettre à Élise ». Chaque sortie fait éclater l'anneau en particules. Fin : flash blanc, « ESCAPED. », puis carte « 100% code ». Son et image parfaitement liés, format déjà très vu.",
+  "prompt_vs_result": [
+    "Une seule phrase : « make a video that could go viral ». Aucun sujet, aucun format, aucune durée, aucun son imposé.",
+    "Tout : le genre « bille qui s'échappe des anneaux », le 9:16, 12 anneaux en dégradé, la question d'accroche, le compteur, la pastille « sound on », la mélodie de Beethoven jouée note par note, le flash final et la carte « Every frame. Every note. 100% code. ».",
+    "« Viral » a été traduit en recette de rétention : accroche question, compteur de progression, son satisfaisant, récompense finale. Il aurait fallu préciser un sujet ou une marque pour sortir du format générique."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0B0A14",
+        "role": "fond quasi noir bleuté"
+      },
+      {
+        "hex": "#15132A",
+        "role": "centre du vignettage radial"
+      },
+      {
+        "hex": "#FF4F9A",
+        "role": "anneaux intérieurs, compteur au début"
+      },
+      {
+        "hex": "#D040D8",
+        "role": "anneaux magenta"
+      },
+      {
+        "hex": "#8B4BE8",
+        "role": "anneaux violets"
+      },
+      {
+        "hex": "#4A5BE6",
+        "role": "anneaux bleus"
+      },
+      {
+        "hex": "#3FD0EE",
+        "role": "dernier anneau cyan, particules finales"
+      },
+      {
+        "hex": "#2A8C9A",
+        "role": "anneau extérieur sarcelle"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "bille, titre, « ESCAPED. »"
+      },
+      {
+        "hex": "#8C8A9A",
+        "role": "pied de page gris"
+      },
+      {
+        "hex": "#B8B8BC",
+        "role": "flash final plein écran"
+      }
+    ],
+    "type": "Grotesque géométrique type Poppins (probable). Titre Bold blanc sur 2 lignes ≈ 4,8 % de la hauteur ; compteur Bold capitales ≈ 2 %, couleur de l'anneau actif ; « ESCAPED. » ExtraBold ≈ 6 % ; pied de page gris ≈ 1,6 %.",
+    "texture": "Néon doux : traits d'anneaux ≈ 4 px avec halo, bille blanche à halo, traînée de comète teintée, particules lumineuses. Vignettage radial léger, aucun grain, aucun flou de mouvement : la traînée en tient lieu.",
+    "style": "Jeu physique néon minimal vertical",
+    "coherence": "Une seule logique chromatique : le dégradé rose → cyan des anneaux sert aussi d'indicateur de progression (le compteur prend la teinte de l'anneau actif, les particules aussi). Le son suit le même système (une note par contact). La carte de fin, plate et grise, sort de cet univers."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Aucun tempo fixe : le BPM détecté (89,9) est un artefact. Le rythme est celui de la physique : une note par rebond, toutes les 11 im (0,18 s, ≈ 5,5 notes/s) dans le premier anneau, puis 16-20 im, et 27-45 im (0,45-0,75 s) dans les derniers anneaux. La mélodie ralentit donc naturellement (ritardando) à mesure que les anneaux s'agrandissent, ce qui fait monter le suspense. Douze sorties d'anneau à 1,97 / 3,83 / 7,05 / 8,70 / 10,15 / 13,28 / 15,05 / 16,75 / 19,37 / 23,38 / 24,58 / 26,70 s : un événement fort toutes les 1,2 à 4 s, irrégulier, donc imprévisible. Les « maintiens » détectés pendant le jeu (0,4-0,6 s) ne sont pas des temps morts : la bille bouge, seule l'énergie globale baisse. Vrais temps calmes : « ESCAPED. » tenu 1,6 s (27,0-28,6 s) et carte finale immobile ≈ 1,4 s (30,4-31,77 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.97",
+        "what": "Titre-question, « 12 RINGS LEFT » rose, bille au centre qui part dès l'image 1 ; rebonds rapides (11 im) dans le petit anneau",
+        "technique": "démarrage sans intro, accroche immédiate"
+      },
+      {
+        "t": "0:00.4-0:06.0",
+        "what": "Pastille grise « sound on » avec icône haut-parleur au-dessus du pied de page",
+        "technique": "invitation à monter le son"
+      },
+      {
+        "t": "0:01.97",
+        "what": "Première sortie : l'anneau éclate en points, le suivant s'allume en blanc, le compteur passe à 11 avec une impulsion",
+        "technique": "retour de réussite triple (particules + flash + compteur)"
+      },
+      {
+        "t": "0:03.83-0:24.58",
+        "what": "Dix autres sorties ; la palette glisse du rose au violet, au bleu puis au cyan ; les rebonds s'espacent",
+        "technique": "couleur comme barre de progression, ritardando physique"
+      },
+      {
+        "t": "0:26.70-0:26.75",
+        "what": "Dernier anneau cyan éclaté, flash plein écran gris clair, « ESCAPED. » jaillit au centre, note grave de résolution",
+        "technique": "flash + apparition par échelle + cadence musicale"
+      },
+      {
+        "t": "0:26.75-0:28.6",
+        "what": "La bille sort par le haut à travers le titre, l'anneau de particules s'élargit et retombe, le flash décroît",
+        "technique": "récompense tenue"
+      },
+      {
+        "t": "0:28.6-0:29.0",
+        "what": "Fondu enchaîné : titre et « ESCAPED. » s'effacent, « Every frame. » apparaît",
+        "technique": "fondu enchaîné (cross-dissolve)"
+      },
+      {
+        "t": "0:29.0-0:30.4",
+        "what": "« Every note. », « 100% code. », mentions grises puis « made with Claude Opus 5.5 » apparaissent ligne par ligne",
+        "technique": "fondu en cascade (stagger)"
+      },
+      {
+        "t": "0:30.4-0:31.77",
+        "what": "Carte finale immobile, son éteint",
+        "technique": "maintien de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Cas inversé et parfait : c'est l'animation qui joue la musique. Suivi automatique de la bille (centroïde blanc image par image) : 67 rebonds détectés, 64 ont une attaque audio 42 à 70 ms après le changement de direction mesuré (médiane 56 ms, dispersion ± 14 ms). Ce retard constant vient surtout de la mesure (fenêtre audio + dérivée de position) ; en réalité note et contact tombent à 1-2 im près. Le hasard donnerait ≈ 23 % dans ± 50 ms et des écarts dispersés. Les 12 sorties d'anneau ont toutes une attaque forte (point vert) 1 à 2 im après l'image d'éclatement : f118→f120, f230→f232, f423→f425, f522→f524, f609→f611, f797→f799, f903→f905, f1005→f1007, f1162→f1164, f1403→f1404, f1476→f1478, f1603→f1605 (12/12). Hauteurs des notes : mi ré# mi ré# mi si ré do la / do mi la si / mi sol# si do… puis le pont si do ré mi sol fa mi ré… : « La Lettre à Élise ». La dernière sortie tombe sur un la grave (la3 puis la2), la tonique : la mélodie se résout sur « ESCAPED. ». Les barres bleues (grille à 89,9 BPM) ne tombent sur rien de particulier (f132, f243, f432) : grille sans objet ici.",
+    "synced": [
+      "impacts",
+      "flashs",
+      "texte",
+      "couleur",
+      "drop"
+    ],
+    "style_match": "Piano classique très connu, timbre doux et cristallin, pour un visuel néon hypnotique : accord juste. Le ralentissement des notes quand les anneaux grandissent crée la tension avant la résolution.",
+    "how_built": "Son synthétisé en code (« no audio files ») : à chaque collision, le moteur joue la note suivante d'un tableau de hauteurs (la mélodie), et chaque sortie d'anneau déclenche un son plus fort ; la sortie finale déclenche probablement une cadence grave programmée. La synchro est donc structurelle : même moteur, mêmes instants, rendu déterministe."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Question d'accroche permanente",
+      "name_en": "Persistent curiosity hook",
+      "t": "0:00-0:28.8",
+      "frames": "f0-f1728",
+      "fps": 60,
+      "mechanics": "« Can it escape all 12 rings? » en haut (y 9-19 %), blanc Bold, présent dès l'image 0 et jusqu'au fondu final. Pose un enjeu binaire (réussit / échoue) qui pousse à regarder jusqu'au bout ; la réponse « ESCAPED. » arrive à 26,7 s, soit 84 % de la durée.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compte à rebours coloré avec impulsion",
+      "name_en": "Pulsing countdown counter",
+      "t": "0:01.97-0:02.15",
+      "frames": "f118-f130",
+      "fps": 60,
+      "mechanics": "« N RINGS LEFT » en capitales Bold ≈ 2 % de la hauteur, sous le titre (y ≈ 22 %), teinté de la couleur de l'anneau actif. Au changement, le nombre est remplacé sur la même image que l'éclatement ; le texte passe à ≈ 130 % d'échelle et plus clair, puis revient à 100 % en ≈ 9-12 im, ease-out sans dépassement. Au dernier anneau, il disparaît avec le flash.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f121.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Douze anneaux concentriques à brèche rotative",
+      "name_en": "Rotating gapped concentric rings",
+      "t": "0:00-0:26.7",
+      "frames": "f0-f1603",
+      "fps": 60,
+      "mechanics": "12 arcs de ≈ 300-320° (brèche de 40 à 60°), trait ≈ 4 px avec halo, rayons de ≈ 9 % à 44 % de la largeur, espacés de ≈ 3 % de la largeur, centrés à x 50 %, y 53 %. Chaque anneau tourne à sa propre vitesse (sens et vitesses variés, probable) : la brèche se déplace, ce qui rend la sortie aléatoire en apparence. L'anneau actif est plus lumineux que les autres.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Dégradé de teinte comme barre de progression",
+      "name_en": "Hue gradient as progress bar",
+      "t": "0:00-0:26.7",
+      "frames": "f0-f1603",
+      "fps": 60,
+      "mechanics": "Anneaux du rose #FF4F9A (intérieur) au magenta, violet, bleu puis cyan #3FD0EE et sarcelle #2A8C9A (extérieur). À chaque sortie, toute l'interface adopte la teinte du nouvel anneau actif : compteur, traînée de la bille, particules. Sans lire le compteur, on sait où on en est par la couleur dominante de l'écran.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Physique simple : vitesse constante, rebond élastique",
+      "name_en": "Constant-speed elastic bounce",
+      "t": "0:00-0:26.7",
+      "frames": "f0-f1603",
+      "fps": 60,
+      "mechanics": "Bille en ligne droite (pas de gravité), réflexion sur l'anneau actif. Vitesse mesurée 9 px/im (≈ 75 % de la largeur par seconde) au début, 10,4 px/im vers 13 s, 12,5 px/im à la fin : +35 % d'accélération discrète sur la durée. Intervalle entre rebonds : 11 im au départ, 30-45 im à la fin. Départ dès f1 depuis le centre, premier rebond f8.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f612.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Traînée de comète teintée",
+      "name_en": "Tinted comet trail",
+      "t": "0:00-0:27.5",
+      "frames": "f0-f1650",
+      "fps": 60,
+      "mechanics": "Bille blanche ≈ 16 px (2,2 % de la largeur) avec halo, suivie d'une traînée effilée longue de ≈ 20-25 % de la largeur, de la couleur de l'anneau actif, qui garde la trace du dernier rebond (on voit l'angle de réflexion). Remplace le flou de mouvement et rend la trajectoire lisible en image fixe.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Anneau qui éclate en poussière",
+      "name_en": "Ring shatter into particles",
+      "t": "0:13.28-0:14.3",
+      "frames": "f797-f860",
+      "fps": 60,
+      "mechanics": "À la sortie, l'anneau franchi se change en ≈ 200 points lumineux en 2 im (f797-f798), qui s'écartent radialement de ≈ 5-8 % du rayon en ≈ 15 im (ease-out), puis retombent vers le bas comme sous gravité et s'éteignent en 60 à 90 im (on les voit encore au bas du cadre 1 s après). Couleur des points = teinte de l'anneau détruit.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f800.jpg",
+      "illus": {
+        "from": 795,
+        "to": 812,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'activation de l'anneau suivant",
+      "name_en": "Next-ring activation flash",
+      "t": "0:13.30-0:13.50",
+      "frames": "f798-f810",
+      "fps": 60,
+      "mechanics": "Au même instant que l'éclatement, l'anneau suivant devient blanc-lavande épais avec un fort halo (f798-f800), puis revient à sa teinte en ≈ 10-12 im. Indique sans texte « nouvel adversaire ». Répété à l'identique sur les 11 sorties.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f906.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une note par rebond (sonification)",
+      "name_en": "Note-per-bounce sonification",
+      "t": "0:00.13-0:26.7",
+      "frames": "f8-f1602",
+      "fps": 60,
+      "mechanics": "Chaque contact bille-anneau joue la note suivante de « La Lettre à Élise ». 64 rebonds sur 67 suivis ont leur attaque à 1-2 im près (décalage constant). Le spectateur reconnaît la mélodie au bout de 5 notes (0,9 s) : effet de récompense auditive continue. Le pied de page « every bounce plays the next note » annonce la règle.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Accent sonore sur chaque sortie",
+      "name_en": "Escape accent hit",
+      "t": "0:01.97-0:24.58",
+      "frames": "f118-f1478",
+      "fps": 60,
+      "mechanics": "Les attaques les plus fortes de la bande-son coïncident avec les 11 premières sorties, 1 à 2 im après l'image d'éclatement (12/12 en comptant la finale). Particules, flash d'anneau, impulsion du compteur et accent sonore partent tous sur la même image : un seul événement multisensoriel.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f426.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Résolution sur la tonique au dénouement",
+      "name_en": "Melodic cadence on payoff",
+      "t": "0:26.76-0:27.74",
+      "frames": "f1605-f1664",
+      "fps": 60,
+      "mechanics": "La dernière sortie tombe sur un la3 doublé d'un la2 grave (tonique de la mélodie en la mineur), avec l'attaque la plus forte de la vidéo à f1605, au moment du flash et de « ESCAPED. ». L'oreille entend une fin de phrase pendant que l'œil reçoit la récompense. Programmée en code (probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1604.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ritardando physique qui construit le suspense",
+      "name_en": "Physics-driven ritardando",
+      "t": "0:00-0:26.7",
+      "frames": "f0-f1603",
+      "fps": 60,
+      "mechanics": "Les anneaux grandissent donc les rebonds s'espacent : ≈ 5,5 notes/s au début, ≈ 1,5 note/s à la fin, malgré une bille 35 % plus rapide. La musique ralentit pendant que l'enjeu monte (moins d'anneaux, sorties plus rares : 4 s d'attente entre 19,37 et 23,38 s) puis tout se libère d'un coup au flash.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc de dénouement",
+      "name_en": "Payoff white flash",
+      "t": "0:26.73-0:27.15",
+      "frames": "f1604-f1629",
+      "fps": 60,
+      "mechanics": "Voile plein écran gris clair (≈ #B8B8BC, ≈ 70 % de blanc) qui apparaît en 1 im à f1604, puis décroît de façon exponentielle : ≈ #949496 à f1609, ≈ #6E6E72 à f1615, quasi noir vers f1629 (≈ 25 im = 0,4 s). Le titre reste lisible par-dessus. Coupe détectée à f1604 : c'est ce flash.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1604.jpg",
+      "illus": {
+        "from": 1601,
+        "to": 1616,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« ESCAPED. » qui jaillit par l'échelle",
+      "name_en": "Scale pop-in payoff word",
+      "t": "0:26.75-0:26.90",
+      "frames": "f1605-f1614",
+      "fps": 60,
+      "mechanics": "Mot centré (y ≈ 52 %), ExtraBold capitales blanc, largeur finale ≈ 70 % du cadre. Échelle ≈ 20 % à f1605, ≈ 55 % à f1607, ≈ 75 % à f1609, ≈ 90 % à f1611, 100 % à f1613 : ease-out fort sur ≈ 9 im, sans dépassement visible. Démarre sur la même image que le flash et la note grave.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1604.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Anneau final de particules et sortie de la bille par le haut",
+      "name_en": "Final particle halo and exit",
+      "t": "0:26.73-0:28.0",
+      "frames": "f1604-f1680",
+      "fps": 60,
+      "mechanics": "Le dernier anneau cyan devient un halo de points qui s'élargit de ≈ 30 % en ≈ 20 im puis se disperse vers le bas ; la bille file vers le haut avec une longue traînée blanche, traverse le titre et quitte le cadre vers 27,5 s. La bille « s'échappe » littéralement de l'écran.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastille « sound on » et règle du jeu en pied de page",
+      "name_en": "Sound-on pill and rule caption",
+      "t": "0:00.4-0:06.0",
+      "frames": "f24-f360",
+      "fps": 60,
+      "mechanics": "Capsule gris foncé (#23222C) avec icône haut-parleur et « sound on » gris clair à y ≈ 87 %, visible ≈ 0,4-6 s puis retirée ; en dessous, « every bounce plays the next note » en gris #8C8A9A ≈ 1,6 % de la hauteur, permanent. Sur un réseau où le son est coupé par défaut, ces deux lignes vendent l'intérêt du son.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pile verticale 9:16 à zones fixes",
+      "name_en": "Fixed-zone vertical stack",
+      "t": "0:00-0:28.6",
+      "frames": "f0-f1716",
+      "fps": 60,
+      "mechanics": "720 × 1280. Titre y 9-19 %, compteur 22 %, aire de jeu 28-78 % (anneaux sur 88 % de la largeur), pastille 87 %, pied de page 92,5 %. Marges latérales ≈ 6 %. Rien ne bouge hors de l'aire de jeu sauf le compteur : l'œil reste au centre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Hiérarchie typographique en une seule famille",
+      "name_en": "Single-family type hierarchy",
+      "t": "0:00-0:31.77",
+      "frames": "f0-f1903",
+      "fps": 60,
+      "mechanics": "Une grotesque géométrique (Poppins probable) en 4 niveaux : titre Bold blanc casse de phrase ≈ 4,8 % ; compteur Bold capitales coloré ≈ 2 % ; « ESCAPED. » ExtraBold capitales ≈ 6 % ; mentions Regular gris ≈ 1,6 %. Le seul élément coloré est le compteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond sombre à vignettage radial",
+      "name_en": "Dark radial vignette background",
+      "t": "0:00-0:31.77",
+      "frames": "f0-f1903",
+      "fps": 60,
+      "mechanics": "Fond #0B0A14 avec centre légèrement plus clair (#15132A) derrière l'aire de jeu ; des cercles fantômes très faibles restent visibles derrière « ESCAPED. » à la fin. Fond fixe : tout le contraste est réservé aux néons.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Carte de fin en fondus décalés",
+      "name_en": "Staggered fade-in end card",
+      "t": "0:28.6-0:30.4",
+      "frames": "f1716-f1824",
+      "fps": 60,
+      "mechanics": "Titre et « ESCAPED. » s'effacent en ≈ 15 im pendant que « Every frame. » apparaît (fondu enchaîné f1724-f1740). Puis « Every note. » (f1740-f1752), « 100% code. » (f1756-f1772), les mentions grises « no video editor · no assets · no audio files » (f1780-f1796) et « made with Claude Opus 5.5 » (f1804-f1824) : une ligne toutes les ≈ 12-16 im, fondu d'opacité ≈ 15 im, sans mouvement. Bloc centré à y ≈ 46-58 %.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 1724,
+        "to": 1812,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte d'auto-promotion « 100% code »",
+      "name_en": "Made-with-code brag card",
+      "t": "0:29.0-0:31.77",
+      "frames": "f1740-f1903",
+      "fps": 60,
+      "mechanics": "« Every frame. Every note. 100% code. » puis « made with Claude Opus 5.5 ». Joue sur le rythme ternaire de la phrase, mais casse l'univers (gris plat, plus de néon) et laisse ≈ 1,4 s d'image fixe en fin de vidéo.",
+      "verdict": "cliche",
+      "evidence": "overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "« Could go viral » a été lu comme « reprends un format qui marche » : bille et anneaux, contenu dit « satisfying », très présent sur les réseaux. Sans sujet imposé, le modèle choisit le format le plus sûr plutôt qu'une idée originale."
+    },
+    {
+      "kind": "structure",
+      "insight": "Claude a ajouté de lui-même tous les leviers de rétention : question en accroche, compteur dégressif, montée de tension, récompense à 84 % de la durée, appel au son. La structure est meilleure que bien des prompts détaillés."
+    },
+    {
+      "kind": "build",
+      "insight": "Son généré en code et piloté par les collisions : synchro parfaite par construction, sans fichier audio ni montage. C'est la méthode la plus fiable pour lier musique et image dans un pipeline HTML/JS."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Choisir une mélodie universellement connue (Beethoven) rend la sonification immédiatement reconnaissable : le cerveau anticipe la note suivante, ce qui retient l'attention."
+    },
+    {
+      "kind": "other",
+      "insight": "La carte « 100% code, no assets » répond au contexte de publication (démonstration d'IA), pas au spectateur : c'est la partie la plus faible et la plus générique."
+    }
+  ],
+  "steal": [
+    "Sonifier l'animation : chaque contact ou apparition déclenche la note suivante d'une mélodie connue, générée en code sur le même événement.",
+    "Faire porter la progression par la couleur : chaque étape change la teinte dominante (rose → cyan), compteur et particules compris.",
+    "Retour de réussite triple sur la même image : éclatement en particules + flash de l'élément suivant + impulsion du compteur à 130 %.",
+    "Récompense finale : flash plein écran 1 im puis décroissance 25 im, mot clé en ease-out 9 im, note grave de résolution.",
+    "Annoncer la règle du jeu en une ligne de pied de page et inviter au son pendant les 6 premières secondes."
+  ],
+  "flaws": [
+    "Format bille-anneaux déjà saturé sur les réseaux : exécution propre, idée non originale.",
+    "Carte finale grise et plate qui sort de l'univers néon.",
+    "Environ 1,4 s d'image fixe en fin de vidéo et « ESCAPED. » tenu 1,6 s.",
+    "Aucune variation de caméra ni de cadrage en 27 s : seule la couleur évolue."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Les mécanismes visuels sont systématiques (même retour à chaque sortie) et déjà mesurés ici ; l'enseignement principal, la sonification par événement, se comprend par le code et l'analyse audio plutôt que par une étude image par image à 60 fps."
+  }
+}

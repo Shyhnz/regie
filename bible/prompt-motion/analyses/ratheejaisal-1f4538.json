@@ -1,0 +1,434 @@
+{
+  "slug": "ratheejaisal-1f4538",
+  "title": "founder.page launch video",
+  "handle": "@RatheeJaisal",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Propre et fidèle à la marque (style SaaS clair, mots en fondu-flou, compteurs liés aux graphiques), mais générique : même gabarit et même fondu-flou sur 8 scènes, 51 % d'images figées, muette.",
+  "summary": "Visite guidée de founder.page en 20 s, fond clair : logo, réservation du nom d'utilisateur tapé puis transformé en carte profil, liste de projets, revenus vérifiés Stripe, visiteurs, course de revenus en barres, annuaire mondial, badge à intégrer, fin avec bouton et curseur qui clique. Chaque fonction = titre 2 lignes à gauche + carte produit à droite. Soigné mais lent, monotone et sans son.",
+  "prompt_vs_result": [
+    "Une ligne : vidéo de lancement « belle », 20 s au plus, montrant toutes les fonctions clés, rythme rapide, fidèle à la marque.",
+    "Liste et ordre des 7 fonctions, maquettes de cartes avec données réalistes, typo et couleurs de la marque, gabarit titre gauche / carte droite, fondu-flou entre scènes, mots un à un, fin avec curseur. Pas de musique.",
+    "« Fast paced » n'a pas été tenu : scènes de 2,4 s mais maintiens de 1,2 à 1,4 s. Il fallait chiffrer le rythme (un événement toutes les 0,5 s) et demander une bande-son."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F4F5FA",
+        "role": "fond gris-bleu très clair"
+      },
+      {
+        "hex": "#E7ECF6",
+        "role": "halo radial bleuté du fond"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "cartes produit"
+      },
+      {
+        "hex": "#0B0D12",
+        "role": "titres et chiffres"
+      },
+      {
+        "hex": "#3068E0",
+        "role": "bleu de marque (logo, 2e ligne, boutons)"
+      },
+      {
+        "hex": "#22B04C",
+        "role": "vert « No screenshots. », pastilles Live et Verified"
+      },
+      {
+        "hex": "#5ECFCB",
+        "role": "carrés de la heatmap de revenus (estimé)"
+      },
+      {
+        "hex": "#E5486A",
+        "role": "une des barres de la course (avec bleu, jaune, vert, violet, sarcelle, orange)"
+      }
+    ],
+    "type": "Sans grotesque grasse à approche serrée (Inter Bold/Extrabold probable), casse phrase, titres sur 2 lignes ≈ 8 % de hauteur chacune ; gros chiffres ≈ 11 % ; labels en mono capitales espacées ≈ 1,8 % précédés d'un point bleu.",
+    "texture": "Aplat clair avec halo radial bleuté très doux, cartes blanches à coins arrondis et ombre portée large et légère, aucun grain. Le seul flou est celui des transitions et de l'apparition des mots ; aucun flou de mouvement sur les déplacements.",
+    "style": "SaaS clair minimal, façon Linear",
+    "coherence": "Très cohérent : une seule famille typo, un label mono au-dessus de chaque titre, 2e ligne colorée selon la fonction (bleu, vert, logo multicolore clicks.page), carte produit toujours au même endroit, même transition. Cette cohérence devient de la monotonie : rien ne distingue une scène de la suivante par le mouvement."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Aucune coupe franche : 9 scènes reliées par un fondu-flou de 5 à 8 im (à 1,9 s, 4,5 s, 6,7 s, 9,3 s, 11,2 s, 13,8 s, 16,2 s, 17,7 s), durée moyenne ≈ 2,2 s. Dans chaque scène, entrées concentrées sur les 0,5 à 1 premières secondes (mots à 4 im d'écart, compteur, cascade), puis maintien. 11 maintiens statiques ≥ 0,4 s = 10,27 s (51 % de la durée) : 0-0,57 s fond vide, liste de projets 5,37-6,62 s, revenus 7,93-9,22 s, carte du monde 14,87-16,12 s, fin 18,45-19,82 s (1,4 s). Certains « maintiens » contiennent une micro-action (frappe dans le champ, curseur), mais l'impression reste lente pour un prompt « fast paced ». Pics de mouvement réguliers ≈ toutes les 2,4 s sur rhythm.jpg, aucun entre deux.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.4",
+        "what": "Fond clair vide",
+        "technique": "ouverture à vide"
+      },
+      {
+        "t": "0:00.4-0:00.6",
+        "what": "Icône (document bleu souriant) apparaît au centre",
+        "technique": "pop d'icône"
+      },
+      {
+        "t": "0:00.6-0:00.9",
+        "what": "L'icône glisse à gauche, le wordmark « founder.page » se dévoile de gauche à droite",
+        "technique": "révélation de logo par glissement"
+      },
+      {
+        "t": "0:00.97-0:01.4",
+        "what": "Slogan « One page for everything you've built. » mot à mot",
+        "technique": "mots en fondu-flou"
+      },
+      {
+        "t": "0:01.4-0:01.9",
+        "what": "Maintien sur le logo",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:01.9-0:02.05",
+        "what": "Le logo se floute et s'efface",
+        "technique": "fondu-flou"
+      },
+      {
+        "t": "0:02.05-0:02.4",
+        "what": "Label « CLAIM YOUR PAGE », « Your handle. Your page. » mot à mot, champ « founder.page/ » à droite",
+        "technique": "titre 2 lignes mot à mot"
+      },
+      {
+        "t": "0:02.3-0:03.2",
+        "what": "Frappe de « ratheejaisal » dans le champ, puis bouton Claim enfoncé",
+        "technique": "frappe dans un champ"
+      },
+      {
+        "t": "0:03.2-0:03.85",
+        "what": "Le champ grandit en carte profil ; avatar, nom, bio, boutons apparaissent en cascade",
+        "technique": "morph champ vers carte"
+      },
+      {
+        "t": "0:03.85-0:04.5",
+        "what": "Maintien",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:04.5-0:05.5",
+        "what": "« Every project. One link. » + carte « Everything I've built » dont les 7 lignes arrivent en cascade",
+        "technique": "liste en cascade"
+      },
+      {
+        "t": "0:05.5-0:06.7",
+        "what": "Maintien",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:06.7-0:08.0",
+        "what": "« Real revenue. No screenshots. » ; la carte reste en place, compteur 0 → 3 281 $/mo, heatmap qui se remplit, « Verified with Stripe », légende des processeurs",
+        "technique": "compteur + heatmap"
+      },
+      {
+        "t": "0:08.0-0:09.25",
+        "what": "Maintien",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:09.25-0:11.0",
+        "what": "« Real visitors. Counted by clicks.page » ; compteur 0 → 11 512 lié à une courbe qui se dessine, badge ▲24 %",
+        "technique": "compteur lié à une courbe"
+      },
+      {
+        "t": "0:11.17-0:13.8",
+        "what": "« The race is on 🏁 » ; course de revenus en barres du 1er au 30 septembre, date en filigrane",
+        "technique": "bar chart race"
+      },
+      {
+        "t": "0:13.8-0:16.2",
+        "what": "« Get found by the internet. » ; carte du monde en points, grappes d'avatars, statistiques qui roulent, puces de filtres",
+        "technique": "carte à points + compteurs"
+      },
+      {
+        "t": "0:16.2-0:17.7",
+        "what": "« Show it off anywhere. » ; navigateur squelette, badge « $3,484/mo VERIFIED » qui monte",
+        "technique": "badge intégré"
+      },
+      {
+        "t": "0:17.7-0:18.5",
+        "what": "Logo, slogan, bouton « Claim your page — free », URL en mono",
+        "technique": "carton de fin"
+      },
+      {
+        "t": "0:18.5-0:19.8",
+        "what": "Un curseur entre en bas à droite et va cliquer le bouton",
+        "technique": "curseur appel à l'action"
+      },
+      {
+        "t": "0:19.8-0:20.0",
+        "what": "Fondu-flou de sortie",
+        "technique": "fondu-flou"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (audio=no dans le dossier, pas de transcription) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Son rythme régulier (scène toutes les ≈ 2,4 s, mots toutes les 4 im) appellerait une pop électro légère vers 100 BPM.",
+    "how_built": "Le prompt ne parle ni de musique ni de son ; Claude a rendu une vidéo muette. Les durées sont posées en secondes arbitraires (scènes de 1,5 à 2,65 s), sans grille rythmique."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation de logo : l'icône glisse, le nom se dévoile",
+      "name_en": "icon slide wordmark reveal",
+      "t": "0:00.33-0:00.90",
+      "frames": "f20-f54",
+      "fps": 60,
+      "mechanics": "Icône seule au centre ≈ 6 % de hauteur (f24-f34). f36-f48 : elle glisse vers la gauche de ≈ 22 % de la largeur en 12 im, ease-out (grands pas f38-f42, petits pas f44-f48), en passant par-dessus le wordmark qui se dévoile de gauche à droite derrière elle (masque, f38-f54 = 16 im), d'abord gris puis noir. Lockup final centré, wordmark ≈ 7 % de hauteur. Rejoué en plus simple dans la fin (f1068-f1090 : icône déjà à gauche, nom dévoilé en ≈ 10 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg",
+      "illus": {
+        "from": 30,
+        "to": 56,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots un à un en fondu-flou du gris au noir",
+      "name_en": "word-by-word blur-in",
+      "t": "0:00.97-0:01.40",
+      "frames": "f58-f84",
+      "fps": 60,
+      "mechanics": "Chaque mot apparaît flou et gris clair puis se précise vers sa couleur finale en ≈ 6 à 8 im, léger glissement vertical probable (≈ 1 %). Décalage entre mots 4 im (0,067 s) : slogan « One » f58, « page » f62, « for » f66, « everything » f70, « you've » f74, « built. » f78. Même recette sur tous les titres (« Real » f410, « revenue. » f414, « No » f419, « screenshots. » f423 ; « Get » f836, « found » f840, « by » f844, « the » f848).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f405.jpg, microM-004-move-f831.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu-flou avec carte qui reste en place",
+      "name_en": "blur dissolve with persistent card",
+      "t": "0:06.70-0:06.80",
+      "frames": "f402-f408",
+      "fps": 60,
+      "mechanics": "Le titre sortant et le contenu de la carte se floutent (flou gaussien croissant) et s'effacent en 5 à 8 im ; la carte blanche reste à la même place et change seulement de hauteur et de contenu (liste → « $0 ») ; le nouveau contenu entre net dès f408, puis le nouveau titre arrive mot à mot. Aucun déplacement, aucune caméra. Utilisé 8 fois (f114, ≈ f270, f402, f557, f670, f829, f973, f1062).",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f405.jpg, microM-002-move-f562.jpg, microM-003-move-f677.jpg",
+      "illus": {
+        "from": 400,
+        "to": 425,
+        "n": 6
+      }
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit fixe titre gauche / carte produit droite",
+      "name_en": "split text-left card-right template",
+      "t": "0:02.0-0:17.7",
+      "frames": "f120-f1062",
+      "fps": 60,
+      "mechanics": "Bloc texte aligné à gauche à ≈ 7 % du bord, centré verticalement (label mono à ≈ 30 %, titre 2 lignes à ≈ 37-48 %), largeur ≈ 38 %. Carte blanche à droite de ≈ 49 % à 94 % de la largeur, ≈ 13 % à 83 % de la hauteur selon le contenu. Identique sur les 7 scènes de fonctions ; quand la 2e ligne de titre arrive, le bloc se recentre de ≈ 3 % vers le haut.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre 2 lignes, 2e ligne à la couleur de la fonction",
+      "name_en": "two-line headline with color-coded second line",
+      "t": "0:02.0-0:17.7",
+      "frames": "f120-f1062",
+      "fps": 60,
+      "mechanics": "Grotesque grasse serrée (Inter probable), interlettrage négatif, ≈ 8 % de hauteur par ligne, interligne serré ≈ 1,0. Ligne 1 noire = le bénéfice (« Real revenue. »), ligne 2 colorée = la preuve (« No screenshots. » en vert #22B04C, « Your page. » en bleu #3068E0, « clicks.page » avec son logo multicolore). Label mono capitales espacées ≈ 1,8 % avec point bleu au-dessus (« ● VERIFIED REVENUE »).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe du nom dans le champ d'URL puis clic",
+      "name_en": "typing into URL field",
+      "t": "0:02.30-0:03.23",
+      "frames": "f138-f194",
+      "fps": 60,
+      "mechanics": "Champ « founder.page/ » ≈ 22 % de largeur avec bouton bleu « Claim ». « ratheejaisal » tapé de f138 à f170 : 12 caractères en 32 im ≈ 1 car. toutes les 2,7 im (≈ 22 car./s), curseur clignotant. Pause 20 im, puis le bouton pâlit f190-f194 (pression).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le champ se transforme en carte profil",
+      "name_en": "input-to-card morph",
+      "t": "0:03.23-0:03.85",
+      "frames": "f194-f230",
+      "fps": 60,
+      "mechanics": "Après le clic, le champ se floute et son rectangle grandit en carte (≈ 22 % × 4 % → 27 % × 20 % du cadre) en ≈ 8 im (f194-f202). Le contenu arrive en cascade, ≈ 4 im d'écart : avatar f202, nom « Jaisal ✓ » f206-f210, ligne @handle · followers f214, bio f218-f222, boutons « Visit website » et « Find me on X » f226-f230. Ease-out, pas de dépassement.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 186,
+        "to": 234,
+        "n": 8
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Liste de projets en cascade",
+      "name_en": "staggered list rows",
+      "t": "0:04.9-0:05.5",
+      "frames": "f294-f330",
+      "fps": 60,
+      "mechanics": "Carte « Everything I've built » : 7 lignes (icône, nom, revenu mensuel, pastille verte « ● Live ») apparaissent de haut en bas en fondu-flou, ≈ 5 im d'écart probable (3 lignes à f300, 7 à f330). Puis maintien de 1,25 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de revenu et heatmap qui se remplit",
+      "name_en": "revenue counter with filling heatmap",
+      "t": "0:06.97-0:08.0",
+      "frames": "f418-f480",
+      "fps": 60,
+      "mechanics": "Chiffre ≈ 11 % de hauteur, « /mo » en mono gris. Reste à $0 f405-f417 puis démarre à pleine vitesse : 231, 449, 654, 847, 1 029… (incréments 231 → 150 par image), 3 154 à f450, 3 281 vers f470 : ease-out sur ≈ 55 im (0,9 s), sans phase d'accélération. Pastille « Verified with Stripe » ; grille de ≈ 26 × 7 carrés sarcelle dont l'intensité se remplit f430-f480 ; légende des processeurs (Stripe, Paddle, Polar, Lemon Squeezy, Creem, Dodo, Whop) ajoutée pastille par pastille f480-f510.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f405.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur lié au tracé d'une courbe",
+      "name_en": "counter linked to line draw",
+      "t": "0:09.57-0:11.0",
+      "frames": "f574-f660",
+      "fps": 60,
+      "mechanics": "« visitors/mo » : 0 jusqu'à f573, puis 1, 4, 9, 18, 30, 48, 72, 102, 140 (f574-f582, incréments croissants = ease-in), 2 759 à f600, 11 270 à f630, 11 512 à f660 : ease-in-out sur ≈ 86 im (1,4 s). La courbe bleue avec aire dégradée se dessine de gauche à droite au même rythme (≈ 25 % de la largeur à f600, complète vers f640), point final, puis badge « ▲ 24% » à f660.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f562.jpg, overview-02.jpg",
+      "illus": {
+        "from": 570,
+        "to": 660,
+        "n": 6
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Course de revenus en barres avec date en filigrane",
+      "name_en": "bar chart race",
+      "t": "0:11.5-0:13.5",
+      "frames": "f690-f810",
+      "fps": 60,
+      "mechanics": "7 barres colorées avec pastille d'initiale et rang, valeurs à droite, du 1er au 30 septembre en ≈ 120 im (2 s) ; date géante gris très clair ≈ 9 % de hauteur en bas à droite de la carte (« Sep 2 » → « Sep 30 »). Les barres s'allongent et se réordonnent en glissant verticalement. Défaut : pendant un échange (f780, « Sep 27 »), deux barres se superposent exactement et leurs valeurs (« $2,407 » / « $2,401 ») et rangs (4/5) se chevauchent, illisibles.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-003-move-f677.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Carte du monde à points, grappes d'avatars et stats",
+      "name_en": "dot map with avatar clusters",
+      "t": "0:14.1-0:15.5",
+      "frames": "f848-f930",
+      "fps": 60,
+      "mechanics": "La carte vide reste blanche ≈ 15 im (f834-f849), puis carte du monde en points gris ; des pilules d'avatars (3 ronds superposés + nombre : 235, 136, 69, 18, 23, 11, 4) apparaissent une à une en ≈ 1 s. Sous le titre, FOUNDERS 411 → 739, COUNTRIES 11 → 78, REVENUE 1,8 → 1,9 M$/mo roulent, puis puces filtres (« Everywhere 739 » noire sélectionnée, India 92, United States 54, Germany 48, United Kingdom 31, Remote 29).",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-004-move-f831.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Badge vérifié qui monte dans un site squelette",
+      "name_en": "embed badge on skeleton browser",
+      "t": "0:16.25-0:16.80",
+      "frames": "f975-f1008",
+      "fps": 60,
+      "mechanics": "Fenêtre de navigateur « tinystartups.com » en squelette (barres grises, bouton bleu pâle) ≈ 45 % de largeur. Le badge « $3,484/mo · Stripe-verified on founder.page · VERIFIED » monte du bas en fondu-flou ≈ 6 à 10 im (f998-f1008) et se pose en bas à gauche de la page. Le squelette garde l'attention sur le badge.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton de fin avec curseur qui clique le bouton",
+      "name_en": "end card with cursor click CTA",
+      "t": "0:17.80-0:19.98",
+      "frames": "f1068-f1199",
+      "fps": 60,
+      "mechanics": "Icône f1068, nom dévoilé f1074-f1090, slogan en fondu f1092, bouton bleu « Claim your page — free » ≈ 12 % de largeur f1104, URL mono f1122. Le curseur entre en bas à droite vers f1116 et rejoint le bouton en ≈ 24 im ease-out (f1140), clic ≈ f1146, puis 0,7 s de maintien et fondu-flou de sortie f1188-f1199.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Une fonction par scène dans l'ordre du parcours",
+      "name_en": "feature-per-scene tour",
+      "t": "0:00-0:20",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Logo → réserver son nom → ses projets → revenus vérifiés → trafic vérifié → classement → annuaire → badge à intégrer → appel à l'action. 7 fonctions en ≈ 15,8 s (≈ 2,25 s chacune), chaque titre = bénéfice + preuve. Ordre logique d'un nouvel utilisateur, mais aucune montée en tension : toutes les scènes pèsent pareil.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Couleur de preuve par fonction sur base neutre",
+      "name_en": "per-feature accent on neutral base",
+      "t": "0:00-0:20",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Base fixe : fond #F4F5FA, cartes blanches, texte #0B0D12, bleu de marque #3068E0. Chaque scène ajoute une seule couleur de preuve : vert #22B04C pour les revenus vérifiés, multicolore du logo clicks.page pour le trafic, palette de 7 couleurs pour la course de barres, sarcelle pour la heatmap.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond clair à halo radial bleuté",
+      "name_en": "soft radial glow background",
+      "t": "0:00-0:20",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Aplat #F4F5FA avec un halo elliptique #E7ECF6 légèrement décentré à droite, à peine visible, immobile. Donne de la profondeur sans distraire, mais ne bouge jamais (aucune vie de fond pendant les maintiens).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Contenant d'abord, contenu ensuite, puis long maintien",
+      "name_en": "container-first front-loaded scenes",
+      "t": "0:13.9-0:16.1",
+      "frames": "f834-f968",
+      "fps": 60,
+      "mechanics": "La carte blanche vide apparaît d'abord (≈ 15 im), le titre arrive mot à mot, le contenu se remplit dans les ≈ 60 premières images, puis la scène tient 1,2 à 1,4 s sans rien (14,87-16,12 s ici, 5,37-6,62 s et 7,93-9,22 s ailleurs). Total des maintiens : 51 % de la durée.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, microM-004-move-f831.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Le prompt ne contient ni nom de produit ni liste de fonctions, pourtant la vidéo montre la vraie marque founder.page, l'icône, le slogan, des projets réels (Tiny Startups, clicks.page) et des fonctions précises : Claude travaillait sans doute dans le dépôt ou sur le site du produit (probable). « Fit our brand » a donc été résolu par le contexte, pas par le prompt."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Fast paced » a été lu comme « scènes courtes » (≈ 2,2 s) et non comme « mouvement continu » : 51 % d'images figées. Il fallait chiffrer le rythme (un événement toutes les 0,5 s, aucun maintien > 0,5 s)."
+    },
+    {
+      "kind": "structure",
+      "insight": "« Shows all our key features » produit mécaniquement une liste : une fonction par scène, même gabarit, même durée. Sans consigne de hiérarchie (fonction phare, climax), toutes les scènes pèsent pareil."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Beautiful » a donné le style SaaS clair par défaut de Claude (Inter serré, fond gris-bleu, cartes blanches, fondu-flou) : propre mais interchangeable."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien sur le son : la vidéo est muette. Pour une vidéo de lancement, la musique et le calage sur le tempo doivent être demandés explicitement."
+    }
+  ],
+  "steal": [
+    "Logo : l'icône seule au centre, puis elle glisse à gauche en 12 im pendant que le nom se dévoile de gauche à droite derrière elle.",
+    "Titre mot à mot : chaque mot passe de gris flou à sa couleur en 6 à 8 im, 4 im d'écart ; 2e ligne colorée = la preuve.",
+    "Garder la carte produit à la même place entre deux scènes et ne fondre-flouter que son contenu : continuité sans déplacement.",
+    "Formulaire vivant : taper le nom, cliquer, le champ grandit en carte profil dont le contenu arrive en cascade à 4 im d'écart.",
+    "Lier un compteur et une courbe sur la même courbe d'accélération : le chiffre et le tracé arrivent ensemble."
+  ],
+  "flaws": [
+    "51 % de la durée en images figées (maintiens de 1,2 à 1,4 s) pour un prompt « fast paced ».",
+    "Même fondu-flou et même gabarit titre gauche / carte droite sur 8 scènes : monotone.",
+    "Course de barres : deux barres et leurs valeurs se superposent pendant un échange de rang (« Sep 27 »).",
+    "Vidéo de lancement muette : aucune musique ni effet sonore.",
+    "0,57 s de fond vide au départ avant la première image utile."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Techniques simples et bien lisibles sur les planches (mots en fondu-flou, morph champ → carte, compteur lié à une courbe) ; rythme lent et muet, loin de la cible 1600. Seule la morph f186-f234 mérite un regard image par image."
+  }
+}

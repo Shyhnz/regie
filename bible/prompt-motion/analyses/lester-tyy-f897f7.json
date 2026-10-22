@@ -1,0 +1,371 @@
+{
+  "slug": "lester-tyy-f897f7",
+  "title": "CloudJoi search showcase",
+  "handle": "@lester_tyy",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Démo d'interface fidèle et soignée (lueur dégradée, zoom traversant, rouleau, éventail de photos), mais 76 s lentes : longues saisies, maintiens de 2,5 à 3,6 s, cartons noirs génériques.",
+  "summary": "Démo produit Remotion d'un moteur de recherche d'événements malaisien. Quatre actes séparés par des cartons noirs : résultats en carrousel puis modes de cartes (Fan, 67, Cult, Shoot), sélecteur d'États en rouleau, requêtes en langage naturel qui changent une pile d'affiches, mentions d'entités avec carte d'aperçu. UI réelle et bien reproduite ; rythme de tutoriel, pas de pub.",
+  "prompt_vs_result": [
+    "Une ligne : étudier le fonctionnement d'un site (lien) et faire une vidéo vitrine produit avec Remotion. Ni durée, ni style, ni musique, ni structure imposés.",
+    "Claude a choisi un tour des fonctions en 4 actes, les cartons noirs « Not just KL. / Ask it your way. / Find something specific? / Try now? », les mouvements de caméra, les transitions en glissé et la DA blanche du site.",
+    "« Étudie comment ça marche » a produit un inventaire fonctionnel fidèle mais sans accroche ni tension. Il aurait fallu fixer 30-40 s, un rythme (BPM, changement toutes les 0,5-1 s) et une promesse unique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FFFFFF", "role": "fond de page (plans d'interface)"},
+      {"hex": "#E3E5F6", "role": "fond lavande autour de la page en carte (plans larges)"},
+      {"hex": "#0B0B10", "role": "fond des cartons titres"},
+      {"hex": "#F06AA6", "role": "rose de la bordure dégradée de la barre"},
+      {"hex": "#8E7CF3", "role": "violet de la bordure et du halo"},
+      {"hex": "#5DB4F2", "role": "bleu de la bordure et du halo"},
+      {"hex": "#1C1C1E", "role": "texte d'interface"},
+      {"hex": "#F5A623", "role": "bouton rafraîchir"},
+      {"hex": "#2D7FF9", "role": "bouton info"},
+      {"hex": "#E5383B", "role": "bouton cœur"}
+    ],
+    "type": "Interface : grotesque neutre (Inter probable) regular, ≈ 1,5-2 % de la hauteur. Cartons : grotesque extra-grasse (Bricolage ou Inter Display Black probable), casse phrase avec ponctuation, ≈ 11 % de hauteur de capitale, interlettrage serré.",
+    "texture": "Ombres portées douces et larges sous les cartes et la barre ; halo coloré flou sous la barre de recherche ; flou de mouvement simulé sur les zooms rapides ; flou gaussien de profondeur de champ sur les cartes voisines. Aucun grain.",
+    "style": "démo SaaS épurée, blanc et dégradé",
+    "coherence": "Tient par la reprise fidèle de l'UI du site (barre à bordure dégradée toujours au centre, cartes arrondies à ombre douce). Casse par les cartons noirs plats sans lien graphique avec l'interface et par la taille de titre qui varie selon la longueur de la phrase."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "Musique « upbeat » à 120 BPM, pulsation nette (6,24). Le montage est construit sur une grille de 0,5 s (secondes et demi-secondes rondes) : les glissés commencent à x,00 s et durent 30 im à 60 fps = 0,5 s, les titres des cartons apparaissent à x,55 s, chaque carton dure 2 s = 1 mesure. Comme les temps de la musique tombent à x,046 / x,546 s, tout ce qui est structurel tombe à 1-3 im d'un temps. L'action continue (saisie, rouleau, cartes en orbite) est libre. Densité faible : 9 coupes en 76 s (plan médian 6,9 s). Temps morts réels : carrousel quasi figé 9,5-11,0 s (1,5 s), Penang sélectionné tenu 39,5-42,0 s (2,5 s), chaque carton noir figé ≈ 1-1,3 s, carton final figé 72,5-76,1 s (3,6 s).",
+    "timeline": [
+      {"t": "0:00-0:02.2", "what": "Page du site posée comme une carte sur fond lavande, pile d'affiches en bas ; la caméra pousse jusqu'au logo et à la barre de recherche, la pile glisse hors cadre par le bas.", "technique": "push-in d'ouverture ease-in-out"},
+      {"t": "0:02.2-0:03.5", "what": "Curseur qui rejoint la barre et clique ; la bordure dégradée rose-violet-bleu et son halo s'allument.", "technique": "curseur + état focus"},
+      {"t": "0:03.5-0:06.9", "what": "Saisie « what to do in kl this weekend », caractère par caractère.", "technique": "saisie simulée"},
+      {"t": "0:06.9-0:09.0", "what": "Recul : la page redevient une carte, la pile d'affiches remonte, la barre monte en haut et un carrousel de résultats entre par la droite.", "technique": "pull-back + carrousel"},
+      {"t": "0:09.0-0:11.5", "what": "Carrousel en dérive lente, presque figé.", "technique": "maintien"},
+      {"t": "0:11.5-0:11.65", "what": "Punch-in de 8 im sur le carrousel, la barre sort par le haut.", "technique": "zoom rapide"},
+      {"t": "0:12.0-0:14.6", "what": "Les affiches voisines se floutent, le curseur survole l'affiche centrale qui se soulève, les voisines chutent hors cadre.", "technique": "profondeur de champ + isolement"},
+      {"t": "0:15.1-0:17.5", "what": "Un éventail de photos jaillit derrière l'affiche, les infos (titre, horaires, lieu, langue) montent dessous, trois boutons ronds apparaissent.", "technique": "fan-out + stagger"},
+      {"t": "0:18.2-0:19.2", "what": "Zoom traversant flouté vers le coin haut-droit : bouton « Fan » agrandi, le curseur clique.", "technique": "zoom sur contrôle d'UI"},
+      {"t": "0:19.2-0:19.5", "what": "Recul flouté vers le plan d'ensemble.", "technique": "pull-back"},
+      {"t": "0:20.0-0:29.0", "what": "Défilé des modes : « 67 » (deux photos en bascule gauche/droite), « Cult » (orbite), « Shoot » (photos projetées), retour « Fan ».", "technique": "démonstration de modes"},
+      {"t": "0:29.0-0:34.0", "what": "Clics sur rafraîchir : 3 autres événements (comédie musicale, balade à vélo, stand-up) toutes les ≈ 1,5 s.", "technique": "rafraîchissement en série"},
+      {"t": "0:34.0-0:36.0", "what": "Glissé vers le noir, carton « Not just KL. » révélé par le bas.", "technique": "slide push + carton titre"},
+      {"t": "0:36.0-0:42.0", "what": "Glissé retour ; « What to do in » puis rouleau des États malaisiens qui décélère et s'arrête sur « Penang », tenu 2,5 s.", "technique": "sélecteur en rouleau"},
+      {"t": "0:42.0-0:44.0", "what": "Carton « Ask it your way. ».", "technique": "slide push + carton titre"},
+      {"t": "0:44.0-0:56.0", "what": "Quatre requêtes en langage naturel (date night, rire, apprendre, enfants), chacune fait monter une nouvelle pile d'affiches en bas, puis est effacée.", "technique": "requêtes + pile thématique"},
+      {"t": "0:56.0-0:58.0", "what": "Carton « Find something specific? », plus petit que les autres.", "technique": "slide push + carton titre"},
+      {"t": "0:58.0-1:10.0", "what": "Glissé vertical ; requêtes avec mention d'entité (klpac, bobokl, Douglas Lim, Jason Leong, jcpac) : puce icône dans le texte et carte d'aperçu (photo de lieu ou avatar) sous le mot.", "technique": "puces d'entité + carte d'aperçu"},
+      {"t": "1:10.0-1:16.1", "what": "Carton « Try now? », URL ajoutée 1,8 s plus tard, tenu jusqu'à la fin.", "technique": "CTA final"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Gestes clés mesurés sur les planches (écart à la barre la plus proche) : push d'ouverture f36 (+3 vs f33), recul f411 (+3), punch-in carrousel pic f691 (-2 vs f693, point vert f692), soulèvement de l'affiche f843 (0), éventail f906 (+3), zoom vers « Fan » f1091 (hors grille, ±7), recul pic f1164 (0, demi-temps), lancement « Shoot » f1563 (0), glissé 1 départ f2044 (+1), titre « Not » f2074 (+1), glissé retour f2163 (0), premier caractère f2191 (-2), arrêt du rouleau f2370 (-3), titre « Ask » f2555 (+2), titre « Find » f3394 (+1), titre « Try » f4234 (+1). Soit 11 sur 16 à ±2 im et 15 sur 16 à ±3 im (hasard ≈ 33 % et 47 %). Décalage systématique : l'image précède la barre de ≈ 3 im (46 ms), car le montage est sur des secondes rondes et la grille musicale démarre à 0,046 s. Rien ne marque le drop mesuré à 0:42.39 hormis le glissé déjà prévu à 0:42.0.",
+    "synced": ["coupes", "departs", "apparitions", "texte"],
+    "style_match": "Pop électronique enjouée à 120 BPM, neutre : colle au ton léger de l'UI, mais l'énergie ne se reflète ni dans les courbes douces ni dans la saisie.",
+    "how_built": "Probable : composition Remotion écrite en secondes rondes (cartons de 2 s, glissés de 0,5 s) et piste choisie à 120 BPM, où un temps = 0,5 s. La synchro structurelle est donc mécanique ; aucun accent musical n'est suivi (prompt muet sur la musique, pas d'effets sonores placés)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Tour des fonctions en actes séparés par des cartons questions",
+      "name_en": "feature tour with title-card chapters",
+      "t": "0:00-1:16",
+      "frames": "f0-f4564",
+      "fps": 60,
+      "mechanics": "4 actes, chacun une fonction : recherche + modes de cartes (34 s), sélecteur de lieu (6 s), langage naturel (12 s), mentions d'entités (12 s). Entre eux, un carton noir de 2 s exactement (1 mesure à 120 BPM) qui pose la promesse suivante en une phrase courte. Fin sur un CTA question + URL.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg, overview-08.jpg, overview-10.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glissé poussé d'un temps (blanc ↔ noir)",
+      "name_en": "one-beat slide push",
+      "t": "0:34.00-0:34.50",
+      "frames": "f2040-f2070",
+      "fps": 60,
+      "mechanics": "La scène noire entre par la droite et pousse la scène blanche vers la gauche (les deux bougent, pas de volet fixe). Part du cadre couverte : f2049 9 %, f2052 20 %, f2054 37 %, f2055 50 %, f2056 63 %, f2058 78 %, f2061 91 %, f2064 97 %, f2067 ≈ 100 %. Ease-in-out asymétrique : départ mou (≈ 2 %/im), vitesse max au milieu (≈ 13 %/im), longue traîne d'arrivée. Durée ≈ 26-30 im = 0,45-0,5 s, aucun flou. Départ à x,00 s, 3 im avant la barre de temps (f2043). Même courbe aux 5 autres changements de carton.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f2055.jpg",
+      "illus": {"from": 2044, "to": 2068, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glissé vertical (variante de direction)",
+      "name_en": "vertical slide push",
+      "t": "0:58.00-0:58.50",
+      "frames": "f3483-f3505",
+      "fps": 60,
+      "mechanics": "Même courbe que le glissé horizontal mais par le bas : la page blanche monte et pousse le carton « Find something specific? » vers le haut. Bord blanc à 4 % du cadre f3485, 50 % ≈ f3494, 90 % f3499, quasi fini f3503. Seule variation de direction de la vidéo, pour ouvrir le dernier acte.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f3495.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation de titre par masque montant, sur le temps",
+      "name_en": "masked rise text reveal",
+      "t": "0:34.55-0:35.00",
+      "frames": "f2073-f2100",
+      "fps": 60,
+      "mechanics": "Le noir arrive vide (≈ 0,1 s), puis le titre monte depuis sa ligne de base à l'intérieur d'un masque : premiers pixels f2074, phrase complète avant 0:35.00. Les 4 titres démarrent tous à 0-2 im d'une barre de temps (f2073, f2553, f3393, f4233). Mot par mot probable (« Ask . . » partiel à f2557-2558).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f2055.jpg, microM-008-move-f2538.jpg, microM-012-cut-f4215.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Cartons titres grotesque extra-grasse blanc sur quasi-noir",
+      "name_en": "heavy grotesk title cards",
+      "t": "0:34.5-0:36.0",
+      "frames": "f2070-f2160",
+      "fps": 60,
+      "mechanics": "Fond #0B0B10, texte #FFFFFF centré, casse phrase avec ponctuation, interlettrage serré. « Not just KL. » ≈ 53 % de la largeur, « Ask it your way. » ≈ 75 %, capitale ≈ 11 % de la hauteur ; « Find something specific? » réduit à ≈ 8 % pour tenir en ≈ 68 % de largeur. URL finale en grotesque grasse ≈ 3,5 % de hauteur.",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg, overview-10.jpg, overview-13.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Push-in d'ouverture depuis la page en carte",
+      "name_en": "opening push-in from framed page",
+      "t": "0:00.60-0:02.20",
+      "frames": "f36-f132",
+      "fps": 60,
+      "mechanics": "Plan de départ : la page blanche en carte arrondie sur fond lavande #E3E5F6, avec une pile d'affiches inclinées en bas. La caméra avance : bords lavande disparus à f50 (0,83 s), pile qui glisse vers le bas et sort entre f60 et f90, puis la poussée continue jusqu'à ≈ 2,2 s (logo ≈ 2,5× plus grand qu'au départ). Ease-in-out lent, sans flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 30, "to": 96, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur réaliste et état focus à bordure dégradée",
+      "name_en": "cursor click to gradient focus ring",
+      "t": "0:02.0-0:03.5",
+      "frames": "f120-f210",
+      "fps": 60,
+      "mechanics": "Curseur macOS noir qui glisse en courbe douce vers la barre, clic, puis la bordure grise devient un anneau dégradé rose #F06AA6 → violet #8E7CF3 → bleu #5DB4F2 avec un halo flou coloré dessous ; la loupe et l'icône micro restent grises, la croix d'effacement remplace l'icône rafraîchir.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Halo dégradé qui tourne autour de la barre",
+      "name_en": "rotating gradient glow border",
+      "t": "0:03.5-1:10.2",
+      "frames": "f210-f4215",
+      "fps": 60,
+      "mechanics": "La position des couleurs de la bordure et du halo change d'une vignette à l'autre (rose à gauche puis à droite, bleu qui migre) : dégradé conique en rotation lente probable. Garde un mouvement vivant pendant les saisies où rien d'autre ne bouge.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Saisie simulée et effacement rapide",
+      "name_en": "simulated typing and fast delete",
+      "t": "0:36.3-0:37.3",
+      "frames": "f2178-f2240",
+      "fps": 60,
+      "mechanics": "Caractère par caractère avec caret clignotant : ≈ 3 im par caractère (« What to do » en ≈ 29 im) dans les actes 2 à 4, ≈ 4 im par caractère dans la première requête (29 caractères en ≈ 2 s). Effacement à rebours en ≈ 0,5 s avant chaque nouvelle requête. Régulier, sans variation humaine.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f2175.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Pile d'affiches thématique qui change à chaque requête",
+      "name_en": "contextual poster pile",
+      "t": "0:45.6-0:56.0",
+      "frames": "f2736-f3360",
+      "fps": 60,
+      "mechanics": "Bande de ≈ 25 % de la hauteur en bas du cadre : affiches réelles inclinées (±15°) qui se chevauchent et dépassent du bord. Elle monte par le bas quand la requête est validée, puis est remplacée par une autre pile au thème de la requête suivante (stand-up pour « laugh », ateliers pour « learn », affiches enfants pour « kids »). Preuve visuelle sans afficher de liste de résultats.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg, overview-09.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carrousel de résultats sous la barre",
+      "name_en": "results carousel",
+      "t": "0:08.5-0:11.5",
+      "frames": "f510-f690",
+      "fps": 60,
+      "mechanics": "La barre remonte de ≈ 25 % de la hauteur vers le haut, une rangée de 9 affiches au format portrait (≈ 20 % de la hauteur chacune, coins arrondis, ombre) entre par la droite et se cale au centre, puis dérive lentement vers la gauche (≈ 1 % du cadre par seconde).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Punch-in de 8 images sur le carrousel",
+      "name_en": "fast punch-in",
+      "t": "0:11.43-0:11.57",
+      "frames": "f686-f694",
+      "fps": 60,
+      "mechanics": "Échelle ≈ 1 → 1,6 en 8 im (0,13 s) : grands pas f688-f692, presque rien après f694 (ease-out fort). La barre de recherche sort par le haut. Pas de flou de mouvement visible. Pic de vitesse f690-f692, point vert d'attaque f692 et barre de temps f693.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f691.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Profondeur de champ simulée sur les cartes voisines",
+      "name_en": "fake depth of field",
+      "t": "0:12.5-0:14.2",
+      "frames": "f750-f853",
+      "fps": 60,
+      "mechanics": "Les affiches voisines passent progressivement en flou gaussien fort (≈ 8 px à 1080p) en ≈ 0,5 s, l'affiche centrale reste nette et grossit légèrement sous le curseur (≈ +8 %). Hiérarchie par la netteté, sans assombrir.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-002-move-f853.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Isolement : l'élue monte, les voisines tombent",
+      "name_en": "lift and drop isolation",
+      "t": "0:14.05-0:14.60",
+      "frames": "f843-f876",
+      "fps": 60,
+      "mechanics": "L'affiche choisie monte de ≈ 20 % de la hauteur entre f840 et f850 (ease-out) pendant que les voisines floues glissent vers le bas et sortent du cadre entre f850 et f861 (≈ 11 im, ease-in). L'affiche redescend ensuite au centre. Départ sur la barre de temps f843.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f853.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Éventail de photos qui jaillit derrière l'affiche",
+      "name_en": "photo fan-out behind hero card",
+      "t": "0:15.10-0:15.60",
+      "frames": "f906-f936",
+      "fps": 60,
+      "mechanics": "6 à 8 photos paysage sortent de derrière l'affiche et s'ouvrent en éventail des deux côtés, inclinées de ±15-25° et en léger recul de profondeur, en ≈ 24 im (0,4 s), ease-out. L'affiche remonte en même temps de ≈ 15 % de la hauteur. Le bloc d'infos (titre gras, horaires, lieu, langue) monte et apparaît en fondu à f916-f922, ≈ 10 im après les photos ; les 3 boutons ronds suivent ≈ 1 s plus tard.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 904, "to": 934, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom traversant flouté vers un contrôle d'interface",
+      "name_en": "zoom-blur push to UI control",
+      "t": "0:18.18-0:18.40",
+      "frames": "f1091-f1104",
+      "fps": 60,
+      "mechanics": "Le groupe affiche + éventail grossit d'environ 3× en ≈ 8 im en filant vers la gauche, avec un flou de mouvement fort (f1092-f1098), et laisse voir le coin haut-droit de la page en carte sur fond lavande, cadré serré sur le bouton « Fan ». Le plan se stabilise vers f1104 ; le curseur clique ≈ 0,7 s plus tard. Le départ (f1091) n'est pas sur un temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f1093.jpg",
+      "illus": {"from": 1088, "to": 1104, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul flouté qui montre l'effet du clic",
+      "name_en": "blurred pull-back reveal",
+      "t": "0:19.15-0:19.45",
+      "frames": "f1149-f1167",
+      "fps": 60,
+      "mechanics": "Le bouton « Fan » rétrécit et file vers le coin haut-droit pendant que l'affiche et ses photos rentrent par la gauche, floues (f1155-f1162), en ≈ 17 im (0,28 s), ease-in-out ; netteté retrouvée à f1166, petit tassement jusqu'à f1172. Pic de vitesse sur la barre de demi-temps f1164.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1164.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Démonstration de modes : même contenu, quatre chorégraphies",
+      "name_en": "layout mode showcase",
+      "t": "0:20.0-0:29.0",
+      "frames": "f1200-f1740",
+      "fps": 60,
+      "mechanics": "Le bouton pilule haut-droit change de libellé à chaque clic (« Fan », « 67 », « Cult », « Shoot ») et les photos autour de l'affiche changent de comportement : « 67 » = deux photos à gauche et à droite en bascule haut/bas alternée (période ≈ 1,5 s probable), « Cult » = photos en orbite autour de l'affiche, « Shoot » = photos projetées de bas-droite vers haut-droite avec décalage de quelques images, sortie de cadre. Changement de mode à x,00 s (« Shoot » lancé f1563, sur la barre de temps).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg, microM-005-move-f1563.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Rafraîchissement en série",
+      "name_en": "refresh cycling",
+      "t": "0:29.5-0:34.0",
+      "frames": "f1770-f2040",
+      "fps": 60,
+      "mechanics": "Le curseur reste posé sur le bouton orange rafraîchir ; à chaque clic un nouvel événement remplace le précédent (affiche + éventail + infos), toutes les ≈ 1,5 s : Charlie and the Chocolate Factory, Connecting the City, Laugh Better. Montre la variété sans changer de plan.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélecteur à rouleau (machine à sous) qui décélère",
+      "name_en": "slot-machine picker roll",
+      "t": "0:37.27-0:39.55",
+      "frames": "f2236-f2373",
+      "fps": 60,
+      "mechanics": "Après « What to do in », une colonne verticale de 16 États défile vers le haut dans la barre : élément actif noir, voisins gris ≈ 40 %, extrêmes ≈ 15 % (dégradé d'opacité). Rapide au départ (≈ 1 élément toutes les 4 im, Johor → Melaka en 0,27 s), puis décélération expo (≈ 1 élément toutes les 20-25 im à la fin), arrêt sur « Penang » à f2370 (39,5 s), 3 im avant la barre de temps. Puis 2,5 s de maintien.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 2236, "to": 2372, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puces d'entité dans le texte et carte d'aperçu",
+      "name_en": "inline entity chip with preview card",
+      "t": "0:59.5-1:10.2",
+      "frames": "f3570-f4215",
+      "fps": 60,
+      "mechanics": "Quand la saisie atteint un nom reconnu (klpac, bobokl, Douglas Lim, Jason Leong, jcpac), une petite icône image s'insère juste après le mot puis une carte blanche à ombre douce (≈ 25 % de la largeur) apparaît sous la barre, alignée sur le mot : photo du lieu + légende « Venue: … », ou avatar rond + nom. La carte suit le mot quand la phrase continue. Chaque requête tient ≈ 2 s puis s'efface.",
+      "verdict": "reprendre",
+      "evidence": "overview-11.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final question + URL décalée",
+      "name_en": "question CTA end card",
+      "t": "1:10.55-1:16.10",
+      "frames": "f4233-f4564",
+      "fps": 60,
+      "mechanics": "« Try now? » révélé sur le temps (f4234), l'URL « experiments.cloudjoi.com » ajoutée ≈ 1,8 s plus tard sous le titre (≈ 3,5 % de hauteur), puis 3,6 s sans aucun mouvement.",
+      "verdict": "adapter",
+      "evidence": "overview-12.jpg, overview-13.jpg, microM-012-cut-f4215.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage sur grille de 0,5 s = temps à 120 BPM",
+      "name_en": "half-second edit grid on 120 BPM",
+      "t": "0:34.00-1:10.55",
+      "frames": "f2040-f4233",
+      "fps": 60,
+      "mechanics": "Tous les événements structurels sont placés sur des secondes ou demi-secondes rondes : glissés de 0,5 s qui commencent à x,00 s (un temps entier de transition), titres révélés à x,55 s (temps suivant), cartons de 2 s (1 mesure de 4 temps). La musique à 120 BPM a ses temps à x,046 s : l'image précède donc l'attaque de ≈ 3 im, ce qui se perçoit comme synchrone. 15 événements structurels sur 16 à ±3 im d'une barre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f2055.jpg, microM-007-cut-f2175.jpg, microM-008-move-f2538.jpg, microM-011-cut-f3495.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens longs après chaque démonstration",
+      "name_en": "long holds",
+      "t": "0:39.5-0:42.0",
+      "frames": "f2370-f2520",
+      "fps": 60,
+      "mechanics": "Penang tenu 2,5 s, carrousel quasi figé 1,5 s (9,5-11,0 s), cartons noirs figés ≈ 1-1,3 s après la révélation, carton final figé 3,6 s. 29 maintiens détectés au-dessus de 0,4 s (63 % de la durée, saisies comprises). Contraire à la règle « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-07.jpg, overview-13.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres portées douces et coins arrondis",
+      "name_en": "soft drop shadows",
+      "t": "0:08.5-1:10.2",
+      "frames": "f510-f4215",
+      "fps": 60,
+      "mechanics": "Affiches et cartes à coins arrondis (≈ 4 % de leur largeur) avec ombre large, très diffuse et faible (≈ 10-15 % d'opacité), décalée vers le bas. Elles détachent les cartes du fond blanc sans contour.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-11.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le lien vers le site réel a suffi à Claude pour reproduire l'UI exacte (barre à bordure dégradée, affiches réelles, modes Fan/67/Cult/Shoot, mentions d'entités) : fournir le produit vivant donne une démo crédible sans maquette."},
+    {"kind": "direction", "insight": "« Étudie comment ça marche » oriente vers l'explication fonctionnelle : la vidéo devient un tutoriel exhaustif (chaque fonction montrée) plutôt qu'une pub avec une seule promesse forte."},
+    {"kind": "structure", "insight": "Aucune durée imposée : 76 s et des saisies complètes. Il aurait fallu fixer 30-40 s, une fonction par plan de 3-5 s et couper les saisies longues (texte qui apparaît d'un bloc ou saisie accélérée)."},
+    {"kind": "build", "insight": "Remotion pousse vers des timings en secondes rondes et des transitions de bibliothèque (glissé poussé, ressort) : propre et régulier, mais toutes les transitions de carton sont identiques."},
+    {"kind": "other", "insight": "Musique non mentionnée : la synchro vient de la grille de 0,5 s croisée avec une piste à 120 BPM. Écrire le prompt en temps (« 120 BPM, une transition par mesure, impact sur le temps 1 ») rendrait cette coïncidence volontaire et étendrait la synchro aux gestes d'UI."},
+    {"kind": "direction", "insight": "Les cartons noirs en grotesque extra-grasse sont un choix de Claude, sans lien avec la DA du site : préciser « cartons dans la DA du produit (dégradé de la barre, fond lavande) » aurait gardé la cohérence."}
+  ],
+  "steal": [
+    "Montrer un clic : zoom traversant flouté (≈ 8 im) sur le contrôle, clic au curseur, puis recul flouté (≈ 17 im) qui révèle l'effet.",
+    "Sélecteur à rouleau : liste verticale, actif noir, voisins en dégradé d'opacité, décélération expo de 2 s, arrêt sur le temps.",
+    "Élire une carte : voisines floutées, l'élue monte de 20 %, les voisines tombent (11 im), puis l'éventail de photos jaillit derrière.",
+    "Changement de chapitre = glissé poussé de 0,5 s qui commence sur un temps, titre révélé au temps suivant, carton d'une mesure.",
+    "Preuve sans liste : une pile d'affiches thématique monte en bas du cadre à chaque requête validée."
+  ],
+  "flaws": [
+    "76 s pour quatre fonctions : saisies complètes, Penang tenu 2,5 s, carton final figé 3,6 s.",
+    "Cartons noirs texte seul, sans lien graphique avec l'UI : génériques, cassent l'énergie.",
+    "Taille de titre qui varie avec la longueur de phrase : « Find something specific? » plus petit que les autres.",
+    "UI minuscule dans les plans larges (texte ≈ 1,5 % de la hauteur) : illisible sur mobile.",
+    "Musique de fond générique : aucun geste n'épouse un accent, la montée de 0:42 n'est pas exploitée."
+  ],
+  "deep_study": {"worth": false, "why": "Les gestes remarquables (zoom traversant, recul flouté, rouleau, éventail, glissé d'un temps) sont lisibles sur les planches microscope et extra ; le reste est de la saisie et des maintiens. Une étude continue à 60 fps n'apprendrait pas grand-chose de plus."}
+}

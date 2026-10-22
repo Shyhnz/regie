@@ -1,0 +1,428 @@
+{
+  "slug": "samaote-5e2fc2",
+  "title": "Synced lyrics motion video",
+  "handle": "@samaote",
+  "family": "typo",
+  "craft": 5,
+  "craft_reason": "Concept tenu de bout en bout (le soleil compte à rebours jusqu'au sourire final), un chapitre par mesure, mots sur les syllabes, transitions motivées ; seuls bémols : lisibilité ponctuelle et flashs répétés.",
+  "summary": "Clip de paroles pour « Die With A Smile » : le soleil sert de compte à rebours jusqu'à la fin du monde. Lever, embrasement, temps figé en gris, feu, orbite, éclipse, puis le soleil devient un point qui se change en sourire. Treize chapitres d'une mesure chacun, mots posés sur les syllabes, HUD métronome. Fort : concept et synchro ; faible : lisibilité ponctuelle, flashs répétés.",
+  "prompt_vs_result": [
+    "Le prompt imposait : un clip de paroles sur la musique jointe, paroles et animation parfaitement calées sur la voix et sur le temps, avec l'ambition d'un showreel (« go all out »). Rien sur le style, la couleur ou la typographie.",
+    "Claude a décidé seul : le soleil comme compte à rebours de la fin du monde, 13 chapitres d'une mesure (6/8 à 158), le HUD métronome, trois familles de caractères, une palette par chapitre et la chute « le point devient un sourire ».",
+    "Bien cadré : l'exigence de synchro sur la voix et le temps a donné une grille explicite et des mots posés sur les syllabes. Non cadré : la lisibilité (crème sur beige, HUD perdu sur noir) et la retenue sur les flashs."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#270908", "role": "ciel nocturne rouge sang (haut du cadre, chapitres 01-03)"},
+      {"hex": "#9C3628", "role": "lueur de l'horizon"},
+      {"hex": "#F5B147", "role": "soleil levant, orange doré"},
+      {"hex": "#FDFFD7", "role": "cœur surexposé du soleil (embrasement)"},
+      {"hex": "#762F1D", "role": "fond ambré brûlé du chapitre IGNITION"},
+      {"hex": "#F7F1DF", "role": "texte crème des paroles"},
+      {"hex": "#857F78", "role": "soleil gris du chapitre STOP TIME (désaturé)"},
+      {"hex": "#D65E27", "role": "texture de feu du chapitre BLAZE"},
+      {"hex": "#4D1016", "role": "cramoisi du chapitre AFTERGLOW"},
+      {"hex": "#D8CFC2", "role": "papier beige des chapitres DAYLIGHT et écran partagé"},
+      {"hex": "#D1431F", "role": "rouge-orangé du disque solaire graphique, mots accentués, sourire final"},
+      {"hex": "#0A0804", "role": "noir profond (moitié nuit, éclipse, fin)"}
+    ],
+    "type": "Trois familles : italique garalde à fort contraste (type Cormorant/EB Garamond, probable) ≈ 4,5 % de hauteur ; serif très grasse arrondie (type Cooper/Fraunces Black) ≈ 10 % ; mono capitales interlettrées (+20 %) pour le HUD.",
+    "texture": "Grain filmique permanent, rayures verticales fines sur les fonds sombres, poussières qui flottent, vignette, halo et rayons divins autour du soleil, surface solaire granuleuse et couronne, reflets scintillants sur la mer, fumée de feu animée, papier grainé pour les chapitres clairs, bandes noires de format cinéma au début de BLAZE.",
+    "style": "clip cinéma solaire, typographie éditoriale",
+    "coherence": "Le soleil est l'unique personnage : il se lève, s'embrase, se fige en gris, brûle, tourne, s'éteint en point puis devient le sourire du titre ; le compte à rebours « LAST LIGHT IN » et le HUD (mesure, chapitre) relient les 13 univers. Les trois familles typographiques ont des rôles fixes (italique = phrase chantée, serif grasse = mot fort, mono = machine). Ce qui casse un peu : le chapitre grille suisse et l'écran partagé changent de registre (graphique plat) et la lisibilité y baisse."
+  },
+  "rhythm": {
+    "bpm": 158,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Grille réelle : 6/8 à 158 BPM à la croche (croche = 0,3797 s = 22,8 im ; mesure = 2,278 s = 136,7 im), phase ≈ 0,10 s ; le HUD l'affiche lui-même (« BAR 01 / 13 · 6/8 · 158 »). Le traqueur automatique a trouvé 105,3 BPM (1,5 croche) : une barre bleue sur deux des planches tombe hors de la musique. Les 8 changements de chapitre mesurés tombent à ±2 im du premier temps de mesure (f6, f144, f414, f552, f688, f1237, f1373, f1509). Les mots apparaissent sur les syllabes chantées (mots de l'arc : f280, f325, f347, f371, f394 contre croches f279, f325, f348, f371, f393). Densité : un mot ou un geste toutes les 0,4 à 1 s ; 17 % de maintiens détectés, surtout l'ouverture (0-3 s, lever lent sur une intro calme) et le chapitre STOP TIME, figé volontairement (9,6-11,2 s).",
+    "timeline": [
+      {"t": "0:00-0:02.38", "what": "01 — HORIZON : ciel rouge sang, mer noire, la ligne d'horizon se trace depuis le centre, « Nobody's promised » sort de derrière l'horizon", "technique": "mots qui émergent de l'horizon"},
+      {"t": "0:02.38-0:04.66", "what": "02 — FIRST LIGHT : « tomorrow » passe d'italique fin à romain gras sur le premier temps, le soleil commence à monter", "technique": "changement de graisse sur la syllabe forte"},
+      {"t": "0:04.66-0:06.5", "what": "03 — COUNTDOWN : « So I'ma love you every night like it's » s'écrit sur un arc au-dessus du soleil, un cadran gradué se trace", "technique": "texte sur arc + cadran"},
+      {"t": "0:06.5-0:06.94", "what": "Trois flashs à la double-croche, « last » en serif grasse", "technique": "stroboscope avant l'embrasement"},
+      {"t": "0:06.94-0:09.21", "what": "04 — IGNITION : le soleil grossit et s'embrase, « last night », « Like it's the » empilés à gauche", "technique": "embrasement + mot géant"},
+      {"t": "0:09.21-0:11.3", "what": "05 — STOP TIME : flash blanc, l'image se vide de sa couleur, compte à rebours figé et brouillé, pulsation rouge à 10,35 s", "technique": "désaturation du temps arrêté"},
+      {"t": "0:11.3-0:11.6", "what": "Plongée dans le soleil gris, flash blanc, bandes cinéma, étincelle sur « world »", "technique": "plongée dans le soleil"},
+      {"t": "0:11.6-0:13.77", "what": "06 — BLAZE : fumée de feu orange plein cadre, « world / was / ending » en noir très gras", "technique": "fond de feu animé"},
+      {"t": "0:13.77-0:16.05", "what": "07 — ORBIT : recul depuis la surface du soleil jusqu'à une sphère avec orbite pointillée, « I'd wanna be next to »", "technique": "recul depuis la surface"},
+      {"t": "0:16.05-0:17.68", "what": "08 — HOLD : « you » s'espace pendant la note tenue, le soleil grossit et ses rayons s'allongent", "technique": "interlettrage qui s'ouvre"},
+      {"t": "0:17.68-0:18.33", "what": "Flash blanc et traînées orange radiales, puis fondu vers le cramoisi", "technique": "flash blanc et filé radial"},
+      {"t": "0:18.33-0:20.4", "what": "09 — AFTERGLOW : petit soleil rouge, les lettres de « you » tombent en tournant, « If the party » se tape sombre sur sombre", "technique": "lettres qui tombent"},
+      {"t": "0:20.4-0:20.63", "what": "Le soleil devient un disque crème qui grandit jusqu'à couvrir le cadre", "technique": "iris qui naît du soleil"},
+      {"t": "0:20.63-0:22.88", "what": "10 — DAYLIGHT : affiche en grille suisse, « If | the | party | ● / was | over »", "technique": "affiche grille suisse"},
+      {"t": "0:22.88-0:25.16", "what": "11 : écran partagé beige / noir, cercle vide et disque rouge qui se croisent, « And our time on Earth was »", "technique": "écran partagé jour / nuit"},
+      {"t": "0:25.16-0:27.44", "what": "12 — ECLIPSE : le disque plat devient un vrai soleil, la lune le couvre, « through » se resserre et graisse, anneau de diamant à 26,83 s", "technique": "du cercle plat au soleil réel + éclipse"},
+      {"t": "0:27.44-0:29.65", "what": "13 — ZERO : le soleil se réduit à un point, le point devient une ligne puis un sourire rouge, titre « Die With A Smile »", "technique": "le point devient un sourire"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle 6/8 à 158 BPM (affichée dans le HUD ; le repliement de l'enveloppe d'attaques sur 0,3797 s donne un rapport de 1,73, phase 0,10 s). Les barres bleues des planches viennent d'un traqueur à 105,3 BPM (= 1,5 croche) et ne valent qu'une sur deux : j'ai compté sur la grille de croches et sur les attaques de la bande vocale (800-3 500 Hz, une analyse par image). Chapitres : 8 sur 8 à ±2 im du premier temps de mesure (hasard ≈ 4 %). Gestes clés : 15 sur 21 à ±2 im d'une croche ou double-croche (hasard ≈ 44 %) — mots de l'arc I'ma f280/f279, you f313/f314, every f325/f325, night f347/f348, like f371/f371, it's f394/f393 ; « Nobody's » f6/f6 ; « tomorrow » gras f144/f143 ; flashs f414/f416, f552/f553, f621/f621, f688/f690 ; fin de l'iris f1237/f1236 ; volet noir f1373/f1373 ; embrasement f1509/f1510. Ratés : « promised » monte 8 im avant la syllabe, « love » à −5 im, flash blanc f1061 (+7 im sur la croche, sans attaque), chute des lettres de « you » (−4 im sur l'attaque vocale f1139), anneau de diamant f1610 (−3 im sur l'attaque f1613), sourire f1697 (+5 im). L'indice automatique confirme une synchro forte (départs/demi-temps p corrigé = 1,5e-04 ; basses z = 4,75).",
+    "synced": ["coupes", "apparitions", "atterrissages", "pulsations", "flashs", "texte", "camera", "couleur"],
+    "style_match": "Ballade soul en 6/8, lente et ample : fondus, flous et caméra lente, flashs sur les accents ; palette rétro chaude et serif grasse arrondie collent au morceau.",
+    "how_built": "Claude a construit la timeline sur une grille de 6/8 à 158 BPM tirée de la musique jointe (le HUD l'affiche, avec un tiret allumé par croche et le numéro de mesure sur 13) : chaque chapitre dure exactement une mesure de 2,278 s et commence sur son premier temps ; les mots sont placés sur les syllabes chantées (minutage probable des paroles ou détection d'attaques). Déclencheur explicite dans le prompt : « perfectly syncing the lyrics and animation to the vocals and beat »."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Le soleil comme compte à rebours",
+      "name_en": "sun-as-countdown narrative",
+      "t": "0:00-0:29.65",
+      "frames": "f0-f1775",
+      "fps": 60,
+      "mechanics": "Un seul personnage, le soleil, suit le sens des paroles (« if the world was ending ») : lever sur la mer, embrasement, temps figé en gris, feu, orbite, note tenue, rémanence, plein jour graphique, jour/nuit, éclipse, extinction en point, sourire. En haut à droite, « LAST LIGHT IN 00:SS:FF » (secondes:images à 30 im/s) décompte de 00:27:22 à 0,5 s jusqu'à 00:00:00 à 28,23 s, l'instant exact où le soleil n'est plus qu'un point. Le titre « Die With A Smile » referme la métaphore.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg, microM-011-cut-f1697.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un chapitre par mesure",
+      "name_en": "one chapter per bar",
+      "t": "0:00-0:29.65",
+      "frames": "f6-f1646",
+      "fps": 60,
+      "mechanics": "13 chapitres nommés (« 01 — HORIZON », « 02 — FIRST LIGHT », « 03 — COUNTDOWN », « 04 — IGNITION », « 05 — STOP TIME », « 06 — BLAZE », « 07 — ORBIT », « 08 — HOLD », « 09 — AFTERGLOW », « 10 — DAYLIGHT », 11 sans étiquette lisible, « 12 — ECLIPSE », « 13 — ZERO ») = 13 mesures de 6/8 à 158 BPM (2,278 s). Changements mesurés contre le premier temps : f6/f6, f144/f143, f414/f416, f552/f553, f688/f690, f1237/f1236, f1373/f1373, f1509/f1510 : 8 sur 8 à ±2 im. Chaque mesure change de lumière, de couleur et de typographie.",
+      "verdict": "reprendre",
+      "evidence": "microM-001, microM-002, microM-004, microM-007, microM-008, microM-009, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre de viseur et HUD d'information",
+      "name_en": "viewfinder HUD frame",
+      "t": "0:00.5-0:29.65",
+      "frames": "f30-f1775",
+      "fps": 60,
+      "mechanics": "Quatre coins de viseur (équerres fines à ≈ 2,5 % des bords), titre et artistes en haut à gauche, compte à rebours en haut à droite, mesure et signature en bas à gauche, chapitre en bas à droite ; mono capitales ≈ 1,3 % de la hauteur, interlettrage ≈ +20 %, crème à ≈ 70 % d'opacité (noir sur les chapitres clairs). Donne un cadre fixe aux 13 univers.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, image f90 et f1320 extraites"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Métronome visuel dans le HUD",
+      "name_en": "beat-counter HUD",
+      "t": "0:00.5-0:28.2",
+      "frames": "f30-f1692",
+      "fps": 60,
+      "mechanics": "Sous « BAR 0N / 13 · 6/8 · 158 », 6 petits tirets : celui de la croche en cours s'allume (4e tiret à 1,5 s, 3e à 5,5 s, cohérent avec la grille de 0,3797 s depuis 0,10 s). Le compteur de mesure s'incrémente au premier temps. La synchro devient un élément graphique visible, comme une partition qui défile.",
+      "verdict": "reprendre",
+      "evidence": "images f90, f330 et f1320 extraites"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui émergent de l'horizon",
+      "name_en": "horizon-masked word rise",
+      "t": "0:00.07-0:02.47",
+      "frames": "f4-f148",
+      "fps": 60,
+      "mechanics": "La ligne d'horizon (crème #E2BBAD, 2 px) se trace depuis le centre vers les bords (≈ 15 % → 100 % de la largeur entre f8 et f48, ease-out). Chaque mot de la phrase en italique (≈ 4,5 % de hauteur) monte de derrière la ligne, masqué sous elle, d'environ 4 % de la hauteur en ≈ 20 im : « Nobody's » f4-f20 (premier temps f6), « promised » f66-f88, « tomorrow » f114-f140. Puis « tomorrow » passe d'italique fin à romain gras entre f144 et f148, sur le premier temps de la mesure 2 et le saut de la bande vocale (+10 dB à f144).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte sur un arc autour du soleil",
+      "name_en": "word-by-word text on a circular path",
+      "t": "0:04.4-0:06.6",
+      "frames": "f265-f396",
+      "fps": 60,
+      "mechanics": "« So I'ma love you every night like it's » s'écrit sur un arc de cercle (rayon ≈ 30 % de la hauteur) au-dessus du soleil levant, un mot par syllabe chantée : I'ma f279-282 (croche f279), you f312-315 (double-croche f314), every f324-327 (croche f325), night f345-348 (croche f348), like f369-372 (croche f371), it's f394-396 (croche f393). Chaque mot entre par un fondu flou (≈ 6 px → 0) en 4 à 6 im ; le dernier mot arrivé est le plus lumineux.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-cut-f402.jpg",
+      "illus": {"from": 276, "to": 396, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadran gradué qui se trace",
+      "name_en": "countdown dial draw-on",
+      "t": "0:04.9-0:06.9",
+      "frames": "f294-f414",
+      "fps": 60,
+      "mechanics": "Un cercle blanc fin (diamètre ≈ 55 % de la hauteur) avec graduations longues et courtes, comme la lunette d'une montre, se trace autour du soleil à partir du bas à droite : une graduation à f294, un demi-cercle vers f330, cercle complet vers f360. Il incarne le chapitre « COUNTDOWN » puis disparaît dans l'embrasement.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Stroboscope avant l'embrasement",
+      "name_en": "pre-ignition strobe",
+      "t": "0:06.5-0:07.03",
+      "frames": "f390-f422",
+      "fps": 60,
+      "mechanics": "Trois images surexposées (≈ +30 % de luminosité, une image chacune) à f390, f402 et f414, soit toutes les 12 im, une double-croche à 158 BPM ; « last » arrive entre elles en serif grasse, flou puis net (f408-f411). Au 3e flash, sur le premier temps de la mesure 4 (f416) et l'attaque f417, le soleil passe de ≈ 25 % à ≈ 45 % de la largeur en 7 im, l'horizon descend et les rayons éclatent.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f402.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot fort en serif très grasse, phrase en italique fin",
+      "name_en": "heavy soft-serif hero words vs light italic lines",
+      "t": "0:06.8-0:23.0",
+      "frames": "f408-f1380",
+      "fps": 60,
+      "mechanics": "Les mots que la voix appuie (« last night », « Like it's the », « world was ending », « If the party was over ») sont en serif très grasse à empattements arrondis (type Cooper/Fraunces Black), ≈ 10-11 % de hauteur, crème #F7F1DF avec ombre douce sur fond chaud, ou noirs sur le feu ; les phrases calmes restent en italique garalde fin ≈ 4,5 %. Le contraste de graisse traduit l'intensité du chant.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, overview-04.jpg, images f450 et f760 extraites"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots empilés qui entrent flous",
+      "name_en": "stacked blur-in words",
+      "t": "0:06.8-0:09.2",
+      "frames": "f408-f552",
+      "fps": 60,
+      "mechanics": "Chaque mot entre flou (≈ 15 px) et légèrement agrandi (≈ 1,05), et devient net en ≈ 4 im (« last » f408-f411) ; les lignes s'empilent ferrées à gauche (« last night » puis « Like it's / the »), la ligne suivante remplaçant la précédente sur la syllabe. Même grammaire dans BLAZE (« world / was / ending » centrés).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f402.jpg, microM-002-cut-f552.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Le temps s'arrête : désaturation et compteur figé",
+      "name_en": "time-stop desaturation and frozen counter",
+      "t": "0:09.2-0:11.47",
+      "frames": "f552-f688",
+      "fps": 60,
+      "mechanics": "f552 : flash blanc (≈ #F0E8E0 plein cadre) sur le premier temps de la mesure 5 et l'attaque f554 ; puis l'image chaude se vide de sa couleur en ≈ 17 im (f553-f570) : le soleil devient un disque gris #857F78 avec couronne blanche, sur fond #181514, paroles en italique fin (« last », « night », « If », « the »). Le compte à rebours se fige à 00:18:22 pendant ≈ 2 s et se brouille (« TIME STOPPED », chiffres aléatoires vers f617-f623). Les maintiens détectés (9,6-10,2 et 10,8-11,2 s) sont ici le message.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f552.jpg, microM-003-move-f624.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Pulsation rouge",
+      "name_en": "red pulse flash",
+      "t": "0:10.35-0:10.45",
+      "frames": "f621-f627",
+      "fps": 60,
+      "mechanics": "Dans le gris, le cadre vire au cramoisi pendant 1 à 2 im (f621-f622), puis retombe au gris en ≈ 6 im ; les traînées de la couronne s'allongent ensuite. Pile sur la croche f621 et l'attaque vocale f623 : un battement de cœur dans le temps arrêté.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f624.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans le soleil, flash et bandes cinéma",
+      "name_en": "push into the sun to a letterboxed flash",
+      "t": "0:11.32-0:11.62",
+      "frames": "f679-f697",
+      "fps": 60,
+      "mechanics": "La caméra fonce dans le soleil gris : le disque passe de ≈ 40 % de la largeur à plus que le cadre en ≈ 8 im (ease-in), f685-f687 image sombre où « world » arrive flou, f688 flash blanc, f689 cadre crème avec bandes noires ≈ 8 % en haut et en bas et « world » en noir très gras. Une étincelle radiale et un anneau partent du « l » (f690-f697), les bandes se retirent (f693-f697) et la fumée orange envahit le fond. Flash 1,5 im avant le premier temps de la mesure 6 (f689,5) et 3 im avant l'attaque vocale f691.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f688.jpg",
+      "illus": {"from": 676, "to": 700, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond de feu animé",
+      "name_en": "animated fire-smoke backdrop",
+      "t": "0:11.6-0:13.77",
+      "frames": "f697-f826",
+      "fps": 60,
+      "mechanics": "Fumée orange plein cadre (#D65E27 à #E27E35) qui roule lentement, avec braises, derrière « world / was / ending » en noir très gras (≈ 10 % de hauteur de capitale), un mot ajouté par syllabe. Le feu se fond ensuite dans la surface du soleil vue de très près (fondu enchaîné probable) avant le recul du chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-004-cut-f688.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul depuis la surface du soleil",
+      "name_en": "pull-back from the sun surface",
+      "t": "0:13.77-0:14.45",
+      "frames": "f826-f866",
+      "fps": 60,
+      "mechanics": "Depuis une texture solaire plein cadre, recul jusqu'à une sphère d'environ 35 % de la largeur entourée d'une orbite elliptique pointillée inclinée ; ease-out (grands pas f840-f850, posé vers f861) ; « I'd wanna » apparaît au centre en italique blanc pendant le recul. Départ au premier temps de la mesure 7 (f826).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f846.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Interlettrage qui s'ouvre sur la note tenue",
+      "name_en": "tracking expansion on a held note",
+      "t": "0:16.5-0:17.67",
+      "frames": "f990-f1060",
+      "fps": 60,
+      "mechanics": "« you » (serif ≈ 8 % de hauteur) voit son interlettrage passer de 0 à ≈ +40 % (« y o u ») en ≈ 70 im pendant que la voix tient la note ; en même temps le soleil grossit d'environ 20 % et ses rayons s'allongent jusqu'aux bords. Le mot s'étire comme le son.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc et traînées radiales",
+      "name_en": "white-out with radial warp streaks",
+      "t": "0:17.67-0:18.4",
+      "frames": "f1060-f1104",
+      "fps": 60,
+      "mechanics": "Surexposition jusqu'au blanc en 3 im (f1061-f1064), traînées orange qui filent du centre vers les bords (effet hyperespace) pendant ≈ 20 im, puis le blanc vire au pêche avec des rayons divins (f1088-f1096) et se fond dans le cramoisi d'AFTERGLOW (f1100-f1130). Le flash tombe 7 im après la croche f1054, sans attaque audible : le moment le moins calé du film.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f1061.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui tombent",
+      "name_en": "letters fall with gravity",
+      "t": "0:18.9-0:19.35",
+      "frames": "f1134-f1160",
+      "fps": 60,
+      "mechanics": "Les lettres « y », « o », « u » se détachent et tombent en tournant (y ≈ −20°, u ≈ +30°), en s'écartant, avec une accélération de chute (ease-in) ; elles sortent du cadre en ≈ 25 im, laissant la ligne « I'd wanna be next to » et le petit soleil rouge. Départ 4 im avant l'attaque vocale f1139.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris qui naît du soleil",
+      "name_en": "sun-born iris reveal",
+      "t": "0:20.4-0:20.63",
+      "frames": "f1224-f1238",
+      "fps": 60,
+      "mechanics": "Le petit soleil rouge blanchit au centre (f1224), devient un disque crème qui grandit d'abord lentement (≈ 3 % → 12 % de la largeur, f1226-f1231) puis très vite (expo-in : 25 %, 40 %, 55 %, 75 %, plein cadre à f1238). Les mots « If the party », tapés sombre sur sombre avant l'iris, gardent la même place après : raccord à travers l'iris vers l'affiche beige. Fin de l'iris sur le premier temps de la mesure 10 (f1236) et l'attaque vocale f1239.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1235.jpg",
+      "illus": {"from": 1222, "to": 1240, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Affiche en grille suisse",
+      "name_en": "Swiss grid poster",
+      "t": "0:20.63-0:22.88",
+      "frames": "f1238-f1373",
+      "fps": 60,
+      "mechanics": "Papier beige grainé #D8CFC2, grille de 4 × 3 cellules en filets noirs de 2 px qui se tracent (f1242-f1255) ; mots dans les cellules : « If | the | party | ● » puis « was | over », serif très grasse noire et rouge-orangé (#D1431F) pour les mots accentués ; le disque solaire rouge (≈ 12 % de la largeur) pousse dans la 4e cellule en ease-out (f1244-f1251). Chaque mot claque dans sa cellule sur sa syllabe (« was » vers l'attaque f1284, « over » vers f1307).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1235.jpg, overview-04.jpg, image f1320 extraite"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran partagé jour / nuit",
+      "name_en": "day-night split screen",
+      "t": "0:22.88-0:25.16",
+      "frames": "f1373-f1509",
+      "fps": 60,
+      "mechanics": "La grille disparaît, un panneau noir entre par la droite et s'arrête à ≈ 50 % de la largeur en ≈ 14 im (ease-out, f1373-f1387), départ sur le premier temps de la mesure 11 ; le disque rouge glisse sur la couture. Un cercle vide noir (la lune) côté beige et le disque rouge (le soleil) côté noir se croisent (24,5 s) puis échangent leurs côtés en grandissant (25,0 s). La phrase en italique crème chevauche les deux moitiés : peu lisible sur le beige, et le HUD disparaît sur le noir.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f1376.jpg, overview-04.jpg, overview-05.jpg, image f1440 extraite"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Du cercle plat au soleil réel",
+      "name_en": "flat-to-photoreal sun match",
+      "t": "0:24.95-0:25.5",
+      "frames": "f1497-f1530",
+      "fps": 60,
+      "mechanics": "La moitié beige se replie vers la gauche (f1497-f1509) ; sur le premier temps de la mesure 12 (f1510), le disque rouge plat s'allume en soleil photoréaliste (surface granuleuse, couronne, rayons) en ≈ 10 im (f1509-f1519) et le cercle vide devient la lune. Le graphisme plat redevient image : le même objet change de nature au lieu de couper.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1510.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Interlettrage qui se resserre, graisse qui monte",
+      "name_en": "tracking collapse with weight gain",
+      "t": "0:25.2-0:26.5",
+      "frames": "f1512-f1590",
+      "fps": 60,
+      "mechanics": "« t h r o u g h » apparaît en romain fin très espacé (interlettrage ≈ +60 %), puis se resserre jusqu'à 0 en gagnant de la graisse (« through » gras ≈ 10 % de hauteur) pendant que la lune recouvre le soleil : la fermeture du mot accompagne la fermeture de la lumière.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1510.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Anneau de diamant et onde de choc",
+      "name_en": "diamond-ring flash with shockwave",
+      "t": "0:26.8-0:27.2",
+      "frames": "f1608-f1630",
+      "fps": 60,
+      "mechanics": "À la totalité, l'image s'éclaircit (f1608-f1609), un anneau blanc apparaît au bord du disque noir (f1610) et s'étend d'un rayon ≈ 5 % à ≈ 45 % de la largeur en ≈ 8 im (ease-out) ; la couronne s'intensifie et des étincelles jaillissent (f1620-f1630). Flash 3 im avant l'attaque mesurée f1613.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1610.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point devient un sourire",
+      "name_en": "dot-to-smile morph",
+      "t": "0:27.5-0:28.6",
+      "frames": "f1650-f1717",
+      "fps": 60,
+      "mechanics": "Le soleil rapetisse jusqu'à un point lumineux (f1650-f1688) pendant que le compte à rebours atteint 00:00:00 ; le point s'étire en ligne horizontale rouge (≈ 45 % de la largeur, f1689-f1693), la ligne se courbe en arc de sourire (f1694-f1700) avec une lueur rouge plein cadre à f1697, puis le titre « Die With A Smile » (italique fin crème) apparaît en fondu (f1709-f1730) au-dessus, les artistes en mono très espacée dessous.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1697.jpg, overview-05.jpg",
+      "illus": {"from": 1682, "to": 1716, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Soleil procédural photoréaliste",
+      "name_en": "procedural photoreal sun",
+      "t": "0:02.4-0:28.0",
+      "frames": "f144-f1680",
+      "fps": 60,
+      "mechanics": "Sphère solaire à surface granuleuse animée, assombrissement au bord, halo, couronne en traînées, rayons divins qui tournent lentement ; elle change d'échelle (5 % à plus que le cadre), de couleur (orange, blanc, gris, rouge) et d'état (lever, embrasement, éclipse) selon le chapitre. Rendu probable en shader ou canvas.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mer qui reflète le soleil",
+      "name_en": "shimmering sea reflection",
+      "t": "0:00-0:06.9",
+      "frames": "f0-f414",
+      "fps": 60,
+      "mechanics": "Sous l'horizon (≈ 35 % bas du cadre), mer noire #231108 avec reflets horizontaux étirés et scintillants qui suivent la position et la couleur du soleil ; donne de la vie au plan large pendant l'intro lente.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Script couleur par chapitre",
+      "name_en": "per-chapter color script",
+      "t": "0:00-0:29.65",
+      "frames": "f0-f1775",
+      "fps": 60,
+      "mechanics": "Rouge sang et noir (horizon), orange (lever, compte à rebours), ambre surexposé (embrasement), gris (temps arrêté), orange feu (BLAZE), ambre sombre (orbite, note tenue), blanc puis cramoisi (rémanence), beige-noir-rouge (plein jour graphique), beige | noir (jour/nuit), noir et or (éclipse), noir et rouge (fin). La couleur suit la courbe émotionnelle et change sur les premiers temps de mesure.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain, rayures et poussières",
+      "name_en": "film grain, scratches and dust",
+      "t": "0:00-0:29.65",
+      "frames": "f0-f1775",
+      "fps": 60,
+      "mechanics": "Grain filmique sur tout le film, fines rayures verticales visibles sur les fonds sombres (rémanence, fin), poussières lumineuses qui flottent, vignette marquée, halo autour des hautes lumières ; papier grainé sur les chapitres beiges. Unifie les univers photoréaliste et graphique.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg, image f1745 extraite"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots posés sur les syllabes, accent sur la syllabe forte",
+      "name_en": "syllable-locked lyric reveal",
+      "t": "0:00-0:26.5",
+      "frames": "f4-f1590",
+      "fps": 60,
+      "mechanics": "Chaque mot apparaît 0 à 3 im avant la syllabe chantée (mots de l'arc : 6 sur 6 à ±2 im d'une croche ou double-croche), et les mots appuyés changent de traitement sur la syllabe forte : « tomorrow » devient gras sur le premier temps, « last » et « world » arrivent sur un flash, « you » s'espace pendant la note tenue puis tombe, « through » se resserre. La typographie suit la phrase musicale, pas seulement le temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, extra-03.jpg, microM-001-cut-f402.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "La musique jointe est l'entrée décisive : Claude en a tiré le tempo et la signature (« 6/8 · 158 », affichés à l'écran), le découpage en 13 mesures et le placement des mots sur les syllabes. Sans fichier audio, cette synchro serait impossible."},
+    {"kind": "direction", "insight": "« perfectly syncing the lyrics and animation to the vocals and beat » fixe deux cibles distinctes et Claude répond aux deux : les mots suivent la voix, les chapitres suivent les mesures. Nommer les deux niveaux dans un prompt est une bonne pratique."},
+    {"kind": "structure", "insight": "Le prompt ne dit rien de la structure : Claude a inventé une dramaturgie (lever, embrasement, temps figé, éclipse, extinction, sourire) tirée du sens des paroles (« if the world was ending »). Le concept vient de la lecture du texte chanté."},
+    {"kind": "other", "insight": "« incredible motion designer's showreel… go all out » pousse à varier les looks (13 univers en 30 s, dont une affiche suisse) : spectaculaire mais au bord du patchwork ; préciser « une seule direction artistique » aurait resserré l'ensemble."},
+    {"kind": "qa", "insight": "Aucune consigne de lisibilité : texte crème sur beige et HUD invisible sur noir dans l'écran partagé. Ajouter « contraste minimal du texte sur chaque fond, vérifié image par image » au prompt."},
+    {"kind": "banned", "insight": "Pas d'interdits : les flashs à répétition (9 en 30 s) et le HUD de viseur, deux tics fréquents de vidéo IA, restent possibles ; les bannir aurait forcé d'autres ponctuations visuelles."}
+  ],
+  "steal": [
+    "Découper le morceau en mesures et donner à chaque mesure un chapitre visuel nommé et numéroté : la structure musicale devient la structure du film.",
+    "Afficher la grille dans l'image (mesure, signature, tempo, un tiret par temps) : le métronome devient un élément graphique et la synchro se voit.",
+    "Faire naître la transition de l'objet principal : le soleil devient l'iris qui ouvre la scène suivante, puis le point final devient un sourire.",
+    "Traduire le chant en typo : interlettrage qui s'ouvre sur une note tenue, graisse qui monte sur la syllabe forte, lettres qui tombent en fin de phrase.",
+    "Un compte à rebours dans l'image qui se fige quand le temps s'arrête et atteint zéro à l'instant exact où la lumière disparaît."
+  ],
+  "flaws": [
+    "Texte crème sur le beige de l'écran partagé, et HUD qui disparaît sur la moitié noire.",
+    "Neuf flashs en 30 s (blancs, rouges, gris, stroboscope) : l'accent finit par se répéter.",
+    "Ouverture lente : 4,5 s de petit italique sur fond sombre avant le premier événement fort.",
+    "Le flash blanc de 17,68 s tombe entre deux croches (+7 im), sans attaque audible.",
+    "Treize looks en 30 s : l'affiche en grille suisse rompt le ton cinéma du reste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : grille de 6/8 à 158 BPM affichée et respectée, mots posés syllabe par syllabe, transitions nées du soleil (iris, plongée, éclipse, point → sourire). À étudier image par image pour reproduire la méthode de synchro sur une voix chantée."
+  }
+}

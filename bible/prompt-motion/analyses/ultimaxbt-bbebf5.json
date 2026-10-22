@@ -1,0 +1,368 @@
+{
+  "slug": "ultimaxbt-bbebf5",
+  "title": "Orange dot motion system",
+  "craft": 4,
+  "craft_reason": "Un seul point orange porte 6 scènes avec squash à l'atterrissage, ressort cohérent et boucle parfaite ; deux morphings demandés sont remplacés par des coupes, l'anneau de texte est peu lisible et le rembobinage est stroboscopique.",
+  "style": {
+    "family": "graphisme suisse cinétique, système à un accent, objet fil rouge",
+    "palette": ["#EFE9E4", "#141414", "#161311", "#FF4E1D", "#ECEAE6", "#50504E"],
+    "type": ["grotesque grasse à caractère, ExtraBold/Black (Bricolage Grotesque probable)", "capitales grotesques grasses (anneau)", "grotesque medium grise (étiquette Opus 5.5)"],
+    "texture": "aplats purs, aucun dégradé, flou de mouvement directionnel, contours fantômes 1-2 px, une ombre douce sous le point",
+    "mood": "nerveux, précis, ludique ; manifeste de motion designer"
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "acts": [
+      "0-0,9 s : accroche, clic sur l'interrupteur Reduce Motion puis recul",
+      "0,9-3,3 s : Reduce tombe lettre à lettre, Motion prend le cadre, la musique entre",
+      "3,3-5,0 s : le point saute sur un graphe et trace une réponse de ressort (+22 %)",
+      "5,0-7,6 s : le point devient cercle, carré, pilule, puis se contracte (inversions figure/fond sur chaque temps)",
+      "7,6-9,4 s : anneau de mots 3D en orbite autour du point",
+      "9,4-11,35 s : trame de points réactive puis expansion jusqu'au noir",
+      "11,35-13,55 s : carte finale, le point devient le point final",
+      "13,55-15,12 s : rembobinage accéléré et retour à l'image 0 (boucle)"
+    ]
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Fil rouge unique",
+      "name_en": "hero object through-line",
+      "t": "0:00.00-0:15.12",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Le même point orange est point du i, curseur de graphe, cercle, carré, pilule, centre d'orbite, source d'onde, point final ; il reste presque toujours au centre du cadre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Accroche par une UI qu'on éteint",
+      "name_en": "UI toggle hook",
+      "t": "0:00.00-0:00.90",
+      "frames": "f0-f54",
+      "fps": 60,
+      "mechanics": "Interrupteur sur ON cadré x2,6 ; clic à f30 sur un son de clic à 0,50 s ; le bouton glisse et la piste passe de l'orange au gris en ~18 im (f32-f50). Désactiver Reduce Motion libère le mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul avec flou horizontal",
+      "name_en": "pull-back whip",
+      "t": "0:00.53-0:00.90",
+      "frames": "f32-f54",
+      "fps": 60,
+      "mechanics": "Zoom arrière x2,6 -> x1 combiné à un panoramique, 22 im, ease-out ; flou directionnel fort f33-f40.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui se courbe et tombe lettre à lettre",
+      "name_en": "per-letter bend and fall",
+      "t": "0:01.03-0:01.57",
+      "frames": "f62-f94",
+      "fps": 60,
+      "mechanics": "Le R bascule en premier (f62), puis « Reduce » se courbe vers le bas à gauche comme une chaîne ; chaque lettre pivote jusqu'à ~60° ; ~4 im de décalage de R à e ; l'interrupteur sort en bas à droite (f74-f90).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 58, "to": 110, "n": 7}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot restant qui prend le cadre",
+      "name_en": "survivor word scale-up",
+      "t": "0:01.37-0:01.83",
+      "frames": "f82-f110",
+      "fps": 60,
+      "mechanics": "« Motion » glisse au centre et passe de 22 % à 69 % de la largeur (x3,1) en ~28 im, ease-out ; la musique entre juste après (~2,1 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Point orange en guise de point du i",
+      "name_en": "tittle swap",
+      "t": "0:00.90-0:03.40",
+      "frames": "f54-f205",
+      "fps": 60,
+      "mechanics": "i sans point (ı) ; point orange de Ø 87 px (~8 % de la hauteur) à la place ; ~2 petits sauts d'anticipation (2,5 s et 3,0 s, probable) avant le grand saut.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Whip pan qui suit le saut",
+      "name_en": "whip pan follow",
+      "t": "0:03.30-0:03.80",
+      "frames": "f198-f228",
+      "fps": 60,
+      "mechanics": "Le point quitte le i en arc ; la caméra file à droite en ~10 im avec flou horizontal ; le point retombe sur l'origine du graphe à f228, sur l'attaque audio f229.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe de ressort tracée par le point",
+      "name_en": "spring response plot",
+      "t": "0:03.80-0:04.85",
+      "frames": "f228-f290",
+      "fps": 60,
+      "mechanics": "Montée 0 -> ~122 % de la cible en 18 im (f229-f246, pic sur l'attaque f243), retour ~95 % (f252-f258), stabilisation ; trace en points d'échantillon, cible en pointillés gris, axes fins. Le « +22% » (f250-f264) mesure le vrai dépassement.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La courbe devient un fil, le point devient cercle",
+      "name_en": "graph-to-line morph",
+      "t": "0:05.00-0:05.60",
+      "frames": "f300-f336",
+      "fps": 60,
+      "mechanics": "Flou horizontal (f306) ; la courbe s'aplatit en ligne à perles ; le point grossit de ~5 % à 47 % de la hauteur et glisse de x 85 % au centre en 30 im, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion figure/fond sur le temps",
+      "name_en": "figure-ground swap cut",
+      "t": "0:05.65-0:07.05",
+      "frames": "f339-f423",
+      "fps": 60,
+      "mechanics": "4 coupes espacées de 28 im exactement (1 temps), 2-3 im avant l'attaque : fond blanc cassé -> noir (f339) ; cercle orange sur noir -> cercle noir sur orange (f367) ; -> orange sur blanc cassé (f395) ; -> noir (f423). Forme et position identiques à la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f339.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cercle vers carré arrondi qui tourne",
+      "name_en": "shape morph and rotation",
+      "t": "0:06.15-0:06.30",
+      "frames": "f369-f378",
+      "fps": 60,
+      "mechanics": "Le cercle noir prend des coins (f369) puis tourne jusqu'à 45° en ~9 im ; tient en losange jusqu'à f394.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Losange vers pilule",
+      "name_en": "rotate-and-stretch",
+      "t": "0:06.58-0:06.85",
+      "frames": "f395-f410",
+      "fps": 60,
+      "mechanics": "Rotation 45° -> 0° en 11 im, ease-out (pas de 10°, 7°, 6°, 6°, 5°, 3°, 2°), pas de dépassement visible ; étirement horizontal x1,6 ; pilule finale ~57 % x 17 % du cadre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 395, "to": 410, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contour fantôme",
+      "name_en": "ghost outline",
+      "t": "0:06.70-0:07.45",
+      "frames": "f402-f446",
+      "fps": 60,
+      "mechanics": "Chaque forme laisse son ancien contour en trait orange de 1-2 px qui s'efface en ~25 im ; à la contraction, le contour de la pilule grandit (~x1,3) en s'effaçant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f426.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Contraction pilule vers point",
+      "name_en": "collapse to dot",
+      "t": "0:07.07-0:07.23",
+      "frames": "f424-f434",
+      "fps": 60,
+      "mechanics": "10 im, ease-in-out ; point final ~2 % de la hauteur, au centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f426.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Anneau de texte 3D en orbite",
+      "name_en": "3D text ring orbit",
+      "t": "0:07.60-0:09.40",
+      "frames": "f455-f564",
+      "fps": 60,
+      "mechanics": "Arrive en tournant vite avec flou de rotation, grandit (47 % -> 62 % -> 73 % de la largeur à f465, f472, f520) et ralentit ; avant en capitales blanches ~12 % de la hauteur, arrière gris #50504E en miroir ~8 % ; séparateurs • ; lettres qui se chevauchent sur les côtés.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f565.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Chute du point puis atterrissage vu de dessus",
+      "name_en": "drop to top-down landing",
+      "t": "0:09.17-0:09.75",
+      "frames": "f550-f585",
+      "fps": 60,
+      "mechanics": "Chute hors cadre en 14 im (accélération) ; coupe f565 vers une trame vue de dessus ; le point apparaît à ~15 % de la hauteur et rétrécit à 5 % en 20 im (ease-out), ombre décalée qui naît à f571.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f565.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Trame de points réactive",
+      "name_en": "reactive halftone ripple",
+      "t": "0:09.42-0:10.45",
+      "frames": "f565-f628",
+      "fps": 60,
+      "mechanics": "Grille 36 x 20 points, pas 54 px, Ø 10 px ; anneau de points gonflés (jusqu'à Ø 32 px) qui part du point comme une onde de choc (rayon ~270 px à f600).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La trame gonfle jusqu'au noir",
+      "name_en": "halftone expansion wipe",
+      "t": "0:10.47-0:10.95",
+      "frames": "f628-f656",
+      "fps": 60,
+      "mechanics": "Les points grossissent depuis le centre et fusionnent en disque noir à bord tramé qui dépasse les 4 coins en 28 im (1 temps), en accélérant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f643.jpg",
+      "illus": {"from": 628, "to": 656, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le point devient le point final, avec squash",
+      "name_en": "squash-and-stretch landing",
+      "t": "0:11.35-0:11.85",
+      "frames": "f681-f711",
+      "fps": 60,
+      "mechanics": "Vol en arc du centre vers la fin de « designer » ; étirement dans l'axe de la trajectoire (f701-f705) ; écrasement ~1,6:1 à l'impact (f706-f708) ; rond à f710 ; impact sur l'attaque la plus forte du morceau (f709).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 699, "to": 712, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée à travers un masque",
+      "name_en": "mask slide-up",
+      "t": "0:11.45-0:13.45",
+      "frames": "f687-f811",
+      "fps": 60,
+      "mechanics": "« Motion designer » monte depuis sa ligne de base en ~12 im (f687-f699), ease-out ; « 0 keyframes » monte en 12 im (f741-f753), tient 0,8 s, redescend en ~10 im (f801-f811) ; « Opus 5.5 » en fondu.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carte finale éditoriale à 3 niveaux",
+      "name_en": "editorial end card",
+      "t": "0:11.65-0:13.55",
+      "frames": "f699-f813",
+      "fps": 60,
+      "mechanics": "Alignée à gauche (x 8 %) ; étiquette grise ~5,5 %, titre blanc ~14 %, preuve « 0 keyframes » au même corps ; orange seulement sur le point final et le 0 ; lignes de base à 50 % et 74 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rembobinage accéléré",
+      "name_en": "rewind loop",
+      "t": "0:13.55-0:14.82",
+      "frames": "f813-f889",
+      "fps": 60,
+      "mechanics": "Toutes les scènes à l'envers en ~76 im (2-12 im chacune) avec flou ; fond noir -> blanc cassé -> orange -> noir en ~6 im (f843-f849) ; musique coupée, son de rembobinage.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f830.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite",
+      "name_en": "seamless loop",
+      "t": "0:14.82-0:15.12",
+      "frames": "f889-f904",
+      "fps": 60,
+      "mechanics": "Dernière image identique à la première (écart moyen 1,9/255) ; le curseur ressort en bas à droite, d'où il est venu.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f878.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Système à 3 couleurs et un accent",
+      "name_en": "3-color system",
+      "t": "0:00.00-0:15.12",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Blanc cassé #EFE9E4, quasi-noir #141414, orange #FF4E1D ; l'orange est toujours le point ou une forme qui en sort ; les fonds tournent entre les 3.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel",
+      "name_en": "directional motion blur",
+      "t": "0:00.55-0:11.75",
+      "frames": "f33-f705",
+      "fps": 60,
+      "mechanics": "Flou dans l'axe du mouvement sur les whips (f33-f40, f205-f222, f306), l'arrivée de l'anneau (f455-f480) et le point en vol (f701-f705) ; jamais sur les formes au repos.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f878.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Design sonore narratif",
+      "name_en": "narrative sound design",
+      "t": "0:00.00-0:15.12",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Silence numérique 0-0,5 s, clic synchrone à f30, musique qui entre quand « Motion » est formé (~2,1 s), coupée au départ du rembobinage (13,45 s) ; atterrissages du point sur les attaques f229 et f709 ; coupes de formes 2-3 im avant l'attaque.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un changement d'état par temps",
+      "name_en": "one state change per beat",
+      "t": "0:05.65-0:11.77",
+      "frames": "f339-f706",
+      "fps": 60,
+      "mechanics": "4 coupes de forme espacées d'exactement 28 im (1 temps à 127,7 BPM) : f339, f367, f395, f423, chacune à ±0,5 im d'une barre bleu clair de la grille. Même verrou pour la coupe vers la trame (f565, +0,6 im) et l'impact du point final (f706, +0,6 im). Les attaques audibles suivent ≈ 4-5 im plus tard : l'image anticipe légèrement le son.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f339.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Nommer un objet fil rouge et écrire son parcours d'avance (UI -> point du i -> graphe -> forme -> carte finale) suffit pour que le modèle tienne la continuité sur 6 scènes."},
+    {"kind": "build", "insight": "« Draw the graph from the same spring function that moves the dot » : la courbe et le mouvement concordent ; le +22 % fourni en entrée devient la mesure réelle du dépassement."},
+    {"kind": "structure", "insight": "Deux transitions demandées en continu (le cercle remplit le cadre ; l'anneau s'ouvre en trame) ont été rendues par des coupes. Il faut exiger explicitement « sans coupe » quand on veut un morphing continu."},
+    {"kind": "structure", "insight": "Le bloc Return (trame, graphe, interrupteur) a été étendu à un rembobinage de toutes les scènes en 1,3 s : sans durée par scène imposée, le modèle accélère jusqu'au stroboscope."},
+    {"kind": "banned", "insight": "Interdits respectés (pas de dégradé, de glow, de particules) ; seule entorse mineure, une ombre douce sous le point sur la trame."},
+    {"kind": "qa", "insight": "« Match the final frame to the first » : première et dernière images identiques au pixel près (écart moyen 1,9/255)."},
+    {"kind": "inputs", "insight": "Le prompt réclame 6 entrées courtes (label, mot héros, pourcentage, texte final, accent, musique) : chacune devient un plan, rien n'est laissé au hasard du texte."},
+    {"kind": "other", "insight": "Aucun BPM imposé : le modèle cale les états de formes sur 28 im à 60 fps (1 temps à ~128 BPM) et conçoit un vrai design sonore (silence, clic, entrée de la musique)."}
+  ],
+  "steal": [
+    "Porter tout le film par un seul objet simple (un point) dont chaque scène est une métamorphose, et le garder au centre du cadre.",
+    "Ouvrir sur une UI qu'on désactive pour libérer le mouvement, avec la musique qui démarre au même instant.",
+    "Tracer une courbe avec la fonction qui anime l'objet et afficher sa vraie valeur (+22 % = dépassement réel).",
+    "Atterrissage : étirer dans l'axe de la trajectoire, écraser à ~1,6:1 pendant 3 im au contact, poser sur l'attaque la plus forte.",
+    "Remplir le cadre sans zoom : inverser figure et fond sur le temps, à forme et position identiques."
+  ],
+  "flaws": [
+    "Rembobinage final stroboscopique : 13 coupes en 1,1 s, alternance noir / blanc cassé / orange en ~0,1 s.",
+    "Anneau 3D peu lisible : lettres qui se chevauchent sur les côtés, dos en miroir.",
+    "Deux transitions demandées en continu rendues par des coupes (cercle -> plein cadre, anneau -> trame).",
+    "1,2 s calme (2,2-3,4 s) où seul un petit point bouge.",
+    "Première image avec le « n » coupé par le bord gauche (voulu, résolu en 0,5 s)."
+  ],
+  "family": "formes",
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Noyau verrouillé : les 4 changements de forme (coupes f339, f367, f395, f423, espacées de 28 im = 1 temps), la coupe vers la trame (f565) et l'impact du point final (f706) tombent à ±0,6 im d'une barre bleu clair ; la coupe de boucle f889 à +0,4 im d'une barre bleue ; le point se pose sur le graphe à +1,9 im (f228). Au total 8/17 gestes-clés à ±1 im d'une barre (hasard 21 %, p ≈ 0,02). Hors noyau, la carte finale (vol du point f681, « 0 keyframes » f741) et l'expansion de la trame (f630) tombent à 4–7 im de la grille. Son conçu : silence, clic synchrone à f30, musique qui entre quand « Motion » se pose (≈ 1,8–2,0 s) et qui se coupe au rembobinage (13,45 s). Les attaques audibles arrivent ≈ 4–5 im après les barres (mesuré).",
+    "synced": [
+      "coupes",
+      "couleur",
+      "impacts",
+      "atterrissages"
+    ],
+    "style_match": "Électro minimale à 128 BPM, sèche et percussive : colle aux ressorts courts et aux coupes nettes ; l'entrée puis la coupure de la musique racontent « mouvement autorisé ».",
+    "how_built": "Le prompt nomme les points à caler (« Sync the click, dot landing, graph peak, shape changes and final title to measured beats ») et demande un rendu par temps pour vérifier ; tout est calculé depuis t, donc ces points tombent pile. Ce qui n'était pas listé (montées de texte de la carte finale, expansion de la trame) n'est pas calé."
+  }
+}

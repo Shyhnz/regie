@@ -1,0 +1,464 @@
+{
+  "slug": "fionntobin-97b7af",
+  "title": "Blue editorial motion showreel",
+  "handle": "@fionntobin",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Système éditorial complet : huit disciplines en huit mesures, transitions enchaînées par la forme, bande-son composée sur la même horloge. Seule faiblesse : légendes trop petites et trop brèves pour être lues.",
+  "summary": "Portfolio fictif « Claude — Motion reel 2026 » en huit chapitres d'une mesure (Grid, Type, Data, Figure, Space, Raster, System, Signature), crème et cobalt. Chaque chapitre naît de la forme du précédent : la grille devient fond, la ligne de base devient piste, la trame inonde l'écran, la marque générée devient le point de « Claude. ». Tout est calé sur une horloge à 128 BPM : modèle de synchro calculée.",
+  "prompt_vs_result": [
+    "Le prompt demande 15 s de motion graphics « dynamiques » façon showreel de CV, pour prouver un talent de motion designer, avec « go all out ». Aucun style, aucune musique, aucun format imposés.",
+    "Claude a tout décidé : concept éditorial imprimé, huit disciplines en huit mesures à 128 BPM (15 s = 32 temps), palette crème/cobalt, cinq polices nommées, bande-son probablement synthétisée en code, légendes qui expliquent chaque règle, compteur d'images.",
+    "Prompt d'une ligne, liberté totale : le modèle a inventé une structure musicale et un concept auto-documenté. Pour le reproduire, préciser BPM et mesures par scène, taille minimale des légendes et durée de lecture."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EEEBDF", "role": "fond papier crème ; texte sur cobalt"},
+      {"hex": "#2923C5", "role": "cobalt : accent unique, fond des chapitres 02 et 07, signature"},
+      {"hex": "#0D0B1D", "role": "encre : chiffres, textes, trame noire du chapitre 06"},
+      {"hex": "#090B1D", "role": "bleu nuit du noir qui précède la signature"},
+      {"hex": "#C0B9C3", "role": "lignes de la grille de construction"},
+      {"hex": "#726C72", "role": "légendes mono grises"}
+    ],
+    "type": "Tiempos (serif) pour chiffres, « frame », « Claude » (≈40 % de la hauteur) ; League Gothic capitales ≈69 % ; Archivo Black bas-de-casse ≈28 % ; Söhne pour en-têtes ; JetBrains Mono pour compteurs et légendes (≈1,5 %).",
+    "texture": "Papier crème quasi uni, grain très léger ; aucune ombre portée sauf sous les cubes isométriques (gris doux) ; flou de mouvement directionnel réservé au coureur ; trames de demi-teinte surimprimées et moiré au chapitre 06 ; ni glow ni dégradé.",
+    "style": "Éditorial suisse imprimé piloté au code",
+    "coherence": "Deux couleurs, cinq polices à rôle fixe, marges de 96 px et ligne de base commune (y ≈ 92,5 %), habillage constant (en-tête « Claude — Motion reel 2026 », « 0N / 08 », compteur « NNN / 900 ») et une seule horloge à 128 BPM. Le motif du carré cobalt traverse tout, de la première image au point final de « Claude. ». Seule rupture, voulue : le bleu nuit avant le drop."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM, grosse caisse sur t = 0 + n × 0,469 s (28,125 im par temps à 60 fps) ; la grille automatique du dossier (départ 0,252 s) est décalée d'un demi-temps, calée sur les charlestons. Synchro serrée et structurelle : 8 chapitres = 8 mesures, changements toujours sur le premier temps (f113, f226, f338, f451, f564, f675, f788), sous-événements sur les croches (grille d'ouverture) ou les doubles-croches (vague de cubes, trame, matrice, paliers). 19 coupes, plan médian 0,23 s ; au chapitre 07, une coupe toutes les 7 à 14 im. Un événement toutes les 7 à 28 im : rien ne reste immobile plus d'un temps, sauf deux arrêts voulus sur les silences de la musique (gel 8,92-9,38 s ; noir 12,67-13,12 s, animé par paliers) et la carte finale (1,55 s sur la queue de l'accord). Les « maintiens » détectés à 4,25-5,15 s sont actifs : la tête de lecture avance et une barre s'ajoute à chaque temps.",
+    "timeline": [
+      {"t": "0:00.00-0:01.87", "what": "01 Grid : un carré cobalt en haut à gauche ; la grille double à chaque demi-temps (1, 2, 4, 8, 16, 32, 64, 96) avec un compteur serif en bas à droite ; lignes de construction lilas", "technique": "grille qui double sur les croches"},
+      {"t": "0:01.88-0:01.98", "what": "Les carrés saturent le cadre : fond cobalt en 2 images (f113-f114), sur le temps 4, quand la batterie complète entre", "technique": "saturation de la grille en fond"},
+      {"t": "0:02.00-0:02.35", "what": "02 Type : « EVERY » (League Gothic, 69 % de la hauteur, 90 % de la largeur) monte lettre à lettre depuis le bas (f120-f127), tenu 12 images", "technique": "montée lettre à lettre sous masque"},
+      {"t": "0:02.35-0:03.60", "what": "EVERY se range en sur-titre (temps 5) ; « frame » en Tiempos italique ; « filmed » tapé puis barré au temps 7 ; « written. » (Archivo Black) monte lettre à lettre dans le désordre", "technique": "correction éditoriale barrée"},
+      {"t": "0:03.60-0:03.75", "what": "Sorties : « written. » tombe, « frame » s'écrase verticalement ; 4 images de cobalt vide", "technique": "respiration avant la coupe"},
+      {"t": "0:03.77-0:05.52", "what": "03 Data : coupe sur le temps 8 ; le bloc cobalt s'écrase en ligne de base (3 im) ; compteur 0 → 128 ; séquenceur : une barre de grosse caisse par temps, tête de lecture horodatée, ligne de basse G1-E2", "technique": "le graphique est la musique"},
+      {"t": "0:05.52-0:05.62", "what": "Le graphique se replie sur sa ligne de base, qui reste seule à l'écran et devient la piste", "technique": "ligne relais"},
+      {"t": "0:05.63-0:07.35", "what": "04 Figure : coureur pictogramme et deux haies ; poses clés à 45°/90° avec repères en X sur les temps 13, 14 et 15 ; sommets des sauts sur les temps 13 et 15 ; flou de mouvement", "technique": "pose à pose sur le temps"},
+      {"t": "0:07.37-0:07.50", "what": "La piste se casse en 12 tirets ; gel de 9 images avant le temps 16", "technique": "ligne en pointillés relais"},
+      {"t": "0:07.52-0:08.90", "what": "05 Space : les tirets se déplient en grille isométrique vraie 12×8 ; cubes extrudés en vague diagonale, un palier par double-croche ; aplatissement puis rotation vers la vue de face qui claque sur le temps 19", "technique": "isométrie vraie et vague en staccato"},
+      {"t": "0:08.90-0:09.38", "what": "Grille de face figée pendant la coupure musicale (un temps de silence)", "technique": "silence = gel"},
+      {"t": "0:09.40-0:11.25", "what": "06 Raster : carrés → pastilles → points qui se subdivisent à chaque double-croche → trame fine ; deux sources d'ondes en demi-teinte (cobalt 15°, encre 45°) ; le disque cobalt grossit et inonde l'écran 1 image avant le temps 24", "technique": "subdivision de trame et iris en demi-teinte"},
+      {"t": "0:11.25-0:12.65", "what": "07 System : matrice 8 paramètres × 6 valeurs tracée en 5 images ; le chemin de sélection se rebat à chaque double-croche et la grande marque change ; « This one. » au demi-temps 26,5", "technique": "générateur de marque paramétrique"},
+      {"t": "0:12.67-0:13.12", "what": "La musique se coupe : fond bleu nuit, la marque seule rétrécit en 3 paliers sur des tics de doubles-croches", "technique": "noir et paliers sur les tics"},
+      {"t": "0:13.13-0:13.40", "what": "08 Signature : coupe sur le premier temps de la mesure 8 (retour de la musique) ; « Claude » se réassemble par tranches, la marque descend devenir le point final", "technique": "la marque devient le point"},
+      {"t": "0:13.40-0:15.00", "what": "La grille de fond s'efface ; « Motion designer / 900 frames. Every one written in code. » et colophon mono ; tenue 1,55 s pendant la queue de l'accord", "technique": "carte colophon"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle mesurée sur la piste : grosse caisse à t = 0 + n × 0,469 s (phase des basses à 5 ms), charlestons en contretemps (phase +244 ms). La grille automatique du dossier (départ 0,252 s) s'est calée sur ces contretemps : sur les planches, la barre bleu clair marque la grosse caisse et la barre bleue le contretemps. Sur la vraie grille, 46 départs de geste (un par geste) mesurés au différentiel image par image : 46/46 tombent entre +0,4 et +1,0 image après une double-croche (la première image qui suit l'instant musical) ; 30/46 à ±2 im d'un temps ou demi-temps (hasard ≈ 36 % à 128 BPM et 60 fps). Les 7 changements de chapitre tombent sur les temps 4, 8, 12, 16, 20, 24, 28. Les coupes f226, f534 et f788 sont sur une barre bleu clair avec point vert (microM-002, 003, 006). Au chapitre 07, les coupes f697, f711, f725, f739 coïncident à 1 im près avec les attaques 11,622 / 11,854 / 12,086 / 12,318 s. Les deux silences de la piste (8,9-9,375 s et 12,67-13,12 s) correspondent exactement au gel de la grille et au noir bleu nuit ; le retour du son (13,125 s, attaque la plus forte) tombe sur la coupe vers « Claude ». L'indice automatique « aucune synchro » est un faux négatif : il teste temps et demi-temps sur une grille décalée d'un demi-temps, alors que la vidéo vit sur les doubles-croches (14/19 coupes à 50 ms d'une attaque le laissaient deviner).",
+    "synced": ["coupes", "departs", "impacts", "atterrissages", "apparitions", "pulsations", "texte", "camera", "couleur", "drop"],
+    "style_match": "Électro 128 BPM sèche (grosse caisse, clap, basse en notes) et animation quantifiée : paliers sans interpolation, arrêts nets, gels sur les silences. Même caractère mécanique, précis, graphique.",
+    "how_built": "Rien sur la musique dans le prompt. Claude a fixé 128 BPM pour que 15 s = 32 temps, a très probablement synthétisé la piste en code (grosse caisse, clap sur 2 et 4, charlestons, basse G1-E2 affichée dans le graphique ; colophon « 128 BPM · no camera, no footage ») et a dérivé chaque événement de la même horloge (28,125 im par temps à 60 fps, arrondi à l'image suivante). La synchro est structurelle, pas ajustée à l'oreille."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Horloge musicale commune à l'image et au son",
+      "name_en": "shared beat clock",
+      "t": "0:00.00-0:13.13",
+      "frames": "f0-f788",
+      "fps": 60,
+      "mechanics": "Grosse caisse à t = 0 + n × 0,469 s (128 BPM, 28,125 im par temps, 7,03 im par double-croche). Chaque départ de mouvement mesuré tombe 0,4 à 1,0 image après une position de double-croche : l'image d'événement est la première qui suit l'instant musical (arrondi supérieur de temps × fps). 46 départs sur 46 vérifiés au différentiel image par image, dont 30 sur des temps ou demi-temps. Les coupes du chapitre 07 (f697, f711, f725, f739) coïncident à 1 im près avec les attaques audio.",
+      "verdict": "reprendre",
+      "evidence": "microM-001 à microM-006 (barres bleu clair = grosse caisse), extra-01/02/03.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un chapitre par mesure",
+      "name_en": "one bar per chapter",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "8 chapitres de 4 temps (112,5 im = 1,875 s) : Grid, Type, Data, Figure, Space, Raster, System, Signature ; 15 s = 32 temps exactement. Changements sur les temps 4, 8, 12, 16, 20, 24, 28 (f113, f226, f338, f451, f564, f675, f788), toujours le premier temps d'une mesure. Le compteur « 0N / 08 » en haut à droite et le nom du chapitre en bas à gauche rendent la structure lisible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01/02/03.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Grille qui double sur chaque croche",
+      "name_en": "doubling grid on eighth notes",
+      "t": "0:00.00-0:01.87",
+      "frames": "f0-f112",
+      "fps": 60,
+      "mechanics": "Carrés cobalt ≈ 5 % de la largeur, ancrés en haut à gauche. Le nombre double à chaque demi-temps : 1 (f0), 2 (f15), 4 (f29), 8 (f43), 16 (f57), 32 (f71), 64 (f85), 96 (f99). Remplissage par lignes (2×1, 2×2, 4×2, 4×4, 8×4, 8×8, 12×8) en coupe sèche, sans interpolation. Compteur Tiempos ≈ 18 % de la hauteur, calé sur la marge droite et la ligne de base commune, qui change sur la même image ; petite étiquette mono « 4×4 » accrochée au coin du bloc. L'intro musicale reste clairsemée (≈ −20 dB) pendant toute la construction.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 0, "to": 113, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Saturation de la grille en fond",
+      "name_en": "grid-to-background flood",
+      "t": "0:01.88-0:01.92",
+      "frames": "f113-f115",
+      "fps": 60,
+      "mechanics": "Sur le temps 4 (f112,5), quand la batterie complète entre (+13 dB), la grille 12×8 se remplit et tout le cadre passe au cobalt #2923C5 en 2 images (f113-f114), sans fondu. Le bleu devient le fond du chapitre 02 ; suivent 5 images de bleu pur (f115-f119) avant le premier mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f110 → f115), rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée lettre à lettre depuis le bas du cadre",
+      "name_en": "staggered letter rise from a bottom mask",
+      "t": "0:02.00-0:02.13",
+      "frames": "f120-f127",
+      "fps": 60,
+      "mechanics": "« EVERY » en League Gothic, 69 % de la hauteur, justifié de la marge gauche à la marge droite (90 % de la largeur). Chaque lettre monte de sous le bord bas, masquée, avec 1 image de décalage gauche → droite (E f120, V f121, E f122, R f123, Y f124) ; chaque montée dure ≈ 4 im en ease-out. Départ sur la double-croche 4,25. Mot complet en 8 im (0,13 s), puis tenu 12 im (0,2 s) avant le temps 5.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f120-f125), images f119-f127 vérifiées une à une"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot plein cadre qui se range en sur-titre",
+      "name_en": "full-frame word shrinking into a kicker",
+      "t": "0:02.35-0:02.60",
+      "frames": "f141-f156",
+      "fps": 60,
+      "mechanics": "Sur le temps 5 (f141, coupe détectée), EVERY passe de 69 % à ≈ 8 % de la hauteur et migre en haut à gauche, sous l'en-tête. Ease-out expo : différentiel image à image 0,25, puis 0,14, 0,08, 0,03 (≈ 50 % du trajet dans la première image) ; second palier sur la double-croche suivante (f148). Le mot reste ensuite comme sur-titre de la phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f141.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Correction éditoriale : « filmed » barré",
+      "name_en": "editorial strike-through rewrite",
+      "t": "0:02.75-0:03.33",
+      "frames": "f165-f200",
+      "fps": 60,
+      "mechanics": "« frame » (Tiempos italique, ≈ 9 % de la hauteur, centré-gauche) apparaît à la double-croche 5,75 (f163). Dessous, « film » puis « filmed » se tape en Söhne léger ≈ 3 % (≈ 1 lettre toutes les 3 im, f170-f190). Au temps 7 (f197), un trait barre le mot de gauche à droite en ≈ 4 im et le mot passe à ≈ 50 % d'opacité. La phrase se lit « EVERY frame [filmed] written. » : la typo porte le propos (rien n'est filmé, tout est écrit).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f165-f205), overview-01.jpg (0:03.50)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée des lettres dans le désordre",
+      "name_en": "random-order letter rise",
+      "t": "0:02.93-0:03.17",
+      "frames": "f176-f190",
+      "fps": 60,
+      "mechanics": "« written. » en Archivo Black bas-de-casse, ≈ 28 % de la hauteur, justifié sur 90 % de la largeur, posé sur la ligne de base commune (y ≈ 92,5 %). Les lettres montent d'un masque au bas du cadre dans un ordre non linéaire (w, r, i, n d'abord ; t, t, e et le point ensuite), départ à la double-croche 6,25, mot complet en ≈ 14 im (0,23 s), ease-out.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (0:03.00), extra-01.jpg (f180-f190)"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Phrase à quatre voix typographiques",
+      "name_en": "four-typeface sentence",
+      "t": "0:02.35-0:03.60",
+      "frames": "f141-f215",
+      "fps": 60,
+      "mechanics": "Chaque mot a sa famille et son rôle : capitales condensées (League Gothic) pour le sur-titre, serif italique (Tiempos) pour le mot pivot, grotesque léger (Söhne) pour le mot barré, grotesque noir bas-de-casse (Archivo Black) pour la chute. Crème #EEEBDF sur cobalt #2923C5. Échelle de 3 % à 28 % de la hauteur ; les mots longs sont justifiés de x = 96 à x = 1823.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (0:03.50), extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie en trois gestes et respiration de 4 images",
+      "name_en": "multi-directional exit with breath frames",
+      "t": "0:03.60-0:03.75",
+      "frames": "f216-f225",
+      "fps": 60,
+      "mechanics": "À la double-croche 7,75 (f218) : « written. » tombe hors cadre en ≈ 3 im, « frame » s'écrase verticalement (échelle Y → 0) en 2 à 3 im, le mot barré s'efface. Restent 4 images de cobalt vide (f222-f225, 0,07 s) avant la coupe franche du temps 8 : une inspiration avant l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f226.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le fond s'écrase en ligne de base",
+      "name_en": "background collapses into the chart baseline",
+      "t": "0:03.77-0:03.80",
+      "frames": "f226-f228",
+      "fps": 60,
+      "mechanics": "Coupe sur le temps 8 (f226, barre bleu clair et point vert) vers le fond crème. Un bloc cobalt de ≈ 30 % de la hauteur, reste du chapitre précédent, s'écrase sur l'axe des abscisses en 3 images (bloc, ≈ 8 %, trait de 2 px), ease-out expo. Le bleu ne disparaît pas : il devient l'axe du graphique.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f226.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule en ease-out",
+      "name_en": "ease-out rolling counter",
+      "t": "0:03.77-0:04.22",
+      "frames": "f226-f253",
+      "fps": 60,
+      "mechanics": "« 0 » → « 128 » en Tiempos ≈ 16 % de la hauteur, en haut à gauche. Incréments par image 9, 9, 8, 8, 8, 7, 7, 7, 6, 6, 6, 5, 5, 5, 4, 4, 4, 4, 3, 3… : ease-out quadratique, arrivée sur 128 vers le temps 9 (f253, probable). La phrase « beats per minute. The chart is the music you are hearing. » se tape dessous à ≈ 4 caractères par image.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f226.jpg (f226-f246)"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Le graphique est la musique",
+      "name_en": "soundtrack sequencer chart",
+      "t": "0:03.77-0:05.52",
+      "frames": "f226-f330",
+      "fps": 60,
+      "mechanics": "Séquenceur stylisé : une barre cobalt épaisse (≈ 1 % de la largeur) s'ajoute à chaque temps (f226, f254, f282, f310 : temps 8 à 11, +1 im), cerclée et annotée « kick, every 0.469 s » et « clap on 2 and 4 » ; tête de lecture fine horodatée (« 4.000 s », « 4.500 s ») qui avance linéairement ; ligne de basse en escalier sur les notes G1, A1, C2, D2, E2. Les « maintiens » détectés (4,25-5,15 s) restent vivants : la tête avance et une barre tombe sur chaque grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (0:04.00-0:05.50), image f330 en pleine résolution"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ligne relais entre trois chapitres",
+      "name_en": "line match-cut chain",
+      "t": "0:05.52-0:07.62",
+      "frames": "f331-f457",
+      "fps": 60,
+      "mechanics": "Le graphique se replie sur sa ligne de base en 5 im (f331-f335, double-croche 11,75), 2 im vides, puis la ligne sert de piste au coureur (f338, temps 12). En fin de chapitre, la piste se casse en 12 tirets (f442-f448) ; sur le temps 16 (f451), les tirets deviennent une rangée de dalles isométriques qui se déplie en grille 12×8 (ease-out sur ≈ 27 im). Trois chapitres reliés par un seul trait.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f331-f472)"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Pose à pose sur le temps",
+      "name_en": "key poses on the beat",
+      "t": "0:05.63-0:07.37",
+      "frames": "f338-f441",
+      "fps": 60,
+      "mechanics": "Coureur pictogramme cobalt (tête ronde, membres de ≈ 2,6 % de la hauteur à bouts ronds, figure ≈ 30 % de la hauteur). Sur les temps 13, 14 et 15 (f366, f394, f422-f424), une pose clé aux angles de 45° ou 90° s'affiche avec des repères en X gris pendant 4 à 6 im (légende « on every beat, every limb at 45° or 90° »). Les sommets des deux sauts de haie tombent sur les temps 13 et 15, la foulée médiane sur le temps 14. Traversée linéaire ≈ 1 % de la largeur par image (3 temps pour l'écran), entrée et sortie par les bords.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f364-f424), overview-02.jpg",
+      "illus": {"from": 355, "to": 425, "n": 8}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel sur le personnage",
+      "name_en": "directional motion blur",
+      "t": "0:05.63-0:07.35",
+      "frames": "f338-f441",
+      "fps": 60,
+      "mechanics": "Les membres rapides laissent une traînée floue de 40 à 60 px dans le sens opposé au mouvement (visible f360, f401), la tête aussi ; les poses clés restent nettes. Rendu probable par sur-échantillonnage temporel. C'est le seul flou de la vidéo, réservé au personnage pour lui donner de la vitesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (0:06.00), image f400 en pleine résolution"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Isométrie vraie et vague en staccato",
+      "name_en": "true isometric stepped wave",
+      "t": "0:07.52-0:08.57",
+      "frames": "f451-f514",
+      "fps": 60,
+      "mechanics": "Grille 12×8 de dalles cobalt en isométrie vraie (légende « 35.264° elevation · 45° azimuth · true iso »). Les cubes s'extrudent en vague diagonale avec ombres grises douces. À partir du temps 17 (f479), la vague avance par paliers : à chaque double-croche (f479, f486, f493, f500, f507), saut vers les nouvelles hauteurs en 2 à 3 im (ease-out), puis tenue de 4 im. Effet séquenceur, comme un égaliseur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f451-f472), overview-02.jpg (0:08.00-0:08.50)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Rotation iso → face qui claque sur le temps",
+      "name_en": "ease-in camera rotation slamming on the beat",
+      "t": "0:08.60-0:08.90",
+      "frames": "f516-f534",
+      "fps": 60,
+      "mechanics": "L'extrusion retombe (f516-f522), puis la grille pivote de l'isométrie à la vue de face orthographique en 12 im. Le différentiel image à image croît sans cesse (0,03 → 0,25 : ease-in marqué) et s'arrête net à f534, temps 19 (barre bleu clair f535), sans dépassement. La musique se coupe sur cette image : l'atterrissage fait office de « stop ». La grille de face rappelle celle du chapitre 01.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f531.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence musical = image figée",
+      "name_en": "music stop as freeze frame",
+      "t": "0:08.90-0:09.38",
+      "frames": "f534-f563",
+      "fps": 60,
+      "mechanics": "La piste tombe de −14 à −42 dB entre 8,9 et 9,35 s (un temps de silence). L'image reste figée sur la grille de face pendant 29 im (0,48 s). La musique reprend sur le temps 20 (9,375 s) et le premier geste du chapitre 06 part sur la même image (f564).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg (maintien gris 8,92-9,38 s), microM-003-move-f531.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Subdivision de trame sur les doubles-croches",
+      "name_en": "halftone subdivision on sixteenth notes",
+      "t": "0:09.40-0:09.85",
+      "frames": "f564-f590",
+      "fps": 60,
+      "mechanics": "Les 96 carrés s'arrondissent en pastilles (f564, temps 20), se divisent en 2×2 points (f570), se redoublent (f572-f577), passent en trame de petits carrés (f578, demi-temps 20,5, point vert), puis en trame de plus en plus fine (f584) jusqu'à une teinte lilas presque unie. Chaque palier tombe sur une double-croche : la résolution double, en écho à la grille d'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f586.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Deux trames surimprimées en ondes",
+      "name_en": "overprinted halftone ripples (moiré)",
+      "t": "0:09.85-0:11.02",
+      "frames": "f591-f661",
+      "fps": 60,
+      "mechanics": "Sur le temps 21 (f591), deux sources d'ondes concentriques modulent la taille des points : cobalt en haut à gauche, encre noire en bas à droite. Légende « 16 px screen. Cobalt 15°, ink 45°, overprinted. » : deux trames d'angles différents se superposent et créent un moiré d'imprimerie. Les anneaux s'étendent en continu pendant ≈ 70 im.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (0:10.00-0:11.00), microM-004, microM-005"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris en demi-teinte",
+      "name_en": "halftone iris wipe",
+      "t": "0:11.02-0:11.23",
+      "frames": "f662-f674",
+      "fps": 60,
+      "mechanics": "Le centre de l'onde cobalt se remplit, puis le disque grossit de ≈ 15 % à 100 % de l'écran en ≈ 12 im en accélérant (ease-in), bord tramé en points. Couverture totale à f673-f674, 1 im avant le temps 24 (barre bleu clair f676). Le cobalt devient le fond du chapitre 07.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f668.jpg",
+      "illus": {"from": 660, "to": 676, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Générateur de marque paramétrique",
+      "name_en": "parametric logo generator",
+      "t": "0:11.27-0:12.65",
+      "frames": "f677-f759",
+      "fps": 60,
+      "mechanics": "Matrice de 8 lignes (Body, Slot, Depth, Width, Corner, Turn, Fill, Offset) × 6 variantes en pictos au trait, tracée en 5 im (f677-f681). Les cases choisies surgissent en 1 à 2 im à la double-croche 24,25 (f683), reliées par un fil fin. Le chemin se rebat en coupe sèche aux doubles-croches f697, f711, f725, f732, f739, f742, f746, et la grande marque crème (27 % × 41 % du cadre, en haut à droite) change à chaque fois. À f746 (demi-temps 26,5), les choix s'alignent en colonne : « This one. ». Texte « 8 parameters, 6 values: 1,679,616 possible marks. » (6^8, exact).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg (0:11.50), overview-03.jpg (0:12.00-0:12.50)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Noir bleu nuit avant la signature",
+      "name_en": "blackout before the reveal",
+      "t": "0:12.67-0:13.12",
+      "frames": "f760-f787",
+      "fps": 60,
+      "mechanics": "Sur le temps 27 (f760), la musique se coupe (−86 dB à 12,7 s) et le fond passe au bleu nuit #090B1D en 1 image ; matrice et textes disparaissent, seule reste la marque crème. Unique troisième couleur de fond de la vidéo : 28 im de tension avant le drop.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f758-f786), microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rétrécissement par paliers sur des tics",
+      "name_en": "stepped scale on sixteenth-note ticks",
+      "t": "0:12.78-0:13.12",
+      "frames": "f767-f787",
+      "fps": 60,
+      "mechanics": "Dans le silence, la marque rétrécit en 3 paliers sans interpolation (≈ −25 % à chaque fois) aux doubles-croches 27,25, 27,5 et 27,75 (f767, f774, f781), chacun sur un petit tic audio (attaques 12,783, 12,899 et 13,015 s ; points verts f774 et f781). Animation pas à pas, comme une trotteuse : le compte à rebours du drop.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop sur la coupe signature",
+      "name_en": "drop on the reveal cut",
+      "t": "0:13.13",
+      "frames": "f788",
+      "fps": 60,
+      "mechanics": "Retour de la musique (−47 → −12 dB) sur le premier temps de la mesure 8 (13,125 s), attaque la plus forte de la piste. La coupe franche vers la signature tombe sur f788 (point vert, barre bleu clair f790). Après 0,45 s de silence, l'impact visuel et sonore est maximal.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La marque devient le point final",
+      "name_en": "logo mark becomes the full stop",
+      "t": "0:13.13-0:13.38",
+      "frames": "f788-f803",
+      "fps": 60,
+      "mechanics": "La marque générée au chapitre 07, réduite à ≈ 3 % de la largeur, passe au cobalt sur fond crème et descend du coin haut droit jusqu'à la ligne de base après le « e » en ≈ 15 im (accélère puis se pose). Elle devient le point de « Claude. ». Boucle avec le carré cobalt de la toute première image.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg",
+      "illus": {"from": 774, "to": 803, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Réassemblage par tranches",
+      "name_en": "sliced word reassembly",
+      "t": "0:13.13-0:13.37",
+      "frames": "f788-f802",
+      "fps": 60,
+      "mechanics": "« Claude » en Tiempos cobalt, 40 % de la hauteur, justifié sur 90 % de la largeur. Chaque lettre est coupée en tranches horizontales décalées verticalement ; elles se réalignent de gauche à droite (≈ 2 im d'écart par lettre) : C, l, a alignés vers f794-f797, d et e vers f800-f802, 14 im au total, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Habillage éditorial constant",
+      "name_en": "persistent editorial chrome",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Sur toutes les images : en-tête « Claude — Motion reel 2026 » (Söhne ≈ 1,7 % de la hauteur) en haut à gauche, « 0N / 08 » en mono en haut à droite, nom du chapitre (« 04 Figure ») en bas à gauche, compteur d'images « NNN / 900 » en bas à droite, exact et à jour. Marges de 96 px (5 % de la largeur) ; les grands mots (EVERY, written., Claude) vont de x = 96 à x = 1823 et partagent la ligne de base y ≈ 999 (92,5 % de la hauteur), comme les compteurs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01/02/03.jpg (coins), images f330, f400, f899 en pleine résolution"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille de construction visible",
+      "name_en": "visible construction grid",
+      "t": "0:00.08-0:00.17 et 0:13.13-0:14.00",
+      "frames": "f5-f10, f788-f840",
+      "fps": 60,
+      "mechanics": "Lignes lilas #C0B9C3 très fines sur le papier crème #EEEBDF, tracées en ≈ 5 im au début du chapitre 01, puis de retour sous « Claude » avant de s'effacer en ≈ 50 im. Elles montrent la mise en page comme sur une planche de maquette et encadrent la vidéo (ouverture et fermeture).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f5-f10), overview-03.jpg (0:13.50-0:14.00)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bichromie crème/cobalt à fonds alternés",
+      "name_en": "two-colour system with background swaps",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Crème #EEEBDF et cobalt #2923C5 échangent leur rôle selon le chapitre (cobalt en fond aux chapitres 02 et 07, en encre ailleurs) ; l'encre #0D0B1D sert aux chiffres et à la trame noire. Chaque passage au cobalt est amené par une forme (grille saturée, iris tramé), jamais par un fondu.",
+      "verdict": "reprendre",
+      "evidence": "overview-01/02/03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Légendes qui documentent la règle",
+      "name_en": "self-documenting captions",
+      "t": "0:03.77-0:12.65",
+      "frames": "f226-f759",
+      "fps": 60,
+      "mechanics": "Chaque chapitre affiche sa règle de fabrication : « The chart is the music you are hearing. », « on every beat, every limb at 45° or 90° », « 35.264° elevation · 45° azimuth · true iso », « 16 px screen. Cobalt 15°, ink 45°, overprinted. », « 8 parameters, 6 values: 1,679,616 possible marks. ». Tous les chiffres sont justes. Mais la taille (≈ 1,5 à 2 % de la hauteur) et la durée (moins de 2 s) les rendent illisibles en lecture normale.",
+      "verdict": "adapter",
+      "evidence": "images f330, f400, f480, f630, f750 en pleine résolution"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin colophon",
+      "name_en": "colophon end card",
+      "t": "0:13.40-0:15.00",
+      "frames": "f804-f899",
+      "fps": 60,
+      "mechanics": "« Motion designer » (Söhne ≈ 4 %) et « 900 frames. Every one written in code. » (Tiempos ≈ 2,5 %) en haut à gauche ; en mono gris, à droite : « Set in Tiempos, Söhne, League Gothic, Archivo Black, JetBrains Mono. 1920 × 1080 · 60 fps · 128 BPM · no camera, no footage. ». La grille de fond s'efface. Tenue de 1,55 s pendant que l'accord final décroît de −12 à −60 dB.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, image f899 en pleine résolution"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son arrangée sur la structure",
+      "name_en": "score arranged to the edit",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Intro clairsemée (≈ −20 dB, basse sur les croches) pendant la construction de la grille ; batterie complète au temps 4 (inondation cobalt) ; coupure d'un temps au temps 19 (gel) ; coupure avec tics au temps 27 (noir) ; retour au temps 28 (signature) ; queue de 1,8 s sur la carte de fin. Grosse caisse sur les temps, clap sur 2 et 4, charlestons en contretemps : chaque section musicale correspond à une section visuelle.",
+      "verdict": "reprendre",
+      "evidence": "enveloppe audio mesurée par fenêtres de 0,1 s, rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "« 15-second » a été traduit en 32 temps à 128 BPM (15 × 128 / 60 = 32) : le tempo est choisi pour que la durée tombe en 8 mesures entières, une par chapitre. Recette : BPM = 60 × nombre de temps voulu / durée."},
+    {"kind": "direction", "insight": "« shows what an incredible motion designer you are » et « résumé » ont produit un portfolio par disciplines (Grid, Type, Data, Figure, Space, Raster, System, Signature), chaque chapitre étiqueté comme une planche de book."},
+    {"kind": "inputs", "insight": "Sans marque ni assets, le modèle se prend pour client (« Claude — Motion reel 2026 ») et revendique le tout-code (« no camera, no footage ») : la vidéo devient la preuve de sa propre fabrication (compteur d'images réel, colophon)."},
+    {"kind": "build", "insight": "Le prompt ne mentionne pas la musique (tag « Music » sur la page) : la piste est très probablement synthétisée en code avec le même tempo, d'où une synchro exacte à l'image (départs +0,4 à +1 im après les doubles-croches, 28,125 im par temps arrondis à l'image suivante)."},
+    {"kind": "other", "insight": "« go all out » a poussé à la densité : 8 idées en 15 s, aucun temps mort, mais légendes et matrice illisibles. Exiger une durée de lecture minimale aurait rééquilibré."},
+    {"kind": "qa", "insight": "Les légendes chiffrées (0,469 s, 35,264°, 6^8 = 1 679 616) sont toutes justes et l'animation les respecte. Demander que chaque scène affiche sa règle pousse le modèle à des contraintes précises qu'il tient ensuite."}
+  ],
+  "steal": [
+    "Choisis le BPM pour que la durée tombe en mesures entières (15 s à 128 BPM = 8 mesures) et donne une mesure à chaque scène.",
+    "Calcule chaque départ comme image = arrondi supérieur (temps musical × fps) ; change de scène sur le premier temps, détaille sur les doubles-croches.",
+    "Relie les scènes par la forme : la grille devient fond, le fond s'écrase en ligne de base, la ligne devient piste, puis grille isométrique.",
+    "Cale les silences de la musique sur un gel ou un noir, et la reprise sur la coupe la plus forte de la vidéo.",
+    "Fais revenir le motif d'ouverture en signature : le carré cobalt de la première image devient le point final de « Claude. »."
+  ],
+  "flaws": [
+    "Légendes mono à 1,5-2 % de la hauteur, affichées moins de 2 s : décoratives, impossibles à lire au premier visionnage.",
+    "Chapitres de 1,9 s trop chargés (séquenceur, matrice 8 × 6) : on perçoit le système sans pouvoir le comprendre.",
+    "Coureur pictogramme générique, le chapitre le moins personnel malgré la bonne règle des poses sur le temps.",
+    "Carte finale figée 1,55 s, sans micro-mouvement : l'image s'arrête avant la fin de la queue de l'accord."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Cas d'école de synchro calculée : chaque départ à moins d'une image d'une double-croche, une mesure par chapitre, transitions enchaînées par la forme. À étudier image par image à 60 fps pour copier la recette."
+  }
+}

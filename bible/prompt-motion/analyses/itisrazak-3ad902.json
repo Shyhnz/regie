@@ -1,0 +1,648 @@
+{
+  "slug": "itisrazak-3ad902",
+  "title": "Distilbook motion showreel",
+  "handle": "@itisRazak",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Montage écrit en mesures (24 × 144 BPM, coupes au temps près) et transitions qui racontent la distillation ; mais rendu 480p, partie explicative lente (28 % de maintiens) et HUD gadget.",
+  "summary": "Promo de 40 s pour DistilBook, qui change un document en vidéo dessinée. Macro sur un livre, mots surlignés sur le temps, pages qui défilent ; le dos du livre devient le logo. Le paragraphe se transforme en dessin du cycle de l'eau, puis lecteur sous-titré, 19 langues en tambour, carrousel de styles, 9:16, compteur et particules qui forment le logo. Montage écrit en mesures de 144 BPM ; image 480p.",
+  "prompt_vs_result": [
+    "Même gabarit d'une ligne que d'autres vidéos du corpus : rechercher Distilbook, vidéo motion « dynamique » de 40 s, « comme ton showreel », « go all out ». Ni structure, ni musique, ni style, ni résolution imposés.",
+    "Claude a inventé la métaphore de la distillation (surlignage → dessin), la structure en 24 mesures à 144 BPM affichée dans un HUD « MOTION REEL », le livre 3D, le raccord dos de livre → logo, le tambour des langues et la finale en particules.",
+    "« Research » a fourni les vraies fonctions et visuels (styles, 19 langues, 9:16, chiffres d'usage) ; « showreel » a donné la variété et le HUD. Il fallait préciser la résolution (sortie 848×480), un rythme minimal dans la partie explicative et la place de la voix."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#EAEDF3",
+        "role": "fond gris bleuté clair (scène du livre, lecteur)"
+      },
+      {
+        "hex": "#FAFAF8",
+        "role": "papier, fond blanc (paragraphe, dessin, carton final)"
+      },
+      {
+        "hex": "#121624",
+        "role": "texte quasi noir"
+      },
+      {
+        "hex": "#111629",
+        "role": "fond navy (logo, langues, carrousel, particules)"
+      },
+      {
+        "hex": "#6375E0",
+        "role": "bleu indigo : « and pages. », mot actif des sous-titres, bouton"
+      },
+      {
+        "hex": "#69EF90",
+        "role": "vert néon du logo, « by 1,500+ creators »"
+      },
+      {
+        "hex": "#7299EF",
+        "role": "bleu du logo"
+      },
+      {
+        "hex": "#E265AF",
+        "role": "rose du logo, compteur de langues, « + » du compteur"
+      },
+      {
+        "hex": "#93EEAF",
+        "role": "surligneur vert"
+      },
+      {
+        "hex": "#8FAEE8",
+        "role": "aquarelle de l'océan"
+      },
+      {
+        "hex": "#F1E64F",
+        "role": "soleil dessiné"
+      },
+      {
+        "hex": "#515463",
+        "role": "voile sombre de la démo 9:16"
+      }
+    ],
+    "type": "Grotesque géométrique grasse (type Plus Jakarta Sans ou Inter, probable) pour titres, compteurs et logotype ; serif de livre pour les pages ; manuscrite (type Patrick Hand) dans les dessins ; étiquettes en capitales espacées +25 % ; mono pour le HUD.",
+    "texture": "Faible profondeur de champ sur la macro du livre ; flou de zoom (recul) et flou de mouvement directionnel presque partout (pages, whip, carrousel, crans du tambour de langues, sauts du cadre 9:16 en écho) ; lumière douce et vignette radiale ; aquarelle et hachures de crayon dans le dessin ; halo néon autour des barres du logo ; poussière de particules ; lamelles irisées façon verre cannelé dans une transition. Aucun grain.",
+    "style": "Showreel produit éditorial : papier, néon, particules",
+    "coherence": "Le fil conducteur est la distillation : du livre (pages, surlignage) au dessin, puis aux variantes (langues, styles, formats) et à la communauté (points, particules). Les trois couleurs du logo (vert, bleu, rose) reviennent dans les surligneurs, les barres, les compteurs et les particules ; le même exemple (cycle de l'eau, « The sky only takes the pure water ») traverse quatre scènes. Le HUD (« BAR xx/24 · 144 BPM », timecode, équerres) unifie le tout comme une bande démo. Ce qui casse : l'alternance clair/navy parfois brusque, la galerie d'illustrations IA hétérogènes et la définition 480p qui ramollit les petits textes."
+  },
+  "rhythm": {
+    "bpm": 144,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "144 BPM (netteté 5,61) : un temps = 25 im à 60 fps, une mesure = 100 im = 1,667 s, et la vidéo fait exactement 24 mesures (compteur « BAR xx/24 · 144 BPM » à l'écran). Les scènes commencent sur des débuts de mesure : f200 (« Pages. »), f400 (logo), f500 (page), f600 (texte → dessin), f800 (lecteur), f1300 (langues), f1600 (carrousel), f1700 (styles), f1800 (9:16), f1900 (grille), f2000 (points), f2100 (particules), f2200 (carton), f2301 (bouton). La grille détectée (0,437 + 0,4167k s) est décalée d'≈ 1 im par rapport aux multiples de 25 im (retard d'encodage audio probable) : les coupes tombent à −1 im des barres. 23 coupes dont 20 à ±50 ms d'un temps ou d'un demi-temps. Le tambour des langues avance d'un cran par temps (f1326 → f1526) puis par demi-temps (f1538…) : accélération par subdivision. Iris et whip durent exactement un demi-temps (12-13 im). Temps morts : 9 maintiens ≥ 0,4 s (11,1 s, 28 %), concentrés dans la partie explicative (11,63-13,33 s ; 13,73-14,98 s ; 15,02-16,77 s ; 18,02-19,12 s, où seuls les sous-titres changent) et sur le carton final (36,93-40 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:02.1",
+        "what": "macro sur la page « 4.2 The Water Cycle » (serif), faible profondeur de champ, caméra qui dérive ; « sun » (vert), « ocean » (bleu), « vapour » (rose) se surlignent un par temps",
+        "technique": "surlignage sur le temps"
+      },
+      {
+        "t": "0:02.1-0:02.6",
+        "what": "recul rapide avec flou de zoom : la page devient un livre ouvert en 3D sur fond gris clair, d'un temps (f126) au suivant (f151)",
+        "technique": "recul flou"
+      },
+      {
+        "t": "0:03.35-0:05.4",
+        "what": "la grosse caisse entre ; « Pages. » (f201), « and pages. » (f251), « and pages. » en bleu (f301), une ligne toutes les 2 temps, pendant que les pages tournent une par temps",
+        "technique": "typo cinétique calée sur les pages"
+      },
+      {
+        "t": "0:05.3-0:06.27",
+        "what": "feuilletage accéléré en éventail flou, le livre se referme sur le temps f376",
+        "technique": "accélération"
+      },
+      {
+        "t": "0:06.27-0:06.66",
+        "what": "le livre fermé à couverture bleue pivote sur sa tranche et se réduit à une barre bleue",
+        "technique": "réduction de forme"
+      },
+      {
+        "t": "0:06.67-0:07.5",
+        "what": "coupe sur navy au début de la mesure 5 (pic d'aigus à 6,69 s) : la barre bleue reste, les barres verte et rose tombent du haut ; logo néon, « DistilBook », « ANY DOCUMENT, DISTILLED INTO A DRAWN VIDEO »",
+        "technique": "raccord dos de livre → logo"
+      },
+      {
+        "t": "0:07.5-0:08.1",
+        "what": "logo tenu sous vignette",
+        "technique": "maintien court"
+      },
+      {
+        "t": "0:08.12-0:08.33",
+        "what": "whip horizontal flou vers une page blanche, un demi-temps",
+        "technique": "whip d'un demi-temps"
+      },
+      {
+        "t": "0:08.33-0:10.0",
+        "what": "paragraphe en serif ; surlignages qui s'ajoutent (sky, clouds, sea, pure water) ; les mots non surlignés passent au gris",
+        "technique": "distillation du texte"
+      },
+      {
+        "t": "0:10.02-0:10.8",
+        "what": "le paragraphe se désagrège : lignes → couches d'eau bleues, mots en hachures qui montent, « water », « vapour », « invisible » s'évaporent vers le haut",
+        "technique": "texte qui devient dessin"
+      },
+      {
+        "t": "0:10.8-0:13.3",
+        "what": "le cycle de l'eau se dessine trait par trait : goutte, rayons, soleil, nuage, flèches de vapeur, cercle autour de la goutte, annotations manuscrites",
+        "technique": "dessin au trait"
+      },
+      {
+        "t": "0:13.35-0:14.0",
+        "what": "recul : le dessin est une vidéo dans un lecteur (0:13 / 0:54)",
+        "technique": "recul révélateur"
+      },
+      {
+        "t": "0:14.0-0:19.6",
+        "what": "voix off et sous-titres karaoké mot à mot (mot courant en bleu) ; le dessin ajoute le sel et « The sky only takes the pure water » ; musique baissée",
+        "technique": "karaoké + démo lecteur"
+      },
+      {
+        "t": "0:19.6-0:21.3",
+        "what": "éditeur « NARRATION · Evaporation · 43 / 60 words », « Read it. Fix it. Generate. » ; mesure sans grosse caisse ; clic sur « Generate Video » avec étincelles",
+        "technique": "interface + slogan en trois temps"
+      },
+      {
+        "t": "0:21.47-0:21.67",
+        "what": "un iris sombre jaillit du bouton et couvre l'écran en 12 im ; la grosse caisse revient à 21,69 s",
+        "technique": "iris depuis le clic"
+      },
+      {
+        "t": "0:21.67-0:26.6",
+        "what": "« The sky only takes the pure water. » en 19 langues sur un tambour vertical, étiquette de langue et compteur rose « 06 / 19 narration languages », un cran par temps puis par demi-temps, finale floue",
+        "technique": "tambour de langues (bandit manchot)"
+      },
+      {
+        "t": "0:26.68-0:28.3",
+        "what": "carrousel cylindrique de vignettes de styles, très flou puis qui ralentit ; étiquettes de style qui changent",
+        "technique": "carrousel 3D"
+      },
+      {
+        "t": "0:28.3-0:30.0",
+        "what": "une vignette fonce plein cadre ; Inkwash Journal, Bauhaus Poster, Doodle Color Pop, Soft 3D Coral, reliés par volets à lamelles et volet prismatique",
+        "technique": "défilé de styles"
+      },
+      {
+        "t": "0:30.2-0:31.67",
+        "what": "image assombrie, cadre portrait 9:16 blanc qui saute à gauche puis revient avec traînées, grand « 9:16 »",
+        "technique": "démo de recadrage"
+      },
+      {
+        "t": "0:31.73-0:33.3",
+        "what": "grille 4×4 de vignettes qui sort du noir en perspective puis s'aplatit ; pilule « Whiteboard or motion. »",
+        "technique": "grille 3D"
+      },
+      {
+        "t": "0:33.35-0:33.67",
+        "what": "les 16 vignettes se réduisent en 16 points",
+        "technique": "réduction en points"
+      },
+      {
+        "t": "0:33.7-0:35.0",
+        "what": "points → panneaux de matrice de points bombés → champ de points plein écran ; compteur 1,164+ → 2,200+ « videos made by 1,500+ creators »",
+        "technique": "compteur sur champ de points"
+      },
+      {
+        "t": "0:35.1-0:36.6",
+        "what": "le champ tremble, se désordonne, les particules tourbillonnent et forment les trois barres du logo",
+        "technique": "particules → logo"
+      },
+      {
+        "t": "0:36.67-0:38.3",
+        "what": "coupe sur carton blanc : logo et « DistilBook » en fondu, tagline « Turn any document into a hand-illustrated explainer video. »",
+        "technique": "carton final"
+      },
+      {
+        "t": "0:38.35-0:40.0",
+        "what": "bouton « Free to try » + « distilbook.com » sur le temps f2301 ; musique en fondu",
+        "technique": "appel à l'action"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Barres des planches (temps à f≈26,2 + 25k, demi-temps à f≈38,7 + 25k) : « sun » f24 (temps f26), « ocean » f49 (f51), recul f126 → f151 (temps → temps), « Pages. » f201, « and pages. » ≈ f252, « and pages. » ≈ f302 (temps f201, f251, f301), pages posées f228, f252, f276, f300, livre fermé f376, raccord logo f400 (temps f401), barre rose posée f413 (demi-temps f414), whip f487 → f500 (demi-temps f489 → temps f501), « sky » f512 (demi-temps f514), désagrégation f602 (temps f601), iris f1288 → f1300 (demi-temps f1289 → temps f1301), 11 crans de langue f1313-f1538 à ±1 im d'un temps ou demi-temps (attaques audio fortes à 22,094 ; 22,512 ; 22,93 ; 23,348 ; 23,766 ; 24,184 ; 24,602 ; 25,02 s), carrousel f1601 après 1 im d'arrêt, coupes f1700 et f1751, cadre 9:16 f1814, f1839, f1851, f1864, f1877, grille → points f2001, compteur final f2076, carton f2200, bouton f2301. Compte : 43 gestes clés sur 47 à ±2 im d'une barre (hasard 33 %), 32 sur 36 sans les crans de langue. Ratés : soleil dessiné f656 (+5), grille qui surgit f1904 (+3), pilule f1922 (−4), clic f1273 (−3). Indice automatique : départs/demi-temps p corrigé = 1,1e-8 ; corrélation avec les attaques z = 3,97.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte",
+      "camera",
+      "drop"
+    ],
+    "style_match": "Électro 144 BPM à grosse caisse régulière, montée et crash sur le logo : colle aux coupes sèches et au défilement mécanique ; musique baissée sous la voix de la démo.",
+    "how_built": "La timeline est écrite en mesures : 24 mesures de 4 temps à 144 BPM = 40 s, compteur « BAR xx/24 · 144 BPM » et timecode incrustés dans un HUD de « MOTION REEL ». Coupes et gestes sont placés sur des multiples de 25 im (un temps à 60 fps) ou de 12,5 im (demi-temps). La bande-son suit la même architecture : 2 mesures d'intro sans grosse caisse, grosse caisse qui entre à la mesure 3 avec « Pages. », montée des aigus jusqu'au pic de la mesure 5 (raccord logo), basses baissées sous la voix off (14-19,5 s), mesure sans grosse caisse sous l'éditeur (20-21,3 s) puis retour pile sur l'iris (21,69 s), montée des aigus pendant l'accélération des langues et coup fort à 27,1 s sur le carrousel, un temps sans grosse caisse juste avant le carton (36,27 s), fondu final. Probable : musique générée ou choisie à 144 BPM, puis animation calée dessus (ou bande-son arrangée en code sur la même grille). Le prompt ne parle pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "camera",
+      "name_fr": "Macro sur la page en faible profondeur de champ",
+      "name_en": "macro page drift with shallow depth of field",
+      "t": "0:00-0:02.1",
+      "frames": "f0-f126",
+      "fps": 60,
+      "mechanics": "Première image déjà pleine (aucun fondu) : titre serif gras « 4.2 The Water Cycle » (« 4.2 » en bleu) ≈ 12 % de la hauteur, corps serif ≈ 6 % ; plan incliné ≈ −4° qui se redresse vers −2°, mise au point sur les 2-3 premières lignes, lignes du bas floues ; dérive lente vers le haut-gauche (≈ 10 % de la largeur en 35 im), vitesse constante.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f37.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Surligneur qui tombe sur le temps",
+      "name_en": "on-beat highlighter swipe",
+      "t": "0:00.40-0:01.30",
+      "frames": "f24-f78",
+      "fps": 60,
+      "mechanics": "Les mots-clés se surlignent au marqueur arrondi semi-transparent en ≈ 2 im, de gauche à droite : « sun » vert #93EEAF à f24 (temps f26), « ocean » bleu à f49 (temps f51), « vapour » rose ≈ f74-76 (temps f76, probable). Même code à plat entre 8,4 et 9,6 s (sky, clouds, sea, pure water) sur des temps et demi-temps (« sky » f512, demi-temps f514). Les trois couleurs des surligneurs sont celles du logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f37.jpg, microM-004-cut-f496.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul flou de la page au livre",
+      "name_en": "blurred pull-back reveal",
+      "t": "0:02.10-0:02.52",
+      "frames": "f126-f151",
+      "fps": 60,
+      "mechanics": "Départ sur le temps f126, flou de zoom radial maximal f132-f143 (texte illisible), le livre ouvert en 3D apparaît à f150 (≈ 60 % de la largeur), arrivée sur le temps suivant f151 : un temps pile (25 im), ease-in-out (vitesse max au milieu). Recul résiduel jusqu'à ≈ 3,0 s : livre ≈ 50 % de la largeur, en perspective, ombre douce, tranche bleue, fond #EAEDF3 avec halo central.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f135.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Une ligne toutes les deux temps, la dernière en couleur",
+      "name_en": "line-per-two-beats kinetic list",
+      "t": "0:03.35-0:05.25",
+      "frames": "f201-f315",
+      "fps": 60,
+      "mechanics": "« Pages. » (f201), « and pages. » (≈ f252), « and pages. » en bleu #6375E0 (≈ f302) : chaque ligne monte d'un masque en ≈ 8 im, ease-out, une ligne toutes les 2 temps (50 im = 0,83 s) ; alignées à gauche (x ≈ 5 %, à partir de 40 % de la hauteur), grotesque grasse ≈ 5 % de la hauteur, interlignage serré. La répétition et la couleur de la 3e ligne font crescendo ; la grosse caisse entre sur « Pages. ». Les trois lignes grisent puis disparaissent quand le livre se ferme (f376-f384).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Pages qui tournent sur le temps puis feuilletage",
+      "name_en": "page flips on the beat then riffle",
+      "t": "0:03.50-0:06.27",
+      "frames": "f212-f376",
+      "fps": 60,
+      "mechanics": "Une page se soulève et passe de droite à gauche en ≈ 16 im en se courbant, avec flou de mouvement ; atterrissages sur les temps (f228, f252, f276, f300 pour des temps à f226, f251, f276, f301). À partir de f316, feuilletage accéléré : éventail de pages floues, plusieurs par temps, jusqu'à la fermeture du livre sur le temps f376.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le livre devient la barre du logo (raccord de forme)",
+      "name_en": "book-spine to logo match cut",
+      "t": "0:06.27-0:06.88",
+      "frames": "f376-f413",
+      "fps": 60,
+      "mechanics": "Mesuré : le livre fermé (couverture bleue #6D94E7) pivote vers sa tranche et rétrécit, aire bleue 17,5 % (f379) → 10,2 % (f387) → 3,0 % (f391) → 0,7 % (f396), ease-in-out, puis 4 im immobiles (f396-f399) ; coupe sur fond navy à f400 (début de la mesure 5, pic d'aigus) avec la barre bleue exactement au même endroit ; la barre verte tombe du haut (f401-f407, traînée floue, 6 im), puis la rose (f408-f413, posée sur le demi-temps f414) ; fine ellipse au pied des barres.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f400.jpg, extra-01.jpg",
+      "illus": {
+        "from": 380,
+        "to": 414,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Logo néon et sous-titre en capitales espacées",
+      "name_en": "neon logo lockup",
+      "t": "0:06.67-0:08.10",
+      "frames": "f400-f486",
+      "fps": 60,
+      "mechanics": "Trois barres arrondies (vert #69EF90, bleu #7299EF, rose #E265AF) à contour néon et halo, wordmark « DistilBook » blanc en grotesque grasse ≈ 12 % de la hauteur (apparu entre f420 et f447), tagline « ANY DOCUMENT, DISTILLED INTO A DRAWN VIDEO » en capitales espacées (+25 %) gris-bleu ≈ 2 % ; fond navy #111629 avec vignette radiale.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-cut-f496.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Whip horizontal d'un demi-temps",
+      "name_en": "half-beat whip wipe",
+      "t": "0:08.12-0:08.33",
+      "frames": "f487-f500",
+      "fps": 60,
+      "mechanics": "Mesuré : la page blanche entre par la droite avec un bord dégradé flou ; aire blanche 3,3 % (f487) → 10,3 % (f490) → 28,5 % (f493) → 51,4 % (f495) → 73,8 % (f497) → 92,6 % (f500) : accélération puis quasi linéaire, 13 im = exactement un demi-temps (demi-temps f489 → temps f501) ; le logo prend un flou horizontal filé en sortant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f496.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Distillation : les mots ordinaires s'éteignent",
+      "name_en": "fade the non-key words",
+      "t": "0:09.60-0:10.00",
+      "frames": "f576-f600",
+      "fps": 60,
+      "mechanics": "Une fois les 8 mots-clés surlignés, le reste du paragraphe (serif ≈ 2,5 % de la hauteur, centré, ≈ 55 % de la largeur) passe du quasi noir au gris clair en ≈ 0,3 s ; seuls les mots-clés restent lisibles : le concept du produit est montré avant d'être dit.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le texte devient le dessin",
+      "name_en": "text-to-illustration morph",
+      "t": "0:10.02-0:10.80",
+      "frames": "f601-f648",
+      "fps": 60,
+      "mechanics": "Départ sur le temps f601 : les lignes du paragraphe s'étirent en bandes bleues horizontales qui fusionnent en un bloc d'océan aquarelle #8FAEE8 (≈ 70 % de la largeur) dont le bord supérieur se dessine en vague (≈ f618-f626, temps f626) ; les mots ordinaires se dissolvent en hachures de crayon grises qui montent ; « water », « vapour », « liquid », « invisible » s'élèvent vers le haut-droit en se dispersant (évaporation) et s'effacent (f626-f648) ; de petits cercles noirs (le sel) s'accumulent au bord droit de l'eau.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 600,
+        "to": 648,
+        "n": 8
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Dessin au trait façon tableau blanc",
+      "name_en": "stroke-reveal hand drawing",
+      "t": "0:10.80-0:13.30",
+      "frames": "f648-f798",
+      "fps": 60,
+      "mechanics": "Goutte qui tombe (f644-f652), rayons jaunes ondulés tracés (f648-f660), soleil jaune #F1E64F qui naît avec ses rayons (f656-f666), nuage hachuré, flèches ondulées de vapeur qui montent, cercle tracé dans le sens horaire autour de la goutte (f664-f676, départ sur le demi-temps) ; annotations manuscrites qui s'écrivent lettre à lettre (« Sun heats the ocean », « Liquid water becomes invisible water vapour rising into the sky », « A single drop can stay airborne for 10 days »), mots-clés en bleu. Trait noir irrégulier, aplats aquarelle.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul : le dessin devient une vidéo dans un lecteur",
+      "name_en": "pull-back into a player frame",
+      "t": "0:13.33-0:14.00",
+      "frames": "f800-f840",
+      "fps": 60,
+      "mechanics": "Départ sur le temps f801 (début de la mesure 9) : le plan recule (échelle ≈ 1 → 0,75) et le dessin se révèle être une carte arrondie à ombre douce avec barre de lecture et timecode « 0:13 / 0:54 », posée sur fond gris clair ; ease-out ; le contenu continue de s'animer dans le lecteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titres karaoké mot à mot",
+      "name_en": "word-by-word karaoke captions",
+      "t": "0:14.00-0:19.60",
+      "frames": "f840-f1176",
+      "fps": 60,
+      "mechanics": "Sous le lecteur, phrase centrée en grotesque grasse ≈ 4 % de la hauteur : mots déjà dits en navy, mot courant en bleu #6375E0, mots à venir en gris clair ; avance d'un mot toutes les ≈ 0,5 s en suivant la voix off (« the salt stays behind in the sea. », « The sky only takes the pure water. ») ; le dessin ajoute en parallèle « Salt stays behind in the sea » et un 2e cercle « The sky only takes the pure water ».",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Éditeur de narration et slogan en trois temps",
+      "name_en": "script editor with three-beat slogan",
+      "t": "0:19.60-0:21.30",
+      "frames": "f1176-f1278",
+      "fps": 60,
+      "mechanics": "Carte blanche « NARRATION · Evaporation · 43 / 60 words · Rewrite » avec le script, « Nothing is drawn until you approve the script. » et bouton bleu « Generate Video » ; dessous, « Read it. », « Fix it. », « Generate. » (le 3e en bleu) arrivent un par un (≈ 20,4-21,0 s) ; un mot du script se surligne ; le curseur clique le bouton (≈ f1273), qui vire au vert avec des étincelles. Toute la mesure est sans grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, microM-005-cut-f1296.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris sombre qui jaillit du bouton cliqué",
+      "name_en": "iris from the click point",
+      "t": "0:21.47-0:21.67",
+      "frames": "f1288-f1300",
+      "fps": 60,
+      "mechanics": "Mesuré : un disque navy à bord flou naît au point de clic et grandit, diamètre 8 % (f1288) → 16 % (f1290) → 28 % (f1292) → 46 % (f1294) → 69 % (f1296) → 88,5 % (f1298) → 100 % (f1300), aire 0,7 → 91 % : accélération (ease-in) ; la scène suivante est déjà visible dans le disque (« …the pure water. / …agua pura. ») ; durée exactement un demi-temps (demi-temps f1289 → temps f1301) ; la grosse caisse revient à 21,69 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f1296.jpg",
+      "illus": {
+        "from": 1284,
+        "to": 1302,
+        "n": 7
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tambour de langues (bandit manchot) sur le temps",
+      "name_en": "slot-machine language roll",
+      "t": "0:21.67-0:26.66",
+      "frames": "f1300-f1600",
+      "fps": 60,
+      "mechanics": "La même phrase en 19 langues sur un tambour vertical : ligne active au centre en blanc gras ≈ 6 % de la hauteur, voisines plus petites, en italique et plus transparentes (effet cylindre) ; chaque cran = déplacement d'≈ 10 % de la hauteur en ≈ 3 im avec flou vertical ; étiquette en capitales espacées (ENGLISH (US), ESPAÑOL, DEUTSCH…) et compteur « 06 / 19 narration languages » (chiffre rose) qui changent sur la même image ; un cran par temps (f1326, f1351 … f1526), puis par demi-temps (f1538…) = accélération ; finale en flou continu (26,3-26,6 s) puis 1 im d'arrêt (f1599-f1600) avant le carrousel.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f1296.jpg, microM-006-move-f1528.jpg, overview-04.jpg, overview-05.jpg",
+      "illus": {
+        "from": 1520,
+        "to": 1545,
+        "n": 6
+      }
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Carrousel cylindrique de styles",
+      "name_en": "3D cylinder carousel with motion blur",
+      "t": "0:26.68-0:28.33",
+      "frames": "f1601-f1700",
+      "fps": 60,
+      "mechanics": "Départ sur le temps f1601 : un ruban de vignettes tordu en vague sous un spot lumineux se déplie en cylindre horizontal qui tourne très vite (flou horizontal fort f1614-f1628) puis décélère (ease-out) jusqu'à ≈ 3 vignettes lisibles ; l'étiquette en bas à gauche change à chaque carte qui passe au centre (« Bauhaus Poster », « WHITEBOARD Sketch Notebook », « Isometric Illustration », « MOTION Soft 3D Coral », « Inkwash Journal »).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1626.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La carte du carrousel fonce vers la caméra",
+      "name_en": "push-through card to fullscreen",
+      "t": "0:28.15-0:28.33",
+      "frames": "f1690-f1700",
+      "fps": 60,
+      "mechanics": "La vignette centrale grossit et vient plein cadre avec flou (f1695-f1699), coupe à f1700 (temps f1701) sur l'illustration à plat ; l'étiquette « MOTION Inkwash Journal » reste en bas à gauche ; de petits éléments de l'illustration (flèches) s'animent ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1700.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volets à lamelles et volet prismatique irisé",
+      "name_en": "slatted and prismatic wipes",
+      "t": "0:28.90-0:29.28",
+      "frames": "f1734-f1757",
+      "fps": 60,
+      "mechanics": "Inkwash → Bauhaus par lamelles verticales sombres (≈ 29,0 s, fin vers f1741) ; Bauhaus → Doodle par une bande de lamelles verticales irisées (vert, cyan, rose, violet, comme un verre cannelé) qui balaie de droite à gauche en ≈ 12 im (f1745-f1757), coupe sous la bande à f1751 (temps f1751) ; une illustration par demi-mesure environ.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f1751.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Démo 9:16 : cadre portrait qui saute avec traînées",
+      "name_en": "9:16 reframe with echo whips",
+      "t": "0:30.23-0:31.67",
+      "frames": "f1814-f1900",
+      "fps": 60,
+      "mechanics": "L'image 16:9 s'assombrit (voile #515463) et un cadre portrait blanc (≈ 27 % de la largeur, ratio 9:16) isole la jeune fille ; il saute à gauche (f1838-f1841, 3-4 im) puis revient (f1851-f1854), puis encore (f1864, f1877), chaque saut avec 3-4 copies fantômes (traînée en écho) ; départs sur demi-temps et temps ; grand « 9:16 » en bas à droite (≈ 10 % de la hauteur).",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1839.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Grille de vignettes qui sort du noir en perspective",
+      "name_en": "tilted 3D grid emerge",
+      "t": "0:31.73-0:33.30",
+      "frames": "f1904-f2000",
+      "fps": 60,
+      "mechanics": "Une grille 4×4 de vignettes surgit minuscule au centre (f1904), grandit en sortant du noir, inclinée en perspective (rotation X ≈ 30°, Z ≈ −10°), avec flou de mouvement, puis s'aplatit en remplissant le cadre ; pilule sombre « Whiteboard or motion. » (« or » en vert) qui apparaît au centre en fondu flou (f1922-f1925).",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f1916.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Vignettes réduites en points",
+      "name_en": "thumbnails collapse into dots",
+      "t": "0:33.35-0:33.67",
+      "frames": "f2001-f2026",
+      "fps": 60,
+      "mechanics": "Départ sur le temps f2001 : chaque vignette rétrécit vers son centre jusqu'à un point blanc, ease-in-out (mouvement maximal f2010), les 16 points restent immobiles 6 im (f2020-f2026), puis germent en panneaux bombés de matrice de points à partir du temps f2026 : le contenu devient de la donnée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur sur champ de points",
+      "name_en": "counter over dot-matrix field",
+      "t": "0:33.90-0:35.00",
+      "frames": "f2034-f2100",
+      "fps": 60,
+      "mechanics": "Compteur blanc en grotesque grasse ≈ 12 % de la hauteur avec « + » rose : 1,164 (f2036) → 1,633 → 1,890 → 2,030 → 2,107 → 2,149 → 2,172 → 2,187 → 2,193 → 2,196 → 2,200+ (f2076, sur le temps) = ease-out fort (grands sauts puis petits) en 40 im ; « videos made » dessous, puis « by 1,500+ creators » en vert ; en fond, les panneaux de points bombés s'aplatissent en grille de points plein écran.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules qui se rassemblent en logo",
+      "name_en": "particle swarm into logo",
+      "t": "0:35.10-0:36.65",
+      "frames": "f2106-f2199",
+      "fps": 60,
+      "mechanics": "Le compteur se dissout (f2104-f2112), la grille de points se met à trembler (bruit), perd son ordre, puis les particules tourbillonnent vers la gauche et se condensent en trois barres verte, bleue et rose (≈ f2140-f2156, temps f2151) avec des traînées ; le logo en particules scintille jusqu'à la coupe (f2156-f2199).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-012-cut-f2200.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final et appel à l'action sur le temps",
+      "name_en": "end card with on-beat CTA",
+      "t": "0:36.67-0:40.00",
+      "frames": "f2200-f2399",
+      "fps": 60,
+      "mechanics": "Coupe sèche sur fond blanc à f2200 (mesure 23, juste après un temps sans grosse caisse) : logo + « DistilBook » en fondu de ≈ 6 im (f2200-f2206), tagline en fondu sur le demi-temps f2213 ; image totalement fixe f2215-f2300 ; bouton bleu « Free to try » + « distilbook.com » sur le temps f2301 ; musique en fondu (−30 dB à 39 s). Aucun raccord entre le logo en particules (navy) et le carton blanc.",
+      "verdict": "adapter",
+      "evidence": "microM-012-cut-f2200.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bande démo",
+      "name_en": "reel HUD overlay",
+      "t": "0:00-0:36.67",
+      "frames": "f0-f2199",
+      "fps": 60,
+      "mechanics": "Équerres aux coins ; en haut à gauche « DISTILBOOK MOTION REEL 2026 », en haut à droite « BAR 05/24 · 144 BPM » (vrai compteur de mesures), en bas à droite « FRAME 00:00:05:50 » ; mono minuscule ≈ 1 % de la hauteur, gris ; présent sur toutes les scènes sauf le carton final. Montre la grille musicale, mais illisible en 480p.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-06.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flous de mouvement et de profondeur systématiques",
+      "name_en": "motion and depth blur",
+      "t": "0:00-0:36.67",
+      "frames": "f0-f2199",
+      "fps": 60,
+      "mechanics": "Profondeur de champ sur la macro du livre ; flou de zoom sur le recul (f132-f143) ; flou directionnel sur les pages, le whip, les barres du logo qui tombent, les crans du tambour de langues (≈ 3 im par cran), le carrousel, les sauts du cadre 9:16 (écho de 3-4 copies) : le flou lisse les coupes rapides à 60 fps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f135.jpg, microM-006-move-f1528.jpg, microM-007-move-f1626.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Montage écrit en mesures",
+      "name_en": "bar-based edit",
+      "t": "0:00-0:40",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "24 mesures de 100 im (1,667 s) ; scènes sur les débuts de mesure (f200, f400, f500, f600, f800, f1300, f1600, f1700, f1800, f1900, f2000, f2100, f2200) ; gestes sur un temps (25 im) ou un demi-temps ; transitions d'un demi-temps (iris, whip) qui finissent sur le temps ; accélérations par subdivision (langues : temps → demi-temps ; pages : une par temps puis feuilletage). Les maintiens se concentrent dans la partie explicative (11,6-19,1 s).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, dossier.md, microM-005-cut-f1296.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Architecture musicale qui épouse les scènes",
+      "name_en": "score arrangement mirroring scenes",
+      "t": "0:00-0:40",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "2 mesures d'intro sans grosse caisse (macro du livre) ; grosse caisse sur « Pages. » (3,35 s) ; montée des aigus jusqu'au pic de la mesure 5 (6,69 s = raccord logo) ; basses baissées sous la voix off (14-19,5 s) ; mesure sans grosse caisse sous l'éditeur (20,0-21,3 s), retour pile sur l'iris (21,69 s) ; montée des aigus pendant l'accélération des langues (25,4-26,3 s) et coup fort à 27,1 s sur le carrousel ; un temps sans grosse caisse juste avant le carton (36,27 s) ; fondu final de 37,5 à 40 s.",
+      "verdict": "reprendre",
+      "evidence": "dossier.md (attaques 21,687-25,02 s), microM-005-cut-f1296.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un exemple fil rouge, de la promesse aux preuves",
+      "name_en": "single running example story arc",
+      "t": "0:00-0:40",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "Problème implicite (« Pages. and pages. and pages. ») → logo (6,7 s) → démonstration sur un seul exemple (paragraphe surligné → dessin → vidéo sous-titrée → éditeur du script) → variantes (19 langues, styles, 9:16, whiteboard ou motion) → preuve sociale (2 200+ vidéos, 1 500+ créateurs) → logo + « Free to try ». La phrase « The sky only takes the pure water » traverse quatre scènes.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Galerie d'illustrations du produit",
+      "name_en": "AI illustration gallery",
+      "t": "0:28.33-0:31.67",
+      "frames": "f1700-f1900",
+      "fps": 60,
+      "mechanics": "Quatre illustrations plein cadre de styles très différents (aquarelle violette sur le stoïcisme, poster Bauhaus sur le RAG, doodle d'une enceinte, 3D douce d'une jeune fille en 1833), probablement de vraies sorties du produit ; seuls de petits éléments s'y animent ; rendu typique du générateur d'images, hétérogène.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg, microM-008-cut-f1700.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Les trois couleurs du logo comme système",
+      "name_en": "logo tri-color system",
+      "t": "0:00-0:40",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "Vert #69EF90, bleu #7299EF et rose #E265AF du logo reviennent dans les surligneurs (sun, ocean, vapour), le chiffre du compteur de langues (rose), le « + » du compteur, « by 1,500+ creators » (vert) et les particules ; alternance de chapitres clairs (#EAEDF3, #FAFAF8) et navy (#111629) ; un seul bleu d'accent pour le texte (#6375E0).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois registres typographiques",
+      "name_en": "three type voices",
+      "t": "0:00-0:40",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "Serif de livre pour les pages (titre gras ≈ 12 % de la hauteur en macro, corps ≈ 2,5 % à plat) ; grotesque géométrique grasse pour tout ce qui est produit (titres, compteurs, langues, logotype, interlettrage légèrement négatif) ; manuscrite pour les annotations du dessin ; capitales espacées (+25 %) pour les étiquettes et mono pour le HUD. Chaque registre correspond à une étape du produit (document, dessin, interface).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, overview-04.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "« Research Distilbook » : Claude a repris les vraies fonctions (19 langues de narration, styles nommés, format 9:16, script modifiable avant génération), un exemple de démonstration (le cycle de l'eau) et des chiffres d'usage (2 200+ vidéos, 1 500+ créateurs), sans doute tirés du site."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Like it's your showreel » a été pris au mot : HUD « DISTILBOOK MOTION REEL 2026 » avec compteur de mesures et BPM, comme une bande démo d'agence, et une transition différente à presque chaque scène."
+    },
+    {
+      "kind": "structure",
+      "insight": "Sans consigne, Claude a découpé la vidéo en 24 mesures à 144 BPM : chaque fonction tient en 1 à 4 mesures et un même exemple sert de fil rouge de la page au lecteur."
+    },
+    {
+      "kind": "build",
+      "insight": "Un montage calé à l'image près sur une grille de 25 im suppose que la musique (BPM, premier temps) soit connue avant d'animer : ici, musique probablement générée ou choisie à 144 BPM puis animation placée sur ses temps, avec ducking sous la voix de démo."
+    },
+    {
+      "kind": "qa",
+      "insight": "Sortie en 848×480 : HUD, sous-titres d'interface et textes des illustrations sont mous. Il aurait fallu exiger 1920×1080 et un mouvement au moins toutes les 0,5 s dans la partie explicative (maintiens de 1 à 1,7 s)."
+    },
+    {
+      "kind": "other",
+      "insight": "Le même gabarit de prompt (« Research X… showreel… Go all out ») donne ici une pièce bien plus musicale et conceptuelle qu'ailleurs dans le corpus : l'écart vient des choix du modèle (métaphore, grille de mesures), pas du prompt."
+    }
+  ],
+  "steal": [
+    "Écrire la timeline en mesures : à 144 BPM, un temps = 25 im à 60 fps ; chaque scène commence sur une mesure, chaque geste sur un temps ou un demi-temps.",
+    "Faire durer une transition exactement un demi-temps (iris, whip de 12-13 im) pour qu'elle se termine pile sur le temps suivant.",
+    "Raccord de forme : réduire l'objet de la scène (livre fermé) à une forme simple qui devient, à la même place, un élément du logo ; couper sur le pic musical.",
+    "Accélérer une énumération par subdivision : un élément par temps, puis par demi-temps, puis flou continu, puis une image d'arrêt avant la scène suivante.",
+    "Transformer le contenu au lieu de couper : texte surligné → mots-clés → lignes qui deviennent l'eau → dessin ; vignettes → points → particules → logo."
+  ],
+  "flaws": [
+    "Rendu en 848×480 : HUD, sous-titres d'interface et textes des illustrations sont mous ou illisibles.",
+    "Partie explicative lente (11,6-19,1 s) : quatre maintiens de 1 à 1,7 s où seuls les sous-titres bougent ; 28 % de temps statique au total.",
+    "Galerie d'illustrations IA hétérogènes (aquarelle, Bauhaus, 3D douce) qui sentent le générateur d'images.",
+    "HUD « BAR / BPM » et timecode : gadget de bande démo qui distrait sans servir le message produit.",
+    "Logo en particules (navy) → carton blanc par coupe sèche, puis 1,4 s d'image figée : fin moins inventive que le reste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, en priorité : meilleur exemple de montage écrit en mesures (24 × 144 BPM). À étudier image par image à 60 fps : durées d'un demi-temps (iris, whip), accélération du tambour de langues, pages posées sur les temps, raccords livre → logo et vignettes → points → particules."
+  }
+}

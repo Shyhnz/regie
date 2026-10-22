@@ -1,0 +1,389 @@
+{
+  "slug": "robj3d3-b18fad",
+  "title": "SuperX feature release teaser",
+  "handle": "@robj3d3",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Concept malin et structure exacte en mesures, beaux passages (X qui s'ouvre, vortex) ; mais image trop sombre, intro lente de 3,7 s, maintiens d'1 s et effets génériques (texte brouillé, blur-in).",
+  "summary": "Teaser de 15 s pour une fonctionnalité de SuperX, outil pour X (ex-Twitter). « X = Twitter » se fait rayer et brouiller, devient « X = ? », puis le X s'ouvre sur des cartes de posts qui se multiplient, s'effondrent en constellation, tourbillonnent en un point et éclatent en logo : « X was never just one. Soon. » Scènes calées sur 6 mesures à 96 BPM, mais image très sombre et intro lente.",
+  "prompt_vs_result": [
+    "Lire la feuille de route du produit et en tirer un teaser « dynamique » de 15 s de la prochaine fonctionnalité, sans retenue (« go all out »). Ni style, ni musique, ni texte imposés.",
+    "Le concept « X n'est pas un seul » (multi-comptes probable), la DA nuit-braise, les cartes de posts, la constellation, le vortex, la bande-son à 96 BPM découpée en mesures, le carton « Soon. » sans nommer la fonctionnalité.",
+    "« Go all out » a produit beaucoup d'effets (glitch, bloom, particules, vortex) mais pas de densité : 3,7 s d'intro sombre. Il fallait exiger un contraste lisible, un geste par temps et le nom de la fonctionnalité."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B0908", "role": "fond noir chaud"},
+      {"hex": "#2A1510", "role": "halo radial brun-rouge au centre"},
+      {"hex": "#FF6A3D", "role": "braise : arêtes lumineuses du X, traits de lumière"},
+      {"hex": "#C8643C", "role": "bloom orange de l'explosion de lumière"},
+      {"hex": "#D23C2C", "role": "rouge : barré, X marqués de la constellation, bordure de carte, badges"},
+      {"hex": "#EDEDED", "role": "texte blanc (titres, logo)"},
+      {"hex": "#7C7C7C", "role": "gris des légendes et de l'URL"},
+      {"hex": "#2B2623", "role": "cartes de posts (UI) sombres"}
+    ],
+    "type": "Grotesque géométrique demi-grasse (Inter / SF Pro probable) : « X = Twitter » ≈7 % H, logo ≈4,5 % H, slogan ≈3,5 % H ; serif italique (Instrument Serif probable) pour « ? » et « Soon. » ≈6 % H ; légendes grises ≈1,5 % H.",
+    "texture": "Halo radial chaud permanent, vignettage fort, anneaux concentriques très faibles dans le fond, bloom orange sur les impacts, arêtes en lumière rasante (rim light) sur le X, flou de mouvement horizontal sur le glissé du X, traînées radiales dans le vortex, flou gaussien d'entrée (blur-in) sur tous les textes, profondeur de champ sur les cartes du bord.",
+    "style": "Teaser sombre premium, braise et halo",
+    "coherence": "Le X sert de fil unique : arêtes de braise, glyphe blanc, X qui s'ouvre en cadre, X miniatures de la constellation, X final, X du logo. La palette noir-braise-rouge tient de bout en bout. Ce qui casse : la séquence des cartes UI, grises et quasi illisibles, sort du langage lumineux du reste ; et le mélange serif italique / grotesque n'apparaît qu'à deux endroits (« ? », « Soon. »), sans règle visible."
+  },
+  "rhythm": {
+    "bpm": 96,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "96 BPM : 1 temps = 0,625 s = 37,5 im à 60 fps, 1 mesure = 2,5 s ; les 15 s font exactement 6 mesures. Une seule coupe franche (f750) : tout le reste est en transformations continues. Les changements de scène tombent sur des temps (3,78 / 5,03 / 7,53 / 10,02 / 11,90 / 12,52 s), dont quatre sur des premiers temps de mesure (5,03, 7,53, 10,02, 12,52). Densité faible : intro de 3,7 s avec un seul trait de lumière lent, maintiens de ≈1 s sur « X = Twitter » (4,0-5,0 s) et de 1,3 s sur « X = ? » (6,0-7,3 s), 0,6 s de X seul avant le logo (voulu : silence avant le coup), carton final qui se complète jusqu'à 14,1 s puis 0,9 s fixe. Le détecteur compte 58 % de maintiens, surestimés car l'image très sombre écrase l'énergie (le recul de 2,1-3,0 s et les particules bougent).",
+    "timeline": [
+      {"t": "0:00-0:02.10", "what": "Macro sur un X géant presque noir ; un trait de braise glisse le long d'une arête, un second apparaît vers 1,2-1,5 s", "technique": "trait de lumière rasante (light trace)"},
+      {"t": "0:02.10-0:03.00", "what": "Recul jusqu'au X entier puis petit X (≈17 % H) au centre, arêtes orange", "technique": "recul de caméra (pull-back) du macro au logo"},
+      {"t": "0:03.00-0:03.77", "what": "« You thought the X meant one thing. » apparaît mot à mot sous le X", "technique": "sous-titre mot à mot en fondu"},
+      {"t": "0:03.77-0:04.00", "what": "Le X contour devient glyphe blanc et glisse à gauche avec flou ; « = Twitter » se découvre de gauche à droite", "technique": "morph + révélation par masque"},
+      {"t": "0:04.00-0:05.00", "what": "« X = Twitter » tenu, la légende s'efface à la fin", "technique": "maintien de lecture"},
+      {"t": "0:05.00-0:05.70", "what": "Aberration chromatique, barré rouge, le X se déforme, « Twitter » se brouille en caractères aléatoires", "technique": "glitch + barré + texte brouillé (scramble)"},
+      {"t": "0:05.70-0:06.30", "what": "Le mot brouillé se désagrège en particules ; « ? » en serif italique apparaît", "technique": "désintégration en particules"},
+      {"t": "0:06.30-0:07.30", "what": "« X = ? » tenu 1,3 s", "technique": "maintien de suspense"},
+      {"t": "0:07.30-0:07.53", "what": "« = ? » est aspiré dans le X, qui se recentre et grossit", "technique": "absorption"},
+      {"t": "0:07.53-0:07.80", "what": "Bloom orange, rayons pointillés en diagonale, anneau ; les 4 branches du X s'écartent et une carte de post apparaît entre elles", "technique": "explosion de lumière + logo qui s'ouvre en cadre"},
+      {"t": "0:07.80-0:10.00", "what": "Les cartes se multiplient : pile verticale, inclinaison 3D, carte vidéo, puis mur de ≈20 cartes ; recul lent", "technique": "multiplication d'UI + travelling arrière"},
+      {"t": "0:10.00-0:10.30", "what": "Les cartes rétrécissent en points : champ de petits X blancs et rouges", "technique": "effondrement en particules"},
+      {"t": "0:10.30-0:11.70", "what": "Constellation de X reliés par des lignes fines, les X rouges reliés entre eux ; poussée de caméra", "technique": "graphe réseau en particules"},
+      {"t": "0:11.70-0:11.90", "what": "Les X tournent en spirale vers le centre avec traînées, cœur lumineux", "technique": "vortex de convergence"},
+      {"t": "0:11.90-0:12.50", "what": "Un seul petit X lumineux au centre, quasi immobile, musique en retrait", "technique": "silence avant le coup (pickup)"},
+      {"t": "0:12.50-0:12.60", "what": "Flash chaud, « 🔥 SuperX » apparaît flou en haut et devient net en 5 im", "technique": "logo en mise au point sur le coup"},
+      {"t": "0:12.95-0:13.30", "what": "« X was never just one. » mot à mot en blur-in", "technique": "slogan mot à mot"},
+      {"t": "0:13.77-0:14.10", "what": "« Soon. » en serif italique puis « superx.so » minuscule", "technique": "révélation en blur-in sur le temps"},
+      {"t": "0:14.10-0:15.06", "what": "Carton final fixe", "technique": "carton de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 96,1 BPM (netteté 6,86), temps = 0,624 s = 37,5 im. Les 4 attaques les plus fortes du morceau ont chacune leur image : 5,03 s = début du glitch (f300, 1,7 im avant le temps f301,7), 7,52 s = pic du bloom (f451-f452, temps f451,6), 12,52 s = flash et logo SuperX (f750-f751, temps f751,2), 1,23 s = apparition probable du second trait de lumière (non vérifiée à l'image près). Changements de scène : f226 (temps f226,8), f300, f452, f601-f603 (effondrement des cartes, temps f601,4), ≈f714 (convergence du vortex, temps f713,8, planche au pas de 6 im), f750 : 6 sur 6 à ±2 im d'un temps. Ils tombent aux temps n° 6, 8, 12, 16, 19 et 20 comptés depuis 0 ; 8, 12, 16 et 20 ouvrent les mesures 3 à 6. « Soon. » démarre sur le temps f826 et l'URL vers le demi-temps f845. Hors calage : arrivées de cartes à 8,3 et 8,9 s, slogan mot à mot (12,95-13,3 s), « ? » (≈6,2 s, non mesuré). Total : 8 gestes clés sur 13 à ±2 im d'une barre (hasard ≈27 % à 60 fps avec temps et demi-temps). Indice automatique concordant : départs/temps R = 0,992, p = 9e-5 ; corrélation attaques z = 5,43, image en avance de 12 ms.",
+    "synced": ["impacts", "coupes", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "Pulsation sombre à 96 BPM, impacts graves isolés, silence avant le coup final : colle aux halos lents et aux révélations ; seules les cartes semblent plus libres.",
+    "how_built": "Les débuts de scène sont des multiples exacts de 0,625 s (6, 8, 12, 16, 19, 20 temps) : la timeline est écrite en temps à 96 BPM, tempo choisi pour que 15 s = 6 mesures pile. Les impacts sonores coïncident à 1-2 im près avec les scènes : bande-son probablement générée ou montée sur les mêmes constantes (stack non précisé). Le prompt ne parle pas de musique ; c'est Claude qui a structuré en mesures. La synchro est structurelle (scènes, impacts, silence) et pas micro (les cartes arrivent librement)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Redéfinir un symbole : « X = Twitter » → « X = ? » → « X was never just one »",
+      "name_en": "Symbol redefinition arc",
+      "t": "0:03.00-0:15.06",
+      "frames": "f180-f899",
+      "fps": 60,
+      "mechanics": "Trois cartons logiques : affirmation (« X = Twitter », 1 s), négation (barré rouge + mot brouillé), question (« X = ? », 1,3 s), puis démonstration visuelle (un X devient des dizaines de cartes, puis des dizaines de X) et résolution (« X was never just one. Soon. »). Le teaser vend une idée (pluralité) sans montrer la fonctionnalité.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg ; overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Scènes calées sur les mesures : 15 s = 6 mesures à 96 BPM",
+      "name_en": "Bar-locked scene structure",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Mesure = 4 temps = 2,5 s = 150 im. Glitch à 5,03 s (mesure 3), explosion de lumière à 7,53 s (mesure 4), effondrement des cartes à 10,02 s (mesure 5), logo à 12,52 s (mesure 6). Deux accents hors premier temps : « X = Twitter » au 3e temps de la mesure 2 (3,78 s) et convergence du vortex au 4e temps de la mesure 5 (11,90 s), juste avant le coup. Écart image/temps : 0 à 2 im.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg ; microM-001-move-f303.jpg ; microM-002-move-f453.jpg ; microM-003-cut-f750.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence-anacrouse avant le logo",
+      "name_en": "Pre-hit silence pickup",
+      "t": "0:11.90-0:12.52",
+      "frames": "f714-f751",
+      "fps": 60,
+      "mechanics": "Le vortex converge en un seul petit X sur le temps f714 ; suivent 37 im (exactement 1 temps) quasi immobiles, son en retrait (7 % du morceau est quasi silencieux), puis le flash et le logo sur l'attaque la plus forte du morceau à 12,52 s (f750-f751). Le vide visuel et sonore prépare l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f750.jpg ; extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une attaque forte = un impact visuel",
+      "name_en": "Hit-to-impact mapping",
+      "t": "0:05.03 ; 0:07.52 ; 0:12.52",
+      "frames": "f300 ; f452 ; f751",
+      "fps": 60,
+      "mechanics": "Les trois plus fortes attaques (5,03 / 7,52 / 12,52 s) déclenchent les trois plus gros changements d'état : glitch (aberration + barré à f300-f302), bloom orange (pic f452), flash + logo (f750-f751). Image en avance de 0 à 2 im sur l'attaque. Les impacts graves isolés correspondent aux courbes : ruptures nettes sur les coups, lentes entre eux.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f303.jpg ; microM-002-move-f453.jpg ; microM-003-cut-f750.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Trait de lumière rasante le long des arêtes d'un X géant",
+      "name_en": "Edge light trace",
+      "t": "0:00-0:02.10",
+      "frames": "f0-f126",
+      "fps": 60,
+      "mechanics": "Le X occupe tout le cadre en diagonale, gris très sombre (#1A1716) sur noir. Un segment de braise #FF6A3D d'≈8 % de la largeur, avec halo, glisse le long d'une arête vers le haut-droite à ≈15 % de la largeur par seconde (linéaire probable) ; un second segment apparaît en bas vers 1,2-1,5 s. Halo chaud diffus derrière. Ambiance, mais rien de lisible pendant 2 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul du macro au logo entier",
+      "name_en": "Macro-to-logo pull-back",
+      "t": "0:02.10-0:03.00",
+      "frames": "f126-f180",
+      "fps": 60,
+      "mechanics": "Le cadrage passe d'une arête du X (échelle ≈×6) au X entier (≈75 % H à 2,5 s), puis au petit X centré (≈17 % H à 3,0 s) : recul ≈×5 en ≈0,9 s, probablement en deux temps (fin du premier vers 2,48 s, juste avant la mesure 2). Les arêtes gardent leur liseré orange. Mesure imprécise : image très sombre.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende mot à mot en fondu",
+      "name_en": "Word-by-word fade-in caption",
+      "t": "0:03.00-0:03.60",
+      "frames": "f180-f216",
+      "fps": 60,
+      "mechanics": "« You thought the X meant one thing. » en grotesque ≈1,6 % H gris #7C7C7C, X en glyphe blanc gras dans la phrase, centrée à ≈62 % de la hauteur. Les mots passent de 0 à 100 % d'opacité l'un après l'autre (≈0,1 s d'écart) ; « one thing. » encore estompé à 3,5 s. S'efface en ≈10 im à f290-f299, juste avant le glitch.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; extra-01.jpg ; microM-001-move-f303.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le X contour devient glyphe et glisse, le mot se découvre par masque",
+      "name_en": "Logo morph and masked word reveal",
+      "t": "0:03.77-0:04.00",
+      "frames": "f226-f240",
+      "fps": 60,
+      "mechanics": "f226 : le X contour (≈17 % H) se floute horizontalement ; f227 : il devient glyphe blanc ≈7 % H et glisse vers la gauche de ≈23 % de la largeur en 6 im (f226-f232) avec flou de mouvement, ease-out. Simultanément « = Twitter » se découvre de gauche à droite par masque : « Tw » (f228), « Twit » (f230), « Twitte » (f232), complet f240, 12 im, ease-out. Départ sur le temps f226,8.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 224, "to": 240, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Aberration chromatique d'attaque",
+      "name_en": "Chromatic fringe hit",
+      "t": "0:05.00-0:05.05",
+      "frames": "f300-f303",
+      "fps": 60,
+      "mechanics": "Sur l'attaque 5,03 s : franges orange à gauche et bleues à droite des lettres (décalage ≈0,4 % de la largeur), halo chaud qui s'allume derrière le texte, le X pâlit. 3 im avant que le barré n'arrive.",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f303.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Barré rouge qui raye le mot",
+      "name_en": "Red strike-through",
+      "t": "0:05.03-0:05.10",
+      "frames": "f302-f306",
+      "fps": 60,
+      "mechanics": "Une ligne rouge #D23C2C de ≈0,3 % H avec léger glow traverse « = Twitter » à mi-hauteur (de x≈37 % à x≈83 %) dès f302, sur le temps ; le X se tord en même temps en trait diagonal rouge-orange. Geste éditorial clair : on raye l'ancienne définition.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f303.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte brouillé en caractères aléatoires",
+      "name_en": "Text scramble",
+      "t": "0:05.17-0:05.70",
+      "frames": "f310-f342",
+      "fps": 60,
+      "mechanics": "À partir de f310, les lettres de « Twitter » sont remplacées de gauche à droite par des caractères aléatoires renouvelés chaque image (Uwitter, NQitter, AJ*tter, 5D#er, $E7/9r, %FGRO), avec un fantôme décalé du mot. ≈1 lettre toutes les 2 im, puis tout le mot devient aléatoire.",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f303.jpg",
+      "illus": {"from": 298, "to": 323, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Mot qui se désagrège en particules, puis « ? » en serif italique",
+      "name_en": "Text disintegration",
+      "t": "0:05.70-0:06.50",
+      "frames": "f342-f390",
+      "fps": 60,
+      "mechanics": "Le mot brouillé se dissout en points qui dérivent vers la droite et s'éteignent (visible à 6,0 s) ; à sa place apparaît un « ? » blanc en serif italique ≈9 % H. Le « = » reste en grotesque : la question prend une autre voix typographique.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Contraste grotesque / serif italique pour les mots d'attente",
+      "name_en": "Sans vs italic serif contrast",
+      "t": "0:06.30-0:14.10",
+      "frames": "f378-f846",
+      "fps": 60,
+      "mechanics": "Tout le texte informatif est en grotesque demi-grasse ; seuls « ? » (≈9 % H) et « Soon. » (≈6 % H) sont en serif italique fine, plus grands que le texte voisin. L'italique marque l'énigme et la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg ; overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "« = ? » aspiré dans le X qui se recentre",
+      "name_en": "Absorb and recenter",
+      "t": "0:07.30-0:07.50",
+      "frames": "f438-f450",
+      "fps": 60,
+      "mechanics": "« = ? » glisse vers la gauche et se resserre sur le X en ≈6 im (f438-f444) en s'estompant ; le X, seul, se déplace de x≈43 % au centre et grossit de ≈7 % à ≈13 % H en ≈6 im (f444-f450), ease-out, ses arêtes s'allument en orange.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Explosion de lumière sur le temps : bloom, rayons pointillés, anneau",
+      "name_en": "Light burst",
+      "t": "0:07.50-0:07.60",
+      "frames": "f450-f456",
+      "fps": 60,
+      "mechanics": "Halo orange #C8643C qui monte de r≈10 % à r≈18 % H (f450-f452, pic sur le temps f451,6 et l'attaque 7,52 s), des lignes pointillées partent en diagonale le long des axes du X (f451-f455), un anneau fin r≈10 % H apparaît à f453 ; le halo retombe en ≈4 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le X s'ouvre en quatre branches et encadre la carte suivante",
+      "name_en": "Logo opens into a frame",
+      "t": "0:07.58-0:07.80",
+      "frames": "f455-f468",
+      "fps": 60,
+      "mechanics": "Les quatre branches du X se séparent au centre et s'écartent en diagonale (≈1,5 % H par image puis moins, ease-out, f455-f464) pour former des chevrons ; une carte de post (≈10 % de largeur, bordure rouge) apparaît en fondu entre elles en 4 im (f465-f468), puis grandit à ≈28 % de la largeur (f474). Le logo devient le cadre du contenu : transformation motivée.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f453.jpg ; extra-02.jpg",
+      "illus": {"from": 444, "to": 472, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes de posts qui se multiplient en mur incliné",
+      "name_en": "Multiplying UI cards wall",
+      "t": "0:07.90-0:10.00",
+      "frames": "f474-f600",
+      "fps": 60,
+      "mechanics": "Carte centrale à bordure rouge, puis pile de 3 (≈8,1 s), inclinaison 3D en perspective (≈20° probable) et arrivée d'une carte vidéo verticale à droite (8,2-8,4 s), colonnes latérales (8,9 s), puis mur de ≈20 cartes en 5 colonnes à 10,0 s. Cartes gris-brun #2B2623 à ≈20 % de luminance, faux texte en barres, badge X rouge en haut à droite, flou de profondeur sur les bords. Contenu illisible.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling arrière lent sur le mur de cartes",
+      "name_en": "Slow dolly-out",
+      "t": "0:08.50-0:10.00",
+      "frames": "f510-f600",
+      "fps": 60,
+      "mechanics": "La colonne centrale passe de ≈25 % à ≈12 % de la largeur en 1,5 s, quasi linéaire, pendant que de nouvelles cartes entrent par les bords : le recul fait découvrir la multiplication plutôt que de l'animer carte par carte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement des cartes en particules (X miniatures)",
+      "name_en": "UI-to-particles collapse",
+      "t": "0:10.00-0:10.30",
+      "frames": "f600-f618",
+      "fps": 60,
+      "mechanics": "Sur le premier temps de la mesure 5 (f601), chaque carte rétrécit sur place (≈×0,7 à f606) en s'assombrissant, puis devient un point à f612 et un petit X blanc ou rouge à f618 : ≈80 particules. 18 im, ease-in. Les éléments gardent leur position : continuité spatiale.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Constellation de X reliés (graphe réseau) avec poussée de caméra",
+      "name_en": "Linked particle constellation",
+      "t": "0:10.30-0:11.70",
+      "frames": "f618-f702",
+      "fps": 60,
+      "mechanics": "Les X miniatures (blancs #EDEDED et quelques rouges #D23C2C) se relient par des lignes de 1 px à faible opacité, les rouges entre eux en rouge ; la caméra avance : les X grossissent de ≈1 % à ≈2,5 % H et sortent du cadre, passant de ≈80 à ≈30 visibles. Mouvement lent, continu.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Vortex de convergence vers un point lumineux",
+      "name_en": "Convergence vortex",
+      "t": "0:11.65-0:11.90",
+      "frames": "f699-f714",
+      "fps": 60,
+      "mechanics": "Les X se mettent à tourner autour du centre et s'y engouffrent avec des traînées courbes (flou de mouvement rotatif) ; cœur orange lumineux à f708 ; à f714 il ne reste qu'un petit X lumineux (≈7 % H). ≈15 im, accélération forte (ease-in). Converge sur le 4e temps de la mesure 5.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 696, "to": 720, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash chaud et logo en mise au point sur le coup",
+      "name_en": "Warm flash and focus-in logo",
+      "t": "0:12.50-0:12.60",
+      "frames": "f750-f756",
+      "fps": 60,
+      "mechanics": "f750 : tout le cadre s'éclaire en brun chaud (#3A2A22) avec une tache de lumière (flare) à droite du centre, le X s'efface ; f751 : « 🔥 SuperX » apparaît très flou en haut (y≈37 %, ≈4,5 % H) ; net à f753-f756. Mise au point en ≈5 im, ease-out. Seule coupe franche de la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f750.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan mot à mot en entrée floue (blur-in)",
+      "name_en": "Word-by-word blur-in",
+      "t": "0:12.93-0:13.30",
+      "frames": "f776-f798",
+      "fps": 60,
+      "mechanics": "« X was never just one. » (≈3,5 % H, blanc) : chaque mot passe de flou et transparent à net en ≈10 im, ≈5 im d'écart entre mots (X f776, was f781, never f786, just f791, one. f795). Même recette pour « Soon. » (f826-f838) et l'URL (f840-f848).",
+      "verdict": "cliche",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carton final empilé centré",
+      "name_en": "Stacked centered end card",
+      "t": "0:14.10-0:15.06",
+      "frames": "f846-f899",
+      "fps": 60,
+      "mechanics": "Axe central : logo 🔥 SuperX à y≈37 %, slogan à y≈49 %, « Soon. » à y≈60 %, URL « superx.so » ≈1 % H gris à y≈70 %. Une traînée lumineuse (comète) part du X du logo vers le haut-droite. Hiérarchie claire mais petits corps : le slogan ne fait que 3,5 % H.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Noir chaud, halo radial et anneaux concentriques",
+      "name_en": "Warm radial glow background",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fond #0B0908 avec halo brun-rouge #2A1510 centré (≈40 % H de rayon) qui respire selon les scènes, vignettage fort, anneaux concentriques à peine visibles (vus à 12,0 s). Aucun motif animé distinct.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg ; microM-003-cut-f750.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette nuit et braise, rouge réservé aux éléments marqués",
+      "name_en": "Ember-on-black palette",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Noir chaud, blanc pour le texte, orange braise pour la lumière, rouge pour ce qui est désigné (barré, carte active, X rouges de la constellation, badges). Luminance moyenne très basse : la plupart des plans restent sous 25 % de luminance hors texte.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture longs sur les cartons-questions",
+      "name_en": "Long reading holds",
+      "t": "0:04.00-0:05.00 ; 0:06.30-0:07.30",
+      "frames": "f240-f300 ; f378-f438",
+      "fps": 60,
+      "mechanics": "« X = Twitter » reste fixe ≈1 s (60 im) et « X = ? » ≈1,3 s : 2 temps et 2 temps de plus sans geste. Pour un texte de 2 à 3 mots, 0,5 s suffit ; ici le suspense s'étire au lieu de monter.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg ; overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Look at my product roadmap » : Claude avait accès au dépôt ou à la feuille de route et en a tiré le concept (pluralité des X, multi-comptes probable). Mais il garde la fonctionnalité secrète (« Soon. ») : un teaser au sens strict, peut-être trop vague."},
+    {"kind": "direction", "insight": "« Dynamic » et « go all out » sans référence visuelle ont produit une accumulation d'effets (glitch, bloom, particules, vortex, blur-in) plutôt qu'un rythme dense : la DA sombre et les maintiens d'1 s contredisent « dynamique »."},
+    {"kind": "structure", "insight": "La durée imposée (15 s) a été traitée comme 6 mesures à 96 BPM : chaque scène démarre sur un temps, quatre sur un premier temps de mesure. Donner une durée exacte aide le modèle à structurer en mesures."},
+    {"kind": "build", "insight": "Débuts de scène multiples exacts de 0,625 s et impacts sonores alignés : timeline et bande-son construites sur les mêmes constantes de tempo (probable), d'où une synchro structurelle sans demande explicite."},
+    {"kind": "qa", "insight": "Aucun contrôle de lisibilité : cartes UI et constellation sous 25 % de luminance, slogan à 3,5 % H. Il fallait demander un contraste minimal et un test sur petit écran."}
+  ],
+  "steal": [
+    "Choisir le tempo pour que la durée tombe juste (15 s = 6 mesures à 96 BPM) et ouvrir chaque scène sur un premier temps de mesure.",
+    "Avant le logo, vider la mesure : convergence sur le dernier temps, un temps de silence, puis flash et logo sur le coup suivant.",
+    "Redéfinir un symbole en trois cartons : affirmation, barré rouge sur l'attaque, question en serif italique.",
+    "Faire du logo un cadre : les branches du X s'écartent et deviennent l'écrin de la carte UI suivante.",
+    "Chaîne de réduction : mur de cartes → effondrement en particules sur un premier temps → constellation reliée → vortex → un seul point."
+  ],
+  "flaws": [
+    "Image trop sombre : cartes UI et constellation sous 25 % de luminance, illisibles sur mobile.",
+    "Intro de 3,7 s quasi noire avec un seul trait de lumière lent : accroche faible pour 15 s.",
+    "Maintiens de 1 s et 1,3 s sur des cartons de 2-3 mots : temps morts contraires à la grammaire 1600.",
+    "Effets génériques de vidéo IA : texte brouillé aléatoire, aberration chromatique, blur-in sur chaque texte.",
+    "Les cartes arrivent hors temps (8,3 et 8,9 s) alors que toutes les scènes sont calées sur la mesure."
+  ],
+  "deep_study": {"worth": false, "why": "La leçon principale (scènes calées sur les mesures, silence avant le logo) se lit déjà à 2 im/s. Les effets sont génériques et l'image trop sombre pour gagner à une étude continue à 60 fps ; seul le X qui s'ouvre en cadre (f444-f472) mérite un arrêt image par image."}
+}

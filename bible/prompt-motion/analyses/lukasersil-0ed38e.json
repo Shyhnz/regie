@@ -1,0 +1,462 @@
+{
+  "slug": "lukasersil-0ed38e",
+  "title": "Motion techniques showreel",
+  "handle": "@lukasersil",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Concept Kandinsky tenu (point → ligne → plan → volume → fluide → particules → motion), chaque chapitre né du précédent, grille 128 BPM respectée, rewind et boucle ; bémols : fluide et particules génériques, peu lisibles.",
+  "summary": "Showreel de 15 s construit sur « Point et ligne sur plan » de Kandinsky : un point lumineux trace une ligne, les lignes deviennent le mot LINE, des barres primaires balaient le plan Bauhaus, les formes prennent du volume sur le drop, fusionnent en sphère chromée, fondent en fluide, éclatent en particules qui écrivent MOTION. Rewind à la double-croche, iris, titre, boucle. Fort : concept et synchro. Faible : fluide et particules génériques.",
+  "prompt_vs_result": [
+    "Le prompt imposait : un showreel de 15 s « qui fait embaucher », une liste de 12 techniques (typo cinétique, 2D/3D, fluides, particules, distorsion, masques, lumière, caméra), un rythme rapide, des plans qui s'enchaînent naturellement, une vraie direction artistique plutôt qu'un catalogue.",
+    "Claude a décidé seul : le fil Kandinsky/Bauhaus 1923 (point, ligne, plan, puis volume, fluide, particules, motion), la triade bleu-rouge-jaune sur papier crème, le HUD de chapitres, la grille de 32 temps à 128 BPM, la bande-son, le rewind récapitulatif et la boucle.",
+    "Bien cadré : « art-directed rather than a random collection » a produit un concept qui ordonne les effets. Mal cadré : la liste d'effets impose fluide et particules hors concept, les plus faibles ; rien sur la musique, la lisibilité ou le nombre de looks."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0F0E13", "role": "fond nuit légèrement violacé (POINT, LINE, MOTION), avec grille de points #2A2A2E"},
+      {"hex": "#FDFCFD", "role": "cœur du point lumineux, flashs blancs"},
+      {"hex": "#EEEBE6", "role": "papier crème (PLANE, FIN) et lettres crème de LINE / MOTION"},
+      {"hex": "#2B3AF4", "role": "bleu Bauhaus : cercle, sphère, particules"},
+      {"hex": "#EB2A2A", "role": "rouge : carré, cube, « '26 »"},
+      {"hex": "#F5CF24", "role": "jaune : triangle, prisme, reflets"},
+      {"hex": "#151417", "role": "encre noire : SHOWREEL, tuiles de la mosaïque"},
+      {"hex": "#12131A", "role": "studio 3D sombre (sol réfléchissant #343134)"}
+    ],
+    "type": "Grotesque variable très grasse (probable Archivo, axes WGHT/WDTH affichés) : LINE étroite ≈ 80 % de la hauteur, MOTION et SHOWREEL extra-larges ≈ 12-21 % ; POINT en matrice de points ; mono capitales interlettrées ≈ 1,2 % pour le HUD.",
+    "texture": "Grain fin permanent, vignette légère ; halo et traînée anamorphique horizontale du point ; grille de points fins sur le noir ; flou de mouvement directionnel sur les bandes et les barres ; aberration chromatique RVB sur MOTION et pendant le rewind ; matériaux PBR brillants, sol noir réfléchissant et faible profondeur de champ en 3D ; reflets néon sur la sphère chromée ; flou radial (zoom blur) avant les particules ; liseré chaud flou au bord de l'iris.",
+    "style": "Bauhaus cinétique, HUD technique, abstraction",
+    "coherence": "Le fil Kandinsky (dimension qui augmente : point, ligne, plan, volume) et la triade bleu/rouge/jaune liée aux formes (cercle bleu, carré rouge, triangle jaune, correspondance de Kandinsky au Bauhaus en 1923, citée à l'écran) traversent tous les chapitres, y compris le fluide et les particules (mêmes trois couleurs). Le HUD numérote les 8 chapitres et affiche un relevé technique propre à chacun. Alternance nuit / papier crème. Ce qui casse un peu : le fluide et l'hyperespace de particules ont un look de démo WebGL moins dessiné que les chapitres Bauhaus."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM réels : le HUD affiche « 128 BPM » et « 32 BEATS 15.000 S » (15 s = 32 temps exacts) ; détection 127,8 BPM, netteté 7,46. Temps = 28,1 im à 60 fps, demi-temps = 14,1 im, double-croche = 7 im. Synchro serrée : 17 gestes clés sur 19 (hors image 0) à ±2 im d'un temps ou demi-temps (hasard ≈ 36 %) ; les 7 coupes du rewind tombent sur la grille de double-croches. Chapitres : POINT 0-1,4 s, LINE 1,4-3,4 s, PLANE 3,4-5,6 s, VOLUME 5,6-7,6 s, FLUID 7,6-9,8 s, PARTICLE 9,8-11,1 s, MOTION 11,1-12,2 s, REWIND 12,2-13,1 s, FIN 13,1-15 s. Un geste toutes les 0,25 à 0,5 s ; aucune coupe franche hors flashs (f338, f675, f788), rewind et coupe de boucle (f891) : les chapitres s'enchaînent par morphing, volets et fontes de matière. Seul maintien : l'écran de fin (13,83-14,72 s, 0,9 s) pendant que la signature s'écrit. Densité maximale au rewind (7 plans en 0,92 s), respiration volontaire de 0,2 s (formes figées) pendant le silence avant le drop.",
+    "timeline": [
+      {"t": "0:00-0:00.48", "what": "Point lumineux sur noir à grille de points, traînée horizontale ; onde annulaire sur le coup d'ouverture", "technique": "onde de choc annulaire"},
+      {"t": "0:00.48-0:01.00", "what": "« POINT » s'allume en matrice de points sur le 2e temps, 2e onde, puis s'éteint", "technique": "mot en matrice de points"},
+      {"t": "0:01.00-0:01.40", "what": "Le point se charge puis file à droite en traçant la ligne (« zap » à 1,17 s)", "technique": "le point trace la ligne"},
+      {"t": "0:01.40-0:01.88", "what": "La ligne ondule sur le temps puis se divise en 8 pistes parallèles sur le demi-temps", "technique": "division en pistes"},
+      {"t": "0:01.88-0:02.40", "what": "Sur le premier kick, des bandes crème glissent sur les pistes et assemblent LINE", "technique": "assemblage par bandes coulissantes"},
+      {"t": "0:02.40-0:03.42", "what": "Les bandes de LINE se désolidarisent en motif de barres en dérive", "technique": "déconstruction en barres"},
+      {"t": "0:03.43-0:03.75", "what": "Barres bleues, jaunes, rouges balaient le cadre : le noir devient papier crème", "technique": "volet de barres primaires"},
+      {"t": "0:03.75-0:04.20", "what": "PLANE : cercle bleu sur le temps, carré +7 im, triangle +14 im, en ressort", "technique": "apparition en ressort décalée"},
+      {"t": "0:04.20-0:04.70", "what": "Les formes morphent l'une dans l'autre avec leur couleur, légendes brouillées", "technique": "morphing forme-couleur"},
+      {"t": "0:04.70-0:05.42", "what": "Mosaïque de tuiles Bauhaus qui explose puis implose dans le carré", "technique": "mosaïque de Truchet"},
+      {"t": "0:05.42-0:05.62", "what": "Formes figées pendant le silence de la bande-son", "technique": "silence avant le drop"},
+      {"t": "0:05.63-0:06.70", "what": "Flash blanc d'une image sur le drop, les formes deviennent sphère, cube, prisme ; orbite de caméra", "technique": "raccord 2D → 3D"},
+      {"t": "0:06.70-0:07.40", "what": "Les volumes fusionnent en sphère chromée, poussée de caméra", "technique": "fusion en métaballe"},
+      {"t": "0:07.40-0:08.10", "what": "Reflets néon sur la sphère, sa surface fond en fluide qui remplit le cadre", "technique": "fonte en fluide"},
+      {"t": "0:08.10-0:09.83", "what": "Fluide à volutes tricolores, titre FLUID en verre, zoom avant et flou radial", "technique": "simulation de fluide"},
+      {"t": "0:09.83-0:10.35", "what": "Sur le kick, le fluide éclate en particules sur noir puis hyperespace", "technique": "éclatement en particules"},
+      {"t": "0:10.35-0:11.20", "what": "Vortex tricolore puis jet de particules qui remplit les lettres de MOTION", "technique": "particules qui écrivent le mot"},
+      {"t": "0:11.25-0:12.20", "what": "Flash gris sur le kick, vague en ruban, échos de contour RVB, poussée jusqu'au débord, déchirure glitch", "technique": "distorsion du mot"},
+      {"t": "0:12.20-0:13.12", "what": "REWIND : les 7 chapitres défilent à l'envers, un plan par double-croche, jusqu'au point", "technique": "rewind récapitulatif"},
+      {"t": "0:13.13-0:13.53", "what": "Flash blanc sur l'impact, disque crème qui s'ouvre, SHOWREEL s'écrit lettre à lettre", "technique": "révélation circulaire"},
+      {"t": "0:13.53-0:14.73", "what": "●■▲, « '26 » rouge, signature mono tapée, maintien", "technique": "écran de fin"},
+      {"t": "0:14.73-0:15.00", "what": "L'iris se referme, coupe sur le point de la première image", "technique": "boucle parfaite"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle 128 BPM, affichée par la vidéo elle-même (« 128 BPM », « 32 BEATS 15.000 S ») ; détection 127,8 BPM, netteté 7,46 ; temps = 28,1 im. Gestes clés (un par geste, hors image 0) : 17 sur 19 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 36 %) — POINT s'allume f29-30 (temps f28,6) ; le point part tracer la ligne f70 (demi-temps f70,9, « zap » à 1,17 s) ; ondulation de la ligne f85 (temps f84,4) ; division en 8 lignes f99 (demi-temps f99,1) ; bandes de LINE f113 (temps f113,1 = premier kick 1,875 s) ; point bleu f226 (temps f225,8) ; flash blanc f338 (drop 5,62 s = f337,4, attaque la plus forte du morceau à 5,631 s) ; reflets néon f450 (temps f451, probable) ; FLUID posé f480 (temps f479, probable) ; éclatement en particules f590 (kick 9,84 s = f590,4) ; flash gris sur MOTION f675 (kick 11,246 s = f674,8) ; échos RVB f691 (demi-temps f690,5) ; début du rewind f732 (temps f732,8) ; flash blanc f788 (impact 13,12 s = f787,2) ; point bleu final f803 (demi-temps f803,2) ; « '26 » f816 (temps f817, probable) ; fermeture de l'iris f884 (tic 14,76 s = f885,6). Ratés : volet de barres f206 (sur une double-croche f204,6, pas sur un temps) et coupe de boucle f891 (+3 im du demi-temps). Les coupes du rewind (f732, f739, f746, f760, f767, f774, f788) sont toutes sur la grille de double-croches de 7 im. Bande-son analysée par double-croche : kick à chaque temps de 1,875 à 4,69 s, kick retiré à 5,16 s, silence total (−97 dB) de 5,51 à 5,62 s pendant lequel les formes restent figées (f325-f337), puis drop. L'indice automatique (départs/demi-temps p corrigé 0,039, basses z = 2,17) sous-estime : orbite, fluide et particules bougent en continu et noient le signal.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "pulsations", "flashs", "texte", "drop"],
+    "style_match": "Électro à 128 BPM, kick régulier, silence puis drop : courbes sèches, coupes à la double-croche et flash sur le drop collent ; le chapitre fluide, plus mou, s'en détache.",
+    "how_built": "Aucune musique dans le prompt : Claude a fixé une grille de 128 BPM et dimensionné la vidéo à 32 temps (15,000 s), qu'il affiche dans le HUD. La bande-son suit la structure image par image : coup à 0 s avec l'onde de choc, « zap » au départ du point, kicks réguliers dès LINE, retrait du kick et silence de 0,12 s avant le drop du passage en 3D, kick coupé et son de rembobinage pendant le rewind, impact réverbéré sur le flash final, tic sur la fermeture de l'iris. Probable bande-son générée en code à partir de la même timeline (type Web Audio), sinon habillage sonore posé sur les événements."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Progression Kandinsky : point → ligne → plan → volume",
+      "name_en": "point-line-plane progression",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Huit chapitres numérotés dans le HUD (01 POINT, 02 LINE, 03 PLANE, 04 VOLUME, 05 FLUID, 06 PARTICLE, 07 MOTION, 08 FIN) qui suivent la dimension croissante de « Point et ligne sur plan » (Kandinsky, cité à l'écran : « KANDINSKY / BAUHAUS 1923 / FORM = COLOUR »). Chaque chapitre naît de l'objet du précédent : le point trace la ligne (f69-f78), la ligne se divise en 8 pistes qui portent les bandes de LINE (f99-f137), des barres primaires balaient le plan (f206-f220), les formes plates prennent du volume (f339), les volumes fusionnent en sphère (f402-f420) qui fond en fluide (f456-f474), le fluide éclate en particules (f590) qui écrivent MOTION (f655-f670). Durées : 1,4 / 2 / 2,2 / 2 / 2,2 / 1,3 / 1,1 s, puis rewind et fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg, extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Durée calculée en temps : 32 temps à 128 BPM",
+      "name_en": "beat-quantized timeline",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Le HUD affiche « 128 BPM » (chapitre MOTION) et « 32 BEATS 15.000 S » (FIN) : la vidéo dure exactement 32 temps de 0,46875 s (28,125 im). Hiérarchie de calage : gestes forts sur les temps (bandes de LINE f113, point bleu f226, flash f338, particules f590, flash f675, rewind f732, flash f788), gestes secondaires sur les demi-temps (départ du point f70, division des lignes f99, échos RVB f691, point bleu final f803), détails sur la double-croche de 7 im (décalage des formes, coupes du rewind). 17 gestes clés sur 19 à ±2 im (hasard ≈ 36 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f122.jpg, microM-003-cut-f339.jpg, microM-004-move-f589.jpg, microM-005-cut-f675.jpg, microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant le drop, image figée",
+      "name_en": "pre-drop silence freeze",
+      "t": "0:05.42-0:05.65",
+      "frames": "f325-f339",
+      "fps": 60,
+      "mechanics": "La mosaïque implose vers f324 ; de f325 à f337 (13 im = 0,22 s) les trois formes restent parfaitement immobiles au centre du papier crème. Dans la bande-son, le kick attendu à 5,16 s manque et un silence total (−97 dB) occupe la double-croche 5,51-5,62 s. Le drop (5,62 s, +35,7 dB, attaque la plus forte du morceau) tombe sur le flash blanc f338 puis la 3D f339. Le vide sonore et visuel prépare l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f339.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc d'une image et raccord 2D → 3D",
+      "name_en": "white-flash match cut 2D to 3D",
+      "t": "0:05.63-0:06.67",
+      "frames": "f338-f400",
+      "fps": 60,
+      "mechanics": "f338 : une seule image blanche (#FDFDFD) sur le drop. f339 : les mêmes formes, aux mêmes places et tailles (cercle bleu à ≈ 26 % de la largeur, carré rouge au centre, triangle jaune à ≈ 75 %), deviennent une sphère, un cube et un prisme triangulaire vus de face sur un sol noir réfléchissant. La caméra orbite de ≈ 35° en 20 im (f339-f359, ease-out) pour révéler la profondeur ; le cube gonfle légèrement à f339-f341 (effet coussin) ; reflets et ombres colorées se posent. Lecture immédiate : « le même objet, une dimension de plus ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f339.jpg",
+      "illus": {"from": 330, "to": 360, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Onde de choc annulaire depuis le point",
+      "name_en": "ring shockwave pulse",
+      "t": "0:00-0:00.20 ; 0:00.50-0:00.70 ; 0:13.07-0:13.12",
+      "frames": "f0-f12, f30-f42, f784-f787",
+      "fps": 60,
+      "mechanics": "Un anneau gris clair (épaisseur ≈ 3 % de la hauteur, opacité ≈ 40 %) part du point et grandit d'un rayon de ≈ 27 % à ≈ 90 % de la hauteur en 12 im (pas d'environ 20 % toutes les 3 im, léger ease-out) en s'estompant. Trois occurrences : coup d'ouverture (f0), allumage de POINT (f30, temps f28,6), retour au point juste avant le flash final (f784-f787). Ponctuation simple qui rend le point « sonore ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot en matrice de points allumé dans la grille du fond",
+      "name_en": "dot-matrix word lit from the background grid",
+      "t": "0:00.48-0:01.00",
+      "frames": "f29-f60",
+      "fps": 60,
+      "mechanics": "Le fond noir porte une grille de points fins (≈ 0,4 % de la hauteur, #2A2A2E). Sur le temps f28,6, les points qui dessinent « POINT » s'allument d'un coup (blanc ≈ 60 %) : capitales en matrice de points ≈ 89 % de la largeur et ≈ 29 % de la hauteur, centrées sur le point lumineux. Maintien 15 im (f30-f45), extinction par fondu linéaire en ≈ 13 im (f45-f58). Le mot est fait de la même matière que le fond.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point s'élance et trace la ligne",
+      "name_en": "point draws the line",
+      "t": "0:01.00-0:01.40",
+      "frames": "f60-f84",
+      "fps": 60,
+      "mechanics": "f60-f69 : le point se charge (halo d'un rayon de ≈ 15 % à ≈ 30 % de la hauteur, traînée anamorphique qui s'allonge). f69-f78 : il file vers la droite (de 50 % à 100 % de la largeur en ≈ 8 im, ease-in) en laissant une ligne blanche nette ; une bande de la grille de points s'éclaire sur son passage. Départ calé sur un « zap » aigu de la bande-son à 1,17 s (f70) et sur le demi-temps f70,9.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ligne qui ondule puis se divise en 8 pistes",
+      "name_en": "line wave then split into parallel tracks",
+      "t": "0:01.40-0:01.88",
+      "frames": "f84-f112",
+      "fps": 60,
+      "mechanics": "f85-f96 : la ligne pleine largeur ondule en sinus (amplitude ≈ 2-3 % de la hauteur) puis se raplanit ; départ sur le temps f84,4. f97-f105 : elle se dédouble puis se répartit en 8 lignes parallèles régulièrement espacées (≈ 10 % de la hauteur), en ≈ 8 im, ease-out ; départ sur le demi-temps f99,1. Les 8 lignes deviennent les rails des bandes de LINE.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot assemblé par bandes horizontales coulissantes",
+      "name_en": "sliced strip type assembly",
+      "t": "0:01.88-0:02.30",
+      "frames": "f113-f137",
+      "fps": 60,
+      "mechanics": "Sur le premier kick (f113 = temps f113,1), des bandes crème (#EEEBE6) glissent le long des 8 pistes, chacune depuis la gauche ou la droite, avec un fort flou de mouvement horizontal ; décalage entre bandes de 1 à 4 im ; chacune freine en ease-out fort (expo). Le mot LINE, capitales étroites très grasses (« WGHT 879 WDTH 062% » dans le HUD), ≈ 95 % de la largeur et ≈ 80 % de la hauteur, est lisible à f125 et posé à f137 (24 im = 0,4 s). Les interstices noirs entre bandes restent visibles : le mot reste fait de lignes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f122.jpg",
+      "illus": {"from": 110, "to": 140, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Bandes qui se désolidarisent en motif de barres",
+      "name_en": "slit-shift breakup",
+      "t": "0:02.40-0:03.42",
+      "frames": "f141-f205",
+      "fps": 60,
+      "mechanics": "Après un court maintien, les bandes de LINE glissent de nouveau en sens alternés et se fragmentent en rectangles crème séparés par de fins filets verticaux gris (restes des fûts) : à 3,0 s le mot n'est plus qu'un motif de barres sur noir, en dérive horizontale continue avec flou (f194-f205). Le mot se déconstruit pour préparer le plan, mais la dérive n'est pas calée et le passage est un peu mou.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-002-move-f209.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet de barres primaires (noir → papier crème)",
+      "name_en": "primary-colour bar wipe",
+      "t": "0:03.43-0:03.75",
+      "frames": "f206-f224",
+      "fps": 60,
+      "mechanics": "Des barres bleues (#2B3AF4), jaunes (#F5CF24) et rouges (#EB2A2A), hautes d'≈ 1/8 de la hauteur (une par piste), entrent par les deux bords avec flou de mouvement et traversent le cadre en ≈ 10 im ; derrière elles le noir est remplacé par le papier crème. Plein cadre crème à f220 (14 im = 0,23 s, un demi-temps). Départ f206, sur une double-croche (f204,6 +1,4) mais pas sur un temps. Les barres sont les têtes du volet : la couleur annonce le chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f209.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Apparition des formes en ressort, décalées à la double-croche",
+      "name_en": "spring pop-in staggered by sixteenths",
+      "t": "0:03.75-0:04.10",
+      "frames": "f225-f246",
+      "fps": 60,
+      "mechanics": "Point bleu à f225-f226 (temps f225,8) qui gonfle en cercle : diamètre ≈ 41 % de la hauteur à f234 puis ≈ 34 % à f240 (dépassement ≈ 20 %, ressort). Carré rouge vers f232 (+7 im), triangle jaune vers f239 (+14 im = demi-temps f239,9), chacun avec un dépassement d'≈ 10 %. Les trois formes s'alignent au centre à ≈ 31 %, 50 % et 68 % de la largeur, ≈ 33 % de la hauteur chacune, légendes mono dessous.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f209.jpg (f225-f229), extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morphing cyclique forme ↔ couleur (Kandinsky)",
+      "name_en": "form-colour morph cycling",
+      "t": "0:04.20-0:04.70",
+      "frames": "f253-f282",
+      "fps": 60,
+      "mechanics": "Chaque emplacement morphe vers la forme suivante en changeant aussi de couleur selon la correspondance de Kandinsky (cercle bleu → carré rouge → triangle jaune → cercle bleu) : le cercle s'aplatit en goutte (f258) puis devient carré (f264-f270). Deux pas de cycle de ≈ 9 im chacun, départs probables vers f254 (temps f253,9) et f268 (demi-temps f268,0). Les légendes se recodent par brouillage de caractères à chaque pas.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte brouillé qui se décode",
+      "name_en": "text scramble decode",
+      "t": "0:04.10-0:04.70",
+      "frames": "f246-f282",
+      "fps": 60,
+      "mechanics": "L'en-tête mono « KANDINSKY / BAUHAUS 1923 / FORM = COLOUR » (≈ 1,2 % de la hauteur, interlettrage ≈ +25 %) et les légendes des formes s'écrivent par caractères aléatoires qui se fixent de gauche à droite (« KANDINSKY # J9 » à f252, complet à f276, ≈ 24 im). Les légendes se rebrouillent à chaque morphing (« 02 SQUAV1 [ », « 03 TRI*NN& »). Détail de finition, mais trop petit pour être lu à vitesse réelle.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (recadrage des images f252 et f276)"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mosaïque de tuiles Bauhaus qui explose puis implose",
+      "name_en": "Truchet tile burst",
+      "t": "0:04.72-0:05.42",
+      "frames": "f283-f325",
+      "fps": 60,
+      "mechanics": "Des tuiles en quarts et demi-cercles (noir #151417, bleu, rouge, jaune) jaillissent du centre derrière les formes (f288), remplissent la grille de 16 × 9 cellules de 120 px (« GRID 16X9 120 PX » dans le HUD) à f294, pivotent par quarts de tour (f300-f318), puis se rétractent dans le carré (f318-f324). ≈ 0,7 s. Départ probable sur le temps f282,1 (kick 4,686 s) ; fin sur le demi-temps f324,4. Compression puis explosion du motif.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-003-cut-f339.jpg (f324)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Orbite de caméra qui révèle les volumes",
+      "name_en": "reveal orbit",
+      "t": "0:05.65-0:06.70",
+      "frames": "f339-f402",
+      "fps": 60,
+      "mechanics": "Caméra 3D (« FOV 50.0° F/1.4 » dans le HUD, faible profondeur de champ sur la grille du sol) qui tourne d'environ 50-60° de droite à gauche autour des trois volumes en ≈ 1 s, ease-out ; le cube s'élève d'≈ 10 % de la hauteur et bascule (f372-f384), le prisme pivote vers la caméra. Reflets nets sur le sol noir #343134, ombres colorées.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f339.jpg, extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Fusion en métaballe vers une sphère chromée",
+      "name_en": "metaball merge",
+      "t": "0:06.70-0:07.40",
+      "frames": "f402-f444",
+      "fps": 60,
+      "mechanics": "Les trois volumes se rapprochent et se fondent en une gélule aux trois couleurs (f408), puis en sphère sombre (f414) qui devient chrome noir (f420) avec reflets bleus, rouges et jaunes. Poussée de caméra (push-in) : sphère ≈ 25 % de la hauteur à f420, ≈ 70 % à f444, plein cadre vers f450. La fusion transforme trois objets en un seul, prêt à fondre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Reflets néon puis fonte de la sphère en fluide",
+      "name_en": "neon reflections melt into fluid",
+      "t": "0:07.40-0:08.10",
+      "frames": "f444-f486",
+      "fps": 60,
+      "mechanics": "Sur la sphère chromée apparaissent des tracés néon (bleu électrique, rouge, blanc) vers f447-f450 (temps f451,1, probable) ; dès f456 sa surface se change en marbrure liquide aux couleurs Bauhaus qui déborde de la silhouette et remplit le cadre en ≈ 18 im (f456-f474).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en verre posé sur le fluide",
+      "name_en": "glass outline title",
+      "t": "0:07.90-0:09.50",
+      "frames": "f474-f570",
+      "fps": 60,
+      "mechanics": "« FLUID » en capitales grasses, contour clair fin et remplissage transparent légèrement réfractant (effet verre), ≈ 78 % de la largeur et ≈ 32 % de la hauteur ; s'assemble de f474 à f486 (pose probable sur le temps f479,3) puis flotte en se déformant avec le fluide. Lisibilité faible : contour gris sur marbrure chargée.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Simulation de fluide à volutes",
+      "name_en": "curl-noise fluid simulation",
+      "t": "0:07.60-0:09.83",
+      "frames": "f456-f589",
+      "fps": 60,
+      "mechanics": "Marbrures à volutes (« CURL 26 1280X720 » dans le HUD) en bleu, rouge, jaune, blanc et noir, mouvement lent et continu (énergie de mouvement basse et régulière de 6 à 9 s), puis zoom avant dans la matière de f560 à f589 avec une texture qui s'affine et un flou radial croissant. 2,2 s : le chapitre le plus long et le moins dessiné du film.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-004-move-f589.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flou radial puis éclatement en particules",
+      "name_en": "zoom-blur burst into particles",
+      "t": "0:09.67-0:10.35",
+      "frames": "f580-f620",
+      "fps": 60,
+      "mechanics": "Flou radial (zoom blur) croissant sur le fluide de f580 à f589, puis f590 l'image se rompt : le fluide se dissout en particules clairsemées sur noir (f590-f594, ≈ 4 im de respiration), sur le kick de 9,84 s (f590,4). Les particules accélèrent ensuite vers la caméra en traînées radiales (hyperespace) qui densifient le cadre de f595 à f620.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f589.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Vortex tricolore puis particules qui écrivent le mot",
+      "name_en": "particles converge into type",
+      "t": "0:10.35-0:11.20",
+      "frames": "f620-f672",
+      "fps": 60,
+      "mechanics": "« 230,400 PTS » dans le HUD (soit 640 × 360 particules) : vortex en spirale bleu, jaune et rouge (10,5 s), puis un jet de particules venu de la droite remplit les lettres de « MOTION » de gauche à droite comme une comète (f655-f670) ; les dernières lettres (O, N) se remplissent en ≈ 10 im, flou de mouvement sur le jet. Le vortex est générique ; la convergence vers le mot est l'idée à garder.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-005-cut-f675.jpg (f660-f668)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash gris et vague en ruban à travers le mot",
+      "name_en": "flash and ribbon wave distortion",
+      "t": "0:11.25-0:11.47",
+      "frames": "f675-f688",
+      "fps": 60,
+      "mechanics": "f675 : une image grise (≈ 50 % de blanc) sur le kick de 11,246 s (f674,8). f676-f688 : une vague traverse MOTION (capitales extra-larges crème, ≈ 75 % de la largeur, ≈ 21 % de la hauteur) : les lettres se tordent et des rubans gris translucides s'enroulent derrière ; le mot redevient net à f689 (13 im).",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f675.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Échos de contour RVB, compression et poussée",
+      "name_en": "RGB stroke echoes and push-in",
+      "t": "0:11.52-0:12.20",
+      "frames": "f691-f731",
+      "fps": 60,
+      "mechanics": "f691 (demi-temps f690,5) : des copies en contour rouge et bleu se décalent horizontalement de part et d'autre du mot, qui se comprime en largeur (axe de largeur variable) ; puis le mot s'élargit et grossit jusqu'à déborder du cadre (≈ 105 % de la largeur, ≈ 30 % de la hauteur à 12,0 s) avec aberration chromatique ; f724-f731 : une bande horizontale décalée en RVB le déchire (glitch) juste avant le rewind.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f675.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rewind récapitulatif à la double-croche",
+      "name_en": "sixteenth-note rewind recap",
+      "t": "0:12.20-0:13.12",
+      "frames": "f732-f787",
+      "fps": 60,
+      "mechanics": "Après MOTION, tout le film défile à l'envers en plans de 7 im (1 double-croche à 128 BPM) : PARTICLE (f732-f738), FLUID (f739-f745), VOLUME sphère puis volumes (f746-f759, 14 im), PLANE mosaïque (f760-f766), LINE (f767-f773), POINT (f774-f787). Aberration RVB, HUD « REWIND << » aux couleurs décalées ; dans la bande-son, kick coupé et son de rembobinage. Résume les chapitres en 0,92 s et ramène au point d'origine.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f788.jpg",
+      "illus": {"from": 728, "to": 790, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Point → onde → flash → révélation circulaire",
+      "name_en": "point-to-iris reveal",
+      "t": "0:13.07-0:13.30",
+      "frames": "f784-f798",
+      "fps": 60,
+      "mechanics": "Le point lance une dernière onde (f784-f787), flash blanc d'une image f788 sur l'impact de 13,12 s (f787,2), puis un disque crème jaillit du centre : rayon ≈ 32 % de la hauteur à f789, 44 % à f790, 56 % à f791, 65 % à f792, 74 % à f793, coins couverts à f798 (≈ 10 im, ease-out marqué, bord légèrement flou avec liseré chaud). C'est la recette « tout se réduit à un point puis révélation circulaire ».",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg",
+      "illus": {"from": 782, "to": 800, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui s'écrit centré, lettres qui montent",
+      "name_en": "centred rising letter reveal",
+      "t": "0:13.22-0:13.95",
+      "frames": "f793-f836",
+      "fps": 60,
+      "mechanics": "« SHOWREEL » en grotesque extra-large noire (#151417, ≈ 12 % de la hauteur, ≈ 64 % de la largeur) apparaît lettre par lettre, chacune montant depuis la ligne de base en ≈ 4 im, décalage ≈ 2 im (S-H f795 … L f810), le mot restant centré pendant qu'il s'allonge. Puis ●■▲ (≈ 3 % de la hauteur) au-dessus : point bleu f803 (demi-temps f803,2), carré rouge f806, triangle jaune f811 (décalage ≈ 4 im). f816 (temps f817,3) : « '26 » rouge en exposant, le mot glisse d'≈ 6 % vers la gauche ; signature mono « MOTION DESIGN · ART DIRECTION · 3D · TYPE » tapée en ≈ 20 im, deux filets qui s'étirent depuis le centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f788.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite : l'iris se referme sur le point",
+      "name_en": "seamless loop",
+      "t": "0:14.73-0:15.00",
+      "frames": "f884-f899",
+      "fps": 60,
+      "mechanics": "Après 0,9 s de maintien sur l'écran de fin, les coins s'assombrissent (f884, tic sonore à 14,76 s = f885,6) : le disque crème se referme en ≈ 7 im, puis coupe f891 sur le point lumineux sur noir, identique à la première image (f0). La vidéo tourne en boucle sans couture, et la fin rejoue le début (point → onde).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de chapitres et relevés techniques",
+      "name_en": "chapter HUD with live readouts",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Équerres aux 4 coins (≈ 2 % des bords) ; en haut à gauche « ●■▲ SHOWREEL '26 » ; en haut à droite un timecode qui défile ; en bas à gauche une barre de tirets + « 01 — POINT » … « 08 — FIN » ; en bas à droite un relevé propre à chaque chapitre : « X 0960 Y 0540 », « WGHT 879 WDTH 062% », « GRID 16X9 120 PX », « FOV 49.8° F/1.4 », « CURL 26 1280X720 », « 230,400 PTS », « 128 BPM », « REWIND << », « 32 BEATS 15.000 S ». Mono capitales ≈ 1,2 % de la hauteur, interlettrage ≈ +20 %, crème ou noir selon le fond. Bonne idée de « coulisses », mais le viseur est un tic de vidéo IA et le texte est illisible en lecture réelle.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg (recadrages du HUD f60 à f860)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Triade primaire Bauhaus et alternance nuit / papier",
+      "name_en": "Bauhaus primary triad",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Trois couleurs pures liées chacune à une forme (bleu #2B3AF4 = cercle, rouge #EB2A2A = carré, jaune #F5CF24 = triangle), reprises dans la 3D, le fluide, les particules et la signature finale ; les chapitres alternent nuit #0F0E13 (POINT, LINE, VOLUME, FLUID, PARTICLE, MOTION) et papier crème #EEEBE6 (PLANE, FIN). Le blanc pur est réservé aux flashs et au point.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une grotesque variable pour tout le film",
+      "name_en": "single variable grotesque",
+      "t": "0:01.88-0:14.73",
+      "frames": "f113-f884",
+      "fps": 60,
+      "mechanics": "Une seule famille de titrage, grotesque très grasse à axes variables (probable Archivo, largeur 62-125) : LINE en largeur minimale (« WDTH 062% »), MOTION et SHOWREEL en largeur maximale ; POINT en matrice de points, FLUID en contour verre ; une mono capitales pour tout le texte secondaire. Le changement de largeur sert lui-même d'animation (MOTION se comprime puis s'élargit).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f122.jpg, microM-005-cut-f675.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Effets sonores posés sur les événements visuels",
+      "name_en": "SFX on visual events",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Analyse de la bande-son par double-croche : coup à 0 s (onde de choc), « zap » aigu à 1,17 s (départ du point), kicks à chaque temps dès 1,875 s (bandes de LINE), kick retiré à 5,16 s, silence 5,51-5,62 s, drop 5,62 s (flash et 3D), kick coupé et son de rembobinage 12,18-13,0 s (rewind), impact à 13,12 s (flash final) suivi d'une longue réverbération qui décroît jusqu'à −26 dB sur l'écran de fin, tic à 14,76 s (fermeture de l'iris). Image et son partagent la même timeline.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-003-cut-f339.jpg, microM-006-cut-f788.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Enchaînement continu, coupes réservées aux accents",
+      "name_en": "continuous chaining, cuts only on accents",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "En 15 s, seulement trois coupes franches hors rewind (flashs f338, f675, f788, toutes sur un kick ou un impact) et la coupe de boucle f891 : le reste s'enchaîne par morphing, volets et fontes de matière. Un geste toutes les 0,25-0,5 s ; seul maintien : 0,9 s sur l'écran de fin. Alternance de gestes amples (orbite ≈ 1 s, fluide 2,2 s) et de rafales (rewind : 7 plans en 0,92 s).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« meticulously art-directed rather than like a random collection of effects » : Claude a cherché un fil conceptuel (Kandinsky, point → ligne → plan) qui ordonne la liste d'effets imposée. C'est cette phrase qui transforme un catalogue en récit."},
+    {"kind": "structure", "insight": "« every shot transitioning naturally into the next » a été pris à la lettre : chaque chapitre naît de l'objet du précédent (point → ligne → bandes → plan → volumes → sphère → fluide → particules → mot), avec seulement trois flashs comme coupes franches."},
+    {"kind": "inputs", "insight": "La liste de 12 techniques devient une liste de chapitres : ceux qui sortent du fil Bauhaus (fluide, particules) sont les plus génériques. Lister moins d'effets, ou exiger qu'ils servent tous le même concept, aurait resserré le film."},
+    {"kind": "other", "insight": "Aucune musique ni tempo demandés : Claude a dimensionné la vidéo à 32 temps à 128 BPM, l'affiche dans le HUD et a construit une bande-son (ou un habillage) dont chaque accent correspond à un événement. La synchro vient de cette décision, pas du prompt."},
+    {"kind": "qa", "insight": "Pas de consigne de lisibilité : HUD et légendes à ≈ 1,2 % de la hauteur, FLUID en contour sur fond chargé. Il aurait fallu une taille minimale de texte et un contraste vérifié sur chaque fond."},
+    {"kind": "banned", "insight": "Rien d'interdit : HUD de viseur, aberration RVB et flashs (3 en 15 s), tics fréquents de vidéo IA, restent présents ; les bannir aurait forcé d'autres ponctuations."}
+  ],
+  "steal": [
+    "Dimensionner la vidéo en temps musicaux (15 s = 32 temps à 128 BPM) : chapitres sur les temps, gestes secondaires sur les demi-temps, détails à la double-croche.",
+    "Faire naître chaque chapitre de l'objet du précédent : le point trace la ligne, les lignes portent les bandes du mot, les formes plates prennent du volume.",
+    "Avant le drop, figer l'image pendant un silence de 0,1-0,2 s, puis flash blanc d'une image et changement de dimension (2D → 3D) sur l'attaque.",
+    "Finir par un rewind récapitulatif, un plan par double-croche et par chapitre, jusqu'au premier plan, puis flash et révélation circulaire du titre.",
+    "Boucler : l'iris de fin se referme sur l'image d'ouverture, pour une vidéo qui tourne sans couture sur les réseaux."
+  ],
+  "flaws": [
+    "Chapitre fluide de 2,2 s confus : marbrures chaotiques et titre FLUID en contour verre peu lisible sur fond chargé.",
+    "Hyperespace et vortex de particules : effets de démo WebGL génériques, moins dessinés que les chapitres Bauhaus.",
+    "Trois flashs (blanc, gris, blanc) en 15 s : l'accent commence à se répéter.",
+    "HUD de viseur et légendes à ≈ 1,2 % de la hauteur : tic IA, illisible en lecture réelle.",
+    "Volumes 3D standards (sphère, cube, prisme brillants) au rendu par défaut."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : grille de 128 BPM affichée et respectée (17 gestes sur 19), huit chapitres chaînés sans coupe franche, silence avant le drop, rewind à la double-croche, iris et boucle. À étudier image par image pour les transitions (pistes → bandes, volet de barres, raccord 2D → 3D, iris) et la méthode de synchro."
+  }
+}

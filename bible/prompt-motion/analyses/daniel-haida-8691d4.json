@@ -1,0 +1,439 @@
+{
+  "slug": "daniel-haida-8691d4",
+  "title": "Taxtello bookkeeping app film",
+  "handle": "@daniel_haida",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Chaîne de transitions par objets réellement motivées, courbes premium et calage sur 120 BPM ; mais interface minuscule, image très sombre et un tiers du film immobile l'éloignent du niveau studio.",
+  "summary": "Film produit de 14 s pour une appli de comptabilité allemande, en un seul plan continu : l'icône s'ouvre en tableau de bord, un reçu est aspiré dans sa ligne d'écriture, un montant voyage jusqu'à la facture, une barre se courbe en anneau de score, l'anneau devient le « o » du logo. Transitions par objets exemplaires et calées sur 120 BPM ; interface trop petite et sombre.",
+  "prompt_vs_result": [
+    "Film produit « niveau Apple » de 15 s max pour Taxtello, à partir des vrais écrans et jetons de marque (hex, Plus Jakarta Sans, JetBrains Mono, logo réel), arc chaos → contrôle → clarté → marque, transitions par objets, rythme 115-120 BPM, longue liste d'interdits.",
+    "Claude a choisi la chaîne précise : tuile de l'icône → carte, reçu aspiré dans sa pastille, montant qui voyage vers la facture, barre courbée en anneau, anneau devenu « o » du logo ; l'accroche « Buchhaltung. Zeit für ein Update. » et seulement deux titres.",
+    "Bien cadré : palette en hex, minutage du storyboard et exemples de transitions donnent un film cohérent et enchaîné. Mal cadré : rien sur la lisibilité de l'UI à petite taille ni la luminosité ; la règle « laisser respirer » produit 34 % d'immobilité."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0D18", "role": "fond marine, vignetté jusqu'à #04060C dans les coins"},
+      {"hex": "#161B2D", "role": "surfaces des cartes d'interface"},
+      {"hex": "#24272F", "role": "tuile graphite de l'icône d'ouverture"},
+      {"hex": "#E8B84B", "role": "or de marque : logo, courbe, contours actifs, jauge, anneau"},
+      {"hex": "#F5D07A", "role": "or clair : éclat (glint), reflets"},
+      {"hex": "#34D399", "role": "vert positif : « Beleg verknüpft », montants +, score ≥ 85"},
+      {"hex": "#F87171", "role": "rouge : montants négatifs, barres de critères en défaut"},
+      {"hex": "#F6F4EB", "role": "blanc chaud : titres et chiffres"},
+      {"hex": "#8B93B5", "role": "texte secondaire, « Buchhaltung. » de l'accroche"},
+      {"hex": "#F2EEE4", "role": "papier du ticket de caisse"}
+    ],
+    "type": "Plus Jakarta Sans Bold, casse phrase avec point final, titres ≈ 5,5 % de la hauteur, interlettrage serré ; chiffres en mono (JetBrains Mono probable, 48.260 € ≈ 7 %) ; logotype doré ≈ 9 % ; accroche ≈ 2,3 % bicolore.",
+    "texture": "Fond marine avec vignettage radial fort (coins ≈ #04060C) ; halo chaud au centre de la carte pendant l'ouverture ; ombres portées douces sous les cartes et le ticket ; éclat en étoile à 4 branches avec traînée horizontale (ouverture et logo final) ; panneaux secondaires assombris à ≈ 30-40 % et adoucis (profondeur de champ simulée). Pas de grain, pas de flou de mouvement, pas de reflets brillants : l'interface reste nette.",
+    "style": "Fintech sombre premium, or retenu",
+    "coherence": "Le système tient par la palette réelle de la marque (marine + or rare + vert et rouge strictement sémantiques), une seule famille de courbes (ease-out long, aucun rebond), une caméra continue sans aucune coupe et des transitions où chaque écran naît d'un objet du précédent (tuile, ticket, montant, barre, anneau). Ce qui le fragilise : l'échelle de l'interface (lignes à ≈ 1-1,5 % de la hauteur) et la luminosité moyenne très basse rendent les écrans intermédiaires anonymes ; les cartes inclinées qui dérivent frôlent par moments la « capture d'écran 3D »."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120 BPM, pulsation très nette (12,46), grille 0,515 s + k × 0,5 s, soit un temps toutes les 30 im et un demi-temps toutes les 15 im à 60 fps. Aucune coupe franche : un seul plan continu de 14,06 s (841 im). Les gestes clés sont quantifiés sur cette grille, l'image précédant souvent la barre d'1 im : ouverture du logo f47 (demi-temps f46), contenu de la carte f76 (f76), fin du tracé de courbe f150 (temps f151), départ du panoramique f224 (f226), atterrissage du ticket ≈ f270 (f271), bascule de la pastille f360 (f361), atterrissage du montant f450 (f451), barre qui se courbe f557 (f556), score f588 (f586), anneau qui vire au vert f600 (f601), titre f615 (f616), sortie de la carte f661 (f661), déroulé du logo f720 (f721). Ratés : le logo d'ouverture se dessine f6-f11 alors que l'impact tombe à 0,51 s, et l'accroche finale (f741) n'est sur aucun temps. Temps morts : 34 % du film en maintien quasi statique (0,22-0,77 s ; 2,83-3,73 s ; 10,32-11,05 s ; 11,43-11,98 s ; 12,45-14,06 s). Densité : un événement toutes les 0,5 à 1,5 s, plus lent que la grammaire 1600 ; la tenue de « Alles im Blick. » (≈ 0,9 s sans mouvement) est le creux le plus visible.",
+    "timeline": [
+      {"t": "0:00.00-0:00.28", "what": "Un éclat doré dérive, devient la pointe d'un tracé qui dessine le « t » or ; la tuile graphite apparaît en fondu, l'éclat sort à droite", "technique": "éclat-stylo qui dessine le logo (glint reveal)"},
+      {"t": "0:00.30-0:00.77", "what": "Icône tenue immobile au centre (≈ 33 % de la hauteur) ; impact sonore à 0,51 s", "technique": "maintien du logo"},
+      {"t": "0:00.78-0:01.30", "what": "Le « t » se scinde en deux traits qui sortent en diagonale, la tuile vide grandit ×3,4 et devient la carte du tableau de bord", "technique": "logo qui s'ouvre, géométrie partagée"},
+      {"t": "0:01.30-0:02.50", "what": "Carte inclinée en 3D : « GEWINN DIESES JAHR 48.260 € », courbe or tracée de janvier à septembre, rangées de KPI qui entrent par le bas", "technique": "carte produit en perspective + tracé de courbe"},
+      {"t": "0:02.57-0:03.73", "what": "Léger recul, la carte glisse à droite, « Alles im Blick. » au tiers gauche, tenu ≈ 0,9 s", "technique": "titre unique au tiers gauche"},
+      {"t": "0:03.73-0:04.53", "what": "La caméra descend vers « Letzte Buchungen » ; un ticket papier « PAPETERIE HANSEN » entre en biais par la droite", "technique": "panoramique continu + objet physique"},
+      {"t": "0:04.60-0:05.55", "what": "Contours or : en-tête du ticket, puis « SUMME EUR 84,00 » ↔ ligne « Büromaterial −84 € »", "technique": "surlignages de correspondance"},
+      {"t": "0:05.57-0:06.02", "what": "Le ticket rétrécit et file dans la pastille de la ligne, « Beleg fehlt » (ambre) → « Beleg verknüpft » (vert) sur le temps", "technique": "aspiration dans la cible + bascule de statut"},
+      {"t": "0:06.02-0:06.52", "what": "Nouvelle écriture « Zahlung Atelier Sommer +2.380 € » insérée en tête de liste (probable sur le temps 6,515 s)", "technique": "insertion de ligne"},
+      {"t": "0:06.52-0:07.52", "what": "Le montant 2.380,00 € se détache, la caméra le suit pendant que la table « Rechnungen » remplace les écritures ; il se loge dans la ligne « Atelier Sommer … Offen »", "technique": "élément partagé (shared element) + caméra qui suit"},
+      {"t": "0:07.52-0:09.27", "what": "« Offen » → « Bezahlt », « Zahlungsstatus » 51 → 60 % bezahlt, la caméra recule sur la barre de progression", "technique": "bascule de statut + jauge"},
+      {"t": "0:09.28-0:09.80", "what": "La barre or se courbe en anneau qui file dans la carte « Steuergesundheit »", "technique": "morphing barre → anneau"},
+      {"t": "0:09.80-0:10.50", "what": "Score 66 → 94 en ease-out, l'anneau vire au vert à 85, barres de critères qui verdissent, pastille puis titre « In guter Ordnung »", "technique": "compteur qui roule + seuil de couleur"},
+      {"t": "0:10.50-0:11.02", "what": "Tenue sur la carte fiscale", "technique": "respiration"},
+      {"t": "0:11.02-0:11.95", "what": "Tout s'éteint sauf l'anneau, qui rétrécit jusqu'à la place du « o » du logo, vire du vert au blanc puis à l'or ; un éclat le traverse", "technique": "match cut anneau → lettre"},
+      {"t": "0:12.00-0:12.27", "what": "« taxtello » se déroule vers la gauche à partir du « o »", "technique": "révélation par masque depuis une lettre-ancre"},
+      {"t": "0:12.35-0:14.06", "what": "Accroche « Buchhaltung. Zeit für ein Update. » en fondu, puis plan final immobile 1,55 s", "technique": "signature tenue"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "13 gestes clés sur 15 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 33 %, soit 5 attendus ; probabilité binomiale ≈ 3·10⁻⁵). Décalage typique : l'image d'impact précède la barre d'1 im (f360/f361, f450/f451, f600/f601, f720/f721). Les quatre plus gros impacts de la bande coïncident avec les quatre impacts visuels : 6,014 s (ticket → pastille, après 0,4 s de silence numérique à −55/−71 dB), 7,512 s (attaque la plus forte, −10 dB, atterrissage du montant, précédée d'un creux à 7,4 s), 10,0 s (anneau qui vire au vert), 12,016 s (déroulé du logo, ton résolu −8 dB qui décroît jusqu'à 13,9 s). Des attaques hors grille tombent sur des apparitions d'UI : 1,324 s (contenu de la carte f76-f79), 9,799 s (score « 66 », f588), 4,737 et 5,317 s (surlignages dorés, probable). Ratés : impact à 0,51 s alors que le logo est formé à 0,2 s ; impact à 3,52 s sur le titre immobile ; accroche finale hors grille. L'indice automatique « aucune synchro » est faussé par la dérive continue de la caméra et le petit nombre d'événements : à l'œil, la synchro est nette.",
+    "synced": ["departs", "impacts", "atterrissages", "apparitions", "couleur", "texte"],
+    "style_match": "Design sonore feutré (impacts doux à longue traîne, ticks, silences avant l'impact, ton résolu au logo) : même retenue que les courbes ease-out sans rebond et la palette sombre.",
+    "how_built": "La bande-son est un design sonore plus qu'une musique : pulsation d'une frappe par seconde sur les 3,5 premières secondes, puis impacts isolés, ticks et silences numériques (−70 dB), très probablement générés ou montés d'après la feuille de repères (cue sheet) que le prompt exigeait. Le prompt imposait de concevoir le mouvement « comme coupé à 115-120 BPM », que les moments importants « tombent musicalement », et listait les sons (impact doux pour la révélation, clics d'UI, tick métallique, ton résolu au logo). Claude a quantifié la timeline Remotion sur des multiples de 0,25 s (15 im à 60 fps = demi-temps à 120 BPM), et le son frappe sur ces mêmes images. Probable : impossible de savoir si l'audio a été synthétisé en code ou ajouté par l'auteur."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Éclat-stylo qui dessine le logo",
+      "name_en": "glint-led logo stroke reveal",
+      "t": "0:00.00-0:00.28",
+      "frames": "f0-f17",
+      "fps": 60,
+      "mechanics": "Un éclat doré en étoile à 4 branches (≈ 2 % de la largeur, traînée horizontale ≈ 6 %) dérive de (41 %, 30 %) à (46 %, 42 %) en 6 im, puis devient la pointe d'un tracé qui dessine le « t » or en 6 im (f6-f11) ; la tuile graphite #24272F (≈ 33 % de la hauteur, coins très arrondis) apparaît en fondu f8-f12 ; l'éclat glisse le long du crochet et sort à droite en traînée (f11-f17). Total 17 im = 0,28 s, très rapide. Le logo est ensuite tenu immobile f18-f46 (29 im = 0,48 s). L'impact sonore tombe à 0,51 s (f31), 13 à 19 im après la fin du tracé : la révélation n'est pas calée.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le logo s'ouvre : la tuile devient la carte du tableau de bord",
+      "name_en": "logo split fly-through into UI surface",
+      "t": "0:00.78-0:01.30",
+      "frames": "f47-f78",
+      "fps": 60,
+      "mechanics": "Départ f47, sur le demi-temps (f46). Le « t » se scinde en deux traits (bras haut, crochet bas) qui partent en diagonales opposées en grossissant ≈ ×2, comme si la caméra traversait la marque, et sortent du cadre en 13 im (haut-droite, f60) et 19 im (bas-gauche, f66). La tuile vidée grandit de 18 % à 61 % de la largeur en 33 im (pas de +2, +3, +5, +7, +7, +6, +6, +3, +4 points par 3 im : ease-in-out), prend la teinte des surfaces (#1A2032) avec un halo chaud central et s'incline en perspective ; le contenu de la carte (« GEWINN DIESES JAHR », 48.260 €) apparaît dès f76 (demi-temps), accompagné d'un tick à 1,324 s. Pas de flou de mouvement. Géométrie partagée : la tuile du logo est la carte produit.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f58.jpg",
+      "illus": {"from": 44, "to": 78, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Carte produit en perspective qui dérive",
+      "name_en": "dimensional product card with slow camera drift",
+      "t": "0:01.30-0:03.73",
+      "frames": "f78-f224",
+      "fps": 60,
+      "mechanics": "La carte du tableau de bord est inclinée en 3D (rotation Y ≈ 8-10°, X ≈ 5°, probable). La caméra la fait glisser de 18 % à 37 % en x (bord gauche du chiffre 48.260) et de 36 % à 23 % en y entre f90 et f180, surtout entre f120 et f150 (+15 points contre +2 avant et après : ease-in-out), puis recule légèrement (chiffre ×0,78 entre f150 et f180) pour libérer le tiers gauche au titre. Bords nets, ombre portée douce. Mouvement retenu, mais l'effet « carte qui flotte » reste générique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Interface réelle reconstruite en calques animables",
+      "name_en": "rebuilt product UI in animatable layers",
+      "t": "0:01.30-0:11.00",
+      "frames": "f78-f660",
+      "fps": 60,
+      "mechanics": "Les écrans réels (Finanzcockpit, Letzte Buchungen, Rechnungen, Zahlungsstatus, Steuergesundheit) sont recréés en vectoriel aux couleurs exactes du système (#0C0F1A, #1A2032, #E8B84B, #34D399, #F87171) : courbe, KPI, lignes, pastilles, jauge et anneau s'animent séparément et restent nets à toutes les échelles. Données de démonstration (48.260 €, 2.380,00 €, Papeterie Hansen). Défaut : l'échelle d'affichage est petite, corps des lignes ≈ 1-1,5 % de la hauteur, illisible en 1080p et a fortiori sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe qui se trace jusqu'au point du jour",
+      "name_en": "chart line draw-on with leading dot",
+      "t": "0:01.77-0:02.50",
+      "frames": "f106-f150",
+      "fps": 60,
+      "mechanics": "Ligne or #E8B84B (≈ 3 px) avec un point lumineux en tête et une aire en dégradé or → transparent dessous. Position de la pointe toutes les 6 im (f118-f148) : 18 %, 31 %, 45 %, 53 %, 58 %, 59 % de la largeur de la carte, soit des pas de +13, +14, +8, +5, +1 : ease-out net. Arrivée f146-f150, sur le temps 2,515 s (f151) qui porte un impact sonore. Départ probable vers f106 (demi-temps 1,765 s), non couvert image par image. La carte continue de tourner pendant le tracé : les mouvements se chevauchent.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f133.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Rangées de KPI révélées par le cadrage",
+      "name_en": "KPI rows revealed by camera tilt",
+      "t": "0:02.07-0:02.55",
+      "frames": "f124-f153",
+      "fps": 60,
+      "mechanics": "La carte remonte d'≈ 11 % de la hauteur en 35 im, ce qui fait entrer par le bas la rangée « Jahresüberblick YTD » (f124), puis les mini-KPI 71.940 € / 23.680 € / 9.412 € / 67,1 % avec micro-courbes vertes et rouges (f142). Le décalage (stagger) demandé par le prompt (« supporting metrics settle slightly later ») est obtenu par le cadrage plutôt que par des arrivées individuelles : économique mais peu lisible.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f133.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre unique « Alles im Blick. »",
+      "name_en": "single headline with long hold",
+      "t": "0:02.57-0:04.10",
+      "frames": "f154-f246",
+      "fps": 60,
+      "mechanics": "Apparition entre f154 et f170 (non couverte image par image ; fondu court probable). Plus Jakarta Sans Bold, blanc chaud #F6F4EB, ≈ 5,5 % de la hauteur, de 7 % à 31 % en x, centre vertical à 44 %, casse phrase avec point final. Tenu immobile ≈ 0,9 s (maintien 2,83-3,73 s), puis sort en fondu en remontant avec la carte (fantôme à ≈ 30 % f239-f244, disparu f246). Un seul titre par idée, comme demandé, mais petit et statique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre au tiers gauche, produit aux 60 % droits",
+      "name_en": "asymmetric headline / product split",
+      "t": "0:03.00 ; 0:10.40",
+      "frames": "f180 ; f624",
+      "fps": 60,
+      "mechanics": "Même agencement deux fois : titre aligné à gauche dans le tiers gauche (x ≈ 7-31 % puis 11-40 %), centre vertical 44-50 % ; carte produit sur ≈ 55-60 % droits. Au second passage, trio étiquette / titre / preuve : pastille verte « ✓ In Ordnung » au-dessus, titre, ligne « ● 4 in Ordnung » dessous. Hiérarchie claire, marges généreuses.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique continu vers la section suivante du même écran",
+      "name_en": "continuous camera tilt across one UI board",
+      "t": "0:03.73-0:04.53",
+      "frames": "f224-f272",
+      "fps": 60,
+      "mechanics": "Départ f224 (demi-temps f226), pic de vitesse f254 (demi-temps f256), arrivée ≈ f270 (temps f271) : ≈ 48 im (0,8 s) en ease-in-out. La carte du tableau de bord remonte d'≈ 40 % de la hauteur en s'assombrissant ; le panneau « Letzte Buchungen » (4 lignes, montants rouges et verts, pastilles « Beleg verknüpft ») entre par le bas. Même surface, même plan : aucune coupe, l'interface est traitée comme un seul grand plateau.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f254.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Ticket papier qui entre en biais",
+      "name_en": "physical receipt slide-in",
+      "t": "0:04.10-0:04.53",
+      "frames": "f246-f272",
+      "fps": 60,
+      "mechanics": "Ticket blanc cassé #F2EEE4, bord inférieur en dents de scie, texte mono sombre (« PAPETERIE HANSEN », « SUMME EUR 84,00 »), incliné ≈ 5°, ombre portée douce. Il entre par le bord droit : bord gauche du ticket de 91 % à ≈ 66 % de la largeur entre f250 et f270, pas décroissants (ease-out), arrêt ≈ f268-f272, sur le temps 4,515 s (f271) marqué d'un petit clic. Seul objet clair du film : le contraste papier / interface sombre rend l'idée « reçu → écriture » immédiate.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f254.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Surlignages dorés de correspondance",
+      "name_en": "gold match highlights",
+      "t": "0:04.74-0:05.55",
+      "frames": "f284-f333",
+      "fps": 60,
+      "mechanics": "Un contour or fin (1-2 px, lueur légère) encadre d'abord l'en-tête du ticket (≈ f284, tick sonore à 4,737 s), puis la ligne « SUMME EUR 84,00 » et la ligne « Büromaterial −84 € » de la liste (≈ f319, tick à 5,317 s) : la correspondance montant ↔ écriture est montrée sans laser de scanner. Instants exacts probables (entre deux vignettes).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le ticket est aspiré dans sa pastille",
+      "name_en": "receipt shrinks into status badge",
+      "t": "0:05.57-0:06.02",
+      "frames": "f334-f361",
+      "fps": 60,
+      "mechanics": "Le ticket rétrécit d'≈ 18 % à 0 % de la largeur en 25 im en filant d'≈ 15 % vers la droite et le bas, vers la pastille de la ligne surlignée : −4 points sur les 15 premières images, −5 sur les 6 suivantes, −5 sur les 2 dernières (accélération = ease-in, effet d'aspiration). Il devient un petit carré gris (f357-f358) et disparaît f359 ; la pastille ambre « ⚠ Beleg fehlt » bascule en vert « ✓ Beleg verknüpft » (#34D399) en 2 im (f360-f361), pile sur le temps 6,015 s (f361). Le trajet se fait dans un quasi-silence (−55 à −71 dB), l'impact (−13,5 dB) tombe sur la bascule.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f349.jpg",
+      "illus": {"from": 334, "to": 362, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Nouvelle écriture insérée en tête de liste",
+      "name_en": "row insertion with push-down",
+      "t": "0:06.02-0:06.52",
+      "frames": "f361-f391",
+      "fps": 60,
+      "mechanics": "La ligne « Zahlung Atelier Sommer +2.380 € » (montant vert) apparaît en haut de « Letzte Buchungen » et repousse les 4 lignes d'une hauteur de ligne (≈ 5 % du cadre) ; arrivée probable sur le temps 6,515 s (attaque à 6,513 s). Non couverte image par image.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le montant voyage jusqu'à la facture, la caméra le suit",
+      "name_en": "shared-element amount travel with tracking camera",
+      "t": "0:06.52-0:07.52",
+      "frames": "f391-f451",
+      "fps": 60,
+      "mechanics": "Le montant vert « 2.380,00 € » se détache de sa ligne et grossit (≈ ×2 à f420), puis reste près du centre du cadre (x ≈ 47-60 %) : c'est le monde qui bouge autour. Le panneau des écritures glisse à gauche et sort (≈ 40 % de la largeur en 10 im, f428-f438), la table « Rechnungen » pivote depuis la droite ; le chiffre grossit encore ×1,25 (f433), passe du vert au blanc chaud (≈ f433), puis rétrécit ×0,6 et se loge dans la colonne montant de la ligne « Atelier Sommer … Offen », surlignée d'or, à f450 : temps 7,515 s (f451), attaque la plus forte de la piste, précédée d'un creux sonore à 7,4 s. Départ f427, 6 im après le temps : seul l'atterrissage est calé. Exemple tiré tel quel du prompt (« financial number → amount in invoice »).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f430.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Statut « Offen » → « Bezahlt » et jauge de paiement",
+      "name_en": "status flip and payment progress fill",
+      "t": "0:07.52-0:08.60",
+      "frames": "f451-f516",
+      "fps": 60,
+      "mechanics": "La pastille or « Offen » devient verte « Bezahlt » avec la mention « bezahlt am 15.09.2026 » ; la carte « Zahlungsstatus » compte de 51 % à 60 % bezahlt et la barre or s'allonge d'≈ 45 % à ≈ 55 % de sa piste ; son soutenu entre 8,0 et 8,5 s. L'or marque l'état actif, le vert l'état positif, comme le demandait le prompt. Instants exacts probables (entre vignettes).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La barre de progression se courbe en anneau",
+      "name_en": "progress bar curls into a ring gauge",
+      "t": "0:09.28-0:09.80",
+      "frames": "f557-f588",
+      "fps": 60,
+      "mechanics": "Départ f557, sur le demi-temps (f556) : l'extrémité droite de la barre or (≈ 20 % de la largeur, ≈ 3 px) plonge (f558-f562), la barre s'enroule en quart de cercle (f568), puis en anneau aux ¾ avec une piste sombre #2A3048 qui ferme le cercle (f572-f576). L'anneau rétrécit d'≈ 20 % à ≈ 6 % de la largeur en glissant vers le haut d'une carte « Steuergesundheit » qui apparaît en fondu (f578-f586), pendant que l'écran de paiement s'éteint. Le score « 66 » apparaît f588 (demi-temps f586, tick à 9,799 s). 31 im = 0,52 s, sans coupe ni fondu enchaîné.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 554, "to": 590, "n": 7}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Score qui roule en ease-out et vire au vert au seuil",
+      "name_en": "rolling score counter with color threshold",
+      "t": "0:09.80-0:10.50",
+      "frames": "f588-f630",
+      "fps": 60,
+      "mechanics": "Compteur 66 → 70 → 75 → 78 → 81 → 83 → 85 (f588-f600, 19 points en 12 im), puis 87, 88, 89, 90, 91, 92, 93 (f602-f624) et 94 (≈ f630) : ease-out fort (expo). L'arc passe de l'or au vert #34D399 quand le score atteint 85, à f600, sur le temps 10,015 s (f601), avec un impact sonore (−17,9 dB). Chiffre blanc centré dans l'anneau, ≈ 4 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barres de critères qui passent du rouge au vert",
+      "name_en": "staggered criteria bars settling to green",
+      "t": "0:10.10-0:10.50",
+      "frames": "f606-f630",
+      "fps": 60,
+      "mechanics": "Quatre lignes (Vollständigkeit, Ordnung, Fristen, Aktualität) se remplissent en décalé (≈ 2-4 im entre lignes, probable) ; certaines barres démarrent rouges (#F87171) ou ambre puis finissent vertes ; état final : 3 vertes, 1 ambre. Illustre « des signaux bruyants qui se calment », mais à ≈ 1 % de la hauteur c'est illisible.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pastille puis titre « In guter Ordnung »",
+      "name_en": "label pill then headline fade-up",
+      "t": "0:10.17-0:10.37",
+      "frames": "f610-f622",
+      "fps": 60,
+      "mechanics": "Pastille verte « ✓ In Ordnung » (≈ 1,5 % de la hauteur) à f610, puis titre Plus Jakarta Sans Bold blanc (≈ 5,5 % de la hauteur, x 11-40 %) en fondu de 0 à 100 % en ≈ 8 im (f615-f622) avec une montée d'≈ 2 % et un léger flou au départ (probable) ; départ sur le demi-temps 10,265 s (f616). Ligne « ● 4 in Ordnung » dessous. Le titre bouge d'un bloc, comme un objet dessiné, pas mot à mot.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'anneau du score devient le « o » du logo",
+      "name_en": "ring-to-letter match cut",
+      "t": "0:11.02-0:11.97",
+      "frames": "f661-f718",
+      "fps": 60,
+      "mechanics": "Départ f661, sur le temps 11,015 s : carte, chiffre et titre s'éteignent en ≈ 20 im (f661-f680), seul l'anneau reste. Il rétrécit d'≈ 12 % à ≈ 4 % de la largeur (diamètre 30 → 28 → 24 → 20 → 18 → 16 → 14 → 13 → 12 → 11 → 10 px par pas de 2 im : ease-out) en glissant de (65 %, 32 %) à (61 %, 46 %), vire du vert au blanc (f688-f690) puis à l'or (f692-f696) et s'arrête f696 exactement à la place du dernier « o » du logo centré. Tenue 16 im, puis un éclat le traverse (f714-f718), rappel de l'ouverture, avec un frémissement sonore à 11,8 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 680, "to": 738, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo qui se déroule vers la gauche depuis le « o »",
+      "name_en": "wordmark unroll from anchor letter",
+      "t": "0:12.00-0:12.27",
+      "frames": "f720-f736",
+      "fps": 60,
+      "mechanics": "Départ f720 sur le temps 12,015 s (ton résolu, −8 dB). Bord droit fixe à 62,6 % de la largeur, les lettres apparaissent de droite à gauche derrière un masque : « lo », « llo », « ello », « tello », « xtello », « axtello », « taxtello » ; le front gauche avance de 13, 11, 11, 7, 8, 2 px par 2 im (ease-out), mot complet f736 (demi-temps) : 16 im = 0,27 s. Logotype or #E8B84B ≈ 25 % de la largeur, centré (37-63 %), ≈ 9 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature finale tenue 1,6 s",
+      "name_en": "endcard with held stillness",
+      "t": "0:12.35-0:14.06",
+      "frames": "f741-f840",
+      "fps": 60,
+      "mechanics": "Accroche « Buchhaltung. Zeit für ein Update. » (≈ 2,3 % de la hauteur ; « Buchhaltung. » en #8B93B5, le reste en #F6F4EB) en fondu en ≈ 6 im (f741-f747) à ≈ 56 % de la hauteur, hors grille ; puis plan immobile f748-f840 (93 im = 1,55 s) avec vignettage radial, pendant que le ton du logo décroît jusqu'à 13,9 s. Fin « confiante » demandée par le prompt.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un seul plan continu, chaque écran naît du précédent",
+      "name_en": "one continuous shot, object-driven chain",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f840",
+      "fps": 60,
+      "mechanics": "0 coupe franche. Chaîne d'objets : tuile du logo → carte, ticket → pastille, montant → facture, barre → anneau, anneau → « o ». Arc : marque (0-1,3 s) → contrôle (1,3-4,5 s) → écritures (4,5-7,5 s) → paiement (7,5-9,3 s) → clarté fiscale (9,3-11 s) → marque (11-14 s). Le spectateur se dit bien « évidemment, l'écran suivant venait de là ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Or rare, vert et rouge strictement sémantiques",
+      "name_en": "scarce accent and semantic color",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f840",
+      "fps": 60,
+      "mechanics": "Fond #0A0D18 et surfaces #161B2D couvrent ≈ 95 % de l'image ; l'or #E8B84B n'apparaît que sur l'éclat, le logo, la courbe, les contours actifs, la jauge et l'anneau ; le vert #34D399 seulement pour les états positifs, le rouge #F87171 pour les montants négatifs. Les changements de couleur racontent (ambre → vert, or → vert, vert → blanc → or) et tombent sur les temps (f361, f601).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque géométrique pour les titres, mono pour l'argent",
+      "name_en": "geometric sans headlines, mono figures",
+      "t": "0:01.30-0:14.06",
+      "frames": "f78-f840",
+      "fps": 60,
+      "mechanics": "Titres en Plus Jakarta Sans Bold, casse phrase, point final, interlettrage serré, ≈ 5,5 % de la hauteur ; montants et ticket en chasse fixe (JetBrains Mono probable), chiffre héros 48.260 € ≈ 7 % ; libellés d'UI en capitales espacées minuscules (« GEWINN DIESES JAHR »). Peu de texte (3 lignes de texte éditorial en 14 s), conforme au prompt, mais aucun moment où la typographie devient un vrai événement visuel.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Vignettage fort et panneaux secondaires assombris",
+      "name_en": "heavy vignette and dimmed secondary panels",
+      "t": "0:01.30-0:11.00",
+      "frames": "f78-f660",
+      "fps": 60,
+      "mechanics": "Vignettage radial qui pousse les coins vers #04060C ; les panneaux hors sujet tombent à ≈ 30-40 % de luminosité et s'adoucissent (profondeur de champ simulée), seul le panneau actif reste net. Hiérarchie claire, mais l'image moyenne est très sombre et les zones d'UI deviennent illisibles en vidéo sociale. Pas de grain, pas de flou de mouvement.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f430.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Courbes premium sans rebond, accélération pour les impacts",
+      "name_en": "overshoot-free expo easing, ease-in for impacts",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f840",
+      "fps": 60,
+      "mechanics": "Aucun dépassement mesurable sur les arrivées (carte, ticket, montant, anneau, logo) ; décélérations longues type cubic-bezier(0.16, 1, 0.3, 1) (pas qui diminuent jusqu'à 1-2 px par image en fin de course). Les impacts utilisent l'inverse : le ticket accélère jusqu'à sa cible (ease-in) pour que le choc tombe net. Les éléments ne partent pas ensemble (la carte tourne pendant que la courbe se trace, le chiffre grossit pendant que le panneau sort).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f349.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Respirations longues",
+      "name_en": "long holds",
+      "t": "0:00.22-0:14.06",
+      "frames": "f13-f840",
+      "fps": 60,
+      "mechanics": "Maintiens mesurés : 0,22-0,77 s (logo), 2,83-3,73 s (titre), 10,32-11,05 s (score), 11,43-11,98 s (anneau), 12,45-14,06 s (fin) : 34 % du film quasi immobile. Le prompt l'exigeait (« every scene needs room to breathe »), mais c'est l'opposé de la grammaire 1600 (un mouvement toutes les 0,5-1 s).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Timeline quantifiée sur une grille de 15 images (120 BPM)",
+      "name_en": "beat-quantized timeline",
+      "t": "0:00.78-0:12.27",
+      "frames": "f47-f736",
+      "fps": 60,
+      "mechanics": "Les gestes clés tombent sur des multiples de 15 im (+1 im) : f47 (demi-temps f46), f76 (f76), f150 (f151), f224 (f226), ≈ f270 (f271), f360 (f361), f450 (f451), f557 (f556), f588 (f586), f600 (f601), f615 (f616), f661 (f661), f720 (f721). 13 gestes sur 15 à ±2 im (hasard 33 %). Décalage typique : l'image d'impact précède la barre d'1 im. Départs plutôt sur les demi-temps, impacts et changements d'état sur les temps. Recette HyperFrames : à 120 BPM et 60 fps, un temps = 30 im, un demi-temps = 15 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f349.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence pendant le trajet, impact à l'arrivée",
+      "name_en": "silence-then-hit on landings",
+      "t": "0:05.50-0:07.52",
+      "frames": "f330-f451",
+      "fps": 60,
+      "mechanics": "Le ticket file vers sa pastille dans un quasi-silence (−55 à −71 dB entre 5,5 et 5,9 s), puis l'impact (−13,5 dB) tombe sur la bascule à 6,0 s ; même figure à 7,4 s : creux à −30 dB, puis attaque la plus forte (−10 dB) quand le montant se pose à 7,5 s. Corrélation intensité sonore ↔ quantité de mouvement négative (r = −0,4) : le mouvement se fait dans le calme, le son tombe à l'arrêt.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f349.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Ticks sur les apparitions d'interface, ton résolu sur le logo",
+      "name_en": "UI ticks on micro-events, resolved tone on logo",
+      "t": "0:01.32-0:13.90",
+      "frames": "f79-f834",
+      "fps": 60,
+      "mechanics": "Attaques hors grille alignées sur des apparitions : 1,324 s (contenu de la carte, f76-f79), 4,737 et 5,317 s (surlignages dorés, probable), 9,799 s (score « 66 », f588) ; frémissement à 11,8 s sous l'éclat du « o ». Ton résolu long sur le logo (12,0 s, −8 dB, décroissance régulière jusqu'à 13,9 s). Pulsation d'ouverture d'une frappe par seconde (0,51 / 1,52 / 2,51 / 3,52 s) dont seules 1,5 s et 2,5 s correspondent à un geste.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt fournissait la palette exacte en hex, les deux polices, le logo et les écrans réels : la direction artistique est fidèle à la marque (#0C0F1A, #E8B84B, #34D399 retrouvés à l'image) et Claude n'a rien inventé côté identité."},
+    {"kind": "direction", "insight": "La liste d'exemples de transitions par objets (« financial number → amount in invoice », « card edge → next surface », « mask reveal using actual product shapes ») a été appliquée presque littéralement : le montant qui voyage vient tel quel du prompt, et Claude a extrapolé la même logique (barre → anneau, anneau → « o »)."},
+    {"kind": "structure", "insight": "Le storyboard minuté (0-1,2 / 1,2-4,4 / 4,4-7,5 / 7,5-10,7 / 10,7-12,8 / 12,8-15 s) est suivi à ±0,5 s jusqu'à 9 s, puis compressé : la signature commence à 11 s au lieu de 12,8 s, d'où 1,6 s d'immobilité finale."},
+    {"kind": "build", "insight": "« Design the motion as if it were cut to approximately 115–120 BPM » + « important moments should land musically » + la liste des sons : Claude a quantifié la timeline sur 0,25 s (15 im) et le design sonore frappe sur ces images. Écrire le tempo dans le prompt suffit à obtenir une vraie grille."},
+    {"kind": "banned", "insight": "Les 19 interdits (pas de rebond, pas de particules, pas de zoom constant, pas de glassmorphism…) sont tous respectés ; revers : une prudence générale (image sombre, UI petite, peu d'énergie typographique) que rien dans le prompt ne compensait."},
+    {"kind": "qa", "insight": "La boucle de contrôle (rendre 10 images, se demander « does this look like Apple-tier? ») explique la qualité des images fixes, mais aucune question ne portait sur la lisibilité à petite taille : des lignes d'UI à ≈ 1 % de la hauteur sont passées."},
+    {"kind": "direction", "insight": "« Every scene needs room to breathe » et « the final frame must have enough stillness » ont produit 34 % de maintiens ; pour un style 1600, il faut au contraire imposer un événement toutes les 0,5-1 s et une taille minimale de texte."},
+    {"kind": "other", "insight": "Le prompt laissait choisir l'accroche finale d'après le positionnement trouvé dans le dépôt : « Buchhaltung. Zeit für ein Update. » ne figure pas parmi les suggestions, elle vient probablement du produit réel."}
+  ],
+  "steal": [
+    "Faire voyager un élément réel d'un écran au suivant : le montant d'une transaction traverse le cadre, la caméra le suit, et il atterrit dans la ligne de facture sur le temps fort.",
+    "Courber une barre de progression en anneau pour passer à l'écran suivant : départ sur un demi-temps, nouvel écran posé 30 images plus tard.",
+    "Finir par un match cut : l'anneau du dernier écran rétrécit jusqu'à la place exacte du « o » du logo, puis le mot se déroule vers la gauche.",
+    "Aspirer l'objet dans sa cible en ease-in, dans le silence, puis basculer le statut (ambre → vert) en 2 images, pile sur le temps, avec l'impact sonore.",
+    "Quantifier la timeline sur 15 images (demi-temps à 120 BPM en 60 fps) : départs sur les demi-temps, impacts et changements de couleur sur les temps."
+  ],
+  "flaws": [
+    "Interface trop petite et trop sombre : lignes d'écritures et de factures illisibles en 1080p, vignettage qui écrase les bords.",
+    "34 % du film quasi immobile ; « Alles im Blick. » tenu 0,9 s sans mouvement, loin de la grammaire 1600.",
+    "L'éclat d'ouverture dessine le logo en 0,1 s, 0,3 s avant l'impact sonore : la révélation passe inaperçue.",
+    "Titres petits (≈ 5,5 % de la hauteur) et statiques : aucun impact typographique pour un format social regardé sans son.",
+    "Cartes inclinées qui dérivent en perspective : par moments, effet « capture d'écran 3D » générique."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Rare référence de promo SaaS en plan continu où chaque transition est motivée (tuile → carte, ticket → pastille, montant → facture, barre → anneau, anneau → « o ») et quantifiée sur 120 BPM. L'étude image par image à 60 fps donnerait les courbes exactes (ease-in d'aspiration, ease-out des arrivées), les décalages d'1 im avant le temps et la place du silence avant chaque impact, directement transposables en GSAP."
+  }
+}

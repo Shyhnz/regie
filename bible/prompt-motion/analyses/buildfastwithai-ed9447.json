@@ -1,0 +1,303 @@
+{
+  "slug": "buildfastwithai-ed9447",
+  "title": "Three.js Skyraider aircraft model",
+  "handle": "@BuildFastWithAI",
+  "family": "3d",
+  "craft": 3,
+  "craft_reason": "Démo technique soignée (modèle procédural crédible, DA militaire cohérente, fondu au brouillard motivé) mais montage plat : orbite lente uniforme, légendes en fondu, échange de peinture sec, carte finale figée 4,6 s.",
+  "summary": "Capture d'écran muette d'une app Three.js : un A-1H Skyraider entièrement procédural, piloté par un panneau de contrôle (train, ailes, volets, aérofreins, verrière, peinture, usure, armement). Sept légendes listent les fonctions pendant une orbite lente au sol, un fondu au brouillard emmène l'avion en vol au-dessus d'une jungle procédurale, puis carte finale « Built with Claude Opus 5.5 ». Forte comme preuve technique, faible comme motion.",
+  "prompt_vs_result": [
+    "Le prompt d'une ligne demande seulement de construire un Douglas A-1H Skyraider en Three.js. Rien sur la vidéo, la caméra, l'interface, le rythme ni la fin.",
+    "Claude a inventé le panneau de pièces mobiles, deux livrées, l'usure procédurale, trois configurations d'armement, la scène en vol en pilote automatique, le bloc-titre pochoir, les légendes-visite et la carte finale.",
+    "Pour un objet 3D, la ligne suffit à obtenir un modèle riche. Il aurait fallu préciser la mise en scène : plans cadrés par fonction, coupes, durée de la carte finale, musique et zooms sur chaque pièce animée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#C9CCC1", "role": "brume du ciel, fond de la carte finale"},
+      {"hex": "#B8B0A0", "role": "sol (tapis texturé beige-gris)"},
+      {"hex": "#ECE9DF", "role": "panneau de contrôle et pastille de légende"},
+      {"hex": "#2C3527", "role": "texte, boutons actifs, titres (vert-noir)"},
+      {"hex": "#6F7B4D", "role": "camouflage olive"},
+      {"hex": "#D4BE93", "role": "camouflage sable"},
+      {"hex": "#3E4A32", "role": "camouflage vert foncé"},
+      {"hex": "#E6E6E0", "role": "livrée US Navy blanc-gris"},
+      {"hex": "#E5C35C", "role": "bout des pales et anneau du disque d'hélice"},
+      {"hex": "#E8B84A", "role": "surlignage jaune sous « one HTML file »"},
+      {"hex": "#8FA57A", "role": "parcelles de jungle vues du ciel"},
+      {"hex": "#2E3D6E", "role": "cocarde US"}
+    ],
+    "type": "Titres en grotesque condensée noire au pochoir (stencil, Big Shoulders Stencil probable), ≈ 8 % de la hauteur par ligne ; légendes grotesque grasse ≈ 2 % ; capitales espacées ≈ 1 % ; mono pour le code.",
+    "texture": "Rendu Three.js temps réel propre, ombres portées douces, brouillard atmosphérique (perspective aérienne) qui fond le fond dans #C9CCC1, aucun grain, aucun flou de mouvement sauf l'anneau translucide du disque d'hélice, ombre légère sous la pastille de légende.",
+    "style": "Démo d'app 3D militaire désaturée",
+    "coherence": "Tout tient par une palette kaki-sable désaturée commune au modèle, au sol, à la brume et à l'interface beige, plus la typo pochoir qui évoque le marquage militaire. Ce qui casse : l'échange de livrée blanc pur en 1 image, la micro-typo illisible du panneau et du code à 1080p, et la carte finale qui laisse un avion fantôme flotter derrière le texte."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Vidéo muette (bande-son quasi silencieuse à 100 %, Whisper n'a produit que « you »). 30 fps, 39,06 s, un seul plan continu sauf un fondu au brouillard (21,8-22,4 s). Aucune coupe franche. Rythme porté par les légendes : 7 légendes à ≈ 0,5 / 4,3 / 9,3 / 13,1 / 16,8 / 22,8 / 28,3 s, soit une toutes les 3,7 à 5,5 s. Dans les segments de démonstration, un changement d'état toutes les 0,5 à 2 s (hélice 4,0 s, verrière 6,5 s, volets 7,0 s, aérofreins 8,0-8,5 s, armement 9,5 s, livrée 10,53 s, usure 11 s, code 13,0 s, livrée 16,0 s, ailes 17,5-20,5 s). De 22,5 à 33,8 s, seule l'orbite de caméra bouge (11 s sans événement hormis une légende) : densité faible. Fin : carte finale tenue 4,6 s (34,3-38,93 s), seul l'avion fantôme à ≈ 10 % d'opacité glisse lentement derrière. Légendes en fondu enchaîné court : sortie ≈ 4 im, entrée ≈ 3 im (f388-f394).",
+    "timeline": [
+      {"t": "0:00-0:00.5", "what": "Avion sur le tapis, vue avant 3/4 basse, panneau de contrôle à droite, bloc-titre « Douglas A-1H Skyraider » en bas à gauche ; la pastille « ✦ CLAUDE OPUS 5.5 / Built a flyable A-1H Skyraider in one HTML file » apparaît en fondu", "technique": "ouverture sur l'objet, légende-thèse"},
+      {"t": "0:00.5-0:04.0", "what": "Orbite lente de la caméra de l'avant vers le 3/4 gauche, hélice à l'arrêt, curseur qui entre en bas à droite", "technique": "orbite de présentation (turntable)"},
+      {"t": "0:04.0-0:04.5", "what": "Le curseur tire le curseur « Propeller » : l'hélice démarre, anneau jaune translucide au bout des pales ; nouvelle légende « Throttle, canopy, flaps, dive brakes. Every part moves. »", "technique": "action UI → réaction 3D"},
+      {"t": "0:04.5-0:09.3", "what": "Clics successifs : verrière qui coulisse (≈ 6,5 s), volets qui descendent (≈ 7 s), aérofreins latéraux qui s'ouvrent (≈ 8-8,5 s) ; la caméra continue vers le profil gauche", "technique": "pièces articulées pilotées par le panneau"},
+      {"t": "0:09.3-0:10.5", "what": "« Swap stores, paint, and procedural weathering » : bombes puis roquettes sous les ailes", "technique": "configurateur d'armement"},
+      {"t": "0:10.53-0:10.57", "what": "Livrée camouflage → blanc US Navy en une image (f316 → f317)", "technique": "échange de matériau sec"},
+      {"t": "0:10.6-0:13.0", "what": "Curseur sur « Weathering », la caméra pivote vers la vue de face et avance (dolly-in) jusqu'à l'hélice plein centre", "technique": "pivot + avancée vers la face"},
+      {"t": "0:13.0-0:16.5", "what": "« One factory function drives the whole aircraft » : l'accordéon « Use this model in code » s'ouvre et montre un extrait de code ; légère orbite vers la droite", "technique": "preuve par le code"},
+      {"t": "0:16.0", "what": "Retour à la livrée camouflage (échange sec)", "technique": "échange de matériau sec"},
+      {"t": "0:16.8-0:21.8", "what": "« Wings fold for the carrier deck » : caméra en plongée avant, les ailes se replient vers le haut en ≈ 3 s et montrent leur intrados blanc", "technique": "repliage d'ailes animé"},
+      {"t": "0:21.8-0:22.4", "what": "Tout l'écran se noie dans la brume #C9CCC1 (6 im), 2 im de blanc laiteux, puis l'avion apparaît en vol au-dessus de la jungle (≈ 10 im)", "technique": "fondu par le brouillard (dip to haze)"},
+      {"t": "0:22.4-0:28.3", "what": "« Then take it up. Autopilot over procedural jungle. » : caméra de poursuite arrière 3/4, avion qui s'incline, parcelles vertes, rivière, nuages ; aide clavier en bas au centre", "technique": "caméra de poursuite en orbite"},
+      {"t": "0:28.3-0:33.7", "what": "« No 3D models. No image files. Just code. » : l'orbite continue du profil vers l'avant 3/4 plongeant, hélice face caméra", "technique": "orbite de poursuite"},
+      {"t": "0:33.7-0:34.3", "what": "Un voile beige recouvre la scène en ≈ 16 im pendant que la carte finale apparaît", "technique": "voile vers carte finale"},
+      {"t": "0:34.3-0:38.93", "what": "Carte finale : « DOUGLAS A-1H SKYRAIDER » / « Built with Claude Opus 5.5 » en pochoir / « A flyable warbird in one HTML file » surligné / « ~2,000 lines · procedural geometry · no 3D models, no image files » ; avion fantôme derrière", "technique": "carte finale tenue"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Bande-son quasi silencieuse à 100 % (aucune attaque détectée, netteté de pulsation 0,0, tempo 70 BPM sans valeur). Les barres bleues des planches microscope sont une grille fictive : rien à compter.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le rythme lent et régulier de démonstration appellerait une nappe ambiante ou des sons de moteur et de mécanismes.",
+    "how_built": "Capture d'écran d'une app Three.js sans piste audio ; le prompt ne parle ni de son ni de vidéo. Aucune synchro possible."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Visite guidée par légendes-arguments",
+      "name_en": "caption-driven feature tour",
+      "t": "0:00.5-0:33.7",
+      "frames": "f15-f1011",
+      "fps": 30,
+      "mechanics": "7 légendes, chacune une fonction : thèse (« Built a flyable A-1H Skyraider in one HTML file »), pièces mobiles, armement/livrée/usure, code, ailes repliables, vol, « No 3D models. No image files. Just code. ». Chaque légende tient 3,7 à 5,5 s et l'action à l'écran l'illustre pendant qu'elle est lue. Progression sol → code → vol → preuve → carte finale. Montée en enjeu (du statique au vol) bien construite, mais aucun plan serré dédié à chaque pièce.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Pastille de légende en haut au centre du viewport",
+      "name_en": "top caption chip",
+      "t": "0:00.5-0:33.7",
+      "frames": "f15-f1011",
+      "fps": 30,
+      "mechanics": "Pastille #ECE9DF à coins légèrement arrondis, ombre douce, à ≈ 3 % du haut, hauteur ≈ 4,5 % du cadre, centrée sur la zone 3D (x ≈ 42 % du cadre, pas sur le centre du cadre). Texte grotesque grasse ≈ 2 % de la hauteur, #2C3527. La première porte en plus une étiquette « ✦ CLAUDE OPUS 5.5 » en petites capitales jaune-olive au-dessus. Lisible mais petite pour un fil social.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fondu enchaîné court entre deux légendes",
+      "name_en": "quick caption crossfade",
+      "t": "0:12.93-0:13.13",
+      "frames": "f388-f394",
+      "fps": 30,
+      "mechanics": "L'ancienne légende passe à ≈ 30 % d'opacité en 4 im (f388-f391), disparaît, la nouvelle monte en ≈ 3 im (f392-f394), sans déplacement ni changement d'échelle. Le changement de largeur de pastille se fait sans animation. Discret et propre, mais aucune énergie : un glissement de 10-20 px aurait signalé la nouvelle idée.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mise en page à trois zones : viewport, panneau, bloc-titre",
+      "name_en": "viewport + control rail + corner title",
+      "t": "0:00-0:33.7",
+      "frames": "f0-f1011",
+      "fps": 30,
+      "mechanics": "Viewport 3D sur ≈ 84 % de la largeur ; rail de contrôle à droite ≈ 16 % de la largeur, fond #ECE9DF, sections Airframe (Landing gear, Wings, Flaps, Dive brakes, Canopy en boutons segmentés), Engine (curseur Propeller), Paint (2 livrées), Weathering (curseur), Stores (Clean / Bombs / Rockets), Scene (On the mat / In flight), accordéon code. Bloc-titre en bas à gauche, marge ≈ 0,5 % du bord gauche (très serré), bas ≈ 3 %. La hiérarchie est claire mais le rail est illisible en vidéo 1080p.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Bloc-titre pochoir militaire",
+      "name_en": "stencil military title block",
+      "t": "0:00-0:21.8",
+      "frames": "f0-f655",
+      "fps": 30,
+      "mechanics": "« Douglas » ≈ 2,5 % de la hauteur, puis « A-1H » et « Skyraider » ≈ 8 % chacun, grotesque condensée noire avec coupures de pochoir, interlignage serré (≈ 0,9), #2C3527, petite ligne de caractéristiques dessous. La typo reprend le marquage peint des avions : choix motivé par le sujet. Elle disparaît en vol (pas reprise dans la scène aérienne) et revient sur la carte finale.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Orbite de présentation au sol",
+      "name_en": "slow turntable orbit",
+      "t": "0:00-0:13.0",
+      "frames": "f0-f390",
+      "fps": 30,
+      "mechanics": "Caméra en orbite continue autour de l'avion posé, de l'avant 3/4 droit (0 s) au profil gauche (≈ 8 s) puis retour vers la face (≈ 12,5 s), ≈ 10-12°/s, vitesse quasi constante, hauteur de caméra basse (≈ hauteur du cockpit). Avancée (dolly-in) en fin de segment : l'hélice passe de ≈ 15 % à ≈ 30 % de la hauteur du cadre entre 11,5 et 13 s. Aucun ease visible entre les phases : mouvement fluide mais monotone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, microM-001-move-f299.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Pièces articulées déclenchées par le panneau",
+      "name_en": "articulated parts toggled from UI",
+      "t": "0:04.0-0:09.3",
+      "frames": "f120-f280",
+      "fps": 30,
+      "mechanics": "Chaque clic sur un bouton segmenté anime une pièce : hélice qui démarre (4,0 s), verrière qui coulisse vers l'arrière (≈ 6,5 s), volets qui descendent (≈ 7 s), aérofreins de fuselage qui s'ouvrent (≈ 8-8,5 s). Mouvements ≈ 0,5-1 s, ease-in-out probable, sans dépassement. La relation cause-effet (clic → pièce) est le vrai contenu ; elle est sous-exploitée car la caméra ne cadre jamais la pièce qui bouge.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Disque d'hélice translucide à bout jaune",
+      "name_en": "translucent prop disc ring",
+      "t": "0:04.0-0:33.7",
+      "frames": "f120-f1011",
+      "fps": 30,
+      "mechanics": "Hélice à 4 pales qui tourne avec pales nettes à chaque image (effet stroboscopique, rotation apparente ≈ 20-40° par image) et, en plus, un anneau translucide jaune #E5C35C à ≈ 25-35 % d'opacité au rayon des bouts de pales : il simule la traînée des bouts peints en jaune (faux flou de mouvement). Lisible et économique. Améliorable avec un vrai disque flou et des pales plus transparentes à haut régime.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f376.jpg, microM-004-move-f416.jpg",
+      "illus": {"from": 376, "to": 388, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui pilote le panneau",
+      "name_en": "cursor-driven UI demo",
+      "t": "0:03.5-0:21.5",
+      "frames": "f105-f645",
+      "fps": 30,
+      "mechanics": "Flèche de curseur (réelle probable, enregistrement d'écran) qui se déplace vers chaque contrôle et clique, en phase avec la légende en cours. Aucun retour visuel agrandi (pas de halo de clic, pas de zoom sur le panneau) : à 1080p le clic est presque invisible, ≈ 1 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f299.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Échange de livrée en une image",
+      "name_en": "hard paint swap",
+      "t": "0:10.53-0:10.57",
+      "frames": "f316-f317",
+      "fps": 30,
+      "mechanics": "Camouflage olive/sable/vert → blanc-gris US Navy d'une image à l'autre, sans transition (pas de balayage, pas de fondu). Même chose en sens inverse à ≈ 16,0 s. Effet de bascule utile pour montrer le configurateur, mais brutal à l'œil ; un balayage de matériau le long du fuselage (wipe de shader) aurait fait un vrai moment.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 313, "to": 320, "n": 4}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Configurateur d'armement et usure procédurale",
+      "name_en": "stores loadout and procedural weathering",
+      "t": "0:09.3-0:13.0",
+      "frames": "f280-f390",
+      "fps": 30,
+      "mechanics": "Bombes puis roquettes qui apparaissent sous les ailes en une image (pas d'animation de chargement), ≈ 14 emports visibles. Curseur « Weathering » qui salit la livrée blanche (traces plus sombres sur le fuselage vers 11,5-12 s, faibles à cette taille).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-002-move-f338.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Accordéon « Use this model in code »",
+      "name_en": "code snippet reveal",
+      "t": "0:13.0-0:21.8",
+      "frames": "f390-f655",
+      "fps": 30,
+      "mechanics": "Section du panneau qui s'ouvre (≈ 3 im) et montre ≈ 10 lignes en mono (« const ad = createSkyraider({…}) », réglages de cibles). Sert de preuve « une fonction usine pilote tout l'avion », mais le code fait ≈ 0,8 % de la hauteur : illisible. Il faudrait agrandir le code en plein cadre ou zoomer dessus.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Repliage d'ailes pour pont d'envol",
+      "name_en": "carrier wing fold",
+      "t": "0:17.5-0:20.5",
+      "frames": "f525-f615",
+      "fps": 30,
+      "mechanics": "Caméra en plongée avant (≈ 30° au-dessus de l'horizon). Les deux ailes externes pivotent vers le haut autour de leur charnière en ≈ 3 s (≈ 90 im), ease-in-out probable : ≈ 30° à 18,0 s, ≈ 60° à 18,5 s, ≈ 90° à 19,5 s, puis repliées au-dessus du fuselage avec intrados blanc visible à 20,5 s. Les bombes suivent les ailes. Le plus beau mouvement mécanique de la vidéo, cadré assez large pour être lu.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg",
+      "illus": {"from": 525, "to": 615, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu par le brouillard vers le vol",
+      "name_en": "dip to haze",
+      "t": "0:21.83-0:22.40",
+      "frames": "f655-f672",
+      "fps": 30,
+      "mechanics": "Toute l'image (scène, panneau, titre) se noie dans un blanc laiteux #CBCFC4 en 6 im (f655-f661, ease-in), 2 im de brume pure (f661-f662), puis la scène en vol réapparaît en ≈ 10 im (f663-f672, ease-out) : l'avion déjà en l'air, vu de l'arrière 3/4, au milieu des nuages. La couleur du fondu est celle de la brume atmosphérique : le passage se lit comme une traversée de nuage, motivée par le décollage. Le panneau réapparaît lui aussi en fondu, ce qui trahit le simple fondu d'écran.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f655.jpg",
+      "illus": {"from": 653, "to": 672, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra de poursuite en orbite autour de l'avion en vol",
+      "name_en": "orbiting chase cam",
+      "t": "0:22.4-0:33.7",
+      "frames": "f672-f1011",
+      "fps": 30,
+      "mechanics": "Caméra accrochée à l'avion (il reste à ≈ 40-60 % de la largeur), orbite de l'arrière 3/4 gauche (22,5 s) au profil (27 s) puis à l'avant 3/4 en plongée (33 s), ≈ 180° en 11 s soit ≈ 16°/s ; l'avion s'incline (roulis ≈ 20-40°) pendant que le sol défile dessous. L'avion occupe ≈ 60-90 % de la largeur selon l'angle. Fluide, mais 11 s du même mouvement sans événement nouveau.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f915.jpg, microM-007-move-f958.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Décors procéduraux : tapis au sol, jungle en patchwork",
+      "name_en": "procedural ground and patchwork jungle",
+      "t": "0:00-0:33.7",
+      "frames": "f0-f1011",
+      "fps": 30,
+      "mechanics": "Au sol : tapis texturé beige-gris #B8B0A0 à motif fin, ligne d'arbres floue noyée dans la brume au fond. En vol : parcelles vertes rectangulaires de tons #8FA57A à #B5C49B, une rivière sinueuse claire, nuages blancs flous, brume qui monte vers l'horizon. Tout est généré par code, sans image. Fond calme qui laisse l'avion lire en premier.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette kaki désaturée partagée entre scène et interface",
+      "name_en": "shared desaturated military palette",
+      "t": "0:00-0:38.93",
+      "mechanics": "Le beige du panneau (#ECE9DF), la brume (#C9CCC1), le sol sable et le vert-noir des textes (#2C3527) sont tous tirés du camouflage. Seuls accents saturés : le jaune des bouts de pales et du surlignage final, le bleu des cocardes. L'interface semble faire partie du monde au lieu d'être un calque technique.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Voile beige vers la carte finale",
+      "name_en": "wash-out to end card",
+      "t": "0:33.70-0:34.27",
+      "frames": "f1011-f1028",
+      "fps": 30,
+      "mechanics": "Un voile #C8CBBE monte à ≈ 85-90 % d'opacité en ≈ 16 im (0,53 s), ease-out, et le texte de la carte finale apparaît en même temps par fondu (déjà à la bonne taille, sans mouvement). La scène en vol reste visible en fantôme (≈ 10 %) et continue de bouger derrière : l'arrière-plan reste vivant. Pas de décalage entre les lignes du texte.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 1011, "to": 1030, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carte finale hiérarchisée avec surlignage jaune",
+      "name_en": "end card with highlighter underline",
+      "t": "0:34.3-0:38.93",
+      "frames": "f1028-f1168",
+      "fps": 30,
+      "mechanics": "Centrée : sur-titre « DOUGLAS A-1H SKYRAIDER » en petites capitales espacées (≈ 1 % de la hauteur, interlettrage ≈ +15 %) ; « Built with / Claude Opus 5.5 » en pochoir condensé noir, 2 lignes de ≈ 9-10 % ; sous-titre gras ≈ 2,5 % « A flyable warbird in one HTML file » avec une barre jaune #E8B84A sous « one HTML file » (≈ 0,5 % d'épaisseur) ; ligne de preuves ≈ 1 % séparée par des barres obliques. Quatre niveaux nets, un seul accent couleur.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Carte finale tenue 4,6 s sans animation",
+      "name_en": "long static end hold",
+      "t": "0:34.3-0:38.93",
+      "frames": "f1028-f1168",
+      "fps": 30,
+      "mechanics": "Maintien statique mesuré 4,67 s (12 % de la durée) : aucun élément de texte ne bouge, seul le fantôme d'avion dérive. Sans musique, ce temps mort pèse. 1,5-2 s suffiraient, ou un surlignage qui se trace, un compteur « ~2,000 lines » qui roule.",
+      "verdict": "cliche"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Prompt d'une ligne sans aucune consigne vidéo : le résultat est une capture d'app, pas une pièce de motion. Toute la mise en scène (légendes, visite, carte finale) a été improvisée, probablement par des messages suivants non publiés."},
+    {"kind": "build", "insight": "« Build X in Three.js » sur un objet mécanique pousse Claude à construire un configurateur complet : chaque sous-système réel (train, ailes, volets, aérofreins, verrière, livrées, emports) devient un bouton. Cette liste de fonctions devient ensuite le script de la vidéo."},
+    {"kind": "inputs", "insight": "Aucun modèle ni texture fournis : la contrainte « tout en code » est retournée en argument marketing (« No 3D models. No image files. Just code. », « ~2,000 lines »). Le manque d'entrées devient la preuve."},
+    {"kind": "structure", "insight": "La structure sol → vol est une bonne idée inventée par le modèle ; il manquait une consigne de plans serrés par fonction et de durée par légende, d'où 11 s d'orbite sans événement en vol."},
+    {"kind": "other", "insight": "Pas de piste son demandée, pas de son produit : pour une démo mécanique, préciser « bruit de moteur et clics des mécanismes calés sur chaque action » transformerait la vidéo."}
+  ],
+  "steal": [
+    "Pour une démo 3D, transforme la liste des pièces mobiles en script : une légende par fonction, l'action déclenchée pendant que la légende est lue.",
+    "Passe d'un décor à un autre par un fondu dans la couleur de la brume atmosphérique : la transition se lit comme une traversée de nuage.",
+    "Dérive toute l'interface (panneau, pastilles, fond de carte finale) de la palette du sujet pour que l'UI appartienne au monde.",
+    "Simule le flou d'une hélice ou d'une roue par un anneau translucide au rayon des bouts colorés, plutôt qu'un vrai flou de mouvement coûteux.",
+    "Carte finale : sur-titre en capitales espacées, titre géant, sous-titre avec un seul mot-clé surligné, ligne de preuves chiffrées."
+  ],
+  "flaws": [
+    "Caméra en orbite uniforme pendant 33 s : jamais de plan serré sur la pièce qui bouge, jamais de changement d'axe franc.",
+    "Panneau, code et curseur illisibles à 1080p : la preuve technique n'est pas lisible en vidéo.",
+    "Échange de livrée et d'armement en une image, sans transition ni accent.",
+    "11 s de vol sans nouvel événement, puis carte finale figée 4,6 s : temps morts sans musique.",
+    "Bloc-titre collé à ≈ 0,5 % du bord gauche du cadre."
+  ],
+  "deep_study": {"worth": false, "why": "Capture d'app 30 fps à mouvements continus et uniformes ; les seuls moments notables (fondu au brouillard, repliage d'ailes, voile final) se lisent déjà sur les planches. Rien à mesurer image par image à 60 fps."}
+}

@@ -1,0 +1,426 @@
+{
+  "slug": "vanshwtfff-db0466",
+  "title": "Motion designer showreel",
+  "handle": "@VanshWTFFF",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Transitions toutes motivées (plongée dans le O, iris né de l'impact, barres devenues stores), principes démontrés au cordeau et calés sur les temps ; mais huit chapitres en 10 s et un nuage 3D générique.",
+  "summary": "Showreel méta de 10 s : une timeline de logiciel d'animation en bas de l'écran découpe la démonstration en huit chapitres. Chaque lettre de MOTION tombe avec sa propre courbe, une balle rebondit et se métamorphose sur chaque temps, les barres d'un graphique deviennent des stores vénitiens, et le point final de « Claude. » retombe sur le temps. Fort par l'enchaînement motivé, dense jusqu'à l'illisible.",
+  "prompt_vs_result": [
+    "Une seule ligne : 10 s de motion graphics « dynamique » qui prouvent le talent de Claude, à la manière d'un showreel de CV. Rien sur le style, la palette, la musique, le format ni la structure.",
+    "Claude a tout inventé : la timeline-HUD chapitrée, la palette Bauhaus bleu nuit/rouge/jaune, les démonstrations de principes (courbes, squash & stretch), les transitions motivées, le compteur « 600 frames », la signature « Claude. motion designer » et, probablement, la bande-son à 120 BPM.",
+    "« Showreel de CV » a bien cadré le genre : une liste de compétences devient une liste de chapitres. Sans plafond ni durée de lecture, Claude empile huit chapitres en 10 s ; il fallait imposer 4 à 5 parties et des légendes lisibles."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0F286F", "role": "fond bleu nuit « plan d'architecte » (ouverture, particules, profondeur, logo)"},
+      {"hex": "#1C347C", "role": "grille fine du fond bleu"},
+      {"hex": "#F2F3F8", "role": "papier : fond clair (squash & stretch, données) et lettres de MOTION"},
+      {"hex": "#FEFEFE", "role": "texte blanc du logo"},
+      {"hex": "#DB2831", "role": "rouge d'accent : point final, carré, dernière barre, repères des guides, tête de lecture"},
+      {"hex": "#F7C521", "role": "jaune : triangle, fond du chapitre systems, bandes"},
+      {"hex": "#1B1B1F", "role": "encre noire : barres du graphique, segments du champ de vecteurs"},
+      {"hex": "#1C1A20", "role": "fond sombre du chapitre cuts"},
+      {"hex": "#BFD4F0", "role": "bleu pâle estimé : pelures d'oignon, jauge vide, curseur"}
+    ],
+    "type": "Grotesque géométrique très grasse pour les mots héros (MOTION 30 % H, 78 % W ; Claude. 22 % H), serif italique fine pour légendes et sous-titre (7,5 % H), chiffres gras à chasse fixe ; « space » espacé.",
+    "texture": "Aplats vectoriels nets sans ombre ; grille fine de plan d'architecte ; flou de mouvement réel par copies multiples (O élastique, zoom radial, compteur, stores) ; bords d'iris adoucis sur ≈ 60-80 px ; aberration chromatique sur le C du logo ; traînées colorées des particules.",
+    "style": "Plan d'architecte Bauhaus, didactique et méta",
+    "coherence": "Le système tient par la palette à quatre couleurs + papier reprise dans chaque chapitre (les stores la résument à 24 % chacune), par le HUD-timeline omniprésent, par les guides typographiques à points rouges et par le point rouge fil conducteur. Ce qui casse : le chapitre nuage de points 3D (sphère, tore, onde) sort du vocabulaire plat et ressemble à une démo de code générique."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "120 BPM, pulsation très nette (9,5) : à 60 fps un temps = 30 im, et la timeline est construite sur cette grille (chapitres à f0, f90, f180, f240, f315, f390, f480, f510). Les kicks tombent toutes les 0,500 s dès ≈ 1,51 s ; les impacts (f120, f150, f180) et les transitions majeures (f181, f226, f391, f511) tombent à ±1 im d'un temps ou demi-temps, l'image précédant l'attaque de 0,5 à 1 im. La coupe de la plongée dans le O (f87) précède le drop de 3,6 im (60 ms), perçue comme synchrone. La rafale de mots (f482-f508) suit la grille des doubles-croches (7,5 im). Aucun temps mort : seul l'ouverture (0-0,4 s, apparition de la grille) et le carton final (9,13-9,98 s, 0,85 s) sont statiques. Densité extrême : un événement nouveau toutes les 0,1 à 0,5 s, huit chapitres de 0,5 à 1,5 s.",
+    "timeline": [
+      {"t": "0:00-0:00.40", "what": "Fond bleu nuit, la grille, deux guides à points rouges et six pictogrammes de courbes apparaissent ; HUD à 000", "technique": "fond plan d'architecte, maintien d'ouverture"},
+      {"t": "0:00.40-0:01.20", "what": "Les lettres de MOTION tombent une à une, chacune avec la courbe légendée dessous (linéaire, ease-in-out, expo, back, élastique, rebond)", "technique": "six lettres, six courbes"},
+      {"t": "0:01.13-0:01.28", "what": "Les deux O se remplissent en disques blancs", "technique": "anticipation de la plongée"},
+      {"t": "0:01.28-0:01.45", "what": "Zoom expo-in avec flou radial dans le second O ; son intérieur blanc devient le fond, son centre un point bleu", "technique": "plongée dans le glyphe"},
+      {"t": "0:01.45-0:02.00", "what": "Le point grandit en balle, arc vers la gauche, étirement puis écrasement au sol sur le temps (drop du kick à ≈ 1,51 s)", "technique": "squash & stretch"},
+      {"t": "0:02.00-0:02.50", "what": "La balle devient carré rouge, rebond en rotation, impact sur le temps", "technique": "métamorphose à l'impact"},
+      {"t": "0:02.50-0:03.00", "what": "Le carré devient triangle jaune, rebond, impact sur le temps avec anneaux", "technique": "métamorphose à l'impact"},
+      {"t": "0:03.02-0:03.13", "what": "Trois disques bleu, rouge, jaune jaillissent du point d'impact en 7 im", "technique": "chaîne d'iris trichromes"},
+      {"t": "0:03.13-0:03.77", "what": "Sur jaune : trame de points qui pousse, devient champ de segments noirs et rouges en tourbillons (« systems »)", "technique": "champ de vecteurs génératif"},
+      {"t": "0:03.77-0:03.83", "what": "Iris bleu nuit qui inverse le champ (segments blancs)", "technique": "iris inversé"},
+      {"t": "0:03.83-0:05.10", "what": "Segments rétrécis en grille de points, ondulation, particules à traînées qui composent « flow » sur guides légendés", "technique": "particules qui forment un mot"},
+      {"t": "0:05.25-0:06.40", "what": "Nuage de points 3D : sphère tordue, tore en rotation avec axes, surface d'onde (« depth »)", "technique": "nuage de points 3D"},
+      {"t": "0:06.40-0:06.62", "what": "La surface s'écrase en ligne (4 im), tient 1 im, puis une bande blanche explose plein cadre en 6 im sur le temps", "technique": "compression puis explosion"},
+      {"t": "0:06.62-0:07.60", "what": "Compteur 000 → 600 « frames in this reel », 12 barres en cascade, courbe tracée, jauge « hand-tuned easing » 0 → 100 %", "technique": "compteur qui roule, data viz"},
+      {"t": "0:07.67-0:08.12", "what": "Les barres se recolorent et s'étirent en stores vénitiens 4 couleurs, ferment l'écran sur le temps puis s'ouvrent sur fond noir", "technique": "barres devenues stores"},
+      {"t": "0:08.03-0:08.47", "what": "Rafale « type. », « shape. », « space. », « time. » toutes les 7,5 im pendant la coupure du kick ; le point rouge reste seul", "technique": "rafale de mots en doubles-croches"},
+      {"t": "0:08.50-0:08.63", "what": "Iris bleu nuit depuis le point sur l'impact musical, « Claude » tapé lettre à lettre avec curseur", "technique": "iris du logo, frappe"},
+      {"t": "0:08.83-0:09.05", "what": "« motion designer » monte sous le logo ; le point rouge retombe en accélérant et devient le point final sur le temps", "technique": "chute avec gravité, point fil conducteur"},
+      {"t": "0:09.05-0:10.0", "what": "Carton final : guides typographiques qui s'effacent, signature « 600 frames, all written in code »", "technique": "carton final tenu 0,85 s"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "12 gestes clés sur 20 à ±2 im d'une barre bleue ou bleu clair (hasard 33 %), 14 sur 20 si l'on compte la rafale de mots sur la grille des doubles-croches. Les trois impacts de la balle (f120, f150, f180) et les transitions f391 et f511 tombent sur les kicks les plus forts (2,009, 2,519, 3,007, 6,513 et ≈ 8,51 s), l'image précédant l'attaque de 0,5 à 1 im ; les iris f181 et f226 démarrent à ±1 im d'un temps et d'un demi-temps. Structure : pas de kick avant le drop à ≈ 1,51 s (la plongée dans le O coupe 3,6 im avant), kick à quatre temps pendant les démonstrations, kick coupé de 8,0 à 8,5 s exactement pendant le chapitre « cuts », impact +26 dB à ≈ 8,51 s sur l'iris du logo, traîne sur le carton final. Restent libres : la chute des lettres, les flux de particules, l'entrée des données, la montée du sous-titre. Indice automatique : départs/demi-temps, p corrigé 0,005.",
+    "synced": ["impacts", "coupes", "apparitions", "atterrissages", "texte", "couleur", "drop"],
+    "style_match": "Électro synthétique à 120 BPM, kick à quatre temps, montée, coupure et gros impact final : colle aux aplats nets et aux courbes sèches ; un rebond par temps prolonge le groove.",
+    "how_built": "Le prompt ne dit rien du son. La composition est écrite en images (600 im à 60 fps) avec des chapitres sur des multiples de 30 im, soit exactement un temps à 120 BPM. La bande-son (kick toutes les 0,500 s calé sur t = 0, drop à 1,5 s, coupure à 8,0 s, impact à 8,5 s) épouse ces chapitres : piste probablement synthétisée en code sur la même grille (cf. « 600 frames, all written in code »), sinon choisie après coup au bon tempo. Leçon : bâtir la timeline sur une grille de 30 im à 60 fps aligne d'office toute musique à 120 BPM qui démarre à t = 0."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Showreel chapitré par une timeline-HUD",
+      "name_en": "Timeline HUD chapter markers",
+      "t": "0:00-0:10.0",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "En bas du cadre (≈ 95 % H), une règle de logiciel d'animation de 6 à 94 % de la largeur porte 8 repères losanges aux débuts de chapitre (f0, f90, f180, f240, f315, f390, f480, f510) ; ils passent du contour blanc au rouge plein quand la tête de lecture rouge les franchit. À côté de la tête : numéro d'image sur 3 chiffres et nom du chapitre en serif italique (« type », « squash & stretch », « systems », « particles », « depth », « data », « cuts », « hello »), ≈ 1,7 % H. Le HUD reste présent sur tous les fonds et change de teinte avec eux. Il transforme une suite de démos en CV et dit « je suis un logiciel d'animation ».",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Six lettres, six courbes d'accélération",
+      "name_en": "Per-letter easing showcase",
+      "t": "0:00.40-0:01.20",
+      "frames": "f24-f72",
+      "fps": 60,
+      "mechanics": "Les 6 lettres de MOTION tombent du haut du cadre sur ≈ 415 px (58 % H) jusqu'à leur ligne de base, chacune avec la courbe affichée dessous. M linéaire : 13,3 px/im constants de f25 à f56 (31 im), arrêt sec. Premier O ease-in-out : vitesse 18 → 38 px/im (pic f41) → 1 px/im, posé f57. T expo-out : 67, 56, 48, 36… px/im (×0,85 par image), 90 % de la course en 14 im, posé f60. I back-out (overshoot) : dépasse de 96 px (23 % de la course) à f48, remonte en 17 im, posé f65. Second O élastique : entrée à ≈ 170 px/im, dépassement de 177 px (43 %) à f37 puis −60, +23, −7, +3 px, période ≈ 11 im, amortissement ≈ 0,35 par demi-oscillation, posé f62. N rebond (bounce) : chute accélérée 32 → 64 px/im, contacts f49, f62, f68, f72, rebonds de 118, 29 et 7 px (rapport ≈ 0,25), sans écrasement. Départs décalés : M f24, T f26, I f30, les deux O f33, N f40 ; tout est posé à f72 (1,2 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 24, "to": 72, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Légende des courbes sous le mot",
+      "name_en": "On-screen easing legend",
+      "t": "0:00.40-0:01.28",
+      "frames": "f24-f77",
+      "fps": 60,
+      "mechanics": "Six pictogrammes de courbes (≈ 4 % W chacun, bande à 64 % H) légendés en serif italique minuscule (« linear », « ease in-out », « expo out », « back out », « elastic », « bounce »), alignés grossièrement sous la lettre qui les applique ; un repère rouge progresse sur chaque courbe (probable). Ils s'effacent f75-f77, juste avant la plongée. Le spectateur voit la courbe et son effet en même temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot géant posé sur guides typographiques",
+      "name_en": "Hero word on type guides",
+      "t": "0:00.40-0:01.45",
+      "frames": "f24-f86",
+      "fps": 60,
+      "mechanics": "MOTION en grotesque géométrique très grasse, papier #F2F4F8 sur bleu nuit #0F286F : capitales ≈ 30 % H (215 px sur 720), largeur 78 % W, centré entre 28 et 58 % H, O parfaitement circulaires. Deux guides fins (ligne des capitales, ligne de base) traversent le cadre avec un point rouge à chaque extrémité, sur la grille fine #1C347C : le mot est présenté comme un dessin technique.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Les O se remplissent avant la plongée",
+      "name_en": "Counter fill anticipation",
+      "t": "0:01.13-0:01.28",
+      "frames": "f68-f77",
+      "fps": 60,
+      "mechanics": "Un point blanc naît au centre des deux O (f68) et grandit jusqu'à remplir l'anneau en 4-5 im (f68-f72, ease-out probable) ; un fin cercle intérieur reste visible jusqu'à f76 puis s'efface. Le O devenu disque plein annonce où l'on va entrer (anticipation) et fournit le point central qui deviendra la balle.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-cut-f87.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le O",
+      "name_en": "Zoom through the glyph",
+      "t": "0:01.28-0:01.47",
+      "frames": "f77-f88",
+      "fps": 60,
+      "mechanics": "Zoom expo-in de 10 im centré sur le second O : largeur du mot +0,2 %, +0,6 %, +1,3 %, +2,5 %, +4,9 %, +9 % (f77-f82), puis explosion ; la surface blanche passe de 19 % (f82) à 24 % (f84), 43 % (f86) et 99,6 % (f87). Flou radial (zoom blur) fort dès f81. À f87 l'intérieur blanc du O est devenu le fond #F2F3F8 du chapitre suivant, et un point bleu nuit de 3 px au centre devient la balle (raccord par le centre du glyphe). La coupe précède le drop du kick (≈ 1,51 s) de 3,6 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f87.jpg",
+      "illus": {"from": 74, "to": 90, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement par sous-images",
+      "name_en": "Sub-frame motion blur",
+      "t": "0:00.55-0:08.45",
+      "frames": "f33-f507",
+      "fps": 60,
+      "mechanics": "Le flou est une accumulation de copies, pas un filtre : à f34-f36 le O élastique montre 4-5 anneaux superposés sur la verticale ; flou radial du zoom f81-f86 ; flou vertical des chiffres du compteur (f398-f420) et des stores (f464-f478) ; traînée horizontale sur « time » (f506). Il n'apparaît qu'au-delà de ≈ 40 px/im, les poses restent nettes.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg, microM-001-cut-f87.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Squash & stretch avec métamorphose à chaque impact",
+      "name_en": "Squash and stretch with shape morph",
+      "t": "0:01.45-0:03.00",
+      "frames": "f87-f180",
+      "fps": 60,
+      "mechanics": "Le point grandit en balle bleu nuit (≈ 5 % H) en ≈ 9 im (f87-f96), monte puis tombe en arc vers la gauche en s'étirant dans l'axe de la trajectoire (ellipse ≈ 1,4:1, f108-f118) ; à l'impact (f120) elle s'écrase en ellipse ≈ 2:1 sur une ligne de sol à 75 % H (85 % W). À f122 elle est devenue un carré rouge #DB2831 écrasé, qui repart en arc vers la droite en tournant (≈ 45-90°), sommet ≈ f137 à ≈ 33 % H au-dessus du sol, impact f150 ; il devient un triangle jaune #F7C521, impact f180. Un rebond = 30 im = un temps. Montée ease-out, descente ease-in (gravité).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-cut-f87.jpg",
+      "illus": {"from": 112, "to": 154, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pelures d'oignon et trajectoire pointillée",
+      "name_en": "Onion skin and motion path",
+      "t": "0:01.50-0:03.02",
+      "frames": "f90-f181",
+      "fps": 60,
+      "mechanics": "Derrière l'objet, 3 à 6 contours bleu pâle des positions précédentes (onion skin) et une trajectoire en pointillés rouges avec points-clés rouges, comme dans l'éditeur d'un logiciel d'animation. À chaque impact : 8 à 10 petits traits radiaux (lignes d'impact) pendant ≈ 10 im ; anneaux concentriques bleus au dernier impact (f180).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un rebond par temps",
+      "name_en": "One bounce per beat",
+      "t": "0:02.00-0:03.00",
+      "frames": "f120-f180",
+      "fps": 60,
+      "mechanics": "Les impacts au sol tombent à f120, f150 et f180 (2,000, 2,500, 3,000 s) ; les kicks attaquent à 2,009, 2,519 et 3,007 s : l'image d'impact précède l'attaque de 0,5 à 1 im, ce qui se perçoit comme parfaitement synchrone. Chaque impact déclenche une métamorphose (couleur + forme), donc l'accent visuel coïncide avec l'accent sonore. Sur un kick à quatre temps, la balle devient la grosse caisse.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-002-cut-f182.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Chaîne d'iris trichromes depuis le point d'impact",
+      "name_en": "Staggered color iris burst",
+      "t": "0:03.02-0:03.13",
+      "frames": "f181-f188",
+      "fps": 60,
+      "mechanics": "Au dernier impact, trois disques à bord adouci (≈ 60-80 px de dégradé) jaillissent du point de chute du triangle (≈ 66 % W, 62 % H) : bleu nuit couvre 25 puis 72 % du cadre (f181-f182), rouge 21 → 71 % (f183-f184), jaune 18 → 68 → 91 → 99,7 % (f185-f188). Chaque disque couvre l'écran en 2-3 im, décalage de 2 im entre couleurs, 7 im au total, départ sur le temps (f181). Le jaune devient le fond du chapitre suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f182.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Trame de points qui pousse depuis l'impact",
+      "name_en": "Halftone grid bloom",
+      "t": "0:03.13-0:03.40",
+      "frames": "f188-f204",
+      "fps": 60,
+      "mechanics": "Sur le jaune, une grille régulière de points noirs (≈ 30 colonnes) apparaît depuis le coin bas droit, les points grossissant de proche en proche (f188-f202) ; vers f202 certains virent au rouge et s'étirent en segments, amorce du champ de vecteurs.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f182.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Champ de vecteurs en tourbillons",
+      "name_en": "Vector flow field",
+      "t": "0:03.40-0:03.77",
+      "frames": "f204-f226",
+      "fps": 60,
+      "mechanics": "La grille devient un champ de ≈ 30 × 17 segments noirs #1B1B1F et rouges #DB2831 sur jaune #F7C420, orientés selon 2-3 tourbillons qui tournent lentement (≈ 10-20° par 10 im). Chapitre « systems » : un système génératif simple, lisible en 0,4 s, dans la palette.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f230.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris qui inverse les couleurs du champ",
+      "name_en": "Inverting iris wipe",
+      "t": "0:03.77-0:03.83",
+      "frames": "f226-f230",
+      "fps": 60,
+      "mechanics": "Un disque bleu nuit à bord flou s'ouvre vers 62 % W, 45 % H : couverture 3 % (f226), 42, 70, 86, 91 % (f230), ease-out, 4 im. À l'intérieur le même champ continue en segments blancs sur bleu : la transition inverse les couleurs sans rompre le mouvement. Départ sur le demi-temps (f225,6, attaque à 3,773 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f230.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Segments, grille de points, puis mot en particules",
+      "name_en": "Particles assembling into a word",
+      "t": "0:03.83-0:05.10",
+      "frames": "f230-f306",
+      "fps": 60,
+      "mechanics": "Les segments rétrécissent en points en ≈ 10 im (f230-f240) et forment une grille fixe sur le temps f240 ; vers f245 une onde la déforme, les points deviennent des particules à traînées (quelques-unes rouges, jaunes, vertes) qui dérivent (f250-f290), puis se rangent dans les lettres de « flow » (bas de casse grasse, ≈ 52 % W, 28 % H) posé sur trois guides légendés « ascender », « x-height », « baseline » (≈ f300). Le mot ne tient que ≈ 0,3 s.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f230.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Nuage de points 3D qui se transforme",
+      "name_en": "Morphing 3D point cloud",
+      "t": "0:05.25-0:06.40",
+      "frames": "f315-f384",
+      "fps": 60,
+      "mechanics": "Chapitre « depth » : les particules forment une sphère tordue (f330), un tore en rotation avec axes 3D fins (f360), puis une surface d'onde en perspective (f379), en points blancs avec quelques points colorés. Ni ombre ni lumière : profondeur par densité et perspective. ≈ 1,15 s, sans lien narratif avec le reste.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg, overview-02.jpg, microM-004-move-f394.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Écrasement en ligne puis explosion en aplat",
+      "name_en": "Collapse to line, burst to fill",
+      "t": "0:06.37-0:06.62",
+      "frames": "f382-f397",
+      "fps": 60,
+      "mechanics": "La surface d'onde s'aplatit verticalement : 71 px (f386), 35, 9, 2 px (f389), ease-in qui s'accélère ; la ligne lumineuse tient 1 im (f390). Sur le temps f391 (kick à 6,513 s) une bande blanche jaillit de la ligne : 218 px (30 % H), 401, 511, 553, 582, 601 px, plein cadre à f397 (6 im, ease-out fort). Compression puis explosion, avec passage du bleu nuit au papier.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f394.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule jusqu'au nombre d'images du film",
+      "name_en": "Rolling frame counter",
+      "t": "0:06.62-0:07.60",
+      "frames": "f397-f456",
+      "fps": 60,
+      "mechanics": "En haut à gauche, 3 chiffres gras à chasse fixe (≈ 12 % H) au-dessus de la légende serif italique « frames in this reel » : 000 (f397), 100 (f400), 233 (f402), 383 (f406), 508 (f412), 568 (f420), 599 (f450), 600 (f456). Ease-out fort : 50 % de la valeur en ≈ 6 im, 95 % en 23 im. Chaque chiffre roule verticalement avec flou (odomètre). 600 = le nombre réel d'images de la vidéo : donnée autoréférente.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f394.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Histogramme en cascade, courbe tracée et jauge",
+      "name_en": "Staggered bar chart with line and donut",
+      "t": "0:06.63-0:07.60",
+      "frames": "f398-f456",
+      "fps": 60,
+      "mechanics": "12 barres noires #1B1B1F (la dernière rouge) poussent du bas, de gauche à droite, décalage ≈ 1,5-2 im par barre, chacune en ≈ 6-8 im ease-out ; zone du graphique ≈ 45 % H. Une courbe bleu nuit à points blancs se trace par-dessus (≈ f415-f450). À droite, une jauge circulaire « hand-tuned easing » se remplit de 0 à 100 % et vire du bleu pâle au rouge (18 % à f420, 100 % à f450).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f394.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les barres deviennent des stores vénitiens",
+      "name_en": "Bar chart to venetian blinds",
+      "t": "0:07.67-0:08.12",
+      "frames": "f460-f487",
+      "fps": 60,
+      "mechanics": "Les barres se recolorent en rouge, bleu nuit, jaune et noir (f460-f462) puis s'étirent sur toute la hauteur avec flou vertical, de gauche à droite : le papier visible passe de 79 % (f464) à 0 % (f477), ≈ 6 % par image. Écran fermé par des bandes verticales à 24 % de chaque couleur (f477-f480). Sur le temps (f481), chaque bande s'amincit jusqu'au filet et révèle le fond sombre #1C1A20 en 6 im (noir 30 → 95 %, f481-f487). La transition naît de l'objet du plan précédent.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 458, "to": 488, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rafale de mots qui illustrent leur sens",
+      "name_en": "Sixteenth-note word flashes",
+      "t": "0:08.03-0:08.47",
+      "frames": "f482-f508",
+      "fps": 60,
+      "mechanics": "Pendant la coupure du kick, quatre mots centrés se succèdent toutes les ≈ 7,5 im (doubles-croches à 120 BPM) : « type. » (f482, grotesque grasse blanche ≈ 15 % H), « shape. » (f489, gris en relief ombré), « space. » (f497, serif fine espacée ≈ 0,3 em, 27 % W), « time. » (f504, serif italique traînée horizontalement). Passage par roulement vertical flou de 1-2 im. Chaque mot est dessiné comme ce qu'il nomme ; le point rouge final reste seul au centre à f508. Trop rapide pour être lu.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Le point rouge fil conducteur",
+      "name_en": "Red dot through-line",
+      "t": "0:08.03-0:09.05",
+      "frames": "f482-f543",
+      "fps": 60,
+      "mechanics": "Le point rouge #DB2831 ponctue chaque mot de la rafale, reste seul au centre (f508), devient le centre de l'iris du logo (f510-f511), s'envole hors champ (f512-f514), puis retombe en accélérant (26, 37, 44, 51, 56 px/im, f533-f539, ease-in de gravité) et se pose en point final de « Claude. » sur le temps f540 : rappel du chapitre squash & stretch.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris du logo sur l'impact musical",
+      "name_en": "Logo iris on the hit",
+      "t": "0:08.50-0:08.57",
+      "frames": "f510-f514",
+      "fps": 60,
+      "mechanics": "Après 0,5 s sans kick, un disque bleu nuit à bord flou s'ouvre depuis le point, centré : couverture 25 % (f511), 59, 80, 92 % (f514), ease-out, 4 im. Il démarre sur le temps (f510,6) et sur l'impact le plus fort de la piste (+26 dB à ≈ 8,51 s). Le fond plan d'architecte revient : la vidéo se referme sur son décor d'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo tapé lettre à lettre avec curseur",
+      "name_en": "Typed logo with cursor",
+      "t": "0:08.50-0:08.63",
+      "frames": "f510-f518",
+      "fps": 60,
+      "mechanics": "Le C apparaît à f510 avec aberration chromatique (franges rouge et bleue), puis l (f512), a (f514), u (f515), d (f516, bloc curseur bleu pâle), e (f518) : 6 lettres en 8 im. « Claude » en grotesque très grasse blanche, ≈ 22 % H, 45 % W, centré entre 32 et 54 % H ; trois guides légendés « ascender », « x-height », « baseline » à droite (f520-f570), effacés avant la fin.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre serif italique et signature",
+      "name_en": "Italic serif subtitle and credit line",
+      "t": "0:08.83-0:09.98",
+      "frames": "f530-f599",
+      "fps": 60,
+      "mechanics": "« motion designer » en serif italique (≈ 7,5 % H, 26 % W, à 61 % H) monte de quelques pixels avec flou en 2-3 im (f530-f532). Vers 9,3 s s'ajoute « 600 frames, all written in code » (≈ 1 % H, à 73 % H), illisible sur mobile. Carton final tenu 0,85 s.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure visuelle calquée sur l'arrangement",
+      "name_en": "Arrangement-driven structure",
+      "t": "0:00-0:10.0",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Intro sans kick (0-1,5 s) pour l'ouverture typographique ; drop à ≈ 1,51 s, 3,6 im après la coupe de la plongée ; kick à quatre temps (0,500 s) pendant les démonstrations ; kick coupé de 8,0 à 8,5 s exactement pendant le chapitre « cuts » (stores et rafale de mots, silence avant le drop) ; impact maximal (+26 dB) à ≈ 8,51 s sur l'iris du logo ; traîne décroissante (−9 → −21 dB) sur le carton final. Les 8 chapitres commencent sur des temps (f0, f90, f180, f240, f390, f480, f510) ou un demi-temps (f315).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Transitions posées sur les kicks, remplissage libre",
+      "name_en": "Transitions anchored on kicks",
+      "t": "0:03.02-0:08.57",
+      "frames": "f181-f514",
+      "fps": 60,
+      "mechanics": "Les quatre transitions majeures démarrent sur la grille : chaîne d'iris f181 (temps f180,6), iris inversé f226 (demi-temps f225,6), explosion de la ligne f391 (temps f390,6), iris du logo f511 (temps f510,6) : 4 sur 4 à ±1 im. La rafale de mots suit les doubles-croches (f482, f489, f497, f504, f511 contre f480,6 + 7,5 k, ±1,5 im). Les gestes de remplissage (chute des lettres, flux de particules, entrée des données) restent libres entre ces ancres.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f182.jpg, microM-003-move-f230.jpg, microM-004-move-f394.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur de fond par chapitre",
+      "name_en": "Color-coded chapters",
+      "t": "0:00-0:10.0",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Bleu nuit #0F286F (type) → papier #F2F3F8 (squash & stretch) → jaune #F7C521 (systems) → bleu nuit (particles, depth) → papier (data) → bandes 4 couleurs → noir #1C1A20 (cuts) → bleu nuit (hello). Chaque changement de fond passe par une transition graphique (zoom, iris, bande, stores), jamais par un fondu. Palette Bauhaus : 4 couleurs + papier, rouge réservé aux accents.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond plan d'architecte",
+      "name_en": "Blueprint grid background",
+      "t": "0:00-0:01.45 ; 0:03.8-0:06.5 ; 0:08.5-0:10.0",
+      "frames": "f0-f86, f230-f390, f511-f599",
+      "fps": 60,
+      "mechanics": "Bleu nuit #0F286F avec grille fine #1C347C (lignes de 1 px, maille ≈ 1/20 de la largeur, probable), apparue en fondu pendant les 0,4 premières secondes. Fond-signature qui ouvre et ferme la vidéo, avec guides typographiques et points rouges de repère.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Huit chapitres en dix secondes",
+      "name_en": "Chapter density",
+      "t": "0:00-0:10.0",
+      "frames": "f0-f599",
+      "fps": 60,
+      "mechanics": "Durées : type 1,5 s, squash & stretch 1,5 s, systems 1,0 s, particles 1,25 s, depth 1,25 s, data 1,5 s, cuts 0,5 s, hello 1,5 s ; aucun maintien > 0,4 s sauf le carton final (0,85 s). Les mots héros intermédiaires (« flow ») restent ≈ 0,3-0,5 s. Parfait pour éblouir dans un showreel, trop dense pour un message à lire.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« show what an incredible motion designer you are » a été lu comme « démontre les fondamentaux » : chaque chapitre illustre un savoir-faire nommé (courbes, squash & stretch, systèmes, particules, profondeur, données, montage), affiché dans le HUD comme une ligne de CV."},
+    {"kind": "structure", "insight": "Le prompt ne fixe que 10 s ; Claude découpe 600 images en huit chapitres sur des multiples de 30 ou 15 im (f0, 90, 180, 240, 315, 390, 480, 510), d'où l'alignement naturel sur une pulsation à 120 BPM."},
+    {"kind": "build", "insight": "Le compteur 000 → 600 et la signature « 600 frames, all written in code » trahissent un rendu image par image piloté par le numéro d'image (HyperFrames ou canvas, probable) ; le flou par copies multiples indique un échantillonnage sous-image."},
+    {"kind": "inputs", "insight": "Aucune marque, palette ni police imposée : Claude choisit une palette Bauhaus (bleu nuit, rouge, jaune, noir, papier) et la tient sur tous les chapitres, ce qui fait la cohérence malgré la variété des démos."},
+    {"kind": "other", "insight": "Aucune consigne audio, pourtant la bande-son à 120 BPM (intro, drop, coupure, impact) épouse les chapitres : piste probablement générée en code avec l'animation ; sinon choisie après coup au bon tempo."},
+    {"kind": "qa", "insight": "Sans contrainte de lisibilité, les légendes tombent à 1-1,7 % de la hauteur et les mots de la rafale durent 7 im : un prompt doit fixer une taille minimale de texte et une durée de lecture par mot."}
+  ],
+  "steal": [
+    "Bâtis la timeline en images sur une grille de 30 im à 60 fps (un temps à 120 BPM) : chapitres, impacts et transitions tombent d'office sur la musique.",
+    "Pour montrer les courbes, fais tomber chaque lettre d'un mot avec son ease (linéaire, expo, back, élastique, rebond) et affiche la légende des courbes dessous.",
+    "Fais naître chaque transition du geste précédent : l'impact d'un objet ouvre un iris depuis son point de chute ; les barres d'un graphique s'étirent en stores vénitiens.",
+    "Garde un point rouge comme fil conducteur : point final de chaque mot, centre de l'iris, puis balle qui retombe sur le temps pour ponctuer le logo.",
+    "Plonge dans le O : remplis l'anneau, zoom expo-in de 10 im avec flou radial ; l'intérieur du glyphe devient le fond suivant, son centre l'objet suivant."
+  ],
+  "flaws": [
+    "Huit chapitres en 10 s : « flow », « depth » et les données restent 0,3 à 1 s à l'écran, trop peu pour lire.",
+    "Rafale type/shape/space/time à 7-8 im par mot : illisible, l'idée du mot qui illustre son sens se perd.",
+    "Nuage de points 3D (sphère, tore, onde) générique, hors du vocabulaire plat et Bauhaus du reste.",
+    "Légendes du HUD, des guides et signature « 600 frames, all written in code » à 1-1,7 % de la hauteur : illisibles sur mobile."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : chaque principe se mesure image par image (six courbes d'ease sur six lettres, squash & stretch avec métamorphose, chaîne d'iris en 7 im, stores en 13 + 6 im, rafale en doubles-croches) et tout est posé sur une grille de 30 im à 120 BPM. Support idéal pour la leçon des 12 principes et pour apprendre à caler impacts et transitions sur les kicks."
+  }
+}

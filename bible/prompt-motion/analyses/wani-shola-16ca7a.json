@@ -1,0 +1,391 @@
+{
+  "slug": "wani-shola-16ca7a",
+  "title": "Developer portfolio site showreel",
+  "handle": "@wani_shola",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "DA sobre et cohérente (3 couleurs, serif, captures réelles) et synchro musicale exemplaire, mais grammaire de mouvement pauvre : 16 fondus identiques, 69 % du temps immobile, captures au texte minuscule.",
+  "summary": "Showreel d'un ingénieur DevRel construit sur son propre site : accroche typographique « I build/explain/teach/measure it. » avec mot pivot qui roule, nom écrit sur l'entrée de la grosse caisse, puis chapitres de captures réelles (mode sombre en cercle, mobile, visite au temps, chat, projets, chiffres) et carte de fin. Point fort : timeline et arrangement musical partagent la grille 120 BPM. Point faible : fondus et maintiens répétitifs.",
+  "prompt_vs_result": [
+    "Showreel 90-100 s du portfolio : captures réelles encadrées (accueil, Ask, paquets, Hire, mobile, mode sombre), chat en grand et gras, faits du site, 3 couleurs, une idée par plan, fondus, musique 120 BPM, scènes coupées sur le temps, fin sur site et email.",
+    "Claude a décidé seul : l'accroche « I build/explain/teach/measure it. » dont les verbes deviennent les chapitres, le cercle du mode sombre, la visite à une section par temps, les compteurs décalés d'un temps, une bande-son aux sections calées sur les chapitres (probable).",
+    "Bien cadré : 120 BPM et « coupe sur le temps » donnent une synchro exemplaire. Mal cadré : « respirer » et « fondus » donnent 16 fondus identiques et des maintiens de 3-4 s. Demander un geste par temps et des transitions variées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F4EDDF", "role": "fond crème principal"},
+      {"hex": "#F9F4EB", "role": "intérieur des fenêtres, cartes, panneau de chat"},
+      {"hex": "#1B1714", "role": "encre : texte, scènes sombres, bulle de question, pastille active"},
+      {"hex": "#C66B45", "role": "terracotta sur fond sombre : mot italique, surtitres"},
+      {"hex": "#B5603F", "role": "terracotta sur crème : surtitres, puces, point du monogramme"},
+      {"hex": "#F2EDE2", "role": "texte crème sur fond encre"},
+      {"hex": "#8E8FF7", "role": "violet de la capture Jev Gatehouse (hors système)"},
+      {"hex": "#FB7EAF", "role": "rose de l'affiche DevFest (hors système)"}
+    ],
+    "type": "Serif old-style medium (probable Newsreader ou proche) pour titres et chiffres, 4-13 % de hauteur ; italique terracotta pour le mot clé ; surtitres en grotesque capitales ≈ 1,3 %, interlettrage ≈ +18 % ; interface en sans (Inter probable).",
+    "texture": "Aplats sans grain, glow ni bruit ; ombres portées très diffuses (≈ 40-60 px de flou, ≈ 10-15 % d'opacité) sous fenêtres, téléphones et cartes ; coins arrondis ; flou utilisé seulement comme effet d'entrée (lettres du nom, pastilles, cartes de stats) ; aucun flou de mouvement.",
+    "style": "Éditorial crème minimal, captures produit",
+    "coherence": "Le système tient : 3 couleurs reprises du site, même gabarit surtitre + titre serif + objet centré sur 17 scènes, verbes de l'accroche réutilisés comme surtitres de chapitre (BUILD, EXPLAIN, TEACH, MEASURE), fonds encre réservés à l'accroche, au mode sombre et aux chiffres. Ce qui l'affaiblit : le violet (#8E8FF7) et le rose (#FB7EAF) venus des captures, et un seul type de transition répété partout."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "beaucoup",
+    "notes": "Tempo 120,0 BPM (120,04 mesuré, pulsation très nette 9,27). Toute la vidéo est posée sur une grille de 15 im = 1 temps : 17 scènes de 4 à 12 s qui démarrent toutes sur une seconde paire, donc sur un multiple de 4 temps (8, 16, 24, 28, 32, 36, 48, 52, 60, 64, 68, 74, 78, 82, 88, 92 s). Aucune coupe franche : les 7 « coupes » du détecteur sont des fondus de 8 im commencés à x,733 s ; le premier élément de chaque nouvelle scène apparaît à x,067 s, sur la grosse caisse (x,08 s). Dans les scènes, les gestes tombent sur les temps (pastilles, puces, cartes de stats, compteurs, toutes les 1 ou 2 temps) ou volontairement sur le contretemps (défilements de la visite, cercle du mode sombre, carte v0). Densité très inégale : pic à 0:28,3-0:31,6 (7 défilements en 3,3 s, un par temps), creux à 0:43,6-0:47,7 (4,1 s fixes) et 1:34-1:42 (8 s sur la carte de fin). Le détecteur compte 69 % du temps en maintiens ≥ 0,4 s ; en comptant les fondus discrets et les poussées lentes, il reste six maintiens de 3 s ou plus (dont la carte de fin) : beaucoup de temps morts au regard de la règle 1600 (un geste toutes les 0,5 à 1 s).",
+    "timeline": [
+      {"t": "0:00-0:01.8", "what": "Fond encre, « I build it. » apparaît en fondu flou (≈ 5 im), surtitre terracotta « DEVELOPER RELATIONS, END TO END »", "technique": "accroche à mot variable, entrée fondu-flou"},
+      {"t": "0:01.8-0:06.2", "what": "Le verbe italique roule trois fois (explain, teach, measure), un toutes les 2 s, posé à 2,07 / 4,07 / 6,07 s", "technique": "mot pivot masqué, largeur interpolée"},
+      {"t": "0:07.73-0:08.0", "what": "Fondu de l'encre vers le crème en 8 im, la phrase s'efface avec", "technique": "fondu d'avant-temps"},
+      {"t": "0:08.07-0:08.8", "what": "« Shola Jegede » s'écrit lettre à lettre en sortie de flou ; la grosse caisse entre à 8,08 s", "technique": "révélation par lettre sur l'entrée du beat"},
+      {"t": "0:10.0-0:12.6", "what": "Trois pastilles de rôle, une par temps, puis phrase en italique gris à 12,5 s", "technique": "entrées fondu-flou au temps"},
+      {"t": "0:12.7-0:15.7", "what": "Plan fixe sur le nom", "technique": "maintien 3 s"},
+      {"t": "0:15.73-0:16.7", "what": "Montée dans les aigus et fondu ; « NOW LIVE / sholajegede.com » et la fenêtre de navigateur montent sur le crash (16,08 s)", "technique": "chapitre sur crash"},
+      {"t": "0:16.7-0:19.8", "what": "Page d'accueil fixe", "technique": "maintien 3,1 s"},
+      {"t": "0:19.83-0:20.4", "what": "Cercle noir né du bouton de thème : la page bascule en mode sombre ; bulle « Light, dark, or system »", "technique": "révélation circulaire motivée"},
+      {"t": "0:20.5-0:23.7", "what": "Mode sombre fixe", "technique": "maintien 3,2 s"},
+      {"t": "0:23.73-0:24.8", "what": "« EVERY SCREEN / Built mobile-first, too. » : deux téléphones montent, le gauche sur la grosse caisse, le droit sur le contretemps", "technique": "entrée décalée d'un demi-temps"},
+      {"t": "0:26.03-0:26.27", "what": "Menu du téléphone droit dévoilé en rideau haut-bas (7 im)", "technique": "rideau (wipe)"},
+      {"t": "0:27.73-0:28.33", "what": "Fenêtre de navigateur + barre de 8 pastilles de chapitres (Jev Gatehouse … Packages)", "technique": "barre de progression"},
+      {"t": "0:28.33-0:31.63", "what": "7 sauts de section, un par temps : pastille active + défilement de 10 im, départ sur le contretemps, atterrissage sur la grosse caisse", "technique": "défilement syncopé au temps"},
+      {"t": "0:31.73-0:35.7", "what": "Pont musical. « ASK THE PORTFOLIO / Ask it anything about my work. » : liste de questions défilée lentement, une question cerclée de terracotta (≈ 34,8 s)", "technique": "défilement lent, surlignage"},
+      {"t": "0:35.73-0:37.6", "what": "Fenêtre de chat ; la question se tape (49 caractères en 1,2 s)", "technique": "frappe simulée"},
+      {"t": "0:37.63-0:39.5", "what": "Envoi : bulle encre en 1 image, « reading the portfolio… »", "technique": "échange d'état instantané"},
+      {"t": "0:39.5-0:43.6", "what": "« answered instantly » puis 5 puces de réponse, une toutes les 2 temps, débuts en gras", "technique": "apparitions au temps"},
+      {"t": "0:43.6-0:47.7", "what": "Réponse complète, rien ne bouge", "technique": "temps mort 4,1 s"},
+      {"t": "0:47.73-0:51.7", "what": "« WHAT DOES SHOLA DO AT CONVEX? / Every answer links to the proof. » : réponse défilée lentement", "technique": "défilement lent"},
+      {"t": "0:51.73-0:59.7", "what": "Retour du beat + crash : « BUILD · FEATURED / Jev Gatehouse », capture sombre violette, 3 cartes de stats à 54, 55 et 56 s (0.0 %, 205 ms, $0.029)", "technique": "chapitre sur crash, cartes au temps"},
+      {"t": "0:59.73-1:07.7", "what": "« BUILD / Reference apps in Kinde's official starter kits. » puis « MEASURE / DevRel Studio shows what the work delivered. » : défilement puis poussée lente ≈ 8 %", "technique": "gabarit répété, caméra lente"},
+      {"t": "1:07.73-1:13.7", "what": "« TEACH / On stage at DevFest Lagos, November 13. » : affiche inclinée, carte v0 en fondu (1:09,8), compteurs 98 (1:10) et 16 (1:11)", "technique": "collage de cartes, compteurs"},
+      {"t": "1:13.73-1:21.7", "what": "« EXPLAIN / 22,380 views on one freeCodeCamp handbook. » (poussée ≈ 5 %) puis « BUILD / 15 packages. Every one with a live download chart. » avec graphique d'aire défilé", "technique": "captures + caméra lente"},
+      {"t": "1:21.73-1:27.7", "what": "Crash et inversion encre : « BY THE NUMBERS », 4 compteurs décalés d'un temps ; « Chosen by Kinde, Convex, and Vercel… » à 1:26,07", "technique": "compteurs en cascade au temps"},
+      {"t": "1:27.73-1:31.7", "what": "Retour crème : « FOR FOUNDERS / Building developer tools or AI infrastructure? », page Hire défilée", "technique": "appel à l'action par la cible"},
+      {"t": "1:31.73-1:42.1", "what": "Impact grave : « sj. » (1:32,07), sholajegede.com (1:32,5), pastille email (1:33,5), liens ; maintien 8 s pendant le fondu de la musique", "technique": "carte de fin au temps"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Musique à 120 BPM exacts (120,04 mesuré), grosse caisse à x,08 et x,58 s, charleston ouvert sur les contretemps (x,33 et x,83 s). Attention : la grille du dossier s'est calée sur le charleston ; sur les planches, les barres bleu clair (« demi-temps ») marquent en réalité la grosse caisse et les barres bleues le contretemps. Comptage à un événement par geste sur 51 gestes clés : 40 à ±2 im d'une barre de grosse caisse (hasard 33 %), 10 sur la barre de contretemps (7 défilements de la visite, cercle du mode sombre, 2e téléphone, carte v0), 1 seul raté (début de frappe de la question, +4 im) ; 50/51 sur la grille des croches (hasard ≈ 67 % à 30 fps, c'est donc le premier chiffre qui prouve). Décalage constant : l'animation est posée sur x,0 / x,5 s et le son démarre à 0,08 s, l'image précède donc la grosse caisse de 2,4 im (80 ms, délai d'encodage probable, imperceptible). Preuves fortes : rotations de mot posées à f62, f122, f182 (grosse caisse à f62,4, f122,4, f182,4) ; défilements partant à f850 + 15k et atterrissant sur la grosse caisse ; compteurs démarrant à f2460, f2475, f2490, f2505 (un temps d'écart) ; puces du chat à f1187, f1217, f1247, f1277, f1307. Arrangement : la grosse caisse entre à 8,08 s quand le nom commence (f242) ; montée de 0,75 s puis crash à 16,08, 52,08 et 82,08 s = débuts de chapitre ; pont à −15 dB de 32,08 à 52,08 s = Ask + chat ; impact grave à 92,08 s = carte de fin. L'indice automatique va dans le même sens (atterrissages sur ses « demi-temps » R = 0,73, p = 3,9e-7). Le « drop » à 1:42,05 est un artefact : fin de fichier après le fondu vers le silence.",
+    "synced": ["coupes", "departs", "atterrissages", "apparitions", "texte", "couleur", "drop"],
+    "style_match": "House électro probable à 120 BPM, charleston en contretemps : colle à la DA crème et aux fondus doux ; pont calme sous le chat, crash à chaque chapitre.",
+    "how_built": "Prompt écrit en BPM (« Add music at about 120 BPM … cut every scene on the beat ») : la timeline est en multiples de 15 im et la bande-son est à 120 BPM exacts avec la même origine (première grosse caisse à 0,08 s). L'arrangement (intro sans grosse caisse 0-8 s, entrée à 8,08 s, montées + crash à 16, 52 et 82 s, pont 32-52 s, impact à 92 s, fondu final 99,75-101,5 s) épouse exactement le plan de scènes : bande-son probablement générée en code à partir du même découpage (la page ne le dit pas). « No extra sound effects » est respecté : montées et crashs font partie de la musique."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot pivot en rotation verticale masquée",
+      "name_en": "masked vertical word roll (slot swap)",
+      "t": "0:01.80-0:02.20",
+      "frames": "f54-f66",
+      "fps": 30,
+      "mechanics": "Phrase fixe « I ___ it. » centrée (serif, capitale ≈ 9 % de la hauteur, bloc ≈ 33 % de la largeur), verbe en italique terracotta. Toutes les 2 s (4 temps) le verbe change : build → explain (f54-f66), → teach (f114-f126), → measure (f174-f186). L'ancien mot monte et sort par le haut d'un masque de la hauteur de la ligne, le nouveau monte depuis le bas ; trajet ≈ 1 hauteur de ligne (≈ 11 % du cadre) en 6 im (f56-f62). En parallèle, la largeur du masque s'interpole sur 13 im entre la largeur des deux mots : « I » et « it. » s'écartent ou se resserrent et la ligne reste centrée. Courbe ease-in-out symétrique (énergie 0,25 → 1,36 → 0,18, pic à f60 = 2,000 s), aucun flou de mouvement, aucun dépassement (overshoot). Nouveau mot en place à f62 (2,067 s) : grosse caisse audible à 2,08 s (f62,4).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {"from": 52, "to": 68, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Les verbes de l'accroche deviennent les chapitres",
+      "name_en": "hook verbs reused as chapter labels",
+      "t": "0:00-1:27.7",
+      "frames": "f0-f2632",
+      "fps": 30,
+      "mechanics": "Les 4 verbes de l'accroche (build, explain, teach, measure) reviennent comme surtitres des chapitres de preuve : BUILD (Jev Gatehouse 0:52, Kinde 1:00, paquets 1:18), MEASURE (DevRel Studio 1:04), TEACH (DevFest 1:08), EXPLAIN (freeCodeCamp 1:14). La promesse posée en 8 s est ensuite démontrée point par point, résumée par les chiffres (1:22), puis convertie par « FOR FOUNDERS » (1:28) et la carte de fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg, overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Timeline posée sur la grille de la musique (15 im = 1 temps)",
+      "name_en": "beat-grid timeline",
+      "t": "0:00-1:42.1",
+      "frames": "f0-f3061",
+      "fps": 30,
+      "mechanics": "Tous les événements sont posés sur une grille de 15 im (0,5 s = 1 temps à 120 BPM) : 17 scènes qui démarrent sur des secondes paires (multiples de 4 temps), gestes internes à x,0 ou x,5 s, décalages entre éléments de 15 ou 30 im. La musique est à 120,04 BPM mesurés avec la grosse caisse à x,08 / x,58 s : l'image précède le son de 2,4 im constants (80 ms, délai d'encodage probable, imperceptible). Comptage, un événement par geste : 40/51 à ±2 im d'une grosse caisse (hasard 33 %), 10 autres volontairement sur le contretemps, 1 raté (début de frappe du chat, +4 im).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001 à microM-012, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Fondu d'avant-temps, nouvelle scène posée sur la grosse caisse",
+      "name_en": "pre-beat dissolve landing on the downbeat",
+      "t": "0:07.73-0:08.07",
+      "frames": "f232-f242",
+      "fps": 30,
+      "mechanics": "Les 16 changements de scène suivent le même gabarit : le fondu démarre 8 im avant la seconde paire (x,733 s, 2 im avant la barre de contretemps), il est chargé au début (énergie par image 63 → 51 → 34 → 25 → 14 → 10 → 6 → 4 → 2, soit un ease-out), il est terminé à x,0 s, et le premier élément de la scène suivante (le surtitre) apparaît à x,067 s, sur la grosse caisse (x,08 s). La transition occupe la levée (le « et » du 4e temps), le contenu tombe sur le temps fort. Vérifié à f232, f712, f1792, f2452, f2632 et sur les 11 autres changements.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f232.jpg, microM-003-cut-f712.jpg, microM-008-cut-f1792.jpg, microM-012-cut-f2632.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Même fondu enchaîné répété 16 fois",
+      "name_en": "single cross-dissolve used everywhere",
+      "t": "0:07.73-1:32.00",
+      "frames": "f232-f2760",
+      "fps": 30,
+      "mechanics": "16 changements de scène sur 16 sont le même fondu enchaîné (cross-dissolve) de 8 à 9 im (0,27-0,3 s), sans déplacement, zoom ni couleur intermédiaire. Entre deux scènes crème il se voit à peine (seul le contenu change) ; entre encre et crème il passe par un gris neutre (f232-f236). La seule transition motivée de la vidéo (le cercle du mode sombre) est à l'intérieur d'une scène. Effet diaporama : aucun enchaînement graphique entre chapitres.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, microM-008-cut-f1792.jpg, microM-012-cut-f2632.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement musical calé sur les chapitres",
+      "name_en": "music arrangement mirrors the story structure",
+      "t": "0:08.08-1:32.08",
+      "frames": "f242-f2762",
+      "fps": 30,
+      "mechanics": "Intro sans grosse caisse (−18 dB) pendant l'accroche ; la grosse caisse entre à 8,08 s (+40 dB sous 100 Hz), image f242 = début du nom. Montée de 0,75 s dans les aigus (5-11 kHz : +18 → +35 dB) pendant chaque fondu sortant, puis crash à 16,08 s (site en ligne), 52,08 s (Jev Gatehouse) et 82,08 s (chiffres). Pont plus calme (−15 dB, grosse caisse atténuée) de 32,08 à 52,08 s, exactement la séquence Ask + chat. Impact grave et charleston coupé à 92,08 s = carte de fin, puis outro et fondu 99,75-101,5 s. 6 accents musicaux sur 6 ont un événement visuel à ±2 im.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, mesures d'énergie par bande (audio)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom écrit lettre à lettre en sortie de flou",
+      "name_en": "per-letter blur-in reveal",
+      "t": "0:08.07-0:08.80",
+      "frames": "f242-f264",
+      "fps": 30,
+      "mechanics": "« Shola Jegede », serif medium, capitale ≈ 13 % de la hauteur, 52 % de la largeur, centré sur crème. Chaque lettre passe de floue et transparente à nette en ≈ 5-6 im, décalage ≈ 1,5 im par lettre de gauche à droite (S f242, Sh f243, Sho f245, Shola f249, « Jegede » f250-f262), pic d'énergie f257 (8,57 s = grosse caisse 8,58 s). Aucun déplacement. Démarre pile sur l'entrée de la grosse caisse (8,08 s) ; surtitre « DEVELOPER RELATIONS ENGINEER · LAGOS » en fondu à f240-f242.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f232.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Gabarit surtitre en capitales + titre serif",
+      "name_en": "eyebrow + serif headline system",
+      "t": "0:16.07-1:32.0",
+      "frames": "f482-f2760",
+      "fps": 30,
+      "mechanics": "Chaque scène : surtitre (eyebrow) terracotta en grotesque capitales (≈ 1,3 % de la hauteur, interlettrage ≈ +18 %), ≈ 2 % au-dessus d'un titre serif (≈ 4-5 % de la hauteur sur les scènes de captures, 7 % sur DevFest et les chiffres, 13 % pour le nom), centré en haut (≈ 4-10 % du bord) ou aligné à gauche avec 6-7 % de marge. Titres courts, un fait par plan : « Built mobile-first, too. », « Every answer links to the proof. », « 22,380 views on one freeCodeCamp handbook. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-05.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot clé en italique terracotta",
+      "name_en": "accent italic keyword",
+      "t": "0:00-0:08.0 ; 1:26.07",
+      "frames": "f0-f240 ; f2582",
+      "fps": 30,
+      "mechanics": "Contraste romain crème / italique terracotta (#C66B45) pour le seul mot qui porte le sens : le verbe de l'accroche, puis les marques dans « Chosen by Kinde, Convex, and Vercel within the same twelve months. ». Le monogramme final « sj. » reprend l'idée avec un point terracotta.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Système trois couleurs repris du site",
+      "name_en": "three-colour brand system",
+      "t": "0:00-1:42.1",
+      "frames": "f0-f3061",
+      "fps": 30,
+      "mechanics": "Crème #F4EDDF (fond), #F9F4EB (intérieur des fenêtres), encre #1B1714 (texte, scènes sombres, bulle, pastille active), terracotta #C66B45 sur encre et #B5603F sur crème (surtitres, puces, mot clé). Exceptions venues des captures : violet #8E8FF7 (Jev Gatehouse), rose #FB7EAF (affiche DevFest). Respect strict de la consigne « three colours ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion sombre pour le chapitre des chiffres",
+      "name_en": "dark inversion for the climax",
+      "t": "1:21.73-1:27.73",
+      "frames": "f2452-f2640",
+      "fps": 30,
+      "mechanics": "Seule scène encre après l'accroche (hors démonstration du mode sombre) : fondu crème → encre de 8 im (f2452-f2460) posé sur le crash de 82,08 s, retour au crème de la même façon à f2632. L'inversion signale le point culminant (les chiffres) et rime avec le fond sombre de l'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f2452.jpg, microM-012-cut-f2632.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mode sombre révélé en cercle depuis le bouton de thème",
+      "name_en": "theme-toggle circular reveal (clip-path iris)",
+      "t": "0:19.83-0:20.40",
+      "frames": "f595-f612",
+      "fps": 30,
+      "mechanics": "Cercle noir né sur l'icône de thème (≈ 76 % de la largeur, 20 % de la hauteur, à droite de « Ask » dans la barre de navigation). Rayon 6 px → ≈ 1 400 px en 17 im (0,57 s), accélération continue (pas de 8, 10, 18, 20, 28, 34 px puis plus de 60 px/im : ease-in probable, ou fin hors cadre d'un ease-in-out). Le cercle reste découpé au cadre du navigateur (le crème autour ne bouge pas) et révèle la vraie page en mode sombre, pas un aplat. Bulle « Light, dark, or system » en fondu de 2 im à f610, au-dessus à droite. Départ sur le contretemps (19,83 s, 0 im). Transition motivée : elle montre la fonction elle-même.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f607.jpg",
+      "illus": {"from": 594, "to": 614, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Captures réelles du site en fenêtre de navigateur",
+      "name_en": "real-site captures in browser frames",
+      "t": "0:16.07-1:31.7",
+      "frames": "f482-f2751",
+      "fps": 30,
+      "mechanics": "Fenêtre type navigateur (3 pastilles, URL « sholajegede.com/… » dans une capsule, coins ≈ 1 %, ombre très douce) qui occupe ≈ 78 % de la largeur (marges 11 %), centrée sous le titre ; 11 scènes sur 17 l'utilisent avec de vraies pages (accueil, /ask, Jev Gatehouse, starter kits Kinde, DevRel Studio, articles, paquets, /hire). Entrée : fondu + montée ≈ 2-3 % de la hauteur en 15-24 im, ease-out. Le texte des pages fait 1 à 1,5 % de la hauteur : lisible en 1080p plein écran, illisible sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de pastilles de chapitres qui sert de progression",
+      "name_en": "chapter pill progress bar",
+      "t": "0:28.00-0:31.70",
+      "frames": "f840-f951",
+      "fps": 30,
+      "mechanics": "Au-dessus de la fenêtre, rangée centrée de 8 pastilles (Jev Gatehouse, Work, Speaking, Kinde builds, DevRel Studio, Projects, Writing, Packages ; ≈ 4 % de la hauteur, de 20 à 80 % de la largeur). Pastille active pleine encre, texte crème ; pastilles passées en texte foncé ; suivantes en gris : table des matières et barre de progression à la fois. La pastille active avance d'un cran à chaque temps, avec le défilement.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f853.jpg, microM-005-cut-f884.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Défilement de section au temps, syncopé",
+      "name_en": "beat-locked syncopated section scroll",
+      "t": "0:28.33-0:31.63",
+      "frames": "f850-f949",
+      "fps": 30,
+      "mechanics": "7 sauts de section exactement toutes les 15 im (départs f850, f865, f880, f895, f910, f925, f940). Chaque saut : défilement d'une section (≈ 60-80 % de la hauteur de la fenêtre) en 10 im, ease-in-out (énergie 4 → 6 → 9 → 11 → 12,5 → 7,5 → 3 → 2,7 → 2 → 1,5 pour le premier), sans flou de mouvement. Départ 1 im après la barre de contretemps (charleston), pic de vitesse ≈ 4 im plus tard, atterrissage sur la grosse caisse (f857, f872, f887, f902, f917, f932, f947 à ±1 im). Anticipation sur le « et », impact sur le temps : c'est le passage le plus dense de la vidéo (7 gestes en 3,3 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f853.jpg, microM-005-cut-f884.jpg, microM-006-move-f914.jpg",
+      "illus": {"from": 848, "to": 890, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Deux téléphones et menu dévoilé en rideau",
+      "name_en": "twin phones and menu wipe",
+      "t": "0:24.07-0:26.27",
+      "frames": "f722-f788",
+      "fps": 30,
+      "mechanics": "Deux téléphones (cadre noir, ≈ 37 % de la hauteur chacun) montent en fondu, le gauche à f722 (grosse caisse) puis le droit à f727-f729 (contretemps), montée ≈ 24 im en ease-out. À f781 (grosse caisse −1 im), le menu du téléphone droit (Home … Analytics, bouton noir « Ask about my work », icônes) se dévoile par un rideau (wipe) du haut vers le bas en 7 im, sans décalage par élément ; le téléphone gauche reste sur l'accueil pour comparer fermé / ouvert.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f712.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Chat scénarisé : frappe, envoi, puces au temps",
+      "name_en": "scripted chat demo",
+      "t": "0:36.07-0:43.60",
+      "frames": "f1082-f1310",
+      "fps": 30,
+      "mechanics": "Fenêtre de chat en fondu (f1082-f1094). La question est tapée linéairement, 49 caractères en 36 im (f1086-f1122, ≈ 41 caractères/s) avec curseur, maintenue 7 im, puis envoyée à f1129 (37,63 s, grosse caisse +1,6 im) par un échange d'état en 1 image : bulle encre (texte crème ≈ 2,8 % de la hauteur) en haut à droite, « Portfolio assistant · reading the portfolio… » dessous. À 39,5 s, badge « answered instantly » puis 5 puces (début en gras) en fondu de ≈ 8 im, une toutes les 2 temps (39,5 / 40,5 / 41,5 / 42,5 / 43,5 s), chacune sur la grosse caisse (0 im). Puis 4,1 s fixes.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs en cascade décalés d'un temps",
+      "name_en": "staggered count-up counters on the beat",
+      "t": "1:22.00-1:24.37",
+      "frames": "f2460-f2531",
+      "fps": 30,
+      "mechanics": "4 chiffres serif (≈ 7,4 % de la hauteur, crème sur encre) sur une grille de 4 colonnes avec filet fin au-dessus et légende grise. Chacun compte de 0 à sa valeur en 40 im (1,33 s), ease-out cubique (54,920 : 7,833 à +2 im, 31,751 à +10 im, valeur finale à f2499), avec un fondu d'entrée ≈ 4 im. Départs décalés d'exactement 15 im = 1 temps : f2460, f2475, f2490, f2505 (chacun 2 im avant la grosse caisse). Même procédé pour 98 (1:10,0, 30 im) et 16 (1:11,0) sur la scène DevFest, et pour 204 → 205 ms et $0.027 → $0.029 sur Jev Gatehouse.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-011-cut-f2452.jpg, extra-03.jpg",
+      "illus": {"from": 2459, "to": 2531, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Collage de cartes inclinées",
+      "name_en": "tilted card stack",
+      "t": "1:08.13-1:11.23",
+      "frames": "f2044-f2137",
+      "fps": 30,
+      "mechanics": "Colonne gauche à 6 % de marge : surtitre TEACH, titre serif ≈ 7 % de la hauteur sur 2 lignes, citation en italique gris, cartes de stats. À droite : affiche DevFest inclinée ≈ −2° (montée en fondu f2044-f2056), puis carte v0 façon Polaroïd inclinée ≈ +3° qui chevauche son coin inférieur droit, en fondu de 10 im (f2094-f2104, départ sur le contretemps), sans déplacement notable ni rebond. Ombres larges et très douces.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-009-move-f2033.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Une idée par plan, objet centré, beaucoup d'air",
+      "name_en": "one idea per shot, centred hierarchy",
+      "t": "0:00-1:42.1",
+      "frames": "f0-f3061",
+      "fps": 30,
+      "mechanics": "Ouverture : bloc de texte ≈ 33 % de la largeur au centre, ≈ 85 % du cadre vide. Scènes de captures : titre centré à ≈ 5-10 % du haut, fenêtre centrée dessous. Scènes éditoriales (Jev Gatehouse, DevFest, chiffres) en deux colonnes ou grille de 4 avec 6-7 % de marge. Hiérarchie constante : surtitre → titre → preuve visuelle. Consigne « key objects centred » respectée.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Défilement ou poussée lente du contenu dans une fenêtre fixe",
+      "name_en": "slow in-frame scroll and push-in",
+      "t": "0:48.2-1:31.7",
+      "frames": "f1446-f2751",
+      "fps": 30,
+      "mechanics": "Seul mouvement de « caméra » : dans une fenêtre fixe, le contenu de la page défile à vitesse quasi constante (Convex 0:48,2-0:51,7, Kinde 1:00,4-1:03,4, paquets 1:18,1-1:21,6, Hire 1:28,1-1:31,7) ou grossit lentement (DevRel Studio ≈ +8 % sur ≈ 2,3 s, freeCodeCamp ≈ +5 % sur 1,6 s entre 1:15,0 et 1:16,6), énergie par image faible (0,2-1,7). Aucun recadrage sur la ligne citée par le titre, aucune parallaxe, aucun zoom sur le mot clé.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg, overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrées en fondu flou des éléments secondaires, au temps",
+      "name_en": "blur-fade entrances on the beat",
+      "t": "0:10.00-1:11.00",
+      "frames": "f300-f2130",
+      "fps": 30,
+      "mechanics": "Pastilles de rôle (10,0 / 10,5 / 11,0 s, une par temps), phrase en italique (12,5 s), cartes de stats Jev Gatehouse (54,0 / 55,0 / 56,0 s, une toutes les 2 temps), cartes 98 et 16 : chaque élément passe de flou et transparent à net en ≈ 6-8 im, sans déplacement notable, toujours 0 à 2 im avant une grosse caisse. Toujours la même entrée.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-05.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rythme qui accélère puis respire selon le récit",
+      "name_en": "story-driven pacing",
+      "t": "0:00-1:42.1",
+      "frames": "f0-f3061",
+      "fps": 30,
+      "mechanics": "Longueur des scènes : 8-8-8 s (accroche, nom, site), 4-4-4 s (mobile, visite, Ask), 12 s (chat, sur le pont musical), puis 4-8-4-4-6-4-4-6-4 s et fin de 10 s. Pic de densité à 0:28,3-0:31,6 (un geste par temps), creux à 0:43,6-0:47,7. La courbe demandée par le prompt existe, mais les creux sont trop longs pour la règle 1600.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens statiques longs",
+      "name_en": "long static holds (dead time)",
+      "t": "0:12.7-0:15.7 ; 0:16.7-0:19.8 ; 0:20.5-0:23.7 ; 0:43.6-0:47.7 ; 0:56.7-0:59.7 ; 1:34-1:42",
+      "frames": "f381-f471 ; f501-f594 ; f615-f711 ; f1310-f1431 ; f1702-f1791 ; f2820-f3061",
+      "fps": 30,
+      "mechanics": "69 % du temps en maintiens ≥ 0,4 s selon le détecteur ; même en comptant les fondus discrets et les poussées lentes, six maintiens font 3 s ou plus (jusqu'à 4,1 s après la dernière puce du chat) et la carte de fin tient 8 s. Pendant ces maintiens, seule la musique avance.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-02.jpg, overview-04.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin construite au temps",
+      "name_en": "beat-built end card",
+      "t": "1:32.07-1:42.10",
+      "frames": "f2762-f3061",
+      "fps": 30,
+      "mechanics": "Sur l'impact grave de 92,08 s : monogramme « sj. » en italique (point terracotta, ≈ 4 % de la hauteur) à f2762, « sholajegede.com » serif ≈ 8,5 % de la hauteur à 92,5 s, pastille encre « Work with me: work@sholajegede.com » à 93,5 s, liens « /hire · /ask · /packages · /analytics » en mono vers 94,5 s (probable) ; chaque élément en fondu + légère montée ≈ 8-10 im, un toutes les 1 ou 2 temps. Puis maintien de 8 s pendant que la musique s'éteint (fondu 99,75-101,5 s).",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Aplats nets et ombres très douces",
+      "name_en": "flat paper look with soft shadows",
+      "t": "0:00-1:42.1",
+      "frames": "f0-f3061",
+      "fps": 30,
+      "mechanics": "Aucun grain, glow, bruit ni flou de mouvement ; seules des ombres portées très diffuses (≈ 40-60 px de flou, ≈ 10-15 % d'opacité) sous fenêtres, téléphones et cartes, et des coins arrondis. Retenue « premium » cohérente avec le site, mais aucune matière ne vient animer les plans fixes.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-06.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "build", "insight": "« Add music at about 120 BPM … cut every scene on the beat » est la seule consigne chiffrée du prompt, et c'est elle qui structure tout : timeline en multiples de 15 im (1 temps à 30 fps), bande-son au même tempo et à la même origine (grosse caisse à x,08 s), d'où 40 gestes sur 51 sur la grosse caisse."},
+    {"kind": "structure", "insight": "« a rhythm that speeds up and slows down with the story » : traduit en longueurs de scène (8-8-8 s, puis 4-4-4 s, 12 s pour le chat, 4-6 s pour les preuves) et en arrangement (pont à −15 dB pendant la séquence chat, crashs aux chapitres). L'accélération la plus lisible est la visite à une section par temps."},
+    {"kind": "direction", "insight": "« eased motion only, space to breathe, smooth transitions instead of hard cuts » : appliqué au pied de la lettre, d'où 16 fondus identiques, des entrées en fondu-montée sans ressort ni dépassement et des maintiens de 3-4 s. Ces règles « premium » ont éteint l'énergie ; il fallait préciser un vocabulaire de transitions et une densité minimale (un geste par temps)."},
+    {"kind": "inputs", "insight": "« Use as much of the real website as possible » : 11 scènes sur 17 en fenêtre de navigateur et 1 en téléphones, avec de vraies pages ; crédibilité maximale mais texte des captures à 1-1,5 % de la hauteur. Il aurait fallu demander des zooms qui cadrent la preuve, ou d'extraire les chiffres en typographie."},
+    {"kind": "direction", "insight": "« questions and answers large and bold » : seuls la bulle de question (≈ 2,8 % de la hauteur) et les débuts de puces sont en gras ; le modèle a gardé l'échelle de l'interface au lieu de sortir la question et la réponse en grande typographie cinétique."},
+    {"kind": "other", "insight": "« Use only facts and numbers that are on the site » : respecté, les chiffres sont ceux des pages (54,920 téléchargements npm, 43,662 vues, 15 paquets, 14 composants, 98 participants, 16 apps) et l'accroche reprend les rubriques du site (build, explain, teach, measure)."},
+    {"kind": "qa", "insight": "Pas de coupe franche malgré les 7 « coupes » du détecteur (ce sont des fondus), pas de mot coupé par le cadre ; seul écart à « eased motion only » : l'envoi du chat est un échange d'état en 1 image."}
+  ],
+  "steal": [
+    "Bâtir la timeline en temps : 15 im = 1 temps (120 BPM, 30 fps), scènes de 8, 16 ou 24 temps, chaque apparition posée sur un temps.",
+    "Mot pivot dans « I ___ it. » : l'ancien mot sort par le haut, le nouveau monte dans un masque à largeur interpolée et se pose sur le temps.",
+    "Défilement groove : un saut de section par temps, départ sur le contretemps, atterrissage sur la grosse caisse, 10 im en ease-in-out.",
+    "Composer la musique sur le plan de scènes : montée de 0,75 s puis crash à chaque chapitre, pont calme pour la lecture, impact sur la carte de fin.",
+    "Mode sombre en cercle né du bouton de thème, découpé au cadre du navigateur : la transition montre la fonction elle-même."
+  ],
+  "flaws": [
+    "Le même fondu de 8 im sert 16 fois : effet diaporama, aucune transition enchaînée ni motivée hormis le cercle du mode sombre.",
+    "69 % du temps immobile : maintiens de 3 s et plus, dont 4 s après le chat et 8 s en fin.",
+    "Texte des captures à 1-1,5 % de la hauteur : illisible sur téléphone, et aucun zoom ne cadre la preuve citée par le titre.",
+    "Chat à l'échelle de l'interface (2,5-3 % de hauteur), envoi en échange d'état d'1 image : loin du « grand et gras » demandé.",
+    "Entrées toutes identiques (fondu + légère montée ou flou), sans dépassement, ressort ni trajectoire courbe : mouvement correct mais sans caractère."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Cas d'école de synchro structurelle : toute la timeline sur une grille de 15 im, arrangement musical calé sur les chapitres, défilements syncopés, compteurs décalés d'un temps. À étudier image par image sur 0:00-0:09, 0:28-0:32 et 1:22-1:25 ; vidéo native à 30 fps (pas de 60 fps possible) et le reste est surtout statique."
+  }
+}

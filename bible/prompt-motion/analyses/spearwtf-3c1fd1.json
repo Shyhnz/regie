@@ -1,0 +1,381 @@
+{
+  "slug": "spearwtf-3c1fd1",
+  "title": "Chain.wtf pitch video",
+  "handle": "@SPEARwtf",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Montage verrouillé à la mesure, scènes 3D crédibles et texte drôle font une vraie pub ; l'animation typographique se résume à des apparitions glitch et deux plages de mots sur noir.",
+  "summary": "Pub de 30 s pour chain.wtf, casino crypto potache. Accroche parodique (« Gamble responsibly ») cassée par une coupe glitch, six scènes 3D d'une mesure chacune (bouton DOUBLE IT, machine à sous, pièce, panneau brisé par un ballon, dés, KYC découpé au laser), manifeste en mots plein écran, noir avant le drop, logo, offre, appel à l'action. Tout est calé sur une grille de 12 images (150 BPM).",
+  "prompt_vs_result": [
+    "Le prompt imposait seulement une durée (30 s), un format (pitch) et une marque désignée par son compte X. Aucun visuel, aucun message, aucune musique.",
+    "Claude a tout décidé : ton irrévérencieux, accroche parodique, six catégories produit en scènes 3D, manifeste en mots, offre devnet (1 000 chUSD par jour), CTA « Connect wallet », tempo de 150 BPM et montage à la mesure.",
+    "Le prompt d'une ligne a laissé Claude retrouver l'offre et le ton de la marque, avec succès. Il aurait fallu préciser le style typographique et interdire le glitch RVB systématique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B0B0C", "role": "fond noir granuleux (manifeste, logo, fin)"},
+      {"hex": "#F5F5F2", "role": "texte blanc"},
+      {"hex": "#E5372B", "role": "bande rouge du logo, dôme du bouton, éclairage"},
+      {"hex": "#F3C433", "role": "bande jaune du logo"},
+      {"hex": "#7FC8F0", "role": "bande bleu ciel du logo, éclairage cyan"},
+      {"hex": "#2F5BD6", "role": "bande bleue du logo, éclairage bleu"},
+      {"hex": "#F2EA1D", "role": "pilule CTA « CONNECT WALLET »"},
+      {"hex": "#6F9BF7", "role": "bouton parodique « Gamble responsibly » sur blanc #FFFFFF"},
+      {"hex": "#3E6467", "role": "feutre de table (pièce, dés)"}
+    ],
+    "type": "Grotesque géométrique noire italique (Poppins ExtraBold Italic probable), capitales, slogans centrés ≈ 8 % de la hauteur ; étiquettes de scène ≈ 6 % en bas à gauche ; apartés minuscules légers ≈ 2,5 % ; logo display italique carré à bandes.",
+    "texture": "Grain fort sur toutes les images, aberration chromatique (séparation RVB) sur les bords et à chaque apparition, bloom sur les ampoules et LED, profondeur de champ et bokeh (pièce), vignettage, éclairages gélatine rouge/cyan, flou de mouvement sur rouleaux, pièce, ballon et dés, flashs blancs surexposés.",
+    "style": "Pub crypto néo-casino 3D glitch",
+    "coherence": "Les quatre bandes du logo (rouge, jaune, bleu ciel, bleu) irriguent tout : rubans du tunnel, laser du KYC, lignes de vitesse, face de dé, pièce, rouleaux. Même formule d'étiquette en bas à gauche pour chaque catégorie, même grain et même aberration partout. Le système tient ; il casse seulement par l'ouverture blanche, volontairement hors charte (parodie), et s'appauvrit dans les plages de mots blancs sur noir."
+  },
+  "rhythm": {
+    "bpm": 150,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Le dossier annonce 75 BPM : c'est le demi-tempo. La pulsation réelle est de 150 BPM (motif de volume qui se répète toutes les 0,4 s), soit exactement 12 im à 30 fps. Tous les événements forts tombent sur des multiples de 12 im depuis f71 : coupes f71, f143, f191, f239, f287, f335, f383, f431, f479, f563, f575, f767 ; durées des plans 72, 48 (×8), 84, 12 et 192 im. Chaque scène 3D dure 48 im = une mesure. Les mots changent toutes les 24 puis 12 im. La grille visuelle précède la grille audio détectée d'environ 1,4 im (≈ 46 ms) de façon constante, ce qui explique que l'indice automatique ne compte que 1 coupe sur 12 à moins de 50 ms. Temps morts : ouverture statique 0-1,07 s et 1,8-2,33 s (parodie voulue), aparté « (it's devnet. calm down.) » de 0,8 s, et carte finale figée de f803 à la fin (3,2 s).",
+    "timeline": [
+      {"t": "0:00-0:02.37", "what": "Page blanche « corporate » : bouton pilule « Gamble responsibly », « A message from our Compliance Department™ », « Safe • Secure • Boring » ; le curseur entre à 1,1 s, le bouton grossit de ≈ 10 % au survol ; musique douce", "technique": "accroche parodique"},
+      {"t": "0:02.37-0:02.50", "what": "Coupe glitch de 4 im (tranches décalées, RVB) vers un boîtier 3D sombre « DOUBLE IT » à gros bouton rouge ; la musique démarre", "technique": "coupe glitch sur le premier temps"},
+      {"t": "0:02.50-0:04.77", "what": "Lente poussée sur le boîtier, curseur géant, sticker « NOT FINANCIAL ADVICE » ; le dôme rouge pulse sur chaque temps (f83, f95, f107, f119, f131)", "technique": "pulsation lumineuse sur le temps"},
+      {"t": "0:04.77-0:04.83", "what": "Le dôme s'allume (clic) puis flash blanc surexposé de 2 im", "technique": "flash blanc"},
+      {"t": "0:04.83-0:06.33", "what": "Tunnel hyperespace : rubans spiralés aux couleurs du logo, traînées de particules, la marque fonce vers la caméra puis ses bandes remplissent l'image", "technique": "tunnel de marque, plongée dans le logo"},
+      {"t": "0:06.37-0:07.97", "what": "CASINO. : machine à sous, rouleaux flous qui s'arrêtent un par temps sur le logo (f203, f215, f227), ampoules, flash jackpot f234", "technique": "arrêts en cascade sur les temps"},
+      {"t": "0:07.97-0:09.57", "what": "PVP. (you vs. that one guy) : pièce logo / OOPS qui tourne (demi-tour toutes les 3 im) dans un bokeh, retombe sur le feutre et vacille", "technique": "pièce 3D"},
+      {"t": "0:09.57-0:11.17", "what": "SPORTS. : panneau « SAFE BETS ONLY. » dans un stade, un ballon le traverse sur le temps (f299), éclats vers la caméra", "technique": "destruction physique"},
+      {"t": "0:11.17-0:12.77", "what": "PREDICTION MARKETS. : panneau LED « WILL YOUR EX TEXT BACK? », bandeau YES 4¢ / NO 96¢ / 24H VOL 69,420 chUSD", "technique": "panneau LED à matrice de points"},
+      {"t": "0:12.77-0:14.37", "what": "PROVABLY FAIR. LOOK IT UP YOURSELF. : deux dés tombent et se posent sur le temps (f407), hash de transaction en bas à droite", "technique": "atterrissage sur le temps"},
+      {"t": "0:14.37-0:15.97", "what": "NO KYC. : formulaire « KNOW YOUR CUSTOMER » tamponné PENDING, laser aux quatre couleurs qui descend, découpe en 6 bandes sur le temps f443", "technique": "laser qui découpe"},
+      {"t": "0:15.97-0:18.77", "what": "Manifeste sur noir : NO BULLSHIT. (2 temps), NO PERMISSION. (2), YOUR MONEY. YOUR RISK. YOUR CALL. (1 temps chacun)", "technique": "mots plein écran, accélération de cadence"},
+      {"t": "0:18.77-0:19.17", "what": "Noir d'un temps, la musique se creuse ; des éclats colorés du logo entrent en haut à droite (f570-f574)", "technique": "respiration avant le drop"},
+      {"t": "0:19.17-0:20.77", "what": "Flash blanc sur le drop, logo CHAIN.WTF tapé lettre par lettre (≈ 3 im par lettre) avec lueur, lignes de vitesse colorées", "technique": "logo tapé en doubles croches"},
+      {"t": "0:20.77-0:22.37", "what": "« OWN THE OUTCOME. » apparaît sous le logo (f623)", "technique": "signature"},
+      {"t": "0:22.37-0:24.77", "what": "DEVNET IS LIVE. (2 temps), 1,000 chUSD / EVERY. / SINGLE. / DAY. (1 temps chacun)", "technique": "offre en mots sur le temps"},
+      {"t": "0:24.77-0:25.57", "what": "« (it's devnet. calm down.) » en petit et léger, 2 temps", "technique": "contre-pied humoristique"},
+      {"t": "0:25.57-0:26.80", "what": "Flash blanc, logo + OWN THE OUTCOME., puis CONNECT WALLET (f779), « (or don't. we're not your dad.) » (f791), mention légale (f803), un élément par temps", "technique": "CTA empilé sur les temps"},
+      {"t": "0:26.80-0:30.0", "what": "Carte finale figée, seules les lignes de vitesse bougent ; la musique décroît", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille réelle de 150 BPM (12 im par temps à 30 fps) mesurée sur le motif de volume ; le dossier l'a lue en demi-tempo (75 BPM). Un geste clé par événement : 35 gestes sur 37 tombent à ≤ 1 im d'un multiple de 12 im depuis f71 (hasard pour ±1 im : 25 %), et cette grille visuelle précède les barres bleues de ≈ 1,4 im, constamment (donc toutes à ±2 im d'une barre). Coupes : 12 sur 12. Gestes internes : 5 pulsations du dôme (f83-f131), arrêts des 3 rouleaux (f203, f215, f227), impact du ballon (f299), atterrissage des dés (f407), découpe du KYC (f443), 14 changements de mots ou d'éléments de CTA (f503 à f803). Ratés : flash jackpot f234 (-5 im) et retombée de la pièce f275 (+4 im). Les trois flashs blancs sont sur les trois plus fortes attaques audio (2,415 s, 4,737 s, 19,215 s, à ±1,5 im). Noir de f563 à f575 posé sur le creux audio (-27 à -32 dB, 18,8-19,1 s) avant le drop de 19,2 s.",
+    "synced": ["coupes", "impacts", "atterrissages", "apparitions", "pulsations", "flashs", "texte", "drop"],
+    "style_match": "Électro énergique à 150 BPM, pulsation régulière : coupes sèches à la mesure, arrêts et impacts sur les temps, noir silencieux avant le drop. Caractère cohérent avec le ton casino.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Claude a choisi un tempo qui donne un nombre entier d'images par temps (150 BPM = 12 im à 30 fps) et a découpé la timeline en mesures de 48 im. La bande-son est probablement générée ou assemblée en code (boucle au volume parfaitement répétitif, impacts placés sur les flashs, creux sur le noir) ; le décalage constant de ≈ 1,4 im entre image et temps détecté suggère une même horloge avec un léger offset."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche parodique « conformité »",
+      "name_en": "Fake-compliance cold open",
+      "t": "0:00-0:02.37",
+      "frames": "f0-f70",
+      "fps": 30,
+      "mechanics": "Page blanche façon SaaS : pilule bleu pervenche #6F9BF7 ≈ 60 % de la largeur, ombre douce, texte fin gris « A message from our Compliance Department™ » et « Safe • Secure • Boring ». Statique 0-1,07 s, curseur qui entre en bas à droite (f33-f45), bouton qui grossit de ≈ 10 % et se décale vers le curseur, puis statique 1,8-2,33 s. Musique douce et basse (-23 à -29 dB). Le contraste prépare la coupe.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-001-cut-f71.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe glitch sur le premier temps",
+      "name_en": "Glitch cut on the downbeat",
+      "t": "0:02.37-0:02.50",
+      "frames": "f71-f75",
+      "fps": 30,
+      "mechanics": "Passage du blanc au noir en 4 im : tranches horizontales décalées de 5-15 % de la largeur, séparation RVB forte (f71-f73), image propre à f75. Calé sur la grille (f71) et sur une attaque forte (2,415 s, +1,4 im) ; le volume de la musique saute de ≈ 8 dB au même moment.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f71.jpg",
+      "illus": {"from": 69, "to": 76, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pulsation lumineuse sur chaque temps",
+      "name_en": "On-beat light pulse",
+      "t": "0:02.77-0:04.70",
+      "frames": "f83-f141",
+      "fps": 30,
+      "mechanics": "Le dôme rouge du bouton et sa lueur s'intensifient toutes les 12 im exactement (pics de mouvement à f83, f95, f107, f119, f131) pendant une lente poussée de caméra (le boîtier passe de ≈ 45 % à ≈ 55 % de la largeur en 72 im, quasi linéaire). Le plan reste vivant sans coupe. À f141 le dôme s'allume plein (clic) et déclenche le flash.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f143.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur géant qui déclenche la transition",
+      "name_en": "Cursor-triggered transition",
+      "t": "0:01.1-0:04.77",
+      "frames": "f33-f143",
+      "fps": 30,
+      "mechanics": "Flèche système blanche à contour noir, ≈ 12 % de la hauteur dans le plan 3D, posée à côté du dôme. Le clic implicite (dôme qui s'allume à f141) provoque le flash blanc f143 : l'interface sert de détonateur narratif. Même curseur dans l'ouverture blanche, ce qui relie les deux mondes.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f143.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc surexposé",
+      "name_en": "Overexposed white flash",
+      "t": "0:04.77, 0:19.17, 0:25.57",
+      "frames": "f143-f144, f575-f576, f767",
+      "fps": 30,
+      "mechanics": "1 à 2 im d'image blanche cassée sur les bords (franges RVB, tranches décalées), puis nouvelle scène. Chaque flash tombe sur une des trois plus fortes attaques audio (4,737 s, 19,215 s, 25,6 s). Utilisé pour les trois changements d'acte : produit, logo, CTA.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f143.jpg, microM-011-cut-f575.jpg, microM-012-cut-f767.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Tunnel hyperespace aux couleurs de la marque",
+      "name_en": "Brand-colour hyperspace tunnel",
+      "t": "0:04.83-0:06.33",
+      "frames": "f145-f190",
+      "fps": 30,
+      "mechanics": "Rubans spiralés rouge, jaune, bleu ciel, blanc, bleu qui tournent autour d'un anneau central, traînées de particules radiales, aberration chromatique. La marque à quatre bandes au centre grandit et pivote (≈ 10 % → 100 % de la hauteur en 40 im, accélération).",
+      "verdict": "cliche",
+      "evidence": "microM-003-move-f169.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans les bandes du logo",
+      "name_en": "Fly into the logo stripes",
+      "t": "0:06.13-0:06.37",
+      "frames": "f184-f191",
+      "fps": 30,
+      "mechanics": "Les quatre bandes de la marque, inclinées à ≈ 60°, remplissent le cadre en 6 im (accélération, flou), puis coupe sur la grille (f191) vers la machine à sous dont les rouleaux portent le même logo : continuité par la marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f190.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Rouleaux qui s'arrêtent un par temps",
+      "name_en": "Staggered reel stops on the beat",
+      "t": "0:06.37-0:07.97",
+      "frames": "f191-f238",
+      "fps": 30,
+      "mechanics": "Trois rouleaux en flou de mouvement vertical ; arrêt sec sur le logo à f203, f215, f227 (un par temps, écart 0 im à la grille). Au troisième, ligne rouge de gain et ampoules du cadre qui clignotent (f227-f232), noir 1 im (f233), flash surexposé 1 im (f234), puis coupe f239. Étiquette « CASINO. » 4 im après la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f190.jpg, microM-005-cut-f234.jpg",
+      "illus": {"from": 196, "to": 234, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Pièce qui tourne puis vacille sur la table",
+      "name_en": "Coin flip and wobble settle",
+      "t": "0:07.97-0:09.57",
+      "frames": "f239-f286",
+      "fps": 30,
+      "mechanics": "Pièce à la marque (face logo, revers « OOPS ») qui fait un demi-tour toutes les 3 im dans un fond de bokeh coloré ; descente de f270 à f275, contact avec le feutre à f275 (+4 im de la grille), vacillement amorti sur ≈ 10 im (f276-f286). « PVP. » + aparté « (you vs. that one guy) ».",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f234.jpg, microM-006-move-f271.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Panneau brisé par un ballon",
+      "name_en": "Billboard smash",
+      "t": "0:09.83-0:10.80",
+      "frames": "f295-f324",
+      "fps": 30,
+      "mechanics": "Panneau « SAFE BETS ONLY. » (partenaire officiel) dans un stade nocturne. Le ballon perce le panneau à f299-f300 (sur le temps) ; ≈ 60 éclats rigides partent vers la caméra, le ballon grossit de ×4 en 7 im avec flou et sort à droite (f307) ; les débris retombent en ≈ 15 im. Il reste « S » sur un fragment rose.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f307.jpg",
+      "illus": {"from": 296, "to": 316, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Panneau LED à matrice de points",
+      "name_en": "Dot-matrix LED billboard",
+      "t": "0:11.17-0:12.77",
+      "frames": "f335-f382",
+      "fps": 30,
+      "mechanics": "Noir 1 im (f335) puis panneau LED jaune « WILL YOUR EX TEXT BACK? » en points lumineux avec halo, bandeau défilant YES 4¢ ▲ (cyan) / NO 96¢ ▼ (rouge) / 24H VOL 69,420 chUSD (blanc) ; légère dérive de caméra. Le pari absurde explique la catégorie mieux qu'un texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f335.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Dés qui se posent sur le temps",
+      "name_en": "Dice landing on the beat",
+      "t": "0:13.17-0:13.83",
+      "frames": "f395-f415",
+      "fps": 30,
+      "mechanics": "Deux dés tombent en tournant, avec flou de mouvement et franges rouge/cyan (f397-f406), touchent la table à f407 (sur la grille), deux petits rebonds décroissants, repos à f415. Une face porte la marque. Éclairage en contre-jour rouge et cyan, reflets sur table noire. Petit hash « tx 0x6b…7b44 » en bas à droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f407.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Laser qui découpe le formulaire",
+      "name_en": "Laser shred",
+      "t": "0:14.37-0:15.0",
+      "frames": "f431-f450",
+      "fps": 30,
+      "mechanics": "Formulaire « KNOW YOUR CUSTOMER » tamponné PENDING sous un spot. Un trait laser horizontal descend en 5 im en changeant de couleur à chaque image (rouge f438, jaune f439, cyan f440, bleu f441-f442), puis sur le temps f443 la feuille se fend en 6 bandes qui s'écartent en profondeur (f443-f450, ease-out). « NO KYC. » apparaît avec la découpe.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f431.jpg",
+      "illus": {"from": 436, "to": 450, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquette de catégorie en bas à gauche",
+      "name_en": "Lower-left category tag",
+      "t": "0:06.5-0:15.97",
+      "frames": "f195-f478",
+      "fps": 30,
+      "mechanics": "Petit logo à bandes au-dessus d'un mot capital italique suivi d'un point (« CASINO. », « PVP. », « SPORTS. », « PREDICTION MARKETS. », « PROVABLY FAIR. », « NO KYC. »), ≈ 6 % de la hauteur, marge ≈ 5 %. Apparition glitch ≈ 4 im après la coupe ; aparté en minuscule légère dessous. Formule identique à chaque scène.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Une catégorie produit par mesure",
+      "name_en": "One feature per bar",
+      "t": "0:06.37-0:15.97",
+      "frames": "f191-f479",
+      "fps": 30,
+      "mechanics": "Six scènes de 48 im exactement (1,6 s = une mesure de 4 temps à 150 BPM) : casino, PvP, sport, marchés prédictifs, équité, sans KYC. Chaque scène a un seul geste fort placé sur un temps (arrêt, impact, atterrissage, découpe).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f234.jpg, microM-008-cut-f335.jpg, microM-010-cut-f431.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots plein écran à apparition glitch",
+      "name_en": "Glitch-in word slides",
+      "t": "0:15.97-0:18.77, 0:22.37-0:25.57",
+      "frames": "f479-f562, f671-f766",
+      "fps": 30,
+      "mechanics": "Un mot ou une courte phrase blanche, centrée, ≈ 8 % de la hauteur, sur noir granuleux. Chaque apparition : 1 à 2 im de tranches décalées + séparation RVB, puis texte immobile jusqu'au mot suivant. Aucun mouvement d'échelle ni de position.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Accélération de la cadence des mots",
+      "name_en": "Word-rate acceleration",
+      "t": "0:15.97-0:18.77, 0:22.37-0:24.77",
+      "frames": "f479-f563, f671-f743",
+      "fps": 30,
+      "mechanics": "Deux temps (24 im) par phrase pour NO BULLSHIT. et NO PERMISSION., puis un temps (12 im) par mot pour YOUR MONEY. / YOUR RISK. / YOUR CALL. Même schéma ensuite : DEVNET IS LIVE. 24 im, puis 1,000 chUSD / EVERY. / SINGLE. / DAY. 12 im chacun. Le tempo ne change pas, la densité double.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un temps de noir avant le drop",
+      "name_en": "One-beat blackout before the drop",
+      "t": "0:18.77-0:19.23",
+      "frames": "f563-f577",
+      "fps": 30,
+      "mechanics": "Noir complet 12 im (f563-f574) pendant que la musique se creuse (-27 à -32 dB, 18,8-19,1 s). Dans les 5 dernières images, des éclats aux couleurs du logo traversent depuis le haut à droite (f570-f574, anticipation), puis flash blanc 2 im (f575-f576) sur l'attaque la plus forte du morceau (19,215 s) et logo à f577.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f575.jpg",
+      "illus": {"from": 568, "to": 592, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo tapé en doubles croches",
+      "name_en": "Logo typed on sixteenths",
+      "t": "0:19.23-0:20.77",
+      "frames": "f577-f623",
+      "fps": 30,
+      "mechanics": "CHAIN.WTF apparaît lettre par lettre toutes les ≈ 3 im (double croche à 150 BPM = 3 im) : C f579, H f581, A f584, I f587, N f590, puis le point et WTF ; la lettre de tête porte une lueur blanche et un flou. « OWN THE OUTCOME. » arrive sur le temps f623.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f575.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Lignes de vitesse aux couleurs de la marque",
+      "name_en": "Brand speed lines",
+      "t": "0:19.23-0:30",
+      "frames": "f577-f899",
+      "fps": 30,
+      "mechanics": "Filets horizontaux de 1-2 px, longueurs variables (5-30 % de la largeur), en rouge, jaune, cyan, bleu et blanc, qui glissent horizontalement à des vitesses différentes. Ils animent les plans de logo et la carte finale sans voler la lecture.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Contre-pied humoristique",
+      "name_en": "Deadpan aside",
+      "t": "0:24.77-0:25.57",
+      "frames": "f743-f766",
+      "fps": 30,
+      "mechanics": "Après le crescendo EVERY. SINGLE. DAY., la phrase « (it's devnet. calm down.) » en minuscules légères ≈ 2,5 % de la hauteur, grise, tenue 2 temps : rupture d'échelle et de ton qui fait rire et prépare le flash final.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Appel à l'action empilé sur les temps",
+      "name_en": "On-beat CTA stack",
+      "t": "0:25.57-0:26.80",
+      "frames": "f767-f803",
+      "fps": 30,
+      "mechanics": "Flash f767, logo + OWN THE OUTCOME. à f769 (glitch 2 im), pilule jaune citron « CONNECT WALLET » à f779, « (or don't. we're not your dad.) » à f791, mention « We asked legal to review this ad. We don't have legal. » à f803 : un élément par temps, du plus fort au plus discret.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-012-cut-f767.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Post-traitement filmique",
+      "name_en": "Filmic post stack",
+      "t": "0:02.37-0:30",
+      "frames": "f71-f899",
+      "fps": 30,
+      "mechanics": "Grain fort constant, aberration chromatique sur les bords, bloom sur ampoules, LED et reflets, profondeur de champ courte (bokeh de la pièce), vignettage, éclairages rouge/cyan opposés. Donne un aspect tourné-caméra aux scènes 3D et unifie des décors très différents.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-009-move-f407.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Marque à quatre bandes et jaune d'appel",
+      "name_en": "Four-stripe brand palette",
+      "t": "0:04.83-0:30",
+      "frames": "f145-f899",
+      "fps": 30,
+      "mechanics": "Les bandes rouge, jaune, bleu ciel, bleu du logo deviennent la palette d'effet (tunnel, laser, lignes de vitesse, éclats) sur un fond presque noir ; le seul aplat saturé hors marque est la pilule jaune citron du CTA, réservée à l'action finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f169.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage verrouillé sur une grille de 12 images",
+      "name_en": "Integer-frame beat grid edit",
+      "t": "0:02.37-0:26.77",
+      "frames": "f71-f803",
+      "fps": 30,
+      "mechanics": "150 BPM à 30 fps = 12 im par temps, 48 im par mesure. Toutes les coupes, tous les changements de mot et tous les gestes forts tombent sur f71 + 12k (35 sur 37). L'image devance le temps détecté de ≈ 1,4 im, de façon constante : l'œil perçoit l'événement au moment du son.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f71.jpg, microM-004-move-f190.jpg, microM-010-cut-f431.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Ton éditorial irrévérencieux",
+      "name_en": "Irreverent copywriting",
+      "t": "0:00-0:30",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Blagues réparties sur tous les supports : sticker « NOT FINANCIAL ADVICE », revers de pièce « OOPS », « (you vs. that one guy) », « WILL YOUR EX TEXT BACK? », volume 69,420, « LOOK IT UP YOURSELF. », « (it's devnet. calm down.) », « we're not your dad », « We don't have legal ». Le texte fait l'identité autant que l'image.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne que le compte X de la marque : Claude a reconstruit l'offre réelle (casino, PvP, paris sportifs, marchés prédictifs, devnet, 1 000 chUSD par jour) et l'identité (logo à quatre bandes). Nommer la marque suffit si elle a une présence publique."},
+    {"kind": "direction", "insight": "Le suffixe « .wtf » a probablement dicté le ton potache : Claude a écrit une blague par plan. Sans consigne de ton, le modèle déduit le registre du nom."},
+    {"kind": "structure", "insight": "« 30sec pitch » a donné une structure de pub classique respectée à l'image près (30,06 s) : accroche → 6 bénéfices en 6 mesures → manifeste → logo → offre → CTA."},
+    {"kind": "build", "insight": "Claude a pris un tempo qui tombe sur un nombre entier d'images (150 BPM = 12 im à 30 fps) : c'est ce qui permet un calage sans dérive sur 30 s. Bon réflexe à exiger dans un prompt (« tempo multiple de la cadence »)."},
+    {"kind": "banned", "insight": "Rien n'encadrait l'animation des mots : Claude retombe sur le glitch RVB à chaque apparition et sur des mots blancs centrés fixes. Préciser une grammaire typographique (échelle, masque, mot à mot) éviterait ce tic."},
+    {"kind": "qa", "insight": "Aucune contrainte de temps mort : 1 s d'ouverture figée (voulue pour la parodie) et 3,2 s de carte finale figée. Un « rien d'immobile plus de 1 s » aurait été utile."}
+  ],
+  "steal": [
+    "Choisir un tempo qui donne un nombre entier d'images par temps (150 BPM à 30 fps = 12 im ; 120 BPM à 60 fps = 30 im) et monter une scène par mesure.",
+    "Dans chaque scène, un seul geste physique posé sur un temps (rouleau qui s'arrête, ballon qui perce, dés qui touchent, laser qui coupe) plutôt qu'une coupe.",
+    "Accélérer sans changer de tempo : deux temps par phrase, puis un temps par mot.",
+    "Un temps de noir et de creux musical avant le drop, quelques éclats du logo dans les 5 dernières images, flash blanc sur l'attaque.",
+    "Ouvrir sur la parodie de l'inverse de la marque, puis la casser par une coupe glitch sur le premier temps fort."
+  ],
+  "flaws": [
+    "Apparition glitch RVB identique sur chaque mot et chaque étiquette : tic de vidéo IA, l'effet s'use dès la troisième fois.",
+    "Près de 6 s de mots blancs centrés et immobiles sur noir (16-19 s, 22,4-25,6 s).",
+    "Ouverture figée 1 s et carte finale figée 3,2 s : temps morts aux deux extrémités.",
+    "Tunnel hyperespace en spirale : effet de banque d'images sans lien avec le casino.",
+    "Trois flashs blancs identiques comme seule transition forte entre les actes."
+  ],
+  "deep_study": {"worth": false, "why": "Le calage se lit entièrement à la mesure (grille de 12 im, relevée ici) et l'animation typographique se limite à des apparitions glitch ; la source est à 30 fps. Seules les scènes 3D (dés, pièce, panneau brisé) mériteraient une étude séparée côté Three.js."}
+}

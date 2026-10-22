@@ -1,0 +1,443 @@
+{
+  "slug": "miskinho-443898",
+  "title": "Quetzal social app reel",
+  "handle": "@miskinho_",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo SaaS propre et cohérente : une même série de photos traverse 5 chapitres, transitions motivées et scènes calées à la mesure ; mais esthétique blanche générique et maintiens de 1 à 1,6 s.",
+  "summary": "Promo de 15 s pour l'app Quetzal (réseaux sociaux en pilote automatique) en 5 chapitres d'un mot : un prompt tapé devient un post, décliné sur 6 réseaux, rangé dans un calendrier, publié, puis transformé en courbe de croissance, avant le logo. Les mêmes photos culinaires voyagent d'un écran à l'autre. Chaque chapitre dure une mesure à 125 BPM. Faiblesse : style SaaS blanc attendu, maintiens trop longs.",
+  "prompt_vs_result": [
+    "Une ligne : vidéo motion « dynamique » de 15 s montrant un motion designer incroyable, « comme ton showreel pour Quetzal », « go all out ». Ni produit décrit, ni contenu, ni style, ni musique imposés.",
+    "Claude a tout décidé : récit du flux produit (prompt, post, 6 réseaux, calendrier, publication, statistiques), titres d'un mot numérotés, photos culinaires fil rouge, palette blanc-vert-brique, scènes d'une mesure à 125 BPM, bande-son house calée sur les scènes (probable).",
+    "« Showreel pour Quetzal » a donné une démo produit sage plutôt qu'une démonstration de motion : peu de prises de risque, maintiens longs. Il aurait fallu préciser le public, une direction artistique, une densité (un événement par temps) et la musique."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FFFFFF", "role": "fond"},
+      {"hex": "#EBEBEB", "role": "grille de points du fond (≈ 2 px tous les 45 px)"},
+      {"hex": "#000000", "role": "titres, logo, bouton d'envoi"},
+      {"hex": "#6B2416", "role": "accent brique : index de chapitre, « Top post », jeudi"},
+      {"hex": "#0E7A54", "role": "vert succès : courbe, points, coche « Live »"},
+      {"hex": "#E4F0EC", "role": "fond de pastille « Live »"},
+      {"hex": "#225C48", "role": "texte de pastille « Live »"},
+      {"hex": "#A4C8BB", "role": "contour vert du flash de publication"},
+      {"hex": "#D7EBE4", "role": "haut du dégradé sous la courbe (vers #FFFFFF)"},
+      {"hex": "#F0F0F4", "role": "fond de pastille « Scheduled »"},
+      {"hex": "#85828A", "role": "libellés secondaires (heures, jours) ; URL #5F5E63"},
+      {"hex": "#C6B39E", "role": "beige lin dominant des photos (mesuré)"},
+      {"hex": "#B5532E", "role": "rouge-orangé tomates et gambas des photos (estimé)"}
+    ],
+    "type": "Grotesque néo gras (Inter Display probable), casse de phrase + point, interlettrage -4 %, capitale 11 % puis 6 % de la hauteur. Index « 01 » brique. Nom de marque en géométrique Regular (10 %).",
+    "texture": "Aplats nets sans grain ni glow ; grandes ombres portées très diffuses (≈ 0 20 px 40 px, 8 % de noir) sous la barre de prompt, les cartes et le panneau calendrier ; coins arrondis 24 à 40 px ; flou gaussien réservé aux transitions (morphing f117-f126, filé f352-f365 avec traînée horizontale directionnelle) ; photos culinaires chaudes en lumière rasante avec ombres de feuillage.",
+    "style": "Promo SaaS épurée, blanc éditorial",
+    "coherence": "Trois constantes tiennent le système : l'en-tête ancré en haut à gauche (index brique + titre d'un mot), la même série de photos qui voyage de la barre de prompt jusqu'aux étiquettes du graphique (chaque transition transforme l'objet de la scène précédente), et la grille musicale (1 scène = 1 mesure). Les deux accents restent sémantiques (vert = succès, brique = mise en avant). Ce qui casse un peu : la poussée lente appliquée à deux scènes seulement, la sortie en simple fondu au blanc, plus pauvre que les autres transitions, et le nom de marque en géométrique qui ne dialogue pas avec la grotesque des titres."
+  },
+  "rhythm": {
+    "bpm": 125,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo réel 125,1 BPM mesuré sur 2,2-11,7 s (temps = 0,48 s = 28,8 im à 60 fps, mesure = 1,92 s = 115 im) ; l'estimation globale du dossier (83,3 BPM) est l'erreur ×2/3, donc la grille bleue des planches microscope est fausse. Groove house : kick sur chaque temps, claps sur les temps 2 et 4 (attaques les plus fortes toutes les 0,96 s : 4,348 / 5,312 / 6,269 / 7,227 / 8,191 / 9,149 / 10,112 / 11,070 s), charleston sur les contretemps. Aucune coupe franche : tout passe par des transitions de 13 à 17 im. Les six changements de scène tombent sur le temps 1 de mesures successives : f116, f232, f348, f462, f578, f690 (écarts -2,3 à +1,0 im). 12 gestes clés sur 19 à ±2 im d'un temps ou demi-temps (hasard 35 %). Densité : par mesure, 0,25 à 0,5 s d'action puis 1 à 1,6 s de maintien. Les maintiens détectés (52 % du film) incluent la frappe et deux poussées lentes (+7 % sur la carte f135-f230, +10 % sur le calendrier f380-f460) ; vrais temps morts : calendrier « Published » figé f504-f578 (1,23 s, dont ≈ 1 s sans rien après l'extinction des contours), posts f297-f348 (0,85 s, simple dérive de ±15 px), graphique f660-f690 (0,5 s), plus 1,17 s de signature finale (f830-f900).",
+    "timeline": [
+      {"t": "0:00-0:00.30", "what": "f0-f18 : « One idea. » monte lettre à lettre au centre sur fond blanc à grille de points", "technique": "titre lettre à lettre sortant d'un masque"},
+      {"t": "0:00.30-0:00.65", "what": "f18-f39 : titre seul, immobile", "technique": "maintien de lecture (0,35 s)"},
+      {"t": "0:00.65-0:00.95", "what": "f39-f57 : la barre de prompt apparaît, le titre rétrécit et file en haut à gauche, index « 01 »", "technique": "fondu-netteté-montée + titre héros vers en-tête"},
+      {"t": "0:00.97-0:01.93", "what": "f58-f115 : frappe « Launch our summer menu », curseur clignotant", "technique": "frappe au clavier (2 im par caractère)"},
+      {"t": "0:01.93-0:02.22", "what": "f116-f133 : la barre se transforme en carte de post « Summer menu is here. » ; le kick entre", "technique": "morphing d'élément partagé flouté sur le drop"},
+      {"t": "0:02.22-0:03.87", "what": "f133-f232 : carte portrait au centre, poussée lente +7 %", "technique": "poussée lente (push-in)"},
+      {"t": "0:03.87-0:04.95", "what": "f232-f297 : « 02 Every platform. », la carte rétrécit, 5 déclinaisons sortent en éventail courbe", "technique": "roulement de titre + carrousel 3D en éventail"},
+      {"t": "0:04.95-0:05.80", "what": "f297-f348 : 6 posts natifs (TikTok, LinkedIn, Facebook, YouTube, X, Instagram), légère dérive", "technique": "maintien sur maquettes natives"},
+      {"t": "0:05.80-0:06.28", "what": "f348-f377 : « 03 Scheduled. », filé latéral flouté vers le calendrier, cartes distribuées dans les cases", "technique": "filé à flou directionnel + distribution échelonnée"},
+      {"t": "0:06.28-0:07.70", "what": "f377-f462 : calendrier hebdomadaire, poussée lente +10 %", "technique": "poussée lente"},
+      {"t": "0:07.70-0:08.53", "what": "f462-f512 : « 04 Published. », recul -7 %, statuts « Scheduled » → « Live » en cascade avec flash vert", "technique": "cascade de statuts en doubles-croches"},
+      {"t": "0:08.53-0:09.62", "what": "f512-f578 : calendrier entièrement publié, figé", "technique": "temps mort (≈ 1 s)"},
+      {"t": "0:09.62-0:10.08", "what": "f578-f605 : « 05 Improving. », le calendrier se dissout, les vignettes migrent en escalier", "technique": "FLIP calendrier → graphique"},
+      {"t": "0:10.02-0:11.00", "what": "f601-f660 : courbe verte tracée avec anneau de tête, aire en dégradé, « Top post » sur jeudi", "technique": "tracé à vitesse constante + mise en avant brique"},
+      {"t": "0:11.00-0:11.50", "what": "f660-f690 : graphique complet immobile", "technique": "maintien"},
+      {"t": "0:11.50-0:11.72", "what": "f690-f703 : le titre sort par le haut, le graphique s'efface au blanc ; la batterie s'arrête", "technique": "sortie en fondu au blanc"},
+      {"t": "0:11.73-0:12.05", "what": "f704-f723 : l'oiseau apparaît de la queue vers la tête, pop final sur le temps", "technique": "masque bas → haut en ease-in fort"},
+      {"t": "0:12.37-0:12.97", "what": "f742-f778 : « Quetzal » monte lettre à lettre sous l'oiseau", "technique": "nom de marque lettre à lettre"},
+      {"t": "0:13.47-0:13.83", "what": "f808-f830 : « Social media on autopilot. » puis « quetzaltech.app », sur le coup de basse final", "technique": "signature calée sur le dernier impact"},
+      {"t": "0:13.83-0:15.06", "what": "f830-f900 : signature immobile, la musique s'éteint", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "La grille globale du dossier (83,3 BPM) est fausse : c'est l'erreur ×2/3 d'un tempo à 125,1 BPM (tempo_segment sur 2,2-11,7 s : temps à 2,426 + n × 0,4796 s). Attaques de graves (kick) mesurées image par image à f117,7 / 147,0 / 175,9 / 204,5 / 233,4 / 261,2 / … / 692,8 ; claps (attaques les plus fortes) toutes les 0,96 s. Un événement par geste : 12 gestes clés sur 19 à ±2 im d'un temps ou demi-temps (hasard 35 %) : lettres f1 (temps f1,7), titre vers le coin f43 (demi-temps f44,8), frappe f58 (f59,2), morphing f116 (f116,8), ch. 02 f232 (f231,9), ch. 03 f348 (f347,0), premières cartes posées f361 (demi-temps f361,4), ch. 04 f462 (f462,1), ch. 05 f578 (f577,2), « Top post » f650 (demi-temps f649,2), pop du logo f721 (f721,1), slogan f808 (f807,5). Ratés : barre de prompt f39 (-5,8 im), éventail f243 (-3,3), cascade f470 (-6,5 sur la croche, mais sur la double-croche), tracé f601 (-5,0), outro f690 (-2,3), nom f742 (+6,5), URL f824 (+2,2). Les 6 changements de scène sont tous sur le temps 1 d'une mesure de 4 temps (au hasard ≈ 4 % chacun). Cascade des 6 badges : départs f470 / 475,5 / 483 / 489,5 / 497 / 505, tous à ±1,4 im de la grille des doubles-croches (7,19 im) partant du temps 1 f462,1. L'arrangement suit les scènes : graves quasi absents 0-1,96 s, kick qui entre à f117,7 exactement au morphing (+18 dB dans les graves), coupure du kick à f692,8 au départ de l'outro, pause montante (médiums et aigus +5 dB) sous le logo, coup de basse final à 13,479 s (f808,8) = départ du slogan, silence après 14,5 s. Décalage typique : l'image précède l'attaque mesurée de 0 à 2 im. L'indice automatique « aucune synchro » est un faux négatif dû à la mauvaise grille.",
+    "synced": ["departs", "impacts", "atterrissages", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "House 125 BPM propre et régulière, accord juste avec l'épure SaaS et les courbes sans rebond ; mais l'énergie de la musique dépasse celle de l'image pendant les maintiens.",
+    "how_built": "Probable : timeline écrite en temps musicaux à 125 BPM, qui donne des valeurs rondes (temps 0,48 s, mesure 1,92 s, double-croche 0,12 s ; décalage des badges mesuré 0,117 s), et bande-son arrangée sur la même carte des scènes (entrée du kick au morphing, coupure sous le logo, coup final sur le slogan), donc générée ou montée avec l'animation. Le prompt ne dit rien de la musique : c'est un choix de Claude ou de l'auteur. Seuls les gestes internes (frappe, éventail, tracé, nom de marque) restent hors grille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Récit du flux produit en 5 chapitres numérotés",
+      "name_en": "numbered product-flow chapters",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Intro (f0-f115 : « One idea. » + prompt tapé) puis 5 chapitres d'un mot terminé par un point, chacun d'une mesure de 4 temps à 125 BPM (115-116 im = 1,92 s) : 01 One idea. (post généré) → 02 Every platform. (6 déclinaisons) → 03 Scheduled. (calendrier) → 04 Published. (statuts Live) → 05 Improving. (courbe), puis signature f690-f900. Chaque chapitre transforme l'objet du précédent : le récit est une seule chaîne de métamorphoses, pas une suite d'écrans.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre lettre à lettre sortant d'un masque",
+      "name_en": "staggered per-letter mask rise",
+      "t": "0:00.02-0:00.30",
+      "frames": "f1-f18",
+      "fps": 60,
+      "mechanics": "« One idea. » (8 glyphes) monte de sous une ligne de base invisible : décalage ≈ 2 im par lettre, chaque lettre met ≈ 6-8 im, ease-out. Titre centré, ≈ 42 % de la largeur, capitale ≈ 11 % de la hauteur. Départ f1 sur la première attaque audio (0,029 s), point final posé f17 sur le demi-temps f16,1 (attaque 0,284 s) : le titre entier tient dans une croche.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de prompt en fondu, netteté et montée",
+      "name_en": "prompt bar blur-fade-up",
+      "t": "0:00.65-0:00.77",
+      "frames": "f39-f46",
+      "fps": 60,
+      "mechanics": "Opacité 0 → 1 et flou ≈ 10 px → 0 en 7 im (0,12 s), montée ≈ 3-4 % de la hauteur, ease-out. Barre blanche 1240 × 130 px (64 % × 12 % du cadre), rayon ≈ 30 px, ombre très diffuse (≈ 0 20 px 40 px, 8 % de noir), centrée à 57 % de la hauteur ; icône oiseau à gauche, bouton rond noir Ø 84 px avec flèche blanche ; placeholder gris « Tell Quetzal what to post ». Démarre 5,8 im avant le demi-temps : hors grille.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f48.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre héros qui rétrécit en en-tête",
+      "name_en": "hero title shrink-to-corner",
+      "t": "0:00.72-0:00.95",
+      "frames": "f43-f57",
+      "fps": 60,
+      "mechanics": "Le titre centré passe à l'échelle ×0,45 et glisse en haut à gauche (x ≈ 6 %, y ≈ 18 %) en 14 im (0,23 s), ease-in-out symétrique (pas mesurés en vignette : 2-4-5-7-9-9-6-5-2-3-1-1 px, vitesse max au milieu). Démarre 4 im après l'entrée de la barre (chevauchement), sur le demi-temps f44,8. L'index « 01 —— » apparaît au-dessus ; l'en-tête garde ensuite cette place pour tous les chapitres, ce qui stabilise la lecture.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f48.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frappe régulière du prompt",
+      "name_en": "typing animation",
+      "t": "0:00.97-0:01.92",
+      "frames": "f58-f115",
+      "fps": 60,
+      "mechanics": "« Launch our summer menu » (22 caractères) tapé de f59 à f104 : 2 im par caractère (≈ 29 caractères/s), régulier comme une machine, premier caractère tenu 3 im ; curseur visible puis clignotement f105-f115. Texte grotesque Regular ≈ 48 px (4,4 % de la hauteur). La frappe démarre sur le temps f59,2 mais les mots ne sont pas calés sur la musique.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f48.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Morphing barre de prompt → carte de post (élément partagé flouté)",
+      "name_en": "shared-element morph with blur",
+      "t": "0:01.93-0:02.22",
+      "frames": "f116-f133",
+      "fps": 60,
+      "mechanics": "La barre (64 % × 12 % du cadre) devient une carte portrait (28 % × 65 %, ratio ≈ 4:5) en 17 im (0,28 s). Largeur en ease-in-out (pas mesurés : 2-9-8-12-7-10-9-7-6-6-3-3-3-3-2-2 px de vignette), hauteur presque linéaire puis freinée. Le contenu passe de l'interface à la photo en fondu enchaîné caché par un flou gaussien maximal f119-f124 (≈ 20-30 px), net dès f127. Départ sur le temps 1 (f116,8), l'image même où le kick entre (f117,7). Aucun clic sur le bouton d'envoi ne le déclenche.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f124.jpg",
+      "illus": {"from": 114, "to": 134, "n": 8}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente pendant les maintiens",
+      "name_en": "slow push-in on holds",
+      "t": "0:02.25-0:03.83 ; 0:06.33-0:07.67",
+      "frames": "f135-f230 ; f380-f460",
+      "fps": 60,
+      "mechanics": "Carte : largeur 530 → 567 px (+7 % en 95 im, vitesse constante). Calendrier : en-tête 1301 → 1431 px (+10 % en 80 im, linéaire, ancré au centre x ≈ 1013, l'ensemble monte de 34 px). Absente sur « Published » (f504-f578 figé) et sur le graphique (f660-f690). Le détecteur de mouvement la classe en maintien : elle évite le gel sans créer d'événement.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Changement de titre en roulement lettre à lettre",
+      "name_en": "staggered letter-roll title swap",
+      "t": "0:03.87 ; 0:05.80 ; 0:07.70 ; 0:09.62",
+      "frames": "f232-f246 ; f348-f361 ; f462-f476 ; f578-f592",
+      "fps": 60,
+      "mechanics": "L'ancien titre monte et sort par le haut de sa boîte de ligne pendant que le nouveau entre par le bas (le masque est la boîte de ligne) ; décalage ≈ 0,75 im par lettre de gauche à droite, ≈ 13-14 im (0,22 s) au total, ease-out probable, sans flou. Départ pile sur le temps 1 de la mesure (f232 pour f231,9 ; f348 pour f347,0 ; f462 pour f462,1 ; f578 pour f577,2). L'index « 02 → 03 » roule de la même façon, comme un compteur à rouleau.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f357.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titres d'un mot en grotesque grasse serrée + index brique",
+      "name_en": "one-word bold tight headers with chapter index",
+      "t": "0:00.95-0:11.50",
+      "frames": "f57-f690",
+      "fps": 60,
+      "mechanics": "Grotesque néo gras (Inter Display ou Helvetica Now Display probable), casse de phrase et point final (« One idea. », « Every platform. », « Scheduled. »…), interlettrage ≈ -4 %, capitale ≈ 6 % de la hauteur (≈ 65 px), en x = 6,3 %, y ≈ 15-21 %. Index « 01 » grotesque medium ≈ 30 px en brique #6B2416 + filet gris #CFCFCF de 64 px. Un mot-concept par mesure : se lit en moins de 0,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Éventail en carrousel courbe",
+      "name_en": "fan-out into curved 3D carousel",
+      "t": "0:03.88-0:04.95",
+      "frames": "f233-f297",
+      "fps": 60,
+      "mechanics": "La carte héros rétrécit (530 → ≈ 335 px de large, ×0,63, ease-out, f233-f244) et glisse à gauche du centre ; dès f243 les 5 autres versions sortent de derrière elle et s'étalent sur 4-96 % de la largeur en ≈ 50 im (0,85 s), ease-out. Les cartes extrêmes (TikTok, story Instagram) sont tournées en perspective (rotateY ≈ 25-35° probable : bords hauts obliques, cartes plus étroites) : arc de cylindre. Puis dérive horizontale de ±15 px jusqu'à f348. L'éventail démarre 3,3 im avant un demi-temps : hors grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f236.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Maquettes de posts natives par réseau",
+      "name_en": "platform-native post mockups",
+      "t": "0:04.50-0:05.80",
+      "frames": "f270-f348",
+      "fps": 60,
+      "mechanics": "Même série de photos déclinée dans 6 formats natifs : TikTok vertical avec icônes latérales, post LinkedIn (avatar, lignes squelettes, réactions), Facebook (« Summer menu is here. »), miniature YouTube 16:9 (« SUMMER MENU » condensé + badge 0:15), post X (« One table. The whole summer. »), story Instagram (serif « New on the menu »). Logo du réseau dans une pastille blanche en haut à gauche de chaque carte ; textes remplacés par des barres grises. Dit « une idée → tous les réseaux » sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Filé latéral à flou directionnel vers le calendrier",
+      "name_en": "whip pan with directional motion blur",
+      "t": "0:05.80-0:06.08",
+      "frames": "f348-f365",
+      "fps": 60,
+      "mechanics": "La rangée de posts part à gauche pendant que le calendrier (panneau blanc 88 % × 70 %, rayon ≈ 40 px, ombre diffuse) entre par la droite : ≈ 90 % de la largeur parcourus en ≈ 13 im (f352-f365), vitesse maximale f355-f359 avec traînée horizontale forte (≈ 60-100 px, flou directionnel et non isotrope), ease-in-out. La carte LinkedIn quitte la rangée dès f349 (disparaît en 1 im) et réapparaît déjà rangée dans le calendrier. Départ sur le temps 1 (f347,0 ; kick f348,6).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f357.jpg",
+      "illus": {"from": 346, "to": 372, "n": 8}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes distribuées dans les cases du calendrier",
+      "name_en": "staggered card deal into calendar slots",
+      "t": "0:06.02-0:06.28",
+      "frames": "f361-f377",
+      "fps": 60,
+      "mechanics": "Les posts restants volent de gauche à droite vers leur case dans l'ordre chronologique (lun. 09:00 LinkedIn, mar. 18:00 Instagram, mer. 13:00 Facebook, jeu. 18:00 TikTok, ven. 09:00 X, sam. 13:00 YouTube), décalage ≈ 3-4 im, flou horizontal pendant le vol, pose sèche sans dépassement. Premières poses f361 (demi-temps f361,4), dernière f376-377 sur le clap (6,269 s = f376,2, point vert de la planche). Chaque vignette porte une pastille grise « • Scheduled ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f357.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bascule de statuts en cascade sur les doubles-croches",
+      "name_en": "16th-note status flip cascade",
+      "t": "0:07.83-0:08.53",
+      "frames": "f470-f512",
+      "fps": 60,
+      "mechanics": "Les 6 pastilles passent de « • Scheduled » (#F0F0F4, texte #6E6D74) à « ✓ Live » (#E4F0EC, texte #225C48) dans l'ordre des jours. Départs mesurés au pixel : f470, 475,5, 483, 489,5, 497, 505, soit un décalage moyen de 7,0 im (0,117 s) ≈ une double-croche à 125 BPM (7,19 im) ; tous à ±1,4 im de la grille des doubles-croches qui part du temps 1 (f462,1). Chaque bascule allume un contour vert #A4C8BB (≈ 3 px) autour de la vignette, au maximum 6-8 im après, éteint en ≈ 10 im : la liste se lit comme un roulement de charleston.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 466, "to": 512, "n": 8}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul du calendrier au changement de chapitre",
+      "name_en": "pull-back on chapter change",
+      "t": "0:07.77-0:08.40",
+      "frames": "f466-f504",
+      "fps": 60,
+      "mechanics": "Après la poussée de +10 % de « Scheduled », le calendrier revient à l'échelle 1327/1431 (-7,3 %) en ≈ 38 im (0,63 s), ease-in-out (lent f466-f472, ≈ 3 px/im f476-f488, freinage jusqu'à f504), sous la cascade des badges ; puis il reste figé jusqu'à f578 (1,23 s).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Calendrier dissous en graphique, les posts deviennent des points",
+      "name_en": "calendar-to-chart FLIP",
+      "t": "0:09.73-0:10.08",
+      "frames": "f584-f605",
+      "fps": 60,
+      "mechanics": "La grille, les en-têtes et les pastilles s'effacent (f584-f596) pendant que les 6 vignettes rétrécissent (≈ 140 × 85 px, 7 % × 8 % du cadre) et migrent vers des positions en escalier (≈ 20 im, ease-in-out) : chaque post devient l'étiquette d'un point de donnée, sa hauteur dit sa performance. Les tiges et points verts apparaissent ensuite un par un toutes les 4 im (f602, 606, 610, 614, 618, 622), avant le passage du trait.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f593.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe tracée à vitesse constante avec tête de stylo",
+      "name_en": "constant-speed line draw with leading ring",
+      "t": "0:10.02-0:11.00",
+      "frames": "f601-f660",
+      "fps": 60,
+      "mechanics": "Ligne verte #0E7A54 ≈ 6 px tracée de lundi à dimanche en 59 im (0,98 s ≈ 2 temps) à vitesse constante (≈ 50 px de trait par image, aucun ease) ; un anneau creux (fond blanc, contour vert ≈ 5 px, Ø ≈ 30 px) mène le trait puis reste en bout ; l'aire dessous se remplit en dégradé vertical #D7EBE4 → blanc au passage. Départ 5 im avant le temps (f606,0), fin 3,5 im avant (f663,5) : hors grille et mécanique.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f593.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Mise en avant « Top post » en couleur d'accent",
+      "name_en": "accent highlight on top data point",
+      "t": "0:10.83-0:11.00",
+      "frames": "f650-f660",
+      "fps": 60,
+      "mechanics": "Étiquette « Top post » (grotesque semi-grasse ≈ 30 px, brique #6E2015) en fondu-montée de 10 im au-dessus de la vignette TikTok du jeudi, dont le contour passe au brique ; point brique sur la courbe, pointillés verticaux brique jusqu'à l'axe, « Thu » en brique gras. Départ sur le demi-temps f649,2 (charleston à 10,826 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Deux accents sémantiques sur blanc",
+      "name_en": "semantic two-accent palette",
+      "t": "0:00-0:11.50",
+      "frames": "f0-f690",
+      "fps": 60,
+      "mechanics": "Fond #FFFFFF, texte #000000 ; vert #0E7A54 réservé au succès (Live, courbe, croissance), brique #6B2416 réservé à l'orientation et à la mise en avant (index, « Top post », jeudi). Toute la chaleur vient des photos (beige lin #C6B39E, tomates et gambas rouge-orangé). Aucun accent décoratif.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille de points discrète",
+      "name_en": "subtle dot-grid canvas",
+      "t": "0:00-0:11.72",
+      "frames": "f0-f703",
+      "fps": 60,
+      "mechanics": "Points ≈ 2 px #EBEBEB tous les ≈ 45 px sur #FFFFFF, statiques ; texture de « canevas produit » qui ne concurrence pas l'interface ; disparaît sur la signature (blanc pur). Tic très fréquent des vidéos SaaS faites par IA ; un fond qui dérive lentement aurait aussi animé les maintiens.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Série de photos fil rouge",
+      "name_en": "consistent hero imagery as through-line",
+      "t": "0:02.00-0:11.50",
+      "frames": "f120-f690",
+      "fps": 60,
+      "mechanics": "5 à 6 photos culinaires générées (burrata et tomates, gambas grillées, terrasse méditerranéenne) en lumière chaude rasante avec ombres de feuillage, certaines avec typographie intégrée (serif « Summer menu is here. », condensée « SUMMER MENU »). Les mêmes images passent du post au carrousel, au calendrier puis aux étiquettes du graphique : le spectateur suit un contenu, pas des écrans.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres douces et flou réservé au mouvement",
+      "name_en": "soft shadows, blur only in transitions",
+      "t": "0:00.65-0:11.50",
+      "frames": "f39-f690",
+      "fps": 60,
+      "mechanics": "Barre, cartes et panneau calendrier portent de grandes ombres très diffuses (≈ 0 20 px 40 px, 8 % de noir), coins arrondis 24-40 px. Le flou gaussien n'apparaît que pendant les transitions (morphing f117-f126, filé f352-f365) pour masquer les échanges de contenu ; aucun grain, aucun glow.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f124.jpg, microM-004-move-f357.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie : titre qui remonte et fondu au blanc",
+      "name_en": "roll-out and fade to white",
+      "t": "0:11.50-0:11.72",
+      "frames": "f690-f703",
+      "fps": 60,
+      "mechanics": "« Improving. » roule vers le haut et le graphique s'efface en ≈ 8 im (f694-f702) sans aucun mouvement ; départ 2,3 im avant le dernier kick (f692,8), au moment où la batterie s'arrête. Seule transition non motivée de la pièce.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo révélé par masque bas → haut en accélération",
+      "name_en": "bottom-up mask reveal with ease-in pop",
+      "t": "0:11.73-0:12.05",
+      "frames": "f704-f723",
+      "fps": 60,
+      "mechanics": "Oiseau noir (≈ 33 % de la hauteur, centré) découvert du bas vers le haut : la queue fine pousse lentement pendant 17 im (couverture 0,2 → 7 % de sa boîte), puis le corps et la tête apparaissent en 2 im (f721-f723 : 7 → 23 %) ; ease-in très fort (expo.in probable), effet de pop sans rebond. Le pop tombe sur le temps f721,1 et sur une attaque audio (12,040 s = f722,4), en pleine coupure de batterie.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 702, "to": 726, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom de marque lettre à lettre",
+      "name_en": "wordmark staggered rise",
+      "t": "0:12.37-0:12.97",
+      "frames": "f742-f778",
+      "fps": 60,
+      "mechanics": "« Quetzal » (géométrique Regular, capitale ≈ 10 % de la hauteur, Q à queue, a à un étage) monte d'un masque à sa ligne de base : décalage ≈ 5 im par lettre, ≈ 10-12 im par lettre, ease-out ; 36 im au total, la dernière lettre se pose f776-778 sur le temps f778,7 (le départ f742 est hors grille). Plus lent que les titres (2 im) : moment de marque plus calme.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature : logo, nom, slogan, URL",
+      "name_en": "end card",
+      "t": "0:13.47-0:15.06",
+      "frames": "f808-f900",
+      "fps": 60,
+      "mechanics": "Slogan « Social media on autopilot. » (grotesque Regular ≈ 40 px = 3,7 % de la hauteur) monte en 20 im à partir de f808, pile sur le coup de basse final (13,479 s = f808,8) ; URL « quetzaltech.app » gris #5F5E63 ≈ 26 px en fondu f824-f830 ; maintien de 1,17 s pendant que la musique s'éteint (silence après 14,5 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une scène = une mesure",
+      "name_en": "one scene per bar",
+      "t": "0:01.93-0:11.53",
+      "frames": "f116-f692",
+      "fps": 60,
+      "mechanics": "Changements de scène f116, f232, f348, f462, f578, f690 = temps 1 de mesures successives à 125,1 BPM (grille f116,8 / 231,9 / 347,0 / 462,1 / 577,2 / 692,3), écarts -2,3 à +1,0 im ; espacements 116 / 116 / 114 / 116 / 112 im ≈ 4 temps (115,1 im). L'image change 0 à 2 im avant l'attaque mesurée du kick. La musique annonce chaque chapitre sans aucun effet sonore dédié.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-002-move-f124.jpg, microM-004-move-f357.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement musical calqué sur les scènes",
+      "name_en": "arrangement mapped to scene structure",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Intro sans kick (graves ≈ 25 dB, 0-1,96 s) sous le titre et la frappe ; le kick 4/4 entre à f117,7 exactement quand la barre se transforme en post (+18 dB dans les graves : c'est le drop) ; groove house f117-f692 (kick sur chaque temps, clap sur 2 et 4, charleston sur les contretemps) ; le kick s'arrête f692,8 au départ de l'outro ; pause avec montée (médiums et aigus +5 dB) sous le logo ; coup de basse final à 13,479 s = départ du slogan ; silence après 14,5 s.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Poses sèches sur les claps et les accents",
+      "name_en": "landings on backbeat claps",
+      "t": "0:06.27 ; 0:10.83 ; 0:12.02",
+      "frames": "f376 ; f650 ; f721",
+      "fps": 60,
+      "mechanics": "Les poses fortes visent les attaques les plus fortes (claps des temps 2 et 4, toutes les 0,96 s) ou les accents : dernière carte posée dans le calendrier f376-377 (clap 6,269 s = f376,2), « Top post » sur le charleston f649,6, pop du logo f721-723 sur l'accent 12,040 s. Pose sèche sans rebond ni écrasement, comme le clap.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f357.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Action courte puis long temps de lecture",
+      "name_en": "short action, long read",
+      "t": "0:00-0:15.06",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Par mesure de 1,92 s : 0,25-0,5 s de transition puis 1,0-1,6 s de maintien (carte f133-f232 = 1,65 s, posts f297-f348 = 0,85 s, calendrier f377-f462 = 1,4 s, « Published » figé f504-f578 = 1,23 s, graphique f660-f690 = 0,5 s). 52 % du film est presque immobile selon le détecteur ; les maintiens les plus longs n'ont qu'une poussée lente de +7-10 % ou rien. Lisible, mais loin de la règle « quelque chose bouge toutes les 0,5-1 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Système de courbes sans dépassement",
+      "name_en": "no-overshoot easing system",
+      "t": "0:00-0:13.83",
+      "frames": "f0-f830",
+      "fps": 60,
+      "mechanics": "Entrées en ease-out (lettres, barre, éventail, nom de marque), déplacements en ease-in-out symétrique (titre vers le coin, morphing, filé, recul), révélation du logo en ease-in fort, tracé en linéaire. Aucun dépassement, aucun ressort, aucun écrasement mesuré sur toute la pièce : ton net et corporate, mais rien ne rebondit.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f48.jpg, microM-002-move-f124.jpg, extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne fournit aucun brief produit ; les éléments concrets (logo oiseau, nom, slogan « Social media on autopilot. », URL quetzaltech.app, photos culinaires cohérentes) viennent forcément d'assets ou d'informations donnés hors prompt (probable : site ou fichiers joints). Sans eux, ce récit produit précis n'aurait pas été possible."},
+    {"kind": "direction", "insight": "« Showreel » et « go all out » n'ont pas poussé vers l'audace graphique : le modèle a choisi la sécurité d'une démo SaaS blanche. Le mot « showreel » se traduit ici en catalogue de transitions motivées (morphing, éventail, filé, cascade, tracé, masque) plutôt qu'en style."},
+    {"kind": "structure", "insight": "Une seule contrainte de durée (15 s) a produit une grille très régulière : intro + 5 chapitres d'une mesure + signature. Le modèle a découpé la durée en mesures musicales, d'où une synchro structurelle quasi parfaite."},
+    {"kind": "build", "insight": "Les durées sont des valeurs rondes à 125 BPM (0,48 / 0,96 / 1,92 / 0,12 s) : signe d'une timeline construite à partir d'une constante de tempo. À reprendre : déclarer BPM et grille dans le prompt pour obtenir ce calage à coup sûr, y compris pour les gestes internes restés hors grille."},
+    {"kind": "qa", "insight": "Les maintiens de 1 à 1,6 s et le tracé linéaire montrent l'absence de règle de densité ; « un événement visible à chaque temps » et « jamais plus de 0,5 s immobile » auraient comblé les creux."},
+    {"kind": "other", "insight": "Réflexe « Product UI » du modèle : barre de prompt façon IA, cartes à texte squelette, calendrier hebdomadaire, courbe verte montante, grille de points. Grammaire de landing page SaaS efficace mais reconnaissable entre mille."}
+  ],
+  "steal": [
+    "Une scène = une mesure : à 125 BPM, changer de chapitre toutes les 1,92 s pile sur le temps 1, l'image 0 à 2 im avant le kick.",
+    "Faire voyager le même objet d'un écran à l'autre : la barre de prompt devient le post, le post se démultiplie, se range, puis devient un point de donnée.",
+    "Décaler une cascade d'états d'une double-croche (0,12 s à 125 BPM) en partant 1/16 après le temps : la liste joue comme une rythmique.",
+    "Changer de titre par roulement lettre à lettre (0,75 im de décalage, 14 im au total) dans un en-tête fixe en haut à gauche, index compris.",
+    "Révéler un logo par masque en ease-in fort : 17 im de montée discrète, puis le corps apparaît en 2 im pile sur le temps."
+  ],
+  "flaws": [
+    "Maintiens de 1 à 1,6 s quasi immobiles (carte, calendrier, « Published » figé 1,23 s) : 52 % du film presque statique.",
+    "Courbe tracée en linéaire et 5 im avant le temps : seul geste mécanique et décalé de la pièce.",
+    "Esthétique SaaS attendue : fond blanc à grille de points, grotesque grasse, texte squelette, courbe verte qui monte.",
+    "Le morphing part sans clic sur le bouton d'envoi : l'action déclenchante manque.",
+    "Sortie en simple fondu au blanc, plus pauvre que les transitions motivées qui précèdent."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : morphing barre → carte (f116-f133), filé suivi de la distribution des cartes (f348-f377) et cascade de badges en doubles-croches (f470-f512) se jouent en 15 à 40 im ; à étudier en continu à 60 fps pour reproduire courbes, flous et calage sur le kick dans HyperFrames."
+  }
+}

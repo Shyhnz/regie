@@ -1,0 +1,653 @@
+{
+  "slug": "kangaroohere-b10f8d",
+  "title": "Motion designer showreel",
+  "handle": "@KangarooHere",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Direction artistique nette (crème, bleu, jaune, noir ; serif + grotesque noire), transitions motivées en chaîne, 29 gestes sur 44 calés au temps ; mais cartes illisibles en 0,5 s et pictos génériques.",
+  "summary": "Promo de 20 s pour Roo's Newsletter. Un kangourou écrit le logo en sautant de lettre en lettre, le surlignage des trois thèmes devient trois colonnes, puis s'enchaînent cartes d'articles, quatre chiffres clés (un par temps), mur de mots à loupe, téléphone qui reçoit le numéro, slogan sur fond de nombres et retour au logo avec clic d'abonnement. Dense, calé à 120 BPM, avec sons d'impact et voix.",
+  "prompt_vs_result": [
+    "Une ligne : vidéo motion « dynamique » de 20 s pour « ma newsletter », comme le showreel d'un motion designer, « go all out ». Ni contenu, ni musique, ni style imposés ; la newsletter n'est même pas nommée.",
+    "Claude a tout décidé : mascotte kangourou qui écrit le logo, rubriques Tech / Trends / Mindset, vrais sujets d'articles et chiffres, mur de mots, téléphone, palette crème-bleu-jaune-noir, minutage à la demi-seconde, CTA d'abonnement ; bande-son à sons d'impact et voix.",
+    "La seule contrainte, 20 s, a donné une pièce dense (9 % de maintiens). Minuté en multiples de 0,5 s sur une piste à 120 BPM, tout tombe sur les temps. Il fallait limiter le texte affiché 0,5 s seulement."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F6F3EC",
+        "role": "fond crème principal (logo, cartes, chiffres, fin)"
+      },
+      {
+        "hex": "#223FF2",
+        "role": "bleu électrique : colonne Tech, fond du 40 % et du téléphone, loupe, étiquettes, bouton"
+      },
+      {
+        "hex": "#FDDE4C",
+        "role": "jaune : colonne Mindset, surligneurs, texte révélé par la loupe, « your inbox. », coche"
+      },
+      {
+        "hex": "#13120C",
+        "role": "noir chaud : texte, mascotte, colonne Trends, fonds du 48 h et du mur"
+      },
+      {
+        "hex": "#EBE4D9",
+        "role": "beige plus soutenu de la scène de la route"
+      },
+      {
+        "hex": "#A9B6F9",
+        "role": "lavande de passage pendant le zoom dans la carte (fondu crème → bleu)"
+      }
+    ],
+    "type": "Serif à fort contraste (Playfair ou DM Serif Display probable) pour logo, titres et chiffres, 9 à 30 % de la hauteur ; grotesque noire en capitales (NEWSLETTER espacé, TRENDING vertical, mur en contour) ; grotesque simple pour le texte.",
+    "texture": "Aplats sans dégradé ; quadrillage fin à peine visible sur le crème (net en bleu clair sur le fond bleu), vignettage doux ; trame de nombres gris derrière le slogan ; contours 1 px sur le mur de mots ; ombres portées douces sous cartes et téléphone ; flou de zoom seulement dans la plongée dans le téléphone ; pas de grain visible.",
+    "style": "Éditorial pop, aplats primaires, mascotte",
+    "coherence": "Quatre couleurs et deux familles de caractères tiennent tout : chaque plan prend un fond plein du système et le jaune ne sert qu'à surligner, révéler ou récompenser. La mascotte ouvre, traverse (la route) et ferme la vidéo avec le même anneau au sol, ce qui boucle le récit. Les éléments génériques (puce AI, courbe montante, cible, mur de mots) diluent un peu la personnalité."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "120,0 BPM (netteté 6,61 ; 120,2 / 119,8 / 120,0 BPM mesurés séparément sur 0-8, 6-14 et 12-20 s) : un temps = 0,5 s = 30 im à 60 fps, premier temps à 0,524 s. L'animation est minutée en secondes rondes et demi-secondes, donc chaque départ tombe ≈ 1,4 im avant l'attaque audio. 10 coupes franches, dont 8 sur les temps à moins de 2,6 im (f359, f481, f510, f540, f570, f600, f839, f1080) ; les deux autres (surlignage → colonnes f234, route f955) sont hors grille, la seconde sur un souffle sonore. Plans de 0,48 à 4 s (médiane 2,0 s), avec une rafale de 5 plans de 0,5 s de 8,0 à 10,0 s (un chiffre par temps). Seulement 3 maintiens ≥ 0,4 s (1,82 s, 9 %) : 2,6-2,98 et 3,08-3,48 s, pendant lesquels le sous-titre s'écrit et le kangourou rebondit sur les temps, puis 19,0-19,98 s (écran final). De 2,5 à 18 s il se passe au moins un geste par temps, souvent deux (départ sur le temps, impact 5 à 10 im après). L'ouverture (0-2 s) n'a pas encore de pulsation : elle est rythmée par les sauts toutes les 0,4 s et leurs sons. Flou de mouvement seulement dans la plongée dans le téléphone (13,9 s).",
+    "timeline": [
+      {
+        "t": "0:00.00-0:00.50",
+        "what": "Fond crème quadrillé ; le kangourou entre en haut à gauche sur un arc pointillé bleu",
+        "technique": "trajectoire tracée, boing montant"
+      },
+      {
+        "t": "0:00.52-0:01.75",
+        "what": "Quatre sauts de 0,4 s : à chaque atterrissage une lettre de « Roo's » jaillit, un anneau s'ouvre au sol, une note sonne",
+        "technique": "mascotte qui écrit le logo, lettres en ressort"
+      },
+      {
+        "t": "0:01.75-0:02.20",
+        "what": "Dernier bond vers la droite, la pulsation entre à 2,0 s",
+        "technique": "glissando, entrée de la musique"
+      },
+      {
+        "t": "0:02.17-0:02.52",
+        "what": "« Roo's » rétrécit et monte, « NEWSLETTER » arrive lettre à lettre, filet bleu tracé ; le kangourou se pose au bout",
+        "technique": "lettres posées une à une, soulignement qui finit sur le temps"
+      },
+      {
+        "t": "0:02.52-0:03.85",
+        "what": "Sous-titre « Exploring technology, trends, and mindset shaping what's next. » mot à mot, surlignages jaunes ; le kangourou rebondit sur chaque temps",
+        "technique": "texte au fil des temps, surligneur"
+      },
+      {
+        "t": "0:03.87-0:03.95",
+        "what": "Les surlignages gonflent en trois panneaux puis en colonnes plein cadre",
+        "technique": "le surlignage devient la mise en page (5 im)"
+      },
+      {
+        "t": "0:03.95-0:05.95",
+        "what": "Colonnes TECH (bleu, puce AI), TRENDS (noir, courbe montante), MINDSET (jaune, cible) ; titres serif qui montent",
+        "technique": "triptyque, pictos construits sur les temps"
+      },
+      {
+        "t": "0:05.92-0:06.10",
+        "what": "Les colonnes partent vers le haut en cascade ; carte 01 qui se redresse, « TRENDING » vertical à gauche",
+        "technique": "sortie décalée, arrivée sur le temps"
+      },
+      {
+        "t": "0:06.10-0:07.83",
+        "what": "Pile de quatre cartes d'articles changées à 6,5 / 7,0 / 7,5 s, barre de progression",
+        "technique": "une carte par temps"
+      },
+      {
+        "t": "0:07.83-0:08.02",
+        "what": "Zoom accéléré dans le titre de la carte 04, fond qui vire au lavande puis au bleu",
+        "technique": "zoom traversant + fondu, pic sur le temps"
+      },
+      {
+        "t": "0:08.02-0:10.00",
+        "what": "« 40% » + anneau, « $10 » + étiquette « MIN. », « 8 days » + frise, « 48h » + horloge",
+        "technique": "un chiffre par temps, compteurs en ease-out, coupes franches"
+      },
+      {
+        "t": "0:10.00-0:11.85",
+        "what": "Mur de mots plein / contour qui défile en sens alternés ; flash gris qui retombe au noir ; loupe bleue qui révèle en jaune",
+        "technique": "mur typographique, bascule sur chaque temps"
+      },
+      {
+        "t": "0:11.85-0:12.00",
+        "what": "La loupe gonfle et couvre tout le cadre",
+        "technique": "loupe → iris, coupe sur le temps"
+      },
+      {
+        "t": "0:12.00-0:13.82",
+        "what": "Fond bleu quadrillé : « Straight to your inbox. », libellé décodé, téléphone qui monte ; notification, tap, article",
+        "technique": "flux d'interface étape par temps"
+      },
+      {
+        "t": "0:13.82-0:14.03",
+        "what": "Plongée accélérée dans l'écran du téléphone, flou de zoom, fondu",
+        "technique": "zoom expo-in de 12 im"
+      },
+      {
+        "t": "0:14.03-0:15.90",
+        "what": "« The real numbers » sur un mur de nombres gris, surligneur jaune sur « numbers », « behind what's next. » en bleu ; voix",
+        "technique": "mots montés sur la voix, surligneur"
+      },
+      {
+        "t": "0:15.88-0:15.98",
+        "what": "La scène de la route monte du bas et pousse le slogan, filet bleu en tête",
+        "technique": "poussée verticale sur un souffle"
+      },
+      {
+        "t": "0:15.98-0:17.60",
+        "what": "Le kangourou saute sur place, tapis de cartes qui avance sur chaque temps, « Tech. » « Trends. » « Mindset. » à chaque atterrissage",
+        "technique": "course sur place, mots à l'impact"
+      },
+      {
+        "t": "0:17.60-0:18.00",
+        "what": "Le kangourou bondit vers la caméra et remplit le cadre",
+        "technique": "raccord par le corps, coupe sur le temps"
+      },
+      {
+        "t": "0:18.00-0:18.60",
+        "what": "10 im de vide, puis « Roo's », le kangourou qui atterrit avec l'anneau, « NEWSLETTER », bouton « Subscribe free » ; voix « Roo's Newsletter »",
+        "technique": "rime avec l'ouverture"
+      },
+      {
+        "t": "0:18.47-0:19.30",
+        "what": "Curseur, clic : bouton noir « ✓ Subscribed », couronne de points, « 100% free. Unsubscribe anytime. », « roo.beehiiv.com »",
+        "technique": "micro-interaction de récompense"
+      },
+      {
+        "t": "0:19.30-0:20.05",
+        "what": "Écran final tenu",
+        "technique": "maintien 1 s"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120,0 BPM (netteté 6,61 ; 120,2 / 119,8 / 120,0 BPM sur 0-8, 6-14 et 12-20 s) : temps toutes les 30 im à 60 fps à partir de 0,524 s (f31,4). À 60 fps, ±2 im autour des seuls temps couvrent 17 % des images. Un événement par geste : 29 gestes clés sur 44 à ±2 im d'un temps (attendu ≈ 7,3), tous sur des temps pleins, l'image changeant ≈ 1,4 im avant la barre bleue (l'attaque audio suit de 0,3 à 1,4 im). Calés : kangourou qui rebondit f180 et f210 ; constructions des colonnes f240, f270, f300, f330 ; arrivée de « TRENDING » f361 ; changements de carte f390, f420, f450 (attaques 6,513 / 7,012 / 7,512 s) ; coupes des chiffres f481, f510, f540, f570, f600 ; bascules du mur f630, f660, f690 ; iris f720 ; étapes du téléphone f750, f780, f810 ; « The real » f842 ; pas du tapis de cartes f990, f1020, f1050 ; coupe après le saut f1080. Hors grille mais sur un son : atterrissages de l'ouverture f32, f56, f80, f104 (attaques 0,522 / 0,917 / 1,324 s à ±1 im ; spectrogramme : glissando montant pendant chaque saut, choc + note de plus en plus aiguë à chaque lettre), atterrissages de la route f984 et f1014 (16,405 et 16,904 s), poussée vers la route f955 (souffle à 15,906 s). Libres : gonflement surlignage → colonnes f232 (6 im après le demi-temps), « Straight to » f724 (+2,6 im), « numbers » f860 et surligneur f907 (ils suivent la voix), fin f1090-f1137 (voix puis carillon, musique éteinte après 18,0 s). Indice automatique : départs/temps R = 0,705, p = 2,2e-8 ; 8 coupes sur 10 à 50 ms d'un temps.",
+    "synced": [
+      "coupes",
+      "departs",
+      "atterrissages",
+      "apparitions",
+      "pulsations",
+      "flashs",
+      "texte",
+      "camera"
+    ],
+    "style_match": "Pop électronique synthétique à 120 BPM, nette et joyeuse : colle aux aplats primaires, aux coupes sèches et aux ressorts ; sons de sauts et carillons prolongent la mascotte.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo. Tout est minuté en secondes rondes (multiples de 0,5 s = 30 im) et la piste est à 120,0 BPM pile avec son premier temps à 0,524 s : la synchro vient de cet accord d'unités, sans calcul de grille. La bande-son paraît construite pour l'image (sons purs typiques d'une synthèse en code, probable) : boings et notes montantes calés sur les sauts de l'ouverture, pulsation qui entre à 2,0 s quand le logo se forme, souffle sur la poussée vers la route, glissando montant avant le saut vers la caméra, coup final à 18,0 s, voix de synthèse sur le slogan et le nom, carillon au clic. Pile non précisée ; génération par l'auteur ou par le modèle, probable."
+  },
+  "techniques": [
+    {
+      "cat": "character",
+      "name_fr": "Mascotte qui écrit le logo en sautant",
+      "name_en": "Hopping mascot writes the logo",
+      "t": "0:00.25-0:02.20",
+      "frames": "f15-f132",
+      "fps": 60,
+      "mechanics": "Silhouette noire de kangourou (≈ 12 % de la hauteur) qui entre en haut à gauche et enchaîne 4 sauts de 24 im (0,4 s) : à chaque atterrissage (f32, f56, f80, f104) une lettre de « Roo's » jaillit sous ses pattes (serif ≈ 28 % de la hauteur), un anneau elliptique bleu s'ouvre au sol et un arc pointillé bleu garde la trace du saut. La silhouette est articulée : accroupie au sol, détendue au décollage, à l'horizontale en vol, pattes tendues à l'atterrissage. Dernier bond vers la droite (f120-f130), puis elle se pose, réduite, au bout de « NEWSLETTER ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 20,
+        "to": 110,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettre qui jaillit de la ligne de base en ressort",
+      "name_en": "Spring letter stamp from the baseline",
+      "t": "0:00.52-0:00.77",
+      "frames": "f31-f46",
+      "fps": 60,
+      "mechanics": "Mesure sur le « R » : ancré à la ligne de base (y = 70 %), son sommet passe de 71 % à 53, 42, 35 puis 31 % (f32-f36), redescend à 44 % (f41-f43) et se pose vers 41-42 % : échelle verticale 0 → 1,39 → 0,93 → 1, soit ≈ 39 % de dépassement puis ≈ 7 % de rebond, posé en ≈ 15 im (0,25 s). Ressort (elastic ou back.out) déclenché à l'image même de l'atterrissage et du son.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arcs pointillés et anneau d'impact",
+      "name_en": "Dotted trajectory arcs and landing ring",
+      "t": "0:00.30-0:02.10",
+      "frames": "f18-f126",
+      "fps": 60,
+      "mechanics": "Chaque saut laisse un arc pointillé bleu #223FF2 (points ≈ 0,4 % de la hauteur) qui reste affiché puis s'estompe ; au sol, une ellipse en trait bleu (≈ 8 % de la largeur) s'ouvre à l'atterrissage et s'élargit en s'effaçant (≈ 25 % de la largeur en 15-20 im). Le même anneau revient au dernier atterrissage (18,3 s) : la fin rime avec l'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Boing montant et notes d'atterrissage en arpège",
+      "name_en": "Rising boing and ascending landing chimes",
+      "t": "0:00.20-0:02.05",
+      "frames": "f12-f123",
+      "fps": 60,
+      "mechanics": "Spectrogramme : pendant chaque saut, un glissando montant (≈ 300 → 800 Hz) ; à chaque atterrissage, un choc grave et une note tenue de plus en plus aiguë d'une lettre à l'autre (≈ 900, 1 100, 1 300, 1 750 Hz). Attaques mesurées à 0,522 / 0,917 / 1,324 s pour des atterrissages à f32 / f56 / f80 (±1 im), hors de la grille musicale (période 0,4 s). Long glissando 1,8-2,0 s sur le dernier bond, puis la pulsation entre à 2,0 s. Le son épouse le geste, pas l'inverse.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Capitales posées lettre à lettre et soulignement",
+      "name_en": "Letter-by-letter caps with underline draw",
+      "t": "0:02.15-0:02.52",
+      "frames": "f129-f151",
+      "fps": 60,
+      "mechanics": "« Roo's » rétrécit (≈ ×0,43) et monte en ≈ 12 im (ease-out) pendant que « NEWSLETTER » (grotesque noire en capitales ≈ 8 % de la hauteur, interlettrage ≈ +35 %) arrive lettre par lettre, chacune remontant de ≈ 3 % avec un fondu gris → noir, ≈ 1,2 im d'écart (f132-f144) ; un filet bleu (≈ 0,7 % de la hauteur) se trace de gauche à droite en 6 im (f145-f150) et finit sur le temps (f151).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre mot à mot avec surligneur, mascotte qui bat la mesure",
+      "name_en": "Word-by-word subtitle with highlighter and beat-bobbing mascot",
+      "t": "0:02.52-0:03.85",
+      "frames": "f151-f231",
+      "fps": 60,
+      "mechanics": "« Exploring technology, trends, and mindset shaping what's next. » (grotesque ≈ 3 % de la hauteur) arrive mot à mot, chaque mot gris puis noir ; des surlignages jaunes #FDDE4C se déposent derrière « technology, », « trends, » et « mindset ». Sur chaque temps (f180, f210), le kangourou change de pose (s'accroupit puis se redresse en ≈ 6 im) : la mascotte bat la mesure pendant ce qui serait sinon un temps mort. Les trois mots surlignés préparent la transition suivante.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le surlignage devient les trois colonnes",
+      "name_en": "Highlighter marks inflate into columns",
+      "t": "0:03.87-0:03.95",
+      "frames": "f232-f237",
+      "fps": 60,
+      "mechanics": "Les surlignages jaunes gonflent en grands rectangles (f232-f233), deviennent trois panneaux bleu / noir / jaune encore cernés de crème (f234, ≈ 85 % du cadre), puis plein cadre à f237 : 5 im (0,08 s), croissance rapide qui ralentit (ease-out). Raccord motivé : les trois mots surlignés deviennent les trois rubriques. Seule grande transition hors grille (6 im après le demi-temps).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f234.jpg",
+      "illus": {
+        "from": 228,
+        "to": 240,
+        "n": 6
+      }
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Triptyque Tech / Trends / Mindset",
+      "name_en": "Three-column triptych",
+      "t": "0:03.95-0:05.95",
+      "frames": "f237-f357",
+      "fps": 60,
+      "mechanics": "Trois colonnes égales (≈ 33 % chacune) : bleu #223FF2, noir #13120C, jaune #FDDE4C. En haut, une étiquette en petites capitales espacées (« TECH », « TRENDS », « MINDSET ») ; au centre, un pictogramme ; en bas, le nom en serif ≈ 9 % de la hauteur (blanc, blanc, noir) qui monte d'un masque avec 4-5 im de décalage (f244, f249, f253). Les trois rubriques de la newsletter tiennent en une image.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pictogrammes construits sur les temps",
+      "name_en": "Beat-driven icon builds",
+      "t": "0:04.00-0:05.90",
+      "frames": "f240-f354",
+      "fps": 60,
+      "mechanics": "Puce « AI » dont les pistes de circuit sortent (apparition f247, pistes f270-f300), courbe en zigzag qui monte vers une flèche à pointe jaune (point de départ f240, tracée jusqu'à f300), cible concentrique dont l'anneau pointillé tourne en continu. Sauts de mouvement simultanés dans les trois colonnes à f270, f300 et f330 : chaque temps relance un élément. Bonne mécanique, pictos de banque d'images.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f234.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Colonnes qui sortent vers le haut en cascade",
+      "name_en": "Staggered column exit upward",
+      "t": "0:05.92-0:06.07",
+      "frames": "f355-f364",
+      "fps": 60,
+      "mechanics": "Les colonnes glissent vers le haut l'une après l'autre (bleu f355-f358, noir f357-f360, jaune f359-f362 : ≈ 2 im de décalage, ≈ 4 im chacune, en accélérant) et découvrent le crème ; la carte 01 arrive en fondu, tournée de ≈ −8°, et se redresse en 4 im (f361-f364) pendant que « TRENDING » monte le long du bord gauche en ≈ 3 im. Départ 6 im avant le temps, arrivée sur le temps (f361).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f362.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot vertical géant rogné par le bord",
+      "name_en": "Giant vertical word cropped by the edge",
+      "t": "0:06.02-0:07.95",
+      "frames": "f361-f477",
+      "fps": 60,
+      "mechanics": "« TRENDING » en grotesque noire bleue #223FF2, tourné de 90°, ≈ 92 % de la hauteur, collé au bord gauche (x ≈ 1-9 %) et volontairement rogné : il titre la pile de cartes sans lui disputer le centre.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pile de cartes changée sur chaque temps",
+      "name_en": "Card deck swapped on every beat",
+      "t": "0:06.50-0:07.67",
+      "frames": "f390-f460",
+      "fps": 60,
+      "mechanics": "Quatre cartes d'articles (≈ 56 % de la largeur ; étiquette bleue « AI MODELS », « AI MUSIC », « CREATORS », « MONEY » ; numéro 01-04 ; titre serif sur 2 lignes ≈ 5,5 % de la hauteur ; chapeau gris ; « Read on roo.beehiiv.com → ») posées sur une carte beige décalée qui figure la pile. Sur chaque temps (f390, f420, f450, attaque audio 1 im plus tard) : un segment de la barre de progression se remplit d'un coup, la carte se soulève à peine pendant 5 im (anticipation), disparaît en 1-2 im (f395-f396) et la suivante grossit depuis la pile (≈ 95 → 100 %, f397-f399). 10 im en tout, mais un titre de deux lignes n'a que 0,5 s pour être lu.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom traversant dans le titre de la carte",
+      "name_en": "Zoom-through into the headline",
+      "t": "0:07.83-0:08.10",
+      "frames": "f470-f486",
+      "fps": 60,
+      "mechanics": "Sur la carte 04 (« Affiliate marketing in 2026: how it works, how it pays »), zoom avant qui accélère de façon exponentielle (différence d'une image à l'autre de 5,9 à f470 jusqu'à 60,6 à f481) : le titre devient géant et rogné (« ate marketing i… t works, how it »), le fond vire au lavande #A9B6F9 (fondu enchaîné vers le bleu du plan suivant) et l'anneau du « 40 % » apparaît en transparence. Pic sur le temps (f481) ; départ 4 im après le demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur 40 % et anneau",
+      "name_en": "Percentage counter with donut ring",
+      "t": "0:08.02-0:08.50",
+      "frames": "f481-f510",
+      "fps": 60,
+      "mechanics": "Sur bleu #223FF2 : « 40% » en serif crème ≈ 25 % de la hauteur, qui compte depuis 0 (37 % à f486, 40 % vers f490) pendant que l'arc jaune de l'anneau (piste bleu clair, épaisseur ≈ 3 % de la hauteur) s'allonge d'autant ; légende « Opus 5.5's saving, re-costed ». Tenu ensuite jusqu'à la coupe du temps suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f510.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur $0 → $10 et étiquette qui claque",
+      "name_en": "Dollar counter with price-tag pop",
+      "t": "0:08.50-0:08.70",
+      "frames": "f510-f522",
+      "fps": 60,
+      "mechanics": "Coupe franche sur le temps (f510) vers le crème : « $0 » monte d'un masque puis défile $3, $6, $7, $8, $9, $9, $9, $10 en 8 im (f510-f518) : pas de 3, 3, 1, 1, 1, 0, 0, 1 = ease-out exponentiel. Étiquette de prix bleue « MIN. » tournée de ≈ −15° qui grandit depuis ≈ 30 % (f511) jusqu'à sa taille (f519) en pivotant légèrement. « $10 » ≈ 28 % de la hauteur, légende « the Gumroad Discover rule ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f510.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Frise de 8 jours",
+      "name_en": "8-day ruler with launch dots",
+      "t": "0:09.00-0:09.50",
+      "frames": "f540-f570",
+      "fps": 60,
+      "mechanics": "Sur jaune : « 8 days » en serif noir ≈ 18 % de la hauteur à gauche, règle graduée de 8 jours à droite avec trois points bleus étiquetés Suno, Lyria, ElevenLabs ; le dernier point apparaît f556, sur le demi-temps. Légende « three AI music launches ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f570.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur 48 h couplé à une horloge",
+      "name_en": "Hour counter coupled to a clock sweep",
+      "t": "0:09.50-0:09.72",
+      "frames": "f570-f583",
+      "fps": 60,
+      "mechanics": "Coupe franche sur le temps (f570) vers le noir : le nombre monte d'un masque et compte 01, 16, 27, 34, 39, 42, 44, 45, 46, 47, 47, 47, 48 h en 12 im (pas de 15, 11, 7, 5, 3, 2, 1… = ease-out expo) ; à droite, un cadran blanc dont le secteur bleu #223FF2 balaie 0 → 360° pendant que l'aiguille tourne au même rythme que le compteur. « 48h » ≈ 30 % de la hauteur, légende « Suno v6, free on paid plans ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f570.jpg",
+      "illus": {
+        "from": 569,
+        "to": 584,
+        "n": 6
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Un chiffre par temps",
+      "name_en": "One stat per beat",
+      "t": "0:08.02-0:10.00",
+      "frames": "f481-f600",
+      "fps": 60,
+      "mechanics": "Quatre plans de 30 im exactement (40 %, $10, 8 days, 48h) séparés par des coupes franches sur les temps f481, f510, f540, f570, f600 ; fonds alternés bleu / crème / jaune / noir ; chaque plan construit son chiffre en 8 à 12 im puis tient ≈ 18 im. C'est la grammaire 1600 (un mot par temps), lisible parce qu'il n'y a qu'un chiffre à lire.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f510.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mur de mots plein / contour en défilement alterné",
+      "name_en": "Scrolling word wall, solid and outline",
+      "t": "0:10.00-0:11.85",
+      "frames": "f600-f711",
+      "fps": 60,
+      "mechanics": "Cinq rangées de grotesque noire en capitales (≈ 12 % de la hauteur chacune, plein cadre) : « AI MUSIC • AI MODELS », « CREATOR ECONOMY », « REAL NUMBERS », « MINDSET • TRENDS », « WHAT'S NEXT », alternant texte plein crème et texte en contour 1 px. Elles entrent vite (≈ 30 % de la largeur en 4 im) puis défilent à vitesse constante en sens alternés (différence d'une image à l'autre stable ≈ 20). Les thèmes de la newsletter en une image, mais le mur de mots reste un tic fréquent.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f658.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash clair qui retombe au noir",
+      "name_en": "Light flash decaying to black",
+      "t": "0:10.00-0:10.30",
+      "frames": "f600-f618",
+      "fps": 60,
+      "mechanics": "À la coupe sur le temps (f600), le fond du mur apparaît gris clair (≈ #C9CBCB), passe au gris moyen à f604 puis au noir #13120C vers f618 : un flash d'exposition de 18 im (0,3 s) qui marque l'attaque sans écran blanc.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Loupe qui révèle en jaune puis devient iris",
+      "name_en": "Lens reveal that becomes an iris",
+      "t": "0:10.15-0:12.00",
+      "frames": "f609-f720",
+      "fps": 60,
+      "mechanics": "Disque bleu #223FF2 cerclé de jaune (≈ 27 % de la largeur) qui dérive lentement sur le mur (x ≈ 60 → 80 %, puis 57 %, puis 25 %) ; à l'intérieur, tout le texte passe en jaune #FDDE4C et en plein, même les rangées en contour (calque de couleur masqué par le disque). À f713 il gonfle de façon exponentielle (≈ 25 → 100 % de la largeur en 6 im, f713-f719) et son bleu devient le fond du plan suivant, coupé sur le temps (f720).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f718.jpg",
+      "illus": {
+        "from": 703,
+        "to": 721,
+        "n": 6
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bascule plein / contour sur chaque temps",
+      "name_en": "Fill-outline toggle on every beat",
+      "t": "0:10.50-0:12.00",
+      "frames": "f630-f720",
+      "fps": 60,
+      "mechanics": "Pendant que le mur défile en continu, l'état plein ou contour des rangées change d'un coup sur chaque temps (pics de différence ≈ 40 contre ≈ 20 de fond à f630, f660, f690, f720, soit 1,4 im avant l'attaque audio). Le défilement porte la continuité, la bascule porte la pulsation : un mouvement continu peut quand même battre le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f658.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone : notification, tap, article sur les temps",
+      "name_en": "Phone flow stepped on the beat",
+      "t": "0:12.00-0:13.82",
+      "frames": "f720-f829",
+      "fps": 60,
+      "mechanics": "Sur fond bleu quadrillé, un iPhone crème (≈ 25 % de la largeur, 90 % de la hauteur, à droite) monte du bas en ≈ 10 im en se redressant de ≈ −10° à 0° (ease-out) ; une notification « Roo's Newsletter — New issue just landed » descend en haut de l'écran (f727-f731) ; le courriel s'insère en tête de la boîte (12,5 s), un rond gris de tap le touche (13,0 s), l'article s'ouvre (13,5 s, pastilles bleues et jaunes en en-tête). Chaque étape part sur un temps (f750, f780, f810).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Libellé brouillé qui se décode",
+      "name_en": "Scramble-decode label",
+      "t": "0:12.07-0:13.00",
+      "frames": "f724-f780",
+      "fps": 60,
+      "mechanics": "« Straight to » (crème) puis « your inbox. » (jaune), serif ≈ 10 % de la hauteur, montent d'un masque avec 5 im d'écart (f724, f729) ; dessous, la ligne en petites capitales espacées « EVERY ISSUE. 100% FREE. » s'affiche en caractères aléatoires (« EVERY ISSUEY VVF8 » à 12,5 s) qui se fixent un à un jusqu'au texte final vers 13,0 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée accélérée dans l'écran du téléphone",
+      "name_en": "Accelerating push into the phone screen",
+      "t": "0:13.82-0:14.03",
+      "frames": "f829-f842",
+      "fps": 60,
+      "mechanics": "Le téléphone grossit de plus en plus vite : ≈ 25 % de la largeur à f833, 35 % à f836, 50 % à f837, 70 % à f838, puis seul le titre de l'article remplit le cadre (f839-f840) avec un flou de zoom ; fondu enchaîné sur le crème (f841) et « The real » commence à monter à f842, sur le temps. 12 im, expo-in.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f836.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de nombres en fond",
+      "name_en": "Wall of numbers backdrop",
+      "t": "0:14.03-0:15.90",
+      "frames": "f842-f954",
+      "fps": 60,
+      "mechanics": "Fond crème couvert de nombres de 2-3 chiffres en grotesque grise (≈ 2,6 % de la hauteur, ≈ 25 % d'opacité) en colonnes irrégulières ; de petites variations reviennent toutes les ≈ 10 im (f874, f881, f890, f900 : chiffres qui changent, probable). Le fond illustre « real numbers » sans voler la lecture du slogan.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots montés sur la voix, surligneur derrière le mot clé",
+      "name_en": "Voice-led words with highlighter swipe",
+      "t": "0:14.03-0:15.60",
+      "frames": "f842-f936",
+      "fps": 60,
+      "mechanics": "« The real » (f842-f851) puis « numbers » (f860-f866), serif noir ≈ 18 % de la hauteur, montent d'un masque en ease-out (≈ 10 im) ; une bande jaune #FDDE4C glisse de gauche à droite derrière « numbers » vers 15,1 s (f907-f916, ≈ 9 im), puis « behind what's next. » en grotesque grasse bleue (≈ 7 % de la hauteur) arrive vers 15,4 s. Ces entrées suivent la voix (« numbers » ≈ 15,0 s) plutôt que la grille (+3,6 et +5,4 im après les temps).",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée verticale avec filet d'attaque",
+      "name_en": "Vertical push with a leading accent line",
+      "t": "0:15.87-0:15.98",
+      "frames": "f952-f959",
+      "fps": 60,
+      "mechanics": "La scène de la route monte du bas et pousse le slogan vers le haut ; son bord supérieur est souligné d'un filet bleu. Bord à y ≈ 97 % (f954), 70 % (f955), 28 % (f956), 10 % (f957), 4 % (f958), 2 % (f959) : ease-in-out très court, pointe à ≈ 40 % de la hauteur par image. Le kangourou et les cartes arrivent avec le décor. Coupe f955 sur un souffle sonore (15,906 s), 6 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Course sur place et tapis de cartes",
+      "name_en": "Hop cycle in place over a card conveyor",
+      "t": "0:15.98-0:17.60",
+      "frames": "f959-f1056",
+      "fps": 60,
+      "mechanics": "Fond beige #EBE4D9, ligne pointillée au sol à y ≈ 77 %. Le kangourou (≈ 17 % de la hauteur, x ≈ 25-35 %) saute sur place : décollage ≈ 6 im après chaque temps (f996, f1026), vol ≈ 18 im, atterrissages f984, f1014, f1044 (≈ 7 im avant le temps suivant, sur des sons d'impact à 16,405 et 16,904 s). Les mini-cartes d'articles avancent d'un cran vers la gauche sur chaque temps (f990, f1020, f1050, ease-out ≈ 6 im). « Tech. » (bleu), « Trends. » (noir), « Mindset. » (bleu), serif ≈ 6 % de la hauteur, s'affichent en haut à chaque atterrissage (f982, f1012, f1041).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Saut vers la caméra",
+      "name_en": "Leap into the lens",
+      "t": "0:17.60-0:18.00",
+      "frames": "f1056-f1080",
+      "fps": 60,
+      "mechanics": "Le kangourou bondit vers le spectateur : sa silhouette grossit d'environ ×10 en ≈ 20 im (expo-in) en filant vers le haut à gauche, jusqu'à couvrir ≈ 70 % du cadre (f1079) ; coupe sur le temps (f1080) vers un crème vide. Un glissando montant (≈ 900 → 2 400 Hz, 17,25-18,1 s) prépare le coup final de la musique. Raccord par le corps (body wipe) presque complet.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1080.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Respiration puis retour au logo",
+      "name_en": "Breath, then logo bookend",
+      "t": "0:18.00-0:18.60",
+      "frames": "f1080-f1116",
+      "fps": 60,
+      "mechanics": "10 im de crème vide (f1080-f1089), puis « Roo's » monte (f1090-f1094), le kangourou tombe du haut et se pose à gauche avec le même anneau bleu qu'à l'ouverture (f1097-f1100), « NEWSLETTER » se tape lettre à lettre (f1099-f1112) et le bouton « Subscribe free » grossit depuis une petite pastille (f1108-f1116). La fin rejoue l'ouverture en accéléré : boucle narrative. Structure complète : logo écrit par la mascotte → trois rubriques → articles → quatre preuves chiffrées → mur de thèmes → livraison dans la boîte → slogan → mascotte → logo + CTA.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic d'abonnement : bouton transformé et confettis",
+      "name_en": "Subscribe click: button morph with confetti",
+      "t": "0:18.47-0:19.30",
+      "frames": "f1108-f1158",
+      "fps": 60,
+      "mechanics": "Une flèche de curseur entre en bas à droite (f1108) et glisse jusqu'au bouton bleu (f1124, ease-out), le survole 12 im, clique à f1137 : le bouton devient une pilule noire « ✓ Subscribed » à coche jaune et ≈ 16 points bleus et jaunes jaillissent en couronne autour (f1140-f1150) ; un carillon (≈ 2 100 / 2 650 / 3 150 Hz) sonne ≈ 0,18 s après le clic. Puis « 100% free. Unsubscribe anytime. » et « roo.beehiiv.com » en bleu.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Minutage à la demi-seconde sur une piste à 120 BPM",
+      "name_en": "Half-second timing on a 120 BPM track",
+      "t": "0:02.50-0:18.00",
+      "frames": "f150-f1080",
+      "fps": 60,
+      "mechanics": "Les départs et les coupes tombent à des demi-secondes rondes (f180, f210, f240, f270, f300, f330, f360, f390 … f1080 : multiples de 30 im) ; la piste est à 120,0 BPM, premier temps à 0,524 s, donc chaque demi-seconde est un temps et l'image change 1,4 im avant l'attaque audio. 29 gestes clés sur 44 à ±2 im d'un temps, tous sur des temps pleins. Seuls les atterrissages (sons d'impact), deux transitions et la fin (voix) sortent de la grille. Recette : à 60 fps, 120 BPM = 30 im par temps.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Voix de synthèse sur le slogan et le nom",
+      "name_en": "Synthetic voice on tagline and name",
+      "t": "0:14.00-0:19.00",
+      "frames": "f840-f1140",
+      "fps": 60,
+      "mechanics": "Probable : une voix (empilements d'harmoniques courbes au spectrogramme vers 14,0-14,3, 15,0-15,3 et 18,4-18,9 s ; Whisper transcrit mot pour mot « The real numbers behind what's next. » puis « Roo's Newsletter. ») double le slogan affiché et le nom final. La musique baisse de ≈ 5 dB pendant le slogan (14,5-15,75 s) pour la laisser passer, puis s'éteint après le coup de 18,0 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Primaires sur crème, un fond plein par plan",
+      "name_en": "Primary palette on cream, one solid ground per shot",
+      "t": "0:00.00-0:20.05",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Quatre couleurs : crème #F6F3EC, bleu électrique #223FF2, jaune #FDDE4C, noir chaud #13120C, plus un beige #EBE4D9 pour la route et un lavande #A9B6F9 de passage. Fonds successifs : crème, triptyque, crème, bleu, crème, jaune, noir, noir, bleu, crème, beige, crème. Le jaune ne sert qu'à surligner, révéler (loupe) ou récompenser (coche, confettis).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif à fort contraste + grotesque noire",
+      "name_en": "High-contrast serif with black grotesque",
+      "t": "0:00.00-0:20.05",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Serif didone ou transitionnelle à fort contraste (Playfair ou DM Serif Display probable) pour le logo, les titres, les chiffres (« 40% », « $10 », « 48h ») et les cartes ; grotesque noire en capitales pour « NEWSLETTER » (+35 % d'interlettrage), « TRENDING » (vertical) et le mur (pleins et contours) ; grotesque grasse bleue pour « behind what's next. » ; petites capitales espacées pour les étiquettes. Deux familles aux rôles stricts.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Quadrillage léger",
+      "name_en": "Subtle grid backdrop",
+      "t": "0:00.00-0:20.05",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Quadrillage fin (cellules ≈ 5 % de la largeur) à peine visible sur le crème, net en bleu clair (≈ 15 % d'opacité) sur le fond bleu du téléphone ; vignettage doux aux bords du crème. Une matière de papier millimétré éditoriale, sans bruit ni mouvement.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "« For my newsletter » sans nom ni lien : Claude a retrouvé ou déduit Roo's Newsletter (roo.beehiiv.com, mascotte kangourou du compte @KangarooHere) et de vrais sujets d'articles (Opus 5.5, Suno v6, Gumroad, affiliation), qui donnent des chiffres concrets à animer (40 %, $10, 8 days, 48h)."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Showreel… go all out » sur 20 s a produit une démonstration très dense : personnage animé, data, interface, mur typographique, une dizaine de transitions différentes. La durée courte a empêché les maintiens."
+    },
+    {
+      "kind": "structure",
+      "insight": "Structure en boucle : la mascotte écrit le logo, traverse la vidéo (route) et revient le signer ; entre les deux, rubriques → articles → preuves chiffrées → thèmes → livraison → slogan → CTA. Chaque section fait 2 à 4 s."
+    },
+    {
+      "kind": "build",
+      "insight": "Minutage en multiples de 0,5 s à 60 fps (30 im) : avec une musique à 120 BPM démarrant au bon endroit, les coupes tombent d'office sur les temps. À exiger explicitement dans un prompt : « 120 BPM, une coupe ou un geste par temps de 0,5 s »."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucune consigne de lisibilité : quatre titres d'articles de deux lignes passent en 0,5 s chacun et les légendes font ≈ 1,5 % de la hauteur. Il fallait fixer un temps de lecture minimal par texte."
+    },
+    {
+      "kind": "other",
+      "insight": "Sons d'impact calés sur les atterrissages, voix sur le slogan, carillon au clic : une bande-son pensée avec l'image alors que le prompt n'en dit rien (ajoutée par l'auteur ou générée en code, probable)."
+    }
+  ],
+  "steal": [
+    "Fais écrire le logo par la mascotte : un saut de 0,4 s par lettre, chaque lettre jaillit en ressort (≈ 40 % de dépassement) avec son et anneau.",
+    "Transforme le surlignage des mots clés en mise en page : les trois mots surlignés gonflent en 5 im et deviennent les trois colonnes des rubriques.",
+    "Minute tout en multiples de 0,5 s à 60 fps et choisis une piste à 120 BPM : chaque coupe tombe sur un temps sans calcul.",
+    "Une statistique par temps : compteur en ease-out expo sur 8-12 im couplé à son graphique (anneau, horloge), coupe franche au temps suivant.",
+    "Loupe sur un mur de mots : un disque révèle le texte dans une autre couleur, puis gonfle en iris et devient le fond du plan suivant."
+  ],
+  "flaws": [
+    "Quatre titres d'articles de deux lignes changés toutes les 0,5 s : impossibles à lire, ils ne font que du décor.",
+    "Pictogrammes génériques de vidéo IA : puce « AI » à circuits, courbe qui monte vers une flèche, cible concentrique.",
+    "Mur de mots défilants plein cadre : tic fréquent, sauvé ici par la loupe et la bascule sur le temps.",
+    "Légendes et textes d'interface vers 1,5 % de la hauteur (chapeaux, sous-titres des chiffres) : illisibles sur mobile.",
+    "Atterrissages sans écrasement : la silhouette change de pose mais ne se tasse pas à l'impact, alors que les lettres rebondissent."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "60 fps natif et 29 gestes sur 44 calés au temps : l'ouverture (lettres en ressort sur des sons d'impact), les cartes changées sur chaque temps, les compteurs, la loupe devenue iris et le saut vers la caméra se jouent en 5 à 20 im ; les planches n'en montrent que des fragments."
+  }
+}

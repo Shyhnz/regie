@@ -1,0 +1,585 @@
+{
+  "slug": "lexnlin-038035",
+  "title": "Engraving-style Claude ad",
+  "handle": "@LexnLin",
+  "family": "produit",
+  "craft": 5,
+  "craft_reason": "Direction artistique tenue (gravures, corail, serif sur blanc), morphs de texte à double sens parfaits, coupes calées sur les attaques du son : niveau studio, malgré des rafales trop rapides pour lire les images.",
+  "summary": "Pub verticale de 14,5 s pour Claude. Un point corail traverse une rafale de gravures anciennes et de marbres (Dürer, Vésale, Muybridge, flocons), épouse chaque image puis devient le logo. Quatre jeux de mots morphés portent le message : ask? → task, draft → craft, th/ink, « Keep thinking. ». Force : système graphique total et transitions motivées. Faiblesse : 56 plans, médiane 0,13 s, beaucoup d'images à peine perçues.",
+  "prompt_vs_result": [
+    "Pub rapide de 10 à 15 s pour Claude, nourrie des anciens visuels de la marque, mode clair audacieux, éléments peints sur les photos, morphs parfaits, ni beige ni étiquettes, fin sur le logo, vidéo de référence à étudier.",
+    "Claude a choisi seul le fonds d'images (Dürer, Vésale, Stubbs, Muybridge, flocons de Bentley, marbres), les jeux de mots ask? → task, draft → craft, th/ink, le point corail comme fil rouge et un son calé sur les coupes.",
+    "Prompt très exigeant et précis sur les interdits (pas de slop, pas de beige, pas d'étiquettes) : résultat net. Il ne fixait ni message ni durée minimale de plan, d'où des rafales de 3 à 5 im illisibles."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#FFFFFF",
+        "role": "fond blanc pur, mode clair sans beige"
+      },
+      {
+        "hex": "#141413",
+        "role": "encre noire : texte, anneaux au pinceau, gravures"
+      },
+      {
+        "hex": "#D97757",
+        "role": "corail Claude : astérisque, points, coups de pinceau"
+      },
+      {
+        "hex": "#B85F42",
+        "role": "face d'ombre de l'astérisque extrudé en 3D"
+      },
+      {
+        "hex": "#D0D0D0",
+        "role": "lignes guides grises fines (proportions, réglure)"
+      },
+      {
+        "hex": "#ECECEC",
+        "role": "disque du zootrope et ombre portée douce"
+      },
+      {
+        "hex": "#9A9A9A",
+        "role": "gris moyens des marbres et des gravures désaturées"
+      }
+    ],
+    "type": "Serif éditoriale de la marque (probable Tiempos ou « Copernicus ») : grasse à noire pour ask, task, craft, th/ink (≈ 50-75 % de la largeur), regular pour « Keep thinking. » ; minuscules, interlettrage serré.",
+    "texture": "Hachures de gravure noir et blanc, marbres détourés, anneaux au pinceau sec à bords irréguliers, coups de pinceau corail opaques ; flou de bougé sur les zooms et les entrées de mots ; ombre portée douce sous l'astérisque 3D ; 4 images négatives ; ni grain ni halo.",
+    "style": "Collage de gravures éditorial, mode clair",
+    "coherence": "Trois encres seulement (blanc, noir, corail) posées sur des images toutes désaturées et détourées sur blanc. Le point ou l'astérisque corail est présent dans presque chaque plan, au même centre, et finit en logo. Les tracés noirs (anneau, arc, ellipse, spirale) servent de fil conducteur aux rafales. Le jeu de mots final th/ink (encre) relie le texte au thème de la gravure. Le système tient du premier au dernier plan."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "Pas de tempo stable : 91,7 BPM sur 0-5 s, 107,7 sur 4-10 s, 81,8 sur 8-14,5 s (netteté 3,3 à 4,8) ; les barres bleues des planches (grille à 91 BPM) ne tombent sur rien de systématique. Le montage est calé sur les attaques du son, pas sur une grille. 56 plans en 14,5 s, médiane 0,13 s (8 im à 60 fps), plus court 0,05 s (3 im). Rafales : 4,37-4,92 s (une coupe toutes les 4 à 6 im), 8,28-9,10 s (6 à 7 im), 9,58-9,90 s (3 à 5 im). Respirations sur les mots : « ask/task » ≈ 0,8 s, « draft/craft » ≈ 1 s, « th/ink » ≈ 0,35 s, « Keep thinking. » ≈ 0,9 s : les images vont vite, le texte ralentit, ce qui garde le message lisible. Aucun temps mort avant la fin ; seul maintien : le logo final 13,17-14,45 s (1,3 s), voulu.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.47",
+        "what": "Logo Claude (astérisque corail + mot-symbole serif) centré, puis il rétrécit et s'éloigne avec un flou (f20-f28)",
+        "technique": "ouverture sur le logo, sortie en fuite"
+      },
+      {
+        "t": "0:00.50-0:00.73",
+        "what": "« ? » géant noir dont le point est corail ; le crochet sort par le haut, le point reste et rétrécit",
+        "technique": "le point du « ? » devient le centre de la suite"
+      },
+      {
+        "t": "0:00.73-0:01.30",
+        "what": "Un anneau noir au pinceau se trace autour du point ; 9 images à symétrie radiale défilent dedans (rosace, pissenlit, tournesol, rose, flocon, négatif, ornement, rosace sculptée, homme de Dürer) ; l'astérisque corail change de forme pour chacune",
+        "technique": "carrousel radial en raccord de forme (match cut)"
+      },
+      {
+        "t": "0:01.30-0:01.70",
+        "what": "L'anneau se dévide, figure de proportions de Dürer en entier, point corail au nombril, coups de pinceau corail",
+        "technique": "effacement de tracé (trim path)"
+      },
+      {
+        "t": "0:01.73-0:02.50",
+        "what": "« ask » s'écrit, un « ? » corail s'ajoute, puis le « ? » passe devant le mot et devient « t » : « task » ; gravures (carte céleste, polyèdres) dessous",
+        "technique": "morph par déplacement de glyphe"
+      },
+      {
+        "t": "0:02.50-0:02.80",
+        "what": "« task » au-dessus du dessinateur de Dürer et du rhinocéros, fioritures calligraphiques",
+        "technique": "mot + collage d'images"
+      },
+      {
+        "t": "0:02.80-0:03.12",
+        "what": "Main à la plume qui calligraphie ; un anneau corail se trace autour du mot, la caméra plonge dedans avec flou de bougé",
+        "technique": "plongée dans l'anneau (zoom-through)"
+      },
+      {
+        "t": "0:03.12-0:03.65",
+        "what": "Un grand flocon rétrécit, d'autres arrivent : grille de 3 × 4 flocons, un anneau se trace autour du flocon central",
+        "technique": "dézoom en grille"
+      },
+      {
+        "t": "0:03.65-0:04.37",
+        "what": "Anneau de cavaliers de Muybridge (zootrope) autour du point corail, puis un seul cavalier, puis cheval écorché avec règle graduée",
+        "technique": "anneau zootrope réduit à une image"
+      },
+      {
+        "t": "0:04.37-0:04.92",
+        "what": "Négatif de 2 im, squelette de cheval, écorché de Vésale avec trait corail, bustes de marbre avec lignes guides : un plan toutes les 4 à 6 im",
+        "technique": "rafale anatomique en raccord de position"
+      },
+      {
+        "t": "0:04.92-0:05.93",
+        "what": "Tête quadrillée de Dürer, « draft » entre flou ; le « d » est barré en corail, un petit « c » s'insère : « craft » ; puis poussée jusqu'à déborder du cadre",
+        "technique": "morph par correction de copiste + poussée"
+      },
+      {
+        "t": "0:05.95-0:06.33",
+        "what": "Construction de la lettre A puis C (carré, cercles, traits corail), rayons de construction, astérisque esquissé puis rempli",
+        "technique": "de la construction géométrique au logo"
+      },
+      {
+        "t": "0:06.33-0:07.07",
+        "what": "L'astérisque s'arrondit en sphère 3D corail avec ombre, éclate en astérisque extrudé qui pivote, tourne avec flou et se réduit à un point",
+        "technique": "morph 2D-3D propre"
+      },
+      {
+        "t": "0:07.10-0:08.85",
+        "what": "Mains et visages de marbre détourés : astérisque corail au bout du doigt avec flèche tracée, sur la paume avec soulignement, ellipse autour d'un œil",
+        "technique": "sculptures annotées au pinceau"
+      },
+      {
+        "t": "0:08.85-0:10.55",
+        "what": "Un arc noir fixe, puis une ellipse, puis une spirale d'or, au-dessus d'une rafale d'environ 30 images ; un point corail parcourt le tracé ; la spirale tombe sur une ammonite et un œil",
+        "technique": "tracé fixe sur rafale d'images"
+      },
+      {
+        "t": "0:10.55-0:10.75",
+        "what": "La spirale se rembobine en point, astérisque au trait, flash noir avec étoile corail, petit astérisque",
+        "technique": "flash sur l'attaque la plus forte"
+      },
+      {
+        "t": "0:10.75-0:11.10",
+        "what": "« th » puis « ink » arrivent de la droite avec flou, puis la graisse passe de regular à noir ; le point corail est le point du « i »",
+        "technique": "jeu de mots th/ink + graisse variable"
+      },
+      {
+        "t": "0:11.13-0:12.05",
+        "what": "« Keep thinking. » s'écrit derrière une pointe de pinceau corail, quasi-silence, lente poussée avant",
+        "technique": "écriture au pinceau (write-on)"
+      },
+      {
+        "t": "0:12.07-0:12.93",
+        "what": "Le point final s'étire en tache corail qui pousse des branches jusqu'à l'astérisque Claude",
+        "technique": "le point du mot devient le logo"
+      },
+      {
+        "t": "0:12.93-0:13.17",
+        "what": "L'astérisque tourne avec flou, glisse à gauche, le mot « Claude » se dévoile de gauche à droite, impact tonal",
+        "technique": "verrouillage du logo (lockup)"
+      },
+      {
+        "t": "0:13.17-0:14.45",
+        "what": "Logo tenu, le son s'éteint",
+        "technique": "maintien final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Pas de musique à pulsation régulière mais une bande-son percussive et bruitée (platitude spectrale 0,7 à 0,8, centroïde ≈ 4 kHz : clics, frottements, souffles), tonale seulement à la fin (pics en ré et la vers 13-14 s, carillon du logo). Tempo instable selon la partie (91,7 / 107,7 / 81,8 BPM) : les barres bleues sont inutiles ici. Mesure sur les attaques : l'attaque arrive 20 à 40 ms (1 à 2 im) après la coupe ; à cet écart, 36 coupes sur 55 tombent à ±1 im d'une attaque détectée, contre 30 % au hasard (le score chute à 4-13 % si on décale de 10 ou 60 ms : pic net). Sans décalage, à ±2 im : 37/55 contre 54 % au hasard, car les attaques sont très denses (≈ 9 par seconde). Exemples : coupe sur le « ? » f30 = attaque 0,51 s ; négatif f70 = 1,17 s ; rafale f262-f295 : chaque coupe (4,37, 4,45, 4,53, 4,60, 4,70, 4,77, 4,83, 4,92 s) a son attaque ; astérisque rempli f380 = coup de basse 6,33 s ; sphère f396 = 6,62 s ; flash noir f641 = attaque la plus forte de la piste (10,69 s). Quasi-silence de 11,5 à 12,9 s (≈ -40 dB) pendant l'écriture de « Keep thinking. », puis impact tonal vers 12,9-13,0 s quand l'astérisque tourne en logo (f776-f784). Corrélation basses z = 5,8. Ratés : 10 coupes sur 55 sans attaque proche (f51, f168, f191, f207, f243, f369, f607, f623, f665).",
+    "synced": [
+      "coupes",
+      "flashs",
+      "apparitions",
+      "texte",
+      "impacts",
+      "drop"
+    ],
+    "style_match": "Design sonore sec et texturé (clics, frottements, souffles) sans pulsation fixe : colle aux coupes de 4 à 8 im et au trait gravé ; silence, puis carillon au logo.",
+    "how_built": "Le prompt ne parle pas de son. Absence de tempo stable, spectre bruité et attaque qui suit chaque coupe d'1 à 2 im : la bande-son a probablement été construite sur la liste des coupes (un effet par coupe, généré en code ou monté), avec un carillon en ré sur le logo. Possible aussi : piste de la vidéo de référence sur laquelle Claude a calé ses coupes. Dans les deux cas, image et son sont écrits ensemble, à l'image près."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle logo → logo",
+      "name_en": "logo bookends",
+      "t": "0:00-0:00.47 / 0:12.93-0:14.45",
+      "frames": "f0-f28 / f776-f867",
+      "fps": 60,
+      "mechanics": "Ouverture sur le verrouillage « astérisque + Claude » (≈ 83 % de la largeur, centré) tenu 20 im, puis il rétrécit à ≈ 50 % avec flou et disparaît en 8 im (f20-f28). Fermeture sur le même verrouillage (≈ 76 % de la largeur). Entre les deux, l'astérisque est démonté et reconstruit.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point du « ? » devient le centre",
+      "name_en": "glyph dot carry-over",
+      "t": "0:00.50-0:00.80",
+      "frames": "f30-f48",
+      "fps": 60,
+      "mechanics": "Coupe à f30 (attaque 0,51 s) sur un « ? » serif noir géant dont le point est un disque corail ≈ 18 % de la largeur ; le crochet sort par le haut en ≈ 8 im (f32-f40) tandis que le point reste et rétrécit à ≈ 10 %. À f44, un anneau noir au pinceau commence à se tracer autour (sens anti-horaire depuis le bas à droite, 360° en ≈ 6 im). Le point d'un signe devient le centre d'un système graphique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carrousel radial en raccord de forme",
+      "name_en": "radial match-cut carousel",
+      "t": "0:00.75-0:01.30",
+      "frames": "f45-f78",
+      "fps": 60,
+      "mechanics": "9 images à symétrie radiale, toutes centrées au même point et inscrites dans le même anneau (≈ 87 % de la largeur) : rosace f45-50, pissenlit f51-57, tournesol f58-62, rose f63-65, flocon f66-69, flocon négatif f70-71, ornement pointillé f72-75, rosace sculptée f76-77, homme de Dürer f78. Durées 2 à 7 im (médiane 4 im = 0,067 s). Lisible malgré la vitesse parce que centre, cadre et symétrie ne bougent pas. Coupes sur les attaques 0,93, 1,06, 1,17 et 1,28 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f69.jpg, extra-01.jpg",
+      "illus": {
+        "from": 45,
+        "to": 80,
+        "n": 8
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Astérisque qui épouse chaque image",
+      "name_en": "shape-adaptive logo overlay",
+      "t": "0:00.85-0:01.30",
+      "frames": "f51-f78",
+      "fps": 60,
+      "mechanics": "L'astérisque corail #D97757 posé au centre change de forme à chaque coupe pour rimer avec l'image : 8 rayons fins sur le pissenlit, 6 pétales ronds sur le tournesol, petit tourbillon dans la rose, étoile à 6 branches sur le flocon, 4 lobes et points sur l'ornement, couronne de pétales sur la rosace. Le logo habite chaque image au lieu de s'y coller.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f69.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneau qui se dévide",
+      "name_en": "ring trim-path unwind",
+      "t": "0:01.30-0:01.38",
+      "frames": "f78-f83",
+      "fps": 60,
+      "mechanics": "L'anneau noir s'efface dans le sens horaire depuis le haut en ≈ 5 im (f79 cercle entier, f81 trois quarts, f82 petit arc, f83 rien) et découvre la figure de proportions de Dürer en entier ; le point corail reste au nombril, au centre exact de l'ancien anneau.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f69.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Morph par déplacement de glyphe : ask? → task",
+      "name_en": "glyph-travel text morph",
+      "t": "0:01.73-0:02.47",
+      "frames": "f104-f148",
+      "fps": 60,
+      "mechanics": "« ask » serif grasse noire (≈ 50 % de la largeur, y ≈ 30 %) apparaît à f104 ; un point corail s'ajoute f108 et pousse en « ? » corail f112. Vers f132-f140 le « ? » se réduit en virgule, passe de droite à gauche devant le mot (≈ 45 % de la largeur en ≈ 8 im, trajectoire probable en arc) et se pose avant le « a » sous forme de « t » corail (f144), qui vire au noir (f148) : « task ». La question devient une tâche.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg",
+      "illus": {
+        "from": 104,
+        "to": 150,
+        "n": 6
+      }
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mot en haut, collage d'images en bas",
+      "name_en": "word over image collage",
+      "t": "0:01.93-0:02.80",
+      "frames": "f116-f168",
+      "fps": 60,
+      "mechanics": "Le mot tient le tiers haut (y ≈ 25-30 %) pendant que la moitié basse change toutes les 4 à 8 im : carte céleste avec anneau tracé autour d'un détail, polyèdres sur socle, dessinateur de Dürer, rhinocéros, fioritures calligraphiques en haut. Images petites, plusieurs à la fois, détourées sur blanc.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans l'anneau corail",
+      "name_en": "zoom-through ring",
+      "t": "0:02.83-0:03.12",
+      "frames": "f170-f187",
+      "fps": 60,
+      "mechanics": "Sur une gravure de main à la plume, un anneau corail au pinceau se trace autour du mot calligraphié en ≈ 6 im (f170-f176). Puis poussée avant qui accélère (ease-in) : anneau ≈ 25 % de la largeur à f180, 45 % à f182, 65 % à f183, 120 % à f185 ; fort flou de bougé directionnel sur la main. f186 : un « S » flou géant. Coupe f187 sur un flocon, attaque à 3,13 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f185.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom en grille d'images",
+      "name_en": "pull-out into image grid",
+      "t": "0:03.12-0:03.42",
+      "frames": "f187-f205",
+      "fps": 60,
+      "mechanics": "Un flocon unique ≈ 70 % de la largeur (f187-190, il glisse légèrement) passe à ≈ 25 % pendant que d'autres flocons entrent par les bords (f191) ; à f194 grille de 3 × 4 flocons de Bentley, point corail au centre. f199-f205 : un anneau noir se trace autour du flocon central, précédé d'une pointe corail (le pinceau qui dessine). ≈ 8 im pour la mise en grille, ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f185.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Anneau zootrope de Muybridge",
+      "name_en": "zoetrope ring of motion studies",
+      "t": "0:03.65-0:04.20",
+      "frames": "f219-f251",
+      "fps": 60,
+      "mechanics": "≈ 14 silhouettes de cheval et cavalier de Muybridge disposées en cercle (≈ 100 % de la largeur, coupé aux bords) sur un disque gris pâle #ECECEC, point corail au centre ; puis coupe sur une seule silhouette noire (f247-f251). La décomposition du mouvement sert de transition vers la suite anatomique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-003-cut-f262.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rafale anatomique en raccord de position",
+      "name_en": "anatomical match-cut burst",
+      "t": "0:04.12-0:04.70",
+      "frames": "f247-f282",
+      "fps": 60,
+      "mechanics": "Silhouette de cheval f247-251, cheval écorché de Stubbs f252-258 (une règle graduée se trace dessous de gauche à droite en ≈ 6 im), squelette f259-266 (point corail sur les côtes, petit cercle noir sur le sabot), écorché de Vésale f267-271, buste féminin f272-275, buste masculin f276-281, autre buste f282. Plans de 4 à 7 im, sujet centré à taille comparable : on lit une dissection, du cheval à l'homme. Chaque coupe tombe sur une attaque.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f262.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Images négatives sur les attaques fortes",
+      "name_en": "inverted flash frames",
+      "t": "0:01.17 / 0:04.37 / 0:09.10 / 0:10.68",
+      "frames": "f70-71, f262-263, f546-547, f641-642",
+      "fps": 60,
+      "mechanics": "4 fois, 2 images en négatif (fond noir, gravure blanche, corail conservé) : flocon f70-71 (attaque 1,17 s), squelette f262-263 (4,37 s), trait f546-547 (9,11 s), étoile corail sur noir f641-642 (attaque la plus forte, 10,69 s). Seuls instants sombres de la vidéo : accent percussif clair. Rare, donc efficace, mais agressif pour l'œil.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f69.jpg, microM-003-cut-f262.jpg, microM-004-cut-f546.jpg, microM-006-cut-f643.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Coups de pinceau corail peints sur les images",
+      "name_en": "painted brush-stroke annotations",
+      "t": "0:01.40-0:08.85",
+      "frames": "f84-f531",
+      "fps": 60,
+      "mechanics": "Traits corail opaques à bout arrondi (≈ 1,5-2 % de la largeur d'épaisseur) qui se tracent en 3 à 5 im : sur le bras de Dürer, sur le bras levé de Vésale où le trait se prolonge en fine ligne noire comme une baguette (f267-f271), sur le haut d'un buste (f272-f275), en arc autour d'un œil (f277-f281). Ils guident l'œil vers un détail et relient les plans entre eux.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f262.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneaux et ellipses au pinceau sec",
+      "name_en": "dry-brush hand-drawn circles",
+      "t": "0:00.73-0:08.50",
+      "frames": "f44-f510",
+      "fps": 60,
+      "mechanics": "Motif récurrent : un anneau noir à bords irréguliers (texture de pinceau sec) se trace en 5 à 7 im autour d'un détail : centre du carrousel, détail de carte céleste (f124), sabot du squelette (f259), flocon central (f199-f205, pointe corail en tête), œil d'un buste (f282), œil de la Vierge voilée (f510). Annotation de professeur qui dit où regarder.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f185.jpg, microM-003-cut-f262.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Lignes guides de proportion",
+      "name_en": "proportion guide lines",
+      "t": "0:04.53-0:05.93",
+      "frames": "f272-f356",
+      "fps": 60,
+      "mechanics": "Fines lignes horizontales grises #D0D0D0 (≈ 1 px) qui glissent en travers des bustes (f274-f282) puis restent comme une réglure de cahier derrière « draft / craft » : écho direct à la tête quadrillée de Dürer (f290-f300). Elles bougent de quelques % pendant le plan.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f262.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Correction de copiste : draft → craft",
+      "name_en": "proofreading-mark text morph",
+      "t": "0:05.07-0:05.73",
+      "frames": "f304-f344",
+      "fps": 60,
+      "mechanics": "« draft » serif grasse (≈ 70 % de la largeur) entre avec un flou horizontal (f304), net à f308 ; un trait corail barre le « d » (f312-f324) pendant qu'un petit « c » manuscrit apparaît au-dessus à gauche (f320, signe d'insertion) ; à f328 le « d » a disparu (« raft » + point corail), à f332 le « c » est descendu à sa place en corail, à f336 il vire au noir : « craft ». ≈ 32 im (0,53 s). Le brouillon devient du savoir-faire.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 300,
+        "to": 344,
+        "n": 8
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée sur le mot jusqu'au débordement",
+      "name_en": "push-in to overflow cut",
+      "t": "0:05.80-0:05.95",
+      "frames": "f348-f357",
+      "fps": 60,
+      "mechanics": "« craft » passe de ≈ 75 % à ≈ 110 % de la largeur en ≈ 9 im (ease-in), flou de bougé croissant, bords du mot coupés à f356 ; coupe à f357 sur l'attaque de 5,96 s. Le débordement sert d'élan à la coupe, il ne reste pas à l'écran.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "De la construction de lettre à l'astérisque",
+      "name_en": "construction-to-logo build",
+      "t": "0:05.95-0:06.33",
+      "frames": "f357-f380",
+      "fps": 60,
+      "mechanics": "Construction de capitale romaine façon Pacioli : A dans un carré avec cercles et diagonales corail (f360), C avec flèche (f364-f368), puis seuls les rayons de construction (f372), astérisque esquissé en contour (f376), astérisque corail plein à 12 branches (f380, sur le coup de basse de 6,33 s). Plans de 4 à 5 im : géométrie → esquisse → logo en 0,33 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Morph astérisque ↔ sphère 3D",
+      "name_en": "2D-to-3D logo morph",
+      "t": "0:06.40-0:07.07",
+      "frames": "f384-f424",
+      "fps": 60,
+      "mechanics": "L'astérisque tourne et rétrécit (f384-f392), s'arrondit en sphère corail ombrée (≈ 10 % de la largeur) avec ombre portée elliptique douce (f396, attaque 6,62 s), éclate en astérisque extrudé (faces latérales #B85F42) qui bascule en 3D (f400-f412), se met de face (f416), tourne avec flou rotatif (f420) puis se réduit à un point (f424). ≈ 40 im. Un seul moment 3D, propre, au service du logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Marbres détourés annotés",
+      "name_en": "annotated marble cut-outs",
+      "t": "0:07.10-0:08.85",
+      "frames": "f426-f531",
+      "fps": 60,
+      "mechanics": "Mains et visages de marbre en noir et blanc détourés sur blanc, cadrés serré et souvent coupés par le bord : astérisque corail au bout du doigt avec une flèche noire courbe qui se trace jusqu'à lui (f428-f432), astérisque sur la paume avec soulignement (≈ 8,0 s), ellipse autour de l'œil de la Vierge voilée avec point corail sur un arc (≈ 8,5 s). Plans de 6 à 12 im, coupes sur les attaques (7,23 à 8,85 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé fixe et point voyageur sur rafale d'images",
+      "name_en": "persistent path over rapid-fire cuts",
+      "t": "0:08.85-0:10.62",
+      "frames": "f531-f638",
+      "fps": 60,
+      "mechanics": "Un arc noir (trait ≈ 0,6 % de la largeur) reste fixe pendant que les images changent dessous toutes les 3 à 7 im (≈ 30 images : polyèdre filaire, Vésale, plante, rhinocéros, visages fendus, pyramide torsadée, labyrinthe, astrolabe, carte céleste, fleur, crâne, mains, flocon, lettre A, buste, cavalier…). Un point corail glisse le long du tracé. L'arc se referme en anneau, puis en ellipse, puis en spirale d'or (f628) qui tombe sur un œil et une ammonite (raccord de forme), enfin la spirale se rembobine jusqu'au point (f633-f638).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f546.jpg, microM-005-cut-f591.jpg, microM-006-cut-f643.jpg",
+      "illus": {
+        "from": 576,
+        "to": 638,
+        "n": 8
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Contraste rafales d'images / respirations sur les mots",
+      "name_en": "burst-and-breathe pacing",
+      "t": "0:00-0:14.45",
+      "frames": "f0-f867",
+      "fps": 60,
+      "mechanics": "Images : plans de 3 à 8 im (0,05 à 0,13 s), jusqu'à 12 coupes par seconde (4,37-4,92 s). Mots : 0,35 à 1 s chacun (ask/task ≈ 0,8 s, draft/craft ≈ 1 s, Keep thinking ≈ 0,9 s). Le cerveau lit les mots, il sent seulement les images : la vitesse reste supportable parce que le texte ralentit.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point → astérisque au trait → étoile sur flash",
+      "name_en": "dot-to-star flash beat",
+      "t": "0:10.62-0:10.75",
+      "frames": "f637-f644",
+      "fps": 60,
+      "mechanics": "Point seul (f638), astérisque à 8 traits fins qui grandit de ≈ 25 % à 50 % de la largeur (f639-f640), 2 im noires avec étoile corail pleine à 6 branches (f641-f642, attaque la plus forte de la piste à 10,69 s), petit astérisque à pétales ronds (f643) qui rétrécit (f644). Trois états du logo en 7 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f643.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Jeu de mots th/ink et graisse variable",
+      "name_en": "split word + variable weight ramp",
+      "t": "0:10.75-0:11.10",
+      "frames": "f645-f666",
+      "fps": 60,
+      "mechanics": "« th » arrive de la droite avec flou horizontal (f645, net à f646), « ink » suit 3 im plus tard sur la ligne du dessous (f648), serif regular calé à droite, débordant du cadre. f657-f663 : la graisse passe de regular à noir en ≈ 6 im sans changer la taille, le point corail (le point du « i ») grossit avec la graisse. « think » se lit aussi « ink » : l'encre de la gravure.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f643.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan écrit par la pointe du pinceau",
+      "name_en": "brush-tip write-on",
+      "t": "0:11.13-0:12.05",
+      "frames": "f668-f723",
+      "fps": 60,
+      "mechanics": "Un point corail (f668) devient la pointe d'un pinceau qui avance et laisse les lettres derrière lui : « Ke » f672, « Keep » f676, « thi » f680, « thinkin » f684, « thinking. » f688, point final corail. ≈ 1,5 im par lettre, serif regular ≈ 72 % de la largeur. Puis poussée lente ×1 → ×1,25 sur ≈ 0,4 s. Écrit dans un quasi-silence.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point final devient le logo",
+      "name_en": "period-to-logo morph",
+      "t": "0:12.07-0:12.93",
+      "frames": "f724-f776",
+      "fps": 60,
+      "mechanics": "Le texte rétrécit et s'efface pendant que le point corail de « thinking. » s'étire en trait (f724), reste seul en tache (f728) puis pousse des branches une à une comme une goutte d'encre qui s'étale (f732-f744), jusqu'à un astérisque organique à 10-12 branches (f748-f752) qui se pose avec une légère rotation (f756-f776). ≈ 50 im. Le point du mot devient le graphique.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 720,
+        "to": 796,
+        "n": 8
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Verrouillage du logo par rotation et dévoilement",
+      "name_en": "spin-and-reveal logo lockup",
+      "t": "0:12.93-0:13.20",
+      "frames": "f776-f792",
+      "fps": 60,
+      "mechanics": "L'astérisque tourne vite avec flou rotatif et glisse vers la gauche en rétrécissant à ≈ 15 % de la largeur (f776-f784) ; le mot « Claude » se dévoile de gauche à droite derrière un masque (« Cla » f784, « Clauc » f788, « Claude » f792), ≈ 10 im. Impact tonal vers 12,9-13,0 s. Puis maintien 1,3 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes calées sur les attaques d'un design sonore",
+      "name_en": "cuts locked to sound-design transients",
+      "t": "0:00.50-0:11.08",
+      "frames": "f30-f665",
+      "fps": 60,
+      "mechanics": "Pas de grille de tempo : chaque coupe porte sa propre attaque (clic, frottement, souffle), qui arrive 1 à 2 im après l'image. 36 coupes sur 55 à ±1 im d'une attaque à cet écart (hasard 30 %). Rafale f262-f295 : 8 coupes, 8 attaques. Les événements hors coupe suivent aussi : astérisque rempli f380 (6,33 s), sphère f396 (6,62 s), flash noir f641 (10,69 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f262.jpg, microM-006-cut-f643.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant l'impact du logo",
+      "name_en": "silence before the logo hit",
+      "t": "0:11.50-0:13.00",
+      "frames": "f690-f780",
+      "fps": 60,
+      "mechanics": "Le niveau tombe à ≈ -40 dB de 11,5 à 12,9 s pendant que « Keep thinking. » s'écrit et que le point devient astérisque, puis remonte à ≈ -15 dB d'un coup vers 12,9-13,0 s avec un son tonal (pics en ré et la) quand l'astérisque tourne en logo ; extinction jusqu'à 14,5 s. Le seul passage calme rend le slogan lisible et donne du poids au logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Fonds d'archives du domaine public désaturé",
+      "name_en": "public-domain engraving library",
+      "t": "0:00.75-0:10.62",
+      "frames": "f45-f638",
+      "fps": 60,
+      "mechanics": "Plus de 60 images : proportions de Dürer, rhinocéros de Dürer, écorchés de Vésale, cheval de Stubbs, Muybridge, flocons de Bentley, polyèdres, cartes célestes, calligraphies, constructions de lettres, marbres. Toutes en noir et blanc, détourées sur blanc pur, sans cadre. Thème cohérent : la connaissance et le geste de l'artisan, en écho à « craft » et « think ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "« Reference video attached » et « Study Claude's earlier brand designs first » : la vidéo reprend l'astérisque corail, la serif et le mode clair de la marque ; la référence a probablement dicté les durées de plan très courtes et le vocabulaire (images petites, plusieurs à la fois, zooms)."
+    },
+    {
+      "kind": "banned",
+      "insight": "« no beige artsy look, no eyebrow labels » : le thème gravure aurait naturellement tiré vers le sépia ; l'interdit a donné un blanc pur #FFFFFF et zéro petite étiquette en capitales. Les interdits explicites ont été respectés à la lettre."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Paint elements on top of the images » a produit un vrai langage d'annotation (coups de pinceau corail, anneaux au pinceau sec, flèches, ellipses, lignes guides) présent dans presque chaque plan."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Morphing text » + « Every morph has to be perfect » : Claude a choisi des morphs qui racontent quelque chose (ask? → task, draft → craft, th/ink, point → logo) plutôt que des fondus entre mots."
+    },
+    {
+      "kind": "direction",
+      "insight": "Les idées listées (SVG Claude variés, images petites puis grandes, 3D propre, zooms) se retrouvent chacune, mais dosées : un seul moment 3D de 0,7 s, deux zooms motivés."
+    },
+    {
+      "kind": "build",
+      "insight": "« Feel free to work 10+ hours » : session longue qui explique la recherche d'images du domaine public, leur détourage et la quantité de plans (56)."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le prompt ne fixe aucune durée minimale de plan ni règle de lisibilité : avec « fast-paced » répété, Claude descend à 3 à 5 im par image, trop vite pour identifier la plupart des gravures."
+    },
+    {
+      "kind": "structure",
+      "insight": "« ending on the Claude logo » : Claude ouvre aussi sur le logo, ce qui crée une boucle ; le message reste implicite (penser, artisanat) faute de message imposé."
+    }
+  ],
+  "steal": [
+    "Un point de couleur unique comme fil rouge : il traverse toutes les coupes, épouse chaque image, puis devient le logo final.",
+    "Morph de texte qui raconte : déplacer un glyphe (le « ? » devient « t ») ou corriger comme un copiste (barrer « d », insérer « c »).",
+    "Rafale d'images à symétrie radiale centrées sur le même point, dans le même anneau : des plans de 4 im restent lisibles.",
+    "Tracé fixe (arc, ellipse, spirale) au-dessus d'une rafale d'images avec un point qui le parcourt : continuité malgré 30 coupes.",
+    "Couper le son 1,4 s pendant l'écriture du slogan, puis un impact tonal quand le symbole se pose en logo."
+  ],
+  "flaws": [
+    "Rafales à 3-5 im (0,05-0,08 s) : la plupart des gravures sont impossibles à identifier, seul l'effet de masse reste.",
+    "Quatre images négatives de 2 im : accent efficace mais agressif, à manier avec prudence (photosensibilité).",
+    "Anneau de Muybridge, marbres et « th/ink » coupés par les bords du cadre.",
+    "Message implicite : on retient « penser, savoir-faire », pas ce que fait Claude."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, image par image à 60 fps natifs : quatre morphs de texte à double sens, des raccords de forme radiaux, un tracé persistant sur rafale et un point qui devient logo, tous calés sur les attaques du son. C'est un catalogue de transitions motivées que l'utilisateur aime, reproductible en SVG et GSAP."
+  }
+}

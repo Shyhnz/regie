@@ -1,0 +1,356 @@
+{
+  "slug": "rneayan-ea6129",
+  "title": "Oscilloscope-style studio motion graphic",
+  "handle": "@rneayan",
+  "family": "formes",
+  "craft": 4,
+  "craft_reason": "Système oscilloscope cohérent de bout en bout, métaphore signal chaos → ordre et timeline écrite en temps (110 BPM) ; lisibilité entamée par les rémanences de texte superposées et un défilement trop rapide.",
+  "summary": "Film de présentation de 40 s pour Airship Studio (비행선 스튜디오), en coréen, entièrement sur un écran d'oscilloscope vert phosphore. Le signal raconte le propos : enchevêtrement de Lissajous pour la complexité, sinusoïde unique pour le pipeline, impulsions 1-2-3 pour l'ordre, faisceau qui dessine le dirigeable « de l'idée à la finition ». Chaque changement tombe sur un temps ou un demi-temps.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : un motion graphic sur « mon studio » en style oscilloscope. Ni durée, ni langue, ni texte, ni musique, ni couleur imposés.",
+    "Claude a tout décidé : texte coréen et faits du studio (10 ans, depuis 2016, pub, personnage, webtoon, probablement tirés du contexte), vert phosphore, métaphore chaos → ordre, dirigeable tracé au faisceau, musique à 110 BPM affichée dans le HUD.",
+    "« Oscilloscope style » a suffi à générer un système visuel complet et cohérent. Il aurait fallu préciser le temps de lecture par mot, interdire les textes fantômes superposés et demander une accroche plus rapide que 2 s d'écran plat."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#030805", "role": "fond noir-vert de l'écran"},
+      {"hex": "#0B2214", "role": "graticule (grille 10 × 8) très faible"},
+      {"hex": "#6CFFB0", "role": "cœur des tracés et du faisceau (vert menthe)"},
+      {"hex": "#2ECC71", "role": "halo (glow) des tracés et contours de texte"},
+      {"hex": "#1C5A35", "role": "rémanence : texte et tracés fantômes"},
+      {"hex": "#2C9A5A", "role": "HUD mono (en-tête, libellés, timecode)"},
+      {"hex": "#DFFFEF", "role": "tête de faisceau, pics lumineux"},
+      {"hex": "#9AA79F", "role": "voile gris-blanc des flashs phosphore"}
+    ],
+    "type": "Gothique coréenne grasse (Pretendard ou Noto Sans KR probable) en contour seul lumineux, ≈ 10-13 % H ; chiffre « 10 » en contour ≈ 40 % H ; HUD mono minuscule ≈ 1,5 % H ; « AIRSHIP STUDIO » capitales espacées.",
+    "texture": "Halo (bloom) sur tous les tracés, rémanence phosphore (texte et courbes précédents restent en fantôme 0,3 s), tracé du bas fait de plusieurs lignes bruitées superposées, vignettage, flash de surexposition grise sur les accents. Pas de flou de mouvement.",
+    "style": "Oscilloscope vert phosphore vectoriel",
+    "coherence": "Tout est signal : texte en contour (comme dessiné au faisceau), icône Lissajous, sinusoïdes, impulsions, signal carré, radar, dirigeable tracé au faisceau, HUD d'instrument (« CH1 2.0V/div 110BPM T+07.43s »). Une seule couleur, des intensités pour la hiérarchie. Ce qui casse : les rémanences de texte superposées rendent certains mots illisibles (« 사운드 » sur « 수정 »), et le texte en contour lumineux fatigue sur 40 s."
+  },
+  "rhythm": {
+    "bpm": 110,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "110 BPM (1 temps = 16,36 im à 30 fps = 0,545 s ; demi-temps 8,18 im), pulsation très nette (9,9), et le HUD affiche lui-même « 110BPM ». Les 5 « coupes » détectées sont des flashs phosphore (f269, f490, f589, f818, f1014), 4 tombent 1 im avant un temps, 1 sur un demi-temps. Structure en trois vitesses : prologue lent (0-6,5 s, un mot tous les ≈ 2 temps, écran plat 2,1 s au début), rafale au demi-temps (6,5-9 s, 10 étapes à 8 im chacune), puis une phrase toutes les 2 à 4 mesures avec une figure de signal par phrase. Le tracé du bas bat sur chaque grosse caisse sans interruption, donc il n'y a presque jamais d'image vraiment immobile après 6,5 s. Temps morts : 0-2,13 s (écran plat), 18,03-19,57 s (impulsions lentes), 36,0-38,53 s (carte de fin) ; 30 % de maintiens au total.",
+    "timeline": [
+      {"t": "0:00-0:02.1", "what": "Écran noir-vert, graticule, ligne de base plate, HUD dont le timecode défile ; quasi immobile", "technique": "ouverture sur instrument au repos"},
+      {"t": "0:01.1-0:06.5", "what": "Prologue « AI가 / 장면을 / 만듭니다. / 그런데 / 영상 한 편은? » (L'IA fait des scènes. Mais une vidéo entière ?), un groupe tous les ≈ 2 temps, l'ancien reste en fantôme", "technique": "remplacement de mots avec rémanence"},
+      {"t": "0:06.5-0:06.6", "what": "Le beat entre : gros sinus sur le tracé du bas, icône Lissajous en haut à droite, libellé « PROCESS »", "technique": "entrée du beat = réveil du signal"},
+      {"t": "0:06.6-0:09.0", "what": "10 étapes de production (기획 planification … 납품 livraison), une par demi-temps (8 im), compteur « STEP xx/10 », Lissajous qui change à chaque étape", "technique": "rafale de mots au demi-temps"},
+      {"t": "0:08.97-0:09.5", "what": "Flash phosphore, anneau-tampon autour de « 검수 » (validation) puis ondes concentriques ; « 납품 » s'affiche", "technique": "flash + ondes de choc"},
+      {"t": "0:10.93-0:13.1", "what": "« 복잡한 과정을 » (le processus complexe) : explosion d'un enchevêtrement de courbes de Lissajous derrière le texte", "technique": "chaos de Lissajous"},
+      {"t": "0:13.1-0:15.3", "what": "« 하나의 파이프라인으로. » (en un seul pipeline) : une sinusoïde nette à nœuds se trace de gauche à droite pendant que le texte se tape", "technique": "résolution chaos → sinusoïde"},
+      {"t": "0:15.3-0:16.4", "what": "« AI와 제작 기술을 » (l'IA et le savoir-faire) : deux faisceaux de sinusoïdes entrelacés", "technique": "deux signaux entrelacés"},
+      {"t": "0:16.4-0:17.5", "what": "Flash, « 맞는 곳에. » (au bon endroit) : les deux ondes fusionnent en une", "technique": "fusion de signaux"},
+      {"t": "0:17.5-0:19.6", "what": "« 맞는 순서로. » (dans le bon ordre) : ligne plate, impulsions 1, 2, 3 sur trois temps successifs", "technique": "impulsions numérotées sur le temps"},
+      {"t": "0:19.6-0:21.9", "what": "Flash, « 10 » géant en contour tracé + « 년차 감독이 » (un réalisateur de 10 ans de métier)", "technique": "chiffre géant en contour"},
+      {"t": "0:21.9-0:24.0", "what": "Cadran radar à balayage, « 직접 컨트롤합니다. » (pilote tout lui-même)", "technique": "balayage radar"},
+      {"t": "0:24.0-0:27.27", "what": "« 2016년부터. » (depuis 2016) puis frise 2016-2026 en signal carré : 광고 (pub), 캐릭터 (personnage), 웹툰 영상화 (adaptation de webtoon) ; « 실제 납품작으로 »", "technique": "frise en signal carré"},
+      {"t": "0:27.27-0:28.3", "what": "Flash, « 증명합니다. » (prouvé par de vraies livraisons)", "technique": "flash de ponctuation"},
+      {"t": "0:28.3-0:32.0", "what": "Un faisceau à tête brillante dessine le dirigeable ; texte « 아이디어부터 » (dès l'idée) puis « 완성까지. » (jusqu'à la finition), puis « 비행선 스튜디오는 »", "technique": "dessin au faisceau"},
+      {"t": "0:32.0-0:33.8", "what": "« 여러분과 함께 항해합니다. » (navigue avec vous) ; maintien", "technique": "maintien"},
+      {"t": "0:33.8-0:35.5", "what": "Flash, le dirigeable fait demi-tour (miroir) ; « 비행선 스튜디오 » puis « AIRSHIP STUDIO » en capitales espacées", "technique": "retournement + carte de fin bilingue"},
+      {"t": "0:35.5-0:39.6", "what": "Maintien de la carte de fin, tracé du bas qui s'apaise, fondu au noir 38,6-39,4 s", "technique": "fondu au noir"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 110 BPM (temps tous les 16,36 im, départ 0,569 s), confirmée par l'image. Sur 23 gestes clés vérifiés image par image, 22 tombent à ±2 im d'une barre (hasard ≈ 61 % pour temps + demi-temps) et 18 tombent sur le temps plein (hasard ≈ 31 %). Détail : les 10 étapes changent toutes les 8 im exactement (f198 temps, f206 demi, f214 temps, f222 demi, f230 temps, f238 demi… f263 temps, f271 demi) ; les grandes figures démarrent sur le temps (enchevêtrement f327-f328 / temps f328 ; sinusoïde f392-f393 / f393,5 ; double onde f458-f459 / f458,9) ; impulsions 1-2-3 à f540, f556, f572 (temps f540,8 / f557,1 / f573,5) ; flashs f490, f589, f818, f1014 = 1 im avant les temps f491,7 / f589,8 / f819 / f1015,3 ; « 비행선 스튜디오는 » f918 (f917,1). Le seul raté : « 완성까지. » f888 (temps f884,4). Le tracé du bas gonfle en gros sinus 0-2 im avant chaque temps (f196, f212, f228, f867, f882, f900, f915, f933, f948), comme s'il lisait la grosse caisse. Mesures du dossier : départs/temps R = 0,676, p = 1,6e-06 ; corrélation aux attaques z = 3,55 ; intensité musicale ↔ mouvement r = 0,41. Le « drop » à 39,57 s est la fin du fichier.",
+    "synced": ["coupes", "departs", "apparitions", "pulsations", "flashs", "texte"],
+    "style_match": "Électro enjouée à 110 BPM, grosse caisse nette : le tracé qui bat sur le kick et les flashs phosphore traduisent la musique en signal, exactement le sujet visuel. Accord fort.",
+    "how_built": "Le prompt ne parle pas de musique : Claude a fixé une constante de tempo (affichée dans le HUD « 110BPM ») et écrit la timeline en temps et demi-temps. La bande-son est très probablement synthétisée en code au même tempo (intro calme, beat qui entre à 6,5 s), et le tracé du bas est piloté par une fonction de temps ou par l'enveloppe audio. C'est la recette : une seule horloge musicale pour l'image et le son."
+  },
+  "techniques": [
+    {
+      "cat": "texture",
+      "name_fr": "Écran d'oscilloscope phosphore : halo, rémanence, graticule",
+      "name_en": "Phosphor CRT scope look",
+      "t": "0:00-0:39.6",
+      "frames": "f0-f1186",
+      "fps": 30,
+      "mechanics": "Fond #030805, graticule 10 × 8 divisions à très faible contraste, tous les tracés en vert menthe avec halo large (≈ 3-4 fois l'épaisseur du trait), traces précédentes qui persistent en fantôme et décroissent sur ≈ 8-10 im, vignettage léger. Le tracé du bas est fait de 4 à 6 lignes bruitées superposées qui donnent la texture « signal vivant ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "HUD d'instrument diégétique avec timecode et BPM",
+      "name_en": "Diegetic instrument HUD",
+      "t": "0:00-0:39.6",
+      "frames": "f0-f1186",
+      "fps": 30,
+      "mechanics": "En haut à gauche « AIRSHIP STUDIO // SCOPE » (+ « STEP xx/10 » pendant le process), en haut à droite le nom de la section (PROLOGUE, PROCESS, COMPLEXITY, PIPELINE, AI × CRAFT, ORDER, DIRECTOR, SINCE 2016, VOYAGE, AIRSHIP STUDIO), en bas à gauche « CH1 2.0V/div 110BPM T+xx.xxs » dont le timecode défile. Mono ≈ 1,5 % H, vert #2C9A5A. Ancre la métaphore d'instrument et sert de chapitrage.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Texte coréen en contour lumineux seul",
+      "name_en": "Glowing outline-only type",
+      "t": "0:01.1-0:35.5",
+      "frames": "f33-f1065",
+      "fps": 30,
+      "mechanics": "Gothique grasse dessinée en contour seul (aucun remplissage), trait ≈ 0,3 % H avec halo vert ; phrases centrées ≈ 10-13 % H, placées en haut quand un graphique occupe le centre. Imite un texte tracé au faisceau vectoriel. Lisible en gros corps, fatigant en phrase longue.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Remplacement de texte avec rémanence phosphore",
+      "name_en": "Phosphor-persistence text swap",
+      "t": "0:16.40-0:16.73",
+      "frames": "f492-f501",
+      "fps": 30,
+      "mechanics": "Au changement, l'ancien texte tombe d'un coup à ≈ 40 % d'opacité puis décroît (≈ 20 % à +4 im, ≈ 8 % à +7 im, disparu à +9 im = 0,3 s), courbe exponentielle ; le nouveau se tape par-dessus. Pendant ≈ 4-6 im les deux textes se superposent. Effet très « écran cathodique », mais des mots se mélangent (« 사운드 » / « 수정 », « 합성 » sur « 애니메이션 »).",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f492.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe glyphe par glyphe, une syllabe par image",
+      "name_en": "One-glyph-per-frame type-on",
+      "t": "0:13.10-0:13.43",
+      "frames": "f393-f402",
+      "fps": 30,
+      "mechanics": "Chaque syllabe coréenne apparaît entière et pleine intensité, une par image : « 하나의 파이프라인으로. » (11 glyphes) en 10 im = 0,33 s ; « 맞는 곳에. » en 5 im ; « 년차 감독이 » f594-f601. Le départ de la frappe est posé sur le temps. Pour la fin, frappe plus lente, mot par mot sur les temps (« 비행선 » f1031, « 스튜디오 » ≈ f1048).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f393.jpg, microM-006-cut-f590.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rafale de 10 étapes au demi-temps",
+      "name_en": "Ten-step word burst on eighth notes",
+      "t": "0:06.60-0:09.03",
+      "frames": "f198-f271",
+      "fps": 30,
+      "mechanics": "기획, 콘티, 디자인, 애니메이션, 편집, 합성, 사운드, 수정, 검수, 납품 (planification → livraison) changent toutes les 8 im exactement (0,27 s = un demi-temps à 110 BPM), avec le compteur « STEP xx/10 ». Chaque mot remplace l'autre au même endroit (centre, ≈ 11 % H). Donne la sensation « beaucoup d'étapes » sans qu'on doive toutes les lire ; c'est la seule rafale du film, elle sert de montée avant le premier flash.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-001-cut-f269.jpg",
+      "illus": {"from": 196, "to": 240, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Icône Lissajous qui change de rapport à chaque étape",
+      "name_en": "Step-indexed Lissajous icon",
+      "t": "0:06.53-0:10.9",
+      "frames": "f196-f327",
+      "fps": 30,
+      "mechanics": "En haut à droite (≈ 12 % H), une figure de Lissajous change de rapport de fréquence à chaque étape, sur les mêmes demi-temps : parabole, huit, nœuds à 3 et 4 lobes, ruban… jusqu'à une ellipse fine en diagonale à « 납품 » (signal verrouillé). Transition par rémanence, sans interpolation visible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-move-f328.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash phosphore de section",
+      "name_en": "Phosphor bloom flash",
+      "t": "0:08.97 ; 0:16.33 ; 0:19.63 ; 0:27.27 ; 0:33.80",
+      "frames": "f269-f270, f490-f491, f589, f818, f1014-f1015",
+      "fps": 30,
+      "mechanics": "1 à 2 im de surexposition : tout le cadre se voile de gris-blanc #9AA79F avec halo radial plus clair au centre, puis retour immédiat au noir. Toujours précédé d'1-2 im par un gros sinus sur le tracé du bas, et toujours au moment où le nouveau texte démarre. 4 flashs sur 5 tombent 1 im avant un temps, le 1er 2 im avant un demi-temps accentué (attaque à 9,021 s). Marque les grands chapitres, pas les phrases.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f269.jpg, microM-005-cut-f492.jpg, microM-007-cut-f818.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneau-tampon puis ondes de choc concentriques",
+      "name_en": "Stamp ring into shockwave rings",
+      "t": "0:08.97-0:09.53",
+      "frames": "f269-f286",
+      "fps": 30,
+      "mechanics": "Un double cercle (≈ 30 % H) entoure « 검수 » comme un tampon de validation sur le flash f269 ; dès f271 il grandit en 4-5 anneaux concentriques espacés qui sortent du cadre en ≈ 15 im (0,5 s), ease-out, intensité décroissante, pendant que le mot passe à « 납품 ». Ponctue la fin de la rafale d'étapes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f269.jpg",
+      "illus": {"from": 267, "to": 283, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Enchevêtrement de Lissajous pour dire « complexe »",
+      "name_en": "Lissajous tangle for complexity",
+      "t": "0:10.90-0:13.10",
+      "frames": "f327-f392",
+      "fps": 30,
+      "mechanics": "Sur le temps f328, ≈ 30 courbes de Lissajous superposées jaillissent du centre et occupent ≈ 55 % de la largeur × 60 % de la hauteur en 9 im (ease-out), puis ondulent en continu (phase animée) derrière « 복잡한 과정을 » ; elles s'éteignent en ≈ 6 im (f393-f399) quand la sinusoïde du pipeline se trace. Visuellement riche mais le texte devient difficile à lire dessus.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f328.jpg, microM-003-move-f393.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Résolution en une sinusoïde à nœuds, tracée avec le texte",
+      "name_en": "Single clean sine draw-on synced with type-on",
+      "t": "0:13.07-0:13.47",
+      "frames": "f392-f404",
+      "fps": 30,
+      "mechanics": "Une sinusoïde épaisse et brillante (≈ 3,5 périodes sur ≈ 85 % de la largeur), avec des nœuds lumineux aux crêtes et de petites étiquettes sous les creux, se trace de gauche à droite en 12 im pendant que « 하나의 파이프라인으로. » se tape en 10 im : texte et courbe avancent à la même vitesse dans le même sens. Le chaos précédent s'éteint dessous.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f393.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Deux signaux entrelacés qui fusionnent en un",
+      "name_en": "Two interleaved waves merging",
+      "t": "0:15.27-0:17.5",
+      "frames": "f458-f525",
+      "fps": 30,
+      "mechanics": "Sur le temps f459, la sinusoïde unique se dédouble en deux faisceaux déphasés qui se croisent (ruban torsadé) pour « AI와 제작 기술을 » (l'IA et le savoir-faire) ; au flash f490-f492 ils se resserrent en une seule onde pour « 맞는 곳에. » (au bon endroit), puis vers 17,5 s l'onde s'aplatit en ligne droite. La forme illustre littéralement la phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f459.jpg, microM-005-cut-f492.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Impulsions numérotées 1-2-3 sur trois temps",
+      "name_en": "Numbered pulses on the beat",
+      "t": "0:18.00-0:19.20",
+      "frames": "f540-f576",
+      "fps": 30,
+      "mechanics": "Sur une ligne plate à mi-hauteur, trois pics gaussiens (≈ 18 % H) apparaissent un par temps : départ f540, f556, f572 (temps f540,8 / f557,1 / f573,5), montée en ≈ 4 im ease-out avec un surcroît de brillance au sommet, chiffre 1, 2, 3 dessous. Illustre « 맞는 순서로. » (dans le bon ordre) : l'ordre est battu par la musique.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 538, "to": 578, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Chiffre géant en contour tracé",
+      "name_en": "Giant outline numeral draw-on",
+      "t": "0:19.63-0:20.03",
+      "frames": "f589-f601",
+      "fps": 30,
+      "mechanics": "« 10 » en contour seul ≈ 40 % H, aligné à gauche (≈ 10 % de marge) : le « 1 » apparaît au flash f589, le « 0 » se trace en ≈ 4 im (f590-f593), puis « 년차 감독이 » (≈ 9 % H) se tape à droite f594-f601. Contraste d'échelle 4:1 entre chiffre et phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f590.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cadran radar à balayage avec traîne",
+      "name_en": "Radar sweep with fan trail",
+      "t": "0:21.9-0:24.5",
+      "frames": "f657-f735",
+      "fps": 30,
+      "mechanics": "Cercle à graduations ≈ 60 % H centré autour de « 직접 컨트롤합니다. » ; un rayon tourne dans le sens horaire à ≈ 180°/s (un tour ≈ 2 s, ≈ 4 temps probable) suivi d'un éventail de ≈ 10-12 rayons qui s'éteignent. Le « 10 » de la scène précédente reste en fantôme au début. Image de contrôle, de surveillance.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Frise chronologique en signal carré",
+      "name_en": "Square-wave timeline",
+      "t": "0:24.0-0:28.3",
+      "frames": "f720-f849",
+      "fps": 30,
+      "mechanics": "Ligne horizontale bornée « 2016 » et « 2026 », puis trois créneaux carrés (≈ 18 % H) se dressent un à un, étiquetés 광고 (pub), 캐릭터 (personnage), 웹툰 영상화 (adaptation de webtoon) ; le 2e apparaît d'abord en fantôme avant de s'allumer (≈ 25,5 s). Une donnée d'historique transformée en signal.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-007-cut-f818.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Dessin au faisceau : le dirigeable tracé « de l'idée à la finition »",
+      "name_en": "Vector beam draw-on",
+      "t": "0:28.37-0:32.0",
+      "frames": "f851-f960",
+      "fps": 30,
+      "mechanics": "Une tête de faisceau très claire (#DFFFEF) suivie de ≈ 5 points d'échantillonnage dessine le contour du dirigeable en ≈ 3,5 s : ailerons à gauche, nacelle, nez à droite, dos, retour aux ailerons. Le trait laissé reste allumé. Le texte suit l'avancée : « 아이디어부터 » (dès l'idée) au départ, « 완성까지. » (jusqu'à la finition) à mi-tracé, « 비행선 스튜디오는 » vers la fin. Le nom du studio (Airship) devient le dessin.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 852, "to": 948, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Demi-tour du dirigeable en miroir avec rémanence",
+      "name_en": "Mirror flip with ghosting",
+      "t": "0:33.80-0:34.03",
+      "frames": "f1014-f1021",
+      "fps": 30,
+      "mechanics": "Sur le flash f1014 (1 im avant le temps f1015,3), le contour s'inverse horizontalement : l'ancien et le nouveau sens restent superposés ≈ 6 im (le nouveau plus brillant), puis l'ancien s'éteint. Le dirigeable « part avec vous » ; le texte précédent s'efface en fantôme sur ≈ 10 im.",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f1014.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Métaphore filée du signal : chaos → ordre",
+      "name_en": "Signal metaphor, chaos to order",
+      "t": "0:06.5-0:19.6",
+      "frames": "f195-f589",
+      "fps": 30,
+      "mechanics": "Le graphisme porte l'argument : 10 étapes qui défilent (charge), enchevêtrement de Lissajous (complexité), une sinusoïde unique (pipeline), deux ondes (IA + savoir-faire), fusion (au bon endroit), ligne plate et impulsions 1-2-3 (bon ordre). Chaque phrase a sa figure, jamais deux fois la même.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Prologue en question puis carte de fin bilingue",
+      "name_en": "Question prologue and bilingual end card",
+      "t": "0:00-0:06.5 ; 0:34.5-0:39.6",
+      "frames": "f0-f195, f1035-f1186",
+      "fps": 30,
+      "mechanics": "Ouverture lente : 2,1 s d'écran plat puis « L'IA fait des scènes. Mais une vidéo entière ? », un groupe de mots tous les ≈ 2 temps (probable). Fin : « 비행선 스튜디오 » (≈ 9 % H) mot par mot sur les temps, « AIRSHIP STUDIO » en capitales espacées ≈ 2 % H dessous, maintien ≈ 3 s, fondu au noir 38,6-39,4 s. L'accroche manque de punch dans la première seconde.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Tracé du bas qui bat sur chaque grosse caisse",
+      "name_en": "Kick-reactive bottom trace",
+      "t": "0:06.5-0:38.5",
+      "frames": "f195-f1155",
+      "fps": 30,
+      "mechanics": "Le signal du bas (≈ 15 % H de haut au repos, quelques % d'amplitude) se gonfle en un gros sinus basse fréquence (≈ 3 périodes sur la largeur, amplitude ≈ 10 % H) 0 à 2 im avant chaque temps (f196, f212, f228, f408-f410, f473-f475, f506-f508, f867, f882, f900, f915, f933, f948), puis retombe en ≈ 4-6 im. Comme un vrai oscilloscope branché sur la grosse caisse : le spectateur voit le beat.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-03.jpg, microM-003-move-f393.jpg, microM-004-move-f459.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une horloge musicale unique : figures sur le temps, rafale au demi-temps",
+      "name_en": "Single BPM clock for picture and sound",
+      "t": "0:06.6-0:35.0",
+      "frames": "f198-f1048",
+      "fps": 30,
+      "mechanics": "Les grandes figures démarrent sur le temps plein (enchevêtrement f328, sinusoïde f393, double onde f459, impulsions f540/f556/f572, « 10 » f589, « 비행선 스튜디오는 » f918), la rafale d'étapes sur chaque demi-temps (8 im), les flashs 1 im avant le temps. 22 gestes clés sur 23 à ±2 im d'une barre, 18 sur le temps plein (hasard 31 %). Le HUD affiche « 110BPM » : la timeline a été écrite en temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, microM-002-move-f328.jpg, microM-006-cut-f590.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Entrée du beat = réveil du signal",
+      "name_en": "Beat drop wakes the scope",
+      "t": "0:06.40-0:06.60",
+      "frames": "f192-f198",
+      "fps": 30,
+      "mechanics": "Jusqu'à 6,5 s l'énergie de mouvement est quasi nulle (ligne plate, mots espacés de ≈ 2 temps) ; quand le beat entre, le tracé du bas fait son premier gros sinus (f196), l'icône Lissajous apparaît et la rafale d'étapes démarre au demi-temps (f198). Le contraste calme → dense est calqué sur l'arrangement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Monochrome vert, hiérarchie par l'intensité",
+      "name_en": "Monochrome hierarchy by luminance",
+      "t": "0:00-0:39.6",
+      "frames": "f0-f1186",
+      "fps": 30,
+      "mechanics": "Une seule teinte ; l'importance se lit à la luminosité : tête de faisceau et pics presque blancs, figure principale vert menthe, texte et graphiques secondaires plus sombres, fantômes à 10-40 %, HUD très sombre. Les flashs sont le seul écart (voile gris). Aucun accent d'une autre couleur, même pour le logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Oscilloscope style » est une direction très productive : elle impose une couleur, une texture (phosphore, rémanence), une typographie (contour) et tout un vocabulaire de formes (sinus, Lissajous, impulsions, radar, signal carré, faisceau)."},
+    {"kind": "inputs", "insight": "Les faits du studio (nom Airship/비행선, 10 ans, depuis 2016, pub, personnage, webtoon) et la langue coréenne ne sont pas dans le prompt : ils viennent probablement du contexte de la conversation ou du profil de l'utilisateur."},
+    {"kind": "build", "insight": "Aucune musique demandée, pourtant Claude a posé une constante 110 BPM visible dans le HUD et calé toute la timeline dessus : quand le tempo est une variable du code, la synchro devient structurelle."},
+    {"kind": "structure", "insight": "Le modèle a inventé une structure argumentative (question → étapes → complexité → pipeline → expérience → preuves → signature) où chaque phrase reçoit une figure de signal différente."},
+    {"kind": "qa", "insight": "Rien dans le prompt ne cadre la lisibilité : rémanences superposées et rafale de 8 im par mot passent sans contrôle. Ajouter un temps de lecture minimal et une opacité maximale des fantômes."},
+    {"kind": "other", "insight": "Pas de durée imposée : 40 s, dont 2,1 s d'écran plat en ouverture et ≈ 3 s de maintien final."}
+  ],
+  "steal": [
+    "Fixer une constante BPM dans la composition, l'afficher dans un HUD, et écrire chaque départ en temps ; rafales au demi-temps, grandes figures au temps.",
+    "Brancher un élément de fond sur la grosse caisse (tracé, pulsation) pour que le beat soit visible en permanence, même pendant les maintiens.",
+    "Donner à chaque phrase sa forme : chaos de courbes pour « complexe », une seule onde pour « pipeline », impulsions comptées pour « ordre ».",
+    "Flash de surexposition d'1-2 images, 1 image avant le temps, réservé aux changements de chapitre.",
+    "Faire dessiner le logo ou l'objet de marque par un faisceau pendant que le texte dit « de l'idée à la finition »."
+  ],
+  "flaws": [
+    "Rémanences de texte superposées : deux mots se mélangent pendant 4 à 6 images, certains restent illisibles.",
+    "Rafale de 10 mots à 0,27 s chacun : impossible à lire, surtout en contour lumineux.",
+    "Ouverture molle : 2,1 s d'écran plat avant le premier mot.",
+    "Texte en contour lumineux sur 40 s : fatigue visuelle et lisibilité moyenne sur les phrases longues.",
+    "Enchevêtrement de Lissajous posé derrière le texte : le mot « complexe » se noie dans sa propre illustration."
+  ],
+  "deep_study": {"worth": true, "why": "Meilleur exemple du lot d'une timeline écrite en temps (HUD « 110BPM ») : chaque figure, chaque mot et le tracé du bas sont calés à l'image près. Une étude continue (source à 30 fps) permettrait d'en tirer une carte complète des temps réutilisable comme gabarit HyperFrames."}
+}

@@ -1,0 +1,369 @@
+{
+  "slug": "wozu-co-242285",
+  "title": "Supasito launch video",
+  "handle": "@wozu_co",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Récit produit clair et UI crédible (frappe, chiffre qui roule, publication), mais transitions presque toutes en fondu flou, éléments trop petits dans le cadre et aucun calage musical : correct, générique.",
+  "summary": "Lancement de 13,8 s pour Supasito, outil qui met à jour ses sites par la conversation. Titre mot à mot, trois notifications posent le problème, l'icône les absorbe, puis démo : on tape « the Pro plan is $29 now », le prix roule de 19 à 29, on publie. Trois arguments en icônes, puis le logo. Propre et cohérent, mais fondus flous répétés et éléments petits.",
+  "prompt_vs_result": [
+    "Une seule ligne : une vidéo de lancement « motion design » pour supasito.com, moins de 15 s. Aucun contenu, style, format, musique ni structure imposés.",
+    "Tout le reste : comprendre le produit (sites édités par IA, publication contrôlée), le récit problème → démo → arguments → logo, l'esthétique Apple gris clair + corail, la maquette d'app Mac, les messages de notification, la bande-son et ses effets.",
+    "Le modèle a bien déduit un récit produit cohérent, mais par défaut il choisit fondus flous, éléments petits et cadence molle. Il aurait fallu préciser musique et tempo, grammaire de transitions, taille des éléments et un moment fort."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F2F2F2", "role": "fond gris très clair"},
+      {"hex": "#1D1D1F", "role": "titres, mot clé des légendes"},
+      {"hex": "#6E6E73", "role": "gris secondaire (2e ligne, suite des légendes)"},
+      {"hex": "#F04A2F", "role": "corail-rouge de marque : icône S, bouton Publish, dossier, liens pointillés"},
+      {"hex": "#E8735A", "role": "liseré de la carte Pro"},
+      {"hex": "#F7C6B8", "role": "surlignage de sélection du prix"},
+      {"hex": "#161616", "role": "interface sombre de l'app"},
+      {"hex": "#E8E4DE", "role": "volet d'aperçu beige"},
+      {"hex": "#2A2238", "role": "haut du fond d'écran du Mac (violet nuit)"},
+      {"hex": "#B4533F", "role": "bas du fond d'écran (corail brûlé)"},
+      {"hex": "#4A154B", "role": "icône Slack"},
+      {"hex": "#34C759", "role": "icône Messages, pastille « Published »"},
+      {"hex": "#F48120", "role": "tuile Cloudflare"},
+      {"hex": "#32B5A7", "role": "tuile Netlify"}
+    ],
+    "type": "Grotesque type SF Pro/Inter, demi-gras, interlettrage serré ; titre ≈9 % de la hauteur sur deux lignes (noir puis gris) ; légendes ≈4 % en haut du cadre, mot clé noir, reste gris ; chemins en mono.",
+    "texture": "Ombres portées douces sous cartes, tuiles et icônes ; lueur rouge diffuse sous l'icône S ; flou utilisé comme défocalisation de transition (révélation des mots, fondus), jamais comme flou de mouvement directionnel ; aucun grain.",
+    "style": "minimalisme Apple, démo produit corail",
+    "coherence": "Tenue par un fond gris clair constant, une seule couleur de marque corail réservée au produit et aux actions (icône, Publish, carte Pro, dossier, liens), une police unique en deux tons et une légende par étape. Ce qui casse : la grammaire de transition se réduit au fondu flou répété, l'échelle des éléments varie beaucoup (Mac plein cadre puis tuiles de 4 % de la largeur), et la métaphore du bol détonne dans un univers d'interface."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Nappe musicale à ≈80 BPM (79,9 global ; 78,9 sur 0–7 s, 79,7 sur 7–13,7 s), demi-temps = 22,5 im à 60 fps. Seulement 2 « coupes » détectées (4,80 et 5,77 s), qui sont en fait une poussée rapide et un panoramique rapide : le film est un plan-séquence de fondus. Rythme interne régulier de 0,3 s (cartes de notification toutes les 18–20 im, tuiles qui tombent toutes les 17–19 im, mots du titre toutes les 4–8 im), sans rapport avec la grille musicale. Les « maintiens » mesurés (52 % du temps) sont surtout des scènes à petits éléments qui bougent peu ; vrais temps morts : titre complet figé 1,53–2,17 s (0,64 s) et carton final immobile ≈12,9–13,76 s (≈0,85 s). Densité correcte dans la démo (4,0–7,7 s : poussée, frappe, pan, chiffre, clic toutes les 0,3–0,6 s), plus molle dans les trois scènes d'arguments (un événement par 0,5–1 s).",
+    "timeline": [
+      {"t": "0:00-0:01.53", "what": "« Every site you run. » puis « Up to date. In one place. » apparaissent mot à mot", "technique": "révélation floue mot à mot, titre en deux tons"},
+      {"t": "0:01.53-0:02.33", "what": "Titre figé 0,64 s puis disparaît dans un flou", "technique": "maintien, sortie par défocalisation"},
+      {"t": "0:02.33-0:03.10", "what": "Trois notifications (Slack, Cardstack, Marta) entrent toutes les 0,3 s en diagonale", "technique": "problème posé par messages réels, entrée floue décalée"},
+      {"t": "0:03.27-0:03.63", "what": "L'icône rouge S jaillit au centre des notifications", "technique": "pop en ressort ≈10 % de dépassement"},
+      {"t": "0:03.63-0:04.00", "what": "Les cartes sont aspirées dans l'icône, fondu vers un MacBook avec l'app Supasito", "technique": "implosion + fondu enchaîné"},
+      {"t": "0:04.00-0:04.72", "what": "App sombre (barre latérale, conversation, aperçu de la carte Pricing) ; légende « Say what should change. »", "technique": "maquette UI crédible, dérive lente, légende en haut"},
+      {"t": "0:04.72-0:05.50", "what": "Poussée rapide sur le champ de saisie ; « the Pro plan is $29 now » se tape ; « Editing » puis « Edited components/pricing.tsx »", "technique": "push-in éclair, frappe au caret, statuts d'agent"},
+      {"t": "0:05.62-0:06.30", "what": "Légende « See it before it goes live. », pan rapide vers l'aperçu, $19 surligné qui roule en $29", "technique": "panoramique, chiffre qui roule dans une sélection"},
+      {"t": "0:06.30-0:07.65", "what": "Recul et recadrage sur Publish ; légende « Then publish. You decide when. » ; clic, « Published ✓ », bulle « supasito.com/pricing is live »", "technique": "curseur, changement d'état, notification"},
+      {"t": "0:07.65-0:09.25", "what": "Recul sur le Mac puis fondu flou vers « Keep your hosting. » : trois tuiles d'hébergeurs tombent dans un bol", "technique": "fondu flou, chute avec chocs sonores"},
+      {"t": "0:09.25-0:10.40", "what": "« Own your files. » : dossier corail, étiquettes app/, components/, package.json, chemin ~/Sites/supasito.com", "technique": "fondu flou, pop d'étiquettes"},
+      {"t": "0:10.40-0:11.90", "what": "« Use your own AI plan. » : Claude Code — S — Codex reliés par des pointillés corail", "technique": "schéma à trois tuiles, liens tracés"},
+      {"t": "0:11.90-0:13.76", "what": "Icône S, le mot « supasito » sort de derrière, puis « supasito.com » dessous", "technique": "révélation masquée du logotype, URL, maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Nappe à ≈80 BPM (netteté 4,69). Sur 29 gestes clés (entrées de mots, de cartes, pop de l'icône, poussée, pan, chiffre, clic, chutes de tuiles, fondus), 5 tombent à ±2 im d'un temps ou demi-temps : 17 % pour un hasard de 22 %. Le pan qui atterrit sur un temps à f346 est isolé. Indice auto : aucune synchro (p = 0,36), intensité/mouvement r = −0,11. Les effets sonores, eux, sont posés sur l'image : souffle qui culmine à 2,33 s sur l'entrée de la première carte (f140), grondement grave vers 3,96 s quand le Mac apparaît (f232–f240), crépitement de touches 4,80–5,35 s pendant la frappe (f289–f321), 3 chocs sourds à 8,41 / 8,70 / 9,01 s sur les atterrissages des tuiles (f504, f521, f540, à ±1 im), 3 petits chocs à 11,05 / 11,20 / 11,35 s dans la scène IA (probable : tracé des liens), coup final vers 13,1 s.",
+    "synced": [],
+    "style_match": "Nappe calme et feutrée à ≈80 BPM : colle au ton Apple apaisé et aux fondus doux, mais trop molle pour porter la poussée et le pan rapides, qui tombent hors temps.",
+    "how_built": "Prompt d'une ligne sans consigne sonore : bande-son probablement générée en code (nappe + effets) et effets placés aux instants de la timeline d'animation. La musique n'a jamais servi de grille au montage : aucune durée de plan ni aucun impact n'est exprimé en temps musicaux."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation floue mot à mot",
+      "name_en": "word-by-word blur reveal",
+      "t": "0:00-0:01.53",
+      "frames": "f0-f92",
+      "fps": 60,
+      "mechanics": "Chaque mot passe de flou (≈8 px) et transparent à net en ≈16–18 im, avec une montée d'≈1 % de la hauteur ; ease-out (l'essentiel du flou disparaît en 8 im). Décalage : ligne 1 toutes les ≈4 im (« Every » déjà à moitié visible à f0, « run. » net vers f28) ; ligne 2 toutes les 6–8 im (« Up » f44, « to » f52, « date. » f56, « In » f68, « one » f74, « place. » f80, net f92). La vidéo démarre en plein mouvement, sans image vide.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 0, "to": 30, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre et légendes en deux tons",
+      "name_en": "two-tone headline",
+      "t": "0:00-0:11.90",
+      "frames": "f0-f714",
+      "fps": 60,
+      "mechanics": "Ligne 1 « Every site you run. » en #1D1D1F, ligne 2 « Up to date. In one place. » en gris #6E6E73, centrées, ≈9 % de la hauteur, ≈52 % de la largeur. Le même code revient dans les légendes : « See it » noir + « before it goes live. » gris, « Then publish. » noir + « You decide when. » gris, « AI » en gris dans « Use your own AI plan. » (probable). Hiérarchie sans changer de taille ni de graisse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie du titre par défocalisation",
+      "name_en": "blur-out exit",
+      "t": "0:02.10-0:02.33",
+      "frames": "f126-f140",
+      "fps": 60,
+      "mechanics": "Le titre rétrécit d'≈2 %, se floute jusqu'à ≈10 px et s'efface en ≈12 im (ease-in) ; la première notification entre dès f140, sans chevauchement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Problème posé par des notifications réalistes",
+      "name_en": "pain-point notifications",
+      "t": "0:02.33-0:03.10",
+      "frames": "f140-f186",
+      "fps": 60,
+      "mechanics": "Trois cartes blanches (rayon ≈12 px, ombre douce, inclinées de −3° à +2°) en diagonale lâche : Slack en haut à gauche « Pro goes to $29 today. Can you update the site? », agenda Cardstack à droite « The site still says “coming soon” », Messages de Marta en bas « the number on the site is still the old one 🙏 ». Chaque carte : fondu + flou ≈6 → 0 px + montée ≈3 % + rotation qui se pose, en ≈8 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence régulière de 0,3 s",
+      "name_en": "steady 0.3 s stagger",
+      "t": "0:02.33-0:09.00",
+      "frames": "f140-f540",
+      "fps": 60,
+      "mechanics": "Cartes de notification à f140, f158, f178 (18–20 im d'écart) ; tuiles d'hébergeurs qui atterrissent à f504, f521, f540 (17–19 im). Même pas de 0,3 s partout : lisible, mais sans accent ni variation, et indépendant du tempo de la musique (demi-temps 0,375 s).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pop de l'icône produit en ressort",
+      "name_en": "springy icon pop",
+      "t": "0:03.27-0:03.50",
+      "frames": "f196-f210",
+      "fps": 60,
+      "mechanics": "Icône carrée arrondie rouge (#F04A2F, S blanc en ruban, lueur rouge diffuse) qui surgit au centre, devant les cartes : ≈30 % de sa taille à f196, ≈60 % f198, ≈110 % f202, ≈105 % f206, 100 % f210 : ressort avec ≈10 % de dépassement en 14 im. Taille finale ≈5 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Notifications aspirées dans l'icône puis fondu vers l'app",
+      "name_en": "implode into icon, dissolve to app",
+      "t": "0:03.63-0:04.00",
+      "frames": "f218-f240",
+      "fps": 60,
+      "mechanics": "f218–f231 : les cartes se resserrent vers l'icône en rétrécissant et s'effacent (≈10 im), il ne reste que l'icône sur fond gris à f231. f232–f240 : le MacBook apparaît en fondu enchaîné (≈40 % à f232, ≈80 % à f237, plein à f240) pendant que l'icône s'efface par-dessus. Bonne idée (le produit absorbe les problèmes), sortie molle en fondu au lieu d'un zoom dans l'icône.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f237.jpg",
+      "illus": {"from": 218, "to": 242, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Maquette d'app Mac crédible",
+      "name_en": "credible desktop app mockup",
+      "t": "0:04.00-0:07.80",
+      "frames": "f240-f468",
+      "fps": 60,
+      "mechanics": "MacBook (≈76 % de la largeur, coupé en bas) sur fond d'écran violet nuit → corail ; barre de menus « Supasito File Edit View Site Window Help … Tue 9:41 » ; app sombre #161616 : barre latérale (Sites : Supasito, Cardstack, Marta's Bakery ; Sessions), fil de conversation (« YESTERDAY tighten the hero spacing · 41 s · 2 files changed · Undo », « TODAY »), champ « Say what should change », volet d'aperçu beige avec carte Pricing Free $0 / Pro $19/mo (liseré corail), bouton Publish corail en haut à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dérive lente pour garder le plan vivant",
+      "name_en": "slow drift",
+      "t": "0:04.00-0:04.72",
+      "frames": "f240-f283",
+      "fps": 60,
+      "mechanics": "Le Mac monte et grossit d'≈2 % en 43 im, quasi linéaire : aucune image n'est strictement figée pendant que la légende apparaît.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f237.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Légende de chapitre au-dessus de l'écran",
+      "name_en": "chapter caption above device",
+      "t": "0:04.13-0:07.80",
+      "frames": "f248-f468",
+      "fps": 60,
+      "mechanics": "Légende centrée à ≈8 % du haut, ≈4 % de la hauteur, l'appareil occupe le reste et déborde en bas. Une légende par étape : « Say what should change. » (f248, flou → net en ≈5 im), « See it before it goes live. » (f337–f342), « Then publish. You decide when. » (f399–f402). Changement par fondu flou de 5–6 im, la légende ne bouge pas.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f346.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée éclair sur le champ de saisie",
+      "name_en": "snap push-in",
+      "t": "0:04.72-0:04.85",
+      "frames": "f283-f291",
+      "fps": 60,
+      "mechanics": "Échelle ≈1,0 → ≈2,2 en 8 im, cadrage final sur le champ de saisie (liseré corail de focus) et le haut du volet d'aperçu ; ease-in-out très raide (l'essentiel entre f286 et f290). Aucun flou de mouvement : les images intermédiaires sont nettes, d'où une saccade. Détectée comme coupe à f288.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f288.jpg",
+      "illus": {"from": 281, "to": 293, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe rapide au caret",
+      "name_en": "fast caret typing",
+      "t": "0:04.82-0:05.35",
+      "frames": "f289-f321",
+      "fps": 60,
+      "mechanics": "« the Pro plan is $29 now » : « the » f289, « the P » f293, « the Pro » f296, « the Pro pla » f301, « the Pro plan » f304, « the Pro plan i » f307… ≈1 caractère toutes les 1,5 im (≈40 car/s), caret visible ; crépitement de touches synchrone dans la bande-son. Puis la bulle part (≈f330).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f288.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Statuts d'agent qui travaillent",
+      "name_en": "agent status line",
+      "t": "0:05.50-0:05.70",
+      "frames": "f330-f342",
+      "fps": 60,
+      "mechanics": "Sous la bulle envoyée : « ◌ Editing components/pricing.tsx » (spinner gris, mono) puis « ● Edited components/pricing.tsx » (pastille verte) et « 1 file changed · Undo » (Undo en corail) en ≈6 im. Montre l'IA à l'œuvre sans écran de code.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f346.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique rapide vers l'aperçu",
+      "name_en": "whip pan to preview",
+      "t": "0:05.65-0:05.80",
+      "frames": "f339-f348",
+      "fps": 60,
+      "mechanics": "La carte Pricing traverse ≈45 % de la largeur en 9 im (du bord droit au centre), ease-out, léger adoucissement mais pas de vrai flou directionnel ; atterrit à f346, seul geste du film posé sur un temps (probable coïncidence).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f346.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Prix sélectionné qui roule de 19 à 29",
+      "name_en": "highlighted digit roll",
+      "t": "0:05.83-0:06.30",
+      "frames": "f350-f378",
+      "fps": 60,
+      "mechanics": "« $19 » reçoit un surlignage corail clair #F7C6B8 (fondu ≈3 im, f350–f353), comme une sélection de texte ; le « 1 » roule verticalement vers le « 2 » en 4 im (f358 « $19 », f360 « $,9 » à mi-course, f362 « $29 ») ; le surlignage s'efface ensuite. La modification demandée est visible sans zoom ni flèche.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f346.jpg",
+      "illus": {"from": 350, "to": 366, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic Publish et confirmation en ligne",
+      "name_en": "publish state change",
+      "t": "0:06.60-0:07.65",
+      "frames": "f396-f459",
+      "fps": 60,
+      "mechanics": "Recul rapide et recadrage sur le coin haut droit (f396–f405), le curseur rejoint Publish, clic vers 7,0 s (choc grave à 7,07 s, probable), le bouton devient « Published ✓ » vert et une bulle sombre « supasito.com/pricing is live » descend sous la barre (≈f440–f450).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f396.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondus flous répétés entre les scènes",
+      "name_en": "repeated blur dissolves",
+      "t": "0:07.65-0:12.00",
+      "frames": "f459-f720",
+      "fps": 60,
+      "mechanics": "Même transition 4 fois de suite : la scène sortante se floute (≈8–10 px) et s'efface pendant que l'entrante arrive floue, en 8–12 im (Mac → bol f467–f474, bol → dossier f546–f558, dossier → IA ≈f620–f640 avec tuiles qui glissent des bords, IA → logo ≈f700–f715). Aucun raccord de forme ni de mouvement entre les arguments.",
+      "verdict": "cliche",
+      "evidence": "microM-005-move-f464.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tuiles d'hébergeurs qui tombent dans un bol",
+      "name_en": "logo drop into bowl",
+      "t": "0:08.25-0:09.10",
+      "frames": "f495-f546",
+      "fps": 60,
+      "mechanics": "Tuiles blanches arrondies (≈4 % de la largeur) aux logos Vercel, Netlify, Cloudflare tombent du haut du cadre jusqu'au bord du bol en ≈9–10 im, en accélérant (ease-in, gravité), inclinées de ±8° et se posent côte à côte ; atterrissages f504, f521, f540 avec un choc sourd chacun. Bol blanc en céramique (≈15 % de la largeur) étiqueté « wherever it lives today ». Métaphore peu claire, éléments petits.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 495, "to": 542, "n": 8}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Dossier corail et étiquettes de fichiers",
+      "name_en": "folder with file chips",
+      "t": "0:09.25-0:10.40",
+      "frames": "f555-f624",
+      "fps": 60,
+      "mechanics": "Dossier corail en dégradé (≈13 % de la largeur) au centre ; vers 10,0 s trois étiquettes blanches « app/ », « components/ », « package.json » apparaissent au-dessus, inclinées de ±4°, décalées ; chemin « ~/Sites/supasito.com » en mono gris dessous. Illustration littérale, peu de mouvement.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Schéma à trois tuiles reliées",
+      "name_en": "hub diagram",
+      "t": "0:10.40-0:11.90",
+      "frames": "f625-f714",
+      "fps": 60,
+      "mechanics": "Ligne horizontale à ≈60 % de la hauteur : tuile Claude Code (gauche), icône S plus grande (≈×1,4) au centre avec lueur rouge, tuile Codex (droite), étiquettes grises dessous ; pointillés corail tracés de la S vers chaque tuile entre ≈11,0 et 11,5 s. Lisible, mais petit dans le cadre (≈40 % de la largeur).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en boucle : la demande devient la démo",
+      "name_en": "problem-to-proof loop",
+      "t": "0:02.33-0:07.65",
+      "frames": "f140-f459",
+      "fps": 60,
+      "mechanics": "Le message Slack d'ouverture (« Pro goes to $29 today ») est exactement ce qu'on tape (« the Pro plan is $29 now »), ce qu'on voit changer ($19 → $29) et ce qu'on publie : un seul fil du problème à la preuve. Structure : accroche 2 s, problème 1,3 s, démo 3,8 s, 3 arguments 4,1 s, logo 1,9 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logotype qui sort de derrière l'icône, puis URL",
+      "name_en": "masked wordmark reveal",
+      "t": "0:11.90-0:13.76",
+      "frames": "f714-f821",
+      "fps": 60,
+      "mechanics": "L'icône S seule au centre, puis « supasito » (gras noir) glisse vers la droite depuis derrière l'icône (masque) pendant que l'icône se décale à gauche (≈f720–f745) ; « supasito.com » en gris petit apparaît dessous vers f770 ; maintien final ≈0,85 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Couleur de marque réservée au produit et aux actions",
+      "name_en": "single accent color",
+      "t": "0:00-0:13.76",
+      "frames": "f0-f821",
+      "fps": 60,
+      "mechanics": "Tout est gris clair, noir et gris ; le corail-rouge #F04A2F n'apparaît que sur l'icône S, le bouton Publish, le liseré de la carte Pro, le surlignage du prix, le dossier, les pointillés. Les seules autres couleurs viennent des logos tiers (Slack, Messages, hébergeurs).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres douces, aucun flou de mouvement",
+      "name_en": "soft shadows, no motion blur",
+      "t": "0:00-0:13.76",
+      "frames": "f0-f821",
+      "fps": 60,
+      "mechanics": "Ombres portées larges et légères sous toutes les cartes et tuiles, lueur rouge sous l'icône S. Le flou ne sert qu'aux apparitions et aux fondus ; les mouvements rapides (poussée ×2,2 en 8 im, pan de 45 % en 9 im, chutes) restent nets image par image.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f288.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Effets sonores posés sur les événements",
+      "name_en": "picture-locked sound effects",
+      "t": "0:02.33-0:13.10",
+      "frames": "f140-f786",
+      "fps": 60,
+      "mechanics": "Souffle qui culmine à 2,33 s sur l'entrée de la première carte (f140) ; grondement grave à ≈3,96 s quand le Mac apparaît ; crépitement de touches 4,80–5,35 s calé sur la frappe ; choc à ≈7,07 s sur le clic Publish (probable) ; chocs sourds à 8,41 / 8,70 / 9,01 s sur les 3 atterrissages (f504, f521, f540, ±1 im) ; 3 petits chocs à 11,05 / 11,20 / 11,35 s dans la scène IA ; coup final ≈13,1 s. La musique, elle, n'est pas calée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Prompt d'une ligne : le modèle a inventé tout le récit à partir du nom de domaine et l'a bien construit (accroche → problème → démo → 3 arguments → logo), avec un fil continu du message Slack au prix publié."},
+    {"kind": "direction", "insight": "Aucune direction de style : défaut « Apple » gris clair, grotesque demi-gras, fondus flous. C'est le style moyen des vidéos IA, propre mais sans signature ni moment fort."},
+    {"kind": "banned", "insight": "Rien d'interdit : la transition la plus facile, le fondu flou, revient 5 fois. Interdire les fondus enchaînés aurait forcé des transitions motivées (zoom dans l'icône, raccord de forme, masque)."},
+    {"kind": "other", "insight": "Aucune musique demandée : bande-son probablement générée en code, effets posés sur la timeline, mais montage indifférent au tempo. Il faut donner un BPM et exprimer coupes et impacts en temps."},
+    {"kind": "inputs", "insight": "Sans captures ni charte fournies, l'interface et l'icône sont probablement reconstruites ou inventées : crédibles pour une démo, à vérifier avant une vraie promo."},
+    {"kind": "qa", "insight": "Aucun contrôle demandé : rien n'a corrigé la petite taille des tuiles et icônes ni la saccade de la poussée rapide sans flou de mouvement."}
+  ],
+  "steal": [
+    "Poser le problème par 3 notifications réalistes (Slack, agenda, SMS) qui entrent toutes les 0,3 s, puis faire jaillir l'icône du produit qui les absorbe.",
+    "Boucler le récit : la demande du message d'ouverture ($29) est exactement ce qu'on tape dans la démo et ce qu'on voit changer à l'écran.",
+    "Montrer une modification par une sélection colorée puis un chiffre qui roule en 4 images : le changement se lit sans zoom ni flèche.",
+    "Légende en deux tons au-dessus de l'appareil : mot clé en noir, suite en gris ; une légende par étape (dire, voir, publier).",
+    "Poser un choc sourd sur chaque atterrissage d'objet, à ±1 image : la chute paraît pesante même sans musique calée."
+  ],
+  "flaws": [
+    "Cinq transitions en fondu flou identique (8–12 im) : la répétition rend le montage mou et générique.",
+    "Tuiles d'hébergeurs (≈4 % de la largeur), dossier et icônes IA petits au milieu d'un grand fond vide.",
+    "Poussée ×2,2 en 8 images sans flou de mouvement : saccade visible.",
+    "Métaphore du bol « wherever it lives today » peu claire pour dire « gardez votre hébergement ».",
+    "Musique à ≈80 BPM sans calage : 17 % des gestes sur un temps, pour 22 % de hasard."
+  ],
+  "deep_study": {"worth": false, "why": "Grammaire simple, lisible sur les planches à 2 im/s ; seuls le chiffre qui roule et la chute des tuiles méritent l'image par image, et les planches microscope et extra les couvrent déjà."}
+}

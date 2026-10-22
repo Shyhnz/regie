@@ -1,0 +1,326 @@
+{
+  "slug": "x4b47x-9cc84f",
+  "title": "Shadow theatre home story",
+  "handle": "@x4b47x",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Théâtre d'ombres crédible (mise au point des découpages, plans en profondeur, rideau), ciel qui change de couleur avec le texte, sons calés sur chaque pièce posée ; mais lent, texte minuscule, personnages trop petits.",
+  "summary": "Un rideau rouge s'ouvre sur un paysage en ombres chinoises. Une enseigne suspendue pose la question « What makes a place feel like home? », puis une maison se construit pièce par pièce, ses fenêtres s'allument, quelqu'un ouvre la porte, les jours et les saisons défilent, la caméra recule sur le village de nuit. Poème en 8 enseignes, douce et cohérente, mais très lente pour du 9:16.",
+  "prompt_vs_result": [
+    "Animation en JavaScript pur, 30 à 60 s, vertical 9:16, style ombres chinoises en papier découpé, audio doux généré en code, sur le thème : qu'est-ce qui fait qu'un lieu devient un foyer ?",
+    "Claude a choisi le cadre du théâtre (rideau, enseigne pendue), le récit en 8 légendes jusqu'à la maxime « house / home », le voyage de couleur du ciel, l'accéléré des saisons, le travelling arrière et des carillons sur chaque élément construit.",
+    "Le style et la contrainte audio ont été bien suivis (son produit avec la timeline, synchro à l'image près). Rien ne cadrait la taille du texte ni le rythme : 57 s au maximum, légendes tenues 5 à 7 s, texte à 2 % de la hauteur."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#5A1418", "role": "rideau velours"},
+      {"hex": "#B08A4A", "role": "galon doré du rideau"},
+      {"hex": "#F4BE8C", "role": "ciel coucher de soleil"},
+      {"hex": "#D48C86", "role": "ciel rose du crépuscule"},
+      {"hex": "#8E7DB0", "role": "ciel violet de la tombée de la nuit"},
+      {"hex": "#4E5194", "role": "ciel bleu nuit"},
+      {"hex": "#9C7A62", "role": "collines lointaines dans la brume"},
+      {"hex": "#1A100D", "role": "silhouettes (noir chaud)"},
+      {"hex": "#F6C76B", "role": "lumière des fenêtres et de la porte"},
+      {"hex": "#F2EBCB", "role": "lune et soleil"},
+      {"hex": "#1E1612", "role": "enseigne"},
+      {"hex": "#EADFC6", "role": "texte crème"},
+      {"hex": "#E0909E", "role": "halo rose de l'étreinte"}
+    ],
+    "type": "Serif humaniste italique (type Alegreya ou EB Garamond Italic, probable), casse de phrase, graisse regular, crème sur enseigne sombre, 2 lignes centrées ; hauteur d'x ≈ 1,2 % du cadre, enseigne ≈ 76 % de la largeur.",
+    "texture": "Grain papier marbré sur le ciel, vignettage, brume atmosphérique sur les plans lointains, flou de profondeur sur les découpages qui arrivent, halos doux (lune, fenêtres, réverbères), lucioles et étoiles scintillantes.",
+    "style": "Théâtre d'ombres en papier découpé, conte du soir",
+    "coherence": "Tout est silhouette noire chaude sur un ciel qui change de teinte ; rideau, enseigne pendue à deux fils et flou de mise au point appartiennent tous au théâtre d'ombres. Le seul écart : l'enseigne en dur au lieu d'un carton découpé, et le travelling arrière, plus cinéma que scène."
+  },
+  "rhythm": {
+    "bpm": 72,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "Lit musical à 72 BPM : une note toutes les 0,833 s, soit 50 images à 60 fps, volume constant ≈ −27 dB du début à la fin. Un seul plan de 57 s, aucune coupe. 8 enseignes en 57 s (une toutes les 4,2 à 9 s), chacune tenue 4,5 à 7 s. 55 % de la durée détectée quasi statique (maintiens de 2,6 s à 3-5,7 s, 4,7 s à 12,5-17,2 s, 1,8 s à 22-23,8 s et 27,9-29,7 s) : seuls le ciel, la lune, la fumée et les étoiles bougent. Les moments denses sont la construction de la maison (5 ajouts en 1,5 s), l'allumage des fenêtres (3 en 0,7 s) et l'accéléré des saisons (32,5-40,5 s). Rythme contemplatif voulu par « gentle », trop lent pour un format social.",
+    "timeline": [
+      {"t": "0:00-0:00.20", "what": "Noir", "technique": "ouverture au noir"},
+      {"t": "0:00.20-0:01.30", "what": "Rideau rouge fermé, la lumière scintille", "technique": "scintillement d'allumage"},
+      {"t": "0:01.30-0:02.80", "what": "Le rideau s'ouvre sur un paysage en silhouettes au coucher du soleil", "technique": "ouverture du rideau"},
+      {"t": "0:02.12-0:05.95", "what": "L'enseigne descend : « What makes a place / feel like home? », puis remonte", "technique": "enseigne suspendue, révélation ligne à ligne"},
+      {"t": "0:06.02-0:07.60", "what": "La maison se construit pièce par pièce en passant du flou au net ; un homme en haut-de-forme entre par la gauche", "technique": "mise au point du découpage, une note par pièce"},
+      {"t": "0:06.35-0:11.40", "what": "« Not the roof. / Not the walls. » ; le ciel vire du pêche au rose", "technique": "script colorimétrique"},
+      {"t": "0:11.72-0:12.60", "what": "« It's a light / left on for you. » ; les trois fenêtres s'allument une à une avec un carillon", "technique": "allumage synchronisé"},
+      {"t": "0:12.60-0:17.40", "what": "La lune monte, le ciel passe au violet ; maintien", "technique": "maintien contemplatif"},
+      {"t": "0:18.00-0:24.00", "what": "« Something warm / on the stove. » ; volutes de fumée, une ligne d'arôme se dessine de la cheminée vers l'homme", "technique": "tracé progressif"},
+      {"t": "0:24.90-0:31.60", "what": "« Someone who / knows your name. » ; la porte s'ouvre, flaque de lumière, une seconde silhouette rejoint l'homme, étreinte avec halo rose, ils entrent", "technique": "porte et rencontre"},
+      {"t": "0:32.30-0:40.80", "what": "« Small things, repeated, / until they're yours. » ; jours et nuits en accéléré (≈ 2 s par jour), un arbre pousse, des oiseaux passent, les feuilles tombent", "technique": "accéléré des saisons"},
+      {"t": "0:41.30-0:46.40", "what": "« A house is where / you live. » ; travelling arrière, voisins, réverbères, lucioles", "technique": "travelling arrière"},
+      {"t": "0:47.30-0:54.30", "what": "« A home is what / waits for you there. » ; village de nuit étoilé", "technique": "maxime finale"},
+      {"t": "0:54.30-0:56.30", "what": "Le rideau se referme", "technique": "fermeture du rideau"},
+      {"t": "0:56.30-0:57.05", "what": "Fondu au noir", "technique": "fin au noir"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Deux couches. 1) Lit musical régulier (boîte à musique ou piano doux, probable) : attaques toutes les 0,833 s (0,05 s + k × 0,833 s), soit 72 BPM, 50 im par temps. 2) Huit attaques hors grille, les plus fortes de la piste (6,026 ; 6,339 ; 6,931 ; 7,245 ; 7,535 ; 11,819 ; 12,179 ; 12,527 s) : chacune tombe à 0-1 im d'une apparition visible (corps de la maison f361, toit f380, cheminée f416, porte et guirlande f435, fenêtres f452, fenêtre gauche f709, fenêtre droite f731, œil-de-bœuf f752) : 8 sur 8, sans décalage. Le reste des gestes n'est pas calé : sur 20 événements clés (descentes et sorties d'enseigne, lignes de texte, pièces, lumières), 9 tombent à ±3 im d'un temps ou demi-temps (hasard ≈ 28 %). Après 12,6 s, aucun son d'événement : la porte, l'étreinte, l'accéléré et le travelling ne sont pas sonorisés.",
+    "synced": ["apparitions", "couleur"],
+    "style_match": "Notes douces à 72 BPM, carillons légers : le caractère berceuse colle aux silhouettes, aux fondus lents et au thème du foyer. Aucune montée émotionnelle à l'étreinte ni au final.",
+    "how_built": "Prompt « gentle, fitting audio (made in code) » : audio généré par le même code que l'animation, avec un déclenchement de note à chaque élément construit. Décalage nul entre image et son, donc rendu probablement hors ligne (pas de latence de capture). Le lit musical tourne sur sa propre grille, l'animation sur une timeline en secondes."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Cadre de théâtre (rideau et lambrequin)",
+      "name_en": "stage frame device",
+      "t": "0:00-0:57.05",
+      "frames": "f0-f3420",
+      "fps": 60,
+      "mechanics": "Lambrequin festonné en haut (≈ 3 % de la hauteur) et pans de rideau sur les côtés (≈ 3-4 % de la largeur chacun) restent à l'image pendant toute la pièce ; le rideau s'ouvre au début et se referme à la fin. Le spectateur sait d'emblée qu'il regarde un spectacle d'ombres.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture du rideau",
+      "name_en": "curtain reveal",
+      "t": "0:01.30-0:02.80",
+      "frames": "f78-f168",
+      "fps": 60,
+      "mechanics": "Les deux pans glissent du centre vers les bords, bords ondulés comme du tissu ; ouverture de ≈ 12 % de la largeur à 1,5 s, 38 % à 2,0 s, 75 % à 2,5 s, quasi complète vers 2,8 s : ease-in-out sur ≈ 1,5 s. La première note de musique part avec l'ouverture (1,3 s). Fermeture symétrique de 54,3 à 56,3 s, puis fondu au noir.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-move-f129.jpg",
+      "illus": {"from": 78, "to": 168, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Scintillement d'allumage",
+      "name_en": "lamp flicker intro",
+      "t": "0:00.20-0:00.55",
+      "frames": "f12-f33",
+      "fps": 60,
+      "mechanics": "Le rideau apparaît à f12, s'assombrit f20-f23, revient f24-f32, s'assombrit encore à f33 : alternance de luminosité en paliers de 4 à 9 images, comme une lampe de scène qui s'allume (probable). Sans son associé, cela ressemble plutôt à un bug de chargement.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f23.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Enseigne suspendue",
+      "name_en": "hanging signboard",
+      "t": "0:02.12-0:54.30",
+      "frames": "f127-f3258",
+      "fps": 60,
+      "mechanics": "Panneau sombre #1E1612 (≈ 76 % de la largeur, ≈ 10 % de la hauteur, haut du cadre à y ≈ 6-17 %), bordure intérieure en pointillés façon couture, petits rivets aux coins, pendu au lambrequin par deux fils. Texte serif italique crème, casse de phrase, 2 lignes centrées, hauteur d'x ≈ 1,2 % du cadre : élégant mais trop petit pour un téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Descente de l'enseigne et révélation ligne à ligne",
+      "name_en": "drop-in sign, line-by-line fade",
+      "t": "0:17.35-0:18.85",
+      "frames": "f1041-f1131",
+      "fps": 60,
+      "mechanics": "Sortie : l'enseigne remonte hors champ en 6-8 im (f1041-f1047, ease-in). Vide de ≈ 0,5 s. Entrée : elle redescend en ≈ 12-14 im (f1080-f1095, ease-out avec léger balancement). Ligne 1 en fondu de ≈ 9 im (f1098-f1107), ligne 2 ≈ 0,45 s plus tard (f1125-f1131). Même cycle pour les 8 enseignes ; ligne 1 et ligne 2 de la 4e tombent sur un temps et un demi-temps (f1102, f1127).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1038, "to": 1131, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Mise au point du découpage",
+      "name_en": "shadow-puppet focus pull",
+      "t": "0:06.02-0:07.15",
+      "frames": "f361-f429",
+      "fps": 60,
+      "mechanics": "Chaque pièce de la maison apparaît floue (gros flou gaussien, bords baveux) puis devient nette en ≈ 20-25 im (toit : flou à f381, net à f405 ; cheminée : floue à f416, nette à f429), comme un découpage qu'on rapproche de l'écran d'ombres. Le corps de la maison monte du sol en 17 im (f361-f378, ease-out) tout en se précisant.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-003-move-f352.jpg",
+      "illus": {"from": 361, "to": 456, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Construction pièce par pièce",
+      "name_en": "sequential build-up",
+      "t": "0:06.02-0:07.60",
+      "frames": "f361-f456",
+      "fps": 60,
+      "mechanics": "5 ajouts en 1,5 s : corps f361, toit f380, cheminée f416, porte et guirlande lumineuse sous l'avant-toit f435, fenêtres et œil-de-bœuf f452. Écarts de 19, 36, 19 et 17 im : irrégulier, presque musical. Pendant ce temps, l'homme entre par la gauche en marchant (≈ 1 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une note par pièce posée",
+      "name_en": "build-step sound cues",
+      "t": "0:06.02-0:07.54",
+      "frames": "f361-f452",
+      "fps": 60,
+      "mechanics": "Les 5 attaques les plus fortes du début (6,026 ; 6,339 ; 6,931 ; 7,245 ; 7,535 s) tombent sur les 5 apparitions de la maison (f361, f380, f416, f435, f452), à 0-1 im. Notes douces et aiguës, hors de la grille du lit musical : le son est déclenché par l'image, pas l'inverse.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f352.jpg (point vert f362), extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Fenêtres qui s'allument une à une",
+      "name_en": "staggered window lights",
+      "t": "0:11.82-0:12.55",
+      "frames": "f709-f753",
+      "fps": 60,
+      "mechanics": "Fenêtre gauche à f709, fenêtre droite à f731, œil-de-bœuf à f752 (décalage ≈ 21 im = 0,36 s) ; chaque lumière #F6C76B s'ouvre avec un halo doux en ≈ 4-6 im, et un carillon tombe à la même image (11,819 ; 12,179 ; 12,527 s). Le petit cœur de la porte s'éclaire aussi. Illustration littérale de « a light left on for you ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 703, "to": 757, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Voyage de couleur du ciel",
+      "name_en": "color script",
+      "t": "0:00-0:57.05",
+      "frames": "f0-f3420",
+      "fps": 60,
+      "mechanics": "Ciel pêche #F4BE8C (0-9 s), rose #D48C86 (10-12 s), violet #8E7DB0 (14-24 s), bleu nuit #4E5194 (40-57 s), en fondu continu ; la lune monte de 13 à 17 s. La température passe du chaud au calme à mesure que le texte passe des objets (toit, murs) aux personnes et au temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Plans de silhouettes étagés",
+      "name_en": "layered silhouette depth",
+      "t": "0:00-0:57.05",
+      "frames": "f0-f3420",
+      "fps": 60,
+      "mechanics": "4 plans : collines et bourg lointains clairs et brumeux (#9C7A62 au coucher), arbres et clôtures intermédiaires, maison et personnages noirs, sol noir au premier plan (bas ≈ 20 % du cadre). La perspective atmosphérique donne la profondeur sans 3D.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Composition verticale en trois bandes",
+      "name_en": "vertical three-band layout",
+      "t": "0:02.12-0:54.30",
+      "frames": "f127-f3258",
+      "fps": 60,
+      "mechanics": "Bande haute : enseigne (6-17 %) ; bande du milieu : ciel vide, lune (≈ 20-50 %) ; bande basse : maison au centre (faîte à ≈ 50 %, base à ≈ 80 %), homme à gauche (x ≈ 15 %, ≈ 20 % de la hauteur), réverbère à droite. Le ciel vide laisse respirer le texte mais gaspille le centre de l'écran.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Silhouette à l'écharpe au vent",
+      "name_en": "silhouette with secondary motion",
+      "t": "0:05.95-0:31.50",
+      "frames": "f357-f1890",
+      "fps": 60,
+      "mechanics": "Homme en haut-de-forme et manteau, entre par la gauche en ≈ 1 s (f357-f420) et reste debout à x ≈ 15 %. Seule son écharpe flotte au vent (animation secondaire) ; peu de jeu d'acteur pendant 25 s.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ligne d'arôme qui se dessine",
+      "name_en": "stroke draw-on aroma trail",
+      "t": "0:18.40-0:23.20",
+      "frames": "f1104-f1392",
+      "fps": 60,
+      "mechanics": "De petites volutes en spirale montent de la cheminée en boucle ; un trait fin courbe part de la cheminée (f1104), se dessine au-dessus du toit et redescend vers l'homme en ≈ 2 s (jusqu'à ≈ 20,5 s), reste, puis s'efface vers 23 s. Symbole de BD (l'odeur qui appelle) traduit en ombre.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Porte ouverte et étreinte",
+      "name_en": "door light spill and embrace",
+      "t": "0:25.30-0:32.50",
+      "frames": "f1518-f1950",
+      "fps": 60,
+      "mechanics": "La porte s'ouvre vers 25,3-25,5 s : rectangle lumineux #F6C76B et trapèze de lumière projeté au sol. Une seconde silhouette (robe) rejoint l'homme vers 27,5 s, étreinte de 28,5 à 30 s avec un halo rose #E0909E au-dessus, puis ils entrent ; la porte se referme vers 32,5 s. Moment clé mais figures à ≈ 15-20 % de la hauteur, fusionnées : difficile à lire.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accéléré des jours et des saisons",
+      "name_en": "time-lapse montage",
+      "t": "0:32.50-0:40.50",
+      "frames": "f1950-f2430",
+      "fps": 60,
+      "mechanics": "Cycle jour-nuit ≈ 2 s (aube grise, jour jaune #F2D9A0 avec soleil, crépuscule, nuit bleue avec lune), 4 cycles ; les fenêtres s'éteignent le jour et se rallument la nuit ; un arbre pousse à gauche (de ≈ 12 % à ≈ 30 % de la hauteur), se couvre de feuilles, les perd ; un vol de 3 à 5 oiseaux traverse en journée. Mise en image directe de « Small things, repeated ».",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-07.jpg",
+      "illus": {"from": 1980, "to": 2400, "n": 8}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling arrière sur le village",
+      "name_en": "pull-back reveal",
+      "t": "0:42.50-0:47.30",
+      "frames": "f2550-f2838",
+      "fps": 60,
+      "mechanics": "La maison passe de ≈ 48 % à ≈ 28 % de la largeur en ≈ 4,8 s (ease-in-out) ; le ciel s'agrandit, de nouvelles étoiles apparaissent, une maison voisine aux fenêtres allumées, un moulin et des réverbères allumés entrent par la droite. Passage de « ma maison » à « un foyer parmi d'autres ».",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Étoiles qui se densifient et lucioles",
+      "name_en": "twinkling stars and fireflies",
+      "t": "0:17.00-0:56.00",
+      "frames": "f1020-f3360",
+      "fps": 60,
+      "mechanics": "Les étoiles apparaissent progressivement (quelques-unes à 17 s, champ dense après 41 s) et scintillent ; dès ≈ 40 s, des lucioles jaunes dérivent près du sol. Mouvement de fond permanent qui évite l'image figée, mais trop discret pour porter le rythme.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Question, négations, réponses concrètes, maxime",
+      "name_en": "question-to-aphorism structure",
+      "t": "0:02.12-0:54.30",
+      "frames": "f127-f3258",
+      "fps": 60,
+      "mechanics": "Question (« What makes a place feel like home? »), deux négations (« Not the roof. Not the walls. »), trois réponses concrètes illustrées chacune (lumière, plat chaud, quelqu'un), une généralisation (« Small things, repeated… »), puis une maxime en deux temps (« A house is where you live. A home is what waits for you there. »). Chaque enseigne a son image.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-09.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Lit musical régulier à 72 BPM",
+      "name_en": "steady music-box bed",
+      "t": "0:01.30-0:56.30",
+      "frames": "f78-f3378",
+      "fps": 60,
+      "mechanics": "Une note toutes les 0,833 s (50 im), volume constant ≈ −27 dB de 1 à 55 s, puis fondu (−33 dB à 55 s, silence à 56 s avec le rideau). Aucune évolution aux temps forts (étreinte, accéléré, travelling) : le son accompagne sans raconter.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rythme contemplatif",
+      "name_en": "slow contemplative pacing",
+      "t": "0:00-0:57.05",
+      "frames": "f0-f3420",
+      "fps": 60,
+      "mechanics": "Légendes tenues 4,5 à 7 s, un seul plan, 55 % de la durée quasi immobile (maintien le plus long 4,7 s, 12,5-17,2 s). Cohérent avec « gentle », à l'opposé de la grammaire 1600 (quelque chose toutes les 0,5-1 s).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« paper cut-out shadow theatre style » a été pris au pied de la lettre : rideau, silhouettes en plans étagés et surtout le flou de mise au point, propre aux ombres chinoises. Nommer une technique artisanale précise donne une DA cohérente."},
+    {"kind": "build", "insight": "« gentle, fitting audio (made in code) » : le son est produit par le même code que l'image, d'où des notes déclenchées à l'image près sur la construction et les lumières (8 sur 8, décalage nul). Exiger l'audio en code est le moyen le plus sûr d'obtenir une synchro."},
+    {"kind": "structure", "insight": "Le thème posé en question a produit un poème en 8 enseignes avec une maxime finale ; Claude a illustré chaque phrase littéralement (lumière = fenêtres, plat = fumée, quelqu'un = porte)."},
+    {"kind": "other", "insight": "« 30-60s » : Claude a pris le maximum (57 s) en étirant les maintiens, au lieu d'ajouter des événements. Préciser une densité (un changement toutes les 1-2 s) éviterait les 55 % d'image figée."},
+    {"kind": "qa", "insight": "Aucune consigne de lisibilité en 9:16 : texte à ≈ 1,2 % de hauteur d'x et personnages à 20 % de la hauteur. Il faudrait imposer une taille minimale de texte (≈ 4 % de la hauteur) et un gros plan pour l'étreinte."},
+    {"kind": "inputs", "insight": "Aucun texte fourni : Claude a écrit le script (8 phrases courtes), ce qui fixe le rythme de la pièce ; le son ne suit les événements que pendant la construction (6-12,6 s), ensuite plus aucun repère sonore."}
+  ],
+  "steal": [
+    "Faire entrer un élément flou puis le mettre au point en ≈ 0,4 s : le découpage qui se rapproche de l'écran d'ombres.",
+    "Construire un décor en 5 ajouts sur 1,5 s, une note douce par pièce, déclenchée par le code à l'image près.",
+    "Allumer les fenêtres une à une à 0,36 s d'écart, un carillon par lumière, halo chaud en 4-6 images.",
+    "Faire voyager la couleur du ciel avec le texte : pêche, rose, violet, bleu nuit, une teinte par idée.",
+    "Illustrer « répété » par un accéléré : cycle jour-nuit de 2 s, arbre qui pousse et perd ses feuilles."
+  ],
+  "flaws": [
+    "Texte italique fin à ≈ 1,2 % de hauteur d'x : illisible sur téléphone en 9:16.",
+    "55 % de la durée quasi immobile, légendes tenues 5 à 7 s : trop lent pour un format social.",
+    "Étreinte, moment clé, jouée par des silhouettes à 20 % de la hauteur, fusionnées et mal lisibles.",
+    "Sons d'événement seulement de 6 à 12,6 s ; ensuite lit musical plat, sans montée.",
+    "Scintillement noir-rouge du début qui ressemble à un bug."
+  ],
+  "deep_study": {"worth": false, "why": "Mouvements lents et simples ; les deux moments riches (construction avec mise au point, allumage des fenêtres) sont déjà couverts par extra-01 et extra-02. Pas besoin d'une étude continue à 60 fps."}
+}

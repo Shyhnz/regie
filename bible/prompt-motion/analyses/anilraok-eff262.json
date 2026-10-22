@@ -1,0 +1,392 @@
+{
+  "slug": "anilraok-eff262",
+  "title": "Scrabble tile character story",
+  "handle": "@Anilraok",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Vraie histoire en 3 actes avec jeu d'acteur lisible (yeux, sourcils, squash), lumière PBR soignée et chute qui relie l'histoire au produit ; plombée par un acte 1 confus et 6,5 s de carton final figé.",
+  "summary": "Des tuiles de Scrabble à yeux brillants remplissent une mini grille de mots croisés. Le Q, lettre à 10 points que personne ne veut, est évincé, s'isole dans la nuit bleue, puis revient d'un salto et se pose dans sa case : QUILT et QUIET n'existent pas sans lui. Confettis, vue de dessus, slogan « Every puzzle needs every letter. » et logo Grid Genius. Récit clair, chaleur Pixar, rythme inégal.",
+  "prompt_vs_result": [
+    "Imaginer une histoire qui promeut subtilement l'app Grid Genius (ou un thème voisin) pour les réseaux, puis la réaliser en Three.js/JavaScript avec une qualité « niveau Pixar ». Aucune durée, aucun format, aucune musique imposés.",
+    "Claude a tout inventé : tuiles de Scrabble personnages, le Q exclu comme héros, la grille « THE MINI No. 1 » dont les mots exigent le Q, le script couleur froid puis chaud, le format vertical de 42 s, le slogan et le logo pixel.",
+    "« Pixar-level » a bien poussé le jeu d'acteur et la lumière. Rien sur la durée, le nombre de plans ni le tempo : acte central lent, coupes non calées, carton final interminable. Il fallait fixer durée, actes en secondes et BPM."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1A120E", "role": "fond : table brun nuit (actes 1 et 3)"},
+      {"hex": "#0C1220", "role": "fond : ciel nuit bleu de l'acte 2 (solitude)"},
+      {"hex": "#E2C597", "role": "tuiles en bois clair"},
+      {"hex": "#2B1B12", "role": "lettres, sourcils"},
+      {"hex": "#F1ECE2", "role": "papier de la grille"},
+      {"hex": "#F2B25E", "role": "lumière chaude, bokeh, anneau d'impact"},
+      {"hex": "#BCD3FF", "role": "bokeh froid, lune"},
+      {"hex": "#C9661F", "role": "mug orange (accessoire)"},
+      {"hex": "#1F2B5C", "role": "théière bleu marine (accessoire)"},
+      {"hex": "#E0893A", "role": "accent : mot « every » en italique, URL"},
+      {"hex": "#F5F0E6", "role": "titre du carton final"}
+    ],
+    "type": "Lettres des tuiles : serif transitionnelle noire (type Times/Baskerville probable), capitales ≈55 % de la tuile. Carton : serif romaine ≈2,4 % de hauteur, « every » italique orange ; logo dot-matrix pixel ≈2,5 % ; URL mono capitales très espacées ≈0,8 %.",
+    "texture": "Bois PBR veiné à arêtes arrondies, yeux sphériques noirs à reflet spéculaire, ombres douces, faible profondeur de champ (bokeh rond chaud et froid), flaque de lumière volumétrique sur le papier, vapeur du mug, bouffées de poussière aux atterrissages, confettis, léger bloom. Pas de flou de mouvement.",
+    "style": "jouets en bois 3D façon Pixar",
+    "coherence": "Le système tient par le matériau unique (bois + papier journal) et le script couleur (brun chaud → bleu nuit → or). Il se casse au carton final : le logo pixel dot-matrix n'a aucun lien avec la serif du journal ni avec le bois."
+  },
+  "rhythm": {
+    "bpm": 100,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo global estimé 99,6 BPM (pulsation nette 3,16), mais la musique change par acte : 113,5 BPM sur 3-12 s (netteté 5,56, temps tous les 15,9 im), 75,5 BPM sur 20-30 s (netteté 5,17 ; rapport 3/4 avec ≈100, ambigu). 14 coupes, plan médian 1,37 s, plus court 0,17 s. Répartition très inégale : acte 1 = un seul plan large de 1,3 à 8,5 s où une tuile saute environ tous les temps (≈16-18 im) ; acte 2 = plans longs et lents (15,2-18,9 s, 3,7 s de flottement dos caméra) ; acte 3 = 10 coupes en 8,5 s (19-27,5 s) avec punch-ins successifs. Atterrissages de l'acte 3 sur les barres bleues (f639, f702, f720, f820 à 0 im), coupes libres (4 sur 9 à ±2 im d'une barre, hasard ≈55 % à 30 fps avec demi-temps). Temps mort : carton final figé de 34,8 à 41,3 s (seuls deux fondus d'apparition), 14 % du film en maintien statique.",
+    "timeline": [
+      {"t": "0:00-0:01.3", "what": "Fondu au noir en 5 im sur un plan macro des tuiles Q et U, bokeh chaud et froid ; le Q cligne (f34-f36)", "technique": "ouverture macro sur les visages"},
+      {"t": "0:01.3-0:04.0", "what": "Grue montante et recul : révélation du tas de tuiles, de la grille « THE MINI No. 1 » vide, de la théière et du mug", "technique": "plan de révélation (crane up + pull back)"},
+      {"t": "0:04.0-0:08.5", "what": "Les tuiles sautent une à une du tas vers la grille (S, M, E, A, D, T…), une par temps environ, en arcs avec rotation", "technique": "sauts en cascade calés sur le temps"},
+      {"t": "0:08.5-0:11.0", "what": "Gros plan : le Q sautille d'impatience ; un I tombe du haut et se plante devant lui (f296-f304)", "technique": "gag d'éviction, chute en ease-in"},
+      {"t": "0:11.0-0:13.8", "what": "Plan large : U, I, L, E complètent les lignes ; le Q reste seul dans le tas", "technique": "plan d'ensemble narratif"},
+      {"t": "0:13.8-0:15.2", "what": "Le Q se retourne de 180° en ≈6 im (dos vierge) et s'éloigne en sautant", "technique": "rotation de rejet, coupes dans le mouvement"},
+      {"t": "0:15.2-0:18.9", "what": "Table vide, ciel nuit bleu, lune : le Q flotte de dos puis se retourne, sourcils tristes", "technique": "script couleur froid, plan long de solitude"},
+      {"t": "0:18.9-0:21.0", "what": "Contrechamp : deux U regardent, clignent, remarquent l'absence", "technique": "plan de réaction"},
+      {"t": "0:21.0-0:22.2", "what": "Gros plan du Q : anticipation (écrasement f635-f639), yeux qui s'agrandissent puis se plissent", "technique": "squash and stretch d'anticipation"},
+      {"t": "0:22.2-0:23.0", "what": "Plan bas sur la rangée vue de dos : la case vide (peu lisible)", "technique": "plan subjectif"},
+      {"t": "0:23.0-0:25.5", "what": "Le Q saute vers la caméra sur un sol bleu à bokeh, atterrissages écrasés + poussière, punch-ins jusqu'au très gros plan des yeux déterminés, flare de contre-jour", "technique": "punch-ins axiaux, atterrissages sur le temps"},
+      {"t": "0:25.5-0:27.5", "what": "Plan large : salto du Q au-dessus du mug fumant, il retombe dans sa case ; anneau de lumière dorée (f820)", "technique": "arc de saut + onde de choc lumineuse"},
+      {"t": "0:27.5-0:29.5", "what": "Gros plan dans la lumière dorée, l'anneau traverse la coupe ; travelling sur la grille complète", "technique": "raccord dans le mouvement, retour de la lumière"},
+      {"t": "0:29.5-0:33.5", "what": "Pluie de confettis orange, blancs, bleu marine ; tuiles qui dodelinent", "technique": "célébration par particules"},
+      {"t": "0:33.5-0:34.8", "what": "Grue vers la vue de dessus : grille complète QUILT / QUIET / TIDES / TEAMS avec définitions et crayon", "technique": "plongée verticale vers un plan graphique"},
+      {"t": "0:35.0-0:35.8", "what": "Fondu du slogan « Every puzzle needs every letter. » en haut", "technique": "fondu d'apparition 20 im"},
+      {"t": "0:37.0-0:37.5", "what": "Fondu du bloc logo « Grid Genius » + accroche + URL en bas, le bas de l'image s'assombrit", "technique": "fondu d'apparition 15 im"},
+      {"t": "0:37.5-0:42.0", "what": "Carton figé puis fondu au noir de la scène 3D, le texte reste", "technique": "fondu au noir sélectif"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille globale (barres des planches) : les atterrissages de l'acte 3 tombent pile sur une barre bleue : écrasement d'anticipation f639 (0 im), atterrissage f702 (0 im, attaque verte f703), atterrissage f720 (0 im, attaque f721), impact dans la case f820 (0 im, attaque f820). Le demi-tour du Q passe de profil à f423 (barre f422) ; la chute du I touche à f304 (demi-temps f304). Acte 1 (grille du segment à 113,5 BPM) : départs de S f136-138 et de M f154-156 sur les temps 138,6 et 154,5, atterrissage du M f168-170 sur 170,4, coupe f329 sur 328,95 ; mais atterrissage du S f150-152 et du Q f270 hors temps. Coupes : 4 sur 9 à ±2 im (f568 +1, f629 -1 du demi-temps, f767 +2, f329), les autres à 3-5 im. Total gestes clés : 8 sur 15 à ±1 im d'un temps ou demi-temps (hasard ≈33 %), 6 sur 15 à ±1 im d'un temps plein (hasard 17 %). Le segment 20-30 s mesuré seul donne 75,5 BPM, grille sur laquelle seuls f720 et f767 tombent : la pulsation de cette partie est ambiguë. Conclusion : atterrissages et sauts de l'acte 1 calés, coupes et acte 2 libres.",
+    "synced": ["atterrissages", "departs", "impacts"],
+    "style_match": "Musique pincée douce (cithare ou harpe probable, d'après la transcription fantaisiste) à ≈100-113 BPM : ton conte pour enfants qui colle aux jouets en bois et aux sauts rebondis.",
+    "how_built": "Le prompt ne dit rien de la musique. Les atterrissages à 0 im du temps et les attaques sonores sur les impacts (f703, f721, f820) suggèrent soit des bruitages placés sur les contacts, soit une animation pilotée par une horloge en temps (probable). Les coupes, elles, ne sont pas quantifiées, et le tempo change par acte (113 puis ≈75-100 BPM), ce qui laisse penser à une piste choisie après coup et ajustée seulement sur les gestes forts."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Histoire d'outsider en trois actes (exclusion, solitude, retour triomphal)",
+      "name_en": "underdog three-act arc",
+      "t": "0:00-0:34.8",
+      "frames": "f0-f1044",
+      "fps": 30,
+      "mechanics": "Acte 1 (0-13,8 s) : le groupe remplit la grille sans le Q. Acte 2 (13,8-21 s) : le Q se détourne, s'isole dans le froid, le groupe remarque son absence. Acte 3 (21-34,8 s) : décision (anticipation), course, salto, retour dans la case, fête. Proportions 33 % / 17 % / 33 % + 17 % de carton final. Le pivot émotionnel tombe à la moitié (21 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-01 à overview-06"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chute produit : la grille exige la lettre exclue",
+      "name_en": "product-insight payoff",
+      "t": "0:33.5-0:37.5",
+      "frames": "f1005-f1125",
+      "fps": 30,
+      "mechanics": "Les mots choisis (QUILT en haut, QUIET à gauche, TIDES à droite, TEAMS en bas) partagent tous le coin du Q ou en dépendent : sans lui, deux mots tombent. Le slogan « Every puzzle needs every letter. » transforme l'histoire en morale et le logo arrive 2 s après comme signature. La promotion reste subtile, comme demandé.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-07.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Visage minimal : yeux brillants + barres de sourcils",
+      "name_en": "minimal face rig (googly eyes and brow bars)",
+      "t": "0:15.2-0:25.5",
+      "frames": "f456-f766",
+      "fps": 30,
+      "mechanics": "Deux yeux sphériques noirs à reflet blanc (≈12 % de la largeur de tuile chacun) et deux barres de sourcils. L'angle des sourcils joue toute l'émotion : intérieur relevé ≈15° = tristesse (f556), à plat = neutre, intérieur abaissé ≈20° = détermination (f745-f766). Les yeux grossissent ≈30 % à la surprise (f645) puis se plissent en fente (f660). Aucune bouche.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f568.jpg, microM-008-cut-f629.jpg, microM-011-cut-f767.jpg",
+      "illus": {"from": 556, "to": 766, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Clignement en 3 images",
+      "name_en": "three-frame blink",
+      "t": "0:01.53-0:01.60",
+      "frames": "f46-f48",
+      "fps": 30,
+      "mechanics": "Paupière à moitié f46, fermée f47, à moitié f48 : 3 im = 0,1 s. Les tuiles voisines clignent en décalé (Q à f34-f36, U à f46-f48, puis U à f575-f578), ce qui donne de la vie aux plans fixes.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f46.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Anticipation par écrasement et étirement d'un objet rigide",
+      "name_en": "anticipation squash and stretch",
+      "t": "0:21.17-0:21.47",
+      "frames": "f635-f644",
+      "fps": 30,
+      "mechanics": "La tuile du Q descend et s'écrase ≈8 % en hauteur sur 5 im (f635-f639, point bas pile sur la barre bleue f639), puis s'étire ≈8 % au-dessus de sa taille sur 4 im (f640-f643) : ease-in à la descente, détente rapide. Prépare le départ de l'acte 3.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f629.jpg",
+      "illus": {"from": 629, "to": 646, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Atterrissage écrasé avec bouffée de poussière",
+      "name_en": "landing squash with dust puff",
+      "t": "0:23.40-0:24.10",
+      "frames": "f700-f723",
+      "fps": 30,
+      "mechanics": "Atterrissage f702 : hauteur -12 %, poussière blanche douce à la base f703-f706 (≈10 im). Grand saut suivant : la tuile retombe f719, écrasement maximal f720 (hauteur ≈-20 %, largeur +5 %), rebond étiré f722-f723 puis retour au repos. Les deux contacts tombent à 0 im d'une barre bleue, avec attaque audio 1 im après.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f689.jpg, microM-010-move-f723.jpg",
+      "illus": {"from": 711, "to": 726, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Sauts en cascade, une tuile par temps",
+      "name_en": "staggered hop relay",
+      "t": "0:04.4-0:08.5",
+      "frames": "f132-f255",
+      "fps": 30,
+      "mechanics": "Chaque tuile quitte le tas, décrit un arc parabolique de ≈16 im (0,53 s) en tournant de ≈20-40°, puis se pose dans la grille. Départs espacés de ≈16-18 im (S f136, M f154, E f172), soit environ un temps à 113,5 BPM. Les arcs se chevauchent : il y a toujours une tuile en l'air. Tuiles ≈5 % de la hauteur du cadre : on suit mal qui va où.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Gag d'éviction : chute en accélération devant le héros",
+      "name_en": "drop-in block gag",
+      "t": "0:09.87-0:10.13",
+      "frames": "f296-f304",
+      "fps": 30,
+      "mechanics": "Le I tombe du haut du cadre en 7 im (f296-f303), pas croissants = ease-in gravitaire, légère rotation, et se plante devant le Q qui sautillait (impact f303-f304, demi-temps f304). Le Q recule et se décale ensuite (f305-f316).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f303.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Demi-tour de rejet (dos vierge)",
+      "name_en": "turn-away 180° spin",
+      "t": "0:14.03-0:14.23",
+      "frames": "f421-f427",
+      "fps": 30,
+      "mechanics": "Le Q pivote de 180° sur l'axe vertical en ≈6 im (profil à f423, barre bleue f422), ease-in-out, et montre son dos de bois vierge : il perd littéralement son identité. Il s'élève ensuite de ≈10 % du cadre et s'éloigne en profondeur.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f431.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Ouverture macro puis grue de révélation",
+      "name_en": "macro open into crane-up reveal",
+      "t": "0:00-0:04.0",
+      "frames": "f0-f120",
+      "fps": 30,
+      "mechanics": "Plan macro serré sur les visages Q et U (tuiles ≈45 % de la largeur chacune), fondu au noir en 5 im (f0-f5). À partir de f40, la caméra monte et recule en ease-in-out sur ≈80 im : les tuiles passent de 45 % à 10 % de la largeur, la grille vide entre par le bas. Pose le décor sans texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f5.jpg, microM-002-move-f46.jpg, overview-01.jpg",
+      "illus": {"from": 30, "to": 120, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Punch-ins axiaux successifs vers les yeux déterminés",
+      "name_en": "progressive axial punch-ins",
+      "t": "0:23.0-0:25.5",
+      "frames": "f689-f766",
+      "fps": 30,
+      "mechanics": "Coupes dans l'axe à f715 (tuile de 25 % à 50 % de la hauteur), f728 (caméra plus basse) et f752 (très gros plan : seuls les yeux et le haut du Q). L'échelle double à chaque saut. Une seule des trois tombe près d'une barre (f728, -1 im). Monte la tension avant le salto.",
+      "verdict": "adapter",
+      "evidence": "microM-010-move-f723.jpg, microM-011-cut-f767.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Grue vers la vue de dessus qui aplatit la scène en graphique",
+      "name_en": "crane to top-down flat reveal",
+      "t": "0:33.0-0:34.8",
+      "frames": "f990-f1044",
+      "fps": 30,
+      "mechanics": "La caméra passe d'une plongée oblique ≈40° à la verticale en ≈54 im, ease-out, avec léger recul : la grille 3D devient une page de journal plate (≈80 % de la largeur, centrée) avec définitions et crayon. Ce plan sert de fond au carton final.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Script couleur : froid quand il est seul, or quand il revient",
+      "name_en": "emotional color script",
+      "t": "0:15.2-0:30.0",
+      "frames": "f456-f900",
+      "fps": 30,
+      "mechanics": "Actes 1 et 3 : brun chaud #1A120E, flaque de lumière #F2B25E. Acte 2 : fond bleu nuit #0C1220, lune et bokeh froids #BCD3FF, sol bleuté. Le retour dans la case (f820) déclenche une montée de lumière dorée et de bloom sur tout le plan suivant. La couleur raconte l'appartenance.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de choc lumineuse à l'impact, qui traverse la coupe",
+      "name_en": "light shockwave ring across the cut",
+      "t": "0:27.33-0:28.0",
+      "frames": "f820-f840",
+      "fps": 30,
+      "mechanics": "Au contact du Q dans sa case (f820, barre bleue + attaque audio), un anneau de lumière dorée #F2B25E part du point d'impact sur le papier ; rayon de ≈15 % à plus de 100 % de la largeur en ≈12 im, ease-out. La coupe f826 vers le gros plan garde l'anneau en arrière-plan qui continue de s'étendre : raccord dans le mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f826.jpg",
+      "illus": {"from": 814, "to": 832, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Pluie de confettis de célébration",
+      "name_en": "confetti celebration",
+      "t": "0:29.5-0:34.0",
+      "frames": "f885-f1020",
+      "fps": 30,
+      "mechanics": "Une centaine de petits rectangles orange, blancs et bleu marine tombent lentement en voletant pendant ≈4,5 s, densité décroissante, pendant que la caméra monte. Couleurs reprises des accessoires (mug, théière).",
+      "verdict": "adapter",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Vapeur du mug comme vie d'ambiance",
+      "name_en": "ambient steam wisps",
+      "t": "0:25.5-0:27.5",
+      "frames": "f767-f826",
+      "fps": 30,
+      "mechanics": "Volutes blanches semi-transparentes qui montent en continu au-dessus du mug ; le salto du Q passe juste au-dessus. Donne de l'échelle (tuiles minuscules face au mug) et de la vie aux plans larges.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f767.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu PBR bois + faible profondeur de champ et bokeh",
+      "name_en": "PBR wood with shallow depth of field",
+      "t": "0:00-0:34.8",
+      "frames": "f0-f1044",
+      "fps": 30,
+      "mechanics": "Tuiles en bois veiné à arêtes arrondies, ombres douces, flaque volumétrique d'un projecteur latéral gauche. Arrière-plan et avant-plan flous en gros plan (bokeh rond chaud et froid de ≈3-5 % du cadre). Aucun flou de mouvement, même sur la chute du I : images nettes à 30 fps.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Accessoires de décor qui situent l'univers",
+      "name_en": "diegetic set props",
+      "t": "0:01.3-0:34.8",
+      "frames": "f40-f1044",
+      "fps": 30,
+      "mechanics": "Grille imprimée « THE MINI · No. 1 » avec définitions (Patchwork bedcover, Squads, Hushed, They come in at the shore), théière bleu marine, mug orange fumant, crayon : le décor dit « mots croisés du matin » sans un mot de voix off.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupes dans le mouvement pendant la fuite du Q",
+      "name_en": "match-on-action cuts",
+      "t": "0:13.83-0:15.20",
+      "frames": "f415-f456",
+      "fps": 30,
+      "mechanics": "Coupe f415 du plan large au plan moyen du Q dans le groupe, puis coupe f456 pendant qu'il s'éloigne : la tuile garde sa position relative et son mouvement d'un plan à l'autre. Aucune des deux n'est calée sur un temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Plan de réaction du groupe",
+      "name_en": "reaction shot",
+      "t": "0:18.93-0:20.97",
+      "frames": "f568-f629",
+      "fps": 30,
+      "mechanics": "Contrechamp de 2 s sur deux U qui regardent hors champ et clignent (f575-f578) : le groupe remarque l'absence. Coupe d'entrée f568, 1 im après une barre bleue (f567). Prépare la décision du Q.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f568.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Slogan serif avec mot accent en italique de couleur",
+      "name_en": "serif tagline with italic accent word",
+      "t": "0:35.0-0:42.0",
+      "frames": "f1050-f1262",
+      "fps": 30,
+      "mechanics": "« Every puzzle needs every letter. » sur 2 lignes centrées en haut (≈6 % du haut), serif romaine blanc cassé #F5F0E6 ≈2,4 % de hauteur ; le second « every » passe en italique orange #E0893A. Un seul accent, sur le mot qui porte la morale.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Bloc logo à trois niveaux (pixel, serif, mono)",
+      "name_en": "three-tier logo lockup",
+      "t": "0:37.0-0:42.0",
+      "frames": "f1110-f1262",
+      "fps": 30,
+      "mechanics": "En bas (≈15 % du bas) : « Grid Genius » en dot-matrix pixel gris clair ≈2,5 % de hauteur, accroche « Make a crossword about anything. » en serif ≈1,4 %, URL « GRIDGENIUS.APP » en mono capitales orange ≈0,8 %, interlettrage large. Le bas de l'image s'assombrit en dégradé pour la lisibilité. Le pixel est peu lisible à cette taille.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Fondus d'apparition décalés du slogan puis du logo",
+      "name_en": "staggered fade-ins",
+      "t": "0:35.0-0:37.5",
+      "frames": "f1050-f1125",
+      "fps": 30,
+      "mechanics": "Slogan : opacité 0 → 100 % en ≈20 im (f1053-f1074), sans déplacement. Logo : ≈15 im (f1110-f1125), 2 s plus tard. Pas de calage sur un temps visible, pas de mouvement : sobre mais statique.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir sélectif : la scène part, le texte reste",
+      "name_en": "selective fade to black",
+      "t": "0:41.3-0:42.07",
+      "frames": "f1239-f1262",
+      "fps": 30,
+      "mechanics": "La scène 3D s'éteint en ≈20 im pendant que le slogan et le logo restent à pleine opacité : dernière image = texte seul sur noir, propre pour une boucle ou une vignette.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Carton final figé de 6,5 s",
+      "name_en": "long static end card",
+      "t": "0:34.8-0:41.3",
+      "frames": "f1044-f1239",
+      "fps": 30,
+      "mechanics": "Trois maintiens statiques détectés (34,77-35,83 s, 36,0-37,27 s, 37,87-41,27 s) = 5,8 s sans mouvement hormis deux fondus. Sur un format social, l'attention tombe ; une respiration lumineuse ou un léger push-in aurait suffi.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Contacts calés sur le temps",
+      "name_en": "beat-locked landings",
+      "t": "0:21.3-0:27.33",
+      "frames": "f639-f820",
+      "fps": 30,
+      "mechanics": "Point bas de l'anticipation f639, atterrissages f702 et f720, impact final f820 : tous à 0 im d'une barre bleue, avec attaque audio 0-1 im après (f703, f721, f820). Les départs et les coupes ne sont pas quantifiés. Le contact fort tombe sur le temps et le reste du geste respire.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f629.jpg, microM-009-cut-f689.jpg, microM-010-move-f723.jpg, microM-012-cut-f826.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Tempo musical qui change selon l'acte (probable)",
+      "name_en": "act-based tempo shift",
+      "t": "0:03-0:30",
+      "frames": "f90-f900",
+      "fps": 30,
+      "mechanics": "Mesure par segment : 113,5 BPM sur 3-12 s (rassemblement joyeux, sauts une tuile par temps) contre 75,5 BPM sur 20-30 s (retour, pulsation ambiguë, peut-être ≈100 BPM en 3/4). Le changement suit l'arc émotionnel ; à confirmer à l'écoute.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Pixar-level quality » a suffi à déclencher les codes Pixar : objets du quotidien personnifiés, yeux brillants, squash and stretch, lumière chaude, arc émotionnel d'outsider. Une référence de studio vaut ici un long cahier des charges."},
+    {"kind": "inputs", "insight": "Le prompt laissait l'histoire libre mais nommait l'app : Claude a trouvé un lien produit intelligent (la grille ne marche pas sans la lettre exclue) au lieu de montrer l'interface. Laisser le concept ouvert peut produire une meilleure pub qu'une démo."},
+    {"kind": "structure", "insight": "Aucune durée ni découpage demandés : l'acte 1 s'étale en un plan large de 7 s aux tuiles minuscules et le carton final dure 6,5 s. Préciser la durée par acte et le nombre de plans aurait resserré le film."},
+    {"kind": "build", "insight": "Three.js permet un vrai rendu PBR (bois, profondeur de champ, bokeh, volumétrique) et une caméra libre ; la vidéo montre qu'un prompt d'une phrase peut sortir une scène 3D crédible avec plusieurs plans montés."},
+    {"kind": "other", "insight": "Rien sur la musique : les contacts forts de l'acte 3 tombent sur le temps mais pas les coupes. Pour une synchro complète, il faut donner le BPM et demander que coupes et atterrissages soient quantifiés sur la grille."}
+  ],
+  "steal": [
+    "Faire du produit la morale : choisir un contenu (mots de la grille) qui exige l'élément exclu, puis conclure par une phrase qui relie l'histoire à l'app.",
+    "Script couleur narratif : bleu nuit froid quand le héros est seul, or chaud quand il rejoint le groupe ; l'impact d'arrivée rallume la lumière.",
+    "Visage minimal : deux yeux brillants et deux barres de sourcils ; l'angle des sourcils suffit à jouer tristesse, surprise et détermination.",
+    "Anticipation : écraser l'objet ≈8 % sur 5 im, l'étirer 4 im, puis poser chaque atterrissage sur le temps avec écrasement ≈20 % et poussière.",
+    "Finir par une grue vers la vue de dessus qui aplatit la scène 3D en graphique, et poser slogan et logo dessus."
+  ],
+  "flaws": [
+    "Carton final figé 6,5 s (34,8-41,3 s) : temps mort sur un format social.",
+    "Acte 1 en plan large avec tuiles à ≈5 % du cadre : on ne suit pas qui saute où.",
+    "Plan de 0:22.2 (rangée de dos, case vide) illisible : l'intention ne passe pas.",
+    "Logo dot-matrix sans lien avec la serif et le bois, peu lisible à 2,5 % de hauteur.",
+    "Coupes non calées sur la musique alors que les atterrissages le sont."
+  ],
+  "deep_study": {"worth": true, "why": "Oui, pour le jeu d'acteur : anticipation, atterrissages écrasés, clignements et sourcils, plus les contacts calés sur le temps, sont à décortiquer image par image (vidéo native à 30 fps). C'est le meilleur modèle du corpus pour une pub produit racontée par un personnage."}
+}

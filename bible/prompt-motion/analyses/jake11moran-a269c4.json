@@ -1,0 +1,339 @@
+{
+  "slug": "jake11moran-a269c4",
+  "title": "Animated agent session story",
+  "handle": "@jake11moran",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Jeu d'acteur cartoon, physique d'objets réglée (avion, maillet, papillon) et partition calée à l'image près ; mais plan fixe frontal pendant 45 s, citations petites et boucle demande/réponse répétitive.",
+  "summary": "Court-métrage de 52 s en aquarelle : l'agent, une boîte corail derrière un bureau, se réveille, reçoit les vraies demandes de Jake en avions de papier, répond en renvoyant des feuilles pliées, se prend un maillet de correction, reçoit des papillons de compliments, puis travaille jusqu'à la nuit. Force : chaque action a son accent musical à l'image près. Faiblesse : décor unique et plan figé.",
+  "prompt_vs_result": [
+    "Pas de prompt : vidéo produite avec la skill HyperFrames « session-story ». La skill impose le décor du bureau, les métaphores (avion = demande, maillet = correction, papillon = compliment), la chorégraphie et une partition orchestrale composée en code.",
+    "Claude a choisi la session de Jake et ses citations exactes, les objets de la pièce (guitare, clap de cinéma, courbe d'accélération encadrée, vinyle), le ciel jour → nuit et le thème musical.",
+    "Une skill avec moteur d'animation réglé produit une qualité constante qu'aucun prompt d'une ligne n'atteint. Limites : le moteur fige le cadrage et la structure, d'où une vidéo qui ressemble à toutes celles de la skill."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#261D2E", "role": "fond prune de l'ouverture et de la fermeture à l'iris"},
+      {"hex": "#EBE0BF", "role": "mur crème"},
+      {"hex": "#9CBAA9", "role": "soubassement vert d'eau"},
+      {"hex": "#AA6533", "role": "bureau"},
+      {"hex": "#C86A53", "role": "personnage (boîte corail)"},
+      {"hex": "#15070C", "role": "contour encré épais"},
+      {"hex": "#373E65", "role": "écran au repos"},
+      {"hex": "#8B3038", "role": "écran en erreur au coup de maillet"},
+      {"hex": "#548752", "role": "écran validé (coche)"},
+      {"hex": "#E8BD67", "role": "plaque dorée du bureau"},
+      {"hex": "#E4A5B1", "role": "ruban de compliment"},
+      {"hex": "#D4376E", "role": "cœurs"},
+      {"hex": "#EFC751", "role": "papillon"},
+      {"hex": "#262754", "role": "ciel de nuit"}
+    ],
+    "type": "Permanent Marker en capitales pour les citations de l'utilisateur (≈ 3 % de la hauteur) ; serif gras italique (Fraunces ou Georgia probable) pour la plaque « Jake's favorite agent » (≈ 4,5 %) ; mono vert menthe sur l'écran.",
+    "texture": "Aquarelle p5.brush : aplats marbrés, grain de papier, contours encrés épais et tremblés (≈ 8 px à 1080p) ; léger bruit de pellicule ; la nuit, halo de la lampe et dégradé radial sombre sur le mur ; étoile blanche d'impact ; pas de flou de mouvement.",
+    "style": "Cartoon aquarelle, sitcom de bureau",
+    "coherence": "Un seul décor frontal, une seule matière (aquarelle encrée), un personnage géométrique simple dont toute l'émotion passe par les yeux, et des objets-métaphores constants par type de message. La partition orchestrale cartoon tient le tout. Rien ne casse le système ; la répétition le rend prévisible."
+  },
+  "rhythm": {
+    "bpm": 119.3,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "24 i/s natifs, 52,67 s, 1263 images. Un seul plan-séquence : les deux « coupes » détectées (f9, f1240) sont l'ouverture et la fermeture à l'iris. Pulsation détectée 119,3 BPM (netteté 2,69), mais les accents ne suivent pas cette grille : ils suivent les actions (partition « cartoon », mickey-mousing). 9 gestes clés sur 13 tombent à ±1 im (±42 ms) d'une attaque audio, contre ≈ 22 % au hasard ; seulement 5 sur 12 à ±1 im d'un temps de la grille (hasard 25 %). Structure par « temps d'histoire » de 3 à 6 s (demande, réponse, correction, compliment, long travail), et à l'intérieur une action nouvelle toutes les 0,5 à 1 s. Le moment le plus calme est le gros plan sur l'écran (4,6-6,4 s) où seuls le curseur et une lente dérive bougent. Aucun maintien statique mesuré.",
+    "timeline": [
+      {"t": "0:00-0:00.46", "what": "Fond prune, nom « Jake's favorite agent » en filigrane ; iris qui s'ouvre d'un point sur le visage de l'agent", "technique": "ouverture à l'iris (iris in)"},
+      {"t": "0:00.5-0:03.7", "what": "Nuit à la fenêtre, l'agent dort penché, « Z z z » qui montent ; écran noir", "technique": "pose de sommeil + symboles cartoon"},
+      {"t": "0:03.7-0:06.4", "what": "Poussée de caméra vers l'écran avec inclinaison ; « Initiating session with Jake » tapé en mono vert, curseur bloc", "technique": "push-in + texte tapé synchronisé aux clics"},
+      {"t": "0:06.4-0:07.6", "what": "Retour rapide au plan large, il fait jour ; l'agent sursaute (« ! »), l'écran affiche du code", "technique": "pull-back + réveil en sursaut sur un accent"},
+      {"t": "0:07.6-0:09.5", "what": "Bâillement, sourire ^^, attente", "technique": "jeu d'expression"},
+      {"t": "0:09.5-0:13.0", "what": "Un avion de papier entre par la fenêtre, tourne derrière la tête, se pose ; l'agent le déplie : « CAN YOU CONTACT SHEET A MOCK STORY FOR ME »", "technique": "vol plané + dépliage"},
+      {"t": "0:13.3-0:14.2", "what": "Idée : grands yeux brillants, ampoule qui s'allume", "technique": "accent de l'idée sur une attaque"},
+      {"t": "0:14.5-0:16.5", "what": "Sourcils déterminés, frappe au clavier, l'écran passe du code à une icône d'image, étincelle", "technique": "travail + accents de pizzicato"},
+      {"t": "0:17.0-0:20.5", "what": "Feuille rose tapée « Here's the mock story as a contact sheet », pliée en avion et lancée par la fenêtre", "technique": "pliage + lancer"},
+      {"t": "0:21.2-0:25.5", "what": "Maillet géant qui pend, armé, frappe : agent écrasé, écran rouge, secousse ; le maillet se lève et se tourne : « WE HAVE TO SHOW ACTUAL MESSAGES » ; goutte de sueur ; sortie en haut à droite", "technique": "maillet de correction (squash + secousse)"},
+      {"t": "0:25.5-0:30.0", "what": "Air déterminé, nouvelle feuille « Here's design pass v2 », pliée et lancée", "technique": "boucle réponse"},
+      {"t": "0:30.5-0:34.0", "what": "Papillon jaune qui remorque un ruban « SO COOL », se pose sur la tête ; yeux en cœur, cœurs qui montent, écran vert coché", "technique": "papillon de compliment"},
+      {"t": "0:34.5-0:38.5", "what": "Deuxième avion, atterrissage glissé ; « OK BUILD PLEASE! », étincelle", "technique": "vol plané + atterrissage avec glissade"},
+      {"t": "0:38.5-0:42.5", "what": "Barre de progression qui se remplit ; à la fenêtre le ciel passe jour → coucher de soleil → nuit, la lampe s'allume ; coche verte", "technique": "fenêtre-horloge (time-lapse)"},
+      {"t": "0:43.0-0:46.5", "what": "Feuille « The film is built », pliée, lancée", "technique": "boucle réponse"},
+      {"t": "0:47.0-0:50.5", "what": "Deuxième papillon « THIS IS AMAZING », les deux rubans forment une arche, yeux en cœur", "technique": "compliment final"},
+      {"t": "0:50.5-0:52.67", "what": "Clin d'œil langue tirée ; iris qui se referme sur l'agent puis sur son seul visage, fond prune", "technique": "fermeture à l'iris (iris out) en deux temps"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Partition composée sur l'image (cartoon scoring). Attaques mesurées image par image : iris plein f11 / attaque 0,464 s (f11,1) ; début de frappe f93 / 3,855 s ; sursaut f174 / 7,268 s ; idée f320 / 13,317 s ; coup de maillet f532 / 22,175 s ; papillon posé f778 / 32,415 s ; avion qui touche le bureau f850 / 35,457 s ; surprise f896 / 37,326 s ; barre de progression f936 / 38,963 s. Bilan : 9 gestes clés sur 13 à ±1 im (±42 ms) d'une attaque, hasard ≈ 22 %. Ratés : retour caméra f155, coche verte f789, sortie du maillet f604, fermeture d'iris f1236. Sur la grille de 119 BPM : 5 sur 12 à ±1 im d'un temps (hasard 25 %). L'indice automatique ne voit rien sur la grille, mais la corrélation image/attaques est nette à 0 ms (z = 2,86). La frappe produit des clics toutes les ≈ 0,1 s (3,86 / 3,96 / 4,06 / 4,18 s).",
+    "synced": ["impacts", "atterrissages", "apparitions", "texte", "camera", "couleur"],
+    "style_match": "Orchestre cartoon (pizzicato, célesta, timbales, xylophone, probable) pour un personnage cartoon : les courbes élastiques, l'écrasement et les accents ponctuels collent au genre « dessin animé du samedi matin ».",
+    "how_built": "D'après la skill : Claude écrit un thème et un orchestre en Python (orchestra.py), chaque type d'action a un accent par défaut (idée = glockenspiel, coup = timbales, frappe = pizzicato, atterrissage = flûte), placé depuis le fichier de minutage du film ; rendu MIDI via la banque General MIDI d'Apple. La musique suit donc l'animation, à l'image près, et la construction échoue s'il y a plus de 1,2 s de silence."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture à l'iris depuis un point",
+      "name_en": "iris in from a dot",
+      "t": "0:00.08-0:00.46",
+      "frames": "f2-f11",
+      "fps": 24,
+      "mechanics": "Sur fond prune #261D2E, un cercle naît d'un point de 1 px au niveau du visage de l'agent (≈ 45 % de la hauteur) et grandit en accélérant : diamètre ≈ 1,5 % de la largeur à f3, 4 % f4, 7 % f5, 12 % f6, 20 % f7, 30 % f8, 45 % f9, 70 % f10, plein cadre f11. 9 images (0,375 s), ease-in exponentiel (× 1,5-1,7 par image). Le cadre plein tombe sur la première attaque forte (0,464 s = f11,1).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f9.jpg",
+      "illus": {"from": 2, "to": 11, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente vers l'écran, retour rapide",
+      "name_en": "slow push-in, fast pull-back",
+      "t": "0:03.71-0:07.17",
+      "frames": "f89-f172",
+      "fps": 24,
+      "mechanics": "Poussée de f89 à ≈ f135 (≈ 46 im, 1,9 s) : zoom ≈ ×3,5 vers le moniteur avec rotation progressive jusqu'à ≈ -6° (plan incliné), ease-in-out puis longue décélération ; départ sur le temps f90. Gros plan dérivant lentement jusqu'à f154. Retour au plan large de f155 à f172 (17 im, 0,7 s), plus rapide, rotation ramenée à 0°, qui se termine 2 images avant le sursaut (f174).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f95.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte tapé à l'écran avec clics sonores",
+      "name_en": "typed screen text with key clicks",
+      "t": "0:03.88-0:05.00",
+      "frames": "f93-f120",
+      "fps": 24,
+      "mechanics": "« Initiating session with Jake » en mono vert menthe sur bleu marine, curseur bloc. ≈ 0,8 caractère par image (≈ 19 car./s) : 8 caractères à f97, 16 à f107, phrase complète vers f120 ; curseur clignotant ensuite. Attaques audio toutes les ≈ 0,1 s (3,855 / 3,959 / 4,063 / 4,18 s) pendant la frappe.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f95.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Réveil en sursaut en 1 image",
+      "name_en": "one-frame startle pop",
+      "t": "0:07.21-0:07.58",
+      "frames": "f173-f182",
+      "fps": 24,
+      "mechanics": "f173 : agent tassé et penché, yeux mi-clos. f174 : il passe d'un coup à pleine hauteur, bouche en « o », bras écartés (aucune image intermédiaire, étirement implicite). « ! » apparaît en haut à droite à f176 et grossit jusqu'à f179 ; yeux grands ouverts. L'écran se remplit de code à f176. Accent à 7,268 s (f174,4) : moins de 1 image d'écart.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Bibliothèque d'expressions par les yeux",
+      "name_en": "eye-driven expression set",
+      "t": "0:00-0:52",
+      "mechanics": "Le personnage est un rectangle corail (≈ 25 % de la largeur) sans bouche au repos, deux yeux rectangulaires noirs avec reflet. ≥ 12 états : endormi, sursaut « ! », ^^ heureux, idée (yeux brillants + sourire), déterminé (sourcils en V), X étourdi, spirales, inquiet + goutte de sueur, yeux en cœur + joues rosées, clin d'œil langue tirée. Les changements se font en 1 image (pas de morphing).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Avion de papier en vol plané",
+      "name_en": "banked paper-plane glide",
+      "t": "0:34.58-0:35.71",
+      "frames": "f830-f857",
+      "fps": 24,
+      "mechanics": "L'avion entre par la fenêtre (≈ 25 % x, 20 % y), décrit une courbe inclinée à gauche derrière la guitare et le vase (f836-f840) en tournant sur lui-même, plonge (f841-f847), touche le bureau à f850-f851 puis glisse ≈ 4 % de la largeur en 6 images avec friction (ease-out) jusqu'à f857. Le contact tombe sur l'attaque 35,457 s (f851,0).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 830, "to": 857, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Dépliage et pliage avec plis visibles",
+      "name_en": "paper unfold / fold with crease lines",
+      "t": "0:36.50-0:37.00",
+      "frames": "f876-f888",
+      "fps": 24,
+      "mechanics": "La feuille passe de l'avion à plat en ≈ 12 images (0,5 s) ; les lignes de plis restent dessinées en diagonale sur la feuille dépliée. Le pliage inverse des réponses (feuille rose) se fait en 3 étapes visibles : coins vers le centre, moitié, ailes (≈ 28,5-29,5 s), avec des étapes qui se chevauchent (courbe très douce de type cubic-bezier(.857,0,.143,1) d'après la skill).",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Coup de maillet : écrasement, secousse, réaction de tout le décor",
+      "name_en": "mallet bonk squash with camera shake",
+      "t": "0:21.25-0:25.46",
+      "frames": "f510-f611",
+      "fps": 24,
+      "mechanics": "Le maillet (manche ≈ 40 % de la largeur) entre en haut à droite à f510, pend et s'arme lentement (souffle retenu, f512-f531) ; l'agent sursaute à f522. Impact f532 : l'agent s'écrase à ≈ 35 % de sa hauteur, étoile blanche, l'écran passe au rouge #8B3038 à f533, tout le cadre penche de ≈ 1-2° pendant ≈ 10 images (secousse). Retour élastique avec yeux en X (f534-f541), spirales (f544). Le maillet se lève (f549-f553), pivote en ease-in-out ≈ 8 images pour montrer sa face « WE HAVE TO SHOW ACTUAL MESSAGES » (f552-f559), reste suspendu jusqu'à f603, sort en accélérant (f604-f611). Impact sur l'attaque 22,175 s (f532,2).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f533.jpg",
+      "illus": {"from": 528, "to": 541, "n": 8}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Papillon qui remorque un ruban de compliment",
+      "name_en": "praise butterfly with ribbon",
+      "t": "0:31.92-0:33.50",
+      "frames": "f766-f804",
+      "fps": 24,
+      "mechanics": "Le papillon jaune #EFC751 arrive du haut à gauche en battant des ailes, tirant un ruban rose « SO COOL » qui suit sa trajectoire ; il se pose sur la tête à f778 (attaque 32,415 s = f778,0). Le ruban retombe de la tête au bureau. f788 yeux fermés heureux, f789 écran vert avec coche blanche, f790 yeux en cœur et joues rosées, f791-f803 trois cœurs montent à droite avec ≈ 2-3 im d'écart en grossissant.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 766, "to": 792, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Ampoule de l'idée",
+      "name_en": "lightbulb idea beat",
+      "t": "0:13.33-0:13.92",
+      "frames": "f320-f334",
+      "fps": 24,
+      "mechanics": "f320 : bascule en 1 image vers grands yeux brillants et sourire ouvert ; f322 : ampoule jaune au-dessus à droite de la tête, rayons qui pulsent f323-f334. Bascule sur l'attaque 13,317 s (f319,6) et sur un temps de la grille.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f321.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fenêtre-horloge : ciel en accéléré",
+      "name_en": "window as time-lapse clock",
+      "t": "0:38.50-0:42.00",
+      "frames": "f924-f1008",
+      "fps": 24,
+      "mechanics": "Pendant la longue tâche (barre de progression), la fenêtre passe du ciel bleu à un coucher de soleil rose-orangé (40,0 s), puis violet (41,0 s), puis nuit bleu marine #262754 avec étoiles et lune (41,5 s) ; la lampe de bureau s'allume et le mur s'assombrit en dégradé radial. ≈ 3 s pour plusieurs heures. Le début de la nuit répond à l'ouverture (0-3,7 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Écran qui change d'état avec l'histoire",
+      "name_en": "monitor as status light",
+      "t": "0:00-0:52",
+      "mechanics": "Le moniteur (≈ 15 % de la largeur, à droite) sert de voyant : noir (sommeil), texte de démarrage, lignes de code colorées (travail), icône d'image (livrable), rouge (correction, changement à l'image d'impact), barre de progression (long travail), vert avec coche (validé). Changements en 1 image.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Plateau frontal symétrique, personnalisé",
+      "name_en": "personalised frontal sitcom set",
+      "t": "0:00-0:52",
+      "mechanics": "Bureau sur ≈ 75 % de la largeur dans le tiers bas, plaque dorée centrée ; agent au centre, écran à droite, guitare à gauche, fenêtre en haut à gauche, liège avec photos, courbe d'accélération en S encadrée, étagère avec clap de cinéma et livres, vinyle, casque, bras de micro. Les objets disent qui est l'utilisateur (vidéo, musique, motion design). Cadre fixe pendant ≈ 45 s.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Aquarelle encrée générée",
+      "name_en": "procedural watercolour (p5.brush)",
+      "t": "0:00-0:52",
+      "mechanics": "Aplats marbrés comme une aquarelle (variations de ≈ 5-10 % de luminosité dans un même aplat), grain de papier, contours noirs #15070C épais et irréguliers, léger bruit. La nuit : halo de lampe et vignettage. Aucun dégradé numérique lisse.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Citations réelles au feutre sur papier",
+      "name_en": "verbatim quotes in marker",
+      "t": "0:12.50-0:44.50",
+      "mechanics": "Les demandes de l'utilisateur sont écrites en Permanent Marker capitales noires sur feuille blanche plissée (≈ 3 % de la hauteur, 3 lignes) ; les réponses de l'agent en feutre rouge sur feuille rose ; la correction en rouge sur la face ronde du maillet. Les mots sont cités tels quels (« CAN YOU CONTACT SHEET A MOCK STORY FOR ME »).",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Partition cartoon calée sur chaque action",
+      "name_en": "mickey-mousing cue score",
+      "t": "0:00-0:52",
+      "mechanics": "La musique est écrite après l'animation : chaque action reçoit un accent à moins de 1 image. Mesures : iris plein 0,458 s / attaque 0,464 s ; sursaut 7,250 / 7,268 ; idée 13,333 / 13,317 ; coup de maillet 22,167 / 22,175 ; papillon posé 32,417 / 32,415 ; avion posé 35,417 / 35,457 ; surprise 37,333 / 37,326 ; papillon 2 48,625 / 48,623. 9 gestes clés sur 13 à ±1 im d'une attaque (hasard ≈ 22 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f533.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un instrument par type d'action",
+      "name_en": "instrument-per-action palette",
+      "t": "0:00-0:52",
+      "mechanics": "D'après la skill (probable à l'écoute) : boîte à musique (célesta) pour le sommeil et la fin, cloches pour la frappe du titre et l'idée, xylophone pour le sursaut, pizzicato pour la frappe et le travail (rafale de 6 attaques à ≈ 0,22 s entre 14,83 et 15,93 s pendant que l'agent tape), timbales et percussions pour le coup, trombone pour l'élan du maillet, cordes et cor pour les compliments. Le caractère du son colle à celui du geste.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pulsation de fond hors grille",
+      "name_en": "walking pulse under free cues",
+      "t": "0:00-0:52",
+      "mechanics": "Une pulsation régulière à ≈ 119 BPM (netteté 2,69) tient le fond, mais les accents ne sont pas quantifiés sur elle : 5 gestes sur 12 seulement à ±1 im d'un temps (hasard 25 %). Les départs de caméra (f90) et l'idée (f320) tombent sur un temps, le coup de maillet 1 im après un demi-temps. La synchro est « à l'action », pas « au tempo ».",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f321.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Temps d'arrêt avant le moment lourd",
+      "name_en": "anticipation hold before the hit",
+      "t": "0:21.25-0:22.17",
+      "frames": "f510-f532",
+      "fps": 24,
+      "mechanics": "Le maillet entre et pend ≈ 22 images (0,9 s) avec un mouvement d'armé très lent avant d'accélérer sur les 2-3 dernières images vers l'impact : anticipation longue, action très courte. Même principe avant le lancer des avions (bras armé, courte retenue).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f512.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "La réaction part sur l'image de la cause",
+      "name_en": "reaction on the cause frame",
+      "t": "0:22.17-0:22.21",
+      "frames": "f532-f533",
+      "fps": 24,
+      "mechanics": "Écrasement du personnage, étoile d'impact, écran rouge et secousse du cadre démarrent sur l'image d'impact ou la suivante ; de même la coche verte et les yeux en cœur suivent l'atterrissage du papillon en ≈ 10 images. Aucun délai d'« humeur » entre cause et effet.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f533.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Objets-métaphores par type de message",
+      "name_en": "message-type object metaphors",
+      "t": "0:09.5-0:50.5",
+      "mechanics": "Demande = avion de papier qui arrive par la fenêtre et se déplie ; réponse = feuille rose tapée, pliée en avion et relancée ; correction = maillet qui frappe puis montre les mots sur sa face ; compliment = papillon qui remorque un ruban. Le spectateur apprend la grammaire au premier passage et la reconnaît ensuite.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc d'une journée de session",
+      "name_en": "one-session day arc",
+      "t": "0:00-0:52.67",
+      "mechanics": "Sommeil → démarrage « Initiating session with Jake » → demande → réponse → correction → réponse v2 → compliment → demande de construire → long travail jusqu'à la nuit → livraison → compliment final → clin d'œil et iris. Ouverture et fin sur le même fond prune avec le même nom en filigrane.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fermeture à l'iris en deux temps",
+      "name_en": "two-stage iris out",
+      "t": "0:51.50-0:52.67",
+      "frames": "f1236-f1263",
+      "fps": 24,
+      "mechanics": "f1236 : coins arrondis ; f1237-f1243 : le cercle se resserre vite (≈ 100 % → 35 % de la hauteur en 7 images, ease-out), puis ralentit (35 % → 30 % de f1244 à f1253) en cadrant l'agent avec ses rubans ; second resserrement jusqu'à ≈ 12 % autour de son seul visage (52,5 s). Fond prune et plaque en filigrane comme à l'ouverture. Départ sur un temps (f1237).",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1240.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Symboles cartoon en surimpression",
+      "name_en": "cartoon emanata",
+      "t": "0:00.5-0:50",
+      "mechanics": "« Z z z » qui montent en zigzag (sommeil), « ! » (surprise), étincelles à quatre branches (réussite, f396, f899-f909), étoile d'impact, goutte de sueur, spirales, cœurs. Chacun apparaît en 1-3 images avec un petit rebond d'échelle.",
+      "verdict": "adapter",
+      "evidence": "microM-010-move-f897.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "build", "insight": "Aucun prompt : la skill « session-story » fournit un moteur dont la physique est déjà réglée (vol plané, pliage, maillet, papillon). Claude n'écrit que l'histoire (fichier de scènes), le décor et la partition. C'est pourquoi la qualité du mouvement dépasse largement celle des vidéos nées d'un prompt d'une ligne."},
+    {"kind": "inputs", "insight": "Les vraies conversations de l'utilisateur, citées mot pour mot, et ce que l'agent sait de lui (vidéo, musique, motion design) nourrissent les citations et les objets du décor. Donner du matériau réel produit de la spécificité qu'aucune consigne de style ne remplace."},
+    {"kind": "structure", "insight": "Le récit est construit à partir de types de temps (demande, travail, réponse, correction, compliment, fin), chacun avec sa chorégraphie et son accent musical. Écrire une vidéo comme une suite de temps typés rend la synchro automatique."},
+    {"kind": "direction", "insight": "Règles de mouvement écrites dans la skill : « aucun mouvement de remplissage, chaque instant appartient à une action », « une réaction part sur l'image de sa cause », « un moment lourd reçoit un temps d'immobilité avant lui ». Elles se lisent directement à l'image."},
+    {"kind": "qa", "insight": "La construction échoue s'il y a plus de 1,2 s de silence dans la partition, et un script vérifie la longueur des citations. Le contrôle automatique du « temps mort sonore » est une idée à reprendre dans HyperFrames."},
+    {"kind": "other", "insight": "La musique est composée en code (orchestre MIDI) depuis le minutage du film : c'est le cas inverse du montage sur musique, et la seule manière d'obtenir des accents à moins de 1 image sur chaque geste sans monteur."}
+  ],
+  "steal": [
+    "Composer la bande-son depuis le minutage : un accent par action (impact = timbales, idée = cloche, frappe = pizzicato), placé à l'image près.",
+    "Faire réagir tout le décor sur l'image d'impact : écrasement, étoile, écran qui change de couleur, secousse de 1-2° pendant 10 images.",
+    "Ouvrir à l'iris depuis un point sur le visage et fermer à l'iris sur le même personnage, sur le même fond : boucle immédiate.",
+    "Associer un objet à chaque type de message (avion, maillet, papillon) pour que le récit se lise sans texte.",
+    "Utiliser la fenêtre comme horloge : jour → coucher de soleil → nuit en 3 s pour montrer une longue tâche."
+  ],
+  "flaws": [
+    "Plan large frontal fixe pendant ≈ 45 s : un seul mouvement de caméra, aucune variation de valeur de plan.",
+    "Citations petites (≈ 3 % de la hauteur) et lisibles ≈ 1,5 s seulement ; le sens échappe sans contexte.",
+    "Boucle demande → réponse → avion répétée 3 fois à l'identique : prévisible dès la deuxième.",
+    "Réponses en feutre rouge sur papier rose : contraste faible.",
+    "Décor et chorégraphie de la skill : toutes les vidéos qu'elle produit se ressemblent."
+  ],
+  "deep_study": {"worth": true, "why": "À sa cadence native de 24 i/s, chaque image compte : courbe d'armé et d'impact du maillet, rebond de l'écrasement, trajectoire de vol plané, pliage en étapes et surtout la correspondance image/accent sonore. C'est la meilleure référence du corpus pour la synchro « cartoon » et le jeu d'acteur."}
+}

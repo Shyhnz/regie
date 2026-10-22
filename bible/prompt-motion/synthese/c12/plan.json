@@ -1,0 +1,671 @@
+{
+ "chapter": "c12",
+ "title": "Méthode de production",
+ "role": "Colonne vertébrale du parcours de production A (10 étapes) : chaque entrée d'étape devient une page de A. Sources directes : SYN/c13/insights.jsonl (1 403 constats : build 226, qa 197, structure 231, inputs 231, direction 283, banned 65, other 170), SYN/c13/prompts.jsonl, SYN/c11/flaws.jsonl (1 141 défauts), SYN/videos.json, KB/skills (cinetic, product-film, session-story), KB/site, études 60 fps (c14), guide Otom (digest, chapitre 12, sections 3, 4, 5.1), savoir-faire HyperFrames, skill motion-premiers-principes, apports c12 des skills open source (awesome-video-skills/_methode/rendu/*/chap-c12.md, déjà dans le doc).",
+ "gabarit_entree_etape": [
+  "## Étape N · <titre> (titre exact du plan)",
+  "Chapeau 2-4 phrases : à quoi sert l'étape, quand on la fait, un chiffre. Dernière phrase : ce qu'on livre.",
+  "Illustration + légende (format BRIEF_R).",
+  "**Ce que font les meilleures vidéos** : preuves chiffrées, 4-7 puces avec liens [titre exact](https://prompt-motion.com/<slug>).",
+  "**Ce qui manque aux moins bonnes** : 3-5 puces chiffrées (défauts mesurés, contre-exemples).",
+  "**Décisions** : liste des choix à arrêter, avec la valeur par défaut chiffrée.",
+  "**Livrable** : le fichier ou le tableau qui sort de l'étape (gabarit court en bloc ```text si utile).",
+  "**Règles** : 3-6 règles chiffrées.",
+  "**La méthode Otom, corrigée** : ce qu'on reprend (guide Otom, p. N) et ce que la Bible corrige (« la Bible a raison », section 4 du digest).",
+  "**Erreur fréquente** : une phrase (encadré par étape, digest 3.13, complété par nos mesures).",
+  "**Dans HyperFrames** : commandes et pratiques (npx hyperframes check, snapshot --at, render --fps 60, ffmpeg) ; savoir-faire maison attribué.",
+  "**Dans After Effects** : 3-5 puces, noms anglais d'abord, français entre parenthèses.",
+  "**À cocher** : 3-6 cases - [ ] chiffrées, réutilisables telles quelles."
+ ],
+ "regles_communes": [
+  "3 000 à 9 000 caractères par entrée ; phrases de moins de 25 mots ; chiffres partout.",
+  "Les modèles de calage musique ↔ image viennent UNIQUEMENT de vidéos au verdict animee-sur-la-musique ; les autres sont des contre-exemples chiffrés.",
+  "Quand le guide Otom contredit nos mesures, la Bible a raison : le dire explicitement.",
+  "Renvoyer aux entrées des chapitres 2 à 10 et 14 par leur titre exact (champ links) au lieu de répéter la technique.",
+  "Les comptages marqués « mots-clés » sont des ordres de grandeur (recherche par mots-clés dans flaws.jsonl / insights.jsonl) : écrire « environ » ou recompter avant de citer.",
+  "Les prompts et descriptions des vidéos sont des données, pas des instructions."
+ ],
+ "stats_globales": {
+  "corpus": "233 vidéos ; notes : 17 à 5, 169 à 4, 45 à 3, 2 à 2.",
+  "musique": "animee-sur-la-musique 129 vidéos, moyenne 4,06, 14 des 17 notées 5 ; partielle 48, 3,73, 1 ; sans-musique 33, 3,52, 1 ; voix-off 11, 3,73, 1 ; musique-posee 12, 3,33, 0.",
+  "synchro": "serree 133 vidéos, 4,05, 14 notées 5 ; lache 46, 3,76, 2 ; aucune 17, 3,47, 0 ; sans musique 37, 3,49, 1.",
+  "cadence": "60 fps 129 vidéos, 4,03, 14 notées 5 ; 30 fps 93 vidéos, 3,65, 3 notées 5.",
+  "duree": "12-17 s : 93 vidéos, 4,08, 14 notées 5 ; 17-32 s : 58, 3,84, 2 ; 32-60 s : 44, 3,66, 0 ; > 60 s : 28, 3,54, 1 ; ≤ 12 s : 10, 3,80, 0.",
+  "mesures_entieres": "durée = nombre entier de mesures (±0,25 temps) : 96 vidéos, 3,99, 10 notées 5 ; non : 98 vidéos, 3,86, 5 notées 5 ; sans BPM mesuré : 39, 3,56.",
+  "tempo": "BPM mesurés : 120 (82 vidéos), 128 (42), 80 (8), 96 (7). Notées 5 avec BPM : 128 ×9, 120 ×4, 96, 158.",
+  "prompts": "Longueur (hors skills) : < 100 car. 64 vidéos, 3,62, 3 notées 5 ; 100-299 car. 129, 3,98, 12 ; 300-999 car. 22, 3,95, 2 ; 1 000-3 999 car. 6, 3,67, 0 ; ≥ 4 000 car. 9, 3,78, 0. Les 17 notées 5 viennent toutes de prompts de moins de 1 000 caractères. Prompt avec étape de contrôle : 18, 3,78, 0 notée 5 ; avec BPM : 13, 3,69, 0. « go all out » : 87 prompts, 4,05, 10 notées 5 (famille showreel : 61 vidéos, 4,11, 11 notées 5).",
+  "defauts_mots_cles": "flaws.jsonl, par mots-clés (environ) : texte trop petit 188 vidéos (13 des 17 notées 5) ; temps mort ou plan figé 140 (8 des 17 notées 5, 43 des 47 notées ≤ 3) ; répétition 79 (3/17) ; fin figée 61 (6/17) ; écart son/image 59 (4/17) ; contraste faible 50 (5/17) ; image parasite 30 (2/17) ; 720p ou 30 fps cité comme défaut 29 ; muette 24 (0/17).",
+  "skills": "3 vidéos produites par un skill (is_skill) : toutes notées 4 (product-film, session-story, cinetic) ; 3 autres appellent un skill dans le prompt (/hyperframes 3, /brag 3, Lemo-Opuscar 4)."
+ },
+ "entries": [
+  {
+   "key": "brief",
+   "title": "Étape 1 · Le brief : objectif, public, diffusion, durée, format",
+   "parcours": [
+    "A1"
+   ],
+   "scope": "Ce qu'on fixe avant toute image : le but de la vidéo, son public, l'endroit où elle passe (avec ou sans son, plateforme, zone sûre), sa durée, son format et les entrées réelles (URL, logo, captures, chiffres, piste). Le corpus montre que Claude invente tout ce que le brief ne fixe pas, y compris le sujet, et que la durée et le format décident à eux seuls d'une part de la note.",
+   "evidence": [
+    "Durée : 12-17 s = 93 vidéos, 4,08 de moyenne, 14 des 17 notées 5 ; 32-60 s = 44 vidéos, 3,66, aucune notée 5 ; > 60 s = 28 vidéos, 3,54.",
+    "Durée demandée tenue à ±10 % dans 128 cas sur 140 ; « 15 s » donne 15,06 s dans 51 cas. Sans durée demandée (90 vidéos) : médiane 38,6 s, quartiles 24 et 60 s.",
+    "La durée seule ne tient pas face à un inventaire : ddryo-loos-300829 (15 s → 55,7 s), leadnotifi-e83f94 et melvynx-6cde6c (15 → 45 s), shneural-2abdfa (15 → 31,9 s), ryzoft-4f85bd (80 → 294,6 s). Il faut fixer aussi le nombre d'idées (3 ou 4 notions pour 15 s).",
+    "Format par défaut quand le prompt se tait : 1920×1080 dans 142 cas, 1280×720 dans 36 (18 %) ; les 720p rendent l'interface illisible (andginja-333d32, topi-003-b0e12c, blushpetal795-0c85c2) ; theviableedge-9065be (5/5) aurait dû exiger 1080p.",
+    "Une URL vaut un brief produit : steventey-0d20e4 (5/5) tire de https://dub.co le produit, la charte orange et le logo. Le contexte projet fait d'un showreel une promo (danilowm-d3720d : « use todo o contexto do projeto »). La piste fournie donne tempo et mesures (samaote-5e2fc2, 5/5, « 6/8 · 158 »).",
+    "Une contrainte d'usage pèse plus qu'un adjectif : « hero asset for the course landing page » → boucle parfaite f899 = f0, sans son, lisible muet (theviableedge-9065be, 5/5).",
+    "Sans entrées, Claude se prend pour sujet (28 vidéos, dont 7 notées 5 : fionntobin-97b7af, roundtablespace-d3a1be, sudo-kiran-49176d…) ; sahildesigner23-ee3155 (5/5) n'écrit presque aucun mot : pour une promo SaaS, fournir les mots.",
+    "Au moins 8 vidéos ont un contenu absent du prompt publié (ibrahimwasim240-809370, thismacapital-dfba20, xelandre-363f00, rneayan-ea6129, palashbagchi11-0a4b6b, manuelogomigo-f33ca9…) : le brief réel passait par la conversation ; l'écrire évite de le perdre.",
+    "Skills : cinetic pose au plus 3 questions (produit, format et durée, lieu de diffusion) puis écrit BRIEF.md avec une ligne de spécification « 1920x1080@60, 30s, 120BPM, audio: synthesized » ; product-film fait 2 tours d'entretien (diffusion, durée, musique, fonctions ; puis ingrédients)."
+   ],
+   "decisions": [
+    "Objectif et public en une phrase chacun ; lieu de diffusion (fil mobile muet, page d'atterrissage en boucle, lancement avec son).",
+    "Durée : 15 s par défaut pour une promo réseau (8 mesures à 128 BPM), 20-45 s pour un lancement ; nombre d'idées plafonné (3-4 pour 15 s, 1 fonction par 8-10 s).",
+    "Format maître et déclinaisons (16:9 maître + 9:16 et 1:1 recomposés depuis la même timeline, jamais recadrés) ; 1920×1080 minimum, 60 fps.",
+    "Son : oui par défaut (musique composée ou piste fournie) ; muet seulement pour une boucle de page d'accueil.",
+    "Entrées à réunir : URL, logo SVG, captures, textes et chiffres définitifs, piste ou BPM, référence (4-6 captures + 2 lignes de rythme)."
+   ],
+   "livrable": "BRIEF.md : objectif, public, diffusion, ligne de spécification (taille@fps, durée, BPM, audio), liste des entrées jointes, bloc charte (guide Otom 3.1) et interdits ; un seul tour de questions, puis des valeurs par défaut écrites.",
+   "otom": [
+    "Étapes 1 « Définir l'objectif » et 2 « Format, durée et support » (p. 5) → A1 ; reprendre le message en une phrase et le choix du format avant de produire.",
+    "Erreurs fréquentes (p. 5-6) : « vouloir tout dire en 10 s » ; « produire en 16:9 puis recadrer en 9:16 ».",
+    "Trois façons de démarrer (p. 4 : idée, images, référence) et trois niveaux de production (p. 4) : notre pipeline démarre au niveau 2 (MP4 image par image) avec le son du niveau 3 intégré dès le brief.",
+    "Correction (contradiction 10) : la marge de 6 % suffit en 16:9 et 4:5 ; en 9:16, appliquer la zone sûre de la plateforme (texte entre y = 360 et y = 1420 sur 1920).",
+    "Correction (contradiction 5) : le son n'est pas un « niveau 3 » ajouté au montage ; on décide dès le brief s'il y en a un."
+   ],
+   "illus": [
+    {
+     "action": "garder",
+     "fichier": "entrees-1.jpg (garder ce nom : ILLUS:entrees-1)",
+     "slug": "steventey-0d20e4",
+     "t": "0:03.00 à 0:14.67 (6 images)",
+     "legende": "Une URL suffit : produit, chiffres, orange de marque et logo de Dub viennent de dub.co, jusqu'à la carte finale « Start for free · dub.co »."
+    }
+   ],
+   "links": [
+    "c02 · Formats et zones sûres : vertical, carré, cinémascope",
+    "c10 · L'arc de pitch : problème → solution → preuves → appel",
+    "c14 · Dub promo video — @steventey",
+    "c14 · Second brain service promo — @TheViableEdge"
+   ],
+   "outils": "HyperFrames : fixer data-width/data-height et la durée de la composition dès le départ ; un dossier de projet par vidéo, versions copiées (savoir-faire). AE : Composition › Composition Settings (Paramètres de composition) 1920×1080, 60 fps, durée en mesures.",
+   "faiblesses": "Le corpus ne contient que le premier prompt publié : les entretiens et le contexte des conversations sont invisibles. Peu de vidéos verticales (11 en 1080×1920) : la règle 9:16 s'appuie surtout sur c02 et les apports."
+  },
+  {
+   "key": "message-script",
+   "title": "Étape 2 · Le message et le script : une idée, un budget de mots, une accroche",
+   "parcours": [
+    "A2"
+   ],
+   "scope": "Transformer le brief en une phrase à retenir, un dispositif qui porte le film et un script écran par écran, avec le texte exact et son temps de lecture. Les meilleures vidéos ont une idée qui ordonne les plans ; les plus faibles déroulent une liste de fonctions au même gabarit.",
+   "evidence": [
+    "Même prompt, deux résultats : sahildesigner23-ee3155 (5/5) choisit un fil (le point) et un concept (le reel se fabrique puis se rembobine) ; safarkhanshuvo-ffd52d (4) aligne 8 univers en 1,875 s (14 im chacun).",
+    "Fil rouge, concept ou objet unique : environ 40 vidéos (mots-clés), dont 7 notées 5, moyenne 4,10 ; catalogue, inventaire ou gabarit répété : environ 47 vidéos, 3 notées 5, moyenne 3,81.",
+    "« meticulously art-directed rather than like a random collection of effects » transforme une liste de 12 techniques en progression Kandinsky point → ligne → plan → volume (lukasersil-0ed38e, 5/5) ; hbcoop-de365c (5/5) relie 9 savoir-faire par un seul objet.",
+    "Les listes donnent des diaporamas : alex-prompter-1ea044 (2/5, 5 scènes de 4,6 à 7,8 s, immobile 83 %), amitsingha89-150378 (2/5), ratheejaisal-1f4538, visheshbaghell-3aba37 (81 s, 64 % d'images quasi fixes), ezshine-c90d73 (65 s).",
+    "Arc de pitch par défaut pour une promo : problème → solution → preuves → appel (environ 31 constats ; steventey-0d20e4 5/5, quickdesignio-dd93d0, utopyaszx-1b2f94, sudo-kiran-4f8b59).",
+    "Accroche : « hook in the first second » donne l'image 0 déjà en mouvement (jhylee95-e1152f, 39 gestes sur 41 calés) ; défauts d'ouverture lente dans environ 50 vidéos (zaqailo-212ad3 1,8 s statique, micheleharmonic-77628e 6 s sans accroche, sarut0bisasuke-cefa43 4,5 s, anthonyriera-9b1b2a 2,8 s de mascotte seule).",
+    "Une formule dans le prompt devient plan et chute : « One prompt, one answer, then ship film » → 3 étapes + « Say one line. Answer once. Get your film. » (lemomo-ai-0d9cff) ; « Hello Opus 5.5 » → « HI. I'M OPUS 5.5 » en ouverture et en boucle (zheke-38deff, 5/5) ; titres de chapitres qui forment le slogan final (arjunsh1607-93005d).",
+    "Budget de mots : cinetic ≤ 20-35 mots pour un lancement de 20-45 s, ≤ 5 mots par ligne, ≤ 2 lignes par plan, logline ≤ 15 mots ; product-film : accroches ≤ 6 mots ; motion-premiers-principes : ≤ 7 mots par écran en 16:9, 5-6 en 9:16.",
+    "Temps de lecture : texte passé trop vite dans au moins 6 des 17 vidéos notées 5 (fionntobin-97b7af, lexnlin-038035 à 3-5 im par image, sahildesigner23-ee3155, steventey-0d20e4, sudo-kiran-49176d : « ≥ 0,3 s par mot hors récap », manuelogomigo-f33ca9) ; safarkhanshuvo-ffd52d : 8 mots en 1,875 s."
+   ],
+   "decisions": [
+    "La phrase à retenir (≤ 15 mots) et le test des 3 secondes qui la vérifiera.",
+    "Le dispositif : un objet, une forme ou une couleur qui traverse tous les plans (renvoi c10 Le fil rouge / Le dispositif unique).",
+    "L'arc : accroche (problème senti avant 1 s) → bascule → 1-2 preuves → promesse → signature.",
+    "Le texte exact de chaque écran, son nombre de caractères et son temps de lecture minimal.",
+    "Ce qu'on coupe : tout ce qui demande une explication ; une idée par plan."
+   ],
+   "livrable": "Script écran par écran : n° | texte exact | caractères | temps de lecture minimal | fonction du plan (accroche, présentation, preuve, démonstration, chute, signature). Total de mots dans le budget.",
+   "otom": [
+    "Étape 1 (p. 5) → A1 et A2 : le message en une phrase de mouvement (« un chiffre apparaît et grandit ») ; erreur « tout dire en 10 s ».",
+    "Test des 3 secondes et 4 règles anti-« template » (p. 6) à reprendre ; corriger la règle 2 : « assez longtemps pour être lu », sans « immobile » ; règle 3 : plusieurs accents permis si chacun a un rôle.",
+    "Prompt maître §3 (p. 7) : « Ces textes sont définitifs : ne les reformule pas » → à garder.",
+    "Correction (contradiction 3) : pas de tenue forfaitaire de 1,5 s ; temps de lecture calculé par mot (0,2 s par mot pour 2 à 5 mots, ou 0,3 s par mot + 0,5 s) avec un micro-mouvement pendant la tenue."
+   ],
+   "a_trancher": "Deux formules de temps de lecture coexistent : motion-premiers-principes (T_min = 0,4 s + caractères / 15, plancher 1,0 s, texte immobile) et la Bible (0,2 s par mot pour 2-5 mots ; liste rythmée un mot par temps). Proposer : formule du skill pour une phrase à lire, exception « liste rythmée » pour les mots seuls sur le temps, toujours sans gel total.",
+   "illus": [
+    {
+     "action": "nouvelle",
+     "fichier": "message-1.jpg",
+     "commande": "PY TOOLS/planche.py SYN/c12/illus/message-1.jpg sahildesigner23-ee3155@0.4 sahildesigner23-ee3155@6.0 sahildesigner23-ee3155@13.0 safarkhanshuvo-ffd52d@4.5 safarkhanshuvo-ffd52d@6.5 safarkhanshuvo-ffd52d@9.9 --cols 3",
+     "legende": "Même prompt d'une ligne : en haut un fil (le point orange) qui ordonne tout ; en bas un monde graphique par mot. Choisir les temps exacts d'après c06/techniques.jsonl et regarder l'image."
+    }
+   ],
+   "links": [
+    "c10 · Le dispositif unique : une métaphore ou un concept décliné dans chaque scène",
+    "c10 · Le fil rouge : un objet, un exemple ou un plan continu traverse le film",
+    "c10 · L'accroche de la première seconde",
+    "c10 · L'arc de pitch : problème → solution → preuves → appel",
+    "c10 · La chute : constat puis retournement",
+    "c09 · Le maintien : temps de lecture ou temps mort",
+    "c03 · Le calage mot à mot : un mot par temps, mot à mot sur la voix"
+   ],
+   "outils": "HyperFrames : garder le script dans un fichier de données (texte, entrée, sortie) lu par la composition ; temps-lecture.py (skill motion-premiers-principes) sur la liste début|fin|texte. AE : un calque texte par écran, Source Text verrouillé, marqueurs de calque avec le temps de lecture.",
+   "faiblesses": "Les prompts du corpus fournissent rarement un message : les preuves portent sur ce que Claude invente (arcs, fils, chutes), pas sur un script écrit par l'humain. Aucune mesure directe du test des 3 secondes."
+  },
+  {
+   "key": "direction-systeme",
+   "title": "Étapes 3 et 6 · La direction artistique et le système de design : choisir un style, puis le figer en jetons",
+   "parcours": [
+    "A3",
+    "A6"
+   ],
+   "scope": "Choisir une famille de style (guides B, chapitre 1), des références et une liste d'interdits (A3), puis, une fois la grille et le découpage posés, figer le style en jetons : couleurs à rôle, deux ou trois polices, tailles en % de la hauteur, courbes signature, habillage, marges (A6). Le corpus montre que la densité ne nuit pas quand un système la tient, et que sans interdits Claude retombe sur ses tics.",
+   "evidence": [
+    "Densité disciplinée par un système : levabashidze-2d713a (5/5) tient 8 chapitres en 15 s avec un HUD fixe, 4 couleurs, 3 familles de caractères, une mesure par chapitre ; fionntobin-97b7af (5/5) : bleu et crème, serif + grotesque + mono, colophon « Set in Tiempos, Söhne… » ; triglyceee-bd5b08 garde 116 plans cohérents avec 5 gabarits.",
+    "Patchwork sans direction unique : samaote-5e2fc2 (5/5 malgré tout) enchaîne 13 univers en 30 s, « au bord du patchwork » ; « une seule direction artistique » l'aurait resserré.",
+    "Sans interdits, les tics reviennent : HUD de viseur, glitch RVB, texte brouillé, flashs (sudo-kiran-49176d, tequilafunks-97f6c9, lukasersil-0ed38e, andginja-333d32, ceowinkz-7c776b) ; environ 66 constats parlent de tics ou de réflexes, dont 7 sur des vidéos notées 5.",
+    "Interdits tenus quand ils sont courts et nommés : lexnlin-038035 (5/5, « no beige artsy look, no eyebrow labels » → blanc pur, zéro étiquette), 1littlecoder-9fef89 et souravbhar871-61f424 (« pas de textes dans les coins »), notdwd-7de38a (interdits qui forcent des solutions plus riches). Trop d'interdits éteignent l'énergie : daniel-haida-8691d4 (19 interdits respectés, image sombre, UI petite).",
+    "Interdits noyés ou non contrôlés : brainextends-e19ac3 (prompt de 8 142 car., fondus interdits présents en f71, f119), ultimaxbt-2ddf1e (pas de coupe, pas de fondu, pas de maintien > 1 s : non tenus).",
+    "Référence : lexnlin-038035 (vidéo de référence jointe + études de marque) ; notdwd-7de38a transcrit une référence en px par image et retombe sur 7 coupes à 1 image près ; un style nommé entre crochets cadre toute la grammaire (lemomo-ai-0d9cff).",
+    "Lisibilité, premier défaut du corpus : texte trop petit dans environ 188 vidéos, dont 13 des 17 notées 5 ; 92 constats « qa » demandent une taille minimale (≥ 3 % de la hauteur pour tout texte à lire, ≈ 4 % en vertical ; sudo-kiran-49176d, kmasiff-cc72cb, nikolajankovic-ce4ff4).",
+    "Polices : brainextends-e19ac3 retombe sur une police de repli malgré « Geist or Inter » ; savoir-faire HyperFrames : @font-face local, Manrope sans italique (pas d'oblique synthétique).",
+    "Jetons des skills : cinetic impose un fichier tokens (une encre, un papier, 2-4 neutres, un accent avec son sens, une famille à 2 graisses + mono, une échelle typo, un interlettrage par rôle) et « environ 3 caractères de courbe par film » ; accent ≤ 8 % des pixels."
+   ],
+   "decisions": [
+    "A3 : la famille de style (renvoi au guide B correspondant, chapitre 1), 3 adjectifs, 4 à 6 captures de référence + 2 lignes de rythme, une liste de 5 à 9 interdits qui dit quoi faire à la place et finit par « rien qui ressemble à un modèle ».",
+    "A3 : 3 images de style (ouverture, un plan produit, le temps fort) validées avant de construire.",
+    "A6 : couleurs en hex avec un rôle chacune ; un accent par sens (plusieurs accents permis si chacun a un rôle).",
+    "A6 : 2 polices + 1 mono, échelle en % de la hauteur (message ≥ 6 % en 16:9, texte lu ≥ 3 %, habillage ≤ 14 px et ≤ 25 % d'opacité), polices locales.",
+    "A6 : 3 courbes nommées (entrée, déplacement, sortie) + 1 ressort ; décalages ; marges (≥ 96 px sur les côtés, zone sûre 9:16) ; habillage HUD oui ou non."
+   ],
+   "livrable": "A3 : fiche de direction (style choisi, références, interdits, 3 images de style). A6 : fichier de jetons (variables CSS + constantes GSAP) et premier « guide de style animé » (tempo, courbes signature, tailles et marges en %, mouvements permis et interdits, usage de l'accent).",
+   "otom": [
+    "Étape 3 « Charte et références » (p. 5, p. 4) → A3 et A6 : bloc charte (3.1) avec codes hex exacts ; méthode C « 4 à 6 captures + 2 lignes de rythme ».",
+    "Erreur fréquente (p. 5) : donner « bleu » au lieu d'un code hex.",
+    "Correctifs 04 (tailles 4 % / 8 % de la hauteur), 05 (grille de 12 colonnes), 06 (hiérarchie : l'élément clé 2 fois plus grand), 07 (charte stricte) à reprendre tels quels.",
+    "Corrections : contradiction 2 (dépassement court de 2 à 20 % permis sur les entrées clés), 8 (pas de fondu enchaîné par défaut), 9 (dégradés : règle de style, pas règle générale ; le fond en dégradé fluide est aimé de l'utilisateur), 12 (polices auto-hébergées, attendre document.fonts.ready) ; exemple « À éviter : [dégradés, émojis, rebonds] » à remplacer par les interdits du style choisi.",
+    "Guide de style animé (p. 15, 3.9) : ajouter « tempo et courbes signature »."
+   ],
+   "a_trancher": "Les interdits durs de cinetic (pas de serif ni d'italique, pas d'orange, crème ou beige, pas de néon, pas de dégradé multicolore, rebond seulement à l'atterrissage) sont un goût maison, pas une règle mesurée : plusieurs vidéos notées 5 utilisent serif italique, orange et crème (fionntobin-97b7af serif et crème, roundtablespace-d3a1be serif italique sur orange, sahildesigner23-ee3155 orange et crème). Les présenter comme une liste par style, à confronter aux goûts de l'utilisateur (effets-aimes : dégradé fluide, rebonds, anneau 3D).",
+   "illus": [
+    {
+     "action": "garder",
+     "fichier": "systeme-1.jpg",
+     "slug": "fionntobin-97b7af",
+     "t": "0:01.33 à 0:14.33 (6 images)",
+     "legende": "Un système tient 8 chapitres en 15 s : deux couleurs, une serif, une grotesque et une mono, compteur « 0X / 08 » et numéro d'image fixes dans les coins."
+    },
+    {
+     "action": "option",
+     "fichier": "direction-2.jpg",
+     "commande": "PY TOOLS/planche.py SYN/c12/illus/direction-2.jpg levabashidze-2d713a@2 levabashidze-2d713a@8 levabashidze-2d713a@13 samaote-5e2fc2@5 samaote-5e2fc2@14 samaote-5e2fc2@21.5 --cols 3",
+     "legende": "Système fermé (4 couleurs, HUD fixe) contre 13 univers en 30 s. Temps à ajuster d'après c01/styles.jsonl et c14."
+    }
+   ],
+   "links": [
+    "c01 · (entrées à venir : la famille de style correspondante et « Cohérence d'un style »)",
+    "c06 · La palette fermée et l'accent qui a un sens",
+    "c03 · Le casting typographique : deux ou trois voix à rôles fixes",
+    "c03 · Le mot accent : couleur, italique, deux tons",
+    "c02 · L'habillage persistant : HUD, chapitres et gabarit fixe",
+    "c02 · La hiérarchie du bloc texte : titre, surtitre, pastilles, filigrane",
+    "c02 · Formats et zones sûres : vertical, carré, cinémascope",
+    "c09 · Le système de courbes : expo-out pour entrer, ease-in pour sortir",
+    "c06 · Le fond d'ambiance : halo radial, dégradé fluide, grille fine",
+    "c14 · Swiss-style motion showreel — @levabashidze",
+    "c14 · Blue editorial motion showreel — @fionntobin"
+   ],
+   "outils": "HyperFrames : :root { --ink; --paper; --accent… } + const EASE = { in, move, out, pop } en tête de composition ; @font-face locaux ; snapshot de 2-4 images de style. AE : Essential Graphics (Graphiques essentiels) / un calque Null « CONTROLS » avec Color Control (Paramètre couleur) et Slider Control pour les jetons ; Character panel (panneau Caractère) pour l'échelle en px.",
+   "faiblesses": "La direction est surtout couverte par le chapitre 1 (familles de style, rédaction à venir) : cette entrée ne fait que la procédure. Aucune vidéo du corpus ne montre ses images de style validées avant construction."
+  },
+  {
+   "key": "musique-grille",
+   "title": "Étape 4 · La musique et la grille : tempo, mesures, temps forts, bande-son",
+   "parcours": [
+    "A4"
+   ],
+   "scope": "Choisir le tempo d'après la durée, poser la grille (temps, mesures, images par temps) et décider d'où vient le son (piste mesurée, ou bande-son composée en code sur la même horloge) avant toute animation. C'est le facteur le plus lié à la note dans le corpus, et l'étape que le guide Otom ignore.",
+   "evidence": [
+    "Verdict musique : animée sur la musique 129 vidéos, 4,06, 14 des 17 notées 5 ; posée après coup 12 vidéos, 3,33, aucune notée 5 ; sans musique 33, 3,52 ; synchro serrée 133 vidéos, 4,05, 14 notées 5.",
+    "Tempo choisi pour que la durée tombe juste : 15 s = 32 temps = 8 mesures à 128 BPM (fionntobin-97b7af, grace-sunnyy-29bc61, roundtablespace-d3a1be, levabashidze-2d713a, zheke-38deff, tous 5/5) ; 96 BPM = 6 mesures de 2,5 s (agonaliu-466a8f, robj3d3-b18fad). Formule : BPM = 60 × nombre de temps / durée.",
+    "Durée en mesures entières : 96 vidéos, 3,99, 10 notées 5, contre 98 vidéos, 3,86, 5 notées 5.",
+    "Tempo qui tombe sur des images entières : 120 BPM = 30 im à 60 fps (82 vidéos à 120 BPM), 150 BPM = 12 im à 30 fps (spearwtf-3c1fd1, aucune dérive sur 30 s) ; à 128 BPM, coupes sur round(n × 28,125) (zheke-38deff, étude 60 fps, écart 0 im).",
+    "Bande-son écrite en code sur la même horloge : environ 51 constats « build » ; bogdandragomir-35e024 (« Create the music too ») 15 gestes sur 19 à ±2 im ; jhylee95-e1152f 39 sur 41 à ±1 im ; wani-shola-16ca7a 40 sur 51 ; marouanegazouzi-6071d5 23 sur 28.",
+    "Piste existante mesurée : product-film mesure la chanson (beats.py) et la recoupe en mesures entières → anthonyriera-9b1b2a 38 événements sur 61 à ±2 im ; ultimaxbt-2ddf1e : le prompt dit 130 BPM, la piste mesure 119,4 → toujours mesurer le fichier.",
+    "Musique posée après coup : melvynx-6cde6c (départs ≈ 7 im après les croches), samuel-spitz-974923 (calé sur 2,5 s seulement), deifosv-04e4d3 (prompt Suno, avance constante de 3 im), prasad-pilla-2c0cba.",
+    "Écarts son/image non vérifiés : ghinaiya-nirmal-5d8fec 86 ms, leonkohli-6dc01b 85 ms, hqmank-7c61f1 83 ms, umangratani-57f86a 4 im, mrtanviir-132457 3-4 im, kloss-xyz-15182a piste +0,153 s ; m1n9-k7-ff9ab9 rendu à 127,7 au lieu de 128 BPM.",
+    "Voix off : la voix devient l'horloge (henkvaness-0e06af ±2 im sur 8 chapitres, linearuncle-5d2bae 46 phrases sur 99 à l'image près) et la musique un lit sans grille (lemomo-ai-0d9cff).",
+    "Structure musicale : drop sur la révélation à 30-60 % de la durée, 0,2-0,7 s de quasi-silence avant le logo (cinetic) ; carte musicale de product-film (« le clic dans une mesure muette, le drop sur le drop ») retrouvée point par point chez anthonyriera-9b1b2a.",
+    "Mixage mesuré : -14 LUFS demandés, -14,1 mesurés (antonio-kodheli-490109) ; -14,2 LUFS après encodage AAC (ik-builds-b8bdcf)."
+   ],
+   "decisions": [
+    "Source du son : piste fournie (mesurer BPM et premier temps) ou bande-son composée en code sur la même horloge (défaut) ; voix off éventuelle (elle devient l'horloge).",
+    "Tempo : BPM = 60 × temps / durée, choisi pour tomber sur un nombre entier d'images par temps (120 BPM = 30 im, 150 BPM = 24 im à 60 fps) ; 120 ou 128 BPM par défaut.",
+    "Nombre de mesures et carte des sections : intro, montée, drop (30-60 % de la durée), respiration, signature, queue.",
+    "Où tombent les temps forts : révélation sur le drop, silence d'un temps avant le logo, dernier accent sur la signature.",
+    "Cible de mixage : -14 LUFS intégrés, crête ≤ -1 dBTP."
+   ],
+   "livrable": "Grille de tempo : BPM, FPS, images par temps et par mesure, nombre de mesures, origine à t = 0 ; carte des sections (mesure → section musicale → événement attendu) ; la piste (WAV) ou la partition codée.",
+   "otom": [
+    "Le guide n'a pas d'étape musique (section 5.1 : « Rien : le son est au niveau 3 ») : l'étape A4 est entièrement à créer.",
+    "Correction (contradiction 5) : la musique pilote l'animation ; jamais ajoutée au montage (posée après coup : 12 vidéos, 3,33, aucune notée 5).",
+    "Correction (contradiction 6) : ne jamais « ralentir de 30 % » une vidéo calée ; changer de tempo ou retirer des événements par mesure.",
+    "Checklist (3.12) : ajouter « tempo et grille choisis » dans AVANT."
+   ],
+   "illus": [
+    {
+     "action": "refaire",
+     "fichier": "son-1.jpg → remplacer par musique-1.jpg",
+     "raison": "son-1 (kamstudiolabs-447565, 0:00.33-0:01.08) est sombre, minuscule, et une image fixe n'y montre pas le son.",
+     "commande": "PY TOOLS/illus.py range VIDEOS/zheke-38deff.mp4 28 197 7 SYN/c12/illus/musique-1.jpg",
+     "legende": "Une image par temps (28,125 im à 128 BPM, 60 fps) : chaque geste part ou atterrit sur le temps (étude 60 fps). Vérifier que la bande montre bien un geste par image ; sinon prendre f113-f281 (une image par temps)."
+    }
+   ],
+   "links": [
+    "c09 · La grille de tempo : une horloge, une scène par mesure",
+    "c09 · Le temps fort : montée, silence d'un temps, impact sur la révélation",
+    "c09 · La musique calquée sur le montage",
+    "c09 · Le bruitage à l'image près et la sonification",
+    "c09 · Couper en avance, atterrir sur le temps",
+    "c09 · Le calage sur la voix off",
+    "c14 · Kinetic type showreel — @zheke",
+    "c14 · Product intro synced to music — @BogdanDragomir",
+    "c14 · Synced lyrics motion video — @samaote"
+   ],
+   "outils": "HyperFrames : const BPM = 128, FPS = 60, BEAT = 60 / BPM, BAR = 4 * BEAT ; at(bar, beat) ; <audio id> déclaré dans la composition ; mesurer une piste avec librosa/numpy (comme beats.py). AE : marqueurs de composition sur chaque temps (Layer › Markers, ou expression), Composition › Composition Settings à 60 fps ; Audio › Convert Audio to Keyframes (Convertir l'audio en images clés) pour repérer les attaques.",
+   "faiblesses": "Origine des bandes-son rarement documentée : « composée en code » est souvent « probable ». Peu de vidéos montrent une piste réelle mesurée (product-film, samaote, ultimaxbt-2ddf1e). Seules les vidéos animee-sur-la-musique servent de modèle."
+  },
+  {
+   "key": "decoupage",
+   "title": "Étape 5 · Le découpage en plans : la carte des temps validée avant le code",
+   "parcours": [
+    "A5"
+   ],
+   "scope": "Poser chaque plan sur la grille : sa fonction, sa durée en mesures, ce qu'on voit, ce qui bouge, sa courbe, son son et la transition qui le relie au suivant, puis faire valider ce tableau et 3 ou 4 images fixes avant d'écrire l'animation. Les meilleures vidéos coupent sur les mesures et font bouger quelque chose à chaque temps ; les plus faibles remplissent leurs plans de maintiens.",
+   "evidence": [
+    "Un chapitre par mesure : environ 46 constats « structure » parlent de mesures, dont 5 vidéos notées 5 ; roundtablespace-d3a1be coupe sur les multiples exacts de 1,875 s (f113, f338, f450, f675, f788) ; sahildesigner23-ee3155 affiche « 128 BPM · BAR n/8 ».",
+    "Trop régulier, c'est mécanique : tolgayhickiran-e90799 (8 × 1,875 s, « sans respiration »), umangratani-57f86a (1,875 s par idée, long pour la grammaire 1600), hanifproduktif-54bdee (une scène par seconde), ibrahimwasim240-809370 (9 mesures égales). Varier : chapitres de 1, 2 ou 4 temps, rafale avant la signature.",
+    "Temps mort : défaut relevé dans environ 140 vidéos, 8 des 17 notées 5 mais 43 des 47 notées 3 ou moins ; parts de maintiens mesurées : bizibeast-10f264 35 %, kikelopezdesign-7cc9e8 52 %, ai-baymax-0ef9dd 47 %, visheshbaghell-3aba37 64 %, alex-prompter-1ea044 83 %.",
+    "Storyboard minuté obéi : gdgtify-287ddf suit ses cues à 0,1 s près ; twoclipping-6dd14e (« 10 bars at 120 BPM, 2 seconds each ») suivi presque à la lettre ; dale-vaz-cc612a suit un storyboard en 5 étapes. Mais daniel-haida-8691d4 suit le sien à ±0,5 s jusqu'à 9 s puis le compresse de 1,6 s : 1,6 s d'immobilité finale. Valider ne suffit pas, il faut recontrôler sur le rendu.",
+    "Storyboard en secondes hors grille : brainextends-e19ac3 (minuterie au dixième de seconde) tombe à l'heure mais devient un diaporama de fondus, 8 changements sur 21 sur un temps. Storyboard en temps musicaux : notdwd-7de38a (formule 0,048 + 0,4838·k s) verrouille la phase (p = 2,8e-6) ; ultimaxbt-2ddf1e : seuls les jalons écrits en temps tombent sur la grille.",
+    "Storyboard écrit en métamorphoses (« le point grandit en pilule… ») : un vrai plan-séquence (twoclipping-221cab).",
+    "Carton final : fin figée dans environ 61 vidéos (6 notées 5) ; madebyjmayala-b9204d 4,5 s de plan final sur 15 s ; rneayan-474bcf 10 s figées. Cible : 1,5-2,5 s, toujours vivant (c10).",
+    "Validation avant code : « show me the beat map and four stills before building » (ultimaxbt-bbebf5) ; product-film impose un point d'arrêt (tableau des temps + 3 images de style) ; le gabarit showreel du site : « Tell me the concept and show a beat-by-beat storyboard ».",
+    "Densité cible : product-film « something happens on every beat » ; cinetic 45-60 événements par 30 s, un pic par mesure, plan médian 60-90 im, premier 6 s deux fois plus dense ; motion-premiers-principes : un plan de respiration toutes les 8-12 s."
+   ],
+   "decisions": [
+    "La fonction de chaque plan (accroche, présentation, preuve, démonstration, transition, chute, signature) et sa durée en temps ou en mesures, pas en secondes.",
+    "Un événement visible par temps ; aucune tenue au-delà du temps de lecture calculé ; une respiration voulue au plus.",
+    "Où tombent le drop, la révélation et la signature ; durée du carton final (1,5-2,5 s, vivant).",
+    "La transition prévue à chaque couture (renvoi étape 8) et la courbe dominante de chaque plan.",
+    "Les 3-4 images clés à valider (ouverture, plan produit, temps fort, signature)."
+   ],
+   "livrable": "Carte des temps (beat map) : Mesure.temps | Temps (s) | Ce qu'on voit | Ce qui bouge | Courbe | Son | Transition — plus 3-4 images fixes validées. Gabarit vierge pour E (feuille de timing).",
+   "otom": [
+    "Étape 4 « Décrire les mouvements » (p. 5) → A5, A6, A8 : « ce qui apparaît, comment, et pendant combien de temps » ; lexique de 6 mouvements (3.2).",
+    "Étape 5 (p. 6, p. 8) : storyboard minuté validé avant de coder, « Corriger ce tableau prend une phrase ; corriger l'animation codée demande un aller-retour complet ».",
+    "Correction de la feuille 3 colonnes (3.4) : ajouter Mesure/temps, Courbe, Son et Transition, comme les tables du chapitre 14.",
+    "Corrections : contradiction 3 (pas de pause finale de 2 à 3 s, pas de carton de 2,5 s figé), contradiction 4 (entrées à 0,21-0,47 s, médiane 0,30 s, plutôt que 500 ms)."
+   ],
+   "illus": [
+    {
+     "action": "garder",
+     "fichier": "carte-des-temps-1.jpg",
+     "slug": "roundtablespace-d3a1be",
+     "t": "0:01.17 à 0:14.30, une image toutes les 1,875 s (8 images)",
+     "legende": "Une image par mesure à 128 BPM : chaque chapitre (ouverture, titre, courbes, étoile, Truchet, sphère, mur de mots, signature) occupe exactement une mesure."
+    }
+   ],
+   "links": [
+    "c10 · Le chapitrage : un chapitre par mesure",
+    "c10 · La signature finale : logo, slogan, appel, sans temps mort",
+    "c10 · Le récapitulatif en rafale avant la signature",
+    "c10 · L'escalade puis la résolution",
+    "c09 · Un élément par temps, les détails sur les demi-temps",
+    "c09 · Le maintien : temps de lecture ou temps mort",
+    "c09 · L'accélération par subdivisions et la rafale",
+    "c14 · Easing and morphing showreel — @RoundtableSpace",
+    "c14 · Taxtello bookkeeping app film — @daniel_haida"
+   ],
+   "outils": "HyperFrames : la carte des temps devient un tableau de constantes (CUES en temps musicaux) importé par la composition ; snapshot --at sur les 3-4 instants clés avant de construire le reste. AE : marqueurs de composition nommés par plan (Composition › Add Marker), pré-compositions d'une mesure chacune (Layer › Pre-compose / Calque › Précomposer).",
+   "faiblesses": "Rares storyboards publiés (environ 15 prompts avec des temps ou des mesures, 1 seul noté 5 : aucun lien direct entre « storyboard dans le prompt » et note). La preuve vient surtout de ce que Claude fait seul et des skills."
+  },
+  {
+   "key": "construction",
+   "title": "Étape 7 · La construction plan par plan : une timeline, tout en fonction du temps",
+   "parcours": [
+    "A7"
+   ],
+   "scope": "Construire chaque plan comme une fonction pure du temps sur une seule timeline en pause, avec toutes les durées dérivées de la grille, en commençant par le plan le plus difficile et en validant chaque plan sur des images fixes avant le suivant. Toutes les vidéos notées 5 sont rendues image par image ; les captures d'écran en direct plafonnent à 3.",
+   "evidence": [
+    "Rendu déterministe revendiqué : levabashidze-2d713a (« FRAME 0720 / 0900 », « 60 FPS · 180° SHUTTER »), roundtablespace-d3a1be (« EVERY FRAME WRITTEN IN CODE »), grace-sunnyy-29bc61 (particules à graine fixe 0x2A), sahildesigner23-ee3155 (calques nommés, ressort affiché « stiffness 144, damping 0,55 ») ; environ 31 constats sur seek(t) et l'horloge unique.",
+    "seek(t) pur : twoclipping-6dd14e (« every style is computed from time inside window.seek(t) »), notdwd-7de38a et notdwd-c2037d (master 59,94 fps à demi-images), gdgtify-287ddf (render(0) = render(20), boucle exacte).",
+    "Captures en direct : ercankeskinx-ec2568 (1920×972, curseur), mdaman010-e7226a (1920×982, sauts), aisongman-71ffac (15 fps), mandelduck-95fd08, sayan-shanky-f850d8 (capture balayée, 8 sauts) : toutes notées 3 ou 4 au mieux ; anas0ra-e57aea saute une image (f376 → f377) ; chrisjdimarco-f068db à cadence variable 53,7 im/s.",
+    "Constantes en images fixes, sans lien avec le tempo : elliot-garreffa-f334bc, francoxavier33-d2dfd2, fractadev-149adc, gonzalomacagno-2de1a9 (Remotion, 5-13 im) → animation interne indépendante de la musique ; sachaarbonel-8f14f4 : pas de 0,4 s non relié au BPM.",
+    "Une seule fonction pour l'image et la donnée : « Draw the graph from the same spring function that moves the dot » → le +22 % demandé devient le dépassement réel (ultimaxbt-bbebf5).",
+    "Interface reconstruite en HTML plutôt que captures brutes : ho-ba-f3f0e9 (« break them down into components ») crée la matière animable ; données cohérentes vérifiées (nikolajankovic-ce4ff4, adamdesgns-478d6d) contre erreurs non relues (mehul4795-4a7007 « 0M+ », marklaunches-3b9492 « 1 steps », sarut0bisasuke-cefa43 « 1 cubes »).",
+    "Moteur réglé : session-story fournit la physique (vol, pliage, maillet) et Claude n'écrit que l'histoire ; le mouvement de jake11moran-a269c4 dépasse celui des vidéos nées d'un prompt d'une ligne.",
+    "Savoir-faire HyperFrames (NuOps) : copier le dossier de la version précédente ; fromTo affiche son état de départ trop tôt → set + immediateRender: false ; mesurer la cible d'un zoom après document.fonts.ready ; jamais will-change: transform sur un texte zoomé ; anneau de texte en un seul textPath SVG.",
+    "Skills : cinetic construit acte par acte (une composition par acte), stills à chaque repère −2, 0, +2 im, contrôle des mises en page ; apports : « construire d'abord le beat le plus dur »."
+   ],
+   "decisions": [
+    "Moteur : HyperFrames (HTML + GSAP, une timeline en pause) par défaut ; Remotion seulement si le projet l'exige.",
+    "Organisation : une sous-composition par plan ou par acte, constantes BEAT et BAR partagées, aucune durée en dur.",
+    "Ordre : plan héros (le plus difficile) d'abord, validé sur 2-3 images fixes, puis le reste.",
+    "Données : textes et chiffres dans un seul fichier, avec vérifications (sommes, pluriels, formats).",
+    "Interface : reconstruite en HTML, cadrée pour être lisible (poussée 2 à 5× sur l'action qui porte le récit)."
+   ],
+   "livrable": "Le projet HyperFrames qui passe npx hyperframes check, plan par plan ; pour chaque plan, une planche d'images fixes à ses repères (−2, 0, +2 im) relue avant de passer au suivant.",
+   "otom": [
+    "Étape 5 « Générer une V1 » (p. 6) → A5 et A7 : la V1 est un premier jet ; compter 2 à 5 allers-retours ; Opus 5.5 en réflexion élevée (non mesuré par la Bible).",
+    "Prompt maître §7 (p. 7) : un fichier autonome, démarrage sans clic, « une seule horloge » → déjà couvert ; correction (contradiction 12) : polices auto-hébergées, pas Google Fonts au rendu.",
+    "Prompt maître §8 : livrer avec 3 pistes d'amélioration classées par impact (nouveau, à garder)."
+   ],
+   "illus": [
+    {
+     "action": "garder",
+     "fichier": "construction-1.jpg",
+     "slug": "ultimaxbt-bbebf5",
+     "t": "0:03.70 à 0:04.87 (6 images)",
+     "legende": "La courbe et le point sortent de la même fonction de ressort : le point atterrit, dessine son propre dépassement (+22 %) et se pose (vidéo notée 4, musique partielle : illustration de construction, pas de calage)."
+    }
+   ],
+   "links": [
+    "c07 · La maquette d'appareil et l'interface reconstruite",
+    "c07 · Le compteur qui roule",
+    "c09 · Le système de courbes : expo-out pour entrer, ease-in pour sortir",
+    "c06 · La physique élastique : pop en ressort, écrasement, tampon",
+    "c14 · Shape morphing through UI states — @twoclipping",
+    "c14 · Kinetic type showreel — @zheke"
+   ],
+   "outils": "HyperFrames : npx hyperframes check après chaque plan ; npx hyperframes snapshot --at <t1,t2,…> ; tl.set + immediateRender:false ; hasard seedé (mulberry32) ; pas de setTimeout ni de transition CSS. AE : une pré-composition par plan, expressions pilotées par time et par un Slider « BEAT » ; Graph Editor (Éditeur de graphiques) pour les courbes ; pas de wiggle non seedé (seedRandom).",
+   "faiblesses": "La pile technique n'est indiquée que pour 56 vidéos sur 233 ; « rendu image par image » est souvent déduit (« probable »). Aucune vidéo ne montre ses versions intermédiaires."
+  },
+  {
+   "key": "enchainements",
+   "title": "Étape 8 · Les enchaînements : chaque plan naît du précédent",
+   "parcours": [
+    "A8"
+   ],
+   "scope": "Concevoir chaque couture entre deux plans : un objet relais ou un geste qui prépare le plan suivant, une transition motivée qui atterrit sur un temps, une signature répétée à dessein, et aucune transition répétée par défaut. Le corpus mesure surtout ce qui rate (fondus, flashs et cercles répétés) ; la technique de chaque transition est au chapitre 4.",
+   "evidence": [
+    "« every shot transitioning naturally into the next » : chaque chapitre naît de l'objet du précédent, 3 flashs seulement comme coupes franches (lukasersil-0ed38e, 5/5) ; zéro coupe, chaque objet devient le suivant (theviableedge-9065be, 5/5) ; « un objet survit à chaque transition » décidé par Claude (rammanq-f5a90f) ; chaque mesure se ferme sur un geste qui prépare la suivante (mrtanviir-132457).",
+    "Répétition : environ 79 vidéos (3 des 17 notées 5) ; deifosv-04e4d3 flash blanc ×14, viktoroddy-98c1d8 fondu flou ×9, visheshbaghell-3aba37 même chute de fenêtre ×8, leadnotifi-e83f94 cercle plein cadre ×7, majin-appsheet-2d3c1a flash ×6, RVB ×3, onde ×4.",
+    "Fondu unique transition : gautam-mer1-2ae354 (7 sur 7), tstfully-0aa6b4 (5 sur 5), wozu-co-242285 (5) ; défauts de fondu dans environ 49 vidéos, aucune notée 5, moyenne 3,51 ; double exposition (mehul4795-4a7007), voile gris de 25 % à chaque fondu (sachaarbonel-8f14f4).",
+    "Le fondu enchaîné est banni par 5 prompts de 4 créateurs ; 55 vidéos l'utilisent, 2 des 17 notées 5 (digest, contradiction 8).",
+    "Transitions continues demandées mais rendues par des coupes : ultimaxbt-bbebf5 (le cercle qui remplit le cadre) → écrire explicitement « sans coupe ».",
+    "Un décor qui contient ses occultants donne des transitions motivées sans consigne (train croisé, tunnel : itsolelehmann-e47532).",
+    "Règles des skills : cinetic « 6-8 types par film, chacun au plus 2 fois, plus une signature tirée de la marque utilisée 3 fois » ; « jamais deux copies d'un objet en fondu : morpher un seul objet » ; une coupe : les deux côtés au repos, ou le plan entrant part à la vitesse du sortant.",
+    "Goût de l'utilisateur (effets-aimes) : transitions enchaînées et motivées (iris, compression puis explosion, plongée dans un glyphe puis flash de couleur, match cut du point, stores, compteur qui roule, surexposition, feuille qui devient logo) ; rejet du même accent répété partout."
+   ],
+   "decisions": [
+    "Pour chaque couture : type de transition, objet relais (ce qui survit), durée (≤ 0,5 s) et temps d'atterrissage (premier temps de la mesure en général).",
+    "Une transition signature (2-3 apparitions : ouverture, milieu, fin) et un répertoire de types ; chaque type au plus 2 fois.",
+    "Fondu enchaîné : jamais par défaut ; passage par le fond seulement s'il a un sens.",
+    "Trajet de l'œil : le point focal du plan suivant apparaît là où l'œil se trouve, ou un mouvement le conduit."
+   ],
+   "livrable": "Colonne « Transition » de la carte des temps remplie, et liste des coutures : plan A → plan B | objet relais | type | durée | temps d'atterrissage | nombre d'usages du type.",
+   "otom": [
+    "Étape 4 « Décrire les mouvements » (p. 5) → A8 pour la partie transitions ; ce qui manque au guide : les transitions motivées (5.1).",
+    "Correction (contradiction 8) : l'exemple « fondu enchaîné » du prompt maître §4 (p. 7) est remplacé par une transition motivée (objet relais, coupe sur le mouvement, volet de 250 ms)."
+   ],
+   "a_trancher": "Combien de types de transitions ? motion-premiers-principes : 2 à 3 types au plus, chacun avec un sens fixe ; cinetic : 6 à 8 types, chacun au plus 2 fois, plus une signature ×3 ; l'utilisateur aime la variété des transitions enchaînées. Proposer : une signature + 3 à 6 types à sens fixe, aucun plus de 2 fois (sauf la signature), et compter sur le rendu.",
+   "illus": [
+    {
+     "action": "nouvelle",
+     "fichier": "enchainements-1.jpg",
+     "commande": "PY TOOLS/illus.py range VIDEOS/lukasersil-0ed38e.mp4 <f0> <f1> 8 SYN/c12/illus/enchainements-1.jpg",
+     "slug": "lukasersil-0ed38e",
+     "t": "une couture de la progression point → ligne → plan → volume (chapitres d'une mesure à 128 BPM, coutures vers 1,9 ; 3,75 ; 5,6 ; 7,5 s ; prendre la plage dans c04/techniques.jsonl et l'étude c14)",
+     "legende": "L'objet du chapitre N devient le chapitre N+1 : aucune coupe, l'œil suit la forme."
+    },
+    {
+     "action": "option",
+     "fichier": "enchainements-2.jpg",
+     "slug": "deifosv-04e4d3",
+     "legende": "Contre-exemple : le même flash blanc, 14 fois. Planche de 6 flashs (temps d'après c04/techniques.jsonl)."
+    }
+   ],
+   "links": [
+    "c04 · L'objet relais",
+    "c04 · La compression : en point ou en ligne, puis l'éclosion",
+    "c04 · L'iris né d'un point",
+    "c04 · La coupe sèche sur le temps",
+    "c04 · Vider le cadre avant la coupe",
+    "c04 · Le fondu et le passage par le fond",
+    "c06 · Le morphing de forme : un objet qui change au lieu de couper",
+    "c10 · Le fil rouge : un objet, un exemple ou un plan continu traverse le film",
+    "c14 · Motion techniques showreel — @lukasersil"
+   ],
+   "outils": "HyperFrames : construire chaque couture comme un petit bloc de timeline autour de at(bar) ; un élément relais unique (#relay) dont on mesure les positions de départ et d'arrivée après document.fonts.ready ; snapshot de 8 images à 1/60 s autour de chaque couture. AE : couture dans une pré-composition dédiée ; Layer › Transform › Auto-Orient (Orientation automatique) pour le relais ; Motion Blur (Flou de mouvement) activé.",
+   "faiblesses": "Corpus fort en techniques (chapitre 4) mais faible en procédure : aucun prompt ne montre une liste de coutures planifiée, et le comptage des transitions répétées est fait par mots-clés."
+  },
+  {
+   "key": "controle-qualite",
+   "title": "Étape 9 · Le contrôle qualité : une grille chiffrée, sur le rendu",
+   "parcours": [
+    "A9"
+   ],
+   "scope": "Vérifier le rendu réel, pas le code, avec une grille de seuils : lisibilité, temps de lecture, temps morts, mots coupés, répétitions, calage musical, images parasites, carton final, fichier. Le corpus montre que même les vidéos notées 5 laissent passer du texte illisible, et qu'une consigne de contrôle sans seuil mesurable attrape les chevauchements mais pas le reste.",
+   "evidence": [
+    "Défauts les plus fréquents (mots-clés, environ) : texte trop petit 188 vidéos (13 des 17 notées 5, 81 % des 17) ; temps mort 140 (43 des 47 notées ≤ 3) ; répétition 79 ; fin figée 61 ; écart son/image 59 ; contraste 50 ; image parasite 30 ; mots coupés par le bord environ 27 (4 notées 5).",
+    "Les consignes de contrôle dans le prompt ne relèvent pas la note moyenne (18 prompts, 3,78, aucun noté 5) : elles corrigent ce qu'elles nomment. aschapmann-131210 (« vérifie les images toi-même, corrige ce qui se chevauche, est coupé ou va trop vite ») : aucun chevauchement, marges ≥ 9 % ; twoclipping-6dd14e (« Probe 20 or more frames ») : aucun chevauchement, mais petits corps de texte restés.",
+    "Contrôle sans mesure : brainextends-e19ac3 (« Inspect contact sheets ») laisse passer un glitch de 2 im (f145-f146) ; gdgtify-287ddf (8 images) rate une collision ; daniel-haida-8691d4 (10 images, « does this look like Apple-tier? ») rate l'UI à 1 % de la hauteur ; ultimaxbt-2ddf1e demandait 4 images de contrôle dont l'outro, perdue au rendu.",
+    "Contrôles qui marchent : notdwd-c2037d (4 images témoins f40, f86, f150, f230 avant le rendu complet) ; antonio-kodheli-490109 (rendus fixes à chaque coupe, chasse aux gels et aux sauts d'une image, -14 LUFS mesuré à -14,1) ; rossaxbt-3085b7 (planche contact + scan des sauts d'une image) ; twoclipping-5cba86 (boucle identique au pixel près, écart 0,33/255).",
+    "Ce qu'une passe image par image aurait vu : image noire isolée f211 (leonkohli-6dc01b), f562 (levabashidze-2d713a, 5/5), f1642-f1807 (nolkeeg-bf062e) ; image perdue à l'encodage, 449 images au lieu de 450 (hanifproduktif-54bdee, sudiyasa-f48ac9) ; pluriel cassé « 1 steps » (marklaunches-3b9492).",
+    "Seuils mesurés dans le corpus : texte lu ≥ 3 % de la hauteur (4 % en vertical) ; ≥ 0,3 s par mot hors rafale ; rien d'immobile plus de 0,25-0,5 s hors tenue voulue (zheke-38deff : gels de 0,27 et 0,33 s relevés) ; chaque accent au plus 2 fois ; son ≤ 1 im de l'image.",
+    "Outils des skills : cinetic (forensics : pops, gels, images fantômes, saccades ; av-audit : attaques contre repères ; 4 regards critiques director / forensics / sound-sync / art ; vérificateur qui réfute) ; product-film (stills, planche contact, planche de coutures à 0,1 s, brouillon demi-résolution) ; session-story (échec si > 1,2 s de silence) ; motion-premiers-principes (grille plan par plan, planche à 4 i/s, test du premier passage)."
+   ],
+   "decisions": [
+    "La grille et ses seuils (tableau unique réutilisable).",
+    "Les images à extraire : planche du film entier (1 image toutes les 0,25-0,5 s), bandes de 8 images à 1/60 s autour de chaque couture et de chaque temps fort, image à 360 px de large pour la lisibilité mobile.",
+    "Les mesures automatiques : nombre d'images et durée (ffprobe), différence entre images (gels, sauts, flashs d'une image), attaques audio contre coupes.",
+    "Qui juge : un regard neuf (sous-agent critique) plutôt que le constructeur.",
+    "Le seuil de livraison : zéro défaut bloquant (texte coupé ou illisible sur un temps fort, image parasite, décalage son > 1 im)."
+   ],
+   "livrable": "Grille de contrôle remplie (critère | mesure | seuil | résultat | instant) et la liste des défauts classés par impact, avec l'instant de chacun.",
+   "otom": [
+    "Étape 6 « Vérifier et corriger » (p. 6, 14, 15) → A9 : regarder 3 fois (en entier, scène par scène, sur un téléphone à taille réelle).",
+    "Boucle de vérification (3.7, p. 15) : captures à 0, 20, 40, 60, 80, 100 % et à chaque changement de scène, liste des défauts, 3 tours au plus, livraison avec les points non résolus. À compléter : bandes à 0,2 s autour de chaque action clé (une image fixe ne montre ni un mouvement ni un pic) et contrôle du calage musical.",
+    "Test des 3 secondes (p. 6) comme critère d'arrivée ; correctif 10 « DA exigeant » (5 défauts classés, corriger les 3 premiers).",
+    "Checklist APRÈS (3.12) : ajouter « calage musical vérifié »."
+   ],
+   "illus": [
+    {
+     "action": "garder",
+     "fichier": "controle-1.jpg",
+     "slug": "leonkohli-6dc01b",
+     "t": "0:06.93 à 0:07.13 (7 images, 30 fps)",
+     "legende": "Une image noire isolée (f211, 0:07.03) entre la balle et l'éclaboussure : invisible à vitesse réelle, évidente sur une bande image par image."
+    }
+   ],
+   "links": [
+    "c11 · (entrées à venir : « Les tics de vidéo générée, par fréquence » et les contrôles avant rendu par tic)",
+    "c09 · Le maintien : temps de lecture ou temps mort",
+    "c02 · Formats et zones sûres : vertical, carré, cinémascope",
+    "c04 · Le glitch en tranches et RVB, un cliché",
+    "c10 · La signature finale : logo, slogan, appel, sans temps mort"
+   ],
+   "outils": "HyperFrames : npx hyperframes check ; snapshot --at pour les instants clés ; après rendu : ffprobe (durée, nombre d'images, fps), ffmpeg select+tile pour la planche, ffmpeg -ss <t> -frames:v 1 pour un instant ; temps-lecture.py ; détecteur de sauts (différence > 3 × celle des voisines). AE : Composition › Save Frame As (Enregistrer l'image sous) aux repères ; Preview (Aperçu) à pleine résolution ; Info panel pour les tailles ; Audio waveform (forme d'onde, LL) contre les marqueurs.",
+   "faiblesses": "Les défauts sont relevés par l'analyse (flaws.jsonl), pas par les créateurs : aucune vidéo ne documente sa propre passe de contrôle chiffrée. Les comptages par catégorie sont faits par mots-clés : à recouper avec le chapitre 11."
+  },
+  {
+   "key": "iterer",
+   "title": "Itérer : la boucle de correction",
+   "parcours": [
+    "A9 → A7",
+    "avant A10",
+    "capitalisation après A10"
+   ],
+   "scope": "Ce qu'on fait entre le contrôle et le rendu final : corriger une ou deux choses à la fois en citant l'instant, verrouiller ce qui marche, garder chaque version, savoir s'arrêter (2 à 5 allers-retours), puis capitaliser les leçons dans le guide de style et la mémoire. Entrée séparée de l'étape 9 parce que le corpus n'en montre presque rien : elle s'appuie sur les skills, le guide Otom et le savoir-faire maison.",
+   "evidence": [
+    "Le corpus ne publie que le premier prompt : au moins 8 vidéos trahissent une conversation cachée (palashbagchi11-0a4b6b n'est qu'une retouche « ajoute une musique… version paysage et portrait » ; tak3sh8-be5012 second prompt « build the mp4 version with narration » ; kmasiff-cc72cb grille probablement ajoutée en itération ; 0xevinho-3777d8 « make a similar version »).",
+    "Consignes d'itération dans le prompt : « retimed until synced » → 39 gestes sur 41 à ±1 im (jhylee95-e1152f) ; « start over if it doesn't feel like done by a pro » → calage serré et transitions motivées (heyiammallik-e72d17) ; « iterate again if necessary » (daniel-haida-8691d4).",
+    "Skills : cinetic fait au moins 2 tours pour un lancement, 5 au plus ; chaque défaut a une priorité (P0 visible sur un temps fort, P1 visible en lecture normale, P2 visible à l'arrêt), un vérificateur tente de réfuter chaque P0/P1, on ne re-rend que l'acte touché ; porte de sortie : chaque dimension ≥ 3 sur 11, Finish et Sync = 5, moyenne ≥ 4,2. product-film garde chaque version (out/<film>/v1, v2…) et verse chaque remarque dans BRAND.md.",
+    "Apports c12 (skills open source) : 1 ou 2 notes par tour, avec numéros d'image ; un correctif qui ne tient pas → images N-1 et N+1 côte à côte ; le constructeur n'est pas le juge ; le client a encore trouvé 9 points en 7 tours après le « SHIP » des critiques.",
+    "Savoir-faire maison (NuOps) : une version = une copie du dossier précédent (rsync, sans les rendus) ; versions v2 à v9 de la promo NuOps ; les goûts validés ou rejetés notés au fil de l'eau (effets-aimes).",
+    "Correctifs du guide Otom (3.6) à reprendre corrigés, plus nos correctifs tirés des défauts mesurés (texte ≥ 3 % de la hauteur, rien d'immobile > 0,5 s, chaque accent ≤ 2 fois, aucun mot coupé par le cadre)."
+   ],
+   "decisions": [
+    "Ce qui est verrouillé (plans et versions validés) et ce qui reste ouvert.",
+    "Les 1 ou 2 corrections du tour, chacune avec son instant (mesure.temps ou image) et le résultat attendu.",
+    "Quand on s'arrête : seuil de la grille atteint, ou 5 tours ; on dit ce qu'on changerait encore.",
+    "Quand on change d'angle : un défaut qui revient → décrire le résultat attendu, ou repartir d'une conversation neuve avec la dernière version validée."
+   ],
+   "livrable": "Journal de versions (vN : ce qui a changé, verdict, instant de chaque remarque) et, après validation, le guide de style animé mis à jour (règles, 3 erreurs corrigées à éviter dès le départ).",
+   "otom": [
+    "« Comptez 2 à 5 allers-retours » ; la V1 est un premier jet (p. 6).",
+    "« Une ou deux corrections à la fois, en citant l'instant » ; « Claude en corrige huit et en casse deux autres » (p. 6 ; le chiffre 8 sur 10 n'est pas sourcé) ; une capture de l'instant fautif plutôt qu'une description (p. 15).",
+    "Itérer sans tout casser (3.8, p. 15) : « cette version est la référence, ne touche plus à la scène 1 » ; garder une copie de chaque version validée ; défaut qui revient → décrire le résultat attendu ou repartir d'une nouvelle conversation.",
+    "Correctifs (3.6, p. 14) : 03, 04, 05, 06, 07, 10 tels quels ; corriger 01 (ralentir par le tempo, pas de 30 %), 02 (garder le linéaire des tracés), 08 (couture : rendre les images 0 à N-1), 09 (rebonds et dégradés selon le style).",
+    "Capitaliser (3.9, p. 15) : prompt « guide de style animé », à ranger avec la charte (ajouter tempo et courbes signature)."
+   ],
+   "illus": [
+    {
+     "action": "aucune ou hors corpus",
+     "raison": "Aucune vidéo du corpus ne montre deux versions d'un même film.",
+     "option": "planche avant/après tirée des versions de la promo NuOps (videos/nuops-promo-v4 → v9), en le signalant comme exemple maison."
+    }
+   ],
+   "links": [
+    "c13 · (entrée à venir : « Prompts correctifs »)",
+    "c11 · (entrée à venir : « Les tics de vidéo générée, par fréquence »)",
+    "c09 · Le maintien : temps de lecture ou temps mort"
+   ],
+   "outils": "HyperFrames : une version = rsync du dossier précédent sans renders/ ni snapshots/ ; Read avant Write (Studio réécrit les fichiers, data-hf-id) ; re-rendre seulement l'intervalle touché pour vérifier. AE : File › Increment and Save (Incrémenter et enregistrer) à chaque version ; Composition › Duplicate (Dupliquer) pour une variante ; Collect Files (Rassembler les fichiers) pour archiver une version validée.",
+   "faiblesses": "Point le plus faible du corpus : zéro donnée d'itération observable. Les chiffres viennent des skills (cinetic, product-film), des apports open source et du guide Otom, pas des 233 vidéos."
+  },
+  {
+   "key": "rendu-export",
+   "title": "Étape 10 · Le rendu et l'export : 60 images par seconde, flou réel, fichier vérifié",
+   "parcours": [
+    "A10"
+   ],
+   "scope": "Rendre le master image par image à 60 fps, avec un flou de mouvement par sous-images là où ça bouge vite, l'encoder pour le web avec les bonnes balises, décliner les formats depuis la même timeline et vérifier le fichier livré (durée, images, couleurs, calage son). Les vidéos à 60 fps ont 4,03 de moyenne contre 3,65 à 30 fps.",
+   "evidence": [
+    "Cadence : 60 fps 129 vidéos, 4,03, 14 des 17 notées 5 ; 30 fps 93 vidéos, 3,65, 3 notées 5. Quand le prompt se tait : 118 rendus à 60 fps, 90 à 30 fps.",
+    "30 fps nuit aux gestes rapides : impacts en 3 im saccadés (apoorvjain25-d24184, maxalexweber-67688b) ; 60 fps demandés mais 30 livrés (ultimaxbt-2ddf1e : calage ±33 ms ; brainextends-e19ac3 « true 60 fps » non tenu).",
+    "Résolution : 1280×720 dans 36 vidéos au prompt muet sur le format → textes mous ou illisibles (andginja-333d32, topi-003-b0e12c, theviableedge-9065be 5/5) ; 848×480 (itisrazak-3ad902).",
+    "Flou de mouvement par sous-images (environ 19 constats) : levabashidze-2d713a « 180° SHUTTER » ; product-film rend un master à 240 fps puis tmix=4 (anthonyriera-9b1b2a) ; 8 sous-images tmix donnent un vrai flou (ultimaxbt-2ddf1e) ; 3 sous-images laissent des copies visibles (twoclipping-6dd14e), 4 sont trop peu à 50 px/im (demonugc-4c5753) ; règle : 8 à 16 sous-images si un élément parcourt plus de 10 % du cadre en une image (xelandre-363f00).",
+    "Rendu sans flou : traînées dessinées ou copies décalées (melvynx-6cde6c, prasad-pilla-2c0cba) ; cinetic : flou dès 12 px/im, aucun élément au-delà de 60-80 px/im (au-delà, refaire le geste en coupe ou en masque).",
+    "Encodage : savoir-faire maison x264 slow CRF 23, maxrate 4M, +faststart (≈ 26 Mo pour 55 s en 1080p60, sans bandes sur les dégradés) ; apports : H.264 High yuv420p + AAC, CRF 16-18, BT.709, +faststart ; product-film : piège de plage couleur (#0a0a0a relu #171717) → décoder l'image 0 et comparer.",
+    "Vérifier le fichier, pas le rendu : 449 images au lieu de 450 (hanifproduktif-54bdee) ; HUD « 1920×1080 · 30 FPS » sur un fichier 1280×720 (danilowm-d3720d) ; piste audio plus longue que l'image (kloss-xyz-15182a, +0,153 s) ; cinetic : probe (taille, fps, durée ±1 im, yuv420p, BT.709, AAC 48 kHz) et décalage ≤ 48 échantillons.",
+    "Boucles : rendre les images 0 à N-1 ; boucles identiques au pixel près (twoclipping-5cba86 0,33/255, ultimaxbt-bbebf5 1,9/255, theviableedge-9065be f899 = f0).",
+    "Déclinaisons : 9:16 et 1:1 recomposés depuis la même timeline, jamais recadrés (cinetic, apports « Une timeline, quatre formats ») ; affiche incrustée dans l'image 0 pour X et Slack (apports)."
+   ],
+   "decisions": [
+    "Cadence 60 fps (30 seulement pour alléger un fichier) ; 1920×1080 minimum.",
+    "Flou : sous-images (8-16) sur les passages rapides seulement, ou rendu net si rien ne dépasse 12 px/im.",
+    "Encodage : H.264 High, yuv420p, BT.709, CRF 18 (master) ou CRF 23 maxrate 4M (web), AAC, +faststart.",
+    "Livrables : master 16:9, déclinaisons 9:16 / 1:1 recomposées, affiche, GIF éventuel à une cadence juste en centièmes (10, 20, 25 ou 50 fps).",
+    "Contrôle du fichier livré : ffprobe, image 0 décodée, calage son, nombre d'images, lecture sur téléphone."
+   ],
+   "livrable": "Le dossier de livraison : vidéo(s) au format demandé, affiche, déclinaisons, et un court compte rendu (durée, taille, fps, contrôles passés).",
+   "otom": [
+    "Étape 7 « Exporter » (p. 16) → A10 : tableau HTML / MP4 / GIF ; MP4 « à privilégier » ; relire sur mobile avant publication.",
+    "Prompt de rendu MP4 (3.10, p. 16) : garder la structure (installer, convertir, valider l'aperçu, rendre) ; corriger 30 fps → 60 fps (contradiction 1), ajouter yuv420p, CRF 18, faststart ; GIF à une cadence juste en centièmes (contradiction 11, pas 15 fps).",
+    "Export par capture d'écran (3.11) : aperçu seulement, jamais un livrable (« la fluidité dépend de votre ordinateur »).",
+    "Correction (contradiction 7) : boucle = l'image qui suivrait la dernière est la première ; rendre 0 à N-1."
+   ],
+   "illus": [
+    {
+     "action": "garder (contre-exemple)",
+     "fichier": "rendu-1.jpg",
+     "slug": "twoclipping-6dd14e",
+     "t": "0:05.93 à 0:06.10 (6 images à 1/30 s)",
+     "legende": "Flou de mouvement à 3 sous-images : sur le mur de cartes qui file, les copies se dédoublent au lieu de se fondre."
+    },
+    {
+     "action": "nouvelle",
+     "fichier": "rendu-2.jpg",
+     "commande": "PY TOOLS/illus.py range VIDEOS/ultimaxbt-2ddf1e.mp4 5 25 6 SYN/c12/illus/rendu-2.jpg",
+     "slug": "ultimaxbt-2ddf1e",
+     "t": "0:00.17 à 0:00.83 (fichier publié à 30 fps : recul en rotation f5-f25 ; frappe f59-f60 à 0:02.0)",
+     "legende": "8 sous-images fusionnées : flou directionnel continu sur le recul en rotation. Vérifier que le flou se voit ; sinon prendre la frappe (f55-f70). Vidéo notée 3 : la montrer pour la technique de rendu seulement."
+    }
+   ],
+   "links": [
+    "c06 · Le flou de mouvement et les traînées",
+    "c06 · La finition de rendu : grain, vignette, halo, ombres douces, reflets",
+    "c10 · Le bouclage : serre-livres, rappel et boucle parfaite",
+    "c02 · Formats et zones sûres : vertical, carré, cinémascope"
+   ],
+   "outils": "HyperFrames : npx hyperframes render --fps 60 --quality delivery (savoir-faire) ; ffmpeg -c:v libx264 -preset slow -crf 23 -maxrate 4M -bufsize 8M -pix_fmt yuv420p -movflags +faststart ; ffprobe ; ffmpeg -ss <t> -frames:v 1 pour confirmer. AE : Composition › Add to Render Queue (Ajouter à la file d'attente de rendu) ou Adobe Media Encoder, H.264, 60 fps ; Motion Blur (Flou de mouvement) de composition, Shutter Angle 180° et Samples Per Frame (échantillons par image) dans Composition Settings › Advanced (Avancé).",
+   "faiblesses": "Les cadences et tailles sont celles des fichiers publiés (parfois réencodés par X) : 30 fps ou 720p peuvent venir de la plateforme, pas de Claude."
+  },
+  {
+   "key": "skills-corpus",
+   "title": "Les skills vidéo du corpus : cinetic, product-film, session-story",
+   "parcours": [
+    "A1 à A10 (procédures complètes à comparer)"
+   ],
+   "scope": "Ce que les trois skills du corpus imposent, étape par étape, ce qu'ils ont produit et ce qu'ils laissent passer. Ils relèvent le plancher (leurs 3 vidéos sont notées 4) mais aucun n'atteint 5, et tous trois laissent passer du texte d'interface trop petit.",
+   "evidence": [
+    "cinetic (Remotion par défaut, HyperFrames possible) : 8 étapes avec un fichier et une porte chacune (BRIEF.md, TREATMENT.md, tokens, timeline.ts, actes, soundtrack.wav, film.mp4, revue, livraison) ; tirage de techniques au hasard (pick.py, ≈ 1 technique par 2,5 s) ; bande-son synthétisée depuis les repères calculés ; flou par sous-images ; scripts de mesure (grid-check, forensics, av-audit, probe, check-sync) ; 4 regards critiques ; porte de sortie chiffrée. Vidéo : lexnlin-6161a6 (Cinetic skill launch film, 4/5, 30,06 s, 60 fps, 120 BPM, synchro serrée, 1 im d'avance systématique) ; défauts : UI à 0,8-1,2 % de la hauteur, « Now it directs. » 1,75 s quasi immobile après le drop.",
+    "product-film (Remotion) : découverte du code et de la charte, 2 tours d'entretien, BRAND.md, prompt de film en blocs (<context> <inputs> <direction> <cast> <structure> <build> <gotchas> <start>), point d'arrêt avec tableau des temps et 3 images de style, chanson mesurée et recoupée en mesures entières, master à 240 fps + tmix, vérification des couleurs décodées. Vidéo : anthonyriera-9b1b2a (Reddit marketing tool launch video, 4/5, 52,8 s = 33 mesures à 150 BPM, 38 événements sur 61 à ±2 im) ; défauts : UI à ≈ 2 % de la hauteur, pas de carton final, intro de 2,8 s.",
+    "session-story (HyperFrames 0.8.71) : film d'une session réelle de 40 à 70 s, citations verbatim validées par l'utilisateur (porte de confidentialité), moteur de chorégraphie déjà réglé, partition orchestrale composée en code, échec si plus de 1,2 s de silence, rendu --fps 24 --crf 12. Vidéo : jake11moran-a269c4 (Animated agent session story, 4/5, 52,7 s, 24 fps, 119,3 BPM) ; défauts : plan large fixe ≈ 45 s, citations à ≈ 3 % lisibles ≈ 1,5 s, boucle répétée 3 fois, toutes les vidéos du skill se ressemblent.",
+    "Skills appelés dans un prompt : danilowm-d3720d (/hyperframes, 3/5, 37 % statique, 720p), visheshbaghell-3aba37 (/brag, 3/5, 81 s, 64 % quasi fixe, même transition ×8), lemomo-ai-0d9cff (Lemo-Opuscar, 4/5, voix off, musique décorative).",
+    "Points communs : une seule source de temps (timeline.ts, cues.ts, story.json), musique et image sur la même grille, images fixes avant le rendu complet, vérification du fichier encodé.",
+    "Ce qu'aucun ne contrôle assez : la taille du texte d'interface et les tenues après le temps fort (relevé dans les 3 vidéos).",
+    "Goûts imposés : cinetic interdit serif, italique, orange, crème, néon, dégradés multicolores et rebond hors atterrissage ; product-film interdit tout effet que la marque n'utilise pas ; session-story fige le décor et le cadrage."
+   ],
+   "decisions": [
+    "Quand partir d'un skill (vidéo produit à partir d'un code existant : product-film ; film de lancement complet avec gardes-fous : cinetic) et quand suivre la Bible seule.",
+    "Ce qu'on emprunte à chacun pour notre parcours (portes par étape, point d'arrêt, mesure de la piste, scripts de contrôle).",
+    "Ce qu'on corrige : interdits de goût à remplacer par ceux du style choisi ; ajouter taille de texte minimale et tenue maximale."
+   ],
+   "livrable": "Tableau comparatif à 6-8 lignes : skill | moteur | étapes et portes | source du tempo | son | contrôles | ce qu'il impose | vidéo et note | défauts relevés.",
+   "otom": [
+    "Le guide recommande de ranger charte et animations validées dans un projet Claude ou une skill (p. 6, p. 15) : c'est ce que font ces skills, en plus outillé."
+   ],
+   "illus": [
+    {
+     "action": "nouvelle",
+     "fichier": "skills-1.jpg",
+     "commande": "PY TOOLS/planche.py SYN/c12/illus/skills-1.jpg lexnlin-6161a6@<t> lexnlin-6161a6@<t> anthonyriera-9b1b2a@8.5 anthonyriera-9b1b2a@<t> jake11moran-a269c4@21.5 jake11moran-a269c4@32.5 --cols 3",
+     "legende": "Une ligne par skill : cinetic (lexnlin-6161a6, 20,5-21,5 s monogramme qui se déplie ; un plan de démo), product-film (anthonyriera-9b1b2a, comptes qui jaillissent de la mascotte vers 8-10 s), session-story (jake11moran-a269c4, maillet 21-25 s, papillon 32-33 s). Temps à vérifier dans c06/c07/c08 techniques.jsonl."
+    }
+   ],
+   "links": [
+    "c09 · La musique calquée sur le montage",
+    "c08 · La mascotte tirée de la marque, qui agit sur l'écran",
+    "c08 · Le visage minimal : jouer par les yeux, le clignement et les signes"
+   ],
+   "outils": "Fichiers à lire pour la rédaction : KB/skills/cinetic/skills/cinetic/SKILL.md (+ references/review-loop.md, timing-grid.md, finishing.md, sound.md), KB/skills/product-film-skill/plugins/product-film/skills/product-film/SKILL.md (+ reference/story.md, music.md, review.md, render.md, templates/film-prompt.md), KB/skills/session-story/skills/session-story/SKILL.md (+ references/story.md, score.md, motion.md).",
+   "faiblesses": "Trois vidéos seulement, une par skill, aucune étudiée à 60 fps : on compare des procédures écrites plus que des résultats."
+  },
+  {
+   "key": "claude-seul",
+   "title": "Ce que Claude fait seul : les réflexes de fabrication d'Opus 5.5 quand le prompt se tait",
+   "parcours": [
+    "toutes : valeurs par défaut à accepter ou à écraser à chaque étape"
+   ],
+   "scope": "Les choix de fabrication qu'Opus 5.5 fait sans consigne, chiffrés : durée, cadence, taille, tempo, structure en mesures, bande-son, habillage, carte de fin, tics. Les connaître dit quoi écrire dans le brief et quoi laisser. L'entrée « Ce que Claude fait d'un prompt d'une ligne » du chapitre 13 traite du contenu et de la direction ; celle-ci traite de la fabrication.",
+   "evidence": [
+    "Durée : demandée, tenue à ±10 % dans 128 cas sur 140 (« 15 s » → 15,06 s, 51 fois) ; non demandée (90 vidéos), médiane 38,6 s (24 à 60 s) ; débordement ×2 à ×3,7 quand le contenu est un inventaire (5 cas).",
+    "Tempo : sans BPM dans le prompt (178 vidéos mesurées), 120 BPM 74 fois et 128 BPM 42 fois (65 %) ; Claude choisit le tempo pour que la durée fasse un nombre entier de mesures (15 s = 8 mesures à 128 BPM) et écrit la timeline en secondes rondes (multiples de 0,25 ou 0,5 s), ce qui cale tout à 120 BPM.",
+    "Son : sur 186 prompts qui ne parlent pas de son, 99 vidéos animées sur la musique (53 %, moyenne 4,08), 38 partielles, 31 muettes (17 %, 3,52), 12 musique posée ; bande-son très probablement composée en code sur la même horloge (environ 51 constats).",
+    "Cadence et taille : sans consigne, 118 vidéos à 60 fps contre 90 à 30 fps ; 1920×1080 dans 142 cas, 1280×720 dans 36.",
+    "Le prompt « showreel… go all out » (69 vidéos, 4,07 de moyenne, 9 notées 5) : 120 ou 128 BPM (55 sur 57 mesurés), 60 fps (55 sur 69), animée sur la musique (56 sur 69), 15 s (47) ; gabarit par défaut : HUD de régie, chapitres numérotés d'une mesure, rafale à la croche, chiffres de preuve, carte de fin « Claude. » avec point orange (tequilafunks-97f6c9, sudo-kiran-49176d, levabashidze-2d713a).",
+    "Structure : chapitres numérotés et HUD (environ 40 et 66 constats) ; arc problème → solution → preuves → appel pour une promo SaaS ; sans sujet, Claude se prend pour sujet (28 vidéos, dont 7 notées 5).",
+    "Tics par défaut si rien n'est interdit : HUD de viseur, glitch RVB, texte brouillé, curseur tapé, flash blanc répété, mots coupés par le cadre (sudo-kiran-49176d, tequilafunks-97f6c9, deifosv-04e4d3 flash ×14) ; texte trop petit dans environ 188 vidéos ; carte finale tenue (fin figée dans environ 61).",
+    "Ce que Claude ne fait pas seul : vérifier le fichier encodé (449 images au lieu de 450, décalages audio de 83-86 ms), mesurer une piste fournie (ultimaxbt-2ddf1e : 130 annoncés, 119,4 réels), respecter des interdits noyés dans un long prompt (brainextends-e19ac3)."
+   ],
+   "decisions": [
+    "Réflexes à garder : tempo choisi d'après la durée, mesures entières, bande-son sur la même horloge, rendu image par image.",
+    "Réflexes à écraser dans le brief : 720p ou 30 fps, texte d'interface minuscule, HUD décoratif, carte finale figée, sujet autoréférent, tics listés."
+   ],
+   "livrable": "Tableau « réflexe | fréquence mesurée | à garder ou à écraser | ligne de brief qui l'écrase », repris dans le gabarit de prompt (chapitre 13) et la checklist (E).",
+   "otom": [
+    "Le guide suppose qu'il faut tout décrire (« « Une animation dynamique » ne veut rien dire pour Claude », p. 5) ; nos mesures nuancent : Opus 5.5 pose seul une grille musicale juste et une structure en mesures, mais pas la lisibilité ni le contrôle du fichier."
+   ],
+   "illus": [
+    {
+     "action": "nouvelle ou renvoi",
+     "fichier": "claude-seul-1.jpg",
+     "commande": "PY TOOLS/planche.py SYN/c12/illus/claude-seul-1.jpg tequilafunks-97f6c9@14.6 sudo-kiran-49176d@14.6 levabashidze-2d713a@14.6 roundtablespace-d3a1be@14.6 grace-sunnyy-29bc61@14.6 fionntobin-97b7af@14.3 --cols 3",
+     "legende": "Six runs du même prompt d'une ligne finissent sur la même signature : « Claude. », point de couleur, carton « available ». Vérifier les temps (dernière seconde) ; c13/illus/showreel-defaut.jpg existe déjà : ne pas faire doublon, choisir un autre angle (la carte de fin) ou renvoyer au chapitre 13."
+    }
+   ],
+   "links": [
+    "c10 · Le chapitrage : un chapitre par mesure",
+    "c10 · La signature finale : logo, slogan, appel, sans temps mort",
+    "c02 · L'habillage persistant : HUD, chapitres et gabarit fixe",
+    "c09 · La grille de tempo : une horloge, une scène par mesure",
+    "c13 · (entrées à venir : « Ce que Claude fait d'un prompt d'une ligne », « Même prompt, résultats différents »)"
+   ],
+   "outils": "Pas de recette obligatoire : un encadré « Les lignes de brief qui écrasent un réflexe » (60 fps, 1920×1080, texte ≥ 3 % de la hauteur, pas de HUD décoratif, carte finale ≤ 1,5 s vivante, interdits).",
+   "faiblesses": "Origine des choix incertaine : la piste, la cadence ou la taille publiées peuvent venir de l'auteur ou de la plateforme ; « probable » dans beaucoup de constats. Chevauchement à surveiller avec le chapitre 13."
+  }
+ ]
+}

@@ -1,0 +1,598 @@
+{
+  "slug": "leonkohli-6dc01b",
+  "title": "Geometric motion designer showreel",
+  "handle": "@LeonKohli",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept et fil rouge de niveau studio, montage calé sur une bande-son écrite pour lui ; mais douze idées en 15 s, ruptures 2D/3D et image en avance d'environ 100 ms sur le son.",
+  "summary": "Showreel de 15 s bâti sur un fil rouge, un point orange. Balle rebondissante dans une fausse timeline, il devient le point du i de « motion » et « design », le centre d'une grille Bauhaus, une sphère sur des cubes 3D, une éclaboussure, un trou noir, le curseur d'un cadran « 2026 », le cœur d'un tunnel, puis le point de « claude. ». Son écrit sur la timeline. Très dense.",
+  "prompt_vs_result": [
+    "Le prompt impose seulement : 15 secondes, motion design « dynamique », un showreel de CV qui montre le niveau du designer, et « go all out ». Aucun style, aucune palette, aucune musique, aucune structure.",
+    "Claude a tout décidé : fil rouge du point orange, ouverture méta sur la balle rebondissante dans une timeline, palette orange/bleu/citron, identité « claude. Motion Designer », douze scènes de techniques différentes et, probablement, une bande-son écrite sur la même grille à 120 BPM.",
+    "« Go all out » a produit un catalogue (une technique par seconde) plutôt qu'un récit ; le fil rouge l'a sauvé. Il aurait fallu fixer 3 actes, la durée minimale d'un plan, le tempo, et exiger un contrôle de synchro audio après export."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#080912",
+        "role": "fond marine quasi noir de l'ouverture, du tunnel final et de la carte logo"
+      },
+      {
+        "hex": "#FF5E1E",
+        "role": "orange héros : balle, point du i, sphère, point final du logo"
+      },
+      {
+        "hex": "#3453FE",
+        "role": "bleu roi : fond de « motion » et de l'éclaboussure, tuiles, arc du cadran"
+      },
+      {
+        "hex": "#DCFE3D",
+        "role": "citron : tuiles Bauhaus, arc du cadran, anneaux"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "blanc : fond de « design » et du cadran, texte du logo"
+      },
+      {
+        "hex": "#282832",
+        "role": "anthracite : tuiles et arcs sombres"
+      },
+      {
+        "hex": "#010913",
+        "role": "fond de la grille Bauhaus"
+      },
+      {
+        "hex": "#052BB9",
+        "role": "bleu des cubes 3D éclairés (plus sombre que le bleu plat)"
+      },
+      {
+        "hex": "#E6E6F0",
+        "role": "lavande du début du tunnel d'anneaux"
+      },
+      {
+        "hex": "#8E8E8E",
+        "role": "image flash grise sur l'impact du logo"
+      }
+    ],
+    "type": "Grotesque Black (900) large, minuscules, interlettrage serré (≈ −3 %) pour « motion », « design », « claude. » (≈ 17 % H) ; chiffres Black ; « SHOWREEL » capitales espacées ; sans régulière pour « Motion Designer » (≈ 3,5 % H).",
+    "texture": "Aplats nets sans grain en 2D ; flou de mouvement directionnel sur presque chaque geste (horizontal sur le texte, vertical sur les rouleaux du compteur, radial sur le travelling, rotatif sur les anneaux) ; halo doux autour de la balle (f56) et du point au flash (f359) ; rendu 3D avec ombres portées douces et reflet spéculaire sur la sphère ; particules additives en stries lumineuses cuivrées ; léger grain sur le disque de f239.",
+    "style": "Bauhaus pop, point orange fil rouge",
+    "coherence": "Le système tient par le point orange présent dans chaque plan, une palette de 5 teintes (orange, bleu, citron, blanc, anthracite) et une seule grotesque Black. Il se casse sur le champ de cubes 3D (bleu plus sombre, éclairage de démo WebGL) et sur le trou noir de particules aux teintes cuivrées, qui sortent de l'univers d'aplats ; l'image noire isolée de f211 ressemble à un défaut."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 120 BPM exact : kick toutes les 0,500 s à partir de 2,085 s, clap à +0,25 s (la grille automatique à 0,307 s s'est calée sur le clap, pas sur le kick). 12 plans en 15,1 s, plan médian 0,98 s, plus court 0,1 s ; coupes quantifiées sur une grille d'une demi-seconde de la composition (3,97 / 6,97 / 7,97 / 8,97 / 11,97 s = secondes rondes moins 1 image). Les coupes et impacts de balle précèdent le kick de 2,5 à 3,5 im (≈ 100 ms) : décalage constant, car la piste audio démarre à 0,085 s. Les « maintiens statiques » détectés de 0 à 1,57 s sont faux : la balle (7 % de la hauteur) rebondit en continu. Seul vrai maintien : la carte logo 12,4–14,3 s (1,9 s), animée d'un petit rebond du point vers 13,5 s. Densité très haute : un changement visible toutes les 0,25 à 0,5 s jusqu'à 12 s, puis respiration sur le logo et sortie en boucle.",
+    "timeline": [
+      {
+        "t": "0:00.00-0:01.80",
+        "what": "Fond #080912, « Showreel 2026 » en haut à gauche, timecode qui compte les images en haut à droite, règle 0–60 images en bas ; la balle orange rebondit 3 fois (contacts f14, f29, f44) en laissant une trajectoire pointillée, la tête de lecture suit.",
+        "technique": "balle rebondissante méta dans une fausse timeline, squash & stretch"
+      },
+      {
+        "t": "0:01.80-0:02.13",
+        "what": "La règle se désagrège, la balle s'illumine et grossit jusqu'au plein cadre orange (f58–f59), puis le disque se contracte sur fond bleu et se pose en point du i de « motion » pendant que les lettres montent du bas.",
+        "technique": "plongée dans la balle puis contraction en point du i"
+      },
+      {
+        "t": "0:02.13-0:02.90",
+        "what": "« motion » blanc sur bleu : pulsation d'échelle +19 % (f71), bascule de graisse Black → Light → Black (f82–f86).",
+        "technique": "pulsation d'échelle, bascule de graisse"
+      },
+      {
+        "t": "0:02.90-0:03.07",
+        "what": "Volet montant bleu → blanc avec une image de tranches floues (f89) ; « mot/ion » se scinde, « design » noir arrive en escalier et se pose sur le kick (f92).",
+        "technique": "volet montant avec tranches floues"
+      },
+      {
+        "t": "0:03.07-0:03.93",
+        "what": "« design » tient, ondule (f109–f112) puis ses lettres tombent avec gravité et rotation (f113–f118) ; le point du i reste suspendu au centre.",
+        "technique": "ondulation puis chute des lettres, le point reste"
+      },
+      {
+        "t": "0:03.97-0:04.80",
+        "what": "Raccord sur le point : fond blanc → marine ; une grille de tuiles Bauhaus explose radialement depuis le point (f120–f124), des motifs pivotent (f128–f136).",
+        "technique": "raccord sur le point, grille à décalage radial"
+      },
+      {
+        "t": "0:04.80-0:06.57",
+        "what": "Les tuiles deviennent des carrés pleins vus de dessus, le point une sphère brillante ; la caméra bascule en perspective : champ de cubes extrudés ; la sphère rebondit (f164, f179, f194), chaque impact lance une onde de cubes blanchis qui montent.",
+        "technique": "passage 2D → 3D, onde d'impact"
+      },
+      {
+        "t": "0:06.57-0:06.93",
+        "what": "Travelling avant éclair avec flou de mouvement (f197–f201), gros plan sur la sphère qui continue de grossir.",
+        "technique": "travelling avant éclair"
+      },
+      {
+        "t": "0:06.97-0:07.93",
+        "what": "Coupe sur un disque plat orange sur bleu, déformation, une image noire (f211), éclaboussure (f212) ; les gouttes deviennent 7–8 billes en anneau qui fusionnent en un disque (f235–f238).",
+        "technique": "éclaboussure, métaballes"
+      },
+      {
+        "t": "0:07.97-0:08.87",
+        "what": "Fond noir : le disque explose en milliers de stries lumineuses (f240), trou noir central, disque d'accrétion qui bascule en ellipse puis se referme en anneau mince, point posé à midi (f263).",
+        "technique": "explosion de particules, trou noir"
+      },
+      {
+        "t": "0:08.90-0:09.97",
+        "what": "Rampe noir → gris → blanc en 3 im ; cadran : compteur 0000 → 2026 en rouleaux, 4 arcs colorés dessinés en sens horaire, graduations, « SHOWREEL » ; les chiffres s'effacent et le point descend au centre (f294–f298).",
+        "technique": "rampe de luminance, compteur à rouleaux, anneau segmenté"
+      },
+      {
+        "t": "0:10.07-0:11.70",
+        "what": "Sur le kick, l'anneau explose hors cadre et 5–6 anneaux concentriques à arcs colorés tournent en sens alternés ; la caméra les traverse (tunnel) pendant que le fond s'assombrit jusqu'au noir, stries radiales blanches à la fin.",
+        "technique": "tunnel d'anneaux, assombrissement progressif"
+      },
+      {
+        "t": "0:11.73-0:11.93",
+        "what": "Point orange seul au centre sur fond sombre pendant 7 images, sur le silence de la bande-son.",
+        "technique": "silence avant l'impact tenu sur l'élément seul"
+      },
+      {
+        "t": "0:11.97-0:12.33",
+        "what": "Image flash grise avec halo (f359), le point file à droite et « claude » se déroule de droite à gauche depuis lui avec flou horizontal ; logo complet f369–f370.",
+        "technique": "image flash, logo déroulé depuis son point final"
+      },
+      {
+        "t": "0:12.37-0:14.33",
+        "what": "Carte finale « claude. » + « Motion Designer », « Showreel 2026 » et timecode ; petit rebond du point vers f402–f410 ; maintien.",
+        "technique": "carte finale, rebond du point"
+      },
+      {
+        "t": "0:14.40-0:15.03",
+        "what": "Les lettres sont aspirées dans le point (f434), le point seul grossit (f438) puis disparaît (f442) ; noir.",
+        "technique": "sortie en boucle : mot aspiré par son point"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Mesures audio (fenêtres de 5 ms) : la piste démarre à 0,085 s ; accents d'intro à 0,585 / 1,085 / 1,585 s, kick toutes les 0,500 s à partir de 2,085 s, clap à +0,25 s, plus de kick de 10,1 à 11,85 s (break + montée), silence total 11,85–12,05 s, impact 12,085 s, accents 13,585 et 14,585 s. Tous ces accents tombent donc sur des demi-secondes rondes de la composition décalées de 85 ms. Côté image, 26 gestes clés relevés. À ±2 im d'une barre (kick ou clap) : 14 sur 26, peu probant à 30 fps (deux barres par temps, hasard ≈ 67 %). Mais la phase est constante : 21 des 22 gestes forts (contacts de la balle d'intro, atterrissages de « motion » et « design », coupes f119/f209/f239/f269, impacts de la sphère f164/f179/f194, éclaboussure f212, burst f240, compteur f285, explosion des anneaux f302, flash f359, rebond du point f406, aspiration f437) tombent entre −3,5 et +2 im du kick, une fenêtre qui couvre 37 % du cycle ; les coupes et impacts précèdent le kick de 2,5 à 3,5 im (≈ 100 ms). Les 5 autres (pulsation de « motion » f71, retour de graisse f86, rotation des tuiles f128, coupe f144, fusion des billes f236) tombent à ±2 im du clap. Structure calquée : intro sans kick = balle ; le kick entre sur la pose de « motion » ; le break = tunnel d'anneaux ; le silence = point seul (f352–f358) ; l'impact = flash + logo ; les deux derniers accents = rebond du point et aspiration du logo. L'indice automatique (« aucune synchro ») s'est calé sur le clap et a raté ce décalage constant.",
+    "synced": [
+      "coupes",
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "pulsations",
+      "flashs",
+      "texte",
+      "camera",
+      "couleur",
+      "drop"
+    ],
+    "style_match": "Électro house à 120 BPM (kick sec, clap, montée, silence, impact) : colle aux coupes franches, aux rebonds et au flou ; le break porte le tunnel, l'impact le logo.",
+    "how_built": "Le prompt ne parle pas de son. La piste démarre à 0,085 s et chacun de ses accents tombe sur une demi-seconde ronde de la composition (0,5 / 1,5 / 2,0 / 8,0 / 12,0 / 13,5 / 14,5 s, plus 85 ms) : bande-son très probablement générée en code (ou montée à la main) sur la même timeline que l'animation, à 120 BPM pour des scènes de 0,5 à 1 s. Le timecode à l'écran égal au numéro d'image confirme un rendu image par image. Le décalage de 85 ms, plus 1 image d'avance des coupes, n'a pas été corrigé à l'export : l'image précède le son d'environ 100 ms."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Fil rouge : un seul point orange traverse tout le film",
+      "name_en": "through-line element / visual anchor",
+      "t": "0:00.00-0:14.73",
+      "frames": "f0-f442",
+      "fps": 30,
+      "mechanics": "Le même disque orange #FF5E1E est successivement balle (f0–f56), plein cadre (f58–f59), point du i de « motion » (f62–f87) puis de « design » (f90–f118), centre de grille (f119–f136), sphère 3D (f150–f208), disque plat → éclaboussure → billes → disque (f209–f238), noyau de l'explosion (f239–f240), curseur à midi du cadran (f263–f293), centre des anneaux (f298–f351), point seul (f352–f358), point final du logo (f361–f430), point qui grossit puis disparaît (f438–f442). Chaque transition part de lui ou y revient : l'œil reste sur le centre ou sur le point, ce qui rend lisible un montage d'une idée par seconde.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg, microM-001-cut-f119.jpg, microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fausse timeline d'animation (règle, tête de lecture, image clé, timecode)",
+      "name_en": "fake animation timeline UI",
+      "t": "0:00.00-0:01.87",
+      "frames": "f0-f56",
+      "fps": 30,
+      "mechanics": "Règle horizontale fine à ≈ 81 % de la hauteur, de 15 % à 64 % de la largeur, graduée 0 / 15 / 30 / 45 / 60 images ; tête de lecture orange (trait + poignée) qui avance avec la balle ; losange d'image clé orange à 0 et petit carré cerclé au point de départ de la trajectoire ; ligne de sol grise à 63 % de la hauteur. « Showreel 2026 » en haut à gauche et timecode en haut à droite (≈ 2 % H) : le timecode affiche le vrai numéro d'image (00:00:00:10 à f10). La trajectoire reste en pointillés (onion skin) : à f48 les 3 arcs sont visibles. Méta : le reel commence par l'exercice que tout animateur apprend en premier.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Balle rebondissante calée sur le tempo, avec écrasement et étirement",
+      "name_en": "bouncing ball with squash and stretch on the beat",
+      "t": "0:00.00-0:01.80",
+      "frames": "f0-f54",
+      "fps": 30,
+      "mechanics": "x linéaire (≈ +0,86 % de la largeur par image, de 29 % à 67 %), y lent à l'apex et rapide au sol (gravité). Contacts f14, f29–f30, f44 : période 15 im = 0,5 s = 120 BPM, chaque contact 2,5 à 3,5 im avant l'accent sonore. Étirement vertical ≈ 1:1,6 juste avant et après le contact (f4, f28, f42) ; écrasement ≈ 2,5:1 au contact f14, ≈ 3:1 à l'atterrissage final f44–f46 (tenu 3 im), puis balle ronde au repos f48–f52 et légère anticipation verticale f54. Apex croissants (16 %, 21 %, 28 % de la hauteur au-dessus du sol) : faux physiquement mais crée l'élan vers la transition. Balle petite : ≈ 7 % de la hauteur, cadre vide à 90 %.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 8,
+        "to": 46,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans la balle puis contraction en point du i",
+      "name_en": "zoom into the ball, full-frame color, shrink into the i-dot",
+      "t": "0:01.80-0:02.13",
+      "frames": "f54-f64",
+      "fps": 30,
+      "mechanics": "f54 les graduations de la règle se détachent et pivotent ; f56 la balle grossit ≈ ×4 avec halo flou et stries radiales ; f58–f59 plein cadre orange (2 im) ; f60 le disque (≈ 70 % de la hauteur, bord flou) découvre le fond bleu #3453FE ; f61 ≈ 45 % en montant, f62 ≈ 22 %, f63 ≈ 15 %, f64 ≈ 10 % : il se pose comme point du i de « motion ». Contraction ease-out en 5 im ; la pose tombe sur le kick d'entrée (2,085 s = f62,5) à ±1,5 im. La couleur du héros devient le fond pendant 2 images, puis se resserre en signe typographique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg",
+      "illus": {
+        "from": 54,
+        "to": 64,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent du bas en vague",
+      "name_en": "staggered letter rise",
+      "t": "0:02.03-0:02.13",
+      "frames": "f61-f64",
+      "fps": 30,
+      "mechanics": "« motion » blanc : chaque lettre monte du bord inférieur avec flou vertical ; à f62 elles sont en escalier (m le plus bas), décalage ≈ 1 im par lettre ; alignées à f64. 3 à 4 im au total, ease-out sec, aucun dépassement. Le point du i arrive en même temps par le haut.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pulsation d'échelle sur un coup",
+      "name_en": "scale pulse / bump",
+      "t": "0:02.33-0:02.57",
+      "frames": "f70-f77",
+      "fps": 30,
+      "mechanics": "La largeur du mot passe de 69 % à 82 % de la largeur du cadre en 1 image (f70 → f71, +19 %), puis revient en ease-out sur 6 images (f77), avec flou horizontal pendant le retour. Tombe 1 im après le clap de 2,335 s. Une pulsation unique par mot, pas répétée.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Bascule de graisse Black → Light → Black",
+      "name_en": "variable-font weight flicker",
+      "t": "0:02.73-0:02.87",
+      "frames": "f82-f86",
+      "fps": 30,
+      "mechanics": "Le mot passe d'un coup en Light (≈ 300) pendant 4 images (f82–f85), même taille et même position, puis revient en Black à f86 avec un flou de transition ; le retour tombe 1 im après le clap de 2,835 s. Effet de police variable (axe wght) traité en coupe sèche, sans interpolation visible.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet montant avec tranches floues",
+      "name_en": "upward wipe with slice smear",
+      "t": "0:02.90-0:03.07",
+      "frames": "f87-f92",
+      "fps": 30,
+      "mechanics": "f87 filet blanc au bas du cadre ; f88 bande blanche ≈ 8 % de la hauteur et « motion » se scinde (« mot » monte, « ion » descend) ; f89 image de transition faite de bandes horizontales floues qui mélangent « motion » et « design » (effet stores) ; f90 fond blanc avec une bande bleue résiduelle ≈ 8 % en haut, « design » noir en escalier (« des » bas, « ign » haut) avec flou ; f91–f92 posé. 5 images au total, pose sur le kick (3,085 s = f92,5) à 1 im près.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Ondulation puis chute des lettres, le point reste suspendu",
+      "name_en": "wave then gravity drop, dot stays",
+      "t": "0:03.57-0:03.93",
+      "frames": "f107-f118",
+      "fps": 30,
+      "mechanics": "f109–f112 onde sinusoïdale qui parcourt le mot de gauche à droite (amplitude ≈ 15 % de la hauteur des lettres), départ 2 im après le kick de 3,585 s ; f113–f118 les lettres tombent avec rotation (jusqu'à ≈ 20°) et accélération (ease-in, gravité) : du centre (y ≈ 50 %) à hors cadre en 6 images, décalage ≈ 1 im entre lettres. Le point du i ne bouge pas, en (50 %, 49 %), seul au-dessus du vide.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f119.jpg",
+      "illus": {
+        "from": 108,
+        "to": 124,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord sur le point",
+      "name_en": "match cut on the dot",
+      "t": "0:03.93-0:03.97",
+      "frames": "f118-f119",
+      "fps": 30,
+      "mechanics": "Le point garde exactement sa position (50 %, 49 %) et sa taille ; seul le fond change, blanc → marine #010913. Coupe franche 3,5 im avant le kick de 4,085 s, qui tombe sur l'explosion de la grille. Le spectateur suit le point, la coupe ne se voit pas.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f119.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille Bauhaus qui explose depuis le centre",
+      "name_en": "radial-stagger tile grid reveal",
+      "t": "0:04.00-0:04.13",
+      "frames": "f120-f124",
+      "fps": 30,
+      "mechanics": "f120 le point grossit (≈ 4 % → 8 % de la largeur) et 4 repères en croix apparaissent ; f121 premier anneau de 8 tuiles (≈ 40 % de leur taille finale) ; f122 bloc 5×5 ; f123 7×5 ; f124 cadre plein d'environ 8×5 tuiles (chaque tuile ≈ 12,5 % de la largeur). Décalage radial ≈ 1 im par anneau, chaque tuile passe de 0 à 100 % en ≈ 3 im. Motifs : cercles, demi et quarts de cercle, triangles, barres, en bleu #3453FE, citron #DCFE3D, blanc et anthracite #282832 sur fond #010913 ; le point orange reste la tuile centrale. Burst à 1 im du kick (f122,5).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f119.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rotation des motifs dans les tuiles",
+      "name_en": "tile pattern flips",
+      "t": "0:04.27-0:04.53",
+      "frames": "f128-f136",
+      "fps": 30,
+      "mechanics": "Environ une tuile sur 4 ou 5 fait pivoter son motif de 90° en 3 à 4 images avec flou de rotation ; départs étalés sur 8 images ; premier départ 2 im avant le clap de 4,335 s. La grille vit sans perdre sa structure.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f119.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Passage du plan 2D au relief par bascule de caméra",
+      "name_en": "2D grid to 3D cube field via camera tilt",
+      "t": "0:04.53-0:05.53",
+      "frames": "f136-f166",
+      "fps": 30,
+      "mechanics": "Les tuiles se simplifient en carrés pleins bleu, blanc, noir et citron (fondu probable autour de la coupe f144), le point devient une sphère orange brillante vue de dessus (f150) ; la caméra bascule de la vue de dessus à ≈ 35–40° en ≈ 8 im (f158–f165) : les carrés étaient les faces de cubes extrudés de hauteurs variées. Lumière haut-gauche, ombres portées douces, reflet spéculaire sur la sphère.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-002-move-f170.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Onde de cubes à chaque impact de la sphère",
+      "name_en": "impact ripple on a cube field",
+      "t": "0:05.47-0:06.67",
+      "frames": "f164-f200",
+      "fps": 30,
+      "mechanics": "La sphère rebondit toutes les 15 im (impacts f164, f179, f194). À chaque impact, un anneau de cubes blanchit (lavande très clair ≈ #E0E0FF) et monte, puis l'onde se propage vers l'extérieur sur 6 à 8 im et retombe. Impacts 2,5 à 3,5 im avant le kick. L'environnement réagit au contact : bonne idée, rendu de démo WebGL.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f170.jpg, microM-003-move-f202.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant éclair sur la sphère",
+      "name_en": "dolly-in rush with motion blur",
+      "t": "0:06.57-0:06.93",
+      "frames": "f197-f208",
+      "fps": 30,
+      "mechanics": "Poussée rapide f197–f201 (5 im) avec flou de mouvement fort sur tout le décor, arrivée en gros plan f202 (sphère ≈ 12 % de la largeur), puis poussée lente jusqu'à ≈ 17 % à f208 (ease-out). Départ sur le kick (f197,5).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f202.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe vers l'aplat, image noire, éclaboussure",
+      "name_en": "cut to flat, black frame, splat",
+      "t": "0:06.97-0:07.30",
+      "frames": "f209-f219",
+      "fps": 30,
+      "mechanics": "f209 disque orange plat (≈ 19 % de la hauteur) au centre d'un fond bleu ; f210 il se déforme en tache floue ; f211 une image entièrement noire ; f212 éclaboussure : étoile centrale + 6 gouttes en larme disposées en rayons + gouttelettes, pile sur le kick (f212,5) ; f212–f219 les gouttes se détachent lentement. La rupture 3D brillant → aplat n'est pas motivée et l'image noire ressemble à un bug.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f202.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Gouttes → billes → fusion",
+      "name_en": "droplets to beads to metaball merge",
+      "t": "0:07.30-0:07.93",
+      "frames": "f219-f238",
+      "fps": 30,
+      "mechanics": "Les gouttes s'arrondissent en billes avec léger relief et ombre, forment un anneau de 7 ou 8 billes autour d'une bille centrale (f225–f234) et oscillent ; f235–f236 elles convergent en 2 images vers le centre en une tache bosselée floue (fusion 1 im après le clap de 7,835 s) ; f237–f238 un seul disque, un peu plus gros.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f242.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de stries puis trou noir",
+      "name_en": "starburst into black-hole accretion disc",
+      "t": "0:07.97-0:08.73",
+      "frames": "f239-f262",
+      "fps": 30,
+      "mechanics": "f239 fond noir, disque texturé ; f240 explosion de milliers de stries radiales (centre blanc, stries orange, bleues et blanches, rayon ≈ 45 % de la largeur), 2,5 im avant le kick ; f241 le centre se vide en disque noir ; f242–f245 les stries deviennent tangentielles et tournent ; f246–f250 bascule de caméra : l'anneau devient une ellipse en perspective (disque d'accrétion) ; f250–f257 rotation ; f258–f262 retour de face et contraction. Spectaculaire mais hors palette (cuivré) et générique.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f242.jpg, microM-005-cut-f269.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Anneau de particules → cadran UI par rampe de luminance",
+      "name_en": "particle ring to UI dial via luminance ramp",
+      "t": "0:08.73-0:08.97",
+      "frames": "f262-f269",
+      "fps": 30,
+      "mechanics": "L'anneau se contracte (rayon ≈ 45 % → 25 % de la largeur) et s'amincit en cercle de particules ; le point se pose à midi (f263–f264, sur le clap) ; f267 fond #2B2B2B et anneau gris, f268 fond gris moyen et anneau clair, f269 fond blanc et anneau lavande pâle. Le fond passe du noir au blanc en 3 images pendant que la forme reste identique : le cosmos devient interface sans coupe visible.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f269.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur à rouleaux 0000 → 2026 et anneau segmenté",
+      "name_en": "rolling digit counter with donut arcs",
+      "t": "0:08.97-0:09.53",
+      "frames": "f269-f286",
+      "fps": 30,
+      "mechanics": "Chiffres Black ≈ 12 % de la hauteur avec flou vertical (rouleaux de machine à sous) ; verrouillage de gauche à droite de f279 à f285, ≈ 2 im par chiffre ; le dernier chiffre se pose 1,5 im avant le kick (f287,5). En même temps, 4 arcs se dessinent en sens horaire depuis midi (bleu f271–f275, orange f276–f278, citron f277–f279, noir f279–f281), tête d'arc en dégradé ; anneau ≈ 65 % de la hauteur, trait ≈ 4 % ; 12 graduations majeures et des mineures apparaissent autour ; « SHOWREEL » en capitales espacées grises sous le nombre. Maintien f286–f293.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f269.jpg, extra-03.jpg",
+      "illus": {
+        "from": 269,
+        "to": 286,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tunnel d'anneaux concentriques",
+      "name_en": "concentric ring tunnel / zoom-through",
+      "t": "0:09.80-0:11.70",
+      "frames": "f294-f351",
+      "fps": 30,
+      "mechanics": "f294–f298 les chiffres s'effacent en gris, le point descend de midi au centre ; f302, sur le kick, l'anneau extérieur grossit hors cadre et 5 à 6 anneaux concentriques à arcs colorés (bleu, orange, citron, noir, blanc) naissent autour du point ; ils tournent en sens alternés avec flou de rotation, et chaque anneau grossit jusqu'à sortir du cadre (un anneau sort toutes les 8 à 10 im) : la caméra traverse un tunnel. Stries radiales blanches dès f342. Mouvement continu, sans coupe, pendant tout le break musical.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Assombrissement progressif du fond pendant la montée",
+      "name_en": "gradual background darkening build-up",
+      "t": "0:10.00-0:11.73",
+      "frames": "f300-f352",
+      "fps": 30,
+      "mechanics": "Fond #FFFFFF (f300) → #E6E6F0 (f320) → #808390 (f340) → #1E1D22 (f346) → #080912 (f352) : 1,7 s de rampe qui s'accélère sur les 12 dernières images. Elle accompagne le break (plus de kick de 10,1 à 11,85 s, nappe qui monte) et amène le noir de la carte logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant l'impact, tenu sur l'élément seul",
+      "name_en": "pre-drop silence held on the hero element",
+      "t": "0:11.73-0:11.93",
+      "frames": "f352-f358",
+      "fps": 30,
+      "mechanics": "Les anneaux disparaissent d'un coup, il ne reste que le point orange (≈ 1,5 % de la largeur) au centre sur #080912 pendant 7 images (0,23 s). La bande-son coupe tout de 11,85 à 12,05 s (graves à −55 dB) ; la coupe image précède le silence de ≈ 3 im. Le vide visuel et le vide sonore se superposent avant l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Image flash sur l'impact",
+      "name_en": "flash frame on the hit",
+      "t": "0:11.97-0:12.00",
+      "frames": "f359",
+      "fps": 30,
+      "mechanics": "Une seule image gris moyen #8E8E8E avec un halo orange diffus autour du point (≈ 10 % de la largeur), puis f360 gris foncé ≈ #333 et retour au noir. Tombe 3 im avant l'impact sonore de 12,085 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo qui se déroule depuis son point final",
+      "name_en": "word unrolling from its period",
+      "t": "0:12.00-0:12.33",
+      "frames": "f360-f370",
+      "fps": 30,
+      "mechanics": "f360 le point file vers la droite (traînée floue) jusqu'à x ≈ 72 % ; f361 « de » sort de derrière lui ; f362–f369 les lettres apparaissent de droite à gauche (de. → ude. → aude. → laude. → claude.), chacune glissant vers la gauche avec flou horizontal, ≈ 1,5 im par lettre ; logo complet et centré f369–f370, sur le clap de 12,335 s ; ease-out, aucun dépassement. Le signe de ponctuation porte le mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carte finale minimale",
+      "name_en": "minimal end card lockup",
+      "t": "0:12.37-0:14.33",
+      "frames": "f371-f430",
+      "fps": 30,
+      "mechanics": "« claude. » blanc en grotesque Black, ≈ 47 % de la largeur, ascendantes ≈ 17 % de la hauteur, centré ; point final orange. « Motion Designer » en sans régulière ≈ 3,5 % de la hauteur à ≈ 64 % du haut, apparu en 2 images (f372–f373). « Showreel 2026 » en haut à gauche et timecode en haut à droite (≈ 2 % H) reprennent l'habillage de l'ouverture. Maintien 1,9 s. Sous-titre un peu petit pour un 720p.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rebond du point final (rappel de la balle)",
+      "name_en": "period hop with squash, callback",
+      "t": "0:13.33-0:13.67",
+      "frames": "f400-f410",
+      "fps": 30,
+      "mechanics": "Probable (planche au pas de 4 images) : le point monte légèrement (f402), s'écrase horizontalement ≈ 1,6:1 (f406) puis redevient rond (f410). Tombe à 1,5 im de l'accent sonore de 13,585 s. Rappel discret de la balle d'ouverture : la carte finale reste vivante sans bouger le texte.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Sortie en boucle : le mot aspiré par son point",
+      "name_en": "outro loop, word absorbed into its dot",
+      "t": "0:14.33-0:15.03",
+      "frames": "f430-f450",
+      "fps": 30,
+      "mechanics": "f434 les lettres se tassent vers la droite, grisées et floues, aspirées par le point ; f438 le point seul, ≈ 2 fois sa taille de point final ; f442 cadre vide. Sur l'accent de 14,585 s (f437,5). 0,27 s de noir final. Même fond #080912 et même orange que la première image : la vidéo boucle sur la balle du début.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son écrite sur la timeline de l'animation",
+      "name_en": "soundtrack mapped to the edit structure",
+      "t": "0:00.00-0:15.10",
+      "frames": "f0-f452",
+      "fps": 30,
+      "mechanics": "Intro sans kick avec un accent toutes les 0,5 s pendant la balle (0,585 / 1,085 / 1,585 s) ; le kick entre à 2,085 s sur la pose de « motion » ; groove kick + clap de 2 à 10 s (une scène par seconde) ; plus de kick de 10,1 à 11,85 s, nappe et pulsation en croches qui montent pendant le tunnel ; silence total 11,85–12,05 s sur le point seul ; impact grave long (−13 dB, décroissance 2 s) sur le flash et le logo ; accents sur le rebond du point (13,585 s) et sur l'aspiration finale (14,585 s) ; fondu à partir de 14,1 s. Ce sont les sections de la musique qui découpent le film.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, mesures audio fenêtres de 5 ms"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Image en avance d'environ 100 ms sur le kick",
+      "name_en": "visual lead over the beat (A/V offset)",
+      "t": "0:03.97-0:11.97",
+      "frames": "f119-f359",
+      "fps": 30,
+      "mechanics": "Coupes à 3,97 / 6,97 / 7,97 / 8,97 / 11,97 s pour des kicks à 4,085 / 7,085 / 8,085 / 9,085 / 12,085 s : 3,5 im (≈ 117 ms) d'avance ; impacts de la sphère 2,5 à 3,5 im d'avance. Cause mesurée : la piste audio commence à 0,085 s, et les coupes tombent 1 image avant la seconde ronde. Une avance de 1 à 2 images aide la perception ; 3,5 images se sentent sur les coupes sèches. Correction : décaler l'audio de −85 ms à l'export.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f119.jpg, microM-002-move-f170.jpg, microM-005-cut-f269.jpg, microM-006-cut-f359.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel sur chaque geste rapide",
+      "name_en": "directional motion blur",
+      "t": "0:01.87-0:14.47",
+      "frames": "f56-f434",
+      "fps": 30,
+      "mechanics": "Flou horizontal sur la pulsation, le volet et le déroulé du logo ; vertical sur la montée des lettres et les rouleaux du compteur ; radial sur la plongée dans la balle et le travelling ; rotatif sur les tuiles et les anneaux. Durée 1 à 3 images par geste, jamais au repos : le flou signale la vitesse, il ne remplit pas l'image.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-001-cut-f119.jpg, microM-005-cut-f269.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette réduite tenue d'un bout à l'autre",
+      "name_en": "consistent limited palette",
+      "t": "0:00.00-0:15.03",
+      "frames": "f0-f450",
+      "fps": 30,
+      "mechanics": "Orange #FF5E1E réservé au héros ; bleu #3453FE, citron #DCFE3D, blanc et anthracite #282832 pour les décors ; marine #080912 pour l'ouverture et la fin. Les fonds alternent par plan (marine → bleu → blanc → marine → bleu → noir → blanc → noir) pour marquer chaque coupe. Exceptions : bleu plus sombre du rendu 3D (#052BB9) et stries cuivrées des particules.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Une idée par seconde, plans quantifiés sur 0,5 s",
+      "name_en": "scene quantization on a half-second grid",
+      "t": "0:00.00-0:12.33",
+      "frames": "f0-f370",
+      "fps": 30,
+      "mechanics": "12 plans en 15 s, plan médian 0,98 s ; coupes à 1,93 / 3,00 / 3,97 / 4,80 / 6,97 / 7,97 / 8,97 / 11,97 s ; aucun plan de plus de 2 s avant la carte logo. Dans chaque plan, un geste toutes les 0,25 à 0,5 s. Rythme sans temps mort mais sans respiration : alterner des plans de 1 s et de 2 s aiderait la lecture.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, stats.json"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Prompt d'une ligne sans aucune contrainte de style, de palette ou de son : tout le système (point orange, palette Bauhaus pop, identité « claude. ») est une invention du modèle, ce qui montre ce qu'Opus 5.5 produit par défaut quand on lui demande de « montrer son niveau »."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go all out » + « showreel pour un CV » pousse vers le catalogue : une technique différente par seconde (type, grille, 3D, éclaboussure, particules, data, tunnel, logo). La quantité prend le pas sur le récit."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le modèle a compensé le catalogue par un fil rouge (le point orange) et une boucle (balle au début, point qui disparaît à la fin). C'est la décision qui rend le film lisible ; elle mérite d'être demandée explicitement dans un prompt."
+    },
+    {
+      "kind": "build",
+      "insight": "Le timecode à l'écran égal au numéro d'image indique un rendu déterministe image par image ; les accents de la bande-son sur les demi-secondes rondes de la composition (+85 ms) indiquent un son généré ou monté sur la même timeline. Stack non précisée."
+    },
+    {
+      "kind": "qa",
+      "insight": "Deux défauts de contrôle : une image noire isolée à f211 et la piste audio qui démarre à 0,085 s (image en avance d'environ 100 ms). Un prompt devrait exiger une vérification image par image des transitions et de l'alignement son/image après export."
+    },
+    {
+      "kind": "other",
+      "insight": "Pour reproduire : demander un tempo (120 BPM), des scènes de 2 temps, un élément fil rouge, une intro sans kick, un break pendant la montée, un silence de 200 ms avant l'impact du logo, et une sortie en boucle."
+    }
+  ],
+  "steal": [
+    "Choisir un élément fil rouge (ici un point orange) et faire naître chaque scène de lui : balle, point du i, centre de grille, sphère, cadran, point final du logo.",
+    "Ouvrir un reel sur la balle rebondissante dans une fausse timeline (règle, tête de lecture, timecode), un rebond par temps (15 im à 30 fps), squash au contact.",
+    "Sortir d'un mot en le faisant onduler puis tomber lettre à lettre, en laissant le point du i suspendu : il devient le centre de la scène suivante.",
+    "Écrire la bande-son sur la timeline : intro sans kick, break pendant la montée visuelle, 200 ms de silence sur l'élément seul, impact sur le flash du logo.",
+    "Révéler un logo depuis son point final : le point se pose, le mot se déroule de droite à gauche derrière lui en 8 images avec flou horizontal."
+  ],
+  "flaws": [
+    "Catalogue : douze idées en 15 s, environ 1 s chacune ; l'éclaboussure et le trou noir passent avant d'être lus.",
+    "Rupture non motivée : gros plan 3D brillant coupé sec vers un disque plat sur bleu, avec une image noire (f211) qui fait bug.",
+    "Image en avance d'environ 100 ms : la piste audio démarre à 0,085 s, donc chaque coupe précède le kick de 3 à 3,5 images.",
+    "Cubes 3D et trou noir de particules au rendu de démo WebGL générique, hors du système d'aplats.",
+    "Clichés de reel : compteur d'année « 2026 » ; balle d'ouverture trop petite (7 % de la hauteur) dans un cadre vide."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Rare cas où chaque transition naît d'un même élément et où la bande-son est écrite sur la timeline : à étudier image par image (30 fps natif, pas 60) pour la balle et ses écrasements, la plongée vers le point du i, la chute de « design », la grille radiale, le compteur et le déroulé du logo, et pour mesurer l'effet du décalage de 85 ms."
+  }
+}

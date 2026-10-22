@@ -1,0 +1,377 @@
+{
+  "slug": "rossaxbt-3085b7",
+  "title": "Ora 2 image model launch film",
+  "handle": "@rossaxbt",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Film de lancement façon labo IA très maîtrisé : voix, légendes, rafales d'images et bruitages calés à l'image près, transitions motivées (image qui devient caret, tourbillon en logo) ; ouverture vide et légendes petites.",
+  "summary": "Film carré de 22 s pour un modèle d'image fictif « Ora 2 » : voix off ElevenLabs, légendes tapées au mot près sur fond blanc, rafales de photos en doubles-croches jusqu'au drop, barre de prompt en verre dont le résultat change de style à chaque double-croche, moodboard qui encercle le résultat, panneau de réglages, puis 120 images qui explosent et spiralent en logo. Prompt-recette exemplaire ; seule l'ouverture manque de matière.",
+  "prompt_vs_result": [
+    "Prompt ultra-détaillé : entrées avec valeurs par défaut (nom, police Geist, encre #111214, voix, piste à 129,83 BPM et horodatage du drop), script en 9 lignes, traitement de la voix, 7 scènes, règles de mouvement, mixage, pipeline canvas + Playwright, contrôle qualité.",
+    "Claude a choisi les images, la liste des styles (toy, silhouette, line art, pop art, 3d render, engraving, oil paint, impressionist), le moodboard en cyanotypes, le croissant de lune comme logo, les courbes, et la transition où l'image rétrécit jusqu'au caret.",
+    "Tout le temps est écrit en unités musicales et vocales : le résultat obéit presque ligne à ligne. Le prompt laisse pourtant 3,4 s d'ouverture en simple frappe sur blanc, et le maintien final dure 2,7 s au lieu de 2 s."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FFFFFF", "role": "toile blanche principale"},
+      {"hex": "#111214", "role": "encre unique : texte, bouton d'envoi, puce de style, logo"},
+      {"hex": "#8A8A8F", "role": "légendes secondaires (« The more you use it, », « Out now »)"},
+      {"hex": "#E05DD0", "role": "début du dégradé du mot mis en avant « better »"},
+      {"hex": "#8F7CF7", "role": "fin violette du dégradé + lueur derrière le mot"},
+      {"hex": "#D9D0FF", "role": "aura lavande derrière la barre de prompt"},
+      {"hex": "#FFDCC8", "role": "aura pêche derrière la barre de prompt"},
+      {"hex": "#BFF2E6", "role": "lavis menthe derrière le panneau de réglages"},
+      {"hex": "#F7C8E0", "role": "lavis rose derrière le panneau de réglages"},
+      {"hex": "#1E5F8C", "role": "bleu cyanotype du moodboard"}
+    ],
+    "type": "Une seule grotesque (Geist probable), graisse regular à medium, casse phrase, sans point final ; titre d'ouverture ≈7 % de hauteur, légendes ≈3,5-4,5 %, ligne forte ≈6,5 %, logo ≈10 % ; puces de style en mono minuscule ≈1,5 %.",
+    "texture": "Toile blanche nue ; contrôles en verre dépoli (barre de prompt, panneau, pilule de légende) avec ombre douce ; auras pastel très floues ; lueur rose-violet derrière le mot en dégradé ; vrai flou de mouvement par 8 sous-images (cartes qui volent, tourbillon, sortie zoomée) ; photos réelles en couleurs franches.",
+    "style": "Lancement labo IA, blanc et verre",
+    "coherence": "Une police, une encre, du blanc, des photos réelles : tout le reste est apporté par les images. Les auras pastel et le verre reviennent à chaque contrôle, le dégradé n'apparaît qu'une fois. Seul écart : le croissant de lune du logo n'a aucun lien visuel avec ce qui précède."
+  },
+  "rhythm": {
+    "bpm": 129.8,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Piste annoncée à 129,83 BPM (mesurée 129,5, netteté 2,57 car la voix couvre la musique) : temps = 27,7 im, double-croche = 6,93 im à 60 fps. Deux horloges coexistent : la voix (légendes tapées au mot, changements de scène sur les débuts de phrase) et la musique (trois rafales d'images exactement toutes les 7 im, drop sur « Create »). Rafales : 3,40-4,43 s (10 photos), 4,9-6,3 s (≈11 styles), 13,8-14,3 s (5 tirages). Maintiens mesurés : 0,6-3,4 s presque uniquement de la frappe sur blanc (dont 1,1 s fixe sur « An image model »), 7,27-8,18 s (grille du moodboard), 9,5-10,25 s (frappe), 12,1-13,6 s (curseurs lents), et la carte de fin 18,83-22,03 s (3,2 s). Densité forte entre 3,4 et 9,5 s et entre 15,4 et 18,7 s, faible ailleurs.",
+    "timeline": [
+      {"t": "0:00-0:00.85", "what": "collage de ≈14 photos qui s'écartent du centre en grandissant, floues, et quittent le cadre", "technique": "collage qui se disperse"},
+      {"t": "0:00.57-0:02.25", "what": "« This is Ora 2 » tapé en grand au rythme de la voix, caret noir", "technique": "légende tapée sur la voix"},
+      {"t": "0:02.25-0:03.40", "what": "« An image model » tapé plus petit, centré, puis maintien", "technique": "frappe pré-centrée"},
+      {"t": "0:03.40-0:04.43", "what": "« made for taste » en blanc sur des photos plein cadre qui changent toutes les 7 im", "technique": "rafale en doubles-croches"},
+      {"t": "0:04.43-0:04.90", "what": "drop : coupe au blanc, « Create » tapé, barre de prompt en verre à aura pastel tape « a horse »", "technique": "drop sur la ligne verbe"},
+      {"t": "0:04.90-0:06.30", "what": "la carte résultat change de style toutes les 7 im, la puce noire roule vers le nom du style, la frise de vignettes s'allonge", "technique": "cycle de styles en doubles-croches"},
+      {"t": "0:06.30-0:06.55", "what": "la scène part vers le haut, floue, des cyanotypes arrivent du bas", "technique": "poussée verticale avec flou de mouvement"},
+      {"t": "0:06.55-0:08.28", "what": "9 cyanotypes forment une grille 3×3, « Show it a moodboard »", "technique": "atterrissage en grille"},
+      {"t": "0:08.28-0:09.13", "what": "la grille éclate et se range en anneau autour d'un portrait en cyanotype, « It gets you »", "technique": "grille vers orbite"},
+      {"t": "0:09.13-0:09.50", "what": "l'anneau s'ouvre hors cadre, le portrait rétrécit et suit le caret de « The more »", "technique": "image qui devient caret"},
+      {"t": "0:09.50-0:11.40", "what": "« The more you use it, » en gris puis « the better it gets » en grand, « better » en dégradé rose-violet avec lueur", "technique": "mot mis en avant en dégradé"},
+      {"t": "0:11.40-0:12.00", "what": "le texte monte et se floute, le panneau de réglages apparaît en fondu depuis le blanc", "technique": "sortie floue + fondu d'entrée"},
+      {"t": "0:12.00-0:13.70", "what": "curseur Creativity 30 → 86 %, le portrait et le lavis de fond changent de teinte", "technique": "curseur piloté par la voix"},
+      {"t": "0:13.70-0:14.75", "what": "curseur Randomness 18 → 72 %, nouveaux tirages toutes les 7 im", "technique": "tirages en doubles-croches"},
+      {"t": "0:14.75-0:15.25", "what": "curseur Style strength jusqu'à ≈90 %, le portrait devient une affiche en bichromie", "technique": "image transformée en affiche"},
+      {"t": "0:15.13-0:15.42", "what": "toute la scène zoome, glisse vers le bas à droite et blanchit", "technique": "sortie zoomée vers le blanc"},
+      {"t": "0:15.43-0:15.70", "what": "un amas minuscule au centre explose en ≈120 images", "technique": "explosion d'images"},
+      {"t": "0:15.70-0:18.15", "what": "pilule de verre « Every image, exactly how you see it » tapée au milieu des images qui dérivent", "technique": "pilule de légende en verre"},
+      {"t": "0:18.15-0:18.72", "what": "les images tourbillonnent vers le centre et disparaissent, le croissant et « Ora 2 » s'écrivent", "technique": "tourbillon vers le logo"},
+      {"t": "0:18.72-0:22.03", "what": "« Out now » en gris sous le logo, maintien", "technique": "carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Double pilotage. Musique : les trois rafales tombent toutes les 7 im exactement (double-croche à 129,83 BPM = 6,93 im) avec une phase constante : f204, f211, f218, f225, f232, f239, f246, f253, f260, f266 puis f301, f308, f315, f322, f329, f336, f343 puis f828, f835, f842, f849, f856, soit 22 changements sur 22 sur la grille de doubles-croches ancrée au drop (f266 + n × 6,93 im : f828 = f266 + 81 doubles-croches). Par rapport à la grille mesurée, l'écart passe de −1,3 im (3,4 s) à −2,9 im (14 s), dérive due à l'estimation 129,5 au lieu de 129,83 BPM. Gestes de scène sur la grille temps/demi-temps mesurée : 7 sur 12 à ±2 im (début de rafale f204, éclatement de la grille f497 sur le temps, panneau posé f720, explosion f926 et plein cadre f942, tourbillon f1093, logo complet f1123) contre ≈36 % au hasard ; ratés : f266, f377, f548, f684, f908, placés sur des débuts de phrase de la voix. Le drop (f266) tombe sur une double-croche juste avant un temps mesuré : la grille mesurée est probablement décalée d'une double-croche (pulsation peu nette sous la voix). L'indice automatique ne voit rien (p corrigé = 1) car il teste temps et demi-temps, pas les doubles-croches.",
+    "synced": ["coupes", "flashs", "apparitions", "drop"],
+    "style_match": "Électro douce ≈130 BPM à drop (« Cascade Breathe » probable, piste par défaut) : colle au ton aérien de labo IA ; les rafales en doubles-croches portent l'énergie du drop.",
+    "how_built": "Le prompt donne le BPM et l'horodatage du drop, demande d'ancrer la grille sur le drop placé sous la ligne « Create », de changer d'image sur les doubles-croches avec un clic chacune, et de caler les changements de scène sur les débuts de phrase. Le rendu canvas en seek(t) rend chaque coupe déterministe. Les bruitages (clic par image, touche par lettre, impacts) sont demandés mais pas vérifiables précisément sur les planches."
+  },
+  "techniques": [
+    {
+      "cat": "image",
+      "name_fr": "Collage qui se disperse à l'ouverture",
+      "name_en": "collage drift-out",
+      "t": "0:00.00-0:00.85",
+      "frames": "f0-f50",
+      "fps": 60,
+      "mechanics": "≈14 photos (≈10-15 % de largeur chacune, légère rotation) disposées en couronne autour du centre s'écartent vers les bords en grandissant légèrement, avec un flou de mouvement directionnel croissant, et sortent du cadre vers f50. Accélération progressive (ease-in). La frappe du titre commence à f34 pendant la sortie : chevauchement de ≈16 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f32.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende tapée au temps exact de la voix",
+      "name_en": "voice-synced typed captions",
+      "t": "0:00.57-0:02.25",
+      "frames": "f34-f135",
+      "fps": 60,
+      "mechanics": "Chaque lettre apparaît quand elle est prononcée, ≈4-5 im par lettre (12-15 lettres/s), caret noir fin à droite. « T » f34, « Th » f39, « Thi » f43, « This » f48. Chaque lettre entre en fondu (lettre suivante visible en gris pâle avant d'être pleine), conformément à la règle « aucun fondu de moins de 0,3 s ». Titre ≈7 % de la hauteur, vers 50 % de hauteur. Même procédé pour toutes les légendes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f32.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Frappe pré-centrée sans recalage",
+      "name_en": "pre-centered typing anchor",
+      "t": "0:02.25-0:03.40",
+      "frames": "f135-f204",
+      "fps": 60,
+      "mechanics": "« An image model » commence à ≈27 % de la largeur et finit à ≈72 % : le point de départ est calculé pour que la ligne complète soit centrée, la ligne ne se recentre jamais pendant la frappe. Légende ≈4,5 % de hauteur, à 50 % de hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f204.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rafale de photos en doubles-croches jusqu'au drop",
+      "name_en": "16th-note image flash run",
+      "t": "0:03.40-0:04.43",
+      "frames": "f204-f266",
+      "fps": 60,
+      "mechanics": "10 photos plein cadre (portrait N&B, rue néon, fleurs, femme en rouge, désert, salle d'arcade, astronaute…) changent toutes les 7 im (0,116 s = une double-croche à 129,83 BPM), coupe nette, phase constante. La légende blanche « made for taste » (≈4,5 %) continue de se taper par-dessus sans bouger. Un clic sonore par image (demandé par le prompt). La rafale se termine sur la coupe au blanc du drop.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f204.jpg",
+      "illus": {"from": 202, "to": 268, "n": 8}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Coupes fondues par le flou de sous-images",
+      "name_en": "sub-frame motion blur blending cuts",
+      "t": "0:04.20-0:04.43",
+      "frames": "f252-f266",
+      "fps": 60,
+      "mechanics": "Le rendu moyenne 8 sous-images par image. Quand une coupe tombe entre deux images (double-croche = 6,93 im, pas un entier), l'image de coupe mélange les deux photos à ≈50 % : f252 (désert / arcade), f259 (arcade / astronaute), f266 (astronaute / blanc). La coupe devient un fondu d'une image, plus doux qu'un saut.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f266.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Drop calé sur la ligne verbe",
+      "name_en": "drop on the verb line",
+      "t": "0:04.43",
+      "frames": "f266",
+      "fps": 60,
+      "mechanics": "La piste est décalée pour que son drop tombe sur « Create in any style » : la rafale de photos s'arrête net sur une coupe au blanc à f266, « C » se tape à f267, la barre de prompt apparaît en fondu à f272. Toute la grille de doubles-croches de la vidéo part de ce point (f828 = f266 + 81 doubles-croches).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f266.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de prompt en verre sur aura pastel",
+      "name_en": "liquid glass prompt bar",
+      "t": "0:04.50-0:04.90",
+      "frames": "f270-f293",
+      "fps": 60,
+      "mechanics": "Pilule ≈45 % de largeur à ≈23 % de hauteur, verre dépoli avec ombre douce, bouton rond noir à flèche ; derrière, aura floue lavande #D9D0FF et pêche #FFDCC8 pour que le verre se voie sur le blanc. Elle entre en fondu ≈20 im (f270-f290) pendant que « a horse » se tape (≈3 im par lettre). La réfraction de bord demandée n'est pas lisible à 1080 px.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f266.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Résultat qui change de style à chaque double-croche",
+      "name_en": "style cycling result card",
+      "t": "0:04.88-0:06.30",
+      "frames": "f293-f378",
+      "fps": 60,
+      "mechanics": "Carte résultat ≈55 % de largeur, centrée : le cheval à bascule entre en fondu (f293-f296), puis les styles se succèdent toutes les 7 im : toy f293, silhouette f301, line art f308, pop art f315, 3d render f322, puis engraving, oil paint, impressionist. La puce noire en mono sous la carte roule verticalement (flou vertical d'1-2 im) jusqu'au nouveau nom ; une frise de vignettes en dessous gagne une vignette à chaque changement (1 à 8).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f308.jpg",
+      "illus": {"from": 293, "to": 330, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée verticale floue vers le moodboard",
+      "name_en": "vertical push with motion blur",
+      "t": "0:06.28-0:06.55",
+      "frames": "f377-f393",
+      "fps": 60,
+      "mechanics": "La barre, la carte et la légende partent vers le haut (≈40 % de la hauteur en 10 im, ease-in) avec un flou vertical marqué, pendant que les premiers cyanotypes arrivent du bas à droite en biais, très flous, et décélèrent (ease-out). Chevauchement total : pas d'image vide. « Show » se tape dès f388.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f386.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cartes qui volent et se posent en grille 3×3",
+      "name_en": "cards fly into grid",
+      "t": "0:06.40-0:07.10",
+      "frames": "f384-f426",
+      "fps": 60,
+      "mechanics": "9 cyanotypes (≈19 % de largeur, coins arrondis, ombre légère) arrivent de directions différentes avec rotation de 5-15° et flou directionnel, décalage ≈3-5 im entre cartes, et se posent en grille 3×3 (≈62 % de largeur) en ease-out sans dépassement ; la rotation s'annule à l'atterrissage.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f386.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Grille qui éclate en orbite autour du résultat",
+      "name_en": "grid to orbit ring",
+      "t": "0:08.28-0:08.65",
+      "frames": "f497-f518",
+      "fps": 60,
+      "mechanics": "Sur le temps (f497), les 9 cartes rétrécissent (≈19 → 10 % de largeur), s'inclinent et s'écartent pendant qu'un portrait en cyanotype grandit au centre (≈38 % de largeur) ; en 21 im (0,35 s), ease-out, elles se rangent en anneau régulier autour de lui. La légende précédente monte et s'efface pendant que « It g… » se tape.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f505.jpg",
+      "illus": {"from": 495, "to": 520, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'image rétrécit jusqu'au caret de la phrase suivante",
+      "name_en": "image collapses into the caret",
+      "t": "0:09.12-0:09.48",
+      "frames": "f547-f569",
+      "fps": 60,
+      "mechanics": "L'anneau s'ouvre vers l'extérieur et sort du cadre en accélérant (flou directionnel). Le portrait rétrécit de ≈38 % à ≈3 % de largeur en ≈12 im en glissant jusqu'à la droite du texte « The m… » en cours de frappe : il se place exactement là où serait le caret et avance avec les lettres (« The mo », « The mor »), puis s'éteint à f569. Raccord de position entre image et typographie.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f552.jpg",
+      "illus": {"from": 545, "to": 570, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot mis en avant en dégradé avec lueur",
+      "name_en": "gradient emphasis word",
+      "t": "0:10.20-0:11.40",
+      "frames": "f612-f684",
+      "fps": 60,
+      "mechanics": "Deux étages : « The more you use it, » gris #8A8A8F ≈3,5 % au-dessus, « the better it gets » noir ≈6,5 % en dessous. Seul « better » est tapé en dégradé rose #E05DD0 → violet #8F7CF7, avec une lueur floue de même teinte derrière (visible quand le texte s'efface). Atterrissage doux sonore demandé sur ce mot. Unique usage de la couleur dans le film.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie floue vers le haut puis fondu d'entrée",
+      "name_en": "blur-up exit then fade-in",
+      "t": "0:11.40-0:12.00",
+      "frames": "f684-f720",
+      "fps": 60,
+      "mechanics": "Le texte monte de ≈3 % et se floute jusqu'à disparaître en ≈10 im (f684-f694), il reste une trace de lueur lavande qui s'éteint vers f698. Puis le panneau de réglages et son lavis menthe/pêche entrent en fondu depuis le blanc en ≈20 im (0,33 s, f700-f720) ; le panneau précède la photo de ≈6 im.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Panneau de réglages piloté par la voix",
+      "name_en": "voice-driven sliders panel",
+      "t": "0:12.00-0:15.25",
+      "frames": "f720-f915",
+      "fps": 60,
+      "mechanics": "Panneau de verre « CONTROLS » (≈45 % de largeur, à gauche) avec 3 curseurs : Creativity, Randomness, Style strength ; portrait ≈40 % à droite. Le curseur nommé par la voix passe en noir gras, les autres restent gris ; sa poignée glisse en ease-in-out et son pourcentage compte en direct (30 → 86 %, 18 → 72 %, 10 → ≈90 %).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Teinte de l'image et lavis de fond liés au curseur",
+      "name_en": "hue shift synced with background wash",
+      "t": "0:12.20-0:13.20",
+      "frames": "f732-f792",
+      "fps": 60,
+      "mechanics": "Pendant que Creativity monte, la photo glisse en rotation de teinte (fond turquoise et veste jaune → visage vert sur fond violet → visage turquoise sur fond rose) et le lavis flou derrière le panneau change avec elle (jaune-vert → rose et menthe). Le fond reflète l'image au lieu d'être décoratif.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Nouveaux tirages sur les doubles-croches",
+      "name_en": "seed roll on 16ths",
+      "t": "0:13.80-0:14.30",
+      "frames": "f828-f862",
+      "fps": 60,
+      "mechanics": "Pendant que le curseur Randomness avance, la photo change de sujet toutes les 7 im : f828, f835, f842, f849, f856 (danseuse, femme au projecteur, profil d'homme sur rouge, portrait néon rose-bleu, femme assise en studio) puis se stabilise. Coupes nettes dans le cadre de la carte, le reste de l'interface ne bouge pas.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f842.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Image transformée en affiche bichrome",
+      "name_en": "duotone poster treatment",
+      "t": "0:14.75-0:15.20",
+      "frames": "f885-f912",
+      "fps": 60,
+      "mechanics": "Quand Style strength monte, le portrait passe progressivement en bichromie rose #F07ACB / bleu #3A3FD0 avec à-plats d'affiche ; le lavis de fond garde menthe et rose.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Sortie zoomée vers le blanc",
+      "name_en": "zoom-through whiteout",
+      "t": "0:15.13-0:15.42",
+      "frames": "f908-f925",
+      "fps": 60,
+      "mechanics": "Toute la scène grandit (≈×1,5) et glisse vers le bas à droite pendant que le lavis et le panneau blanchissent, en ≈16 im (0,27 s), ease-in, avec flou de mouvement. Deux images blanches (f924-f925) précèdent l'explosion.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de 120 images depuis un point",
+      "name_en": "image burst from center",
+      "t": "0:15.43-0:15.70",
+      "frames": "f926-f942",
+      "fps": 60,
+      "mechanics": "Un amas de ≈2 % de largeur apparaît au centre à f926 (demi-temps), s'ouvre en couronne de ≈120 vignettes (5-8 % de largeur chacune) et remplit le cadre à f942 (sur le temps) : 16 im, ease-out expo, flou de mouvement radial. Le centre reste dégagé pour la pilule de légende. Les images continuent ensuite de dériver lentement vers l'extérieur pendant 2,5 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f944.jpg",
+      "illus": {"from": 926, "to": 950, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pilule de légende en verre sur les images",
+      "name_en": "glass caption pill",
+      "t": "0:15.60-0:18.15",
+      "frames": "f936-f1090",
+      "fps": 60,
+      "mechanics": "Pilule dépolie ≈75 % de largeur à ≈50 % de hauteur, texte noir ≈3 % « Every image, exactly how you see it » tapé sur la voix ; le dépoli floute les vignettes qui passent derrière, ce qui garde la lecture possible sur un fond très chargé.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Tourbillon d'images qui accouche du logo",
+      "name_en": "vortex convergence into logo",
+      "t": "0:18.20-0:18.72",
+      "frames": "f1093-f1123",
+      "fps": 60,
+      "mechanics": "La légende s'efface (f1089-f1093), puis les ≈120 images spiralent vers le centre en rétrécissant, avec flou de rotation, pendant que le croissant noir et « O », « Or », « Ora » se tapent au centre (f1097-f1111). Les dernières images disparaissent dans le logo à f1117 (≈24 im, ease-in) ; « Ora 2 » complet à f1123, sur un demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 1091, "to": 1123, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin logo + « Out now »",
+      "name_en": "end card hold",
+      "t": "0:18.72-0:22.03",
+      "frames": "f1123-f1322",
+      "fps": 60,
+      "mechanics": "Croissant noir ≈6 % de hauteur au-dessus de « Ora 2 » ≈10 %, « Out now » gris ≈2,5 % qui entre en fondu vers 19,3 s ; maintien total ≈3,2 s dont ≈2,7 s après « Out now », pendant que la musique descend en fondu.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente continue d'une scène à l'autre",
+      "name_en": "continuous slow push",
+      "t": "0:00-0:18.7",
+      "frames": "f0-f1123",
+      "fps": 60,
+      "mechanics": "Consigne : poussée de 1,0 à 1,04 par scène, la scène suivante repartant du zoom où la précédente s'est arrêtée. Sur les planches, l'effet est presque imperceptible (≈4 % en 2-3 s) mais aucune scène n'est totalement figée et aucun saut de zoom n'apparaît aux raccords.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f505.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mixage voix et bruitages au pic mesuré",
+      "name_en": "sidechain ducking + peak-aligned SFX",
+      "t": "0:00-0:22.03",
+      "frames": "f0-f1322",
+      "fps": 60,
+      "mechanics": "Selon le prompt : musique baissée sous la voix par compression 3 bandes, voix ≈9 dB au-dessus entre 300 Hz et 4 kHz, un bruitage par événement (clic par image, touche par lettre, atterrissage doux sur le mot en dégradé, souffles, impacts au drop et au logo) placé sur son pic mesuré, sortie à −14 LUFS. Les attaques audio fortes à 0,06, 2,72, 7,88, 14,63 et 17,14 s sont compatibles avec ces bruitages, sans vérification fine possible.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le bloc d'entrées fournit des valeurs par défaut pour tout (nom, police, encre, voix, piste avec BPM et horodatage du drop) : la vidéo publiée utilise visiblement ces défauts (« Ora 2 », Geist, encre #111214). Donner le BPM et l'instant du drop permet une grille de doubles-croches exacte sans analyse audio."},
+    {"kind": "structure", "insight": "Script à trous en 9 lignes + 7 scènes « timed to the voice » : chaque scène commence sur un début de phrase, chaque légende est tapée au mot. Le découpage narratif est donc imposé par la voix, la musique ne pilote que les rafales et le drop."},
+    {"kind": "direction", "insight": "« Change images on 16th notes, with a click for each » et « align the music drop with the [Verb] line » produisent exactement ce qui est mesuré : 22 changements sur 22 toutes les 6,93 im, drop sur « Create ». Écrire le rythme en valeurs musicales donne une synchro vérifiable."},
+    {"kind": "banned", "insight": "Interdire « beat-snapped slams, white flashes, 3D » a évité les tics habituels : les rafales sont des coupes simples sans zoom ni flash, et la seule coupe au blanc (drop) reste un changement de fond, pas un éclair."},
+    {"kind": "build", "insight": "Canvas en seek(t) + 8 sous-images de flou de mouvement : flou directionnel réel sur les cartes qui volent et le tourbillon, mais aussi des coupes de rafale qui deviennent des fondus d'une image quand la double-croche tombe entre deux images."},
+    {"kind": "qa", "insight": "La planche contact et le scan des sauts d'une image (« only the 16th-note runs may jump ») expliquent l'absence d'apparitions brutales hors rafales : tous les éléments entrent en fondu de 0,3 s ou plus."},
+    {"kind": "other", "insight": "La section « gotchas » transforme des échecs passés en règles (zoom qui saute au raccord, fondu de 0,05 s qui fait l'effet d'un pop, surlignage qui ressemble à une sélection Windows) : modèle de prompt réutilisable pour HyperFrames."}
+  ],
+  "steal": [
+    "Donner au modèle le BPM et l'instant du drop, ancrer la grille sur le drop et caler les rafales d'images sur les doubles-croches (6,93 im à 130 BPM).",
+    "Taper les légendes lettre à lettre au temps exact de la voix, caret visible, ligne pré-centrée qui ne se recentre jamais.",
+    "Faire rétrécir l'image résultat jusqu'au caret de la phrase suivante : l'image devient le curseur qui écrit.",
+    "Finale : faire exploser 120 images depuis un point, puis les aspirer en tourbillon flou dans le logo qui s'écrit.",
+    "Sur un fond blanc, poser derrière chaque contrôle en verre une aura pastel ou un lavis flou de l'image pour que le verre existe."
+  ],
+  "flaws": [
+    "Ouverture de 3,4 s presque vide : frappe sur blanc, dont 1,1 s fixe sur « An image model ».",
+    "Légendes à ≈3,5 % de la hauteur : petites pour un carré vu sur mobile.",
+    "Verre liquide peu lisible en 1080 px : la réfraction du bord disparaît, il ne reste qu'un dépoli.",
+    "Maintien final de ≈2,7 s après « Out now », plus long que les 2 s demandées.",
+    "Logo en croissant de lune sans lien visuel avec le reste du film."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Meilleur cas d'école de synchro voix + musique + bruitages : rafales en doubles-croches ancrées au drop, image qui rétrécit en caret, explosion puis tourbillon en logo. Chaque raccord se mesure image par image à 60 fps et le prompt est une recette directement réutilisable."
+  }
+}

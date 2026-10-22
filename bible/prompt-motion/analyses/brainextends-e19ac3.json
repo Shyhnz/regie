@@ -1,0 +1,400 @@
+{
+ "slug": "brainextends-e19ac3",
+ "title": "Spotify product film",
+ "craft": 3,
+ "craft_reason": "Suit la minuterie du prompt à 0,1 s près avec une belle pochette héros et un lecteur persistant, mais transitions surtout en fondus (titres qui se chevauchent), texte minuscule, police de repli, 30 fps au lieu de 60, glitch de 2 images et pochette héros en double.",
+ "style": {
+  "family": "pub produit streaming, UI sombre dans une scène encadrée",
+  "palette": [
+   "#0C0E10",
+   "#23BA51",
+   "#083624",
+   "#010605",
+   "#1ED760",
+   "#F7F9FB",
+   "#262F2A",
+   "#D6A122",
+   "#DC578D",
+   "#4069C6",
+   "#BFCCB5"
+  ],
+  "type": [
+   "humanistique sans serif de repli, type Segoe UI (probable), Semibold et Regular",
+   "capitales grasses serrées sur les pochettes"
+  ],
+  "texture": "aplats sombres, ombre douce sous la scène, pochette héros photoréaliste nacrée, pas de grain, flou de mouvement non visible",
+  "mood": "premium, sobre, publicitaire ; rythme de diaporama"
+ },
+ "rhythm": {
+  "bpm": 79,
+  "sync": "lache",
+  "dead_time": "un-peu",
+  "acts": [
+   "0-1,4 s : logo, identité, « Discover / new music »",
+   "1,4-4,8 s : interface desktop, New for you, Fresh finds, Every mood",
+   "4,8-7,5 s : recherche Glass Tides, pochette en grand, fiche détail",
+   "7,5-11,1 s : aplat vert de marque, poussée sur la pochette, « Find your rhythm »",
+   "11,1-14,3 s : pochettes qui s'écartent en 6, puis 4 pochettes flottantes",
+   "14,3-18,07 s : convergence vers l'icône, lockup Spotify et accroche, maintien"
+  ]
+ },
+ "techniques": [
+  {
+   "cat": "layout",
+   "name_fr": "Scène-écran arrondie sur fond de marque",
+   "name_en": "stage-in-frame",
+   "t": "0:00.00-0:18.07",
+   "frames": "f0-f539",
+   "fps": 30,
+   "mechanics": "Rectangle #0C0E10 de 80 % x 76 % du cadre, rayon ~5,5 % de la hauteur, légèrement sous le centre ; fond extérieur en dégradé émeraude #23BA51 -> forêt #083624 -> noir #010605 ; tout dépassement rogné par la scène.",
+   "verdict": "reprendre",
+   "evidence": "overview-01.jpg"
+  },
+  {
+   "cat": "ui",
+   "name_fr": "Lecteur persistant comme fil conducteur",
+   "name_en": "persistent player bar",
+   "t": "0:01.50-0:14.30",
+   "frames": "f45-f428",
+   "fps": 30,
+   "mechanics": "Barre arrondie translucide #262F2A à filet fin, 49 % de la largeur, y ~85 % ; se retire dans l'aplat vert (f233-f244) et s'efface avant le logo (f424-f428). Icône « suivant » identique à « précédent ».",
+   "verdict": "reprendre",
+   "evidence": "microM-004-move-f230.jpg"
+  },
+  {
+   "cat": "shape",
+   "name_fr": "Logo qui grandit au centre",
+   "name_en": "logo grow-in",
+   "t": "0:00.00-0:00.50",
+   "frames": "f0-f15",
+   "fps": 30,
+   "mechanics": "Icône de Ø 3 % à 7 % de la largeur en 11 im, ease-out, sans dépassement visible.",
+   "verdict": "reprendre",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "Deux lignes révélées par masque",
+   "name_en": "masked line reveal",
+   "t": "0:00.63-0:00.90",
+   "frames": "f19-f27",
+   "fps": 30,
+   "mechanics": "« Discover » (blanc) monte de sous sa ligne de base en ~3 im, « new music » (vert) 4-5 im plus tard ; texte de ~2,6 % de la hauteur seulement.",
+   "verdict": "adapter",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Grosse icône vers petite identité par fondu",
+   "name_en": "overlapping crossfade",
+   "t": "0:00.47-0:00.70",
+   "frames": "f14-f21",
+   "fps": 30,
+   "mechanics": "Petite identité en fondu en haut pendant que la grosse icône s'efface ; à f18-f19 la grosse icône recouvre encore « Discover » qui monte.",
+   "verdict": "adapter",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "ui",
+   "name_fr": "Interface qui entre en légère perspective",
+   "name_en": "tilted UI entrance",
+   "t": "0:01.43-0:02.00",
+   "frames": "f43-f60",
+   "fps": 30,
+   "mechanics": "Panneau desktop en fondu avec une légère inclinaison (trapèze) qui se redresse ; montée presque imperceptible.",
+   "verdict": "adapter",
+   "evidence": "extra-01.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Rapprochement par fondu zoomé",
+   "name_en": "scale crossfade",
+   "t": "0:02.27-0:02.43",
+   "frames": "f68-f73",
+   "fps": 30,
+   "mechanics": "Ancienne vue effacée pendant que la nouvelle (cartes plus grandes) apparaît, 5 im ; à f71 « New for you » et « Made for you » visibles ensemble, pochettes dédoublées.",
+   "verdict": "cliche",
+   "evidence": "microM-001-move-f72.jpg",
+   "illus": {
+    "from": 66,
+    "to": 74,
+    "n": 5
+   }
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Creux vide entre deux vues",
+   "name_en": "dip to empty",
+   "t": "0:03.00-0:03.30",
+   "frames": "f90-f99",
+   "fps": 30,
+   "mechanics": "Pochettes effacées (f90-f92), scène vide 2 im (f93-f94), puis les 4 lignes de « Fresh finds » arrivent ensemble en fondu avec une montée de ~1 % en 5 im (décalage <= 1 im au lieu de la cascade demandée).",
+   "verdict": "adapter",
+   "evidence": "microM-002-move-f122.jpg"
+  },
+  {
+   "cat": "ui",
+   "name_fr": "Bande de pochettes à bords rognés",
+   "name_en": "cropped carousel",
+   "t": "0:03.90-0:04.83",
+   "frames": "f117-f145",
+   "fps": 30,
+   "mechanics": "5 pochettes en bande, extrêmes coupées par la scène, glissement d'à peine ~2 % de la largeur en 0,8 s ; arrivée en fondu sur l'attaque forte f117.",
+   "verdict": "adapter",
+   "evidence": "microM-002-move-f122.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Bande vers recherche, avec glitch",
+   "name_en": "strip-to-search, mask glitch",
+   "t": "0:04.83-0:05.00",
+   "frames": "f145-f150",
+   "fps": 30,
+   "mechanics": "Pendant 2 im (f145-f146), des rectangles noirs opaques (calques du panneau suivant) découpent les pochettes, puis la bande s'efface sous le champ de recherche.",
+   "verdict": "adapter",
+   "evidence": "microM-003-move-f146.jpg"
+  },
+  {
+   "cat": "ui",
+   "name_fr": "Frappe dans la recherche",
+   "name_en": "typed search",
+   "t": "0:05.00-0:05.43",
+   "frames": "f150-f163",
+   "fps": 30,
+   "mechanics": "« Glass Tides » s'écrit à ~1 lettre par 1-2 im ; ligne de résultat (fond vert sombre, vignette, AURA, play vert) en fondu f156-f160.",
+   "verdict": "reprendre",
+   "evidence": "microM-003-move-f146.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "La vignette grandit en pochette héros",
+   "name_en": "match-position grow",
+   "t": "0:05.80-0:06.00",
+   "frames": "f172-f180",
+   "fps": 30,
+   "mechanics": "La vignette quitte sa ligne, gagne le centre et passe à ~17 % de la largeur en ~6 im (semi-transparente en vol), sur l'attaque f174 ; titre et artiste en fondu dessous (f180-f184).",
+   "verdict": "reprendre",
+   "evidence": "extra-02.jpg",
+   "illus": {
+    "from": 170,
+    "to": 184,
+    "n": 6
+   }
+  },
+  {
+   "cat": "layout",
+   "name_fr": "Pochette à gauche, infos à droite",
+   "name_en": "split detail layout",
+   "t": "0:06.67-0:06.87",
+   "frames": "f200-f206",
+   "fps": 30,
+   "mechanics": "Pochette de x 50 % à 37 % ; « Glass Tides », « AURA » (vert), « A new frequency » et bouton Play vert à droite en 4-6 im ; léger chevauchement avec les titres sortants à f200.",
+   "verdict": "reprendre",
+   "evidence": "extra-02.jpg"
+  },
+  {
+   "cat": "color",
+   "name_fr": "Aplat de marque par fondu",
+   "name_en": "brand-color fill",
+   "t": "0:07.53-0:08.43",
+   "frames": "f226-f253",
+   "fps": 30,
+   "mechanics": "Scène #0C0E10 -> vert #1ED760 via un vert sombre en ~7 im ; pochette réduite, identité Spotify sombre dessous, lecteur replié (f233-f235) puis revenu (f244-f248) ; retour au noir f247-f253. Simple fondu, non motivé.",
+   "verdict": "adapter",
+   "evidence": "microM-004-move-f230.jpg"
+  },
+  {
+   "cat": "camera",
+   "name_fr": "Pochette qui avance vers la caméra",
+   "name_en": "cover push",
+   "t": "0:08.43-0:09.75",
+   "frames": "f253-f292",
+   "fps": 30,
+   "mechanics": "De ~10 % à ~37 % de la largeur en ~40 im (ease-in-out), rognée par le haut de la scène, passe derrière le lecteur ; pas de flou de mouvement visible, peu dramatique.",
+   "verdict": "adapter",
+   "evidence": "microM-005-move-f251.jpg"
+  },
+  {
+   "cat": "type-anim",
+   "name_fr": "La pochette s'efface sous l'énoncé",
+   "name_en": "cover dissolve into statement",
+   "t": "0:09.73-0:10.00",
+   "frames": "f292-f300",
+   "fps": 30,
+   "mechanics": "La pochette s'assombrit et disparaît sous « Find your » ; « rhythm » (vert, gras) monte par masque (f297-f300) sur l'attaque f299 ; énoncé de ~3,5-4,5 % de la hauteur.",
+   "verdict": "adapter",
+   "evidence": "microM-006-move-f294.jpg"
+  },
+  {
+   "cat": "3d",
+   "name_fr": "Trois pochettes inclinées qui s'écartent en six",
+   "name_en": "tilted sleeves spread",
+   "t": "0:12.07-0:12.67",
+   "frames": "f362-f380",
+   "fps": 30,
+   "mechanics": "3 pochettes à inclinaisons opposées (~±6°) rétrécissent et glissent à gauche pendant que Daily Mix 1-3 entrent par la droite (d'abord rognées), ~15 im, ease-out.",
+   "verdict": "reprendre",
+   "evidence": "microM-007-move-f373.jpg",
+   "illus": {
+    "from": 361,
+    "to": 382,
+    "n": 6
+   }
+  },
+  {
+   "cat": "3d",
+   "name_fr": "Quatre pochettes flottantes",
+   "name_en": "floating covers with depth",
+   "t": "0:12.90-0:14.30",
+   "frames": "f387-f429",
+   "fps": 30,
+   "mechanics": "Rotations ±5°, léger chevauchement, mouvements coordonnés ; la pochette héros y figure deux fois.",
+   "verdict": "adapter",
+   "evidence": "extra-03.jpg"
+  },
+  {
+   "cat": "transition",
+   "name_fr": "Convergence des pochettes vers l'icône",
+   "name_en": "converge-and-reveal logo",
+   "t": "0:14.33-0:15.20",
+   "frames": "f430-f456",
+   "fps": 30,
+   "mechanics": "Les 4 pochettes convergent et s'empilent au centre en ~18 im (attaque f436 au milieu) ; l'icône verte naît devant (f442-f448) ; les pochettes s'effacent derrière ; logotype à droite (f452-f456).",
+   "verdict": "reprendre",
+   "evidence": "extra-03.jpg",
+   "illus": {
+    "from": 428,
+    "to": 458,
+    "n": 8
+   }
+  },
+  {
+   "cat": "narrative",
+   "name_fr": "Lockup final centré",
+   "name_en": "end lockup",
+   "t": "0:15.20-0:18.07",
+   "frames": "f456-f539",
+   "fps": 30,
+   "mechanics": "Icône Ø ~8,8 % de la hauteur et « Spotify » (capitale ~6 %) glissent ensemble d'~2 % à gauche ; « Discover new music » (blanc) et « every day » (vert) à ~2,3 % ; maintien de 2,6 s.",
+   "verdict": "adapter",
+   "evidence": "overview-03.jpg"
+  },
+  {
+   "cat": "image",
+   "name_fr": "Pochette héros iridescente",
+   "name_en": "hero artwork",
+   "t": "0:01.50-0:14.30",
+   "frames": "f45-f429",
+   "fps": 30,
+   "mechanics": "Soie liquide nacrée (lavande, cyan, rose, or, menthe), grand pli en S, bord à bord ; identique de la vignette au plein cadre.",
+   "verdict": "reprendre",
+   "evidence": "overview-02.jpg"
+  },
+  {
+   "cat": "image",
+   "name_fr": "Pochettes de playlists graphiques",
+   "name_en": "designed playlist sleeves",
+   "t": "0:01.50-0:14.30",
+   "frames": "f45-f429",
+   "fps": 30,
+   "mechanics": "Capitales grasses serrées en haut à gauche, motif simple (cercles concentriques, barres), petite mention en bas ; une couleur saturée par pochette (moutarde #D6A122, rose #DC578D, bleu #4069C6, sauge #BFCCB5, violet, orange).",
+   "verdict": "reprendre",
+   "evidence": "microM-002-move-f122.jpg"
+  },
+  {
+   "cat": "type-design",
+   "name_fr": "Police de repli système",
+   "name_en": "fallback font",
+   "t": "0:00.00-0:18.07",
+   "frames": "f0-f539",
+   "fps": 30,
+   "mechanics": "Formes de « y », « f », « g » d'une humanistique type Segoe UI au lieu de Geist ou Inter : webfont probablement non chargée au rendu.",
+   "verdict": "adapter",
+   "evidence": "overview-04.jpg"
+  },
+  {
+   "cat": "sound",
+   "name_fr": "Transitions posées sur les attaques",
+   "name_en": "onset-aligned transitions",
+   "t": "0:00.00-0:18.07",
+   "frames": "f0-f539",
+   "fps": 30,
+   "mechanics": "Musique à 79 BPM (au lieu de ~120), accents de mesure toutes les 3,03 s (f26, f117, f208, f299, f390) ; la plupart des changements à 0-4 im d'une attaque, glissement à gauche 4-8 im avant f208 ; -14,0 LUFS, crête -4,5 dBFS.",
+   "verdict": "adapter",
+   "evidence": "rhythm.jpg"
+  },
+  {
+   "cat": "timing",
+   "name_fr": "Cadence de diaporama",
+   "name_en": "slideshow cadence",
+   "t": "0:00.00-0:18.07",
+   "frames": "f0-f539",
+   "fps": 30,
+   "mechanics": "Idée, maintien fixe, fondu, idée suivante : 10 maintiens quasi fixes (47 % de la durée) sans dérive ni mouvement secondaire, puis 2,6 s de carte finale.",
+   "verdict": "adapter",
+   "evidence": "rhythm.jpg"
+  }
+ ],
+ "prompt_insights": [
+  {
+   "kind": "structure",
+   "insight": "Minuterie de 15 scènes au dixième de seconde : chaque scène tombe à l'heure, mais le film devient un diaporama de fondus. Le modèle tient les heures et sacrifie les transitions."
+  },
+  {
+   "kind": "structure",
+   "insight": "Les heures du prompt (0,6 / 2,4 / 3,2 / 4,9 s...) ne sont pas sur une grille de temps : « Align important entrances... with musical events » n'est tenu qu'à moitié (8 changements sur 21 sur un temps). Écrire la minuterie en temps musicaux."
+  },
+  {
+   "kind": "banned",
+   "insight": "« Outgoing titles must disappear before incoming titles occupy the same space » et « no arbitrary full-frame crossfades » ne sont pas tenus (f71, f119) : les interdits noyés dans un très long prompt sont moins respectés."
+  },
+  {
+   "kind": "qa",
+   "insight": "Malgré « Inspect contact sheets... Fix visual defects », un glitch de 2 im (f145-f146) passe : la consigne de QA doit nommer un contrôle mesurable (ex. vérifier chaque image de transition)."
+  },
+  {
+   "kind": "build",
+   "insight": "« true 60 fps » et « Geist or Inter » non tenus : fichier en 30 fps, police de repli type Segoe UI. Exiger la vérification ffprobe et le chargement des polices avant rendu."
+  },
+  {
+   "kind": "inputs",
+   "insight": "Pochette héros décrite très précisément (matière, couleurs, pli en S, bord à bord) : c'est l'élément le mieux réussi du film. Une description d'image concrète marche mieux qu'une description de mouvement."
+  },
+  {
+   "kind": "direction",
+   "insight": "« Text should feel like music-product advertising, not oversized presentation headings » a été surinterprété : texte à 2,3-4,5 % de la hauteur, illisible sur téléphone. Donner une taille cible chiffrée."
+  },
+  {
+   "kind": "other",
+   "insight": "Filigrane @brainextends présent malgré l'interdit, probablement ajouté par l'auteur après la génération."
+  }
+ ],
+ "steal": [
+  "Poser le produit dans une scène arrondie à 80 % du cadre sur un fond de marque : dépassements rognés proprement.",
+  "Un lecteur persistant relie les plans et se retire aux moments de marque.",
+  "Faire naître la pochette héros de la vignette d'un résultat de recherche (position partagée).",
+  "Finir par une convergence : les objets s'empilent au centre et le logo naît exactement à cet endroit.",
+  "Écrire la minuterie en temps musicaux et vérifier fps et polices avant le rendu."
+ ],
+ "flaws": [
+  "Transitions en fondus enchaînés avec titres qui se chevauchent (f71), malgré l'interdit du prompt.",
+  "Texte trop petit (2,3-4,5 % de la hauteur), illisible sur téléphone.",
+  "Glitch de 2 images (f145-f146) : rectangles noirs dans les pochettes.",
+  "30 fps au lieu de 60, police de repli au lieu de Geist/Inter, musique à 79 BPM au lieu de ~120.",
+  "Pochette héros en double dans la formation à 4 ; icône « suivant » identique à « précédent ».",
+  "47 % de la durée en maintiens fixes, dont 2,6 s de carte finale.",
+  "Filigrane @brainextends permanent (interdit par le prompt)."
+ ],
+ "family": "produit",
+ "music": {
+  "verdict": "partielle",
+  "evidence": "La moitié des changements de scène tombe sur la grille de 79 BPM (accents forts toutes les 1,52 s) : 8/21 à ±1 im d'une barre bleue (hasard 13 %, p ≈ 0,004), 10/21 en comptant les bleu clair — logo f1, « new music » f24, New for you f69, Every mood f116, recherche f137, vignette f173, glissement f194, « rhythm » f297, éventail f365, accroche finale f479 ; milieu de l'aplat vert f230 sur la barre bleue f229. Les autres tombent à 3–6 im (interface f42, Fresh finds f88, « Find your » f292, 6 → 4 pochettes f394, convergence f430, logotype f454). Pendant les maintiens (47 % du film), rien ne bouge en rythme. Tempo réel 79 BPM (pulsation à 158) au lieu des ≈ 120 demandés. L'indice automatique (aucune synchro) rate ce calage des scènes.",
+  "synced": [
+   "coupes",
+   "apparitions",
+   "couleur"
+  ],
+  "style_match": "Électro douce et feutrée à 79 BPM (pulsation à 158) : colle au ton premium sombre, mais son pouls régulier souligne la cadence de diaporama au lieu de la porter.",
+  "how_built": "Le prompt demande d'aligner entrées, sélections, zooms et logo sur des événements musicaux, mais fixe une minuterie au dixième de seconde sans grille : une partie des scènes a été décalée (jusqu'à 0,3 s) vers les accents, le reste suit l'horloge du prompt."
+ }
+}

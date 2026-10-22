@@ -1,0 +1,413 @@
+{
+  "slug": "kikelopezdesign-7cc9e8",
+  "title": "Design portfolio video reel",
+  "handle": "@kikelopezdesign",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept juste (le portfolio joué dans son propre fichier Figma), interface crédible et grammaire de caméra constante ; pénalisé par l'absence de son, 52 % de maintiens et quatre études de cas au même schéma.",
+  "summary": "Visite guidée d'un portfolio de product designer, jouée dans son propre fichier Figma. Un point devient le logo K, la caméra dézoome sur la planche des projets, puis un curseur « Kike » sélectionne quatre études de cas : à chaque fois, panoramique, panneau Inspect et compteur d'impact. Deux commentaires, dézoom, implosion de la planche dans le logo, carte de fin avec clic. Concept juste et cohérent, mais muet et lent.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 20 secondes sur le portfolio de l'auteur, fabriquées de zéro avec uniquement les ressources du portfolio (logo, captures, couleurs). Rien sur le style, la structure, le format ni le son.",
+    "Claude a décidé seul : la métaphore du fichier Figma (canevas à points, sélections, cote « 900 × 600 », curseur « Kike », panneau Inspect, commentaires), un chiffre d'impact par projet, l'implosion finale et la carte avec bouton cliqué.",
+    "Bien cadré par la contrainte « ses propres ressources », qui a poussé vers une scène crédible plutôt qu'un habillage générique. Il aurait fallu préciser la bande-son, le rythme (aucune pause de plus de 0,5 s) et le format de diffusion."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EEECE8", "role": "fond du canevas (gris chaud)"},
+      {"hex": "#CDCBC7", "role": "points de la grille du canevas"},
+      {"hex": "#FFFFFF", "role": "panneau Inspect, cartes commentaires, pastilles d'interface"},
+      {"hex": "#FCF9F8", "role": "fond des cadres de projet"},
+      {"hex": "#111111", "role": "logo K, nom final, bouton cliqué, textes"},
+      {"hex": "#FF4A26", "role": "accent unique : sélection, curseur et étiquette « Kike », chiffres d'impact, épingles de commentaire, flèche du bouton"},
+      {"hex": "#D5381A", "role": "étiquette de cote « 900 × 600 » sous la sélection"},
+      {"hex": "#FFD8D1", "role": "boîtes saumon du diagramme d'off-boarding (capture)"},
+      {"hex": "#626262", "role": "étiquettes FRAME / IMPACT / SCOPE ; sous-titre final #63615F"},
+      {"hex": "#279F77", "role": "point « Live » en bas du panneau"},
+      {"hex": "#BDE374", "role": "vignette vert acide de la planche (capture)"}
+    ],
+    "type": "Grotesque neutre type Inter partout : étiquettes en capitales grises ≈ 1,3 % de la hauteur, titres demi-gras ≈ 2,5 %, chiffres d'impact orange ≈ 10 %, nom final gras (capitale ≈ 8 %), approche serrée. Serif seulement dans les captures.",
+    "texture": "Aucun grain, aucun flou de mouvement ni de profondeur de champ. Ombres portées très douces sous les cartes commentaires, les téléphones et les pastilles ; ombre orange décalée sous le bouton « Regalar Artículo » (issue du portfolio). Traits de sélection fins (≈ 1,5 px), coins arrondis partout : pilules, cartes (rayon ≈ 8 px), logo (rayon ≈ 12 % du côté).",
+    "style": "Fichier Figma vivant, accent orange unique",
+    "coherence": "Tout est un objet Figma : chaque projet est un cadre étiqueté de même taille (900 × 600), chaque mouvement est une action d'outil (sélection, zoom, touche Tab, commentaire, clic) et l'orange #FF4A26 marque toujours l'interaction. Le K ouvre le film, sert de pivot au centre exact de la planche (x 50,5 %, y 55,4 %) et le referme : boucle visuelle. Seules les captures apportent d'autres couleurs et d'autres polices, ce qui les fait lire comme du contenu et non comme du décor."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio, donc ni BPM ni synchro. Plan-séquence unique de 20 s (aucune coupe) : tout passe par une caméra virtuelle sur le canevas. Neuf mouvements majeurs (pics d'énergie à f25, f78, f148, f207, f262, f314, f386, f481, f504) séparés de maintiens : 11 maintiens d'au moins 0,4 s pour 10,4 s (52 %). La section des études de cas est strictement périodique : départs de panoramique à f200, f254 et f308, soit 54 im (1,8 s) d'écart ; chaque cycle = panoramique 14 im + compteur 24 im + pause ≈ 17 im (0,57 s). Trous nets : 0-0,23 s (toile vide), 3,47-4,67 s (planche où seul le curseur bouge), 13,4-15,6 s (commentaires : un curseur et deux cartes), 19,47-20 s (maintien final). Environ 30 événements en 20 s (un toutes les 0,67 s en moyenne) mais groupés par paquets, avec plusieurs trous de plus de 1 s : loin de la grammaire 1600 (quelque chose bouge toutes les 0,5 à 1 s, sans pause).",
+    "timeline": [
+      {"t": "0:00-0:00.23", "what": "Canevas vide gris chaud à grille de points (f0-f6)", "technique": "toile vide en ouverture"},
+      {"t": "0:00.23-0:00.47", "what": "Un point noir apparaît au centre avec un ressort : 0 → 56 px → 48 px (f7-f14)", "technique": "apparition avec dépassement"},
+      {"t": "0:00.70-0:00.90", "what": "Le point se déplie en carré noir arrondi ×5 (48 → 240 px) en 6 im", "technique": "morphing cercle → carré"},
+      {"t": "0:00.93-0:01.20", "what": "Le K blanc monte dans le carré, puce « kike-lopez / portfolio.fig » et zoom « 320% » en fondu", "technique": "révélation masquée + habillage d'outil"},
+      {"t": "0:01.10-0:01.70", "what": "Cadre de sélection orange et étiquette « Logo — 32 × 32 », puis désélection (f50)", "technique": "état de sélection Figma"},
+      {"t": "0:01.63-0:02.80", "what": "Dézoom 320 % → 35 % : le logo rétrécit ×0,10, la planche de ≈ 22 projets apparaît", "technique": "dézoom de dévoilement"},
+      {"t": "0:02.80-0:04.67", "what": "Planche tenue ; le curseur « Kike » entre (f101), glisse 22 im, clique sur « Subscription Off-boarding » (f132)", "technique": "curseur multijoueur, clic"},
+      {"t": "0:04.70-0:05.40", "what": "Zoom 35 % → 105 % sur le cadre sélectionné ; panneau Inspect glisse de la droite (f146-f157)", "technique": "zoom avant + panneau latéral"},
+      {"t": "0:05.23-0:06.03", "what": "Compteur ~0 % → ~27 % en 24 im, puces SCOPE en cascade", "technique": "compteur power2.out"},
+      {"t": "0:06.03-0:06.60", "what": "Pause ; la pastille « Tab · Next frame » apparaît à f193-f198", "technique": "maintien + raccourci annoncé"},
+      {"t": "0:06.67-0:07.13", "what": "Panoramique vers la gauche (830 px) sous le cadre de sélection fixe ; « App Paywall Redesign »", "technique": "image suivante sous HUD fixe"},
+      {"t": "0:07.10-0:08.47", "what": "Compteur 0× → 9× (f213-f237), puces, pause", "technique": "compteur + maintien"},
+      {"t": "0:08.50-0:08.90", "what": "Panoramique vers le haut (616 px) vers « Gifted Articles »", "technique": "même tween power3.inOut"},
+      {"t": "0:08.90-0:10.23", "what": "Compteur +0 % → +50 % (f267-f291), pause", "technique": "compteur + maintien"},
+      {"t": "0:10.27-0:10.70", "what": "Panoramique vers la droite (826 px) vers « Login & Signup »", "technique": "même tween power3.inOut"},
+      {"t": "0:10.67-0:12.33", "what": "Compteur 0.0M → 25.2M (f320-f344), pause de 0,87 s", "technique": "compteur + maintien"},
+      {"t": "0:12.33-0:13.30", "what": "Le panneau sort à droite (f379-f382), recul à 70 % sur une grille 2 × 2 de projets", "technique": "recul + sortie du panneau"},
+      {"t": "0:13.30-0:15.60", "what": "Le curseur dépose deux commentaires (Tile Tales f415-f419, Surfboard Calculator f447-f451)", "technique": "commentaires Figma comme preuve"},
+      {"t": "0:15.60-0:16.37", "what": "Commentaires effacés, dézoom 70 % → 35 % sur la planche complète", "technique": "retour à la planche (rime)"},
+      {"t": "0:16.57-0:17.37", "what": "Implosion : tous les cadres convergent vers le K central et s'effacent (f497-f521)", "technique": "implosion dans le logo"},
+      {"t": "0:17.27-0:17.80", "what": "Le K grandit ×5,3 (33 → 176 px) et monte de 20 % de la hauteur", "technique": "logo qui devient carte de fin"},
+      {"t": "0:17.63-0:18.03", "what": "« Kike López » se lève lettre à lettre sous un masque (f529-f541)", "technique": "stagger par lettre masqué"},
+      {"t": "0:18.07-0:18.33", "what": "Sous-titre « Product Designer · 8 years · end to end » puis bouton « kikelopez.es → » en fondu", "technique": "cascade de fondus"},
+      {"t": "0:18.70-0:19.47", "what": "Le curseur entre par le bas, clique : le bouton passe au noir plein (f580-f583)", "technique": "survol-clic sur l'appel à l'action"},
+      {"t": "0:19.47-0:20.00", "what": "Carte de fin tenue 0,53 s", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (dossier : audio=no ; sync.json : audio false ; rhythm.jpg : « no audio / no tempo »). Aucune barre bleue ni point vert sur les 8 planches microscope.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. La cadence fixe de 1,8 s par projet aurait accueilli une boucle à 100 BPM (3 temps par cycle) avec clics et tic de compteur.",
+    "how_built": "Le prompt ne parle ni de musique ni de son et le rendu n'a pas de piste audio : aucune technique de synchro à extraire. Pour en ajouter, la grille existe déjà : départs de panoramique toutes les 54 im (1,8 s = 3 temps à 100 BPM), clics du curseur (f132, f580) à poser sur des temps forts, impact de l'implosion (f521) sur un premier temps de mesure."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Apparition du point avec ressort",
+      "name_en": "dot pop-in with spring overshoot",
+      "t": "0:00.23-0:00.47",
+      "frames": "f7-f14",
+      "fps": 30,
+      "mechanics": "Après 7 im de toile seule, un point noir #111111 apparaît au centre : 24 px (f7), 40, 48, 52, puis 56 px (f11, dépassement ≈ 17 % au-dessus de la taille finale), 52, 52, enfin 48 px stables dès f14 (6,7 % de la hauteur). Montée en 4 im, retour en 3 im : ressort amorti (spring), sans flou. Le point reste ensuite immobile 7 im (f14-f21) avant de se transformer.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point se déplie en carré arrondi",
+      "name_en": "circle-to-rounded-square morph with scale-up",
+      "t": "0:00.70-0:00.90",
+      "frames": "f21-f27",
+      "fps": 30,
+      "mechanics": "Le point de 48 px devient un carré noir arrondi de 240 px (×5 ; de 6,7 % à 33 % de la hauteur) en 6 im : incréments de 12, 32, 64, 52, 24 puis 4 px par image, donc ease-in-out serré avec pic à f24. Le rayon passe de 50 % (cercle) à ≈ 12 % du côté pendant la croissance. Ensuite lente dérive de +5 % (244 → 256 px) sur f27-f34, comme une poussée de caméra résiduelle qui garde l'image vivante.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 6, "to": 37, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le K monte dans son carré (révélation masquée)",
+      "name_en": "masked glyph rise inside its container",
+      "t": "0:00.93-0:01.20",
+      "frames": "f28-f36",
+      "fps": 30,
+      "mechanics": "2 im après l'arrivée du carré, le K blanc entre par le bas, coupé par le bord du carré qui sert de masque : sommet du glyphe à 77 % de la hauteur du carré (f28), puis 60, 49, 41, 36, 32, 29, 28 et 27 % (f36). Course ≈ 50 % du carré en 9 im (0,3 s), pas de 17, 11, 8, 5, 4, 3, 1, 1 % : ease-out fort (expo probable), sans dépassement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Habillage Figma qui s'installe autour du logo",
+      "name_en": "design-tool chrome build-up",
+      "t": "0:00.93-0:01.70",
+      "frames": "f28-f51",
+      "fps": 30,
+      "mechanics": "Pendant la montée du K : puce de fichier « ■ kike-lopez / portfolio.fig » en haut à droite (fondu f28-f31) et pastille de zoom « 320% » en bas à gauche ; puis cadre de sélection orange (trait ≈ 1,5 px #FF4A26, 4 poignées carrées blanches) et étiquette « Logo — 32 × 32 » en fondu de 3 im (f33-f36). Désélection à f50-f51, juste avant le dézoom. La pastille de zoom suit la caméra en direct (« 284% » à f60, « 35% » à f90) : détail de crédibilité.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom d'ouverture sur la planche",
+      "name_en": "reveal zoom-out from logo to board",
+      "t": "0:01.63-0:02.80",
+      "frames": "f49-f84",
+      "fps": 30,
+      "mechanics": "Zoom 320 % → 35 % : le logo passe de 256 à 26 px (×0,10) en 36 im (1,2 s). En échelle linéaire la courbe est un ease-in-out symétrique (pic de vitesse à f67), mais l'œil lit l'échelle en logarithme : 0,5 s de démarrage mou (−5 % seulement à f58), puis ×4 en 0,3 s (f66-f75), arrêt en 8 im. Trajectoire en crochet : le logo descend de 14 % de la hauteur jusqu'à f67 puis remonte de 9 % (origine du zoom et translation probablement animées séparément). Aucun flou. Les cadres de la planche entrent par les bords dès f53. À refaire en interpolant l'échelle en logarithme (ou en expo) pour une vitesse perçue régulière.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f78.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Planche de projets autour du logo pivot",
+      "name_en": "project board mosaic around a pivot logo",
+      "t": "0:02.80-0:04.67",
+      "frames": "f84-f140",
+      "fps": 30,
+      "mechanics": "À 35 %, ≈ 22 cadres sur 4 rangées couvrent x 3-97 % du cadre : vignettes colorées en haut, puis diagrammes et téléphones, puis connexion, bouton cadeau et planche de surf, enfin une rangée sombre « Visual design ». Titre « Kike López — Product Designer » en haut à gauche (≈ 3 % de la hauteur). La puce K de 26 px occupe le centre exact (x 50,5 %, y 55,4 %) et sert de pivot jusqu'à l'implosion. Tenue 1,9 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur multijoueur « Kike » qui motive la caméra",
+      "name_en": "named multiplayer cursor driving the camera",
+      "t": "0:03.37-0:04.70",
+      "frames": "f101-f141",
+      "fps": 30,
+      "mechanics": "Flèche orange à contour blanc (≈ 3 % de la hauteur) + étiquette pilule orange « Kike » en blanc gras. Entrée par le bas à droite à f101, glisse en ease-out sur 22 im (de 3,5 % du cadre par image à 0,1 %), repos 8 im, clic à f132 (le curseur rétrécit pendant 2 im), sélection orange du cadre visé, puis zoom 8 im après le clic. Même geste de clic sur le bouton final : chaque mouvement de caméra est précédé d'une action d'utilisateur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom avant sur le cadre sélectionné",
+      "name_en": "zoom-in to the selected frame",
+      "t": "0:04.70-0:05.40",
+      "frames": "f141-f162",
+      "fps": 30,
+      "mechanics": "35 % → 105 % (×3,2 : la puce K passe de 26 à 84 px) en ≈ 20 im (0,67 s). Avancement de l'échelle : 7 % à f145, 31 % à f149, 66 % à f152, 90 % à f155, 100 % à f162 ; pic de vitesse à f150-f151 : ease-in-out (power2 ou power3.inOut probable). Trajectoire rectiligne (zoom autour d'un point fixe ≈ x 42 %, y 39 %). Le cadre atterrit à x 12-61 %, y 21-79 % de l'écran, laissant la droite libre pour le panneau. Aucun flou.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f148.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Panneau Inspect qui glisse de la droite",
+      "name_en": "inspector side panel slide-in",
+      "t": "0:04.87-0:05.27",
+      "frames": "f146-f157",
+      "fps": 30,
+      "mechanics": "Panneau blanc de 27 % de la largeur. Bord gauche à 97,5 % (f146), puis 91, 86, 83, 80, 78, 76, 75, 74 % et 73 % stable (f157) : 12 im (0,4 s), ease-out fort, départ 5 im après le zoom (chevauchement d'actions). Contenu : onglets Design / Prototype / Inspect, FRAME + titre du projet, IMPACT + grand chiffre, phrase d'explication, SCOPE + puces, « ● Live · El Confidencial ». Sortie à f379-f382 en 3-4 im, en accélérant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f148.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'impact en ease-out",
+      "name_en": "KPI count-up",
+      "t": "0:05.23-0:06.03",
+      "frames": "f157-f181",
+      "fps": 30,
+      "mechanics": "Chaque projet n'affiche qu'un chiffre, orange #FF4A26, ≈ 10 % de la hauteur. Fondu d'entrée de 2-3 im, puis comptage de 0 à la cible en 24 im (0,8 s) selon un ease-out cubique (GSAP power2.out), vérifié sur les 4 compteurs : Login 3,0 M à +1 im, 12,7 M à +5, 19,0 M à +9, 25,2 M à +24 ; Gifted +17 % à +3, +44 % à +12, +49 % à +18 ; Paywall 3× à +3, 8× à +11. Préfixes et suffixes conservés (~, ×, +, M). L'ancien chiffre s'efface en 4 im au départ du panoramique suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f314.jpg",
+      "illus": {"from": 155, "to": 181, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puces de périmètre en cascade",
+      "name_en": "staggered scope chips",
+      "t": "0:07.40-0:07.60",
+      "frames": "f222-f228",
+      "fps": 30,
+      "mechanics": "Sous SCOPE, 2 ou 3 puces grises à coins arrondis (« Conversion », « Native apps », « Component ») apparaissent en fondu ≈ 10 im après le début du compteur, décalées d'environ 2 im chacune ; la troisième est encore pâle à f225. Même schéma sur les 4 projets : elles terminent la lecture du panneau pendant la fin du compteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f207.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Image suivante sous un cadre de sélection fixe",
+      "name_en": "pan under a fixed selection HUD",
+      "t": "0:06.67-0:07.13",
+      "frames": "f200-f213",
+      "fps": 30,
+      "mechanics": "Le cadre de sélection orange, ses poignées, la cote « 900 × 600 » (#D5381A) et le nom du cadre restent fixes à l'écran (x 12-61 %, y 21-79 %) ; seul le canevas glisse dessous, de 830 px (65 % de la largeur). Le nom bascule sur le projet suivant dès le départ. Tous les projets ayant la même taille, le cadre « attrape » le suivant sans recadrage. Panneau : contenu en fondu sortant de 4 im (f201-f204), vide au pic, entrant en 3 im (f211-f213).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f207.jpg",
+      "illus": {"from": 199, "to": 214, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Un seul tween pour tous les panoramiques",
+      "name_en": "one shared pan tween (quart in-out)",
+      "t": "0:06.67-0:10.70",
+      "frames": "f200-f213, f255-f267, f308-f321",
+      "fps": 30,
+      "mechanics": "Trois panoramiques (gauche 830 px, haut 616 px, droite 826 px) ont le même profil de vitesse, mesuré par corrélation de phase : 2, 6, 16, 34, 60, 98, 152, 178, 122, 78, 46, 24, 10, 4 px par image (vertical : 4, 12, 24, 44, 74, 112, 134, 92…). Il colle à une courbe quartique ease-in-out (GSAP power3.inOut) d'environ 0,55 s (≈ 16,5 im dont 14 visibles). Départs à f200, f254, f308 : un projet toutes les 54 im (1,8 s) exactement. La direction suit la disposition de la planche (gauche, bas, droite).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f262.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Raccourci clavier « Tab · Next frame » annoncé à l'écran",
+      "name_en": "on-screen keyboard shortcut hint",
+      "t": "0:06.43-0:12.30",
+      "frames": "f193-f369",
+      "fps": 30,
+      "mechanics": "Une pastille blanche en bas à gauche, à côté du zoom « 105% », montre une touche « Tab » et le libellé « Next frame ». Elle apparaît en fondu de 6 im (f193-f198), juste avant le premier panoramique, et reste pendant toute la section des études de cas. Elle justifie chaque panoramique comme une navigation au clavier : le mouvement devient un geste d'utilisateur, pas un effet.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul sur quatre projets avec sortie du panneau",
+      "name_en": "pull-back with panel exit",
+      "t": "0:12.33-0:13.30",
+      "frames": "f370-f399",
+      "fps": 30,
+      "mechanics": "Le panneau Inspect sort vers la droite en 3-4 im (f379-f382, en accélérant) pendant que la caméra recule de 105 % à 70 % et se déplace vers le haut : ≈ 30 im (1 s), montée de 16 im, pic à f386-f388, descente de 11 im. Arrivée sur une grille 2 × 2 (Paywall, Tile Tales, Gifted Articles, Surfboard Calculator) ; le curseur repart dès f392.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f387.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Commentaires Figma déposés par le curseur",
+      "name_en": "cursor-dropped comment cards",
+      "t": "0:13.83-0:15.03",
+      "frames": "f415-f451",
+      "fps": 30,
+      "mechanics": "Le curseur dépose une épingle (rond orange avec avatar « K », ≈ 4 % de la hauteur) puis une carte blanche (≈ 25 % × 12 % du cadre, rayon ≈ 8 px, ombre douce) : « Kike López · just now / Tile Tales — designed, built and shipped solo to the App Store. » Fondu en ≈ 4 im (f415-f419). Le curseur descend en ≈ 14 im (f431-f445) et dépose le second commentaire (« Surfboard Calculator — live in production, 40 pages indexed. ») à f447-f451. Bonne idée de preuve sociale au format natif de l'outil, mais 2,3 s presque immobiles.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom final vers la planche (rime avec l'ouverture)",
+      "name_en": "zoom-out back to the board",
+      "t": "0:15.60-0:16.37",
+      "frames": "f468-f491",
+      "fps": 30,
+      "mechanics": "Les deux commentaires s'effacent en ≈ 4 im (f469-f473), puis la caméra repasse de 70 % à 35 % en 24 im (0,8 s), ease-in-out (montée de 13 im, pic à f481-f482, descente de 10 im). Atterrissage sur la composition exacte de 2,80 s (logo à x 50,5 %, y 55,4 %) : rime visuelle avec l'ouverture. Maintien de 0,2 s seulement (f491-f497) avant l'implosion.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f481.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion de la planche dans le logo",
+      "name_en": "board implodes into the logo",
+      "t": "0:16.57-0:17.37",
+      "frames": "f497-f521",
+      "fps": 30,
+      "mechanics": "Les ≈ 22 cadres et le titre convergent vers la puce K centrale en rétrécissant et en s'effaçant (fantômes translucides visibles à f509). Emprise du contenu : largeur 74 % → 4 %, hauteur 86 % → 8 % en 25 im (0,83 s). Les colonnes extérieures partent d'abord (largeur 71 % → 27 % entre f500 et f512), les rangées haute et basse ensuite (hauteur 79 % → 12 % entre f508 et f520) : cascade d'environ 8 im selon la position. Départ doux, convergence rapide, arrivée douce ; aucune rotation visible. Le travail entier se résume dans la marque : transition motivée.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f504.jpg",
+      "illus": {"from": 495, "to": 535, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le logo grandit et monte en carte de fin",
+      "name_en": "logo scale-up and rise into the end card",
+      "t": "0:17.27-0:17.80",
+      "frames": "f518-f534",
+      "fps": 30,
+      "mechanics": "Resté seul, le K passe de 33 à 176 px (×5,3 ; 24 % de la hauteur) en 16 im, ease-in-out (croissance maximale à f523-f525), et monte de y 56 % à y 36 % (20 % de la hauteur) entre f522 et f534 : 2 à 2,7 % de la hauteur par image pendant 6 im, puis freinage en 5 im. Aucun dépassement. Le nom commence à monter 5 im avant la fin du mouvement du logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom révélé lettre à lettre sous un masque de ligne",
+      "name_en": "per-letter masked rise",
+      "t": "0:17.63-0:18.03",
+      "frames": "f529-f541",
+      "fps": 30,
+      "mechanics": "« Kike López » (grotesque gras, capitale ≈ 8 % de la hauteur, approche serrée) : chaque lettre monte de ≈ 76 px depuis sous la ligne de base, coupée par un masque. Le sommet de la première lettre passe de y 493 à 417 px en 12 im (pas de 20, 15, 12, 9, 6, 5, 3, 2 px : ease-out fort). Le bord droit du mot avance de 455 à 826 px entre f529 et f540 : décalage (stagger) ≈ 1,2 im par lettre (40 ms).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre puis bouton en fondu décalé",
+      "name_en": "staggered subtitle and CTA fade-in",
+      "t": "0:18.07-0:18.33",
+      "frames": "f542-f549",
+      "fps": 30,
+      "mechanics": "« Product Designer · 8 years · end to end » (gris #63615F, ≈ 3 % de la hauteur) apparaît en fondu sur 8 im (f542-f549) dès que le nom est complet ; le bouton pilule « kikelopez.es → » (contour sombre, flèche orange) suit 5 im plus tard, en 3 im (f547-f549). Hiérarchie de lecture : logo, nom, rôle, lien.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Survol et clic sur le bouton final",
+      "name_en": "cursor hover-click on the CTA",
+      "t": "0:18.70-0:19.47",
+      "frames": "f561-f584",
+      "fps": 30,
+      "mechanics": "Le curseur « Kike » entre par le bas (f561) et rejoint le coin du bouton en 12 im, ease-out (pas vertical de 1,8 % à 0,1 % du cadre par image). Après 7 im d'arrêt, clic à f580-f583 : le curseur rétrécit d'environ 20 % puis revient (4 im) et le bouton passe du contour au noir plein #111111 en 3 im. Maintien final de 0,53 s : l'appel à l'action est joué, pas seulement affiché.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle logo → planche → preuves → logo",
+      "name_en": "logo-to-logo loop structure",
+      "t": "0:00-0:20.00",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Sept temps : naissance du logo (1,6 s), dévoilement de la planche (1,2 s + 1,9 s de tenue), quatre études de cas à cadence fixe de 1,8 s (un chiffre chacune), deux commentaires de preuve (2,3 s), retour à la planche, implosion, carte de fin avec appel à l'action cliqué. Le K ouvre, sert de pivot au centre de la planche et ferme. Durée exacte demandée : 600 im à 30 fps.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Typographie d'interface neutre, chiffre géant en accent",
+      "name_en": "neutral UI type with an oversized accent figure",
+      "t": "0:05.23-0:12.33",
+      "frames": "f157-f369",
+      "fps": 30,
+      "mechanics": "Grotesque neutre type Inter : étiquettes en capitales grises #626262 (≈ 1,3 % de la hauteur), titre du projet demi-gras noir (≈ 2,5 %), chiffre d'impact demi-gras orange ≈ 10 % (rapport 4:1 avec le titre), description régulière ≈ 2,2 %. Approche serrée sur le chiffre. Les captures gardent leurs propres polices (serif de « Suscríbete ahora »), ce qui sépare l'outil du contenu.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f314.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un seul accent réservé à l'interaction",
+      "name_en": "single accent colour for interaction",
+      "t": "0:00-0:20.00",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Système en 4 tons : canevas gris chaud #EEECE8, cadres blancs #FFFFFF / #FCF9F8, noir #111111, et un orange #FF4A26 réservé à ce qui est interactif ou important (sélection, curseur, étiquette « Kike », chiffres, épingles, flèche du bouton ; variante sombre #D5381A pour la cote). Toute autre couleur vient des captures du portfolio. L'œil sait toujours où regarder.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Canevas à grille de points",
+      "name_en": "dot-grid canvas",
+      "t": "0:00-0:20.00",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Points #CDCBC7 sur #EEECE8, écart ≈ 84 px à 320 % (ouverture) et ≈ 58 px à 105 % comme sur la carte de fin : la grille change avec le zoom et donne l'échelle pendant les mouvements de caméra. Seul élément visible pendant les 7 premières images ; elle dit « fichier de travail » sans un mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence de diaporama et maintiens",
+      "name_en": "slide-deck cadence with holds",
+      "t": "0:02.80-0:15.60",
+      "frames": "f84-f468",
+      "fps": 30,
+      "mechanics": "Chaque étude de cas suit le même cycle de 54 im : panoramique de 14 im, compteur de 24 im, pause d'environ 17 im (0,57 s). Maintiens plus longs : planche 1,9 s (dont 1,2 s où seul le curseur bouge), connexion 0,87 s, commentaires 2,3 s. Au total 52 % du film statique (10,4 s). Régulier et lisible, mais sans variation ni accent : à resserrer (pauses de 0,2 s, compteur sur le panoramique).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu net sans flou de mouvement",
+      "name_en": "no motion blur",
+      "t": "0:06.83-0:06.97",
+      "frames": "f205-f209",
+      "fps": 30,
+      "mechanics": "Aucune image ne porte de flou directionnel, même au pic des panoramiques (178 px par image, 14 % de la largeur à 30 fps) ou du dézoom (×0,8 par image vers f68). L'interface reste lisible pendant le geste mais saccade ; seules les ombres douces des cartes et des téléphones donnent du relief. Un flou directionnel de 2-3 im au pic suffirait.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f207.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« using only the portfolio's own resources » : le modèle n'a rien inventé visuellement. Il a repris le logo K, les captures réelles (El Confidencial, Tile Tales, Surfboard Calculator, Black Friday), l'orange de la marque et le vocabulaire du métier (fichier Figma). La contrainte d'inputs a produit la cohérence."},
+    {"kind": "direction", "insight": "Aucune direction de style : le modèle a choisi la métaphore la plus crédible pour un product designer, son propre fichier de travail. Le décor sert aussi de grammaire : chaque transition est une action d'outil (sélection, touche Tab, commentaire, clic), donc toujours motivée."},
+    {"kind": "structure", "insight": "« 20 second » respecté à l'image près (600 im à 30 fps). Sans indication de rythme, le modèle a découpé en temps égaux (cycle de 1,8 s par projet) : clair mais mécanique, avec des pauses après chaque compteur."},
+    {"kind": "other", "insight": "Les chiffres d'impact (~27 %, 9×, +50 %, 25,2 M) et les phrases des commentaires viennent probablement des études de cas du portfolio ; ne garder qu'un chiffre par projet rend chaque étape lisible en 0,8 s."},
+    {"kind": "qa", "insight": "Rien sur le son ni sur le rythme : vidéo muette et 52 % de maintiens. Il aurait fallu demander une bande-son (ou au moins clics, souffles et tic de compteur) et une contrainte du type « rien d'immobile plus de 0,5 s »."},
+    {"kind": "build", "insight": "Pile non précisée ; les courbes (le même power3.inOut sur 3 panoramiques, power2.out sur 4 compteurs), les 30 fps et l'absence totale de flou de mouvement indiquent un rendu HTML + GSAP image par image (probable)."}
+  ],
+  "steal": [
+    "Présenter un portfolio dans son propre fichier Figma : canevas à points, cadres étiquetés, sélection orange, curseur nommé. L'outil du métier devient décor et grammaire de transition.",
+    "Un chiffre par projet : panneau latéral en 0,4 s ease-out, puis compteur 0 → cible en 0,8 s (power2.out), chiffre ≈ 10 % de la hauteur dans l'accent.",
+    "Image suivante : garder le cadre de sélection fixe à l'écran et faire glisser le canevas dessous (power3.inOut, 0,55 s), même tween pour toutes les directions.",
+    "Faire précéder chaque mouvement de caméra d'un geste : curseur qui glisse en ease-out, clic (curseur rétréci 2 im), sélection, zoom 8 im plus tard.",
+    "Finir en implosion : tous les éléments convergent vers le logo en 0,8 s, le logo grandit ×5 et monte, puis le nom se lève lettre à lettre (1,2 im d'écart)."
+  ],
+  "flaws": [
+    "Vidéo muette : ni musique ni clics, alors que curseur, compteurs et implosion appelaient un vrai design sonore.",
+    "52 % du temps immobile (10,4 s) : planche tenue 1,9 s, commentaires 2,3 s, pause de 0,57 s après chaque compteur.",
+    "Quatre études de cas au même gabarit (panoramique, compteur, pause, toutes les 1,8 s) : rythme de diaporama prévisible.",
+    "Aucun flou de mouvement à 178 px par image : saccade visible sur les panoramiques et le dézoom d'ouverture.",
+    "Descriptions et commentaires à ≈ 2,2 % de la hauteur : illisibles sur téléphone."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : cadence native de 30 fps et mouvements faits de tweens standard, déjà mesurés ici image par image (panoramiques power3.inOut, compteurs power2.out, dézoom, carte de fin). Seule l'implosion (f497-f534) gagnerait à une relecture continue pour lire l'ordre exact de la cascade."
+  }
+}

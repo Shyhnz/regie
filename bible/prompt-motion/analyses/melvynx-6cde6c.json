@@ -1,0 +1,626 @@
+{
+  "slug": "melvynx-6cde6c",
+  "title": "Email tool promo reel",
+  "handle": "@melvynx",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique tenu (crème, grotesque XXL, un seul rouge), point rouge devenu logo, récit SaaS impeccable ; mais musique posée, maintiens de 1 à 2 s, interfaces trop petites, échos qui dédoublent les objets.",
+  "summary": "Promo de 45 s pour Lumail, outil d'e-mailing piloté par agents IA. Récit problème → solution : outils figés depuis 2014, contacts payés pour rien, agents qui ne peuvent pas se connecter, puis « well... now it can. ». Fond crème, grotesque XXL, un seul rouge, et un point rouge qui voyage de plan en plan jusqu'à devenir l'icône. Très bien écrit et cohérent ; musique posée, quelques maintiens.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 15 s, une vidéo « dynamique » qui montre un motion designer exceptionnel, pour l'URL d'un site produit. Aucun récit, style, rythme, musique ni format d'interface.",
+    "Claude a décidé seul : le récit problème → agitation → pivot → démo → prix → appel, la palette crème/noir/rouge, le point rouge devenu icône, les transitions à échos, les maquettes d'interface, et 45 s au lieu de 15.",
+    "L'URL a bien cadré le fond (produit, arguments, chiffres). Mal cadré : durée triplée, musique hors sujet, texte d'interface minuscule. Il fallait imposer 15 s, un BPM avec coupes sur les temps et une taille minimale de texte."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F1EFEA",
+        "role": "fond crème chaud, vignette douce vers #E4E0DA aux bords"
+      },
+      {
+        "hex": "#141210",
+        "role": "texte principal quasi noir"
+      },
+      {
+        "hex": "#E5281E",
+        "role": "accent unique : mots clés, prix final, sphère, icône, bouton"
+      },
+      {
+        "hex": "#4A120C",
+        "role": "bordeaux du dégradé dans le mot « Email »"
+      },
+      {
+        "hex": "#C9C6C1",
+        "role": "gris des éléments inactifs (prix voisins, points éteints)"
+      },
+      {
+        "hex": "#3B3531",
+        "role": "gris chaud des chiffres pendant le défilement"
+      },
+      {
+        "hex": "#1B1918",
+        "role": "fond du terminal sombre"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "cartes d'interface claires"
+      },
+      {
+        "hex": "#2E9E55",
+        "role": "pastilles « Done » et puces de succès (fond #DDF3E3)"
+      }
+    ],
+    "type": "Néo-grotesque serrée (Inter Display probable) Bold à ExtraBold, bas de casse, interlettrage ≈ −4 % ; mots héros 30-44 % de la hauteur, titres 7 %, légendes entre crochets 2 % ; mono pour le terminal.",
+    "texture": "Vignette douce ; ombres portées très diffuses sous les cartes ; sphère rouge brillante (dégradé radial, reflet en haut à gauche, halo rouge ≈ 1,5 × le rayon) ; traînées d'écho (2 à 4 copies à opacité décroissante) à la place du flou de mouvement ; flou d'entrée sur le logo final ; mur de légendes répétées à ≈ 8 % de contraste en fond (4,1-7,2 s).",
+    "style": "Éditorial minimal, grotesque XXL, accent rouge",
+    "coherence": "Le système tient par trois constantes : un seul rouge réservé aux mots qui coûtent ou qui sauvent ; le point rouge récurrent (point de « Email. », troisième point de « well... », point de « now it can. ») qui devient l'icône Lumail ; la même transition (sortie à échos + 3 à 7 im de vide) à chaque changement de scène. Ce qui casse : les écrans d'interface occupent 25 à 40 % du cadre avec du texte à ≈ 1 % de la hauteur, et les échos trop espacés dédoublent l'icône L à la sortie du schéma (f2098-f2100)."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Vrai tempo 120 BPM (segments 0-13 s et 26-45 s mesurés à 119,9 BPM, netteté 5,7 et 8,8) ; l'estimation globale de 80 BPM du dossier est une erreur de 2/3. Les 4 « coupes » détectées (f196, f240, f1500, f2548) ne sont pas franches : ce sont des poussées, sorties à échos ou zooms traversants. Densité : un changement de scène toutes les 3 à 6 s ; dans les scènes de données, un micro-événement (mot, chiffre, point) toutes les 0,1 à 0,5 s (compteur d'années : un pas toutes les 8 im). Mais 18 maintiens ≥ 0,4 s (39 % de la durée selon la mesure ; une partie est du texte minuscule qui bouge sous le seuil). Vrais temps morts : ouverture vide 0-0,5 s, écran d'erreur 22,7-24,8 s (2,1 s, seul le curseur clignote), « now it can. » 26,6-27,5 s, slogan 29,5-30,6 s. Transitions brèves et répétées : sortie en 5 à 8 im puis 3 à 7 im de vide. Aucune coupe ni impact sur un temps : les départs de transitions tombent en moyenne 7 im après une croche.",
+    "timeline": [
+      {
+        "t": "0:00-0:01.6",
+        "what": "Fond crème vide 0,5 s, puis point rouge avec anneau et « Let's talk email. » minuscule (2 % de la hauteur), mots qui montent d'un masque toutes les ≈ 15 im",
+        "technique": "ouverture par une ligne murmurée"
+      },
+      {
+        "t": "0:01.6-0:03.1",
+        "what": "« Email » XXL (44 % de la hauteur) entre par la droite avec échos et pousse la petite ligne ; la sphère rouge devient le point final",
+        "technique": "glissé à traînée d'écho, dégradé bordeaux → noir"
+      },
+      {
+        "t": "0:03.17-0:03.4",
+        "what": "Poussée ×2,2 vers le point rouge, le mot rogné en « nail. »",
+        "technique": "zoom calibré sur le motif"
+      },
+      {
+        "t": "0:03.93-0:04.08",
+        "what": "Sortie éclair à gauche avec échos, 3 im de cadre vide",
+        "technique": "sortie à échos + blanc"
+      },
+      {
+        "t": "0:04.08-0:06.2",
+        "what": "Légende « [ Email marketing tools haven't really changed since ] » mot à mot, mur de la même légende en filigrane, compteur 2026 → 2014",
+        "technique": "compteur chiffre par chiffre"
+      },
+      {
+        "t": "0:06.2-0:07.3",
+        "what": "2014 se pose en noir, la sphère rouge s'y pose puis vire au gris",
+        "technique": "désaturation de l'accent"
+      },
+      {
+        "t": "0:07.4-0:09.95",
+        "what": "Carte « Import contacts », étape 3 sur 7, barre bloquée à 99 %, vague de points au-dessus ; « [ Same CSV import. Same 7-step wizard. Since 2014. ] »",
+        "technique": "gag d'interface figée"
+      },
+      {
+        "t": "0:09.95-0:10.15",
+        "what": "Sortie vers le haut à échos, 7 im de vide",
+        "technique": "sortie à échos + blanc"
+      },
+      {
+        "t": "0:10.15-0:12.4",
+        "what": "Trame de points qui naît du centre, bande vide pour « Thousands of contacts on your list. »",
+        "technique": "grille de points comme jeu de données"
+      },
+      {
+        "t": "0:12.4-0:13.9",
+        "what": "≈ 80 % des points deviennent des anneaux ; « 80% of them never open an email. »",
+        "technique": "bascule plein → contour"
+      },
+      {
+        "t": "0:13.9-0:15.4",
+        "what": "Tous les points virent au rouge ; « You still pay for every single one. » ; la grille passe en rose puis sort",
+        "technique": "bascule de couleur sémantique"
+      },
+      {
+        "t": "0:15.4-0:17.5",
+        "what": "Colonne de prix −$49 → −$612 qui défile d'un cran toutes les 0,83 s, « Calculating your bill... » qui scintille ; −$612 en rouge avec anneau",
+        "technique": "colonne de prix à crans"
+      },
+      {
+        "t": "0:17.9-0:18.2",
+        "what": "La colonne part à gauche en échos roses, le terminal arrive de la droite en se densifiant",
+        "technique": "fouet à échos superposé"
+      },
+      {
+        "t": "0:18.2-0:21.9",
+        "what": "« [ Your team ships with AI agents now. ] » ; terminal claude qui tape la demande, fenêtre « Email tool v6.2 » délavée, ligne pointillée, paquet rouge qui voyage",
+        "technique": "démo d'agent en terminal"
+      },
+      {
+        "t": "0:22.0-0:22.5",
+        "what": "Glitch (secousse, dédoublements), croix rouge avec ondes radar, « Error: no API access. », nouvelle légende « [ And your email tool can't even talk to them. ] »",
+        "technique": "glitch d'erreur + pastille radar"
+      },
+      {
+        "t": "0:22.7-0:24.8",
+        "what": "Maintien de 2,1 s sur l'écran d'erreur, seul le curseur clignote",
+        "technique": "temps mort"
+      },
+      {
+        "t": "0:24.83-0:25.0",
+        "what": "Léger tremblement d'anticipation puis « well » XXL balaie l'écran en 1-2 im",
+        "technique": "mot géant qui écrase la scène"
+      },
+      {
+        "t": "0:25.17-0:26.3",
+        "what": "Trois points de suspension un par un, le troisième est la sphère rouge",
+        "technique": "temps comique de l'ellipse"
+      },
+      {
+        "t": "0:26.35-0:27.5",
+        "what": "Dézoom éclair de « well... » vers le centre, puis « now it can. » mot à mot (« can. » en rouge)",
+        "technique": "dézoom à échos + mots qui montent"
+      },
+      {
+        "t": "0:27.5-0:28.05",
+        "what": "Le point rouge roule sur « now » pendant que le texte s'efface et se centre",
+        "technique": "le motif prend la main"
+      },
+      {
+        "t": "0:28.05-0:28.6",
+        "what": "Éclat de traits, sphère → carré arrondi, anneau qui s'élargit, particules, « L » tracé",
+        "technique": "morphose sphère → icône"
+      },
+      {
+        "t": "0:28.85-0:30.7",
+        "what": "« umail » sort de derrière l'icône → « Lumail », slogan « Email marketing your AI agent can actually run. »",
+        "technique": "révélation du logo"
+      },
+      {
+        "t": "0:30.9-0:34.9",
+        "what": "L'icône rétrécit en moyeu ; « Plug in the agent you already use. » ; Claude Code, Codex, ChatGPT, Cursor reliés par des courbes, paquets rouges, pastille « 126 tools · MCP · API · CLI »",
+        "technique": "schéma en étoile"
+      },
+      {
+        "t": "0:34.92-0:39.0",
+        "what": "Sortie à échos ; terminal clair « who clicked pricing but never bought? », appels d'outils, « 312 found », points rouges qui filent dans « Workflow: Objections »",
+        "technique": "requête → particules → action"
+      },
+      {
+        "t": "0:38.92-0:42.4",
+        "what": "Sortie vers le haut ; « Pay for emails you send. / Never for contacts you store. » ; compteur 0 → 250,000 contre « $0 » verrouillé",
+        "technique": "argument prix par contraste mobile/figé"
+      },
+      {
+        "t": "0:42.37-0:42.67",
+        "what": "Zoom traversant à échos puis logo qui sort du flou",
+        "technique": "zoom traversant + flou d'entrée"
+      },
+      {
+        "t": "0:43.3-0:45.1",
+        "what": "Logo remonte, bouton rouge « Start free at lumail.io », curseur qui vient cliquer, « 3,000 emails/month free · no card »",
+        "technique": "appel à l'action avec curseur"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "Vrai tempo 120 BPM : segments 0-13 s et 26-45 s à 119,9 BPM (netteté 5,7 et 8,8), grille de croches à 0,057 s + k × 0,25 s ; l'estimation globale de 80 BPM (barres des planches) est une erreur de 2/3. Sur la grille 120 BPM, 3 gestes clés sur 22 tombent à ±2 im d'un temps ou demi-temps (14 %, hasard ≈ 27 %). Force d'attaque audio moyenne au moment des gestes 0,06 contre 0,14 au hasard ; 10 % des gestes sur une attaque forte contre 32 % au hasard. Les départs de transitions se regroupent 7 im après une croche (f190, f236, f597, f1002, f1075, f1091, f2095, f2335, f2560 : 9 sur 22) : la timeline suit sa propre grille de 0,25 s, décalée d'environ 0,12 s de la musique, soit le pire décalage possible. Les barres bleu clair des planches tombent sur 5 de ces départs (f191, f236, f596, f1001, f1091) par coïncidence de phase avec une grille fausse. Seule rencontre notable : la croix rouge de l'erreur (f1322-f1323) sur la 2e attaque la plus forte (22,06 s), coïncidence ou effet sonore probable.",
+    "synced": [],
+    "style_match": "Pop électro « upbeat » à 120 BPM, régulière et neutre : l'énergie optimiste colle au ton SaaS, mais aucune courbe, coupe ni pulsation ne suit la musique.",
+    "how_built": "Prompt d'une ligne sans musique ni tempo ; la bande-son a vraisemblablement été ajoutée au montage par l'auteur. Les animations suivent leur propre horloge (pas de 0,25 s, compteurs à 8 im et 50 im par pas) sans lien avec la pulsation. Un simple décalage audio de −0,12 s aurait posé une dizaine de départs sur les croches, sans garantir les impacts."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot héros qui glisse avec traînée d'écho",
+      "name_en": "echo-trail slide-in",
+      "t": "0:01.60-0:02.12",
+      "frames": "f96-f127",
+      "fps": 60,
+      "mechanics": "« Email » (≈ 44 % de la hauteur, 70 % de la largeur) entre par la droite. Bord gauche du E : 92 % de la largeur (f97) → 59 % (f100) → 35 % (f104) → 17 % (f110) → 10 % (f120) → 7,5 % (f127). Pas de 11 % par image au départ puis ≈ 1 %/im : ease-out expo avec longue traîne (≈ 30 im). Aucun flou de mouvement réel : 2 à 3 copies fantômes derrière le mot (opacité ≈ 60/35/15 %), qui s'effacent vers f115. La petite ligne « Let's talk email. » est poussée (sa puce rouge grossit et glisse à gauche f100-f104) puis disparaît f105.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f107.jpg",
+      "illus": {
+        "from": 96,
+        "to": 116,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Dégradé bordeaux → noir dans le mot héros",
+      "name_en": "horizontal gradient fill on display type",
+      "t": "0:01.6-0:04.0",
+      "frames": "f96-f240",
+      "fps": 60,
+      "mechanics": "Le remplissage de « Email » va de #4A120C (bordeaux, sur le E) à #141210 (noir, sur le l), de gauche à droite. Discret : il annonce l'accent rouge sans le dépenser. Néo-grotesque Bold, bas de casse, interlettrage ≈ −4 %, chasse serrée.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée calibrée sur le point rouge",
+      "name_en": "calibrated push-in on the period",
+      "t": "0:03.17-0:03.38",
+      "frames": "f190-f203",
+      "fps": 60,
+      "mechanics": "Échelle ×1 → ×2,2 en 9 im (f190-f199) puis stabilisation jusqu'à f203, ease-out. Le centre du zoom est la sphère, qui passe de ≈ 6 % à 12 % de la hauteur et finit vers x ≈ 75 %, y ≈ 60 %. Deux copies d'écho pendant le mouvement. Le mot est rogné en « nail. » : le zoom cadre le motif, pas le mot.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f196.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie éclair à échos puis cadre vide",
+      "name_en": "echo whip-out with blank beat",
+      "t": "0:03.93-0:04.08",
+      "frames": "f236-f245",
+      "fps": 60,
+      "mechanics": "Le mot et la sphère sortent par la gauche en 5 im (≈ 20 % de la largeur par image), la sphère dédoublée en rose, des barres grises fantômes derrière les fûts. f242-f244 : cadre vide (3 im = 0,05 s). La légende suivante démarre f245. Même grammaire reprise à chaque scène : sortie vers le haut f597-f601 + 7 im de vide, f1075, f2095, f2335.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f240.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'années chiffre par chiffre",
+      "name_en": "per-digit odometer countdown",
+      "t": "0:04.63-0:06.20",
+      "frames": "f278-f372",
+      "fps": 60,
+      "mechanics": "2026 → 2014 en 12 pas réguliers de 7 à 9 im (≈ 0,13 s). Seuls les chiffres qui changent roulent (2020 → 2019 : deux chiffres à la fois). Le nouveau chiffre monte par le bas, l'ancien sort par le haut, 2 à 3 im de chevauchement en transparence, sans flou. Chiffres en gris chaud #3B3531 pendant le défilement, noir #141210 à l'arrêt sur 2014, ≈ 25 % de la hauteur. Cadence linéaire, sans ralenti final : l'arrivée sur 2014 manque de poids.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 324,
+        "to": 372,
+        "n": 8
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de légendes répétées en filigrane",
+      "name_en": "tiled caption wallpaper",
+      "t": "0:04.1-0:07.2",
+      "frames": "f246-f432",
+      "fps": 60,
+      "mechanics": "La légende « [ Email marketing tools haven't really changed since ] » est répétée en ≈ 10 rangs × 4 colonnes, gris #E0DDD8 sur crème (≈ 8 % de contraste), derrière la même légende centrée en noir. Fixe (probable). Elle dit « on répète la même chose depuis des années » sans un mot de plus.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "La balle rouge vire au gris",
+      "name_en": "accent desaturation as meaning",
+      "t": "0:06.3-0:07.0",
+      "frames": "f378-f420",
+      "fps": 60,
+      "mechanics": "La sphère se pose comme point final de « 2014 » (≈ 6 % de la hauteur), rouge rosé à 6,5 s, puis grise (#A9A49E probable) à 7,0 s : la couleur dit « rien n'a bougé depuis ». Fondu de teinte sur ≈ 30 im.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Assistant d'import bloqué à 99 %",
+      "name_en": "stuck progress wizard gag",
+      "t": "0:07.4-0:09.95",
+      "frames": "f444-f597",
+      "fps": 60,
+      "mechanics": "Grande carte blanche (≈ 84 % de la largeur, rayon ≈ 2 % de la largeur, ombre diffuse) : « Import contacts », « Step 3 of 7 », barre 50 % → 91 % → 99 % puis figée ; étapes 1-4 avec pastilles « Done » vertes et « Pending » grises, roue de chargement sur l'étape 3. Au-dessus, une vague sinusoïdale de ≈ 24 points dont le remplissage cycle (plein, gris, contour). Légende « [ Same CSV import. Same 7-step wizard. Since 2014. ] », « Since 2014. » en rouge.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie vers le haut puis trame qui naît du centre",
+      "name_en": "echo lift-out into radial halftone build",
+      "t": "0:09.95-0:11.0",
+      "frames": "f597-f660",
+      "fps": 60,
+      "mechanics": "La carte monte et s'efface en 5 im avec copies d'écho (f597-f601), 7 im de vide (f602-f608), puis un premier point au centre f609 ; les points poussent du centre vers les bords (décalage radial ≈ 1 im par anneau), d'abord en ellipse puis en grille ≈ 26 × 13. Effet de demi-teinte (halftone) : points plus petits vers les bords. Une bande horizontale vide au centre accueille le texte.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f599.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grille de points comme jeu de données",
+      "name_en": "dot-matrix as dataset",
+      "t": "0:10.15-0:15.0",
+      "frames": "f609-f900",
+      "fps": 60,
+      "mechanics": "Points pleins = contacts (« Thousands of contacts on your list. »). 12,4-13,3 s : ≈ 80 % basculent au hasard en anneaux (contour seul) pendant que « 80% » s'écrit en rouge (« 80% of them never open an email. »). 13,9-14,6 s : les anneaux deviennent rouges, les pleins rouge foncé (« You still pay for every single one. », fin en rouge). f900 : la grille tombe d'un coup à ≈ 40 % d'opacité rose, puis sort. Texte à ≈ 2,5 % de la hauteur dans la bande centrale.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Colonne de prix qui défile d'un cran",
+      "name_en": "price slot-column step scroll",
+      "t": "0:15.4-0:17.5",
+      "frames": "f923-f1050",
+      "fps": 60,
+      "mechanics": "Six valeurs empilées (−$49, −$89, −$149, −$228, −$328, −$612 « /mo ») ; la valeur active est noire (≈ 12 % de la hauteur), les voisines grises #C8C5C0 (≈ 10 %). Chaque pas : la colonne monte d'une ligne (≈ 15 % de la hauteur) en 4-5 im (f950-f954, f1000-f1004), avec 3-4 copies verticales fantômes, arrêt sec sans dépassement. Cadence 50 im (0,83 s). La dernière valeur −$612 passe au rouge #E5281E, entourée d'un fin anneau rose (≈ 20 % de la hauteur).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f953.jpg, microM-006-move-f1003.jpg",
+      "illus": {
+        "from": 948,
+        "to": 958,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Libellé qui scintille pendant le calcul",
+      "name_en": "loading shimmer on label",
+      "t": "0:15.5-0:17.6",
+      "frames": "f930-f1056",
+      "fps": 60,
+      "mechanics": "« Calculating your bill... » en gris, une zone noire et grasse balaie les lettres de gauche à droite (≈ 1 s par passage), comme un état de chargement. Puis le libellé devient « Your list grew. So did the bill. » avec « list » et « bill » en gras.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f953.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fouet à échos avec entrée superposée",
+      "name_en": "echo whip with overlapping entry",
+      "t": "0:17.92-0:18.17",
+      "frames": "f1075-f1090",
+      "fps": 60,
+      "mechanics": "La colonne de prix et son libellé partent à gauche (≈ 15 % de la largeur par image) avec 3-4 copies roses. Le terminal arrive de la droite sous forme de rectangles gris translucides qui se densifient (#5A5550 → #1B1918, opacité ≈ 30 % → 100 %) en ralentissant ; chevauchement des deux scènes ≈ 3 im (f1080-f1083) ; atterrissage f1088-f1090 entre 10 et 45 % de la largeur. Puis la légende s'écrit dès f1091.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1082.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Terminal d'agent qui tape la demande",
+      "name_en": "agent terminal typing",
+      "t": "0:18.2-0:21.9",
+      "frames": "f1092-f1314",
+      "fps": 60,
+      "mechanics": "Terminal sombre « claude » (≈ 23 % de la largeur, pastilles macOS). « send the launch email to my hot leads » tapé à ≈ 38 caractères/s (≈ 1,6 im par caractère), curseur bloc. Ligne d'état grise « Connecting to your email tool... ». Fenêtre « Email tool v6.2 » délavée (beige, faible contraste = logiciel vieillissant) qui glisse de la droite ; ligne pointillée tracée entre les deux ; un point rouge voyage dessus (21,3-21,9 s). Texte de terminal ≈ 1 % de la hauteur : illisible sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glitch d'erreur : secousse et dédoublement",
+      "name_en": "error glitch shake",
+      "t": "0:22.00-0:22.17",
+      "frames": "f1320-f1330",
+      "fps": 60,
+      "mechanics": "10 im de secousse horizontale globale (± 1 à 2 % de la largeur), images doublées sur la légende et les fenêtres, tranches noires qui dépassent des bords du terminal. Le texte passe en rouge « Error: no API access. » dès f1322 ; « No MCP. No CLI. No agent support. » en gris f1344. Version légère (± 0,5 %, légende doublée) reprise f1490-f1499 comme anticipation avant « well ».",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-008-cut-f1500.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pastille croix rouge avec ondes radar",
+      "name_en": "error badge with radar ping",
+      "t": "0:22.03-0:22.42",
+      "frames": "f1322-f1345",
+      "fps": 60,
+      "mechanics": "Cercle rouge #E5281E (≈ 5 % de la hauteur) à croix blanche qui apparaît au milieu de la ligne pointillée ; deux anneaux concentriques s'élargissent (rayon ×1 → ×2,5 en ≈ 20 im) en s'effaçant ; la ligne pointillée passe au rouge. Lisible à toute taille, sans texte.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende entre crochets écrite mot à mot",
+      "name_en": "bracketed caption word-by-word",
+      "t": "0:04.08-0:22.53",
+      "frames": "f245-f1352",
+      "fps": 60,
+      "mechanics": "Légendes centrées en haut, ≈ 2 % de la hauteur, encadrées de crochets rouges posés en premier ; chaque mot passe du gris clair au noir en 5-6 im, décalage 2-3 im entre mots. Les mots clés finissent en rouge (« Since 2014. », « even talk to them. »). Au changement, l'ancienne légende se dédouble pendant le glitch puis la nouvelle s'écrit (f1327-f1352). C'est la voix off écrite du film.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f240.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Mot géant qui écrase la scène",
+      "name_en": "giant word smash-in",
+      "t": "0:25.00-0:25.03",
+      "frames": "f1500-f1501",
+      "fps": 60,
+      "mechanics": "« well » (≈ 40 % de la hauteur) entre par la droite en 1 à 2 im avec un fantôme gris et remplace la scène d'interface d'une image à l'autre. Le mot reste ensuite calé contre le bord gauche, le « w » légèrement rogné. Effet de rupture fort après 2 s de maintien.",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f1500.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Points de suspension un par un, le dernier est la balle",
+      "name_en": "ellipsis beat with motif dot",
+      "t": "0:25.17-0:26.3",
+      "frames": "f1510-f1578",
+      "fps": 60,
+      "mechanics": "Premier point f1510 (gris → noir en 3 im, léger grossissement), deuxième ≈ 0,25 s plus tard, troisième = la sphère rouge brillante (≈ 2 × plus grosse) ≈ 0,5 s après. Le rythme de l'ellipse fait l'hésitation comique avant le pivot « now it can. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1500.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom éclair vers le centre",
+      "name_en": "snap zoom-out to center",
+      "t": "0:26.35-0:26.53",
+      "frames": "f1581-f1592",
+      "fps": 60,
+      "mechanics": "« well... » passe d'≈ 100 % à 22 % de sa taille en 11 im, recentré, avec 3 copies d'écho et une courbe expo (grands pas f1583-f1587, petits pas ensuite). Puis « now » monte d'une ligne de masque en 5 im (f1597-f1601), « it » et « can. » (rouge) suivent à ≈ 10 im d'écart.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1583.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La balle devient l'icône de l'app",
+      "name_en": "sphere-to-app-icon morph reveal",
+      "t": "0:27.50-0:28.60",
+      "frames": "f1650-f1716",
+      "fps": 60,
+      "mechanics": "Le point rouge roule sur « now » de gauche au centre en grossissant ×1,5 pendant que le texte pâlit (f1650-f1680) puis disparaît (f1683). Sphère centrée (≈ 6 % de la hauteur) f1683 ; éclat de 12 à 16 traits radiaux noirs et rouges f1686 ; grossissement ×1,4 puis morphose sphère → carré arrondi (rayon d'angle ≈ 25 %) en ≈ 6 im (f1689-f1695) ; un fin anneau rose s'élargit de ×1,2 à ×3 en ≈ 35 im avec des particules qui dérivent ; le « L » se trace : trait vertical f1701-f1710, puis horizontal f1713-f1716.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 1680,
+        "to": 1716,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole qui sort de derrière l'icône",
+      "name_en": "wordmark slide-out from behind icon",
+      "t": "0:28.85-0:30.0",
+      "frames": "f1731-f1800",
+      "fps": 60,
+      "mechanics": "« umail » glisse vers la droite depuis l'arrière de l'icône, flou et en écho, en ≈ 12 im (f1731-f1743) ; l'icône se décale de ≈ 8 % vers la gauche pour rééquilibrer ; le « L » ferme le nom → « Lumail » (icône ≈ 15 % de la hauteur, mot ≈ 12 %). Le slogan monte dessous mot à mot (29,5-30,0 s), « actually run. » en rouge.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Sphère rouge brillante, seul objet en volume",
+      "name_en": "glossy sphere accent",
+      "t": "0:02.3-0:28.3",
+      "frames": "f138-f1698",
+      "fps": 60,
+      "mechanics": "Dégradé radial (#FF6A55 en haut à gauche → #E5281E → #A8150D en bas), reflet spéculaire, halo rouge ≈ 1,5 × le rayon. Elle joue successivement le point de « Email. », le point de « 2014 », le troisième point de « well... », la puce de « now it can. », puis devient l'icône. Seul élément en volume dans un monde plat : l'œil la suit.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f196.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Le logo devient le moyeu d'un schéma",
+      "name_en": "logo shrinks into hub diagram",
+      "t": "0:30.9-0:34.9",
+      "frames": "f1854-f2094",
+      "fps": 60,
+      "mechanics": "Le logo et le slogan pâlissent, l'icône rétrécit à ≈ 8 % de la hauteur et devient le centre. Titre « Plug in the agent you already use. » (≈ 5 %, « already » en rouge). Quatre pastilles blanches (Claude Code, Codex, ChatGPT, Cursor) apparaissent une à une, décalage ≈ 0,3 à 0,5 s, reliées par des courbes de Bézier fines ; des paquets rouges circulent dans les deux sens ; halo d'anneaux pâles autour du moyeu ; pastille sombre « 126 tools · MCP · API · CLI » en mono avec nombre qui roule.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Requête → points rouges → flux vers l'action",
+      "name_en": "query result particles into action pill",
+      "t": "0:35.03-0:39.0",
+      "frames": "f2102-f2340",
+      "fps": 60,
+      "mechanics": "Carte de terminal clair « claude · lumail · 126 tools » en fondu (≈ 6 im) ; à droite, triangle de points construit colonne par colonne (≈ 1 à 2 im par colonne, f2108-f2130). Requête « who clicked pricing but never bought? » tapée ; appels d'outils en mono avec puces vertes (« query_subscribers → 312 subscribers », « bulk_add_tags », « add_subscriber_to_workflow »). « 312 found » en rouge : ≈ 40 % des points rougissent, les autres grisent ; étiquette « hot-lead » ; les points rouges filent et convergent dans la pastille noire « Workflow: Objections » (≈ 0,5 s, 37,8-38,3 s) qui reçoit une coche rouge.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, microM-010-move-f2099.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui montent d'une ligne de masque",
+      "name_en": "masked word rise",
+      "t": "0:39.07-0:40.5",
+      "frames": "f2344-f2430",
+      "fps": 60,
+      "mechanics": "Chaque mot monte de sous une ligne de découpe (≈ 30 % de sa hauteur) avec fondu, en 4-5 im ; décalage 4 im entre mots (« Pay » f2344, « for » f2348, « emails » f2352, « you » f2357). Seconde ligne en rouge « Never for contacts you store. » ≈ 0,8 s plus tard. Texte ≈ 7 % de la hauteur, interlettrage serré.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f2340.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui grimpe contre prix figé à 0 $",
+      "name_en": "rolling counter vs locked zero",
+      "t": "0:40.4-0:42.0",
+      "frames": "f2424-f2520",
+      "fps": 60,
+      "mechanics": "Deux cartes blanches côte à côte : « Contacts stored » 0 → 250,000 en ≈ 1,5 s (roulement par chiffre avec dédoublement, comme les années) suivi d'un « + » ; « List-size fee » $0 en rouge avec un cadenas, immobile. Le contraste mobile/figé porte l'argument tarifaire. Mention grise « 3,000 emails/month free. Then from $20 for 40K. »",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, microM-012-cut-f2548.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom traversant puis logo qui sort du flou",
+      "name_en": "zoom-through to blur-in logo",
+      "t": "0:42.37-0:42.67",
+      "frames": "f2542-f2560",
+      "fps": 60,
+      "mechanics": "La scène grossit ×1 → ×3-4 en ≈ 8 im (f2542-f2550) avec échos et vire au rose pâle en s'effaçant ; le logo apparaît flou (≈ 10 px) et transparent, net en ≈ 10 im (f2551-f2560) ; « umail » d'abord, le « L » du nom en dernier (f2560).",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f2548.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Appel à l'action avec curseur qui clique",
+      "name_en": "CTA with cursor click",
+      "t": "0:43.3-0:45.1",
+      "frames": "f2598-f2706",
+      "fps": 60,
+      "mechanics": "Le logo remonte de ≈ 5 % de la hauteur, le bouton rouge « Start free at lumail.io » apparaît dessous, un curseur macOS entre par le bas à droite et se pose sur le bouton vers 44,0 s (mouvement f2631-f2638), puis « 3,000 emails/month free · no card » en gris. Plan final tenu ≈ 1,1 s.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit problème → agitation → pivot → preuve",
+      "name_en": "problem-agitate-solve SaaS arc",
+      "t": "0:00-0:45.1",
+      "frames": "f0-f2706",
+      "fps": 60,
+      "mechanics": "0-15 s : constat daté (outils figés depuis 2014, contacts qui n'ouvrent pas) ; 15-25 s : agitation (facture qui grimpe, agents qui ne peuvent pas se connecter, erreur) ; 25-27,5 s : pivot comique « well... now it can. » ; 28-30,7 s : révélation ; 31-39 s : preuve (intégrations, requête réelle) ; 39-42 s : promesse tarifaire ; 42-45 s : appel. Chaque scène porte une seule idée et une seule phrase.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un seul rouge, réservé aux mots qui coûtent ou qui sauvent",
+      "name_en": "single accent color semantics",
+      "t": "0:00-0:45.1",
+      "frames": "f0-f2706",
+      "fps": 60,
+      "mechanics": "#E5281E n'apparaît que sur : « email. », « 80% », « every single one », « −$612 », « Since 2014. », « even talk to them. », la croix d'erreur, « can. », l'icône, « actually run. », « already », « Never for contacts you store. », « $0 » et le bouton. Tout le reste est crème, noir ou gris : le rouge guide la lecture.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture de 1 à 2 s",
+      "name_en": "reading holds",
+      "t": "0:22.68-0:24.67",
+      "frames": "f1361-f1480",
+      "fps": 60,
+      "mechanics": "18 maintiens ≥ 0,4 s (39 % de la durée selon la mesure). Le plus long : 2,0 s sur l'écran d'erreur où seul le curseur clignote ; d'autres de 1 à 1,5 s (26,55-27,98 s, 29,53-30,63 s, 33,68-34,83 s). Utiles pour lire les petites interfaces, mais contraires à la règle « quelque chose bouge toutes les 0,5 à 1 s ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Seule entrée : l'URL du site. Claude en a tiré le nom (Lumail), la promesse (payer les envois, pas les contacts), les chiffres (126 outils, 3 000 e-mails gratuits, 20 $ pour 40K) et la palette crème/rouge. Une URL riche remplace un brief : le fond du film est juste."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Show what an incredible motion designer you are » pousse à aligner les gestes de savoir-faire (échos, compteurs, morphose, glitch, zoom traversant) : la vidéo est autant une démonstration de techniques qu'une pub, d'où sa longueur."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure demandée : le modèle a construit seul un arc problème → agitation → pivot → preuve → prix → appel en 9 scènes, et a triplé la durée (45 s au lieu des 15 s demandées). La contrainte de durée d'une ligne n'a pas tenu face à la richesse du site."
+    },
+    {
+      "kind": "build",
+      "insight": "Pile non indiquée ; rendu 60 fps sans flou de mouvement réel : les traînées sont des copies décalées (pile HTML/GSAP ou Remotion probable). Les timings suivent un pas interne de 0,25 s et des cadences fixes (8 im par année, 50 im par prix)."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le prompt ne parle ni de musique ni de tempo : la bande-son à 120 BPM a été posée après coup et les départs tombent ≈ 7 im après les croches. Pour un film calé, il faut donner le BPM ou la piste et demander les coupes sur les temps."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien d'interdit : on retrouve les tics de promo SaaS IA (glitch d'erreur, curseur qui clique, terminal d'agent), ici bien dosés mais génériques. Une liste d'interdits aurait poussé à d'autres preuves visuelles."
+    }
+  ],
+  "steal": [
+    "Fil rouge : faire voyager un même point (ponctuation, puce, balle) de plan en plan, puis le changer en logo à la révélation (sphère → carré arrondi, 6 im).",
+    "Compteur qui roule chiffre par chiffre : seul le chiffre qui change bouge, le nouveau monte par le bas, 8 im par pas ; ralentir avant la valeur clé.",
+    "Colonne de valeurs à crans : active noire, voisines grises, un cran en 4-5 im avec traînée verticale ; la dernière valeur passe au rouge avec un anneau.",
+    "Grille de points comme jeu de données : plein = contact, contour = inactif, rouge = payé ; le texte vit dans une bande vide au centre.",
+    "Pivot comique en typo XXL : mot géant qui écrase la scène en 1-2 im, points de suspension un par un, puis dézoom éclair et réponse en rouge."
+  ],
+  "flaws": [
+    "45 s au lieu de 15 ; maintiens de 1 à 2 s (écran d'erreur 22,7-24,8 s) qui cassent le « rien ne s'arrête ».",
+    "Musique posée : aucune coupe ni impact sur les croches à 120 BPM ; les transitions tombent même entre les temps.",
+    "Échos trop espacés : à la sortie du schéma, l'icône L apparaît en double (f2098-f2100) au lieu d'un flou de mouvement.",
+    "Texte d'interface à ≈ 1 % de la hauteur dans le terminal et les cartes : illisible sur téléphone.",
+    "Mots héros rognés par le bord gauche (« nail. », « well ») : voulu, mais rejeté par le goût cible."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui pour 0:27,5-0:30 (balle → icône → logo) et les transitions à échos : mécanique fine, à 60 fps natifs, directement reproductible en GSAP. Sans intérêt pour la synchro musicale (musique posée)."
+  }
+}

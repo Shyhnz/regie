@@ -1,0 +1,340 @@
+{
+  "slug": "tankazunori0914-0fc886",
+  "title": "What day is it",
+  "handle": "@tankazunori0914",
+  "family": "typo",
+  "craft": 4,
+  "craft_reason": "Synchro musicale exemplaire (sections sur les premiers temps, balayage en noires puis croches, flash sur le temps fort) et données exactes ; habillage HUD et glitch RGB très génériques, quelques tenues longues.",
+  "summary": "Réponse en 30 s à « on est quel jour ? » : la question se tape à la croche, un calendrier se construit sur le premier temps, un cadre orange balaie les jours comme une roulette (noires, croches, ralenti), verrouille FRI, puis surexposition et FRIDAY claque sur le temps fort. Suivent les preuves (semaine ISO, jour 275/365) et la réponse en japonais.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne en japonais : « On est quel jour déjà ? Dis-le-moi en motion graphics cool de 30 s avec BGM (donne tout). » Seules contraintes : 30 s, musique de fond, ton « cool ».",
+    "Claude a tout décidé : date réelle 2026.10.02, grille à 120 BPM affichée (BAR/BEAT), roulette sur le calendrier, flash + FRIDAY extrudé, panneau ISO week et jour de l'année, bilingue anglais-japonais, palette noir-crème-orange.",
+    "Le « BGM付き » a suffi pour que Claude bâtisse toute l'animation sur la grille musicale. Rien ne cadrait le style : il retombe sur le HUD de viseur et le glitch RGB. Préciser une direction graphique et une durée maximale de tenue."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0F100D", "role": "fond noir chaud"},
+      {"hex": "#2D1B13", "role": "vignette radiale rouille au centre"},
+      {"hex": "#EFEDE2", "role": "texte principal crème, flash plein cadre"},
+      {"hex": "#E5532B", "role": "accent orange : cible, cadre, extrusion, barre, réponse finale"},
+      {"hex": "#1E1E1A", "role": "textes géants en défilement de fond"},
+      {"hex": "#8A8A82", "role": "mono secondaire, dates, labels gris"}
+    ],
+    "type": "Grotesque condensée très grasse en capitales (Barlow Condensed ou Big Shoulders, probable) : FRIDAY 32 % de hauteur. Gothique japonaise grasse (Noto Sans JP probable). Mono espacée ≈2 % pour HUD et labels.",
+    "texture": "Grille fine à ≈5 % d'opacité, vignette radiale rouille, glow orange autour du cadre de sélection, extrusion 2,5D en ombres orange empilées sous FRIDAY, aberration chromatique rouge/cyan et traînée floue sur les impacts, défocalisation sur les entrées après flash.",
+    "style": "HUD technique sombre, typographie bilingue",
+    "coherence": "Système tenu : trois couleurs, deux familles + mono, un orange réservé à la cible (cadre, jour suivant, barre, réponse). Le HUD fixe (coins de viseur, WEEKDAY.CHECK // JST, 120 BPM, BAR/BEAT, métronome à 4 tirets, timecode) relie les quatre scènes. Ce qui affaiblit : le glitch RGB et la traînée floue sur FRIDAY sortent du langage sec du reste."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, grille commençant à 0,515 s, mesures de 4 temps = 2 s ; le HUD affiche lui-même « BAR 04 · BEAT 3 » et un métronome à 4 tirets. Structure en 15 mesures : mes. 1-3 (0-6 s) question, mes. 4-7 (6-14 s) balayage, mes. 8-10 (14-20 s) FRIDAY, mes. 11-13 (20-26 s) preuves, mes. 14-15 (26-30 s) réponse. Les deux coupes (f1200, f1560) tombent à 1 image avant le temps (barre bleue à f1201 et f1561). Le balayage avance d'un jour par noire de 6,5 à 9,5 s, par croche de 9,5 à 11 s, puis ralentit (noires, puis 0,5 s, verrouillage à 13,5 s). La mesure automatique compte 23 « maintiens » (65 %) mais la plupart sont les pauses de 0,4 s entre deux pas du balayage. Vraies tenues : 2,8-5,5 s (question complète, seul « SCANNING CALENDAR… » se tape et le texte de fond défile), 15-20 s (FRIDAY avec pulsation toutes les 2 temps et défilements), 20,3-23 s et 27,6-29,5 s.",
+    "timeline": [
+      {"t": "0:00-0:01.0", "what": "Écran noir à grille, HUD de viseur, curseur orange qui clignote ; « > QUERY 001 » en mono orange à 0,5 s", "technique": "HUD de viseur + curseur"},
+      {"t": "0:01.0-0:03.0", "what": "« 今日は、何曜日？ » se tape à raison de deux caractères par temps (croches), curseur orange vertical", "technique": "frappe à la croche"},
+      {"t": "0:03.5-0:05.6", "what": "« SCANNING CALENDAR … » en mono gris sous la question ; WHAT DAY IS IT géant quasi invisible défile en fond", "technique": "défilement de fond + sous-titre mono"},
+      {"t": "0:05.63-0:06.0", "what": "La question se dédouble en RGB et se tranche (f338-f348), puis s'éteint (f351-f357) ; f360 noir", "technique": "sortie glitch"},
+      {"t": "0:06.02-0:06.4", "what": "Sur le 1er temps de la mesure 4 (entrée de la musique pleine) : 7 cellules MON→SUN arrivent en cascade, 3 im d'écart, cadre orange sur MON", "technique": "construction en cascade sur le temps fort"},
+      {"t": "0:06.5-0:09.5", "what": "Le cadre orange saute d'un jour par temps (noires) ; le jour suivant passe en orange juste avant ; label « SCANNING ▸ WED »", "technique": "balayage roulette en noires"},
+      {"t": "0:09.5-0:11.0", "what": "Deuxième tour en croches (un jour toutes les 0,25 s)", "technique": "accélération du balayage"},
+      {"t": "0:11.0-0:13.0", "what": "Ralenti : tenue sur SUN, retour à MON, puis TUE, WED, THU ; « MATCH • FRI » à 13,0 s", "technique": "décélération de roulette"},
+      {"t": "0:13.5-0:14.0", "what": "FRI verrouillé (« ● LOCKED »), les autres jours s'éteignent ; surexposition progressive jusqu'au crème plein cadre (f840)", "technique": "verrouillage + surexposition"},
+      {"t": "0:14.02-0:14.3", "what": "Sur le 1er temps de la mesure 8 : FRIDAY claque à ≈108 % avec traînée floue et aberration RGB, revient à 100 %, le fond redescend du crème au noir", "technique": "slam sur temps fort"},
+      {"t": "0:14.3-0:20.0", "what": "FRIDAY extrudé orange (32 % de hauteur), FRIDAY — FRIDAY et FRI — 金曜日 défilent en fond ; 金曜日 orange à 15,5 s, « 2026.10.02 / DAY 5 OF 7 » à 16,0 s ; pulsation toutes les 2 temps (probable)", "technique": "titre extrudé + légendes échelonnées"},
+      {"t": "0:20.0-0:22.0", "what": "Coupe sur flash gris (f1200) ; ligne DATE 2026.10.02 FRI sort du flou en ≈14 im", "technique": "flash + mise au point"},
+      {"t": "0:22.0-0:25.5", "what": "ISO WEEK / WEEK 40 (22,0 s) ; DAY OF YEAR : compteur et barre orange montent jusqu'à 275 / 365 et 75,3 % (atterrissage 24,0 s) ; NEXT 明日は、土曜日。 (25,0 s)", "technique": "panneau de données ligne par ligne"},
+      {"t": "0:26.0-0:26.5", "what": "Coupe sur flash gris (f1560) ; « 今日は » sort du flou", "technique": "flash + mise au point"},
+      {"t": "0:26.52-0:27.6", "what": "金曜日。 orange (≈27 % de hauteur) sort du flou en se resserrant (f1591-f1599) ; soulignement crème tracé de gauche à droite (f1627-f1650) ; FRIDAY · 2026.10.02 en mono espacée", "technique": "réponse finale + soulignement"},
+      {"t": "0:27.6-0:30.0", "what": "Tenue ≈1,9 s puis fondu au noir sur le dernier temps (29,5-30,0 s)", "technique": "fin en fondu"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage image par image (planches microscope + extra, grille 120 BPM à 0,515 s, temps aux images ≈31+30k) : 10 gestes clés sur 12 à ±2 im d'un temps ou demi-temps (hasard ≈33 %) : construction du calendrier f361 (temps), pas du cadre f391, f661, f691, f706 (demi-temps), f721, flash/slam FRIDAY f840-f841 (temps, barre bleue sous f841), coupes f1200 et f1560 (1 im avant les barres bleues f1201 et f1561, point vert d'attaque juste après), 金曜日。 f1591 (temps). Hors grille : le départ du glitch f338 (double-croche probable) et le soulignement f1627 (6 im après le temps). Échantillonnage overview : à chaque 0,5 s le jour suivant est déjà orange, le saut du cadre suit le temps de 0 à 2 im. Indice automatique : départs/demi-temps R = 0,949, p = 1,6e-6.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "pulsations", "flashs", "texte", "drop"],
+    "style_match": "Électro enjouée à 120 BPM : pas secs, sauts de cadre instantanés et flashs sur les temps forts. La mécanique de la roulette colle à cette pulsation régulière.",
+    "how_built": "Le prompt ne demande qu'une BGM ; Claude a manifestement composé la vidéo sur une grille de 120 BPM en mesures de 2 s (le HUD affiche « 120 BPM », le numéro de mesure et de temps, et un métronome à 4 tirets). Bande-son probablement générée ou choisie au même tempo dans le même projet HyperFrames, avec une montée d'énergie à la mesure 4 (≈6,0-6,3 s, +13 dB) qui coïncide avec l'arrivée du calendrier. La grille commune explique la précision."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Question → recherche → révélation → preuves → réponse, découpé en mesures",
+      "name_en": "Query-search-reveal-proof-answer arc on bar boundaries",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Cinq actes calés sur les premiers temps : question (mes. 1-3, 6 s), balayage (mes. 4-7, 8 s), FRIDAY (mes. 8-10, 6 s), preuves (mes. 11-13, 6 s), réponse japonaise (mes. 14-15, 4 s). Le suspense vient du balayage qui ralentit ; la réponse est donnée deux fois (anglais puis japonais) avec un détour par les données pour la crédibilité.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sections lancées sur le premier temps de la mesure",
+      "name_en": "Section changes on bar downbeats",
+      "t": "0:06.02 / 0:14.02 / 0:20.0 / 0:26.0",
+      "frames": "f361, f841, f1200, f1560",
+      "fps": 60,
+      "mechanics": "Chaque changement de scène tombe sur le temps 1 d'une mesure de 2 s : calendrier f361 (temps à f361), FRIDAY f841 (barre bleue sous f841), coupes f1200 et f1560 une image avant les barres bleues f1201/f1561. L'arrivée du calendrier coïncide avec l'entrée pleine de la musique (+13 dB vers 6,0-6,3 s). Le spectateur sent la structure musicale sans la voir.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f1200.jpg, microM-003-cut-f1560.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe de la question à la croche",
+      "name_en": "Eighth-note typing",
+      "t": "0:01.0-0:03.0",
+      "frames": "f60-f180",
+      "fps": 60,
+      "mechanics": "« 今日は、何曜日？ » apparaît à raison d'environ deux caractères par temps (un par croche de 0,25 s) : 今 à 1,0 s, 今日は à 1,5 s, 今日は、何 à 2,0 s, …曜日 à 2,5 s, ？ à 3,0 s. Caractères instantanés, pas de fondu ; curseur orange vertical ≈11 % de hauteur collé à droite. Texte crème ≈11 % de hauteur, centré.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f60-f180)"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de viseur qui affiche la mesure et le temps",
+      "name_en": "Viewfinder HUD with live bar/beat counter",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Coins de viseur à ≈2 % des bords, « WEEKDAY.CHECK // JST » en haut à gauche, « 2026.10.02 · 120 BPM » en haut à droite, « BAR 04 · BEAT 3 » en bas à gauche, timecode en bas à droite, métronome central de 4 tirets dont un s'allume par temps. Mono ≈2 % de hauteur, gris et crème. Grille de fond fine. Rend la grille musicale lisible, mais l'esthétique de viseur technique est un réflexe IA.",
+      "verdict": "adapter",
+      "evidence": "images 4,5 s, 7,0 s, 24,5 s pleine résolution"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Textes géants en défilement quasi invisible",
+      "name_en": "Low-contrast giant marquee text",
+      "t": "0:04.0-0:20.0",
+      "frames": "f240-f1199",
+      "fps": 60,
+      "mechanics": "WHAT DAY IS IT (4,0-6,0 s) puis deux bandeaux FRIDAY — FRIDAY (haut, ≈17 % de hauteur) et FRI — 金曜日 — FRI (bas) en grotesque condensée #1E1E1A sur #0F100D (contraste ≈8 %), qui défilent lentement en sens opposés (probable). Donne de la texture aux tenues sans voler la lecture.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg (f240-f330), image 16,0 s pleine résolution"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie glitch de la question puis noir sur le temps",
+      "name_en": "Glitch-out to black before the downbeat",
+      "t": "0:05.63-0:06.0",
+      "frames": "f338-f360",
+      "fps": 60,
+      "mechanics": "La question se dédouble en rouge/cyan et se découpe en tranches horizontales décalées de ≈1-2 % (f339-f348, ≈10 im), revient nette, puis s'estompe en ≈6 im (f351-f357) ; f360 est vide, une image avant le temps fort f361. Le départ f338 tombe sur une double-croche, pas sur un temps.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg (f336-f360)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Construction du calendrier en cascade sur le temps fort",
+      "name_en": "Cascading calendar build on the downbeat",
+      "t": "0:06.02-0:06.40",
+      "frames": "f361-f384",
+      "fps": 60,
+      "mechanics": "Sept cellules (≈11 % de largeur × 35 % de hauteur, bord fin gris) arrivent de gauche à droite avec 3 im d'écart (0,05 s) : MON f363 avec son cadre orange, TUE f366, WED f369, THU f372, FRI f375, SAT f378, SUN f381 ; chacune entre par un léger glissement depuis la droite + fondu (≈6 im), un filet horizontal court devant. En-tête WEEK 40 · 2026.09.28 — 10.04 en mono.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f360-f384)",
+      "illus": {"from": 360, "to": 396, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Balayage roulette : noires, croches, ralenti, verrouillage",
+      "name_en": "Beat-locked roulette scan with acceleration and slowdown",
+      "t": "0:06.5-0:13.5",
+      "frames": "f391-f811",
+      "fps": 60,
+      "mechanics": "Le cadre orange lumineux saute d'une cellule à la suivante en ≤3 im (pas de glissement) : une noire par jour de 6,5 à 9,5 s (MON→SUN), une croche par jour de 9,5 à 11,0 s, puis tenue d'un temps sur SUN, retour à MON (f691), TUE (f706, demi-temps), WED (f721), THU (12,5 s), FRI désigné à 13,0 s, verrouillé à 13,5 s (f811, temps 4 de la mesure 7). Sauts mesurés à 0-2 im du temps : f391, f661, f691, f706, f721. Le schéma accélération puis ralentissement reproduit une roue de loterie sur la musique.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f654-f726), extra-01.jpg (f387-f396), overview-02.jpg",
+      "illus": {"from": 654, "to": 726, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Annonce de la cible suivante en orange avant le saut",
+      "name_en": "Next-target color anticipation",
+      "t": "0:06.5-0:13.0",
+      "frames": "f390-f780",
+      "fps": 60,
+      "mechanics": "Le texte du jour suivant passe en orange #E5532B une ou deux images avant que le cadre y saute (f660 SUN orange, cadre encore sur SAT ; f663 cadre sur SUN). L'œil est déjà sur la bonne case quand le cadre arrive : anticipation de couleur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f657-f663)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Verrouillage : les autres jours s'éteignent",
+      "name_en": "Lock state with dimmed alternatives",
+      "t": "0:13.0-0:13.7",
+      "frames": "f780-f822",
+      "fps": 60,
+      "mechanics": "Label « MATCH • FRI » à 13,0 s puis « ● LOCKED » à 13,5 s ; FRI garde son cadre et son glow, les six autres cellules tombent à ≈30 % d'opacité. Un état clair avant la révélation.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg (f780-f810), microM-001-move-f843.jpg (f828)"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Surexposition progressive jusqu'au flash crème sur le temps fort",
+      "name_en": "Overexposure build to a downbeat white flash",
+      "t": "0:13.7-0:14.0",
+      "frames": "f822-f840",
+      "fps": 60,
+      "mechanics": "L'image verrouillée blanchit progressivement (fond noir → gris clair, ≈18 im) puis f840 est un aplat crème #F0EEE2 plein cadre, une image avant la barre bleue f841. Fonctionne comme une montée (riser) visuelle qui se résout sur le temps 1 de la mesure 8.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f843.jpg (f828-f840)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "FRIDAY claque sur le temps (slam avec traînée et aberration)",
+      "name_en": "Downbeat slam with zoom trail and chromatic split",
+      "t": "0:14.02-0:14.4",
+      "frames": "f841-f863",
+      "fps": 60,
+      "mechanics": "À f841 FRIDAY apparaît à ≈108 % avec une copie floue plus grande derrière (traînée de zoom) et un décalage rouge/cyan ≈1,5 % de largeur ; retour à 100 % en ≈10 im (ease-out), traînée disparue à f849 ; le fond redescend du gris clair au noir en ≈10 im ; le tremblement RGB persiste jusqu'à ≈f863. L'impact tombe pile sur le temps, mais la texture glitch est générique.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f843.jpg",
+      "illus": {"from": 826, "to": 862, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre condensé extrudé par ombres orange empilées",
+      "name_en": "Stacked-shadow 2.5D extrusion",
+      "t": "0:14.3-0:20.0",
+      "frames": "f858-f1199",
+      "fps": 60,
+      "mechanics": "FRIDAY en grotesque condensée très grasse crème, 32 % de hauteur, 63 % de largeur ; sous lui une pile de copies orange décalées en bas à droite (≈8 couches, profondeur totale ≈2 % de largeur) qui foncent vers le fond. Volume rétro sans 3D.",
+      "verdict": "adapter",
+      "evidence": "image 16,0 s pleine résolution"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pulsation du titre tous les deux temps",
+      "name_en": "Half-bar title pulse",
+      "t": "0:16.0-0:19.0",
+      "frames": "f960-f1140",
+      "fps": 60,
+      "mechanics": "Pics d'énergie brefs et réguliers à 16,0, 17,0, 18,0 et 19,0 s (temps 1 et 3) sur rhythm.jpg ; FRIDAY est légèrement plus large à 16,0 et 18,0 s qu'à 16,5 et 18,5 s sur les planches : pulsation d'échelle ≈2-3 % qui retombe (probable). Garde la tenue de 5 s vivante.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légendes bilingues échelonnées sur les temps",
+      "name_en": "Beat-staggered bilingual captions",
+      "t": "0:15.5-0:16.0",
+      "frames": "f930-f960",
+      "fps": 60,
+      "mechanics": "金曜日 en orange gras (≈10 % de hauteur) arrive au temps 15,5 s, puis à droite d'un filet vertical « 2026.10.02 / DAY 5 OF 7 » en mono espacée au temps suivant (16,0 s). Une information par temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg (f900-f960)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash gris puis mise au point sur le temps fort",
+      "name_en": "Haze flash into rack focus",
+      "t": "0:20.0-0:20.25 / 0:26.0-0:26.25",
+      "frames": "f1200-f1215, f1560-f1575",
+      "fps": 60,
+      "mechanics": "Coupe sur une image gris clair (voile plein cadre ≈55 % d'opacité, f1200 et f1560), une image avant le temps ; le voile se dissipe en ≈15 im pendant que le texte du nouveau plan passe d'un flou fort à net (défocalisation → mise au point). Même transition aux deux changements de section.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f1200.jpg, microM-003-cut-f1560.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Panneau de preuves ligne par ligne",
+      "name_en": "Line-by-line proof table",
+      "t": "0:20.0-0:25.5",
+      "frames": "f1200-f1530",
+      "fps": 60,
+      "mechanics": "Tableau à filets fins : labels orange en mono espacée à gauche (DATE, ISO WEEK, DAY OF YEAR, NEXT), valeurs en grotesque condensée crème ≈11 % de hauteur à 25 % de largeur. Une ligne par temps fort ou demi-mesure : 20,0 s, 22,0 s, ≈23,0 s, 25,0 s. Données exactes (2 octobre 2026 = vendredi, semaine ISO 40, jour 275).",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg, image 24,5 s pleine résolution"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur et barre de progression liés, atterrissage sur le temps",
+      "name_en": "Linked counter and progress bar",
+      "t": "0:23.0-0:24.0",
+      "frames": "f1380-f1440",
+      "fps": 60,
+      "mechanics": "Le nombre roule jusqu'à 275 / 365 pendant que la barre orange se remplit jusqu'à 75,3 % (à 23,5 s : 264 et 72,4 %, donc ralentissement ease-out) ; arrivée à 24,0 s, temps 1 de la mesure 13.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg (f1410), overview-05.jpg (f1440)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Réponse finale : mise au point et resserrement sur le temps",
+      "name_en": "Focus-in scale-down final answer",
+      "t": "0:26.52-0:26.7",
+      "frames": "f1591-f1602",
+      "fps": 60,
+      "mechanics": "金曜日。 en orange #E5532B (≈27 % de hauteur) apparaît flou et à ≈108 % (f1593), devient net et revient à 100 % en ≈8 im (f1599), sur le temps f1591. « 今日は » crème au-dessus, ≈9 % de hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f1590-f1602)",
+      "illus": {"from": 1588, "to": 1656, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Soulignement tracé de gauche à droite",
+      "name_en": "Left-to-right underline draw",
+      "t": "0:27.1-0:27.5",
+      "frames": "f1627-f1650",
+      "fps": 60,
+      "mechanics": "Filet crème de ≈1 % de hauteur tracé sous la réponse en ≈23 im (ease-in-out), suivi de « FRIDAY · 2026.10.02 » en mono espacée gris (fondu ≈8 im). Départ 6 im après le temps : seul geste nettement hors grille.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg (f1626-f1656)"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin en fondu au noir sur le dernier temps",
+      "name_en": "Fade to black on the last beat",
+      "t": "0:29.5-0:30.0",
+      "frames": "f1770-f1799",
+      "fps": 60,
+      "mechanics": "Après ≈1,9 s de tenue, l'ensemble s'assombrit sur le temps 4 de la mesure 15 jusqu'au noir total f1799. Fin propre mais sans geste final ni boucle.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg (f1770), overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Système bilingue anglais condensé / japonais gothique / mono",
+      "name_en": "Bilingual EN/JP type system",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Anglais en grotesque condensée très grasse (jours, FRIDAY, chiffres), japonais en gothique grasse (question, 金曜日), mono espacée pour tout l'appareil technique. Chaque cellule du calendrier empile abréviation anglaise (≈9 %), kanji (≈6 %) et date mono (≈2 %).",
+      "verdict": "reprendre",
+      "evidence": "image 7,0 s pleine résolution"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un seul orange pour la cible",
+      "name_en": "Single accent color for the target",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Noir chaud #0F100D avec vignette rouille, crème #EFEDE2 pour le texte, orange #E5532B réservé à ce qui est visé ou répondu (curseur, cadre, jour suivant, barre, extrusion, 金曜日). La réponse finale est le seul grand aplat orange : la couleur porte le sens.",
+      "verdict": "reprendre",
+      "evidence": "images 7,0 s et 28,0 s pleine résolution"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Claude a utilisé la date réelle de la session (2026.10.02) et en a tiré des données exactes (vendredi, semaine ISO 40, jour 275/365, 75,3 %, lendemain samedi) : un prompt d'une ligne peut produire du contenu factuel si la donnée est dans le contexte."},
+    {"kind": "build", "insight": "Demander une BGM a suffi pour que toute la vidéo soit construite sur une grille de 120 BPM en mesures de 2 s, au point que le HUD affiche mesure et temps. Quand Claude contrôle à la fois la musique et l'animation, la synchro est serrée (10 gestes sur 12 à ±2 im)."},
+    {"kind": "direction", "insight": "« かっこいい » (cool) sans référence a donné le style IA par défaut : coins de viseur, grille, labels mono « QUERY 001 / SCANNING », glitch RGB. Il aurait fallu nommer une direction graphique ou interdire le HUD."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a inventé l'arc question → suspense (roulette) → révélation → preuves → réponse, chaque acte commençant sur un temps fort. L'idée de suspense par balayage accéléré puis ralenti vient du modèle."},
+    {"kind": "other", "insight": "« 全力を出してください » (donne tout) se traduit par une accumulation d'effets (défilements, extrusion, glitch, compteur, flashs) plutôt que par plus de finesse sur un seul geste."}
+  ],
+  "steal": [
+    "Construire le film en mesures de 2 s à 120 BPM : chaque section démarre au premier temps, chaque information arrive sur un temps.",
+    "Créer du suspense avec un balayage calé sur la musique : noires, puis croches, puis ralenti, verrouillage sur le temps 4, révélation au temps 1.",
+    "Annoncer la cible en couleur une image avant que le cadre y saute.",
+    "Faire monter une surexposition sur 0,3 s et la résoudre en flash plein cadre exactement sur le temps fort.",
+    "Changer de section par un voile gris d'une image sur le temps, puis mise au point du nouveau texte en 15 im."
+  ],
+  "flaws": [
+    "Habillage HUD de viseur (coins, grille, QUERY 001, SCANNING…) : réflexe IA générique.",
+    "Glitch RGB et traînée floue sur la question et sur FRIDAY : texture cliché qui jure avec le reste.",
+    "Tenues de 2,7 s (question) et 5 s (FRIDAY) où seuls les fonds bougent.",
+    "金曜日。 décentré d'environ 5 % à gauche à cause du point japonais pleine chasse.",
+    "Soulignement final lancé hors grille, alors que tout le reste tombe sur les temps."
+  ],
+  "deep_study": {"worth": true, "why": "Oui : c'est un cas d'école de synchro musique-animation. Étudier image par image le balayage (f391-f811) contre les temps, la surexposition puis le slam (f822-f863) et les coupes-flash (f1200, f1560) donne des règles directement transposables dans HyperFrames."}
+}

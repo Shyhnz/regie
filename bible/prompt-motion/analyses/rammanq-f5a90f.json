@@ -1,0 +1,399 @@
+{
+  "slug": "rammanq-f5a90f",
+  "title": "AllInvestView product promo",
+  "handle": "@rammanq",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système fintech net, chaque scène passe un objet à la suivante (point, logos, courbe) sur une grille 120 BPM ; mais catalogue monotone de 12 × 3 s et textes minuscules.",
+  "summary": "Promo carrée de 42 s pour une app d'investissement : une intro où les mots Stocks, ETFs, Bonds, Options défilent un par temps, puis 12 chapitres numérotés de 3 s (portefeuille, allocation, dividendes, crash 2008, Monte Carlo, frontière efficiente, options, obligations, impôts, mobile). Force : chaque graphique naît de la forme du précédent, tout est calé sur le temps. Faiblesse : gabarit répété, aucune montée, données illisibles.",
+  "prompt_vs_result": [
+    "Le prompt d'une ligne demande une vidéo de motion design dynamique montrant à quel point la plateforme AllInvestView est incroyable, avec « Go all out ». Aucun contenu, durée, format ni musique imposés.",
+    "Claude a tout choisi : 12 fonctionnalités chiffrées, structure 01–12 de 3 s, design clair bleu et nuit, grille 120 BPM, transitions par objet transmis, intro en roulette de mots, carte de fin avec CTA.",
+    "« Go all out » a produit de l'exhaustivité (12 écrans de données) plutôt qu'un spectacle. Il aurait fallu fixer 4–5 messages, un arc avec climax, une taille minimale de texte et une durée par idée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#EDF0F4", "role": "fond clair principal"},
+      {"hex": "#0B1222", "role": "encre des titres, logo"},
+      {"hex": "#2F86C9", "role": "accent : 2e ligne des titres, courbes, point final"},
+      {"hex": "#2C82C3", "role": "fond bleu (dividendes, mobile)"},
+      {"hex": "#0A0E15", "role": "fond nuit (crash, Monte Carlo, options, obligations)"},
+      {"hex": "#22C55E", "role": "gains, point Best Sharpe"},
+      {"hex": "#F06A6A", "role": "pertes, zone de perte"},
+      {"hex": "#F5A019", "role": "segment donut, point « Your mix »"},
+      {"hex": "#1DB97F", "role": "segment donut, aire entre courbes"},
+      {"hex": "#9AA6B2", "role": "grilles, textes secondaires, courbe S&P"}
+    ],
+    "type": "Grotesque néo (Inter Display probable), gras 700–800, casse phrase, interlettrage serré ≈ -3 %. Titres sur 2 lignes ≈ 7 % de la hauteur, 2e ligne bleue, point final. Surtitre numéroté ≈ 1,2 %, capitales espacées. Légendes ≈ 1,8 %.",
+    "texture": "Aplats propres, ombres portées douces sous les puces et cartes, dégradé bleu vers transparent sous la courbe de portefeuille, aucun grain, aucun flou de mouvement, aucune lueur.",
+    "style": "Interface fintech plate, data viz éditoriale",
+    "coherence": "Système très tenu : même gabarit par chapitre (surtitre numéroté, titre 2 lignes noir puis bleu avec point, visuel au centre, légende en pied, logo fixe en haut à droite), même bleu d'accent, et surtout un objet qui survit à chaque transition (point, logos, courbe). Le système casse seulement aux fondus clair ↔ nuit qui passent par un gris boueux."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, pulsation nette (6,11), grille qui commence à 0,505 s : un temps = 15 im à 30 fps. Intro : un mot par temps (f15, f30, f45, f60). Ensuite 13 chapitres de 3,0 s = 6 temps exactement, transitions toutes à x,5 s (f165, f255, f345, f435, f525, f615, f705, f795, f885 probable, f975, f1065, f1155) et la 2e ligne du titre atterrit sur le temps suivant (+15 im : f180, f270, f360, f450, f540, f630, f720, f810, f990, f1080, f1170). 6 des 7 coupes détectées à moins de 50 ms d'un temps. Chaque chapitre : ≈1,5 s d'animation puis ≈1–1,5 s de maintien pour lire (maintiens statiques mesurés 49 % du temps, mais la légende s'écrit mot à mot pendant une partie). Fin : carte fixe de 2 s (40,0–42,0 s). Densité : une transition toutes les 3 s, pas de montée d'intensité.",
+    "timeline": [
+      {"t": "0:00-0:02.0", "what": "« Stocks. » puis « ETFs. », « Bonds. », « Options. » au centre, un mot par temps, entourés de logos d'actifs (Microsoft, Apple, Nvidia, Alphabet, Coca-Cola, Realty Income) ; à chaque mot s'ajoute une puce (S&P 500 ETF, UST 4.625% 2033, AAPL 320 put)", "technique": "roulette de mots sur le temps + collage d'actifs"},
+      {"t": "0:02.0-0:02.9", "what": "« Options. » sort par le haut, il ne reste que le point bleu ; logos et puces implosent vers lui ; le point grossit puis glisse en bas à gauche", "technique": "implosion vers le point, match cut point → graphique"},
+      {"t": "0:02.9-0:05.5", "what": "01 PORTFOLIO « All your investments. / One view. » : la courbe se trace, compteur 11 689 → 40 290 USD, logos posés aux jalons, pastille verte +9 088 (+27,33 %)", "technique": "courbe tracée + compteur synchronisé"},
+      {"t": "0:05.5-0:08.5", "what": "02 ALLOCATION : le point remonte la courbe, un anneau gris s'ouvre autour de lui, les logos volent vers la légende ; le donut se remplit segment par segment avec pourcentages", "technique": "transmission point → donut"},
+      {"t": "0:08.5-0:11.5", "what": "03 PORTFOLIO X-RAY : le donut se déroule, son arc bleu devient la 1re barre ; logos qui tombent à leur ligne en cascade ; barres et pourcentages qui montent", "technique": "morph donut → barres"},
+      {"t": "0:11.5-0:14.5", "what": "04 DIVIDENDS sur fond bleu : calendrier, puces de dividendes qui se posent sur les dates, compteur USD 504 → 1 056,57", "technique": "fondu par lavis de couleur + calendrier"},
+      {"t": "0:14.5-0:17.5", "what": "05 BENCHMARKS sur fond clair : portefeuille contre S&P 500, +753,79 % contre +285,69 %, puces Alpha / Sharpe / Beta", "technique": "double courbe comparative"},
+      {"t": "0:17.5-0:20.5", "what": "06 STRESS TEST sur fond nuit : les deux points de fin glissent au départ du graphique 2008, courbes qui chutent, aire verte entre elles, -28,62 % / -41,10 %", "technique": "transmission des points"},
+      {"t": "0:20.5-0:23.5", "what": "07 MONTE CARLO : le point blanc traverse le cadre vers la gauche, l'éventail de 1 000 trajectoires jaillit, médiane et percentiles", "technique": "point origine d'un éventail"},
+      {"t": "0:23.5-0:26.5", "what": "08 OPTIMIZATION : l'éventail se resserre en colonne de points qui éclate en nuage ; courbe de frontière tracée, points Best Sharpe et Your mix", "technique": "morph éventail → nuage de points"},
+      {"t": "0:26.5-0:29.5", "what": "09 OPTIONS : la courbe de frontière se plie en diagramme de gain ; curseur de prix qui balaie la courbe, étiquette P&L verte puis rouge", "technique": "morph courbe → crosse de hockey + balayage"},
+      {"t": "0:29.5-0:32.5", "what": "10 BONDS : droite prix / taux avec point qui glisse, étiquette « Rates +0.41% → price -2.23% » qui change", "technique": "balayage interactif simulé"},
+      {"t": "0:32.5-0:35.5", "what": "11 TAXES sur fond clair : 14 puces de formulaires fiscaux avec drapeaux et coches, apparition en cascade sur 2 colonnes", "technique": "grille en cascade"},
+      {"t": "0:35.5-0:38.5", "what": "12 IPHONE : les puces basculent en perspective et cèdent la place à un téléphone qui monte ; bulle de question puis réponse IA", "technique": "pile de cartes 3D → téléphone"},
+      {"t": "0:38.5-0:42.0", "what": "Fondu vers la carte de fin : icône qui grossit, wordmark AllInvestView, « Every investment. One view. », bouton Try it free, URL, plateformes ; maintien 2 s", "technique": "carte de fin avec CTA"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Gestes clés comptés sur les barres bleu foncé (temps entiers, pas les demi-temps) : 4 changements de mot de l'intro (f15, f30, f45, f60), fin de l'implosion (f75), départ du titre 01 (f90), 12 débuts de transition (f165, f255, f345, f435, f525, f615, f705, f795, f885 probable, f975, f1065, f1155), 11 atterrissages de la 2e ligne de titre (f180, f270, f360, f450, f540, f630, f720, f810, f990, f1080, f1170). Bilan : 28 gestes sur 29 à ±2 im d'un temps (hasard ≈ 33 % pour une fenêtre de ±2 im autour des seuls temps à 15 im d'intervalle). Le seul écart : l'image de coupe f1159 tombe 4 im après le temps, mais son fondu démarre sur le temps f1155. Décalage typique 0 à +1 im. Mesures auto concordantes : départs/temps R = 0,567, p = 2,6e-4 ; grosse caisse z = 2,96 ; 6 coupes sur 7 à moins de 50 ms d'un temps.",
+    "synced": ["coupes", "departs", "atterrissages", "apparitions", "texte"],
+    "style_match": "Pop électronique enjouée à 120 BPM, pulsation régulière : colle aux courbes sèches et au découpage en temps de l'interface. Aucune montée exploitée ; le pic final tombe sur la carte fixe.",
+    "how_built": "Le prompt ne parle pas de musique. Les temps ronds (mots toutes les 0,5 s, scènes de 3,0 s qui commencent à x,5 s) montrent une timeline écrite en unités de 0,5 s, donc à 120 BPM ; la bande-son à 120 BPM est alignée dessus (générée en code ou choisie à ce tempo, probable). La synchro est structurelle (début et fin de chaque scène) ; à l'intérieur des scènes, les compteurs et tracés courent librement."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Roulette de mots, un mot par temps",
+      "name_en": "word roll on the beat",
+      "t": "0:00.50-0:02.00",
+      "frames": "f15-f62",
+      "fps": 30,
+      "mechanics": "Mot centré ≈ 58 % de la largeur, ≈ 12 % de la hauteur. L'ancien mot sort vers le haut en 1–2 im (f15 à moitié coupé, f16 disparu), le nouveau entre par le bas sous un masque en 2–3 im (f16–f18), ease-out fort, sans dépassement visible. Cadence 15 im exactement (f15, f30, f45, f60), chaque changement sur une barre bleue.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f16.jpg",
+      "illus": {"from": 13, "to": 19, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Collage d'actifs qui s'accumule autour du mot",
+      "name_en": "accumulating asset collage",
+      "t": "0:00.00-0:02.00",
+      "frames": "f0-f60",
+      "fps": 30,
+      "mechanics": "6 logos d'entreprises en pastilles blanches ≈ 4 % du cadre, placés en ellipse autour du mot. À chaque mot s'ajoute une puce liée au mot (S&P 500 ETF sous « ETFs. », UST 4.625% 2033 au-dessus de « Bonds. », AAPL 320 put sous « Options. »), apparition en fondu + montée de quelques pixels en 2–3 im, sur le même temps que le mot.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f46.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion vers le point final, qui devient le 1er point du graphique",
+      "name_en": "implode into the period, period-to-chart match cut",
+      "t": "0:02.00-0:02.90",
+      "frames": "f60-f86",
+      "fps": 30,
+      "mechanics": "« Options. » sort par le haut (f60–f62) et laisse son point bleu seul à ≈ 82 % / 40 %. Le point grossit ×2 (f65–f71) pendant que logos et puces convergent vers lui en ease-in, 9 im (f66–f74). Le point seul (f75, sur le temps) rétrécit et glisse vers ≈ 6 % / 55 % en 10 im : pas de 2-4-9-15-18-12-6-3-1-1 % du cadre = ease-in-out. Il devient le point de départ de la courbe du portefeuille, dont le compteur apparaît à f87.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f71.jpg",
+      "illus": {"from": 60, "to": 86, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe qui se trace avec compteur synchronisé et logos aux jalons",
+      "name_en": "line draw with synced counter and milestone logos",
+      "t": "0:02.90-0:05.20",
+      "frames": "f87-f156",
+      "fps": 30,
+      "mechanics": "La courbe bleue se dessine de gauche à droite sur ≈ 2 s, avec une aire en dégradé dessous. La valeur du portefeuille au-dessus de la tête de courbe compte de 11 689,81 à 40 290,59 USD, en roulant avec elle. Au passage, chaque logo d'actif se pose sur la courbe. À la fin, pastille verte « +9 088,98 USD (+27,33 %) ».",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre en deux lignes révélé par masque, 2e ligne sur le temps suivant",
+      "name_en": "masked two-line title reveal landing on next beat",
+      "t": "0:11.73-0:12.03",
+      "frames": "f352-f360",
+      "fps": 30,
+      "mechanics": "Chaque ligne monte sous un masque horizontal en ≈ 5 im, ease-out. Décalage (stagger) de ≈ 4 im entre ligne 1 (noire ou blanche) et ligne 2 (bleue). La ligne 2 se pose exactement 15 im après le début de la transition, sur la barre bleue (f360, f450, f540, f720, f810, f990, f1080). Sortie inverse : les deux lignes glissent vers le haut sous le masque en 3–4 im, ease-in.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f346.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre gabarit : surtitre numéroté + 2 lignes noir/bleu terminées par un point",
+      "name_en": "numbered eyebrow and two-tone title",
+      "t": "0:03.00-0:38.50",
+      "frames": "f90-f1155",
+      "fps": 30,
+      "mechanics": "Surtitre « 01 PORTFOLIO » à « 12 IPHONE · ANDROID · AI ASSISTANT » ≈ 1,2 % de la hauteur, capitales bleues espacées. Titre en haut à gauche, marge ≈ 3,5 %, ligne 1 noire #0B1222 (ou blanche sur nuit/bleu), ligne 2 bleu #2F86C9, chacune ≈ 7 % de la hauteur, gras serré, toujours fermé par un point. Le point est le motif de marque, repris par le point bleu de l'intro.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende de pied qui s'écrit mot à mot",
+      "name_en": "word-by-word caption fade",
+      "t": "0:03.50-0:04.00",
+      "frames": "f105-f120",
+      "fps": 30,
+      "mechanics": "Phrase de pied ≈ 1,8 % de la hauteur, mots-clés en bleu. Les mots apparaissent un à un en fondu, le dernier encore gris clair (« Since 2016 this portfolio… », « Every payment on its… »), sur ≈ 0,5–1 s. Occupe le temps de maintien du chapitre.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point rembobine la courbe, un anneau s'ouvre, les logos volent vers la légende",
+      "name_en": "dot rewinds into donut, logos fly to legend",
+      "t": "0:05.20-0:06.50",
+      "frames": "f156-f195",
+      "fps": 30,
+      "mechanics": "Aire, chiffres et légende s'effacent en 7 im (f156–f162). Le titre sort par le haut (f163–f166). Le point de fin remonte la courbe vers la gauche (f165–f171) en ramassant les logos. Un anneau gris s'ouvre autour de lui en 4 im (f173–f176), le point fond au centre (f178–f179). Les logos rejoignent la ligne Technology de la légende (f179–f183). Le donut se remplit segment par segment (bleu 4 % → 53 % en ≈ 13 im, puis vert, orange) avec des pourcentages qui comptent.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 160, "to": 192, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le donut se déroule en barres horizontales",
+      "name_en": "donut unrolls into bar chart",
+      "t": "0:08.40-0:09.30",
+      "frames": "f252-f279",
+      "fps": 30,
+      "mechanics": "La légende s'efface (f250–f253). Les segments du donut se séparent et tournent en s'amincissant (f256–f262). L'arc bleu se rétracte en un trait qui devient la 1re barre à ≈ 25 % / 55 % (f262–f264). Les logos tombent à leur ligne en cascade, ≈ 3 im d'écart (Microsoft f261, Coca-Cola f265, Apple f268, Realty f271, Alphabet f273, Nvidia f275). Les barres poussent en cascade avec des pourcentages qui comptent (8,88 % → 14,86 %).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 254, "to": 272, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barres horizontales avec compteurs en cascade",
+      "name_en": "staggered bar race with counters",
+      "t": "0:08.70-0:10.00",
+      "frames": "f261-f300",
+      "fps": 30,
+      "mechanics": "6 barres bleues sur rail gris, ≈ 45 % de la largeur. Chaque barre démarre ≈ 3 im après la précédente et pousse en ease-out sur ≈ 25 im. Le pourcentage à droite compte en même temps. Les logos sont à gauche avec nom et sous-titre en 1 % de la hauteur.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné par lavis de couleur, centré sur le temps",
+      "name_en": "color-wash cross dissolve on the beat",
+      "t": "0:11.23-0:11.67",
+      "frames": "f337-f350",
+      "fps": 30,
+      "mechanics": "Contenu qui s'efface en cascade (barres f337–f343), titre qui sort par le haut, et fond qui se fond vers la couleur suivante en ≈ 8 im (f342–f349), centré sur la barre bleue f345. Certains éléments restent (logos) pendant le fondu. Clair → bleu : passage propre par #A9C9E4. Clair ↔ nuit (f522–f528, f703–f709) : passage par un gris #8E9399 → #5A6068 boueux sur 3–4 im.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f526.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Calendrier de dividendes avec puces et compteur",
+      "name_en": "dividend calendar with popping chips",
+      "t": "0:11.70-0:13.50",
+      "frames": "f351-f405",
+      "fps": 30,
+      "mechanics": "Grille mensuelle de 7 colonnes en tuiles bleu clair translucides sur fond #2C82C3. Les logos glissent de la colonne Lundi à leur date (f352–f363, ease-out ≈ 8 im) et se transforment en puces blanches « -20.33 », « -1.98 », « -34.45 », « 33.05 ». Le total « USD 504,26 → 1 056,57 » compte en ≈ 1 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f346.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les points de fin glissent au départ du graphique suivant",
+      "name_en": "endpoint hand-off between charts",
+      "t": "0:17.40-0:18.00",
+      "frames": "f522-f540",
+      "fps": 30,
+      "mechanics": "Les courbes portefeuille et S&P s'effacent, il ne reste que leurs 2 points de fin et le logo Vanguard. Pendant le fondu vers le fond nuit, les 2 points glissent vers ≈ 8 % / 38 % en ≈ 8 im (f526–f534), ease-in-out, et deviennent le départ commun des 2 courbes du crash 2008. Le logo reste à droite et sert d'étiquette S&P.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f526.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Deux courbes de crash avec aire entre elles",
+      "name_en": "dual drawdown lines with gap fill",
+      "t": "0:18.00-0:20.00",
+      "frames": "f540-f600",
+      "fps": 30,
+      "mechanics": "Courbe corail (portefeuille) et bleue (S&P) tracées ensemble vers la droite en ≈ 1,5 s. L'aire verte sombre remplit l'écart entre les deux. Étiquettes -28,62 % (corail) et -41,10 % (bleu) en bout de courbe. Puces COVID-19 et 2022 en dessous.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le point traverse le cadre et devient l'origine d'un éventail",
+      "name_en": "dot travel to fan origin",
+      "t": "0:20.27-0:21.00",
+      "frames": "f608-f630",
+      "fps": 30,
+      "mechanics": "Tout s'efface sauf le point blanc de fin (f609–f614). Le titre sort par le haut (f612–f616). Le point part sur le temps f615 et va de 73 % à 6 % de la largeur en 9 im (pas 6-10-15-15-10-6-3-1-1 %), ease-in-out sinus. À f624 apparaît l'étiquette « Today $40,291 » et l'éventail Monte Carlo jaillit du point vers la droite. « futures. » se pose à f630, sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 609, "to": 630, "n": 7}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Éventail de 1 000 trajectoires Monte Carlo",
+      "name_en": "Monte Carlo path fan",
+      "t": "0:20.80-0:22.50",
+      "frames": "f624-f675",
+      "fps": 30,
+      "mechanics": "Des centaines de fins tracés bleus semi-transparents s'étirent ensemble depuis le point, sur ≈ 1,5 s, en ease-out. Médiane blanche épaisse. Puces 95th $59,088 (vert), Median $42,889, 5th $31,346 (rouge) qui apparaissent en cascade à droite.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'éventail s'effondre en colonne puis éclate en nuage de points",
+      "name_en": "fan collapses to column, bursts into scatter",
+      "t": "0:23.13-0:23.90",
+      "frames": "f694-f717",
+      "fps": 30,
+      "mechanics": "Les fins de trajectoires se rassemblent en colonne verticale de points à ≈ 75 % de la largeur (f698–f702). Fondu nuit → clair (f703–f709). La colonne éclate en nuage 2D vers la gauche en ≈ 8 im (f708–f716), ease-out. Le nuage devient le nuage de portefeuilles de la frontière efficiente.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f706.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Frontière efficiente : courbe tracée, points mis en évidence",
+      "name_en": "efficient frontier reveal with highlighted points",
+      "t": "0:24.00-0:26.30",
+      "frames": "f720-f789",
+      "fps": 30,
+      "mechanics": "La courbe bleue se trace en ≈ 1 s par-dessus le nuage. Point vert « Best Sharpe 1.13 +35.84% » avec anneau qui pulse, point orange « Your mix +23.19% », étiquettes blanches avec ombre douce.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La courbe de frontière se plie en diagramme de gain d'option",
+      "name_en": "curve morph into payoff diagram",
+      "t": "0:26.37-0:26.90",
+      "frames": "f791-f807",
+      "fps": 30,
+      "mechanics": "Nuage, points et textes s'effacent (f791–f795). Seule la courbe reste et passe du bleu au blanc pendant le fondu vers la nuit. Elle se redresse en 2 segments, diagonale puis plateau, en ≈ 8 im (f799–f806), ease-in-out. Puis la zone de perte rouge sombre et la bande verte de gain maximal apparaissent en fondu (f810).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f796.jpg",
+      "illus": {"from": 792, "to": 808, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur de prix qui balaie la courbe, étiquette qui change de couleur",
+      "name_en": "scrubbing price marker with live P&L tag",
+      "t": "0:27.30-0:32.30",
+      "frames": "f820-f970",
+      "fps": 30,
+      "mechanics": "Options : un point bleu avec ligne pointillée verticale parcourt la courbe de gain (AAPL 339,86 → 292,07 → 290,00 → 336,03). L'étiquette P&L passe de +USD 640 (vert) à -USD 2 153 (rouge). Obligations : même balayage sur la droite prix/taux (« Rates +0.41% → price -2.23% » puis +1,00 %, +0,80 %, -0,99 %). Allers-retours d'environ 0,5 s chacun. Simule une interaction sans curseur.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Grille de 14 formulaires fiscaux en cascade",
+      "name_en": "staggered checklist grid",
+      "t": "0:32.70-0:34.00",
+      "frames": "f981-f1020",
+      "fps": 30,
+      "mechanics": "Puces sombres #111827 sur 2 colonnes, chacune avec drapeau, nom du formulaire (Form 8949, SA108, Modelo 100…) et coche. Elles apparaissent en alternant gauche et droite, ≈ 3 im d'écart, en fondu depuis le gris + petite montée. Les 14 sont là en ≈ 1,2 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-cut-f976.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "La pile de cartes bascule en perspective et révèle le téléphone",
+      "name_en": "card stack tilts away to reveal phone",
+      "t": "0:35.30-0:35.83",
+      "frames": "f1059-f1075",
+      "fps": 30,
+      "mechanics": "Le titre sort par le haut et le fond passe au bleu (f1062–f1068). Les 14 puces basculent en perspective (rotateX ≈ 30–40°, probable), se resserrent et glissent à droite en cascade. Un téléphone sombre monte d'en bas à gauche de ≈ 95 % à ≈ 60 % de la hauteur en ≈ 10 im (f1066–f1075), ease-out, et passe devant les cartes. Seul vrai mouvement 3D de la vidéo, départ sur le temps f1065.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f1066.jpg",
+      "illus": {"from": 1062, "to": 1076, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone + bulles de chat IA question puis réponse",
+      "name_en": "phone mockup with AI chat bubbles",
+      "t": "0:36.30-0:38.00",
+      "frames": "f1090-f1140",
+      "fps": 30,
+      "mechanics": "Écran de l'app (39 539 USD, courbe, onglets) dans un téléphone noir ≈ 45 % de la hauteur, coupé en bas. Bulle blanche « How much will I earn in dividends? » tapée lettre à lettre (≈ 0,5 s). Puis bulle sombre de réponse « Your 12-month dividend forecast is USD 1,056.57… », qui reprend le chiffre du chapitre 04.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin : icône qui grossit, wordmark, accroche, CTA",
+      "name_en": "end card with logo pop and CTA",
+      "t": "0:38.50-0:42.00",
+      "frames": "f1155-f1259",
+      "fps": 30,
+      "mechanics": "Fondu bleu → clair de 4 im centré sur f1159. L'icône app (carré arrondi navy) grossit de ≈ 15 % à 100 % en 6 im (f1161–f1167), ease-out. Le wordmark arrive en fondu gris → noir sur le temps f1170. Puis l'accroche « Every investment. One view. », le bouton bleu « Try it free », l'URL et « Web · iPhone · Android » (≈ 39,5 s). Cercle fin décoratif ≈ 70 % du cadre. Maintien 2 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1159.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Chapitres de durée fixe : 6 temps par scène",
+      "name_en": "fixed 6-beat scene modules",
+      "t": "0:02.90-0:38.50",
+      "frames": "f87-f1155",
+      "fps": 30,
+      "mechanics": "12 chapitres de 3,0 s exactement (90 im = 6 temps à 120 BPM). Dans chaque chapitre : transition sur le temps 1, titre posé au temps 2, graphique animé sur les temps 2–4, maintien de lecture sur les temps 5–6. Rythme parfaitement régulier, mais sans variation de durée ni accélération.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de temps qui pilote transitions et titres",
+      "name_en": "beat-grid driven scene changes",
+      "t": "0:00.50-0:39.00",
+      "frames": "f15-f1170",
+      "fps": 30,
+      "mechanics": "Ce qui est calé : les changements de mot de l'intro (chaque temps), le départ de chaque transition (temps 1 du chapitre) et l'atterrissage de la 2e ligne du titre (temps suivant, +15 im). Décalage 0 à +1 im après la barre. Caractère : la pop à 120 BPM appelle des gestes nets et courts (2–10 im), ease-out ou in-out, aucun ressort. L'intérieur des scènes n'est pas calé (compteurs et tracés continus).",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance de fonds clair / bleu / nuit comme ponctuation",
+      "name_en": "background color as chapter punctuation",
+      "t": "0:00.00-0:42.00",
+      "frames": "f0-f1259",
+      "fps": 30,
+      "mechanics": "Suite des fonds : clair (01–03), bleu (04), clair (05), nuit (06–07), clair (08), nuit (09–10), clair (11), bleu (12), clair (fin). Le bleu marque les promesses « grand public » (dividendes, mobile). La nuit marque les scénarios de risque (crash, Monte Carlo, options, obligations).",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit carré constant avec logo fixe",
+      "name_en": "consistent square template",
+      "t": "0:00.00-0:38.50",
+      "frames": "f0-f1155",
+      "fps": 30,
+      "mechanics": "720 × 720. Logo AllInvestView fixe en haut à droite (≈ 9 % de la largeur). Titre en haut à gauche, marge ≈ 3,5 %. Visuel de données sur ≈ 55 % du cadre, du milieu vers le bas. Légende en pied, ≈ 6 % du bas. Les éléments transmis d'une scène à l'autre restent au même endroit ou glissent, sans coupe.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu plat avec ombres douces",
+      "name_en": "flat UI with soft shadows",
+      "t": "0:00.00-0:42.00",
+      "frames": "f0-f1259",
+      "fps": 30,
+      "mechanics": "Aucun grain ni flou de mouvement. Ombres douces sous les puces, étiquettes et logos. Dégradé vertical sous la courbe de portefeuille. Tuiles translucides sur fond bleu. Lisible et propre, mais sans matière ni lumière : look d'interface plutôt que de film.",
+      "verdict": "adapter"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne cite aucune fonctionnalité, pourtant la vidéo montre 12 fonctions précises (30+ courtiers, 14 pays fiscaux, Monte Carlo, frontière efficiente, assistant IA, Web · iPhone · Android). Claude avait donc probablement le site ou le code du produit sous la main : la richesse vient du contexte, pas du prompt."},
+    {"kind": "direction", "insight": "« Go all out » a été lu comme « montrer tout » : 12 chapitres denses plutôt qu'un spectacle. Sans consigne de hiérarchie, le modèle choisit l'exhaustivité."},
+    {"kind": "structure", "insight": "Claude s'est imposé un module répétable (surtitre numéroté, titre 2 lignes, graphique, légende, 3 s), facile à coder et cohérent, mais qui donne un catalogue sans accroche émotionnelle ni climax."},
+    {"kind": "build", "insight": "Les temps ronds (mots toutes les 0,5 s, scènes de 3,0 s démarrant à x,5 s) montrent une timeline écrite sur une grille de 0,5 s = 120 BPM. C'est ce qui rend la synchro exacte. À reproduire en déclarant BEAT = 0,5 s et en plaçant chaque scène en multiples de temps."},
+    {"kind": "build", "insight": "La règle « un objet survit à chaque transition » (point, logos, courbe, colonne de points) n'est pas dans le prompt : c'est une décision de Claude qui fait la qualité de la pièce. À écrire explicitement dans un prompt pour l'obtenir à coup sûr."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : légendes ≈ 1,8 % et étiquettes ≈ 1 % de la hauteur sur 720 px, illisibles en 3 s sur mobile. Préciser une taille minimale de texte et un nombre maximal de chiffres par scène."}
+  ],
+  "steal": [
+    "Ne coupe pas : fais survivre un objet (point, courbe, logos) d'une scène à l'autre et transforme-le en graphique suivant.",
+    "Le point final du titre devient le premier point du graphique : match cut typographie → données.",
+    "Scène = 6 temps : transition sur le temps 1, 2e ligne du titre posée au temps 2 (+15 im à 30 fps, 120 BPM).",
+    "Intro en roulette : un mot par temps, une puce ajoutée à chaque mot, puis tout implose vers le point.",
+    "Fais naître chaque graphique du précédent : donut déroulé en barres, éventail effondré en nuage, courbe pliée en crosse."
+  ],
+  "flaws": [
+    "12 chapitres de 3 s au même gabarit : catalogue sans montée ni climax, la musique n'est jamais exploitée en intensité.",
+    "Légendes ≈ 1,8 % et étiquettes ≈ 1 % de la hauteur : illisibles en 3 s, surtout en 720 px.",
+    "Fondus clair ↔ nuit qui passent 3–4 im par un gris boueux.",
+    "5 à 8 chiffres par écran : effet tableau de bord qui défile, l'œil ne sait pas quoi lire.",
+    "Rendu 720 × 720 à 30 fps, sans matière ni lumière : aspect interface plus que film."
+  ],
+  "deep_study": {"worth": true, "why": "Oui, à 30 fps natif (pas de 60 fps disponible). Les 12 transitions par objet transmis (point → courbe → anneau → donut → barres, éventail → nuage, courbe → crosse, cartes → téléphone) forment un catalogue de morphs motivés, posés sur une grille 120 BPM exacte. Ça vaut d'être décortiqué image par image pour en tirer des recettes GSAP."}
+}

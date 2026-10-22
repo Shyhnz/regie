@@ -1,0 +1,399 @@
+{
+  "slug": "majin-appsheet-2d3c1a",
+  "title": "Shin Majin-shiki promo",
+  "handle": "@Majin_AppSheet",
+  "family": "typo",
+  "craft": 4,
+  "craft_reason": "Hommage Evangelion précis, grille 120 BPM tenue à l'image près sur 6 s, gestes variés ; mais flash blanc et RGB split répétés, passage macro peu lisible, carton final figé 2,5 s.",
+  "summary": "PV de 10 s pour « Shin Majin-shiki », un framework de prompts japonais. Claude lit « シン » comme un clin d'œil aux films d'Anno et livre une typographie cinétique façon Evangelion : Mincho extra-gras crème sur noir, rouge sang, flashs de surexposition, mots-éclairs en double-croches, strobe en négatif, bandeau incliné, tampon 新. Grille 120 BPM très serrée sur 6 s, puis carton final figé.",
+  "prompt_vs_result": [
+    "Une seule ligne en japonais : « fais la PV (vidéo promo) de Shin Majin-shiki ». Aucune durée, musique, style, couleur ni contenu imposés.",
+    "Tout : la lecture de « シン・ » comme référence à Anno (Shin Godzilla, Evangelion), le Mincho extra-gras, le trio noir-crème-rouge, l'accroche 再起動/REBOOT, les mots PROMPT/DESIGN/SLIDES, le manifeste « 言葉は、設計になる。 », la grille 120 BPM, le tampon 新.",
+    "Le modèle a trouvé seul la bonne référence culturelle. Il aurait fallu préciser la durée, ce que fait concrètement le produit, et interdire le carton figé final et la répétition du flash blanc."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0E0F0E", "role": "fond noir charbon granuleux"},
+      {"hex": "#F1EEE4", "role": "texte crème (Mincho)"},
+      {"hex": "#D6002F", "role": "rouge sang : bandeau, point médian, fond REBOOT, tampon"},
+      {"hex": "#7A0A1E", "role": "bords vignettés du fond rouge REBOOT"},
+      {"hex": "#3B0F1A", "role": "rayons (sunburst) rouge sombre du fond"},
+      {"hex": "#EFECE3", "role": "fond crème vignetté gris du plan 新"},
+      {"hex": "#F3FBF8", "role": "fond blanc du strobe en négatif"},
+      {"hex": "#C9F2E6", "role": "rayons menthe (rouge inversé) du strobe"},
+      {"hex": "#BDBDBD", "role": "filets fins (L de 再起動, ligne sous le bandeau)"}
+    ],
+    "type": "Mincho extra-gras (Shippori Mincho / Noto Serif JP Black probable) : titre ≈15 % H, 再 ≈50 % H, 新 ≈70 % H. Grotesque condensée grasse en capitales (Anton probable) pour REBOOT/PROMPT ; étiquettes minuscules espacées ≈0,3 em.",
+    "texture": "Grain film permanent sur les noirs, vignettage radial sur les fonds pleins (rouge et crème), flashs de surexposition (blanc puis gris), aberration chromatique rouge/cyan (RGB split) en glitch, aucun flou de mouvement : tous les déplacements sont nets, image par image.",
+    "style": "Carton-titre Evangelion, kinetic type japonais",
+    "coherence": "Le système tient par trois constantes : Mincho extra-gras crème, rouge sang unique, noir granuleux ; même le strobe en négatif reste dans la palette (le rouge devient menthe, son complément). Le rouge sert de ponctuation (point médian, fond REBOOT, bandeau, tampon). Ce qui casse : le passage macro sur les traits de ン (3,2-3,5 s) qui sort de la grammaire typographique lisible, et les accents répétés (flash blanc, RGB split, onde de choc) qui finissent par se ressembler."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM : 1 temps = 15 im à 30 fps = 0,5 s. 16 plans en 6 s, médiane 0,3 s. De 0,27 à 2,27 s, un changement de plan à chaque temps (f8, f23, f38, f53, f68 : exactement 15 im d'écart) et des mots-éclairs en double-croches entre f46 et f58 (4, 3, 5 im). Ensuite les gestes internes (ligne rouge, recul macro, point rouge, lettres qui tombent, onde de choc) prennent le relais toutes les 4 à 8 im jusqu'à 6,3 s. Les coupes ont une avance constante de 1,5 im sur la grille audio détectée (latence d'encodage probable). Aucun maintien > 0,5 s avant 7,6 s, sauf le titre recentré f141-f157 (0,55 s) que seuls les rayons animent. Après l'atterrissage du tampon (f226 = 7,53 s), carton final quasi fixe 2,45 s jusqu'à f299 : seul temps mort, alors que la musique continue (« drop » mesuré à 7,85 s).",
+    "timeline": [
+      {"t": "0:00-0:00.27", "what": "Noir granuleux, 8 im", "technique": "ouverture au noir sur le premier temps"},
+      {"t": "0:00.27-0:00.77", "what": "まじん式 en Mincho crème centré, « PROMPT FRAMEWORK » minuscule espacé dessous", "technique": "apparition sèche sur le temps"},
+      {"t": "0:00.77-0:01.27", "what": "再 géant à gauche, 起動 en colonne verticale à droite, filet en L ; flash blanc d'entrée", "technique": "mise en page carton-titre Evangelion + flash de surexposition"},
+      {"t": "0:01.27-0:01.53", "what": "REBOOT noir sur fond rouge vignetté, flash rose d'entrée", "technique": "flash teinté par la couleur du plan suivant"},
+      {"t": "0:01.53-0:01.93", "what": "PROMPT (blanc), DESIGN (rouge), SLIDES (blanc) en grotesque condensée, 4-3-5 im chacun", "technique": "mots-éclairs en double-croches sur un roulement"},
+      {"t": "0:01.93-0:02.27", "what": "« 言葉は、 » petit en haut à gauche souligné, « 設計になる。 » grand en bas à droite", "technique": "composition en diagonale"},
+      {"t": "0:02.27-0:02.87", "what": "新 géant noir sur crème vignetté, claque d'échelle 1,5→1 en 4 im, puis glitch RGB 5 im", "technique": "slam d'échelle + aberration chromatique"},
+      {"t": "0:02.87-0:03.20", "what": "Noir, une ligne rouge fine part du centre et s'étire à pleine largeur en accélérant", "technique": "ligne d'énergie en ease-in"},
+      {"t": "0:03.20-0:03.53", "what": "Gros plan sur les traits de pinceau de ン, recul jusqu'à former le glyphe", "technique": "plan macro puis recul (pull-back)"},
+      {"t": "0:03.53-0:04.10", "what": "Flash : シン à gauche sur fond de rayons rouges, RGB split, onde de choc, puis point médian rouge qui pop sur le temps", "technique": "révélation par flash + pop du point rouge"},
+      {"t": "0:04.10-0:04.53", "what": "ま, じ, ん, 式 tombent un par un du coin haut-droit, géants et inclinés, et se posent dans la ligne", "technique": "chute de caractères en décalage (stagger)"},
+      {"t": "0:04.53-0:05.27", "what": "Flash + grand cercle rouge qui s'étend ; ligne recentrée « シン・まじん式 », maintien 0,55 s", "technique": "recentrage masqué par le flash + onde de choc"},
+      {"t": "0:05.27-0:05.90", "what": "Alternance 2 im normal / 2 im négatif (fond blanc, rayons menthe, point cyan, RGB split)", "technique": "strobe en négatif"},
+      {"t": "0:05.90-0:06.30", "what": "Bandeau rouge incliné à -7° balaie depuis la gauche en 3 im et entraîne le titre ; filet blanc diagonal dessous", "technique": "volet (wipe) par bandeau incliné"},
+      {"t": "0:06.30-0:07.20", "what": "« SHIN MAJIN-SHIKI » se resserre en interlettrage, étiquettes « PROMPT DESIGN SYSTEM » (haut-gauche) et « REBOOT / 2026 » (bas-droite)", "technique": "tracking-in + révélation par masque"},
+      {"t": "0:07.33-0:07.60", "what": "Tampon 新 (carré rouge bordé de blanc) apparaît à ×3 puis claque à ×1 en haut à droite, onde de choc", "technique": "tampon (hanko) slam sur l'attaque forte"},
+      {"t": "0:07.60-0:10.05", "what": "Carton final figé (bandeau, titre, sous-titre, tampon, étiquettes)", "technique": "carton de fin tenu 2,45 s"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille audio 119,9 BPM (netteté 5,31), temps à 0,317 + k×0,5 s. Les coupes f8, f23, f38, f53, f68, f158 (0,267 / 0,767 / 1,267 / 1,767 / 2,267 / 5,267 s) sont espacées d'exactement 15 im et tombent toutes 1,5 im avant une barre bleue ; f46, f106, f136, f166 tombent 1 im avant une barre bleu clair. Soit 10 coupes sur 15 sur un réseau strict de 0,25 s (±0,5 im ; hasard ≈13 %). Comptage à l'œil, un événement clé par geste : 15 sur 21 à ±2 im d'une barre, peu probant seul à 30 fps (hasard ≈67 %), d'où le test strict ci-dessus. L'avance constante de 1,5 im colle à la corrélation des basses (image en avance de 46-70 ms) : latence d'encodage audio probable, pas un décalage voulu. Les mots PROMPT/DESIGN/SLIDES/言葉は (f46, f50, f53, f58) suivent les attaques 1,58 / 1,70 / 1,82 / 1,95 s d'un roulement en double-croches (avance 0,5 à 1,7 im). Le point rouge pop à f114 = attaque 3,82 s (f114,6). Le tampon 新 claque à f226, juste avant l'attaque forte 7,57 s (la 2e plus forte du morceau). Après 7,6 s, plus rien n'est calé : le carton reste fixe pendant le « drop » mesuré à 7,85 s.",
+    "synced": ["coupes", "apparitions", "impacts", "texte", "flashs", "couleur"],
+    "style_match": "Piste électro enjouée à 120 BPM avec roulement en double-croches : coupes sèches, flashs de 2 im et strobes collent à cette énergie ; aucune courbe molle, sauf le carton final inerte.",
+    "how_built": "Le prompt ne dit rien de la musique : Claude a probablement écrit la timeline en temps (1 temps = 0,5 s, demi-temps et double-croches) sur une piste choisie à 120 BPM. La régularité au 1/30 s des intervalles (15 im exactes entre coupes) prouve une grille calculée, pas un calage à l'oreille. La synchro s'arrête quand la timeline s'arrête (7,6 s) alors que la piste dure 10 s."
+  },
+  "techniques": [
+    {
+      "cat": "type-design",
+      "name_fr": "Mise en page carton-titre Evangelion (kanji géant + colonne verticale + filet en L)",
+      "name_en": "Evangelion title card layout",
+      "t": "0:00.77-0:01.27",
+      "frames": "f23-f37",
+      "fps": 30,
+      "mechanics": "再 en Mincho extra-gras ≈50 % H, calé sur le tiers gauche ; 起動 empilé en colonne verticale ≈2×18 % H au bord droit ; un filet gris clair d'1 px part sous 再 (de x≈5 % à x≈60 %) puis remonte verticalement le long de 起動 : la forme en L des cartons-titres d'Evangelion. Aucun mouvement interne pendant les 13 im du plan : la composition seule fait l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f23.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe par flash de surexposition (blanc puis gris puis net)",
+      "name_en": "Overexposure flash cut",
+      "t": "0:00.77-0:00.83",
+      "frames": "f23-f25",
+      "fps": 30,
+      "mechanics": "À la coupe, im 1 : plan suivant surexposé presque blanc (#D8D8D4), le texte à peine lisible ; im 2 : gris moyen (≈#555) ; im 3 : plan net. Décroissance en 2 im, sans flou. Réutilisé à f68 (新, 3 im), f106 (シン, 5 im de gris), f136 (recentrage), f177 (bandeau, gris doux). 6 fois en 6 s.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f23.jpg ; extra-01.jpg (f68) ; microM-002-move-f109.jpg (f106)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash teinté par la couleur du plan suivant",
+      "name_en": "Tinted flash cut",
+      "t": "0:01.27-0:01.33",
+      "frames": "f38-f40",
+      "fps": 30,
+      "mechanics": "Passage 再起動 → REBOOT : im 1 rose très pâle (#F0B8C4) avec REBOOT gris, im 2 rose vif (#E0406A), im 3 rouge plein #D6002F avec vignettage vers #7A0A1E. Le flash annonce la couleur au lieu d'être blanc : variante plus riche du flash générique.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f23.jpg (f38-f40) ; extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots-éclairs en double-croches (PROMPT / DESIGN / SLIDES)",
+      "name_en": "Sixteenth-note word flashes",
+      "t": "0:01.53-0:01.93",
+      "frames": "f46-f57",
+      "fps": 30,
+      "mechanics": "Trois mots en grotesque condensée grasse capitales, centrés, ≈15 % H : PROMPT crème f46-f49 (4 im), DESIGN rouge #D6002F f50-f52 (3 im), SLIDES crème f53-f57 (5 im), coupes franches sans transition ni mouvement. Alternance de couleur crème/rouge/crème pour marquer chaque frappe. 4 im ≈ une double-croche à 120 BPM (3,75 im).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 44, "to": 60, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Manifeste en diagonale (petit haut-gauche souligné, grand bas-droite)",
+      "name_en": "Diagonal two-line composition",
+      "t": "0:01.93-0:02.27",
+      "frames": "f58-f67",
+      "fps": 30,
+      "mechanics": "« 言葉は、 » Mincho ≈6 % H en haut à gauche (x≈10 %, y≈18 %) avec un filet fin dessous ; « 設計になる。 » ≈11 % H en bas à droite (x≈28-85 %, y≈75 %). L'œil lit en diagonale haut-gauche → bas-droite, comme une phrase coupée en question/réponse. Apparition sèche, aucun mouvement pendant 10 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; overview-01.jpg (2,00 s)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slam d'échelle d'un kanji géant (新)",
+      "name_en": "Scale slam",
+      "t": "0:02.27-0:02.40",
+      "frames": "f68-f72",
+      "fps": 30,
+      "mechanics": "新 noir Mincho arrive à ≈×1,5 (coupé par le bord bas, gris surexposé) puis ×1,3 (f69), ×1,1 (f70), ×1,0 (f71) : 4 im, grands pas puis petits pas = ease-out fort, sans dépassement. Taille finale ≈70 % H, centré, sur fond crème #EFECE3 vignetté gris. Tenu 9 im immobile ensuite.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glitch d'aberration chromatique (RGB split)",
+      "name_en": "RGB split glitch",
+      "t": "0:02.70-0:02.83",
+      "frames": "f81-f85",
+      "fps": 30,
+      "mechanics": "Le glyphe 新 se dédouble en rouge (vers la gauche) et cyan (vers la droite), décalage ≈1,5 % de la largeur, une image sur deux (f81, f83, f85 forts, f82, f84 faibles), puis coupe au noir. Même effet sur シン (f107-f112) et pendant le strobe négatif (f158-f163). Trois occurrences en 6 s.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg ; microM-002-move-f109.jpg ; microM-004-cut-f169.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ligne rouge qui s'étire du centre en accélérant",
+      "name_en": "Accelerating line draw-on",
+      "t": "0:03.03-0:03.17",
+      "frames": "f91-f95",
+      "fps": 30,
+      "mechanics": "Sur noir, une ligne rouge de 1 px à y≈55 % : point (f91), ≈5 % de large (f92), 15 % (f93), 40 % (f94), 100 % (f95). Les pas grandissent = ease-in (exponentiel), symétrique depuis le centre. Elle disparaît à f96 : elle sert d'élan avant le plan suivant, après 5 im de noir (f86-f90).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan macro sur les traits de pinceau puis recul jusqu'au glyphe",
+      "name_en": "Macro glyph pull-back",
+      "t": "0:03.20-0:03.53",
+      "frames": "f96-f106",
+      "fps": 30,
+      "mechanics": "On voit d'abord une goutte de pinceau crème géante (≈25 % H) en bas à droite, qui dérive à peine (f96-f101) ; à f102-f103 le trait horizontal de ン entre par le bas ; à f104 le glyphe ン complet se lit au centre ; à f105 un trait de シ entre à gauche (saut rapide vers la gauche). Flash à f106 : la ligne シン apparaît à sa taille finale. Recul (pull-back) d'environ ×4 à ×1 en 10 im, accéléré vers la fin.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg ; microM-002-move-f109.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond en rayons rouge sombre (sunburst / lignes de concentration)",
+      "name_en": "Dark sunburst rays",
+      "t": "0:03.53-0:05.90",
+      "frames": "f106-f177",
+      "fps": 30,
+      "mechanics": "≈36 rayons rouge sombre #3B0F1A à faible opacité partant du centre du cadre, sur noir granuleux ; rotation lente probable (seul mouvement pendant le maintien f141-f157). Rappelle les lignes de concentration du manga. Attention : rayons rouges centrés = lecture « soleil levant » possible pour un public international.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f139.jpg ; overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de choc circulaire à chaque impact",
+      "name_en": "Shockwave ring",
+      "t": "0:04.53-0:04.70",
+      "frames": "f136-f141",
+      "fps": 30,
+      "mechanics": "Un cercle rouge fin (≈2 px) part du centre et grandit : rayon ≈15 % H (f137), 30 % (f138), 38 % (f139), 42 % (f140), s'efface à f141. Pas décroissants = ease-out, 5 im. Version plus petite autour de シン (f107-f108), autour de ま à son atterrissage (f129-f132) et autour du tampon (f228). 4 occurrences.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f139.jpg ; microM-002-move-f109.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point médian ・ remplacé par un disque rouge qui pop",
+      "name_en": "Red dot pop",
+      "t": "0:03.80-0:03.93",
+      "frames": "f114-f118",
+      "fps": 30,
+      "mechanics": "Le point médian de « シン・ » devient un disque rouge #D6002F bordé de crème : f114 point minuscule, f115 ≈1 % H, f116 ≈2,5 % H, f117-f118 ≈3 % H puis léger retour (dépassement ≈10 % probable). 4 im, calé sur l'attaque 3,82 s (f114,6). La ponctuation devient l'accent rouge du logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f109.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Caractères qui tombent un par un du coin haut-droit",
+      "name_en": "Staggered character drop-in",
+      "t": "0:04.07-0:04.53",
+      "frames": "f122-f136",
+      "fps": 30,
+      "mechanics": "ま, じ, ん, 式 entrent par le bord haut-droit à ≈×2,5 et inclinés de ≈-15°, puis plongent vers leur place dans la ligne en 3 à 4 im, atterrissage sec sans rebond. Atterrissages : ま f128, じ f131, ん f133, 式 f136 (stagger ≈2,7 im). Le suivant est déjà en vol pendant l'atterrissage du précédent. Pas de flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f139.jpg",
+      "illus": {"from": 122, "to": 139, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Recentrage de la mise en page caché par le flash",
+      "name_en": "Flash-masked relayout",
+      "t": "0:04.53-0:04.60",
+      "frames": "f135-f137",
+      "fps": 30,
+      "mechanics": "La ligne construite à gauche (シン à x≈7 %) est recentrée et légèrement réduite pendant le flash gris de f136 (2 im). L'œil ne voit pas le saut de position : le flash sert de cache pour changer de composition sans animation de transition.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f139.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Strobe en négatif (inversion 2 im / 2 im)",
+      "name_en": "Negative strobe",
+      "t": "0:05.27-0:05.70",
+      "frames": "f158-f170",
+      "fps": 30,
+      "mechanics": "Alternance f158-159 négatif, f160-161 normal, f162-163 négatif, f164-165 normal, f166-167 négatif, f168 normal, f169-170 négatif, f171 normal. Négatif = inversion vraie : fond #F3FBF8, rayons menthe #C9F2E6, texte noir, point cyan. RGB split sur les premières images. 13 im au total, cadence ≈2 im = triple-croches à 120 BPM. Démarre sur le temps 5,32 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f169.jpg",
+      "illus": {"from": 156, "to": 172, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet par bandeau rouge incliné qui entraîne le titre",
+      "name_en": "Tilted banner wipe",
+      "t": "0:05.90-0:06.00",
+      "frames": "f177-f180",
+      "fps": 30,
+      "mechanics": "Flash gris doux à f177, puis un parallélogramme rouge #D6002F entre par la gauche : ≈33 % de la largeur à -12° (f178), ≈80 % à -8° (f179), pleine largeur à -7° (f180). Le titre pivote avec lui de 0 à ≈-6°. Pas décroissants = ease-out, 3 im. Ombre portée douce sous le bandeau, vignettage du rouge.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f169.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet diagonal tracé sous le bandeau",
+      "name_en": "Diagonal rule draw-on",
+      "t": "0:06.03-0:06.20",
+      "frames": "f181-f186",
+      "fps": 30,
+      "mechanics": "Une ligne blanche fine (#BDBDBD) parallèle au bandeau, à ≈8 % H sous lui, se trace de la droite vers la gauche en ≈6 im et finit par traverser tout le cadre : soulignement du sous-titre à venir.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f169.jpg ; extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre en resserrement d'interlettrage (tracking-in)",
+      "name_en": "Tracking-in",
+      "t": "0:06.33-0:06.60",
+      "frames": "f190-f198",
+      "fps": 30,
+      "mechanics": "« SHIN MAJIN-SHIKI » en grotesque condensée grasse ≈5 % H, incliné avec le bandeau : à f190 lettres très espacées (≈1 em) et à ≈30 % d'opacité, à f192 ≈0,6 em, à f196 ≈0,25 em pleine opacité. 8 im, ease-out. Démarre sur le temps 6,32 s (attaque 6,33 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Étiquettes de coin révélées par masque (REBOOT / 2026)",
+      "name_en": "Corner labels mask reveal",
+      "t": "0:06.73-0:07.13",
+      "frames": "f202-f214",
+      "fps": 30,
+      "mechanics": "En bas à droite, « REBOOT / 2026 » minuscule (≈1,5 % H, très espacé) se découvre de la droite vers la gauche : « / 2026 » (f204), « OOT / 2026 » (f206), « REBOOT / 2026 » complet à f214, ≈12 im. En haut à gauche, « PROMPT DESIGN SYSTEM » avec un filet rouge dessous. Habillage façon fiche technique, coins opposés.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tampon (hanko) 新 qui claque",
+      "name_en": "Stamp slam",
+      "t": "0:07.37-0:07.67",
+      "frames": "f221-f230",
+      "fps": 30,
+      "mechanics": "Carré rouge bordé de blanc avec 新 crème, incliné ≈+10° : apparaît à ≈×3,5 (≈35 % H, coupé par le coin haut-droit) à f222, dérive à ≈×3 jusqu'à f225, puis claque à ×1 (≈10 % H, x≈93 %, y≈20 %) en 1 im à f226 : ease-in brutal, comme un vrai coup de tampon. Onde de choc rouge autour à f228, posé à f230. Calé sur l'attaque forte 7,57 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg ; overview-02.jpg (7,50 s)",
+      "illus": {"from": 219, "to": 231, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carton final en diagonale avec habillage de coins",
+      "name_en": "Diagonal end card",
+      "t": "0:07.60-0:10.05",
+      "frames": "f228-f299",
+      "fps": 30,
+      "mechanics": "Bandeau rouge -7° sur toute la largeur au centre (≈25 % H d'épaisseur), titre Mincho crème ≈15 % H dedans, sous-titre espacé dessous, filet blanc parallèle, tampon en haut à droite, étiquettes haut-gauche et bas-droite. Diagonale montante = énergie, coins = cadre éditorial.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Carton final tenu 2,45 s sans mouvement",
+      "name_en": "Static end card hold",
+      "t": "0:07.60-0:10.05",
+      "frames": "f228-f299",
+      "fps": 30,
+      "mechanics": "Après le tampon, plus aucun geste lisible pendant 73 im ; seules de petites bosses d'énergie à 8,35 et 9,35 s (reflet ou pulsation probable, invisibles sur les planches). Rupture totale avec la densité des 7 premières secondes (un geste toutes les 4 à 15 im).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain film et vignettage permanents",
+      "name_en": "Film grain and vignette",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Bruit fin visible sur tous les noirs (charbon #0E0F0E, jamais noir pur), vignettage radial fort sur les fonds pleins rouge (centre #E0003C → bords #7A0A1E) et crème (centre #EFECE3 → bords gris). Donne une matière d'écran de cinéma aux aplats.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette tricolore stricte noir / crème / rouge",
+      "name_en": "Strict three-color palette",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Noir charbon, crème #F1EEE4 et rouge #D6002F uniquement ; le rouge n'apparaît que comme ponctuation ou plein cadre ponctuel (REBOOT, DESIGN, point, bandeau, tampon). L'inversion du strobe produit le complément menthe/cyan, seule couleur étrangère, 13 im.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure PV japonaise : accroche, promesse, mots-clés, manifeste, nom, carton",
+      "name_en": "PV structure",
+      "t": "0:00-0:10.05",
+      "frames": "f0-f299",
+      "fps": 30,
+      "mechanics": "Nom actuel (まじん式) → « redémarrage » (再起動 puis REBOOT) → trois usages (PROMPT/DESIGN/SLIDES) → manifeste « Les mots deviennent du design » → 新 (« nouveau ») → construction du nom シン・まじん式 → carton avec tampon 新 et « REBOOT / 2026 ». Le mot 新 sert de rime : plan géant à 2,3 s, tampon à 7,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg ; overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupes sur la grille 120 BPM (temps et demi-temps)",
+      "name_en": "Beat-grid cuts",
+      "t": "0:00.27-0:05.53",
+      "frames": "f8-f166",
+      "fps": 30,
+      "mechanics": "Coupes à f8, f23, f38, f53, f68, f158 (tous les 15 im = 1 temps) et f46, f106, f136, f166 (demi-temps). Toutes 1 à 1,5 im avant la barre audio, décalage constant (latence d'encodage probable) : à l'oreille, la coupe et le coup de grosse caisse sont simultanés. Coupes sèches sur une musique à attaques nettes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f23.jpg ; microM-004-cut-f169.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots-éclairs sur les attaques d'un roulement",
+      "name_en": "Word flashes on a drum fill",
+      "t": "0:01.53-0:01.93",
+      "frames": "f46-f58",
+      "fps": 30,
+      "mechanics": "PROMPT f46, DESIGN f50, SLIDES f53, 言葉は f58 face aux attaques 1,58 / 1,70 / 1,82 / 1,95 s : un mot par coup du roulement, chacun 0,5 à 1,7 im en avance. La subdivision de la musique (double-croches) dicte la durée des plans (3 à 5 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg ; rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Impact visuel posé sur l'attaque la plus forte",
+      "name_en": "Hit on the strongest accent",
+      "t": "0:07.53",
+      "frames": "f226",
+      "fps": 30,
+      "mechanics": "Le tampon 新 claque à f226 (7,53 s), 1 im avant l'attaque 7,57 s, la 2e plus forte du morceau ; l'onde de choc suit 2 im plus tard. Même logique, plus petite, pour le point rouge (f114 = attaque 3,82 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt d'une ligne en japonais, sans aucun matériau : tout le contenu (mots PROMPT/DESIGN/SLIDES, manifeste, REBOOT / 2026) vient de ce que Claude sait ou devine du produit. Le message produit reste donc vague."},
+    {"kind": "direction", "insight": "Sans direction artistique, Claude a déduit du seul préfixe « シン・ » la référence aux films d'Anno et en a tiré une DA cohérente (Mincho extra-gras, filet en L, noir-rouge). Un nom de produit chargé culturellement peut suffire à orienter le style."},
+    {"kind": "structure", "insight": "Aucune durée demandée : Claude a choisi 10 s et une structure PV complète, mais a laissé 2,5 s de carton figé à la fin. Il faut préciser la durée et « aucun plan tenu plus de 1 s »."},
+    {"kind": "build", "insight": "La grille exacte de 15 im entre coupes montre une timeline écrite en temps musicaux (probablement BEAT = 0,5 s dans le code HyperFrames). C'est ce qui donne la synchro, sans que le prompt la demande."},
+    {"kind": "qa", "insight": "Les accents se répètent (flash blanc 6 fois, RGB split 3 fois, onde de choc 4 fois) : un contrôle « chaque accent au plus 2 fois » aurait évité l'usure."}
+  ],
+  "steal": [
+    "Écrire la timeline en temps (120 BPM : 1 temps = 15 im à 30 fps) ; coupes sur temps et demi-temps, mots-éclairs de 3-5 im sur les double-croches d'un roulement.",
+    "Masquer un changement de mise en page par un flash de 2 im (surexposé, gris, net) : la coupe devient un impact et le saut de position disparaît.",
+    "Strobe en négatif avant le carton final : 2 im normal / 2 im inversé pendant ≈13 im ; l'inversion garde la palette (rouge → menthe).",
+    "Tampon : apparaître à ×3, dériver 3 im, claquer à ×1 en 1 im (ease-in), puis onde de choc ; le poser sur l'attaque la plus forte.",
+    "Pour une référence culturelle, copier la grammaire du genre : ici carton-titre Eva, kanji géant + colonne verticale + filet en L, Mincho extra-gras."
+  ],
+  "flaws": [
+    "Flash blanc à presque chaque coupe (6 fois en 6 s) : l'accent s'use, même tic que l'étoile répétée sur chaque zoom.",
+    "RGB split en glitch trois fois : cliché de vidéo IA qui n'ajoute rien au propos.",
+    "Carton final figé 2,45 s pendant que la musique continue : temps mort en fin de pièce.",
+    "Gros plan sur les traits de ン (3,2-3,5 s) illisible : on ne comprend pas qu'on regarde un glyphe.",
+    "PROMPT/DESIGN/SLIDES restent 3 à 5 im : à peine lisibles, la promesse produit reste floue."
+  ],
+  "deep_study": {"worth": true, "why": "10 s très denses : grille 120 BPM tenue à l'image près, mots sur un roulement, strobe négatif, chute de lettres et tampon : un cas d'école de typo calée sur la musique. À étudier à sa cadence native (30 fps), 60 fps inutile."}
+}

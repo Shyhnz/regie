@@ -1,0 +1,575 @@
+{
+  "slug": "rames-jusso-589f80",
+  "title": "UK dubstep track with ASCII visuals",
+  "handle": "@Rames_Jusso",
+  "family": "formes",
+  "craft": 4,
+  "craft_reason": "Image verrouillée sur la musique à 1 image près et concept cohérent (code Strudel qui pourrit en ASCII), mais 22 s de code illisible et scènes ASCII sombres, boueuses.",
+  "summary": "Un morceau de dubstep écrit en code Strudel par Claude, montré à l'écran : le code s'écrit, ses motifs s'allument au rythme, puis les caractères se corrompent et basculent dans un monde ASCII (tags graffiti « DUB », « COLD », « LOUD », anneaux, oscilloscope, flashs vert acide). Fort : chaque flash, coupe ou mot tombe sur le motif kick-snare. Faible : longues plages de code, contraste bas.",
+  "prompt_vs_result": [
+    "Le prompt ne donne qu'un genre et un tempo : dubstep UK façon Rusko/Skream à 140 BPM. Aucune consigne visuelle, aucune durée, aucun texte.",
+    "Claude a tout inventé : composer en Strudel, montrer le code comme image, signer « prod by claude », titrer « BIG LIGHTS », les thèmes de couleur par section, le passage en ASCII et les mots graffiti.",
+    "Le tempo écrit dans le prompt a donné une grille commune au son et à l'image, d'où la synchro parfaite. Rien ne cadrait la lisibilité : il aurait fallu limiter le temps de code et imposer un contraste."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#050505",
+        "role": "fond éditeur noir (intro, vocal chop, fin)"
+      },
+      {
+        "hex": "#C9CFD4",
+        "role": "texte de code"
+      },
+      {
+        "hex": "#4FB8DD",
+        "role": "cadres de surlignage et punchcard (thème 1)"
+      },
+      {
+        "hex": "#0F3E3E",
+        "role": "flash sarcelle à l'arrivée du code (f60)"
+      },
+      {
+        "hex": "#4B575A",
+        "role": "fond ardoise (thème 2, batterie)"
+      },
+      {
+        "hex": "#D6E09A",
+        "role": "cadres de surlignage kaki (thème 2)"
+      },
+      {
+        "hex": "#7CFC4A",
+        "role": "surlignage vert (thème 3) et texte vert de fin"
+      },
+      {
+        "hex": "#121212",
+        "role": "fond des scènes ASCII 1"
+      },
+      {
+        "hex": "#8C1A5B",
+        "role": "magenta : remplissage graffiti, cœur de l'oscilloscope, anneaux"
+      },
+      {
+        "hex": "#A39B5B",
+        "role": "kaki : contour graffiti, notes du piano roll, anneaux"
+      },
+      {
+        "hex": "#2E3060",
+        "role": "bleu nuit : ombre portée et halo"
+      },
+      {
+        "hex": "#7A7A7A",
+        "role": "onde de choc et bandes grises"
+      },
+      {
+        "hex": "#F6F4F8",
+        "role": "fond thème clair (wobble)"
+      },
+      {
+        "hex": "#4B2D7F",
+        "role": "syntaxe violette, lueur lilas #E5D9F2"
+      },
+      {
+        "hex": "#0A120A",
+        "role": "fond des scènes ASCII vertes"
+      },
+      {
+        "hex": "#5E9E4E",
+        "role": "glyphes ASCII verts"
+      },
+      {
+        "hex": "#5BCF2B",
+        "role": "flash plein cadre vert acide (1 à 2 im)"
+      }
+    ],
+    "type": "Mono sans (type JetBrains Mono, probable) pour le code, corps ≈ 2,4 % de la hauteur. Lettrage graffiti bulle à coulures en glyphes ASCII : « DUB » ≈ 75 % de la largeur.",
+    "texture": "Tout est rendu en grille de caractères (cellule ≈ 6 px, ≈ 0,55 % du cadre) : glyphes gris en fond, densité qui crée les valeurs. Vignettage radial (projecteur) pendant la corruption. Pas de flou de mouvement. Flashs plein cadre de 1 à 2 images. Lueur lilas radiale en thème clair.",
+    "style": "Live coding, ASCII glitch, sound system",
+    "coherence": "Le caractère est le fil : le code est fait de caractères, la corruption transforme le code en glyphes aléatoires, et les visuels sont faits de glyphes. La grille de tempo unique tient tout. Ce qui casse : 5 thèmes de couleur sans logique visible et des scènes ASCII trop sombres où les formes se lisent mal."
+  },
+  "rhythm": {
+    "bpm": 140,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "140 BPM (pulsation nette 5,76), soit 1 temps = 12,86 im à 30 fps, 1 demi-temps = 6,43 im, 1 double-croche = 3,2 im, 1 mesure = 51,4 im = 1,714 s. Les changements de mot graffiti tombent sur des mesures exactes (f677 → f728 → f779 : 51 im ; f1345 → f1397 : 52 im) ou des demi-mesures (COLD → LOUD → 2 : 25 puis 26 im). La salve de flashs 0:50-0:56.3 suit un motif dubstep demi-tempo de 3 coups par mesure : écarts 26 / 6 / 19 im, soit les doubles-croches 0, 8 et 10 sur 16 (kick, snare, kick). L'alternance magenta/kaki de 0:29.4-0:32 change toutes les 3 à 4 im (double-croche). Les surlignages Strudel suivent chaque événement du motif par construction. Temps morts : noir de 0 à 1,07 s, plage calme 0:46.6-0:50 (piano roll vert presque immobile), fondu final de 1 s. Le reste bouge en permanence.",
+    "timeline": [
+      {
+        "t": "0:00-0:01.07",
+        "what": "Noir total",
+        "technique": "maintien statique d'entrée"
+      },
+      {
+        "t": "0:00.5-0:01.97",
+        "what": "Ligne 1 tapée : « // prod by claude », curseur",
+        "technique": "saisie machine à écrire (typewriter)"
+      },
+      {
+        "t": "0:01.97-0:08.83",
+        "what": "Coupe sur le fichier Strudel complet, flash sarcelle à f60 ; section « skank » surlignée en cyan, punchcard en dessous, défilement lent",
+        "technique": "coupe sur le drop, surlignage des motifs"
+      },
+      {
+        "t": "0:08.83-0:15.5",
+        "what": "Fond ardoise, défilement vers sub, kick, snare, hats ; cadres kaki sur les pas actifs",
+        "technique": "changement de thème par section, défilement guidé par l'instrument"
+      },
+      {
+        "t": "0:15.5-0:18.5",
+        "what": "Thème noir et vert : « dj knobs + the build sweeps », « vocal chop chain »",
+        "technique": "changement de thème"
+      },
+      {
+        "t": "0:18.5-0:22.57",
+        "what": "Le code se corrompt : caractères remplacés par des glyphes aléatoires, blocs inversés, vignettage radial",
+        "technique": "corruption de glyphes en rampe (4 s)"
+      },
+      {
+        "t": "0:22.57-0:24.27",
+        "what": "Iris rapide (f675-f678) puis « DUB » graffiti ASCII magenta/kaki à coulures, fil vertical pointillé",
+        "technique": "iris, mot graffiti ASCII"
+      },
+      {
+        "t": "0:24.27-0:25.97",
+        "what": "« 2 » graffiti qui oscille latéralement",
+        "technique": "changement de mot à la mesure"
+      },
+      {
+        "t": "0:25.97-0:29.4",
+        "what": "Piano roll ASCII : barres kaki, points magenta sur une tête de lecture verticale, ondes de choc grises",
+        "technique": "piano roll ASCII, onde de choc sur les coups"
+      },
+      {
+        "t": "0:29.4-0:32.9",
+        "what": "Tunnel d'anneaux concentriques irréguliers ; palette magenta/kaki qui alterne à chaque double-croche",
+        "technique": "stroboscope de palette"
+      },
+      {
+        "t": "0:32.9-0:34.9",
+        "what": "Oscilloscope horizontal (cœur magenta, bords kaki, halo bleu nuit) qui explose sur les coups",
+        "technique": "forme d'onde réactive"
+      },
+      {
+        "t": "0:34.9-0:36.4",
+        "what": "Superposition anneaux + onde + piano roll",
+        "technique": "empilement des couches"
+      },
+      {
+        "t": "0:36.4-0:37.2",
+        "what": "Cercle de code qui grandit depuis le centre et blanchit tout : thème clair violet",
+        "technique": "révélation circulaire (iris) + surexposition"
+      },
+      {
+        "t": "0:37.2-0:42.4",
+        "what": "Code clair : section « wobble », lueur lilas ; corruption croissante dès 0:39",
+        "technique": "thème clair, corruption"
+      },
+      {
+        "t": "0:42.4-0:43.13",
+        "what": "Teinte gris-vert puis code noir et vert corrompu",
+        "technique": "virage de teinte"
+      },
+      {
+        "t": "0:43.13-0:46.57",
+        "what": "Flash vert d'entrée puis « COLD », « LOUD », « 2 » en ASCII vert",
+        "technique": "mots à la demi-mesure"
+      },
+      {
+        "t": "0:46.57-0:50.0",
+        "what": "Piano roll vert presque immobile, anneau faible",
+        "technique": "respiration (break)"
+      },
+      {
+        "t": "0:50.0-0:56.3",
+        "what": "Anneaux et onde verts, flashs vert acide plein cadre sur kick et snare",
+        "technique": "flash sur la batterie"
+      },
+      {
+        "t": "0:56.3-0:57.4",
+        "what": "Tunnel d'anneaux, tache sombre au centre",
+        "technique": "fin de drop"
+      },
+      {
+        "t": "0:57.4-0:58.0",
+        "what": "Cercle de code vert qui s'ouvre au milieu de l'ASCII",
+        "technique": "iris retour au code"
+      },
+      {
+        "t": "0:58.0-0:58.8",
+        "what": "Fichier entier en petit, puis plongée sur la dernière ligne « ._scope() »",
+        "technique": "dézoom de survol puis zoom avant"
+      },
+      {
+        "t": "0:59.0-1:00.5",
+        "what": "Ligne 80 tapée : « // big lights out »",
+        "technique": "signature de fin en saisie"
+      },
+      {
+        "t": "1:00.5-1:01.5",
+        "what": "Fondu au noir",
+        "technique": "fondu de sortie"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "30 gestes clés sur 30 tombent à -1 ou -2 im d'une barre bleue ou bleu clair, jamais après : microM-001 (bande grise f857 / demi-temps f858, onde de choc f863 / temps f864), microM-002 (bande f959, flash f966 / temps f967, f972, f979 / temps f980), microM-003 (salves de l'oscilloscope f1011, f1017, f1030), microM-004 (f1062, f1069, f1075, f1082), microM-005 (coupe vers COLD f1294 / f1295), microM-006 à 012 (flashs verts f1499, f1525, f1532, f1577, f1583, f1602, f1628, f1634, f1654, f1679, f1686), plus 5 changements de mot à la mesure (f677, f728, f779, f1345, f1397). À 140 BPM et 30 fps, ±2 im couvre ≈ 78 % des images, donc le compte seul prouve peu ; la preuve est le décalage constant (-1 im dans 22 cas, -2 im dans 8), soit une fenêtre de 2 im sur 6,4 (hasard ≈ 31 % par événement, 30/30 observé). Mesures auto : départs/demi-temps R = 0,44, p = 4,5e-8 ; coupes proches des attaques fortes (9,73 s → f291, 30,30 s → f908, 50,88 s → f1527, 52,59 s → f1578).",
+    "synced": [
+      "coupes",
+      "flashs",
+      "pulsations",
+      "couleur",
+      "texte",
+      "impacts",
+      "drop"
+    ],
+    "style_match": "Dubstep demi-tempo grave et sale : glyphes ASCII rugueux, palette sombre, flashs acides et stroboscope à la double-croche collent au wobble et au caractère sound system.",
+    "how_built": "Claude a écrit le morceau lui-même en Strudel (« BIG LIGHTS · strudel · 140 BPM · F minor, half-time ») : son et image partagent la même horloge de motifs. Les surlignages et `_punchcard()` / `_scope()` sont les visualiseurs natifs de Strudel ; les scènes ASCII réagissent probablement aux événements du motif (kick, snare, wobble x16) ou à l'enveloppe audio. Le décalage constant de -1 im prouve une synchro calculée, pas posée à la main."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture en saisie de code puis coupe sur le drop",
+      "name_en": "Typed cold open cut to the drop",
+      "t": "0:00-0:02.0",
+      "frames": "f0-f60",
+      "fps": 30,
+      "mechanics": "1,07 s de noir, puis « // prod by claude » tapé caractère par caractère (≈ 2 caractères par image, curseur barre) en haut à gauche, corps ≈ 2,4 % de la hauteur. À f59 (1,97 s) coupe franche sur le fichier complet, fond sarcelle #0F3E3E pendant 1 image (f60) puis noir ; le drop audio mesuré à 2,26 s suit de 9 im (premier coup du motif).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Surlignage des motifs Strudel en temps réel",
+      "name_en": "Live pattern highlighting",
+      "t": "0:02.0-0:22.5",
+      "frames": "f60-f675",
+      "fps": 30,
+      "mechanics": "Chaque jeton de mini-notation actif (note d'accord, « x » du kick, « white » des hats, nom de son) reçoit un cadre de 1 px (cyan #4FB8DD, puis kaki, puis vert selon le thème) pendant la durée de son événement, soit 3 à 13 im. Plusieurs cadres s'allument en même temps selon la polyphonie. Synchro parfaite par construction : c'est l'horloge du séquenceur qui dessine.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Punchcard sous chaque instrument",
+      "name_en": "Inline punchcard visualizer",
+      "t": "0:02.5-0:08.5",
+      "frames": "f75-f255",
+      "fps": 30,
+      "mechanics": "Sous la section « skank », une rangée de tirets horizontaux (≈ 3 % de la largeur chacun, 8 par mesure) représente les événements ; l'événement joué s'épaissit en double trait plus clair, une barre verticale de tête de lecture glisse de gauche à droite en 1 mesure (1,714 s), linéaire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Défilement guidé par l'instrument qui entre",
+      "name_en": "Instrument-led code scroll",
+      "t": "0:02.0-0:22.5",
+      "frames": "f60-f675",
+      "fps": 30,
+      "mechanics": "Le cadre descend dans le fichier à mesure que les pistes entrent : skank (l. 11-18) → sub (l. 20-24) à 0:09 → kick/snare/hats (l. 26-40) à 0:09.7 → roll et wobble à 0:12.5 → dj knobs et vocal chop (l. 55-75) à 0:16. Défilements lents de 1 à 3 lignes par seconde, ou sauts sur coupe (f265, f291).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un thème de couleur par section musicale",
+      "name_en": "Per-section color theme swap",
+      "t": "0:08.83-0:43.13",
+      "frames": "f265-f1294",
+      "fps": 30,
+      "mechanics": "5 thèmes en coupe sèche : noir/cyan (intro) → ardoise #4B575A/kaki (batterie, f265) → noir/vert (build, 0:15.5) → blanc #F6F4F8/violet #4B2D7F (wobble, 0:37) → noir/vert (0:43). Les changements tombent sur des débuts de section. Lisible comme marqueur de structure, mais sans logique de palette commune.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Corruption du code en glyphes aléatoires",
+      "name_en": "Glyph corruption build-up",
+      "t": "0:18.5-0:22.57",
+      "frames": "f555-f677",
+      "fps": 30,
+      "mechanics": "Rampe de 4 s (≈ 2,4 mesures) : quelques caractères isolés remplacés par des symboles (#, %, @, *, =) à 0:18.5, puis ≈ 20 % du texte à 0:21, ≈ 40 % à 0:22.4 avec blocs inversés blanc sur noir et cadres verts qui s'étalent. Un vignettage radial assombrit les bords (projecteur centré). La coupe vers l'ASCII tombe sur le demi-temps à 22,57 s. Répétée en thème clair de 0:39 à 0:43.1. Transition motivée : le code se dissout en caractères, et l'image suivante est faite de caractères.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg, extra-01.jpg",
+      "illus": {
+        "from": 540,
+        "to": 690,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris rapide code → ASCII",
+      "name_en": "Snap iris into ASCII",
+      "t": "0:22.50-0:22.60",
+      "frames": "f675-f678",
+      "fps": 30,
+      "mechanics": "À f675 le code est encore là sous un projecteur radial ; à f678 un disque gris clair (≈ 90 % du cadre) contient déjà « DUB » ; dès f681 le disque s'est fondu dans le fond. Transition de 3 im, lue comme une coupe avec respiration circulaire.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot graffiti en ASCII à 3 tons avec coulures",
+      "name_en": "ASCII graffiti tag lettering",
+      "t": "0:22.57-0:25.97",
+      "frames": "f677-f779",
+      "fps": 30,
+      "mechanics": "Lettrage bulle style tag (« DUB », « 2 », puis « COLD », « LOUD ») rendu en caractères : remplissage magenta #8C1A5B, contour kaki #A39B5B d'≈ 2 cellules, ombre portée bleu nuit #2E3060 décalée bas-droite ≈ 2 % du cadre, coulures de 3 à 6 % sous les lettres. « DUB » ≈ 75 % de la largeur et 30 % de la hauteur, centré à 42 % de la hauteur ; un fil pointillé vertical traverse le centre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg",
+      "illus": {
+        "from": 678,
+        "to": 777,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Changement de mot à la mesure",
+      "name_en": "Word swap on the bar",
+      "t": "0:22.57-0:46.57",
+      "frames": "f677-f1397",
+      "fps": 30,
+      "mechanics": "Coupe sèche de mot à mot : DUB (f677-f728) → 2 (f728-f779) = 51 im = 1 mesure exacte chacun ; COLD (f1294-f1319) → LOUD (f1319-f1345) = demi-mesure chacun, puis 2 (f1345-f1397) = 1 mesure. Entre deux coupes le mot tressaute : décalage latéral de ±5 à 8 % de la largeur et rotation de 2 à 4° sur certains temps (« 2 » de f741 à f768), sans courbe d'amorti visible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Piano roll ASCII avec tête de lecture",
+      "name_en": "ASCII piano roll",
+      "t": "0:25.97-0:29.4",
+      "frames": "f779-f882",
+      "fps": 30,
+      "mechanics": "Notes en barres horizontales kaki (5 à 25 % de la largeur, ≈ 2 % de haut) réparties sur toute la hauteur ; une ligne verticale pointillée au centre fait office de tête de lecture, et un point magenta (≈ 2 % du cadre) s'allume là où une barre la croise. Les barres défilent latéralement. Reprise en vert de 0:46.6 à 0:50.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, microM-001-move-f864.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Onde de choc grise sur le coup",
+      "name_en": "Hit shockwave ring",
+      "t": "0:28.77-0:29.27",
+      "frames": "f863-f878",
+      "fps": 30,
+      "mechanics": "À f863 (1 im avant le temps f864) une forme grise pleine apparaît au centre (≈ 25 % du cadre), se creuse en anneau à f866, s'élargit à ≈ 60 % à f869 puis ≈ 110 % à f873 en s'estompant : ≈ 10 im, ease-out (grands pas au début). Une bande grise horizontale la précède sur le demi-temps (f857). Même onde à f1017-f1027 sur l'oscilloscope.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f864.jpg, microM-003-move-f1018.jpg",
+      "illus": {
+        "from": 857,
+        "to": 875,
+        "n": 6
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tunnel d'anneaux concentriques irréguliers",
+      "name_en": "Wobbly concentric ring tunnel",
+      "t": "0:29.4-0:32.9",
+      "frames": "f882-f987",
+      "fps": 30,
+      "mechanics": "8 à 10 anneaux polygonaux déformés par du bruit, du centre au bord, épaisseur ≈ 2 cellules ; ils pulsent (léger gonflement vers l'extérieur) sur chaque temps et se déforment en ovale sur certaines frappes (f966). Repris en vert de 0:50 à 0:57.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, microM-002-move-f967.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Stroboscope de palette à la double-croche",
+      "name_en": "16th-note palette strobe",
+      "t": "0:29.4-0:32.9",
+      "frames": "f955-f984",
+      "fps": 30,
+      "mechanics": "Les anneaux basculent magenta ↔ kaki toutes les 3 à 4 im (f956, f959, f963, f966, f969, f972, f976, f979, f982), soit la double-croche à 140 BPM (3,2 im). Sur le temps f967, une image grise surexposée (f966) remplace la couleur. C'est la matérialisation du wobble « x16 » du code. Le détecteur de coupes a compté ces bascules comme des coupes (f898-f914, f950-f959).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f967.jpg",
+      "illus": {
+        "from": 955,
+        "to": 984,
+        "n": 8
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Oscilloscope qui explose sur les coups",
+      "name_en": "Reactive scope band",
+      "t": "0:32.9-0:34.9",
+      "frames": "f987-f1047",
+      "fps": 30,
+      "mechanics": "Bande horizontale centrée (≈ 8 % de haut au repos : cœur magenta, bords kaki, halo bleu nuit à ±10 %). Sur un coup (f1011, f1017, f1030 : 1 im avant le demi-temps ou le temps), elle se hérisse de pics verticaux jusqu'à ±15 % de la hauteur, puis se lisse en 4 à 6 im (ease-out). Une onde de choc grise part du centre au coup f1017.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f1018.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Empilement des couches au sommet du drop",
+      "name_en": "Layer stacking at the peak",
+      "t": "0:34.9-0:36.4",
+      "frames": "f1047-f1092",
+      "fps": 30,
+      "mechanics": "Anneaux + oscilloscope + barres du piano roll superposés, palette qui alterne magenta/kaki sur les demi-temps (f1062, f1069, f1075, f1082). La densité visuelle monte avec la densité musicale (corrélation intensité/mouvement r = 0,37), mais l'image devient confuse.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f1070.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Révélation circulaire avec surexposition",
+      "name_en": "Iris reveal with white-out",
+      "t": "0:36.40-0:37.20",
+      "frames": "f1092-f1116",
+      "fps": 30,
+      "mechanics": "Un disque gris contenant le code part du centre (≈ 10 % de la largeur à f1092), atteint ≈ 25 % à f1095, ≈ 45 % à f1098, ≈ 80 % à f1104 et déborde le cadre à f1110 : ≈ 18 im, croissance presque linéaire. En même temps l'ensemble blanchit (gris → blanc #F6F4F8) et l'ASCII extérieur se délave ; à f1116 le thème clair est installé. Pas de flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-05.jpg",
+      "illus": {
+        "from": 1092,
+        "to": 1116,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Entrée sur flash qui décroît",
+      "name_en": "Flash-in decay",
+      "t": "0:43.10-0:43.40",
+      "frames": "f1288-f1302",
+      "fps": 30,
+      "mechanics": "Le code noir/vert s'assombrit sur 5 im, puis coupe à f1294 (1 im avant le demi-temps f1295) sur « COLD » ASCII baigné de vert clair qui retombe au noir en ≈ 6 im (f1295-f1301), ease-out.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1293.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash plein cadre sur le motif kick-snare",
+      "name_en": "Kick-snare full-frame flash",
+      "t": "0:50.0-0:56.3",
+      "frames": "f1499-f1687",
+      "fps": 30,
+      "mechanics": "Image entière remplacée par une version vert acide #5BCF2B (glyphes plus foncés en négatif) pendant 2 im (parfois 1), à f1499, f1525, f1532, f1577, f1583, f1602, f1628, f1634, f1654, f1679, f1686. Écarts 26 / 6 / 19 im par mesure = doubles-croches 0, 8, 10 sur 16 : le motif kick-snare-kick du dubstep demi-tempo. Chaque flash finit 1 im avant la barre (bleue ou bleu clair).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1501.jpg à microM-012-cut-f1681.jpg",
+      "illus": {
+        "from": 1574,
+        "to": 1590,
+        "n": 6
+      }
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu ASCII de toute l'image",
+      "name_en": "Full-frame ASCII render",
+      "t": "0:22.57-0:57.4",
+      "frames": "f677-f1722",
+      "fps": 30,
+      "mechanics": "Les scènes sont rendues en grille de caractères mono (cellule ≈ 6 px sur 1080), la valeur vient de la densité du glyphe (. : = # @). Fond de glyphes gris très sombres qui garde une texture vivante même sans forme. Monochrome vert dans la seconde moitié. Contraste faible : les formes à 30 % de luminance se perdent.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Survol du fichier entier puis plongée sur la dernière ligne",
+      "name_en": "Overview pull-back then dive",
+      "t": "0:57.4-0:58.8",
+      "frames": "f1722-f1764",
+      "fps": 30,
+      "mechanics": "Iris de retour au code (cercle de code vert dans l'ASCII, f1725), puis le fichier entier apparaît réduit (≈ 45 % d'échelle, colonne centrale, toutes les lignes lisibles comme une texture) à 0:58.0, et en ≈ 15 im on est recadré à 100 % sur la fin du fichier « ._scope() ». Montre la taille de l'œuvre avant de conclure.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature de fin tapée comme un commentaire",
+      "name_en": "Typed comment sign-off",
+      "t": "0:59.0-1:01.5",
+      "frames": "f1770-f1843",
+      "fps": 30,
+      "mechanics": "Nouvelle ligne 80 : « // big lights out » tapé avec curseur (≈ 1,3 s), qui répond à l'ouverture « // prod by claude » et au titre « BIG LIGHTS » de la ligne 2. Maintien puis fondu au noir en ≈ 1 s (f1815-f1843).",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Verrouillage à -1 image sur la grille du tempo",
+      "name_en": "One-frame-early beat lock",
+      "t": "0:22.57-0:56.3",
+      "frames": "f677-f1687",
+      "fps": 30,
+      "mechanics": "Tous les gestes clés (flashs, ondes de choc, salves d'oscilloscope, bascules de palette, coupes de mot) commencent 1 im (parfois 2) avant la barre du temps ou du demi-temps, jamais après : l'image d'impact précède le son audible de ≈ 33 ms, ce qui se perçoit comme parfaitement simultané. Caractère : courbes sèches, pas de ressort, flashs de 1 à 2 im sur une basse wobble et une batterie demi-tempo.",
+      "verdict": "reprendre",
+      "evidence": "microM-001 à microM-012"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure du morceau = structure de l'image",
+      "name_en": "Song form drives visual form",
+      "t": "0:00-1:01.5",
+      "frames": "f0-f1843",
+      "fps": 30,
+      "mechanics": "Intro et montée = code lisible (on voit le morceau se construire, instrument par instrument) ; drop = monde ASCII ; break = retour au code en thème clair ; second drop = ASCII vert avec flashs ; outro = code et signature. Les deux corruptions (4 s chacune) jouent le rôle de la montée avant le drop.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg à overview-09.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Éditeur plein cadre carré",
+      "name_en": "Full-bleed square editor",
+      "t": "0:02.0-0:22.5",
+      "frames": "f60-f675",
+      "fps": 30,
+      "mechanics": "Format 1080×1080, numéros de ligne gris à gauche (≈ 3 % de marge), code calé à gauche, ≈ 25 à 28 lignes visibles, aucune interface autour (pas de barre d'outils). Texte petit : corps ≈ 2,4 % de la hauteur, illisible sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Plages de code trop longues",
+      "name_en": "Over-long code stretches",
+      "t": "0:02.0-0:22.5",
+      "frames": "f60-f675",
+      "fps": 30,
+      "mechanics": "20,5 s de code avant le premier visuel (un tiers de la vidéo), puis 6 s de code clair au milieu. Seuls les cadres de surlignage bougent : pour un public non codeur, c'est un temps mort visuel.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Un prompt de 6 mots, tout musical (« 140 BPM rusko/skream style UK dubstep ») : Claude a pris la musique comme sujet principal et a fabriqué l'image autour du code qui la produit."
+    },
+    {
+      "kind": "build",
+      "insight": "Le BPM écrit dans le prompt et une musique générée en code (Strudel) donnent une horloge unique au son et à l'image : la synchro devient un calcul, pas un calage manuel. C'est la recette la plus sûre pour une vidéo animée sur la musique."
+    },
+    {
+      "kind": "direction",
+      "insight": "Sans consigne visuelle, le modèle montre son propre code pendant un tiers de la vidéo. Préciser « visuels audio-réactifs plein cadre, code 5 s maximum » aurait gardé l'idée sans le temps mort."
+    },
+    {
+      "kind": "other",
+      "insight": "Les références d'artistes (Rusko, Skream) se traduisent en culture visuelle : lettrage graffiti « DUB », palette sound system sombre, wobble rendu en stroboscope de double-croches."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucun contrôle de contraste demandé : les scènes ASCII vertes et magenta à 20-30 % de luminance se lisent mal en vignette, ce qu'une consigne « contraste minimum » aurait évité."
+    }
+  ],
+  "steal": [
+    "Générer la musique en code au BPM voulu et piloter chaque visuel par les mêmes événements : flash, onde de choc, bascule de couleur calés à -1 image.",
+    "Flasher le cadre entier 2 images sur le motif kick-snare (doubles-croches 0, 8, 10 en demi-tempo) plutôt que sur chaque temps.",
+    "Transition motivée : corrompre progressivement le texte en glyphes aléatoires sur 2 mesures, puis couper sur un monde fait de glyphes.",
+    "Changer de mot exactement à la mesure (1,714 s à 140 BPM) et le faire tressauter sur les temps entre deux coupes.",
+    "Fermer la boucle : ouvrir et fermer sur un commentaire tapé (« // prod by claude » → « // big lights out »)."
+  ],
+  "flaws": [
+    "20 s de code avant le premier visuel : temps mort pour qui ne lit pas Strudel.",
+    "Scènes ASCII sombres et peu contrastées : formes illisibles en petit, surtout en vert.",
+    "Cinq thèmes de couleur sans système commun, la vidéo semble faite de morceaux.",
+    "Empilement anneaux + onde + piano roll au sommet du drop : bouillie visuelle.",
+    "Code en corps 2,4 % : illisible sur téléphone."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Rare vidéo où chaque événement visuel est calculé sur le motif musical (décalage constant de -1 im) : idéale pour apprendre la synchro image par image, même si la cadence native n'est que 30 fps ; à étudier surtout 0:28-0:37 et 0:50-0:57."
+  }
+}

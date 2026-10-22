@@ -1,0 +1,342 @@
+{
+  "slug": "gdgtify-287ddf",
+  "title": "Speech built as architecture",
+  "handle": "@Gdgtify",
+  "family": "typo",
+  "craft": 4,
+  "craft_reason": "Concept fort et tenu : chaque mot devient une pièce de charpente, deux plongées dans un glyphe très propres et une boucle parfaite. Mais 57 % de maintiens, sous-titres serif minuscules et final tassé.",
+  "summary": "Discours de cinq phrases mis en scène par la seule typographie, fond vert profond. WAIT écrase l'ouverture, WAITING pend à deux câbles et fait ployer la ligne d'or, VOICE devient pilier, le O de ROOM sert de hublot vers le plan suivant, FLOOR et US. se posent sur la ligne. Fin : zoom dans le I de WAITING, plein cadre crème, ressortie par le I de WAIT. Lent mais brillant.",
+  "prompt_vs_result": [
+    "Prompt très long : texte exact du discours, rôle architectural de chaque mot, palette hex, trois familles de police, storyboard minuté en 7 cues, amortissement critique, 400 ms d'immobilité, rendu déterministe seek(t) et boucle render(0)=render(20).",
+    "Claude a inventé le HUD de cues (règle mono « CUE 0N » et segment or), la sortie des mots de derrière la ligne d'or, la miniature du plan suivant dans le O, le pivot de VOICE et le zoom par le fût du I.",
+    "Bien cadré : rôles et timecodes respectés à 0,1 s près. Mal cadré : « la plateforme assemblée » reste un portique déjà là, et rien n'impose des tailles minimales de sous-titres ni une durée maximale de maintien."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0D261E", "role": "fond vert profond (demandé #102820)"},
+      {"hex": "#F2E8D2", "role": "papier : tous les mots (demandé #F4E9D5)"},
+      {"hex": "#F2B544", "role": "accent structurel : ligne de base, câbles, segment de progression"},
+      {"hex": "#727863", "role": "gris-vert : texte mono du HUD, règle graduée, ligne de sol"}
+    ],
+    "type": "Grotesque ultra-grasse large (type Archivo Black, probable) en capitales : WAIT 21 % de hauteur, autres 7 à 9 %. Serif didone (Playfair Display probable) bas de casse 3 à 4 %. Mono minuscule ≈1,5 % pour les cues.",
+    "texture": "Aplat pur, aucun grain, aucune ombre, aucun flou de mouvement, aucun glow. Filets or de 4-5 px. Rendu vectoriel net (SVG/Canvas).",
+    "style": "éditorial monumental, typographie-architecture",
+    "coherence": "Système très serré : trois couleurs, trois familles, une seule ligne d'or qui sert à la fois de ligne de base, d'horizon de masque et de poutre. Les mots structurels sont toujours en grotesque, la parole en serif. Ce qui casse : le final où FLOOR, US. et WAITING se touchent presque (le point de US. bute sur le E du pilier droit) pendant que la moitié basse reste vide."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio, un seul plan continu de 20 s (1200 im à 60 fps). Le rythme suit une feuille de cues en phrases : un groupe de mots toutes les 0,4 à 1 s (We were told 0,5 s, to wait 1,5 s, So we learned 3,7 s, the weight of 4,5 s, WAITING 4,9 s, Then one 7,1 s, VOICE 7,2 s, made 9,0 s, ROOM 9,25 s, Then 10,5 s, another 10,7 s, Now the 13,1 s, FLOOR 13,45 s, belongs to 14,3 s, US. 15,0 s). Chaque révélation dure 8 à 20 im (0,13-0,33 s). Mesure automatique confirmée à l'œil : 9 maintiens totalisant 11,3 s (57 %), dont 1,15 s à 11,4-12,6 s (immobilité exigée par le prompt, juste après la mise à niveau) et 4,4 s à 13,6-18,0 s (dont 2,7 s de tableau final totalement figé, la « détente des câbles » demandée est invisible). Les seuls pics d'énergie sont les quatre gestes structurels : sortie de WAIT (3,5-3,8 s), glissement + VOICE (6,7-7,6 s), plongée dans le O (9,5-10,0 s), zoom final (18,0-20,0 s). Lisible pour une pièce de lecture muette, mais loin du « quelque chose bouge toutes les 0,5-1 s » de 1600.",
+    "timeline": [
+      {"t": "0:00-0:03.0", "what": "WAIT géant (21 % de hauteur, 88 % de largeur) au-dessus d'une ligne d'or légèrement inclinée ; « We were told » puis « to wait. » sortent de derrière la ligne ; WAIT descend lentement et comprime l'ouverture de 17 % à 7 % de hauteur", "technique": "compression de l'espace + révélation masquée par la ligne"},
+      {"t": "0:03.0-0:03.9", "what": "La phrase disparaît, WAIT s'envole hors cadre par le haut (≈18 im, accélération) ; la ligne remonte de 65 % à 43 % ; « So we learned » sort de la ligne", "technique": "sortie en ease-in + remontée de la ligne"},
+      {"t": "0:04.5-0:06.5", "what": "« the weight of » ; deux filets verticaux descendent, WAITING se pose dessous et descend ≈5 % ; la ligne ploie (flèche ≈2-3 % au centre) et la phrase serif suit la courbe", "technique": "câbles + ligne de base déformable + texte sur tracé"},
+      {"t": "0:06.6-0:07.0", "what": "La phrase s'efface en ≈6 im ; le groupe ligne + WAITING glisse de ≈19 % vers la droite et ≈6 % vers le haut (≈27 im, ease-in-out)", "technique": "faire de la place par glissement"},
+      {"t": "0:07.1-0:08.0", "what": "« Then one » en haut à gauche ; VOICE monte du bas du cadre jusqu'à la ligne (≈30 im, ease-out)", "technique": "entrée verticale amortie"},
+      {"t": "0:08.0-0:08.6", "what": "VOICE pivote de 90° autour de son extrémité droite (33 im) et devient pilier vertical ; il soulève l'extrémité gauche de la ligne qui s'incline (≈3°)", "technique": "mot qui pivote en pilier"},
+      {"t": "0:09.0-0:09.5", "what": "« made » minuscule puis ROOM en serif didone (≈12 % de hauteur) ; dans le contre-poinçon du O, une miniature de VOICE + WAITING", "technique": "aperçu du plan suivant dans un glyphe"},
+      {"t": "0:09.5-0:10.0", "what": "Zoom accéléré dans le O (≈30 im, échelle ×16) ; les fûts crème du O sortent par les bords à f597-f600 ; la miniature devient le plan réel", "technique": "plongée dans le contre-poinçon"},
+      {"t": "0:10.5-0:11.4", "what": "« Then another. » mot à mot ; second VOICE monte à droite (≈30 im) ; la ligne inclinée revient à l'horizontale sans rebond (≈f650-f690)", "technique": "second pilier + mise à niveau amortie"},
+      {"t": "0:11.4-0:12.6", "what": "Portique parfaitement horizontal, rien ne bouge pendant 1,15 s", "technique": "immobilité gagnée"},
+      {"t": "0:12.6-0:13.1", "what": "« Then another. » s'efface en ≈8 im ; WAITING remonte contre la ligne (câbles raccourcis à zéro, ≈16 im) ; « Now the » apparaît", "technique": "délestage de la charge"},
+      {"t": "0:13.4-0:15.3", "what": "FLOOR sort de derrière la ligne d'or (≈20 im), « belongs to » en serif (≈12 im), puis US. sort de la ligne à droite (≈16 im), même taille et même alignement que FLOOR", "technique": "phrase finale posée sur la poutre"},
+      {"t": "0:15.3-0:18.0", "what": "Tableau final figé : portique VOICE / WAITING / VOICE, FLOOR … US. sur la ligne, intérieur vide", "technique": "maintien de déclaration"},
+      {"t": "0:18.0-0:18.98", "what": "Zoom accéléré vers le I de WAITING (≈59 im) jusqu'à ce que son fût remplisse le cadre", "technique": "travelling dans un glyphe"},
+      {"t": "0:18.98-0:19.15", "what": "Plein cadre crème ≈9 im (occlusion totale ; tout est remis en place)", "technique": "occlusion par aplat"},
+      {"t": "0:19.15-0:20.0", "what": "Le rectangle crème se révèle être le I de WAIT ; dézoom décéléré (≈50 im) jusqu'à l'image d'ouverture exacte (f1199 ≈ f0)", "technique": "boucle parfaite par match cut de glyphe"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (audio=no dans le dossier, pas de grille de temps) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : film muet. Le prompt interdit de caler sur un beat (« Do not force the speech onto a dance beat ») et rythme par phrases et pauses.",
+    "how_built": "Le prompt rend l'audio optionnel et coupé par défaut ; la temporalité vient d'une feuille de cues en secondes (0-3, 3-6,5, 6,5-10, 10-12,5, 12,5-16, 16-18, 18-20) affichée à l'écran par le HUD mono."
+  },
+  "techniques": [
+    {
+      "cat": "type-design",
+      "name_fr": "Mots à rôle architectural (linteau, charge, pilier, ouverture, plancher)",
+      "name_en": "Words as structural members",
+      "t": "0:00-0:18.0",
+      "frames": "f0-f1080",
+      "fps": 60,
+      "mechanics": "Chaque mot porteur reçoit une fonction physique lisible : WAIT (21 % de hauteur) pèse au-dessus de l'ouverture ; WAITING pend sous la ligne d'or par deux filets ; VOICE tourné à 90° devient pilier (≈46 % de la hauteur en longueur, ≈10 % de largeur) ; le contre-poinçon du O de ROOM sert de hublot ; FLOOR et US. reposent sur la poutre. Toujours en grotesque ultra-grasse ; la parole liante reste en serif. Le sens se lit dans la mise en page, sans illustration ajoutée.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, image f960 pleine résolution"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois familles à contraste d'échelle extrême",
+      "name_en": "Three-family type hierarchy with extreme scale contrast",
+      "t": "0:00-0:20.0",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Grotesque ultra-grasse large en capitales (WAIT 21 % de hauteur, FLOOR/US. ≈7,5 %, WAITING ≈9 %), serif didone bas de casse (Playfair Display probable, 3 à 4 % ; ROOM monte à ≈12 %), mono gris ≈1,5 % pour les cues. Rapport jusqu'à 6:1 entre mot porteur et parole. Marges latérales fixes de 60 px (5,5 %).",
+      "verdict": "adapter",
+      "evidence": "image f0 et f960 pleine résolution"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Compression lente de l'ouverture (pression par la mise en page)",
+      "name_en": "Slowly compressing opening",
+      "t": "0:00-0:03.0",
+      "frames": "f0-f180",
+      "fps": 60,
+      "mechanics": "WAIT descend de 27 % à 34 % (haut des capitales) et s'incline d'environ -2°, essentiellement entre 1,0 et 2,0 s, pendant que la ligne d'or reste à 64-65 % : l'ouverture où vit la phrase passe de 17 % à 7 % de la hauteur. Aucun tremblement de caméra : la tension vient de l'espace qui se ferme. Mouvement très lent (≈0,5 % du cadre par 10 im), lu comme une pression plus que comme une animation.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f0-f150)",
+      "illus": {"from": 0, "to": 170, "n": 5}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui sortent de derrière la ligne d'or (masque horizon)",
+      "name_en": "Baseline-masked rise reveal",
+      "t": "0:00.5-0:15.3",
+      "frames": "f30-f916",
+      "fps": 60,
+      "mechanics": "La ligne d'or sert de bord de masque : le texte monte de dessous et apparaît coupé net au niveau de la ligne (« We were told » f30, « So we learned » f220, FLOOR f806-f826 ≈20 im, US. f900-f916 ≈16 im). Course ≈1 hauteur de capitale, ease-out, pas de fondu ni de flou. Même grammaire pour toutes les entrées, ce qui unifie la pièce.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f804-f916), microM-001-move-f220.jpg",
+      "illus": {"from": 800, "to": 920, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation par groupes de lecture (feuille de cues)",
+      "name_en": "Phrase-group cue-sheet reveal",
+      "t": "0:00.5-0:15.3",
+      "frames": "f30-f916",
+      "fps": 60,
+      "mechanics": "Les phrases arrivent par groupes de 1 à 3 mots dans l'ordre de lecture, espacés de 0,15 à 0,9 s (« Then » f630 puis « another. » f638-f646, soit 8 im d'écart ; « Now the » 13,1 s, FLOOR 13,45 s, « belongs to » 14,3 s, US. 15,0 s). Les mots de liaison apparaissent vite (8-12 im), les mots porteurs plus lentement (16-30 im). Rythme de diction, pas de grille musicale.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f650.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le linteau s'envole (sortie accélérée par le haut)",
+      "name_en": "Lintel lift-off exit",
+      "t": "0:03.4-0:03.9",
+      "frames": "f205-f235",
+      "fps": 60,
+      "mechanics": "Après l'effacement de la phrase, WAIT monte et sort par le haut en ≈18 im (f205-f223) : petits pas au début, ≈8 % du cadre par image à la fin (ease-in). En parallèle la ligne d'or remonte de 65 % à 43 % (ease-out, f218-f235) et « So we learned » sort de derrière elle. Le chevauchement des deux courbes évite tout trou.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f220.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Câbles de suspension tirés depuis la ligne",
+      "name_en": "Suspension cables from the baseline",
+      "t": "0:04.9-0:06.5",
+      "frames": "f294-f390",
+      "fps": 60,
+      "mechanics": "Deux filets or de ≈1-2 px descendent de la ligne (aux ≈35 % et 55 % de la largeur de WAITING), WAITING se glisse dessous et descend d'environ 5 % du cadre en ≈1 s, amorti sans rebond. Les filets s'allongent avec la charge : la suspension est construite à partir d'éléments du texte, pas d'une illustration.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f300-f390)"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Ligne de base qui ploie sous la charge + texte sur tracé",
+      "name_en": "Load-bearing baseline sag with text-on-path",
+      "t": "0:05.5-0:06.8",
+      "frames": "f330-f408",
+      "fps": 60,
+      "mechanics": "La ligne d'or se déforme en arc concave (flèche ≈2-3 % de la hauteur au centre) au moment où WAITING pèse ; la phrase serif « So we learned the weight of » est posée sur le tracé et suit la courbe lettre par lettre. Déformation élastique contrôlée, réservée à la ligne seule comme l'exige le prompt.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f360-f390), microM-002-move-f407.jpg (f392-f398)",
+      "illus": {"from": 300, "to": 400, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Faire de la place : glissement du groupe avant l'arrivée du pilier",
+      "name_en": "Make-room group shift",
+      "t": "0:06.6-0:07.05",
+      "frames": "f398-f425",
+      "fps": 60,
+      "mechanics": "La phrase s'efface en ≈6 im (f398-f404), puis le groupe ligne + câbles + WAITING glisse de ≈19 % de la largeur vers la droite et ≈6 % vers le haut en ≈27 im, ease-in-out (pas faibles, puis ≈1,5 %/im au milieu, puis faibles). L'espace libéré à gauche annonce l'entrée de VOICE. Défaut : la ligne déborde du bord droit jusqu'à 8,5 s.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f407.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui monte puis pivote de 90° pour devenir pilier",
+      "name_en": "Rise-then-rotate into a support",
+      "t": "0:07.15-0:08.55",
+      "frames": "f426-f513",
+      "fps": 60,
+      "mechanics": "VOICE horizontal entre par le bas (≈105 % → 39 % de la hauteur en ≈30 im, ease-out : ≈13 % puis 6 % puis 2 % par pas de 3 im), tient 0,4 s, puis pivote de -90° autour de son extrémité droite en 33 im (≈10°, 10°, 15°, 15°, 10°, 10°, 5°, 7°, 4°, 3° par pas de 3 im : départ franc, longue décélération). En fin de rotation il soulève l'extrémité gauche de la ligne, inclinée d'environ 3°.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f426-f537)",
+      "illus": {"from": 426, "to": 516, "n": 7}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le contre-poinçon du O (hublot vers le plan suivant)",
+      "name_en": "Counter-aperture zoom through the O",
+      "t": "0:09.5-0:10.02",
+      "frames": "f570-f601",
+      "fps": 60,
+      "mechanics": "Le contre-poinçon du O de ROOM contient une miniature exacte du plan suivant (VOICE + WAITING + ligne inclinée). Zoom continu centré sur le O, en accélération (exponentiel probable) : le contre-poinçon passe de ≈6 % de la largeur (f570) à ≈50 % (f597) puis dépasse le cadre ; échelle ≈×16 en ≈30 im (0,5 s). De f597 à f600 les fûts crème du O traversent les bords gauche et droit comme deux volets ; à f601 le plan réel est en place sans raccord visible. Aucun flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f597.jpg",
+      "illus": {"from": 576, "to": 602, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Second pilier et remise à niveau amortie",
+      "name_en": "Second support levels the beam (critically damped)",
+      "t": "0:10.5-0:11.45",
+      "frames": "f630-f687",
+      "fps": 60,
+      "mechanics": "Le second VOICE, déjà vertical, monte du bas à droite en ≈30 im (ease-out) pendant que « another. » apparaît (f638-f646). La ligne inclinée revient à l'horizontale sur ≈40 im (f650-f690) sans dépassement, et WAITING suit. Premier alignement parfaitement horizontal du film, comme le prompt l'exige.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f650.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Immobilité gagnée après la mise à niveau",
+      "name_en": "Earned stillness",
+      "t": "0:11.42-0:12.57",
+      "frames": "f685-f754",
+      "fps": 60,
+      "mechanics": "1,15 s (69 im) d'immobilité absolue juste après le premier alignement horizontal : le calme est la récompense visuelle du geste. Le prompt demandait au moins 400 ms ; la pièce en compte 9 au-dessus de 0,4 s, ce qui dilue l'effet de celle-ci.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-02.jpg (f690-f750)"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Amortissement critique partout, aucun rebond",
+      "name_en": "Critically damped settles, no overshoot",
+      "t": "0:00-0:20.0",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Toutes les arrivées (VOICE ×2, WAITING, FLOOR, US., ligne) se posent en ease-out sans dépassement mesurable sur les planches microscope ; seules les sorties et les zooms accélèrent (ease-in). Ton grave et monumental cohérent avec le sujet, mais aucun écrasement (squash) ni rebond à l'atterrissage.",
+      "verdict": "adapter",
+      "evidence": "microM-002, microM-004, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Délestage : la charge remonte contre la poutre",
+      "name_en": "Load released to the beam",
+      "t": "0:12.6-0:13.0",
+      "frames": "f756-f780",
+      "fps": 60,
+      "mechanics": "« Then another. » disparaît en ≈8 im ; WAITING remonte de ≈4 % et se colle sous la ligne en ≈16 im, les câbles se raccourcissent à zéro. La poutre devient un plancher épais (ligne + WAITING) prêt à recevoir FLOOR.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg (f756-f780)"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Portique final : emphase par alignement et échelle partagés",
+      "name_en": "Final portal composition, emphasis by shared alignment",
+      "t": "0:15.0-0:18.0",
+      "frames": "f900-f1080",
+      "fps": 60,
+      "mechanics": "Structure en Π : deux piliers VOICE (de 42 % à 89 % de la hauteur), WAITING sous la ligne d'or à 42 %, FLOOR … belongs to … US. posés dessus. US. reçoit l'emphase en partageant taille (≈7,5 %) et ligne avec FLOOR, calé à fer à droite sur le pilier, sans effet ajouté. Défaut : le point de US. touche le E du pilier droit, le G de WAITING frôle ce pilier, et l'intérieur du portique (≈45 % du cadre) reste vide.",
+      "verdict": "adapter",
+      "evidence": "image f960 pleine résolution, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling accéléré vers le fût d'un glyphe",
+      "name_en": "Accelerating push into a glyph stem",
+      "t": "0:18.0-0:18.98",
+      "frames": "f1080-f1139",
+      "fps": 60,
+      "mechanics": "Zoom continu vers le I de WAITING, en ease-in (≈1-2 % d'échelle par image au début, puis le mot sort du cadre à f1105-f1119, puis le fût occupe tout le cadre à f1139). Échelle finale > ×20 en ≈59 im. Le centre du zoom est sous la ligne : FLOOR et la ligne sortent par le haut, ce qui donne l'impression de passer sous la plateforme comme le demande le prompt.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1099.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Occlusion crème puis ressortie par le I de WAIT (match cut de glyphe)",
+      "name_en": "Full-frame stem occlusion into a glyph match cut",
+      "t": "0:18.98-0:20.0",
+      "frames": "f1139-f1199",
+      "fps": 60,
+      "mechanics": "Le fût du I de WAITING remplit le cadre en crème #F2E8D2 pendant ≈9 im (f1139-f1147, 0,15 s) : effet de surexposition, et c'est sous cette occlusion que tous les éléments reviennent à leur position initiale. À f1149 le rectangle crème se rétrécit et devient le I de WAIT ; dézoom décéléré (ease-out) sur ≈50 im : A et T entrent par les bords (f1155-f1165), la ligne d'or réapparaît en bas (f1169), image d'ouverture retrouvée à f1199.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-006-move-f1173.jpg",
+      "illus": {"from": 1105, "to": 1199, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite render(0) = render(20)",
+      "name_en": "Seamless periodic loop",
+      "t": "0:00-0:20.0",
+      "frames": "f0 / f1199",
+      "fps": 60,
+      "mechanics": "La dernière image reproduit la première (WAIT de 27 % à 48 % de hauteur, ligne à 65 %, HUD sur CUE 01). La fin raconte le sens (la plateforme gagnée redevient l'attente initiale) et rend la vidéo bouclable sur les réseaux sans saut visible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg f0, overview-03.jpg f1199"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Progression émotionnelle portée par l'espace disponible",
+      "name_en": "Emotional arc through available space",
+      "t": "0:00-0:18.0",
+      "frames": "f0-f1080",
+      "fps": 60,
+      "mechanics": "Arc en quatre états d'espace : ouverture écrasée (7 % de hauteur), charge suspendue qui fait ployer, structure inclinée sur un pilier, portique horizontal stable. Le texte est la seule matière ; chaque phrase modifie la géométrie du cadre au lieu de simplement s'afficher.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de cues éditorial (règle graduée mono + segment or)",
+      "name_en": "Editorial cue-sheet HUD",
+      "t": "0:00-0:20.0",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Bandeau à ≈4-5 % du haut : « CUE 01 » à gauche, « 00.00 — 03.00 » à droite en mono gris ≈1,5 % de hauteur, règle graduée de 20 s sur toute la largeur utile, segment or qui saute d'un cue à l'autre. Ligne de sol gris-vert à 89 %. Lecture littérale de « small timing marks » du prompt : signature éditoriale, mais expose la feuille de montage au spectateur.",
+      "verdict": "adapter",
+      "evidence": "image f0 et f960 pleine résolution"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Or réservé à la structure",
+      "name_en": "Accent color reserved for structure",
+      "t": "0:00-0:20.0",
+      "frames": "f0-f1199",
+      "fps": 60,
+      "mechanics": "Trois couleurs seulement. L'or #F2B544 n'apparaît que sur ce qui porte (ligne de base, câbles, segment de progression), jamais sur un mot ; tout le texte est en papier crème sur vert #0D261E. Le seul changement de couleur du film est le plein cadre crème de la boucle.",
+      "verdict": "reprendre",
+      "evidence": "image f960 pleine résolution"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Densité de lecture lente (57 % de maintiens)",
+      "name_en": "Slow reading density",
+      "t": "0:00-0:18.0",
+      "frames": "f0-f1080",
+      "fps": 60,
+      "mechanics": "9 maintiens de 0,5 à 4,4 s (total 11,3 s sur 20). Quatre gestes structurels concentrent l'énergie ; le reste est de la lecture. Juste pour un film muet de discours, trop lent pour une promo à la 1600 : le tableau final reste figé 2,7 s puis 1,3 s de plus avant le zoom.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, dossier.md"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Le storyboard en cues minutés (0-3, 3-6,5, 6,5-10, 10-12,5, 12,5-16, 16-18, 18-20 s) a été suivi à 0,1 s près : chaque bascule de scène tombe sur la borne demandée. Un minutage écrit en secondes est obéi littéralement."},
+    {"kind": "direction", "insight": "Attribuer à chaque mot un rôle physique (« WAIT is a lintel, WAITING is a suspended load… ») a produit la meilleure idée de la vidéo : le sens se lit dans la mise en page. Quatre rôles sur cinq sont réussis ; « FLOOR is a platform » reste faible car FLOOR se pose simplement sur une poutre déjà construite."},
+    {"kind": "direction", "insight": "« The counter of the O in ROOM becomes an aperture » a donné une vraie plongée dans un glyphe avec la miniature du plan suivant dans le contre-poinçon : nommer le glyphe et sa partie (counter) suffit à obtenir la transition."},
+    {"kind": "banned", "insight": "Les interdits (pas de mégaphone, drapeau, foule, tremblement de caméra, pas de beat) ont tenu : aucun cliché de manifestation, aucune secousse. Mais ils ont aussi supprimé toute énergie ; rien ne demandait de densité minimale."},
+    {"kind": "build", "insight": "Exiger seek(t) déterministe, des courbes analytiques et render(0)=render(20) a donné une boucle exacte et un amortissement sans rebond ; « critically damped » explique l'absence totale de dépassement."},
+    {"kind": "qa", "insight": "La porte qualité (« inspect eight frames, check reading order ») garantit la lisibilité mais ne vérifie ni les collisions (US. contre le pilier droit) ni la taille minimale des sous-titres serif (« made » ≈2 % de hauteur)."},
+    {"kind": "other", "insight": "« Restrained monospace for small timing marks » a été lu au pied de la lettre : Claude affiche la feuille de cues elle-même (CUE 0N, plages horaires). Préciser le contenu des marques évite ce HUD de production."}
+  ],
+  "steal": [
+    "Donner à chaque mot clé un rôle physique (poids, pilier, câble, ouverture) et ne bouger que ce qui change ce rôle.",
+    "Faire sortir le texte de derrière une ligne de base qui sert de masque : une seule grammaire d'entrée pour toute la pièce.",
+    "Placer une miniature du plan suivant dans le contre-poinçon d'un O, puis zoomer en accélération jusqu'à ce qu'elle devienne le plan réel.",
+    "Boucler en zoomant dans le fût d'une lettre jusqu'au plein cadre, remettre tout en place sous l'aplat, ressortir par le fût d'une autre lettre.",
+    "Réserver la couleur d'accent aux éléments porteurs (lignes, câbles, progression), jamais aux mots."
+  ],
+  "flaws": [
+    "57 % du film en maintien, dont 2,7 s de tableau final figé : trop lent hors format discours.",
+    "Sous-titres serif à 2-4 % de hauteur (« made » minuscule) face à des capitales de 21 % : lecture difficile sur mobile.",
+    "Final tassé en haut : point de US. contre le pilier droit, G de WAITING qui frôle VOICE, moitié basse vide.",
+    "La « plateforme assemblée » promise n'est qu'un mot posé sur une poutre existante.",
+    "HUD « CUE 0N » qui expose la feuille de montage : décor de production plutôt que design."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour deux passages : la plongée dans le contre-poinçon du O (f570-f601) et la boucle par le fût du I avec occlusion crème (f1080-f1199). Mesurer image par image la loi d'échelle (exponentielle ou ease-in) et le raccord exact de la miniature est directement réutilisable en HyperFrames."}
+}

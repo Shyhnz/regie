@@ -1,0 +1,624 @@
+{
+  "slug": "sudo-kiran-6609ed",
+  "title": "DistilBook product explainer",
+  "handle": "@sudo_kiran",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Explainer porté par une voix off et un script drôle, transitions motivées de haut niveau (plongée dans le logo, point puis flash, chronomètre devenu iris), plombé par des maintiens lents et une interface minuscule.",
+  "summary": "Explainer de 30 s pour DistilBook raconté en voix off : « Nobody reads the PDF. But everyone watches the video. » Le PDF se retourne en vidéo, le logo avale le document, trois étapes, illustration en karaoké, « 15 » géant en masque d'images, globe des langues, marque recolorée d'un clic, « Weeks → minutes », fin en boucle. Riche en transitions, plus lent que la version sœur.",
+  "prompt_vs_result": [
+    "Prompt exalté et vague : « best of the best » explainer de 30 s du produit (lien fourni), avec « very good script », bonnes couleurs, « good music », et l'envie qu'on la regarde plusieurs fois.",
+    "Claude a choisi : une voix off en chiasme (« Stop sending documents. Start sending videos. »), la feuille PDF comme fil rouge, des fonds papier, bleu clair et nuit, des iris et plongées, et un fondu final vers l'image d'ouverture pour boucler.",
+    "« Very good script » a produit le meilleur atout : un récit en voix off que l'image suit mot à mot. Rien sur le tempo, la densité ou la taille minimale du texte, d'où des maintiens de 1 à 2 s et une interface illisible."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#EAE6DE",
+        "role": "fond papier de l'accroche (avec vignettage chaud)"
+      },
+      {
+        "hex": "#F6F3EC",
+        "role": "fond crème du logo, de la marque et de la fin, trame de points"
+      },
+      {
+        "hex": "#E9EEFB",
+        "role": "fond bleu très clair à grille fine des étapes produit"
+      },
+      {
+        "hex": "#0B0D24",
+        "role": "fond nuit des scènes « vidéo », « 15 styles » et « 20+ », halos vert et magenta"
+      },
+      {
+        "hex": "#3B63E8",
+        "role": "bleu de marque : « Book », aplat de plongée, scène « Weeks », bouton CTA"
+      },
+      {
+        "hex": "#22C55E",
+        "role": "vert : barre du logo, « Approved », tampon « EVERY WORD »"
+      },
+      {
+        "hex": "#E0307A",
+        "role": "rose : barre du logo, barrés"
+      },
+      {
+        "hex": "#E5484D",
+        "role": "rouge de la pastille « PDF. »"
+      },
+      {
+        "hex": "#F5C542",
+        "role": "jaune : surligneur, mot actif du karaoké, arc du chronomètre, point de « minutes. »"
+      },
+      {
+        "hex": "#EA6A2A",
+        "role": "orange de la pastille « brand » avant recoloration violette #7C3AED"
+      },
+      {
+        "hex": "#1A1B2E",
+        "role": "texte principal"
+      }
+    ],
+    "type": "Grotesque très grasse type Inter Display Black, casse phrase, interlettrage serré ; titres 8 à 15 % de la hauteur, « 15 » ≈ 60 %, « 20+ » ≈ 25 % ; mots clés en pastilles arrondies (« PDF. » rouge, « videos. » en dégradé).",
+    "texture": "Papier légèrement texturé avec vignettage, ombres portées douces sous les feuilles et cartes, halo bleu flou autour du logo, lignes de vitesse radiales sur fond nuit, globe en pointillés, flou de profondeur sur le mur de vignettes, confettis tricolores.",
+    "style": "Explainer SaaS éditorial, papier et nuit",
+    "coherence": "Le fil rouge est un objet : la feuille PDF (empilée, retournée en vidéo, avalée par le logo, scannée, transformée en script) puis le mot « documents » barré à la fin. Les trois couleurs du logo reviennent dans les accents ; chaque thème a son fond (papier = problème, bleu clair = processus, nuit = vidéo et preuve, crème = marque). Ce qui casse : trop de mondes de fond (cinq) et des écrans d'interface trop petits pour être lus."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Le montage suit la voix off, pas la musique. Les scènes s'alignent sur les phrases de la voix (0, 4, 6, 10, 16, 19, 22, 24, 27 s) et les mots apparaissent à la cadence parlée, à intervalles irréguliers (« Nobody » 0,5 s, « the » 0,97 s, « PDF. » 1,12 s, « But » 2,07 s, « everyone » 2,3 s, « watches » 2,9 s, « video. » 3,4 s). Musique estimée à 80 BPM (pulsation moyenne 3,71), 2 coupes sur 10 à moins de 50 ms d'un temps, distance médiane 220 ms. 10 coupes en 30 s, plan médian 2,05 s : plus lent que la version sœur (4f8b59). Maintiens mesurés : 27 % du temps (frappe du script 7,9-8,9 s, illustration en karaoké 10,5-12,1 s et 13,6-14,6 s, logo 24,2-25,1 s, « Stop sending documents. » 25,3-27,2 s, fin 29,1-29,8 s). Ces maintiens sont habités par la voix, mais l'image y est quasi figée ; 12 im de bleu presque vide après l'iris de 21,7 s.",
+    "timeline": [
+      {
+        "t": "0:00-0:01.9",
+        "what": "Fond papier, pile de feuilles à droite, PDF tamponné « UNREAD » ; « Nobody reads the PDF. » mot à mot, pastille rouge « PDF. » qui jaillit ; légende « Q3_Report_FINAL_v7.pdf · opened 0 times »",
+        "technique": "mot à mot sur la voix, pastille en ressort"
+      },
+      {
+        "t": "0:01.93-0:02.1",
+        "what": "Le texte sort vers le haut sous masque, un disque nuit s'ouvre depuis la droite et recouvre le cadre",
+        "technique": "iris nuit décentré"
+      },
+      {
+        "t": "0:02.1-0:03.8",
+        "what": "Mur de vignettes en perspective sur fond nuit ; la feuille PDF se retourne et devient un lecteur vidéo ; « But everyone watches the ▶ video. », cœurs qui montent",
+        "technique": "retournement de carte PDF → vidéo"
+      },
+      {
+        "t": "0:03.78-0:03.9",
+        "what": "Un panneau crème monte du bas et recouvre la scène",
+        "technique": "volet vertical"
+      },
+      {
+        "t": "0:03.9-0:05.0",
+        "what": "Curseur qui traîne le PDF entouré de pastilles DOCX / TXT / MD / URL / IMG vers les 3 barres du logo qui poussent ; le document est aspiré, les barres pulsent dans un halo bleu",
+        "technique": "le logo avale le document"
+      },
+      {
+        "t": "0:05.2-0:06.0",
+        "what": "Les barres rétrécissent à gauche, « DistilBook » s'écrit lettre par lettre (« Book » en bleu), « Documents in. Videos out. »",
+        "technique": "mot-symbole tapé"
+      },
+      {
+        "t": "0:06.0-0:06.37",
+        "what": "Poussée accélérée dans les barres du logo jusqu'aux rayures, aplat bleu, puis cercle blanc qui s'ouvre",
+        "technique": "plongée dans le glyphe + flash + iris"
+      },
+      {
+        "t": "0:06.4-0:07.4",
+        "what": "« 01 Reads it » : une ligne de scan bleue descend le PDF et surligne des lignes en jaune",
+        "technique": "scan lumineux"
+      },
+      {
+        "t": "0:07.2-0:08.6",
+        "what": "« 02 Writes the script » : carte de script, traits jaunes qui volent du PDF vers la carte, texte tapé",
+        "technique": "transfert visuel + frappe"
+      },
+      {
+        "t": "0:08.6-0:09.8",
+        "what": "Clic sur « Approve script » → vert ; « 03 You approve » ; tampon « EVERY WORD » qui s'écrase ; mots soulignés en vert",
+        "technique": "tampon d'approbation"
+      },
+      {
+        "t": "0:10.2-0:10.4",
+        "what": "La carte de script grandit et se transforme en lecteur vidéo avec l'illustration de la feuille",
+        "technique": "morphing de carte"
+      },
+      {
+        "t": "0:10.4-0:15.0",
+        "what": "L'illustration se complète élément par élément (soleil, eau, air, sucre, plante, lapin) au rythme de la voix ; sous-titre karaoké, forme d'onde et tête de lecture ; bandeau équation soleil + eau + air = sucre",
+        "technique": "karaoké + dessin progressif"
+      },
+      {
+        "t": "0:15.0-0:15.87",
+        "what": "Le fond s'assombrit, la carte s'incline en 3D sur des lignes de vitesse puis recule jusqu'à un point",
+        "technique": "rétrécissement en point"
+      },
+      {
+        "t": "0:15.87-0:16.0",
+        "what": "Le point tient 8 im, puis une image blanche",
+        "technique": "flash blanc"
+      },
+      {
+        "t": "0:16.0-0:17.55",
+        "what": "Anneau qui s'élargit, « 15 » géant rempli d'illustrations qui défilent (compteur STYLE 01/15 → 15/15), vignettes en orbite, « styles. »",
+        "technique": "chiffre-masque"
+      },
+      {
+        "t": "0:17.55-0:17.65",
+        "what": "Poussée latérale vers la scène suivante",
+        "technique": "push horizontal"
+      },
+      {
+        "t": "0:17.65-0:19.5",
+        "what": "« 20+ » grandit, bulles de salutations sur un globe en pointillés, sous-titre « CC » traduit en direct (FR, PT, IT, TR), « languages. »",
+        "technique": "globe des langues + sous-titre traduit"
+      },
+      {
+        "t": "0:19.5-0:19.6",
+        "what": "Panneau crème qui monte",
+        "technique": "volet vertical"
+      },
+      {
+        "t": "0:19.6-0:21.6",
+        "what": "« Your brand, on every frame. » : pastille de kit de marque, 3 cartes cadrées en orange ; clic sur la pastille violette, tout se recolore de gauche à droite",
+        "technique": "recoloration en un clic"
+      },
+      {
+        "t": "0:21.6-0:21.7",
+        "what": "Disque bleu qui s'ouvre depuis le centre",
+        "technique": "iris bleu"
+      },
+      {
+        "t": "0:21.9-0:23.4",
+        "what": "« Weeks of work » ; calendrier de 21 jours qui se remplit de croix rouges ; « Weeks » barré en rose",
+        "technique": "calendrier coché"
+      },
+      {
+        "t": "0:23.3-0:24.0",
+        "what": "« done in minutes. » grandit avec dépassement ; chronomètre à arc jaune 01:12 → 04:58",
+        "technique": "mot qui grossit + chronomètre"
+      },
+      {
+        "t": "0:24.0-0:24.15",
+        "what": "Le cadran du chronomètre se remplit de crème et s'étend en iris sur le logo",
+        "technique": "chronomètre → iris"
+      },
+      {
+        "t": "0:24.15-0:27.2",
+        "what": "« DistilBook » ; « Stop sending documents. » gris barré de rouge",
+        "technique": "rappel de l'accroche"
+      },
+      {
+        "t": "0:27.4-0:28.3",
+        "what": "« Start sending ▶ videos. » : pastille dégradée qui jaillit, confettis",
+        "technique": "pastille en ressort + confettis"
+      },
+      {
+        "t": "0:28.3-0:29.8",
+        "what": "« distilbook.com » + bouton « Try it free → » survolé par le curseur",
+        "technique": "CTA"
+      },
+      {
+        "t": "0:29.8-0:30.1",
+        "what": "Fondu vers un fond beige vide, identique à l'image 0",
+        "technique": "boucle"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "La voix off (transcription Whisper cohérente : 9 phrases, script complet) dicte le découpage : changements de scène aux débuts de phrase (0, 4, 6, 10, 16, 19, 22, 24, 27 s) et mots affichés à la cadence parlée, irrégulière. Contre la grille musicale (80 BPM, temps espacés de 45 im à 60 fps, demi-temps de 22,5 im, hasard ±2 im ≈ 22 %) : 8 gestes clés sur 17 à ±2 im d'une barre (iris blanc f379 sur le temps, push f1054, pastille « brand » f1189, pic de « minutes. » f1414, pic de « videos. » f1684 sur des temps ; retournement du PDF f131, iris bleu f1301, retombée de « PDF. » f86 sur des demi-temps), mais les grandes transitions tombent hors grille (iris nuit f122, volets crème f227 et f1171, flash blanc f960 à -4 im, morphing f613, iris-chronomètre f1440-f1449). Mesures automatiques : aucune synchro (meilleur test p = 0,18, p corrigé 0,70 ; grosse caisse z = -0,12). Les coïncidences relèvent probablement du hasard ou de la voix elle-même posée sur la musique.",
+    "synced": [
+      "texte",
+      "apparitions"
+    ],
+    "style_match": "Fond musical sous la voix (≈ 80 BPM, pulsation moyenne) : il porte l'énergie sans dicter le montage. Le caractère exact du morceau n'est pas vérifiable sur les planches.",
+    "how_built": "Le prompt demandait « very good script » et « good music » : Claude a écrit un script de voix off (probablement synthétisé) et a posé chaque scène sur une phrase et chaque mot à l'écran sur le mot parlé. La musique est un lit sonore ajouté dessous sans grille de tempo dans la composition. Pour une synchro musicale, il aurait fallu fixer un BPM et placer les transitions sur les temps entre les phrases."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot calé sur la voix off",
+      "name_en": "voice-synced word reveal",
+      "t": "0:00.5-0:03.5",
+      "frames": "f30-f210",
+      "fps": 60,
+      "mechanics": "Chaque mot monte depuis une ligne de masque en ≈ 6-8 im (ease-out) au moment où il est prononcé : « Nobody » ≈ f30, « reads » ≈ f50, « the » f58-f60, « PDF. » f67 ; « But » f124, « everyone » f136-f138, « watches » ≈ f175, « the ▶ video. » ≈ f205. Intervalles irréguliers (4 à 50 im) qui suivent la diction, pas un tempo. Texte ≈ 8 % de la hauteur, ferré à gauche au tiers gauche, sur deux lignes.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f70.jpg, microM-002-cut-f123.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pastille de mot clé en ressort avec fort dépassement",
+      "name_en": "springy keyword pill pop",
+      "t": "0:01.12-0:01.43",
+      "frames": "f67-f86",
+      "fps": 60,
+      "mechanics": "Pastille rouge #E5484D arrondie « PDF. » en blanc : naît d'un point f67, 50 % f69, 100 % f71, monte à ≈ 135-140 % f73-f78 (dépassement fort, légère rotation et décalage vers le haut), redescend à ≈ 120 % f80, se pose à 100 % f85-f86 (demi-temps f86). Ressort d'environ 18 im (0,3 s) au total. Même geste pour « ▶ videos. » en fin (f1677-f1690, pic sur le temps f1684) avec dégradé bleu → magenta et confettis.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f70.jpg, microM-012-move-f1679.jpg",
+      "illus": {
+        "from": 66,
+        "to": 87,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche en chiasme et détail d'humour",
+      "name_en": "chiasmus hook with comic detail",
+      "t": "0:00-0:03.8",
+      "frames": "f0-f227",
+      "fps": 60,
+      "mechanics": "Deux phrases en miroir (« Nobody reads the PDF. / But everyone watches the video. ») sur deux mondes opposés (papier terne / nuit lumineuse). Détail lisible au second regard : « Q3_Report_FINAL_v7.pdf · opened 0 times » sous le titre et tampon « UNREAD » sur la feuille. Rappelé à la fin par « Stop sending documents. / Start sending videos. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Sortie sous masque + iris nuit décentré",
+      "name_en": "mask-out + off-center dark iris",
+      "t": "0:01.93-0:02.1",
+      "frames": "f116-f126",
+      "fps": 60,
+      "mechanics": "Les deux lignes de titre remontent et se font couper par le haut de leur masque en ≈ 6 im (f116-f122). Un disque nuit #0B0D24 centré sur la pile de feuilles (≈ 75 % de la largeur) naît au bord droit f122 et couvre le cadre en 4 im (f122-f125), ease-in. La pile de feuilles reste au-dessus du disque : l'objet traverse la transition.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f123.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Retournement de la feuille PDF en lecteur vidéo",
+      "name_en": "PDF card flip into video player",
+      "t": "0:02.18-0:02.33",
+      "frames": "f131-f140",
+      "fps": 60,
+      "mechanics": "Démarre sur le demi-temps f131 : la feuille tourne autour de l'axe Y (f131-f134, vue de tranche f133), les autres feuilles s'estompent en fond ; f135 le dos apparaît sous forme de carte vidéo (illustration + bouton lecture + barre de progression), qui grossit et monte au centre en 5 im (f135-f140, ease-out) jusqu'à ≈ 45 % de la largeur. Transformation d'objet qui porte le message « document → vidéo ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f123.jpg",
+      "illus": {
+        "from": 126,
+        "to": 141,
+        "n": 6
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de vignettes vidéo en perspective sur fond nuit",
+      "name_en": "perspective thumbnail wall",
+      "t": "0:02.1-0:03.8",
+      "frames": "f126-f227",
+      "fps": 60,
+      "mechanics": "Grille de vignettes inclinée (≈ -15° en X), assombrie à ≈ 30 % et floutée, qui défile lentement derrière la carte vidéo ; petits cœurs roses qui montent à droite du lecteur comme des réactions. Donne l'idée de « tout le monde regarde » sans mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-cut-f227.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet vertical de papier crème",
+      "name_en": "paper panel wipe-up",
+      "t": "0:03.78-0:03.88",
+      "frames": "f227-f233",
+      "fps": 60,
+      "mechanics": "Un panneau crème #F6F3EC monte du bas et recouvre le cadre en 6 im : ≈ 25 %, 45 %, 60 %, 72 %, 85 %, 100 % (ease-out). Le bord est net, sans ombre. Réutilisé à 19,5 s (f1171-f1175). Hors grille musicale, aligné sur la phrase suivante de la voix.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f227.jpg, microM-008-cut-f1173.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Barres du logo qui poussent en cascade",
+      "name_en": "staggered bar grow",
+      "t": "0:03.95-0:04.3",
+      "frames": "f237-f258",
+      "fps": 60,
+      "mechanics": "Les trois barres arrondies (vert, bleu, rose) poussent depuis leur base (échelle Y de 0 à 100 %), décalées de 5 im : verte f237-f241, bleue f242-f246, rose ≈ f247-f251, ease-out sans dépassement visible ; pendant ce temps le PDF entre par la gauche, traîné par un curseur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f227.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le logo avale le document",
+      "name_en": "logo absorbs the file",
+      "t": "0:04.3-0:05.1",
+      "frames": "f258-f306",
+      "fps": 60,
+      "mechanics": "Le PDF, entouré de pastilles de formats (DOCX, TXT, MD, URL, IMG) qui orbitent, est traîné vers les barres ; il pivote d'environ 20°, rétrécit et disparaît dans les barres f282-f291, les pastilles suivent. Les barres réagissent par une pulsation (≈ +8 % puis retour) et un halo bleu flou qui s'allume f288-f300 puis s'éteint. Démonstration du produit par un geste physique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 258,
+        "to": 306,
+        "n": 7
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole écrit lettre par lettre",
+      "name_en": "typed wordmark reveal",
+      "t": "0:05.2-0:05.85",
+      "frames": "f312-f351",
+      "fps": 60,
+      "mechanics": "Les barres rétrécissent de ≈ 50 % en glissant à gauche (f312-f327), puis « DistilBook » apparaît lettre par lettre avec un léger fondu sur la lettre entrante (≈ 1 lettre toutes les 1,5 im : « Dist » f330, « Distil » f333, « DistilBo » f336, complet f342) ; « Book » en bleu #3B63E8. Slogan « Documents in. Videos out. » en fondu f345-f351.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le glyphe du logo, flash bleu, iris blanc",
+      "name_en": "dive into logo glyph, color flash, white iris",
+      "t": "0:05.95-0:06.37",
+      "frames": "f357-f382",
+      "fps": 60,
+      "mechanics": "Poussée qui accélère sur le logo (f357-f366 lente, puis exponentielle f366-f371 : ×1,3 à ×1,5 par image) jusqu'à ce que les rayures internes des barres remplissent l'écran (f371-f375, bandes bleues, roses, violettes) ; aplat bleu #3B63E8 plein f376-f378 (3 im) ; f379, sur le temps, un cercle blanc de ≈ 45 % de la hauteur apparaît au centre, ≈ 90 % f380, ≈ 150 % f381, plein f382 : la scène suivante (PDF sur fond bleu clair) est révélée. C'est exactement la « plongée dans un glyphe puis flash de couleur » + « révélation circulaire ».",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f380.jpg, extra-01.jpg",
+      "illus": {
+        "from": 362,
+        "to": 383,
+        "n": 8
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Ligne de scan qui surligne la lecture",
+      "name_en": "scanning line with highlighter",
+      "t": "0:06.8-0:07.3",
+      "frames": "f408-f438",
+      "fps": 60,
+      "mechanics": "Une ligne bleue lumineuse (≈ 1,5 % de hauteur avec halo) descend la feuille en ≈ 30 im (linéaire) ; derrière elle, certaines lignes de texte reçoivent un trait de surligneur jaune #F5C542. Étiquette numérotée « 01 Reads it » en haut. Rend visible une action invisible (la lecture par l'IA).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Traits surlignés qui volent vers le script, puis frappe",
+      "name_en": "highlight strokes fly to script, then typing",
+      "t": "0:07.3-0:08.6",
+      "frames": "f438-f516",
+      "fps": 60,
+      "mechanics": "La carte « Narration script » glisse depuis la droite (f432-f444, ease-out). Des traits jaunes se détachent du PDF et volent horizontalement vers la carte (f450-f462). Le texte se tape à ≈ 1 caractère toutes les 1,5 im, trois lignes (« Plants make their own food. », « Sunlight, water and air go in… », « …and out comes sugar. ») avec curseur clignotant. « 02 Writes the script » s'ajoute au fil d'étapes.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Clic d'approbation et tampon qui s'écrase",
+      "name_en": "approve click + stamp slam",
+      "t": "0:08.8-0:09.6",
+      "frames": "f528-f576",
+      "fps": 60,
+      "mechanics": "Curseur sur « Approve script » f510-f528, clic f528-f534 : le bouton noir devient vert « ✓ Approved », la bordure de la carte devient verte, onde circulaire f546-f558, « 03 You approve » s'ajoute. Puis tampon « EVERY WORD ✓ » vert, incliné ≈ -8°, qui arrive très grand (≈ 30 % de la largeur, f564) et s'écrase à sa taille finale en ≈ 6 im (f564-f570), posé en bas à gauche de la carte ; les mots du script se soulignent en vert un par un.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 528,
+        "to": 582,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Morphing de la carte de script en lecteur vidéo",
+      "name_en": "card morph into player",
+      "t": "0:10.2-0:10.37",
+      "frames": "f613-f622",
+      "fps": 60,
+      "mechanics": "La carte de script grossit (≈ ×1,3) et glisse au centre pendant que le PDF sort à gauche ; son texte s'efface et l'illustration de la feuille apparaît dans le même cadre en fondu (f615-f621) ; le cadre devient un lecteur avec barre de progression et forme d'onde « Voice » dessous. Continuité : on ne coupe pas, l'objet change de fonction.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f616.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre karaoké avec forme d'onde de la voix",
+      "name_en": "karaoke caption with voice waveform",
+      "t": "0:10.4-0:15.0",
+      "frames": "f624-f900",
+      "fps": 60,
+      "mechanics": "Pastille sombre #2B2D3A en bas du lecteur ; le mot prononcé passe en jaune #F5C542, les autres restent gris (« Then it draws every scene », « stroke by stroke », « in time with the voice »). Sous le lecteur, une forme d'onde horizontale violette-rose avec tête de lecture qui avance ; la partie jouée est colorée, le reste pâle. Démontre la synchro voix ↔ image du produit en l'appliquant.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, microM-005-move-f616.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Illustration qui se complète au fil de la narration",
+      "name_en": "progressive illustration build",
+      "t": "0:10.5-0:14.6",
+      "frames": "f630-f876",
+      "fps": 60,
+      "mechanics": "Sur l'illustration « leaf factory », les éléments apparaissent un à un avec leur flèche et leur légende manuscrite : soleil + eau (≈ 11,0 s), air (≈ 11,5 s), sucre (≈ 13,0 s), plante + lapin + papillon « feeds nearly everything alive » (≈ 13,5 s), bandeau équation soleil + eau + air = sucre (≈ 14,5 s). Entre deux ajouts, l'image est presque figée (maintiens de 1 à 1,6 s).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carte qui recule jusqu'à un point, puis flash blanc et anneau",
+      "name_en": "recede to a point, white flash, ring reveal",
+      "t": "0:15.0-0:16.2",
+      "frames": "f900-f972",
+      "fps": 60,
+      "mechanics": "Le fond devient gris puis nuit (≈ 15,0-15,5 s), la carte s'incline en 3D sur des lignes de vitesse radiales, puis recule en accélérant : ≈ 70 % → 25 % de la largeur sur f945-f951 (ease-in), point blanc dès f952. Le point tient 8 im (f952-f959), une image blanche pleine f960 (4 im avant le temps f964), image grise désaturée f961-f962 où « 15 » apparaît dans un petit anneau ; l'anneau s'élargit (≈ 20 % → 120 % de la hauteur en 10 im) pendant que le chiffre grossit jusqu'à ≈ 60 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f960.jpg",
+      "illus": {
+        "from": 944,
+        "to": 970,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Chiffre géant utilisé comme masque d'images",
+      "name_en": "giant numeral as image mask",
+      "t": "0:16.0-0:17.55",
+      "frames": "f960-f1053",
+      "fps": 60,
+      "mechanics": "« 15 » en grotesque Black à ≈ 60 % de la hauteur, dégradé lavande-rose, dont l'intérieur montre les illustrations des styles qui défilent toutes les ≈ 7,5 im (compteur « STYLE 01 / 15 » → « 15 / 15 » en haut à droite) ; petites vignettes qui flottent en 3D autour ; « styles. » blanc avec point rose dessous. Le chiffre porte la preuve au lieu d'un carrousel plein cadre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f960.jpg, microM-007-move-f1058.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée latérale",
+      "name_en": "horizontal push",
+      "t": "0:17.55-0:17.62",
+      "frames": "f1053-f1057",
+      "fps": 60,
+      "mechanics": "La scène « 15 styles » sort à gauche poussée par la suivante, bord vertical net : ≈ 85 %, 60 %, 35 %, 10 % de la largeur sur 4 im (linéaire, sans flou). Départ sur le temps f1054.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1058.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Globe des langues et sous-titre traduit en direct",
+      "name_en": "language globe + live translated caption",
+      "t": "0:17.65-0:19.5",
+      "frames": "f1059-f1171",
+      "fps": 60,
+      "mechanics": "« 20+ » grandit de ≈ 10 % à 100 % en ≈ 10 im (ease-out, ≈ 25 % de la hauteur, dégradé blanc → lavande). Sur un globe en pointillés à droite, des bulles de salutations colorées (Hello, Hola, Bonjour, 你好, Ciao, Merhaba, Xin chào, Cześć…) apparaissent et disparaissent, décalées de ≈ 4-5 im. En bas, une ligne « CC » répète la même phrase du script en espagnol, français, portugais, italien, turc : la preuve est fonctionnelle, pas décorative.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f1058.jpg, microM-008-cut-f1173.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Recoloration de la marque d'un clic sur une pastille",
+      "name_en": "one-click brand recolor sweep",
+      "t": "0:19.6-0:21.6",
+      "frames": "f1175-f1296",
+      "fps": 60,
+      "mechanics": "« Your » puis la pastille « brand » orange qui jaillit sur le temps f1189 ; pastille de kit de marque « lumen » avec 4 pastilles de couleur qui descend du haut ; 3 cartes d'illustration entrent en cascade depuis le bas-gauche (≈ 6 im de décalage). Le curseur clique sur la pastille violette : les cadres des cartes passent d'orange à violet #7C3AED en balayage de gauche à droite (≈ 2-3 im par carte, f1287-f1296), puis la pastille « brand » change aussi.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1173.jpg, microM-009-cut-f1300.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris bleu depuis le centre",
+      "name_en": "blue iris open",
+      "t": "0:21.65-0:21.7",
+      "frames": "f1299-f1302",
+      "fps": 60,
+      "mechanics": "Disque bleu #3B63E8 au centre : ≈ 45 % de la hauteur f1299, ≈ 100 % f1300, ≈ 150 % f1301 (demi-temps), plein f1302. Puis 12 im de bleu presque vide (seuls les jours du calendrier en filigrane) avant que « Weeks » n'arrive en fondu f1315-f1320 : petit trou de rythme.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f1300.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Calendrier coché puis chronomètre",
+      "name_en": "crossed-out calendar to stopwatch",
+      "t": "0:21.9-0:24.0",
+      "frames": "f1314-f1440",
+      "fps": 60,
+      "mechanics": "« Weeks » blanc ≈ 10 % de la hauteur + « of work » ; une grille de 21 jours (L-D) se remplit de croix rouges case par case, puis « Weeks » est barré en rose. Le calendrier glisse vers le bas et sort (f1397-f1408) pendant que « done in » apparaît et que « minutes. » grossit de ≈ 30 % à ≈ 105 % puis 100 % (f1406-f1421, pic sur le temps f1414), point jaune final. Chronomètre blanc à arc jaune : temps numérique qui défile 01:12 → 04:58 en ≈ 25 im, aiguille qui tourne.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f1406.jpg, overview-04.jpg",
+      "illus": {
+        "from": 1391,
+        "to": 1421,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le cadran du chronomètre devient l'iris",
+      "name_en": "stopwatch face becomes the iris",
+      "t": "0:24.0-0:24.15",
+      "frames": "f1438-f1449",
+      "fps": 60,
+      "mechanics": "Le centre du chronomètre se remplit de crème (f1438-f1442), l'anneau disparaît et le disque crème grandit : ≈ 22 % → 35 % → 50 % → 80 % → 120 % de la hauteur sur f1443-f1448, en se décalant vers la gauche, jusqu'à révéler le logo sur fond crème f1449. Raccord par la forme : le cercle du temps ouvre la scène de marque.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1449.jpg",
+      "illus": {
+        "from": 1436,
+        "to": 1452,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin en rappel inversé de l'accroche",
+      "name_en": "callback ending",
+      "t": "0:24.15-0:28.3",
+      "frames": "f1449-f1700",
+      "fps": 60,
+      "mechanics": "Sous le logo : « Stop sending documents. » en gris avec « documents. » barré de rouge (une petite feuille s'envole), puis « Start sending ▶ videos. » en noir avec la pastille dégradée qui jaillit et une pluie de confettis tricolores (≈ 40 éléments, gravité). Le mot de l'accroche (documents / vidéo) ferme le récit. Mais 1,95 s de quasi-maintien (25,3-27,2 s) avant « Start ».",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, microM-012-move-f1679.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fondu final vers l'image d'ouverture pour boucler",
+      "name_en": "fade to first frame for a loop",
+      "t": "0:29.8-0:30.1",
+      "frames": "f1788-f1803",
+      "fps": 60,
+      "mechanics": "En ≈ 9 im (f1788-f1797), tout le plan de fin se fond vers un aplat beige grisé uni, semblable à l'image 0 qui ouvre la vidéo sur le même fond vide. Probable réponse à « people should feel like watch it many times » : la lecture en boucle repart sans saut.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-01.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un fond par fonction narrative",
+      "name_en": "background color per story beat",
+      "t": "0:00-0:30",
+      "frames": "f0-f1803",
+      "fps": 60,
+      "mechanics": "Papier gris-beige (problème), nuit #0B0D24 (vidéo, preuve, échelle), bleu clair à grille (processus produit), crème (marque, fin), bleu plein #3B63E8 (gain de temps). Le passage de l'un à l'autre se fait toujours par une forme (iris, volet, plongée), jamais par un fondu enchaîné.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Scènes découpées sur les phrases de la voix off",
+      "name_en": "scene cuts on VO sentences",
+      "t": "0:00-0:30",
+      "frames": "f0-f1803",
+      "fps": 60,
+      "mechanics": "Chaque phrase de la voix a sa scène : 0-4 s accroche, 4-6 s dépôt dans le logo, 6-10 s lire/écrire/approuver, 10-15 s dessin en karaoké, 16-19 s 15 styles et 20+ langues, 19-22 s marque, 22-24 s semaines → minutes, 24-27 s rappel, 27-29 s chute. Les transitions démarrent 0,1 à 0,3 s avant la phrase suivante. Pas de grille musicale : synchro voix seulement.",
+      "verdict": "reprendre",
+      "evidence": "transcription, rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "« Very good script » est la demande la plus productive du prompt : Claude a écrit une voix off en chiasme avec un objet fil rouge (le PDF), et toute la mise en scène en découle. Demander un script fait passer d'un défilé d'écrans à un récit."
+    },
+    {
+      "kind": "direction",
+      "insight": "« People should feels like watch it many times » a probablement été traduit en boucle (fondu final vers l'image 0) et en accroche/chute qui se répondent."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Le lien produit fournit la matière (illustrations des styles, exemple de la feuille-usine, chiffres 15 styles / 20+ langues, CTA). Le même produit, avec un prompt sans demande de script (sudo-kiran-4f8b59), donne une vidéo calée sur la musique au lieu de la voix."
+    },
+    {
+      "kind": "build",
+      "insight": "Avec une voix off, le montage se cale sur les phrases et la musique devient un lit sonore : aucune transition n'est placée sur la grille de 80 BPM. Pour avoir les deux, il faudrait fixer un BPM et placer les respirations de la voix sur les temps."
+    },
+    {
+      "kind": "qa",
+      "insight": "Les maintiens de 1 à 2 s et l'interface trop petite n'ont pas été corrigés : aucun critère de densité (« quelque chose bouge toutes les 0,5-1 s ») ni de taille minimale de texte dans le prompt."
+    },
+    {
+      "kind": "other",
+      "insight": "Le superlatif répété (« best of the best of the best ») n'apporte rien de mesurable ; ce sont les demandes concrètes (script, couleurs, musique, revisionnage) qui ont été suivies."
+    }
+  ],
+  "steal": [
+    "Faire traverser la vidéo par un objet fil rouge (ici la feuille PDF) qui change de fonction à chaque transition : retournée en vidéo, avalée par le logo, scannée.",
+    "Plongée accélérée dans le glyphe du logo jusqu'à l'aplat de couleur, puis cercle blanc qui s'ouvre sur le temps : 25 im à 60 fps.",
+    "Faire reculer la carte jusqu'à un point, tenir le point 8 im, une image blanche, puis anneau qui s'ouvre sur le chiffre suivant.",
+    "Utiliser un chiffre géant comme masque où défilent les preuves (styles), avec compteur discret dans le coin.",
+    "Terminer par un fondu vers l'image d'ouverture pour que la vidéo boucle sans saut."
+  ],
+  "flaws": [
+    "27 % du temps en maintien quasi statique (karaoké, rappel final) : la voix parle, l'image attend.",
+    "Texte d'interface minuscule (script, kit de marque, légendes) illisible sur mobile.",
+    "Cinq mondes de fond différents en 30 s : la cohérence tient au logo plus qu'au décor.",
+    "12 im de bleu vide après l'iris de 21,7 s et confettis de fin attendus.",
+    "Volet crème générique réutilisé deux fois, sans lien avec le contenu."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Natif 60 fps, et trois transitions de la liste de goûts de l'utilisateur à décortiquer image par image : plongée dans le logo + flash + iris (f357-f382), recul en point + flash + anneau (f944-f972), chronomètre devenu iris (f1436-f1452), plus le retournement PDF → vidéo (f126-f141)."
+  }
+}

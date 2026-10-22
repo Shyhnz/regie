@@ -1,0 +1,583 @@
+{
+  "slug": "sab8a-364a5a",
+  "title": "Talking-head clip edit",
+  "handle": "@sab8a",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Concept de montage brillant (un monde visuel par idée dite, compteur de « like », vote final) et système d'interface tenu, mais animation basique (pops, flashs) et fonds IA génériques.",
+  "summary": "Une créatrice hésite à voix haute sur sa miniature « how to go viral ». Claude en fait une liste : « 9 thumbnail ideas, vote at the end ». Chaque idée dite devient un monde de 2 à 4 s (lo-fi, bulle 3D, cartoon 1930, kawaii, manga, carte rare, clickbait, pop art, 8-bit), un compteur suit ses « like », la fin range les 9 scènes en grille de vote.",
+  "prompt_vs_result": [
+    "Le prompt demande de couper un rush face caméra brut en montage rythmé et drôle, avec sous-titres, graphismes et musique. Aucun style, aucune durée, aucune structure imposés.",
+    "Claude a tout inventé : la promesse « 9 idées, vote à la fin », un style par idée, les transitions assorties, le compteur de « like », les étiquettes « IDEA 0X », la barre de progression et la grille finale.",
+    "« Fun » et « graphics » ont été pris au pied de la lettre : maximalisme assumé et très lisible. La musique, demandée sans précision, reste un fond qui ne pilote rien : il aurait fallu exiger des coupes calées."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#B5591A",
+        "role": "studio ambré (rideau éclairé)"
+      },
+      {
+        "hex": "#3A1A08",
+        "role": "ombres brun foncé du studio"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "sous-titres, contours de détourage"
+      },
+      {
+        "hex": "#D4F53C",
+        "role": "accent vert citron : mot clé, « TIME », « YOU TELL ME », pastilles de numéro"
+      },
+      {
+        "hex": "#F2382C",
+        "role": "rouge : « BUT », tampons, flèche et cercle clickbait"
+      },
+      {
+        "hex": "#E5304A",
+        "role": "barre de progression et cœur du compteur"
+      },
+      {
+        "hex": "#161616",
+        "role": "pilules d'étiquette « IDEA 0X » et compteur"
+      },
+      {
+        "hex": "#FFD93B",
+        "role": "soleil et rayons « GO VIRAL »"
+      },
+      {
+        "hex": "#5EC3F2",
+        "role": "ciel « GO VIRAL »"
+      },
+      {
+        "hex": "#BFA67E",
+        "role": "sépia cartoon 1930"
+      },
+      {
+        "hex": "#FF8AC8",
+        "role": "rose kawaii, « CUTE? »"
+      },
+      {
+        "hex": "#C9A6F5",
+        "role": "lilas kawaii et 8-bit"
+      },
+      {
+        "hex": "#6A3FD9",
+        "role": "éclairs violets « OH, MY GOD »"
+      },
+      {
+        "hex": "#FF6A00",
+        "role": "explosion clickbait"
+      },
+      {
+        "hex": "#FFE11A",
+        "role": "« NO WAY?! » jaune"
+      },
+      {
+        "hex": "#2D4FB0",
+        "role": "bleu pop art (trame)"
+      }
+    ],
+    "type": "Sous-titres en grotesque grasse (type Inter ExtraBold, probable), ≈ 4,5 % de la hauteur ; mot clé citron ≈ 7 %. Étiquettes mono capitales ≈ 1,5 %. Une police par monde : serif fine, bulle 3D, slab western, manga, pixel.",
+    "texture": "Détourage de la personne avec contour blanc épais (≈ 1 % du cadre) façon sticker. Étalonnage par monde : sépia + grain + rayures de pellicule + vignettage ; noir et blanc très contrasté (manga) ; trame de points (pop art) ; mosaïque (8-bit). Fond holographique irisé animé. Flou gaussien fort du studio en fin. Pas de flou de mouvement.",
+    "style": "Montage YouTube maximaliste, mondes par idée",
+    "coherence": "Le système fixe tient tout : pilule-titre en haut, compteur de « like » en haut à droite, étiquette « IDEA 0X · NOM » en bas à droite, barre de progression rouge en bas, mot clé citron dans le studio. Chaque monde est cohérent en lui-même (fond, police, mascotte, transition). Ce qui casse : fonds IA génériques de qualité inégale et accumulation de couches."
+  },
+  "rhythm": {
+    "bpm": 88,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Montage piloté par la parole : 20 plans, plan médian 1,77 s, un monde nouveau toutes les 2,4 à 4 s, inserts de ponctuation très courts (« TIME » 4 im = 0,17 s ; « BUT » 12 im = 0,5 s ; « OH, MY GOD. » 11 im = 0,46 s). À 23,976 fps. Coupes sautées (jump cuts) qui retirent les blancs (f18, f235, f705). Le tempo global (132,3 BPM) varie selon les tranches mesurées (80,8 / 132,9 / 88,3 / 85,9 / 79,1 BPM) : fond musical probablement unique vers 88 BPM (132 = ×3/2), aucune coupe ne le suit (5/19 coupes à 50 ms d'un temps). Seul temps mort : grille finale figée 1,83 s (35,37-37,2 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:00.75",
+        "what": "Elle entre dans le cadre debout, « okay. » blanc à gauche ; pilule « 9 THUMBNAIL IDEAS · VOTE AT THE END » en haut",
+        "technique": "promesse de structure dès la 1re seconde"
+      },
+      {
+        "t": "0:00.75-0:01.88",
+        "what": "Coupe sautée, elle s'appuie au bureau ; 3 stickers « THUMBNAIL » de 3 styles différents à chaque mot répété",
+        "technique": "sticker par répétition, annonce des styles"
+      },
+      {
+        "t": "0:01.88-0:02.09",
+        "what": "« TIME » géant citron derrière sa tête",
+        "technique": "texte derrière le sujet, mot flash 4 im"
+      },
+      {
+        "t": "0:02.09-0:04.05",
+        "what": "Barre de recherche, saisie « how to go viral », suggestions « on x / without trying / as a potato » ; sous-titres « I think it's gonna be… »",
+        "technique": "interface de recherche détournée"
+      },
+      {
+        "t": "0:04.05-0:05.42",
+        "what": "Nuage endormi, fondu vers ciel couchant anime : IDEA 01 · SUPER CHILL, « super chill, » en serif fine",
+        "technique": "remplacement de fond par détourage"
+      },
+      {
+        "t": "0:05.33-0:05.92",
+        "what": "Glitch RVB 2 im puis « BUT » rouge géant dans le studio",
+        "technique": "glitch + mot flash"
+      },
+      {
+        "t": "0:05.42-0:07.84",
+        "what": "Sous-titres mot à mot « I think we should make it, like. » ; compteur de « like » apparaît",
+        "technique": "sous-titres mot à mot, running gag"
+      },
+      {
+        "t": "0:07.84-0:11.01",
+        "what": "IDEA 02 · GO VIRAL : rayons, nuages, « GO VIRAL! » bulle 3D, virus mascottes, mini-miniature posée sur sa paume",
+        "technique": "monde 3D bulle, objet sur la main"
+      },
+      {
+        "t": "0:11.01-0:14.45",
+        "what": "Iris d'ouverture : IDEA 03 · RUBBER HOSE, sépia, arbre et soleil à visages, « FUNNY & ANIMATED » sur banderole, « FLAP! FLAP! »",
+        "technique": "iris cartoon, étalonnage d'époque"
+      },
+      {
+        "t": "0:14.20-0:14.47",
+        "what": "Iris de fermeture sur son visage jusqu'au point noir, puis ouverture en cœur rose",
+        "technique": "iris en cœur"
+      },
+      {
+        "t": "0:14.47-0:16.14",
+        "what": "IDEA 04 · KAWAII : fond pastel, bulle « You know what I mean? », joues roses suivies, lapin, « CUTE? »",
+        "technique": "stickers suivis sur le visage"
+      },
+      {
+        "t": "0:16.14-0:20.19",
+        "what": "Flash blanc : IDEA 05 · SHONEN, manga N&B, lignes de vitesse, « ドドド », bulles, « BLURRED OUT », case insérée en gros plan",
+        "technique": "flash blanc, case manga"
+      },
+      {
+        "t": "0:20.19-0:20.65",
+        "what": "Flash blanc : éclairs violets, « ガーン », « OH, MY GOD. »",
+        "technique": "insert de choc 0,46 s"
+      },
+      {
+        "t": "0:20.65-0:23.82",
+        "what": "Studio brut : « Or should we do a really funny. », elle se lève, « fully. », interrupteur « FULL BODY MODE ON »",
+        "technique": "interrupteur d'interface"
+      },
+      {
+        "t": "0:23.82-0:27.90",
+        "what": "IDEA 06 · ULTRA RARE : carte à collectionner dorée, elle déborde du cadre, stats « LIKES SAID 11 », fond holographique, « (mostly) » manuscrit",
+        "technique": "carte à collectionner, débordement du cadre"
+      },
+      {
+        "t": "0:27.90-0:29.40",
+        "what": "Studio : tampons rouges « OKAY, » puis « THAT. »",
+        "technique": "tampon qui claque"
+      },
+      {
+        "t": "0:29.40-0:31.66",
+        "what": "« Or let's do, like, a “regular” like… »",
+        "technique": "mot clé citron entre guillemets"
+      },
+      {
+        "t": "0:31.66-0:32.82",
+        "what": "Flash blanc : IDEA 07 · CLICKBAIT, explosion, « NO WAY?! », flèche rouge, cercle sur le visage, « (NOT CLICKBAIT) »",
+        "technique": "parodie de miniature YouTube"
+      },
+      {
+        "t": "0:32.82-0:33.83",
+        "what": "IDEA 08 · POP ART : trame, rayons, « POP! », bulle « OH… BUT WHICH THUMBNAIL?! »",
+        "technique": "rendu pop art"
+      },
+      {
+        "t": "0:33.83-0:34.58",
+        "what": "Pixelisation : IDEA 09 · 8-BIT, montagnes pixel, « NICE! », « +1 UP » qui monte",
+        "technique": "transition mosaïque"
+      },
+      {
+        "t": "0:34.58-0:37.20",
+        "what": "Studio flouté, « WHICH ONE? YOU TELL ME. », 9 miniatures distribuées en grille 3×3 numérotée, « reply with a number », « “LIKE” COUNT: 13 »",
+        "technique": "grille récapitulative + appel au vote"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "La parole face caméra dicte le montage : sous-titres et changements de monde suivent les mots (« like, » et le compteur s'incrémentent à la même image f185 ; coupe f188 juste après « like, »). Musique de fond probable vers 88 BPM. Sur les planches, gestes clés comparés aux seuls temps (barres bleues) à ±1 im : 7 sur 19 (37 %, hasard ≈ 28 %) ; la fenêtre ±2 im autour des temps et demi-temps couvre ≈ 90 % des images à ce tempo, donc sans valeur. Mesures auto : p de 0,22 à 0,56, corrélation aux attaques z = -1,81. Quelques attaques fortes coïncident avec des transitions (14,51 s ↔ cœur f347 ; 5,26 s ↔ glitch f128 ; 33,07 s ↔ bulle f794) : bruitages probables, non vérifiables à l'image.",
+    "synced": [
+      "texte"
+    ],
+    "style_match": "Fond enjoué probable, en accord avec le ton ludique, mais il ne donne ni les coupes ni les impacts : c'est la voix qui rythme.",
+    "how_built": "Montage fait avec OpenEdit à partir de la transcription horodatée au mot (sous-titres mot à mot, compteur de « like »), détourage de la personne et fonds générés par monde (probable). Le prompt demandait « music » sans tempo ni consigne de calage : la musique a été posée sous la voix."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Promesse de liste dès la première seconde",
+      "name_en": "Listicle promise pill",
+      "t": "0:00-0:02.09",
+      "frames": "f0-f50",
+      "fps": 24,
+      "mechanics": "Pilule noire à contour clair centrée en haut (≈ 18 % de la largeur, 2 % de la hauteur), mono capitales : « 9 THUMBNAIL IDEAS · VOTE AT THE END ». Elle transforme un rush décousu en liste avec une récompense annoncée (le vote), et justifie la grille finale.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un monde visuel complet par idée prononcée",
+      "name_en": "One world per spoken idea",
+      "t": "0:04.05-0:34.58",
+      "frames": "f97-f829",
+      "fps": 24,
+      "mechanics": "Chaque idée dite devient une scène de 2,4 à 4 s (8-bit : 0,75 s) avec fond, étalonnage, police, mascottes et transition propres : super chill (ciel anime), go viral (3D bulle), rubber hose (cartoon 1930), kawaii, shonen (manga), ultra rare (carte), clickbait, pop art, 8-bit. Le mot déclencheur sert de titre (« super chill », « funny & animated », « cute? », « blurred out »).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-06.jpg",
+      "illus": {
+        "from": 120,
+        "to": 840,
+        "n": 8
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Compteur de tic verbal (running gag)",
+      "name_en": "Verbal-tic counter gag",
+      "t": "0:06.5-0:37.2",
+      "frames": "f156-f892",
+      "fps": 24,
+      "mechanics": "Pilule en haut à droite « ♥ N « like » counter » qui s'incrémente à l'image même où « like » s'affiche en sous-titre (2 → 3 à f185), avec pulsation du cœur. Repris dans la carte à collectionner (« LIKES SAID 11 ») et en fin (« “LIKE” COUNT: 13 »). 13 incréments en 31 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f188.jpg, overview-05.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Système d'interface permanent",
+      "name_en": "Persistent HUD system",
+      "t": "0:04.05-0:34.58",
+      "frames": "f97-f829",
+      "fps": 24,
+      "mechanics": "Trois éléments fixes aux coins : étiquette « IDEA 0X · NOM » (mono capitales blanches sur pilule #161616, ≈ 1,5 % de haut, coin bas droit à 2 % des bords), barre de progression rouge #E5304A de 0,5 % de haut au bord inférieur qui se remplit pendant chaque monde, compteur en haut à droite. Ils survivent à tous les changements de style.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titres mot à mot, mot clé en citron agrandi",
+      "name_en": "Word-by-word captions with keyword pop",
+      "t": "0:02.5-0:31.6",
+      "frames": "f60-f759",
+      "fps": 24,
+      "mechanics": "Chaque mot apparaît à son horodatage, d'abord à ≈ 50 % d'opacité (1 im) puis blanc plein (« I » f135, « think » f136-f137, « we » f139-f140). Bloc aligné à gauche dans le tiers droit ou gauche, 2 à 4 lignes, ≈ 4,5 % de la hauteur. Le mot clé (« be… », « like. », « funny. », « fully. », « regular ») passe en citron #D4F53C, ≈ 1,6 fois plus grand.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f130.jpg, overview-02.jpg",
+      "illus": {
+        "from": 130,
+        "to": 143,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot flash en ponctuation",
+      "name_en": "Punctuation flash word",
+      "t": "0:05.42-0:05.92",
+      "frames": "f130-f141",
+      "fps": 24,
+      "mechanics": "« BUT » rouge #F2382C, grotesque noire, ≈ 14 % de la hauteur, tiers gauche, apparaît d'un coup sur la coupe (avec une tranche de glitch à f130) et tient 12 im (0,5 s) pendant que la phrase suivante démarre à droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f130.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Texte derrière le sujet",
+      "name_en": "Text behind subject",
+      "t": "0:01.88-0:02.09",
+      "frames": "f45-f50",
+      "fps": 24,
+      "mechanics": "« TIME » en capitales grasses citron, ≈ 22 % de la hauteur et 45 % de la largeur, placé en haut au centre et masqué par sa tête (détourage). 1 im de fondu éclairci (f45), 4 im pleines (f46-f49), coupe à f50. Effet de profondeur à coût nul.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Un sticker par répétition du mot",
+      "name_en": "Sticker per repeated word",
+      "t": "0:00.79-0:01.50",
+      "frames": "f19-f36",
+      "fps": 24,
+      "mechanics": "Sur « thumbnail, thumbnail, thumbnail » : sticker explosion rouge-jaune « THUMBNAIL » en haut à gauche (f19, plein d'un coup, -8°), sticker kawaii rose « thumbnail » en haut à droite (f27-f28, fondu 2 im, +8°), sticker synthwave violet en bas à gauche (f36). 3 styles = bande-annonce des mondes à venir. Espacement 8 et 9 im, calé sur la parole.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f18.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barre de recherche détournée",
+      "name_en": "Fake search autocomplete joke",
+      "t": "0:02.09-0:04.05",
+      "frames": "f50-f97",
+      "fps": 24,
+      "mechanics": "Pilule blanche (≈ 30 % × 6 % du cadre) en haut à gauche, curseur, saisie « how to go viral » à ≈ 20 caractères/s (f52 « h » → f66 « how to go vir »), puis menu de suggestions en fondu 3 im : « on x », « without trying », « as a potato ». La dernière suggestion est la blague.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-move-f100.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Remplacement de fond par détourage",
+      "name_en": "Background replacement via matting",
+      "t": "0:04.05-0:04.30",
+      "frames": "f97-f103",
+      "fps": 24,
+      "mechanics": "Le nuage endormi surgit plein à f97 sur le studio, puis le studio se fond en ciel couchant anime en 6 im (f98-f103), la personne restant nette au premier plan ; l'enseigne au néon disparaît dans le fondu. Les mondes suivants ajoutent un contour blanc de ≈ 1 % façon sticker.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f100.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glitch RVB de 2 images vers la coupe",
+      "name_en": "2-frame RGB glitch cut",
+      "t": "0:05.34-0:05.42",
+      "frames": "f128-f130",
+      "fps": 24,
+      "mechanics": "Sur 2 im, séparation rouge/vert/bleu d'≈ 1,5 % de la largeur et tranches horizontales décalées sur la personne et le texte, puis coupe franche sur le studio avec « BUT ». Motivé par le mot « but » (rupture).",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f130.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris cartoon qui se ferme sur le visage",
+      "name_en": "Cartoon iris-out on face",
+      "t": "0:14.20-0:14.43",
+      "frames": "f341-f346",
+      "fps": 24,
+      "mechanics": "Ouverture sur 1 im (f264 : disque déjà à ≈ 85 % de la hauteur sur noir). Fermeture sur 6 im : vignette aux coins (f341), disque ≈ 100 % de la largeur (f342), ≈ 75 % de la hauteur (f343), ≈ 25 % (f344), ≈ 10 % (f345), point (f346). Pas qui grandissent : ease-in. Centré sur le visage, comme la fin d'un dessin animé des années 1930.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f264.jpg, microM-006-cut-f347.jpg",
+      "illus": {
+        "from": 340,
+        "to": 349,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris en forme de cœur",
+      "name_en": "Heart-shaped iris reveal",
+      "t": "0:14.47-0:14.55",
+      "frames": "f347-f349",
+      "fps": 24,
+      "mechanics": "Juste après le point noir, un cœur géant (≈ 90 % du cadre) révèle le monde kawaii, extérieur rose #FF4FA0 ; à f348 il ne reste que des triangles roses aux coins, f349 plein cadre. La forme de la transition appartient au monde d'arrivée. Attaque audio forte à 14,51 s (bruitage probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f347.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc d'une image",
+      "name_en": "One-frame white flash",
+      "t": "0:16.14 / 0:20.19 / 0:31.66",
+      "frames": "f387, f484, f759",
+      "fps": 24,
+      "mechanics": "1 im blanche (f484 : blanc pur) ou blanchie avec image fantôme (f387, f759), puis 1 im de fondu vers le nouveau monde (f485), puis plein. Utilisé pour les mondes à forte énergie : manga, insert de choc, clickbait.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f390.jpg, microM-010-cut-f484.jpg, microM-012-cut-f759.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Pixelisation vers le monde 8-bit",
+      "name_en": "Mosaic into 8-bit",
+      "t": "0:33.78-0:33.87",
+      "frames": "f810-f812",
+      "fps": 24,
+      "mechanics": "Une image du pop art passe en mosaïque (blocs ≈ 3 % de la largeur), puis coupe sur le décor pixel où la personne reste en mosaïque (blocs ≈ 2,5 %). « +1 UP » vert monte d'≈ 3 % du cadre en 10 im.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Étalonnage de la personne selon le monde",
+      "name_en": "Per-world subject treatment",
+      "t": "0:11.01-0:34.58",
+      "frames": "f264-f829",
+      "fps": 24,
+      "mechanics": "Sépia + grain + rayures verticales de pellicule (rubber hose) ; noir et blanc très contrasté (shonen) ; teinte violette (choc) ; illustration pop art en trame bleue/rouge (pop art) ; mosaïque (8-bit). La personne ne colle pas sur le décor : elle adopte sa matière.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une police par monde",
+      "name_en": "Per-world display type",
+      "t": "0:04.05-0:34.58",
+      "frames": "f97-f829",
+      "fps": 24,
+      "mechanics": "Serif italique fine et translucide (lo-fi), lettres bulle 3D jaune-orange à contour rose ≈ 25 % de haut inclinées -8° (go viral), slab western + banderole (rubber hose), arrondie grasse rose (kawaii), capitales manga dans des bulles et onomatopées katakana (shonen), serif dorée (carte), condensée grasse jaune à contour noir ≈ 22 % (clickbait), bande dessinée (pop art), pixel (8-bit).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-06.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Stickers suivis sur le visage et mascottes vivantes",
+      "name_en": "Face-tracked stickers and wobbling mascots",
+      "t": "0:08.2-0:16.1",
+      "frames": "f196-f386",
+      "fps": 24,
+      "mechanics": "Joues roses posées sur le visage et qui le suivent (kawaii, f355). Mascottes qui surgissent en 3 im (échelle ≈ 60 % → 100 %, lapin f355-f357 ; virus f196, f199-f201) puis oscillent en continu de ±10° (virus de f230 à f263).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f188.jpg, microM-006-cut-f347.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Miniature posée sur la paume",
+      "name_en": "Thumbnail on palm",
+      "t": "0:09.93-0:11.0",
+      "frames": "f238-f263",
+      "fps": 24,
+      "mechanics": "Quand elle présente sa main ouverte, une mini-carte de la miniature finie « IDEA 02 · LOCKED IN » apparaît au-dessus de sa paume : f238 petite et translucide, f240 pleine (≈ 25 % de la largeur), légère inclinaison -3°. Le geste réel motive l'apparition.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Case manga insérée qui claque",
+      "name_en": "Manga panel insert slam",
+      "t": "0:19.0-0:20.19",
+      "frames": "f456-f483",
+      "fps": 24,
+      "mechanics": "Gros plan de son visage dans une case rectangulaire inclinée (≈ 22 % × 28 % du cadre) à bord blanc et trait noir, en haut à droite, qui apparaît en 1 im (f456 partiel, f457 plein). Sous-titres manga « YOU CAN SEE THAT. » : chaque mot arrive à ≈ 130 % flouté et se pose à 100 % en 2 im. Onomatopées « ドドド » en colonne à gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f458.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Insert de choc de moins d'une demi-seconde",
+      "name_en": "Sub-half-second reaction insert",
+      "t": "0:20.19-0:20.65",
+      "frames": "f484-f494",
+      "fps": 24,
+      "mechanics": "Flash blanc f484, éclairs violets f486-f494 (11 im = 0,46 s), « ガーン » blanc en haut à gauche, « OH, » (f485) « MY » (f488) « GOD. » (f490) rouge à contour blanc, puis retour sec au studio brut f495. Ponctuation comique qui ne ralentit pas le récit.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f484.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Interrupteur « FULL BODY MODE ON »",
+      "name_en": "UI toggle gag",
+      "t": "0:22.98-0:23.82",
+      "frames": "f551-f571",
+      "fps": 24,
+      "mechanics": "Quand elle se lève, un interrupteur d'interface apparaît en haut à gauche, d'abord gris (f551) puis activé, piste citron, bouton à droite (f563), avec une règle graduée verticale au bord gauche. Transforme un plan raté (elle debout) en fonctionnalité.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Carte à collectionner avec débordement du cadre",
+      "name_en": "Trading card pop-out",
+      "t": "0:23.82-0:27.90",
+      "frames": "f571-f668",
+      "fps": 24,
+      "mechanics": "Cadre doré à étoiles (≈ 22 % × 62 % du cadre) sur fond holographique irisé qui scintille ; la personne en sort (bras et tête hors du cadre). Encart de stats « THE CREATOR : CUTENESS 99, VIRALITY 100, LIKES SAID 11 » à barres, étiquette « ULTRA RARE » dégradée, annotation manuscrite « (mostly) » avec flèche.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-011-cut-f669.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tampon qui claque",
+      "name_en": "Rubber stamp slam",
+      "t": "0:28.33-0:29.2",
+      "frames": "f680-f700",
+      "fps": 24,
+      "mechanics": "« OKAY, » rouge #D22A2A texture grunge dans un cadre arrondi, incliné -10°, apparaît à ≈ 110 % (f680) et se pose à 100 % en 2 im ; « THAT. » s'empile dessous ≈ 0,5 s plus tard. Sur un plan brut, sans fond ajouté.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f669.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flèche et cercle clickbait tracés",
+      "name_en": "Clickbait arrow and circle draw-on",
+      "t": "0:31.66-0:32.20",
+      "frames": "f759-f772",
+      "fps": 24,
+      "mechanics": "« NO » jaune ≈ 22 % de haut pop à f761, « WAY?! » fondu 2 im (f764-f765), flèche rouge courbe à contour blanc qui se trace de la queue à la pointe en 3 im (f766-f768), cercle rouge autour du visage en 2 im (f771-f772), étiquette « (NOT CLICKBAIT) ». Décalages de 3 à 5 im entre éléments. Parodie assumée.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f759.jpg",
+      "illus": {
+        "from": 759,
+        "to": 772,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Grille récapitulative et appel au vote",
+      "name_en": "Recap grid voting CTA",
+      "t": "0:34.58-0:37.20",
+      "frames": "f829-f892",
+      "fps": 24,
+      "mechanics": "Studio flouté (flou gaussien fort). « YOU » citron apparaît d'abord (f830), puis « WHICH ONE? » blanc et « TELL », « ME. » (f838). Les 9 miniatures arrivent de positions dispersées avec rotation ±10° et fondu, décalage ≈ 1 à 2 im par carte, et se rangent en grille 3×3 (≈ 60 % de la largeur, à droite) en ≈ 16 im (f830-f846) ; pastilles citron numérotées 1-9. « reply with a number » à f852, compteur final 13. Maintien 1,83 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-07.jpg",
+      "illus": {
+        "from": 829,
+        "to": 852,
+        "n": 6
+      }
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Coupes sautées qui retirent les blancs",
+      "name_en": "Dead-air jump cuts",
+      "t": "0:00.75 / 0:09.80 / 0:29.40",
+      "frames": "f18, f235, f705",
+      "fps": 24,
+      "mechanics": "Coupe franche sans transition au milieu d'une même position de caméra : elle passe de debout à penchée (f18), le bras levé devient main tendue (f235), penchée devient debout (f705). Les sauts de pose sont assumés comme rythme.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f18.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage calé sur la parole, pas sur la musique",
+      "name_en": "Speech-driven cutting",
+      "t": "0:00-0:35.4",
+      "frames": "f0-f849",
+      "fps": 24,
+      "mechanics": "Les changements de monde tombent sur les fins de phrase ou sur le mot déclencheur (« like, » f185 → coupe f188 ; « cute? » → « CUTE? » ; « oh my god » → insert). Le fond musical (≈ 88 BPM probable) ne donne aucun calage. Quelques attaques fortes alignées sur des transitions (14,51 s, 5,26 s, 33,07 s) suggèrent des bruitages, non vérifiables à l'image.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, microM-004-cut-f188.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Un rush brut et une phrase de consigne : tout le concept vient du contenu de la parole, que Claude a lu comme une liste d'idées de miniatures à illustrer."
+    },
+    {
+      "kind": "structure",
+      "insight": "Le modèle a ajouté une structure absente du rush : promesse « 9 ideas, vote at the end », étiquettes numérotées, barre de progression, grille de vote finale. Un bavardage devient un format interactif."
+    },
+    {
+      "kind": "direction",
+      "insight": "« punchy, fun » a déclenché le maximalisme (un style par idée, inserts de 0,2 à 0,5 s). Sans borne, la surcharge guette ; préciser « 1 effet par phrase » aurait calmé certaines scènes."
+    },
+    {
+      "kind": "build",
+      "insight": "Les horodatages au mot (sous-titres, compteur incrémenté à l'image même du mot « like ») et le détourage de la personne sont la base technique de tout le montage (OpenEdit)."
+    },
+    {
+      "kind": "other",
+      "insight": "« music » sans tempo ni consigne de calage = fond posé sous la voix. Pour un montage animé sur la musique, il faut le demander explicitement (coupes sur les temps, impacts sur les attaques)."
+    }
+  ],
+  "steal": [
+    "Transformer chaque idée prononcée en monde complet de 2 à 4 s : fond, étalonnage, police, mascotte et transition assortis.",
+    "Compter un tic verbal à l'écran et réutiliser le chiffre plus loin (stat de carte, écran final) : running gag gratuit.",
+    "Sous-titres mot à mot, mot clé en couleur d'accent 1,6 fois plus grand.",
+    "Choisir la forme de la transition dans le monde d'arrivée : iris cartoon, iris en cœur, mosaïque pour le pixel, flash blanc pour le manga.",
+    "Finir en redistribuant toutes les scènes dans une grille numérotée avec une question : récapitulatif et appel à l'action d'un coup."
+  ],
+  "flaws": [
+    "Fonds d'illustration IA génériques, qualité inégale d'un monde à l'autre.",
+    "La mosaïque 8-bit sur le visage ressemble à une censure.",
+    "Musique posée : aucune coupe ni aucun impact calé sur le tempo.",
+    "Couches permanentes + stickers + titres : l'œil saute partout.",
+    "Grille finale figée 1,8 s sans mouvement."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "La valeur est dans le concept de montage (mondes par idée, running gag, vote final), lisible sur les planches ; les mouvements sont des pops et flashs de 1 à 3 im à 24 fps, sans courbes à étudier en continu."
+  }
+}

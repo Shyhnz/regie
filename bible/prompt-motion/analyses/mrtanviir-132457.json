@@ -1,0 +1,433 @@
+{
+  "slug": "mrtanviir-132457",
+  "title": "Claude motion designer showreel",
+  "handle": "@mrtanviir",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Architecture musicale exemplaire (une scène par mesure, un geste par temps) et fil rouge du point qui relie chaque transition ; perd un point pour des segments 3D génériques, une ouverture lente et le 720p.",
+  "summary": "Bande démo de 15 s construite sur 8 mesures à 128 BPM : un point rouge se divise, ouvre un titre posé mot par mot (« EVERY FRAME ON PURPOSE. »), devient cercle puis formes qui changent à chaque temps, trame de points, nuage 3D, tube rayé, anneaux de texte, et finit en point final de « Claude. ». Force : synchro et raccords motivés. Faiblesses : ouverture lente, 3D générique, 720p.",
+  "prompt_vs_result": [
+    "Même prompt d'une ligne que d'autres bandes démo : 15 s de motion graphics dynamique montrant le talent de Claude, comme une bande démo de CV, « go all out ». Ni musique, ni style, ni structure imposés.",
+    "Claude a tout bâti sur une grille musicale à 128 BPM (8 mesures = 15 s, une scène par mesure, un geste par temps), un point rouge comme fil conducteur, un HUD qui affiche mesure et tempo, et une signature serif « Claude. ».",
+    "Le prompt n'impose rien ; Claude a inventé la musique (probablement codée) et le motif du point. Il aurait fallu interdire les mots coupés par le cadre, exiger 1080p, et resserrer l'ouverture et la fin, trop lentes."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#111113", "role": "fond noir (intro, formes, anneaux de texte)"},
+      {"hex": "#ED4937", "role": "rouge : fond du titre, point rouge récurrent, cercle, tête du tube"},
+      {"hex": "#EEE5E1", "role": "crème papier : fond de la trame de points et de la signature"},
+      {"hex": "#333BF3", "role": "bleu électrique : fond du nuage de points 3D, carré du morphing"},
+      {"hex": "#F4CA42", "role": "jaune : fond du tube, triangle du morphing"},
+      {"hex": "#141414", "role": "noir texte : titre, points de la trame, signature"},
+      {"hex": "#9A4BB5", "role": "violet de passage (interpolation rouge → bleu du morphing)"},
+      {"hex": "#8A8580", "role": "gris chaud : ligne d'infos finale, légendes"}
+    ],
+    "type": "Ouverture en géométrique très grasse type Montserrat Black, capitales, alignée à gauche, capitale 12,5 % de la hauteur. Fin en serif de texte demi-gras (« Claude. », 15 %). HUD et légendes en grotesque type DIN, capitales espacées 0,3 em.",
+    "texture": "Grain papier fin sur tous les aplats (rouge, crème, jaune, bleu) et léger vignettage des coins. Aucune ombre. Flou de mouvement fort et directionnel sur les gestes clés : poussée caméra, rubans de texte en filé horizontal, points qui jaillissent de la rosace, traînées du plan de points, toupie des anneaux en flou radial. Tube à rayures concentriques (contour noir, rouge, blanc, bleu) plus « jouet » que le reste.",
+    "style": "Bande démo rythmique, primaires sur papier",
+    "coherence": "Le système tient par trois fils : le point rouge présent dans chaque scène (point d'intro, point final de PURPOSE, cercle, anneau de la trame, tête du tube, centre des anneaux, point final de « Claude. »), la grille musicale affichée par le HUD (« BAR n/8 · 128 BPM », indicateur de temps à 4 cases, compteur d'images), et une palette primaire sur papier avec un fond par mesure (noir, rouge, noir, crème, bleu, jaune, noir, crème). Ce qui casse : le tube rayé façon bonbon et les démos 3D (sphère, tore, cube filaire) qui ressemblent à des exercices plus qu'à des idées, et les couleurs boueuses de passage pendant les morphings."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM (127,8 mesuré, pulsation très nette 8,58). La vidéo fait exactement 8 mesures de 1,875 s (112,5 im) : les 7 coupes tombent sur les premiers temps (f114, f225, f338, f450, f563, f675, f790 pour 112,5 / 225 / 337,5 / 450 / 562,5 / 675 / 787,5, écart 0 à 2,5 im). Dans les mesures, les gestes clés tombent sur les temps : mots du titre (temps 2, 3, 4), morphings de formes (un par temps), fermeture des anneaux. L'image précède les attaques détectées de 3 à 4 im de façon constante. Densité moyenne-forte : un geste par temps (0,47 s) au cœur de la vidéo. Temps faibles : ouverture lente (0 à 1,9 s, un point qui évolue sur fond noir), plongée dans le cube presque vide (≈0,13 s vers 9,25 s), signature tenue 1,4 s (13,65-15,05 s) avec seulement une ligne d'infos tapée.",
+    "timeline": [
+      {"t": "0:00.00-0:00.47", "what": "Noir, HUD seul (« BAR 1/8 · 128 BPM »)", "technique": "attente"},
+      {"t": "0:00.47-0:01.50", "what": "Un point rouge apparaît, se divise en deux, puis en anneau de 8 points autour d'un réticule (une étape par temps, probable)", "technique": "division cellulaire"},
+      {"t": "0:01.70-0:01.85", "what": "L'anneau tourne et se contracte en un seul point", "technique": "anticipation par contraction"},
+      {"t": "0:01.87-0:01.93", "what": "Un disque rouge cerclé de blanc s'ouvre plein cadre en 4 im et révèle EVERY (premier temps de la mesure 2)", "technique": "iris + texte qui se pose"},
+      {"t": "0:02.35-0:02.60", "what": "FRAME arrive lettre par lettre en arc, crochets de sélection (temps 2)", "technique": "lettres en arc"},
+      {"t": "0:02.85-0:03.25", "what": "Poussée caméra floue sur ON (temps 3), FRAME coupé au bord", "technique": "poussée sur un temps"},
+      {"t": "0:03.30-0:03.60", "what": "Recul, PURPOSE se compose lettre par lettre, le point tombe en dernier (temps 4)", "technique": "composition lettre par lettre"},
+      {"t": "0:03.62-0:03.75", "what": "Plongée dans le point final de PURPOSE → coupe sur un point rouge sur noir (mesure 3)", "technique": "plongée dans le point + raccord"},
+      {"t": "0:03.75-0:04.20", "what": "Le point grossit en cercle rouge, boîte de transformation et légende ROT / SHAPE se dessinent", "technique": "poignées de transformation"},
+      {"t": "0:04.22-0:05.62", "what": "Un morphing par temps : carré bleu (f253), triangle jaune (f282), fleur rouge (f309), rosace de points (f323)", "technique": "morphing sur les temps"},
+      {"t": "0:05.63-0:05.97", "what": "Inversion noir sur crème (mesure 4), la rosace explose en trame de points plein cadre", "technique": "rosace qui explose en trame"},
+      {"t": "0:05.97-0:07.17", "what": "Une onde de gros points rouges traverse la trame", "technique": "trame à onde"},
+      {"t": "0:07.17-0:07.48", "what": "La trame bascule en perspective 3D", "technique": "bascule en perspective"},
+      {"t": "0:07.50-0:07.80", "what": "Raccord couleur sur le même plan : fond bleu, points blancs (mesure 5) ; les points jaillissent et forment une sphère", "technique": "raccord couleur + nuage qui s'enroule"},
+      {"t": "0:07.80-0:09.00", "what": "Sphère de points → tore → cube filaire avec reflet qui parcourt une arête", "technique": "nuage de points 3D"},
+      {"t": "0:09.00-0:09.37", "what": "La caméra plonge à travers l'arête du cube, lignes qui s'effacent sur bleu presque vide", "technique": "plongée caméra"},
+      {"t": "0:09.38-0:11.17", "what": "Fond jaune (mesure 6) : un tube rayé dessine un trajet, fait une boucle avec traits d'impact et sort à droite", "technique": "tracé de chemin"},
+      {"t": "0:11.25-0:11.50", "what": "Noir (mesure 7) : 4 rubans de compétences entrent en filé horizontal", "technique": "rubans de texte"},
+      {"t": "0:11.85-0:12.25", "what": "Les rubans se courbent en anneaux concentriques, le point rouge éclot au centre (temps 3)", "technique": "lignes qui deviennent anneaux"},
+      {"t": "0:12.25-0:12.80", "what": "Les anneaux tournent en sens alternés", "technique": "rotation d'anneaux"},
+      {"t": "0:12.82-0:13.12", "what": "Toupie floue, les anneaux s'effondrent dans le point rouge", "technique": "effondrement vers le point"},
+      {"t": "0:13.13-0:13.22", "what": "Un disque crème s'ouvre depuis le point en 5 im (mesure 8)", "technique": "iris"},
+      {"t": "0:13.22-0:13.75", "what": "Le point vole en arc et devient le point final de « Claude », révélé lettre par lettre", "technique": "point qui devient le point final"},
+      {"t": "0:13.75-0:15.10", "what": "Signature tenue : MOTION DESIGNER, ligne « 900 FRAMES · 60 FPS · 128 BPM · WRITTEN ENTIRELY IN CODE » tapée", "technique": "titre final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille détectée à 127,8 BPM, pulsation très nette (8,58). Les 7 coupes tombent sur les premiers temps d'une grille à 128 BPM partant de f0 (multiples de 112,5 im) : f114, f225, f338, f450, f563, f675, f790 pour 112,5 / 225 / 337,5 / 450 / 562,5 / 675 / 787,5 (écart 0 à 2,5 im). Dans les mesures : mots du titre sur les temps 2, 3, 4 (FRAME f141, ON f171, PURPOSE f198 pour 140,6 / 168,75 / 196,9) ; morphings sur les temps (f253, f282, f309 pour 253,1 / 281,25 / 309,4, rosace f323 sur le demi-temps 323,4) ; anneaux fermés et point central à f735 (temps 735,8 de la grille détectée) ; iris final à f788 (premier temps 787,5). Les barres bleues des planches tombent 3 à 4 im après ces événements : l'attaque détectée suit l'image (coupe f450 → attaque 7,570 s = f454 ; coupe f675 → attaque 11,320 s = f679 ; PURPOSE f198 → attaque 3,344 s = f200,6 ; morphing f253 → attaque 4,272 s = f256). Comptage strict à ±2 im des barres : 4 gestes clés sur 21 (19 %, hasard 36 % à 128 BPM) ; en corrigeant ce décalage constant de −3 im : 15 sur 21 (71 %). L'indice automatique confirme le verrouillage : départs/temps R = 0,78, p = 2,7e-06, décalage moyen −51 ms (image en avance). La vidéo affiche elle-même « BAR n/8 · 128 BPM » et un indicateur de temps à 4 cases.",
+    "synced": ["coupes", "departs", "apparitions", "texte", "camera"],
+    "style_match": "House/électro à 128 BPM (probable, synthétisée en code), quatre temps réguliers : colle aux morphings d'un temps, aux scènes d'une mesure et aux mots posés temps par temps.",
+    "how_built": "Le prompt ne parle pas de musique : Claude a choisi 128 BPM et le revendique à l'écran (« 900 FRAMES · 60 FPS · 128 BPM · WRITTEN ENTIRELY IN CODE »). Toute la timeline est écrite en mesures et en temps (8 mesures de 112,5 im = 15 s, 28,125 im par temps) et la bande-son a très probablement été synthétisée en code sur la même horloge : la synchro est exacte par construction. Le décalage constant de 3 à 4 im (l'image précède l'attaque détectée) vient probablement de l'encodage audio (latence AAC) ou de la fenêtre d'analyse ; à compenser en avançant l'audio d'environ 50 ms ou en visant 1 à 2 im d'avance seulement."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Une scène par mesure",
+      "name_en": "One scene per bar",
+      "t": "0:00.00-0:15.10",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "À 128 BPM, une mesure de 4 temps = 1,875 s = 112,5 im ; la vidéo en compte exactement 8. Chaque coupe tombe sur un premier temps : f114, f225, f338, f450, f563, f675, f790 (écart 0 à 2,5 im). Chaque mesure a son fond (noir, rouge, noir, crème, bleu, jaune, noir, crème) et se termine par un geste qui prépare la suivante. Le HUD affiche la mesure courante (« BAR 2/8 ») et le temps (4 cases dont une pleine).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Mots posés temps par temps",
+      "name_en": "Word-per-beat title build",
+      "t": "0:01.87-0:03.75",
+      "frames": "f112-f225",
+      "fps": 60,
+      "mechanics": "Mesure 2 : EVERY sur le premier temps (iris f112-f116), FRAME sur le temps 2 (départ f141 pour 140,6), ON sur le temps 3 (f171 pour 168,75), PURPOSE sur le temps 4 (f198 pour 196,9), puis plongée dans le point et coupe sur le premier temps de la mesure 3 (f225). Un mot = un temps = 28 im : c'est la grammaire 1600 appliquée à une musique codée.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 112, "to": 225, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un morphing par temps",
+      "name_en": "Shape morph on every beat",
+      "t": "0:04.22-0:05.40",
+      "frames": "f253-f324",
+      "fps": 60,
+      "mechanics": "Mesure 3 : cercle → carré au départ f253 (temps 253,1), carré → triangle f282 (281,25), triangle → fleur f309 (309,4), fleur → rosace de points f323 (demi-temps 323,4). Chaque morphing dure 8 à 9 im (≈0,14 s), puis la forme tourne doucement jusqu'au temps suivant : le visuel « respire » à la noire.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Avance constante de l'image sur le son",
+      "name_en": "Constant picture-leads-sound offset",
+      "t": "0:01.90-0:13.17",
+      "frames": "f114-f790",
+      "fps": 60,
+      "mechanics": "Sur toute la vidéo, l'attaque audio détectée arrive 3 à 4 im (50 à 70 ms) après l'événement visuel : coupe f450 → attaque f454 ; coupe f675 → attaque f679 ; PURPOSE f198 → f200,6 ; morphing f253 → f256. C'est un décalage d'export, pas un défaut d'écriture, mais il dépasse les 1 à 2 im d'avance habituellement conseillées.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f675.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fil rouge du point rouge",
+      "name_en": "Recurring red dot motif",
+      "t": "0:00.47-0:15.10",
+      "frames": "f28-f904",
+      "fps": 60,
+      "mechanics": "Le même point rouge #ED4937 traverse la vidéo : point d'intro qui se divise, point final de PURPOSE dans lequel on plonge, cercle du morphing, anneau de gros points de la trame, tête du tube, centre des anneaux de texte, et enfin point final de « Claude. ». Chaque transition majeure passe par lui.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Intro par division cellulaire",
+      "name_en": "Dot mitosis intro",
+      "t": "0:00.47-0:01.70",
+      "frames": "f28-f102",
+      "fps": 60,
+      "mechanics": "Un point rouge (≈3 % de la largeur) apparaît au centre, se divise en deux gouttes reliées (métaballes) vers 1,0 s, puis en anneau de 8 points (diamètre ≈20 % de la largeur) autour d'un réticule et d'un cercle gris fin vers 1,5 s ; une étape par temps (probable, d'après les vignettes). L'énergie reste très basse pendant 1,9 s.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Contraction puis iris explosif",
+      "name_en": "Ring collapse into iris reveal",
+      "t": "0:01.70-0:01.97",
+      "frames": "f102-f118",
+      "fps": 60,
+      "mechanics": "L'anneau de 8 points tourne puis se contracte (20 % → 15 % → 10 % de la largeur, f107-f109), fusionne en une goutte (f110) et un point de 3-4 % (f111-f112) : anticipation. Puis un disque rouge bordé d'un fin cercle blanc s'ouvre : 4 → 35 → 75 → 95 → plus de 115 % de la largeur entre f112 et f116 (ease-out), premier temps de la mesure 2. À l'intérieur, EVERY rétrécit de ≈×2 à ×1 pendant l'ouverture, puis tremble 1 im (flou horizontal à f118) comme un impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f117.jpg",
+      "illus": {"from": 104, "to": 118, "n": 7}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre géométrique gras avec crochets de sélection",
+      "name_en": "Heavy geometric headline with selection brackets",
+      "t": "0:01.93-0:03.62",
+      "frames": "f116-f217",
+      "fps": 60,
+      "mechanics": "« EVERY FRAME / ON PURPOSE. » en géométrique très grasse (Montserrat Black probable), noir #141414 sur rouge #ED4937 grainé, capitale 12,5 % de la hauteur, deux lignes alignées à gauche (marge 7 % de la largeur), bloc de 72 % de la largeur. FRAME est encadré par 4 crochets d'angle fins (cadre de sélection), le point final est un disque plein qui servira de raccord.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui arrivent en arc avec rotation",
+      "name_en": "Letters flying in along an arc",
+      "t": "0:02.35-0:02.60",
+      "frames": "f141-f156",
+      "fps": 60,
+      "mechanics": "EVERY glisse vers la gauche avec flou (f141-f144) pour faire de la place ; les lettres de FRAME arrivent du haut droit une par une (décalage ≈2 im), inclinées de 20 à 30° sur une ligne de base ondulée (F bas, E haut à f150), et se posent en ≈15 im (0,25 s). Les crochets apparaissent à f147, pendant l'arrivée.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée caméra sur un temps",
+      "name_en": "On-beat camera punch-in",
+      "t": "0:02.85-0:03.35",
+      "frames": "f171-f201",
+      "fps": 60,
+      "mechanics": "Au temps 3, tout le bloc part en flou de mouvement et grossit d'environ ×1,4 pour cadrer ON (f171-f180), tient avec une légère dérive (f180-f195), puis recule en flou au temps 4 (f198) pour laisser entrer PURPOSE. Défaut : pendant 0,3 s, FRAME est coupé en « FR » par le bord droit du cadre.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot composé lettre par lettre, point qui tombe",
+      "name_en": "Letter-by-letter reveal with dropping period",
+      "t": "0:03.35-0:03.60",
+      "frames": "f201-f216",
+      "fps": 60,
+      "mechanics": "PURPOSE apparaît de gauche à droite à ≈2 im par lettre (montée derrière un masque probable : lettres coupées en bas à f204-f207), puis le point final tombe en dernier, étiré verticalement en traînée (« ! » à f210) avant de devenir un disque à f213.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le point final",
+      "name_en": "Dive into the period (match cut)",
+      "t": "0:03.60-0:03.80",
+      "frames": "f216-f228",
+      "fps": 60,
+      "mechanics": "La caméra zoome de façon exponentielle vers le point de « PURPOSE. » : ×1 à f216, ≈×1,5 à f219, ≈×6 à f222 (seuls « SE. » restent, énormes). Coupe sur le premier temps (f225) : fond noir et un point rouge au centre (≈6 % de la largeur), qui grossit aussitôt en cercle (≈17 % de la largeur à f240). Le point du mot devient la forme de la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 214, "to": 232, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Poignées de transformation façon logiciel",
+      "name_en": "Software transform gizmo",
+      "t": "0:03.85-0:05.40",
+      "frames": "f231-f324",
+      "fps": 60,
+      "mechanics": "Boîte englobante grise fine avec 8 poignées carrées, tracée depuis un coin (f231-f237), qui tourne avec la forme ; légende mono « ROT 101.3° / SHAPE SQUARE » en haut à droite, dont l'angle défile. Elle disparaît quand la forme devient rosace (f322-f324). Clin d'œil au logiciel de motion, mais légendes illisibles en 720p (≈1 % de la hauteur).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Morphing de formes avec changement de couleur",
+      "name_en": "Shape morph with color interpolation",
+      "t": "0:04.22-0:05.62",
+      "frames": "f253-f337",
+      "fps": 60,
+      "mechanics": "Cercle rouge (≈30 % de la hauteur) → carré arrondi bleu #3337F0 → triangle arrondi jaune #F5C842 entouré d'ellipses d'orbite → fleur rouge à 6 pétales → rosace de points en spirale. Chaque morphing prend 8 à 9 im avec une rotation de la boîte (≈−45° → −10°). Les couleurs passent par des teintes boueuses (violet #9A4BB5 à f258, lavande à f285, beige à f288) : interpolation RGB.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Inversion puis rosace qui explose en trame",
+      "name_en": "Color inversion + rosette burst into dot grid",
+      "t": "0:05.63-0:05.97",
+      "frames": "f338-f358",
+      "fps": 60,
+      "mechanics": "Coupe sur le premier temps (f338) : la rosace rouge sur noir devient noire sur crème. Au temps détecté f341, ses points s'écartent (anneau creux à f342-f344), jaillissent radialement avec flou (traînées à f345-f353), et se rangent en trame régulière plein cadre avec un anneau rouge au centre (f354-f358) : 20 im au total, déformation en barillet qui se relâche.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f338.jpg",
+      "illus": {"from": 336, "to": 358, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Trame de points traversée par une onde",
+      "name_en": "Dot grid with traveling ripple",
+      "t": "0:05.97-0:07.17",
+      "frames": "f358-f430",
+      "fps": 60,
+      "mechanics": "Trame d'environ 30 × 17 petits points noirs sur crème #EEE5E1. Un anneau puis une bande de points rouges plus gros traverse la trame en la déformant (effet de loupe), de la périphérie vers le centre puis vers la droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Bascule de la trame en perspective",
+      "name_en": "Grid tilt into 3D perspective",
+      "t": "0:07.17-0:07.48",
+      "frames": "f430-f449",
+      "fps": 60,
+      "mechanics": "La trame plate pivote vers l'arrière autour de l'axe horizontal : les rangées du haut se resserrent vers un point de fuite, l'anneau rouge devient une ellipse au centre du plan. Mouvement continu, sans à-coup, qui prépare le raccord de la mesure 5.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f450.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord couleur sur le même plan",
+      "name_en": "Color-swap match cut",
+      "t": "0:07.50",
+      "frames": "f450",
+      "fps": 60,
+      "mechanics": "Sur le premier temps de la mesure 5, le même plan de points en perspective passe d'un coup de crème/noir/rouge à bleu électrique #333BF3/blanc ; les points gardent leur position et prennent un flou de mouvement (f450-f458). La forme continue, seule la couleur coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f450.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Nuage de points qui s'enroule en sphère, tore, cube",
+      "name_en": "Point cloud morph: plane to sphere, torus, cube",
+      "t": "0:07.65-0:09.00",
+      "frames": "f459-f540",
+      "fps": 60,
+      "mechanics": "Les points du plan jaillissent vers le haut en traînées (5 à 10 % de la hauteur, f459-f466) et forment un dôme puis une sphère de points blancs (f467, demi-temps détecté f468), ≈40 % de la hauteur. Puis tore de points (8,5 s) et cube filaire blanc avec un reflet jaune qui parcourt une arête (9,0 s). La sortie du plan est belle ; la suite ressemble à une démo de primitives 3D.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f450.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée à travers l'arête du cube",
+      "name_en": "Camera dive through the wireframe",
+      "t": "0:09.00-0:09.37",
+      "frames": "f540-f562",
+      "fps": 60,
+      "mechanics": "La caméra fonce dans le cube : les arêtes deviennent des bandes épaisses floues avec un tiret lumineux (f551-f554), puis il ne reste que des lignes pâles sur le bleu pendant ≈8 im (f555-f562) avant la coupe sur le premier temps (f563). La fin de plongée perd toute énergie.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f566.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tube rayé qui dessine un trajet",
+      "name_en": "Striped tube path draw",
+      "t": "0:09.38-0:11.17",
+      "frames": "f563-f670",
+      "fps": 60,
+      "mechanics": "Sur jaune #F4CA42, un tube à rayures concentriques (contour noir, rouge, blanc, bleu) d'environ 5 % de la hauteur, tête en bille rouge, entre par le bord gauche à ≈1,5 % de la largeur par image (f563-f586), dessine une courbe, fait une boucle vers 10,5 s avec de petits traits d'impact radiaux, puis sa queue sort à droite (≈2,3 % de la largeur par image, f660-f669) ; 5 im de jaune vide avant la coupe.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f675.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Rubans de texte qui entrent en filé",
+      "name_en": "Text ribbons whipping in with motion blur",
+      "t": "0:11.25-0:11.50",
+      "frames": "f675-f692",
+      "fps": 60,
+      "mechanics": "Quatre lignes de compétences (MOTION DESIGN • ANIMATION • ART DIRECTION / TYPOGRAPHY • 3D • ILLUSTRATION / RHYTHM • TIMING • EASING / LINE • COLOR • SHAPE) entrent en glissement horizontal avec un flou extrême (traînées pleine largeur à f676-f679), décalage 3 à 4 im par ligne, net en 5 à 6 im (ease-out) ; la ligne 1 devient lisible à f680 (temps détecté f679). Capitales espacées, blanc gras et gris en alternance, puces rouges, de 3 % à 2 % de la hauteur. Défilement lent ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f675.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes de texte qui se courbent en anneaux",
+      "name_en": "Straight text lines bending into rings",
+      "t": "0:11.85-0:12.40",
+      "frames": "f711-f744",
+      "fps": 60,
+      "mechanics": "Les quatre rubans droits se courbent progressivement : légère courbe à f714, arc en demi-cercle à f720, trois quarts à f726, anneaux concentriques fermés à f735 (24 im, ease-in-out). Le point rouge éclot au centre de f735 à f744 (≈5 % de la largeur), sur le temps détecté f735,8. Ensuite les anneaux tournent en sens alternés (f744-f768).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 708, "to": 744, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Toupie floue, effondrement dans le point, iris",
+      "name_en": "Spin blur collapse into dot + iris",
+      "t": "0:12.82-0:13.22",
+      "frames": "f769-f793",
+      "fps": 60,
+      "mechanics": "Les anneaux accélèrent jusqu'au flou radial (f771-f780 : les lettres deviennent des cercles de traînées grises), rétrécissent en spirale (f783-f786) et disparaissent dans le point rouge (f787). Sur le premier temps de la mesure 8 (787,5), un disque crème s'ouvre depuis le point : ≈20, 50, 75, 85, 100 % de la largeur de f788 à f792. Compression puis explosion, toujours autour du même point.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f793.jpg",
+      "illus": {"from": 768, "to": 793, "n": 7}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Le point devient le point final du logo",
+      "name_en": "Dot becomes the wordmark's period",
+      "t": "0:13.22-0:13.75",
+      "frames": "f793-f825",
+      "fps": 60,
+      "mechanics": "Le point rouge suit une trajectoire en cloche : du centre (52 % ; 40 % du cadre) à un sommet (59 % ; 27 %) vers f803, puis redescend vers la place du point final (69 % ; 52 %), étiré dans le sens du mouvement et rétréci de ≈3,5 à 2 % de la largeur. Pendant ce temps, « Claude » se révèle lettre par lettre depuis la ligne de base (C à f797, e à f813, ≈3 im par lettre).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f793.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Signature serif et légende technique",
+      "name_en": "Serif wordmark with technical caption",
+      "t": "0:13.75-0:15.10",
+      "frames": "f825-f904",
+      "fps": 60,
+      "mechanics": "« Claude. » en serif de texte demi-gras (type Source Serif ou Tiempos, probable), capitale 15 % de la hauteur, 38 % de la largeur, noir sur crème #EBE6DE, point rouge #EB3F33. Dessous « MOTION DESIGNER » en grotesque type DIN espacée de 0,3 em (2,5 %), puis une ligne grise #8A8580 « 900 FRAMES · 60 FPS · 128 BPM · WRITTEN ENTIRELY IN CODE » tapée entre 14,4 et 15,0 s. Contraste voulu avec la géométrique grasse de l'ouverture.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD qui affiche la mesure et le tempo",
+      "name_en": "Music-aware HUD",
+      "t": "0:00.00-0:13.22",
+      "frames": "f0-f793",
+      "fps": 60,
+      "mechanics": "Haut gauche « CLAUDE  MOTION REEL 2026 », haut droit indicateur de temps à 4 cases + « BAR 2/8 · 128 BPM », bas droit compteur d'images « F0217 » et timecode, crochets fins aux 4 coins ; grotesque type DIN en capitales espacées, ≈1,5 % de la hauteur. La signature ne garde que les crochets et le timecode. Tic de bande démo, mais ici il rend la grille musicale visible.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain papier et vignettage",
+      "name_en": "Paper grain and vignette",
+      "t": "0:00.00-0:15.10",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Bruit fin et animé sur tous les aplats (rouge, crème, jaune, bleu) et léger assombrissement des coins : les couleurs primaires prennent un aspect imprimé. Aucune ombre ni dégradé.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Primaires sur papier, un fond par mesure",
+      "name_en": "Primary palette, one background per bar",
+      "t": "0:00.00-0:15.10",
+      "frames": "f0-f904",
+      "fps": 60,
+      "mechanics": "Rouge #ED4937, bleu électrique #333BF3, jaune #F4CA42, noir #111113 et crème #EEE5E1. Le fond change à chaque mesure (noir, rouge, noir, crème, bleu, jaune, noir, crème) et le rouge reste le seul accent constant, porté par le point.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ouverture lente et signature tenue",
+      "name_en": "Slow open and long end hold",
+      "t": "0:00.00-0:01.87 / 0:13.65-0:15.10",
+      "frames": "f0-f112 / f819-f904",
+      "fps": 60,
+      "mechanics": "La mesure 1 (1,9 s) ne montre qu'un point qui évolue sur noir : l'analyse la classe en maintien statique (0-1,48 s). La signature reste fixe 1,4 s, seule la petite ligne d'infos se tape. Une ouverture en une demi-mesure et une fin d'une mesure au plus garderaient la densité du milieu.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Même prompt, mot pour mot, que motiondsgnr-9dcfa6, mais résultat très différent : ici Claude prend la musique comme colonne vertébrale (128 BPM, 8 mesures), là-bas une durée fixe par chapitre. Le prompt ne contrôle pas ce choix : il faut l'écrire."},
+    {"kind": "build", "insight": "Une timeline écrite en mesures (112,5 im) et une bande-son générée sur la même horloge donnent une synchro exacte sans réglage à la main ; le HUD le revendique (« BAR 2/8 · 128 BPM »)."},
+    {"kind": "structure", "insight": "8 mesures = 8 scènes, et chaque mesure se ferme par un geste qui prépare la suivante : contraction, plongée dans le point, inversion, raccord couleur, effondrement dans le point."},
+    {"kind": "inputs", "insight": "Sans format imposé, la vidéo sort en 1280 × 720 : les légendes fines (HUD, poignées de transformation) deviennent illisibles. Il faut préciser 1920 × 1080."},
+    {"kind": "banned", "insight": "Rien n'interdit les mots coupés par le cadre ni les démos 3D génériques : la poussée sur ON coupe FRAME et la mesure 5 est remplie par sphère, tore et cube."},
+    {"kind": "qa", "insight": "Le décalage constant de 3 à 4 im entre image et attaque audio aurait été repéré par une vérification au rendu (comparer coupes et attaques)."}
+  ],
+  "steal": [
+    "Construire toute la vidéo sur la mesure : à 128 BPM, une scène = 112,5 im (1,875 s), chaque coupe sur le premier temps, chaque mot ou morphing sur un temps.",
+    "Plonger dans le point final d'un mot (zoom exponentiel en 6 à 9 im) et couper sur un point rouge qui devient la forme de la scène suivante.",
+    "Un motif unique comme fil rouge : le même point rouge ouvre, relie chaque scène et finit en point final de la signature.",
+    "Lignes de texte droites qui se courbent en anneaux concentriques en 24 im, puis toupie floue qui s'effondre dans le point central avant un iris.",
+    "Anticipation avant un iris : l'anneau de points se contracte en un point (5 im) puis le disque explose plein cadre en 4 im sur le premier temps."
+  ],
+  "flaws": [
+    "Poussée caméra sur « ON » qui coupe « FRAME » au bord du cadre pendant 0,3 s.",
+    "Ouverture lente : 1,9 s de points sur fond noir avant le premier vrai impact.",
+    "Démos 3D génériques (sphère, tore, cube filaire de points) et plongée finale presque vide pendant 0,13 s.",
+    "Morphings en interpolation RGB : teintes boueuses de passage (violet, lavande, beige) entre rouge, bleu et jaune.",
+    "Rendu 1280 × 720 : légendes du HUD et des poignées illisibles ; tube rayé bonbon hors système."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : c'est un exemple très propre de synchro par construction (mesure = scène, temps = geste) à 60 fps natifs, avec des raccords motivés à mesurer image par image (plongée dans le point, effondrement des anneaux, point qui devient le point final) et directement transposables dans HyperFrames."
+  }
+}

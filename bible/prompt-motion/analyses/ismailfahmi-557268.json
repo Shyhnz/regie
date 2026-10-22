@@ -1,0 +1,371 @@
+{
+  "slug": "ismailfahmi-557268",
+  "title": "Drone Emprit showreel",
+  "handle": "@ismailfahmi",
+  "family": "formes",
+  "craft": 4,
+  "craft_reason": "Un seul système de particules qui se transforme de façon lisible en trois visualisations de données puis en logo : concept rare et maîtrisé ; mais sous-titres génériques, pauses statiques et ouverture abstraite trop longue.",
+  "summary": "Promo de 15 s pour Drone Emprit, outil indonésien de veille des réseaux sociaux : un seul nuage de milliers de particules incarne « la conversation », se fait scanner et colorer, se sépare en graphe de cinq communautés, s'effondre en courbe d'alerte, puis converge en logo dans un flash. Concept fort et cohérent ; sous-titres génériques, pauses de 1,5 s et une image d'affiche parasite au début.",
+  "prompt_vs_result": [
+    "Une seule ligne : vidéo dynamique de 15 s montrant à quel point Drone Emprit, outil de veille médias, est incroyable, « comme notre showreel pour un CV », « go all out ». Aucun visuel, texte, couleur ni musique imposés.",
+    "Claude a tout inventé : un système de particules unique qui devient tour à tour flux de conversation, graphe de réseau, courbe d'alerte puis logo ; quatre phrases-sous-titres ; palette marine/cyan/or ; chiffres fictifs ; carte du fondateur.",
+    "« Go all out » a donné une ambition cohérente plutôt qu'un empilement d'effets. Il aurait fallu préciser : charte de marque, tempo et calage sur les temps, taille minimale des textes, durée maximale des pauses, pas d'image d'affiche en tête."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B2A57", "role": "fond, centre du dégradé radial"},
+      {"hex": "#041029", "role": "fond, bords vignettés"},
+      {"hex": "#D6E8FF", "role": "particules neutres (bleu glacier) avant le scan"},
+      {"hex": "#3EE0E8", "role": "cyan : « Supporters », sentiment positif, départ du tourbillon"},
+      {"hex": "#F4D06F", "role": "jaune : « News media », neutre"},
+      {"hex": "#F2908A", "role": "saumon : « Critics », négatif"},
+      {"hex": "#5C8DFF", "role": "bleu : « General public »"},
+      {"hex": "#FF4FB4", "role": "magenta : « Coordinated accounts », l'anomalie"},
+      {"hex": "#2EC4B6", "role": "titre, départ du dégradé (teal)"},
+      {"hex": "#E3B23C", "role": "titre, fin du dégradé (or)"},
+      {"hex": "#F2F6FA", "role": "sous-titres, compteur, étiquettes"},
+      {"hex": "#4A6488", "role": "flash de surexposition gris-bleu (f741-f750)"}
+    ],
+    "type": "Titre en grotesque géométrique très large, extra-gras (type Unbounded, probable), ≈ 12 % de la hauteur, dégradé teal → or ; sous-titres gras ≈ 4 %, casse phrase, alignés à gauche ; étiquettes et compteur ≈ 1-2,5 %.",
+    "texture": "Particules en rendu additif (cœurs blancs là où elles se superposent) avec léger halo ; chaque particule est un trait orienté selon sa vitesse, long à grande vitesse, point au repos (substitut de flou de mouvement directionnel) ; fond en dégradé radial marine avec vignettage fort ; petits repères d'angle façon viseur (probable) ; flash de surexposition gris-bleu à 12,35 s ; pas de grain.",
+    "style": "Data-art particulaire sur bleu nuit",
+    "coherence": "Tout tient dans un seul système : les mêmes particules sont la conversation, le scan, les communautés, la courbe et le logo, avec des teintes stables (cyan, jaune, saumon, bleu, magenta) et un dégradé cyan → or du tourbillon repris par le titre. Ce qui casse : l'image d'affiche de 6 im au début, le flash gris à bord irrégulier (f741), des sous-titres de type « légende » qui ne dialoguent pas avec les particules, et le sens des couleurs qui glisse (plateformes → communautés → sentiments)."
+  },
+  "rhythm": {
+    "bpm": 118,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo ≈ 118 BPM (117,9 mesuré, netteté 5,37, grille 0,121 s + k × 0,509 s, soit un temps toutes les ≈ 30,5 im à 60 fps). 2 coupes détectées : f6 (fin d'une image d'affiche de 6 im montrant la carte de fin, suivie d'1 im noire) et f742, qui est en réalité un flash, pas une coupe. Le film est un plan continu de particules en 6 états : ruban (0,1-3,4 s), scan (3,4-4,0 s), bande colorée (4,0-5,7 s), éclatement → graphe (5,7-6,8 s), dissolution → courbe (8,4-9,75 s), tourbillon → logo (11,2-12,9 s), soit un changement d'état toutes les ≈ 2,8 s. Calage : les 4 changements d'état tombent à 3-6 im des 4 accents les plus forts de la musique (5,6 s, 8,5 s, 11,3 s, 12,4 s), eux-mêmes hors de la grille ; au niveau du temps, 10 gestes sur 19 à ±2 im d'une barre (53 % contre 33 % de hasard, non significatif) et les 4 sous-titres démarrent hors grille. Maintiens : 6,83-8,43 s (graphe), 9,75-11,23 s (courbe), 13,12-14,63 s (carte de fin), 31 % du film ; de petits événements les ponctuent (annotation f436, sous-titre du pic f602, nom f816) et le compteur tourne toujours jusqu'à 12 s, mais il reste ≈ 1,1 s sans changement dans chaque pause. L'ouverture (0,2-5,7 s) a une énergie de mouvement plate : aucun pic avant le scan.",
+    "timeline": [
+      {"t": "0:00.00-0:00.10", "what": "6 images de la carte de fin complète, puis coupe au noir", "technique": "image d'affiche (poster frame), probable"},
+      {"t": "0:00.10-0:00.42", "what": "Fond et particules apparaissent en fondu depuis le noir pendant une montée sonore", "technique": "fondu d'ouverture"},
+      {"t": "0:00.42-0:03.40", "what": "Ruban de milliers de traits blancs qui ondule et se tord (vague, V, blob) ; compteur « Mentions analyzed » qui roule ; « Every minute, millions of Indonesians speak up. » tapé lettre à lettre", "technique": "champ de flux particulaire + sous-titre machine à écrire"},
+      {"t": "0:02.72-0:03.50", "what": "Le sous-titre s'efface par la gauche, « Drone Emprit hears all of it. » s'écrit dans son sillage", "technique": "réécriture de sous-titre"},
+      {"t": "0:03.40-0:03.97", "what": "Barre lumineuse cyan qui balaie de gauche à droite ; les particules balayées prennent leurs couleurs", "technique": "scan qui classe"},
+      {"t": "0:03.60-0:05.70", "what": "Étiquettes TikTok, Instagram, YouTube, Facebook, Online news, Threads, X en décalé ; le nuage s'étire en bande horizontale colorée", "technique": "étiquettes en orbite"},
+      {"t": "0:05.70-0:06.83", "what": "La bande éclate en longues traînées qui tourbillonnent, se trient par couleur en 5 grappes radiales reliées par des arêtes et étiquetées ; « It maps who shapes the conversation. »", "technique": "éclatement → graphe de réseau"},
+      {"t": "0:06.83-0:08.42", "what": "Graphe tenu ; anneau cible et note « 212 accounts posting in sync » sur « Coordinated accounts »", "technique": "annotation d'alerte"},
+      {"t": "0:08.42-0:09.75", "what": "Le graphe se dissout en tourbillon, s'aplatit en dôme et s'effondre en courbe de densité sur 24 h ; « And sees the moment a story turns. »", "technique": "effondrement → courbe"},
+      {"t": "0:09.63-0:11.23", "what": "« 15:21 Spike detected », « Negative share jumps to 61% in 40 minutes » au sommet du pic", "technique": "annotation de pic horodatée"},
+      {"t": "0:11.23-0:12.33", "what": "La courbe se dissout en tourbillon elliptique cyan → or qui se comprime en bande", "technique": "tourbillon de convergence"},
+      {"t": "0:12.35-0:12.83", "what": "Flash gris-bleu sur le coup le plus fort de la musique ; les particules se condensent en « Drone Emprit », le logo plein se fond par-dessus", "technique": "flash + particules → logo"},
+      {"t": "0:13.00-0:14.63", "what": "Accroche, filet, nom et fonction du fondateur ; poussière en anneau qui s'éteint", "technique": "carte de signature façon CV"},
+      {"t": "0:14.67-0:15.10", "what": "Fondu au noir avec la traîne de la musique", "technique": "fondu final"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Barres (grille 117,9 BPM) : 10 gestes clés sur 19 à ±2 im (53 % contre 33 % de hasard, non significatif). Calés : départ du scan f206 (demi-temps), pic de l'éclatement f376 (temps f374), étiquettes du graphe f402-f404 (temps f404), note « 212 accounts » f436 (temps f435, attaque 7,245 s), effondrement en courbe f557 (temps, attaque 9,276 s), courbe posée f585 (f587), sous-titre du pic f602 (demi-temps, attaque 10,043 s), flash f741 (temps f740), nom f816 (demi-temps), fondu final ≈ f880 (demi-temps f877). Hors grille : les 4 départs de sous-titres (f26, f177, f366, f546), graphe posé f410 (mais sur l'attaque 6,827 s), dissolutions f505 et f674, accroche f780. Niveau sonore image par image : les 4 accents les plus forts (f336, f510, f678, f744, tous hors grille) tombent à 3-6 im des 4 changements d'état, l'image précédant le son de 3-5 im sur trois d'entre eux (f505/f510, f674/f678, f741/f744) ; 4 coïncidences sur 4 ne relèvent pas du hasard. En revanche le démarrage de la musique (f39, +17 dB) n'a aucun geste visuel, et le roulement de doubles-croches de 13,1-14,9 s se joue sur une carte immobile.",
+    "synced": ["departs", "flashs", "drop"],
+    "style_match": "Musique « upbeat » à ≈ 118 BPM, énergique et régulière ; les particules coulent en continu sans pulser sur les temps : énergie cohérente, mais l'image ignore la pulsation hors des transitions.",
+    "how_built": "Le prompt ne mentionne ni musique ni tempo. La bande (montée depuis le silence numérique, démarrage à 0,65 s, coup final à 12,4 s puis décroissance régulière jusqu'à la fin) porte ses accents aux changements de scène : elle a probablement été générée en code ou montée à la main sur une timeline à scènes de ≈ 2,8 s, sans quantification sur les temps. D'où une synchro « par transitions » : les gros moments tombent ensemble à quelques images près, mais les sous-titres, les étiquettes et les arrivées sont libres."
+  },
+  "techniques": [
+    {
+      "cat": "other",
+      "name_fr": "Image d'affiche en tête de vidéo",
+      "name_en": "poster frame prepended",
+      "t": "0:00.00-0:00.10",
+      "frames": "f0-f6",
+      "fps": 60,
+      "mechanics": "Les 6 premières images (0,1 s) montrent la carte de fin complète (titre, accroche, fondateur, poussière), puis coupe franche au noir à f6 (1 im noire) avant la vraie ouverture. Sert probablement de vignette pour l'aperçu sur X ; à la lecture, c'est un flash parasite qui dévoile la fin.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f6.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu d'ouverture depuis le noir",
+      "name_en": "fade-up from black",
+      "t": "0:00.10-0:00.42",
+      "frames": "f6-f25",
+      "fps": 60,
+      "mechanics": "Le fond passe du noir #02060E au marine et les particules de 0 à 100 % d'opacité en ≈ 19 im (0,32 s), progression régulière. Pendant ce temps la musique est une montée (−56 → −34 dB) ; elle démarre franchement à f39 (0,65 s, +17 dB en 1 im) sans aucun geste visuel associé.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f6.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Ruban de particules en champ de flux",
+      "name_en": "flow-field particle ribbon",
+      "t": "0:00.10-0:05.70",
+      "frames": "f6-f342",
+      "fps": 60,
+      "mechanics": "Des milliers (probable) de traits blanc bleuté #D6E8FF, chacun ≈ 0,5-1 % de la largeur, orientés par un champ de flux (bruit de type curl, probable) à l'intérieur d'un volume en ruban vu en perspective, qui pivote en 3D. Le ruban se déforme en continu : vague (0,5 s), V aux ailes relevées (1,0-1,5 s), blob qui se tord (2,0-3,5 s), bande horizontale (4,5-5,5 s), sur ≈ 45-70 % de la largeur. Rendu additif : le cœur dense blanchit. Énergie de mouvement basse et constante pendant 5,5 s : belle matière, mais forme abstraite sans événement.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Traits étirés selon la vitesse",
+      "name_en": "velocity-stretched particle streaks",
+      "t": "0:05.70-0:12.35",
+      "frames": "f342-f741",
+      "fps": 60,
+      "mechanics": "Chaque particule est un segment orienté selon sa vitesse, dont la longueur suit la vitesse : ≈ 0,5 % de la largeur au repos (graphe, courbe), 3-8 % aux pics de mouvement (f376, f550, f730). Effet de flou de mouvement directionnel sans flou d'image ; le raccourcissement des traits rend visible le ralentissement (ease-out) de chaque métamorphose.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f376.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur ambiant « Mentions analyzed »",
+      "name_en": "ambient rolling counter",
+      "t": "0:00.12-0:12.00",
+      "frames": "f7-f720",
+      "fps": 60,
+      "mechanics": "En haut à droite (x ≈ 85-92 %, y ≈ 8 %) : libellé gris ≈ 1 % de la hauteur, nombre blanc ≈ 2,5 % à chiffres tabulaires et séparateurs de milliers. Il roule sans arrêt jusqu'à 43 995 484 (f690) avec un débit croissant : +950 000 par 0,5 s au début, +2 580 000 à la fin (≈ 1,9 → 5,2 millions par seconde), accélération douce. S'éteint avec la courbe vers 11,5-12 s. Garantit qu'une chose bouge toujours, même pendant les pauses ; trop petit pour être lu sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titres tapés lettre à lettre avec front adouci",
+      "name_en": "per-character type-on with soft leading edge",
+      "t": "0:00.43-0:09.80",
+      "frames": "f26-f588",
+      "fps": 60,
+      "mechanics": "En bas à gauche (x ≈ 6 %, ligne de base ≈ 88 %), grotesque géométrique large et grasse, blanc #F2F6FA, hauteur de capitale ≈ 4 %, casse phrase. Chaque caractère apparaît en fondu sur ≈ 4-5 im avec 1 im de décalage, soit ≈ 0,9 caractère par image (≈ 53 car/s) : une ligne de 29 à 47 caractères s'écrit en 35-55 im (0,6-0,9 s). Quatre phrases : f26-f85, f177-f210, f366-f407, f546-f588. Aucun départ sur un temps (4 sur 4 hors grille).",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f376.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Réécriture : effacement par la gauche, nouvelle phrase dans le sillage",
+      "name_en": "rolling caption overwrite",
+      "t": "0:02.72-0:03.50",
+      "frames": "f163-f210",
+      "fps": 60,
+      "mechanics": "L'ancienne phrase disparaît caractère par caractère depuis la gauche (≈ 1,2 car/im) ; la nouvelle s'écrit au même endroit ≈ 14 im derrière le front d'effacement (à 3,0 s on lit « Dro » suivi de « millions of Indonesians speak up. »), si bien que la ligne n'est jamais vide. Même principe entre les phrases 3 et 4 (effacement f505-f530), mais avec un trou d'≈ 15 im avant la frappe suivante ; la phrase 2 sort, elle, par simple fondu (≈ 5,4-5,9 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Barre de scan qui classe les particules",
+      "name_en": "scan sweep with recolor",
+      "t": "0:03.40-0:03.97",
+      "frames": "f204-f238",
+      "fps": 60,
+      "mechanics": "Barre verticale cyan #3FE0D0 (≈ 1 % de la largeur, pleine hauteur, halo) qui balaie de ≈ 3 % à ≈ 97 % de la largeur en 34 im (0,57 s), ease-in-out : ≈ 0,5 %/im au départ (f204-f215), 3-4 %/im au milieu (f222-f232), ralentie à la fin. Les particules déjà balayées passent du blanc à un mélange cyan / jaune / rose. Départ sur le demi-temps (f206), vitesse maximale sur le temps (f221). Illustre littéralement « Drone Emprit hears all of it. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f219.jpg",
+      "illus": {"from": 206, "to": 238, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étiquettes de plateformes en orbite",
+      "name_en": "floating platform labels",
+      "t": "0:03.60-0:05.70",
+      "frames": "f216-f342",
+      "fps": 60,
+      "mechanics": "Sept étiquettes blanches ≈ 1,2 % de la hauteur (TikTok, Instagram, YouTube, Facebook, Online news, Threads, X) apparaissent en fondu autour du nuage, décalées de 6 à 12 im (TikTok f216, Instagram ≈ f228, YouTube ≈ f234, les autres avant f300), sans trait de liaison avec les particules ; elles disparaissent quand la bande éclate. Lisibles seulement en plein écran.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f219.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Éclatement puis tri par couleur",
+      "name_en": "burst and color-sorting into clusters",
+      "t": "0:05.70-0:06.60",
+      "frames": "f342-f396",
+      "fps": 60,
+      "mechanics": "La bande colorée se déchire en longues traînées qui tourbillonnent (pic de mouvement f376, temps f374), puis les particules migrent par couleur vers cinq centres (f379-f396) : cyan à gauche, jaune en haut, saumon à droite, bleu en bas, magenta en bas à droite. Les traînées raccourcissent à mesure que les particules ralentissent : l'ease-out se lit dans la longueur des traits.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f376.jpg",
+      "illus": {"from": 361, "to": 396, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Graphe de réseau en grappes radiales",
+      "name_en": "radial cluster network graph",
+      "t": "0:06.60-0:08.42",
+      "frames": "f396-f505",
+      "fps": 60,
+      "mechanics": "Chaque communauté devient une grappe radiale (traits courts qui rayonnent depuis un cœur blanc) : Supporters (31 %, 44 %), News media (49 %, 20 %), Critics (68 %, 42 %), General public (49 %, 68 %), Coordinated accounts (83 %, 75 %, plus petite et isolée). Étiquettes ≈ 1,2 % de la hauteur posées f402-f404 (temps f404) ; arêtes blanches à ≈ 20-30 % d'opacité tirées entre les cœurs f402-f408 ; graphe posé f410 (6,83 s, sur l'attaque audio 6,827 s). Ensuite immobile ≈ 1,6 s, hors compteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Anneau cible et note chiffrée sur l'anomalie",
+      "name_en": "target ring and numeric callout",
+      "t": "0:06.83-0:07.28",
+      "frames": "f410-f437",
+      "fps": 60,
+      "mechanics": "Un anneau magenta fin (≈ 4 % de la largeur) entoure le nœud « Coordinated accounts » (f410-f413) ; la note « 212 accounts posting in sync » (≈ 1 % de la hauteur) apparaît dessous à f436, sur le temps 7,245 s (f435, attaque forte). Une seule mise en avant pour l'élément anormal, sans flèche : bonne hiérarchie, mais trop petite.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le graphe s'effondre en courbe de densité",
+      "name_en": "swarm collapse into area chart",
+      "t": "0:08.42-0:09.75",
+      "frames": "f505-f585",
+      "fps": 60,
+      "mechanics": "Départ f505 (5 im avant un accent de la musique à f510) : les grappes se dissolvent en traînées qui tournent (pic f550), l'essaim s'aplatit en dôme (f547-f556) puis tombe sur une ligne de base à ≈ 78 % de la hauteur à partir du temps f557 (attaque 9,276 s) ; les particules s'empilent en courbe de densité sur 24 h avec un pic à ≈ 62 % en x (f557-f585). Légende « Positive / Neutral / Negative » en haut à gauche (f558), heures 00:00-24:00 en bas (≈ f578). Courbe posée f585 (temps f587).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f550.jpg",
+      "illus": {"from": 540, "to": 585, "n": 7}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Annotation de pic horodatée",
+      "name_en": "timestamped spike callout",
+      "t": "0:09.63-0:10.20",
+      "frames": "f578-f612",
+      "fps": 60,
+      "mechanics": "Point blanc au sommet du pic et titre « 15:21 Spike detected » (blanc gras ≈ 1,5 % de la hauteur) en fondu f578-f586, puis seconde ligne « Negative share jumps to 61% in 40 minutes » (≈ 1 %) vers f602, sur le demi-temps (attaque 10,043 s). Une donnée datée et chiffrée raconte mieux qu'un adjectif ; taille trop faible pour un format social.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Tourbillon de convergence",
+      "name_en": "converging vortex",
+      "t": "0:11.23-0:12.33",
+      "frames": "f674-f740",
+      "fps": 60,
+      "mechanics": "Départ f674 (4 im avant l'accent de f678) : la courbe se dissout en un tourbillon elliptique de traînées sur ≈ 75 % de la largeur, en dégradé cyan à gauche → or à droite (les couleurs du futur logo), puis l'ellipse se comprime verticalement en bande (f727-f740) à l'emplacement exact du titre. Le compteur et le sous-titre s'éteignent.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f742.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash de surexposition sur le coup final",
+      "name_en": "overexposure flash on the final hit",
+      "t": "0:12.35-0:12.60",
+      "frames": "f741-f756",
+      "fps": 60,
+      "mechanics": "À f741 le fond passe d'un coup du marine #0A2448 à un gris-bleu clair #4A6488 (bords sombres irréguliers pendant 1 im, plein cadre à f742), 2-3 im avant le coup le plus fort de la musique (f744-f745, −2,8 dB) ; retour au marine en ≈ 15 im (f742-f756). Le flash est gris et terne plutôt que lumineux (pas de bloom), et l'image à bord déchiré ressemble à un défaut.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f742.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Les particules se condensent en logo",
+      "name_en": "particles assemble into wordmark",
+      "t": "0:12.37-0:12.83",
+      "frames": "f742-f770",
+      "fps": 60,
+      "mechanics": "Pendant le flash, les particules se rangent dans les contours de « Drone Emprit » : lettres granuleuses illisibles (f743-f750), lisibles à f751, puis le logo plein en dégradé se fond par-dessus (f757-f770) ; la poussière résiduelle forme un anneau elliptique autour du titre et s'éteint vers f800. Fin logique du système (la conversation devient la marque), mais procédé très répandu.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f742.jpg",
+      "illus": {"from": 738, "to": 762, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre extra-large en dégradé teal → or",
+      "name_en": "extended display wordmark with gradient",
+      "t": "0:12.83-0:15.10",
+      "frames": "f770-f906",
+      "fps": 60,
+      "mechanics": "« Drone Emprit » en grotesque géométrique très large et extra-grasse (type Unbounded, probable), ≈ 77 % de la largeur (11,5-88,5 %), hauteur de capitale ≈ 12 %, centré à ≈ 45 % de la hauteur ; dégradé horizontal #2EC4B6 → #8CC97E → #E3B23C. Le dégradé reprend celui du tourbillon (cyan → or) : la couleur fait le lien entre particules et marque.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de signature façon CV",
+      "name_en": "résumé-style endcard",
+      "t": "0:13.00-0:15.10",
+      "frames": "f780-f906",
+      "fps": 60,
+      "mechanics": "Accroche « Media intelligence that sees the whole conversation. » (≈ 1,8 % de la hauteur) en fondu f780-f790 ; nom « Ismail Fahmi, Ph.D. » et fonction « Founder & CEO, PT Media Kernels Indonesia » (≈ 1,5 % et 1,1 %) en fondu f816-f826 (demi-temps f816) ; petit filet teal entre les deux (≈ f826-f834) ; tenue jusqu'à f878, puis fondu au noir en 26 im (f880-f906) avec la traîne de la musique (−24 → −36 dB). Répond au « showreel for a résumé » du prompt.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un seul système, trois verbes",
+      "name_en": "one particle system, three verbs",
+      "t": "0:00.10-0:15.10",
+      "frames": "f6-f906",
+      "fps": 60,
+      "mechanics": "Constat d'échelle (« Every minute, millions of Indonesians speak up. ») puis trois affirmations portées par les mêmes particules : « hears » (scan qui colore), « maps » (graphe), « sees » (pic), et la signature. Un changement d'état toutes les ≈ 2,8 s ; la métamorphose remplace la coupe (aucune coupe réelle hors l'image d'affiche).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Teintes de données stables d'une scène à l'autre",
+      "name_en": "persistent categorical hues",
+      "t": "0:03.70-0:12.33",
+      "frames": "f222-f740",
+      "fps": 60,
+      "mechanics": "Cyan #3EE0E8, jaune #F4D06F, saumon #F2908A, bleu #5C8DFF, magenta #FF4FB4 restent les mêmes du scan au tourbillon, ce qui rend les métamorphoses lisibles. Mais leur sens glisse : plateformes (scan), puis communautés (graphe, magenta = comptes coordonnés), puis sentiments (courbe : positif, neutre, négatif).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond radial marine et repères de viseur",
+      "name_en": "radial navy backdrop with corner brackets",
+      "t": "0:00.10-0:15.10",
+      "frames": "f6-f906",
+      "fps": 60,
+      "mechanics": "Dégradé radial #0B2A57 au centre → #041029 aux bords, vignettage fort ; petits repères d'angle en L (≈ 2 % du cadre, faible opacité) aux coins, façon viseur d'analyse (probable). Fond fixe : tout le mouvement est porté par les particules.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pauses de lecture d'≈ 1,5 s",
+      "name_en": "reading holds",
+      "t": "0:06.83-0:14.63",
+      "frames": "f410-f878",
+      "fps": 60,
+      "mechanics": "Trois maintiens quasi statiques (6,83-8,43 s, 9,75-11,23 s, 13,12-14,63 s ; 31 % du film) où seuls le compteur et une petite annotation bougent : il reste ≈ 1,1 s sans changement dans chaque pause. Les données ont le temps d'être lues, mais l'élan des métamorphoses retombe à chaque fois.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Changements d'état sur les accents de la musique",
+      "name_en": "state changes on musical accents",
+      "t": "0:05.60-0:12.42",
+      "frames": "f336-f745",
+      "fps": 60,
+      "mechanics": "Les quatre accents les plus forts de la bande (f336 = 5,6 s, f510 = 8,5 s, f678 = 11,3 s, f744 = 12,4 s), hors de la grille des temps, tombent à 3-6 im des quatre changements d'état : éclatement (≈ f340-f345, juste après), dissolution du graphe (f505, 5 im avant), dissolution de la courbe (f674, 4 im avant), flash du logo (f741, 3 im avant). L'image précède le son de 3-5 im : calage voulu mais imprécis (probable). Pour la règle ±2 im, il aurait fallu décaler les départs de 3-4 im.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f742.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée, coup final et traîne",
+      "name_en": "riser, final hit and decaying tail",
+      "t": "0:00.00-0:15.10",
+      "frames": "f0-f906",
+      "fps": 60,
+      "mechanics": "La musique monte depuis le silence numérique (−154 dB à 0,0 s, −34 dB à 0,63 s), démarre à f39 (0,65 s) sans geste visuel, atteint son coup le plus fort à f744-f745 (−2,8 dB) avec le flash du logo, puis décroît régulièrement de 12,4 à 15,0 s (−4 → −36 dB) sous la carte de fin, que le fondu au noir (f880-f906) accompagne. Le roulement de doubles-croches de 13,1-14,9 s tombe sur une carte immobile : occasion manquée de faire apparaître accroche et nom sur ces frappes.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Aucune donnée fournie : Claude a puisé dans ses connaissances (Drone Emprit, Ismail Fahmi, PT Media Kernels Indonesia, plateformes surveillées) et inventé des chiffres plausibles (« 212 accounts posting in sync », « 15:21 Spike detected », « 61% in 40 minutes »). Ces chiffres fictifs passent pour réels : à valider avant publication."},
+    {"kind": "direction", "insight": "« go all out » a été interprété comme un seul système ambitieux (des milliers de particules qui changent d'état) plutôt qu'un catalogue d'effets : l'ambition est dans la métamorphose, pas dans la quantité."},
+    {"kind": "structure", "insight": "Sans structure imposée, Claude a choisi le schéma constat → trois verbes (hears, maps, sees) → signature, un changement d'état toutes les ≈ 2,8 s et un sous-titre par scène : structure de pitch claire et réutilisable."},
+    {"kind": "other", "insight": "« like it's our showreel for a résumé » explique la carte finale avec nom, « Ph.D. » et fonction du fondateur, inhabituelle pour une promo produit."},
+    {"kind": "build", "insight": "Le prompt ne dit rien du son : la bande « upbeat » à ≈ 118 BPM porte des accents aux changements de scène, mais rien ne cale les sous-titres ni les particules sur les temps. Pour une vraie synchro, il faut écrire le tempo et la règle (« chaque changement d'état et chaque ligne de texte sur un temps »)."},
+    {"kind": "banned", "insight": "Aucun interdit : d'où l'image d'affiche de 6 im en tête, le flash gris à bord irrégulier et les pauses de 1,5 s, qu'une ligne « pas de pause > 0,8 s, pas d'image parasite » aurait évités."},
+    {"kind": "qa", "insight": "Pas de consigne de contrôle : étiquettes, annotations et compteur à ≈ 1-2,5 % de la hauteur sont passés ; imposer une taille minimale (≈ 3 % de la hauteur pour tout texte à lire) et une revue sur écran de téléphone."}
+  ],
+  "steal": [
+    "Garder un seul système de particules pour tout le film et le faire changer d'état à chaque idée : flux, graphe, courbe, logo. La métamorphose remplace la coupe.",
+    "Dessiner chaque particule comme un trait orienté selon sa vitesse, long en mouvement, point au repos : flou de mouvement directionnel gratuit et lisible.",
+    "Faire classer les particules par une barre de balayage : ce qui est balayé prend sa couleur de catégorie ; l'action du produit devient visible.",
+    "Réécrire un sous-titre par la gauche : l'ancienne phrase s'efface lettre à lettre et la nouvelle s'écrit 14 images derrière ; la ligne n'est jamais vide.",
+    "Signaler l'anomalie d'un graphe par un seul anneau cible et une note chiffrée (« 212 comptes en synchro »), sans flèche."
+  ],
+  "flaws": [
+    "Image d'affiche de 6 images (carte de fin) avant le noir d'ouverture : flash parasite qui dévoile la fin.",
+    "Ouverture abstraite de 5,5 s : un ruban de particules qui ondule sans événement fort, énergie de mouvement plate.",
+    "Sous-titres façon légende en bas à gauche, tapés hors temps : la typographie ne dialogue ni avec les particules ni avec la musique.",
+    "Étiquettes, annotations et compteur à 1-2,5 % de la hauteur : illisibles sur mobile.",
+    "Flash final gris et terne, avec une image à bord déchiré (f741) ; pauses de 1,5 s qui cassent l'élan."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Pour les trois métamorphoses seulement (5,7-6,8 s ; 8,4-9,75 s ; 11,2-12,9 s) : l'étude continue à 60 fps montrerait la chorégraphie de convergence (tri par couleur, aplatissement en dôme puis chute sur la ligne de base), la loi longueur de trait ↔ vitesse et le minutage des étiquettes, utiles pour reproduire un système de particules en canvas. Les sous-titres et les pauses n'apportent rien de plus."
+  }
+}

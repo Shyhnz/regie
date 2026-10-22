@@ -1,0 +1,436 @@
+{
+  "slug": "topi-003-b0e12c",
+  "title": "Anime maid dance showreel",
+  "handle": "@_topi_003",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Structure verrouillée au BPM, danse qui rebondit sur les temps, transitions variées et palette pop cohérente ; plafonnée par un pantin 2D limité, des gros plans flous et un cadre surchargé de micro-textes.",
+  "summary": "Démo de danse en 15 s : une maid d'illustration anime devient un pantin qui danse à 150 BPM. Décompte 5-6-7-8, puis une séquence par mesure (groove, canon de 5 clones, grille pop-art 3×3, gros plans visage et pieds, pirouettes, sauts), annotée comme un breakdown technique. Point fort : chaque coupe et chaque rebond tombe sur le temps. Faiblesses : pantin 2D, gros plans mous, cadre chargé.",
+  "prompt_vs_result": [
+    "Le prompt (japonais, une phrase) imposait : faire danser avec énergie la fille de l'image fournie, 15 s de motion design dynamique, « comme une showreel pour un CV », « à fond ». Rien sur musique, structure, palette ni texte.",
+    "Claude a tout inventé : bande-son à 150 BPM avec décompte 5-6-7-8, sept séquences d'une mesure, pantin à 14 os, canon de clones, grille Warhol, onomatopées japonaises, légendes de breakdown, titre « MAID IN MOTION », fin en iris étoile.",
+    "« Showreel de CV » a bien orienté (légendes techniques, variété de numéros). Il aurait fallu fournir plusieurs poses ou un fichier en calques haute définition, imposer une hiérarchie (un mot fort par plan) et une résolution 1080p."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#130D1A", "role": "fond sombre aubergine (intro, entrée des grilles, pirouette, saut, carton de fin)"},
+      {"hex": "#F6DD3D", "role": "jaune dominant (fonds, chiffres, JUMP!!, THANK YOU)"},
+      {"hex": "#E8327C", "role": "rose (ombres décalées, bandeau DANCE, fonds EXPRESSION et HOP)"},
+      {"hex": "#2B45D0", "role": "bleu électrique (fond du 7, damier, « IN MOTION »)"},
+      {"hex": "#42D0DA", "role": "cyan (bande du canon, fond HOP, クルッ)"},
+      {"hex": "#F3841F", "role": "orange (bande du canon, cases pop-art, fond HOP)"},
+      {"hex": "#F5E8D6", "role": "crème (fond du final, clones crème)"},
+      {"hex": "#160F1F", "role": "encre des chiffres et du titre « MAID »"},
+      {"hex": "#FFFFFF", "role": "contour autocollant du personnage, flashs de surexposition"}
+    ],
+    "type": "Display ultra-grasse arrondie inclinée, ombre dure décalée (chiffres ≈ 45 % de la hauteur, JUMP!! 22 %) ; katakana grasses 13 % ; titre « MAID » extra-gras 17 % ; légendes mono capitales 1,5 %, interlettrage large.",
+    "texture": "Contour blanc autocollant (≈ 0,5 % de la hauteur) et ombre rose décalée sur le personnage ; ombres dures décalées sans flou sur tous les mots ; trames de points (halftone), rayons (sunburst), lignes de vitesse manga, lignes horizontales (scanlines) sur les bandes du canon ; flashs de surexposition blancs ; flou de mouvement directionnel sur les entrées rapides ; traînées (onion skin) sur les pirouettes ; confettis et étincelles au final ; léger vignettage.",
+    "style": "Pop-art anime façon clip J-pop",
+    "coherence": "Le système tient par la grille 150 BPM (une séquence par mesure de 1,6 s), le HUD constant (coins de viseur, timecode, « 150 BPM », « SEQ 0X / 07 »), une palette de 6 teintes saturées plus un noir aubergine, et les ombres décalées appliquées partout. Ce qui casse : l'empilement de couches dans la scène principale (2 bandeaux + encadré + numéro + HUD + personnage) et les gros plans agrandis depuis une seule illustration, mous, qui trahissent la source unique."
+  },
+  "rhythm": {
+    "bpm": 150,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "Tempo réel 150 BPM (affiché dans le HUD) : 1 temps = 24 im à 60 fps = 0,4 s, 1 mesure = 96 im = 1,6 s. L'outil annonce 100 BPM sur l'ensemble (rapport 2/3) et 75 BPM par segment (moitié) : ce sont des sous-multiples, les barres bleues des planches (grille 100 BPM) sont donc fausses et ne tombent que sur une coupe sur trois. Sur la vraie grille, 16 des 20 coupes détectées tombent pile sur un multiple de 24 im (f24, f48, f72, f96, f288, f384, f408, f432, f456, f480, f576, f672, f696, f720, f744, f768), f732 sur un demi-temps ; les 3 autres sont la fin d'une transition partie sur le temps (f534, départ f528), l'éclatement de grille (f392) et l'iris final (f872, départ f868, 4 im après le temps). Le passage HOP coupe toutes les croches (12 im = 0,2 s), y compris f684 et f708 non détectées. Aucun maintien statique (0 %), plan médian 0,4 s, plus court 0,13 s. Même les plans « fixes » bougent : rebond du personnage sur chaque temps, bandeaux qui défilent, fond qui tourne, lignes de vitesse animées en 3. Respirations relatives : le gros plan EXPRESSION (0,8 s) et le titre final (1,6 s), qui restent animés.",
+    "timeline": [
+      {"t": "0:00.00-0:01.60", "what": "Décompte 5-6-7-8, un chiffre par temps, fond qui change de couleur à chaque chiffre, deux silhouettes du personnage en miroir ; « LET'S DANCE! » apparaît sur le 8", "technique": "décompte + écrasement d'échelle + onde circulaire"},
+      {"t": "0:01.57-0:01.77", "what": "Flash blanc sur le temps 4 (f96), la scène principale émerge du blanc en 8-10 im", "technique": "flash de surexposition"},
+      {"t": "0:01.60-0:03.20", "what": "Scène « MAID IN MOTION » : bandeaux défilants en sens opposés, rayons jaunes, personnage qui rebondit sur chaque temps, « 01 MOVE / GROOVE », encadré technique tapé à la machine", "technique": "rebond calé sur le temps + machine à écrire"},
+      {"t": "0:03.20-0:04.80", "what": "« 02 MOVE / STEP & KICK » : tout bascule sur le premier temps de la mesure (f192), pas claqués en 1 im sur f216, f240, f264", "technique": "changement de section sur le temps fort"},
+      {"t": "0:04.80-0:05.02", "what": "Noir, bandes de couleur construites du centre vers les bords, le personnage tombe dans la bande centrale avec flou vertical", "technique": "construction centre → bords, décalage 3-4 im"},
+      {"t": "0:05.02-0:06.40", "what": "5 clones bichromes dans 5 bandes, en canon décalé de 0,10 s", "technique": "canon de clones"},
+      {"t": "0:06.40-0:06.60", "what": "Un point jaune devient une grille 3×3 plein cadre en 12 im (temps → demi-temps)", "technique": "éclatement de grille depuis un point"},
+      {"t": "0:06.60-0:08.00", "what": "Grille Warhol bichrome dont les couleurs permutent sur chaque temps (f408, f432, f456)", "technique": "permutation de couleurs sur le temps"},
+      {"t": "0:08.00-0:08.80", "what": "Gros plan buste, « ノリノリ » et « EXPRESSION », lignes de vitesse manga roses redessinées toutes les 3 images", "technique": "gros plan expression + fond animé en 3"},
+      {"t": "0:08.80-0:08.93", "what": "Zoom flou + voile blanc du visage vers les pieds, départ sur le temps 22 (f528)", "technique": "transition zoom-flash"},
+      {"t": "0:08.93-0:09.60", "what": "Jambes sur damier bleu et rose en perspective, « STEP! » à gauche (demi-temps) puis à droite (temps)", "technique": "onomatopée ping-pong"},
+      {"t": "0:09.60-0:11.20", "what": "Deux pirouettes avec traînées sur spirale violette tournante, « クルッ » à gauche puis à droite, retournement sur les temps 25 et 27", "technique": "pirouette 2D + onion skin"},
+      {"t": "0:11.20-0:12.40", "what": "HOP! : 6 coupes toutes les 12 im, plan large sur le temps, recadrage ×1,6 sur le demi-temps, une couleur de fond par coupe", "technique": "coupes à la croche avec rotation de couleurs"},
+      {"t": "0:12.40-0:12.80", "what": "JUMP!! : le personnage passe devant le mot géant et sort par le haut du cadre, traits de vitesse verticaux", "technique": "sortie de cadre + traits de vitesse"},
+      {"t": "0:12.80-0:14.47", "what": "Flash blanc (temps 32) puis final crème : « MAID IN MOTION » lettre par lettre, sous-titre tapé, slogan japonais, pastilles, confettis", "technique": "titre en pop décalé"},
+      {"t": "0:14.47-0:14.68", "what": "Iris en étoile qui se referme en tournant sur le visage du personnage", "technique": "iris en étoile"},
+      {"t": "0:14.73-0:15.06", "what": "« THANK YOU ♪ » étiré à l'horizontale sur la dernière attaque audio, tenu 13 im", "technique": "carton de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Tempo réel 150 BPM (le HUD l'affiche ; l'outil donne 100 et 75 BPM, sous-multiples). Repliées sur un cycle de 0,4 s, 57 des 65 attaques audio fortes tombent dans deux fenêtres de 50 ms (début du temps et demi-temps) : la bande-son est sur une grille stricte de croches de 0,2 s, sans dérive sur 15 s, avec ≈ 1-2 im de retard sur la grille image (l'image précède à peine le son). Le décompte a un clic par chiffre (attaques à 0,03 / 0,43 / 0,83 / 1,24 s pour 5, 6, 7, 8 affichés à f0, f24, f48, f72). Comptage à l'œil, un geste clé par événement, sur la grille 150 BPM : 36 gestes sur 39 à ±2 im d'un temps ou demi-temps (hasard ≈ 42 % avec une grille de 12 im), dont 30 sur 39 sur le temps seul (hasard ≈ 21 %). Sur le temps : 4 chiffres, flash f96, points bas du rebond f121/f144/f168/f191, bascule f192, pas claqués f216/f240/f264, coupes f288/f384/f480/f576/f744, permutations f408/f432/f456, départ du zoom f528, saut de « STEP! » f552, retournements de pirouette f600/f648, plans larges HOP f672/f696/f720, flash f768, « THANK YOU » f886 (attaque f885). Sur le demi-temps : grille verrouillée f396, « STEP! » f540, recadrages f684/f708/f732, « M » du titre f778. Hors grille : « LET'S DANCE! » (+4-6 im), « 01 » (+8 im), départ de l'iris (+4 im). Les barres bleues des planches suivent la grille fausse à 100 BPM : ne pas s'y fier ici.",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "pulsations", "flashs", "texte", "camera", "couleur"],
+    "style_match": "Électro-pop dansante à 150 BPM, croches sèches : coupes franches, écrasements de 3 images et flashs blancs collent à l'énergie ; la danse rebondit sur les temps. Accord total.",
+    "how_built": "Le prompt ne parle pas de musique. Claude a fixé lui-même un BPM rond (affiché « 150 BPM » dans le HUD), un décompte 5-6-7-8 et une timeline en mesures de 96 im ; les coupes sont des multiples exacts de 24 im à 60 fps. La bande-son a probablement été générée en code avec la même constante (clic sur chaque chiffre du décompte, groove qui démarre à 1,6 s, aucune dérive) : la synchro est structurelle, à 1-2 im près, sans calage manuel."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Timeline verrouillée sur une grille BPM",
+      "name_en": "Beat-locked frame grid",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "BPM 150 affiché dans le HUD. 1 temps = 24 im, 1 mesure = 96 im = 1,6 s. 16 des 20 coupes détectées tombent pile sur un multiple de 24 (f24, f48, f72, f96, f288, f384, f408, f432, f456, f480, f576, f672, f696, f720, f744, f768), f732 sur un demi-temps. Les attaques audio sont sur la même grille (croches de 0,2 s), 1 à 2 im après l'image : l'image précède à peine le son, perçu comme pile dessus. Chaque séquence dure 1 mesure (canon, pop-art, pirouette) ou 2 (groove + kick).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-002-cut-f288.jpg, microM-005-cut-f672.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Décompte de danse 5-6-7-8",
+      "name_en": "Dance count-in",
+      "t": "0:00.00-0:01.60",
+      "frames": "f0-f95",
+      "fps": 60,
+      "mechanics": "Quatre chiffres, un par temps (f0, f24, f48, f72), chacun sur un fond différent : aubergine #281E3A, jaune #F6DD3D, bleu #233ABB, rose #D22C78 ; le chiffre inverse sa couleur (jaune, encre, crème, encre). Deux silhouettes du personnage en miroir, ton sur ton, ≈ 95 % de la hauteur, encadrent le chiffre. Légende « FIVE · COUNT-IN · 150 BPM ». Un clic audio sur chaque chiffre. Sur le 8, « LET'S DANCE! » blanc cerné de noir, incliné -3°, ≈ 8 % de la hauteur, pop en f76-f78. Idiome de cours de danse qui annonce le tempo avant la première image de danse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Chiffre écrasé en échelle avec onde circulaire",
+      "name_en": "Scale slam with shockwave ring",
+      "t": "0:00.40-0:00.58",
+      "frames": "f24-f35",
+      "fps": 60,
+      "mechanics": "Le chiffre (≈ 45 % de la hauteur une fois posé) entre à ≈ 150 % avec flou radial, ≈ 120 % à +1 im, ≈ 105 % à +2, 100 % à +3 (f24 → f27) : ease-out expo en 3 im (0,05 s), pas de dépassement visible. Dès f26, un anneau fin part du chiffre et s'élargit jusqu'à ≈ 120 % de la hauteur en ≈ 8 im en s'effaçant (onde de choc). Le chiffre reste ensuite quasi fixe ≈ 20 im jusqu'au temps suivant. Même geste sur 5, 6, 7 et 8 (f0, f24, f48, f72).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f27.jpg, extra-01.jpg",
+      "illus": {"from": 22, "to": 34, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc de surexposition",
+      "name_en": "White overexposure flash",
+      "t": "0:01.57-0:01.77",
+      "frames": "f94-f106",
+      "fps": 60,
+      "mechanics": "Pré-montée de 2 im (f94-f95 : le rose pâlit), image 100 % blanche à f96 (temps 4), puis le plan suivant émerge du blanc en ≈ 8-10 im (ease-out). Rejoué à f768 (temps 32, sortie du saut) avec la même durée. Version courte (voile blanc de 1-2 im) sur chaque coupe du passage HOP. Toujours posé sur un temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-006-cut-f768.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Pantin articulé tiré d'une seule illustration",
+      "name_en": "Single-image puppet rig (mesh deform)",
+      "t": "0:01.60-0:14.47",
+      "frames": "f96-f868",
+      "fps": 60,
+      "mechanics": "L'illustration fournie (maid anime) est découpée et déformée ; la légende annonce « 14 BONES · 10,564 TRIS · IK LEGS · HAIR & SKIRT DYNAMICS ». Personnage ≈ 85-90 % de la hauteur, centré. Répertoire : balancement (groove), pas et coup de pied (step & kick), pirouette, sautillés, saut, salut final. Jupe et cheveux suivent avec retard (action secondaire). Limites : genoux caoutchouteux, aucune vraie rotation 3D, gros plans agrandis donc mous.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-002-cut-f288.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rebond de danse calé sur le temps",
+      "name_en": "On-beat groove bounce",
+      "t": "0:01.60-0:03.20",
+      "frames": "f96-f191",
+      "fps": 60,
+      "mechanics": "Mesuré sur le centre de gravité de la robe : point bas à f121, f144, f168, f191, soit les temps f120/f144/f168/f192 à ±1 im. Amplitude ≈ 3 % de la hauteur. La vitesse chute pile sur le temps (accent), remonte sur 4-5 im, puis le corps est quasi immobile du 8e au 15e im de chaque temps : rebond sinusoïdal ease-in-out, le « bas » sur le temps comme un vrai danseur. C'est la danse elle-même, pas seulement le montage, qui porte la pulsation.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (plus mesure numérique de l'énergie dans la zone du personnage)"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pas claqué sur chaque temps",
+      "name_en": "Step snap on the beat",
+      "t": "0:03.60-0:04.40",
+      "frames": "f216-f264",
+      "fps": 60,
+      "mechanics": "Dans « 02 MOVE / STEP & KICK », la pose change en 1 image exactement sur f216, f240, f264 (temps 9, 10, 11) : l'énergie de mouvement dans la zone du personnage double (≈ 20 contre 11 aux images voisines) puis retombe en 3-4 im. Arrêt sec suivi d'un amorti, en accord avec les croches sèches de la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f288.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bascule de section sur le premier temps de la mesure",
+      "name_en": "Downbeat section hit",
+      "t": "0:03.20-0:03.27",
+      "frames": "f192-f196",
+      "fps": 60,
+      "mechanics": "À f192 (temps 8, début de la 3e mesure), tout bascule ensemble : les deux bandeaux font un saut, « 01 » devient « 02 » (pop en 4 im, f192-f196), l'encadré ajoute sa 3e ligne, le personnage change de pas. Même logique sur toute la vidéo : chaque nouvelle idée arrive sur un temps fort, jamais entre deux.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bandeaux défilants en haut et en bas",
+      "name_en": "Scrolling marquee bands",
+      "t": "0:01.60-0:04.80",
+      "frames": "f96-f287",
+      "fps": 60,
+      "mechanics": "Haut : « MAID IN MOTION ☆ » en display grasse détourée, jaune sur jaune, ≈ 9 % de la hauteur, défile vers la gauche. Bas : « ダンス ★ DANCE » rose #E8327C, ≈ 7 %, incliné -2°, défile vers la droite. Sens opposés = tension ; ils encadrent le personnage. Mots coupés par les bords (assumé pour un bandeau), mais ajoutés à l'encadré, au numéro et au HUD ils surchargent le cadre.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Encadré technique tapé à la machine",
+      "name_en": "Typewriter spec box",
+      "t": "0:01.77-0:02.50",
+      "frames": "f106-f150",
+      "fps": 60,
+      "mechanics": "Cartouche sombre ≈ 25 % × 8 % du cadre en bas à gauche, apparaît vide à f106, puis 3 lignes mono en capitales tapées à ≈ 1-2 caractères par image (f110-f150), curseur bloc. Texte : « RIGGED FROM ONE ILLUSTRATION / 14 BONES · 10,564 TRIS / IK LEGS · HAIR & SKIRT DYNAMICS ». Corps ≈ 1,5 % de la hauteur : illisible en 720p.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Légendes de breakdown technique",
+      "name_en": "Annotated breakdown captions",
+      "t": "0:00.00-0:14.45",
+      "frames": "f0-f867",
+      "fps": 60,
+      "mechanics": "Chaque séquence porte une étiquette de reel technique : « SYNC + CANON · ΔT 0.10s », « POP-ART × 9 · DUOTONE SHADER », « EXPRESSION », « FOOTWORK · 2-BONE IK · PLANTED FEET », « PIROUETTE ×2 · ONION-SKIN TRAILS · 225° » (l'angle compte en direct), « SEQ 0X / 07 ». La danse devient une démonstration de savoir-faire, réponse directe à « showreel de CV ». Corps 1,2-2 % de la hauteur, en mono ou en pastille claire.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-002-cut-f288.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de viseur constant",
+      "name_en": "Persistent viewfinder HUD",
+      "t": "0:00.00-0:14.68",
+      "frames": "f0-f881",
+      "fps": 60,
+      "mechanics": "Coins de cadrage fins, timecode en bas à gauche, « 150 BPM ● » en haut à droite, « SEQ 0X / 07 · NOM » en bas à droite, ligne de progression fine (≈ 60 % de la largeur) en bas. Présent dans toutes les scènes, il relie des fonds qui changent à chaque mesure. Mono ≈ 1,2 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-001-move-f27.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bandes de couleur construites du centre vers les bords",
+      "name_en": "Center-out panel build",
+      "t": "0:04.80-0:05.02",
+      "frames": "f288-f301",
+      "fps": 60,
+      "mechanics": "f288 (temps 12) : fond noir ; la bande jaune centrale (≈ 20 % de la largeur) descend du haut en 4 im (f288-f291) ; le personnage tombe dedans avec un flou vertical (f292-f294) ; bandes rose et cyan montent du bas (f292-f295) ; bandes bleue et orange aux bords (f295-f298). Décalage 3-4 im par paire, sens alternés haut/bas. Les clones bichromes apparaissent en tremblé flou (f296-f300) ; tout est posé à f301 (13 im = 0,22 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f288.jpg",
+      "illus": {"from": 287, "to": 301, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Canon de clones bichromes",
+      "name_en": "Canon of duotone clones",
+      "t": "0:05.02-0:06.38",
+      "frames": "f301-f383",
+      "fps": 60,
+      "mechanics": "5 copies du personnage dans 5 bandes (bleu/jaune, rose/crème magenta, original en couleurs au centre sur jaune, cyan/sarcelle, orange/ocre), chacune décalée de 0,10 s (6 im) selon la légende « ΔT 0.10s » : le même pas traverse l'écran comme une vague. Bandes striées de lignes horizontales. Copies en duotone plat (ombre + lumière), seul l'original garde ses couleurs : hiérarchie claire.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f387.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Grille qui jaillit d'un point",
+      "name_en": "Tile burst from a point",
+      "t": "0:06.40-0:06.60",
+      "frames": "f384-f396",
+      "fps": 60,
+      "mechanics": "f384 (temps 16) : un point jaune au centre ; la tuile centrale grandit (≈ 4 % de la largeur à f385, 11 % à f387, 25 % à f392) pendant que 8 tuiles satellites naissent autour (f388) et s'écartent avec flou de mouvement ; à f393-f395 elles s'agrandissent jusqu'à se toucher ; grille 3×3 plein cadre verrouillée à f396 (demi-temps). 12 im = 0,2 s, ease-out. Le personnage grandit dans la case centrale en même temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f387.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Grille Warhol 3×3 qui permute ses couleurs sur le temps",
+      "name_en": "Pop-art grid color shuffle on beat",
+      "t": "0:06.60-0:08.00",
+      "frames": "f396-f479",
+      "fps": 60,
+      "mechanics": "9 cases, chacune un couple fond/figure bichrome (jaune/orange, bleu/jaune, rose/cyan, crème/rose…), la case centrale garde l'original en couleurs. Les couleurs permutent d'un coup à f408, f432, f456 (temps 17, 18, 19), coupe sèche sans fondu, pendant que les 9 figures continuent de danser. Légende « POP-ART × 9 · DUOTONE SHADER ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-003-move-f387.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Lignes de vitesse manga animées « en trois »",
+      "name_en": "Manga speed lines on threes",
+      "t": "0:08.00-0:08.80",
+      "frames": "f480-f527",
+      "fps": 60,
+      "mechanics": "Gros plan buste (≈ ×2) sur fond rose #EF358C à lignes de vitesse radiales et trame de points ; le fond est redessiné toutes les 3 images (pics d'énergie à f498, f501, f504, f507, f510 : animation « en 3 », 20 im/s, comme en anime), probable. Entrée en zoom doux depuis une image floue et surexposée (f480-f500). « ノリノリ » jaune à ombre rose ≈ 13 % de la hauteur, « EXPRESSION » blanc condensé, étincelle ✦.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f531.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom flou et voile blanc vers le plan suivant",
+      "name_en": "Zoom-blur flash cut",
+      "t": "0:08.80-0:08.93",
+      "frames": "f528-f536",
+      "fps": 60,
+      "mechanics": "Départ à f528 (temps 22) : l'image s'agrandit avec flou radial (f530-f531), voile blanc avec le plan suivant en fantôme (f532-f533), jambes en écho triple (f534), flou résiduel (f535), net à f536. 8 im = 0,13 s. Passage du visage aux pieds : la transition accompagne un vrai changement d'échelle, elle est motivée.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f531.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Sol en damier en perspective",
+      "name_en": "Perspective checkerboard floor",
+      "t": "0:08.93-0:09.60",
+      "frames": "f536-f575",
+      "fps": 60,
+      "mechanics": "Gros plan jambes et babies noires sur damier bleu #2B45D0 / rose #E8327C fuyant vers un horizon à ≈ 55 % de la hauteur, ciel bleu nuit en dégradé. Pieds plantés (légende « 2-BONE IK · PLANTED FEET »). Image agrandie, donc douce ; damier façon synthwave un peu convenu mais raccord avec la palette.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f531.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Onomatopée qui change de côté sur le temps",
+      "name_en": "Side-switching onomatopoeia",
+      "t": "0:09.00-0:11.20",
+      "frames": "f540-f671",
+      "fps": 60,
+      "mechanics": "« STEP! » rose à gauche apparaît à f540 (demi-temps), saute à droite en jaune à f552 (temps 23). « クルッ » (onomatopée de pirouette) magenta à gauche pour le 1er tour, cyan à droite pour le 2e ; sortie en rétrécissant vers la droite avec flou (f669-f671). Mots inclinés ±5°, ombre dure décalée, ≈ 10 % de la hauteur. L'alternance gauche/droite fait un ping-pong visuel sur le rythme.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f531.jpg, microM-005-cut-f672.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Pirouette 2D par retournement avec traînées",
+      "name_en": "2D flip pirouette with onion skin",
+      "t": "0:09.77-0:11.00",
+      "frames": "f586-f660",
+      "fps": 60,
+      "mechanics": "Deux tours d'≈ 24 im chacun ; l'instant le plus rapide (le retournement horizontal) tombe à f600 et f648, soit les temps 25 et 27 : un tour tous les deux temps. Copies fantômes (onion skin) derrière la silhouette, compteur d'angle dans la légende. Fond en spirale violette #2A1F43 / #130D1A qui tourne, traits de lumière horizontaux. La rotation n'est qu'un retournement en largeur : le pantin 2D se voit.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-005-cut-f672.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupes à la croche, large et recadré, une couleur par coupe",
+      "name_en": "Eighth-note cuts with color cycling",
+      "t": "0:11.20-0:12.40",
+      "frames": "f672-f744",
+      "fps": 60,
+      "mechanics": "7 coupes espacées d'exactement 12 im (0,2 s) : jaune large (f672) → rose recadré ×1,6 sur le buste (f684) → cyan large (f696) → orange recadré (f708) → jaune large (f720) → bleu recadré (f732) → JUMP!! (f744). Plans larges sur les temps, recadrages (punch-in) sur les demi-temps. Chaque coupe porte un voile blanc de 1-2 im. Fond à rayons qui change de teinte à chaque coupe ; le personnage sautille en continu par-dessus les coupes, ce qui garde la lisibilité.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f672.jpg, extra-02.jpg",
+      "illus": {"from": 670, "to": 746, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui claque en 2-3 images",
+      "name_en": "Snap pop-in word",
+      "t": "0:11.60-0:11.63",
+      "frames": "f696-f698",
+      "fps": 60,
+      "mechanics": "« HOP! » blanc cerné de noir, ≈ 11 % de la hauteur : ≈ 20 % de sa taille à f696, ≈ 70 % flou à f697, 100 % à f698 ; pas de dépassement. Rejoué à chaque plan large (f672, f696, f720), à une position différente (haut gauche, haut droite, haut centre). Le mot reste ensuite et glisse légèrement avec le personnage.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-005-cut-f672.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Saut qui sort du cadre par le haut",
+      "name_en": "Jump out of frame",
+      "t": "0:12.40-0:12.80",
+      "frames": "f744-f767",
+      "fps": 60,
+      "mechanics": "Fond aubergine #130D1A, traits de vitesse verticaux jaunes, roses et blancs qui tombent (le personnage paraît monter). « JUMP!! » jaune à ombre rose, ≈ 22 % de la hauteur et 70 % de la largeur ; le personnage passe devant le mot (superposition de plans), monte d'≈ 60 % de la hauteur en 14 im et sort par le haut à f767 ; flash blanc à f768 (temps 32) au moment où ses pieds disparaissent.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f768.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui pop lettre par lettre",
+      "name_en": "Per-letter pop title",
+      "t": "0:12.97-0:13.50",
+      "frames": "f778-f810",
+      "fps": 60,
+      "mechanics": "« MAID » encre #160F1F extra-grasse à ombre rose, ≈ 17 % de la hauteur, tiers gauche : chaque lettre passe de 0 à 100 % en ≈ 4-5 im, décalage 3 im (M f778, A f781, I f784, D f787). « IN MOTION » bleu #2B4BD9, ≈ 10 %, démarre à f785 avec le même décalage. Puis sous-titre mono tapé, slogan japonais rose « 一枚の絵から、踊らせる。 » (d'un seul dessin, le faire danser), pastilles RIGGING / CHOREOGRAPHY / MOTION GRAPHICS / SYNC.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f768.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Confettis et étincelles du final",
+      "name_en": "Confetti and sparkles",
+      "t": "0:12.80-0:14.47",
+      "frames": "f768-f868",
+      "fps": 60,
+      "mechanics": "Confettis multicolores qui tombent autour du personnage, étincelles à 4 branches cyan et jaunes, deux ellipses rose et jaune au sol en perspective, fond crème à rayons et trame. Le personnage continue de saluer : le titre final n'est jamais figé. Effet générique.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, microM-006-cut-f768.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris en étoile qui se referme sur le visage",
+      "name_en": "Star iris-out",
+      "t": "0:14.47-0:14.68",
+      "frames": "f868-f881",
+      "fps": 60,
+      "mechanics": "Un masque en étoile à 5 branches, liseré clair, se referme du plein cadre (f871) à un point (f880) : ≈ 50 % à f873, 25 % à f874, 8 % à f876, 3 % à f878, soit un ease-out expo d'≈ 10 im. Il tourne d'≈ 25° et glisse vers le visage du personnage (haut droite). Départ à f868, 4 im après le temps f864. Clin d'œil aux fins de cartoon, motivé par les ☆ des bandeaux, mais kitsch.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 866, "to": 886, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Carton « THANK YOU ♪ » étiré à l'horizontale",
+      "name_en": "Horizontal stretch-in end card",
+      "t": "0:14.73-0:15.06",
+      "frames": "f884-f899",
+      "fps": 60,
+      "mechanics": "Sur fond #130D1A, le mot apparaît comme une ligne fine (f884), à ≈ 60 % flou (f885), complet à f886, pile sur la dernière attaque audio (14,756 s = f885). Jaune #F5D13D, ≈ 3,5 % de la hauteur, centré. Tenu 13 im jusqu'à la fin : trop court et trop petit pour conclure.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette pop saturée qui tourne à chaque mesure",
+      "name_en": "Rotating saturated pop palette",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "6 teintes saturées (jaune #F6DD3D, rose #E8327C, bleu #2B45D0, cyan #42D0DA, orange #F3841F, crème #F5E8D6) plus un noir aubergine #130D1A. Chaque séquence change de dominante ; les scènes sombres (intro, entrée du canon, entrée pop-art, pirouette, saut, fin) alternent avec les claires, ce qui donne un contraste fort à chaque coupe.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Contour autocollant et ombre dure décalée",
+      "name_en": "Sticker outline and hard offset shadow",
+      "t": "0:00.00-0:14.68",
+      "frames": "f0-f881",
+      "fps": 60,
+      "mechanics": "Le personnage porte un contour blanc ≈ 0,5 % de la hauteur et une ombre rose décalée ≈ 1 % vers la droite et le bas. Tous les mots display ont une ombre dure décalée (rose sous le jaune, jaune sous le rose ou l'encre), sans flou. Langage d'autocollant et de bande dessinée tenu de bout en bout.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Trames de points, rayons et lignes horizontales",
+      "name_en": "Halftone, sunburst and scanlines",
+      "t": "0:01.60-0:14.47",
+      "frames": "f96-f868",
+      "fps": 60,
+      "mechanics": "Trame de points (halftone) en dégradé sur les bords des fonds jaunes, roses et crème ; rayons (sunburst) derrière le personnage dans les scènes groove, HOP et final ; lignes horizontales sur les bandes du canon ; léger vignettage. Idiome pop-art cohérent mais générique.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Une seule illustration fournie : tout est un pantin déformé (14 os). Les gros plans visage et pieds sont des agrandissements du même dessin, donc mous, et la pirouette n'est qu'un retournement horizontal. Plusieurs poses ou un fichier en calques haute définition auraient levé ces limites."},
+    {"kind": "direction", "insight": "« Comme une showreel de CV » a été lu littéralement : légendes de breakdown (os, triangles, IK, shader), numéros « SEQ 0X / 07 », HUD de viseur. C'est ce qui donne l'air de reel professionnel plutôt que de simple clip."},
+    {"kind": "structure", "insight": "Sans consigne musicale, Claude a pris un idiome de cours de danse (décompte 5-6-7-8) et un BPM rond (150) : une séquence par mesure de 1,6 s, d'où l'absence totale de temps mort et la variété (10 numéros en 15 s)."},
+    {"kind": "build", "insight": "Le même BPM pilote la timeline (coupes sur des multiples de 24 im à 60 fps) et, probablement, la bande-son générée en code : synchro à 1-2 im près sans calage manuel. Leçon : écrire le prompt ou la composition en temps et en mesures, pas en secondes."},
+    {"kind": "other", "insight": "« À fond » (全力で) a poussé à la densité maximale : jusqu'à 6 couches d'habillage simultanées dans la scène principale. Pour la lisibilité, il aurait fallu imposer une hiérarchie (un mot fort par plan, légendes ≥ 3 % de la hauteur)."},
+    {"kind": "qa", "insight": "Aucune consigne de format : rendu en 1280×720, ce qui rend illisibles les textes mono de 1,2-1,5 % de la hauteur et accentue le flou des gros plans."}
+  ],
+  "steal": [
+    "Fixe un BPM rond et une grille en images (150 BPM = 24 im à 60 fps) : une séquence par mesure, chaque coupe sur un multiple de 24.",
+    "Ouvre sur un décompte 5-6-7-8 : un chiffre par temps, écrasé de 150 % à 100 % en 3 images, onde circulaire, fond qui change de couleur.",
+    "Passage énergique : coupe toutes les croches en alternant plan large et recadrage ×1,6, une couleur de fond par coupe, flash blanc de 2 images.",
+    "Canon : 5 copies bichromes du personnage décalées de 6 images, dans des bandes de couleur qui entrent du centre vers les bords (décalage 3-4 im).",
+    "Fais toucher le point bas du rebond du personnage sur chaque temps (±1 im) : la danse porte la pulsation, pas seulement les coupes."
+  ],
+  "flaws": [
+    "Légendes techniques en mono de 1,5 % de la hauteur : illisibles en 720p, pur décor.",
+    "Gros plans visage et pieds agrandis depuis une seule illustration : image molle, contours flous.",
+    "Pirouette par retournement horizontal avec traînées : le pantin 2D se voit.",
+    "Cadre surchargé : deux bandeaux défilants, encadré tapé, numéro, HUD et personnage en même temps.",
+    "Fin faible : iris en étoile kitsch puis « THANK YOU ♪ » minuscule (3,5 % de la hauteur), tenu 0,22 s."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : rare cas où toute la timeline est verrouillée au BPM (coupes sur multiples de 24 im, rebond du personnage sur les temps, coupes à la croche au passage HOP). Une lecture continue à 60 fps permettrait de relever les courbes du pantin, les décalages du canon et l'enchaînement des flashs pour en faire un gabarit HyperFrames."
+  }
+}

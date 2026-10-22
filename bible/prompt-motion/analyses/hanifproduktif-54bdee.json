@@ -1,0 +1,389 @@
+{
+  "slug": "hanifproduktif-54bdee",
+  "title": "Motion designer showreel",
+  "handle": "@hanifproduktif",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept limpide (chaque mot joue son principe), système de 4 couleurs tenu, bruitages collés aux gestes ; mais coupes sèches sans transitions, mots qui débordent du cadre et finale en particules attendue.",
+  "summary": "Reel de 15 s qui illustre onze principes d'animation par des mots qui font ce qu'ils disent : ANTICIPATE recule puis fonce, OVERSHOOT dépasse sa cible, STRETCH s'étire, WEIGHT écrase une ligne, MORPH change de forme. Une scène par seconde sur une pulsation à 120 BPM, bruitages collés aux gestes, finale en particules qui forment MOTION. Clair et drôle, mais tout en coupes sèches et souvent hors cadre.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne, en anglais : candidature de motion designer pour une agence, 15 s pour montrer ses compétences, « send me a showreel ». Aucune contrainte de style, de son ni de marque.",
+    "Claude a choisi un catalogue des principes d'animation (chaque mot fait ce qu'il dit), une seconde par principe à 120 BPM, palette noir/os/orange/lime, une grotesque grasse, interface de reel, bande-son à bruitages et signature @HANIFPRODUKTIF.",
+    "Le mot « showreel » a orienté vers la démonstration de savoir-faire, « skills and capabilities » vers une liste de principes. Il aurait fallu demander des transitions enchaînées, un récit, et interdire les mots coupés par le cadre."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#090909", "role": "fond noir principal"},
+      {"hex": "#F1EDE5", "role": "os : fonds clairs, texte sur noir, logotype final"},
+      {"hex": "#FE591F", "role": "orange : fonds (OVERSHOOT, BLUR, FORM), G de STAGGER, forme de MORPH, ARC, FLOW"},
+      {"hex": "#C8FD2C", "role": "lime : fonds (STRETCH, EASE), soulignement, trait de SPLIT, contour de MORPH, point final"},
+      {"hex": "#374312", "role": "olive : décroissance du flash lime de SNAP"},
+      {"hex": "#54524E", "role": "gris : lettres arrière de LOOP"},
+      {"hex": "#B9B8B7", "role": "gris clair : trame de points de MORPH, particules"},
+      {"hex": "#75FDCE", "role": "cyan des échos chromatiques de SNAP (avec #5894CE et #F26332)"}
+    ],
+    "type": "Grotesque néo très grasse (Inter Bold/Black probable), capitales, interlettrage serré, mots de 9 % (LOOP) à 40 % (FORM) de la hauteur ; italique gras et contour dans la rafale ; interface en grotesque fine grise ≈1,5 % H.",
+    "texture": "Aplats purs, sans grain ni vignettage ; flou de mouvement seulement sur BLUR et l'élan d'ANTICIPATE (traits de vitesse) ; traînée stroboscopique sur WEIGHT ; échos chromatiques et séparation RVB sur SNAP ; trame de points (halftone) sur MORPH ; particules fines pour la finale. Rendu très net, numérique.",
+    "style": "Typo cinétique pédagogique, aplats pop",
+    "coherence": "Le système tient par la règle « un mot = un principe = une seconde », quatre couleurs pleines qui tournent en fond, une seule famille de caractères et une interface de reel constante (crochets d'angle, « MOTION REEL — 2026 », numéro et nom de scène, compteur d'images). Ce qui le casse : aucune transition ne relie deux principes (coupes sèches), la rafale finale et les particules changent de registre, plusieurs mots débordent du cadre."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM (mesuré 119,9 ; pulsation grave toutes les 0,5 s : 1,016 / 1,527 / 2,026 / 2,531 s…). Une scène par seconde, soit 2 temps : coupes à f59, f89, f119, f149, f179, f209, f239, f284, f314, f344, f359, f389, toujours 1 à 2 im avant la pulsation mesurée (le compteur « F 0052 » à f50 et les 449 images pour 15 s indiquent une image perdue au début de l'encodage). MORPH dure 1,5 s, SNAP 0,5 s. Rafale finale sur des triolets de croche (≈5 im : f359, f365, f369, f374, f380, f384). À 30 fps et 120 BPM, une fenêtre de ±2 im autour des temps et demi-temps couvre 67 % des images : seul le comptage sur les temps (33 %) ou sur les attaques audio est probant. Temps morts : 0,5 s de noir au début (f0–f14), 11 im de noir muet avant WEIGHT (f179–f189, voulus), BLUR immobile 17 im (f326–f343), fin figée ≈0,2 s. Densité : un geste toutes les 0,3 à 1 s.",
+    "timeline": [
+      {"t": "0:00-0:00.97", "what": "Noir muet ; point lime au centre à f15 (clic), qui s'étire en ligne pleine largeur f21–f26 ; une image noire à f29", "technique": "amorce point → ligne"},
+      {"t": "0:01.00-0:01.97", "what": "Iris os en 3 im sur le drop (f30), MOTION monte lettre par lettre, soulignement lime f42–f45, « A REEL IN FIFTEEN SECONDS » tapé, écrasement f56–f58 avant la coupe", "technique": "iris + cascade + anticipation de coupe"},
+      {"t": "0:01.97-0:02.97", "what": "ANTICIPATE os sur noir : recule et se tasse en 10 im (f65–f74), puis fonce à droite avec traits de vitesse (f75) ; « AN » reste au bord jusqu'à f88", "technique": "anticipation → action"},
+      {"t": "0:02.97-0:03.97", "what": "Fond orange, ligne pointillée « TARGET » au centre ; OVERSHOOT arrive de la gauche, dépasse de 33 % W, revient de −16 %, se pose à f115", "technique": "ressort amorti"},
+      {"t": "0:03.97-0:04.97", "what": "Fond lime ; STRETCH s'étire ×2 en 3 im (f127–f130), tient 9 im, revient en écrasement puis se repose", "technique": "étirement / écrasement"},
+      {"t": "0:04.97-0:05.97", "what": "Fond os ; les lettres de STAGGER tombent d'en haut en tournant, décalées d'≈1,3 im, G orange ; vague amortie jusqu'à f178", "technique": "décalage + vague"},
+      {"t": "0:05.97-0:06.97", "what": "11 im de noir et de silence, WEIGHT tombe avec une traînée de copies, écrase la ligne à f192 (boum f193), la ligne oscille", "technique": "silence + impact"},
+      {"t": "0:06.97-0:07.97", "what": "SPLIT ; trait lime qui le tranche (f216), moitiés qui partent en sens opposés (f221–f231) ; la trame de points arrive en fondu", "technique": "découpe par trait"},
+      {"t": "0:07.97-0:09.47", "what": "MORPH : disque orange cerclé de lime qui devient carré, étoile, hexagone puis haricot ; trame de points à ondes concentriques", "technique": "morphing + fond halftone"},
+      {"t": "0:09.47-0:10.47", "what": "LOOP : lettres sur un anneau pointillé qui tourne (≈4°/im), haut blanc, bas gris", "technique": "carrousel typographique"},
+      {"t": "0:10.47-0:11.47", "what": "Flash orange de 5 im, BLUR entre par la droite avec un flou qui suit la vitesse (f319–f326), puis immobile", "technique": "flou de mouvement"},
+      {"t": "0:11.47-0:11.97", "what": "SNAP : cadre lime incliné qui retombe au noir en 4 im, mot en échos arc-en-ciel puis séparation RVB qui se resserre", "technique": "flash + aberration chromatique"},
+      {"t": "0:11.97-0:12.97", "what": "« 11 RHYTHM » : EASE, ARC, FRAME, FORM, BEAT, FLOW, un mot toutes les ≈5 im, chacun dans un autre style", "technique": "rafale de styles sur triolets"},
+      {"t": "0:12.97-0:14.07", "what": "Musique en retrait (−35 à −50 dB) ; poussière de points qui converge en MOTION, se densifie et devient pleine", "technique": "particules → logotype"},
+      {"t": "0:14.07-0:15.00", "what": "Point lime qui tombe et rebondit (f425–f434), « A REEL WRITTEN IN CODE · @HANIFPRODUKTIF » tapé, coup final à 14,63 s", "technique": "signature"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille des temps (0,5 s, départ t=0) : les 12 coupes de scène et l'ouverture de l'iris tombent à ±2 im d'un temps (13/13), la rafale finale suit des triolets (6/6). Sur l'ensemble des 41 gestes clés, 21 sont à ±2 im d'un temps (51 % contre 33 % au hasard) : la plupart des autres sont calés sur des bruitages hors grille. Comptage sur les attaques audio : 33 gestes sur 39 ont une attaque 0 à 2 im après l'image — point lime f15 ↔ 0,528 s ; iris f30 ↔ 1,010 s (drop +36 dB après le silence) ; écrasement de MOTION f56 ↔ 1,910 s ; élan d'ANTICIPATE f75 ↔ 2,537 s ; étirement f128 ↔ 4,284 s ; 5 tics espacés de 70 ms pendant la chute des lettres de STAGGER (5,207 à 5,492 s) ; impact de WEIGHT f192 ↔ boum à 6,444 s (le coup le plus fort, un des 3 seuls coups graves avec l'iris et la fin) ; trait de SPLIT f216 ↔ 7,210 s ; changements de MORPH f241/f249/f261/f270 ↔ 8,034/8,284/8,678/8,992 s ; flash de SNAP f344 ↔ 11,482 s ; mots de la rafale f359–f384 ↔ 12,034 à 12,870 s, une attaque toutes les 0,168 s. Silences écrits : −60 dB à 6,0 s (écran noir avant WEIGHT) et −35 à −50 dB de 13,0 à 14,5 s (particules). L'image précède partout le son de 1 à 2 im (indice du dossier : z = 1,88, décalage +46 ms) : décalage constant, probablement l'image perdue à l'encodage. Sur les planches : coupe f59 à 2 im de la barre bleue f61, coupe f179 à 2 im de f181, point vert sur l'impact de WEIGHT (f193) et sur le flash de SNAP (f345).",
+    "synced": ["coupes", "departs", "impacts", "atterrissages", "apparitions", "texte", "flashs", "drop"],
+    "style_match": "Boucle électronique minimale à 120 BPM et bruitages secs (clic, boum, claquement) : coupes nettes, ressorts et rebonds y répondent ; silences avant la chute de WEIGHT et pendant les particules.",
+    "how_built": "Probable : bande-son générée dans le même code que l'image (le reel se dit « written in code »), avec une pulsation à 120 BPM qui donne une scène toutes les 2 temps et des bruitages déclenchés aux instants des gestes (clic, boum, tics par lettre, claquement), plus des silences écrits aux mêmes images que les écrans noirs. Le prompt ne dit rien du son : Claude a tout décidé. Le décalage constant de 1–2 im (image en avance) vient probablement d'une image perdue au début de l'encodage (compteur F = f + 2, 449 images au lieu de 450)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Chaque mot joue sa propre définition",
+      "name_en": "Self-demonstrating words (principles catalogue)",
+      "t": "0:01.97-0:12.97",
+      "frames": "f59-f388",
+      "fps": 30,
+      "mechanics": "11 principes en 11 plans : ANTICIPATION, OVERSHOOT, STRETCH, STAGGER, WEIGHT, SPLIT, MORPH, LOOP, MOTION BLUR, SNAP, RHYTHM ; chacun d'une seconde (30 im), sauf MORPH 1,5 s et SNAP 0,5 s. Le mot affiché subit exactement le principe qu'il nomme ; étiquette « 0N NOM » en bas à gauche. Lecture immédiate, aucun texte explicatif.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une scène toutes les deux pulsations à 120 BPM",
+      "name_en": "One scene per two beats",
+      "t": "0:00-0:13.00",
+      "frames": "f0-f389",
+      "fps": 30,
+      "mechanics": "Pulsation grave toutes les 0,5 s (1,016 ; 1,527 ; 2,026 ; … ; 12,527 s). Coupes de scène 1 à 2 im avant chaque seconde (f59, f89, f119, f149, f179, f209, f239, f284, f314, f344, f359, f389) : 12 coupes sur 12 à ±2 im d'un temps, 13 sur 13 avec l'iris (f30). Grille régulière mais mécanique : aucune variation de durée hors MORPH et SNAP.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f59.jpg, microM-004-cut-f179.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un bruitage par geste (sound design sur l'image)",
+      "name_en": "Per-gesture sound effects",
+      "t": "0:00.50-0:12.90",
+      "frames": "f15-f386",
+      "fps": 30,
+      "mechanics": "Clic à l'apparition du point (0,528 s), boum grave à l'impact de WEIGHT (6,444 s, 1 im après le contact), 5 tics espacés de 70 ms pendant la chute des lettres de STAGGER, entaille au trait de SPLIT (7,210 s), attaque à chaque changement de forme de MORPH, claquement au flash de SNAP (11,482 s). 33 gestes sur 39 ont une attaque 0 à 2 im après l'image.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f179.jpg, microM-005-move-f348.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silences écrits : noir muet avant la chute, musique en retrait pour la finale",
+      "name_en": "Written silences",
+      "t": "0:05.97-0:06.45",
+      "frames": "f179-f193",
+      "fps": 30,
+      "mechanics": "f179–f189 : écran noir complet et audio à −60 dB (contre −14 à −28 dB ailleurs), 11 im = 0,37 s ; puis chute de WEIGHT et boum à f192–f193. Même procédé à f389 : la musique tombe à −50 dB, un fond doux (−35 dB) accompagne les particules, coup final à 14,63 s. Le vide prépare l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f179.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rafale de mots sur des triolets",
+      "name_en": "Triplet-rate word montage",
+      "t": "0:11.97-0:12.97",
+      "frames": "f359-f388",
+      "fps": 30,
+      "mechanics": "6 mots en 30 im : EASE f359, ARC f365, FRAME f369, FORM f374, BEAT f380, FLOW f384 (durées 6-4-5-6-4-5 im). Attaques audio à 12,034 / 12,202 / 12,370 / 12,533 / 12,701 / 12,870 s : pas de 0,168 s, soit un triolet de croche à 120 BPM ; l'image arrive 1 à 2 im avant chaque attaque. Accélération du rythme juste avant la finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f389.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture point → ligne → iris",
+      "name_en": "Dot-to-line-to-iris opener",
+      "t": "0:00.50-0:01.10",
+      "frames": "f15-f33",
+      "fps": 30,
+      "mechanics": "Point lime ≈0,6 % H au centre à f15 (clic audio) ; il s'étire en ligne pleine largeur : ≈4 % W (f21), 8 % (f22), 50 % (f23), 85 % (f24), 100 % (f26), ease-in-out ; une image noire (f29) ; cercle os qui ouvre le plan sur le drop : rayon ≈50 % H (f30), ≈70 % (f31), coins seuls noirs (f32), plein cadre f33 (3 im, ease-out).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f33.jpg",
+      "illus": {"from": 21, "to": 33, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent une à une avec léger dépassement (MOTION)",
+      "name_en": "Per-letter rise with overshoot",
+      "t": "0:01.07-0:01.40",
+      "frames": "f32-f42",
+      "fps": 30,
+      "mechanics": "Lettres qui sortent d'un masque à la ligne de base, 1 im de décalage par lettre (M f33 → N f39) ; I, O, N dépassent vers le haut (≈+8 % de la hauteur des capitales) à f40 puis se posent à f42. Mot ≈68 % W, capitales ≈23 % H, noir #090909 sur os #F1EDE5.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f33.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Soulignement lime tracé et sous-titre tapé",
+      "name_en": "Underline draw and typewriter subtitle",
+      "t": "0:01.40-0:01.77",
+      "frames": "f42-f53",
+      "fps": 30,
+      "mechanics": "Soulignement lime #C8FD2C ≈2,5 % H tracé de gauche à droite en 4 im (≈15 %, 70 %, 85 %, 100 % de la largeur du mot), ease-out ; « A REEL IN FIFTEEN SECONDS » tapé à ≈2,5 caractères par image (f45–f53), ≈1,2 % H, ferré à gauche sous le trait.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f33.jpg, microM-002-cut-f59.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Écrasement d'anticipation avant la coupe",
+      "name_en": "Pre-cut anticipation squash",
+      "t": "0:01.87-0:01.97",
+      "frames": "f56-f58",
+      "fps": 30,
+      "mechanics": "MOTION s'écrase verticalement (scaleY ≈1 → 0,7, scaleX ≈1,05) en 3 im juste avant la coupe vers ANTICIPATE ; attaque audio à 1,910 s. La coupe arrive comme la détente d'un ressort.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f59.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "ANTICIPATE : recul tassé puis départ avec traits de vitesse",
+      "name_en": "Wind-up then dash with speed lines",
+      "t": "0:02.17-0:02.97",
+      "frames": "f65-f88",
+      "fps": 30,
+      "mechanics": "Le mot (≈76 % W, capitales ≈12 % H) recule vers la gauche et se tasse en 10 im : bord gauche 12 % → 5 % W, largeur −10 % (ease-in-out). À f75 il bondit de ≈40 % W vers la droite en 1 im, flou horizontal, une douzaine de traits de vitesse gris (15 à 40 % W) ; il ralentit et s'arrête à demi sorti : « AN » reste coupé au bord droit de f77 à f88. Attaque audio à 2,537 s.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f59.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "OVERSHOOT : ressort amorti autour d'une ligne cible",
+      "name_en": "Damped spring around a target line",
+      "t": "0:03.10-0:03.83",
+      "frames": "f93-f115",
+      "fps": 30,
+      "mechanics": "Ligne pointillée « TARGET » au centre (50 % W). Le mot (≈78 % W, capitales ≈12 % H) entre de la gauche à ≈25 % W par image, sans flou, et dépasse : bord gauche à 47 % au lieu de 14 % au repos, soit +33 % W (f99–f100) ; retour à −2 % (−16 %, f108) ; petit rebond puis repos à f115. Demi-période ≈8,5 im, rebond ≈48 % par demi-cycle, ≈22 im au total. Le mot sort du cadre des deux côtés pendant les oscillations.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 93, "to": 115, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "STRETCH : étirement ×2 puis écrasement élastique",
+      "name_en": "Squash and stretch on a word",
+      "t": "0:04.23-0:04.93",
+      "frames": "f127-f148",
+      "fps": 30,
+      "mechanics": "Largeur ≈59 % W au repos ; ≈84 % (f128), ≈100 % (f129), ≈115–120 % W de f130 à f138 (coupé des deux côtés, hauteur ≈75 %). Retour f139–f143 jusqu'à ≈43 % W (écrasement ×0,75, plus haut ≈115 %), rebond à ≈61 % (f147) puis repos. Ressort net, sans flou ; attaques audio à 4,284 et 4,783 s.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f140.jpg, extra-01.jpg",
+      "illus": {"from": 126, "to": 147, "n": 7}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "STAGGER : chute de lettres en cascade puis vague amortie",
+      "name_en": "Staggered letter drop with damped wave",
+      "t": "0:05.10-0:05.93",
+      "frames": "f153-f178",
+      "fps": 30,
+      "mechanics": "Fond os vide 3 im, puis lettres qui tombent du haut en tournant (±15 à 20°), décalage ≈1,3 im (S f153, T f154, A f156…), premier G en orange #FE591F. Posées en ligne ondulée, elles portent une vague qui court de gauche à droite et s'amortit (≈±10 % H → ±2 %) jusqu'à f178. 5 tics audio à 70 ms d'écart pendant les arrivées (probable un par lettre).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f140.jpg, microM-004-cut-f179.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "WEIGHT : chute avec traînée stroboscopique et ligne qui plie",
+      "name_en": "Heavy drop onto a bending line",
+      "t": "0:06.30-0:06.83",
+      "frames": "f189-f205",
+      "fps": 30,
+      "mechanics": "Après 11 im de noir, le mot tombe du haut en 2 im avec 4 à 5 copies semi-transparentes empilées (traînée stroboscopique) ; impact à f192 : mot écrasé (scaleY ≈0,6, scaleX ≈1,1), la ligne os pleine largeur (y ≈62 % H) plie sous lui ; f193 tremblement horizontal flou ; f194 poussières le long de la ligne ; la ligne oscille et se stabilise vers f205. Boum grave à 6,444 s (f193,3).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f179.jpg, extra-02.jpg",
+      "illus": {"from": 187, "to": 197, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "SPLIT : trait qui tranche et moitiés qui s'envolent",
+      "name_en": "Slash and split halves",
+      "t": "0:07.20-0:07.70",
+      "frames": "f216-f231",
+      "fps": 30,
+      "mechanics": "Trait lime (≈0,3 % H) tracé de gauche à droite au milieu du mot en ≈3 im (f216–f219, attaque à 7,210 s) ; moitiés haute et basse qui glissent en sens opposés en accélérant (ease-in) : ±1,5 % W (f223), ±5 % (f225), ±13 % (f227), quasi sorties à f229, disparues à f231 ; traînées de points le long du trait. La trame de MORPH apparaît en fondu dès f229.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "MORPH : disque, carré, étoile, hexagone, haricot",
+      "name_en": "Shape morph cycle",
+      "t": "0:07.97-0:09.43",
+      "frames": "f239-f283",
+      "fps": 30,
+      "mechanics": "Forme orange #FE591F cerclée de lime (≈0,5 % H), ≈30 % H, mot MORPH noir au centre. Disque (f239), carré incliné ≈10° qui oscille (f243–f249), étoile à 5 branches (f251–f259), hexagone (f263–f269), haricot organique qui ondule (f271–f283). Chaque passage dure ≈2 im ; attaques audio aux changements (8,034 / 8,284 / 8,678 / 8,992 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Trame de points à ondes concentriques",
+      "name_en": "Reactive halftone dot grid",
+      "t": "0:07.70-0:09.43",
+      "frames": "f229-f283",
+      "fps": 30,
+      "mechanics": "Grille régulière de points (≈90 colonnes) gris #B9B8B7 avec quelques points lime ; la taille des points est modulée par des anneaux concentriques autour de la forme centrale, qui s'élargissent après chaque changement de forme (probable onde de choc). Donne du mouvement à un fond noir sans le charger.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "LOOP : carrousel de lettres sur un anneau pointillé",
+      "name_en": "Letters orbiting a dotted ring",
+      "t": "0:09.47-0:10.43",
+      "frames": "f284-f313",
+      "fps": 30,
+      "mechanics": "L, O, O, P sur un anneau pointillé (rayon ≈42 % H, centre à ≈57 % H), rotation antihoraire ≈4° par image (≈120°/s), lettres toujours droites, capitales ≈9 % H ; lettres du haut blanches #F1EDE5, du bas grises #54524E (profondeur simulée, sans perspective). Le bas de l'anneau et la lettre qui y passe sont coupés par le bord du cadre.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "BLUR : entrée avec flou proportionnel à la vitesse",
+      "name_en": "Velocity-scaled motion blur entrance",
+      "t": "0:10.47-0:10.97",
+      "frames": "f314-f329",
+      "fps": 30,
+      "mechanics": "Flash orange plein de 5 im (f314–f318), puis le mot entre par la droite : bord gauche à 50 % W avec flou horizontal ≈8 % W (f320), 35 % avec flou réduit (f323), 30 % net (f326), repos à 28 % (f329) ; ease-out, le flou suit la vitesse. Capitales ≈18 % H. Puis 17 im immobiles jusqu'à SNAP.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "SNAP : flash lime qui retombe au noir, échos chromatiques",
+      "name_en": "Colour-flash decay with chromatic echoes",
+      "t": "0:11.47-0:11.93",
+      "frames": "f344-f358",
+      "fps": 30,
+      "mechanics": "Cadre lime incliné ≈3° (f344) qui se redresse et s'assombrit en 4 im : #C8FD2C → olive #374312 (f346) → presque noir (f347) → noir #090909 (f348). SNAP en 4 à 5 échos décalés arc-en-ciel (lime, cyan #75FDCE, bleu #5894CE, orange #F26332), puis séparation RVB ±1 % W qui se resserre jusqu'à f355. Claquement audio à 11,482 s (point vert f345).",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f348.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Boîte à styles en rafale",
+      "name_en": "Style-toolbox word burst",
+      "t": "0:11.97-0:12.97",
+      "frames": "f359-f388",
+      "fps": 30,
+      "mechanics": "Chaque mot change de traitement : EASE noir sur lime, incliné −3° puis redressé ; ARC en contour orange sur noir ; FRAME noir italique gras sur os ; FORM os géant sur orange (≈40 % H, déborde) ; BEAT lime sur noir ; FLOW orange italique sur os. Mêmes 4 couleurs et même famille : la variété reste dans le système.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-cut-f389.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Poussière de points → MOTION → aplat",
+      "name_en": "Particle dust resolving into the wordmark",
+      "t": "0:12.97-0:14.07",
+      "frames": "f389-f422",
+      "fps": 30,
+      "mechanics": "Quelques milliers de points blancs et gris (≈0,2 % H) répartis au hasard (f389), qui se resserrent en bande horizontale (f392–f398), puis dans les lettres (MOTION lisible à f401), se densifient en trame (f404–f416), deviennent un aplat gris (f419) puis os #F1EDE5 (f422). Musique en retrait (−35 à −50 dB). Exécution propre, mais fin de vidéo IA très courante.",
+      "verdict": "cliche",
+      "evidence": "microM-006-cut-f389.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Point final lime qui tombe et rebondit, signature tapée",
+      "name_en": "Bouncing full stop and typed signature",
+      "t": "0:14.17-0:14.80",
+      "frames": "f425-f443",
+      "fps": 30,
+      "mechanics": "Point lime ≈2 % H qui tombe à droite du N : en haut à f425, posé à f428, rebond ≈+3 % H à f431, posé à f434 ; sous-titre gris « A REEL WRITTEN IN CODE · @HANIFPRODUKTIF » tapé de f431 à f443 (≈1,5 % H). Le point transforme le mot en phrase affirmée.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Interface de reel discrète",
+      "name_en": "Minimal reel HUD",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Crochets d'angle gris aux 4 coins, « MOTION REEL — 2026 » en haut à gauche, code temporel en haut à droite, « 0N NOM DE SCÈNE » en bas à gauche, compteur « F 0052 » en bas à droite ; grotesque fine ≈1,5 % H, gris à ≈40 % d'opacité. Elle numérote les principes sans gêner la lecture.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Quatre couleurs en rotation de fond",
+      "name_en": "Four-colour background rotation",
+      "t": "0:01.00-0:13.00",
+      "frames": "f30-f389",
+      "fps": 30,
+      "mechanics": "Noir #090909, os #F1EDE5, orange #FE591F, lime #C8FD2C : le fond change presque à chaque scène (os, noir, orange, lime, os, noir, noir, noir, noir, orange, lime → noir, rafale), le texte reste en contraste maximal (noir sur clair, os sur noir). Le lime sert aussi d'accent ponctuel (soulignement, trait de SPLIT, contour de MORPH, point final).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une seule grotesque très grasse",
+      "name_en": "Single heavy grotesque",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Grotesque néo très grasse (Inter Bold/Black probable), capitales, interlettrage serré, tailles de 9 % (LOOP) à 40 % H (FORM), la plupart entre 12 et 23 % H, toujours centrées ; italique gras (FRAME, FLOW) et contour (ARC) réservés à la rafale ; même famille en maigre gris pour l'interface.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupes sèches comme seule transition",
+      "name_en": "Hard cuts only",
+      "t": "0:01.97-0:12.97",
+      "frames": "f59-f389",
+      "fps": 30,
+      "mechanics": "Hormis l'iris d'ouverture et la sortie de SPLIT, tous les changements de scène sont des coupes franches sur le temps, avec changement de couleur de fond ; aucun raccord de forme ou de mouvement entre deux principes, et la sortie de chaque mot n'est pas animée (il est coupé en cours de geste ou au repos).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Showcase your skills and capabilities » a été traduit littéralement en catalogue de principes d'animation (anticipation, dépassement, étirement, décalage, poids…) : un prompt de candidature produit une démonstration, pas un récit."},
+    {"kind": "structure", "insight": "Sans durée de plan imposée, Claude a pris la règle la plus simple : une scène par seconde (30 im, 2 temps à 120 BPM). Lisible mais mécanique : il faudrait varier les durées et demander des enchaînements entre les scènes."},
+    {"kind": "inputs", "insight": "Aucune identité fournie : palette noir/os/orange/lime et grotesque grasse sont des choix sûrs par défaut. La signature affiche le compte du demandeur (@HANIFPRODUKTIF), absent du prompt publié : information donnée hors prompt ou retouche (probable)."},
+    {"kind": "build", "insight": "« A REEL WRITTEN IN CODE » et le compteur d'images indiquent une composition HTML/JS rendue image par image à 30 fps ; les bruitages déclenchés au même instant que les gestes suggèrent un son généré dans le même code (probable WebAudio)."},
+    {"kind": "qa", "insight": "Le compteur « F 0052 » à l'image 50 et les 449 images pour 15 s trahissent une image perdue à l'encodage : toute l'image est en avance d'environ 1 im sur le son. Vérifier le nombre d'images et le calage audio après rendu."},
+    {"kind": "banned", "insight": "Rien n'interdisait les mots coupés par le bord : ANTICIPATE, OVERSHOOT, STRETCH et LOOP sortent du cadre. Ajouter « aucun mot coupé par le cadre » au prompt."}
+  ],
+  "steal": [
+    "Fais jouer au mot son propre sens : ANTICIPATE recule puis fonce, OVERSHOOT dépasse une ligne cible de 33 % puis revient, WEIGHT écrase une ligne qui plie.",
+    "Silence avant l'impact : 11 im de noir muet, chute en 2 im avec traînée de copies, impact écrasé (scaleY 0,6) et boum grave sur la même image.",
+    "Un bruitage par geste : clic à l'apparition, tic par lettre qui atterrit, boum à l'impact, claquement au flash ; le son part 0 à 1 im après l'image.",
+    "Ouverture point → ligne → iris : point lime central, ligne pleine largeur en 5 im, une image noire, puis cercle qui ouvre le plan en 3 im sur le drop.",
+    "Rafale finale sur triolets : six mots en une seconde (≈5 im chacun), chacun dans un autre traitement (contour, italique, géant, couleur inversée), même palette."
+  ],
+  "flaws": [
+    "Aucune transition motivée : 12 coupes sèches à la seconde, aucun raccord de forme ou de mouvement entre deux principes.",
+    "Mots coupés par le cadre : « AN » reste 13 im au bord, OVERSHOOT et STRETCH débordent, le O bas de LOOP est rogné.",
+    "Finale en particules qui forment le logo : effet très vu dans le corpus, sans lien avec le reste.",
+    "Démonstration mécanique : chaque principe dure une seconde sur le même schéma ; aucun récit, aucune montée.",
+    "Séparation RVB de SNAP et 0,5 s de noir initial (f0–f14) : un tic et un démarrage mou."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, à la cadence native de 30 fps : OVERSHOOT (ressort mesurable autour d'une ligne cible), STRETCH (étirement puis écrasement), STAGGER (cascade et vague) et WEIGHT (silence, chute, impact avec son) sont des démonstrations isolées des 12 principes, directement utiles pour la leçon M02 de la formation."
+  }
+}

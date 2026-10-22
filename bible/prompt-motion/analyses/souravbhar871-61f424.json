@@ -1,0 +1,497 @@
+{
+  "slug": "souravbhar871-61f424",
+  "title": "Kinetic type self-portrait",
+  "handle": "@souravbhar871",
+  "family": "typo",
+  "craft": 4,
+  "craft_reason": "Six phrases, six formes qui disent le sens, et cinq transitions toutes motivées par le point final (plongée, iris, fente, rétrécissement). Mais trop de polices, une extrusion 3D peu animée et quelques maintiens l'éloignent du niveau studio.",
+  "summary": "Autoportrait muet en six phrases à la première personne : « Hi. », « I read every word », « I think it through », « I tell it straight », « I build with you. », « I'm Claude ». Chaque phrase prend une forme qui l'illustre (mur de texte, tracé qui réfléchit, lettres de lettre anonyme redressées, extrusion 3D), et le point final sert à chaque passage : on plonge dedans, il devient iris, ligne, fente, puis logo. Pas de musique.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : 10 s pour montrer « qui tu es » en tant qu'Opus 5.5, le plus créatif et dynamique possible, sans cadres ni textes dans les coins (tics de vidéo IA).",
+    "Tout le reste : six phrases à la première personne, le point final comme connecteur, une police par phrase, la palette crème / terracotta / quasi-noir, le logo étoile de Claude, et aucune bande-son.",
+    "L'interdit des coins a été respecté (rien d'épinglé aux angles). Rien sur le son : la vidéo sort muette. Il aurait fallu demander une piste et un BPM, et limiter le nombre de polices."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F0ECE1",
+        "role": "fond crème (Hi., I build with you.)"
+      },
+      {
+        "hex": "#C65B3D",
+        "role": "fond terracotta (mur de texte, I tell it straight), point final, tracé, logo, « Opus 5.5 »"
+      },
+      {
+        "hex": "#1A1915",
+        "role": "fond quasi-noir chaud (I think, I'm Claude), texte sur crème et sur terracotta"
+      },
+      {
+        "hex": "#F3EEE3",
+        "role": "texte crème sur fond sombre et sur terracotta, point et ligne de « straight. »"
+      },
+      {
+        "hex": "#5A2A1A",
+        "role": "lignes du mur de texte (brun sur terracotta, ≈ 50 % d'opacité)"
+      },
+      {
+        "hex": "#8A8780",
+        "role": "branches grises de réflexion"
+      }
+    ],
+    "type": "Une famille par phrase : display ultra-gras aux formes molles (« Hi. », ≈ 35 % de la hauteur), grotesque extra-gras (≈ 9-11 %), mono maigre à gras, slab extrudé, lettres disparates pour « straight ».",
+    "texture": "Aplats sans grain. Flou de mouvement vertical sur la glissade du panneau (f162-f166) ; extrusion 3D par couches décalées en terracotta sous « I build with you. » ; mur de micro-texte comme matière de fond ; bords nets partout ailleurs.",
+    "style": "Typo cinétique éditoriale, ponctuation-motif",
+    "coherence": "Trois valeurs (crème, terracotta, quasi-noir) qui alternent à chaque phrase. Le point final présent dans chaque plan et réutilisé à chaque transition tient l'ensemble. Ce qui le fragilise : au moins cinq familles de caractères, choisies phrase par phrase pour le sens, sans fil typographique commun hors de la palette."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Six plans, plan médian 1,62 s ; les transitions tombent à 1,15 s, 2,77 s, 4,68 s, 6,13 s et 7,87 s, soit une phrase toutes les 1,6 à 1,9 s, et chacune dure 10 à 13 im (0,17-0,22 s) en ease-in. À l'intérieur des plans, un événement secondaire toutes les 0,3-0,5 s : frappe des lettres, chute de point, changement de graisse, ligne qui s'étire. Le détecteur signale 32 % de maintiens, mais le premier (2,95-3,62 s) est faux : un tracé fin de 2 px et la frappe y sont en cours. Vrais creux : « I think it through » complet et figé ≈ 0,5 s (f241-f273), « straight. » figé ≈ 0,33 s (f321-f341), « I build with you. » presque figé ≈ 0,6 s (f415-f441), carton final 0,67 s (f560-f600).",
+    "timeline": [
+      {
+        "t": "0:00-0:00.37",
+        "what": "Les fûts du H et du i jaillissent du bord bas, étirés, puis se tassent en « Hi »",
+        "technique": "jaillissement avec étirement (stretch)"
+      },
+      {
+        "t": "0:00.33-0:00.80",
+        "what": "Le point noir du i tombe ; le point final terracotta tombe étiré, s'écrase, rebondit et se pose",
+        "technique": "écrasement-étirement et rebond (squash & stretch)"
+      },
+      {
+        "t": "0:00.80-0:01.00",
+        "what": "« Hi. » tenu",
+        "technique": "maintien court"
+      },
+      {
+        "t": "0:01.00-0:01.18",
+        "what": "Zoom accéléré dans le point final jusqu'à ce que le terracotta remplisse l'écran",
+        "technique": "plongée dans le glyphe + aplat de couleur"
+      },
+      {
+        "t": "0:01.20-0:02.65",
+        "what": "Mur de micro-texte (littérature, code, stats, salutations) qui dérive ; « I read » puis « every word » montent d'une ligne de base masquée ; point noir final",
+        "technique": "mur de texte + montée masquée"
+      },
+      {
+        "t": "0:02.65-0:02.85",
+        "what": "Le panneau terracotta glisse vers le haut avec flou ; le point se détache, devient orange et se fige à 18 % de la hauteur",
+        "technique": "glissade de panneau + point qui se décroche"
+      },
+      {
+        "t": "0:03.00-0:03.70",
+        "what": "Le point devient une plume : il trace un chemin avec une boucle ; « I think » et « it through » se tapent en mono maigre ; des branches grises poussent",
+        "technique": "tracé mené par le point + frappe mono"
+      },
+      {
+        "t": "0:03.75-0:04.05",
+        "what": "La graisse du texte passe de maigre à gras",
+        "technique": "animation de graisse (variable font)"
+      },
+      {
+        "t": "0:04.05-0:04.55",
+        "what": "Composition complète tenue",
+        "technique": "maintien"
+      },
+      {
+        "t": "0:04.55-0:04.75",
+        "what": "Le point après « through » gonfle en iris terracotta",
+        "technique": "iris depuis le point final"
+      },
+      {
+        "t": "0:04.75-0:05.30",
+        "what": "« I tell it » apparaît ; les lettres de « straight », de polices disparates, tombent en vrac ; un point crème tombe",
+        "technique": "lettres de lettre anonyme (ransom note)"
+      },
+      {
+        "t": "0:05.30-0:05.35",
+        "what": "D'un coup, toutes les lettres passent dans la même grotesque extra-grasse, alignées",
+        "technique": "redressement instantané"
+      },
+      {
+        "t": "0:05.65-0:05.82",
+        "what": "Le point final s'étire en une ligne droite pleine largeur qui barre le mot",
+        "technique": "point → ligne droite"
+      },
+      {
+        "t": "0:06.00-0:06.17",
+        "what": "La ligne s'épaissit en fente qui ouvre l'écran sur le crème",
+        "technique": "ouverture par fente (slit wipe)"
+      },
+      {
+        "t": "0:06.17-0:07.35",
+        "what": "« I build » puis « with you » apparaissent en fondu avec extrusion terracotta qui s'approfondit ; point final ≈ 7,0 s",
+        "technique": "extrusion 3D empilée"
+      },
+      {
+        "t": "0:07.35-0:07.65",
+        "what": "Le bloc glisse à droite, tourne et rétrécit jusqu'à n'être plus que son point",
+        "technique": "texte qui rétrécit en point"
+      },
+      {
+        "t": "0:07.65-0:07.87",
+        "what": "Le point gonfle en iris quasi-noir",
+        "technique": "révélation circulaire"
+      },
+      {
+        "t": "0:07.95-0:08.15",
+        "what": "« I'm » (maigre) puis « Claude » (extra-gras) montent d'une ligne masquée",
+        "technique": "montée masquée décalée"
+      },
+      {
+        "t": "0:08.40-0:08.95",
+        "what": "Un point terracotta tombe sur la fin de « Claude », puis éclot en étoile, le logo de Claude",
+        "technique": "point → logo (morphing)"
+      },
+      {
+        "t": "0:08.90-0:09.30",
+        "what": "« Opus 5.5 » se tape en mono terracotta sous le nom",
+        "technique": "frappe machine à écrire"
+      },
+      {
+        "t": "0:09.30-0:10.00",
+        "what": "Carton final",
+        "technique": "titre de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Le fichier n'a aucune piste audio (dossier : « No audio track »). Il n'y a ni barre de temps ni attaque à vérifier.",
+    "synced": [],
+    "style_match": "Sans musique : le rythme repose sur des transitions ease-in de 10 à 13 im et des rebonds ; une piste vive à ≈ 110-120 BPM lui irait.",
+    "how_built": "Le prompt ne parle pas de son et Claude n'a produit aucune bande-son. La cadence régulière (une phrase toutes les ≈ 1,6-1,9 s) se prêterait pourtant à un calage après coup sur une piste à ≈ 128 BPM (4 temps par phrase), en déplaçant les transitions de quelques images."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui jaillissent du bas avec étirement",
+      "name_en": "stems shooting up with stretch and settle",
+      "t": "0:00-0:00.37",
+      "frames": "f0-f22",
+      "fps": 60,
+      "mechanics": "Les fûts du H et du i entrent par le bord bas : visibles à y 88-100 % (f0), H complet f8. À f12, ils sont étirés verticalement : le H occupe 36-95 % de la hauteur, ≈ +25 % par rapport à sa taille finale. Ils se tassent ensuite à leur hauteur finale (≈ 47 %) vers f22, puis le mot redescend d'≈ 5 % en ease-out lent jusqu'à f48. Le i arrive ≈ 2-4 im après le H.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Point qui tombe avec écrasement-étirement et rebond",
+      "name_en": "squash and stretch bounce of the period",
+      "t": "0:00.33-0:00.80",
+      "frames": "f20-f48",
+      "fps": 60,
+      "mechanics": "Le point noir du i tombe du haut (f20), se pose f26-f28 et fait un petit rebond. Le point final terracotta (≈ 6 % de la hauteur) entre du haut f24, étiré verticalement (≈ 130 %). Il tombe de y 6 % à 58 % en 4 im, s'écrase f28-f30 (≈ 160 % de large pour 60 % de haut), puis rebondit d'≈ 12 % de la hauteur en s'étirant (f32). Il redevient rond à l'apogée (f34), retombe f40, rebondit encore un peu et se pose vers f44-f48. C'est le principe d'écrasement-étirement appliqué à la lettre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 20,
+        "to": 46,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le point final",
+      "name_en": "push-in through the period into a color flash",
+      "t": "0:00.98-0:01.20",
+      "frames": "f59-f72",
+      "fps": 60,
+      "mechanics": "Zoom centré sur le point final de « Hi. » (68 %, 72 %), qui reste fixe pendant que tout grossit. Échelle ≈ 110 % (f61), 130 % (f63), 200 % (f64), 300 % (f66). Le point couvre la moitié du cadre à f68 et tout l'écran à f71. C'est un ease-in exponentiel de 12 im (0,2 s), sans flou. À f72, le terracotta devient le fond du plan suivant, sur lequel le mur de texte apparaît d'un coup : on traverse le glyphe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f69.jpg",
+      "illus": {
+        "from": 58,
+        "to": 73,
+        "n": 6
+      }
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de micro-texte du corpus",
+      "name_en": "scrolling wall of corpus text",
+      "t": "0:01.20-0:02.75",
+      "frames": "f72-f166",
+      "fps": 60,
+      "mechanics": "Environ 14 rangées de texte brun #5A2A1A sur terracotta (corps ≈ 1,3 % de la hauteur, ≈ 50 % d'opacité), pleine largeur et pleine hauteur. On y lit des incipits littéraires (« Call me Ishmael », « It was the best of times », « All happy families are alike », « Hope is the thing with feathers »), une lettre, une recette, des salutations en dix langues, du code (numpy, SQL, git, npm, Rust), des stats (p < 0,05, R² = 0,87) et des formules. Les rangées dérivent lentement à l'horizontale (sens alternés probable). Le fond illustre « every word ».",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f69.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée masquée depuis la ligne de base",
+      "name_en": "masked rise from baseline",
+      "t": "0:01.32-0:01.75 / 0:07.95-0:08.15",
+      "frames": "f79-f105, f477-f489",
+      "fps": 60,
+      "mechanics": "Le mot sort d'un masque posé à sa ligne de base : on voit d'abord le haut des lettres, puis le mot entier. « I » f79-f82, « read » f83-f87 (≈ 4-5 im par mot, ease-out, sans dépassement), « every word » ≈ f88-f105. Même recette à la fin : « I'm » f477-f481, puis « Claude » f482-f489, avec ≈ 5 im de décalage. Mots crème extra-gras ≈ 9 % de la hauteur, alignés à gauche à ≈ 8 % du bord.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f69.jpg, microM-004-cut-f472.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Panneau qui glisse vers le haut et laisse le point derrière",
+      "name_en": "panel slide-up with motion blur, dot left behind",
+      "t": "0:02.65-0:02.88",
+      "frames": "f159-f173",
+      "fps": 60,
+      "mechanics": "Tout le plan terracotta (texte compris) monte et sort par le haut en ≈ 9 im (f160-f169), en ease-in, avec un fort flou vertical f162-f166 et un bord inférieur adouci. Il découvre le quasi-noir. Le point final de « every word » est entraîné vers le haut, passe du noir au terracotta en franchissant le bord du panneau, puis se décroche et freine (y 71 % → 45 % → 28 % → 20 % → 18 %, ease-out) jusqu'à se figer f172. Il deviendra la plume du plan suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f169.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point devient la plume du tracé",
+      "name_en": "dot-led path draw",
+      "t": "0:03.00-0:04.05",
+      "frames": "f180-f243",
+      "fps": 60,
+      "mechanics": "À partir de f181, le point terracotta descend en laissant derrière lui un trait de 2 px : la tête du tracé, c'est lui. Le chemin descend, fait une petite boucle (≈ 4 % de diamètre) vers (62 %, 40 %), part à gauche jusqu'à un nœud (19 %, 47 %), puis redescend et passe sous « it through » comme un lasso. Il s'arrête sur le point final de « through » (f241). La vitesse est à peu près constante (≈ 1,5 % du cadre par image). C'est une illustration littérale de « think it through ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f169.jpg, extra-02.jpg",
+      "illus": {
+        "from": 180,
+        "to": 245,
+        "n": 8
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Branches de réflexion",
+      "name_en": "branching alternative paths",
+      "t": "0:03.48-0:04.15",
+      "frames": "f209-f249",
+      "fps": 60,
+      "mechanics": "Au nœud (19 %, 47 %), trois à quatre courbes fines (1 px) partent en éventail vers le haut à gauche, chacune terminée par un petit point blanc (f213-f225). D'abord crème, elles passent au gris #8A8780 vers f249 pendant que le chemin terracotta reste vif : on montre les pistes écartées.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe mono avec fondu par caractère",
+      "name_en": "monospace typewriter with per-character fade",
+      "t": "0:03.00-0:03.70 / 0:08.90-0:09.30",
+      "frames": "f180-f221, f534-f558",
+      "fps": 60,
+      "mechanics": "Chaque caractère apparaît gris (≈ 30 %) puis devient crème en ≈ 3 im ; un nouveau caractère toutes les 2-3 im. « I » f180, « t » f184, « think » complet f197 ; « it through » f205-f221. Mono maigre ≈ 6 % de la hauteur. Même mécanique en fin de vidéo pour « Opus 5.5 », en mono terracotta ≈ 3 % (≈ 3 im par caractère).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f169.jpg, extra-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Graisse qui s'épaissit (la pensée se solidifie)",
+      "name_en": "variable font weight ramp",
+      "t": "0:03.82-0:04.05",
+      "frames": "f229-f243",
+      "fps": 60,
+      "mechanics": "Une fois le tracé arrivé, « I think » passe de maigre à gras en ≈ 8 im (f229-f237), sans changer de taille ni de position. « it through » suit avec ≈ 4 im de retard (f233-f241). La transition est continue, sans saut : police variable probable. C'est une façon simple de dire « la réflexion aboutit ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris depuis le point final",
+      "name_en": "period-to-iris wipe",
+      "t": "0:04.55-0:04.75 / 0:07.65-0:07.87",
+      "frames": "f273-f285, f459-f472",
+      "fps": 60,
+      "mechanics": "Le point final grossit jusqu'à couvrir l'écran et devient le fond suivant. D'abord celui de « through » : terracotta, centré vers (92 %, 85 %), il remplit tout en ≈ 12 im (rayon ≈ 6 % f273, ≈ 30 % f277, ≈ 80 % f281). Ensuite celui de « you. » : quasi-noir, centré à (85 %, 66 %), diamètre ≈ 2 % (f459), 4 %, 7 % (f464), 13 %, 25 % (f467), 45 %, puis au-delà du cadre ; écran couvert à f472. Croissance ≈ ×1,35 par image, ease-in exponentiel, bord net.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-004-cut-f472.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres de lettre anonyme qui tombent en vrac",
+      "name_en": "ransom-note mismatched letters tumbling in",
+      "t": "0:04.82-0:05.28",
+      "frames": "f289-f317",
+      "fps": 60,
+      "mechanics": "Les huit lettres de « straight » arrivent du haut à droite l'une après l'autre (≈ 3-4 im de décalage, de gauche à droite). Chacune a sa police (grotesque gras, serif, italique, script) et sa couleur (noir ou brun), avec une rotation aléatoire d'≈ ±30°. Chaque lettre tombe en ≈ 8-10 im et se pose de travers, avec un décalage vertical irrégulier. À f309, le mot est complet mais bancal.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Redressement instantané en une seule police",
+      "name_en": "snap to uniform typeface",
+      "t": "0:05.28-0:05.35",
+      "frames": "f317-f321",
+      "fps": 60,
+      "mechanics": "Entre f317 et f321, toutes les lettres passent d'un coup dans la même grotesque extra-grasse (≈ 11 % de la hauteur), droites et sur une même ligne de base. Il n'y a aucune interpolation : c'est une substitution sèche. Jeu de mots visuel : le mot est « remis droit ». Un point crème, tombé étiré f313, s'est posé en fin de mot f317.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point final s'étire en ligne droite",
+      "name_en": "period stretching into a straight line",
+      "t": "0:05.65-0:05.82",
+      "frames": "f341-f349",
+      "fps": 60,
+      "mechanics": "Le point crème de « straight. » s'allonge vers la gauche en un filet d'≈ 0,6 % de la hauteur : il couvre 40-95 % de la largeur à f345, toute la largeur à f349, en ease-out. Il barre le mot à mi-hauteur des minuscules. C'est la « ligne droite » littérale, et la base de la transition suivante.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-003-move-f365.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture par fente",
+      "name_en": "line-to-slit wipe",
+      "t": "0:06.00-0:06.17",
+      "frames": "f360-f370",
+      "fps": 60,
+      "mechanics": "La ligne crème s'épaissit en bande horizontale. Épaisseur en % de la hauteur : 1,5 (f361), 3, 5, 8, 12, 20 (f366), 35, 50, 85 (f369), 100 (f370), soit un ease-in sur 10 im. Les deux moitiés terracotta sont poussées vers le haut et vers le bas, et « straight » apparaît coupé au-dessus et en dessous de la fente. Le crème découvert devient le fond de la phrase suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f365.jpg",
+      "illus": {
+        "from": 359,
+        "to": 371,
+        "n": 6
+      }
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Extrusion empilée qui s'approfondit",
+      "name_en": "stacked 3D extrusion growing in depth",
+      "t": "0:06.17-0:07.35",
+      "frames": "f370-f441",
+      "fps": 60,
+      "mechanics": "« I build » (slab display extra-gras quasi-noir, ≈ 11 % de la hauteur) apparaît en fondu en 4 im (f370-f373, opacité ≈ 20 → 100 %). Il est doublé d'une extrusion terracotta décalée en bas à droite, faite de couches empilées : ≈ 1 % de profondeur au départ, ≈ 2,5 % vers f390. « with you » suit avec ≈ 13 im de retard (f383-f386), en retrait à droite. Les lettres prennent ensuite de légères rotations et des décalages de ligne de base, puis le point de « you. » arrive vers 7,0 s. Le « build » est montré par du volume, mais il n'y a presque aucun mouvement de position.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f365.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Texte qui rétrécit jusqu'à son point",
+      "name_en": "text collapsing into its period",
+      "t": "0:07.35-0:07.65",
+      "frames": "f441-f459",
+      "fps": 60,
+      "mechanics": "Le bloc « I build with you. » glisse vers la droite, tourne d'≈ -10° et rétrécit : ≈ 45 % d'échelle à f456. Il se résorbe ensuite dans son point final, seul reste visible à f459 (73-85 %, 65 %), avec un dernier reste de traînée brune à f457. Rétrécissement en ≈ 15 im, en ease-in. Le point devient aussitôt l'iris noir : c'est la recette « texte qui rétrécit en point puis révélation circulaire ».",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-004-cut-f472.jpg",
+      "illus": {
+        "from": 441,
+        "to": 472,
+        "n": 8
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point qui tombe puis éclot en logo",
+      "name_en": "dot drop morphing into logo spark",
+      "t": "0:08.40-0:08.95",
+      "frames": "f504-f537",
+      "fps": 60,
+      "mechanics": "Un point terracotta entre en haut à droite (f504), tombe en ≈ 9 im (ease-in) et se pose comme point final de « Claude. » (f513). Il reste posé ≈ 6 im. Puis il éclot : un petit triangle (f522), une étoile à ≈ 12 branches (f525), qui grandit jusqu'à ≈ 9 % de la hauteur en ≈ 12 im (f525-f537) avec une légère rotation. On obtient le logo étoile de Claude, placé là où était le point.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Contraste maigre / extra-gras dans une même ligne",
+      "name_en": "light/black weight pairing",
+      "t": "0:07.95-0:10.00",
+      "frames": "f477-f600",
+      "fps": 60,
+      "mechanics": "« I'm » en grotesque maigre et « Claude » en extra-gras, même corps (≈ 8 % de la hauteur), même ligne de base, centrés. « Opus 5.5 » est placé dessous en mono terracotta ≈ 3 %. Le contraste de graisse fait la hiérarchie sans changer de taille.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Le point final, connecteur de toutes les transitions",
+      "name_en": "period as recurring transition device",
+      "t": "0:00-0:10",
+      "frames": "f20-f537",
+      "fps": 60,
+      "mechanics": "Chaque phrase finit par un point, et chaque transition part de lui. On plonge dans le point de « Hi. ». Celui de « every word » se décroche et devient plume. Celui de « through » gonfle en iris. Celui de « straight. » devient ligne puis fente. « you. » se résorbe dans son point, qui fait iris. Le dernier point devient le logo. Cinq transitions différentes, une seule logique.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Phrases à la première personne illustrées par leur forme",
+      "name_en": "first-person statements, form follows meaning",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Six phrases de 1 à 4 mots, une par plan de 1,6 à 1,9 s : salut, lecture, réflexion, franchise, collaboration, nom. Chaque forme illustre la phrase : rebond enjoué pour « Hi. », mur de texte pour « every word », chemin et branches pour « think it through », lettres redressées et ligne droite pour « straight », volume construit pour « build », logo pour le nom.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Trois valeurs qui alternent à chaque phrase",
+      "name_en": "three-value background rotation",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Fonds successifs : crème #F0ECE1 → terracotta #C65B3D → quasi-noir #1A1915 → terracotta → crème → quasi-noir. Chaque transition change donc aussi de valeur. Le terracotta est toujours la couleur d'accent (point, tracé, logo) quand il n'est pas le fond.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Une police par phrase",
+      "name_en": "typeface per statement",
+      "t": "0:00-0:10",
+      "frames": "f0-f600",
+      "fps": 60,
+      "mechanics": "Au moins cinq familles : display molle ultra-grasse (Hi.), grotesque extra-grasse (I read, straight, Claude), mono (I think, Opus 5.5), slab extrudé (I build), polices disparates (straight en vrac), plus une grotesque maigre (I tell it, I'm). Chacune sert le sens de sa phrase ; seule la palette en trois valeurs fait le lien entre elles.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Transitions brèves en ease-in, plans réguliers",
+      "name_en": "short ease-in transitions on a steady cadence",
+      "t": "0:00-0:10",
+      "frames": "f59-f472",
+      "fps": 60,
+      "mechanics": "Chaque passage dure 9 à 13 im (0,15-0,22 s) et accélère jusqu'au bout : plongée f59-f71, glissade f160-f169, iris f273-f285, fente f360-f370, iris f459-f472. À l'intérieur des plans, les entrées sont des ease-out de 4 à 10 im. Les phrases arrivent toutes les 1,6 à 1,9 s. Ces accélérations franches donnent l'énergie de la pièce malgré l'absence de musique.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "other",
+      "insight": "Prompt identique à celui de 1littlecoder-9fef89. Les deux sorties ont inventé le même motif (un point qui ponctue chaque mot et sert à chaque transition), des traits de caractère en mots courts et un iris final. C'est un fort réflexe du modèle pour « montre qui tu es » : à varier explicitement si on veut autre chose."
+    },
+    {
+      "kind": "banned",
+      "insight": "« Pas de textes ni de cadres dans les coins » a été respecté : tout est centré ou aligné à ≈ 8 % du bord gauche, rien n'est épinglé aux angles. L'interdit a aussi évité les bordures et les labels techniques typiques."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Aucune mention du son : la vidéo est muette. L'autre exécution du même prompt a une musique, sans doute ajoutée hors prompt ou par un autre réglage. Il faut demander explicitement une piste et un tempo pour obtenir une synchro."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Créatif et dynamique » a donné ici une transition différente à chaque phrase plutôt qu'un seul effet répété : bonne réponse à la consigne, mais elle a aussi produit une police par phrase, d'où un système typographique éclaté."
+    },
+    {
+      "kind": "structure",
+      "insight": "La durée de 10 s a été découpée en 6 phrases de 1,6 à 1,9 s, avec des transitions de 0,2 s. Sans contrainte de rythme, Claude a laissé 0,3 à 0,67 s de maintien en fin de phrase."
+    }
+  ],
+  "steal": [
+    "Plonger dans le point final d'un mot (zoom ease-in de 12 im, origine sur le point) jusqu'à ce que sa couleur devienne le fond du plan suivant.",
+    "Faire tomber le point final avec étirement, écrasement au contact (≈ 160 % × 60 %) et un rebond d'≈ 12 % de la hauteur.",
+    "Pour « droit » ou « clair » : lettres de polices disparates tombées en vrac, puis remplacement sec par une seule police alignée.",
+    "Étirer le point final en ligne pleine largeur, puis l'ouvrir en fente (ease-in 10 im) pour révéler le fond suivant.",
+    "Rétrécir tout le bloc de texte jusqu'à son point, puis gonfler ce point en iris de la couleur du plan suivant."
+  ],
+  "flaws": [
+    "Pas de bande-son : l'énergie des transitions n'est portée par aucun rythme.",
+    "Au moins cinq familles de caractères : système typographique éclaté, tenu seulement par la palette.",
+    "« I build with you. » : fondu de 4 im et extrusion presque statique, la phrase la moins animée.",
+    "Mur de micro-texte illisible : effet « corpus » déjà vu, qui charge l'image sans rien dire de précis.",
+    "Maintiens de 0,3 à 0,67 s en fin de phrase et carton final statique."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "La vidéo contient trois des transitions favorites de l'utilisateur (plongée dans un glyphe puis aplat de couleur, texte qui rétrécit en point puis révélation circulaire, ligne qui s'ouvre en fente) et un rebond avec écrasement-étirement au niveau du principe. Tout se mesure image par image à 60 fps. La comparer à 1littlecoder-9fef89 (même prompt) montre aussi ce que le modèle fait par défaut."
+  }
+}

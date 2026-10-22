@@ -1,0 +1,305 @@
+{
+  "slug": "demitiyageekzen-7770ad",
+  "title": "Tengwang Pavilion moonlit river",
+  "handle": "@DemitiyaGeekzen",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Plan unique poétique et cultivé (du Nanchang moderne au pavillon Tengwang sous la lune de la mi-automne), rimes texte-image précises, allumage calé sur la musique ; nuages déformés en taches, texte petit, silhouettes plates.",
+  "summary": "Un plan unique de 30 s, du couchant sur la ville moderne à la nuit de mi-automne : vers de Wang Bo en colonnes verticales, oiseau qui vole vers le vers qui le nomme, ville qui s'enfonce dans l'horizon, panoramique vers le pavillon qui s'illumine sur une montée de notes, lanternes-lotus, vers de Li Bai, sceau rouge. Fort par le sens, faible en nuages et lisibilité.",
+  "prompt_vs_result": [
+    "Le prompt (chinois) demande de choisir seul un thème qui plairait à l'auteur, de faire une vidéo de 30 s et une page interactive, et de montrer au maximum les capacités front-end.",
+    "Claude a choisi le pavillon Tengwang de Nanchang, la mi-automne 2026 (jour de publication), quatre vers célèbres, la bascule moderne → ancien, le ciel et l'eau en shader, la musique pentatonique en Web Audio.",
+    "Le prompt laisse tout ouvert : le modèle a inventé un vrai récit. Il aurait fallu cadrer la lisibilité (taille du texte), le rendu des nuages et le lien précis entre chaque note et chaque geste."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#E58FB8", "role": "ciel du couchant (haut)"},
+      {"hex": "#F6C9A6", "role": "horizon pêche, soleil"},
+      {"hex": "#E9A07A", "role": "nuages orangés"},
+      {"hex": "#4A2A2E", "role": "rive et arbres en silhouette"},
+      {"hex": "#3A2530", "role": "texte encre prune sur ciel clair"},
+      {"hex": "#6E5AAE", "role": "ciel violet du passage"},
+      {"hex": "#24235A", "role": "ciel de nuit indigo"},
+      {"hex": "#F4DDA8", "role": "pavillon illuminé"},
+      {"hex": "#2E4440", "role": "toits vert sombre"},
+      {"hex": "#F2DFB4", "role": "pleine lune"},
+      {"hex": "#F06A5A", "role": "lanternes-lotus"},
+      {"hex": "#C0302F", "role": "sceau rouge « 中秋 »"},
+      {"hex": "#F3E9D2", "role": "texte crème sur nuit"}
+    ],
+    "type": "Chinois vertical en serif Song (Noto Serif SC probable), graisse normale, caractères ≈ 4,5-5 % de la hauteur, colonnes lues de droite à gauche ; attribution et date ≈ 2 % ; sceau carré ≈ 6 %.",
+    "texture": "Ciel et eau en shader WebGL (bruit déformé pour les nuages, rides et colonne de reflets scintillante sur l'eau), brume atmosphérique sur la ville lointaine, vignettage sombre ≈ 15-20 % aux coins, halos doux autour de la lune, du pavillon et des lanternes, aucun grain.",
+    "style": "Estampe nocturne chinoise en shader",
+    "coherence": "Le système tient par le sens : chaque vers est illustré par l'image (oiseau, ciel et eau de même couleur, lune), et la lumière glisse en continu du couchant chaud à la nuit indigo. Ce qui casse : les nuages en taches marbrées vers 11,5-13,5 s, les gratte-ciel en simples rectangles et le pavillon en illustration vectorielle plate, deux langages graphiques différents du ciel en shader."
+  },
+  "rhythm": {
+    "bpm": 72.5,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "30 fps, 30,05 s, un seul plan, aucune coupe. Musique lente en notes pincées (pentatonique de mi mineur probable : mi, sol, la, si, ré ; bourdon grave mi puis sol), attaques espacées de ≈ 0,86-1,2 s ; le tempo estimé de 72,5 BPM (netteté 3,99) décrit mal une pièce au mètre souple. Rythme contemplatif : un événement visuel principal toutes les 2 à 4 s (colonne de texte, oiseau, ville qui s'enfonce, nuages, panoramique, allumage, lanternes, vers final), et entre eux seuls l'eau, les nuages et l'oiseau bougent. Maintien statique mesuré : 0,5 s seulement (7,27-7,73 s), mais des passages lents de 2 à 3 s (7,4-10,2 s ; 26,6-29,0 s). Caractères révélés tous les 5 à 7 im (0,17-0,23 s). Fondu au noir d'entrée ≈ 0,8 s (f9-f33) et de sortie ≈ 0,9 s (f870-f898). Seul passage serré : l'allumage du pavillon (f610-f650) épouse une série de 7 notes rapides (20,28-21,59 s).",
+    "timeline": [
+      {"t": "0:00-0:01.1", "what": "Ouverture au noir sur un lac au couchant, ville moderne (tours jumelles à gauche) dans la brume, soleil bas, reflets", "technique": "fondu depuis le noir"},
+      {"t": "0:01.5-0:03.3", "what": "En haut à gauche, « 豫章故郡 / 洪都新府 » (Wang Bo) s'écrit caractère par caractère en encre prune, colonne de droite puis de gauche", "technique": "colonnes verticales caractère par caractère"},
+      {"t": "0:03.8-0:10.3", "what": "Un oiseau solitaire traverse le ciel de gauche à droite (≈ 12 % de largeur par seconde) ; le premier texte s'efface vers 5 s", "technique": "élément vivant qui traverse le cadre"},
+      {"t": "0:06.2-0:10.2", "what": "À droite, « 落霞与孤鹜齐飞 » (« les nuées du couchant volent avec le canard solitaire ») s'écrit pendant que l'oiseau vole vers la colonne", "technique": "rime texte-image"},
+      {"t": "0:10.2-0:10.5", "what": "Le vers s'efface au moment où l'oiseau atteint le bord droit", "technique": "sortie du texte avec le sujet"},
+      {"t": "0:10.5-0:11.5", "what": "Les gratte-ciel s'enfoncent dans l'horizon en ≈ 30 im et le soleil se couche ; série de 5 notes rapides (11,03-11,55 s)", "technique": "retour dans le temps par effacement de la ville"},
+      {"t": "0:11.3-0:13.5", "what": "Les nuages gonflent en grosses formes déformées, le ciel vire au violet, le ciel et l'eau prennent la même couleur", "technique": "virage colorimétrique, nuages en shader"},
+      {"t": "0:12.9-0:16.6", "what": "En haut à gauche, « 秋水共长天一色 » (« l'eau d'automne et le ciel immense d'une même couleur ») en blanc, avec attribution minuscule", "technique": "vers illustré par la palette"},
+      {"t": "0:14.5-0:17.6", "what": "Une rive boisée entre par la droite, les nuages se dissolvent en dégradé lisse magenta-violet", "technique": "panoramique lent, ciel qui se nettoie"},
+      {"t": "0:17.7-0:19.4", "what": "Le pavillon Tengwang entre par la droite avec la lune et se pose au centre, arrivée amortie", "technique": "panoramique de révélation en ease-out"},
+      {"t": "0:19.4-0:20.3", "what": "Le ciel fonce vers l'indigo, le pavillon rouge et vert reste sombre", "technique": "tombée de la nuit"},
+      {"t": "0:20.3-0:21.7", "what": "Le pavillon s'illumine du soubassement au toit en ≈ 40 im, colonne dorée sur l'eau, sur 7 notes rapides et un changement de basse", "technique": "allumage étage par étage calé sur la musique"},
+      {"t": "0:22.0-0:24.0", "what": "Des lanternes-lotus roses apparaissent et dérivent sur l'eau, étoiles et traînées de nuages fins", "technique": "particules lumineuses sur l'eau"},
+      {"t": "0:24.0-0:27.0", "what": "Vers de Li Bai « 今人不见古时月 / 今月曾经照古人 » en crème à gauche, attribution « 李白《把酒问月》 », sceau rouge « 中秋 », à droite « 丙午中秋 · 南昌 · 滕王阁 »", "technique": "signature calligraphique de fin"},
+      {"t": "0:27.0-0:29.0", "what": "Tableau final tenu : lanternes qui dérivent, lune, pavillon doré", "technique": "maintien vivant"},
+      {"t": "0:29.0-0:29.93", "what": "Fondu au noir", "technique": "fondu de sortie"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Musique générée en Web Audio, notes pincées espacées de ≈ 0,9-1,2 s. Sur 16 gestes clés mesurés (départs de colonnes de texte, sorties, ville qui s'enfonce, entrée et arrêt du pavillon, allumage, fondus), 3 seulement tombent à ±2 im d'une attaque de note : début de l'allumage (f610 contre note à 20,28 s = f608, +2 im), fin de l'allumage (f650 contre note à 21,59 s = f648, +2 im), et à peu près la sortie du vers « 落霞 » (f306-f310 contre 10,32 s). Sur la grille de 72,5 BPM, 4 gestes sur 16 tombent à ±2 im d'un temps ou demi-temps, soit le hasard (≈ 40 % à ce tempo). Les caractères ne sont pas calés note à note (colonne de Li Bai à 24,03 s, notes à 23,43 et 24,73 s). En revanche l'allumage du pavillon est clairement composé avec la musique : 7 attaques à 0,21-0,23 s d'écart couvrent exactement les 40 im de l'allumage (un étage ≈ toutes les 6 im), et la basse passe de mi (81 Hz) à sol (97 Hz) vers 20,7-20,9 s. Une série de 5 notes rapides (11,03-11,55 s) accompagne aussi, plus lâchement, l'effacement de la ville (f316-f344).",
+    "synced": ["couleur", "pulsations"],
+    "style_match": "Pentatonique pincée, lente et réverbérée, bourdon grave : colle au paysage chinois contemplatif, aux fondus lents et à l'allumage progressif du pavillon.",
+    "how_built": "La musique est synthétisée en Web Audio dans la même page que l'image (pile WebGL2 + Canvas 2D + Web Audio) : une même horloge pilote les deux, ce qui a permis d'écrire une montée de notes exactement sur l'allumage. Le reste n'a pas été calé geste par geste : le texte et les mouvements suivent leur propre minutage."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Voyage dans le temps en un seul plan",
+      "name_en": "single-shot time-travel arc",
+      "t": "0:00-0:29.93",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Récit en trois états d'un même lieu sans aucune coupe : couchant sur la ville moderne (0-10,5 s), passage où la ville disparaît et le ciel devient irréel (10,5-17,5 s), nuit de mi-automne sur le pavillon ancien (17,7-29 s). Le passage du temps est porté par la lumière (couchant → violet → indigo) et par un panoramique, pas par des coupes. À la fin, un immeuble moderne aux fenêtres allumées reste visible à droite du pavillon : passé et présent coexistent, comme le dit le vers final de Li Bai.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Vers classiques comme titres de chapitre",
+      "name_en": "classical verses as chapter cards",
+      "t": "0:01.5-0:27.0",
+      "frames": "f46-f810",
+      "fps": 30,
+      "mechanics": "Quatre citations, une par moment : ouverture du « Pavillon du prince Teng » de Wang Bo (« 豫章故郡，洪都新府 », situe le lieu), son distique le plus célèbre en deux temps (« 落霞与孤鹜齐飞 », « 秋水共长天一色 »), puis deux vers de Li Bai sur la lune (« 今人不见古时月，今月曾经照古人 ») pour la nuit de mi-automne. Chaque vers reste ≈ 3,5 à 4 s, apparaît dans un coin différent (haut gauche, haut droite, haut gauche) pour ne jamais masquer le sujet.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Colonnes verticales en serif Song avec sceau et attribution",
+      "name_en": "vertical CJK columns with seal",
+      "t": "0:01.5-0:29.0",
+      "frames": "f46-f870",
+      "fps": 30,
+      "mechanics": "Écriture verticale de haut en bas, colonnes lues de droite à gauche, serif Song (Noto Serif SC probable), caractères ≈ 4,5-5 % de la hauteur, interligne vertical ≈ 1,3 caractère, marges ≈ 7-8 % du bord. Encre prune #3A2530 sur ciel clair, crème #F3E9D2 sur nuit. Finale : attribution « 李白《把酒问月》 » ≈ 1,8 % en colonne fine à gauche, sceau rouge carré « 中秋 » #C0302F ≈ 6 % sous l'attribution, colonne de date « 丙午中秋 · 南昌 · 滕王阁 » ≈ 2 % au bord droit. Mise en page de peinture lettrée chinoise. Taille trop faible pour un téléphone, contraste faible (prune sur rose) dans la première partie.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Caractères qui s'encrent un par un",
+      "name_en": "per-character ink fade",
+      "t": "0:01.53-0:03.23",
+      "frames": "f46-f97",
+      "fps": 30,
+      "mechanics": "Chaque caractère apparaît sur place par fondu (≈ 8-10 im pour atteindre l'opacité pleine), sans glissement ni changement d'échelle, le suivant démarrant 5 à 7 im plus tard : 豫章故郡 de f46 à f73 (≈ 7 im d'écart), pause ≈ 4 im, 洪都新府 de f77 à f97 (≈ 6 im). Même geste pour « 落霞与孤鹜齐飞 » (f186-f222, 7 caractères, ≈ 6 im), « 秋水共长天一色 » (f388-f423, ≈ 5-6 im), Li Bai (f721-f755 puis f768-f795 après une pause de 13 im, ≈ 4-6 im). Rythme de calligraphe, régulier, sans accent.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-004-move-f401.jpg",
+      "illus": {"from": 44, "to": 100, "n": 8}
+    },
+    {
+      "cat": "image",
+      "name_fr": "L'oiseau qui vole vers le vers qui le nomme",
+      "name_en": "text-image rhyme: lone bird",
+      "t": "0:03.8-0:10.3",
+      "frames": "f114-f310",
+      "fps": 30,
+      "mechanics": "Silhouette d'oiseau ≈ 1,5 % de la largeur qui traverse de x ≈ 22 % à x ≈ 92 % à vitesse quasi constante (≈ 12 % de largeur par seconde, linéaire, vol naturel). Le vers « 落霞与孤鹜齐飞 » (le canard solitaire) s'écrit à droite pendant que l'oiseau est au centre (6,2-7,4 s) ; l'oiseau atteint la colonne vers 10 s et le vers s'efface à ce moment (10,2-10,5 s). L'image annonce le mot avant qu'il soit lu, puis le rejoint.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Ciel et eau de la même couleur quand le vers le dit",
+      "name_en": "palette that illustrates the line",
+      "t": "0:11.3-0:16.6",
+      "frames": "f340-f498",
+      "fps": 30,
+      "mechanics": "Pour « 秋水共长天一色 » (« l'eau d'automne et le ciel immense d'une même couleur »), la rive se réduit à un trait fin à ≈ 58 % de la hauteur et le ciel comme l'eau passent au même dégradé magenta #D877B0 → violet #6E5AAE ; seule la ligne d'horizon les sépare. Le texte passe au blanc pour rester lisible sur le violet. Illustration littérale et élégante d'une idée par la palette.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-004-move-f401.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La ville moderne s'enfonce dans l'horizon",
+      "name_en": "skyline sinking (time rewind)",
+      "t": "0:10.53-0:11.47",
+      "frames": "f316-f344",
+      "fps": 30,
+      "mechanics": "Les silhouettes de tours (la plus haute ≈ 18 % de la hauteur du cadre) descendent sous la ligne d'arbres : ≈ 12 % à f318, ≈ 7 % à f330, ≈ 3 % à f340, disparues à f344 (≈ 28 im, quasi linéaire puis amorti). Le soleil se couche dans le même temps et le texte précédent vient de s'effacer (f306-f316). Une série de 5 notes rapides (11,03-11,55 s) accompagne la fin du geste. Métaphore claire du retour vers l'époque ancienne ; les tours en rectangles plats rendent le geste un peu pauvre.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, microM-002-move-f325.jpg",
+      "illus": {"from": 310, "to": 346, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Ciel de nuages en shader qui change de nature",
+      "name_en": "procedural shader sky",
+      "t": "0:00-0:17.6",
+      "frames": "f0-f528",
+      "fps": 30,
+      "mechanics": "Bruit étiré horizontalement pour des stratus fins orangés au couchant (0-10 s), puis bruit fortement déformé (domain warp) : grosses taches aux bords nets et trous, comme du marbre liquide (11,3-13,5 s), puis dissolution vers un dégradé lisse (16,5-17,6 s). Les nuages dérivent lentement en continu et donnent de la vie à un plan fixe. Mais la phase marbrée ressemble à un artefact et casse le réalisme du reste.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f363.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Eau procédurale à rides et colonne de reflets",
+      "name_en": "procedural water reflections",
+      "t": "0:00-0:29.93",
+      "frames": "f0-f898",
+      "fps": 30,
+      "mechanics": "Moitié basse du cadre (≈ 37-42 %) : rides en perspective (plus fines vers l'horizon), reflet flou du ciel, colonne scintillante sous le soleil puis sous le pavillon et la lune (dorée #C9A774 la nuit), reflets des tours et des lanternes. Mouvement permanent qui évite tout temps mort visuel.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Étalonnage continu du couchant à la nuit",
+      "name_en": "continuous dusk-to-night grade",
+      "t": "0:00-0:24.0",
+      "frames": "f0-f720",
+      "fps": 30,
+      "mechanics": "Pas de changement brusque : pêche-rose #F6C9A6/#E58FB8 (0-10 s) → magenta-violet #D877B0/#6E5AAE (11-19 s) → indigo #24235A (20-24 s). Le basculement le plus net (19,4-20,3 s) précède juste l'allumage du pavillon : l'obscurité prépare la lumière. Vignettage permanent qui ramène l'œil au centre.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique de révélation du pavillon",
+      "name_en": "reveal pan with ease-out arrival",
+      "t": "0:17.77-0:19.30",
+      "frames": "f533-f579",
+      "fps": 30,
+      "mechanics": "Le pavillon entre par le bord droit à f533 et se pose au centre : centre à x ≈ 77 % (f556), ≈ 61 % (f568), ≈ 50 % (f579), immobile ensuite. Pas de 16 % en 12 im puis 11 % en 11 im puis 0 : ease-out net, arrêt doux sans dépassement. La lune suit avec un léger retard (≈ 90 % → 67 %) : parallaxe légère. Préparé dès 14,5 s par la rive boisée qui grandit depuis la droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f530.jpg, microM-007-move-f568.jpg",
+      "illus": {"from": 533, "to": 585, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Pavillon en illustration vectorielle à liseré doré",
+      "name_en": "flat vector landmark illustration",
+      "t": "0:17.7-0:29.93",
+      "frames": "f530-f898",
+      "fps": 30,
+      "mechanics": "Pavillon principal à 5 niveaux (≈ 37 % de la hauteur, ≈ 18 % de la largeur), toits vert sombre #2E4440 aux coins relevés, piliers rouges, deux pavillons latéraux reliés par des galeries, arbres en silhouette, immeuble moderne fenêtré à droite. Dessin propre et symétrique, mais plat (aucun volume, aucune ombre) face au ciel et à l'eau en shader : deux langages graphiques.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Allumage du pavillon du bas vers le haut",
+      "name_en": "bottom-up illumination sweep",
+      "t": "0:20.33-0:21.67",
+      "frames": "f610-f650",
+      "fps": 30,
+      "mechanics": "Luminance moyenne de la zone du pavillon de 82 à 116 (sur 255) en 40 im, rampe quasi linéaire faite de petits paliers : soubassement (f611-f613), galeries latérales (f617-f619), terrasse (f623-f625), 1er étage (f627-f629), 2e (≈ f633), 3e-4e (f637-f643), toit (f647-f651), soit un niveau toutes les ≈ 6 im. Les contours passent au doré #F4DDA8 avec halo, la colonne de reflets sur l'eau s'élargit et se dore.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 606, "to": 652, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montée de notes sur l'allumage, changement de basse",
+      "name_en": "rising note run on the light-up",
+      "t": "0:20.28-0:21.59",
+      "frames": "f608-f648",
+      "fps": 30,
+      "mechanics": "7 attaques rapprochées (20,28 / 20,49 / 20,72 / 20,93 / 21,15 / 21,37 / 21,59 s, écart 0,21-0,23 s ≈ 6,5 im) couvrent exactement l'allumage : première note 2 im avant le premier palier lumineux (f608 contre f610), dernière note 2 im avant le toit (f648 contre f650), cadence notes ≈ cadence des étages (≈ 6 im). Les dernières notes montent vers le ré aigu (≈ 1 174 Hz, mesure spectrale) et le bourdon passe de mi (81 Hz) à sol (97 Hz) vers 20,7-20,9 s : changement d'harmonie au moment où la nuit s'éclaire. C'est le seul moment de la vidéo calé geste par geste.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, mesure des attaques audio"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Musique pentatonique générée en code",
+      "name_en": "code-generated pentatonic score",
+      "t": "0:00.79-0:29.93",
+      "mechanics": "Bande-son synthétisée en Web Audio : notes pincées type cithare (guzheng probable) dans une gamme pentatonique de mi mineur (mi, sol, la, si, ré mesurés), bourdon grave mi-si puis sol-ré, attaques espacées de ≈ 0,9-1,2 s, entrée à 0,79 s (+16 dB) pendant le fondu d'ouverture, dernière note à 29,22 s pendant le fondu de sortie. Caractère contemplatif accordé au sujet, mais en dehors de l'allumage les notes et les gestes vivent chacun leur vie.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Lanternes-lotus qui dérivent",
+      "name_en": "drifting lotus lanterns",
+      "t": "0:22.0-0:29.93",
+      "frames": "f660-f898",
+      "fps": 30,
+      "mechanics": "Lanternes en forme de lotus rose #F06A5A à flamme crème, ≈ 1 à 2,5 % de la largeur selon la profondeur (plus grandes au premier plan), halo orangé et reflet vertical sur l'eau ; elles apparaissent progressivement à partir de 22 s (≈ 15 visibles à 27 s) et dérivent lentement. Détail culturel juste (fête de mi-automne) qui anime la moitié basse pendant le maintien final.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Tableau final en peinture lettrée",
+      "name_en": "scroll-painting end tableau",
+      "t": "0:27.0-0:29.0",
+      "frames": "f810-f870",
+      "fps": 30,
+      "mechanics": "Pavillon centré (axe à ≈ 49 %), toit à ≈ 25 % de la hauteur, rive à ≈ 62 % ; lune pleine ≈ 10 % de la hauteur sur le tiers droit à hauteur du toit ; vers de Li Bai en deux colonnes en haut à gauche (≈ 7-12 % de x), sceau rouge sous l'attribution ; colonne de date au bord droit ; lanternes dispersées dans le tiers bas. Équilibre asymétrique texte / lune autour d'un axe central fort.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Date du jour dans la signature",
+      "name_en": "personal date stamp",
+      "t": "0:26.1-0:29.0",
+      "frames": "f783-f870",
+      "fps": 30,
+      "mechanics": "La colonne « 丙午中秋 · 南昌 · 滕王阁 » (mi-automne de l'année bingwu, Nanchang, pavillon Tengwang) correspond au jour de publication (25 septembre 2026 = fête de mi-automne). Le modèle a daté et localisé la pièce : la vidéo devient une carte de vœux personnelle, ce qui répond au « d'après ce que tu sais de moi » du prompt.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Fondus au noir d'entrée et de sortie",
+      "name_en": "fade in / fade out to black",
+      "t": "0:00.30-0:01.10 ; 0:29.00-0:29.93",
+      "frames": "f9-f33 ; f870-f898",
+      "fps": 30,
+      "mechanics": "Ouverture : noir pur jusqu'à f9, montée en ≈ 24 im (ease-in-out), la musique entre à 0,79-0,92 s au milieu du fondu. Sortie : ≈ 28 im vers le noir pendant la dernière note (29,22 s). Classique et cohérent avec le ton, mais coûte ≈ 2 s sur 30 sans information.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f21.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Brume atmosphérique sur la ville lointaine",
+      "name_en": "atmospheric haze on skyline",
+      "t": "0:00-0:11.5",
+      "frames": "f0-f344",
+      "fps": 30,
+      "mechanics": "Les tours sont des rectangles semi-transparents teintés #D49A9A, plus pâles que la ligne d'arbres #4A2A2E du premier plan, avec des montagnes encore plus pâles derrière : trois plans de profondeur par la seule valeur. Simple et efficace ; les rectangles nus trahissent l'économie de moyens.",
+      "verdict": "adapter"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "Le prompt ne donne aucun thème (« trouve toi-même un thème que je pourrais aimer, d'après ce que tu sais de moi ») : Claude a puisé dans le contexte de l'utilisateur (Nanchang probable) et dans la date (mi-automne 2026) pour un sujet personnel et culturel. Laisser le choix du thème a produit un récit plus fort que bien des prompts directifs."},
+    {"kind": "build", "insight": "« Montre au maximum tes capacités front-end » a orienté la pile vers WebGL2 (ciel et eau en shader), Canvas 2D (illustration, texte, lanternes) et Web Audio (musique générée). Le désir de montrer le shader explique aussi la phase de nuages déformés, plus démonstrative que juste."},
+    {"kind": "inputs", "insight": "Aucun fichier audio fourni : la musique est composée en code, sur la même horloge que l'image. C'est ce qui rend possible l'allumage calé note par note ; il suffisait de demander que chaque geste ait sa note pour étendre cette synchro à toute la vidéo."},
+    {"kind": "structure", "insight": "La durée imposée (30 s) a été découpée en trois actes de ≈ 10 s (moderne, passage, ancien) avec un vers par acte, plus une signature : structure lisible, qu'aucune consigne ne demandait."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur la taille du texte ou le format de diffusion : les caractères à ≈ 5 % de la hauteur, fins et peu contrastés sur le couchant, sont trop petits pour un fil mobile."}
+  ],
+  "steal": [
+    "Fais rimer chaque ligne de texte avec l'image : l'objet nommé traverse le cadre vers le mot, ou la palette applique littéralement ce que dit la phrase.",
+    "Raconte un changement d'époque en un seul plan : efface les éléments modernes dans l'horizon pendant que la lumière bascule, sans aucune coupe.",
+    "Allume un bâtiment du bas vers le haut en ≈ 40 im, un niveau toutes les 6 im, sur une série de notes de même cadence.",
+    "Assombris le ciel juste avant l'allumage : l'obscurité prépare la lumière et rend le moment spectaculaire.",
+    "Signe la fin comme une peinture lettrée : citation en colonne, attribution fine, sceau rouge, date et lieu du jour."
+  ],
+  "flaws": [
+    "Nuages en taches marbrées à bords nets vers 11,5-13,5 s : ressemble à un artefact de shader.",
+    "Texte ≈ 5 % de la hauteur, trait fin, encre prune peu contrastée sur le couchant rose.",
+    "Tours en rectangles nus et pavillon vectoriel plat face à un ciel et une eau en shader : deux langages graphiques.",
+    "Musique et gestes indépendants hors de l'allumage : caractères et entrées non calés sur les notes.",
+    "≈ 2 s de fondus au noir sur 30 s, passages lents de 2 à 3 s sans événement."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo native à 30 fps, mouvements lents et continus ; les moments utiles (caractères, ville qui s'enfonce, panoramique, allumage sur notes) sont déjà mesurés sur les planches et par la luminance image par image. Pas de courbe rapide à étudier à 60 fps."}
+}

@@ -1,0 +1,361 @@
+{
+  "slug": "viktoroddy-98c1d8",
+  "title": "MotionSites one million visitors",
+  "handle": "@viktoroddy",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Exécution premium et cohérente (compteur odomètre + courbe + onde de choc, flicker qui accélère, galerie en 3D) ; perd un point pour l'unique transition flou-fondu au noir répétée 9 fois et l'absence de son.",
+  "summary": "Vidéo d'annonce muette de 54 s : MotionSites (bibliothèque de prompts de sites web) atteint 1 million de visiteurs mensuels. Mur de captures, pitch produit avec terminal MCP, « 8 months ago we launched », flicker de captures, compteur qui roule jusqu'à 1,000,000 avec onde de choc et confettis, galerie en perspective, « To every developer / designer / founder », « thank you. », logo et « 1M and counting. ». Fond noir, dégradé rose-lilas, révélations floues mot à mot.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : vidéo de lancement pour MotionSites AI qui vient d'atteindre 1 million de visiteurs mensuels, 8 mois après son lancement.",
+    "Claude a choisi seul : l'ouverture par le pitch produit (accroche du site, terminal MCP), l'arc passé → présent → remerciements, le compteur avec courbe et confettis, la liste « To every… », le serre-livre du logo et le style keynote sombre à dégradé rose-lilas.",
+    "Le prompt ne hiérarchise rien : le chiffre, qui est la nouvelle, n'arrive qu'à 18 s. Il aurait fallu imposer le chiffre dans les 3 premières secondes, une durée de 30 s, une musique et une grammaire de transitions variée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond noir unique"},
+      {"hex": "#FFFFFF", "role": "titres gras, chiffres actifs"},
+      {"hex": "#F4A6C8", "role": "début du dégradé de marque (rose)"},
+      {"hex": "#9C8CF5", "role": "fin du dégradé de marque (lilas-violet)"},
+      {"hex": "#E8A39A", "role": "« No API key. » saumon clair"},
+      {"hex": "#8C8C8C", "role": "texte secondaire gris"},
+      {"hex": "#3A3438", "role": "zéros de remplissage du compteur"},
+      {"hex": "#C9675F", "role": "contour des pastilles d'étiquette"},
+      {"hex": "#FF4D4D", "role": "point « LIVE » / pastille"},
+      {"hex": "#3FD17A", "role": "ligne de succès du terminal"}
+    ],
+    "type": "Grotesque type Inter : capitales extra-grasses serrées pour l'accroche (≈6 % de la hauteur), gras blanc pour les phrases (≈5 %), fin (Thin) géant en dégradé pour les mots clés (≈11-12 %) ; mono pour le terminal ; logo en arrondi géométrique.",
+    "texture": "Noir pur, halo doux autour des mots en dégradé et du logo, flou gaussien sur toutes les entrées/sorties, flou de mouvement vertical sur les chiffres qui roulent, captures assombries à ≈35 %, particules (confettis carrés, poussière scintillante).",
+    "style": "Keynote sombre, dégradé néon doux",
+    "coherence": "Le dégradé rose → lilas du logo est repris sur chaque mot clé (SUPERPOWERS, Today, new way, developer, thank you, one month, 1M), et le contraste fin/gras structure toutes les phrases. Les vraies captures de templates donnent le contenu. Ce qui casse : une seule transition (flou au noir) qui hache le récit en 10 blocs."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Les 4 coupes détectées sont toutes dans le flicker (17,3-17,9 s) ; les vraies articulations sont 9 fondus flous au noir (2,3 s, 5,6 s, 11,2 s, 15,4 s, 18,2 s, 25,3 s, 34,2 s, 41,3 s, 46,2 s), chacun ≈6 im de sortie + 2-6 im de noir + entrée floue. Blocs de 2,8 à 8,8 s. Maintiens statiques mesurés : 13,5 s (25 %), surtout 6,3-9,5 s (terminal qui tape, mouvement faible), 13,6-15,0 s (logo), 23,9-24,9 s (1,000,000), 43,4-46,0 s (« thank you. »). Densité forte dans le flicker (une image toutes les 2 im) et le compteur (3,7 s de mouvement continu) ; ailleurs un événement toutes les 0,5 à 2 s.",
+    "timeline": [
+      {"t": "0:00-0:02.2", "what": "Mur de captures de templates inclinées qui dérive vers le haut-gauche.", "technique": "mur de captures en dérive"},
+      {"t": "0:02.2-0:02.5", "what": "Poussée avant sur le mur + fondu au noir en 8 im.", "technique": "push-in + fondu au noir"},
+      {"t": "0:02.5-0:05.5", "what": "Pastille « MOTIONSITES AI MCP », « THE DESIGN SUPERPOWERS / YOUR AI AGENTS ARE MISSING. » mot à mot flou → net, sous-titre, 3 boutons pilule, rangée de cartes qui monte du bas.", "technique": "hero de site animé"},
+      {"t": "0:05.5-0:05.7", "what": "Tout se floute et s'éteint en 6 im.", "technique": "fondu flou au noir"},
+      {"t": "0:05.7-0:09.5", "what": "« One command. / No API key. » à gauche ; terminal à droite tape « claude mcp add motionsites … », puis « ✓ Added MotionSites MCP server ».", "technique": "terminal tapé"},
+      {"t": "0:08.3-0:10.0", "what": "Prompt « Design a landing page for my AI startup », recherche « 500+ premium prompts », « Found 3 matches ».", "technique": "démo d'agent en terminal"},
+      {"t": "0:09.7-0:11.1", "what": "3 cartes de sites jaillissent du terminal en éventail 3D.", "technique": "résultat qui sort du terminal"},
+      {"t": "0:11.1-0:11.5", "what": "Fondu flou au noir.", "technique": "fondu flou au noir"},
+      {"t": "0:11.5-0:15.3", "what": "Pastille « 8 MONTHS AGO », « we launched », symbole M qui grossit puis « motionsites » balayé ; tenue 1,4 s.", "technique": "construction du logo"},
+      {"t": "0:15.5-0:16.6", "what": "« Today, » fin en dégradé puis « we hit » gras blanc.", "technique": "contraste fin / gras"},
+      {"t": "0:16.7-0:18.2", "what": "Derrière le texte, captures assombries qui défilent de plus en plus vite (4 → 2 im par image).", "technique": "flicker qui accélère"},
+      {"t": "0:18.2-0:18.3", "what": "Fondu flou au noir.", "technique": "fondu flou au noir"},
+      {"t": "0:18.3-0:22.0", "what": "« MONTHLY VISITORS · LIVE », compteur 0,000,000 → 999,963 en odomètre, courbe exponentielle tracée en bas.", "technique": "compteur odomètre + courbe"},
+      {"t": "0:22.03-0:22.6", "what": "1,000,000 passe au dégradé avec halo, anneau de choc et confettis.", "technique": "onde de choc + confettis"},
+      {"t": "0:22.4-0:25.2", "what": "« visitors in one month. » en dessous, confettis qui retombent, tenue.", "technique": "sous-titre de payoff"},
+      {"t": "0:25.3-0:29.0", "what": "Noir, fenêtre de navigateur MotionSites qui monte du bas, la galerie défile dedans.", "technique": "navigateur qui monte + scroll"},
+      {"t": "0:29.0-0:34.0", "what": "Poussée en perspective vers la droite, la galerie remplit 2/3 du cadre ; « One million people / exploring a new way / to build for the web. » mot à mot à gauche.", "technique": "push 3D sur la galerie"},
+      {"t": "0:34.2-0:41.2", "what": "« To every » + « developer. » / « designer. » / « founder. » (≈2,3 s chacun) avec cartes inclinées flottantes qui changent à chaque mot.", "technique": "mot qui permute en flou"},
+      {"t": "0:41.4-0:46.0", "what": "« Building with us — » puis « thank you. » lettre à lettre, reflet qui balaie le dégradé, poussière scintillante.", "technique": "lettres floues + reflet"},
+      {"t": "0:46.0-0:47.5", "what": "Fondu, symbole M qui grossit, « motionsites » balayé, pluie de confettis.", "technique": "logo en serre-livre"},
+      {"t": "0:48.5-0:54.0", "what": "« 1M and counting. » puis pastille « motionsites.ai ↗ », confettis continus.", "technique": "carton final + URL"},
+      {"t": "0:54.0-0:54.3", "what": "Fondu au noir en 8 im.", "technique": "fondu au noir"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (audio=no dans le dossier, pas de transcription, aucune barre de temps sur les planches) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le flicker qui accélère, le compteur et l'onde de choc sont construits comme une montée vers un drop qui n'existe pas.",
+    "how_built": "Le prompt ne parle ni de musique ni de son et le rendu est muet. Les durées sont libres (blocs de 3 à 9 s, compteur de 112 im), sans grille rythmique ; le flicker 4 → 2 im est une accélération visuelle, pas un calage sur un tempo."
+  },
+  "techniques": [
+    {
+      "cat": "image",
+      "name_fr": "Mur de captures inclinées en dérive",
+      "name_en": "tilted screenshot wall drift",
+      "t": "0:00-0:02.2",
+      "frames": "f0-f66",
+      "fps": 30,
+      "mechanics": "Grille de ≈20 captures de templates réels à coins arrondis, 4-5 colonnes, inclinée d'environ -15°, cartes ≈25 % de la largeur, gouttières ≈1 %. Le mur glisse vers le haut-gauche d'environ 10 % de la hauteur par seconde, vitesse constante (linéaire), sans flou. Pose tout de suite la richesse du catalogue.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f2.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée avant + extinction pour sortir du mur",
+      "name_en": "push-in to black",
+      "t": "0:02.23-0:02.5",
+      "frames": "f67-f75",
+      "fps": 30,
+      "mechanics": "Le mur grossit d'environ 120 % en 8 im pendant que la luminosité descend à 0 (f67 100 %, f70 ≈60 %, f73 ≈20 %, f75 noir), léger flou de mouvement radial. Ease-in.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f67.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation floue mot à mot (flou → net)",
+      "name_en": "word-by-word blur-in",
+      "t": "0:02.7-0:41.0",
+      "frames": "f82-f1240",
+      "fps": 30,
+      "mechanics": "Chaque mot passe d'un flou gaussien fort (≈1 hauteur de x) et d'une opacité ≈20 % à net et opaque en 5-6 im, sans déplacement ; départs décalés de 5-7 im (« One » f886 → net f891, « million » f893 → f898, « people » f899 → f904). Utilisé pour toutes les phrases de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f170.jpg, microM-009-move-f887.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot clé en dégradé rose → lilas",
+      "name_en": "brand gradient keyword",
+      "t": "0:03.0-0:54.0",
+      "frames": "f90-f1620",
+      "fps": 30,
+      "mechanics": "Le dégradé du logo (#F4A6C8 → #9C8CF5, horizontal) est appliqué au mot porteur de chaque phrase : SUPERPOWERS, Today, new way, one month, developer, designer, founder, thank you, 1M. Toujours un seul mot ou groupe par écran, le reste en blanc ou gris.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Contraste fin géant / gras petit",
+      "name_en": "thin-vs-bold weight contrast",
+      "t": "0:15.5-0:46.0",
+      "frames": "f465-f1380",
+      "fps": 30,
+      "mechanics": "Mots courts en grotesque gras blanc ou gris ≈3-5 % de la hauteur (« To every », « we hit », « Building with us — ») opposés à un mot en graisse Thin ≈11-12 % de la hauteur en dégradé (« developer. », « thank you. »), centrés, interlettrage serré.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Hero de site rejoué : pastille, titre capitales, sous-titre, pilules, rangée de cartes",
+      "name_en": "landing-page hero layout",
+      "t": "0:02.5-0:05.5",
+      "frames": "f76-f164",
+      "fps": 30,
+      "mechanics": "Pastille « MOTIONSITES AI MCP » (≈1,2 % de haut, contour rose) à y ≈ 22 % ; 2 lignes capitales extra-grasses ≈6 % chacune à y ≈ 30-42 % ; sous-titre gris ≈1,5 % ; 3 pilules « Claude Code / Cursor / Codex » apparues à ≈8 im d'écart ; rangée de 5 cartes qui monte du bas (f90-f105) et reste coupée par le bord bas (y 82-100 %).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-003-move-f170.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou au noir entre chaque bloc",
+      "name_en": "blur dip to black",
+      "t": "0:05.47-0:05.8",
+      "frames": "f164-f173",
+      "fps": 30,
+      "mechanics": "Toute la scène prend du flou et perd son opacité en 6 im (f164-f170), 2-6 im de noir, puis la scène suivante entre en flou → net. Répété 9 fois (f164, f334, f460, f546, f757, f1022, f1240, f1380…). Aucun lien visuel entre les plans.",
+      "verdict": "cliche",
+      "evidence": "microM-003-move-f170.jpg, microM-010-move-f1028.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal qui tape l'installation puis la requête d'agent",
+      "name_en": "typed MCP terminal demo",
+      "t": "0:05.8-0:10.0",
+      "frames": "f173-f300",
+      "fps": 30,
+      "mechanics": "Fenêtre type macOS (≈45 % de largeur, x 47-97 %, y 25-75 %), gris très sombre. Frappe ≈40 caractères/s de « claude mcp add motionsites --scope user --transport http https://…/functions/v1/mcp », ligne verte « ✓ Added MotionSites MCP server · signed in » à 8,0 s, puis « > Design a landing page for my AI startup » tapé, « ● motionsites · searching 500+ premium prompts… » (point rose qui pulse), « Found 3 matches ». Texte mono ≈1,2 % de la hauteur : lisible en 1080p, trop petit sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Le résultat jaillit du terminal en éventail 3D",
+      "name_en": "results fly out of terminal",
+      "t": "0:09.7-0:10.4",
+      "frames": "f292-f312",
+      "fps": 30,
+      "mechanics": "3 cartes de sites générés naissent petites et floues dans le coin bas-droit du terminal, grossissent et montent en ≈20 im (ease-out) jusqu'à un éventail incliné (≈-8°, 0°, +8°) en perspective, débordant du cadre à droite ; léger flottement ensuite. Illustre « Found 3 matches » au lieu de le dire.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo : symbole qui grossit puis nom balayé avec recentrage",
+      "name_en": "logo pop + wordmark wipe",
+      "t": "0:12.6-0:13.4",
+      "frames": "f378-f402",
+      "fps": 30,
+      "mechanics": "Le symbole M en ruban dégradé passe d'un point à sa taille finale (≈8 % de la hauteur) en 5-6 im (f378-f383), ease-out ; puis « motionsites » blanc arrondi se découvre de gauche à droite par masque en ≈18 im (f384-f402), pendant que tout le groupe glisse vers la gauche d'environ 10 % de la largeur pour rester centré.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f390.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc « 8 months ago we launched » → « Today, we hit » et logo en serre-livre",
+      "name_en": "then-vs-now arc with logo bookend",
+      "t": "0:11.5-0:54.3",
+      "frames": "f345-f1629",
+      "fps": 30,
+      "mechanics": "Le même montage de logo (symbole puis balayage du nom) apparaît au moment du lancement (12,6 s) et à la fin (46,5 s), où « we launched » devient « 1M and counting. ». Ordre du récit : pitch → passé → aujourd'hui → chiffre → communauté → merci → logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Flicker de captures qui accélère derrière le texte",
+      "name_en": "accelerating flash montage",
+      "t": "0:16.7-0:18.2",
+      "frames": "f500-f548",
+      "fps": 30,
+      "mechanics": "« Today, we hit » reste fixe au centre ; derrière, des captures de templates assombries à ≈35 % se remplacent de plus en plus vite : 4 im (f509-f512), 4 im, 3 im, puis 2 im par image de f520 à f545 (15 images/s). Coupe nette entre chaque, pas de fondu. Puis flou au noir en 3 im (f546-f548). Crée une tension avant le chiffre.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f520.jpg, extra-02.jpg",
+      "illus": {"from": 506, "to": 548, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur odomètre à zéros de remplissage",
+      "name_en": "odometer counter with placeholder zeros",
+      "t": "0:18.3-0:22.03",
+      "frames": "f549-f661",
+      "fps": 30,
+      "mechanics": "« 0,000,000 » chiffres gras tabulaires ≈14 % de la hauteur, centrés ; les zéros de tête restent gris #3A3438 et passent en blanc dès qu'ils deviennent significatifs : la largeur ne bouge jamais. 5 im d'arrêt sur 0, puis montée lente (96 à f554, 8 998 à f562), pic de vitesse ≈35 000 par image vers f585-f592, puis longue décélération (994 100 à f649, 999 963 à f660, 1 000 000 à f661). 112 im (3,7 s), ease-in-out à longue queue. Les derniers chiffres roulent verticalement avec flou de mouvement (deux chiffres à moitié visibles).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-006-move-f587.jpg, microM-007-move-f661.jpg",
+      "illus": {"from": 549, "to": 661, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe exponentielle tracée en même temps que le compteur",
+      "name_en": "synced growth line chart",
+      "t": "0:18.75-0:22.0",
+      "frames": "f562-f660",
+      "fps": 30,
+      "mechanics": "Ligne rose-lilas fine qui part du coin bas-gauche (y ≈ 97 %) et se trace vers la droite avec un point blanc lumineux en tête, aire dessous en dégradé violet transparent ; forme exponentielle qui atteint le bord droit à y ≈ 55 % quand le compteur touche 1 000 000. Placée derrière le chiffre, sous la moitié basse du cadre.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f587.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Le chiffre passe du blanc au dégradé de marque au palier",
+      "name_en": "payoff color switch + glow",
+      "t": "0:22.03-0:22.3",
+      "frames": "f661-f669",
+      "fps": 30,
+      "mechanics": "À f661 « 1,000,000 » est blanc ; en ≈7 im il prend le dégradé rose → lilas avec un halo de même couleur et grossit d'environ 3 %. Marque le franchissement du seuil sans changer de plan.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f661.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Anneau de choc + explosion de confettis",
+      "name_en": "shockwave ring + confetti burst",
+      "t": "0:22.1-0:24.5",
+      "frames": "f663-f735",
+      "fps": 30,
+      "mechanics": "Un anneau fin rose-lilas part du centre du chiffre (≈8 % de la hauteur à f663) et s'étend à ≈95 % de la hauteur en 15 im (f678), ease-out, en s'estompant ; ≈100 confettis carrés (rose, lilas, blanc) jaillissent à l'intérieur puis retombent et s'éteignent en ≈2 s. « visitors in one month. » entre en flou à f672.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f661.jpg, overview-04.jpg",
+      "illus": {"from": 659, "to": 680, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Navigateur qui monte du bas puis galerie qui défile",
+      "name_en": "browser rise + gallery scroll",
+      "t": "0:25.3-0:29.0",
+      "frames": "f760-f870",
+      "fps": 30,
+      "mechanics": "Fenêtre de navigateur (≈65 % de largeur) contenant la galerie MotionSites monte du bas en ≈12 im (f760-f772), ease-out ; la galerie défile ensuite vers le haut à vitesse lente, ses vignettes sont animées (vidéos qui jouent).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f769.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée en perspective vers la galerie, texte à gauche",
+      "name_en": "3D push with side text",
+      "t": "0:29.0-0:34.0",
+      "frames": "f870-f1020",
+      "fps": 30,
+      "mechanics": "La fenêtre se déplace vers la droite, grossit à ≈130 % et pivote en perspective (bord gauche qui s'éloigne, rotation Y ≈15°) en ≈1 s, ease-in-out ; elle occupe ensuite les 2/3 droits avec un dégradé noir à gauche pour porter « One million people / exploring a new way / to build for the web. » (3e ligne grise). Le défilement continue.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f887.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui permute en fondu flou (developer → designer → founder)",
+      "name_en": "blur word swap",
+      "t": "0:38.6-0:39.1",
+      "frames": "f1159-f1175",
+      "fps": 30,
+      "mechanics": "« To every » reste fixe ; le mot du dessous s'assombrit et se floute en ≈8 im (f1159-f1166) pendant que le suivant apparaît flou à la même place (f1167) et devient net à f1173 ; ≈3 im de chevauchement. Chaque mot tient ≈2,3 s. Les cartes autour changent en même temps (flou → net).",
+      "verdict": "adapter",
+      "evidence": "microM-011-move-f1159.jpg",
+      "illus": {"from": 1157, "to": 1175, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Cartes de sites inclinées qui flottent autour du mot",
+      "name_en": "floating perspective cards",
+      "t": "0:34.6-0:41.2",
+      "frames": "f1038-f1236",
+      "fps": 30,
+      "mechanics": "3 cartes par mot (haut-gauche, haut-droite, bas-droite), ≈25 % de largeur, inclinées ±10° en perspective, assombries à ≈60 %, qui dérivent et pivotent lentement (≈1-2 % du cadre par seconde). Plusieurs sont coupées par les bords du cadre.",
+      "verdict": "adapter",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« thank you. » lettre à lettre puis reflet qui balaie le dégradé",
+      "name_en": "letter blur-in + gradient sheen",
+      "t": "0:42.5-0:46.0",
+      "frames": "f1275-f1380",
+      "fps": 30,
+      "mechanics": "Graisse Thin ≈12 % de la hauteur ; chaque lettre passe de flou à net, ≈2 im de décalage entre lettres (« than » net et « k y » encore flous à f1290). Ensuite une bande claire parcourt le dégradé de gauche à droite (sur « ank » à 44,0 s, sur « you » à 44,5 s), ≈1 s par passage. Poussière scintillante discrète autour.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Pluie de confettis continue sur le carton final",
+      "name_en": "confetti rain end card",
+      "t": "0:47.0-0:54.3",
+      "frames": "f1410-f1629",
+      "fps": 30,
+      "mechanics": "Confettis carrés et points (rose, lilas, blanc) qui tombent du haut en continu, vitesse lente, densité croissante jusqu'à couvrir le cadre ; ils évitent de faire un temps mort sur 5,5 s de carton fixe.",
+      "verdict": "adapter",
+      "evidence": "overview-09.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pastilles d'étiquette avec point « live »",
+      "name_en": "eyebrow pill labels",
+      "t": "0:02.6-0:25.2",
+      "frames": "f78-f756",
+      "fps": 30,
+      "mechanics": "Pilules à contour rose-rouge fin (#C9675F), texte capitales ≈1 % de la hauteur, point rouge à gauche : « MOTIONSITES AI MCP », « 8 MONTHS AGO », « MONTHLY VISITORS · LIVE ». Toujours centrées au-dessus du titre, apparaissent en premier (fondu 4-5 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f67.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final : logo, « 1M and counting. », URL",
+      "name_en": "end card with milestone + URL",
+      "t": "0:46.4-0:54.3",
+      "frames": "f1392-f1629",
+      "fps": 30,
+      "mechanics": "Symbole M qui grossit en 6 im (f1394-f1400), nom balayé en 12 im (f1416-f1428), « 1M » gras en dégradé + « and counting. » fin à 48,5 s, pastille « motionsites.ai ↗ » à 49,5 s ; tenue 4,5 s sous les confettis ; fondu au noir en 8 im (f1620-f1628).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-09.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Prompt d'une phrase avec deux faits (1 million, 8 mois) : Claude en a tiré un arc complet (passé → présent → chiffre → remerciements) et un serre-livre du logo. Mais il ouvre par 12 s de pitch produit : sans consigne de hiérarchie, la nouvelle arrive au tiers de la vidéo."},
+    {"kind": "inputs", "insight": "Les captures réelles de templates (mur d'ouverture, flicker, galerie, cartes flottantes) et le texte d'accroche du site rendent la vidéo crédible ; elles ont probablement été fournies ou récupérées sur le site, le prompt n'en parle pas."},
+    {"kind": "direction", "insight": "Aucune direction artistique : Claude retombe sur le style keynote sombre (noir, révélations floues, Inter fin/gras) en étendant le dégradé du logo à tous les mots clés ; cohérent mais générique."},
+    {"kind": "build", "insight": "Pas de son demandé, donc rendu muet : le flicker qui accélère et l'onde de choc à 1 000 000 sont construits comme un drop musical qui manque."},
+    {"kind": "qa", "insight": "Rien n'interdit la répétition : le même fondu flou au noir sert 9 fois. Une consigne « varier les transitions, enchaîner les plans par un élément commun » aurait évité le découpage en blocs."}
+  ],
+  "steal": [
+    "Compteur odomètre : réserver tous les chiffres en gris dès le départ (0,000,000) et les allumer en blanc quand ils comptent ; aucun saut de mise en page.",
+    "Coupler le compteur à une courbe qui se trace avec un point lumineux en tête, même durée, même courbe d'accélération.",
+    "Au palier, faire passer le chiffre du blanc au dégradé de marque avec halo, puis lancer un anneau de choc de 15 im.",
+    "Avant une révélation, faire défiler des captures derrière un texte fixe en accélérant de 4 à 2 im par image, puis couper au noir.",
+    "Encadrer le récit par le même montage de logo au début (« we launched ») et à la fin (« 1M and counting. »)."
+  ],
+  "flaws": [
+    "Une seule transition, flou + fondu au noir, répétée 9 fois : le film se découpe en blocs sans enchaînement.",
+    "Vidéo muette pour une annonce : le compteur et les confettis appellent un son.",
+    "Le chiffre, qui est la nouvelle, n'arrive qu'à 18 s, après 12 s de pitch produit.",
+    "Révélation floue mot à mot sur toutes les phrases : tic de vidéo IA façon keynote.",
+    "Cartes flottantes et rangée de captures coupées par les bords du cadre, assombries et peu lisibles."
+  ],
+  "deep_study": {"worth": false, "why": "30 fps natif et pas de musique. Le compteur (f549-f690) et le flicker (f500-f548) sont déjà mesurés image par image sur les planches ; le reste repose sur un seul procédé (flou mot à mot)."}
+}

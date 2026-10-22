@@ -1,0 +1,384 @@
+{
+  "slug": "marklaunches-3b9492",
+  "title": "Step race app promo",
+  "handle": "@marklaunches",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Récit émotionnel clair en six actes, son conçu avec l'image (cœur, pas, impact, sommet) et système néon cohérent ; illustrations plates génériques, légendes petites et une faute (« 1 steps »).",
+  "summary": "Pub verticale de 44 s pour StepRacers, app de pas entre amis. Récit en six actes : 5 h 47, un point bat comme un cœur ; un compteur de pas monte, une empreinte par note ; course chronométrée gagnée au finish (« 1ST », flash, confettis) ; « les meilleures courses ne sont contre personne » ; ascension d'équipe de l'Everest jusqu'à l'aube ; slogan « Every step counts ». Son et image conçus ensemble.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : « une vidéo incroyable pour mon app », « rends-la émotionnelle ». Aucune indication de format, de durée, de style, de musique ni de contenu ; l'app est sous-entendue (code ou contexte du projet).",
+    "Claude a tout inventé : le récit en 6 actes (aube solitaire, course, victoire, retournement, ascension d'équipe, slogan), le néon lime sur noir, le format 4:5, les données fictives et une bande-son à sections calée sur les moments clés (probablement générée en code).",
+    "« Émotionnel » a été traduit en arc narratif et en son (battement de cœur, montée, impact) : bon levier. À préciser : durée cible, rythme plus dense, typographie plus grande, vérification des textes (« 1 steps »)."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#08090C", "role": "fond noir"},
+      {"hex": "#C6F432", "role": "lime néon : toi, la réussite, le CTA"},
+      {"hex": "#FFFFFF", "role": "chiffres et titres"},
+      {"hex": "#8A8F98", "role": "légendes secondaires, libellés"},
+      {"hex": "#E5484D", "role": "rouge : rival, chrono sous 30 s"},
+      {"hex": "#F43F5E", "role": "tuile Maya (rivale en tête)"},
+      {"hex": "#8B5CF6", "role": "tuile Jordan"},
+      {"hex": "#38BDF8", "role": "tuile Priya"},
+      {"hex": "#F59E0B", "role": "tuile Sam"},
+      {"hex": "#1E2A3A", "role": "montagnes en aplats (couche sombre)"},
+      {"hex": "#3B2A5A", "role": "ciel violet de fin de nuit"},
+      {"hex": "#C77D8E", "role": "ciel rose de l'aube"},
+      {"hex": "#F6E7B0", "role": "soleil levant"}
+    ],
+    "type": "Display extra-large très grasse (Unbounded Black probable) pour chiffres et titres : compteur ≈ 10 % H, « 1ST » 13 % H, slogan 6-8 % H ; légendes grotesque regular ≈ 2,5 % H ; petites capitales lime très espacées.",
+    "texture": "Lueur néon lime (halo externe ≈ 10-15 px) sur chiffres, titres, CTA et tuile « You » ; flash plein cadre ; confettis ; illustration vectorielle plate (montagnes en aplats, étoiles fixes) ; fond final strié de diagonales lime discrètes et bordé d'un damier ; aucun grain.",
+    "style": "Néon lime sur noir, sportif",
+    "coherence": "Le lime est réservé à « toi » et à la réussite (point du cœur, empreintes, tuile You, tracé de l'équipe, 1ST, 100,000 final, SUMMIT, COUNTS., CTA) ; le rouge au rival et à l'urgence ; la même police extra-large porte tous les chiffres. Seule la montagne en aplats bleus et roses sort du système néon, mais elle porte l'aube et donc le sens."
+  },
+  "rhythm": {
+    "bpm": 122,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Musique en six sections, chacune avec son tempo : battement de cœur 57 BPM (0-5,2 s), arpège en croches à 71 BPM (5,2-10,3 s), course à 122,5 BPM avec charleston en doubles croches (10,4-20,2 s), texte sur notes de piano libres (22,9-26 s), ascension à 120 BPM avec grosse caisse dès 30,4 s (26,4-35,4 s), final à 75 BPM (35,8-44 s). L'estimation globale (122,4 BPM) ne vaut que pour la course. Une seule coupe franche (20,17 s, sur l'impact) ; les autres changements d'acte passent par le noir. Les gestes clés tombent sur la musique : 5/5 battements, 11/11 empreintes, départ de la course, dépassement, coupe « 1ST », lignes de texte, apparition de la montagne, sommet. Les mouvements continus (compteurs, chrono, tuiles, montée de l'équipe) sont libres. Densité variable et voulue : 1 événement par seconde au début, tout bouge à chaque image pendant la course, puis respiration. Temps morts limités : 3,7 s de texte sur noir (dont ≈ 1,3 s figées) et 1,4 s de tenue au sommet.",
+    "timeline": [
+      {"t": "0:00-0:00.57", "what": "Noir, puis un point lime apparaît", "technique": "ouverture au noir"},
+      {"t": "0:00.57-0:04.77", "what": "Le point bat comme un cœur (lub-dub toutes les 1,05 s), « 5:47 AM » puis « The whole world is still asleep. »", "technique": "pulsation synchronisée"},
+      {"t": "0:04.77-0:05.4", "what": "Fondu au noir lancé par le dernier battement", "technique": "fondu au noir"},
+      {"t": "0:05.4-0:10.03", "what": "Compteur 4 803 → 9 847, une empreinte par note, « No one sees these steps. » → « Except the people racing you. »", "technique": "compteur ease-in-out + pas sur les notes"},
+      {"t": "0:10.10-0:10.37", "what": "Fondu au noir de 8 im, coupe sur la course à l'entrée de la batterie", "technique": "drop"},
+      {"t": "0:10.37-0:18.97", "what": "Course de 5 tuiles, chrono ×25,7, « Maya is N steps ahead »", "technique": "classement animé"},
+      {"t": "0:18.97-0:20.13", "what": "Chrono rouge sous 30 s, souffle montant, dépassement à 20,0 s", "technique": "montée de tension"},
+      {"t": "0:20.17-0:21.0", "what": "Coupe sur l'impact : flash lime, confettis, « 1ST » qui claque", "technique": "climax"},
+      {"t": "0:21.0-0:22.57", "what": "« WON BY 38 STEPS », la scène s'assombrit puis coupe au noir", "technique": "résolution"},
+      {"t": "0:22.9-0:26.33", "what": "« But the best races » / « aren't against anyone. » sur deux notes de piano", "technique": "retournement en texte seul"},
+      {"t": "0:26.37-0:30.4", "what": "Montagne sur le 1er temps à 120 BPM, compteur d'équipe, « Five friends. One mountain. »", "technique": "nouveau monde"},
+      {"t": "0:30.4-0:35.33", "what": "Grosse caisse à chaque temps, l'équipe grimpe, ciel nuit → aube, paliers de camp", "technique": "construction"},
+      {"t": "0:35.33-0:36.3", "what": "100 000 vire au lime sur le crash, drapeau, équipe alignée, « SUMMIT »", "technique": "climax doux"},
+      {"t": "0:36.3-0:38.17", "what": "« TOGETHER », tenue 1,4 s, fondu au noir de 17 im", "technique": "respiration"},
+      {"t": "0:38.4-0:42.0", "what": "Bonhomme qui marche, STEPRACERS, EVERY STEP / COUNTS., accroche, CTA, URL", "technique": "plan final"},
+      {"t": "0:42.0-0:43.93", "what": "Tenue puis fondu au noir de 22 im", "technique": "fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille mesurée par section (tempo_segment), car la musique change de tempo à chaque acte. Battement : le point pulse en f17, f49, f80, f112, f143 pour des coups sourds à 0,615 / 1,672 / 2,717 / 3,773 / 4,818 s (5/5, l'image précède le son d'≈ 1-1,5 im ; hasard à ±2 im ≈ 16 %), et les « dub » 4/4. Empreintes : 11/11 à ±1 im d'une note de l'arpège (hasard ≈ 24 %). Course : apparition f311 / batterie à 10,414 s (point vert sur f312 dans microM-006) ; bulle « You're ahead » f600 / pic du souffle à 20,004 s ; coupe f605 / impact ≈ 20,2 s. Texte : 2/2 lignes sur une note de piano (22,965 et 23,963 s, ±2 im). Montagne f791 / 1er temps à 26,419 s ; 100 000 vire au lime f1062 / dernier coup de grosse caisse à 35,422 s ; « SUMMIT » plein vers 35,8 s / temps à 35,814 s. Plan final : 2/5 éléments sur une note (« EVERY STEP » 39,0 s, accroche 40,5 s), les autres à 4-8 im. Total des gestes clés hors séries : 12/15 à ±2-3 im. L'indice automatique (« aucune synchro ») échoue : il applique une seule grille de 122,4 BPM à des sections de tempos différents et à des compteurs qui changent à chaque image.",
+    "synced": ["impacts", "apparitions", "pulsations", "flashs", "coupes", "texte", "couleur", "drop"],
+    "style_match": "Partition synthétique en sections (cœur, arpège, batterie de course, piano, montée, nappe) qui suit l'arc émotionnel ; la tension sonore épouse chaque acte, sans jamais contredire l'image.",
+    "how_built": "Probable bande-son synthétisée en code sur la timeline de l'image : un tempo par acte (cœur 57 BPM, arpège 71 BPM, course 122,5 BPM, ascension 120 BPM, final 75 BPM) et des sons posés sur les événements visuels (battements, empreintes, entrée de la batterie au départ, souffle qui culmine au dépassement, impact sur la coupe « 1ST », crash sur 100 000, notes sur les lignes de texte). Le prompt ne dit rien du son : c'est « make it emotional » qui a poussé à scénariser la musique avec l'image."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Point lumineux qui bat avec le cœur",
+      "name_en": "heartbeat-synced pulse",
+      "t": "0:00.57-0:04.83",
+      "frames": "f17-f145",
+      "fps": 30,
+      "mechanics": "Point lime (≈ 1 % de la largeur) au centre-haut, halo radial doux (≈ 12 % de la largeur). À chaque « lub » du battement sonore (toutes les 1,05 s, 57 BPM) le point grossit d'≈ 50 % et le halo d'≈ 30 % en 1 image, retombée en 4 im ; second coup plus faible 5 im plus tard (« dub », 0,16 s), retombée en ≈ 10 im. 5 lubs sur 5 et 4 dubs sur 4 calés à ±1,5 im (l'image précède le son d'≈ 1 im). Le dernier battement (f143) lance le fondu au noir.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg, rhythm.jpg",
+      "illus": {"from": 45, "to": 60, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche horodatée dans le silence",
+      "name_en": "timestamp hook",
+      "t": "0:01.0-0:04.8",
+      "frames": "f30-f145",
+      "fps": 30,
+      "mechanics": "« 5:47 AM » en grotesque fine (Light probable) ≈ 6 % H, centrée sous le point, passe du gris au blanc en 30 im (1,0-2,0 s) ; « The whole world is still asleep. » ≈ 1,8 % H gris apparaît en 15 im à 2,5 s. Une heure précise et une phrase suffisent à poser le personnage (un lève-tôt seul) sans montrer personne.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de pas en ease-in-out",
+      "name_en": "eased step counter",
+      "t": "0:05.43-0:10.03",
+      "frames": "f163-f301",
+      "fps": 30,
+      "mechanics": "4 803 → 9 847 en 138 im : l'incrément par image monte de +1 à ≈ +100 (pic vers f230, 7,67 s) puis redescend à +1 (f297-f301), courbe symétrique (sine/quad.inOut probable). Chiffres blancs extra-larges ≈ 10 % H et ≈ 82 % de la largeur, halo lime qui s'intensifie pendant les 10 premières images ; « STEPS TODAY » lime en petites capitales espacées dessous. Le compteur se pose à 9 847, puis la scène s'éteint en 8 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f175.jpg à microM-006-move-f296.jpg",
+      "illus": {"from": 163, "to": 241, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une empreinte par note d'arpège",
+      "name_en": "footsteps on arpeggio notes",
+      "t": "0:05.63-0:09.85",
+      "frames": "f169-f296",
+      "fps": 30,
+      "mechanics": "Empreintes lime alternées gauche/droite qui montent depuis le bas du cadre ; chacune apparaît en 1-2 im et les plus anciennes s'éteignent (traînée d'≈ 6 pas). 11 empreintes sur 11 mesurées naissent sur une note de l'arpège en croches (toutes les 0,42 s = 12,6 im, 71 BPM) : f169, f181, f194, f207, f219, f232, f245, f257, f270, f282, f295, à ±1 im (hasard ≈ 24 %). La marche devient la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f175.jpg, microM-002-move-f199.jpg, microM-004-move-f245.jpg, microM-005-move-f273.jpg, microM-006-move-f296.jpg + mesure de mouvement sur la zone des empreintes"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Légendes en deux temps : constat puis retournement",
+      "name_en": "setup / twist captions",
+      "t": "0:06.0-0:32.5",
+      "frames": "f180-f975",
+      "fps": 30,
+      "mechanics": "Une seule ligne de texte dans le bas du cadre (≈ 74-90 % de la hauteur, ≈ 2,5 % H, blanc) : « No one sees these steps. » (6,0-8,0 s) → « Except the people racing you. » (8,2 s) ; « Five friends. One mountain. » → « Nobody got there alone. » (32,0 s). Fondus enchaînés d'≈ 10 im ; la seconde phrase renverse ou précise la première, comme une chute.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Course verticale de 5 tuiles",
+      "name_en": "vertical race track",
+      "t": "0:10.37-0:20.13",
+      "frames": "f311-f604",
+      "fps": 30,
+      "mechanics": "Carte sombre (#111318) à grille fine, bande damier d'arrivée en haut (≈ 2,5 % H). 5 tuiles arrondies type icône d'app avec emoji (Maya rouge avec couronne de tête, Jordan violet, Priya cyan ⚡, Sam orange, « You » sombre à bord lime lumineux et 🔥), nom et pas en direct sous chacune ; la hauteur de chaque tuile suit son nombre de pas, montée continue (« You » passe de 59 % à 34 % de la hauteur, ≈ 0,09 % par image). Une traînée lime verticale suit « You ». Classement animé (bar chart race) sans barres.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, overview-04.jpg, microM-007-move-f569.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chrono accéléré ×25,7 qui vire au rouge",
+      "name_en": "accelerated countdown",
+      "t": "0:10.37-0:20.17",
+      "frames": "f311-f605",
+      "fps": 30,
+      "mechanics": "« 04:12.00 » → « 00:00.00 » en 294 im : 0,857 s de course par image, centièmes qui défilent en bouillie de chiffres. Police extra-large ≈ 6,3 % H et ≈ 70 % de la largeur, « LEFT IN THE RACE » en petites capitales grises. Passe au rouge #E5484D quand il reste moins de 30 s (f570), puis « FINAL » remplace la légende à la coupe (f605). 4 minutes de course comprimées en 10 s d'urgence.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f569.jpg, microM-008-cut-f605.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bulle d'écart avec la rivale",
+      "name_en": "live gap pill",
+      "t": "0:12.5-0:20.17",
+      "frames": "f375-f605",
+      "fps": 30,
+      "mechanics": "Pastille en bas (fond rouge très sombre, bord et texte #E5484D) « Maya is 213 steps ahead », recalculée à chaque image (213 → 145 → 77 → 5), qui bascule en lime « You're ahead by 1 steps » à f600 (20,0 s), puis « by 38 steps » au final. Tout le suspense tient dans un nombre. Défaut : pluriel cassé « 1 steps ».",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-04.jpg, microM-008-cut-f605.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Course : batterie au départ, souffle jusqu'au dépassement, impact sur la coupe",
+      "name_en": "race cue sheet: drums in, riser, impact",
+      "t": "0:10.37-0:20.23",
+      "frames": "f311-f607",
+      "fps": 30,
+      "mechanics": "La course apparaît en f311 (10,37 s) sur l'entrée de la batterie (charleston en doubles croches à 122,5 BPM dès 10,414 s). Un souffle montant (bruit large bande) culmine à 20,004 s, exactement quand la bulle passe au lime (f600, dépassement) ; l'impact grave (≈ 20,2 s) tombe sur la coupe « 1ST » (f605, son ≈ 1-2 im après l'image). Les mouvements internes (tuiles, chrono) restent continus, sans calage sur les temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f296.jpg (point vert f312), microM-008-cut-f605.jpg, mesure audio"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash lime plein cadre sur l'impact",
+      "name_en": "full-frame color flash",
+      "t": "0:20.17-0:20.67",
+      "frames": "f605-f620",
+      "fps": 30,
+      "mechanics": "Coupe franche sur une image entièrement teintée lime (#C8F000, ≈ 50 % sur la scène), qui s'éteint en ≈ 15 im (ease-out), d'abord dans le haut du cadre ; le chrono passe à « 00:00.00 » rouge + « FINAL ». Le flash marque l'arrivée comme un photo-finish.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f605.jpg",
+      "illus": {"from": 603, "to": 621, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de confettis depuis la tuile gagnante",
+      "name_en": "confetti burst",
+      "t": "0:20.20-0:22.5",
+      "frames": "f606-f675",
+      "fps": 30,
+      "mechanics": "≈ 100-150 petits rectangles (lime, jaune, blanc, probable) jaillissent de la tuile « You » : rayon ≈ 40 % de la largeur en 6 im (ease-out fort), puis chute lente avec scintillement sur ≈ 2 s jusqu'au bas du cadre.",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f605.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "« 1ST » qui claque",
+      "name_en": "slam-in title",
+      "t": "0:20.33-0:21.0",
+      "frames": "f610-f630",
+      "fps": 30,
+      "mechanics": "« 1ST » apparaît en fantôme translucide à ≈ 130 % de sa taille (f610) et se pose à 100 % en ≈ 5 im (f614), ease-out sans rebond ; lime plein à halo épais, ≈ 13 % H et ≈ 57 % de la largeur, posé sur la course assombrie. « WON BY 38 STEPS » en capitales blanches espacées ≈ 2,5 % H arrive vers 21,0 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f605.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le noir comme ponctuation entre actes",
+      "name_en": "fade/cut to black between acts",
+      "t": "0:04.77-0:43.93",
+      "frames": "f143-f1318",
+      "fps": 30,
+      "mechanics": "Cinq passages par le noir : fondu de 12 im sur le dernier battement (4,77 s) ; fondu de 8 im puis coupe sur la course (10,10-10,37 s) ; écran « 1ST » qui s'assombrit puis coupe au noir sec (f677, 22,57 s) et 10 im de noir avant le texte ; fondu linéaire de 17 im après le sommet (37,6 s) ; fondu final de 22 im (43,2 s). Aucune transition graphique : le noir sépare les actes comme des respirations.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f296.jpg, microM-009-move-f676.jpg, microM-011-move-f1130.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte sur noir ligne à ligne, avec bascule d'emphase",
+      "name_en": "line-by-line text with weight switch",
+      "t": "0:22.90-0:26.33",
+      "frames": "f687-f790",
+      "fps": 30,
+      "mechanics": "« But the best races » (≈ 2,8 % H, blanc, centré à mi-hauteur) apparaît en fondu à 22,9 s, 2 im avant une note de piano (22,965 s) ; « aren't against anyone. » arrive en gris à 23,97 s sur la note suivante (23,963 s), puis passe en gras blanc vers 24,4 s : l'emphase change sans que rien ne bouge. Tenue ≈ 1,3 s puis fondu de 15 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f676.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Montagne en aplats superposés",
+      "name_en": "flat layered mountain illustration",
+      "t": "0:26.37-0:38.17",
+      "frames": "f791-f1145",
+      "fps": 30,
+      "mechanics": "Illustration vectorielle plate : 4 couches de silhouettes (#1E2A3A → #4A5A6E), sommet enneigé (#C9D3DD), étoiles fixes ; elle apparaît en f791 (26,37 s) sur le premier temps de la section à 120 BPM (26,419 s). Cadre fixe pendant 12 s : ni caméra ni parallaxe, tout le mouvement vient du tracé, de l'équipe et du ciel.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé pointillé rempli en lime derrière l'équipe",
+      "name_en": "path fill behind climbers",
+      "t": "0:28.3-0:35.6",
+      "frames": "f849-f1068",
+      "fps": 30,
+      "mechanics": "Chemin en pointillés blancs avec points d'étape, en lacets du bas gauche au sommet ; 5 avatars ronds (Y lime en tête, puis les autres couleurs) avancent en file serrée et un trait lime plein se dessine derrière eux le long du chemin (dessin de tracé, stroke-dashoffset probable), mouvement continu sans à-coups.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f932.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Ciel qui passe de la nuit à l'aube",
+      "name_en": "night-to-dawn sky gradient",
+      "t": "0:27.0-0:36.0",
+      "frames": "f810-f1080",
+      "fps": 30,
+      "mechanics": "Dégradé de ciel animé : bleu nuit (#0B1026) à 27 s, violet (#3B2A5A) vers 31 s, rose aube (#C77D8E) dès 33 s ; un soleil pâle (#F6E7B0) se lève à droite à partir d'≈ 33 s. L'heure du jour mesure l'effort : la nuit de 5 h 47 du premier acte devient le lever du jour au sommet.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur d'équipe 0 → 100 000 avec paliers",
+      "name_en": "team counter with milestones",
+      "t": "0:27.0-0:35.33",
+      "frames": "f810-f1060",
+      "fps": 30,
+      "mechanics": "Compteur extra-large ≈ 6 % H : 0 à 27,0 s → 100 000 à f1060, ≈ 1 000 pas par image au plus fort, atterrissage en ease-out appuyé (99 964 → 99 980 → 99 991 → 99 997 → 99 999 → 100 000 de f1050 à f1060). Pastille d'étape qui change aux seuils : BASE CAMP → KHUMBU ICEFALL (≈ 25 000, probable) → HIGH CAMP (50 000 pile, f938) → SUMMIT RIDGE → SUMMIT. En-tête « EVEREST EXPEDITION · TEAM OF 5 » lime.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f932.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grosse caisse qui monte puis crash sur 100 000",
+      "name_en": "kick build into summit hit",
+      "t": "0:30.42-0:35.87",
+      "frames": "f913-f1076",
+      "fps": 30,
+      "mechanics": "Grosse caisse à chaque temps (120 BPM) à partir de 30,42 s, souffle montant jusqu'à 35,47 s. Le compteur se pose à f1060 et vire du blanc au lime avec halo à f1062 (35,40 s), sur le dernier coup de grosse caisse (35,422 s) ; « SUMMIT » atteint sa pleine lueur vers 35,8 s, sur le premier temps de la section finale (35,814 s). La musique passe ensuite à une nappe calme à 75 BPM.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, mesure audio",
+      "illus": {"from": 1054, "to": 1080, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Sommet : drapeau, équipe alignée, « SUMMIT TOGETHER »",
+      "name_en": "team summit payoff",
+      "t": "0:35.40-0:37.6",
+      "frames": "f1062-f1128",
+      "fps": 30,
+      "mechanics": "Halo chaud qui s'épanouit sur la cime (f1062-f1066), drapeau lime planté, les 5 avatars s'écartent le long de l'arête en ≈ 8 im comme pour une photo d'équipe ; « SUMMIT » lime ≈ 7 % H et ≈ 80 % de la largeur, fondu + halo en 8 im (f1068-f1076) dans le bas du cadre, puis « TOGETHER » gris espacé (36,2 s). Tenue 1,4 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Logo bonhomme qui marche",
+      "name_en": "walking stick-figure logo",
+      "t": "0:38.4-0:43.9",
+      "frames": "f1152-f1318",
+      "fps": 30,
+      "mechanics": "Le logo est un bonhomme bâton en néon lime (≈ 9 % H) qui marche sur place : jambes croisées toutes les 15,5-16 im (0,52 s ≈ 115 pas/min, cadence de marche réelle), indépendamment de la musique finale à 75 BPM. Il apparaît seul en fondu (38,4-38,9 s) avant tout texte : la marque est un pas.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Plan final : slogan bicolore + CTA lime",
+      "name_en": "end card with two-tone tagline",
+      "t": "0:38.9-0:43.93",
+      "frames": "f1167-f1318",
+      "fps": 30,
+      "mechanics": "« STEPRACERS » gris espacé (38,9 s) ; « EVERY STEP » blanc ≈ 6,3 % H et 96 % de la largeur, fondu de 15 im à 39,0 s (sur une note, 39,021 s) ; « COUNTS. » lime à halo ≈ 7,6 % H, fondu ease-out fort à 39,5 s (≈ 4 im avant la note suivante) ; accroche grise à 40,5 s (note à 40,426 s) ; pastille CTA lime « FREE ON iOS & ANDROID » à 41,2 s (fondu de 12 im) ; URL à 42,0 s. Fond noir strié de diagonales lime discrètes, bordures en damier haut et bas (rappel de la ligne d'arrivée) ; fondu au noir de 22 im.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur : lime pour toi et la réussite, rouge pour la rivale et l'urgence",
+      "name_en": "semantic color coding",
+      "t": "0:00.5-0:43.2",
+      "frames": "f15-f1296",
+      "fps": 30,
+      "mechanics": "Halo externe lime (≈ 10-15 px, ≈ 60 %) sur le point du cœur, les empreintes, la tuile « You », le tracé de l'équipe, « 1ST », « 100,000 » final, « SUMMIT », « COUNTS. » et le CTA ; le rouge #E5484D est réservé à la bulle de la rivale et au chrono sous 30 s. Le passage blanc → lime de « 100,000 » au sommet dit « réussi » sans mot.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Display extra-large néon pour tous les chiffres",
+      "name_en": "extended display numerals",
+      "t": "0:05.4-0:43.2",
+      "frames": "f162-f1296",
+      "fps": 30,
+      "mechanics": "Chiffres et titres en display extra-large très grasse (Unbounded Black probable) : compteur ≈ 10 % H, chrono ≈ 6,3 % H, « 1ST » ≈ 13 % H, « SUMMIT » ≈ 7 % H ; légendes en grotesque regular ≈ 2,5 % H ; « 5:47 AM » en version fine ; libellés en petites capitales lime très espacées (≈ 0,3 em) : STEPS TODAY, EVEREST EXPEDITION · TEAM OF 5, STEPRACERS.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-04.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Alternance calme / tension en six actes",
+      "name_en": "tension-release pacing",
+      "t": "0:00-0:43.93",
+      "frames": "f0-f1318",
+      "fps": 30,
+      "mechanics": "Calme (0-5,2 s, 1 événement par seconde) → montée (5,4-10 s, une empreinte toutes les 0,42 s, compteur qui accélère) → tension (10,4-20,2 s, tout bouge à chaque image) → explosion (20,17 s) → respiration (22,6-26,3 s, deux lignes de texte) → construction (26,4-35,4 s, grosse caisse dès 30,4 s) → explosion douce (35,4 s) → résolution (38,4-43,9 s). La densité visuelle suit l'énergie de la musique (corrélation intensité/mouvement r = 0,41).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Format 4:5, une idée par écran, empilement vertical",
+      "name_en": "4:5 single-idea stacking",
+      "t": "0:00-0:43.93",
+      "frames": "f0-f1318",
+      "fps": 30,
+      "mechanics": "1080 × 1350 : chiffre ou titre dans le tiers haut (≈ 10-20 % du haut), visuel au centre, une ligne de texte dans le quart bas ; une seule information principale par écran. Marges latérales très serrées au plan final (« EVERY STEP » à 96 % de la largeur, ≈ 2 % de marge de chaque côté).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-05.jpg, overview-07.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« make it emotional » est la seule consigne de style : Claude l'a traduite en arc narratif (solitude → rivalité → victoire → retournement → équipe → slogan), en horaire intime (5:47 AM) et en son (battement de cœur, montée, impact). Un adjectif émotionnel produit une structure, pas seulement une ambiance."},
+    {"kind": "inputs", "insight": "« my app » sans description : le contenu (course entre amis, expédition d'équipe, iOS et Android, stepracers.com) vient forcément du contexte du projet ; les données affichées (Maya, 38 pas d'avance, 100 000 pas) sont inventées pour servir le récit."},
+    {"kind": "structure", "insight": "Aucune durée imposée : 44 s en six actes de 4 à 10 s, chacun porté par un enjeu chiffré (pas du jour, chrono, écart, total d'équipe). Le chiffre sert de fil dramatique d'un bout à l'autre."},
+    {"kind": "build", "insight": "Format 1080 × 1350 (4:5) à 30 im/s choisi sans consigne, adapté aux fils sociaux ; tout est dessiné en code (tuiles emoji, montagne vectorielle, confettis), aucune capture de l'app réelle."},
+    {"kind": "other", "insight": "Bande-son très probablement générée en code avec la timeline : un tempo par acte et des sons posés sur les événements (battements, empreintes, dépassement, impact, sommet). Rien ne la demandait ; la synchro vient de ce que musique et image sortent de la même partition."},
+    {"kind": "qa", "insight": "Pas de relecture : pluriel cassé « You're ahead by 1 steps », légendes à ≈ 2,5 % de la hauteur, « EVERY STEP » à 2 % des bords. Une consigne de vérification des textes et des marges aurait suffi."}
+  ],
+  "steal": [
+    "Faire battre un point lumineux sur un battement de cœur sonore (lub + dub à 0,16 s) pour ouvrir une vidéo émotionnelle sans rien montrer d'autre.",
+    "Poser chaque élément répétitif (pas, pierre, point) sur une note d'arpège : 11 empreintes sur 11 notes transforment la marche en musique.",
+    "Climax : souffle montant qui culmine sur le basculement de l'enjeu, coupe franche sur l'impact, flash couleur plein cadre de 0,5 s, confettis, titre qui claque à 130 % → 100 %.",
+    "Compteur qui atterrit en ease-out appuyé (…997, 999, 100 000) puis change de couleur sur le coup de grosse caisse.",
+    "Réserver une couleur au héros et à la réussite (lime), une autre à la rivale et à l'urgence (rouge) : le récit se lit sans texte."
+  ],
+  "flaws": [
+    "Pluriel cassé « You're ahead by 1 steps » au moment clé du dépassement.",
+    "Légendes à ≈ 2,5 % de la hauteur et slogan à 2 % des bords : lecture difficile sur téléphone.",
+    "Montagne en aplats vectoriels génériques, cadre fixe sans caméra ni parallaxe pendant 12 s.",
+    "Cinq passages par le noir pour changer d'acte : efficace mais répétitif, aucune transition graphique motivée.",
+    "Confettis et « 1ST » néon : célébration attendue, déjà vue dans beaucoup de pubs d'app."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non pour une étude image par image : 30 im/s natifs et courbes simples (fondus, compteurs, montée continue). La leçon est le calage son ↔ image (cœur, empreintes, impact, sommet), déjà mesuré ici ; à revoir avec le son, en entier, comme modèle de récit émotionnel en 44 s."
+  }
+}

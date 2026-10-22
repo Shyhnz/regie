@@ -1,0 +1,339 @@
+{
+  "slug": "fractadev-149adc",
+  "title": "Voice agent SaaS launch",
+  "handle": "@FractaDev",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Propre, lisible, vrais composants du produit et bon arc problème → solution, mais grammaire SaaS générique : même fondu flou à chaque scène, mouvements timides, maintiens de 2 s, musique posée.",
+  "summary": "Lancement d'Apointa, agent vocal IA pour salons et artisans, en 47 s sur fond blanc cassé. Un appel manqué ouvre le récit, puis l'agent répond, réserve, remplit l'agenda, qualifie un prospect, mesure les appels, laisse le client réserver seul (lien, QR) avant le logo. Récit clair, mots clés colorés, interface réelle ; mais transitions identiques, peu de mouvement pour un « go all out », musique sans lien avec l'image.",
+  "prompt_vs_result": [
+    "Le prompt imposait seulement : analyser le projet front-end, utiliser les vrais composants du produit, faire une vidéo dynamique qui vend le SaaS, ton « lancement haut de gamme », « Go all out ». Ni durée, ni structure, ni style.",
+    "Claude a tout décidé : l'arc problème → solution → 5 fonctions → slogan → logo, les personas (Luna Hair Studio, Maya, un dépanneur HVAC), les accroches, les mots clés colorés, le fondu flou, le fond blanc cassé et les écrans en fenêtre de navigateur.",
+    "« Vrais composants » a bien marché : interface authentique et cohérente. « Go all out » est resté vague : Claude l'a lu comme sobriété premium. Il fallait préciser rythme, transitions variées, caméra, et caler sur une musique donnée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F7F7F4", "role": "fond blanc cassé chaud, léger halo clair en haut à gauche"},
+      {"hex": "#FFFFFF", "role": "cartes, bulles, fenêtres"},
+      {"hex": "#0B0B0C", "role": "titres, bulle de l'agent, pilule d'appel à l'action"},
+      {"hex": "#E5091B", "role": "rouge : « client. », appel manqué"},
+      {"hex": "#10B981", "role": "émeraude : décroché, réservé, « Or a client. », bordure du nouveau rendez-vous"},
+      {"hex": "#1A8FD0", "role": "bleu : « lead. », pilule « Lead submitted »"},
+      {"hex": "#8B2BE2", "role": "violet des rendez-vous dans l'agenda (fond #F6EEFF)"},
+      {"hex": "#6B7280", "role": "texte secondaire gris"},
+      {"hex": "#E9E4DC", "role": "fond beige de la page de réservation publique"}
+    ],
+    "type": "Grotesque néo type Inter, ExtraBold, casse phrase, ≈ 8 % de la hauteur par ligne, interlettrage serré (≈ -2 %), 2 lignes à gauche. Étiquettes en petites capitales espacées dans des pilules. Logo géométrique propriétaire.",
+    "texture": "Ombres portées larges et douces sous les cartes (≈ 8 % d'opacité), coins arrondis ≈ 2 % de la hauteur, flou gaussien fort pendant les transitions et les apparitions de mots, halo émeraude autour du rendez-vous créé. Aucun grain.",
+    "style": "SaaS clair minimaliste, façon Apple",
+    "coherence": "Système très tenu : même fond, même police, même pilule de légende, une couleur sémantique par scène (rouge problème, émeraude réussite, bleu prospect), code 4827 qui passe de l'appel à l'agenda. La monotonie vient de la transition unique répétée huit fois."
+  },
+  "rhythm": {
+    "bpm": 134,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "Musique « upbeat » à 134 BPM, pulsation nette (clarté 8,0), mesure de 4 temps = 1,79 s. Aucune coupe franche : 9 scènes enchaînées par fondu flou de 8 à 10 im (0,27-0,33 s). Les scènes durent 5 à 6,5 s (changements à 5,07 / 11,03 / 17,57 / 23,47 / 28,4 / 33,53 / 38,67 / 40,57 / 44,3 s), sans rapport avec la mesure de 1,79 s. Le détecteur compte 67 % d'images quasi statiques, mais une partie contient de la micro-activité (frappe, compteurs, curseur, forme d'onde). Vrais temps morts : 3,5-5,07 s (1,6 s), 15,2-17,57 s (2,4 s, agenda figé), 33,9-35,0 s (curseur seul), 41,3-43,3 s (2 s sur le slogan). Densité : un événement toutes les 0,13 s pendant les apparitions de mots, puis 2 s de lecture ; on est loin du rythme 1600 constant.",
+    "timeline": [
+      {"t": "0:00-0:01.0", "what": "Carte « Luna Hair Studio · Main line / (555) 014-2291 / Incoming call… » qui entre floue et légèrement agrandie à droite, anneaux émeraude qui pulsent autour de l'icône", "technique": "entrée par mise au point + pulsation de sonnerie"},
+      {"t": "0:01.4-0:02.4", "what": "Pilule « AFTER HOURS » puis « Every missed call / is a missed client. » mot à mot ; à f59 la carte passe en appel manqué (icône et texte rouges, boutons pastel)", "technique": "révélation mot à mot floutée + bascule d'état"},
+      {"t": "0:02.4-0:03.5", "what": "« client. » en rouge ; trois notifications « Missed call » s'empilent sous la carte (f74, f88, ≈ f102)", "technique": "pile de notifications"},
+      {"t": "0:03.5-0:05.07", "what": "Maintien", "technique": "temps de lecture (1,6 s)"},
+      {"t": "0:05.07-0:06.6", "what": "Fondu flou ; bandeau d'appel « Connecting… » → « Answered by Apointa » ; « Apointa answers. » mot à mot, sous-titre « Every call. Day or night. »", "technique": "fondu flou + révélation mot à mot"},
+      {"t": "0:06.5-0:10.3", "what": "Transcription : bulle client, indicateur de frappe noir « ••• », bulle de l'agent noire, « Perfect, book it. », pilule verte « Booked · Fri 2:00 PM · Code 4827 » ; forme d'onde animée dans le bandeau", "technique": "conversation simulée"},
+      {"t": "0:11.03-0:13.4", "what": "Fondu flou vers l'agenda réel (fenêtre de navigateur) ; rendez-vous qui se peuplent ; pilule de légende « Booked straight into your calendar. No double bookings. »", "technique": "vrais composants en fenêtre de navigateur"},
+      {"t": "0:13.4-0:15.2", "what": "Poussée vers vendredi 14 h ; « Balayage · Emma Clarke » apparaît (f422) et reçoit une épaisse bordure émeraude lumineuse ; toast « New booking by Voice Agent · CODE 4827 »", "technique": "push-in + surlignage"},
+      {"t": "0:15.2-0:17.57", "what": "Maintien sur l'agenda", "technique": "temps mort (2,4 s)"},
+      {"t": "0:17.57-0:19.0", "what": "Fondu flou ; « Not ready to book? / It captures the lead. » mot à mot, « lead. » en bleu ; carte « Intake details »", "technique": "mot clé coloré"},
+      {"t": "0:19.0-0:23.47", "what": "Les 4 réponses se tapent lettre à lettre avec coches vertes, compteur 1/4 → 4/4, pilule bleue « Lead submitted · New » (≈ 22,4 s)", "technique": "formulaire en machine à écrire"},
+      {"t": "0:23.47-0:28.4", "what": "Tableau « Leads », curseur qui clique la première ligne (25,77 s), page « Lead Details », légère poussée", "technique": "navigation au curseur"},
+      {"t": "0:28.4-0:31.0", "what": "Tableau de bord « Voice Analytics » : tuiles qui comptent (536 → 1 284 appels, 39 % → 94 %), graphique en aires gris qui se dessine ; légende « Every call logged, summarized and measured. »", "technique": "compteurs + aires"},
+      {"t": "0:31.0-0:33.53", "what": "Défilement vers « Call Logs » (pilules de sentiment), curseur sur une ligne", "technique": "défilement ease-out"},
+      {"t": "0:33.53-0:38.6", "what": "Fondu flou vers la page de réservation publique (fond beige) : clic sur le 2 octobre, service, créneau, « You're booked » code 5193 ; légende « Customers book themselves, 24/7. »", "technique": "parcours client au curseur"},
+      {"t": "0:38.6-0:40.57", "what": "La fenêtre rétrécit à gauche ; « One link. / One QR. » à droite, carte lien (f1172) puis carte QR « Download PNG » (f1181)", "technique": "réduction et partage d'écran"},
+      {"t": "0:40.57-0:43.3", "what": "Fondu flou ; « Never miss a call again. » mot à mot, puis « Or a client. » en émeraude (≈ 41,9 s) ; maintien", "technique": "slogan en rappel de l'accroche"},
+      {"t": "0:43.3-0:44.3", "what": "Les mots se dissolvent en flou de gauche à droite ; fond vide", "technique": "sortie floutée"},
+      {"t": "0:44.3-0:47.59", "what": "Logo « Apointa.ai » révélé par un volet de gauche à droite (≈ 0,8 s), pilule noire « apointa.ai → » en flou entrant (f1366-f1370), phrase de positionnement grise ; maintien", "technique": "volet de logo + appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "musique-posee",
+    "evidence": "À 134 BPM et 30 fps, un temps = 13,4 im ; la fenêtre ±2 im autour des demi-temps couvre ≈ 75 % des images, donc seuls les temps pleins sont testables (±2 im = 37 % de hasard). Sur 29 gestes clés comptés (mots, bascules d'état, transitions, cartes, clics, logo), 12 tombent à ±2 im d'un temps plein : 41 % pour 37 % de hasard. Les débuts de transition (f152, f331, f527, f704, f1006, f1160, f1217) n'ont pas de position fixe dans la mesure. Les mots s'enchaînent toutes les 4 im (0,133 s) quel que soit le tempo. Le « drop » mesuré à 0,79 s ne correspond à aucun événement visuel (le plus proche à 4,2 s). Quelques coïncidences visibles sur les planches (f422, f1006, f1221 sur une barre avec attaque) ne forment pas de schéma. Indice automatique : p corrigé 0,96, énergie ↔ mouvement r = 0,13.",
+    "synced": [],
+    "style_match": "Pop corporate entraînante à 134 BPM sur une image calme : l'humeur optimiste colle, mais les fondus flous ne suivent ni sa pulsation ni son énergie.",
+    "how_built": "Le prompt ne parle ni de musique ni de tempo ; la piste « upbeat » a très probablement été ajoutée au montage après coup. Les durées de scène (5-6,5 s) et le décalage entre mots (4 im) sont des constantes du code, pas des multiples du temps de 0,448 s."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Arc problème → solution → fonctions → slogan en écho",
+      "name_en": "Problem-solution arc with callback tagline",
+      "t": "0:00-0:47.59",
+      "frames": "f0-f1427",
+      "fps": 30,
+      "mechanics": "Accroche douleur (« Every missed call is a missed client. »), réponse produit (« Apointa answers. »), cinq preuves fonctionnelles (réservation, agenda, prospects, statistiques, réservation en ligne), slogan qui reprend les mots de l'accroche (« Never miss a call again. Or a client. »), logo + appel à l'action. Chaque scène a une personne et un cas concret (salon de coiffure, dépanneur).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation mot à mot par mise au point",
+      "name_en": "Word-by-word blur-in",
+      "t": "0:01.53-0:02.53",
+      "frames": "f46-f76",
+      "fps": 30,
+      "mechanics": "Chaque mot passe de flou fort (≈ 1 % du cadre) et opacité 0 à net en ≈ 8 im, sans déplacement visible. Décalage constant de 4 im (0,133 s) : « Every » f46, « missed » f50, « call » f54, « is » f58, « a » f62, « missed » f66, « client. » f70. Le mot clé coloré arrive en dernier. Même recette pour toutes les accroches (f160-f169, f534-f566, f1219-f1236).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-02.jpg, microM-006-move-f1218.jpg",
+      "illus": {"from": 44, "to": 76, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un mot clé coloré par scène, couleur sémantique",
+      "name_en": "Semantic keyword color",
+      "t": "0:02.33-0:42.50",
+      "frames": "f70-f1275",
+      "fps": 30,
+      "mechanics": "Le dernier mot de chaque accroche porte la couleur de l'état : rouge #E5091B pour la perte (« client. »), bleu #1A8FD0 pour la capture (« lead. »), émeraude #10B981 pour la résolution (« Or a client. »). Le reste du titre reste quasi noir #0B0B0C. Ces couleurs sont celles de l'interface (appel manqué, pilule bleue, réservé).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou entre les scènes",
+      "name_en": "Blur dissolve",
+      "t": "0:05.07-0:05.33",
+      "frames": "f151-f160",
+      "fps": 30,
+      "mechanics": "La scène sortante se floute fortement (≈ 2 % du cadre) et s'efface en 6-8 im pendant que les éléments entrants apparaissent déjà (carte d'appel à f153, « Apointa » flou à f160). Durée totale 8-10 im (0,27-0,33 s), aucun déplacement. Utilisé à l'identique 8 fois (f152, f331, f527, f704, f1006, f1217…).",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f152.jpg, microM-002-move-f333.jpg, microM-005-move-f1007.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'appel entrant qui bascule en appel manqué",
+      "name_en": "Incoming-to-missed call state flip",
+      "t": "0:00.00-0:02.00",
+      "frames": "f0-f60",
+      "fps": 30,
+      "mechanics": "Carte blanche ≈ 25 % de la largeur, entre floue et légèrement agrandie puis se pose (≈ 1 s) ; deux anneaux émeraude pulsent autour de l'icône téléphone. À f58-f60 l'icône devient rouge barrée sur pastille rose, « Missed call · 11:47 PM » en rouge, les boutons passent en pastel. La bascule tombe pendant l'écriture du titre.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pile de notifications d'appels manqués",
+      "name_en": "Stacked notifications",
+      "t": "0:02.47-0:03.40",
+      "frames": "f74-f102",
+      "fps": 30,
+      "mechanics": "Trois cartes « Missed call » (Last night, Before opening, Lunch rush) glissent sous la carte principale en fondu, une toutes les ≈ 14 im (0,47 s), chacune ≈ 4 % de la hauteur. Accumule la douleur sans texte supplémentaire.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Conversation d'appel simulée",
+      "name_en": "Simulated call transcript",
+      "t": "0:06.30-0:10.30",
+      "frames": "f189-f309",
+      "fps": 30,
+      "mechanics": "Bandeau d'appel (« Answered by Apointa · 0:03 » qui compte, forme d'onde à barres qui bouge), bulle client blanche, indicateur de frappe noir « ••• » (≈ 7 s), bulle de l'agent noire avec avatar logo, réponse client, puis pilule verte « Booked · Fri 2:00 PM · Code 4827 » en flou entrant. Une bulle toutes les ≈ 1-1,5 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Code de réservation repris d'une scène à l'autre",
+      "name_en": "Continuity detail",
+      "t": "0:10.00-0:15.20",
+      "frames": "f300-f456",
+      "fps": 30,
+      "mechanics": "Le code 4827 annoncé dans la conversation réapparaît dans le toast de l'agenda, et le rendez-vous « Balayage · Fri 2:00 PM » est celui demandé par l'appelante. Le spectateur suit un seul cas de bout en bout.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Vrais écrans dans une fenêtre de navigateur",
+      "name_en": "Real product screens in browser frame",
+      "t": "0:11.03-0:38.60",
+      "frames": "f331-f1158",
+      "fps": 30,
+      "mechanics": "Les composants réels (agenda, prospects, détails, statistiques, réservation publique) sont posés dans une fenêtre aux trois pastilles avec barre d'adresse (« admin.apointa.ai/… »), ≈ 85 % de la largeur, ombre douce. Les rendez-vous de l'agenda se peuplent en cascade, un toutes les ≈ 2 im (f341-f350).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f333.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée vers le rendez-vous créé, bordure émeraude",
+      "name_en": "Push-in with highlight",
+      "t": "0:13.37-0:14.30",
+      "frames": "f401-f430",
+      "fps": 30,
+      "mechanics": "Zoom ease-in-out ≈ 25 im (échelle ≈ 1 → 1,4) vers vendredi 14 h, la barre latérale sort à gauche. À f422 le nouveau rendez-vous apparaît en fondu, à f426-f427 il reçoit une bordure émeraude ≈ 0,6 % du cadre avec halo vert. Le toast « New booking by Voice Agent » glisse ensuite à sa gauche (≈ 15 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f413.jpg",
+      "illus": {"from": 401, "to": 430, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Pilule de légende en bas au centre",
+      "name_en": "Feature caption pill",
+      "t": "0:11.40-0:40.50",
+      "frames": "f342-f1215",
+      "fps": 30,
+      "mechanics": "Sur chaque écran produit, une pilule blanche à ombre douce en bas au centre (≈ 4 % de la hauteur), petit tiret émeraude puis une phrase en gras ≈ 1,8 % : « Booked straight into your calendar. No double bookings. », « Every caller's details, ready for your follow-up. »… Elle apparaît en fondu ≈ 0,5 s après l'écran.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titre à gauche, interface à droite",
+      "name_en": "Headline-left, UI-right split",
+      "t": "0:01.40-0:23.47",
+      "frames": "f42-f704",
+      "fps": 30,
+      "mechanics": "Scènes 1, 2 et 4 : pilule-étiquette (« AFTER HOURS », « ● AI VOICE AGENT · 24/7 », « ● LEAD INTAKE ») puis titre 2 lignes calé sur la marge gauche ≈ 5 %, centré verticalement ; interface dans la moitié droite (x 52-80 %). Beaucoup d'air, hiérarchie immédiate.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Formulaire rempli en machine à écrire",
+      "name_en": "Typewriter form fill",
+      "t": "0:18.40-0:22.50",
+      "frames": "f552-f675",
+      "fps": 30,
+      "mechanics": "Quatre questions d'accueil ; chaque réponse s'écrit lettre à lettre (≈ 15-20 caractères/s : « Mark Ellis », adresse, panne, créneau) puis une coche verte apparaît ; compteur « 1/4 answers » → « 4/4 » ; pilule bleue « Lead submitted · New » à la fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Navigation au curseur entre pages",
+      "name_en": "Cursor-driven page navigation",
+      "t": "0:24.40-0:28.40",
+      "frames": "f732-f852",
+      "fps": 30,
+      "mechanics": "Petit curseur noir (≈ 1,5 % de la hauteur) qui glisse vers la première ligne du tableau « Leads », clic à f773, la page « Lead Details » remplace la liste d'un coup dans la fenêtre, puis poussée lente (≈ 1 s). Le curseur est trop petit pour guider l'œil.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tuiles qui comptent et graphique en aires",
+      "name_en": "KPI count-up and area chart",
+      "t": "0:28.40-0:31.00",
+      "frames": "f852-f930",
+      "fps": 30,
+      "mechanics": "Quatre tuiles comptent en ease-out exponentiel ≈ 1,5 s (Total calls 536 → 1 195 → 1 277 → 1 284 à 28,5 / 29 / 29,5 / 30 s ; succès 39 % → 87 % → 93 % → 94 %). Le graphique en aires empilées, dégradé noir → gris, se dévoile de gauche à droite en ≈ 0,5 s vers 29,5-30 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Défilement de page en ease-out",
+      "name_en": "Eased page scroll",
+      "t": "0:31.07-0:31.50",
+      "frames": "f932-f945",
+      "fps": 30,
+      "mechanics": "Le contenu monte d'≈ 20 % du cadre en 13 im : petits pas f932-f933, grands pas f934-f938, pas décroissants f939-f945 (ease-in-out à dominante ease-out). Fait apparaître le journal d'appels avec pilules de sentiment (Positive vert, Neutral jaune).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f938.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Parcours de réservation client au curseur",
+      "name_en": "Booking flow click-through",
+      "t": "0:33.53-0:38.60",
+      "frames": "f1006-f1158",
+      "fps": 30,
+      "mechanics": "Page publique sur fond beige #E9E4DC : clic sur la date (cercle noir ≈ 35 s), liste de services avec prix (≈ 35,5 s), créneaux horaires (≈ 36,3 s), confirmation « You're booked » avec coche et code 5193 (f1112). Un écran toutes les ≈ 0,5-0,7 s, cohérent et lisible.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Réduction de la fenêtre et cartes en cascade à droite",
+      "name_en": "Shrink-and-split reveal",
+      "t": "0:38.60-0:39.40",
+      "frames": "f1158-f1182",
+      "fps": 30,
+      "mechanics": "La fenêtre de réservation rétrécit (≈ 70 % → 38 % de la largeur) et glisse à gauche en ≈ 0,5 s ; à droite, « One » (f1162), « link. » (f1166), « One » (f1172), « QR. » (f1178) en mot à mot, la carte lien (f1172) puis la carte QR avec « Download PNG » (f1181). Cascade complète en 0,8 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1158, "to": 1186, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo révélé par un volet gauche → droite",
+      "name_en": "Logo wipe reveal",
+      "t": "0:44.47-0:45.27",
+      "frames": "f1334-f1358",
+      "fps": 30,
+      "mechanics": "Masque à bord net sans dégradé qui découvre « Apointa.ai » ≈ 9 % de la hauteur : 11 im pour le A, puis 7 lettres en 13 im (ease-in). La pilule noire « apointa.ai → » entre en flou en 4-6 im (f1366-f1370), la phrase de positionnement grise suit en fondu.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f1352.jpg",
+      "illus": {"from": 1334, "to": 1370, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titres Inter ExtraBold serrés, étiquettes en pilule",
+      "name_en": "Tight bold grotesque headlines",
+      "t": "0:01.40-0:43.30",
+      "frames": "f42-f1299",
+      "fps": 30,
+      "mechanics": "Grotesque néo type Inter ExtraBold, casse phrase, ≈ 8 % de la hauteur, interlignage serré (≈ 1,0), interlettrage ≈ -2 %. Étiquettes au-dessus en petites capitales espacées (≈ 1,2 %) dans une pilule à contour gris ou avec un point vert. Contraste fort quasi noir sur blanc cassé.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond blanc cassé à lumière douce",
+      "name_en": "Warm off-white soft-light background",
+      "t": "0:00-0:47.59",
+      "frames": "f0-f1427",
+      "fps": 30,
+      "mechanics": "Fond #F7F7F4 avec un halo plus clair #FCFCF9 en haut à gauche et un coin plus chaud #F1F0E9 en bas à droite, statique. Neutre, laisse respirer l'interface, mais ne bouge jamais.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture après chaque fonction",
+      "name_en": "Post-feature holds",
+      "t": "0:15.20-0:17.57",
+      "frames": "f456-f527",
+      "fps": 30,
+      "mechanics": "Après chaque action, l'image reste figée 1,5 à 2,5 s (3,5-5,07 s ; 15,2-17,57 s ; 41,3-43,3 s). Utile pour lire l'interface, mais sans micro-mouvement ni accent musical ces paliers cassent l'élan.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Analyze my frontend project, use the actual components » : Claude a eu accès au code et a réutilisé les vrais écrans (agenda, prospects, statistiques, réservation, QR) et le vrai logo. Donner le code du produit garantit une interface authentique et cohérente."},
+    {"kind": "direction", "insight": "« high-end product launch. Go all out » a été traduit en sobriété premium claire (blanc cassé, Inter, fondus flous), pas en mise en scène spectaculaire. Une formule d'ambition vague ne produit ni caméra, ni 3D, ni transitions variées : il faut les nommer."},
+    {"kind": "structure", "insight": "Sans storyboard, Claude applique un arc publicitaire classique (douleur → réponse → 5 preuves → slogan en écho → logo + appel à l'action) et invente des personas concrets (salon Luna, Maya, dépanneur HVAC). Bonne structure par défaut."},
+    {"kind": "build", "insight": "Pile technique non précisée ; probable rendu React/Remotion à partir des composants. Les durées de scène (5-6,5 s) et le décalage entre mots (4 im) sont des constantes du code, sans grille musicale."},
+    {"kind": "other", "insight": "Aucune musique demandée : la piste « upbeat » à 134 BPM a été posée ensuite et ne correspond à rien. Pour une synchro, fournir le morceau ou son BPM et demander que chaque changement tombe sur un temps."},
+    {"kind": "qa", "insight": "Aucune durée ni règle de rythme : Claude laisse 1,5-2,5 s de lecture après chaque fonction. Imposer « un événement toutes les 0,5-1 s » aurait densifié la vidéo."}
+  ],
+  "steal": [
+    "Terminer chaque accroche sur un seul mot coloré par l'état : rouge pour le problème, bleu pour la capture, vert pour la résolution.",
+    "Suivre un seul cas client de bout en bout (même code 4827 dans l'appel puis dans l'agenda) pour prouver la continuité du produit.",
+    "Faire basculer l'état d'une carte d'interface (appel entrant → manqué) pendant que le titre s'écrit, pour que l'image prouve la phrase.",
+    "Rétrécir la fenêtre produit sur un côté puis empiler titre, carte lien et carte QR en 0,8 s.",
+    "Sur les écrans produit, une pilule de légende constante en bas au centre qui dit le bénéfice en une phrase."
+  ],
+  "flaws": [
+    "Le même fondu flou de 0,3 s pour les huit changements de scène : aucune transition motivée.",
+    "Musique posée : les scènes changent toutes les 5-6,5 s sans tenir compte des mesures de 1,79 s.",
+    "Maintiens de 1,5-2,5 s après chaque fonction, sans micro-mouvement.",
+    "Textes des tableaux (prospects, journal d'appels) trop petits pour être lus.",
+    "Peu de mouvement pour un « go all out » : pas de caméra marquée, pas de profondeur."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Source à 30 fps et mouvements simples (fondus flous, mot à mot à décalage constant, poussées lentes) déjà mesurés sur les planches. L'intérêt est narratif et typographique, pas dans les courbes."
+  }
+}

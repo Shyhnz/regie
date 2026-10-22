@@ -1,0 +1,440 @@
+{
+  "slug": "utopyaszx-1b2f94",
+  "title": "Bold Pilot SEO promo",
+  "handle": "@utopyaszx",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système rouge-crème-noir tenu de bout en bout, cinq transitions motivées et compteurs précis ; la vidéo muette, la séquence cheval plate (cheval qui recule) et le double volet final affaiblissent la fin.",
+  "summary": "Promo SaaS de 15 s pour Bold Pilot, outil de SEO automatique : accroche mot à mot (« Your keywords / articles / rankings / SEO »), puis trois étapes numérotées (trouver les mots-clés, écrire l'article, publier chaque semaine), montée au classement, cheval-logo et carton final. Sa force : chaque transition naît d'un objet du plan précédent. Faiblesses : vidéo muette, séquence cheval décorative, fin un peu heurtée.",
+  "prompt_vs_result": [
+    "Le prompt d'une ligne demande 15 s de motion design « dynamique » pour Bold Pilot, façon showreel de CV, « go all out ». Rien sur le produit, l'histoire, les couleurs, la musique ni le format.",
+    "Claude a tout décidé : récit produit en trois étapes numérotées, palette rouge-crème-noir, trio grotesque / serif italique / mono, cadre HUD (timecode, « SC 01 / 04 »), transitions motivées, cheval-jockey (logo probable de la marque), URL boldpilot.club.",
+    "Le cadrage « showreel » a poussé vers la virtuosité des transitions, mais sans bande-son ni BPM la vidéo est muette. Il aurait fallu fournir le positionnement, une piste avec son tempo, et cadrer le moment de marque (cheval décoratif)."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B0606", "role": "fond noir chaud de l'ouverture"},
+      {"hex": "#E8251C", "role": "rouge principal : fonds pleins, soulignements, mots accentués (SEO, Ready, #3, LIVE, autopilot.)"},
+      {"hex": "#A3120C", "role": "rouge sombre : vignettage des fonds rouges, texte géant ton sur ton BOLD PILOT"},
+      {"hex": "#F1EDE6", "role": "crème : fonds des scènes 02-03 et du carton final"},
+      {"hex": "#FFFFFF", "role": "blanc : pastilles mots-clés, fenêtre navigateur, cartes, texte sur rouge"},
+      {"hex": "#111111", "role": "noir : titres sur crème, pastilles sélectionnées, compteurs"},
+      {"hex": "#F5C9C3", "role": "rose pâle : aire sous la courbe de classement"},
+      {"hex": "#8F8A84", "role": "gris : étiquettes mono, cases en pointillés, HUD"}
+    ],
+    "type": "Grotesque très grasse (Inter Display Black probable), casse phrase, interlettrage serré (≈ −3 %), titres 9-12 % de la hauteur ; serif italique (Instrument Serif probable) pour les chutes ; mono capitales espacées ≈ 1 % pour étiquettes et HUD.",
+    "texture": "Vignettage radial permanent (coins ≈ 20-30 % plus sombres) sur rouge et sur crème ; ombres portées douces sous la fenêtre navigateur et les cartes ; halo rouge sur le cadran d'ouverture ; profondeur de champ (pastilles lointaines floues) dans le nuage de mots-clés ; flou de mouvement directionnel sur tous les gestes rapides (vertical sur les roulements de mots et de chiffres, vertical sur le volet du soulignement, radial sur la plongée, traînée fantôme sur l'article qui rétrécit) ; lignes de vitesse horizontales et poussière sur la scène du cheval ; illustration gravure à hachures (cheval-jockey) ; grain très léger probable.",
+    "style": "Éditorial tech rouge, interface cinétique",
+    "coherence": "Trois couleurs (rouge, crème, noir) et trois familles de caractères tiennent tout. Le rouge circule d'un plan à l'autre comme fil de continuité : le soulignement devient le fond de la scène 01, le point du graphique devient le fond de la scène cheval. Le cadre HUD fixe (coins, timecode, « SC 0X / 04 ») et la numérotation 01-02-03 en serif italique structurent le récit. Les objets voyagent d'une étape à l'autre (mot-clé élu → article → carte de la semaine → point du graphique). Ce qui casse : l'illustration gravure du cheval, d'un autre registre et posée sans intégration, et le double volet crème / rouge final qui hésite."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Rythme visuel très dense dans l'ouverture : un événement toutes les 15 im (0,25 s) à 60 fps — étincelle f27, diamètre rouge f39, « Your keywords. » f45, roulements de mots f63, f78, f93, sous-titre f104, volet f123-f139. Ensuite un changement de plan toutes les 2,3 à 3 s (2,30 / 4,72 / 7,75 / 9,65 / 10,70 / 13,05 s), chacun réalisé par une transition continue et non par une coupe, avec à l'intérieur une action toutes les 0,3 à 0,6 s (balayage, regroupement, frappe, compteurs, cartes qui tombent toutes les ≈ 4 im, compteur de rang, plongée). Les « coupes » détectées (f138, f283, f780, f783) sont en réalité un volet, un iris et un double volet ; seule f783-f784 est une quasi-coupe (fondu de 1 im). Temps morts : noir initial 0,45 s (f0-f27) à supprimer, maintien final 0,9 s (14,08-14,98 s) acceptable pour un carton ; le maintien détecté à 5,07-5,47 s correspond à la frappe du titre en petit corps (mouvement réel mais faible) et celui de 13,58-14,02 s à la mise en place du slogan (mouvements faibles).",
+    "timeline": [
+      {"t": "0:00-0:00.45", "what": "Noir chaud #0B0606 avec seul le cadre HUD (coins, timecode, « SEO ON AUTOPILOT », « SC 01 / 04 »)", "technique": "temps mort de démarrage (f0-f27)"},
+      {"t": "0:00.45-0:00.75", "what": "Étincelle rouge puis cadran à graduations qui grandit à ≈ 66 % de la hauteur ; un diamètre rouge s'étire au centre", "technique": "éclosion ease-out expo (15 im)"},
+      {"t": "0:00.75-0:01.05", "what": "« Your keywords. » monte depuis le trait rouge ; l'anneau continue de grandir hors cadre en s'estompant", "technique": "révélation par masque sur ligne de base"},
+      {"t": "0:01.05-0:01.75", "what": "keywords → articles → rankings → SEO (rouge), puis « on autopilot. » en serif italique sous le trait", "technique": "paradigme de mots, un roulement vertical toutes les 15 im"},
+      {"t": "0:02.05-0:02.33", "what": "Le soulignement s'allonge à pleine largeur puis s'épaissit jusqu'à remplir le cadre de rouge", "technique": "volet par épaississement de ligne (ease-in, 10 im)"},
+      {"t": "0:02.33-0:03.30", "what": "Nuage de pastilles mots-clés qui s'écarte depuis le centre ; « 01 Find keywords you can win »", "technique": "travelling avant dans un nuage avec profondeur de champ"},
+      {"t": "0:03.30-0:03.65", "what": "Faisceau blanc vertical qui balaie de gauche à droite ; les gagnantes passent en noir à badge rouge, les autres se floutent", "technique": "balayage de scan déclencheur d'état"},
+      {"t": "0:03.65-0:04.55", "what": "Les 5 gagnantes se rangent en colonne à droite ; « KEYWORDS SCANNED 2,418 / 5 you can actually win. » à gauche", "technique": "regroupement en liste + grand chiffre"},
+      {"t": "0:04.55-0:04.75", "what": "Un point blanc naît dans la pastille « cold brew ratio » et s'ouvre sur la scène 02 crème", "technique": "iris motivé (12 im, ease-in, bord ombré)"},
+      {"t": "0:04.75-0:06.00", "what": "Fenêtre navigateur, « 02 Write the whole article », frappe du titre avec curseur rouge ; la fenêtre se décale, colonne de stats à droite", "technique": "maquette d'interface + frappe"},
+      {"t": "0:06.00-0:07.32", "what": "Image rouge, histogramme « 1:8 WINS », lignes de texte, défilement ; WORDS 0 → 2 140, SECTIONS 0 → 9, IMAGES 0 → 4", "technique": "compteurs odomètre ease-out"},
+      {"t": "0:07.32", "what": "« Writing » → « Ready » rouge à l'image où le compteur atterrit (f439)", "technique": "bascule d'état synchronisée"},
+      {"t": "0:07.60-0:07.90", "what": "L'article rétrécit et file dans la case « WEEK 01 » ; la grille 6 × 2 apparaît en fondu", "technique": "transition par réduction dans une case"},
+      {"t": "0:07.90-0:09.00", "what": "« 03 Publish every single week » ; 11 cartes tombent dans les cases avec badge « LIVE » ; « One a week. Published for you. »", "technique": "chute en cascade (stagger ≈ 4 im)"},
+      {"t": "0:09.15-0:09.70", "what": "La grille s'efface, les cartes montent en escalier puis rétrécissent en points rouges ; titre « Climb, week after week »", "technique": "morphing cartes → points de données"},
+      {"t": "0:09.60-0:10.25", "what": "Compteur « AVERAGE POSITION » #48 → #3 (passe au rouge), courbe et aire rose qui se tracent", "technique": "compteur de rang + tracé de courbe"},
+      {"t": "0:10.25-0:10.75", "what": "Zoom accéléré dans le point #3 jusqu'au plein rouge", "technique": "plongée dans le point (ease-in, flou radial)"},
+      {"t": "0:10.75-0:12.60", "what": "Fond rouge à lignes de vitesse, « BOLD PILOT » géant ton sur ton qui défile, cheval-jockey gravé ; « Runs every week. Without you. » vers 11,2 s", "technique": "plan de marque, texte défilant ton sur ton"},
+      {"t": "0:12.60-0:13.05", "what": "Aplat crème qui pousse le plan rouge vers la gauche, panneau rouge qui revient de droite, disparition en 1 im", "technique": "double volet (hésitant)"},
+      {"t": "0:13.05-0:13.60", "what": "Carton crème : logo cheval qui grossit, « Bold Pilot » qui monte lettre par lettre", "technique": "montée de lettres depuis un masque, stagger ≈ 2 im"},
+      {"t": "0:13.60-0:14.10", "what": "Le bloc remonte ; filet rouge, « Your SEO, on autopilot. », pastille « boldpilot.club » qui grossit", "technique": "carton final + appel à l'action"},
+      {"t": "0:14.10-0:14.98", "what": "Maintien du carton final 0,9 s", "technique": "maintien de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no, pas de transcription, aucune barre bleue ni attaque sur les planches) : aucune synchro à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet (vidéo muette). Le pas visuel de 15 im (0,25 s) correspondrait à des croches à 120 BPM ; une électro sèche collerait aux courbes expo.",
+    "how_built": "Le prompt ne mentionne ni son ni tempo et la composition (HTML + GSAP probable) a été rendue sans piste ; aucune bande-son générée en code. Pour une version musicale : fournir la piste et son BPM, caler les roulements de mots sur les croches (15 im à 120 BPM et 60 fps, déjà le pas actuel) et déplacer les transitions (2,30 / 4,72 / 7,75 / 10,70 / 13,05 s) sur des débuts de mesure."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Cadran-jauge qui éclot d'une étincelle",
+      "name_en": "Dial burst intro",
+      "t": "0:00.45-0:00.75",
+      "frames": "f27-f45",
+      "fps": 60,
+      "mechanics": "Étincelle rouge à rayons (≈ 4 % de la hauteur) au centre à f27, puis anneau à graduations avec halo rouge qui grandit jusqu'à ≈ 66 % de la hauteur en 15 im (0,25 s), ease-out expo : diamètres ≈ 28 %, 52 %, 60 %, 63 %, 66 % de la hauteur toutes les 3 im. À f39 un diamètre horizontal rouge sort du centre et s'étire à ≈ 70 % de la largeur : il devient le trait de base sur lequel monte le premier titre (f45). L'anneau continue ensuite de grandir hors cadre en tombant à ≈ 15 % d'opacité. Métaphore probable du pilote automatique (compteur de bord).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f27-f48)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte depuis le trait rouge",
+      "name_en": "Line-masked text rise",
+      "t": "0:00.75-0:00.85",
+      "frames": "f45-f51",
+      "fps": 60,
+      "mechanics": "« Your keywords. » (grotesque noire blanche, ≈ 10 % de la hauteur, ≈ 57 % de la largeur) émerge de bas en haut au-dessus du diamètre rouge qui sert de masque : à f45 seule la moitié haute des lettres est visible, f48 lettres entières avec léger flou vertical, f51 net. ≈ 6 im (0,1 s), ease-out. Le trait reste en place comme soulignement (≈ 50 % de la largeur).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f45-f51)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Paradigme de mots en roulement (Your X → Your SEO)",
+      "name_en": "Word swap slot roll",
+      "t": "0:01.05-0:01.75",
+      "frames": "f63-f108",
+      "fps": 60,
+      "mechanics": "« Your » reste fixe, le dernier mot est remplacé par un roulement vertical : l'ancien sort par le haut, le nouveau entre par le bas, masque sur la hauteur de ligne. keywords → articles (f63) → rankings (f78) → SEO en rouge #E8251C (f93) : un remplacement toutes les 15 im (0,25 s), chaque roulement dure 6-9 im (0,10-0,15 s) avec flou de mouvement vertical. La ligne se recentre à chaque changement de largeur (« Your » glisse de ≈ 6 % de la largeur entre « rankings. » et « SEO »). Puis « on autopilot. » (serif italique blanche, ≈ 6 % de la hauteur) monte sous le trait f104-f108. Grammaire 1600 : un mot par pas régulier, mot de la promesse en couleur.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f60-f114), overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Soulignement qui s'épaissit jusqu'à devenir le fond",
+      "name_en": "Underline expand wipe",
+      "t": "0:02.05-0:02.33",
+      "frames": "f123-f140",
+      "fps": 60,
+      "mechanics": "Le soulignement rouge (≈ 0,4 % de la hauteur, 50 % de la largeur) s'allonge à 100 % de la largeur en 6 im (f123-f129), puis s'épaissit verticalement en accélérant : ≈ 1, 3, 4, 8, 14, 20, 27, 34, 45, 77 puis 100 % de la hauteur de f129 à f139 (10 im = 0,17 s, ease-in expo). Bords haut et bas flous (flou de mouvement vertical) ; la bande passe devant « Your SEO / on autopilot. » et l'efface. Le rouge plein, vignetté, devient directement le fond de la scène 01 où les pastilles apparaissent dès f142 : aucune coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f138.jpg",
+      "illus": {"from": 123, "to": 140, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant dans un nuage de mots-clés",
+      "name_en": "Dolly-in through keyword cloud",
+      "t": "0:02.33-0:03.30",
+      "frames": "f140-f198",
+      "fps": 60,
+      "mechanics": "Une quarantaine de pastilles blanches (mot-clé + badge gris « KD 79 ») naissent minuscules au centre (f142-f146, zone ≈ 40 % de la largeur) et s'écartent vers les bords en grossissant (≈ 80 % de la largeur à f158) : travelling avant dans un nuage en profondeur, décélérant (ease-out). Profondeur de champ : pastilles lointaines petites et floues, proches grandes et nettes, certaines coupées par le bord (« dunkin » en haut à droite à 3,0 s). Titre « 01 Find keywords you can win » qui apparaît en haut à gauche f152-f157.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f138.jpg (f140-f158), overview-01.jpg (f150-f180)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Faisceau de scan qui trie les mots-clés",
+      "name_en": "Scan beam selection",
+      "t": "0:03.30-0:03.65",
+      "frames": "f194-f218",
+      "fps": 60,
+      "mechanics": "Bande verticale de lumière blanche translucide (≈ 8 % de la largeur, bords doux, léger halo) qui balaie le cadre de gauche à droite en ≈ 20 im (0,33 s), ease-in-out : ≈ 2 % de la largeur par image au départ (f194-f203), ≈ 8 %/im au milieu (f206-f210), ralentissement à droite (f214-f218). Au passage du faisceau, les mots-clés gagnants basculent en pastilles noires à badge rouge (« how to clean a grinder » bascule à f207 quand le faisceau l'atteint, « cold brew ratio » vers f204) ; les perdants se floutent (≈ 4 px) et tombent à ≈ 50 % d'opacité. Le changement d'état est déclenché par la position du faisceau : la sélection se voit.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f209.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Regroupement en liste et grand chiffre",
+      "name_en": "Gather into list with hero number",
+      "t": "0:03.65-0:04.55",
+      "frames": "f219-f273",
+      "fps": 60,
+      "mechanics": "Les 5 gagnantes se rangent en colonne à droite (≈ 60-75 % de la largeur, pas vertical ≈ 4 % de la hauteur) pendant que le nuage disparaît ; à gauche, étiquette mono « KEYWORDS SCANNED », grand chiffre « 2,418 » (grotesque noire blanche, ≈ 12 % de la hauteur) et chute en serif italique « 5 you can actually win. » (≈ 5 %). Le passage nuage → liste se fait entre 4,0 et 4,5 s (non couvert image par image) ; f268-f273 l'état final est stable.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f240, f270), microM-003-cut-f283.jpg (f268-f273)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris qui s'ouvre depuis le mot-clé élu",
+      "name_en": "Iris reveal from pill",
+      "t": "0:04.55-0:04.75",
+      "frames": "f273-f285",
+      "fps": 60,
+      "mechanics": "Un point blanc naît au centre de la première pastille « cold brew ratio » (le mot-clé qui sera l'article) à f273. Amorce lente de 5 im (le point gonfle de ≈ 1,5 % à 9 % de la largeur), puis expansion rapide ≈ 12 % de la largeur par image (≈ 26, 36, 48, 60, 75 %…) jusqu'à couvrir le cadre à f285 : 12 im = 0,2 s, ease-in. Le disque est un masque qui révèle la scène 02 (fenêtre navigateur sur crème) ; son bord porte une ombre sombre douce (≈ 3 % de la largeur) qui lui donne un relief de lentille ; son centre glisse vers le centre du cadre pendant l'ouverture. Le mot-clé élu « ouvre » son article : transition motivée par le récit.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f283.jpg",
+      "illus": {"from": 272, "to": 286, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre navigateur avec frappe du titre",
+      "name_en": "Browser mockup typing",
+      "t": "0:04.75-0:06.00",
+      "frames": "f285-f360",
+      "fps": 60,
+      "mechanics": "Fenêtre navigateur blanche (≈ 30 % de la largeur, 55 % de la hauteur, coins arrondis, ombre douce) avec URL « yourstore.com/blog/cold-brew-ratio » et étiquette noire « cold brew ratio » qui reprend le mot-clé élu. Curseur rouge et frappe du titre « The Perfect Cold Brew Ratio, Tested 12 Ways » (23 caractères à 5,5 s, 43 à 6,0 s : ≈ 40-50 caractères/s, probable). Entre 5,0 et 6,0 s la fenêtre se décale vers la gauche (≈ 10-15 % de la largeur) pour libérer une colonne de stats à droite. Titre de scène « 02 Write the whole article » en haut à gauche f293-f299.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f283.jpg (f286-f303), overview-01.jpg (f300, f330), overview-02.jpg (f360)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Article qui se construit puis défile",
+      "name_en": "Article build and scroll",
+      "t": "0:06.00-0:07.30",
+      "frames": "f360-f438",
+      "fps": 60,
+      "mechanics": "Bloc image rouge en dégradé (≈ 30 % de la largeur) à 6,0 s, histogramme de 6 barres qui poussent dedans vers 6,5 s (barre gagnante blanche « 1:8 WINS »), puis lignes de texte squelettes grises. Défilement du contenu vers le haut f425-f437 (≈ 25 % de la hauteur de la fenêtre en 12 im, ease-in-out) pendant que le compteur de mots ralentit : l'article « s'écrit » sous nos yeux.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (f360-f450), microM-004-move-f428.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs en odomètre freinés en ease-out",
+      "name_en": "Rolling odometer counters",
+      "t": "0:05.50-0:07.32",
+      "frames": "f330-f439",
+      "fps": 60,
+      "mechanics": "Colonne de 4 indicateurs (étiquette mono + chiffre en grotesque noire ≈ 7 % de la hauteur) : WORDS 0 → 2 140, SECTIONS 0 → 9, IMAGES 0 → 4, STATUS « Writing ». Chiffres en rouleau avec flou vertical sur les seuls chiffres qui changent. Fin de course mesurée f413-f439 : 2 051 → 2 140 avec des pas par image de 9, 9, 7, 6, 6, 5, 6, 5, 5, 4, 4, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 0, 1, 0, 1 : ease-out régulier (power3 probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f428.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Bascule de statut à l'image d'atterrissage du compteur",
+      "name_en": "Status flip on counter landing",
+      "t": "0:07.30-0:07.32",
+      "frames": "f438-f439",
+      "fps": 60,
+      "mechanics": "« Writing » (noir) se dédouble et se floute à f438, « Ready » (grotesque noire rouge #E8251C, même corps ≈ 6 % de la hauteur) le remplace à f439, l'image exacte où WORDS atteint 2 140. Fondu-flou de 1-2 im. Un seul événement ferme deux informations : fin du comptage = article prêt.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f428.jpg (f437-f440)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'article rétrécit dans la case de la semaine 1",
+      "name_en": "Shrink into calendar slot",
+      "t": "0:07.60-0:07.90",
+      "frames": "f456-f474",
+      "fps": 60,
+      "mechanics": "La fenêtre article rétrécit et file vers le haut à gauche jusque dans la case « WEEK 01 » d'un calendrier 6 × 2 : échelle ≈ 1 → 0,12 en ≈ 15 im (0,25 s), l'essentiel entre f462 et f468 (ease-in-out marqué), avec traînée fantôme et flou de mouvement. La colonne de stats s'efface (≈ 30 % d'opacité à f468, 0 à f474) ; cases en pointillés et étiquettes mono apparaissent en fondu f471-f483, puis le titre « 03 Publish every single week ». L'article devient la première publication : transition motivée par le sens.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f456-f483)"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cartes qui tombent en cascade dans le calendrier",
+      "name_en": "Staggered card drop",
+      "t": "0:08.15-0:09.00",
+      "frames": "f489-f540",
+      "fps": 60,
+      "mechanics": "11 cartes-articles tombent du haut (surtout haut-droite) dans les cases, inclinées de ≈ ±10-15° et redressées à l'atterrissage, flou de mouvement vertical ; décalage (stagger) moyen ≈ 4-5 im (11 cartes en ≈ 50 im), d'abord ≈ 6 im puis ≈ 3 im : la cadence s'accélère. Badge rouge « LIVE » qui apparaît au coin haut-droit de chaque carte posée. À 8,55 s (f513) chute en serif italique « One a week. Published for you. » centrée sous la grille (≈ 3,5 % de la hauteur, gris foncé). Dépassement à l'atterrissage non mesurable (planche à pas de 3 im).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f489-f546)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Morphing des cartes en points du graphique",
+      "name_en": "Cards morph into data points",
+      "t": "0:09.15-0:09.85",
+      "frames": "f549-f591",
+      "fps": 60,
+      "mechanics": "La grille s'efface (étiquettes et cases pointillées, f549-f555) ; les 12 cartes glissent en escalier montant (f558-f564), puis chacune rétrécit en point rouge (≈ 1 % de la hauteur), de gauche à droite, décalage ≈ 3 im par carte (f564-f591). Les points se placent sur la progression du classement (de #50 en bas à gauche vers #1 en haut à droite) ; axe Y « #1 / #10 / #25 / #50 » en mono qui apparaît. Le titre devient « Climb, week after week » vers 9,65 s. Chaque semaine publiée devient littéralement une donnée : le point d'un objet devient le point d'un graphique.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f549-f600)",
+      "illus": {"from": 552, "to": 600, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de rang qui dévale jusqu'à #3",
+      "name_en": "Rank countdown",
+      "t": "0:09.60-0:10.15",
+      "frames": "f576-f609",
+      "fps": 60,
+      "mechanics": "Compteur « AVERAGE POSITION » en haut à droite (grotesque noire ≈ 8 % de la hauteur, étiquette mono au-dessus) : #48 → #47 → #46 → #44 → #40 → #32 → #20 → #11 → #6 → #4 → #3, une lecture toutes les 3 im ; lent au départ, rapide au milieu, freiné à la fin (ease-in-out), flou vertical sur les chiffres. Passe du noir au rouge #E8251C à #3 (f609).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f576-f612)"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe et aire qui se tracent derrière les points",
+      "name_en": "Line draw with area reveal",
+      "t": "0:09.80-0:10.25",
+      "frames": "f588-f615",
+      "fps": 60,
+      "mechanics": "Une courbe rouge (≈ 0,5 % de la hauteur) relie les points de gauche à droite en ≈ 27 im (0,45 s), ease-out probable, suivie d'une aire rose pâle #F5C9C3 en dégradé vers le transparent, révélée par un masque à bord flou qui suit la tête de la courbe. Le dernier point porte un anneau-cible double (pulsation) qui annonce le zoom.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f588-f624)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée accélérée dans le dernier point",
+      "name_en": "Push into data point to color fill",
+      "t": "0:10.25-0:10.75",
+      "frames": "f615-f645",
+      "fps": 60,
+      "mechanics": "Zoom avant ease-in expo centré sur le point « #3 » : échelle ≈ 1,1 (f618), 1,4 (f624), 2,3 (f630), 4,5 (f636), ≈ 7 (f639) ; le disque rouge remplit le cadre à f641. Flou radial de zoom marqué sur la courbe et l'anneau à partir de f630. Le rouge plein enchaîne f642-f645 sur le fond rouge de la scène du cheval (f646) : plongée dans le point puis plein cadre de couleur, sans coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f639.jpg, extra-03.jpg (f618-f642)",
+      "illus": {"from": 618, "to": 645, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Cheval-jockey en gravure",
+      "name_en": "Engraved horse mascot",
+      "t": "0:10.75-0:12.60",
+      "frames": "f646-f756",
+      "fps": 60,
+      "mechanics": "Illustration noir et blanc à hachures (cheval au galop et jockey, ≈ 25 % de la hauteur) qui entre par le bord droit et décélère en ≈ 14 im (ease-out) jusqu'à x ≈ 63 % de la largeur, puis dérive vers la gauche (x ≈ 30 % à 12,5 s). Pose de galop identique sur toutes les images inspectées : pas de cycle de foulée visible, simple translation probable. Le cheval fait face à droite mais recule vers la gauche : direction incohérente. Registre graphique (gravure réaliste) étranger au reste du système plat.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f639.jpg (f646-f659), overview-02.jpg (f660, f690), overview-03.jpg (f720, f750)"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Texte géant ton sur ton qui défile et lignes de vitesse",
+      "name_en": "Tone-on-tone marquee with speed lines",
+      "t": "0:10.75-0:12.60",
+      "frames": "f646-f756",
+      "fps": 60,
+      "mechanics": "« BOLD PILOT • BOLD PILOT » en grotesque noire rouge sombre #A3120C sur rouge (≈ 35 % de la hauteur, ton sur ton) qui défile horizontalement derrière le cheval ; filets horizontaux fins clairs et sombres (lignes de vitesse) et ligne de piste à ≈ 68 % de la hauteur avec poussière. Accroche « Runs every week. Without you. » en grotesque grasse blanche (≈ 5 % de la hauteur) centrée en haut, apparue entre f660 et f690.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg (f660, f690), overview-03.jpg (f720, f750)"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Double volet crème puis rouge",
+      "name_en": "Double push wipe",
+      "t": "0:12.60-0:13.05",
+      "frames": "f760-f784",
+      "fps": 60,
+      "mechanics": "Un aplat crème venu de droite pousse le plan rouge vers la gauche : bord à x ≈ 57 % (f768) puis 0 % (f777), en accélérant (≈ 3,5 % de la largeur par image puis ≈ 9 %/im), cheval flouté horizontalement. Puis un second panneau rouge (avec « BOLD P ») revient de droite en 3 im (bord 97 % → 27 %, f777-f780, ease-out sec) et s'arrête ; à f783 il passe à ≈ 45 % d'opacité et disparaît à f784 sur le carton final. Le va-et-vient puis la disparition en 1 im se lisent comme une hésitation, pas comme un geste.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f783.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype qui monte lettre par lettre",
+      "name_en": "Staggered letter rise",
+      "t": "0:13.05-0:13.60",
+      "frames": "f783-f815",
+      "fps": 60,
+      "mechanics": "Logo cheval (en haut au centre) teinté rouge à f783, noir à f784, qui grossit de ≈ 3 % à 7 % de la largeur en ≈ 10 im (ease-out). « Bold Pilot » (grotesque noire, ≈ 12 % de la hauteur, interlettrage serré) monte lettre par lettre depuis un masque sous la ligne de base : décalage ≈ 2 im par lettre (B f788, o f792, l f794, d f796, P f799, i f801…), chaque lettre ≈ 15-20 im de montée en ease-out, mot entier en place vers 13,6 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f783.jpg (f783-f803), overview-03.jpg (f810)"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final avec slogan et pastille URL",
+      "name_en": "End card with CTA pill",
+      "t": "0:13.60-0:14.98",
+      "frames": "f816-f899",
+      "fps": 60,
+      "mechanics": "Le bloc logo + nom remonte de ≈ 8 % de la hauteur pour laisser place à un filet rouge (≈ 35 % de la largeur), au slogan « Your SEO, on autopilot. » (grotesque regular ≈ 3,5 % de la hauteur + « autopilot. » en serif italique rouge) et à une pastille noire « ● boldpilot.club » qui grossit (≈ × 1,6) vers 14,0-14,1 s. Maintien final 0,9 s. Le slogan reprend mot pour mot l'accroche du début : boucle de sens.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg (f810-f899)"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Promesse → 3 étapes numérotées → preuve → marque → URL",
+      "name_en": "Three-step product story",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Accroche 2,3 s (paradigme de mots + promesse « on autopilot »), trois étapes de 2,4 à 3 s chacune (01 trouver, 02 écrire, 03 publier puis grimper), preuve chiffrée (#48 → #3), plan émotionnel de marque 2,3 s (cheval, « Runs every week. Without you. »), carton final 2 s avec URL. Chaque étape reprend l'objet produit par la précédente (mot-clé élu → article → carte de la semaine → point du graphique → plein rouge).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trio grotesque grasse + serif italique + mono",
+      "name_en": "Grotesk + italic serif + mono system",
+      "t": "0:00.75-0:14.98",
+      "frames": "f45-f899",
+      "fps": 60,
+      "mechanics": "Titres en grotesque très grasse, casse phrase avec point final (« Your keywords. »), interlettrage serré ≈ −3 %, ≈ 10 % de la hauteur ; chutes et nuances en serif italique (≈ 5-6 % : « on autopilot. », « 5 you can actually win. », « One a week. Published for you. », « autopilot. » en rouge) ; étiquettes en mono capitales espacées (KEYWORDS SCANNED, WEEK 01, AVERAGE POSITION). Le mot de la promesse passe en rouge (« SEO », « Ready », « autopilot. »).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Numérotation d'étape en serif italique",
+      "name_en": "Numbered chapter labels",
+      "t": "0:02.55-0:10.75",
+      "frames": "f153-f645",
+      "fps": 60,
+      "mechanics": "Numéro d'étape en serif italique (« 01 », ≈ 6 % de la hauteur) suivi d'un intitulé en grotesque grasse (≈ 2 % de la hauteur) en haut à gauche (marges ≈ 3 % de la hauteur et 5 % de la largeur), avec filet fin. Même gabarit pour « Find keywords you can win », « Write the whole article », « Publish every single week », puis remplacement « Climb, week after week » sans changer de numéro.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg (f180), overview-02.jpg (f360, f480, f600)"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre HUD de viseur (coins, timecode, compteur de scène)",
+      "name_en": "Viewfinder HUD frame",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Quatre équerres fines aux coins (marge ≈ 2 %), timecode mono qui défile en haut à droite (« TC 00:00:01:00 »), « SEO ON AUTOPILOT » avec filet en bas à gauche, « SC 01 / 04 » en bas à droite ; corps ≈ 1 % de la hauteur, faible opacité. Fixe à travers toutes les transitions : il assure une continuité de « bande de tournage ». Élégant mais devenu un tic des vidéos Claude ; à garder seulement s'il porte une information (numéro d'étape).",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg (f0-f330)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Le rouge comme fil de continuité entre plans",
+      "name_en": "Color-carried transitions",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Alternance de fonds noir → rouge → crème → rouge → crème, chaque bascule portée par un élément rouge du plan précédent (soulignement à 2,05 s, point du graphique à 10,25 s). Sur crème, le rouge #E8251C est le seul accent (« Ready », #3, LIVE, barres, « autopilot. ») : l'œil suit la couleur d'un plan à l'autre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f138.jpg, microM-005-move-f639.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel systématique",
+      "name_en": "Directional motion blur",
+      "t": "0:01.05-0:13.05",
+      "frames": "f63-f783",
+      "fps": 60,
+      "mechanics": "Flou présent sur tous les gestes rapides : vertical sur les roulements de mots et de chiffres, vertical sur les bords du volet rouge, horizontal sur le cheval poussé, radial sur la plongée dans le point, traînée fantôme sur l'article qui rétrécit ; absent sur les mouvements lents (frappe, défilement). Il vend la vitesse des transitions de 10-15 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f138.jpg, microM-004-move-f428.jpg, microM-005-move-f639.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Vignettage radial permanent",
+      "name_en": "Radial vignette",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Coins ≈ 20-30 % plus sombres sur tous les fonds (rouge #E8251C → #A3120C ; crème #F1EDE6 → ≈ #CFC9C0) : profondeur de projection, regard concentré au centre, aplats moins plats.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Noir initial avant le premier geste",
+      "name_en": "Dead black leader",
+      "t": "0:00-0:00.45",
+      "frames": "f0-f27",
+      "fps": 60,
+      "mechanics": "27 im (0,45 s) de noir avec seul le HUD, aucun mouvement, avant l'étincelle. Temps mort de démarrage typique des compositions générées (délai en tête de timeline) ; à couper pour attaquer dès l'image 0.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg (f0), extra-01.jpg (f27), rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne dit rien du produit ; pourtant la vidéo connaît le positionnement (SEO automatique, un article par semaine, montée au classement), le logo cheval-jockey et l'URL boldpilot.club : Claude avait probablement accès au site ou au dépôt de la marque. Ce contexte fait la moitié du résultat."},
+    {"kind": "direction", "insight": "« shows what an incredible motion designer you are… go all out » pousse vers la virtuosité des transitions : cinq passages motivés et aucun fondu enchaîné banal. Ce cadrage showreel sert bien une promo quand le produit fournit des objets (mot-clé, article, carte, point) à faire voyager d'un plan à l'autre."},
+    {"kind": "structure", "insight": "Aucune structure demandée : Claude a choisi le gabarit SaaS par défaut (promesse → 3 étapes numérotées → preuve chiffrée → marque → URL) avec compteur de scènes « SC 0X / 04 ». Efficace en 15 s, mais c'est le gabarit qu'il produit sans consigne."},
+    {"kind": "build", "insight": "Pas de bande-son : le prompt n'en parle pas et le rendu HTML ne l'ajoute pas seul. Fournir la piste et son BPM (ex. 120 BPM : croche = 15 im à 60 fps, le pas déjà utilisé dans l'ouverture) pour caler roulements de mots et transitions."},
+    {"kind": "banned", "insight": "Rien n'interdit le noir de départ, l'illustration collée ni le HUD timecode : à préciser (« premier mouvement à l'image 0 », « pas d'image réaliste hors système », « pas de HUD décoratif »)."},
+    {"kind": "qa", "insight": "Le sens de course du cheval (face à droite, recule vers la gauche) et le double volet final auraient été rattrapés par une consigne de relecture image par image des transitions et des directions de mouvement."}
+  ],
+  "steal": [
+    "Faire naître chaque transition d'un objet du plan : le soulignement s'épaissit jusqu'à devenir le fond, le mot-clé élu s'ouvre en iris sur son article.",
+    "Transformer les éléments d'une étape en données de la suivante : chaque carte publiée rétrécit en point rouge du graphique de classement, avec 3 im de décalage.",
+    "Accroche en paradigme : garder « Your » fixe et rouler le dernier mot toutes les 15 im (0,25 s), roulement de 6-9 im avec flou vertical, mot final en rouge.",
+    "Compteur en odomètre qui freine en ease-out (pas de 9 à 1) et déclenche, à l'image même où il atterrit, le statut « Writing → Ready » en rouge.",
+    "Finir une preuve chiffrée par une plongée accélérée (ease-in, flou radial) dans le dernier point, dont la couleur devient le fond du plan suivant."
+  ],
+  "flaws": [
+    "Vidéo muette : aucune piste ni effet sonore, alors que le pas visuel de 0,25 s appelait une musique calée.",
+    "0,45 s de noir au départ (f0-f27) : temps mort de démarrage typique des compositions générées.",
+    "Séquence cheval décorative : gravure collée sans intégration, pose de galop figée, cheval qui recule vers la gauche en faisant face à droite.",
+    "Double volet crème puis rouge puis disparition en 1 im (f777-f784) : lu comme une hésitation, pas comme un geste.",
+    "Textes d'interface minuscules (pastilles, étiquettes mono ≈ 1 % de la hauteur) illisibles sur mobile ; HUD timecode devenu un tic des vidéos Claude."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : cinq transitions motivées enchaînées (soulignement → fond, iris depuis le mot-clé, article → case, cartes → points, plongée dans le point) et des compteurs en ease-out mesurables ; l'étude continue à 60 fps donnera les courbes exactes et les recouvrements entre gestes."
+  }
+}

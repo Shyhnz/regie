@@ -1,0 +1,386 @@
+{
+  "slug": "rebutonepress-810f78",
+  "title": "Black hole time story",
+  "handle": "@RebutonePress",
+  "family": "3d",
+  "craft": 4,
+  "craft_reason": "Trou noir rendu de façon physiquement crédible, récit à deux points de vue, son calé à l'image près sur la simulation ; mais rythme contemplatif, plan fixe de 94 s et sonde grossière.",
+  "summary": "Court-métrage scientifique de 5 min sur la dilatation du temps près d'un trou noir, façon Interstellar : approche lente, sonde larguée dont les flashs s'espacent vus du vaisseau mère, puis point de vue de la sonde qui franchit l'horizon sans rien sentir. Force : rendu physique, télémétrie calculée et son généré sur la même horloge. Faiblesse : rythme très lent, plan fixe de 94 s, sonde en carton.",
+  "prompt_vs_result": [
+    "Une ligne en chinois, sur le ton du défi : une histoire sur le temps, 5 min, vidéo complète avec audio et sous-titres, outils installés soi-même, « dans le style de l'environnement local », ne garder que le fichier final.",
+    "Claude a tout choisi : trou noir et dilatation du temps, deux actes (vaisseau mère puis sonde), titre « 视界 » (horizon), télémétrie mono à étiquettes orange, cadre Scope 2,39, son synthétisé depuis l'horloge de la simulation, sous-titres sans voix.",
+    "La durée imposée sans structure a produit des maintiens très longs (un carton toutes les 9 s). « Style de l'environnement local » est flou : traduit en HUD de terminal. Préciser densité d'événements, voix off et rythme aurait aidé."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "bandes Scope, ombre du trou noir, noirs de transition"},
+      {"hex": "#030304", "role": "fond spatial"},
+      {"hex": "#F8F8F8", "role": "côté brûlant du disque (beaming Doppler) et bloom"},
+      {"hex": "#B08A66", "role": "disque ambre, arc supérieur lentillé"},
+      {"hex": "#815B3C", "role": "disque côté qui s'éloigne"},
+      {"hex": "#5B3A1F", "role": "brun sombre du disque, bord droit"},
+      {"hex": "#D9CFC4", "role": "anneau de photons (trait fin)"},
+      {"hex": "#AFC3E8", "role": "étoiles bleutées"},
+      {"hex": "#2A2630", "role": "nébuleuse violet-gris en haut à droite"},
+      {"hex": "#63646D", "role": "bascule froide bleu-gris près de l'horizon (acte 3)"},
+      {"hex": "#E0A25E", "role": "étiquettes CJK du HUD (orange chaud, estimé)"},
+      {"hex": "#ECE9E4", "role": "sous-titres, valeurs du HUD, titre"},
+      {"hex": "#998F85", "role": "libellés gris du HUD (r, T, τ, z, dB)"}
+    ],
+    "type": "Titre CJK sans linéale légère (PingFang SC ou Noto Sans CJK probable) ≈ 8 % de la hauteur, interlettrage très large ; sous-titres sans régulière 3,3 % ; HUD monospace (Menlo/DejaVu Mono probable) 2,6 %, étiquettes CJK orange.",
+    "texture": "Bloom fort côté gauche (beaming Doppler, rayon ≈ 25 % du cadre) ; disque fait de fines stries concentriques au toucher pictural, mou en gros plan ; anneau de photons net d'1 à 2 px ; traînées d'étoiles tangentielles (flou de mouvement directionnel) ; ondulations concentriques de lentille gravitationnelle dans le fond ; nébuleuse discrète ; pas de grain visible.",
+    "style": "Cinéma spatial scientifique, télémétrie terminal",
+    "coherence": "Tout dérive d'une seule simulation : caméra, compteurs (r, T, τ, z, dB, débit), flashs de balise et bips partagent la même horloge, d'où une cohérence image-son-donnée indiscutable. Le cadre Scope, la palette ambre/noir et la typo sobre tiennent du début à la fin, avec un titre en boucle. Seule rupture : la sonde en boîte low-poly à éclairage plat (2:00-2:08) qui jure avec le photoréalisme du trou noir."
+  },
+  "rhythm": {
+    "bpm": 60,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Pas de musique rythmée : un bourdon (drone) synthétique plus deux couches de tics d'horloge à 1 Hz ; le 120 BPM détecté est le double de cette horloge à 60 par minute. La synchro est serrée là où elle existe (bip = flash à 1-2 im près, silence = franchissement à la même image), mais ce n'est pas un montage sur des temps musicaux. Une seule coupe franche en 5 min (3:34.00, f12840), placée au creux d'un decrescendo sonore. Les sous-titres arrivent toutes les 8 à 10 s (fondu 24 im = 0,40 s, maintien 6 à 8 s, trou de 1,1 s). Acte 1 (0:00-1:50) : seul un travelling avant lent fait évoluer l'image. Acte 2 (2:00-3:34) : plan fixe de 94 s, mais une pulsation visuelle et sonore chaque seconde (flash de la balise), de plus en plus espacée (1,03 s puis 2,5 s). Acte 3 (3:34-4:26) : caméra qui tombe, décor qui défile. Aucun gel d'image ; vrais temps morts : 6 im de noir à 3:34, 2,4 s de noir voulues à 4:26-4:28.4, titre final 4:51-4:57. L'indice automatique (91 % de « maintiens ») mesure surtout la lenteur des mouvements. Densité très faible par rapport à la grammaire 1600, assumée pour un récit contemplatif.",
+    "timeline": [
+      {"t": "0:00-0:04", "what": "Fondu depuis le noir : trou noir minuscule (≈ 7 % de la largeur) au centre d'un champ d'étoiles ; son de -73 à -41 dB", "technique": "fondu d'ouverture son + image"},
+      {"t": "0:07.3-0:09", "what": "Titre « 视界 » et sous-titre « 一次关于时间的坠落 » en fondu de 1,6 s, le trou noir posé entre les deux glyphes", "technique": "objet comme ponctuation du titre"},
+      {"t": "0:16.5-0:17.5", "what": "Le titre disparaît en fondu, le trou noir reste", "technique": "fondu d'opacité"},
+      {"t": "0:23.6-1:31", "what": "Six cartons scientifiques (lumière courbée, masse, seconde-lumière, vitesse du disque, Doppler, dos du disque) ; disque de 10 % à 71 % de la largeur", "technique": "travelling avant accéléré + un fait par carton"},
+      {"t": "1:31-1:50", "what": "La caméra descend dans le plan du disque (disque réduit à une ligne à 1:35) puis plonge au-dessus : le disque déborde du cadre", "technique": "plongée vers la position stationnaire"},
+      {"t": "1:41-1:48", "what": "« Le vaisseau mère se tient à 12 rayons de l'horizon » ; le bourdon perd 9 dB entre 101 et 103 s", "technique": "decrescendo à l'arrivée"},
+      {"t": "1:48", "what": "Début des tics à 1 Hz (horloge du vaisseau mère)", "technique": "horloge sonore"},
+      {"t": "1:57-2:02", "what": "Le HUD apparaît, compte à rebours T -00:05 à 00:00, largage", "technique": "compte à rebours"},
+      {"t": "2:00-2:12", "what": "La sonde (boîte + panneau, lumière clignotante) s'éloigne vers l'ombre : 15 % de la largeur puis un point", "technique": "sonde low-poly en perspective"},
+      {"t": "2:03-3:20", "what": "Flashs de balise et bips simultanés, intervalle 1,03 puis 2,5 s ; z de 0,004 à 1,8 ; dB de 0 à -18 ; cartons sur l'intervalle qui s'allonge, la lumière qui rougit", "technique": "sonification + deux horloges en déphasage"},
+      {"t": "3:20-3:33", "what": "z diverge (2,1 ; 9,5 ; 22,6 ; 59,7 ; 98,9 ; ∞), dB jusqu'à -80 puis « 丢失 » (perdu) ; T de la sonde figé à +01:04.61 ; carton « 但这只是我们看到的 » (mais ce n'est que ce que nous voyons)", "technique": "compteurs qui racontent la fin"},
+      {"t": "3:34.00", "what": "Coupe franche au noir au creux sonore (-43 dB), 6 im de noir, fondu d'entrée 0,9 s sur le point de vue de la sonde ; blocs du HUD inversés", "technique": "coupe au noir sur creux sonore"},
+      {"t": "3:36-4:08", "what": "« Sur la sonde, le temps s'écoule normalement » : tic propre régulier + signal du vaisseau mère ralenti (débit ×0,95 puis ×0,82) ; la caméra survole le disque qui sort par la droite", "technique": "chute en vue subjective (POV)"},
+      {"t": "4:08-4:25.5", "what": "L'ombre se recentre puis grossit jusqu'à déborder ; la teinte bascule de l'ambre au bleu-gris froid", "technique": "bascule chaud vers froid"},
+      {"t": "4:25.5-4:26.0", "what": "L'anneau se retourne et se contracte (≈ 100 % puis 18 % de la hauteur en 16 im), halo rosé 1 im, noir + silence numérique", "technique": "traversée de l'horizon"},
+      {"t": "4:26-4:30.8", "what": "Noir total ; le son revient à 4:28.0, l'image en fondu de 4:28.4 à 4:30.8", "technique": "son avant l'image (J-cut)"},
+      {"t": "4:32-4:48", "what": "Retour au vaisseau mère, HUD figé sur « 丢失 » ; tics à 1 Hz qui s'éteignent ; deux cartons de conclusion", "technique": "épilogue en écho du plan fixe"},
+      {"t": "4:50-5:00", "what": "Image assombrie à ≈ 40 %, le titre revient centré sur l'ombre, fondu au noir ; son de -25 à -46 dB", "technique": "titre en boucle + fondu de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Aucune musique à temps : un bourdon grave libre et deux couches de tics. Mesures faites hors planches (analyse du son par flux spectral, luminance du centre image par image). 1) Flash de balise et bip : 57 flashs mesurés entre 2:09 et 3:20, 56 ont un bip détecté +17 à +50 ms après (médiane +40 ms, dont ≈ 15 ms de biais d'analyse), soit 1 à 2 im réelles à 60 fps. 2) Intervalle des flashs : 1,033 s puis 2,5 s, égal à 1+z affiché (z = 0,07 à 2:20 pour 1,07 s ; z = 0,143 à 2:35 pour 1,14 s). 3) Tics du vaisseau mère toutes les 1,00 s exactement de 108,05 à 211,05 s, sur le changement de seconde de T (±3 im) ; à l'acte 3, tic propre à x,44 s sur les secondes entières de τ et bips du vaisseau mère espacés de 1/débit (1,07 s à 3:36, 1,12 s à 3:50). 4) Silence numérique (-180 dB) de 266,05 à 268,0 s, à l'image même du noir de franchissement (f15960, ±3 im). 5) Coupe 3:34.00 au point le plus bas d'un decrescendo de 5 s (-23 puis -43 dB). 6) Bourdon en crescendo de -73 à -12 dB pendant l'approche. Le dossier conclut « aucune synchro » : normal, la grille de temps ne s'applique pas. Le bourdon reste libre ; tout le reste est verrouillé par construction.",
+    "synced": ["flashs", "pulsations", "coupes", "drop"],
+    "style_match": "Bourdon grave sans pulsation et tics d'instrument de mesure : idéal pour un récit lent et scientifique ; le son « télémétrique » épouse le HUD et les courbes douces.",
+    "how_built": "Le prompt ne demande que « audio ». Claude a probablement synthétisé la bande-son en code à partir de la timeline même du rendu : tics aux secondes entières de T et τ, bips aux instants de flash calculés (intervalle 1+z), silence à l'image du franchissement, decrescendo avant la coupe. La synchro est donc exacte par construction (sonification), sans grille musicale."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en deux points de vue",
+      "name_en": "Dual point of view",
+      "t": "1:50-4:48",
+      "frames": "f6600-f17280",
+      "fps": 60,
+      "mechanics": "Le même événement (la chute dans l'horizon) est montré deux fois. Vu du vaisseau mère (2:00-3:34, plan fixe de 94 s) : la sonde ralentit, rougit, s'éteint, z tend vers l'infini. Vu de la sonde (3:34-4:26) : le temps s'écoule normalement, rien ne se passe au franchissement. La phrase charnière « 但这只是我们看到的 » (mais ce n'est que ce que nous voyons, 3:28-3:33) précède la coupe au noir. Le HUD se renverse : à gauche « 母船 » devient « 探测器 », à droite « 探测器 · 接收信号 » devient « 母船信号 », plus l'étiquette centrale « 探测器视角 » (vue de la sonde). Un épilogue revient au plan du vaisseau mère, figé sur « 丢失 » (perdu).",
+      "verdict": "reprendre",
+      "evidence": "overview-18.jpg, overview-19.jpg, overview-23.jpg, microM-001-cut-f12840.jpg",
+      "illus": {"from": 12780, "to": 12960, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe au noir sur creux sonore",
+      "name_en": "Cut to black on audio trough",
+      "t": "3:33.98-3:35.0",
+      "frames": "f12839-f12900",
+      "fps": 60,
+      "mechanics": "Coupe franche de l'image au noir pur à f12840, sans fondu de sortie ; 6 im de noir (f12840-f12845 = 0,10 s), puis fondu d'entrée quasi linéaire d'environ 55 im (0,9 s) sur la nouvelle scène, HUD compris. Le son a préparé la coupe : il décroît de -23 dB (208 s) à -43 dB (213,8-214,0 s), soit un decrescendo de 5 s qui atteint son minimum à la coupe. La nouvelle horloge (tic de la sonde) démarre à 214,44 s, soit 26 im après la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f12840.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Traversée de l'horizon : anneau qui se contracte puis noir",
+      "name_en": "Horizon crossing ring collapse",
+      "t": "4:25.5-4:26.0",
+      "frames": "f15930-f15960",
+      "fps": 60,
+      "mechanics": "De 4:12 à 4:25.5, l'ombre grossit jusqu'à déborder du cadre (bords de l'anneau hors champ) en accélérant. À f15931, la vue s'inverse : l'anneau de photons rentre dans le cadre comme une ellipse plus grande que l'image, puis se contracte en accélérant (ease-in), diamètre ≈ 100 % de la hauteur (f15943), 85 % (f15949), 60 % (f15953), 38 % (f15957), 30 % (f15958), 18 % (f15959) ; étoiles visibles tout autour. f15959 : halo rose-violet pâle pendant 1 im. f15960 : noir pur. Pas de flou de mouvement malgré la vitesse. Le son tombe au silence numérique à la même image (±3 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f15958.jpg, extra-01.jpg",
+      "illus": {"from": 15930, "to": 15960, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence numérique sur l'instant clé, puis son avant l'image",
+      "name_en": "Hard silence then J-cut return",
+      "t": "4:26.0-4:30.8",
+      "frames": "f15960-f16250",
+      "fps": 60,
+      "mechanics": "Le son passe de -13 dB à -180 dB (zéro numérique) en moins de 0,1 s à 266,05 s, l'image du noir de franchissement. 1,95 s de silence absolu. Retour à 268,0 s avec un fondu de 0,4 s (-61 puis -38 dB), alors que l'image reste noire jusqu'à ≈ 4:28.4 (f16104) puis remonte en fondu linéaire jusqu'à ≈ 4:30.8 (f16248). Le son précède donc l'image d'environ 0,4 s, et l'image met 2,4 s à revenir. Le silence absolu est le seul de toute la bande-son (2 % de la durée).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-23.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sonification : chaque bip est un flash de la balise",
+      "name_en": "Beacon sonification",
+      "t": "2:09-3:20",
+      "frames": "f7740-f12000",
+      "fps": 60,
+      "mechanics": "57 flashs repérés par la luminance du centre de l'image ; 56 ont un bip mesuré +17 à +50 ms après (médiane +40 ms avec ≈ 15 ms de biais d'analyse), donc 1 à 2 im réelles. L'intervalle passe de 1,033 s à 2,5 s et suit exactement 1+z du HUD (z = 0,07 à 2:20 pour 1,07 s ; z = 0,143 à 2:35 pour 1,14 s). La luminosité du flash baisse (crête 245 puis 64/255) en même temps que le volume du bip (flux 199 puis 75). Le phénomène physique est entendu, vu et lu en même temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-13.jpg (flash à 2:25), overview-14.jpg (2:35, 2:42), overview-15.jpg (2:57)"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Deux horloges qui se déphasent",
+      "name_en": "Phasing clocks",
+      "t": "1:48-4:25",
+      "frames": "f6480-f15900",
+      "fps": 60,
+      "mechanics": "Couche A : tic régulier à 1 Hz exactement (108,05 à 211,05 s), calé sur le changement de seconde du compteur T du vaisseau mère (±3 im). Couche B : bips de la sonde, en phase jusqu'à 123 s puis en retard croissant (+0,01 s par bip au début, +0,4 s à la fin), comme un déphasage à la Steve Reich. À l'acte 3, les rôles s'inversent : tic propre de la sonde à 1 Hz (x,44 s, sur les secondes entières de τ) et signal du vaisseau mère ralenti (1,07 s à 3:36, 1,12 s à 3:50, puis plus rare). L'oreille entend la dilatation avant le carton qui la nomme (2:40, « 闪光的间隔，正在一点点变长 »).",
+      "verdict": "reprendre",
+      "evidence": "analyse audio (flux spectral), overview-11.jpg à overview-17.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bourdon en crescendo indexé sur l'approche",
+      "name_en": "Drone swell tied to approach",
+      "t": "0:00-1:43",
+      "frames": "f0-f6180",
+      "fps": 60,
+      "mechanics": "Bourdon grave (centroïde spectral de 160 à 500 Hz) dont le niveau suit la progression de la caméra : -73 dB (0 s), -26 (8 s), -23 (30 s), -18 (60 s), -13 (85 s), -12 (95 s), pendant que le disque passe de 7 % à 87 % de la largeur. Puis decrescendo de 9 dB entre 101 et 103 s, sur le carton « 母船悬停在 12 倍视界半径处 » (le vaisseau s'immobilise) : arriver, c'est se taire. Cohérence au niveau macro uniquement, pas d'événement ponctuel.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, analyse RMS"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant accéléré",
+      "name_en": "Accelerating push-in",
+      "t": "0:00-1:50",
+      "frames": "f0-f6600",
+      "fps": 60,
+      "mechanics": "Largeur du disque en % du cadre : 7 % (0:03), 10 % (0:30), 16 % (0:40), 30 % (0:50), 46 % (1:00), 56 % (1:10), 71 % (1:30), 87 % (1:40), plus de 100 % (1:47). Lent puis de plus en plus rapide (ease-in, comme 1/distance), sans à-coup ni tremblement. À partir de 1:20, la caméra descend dans le plan du disque (le disque devient une ligne fine à 1:35, l'image Interstellar), puis remonte au-dessus et plonge (1:44-1:50) jusqu'à la vue stationnaire à 12 rayons. Trop lent pour produire du flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-10.jpg",
+      "illus": {"from": 180, "to": 6300, "n": 8}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Trou noir lancé en rayons, avec lentille gravitationnelle",
+      "name_en": "Ray-traced lensed black hole",
+      "t": "0:40-4:48",
+      "frames": "f2400-f17280",
+      "fps": 60,
+      "mechanics": "Le dos du disque est courbé au-dessus et au-dessous de l'ombre (carton à 1:24) ; un anneau de photons d'1 à 2 px (#D9CFC4) se dessine dans l'ombre ; une image secondaire du disque passe sous l'ombre. Beaming Doppler : côté gauche (qui approche) blanc brûlant #F8F8F8 avec bloom, côté droit ambre puis brun (#815B3C, #5B3A1F). L'ombre est un noir pur #000000. Le disque tourne lentement (texture qui coule d'une vignette à l'autre). Moteur maison probable (lancer de rayons en Python ou GLSL monté dans le devshell).",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg, overview-09.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Champ d'étoiles déformé par la lentille",
+      "name_en": "Lensed starfield",
+      "t": "1:00-1:40",
+      "frames": "f3600-f6000",
+      "fps": 60,
+      "mechanics": "Étoiles bleutées (#AFC3E8) et orangées, certaines étirées en courtes traînées tangentielles autour du trou noir ; anneaux sombres concentriques dans la nébuleuse violet-gris (#2A2630) autour de l'ombre (1:20-1:30), qui trahissent la déformation de l'espace ; nébuleuse sur ≈ 15 % du cadre en haut à droite. Le fond vit sans détourner l'œil du centre.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "HUD de télémétrie calculée",
+      "name_en": "Computed telemetry HUD",
+      "t": "1:57-4:48",
+      "frames": "f7020-f17280",
+      "fps": 60,
+      "mechanics": "Deux blocs dans les coins hauts de la zone image, marges de 5 % (x = 96 px, y ≈ 180 px). Étiquette CJK orange ≈ 22 px (#E0A25E estimé), filet de 1 px sur ≈ 300 px, puis 2 à 3 lignes monospace ≈ 28 px (2,6 % de la hauteur) : libellé gris à gauche (r, T, τ, z, dB, 速率 = débit), valeur blanche alignée à droite. Mise à jour à chaque image : T au format +mm:ss.cc, z à 3 décimales, dB à 1 décimale. À l'acte 3, étiquette centrale « 探测器视角 » très espacée. Effet terminal sobre, cohérent avec « le style de l'environnement local ».",
+      "verdict": "reprendre",
+      "evidence": "overview-11.jpg, overview-19.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs qui racontent la fin",
+      "name_en": "Counters as narrative",
+      "t": "3:14-3:33",
+      "frames": "f11640-f12780",
+      "fps": 60,
+      "mechanics": "Divergence montrée par les chiffres seuls, pendant que le point disparaît. z : 0,861 (3:14), 1,045, 1,326, 1,796, 2,685, 4,626 (3:24), 9,468, 22,641, 59,712, 98,879 (3:31) puis « ∞ » (3:32). dB : -10,8 puis -80,0, puis le mot « 丢失 » (perdu). Le temps propre de la sonde converge puis se fige à +01:04.61. Le compteur devient le personnage principal.",
+      "verdict": "reprendre",
+      "evidence": "overview-17.jpg, overview-18.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash de balise : attaque sèche, déclin linéaire, extinction rouge",
+      "name_en": "Beacon flash envelope",
+      "t": "2:24.97-2:25.35",
+      "frames": "f8698-f8721",
+      "fps": 60,
+      "mechanics": "Luminance du point : de 145 à 235/255 en 1 image (aucune rampe), puis déclin linéaire d'environ 4/255 par image sur 20 à 22 im (0,35 s) jusqu'au niveau de base. Le point paraît ≈ 3 fois plus grand à la crête (visible à 2:25, 2:35, 2:42, 2:57 sur les planches). Au fil des minutes, la crête et le niveau de base baissent (245 puis 64) et le point vire au rouge, comme l'annonce le carton « 它的光越来越红，也越来越暗 ».",
+      "verdict": "reprendre",
+      "evidence": "overview-13.jpg, overview-14.jpg, overview-15.jpg, mesure de luminance"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule chaud vers froid avant l'horizon",
+      "name_en": "Warm-to-cold shift near horizon",
+      "t": "4:12-4:26",
+      "frames": "f15120-f15960",
+      "fps": 60,
+      "mechanics": "Le disque ambre (#815B3C) se désature en bleu-gris (#63646D), l'anneau devient blanc bleuté, les étoiles bleuissent (décalage vers le bleu de la lumière qui arrive). La bascule couvre ≈ 10 s et annonce un changement de régime avant le franchissement.",
+      "verdict": "reprendre",
+      "evidence": "overview-22.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre Scope 2,39:1, sous-titres dans la bande noire",
+      "name_en": "Scope letterbox with subtitles in the bar",
+      "t": "0:00-5:00",
+      "frames": "f0-f17999",
+      "fps": 60,
+      "mechanics": "Bandes noires de 138 px en haut et en bas (12,8 % chacune), zone active 1920×804. Sous-titres centrés à y ≈ 985 px (91 % de la hauteur) dans la bande, jamais sur l'image ; HUD dans la zone image. Composition symétrique centrée sur le trou noir. Sur l'espace noir du début, les bandes sont invisibles : le format ne se révèle qu'à 1:10, quand le disque remplit le cadre.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Le trou noir comme espace entre les glyphes du titre",
+      "name_en": "Object as title punctuation",
+      "t": "0:07.3-0:17.5",
+      "frames": "f436-f1050",
+      "fps": 60,
+      "mechanics": "« 视 界 » en CJK sans légère, glyphes ≈ 90 px (8,3 % de la hauteur), blanc chaud #EDE6DA. Écart d'environ 1 em entre les deux caractères, dans lequel le trou noir (≈ 4 % de la largeur) tombe exactement, comme un point médian. Sous-titre « 一 次 关 于 时 间 的 坠 落 » ≈ 22 px (2 %), interlettrage ≈ +0,6 em, gris #BDB8B0, 60 px sous le titre. Fin de la vidéo : même titre centré sur l'ombre géante (boucle).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-01.jpg, overview-25.jpg",
+      "illus": {"from": 430, "to": 540, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Fondus d'opacité seuls pour titre et sous-titres",
+      "name_en": "Opacity-only fades",
+      "t": "0:07.27-0:08.83",
+      "frames": "f436-f530",
+      "fps": 60,
+      "mechanics": "Titre : opacité de 0 à 100 % de f436 à ≈ f530 (94 im ≈ 1,6 s), sous-titre ≈ 0,2 s plus tard ; sortie ≈ 1 s (16,5-17,5 s). Sous-titres : fondu d'entrée 24 im (0,40 s) quasi linéaire, maintien 6 à 8 s, sortie 24 im, trou de 1,1 s (exemple : entrée 23,62-24,02 s, sortie 29,52-29,90 s, suivant à 30,62 s). Aucun mouvement, flou ni animation d'interlettrage.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, mesure de luminance de la bande"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Sous-titres sobres en CJK",
+      "name_en": "Plain CJK subtitles",
+      "t": "0:23.6-4:48",
+      "frames": "f1417-f17280",
+      "fps": 60,
+      "mechanics": "Sans régulière (PingFang SC ou Noto Sans CJK probable), corps ≈ 36 px (3,3 % de la hauteur), blanc cassé #ECE9E4, ponctuation chinoise pleine chasse, une seule ligne de 4 à 24 caractères, centrée dans la bande basse. Vitesse de lecture très confortable (7 caractères pour 6 s).",
+      "verdict": "reprendre",
+      "evidence": "f87 (1:27), overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Un fait scientifique par carton",
+      "name_en": "One fact per caption",
+      "t": "0:23.6-4:48",
+      "frames": "f1417-f17280",
+      "fps": 60,
+      "mechanics": "20 cartons, chacun une seule affirmation, enchaînés comme un raisonnement : il ne brille pas, on voit la lumière courbée, masse et rayon, une seconde-lumière, gaz à mi-vitesse de la lumière, côté bleu et côté rouge, dos du disque courbé, vaisseau à 12 rayons, sonde larguée, synchro au départ, intervalle qui s'allonge, lumière plus rouge, temps figé, éternellement dehors, « mais ce n'est que ce que nous voyons », puis le point de vue de la sonde. La science est le récit, avec un retournement.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg à overview-25.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Compte à rebours de largage",
+      "name_en": "Launch countdown",
+      "t": "1:57-2:02",
+      "frames": "f7020-f7320",
+      "fps": 60,
+      "mechanics": "Le HUD apparaît avec T à -00:05.00 et décompte jusqu'à +00:00.00 (5 s) pendant que la sonde est au premier plan. C'est le seul « top départ » de la pièce ; il marque l'entrée dans l'acte 2.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Sonde low-poly à éclairage plat",
+      "name_en": "Low-poly probe model",
+      "t": "2:00-2:12",
+      "frames": "f7200-f7920",
+      "fps": 60,
+      "mechanics": "Boîte grise à couvercle et mince panneau solaire, ombrage plat, lumière clignotante sur le dessus. ≈ 15 % de la largeur à 2:00, 6 % à 2:05, 3 % à 2:08, un point à 2:12 (rétrécissement rapide puis lent, effet de perspective). Pas de lumière de contour ni d'ombre cohérente avec le disque éblouissant : on dirait un carton posé devant un plan photoréaliste.",
+      "verdict": "adapter",
+      "evidence": "overview-11.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plan fixe d'observateur",
+      "name_en": "Locked-off observer shot",
+      "t": "2:00-3:34",
+      "frames": "f7200-f12839",
+      "fps": 60,
+      "mechanics": "Caméra parfaitement fixe à 12 rayons pendant 94 s : seuls changent la texture du disque qui coule, le point de la sonde, ses flashs et les chiffres du HUD. Juste sur le fond (l'observateur attend), mais long : aucun changement de cadrage pendant un tiers de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "overview-11.jpg à overview-18.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Chute en vue subjective",
+      "name_en": "POV fall",
+      "t": "3:35-4:25",
+      "frames": "f12900-f15900",
+      "fps": 60,
+      "mechanics": "La caméra avance vers le trou noir et survole le disque : celui-ci glisse vers la droite et sort du cadre entre 3:51 et 4:08 (≈ 60 % de la largeur en 17 s, vitesse constante), l'ombre rentre et se recentre (4:08-4:12), puis grossit de ≈ 55 % à plus de 100 % de la hauteur de l'image (4:12-4:25) en accélérant.",
+      "verdict": "adapter",
+      "evidence": "overview-19.jpg à overview-22.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Ouverture et fermeture en fondu son + image",
+      "name_en": "Audio-visual fade in and out",
+      "t": "0:00-0:08 ; 4:50-5:00",
+      "frames": "f0-f480 ; f17400-f17999",
+      "fps": 60,
+      "mechanics": "Ouverture : image du noir au plein en ≈ 3 s (f0-f180), son de -73 à -26 dB en 8 s, le titre arrive quand le son atteint son plateau. Fin : image assombrie à ≈ 40 % (4:50-4:51) sous le titre, fondu au noir 4:57.5-4:59, son de -25 à -46 dB sur 297,5-300 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-25.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Disque strié pictural et bloom",
+      "name_en": "Painterly disk streaks with bloom",
+      "t": "1:44-3:34",
+      "frames": "f6240-f12839",
+      "fps": 60,
+      "mechanics": "Disque fait de fines stries concentriques ; de près, la matière paraît brossée et floue (basses fréquences), plus peinture que gaz turbulent. Bloom d'un rayon ≈ 25 % du cadre côté gauche. L'ensemble est cinématographique de loin, mou en gros plan.",
+      "verdict": "adapter",
+      "evidence": "overview-10.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rythme contemplatif : une information toutes les 9 s",
+      "name_en": "Contemplative pacing",
+      "t": "0:00-5:00",
+      "frames": "f0-f17999",
+      "fps": 60,
+      "mechanics": "20 cartons en 300 s (un toutes les 9 à 10 s), 1 coupe franche, 2 noirs. La pulsation de l'acte 2 vient du flash et du tic chaque seconde, pas du montage. Cohérent pour un court-métrage scientifique ; incompatible avec la grammaire 1600 (quelque chose toutes les 0,5 à 1 s) et avec un fil social.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, toutes les planches overview"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "build", "insight": "« Configure toi-même les outils dans le devshell » : Claude a monté sa propre chaîne (rendu par lancer de rayons et synthèse sonore probables). Comme image, compteurs et son sortent de la même timeline de simulation, la synchro bip/flash/silence est exacte par construction : c'est la meilleure leçon de la vidéo."},
+    {"kind": "inputs", "insight": "« Vidéo complète, audio et sous-titres » sans parler de voix : Claude a incrusté des sous-titres et une bande-son synthétique, sans voix off ni musique à temps. Il aurait fallu demander une voix ou une musique pour obtenir autre chose."},
+    {"kind": "direction", "insight": "« Dans le style de l'environnement local » est ambigu ; Claude l'a probablement lu comme l'esthétique terminal/devshell : HUD monospace, étiquettes orange (rappel probable de l'orange de Claude Code), données brutes."},
+    {"kind": "structure", "insight": "« Une histoire sur le temps, 5 min » : Claude a choisi la dilatation relativiste et une structure en deux points de vue avec retournement. Faute de consigne de rythme, les 5 min ont été remplies par des maintiens très longs (plan fixe de 94 s, un carton toutes les 9 s)."},
+    {"kind": "other", "insight": "Le ton de défi (« on dit qu'Opus 5.5 est fort en vidéo, montre-moi ») a poussé vers l'ambition technique et l'exactitude scientifique (1+z, seconde-lumière, 12 rayons) plutôt que vers le spectaculaire rapide."},
+    {"kind": "qa", "insight": "Aucune étape de relecture visuelle demandée : la sonde en boîte low-poly et la texture molle du disque en gros plan sont restées, alors qu'elles cassent le photoréalisme."}
+  ],
+  "steal": [
+    "Piloter image, compteurs et son par une seule horloge de simulation : chaque bip naît du même calcul que le flash, et la synchro devient exacte par construction.",
+    "Rendre un phénomène audible : deux couches de tics à 1 Hz qui se déphasent font entendre la dilatation avant que le carton ne la nomme.",
+    "Marquer l'instant clé par l'absence : noir et silence numérique sur la même image, puis retour du son 0,4 s avant l'image.",
+    "Couper au creux du son : laisser la bande décroître pendant 5 s, couper au noir au point le plus bas, relancer avec la nouvelle scène.",
+    "Faire de l'objet principal la ponctuation du titre (le trou noir entre « 视 » et « 界 »), puis refermer la vidéo sur le même titre."
+  ],
+  "flaws": [
+    "Plan fixe de 94 s et un carton toutes les 9 s : trop lent pour un fil social, à l'opposé de la grammaire 1600.",
+    "Sonde en boîte low-poly à éclairage plat : rupture nette avec le rendu photoréaliste du trou noir.",
+    "HUD à 2,6 % de la hauteur, dense et technique (τ, z, dB) : illisible sur mobile.",
+    "Disque au toucher pictural, mou en gros plan : on voit de la peinture plutôt que du gaz turbulent.",
+    "2,4 s de noir total à 4:26 : fort au cinéma, mais risque de passer pour un bug en ligne."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Les mouvements sont lents et continus sur 5 min : les leçons sont structurelles (double point de vue, sonification, silence) et déjà mesurées. Seuls les 30 im du franchissement (f15930-f15960) méritent l'image par image, et microM-002 plus extra-01 les couvrent déjà."
+  }
+}

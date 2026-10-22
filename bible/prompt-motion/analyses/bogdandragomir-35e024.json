@@ -1,0 +1,518 @@
+{
+  "slug": "bogdandragomir-35e024",
+  "title": "Product intro synced to music",
+  "handle": "@BogdanDragomir",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Concept fort (l'encre électronique pilote ouverture et transitions), DA éditoriale tenue, synchro au demi-temps ; mais texte d'interface minuscule et un maintien de 2 s.",
+  "summary": "Intro de 15 s pour Folio, service qui envoie newsletters et articles sur liseuse. Ouverture « Fig. 1 » sur une microcapsule d'encre électronique, dézoom jusqu'à la grille de pixels, puis trois chapitres (Collect, Digest, Deliver) et logo. Les transitions imitent l'écran e-ink (balayage granuleux, flash noir, retournement de pastilles) et tombent sur les demi-temps d'une musique générée à 96 BPM.",
+  "prompt_vs_result": [
+    "Le prompt donne seulement l'URL du produit, demande une intro qui montre ce qu'il fait, une musique créée par Claude et synchronisée, et un niveau « chef-d'œuvre de portfolio ».",
+    "Claude a tout décidé : le concept e-ink (capsule, pixels, rafraîchissement), la structure en 3 chapitres numérotés, la DA serif crème/brun, les comètes de particules, la musique à 96 BPM et le calage des lignes sur les demi-temps.",
+    "Bon cadrage : demander musique ET synchro a produit une grille commune image/son. Manquait : durée, taille minimale du texte (listes illisibles), interdiction des maintiens longs, format."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#0E0C0B",
+        "role": "fond de l'ouverture (noir brun)"
+      },
+      {
+        "hex": "#EDE9E1",
+        "role": "billes blanches de la capsule, pastilles"
+      },
+      {
+        "hex": "#1C1916",
+        "role": "fond chapitre 01 (brun très sombre, vignette)"
+      },
+      {
+        "hex": "#D9D3C9",
+        "role": "titres crème sur fond sombre"
+      },
+      {
+        "hex": "#8A847B",
+        "role": "étiquettes et sous-titres en petites capitales"
+      },
+      {
+        "hex": "#F4F4EF",
+        "role": "fond clair chapitre 02 et logo"
+      },
+      {
+        "hex": "#EEEAE3",
+        "role": "fond papier chaud chapitre 03"
+      },
+      {
+        "hex": "#161514",
+        "role": "texte noir sur fond clair, logo"
+      },
+      {
+        "hex": "#DCD7CC",
+        "role": "écran de la liseuse"
+      },
+      {
+        "hex": "#2A2826",
+        "role": "cadre de la liseuse noire"
+      }
+    ],
+    "type": "Serif de texte (probable Newsreader), romain + mot clé en italique, ≈ 6 % de la hauteur par ligne. Logo « Folio » serif gras italique ≈ 12 %. Étiquettes petites capitales sans, interlettrage ≈ +15 %. URL sans géométrique.",
+    "texture": "Grain et tramage (dither) partout : bords de fondu granuleux, nuages de particules, bande de rafraîchissement bruitée ; vignette douce sur les fonds sombres ; flou de profondeur (bokeh) sur les capsules de l'ouverture ; ombres portées douces sous la page et les liseuses. Pas de flou de mouvement.",
+    "style": "Éditorial papier, encre électronique, calme",
+    "coherence": "Tout est tiré de la technologie e-ink : capsules d'encre, pixels, tramage, flash noir de rafraîchissement, passage du sombre (boîte de réception) au clair (lecture calme). Même gabarit par chapitre : numéro + titre serif à gauche, objet à droite. Seules les comètes de particules sortent un peu du registre « papier »."
+  },
+  "rhythm": {
+    "bpm": 96,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "96 BPM (netteté 8,54, très nette), un temps = 37,5 im à 60 fps, un demi-temps = 18,75 im ; premier temps à 0,333 s (f20). Les attaques fortes du son (3,15 / 3,77 / 5,03 / 5,65 / 5,96 / 6,28 / 6,58 / 7,84 / 10,33 s) coïncident avec les événements visuels. La grammaire est « départ sur le demi-temps, atterrissage sur le temps » : le balayage granuleux part à f451 (demi-temps 451) et finit à f470 (temps 470) ; le morphing papier → liseuse part à f601 (demi-temps) et se fige à f620 (temps) ; l'iris part au flash noir f750 (demi-temps 751) et sort du cadre vers f770 (temps). Lignes ajoutées à la liste toutes les 18-19 im, soit chaque demi-temps (f339, f357, f376, f395). Seulement 2 vraies coupes (f750, f767) : tout le reste est en plan continu avec morphings. Maintiens : 46 % du temps est « statique » selon la mesure (4,18-5,03 ; 6,5-7,52 ; 7,9-10,0 s = 2,1 s avec seulement l'éventail de pages discret ; 10,28-10,93 ; logo final 13,55-14,98 s). Les maintiens de 0,7-1 s laissent lire, celui de 2,1 s est un vrai temps mort au regard de la grammaire 1600.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.3",
+        "what": "Noir, ouverture en fondu",
+        "technique": "fondu depuis le noir"
+      },
+      {
+        "t": "0:00.3-0:00.93",
+        "what": "Sphère de verre ≈ 25 % de la hauteur remplie de billes blanches, capsules floues en bokeh derrière, légende « Fig. 1 A single microcapsule of electronic ink »",
+        "technique": "figure scientifique, profondeur de champ"
+      },
+      {
+        "t": "0:00.93",
+        "what": "Les billes passent du blanc au noir en 3 im (f54-f57), sur le temps f57",
+        "technique": "retournement de pigment calé sur le temps"
+      },
+      {
+        "t": "0:01.0-0:01.6",
+        "what": "Dézoom : la capsule rétrécit à ≈ 8 % de la hauteur, les capsules du fond s'alignent en grille",
+        "technique": "zoom arrière d'échelle"
+      },
+      {
+        "t": "0:01.58-0:02.0",
+        "what": "Les disques se retournent comme des pièces (ellipses, traits) et deviennent des points blancs, puis la grille se densifie en pixels",
+        "technique": "afficheur à palettes (flip-disc)"
+      },
+      {
+        "t": "0:02.0-0:02.7",
+        "what": "Une colonne de points s'organise au centre comme une page tramée",
+        "technique": "page en pixels"
+      },
+      {
+        "t": "0:02.6-0:02.85",
+        "what": "Les points s'éteignent, le chapitre « 01 · COLLECT / Forward your newsletters. » apparaît en fondu ; drop musical à 2,59 s",
+        "technique": "fondu enchaîné sur le drop"
+      },
+      {
+        "t": "0:03.1-0:03.7",
+        "what": "Enveloppe en contour suivie d'une traînée de particules entre par la droite, courbe vers la liste et se dissout en ligne « On Slow Mornings »",
+        "technique": "comète de particules qui devient une ligne"
+      },
+      {
+        "t": "0:03.75-0:04.35",
+        "what": "Deuxième enveloppe, deuxième ligne « Why Paper Still Wins »",
+        "technique": "répétition du geste"
+      },
+      {
+        "t": "0:04.35-0:05.03",
+        "what": "Maintien",
+        "technique": "temps de lecture"
+      },
+      {
+        "t": "0:05.05-0:05.25",
+        "what": "Le titre se brouille et se recompose en « Save articles from anywhere. » ; 4 icônes (extension, partage, lien, RSS) arrivent en nuages de particules",
+        "technique": "brouillage de titre (scramble)"
+      },
+      {
+        "t": "0:05.6-0:06.6",
+        "what": "Quatre traînées horizontales de particules déposent 4 lignes, une par demi-temps",
+        "technique": "stagger au demi-temps"
+      },
+      {
+        "t": "0:06.6-0:07.5",
+        "what": "Maintien sur la liste complète (6 lignes)",
+        "technique": "temps de lecture"
+      },
+      {
+        "t": "0:07.52-0:07.83",
+        "what": "Balayage granuleux gauche → droite du sombre au clair ; « 02 · DIGEST / All of it, one quiet issue. » + page de magazine « The Weekly Quiet »",
+        "technique": "volet tramé façon rafraîchissement e-ink"
+      },
+      {
+        "t": "0:08.0-0:10.0",
+        "what": "Six pages s'ouvrent en éventail derrière la couverture puis se referment",
+        "technique": "éventail de pages"
+      },
+      {
+        "t": "0:10.0-0:10.33",
+        "what": "La page devient liseuse (cadre qui pousse, bande de rafraîchissement bruitée sur le contenu) ; le titre se brouille en « Arrives on your e-reader. »",
+        "technique": "morphing objet → appareil"
+      },
+      {
+        "t": "0:10.6-0:11.4",
+        "what": "Une liseuse noire glisse depuis le bord droit",
+        "technique": "entrée latérale en ease-out"
+      },
+      {
+        "t": "0:11.8-0:12.2",
+        "what": "La grande liseuse affiche l'article « On Slow Mornings » avec lettrine",
+        "technique": "changement de page"
+      },
+      {
+        "t": "0:12.5",
+        "what": "Écran de la liseuse noir plein (flash de rafraîchissement), 4 im",
+        "technique": "flash noir e-ink"
+      },
+      {
+        "t": "0:12.57-0:12.97",
+        "what": "Un point de particules naît au centre de l'écran, devient disque blanc puis anneau granuleux qui s'agrandit au-delà du cadre",
+        "technique": "iris de particules"
+      },
+      {
+        "t": "0:12.9-0:13.1",
+        "what": "« Folio » se forme depuis le grain, gris",
+        "technique": "logo qui se condense"
+      },
+      {
+        "t": "0:13.47",
+        "what": "Le logo passe du gris au noir en 4 im (f806-f810), sur le temps f808",
+        "technique": "assombrissement façon encre qui se fixe"
+      },
+      {
+        "t": "0:13.5-0:15.0",
+        "what": "Carton final : logo, « Your reading, away from screens. », myfolio.so",
+        "technique": "carton de fin tenu 1,5 s"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 96 BPM (temps tous les 37,5 im, demi-temps tous les 18,75 im, premier temps f20). Un événement clé par geste : billes qui virent au noir f55-57 (temps f57, barre bleue) ✓ ; pastilles qui se retournent f95 (temps f95, barre bleue) ✓ ; page tramée f120 (demi-temps f114) ✗ ; titre 01 apparaît f159-162 (drop 2,59 s = f155, mais entre demi-temps 151 et temps 170) ✗ ; entrée enveloppe 1 f187 (demi-temps 189, attaque 3,15 s) ✓ ; atterrissage enveloppe 1 f219-222 ✗ ; entrée enveloppe 2 f226 (demi-temps 226, attaque 3,77 s) ✓ ; atterrissage enveloppe 2 f258-261 (demi-temps 264) ✗ ; brouillage du titre f302 (demi-temps 301, attaque 5,03 s) ✓ ; lignes de liste f339, f357, f376, f395 (demi-temps 339, temps 357,5, demi-temps 376, temps 395 ; attaques 5,65 / 5,96 / 6,28 / 6,58 s) ✓✓✓✓ ; départ du balayage f451 (barre bleu clair f451) ✓ ; fin du balayage f470 (barre bleue f470, attaque 7,84 s) ✓ ; départ du morphing f601 (barre bleu clair f601) ✓ ; fin du brouillage f618-620 (barre bleue + point vert f620) ✓ ; flash noir f750 (barre bleu clair f751) ✓ ; iris qui atteint le bord f770 (barre bleue f770) ✓ ; logo qui noircit f808 (temps 807,5) ✓. Total : 15 gestes clés sur 19 à ±2 im d'une barre, contre ≈ 27 % au hasard (fenêtre de 5 im sur 18,75). Décalage typique : 0 à 1 im avant la barre. Les ratés sont des atterrissages de comètes (fins de courbe), pas des départs : cohérent avec l'indice auto (départs/demi-temps R = 0,85, p = 2e-4).",
+    "synced": [
+      "departs",
+      "apparitions",
+      "texte",
+      "atterrissages",
+      "flashs",
+      "drop"
+    ],
+    "style_match": "Musique générée calme à 96 BPM, pulsation nette : colle au propos « lecture tranquille » et aux courbes douces ; seuls départs et arrivées marquent le temps, sans secousse.",
+    "how_built": "Le prompt exige « create the music too and make sure the video is synced with it » : Claude a très probablement généré la bande-son en code avec une grille connue (96 BPM, temps à 0,333 s + n × 0,625 s) et placé chaque départ d'animation sur un temps ou un demi-temps de cette grille. La régularité des lignes de liste (18-19 im) et la coïncidence avec les attaques le confirment."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Dézoom d'échelle, du principe physique au produit",
+      "name_en": "powers-of-ten opening",
+      "t": "0:00.3-0:02.85",
+      "frames": "f18-f171",
+      "fps": 60,
+      "mechanics": "Plan continu sans coupe : microcapsule d'encre en gros plan (≈ 25 % de la hauteur) → zoom arrière, la capsule tombe à ≈ 8 % (f60-f95) → les capsules du fond deviennent une grille de pastilles → pixels (pas de grille ≈ 6 % puis ≈ 1 % de la largeur, f95-f119) → page tramée (f120-f160) → interface (fondu f160-f171). Chaque palier change d'échelle d'environ ×3 à ×5. L'ouverture explique la technologie avant le produit.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f56.jpg, microM-002-move-f105.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Figure scientifique légendée",
+      "name_en": "scientific figure framing",
+      "t": "0:00.3-0:01.6",
+      "frames": "f18-f95",
+      "fps": 60,
+      "mechanics": "Sphère de verre centrée à ≈ 38 % du haut, reflets sur le bord, légende serif italique minuscule « Fig. 1 A single microcapsule of electronic ink » centrée à ≈ 70 % du haut (≈ 1,2 % de la hauteur). Capsules floues (bokeh) ≈ 25 % de la hauteur en arrière-plan, brun #3A332C sur #0E0C0B. Registre « planche de manuel » qui annonce le ton éditorial.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, microM-001-move-f56.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Retournement des pigments sur le temps",
+      "name_en": "pigment flip on beat",
+      "t": "0:00.90-0:00.95",
+      "frames": "f54-f57",
+      "fps": 60,
+      "mechanics": "Les ≈ 300 billes blanches de la capsule virent au noir en 3 im (f54 blanc, f55 contraste, f56 mi-noir, f57 noir avec quelques éclats), comme les pigments d'une capsule e-ink qui basculent. f57 = barre bleue (temps). Ensuite le contenu reste noir moucheté, sans mouvement, jusqu'au dézoom.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f56.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Afficheur à palettes : pastilles qui se retournent",
+      "name_en": "flip-disc reveal",
+      "t": "0:01.55-0:02.0",
+      "frames": "f93-f120",
+      "fps": 60,
+      "mechanics": "Les capsules sombres du fond se retournent comme des pièces sur leur axe vertical : on voit des ellipses puis des traits fins (f99-f101) avant la face blanche. Départ aléatoire, dense dès f101 ; premiers retournements à f95 (barre bleue). Pendant le retournement, la grille rétrécit (zoom arrière continu) et passe de ≈ 15 pastilles à ≈ 60 en largeur en 20 im, ease-in-out. Aucun flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f105.jpg",
+      "illus": {
+        "from": 92,
+        "to": 112,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Page tramée qui s'efface sur le drop",
+      "name_en": "dot raster crossfade",
+      "t": "0:02.0-0:02.85",
+      "frames": "f120-f171",
+      "fps": 60,
+      "mechanics": "Dans la grille de points, une colonne verticale (≈ 18 % de la largeur, centrée légèrement à droite) se densifie en blocs horizontaux comme des lignes de texte tramées. Puis les points baissent en opacité en ≈ 12 im (f159-f171) pendant que titre et liste du chapitre 01 montent en fondu. Drop audio détecté à 2,59 s (f155) : le changement de scène part dessus.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de chapitre numéroté",
+      "name_en": "numbered chapter layout",
+      "t": "0:02.7-0:12.5",
+      "frames": "f162-f750",
+      "fps": 60,
+      "mechanics": "Même grille pour les 3 chapitres : à gauche à ≈ 5 % du bord, étiquette « 01 · COLLECT » / « 02 · DIGEST » / « 03 · DELIVER » en petites capitales (≈ 1 % de la hauteur), titre serif 2 lignes à ≈ 45 % du haut, sous-titre en petites capitales (« EXTENSION · SHARE SHEET · LINK · RSS »). À droite (≈ 55-80 % de la largeur), l'objet : liste d'inbox, magazine, liseuses. Repères de coupe d'imprimerie en L aux coins (≈ 4 % de marge) sur les scènes sombres.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif romain, mot clé en italique",
+      "name_en": "roman serif with italic keyword",
+      "t": "0:02.7-0:12.5",
+      "frames": "f162-f750",
+      "fps": 60,
+      "mechanics": "Titres en serif de texte (probable Newsreader), ≈ 6 % de la hauteur par ligne, interlignage serré ≈ 1,0, alignés à gauche. Un seul mot en italique par titre : « newsletters. », « anywhere. », « quiet », « e-reader. ». Crème #D9D3C9 sur sombre, noir #161514 sur clair. L'italique porte l'accent sans couleur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Comète de particules qui devient une ligne d'interface",
+      "name_en": "particle comet into list row",
+      "t": "0:03.1-0:04.35",
+      "frames": "f186-f261",
+      "fps": 60,
+      "mechanics": "Une icône d'enveloppe en contour (≈ 4 % de la largeur) entre par le bord droit à ≈ 75 % du haut, traînant un nuage ovale de ≈ 200 points blancs (≈ 10 % de la largeur), et monte en courbe vers la liste en ≈ 33 im (f186-f219), ease-out. Arrivée : l'enveloppe se dissout en points qui forment la ligne « On Slow Mornings » par brouillage (≈ 6 im). Deuxième comète décalée de 39 im (f226-f261). Départs sur demi-temps (f189, f226) ; arrivées libres.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Ligne d'inbox qui se décode",
+      "name_en": "row decode",
+      "t": "0:03.65-0:03.75",
+      "frames": "f219-f225",
+      "fps": 60,
+      "mechanics": "La nouvelle ligne (icône + titre serif + source en petites capitales) apparaît d'abord en blanc vif et brouillé (lettres en points), se stabilise en ≈ 6 im, puis reste un peu plus claire que les anciennes pendant ≈ 0,5 s (ligne « nouvelle » mise en évidence) avant de rejoindre le gris.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Brouillage de titre par particules",
+      "name_en": "particle text scramble",
+      "t": "0:05.05-0:05.25",
+      "frames": "f302-f315",
+      "fps": 60,
+      "mechanics": "« Forward your newsletters. » se dissout lettre par lettre en grain (f303-f306), les nouveaux glyphes « Save articles from anywhere. » se condensent de gauche à droite (f309-f315) : ≈ 13 im au total, pas de déplacement, opacité et tramage seulement. Le sous-titre en petites capitales apparaît en même temps. Départ sur le demi-temps f301 (attaque 5,03 s). Même geste réutilisé à f605-f617 pour « All of it » → « Arrives on ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, microM-004-move-f609.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Une ligne par demi-temps",
+      "name_en": "half-beat stagger",
+      "t": "0:05.6-0:06.6",
+      "frames": "f339-f396",
+      "fps": 60,
+      "mechanics": "Quatre icônes-sources (extension, partage, lien, RSS) ont atterri en nuages en bas à droite. Chacune s'étire en traînée horizontale de particules (≈ 25 % de la largeur, 2-3 im) qui file vers la gauche jusqu'à la liste et dépose une ligne : « The Quiet Web » f339, « A Short History of Ink » f357, « Learning to Read Again » f376, « Notes on Attention » f395. Écart constant 18-19 im = un demi-temps à 96 BPM. La musique compte les éléments.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 330,
+        "to": 398,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet tramé façon rafraîchissement e-ink",
+      "name_en": "dithered refresh wipe",
+      "t": "0:07.52-0:07.83",
+      "frames": "f451-f470",
+      "fps": 60,
+      "mechanics": "Un front clair #F4F4EF entre par la gauche avec un bord en grain épais (≈ 8 % de la largeur de bruit tramé, pas de dégradé lisse) et traverse le cadre en 19 im. Courbe ease-in-out : ≈ 5 % à f452, 35 % à f456, 65 % à f461, 90 % à f466, bord sorti f470. Le nouveau contenu (titre noir, magazine) est déjà en place sous le front ; seul le titre se recompose légèrement (f453-f456). Départ sur le demi-temps f451, arrivée sur le temps f470.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f456.jpg",
+      "illus": {
+        "from": 450,
+        "to": 471,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Inversion sombre → clair entre les chapitres",
+      "name_en": "dark to light chapter shift",
+      "t": "0:07.52",
+      "frames": "f451-f470",
+      "fps": 60,
+      "mechanics": "Collecte = fond brun nuit #1C1916, texte crème (le flux, le bruit). Lecture = blanc cassé #F4F4EF puis papier chaud #EEEAE3, texte noir (le calme). Le passage de l'un à l'autre est le seul changement de couleur fort de la vidéo, au milieu exact (7,5 s sur 15).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Éventail de pages derrière la couverture",
+      "name_en": "page fan",
+      "t": "0:08.0-0:10.0",
+      "frames": "f480-f595",
+      "fps": 60,
+      "mechanics": "Cinq ou six pages blanches pivotent derrière la couverture du magazine (≈ 3° à 15°, pivot en bas à droite) et laissent voir leurs numéros (3, 9, 14, 20, 27, 33), puis se rabattent vers f594-f595. Mouvement petit, tenu presque 2 s : la mesure d'énergie le classe en maintien (7,9-10,0 s). Idée juste (un numéro = plusieurs articles), exécution trop discrète.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-004-move-f609.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Morphing page papier → liseuse",
+      "name_en": "paper to e-reader morph",
+      "t": "0:10.0-0:10.33",
+      "frames": "f601-f620",
+      "fps": 60,
+      "mechanics": "Sans coupe : un cadre gris clair avec tranche sombre à gauche pousse autour de la page (f601-f608), l'ombre change, et une bande verticale de bruit (≈ 15 % de la largeur de la page) balaie le contenu de gauche à droite en ≈ 10 im (f604-f613), imitant le rafraîchissement d'un écran e-ink ; le fond passe à #EEEAE3. En parallèle le titre se brouille en « Arrives on your e-reader. » (f605-f617). Départ sur le demi-temps f601, fin sur le temps f620 (point vert d'attaque).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f609.jpg",
+      "illus": {
+        "from": 600,
+        "to": 620,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Seconde liseuse qui glisse depuis le bord",
+      "name_en": "second device slide-in",
+      "t": "0:10.6-0:11.4",
+      "frames": "f640-f685",
+      "fps": 60,
+      "mechanics": "Une liseuse noire #2A2826 (≈ 40 % de la hauteur) entre par la droite et s'arrête à ≈ 85 % de la largeur, à côté de la grande ; ease-out, sans dépassement. Elle sert à dire « sur n'importe quelle liseuse ». Mouvement le plus banal de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash noir de rafraîchissement puis iris de particules",
+      "name_en": "e-ink black flash into particle iris",
+      "t": "0:12.5-0:12.97",
+      "frames": "f750-f778",
+      "fps": 60,
+      "mechanics": "Coupe à f750 (demi-temps f751) : l'écran de la grande liseuse passe au noir plein, comme le flash d'un rafraîchissement e-ink, tenu 4 im. f754 : un point de particules naît au centre de l'écran ; disque blanc granuleux à f758 (≈ 6 % de la hauteur), ≈ 20 % à f762. À f763 le disque devient anneau à bord de grain épais et s'agrandit en accélérant (ease-in) : rayon ≈ 30 % f764, ≈ 55 % f768, bord du cadre f770 (temps), sorti vers f778. L'intérieur révèle le fond blanc du logo. Iris motivé : il sort de l'écran du produit.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f750.jpg, extra-03.jpg",
+      "illus": {
+        "from": 748,
+        "to": 772,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo qui se condense puis noircit sur le temps",
+      "name_en": "logo ink settle",
+      "t": "0:12.9-0:13.5",
+      "frames": "f774-f810",
+      "fps": 60,
+      "mechanics": "« Folio » (serif gras italique, ≈ 12 % de la hauteur, centré à ≈ 40 % du haut) se forme depuis le grain de gauche à droite en ≈ 10 im (f774-f784), en gris #6B6B6B. Tenu gris ≈ 22 im, puis passe au noir #141414 en ≈ 4 im (f806-f810), sur le temps f807,5 : l'encre « se fixe ». Tagline italique grise et URL en sans géométrique apparaissent avec le logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Grain et tramage comme matière unique",
+      "name_en": "dither as material",
+      "t": "0:00-0:13.5",
+      "frames": "f0-f810",
+      "fps": 60,
+      "mechanics": "Tous les fondus et apparitions passent par du bruit tramé (points 1-2 px) au lieu d'une opacité lisse : bord du volet, nuages des comètes, brouillage des lettres, bord de l'iris, apparition du logo. Fonds sombres avec vignette douce (≈ 15 % plus sombre aux coins). Cohérent avec le sujet (écran à encre). Aucun flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f456.jpg, microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Trois verbes, trois chapitres, un logo",
+      "name_en": "collect / digest / deliver structure",
+      "t": "0:02.7-0:15.0",
+      "frames": "f162-f900",
+      "fps": 60,
+      "mechanics": "Structure produit en 3 étapes numérotées : 01 COLLECT (2,7-7,5 s, ≈ 4,8 s), 02 DIGEST (7,5-10 s, ≈ 2,5 s), 03 DELIVER (10-12,5 s, ≈ 2,5 s), puis carton logo + promesse + URL (12,9-15 s). Chaque titre est une phrase-bénéfice de 3-5 mots. Ouverture conceptuelle de 2,7 s avant.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Départ sur le demi-temps, arrivée sur le temps",
+      "name_en": "half-beat launch, beat landing",
+      "t": "0:07.52-0:07.83 / 0:10.0-0:10.33 / 0:12.5-0:12.83",
+      "frames": "f451-f470 / f601-f620 / f750-f770",
+      "fps": 60,
+      "mechanics": "Les trois transitions majeures durent exactement un demi-temps (18-20 im à 96 BPM) : elles démarrent sur une barre bleu clair (f451, f601, f751) et se terminent sur la barre bleue suivante (f470, f620, f770), à 0-1 im près. Le geste occupe l'espace entre deux pulsations au lieu de taper dessus : effet « fluide mais calé ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f456.jpg, microM-004-move-f609.jpg, microM-005-cut-f750.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Événements ponctuels sur le temps",
+      "name_en": "beat-locked micro events",
+      "t": "0:00.93 / 0:01.58 / 0:13.47",
+      "frames": "f57 / f95 / f808",
+      "fps": 60,
+      "mechanics": "Les changements d'état instantanés (billes qui virent au noir en 3 im, premières pastilles qui se retournent, logo qui noircit en 4 im) tombent sur des temps pleins (barres bleues f57, f95, f807,5), à 0-1 im. Les gestes longs vont sur les demi-temps, les bascules sèches sur les temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f56.jpg, microM-002-move-f105.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Musique générée et grille partagée",
+      "name_en": "code-generated score on a shared grid",
+      "t": "0:00-0:15.0",
+      "frames": "f0-f900",
+      "fps": 60,
+      "mechanics": "Bande-son créée par Claude à 96 BPM, pulsation très nette (8,54), attaques fortes exactement sur les temps et demi-temps (3,46 / 4,09 / 4,71 / 5,34 / 5,96 / 6,58 / 9,08 / 9,71 / 10,33 s). Drop +18,9 dB à 2,59 s qui coïncide avec la sortie de l'ouverture conceptuelle. Intensité musicale et mouvement anti-corrélés (r = -0,51) : la musique monte quand l'image se pose.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "Une URL seule a suffi : Claude a lu le site et en a tiré nom, promesse (« Your reading, away from screens »), produit (newsletters → liseuse) et toute la DA éditoriale serif crème."
+    },
+    {
+      "kind": "build",
+      "insight": "« Create the music too and make sure the video is synced with it » : demander que Claude fabrique aussi la musique lui donne la grille exacte des temps. Résultat : 15 gestes sur 19 calés à ±2 im, ce qu'une musique posée après coup n'obtient presque jamais."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Give your best, as if it's your portfolio master piece » pousse vers le concept (ouverture microcapsule, transitions e-ink) plutôt qu'une démo d'interface plate."
+    },
+    {
+      "kind": "other",
+      "insight": "Aucune durée, aucun format ni taille de texte : Claude a choisi 15 s et des listes à ≈ 1 % de la hauteur, illisibles. Il faudrait imposer une taille minimale (≈ 3 % de la hauteur) pour tout texte à lire."
+    },
+    {
+      "kind": "structure",
+      "insight": "Sans consigne de structure, Claude a produit le schéma classique concept → 3 étapes numérotées → logo + URL, efficace pour un produit à flux simple."
+    }
+  ],
+  "steal": [
+    "Ouvrir sur le principe physique du produit puis dézoomer jusqu'à l'interface : le changement d'échelle raconte la technologie en 2-3 s.",
+    "Tirer les transitions de la technologie du produit (rafraîchissement e-ink : volet tramé, flash noir) plutôt qu'un fondu générique.",
+    "Lancer chaque transition sur un demi-temps et la faire finir sur le temps suivant : 19 im à 96 BPM, fluide mais calée.",
+    "Ajouter un élément de liste par demi-temps (18-19 im à 96 BPM, 60 fps) : la musique compte à la place du texte.",
+    "Faire générer la musique par Claude dans le même prompt que l'animation pour partager une grille de temps exacte."
+  ],
+  "flaws": [
+    "Lignes de liste et étiquettes à ≈ 1 % de la hauteur : illisibles en 15 s, surtout sur téléphone.",
+    "Maintien de 2,1 s (7,9-10 s) avec seulement un éventail de pages discret : temps mort au milieu.",
+    "Comètes de particules répétées 8 fois, effet « traînée IA » un peu générique face au reste du concept.",
+    "Ouverture « Fig. 1 » trop courte (2,6 s) et légende minuscule : le concept e-ink passe inaperçu sans pause."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Rare exemple de synchro musicale réelle à l'image près (départs sur demi-temps, arrivées sur temps, une ligne par demi-temps) et de transitions motivées par le produit (volet tramé, flash e-ink, iris granuleux) : à décortiquer image par image à 60 fps."
+  }
+}

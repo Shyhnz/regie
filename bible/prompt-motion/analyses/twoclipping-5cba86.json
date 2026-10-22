@@ -1,0 +1,377 @@
+{
+  "slug": "twoclipping-5cba86",
+  "title": "Shape morphing through UI states",
+  "craft": 4,
+  "craft_reason": "Exécution de très haut niveau (une forme sans coupe sur 12 états, ressorts amortis, flou d'échange, flou de mouvement réel, boucle parfaite, tout sur le temps) ; exercice de genre sans récit, états parfois trop petits et ~1 s immobile en fin de boucle.",
+  "style": {
+    "family": "UI motion Dribbble, morphing continu, monochrome",
+    "palette": ["#F0F0EB", "#E8E8E3", "#000000", "#FFFFFF", "#6E6E6E", "#ECECEC", "#FC9054", "#FC5460", "#9C48B4"],
+    "type": ["Geist Medium (libellés)", "Geist Semibold (chiffres)", "Geist Regular (secondaire)"],
+    "texture": "ombres portées douces, flou gaussien sur les échanges de contenu, flou de mouvement par 4 sous-images, aucun glow",
+    "mood": "précis, calme, premium, démonstration technique"
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "acts": [
+      "0-1,5 s : bouton Generate, clic, loader, check, Dynamic Island",
+      "1,8-4,0 s : lecteur de musique, play/pause, glissé de la tête de lecture, repli en slider",
+      "4,0-6,6 s : volume glissé au-delà du max, toggle (3 bascules), onglets",
+      "6,6-9,7 s : onglets -> carte graphique, compteur, courbe, info-bulle, changement d'onglet",
+      "9,75-12,1 s : barre de recherche, palette ⌘K, frappe, entrée, toast",
+      "12,5-14,06 s : retour au bouton, boucle"
+    ]
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Une seule forme, jamais de coupe",
+      "name_en": "single-shape continuous morph",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "12 états, 0 coupe ; le même conteneur change largeur, hauteur, rayon (pilule, rectangle arrondi, cercle) et couleur (noir <-> blanc via des gris).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Échange de contenu flouté",
+      "name_en": "blur content swap",
+      "t": "0:01.72-0:02.03",
+      "frames": "f103-f122",
+      "fps": 60,
+      "mechanics": "Ancien contenu flouté et effacé en ~4-6 im, nouveau contenu flou puis net en ~6-8 im, chevauchement 2-3 im ; le conteneur ne se floute jamais.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f110.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ressorts amortis, dépassement minime",
+      "name_en": "critically damped springs",
+      "t": "0:01.78-0:02.03",
+      "frames": "f107-f122",
+      "fps": 60,
+      "mechanics": "Île -> lecteur en ~15 im : 70 % de l'agrandissement en 7 im puis stabilisation ; dépassement <= 3 % (probable), aucun rebond visible.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f110.jpg",
+      "illus": {"from": 104, "to": 124, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton vers loader vers check",
+      "name_en": "button-to-spinner-to-check",
+      "t": "0:00.52-0:01.07",
+      "frames": "f31-f64",
+      "fps": 60,
+      "mechanics": "Pression f31-f33, texte flouté, la pilule rétrécit en cercle (Ø ~18 % de la largeur) en ~11 im ; arc de spinner ~15 im ; check tracé en 3 im (f60-f63) posé sur le temps f64.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Cercle vers Dynamic Island",
+      "name_en": "pill stretch",
+      "t": "0:01.25-0:01.50",
+      "frames": "f75-f90",
+      "fps": 60,
+      "mechanics": "Le check se floute, le cercle s'étire à l'horizontale en pilule (~60 % de la largeur) en 12 im ; pochette à gauche, forme d'onde à droite.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "L'île s'ouvre en lecteur, contenu en cascade",
+      "name_en": "container expand + stagger",
+      "t": "0:01.77-0:02.17",
+      "frames": "f106-f130",
+      "fps": 60,
+      "mechanics": "Clic f106 ; pilule -> carte (hauteur x3,5, rayon divisé par ~2) en 15 im ; titre f116-f122, barre f123-f126, commandes f127-f130 (~4 im d'écart).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f110.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui pilote tout",
+      "name_en": "cursor-driven interaction",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Flèche macOS ~3 % du cadre avec flou de mouvement ; vrais clics, glissés en manipulation directe (tête de lecture 3,0-3,5 s, volume 4,1-5,1 s), survol ; garé en bas à droite pendant la frappe.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre de progression devient le slider",
+      "name_en": "shared element",
+      "t": "0:03.70-0:04.00",
+      "frames": "f223-f240",
+      "fps": 60,
+      "mechanics": "Contenu flouté (f223-f229), la carte s'aplatit en pilule (f226-f236) mais la barre reste nette et devient la piste du volume ; icône haut-parleur en fondu (f237-f240).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f230.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Étirement au-delà du max",
+      "name_en": "rubber-band overdrag",
+      "t": "0:04.63-0:05.22",
+      "frames": "f278-f313",
+      "fps": 60,
+      "mechanics": "Glissé à droite, barre pleine, puis la pilule s'allonge de 72 % à 80 % de la largeur (+10 %) tant que le curseur tient ; relâché f308, retour par ressort en ~5-8 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 278, "to": 315, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Toggle à bouton étiré, sur les temps",
+      "name_en": "stretchy toggle",
+      "t": "0:05.30-0:06.22",
+      "frames": "f318-f373",
+      "fps": 60,
+      "mechanics": "Slider replié en toggle (f313-f323) ; 3 bascules d'~15 im (OFF f328-f343, ON f348-f358, OFF f363-f373) ; piste noir <-> gris clair par des gris, bouton allongé ~x1,4 en course (deux bords sur deux ressorts).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 326, "to": 398, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le bouton du toggle devient l'indicateur d'onglets",
+      "name_en": "role swap with color inversion",
+      "t": "0:06.30-0:06.63",
+      "frames": "f378-f398",
+      "fps": 60,
+      "mechanics": "La piste s'élargit en barre d'onglets blanche, le bouton blanc devient l'indicateur noir « Day », libellés en fondu flou ; couleurs inversées ; formé sur le temps f394.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Indicateur liquide à deux bords",
+      "name_en": "two-edge spring indicator",
+      "t": "0:07.00-0:07.20",
+      "frames": "f420-f431",
+      "fps": 60,
+      "mechanics": "De Week à Month : bord avant d'abord, l'indicateur couvre Week + Month à f425, bord arrière rattrape en ~6 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f440.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Les onglets s'ouvrent en carte",
+      "name_en": "tabs-to-card expand",
+      "t": "0:07.28-0:07.43",
+      "frames": "f437-f446",
+      "fps": 60,
+      "mechanics": "La barre grandit en carte blanche (~76 % de la largeur, rayon ~3,5 % du cadre), onglets en tête, ombre élargie ; 9 im, sur l'attaque f439.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f440.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule",
+      "name_en": "rolling counter",
+      "t": "0:07.47-0:08.00",
+      "frames": "f448-f480",
+      "fps": 60,
+      "mechanics": "Chiffre de ~40 516 à 84 320 avec flou vertical sur les chiffres qui changent ; Geist Semibold ~6 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f440.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe qui se dessine",
+      "name_en": "line draw-on",
+      "t": "0:07.55-0:08.00",
+      "frames": "f453-f480",
+      "fps": 60,
+      "mechanics": "Tracé noir 4 px de gauche à droite, remplissage gris dégradé dessous, filets horizontaux gris clair.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f440.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Info-bulle qui suit le curseur",
+      "name_en": "scrubbing tooltip",
+      "t": "0:08.00-0:08.60",
+      "frames": "f480-f516",
+      "fps": 60,
+      "mechanics": "Guide vertical pointillé, point sur la courbe, bulle noire dont les chiffres roulent pendant le survol (23 5xx -> 73 202).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Changement d'onglet = nouvelles données",
+      "name_en": "tab switch replot",
+      "t": "0:09.00-0:09.50",
+      "frames": "f540-f570",
+      "fps": 60,
+      "mechanics": "Clic sur Week à f544 (attaque forte) : l'indicateur glisse, le chiffre roule vers 19 204, la courbe se redessine en ondulation.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carte vers recherche vers palette ⌘K",
+      "name_en": "collapse then expand",
+      "t": "0:09.75-0:10.40",
+      "frames": "f585-f624",
+      "fps": 60,
+      "mechanics": "Carte floutée et repliée en pilule de recherche (~60 % de la largeur) en ~15 im ; clic, ouverture en palette en ~12 im ; 5 lignes en cascade à ~3 im d'écart.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Filtrage à la frappe",
+      "name_en": "type-to-filter",
+      "t": "0:10.55-0:11.70",
+      "frames": "f633-f700",
+      "fps": 60,
+      "mechanics": "Une lettre par temps ou demi-temps (« f » à f633, attaque f634) ; les lignes non concernées s'effacent et se replient ; sélection descendue sur la 2e ligne à f694.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La ligne choisie devient le toast",
+      "name_en": "selected item survives",
+      "t": "0:11.73-0:12.08",
+      "frames": "f704-f725",
+      "fps": 60,
+      "mechanics": "Entrée : le reste se floute, la palette se réduit à la ligne choisie, blanc -> gris (#8F8F8F à f710) -> noir (f719) ; son texte devient le message du toast ; check dessiné sur le temps (f719-f725).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f710.jpg",
+      "illus": {"from": 702, "to": 724, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Toast vers bouton, boucle fermée",
+      "name_en": "loop closure",
+      "t": "0:12.53-0:13.05",
+      "frames": "f752-f785",
+      "fps": 60,
+      "mechanics": "Texte en fondu flou « Every frame is code » -> « Generate » (~6 im), pilule raccourcie de 62 % à 43 % de la largeur pendant le recadrage ; posé sur l'attaque la plus forte (f785) ; première et dernière images identiques (écart 0,33/255).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui recadre chaque état",
+      "name_en": "auto-framing zoom",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "Zoom continu : bouton 44 % de la largeur, île 60 %, lecteur 69 %, slider 72-80 %, carte 76 %, palette 70 % ; mais loader 18 % et toggle 33 % restent petits.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement par sous-images",
+      "name_en": "subframe motion blur",
+      "t": "0:01.78-0:05.10",
+      "frames": "f107-f306",
+      "fps": 60,
+      "mechanics": "4 sous-images mélangées par image : traînée naturelle sur le curseur, le bouton du slider, les bords des cartes en expansion (f107-f111).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f110.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Monochrome et une seule image en couleur",
+      "name_en": "monochrome UI, color only in content",
+      "t": "0:01.25-0:03.70",
+      "frames": "f75-f222",
+      "fps": 60,
+      "mechanics": "Tout en noir, blanc, gris ; seule la pochette en dégradé orange #FC9054 -> corail #FC5460 -> violet #9C48B4 porte de la couleur et attire l'œil.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Canevas gris chaud vignetté",
+      "name_en": "warm gray vignette canvas",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "#F0F0EB au centre, #E8E8E3 aux coins ; le blanc pur des cartes se détache sans ombre dure.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Changements d'état calés sur la grille",
+      "name_en": "beat-locked state changes",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "120 BPM, 7 mesures = 28 temps = 14 s ; un événement par temps ou demi-temps, à ±3 im des attaques réelles (grille réelle à 0,07 s + k x 0,5 s). -14,1 LUFS, crête -0,6 dBTP.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Queue de boucle immobile",
+      "name_en": "idle loop tail",
+      "t": "0:13.05-0:14.06",
+      "frames": "f783-f839",
+      "fps": 60,
+      "mechanics": "~1 s de bouton seul, plus 0,5 s au début avant le clic : 1,5 s d'attente à chaque tour de boucle.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Textes méta et « Generate »",
+      "name_en": "self-referential placeholder copy",
+      "t": "0:00.00-0:14.06",
+      "frames": "f0-f839",
+      "fps": 60,
+      "mechanics": "« Generate », « motion study 02 / made in code », « Frame rate · 60fps », « Every frame is code » : textes de démo qui parlent de motion design ; mot-bouton générique des produits IA en ouverture.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur » : une règle mécanique en une phrase suffit à produire 12 états sans coupe."},
+    {"kind": "structure", "insight": "Structure donnée en mesures (« 120 BPM, 7 bars, something happens on every beat ») et liste ordonnée d'états : la durée tombe exactement à 28 temps et chaque état sur un temps."},
+    {"kind": "build", "insight": "Consignes d'ingénierie du mouvement (ressorts en forme fermée sommés, indicateur à deux bords sur deux ressorts, glissé en manipulation directe, 4 sous-images + tmix) : chacune devient une qualité visible (étirement liquide, overdrag, flou de mouvement)."},
+    {"kind": "qa", "insight": "« Make the last frame identical to the first, cursor position and speed included » : boucle identique au pixel près (écart 0,33/255)."},
+    {"kind": "direction", "insight": "« The camera zooms so each state fills the frame » n'est tenu qu'à moitié (loader 18 %, toggle 33 % de la largeur) : il faudrait chiffrer la cible (ex. l'état occupe 60-70 % de la largeur)."},
+    {"kind": "inputs", "insight": "Les textes ne sont pas demandés en entrée : le modèle remplit avec des textes méta (« Generate », « Every frame is code »). Demander les libellés réels du produit."},
+    {"kind": "banned", "insight": "Interdits respectés (pas de rebond, de particules, de glow, de dégradé sur le chrome) ; le seul dégradé est dans le contenu (pochette, remplissage du graphe)."}
+  ],
+  "steal": [
+    "Un seul conteneur pour tous les états : animer largeur, hauteur, rayon et couleur ; ne flouter que le contenu.",
+    "Faire survivre un élément d'un état à l'autre (barre de lecture -> slider, ligne choisie -> toast).",
+    "Indicateur et bouton de toggle à deux bords sur deux ressorts : le bord avant part, l'arrière rattrape en ~6 im.",
+    "Overdrag élastique : +10 % de longueur au-delà du max tant que le curseur tient, retour par ressort au relâcher.",
+    "Un événement par temps sur une grille mesurée, avec clic, check et atterrissage final sur les attaques fortes."
+  ],
+  "flaws": [
+    "Exercice de genre sans récit ni message produit.",
+    "États trop petits (loader 18 %, toggle 33 % de la largeur) malgré la consigne de remplir le cadre.",
+    "~1 s de bouton seul en fin de boucle, 1,5 s d'attente par tour.",
+    "« Generate » en ouverture : mot-bouton générique des produits IA.",
+    "Crête audio à -0,6 dBTP : mix chaud, sans marge."
+  ],
+  "family": "produit",
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "18/21 gestes-clés à ±2 im d'une barre bleue ou bleu clair (hasard 33 %, p ≈ 1e-6), 12/21 à ±1 im ; décalage moyen +0,3 im. Planches : clic sur l'île f106 sur une barre bleu clair, lecteur posé f122 (barre bleue f121), slider posé f241 (bleue), carte qui s'ouvre f437 (bleu clair, attaque forte f436), Entrée f705 (bleu clair f707), check du toast f722 (bleue). Clic d'ouverture f32, check f61 et retour au bouton f752 aussi sur des temps (±0,7 im). Ratés : relâché de l'overdrag (+6,5 im), 1re bascule du toggle (−3,5 im). L'indice automatique confirme (départs sur les demi-temps, p = 2e-4).",
+    "synced": [
+      "departs",
+      "impacts",
+      "atterrissages",
+      "apparitions",
+      "texte"
+    ],
+    "style_match": "Électro pop à 120 BPM, propre et régulière : colle aux ressorts amortis et au minimalisme noir et blanc ; un geste d'interface par temps, sans emphase.",
+    "how_built": "Prompt en mesures (« 120 BPM, 7 bars, something happens on every beat »), grille de temps extraite du morceau au numpy, départ sur un premier temps, sons d'interface placés sur leurs pics mesurés, une image rendue par temps pour corriger ce qui sort de la grille."
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "slug": "chrisjdimarco-f068db",
+  "title": "Fiery samurai kata",
+  "handle": "@chrisjdimarco",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Frappes bien construites (anticipation, coup en 6-8 images, traînée qui s'éteint), escalade jusqu'à un final embrasé et palette feu tenue ; mais tapis de braises flou, anneaux au sol répétés et interface de l'app laissée dans le cadre.",
+  "summary": "Un samouraï en trait doré sur fond de soleil rouge enchaîne 11 katas nommés en kanji (居合, 唐竹割, 天翔…) sans bouger de son point, entre deux braseros. Chaque mouvement a son effet signature : éventail de traînées, colonne de flamme, salto avec cercle de lumière, anneaux de choc, flash plein cadre. Final « 炎舞 » : tornade de feu et kanji géant fantôme derrière le soleil, puis retour à l'immobilité.",
+  "prompt_vs_result": [
+    "Le prompt impose un samouraï en JavaScript pur, une routine sur place, des poses et mouvements « vraiment impressionnants » et un déploiement de feu. Rien sur la durée, le décor, le texte ni le format.",
+    "Claude a décidé seul : 11 katas nommés en kanji avec traduction anglaise, le soleil rouge barré de nuages, les deux braseros, le trait doré du personnage, la boucle immobilité → final → immobilité, et des contrôles interactifs (ralenti, pause, relance).",
+    "« only javascript » a produit une application interactive plutôt qu'une vidéo : l'aide clavier reste à l'écran et le format est celui d'une fenêtre (1920×1292, 53,7 im/s). Il aurait fallu préciser le format, l'absence d'interface et le son."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0303", "role": "fond noir rougeâtre, vignette"},
+      {"hex": "#2A0A0A", "role": "montagnes en silhouette, sol"},
+      {"hex": "#3A0E0E", "role": "remplissage du samouraï"},
+      {"hex": "#D02010", "role": "bord du soleil"},
+      {"hex": "#FF7A20", "role": "cœur du soleil, braises"},
+      {"hex": "#E8B060", "role": "contours dorés du personnage, anneaux"},
+      {"hex": "#FFF0A0", "role": "lame, cœur des flammes, surexposition"},
+      {"hex": "#E8C8A0", "role": "kanji et légendes"}
+    ],
+    "type": "Kanji serif (mincho probable) empilés verticalement à droite, ≈ 7 % de la hauteur par caractère, crème orangé. Légende anglaise en capitales grotesques minuscules (≈ 1,2 %), très espacées. Kanji géant 炎 translucide (≈ 35 % de la hauteur) au final.",
+    "texture": "Lueur additive (bloom) partout, braises floues en bokeh au sol, fumée légère, flammes procédurales sur braseros, traînées de lame en arcs fins dorés, surexposition jaune-blanc au final.",
+    "style": "estampe de feu, jeu de combat cinématique",
+    "coherence": "Tient par une palette monochrome feu (noir → rouge → orange → blanc), une composition symétrique figée et un seul langage d'effet (lumière additive dorée). Se brouille quand le tapis de braises floues noie les jambes et quand les mêmes anneaux elliptiques reviennent à presque chaque kata."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "aucun",
+    "notes": "Pas de piste audio. Capture d'écran à 53,7 im/s (cadence de navigateur), 998 images. Aucun maintien statique : flammes et braises bougent sans arrêt. 11 katas en 18,6 s, soit un mouvement toutes les 1,3 à 1,7 s, sauf le final 炎舞 qui dure ≈ 3 s (14,5-17,9 s). Gabarit d'une frappe : anticipation tenue 0,3-0,5 s, coup en 6-8 images (0,11-0,15 s), traînée qui s'éteint en ≈ 10 images, suite (follow-through) de 0,5-0,8 s avec particules. Les 6 « coupes » détectées sont des sauts de luminance : bouffée d'impact (f220 0:04.10), colonne de flamme (f282 0:05.25), flash plein cadre à l'atterrissage (f432 0:08.04), estoc (f605 0:11.27), impact du 乱れ斬り (f729 0:13.58), flash du final (f807 0:15.03). Pics d'énergie aux frappes : 2,35 s, 4,1 s, 5,25 s, 5,8 s, 7,25 s, 8,04 s, 11,27 s, 13,6 s, 15,03 s.",
+    "timeline": [
+      {"t": "0:00-0:01.4", "what": "静 STILLNESS : samouraï debout, lame basse, respiration, braises au sol", "technique": "pose de repos qui ouvre la boucle"},
+      {"t": "0:01.4-0:02.9", "what": "居合 IAIJUTSU DRAW : accroupi main sur la poignée, dégainé en 8 images avec éventail de traînées, estoc tendu à droite avec étincelle en pointe", "technique": "anticipation + frappe + traînée"},
+      {"t": "0:03.0-0:04.6", "what": "唐竹割 SPLITTING BAMBOO : lame levée au-dessus de la tête 0,4 s, coupe descendante en 6 images, bouffée blanche d'impact au sol à droite, anneau qui s'étale", "technique": "coupe verticale + impact"},
+      {"t": "0:04.7-0:05.6", "what": "逆袈裟 RISING CUT : coupe montante, puis une colonne de flamme blanche jaillit de la lame jusqu'au bord haut du cadre", "technique": "colonne de flamme"},
+      {"t": "0:05.7-0:06.9", "what": "旋風 WHIRLWIND : la lame bascule à l'horizontale, balayage circulaire, anneau d'étincelles blanches à la taille", "technique": "rotation en profondeur suggérée"},
+      {"t": "0:07.0-0:07.95", "what": "天翔 HEAVEN'S FLIGHT : accroupi, impulsion avec éclat aux pieds, salto arrière enveloppé d'arcs circulaires", "technique": "saut avec traînée circulaire"},
+      {"t": "0:08.0-0:09.3", "what": "地裂 EARTH SPLITTER : atterrissage en frappe au sol, flash plein cadre 6 images, anneau elliptique qui couvre 60 % de la largeur, gerbe de feu", "technique": "flash d'impact + onde de choc"},
+      {"t": "0:09.4-0:10.9", "what": "八相 FLAME GUARD : garde lame verticale au-dessus de la tête, anneau qui s'ouvre lentement aux pieds, feu qui monte", "technique": "pose de charge"},
+      {"t": "0:11.0-0:11.9", "what": "突き PIERCING THRUST : fente vers la droite, anneau de choc vertical à la pointe au bord droit du cadre", "technique": "anneau perpendiculaire (sonic boom)"},
+      {"t": "0:12.0-0:14.4", "what": "乱れ斬り STORM OF CUTS : rafale de coupes, cercles complets de traînée au-dessus de la tête, halo à la taille, impact à droite, grandes ellipses au sol", "technique": "rafale + traînées circulaires"},
+      {"t": "0:14.5-0:17.9", "what": "炎舞 DANCE OF FLAME : flash, anneau au sol qui s'étend à toute la largeur, tornade de feu surexposée, kanji 炎 géant translucide derrière le soleil, puis extinction lente", "technique": "final en escalade"},
+      {"t": "0:17.9-0:18.6", "what": "Retour à 静 STILLNESS, le label réapparaît en fondu", "technique": "boucle"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no). Rien à compter.",
+    "synced": [],
+    "style_match": "Sans son. Les frappes très ponctuées (coup en 6-8 images, flashs) appelaient des taiko et des sifflements de lame calés sur chaque impact.",
+    "how_built": "Application JavaScript interactive enregistrée à l'écran, sans audio. Le prompt ne mentionne pas le son. Les impacts réguliers (≈ toutes les 1,5 s) seraient des points d'ancrage naturels pour une bande-son."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Kata en 11 mouvements nommés, de l'immobilité au final",
+      "name_en": "named move sequence with finale",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "La routine part de 静 (immobilité), enchaîne 10 techniques de 0,9 à 2,4 s chacune, culmine sur 炎舞 (≈ 3 s, effets les plus gros) et revient à 静 : boucle fermée. Chaque mouvement a un effet signature différent, ce qui évite la monotonie malgré la caméra fixe.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg … overview-04.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Nom du mouvement en kanji vertical avec légende anglaise",
+      "name_en": "vertical kanji move label",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Bloc à ≈ 91 % de la largeur, 12-30 % de la hauteur : 2 à 4 kanji serif empilés (≈ 7 % de la hauteur chacun), légende anglaise en capitales espacées ≈ 1,2 %. Fondu de sortie ≈ 6 images, fondu d'entrée ≈ 12 images (0,22 s), avec un court vide entre les deux (f246-f264). Le nouveau nom arrive en général 0,3-0,5 s avant la frappe, comme une annonce.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Samouraï procédural en trait doré",
+      "name_en": "procedural line-art character rig",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Personnage dessiné en code : remplissage bordeaux #3A0E0E, contours dorés fins #E8B060, casque kabuto à croissant doré, armure en lamelles. Il occupe ≈ 40 % de la hauteur (tête à 40 %, pieds à 81 %), centré, et se découpe en silhouette sur le soleil. Poses interpolées par squelette (probable) : lisibles, un peu raides aux genoux.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Anticipation tenue, frappe éclair, traînée qui s'éteint",
+      "name_en": "anticipation-strike-follow-through",
+      "t": "0:03.50-0:04.40",
+      "frames": "f188-f238",
+      "fps": 54,
+      "mechanics": "唐竹割 : lame tenue au-dessus de la tête ≈ 22 images (0,4 s, f188-f209), coupe de la verticale à bas-droite en 6 images (f210-f216 = 0,11 s), arcs de traînée qui s'estompent jusqu'à f218, puis bouffée d'impact blanche 3 images plus tard (f219) et anneau qui s'étale 18 images. Même rapport ≈ 4:1 entre anticipation et coup sur 居合 (dégainé f121-f129, 8 images).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f220.jpg, extra-01.jpg",
+      "illus": {"from": 207, "to": 238, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Traînée de lame en éventail d'arcs",
+      "name_en": "multi-arc sword smear",
+      "t": "0:04.00-0:04.10",
+      "frames": "f211-f218",
+      "fps": 54,
+      "mechanics": "La lame laisse 4 à 6 arcs fins parallèles dorés à blancs, qui épousent la trajectoire de la pointe et s'effacent du plus ancien au plus récent en ≈ 8-10 images. Longueur d'arc ≈ 90° de rotation. Remplace le flou de mouvement (absent) et rend lisible un coup de 6 images.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f220.jpg, microM-004-cut-f432.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Colonne de flamme jaillie de la lame",
+      "name_en": "flame pillar",
+      "t": "0:05.21-0:05.75",
+      "frames": "f280-f310",
+      "fps": 54,
+      "mechanics": "À la fin de la coupe montante, une colonne blanche à cœur #FFF0A0 sort de la lame et dépasse le bord haut du cadre en 2 images (f282-f284), largeur ≈ 4 % du cadre. Elle ondule ≈ 16 images, s'amincit et se résorbe vers la pointe (f300-f308). Un anneau s'ouvre aux pieds en même temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 262, "to": 300, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneaux de choc elliptiques au sol",
+      "name_en": "ground shockwave ellipses",
+      "t": "0:08.04-0:08.40",
+      "frames": "f432-f450",
+      "fps": 54,
+      "mechanics": "Ellipse fine dorée en perspective centrée sous l'impact : de ≈ 10 % à 60 % de la largeur en ≈ 15 images, ease-out, puis fondu. Présente sur 居合, 唐竹割, 逆袈裟, 天翔, 地裂, 八相, 乱れ斬り et 炎舞 : utile au début, devient un tic à force de répétition.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f432.jpg, microM-005-move-f534.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash plein cadre chaud sur les impacts majeurs",
+      "name_en": "full-frame impact flash",
+      "t": "0:08.02-0:08.13 / 0:15.01-0:15.11",
+      "frames": "f431-f436, f806-f811",
+      "fps": 54,
+      "mechanics": "Toute l'image s'éclaircit et se réchauffe (voile orange, noirs relevés) pendant ≈ 6 images (0,11 s) au moment où la lame touche le sol, puis retour en 2-3 images. Réservé aux deux plus gros impacts (地裂 et le départ du final) : hiérarchie des coups.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f432.jpg, microM-007-cut-f807.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Bouffée d'impact blanche au bout de la coupe",
+      "name_en": "impact puff",
+      "t": "0:04.06-0:04.44",
+      "frames": "f219-f240",
+      "fps": 54,
+      "mechanics": "Petit nuage blanc (≈ 3 % de la largeur) qui apparaît au sol à ≈ 85 % de la largeur, grossit jusqu'à ≈ 8 % en 10 images, devient jaune puis éclate en gerbe de feu, avec une ellipse dorée qui s'ouvre autour. Réutilisé à l'identique sur 乱れ斬り (f729-f747).",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f220.jpg, microM-006-cut-f729.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Salto aérien enchaîné en frappe au sol",
+      "name_en": "aerial flip into ground slam",
+      "t": "0:06.98-0:08.04",
+      "frames": "f377-f432",
+      "fps": 54,
+      "mechanics": "Accroupi ≈ 10 images (f377-f386), éclat blanc aux pieds à l'impulsion (f387-f390), corps enveloppé d'arcs circulaires qui tourne en l'air (f389-f400), monte d'≈ 15 % de la hauteur, passe tête en bas (≈ 7,5 s), puis redescend lame au-dessus de la tête avec un grand arc de traînée (f419-f430) et frappe le sol à f431 (flash). Vol ≈ 44 images = 0,8 s. Deux mouvements soudés par la chute.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f390.jpg, microM-004-cut-f432.jpg",
+      "illus": {"from": 386, "to": 432, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Balayage horizontal et anneau d'étincelles (rotation suggérée)",
+      "name_en": "whirlwind sweep",
+      "t": "0:05.72-0:06.15",
+      "frames": "f307-f331",
+      "fps": 54,
+      "mechanics": "La lame passe de la verticale à l'horizontale en ≈ 5 images (f309-f313) avec une traînée épaisse en S, puis balaie à hauteur de taille ; une bande d'étincelles blanches s'enroule autour du corps (f313-f316). Le raccourci de la lame (f326-f329, lame qui se réduit puis réapparaît de l'autre côté) suggère une rotation sur l'axe vertical sans 3D.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f313.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Anneau de choc perpendiculaire à l'estoc",
+      "name_en": "thrust shock ring",
+      "t": "0:11.27-0:11.60",
+      "frames": "f605-f623",
+      "fps": 54,
+      "mechanics": "Sur 突き, une ellipse verticale fine (≈ 20 % de la hauteur) apparaît au bout de la trajectoire, au bord droit du cadre, avec une gerbe blanche : l'onde de choc d'un projectile supersonique, dessinée dans le plan perpendiculaire à l'axe du coup.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (0:11.51)"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rafale de coupes en cercles complets",
+      "name_en": "storm of cuts trails",
+      "t": "0:13.26-0:13.85",
+      "frames": "f716-f747",
+      "fps": 54,
+      "mechanics": "La lame tourne au-dessus de la tête et laisse 3 cercles concentriques dorés complets (f716-f722), puis un halo jaune horizontal s'allume à la taille (f723-f728) pendant qu'un éventail part vers la droite (f725-f728) ; impact blanc au sol à droite à f729, deux grandes ellipses s'étalent jusqu'à ≈ 90 % de la largeur (f735-f747).",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f729.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Lit de braises qui réagit aux coups",
+      "name_en": "reactive ember bed",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Des dizaines de braises floues orange #FF7A20 (bokeh) tourbillonnent au sol dans une ellipse ≈ 60 % de la largeur autour du samouraï. Leur densité et leur luminosité augmentent avec l'intensité des mouvements, et les frappes les repoussent. Elles masquent souvent les jambes et brouillent la lecture des appuis.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Tornade de feu surexposée du final",
+      "name_en": "fire vortex finale",
+      "t": "0:15.03-0:16.80",
+      "frames": "f807-f905",
+      "fps": 54,
+      "mechanics": "Après le flash (f806-f811), le feu monte du sol autour du personnage jusqu'à ≈ 70 % de la hauteur en ≈ 30 images (f813-f841), cœur blanc-jaune brûlé (clipping), langues de feu qui montent ; l'anneau au sol s'étend de ≈ 10 % à toute la largeur en ≈ 45 images. Décroissance lente sur ≈ 1 s (f869-f925).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f807.jpg, extra-03.jpg",
+      "illus": {"from": 805, "to": 857, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Kanji géant fantôme derrière le soleil",
+      "name_en": "ghost kanji backdrop",
+      "t": "0:15.10-0:17.75",
+      "frames": "f813-f953",
+      "fps": 54,
+      "mechanics": "Le caractère 炎 (feu) apparaît en fondu translucide ≈ 35 % de la hauteur, centré sur le soleil, entre le soleil et le personnage, en ≈ 16 images (f813-f829). Il reste ≈ 1,5 s puis s'efface lentement sur ≈ 1 s. Il répète en grand le label du coin et signe le final.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Mouvement secondaire de l'écharpe",
+      "name_en": "scarf secondary motion",
+      "t": "0:07.40-0:07.95",
+      "frames": "f400-f430",
+      "fps": 54,
+      "mechanics": "Les pans rouges du bandeau (hachimaki) suivent la tête avec retard et flottent dans le sens inverse du mouvement, surtout pendant le salto et les rotations. Donne du poids et de la vitesse sans coût.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f432.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Composition d'autel symétrique et figée",
+      "name_en": "symmetric shrine staging",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Soleil centré en haut (≈ 42 % de la largeur, centre à 32 % de la hauteur), samouraï centré dessous, deux braseros sur trépied à ≈ 10 % et 90 % de la largeur (≈ 30 % de la hauteur), label à droite. Caméra immobile pendant 18,6 s : toute l'énergie vient du personnage et des effets.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Soleil rouge barré de nuages et montagnes",
+      "name_en": "banded rising sun backdrop",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Disque en dégradé radial (orange #FF7A20 au centre, rouge #D02010 au bord) traversé par 3 bandes horizontales sombres de nuage, devant une chaîne de montagnes noir-bordeaux et une vignette noire. Halo qui respire légèrement avec les flashs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Braseros à flammes procédurales",
+      "name_en": "procedural brazier flames",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Deux flammes en particules additives (cœur jaune-blanc, bords orange, fumée), vacillement continu non bouclé ; elles grandissent pendant le final (≈ 15-17 s). Elles encadrent la scène et donnent du mouvement de fond permanent.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Lumière additive et surexposition",
+      "name_en": "additive bloom",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Tout ce qui brûle (lame, traînées, braises, flammes) est en mélange additif avec halo : les superpositions saturent vers le blanc #FFF0A0. Au final, le centre de l'image est brûlé sur ≈ 30 % de la surface, ce qui écrase les détails du personnage.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Aide clavier de l'application laissée à l'écran",
+      "name_en": "leftover app controls overlay",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "En bas à gauche « CLICK SLOW-MO · SPACE PAUSE · R RESTART », en haut à gauche un petit titre : la pièce est une app interactive capturée à l'écran (1920×1292, 53,7 im/s variable). Utile dans l'app, parasite dans une vidéo.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette feu monochrome",
+      "name_en": "single-hue fire palette",
+      "t": "0:00-0:18.6",
+      "frames": "f0-f998",
+      "fps": 54,
+      "mechanics": "Une seule gamme du noir au blanc en passant par bordeaux, rouge, orange, jaune ; seul le doré des contours sort légèrement. Aucune couleur froide : la lumière devient le seul moyen de hiérarchie, d'où le recours aux flashs et à la surexposition.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "build", "insight": "« in only javascript » a mené à une application canvas interactive (contrôles ralenti, pause, relance) plutôt qu'à une composition vidéo : format de fenêtre 1920×1292, cadence variable 53,7 im/s, interface visible."},
+    {"kind": "structure", "insight": "« a routine… going through various poses » a été structuré en kata nommé (11 techniques en kanji + anglais) avec boucle et final : le nommage donne une lecture et une progression que le prompt ne demandait pas."},
+    {"kind": "direction", "insight": "« in a single spot » a été respecté à la lettre : caméra fixe, personnage centré ; la variété vient d'un effet signature par mouvement."},
+    {"kind": "direction", "insight": "« fiery awesome display » a été traduit en palette feu monochrome, lumière additive et escalade vers un final surexposé ; sans garde-fou, l'effet sature (braises floues, centre brûlé)."},
+    {"kind": "other", "insight": "Le prompt ne parle ni de son ni de format : vidéo muette et non cadrée pour un réseau social. Préciser « 1920×1080, 60 fps, sans interface, taiko calé sur chaque impact » aurait suffi."}
+  ],
+  "steal": [
+    "Frappe lisible : tenir l'anticipation 4 fois plus longtemps que le coup (≈ 0,4 s puis 6-8 images), remplacer le flou de mouvement par 4-6 arcs de traînée qui s'éteignent.",
+    "Annoncer chaque mouvement par son nom 0,3-0,5 s avant la frappe, en fondu, dans un bloc fixe en marge.",
+    "Réserver le flash plein cadre aux deux plus gros impacts pour créer une hiérarchie des coups.",
+    "Signer le final par le mot clé en très grand, translucide, derrière l'action, puis revenir à la pose de départ pour boucler.",
+    "Onde de choc dessinée perpendiculairement à l'axe d'un estoc pour vendre la vitesse."
+  ],
+  "flaws": [
+    "Aide clavier et titre de l'app visibles dans le cadre.",
+    "Tapis de braises floues qui noie les jambes et les appuis.",
+    "Même anneau elliptique au sol sur presque chaque kata : accent répété.",
+    "Final surexposé : le personnage disparaît dans le blanc pendant ≈ 1 s.",
+    "Aucun son sur une pièce bâtie sur des impacts."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Capture native à 53,7 im/s : les 11 frappes illustrent en continu anticipation, coup en 6-8 images, traînée et suite, chaînage saut → frappe. Bon support pour la leçon des 12 principes."
+  }
+}

@@ -1,0 +1,631 @@
+{
+  "slug": "ajith-io-4c248f",
+  "title": "Distilbook promo showreel",
+  "handle": "@ajith_io",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Ambition rare et tenue : métaphore nucléaire filée, 3D et particules soignées, musique écrite sur l'image (compte à rebours à ±1 im) ; mais section « ANY PDF » confuse, pastiches d'Oppenheimer appuyés.",
+  "summary": "Promo de 40 s pour Distilbook (un PDF devient une vidéo explicative illustrée), construite comme un film nucléaire : les lettres d'une page de manuel s'enflamment, une sphère fissionne en scènes, une fusion « written, voiced, drawn », un compte à rebours puis une explosion révèle un champ d'illustrations, un atome de langues devient le logo. Musique composée par Claude, calée sur l'image.",
+  "prompt_vs_result": [
+    "Le prompt imposait : 40 s, une vidéo « dynamique » de démonstration « go all out » pour Distilbook, et une musique composée par Claude en s'inspirant du thème d'Oppenheimer.",
+    "Claude a décidé seul : la métaphore en chapitres (fission, fusion, explosion), toute la 3D (livre, particules, sphères, champ de cartes, atome), les phrases produit, la triade vert/bleu/rose et une musique à tempo variable écrite sur l'image.",
+    "La référence musicale a tout cadré : dramaturgie (ostinato, silence, déflagration) et synchro. Il manquait des règles de lisibilité (densité, temps de lecture, contraste derrière le texte) et un garde-fou contre le pastiche littéral."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#050403",
+        "role": "fond noir dominant"
+      },
+      {
+        "hex": "#FFB347",
+        "role": "braises, lettres enflammées, halo des sphères"
+      },
+      {
+        "hex": "#E8641E",
+        "role": "matière en fusion de la sphère, feu de l'explosion"
+      },
+      {
+        "hex": "#FFF4D6",
+        "role": "cœurs incandescents, flashs"
+      },
+      {
+        "hex": "#C8A97A",
+        "role": "papier de la page de manuel"
+      },
+      {
+        "hex": "#9FD8FF",
+        "role": "faisceaux bleus des neutrons, traînées"
+      },
+      {
+        "hex": "#F2F2F2",
+        "role": "texte blanc des accroches"
+      },
+      {
+        "hex": "#BFBFBF",
+        "role": "anneaux et sphère du chapitre fusion (niveaux de gris)"
+      },
+      {
+        "hex": "#3DDC84",
+        "role": "orbite verte et barre verte du logo"
+      },
+      {
+        "hex": "#4F8BFF",
+        "role": "orbite bleue et barre bleue du logo"
+      },
+      {
+        "hex": "#FF4FA0",
+        "role": "orbite rose et barre rose du logo"
+      }
+    ],
+    "type": "Grotesque géométrique Bold en capitales larges (≈ 5-8 % de la hauteur, interlettrage ≈ +5 %) ; cartons de chapitre en Light, interlettrage ≈ +60 %, 1,7 % ; serif de manuel sur la page ; logo grotesque Bold.",
+    "texture": "Bloom fort sur toutes les sources de lumière ; flou de mouvement réel sur particules, faisceaux et cartes qui volent ; profondeur de champ sur les cartes du premier plan ; feu volumétrique ; flashs de surexposition ; léger grain sur les cartons noirs ; vignette.",
+    "style": "Cinéma 3D nucléaire, braises et particules",
+    "coherence": "Une seule métaphore tient tout : fission (le PDF se divise en scènes), fusion (écrit, voix, dessin réunis), explosion (des milliers de vidéos), atome (les langues), puis logo. La palette braise/noir court de la page au feu ; la triade vert/bleu/rose est gardée pour l'atome final et le logo, qui en héritent. Ruptures : le chapitre fusion en niveaux de gris (voulu) et surtout le montage d'illustrations plates sur fond blanc (29,9-31,5 s), qui casse le ton cinéma ; la section « ANY PDF » noie le texte sous les objets."
+  },
+  "rhythm": {
+    "bpm": 116,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Musique à tempo variable par chapitre (mesures par segment : 116 BPM sur l'intro, 117 sur la fission, ≈ 90 sur « ANY PDF », ≈ 74 sur la fusion avec un mot toutes les 0,816 s, accelerando au compte à rebours, ≈ 98 après l'explosion, coupes à 0,4 s au montage, ≈ 78 sur le logo) : la grille globale de 116 BPM n'est valable que jusqu'à 10 s. 11 coupes : carton de chapitre sur le temps fort (6,35 s), éclat du neutron (8,40 s), flash de fission (10,40 s), flash d'explosion (25,22 s, deux détections f1513/f1516), onde de choc (26,72 s), montage à 24 im (f1795, f1819, f1843, f1867, f1891). Plans assez longs (médiane 1,73 s) mais mouvement continu (particules, caméra) : 12 % de maintiens seulement. La densité suit la musique : contemplative au début, mécanique au compte à rebours (un chiffre toutes les 0,32 à 0,37 s), coupée net au flash par 0,5 s de silence, rapide au montage. Temps morts : ouverture 0-0,5 s, carton « 1. FISSION » 6,4-7,3 s (voulu), plan final 37,2-39,65 s (2,5 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.98",
+        "what": "Page de manuel « Nuclear Fission » en plan rasant, lumière ponctuelle qui flotte, fines traînées qui tombent",
+        "technique": "page 3D en lumière rasante"
+      },
+      {
+        "t": "0:01.98-0:02.35",
+        "what": "Une goutte de lumière tombe (12 im) et frappe la page sur le temps (2,22 s) : éclat, ondes concentriques",
+        "technique": "impact calé sur le temps"
+      },
+      {
+        "t": "0:02.5-0:05.0",
+        "what": "Les lettres autour de l'impact s'embrasent et s'envolent en braises, mur de lettres lumineuses puis étincelles filées",
+        "technique": "lettres-particules"
+      },
+      {
+        "t": "0:05.0-0:06.35",
+        "what": "Les étincelles convergent en sphère de particules dense",
+        "technique": "condensation en sphère"
+      },
+      {
+        "t": "0:06.35-0:07.38",
+        "what": "Coupe au noir sur l'attaque la plus forte : « 1. FISSION »",
+        "technique": "carton de chapitre sur le temps fort"
+      },
+      {
+        "t": "0:07.38-0:08.4",
+        "what": "Sphère-soleil gainée de lignes de texte qui apparaît",
+        "technique": "sphère texturée et halo"
+      },
+      {
+        "t": "0:08.4-0:10.15",
+        "what": "Un faisceau bleu (neutron) frappe la sphère sur le temps, éclat, pulsation",
+        "technique": "impact de neutron"
+      },
+      {
+        "t": "0:10.15-0:10.4",
+        "what": "La sphère s'étire et se divise en deux",
+        "technique": "fission par étranglement"
+      },
+      {
+        "t": "0:10.4-0:10.8",
+        "what": "Flash 1 im, étoile, traînées en hyperespace, anneau de choc, faisceaux bleus",
+        "technique": "flash + onde de choc"
+      },
+      {
+        "t": "0:10.8-0:12.6",
+        "what": "Orbes qui portent des pages de PDF, « ANY PDF. » pris dans la profondeur",
+        "technique": "texte dans l'espace 3D"
+      },
+      {
+        "t": "0:12.6-0:17.0",
+        "what": "Des milliers de cartes forment un dôme ; « AN ORIGINAL SCENE / FOR EVERY IDEA. »",
+        "technique": "champ de cartes instanciées"
+      },
+      {
+        "t": "0:17.0-0:18.05",
+        "what": "Le texte sort, le champ s'éteint",
+        "technique": "sortie en fondu"
+      },
+      {
+        "t": "0:18.05-0:18.6",
+        "what": "« 2. FUSION »",
+        "technique": "carton de chapitre"
+      },
+      {
+        "t": "0:18.75-0:21.5",
+        "what": "Sphère grise ; « WRITTEN. » + anneau de texte, « VOICED. » + anneau d'onde, « DRAWN. » + anneau de hachures, puis les trois mots",
+        "technique": "chaque mot ajoute un anneau"
+      },
+      {
+        "t": "0:21.8-0:25.12",
+        "what": "Compte à rebours 10 → 1 façon amorce de film, calé sur des accents qui accélèrent",
+        "technique": "compte à rebours synchronisé"
+      },
+      {
+        "t": "0:25.12-0:25.22",
+        "what": "Le « 1 » se réduit en point blanc",
+        "technique": "réduction en point"
+      },
+      {
+        "t": "0:25.22-0:25.75",
+        "what": "Flash blanc 3 im, explosion à l'horizon sur image surexposée qui redescend ; musique coupée net, silence numérique",
+        "technique": "lumière avant le son"
+      },
+      {
+        "t": "0:25.75-0:26.7",
+        "what": "Grondement, coup sourd (26,12 s), champignon de feu devant un champ de cartes illustrées",
+        "technique": "retour du son"
+      },
+      {
+        "t": "0:26.72-0:26.9",
+        "what": "L'onde de choc frappe la caméra : surexposition, flou radial, secousse vers l'avant",
+        "technique": "onde de choc caméra"
+      },
+      {
+        "t": "0:26.9-0:29.75",
+        "what": "Lente poussée ; « HAND-ILLUSTRATED / EXPLAINER VIDEOS. »",
+        "technique": "accroche sur le feu"
+      },
+      {
+        "t": "0:29.75-0:29.92",
+        "what": "Une carte quitte le champ et vole jusqu'à remplir le cadre",
+        "technique": "carte qui vole vers la caméra"
+      },
+      {
+        "t": "0:29.92-0:31.52",
+        "what": "4 illustrations plein cadre à 0,4 s chacune ; « WHITEBOARD / OR MOTION. »",
+        "technique": "montage de preuves à 24 im"
+      },
+      {
+        "t": "0:31.52-0:32.0",
+        "what": "Recul à travers des anneaux de noms de langues en 3D jusqu'à l'atome",
+        "technique": "recul à travers la typo"
+      },
+      {
+        "t": "0:32.0-0:35.2",
+        "what": "Atome de langues (vert, bleu, rose) avec cartes en orbite ; « 1,500+ CREATORS. 2,200+ VIDEOS. », « 19 LANGUAGES. », « 16:9 OR 9:16. »",
+        "technique": "atome de chiffres clés"
+      },
+      {
+        "t": "0:35.2-0:36.3",
+        "what": "Les orbites s'écrasent en trois traits qui deviennent les trois barres du logo, puis passent au néon",
+        "technique": "orbites → logo"
+      },
+      {
+        "t": "0:36.3-0:37.9",
+        "what": "Lueur de braise en bas, « DistilBook » lettre à lettre, slogan, « Free to try · distilbook.com »",
+        "technique": "révélation du logo"
+      },
+      {
+        "t": "0:37.9-0:40.04",
+        "what": "Plan final tenu 2,5 s, fondu au noir avec la musique",
+        "technique": "plan de fin"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "25 gestes clés sur 37 (68 %) à ±2 im d'une attaque forte, contre 33 % au hasard ; force d'attaque moyenne au moment des gestes 0,20 contre 0,09. Planches : coupe vers « 1. FISSION » f381 sur la barre bleue et l'attaque la plus forte du morceau (6,351 s, Δ 0 im) ; sortie du carton f443 sur l'attaque 7,384 s ; impact du neutron f504 (barre bleue f505, −1 im) ; flash de fission f624 (attaque 10,426 s, −1,6 im) ; goutte qui frappe la page f132-f133 sur le temps 2,218 s ; « WRITTEN. » f1127 (attaque 18,808 s, −1,5 im) ; trois mots réunis f1258 (20,979 s, −0,7 im) ; onde de choc f1603 (26,738 s, −1,3 im) ; coupes du montage f1795 (bleu clair f1797), f1843 (bleue f1843), f1891 (bleu clair f1890), f1819 et f1867 à −2 im de leurs attaques. Compte à rebours : 9 chiffres sur 9 entre −0,8 et +0,2 im d'un accent (hasard 40 %), accents qui accélèrent de 22 à 19 im. Flash d'explosion f1513 : la musique tombe en silence numérique 2-5 im après (−19 → −180 dB, 25,25-25,75 s). Ratés : « 2. FUSION » (f1083), sortie de « ANY PDF » (f750), « HAND-ILLUSTRATED » (f1710), changements « VOICED »/« DRAWN » (+3 im), logo (attaques faibles). Les barres des planches suivent une grille de 116 BPM fausse après 10 s : la musique change de tempo à chaque chapitre.",
+    "synced": [
+      "coupes",
+      "impacts",
+      "apparitions",
+      "texte",
+      "flashs",
+      "camera",
+      "drop"
+    ],
+    "style_match": "Score tendu à la Göransson (ostinato, accelerando, silence, déflagration) : il épouse la dramaturgie fission → fusion → explosion et ses gestes secs, puis se résout sur le logo.",
+    "how_built": "Le prompt exige « compose it yourself » sur le modèle du thème d'Oppenheimer : Claude a écrit la bande-son sur la même timeline que l'image (sections à tempo propre, accents posés sur les changements de chiffres et les coupes, silence numérique au flash, coup sourd puis impact sur l'onde de choc). Synthèse en code et rendu 3D temps réel probables (pile non indiquée)."
+  },
+  "techniques": [
+    {
+      "cat": "3d",
+      "name_fr": "Page de manuel en plan rasant",
+      "name_en": "grazing-angle 3D book page",
+      "t": "0:00.00-0:01.98",
+      "frames": "f0-f119",
+      "fps": 60,
+      "mechanics": "Page de manuel en 3D (« Nuclear Fission », « E = mc² », serif de livre, papier #C8A97A) vue en plan rasant (caméra ≈ 15° au-dessus de la page), qui file vers un horizon noir. Une lumière ponctuelle blanche (#FFF4D6, halo ≈ 8 % de la hauteur) flotte au-dessus ; fines traînées lumineuses verticales qui tombent ; vignette au noir. Légère dérive de caméra.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Goutte de lumière qui frappe la page",
+      "name_en": "falling light-drop impact",
+      "t": "0:01.98-0:02.55",
+      "frames": "f119-f153",
+      "fps": 60,
+      "mechanics": "Une goutte bleu-blanc apparaît en haut f119 et tombe en ≈ 12 im (traînée qui s'allonge = flou de mouvement, accélération) ; impact f132-f133 (2,20-2,22 s), sur le temps et l'attaque de 2,218 s. Éclat : le halo double de luminosité ≈ 6 im (f133-f139), puis ondes concentriques qui s'étalent sur ≈ 25 im et allument les lettres autour.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 119,
+        "to": 151,
+        "n": 6
+      }
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Les lettres s'embrasent et s'envolent",
+      "name_en": "letters ignite into embers",
+      "t": "0:02.5-0:05.0",
+      "frames": "f150-f300",
+      "fps": 60,
+      "mechanics": "Autour des ondes, les lettres de la page virent à l'orange (#FFB347) avec halo, se décollent et montent en tourbillon : des milliers de glyphes lisibles (« a », « m », « e »...). Vers 4,5 s, un mur de lettres incandescentes ; à 5 s, elles s'étirent en étincelles filées (flou de mouvement directionnel vers la droite).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f245.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Condensation en sphère de particules",
+      "name_en": "particles condense into a sphere",
+      "t": "0:05.0-0:06.35",
+      "frames": "f300-f381",
+      "fps": 60,
+      "mechanics": "Les étincelles se courbent et convergent vers un nuage sphérique dense (≈ 35 % de la hauteur), cœur blanc chaud #FFF4D6, poussière éparse autour. Convergence en ease-out : longues traînées au début, noyau compact et presque immobile en fin de plan (f366-f380).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f319.jpg, microM-003-cut-f381.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton de chapitre sur le temps fort",
+      "name_en": "chapter card on the downbeat",
+      "t": "0:06.35-0:07.38",
+      "frames": "f381-f443",
+      "fps": 60,
+      "mechanics": "Coupe franche au noir sur l'attaque la plus forte du morceau (6,351 s, Δ 0 im) : « 1. FISSION » en capitales Light, interlettrage ≈ +60 %, ≈ 1,7 % de la hauteur, gris #B8B8B8, fondu d'entrée 2-3 im, tenu 1,03 s ; sortie sur l'attaque suivante (7,384 s). Même grammaire pour « 2. FUSION » (18,05-18,58 s). Le récit produit devient un film en chapitres.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f381.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Sphère-soleil gainée de lignes de texte",
+      "name_en": "text-wrapped glowing sphere",
+      "t": "0:07.38-0:10.15",
+      "frames": "f443-f609",
+      "fps": 60,
+      "mechanics": "Sphère ≈ 28 % de la hauteur, matière en fusion orange (#E8641E → #FFB347), liseré lumineux sur le pourtour (fresnel), halo ≈ 1,4 × le rayon ; des parallèles de texte minuscule l'entourent (le livre « distillé »). Apparition en fondu (f443-f458), puis lente croissance (≈ +10 % en 2 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-cut-f504.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Neutron qui frappe : faisceau bleu et éclat",
+      "name_en": "neutron beam impact flare",
+      "t": "0:08.38-0:08.67",
+      "frames": "f503-f520",
+      "fps": 60,
+      "mechanics": "Un faisceau bleu-blanc (#9FD8FF) entre par la gauche f503 et touche la sphère f504 (≈ 30 % de la largeur en 1-2 im), sur le temps 8,416 s (−1 im). Le faisceau reste 2 im puis disparaît ; le halo de la sphère monte sur 5 im (f504-f509) et retombe vers f520.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f504.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Fission par étranglement",
+      "name_en": "mitosis-style split",
+      "t": "0:10.15-0:10.38",
+      "frames": "f609-f623",
+      "fps": 60,
+      "mechanics": "La sphère s'allonge en cacahuète, s'étrangle au centre et se sépare en deux sphères en ≈ 14 im, ease-in-out ; les deux moitiés gardent texture et halo.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f624.jpg",
+      "illus": {
+        "from": 609,
+        "to": 640,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash, étoile et anneau de choc",
+      "name_en": "flash-starburst-shockwave",
+      "t": "0:10.40-0:10.73",
+      "frames": "f624-f644",
+      "fps": 60,
+      "mechanics": "1 im de surexposition (f624) sur l'attaque 10,426 s (−1,6 im) ; étoile de rayons f625-f626 ; puis traînées en hyperespace, anneau de choc qui atteint ≈ 40 % de la hauteur en 6 im et 45 % à f644 (ease-out expo), faisceaux bleus qui partent en diagonale, les deux moitiés repoussées vers les bords.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f624.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Texte pris dans la profondeur",
+      "name_en": "text occluded by 3D objects",
+      "t": "0:10.8-0:12.6",
+      "frames": "f648-f756",
+      "fps": 60,
+      "mechanics": "« ANY PDF. » (capitales Bold blanches ≈ 8 % de la hauteur) apparaît f660-f668 (attaque 11,088 s) à l'intérieur de la scène : anneaux et orbes passent devant et masquent des lettres (f660 : « ANY » à moitié caché). Des dizaines d'orbes orange portent chacune une page de PDF, avec traînées bleues : riche mais confus, lecture difficile.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Dôme de milliers de cartes",
+      "name_en": "instanced card dome",
+      "t": "0:12.6-0:17.0",
+      "frames": "f756-f1020",
+      "fps": 60,
+      "mechanics": "Des milliers de petites cartes-documents (instanciation probable) forment un dôme puis un champ, points de lumière chauds, caméra qui monte et bascule lentement. Texte sur deux lignes ≈ 5 % de la hauteur : « AN ORIGINAL SCENE » (f808, attaque 13,479 s) puis « FOR EVERY IDEA. » (f865, temps 14,407 s) ; sortie f1013 sur l'attaque 16,916 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes qui montent d'un masque",
+      "name_en": "masked line rise",
+      "t": "0:13.47-0:30.97",
+      "frames": "f808-f1858",
+      "fps": 60,
+      "mechanics": "Les accroches montent de sous une ligne de découpe horizontale : lettres coupées à la base pendant ≈ 12 à 15 im (« OR MOTION » f1847-f1860, « WHITEBOARD » f1798-f1812), léger décalage de gauche à droite. Seconde ligne ≈ 0,4 à 1 s après la première.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1795.jpg, microM-011-cut-f1843.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Chaque mot ajoute un anneau",
+      "name_en": "word-to-ring semantic build",
+      "t": "0:18.75-0:21.5",
+      "frames": "f1125-f1290",
+      "fps": 60,
+      "mechanics": "Chapitre en niveaux de gris : petite sphère lunaire. « WRITTEN. » (≈ 4,5 % de la hauteur, interlettrage ≈ +15 %) monte du masque pendant qu'un anneau de texte se trace autour de la sphère (arc qui s'allonge en ellipse complète en ≈ 20 im, f1125-f1145). « VOICED. » ajoute un anneau d'onde sonore, incliné à la verticale, tracé f1173-f1189 ; « DRAWN. » un anneau de hachures. Puis « WRITTEN. VOICED. DRAWN. » en gris, blanc à 20,97 s (attaque 20,979 s). Le sens du mot devient la forme de l'anneau.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Échange de mot par roulement lettre à lettre",
+      "name_en": "per-letter vertical roll swap",
+      "t": "0:19.45-0:19.68",
+      "frames": "f1167-f1181",
+      "fps": 60,
+      "mechanics": "« WRITTEN. » → « VOICED. » : chaque lettre descend sous la ligne de découpe pendant que la nouvelle monte, décalage ≈ 1 im par lettre de gauche à droite, ≈ 12 im au total. Même mécanique pour « DRAWN. » à partir de f1215. Ces deux échanges tombent ≈ 3 im après leur attaque.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Graphisme d'amorce de film",
+      "name_en": "film-leader countdown graphics",
+      "t": "0:21.8-0:25.12",
+      "frames": "f1308-f1507",
+      "fps": 60,
+      "mechanics": "Réticule de lignes fines grises sur tout le cadre, deux cercles concentriques (rayon extérieur ≈ 30 % de la hauteur), secteur gris translucide qui balaie un tour complet par chiffre ; chiffres blancs Bold ≈ 35 % de la hauteur. Les trois anneaux (texte, onde, hachures) continuent de tourner derrière et s'effacent au fil du décompte.",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, microM-006-move-f1434.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Compte à rebours calé sur un ostinato qui accélère",
+      "name_en": "countdown locked to accelerating accents",
+      "t": "0:22.10-0:25.22",
+      "frames": "f1326-f1513",
+      "fps": 60,
+      "mechanics": "Neuf changements de chiffre à f1326, f1348, f1370, f1391, f1412, f1433, f1454, f1474, f1494 : intervalles de 22 → 19 im (0,367 → 0,317 s), comme les accents de la musique (0,37 → 0,336 s). Chaque chiffre tombe entre −0,8 et +0,2 im de son accent (l'image précède le son d'une fraction d'image) : 9 sur 9, hasard 40 %. Au bout de l'accélération, le flash (f1513) coupe la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f1434.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le chiffre se réduit en point puis flash blanc",
+      "name_en": "number collapses to a point, white flash",
+      "t": "0:25.12-0:25.27",
+      "frames": "f1504-f1516",
+      "fps": 60,
+      "mechanics": "Le « 1 » se contracte en tache blanche (échelle ≈ 0,3) pendant que l'amorce s'éteint (f1507-f1512). f1513-f1515 : trois images pleines crème #FBF7EE. f1516 : l'explosion apparaît sur une image surexposée gris clair (#CFCBC3).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1513.jpg",
+      "illus": {
+        "from": 1504,
+        "to": 1530,
+        "n": 8
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence numérique au flash, puis le son arrive",
+      "name_en": "hard cut to silence at the flash",
+      "t": "0:25.22-0:26.12",
+      "frames": "f1513-f1567",
+      "fps": 60,
+      "mechanics": "Juste après le flash (f1513), la musique passe de −19 dB à −180 dB (silence numérique) de 25,25 à 25,75 s, soit ≈ 0,5 s ; grondement qui revient à 25,77 s, coup sourd à 26,12 s, puis impact fort à 26,74 s avec l'onde de choc. La lumière arrive avant le son, comme la scène Trinity du film : le silence fait l'impact.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1513.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Surexposition qui redescend",
+      "name_en": "exposure recovery after flash",
+      "t": "0:25.27-0:25.52",
+      "frames": "f1516-f1531",
+      "fps": 60,
+      "mechanics": "Après le flash, l'image part surexposée (gris-beige) et s'assombrit sur ≈ 15 im jusqu'au ciel noir, comme un œil ou un diaphragme qui s'adapte ; champignon de feu à l'horizon avec un anneau de choc lumineux au sol.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f1513.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Onde de choc qui frappe la caméra",
+      "name_en": "blast wave hits camera",
+      "t": "0:26.72-0:26.90",
+      "frames": "f1603-f1611",
+      "fps": 60,
+      "mechanics": "Une image de surexposition beige (#D9C3A0) avec fort flou radial sur les cartes, la caméra bondit vers l'avant (≈ 10 à 15 % plus près), retour à la netteté en ≈ 8 im ; sur l'impact sonore de 26,738 s (−1,3 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f1603.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Champ de cartes illustrées face au feu",
+      "name_en": "field of illustrated cards vs fireball",
+      "t": "0:25.5-0:29.75",
+      "frames": "f1530-f1785",
+      "fps": 60,
+      "mechanics": "Des rangées de cartes blanches debout (chacune une scène dessinée) au premier plan, champignon de feu volumétrique derrière, profondeur de champ sur les cartes proches, lente poussée de caméra. « HAND-ILLUSTRATED / EXPLAINER VIDEOS. » (≈ 6 % de la hauteur) monte sur le feu à 28,5-29,1 s, sans attaque nette.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-009-move-f1645.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Une carte vole jusqu'à remplir le cadre",
+      "name_en": "card fly-to-camera into full frame",
+      "t": "0:29.77-0:29.92",
+      "frames": "f1786-f1795",
+      "fps": 60,
+      "mechanics": "Une carte quitte le champ et grossit de ≈ 25 % à 100 % de la largeur en 9 im (ease-in, flou de mouvement), puis devient l'illustration plein cadre à f1795 (bleu clair f1797, −2 im). Le contenu entre par l'objet du décor, sans coupe sèche.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1795.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Montage de preuves à 24 images",
+      "name_en": "0.4 s proof montage",
+      "t": "0:29.92-0:31.52",
+      "frames": "f1795-f1891",
+      "fps": 60,
+      "mechanics": "Quatre illustrations plein cadre (photosynthèse, Ada Lovelace, cycle de l'eau, paiement par carte en isométrique), coupes franches toutes les 24 im (f1795, f1819, f1843, f1867, f1891) sur des attaques (−2 à 0 im). Dégradé sombre fixe en bas pour la légende persistante « WHITEBOARD / OR MOTION. ». Les illustrations s'animent légèrement (lavis qui avance sur la feuille).",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1843.jpg, microM-012-cut-f1891.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul à travers les anneaux de langues",
+      "name_en": "pull-back through 3D type rings",
+      "t": "0:31.52-0:31.85",
+      "frames": "f1891-f1911",
+      "fps": 60,
+      "mechanics": "L'illustration recule dans la profondeur avec flou de mouvement pendant que des anneaux de texte 3D colorés (noms de langues : English, Español, Português...) balaient l'objectif ; le soleil entre par le bas ; l'atome se révèle en ≈ 20 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1891.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Atome de langues et chiffres clés",
+      "name_en": "language atom with stats",
+      "t": "0:32.0-0:35.2",
+      "frames": "f1920-f2112",
+      "fps": 60,
+      "mechanics": "Trois orbites elliptiques faites de noms de langues (vert #3DDC84, bleu #4F8BFF, rose #FF4FA0) autour du soleil, cartes d'illustration en orbite. Légendes en bas (≈ 4,5 % de la hauteur) qui montent du masque à peu près toutes les 0,8 s : « 1,500+ CREATORS. », « 2,200+ VIDEOS. », « 19 LANGUAGES. », « 16:9 OR 9:16. » (calage sur les attaques 32,36 / 33,16 / 33,96 s probable). Le décor illustre le chiffre (langues = orbites).",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Les orbites deviennent le logo",
+      "name_en": "orbits-to-logo morph",
+      "t": "0:35.20-0:36.30",
+      "frames": "f2112-f2178",
+      "fps": 60,
+      "mechanics": "L'atome rétrécit et glisse à gauche (f2112-f2128) ; les anneaux vus par la tranche s'écrasent en trois traits obliques (f2130-f2134, attaque 35,561 s) ; le soleil devient un point et sort à droite ; les traits se redressent en trois barres pastel (f2136-f2148), puis saturent en contours néon vert, bleu, rose (f2160-f2178). Environ 0,3 s par étape ; les couleurs des orbites sont celles du logo.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 2112,
+        "to": 2178,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot-symbole lettre à lettre sur lueur de braise",
+      "name_en": "letter-by-letter wordmark with ember glow",
+      "t": "0:36.3-0:39.98",
+      "frames": "f2178-f2399",
+      "fps": 60,
+      "mechanics": "Une lueur orange de braise monte du bas (f2180) ; « DistilBook » (grotesque Bold ≈ 10 % de la hauteur) s'écrit lettre à lettre, chaque lettre montant d'un masque, ≈ 2 im par lettre (f2192-f2210) ; slogan « Turn any PDF into a hand-illustrated explainer video. » (≈ 2,3 %), puis « Free to try · distilbook.com » (URL en bleu #7B8CFF). Plan tenu 2,5 s, fondu au noir avec la musique (−21 → −55 dB de 39,4 à 40,0 s).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Partition par chapitres, tempo propre à chaque acte",
+      "name_en": "sectional score with per-chapter tempo",
+      "t": "0:00-0:40.04",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "Intro : ostinato à 116 BPM en crescendo (force d'attaque 0,34 → 0,81 à chaque temps, 2,2-6,35 s) qui culmine sur le carton. Fission : 117 BPM. « ANY PDF » : nappe ≈ 90 BPM, attaques faibles. Fusion : un mot toutes les 0,816 s sur des doubles croches rapides (≈ 10,8 notes/s), puis accelerando. Silence au flash, grondement ≈ 98 BPM, montage à 0,4 s, logo ≈ 78 BPM et fondu final. La musique change de caractère à chaque changement d'acte de l'image.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette braise, puis triade réservée au final",
+      "name_en": "ember palette to tri-color payoff",
+      "t": "0:00-0:40.04",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "0-18 s et 25-29,9 s : noir et orange de braise ; 18-25 s : niveaux de gris (fusion) ; 29,9-31,5 s : illustrations claires ; 32-40 s : triade vert/bleu/rose réservée aux orbites de langues et au logo, qui en hérite. La couleur annonce la marque au moment de la révéler.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Métaphore nucléaire filée en actes",
+      "name_en": "extended nuclear metaphor",
+      "t": "0:00-0:40.04",
+      "frames": "f0-f2399",
+      "fps": 60,
+      "mechanics": "Page de manuel « Nuclear Fission » → les lettres deviennent énergie → 1. Fission : le PDF se divise en scènes → 2. Fusion : écrit, voix et dessin réunis → compte à rebours → explosion qui révèle des milliers de vidéos → atome des langues → logo. Chaque argument produit a son image physique.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-07.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Bloom, flou de mouvement et profondeur de champ",
+      "name_en": "bloom, motion blur and depth of field",
+      "t": "0:00-0:36.3",
+      "frames": "f0-f2178",
+      "fps": 60,
+      "mechanics": "Bloom fort sur chaque source lumineuse (halo ≈ 1,4 × les sphères), vrai flou de mouvement directionnel sur étincelles, faisceaux et cartes qui volent, profondeur de champ sur les cartes du premier plan, léger grain sur les cartons noirs : rendu « caméra de cinéma » plutôt qu'écran.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f319.jpg, microM-008-cut-f1603.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "« Use the Oppenheimer theme music as inspiration » a fourni tout l'imaginaire, pas seulement le son : fission, fusion, compte à rebours, Trinity, lumière puis silence puis souffle. Une référence culturelle forte structure plus qu'une liste d'effets."
+    },
+    {
+      "kind": "build",
+      "insight": "« but compose it yourself » oblige Claude à écrire la bande-son : elle partage la timeline de l'image, d'où des sections à tempo propre, des accents posés sur les chiffres et les coupes, et un silence numérique exactement au flash. C'est la recette d'une synchro réelle."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Le prompt nomme le produit sans le décrire : les promesses (« ANY PDF », « WRITTEN. VOICED. DRAWN. », 1 500+ créateurs, 2 200+ vidéos, 19 langues, 16:9 ou 9:16) viennent probablement du site ; le modèle les a converties chacune en image physique."
+    },
+    {
+      "kind": "structure",
+      "insight": "« 40-second » respecté (40,04 s). Sans plan imposé, le modèle a choisi deux chapitres numérotés puis un acte final (explosion → preuves → chiffres → logo), avec des cartons noirs comme respirations."
+    },
+    {
+      "kind": "direction",
+      "insight": "« go all out » pousse à la surenchère : quatre systèmes de particules, 3D partout, flashs ; la section « ANY PDF » en paie le prix (texte masqué, fond saturé)."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien ne demandait de vérifier la lisibilité : plusieurs accroches sont posées sur des fonds très chargés et certaines apparitions de texte ne tombent sur aucun temps. Il faut demander un temps de lecture minimal et un contraste derrière le texte."
+    }
+  ],
+  "steal": [
+    "Écrire la musique sur la même liste de repères que l'image : accent sur chaque changement, silence numérique de 0,5 s au flash, grondement puis impact sur l'onde de choc.",
+    "Compte à rebours qui accélère avec la musique : 22 → 19 im par chiffre, chaque chiffre posé sur un accent à ±1 im, un tour de balayage par chiffre.",
+    "Lumière avant le son : flash blanc 3 im, image surexposée qui redescend en 15 im, son coupé, puis souffle sur la caméra 1,5 s plus tard.",
+    "Récit produit en chapitres numérotés (« 1. FISSION », « 2. FUSION ») : carton noir minimal, interlettrage large, posé sur le temps fort, tenu 1 s.",
+    "Faire naître le logo du dernier décor : trois orbites colorées vues par la tranche deviennent trois traits, puis les barres du logo, mêmes couleurs, 0,3 s par étape."
+  ],
+  "flaws": [
+    "Section « ANY PDF » surchargée : dizaines d'orbes, anneaux et faisceaux, texte partiellement masqué par les objets qui passent.",
+    "Compte à rebours d'amorce et explosion nucléaire : pastiches littéraux d'Oppenheimer, clichés hors de ce contexte.",
+    "Rupture de ton : illustrations plates sur fond blanc au milieu d'un film sombre et cinématographique.",
+    "Plan final tenu 2,5 s sans mouvement : temps mort en fin de film.",
+    "Plusieurs textes (« 2. FUSION », « HAND-ILLUSTRATED », logo) ne tombent sur aucun temps, contrairement au reste."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : image et musique écrites ensemble. Le compte à rebours (21,8-25,2 s) et la séquence flash → silence → onde de choc (25,1-26,9 s) méritent une étude image par image à 60 fps, tout comme la morphose orbites → logo (35,2-36,3 s)."
+  }
+}

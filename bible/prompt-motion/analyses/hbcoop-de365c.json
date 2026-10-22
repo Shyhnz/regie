@@ -1,0 +1,387 @@
+{
+  "slug": "hbcoop-de365c",
+  "title": "Full Stop figure sequence",
+  "handle": "@HBCoop_",
+  "family": "showreel",
+  "craft": 5,
+  "craft_reason": "Concept en boucle d'une rigueur rare, transformations toutes motivées, physique exacte, typographie éditoriale et son calé à l'image près ; seules l'ouverture lente et la carte finale figée retiennent.",
+  "summary": "Plan-séquence de 29 s en planches de manuel numérotées : un point tapé devient ligne, cercle, sphère, lentille qui réfracte son propre code, balle qui rebondit (e = 0,75), nuée de 8 192 oiseaux, globe, puis redevient le point final de « Claude Opus 5.5 wrote every frame of this. ». Image et son générés en code, calés sur 120 BPM et sur les chocs. Concept, typographie et physique de niveau studio.",
+  "prompt_vs_result": [
+    "Une vidéo libre, « de ton choix », dont le seul but est de montrer les capacités d'Opus 5.5. Aucun sujet, style, durée, texte ni musique imposés.",
+    "Claude a tout décidé : le concept du point final en boucle, les 9 planches, le style manuel scientifique, la 3D, la physique, les particules, le globe, la phrase finale et la bande-son en code.",
+    "Le prompt ouvert a marché parce que Claude s'est imposé une contrainte forte (un seul point, une boucle, un système de légendes). Il aurait fallu préciser le format mobile et une fin plus courte."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F0EBDD", "role": "fond papier crème (centre)"},
+      {"hex": "#E5E1D2", "role": "bords du fond (vignette douce)"},
+      {"hex": "#0D0B08", "role": "encre : point, traits, sphère, texte"},
+      {"hex": "#C85A40", "role": "vermillon : curseur, « FIG. N », annotations, axe du globe"},
+      {"hex": "#6E6A5D", "role": "en-têtes et crédit en petites capitales"},
+      {"hex": "#B7B6AB", "role": "ombres portées au sol (cœur)"},
+      {"hex": "#E8A898", "role": "graticule du globe (rouge clair, probable)"},
+      {"hex": "#FFFFFF", "role": "reflets spéculaires et caustique de la lentille"}
+    ],
+    "type": "Serif garalde (EB Garamond probable) : phrase finale en romain, capitale ≈ 9 % de la hauteur ; « FIG. N » en petites capitales rouges espacées (+15 %) et nom en italique ≈ 4 % ; en-têtes en petites capitales grises ≈ 1,5 %.",
+    "texture": "Papier crème uni avec vignette très douce ; traits d'encre aux bords légèrement irréguliers (aspect tracé à la plume) quand le cercle passe en 3D ; sphère noire laquée avec reflet spéculaire ; ombres de contact floues et larges ; lentille en verre avec réfraction inversée et tache de caustique dans l'ombre ; continents en trame de points (halftone) ; aucun grain marqué, aucun flou de mouvement.",
+    "style": "Planche de manuel scientifique éditoriale",
+    "coherence": "Un seul objet (le point) traverse tout le film et chaque figure découle de la précédente ; trois couleurs seulement (crème, encre, vermillon) ; le même système de page (en-têtes, légende « FIG. N » centrée, une annotation chiffrée par figure) reste fixe pendant 29 s. Rien ne casse le système, même les passages 3D réalistes (verre, globe) restent dans la palette."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo 120 BPM (temps = 30 im à 60 fps, toutes les 0,5 s). Aucune coupe : un seul plan-séquence de 29 s. Chaque planche démarre sur un temps à 1 im près : f120, f240, f360, f480, f720, f960, f1260, f1500, f1560 (2, 4, 6, 8, 12, 16, 21, 25, 26 s). Les durées s'allongent avec la complexité : 2, 2, 2, 2, 4, 4, 5 et 5 s. Les mouvements en ease-in-out symétrique ont leur pic de vitesse sur un temps ou un demi-temps (f180, f225, f255, f300, f345). Le détecteur annonce 52 % de maintiens, mais ce sont surtout des phases lentes à faible énergie (frappe des légendes, rotation du globe). Vrais temps morts : 0-0,5 s (curseur seul, voulu) et la carte finale 26,9-29,06 s (≈ 2,2 s, seul le curseur clignote). Densité : un changement lisible toutes les 0,5 à 1 s pendant le corps du film.",
+    "timeline": [
+      {"t": "0:00-0:00.5", "what": "Curseur rouge seul, à la place exacte du futur point final (x ≈ 71 %, y ≈ 54 %)", "technique": "boucle annoncée"},
+      {"t": "0:00.5-0:02.0", "what": "Un point est tapé (f30) ; il glisse vers le centre en grossissant jusqu'à ≈ 9 % de la hauteur ; « FIG. 1 a point »", "technique": "point tapé puis agrandi"},
+      {"t": "0:02.0-0:04.4", "what": "FIG. 2 : le point file à droite en laissant une ligne, repart à gauche, se recentre ; la ligne fait 30 % de la largeur", "technique": "point qui sert de plume"},
+      {"t": "0:04.4-0:06.0", "what": "FIG. 3 : le point fait le tour d'un cercle complet en 62 im ; annotations « d » et « πd »", "technique": "tracé circulaire et annotation"},
+      {"t": "0:06.0-0:08.25", "what": "FIG. 4 : la caméra bascule de la vue de dessus à une vue rasante ; le cercle devient une ellipse au sol, le point une sphère noire avec ombre", "technique": "bascule 2D → 3D"},
+      {"t": "0:08.25-0:08.4", "what": "Le cercle se dissout, du code GLSL s'imprime sur le sol en perspective", "technique": "dissolution en code"},
+      {"t": "0:08.4-0:11.1", "what": "FIG. 5 : la sphère devient verre, réfracte le code à l'envers, caustique dans l'ombre, « n = 1.5 »", "technique": "lentille réfractive"},
+      {"t": "0:11.1-0:12.0", "what": "Retour à la sphère noire en 4 im, code effacé", "technique": "bascule de matière"},
+      {"t": "0:12.0-0:16.0", "what": "FIG. 6 : la balle saute et rebondit 9 fois vers la caméra, traînée pointillée rouge, « e = 0.75 »", "technique": "rebond physique avec écrasement"},
+      {"t": "0:16.0-0:20.7", "what": "FIG. 7 : la balle éclate en 8 192 particules qui volent en nuée avec une ombre au sol", "technique": "explosion en boids"},
+      {"t": "0:20.7-0:21.5", "what": "La nuée se pose sur une sphère et se change en continents en trame de points", "technique": "morph nuée → globe"},
+      {"t": "0:21.5-0:23.0", "what": "FIG. 8 : globe qui tourne, axe rouge incliné « 23.4° », graticule rouge, grande ombre", "technique": "globe halftone"},
+      {"t": "0:23.0-0:24.0", "what": "Le globe rétrécit et noircit jusqu'à redevenir un point ; légende effacée", "technique": "effondrement en point"},
+      {"t": "0:24.0-0:25.0", "what": "Le point rapetisse à ≈ 1 % et glisse à droite jusqu'à la place du point final", "technique": "placement du point"},
+      {"t": "0:25.0-0:25.93", "what": "« Claude Opus 5.5 wrote every frame of this. » se tape sur 2 lignes ; le point qui attendait devient le point final", "technique": "match cut du point final"},
+      {"t": "0:26.0-0:26.9", "what": "FIG. 9 « a full stop » puis crédit « No video model · No stock · Picture and sound are code »", "technique": "légende de clôture"},
+      {"t": "0:26.9-0:29.06", "what": "Carte finale fixe, curseur qui clignote", "technique": "maintien final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Pas de planche microscope générée pour cette vidéo : comptage fait sur les mesures image par image (différences d'images, suivi de la balle) et sur les attaques audio extraites. 19 gestes clés sur 23 à ±2 im d'un temps ou demi-temps (hasard ≈ 33 %) : point tapé f30 (attaque 0,511 s = f30,7), départ de la ligne f124 (attaque f124), pics de vitesse f180, f225, f255, f300, f345 (grille f180,9 / f225,9 / f255,9 / f300,9 / f345,9), bascule 3D f363, arrivée du code f496, lancer de la balle f720, 1er impact f780 (temps f780,9), 2e impact f825 (demi-temps f825,9), 4e impact f884, explosion en nuée f961, légende FIG. 8 f1260, effondrement du globe f1381, légende effacée f1440, début de la frappe f1500, légende FIG. 9 f1560. Ratés : lentille → balle noire f668, 3e impact f859 (physique libre), repli de la nuée f1242, point final atteint f1555. Effets sonores posés sur l'image : chocs de la balle à +1 im du contact (f780 → f781, f825 → f826, f859 → f860, f884 → f885) ; tics de tracé en double-croches (0,125 s) pendant la ligne (2,51-3,02 s) et le cercle (4,52-5,64 s) ; pulsation en croches sous la lentille (9,01-11,26 s, pas de 0,25 s) ; grosse caisse sur chaque temps sous la nuée et le globe (16,52 → 24,01 s) ; 8 clics de frappe en double-croches de 25,008 à 25,890 s.",
+    "synced": ["departs", "impacts", "apparitions", "texte", "pulsations", "camera"],
+    "style_match": "Partition minimaliste générée à 120 BPM (tics, pulsations, chocs) : aussi sobre et précise que l'image ; chaque figure reçoit sa couche sonore et ses effets physiques.",
+    "how_built": "Le crédit à l'écran le dit : « picture and sound are code ». Image et son sortent probablement d'une même horloge : sections à des secondes entières (120 BPM = 2 temps par seconde, grille triviale à quantifier), effets sonores déclenchés par les événements de la simulation (contacts de la balle), tics de tracé et de frappe quantifiés en double-croches. Aucune consigne musicale dans le prompt : la synchro vient du choix de Claude de composer la bande-son lui-même en même temps que l'animation."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle du point final",
+      "name_en": "Full-stop loop",
+      "t": "0:00-0:25.93",
+      "frames": "f0-f1556",
+      "fps": 60,
+      "mechanics": "La première image montre un curseur rouge seul à x ≈ 71 %, y ≈ 54 % ; à f30 un point est tapé à gauche du curseur. 25 s plus tard, la phrase finale se tape et son point final tombe exactement à cet endroit (x ≈ 71 %, y ≈ 57 %). Le film est un aller-retour du même signe typographique : le point de fin de phrase contient toute l'histoire. Le titre de la page en haut à gauche, « FULL STOP », annonce le concept dès la première image.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-05.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Escalade de complexité en planches numérotées",
+      "name_en": "Numbered figure escalation",
+      "t": "0:00.5-0:26.9",
+      "frames": "f30-f1615",
+      "fps": 60,
+      "mechanics": "9 figures : point (0D), ligne (1D), cercle (2D), sphère (3D), lentille (optique), balle (mécanique), nuée (comportement émergent), monde (planète), point final (langage). Chaque figure naît de la précédente sans coupe ; la complexité monte puis tout se replie en un point. Les planches durent 2, 2, 2, 2, 4, 4, 5 et 5 s : les figures simples passent vite, les plus riches respirent.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Match cut du point final (le globe redevient le point de la phrase)",
+      "name_en": "Globe-to-period match cut",
+      "t": "0:23.0-0:25.93",
+      "frames": "f1381-f1556",
+      "fps": 60,
+      "mechanics": "f1381-f1424 : le globe (≈ 33 % de la hauteur) rétrécit et noircit en disque plein ≈ 7 %, ombre qui s'efface, ease-in-out (pic de vitesse f1401), départ sur le temps f1381. f1442-f1498 : le disque rapetisse à ≈ 1 % et glisse de 50 % à 71 % de la largeur en ease-out (pic f1457, longue décélération), puis attend 2 im. f1500 : la phrase commence à se taper à gauche ; à f1555 « this » rejoint le point, qui devient le point final. L'œil suit un seul objet du globe à la ponctuation.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1381, "to": 1560, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légendes effacées au retour arrière puis retapées",
+      "name_en": "Backspace caption swap",
+      "t": "0:00.6-0:26.5",
+      "frames": "f36-f1590",
+      "fps": 60,
+      "mechanics": "Chaque fin de planche efface le nom en italique lettre par lettre de droite à gauche (≈ 3 im par lettre, ex. « a circle » → « a c » à f352), puis « FIG. N » change d'un coup sur le temps (f360) avec un curseur rouge, et le nouveau nom se tape à ≈ 3 im par lettre (« a sphere » : f364 → f388). Le curseur clignote entre deux légendes.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Système éditorial serif : petites capitales, italique, en-têtes",
+      "name_en": "Editorial serif caption system",
+      "t": "0:00-0:29.06",
+      "frames": "f0-f1739",
+      "fps": 60,
+      "mechanics": "Serif garalde (EB Garamond probable). En-têtes « FULL STOP » à gauche et « WRITTEN IN CODE BY CLAUDE OPUS 5.5 » à droite, petites capitales grises #6E6A5D ≈ 1,5 % de la hauteur, interlettrage ≈ +15 %, à y ≈ 5,5 %, marges ≈ 4 % de la largeur. Légende centrée à y ≈ 89 % : « FIG. N » petites capitales vermillon + nom en italique noir ≈ 4 %. Phrase finale en romain, capitale ≈ 9 % de la hauteur, interligne ≈ 15 %, alignée à gauche à x ≈ 17 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mise en page de planche de manuel",
+      "name_en": "Textbook plate layout",
+      "t": "0:00-0:29.06",
+      "frames": "f0-f1739",
+      "fps": 60,
+      "mechanics": "Grille fixe pendant tout le film : en-têtes aux coins hauts, sujet centré (40 à 60 % de la hauteur), légende centrée en bas, beaucoup d'air. Le cadre ne change jamais : seul le sujet évolue, ce qui rend chaque transformation lisible. Défaut : légendes et en-têtes trop petits pour un écran de téléphone.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le point sert de plume : ligne puis cercle",
+      "name_en": "Dot as pen: line then circle",
+      "t": "0:02.0-0:06.0",
+      "frames": "f124-f358",
+      "fps": 60,
+      "mechanics": "Le point (≈ 9 % de la hauteur) file à droite en 22 im en laissant un trait noir derrière lui (f124-f146), repart à gauche en 58 im (f147-f205), se recentre en 31 im (f207-f238), file au bout droit (f244-f263) : la ligne finale fait 30 % de la largeur. Puis il parcourt un cercle complet en 62 im (f268-f330) dont la ligne est le diamètre ; mi-parcours (bout gauche) au pic de vitesse f300 = temps. Retour au centre en 25 im. Toutes les courbes sont en ease-in-out symétrique (sinus probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Une mesure chiffrée par figure, en italique rouge avec filet",
+      "name_en": "One quantitative annotation per figure",
+      "t": "0:05.5-0:23.0",
+      "frames": "f330-f1380",
+      "fps": 60,
+      "mechanics": "« d » et « πd » (cercle), « n = 1.5 » (indice de réfraction du verre), « e = 0.75 » (coefficient de restitution du rebond), « n = 8,192 » (nombre d'oiseaux), « 23.4° » (inclinaison de l'axe terrestre). Italique vermillon ≈ 2,5 % de la hauteur, relié à l'objet par un filet fin à 45°, apparition en fondu ≈ 10 im. Chaque chiffre est vrai et piloté par le code : la mesure prouve la simulation.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Bascule de la vue de dessus à la vue rasante (2D → 3D)",
+      "name_en": "Top-down to grazing camera tilt",
+      "t": "0:06.05-0:08.25",
+      "frames": "f363-f495",
+      "fps": 60,
+      "mechanics": "La caméra quitte la vue de dessus et descend vers une vue rasante tout en avançant : le cercle devient une ellipse dont le rapport hauteur/largeur passe de 1 à ≈ 0,46 à f420 puis ≈ 0,22 à f480 (élévation ≈ 90° → 27° → 13°), le diamètre passe de 30 % à 95 % de la largeur ; le trait s'épaissit côté caméra (perspective). Le point devient une sphère noire laquée avec reflet et ombre portée vers la droite. Accélération continue (ease-in : énergie 0,14 à f363 → 1,28 à f469). Départ sur le temps f360,9.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 360, "to": 496, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Le cercle se dissout et le code s'imprime au sol",
+      "name_en": "Circle dissolves into floor code",
+      "t": "0:08.25-0:08.4",
+      "frames": "f494-f504",
+      "fps": 60,
+      "mechanics": "En ≈ 8 im, l'ellipse et le diamètre s'effacent par morceaux depuis la gauche pendant que des lignes de code en chasse fixe apparaissent couchées sur le sol en perspective ; pic de différence à f500 (bavure claire sur l'anneau). Changement de figure lisible mais un peu brouillé à 60 fps.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Code de réfraction couché au sol, lu à travers la lentille",
+      "name_en": "Refraction shader code on the floor",
+      "t": "0:08.4-0:11.1",
+      "frames": "f504-f668",
+      "fps": 60,
+      "mechanics": "7 lignes d'une fonction GLSL « vec3 through(float ior) { … refract(V, N, 1.0 / ior) … } » en chasse fixe noire, couchées sur le sol, occupant ≈ 45 % de la largeur. Le sol glisse d'environ 15 % de la largeur vers la droite pendant que la lentille reste centrée. Autoréférence : la boule de verre affiche le code qui la calcule.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Lentille de verre : réfraction inversée et caustique",
+      "name_en": "Glass lens with inverted refraction and caustic",
+      "t": "0:08.5-0:11.1",
+      "frames": "f510-f668",
+      "fps": 60,
+      "mechanics": "La sphère noire devient transparente en ≈ 30 im (f510-f540). À l'intérieur, le code apparaît inversé et grossi (« a Ce » à l'envers), avec un léger liseré chromatique ; l'ombre au sol contient une tache de lumière concentrée (caustique). Retour au noir en 4 im (f668-f672), sec. Rendu probable en lancer de rayons (shader).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Rebonds physiques à restitution 0,75",
+      "name_en": "Physical bounce with restitution 0.75",
+      "t": "0:12.0-0:15.75",
+      "frames": "f719-f945",
+      "fps": 60,
+      "mechanics": "Lancer f719 (sur le temps), apogée f745, impacts mesurés f780, f825, f859, f884, f903, f917, f928, f936, f942 : intervalles 45, 34, 25, 19, 14, 11, 8, 6 im, chacun ≈ 0,75 fois le précédent (exactement le « e = 0.75 » affiché). Montées en ease-out gravitaire (pas de 4 % puis 1 % du cadre), chutes en ease-in. 1er impact sur le temps f780,9, 2e sur le demi-temps f825,9, la suite suit la physique. Repos à f945.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 770, "to": 830, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Écrasement-étirement à l'impact",
+      "name_en": "Squash and stretch on impact",
+      "t": "0:12.95-0:14.75",
+      "frames": "f777-f885",
+      "fps": 60,
+      "mechanics": "Avant l'impact, la balle s'étire verticalement (hauteur/largeur ≈ 1,31 à f777-f778), s'écrase à l'impact (largeur/hauteur ≈ 1,34 à f780, 1 im), puis reprend sa forme en 2 im. L'écrasement diminue avec la vitesse : 1,24 à f825, 1,12 à f859, ≈ 1,07 à f884. Dosage juste : visible sans caricature.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Traînée pointillée de la trajectoire",
+      "name_en": "Dotted trajectory trail",
+      "t": "0:12.1-0:16.0",
+      "frames": "f726-f960",
+      "fps": 60,
+      "mechanics": "La balle laisse des points rouges ≈ 0,4 % de la hauteur à intervalle de temps constant (probable toutes les 2 im) : serrés aux apogées, espacés dans les chutes, ce qui rend la gravité lisible comme un graphique. Les arches décroissantes forment une courbe de décroissance visible. La traînée dérive vers la gauche car la caméra suit la balle.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui suit la balle et s'en approche",
+      "name_en": "Ball-tracking dolly",
+      "t": "0:12.0-0:16.0",
+      "frames": "f720-f960",
+      "fps": 60,
+      "mechanics": "La balle reste vers 55-60 % de la largeur pendant que la traînée glisse à gauche (travelling latéral) ; sa taille passe de ≈ 8 % à ≈ 21 % de la hauteur (rapprochement caméra ou balle qui vient vers l'objectif). Mouvement lent et continu, sans à-coup.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Explosion de la balle en nuée de 8 192 oiseaux",
+      "name_en": "Ball bursts into an 8,192-boid flock",
+      "t": "0:16.0-0:20.7",
+      "frames": "f961-f1242",
+      "fps": 60,
+      "mechanics": "Sur le temps f960,9, la balle (≈ 21 % de la hauteur) se défait vers le haut : l'enveloppe passe à ≈ 41 % de la hauteur en 15 im (f961-f976). Les particules, petits traits noirs, volent ensuite en nuée (règles de boids probables : séparation, alignement, cohésion), forment des rubans et des boucles, avec une ombre floue commune au sol. Grosse caisse sur chaque temps. Silhouette parfois informe, durée un peu longue (4,7 s).",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "La nuée se pose sur une sphère et devient les continents",
+      "name_en": "Flock settles into a stippled globe",
+      "t": "0:20.7-0:21.5",
+      "frames": "f1242-f1290",
+      "fps": 60,
+      "mechanics": "Après un sursaut f1242, les oiseaux convergent vers la surface d'une sphère (contour et graticule apparaissent), la recouvrent par le haut, puis rétrécissent et se rangent en trame de points qui dessine l'Afrique et l'Europe. ≈ 48 im (0,8 s). La légende passe de « a flock » à « a world » au retour arrière pendant la transformation (FIG. 8 sur le temps f1260). Transformation motivée : chaque oiseau devient un point de la trame.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg",
+      "illus": {"from": 1236, "to": 1296, "n": 6}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Globe en trame de points avec axe incliné",
+      "name_en": "Halftone globe with tilted axis",
+      "t": "0:21.5-0:23.0",
+      "frames": "f1290-f1380",
+      "fps": 60,
+      "mechanics": "Sphère blanc cassé ≈ 33 % de la hauteur, contour noir, continents en points noirs réguliers, graticule rouge clair, axe vermillon incliné annoté « 23.4° ». Rotation lente d'ouest en est (Afrique qui glisse vers la droite). Grande ombre floue au sol décalée à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette trois tons : crème, encre, vermillon",
+      "name_en": "Three-tone palette: cream, ink, vermilion",
+      "t": "0:00-0:29.06",
+      "frames": "f0-f1739",
+      "fps": 60,
+      "mechanics": "Fond #F0EBDD, encre #0D0B08 pour tous les objets, vermillon #C85A40 réservé à ce qui est méta (curseur, numéros de figure, mesures, trajectoire, axe). Le rouge ne sert jamais à décorer : il signale l'annotation.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres de contact douces sur fond papier",
+      "name_en": "Soft contact shadows on paper",
+      "t": "0:06.3-0:23.9",
+      "frames": "f378-f1435",
+      "fps": 60,
+      "mechanics": "À partir de la bascule 3D, chaque objet projette une ombre floue gris chaud #B7B6AB, décalée vers le bas à droite (lumière en haut à gauche) ; l'ombre s'éloigne de l'objet quand il monte (balle, nuée), ce qui donne la hauteur sans repère de sol. Elle s'efface quand le globe redevient un point plat.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Planches calées sur les temps, durées croissantes",
+      "name_en": "Beat-aligned sections with growing lengths",
+      "t": "0:02.0-0:26.0",
+      "frames": "f120-f1560",
+      "fps": 60,
+      "mechanics": "Changements de légende « FIG. N » aux images f120, f240, f360, f480, f720, f960, f1260, f1560, chacun à ≤ 1 im d'un temps (grille f30,9 + 30k). Durées 2, 2, 2, 2, 4, 4, 5, 5 s = 4, 4, 4, 4, 8, 8, 10, 10 temps. Pics de vitesse des mouvements en ease-in-out sur temps ou demi-temps (f180, f225, f255, f300, f345).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Chocs sonores à l'image de contact",
+      "name_en": "Impact SFX on the contact frame",
+      "t": "0:13.0-0:15.1",
+      "frames": "f780-f903",
+      "fps": 60,
+      "mechanics": "Chaque rebond produit un choc grave à l'image de contact + 1 im (17 ms) : f780 → 13,015 s, f825 → 13,769 s, f859 → 14,327 s, f884 → 14,756 s, f903 → 15,023 s. Son déclenché par la simulation, donc physiquement juste, y compris quand les rebonds sortent de la grille du tempo.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Tics de tracé et de frappe en double-croches",
+      "name_en": "Sixteenth-note drawing and typing ticks",
+      "t": "0:02.5-0:25.9",
+      "frames": "f150-f1553",
+      "fps": 60,
+      "mechanics": "Pendant que le point trace la ligne (2,51 → 3,02 s) et le cercle (4,52 → 5,64 s), des tics brefs tombent toutes les 0,125-0,128 s (double-croche à 120 BPM). La phrase finale est accompagnée de 8 clics en double-croches de 25,008 s (début de la frappe f1500, sur le temps) à 25,890 s, alors que les lettres arrivent plus vite (≈ 0,75 caractère par image) : le son quantifie le geste au lieu de le doubler lettre par lettre.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une couche rythmique par figure",
+      "name_en": "Per-figure rhythmic layer",
+      "t": "0:00.5-0:26.5",
+      "frames": "f30-f1590",
+      "fps": 60,
+      "mechanics": "Attaque forte au point tapé (0,511 s) ; basse présente sous la ligne, coupée sous le cercle (4,5-5,9 s) puis revenue sous la sphère ; pulsation en croches (0,25 s) sous la lentille (9,0-11,3 s) ; grosse caisse sur chaque temps sous la nuée et le globe (16,5-24,0 s) ; texture plus calme sous la phrase finale. Le son change de matière en même temps que la figure.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Phrase finale tapée en rafale",
+      "name_en": "Burst-typed closing sentence",
+      "t": "0:25.0-0:25.93",
+      "frames": "f1500-f1556",
+      "fps": 60,
+      "mechanics": "42 caractères en 56 im (≈ 0,75 caractère par image), sur 2 lignes alignées à gauche, curseur vermillon en tête, sans fondu par lettre. Démarre sur le temps (f1500). Assez rapide pour garder l'élan, la lecture se fait pendant le maintien qui suit.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Crédit méta comme signature",
+      "name_en": "Meta credit as sign-off",
+      "t": "0:26.9-0:29.06",
+      "frames": "f1615-f1739",
+      "fps": 60,
+      "mechanics": "Ligne en petites capitales grises à y ≈ 95 % : « NO VIDEO MODEL · NO STOCK · PICTURE AND SOUND ARE CODE ». Avec l'en-tête « WRITTEN IN CODE BY CLAUDE OPUS 5.5 », elle transforme la démonstration en preuve. Puis maintien ≈ 2,2 s avec le curseur qui clignote (≈ 1 temps allumé, 1 temps éteint).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Your choice » + « flex capabilities » : sans sujet imposé, Claude a choisi un thème qui expose plusieurs savoir-faire techniques d'un coup (tracé, perspective, réfraction, physique, boids, globe, typographie), en les reliant par un seul objet pour éviter l'effet catalogue."},
+    {"kind": "structure", "insight": "La structure en « FIG. 1 → FIG. 9 » est une contrainte que Claude s'est donnée : elle sert de chapitrage, de rythme (légende qui change sur le temps) et de justification au style manuel scientifique."},
+    {"kind": "build", "insight": "Tout est généré en code (le crédit l'affirme), son compris : la même horloge pilote l'image et la bande-son, d'où des chocs à +1 im et des sections sur les temps. C'est l'argument de la vidéo autant que sa méthode."},
+    {"kind": "other", "insight": "Les annotations chiffrées (n = 1.5, e = 0.75, n = 8,192, 23.4°) prouvent que les effets sont simulés et non simulés à la main : la mesure affichée correspond à ce qu'on mesure sur les images (rebonds en rapport 0,75)."},
+    {"kind": "qa", "insight": "Le prompt ne parlait ni de format ni de lisibilité : légendes à 1,5-4 % de la hauteur, illisibles sur mobile, et carte finale de 2 s figée. Préciser « lisible sur téléphone » et « fin ≤ 1,5 s » aurait suffi."}
+  ],
+  "steal": [
+    "Faire d'un seul point le fil de toute la vidéo : il trace, devient objet, se transforme, puis redevient le point final d'une phrase.",
+    "Numéroter les plans comme des planches (FIG. N + nom en italique) ; effacer la légende au retour arrière et taper la suivante sur le temps.",
+    "Rebonds : intervalles multipliés par 0,75, écrasement ≈ 1,3 sur 1 im à l'impact, premier contact sur un temps, choc sonore 1 im après.",
+    "Passer du schéma 2D à la scène 3D en basculant la caméra vers une vue rasante : le cercle devient sol, le point devient sphère avec ombre.",
+    "Afficher une seule mesure chiffrée par figure (n = 1.5, e = 0.75, 23.4°) en italique rouge relié par un filet fin."
+  ],
+  "flaws": [
+    "Ouverture lente : 2 s pour un point qui grossit, accroche faible dans un fil d'actualité.",
+    "Nuée de 4,7 s un peu longue, silhouette souvent informe.",
+    "Transition cercle → code brouillée en 8 im, bavure claire à f500.",
+    "Légendes et en-têtes minuscules (1,5 à 4 % de la hauteur), illisibles sur mobile.",
+    "Carte finale figée ≈ 2,2 s, seul le curseur bouge."
+  ],
+  "deep_study": {"worth": true, "why": "Oui : un plan-séquence sans coupe où chaque transformation est motivée. À étudier image par image : la bascule 2D → 3D (f360-f496), les rebonds à 0,75 avec écrasement et chocs sonores à +1 im (f719-f945), le passage nuée → globe (f1236-f1296) et le retour au point final (f1381-f1560)."}
+}

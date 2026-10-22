@@ -1,0 +1,326 @@
+{
+  "slug": "lemomo-ai-0d9cff",
+  "title": "Whiteboard skill tutorial",
+  "handle": "@lemomo_ai",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Explainer tableau blanc maîtrisé : un seul canevas parcouru en panoramiques filés, feutres qui dessinent au rythme de la voix, croquis qui deviennent de vraies interfaces, boucle finale et révélation de toute la carte.",
+  "summary": "Tutoriel de 71 s, en voix off anglaise avec sous-titres bilingues, sur un skill Claude qui fabrique des films. Il ouvre sur quatre échantillons de styles, recule jusqu'au site, puis parcourt un grand tableau blanc en trois étapes (installer, dire une ligne, répondre une fois). Les feutres dessinent des croquis qui deviennent le vrai terminal et la vraie appli. Il finit en boucle (« c'est ainsi que ce film a été fait ») et révèle la carte complète.",
+  "prompt_vs_result": [
+    "Un tutoriel sur l'usage du skill Lemo-Opuscar avec Opus 5.5, dans le style « Whiteboard Explainer » du skill, structuré par « One prompt, one answer, then ship film ».",
+    "Claude/le skill a décidé du canevas unique, des panoramiques filés, des croquis qui deviennent UI, de la mascotte, du code couleur des feutres, de la frise du pipeline, de la boucle méta et du slogan final en trois lignes.",
+    "Le style nommé entre crochets a cadré toute la grammaire, et la phrase finale du prompt est devenue structure et slogan. Rien n'imposait la lisibilité des écrans d'UI ni une musique utile."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F2F1EC", "role": "tableau blanc (fond)"},
+      {"hex": "#2A2A2A", "role": "feutre noir : titres, contours, frise"},
+      {"hex": "#D8693F", "role": "feutre orange : étapes, cercles, accents"},
+      {"hex": "#2F5DB8", "role": "feutre bleu : alternatives, détails, icônes"},
+      {"hex": "#DA7756", "role": "mascotte pixel et bouton d'envoi"},
+      {"hex": "#15120F", "role": "fond de la galerie de films"},
+      {"hex": "#C8A35A", "role": "titre doré « OPUSCAR »"},
+      {"hex": "#FAF9F5", "role": "fond crème de l'appli Claude"},
+      {"hex": "#1F1D1B", "role": "terminal"},
+      {"hex": "#FFFFFF", "role": "carte des sous-titres"}
+    ],
+    "type": "Manuscrite type feutre fin (Patrick Hand ou Gochi Hand probable) : titre en capitales ≈ 9 % de hauteur, étiquettes en bas de casse ≈ 4 %. Sous-titres anglais manuscrits ≈ 2,5 %, chinois gris ≈ 1,8 %. UI : serif (appli Claude), mono (terminal).",
+    "texture": "Tableau légèrement grisé avec traces fantômes d'anciens effacements (« todo », cercles) ; feutres rendus en volume avec capuchon et ombre portée décalée ; flou directionnel fort sur les panoramiques ; flou de mise au point pendant les zooms dans l'UI ; cadre gris du tableau visible à la fin.",
+    "style": "whiteboard explainer hybride, croquis et UI réelle",
+    "coherence": "Tient par le canevas unique (tout est sur le même tableau, la fin le prouve), le code couleur des feutres, la mascotte à chaque étape et les numéros cerclés 1-2-3. Les écrans d'UI réels détonnent volontairement mais sont toujours amenés par un croquis au feutre."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "aucune",
+    "dead_time": "un-peu",
+    "notes": "La pulsation musicale est faible (netteté 2,0, tempo de 80 BPM peu fiable) : c'est une nappe. Le rythme est dicté par la voix off : chaque phrase déclenche un dessin, un zoom ou un panoramique. Densité : 5 coupes franches, toutes dans les montages d'échantillons (0,46 / 0,96 / 1,46 s, puis 1:00.46 et 1:01.46, plans de 12 im = 0,5 s). Le reste est un plan-séquence sur le tableau, avec 7 panoramiques filés de 10 à 19 im (0,4-0,8 s). Maintiens au-dessus de 0,4 s : 32 % de la durée. Les vrais creux sont la saisie dans le terminal (14,6-17,9 s, 3,3 s), les questions surlignées (36,7-39,8 s, 3,1 s), le storyboard affiché (49,7-51,5 s) et 3 s figées en fin (68-71 s). La voix continue pendant ces maintiens, donc ils pèsent moins.",
+    "timeline": [
+      {"t": "0:00-0:01.5", "what": "Quatre échantillons de films en plein cadre, 0,5 s chacun (vague ukiyo-e, parapluies impasto, vélo risograph, vitrail), sous-titre « Thirty-nine film styles. ».", "technique": "montage de preuves"},
+      {"t": "0:01.5-0:05.5", "what": "Le vitrail joue puis la caméra recule : vignette de galerie, site sombre et doré, puis fenêtre de navigateur posée sur un tableau blanc.", "technique": "pull-back reveal"},
+      {"t": "0:06.3-0:10.8", "what": "Le feutre noir écrit « LEMO-OPUSCAR », l'orange souligne, puis « 39 film styles. your story. ».", "technique": "écriture au feutre"},
+      {"t": "0:12.7-0:13.3", "what": "Panoramique filé vers la droite.", "technique": "whip pan flou"},
+      {"t": "0:13.2-0:14.5", "what": "Boîte orange « install once », mascotte, deux feutres esquissent une fenêtre qui se remplit en terminal.", "technique": "croquis → écran"},
+      {"t": "0:14.5-0:18.0", "what": "Saisie des commandes d'installation du plugin, coches vertes.", "technique": "terminal simulé"},
+      {"t": "0:18.0-0:20.0", "what": "Panoramique ; le feutre bleu écrit « or clone the repo » et l'URL, flèche pointillée vers une icône de dossier.", "technique": "alternative en bleu"},
+      {"t": "0:20.0-0:25.5", "what": "Panoramique diagonal vers la galerie ; « 1 pick a style » ; la vignette Whiteboard Explainer joue, cerclée en orange « this one! ».", "technique": "étape numérotée + cerclage"},
+      {"t": "0:25.9-0:28.5", "what": "Panoramique, flèche bleue ondulée, croquis de fenêtre qui devient l'appli Claude « What should we make? ».", "technique": "croquis → écran"},
+      {"t": "0:28.5-0:34.0", "what": "Zoom flou dans le menu des modèles (Opus 5.5 coché), puis dans le champ : saisie de la ligne de commande du film.", "technique": "zoom avec flou de mise au point"},
+      {"t": "0:34.0-0:42.0", "what": "« 2 answer once » ; la réponse du skill pose 3 questions, surlignées en orange l'une après l'autre au fil de la voix ; saisie de la réponse.", "technique": "surlignage séquentiel"},
+      {"t": "0:42.5-0:51.6", "what": "Le skill travaille ; sous l'écran, le feutre trace une frise « guides → treatment → storyboard? » avec tampon « OK? », puis des vignettes de storyboard apparaissent.", "technique": "frise de pipeline"},
+      {"t": "0:51.7-0:57.4", "what": "Petit panoramique vers le bas ; le feutre bleu dessine micro, note, image et curseurs au fil de « voice, music, frames, mix ».", "technique": "icônes calées sur la voix"},
+      {"t": "0:57.4-1:00.0", "what": "Panoramique ; « 3 get your film », croquis d'un lecteur, chemin de sortie « my-films/how-to-opuscar/ », note « 60 MB, first use ».", "technique": "croquis → écran"},
+      {"t": "1:00.0-1:02.6", "what": "Les échantillons rejouent dans le lecteur, zoom puis coupe vers le vitrail plein cadre : « Yes. That's how this film was made. ».", "technique": "boucle méta"},
+      {"t": "1:02.6-1:04.7", "what": "Long recul : toute la carte du tableau apparaît, avec les étapes, les flèches et la frise.", "technique": "révélation de la carte"},
+      {"t": "1:04.7-1:08.0", "what": "« Say one line. / Answer once. / Get your film. » écrits ligne à ligne ; prérequis et URL GitHub en bleu ; le lecteur montre ce film-ci en train de s'écrire.", "technique": "slogan final + mise en abyme"},
+      {"t": "1:08.0-1:11.1", "what": "Tableau complet figé.", "technique": "carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Musique posée sous la voix. Gestes clés comparés à la grille de 80 BPM : coupe f11 (-1 vs demi-temps f12), coupe f35 (-5 / +4), départ de panoramique f304 (+4 / -5), f432 (-3), atterrissage f486 (0), départ f621 (-3), départ f1240 (+4 / -5), coupe f1451 (-7 / +8), coupe f1475 (+5 / -4). Soit 2 sur 9 à ±2 im, pour un hasard d'environ 56 % (à 24 fps, un demi-temps fait 9 im). Indice automatique nul (R ≤ 0,05), corrélation intensité ↔ mouvement r = -0,03. En revanche, 9 dessins clés sur 9 tombent à ±0,7 s de la phrase qui les nomme (« install once », « pick a style », « this one », Opus 5.5, « answer once », « storyboard? », micro, note, image, curseurs, slogan final).",
+    "synced": [],
+    "style_match": "Nappe calme à pulsation faible : cohérente avec le ton posé du tutoriel, mais décorative. Aucun accent ne soutient les panoramiques ni les révélations.",
+    "how_built": "Le skill enregistre la voix, écrit la musique, dessine et mixe (dit par le film lui-même). Le minutage est fait sur les segments de voix, la musique sert de fond. Effets sonores de whoosh probables sur certains panoramiques (attaques à 18,12 s et 51,55 s, 0-3 im avant le départ du mouvement), non vérifiables ici."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Ouverture par un montage de preuves à 0,5 s par plan",
+      "name_en": "proof-first sample montage",
+      "t": "0:00-0:01.5",
+      "frames": "f0-f35",
+      "fps": 24,
+      "mechanics": "Quatre films d'exemple de styles opposés (ukiyo-e, impasto, risograph, vitrail) en plein cadre, coupes franches à f11, f23 et f35 (≈ 12 im = 0,5 s chacun), avec leur interface de lecteur (barre de progression dorée, durée « 0:44 » / « 0:40 » / « 0:57 »). Le sous-titre « Thirty-nine film styles. » entre en fondu dès f6. Montre la promesse avant de l'énoncer.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f11.jpg, microM-002-cut-f35.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul continu du contenu vers son contexte",
+      "name_en": "content-to-context pull-back",
+      "t": "0:03.0-0:05.0",
+      "frames": "f72-f120",
+      "fps": 24,
+      "mechanics": "Le film plein cadre recule et devient une vignette de la galerie (« STAINED GLASS »), puis la galerie devient un site dans une fenêtre de navigateur, posée sur le tableau blanc. Échelle ≈ ÷8 à ÷10 en ≈ 45 im (1,9 s). Ease-in-out : accélération f84-f100, léger flou de mouvement vers f93-f100, freinage f106-f117. Puis dérive lente vers le bas (≈ 0,5 % du cadre par image) pour laisser la place au titre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f87.jpg, microM-004-move-f107.jpg, microM-005-move-f148.jpg",
+      "illus": {"from": 72, "to": 120, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Canevas unique parcouru en panoramiques filés",
+      "name_en": "single-canvas whip pans",
+      "t": "0:12.67-0:13.25",
+      "frames": "f304-f318",
+      "fps": 24,
+      "mechanics": "Toutes les étapes sont des zones d'un même grand tableau ; la caméra passe de l'une à l'autre par des panoramiques rapides. Ici, déplacement ≈ 1,1 largeur de cadre en 14 im (0,58 s), courbe ease-in-out, flou de mouvement horizontal fort de f306 à f312 (≈ 5-8 % de la largeur), image nette dès f317. Variantes : f431-f447 vers la droite (16 im), f473-f486 en diagonale avec léger zoom (13 im, flou très fort), f621-f640 (19 im), f1240-f1250 vers le bas (10 im). Les feutres entrent dans le champ pendant la fin du mouvement.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f308.jpg, microM-007-move-f437.jpg, microM-008-move-f483.jpg, microM-009-move-f628.jpg, microM-010-move-f1242.jpg",
+      "illus": {"from": 302, "to": 318, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Écriture au feutre avec feutre en volume qui suit la pointe",
+      "name_en": "marker write-on",
+      "t": "0:06.3-0:10.5",
+      "frames": "f152-f252",
+      "fps": 24,
+      "mechanics": "Le texte se révèle trait par trait derrière la pointe d'un feutre rendu en volume (capuchon, ombre portée décalée, incliné ≈ 30°). « LEMO-OPUSCAR » s'écrit en ≈ 2 s (≈ 4 im par lettre), puis le feutre orange trace le soulignement en ≈ 1 s, et le noir écrit la ligne de sous-titre. Le feutre arrive en glissant avant le premier trait et repart hors cadre après le dernier.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-005-move-f148.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Croquis qui devient écran : contour, traits, puis balayage du remplissage",
+      "name_en": "sketch-to-screen ink fill",
+      "t": "0:13.12-0:14.50",
+      "frames": "f315-f348",
+      "fps": 24,
+      "mechanics": "Pendant la fin du panoramique, le feutre orange trace une petite boîte (f315-f320) et y écrit « install » (f322-f330, ≈ 1 lettre toutes les 2 im). Le feutre noir entre par le bas-droite et trace le grand rectangle de fenêtre en ≈ 4 im (f320-f324), puis des lignes horizontales de ≈ 2-3 im chacune. Le feutre orange trace d'autres lignes en même temps (f332-f337). Un remplissage sombre balaie ensuite le rectangle de gauche à droite, bord flou, en ≈ 12 im (f336-f347) : le croquis devient le vrai terminal, dont les traits de lignes disparaissent. Les feutres sortent pendant le balayage. Même recette pour l'appli Claude (0:26.5-0:27.5) et pour le lecteur (0:59.0-0:59.8).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-05.jpg, overview-10.jpg",
+      "illus": {"from": 318, "to": 348, "n": 8}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Mascotte pixel à chaque étape",
+      "name_en": "pixel mascot marker",
+      "t": "0:13.54-1:08",
+      "frames": "f325-f1632",
+      "fps": 24,
+      "mechanics": "Petite créature pixel orange #DA7756 (≈ 6 % de la hauteur), apparue en 1 im sans transition sous chaque étiquette d'étape et sur les écrans, parfois en bas de l'UI. Elle sert de repère de marque, sans jeu d'acteur.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-04.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Étapes numérotées cerclées à gauche de chaque écran",
+      "name_en": "numbered step labels",
+      "t": "0:20.5-0:59.5",
+      "frames": "f492-f1428",
+      "fps": 24,
+      "mechanics": "Chiffre dans un cercle orange tracé à la main (≈ 8 % de la hauteur), étiquette manuscrite noire dessous (« pick a style », « answer once », « get your film »), le tout dans une colonne étroite à gauche, ≈ 12 % de la largeur. L'écran d'UI occupe les ≈ 80 % restants. Les étapes s'enchaînent de gauche à droite sur le tableau, reliées par des flèches bleues.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-06.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "UI réelles recréées et posées sur le tableau",
+      "name_en": "real UI embedded in whiteboard",
+      "t": "0:14.5-0:51.6",
+      "frames": "f348-f1238",
+      "fps": 24,
+      "mechanics": "Terminal (commandes d'installation du plugin, coches), appli Claude (titre serif « What should we make? », champ de saisie, menu Opus 5.5 / Sonnet / Haiku, messages avec étapes « Skill » et « Bash », questions, vignettes de storyboard) et galerie du site. Rendus nets, non dessinés, dans des fenêtres dont le cadre est tracé au feutre noir.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-05.jpg, overview-07.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom dans l'UI avec flou de mise au point",
+      "name_en": "focus-blur push into UI",
+      "t": "0:29.0-0:31.5",
+      "frames": "f696-f756",
+      "fps": 24,
+      "mechanics": "Pour passer d'un plan large de l'appli à un détail (menu des modèles, champ de saisie, liste de questions), l'image entière passe en flou gaussien pendant ≈ 6-10 im, la caméra change d'échelle (≈ ×2) et la netteté revient sur le détail. Même procédé à 0:31.0, 0:36.3, 0:44.0 et 0:52.0.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, overview-06.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Surlignage séquentiel calé sur l'énumération de la voix",
+      "name_en": "voice-synced sequential highlight",
+      "t": "0:36.5-0:40.0",
+      "frames": "f876-f960",
+      "fps": 24,
+      "mechanics": "Les trois questions du skill sont listées en gris foncé. La question énoncée par la voix passe en orange #D8693F : n°2 de ≈ 36,9 à 38,8 s, n°3 à partir de ≈ 39,4 s. Changement instantané, sans animation. Guide l'œil dans un écran dense.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Frise du pipeline tracée sous l'écran, avec tampon « OK? »",
+      "name_en": "hand-drawn pipeline timeline",
+      "t": "0:45.5-0:49.0",
+      "frames": "f1092-f1176",
+      "fps": 24,
+      "mechanics": "Le feutre noir tire une ligne horizontale sur toute la largeur (≈ 0,5 s), pose des nœuds en cercles vides à intervalles réguliers, puis écrit « guides » et « treatment ». Le feutre orange écrit « storyboard? » et dessine un cercle pointillé « OK? » en forme de tampon. La frise se prolonge ensuite (voice . music . frames . mix, dossier de sortie) et relie toute la partie basse du tableau.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg, overview-09.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Icônes dessinées au mot près de la voix off",
+      "name_en": "voice-locked icon draw-on",
+      "t": "0:53.3-0:57.3",
+      "frames": "f1280-f1376",
+      "fps": 24,
+      "mechanics": "Sur « records the voice, writes the music, draws every frame and mixes », le feutre bleu dessine un micro (≈ 53,4 s), une note (≈ 54,7 s), un cadre-image (≈ 56,0 s) et des curseurs de mixage (≈ 57,2 s) : un toutes les ≈ 1,2-1,3 s, au débit de la parole, en ≈ 6-8 im chacun. Il écrit ensuite les étiquettes « voice . music . frames . mix » dessous. Le feutre se déplace d'une icône à l'autre sans quitter le cadre.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1270, "to": 1376, "n": 8}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur des feutres",
+      "name_en": "marker color coding",
+      "t": "0:06-1:08",
+      "frames": "f150-f1632",
+      "fps": 24,
+      "mechanics": "Noir #2A2A2A = structure (titre, contours, frise, slogan) ; orange #D8693F = étapes, cerclages, accents (« install once », « this one! », « storyboard? », « OK? ») ; bleu #2F5DB8 = alternatives et détails (« or clone the repo », flèches, icônes, prérequis, URL). Trois couleurs seulement, rôle constant.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Tableau avec traces fantômes et feutres à ombre portée",
+      "name_en": "ghosted whiteboard surface",
+      "t": "0:05.5-1:11",
+      "frames": "f132-f1706",
+      "fps": 24,
+      "mechanics": "Fond #F2F1EC non uniforme, avec des restes d'anciens effacements à ≈ 5-10 % d'opacité (« todo », cercles, traits). Les feutres projettent une ombre douce décalée vers le bas-droite, qui les décolle du tableau. À la fin, le cadre gris du tableau apparaît sur les bords.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-10.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée dans le lecteur puis coupe en plein cadre",
+      "name_en": "push-in to full-frame cut",
+      "t": "1:01.21-1:01.46",
+      "frames": "f1465-f1475",
+      "fps": 24,
+      "mechanics": "La caméra pousse sur le lecteur dessiné du tableau (≈ ×1,3 en 9 im, flou de mouvement de f1469 à f1474), puis coupe franche à f1475 vers le vitrail en plein cadre. Le plan est identique à celui de 0:01.5 : raccord de boucle.",
+      "verdict": "reprendre",
+      "evidence": "microM-012-cut-f1475.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle méta : « c'est ainsi que ce film a été fait »",
+      "name_en": "self-referential loop",
+      "t": "1:00.0-1:08.0",
+      "frames": "f1440-f1632",
+      "fps": 24,
+      "mechanics": "La dernière étape (« get your film ») rejoue les échantillons d'ouverture dans le lecteur du tableau et revient au vitrail plein cadre, pendant que la voix dit « Yes, that's how this film was made ». Puis, pendant le slogan, le lecteur montre ce film-ci en train d'écrire « LEMO-OPUSCAR » (1:06.5-1:08) : mise en abyme. L'ouverture et la fin se répondent.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f1451.jpg, overview-11.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Révélation finale de toute la carte du tableau",
+      "name_en": "final map reveal",
+      "t": "1:02.6-1:04.6",
+      "frames": "f1504-f1550",
+      "fps": 24,
+      "mechanics": "Depuis le vitrail plein cadre, recul continu avec léger panoramique vers la gauche : la vignette de galerie, puis « say one line » en bleu, l'appli, la frise, et enfin le tableau entier avec ses trois étapes, ses flèches et le terminal en haut. Échelle ≈ ÷8 en ≈ 46 im (1,9 s), ease-in-out, flou léger au milieu (f1526-f1536). Toute la vidéo était un seul plan sur un seul tableau.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 1504, "to": 1550, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Slogan final en trois lignes reprenant la structure",
+      "name_en": "three-line handwritten tagline",
+      "t": "1:04.7-1:07.6",
+      "frames": "f1553-f1622",
+      "fps": 24,
+      "mechanics": "Le feutre noir écrit « Say one line. », « Answer once. », « Get your film. » ligne à ligne, au débit de la voix (VO 64,84-67,24 s), en bas à gauche de la carte (≈ 5 % de hauteur par ligne). La mascotte se pose au bout de la 3e ligne. Le feutre bleu écrit les prérequis (Node 20+, Chrome, ffmpeg, Python 3.11+, ≈ 30 min par film) et l'URL GitHub. Les 3 lignes résument les 3 étapes numérotées.",
+      "verdict": "reprendre",
+      "evidence": "overview-11.jpg, overview-12.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Sous-titres bilingues dans une carte blanche permanente",
+      "name_en": "persistent bilingual caption card",
+      "t": "0:00.25-1:11",
+      "frames": "f6-f1706",
+      "fps": 24,
+      "mechanics": "Carte blanche à coins arrondis, ombre légère, petite barre orange à gauche, centrée en bas (≈ 45 % de la largeur, ≈ 6 % de la hauteur). Anglais manuscrit noir ≈ 2,5 %, chinois gris ≈ 1,8 % dessous. Changement de phrase en fondu court, sans animation de mot. Toujours présente.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Dessin qui anticipe ou suit de près la phrase de la voix",
+      "name_en": "voice-led drawing cues",
+      "t": "0:13.2-1:07.6",
+      "frames": "f317-f1622",
+      "fps": 24,
+      "mechanics": "« install once » est dessiné ≈ 0,7 s avant « Install it once » (14,2 s). « pick a style » est écrit ≈ 0,7 s avant la phrase. « this one! » arrive ≈ 0,4 s après « this one ». Le menu Opus 5.5 s'ouvre sur « Use Opus 5.5 » (29,5 s). « answer once » est écrit sur « It asks you once » (35,2 s). « OK? » tombe juste après « Ask for a storyboard ». Les icônes et le slogan suivent la parole mot à mot. 9 sur 9 à ±0,7 s : l'image annonce ou confirme, jamais hors sujet.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-04.jpg, overview-06.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens pendant les saisies et en fin",
+      "name_en": "typing holds",
+      "t": "0:14.6-0:17.9",
+      "frames": "f350-f430",
+      "fps": 24,
+      "mechanics": "La saisie dans le terminal (3,3 s), les questions surlignées (3,1 s) et le storyboard affiché (1,8 s) se jouent caméra fixe, avec un mouvement limité au texte qui s'écrit, en petits caractères. Le tableau final reste figé 3 s. La voix porte ces passages, mais l'œil n'a rien à lire de net.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-03.jpg, overview-07.jpg, overview-12.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt passe par un skill qui produit voix, musique, images et mixage : le style « [Whiteboard Explainer] » est choisi dans un catalogue de 39 styles. La grammaire (feutres, tableau, sous-titres bilingues) vient du gabarit du skill, pas d'une description en prose."},
+    {"kind": "structure", "insight": "La phrase « One prompt, one answer, then ship film » est devenue les 3 étapes numérotées et le slogan final « Say one line. Answer once. Get your film. » : une formule rythmée dans le prompt fournit à la fois le plan et la chute."},
+    {"kind": "build", "insight": "Un pipeline piloté par la voix (segments de voix off datés) explique le calage fin des dessins sur la parole et l'absence de synchro musicale : la musique est générée comme fond, sans grille commune avec l'image."},
+    {"kind": "direction", "insight": "Le sujet (un outil qui fait des films) permet la mise en abyme : le film montre sa propre fabrication et se termine en boucle. C'est une idée forte, probablement trouvée par Claude, qui donne une chute sans carton CTA plat."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur la lisibilité : les écrans d'UI (terminal, chat) restent en petits caractères pendant 3 s. Préciser « zoomer pour que tout texte d'UI fasse au moins 3 % de la hauteur » aurait évité les passages illisibles."},
+    {"kind": "other", "insight": "La réponse tapée dans le film (« English voice-over, subtitles in English and Chinese… show me the storyboard ») correspond aux vraies caractéristiques de la vidéo : le contenu démontré est vérifiable dans la forme même du film."}
+  ],
+  "steal": [
+    "Un seul grand canevas : chaque étape est une zone, la caméra file de l'une à l'autre (12-16 im, flou directionnel), la fin recule pour révéler toute la carte.",
+    "Croquis vers écran : contour et lignes au feutre en ≈ 0,5 s, puis balayage du remplissage réel en 12 im, bord flou.",
+    "Dessiner chaque icône au mot près de la voix (un dessin toutes les ≈ 1,3 s, 6-8 im par dessin).",
+    "Ouvrir sur 4 preuves de 0,5 s, finir en revenant sur les mêmes plans : boucle et « voilà comment ce film a été fait ».",
+    "Trois feutres, trois rôles fixes : noir pour la structure, orange pour les étapes et accents, bleu pour les alternatives."
+  ],
+  "flaws": [
+    "Textes d'UI minuscules (terminal, chat) tenus 3 s caméra fixe : illisibles sans pause.",
+    "Carte de sous-titres bilingue permanente au centre bas : masque le tableau et alourdit chaque plan.",
+    "Musique purement décorative : aucun accent sur les panoramiques ni sur la révélation finale.",
+    "Deux feutres qui dessinent en même temps : l'œil ne sait pas lequel suivre.",
+    "Fin figée 3 s sur un tableau très chargé, slogan à ≈ 5 % de hauteur."
+  ],
+  "deep_study": {"worth": true, "why": "Le parcours de caméra sur un canevas unique, l'entrée et la sortie des feutres pendant les panoramiques, la recette croquis → écran et le calage des dessins sur la voix se lisent mal à 2 images/s. C'est un modèle directement transposable à un explainer HyperFrames en voix off. Étude à la cadence native (24 fps)."}
+}

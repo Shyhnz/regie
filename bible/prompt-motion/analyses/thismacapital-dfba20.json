@@ -1,0 +1,418 @@
+{
+  "slug": "thismacapital-dfba20",
+  "title": "Travel visa service promo",
+  "handle": "@thismacapital",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo de service propre et cohérente : chaque transition naît d'un objet (icône avion, valise, point → logo), bruitages calés au tampon ; milieu répétitif (six cartes identiques, hors tempo) et photos de banque.",
+  "summary": "Promo de 15 s en français pour BlueVisa, service d'expatriation : « Réservez votre vol. C'est tout. On s'occupe du reste. » Un billet tamponné, un avion en orbite, une valise qui atterrit, six démarches validées, trois destinations (Maurice, Dubaï, Paraguay), puis le logo. Force : chaque transition naît d'un objet et les bruitages claquent sur le tampon. Faiblesse : boucle de cartes répétitive, hors tempo, photos de banque.",
+  "prompt_vs_result": [
+    "Le prompt publié est le prompt showreel générique : 15 s, « montre quel motion designer incroyable tu es », comme un showreel de CV, « go all out ». Il ne cite ni marque, ni service, ni langue, ni photos.",
+    "Le contenu (BlueVisa, slogan, six démarches, Maurice/Dubaï/Paraguay, photos) vient forcément d'entrées non publiées (probable). Claude a choisi la mise en scène : billet tamponné, valise, cartes d'interface, iris, bandes diagonales, bruitages.",
+    "Fiche trompeuse : le résultat ne s'explique qu'avec un brief de marque caché. Leçon : texte final, marque et images fournis donnent une promo cohérente ; il aurait fallu exiger des durées en temps musicaux pour la boucle de cartes."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#039EF5", "role": "bleu de marque : plein écran, logo, mots clés, pastilles validées, bandes diagonales"},
+      {"hex": "#0EA5F7", "role": "centre du dégradé radial du fond bleu"},
+      {"hex": "#0187D7", "role": "coins du dégradé radial du fond bleu"},
+      {"hex": "#0C1629", "role": "marine : titres, valise, fond du triptyque, image de raccord"},
+      {"hex": "#F2F5FA", "role": "fond clair des scènes billet et cartes (trame de points discrète)"},
+      {"hex": "#FDFDFD", "role": "blanc : carte de fin, cartes d'interface, pavé de surlignage"},
+      {"hex": "#EAF4FD", "role": "halo radial bleu pâle derrière la valise et le logo"},
+      {"hex": "#0671AF", "role": "bleu sombre des bords des bandes diagonales"},
+      {"hex": "#9AA3AE", "role": "gris (estimé) des statuts « En cours » et des petits textes"}
+    ],
+    "type": "Grotesque géométrique grasse (type Plus Jakarta Sans ou Manrope ExtraBold), casse phrase, interlettrage légèrement serré : titres 9-10 % de hauteur, noms de lieux ≈12 %, slogan ≈3,5 % ; surtitres en capitales espacées ≈1,2 % ; mono pour les coordonnées.",
+    "texture": "Ombres portées larges et douces (flou ≈3-4 % de la hauteur, teinte bleutée) sous le billet et les cartes ; liseré lumineux bleu sur la carte validée ; halos radiaux bleu pâle derrière la valise et le logo ; anneaux concentriques en filigrane sur le fond bleu ; flou de mouvement et images fantômes sur les glissements et la poussée dans la valise ; dégradé sombre en bas des photos pour la lisibilité.",
+    "style": "Promo SaaS épurée, bleu de marque",
+    "coherence": "Tient par une seule couleur de marque (#039EF5) déclinée en fond, icône, surlignage et validation, un marine unique pour le texte et les objets, une seule famille typographique, et surtout des objets-fils qui portent chaque transition : l'avion du billet devient le cercle puis le protagoniste, la valise atterrit puis se fait traverser, le point du triptyque devient le logo. Ce qui casse : le diaporama de photos de banque, plus générique que le reste, et l'iris circulaire réutilisé quatre fois."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "120 BPM (pulsation nette 5,24 ; grosse caisse à 2,009 / 2,519 / 3,019 / 3,518 / 4,017 s…, temps aux images 30k+0,5). Cinq blocs : billet (0-1,97 s), promesse sur fond bleu (1,97-4,0), cartes de démarches (4,0-8,95), destinations (8,95-12,5), marque (12,5-15). Les changements de bloc tombent sur le temps (atterrissage f240, noir marine f539) ou presque (iris f118 à -2,5 im, plein bleu f749-f750) ; les trois balayages photo sont espacés de 45 im (1,5 temps : temps f541, demi-temps f586, temps f631). La boucle des cartes est un cycle fixe de 36 im (0,6 s) qui dérive de 6 im par carte contre la musique. Densité élevée : un événement toutes les 0,3 à 0,6 s, mouvement dès l'image 2. Seul temps mort : la carte de fin tenue ≈1,15 s (13,85-15,0 s), animée seulement par l'apparition discrète des puces et de l'URL. Le dossier ne détecte que 4 coupes : toutes les transitions sont des raccords animés (iris, poussée, bandes), pas des coupes franches.",
+    "timeline": [
+      {"t": "0:00-0:00.43", "what": "« VOTRE SEULE MISSION » puis « Réservez / votre / vol. » montent ligne à ligne ; la carte d'embarquement glisse depuis la droite avec flou", "technique": "titre empilé en montée masquée, entrée d'objet en ease-out"},
+      {"t": "0:00.33-0:00.93", "what": "Le code de destination fait défiler des lettres au hasard puis se verrouille M, R, U, un clic par lettre", "technique": "code à volets + bruitages"},
+      {"t": "0:01.17-0:01.47", "what": "Tampon « RÉSERVÉ » qui s'écrase sur le billet (impact f78 sur un coup sourd) et tremblement de l'image", "technique": "tampon avec tremblement"},
+      {"t": "0:01.47-0:01.70", "what": "Courte tenue du billet tamponné", "technique": "respiration"},
+      {"t": "0:01.72-0:01.97", "what": "L'icône avion du billet devient un cercle bleu qui avale l'écran ; le titre sort ligne à ligne vers le haut", "technique": "icône → iris, raccord couleur"},
+      {"t": "0:01.97-0:02.50", "what": "Fond bleu ; l'avion part en orbite elliptique avec traînée pointillée ; « C'est tout. » monte en vague floue ; la grosse caisse démarre (2,009 s)", "technique": "trajectoire en orbite, lettres en vague"},
+      {"t": "0:02.85-0:03.27", "what": "« C'est tout. » s'envole vers le haut, « On s'occupe du reste. » monte ; un pavé blanc se déroule derrière « du reste. »", "technique": "échange de mots vertical, surlignage en pavé"},
+      {"t": "0:03.27-0:03.75", "what": "Tenue ; l'avion termine son orbite et sort en haut à droite", "technique": "tenue animée"},
+      {"t": "0:03.75-0:04.00", "what": "Le texte se floute ; une valise marine tombe du haut avec flou vertical", "technique": "défocalisation + chute"},
+      {"t": "0:04.00-0:04.40", "what": "Atterrissage sur le temps, onde elliptique au sol, iris blanc qui révèle une scène claire ; « Posez vos valises. » se tape", "technique": "atterrissage → onde → iris"},
+      {"t": "0:04.40-0:08.00", "what": "« Tout est déjà lancé. » souligné ; cartes de démarches toutes les 0,6 s (Titre de séjour, Société, Compte bancaire, Assurance santé, Logement, Visas famille) qui passent au bleu ; compteur 0/6 → 6/6", "technique": "pile de cartes d'interface, compteur de progression"},
+      {"t": "0:08.00-0:08.55", "what": "« Tout est réglé. 6/6 », « Tout est prêt. Bienvenue chez vous. », puis cartes et textes se floutent et disparaissent", "technique": "conclusion de liste"},
+      {"t": "0:08.55-0:09.00", "what": "Poussée dans la valise jusqu'à ce que son corps marine remplisse l'image (f539-f540, sur le temps)", "technique": "poussée à travers l'objet"},
+      {"t": "0:09.00-0:09.77", "what": "Bandes diagonales bleues qui balaient vers la photo de Maurice ; le nom monte lettre à lettre", "technique": "balayage en bandes diagonales"},
+      {"t": "0:09.77-0:10.52", "what": "Bandes → Dubaï (départ sur le demi-temps f586)", "technique": "balayage en bandes diagonales"},
+      {"t": "0:10.52-0:11.28", "what": "Bandes → Paraguay (départ sur le temps f631)", "technique": "balayage en bandes diagonales"},
+      {"t": "0:11.28-0:12.20", "what": "Dubaï puis Maurice glissent depuis la gauche, les trois photos se rangent en triptyque sur marine ; « Une équipe. Trois destinations. »", "technique": "assemblage en triptyque"},
+      {"t": "0:12.20-0:12.50", "what": "Un point bleu naît au centre de la carte Dubaï et grossit en accélérant jusqu'au plein écran (sur le temps de 12,5 s)", "technique": "point → plein écran"},
+      {"t": "0:12.50-0:12.80", "what": "Le cercle se contracte et glisse jusqu'à devenir le logo sur fond blanc ; la musique s'arrête", "technique": "iris inversé → logo"},
+      {"t": "0:13.05-0:13.45", "what": "Le mot-symbole « BlueVisa » apparaît à droite du logo, onde circulaire autour", "technique": "verrouillage de marque"},
+      {"t": "0:13.40-0:14.40", "what": "Slogan « Vous prenez l'avion. On s'occupe du reste. », puces Maurice / Dubaï / Paraguay en cascade, URL bluevisa.com", "technique": "carte de fin progressive"},
+      {"t": "0:13.85-0:15.00", "what": "Tenue de la carte de fin", "technique": "maintien de lecture"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille réelle 120 BPM, temps aux images 30k+0,5 (grosse caisse mesurée sous 150 Hz). Intro : 5 bruitages sur 5 calés à ±1 im (verrouillages du code M-R-U à f38 / f47 / f56 sur des clics à 0,65 / 0,789 / 0,940 s ; tampon qui apparaît f70 sur un souffle à 1,184 s ; impact f78 sur le coup grave le plus fort du morceau, 1,312 s). Transitions majeures : 7 sur 8 à ±2 im (atterrissage de la valise f240, noir marine f539, balayages f541 / f586 / f631, triptyque f677, plein bleu f749-f750) ; seul l'iris d'ouverture (plein à f118) est 2,5 im avant le premier temps de grosse caisse (f120,5). Mais la boucle des cartes tourne sur 36 im (0,6 s) contre un temps de 30 im : changements à f295 / f331 / f367 / f403 / f439 / f475 et validations à f316 / f352 / f388 / f424 / f460, soit 2 événements sur 11 à ±2 im (sous le hasard de 33 %) ; la typo cinétique est aussi libre (« C'est » +3,5 im, pavé blanc +5,5 im). Total : 18 gestes clés sur 34 à ±2 im d'un temps, d'un demi-temps ou d'une attaque, contre ≈33-40 % au hasard.",
+    "synced": ["coupes", "departs", "impacts", "atterrissages"],
+    "style_match": "Électro entraînante et légère à 120 BPM (probable) : colle au ton rassurant et aux courbes douces de l'interface ; les bruitages (clics, tampon) donnent du relief au début.",
+    "how_built": "Rien dans le prompt publié ne parle de musique. La grille part de t = 0 à exactement 120 BPM et les bruitages tombent à l'image près sur les micro-événements de l'intro : bande-son très probablement synthétisée en code avec la timeline. Les transitions ont été posées sur des multiples de 15 im, mais la boucle des cartes a été écrite en secondes (0,6 s = 36 im) et dérive de 6 im par carte. Après 12,52 s, plus aucune attaque grave : la musique s'arrête quand le cercle devient le logo."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre empilé qui monte ligne par ligne",
+      "name_en": "staggered line mask reveal",
+      "t": "0:00.03-0:00.43",
+      "frames": "f2-f26",
+      "fps": 60,
+      "mechanics": "Surtitre « VOTRE SEULE MISSION » (capitales bleues ≈1,2 % H, espacées) puis trois lignes « Réservez / votre / vol. » (marine #0C1629, ≈9-10 % H chacune, ferrées à gauche à ≈0,1 de la largeur) qui montent d'un masque posé sur leur ligne de base. Départs des lignes à f2, f12, f18 (décalage 6-10 im), lettres décalées d'≈1 im dans la ligne, ≈8 im de montée par ligne, ease-out. « vol. » en bleu de marque #039EF5 : le mot clé. Le mouvement commence dès l'image 2, aucun temps mort.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'embarquement qui glisse avec flou",
+      "name_en": "boarding pass slide-in",
+      "t": "0:00.23-0:00.50",
+      "frames": "f14-f30",
+      "fps": 60,
+      "mechanics": "Le billet entre par le bord droit (≈0,95 → 0,62 de la largeur) en ≈14 im, ease-out (pas de ≈0,1 L puis ≈0,02 L), avec flou de mouvement horizontal sur le texte (« PAAR ») ; incliné d'≈-8°, ombre portée douce. En-tête bleu « CARTE D'EMBARQUEMENT · BlueVisa », « PAR → MRU », « VOUS 1A B7 10:40 », talon à code-barres. Un objet familier qui dit « voyage » en une image.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Code de destination en tableau à volets",
+      "name_en": "split-flap scramble decode",
+      "t": "0:00.33-0:00.93",
+      "frames": "f20-f56",
+      "fps": 60,
+      "mechanics": "Le code à trois lettres fait défiler des lettres au hasard (CBQ, OEK, UFQ, ALW, ITE, MDO, MPA, MRE, MRW, MRQ, MRM…) et se verrouille de gauche à droite : M vers f38, R vers f47, U vers f56 (≈9 im entre deux verrouillages, 0,6 s au total). Chaque verrouillage tombe sur un clic sonore (0,65 / 0,789 / 0,940 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages sur les micro-événements",
+      "name_en": "SFX on micro-events",
+      "t": "0:00.63-0:01.32",
+      "frames": "f38-f79",
+      "fps": 60,
+      "mechanics": "Clic sur chaque lettre verrouillée (f38 / 0,65 s ; f47 / 0,789 s ; f56 / 0,940 s), souffle quand le tampon apparaît (f70 / 1,184 s), coup sourd (l'attaque grave la plus forte de toute la bande-son) sur l'impact du tampon (f78 / 1,312 s = f78,7). 5 sur 5 à ±1 im. Le son ponctue l'image avant même que la musique ne démarre (grosse caisse à 2,009 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tampon qui s'écrase avec tremblement",
+      "name_en": "stamp slam with screen shake",
+      "t": "0:01.17-0:01.47",
+      "frames": "f70-f88",
+      "fps": 60,
+      "mechanics": "Le tampon « RÉSERVÉ » (cadre bleu, capitales, incliné d'≈-15°) apparaît à ≈1,8-2× sa taille finale, semi-transparent, et rétrécit en accélérant jusqu'à 1× en 8 im (f70-f78, ease-in). Impact à f78 : toute l'image tremble pendant ≈10 im (f78-f88, énergie de mouvement qui oscille d'une image à l'autre), titre dédoublé à f78. Calé sur le coup sourd de 1,312 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 68, "to": 90, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'icône avion devient le cercle qui avale l'écran",
+      "name_en": "icon-to-iris match cut",
+      "t": "0:01.67-0:01.97",
+      "frames": "f100-f118",
+      "fps": 60,
+      "mechanics": "La petite icône avion du billet se change en point bleu (f103, ≈3 % H), puis en disque bleu portant un avion en papier blanc (f107-f110, ≈0,25 H), qui grossit en accélérant avec deux halos concentriques plus clairs (≈+10 % et +20 % du rayon) : ≈0,3 H (f111), 0,5 (f113), 0,95 (f115), 1,9 (f117), plein bleu (f118). Ease-in. Pendant ce temps, les trois lignes du titre sortent vers le haut à travers leur masque, décalées de ≈3 im (f107-f117). L'avion reste au centre et devient le protagoniste de la scène suivante. Plein 2,5 im avant le premier temps de grosse caisse (f120,5).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f115.jpg",
+      "illus": {"from": 100, "to": 120, "n": 6}
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond bleu en dégradé radial à anneaux",
+      "name_en": "radial gradient with radar rings",
+      "t": "0:01.97-0:04.07",
+      "frames": "f118-f244",
+      "fps": 60,
+      "mechanics": "Bleu de marque en dégradé radial (#0EA5F7 au centre → #0187D7 aux coins), anneaux concentriques très pâles en filigrane (effet radar) qui donnent de la profondeur sans bruit. Sur les scènes claires, halo bleu pâle #EAF4FD derrière le sujet.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Avion en orbite avec traînée pointillée",
+      "name_en": "paper plane orbit with dotted trail",
+      "t": "0:01.97-0:03.60",
+      "frames": "f118-f216",
+      "fps": 60,
+      "mechanics": "L'avion en papier blanc (≈4 % H) parcourt une ellipse complète dans le sens antihoraire (≈0,8 L × 0,5 H) autour du texte en ≈1,6 s, orienté selon la tangente, suivi d'une traînée pointillée ; il sort en haut à droite à f216. Il anime la scène pendant que le texte tient.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f115.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui montent en vague avec flou",
+      "name_en": "blur-in wave letters",
+      "t": "0:02.07-0:02.50",
+      "frames": "f124-f150",
+      "fps": 60,
+      "mechanics": "« C'est tout. » (blanc, ≈7 % H) : chaque lettre monte d'≈5 % H en passant du flou et transparent au net, décalage ≈2-3 im, ligne de base en vague pendant l'entrée ; « tout » démarre vers f138, le point se pose f147-f150. Départ +3,5 im après le temps : non calé.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f115.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Échange de mots vertical",
+      "name_en": "vertical word swap",
+      "t": "0:02.85-0:03.10",
+      "frames": "f171-f186",
+      "fps": 60,
+      "mechanics": "« C'est » puis « tout. » s'envolent vers le haut avec flou (≈10 % H en 6-9 im) pendant que « On s'occupe du » puis « reste. » montent par le bas ; la nouvelle ligne est en place à f180-f186 (temps à f180,5). L'écriture fait le travail : « C'est tout. » → « On s'occupe du reste. ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Surlignage en pavé blanc sur le mot clé",
+      "name_en": "highlight box wipe",
+      "t": "0:03.10-0:03.27",
+      "frames": "f186-f196",
+      "fps": 60,
+      "mechanics": "Un rectangle blanc à coins arrondis se déroule de gauche à droite derrière « du reste. » en ≈10 im (ease-out) ; le texte dedans passe au bleu de marque #039EF5 (défonce). Fin du pavé sur le demi-temps (f195,5).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Défocalisation du texte et chute de valise",
+      "name_en": "text blur-out with falling object",
+      "t": "0:03.75-0:04.00",
+      "frames": "f225-f240",
+      "fps": 60,
+      "mechanics": "Le texte se floute et s'efface en ≈6 im (départ f225, demi-temps) ; une valise marine (sangle bleue, étiquette « MRU » qui flotte) tombe du haut avec flou vertical, ≈0,6 H en ≈12 im en accélérant (gravité, ease-in).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f244.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Atterrissage, onde au sol, révélation circulaire",
+      "name_en": "landing ripple iris",
+      "t": "0:04.00-0:04.40",
+      "frames": "f240-f264",
+      "fps": 60,
+      "mechanics": "La valise touche le sol à f240 (temps f240,5, grosse caisse 4,017 s). Un disque blanc grandit depuis sa base avec halos concentriques : ≈0,15 H (f240), 0,6 H (f243), 1,1 H (f244), plein (f247), révélant une scène claire #F2F5FA. Une onde elliptique au sol s'élargit sous la valise (≈0,35 → 1,0 de la largeur en ≈20 im, ease-out) : la valise est « posée ». « Posez vos valises. » se tape dès f255 (demi-temps, attaque à f256).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f244.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pile de cartes de démarches qui défilent",
+      "name_en": "UI checklist card cycle",
+      "t": "0:04.32-0:08.15",
+      "frames": "f259-f489",
+      "fps": 60,
+      "mechanics": "Une carte à la fois au-dessus de la valise (blanche, coins arrondis, ≈0,33 L × 0,07 H, icône + intitulé + pastille de statut) : Titre de séjour, Société, Compte bancaire, Assurance santé, Logement, Visas famille, puis « Tout est réglé. 6/6 ». À chaque échange, l'ancienne carte monte et s'efface avec flou pendant que la nouvelle arrive légèrement agrandie (≈12-15 im) ; 21 im plus tard, le statut bascule (pastille grise « En cours » → bleue « Immatriculée », « Ouvert », « Active », « Délivrés »…, liseré bleu, icône pleine). Cycle exact de 36 im (0,6 s) : échanges à f295, f331, f367, f403, f439, f475 ; validations à f316, f352, f388, f424, f460.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de progression 0/6 → 6/6",
+      "name_en": "progress dots counter",
+      "t": "0:04.40-0:08.50",
+      "frames": "f264-f510",
+      "fps": 60,
+      "mechanics": "Sous la valise, six points se remplissent un à un et le texte « N / 6 démarches réglées » s'incrémente à chaque validation ; à la fin, il est remplacé par « ✓ Tout est prêt. Bienvenue chez vous. ». Petit (≈1,5 % H) mais il donne la preuve chiffrée de la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre avec mot clé souligné à la main",
+      "name_en": "hand-drawn underline on key word",
+      "t": "0:04.85-0:05.12",
+      "frames": "f291-f307",
+      "fps": 60,
+      "mechanics": "« Tout est déjà lancé. » (marine, ≈5,5 % H) tapé lettre à lettre sous « Posez vos valises. » (gris, ≈3 % H) ; « lancé. » en bleu de marque avec un trait de soulignement courbe tracé de gauche à droite, complet à f307.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Boucle de cartes écrite en secondes, hors tempo",
+      "name_en": "off-grid loop timing",
+      "t": "0:04.92-0:08.00",
+      "frames": "f295-f480",
+      "fps": 60,
+      "mechanics": "Le cycle de 36 im contre un temps musical de 30 im dérive de 6 im par carte : seuls 2 événements sur 11 tombent à ±2 im d'un temps ou demi-temps (échange f331, validation f316), sous le hasard (33 %). La durée a manifestement été fixée en secondes (0,6 s). Correction : 30 im (un temps) ou 60 im (deux temps), validation sur le demi-temps.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée dans l'objet jusqu'à le traverser",
+      "name_en": "push-through object",
+      "t": "0:08.80-0:09.00",
+      "frames": "f528-f540",
+      "fps": 60,
+      "mechanics": "La valise grossit en accélérant : ≈0,3 H (f530), 0,48 (f532), 0,6 (f533), 0,75 (f534), 1,0 (f535), 1,5 (f536), 2,5 (f537), avec un écho fantôme (2-3 copies décalées) dès f532 ; son corps marine #0C1629 remplit l'image à f539-f540, sur le temps (f540,5) et sur un coup grave marqué (9,009 s). Ease-in jusqu'au noir.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f537.jpg",
+      "illus": {"from": 526, "to": 542, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bandes diagonales qui balaient vers la photo",
+      "name_en": "diagonal band wipe",
+      "t": "0:09.02-0:10.75",
+      "frames": "f541-f645",
+      "fps": 60,
+      "mechanics": "Une bande bleue #039EF5 d'≈0,4 L, inclinée à ≈70°, doublée à gauche de deux liserés plus sombres (#0671AF), traverse l'image de droite à gauche en ≈13 im et dévoile la photo suivante dans son sillage. Bord gauche (Dubaï → Paraguay) : ≈0,9 L (f631), 0,55 (f633), 0,35 (f635), 0,2 (f637), 0,12 (f639), 0,07 (f641), sorti f645 : ease-out. Trois occurrences espacées de 45 im : f541 (temps), f586 (demi-temps), f631 (temps, attaque à 10,519 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f537.jpg, microM-004-move-f639.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Diaporama de destinations plein cadre",
+      "name_en": "full-bleed destination photos",
+      "t": "0:09.00-0:11.28",
+      "frames": "f540-f677",
+      "fps": 60,
+      "mechanics": "Trois photos (plage de Maurice avec palmiers et parasols, skyline de Dubaï reflétée dans l'eau, chutes d'Iguazú au couchant ; photos de banque probables), ≈45 im chacune (1,5 temps), dégradé sombre en bas pour le texte, poussée lente probable ; en haut à gauche, petit HUD mono avec code d'aéroport et coordonnées (« DXB 25.20° N 55.27° ») et trait de progression.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-004-move-f639.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom de lieu qui monte lettre à lettre",
+      "name_en": "per-letter rise for place names",
+      "t": "0:09.22-0:11.03",
+      "frames": "f553-f662",
+      "fps": 60,
+      "mechanics": "« Maurice », « Dubaï », « Paraguay » en blanc gras ≈12 % H en bas à gauche, lettres sortant d'un masque avec ≈2 im de décalage (Paraguay : P à f644, complet ≈f662), juste après chaque balayage ; « Dubaï » démarre vers f601, sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f537.jpg, microM-004-move-f639.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Assemblage en triptyque",
+      "name_en": "collage into a 3-card layout",
+      "t": "0:11.28-0:11.80",
+      "frames": "f677-f708",
+      "fps": 60,
+      "mechanics": "Dubaï puis Maurice glissent depuis la gauche avec flou par-dessus la photo de Paraguay, qui rétrécit vers la droite ; les trois se rangent en cartes à coins arrondis (≈0,3 L × 0,55 H, rayon ≈2 % H) sur marine #0D1629, étiquettes en bas à gauche ; « Une équipe. Trois destinations. » monte en haut (f699-f708). Départ sur le demi-temps (f676-f677), pic de mouvement f687, temps f690,5.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f688.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Point → plein écran → logo",
+      "name_en": "dot iris to logo mark",
+      "t": "0:12.28-0:12.85",
+      "frames": "f737-f771",
+      "fps": 60,
+      "mechanics": "Un point bleu naît au centre de la carte Dubaï (f737, ≈2 % H) et grossit en accélérant avec un halo clair : 0,08 H (f741), 0,15 (f743), 0,3 (f745), 0,6 (f747), 1,3 (f749), plein (f750), sur le temps (f750,5, grosse caisse 12,516 s). Puis il se contracte aussitôt en ease-out sur fond blanc : 1,15 H (f751), 0,72 (f754), 0,45 (f757), 0,29 (f760), 0,2 (f764), 0,12 H (f771), en glissant vers ≈0,35 L : le cercle devient le logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f751.jpg",
+      "illus": {"from": 738, "to": 772, "n": 7}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Signature de marque construite par étapes",
+      "name_en": "progressive logo lockup",
+      "t": "0:12.80-0:14.50",
+      "frames": "f768-f870",
+      "fps": 60,
+      "mechanics": "Logo (disque bleu avec avion blanc, ≈0,12 H) entouré d'une onde circulaire bleu pâle ; le mot-symbole « BlueVisa » (marine, grotesque géométrique grasse ≈7,5 % H) apparaît à droite (f783-f806, pic de mouvement sur le demi-temps f795) pendant qu'un grand anneau fin s'élargit autour ; slogan « Vous prenez l'avion. On s'occupe du reste. » (≈3,5 % H, deuxième phrase en bleu) qui monte lettre à lettre (≈13,4-13,8 s) ; trois puces « • Maurice », « • Dubaï », « • Paraguay » en cascade (la dernière ≈14,0 s) ; URL « bluevisa.com » ≈14,4 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-006-move-f751.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc tâche unique → promesse → preuve → destinations → marque",
+      "name_en": "promo narrative arc with slogan bookend",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "« Réservez votre vol. » (votre seule mission) → « C'est tout. On s'occupe du reste. » (promesse) → « Posez vos valises. Tout est déjà lancé. » + six démarches validées (preuve) → trois destinations → « Une équipe. Trois destinations. » → logo et slogan qui reprend la promesse mot pour mot. Chaque bloc dure 2 à 5 s, le slogan sert de serre-livre.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance clair / bleu / marine portée par les objets",
+      "name_en": "object-carried colour alternation",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Clair #F2F5FA (billet) → bleu de marque #039EF5 (promesse) → clair (cartes) → marine #0C1629 (raccord) → photos → marine (triptyque) → plein bleu → blanc (marque). Chaque changement de fond est apporté par un objet qui remplit l'écran (cercle de l'avion, disque blanc de l'atterrissage, corps de la valise, point bleu).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Ombres douces et halos d'interface",
+      "name_en": "soft UI shadows and glows",
+      "t": "0:00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Ombres portées larges et peu opaques, teintées de bleu, sous le billet et les cartes ; liseré lumineux bleu autour de la carte validée ; halo radial bleu pâle derrière la valise et le logo. Finition « SaaS » propre mais attendue.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Transitions majeures sur la grille 120 BPM",
+      "name_en": "major transitions on the beat",
+      "t": "0:01.97-0:12.50",
+      "frames": "f118-f750",
+      "fps": 60,
+      "mechanics": "Atterrissage de la valise f240 (temps), noir marine f539 (-1,5 im, coup grave 9,009 s), balayages f541 / f586 / f631 (temps, demi-temps, temps : un toutes les 45 im = 1,5 temps), triptyque f677 (demi-temps), plein bleu f749-f750 (temps, grosse caisse 12,516 s) : 7 transitions sur 8 à ±2 im. La musique elle-même démarre avec la scène bleue (grosse caisse à 2,009 s, iris plein à f118, -2,5 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f244.jpg, microM-003-cut-f537.jpg, microM-004-move-f639.jpg, microM-006-move-f751.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Musique coupée sur le logo",
+      "name_en": "music drop-out for the end card",
+      "t": "0:12.50-0:15.00",
+      "frames": "f750-f899",
+      "fps": 60,
+      "mechanics": "Plus aucune attaque grave après 12,516 s : le groove s'arrête exactement quand le cercle devient le logo ; la carte de fin se déroule sur une traîne (une seule attaque douce à 13,978 s, probablement la dernière puce). Le silence relatif met la marque en valeur.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt publié (showreel générique, identique à d'autres fiches) ne contient ni la marque, ni le texte français, ni les destinations, ni les photos : ces entrées ont forcément été fournies ailleurs (probable : brief et images joints ou donnés dans la conversation). La fiche est trompeuse ; le résultat ne peut pas être attribué à ce prompt seul."},
+    {"kind": "direction", "insight": "« Go all out » se lit dans la densité d'effets (volets, tampon avec tremblement, orbite, iris, poussée, bandes, triptyque, logo), mais le ton reste celui d'une promo SaaS : le contenu fourni a pris le dessus sur la consigne « showreel »."},
+    {"kind": "build", "insight": "La grille musicale part de t = 0 à exactement 120 BPM et les bruitages tombent à l'image près sur les micro-événements : bande-son probablement générée en code avec la timeline. La boucle des cartes, elle, est écrite en secondes (36 im) : préciser « toute durée en multiples de 30 im, soit un temps à 120 BPM » aurait tout calé."},
+    {"kind": "structure", "insight": "Le texte suit une structure promo en cinq temps (tâche unique → promesse → preuve en six étapes → destinations → marque) et boucle sur le slogan : la phrase de la deuxième scène revient en signature."},
+    {"kind": "qa", "insight": "Les textes des cartes et des statuts (≈1,5 % de la hauteur) sont illisibles en vignette mobile ; une consigne de taille minimale et une vérification « lisible à 360 px de large » auraient aidé."}
+  ],
+  "steal": [
+    "Faire porter chaque transition par un objet du récit : l'icône avion du billet devient le cercle qui avale l'écran, la valise atterrit puis se fait traverser.",
+    "Tampon qui s'écrase : apparition à 2× et transparente, réduction accélérée en 8 im, impact avec bruit sourd et tremblement d'image de 10 im.",
+    "Code à volets : lettres aléatoires qui se verrouillent de gauche à droite toutes les ≈9 im, un clic sonore par lettre.",
+    "Point → plein écran → logo : le cercle grossit en accélérant jusqu'au temps, puis se contracte en ease-out jusqu'à devenir la marque.",
+    "Surligner le mot clé par un pavé blanc qui se déroule de gauche à droite en 10 im, le texte passant à la couleur de marque."
+  ],
+  "flaws": [
+    "Boucle de cartes sur 36 im (0,6 s) contre un temps de 30 im : elle dérive de la musique, 2 événements sur 11 calés.",
+    "Six cartes animées exactement pareil pendant 3,6 s : le même accent répété, l'œil décroche au milieu de la vidéo.",
+    "Diaporama de photos de banque (plage, skyline, chutes) avec balayages diagonaux : plus générique que le reste du système.",
+    "Iris circulaire utilisé quatre fois (avion, valise, point, onde du logo) : la signature devient un tic.",
+    "Textes des cartes et statuts à ≈1,5 % de hauteur, illisibles sur mobile ; carte de fin tenue 1,15 s sans mouvement."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, pour les raccords par objet (icône → iris, poussée dans la valise, point → logo) et le tampon (impact, tremblement et bruitage à l'image près) : c'est le modèle le plus proche d'une promo SaaS. La boucle de cartes sert surtout de contre-exemple de dérive hors tempo."
+  }
+}

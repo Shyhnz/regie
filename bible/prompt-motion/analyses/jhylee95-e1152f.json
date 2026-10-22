@@ -1,0 +1,622 @@
+{
+  "slug": "jhylee95-e1152f",
+  "title": "Supademo launch video",
+  "handle": "@jhylee95",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système très cohérent (un verbe + point de marque tous les 2 temps) et synchro quasi parfaite ; perd un point sur la partie agent illisible, l'entrée répétée et l'absence de fin.",
+  "summary": "Lancement Supademo en 24 s : dix verbes produit (click, blur, zoom, translate, brand, embed…) défilent un par seconde, en minuscules avec le point indigo de la marque, et chaque mot démontre sa propre fonction. Une coupure noire et silencieuse annonce le drop et le « demo agent », prouvé par un chat qui pilote le produit. Synchro exemplaire ; interface trop petite, aucune fin.",
+  "prompt_vs_result": [
+    "Le prompt imposait : lancement Supademo, accroche dans la première seconde, temps distincts pour la preuve produit et l'IA, interface, typo et couleurs fidèles à la marque, musique où chaque coupe et chaque impact tombe sur un temps ou un drop, coupes rapides.",
+    "Claude a décidé seul : un verbe + point de marque tous les 2 temps, des mots qui démontrent leur fonction, la rotation clair/sombre/indigo, le client fictif « Orbit », le noir silencieux avant le drop, le logo-métronome, l'horloge qui défile.",
+    "Bien cadré : la consigne de synchro, formulée en règle vérifiable (« retimed until synced »), donne une grille quasi parfaite. Mal cadré : ni durée, ni fin, ni lisibilité ; d'où l'interface minuscule et l'absence de logo final et d'appel à l'action."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F5F4F7",
+        "role": "fond clair"
+      },
+      {
+        "hex": "#0A0A12",
+        "role": "fond sombre et encre des mots"
+      },
+      {
+        "hex": "#424AE6",
+        "role": "indigo de marque : fonds, point final, infobulles, curseur texte"
+      },
+      {
+        "hex": "#FEFEFE",
+        "role": "mots sur fond sombre ou indigo"
+      },
+      {
+        "hex": "#0E9284",
+        "role": "fond du thème teal (scène brand)"
+      },
+      {
+        "hex": "#FDE589",
+        "role": "point jaune du thème teal"
+      },
+      {
+        "hex": "#FD5A20",
+        "role": "fond du thème orange (scène brand)"
+      },
+      {
+        "hex": "#D8F99C",
+        "role": "fond du thème lime (scène brand)"
+      },
+      {
+        "hex": "#0E162A",
+        "role": "barre latérale marine du produit fictif Orbit"
+      },
+      {
+        "hex": "#0B9182",
+        "role": "boutons et courbe verts du produit Orbit"
+      },
+      {
+        "hex": "#EBFCF3",
+        "role": "pilule verte « Agent online »"
+      },
+      {
+        "hex": "#828486",
+        "role": "labels de chapitre sur fond clair"
+      }
+    ],
+    "type": "Grotesque géométrique noire, « a » simple (Satoshi/Outfit Black probable), minuscules, interlettrage ≈ −3 %, mot héros 20-25 % de la hauteur ; labels en capitales espacées ≈ 1,7 % ; scène brand : serif douce, deux condensées.",
+    "texture": "Aplats nets, aucun grain ni dégradé. Seuls effets : flou directionnel de 2 images à chaque entrée de mot, flou gaussien ≈ 8-10 px (fondus de langue, lettres « ur » floutées), ombres portées douces sous les cartes et fenêtres d'interface, traits blancs fins de l'éclat radial au drop.",
+    "style": "Typo cinétique SaaS mot à mot",
+    "coherence": "Le point final coloré relie tout : hotspot cliqué, infobulle qui s'étire, portail du zoom vers le fond suivant, accent dont la couleur s'inverse avec le fond (indigo sur clair et sombre, noir sur indigo). Trois fonds en rotation à chaque coupe et un cadre fixe (label de chapitre en haut à gauche, icône contextuelle en haut à droite, logo pulsant en bas à gauche) tiennent 27 plans en 24 s. La partie agent (15-21 s) casse le système : plans d'interface pleins, petits, sans mot héros."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, pulsation très nette (5,16), un seul morceau. Grille : une scène = 2 temps = 30 im à 30 fps (1,0 s) ; seules « as a demo. » et « or a video. » durent 3 temps. 20/26 coupes à moins de 50 ms d'un temps, 23/26 d'un temps ou demi-temps ; la première image du nouveau plan tombe systématiquement 1 im avant la barre du temps. Les changements internes (langues, thèmes, horloge, mots tapés) tombent sur les demi-temps (7-8 im). Densité : un événement toutes les 0,25 à 0,5 s dans l'acte 1 ; après chaque atterrissage, maintien de 0,4 à 0,8 s (11 maintiens ≥ 0,4 s, 5,5 s soit 23 % de la durée) animé seulement par l'anneau du logo. Seule vraie pause : 0,23 s de noir silencieux (f412-f418) juste avant le drop à 13,97 s, voulue. La partie agent (14,97-20,97 s) bouge davantage (recadrages, texte en flux) mais offre moins d'événements lisibles.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.97",
+        "what": "« click. » noir sur clair, flou dès l'image 0 ; le curseur clique le point-hotspot, infobulle indigo « Click to explore Orbit. 1 of 4 · Next »",
+        "technique": "accroche en mouvement, point = hotspot"
+      },
+      {
+        "t": "0:00.97-0:01.97",
+        "what": "« guide. » blanc sur sombre, posé à gauche ; le point s'étire en infobulle sur le temps f45",
+        "technique": "traînée floue, morphing point → infobulle"
+      },
+      {
+        "t": "0:01.97-0:02.97",
+        "what": "« blur. » blanc sur indigo ; le curseur sélectionne « ur » qui se floute ; bouton « Blur & Annotate »",
+        "technique": "le mot fait ce qu'il dit"
+      },
+      {
+        "t": "0:02.97-0:03.97",
+        "what": "« zoom. » sur clair, pilule « Animation » qui s'efface, puis poussée dans le point qui remplit le cadre d'indigo",
+        "technique": "plongée dans le point"
+      },
+      {
+        "t": "0:03.97-0:04.97",
+        "what": "« voice. » naît petit et grandit ×2,1 ; lettres vumètre sur le temps ; pilule « AI voice · 30+ languages » à forme d'onde",
+        "technique": "scale-up, lettres égaliseur"
+      },
+      {
+        "t": "0:04.97-0:05.97",
+        "what": "« translate. » → « traduire. » → « übersetzen. » → « traducir. » sur les demi-temps, pilule de langue",
+        "technique": "fondu flou par demi-temps"
+      },
+      {
+        "t": "0:05.97-0:06.97",
+        "what": "« brand. » en 4 thèmes : indigo grotesque, teal serif, orange condensée, lime condensée ; bouton « Book a demo » restylé",
+        "technique": "cycle de thèmes sur les demi-temps"
+      },
+      {
+        "t": "0:06.97-0:07.97",
+        "what": "« share. » entre par la gauche ; barre d'URL qui s'ouvre, clic « Copy link » → « Copied! » sur le temps",
+        "technique": "élément de preuve sous le mot"
+      },
+      {
+        "t": "0:07.97-0:08.97",
+        "what": "« embed. » ; ligne <iframe> en mono colorée, puis fenêtre de navigateur qui se pose autour du mot",
+        "technique": "fenêtre qui encadre le mot"
+      },
+      {
+        "t": "0:08.97-0:09.97",
+        "what": "« measure. » blanc sur indigo ; 3 cartes de stats montent en cascade",
+        "technique": "stagger de 2 im"
+      },
+      {
+        "t": "0:09.97-0:11.47",
+        "what": "« as a demo. » en haut ; fenêtre du produit fictif Orbit qui monte, infobulles Supademo, curseur",
+        "technique": "montée floue, démo interactive"
+      },
+      {
+        "t": "0:11.47-0:12.97",
+        "what": "« or a video. » sur indigo ; même interface en lecteur vidéo (voile + bouton lecture) qui se lance",
+        "technique": "même UI, autre mode"
+      },
+      {
+        "t": "0:12.97-0:13.73",
+        "what": "fond sombre, curseur indigo ; « meet » puis « your » tapés chacun sur un temps",
+        "technique": "machine à écrire sur les temps"
+      },
+      {
+        "t": "0:13.73-0:13.97",
+        "what": "7 im de noir pur, silence numérique",
+        "technique": "noir + silence avant le drop"
+      },
+      {
+        "t": "0:13.97-0:14.97",
+        "what": "« demo agent. » s'écrase sur le drop dans un éclat radial de traits blancs",
+        "technique": "slam-in, speed lines"
+      },
+      {
+        "t": "0:14.97-0:16.97",
+        "what": "interface agent entrée en filé ; poussée vers le chat sur le temps ; question Salesforce, « Thinking… », réponse en flux",
+        "technique": "caméra virtuelle, chat"
+      },
+      {
+        "t": "0:16.97-0:19.47",
+        "what": "écran partagé chat / produit : Integrations, infobulle « Click Connect to sync Salesforce », question de qualification, réponse « About 40 »",
+        "technique": "agent qui pilote le produit"
+      },
+      {
+        "t": "0:19.47-0:20.97",
+        "what": "filé vers le tableau Pipeline, puis recul sur toute l'interface agent",
+        "technique": "whip, pull-back"
+      },
+      {
+        "t": "0:20.97-0:21.97",
+        "what": "« answers. » sur indigo ; carte qui s'ouvre et se remplit d'un échange SSO",
+        "technique": "carte de conversation"
+      },
+      {
+        "t": "0:21.97-0:22.97",
+        "what": "« qualifies. » sur sombre ; carte à 4 colonnes (intent High, 12 messages, 7 min, Text)",
+        "technique": "carte de données"
+      },
+      {
+        "t": "0:22.97-0:23.85",
+        "what": "« always on. » tombe du haut ; pilule « Agent online » dont l'heure saute 9:41 AM → 11:58 PM → 3:12 AM → SUN 7:05 AM ; fin sans logo",
+        "technique": "horloge sur les demi-temps"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Comptage à l'œil, un événement clé par geste : 39 gestes sur 41 tombent à ±1 im d'une barre bleue ou bleu clair (hasard ≈ 40 % à 30 fps, grille de 7,5 im entre temps et demi-temps), les 2 autres à ±2 im (recadrage f538, voile vidéo f362). Coupes : la première image du plan tombe 1 im avant la barre (f29/f30, f179/f180, f209/f210, f239/f240, f449/f450, f689/f690). Demi-temps : langues f156/f164/f172, thèmes de « brand. » f187/f194/f202, horloge f697/f704. Mots tapés « meet » f390 et « your » f405 sur les temps. Drop : noir f412-f418 posé sur un silence numérique mesuré de 13,80 à 14,00 s (−180 dBFS), éclat radial f419 sur l'attaque la plus forte du morceau (13,99 s). Logo : l'anneau repart toutes les 14-15 im (f14, f29, f43, f58, f73), soit à chaque temps. Indice automatique cohérent : départs/temps R = 0,56, p = 3e-7.",
+    "synced": [
+      "coupes",
+      "apparitions",
+      "impacts",
+      "atterrissages",
+      "pulsations",
+      "texte",
+      "couleur",
+      "camera",
+      "drop"
+    ],
+    "style_match": "Pop électro enjouée à 120 BPM : coupes sèches toutes les 2 temps, traînées de 2 images, cassure silence-drop. Courbes nettes, sans ressort : cohérent, un peu mécanique.",
+    "how_built": "Le prompt demande explicitement de composer la musique pour que chaque coupe, chaque impact et chaque changement de scène tombe sur un temps ou un drop, « retimed until synced ». Le silence numérique parfait avant le drop, la baisse programmée de −17 à −33 dBFS pendant « meet your » et la grille exacte de 0,5 s indiquent une bande-son générée ou montée en code (probable) et une timeline écrite en temps (1 scène = 2 temps à 120 BPM, sous-événements au demi-temps). Le décalage constant de −1 im sur les coupes trahit un placement calculé, pas à l'oreille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Le mot fait ce qu'il dit",
+      "name_en": "self-demonstrating words",
+      "t": "0:00-0:12.97",
+      "frames": "f0-f389",
+      "fps": 30,
+      "mechanics": "Chaque scène d'1 s pose un verbe produit et lui applique la fonction qu'il nomme : « click. » se fait cliquer, « guide. » ouvre une infobulle, « blur. » floute ses propres lettres, « zoom. » zoome dans son point, « voice. » pulse comme un vumètre, « translate. » se traduit en 3 langues, « brand. » change 4 fois de thème, « share. » reçoit un lien copié, « embed. » est encadré par une fenêtre de navigateur, « measure. » reçoit 3 cartes de stats. La preuve de chaque fonction tient dans le mot lui-même, sans plan explicatif ni voix.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot unique en minuscules avec point de marque",
+      "name_en": "single lowercase word + brand period",
+      "t": "0:00-0:23.85",
+      "frames": "f0-f713",
+      "fps": 30,
+      "mechanics": "Grotesque géométrique noire à « a » simple (probable Satoshi ou Outfit Black), minuscules, interlettrage ≈ −3 %, un seul mot centré : 20-25 % de la hauteur de l'ascendante à la descendante, 40-75 % de la largeur (« click. » 39 %, « always on. » 67 %, « demo agent. » 74 %). Point final ≈ 5,5 % de la hauteur. Titres secondaires (« as a demo. », « or a video. ») en haut, ≈ 9,4 % de la hauteur, y 8,7-18 %. Graisse unique, aucun dégradé ni contour.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrée en traînée floue de 2 images",
+      "name_en": "smear whip-in",
+      "t": "0:00.97-0:01.03",
+      "frames": "f29-f31",
+      "fps": 30,
+      "mechanics": "Le mot est déjà en mouvement sur la première image du plan : f29 centre à x ≈ 58 % avec flou directionnel horizontal fort (traînée ≈ 15 % de la largeur), f30 centre ≈ 37 % flou moyen, f31 ≈ 33 % net. ≈ 85 % du trajet dans la première image : ease-out exponentiel, aucun dépassement, pas de rebond. Direction variable : depuis la droite (« guide. », « embed. » f239-f241 : centre 73 % → 55 % → 50 %), la gauche (« share. » f209-f211), le haut (« brand. » f179-f181, « always on. » f689-f692 avec flou vertical). Répété sur une vingtaine de mots.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg, microM-004-cut-f209.jpg, microM-005-cut-f239.jpg",
+      "illus": {
+        "from": 28,
+        "to": 33,
+        "n": 6
+      }
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de scènes à 2 temps",
+      "name_en": "2-beat scene grid",
+      "t": "0:00.97-0:23.0",
+      "frames": "f29-f689",
+      "fps": 30,
+      "mechanics": "À 120 BPM, chaque scène dure 30 im (1,0 s = 2 temps) : coupes à f29, f59, f89, f149, f179, f209, f239, f269, f299, f389, f449, f509, f629, f659, f689 ; seules « as a demo. » et « or a video. » durent 45 im (3 temps). La première image du nouveau plan tombe 1 im (≈ 27-33 ms) avant la barre du temps : la traînée floue précède l'attaque, le mot net arrive 1 im après. 20/26 coupes à moins de 50 ms d'un temps, 23/26 d'un temps ou demi-temps. Le changement de fond à chaque coupe matérialise le temps.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-005-cut-f239.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sous-événements sur les demi-temps",
+      "name_en": "half-beat sub-events",
+      "t": "0:05.0-0:23.77",
+      "frames": "f156-f713",
+      "fps": 30,
+      "mechanics": "Dans une scène, les changements internes tombent tous les 7-8 im (demi-temps = 0,25 s) : langues à f156, f164, f172 (barres f157, f165, f172), thèmes de « brand. » à f187, f194, f202 (barres f187, f195, f202), mots tapés « meet » f390 et « your » f405 sur les temps, heure de la pilule « Agent online » à f697 et f704 (barres f697, f705). Décalage typique 0 à −1 im. Le curseur texte clignote 4 im allumé / 4 im éteint, soit à peu près au demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f179.jpg, microM-010-cut-f689.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rotation de 3 fonds à chaque coupe",
+      "name_en": "background color flip on cut",
+      "t": "0:00-0:23.85",
+      "frames": "f0-f713",
+      "fps": 30,
+      "mechanics": "Fonds en aplat, changés à chaque coupe (toutes les 2 temps) : clair #F5F4F7, sombre #0A0A12, indigo #424AE6, dans un ordre varié (clair, sombre, indigo, clair, indigo, clair…). Le mot s'inverse (encre #0A0B12 sur clair, blanc #FEFEFE sur sombre et indigo) et le point change pour rester en contraste (indigo sur clair et sombre, noir sur indigo). Le saut de luminance de tout le cadre donne le choc de la coupe sur le temps, sans effet de transition.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Point final devenu hotspot cliquable",
+      "name_en": "hotspot period",
+      "t": "0:00-0:00.97",
+      "frames": "f0-f28",
+      "fps": 30,
+      "mechanics": "Dans « click. », le point indigo est un hotspot Supademo : anneau qui pulse autour du point (visible f22-f28), curseur noir posé dessus, infobulle indigo (« Click to explore Orbit. », « 1 of 4 », bouton « Next ») ouverte en bas à droite du point, ≈ 28 × 13 % du cadre, vers f13-f15 (probable, temps à f15). Accroche : l'image 0 montre déjà le mot en traînée floue, aucune amorce noire.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Point qui s'étire en infobulle",
+      "name_en": "dot-to-tooltip morph",
+      "t": "0:01.47-0:01.57",
+      "frames": "f44-f47",
+      "fps": 30,
+      "mechanics": "Dans « guide. », le mot est posé à gauche (x 10-52 %) pour laisser la place ; sur le temps (f45) le point s'étire horizontalement en pilule ≈ 4× sa largeur, puis s'ouvre en petite carte infobulle indigo à f46. Morphing forme → interface en 2 im, lisible parce que le point est le motif récurrent de toute la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélection et flou sur les lettres",
+      "name_en": "self-blur selection",
+      "t": "0:01.97-0:02.97",
+      "frames": "f59-f89",
+      "fps": 30,
+      "mechanics": "« blur. » blanc sur indigo, point noir. Le curseur tire un rectangle de sélection pointillé sur « ur » ; les lettres sélectionnées passent en flou gaussien ≈ 10 px ; un bouton blanc « Blur & Annotate » (≈ 5 % de la hauteur) apparaît centré à ≈ 75 % de la hauteur. Déclenchement probable sur le temps f75 (attaque forte à 2,496 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le point",
+      "name_en": "dive into the period",
+      "t": "0:03.50-0:03.97",
+      "frames": "f105-f119",
+      "fps": 30,
+      "mechanics": "La pilule « Animation » s'efface en 3 im (f105-f107), puis poussée (push-in) ancrée sur le point de « zoom. » : largeur du mot 52 % (f107) → 57 % (f108) → 66 % (f109) → mot rogné par les bords (f110-f112) → « m. » (f113) → fût noir + disque indigo ≈ 40 % du cadre (f115) → disque ≈ 90 % (f116) → plein cadre indigo (f117-f118). Ease-in exponentiel (l'échelle accélère à chaque image), 12 im = 0,4 s, sans flou de mouvement. Le point devient le fond de la scène suivante : « voice. » apparaît à f119, temps à f120.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f113.jpg",
+      "illus": {
+        "from": 105,
+        "to": 119,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui naît petit et grandit",
+      "name_en": "scale-up reveal",
+      "t": "0:03.97-0:04.20",
+      "frames": "f119-f126",
+      "fps": 30,
+      "mechanics": "« voice. » apparaît au centre du disque indigo qui vient de remplir le cadre, à 22 % de la largeur, et grandit à 46 % en 7 im (×2,1), ease-out avec léger dépassement (46 % puis 44 %). Continuité directe avec la plongée : on sort du point par un mot qui pousse vers nous.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f113.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres vumètre",
+      "name_en": "equalizer letters",
+      "t": "0:04.47-0:04.67",
+      "frames": "f134-f140",
+      "fps": 30,
+      "mechanics": "Sur le temps (f135), chaque lettre de « voice » reçoit une échelle et un décalage vertical différents (« o » remonté et agrandi ≈ 130 %, « V » agrandi, « i » descendu) pendant ≈ 6 im (0,2 s), puis tout revient à la ligne de base. La pilule « AI voice · 30+ languages » surgit du centre à f136 avec des barres de forme d'onde qui varient à chaque image.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Traduction en fondu flou",
+      "name_en": "blur crossfade word swap",
+      "t": "0:04.97-0:05.73",
+      "frames": "f149-f172",
+      "fps": 30,
+      "mechanics": "« translate. » → « traduire. » → « übersetzen. » → « traducir. », un mot par demi-temps (8 im). Le mot sortant se floute (≈ 8 px) et monte d'≈ 4 % de la hauteur en s'effaçant ; l'entrant monte depuis ≈ 4 % plus bas en reprenant sa netteté ; chevauchement de 2-3 im (f170-f171). Une pilule de langue sous le mot change en même temps (English, Français, Deutsch, Español).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f179.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Cycle de thèmes de marque sur les demi-temps",
+      "name_en": "theme cycling",
+      "t": "0:05.97-0:06.97",
+      "frames": "f179-f208",
+      "fps": 30,
+      "mechanics": "Quatre looks en coupe sèche toutes les 7-8 im : indigo #424AE6 + grotesque blanche + point noir (f180) → teal #0E9284 + serif douce à empattements en coin blanche + point jaune #FDE589 (f187) → orange #FD5A20 + linéale condensée noire + point blanc (f194) → lime #D8F99C + condensée plus étroite + bouton olive #3D6111 (f202). Le bouton « Book a demo » se restyle à chaque fois. Montre « brand themes » sans un mot d'explication.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f179.jpg, microM-004-cut-f209.jpg",
+      "illus": {
+        "from": 180,
+        "to": 208,
+        "n": 5
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Élément de preuve sous le mot",
+      "name_en": "proof element pop-in",
+      "t": "0:07.03-0:07.50",
+      "frames": "f211-f225",
+      "fps": 30,
+      "mechanics": "2 im après l'atterrissage du mot, un élément d'interface apparaît centré à ≈ 77-83 % de la hauteur : la barre d'URL « app.supademo.com/demo/orbit-tour » passe de ≈ 65 % à 100 % de sa largeur et de ≈ 30 % à 100 % d'opacité en 5 im (ease-out) ; le mot remonte d'≈ 3 % pour lui faire place. Le curseur clique « Copy link », qui devient « Copied! » à f225, sur le temps. Même recette pour « Animation », « Deutsch », « Book a demo », la ligne iframe, les cartes.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f209.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Fenêtre de navigateur qui se pose sur le mot",
+      "name_en": "browser frame slam",
+      "t": "0:08.10-0:08.53",
+      "frames": "f243-f256",
+      "fps": 30,
+      "mechanics": "La ligne de code <iframe src=…> (police mono, coloration rouge/orange/vert, carte blanche arrondie) monte en fondu f243-f245 sous « embed. ». Puis une fenêtre blanche à feux tricolores descend en se réduisant d'≈ 1,6× à 1× autour du mot (f252-f255, bord supérieur flou), avec ombre portée douce ; atterrissage à f255, sur le temps. Le mot se retrouve littéralement intégré.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f239.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Cartes de stats en cascade",
+      "name_en": "staggered stat cards",
+      "t": "0:09.30-0:09.53",
+      "frames": "f279-f286",
+      "fps": 30,
+      "mechanics": "3 cartes blanches (« Demo views 12,480 +24 % », « Completion rate 68 % +9 % », « CTA clicks 1,932 +31 % ») montent de ≈ 90 % à ≈ 65 % de la hauteur (≈ 25 % du cadre) en 3 im chacune, ease-out fort ; décalage de 2 im (départs f279, f281, f283) ; la dernière se pose à f285-f286, sur le temps. Valeurs fixes dès l'apparition, aucun compteur qui roule.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f283.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe avec montée floue de la fenêtre",
+      "name_en": "vertical whip-up",
+      "t": "0:09.97-0:10.20",
+      "frames": "f299-f306",
+      "fps": 30,
+      "mechanics": "Le titre se pose en haut (y 8,7-18 %) pendant que la fenêtre produit monte du bas avec un fort flou vertical ; nette en ≈ 3-6 im. Même geste à f344 pour « or a video. » : image de coupe indigo avec titre flou, lecteur vidéo flou à f345, net à f347. Coupes sur les temps (barres f300, f345).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f283.jpg, microM-007-move-f347.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Même interface, en démo puis en vidéo",
+      "name_en": "demo vs video contrast",
+      "t": "0:09.97-0:12.97",
+      "frames": "f299-f389",
+      "fps": 30,
+      "mechanics": "Un produit client fictif « Orbit » (barre latérale marine #0E162A, KPIs $4.2M ARR / $1.3M / 32 %, courbe verte) sert de support : d'abord démo interactive avec infobulles Supademo indigo et curseur (étape suivante à f329, sur le temps), puis la même interface en vidéo (voile gris ≈ 40 %, bouton lecture blanc, barre 0:00/0:42) dont le voile se lève à f362 pour montrer l'écran Integrations. Prouve « as a demo / or a video » par simple contraste.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f347.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire mot à mot sur les temps",
+      "name_en": "beat typewriter",
+      "t": "0:12.97-0:13.70",
+      "frames": "f389-f411",
+      "fps": 30,
+      "mechanics": "Fond sombre, curseur texte indigo (≈ 4 % de la hauteur) seul à f389 ; « meet » apparaît d'un bloc à f390 (gris ≈ 40 % → blanc en 2 im), « your » à f405 ; chaque mot sur un temps (barres f390, f405). Le curseur clignote 4 im allumé / 4 im éteint. Phrase suspendue « meet your… » qui crée l'attente du nom révélé au drop.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Noir et silence avant le drop",
+      "name_en": "blackout break before the drop",
+      "t": "0:13.73-0:13.97",
+      "frames": "f412-f418",
+      "fps": 30,
+      "mechanics": "7 im de noir pur #000000 (plus noir que le fond sombre #0A0A12 de la scène précédente). La musique baisse de −17 à −33 dBFS entre 13,0 et 13,73 s, puis tombe en silence numérique (−180 dBFS) de 13,80 à 14,00 s ; le drop (−11 dBFS, attaque la plus forte du morceau à 13,99 s) arrive avec l'image f419. Le noir commence sur le demi-temps (barre f412) et finit 1 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-008-move-f422.jpg",
+      "illus": {
+        "from": 405,
+        "to": 425,
+        "n": 8
+      }
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Éclat radial de traits",
+      "name_en": "speed-line burst",
+      "t": "0:13.97-0:14.20",
+      "frames": "f419-f425",
+      "fps": 30,
+      "mechanics": "≈ 60 traits blancs fins (1-2 px, longueur 2-6 % de la hauteur) rayonnent depuis le centre sur fond indigo, filent vers les bords et disparaissent en ≈ 7 im (0,23 s). Unique dans la vidéo, réservé au drop, ce qui lui garde sa force.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f422.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui s'écrase",
+      "name_en": "slam-in scale-down",
+      "t": "0:14.00-0:14.07",
+      "frames": "f420-f422",
+      "fps": 30,
+      "mechanics": "« demo agent. » : f420 à ≈ 1,35-1,4× (déborde des deux bords) en lavande #A2A5F2 (≈ 60 % d'opacité), f421 ≈ 1,1× blanc, f422 1× ; ease-out exponentiel en 2-3 im, sans rebond. Puis rétrécissement lent d'≈ 3 % sur 15 im (dérive qui garde le plan vivant). Impact sur le temps (barre f420).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f422.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra virtuelle dans l'interface",
+      "name_en": "UI camera moves",
+      "t": "0:14.97-0:20.97",
+      "frames": "f449-f629",
+      "fps": 30,
+      "mechanics": "Entrée filée depuis la droite avec flou horizontal (f449-f451, temps f450) sur l'interface agent à ≈ 80 % du cadre ; poussée ×≈ 1,7 vers le chat en 1 im floue (f463 → f464, temps f465) ; recadrage filé vers un écran partagé chat / produit (f537-f540) ; filé horizontal (f579-f582) puis tableau Pipeline (f584) ; recul (pull-back) vers 20,0-20,5 s sur toute l'interface. 6 recadrages en 6 s, presque tous à ±1 im d'un temps.",
+      "verdict": "adapter",
+      "evidence": "microM-009-cut-f449.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Agent qui pilote le produit",
+      "name_en": "chat-driven product demo",
+      "t": "0:15.47-0:20.97",
+      "frames": "f464-f629",
+      "fps": 30,
+      "mechanics": "Chat à gauche (« Hi! I'm Orbit's demo agent… », question « Does Orbit sync with Salesforce? », « Thinking… », réponse en flux « Yes, two-way and in real time… », puce « Salesforce sync in 30 seconds », question de qualification « how many reps would use Orbit? », réponse « About 40… ») et produit à droite avec infobulle « Click Connect to sync Salesforce » puis tableau Pipeline. Bulles posées sur les temps (bulle utilisateur ≈ f555, réponse qui démarre ≈ f570). Texte d'interface ≈ 1,2-1,8 % de la hauteur : illisible sur téléphone.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-03.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte de conversation sous le mot",
+      "name_en": "chat card reveal",
+      "t": "0:20.97-0:21.97",
+      "frames": "f629-f659",
+      "fps": 30,
+      "mechanics": "« answers. » blanc sur indigo, puis une carte blanche vide (≈ 25 × 10 % du cadre) s'ouvre sous le mot et se remplit d'un échange (« Is SSO on every plan? » / « Yes. SAML SSO on every plan, no add-on. ») avant la coupe. Le bénéfice est prouvé par un exemple réel en 1 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Carte de qualification",
+      "name_en": "lead qualification card",
+      "t": "0:21.97-0:22.97",
+      "frames": "f659-f689",
+      "fps": 30,
+      "mechanics": "Sur fond sombre, carte blanche à 4 colonnes sous « qualifies. » : « BUYING INTENT ↗ High », « MESSAGES 12 », « DURATION 7 min », « MODE Text » ; étiquettes en petites capitales espacées, valeur « High » en vert. Lecture en un coup d'œil, comme une fiche CRM.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f689.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Horloge qui saute sur les demi-temps",
+      "name_en": "always-on clock flip",
+      "t": "0:22.97-0:23.85",
+      "frames": "f689-f713",
+      "fps": 30,
+      "mechanics": "Pilule verte (#EBFCF3, bord #CCF2DB, puce verte) « Agent online · 9:41 AM » → « 11:58 PM » (f697, demi-temps) → « 3:12 AM » (f704, temps) → « SUN 7:05 AM » (f713) : l'heure saute sans transition. Prouve le 24/7 en 0,8 s, sans phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f689.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre persistant à trois coins",
+      "name_en": "persistent frame chrome",
+      "t": "0:00-0:23.85",
+      "frames": "f0-f713",
+      "fps": 30,
+      "mechanics": "Label de chapitre en haut à gauche (capitales espacées ≈ +25 %, ≈ 1,7 % de la hauteur, gris #828486 ou blanc ≈ 60 %, ex. « BRAND · THEMES », « EMBED · ANYWHERE ») ; icône linéaire contextuelle en haut à droite (curseur, œil barré, loupe, micro, pinceau, </>) ; logo S en bas à gauche (≈ 7 % de la hauteur, couleurs inversées selon le fond). Mot héros centré vers 27-50 % de la hauteur, élément de preuve vers 77-83 %. Donne la continuité à travers 27 coupes.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Logo-métronome",
+      "name_en": "beat-pulsing logo ring",
+      "t": "0:00-0:23.85",
+      "frames": "f0-f713",
+      "fps": 30,
+      "mechanics": "Le logo S émet un anneau dont le rayon passe de 41 à 67 px (≈ 3,8 → 6,2 % de la hauteur) en 14 im, presque linéaire, puis repart à zéro toutes les 14-15 im (0,5 s = 1 temps) : f14, f29, f43, f58, f73, soit 1 à 2 im avant chaque barre de temps (mesure pixel sur f0-f75). Garde la pulsation visible pendant les maintiens, dans un coin, sans charger le centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f29.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Deux actes articulés sur le drop",
+      "name_en": "two-act structure around the drop",
+      "t": "0:00-0:23.85",
+      "frames": "f0-f713",
+      "fps": 30,
+      "mechanics": "Acte 1 (0-13,7 s) : 10 verbes du produit existant puis « as a demo. / or a video. », une idée par seconde. Pivot : « meet your » tapé sur les temps puis noir silencieux. Acte 2 (14-23,8 s) : « demo agent. » sur le drop, 6 s de preuve en interface, puis 3 bénéfices (« answers. », « qualifies. », « always on. ») au rythme de l'acte 1. Accroche à l'image 0. Aucune fin : ni logo, ni appel à l'action, ni URL.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Atterrissage puis maintien court",
+      "name_en": "land and hold",
+      "t": "0:00-0:14.97",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Chaque scène : 2-3 im d'entrée, 2-8 im pour l'élément de preuve, puis maintien de ≈ 0,4-0,8 s jusqu'à la coupe (11 maintiens ≥ 0,4 s, 23 % de la durée) ; le mouvement résiduel se limite à l'anneau du logo et à de petites dérives. Respecte la règle « un événement toutes les 0,5 à 1 s », mais le mot ne vit plus une fois posé.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "build",
+      "insight": "« Score the music so every cut, animation hit, and scene change lands on a beat or drop; retimed until synced » : une consigne opérationnelle et vérifiable. Résultat : grille de scènes à 2 temps, sous-événements au demi-temps, silence et drop programmés, 39 gestes sur 41 calés à ±1 im."
+    },
+    {
+      "kind": "structure",
+      "insight": "« hook in the first second, then distinct beats for product proof and AI » a produit l'image 0 déjà en mouvement (« click. ») et la coupure en deux actes autour du drop (produit existant, puis demo agent)."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Brand-accurate UI, type, color, and motion » : Claude a repris l'indigo #424AE6, les infobulles Supademo « 1 of 4 · Next » et le hotspot pulsant, recyclé en point final et en logo-métronome."
+    },
+    {
+      "kind": "inputs",
+      "insight": "« Research and land our core value » sans brief fourni : Claude a reconstitué une liste de fonctions juste (blur & annotate, zoom, voix IA 30+ langues, traduction, thèmes, lien, iframe, analytics, démo ou vidéo, agent) et inventé un client fictif « Orbit » pour montrer le produit en usage."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Social energy, quick cuts » : plan médian 1,0 s, 27 plans en 24 s. Mais rien sur le format ni la lisibilité mobile : le 16:9 reste et l'interface de la partie agent descend à 1,2 % de la hauteur."
+    },
+    {
+      "kind": "other",
+      "insight": "Le prompt ne dit rien de la fin : la vidéo s'arrête sur « always on. » sans logo, appel à l'action ni URL. Il aurait fallu exiger une carte de fin de 1,5-2 s."
+    },
+    {
+      "kind": "qa",
+      "insight": "« retimed until synced » implique une boucle de vérification ; le décalage constant de −1 im sur toutes les coupes suggère un placement calculé sur la grille plutôt qu'un calage à l'oreille."
+    }
+  ],
+  "steal": [
+    "Un verbe produit par scène, qui démontre sa fonction sur lui-même : blur se floute, zoom plonge dans son point, translate se traduit, brand change de thème.",
+    "Grille : 1 scène = 2 temps, sous-changements sur les demi-temps ; placer la première image du nouveau plan 1 image avant le temps.",
+    "Avant le drop : 0,2-0,25 s de noir pur sur un silence total, puis éclat radial et mot qui s'écrase de 1,4× à 1× en 2-3 images.",
+    "Faire du point final de la marque un personnage : hotspot cliqué, infobulle qui s'étire, portail du zoom vers le fond suivant, couleur inversée selon le fond.",
+    "Un logo-balise qui émet un anneau à chaque temps garde la pulsation visible pendant les maintiens, sans charger le centre du cadre."
+  ],
+  "flaws": [
+    "Partie agent (15-21 s) : texte d'interface à 1,2-1,8 % de la hauteur, illisible sur mobile, et 6 recadrages en 6 s.",
+    "Aucune fin : ni logo, ni appel à l'action, ni URL ; la vidéo s'arrête sur « always on. ».",
+    "Même entrée en traînée floue répétée une vingtaine de fois : efficace mais mécanique à la longue.",
+    "Grille trop régulière, une scène par seconde pendant 13 s : aucune variation de tempo avant le drop.",
+    "Lettres vumètre de « voice. » limitées à 0,2 s : effet presque invisible."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, image par image à sa cadence native de 30 fps (pas de 60 fps disponible) : meilleure référence pour une grille de synchro écrite en temps (coupe 1 im avant le temps, sous-événements au demi-temps), la plongée dans le point et le silence noir avant le drop."
+  }
+}

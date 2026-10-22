@@ -1,0 +1,391 @@
+{
+  "slug": "misbahsy-80eaec",
+  "title": "LiteLLM promo reel",
+  "handle": "@MisbahSy",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Transitions motivées et enchaînées (aspiration puis explosion, plongée dans le O, iris depuis le badge 200 OK, train sur la ligne), 26 gestes sur 34 calés sur 128 BPM ; diagrammes minuscules.",
+  "summary": "Showreel de 15 s qui est une promo de LiteLLM, passerelle d'API de LLM. Cinq chapitres numérotés : chaos de SDK aspiré puis explosé en « ONE API. », diagramme de passerelle, code où le modèle change à chaque temps, bascule de secours, chiffres, puis le train-logo qui arrive sur une ligne. Tout est calé sur 128 BPM. Faiblesses : diagrammes minuscules, typewriter répété.",
+  "prompt_vs_result": [
+    "Même prompt d'une ligne que les autres showreels : 15 s de motion graphics « dynamique » façon showreel de CV, « go all out ». Ni produit, ni musique, ni style imposés.",
+    "Claude a choisi : promo de LiteLLM (contexte du dépôt probable), cinq chapitres numérotés, HUD « 60 FPS · 128 BPM », bande-son structurée, violet nuit alterné avec un chapitre clair, emoji train comme logo animé.",
+    "Le contexte du projet a fourni produit, code et chiffres. Il aurait fallu imposer une taille minimale de texte, varier les entrées de texte (pas quatre machines à écrire) et resserrer la frappe de code."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B0716", "role": "fond nuit violacé"},
+      {"hex": "#2A1B5C", "role": "halo radial violet derrière chaque scène"},
+      {"hex": "#7C5CFF", "role": "violet accent : pilules du diagramme, « POST », bouton docs"},
+      {"hex": "#A78BFA", "role": "lavande des mots clés (« APIs. », « One key. », « You don't. »)"},
+      {"hex": "#5B3FD9", "role": "violet profond de « Not code. » sur fond clair"},
+      {"hex": "#EEEBF6", "role": "fond clair du chapitre PYTHON SDK"},
+      {"hex": "#6D4AE8", "role": "aplat violet du chapitre SCALE"},
+      {"hex": "#F5F3FF", "role": "texte principal"},
+      {"hex": "#34D399", "role": "vert succès (« 200 OK », « none »)"},
+      {"hex": "#E5484D", "role": "rouge échec (« ✕ 429 »)"}
+    ],
+    "type": "Grotesque très grasse (Inter Display probable) pour titres, chiffres ≈17-22 % de la hauteur, casse mixte serrée ; grotesque semibold ≈4,5-8 % pour accroches ; mono (JetBrains Mono probable) pour code, puces et HUD, capitales espacées ≈1,2 %.",
+    "texture": "Halo radial violet derrière chaque scène ; glow sur les paquets lumineux et sur le carré ; flash lavande avec étoile de traits radiaux et anneaux d'onde de choc à l'explosion ; aberration chromatique (≈1 %) et flou de mouvement pendant la plongée dans le O ; ombre portée douce sous la fenêtre de code ; blocs pixel pour la panne ; flou de mouvement vertical sur les rouleaux de chiffres ; pas de grain.",
+    "style": "Promo dev-tool violet nocturne",
+    "coherence": "Le violet (accents, halos, pilules, aplat des chiffres) et le HUD (« LITELLM / REEL 2026 », timecode, chapitre, « 60 FPS · 128 BPM ») tiennent cinq chapitres, chacun annoncé « ■ 0X — NOM ». L'alternance nuit / clair / nuit / violet / nuit rythme la vidéo. Le carré lumineux et la ligne horizontale servent de motifs de liaison. Ce qui casse : l'emoji train rendu en 3D photoréaliste détonne dans un système plat, et les diagrammes sont trop petits pour être lus."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM : HUD « 128 BPM », kicks toutes les 0,469 s de 3,77 à 12,2 s, tempo_segment 4-12 s = 127,6 BPM ; la grille du dossier (127,9 BPM depuis 0,486 s) est juste à ±1 im, ses barres sont utilisables. À 60 fps, 1 temps = 28,125 im (non entier : images de temps f28, f56, f84, f113, f141, f169, f197, f225, f253, f281, f309, f338…). Les gestes tombent dessus : changement de mot f57, aspiration f85, explosion f113 (drop), vitesse max du zoom f197, nouvelle scène f225 (retour du kick), pastilles f254 / f282 / f310, flip f337, quatre swaps de modèle f450 / f478 / f507 / f535 sur quatre temps consécutifs, alerte f591, bascule f619, iris f676, compression f760, sillage du train posé f787. Seulement 3 coupes franches (f113, f218, f347) : les scènes s'enchaînent par transitions continues. Temps faibles : 6,05-7,48 s (frappe de code, petit texte, peu d'énergie), maintiens voulus de 0,4 s entre les swaps, 10,6-11,15 s (0,55 s), carte de fin 13,73-14,98 s (1,25 s, signature tapée et boutons pendant le fondu musical).",
+    "timeline": [
+      {"t": "0:00-0:00.52", "what": "Chapitre 01 ONE API : « 100+ LLMs. » monte caractère par caractère derrière un masque (f9-f31), des puces de code d'API apparaissent autour", "technique": "montée par masque en cascade, posée sur le temps 1 (f28)"},
+      {"t": "0:00.53-0:01.40", "what": "Les puces s'accumulent ; « LLMs. » sort vers le haut, « APIs. » lavande entre par le bas (f57-f69) ; surtitre « EVERY PROVIDER SHIPS ITS OWN SDK »", "technique": "roulement de mot sur le temps 2"},
+      {"t": "0:01.42-0:01.87", "what": "Le titre roule vers le haut ; les puces s'orientent vers le centre, s'étirent en traînées et sont aspirées dans un point violet", "technique": "aspiration en ease-in, exactement un temps (3 → 4)"},
+      {"t": "0:01.88-0:02.15", "what": "Flash lavande et étoile de traits radiaux, onde de choc, le carré violet grandit en tournant", "technique": "explosion sur le drop (temps 4)"},
+      {"t": "0:02.17-0:02.50", "what": "« ONE » puis « API » montent ; le carré glisse et rétrécit jusqu'à devenir le point final de « ONE API. »", "technique": "match cut forme → ponctuation"},
+      {"t": "0:02.60-0:03.00", "what": "Pilule « POST /v1/chat/completions » dont le texte se déchiffre de gauche à droite", "technique": "texte brouillé qui se décode"},
+      {"t": "0:03.00-0:03.70", "what": "Zoom exponentiel dans le O de « ONE » : le diagramme suivant est déjà visible dans le contre-poinçon ; aberration chromatique, flou ; break + riser dans la musique", "technique": "plongée dans un glyphe sur le riser"},
+      {"t": "0:03.75-0:05.70", "what": "Chapitre 02 ACCESS : nœuds Humans / Agents / Machines, carte « LiteLLM AI GATEWAY », liste de modèles, titre tapé « Every model, agent & MCP. One key. », pastilles allumées une par temps, paquets lumineux", "technique": "diagramme de flux construit sur les temps"},
+      {"t": "0:05.62-0:05.93", "what": "La carte centrale se retourne autour de l'axe vertical ; sa face arrière claire s'agrandit jusqu'à remplir le cadre", "technique": "flip de carte vers le plan suivant"},
+      {"t": "0:05.95-0:07.48", "what": "Chapitre 03 PYTHON SDK sur fond clair : « Swap models. » et le code d'app.py tapés caractère par caractère", "technique": "machine à écrire (passage lent)"},
+      {"t": "0:07.50-0:09.20", "what": "Le nom du modèle change sur quatre temps consécutifs (openai → anthropic → vertex_ai → bedrock → mistral), « Not code. » en violet, défilé des fournisseurs, pastille de pagination, barre de statut « 200 OK · Mistral · 284ms »", "technique": "swap de valeur calé sur chaque temps"},
+      {"t": "0:09.50-0:09.80", "what": "Des blocs noirs et blancs aléatoires remplacent le plan clair par le plan sombre", "technique": "dissolution en blocs (la panne)"},
+      {"t": "0:09.80-0:11.15", "what": "Chapitre 04 RELIABILITY : « Providers fail. » tapé, azure/gpt-5 vire au rouge « ✕ 429 » (temps 21), bascule vers anthropic « ✓ 200 OK » (temps 22), « You don't. », compteurs FAILOVER / RETRIES / USER IMPACT", "technique": "diagramme de bascule de secours"},
+      {"t": "0:11.17-0:11.33", "what": "Un disque violet naît du badge « 200 OK » et remplit le cadre", "technique": "iris depuis un élément d'interface, plein sur le kick"},
+      {"t": "0:11.33-0:12.65", "what": "Chapitre 05 SCALE sur aplat violet : 140+, 1,800+, 58.8k roulent comme des rouleaux de machine à sous, décalés, avec leurs étiquettes", "technique": "compteurs à rouleaux en cascade"},
+      {"t": "0:12.67-0:12.80", "what": "Les chiffres s'écrasent verticalement avec flou horizontal en une ligne blanche", "technique": "compression en ligne sur l'impact"},
+      {"t": "0:12.85-0:13.50", "what": "L'emoji train entre par la droite sur la ligne ; son sillage sombre en ogive dévoile le fond nuit et le wordmark « LiteLLM »", "technique": "logo-train sur son rail, posé sur le temps 28"},
+      {"t": "0:13.50-0:14.98", "what": "Carte de fin sans HUD : logo souligné par la ligne, signature tapée « The AI Gateway for platform teams. », boutons « $ pip install litellm » et « docs.litellm.ai → » ; fondu musical 14,5-15 s", "technique": "carte de fin dev-tool"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 128 BPM confirmée (HUD, kicks réguliers à 0,469 s, tempo_segment 127,6 BPM) ; les barres des planches sont justes à ±1 im. Sur 34 gestes clés relevés image par image (un par geste), 26 tombent à ±2 im d'un temps ou demi-temps (hasard ≈36 % à 60 fps), 22 à ±1 im (hasard ≈21 %), et 18 à ±1 im d'un temps entier (hasard ≈11 %). Exemples : explosion f113 sur le drop de 1,90 s (temps 4, basses de −26 à +39 dB) ; vitesse max du zoom f197 (temps 7) ; diagramme f225 au retour du kick ; pastilles Observability / Governance / Optimization f254 / f282 / f310 avec les claps de 4,238 / 4,702 / 5,178 s ; quatre swaps f450 / f478 / f507 / f535 ; alerte rouge f591 (attaque 9,868 s) et bascule f619 ; iris plein au kick de 11,285 s ; sillage du train posé f787 (temps 28). Deux gestes hors grille suivent quand même le son : la traversée du O (f218) au sommet du riser, la ligne (f768) sur l'impact de 12,81 s après un mini-break. Ratés : pastille Routing (+8 im), dissolution en blocs (+7 im), départs des frappes, boutons de fin. L'image précède ou rejoint l'attaque audible de 0 à 1 im. L'indice automatique « aucune synchro » est un faux négatif (paquets lumineux et frappes en mouvement continu).",
+    "synced": ["coupes", "departs", "impacts", "apparitions", "texte", "camera", "flashs", "couleur", "drop"],
+    "style_match": "Électro house 128 BPM, kick régulier, riser puis drop, break final : colle aux allumages un par temps, aux swaps secs et à l'explosion sur le drop.",
+    "how_built": "Rien dans le prompt. Le HUD affiche « 60 FPS · 128 BPM » : la timeline a probablement été écrite en temps (1 temps = 28,125 im, d'où des images de temps arrondies f113, f197, f225, f478…) avec une bande-son générée ou construite pour sa structure : intro sans kick avec riser, drop à 1,90 s sous l'explosion, break et riser de 3,03 à 3,77 s sous la plongée dans le O, kick qui revient sur la nouvelle scène, mini-break de 12,67 à 12,80 s avant l'impact de la ligne, fondu de 14,5 à 15 s. Même gabarit de HUD avec BPM que marouanegazouzi-6071d5 : Claude semble recourir à cette recette pour ce prompt."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Grille 128 BPM à cadence non entière",
+      "name_en": "beat grid at non-integer frame period",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "1 temps = 28,125 im à 60 fps : les images de temps sont arrondies (f113, f197, f225, f254, f282, f310, f337, f450, f478, f507, f535, f591, f619, f760, f787) et les gestes tombent dessus à moins d'une image. Densité : une pastille par temps (f254-f310), un swap de modèle par temps (f450-f535). 26 gestes clés sur 34 à ±2 im, 18 à ±1 im d'un temps entier (hasard ≈11 %). Dans HyperFrames : calculer frame = round(n × 60 × 60 / 128) plutôt que de supposer des temps à 30 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f113.jpg, microM-005-move-f677.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Riser et break sous les transitions, drop sur l'explosion",
+      "name_en": "riser-break-drop mapped to transitions",
+      "t": "0:00-0:01.90 ; 0:03.03-0:03.80 ; 0:12.67-0:12.83",
+      "frames": "f0-f114 ; f182-f228 ; f760-f770",
+      "fps": 60,
+      "mechanics": "Intro sans kick (−33 à −18 dB) avec souffle aigu montant ; drop à 1,90 s (basses de −26 à +39 dB) : l'explosion f113 arrive 1 im avant l'attaque. Break de 3,03 à 3,77 s (basses −15 dB, aigus de −21 à +10 dB) pendant la plongée dans le O ; le kick revient à 3,80 s quand le diagramme apparaît (f225). Mini-break de 12,67 à 12,80 s (basses à −13 dB) puis impact à 12,81-12,83 s : la ligne se forme à f768. Fondu de 14,5 à 15 s sous la carte de fin. La musique fournit les « respirations » que les transitions remplissent.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f113.jpg, microM-002-cut-f218.jpg, microM-006-move-f766.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée par masque en cascade",
+      "name_en": "masked staggered rise",
+      "t": "0:00.15-0:00.52 ; 0:02.17-0:02.47",
+      "frames": "f9-f31 ; f130-f148",
+      "fps": 60,
+      "mechanics": "Chaque caractère de « 100+ LLMs. » monte depuis une ligne de base invisible (masque), décalé d'≈1-2 im par caractère, ease-out ; le bloc complet se pose vers f28-f31, sur le temps 1 (f28). Même geste pour « ONE » puis « API » (≈2 im par lettre). Titre ≈11 % de la hauteur (« 100+ ») puis ≈22 % (« ONE API. »), grotesque très grasse.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Roulement vertical du mot qui change",
+      "name_en": "slot-roll word swap",
+      "t": "0:00.95-0:01.15",
+      "frames": "f57-f69",
+      "fps": 60,
+      "mechanics": "Seul le second mot change : « LLMs. » sort vers le haut, « APIs. » entre par le bas en dégradé lavande, lettres décalées d'≈1 im, 12 im (0,2 s), départ f57 sur le temps 2 (f56). « 100+ » reste fixe : l'œil ne relit que ce qui change. Reprend le geste plus tard pour le nom du modèle dans le code.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Nuage de puces de vraies méthodes d'API",
+      "name_en": "code-chip chaos cloud",
+      "t": "0:00.10-0:01.50",
+      "frames": "f6-f90",
+      "fps": 60,
+      "mechanics": "Environ 24 puces mono (fond sombre, contour violet, ≈1,3 % de la hauteur, inclinées de ±3°) apparaissent en fondu à des positions aléatoires, de plus en plus nombreuses : « openai.chat.completions.create() », « anthropic.messages.create() », « bedrock.invoke_model() », « x-api-key », « anthropic-version: 2023-06-01 »… Le problème (chaque fournisseur a son SDK) est montré par du vrai code, pas par un pictogramme.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Aspiration puis explosion",
+      "name_en": "implosion to explosion",
+      "t": "0:01.42-0:02.13",
+      "frames": "f85-f128",
+      "fps": 60,
+      "mechanics": "Départ f85 (temps 3) : le titre roule vers le haut, les puces pivotent vers le centre, s'étirent en traînées radiales et accélèrent (ease-in) jusqu'à disparaître dans un losange violet d'≈2 % de la largeur (f109-f112). Explosion f113 (temps 4, drop) : luminance de 15 à 120 en une image puis décroissance exponentielle (101, 85, 73, 62, 54, 48… ≈×0,85 par image, retour vers 23 à f128), étoile de traits radiaux, anneaux d'onde de choc jusqu'aux bords (f114-f124). L'aspiration dure exactement un temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f113.jpg, extra-01.jpg",
+      "illus": {"from": 96, "to": 124, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Le carré de l'explosion devient le point final du titre",
+      "name_en": "shape-to-punctuation match cut",
+      "t": "0:01.88-0:02.47",
+      "frames": "f113-f148",
+      "fps": 60,
+      "mechanics": "Le losange central grandit d'≈2 à ≈10 % de la largeur en tournant d'≈10° (f113-f122, ease-out), puis pendant la montée de « ONE API. » il glisse du centre vers la fin de « API » en rétrécissant à ≈3 % et se pose comme point final violet (f130-f148, pic de mouvement f142 sur le temps 5). Le « I » plus clair et plus haut évoque un curseur de texte. La forme née de l'explosion devient la ponctuation du message.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f113.jpg, extra-02.jpg",
+      "illus": {"from": 128, "to": 150, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte brouillé qui se décode",
+      "name_en": "scramble decode",
+      "t": "0:02.60-0:03.00",
+      "frames": "f156-f180",
+      "fps": 60,
+      "mechanics": "Une pilule violette apparaît sous « ONE API. » (f156, demi-temps +1 im) ; son texte mono passe par des caractères aléatoires qui se fixent de gauche à droite jusqu'à « POST /v1/chat/completions » (24 im, 0,4 s). Même procédé sur la barre de statut du chapitre SDK. Effet « terminal » cohérent avec un outil de développeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le O, la scène suivante dans le contre-poinçon",
+      "name_en": "zoom through a letter counter",
+      "t": "0:03.00-0:03.70",
+      "frames": "f180-f222",
+      "fps": 60,
+      "mechanics": "Zoom exponentiel (ease-in) vers le O de « ONE » : le texte glisse à droite et grossit d'≈×10 en 38 im, vitesse maximale à f197 (temps 7). Dès f204 le diagramme suivant est visible dans le contre-poinçon du O ; aberration chromatique (≈1 %) et flou de mouvement à f209-f218 ; l'anneau blanc du O passe les bords à f218-f221 ; scène complète à f222, premier nœud à f225 (temps 8, retour du kick). Le zoom occupe le break et le riser de la musique.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f218.jpg, extra-02.jpg",
+      "illus": {"from": 196, "to": 222, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Diagramme de flux construit en cascade",
+      "name_en": "staggered flow diagram build",
+      "t": "0:03.73-0:04.55",
+      "frames": "f224-f273",
+      "fps": 60,
+      "mechanics": "Nœuds Humans / Agents / Machines à gauche (décalage 3 im : f224, f227, f230), carte centrale « LiteLLM AI GATEWAY » avec compteur « 19,731 req », six modèles à droite qui glissent depuis la droite (gpt-5, claude-opus-4-8, gemini-2.5-pro, llama-4-maverick, github-mcp, research-agent ; décalage 3 im, f234-f249), connecteurs en courbes de Bézier, titre tapé « Every model, agent & MCP. One key. » (≈1 caractère par image, f240-f273). Étiquettes ≈1,2-1,5 % de la hauteur : trop petites.",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f218.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Une pastille allumée par temps",
+      "name_en": "one highlight per beat",
+      "t": "0:03.88-0:05.17",
+      "frames": "f233, f254, f282, f310",
+      "fps": 60,
+      "mechanics": "Les quatre fonctions de la passerelle passent du gris au violet plein : Routing f233 (8 im après le temps, raté), Observability f254, Governance f282, Optimization f310, soit les temps 9, 10 et 11 à moins d'une image, avec les claps de 4,238 / 4,702 / 5,178 s. Chaque allumage est une image sèche (pas de fondu). Énumérer une liste au temps rend la démonstration musicale.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Paquets lumineux qui circulent sur les connecteurs",
+      "name_en": "flowing light packets",
+      "t": "0:04.00-0:05.75",
+      "frames": "f240-f345",
+      "fps": 60,
+      "mechanics": "Points blancs de 2-3 px avec halo violet qui parcourent en continu les courbes, des nœuds vers la passerelle puis vers les modèles (≈0,3-0,5 s par trajet), plusieurs à la fois. Le diagramme reste vivant pendant les maintiens et montre le sens du flux sans flèche.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-003-cut-f347.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flip de carte vers le plan suivant",
+      "name_en": "card flip reveal",
+      "t": "0:05.62-0:05.93",
+      "frames": "f337-f356",
+      "fps": 60,
+      "mechanics": "Départ f337 (temps 12) : la carte centrale grossit d'≈5 % et son contenu s'efface (f337-f342), elle pivote autour de l'axe vertical jusqu'à n'être qu'une tranche (f343-f344), sa face arrière claire contenant la fenêtre de code s'élargit (f345-f347) puis grandit jusqu'à remplir le cadre (f348-f356, ease-out, flou sur les bords) ; plein cadre vers f352, demi-temps 12,5. Le passage nuit → clair se fait par un objet du plan précédent.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f347.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire avec curseur",
+      "name_en": "typewriter",
+      "t": "0:04.00-0:04.55 ; 0:05.95-0:07.48 ; 0:09.67-0:10.80 ; 0:13.70-0:14.20",
+      "frames": "f240-f273 ; f357-f449 ; f580-f648 ; f822-f852",
+      "fps": 60,
+      "mechanics": "Quatre usages : titre du diagramme (≈1 caractère par image), « Swap models. » et le code d'app.py (≈1 caractère / 1,2-1,5 im, curseur barre), « Providers fail. You don't. » (≈1 caractère par image), signature de fin. Cohérent pour le code d'un outil de développeur, monotone pour les titres ; le passage 6,05-7,48 s ne montre que de la frappe en petit corps.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f347.jpg, microM-004-move-f580.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Le nom du modèle change sur chaque temps",
+      "name_en": "beat-synced model swap",
+      "t": "0:07.50-0:09.15",
+      "frames": "f450, f478, f507, f535, f549",
+      "fps": 60,
+      "mechanics": "Dans « model=… », la chaîne roule verticalement dans un cadre lavande (ancienne vers le haut, nouvelle par le bas, ≈4-6 im) : openai/gpt-5 → anthropic/claude-opus-4-8 (f450, temps 16) → vertex_ai/gemini-2.5-pro (f478) → bedrock/llama-4-maverick (f507) → mistral/mistral-large (f535). À chaque swap la barre de statut se brouille puis se résout (« 200 OK · Anthropic · 388ms », « 200 OK · Mistral · 284ms » à f549, demi-temps), la pastille de pagination change de couleur. « Not code. » en violet complète le titre. La promesse du produit est démontrée en quatre temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f580.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Défilé de fournisseurs avec pastille active",
+      "name_en": "provider marquee with active pill",
+      "t": "0:06.00-0:09.50",
+      "frames": "f360-f570",
+      "fps": 60,
+      "mechanics": "En bas du cadre, une rangée de noms de fournisseurs (anthropic, vertex_ai, bedrock, azure, groq, mistral, ollama, cohere, deepseek, xai, together_ai) en lavande pâle ≈3 % de la hauteur, coupée par les bords, défile horizontalement ; le fournisseur actif passe dans une pilule violette pleine au moment du swap. Relie le code au catalogue sans texte explicatif.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-move-f580.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Dissolution en blocs pour dire la panne",
+      "name_en": "block glitch dissolve",
+      "t": "0:09.50-0:09.80",
+      "frames": "f570-f588",
+      "fps": 60,
+      "mechanics": "Des rectangles verticaux noirs (et quelques blancs) de largeurs variées apparaissent à des positions aléatoires, d'abord à gauche, et remplacent le plan clair par le plan sombre du chapitre RELIABILITY en ≈18 im (0,3 s), départ 7 im après le temps. Motivé (« Providers fail. » : l'écran tombe en panne) mais visuellement générique.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f580.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Bascule de secours animée",
+      "name_en": "animated failover diagram",
+      "t": "0:09.80-0:11.15",
+      "frames": "f589-f669",
+      "fps": 60,
+      "mechanics": "Pilule « POST /chat/completions » → losange ROUTER → deux cibles : azure/gpt-5 (primary · eastus) dont le contour vire au rouge à f591 (temps 21) avec badge « ✕ 429 » et lueur rouge, chemin en pointillés ; bascule à f619 (temps 22) vers anthropic/claude-sonnet-4-5 (fallback), chemin vert plein « auto-retry → fallback » et badge « ✓ 200 OK ». En bas, trois compteurs mono : FAILOVER automatic, RETRIES 1, USER IMPACT none (vert). Un incident et sa résolution en deux temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f580.jpg, microM-005-move-f677.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris qui naît du badge de succès",
+      "name_en": "iris from a UI element",
+      "t": "0:11.17-0:11.33",
+      "frames": "f670-f680",
+      "fps": 60,
+      "mechanics": "Un disque violet apparaît sur le badge « 200 OK » (x ≈95 %, y ≈68 %) et grossit en accélérant (ease-in) jusqu'à couvrir le cadre : luminance 20, 23, 27, 33, 42, 54, 66, 76, 82 de f671 à f680, croissance la plus forte de f675 à f678, sur le temps 24 et le kick de 11,285 s. Bord légèrement flou. Le succès de la scène précédente ouvre la suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f677.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs à rouleaux en cascade",
+      "name_en": "slot-machine counters",
+      "t": "0:11.33-0:12.20",
+      "frames": "f680-f732",
+      "fps": 60,
+      "mechanics": "Sur aplat violet, chaque chiffre de « 140+ » roule verticalement avec flou de mouvement et se fige (pose à f690, demi-temps 24,5), puis « 1,800+ » et « 58.8k » démarrent l'un après l'autre (décalage ≈0,4-0,5 s), dernier verrouillage vers f732 (temps 26, probable). Chiffres grotesque très grasse ≈17 % de la hauteur, à gauche ; étiquettes mono numérotées « 01 PROVIDERS / One OpenAI-compatible API », « 02 MODELS », « 03 ★ GITHUB STARS » à droite, séparées par des filets.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f677.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Compression des chiffres en une ligne",
+      "name_en": "collapse to line",
+      "t": "0:12.67-0:12.80",
+      "frames": "f760-f768",
+      "fps": 60,
+      "mechanics": "Départ f760 (temps 27) : les trois chiffres et leurs étiquettes s'écrasent verticalement vers le centre avec un flou horizontal croissant, jusqu'à une ligne blanche de ≈2 px à y ≈50 % (f768, 8 im, ease-in), posée sur l'impact de 12,81 s qui suit un mini-break. La ligne devient le rail du logo.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f766.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Logo-train qui arrive sur son rail",
+      "name_en": "train logo arriving on its rail",
+      "t": "0:12.85-0:13.50",
+      "frames": "f771-f810",
+      "fps": 60,
+      "mechanics": "Le logo de LiteLLM est l'emoji train à grande vitesse : il entre par la droite sur la ligne (f771-f772) avec traînées de vitesse ; derrière lui un sillage sombre en ogive s'ouvre et dévoile le fond nuit (luminance de 81 à 41 en 15 im, rapide puis amorti), posé à f787 sur le temps 28 ; le wordmark « LiteLLM » apparaît dans son sillage lettre par lettre (f779-f786) ; la ligne reste comme soulignement. Révélation de logo motivée par le logo lui-même.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f766.jpg, overview-03.jpg",
+      "illus": {"from": 764, "to": 790, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Argumentaire en cinq chapitres numérotés",
+      "name_en": "numbered chapter pitch",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "« 01 ONE API » (problème : 100+ API différentes, 0-3,7 s) → « 02 ACCESS » (solution : une passerelle, 3,7-5,8 s) → « 03 PYTHON SDK » (preuve en code, 5,8-9,6 s) → « 04 RELIABILITY » (bascule de secours, 9,6-11,2 s) → « 05 SCALE » (chiffres, 11,3-12,7 s) → logo et appel à l'action (12,8-15 s). Chaque accroche suit le schéma « constat. contrepoint. » : « Swap models. Not code. », « Providers fail. You don't. », « Every model, agent & MCP. One key. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "HUD de bobine",
+      "name_en": "reel HUD overlay",
+      "t": "0:00-0:12.80",
+      "frames": "f0-f768",
+      "fps": 60,
+      "mechanics": "Coins en L ; en haut à gauche « ● LITELLM / REEL 2026 » (point rouge), en haut à droite un timecode réel (00:00:05:00), en bas à gauche le chapitre (« 02 ACCESS »), en bas à droite « 1920 × 1080 · 60 FPS · 128 BPM » ; mono ≈1,2 % de la hauteur, gris violacé. Disparaît sur la carte de fin. Même gabarit que marouanegazouzi-6071d5 : lien entre chapitres, mais tic de « showreel » Claude.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance de fonds par chapitre",
+      "name_en": "chapter background rhythm",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Nuit violacée #0B0716 (chapitres 01-02) → clair #EEEBF6 (03, code) → nuit (04, panne) → aplat violet #6D4AE8 (05, chiffres) → nuit (logo). Chaque changement passe par une transition motivée (flip, blocs, iris, ligne). Les mots clés gardent la même lavande sur tous les fonds, le vert et le rouge sont réservés au succès et à l'échec.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque très grasse, second membre en lavande",
+      "name_en": "heavy grotesque with tinted counterpoint",
+      "t": "0:00-0:14.98",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Titres en grotesque très grasse à interlettrage serré (Inter Display probable), point final systématique ; le second membre de chaque phrase est teinté (« APIs. », « One key. », « Not code. », « You don't. ») ; chiffres ≈17 % de la hauteur ; code, puces, surtitres et HUD en mono, capitales espacées pour les surtitres « ■ 04 — RELIABILITY ». Wordmark final en grotesque regular ≈12 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin dev-tool avec commande d'installation",
+      "name_en": "dev-tool end card",
+      "t": "0:13.50-0:14.98",
+      "frames": "f810-f899",
+      "fps": 60,
+      "mechanics": "Sans HUD : emoji train + « LiteLLM » (≈12 % de la hauteur) souligné par la ligne-rail, signature tapée « The AI Gateway for platform teams. » (≈3,5 %), deux boutons mono : « $ pip install litellm » (contour sombre) et « docs.litellm.ai → » (violet plein), apparus vers f848-f853 ; maintien de 1,25 s pendant que la musique s'éteint (14,5-15 s). L'appel à l'action est une commande à copier, adapté à la cible.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt identique à marouanegazouzi-6071d5 et sans produit, pourtant la vidéo promeut LiteLLM avec de vrais noms de méthodes d'API, de modèles et des chiffres (140+ fournisseurs, 1,800+ modèles, 58.8k étoiles GitHub) : lancé dans le dépôt ou le contexte du produit (probable)."},
+    {"kind": "direction", "insight": "« Showreel » devient « LITELLM / REEL 2026 » : Claude garde la forme bobine (HUD, chapitres numérotés) mais raconte un argumentaire produit. « Go all out » se traduit par une transition différente à chaque chapitre (aspiration, plongée, flip, blocs, iris, ligne)."},
+    {"kind": "build", "insight": "HUD « 60 FPS · 128 BPM » : timeline écrite en temps (probable), avec des images de temps arrondies, et bande-son structurée autour des transitions (drop, break + riser, mini-break). Les gestes clés tombent sur les temps sans que le prompt parle de musique."},
+    {"kind": "structure", "insight": "Cinq chapitres de 1,5 à 4 s, chacun avec une accroche en deux temps « constat. contrepoint. » : rythme de copywriting SaaS appliqué sans consigne, qui donne un mot à colorer par plan."},
+    {"kind": "qa", "insight": "Pas de contrôle de lisibilité : étiquettes du diagramme et du routeur à ≈1,2-1,5 % de la hauteur, frappe de code de 1,5 s qui ralentit le milieu. Le prompt ne fixait ni taille minimale ni densité."},
+    {"kind": "other", "insight": "Avec le même prompt, deux auteurs obtiennent la même recette (HUD avec BPM, chapitres étiquetés, compression en ligne avant le logo) : c'est un gabarit de Claude pour « showreel », à connaître pour s'en démarquer ou pour l'exiger."}
+  ],
+  "steal": [
+    "Montre le problème en objets concrets (puces de vraies méthodes d'API), aspire-les dans un point pendant un temps entier, puis explose sur le drop.",
+    "Fais d'une forme de transition un signe typographique : le carré de l'explosion glisse et rétrécit pour devenir le point final du titre.",
+    "Zoome dans le contre-poinçon d'une lettre où la scène suivante est déjà visible ; zoom sur le riser, nouvelle scène sur le kick.",
+    "Démo produit au temps : un changement de valeur par temps (ici le nom du modèle sur quatre temps), avec une ligne de statut qui confirme.",
+    "Fais naître l'iris de transition d'un élément d'interface signifiant (badge « 200 OK ») plutôt que du centre du cadre."
+  ],
+  "flaws": [
+    "Étiquettes du diagramme, du routeur et du code à ≈1,2-1,5 % de la hauteur : illisibles en moins d'une seconde.",
+    "Machine à écrire répétée quatre fois (titres, code, accroche, signature), avec 1,5 s de frappe qui ralentit le milieu.",
+    "Emoji train photoréaliste dans un système plat et violet : le logo jure avec la direction artistique.",
+    "Dissolution en blocs et aberration chromatique : effets numériques génériques, même s'ils sont motivés ici.",
+    "Carte de fin statique 1,25 s pendant le fondu musical, après une vidéo très dense."
+  ],
+  "deep_study": {"worth": true, "why": "Oui, à 60 fps natifs : enchaînement de transitions motivées (aspiration-explosion, carré devenu point, plongée dans le O, flip, iris depuis un badge, train sur la ligne), toutes posées sur une grille 128 BPM à cadence non entière ; idéal pour relever les courbes image par image."}
+}

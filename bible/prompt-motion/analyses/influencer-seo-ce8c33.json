@@ -1,0 +1,418 @@
+{
+  "slug": "influencer-seo-ce8c33",
+  "title": "fal motion design showreel",
+  "handle": "@influencer_seo",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Grille de montage calée au temps près, images générées intégrées dans la typo, iris-logo réussi ; affaibli par un flash gris répété, 7 à 8 polices et un compteur illisible.",
+  "summary": "Promo de 15 s pour fal présentée comme un showreel : un prompt tapé lance une rafale d'images générées coupée à la double croche, puis quatre mots-masques (IMAGE, VIDEO, AUDIO, 3D) remplis de leur médium, un mur d'images en perspective, trois preuves chiffrées, une démo « prompt in. pixels out. » et un iris-logo. Calée au temps près à 124 BPM ; flash gris répété, trop de polices.",
+  "prompt_vs_result": [
+    "Même prompt « showreel de motion designer » de 15 s, « go all out », mais adressé à @fal avec l'obligation d'utiliser l'API fal. Aucun contenu, style ni musique précisés.",
+    "Claude a fait une promo produit : modèles réels cités, images et vidéos générées via fal, violet de la marque, chiffres (1,000+ modèles, 10x, 1,5 M développeurs), démo d'interface, logo et slogan.",
+    "« Use the fal API » a imposé la matière (images générées) et orienté vers la pub. Il aurait fallu préciser les chiffres à afficher, une famille typographique et une durée minimale par image."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#101020", "role": "fond sombre indigo (terminal, mur, compteurs)"},
+      {"hex": "#080808", "role": "fond noir des mots-masques"},
+      {"hex": "#301060", "role": "halo violet radial"},
+      {"hex": "#A080F0", "role": "lavande : accents de texte, index 01-04, égaliseur, curseur"},
+      {"hex": "#5000B8", "role": "violet de marque : logo fal, bouton Generate"},
+      {"hex": "#F0E8F8", "role": "blanc lavande : 10x, compteurs, textes principaux"},
+      {"hex": "#574781", "role": "fond violet clair du flash « Entrée »"},
+      {"hex": "#5D5B69", "role": "voile gris des flashs de transition"},
+      {"hex": "#FFFFFF", "role": "fond de la carte finale"},
+      {"hex": "#180830", "role": "texte du slogan final"}
+    ],
+    "type": "7 familles : mono à empattements (prompt 7 %), sans condensée fine (index), grotesque large grasse (IMAGE 32 %), serif et italique (accroches, compteurs 20 %), black italic (10x 31 %), pixel (1,5 M), grotesque grasse (slogan 4 %).",
+    "texture": "Images générées étalonnées en violet désaturé. Flous de mouvement : traînée horizontale sur les whips, flou radial sur la plongée dans le 3D, traînées d'échos sur 10x et sur le logo, flou de profondeur sur le mur d'images. Voiles gris translucides sur les flashs. Halos radiaux violets et trame de points en demi-teinte dans l'intro. Découpe glitch en bandes horizontales sur le split et le compteur brouillé.",
+    "style": "Promo tech violette, typo-masque générative",
+    "coherence": "Le violet unique (fonds indigo, halo, lavande, violet de marque, étalonnage des images générées) tient l'ensemble, et la grille de 2 temps donne une cadence régulière. Ce qui casse : 7 à 8 polices sans hiérarchie stable, le même flash gris sur chaque coupe, et la bascule finale au blanc, abrupte mais efficace pour signer."
+  },
+  "rhythm": {
+    "bpm": 124,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 123,9 BPM (netteté 5,4, pulsation claire) ; la timeline semble écrite à 124 BPM : 1 temps = 29 im à 60 fps, 2 temps = 58 im. Scènes de 2 temps (IMAGE f118, VIDEO f176, AUDIO f234, 3D f292, mur f350, 10x f582, 1,5 M f640, UI f698, koi f756) ou de 4 temps (mur f350-f467, compteur f468-f581). Les 11 coupes de scène tombent à ±1,6 im d'une barre de temps, avec une dérive lente de −0,3 im (f60) à −1,6 im (f756) : grille à 58,0 im contre 58,1 mesurées. Accroche en rafale : 7 coupes toutes les 7-8 im (1/16 de temps = 7,26 im) de f74 à f118. 17 coupes détectées, plan médian 0,97 s, plus court 0,12 s. Temps morts : maintiens immobiles de 0,95 s sur 1,000+ (f524-f581), ≈ 0,7 s sur 10x (f598-f639), ≈ 0,6 s sur 1,5 M (f660-f697) et 1,08 s sur la carte finale (f835-f899).",
+    "timeline": [
+      {"t": "0:00.00-0:00.43", "what": "Dézoom de 2,2× à 1× avec mise au point sur « PROMPT 01 / fal queue », frappe de generate(«showreel»)", "technique": "rack focus + frappe terminal à 2 im par caractère"},
+      {"t": "0:00.43-0:01.00", "what": "Fin de la frappe, curseur bloc lavande, « ↵ one API. every medium. », trame de points et halo violet", "technique": "terminal de prompt"},
+      {"t": "0:01.00-0:01.20", "what": "Entrée sur le temps : le fond vire au violet clair, la ligne devient une barre de progression avec aperçu, puis l'image (voiture) s'ouvre en plein cadre", "technique": "barre de progression qui s'ouvre sur le résultat"},
+      {"t": "0:01.20-0:01.97", "what": "Rafale de 7 images générées (voiture, portrait, immeuble, basket éclatée, dunes, koi, feuille) de 7-8 im chacune", "technique": "coupes à la double croche"},
+      {"t": "0:01.97-0:02.92", "what": "La dernière image se resserre dans le mot IMAGE ; index « 01 fal-ai/flux-2-pro »", "technique": "mot-masque rempli d'image"},
+      {"t": "0:02.92-0:03.88", "what": "Flash et whip : VIDEO rempli d'une vidéo de chrome liquide ; « 02 minimax/h3-max-turbo »", "technique": "mot-masque vidéo"},
+      {"t": "0:03.88-0:04.85", "what": "Flash : AUDIO en lettres contour qui sautent comme un VU-mètre, égaliseur en bas ; « 03 elevenlabs/music »", "technique": "lettres-VU-mètre"},
+      {"t": "0:04.87-0:05.72", "what": "Flash : « 3D » extrudé en couches violettes, texture basket, qui pivote ; « 04 1,000+ models. one API. »", "technique": "extrusion en couches"},
+      {"t": "0:05.72-0:05.85", "what": "Plongée dans le glyphe 3D avec flou radial, coupe sur le temps vers un noir à halo violet", "technique": "zoom-through"},
+      {"t": "0:05.85-0:07.08", "what": "12 cartes d'images volent et forment un mur incliné en perspective ; « every frame, generated. »", "technique": "mur d'images 3D"},
+      {"t": "0:07.08-0:07.77", "what": "Travelling avant dans la carte de la danseuse, les autres cartes se floutent", "technique": "push into card"},
+      {"t": "0:07.77-0:08.73", "what": "Volet glitch : la danseuse passe en panneau droit, compteur 0 → 1,000+ à gauche, catégories tapées", "technique": "split screen + compteur ease-out"},
+      {"t": "0:08.73-0:09.68", "what": "Maintien de « 1,000+ production-ready models »", "technique": "maintien statique ≈ 0,95 s"},
+      {"t": "0:09.70-0:10.65", "what": "Flash : « 10x » entre en traînée d'échos sur une voiture néon ; « up to 10x faster inference »", "technique": "echo streak"},
+      {"t": "0:10.67-0:11.62", "what": "Flash : chiffres brouillés en police pixel qui convergent vers 1,500,000 ; « developers build on fal »", "technique": "scramble décodage"},
+      {"t": "0:11.63-0:12.60", "what": "UI « prompt in. pixels out. » : frappe de « neon koi in liquid mercury », curseur, clic Generate sur le temps, image révélée tuile par tuile", "technique": "démo d'interface"},
+      {"t": "0:12.60-0:12.83", "what": "L'aperçu zoome au plein cadre sur le koi", "technique": "zoom UI → plein cadre"},
+      {"t": "0:12.85-0:13.08", "what": "Le logo fal géant cadre le koi par son trou et rétrécit sur fond blanc avec échos", "technique": "iris-logo"},
+      {"t": "0:13.10-0:13.92", "what": "Le logo oscille en ressort, le slogan « Generative media platform for developers. » arrive mot à mot", "technique": "ressort + mot à mot"},
+      {"t": "0:13.92-0:15.00", "what": "Carte finale immobile, « fal.ai » en mono violet", "technique": "maintien final 1,08 s"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Les 11 coupes de scène (f60, f118, f176, f234, f292, f350, f468, f582, f640, f698, f756) tombent à ±1,6 im des barres bleues (60,3 / 118,4 / 176,5 / 234,6 / 292,7 / 350,8 / 467,1 / 583,3 / 641,4 / 699,5 / 757,6), espacées de 58 im = 2 temps. Rafale d'accroche : les 7 coupes f74, f81, f88, f96, f103, f110, f118 tombent à ±1,3 im de la grille de doubles croches (74,8 / 82,1 / 89,3 / 96,6 / 103,9 / 111,1 / 118,4), sur une pulsation de doubles croches audible en continu (attaques médiums toutes les 0,12 s). Comptage un événement par geste : 20 gestes clés sur 30 à ±2 im d'une barre bleue ou bleu clair (hasard ≈ 34 % à 60 fps). Autres calages : pic des flashs f176-f177 et f234-f235 sur le temps, compteur à 1,000+ f524 (barre 525,2), clic sur Generate f728-f730 (barre 728,6), départ de l'iris-logo f771 sur un demi-temps (772,2), IMAGE révélé f118 sur un accent (pic −10 dB à 2,0 s). Ratés : apparitions des étiquettes, début de la révélation en mosaïque (f736), arrivée du travelling (f442), logo à sa taille finale f781, 5,7 im avant le temps (son trou ne devient blanc qu'à f785, barre 786,7). Pendant les maintiens (1,000+, 10x, 1,5 M), rien ne pulse sur le kick. L'indice automatique (« synchro partielle », p corrigé 1e-4) est confirmé et dépassé à l'œil.",
+    "synced": ["coupes", "flashs", "apparitions", "atterrissages", "texte", "camera"],
+    "style_match": "Électro brillante à 124 BPM, doubles croches continues : rafale à la double croche, cartes de 2 temps et flashs sur le temps collent à l'énergie tech de la marque.",
+    "how_built": "Le prompt impose « Use the fal API » ; la carte AUDIO cite elevenlabs/music : la bande-son est probablement générée via fal avec un tempo demandé (≈ 124 BPM). La timeline est écrite en durées fixes (58 im = 2 temps, ≈ 7 im = 1/16) ; la dérive de 1,3 im en 12 s montre une grille à 124 BPM posée sur un morceau à 123,9 BPM, donc un calcul en BPM et non un calage sur les attaques détectées."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Grille de montage à 2 temps (58 images) calée au BPM",
+      "name_en": "two-beat edit grid",
+      "t": "0:01.97-0:12.60",
+      "frames": "f118-f756",
+      "fps": 60,
+      "mechanics": "Chaque carte dure exactement 2 temps à 124 BPM (58 im à 60 fps) ou 4 temps (116 im) : IMAGE f118, VIDEO f176, AUDIO f234, 3D f292, mur f350, compteur f468, 10x f582, 1,5 M f640, UI f698, koi f756. Chaque coupe tombe à ±1,6 im d'une barre de temps. Une affirmation produit par carte : le message avance au rythme du kick, sans jamais couper entre deux temps.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-move-f178.jpg, microM-003-cut-f350.jpg, microM-004-cut-f582.jpg, microM-005-cut-f640.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Rafale d'images à la double croche",
+      "name_en": "sixteenth-note image burst",
+      "t": "0:01.20-0:01.97",
+      "frames": "f72-f117",
+      "fps": 60,
+      "mechanics": "7 images générées (voiture, portrait, immeuble, basket éclatée, dunes, koi, feuille) de 7 à 8 im chacune, soit 1/16 de temps (7,26 im) : coupes f74, f81, f88, f96, f103, f110, f118 sur la grille de doubles croches à ±1,1 im, en phase avec la pulsation de doubles croches de la musique. Passage immeuble → basket en fondu de 2 im. Chaque image reste 0,12 s : lisible comme texture d'énergie, pas comme contenu.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash gris translucide sur chaque coupe",
+      "name_en": "translucent grey flash cut",
+      "t": "0:02.92-0:10.70",
+      "frames": "f175-f181, f233-f236, f292-f294, f582-f584, f640-f642",
+      "fps": 60,
+      "mechanics": "Un voile blanc à ≈ 35 % d'opacité relève les noirs à #5D5B69 pendant 2 à 4 im, pic sur la barre de temps (f176-f177, f234-f235, f583, f641) ; combiné à une traînée horizontale pour IMAGE → VIDEO et à l'entrée de 10x. Utilisé 5 fois à l'identique : l'accent s'use.",
+      "verdict": "cliche",
+      "evidence": "microM-001-move-f178.jpg, microM-002-move-f236.jpg, microM-004-cut-f582.jpg, microM-005-cut-f640.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Terminal de prompt tapé",
+      "name_en": "typed prompt terminal",
+      "t": "0:00.00-0:01.00",
+      "frames": "f0-f59",
+      "fps": 60,
+      "mechanics": "En-tête « PROMPT 01 / fal queue » en sans condensée fine lavande #A080F0 (≈ 5 % de la hauteur), ligne « > generate(«showreel») » en mono à empattements (IBM Plex Mono probable) blanche ≈ 7 % de la hauteur (capitales), frappée à 2 im par caractère (30 caractères/s, constant), curseur bloc lavande, filet violet dessous, légende « ↵ one API. every medium. » ≈ 1,5 %. Pose le produit comme une API dès la première seconde.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dézoom avec mise au point sur l'interface",
+      "name_en": "pull-back with rack focus",
+      "t": "0:00.00-0:00.43",
+      "frames": "f0-f26",
+      "fps": 60,
+      "mechanics": "Ouverture à ≈ 2,2× sur le chevron et le curseur, en-tête flou en avant-plan ; recul jusqu'à 1× en ≈ 26 im (ease-out) pendant que l'en-tête passe du flou au net. Trame de points en demi-teinte à droite, halo violet #301060 en bas à gauche.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La barre de progression s'ouvre en plein cadre sur l'image générée",
+      "name_en": "progress bar expanding into the result",
+      "t": "0:01.00-0:01.20",
+      "frames": "f60-f72",
+      "fps": 60,
+      "mechanics": "Entrée sur le temps (f60, barre 60,3) : le fond passe de #101020 à un violet clair #574781, la ligne de prompt devient une bande de ≈ 6 % de la hauteur qui affiche l'aperçu (planète à anneaux), puis une voiture ; la bande s'ouvre verticalement jusqu'au plein cadre en ≈ 4 im (f68-f72). Le résultat sort littéralement de la barre de génération.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "L'image se resserre dans les lettres du mot",
+      "name_en": "image collapsing into knockout type",
+      "t": "0:01.93-0:02.23",
+      "frames": "f116-f134",
+      "fps": 60,
+      "mechanics": "La dernière image de la rafale (feuille et gouttes) devient le remplissage du mot IMAGE : le mot apparaît à ≈ 1,2× (96 % de la largeur) avec flou horizontal à f118, puis 93, 87, 85, 81, 80, 79 % de la largeur sur f119-f124 : retour à 1× en 6 im (ease-out) ; l'image continue de dériver dans les lettres ; copie de l'image à ≈ 10 % d'opacité en fond. Puis filet violet tracé et index « 01 fal-ai/flux-2-pro » (f126-f134).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f178.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mots-masques remplis de leur médium",
+      "name_en": "medium-filled knockout words",
+      "t": "0:01.97-0:05.72",
+      "frames": "f118-f343",
+      "fps": 60,
+      "mechanics": "Grotesque large très grasse en capitales (≈ 32 % de la hauteur, ≈ 79 % de la largeur), centrée à ≈ 45 % de la hauteur ; « 3D » plus gros (≈ 49 % de la hauteur) : IMAGE rempli d'une photo, VIDEO d'une vidéo de chrome liquide en mouvement, AUDIO en contour 1-2 px partiellement rempli (méduse), 3D extrudé avec texture basket. Chaque mot démontre ce qu'il nomme, puis l'index numéroté cite le modèle utilisé.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f178.jpg, microM-002-move-f236.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "AUDIO : lettres qui sautent comme un VU-mètre, avec égaliseur",
+      "name_en": "VU-meter bouncing letters",
+      "t": "0:03.90-0:04.27",
+      "frames": "f234-f256",
+      "fps": 60,
+      "mechanics": "Après le flash (f234), les lettres partent décalées verticalement (A et U hauts, D, I, O bas, écarts ≈ 15 % de la hauteur) et se réalignent en ≈ 16 im avec de petits rebonds, comme des barres de niveau. ≈ 60 barres fines lavande #A080F0 (jusqu'à ≈ 10 % de la hauteur) en bas du cadre changent de hauteur à chaque image (réactivité réelle au son non vérifiée). Index « 03 elevenlabs/music ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f236.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "3D : lettres extrudées en couches qui pivotent",
+      "name_en": "layered fake extrusion",
+      "t": "0:04.87-0:05.72",
+      "frames": "f292-f343",
+      "fps": 60,
+      "mechanics": "« 3D » entre au flash f292 à ≈ 0,4× en tournant, puis pivote lentement en Y (≈ ±20°) : ≈ 10 copies violettes décalées vers la gauche simulent une extrusion d'≈ 8 % de la largeur des lettres, face avant texturée par la basket générée. Index « 04 1,000+ models. one API. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f350.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans le glyphe 3D puis noir violet",
+      "name_en": "zoom-through into the glyph",
+      "t": "0:05.72-0:05.87",
+      "frames": "f343-f352",
+      "fps": 60,
+      "mechanics": "« 3D » occupe 50 % de la largeur à f341, puis 52, 57, 62, 71, 88 % et déborde le cadre à f347 (pas de +2 à +17 % par image : accélération, ease-in), très gros plan sur la texture à f349, avec flou radial et traînées horizontales ; coupe f350 sur le temps (barre 350,8) vers un cadre vide #101020 à halo violet #301060 au centre (2 im), d'où surgissent les cartes du mur.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f350.jpg",
+      "illus": {"from": 340, "to": 358, "n": 8}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Mur d'images générées en perspective",
+      "name_en": "perspective image wall",
+      "t": "0:05.85-0:07.08",
+      "frames": "f351-f425",
+      "fps": 60,
+      "mechanics": "12 cartes (grille 4 × 3, gouttière ≈ 1 %) volent depuis des profondeurs différentes avec flou de mouvement, décalage ≈ 1 à 2 im, et se posent sur un plan incliné (rotateX ≈ 35°, rotateZ ≈ −12°) entre f352 et f364. Titre « every frame, generated. » (italique serif blanche + grotesque grasse lavande, ≈ 4 % de la hauteur) en haut à gauche dès f365, sur un demi-temps (365,4).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f350.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant dans une carte du mur",
+      "name_en": "push into a card",
+      "t": "0:07.08-0:07.53",
+      "frames": "f425-f452",
+      "fps": 60,
+      "mechanics": "La caméra avance dans la carte de la danseuse : la carte passe d'≈ 25 % à 100 % du cadre en ≈ 16 im (ease-in-out), les autres cartes se floutent (flou de profondeur, f434-f440), l'image pleine est floue à f442 puis devient nette f444-f452. Pic de vitesse f436-f438 sur le temps (barre 438,0).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet glitch qui range l'image en panneau droit",
+      "name_en": "glitch slide into split screen",
+      "t": "0:07.77-0:07.97",
+      "frames": "f466-f478",
+      "fps": 60,
+      "mechanics": "Un « 0 » apparaît à gauche (f466) ; l'image plein cadre glisse vers la droite avec des bandes horizontales décalées (glitch, f468-f470) et se pose en panneau sur 60-100 % de la largeur, bord gauche marqué d'un filet violet de 2 px, en ≈ 12 im. Coupe détectée f468 sur le temps (barre 467,1).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur 0 → 1,000+ en ease-out avec chiffres qui roulent",
+      "name_en": "rolling ease-out counter",
+      "t": "0:07.93-0:08.73",
+      "frames": "f476-f524",
+      "fps": 60,
+      "mechanics": "Valeurs relevées : 149 (f478), 363 (f480), 523, 624, 700, 758, 812, 853, 887, 916, 937, 959, 965, 975, 982, 986, 991 (f510), 994, 996, 997, 998, 999 (f520-f522), puis « 1,000+ » à f524 sur le temps (barre 525,2). Pas de +214 puis de +1 par 2 im : ease-out exponentiel en ≈ 48 im (0,8 s). Chaque chiffre roule verticalement avec flou (fantôme du chiffre suivant). Chiffres serif blancs ≈ 20 % de la hauteur ; « production-ready models » en grotesque grasse, puis « IMAGE · VIDEO · AUDIO · 3D » tapé lettre à lettre en lavande (f502-f526).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-02.jpg",
+      "illus": {"from": 476, "to": 526, "n": 8}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "10x qui entre en traînée d'échos",
+      "name_en": "echo streak entrance",
+      "t": "0:09.70-0:09.97",
+      "frames": "f582-f598",
+      "fps": 60,
+      "mechanics": "Sur le flash f582 (barre 583,3), « 10x » en grotesque black italic blanc #F0E8F8 (≈ 30 % de la hauteur, tiers gauche haut) arrive de la droite suivi de 5-6 copies fantômes et d'une traînée lavande, posé en ≈ 8 im (ease-out, f590) ; lignes de vitesse horizontales sur une voiture néon ; « up to 10x faster inference » en fondu f594-f598. Efficace mais générique (visuel vitesse = voiture).",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f582.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Brouillage de chiffres façon décodage",
+      "name_en": "digit scramble decode",
+      "t": "0:10.67-0:11.62",
+      "frames": "f640-f697",
+      "fps": 60,
+      "mechanics": "Sur le flash f640 (barre 641,4), des chiffres aléatoires changent à chaque image dans une police pixel blanche (≈ 20 % de la hauteur), découpés en bandes glitch horizontales, virgules violettes décalées ; convergence f655-f690 vers un « 1,500,000 » dont les zéros se lisent « U » (« 1,5UU,UUU »). « developers build on fal » apparaît f657-f660. Portrait généré assombri en fond.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f640.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Démo prompt → Generate → révélation en mosaïque",
+      "name_en": "prompt-to-image UI demo",
+      "t": "0:11.63-0:12.63",
+      "frames": "f698-f758",
+      "fps": 60,
+      "mechanics": "Titre « prompt in. pixels out. » en fondu (f700-f704). Carte de prompt à gauche (≈ 25 % de la largeur, contour lavande 1 px, coins arrondis) : « neon koi in liquid mercury » frappé à ≈ 1,2 caractère par image (f700-f722). Curseur blanc qui monte vers le bouton en ease-out (f698-f720), clic f728-f732 sur le temps (barre 728,6) avec onde sur le bouton violet #5000B8, filet de progression qui se remplit (f734-f746), image révélée tuile par tuile dans une grille ≈ 12 × 8 à droite (f736-f748), puis l'aperçu zoome au plein cadre en ≈ 4 im (f754-f758, coupe sur la barre 757,6).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 716, "to": 758, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Iris-logo : le logo rétrécit en cadrant l'image par son trou",
+      "name_en": "logo-hole iris",
+      "t": "0:12.85-0:13.08",
+      "frames": "f771-f785",
+      "fps": 60,
+      "mechanics": "Le logo fal (violet #5000B8) apparaît géant autour du cadre, son trou circulaire cadrant le koi (f771-f776, départ sur le demi-temps 772,2), puis rétrécit en ≈ 5 im : largeur de la forme 100 % (f777), 77, 62, 38, puis 16 % de la largeur (f781), soit ≈ 28 % de la hauteur, centré ; arrêt sec, 3-4 copies fantômes à 30-60 % d'opacité légèrement tournées qui rattrapent la forme. Le blanc #FFFFFF passe de 5 % (f776) à 91 % du cadre (f781) ; le koi reste dans le trou jusqu'à f782 puis s'efface (f783-f785), sur le temps (barre 786,7) et sur un accent musical vers 13,0 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f777.jpg",
+      "illus": {"from": 768, "to": 786, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo qui oscille en ressort après l'atterrissage",
+      "name_en": "spring wobble on the logo",
+      "t": "0:13.10-0:14.00",
+      "frames": "f786-f840",
+      "fps": 60,
+      "mechanics": "Après la pose, le logo (≈ 28 % de la hauteur, centré) oscille en rotation (≈ ±10 à 15°) avec un léger dédoublement flou, amplitude décroissante (ressort amorti) jusqu'à l'arrêt vers f840 : sa boîte englobante varie de 25 à 30 % de la hauteur pendant f790-f797.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f777.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slogan mot à mot qui monte en rotation",
+      "name_en": "word-by-word rising tagline",
+      "t": "0:13.47-0:14.33",
+      "frames": "f808-f860",
+      "fps": 60,
+      "mechanics": "« Generative media platform for developers. » : chaque mot monte d'≈ 2 % de la hauteur en se redressant d'≈ −5° à 0°, un mot toutes les ≈ 6-7 im (grille de doubles croches : 808,5 / 815,8 / 823,1 / 830,3) ; grotesque grasse #180830 ≈ 4 % de la hauteur, ligne de 72 % de la largeur centrée à ≈ 75 % de la hauteur ; « fal.ai » en mono violet ≈ 1,5 % en fondu f840-f860.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc promo : prompt, rafale, quatre médias, preuves chiffrées, démo, logo",
+      "name_en": "SaaS promo arc",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "0-2 s : prompt tapé et rafale (accroche). 2-5,8 s : IMAGE, VIDEO, AUDIO, 3D, 2 temps chacun, avec le modèle cité. 5,8-7,8 s : « every frame, generated. ». 7,8-11,6 s : trois preuves (1,000+ modèles, 10x plus rapide, 1,5 M développeurs). 11,6-12,8 s : démo « prompt in. pixels out. ». 12,8-15 s : iris-logo et slogan. Le showreel demandé devient une pub où chaque technique sert un argument.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Images générées via l'API comme matière, étalonnées en violet",
+      "name_en": "API-generated imagery graded to brand",
+      "t": "0:01.07-0:12.83",
+      "frames": "f64-f770",
+      "fps": 60,
+      "mechanics": "Toutes les images (planète, voiture, portraits, immeuble, basket éclatée, dunes, koi, feuille, méduse, danseuse) sont générées et partagent le même étalonnage : noirs profonds, peaux et matières désaturées, reflets violets. Elles servent de remplissage de lettres, de cartes du mur, de fonds assombris derrière les chiffres. Le produit est démontré par sa propre production.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette violette monochrome, bascule finale au blanc",
+      "name_en": "monochrome purple with white sign-off",
+      "t": "0:00.00-0:15.00",
+      "frames": "f0-f899",
+      "fps": 60,
+      "mechanics": "Fonds #101020 et #080808, halo #301060, accents lavande #A080F0, violet de marque #5000B8 (logo, bouton), textes #F0E8F8. La carte finale bascule au blanc #FFFFFF avec logo violet et texte #180830 : le changement de luminosité signe la fin.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Accroches en paire italique serif + grotesque grasse lavande",
+      "name_en": "italic serif + bold sans headline pair",
+      "t": "0:06.08-0:12.60",
+      "frames": "f365-f756",
+      "fps": 60,
+      "mechanics": "« every frame, generated. » et « prompt in. pixels out. » : la mise en situation en serif italique blanche, la chute en grotesque grasse lavande #A080F0, ≈ 4 % de la hauteur, en haut à gauche. Le contraste de familles porte le contraste de sens.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Index numérotés et identifiants de modèle sous chaque mot",
+      "name_en": "numbered model labels",
+      "t": "0:02.10-0:05.72",
+      "frames": "f126-f343",
+      "fps": 60,
+      "mechanics": "Sous chaque mot-masque : filet violet de 1 px sur ≈ 70 % de la largeur, numéro « 01 » à « 04 » en sans condensée fine lavande (≈ 4 % de la hauteur), identifiant du modèle en mono (≈ 1,5 %) : fal-ai/flux-2-pro, minimax/h3-max-turbo, elevenlabs/music, « 1,000+ models. one API. ». Donne un air de catalogue technique crédible.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond sombre à halo violet radial et trame de points",
+      "name_en": "radial glow and halftone dot background",
+      "t": "0:00.00-0:12.60",
+      "frames": "f0-f756",
+      "fps": 60,
+      "mechanics": "Fond #101020 avec halo radial #301060 (bas gauche dans l'intro, centre au début du mur et de l'UI) ; trame de points en demi-teinte à droite dans l'intro ; derrière les mots-masques, copie de l'image à ≈ 10 % d'opacité. Profondeur sans bruit visuel.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-cut-f350.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens immobiles sur les chiffres",
+      "name_en": "static holds on stats",
+      "t": "0:08.73-0:11.62 et 0:13.92-0:15.00",
+      "frames": "f524-f581, f598-f639, f660-f697, f835-f899",
+      "fps": 60,
+      "mechanics": "« 1,000+ » immobile ≈ 57 im (0,95 s), « 10x » ≈ 41 im (0,7 s), « 1,5 M » ≈ 37 im (0,6 s), carte finale 64 im (1,08 s) : aucun élément ne pulse sur le kick ni ne dérive. Lisibles, mais temps morts au regard de la règle « quelque chose bouge toutes les 0,5 à 1 s ». À animer d'une micro-pulsation sur le temps ou d'une poussée lente.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f582.jpg, microM-005-cut-f640.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flous de mouvement et traînées d'échos",
+      "name_en": "motion blur and echo trails",
+      "t": "0:02.92-0:13.08",
+      "frames": "f175-f785",
+      "fps": 60,
+      "mechanics": "Traînée horizontale sur le whip IMAGE → VIDEO (≈ 40 % de la largeur), flou radial sur la plongée dans le 3D, flou de profondeur sur le mur, 5-6 copies fantômes derrière 10x, 3-4 échos violets derrière le logo qui rétrécit. Le flou est réservé aux gestes rapides ; les plans posés restent nets.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f178.jpg, microM-003-cut-f350.jpg, microM-006-move-f777.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« for @fal » et « Use the fal API » ont transformé le showreel en promo produit : Claude a généré images, vidéos et probablement la musique via fal, et cite les modèles à l'écran (flux-2-pro, minimax, elevenlabs/music)."},
+    {"kind": "direction", "insight": "« shows what an incredible motion designer you are » a été lu comme une démonstration de techniques (typo-masque, extrusion, mur 3D, iris-logo) mises au service des arguments de la marque."},
+    {"kind": "structure", "insight": "Les 15 s ont été découpées en cartes de 2 temps à 124 BPM : une affirmation produit toutes les 0,97 s, plus une rafale à la double croche pour l'accroche."},
+    {"kind": "build", "insight": "Coupes à ±1,6 im des temps et dérive de 1,3 im en 12 s : timeline écrite en durées fixes (58 im = 2 temps) sur une musique au même tempo, probablement générée avec ce BPM."},
+    {"kind": "qa", "insight": "Aucune règle de lisibilité : le compteur sort en « 1,5UU,UUU » à cause de la police pixel et les images de la rafale restent 0,12 s ; une relecture image par image l'aurait signalé."},
+    {"kind": "other", "insight": "Sans charte fournie, Claude a repris le violet de fal et l'a appliqué partout, jusqu'à l'étalonnage des images générées : c'est ce qui tient l'ensemble malgré 7 à 8 polices."}
+  ],
+  "steal": [
+    "Découpe la promo en cartes d'exactement 2 temps (58 images à 124 BPM, 60 fps) : une affirmation produit par carte, coupe sur le temps.",
+    "Accroche : rafale d'images coupées à la double croche (≈ 7 images à 124 BPM), puis la dernière se resserre dans les lettres du mot-clé.",
+    "Remplis chaque mot de son médium : photo dans IMAGE, vidéo dans VIDEO, lettres en VU-mètre pour AUDIO, extrusion pour 3D.",
+    "Signe avec un iris-logo : le logo géant cadre la dernière image par son trou, rétrécit à sa taille finale sur blanc avec échos, puis oscille en ressort.",
+    "Démo produit en 1 s : prompt tapé, clic sur le temps, image révélée tuile par tuile, puis l'aperçu zoome au plein cadre."
+  ],
+  "flaws": [
+    "Le même flash gris revient sur cinq coupes : accent répété qui s'use et uniformise les transitions.",
+    "Police pixel du compteur : « 1,500,000 » se lit « 1,5UU,UUU », le chiffre clé devient illisible.",
+    "7 à 8 familles typographiques en 15 s (mono, condensée, serif, italique, black italic, pixel, grotesques) : le système typo se disperse.",
+    "Maintiens immobiles de 0,6 à 1 s sur 1,000+, 10x et 1,5 M : rien ne pulse sur le kick, temps morts au sens 1600.",
+    "Images de la rafale à 0,12 s chacune : texture d'énergie, mais aucun visuel généré n'est lisible."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, à 60 fps natifs : modèle de promo SaaS bâtie sur une grille de 2 temps et de doubles croches, avec des transitions motivées réutilisables (barre de progression qui s'ouvre, plongée dans le glyphe, push dans une carte, iris-logo) et un compteur ease-out mesurable."
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "gigabit-million-16b3a0",
+  "title": "Steam new releases news recap",
+  "handle": "@gigabit_million",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Infographie de type journal télévisé très propre : une couleur par jeu, une mini-scène illustrée sur mesure par fiche, entrées calées au temps ; mais même gabarit répété six fois et texte petit.",
+  "summary": "Récap d'actualité en japonais des 6 jeux Steam sortis les 25-26 septembre. Titre d'ouverture, puis 6 fiches de 8 s au gabarit identique (infos à gauche, mini-scène animée à droite dans un cadre ATH (HUD)), puis grille récapitulative. Force : système couleur par jeu, illustrations qui racontent la mécanique de jeu, découpage exact en mesures à 120 BPM. Faiblesse : répétitif, mouvements simples, 3,5 s de lecture figée par fiche.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne en japonais : présenter les jeux sortis sur Steam les 25-26 septembre, du point de vue d'un joueur, en montrant ce qui rend chacun intéressant, lisible, environ 60 s de motion graphics.",
+    "Claude a tout décidé : 6 jeux, fiche type avec prix, avis, joueurs simultanés, section « ここが面白そう! » à 3 puces, couleur d'accent par jeu, mini-scène illustrée, transition diagonale, bande-son 120 BPM, grille finale avec recommandation.",
+    "« Point de vue joueur » s'est traduit en une case de gabarit (3 puces). Il aurait fallu préciser le format (vertical réseau social ?), la taille de texte minimale, la variété de mise en page et vérifier les données affichées."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B1424", "role": "fond bleu nuit"},
+      {"hex": "#13233A", "role": "halo radial et cartes"},
+      {"hex": "#F2F2F0", "role": "titres et texte principal"},
+      {"hex": "#8A96A8", "role": "texte secondaire, métadonnées mono"},
+      {"hex": "#4FA3E0", "role": "accent ouverture, Scapewatch et récap"},
+      {"hex": "#F07A3A", "role": "accent jeu 01 I Know a Guy"},
+      {"hex": "#9B6BE8", "role": "accent jeu 03 Lucid Cats"},
+      {"hex": "#F2A93B", "role": "accent jeu 04 Wild West Pioneers"},
+      {"hex": "#6CC04A", "role": "accent jeu 05 DinoBones"},
+      {"hex": "#E8609A", "role": "accent jeu 06 Museologist"},
+      {"hex": "#7BD88F", "role": "badge de remise vert"}
+    ],
+    "type": "Titres latins en grotesque géométrique gras (Space Grotesk probable) ≈ 7-8 % de la hauteur ; japonais en Noto Sans JP gras ≈ 3,5 % ; métadonnées en mono capitales espacées ≈ 1,2 % ; puces ≈ 2 %.",
+    "texture": "Fond bleu nuit avec halo radial teinté de la couleur du jeu, fine grille de points, chiffre géant en contour (« 01 ») à ≈ 5 % d'opacité derrière la colonne, crochets d'angle ATH, aucun grain ni flou de mouvement.",
+    "style": "infographie broadcast ATH sombre",
+    "coherence": "Le système tient par une seule règle : une couleur d'accent par jeu, reprise partout (pastille de genre, numéros de puces, crochets du cadre, halo du fond, filet de la transition, carte du récap). La grille de mise en page est strictement identique d'une fiche à l'autre, ce qui rend la lecture immédiate mais monotone."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Pulsation très nette (120 BPM, netteté 9,74, grille à 0,515 s + 0,5 s × n, donc temps sur les x,0 s et x,5 s à 15 ms près). Structure en mesures : ouverture 4 s (2 mesures), 6 fiches de 8 s exactement (16 temps = 4 mesures chacune), récap 8 s. Les 7 transitions ont leur filet au centre du cadre pile sur l'image du temps (f241, f721, f1201, f1681, f2161, f2641, f3121, barre bleue à +0). Dans chaque fiche, une entrée par temps ou par 2 temps : sous-titre à +1 s, ligne de stats à +1,5 s, étiquette « ここが面白そう! » à +2 s, puces à +2,5 / +3,5 / +4,5 s (f391 pour la première, temps à 6,515 s). Ensuite ≈ 3 s sans nouvelle entrée (de ≈ 9 s à 12 s pour la fiche 1) : seules les mini-scènes continuent (barres qui se remplissent, compteurs, yeux dans le tunnel). Fin : récap figé de 55,0 s à 59,3 s puis fondu au noir. Aucune coupe franche : tout passe par la transition diagonale.",
+    "timeline": [
+      {"t": "0:00-0:00.52", "what": "Fond bleu nuit, pastille « NEW RELEASES », titre « Steam新作ピックアップ » qui monte depuis sa ligne de base", "technique": "montée masquée, atterrissage sur le premier temps (f31)"},
+      {"t": "0:00.52-0:02.6", "what": "Date en bleu, accroche, 6 pastilles numérotées 01-06 aux couleurs des jeux, ligne des genres, « 9.25-26 » géant en contour derrière", "technique": "décalage de 6-7 im entre pastilles, sommaire chromatique"},
+      {"t": "0:02.6-0:03.9", "what": "Écran titre complet tenu", "technique": "maintien de lecture"},
+      {"t": "0:03.9-0:04.25", "what": "Bande sombre + filet orange balaient le cadre en diagonale, l'ancien écran s'éteint", "technique": "transition « slash » diagonale centrée sur le temps"},
+      {"t": "0:04.25-0:06.0", "what": "Fiche 01 I Know a Guy : titre monté, sous-titre mono, accroche japonaise surlignée, ligne de stats, panneau pizzeria/arrière-boutique", "technique": "entrées une par temps"},
+      {"t": "0:06.0-0:09.0", "what": "« ここが面白そう! » puis 3 puces numérotées, barres de réputation qui se remplissent dans le panneau", "technique": "puces toutes les 2 temps avec flash d'accent"},
+      {"t": "0:09.0-0:12.0", "what": "Fiche complète, seules les barres et étiquettes du panneau bougent", "technique": "maintien de lecture animé à la marge"},
+      {"t": "0:12.0-0:20.0", "what": "Fiche 02 Scapewatch (bleu) : grille de 30 compétences dont les niveaux montent, raid et difficulté", "technique": "même gabarit, compteurs qui tournent"},
+      {"t": "0:20.0-0:28.0", "what": "Fiche 03 Lucid Cats (violet) : couloir filaire en perspective, yeux rouges, 4 chats dont l'actif est entouré, jauge « ノルマ » 13 % → 92 %", "technique": "tunnel filaire, jauge de progression"},
+      {"t": "0:28.0-0:36.0", "what": "Fiche 04 Wild West Pioneers (ambre) : chaîne bois → outils → luxe un icône par temps, ville du Far West qui se construit au coucher du soleil", "technique": "chaîne de production pas à pas"},
+      {"t": "0:36.0-0:44.0", "what": "Fiche 05 DinoBones (vert) : les os volent du tas au squelette en 2 s, chaque os s'allume en vert puis passe crème", "technique": "assemblage d'objet par trajectoires"},
+      {"t": "0:44.0-0:52.0", "what": "Fiche 06 Museologist (rose) : tessons qui reconstituent une amphore, compteurs 2 371 → 3 513 tessons et 367 → 543 objets, jours qui se remplissent", "technique": "assemblage + compteur qui roule"},
+      {"t": "0:52.0-0:55.0", "what": "Récap : titre « まとめ » en fondu, grille 2 × 3 cartes colorées, bandeau de recommandation", "technique": "grille récapitulative en cascade"},
+      {"t": "0:55.0-0:59.3", "what": "Récap figé", "technique": "maintien de fin"},
+      {"t": "0:59.3-1:00.05", "what": "Fondu au noir", "technique": "fondu de sortie"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Gestes clés comptés à l'image près sur les planches : 7 transitions sur 7 avec le filet au centre exactement sur la barre bleue (+0 im) ; titre d'ouverture qui atterrit sur f31 (temps) ; première puce de la fiche 01 qui démarre en f391 (temps à 6,515 s, attaque audio forte à 6,513 s). Sur les planches overview, les 18 puces apparaissent toutes juste après un temps x,5 s (6,5/7,5/8,5 ; 14,5/15,5/16,5 ; 22,5/23,5/24,5…) et les attaques audio les plus fortes (5,515 ; 6,513 ; 7,512 ; 14,512 ; 21,513 ; 22,512 ; 23,51 ; 29,513 ; 37,512…) coïncident avec ces entrées. Au total ≈ 27 gestes clés sur 29 à ±2 im d'un temps ou demi-temps (hasard ≈ 33 %) ; seules les pastilles 01-06 de l'ouverture (décalage 6-7 im) et la montée du titre de fiche (départ f254, demi-temps à f256) sont hors grille stricte. L'indice automatique (atterrissages/temps R = 1,0, p = 2,5e-6) le confirme.",
+    "synced": ["departs", "apparitions", "texte", "flashs", "pulsations"],
+    "style_match": "Musique entraînante à pulsation nette 120 BPM, énergie moyenne et constante : colle au ton « journal joueur » et aux courbes douces ; aucun drop exploité, ni montée vers le récap.",
+    "how_built": "Synchro par construction : timeline découpée en demi-secondes (fiches de 8 s, entrées à x,0 et x,5 s) et bande-son à 120 BPM commençant à 0, donc chaque demi-seconde tombe sur un temps. Les attaques fortes aux instants des entrées suggèrent des effets sonores (clics, pops) placés sur chaque apparition, probablement générés en code. Le prompt ne parlait pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Balayage diagonal « slash » couleur du sujet suivant",
+      "name_en": "diagonal slash wipe",
+      "t": "0:03.88-0:04.15",
+      "frames": "f233-f249",
+      "fps": 60,
+      "mechanics": "Une bande sombre translucide (≈ 12 % de la largeur) suivie d'un filet lumineux (≈ 2 % de la largeur), inclinés d'environ 15° par rapport à la verticale, traversent le cadre de gauche à droite en ≈ 14 im (0,23 s), courbe ease-in-out (lent aux bords, rapide au centre). L'ancien écran s'assombrit de f233 à f240 (8 im) et disparaît avant que le filet n'atteigne le centre ; le filet passe au centre sur l'image du temps (f241). Le filet prend la couleur du jeu suivant (orange, bleu, violet, ambre, vert, rose, puis bleu pour le récap) et le halo du fond vire à cette couleur. Pas de flou de mouvement. Répété 7 fois à l'identique.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f241.jpg",
+      "illus": {"from": 233, "to": 250, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Fiches de 4 mesures, transition centrée sur le temps",
+      "name_en": "bar-length scenes, beat-centred wipes",
+      "t": "0:04.02 / 0:12.02 / … / 0:52.02",
+      "frames": "f241, f721, f1201, f1681, f2161, f2641, f3121",
+      "fps": 60,
+      "mechanics": "À 120 BPM, chaque fiche dure exactement 8 s = 16 temps = 4 mesures. Le centre de chaque balayage tombe sur l'image du temps (barre bleue à +0 im sur les 7 planches microscope). Le spectateur sent la pulsation de la structure sans la remarquer.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f721.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Puces sur un temps sur deux avec petit son",
+      "name_en": "bullets on every other beat with SFX",
+      "t": "0:06.52 / 0:07.52 / 0:08.52",
+      "frames": "f391, f451, f511",
+      "fps": 60,
+      "mechanics": "Dans chaque fiche, les 3 puces entrent à +2,5 s, +3,5 s et +4,5 s après la transition, soit un temps sur deux (1 s d'écart). Départ mesuré en f391 pour une attaque audio forte à 6,513 s (même image). Les attaques les plus fortes de la piste (6,513 ; 7,512 ; 14,512 ; 22,512 ; 23,51…) correspondent à ces entrées : un son court accompagne chaque apparition.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence d'entrée interne d'une fiche",
+      "name_en": "per-card reveal cadence",
+      "t": "0:04.00-0:09.00",
+      "frames": "f240-f540",
+      "fps": 60,
+      "mechanics": "Ordre fixe et chronométré : cadre ATH et pastilles +0,1 s, titre +0,25 s, sous-titre mono et accroche +1 s, ligne de stats +1,5 s (en cascade sur ≈ 0,5 s), étiquette « ここが面白そう! » +2 s, puces +2,5 / +3,5 / +4,5 s, puis ≈ 3 s de lecture où seule la mini-scène bouge. Une information nouvelle toutes les 0,5 à 1 s pendant 5 s.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui monte depuis sa ligne de base (masque)",
+      "name_en": "masked baseline rise",
+      "t": "0:04.23-0:04.37",
+      "frames": "f254-f262",
+      "fps": 60,
+      "mechanics": "Le titre latin (« I Know a Guy », « Scapewatch »…) sort d'un masque posé sur sa ligne de base : f254 seul le haut des lettres est visible, f257 moitié, f261 complet. ≈ 8 im (0,13 s), déplacement ≈ 100 % de la hauteur des capitales, ease-out. Même geste pour le titre d'ouverture (f23-f31, atterrissage sur le temps). Aucun dépassement.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f29.jpg",
+      "illus": {"from": 22, "to": 33, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puce qui s'étire puis flash d'accent qui retombe",
+      "name_en": "bullet card expand with accent flash",
+      "t": "0:06.52-0:07.40",
+      "frames": "f391-f444",
+      "fps": 60,
+      "mechanics": "La carte de puce (pleine largeur de colonne, ≈ 2,5 % de hauteur) s'étire depuis la gauche en ≈ 4-5 im (f391-f395) avec son numéro carré coloré ; le texte apparaît avec elle. Le fond de la carte passe en teinte d'accent vive (f396-f405) puis retombe vers une teinte sombre en ≈ 0,5 s. Le flash signale la nouveauté sans bouger le texte.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 389, "to": 408, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Fiche deux colonnes : infos à gauche, mini-scène cadrée à droite",
+      "name_en": "two-column news card",
+      "t": "0:04.00-0:52.00",
+      "mechanics": "Colonne gauche de ≈ 4 % à 46 % de la largeur, avec filet vertical d'accent à gauche : « GAME 01 / 06 » mono, 3 pastilles (genre en accent, type de sortie, date), titre, sous-titre (genre · studio), accroche japonaise surlignée, étiquette, 3 puces, ligne de 4 stats, ligne de source en bas. Colonne droite de ≈ 52 % à 96 %, ≈ 65 % de la hauteur, cadre à crochets d'angle. Bandeau supérieur : date « 2026.9.25-9.26 » et 6 tirets de progression.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Une couleur d'accent par sujet",
+      "name_en": "per-topic accent colour system",
+      "t": "0:00-1:00",
+      "mechanics": "6 teintes saturées sur un même fond bleu nuit : orange #F07A3A, bleu #4FA3E0, violet #9B6BE8, ambre #F2A93B, vert #6CC04A, rose #E8609A. Annoncées dès l'ouverture par les pastilles 01-06, reprises dans le filet de transition, le halo du fond, les crochets, les numéros de puces, la pastille de genre et les cartes du récap. Permet de reconnaître le jeu au premier coup d'œil.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Halo radial teinté et grand numéro en contour",
+      "name_en": "tinted radial glow with outlined numeral watermark",
+      "t": "0:04.00-0:52.00",
+      "mechanics": "Fond #0B1424 avec halo radial de ≈ 50 % du cadre teinté de l'accent du jeu, grille de points très discrète. Derrière la colonne gauche, le numéro du jeu (« 01 », « 02 »…) en contour seul, ≈ 25 % de la hauteur, ≈ 5 % d'opacité. À l'ouverture, « 9.25-26 » géant en contour à droite. Fond statique : rien ne dérive.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Hiérarchie typo mono / grotesque / japonais surligné",
+      "name_en": "mono-grotesk-JP hierarchy",
+      "t": "0:04.25-0:06.00",
+      "mechanics": "Trois voix : mono capitales espacées gris #8A96A8 pour les métadonnées (≈ 1,2 % de hauteur) ; grotesque gras blanc pour le titre latin (≈ 7-8 %) ; japonais gras blanc pour l'accroche (≈ 3,5 %) avec un trait d'accent sous la fin de la ligne. Puces en japonais gras ≈ 2 % : trop petit pour un écran de téléphone.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Ligne de stats en pastilles",
+      "name_en": "stat chip row",
+      "t": "0:05.50-0:06.00",
+      "frames": "f330-f360",
+      "fps": 60,
+      "mechanics": "4 pastilles sombres en ligne sous les puces : prix (« ¥1,275 » + badge vert de remise), japonais (対応/非対応), avis (« 非常に好評 89 % » en bleu), joueurs simultanés (« 1,311人 »). Entrée en cascade gauche → droite en ≈ 0,5 s. Fonctionne comme la fiche technique d'un magazine.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Mini-scène double face : pizzeria / arrière-boutique",
+      "name_en": "split front/back illustration",
+      "t": "0:04.20-0:12.00",
+      "mechanics": "Panneau coupé en deux : « 表の顔 » (devanture rayée blanc/orange, pizza) et « 裏の顔 » (lampe qui projette un cône de lumière sur une mallette « $ »). Étiquettes qui surgissent dans la partie sombre, 3 barres (réputation, confiance du milieu, attention de la police) qui se remplissent avec niveau « Lv », 4 pions colorés pour le coop. Illustration plate, aplats, sans contour.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Grille de compétences dont les niveaux montent",
+      "name_en": "ticking skill grid",
+      "t": "0:12.40-0:20.00",
+      "mechanics": "Grille 5 × 6 de 30 compétences (nom + niveau + mini-barre). Les nombres augmentent en continu et une case s'encadre quand elle monte, pour montrer le jeu inactif (idle) qui progresse seul ; pastille « オフラインでも進行中 ». Ligne « RAID » de 5 points et losanges de difficulté qui se remplissent.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Couloir filaire en perspective avec yeux",
+      "name_en": "wireframe corridor",
+      "t": "0:20.40-0:28.00",
+      "mechanics": "Rectangles concentriques violets en perspective centrale formant un couloir, porte vert pâle au fond, paires d'yeux rouges qui apparaissent sur les côtés. Dessous, 4 têtes de chat pastel, l'active entourée d'un anneau qui passe de chat en chat ; jauge « ノルマ » qui monte de 13 % à 92 % en ≈ 5 s. Ambiance horreur douce par la seule géométrie.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Chaîne de production révélée un maillon par temps",
+      "name_en": "step-by-step production chain",
+      "t": "0:28.40-0:30.00",
+      "mechanics": "Trois pastilles rondes (bois, outil, diamant) reliées par des pointillés apparaissent à 28,5 / 29,0 / 29,5 s, une par temps. En dessous, un paysage de désert au couchant se construit : saloon, maisons éclairées, cactus, puis épingles « 保安官 » / « 行商人 » qui tombent à ≈ 30,5 s.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Squelette qui se reconstitue os par os",
+      "name_en": "bone-by-bone skeleton assembly",
+      "t": "0:36.45-0:38.50",
+      "frames": "f2188-f2310",
+      "fps": 60,
+      "mechanics": "Les os partent d'un tas gris en bas du panneau et volent sur des trajectoires courbes jusqu'à leur place : d'abord les vertèbres de la queue au cou (36,5-37,9 s), puis côtes et pattes (38,0-38,3 s), le crâne en dernier (≈ 38,27 s). Chaque os arrive en vert vif puis passe au crème en ≈ 0,3 s : la trace verte montre l'avancée. ≈ 2 s pour tout le squelette ; légende « 約2,000本の骨・9体の恐竜 » à la fin.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 2188, "to": 2310, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Tessons qui reforment une amphore + compteur qui roule",
+      "name_en": "shard reassembly with rolling counter",
+      "t": "0:44.50-0:47.00",
+      "frames": "f2670-f2820",
+      "fps": 60,
+      "mechanics": "Tessons orange en tas, puis contour pointillé de l'amphore (45,0 s), les tessons remontent en place en ≈ 1 s ; deux compteurs sous l'objet roulent en ease-out : 2 371 → 3 328 → 3 512 → 3 513 tessons, 367 → 514 → 543 objets exposés (rose). Une rangée « DAY » de 7 carrés se remplit au fil de la fiche, étincelles autour du vase terminé.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sommaire en pastilles colorées décalées",
+      "name_en": "staggered colour-coded index chips",
+      "t": "0:01.63-0:02.20",
+      "frames": "f98-f132",
+      "fps": 60,
+      "mechanics": "6 pastilles 01-06 (contour et chiffre dans la couleur de chaque jeu) apparaissent de gauche à droite, une toutes les 6-7 im (≈ 0,11 s), en fondu avec très léger glissement. Elles annoncent le nombre de sujets et leur code couleur avant la première fiche.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Indicateur de progression en tirets",
+      "name_en": "segmented progress indicator",
+      "t": "0:04.00-0:52.00",
+      "mechanics": "En haut à droite, 6 tirets courts (≈ 2 % de largeur chacun) ; celui du jeu en cours prend l'accent. Avec « GAME 0X / 06 » en haut de colonne, le spectateur sait toujours où il en est.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure ouverture / 6 fiches / récap avec recommandation",
+      "name_en": "intro, cards, recap with recommendation",
+      "t": "0:00-1:00",
+      "mechanics": "4 s d'ouverture (titre, date, sommaire 01-06), 6 × 8 s de fiches identiques, 8 s de récap : grille 2 × 3 de cartes (numéro coloré, titre, pitch d'une ligne, avis), bandeau « 友だちとワイワイなら… 黙々派は… » qui oriente le choix selon le profil de joueur, ligne de sources. Le récap tranche (« pour qui ») : vrai point de vue joueur.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Grille récap en cascade",
+      "name_en": "staggered recap grid",
+      "t": "0:52.10-0:55.00",
+      "frames": "f3127-f3300",
+      "fps": 60,
+      "mechanics": "Titre « まとめ » en fondu seul (f3127-f3137, ≈ 10 im, sans déplacement), puis cartes en cascade de 52,6 à 53,5 s (paires gauche/droite, ≈ 0,15 s d'écart), bandeau de recommandation à ≈ 54,4 s, note de bas à 55,0 s. Ensuite 4,3 s figées.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f3121.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu au noir final",
+      "name_en": "fade to black",
+      "t": "0:59.30-1:00.05",
+      "frames": "f3558-f3603",
+      "fps": 60,
+      "mechanics": "Tout le récap s'éteint en ≈ 0,7 s, linéaire, jusqu'au noir complet en f3599. Pas de logo ni d'appel à l'action.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre ATH à crochets d'angle",
+      "name_en": "HUD corner-bracket frame",
+      "t": "0:04.05-0:04.20",
+      "frames": "f244-f252",
+      "fps": 60,
+      "mechanics": "Le panneau droit est délimité par 4 crochets d'angle couleur d'accent et un fin contour intérieur ; ils apparaissent en fondu en ≈ 8 im juste après le passage du filet, avant tout contenu, puis le contenu du panneau monte en opacité (f253+).",
+      "verdict": "adapter"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne que la période (25-26 septembre). Les 6 jeux, prix, pourcentages d'avis et joueurs simultanés ont été soit cherchés en ligne (le pied de page cite « Steamストア・公式ニュース, 数値は9/27時点 »), soit inventés : rien dans la vidéo ne permet de le vérifier. Pour une vraie actu, il faut fournir les données."},
+    {"kind": "direction", "insight": "« ゲーマーの目線で面白そうなポイント » devient littéralement une case du gabarit : l'étiquette « ここが面白そう! » + 3 puces. Le récap pousse plus loin avec une recommandation par profil de joueur."},
+    {"kind": "direction", "insight": "« 見やすい » (lisible) a produit un fond sombre à fort contraste, une grille fixe et une couleur par jeu, mais pas de taille minimale de texte : les puces font ≈ 2 % de la hauteur."},
+    {"kind": "structure", "insight": "« 約60秒 » a été pris au mot : 60,05 s exactement, 4 + 6 × 8 + 8 s. Le découpage en multiples de 0,5 s rend la synchro musicale automatique à 120 BPM."},
+    {"kind": "build", "insight": "Aucune musique demandée, pourtant la vidéo a une piste à 120 BPM et des sons sur les entrées : Claude a probablement généré la bande-son en code et l'a calée sur sa propre timeline."},
+    {"kind": "other", "insight": "Sans consigne de style, le modèle choisit l'esthétique « tableau de bord ATH sombre » typique des vidéos IA ; l'invention vient surtout des mini-scènes, propres à chaque jeu."}
+  ],
+  "steal": [
+    "Découper 60 s en 4 + 6 × 8 + 8 s : à 120 BPM, chaque fiche fait 4 mesures et chaque entrée tombe sur un temps entier ou un demi-temps.",
+    "Une couleur d'accent par sujet, annoncée dans le sommaire puis reprise dans pastille, puces, cadre, halo de fond et filet de transition.",
+    "Transition « slash » : bande sombre + filet couleur du sujet suivant, 14 im en ease-in-out, centre du filet sur le temps.",
+    "Chaque fiche porte une mini-scène qui raconte la mécanique du produit (os qui volent en squelette, tessons → vase + compteur).",
+    "Puce qui s'étire en 4-5 im, flash d'accent qui retombe en 0,5 s, un petit son, une puce tous les 2 temps."
+  ],
+  "flaws": [
+    "Même gabarit et même transition 7 fois : aucune variation de rythme, de cadrage ni de surprise.",
+    "Puces japonaises à ≈ 2 % de la hauteur : illisibles sur téléphone pour un format d'actu réseau social.",
+    "≈ 3 s sans nouvelle entrée en fin de chaque fiche et 4,3 s de récap figé avant le fondu.",
+    "Aucune caméra ni typographie cinétique : uniquement fondus, montées masquées et glissements.",
+    "Chiffres (prix, avis, joueurs) invérifiables, peut-être inventés."
+  ],
+  "deep_study": {"worth": false, "why": "Les mouvements sont simples et entièrement lisibles sur les planches (fondus, montées masquées, balayage). L'intérêt est structurel (découpage en mesures, système couleur, mini-scènes), déjà mesuré ; seule la séquence du squelette (36,4-38,5 s) mériterait un passage image par image."}
+}

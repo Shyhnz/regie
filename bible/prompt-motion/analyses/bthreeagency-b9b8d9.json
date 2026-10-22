@@ -1,0 +1,288 @@
+{
+  "slug": "bthreeagency-b9b8d9",
+  "title": "Badge unlock screen animation",
+  "handle": "@BThreeAgency",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Déblocage bien chorégraphié (chemin tracé, lever de soleil, onde, éclats, titre) sur un design Figma soigné, sans rebond comme demandé ; mais étoiles dorées génériques, inclinaison 3D peu visible, célébration rejouée à l'identique.",
+  "summary": "Écran iPhone de déblocage de badge, enregistré depuis un prototype interactif. En 1,4 s, le badge hexagonal se construit : une route dorée se trace, un soleil se lève, puis une double onde et une gerbe d'étoiles annoncent « Early Explorer ». Les étoiles retombent à travers l'interface, puis le curseur fait pencher le badge et relance la fête au clic, avec des zooms d'enregistrement. Premium, mais d'un festif convenu.",
+  "prompt_vs_result": [
+    "Reproduire exactement une maquette Figma (assets, lumière, typo, mise en page) et n'ajouter que le mouvement : badge premium et festif, scène puis particules dorées, objet 3D qui penche vers le curseur selon la physique, rapide, fluide, sans rebond.",
+    "Claude a choisi l'ordre du déblocage (route tracée, soleil levant, éclair, double anneau, gerbe d'étoiles, titre en fondu), la pluie d'étoiles sur l'interface et la relance au clic. Zooms et curseur viennent probablement de l'outil d'enregistrement.",
+    "« N'ajoute que le mouvement » et « pas de rebond » sont bien tenus : design intact, aucune courbe à dépassement. Sans durées ni forme de particules imposées, Claude retombe sur les étoiles dorées standard ; l'angle d'inclinaison maximal n'était pas fixé."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#E9E8ED", "role": "fond de présentation gris perle"},
+      {"hex": "#324078", "role": "halo bleu en haut de l'écran"},
+      {"hex": "#202D53", "role": "dégradé bleu nuit"},
+      {"hex": "#000000", "role": "bas de l'écran, cartes"},
+      {"hex": "#0E1A40", "role": "mer marine dans le badge"},
+      {"hex": "#C9B07A", "role": "or du contour hexagonal et de la route"},
+      {"hex": "#F3DDA3", "role": "soleil, cœur lumineux"},
+      {"hex": "#E8C46A", "role": "étoiles et anneaux d'onde"},
+      {"hex": "#FFFFFF", "role": "titre"},
+      {"hex": "#8A8D99", "role": "sur-titre et sous-titre gris"}
+    ],
+    "type": "Sans serif système iOS (SF Pro probable) : « Early Explorer » semi-gras ≈ 2,2 % de la hauteur, sur-titre ≈ 0,9 % gris, sous-titre ≈ 1 % gris ; titre de barre « Badges » semi-gras blanc ; interlettrage neutre.",
+    "texture": "Halo bleu diffus en haut de l'écran, rayons de lumière derrière le soleil, glow doré sur le contour au moment de l'éclair, socle sombre avec reflet de bord, ombre douce sous le téléphone ; flou de mouvement uniquement pendant les zooms d'enregistrement.",
+    "style": "Interface iOS premium nuit et or",
+    "coherence": "Tout tient dans un duo nuit/or : le badge, le socle, les anneaux, les étoiles et le halo partagent la même lumière dorée sur bleu nuit, et les micro-badges de la liste « Territory » reprennent le même dessin. Le seul élément étranger est le gros curseur jaune stylisé de l'enregistrement, qui se confond avec l'or du badge."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Vidéo muette de 11,25 s à 60 fps (675 im), un seul plan d'enregistrement d'écran. Densité forte au début : route f36-f56 (0,33 s), soleil f58-f86 (0,47 s), éclair f86-f90, onde et étoiles f88-f118, titre f92-f104 ; soit 5 événements chaînés en 1,4 s, chacun démarrant quand le précédent finit (chevauchement 2-4 im). Puis 3 s de pluie d'étoiles (f120-f330) pendant que le curseur tourne autour du badge, un zoom ×1,9 (f348-f400), un clic (f372), un dézoom (f458-f505), un second clic (f554). L'indice automatique compte 70 % de maintiens statiques car les éléments sont petits ; en réalité seuls 0-0,6 s (badge vide) et 9,9-11,2 s (curseur seul, scintillements) sont de vrais temps calmes.",
+    "timeline": [
+      {"t": "0:00-0:00.6", "what": "Téléphone centré sur fond gris perle ; badge hexagonal vide (contour or, mer marine) sur un socle ; curseur jaune immobile à droite", "technique": "état initial verrouillé"},
+      {"t": "0:00.6-0:00.93", "what": "Une route dorée sinueuse se trace du bas du badge jusqu'à l'horizon (f36-f56)", "technique": "tracé de chemin"},
+      {"t": "0:00.97-0:01.43", "what": "Un soleil se lève derrière l'horizon, s'élargit et s'éclaire, rayons diffus (f58-f86)", "technique": "lever de soleil dans le badge"},
+      {"t": "0:01.43-0:01.5", "what": "Éclair : contour et halo de l'écran s'illuminent, un anneau apparaît autour du badge (f86-f90)", "technique": "éclair de validation"},
+      {"t": "0:01.5-0:02.0", "what": "Double anneau d'onde qui s'étend jusqu'à ≈ 2,2× la largeur du badge et s'efface ; gerbe d'étoiles dorées en couronne (f88-f118)", "technique": "onde de choc + gerbe de particules"},
+      {"t": "0:01.53-0:01.73", "what": "« New badge unlocked / Early Explorer / Seven walks before dawn. » en fondu avec montée de ≈ 1 % (f92-f104)", "technique": "titre en fondu montant"},
+      {"t": "0:02.0-0:05.5", "what": "Les étoiles retombent lentement à travers le titre et la liste jusqu'au bas de l'écran", "technique": "pluie de particules par gravité"},
+      {"t": "0:03.9-0:05.6", "what": "Le curseur fait le tour du badge, qui penche vers lui (bord côté curseur qui recule de ≈ 5 %)", "technique": "inclinaison 3D vers le curseur"},
+      {"t": "0:05.73-0:06.67", "what": "Le curseur devient une main ; l'enregistrement zoome ×1,9 sur le badge avec flou de mouvement (f344-f400)", "technique": "zoom automatique d'enregistrement"},
+      {"t": "0:06.2-0:07.6", "what": "Clic à f372 : éclair, double onde, étoiles qui scintillent puis montent vers la barre de titre", "technique": "relance de la célébration au clic"},
+      {"t": "0:07.63-0:08.42", "what": "Dézoom vers le cadrage d'origine (f458-f505), étoiles qui dérivent", "technique": "dézoom d'enregistrement"},
+      {"t": "0:09.23-0:09.83", "what": "Second clic à f554 : même onde (f554-f590) et étoiles", "technique": "relance au clic"},
+      {"t": "0:09.83-0:11.25", "what": "La main glisse sous le badge, étoiles résiduelles qui scintillent ; fin sans conclusion", "technique": "scintillement ambiant"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier : aucun comptage possible.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le déblocage en 1,4 s appellerait un effet sonore « chime » sur l'éclair (f86) et un scintillement sur l'onde.",
+    "how_built": "Le prompt ne parle pas de son, il s'agit d'une capture d'écran d'un prototype interactif."
+  },
+  "techniques": [
+    {
+      "cat": "shape",
+      "name_fr": "Tracé de la route du bas vers l'horizon",
+      "name_en": "Path draw-on reveal",
+      "t": "0:00.6-0:00.93",
+      "frames": "f36-f56",
+      "fps": 60,
+      "mechanics": "La route dorée sinueuse apparaît en partant de la pointe basse de l'hexagone et remonte jusqu'à l'horizon (≈ 45 % de la hauteur du badge) en 20 im (0,33 s). Ease-out : la moitié du tracé est faite en 8 im (f36-f44), le reste ralentit. La route s'élargit en perspective vers le bas. Pas de rebond.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 34, "to": 58, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Lever de soleil à l'intérieur du badge",
+      "name_en": "Sunrise fill inside badge",
+      "t": "0:00.97-0:01.43",
+      "frames": "f58-f86",
+      "fps": 60,
+      "mechanics": "Une lueur naît sur l'horizon (f58), puis un demi-disque #F3DDA3 monte et grossit jusqu'à ≈ 45 % de la largeur du badge en 28 im (0,47 s), accompagné de rayons diffus vers le haut. Montée en ease-out, luminosité qui continue de croître 4-6 im après l'arrêt du mouvement. Le badge passe ainsi de l'état éteint à l'état « allumé ».",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 56, "to": 88, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Éclair de validation sur le contour et le halo",
+      "name_en": "Unlock flash",
+      "t": "0:01.43-0:01.5",
+      "frames": "f86-f90",
+      "fps": 60,
+      "mechanics": "En 4 im, le contour or s'épaissit visuellement par un glow, un anneau lumineux se pose à ≈ 1,1× le badge et le halo bleu du haut de l'écran passe de #324078 à un bleu plus clair (≈ #4A5AA0). C'est l'impact qui déclenche l'onde et les particules.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Double anneau d'onde qui s'efface",
+      "name_en": "Expanding shockwave rings",
+      "t": "0:01.47-0:01.97 ; 0:06.2-0:06.67 ; 0:09.23-0:09.83",
+      "frames": "f88-f118 ; f372-f400 ; f554-f590",
+      "fps": 60,
+      "mechanics": "Deux cercles fins (≈ 2 px) dorés et concentriques partent de ≈ 1,1× la largeur du badge et s'étendent jusqu'à ≈ 2,2× en ≈ 30 im (0,5 s), le second en retard de ≈ 4 im. Opacité de ≈ 80 % à 0. Grands pas au début puis ralentissement (ease-out), sans dépassement. Rejoué à l'identique à chaque clic.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-001-move-f356.jpg",
+      "illus": {"from": 86, "to": 120, "n": 8}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Gerbe d'étoiles dorées en couronne",
+      "name_en": "Gold star burst",
+      "t": "0:01.5-0:02.0",
+      "frames": "f90-f120",
+      "fps": 60,
+      "mechanics": "≈ 60-100 particules : étoiles à 4 branches (≈ 0,6-1 % du cadre) et points, couleur #E8C46A. Elles jaillissent d'abord en gerbe horizontale de part et d'autre du badge (f90-f96), puis remplissent un disque de ≈ 1,6× sa largeur et y flottent en scintillant (opacité variable). Décélération rapide après l'éjection.",
+      "verdict": "cliche",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Pluie d'étoiles qui retombe à travers l'interface",
+      "name_en": "Gravity particle fall",
+      "t": "0:02.0-0:05.5",
+      "frames": "f120-f330",
+      "fps": 60,
+      "mechanics": "Après la gerbe, les étoiles descendent sous une gravité faible avec freinage : du niveau du badge (≈ 30 % de l'écran) jusqu'au bas du téléphone (≈ 95 %) en ≈ 3 s, en dérivant de quelques pixels latéralement et en scintillant, puis s'éteignent. Elles passent devant le titre et la liste « Territory ».",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Scintillement résiduel ambiant",
+      "name_en": "Lingering ambient sparkles",
+      "t": "0:06.7-0:11.25",
+      "frames": "f400-f674",
+      "fps": 60,
+      "mechanics": "Après chaque clic, 20-40 petites étoiles restent dans le haut de l'écran, montent lentement vers la barre « Badges » ou dérivent, avec une opacité qui pulse. L'écran ne redevient jamais tout à fait immobile.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f461.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Bloc titre en fondu montant après l'onde",
+      "name_en": "Title fade-up",
+      "t": "0:01.53-0:01.73",
+      "frames": "f92-f104",
+      "fps": 60,
+      "mechanics": "Sur-titre, titre et sous-titre apparaissent ensemble en ≈ 12 im (0,2 s) : opacité de 0 à 100 % et montée de ≈ 1 % de la hauteur (≈ 9 px), ease-out. Ils démarrent 4 im après l'éclair, pendant l'expansion de l'onde : le texte arrive comme conséquence de l'impact.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Déblocage chaîné en 1,4 s sans rebond",
+      "name_en": "Chained no-bounce reveal",
+      "t": "0:00.6-0:02.0",
+      "frames": "f36-f120",
+      "fps": 60,
+      "mechanics": "Quatre étapes en relais : route 20 im, soleil 28 im, éclair 4 im, onde + étoiles 30 im, titre décalé de +4 im sur l'onde. Chaque étape démarre à ±2-4 im de la fin de la précédente. Toutes les courbes sont des ease-out sans dépassement, fidèles à « fast and smooth, not bouncy ». Le badge reste immobile en position : seul son contenu s'anime.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Badge solide qui penche vers le curseur",
+      "name_en": "Cursor-following 3D tilt",
+      "t": "0:03.9-0:05.6",
+      "frames": "f230-f340",
+      "fps": 60,
+      "mechanics": "Rotation 3D en perspective : quand le curseur passe à gauche (f284-f300), le bord gauche du contour recule de 8 px sur 147 (≈ 5 %) tandis que le droit reste en place ; quand il passe en haut à droite (f328+), le bord haut descend de ≈ 12 px. Angle estimé 10-15° (probable). Suivi lissé (interpolation) qui se stabilise en ≈ 10-15 im, sans dépassement. Effet quasi invisible à l'échelle de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Socle et mise en scène du badge",
+      "name_en": "Pedestal staging",
+      "t": "0:00-0:11.25",
+      "frames": "f0-f674",
+      "fps": 60,
+      "mechanics": "Le badge flotte au-dessus d'un disque sombre (≈ 1,1× sa largeur) avec un liseré de lumière bleutée, le tout sous un halo bleu en haut de l'écran : petite scène de présentation type vitrine, qui répond au « build its scene » du prompt.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Survol puis clic qui relance la célébration",
+      "name_en": "Hover pointer and click re-trigger",
+      "t": "0:05.73-0:09.83",
+      "frames": "f344-f590",
+      "fps": 60,
+      "mechanics": "Au survol du badge, le curseur flèche devient une main (f344). Chaque clic (f372, f554) rejoue éclair, double onde et étoiles, avec une légère pression probable du badge (≈ 0,95× sur 2-3 im). Rien ne varie d'un clic à l'autre.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f356.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom automatique d'enregistrement sur la zone du clic",
+      "name_en": "Screen-recording auto zoom",
+      "t": "0:05.8-0:06.67 ; 0:07.63-0:08.42",
+      "frames": "f348-f400 ; f458-f505",
+      "fps": 60,
+      "mechanics": "Tout le cadre (fond gris compris) zoome de ×1 à ≈ ×1,9 centré sur le badge en ≈ 52 im (0,87 s), ease-in-out, avec flou de mouvement visible sur f349-f356 ; maintien ≈ 58 im ; dézoom en ≈ 47 im. Signature d'un outil de capture type Screen Studio (probable), pas de Claude.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f356.jpg, microM-002-move-f461.jpg",
+      "illus": {"from": 346, "to": 402, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Maquette de téléphone centrée sur fond perle",
+      "name_en": "Centered device mockup",
+      "t": "0:00-0:11.25",
+      "frames": "f0-f674",
+      "fps": 60,
+      "mechanics": "Téléphone centré, ≈ 86 % de la hauteur et ≈ 31 % de la largeur d'un cadre 1408×1080, ombre portée douce sur #E9E8ED. Dans l'écran : badge héros au tiers haut (≈ 18-38 % de la hauteur), titre à ≈ 50 %, liste « Territory » à 65-85 %. Le contraste écran noir / fond clair concentre le regard.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Hiérarchie iOS sur-titre, titre, sous-titre",
+      "name_en": "Eyebrow-title-subtitle stack",
+      "t": "0:01.53-0:11.25",
+      "frames": "f92-f674",
+      "fps": 60,
+      "mechanics": "Trois niveaux centrés : « New badge unlocked » minuscule gris (≈ 0,9 %), « Early Explorer » blanc semi-gras (≈ 2,2 %), « Seven walks before dawn. » gris (≈ 1 %). Rapport de taille ≈ 2,4 entre titre et sous-titre. Design Figma reproduit tel quel.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Duo nuit et or",
+      "name_en": "Navy and gold palette",
+      "t": "0:00-0:11.25",
+      "frames": "f0-f674",
+      "fps": 60,
+      "mechanics": "Fond d'écran en dégradé #324078 → #202D53 → #000000 de haut en bas ; tout ce qui célèbre est or (#C9B07A pour le métal, #F3DDA3 pour la lumière, #E8C46A pour les particules). Aucune troisième couleur : la célébration se lit par la seule montée de l'or.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Liste de badges en contexte avec badge verrouillé",
+      "name_en": "Collection context row",
+      "t": "0:00-0:11.25",
+      "frames": "f0-f674",
+      "fps": 60,
+      "mechanics": "Sous le héros, une carte « Territory » montre 3 mini-badges (Local Scout, City Seeker débloqués, Urban Cartographer grisé) avec barres de progression bleues. Statique (design Figma) ; elle situe le badge dans une collection mais n'est pas animée au déblocage.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation puis démonstration interactive",
+      "name_en": "Reveal then interactive demo",
+      "t": "0:00-0:11.25",
+      "frames": "f0-f674",
+      "fps": 60,
+      "mechanics": "Deux actes : 2 s de déblocage automatique, puis 9 s de démonstration au curseur (inclinaison, zoom, deux clics). Pas d'accroche ni de fin : la vidéo s'arrête sur un curseur qui erre.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Un cadre Figma fourni avec « Match the design exactly… add only the motion » : le design statique est professionnel et Claude ne fait que le mouvement. Cette séparation explique la cohérence graphique totale."},
+    {"kind": "direction", "insight": "« premium and celebratory » + « gold particles » donnent le code générique de la fête : étoiles à 4 branches et onde circulaire. Il aurait fallu décrire la forme des particules ou un motif propre au badge (poussière de route, rayons de soleil)."},
+    {"kind": "banned", "insight": "« it should not be bouncy » est respecté à la lettre : aucune courbe à dépassement mesurée sur la route, le soleil, l'onde, le titre ni l'inclinaison."},
+    {"kind": "direction", "insight": "« tilts toward the cursor following the rules of physics » est implémenté en rotation lissée vers le curseur, mais sans angle maximal imposé : ≈ 10-15°, trop discret pour se lire en vidéo."},
+    {"kind": "structure", "insight": "« Build its scene and then celebrate » donne l'ordre en deux temps (construction puis célébration), que Claude découpe en quatre étapes chaînées en 1,4 s."},
+    {"kind": "build", "insight": "La vidéo est une capture d'écran du prototype interactif avec zooms automatiques, flou de mouvement et curseur agrandi (outil type Screen Studio, probable) : la mise en scène vidéo vient de l'auteur, pas de Claude."},
+    {"kind": "qa", "insight": "Aucun critère de variation : chaque clic rejoue la même célébration, et la pluie d'étoiles passe devant le titre pendant 2 s sans que le prompt ne fixe de zone de protection du texte."}
+  ],
+  "steal": [
+    "Construire un badge en trois temps chaînés sans rebond : tracer le chemin (0,33 s), lever la lumière (0,47 s), puis onde et éclats (0,5 s).",
+    "Annoncer un déblocage par un double anneau fin qui passe de 1,1× à 2,2× la taille du badge en 0,5 s en s'effaçant.",
+    "Faire entrer le titre en fondu avec montée de 1 % juste après l'impact, jamais en même temps que lui.",
+    "Laisser retomber les particules à travers l'interface pendant 3 s : la célébration déborde sur le contexte.",
+    "Pour montrer une interaction, zoomer ×1,9 sur la zone du clic en 0,9 s avec flou de mouvement, puis dézoomer."
+  ],
+  "flaws": [
+    "Étoiles dorées à quatre branches : accent générique de célébration, rejoué à chaque clic.",
+    "Inclinaison 3D vers le curseur quasi invisible à l'échelle de la vidéo (≈ 5 % de déformation).",
+    "La même célébration rejouée trois fois à l'identique, sans variation ni gradation.",
+    "Pluie d'étoiles qui traverse le titre et la liste pendant 2 s : lecture brouillée.",
+    "0,6 s d'attente sur un badge vide au début et 1,4 s finale sans événement."
+  ],
+  "deep_study": {"worth": true, "why": "Le déblocage f36-f120 (1,4 s à 60 fps natifs) est une micro-séquence d'interface exemplaire à reproduire dans HyperFrames : tracé, lever de soleil, éclair, double onde et titre chaînés sans rebond. Une étude image par image donnerait les courbes exactes et les décalages."}
+}

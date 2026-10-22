@@ -1,0 +1,522 @@
+{
+  "slug": "xelandre-363f00",
+  "title": "SaaS product launch video",
+  "handle": "@xelandre__",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Fil rouge maîtrisé (un point orange relie toutes les scènes), transitions motivées et flou de mouvement réel ; mais ouverture statique de 3,6 s, interface illisible et double texte titre + sous-titre.",
+  "summary": "Pub de 30 s pour Klairon, un outil de prospection, en voix off française. Acte sombre : le fondateur qui prospecte à la main (tableau de bord, compteur « Réponses 0 »). Le tableau se réduit en point orange, qui devient iris, radar, avatar, puis logo. Force : la chaîne de transitions motivées et le chapitrage « Chaque signal / prospect / message ». Faiblesse : UI minuscule, début lent.",
+  "prompt_vs_result": [
+    "Le prompt publié ne décrit que la chaîne technique : page HTML/JS calculée image par image depuis le temps, capture Playwright, assemblage ffmpeg, flou de mouvement et son générés par code.",
+    "Tout le fond : produit fictif Klairon, script français en 7 phrases, voix off, palette sombre puis crème avec accent orange, motif du point et du radar, logo en 4 quarts de cercle, sous-titres karaoké.",
+    "Le prompt cadre bien le rendu (flou de mouvement réel, déterminisme) mais rien du contenu : le script et la DA viennent sans doute d'une conversation plus longue. Il aurait fallu préciser durée des maintiens et taille minimale du texte UI."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#1F1E1C",
+        "role": "fond acte 1 (problème), noir chaud"
+      },
+      {
+        "hex": "#F2EEE8",
+        "role": "texte titre sur fond sombre"
+      },
+      {
+        "hex": "#F26B1D",
+        "role": "accent unique : mot clé, point fil rouge, iris, boutons"
+      },
+      {
+        "hex": "#F7F3EE",
+        "role": "fond crème acte 2 (solution)"
+      },
+      {
+        "hex": "#F8D9BF",
+        "role": "halos chauds flous qui dérivent dans le fond"
+      },
+      {
+        "hex": "#FBFAF8",
+        "role": "cartes UI"
+      },
+      {
+        "hex": "#2A2724",
+        "role": "pastille des sous-titres"
+      },
+      {
+        "hex": "#1C1B1A",
+        "role": "titre serif et logotype sur crème"
+      },
+      {
+        "hex": "#8D4FC4",
+        "role": "point de signal violet / pétale du logo"
+      },
+      {
+        "hex": "#2266D3",
+        "role": "point de signal bleu / pétale"
+      },
+      {
+        "hex": "#0F8A63",
+        "role": "point de signal vert / pétale"
+      },
+      {
+        "hex": "#E5484D",
+        "role": "pastille « Réponses 0 », signal rouge"
+      }
+    ],
+    "type": "Serif éditoriale probable (Newsreader ou Source Serif), regular, casse phrase, titres ≈ 5 à 6,5 % de la hauteur ; grotesque type Inter pour UI et sous-titres (≈ 1,5 %) ; logotype grotesque semi-gras ≈ 7 %.",
+    "texture": "Flou de mouvement réel par accumulation de sous-images (échos visibles en anneaux sur l'iris), halos orange très flous en fond, ombres portées douces sous les cartes, aucun grain.",
+    "style": "Pub SaaS éditoriale chaude, minimaliste",
+    "coherence": "Le point orange est le fil rouge : tableau → point → particules → iris → centre du radar → avatar → point → logo. Les secteurs du radar annoncent les 4 quarts de cercle du logo. Un seul accent orange partout. Ce qui casse : le texte UI à 1 % de hauteur, illisible, et la concurrence titre serif + sous-titre en pastille."
+  },
+  "rhythm": {
+    "bpm": 102,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo du fond musical estimé à 102 BPM (netteté 2,53), mais le montage suit la voix off, pas la musique. Chaque changement de scène tombe au début d'une phrase de la voix : carte à 3,65 s (phrase à 3,84 s), réduction en point à 8,4 s (fin de « aucune réponse »), iris à 11,4 s (phrase à 11,84 s), plongée à 17,6 s (17,28 s), éjection à 22,2 s (22,32 s), logo à 24,6 s (24,56 s) : 6 changements sur 7 à moins de 0,4 s d'un début de phrase. Dans les scènes, les mots du titre et les cartes de signal apparaissent sur les mots prononcés. Temps morts : ouverture de 3,6 s sur fond sombre où seuls des mots apparaissent (f0-f219), point orange seul 9,0-9,6 s, carton final tenu 3,5 s (26,0-30,0 s). Les maintiens « statiques » mesurés (64 % de la durée) sont surévalués : le radar tourne et les compteurs défilent en permanence, mais en petits éléments.",
+    "timeline": [
+      {
+        "t": "0:00-0:03.6",
+        "what": "Fond noir chaud, « Vous êtes founder… / et c'est encore vous qui prospectez ? » mot par mot, « prospectez ? » en orange",
+        "technique": "révélation mot à mot en place, calée sur la voix"
+      },
+      {
+        "t": "0:03.6-0:03.95",
+        "what": "Une fenêtre d'interface monte du bas avec flou vertical et légère inclinaison, recouvre le titre",
+        "technique": "entrée de carte avec flou de mouvement"
+      },
+      {
+        "t": "0:04-0:08.4",
+        "what": "Liste de profils type LinkedIn qui défile, compteur « Envoyés » 12 → 47, « Réponses 0 » en rouge, message tapé puis effacé, horloge 23:48 → 00:12",
+        "technique": "UI narrative de la douleur"
+      },
+      {
+        "t": "0:08.4-0:08.75",
+        "what": "Le contenu blanchit, la carte se vide, rétrécit en flou, vire à l'orange et devient un point",
+        "technique": "réduction en point (shrink to dot)"
+      },
+      {
+        "t": "0:08.75-0:11.4",
+        "what": "Point orange seul qui pulse, des points gris apparaissent autour, un anneau, les points virent à l'orange",
+        "technique": "particules = signaux"
+      },
+      {
+        "t": "0:11.38-0:11.62",
+        "what": "Le point explose en disque orange plein cadre, puis un disque crème s'ouvre du centre",
+        "technique": "double iris orange puis crème"
+      },
+      {
+        "t": "0:11.62-0:17.5",
+        "what": "Radar crème : cercles concentriques, secteur orange qui balaie, cartes de signal qui surgissent avec onde ; « Chaque signal, » en bas à gauche, « 01 Détection »",
+        "technique": "radar synchronisé à l'énumération"
+      },
+      {
+        "t": "0:17.5-0:18.1",
+        "what": "La carte de Sophie est verrouillée (crochets, « 92/100 »), le reste s'efface, plongée dans le point",
+        "technique": "zoom traversant (zoom-through)"
+      },
+      {
+        "t": "0:18.1-0:19.6",
+        "what": "Le point devient l'avatar d'une fiche prospect qui se déplie ; score qui roule jusqu'à 92 ; « chaque prospect, »",
+        "technique": "raccord point → avatar, compteur roulant"
+      },
+      {
+        "t": "0:19.6-0:22.1",
+        "what": "Carte « Séquence recommandée » glisse par-dessus, le message s'écrit en flux avec curseur orange, clic sur « Envoyer » ; « chaque message, »",
+        "technique": "cartes empilées, texte IA en flux"
+      },
+      {
+        "t": "0:22.1-0:22.7",
+        "what": "Les cartes partent à droite avec flou horizontal et traînées orange",
+        "technique": "éjection latérale (whip-out) avec lignes de vitesse"
+      },
+      {
+        "t": "0:22.8-0:24.3",
+        "what": "Notification « Sophie Durand a répondu », ondes autour de l'avatar ; « au bon moment. »",
+        "technique": "notification à ondes"
+      },
+      {
+        "t": "0:24.3-0:25.6",
+        "what": "Le point revient au centre, éclate en 4 pétales colorés sur un anneau, qui s'enroulent en logo gris/noir",
+        "technique": "assemblage du logo en spirale"
+      },
+      {
+        "t": "0:25.6-0:30.0",
+        "what": "Logotype « Klairon » révélé de gauche à droite, slogan mot à mot, bouton orange « Commencer avec Klairon → »",
+        "technique": "carton final, appel à l'action"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "voix-off",
+    "evidence": "Le montage est piloté par la voix off française (TTS probable). Sur les planches microscope, 4 gestes clés sur 6 tombent à ±2 im d'une barre (départ de la carte f219 vs barre f221 ; blanchiment f503 sur temps + attaque ; carte séquence f1174 vs f1172 ; éjection f1330 sur demi-temps) et 2 ratent (iris f690 entre f679 et f696 ; logotype f1536 vs f1542) : 67 % contre 33 % au hasard, mais trop peu d'événements, et l'indice auto est non significatif (p corrigé 0,58, r intensité/mouvement 0,09). Les changements de scène suivent les débuts de phrase (6/7 à moins de 0,4 s). Un fond musical continue après la voix (−24 dB de moyenne à 28,3-30 s).",
+    "synced": [
+      "texte",
+      "apparitions",
+      "coupes"
+    ],
+    "style_match": "Fond musical discret sous voix posée : colle au ton éditorial calme, aux courbes ease-out douces et aux fondus. Ni pulsation ni drop exploités.",
+    "how_built": "Timing probablement dérivé des horodatages mot à mot de la voix (TTS) : titres, cartes de signal et surlignage karaoké tombent sur les mots. Son généré par code selon le prompt (fond et effets). La musique n'a pas servi de grille."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche en question directe sur fond noir",
+      "name_en": "Direct-question hook",
+      "t": "0:00-0:03.6",
+      "frames": "f0-f219",
+      "fps": 60,
+      "mechanics": "Deux lignes centrées sur #1F1E1C : « Vous êtes founder… / et c'est encore vous qui prospectez ? ». Seul le mot de la douleur (« prospectez ? ») est orange. Aucune autre animation pendant 3,6 s : le spectateur n'a que la voix et les mots.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation mot à mot en place, calée sur la voix",
+      "name_en": "In-place word-by-word reveal",
+      "t": "0:00.40-0:03.6",
+      "frames": "f24-f219",
+      "fps": 60,
+      "mechanics": "La ligne est mise en page dans sa position finale ; chaque mot apparaît à sa place (« Vous » ne bouge pas quand « êtes » arrive). Chaque mot monte d'environ 2 % de la hauteur depuis un masque sous la ligne de base et se pose en 6 à 9 im (0,10-0,15 s), ease-out. « êtes » f33-f39, « founder… » f60-f66 puis tassement jusqu'à f69. Départ de chaque mot sur le mot prononcé.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif éditoriale + grotesque UI + un seul accent",
+      "name_en": "Editorial serif with single accent color",
+      "t": "0:00-0:30",
+      "frames": "f0-f1799",
+      "fps": 60,
+      "mechanics": "Titres en serif à contraste moyen (Newsreader ou Source Serif probable), regular, casse phrase, 5 % (acte 1) à 6,5 % (acte 2) de la hauteur ; mot clé du titre en #F26B1D (« signal, », « prospect, », « message, », « moment. »). Interface et sous-titres en grotesque type Inter. Contraste chaleureux serif/sans qui donne un ton éditorial plutôt que tech.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Entrée de carte par le bas avec flou vertical et inclinaison",
+      "name_en": "Card rise with motion blur and tilt",
+      "t": "0:03.65-0:03.93",
+      "frames": "f219-f236",
+      "fps": 60,
+      "mechanics": "La fenêtre (≈ 60 % de la largeur) entre par le bas du cadre (bord haut à 94 % de la hauteur à f220), légèrement tournée (≈ −2°) et en perspective, monte jusqu'à ≈ 22 % du haut en 17 im (0,28 s), ease-out expo ; flou vertical fort de f222 à f232, net à f234. Elle recouvre le titre, qui disparaît derrière (le « ? » orange déborde jusqu'à f243). Le départ (f219) tombe à 2 im d'un temps (f221).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f232.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Interface qui raconte la douleur",
+      "name_en": "Pain-point UI storytelling",
+      "t": "0:04-0:08.4",
+      "frames": "f240-f503",
+      "fps": 60,
+      "mechanics": "Liste de profils qui défile en continu, compteur « Envoyés » qui grimpe 12 → 17 → 28 → 41 → 47 pendant que la pastille rouge « Réponses 0 » reste figée ; fenêtre « Nouveau message » où « Bonjour Marc, je me permets de vous contacter car… » est tapé, effacé, puis retapé en « j'espère que vous allez bien ». Le gag se lit sans la voix.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Horloge qui file dans le coin",
+      "name_en": "Fast-forward clock",
+      "t": "0:00.5-0:08.4",
+      "frames": "f30-f503",
+      "fps": 60,
+      "mechanics": "Petite horloge à 1 % de hauteur en haut à droite avec point orange : 23:48 → 23:56 → 23:59 → 00:01 → 00:12. Le temps passé à prospecter défile en accéléré, détail discret qui récompense le second visionnage.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titres karaoké en pastille",
+      "name_en": "Karaoke captions in pill",
+      "t": "0:04-0:24.6",
+      "frames": "f240-f1476",
+      "fps": 60,
+      "mechanics": "Phrase entière dans une pastille #2A2724 en bas au centre (≈ 1,5 % de hauteur, 88 % du bas) ; le mot prononcé passe en orange, un mot à la fois. Changement de phrase par fondu de la pastille en ≈ 10 im.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Réduction en point (la carte se vide puis devient un point orange)",
+      "name_en": "Shrink to dot",
+      "t": "0:08.38-0:08.72",
+      "frames": "f503-f523",
+      "fps": 60,
+      "mechanics": "f503-f509 : le contenu de la carte blanchit et disparaît en 6 im (fondu vers une carte grise vide). Maintien f509-f512. f512-f516 : la carte rétrécit avec flou et s'assombrit ; f516 elle vire d'un coup à l'orange à ≈ 25 % de sa taille ; f516-f523 : rétrécit jusqu'à un point de ≈ 1 % de la hauteur. 11 im (0,18 s) de la carte au point, ease-in puis ease-out sur la fin. Départ f503 sur un temps et une attaque audio.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f515.jpg",
+      "illus": {
+        "from": 500,
+        "to": 524,
+        "n": 6
+      }
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Le point et ses satellites : les signaux",
+      "name_en": "Dot with orbiting signal particles",
+      "t": "0:08.75-0:11.4",
+      "frames": "f525-f683",
+      "fps": 60,
+      "mechanics": "Le point orange pulse seul (9,0-9,6 s), puis ≈ 12 points gris de 0,3 % apparaissent épars et dérivent lentement (10,0 s) ; un anneau fin apparaît autour du point central et les points virent à l'orange un par un (11,0 s) sur « une bonne raison de les contacter ». Visualise l'idée « vos prospects vous donnent des signaux ».",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Double iris : disque orange puis disque crème",
+      "name_en": "Double iris reveal",
+      "t": "0:11.38-0:11.62",
+      "frames": "f683-f697",
+      "fps": 60,
+      "mechanics": "Le point central grossit en ease-in : ≈ 2 % (f683), 5 % (f685), 12 % (f687), 28 % avec 3 anneaux d'écho plus sombres (f689), plein cadre orange à f691 (8 im). Un petit anneau blanc naît au centre dès f689 ; f691-f697 il s'ouvre en disque crème (2 %, 4,5 %, 7 %, 12 % avec échos, plein cadre) en 7 im, révélant la scène radar. Le flash orange plein cadre dure 1 à 2 im : il sert de bascule de l'acte sombre à l'acte clair.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f690.jpg",
+      "illus": {
+        "from": 683,
+        "to": 698,
+        "n": 8
+      }
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement par accumulation de sous-images",
+      "name_en": "Accumulated sub-frame motion blur",
+      "t": "0:03.7-0:22.7",
+      "frames": "f222-f1345",
+      "fps": 60,
+      "mechanics": "Le flou est calculé (pas un effet CSS) : sur les mouvements lents il est continu (carte qui monte f222-f232), sur les très rapides il montre des copies discrètes (3-4 anneaux d'écho sur l'iris f689 et f696, traînées de l'éjection f1330-f1340), signe d'une moyenne de quelques sous-images par image. Directionnel, proportionnel à la vitesse.",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f690.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond crème à halos chauds qui dérivent",
+      "name_en": "Drifting warm blur blobs",
+      "t": "0:11.6-0:30",
+      "frames": "f697-f1799",
+      "fps": 60,
+      "mechanics": "Fond #F7F3EE avec 2-3 halos #F8D9BF très flous (rayon ≈ 30 % du cadre) qui dérivent lentement, plus de grands arcs gris fins (reste des cercles du radar) qui persistent dans les scènes 2 à 4. Effet de dégradé vivant sans distraire.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Radar à balayage qui fait surgir les signaux",
+      "name_en": "Radar sweep revealing signals",
+      "t": "0:11.62-0:17.5",
+      "frames": "f697-f1050",
+      "fps": 60,
+      "mechanics": "5 cercles concentriques gris fins + réticule, centre orange. Un secteur en dégradé orange (≈ 40° d'ouverture, bord net, queue qui s'estompe) tourne dans le sens horaire (≈ 1 tour en 1,5-2 s, probable). Quand il passe sur un point, une étiquette blanche surgit (« Claire promue directrice commerciale », « Maxime vient de changer de poste », « Microsoft recrute des SDR »…) avec point coloré et onde circulaire (anneau qui s'agrandit et s'efface en ≈ 0,4 s). Les étiquettes arrivent sur les mots prononcés : « changement de poste » → Maxime, « recrutement » → Microsoft/Dell, « publication » → Sophie.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Chapitrage numéroté + titre en anaphore",
+      "name_en": "Numbered chapters with anaphora headline",
+      "t": "0:11.6-0:24.3",
+      "frames": "f697-f1458",
+      "fps": 60,
+      "mechanics": "Étiquette minuscule en haut à gauche (« 01 Détection », « 02 Qualification », « 03 Séquence », « 04 Réponse », numéro orange). Titre serif fixe en bas à gauche (marge ≈ 6 % à gauche, base à ≈ 78 % de la hauteur) : « Chaque signal, / chaque prospect, / chaque message, / au bon moment. ». Une phrase répartie sur 4 scènes, qui se lit comme une seule.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Roulement du titre à travers un masque",
+      "name_en": "Masked headline roll swap",
+      "t": "0:19.72-0:19.93",
+      "frames": "f1183-f1196",
+      "fps": 60,
+      "mechanics": "L'ancien titre « chaque prospect, » descend sous la ligne de masque en ≈ 5 im (f1183-f1188), puis « chaque message, » monte depuis le masque en ≈ 7 im (f1189-f1196), ease-out. Sortie avant entrée, sans chevauchement. Même mécanique aux autres changements (f1066, f1337-f1345).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1182.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans le point sélectionné",
+      "name_en": "Zoom-through into target dot",
+      "t": "0:17.3-0:18.1",
+      "frames": "f1038-f1086",
+      "fps": 60,
+      "mechanics": "La carte de Sophie reçoit des crochets de visée et une pastille « 92/100 » (f1038), les autres étiquettes s'effacent (f1046-f1058). f1062-f1082 : poussée de caméra centrée sur le point (≈ ×6 en ≈ 20 im, ease-in-out) : les cercles du radar deviennent de grands arcs qui sortent du cadre, le point passe de 0,8 % à 2,5 % et glisse vers le haut à gauche. Le titre « Chaque signal, » tombe hors du masque.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 1058,
+        "to": 1110,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Raccord point → avatar : la fiche se déplie depuis le point",
+      "name_en": "Dot-to-avatar match cut",
+      "t": "0:18.3-0:18.5",
+      "frames": "f1098-f1110",
+      "fps": 60,
+      "mechanics": "Le point orange s'immobilise ≈ 16 im (f1082-f1098), puis une carte blanche se déplie à partir de lui (f1102-f1110, ≈ 8 im) : le point devient l'avatar « SD » de la fiche Sophie Durand. Le contenu de la fiche arrive ensuite en cascade (entreprise, étiquettes, détail du signal), ≈ 0,25 s d'écart.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Score qui roule jusqu'à 92",
+      "name_en": "Rolling score counter",
+      "t": "0:18.5-0:19.5",
+      "frames": "f1110-f1170",
+      "fps": 60,
+      "mechanics": "Compteur « Adéquation » à droite de la fiche : 38 (f1114), 60 (f1118), 72 (f1122), 80 (f1126), 85 (f1130), 88 (f1134), 90 (f1140), 92 (≈ f1170). Pas de +22, +12, +8, +5, +3 toutes les 4 im : ease-out exponentiel. Icône de barres orange à côté.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte empilée et texte IA en flux",
+      "name_en": "Stacked card with streaming AI text",
+      "t": "0:19.6-0:22.1",
+      "frames": "f1174-f1325",
+      "fps": 60,
+      "mechanics": "La carte « Séquence recommandée » (onglets Email / Appel / LinkedIn) entre par le bas avec flou vertical en ≈ 14 im (f1174-f1188), ease-out, et se pose décalée de ≈ +2 % / +7 % sur la fiche, qui reste visible derrière (pile). Le message s'écrit par blocs avec un curseur orange clignotant. Une flèche de souris vient cliquer « Envoyer » (≈ 21,5-22,0 s), le bouton fonce au clic.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1182.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Éjection latérale avec traînées orange (« message envoyé »)",
+      "name_en": "Whip-out with speed lines",
+      "t": "0:22.08-0:22.67",
+      "frames": "f1325-f1360",
+      "fps": 60,
+      "mechanics": "f1325-f1330 : 4-5 lignes horizontales orange fines naissent à gauche des cartes. f1330-f1342 : les cartes filent vers la droite (≈ 50 % de largeur en 12 im), ease-in, flou horizontal fort, laissant les traînées. Le titre « chaque message, » tombe sous le masque (f1337-f1345). Les traînées restent seules sur fond crème ≈ 15 im puis se rétractent. Le départ (f1330) tombe sur un demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1334.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Notification de réponse avec ondes",
+      "name_en": "Reply notification with ripples",
+      "t": "0:22.8-0:24.3",
+      "frames": "f1368-f1458",
+      "fps": 60,
+      "mechanics": "Une carte de notification (≈ 26 % de largeur) apparaît au centre gauche : avatar orange, « Sophie Durand a répondu · à l'instant », « « Bonne question ! On en parle jeudi ? » ». Deux anneaux concentriques fins orange pâle s'élargissent autour de l'avatar. Titre « au bon moment. ».",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Assemblage du logo : le point éclate en 4 pétales qui s'enroulent",
+      "name_en": "Dot burst to spiral logo assembly",
+      "t": "0:24.3-0:25.55",
+      "frames": "f1458-f1533",
+      "fps": 60,
+      "mechanics": "Le point (avatar de la notification) glisse au centre en ≈ 12 im (f1458-f1470), ease-out. Un anneau s'ouvre autour (f1476-f1482). f1485 : le point éclate en 4 quarts de cercle (vert, bleu, violet, orange) projetés sur un cercle de ≈ 9 % de hauteur avec flou (3 im). f1488-f1500 : ils tournent lentement (≈ 15°). f1503-f1515 : ils s'enroulent vers le centre (rotation ≈ 90° + rayon qui s'annule, 12 im) en virant au gris et noir. f1518-f1533 : la marque en hélice continue de tourner un peu et se pose (ease-out). Les quarts de cercle reprennent la forme du secteur du radar.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 1470,
+        "to": 1533,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype révélé par balayage doux pendant que la marque se décale",
+      "name_en": "Feathered wipe wordmark reveal with recentering",
+      "t": "0:25.6-0:26.0",
+      "frames": "f1536-f1560",
+      "fps": 60,
+      "mechanics": "« Klairon » apparaît de gauche à droite derrière un masque à bord dégradé (les lettres de tête nettes, la dernière lettre en fondu) en ≈ 24 im (0,4 s), ease-out. En même temps la marque glisse à gauche d'environ 18 % de la largeur pour que le bloc reste centré. Le slogan apparaît ensuite mot à mot, chaque mot passant de gris clair à noir sur la voix.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f1548.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final avec slogan et bouton",
+      "name_en": "End card with CTA",
+      "t": "0:26.0-0:30.0",
+      "frames": "f1560-f1799",
+      "fps": 60,
+      "mechanics": "Logo centré (≈ 7 % de hauteur), « Consacrez moins de temps à prospecter. » dessous (« prospecter. » orange), bouton orange « Commencer avec Klairon → » qui apparaît à ≈ 28,4 s. Tenu ≈ 3,5 s sans autre mouvement que les halos du fond.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Acte sombre / acte clair, bascule par flash orange",
+      "name_en": "Dark-to-light act switch",
+      "t": "0:00-0:11.6 / 0:11.6-0:30",
+      "frames": "f0-f697",
+      "fps": 60,
+      "mechanics": "Problème sur #1F1E1C (11,5 s), solution sur crème #F7F3EE (18,5 s). La bascule passe par 1-2 im de plein cadre orange (l'accent de marque) au milieu du double iris. La couleur porte le récit avant/après.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f690.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Le point orange comme fil rouge du film",
+      "name_en": "Orange dot as continuity thread",
+      "t": "0:08.4-0:25.6",
+      "frames": "f503-f1536",
+      "fps": 60,
+      "mechanics": "Un seul objet traverse tout le film et motive chaque transition : carte réduite en point (8,4 s) → centre des particules → source de l'iris (11,4 s) → centre du radar → point de Sophie → avatar de la fiche (18,3 s) → avatar de la notification → point qui éclate en logo (24,8 s). Aucune coupe franche gratuite.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Montage calé sur la voix off",
+      "name_en": "Voice-over-driven timing",
+      "t": "0:00-0:28.2",
+      "frames": "f0-f1690",
+      "fps": 60,
+      "mechanics": "Les changements de scène tombent au début des phrases (6/7 à moins de 0,4 s), les mots du titre, les étiquettes du radar et le surlignage des sous-titres sur les mots prononcés. La musique de fond n'impose rien.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "build",
+      "insight": "Le prompt décrit une chaîne « chaque image calculée depuis le temps, capturée par Playwright, assemblée par ffmpeg avec flou de mouvement » : c'est ce qui donne le vrai flou directionnel (impossible en CSS seul) et la précision à l'image près des transitions. Équivalent HyperFrames : timeline en pause + flou par accumulation de sous-images au rendu."
+    },
+    {
+      "kind": "build",
+      "insight": "Le flou par accumulation laisse des échos discrets sur les mouvements très rapides (anneaux de l'iris) : il faut plus de sous-images (8 à 16) si un élément parcourt plus de 10 % du cadre en une image."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Le prompt publié ne contient ni script, ni produit, ni palette : le contenu (Klairon, script français, voix) vient forcément d'une conversation plus longue ou d'entrées non publiées. Le titre de la page résume mal ce qui a été demandé."
+    },
+    {
+      "kind": "build",
+      "insight": "« Son généré par code » : un fond musical continu sous la voix, sans pulsation exploitée. La synchro passe par la voix (horodatages mot à mot probables), ce qui donne un timing juste sans grille musicale."
+    },
+    {
+      "kind": "direction",
+      "insight": "Aucune contrainte de lisibilité : les écrans UI occupent 60 % de la largeur avec un texte à ≈ 1 % de hauteur, illisible. Préciser « texte UI ≥ 2,5 % de la hauteur, zoomer sur l'élément qui compte »."
+    },
+    {
+      "kind": "structure",
+      "insight": "La structure problème (sombre) → bascule → 4 étapes numérotées → logo est un squelette de pub SaaS très réutilisable ; l'anaphore « Chaque signal, chaque prospect, chaque message, au bon moment » relie les étapes en une phrase."
+    }
+  ],
+  "steal": [
+    "Faire traverser tout le film par un seul objet (un point de la couleur de marque) qui devient à chaque scène la source de la transition suivante.",
+    "Réduire l'écran du problème en un point, puis faire exploser ce point en iris plein cadre de couleur d'accent avant d'ouvrir l'acte solution.",
+    "Répartir une phrase en anaphore sur plusieurs scènes, en bas à gauche, avec le mot clé en couleur d'accent et un roulement masqué entre chaque.",
+    "Score ou compteur qui roule en ease-out exponentiel (pas divisés par 2 environ) pendant 1 s après l'apparition d'une fiche.",
+    "Logo assemblé à partir de la forme récurrente du film (ici les secteurs du radar) qui s'enroulent en spirale et passent de la couleur au monochrome."
+  ],
+  "flaws": [
+    "Ouverture de 3,6 s sur fond noir où seuls quelques mots apparaissent : trop lent pour une accroche.",
+    "Texte d'interface à ≈ 1 % de la hauteur : illisible, les écrans ne valent que par leur silhouette.",
+    "Titre serif et sous-titre karaoké en même temps : deux textes à lire, l'œil ne sait où aller.",
+    "Carton final tenu 3,5 s quasi immobile.",
+    "Flou par accumulation qui laisse des échos en marches sur l'iris."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Chaîne de transitions motivées par un même objet (réduction en point, double iris, plongée, raccord avatar, éjection, assemblage du logo) et vrai flou de mouvement : chaque passage mérite d'être décortiqué image par image pour être reproduit dans HyperFrames."
+  }
+}

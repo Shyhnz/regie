@@ -1,0 +1,293 @@
+{
+  "slug": "hoyoyoda-3a5c08",
+  "title": "Chuseok pixel night scene",
+  "handle": "@hoyoyoda",
+  "family": "personnages",
+  "craft": 4,
+  "craft_reason": "Monde pixel cohérent et documenté, chaîne de causes lisible (lapin qui pile → songpyeon qui tombe → plateau qui se remplit) et boucle parfaite par volet coloré ; titre mal placé qui percute la lune.",
+  "summary": "Boucle pixel art de 12 s pour Chuseok (fête coréenne de la mi-automne) : pleine lune où le lapin lunaire pile du riz, toits de hanok, danseurs en hanbok, kakis. Le tempo du pilon double à 4 s, un arc-en-ciel saekdong court sur les toits, les gâteaux tombent sur la table, le titre se forme. Un volet à 7 bandes colorées referme la boucle. Riche et culturel ; textes mal cadrés.",
+  "prompt_vs_result": [
+    "Prompt coréen d'une ligne : chercher les éléments typiques de Chuseok et en faire une animation en pixel art. Aucune durée, aucun format, aucun texte, aucune structure imposés.",
+    "Tout le reste : scène nocturne fixe, lune centrale avec lapin lunaire, songpyeon, ganggangsullae, kakis, hanok, bandes saekdong, titre bilingue, 12 s en boucle à 60 fps, tempo qui double à 4 s, volet de bouclage, pas de son.",
+    "La consigne « cherche les éléments » a très bien marché : iconographie juste et dense. Il aurait fallu cadrer la zone titre (marge, pas de chevauchement), la durée et une bande-son si l'on voulait du rythme."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#140F2E", "role": "ciel haut (nuit)"},
+      {"hex": "#3A2A6E", "role": "ciel bas, dégradé tramé vers l'horizon"},
+      {"hex": "#1E1640", "role": "silhouettes d'immeubles et toits"},
+      {"hex": "#F9E3A0", "role": "lune (clair)"},
+      {"hex": "#E8C46A", "role": "lune (cratères, ombre)"},
+      {"hex": "#8C5A2B", "role": "lapin lunaire"},
+      {"hex": "#F2D06B", "role": "fenêtres, palissade éclairée, titre 추석"},
+      {"hex": "#33D6E6", "role": "guirlandes et fenêtres cyan"},
+      {"hex": "#FF3FD0", "role": "guirlandes, hanbok, moitié basse du titre latin"},
+      {"hex": "#E5364A", "role": "bande saekdong rouge, hanbok"},
+      {"hex": "#F9CF35", "role": "bande saekdong jaune"},
+      {"hex": "#79BB57", "role": "bande saekdong verte, songpyeon"},
+      {"hex": "#2E6BF6", "role": "bande saekdong bleue, hanbok"},
+      {"hex": "#B07BD4", "role": "bande saekdong violette, hanbok"},
+      {"hex": "#F58DB0", "role": "bande saekdong rose"},
+      {"hex": "#F2EDE6", "role": "bande saekdong blanche, étoiles"},
+      {"hex": "#E8641E", "role": "kakis (persimmons)"}
+    ],
+    "type": "Deux polices bitmap : 추석 en hangeul pixel, jaune #F2D06B contour rouge sombre, ≈ 13 % de la hauteur ; « HAPPY CHUSEOK » capitales pixel bicolores blanc/magenta, ≈ 6 % de la hauteur, tiers gauche, interlettrage serré.",
+    "texture": "Pixel art pur : pixel logique ≈ 10 px (grille ≈ 192 × 108 agrandie au plus proche voisin), tramage en damier (dithering) pour le dégradé du ciel et le modelé de la lune, aucun flou, aucun flou de mouvement, aucun glow réel ; les déplacements sont calés sur la grille de pixels.",
+    "style": "Pixel art festif nocturne coréen",
+    "coherence": "Un seul pas de pixel partout, une palette limitée où les 7 couleurs saekdong reviennent dans les hanbok, les guirlandes, l'arc-en-ciel et le volet final : tout tient. Ce qui casse : le titre latin passe sous la lune (le K est mangé) et un nuage traverse derrière 추석."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "aucun",
+    "notes": "Pas de piste audio. Le rythme interne vient du pilon du lapin : une frappe par seconde (cycle de 60 im) de 0 à 4 s, puis une frappe toutes les 0,5 s (30 im, soit 120 frappes/min) de 4,0 à 11,1 s ; la courbe d'énergie montre nettement ce doublement (pics à 0, 1, 2, 3 s puis à 4,0 / 4,5 / 5,0 …). Chaque frappe déclenche anneau, reflet et petit feu d'artifice : il se passe quelque chose toutes les 0,5 s dans la partie festive. Aucun maintien statique (étoiles, danseurs, nuages bougent en continu). Plan unique de 12 s, aucune coupe ; seule « transition » : le volet saekdong de 11,15 à 11,93 s qui ramène à l'image 0.",
+    "timeline": [
+      {"t": "0:00-0:04.0", "what": "Scène calme : lune, lapin qui pile 1 fois/s, nuage qui glisse devant la lune, danseurs en ronde, guirlandes cyan/jaune/magenta, plateau vide", "technique": "boucle d'ambiance à tempo lent"},
+      {"t": "0:04.0", "what": "Le pilon passe à 2 frappes/s, les guirlandes virent au blanc", "technique": "doublement de tempo comme bascule narrative"},
+      {"t": "0:04.15-0:06.0", "what": "Une bande arc-en-ciel saekdong se trace sur la ligne des toits de gauche à droite, tête ondulante", "technique": "tracé progressif (draw-on) d'un motif culturel"},
+      {"t": "0:04.3-0:10.6", "what": "À chaque cycle un songpyeon tombe de la lune sur la table, petite gerbe de confettis, le plateau se remplit", "technique": "chaîne de causalité visuelle"},
+      {"t": "0:06.85-0:07.6", "what": "Le titre 추석 se forme à partir de points épars en haut à gauche", "technique": "assemblage de texte par particules"},
+      {"t": "0:08.15-0:08.75", "what": "« HAPPY CHUSEOK » s'écrit lettre par lettre (1 lettre / 3 im)", "technique": "machine à écrire pixel"},
+      {"t": "0:08.75-0:11.1", "what": "Tableau complet : frappes, anneaux, feux d'artifice, danse", "technique": "maintien actif"},
+      {"t": "0:11.15-0:11.47", "what": "7 bandes verticales colorées tombent du haut en escalier et couvrent l'écran", "technique": "volet saekdong (stripe wipe) décalé"},
+      {"t": "0:11.47-0:11.67", "what": "Écran entièrement rayé, maintien 12 im ; l'état de la scène est remis à zéro derrière", "technique": "cache de remise à zéro"},
+      {"t": "0:11.67-0:11.93", "what": "Les bandes s'effacent vers le bas en escalier et révèlent l'image 0", "technique": "boucle parfaite (seamless loop)"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Fichier sans piste audio (audio=no) ; aucune barre de temps ni attaque sur les planches.",
+    "synced": [],
+    "style_match": "Sans objet : pas de musique. Le tempo interne (60 puis 120 frappes/min) appellerait naturellement une boucle chiptune à 120 BPM.",
+    "how_built": "Le prompt ne parle pas de son ; Claude n'a produit que l'image. Le pilon donne pourtant une grille de 30 im qui rendrait la synchro triviale : poser une boucle 8-bit à 120 BPM avec un coup de caisse sur chaque frappe."
+  },
+  "techniques": [
+    {
+      "cat": "layout",
+      "name_fr": "Lune centrale comme pivot de composition",
+      "name_en": "Central moon focal composition",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "Pleine lune centrée horizontalement (x 37-63 %, diamètre ≈ 45 % de la hauteur, y 10-55 %), horizon des toits à ≈ 55-60 %, sol et danseurs dans la bande 75-100 %, kakis en coin haut droit, titre dans le coin haut gauche. Symétrie quasi parfaite autour de l'axe vertical ; la table au pied de la lune sur le même axe relie ciel et sol.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Pixel art à grille unique et tramage",
+      "name_en": "Single-grid pixel art with dithering",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "Pixel logique ≈ 10 px à 1920 × 1080 (grille ≈ 192 × 108), agrandissement au plus proche voisin, aucun anticrénelage. Dégradé du ciel et modelé de la lune par damier de tramage (dithering) sur 2 tons. Toutes les couches (lune, immeubles, sprites, polices) respectent le même pas : aucune incohérence d'échelle.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Lapin lunaire qui pile le riz (cycle à 2 poses)",
+      "name_en": "Moon rabbit pounding loop",
+      "t": "0:00-0:11.1",
+      "frames": "f0-f666",
+      "fps": 60,
+      "mechanics": "Silhouette brune du lapin dans la lune, maillet haut puis bas, 2 poses seulement (animation à pas tenus, stepped). Période 60 im (1 s) jusqu'à f240, puis 30 im (0,5 s) jusqu'à la fin ; la frappe tombe sur f0, f60, f120, f180, puis f241, f271 … f510, f570, f630. Iconographie exacte du lapin qui fait des gâteaux de riz.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f513.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Impulsion d'anneau à chaque frappe",
+      "name_en": "Ring pulse on impact",
+      "t": "0:08.50-0:08.75",
+      "frames": "f510-f525",
+      "fps": 60,
+      "mechanics": "f510 : le contour de la lune devient pointillé (1 im, anticipation). f511-f512 : anneau jaune serré au bord de la lune. f513-f516 : l'anneau s'écarte et passe au rose. f516-f522 : anneau rose qui grandit jusqu'à ≈ +15 % du rayon, ease-out (grands pas puis petits). f523-f525 : il s'efface en pointillés. Durée totale ≈ 15 im = 0,25 s. Un reflet diagonal blanc balaie la lune sur ≈ 6 im juste après.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f513.jpg",
+      "illus": {"from": 508, "to": 526, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Feu d'artifice pixel en cercle de points",
+      "name_en": "Pixel dot firework",
+      "t": "0:08.50-0:08.70",
+      "frames": "f510-f522",
+      "fps": 60,
+      "mechanics": "À chaque frappe, à droite de la lune (x ≈ 72 %, y ≈ 30 %) : un point blanc devient un petit cercle de points (f511) qui s'ouvre en couronne d'≈ 8 % de la largeur en ≈ 12 im, puis se dissout en points épars. Pixels blancs et lavande, aucun flou. Fait écho à l'anneau de la lune (même instant, même forme).",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f573.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chaîne de causalité : frappe → chute → remplissage",
+      "name_en": "Cause-and-effect loop",
+      "t": "0:04.3-0:10.6",
+      "frames": "f258-f636",
+      "fps": 60,
+      "mechanics": "Entre deux frappes, un songpyeon (blanc, vert, rose…) se détache du bas de la lune et tombe sur la table : y ≈ 52 % → 80 % en ≈ 12 im (f552-f564), écarts entre images croissants = accélération de chute (ease-in, gravité). À l'atterrissage, gerbe de confettis pixel ≈ 6 im au-dessus du plateau. Le plateau, vide à 0-4 s, est plein vers 6,5 s. Le spectateur comprend sans texte que le lapin de la lune nourrit la fête.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f573.jpg",
+      "illus": {"from": 550, "to": 568, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Doublement du tempo comme bascule de séquence",
+      "name_en": "Tempo doubling as act break",
+      "t": "0:04.0",
+      "frames": "f240",
+      "fps": 60,
+      "mechanics": "Le cycle du pilon passe de 60 à 30 im exactement à f240, en même temps que les guirlandes virent au blanc et que l'arc-en-ciel commence. La courbe d'énergie montre des pics faibles à 1 s d'écart puis des pics deux fois plus hauts toutes les 0,5 s : l'intensité monte sans aucune coupe.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arc-en-ciel saekdong tracé sur les toits",
+      "name_en": "Rainbow stripe draw-on along rooflines",
+      "t": "0:04.15-0:06.0",
+      "frames": "f249-f360",
+      "fps": 60,
+      "mechanics": "Bande de 7 couleurs (≈ 5 % de la hauteur) qui épouse les faîtes des toits et progresse de gauche à droite : ≈ 10 % de la largeur à 4,5 s, ≈ 65 % à 5,0 s, ≈ 80 % à 5,5 s, pleine à 6,0 s (≈ 110 im). La tête de la bande ondule (vague sinusoïdale pixel) pendant la progression. Elle disparaît vers 10,8 s, avant le volet.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Ronde des danseurs en hanbok (ganggangsullae)",
+      "name_en": "Circle dance crowd sprites",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "12 à 14 sprites de ≈ 6 % de la hauteur (robe rose, bleue, rouge, lavande, col blanc) tournent en ellipse autour de la table dans la bande 80-98 % ; déplacement par pas de pixel, quelques pixels par dixième de seconde. Petits groupes serrés à gauche et à droite (personnages qui se tiennent). Lisible comme foule, pas comme individus.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Ciel vivant : étoiles scintillantes et nuages qui dérivent",
+      "name_en": "Twinkling stars and drifting clouds",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "Étoiles en croix à 4 branches (rose, cyan, jaune, blanc) qui apparaissent et grossissent de 1 à 3 pixels logiques en décalé ; nuages lavande qui glissent de gauche à droite à ≈ 4 % de la largeur par seconde, dont un qui passe devant le haut de la lune. Kakis sur une branche en haut à droite (léger balancement probable). Garantit qu'aucune image n'est figée.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre hangeul assemblé par points",
+      "name_en": "Particle-assembled title",
+      "t": "0:06.85-0:07.60",
+      "frames": "f411-f456",
+      "fps": 60,
+      "mechanics": "Des points blancs épars en haut à gauche (x 5-25 %, y 8-20 %) se rapprochent et dessinent progressivement 추석 en ≈ 45 im (0,75 s), d'abord en contour pointillé blanc puis remplis en jaune contour rouge sombre vers 7,6-8,0 s. Lecture tardive : la forme n'est reconnaissable qu'à la fin.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire pixel",
+      "name_en": "Pixel typewriter",
+      "t": "0:08.15-0:08.75",
+      "frames": "f489-f525",
+      "fps": 60,
+      "mechanics": "« HAPPY CHUSEOK » apparaît lettre par lettre, une lettre toutes les 3 im (0,05 s) : H f489, HAPP f498, HAPPY f504, HAPPY CH f510, HAPPY CHUSE f519, complet f525. Pas de curseur ni de rebond, apparition sèche (état on/off), cohérente avec le pixel art.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f513.jpg",
+      "illus": {"from": 486, "to": 526, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre bilingue en polices bitmap",
+      "name_en": "Bilingual bitmap title",
+      "t": "0:08.75-0:11.5",
+      "frames": "f525-f690",
+      "fps": 60,
+      "mechanics": "추석 ≈ 13 % de la hauteur, jaune #F2D06B avec contour et ombre rouge sombre, effet de relief pixel ; dessous « HAPPY CHUSEOK » ≈ 6 % de la hauteur, capitales bicolores (moitié haute blanche, moitié basse magenta). Bloc calé à x 5-38 % : il touche la lune (x 37 %), le K disparaît derrière son bord, et un nuage passe derrière 추석. Il manque une marge de sécurité.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet saekdong à bandes décalées",
+      "name_en": "Staggered stripe wipe (saekdong)",
+      "t": "0:11.15-0:11.93",
+      "frames": "f669-f716",
+      "fps": 60,
+      "mechanics": "7 bandes verticales de 1/7 de la largeur (rouge, jaune, vert, bleu, violet, rose, blanc, avec un filet clair vertical dans chacune) tombent du haut. Départ en escalier de gauche à droite, ≈ 1 à 1,5 im d'écart : rouge f669, jaune f671, vert f672, bleu f673, violet f675, rose f676, blanc f677. Chaque bande couvre toute la hauteur en ≈ 8-10 im, légère accélération ; le bord d'attaque porte un petit carré blanc. Couverture totale f688, maintien 12 im (f688-f700). Sortie : les bandes se rétractent vers le bas, toujours en escalier gauche → droite, en ≈ 10-12 im chacune (rouge disparaît f711, blanc f716). Motif culturel (tissu saekdong) employé comme transition motivée.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 666, "to": 716, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Boucle parfaite cachée derrière le volet",
+      "name_en": "Seamless loop reset under a wipe",
+      "t": "0:10.8-0:12.0",
+      "frames": "f648-f719",
+      "fps": 60,
+      "mechanics": "Juste avant et pendant la couverture totale, la scène revient à l'état initial : arc-en-ciel retiré, guirlandes recolorées, plateau vidé, titre effacé. À la révélation (f716), l'image est identique à f0 : la vidéo boucle sans saut, idéal pour un post réseau social qui tourne en boucle.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f711.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette nuit violette + accents saekdong répétés",
+      "name_en": "Night palette with recurring festival accents",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "Fond 3 violets (#140F2E → #3A2A6E), un seul grand point chaud (lune #F9E3A0), puis 7 couleurs saturées (rouge, jaune, vert, bleu, violet, rose, blanc) réparties en petites touches : hanbok, guirlandes, songpyeon, arc-en-ciel, et enfin en aplats plein écran dans le volet. Le volet « paie » la palette introduite par petites doses.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule des guirlandes au changement de séquence",
+      "name_en": "String-light color switch",
+      "t": "0:04.0-0:11.0",
+      "frames": "f240-f660",
+      "fps": 60,
+      "mechanics": "Guirlandes en cyan, jaune et magenta pendant l'intro ; elles passent au blanc vif à f240 avec le doublement du tempo, puis reprennent leurs couleurs vers 11,0 s pour préparer la boucle. Changement d'état sec (1 im), sans fondu.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Recherche iconographique demandée dans le prompt",
+      "name_en": "Prompted cultural research",
+      "t": "0:00-0:12",
+      "frames": "f0-f719",
+      "fps": 60,
+      "mechanics": "Au moins 8 motifs de Chuseok dans un seul plan : pleine lune, lapin lunaire, songpyeon, table de fête, ganggangsullae, hanok, kakis, saekdong, lanternes. Chaque motif a un rôle animé (frappe, chute, ronde, tracé, volet) plutôt que d'être un décor figé.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le verbe « cherche » (서치해서) a poussé Claude à lister et intégrer une iconographie dense et juste ; c'est la meilleure partie du résultat. Demander une recherche avant la création enrichit nettement le vocabulaire visuel."},
+    {"kind": "direction", "insight": "« Pixel animation » suffit à verrouiller un style entier : grille unique, tramage, mouvements à pas tenus, polices bitmap. Une contrainte de médium forte rend la cohérence quasi automatique."},
+    {"kind": "structure", "insight": "Sans structure demandée, Claude a choisi une boucle de 12 s en deux actes (calme puis fête par doublement de tempo) et un volet de bouclage : bonne structure par défaut pour une scène d'ambiance."},
+    {"kind": "qa", "insight": "Aucune règle de marge ni de lisibilité : le titre latin percute la lune et un nuage passe derrière 추석. Il aurait fallu préciser une zone de titre réservée et l'interdiction de chevauchement."},
+    {"kind": "other", "insight": "Aucun son demandé, aucun son produit. Le tempo interne régulier (30 im) aurait permis une synchro parfaite si la bande-son avait été demandée en BPM."}
+  ],
+  "steal": [
+    "Transition par motif culturel : un volet à bandes décalées aux couleurs du thème (ici le saekdong), 1 im de décalage, 8-10 im par bande, maintien 12 im.",
+    "Cacher la remise à zéro d'une boucle derrière un volet plein écran : l'image révélée doit être identique à l'image 0.",
+    "Faire monter l'énergie sans coupe en doublant le tempo d'un cycle (60 → 30 im) au changement d'acte.",
+    "Construire une chaîne de causes visibles (frappe → objet qui tombe → plateau qui se remplit) pour raconter sans texte.",
+    "Chaque impact = anneau qui s'ouvre en ease-out en ≈ 15 im + petit écho graphique ailleurs dans le cadre."
+  ],
+  "flaws": [
+    "Titre latin collé à la lune : le K de CHUSEOK passe derrière son bord.",
+    "Un nuage traverse derrière le titre 추석 et brouille sa lecture.",
+    "Titre hangeul par points peu lisible pendant 0,75 s avant de se remplir.",
+    "Sprites de foule minuscules (≈ 6 % de la hauteur) : lisibles comme bruit coloré plus que comme danse.",
+    "Aucune bande-son alors que le rythme interne s'y prêtait parfaitement."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Les mécanismes clés (volet saekdong, anneau d'impact, chute du songpyeon, machine à écrire) sont entièrement couverts par les planches image par image ; le reste est une boucle d'ambiance répétitive en pixel art, loin du style typo cinétique visé."
+  }
+}

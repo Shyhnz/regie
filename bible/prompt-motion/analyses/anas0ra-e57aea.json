@@ -1,0 +1,342 @@
+{
+  "slug": "anas0ra-e57aea",
+  "title": "Shop chatbot mascot promo",
+  "handle": "@anas0ra",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Diorama 3D cosy cohérent, mascotte expressive et vrai récit en 15 s tiré d'un prompt d'une ligne ; textes trop petits, carte de fin terne et une image sautée.",
+  "summary": "Pub verticale 4:5 de 15 s pour Heeya (chatbot de boutique). Diorama 3D flottant : à « 19 h » la boutique ferme, la nuit tombe, un client demande « Vous livrez en Belgique ? », un document vole vers la mascotte-bulle qui répond aussitôt. Retour au jour, voile sombre, tagline « Votre site répond, même boutique fermée. ». Force : le concept et la mise en scène. Faiblesse : lisibilité des textes et fin générique.",
+  "prompt_vs_result": [
+    "Le prompt n'imposait presque rien : une vidéo « sympa » pour le site heeya.fr. Ni format, ni durée, ni style, ni message, ni musique.",
+    "Claude a tout décidé : diorama 3D procédural, mascotte en forme de bulle de dialogue, scénario boutique fermée → question nocturne → réponse instantanée, palette teal/pêche de la marque, format 4:5 de 15 s, tagline de fin.",
+    "L'URL a bien cadré la marque et la promesse (reprises fidèlement). Il aurait fallu fixer une taille minimale de texte pour mobile, la musique et son tempo, et une carte de fin plus travaillée."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#E8B48A", "role": "fond jour pêche (0-3 s, 12-13 s)"},
+      {"hex": "#0E3F3A", "role": "fond nuit teal profond, voile de fin"},
+      {"hex": "#1F7A68", "role": "teal de marque : auvent, porte, bulle réponse, icône logo"},
+      {"hex": "#86C9AA", "role": "menthe : dessus de l'île, gazon, buissons"},
+      {"hex": "#EEF2E8", "role": "crème : murs de la maison, bulle question"},
+      {"hex": "#F2A65A", "role": "orange : hublot, poignée de porte, lumière des vitrines"},
+      {"hex": "#E9FBF4", "role": "mascotte blanc nacré avec lueur menthe"},
+      {"hex": "#C9F0DF", "role": "2e ligne de la tagline"}
+    ],
+    "type": "Grotesque sans-serif type Inter ou SF (probable), semi-gras à gras, casse phrase. Légende ≈ 3 % de la hauteur, texte des bulles ≈ 1,6 %, logo ≈ 4 %, tagline ≈ 4,5 % ; interlettrage neutre ; 2e ligne de tagline en menthe.",
+    "texture": "Rendu 3D doux façon pâte à modeler (clay) ; ombres douces ; profondeur de champ (bokeh) qui augmente quand la caméra s'approche ; vignettage marqué (coins ≈ 30 % plus sombres) ; grain léger ; flaque de lumière menthe sous la mascotte ; lampadaire émissif ; matière nacrée brillante (clearcoat) sur la mascotte. Pas de flou de mouvement.",
+    "style": "Diorama 3D cosy, mascotte kawaii",
+    "coherence": "Système tenu par la palette tirée du teal de la marque plus un complément pêche, des formes toutes arrondies, et une mascotte qui reprend le glyphe du logo (bulle de chat). Ce qui casse : les textes HTML plats posés sur la 3D, et la carte de fin sous un voile teal grisâtre qui éteint le diorama."
+  },
+  "rhythm": {
+    "bpm": 80,
+    "sync": "lache",
+    "dead_time": "un-peu",
+    "notes": "Tempo mesuré 80,4 BPM (pulsation nette, 6,28) : un temps = 0,746 s = 22,4 im à 30 fps. Un seul plan, aucune coupe, aucun maintien statique détecté : la caméra dérive en permanence (travelling avant 0-5 s, recul 8,8-10,5 s, nouvelle poussée 12,1-13,2 s). Densité moyenne : un événement narratif toutes les 1 à 2 s (légende 0,27 s, lampadaire 2,5 s, bulle question 5,6 s, document 6,2 s, réponse 7,4 s, sauts 9,9 s, retour du jour 11,6 s, fin 13,2 s). Creux : 7,9-8,8 s (≈ 0,9 s) où seule la caméra dérive pendant la lecture de la réponse, et 14,5-15,06 s (≈ 0,55 s) de carte de fin figée. Pics d'énergie : 2,5 s (allumage), 5-7,6 s (bulles et document), 9,2 s et 12,6 s (mouvements caméra), 13,35 s (voile sombre). Calage sur la musique lâche : quelques repères tombent sur la grille, la caméra n'est accentuée sur aucun temps.",
+    "timeline": [
+      {"t": "0:00-0:00.27", "what": "Diorama flottant sur fond pêche, plan large (île ≈ 85 % de la largeur), mascotte endormie yeux fermés", "technique": "plan d'ouverture 3D, caméra en dérive lente"},
+      {"t": "0:00.27-0:02.4", "what": "Légende « 19 h. La boutique ferme. » en fondu (f8-f16) en haut à ≈ 12 % ; la mascotte ouvre les yeux f41-f44", "technique": "légende en fondu sur le temps, changement d'expression"},
+      {"t": "0:02.4-0:02.6", "what": "Le lampadaire s'allume, la légende disparaît", "technique": "allumage émissif, ponctuation narrative"},
+      {"t": "0:02.6-0:05.0", "what": "Travelling avant lent : de l'île entière au plan moyen de la façade ; le fond vire du pêche au teal nuit, vignettage", "technique": "dolly-in ease-in-out + bascule jour → nuit"},
+      {"t": "0:05.0-0:05.6", "what": "Une luciole monte au-dessus de l'auvent, la mascotte se balance et s'écrase légèrement", "technique": "particule unique, jeu du personnage"},
+      {"t": "0:05.6-0:05.75", "what": "Bulle question blanche « Vous livrez en Belgique ? » éclôt en haut à gauche (f168-f172)", "technique": "pop d'échelle 4-5 im"},
+      {"t": "0:06.2-0:06.5", "what": "Une fiche document s'envole de la vitrine vers la porte, grossit ×4, s'incline puis se redresse (f186-f196)", "technique": "vol d'objet avec rotation"},
+      {"t": "0:07.4-0:07.6", "what": "Bulle réponse teal « Oui, sous 3 à 5 jours ouvrés. » éclôt près de la mascotte (f222-f227), le document disparaît derrière ; bouche « o »", "technique": "document absorbé → réponse"},
+      {"t": "0:07.6-0:08.8", "what": "Mascotte yeux en ^^ (f236), lecture de la réponse, légère dérive caméra", "technique": "maintien de lecture"},
+      {"t": "0:08.8-0:10.5", "what": "Recul caméra vers le plan large nuit ; les bulles montent et rétrécissent hors champ (f265-f285) ; la mascotte saute avec écrasement (f297-f298, f313)", "technique": "pull-back + bulles ancrées en 3D + squash"},
+      {"t": "0:10.5-0:11.6", "what": "Plan large nocturne, lucioles, la mascotte sautille", "technique": "respiration, particules"},
+      {"t": "0:11.6-0:12.1", "what": "Rééclairage nuit → jour en ≈ 15 im (f348-f362), lampadaire éteint", "technique": "fondu d'éclairage"},
+      {"t": "0:12.1-0:13.2", "what": "Nouvelle poussée caméra vers la mascotte, saut d'image f376 → f377, mascotte souriante f390", "technique": "dolly-in"},
+      {"t": "0:13.2-0:13.7", "what": "Voile teal sombre à ≈ 70 % sur la scène (f396-f405)", "technique": "assombrissement vers carte de fin"},
+      {"t": "0:13.5-0:15.06", "what": "Logo Heeya (f404-f410), tagline en 2 lignes décalées de 4 im (f407, f411), pastille « heeya.fr » et « Gratuit pour commencer » entre f420 et f435, maintien final", "technique": "carte de fin en cascade"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille 80,4 BPM (temps = 22,4 im, demi-temps = 11,2 im). Un événement clé par geste, 19 gestes comptés : 14 tombent à ±2 im d'une barre (hasard ≈ 45 % à ce tempo, car ±2 im couvrent 5 im sur 11,2). Touches : légende f8 (temps f7,9), yeux ouverts f41 (demi-temps f41,5), lampadaire ≈ f75 (temps f75,1), luciole f153 (demi-temps f153,4), envol du document f186 (temps f187), pop réponse f222 (demi-temps f220,5), écrasement du saut f297-f298 (temps f299 + attaque verte f298), recul caméra f277 (temps f276,5), écrasement f342 (temps f343,7), clignement f366 (temps f366), écrasement f377 (demi-temps f377,2), yeux ^^ f390 (temps f388,4), logo complet f410 (temps f410,8). Ratés : bulle question f168 (+3,4), yeux ^^ f236 (+4), 2e écrasement f313 (+3), début du voile f397 (-2,6), pastille url non mesurée. Indice automatique : aucune synchro (p corrigé 0,61 ; corrélation attaques z = 1,24 ; énergie r = 0,08). Le mouvement de caméra, qui porte l'essentiel de l'énergie, n'est accentué sur aucun temps ; aucune pulsation visuelle. 74 % contre 45 % est un indice, pas une preuve nette : partielle.",
+    "synced": ["apparitions", "atterrissages", "texte"],
+    "style_match": "Musique calme à 80 BPM (genre non identifiable par les mesures, probable acoustique douce) : colle au diorama cosy, aux travellings lents et aux pops doux.",
+    "how_built": "Prompt d'une ligne sans tempo ni bande-son. Claude a probablement écrit la timeline en secondes avec des repères espacés d'environ 0,75 s ou 1,5 s, ce qui fait tomber plusieurs apparitions près des temps (0,27 s, 6,2 s, 9,96 s, 13,7 s) ; mais la caméra est continue et rien n'est verrouillé sur les attaques. Pour une vraie synchro, il aurait fallu donner le BPM et caler les pops et atterrissages sur une grille."
+  },
+  "techniques": [
+    {
+      "cat": "3d",
+      "name_fr": "Diorama flottant procédural",
+      "name_en": "floating island diorama",
+      "t": "0:00-0:03",
+      "frames": "f0-f90",
+      "fps": 30,
+      "mechanics": "Scène miniature sur un disque-île (bord rayé menthe/crème/teal avec rivets) : maison en primitives (boîtes, prisme de toit, auvent rayé, hublot), arbre en sphères, buissons, banc, lampadaire, pavés instanciés. Île ≈ 85 % de la largeur au plan d'ouverture, centrée, fond uni pêche. Construction très probablement en Three.js (géométrie stable, aucun morphing de vidéo IA).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Mascotte qui reprend la forme du produit",
+      "name_en": "product-shaped mascot",
+      "t": "0:00-0:14",
+      "frames": "f0-f420",
+      "fps": 30,
+      "mechanics": "Le chatbot est incarné par une bulle de dialogue en volume (capsule arrondie + queue), matière nacrée brillante, visage dessiné (yeux à reflets, joues roses), flaque de lumière menthe au sol. Il reprend le glyphe du logo Heeya (bulle de chat). Taille ≈ 15 % de la largeur en plan large, ≈ 40 % en plan moyen.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Expressions par remplacement de visage",
+      "name_en": "face swap expressions",
+      "t": "0:01.33-0:07.9",
+      "frames": "f40-f44, f221-f232, f236",
+      "fps": 30,
+      "mechanics": "Trois états suffisent au récit : dort (yeux fermés) → éveil f40-f44 (passage en 2 étapes : yeux mi-ouverts puis grands ouverts), parle (bouche « o » f221-f232 pendant que la réponse éclôt), content (yeux en ^^ dès f236). Remplacement instantané de texture, pas d'interpolation ; clignements ponctuels (f366).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-002-move-f224.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Saut avec écrasement à l'atterrissage",
+      "name_en": "hop with squash and stretch",
+      "t": "0:09.87-0:10.5",
+      "frames": "f294-f315",
+      "fps": 30,
+      "mechanics": "La mascotte s'aplatit à ≈ 45 % de sa hauteur sur 2 im (f297-f298), puis s'étire en remontant (f299-f303, légèrement plus haute que large) et repart ; second écrasement f313. L'écrasement f297-f298 tombe sur le temps f299 et une attaque audio f298. À 30 fps l'écrasement ne dure que 2 im : lisible mais sec.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f304.jpg",
+      "illus": {"from": 294, "to": 304, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Travelling avant lent vers le personnage",
+      "name_en": "slow dolly-in",
+      "t": "0:00-0:05.0",
+      "frames": "f0-f150",
+      "fps": 30,
+      "mechanics": "De l'île entière (≈ 85 % de la largeur) au plan moyen façade + mascotte (mascotte ≈ 40 % de la largeur) en ≈ 4,5 s, courbe ease-in-out, légère orbite vers la droite ; la profondeur de champ se creuse à mesure que la caméra approche (arrière-plan flou).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul caméra qui referme la scène",
+      "name_en": "reveal pull-back",
+      "t": "0:08.8-0:10.5",
+      "frames": "f265-f315",
+      "fps": 30,
+      "mechanics": "Du plan moyen au plan large nocturne en ≈ 1,7 s (≈ 50 im), ease-in-out ; la maison passe de ≈ 100 % à ≈ 55 % de la largeur. Le recul sert de sortie aux bulles, qui reculent avec le décor. Accélération brusque perçue autour de f277 (temps f276,5).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f277.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Seconde poussée caméra vers la mascotte",
+      "name_en": "second push-in",
+      "t": "0:12.1-0:13.2",
+      "frames": "f362-f396",
+      "fps": 30,
+      "mechanics": "Poussée du plan large au plan moyen en ≈ 1 s avec orbite vers la gauche ; saut visible entre f376 et f377 (cadre nettement plus serré d'une image à l'autre), probable image perdue à la capture temps réel.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f371.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Profondeur de champ, vignettage et grain",
+      "name_en": "bokeh DOF, vignette and grain",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Post-traitement constant : flou de profondeur qui suit la distance caméra (fort en plan moyen sur les arbres et le bord de l'île), vignettage qui assombrit les coins d'environ 30 %, grain fin. Donne l'effet maquette miniature (tilt-shift implicite).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule jour → nuit par l'éclairage",
+      "name_en": "day-to-night relight",
+      "t": "0:02.5-0:04.5",
+      "frames": "f75-f135",
+      "fps": 30,
+      "mechanics": "Le lampadaire s'allume vers f75 (sur le temps f75,1), puis le fond passe du pêche #E8B48A au teal profond #0E3F3A en ≈ 2 s, en même temps que le travelling avant ; les vitrines gardent leur lumière orange chaude. La couleur raconte l'heure (« 19 h ») sans autre texte.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Retour au jour en accéléré",
+      "name_en": "night-to-day relight",
+      "t": "0:11.6-0:12.07",
+      "frames": "f348-f362",
+      "fps": 30,
+      "mechanics": "Fondu d'éclairage en ≈ 15 im (0,5 s) : fond teal → taupe → pêche, lampadaire éteint vers f360. Pas de légende pour dire « le matin » : le sens reste flou.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 344, "to": 364, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende horaire en fondu",
+      "name_en": "caption fade-in",
+      "t": "0:00.27-0:02.5",
+      "frames": "f8-f75",
+      "fps": 30,
+      "mechanics": "« 19 h. La boutique ferme. » en blanc gras, ≈ 3 % de la hauteur, centré à ≈ 12 % du haut ; fondu d'opacité sur 8 im (f8-f16) qui démarre sur le temps f7,9 ; tenue ≈ 2 s ; sortie avant f75. Trop petit pour un format mobile.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bulle de question qui éclôt",
+      "name_en": "speech bubble pop-in",
+      "t": "0:05.6-0:05.75",
+      "frames": "f168-f172",
+      "fps": 30,
+      "mechanics": "Bulle blanche avec queue, texte gris foncé gras ≈ 1,6 % de la hauteur, en haut à gauche (≈ 55 % de la largeur). Échelle de ≈ 20 % à 100 % en 4-5 im, ease-out (dépassement non visible à 30 fps). Ancrée sous l'auvent comme si elle venait de la rue.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Document qui s'envole vers la porte",
+      "name_en": "knowledge card flight",
+      "t": "0:06.2-0:06.53",
+      "frames": "f186-f196",
+      "fps": 30,
+      "mechanics": "Une fiche (icône teal + lignes de texte grises) part petite de la vitrine centrale et vole vers la porte à droite en ≈ 10 im, en grossissant ≈ ×4 et en s'inclinant d'environ 15° avant de se redresser (f196). Départ sur le temps f187. Représente la base de connaissance que le bot lit.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 184, "to": 198, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Le document devient la réponse",
+      "name_en": "document absorbed into answer bubble",
+      "t": "0:07.4-0:07.57",
+      "frames": "f222-f227",
+      "fps": 30,
+      "mechanics": "La bulle réponse teal #1F7A68 (texte blanc gras) éclôt depuis le haut de la mascotte : minuscule à f222, pleine taille à f227 (5 im, ease-out), en remontant d'environ 10 % de la hauteur. Le document sur la porte rétrécit derrière elle et disparaît à f226. La mascotte ouvre la bouche en « o » pendant l'éclosion. Départ à +1,5 im du demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f224.jpg",
+      "illus": {"from": 219, "to": 229, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bulles ancrées dans l'espace 3D",
+      "name_en": "world-anchored speech bubbles",
+      "t": "0:08.8-0:09.5",
+      "frames": "f265-f285",
+      "fps": 30,
+      "mechanics": "Pendant le recul caméra, les bulles ne restent pas collées à l'écran : elles montent et rétrécissent avec la scène (la bulle question sort par le haut à f277, la bulle réponse rapetisse jusqu'à disparaître vers f285), comme des objets placés dans le décor (CSS3D ou projection 3D probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f277.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Lucioles isolées",
+      "name_en": "floating light motes",
+      "t": "0:05.1-0:11.6",
+      "frames": "f153-f348",
+      "fps": 30,
+      "mechanics": "Points lumineux menthe (≈ 1 % de la largeur, halo doux) qui montent lentement : la première apparaît f153 (demi-temps) et monte d'environ 10 % de la hauteur en 14 im ; d'autres entourent la mascotte pendant les sauts nocturnes. Rares, donc pas de mur de particules.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f151.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flaque de lumière sous le personnage",
+      "name_en": "character ground glow",
+      "t": "0:03-0:13",
+      "frames": "f90-f396",
+      "fps": 30,
+      "mechanics": "Une tache lumineuse menthe sur les pavés suit la mascotte (lumière ponctuelle sous elle). Elle la détache du sol la nuit et signale qu'elle est « active ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit problème → solution en temps réel",
+      "name_en": "after-hours problem-solution story",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Structure en 4 temps sur 15 s : situation (19 h, la boutique ferme, 0-2,5 s) → nuit et question client (2,5-6 s) → le bot lit sa doc et répond (6-8 s) → recul, retour du jour et promesse écrite (8,8-15 s). La tagline finale formule ce que la scène vient de montrer.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Voile sombre vers la carte de fin",
+      "name_en": "dim-down to end card",
+      "t": "0:13.2-0:13.5",
+      "frames": "f396-f405",
+      "fps": 30,
+      "mechanics": "Un calque teal sombre monte à ≈ 70 % d'opacité en ≈ 9 im sur la scène qui reste visible derrière ; début à -2,6 im du demi-temps. Simple et fonctionnel mais le diorama devient une bouillie grise.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f397.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Carte de fin en cascade",
+      "name_en": "staggered end card",
+      "t": "0:13.5-0:14.5",
+      "frames": "f404-f435",
+      "fps": 30,
+      "mechanics": "Logo (icône teal arrondie + « Heeya ») en fondu f404-f410, complet sur le temps f410,8 ; tagline ligne 1 dès f407, ligne 2 dès f411 (décalage 4 im = 0,13 s), légère montée ; pastille contour « heeya.fr » et mention grise « Gratuit pour commencer » entre f420 et f435. Bloc centré à ≈ 35-55 % de la hauteur.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f397.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Tagline bicolore",
+      "name_en": "two-tone tagline",
+      "t": "0:13.7-0:15",
+      "frames": "f411-f448",
+      "fps": 30,
+      "mechanics": "« Votre site répond, » en blanc, « même boutique fermée. » en menthe #C9F0DF, grotesque gras ≈ 4,5 % de la hauteur, centré, interligne serré. La couleur de la 2e ligne porte le bénéfice.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette dérivée de la marque",
+      "name_en": "brand-derived palette",
+      "t": "0:00-0:15",
+      "frames": "f0-f448",
+      "fps": 30,
+      "mechanics": "Le teal du logo Heeya est décliné en 3 valeurs (nuit #0E3F3A, teal #1F7A68, menthe #86C9AA), complété par un pêche chaud #E8B48A et un orange d'accent #F2A65A ; tout le décor, y compris le mobilier, reste dans ces teintes.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Repères ponctuels calés sur la pulsation à 80 BPM",
+      "name_en": "sparse beat-aligned accents",
+      "t": "0:00.27-0:13.7",
+      "frames": "f8, f186, f297, f410",
+      "fps": 30,
+      "mechanics": "Quelques événements tombent sur la grille : début de la légende f8 (temps f7,9), envol du document f186 (temps f187), écrasement du saut f297-f298 (temps f299, attaque f298), logo complet f410 (temps f410,8). La caméra, elle, glisse sans accent. Calage partiel, à rendre systématique.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f304.jpg, microM-006-move-f397.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt ne donne qu'une URL. Claude a lu le site (chatbot pour boutiques, teal de marque, promesse « répond même quand c'est fermé ») et en a tiré tout le scénario : l'URL est l'entrée la plus riche du prompt."},
+    {"kind": "direction", "insight": "« Sympa » a été traduit en diorama 3D cosy et mascotte kawaii : sans direction artistique imposée, Claude a pris le registre doux et rassurant, cohérent avec un outil pour petits commerçants."},
+    {"kind": "structure", "insight": "Aucune durée ni format demandés : Claude a choisi un 4:5 vertical (720x900) de 15 s, format réseau social, et une structure situation → question → réponse → promesse."},
+    {"kind": "build", "insight": "Rendu très probablement en Three.js procédural (primitives, matière nacrée, profondeur de champ, vignettage) avec textes HTML superposés ; à 30 fps et capturé en temps réel (image sautée f376 → f377)."},
+    {"kind": "qa", "insight": "Aucune contrainte de lisibilité : les bulles à ≈ 1,6 % de la hauteur passent la validation de Claude mais sont illisibles sur téléphone. Il faut fixer une taille minimale (≥ 4 % de la hauteur en vertical)."},
+    {"kind": "other", "insight": "Sans tempo dans le prompt, la synchro reste fortuite ou partielle ; donner le BPM de la piste permet de caler pops et sauts sur les temps."}
+  ],
+  "steal": [
+    "Incarner le produit en mascotte qui reprend sa forme (chatbot = bulle de dialogue) ; trois expressions (dort, parle, content) suffisent à raconter.",
+    "Raconter la promesse par l'heure : légende « 19 h », bascule d'éclairage jour → nuit, puis le produit travaille seul quand la boutique est fermée.",
+    "Matérialiser la source de la réponse : un document vole vers le personnage, puis disparaît derrière la bulle réponse qui éclôt en 5 im.",
+    "Ancrer les bulles dans la 3D : au recul caméra, elles montent et rétrécissent avec le décor au lieu de rester collées à l'écran.",
+    "Faire tomber l'écrasement d'un saut sur le temps musical, 0 à 2 im avant la barre, pour que le personnage danse sans en avoir l'air."
+  ],
+  "flaws": [
+    "Textes trop petits : bulles ≈ 1,6 % et légende ≈ 3 % de la hauteur, illisibles sur mobile.",
+    "Carte de fin générique sous un voile teal à 70 % qui transforme le diorama en bouillie grise.",
+    "Image sautée f376 → f377 pendant la poussée caméra (capture temps réel probable).",
+    "Retour au jour (11,6-12 s) non expliqué : on croit à une boucle plutôt qu'au lendemain matin.",
+    "Synchro musicale partielle : la caméra dérive en continu sans aucun accent sur les temps."
+  ],
+  "deep_study": {"worth": false, "why": "Source native à 30 fps et mouvements surtout lents (dérive caméra, fondus d'éclairage) : les leçons utiles (mise en scène, pop des bulles, écrasement en 2 im) se lisent déjà sur les planches. L'intérêt est narratif et de construction 3D, pas de courbe fine."}
+}

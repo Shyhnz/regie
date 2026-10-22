@@ -1,0 +1,285 @@
+{
+  "slug": "aisongman-71ffac",
+  "title": "Pixel art card battle game",
+  "handle": "@aisongman",
+  "family": "personnages",
+  "craft": 3,
+  "craft_reason": "Système pixel cohérent et lisible, retours de jeu complets (aperçus, flèche de visée, élan, flash, chiffres, particules, bandeau) ; mais capture brute à 15 fps, muette, sans cadrage, 36 % immobile.",
+  "summary": "Capture de 15 s d'un jeu de cartes jouable façon Hearthstone en pixel art : la magicienne Vela affronte le viking Brakka. On voit des survols de cartes, une boule de feu ciblée, deux attaques de serviteurs, le bandeau « ENEMY TURN », puis l'adversaire qui joue deux cartes et détruit un serviteur. Le jeu est riche et cohérent ; la vidéo n'est qu'un enregistrement d'écran sans montage ni son.",
+  "prompt_vs_result": [
+    "Trois lignes : un jeu de cartes en 1 contre 1 comme Hearthstone, « Just make it. As best you can. », en pixel art. Aucune consigne de vidéo, de durée, de son ni de mise en scène.",
+    "Claude a tout inventé : deux héros nommés, une dizaine de cartes (Fireball, Frost Yeti, Tide Spirit, Execute…), les mots-clés Charge, Freeze, Battlecry, Taunt, l'adversaire automatique et tous les retours visuels d'action.",
+    "La référence « Hearthstone » a suffi à transmettre toute une grammaire de jeu. Rien ne cadrait la vidéo : capture à 15 fps, muette, au rythme du joueur. Il aurait fallu demander une capture 60 fps avec le son."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1E2350", "role": "fond : mur de briques nuit"},
+      {"hex": "#3346A8", "role": "briques bleues claires, cadres des cartes du joueur"},
+      {"hex": "#1F6B45", "role": "plateau en feutre vert"},
+      {"hex": "#6B3A1E", "role": "cadre en bois du plateau"},
+      {"hex": "#F0A830", "role": "bouton « END TURN », pièces de mana"},
+      {"hex": "#C0304A", "role": "camp adverse : contours, carte Execute, flèche de visée"},
+      {"hex": "#E05A7A", "role": "chiffres de dégâts, points de vie, texte du bandeau"},
+      {"hex": "#EAD9B0", "role": "parchemin du texte des cartes"},
+      {"hex": "#5ED38A", "role": "contour « peut attaquer », particules de mort"},
+      {"hex": "#F4F4F4", "role": "flash blanc d'impact et de mort"}
+    ],
+    "type": "Police bitmap en capitales (type Press Start 2P ou Silkscreen, probable), sans lissage. Noms de cartes ≈ 1,8 % de la hauteur, bandeau « ENEMY TURN » ≈ 2,2 %, chiffres de dégâts ≈ 3,5 %, contour sombre de 1 px.",
+    "texture": "Pixel art net sans flou ni anticrénelage, ombres en aplats, léger vignettage sombre sur le feutre, flashs blancs pleins, particules carrées d'un pixel.",
+    "style": "Pixel art de jeu de cartes",
+    "coherence": "Tout tient par le code couleur des camps (bleu joueur, rouge adversaire, vert « peut attaquer ») et par une seule grammaire de cadre (médaillons ovales pour les serviteurs, carrés pour les héros, bouclier pour Taunt). Rien ne casse le système ; seule la capture à 15 fps l'abîme."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio. Une seule prise continue à 15 fps (225 im), aucune coupe. Le rythme est celui du joueur puis de l'adversaire automatique : un événement de jeu toutes les 0,5 à 1,5 s (survol, visée, impact, mort, bandeau, carte révélée). 8 maintiens statiques pour 5,4 s, soit 36 % du film : 1,6-1,93 s, 4,27-5,27 s (1 s), 5,8-6,27 s, 6,87-7,27 s, 8,13-8,53 s, 9,2-9,53 s, 11,4-12,33 s (lecture de la carte adverse), 13,07-14,07 s (1 s). Les animations de jeu durent 2 à 3 images à cette cadence, d'où une impression saccadée.",
+    "timeline": [
+      {"t": "0:00-0:00.53", "what": "Infobulle du héros Vela (vie 27/30, deck 26), survol des cartes Bulwark Guard puis Fireball agrandies au-dessus de la main", "technique": "aperçu agrandi au survol"},
+      {"t": "0:00.73-0:01.2", "what": "Fireball sélectionnée, flèche de visée courbe en pointillés jusqu'au Frost Yeti adverse, crochets d'angle sur la cible", "technique": "flèche de visée + crochets"},
+      {"t": "0:01.27-0:02.0", "what": "La carte se dissout en étincelles bleues, aperçu du Frost Yeti, la cible devient blanche avec « -6 »", "technique": "flash d'impact + chiffre de dégâts"},
+      {"t": "0:02.0-0:02.7", "what": "Le yeti adverse disparaît en particules vertes", "technique": "mort en dispersion de pixels"},
+      {"t": "0:02.8-0:03.5", "what": "Survol de Tide Spirit avec infobulle « FREEZE », la carte part vers le plateau, anneau vert à l'emplacement", "technique": "pose de carte + anneau d'emplacement"},
+      {"t": "0:03.5-0:05.7", "what": "Troisième serviteur posé, maintien de 1 s, nouveaux survols", "technique": "maintien"},
+      {"t": "0:06.0-0:07.5", "what": "Tide Spirit vise Wolf Rider, élan, double flash, « -2 » et « -3 », Wolf Rider devient blanc puis se disperse", "technique": "élan d'attaque + flash + mort"},
+      {"t": "0:08.0-0:09.9", "what": "Aperçu de Night Blade (« BATTLECRY »), le yeti l'attaque, mort en silhouette blanche puis particules", "technique": "aperçu + attaque"},
+      {"t": "0:10.0-0:10.8", "what": "Bandeau « ENEMY TURN » plein largeur, bouton grisé, l'adversaire pioche une carte", "technique": "bandeau de changement de tour"},
+      {"t": "0:11.13-0:12.5", "what": "Grande carte Arena Champion qui glisse du bord gauche, puis serviteur à cadre bouclier (Taunt) sur le plateau", "technique": "révélation de carte adverse"},
+      {"t": "0:12.8-0:14.0", "what": "Carte rouge Execute qui glisse du bord gauche, icône d'épées sur le Tide Spirit du joueur", "technique": "révélation de sort + ciblage"},
+      {"t": "0:14.0-0:14.93", "what": "Le Tide Spirit devient blanc, se disperse en pixels, les deux serviteurs restants se resserrent ; l'historique se met à jour", "technique": "mort + resserrement"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier : pas de mesure possible.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette, alors qu'un jeu de cartes repose sur les sons de pose et d'impact.",
+    "how_built": "Enregistrement d'écran d'une partie, sans le son du système. Le prompt ne parlait ni de vidéo ni de son."
+  },
+  "techniques": [
+    {
+      "cat": "ui",
+      "name_fr": "Aperçu agrandi au survol",
+      "name_en": "hover card preview",
+      "t": "0:00.2-0:00.47",
+      "frames": "f3-f7",
+      "fps": 15,
+      "mechanics": "La carte survolée dans la main (≈ 13 % de la hauteur) apparaît agrandie ≈ 1,7x et remontée d'≈ 10 % de la hauteur, en 1 im (instantané à 15 fps). Même logique sur le plateau : aperçu ≈ 40 % de la hauteur posé à côté du serviteur survolé (Frost Yeti f19, Wolf Rider f95, Night Blade f135).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f4.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Infobulle de mot-clé",
+      "name_en": "keyword tooltip",
+      "t": "0:02.87-0:03.13",
+      "frames": "f43-f47",
+      "fps": 15,
+      "mechanics": "Boîte sombre #1A1A2E à bord clair, collée en haut à droite de l'aperçu, mot-clé en jaune (« FREEZE », « CHARGE », « BATTLECRY ») puis sa définition en blanc, 3 lignes en police bitmap. Apparaît et disparaît avec l'aperçu, sans animation.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f44.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Flèche de visée courbe en pointillés et crochets de cible",
+      "name_en": "curved dotted targeting arrow",
+      "t": "0:00.8-0:01.2",
+      "frames": "f12-f18",
+      "fps": 15,
+      "mechanics": "Ligne de carrés rouges #C0304A d'≈ 6 px, en arc (courbe de Bézier probable) qui part de la carte Fireball et suit le curseur ; la cible reçoit 4 crochets d'angle, les serviteurs adverses un contour rouge. Le tracé se met à jour à chaque image, sans flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 11, "to": 18, "n": 6}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Élan d'attaque",
+      "name_en": "attack lunge",
+      "t": "0:06.33-0:06.6",
+      "frames": "f95-f99",
+      "fps": 15,
+      "mechanics": "L'attaquant quitte sa case vers la cible en 2 im (f95-f97, ≈ 12 % de la hauteur en diagonale, pas réguliers : quasi linéaire), touche à f97, revient en 1-2 im (f98-f99). Aller-retour total ≈ 4 im = 0,27 s. Aucun écrasement ni dépassement visible à cette cadence.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f82.jpg",
+      "illus": {"from": 90, "to": 105, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash blanc à l'impact",
+      "name_en": "hit flash",
+      "t": "0:06.53-0:06.67",
+      "frames": "f98-f100",
+      "fps": 15,
+      "mechanics": "Au contact, attaquant et cible passent en teinte blanche presque pleine 1 im, puis gardent un voile blanc qui s'efface en 2-3 im. Même effet sur le yeti touché par la boule de feu (f27-f30).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chiffres de dégâts",
+      "name_en": "floating damage numbers",
+      "t": "0:06.53-0:07.0",
+      "frames": "f98-f105",
+      "fps": 15,
+      "mechanics": "« -2 », « -3 », « -6 » en rose #E05A7A à contour sombre, ≈ 3,5 % de la hauteur, posés sur le portrait touché ; ils restent ≈ 6-10 im (0,4-0,7 s) en montant légèrement. Les points de vie du serviteur passent au rouge.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f82.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Mort en silhouette blanche puis dispersion de pixels",
+      "name_en": "white silhouette death dissolve",
+      "t": "0:14.07-0:14.8",
+      "frames": "f211-f222",
+      "fps": 15,
+      "mechanics": "Le serviteur tué devient une silhouette blanche pleine (f212-f216, 5 im = 0,33 s), puis éclate en une vingtaine de pixels verts, orange et blancs qui dérivent et s'éteignent en ≈ 6 im (f217-f222). Même séquence pour Wolf Rider (f102-f112) et Night Blade (f142-f149).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 208, "to": 222, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Carte de sort qui se dissout en étincelles",
+      "name_en": "spell card sparkle dissolve",
+      "t": "0:01.27-0:01.67",
+      "frames": "f19-f25",
+      "fps": 15,
+      "mechanics": "À l'emplacement que la Fireball occupait au bout de la main, une poignée d'étincelles bleues de 1-2 px se dispersent vers la droite pendant ≈ 6 im ; la main se resserre (4 cartes au lieu de 5).",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pose d'une carte avec anneau d'emplacement",
+      "name_en": "card play with slot ring",
+      "t": "0:03.2-0:04.0",
+      "frames": "f48-f60",
+      "fps": 15,
+      "mechanics": "La carte Tide Spirit quitte la main et monte vers le plateau en ≈ 3 im (f48-f50) ; un anneau vert fin marque l'emplacement libre à droite (f51-f52), puis le serviteur est en place à f60. Mouvement rapide, pas d'impact au sol.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f44.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Resserrement des serviteurs après une mort",
+      "name_en": "board re-centering slide",
+      "t": "0:14.47-0:14.6",
+      "frames": "f217-f219",
+      "fps": 15,
+      "mechanics": "Après la disparition du serviteur de gauche, les deux restants glissent d'≈ 4 % de la largeur vers la gauche en 2-3 im pour rester centrés : la rangée se referme sans trou.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bandeau de changement de tour",
+      "name_en": "turn banner",
+      "t": "0:10.0-0:10.8",
+      "frames": "f150-f162",
+      "fps": 15,
+      "mechanics": "Bande sombre #1E2238 plein largeur (≈ 4 % de la hauteur) bordée de deux filets roses, texte « ENEMY TURN » rose centré. Entrée en fondu 2 im (≈ 30 % f150, 60 % f151, plein f152), tenue 9 im = 0,6 s, sortie en 1-2 im (f161). Le bouton « END TURN » orange devient gris « ENEMY TURN » en même temps.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 149, "to": 162, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pioche adverse",
+      "name_en": "enemy card draw",
+      "t": "0:10.47-0:10.8",
+      "frames": "f157-f162",
+      "fps": 15,
+      "mechanics": "Léger assombrissement global 1 im (f157), puis un dos de carte bleu part du deck adverse (droite) et file vers la main en haut à gauche en ≈ 4 im ; le compteur passe de « 5 CARDS » à « 6 CARDS ».",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Révélation de la carte adverse depuis le bord",
+      "name_en": "opponent card reveal slide-in",
+      "t": "0:12.8-0:12.93",
+      "frames": "f192-f194",
+      "fps": 15,
+      "mechanics": "La carte jouée par l'adversaire (≈ 40 % de la hauteur) entre par le bord gauche : liseré f192, moitié f193, en place f194 (x ≈ 3-14 % de la largeur), ease-out en 3 im ; elle reste ≈ 17 im (1,1 s) pour la lecture puis disparaît d'un coup. Même geste pour Arena Champion (f167-f168, tenue 1,2 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f194.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Plateau à la Hearthstone",
+      "name_en": "card battle board layout",
+      "t": "0:00-0:15",
+      "frames": "f0-f224",
+      "fps": 15,
+      "mechanics": "Axe vertical symétrique : héros adverse en haut au centre (≈ 15 % de la hauteur), plateau feutre ≈ 74 x 50 % du cadre coupé par une ligne pointillée, héros du joueur en bas, main en éventail serré en bas (cartes ≈ 13 % de la hauteur), decks et bouton « END TURN » à droite, historique « PLAYED » à gauche, mana en haut et en bas à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Police bitmap en capitales",
+      "name_en": "bitmap pixel font",
+      "t": "0:00-0:15",
+      "frames": "f0-f224",
+      "fps": 15,
+      "mechanics": "Une seule police pixel en capitales pour tout (noms, mots-clés, boutons, compteurs), couleur selon le rôle : blanc pour les noms, jaune pour les mots-clés, rouge-rose pour les dégâts et la vie, bleu clair pour les types (« SPELL », « ELEMENTAL »).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur des camps et des états",
+      "name_en": "faction and state color coding",
+      "t": "0:00-0:15",
+      "frames": "f0-f224",
+      "fps": 15,
+      "mechanics": "Bleu = joueur (cadres, cartes), rouge = adversaire (portrait, contours ciblés, sort Execute), vert = serviteur qui peut agir (contour lumineux), gris = bouton inactif. L'état se lit sans texte.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur de briques nuit et feutre vignetté",
+      "name_en": "pixel brick wall and felt table",
+      "t": "0:00-0:15",
+      "frames": "f0-f224",
+      "fps": 15,
+      "mechanics": "Fond fixe en briques bleu nuit irrégulières (2 tons + quelques briques claires), plateau vert avec vignettage elliptique plus sombre sur les bords et cadre en bois à rivets dorés aux coins. Totalement statique.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Capture d'écran à 15 fps",
+      "name_en": "15 fps screen capture",
+      "t": "0:00-0:15",
+      "frames": "f0-f224",
+      "fps": 15,
+      "mechanics": "Les animations de jeu (élan, glissement de carte, bandeau) tiennent en 2-3 images à 15 fps : on perd toute courbe d'accélération, tout dépassement et toute fluidité. 36 % du film est immobile, au rythme de la lecture du joueur.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Like Hearthstone » est un brief compressé très efficace : plateau, héros, mana, aperçus au survol, flèche de visée, Taunt, Battlecry, bandeau de tour et adversaire automatique sont tous venus de ce seul nom."},
+    {"kind": "direction", "insight": "« In pixel art style » a été tenu partout (sprites, police bitmap, particules carrées, aucune ombre floue) : un style nommé en deux mots suffit quand il est très codifié."},
+    {"kind": "other", "insight": "« Just make it. As best you can. » laisse Claude décider du contenu : il a écrit une dizaine de cartes avec des mots-clés cohérents et des retours visuels pour chaque action, ce qui donne de la matière à filmer."},
+    {"kind": "qa", "insight": "Le prompt ne demandait pas de vidéo : la publication est un enregistrement d'écran à 15 fps, muet, sans cadrage. Pour une vidéo de démonstration, il faut demander une capture à 60 fps avec le son, ou un mode démo scénarisé."},
+    {"kind": "build", "insight": "Pile technique non indiquée ; un jeu de navigateur en HTML et JavaScript est probable (rendu pixel net, interface en couches)."}
+  ],
+  "steal": [
+    "Montrer une action par une flèche courbe en pointillés et des crochets d'angle sur la cible : le regard suit le trajet avant l'impact.",
+    "Impact lisible en trois temps : élan de 2-3 im, flash blanc des deux éléments, chiffre qui reste ≈ 0,5 s sur l'élément touché.",
+    "Faire sortir un élément par une silhouette blanche de 0,3 s puis une dispersion en pixels, et resserrer les voisins pour fermer le trou.",
+    "Changement d'état annoncé par un bandeau sombre plein largeur à filets colorés : entrée 2 im, tenue 0,6 s, sortie 1-2 im.",
+    "Révéler l'action de l'autre camp par une grande carte qui glisse du bord en 2-3 im et reste ≈ 1 s pour la lecture."
+  ],
+  "flaws": [
+    "Capture brute à 15 fps : les animations de 2-3 images saccadent et perdent leurs courbes.",
+    "Vidéo muette alors qu'un jeu de cartes vit de ses sons de pose et d'impact.",
+    "36 % du film immobile (8 maintiens, jusqu'à 1 s) : rythme du joueur, pas d'un monteur.",
+    "Aucun cadrage ni zoom : textes des cartes à ≈ 1,5 % de la hauteur, illisibles sur téléphone.",
+    "Ni accroche ni fin : la vidéo commence et s'arrête au milieu d'une partie."
+  ],
+  "deep_study": {"worth": false, "why": "Capture à 15 fps : chaque animation tient en 2-3 images déjà toutes visibles sur les planches ; il n'y a ni courbe ni synchro à étudier en continu."}
+}

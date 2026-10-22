@@ -1,0 +1,317 @@
+{
+  "slug": "ror-fly-9950f1",
+  "title": "Negroni recipe animation",
+  "handle": "@Ror_Fly",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Système illustré cohérent et lisible, données fidèles (niveau, couleur du mélange, compteurs, étapes) ; mais muet, pas de mise en scène, et changement de carte bâclé (1 image fantôme).",
+  "summary": "Recette du Negroni en 30 s, plan unique 1080×1080 : verre dessiné à la main, bouteilles qui versent, niveau qui monte avec graduations, carte d'étape et frise de 6 étapes en bas. Très bon design d'information (la couleur du liquide mélange les ingrédients), style crayonné chaleureux. Faible : rythme lent (5 s par versement), aucune caméra, aucun son, transitions de carte quasi absentes.",
+  "prompt_vs_result": [
+    "Une recette animée en HTML/JS, style explainer, du verre vide au cocktail fini, avec ingrédients et dosages visibles au moment où ils tombent dans le verre, durée 30 s.",
+    "Le style crayonné sur papier crème, la palette corail-rouge Negroni, la carte d'étape avec barre de progression, la frise de 6 étapes cochées, les graduations 1-2-3 oz, le mélange de couleur, l'éclat final « CIN CIN! ».",
+    "Le prompt cadrait bien le contenu et la durée (30,00 s pile). Rien sur le rythme, le son ni les transitions : le modèle a fait des blocs réguliers de 5 s et des changements de carte secs. Il aurait fallu demander bruitages et cadence."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F8F8F0", "role": "fond papier crème (léger bruit)"},
+      {"hex": "#E87078", "role": "corail : titre, chiffres, frise active"},
+      {"hex": "#3A2A30", "role": "encre : contours, texte principal"},
+      {"hex": "#D8E8F0", "role": "verre bleu glacier"},
+      {"hex": "#D85060", "role": "Campari dans le verre (2 oz)"},
+      {"hex": "#A03040", "role": "Negroni final (3 oz)"},
+      {"hex": "#C81828", "role": "bouteille de Campari"},
+      {"hex": "#F0A23A", "role": "zeste d'orange, éclats finaux"},
+      {"hex": "#F0C8CC", "role": "ombre portée rose des cartes"},
+      {"hex": "#8A8A8A", "role": "texte secondaire, étapes à venir"}
+    ],
+    "type": "Titre et chiffres : display cartoon très grasse arrondie (probable Luckiest Guy), contour encre + ombre décalée, ≈ 11 % puis 6,5 % de la hauteur. Noms d'ingrédients : display noire grasse. Secondaire : manuscrite étroite (probable Patrick Hand).",
+    "texture": "Traits crayonnés à double ligne, légèrement tremblés ; reflets blancs en biais sur le verre ; ombre portée rose décalée sous les cartes ; bruit papier très léger sur le fond ; aucun flou de mouvement ; lettres du titre qui frémissent de 2 à 4 px en continu.",
+    "style": "illustration crayonnée, infographie recette",
+    "coherence": "Tout le système tient sur 3 familles (corail-rouge du Negroni, bleu glacier du verre, encre) et un seul trait dessiné ; les couleurs ne sont pas décoratives : la couleur du liquide suit les ingrédients versés. Seuls l'orange du zeste et les éclats finaux sortent de la palette, comme accent de fin."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Pas de piste audio. Plan unique de 30,00 s (900 im à 30 fps), aucune coupe. Structure en blocs réguliers : titre 3 s, glaçons 1,5 s, chaque versement 5,0 s pile (6,0 / 11,0 / 16,0 / 21,0 s), mélange 3,5 s, zeste 2,5 s, final 3 s. Les pics d'énergie sur rhythm.jpg tombent exactement aux changements d'étape (6,0 - 11,0 - 16,0 - 21,0 - 24,5 - 27,0 s). Aucun maintien totalement statique détecté (seuil 0,4 s) car les lettres du titre frémissent de 2 à 4 px en permanence (mesuré) et les éclats finaux pulsent ; mais perceptivement, chaque versement contient ≈ 2 s où seul le niveau monte (0,0 → 1,0 oz), et la fin tient 2,6 s sur une image quasi fixe. Densité lente pour du social, correcte pour une recette.",
+    "timeline": [
+      {"t": "0:00-0:01.2", "what": "« NEGRONI » apparaît lettre par lettre au centre", "technique": "pop lettre à lettre, décalage 4-5 im"},
+      {"t": "0:01.4-0:01.6", "what": "sous-titre « a 30 second recipe » en gris clair", "technique": "fondu 8 im"},
+      {"t": "0:01.6-0:02.5", "what": "maintien du titre", "technique": "frémissement des lettres 2-4 px"},
+      {"t": "0:02.5-0:03.4", "what": "le titre rétrécit (× 0,6) et monte en en-tête ; le verre se dessine en même temps à gauche", "technique": "titre qui devient en-tête + tracé progressif (draw-on)"},
+      {"t": "0:03.4-0:04.2", "what": "remplissage bleu du verre, carte d'étape « FILL ICE » et frise de 6 étapes apparaissent", "technique": "fondus d'interface"},
+      {"t": "0:04.2-0:05.5", "what": "3 glaçons tombent du haut dans le verre, traits d'impact, compteur 0/3 → 3/3", "technique": "chute accélérée + traits d'impact"},
+      {"t": "0:05.6-0:06.0", "what": "étape ICE cochée, ligne rouge qui file vers GIN", "technique": "coche tracée + barre de frise"},
+      {"t": "0:06.0", "what": "carte remplacée par « STEP 2 OF 6 / 1 OZ / GIN »", "technique": "changement de carte sec (1 im fantôme)"},
+      {"t": "0:06.3-0:07.3", "what": "bouteille de gin entre par la gauche, se redresse puis bascule de ≈ 110° au-dessus du verre", "technique": "entrée latérale + rotation de versement"},
+      {"t": "0:07.3-0:09.8", "what": "filet de gin, ligne pointillée cible à 1 oz, barre 0,0 → 1,0 oz", "technique": "niveau + compteur synchronisés"},
+      {"t": "0:10.0-0:11.0", "what": "bouteille se redresse et ressort à gauche", "technique": "sortie latérale"},
+      {"t": "0:11.0-0:16.0", "what": "même chorégraphie pour le Campari : le liquide devient rose-rouge, graduation 2 oz", "technique": "mélange de couleur fidèle aux ingrédients"},
+      {"t": "0:16.0-0:21.0", "what": "vermouth rouge sombre : le liquide fonce vers #A03040, graduation 3 oz", "technique": "mélange de couleur"},
+      {"t": "0:21.0-0:24.4", "what": "cuillère de bar plonge et oscille, glaçons bousculés, compte à rebours 20 s → 1 s en ≈ 2,7 s", "technique": "minuteur compressé"},
+      {"t": "0:24.5-0:26.3", "what": "zeste d'orange en spirale au-dessus du verre, gouttelettes d'huile, puis il se pose sur le bord", "technique": "pop + pulvérisation + atterrissage"},
+      {"t": "0:27.0-0:27.4", "what": "« CIN CIN! » puis carte finale « 1:1:1 », éclats jaunes autour du verre et reflets blancs", "technique": "éclat cartoon de fin"},
+      {"t": "0:27.4-0:30.0", "what": "image finale, éclats qui pulsent, 6 étapes cochées", "technique": "maintien de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (audio=no) : pas de temps ni d'attaques à comparer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Un bruitage de verre (glaçons, glouglou, cuillère) aurait doublé l'effet.",
+    "how_built": "Le prompt ne demandait pas de son ; le rendu HTML a été capturé sans piste audio."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre lettre à lettre en pop",
+      "name_en": "Per-letter pop-in",
+      "t": "0:00.17-0:01.20",
+      "frames": "f5-f36",
+      "fps": 30,
+      "mechanics": "Chaque lettre de « NEGRONI » naît d'un point à sa position finale et grandit à 100 % en 3-4 im (f5 point, f7 N petit, f9 N plein), avec une légère rotation de départ qui se redresse. Décalage régulier de 4-5 im entre lettres (N f5, E f10, G f14, R f19, O f23, N f28, I f32). Courbe ease-out (grand pas puis petit pas), pas de dépassement visible à 30 fps. Mot complet à f36 (1,2 s), centré, ≈ 61 % de la largeur, ≈ 11 % de la hauteur. Pas de flou.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 4, "to": 36, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre en fondu discret",
+      "name_en": "Subtitle fade-in",
+      "t": "0:01.37-0:01.60",
+      "frames": "f41-f48",
+      "fps": 30,
+      "mechanics": "« a 30 second recipe » en manuscrite gris clair ≈ 2 % de la hauteur, sous le titre, opacité 0 → 100 % en ≈ 8 im (0,27 s), sans déplacement. Il apparaît après la fin du titre (5 im de pause), ce qui respecte l'ordre de lecture.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Frémissement permanent des lettres",
+      "name_en": "Idle letter wiggle (boil)",
+      "t": "0:01.5-0:30.0",
+      "frames": "f45-f899",
+      "fps": 30,
+      "mechanics": "Mesuré par différence d'images : pendant le maintien du titre (1,5-2,4 s) la boîte englobante du mot reste fixe (x 207-869) mais son centre de gravité bouge de 2 à 4 px et le nombre de pixels d'encre varie : chaque lettre oscille un peu indépendamment (rotation ou décalage de quelques px). Le même frémissement continue sur l'en-tête jusqu'à la fin (centre x 532-538 px entre 27,6 et 29 s). Résultat : aucune image n'est strictement figée, cohérent avec le style dessiné à la main.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Titre qui devient en-tête",
+      "name_en": "Title docking to header",
+      "t": "0:02.53-0:03.30",
+      "frames": "f76-f99",
+      "fps": 30,
+      "mechanics": "Le titre centré (centre à 45 % de la hauteur) monte à 11,5 % et passe de 61 % à 37 % de la largeur (échelle ≈ 0,6), sans coupe. Pas mesurés en % de la hauteur : f76-f81 ≈ 0,3/im (départ lent), f84-f88 3 à 4/im (pic), f91-f95 1,5 → 0,4/im (arrivée douce) : ease-in-out (probable power2.inOut) sur ≈ 20 im (0,67 s), queue d'arrivée un peu plus longue que le départ. Le sous-titre « a 30 second recipe » s'efface pendant la montée et « equal parts · stirred · on the rocks » apparaît en fondu à l'arrivée (f97-f102).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f87.jpg",
+      "illus": {"from": 76, "to": 102, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Verre tracé à la main (draw-on)",
+      "name_en": "Hand-drawn stroke draw-on",
+      "t": "0:02.87-0:03.43",
+      "frames": "f86-f103",
+      "fps": 30,
+      "mechanics": "Démarre pendant la montée du titre (chevauchement de 10 im, aucune attente). Paroi gauche f86, paroi droite f90 (décalage 4 im), bord haut f93, fond f94, contour fermé f99 : tracé progressif des traits (probable stroke-dashoffset SVG) en 13 im (0,43 s). Puis le remplissage bleu glacier apparaît en fondu f99-f103 (4 im). Le verre occupe ≈ 33 % de la largeur et 35 % de la hauteur, centre gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f87.jpg",
+      "illus": {"from": 85, "to": 104, "n": 6}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille fixe en 4 zones",
+      "name_en": "Fixed four-zone layout",
+      "t": "0:03.4-0:30.0",
+      "frames": "f102-f899",
+      "fps": 30,
+      "mechanics": "En-tête titre + sous-titre en haut (8-19 % de la hauteur), verre à gauche (x 13-46 %, y 37-72 %), carte d'étape à droite (x 60-96 %, y 47-70 %), frise des 6 étapes en bas (y ≈ 86-91 %, de 12 % à 88 % de la largeur). Rien ne bouge de place pendant 27 s : seuls les objets (bouteilles, cuillère, zeste) entrent et sortent par la gauche et le haut. Lisibilité maximale, mais aucune variation de cadrage.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte d'étape « autocollant »",
+      "name_en": "Sticker step card",
+      "t": "0:03.7-0:30.0",
+      "frames": "f111-f899",
+      "fps": 30,
+      "mechanics": "Carte blanche à coins arrondis, contour encre crayonné, ombre portée rose #F0C8CC décalée en bas à droite. Hiérarchie en 5 niveaux : « STEP 3 OF 6 » petites capitales corail ≈ 1,6 % H ; dose « 1 OZ » display corail ≈ 5 % H ; ingrédient « CAMPARI » display noire ≈ 3 % H ; descriptif manuscrit « the bitter one · 30 ml » ; barre de progression rouge avec compteur « 1.0 / 1 oz ». Les doses en oz ET en ml répondent exactement au prompt.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Changement de carte sec avec image fantôme",
+      "name_en": "Hard card swap",
+      "t": "0:11.00-0:11.17",
+      "frames": "f330-f335",
+      "fps": 30,
+      "mechanics": "Vérifié image par image sur f324-f339 : la carte « GIN » est entière à f329 ; à f330 la carte disparaît et seul le chiffre « 1 OZ » reste 1 image, seul au milieu du vide ; à f331 la nouvelle carte arrive à ≈ 40 % d'opacité, inclinée de ≈ 3° ; à f332 opacité pleine, l'inclinaison se résorbe en 2-3 im. Même schéma à 6,0 - 16,0 - 21,0 (« 20 sec ») - 24,5 (« 1 ») - 27,0 s (« CIN CIN! »). Total 3-5 im (0,1-0,17 s) : trop court pour être lu comme une transition, et l'image fantôme trahit un élément animé séparément de sa carte.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Frise d'étapes avec coche tracée",
+      "name_en": "Progress stepper with drawn checkmarks",
+      "t": "0:03.9-0:26.3",
+      "frames": "f117-f789",
+      "fps": 30,
+      "mechanics": "6 cercles numérotés reliés par une ligne (ICE, GIN, CAMPARI, VERMOUTH, STIR, PEEL), gris pour les étapes à venir, contour encre + libellé corail pour l'étape en cours. À la fin d'une étape le cercle se remplit de rouge et une coche blanche se trace (visible en cours de tracé à 15,0 s), puis la ligne vers l'étape suivante se colore en rouge de gauche à droite en ≈ 10 im, ≈ 0,3 s avant le changement de carte. Le spectateur sait toujours où il en est.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 165, "to": 184, "n": 5}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Chute des glaçons avec traits d'impact",
+      "name_en": "Ice drop with impact lines",
+      "t": "0:04.2-0:05.5",
+      "frames": "f126-f165",
+      "fps": 30,
+      "mechanics": "3 glaçons naissent sous le titre (y ≈ 10 %), tombent dans le verre en tournant, avec accélération (petits pas puis grands pas, chute ≈ 6-8 im), et 3 petits traits d'impact apparaissent autour du glaçon à l'arrivée pendant ≈ 6 im. Décalage ≈ 9-12 im (0,3-0,4 s) entre glaçons ; les glaçons s'empilent en triangle au fond. Compteur de carte 0/3 → 1/3 → 2/3 → 3/3 calé sur chaque arrivée. Pas de rebond ni d'écrasement (squash).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 126, "to": 162, "n": 7}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Chorégraphie de la bouteille qui verse",
+      "name_en": "Bottle pour choreography",
+      "t": "0:06.3-0:11.0",
+      "frames": "f189-f330",
+      "fps": 30,
+      "mechanics": "Bloc de 5,0 s répété 3 fois : entrée par le bord gauche (f189 coupée par le cadre, f192 debout à x ≈ 5 %, y ≈ 20 %), léger flottement 0,4 s, puis bascule de ≈ 110° en ≈ 15 im (f207-f222, 0,5 s, ease-in-out) en glissant vers le bord du verre ; filet de liquide dès f219 ; versement ≈ 2,5 s ; retour à l'horizontale (10,0 s), redressement (10,5 s) et sortie à gauche (11,0 s). Bouteilles illustrées avec étiquette (GIN London dry, CAMPARI bitter, ROSSO vermouth). Pas d'anticipation ni de dépassement.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 189, "to": 222, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet de versement",
+      "name_en": "Pour stream",
+      "t": "0:07.3-0:09.8",
+      "frames": "f219-f294",
+      "fps": 30,
+      "mechanics": "Trait fin légèrement courbe du goulot à la surface du liquide, couleur de l'ingrédient (gris-bleu pour le gin, rouge #C81828 pour le Campari, bordeaux pour le vermouth), 2 ou 3 petites bulles noires à l'impact sur la surface. Il apparaît d'un coup quand la bouteille atteint son angle (pas de goutte qui tombe en premier).",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Niveau, ligne cible et compteur synchronisés",
+      "name_en": "Synced fill level, target line and counter",
+      "t": "0:07.0-0:09.8",
+      "frames": "f210-f294",
+      "fps": 30,
+      "mechanics": "Avant le versement, une ligne pointillée grise marque le niveau à atteindre et une graduation « — 1 oz » apparaît à droite du verre (puis 2 oz, 3 oz aux étapes suivantes). Pendant le versement, le liquide monte, la barre de la carte se remplit et le compteur lit 0.0 → 0.1 (8,0 s) → 0.4 (8,5 s) → 0.8 (9,0 s) → 1.0 (9,5 s) : courbe ease-in-out sur ≈ 2 s. Les trois indicateurs (niveau, barre, nombre) disent la même chose au même moment.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg",
+      "illus": {"from": 219, "to": 294, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Couleur du mélange fidèle aux ingrédients",
+      "name_en": "Ingredient-accurate color mixing",
+      "t": "0:07.3-0:20.0",
+      "frames": "f219-f600",
+      "fps": 30,
+      "mechanics": "Le gin, incolore, ne change presque pas le bleu du verre ; le Campari teinte progressivement en rose puis rouge corail (#D85060 à 2 oz) ; le vermouth fonce le tout vers le bordeaux #A03040 à 3 oz. La teinte est interpolée pendant le versement (rose pâle à 13,0 s, rouge à 14,5 s). La couleur raconte la recette sans texte.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Minuteur de mélange compressé",
+      "name_en": "Compressed stir countdown",
+      "t": "0:21.0-0:24.4",
+      "frames": "f630-f732",
+      "fps": 30,
+      "mechanics": "Carte « 20 SEC / STIR / until nice and cold » ; une cuillère de bar (tige fine à boule) plonge dans le verre et oscille de ≈ ±10-15° en bousculant les glaçons ; le compteur décroît 20 s → 12 s (22,5 s) → 9 s (23,0) → 5 s (23,5) → 1 s (24,0) : 20 s racontées en ≈ 2,7 s (× 7) sans l'indiquer. La cuillère ressort vers le haut en ≈ 9 im (f726-f735).",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Zeste qui pulvérise puis se pose",
+      "name_en": "Orange peel express and drop",
+      "t": "0:24.7-0:26.3",
+      "frames": "f741-f789",
+      "fps": 30,
+      "mechanics": "Spirale orange #F0A23A (3 boucles) apparaît au-dessus du verre (y ≈ 30 %), oscille légèrement, de petits points orange tombent vers le liquide (« express the oils », 25,2-25,6 s), puis la spirale descend et se pose à cheval sur le bord droit du verre en ≈ 15 im (f771-f786) ; compteur « twist... » → « done! » ; la dernière étape se coche à f789.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 741, "to": 789, "n": 7}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Éclat cartoon de fin",
+      "name_en": "Cartoon shine burst",
+      "t": "0:27.0-0:30.0",
+      "frames": "f810-f899",
+      "fps": 30,
+      "mechanics": "Au passage à « CIN CIN! », 6 à 8 petits traits jaune-orangé rayonnent autour du verre et deux reflets blancs en biais apparaissent sur la paroi (f813-f822, ≈ 0,3 s) ; les traits pulsent ensuite légèrement jusqu'à la fin (mesuré : bord gauche de la zone d'encre entre x 117 et 142 px). Accent unique, réservé à la fin.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois voix typographiques",
+      "name_en": "Three-voice type system",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Voix 1 : display cartoon très grasse (probable Luckiest Guy), remplissage corail #E87078, contour encre, ombre décalée bordeaux, pour le titre, les doses et « CIN CIN! ». Voix 2 : display noire grasse pour les noms d'ingrédients. Voix 3 : manuscrite étroite (probable Patrick Hand) gris ou corail pour le sous-titre, les descriptifs, les libellés de frise et les graduations. Capitales pour les titres, bas de casse manuscrite pour le reste.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Recette en blocs de temps fixes",
+      "name_en": "Fixed-length recipe beats",
+      "t": "0:00-0:30.0",
+      "frames": "f0-f899",
+      "fps": 30,
+      "mechanics": "Titre 3,4 s → glaçons 2,6 s → gin 5,0 s → Campari 5,0 s → vermouth 5,0 s → mélange 3,5 s → zeste 2,5 s → final 3,0 s. Durée totale exactement 30,00 s. Chaque versement se découpe en entrée 0,5 s / bascule 0,5 s / versement 2,5 s / retour et sortie 1,0 s. Structure lisible mais monotone : les trois versements sont identiques.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chute finale « CIN CIN! 1:1:1 »",
+      "name_en": "Payoff end card",
+      "t": "0:27.0-0:30.0",
+      "frames": "f810-f899",
+      "fps": 30,
+      "mechanics": "La dernière carte résume la recette : « THAT'S A NEGRONI! » / « CIN CIN! » / « 1:1:1 » / « gin · Campari · sweet vermouth », les 6 étapes cochées, verre fini avec zeste. Bonne récompense, mais 2,6 s de maintien sans sortie ni boucle.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Showing the recipe ingredients + measurements as they're going into the cup » a produit le meilleur du film : dose sur la carte, graduation sur le verre, ligne cible, compteur et niveau synchronisés."},
+    {"kind": "structure", "insight": "« empty glass to completed cocktail » et « 30s » ont été suivis à la lettre : le verre se dessine vide, la vidéo dure 30,00 s pile, découpée en blocs fixes."},
+    {"kind": "direction", "insight": "Aucune direction artistique donnée : Claude a choisi seul le style crayonné sur papier et la palette rouge Negroni, ce qui donne une identité cohérente avec le sujet."},
+    {"kind": "build", "insight": "« javascript or html (w/e you think will produce the best) » : rendu SVG/HTML, d'où le tracé progressif des traits, les cartes et la frise façon interface."},
+    {"kind": "other", "insight": "Rien sur le son ni le rythme : vidéo muette, et 3 versements strictement identiques de 5 s. Il aurait fallu demander des bruitages (glaçons, glouglou) et varier la cadence ou accélérer les versements."},
+    {"kind": "qa", "insight": "Aucune vérification image par image demandée : l'image fantôme du changement de carte (chiffre seul pendant 1 im) est passée."}
+  ],
+  "steal": [
+    "Faire dire la même donnée à trois indicateurs synchronisés : niveau dans l'objet, barre de progression, compteur chiffré.",
+    "Annoncer la cible avant l'action : ligne pointillée et graduation posées avant que le liquide monte.",
+    "Faire changer la couleur selon les ingrédients versés : la couleur raconte la recette sans texte.",
+    "Transformer le titre d'ouverture en en-tête (échelle 0,6, ease-in-out 0,67 s) pendant que le premier objet se dessine.",
+    "Frise d'étapes persistante en bas, coche tracée puis ligne qui file vers l'étape suivante avant chaque changement."
+  ],
+  "flaws": [
+    "Changement de carte en 3-5 im avec une image où le chiffre flotte seul : glitch et aucune transition.",
+    "Vidéo muette : versements, glaçons et cuillère appellent des bruitages.",
+    "Trois versements identiques de 5 s dont ≈ 2 s où seul le niveau monte : rythme lent.",
+    "Minuteur de 20 s compressé en 2,7 s sans le signaler.",
+    "Aucun rebond ni écrasement sur les glaçons et le zeste, bouteilles sans anticipation."
+  ],
+  "deep_study": {"worth": false, "why": "30 fps, pas de musique, mouvements simples (fondus, translations, rotations ease-in-out) : les planches et le microscope suffisent. L'intérêt est le design d'information, pas les courbes."}
+}

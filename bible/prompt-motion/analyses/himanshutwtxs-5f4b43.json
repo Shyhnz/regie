@@ -1,0 +1,472 @@
+{
+  "slug": "himanshutwtxs-5f4b43",
+  "title": "Motion designer showreel",
+  "handle": "@himanshutwtxs",
+  "family": "showreel",
+  "craft": 4,
+  "craft_reason": "Concept fort (un showreel qui démontre les principes d'animation), un mot par temps, transitions motivées par une balle héros ; lisibilité entamée par des annotations minuscules et deux transitions trop rapides.",
+  "summary": "Showreel de 15 s qui démontre les principes de l'animation au lieu de les affirmer : balle qui rebondit en pelures d'oignon, titre « I MAKE THINGS MOVE. », quatre mots qui font ce qu'ils disent (BOUNCE, STRETCH, SPIN, SNAP), éditeur de courbes, serpent en follow-through, chargeur en anticipation. Une balle bleue relie tout et devient le point final. Calé à 128 BPM, sans temps mort ; annotations minuscules.",
+  "prompt_vs_result": [
+    "Le prompt demandait 15 s de motion graphics « dynamiques » montrant un motion designer incroyable, façon showreel de CV, avec « go all out ». Aucun style, contenu, musique ni marque imposés.",
+    "Claude a choisi de démontrer les principes d'animation annotés à la main, une balle bleue comme fil rouge, une timeline HUD, l'alternance clair/sombre, une musique à 128 BPM et la signature « MOTION DESIGNER CLAUDE. ».",
+    "« Showreel » a été bien compris : montrer le savoir-faire. Il aurait fallu fixer des temps de lecture (annotations ≥ 1 s, transitions ≥ 8 images), une palette et le genre musical."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F3F3F5", "role": "fond clair (centre) et texte sur fond sombre"},
+      {"hex": "#D0D0D2", "role": "vignettage du fond clair (bords)"},
+      {"hex": "#18191E", "role": "fond sombre"},
+      {"hex": "#181A1E", "role": "encre du texte sur fond clair"},
+      {"hex": "#317DF7", "role": "accent bleu : balle, point final, STRETCH, courbe, perles, annotations"},
+      {"hex": "#F8324A", "role": "rouge : SNAP, erreurs (« squash! », « linear = robotic »), poignées de Bézier"},
+      {"hex": "#80B0F0", "role": "bleu clair : pelures d'oignon, annotations sur fond sombre"},
+      {"hex": "#305088", "role": "points de la grille réactive (chapitre follow-through)"},
+      {"hex": "#7A7C80", "role": "HUD : timeline et timecode"}
+    ],
+    "type": "Grotesque condensée très grasse (Anton probable), capitales, interlettrage ≈ 0 ; titre 16 % + 41 % de la hauteur, lignes jointives ; mots seuls 38 % ; annotations manuscrites (Caveat probable) ≈ 3 % ; timecode ≈ 1,5 %.",
+    "texture": "Aplats nets sans grain. Flou de mouvement directionnel fort (vertical sur les chutes de lettres, horizontal sur STRETCH, SPIN, le carré eased et le whip). Pelures d'oignon translucides en contour 1 px. Bords doux sur les perles du serpent. Anneaux concentriques en dégradé étagé sur l'iris final. Vignettage radial sur le fond clair.",
+    "style": "Breakdown didactique annoté, typo condensée",
+    "coherence": "Le système tient par un seul accent bleu qui suit l'objet héros (balle, point de MOVE., courbe, perles, centre du chargeur, point de CLAUDE.), un rouge réservé à l'erreur ou au choc, le HUD timeline + timecode fixe au-dessus de toutes les scènes et la même typo condensée au début et à la fin. L'alternance clair/sombre est réglée par chapitre. Seul le chapitre follow-through (grille de points bleu-violet, rouge par distance) s'écarte un peu de la sobriété du reste."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "aucun",
+    "notes": "Tempo mesuré 127,9 BPM (netteté 8,03, pulsation claire) ; l'animation est construite sur une grille de 14 images par temps à 30 fps (0,467 s). Coupes réelles : f112, f126, f140 (non détectée par l'outil), f154, f166 (volet), f253 (whip), f394 (iris) ; l'effondrement f319-f336 enchaîne sans coupe. Le chapitre typo aligne 4 plans d'exactement 14 im (0,47 s) : un mot par temps, grammaire 1600. 5 coupes détectées sur 6 à moins de 50 ms d'un temps (dossier). Aucun maintien statique > 0,4 s : la plus longue immobilité relative est f238-f249 (12 im, 0,4 s), pendant que timecode et tête de lecture continuent. Densité : un événement neuf toutes les 7 à 14 im. Les événements précèdent la barre de temps de 1,1 à 1,8 im de façon constante.",
+    "timeline": [
+      {"t": "0:00.00-0:00.20", "what": "Ligne de sol tracée de gauche à droite, HUD timeline et timecode déjà présents, chapitre « spacing »", "technique": "tracé qui se dessine (stroke draw-on), ease-out en 6 im"},
+      {"t": "0:00.20-0:01.83", "what": "Balle bleue qui tombe du haut gauche et rebondit 4 fois (impacts f13, f27, f41, f55), pelures d'oignon, « slow in, slow out », « squash! », « stretch »", "technique": "squash & stretch, onion skin, un impact par temps"},
+      {"t": "0:01.83-0:02.40", "what": "Au 4e impact, « MOVE. » sort du sol de droite à gauche, « I MAKE THINGS » tombe lettre par lettre, la balle devient le point, soulignement bleu", "technique": "vague de lettres depuis le point d'impact, stagger 45 ms, raccord balle → point"},
+      {"t": "0:02.40-0:03.70", "what": "Annotations « stagger: 45ms » et « overlap », le point s'écrase une fois (f104)", "technique": "écriture manuscrite progressive (write-on)"},
+      {"t": "0:03.73-0:04.17", "what": "Coupe sur fond sombre : BOUNCE, lettres qui tombent et rebondissent, « gravity-ish »", "technique": "typo cinétique où le mouvement illustre le mot"},
+      {"t": "0:04.20-0:04.63", "what": "STRETCH bleu qui s'étire d'une fente à pleine largeur avec dépassement élastique, « elastic »", "technique": "scaleX élastique, dépassement ≈ +50 %"},
+      {"t": "0:04.67-0:05.10", "what": "SPIN : chaque lettre tourne en Y de 450°, dos bleu, « rotateY 450° »", "technique": "rotation 3D par lettre décalée"},
+      {"t": "0:05.13-0:05.47", "what": "SNAP : flash rouge d'une image, poses sans interpolation, lignes de construction rouges, « no ease. on purpose. »", "technique": "hold keyframes + flash en mode différence"},
+      {"t": "0:05.47-0:05.57", "what": "Bandes de gris étagées qui balaient de bas en haut vers la scène claire", "technique": "volet en bandes (stepped gradient wipe), 2 im"},
+      {"t": "0:05.60-0:06.60", "what": "Graphique position/temps qui se construit, droite bleue, carré qui avance en linéaire avec pelures roses, « linear = robotic »", "technique": "data viz didactique, tête de lecture synchronisée"},
+      {"t": "0:06.50-0:07.20", "what": "Un curseur attrape une poignée de Bézier et courbe la droite en S ; « linear = robotic » barré, « ease in-out ✓ »", "technique": "UI simulée d'éditeur de courbes"},
+      {"t": "0:07.23-0:08.30", "what": "Carré qui traverse en ease-in-out (14 im) avec pelures bleues serrées aux bouts, « spacing! »", "technique": "démonstration d'espacement"},
+      {"t": "0:08.33-0:08.47", "what": "La scène claire file vers la gauche avec flou, la scène sombre apparaît, la musique revient", "technique": "whip slide 4 im sur le temps et sur le retour du groove"},
+      {"t": "0:08.47-0:10.60", "what": "Serpent de perles bleues sur un huit, grille de points repoussée et rougie autour de la tête, « follow-through »", "technique": "traîne de perles + champ de répulsion"},
+      {"t": "0:10.63-0:11.20", "what": "Le plan de la grille bascule en 3D, tourne et rétrécit jusqu'à un point", "technique": "effondrement en spirale vers un point"},
+      {"t": "0:11.23-0:12.73", "what": "Le point devient le centre d'un chargeur radial qui compte de 0 à 100 %, « anticipation »", "technique": "chargeur radial + compteur"},
+      {"t": "0:12.77-0:13.07", "what": "Le point s'écrase, la couronne se contracte, puis il s'étire et part hors champ par le haut, retombe à droite", "technique": "anticipation (wind-up) puis lancement"},
+      {"t": "0:13.10-0:13.20", "what": "Impact : un disque clair à anneaux s'ouvre depuis le point de chute et révèle la scène finale", "technique": "iris à anneaux déclenché par l'impact"},
+      {"t": "0:13.17-0:13.63", "what": "« CLAUDE. » sort du sol depuis la balle-point, « MOTION DESIGNER » tombe en rotation", "technique": "bookend : même grammaire que l'ouverture"},
+      {"t": "0:13.67-0:15.06", "what": "« open to new projects » s'écrit avec une flèche vers le point, petite pulsation du point, label « hello », fondu musical", "technique": "signature + appel discret"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Impacts de balle f13, f27, f41, f55 et mots f112 (BOUNCE), f126 (STRETCH), f140 (SPIN), f154 (SNAP) espacés d'exactement 14 im = 1 temps à 128 BPM ; barres bleues à f14,6 / 28,7 / 42,7 / 56,8 et f113,1 / 127,2 / 141,3 / 155,3 : l'image tombe 1,1 à 1,8 im avant la barre, avance constante. Comptage un événement par geste, temps seuls : 16 gestes clés sur 31 à ±2 im d'une barre bleue (hasard ≈ 36 % à 30 fps) ; 13 des 15 jalons structurants (impacts, mots, entrée de scène claire f168, atterrissage du whip f254, chargeur f337, impact final f393, signature posée f409) tombent à ±2 im, les 2 ratés étant le volet en bandes (f165) et le début de l'effondrement (f319). Avec les demi-temps : 22/31, peu probant à 30 fps (fenêtre ≈ 71 % des images). Dynamique audio : silence jusqu'à 0,5 s, groove plein dès ≈ 1,9 s avec « MOVE. », pont à −15 dB de 5,75 à 8,5 s = chapitre easing, retour à 8,48 s pile sur l'atterrissage du whip (f254), attaque grave à 13,13 s sur l'impact final, fondu dès 13,75 s. L'indice automatique (« aucune synchro », p corrigé 0,03) est faussé par le mouvement continu du serpent et du compteur.",
+    "synced": ["coupes", "impacts", "atterrissages", "apparitions", "flashs", "texte", "drop"],
+    "style_match": "Groove électro à 128 BPM, kick sur chaque temps : rebonds, élastiques et coupes d'une image collent à la pulsation ; le pont calme accueille le chapitre des courbes.",
+    "how_built": "Le prompt ne parle pas de musique. La grille exacte de 14 im par temps, le premier impact sur le premier kick, et un arrangement (intro, groove, pont, retour, fondu) qui épouse les chapitres indiquent probablement une bande-son générée ou montée avec la même constante de tempo que la timeline (1 temps = 60/128 s). L'avance constante de ≈ 1,5 im (≈ 50 ms) vient probablement d'un arrondi de phase de la grille ; l'image précède le son, sens le mieux toléré par l'œil."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Showreel-leçon : un chapitre par principe d'animation",
+      "name_en": "principles-as-chapters showreel",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "6 chapitres nommés sur la timeline HUD : spacing (f0-f55, 1,8 s), type (f55-f165, 3,7 s), easing (f167-f253, 2,9 s), follow-through (f254-f336, 2,7 s), anticipation (f337-f393, 1,9 s), hello (f394-f449, 1,9 s). Chaque chapitre montre le principe puis l'étiquette par une annotation manuscrite : la vidéo prouve le savoir-faire au lieu de l'affirmer. Principes couverts : timing et espacement, ralenti début-fin (slow in, slow out), écrasement-étirement (squash & stretch), chevauchement (overlap), traîne (follow-through), anticipation, arcs.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Balle en écrasement-étirement sur arcs",
+      "name_en": "bouncing ball squash and stretch",
+      "t": "0:00.20-0:01.83",
+      "frames": "f6-f55",
+      "fps": 30,
+      "mechanics": "Balle bleue #317DF7 ≈ 8 % de la hauteur (≈ 83 px). Chute depuis le haut gauche : y = 9, 16, 23, 30, 39, 49, 59, 70 % de la hauteur sur f6-f13 (pas de 7 puis 11 % par image : accélération, ease-in). Impact f13 : ellipse ≈ 2,2:1 pendant 1 im, puis étirement vertical ≈ 1:1,3 à la remontée. Sommet du 2e arc f18-f22 à 38, 36, 35, 36, 38 % (pas de 1-2 % : ralenti au sommet). 4 impacts f13, f27, f41, f55, chacun à 14 im d'écart ; chaque rebond avance de ≈ 13 % de la largeur et perd de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f62.jpg",
+      "illus": {"from": 6, "to": 55, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pelures d'oignon qui rendent l'espacement visible",
+      "name_en": "onion skinning to show spacing",
+      "t": "0:00.20-0:01.90",
+      "frames": "f6-f57",
+      "fps": 30,
+      "mechanics": "Chaque position de la balle laisse un cercle contour de 1 px bleu clair #80B0F0 (≈ 40 % d'opacité) qui persiste ≈ 12 im ; la trajectoire parabolique reste tracée en gris très pâle. Cercles serrés au sommet, espacés avant l'impact : l'espacement devient lisible. Flèches manuscrites « slow in, slow out » vers le sommet, « squash! » en rouge vers l'impact, « stretch » vers la remontée. Le même procédé revient au chapitre easing avec des carrés contour (roses pour le linéaire, bleus pour l'ease).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui jaillit du sol depuis le point d'impact",
+      "name_en": "type rising from the ground line, staggered from the impact",
+      "t": "0:01.90-0:02.13",
+      "frames": "f57-f64",
+      "fps": 30,
+      "mechanics": "Le 4e impact (f55, x ≈ 77 %) déclenche « MOVE. » : les lettres sortent de derrière la ligne de sol, qui sert de masque, dans l'ordre E, V, O, M, décalage ≈ 1 im, montée ≈ 5 im par lettre avec flou vertical ; tout est posé f64. La vague part du point d'impact, ce qui motive l'ordre du décalage. La ligne de sol se rétracte ensuite vers la droite (f63-f67).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f62.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lettres qui tombent en rotation, décalage de 45 ms",
+      "name_en": "staggered falling letters with rotation",
+      "t": "0:01.97-0:02.33",
+      "frames": "f59-f70",
+      "fps": 30,
+      "mechanics": "« I MAKE THINGS » : 11 lettres tombent du haut du cadre, inclinées de ±15 à 20°, flou vertical, chute ≈ 3-4 im puis redressement en ≈ 3 im. Décalage annoncé « stagger: 45ms » = 1,35 im à 30 fps, mesuré 1 à 1,5 im de gauche à droite ; dernière lettre posée f70, sur le temps (barre f70,9). Le même traitement revient à la fin pour « MOTION DESIGNER » (f396-f409).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f62.jpg, microM-006-cut-f394.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "La balle devient le point final du titre (raccord objet-ponctuation)",
+      "name_en": "object-to-punctuation match cut",
+      "t": "0:01.83-0:02.07 et 0:13.10-0:13.20",
+      "frames": "f55-f62, f393-f396",
+      "fps": 30,
+      "mechanics": "Le dernier rebond pose la balle exactement à la place du point de « MOVE. » (x ≈ 77 %, sur la ligne de base) : elle reste comme point, avec un petit écrasement à f104 étiqueté « overlap ». À la fin, la même balle, lancée hors champ par le haut, retombe en (80 %, 69 %), là où se trouve le point de « CLAUDE. ». Le motif ouvre et ferme le film.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f62.jpg, microM-006-cut-f394.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre condensé très gras sur deux niveaux, point bleu",
+      "name_en": "two-tier condensed headline with colored period",
+      "t": "0:02.00-0:03.73",
+      "frames": "f60-f111",
+      "fps": 30,
+      "mechanics": "Grotesque condensée noire (Anton probable), capitales, interlettrage ≈ 0, lignes jointives (interligne nul). « I MAKE THINGS » ≈ 16 % de la hauteur (21 à 79 % de la largeur), « MOVE. » ≈ 41 % (22 à 73 %), bloc entre 17 et 75 % de la hauteur, aligné à gauche. Encre #181A1E, point = balle bleue #317DF7, soulignement pinceau bleu sous MOVE. Même mise en page pour la signature « MOTION DESIGNER / CLAUDE. » (≈ 14 % et 32 % de la hauteur, 3 % d'écart).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Annotations manuscrites de correcteur",
+      "name_en": "handwritten annotation callouts",
+      "t": "0:00.57-0:14.93",
+      "frames": "f17-f449",
+      "fps": 30,
+      "mechanics": "Script manuscrit (Caveat probable) ≈ 2,5 à 3 % de la hauteur, bleu #317DF7 (bleu clair #80B0F0 sur fond sombre) pour les principes, rouge #F8324A pour les erreurs et les chocs, flèche courbe dessinée vers l'élément. Textes : slow in slow out, squash!, stretch, stagger: 45ms, overlap, gravity-ish, elastic, rotateY 450°, no ease. on purpose., linear = robotic, ease in-out ✓, spacing!, follow-through, anticipation, open to new projects. Ton de breakdown de studio, mais chaque annotation reste 0,3 à 1 s à 2,5 % de la hauteur : illisible à vitesse réelle.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Écriture progressive, rature et coche",
+      "name_en": "handwriting write-on with strike-through and check",
+      "t": "0:06.80-0:07.43",
+      "frames": "f204-f223",
+      "fps": 30,
+      "mechanics": "Chaque annotation s'écrit lettre par lettre, ≈ 1 lettre par image (« stagger: 45ms » en 5 im f74-f78, « ease in-out » en 5 im f212-f216). Quand le curseur courbe la ligne (f204-f207), « linear = robotic » est barré d'un trait rouge tracé de gauche à droite en ≈ 3 im ; la coche « ✓ » apparaît f222-f223. La correction se lit comme une révision en direct.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "BOUNCE : les lettres tombent et rebondissent",
+      "name_en": "falling letters with bounce",
+      "t": "0:03.73-0:04.17",
+      "frames": "f112-f125",
+      "fps": 30,
+      "mechanics": "Coupe sèche sur fond sombre #18191E (f112 vide, 1 im). Lettres blanches #F3F3F5 (≈ 38 % de la hauteur, 67 % de la largeur) qui tombent du haut f113-f120, traînée de flou vertical ≈ 25 % de la hauteur, décalage ≈ 1 im de gauche à droite, petit rebond ≈ 4 % de la hauteur, tout posé f123 ; maintien 3 im ; durée totale 14 im = 1 temps. Annotation « gravity-ish ».",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f112.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "STRETCH : étirement horizontal élastique",
+      "name_en": "elastic horizontal stretch",
+      "t": "0:04.20-0:04.63",
+      "frames": "f126-f139",
+      "fps": 30,
+      "mechanics": "Mot bleu #317DF7 qui part d'une fente (scaleX ≈ 0,05) au centre, flou horizontal fort. Largeur ≈ 20, 45, 62, 80, 100 % de la largeur finale sur f127-f131, pic ≈ 150 % à f132-f133 (dépassement ≈ +50 %, le mot touche les bords du cadre), retour à 100 % (≈ 65 % de la largeur du cadre, ≈ 38 % de la hauteur) sur f134-f139 en une seule oscillation : courbe élastique. Hauteur constante, seule l'échelle X bouge. Annotation « elastic ».",
+      "verdict": "adapter",
+      "evidence": "microM-002-cut-f112.jpg, microM-003-move-f136.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "SPIN : rotation 3D en Y de 450° par lettre, dos bleu",
+      "name_en": "per-letter rotateY with colored back face",
+      "t": "0:04.67-0:04.97",
+      "frames": "f140-f149",
+      "fps": 30,
+      "mechanics": "Chaque lettre tourne sur son axe vertical (rotateY 450°, 1,25 tour), décalage ≈ 1,5 im de gauche à droite. Face avant blanche, face arrière bleue #317DF7 lue en miroir ; compression floue au passage de profil ; tout est posé f149 (≈ 10 im, ease-out). Annotation « rotateY 450° ». Départ f140, 1 im avant la barre f141,3.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f136.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "SNAP : poses tenues sans interpolation",
+      "name_en": "stepped hold-keyframe snap",
+      "t": "0:05.13-0:05.50",
+      "frames": "f154-f164",
+      "fps": 30,
+      "mechanics": "Trois poses sans images intermédiaires : f154 mot noir incliné −8° et agrandi ≈ ×1,1 sur fond rouge, f155 mot rouge #F8324A incliné −4° sur fond sombre, f156 mot rouge droit à sa taille finale. Puis maintien de 8 im pendant que s'écrit « no ease. on purpose. ». L'absence d'ease, montrée comme un choix, contraste avec les trois mots précédents.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f166.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash d'une image en mode différence rouge",
+      "name_en": "one-frame difference-blend accent flash",
+      "t": "0:05.13",
+      "frames": "f154",
+      "fps": 30,
+      "mechanics": "Une seule image où un calque rouge #F43144 plein cadre se combine en différence (difference blend) : le fond sombre devient rouge, le mot rouge devient noir, le HUD gris devient sarcelle. Placé 1 im avant la barre de temps (f155,3), sur l'attaque audio f155. Donne l'impact d'un claquement sans effet sonore dédié.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f166.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Lignes de construction rouges autour du mot",
+      "name_en": "red construction guides",
+      "t": "0:05.20-0:05.50",
+      "frames": "f156-f165",
+      "fps": 30,
+      "mechanics": "Filets rouges de 1 à 2 px sur toute la largeur à la hauteur de capitale et à la ligne de base, deux verticales aux bords du mot, petits cercles aux intersections : le mot paraît aimanté à une grille de mise en page, ce qui illustre SNAP.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f166.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet en bandes de gris étagées, du sombre au clair",
+      "name_en": "stepped grey band wipe",
+      "t": "0:05.47-0:05.57",
+      "frames": "f164-f167",
+      "fps": 30,
+      "mechanics": "6 à 7 bandes horizontales en dégradé étagé (#2A2D32 vers #D0D0D2) balaient le cadre de bas en haut en ≈ 2 im (≈ 80 % de la hauteur par image) ; la scène claire apparaît dessous, SNAP transparaît en rose entre les bandes. Trop rapide : se lit comme un scintillement. À ralentir à 8-12 im avec un décalage par bande (stores vénitiens).",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f166.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Graphique position/temps avec tête de lecture synchronisée",
+      "name_en": "position-time graph with synced playhead",
+      "t": "0:05.60-0:06.60",
+      "frames": "f168-f198",
+      "fps": 30,
+      "mechanics": "Axes noirs tracés depuis l'origine en ≈ 3 im (f168-f170), étiquettes « position » et « time » en script, losanges noirs aux extrémités, droite bleue #317DF7 de 2 px tracée en 5 im (f172-f176). Une ligne verticale bleue (tête de lecture) balaie le graphique pendant que le carré noir avance sur sa ligne de sol : le graphique et l'objet sont liés. Points rouges à intervalles de temps égaux sur la droite.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f166.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur qui attrape une poignée de Bézier et courbe la ligne",
+      "name_en": "cursor dragging a Bézier handle",
+      "t": "0:06.50-0:07.20",
+      "frames": "f195-f216",
+      "fps": 30,
+      "mechanics": "Flèche de souris noire avec flou : déjà en mouvement en bas à droite à f195, rejoint la droite en ≈ 5 im avec ease-out (pas ≈ 23, 20, 13, 5 px sur une vignette de 255 px), clic tenu 2 im (f202-f203), glisse vers le bas à droite en 4 im (f204-f207) pendant que la droite devient un S (poignées rouges #F8324A), maintien 6 im sur la poignée, sortie floue f214-f216. Mime l'éditeur de graphique d'After Effects.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 196, "to": 216, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Espacement linéaire contre ease-in-out, démontré par un carré",
+      "name_en": "linear vs eased spacing demo",
+      "t": "0:05.90-0:07.87",
+      "frames": "f177-f236",
+      "fps": 30,
+      "mechanics": "Carré noir ≈ 4 % de la hauteur. Linéaire : traversée en ≈ 24 im (f177-f201), pelures roses régulièrement espacées. Ease-in-out : même trajet en 14 im = 1 temps (f217-f231), pelures bleues serrées aux deux bouts et espacées au milieu, flou horizontal au pic de vitesse (f223-f226) ; « spacing! » s'écrit à l'arrivée (f232-f236).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glissement filé avec flou horizontal",
+      "name_en": "whip slide with motion blur",
+      "t": "0:08.33-0:08.47",
+      "frames": "f250-f254",
+      "fps": 30,
+      "mechanics": "La scène claire part vers la gauche en 4 im, son bord à 100, 88, 55, 18, 3 % de la largeur (lent, rapide, lent : ease-in-out), contenu étalé par un flou horizontal ≈ 30 % de la largeur ; la scène sombre est découverte en place derrière. Le HUD (timeline, timecode) reste net et fixe. Atterrissage f254 sur le temps (barre f253,9) et sur le retour de la musique après le pont (8,48 s).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f250.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Grille de points réactive (champ de répulsion)",
+      "name_en": "reactive dot-grid field",
+      "t": "0:08.47-0:10.60",
+      "frames": "f254-f318",
+      "fps": 30,
+      "mechanics": "≈ 40 × 22 points de 3 px bleu-gris #305088 sur fond #18191E. Autour de la tête du serpent (rayon ≈ 12 % de la hauteur), les points sont repoussés vers l'extérieur et virent au violet puis au rouge #F8324A selon la distance. Trajectoire en huit (∞) tracée en pointillé fin. Le champ suit la tête en continu.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f250.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Serpent de perles en traîne",
+      "name_en": "trailing bead chain",
+      "t": "0:08.47-0:11.00",
+      "frames": "f254-f330",
+      "fps": 30,
+      "mechanics": "≈ 15 cercles bleus #317DF7 de taille décroissante (≈ 2,5 % à 0,5 % de la hauteur) et d'opacité décroissante ; chacun suit le précédent avec ≈ 1 à 2 im de retard sur un huit (∞), bords doux. La tête ne s'arrête jamais : le follow-through (ce qui continue après l'arrêt) n'est pas vraiment montré, c'est plutôt de la traîne (drag).",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f250.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement en spirale vers un point qui devient la scène suivante",
+      "name_en": "spiral collapse to a point",
+      "t": "0:10.63-0:11.37",
+      "frames": "f319-f341",
+      "fps": 30,
+      "mechanics": "Le plan de la grille bascule en perspective (f319-f324), tourne de ≈ 90 à 120° et rétrécit : ≈ 70 % de la hauteur à f329, 25 % à f333, 3 % à f335, un point à f336 (17 im, rétrécissement accéléré : ease-in). Le point devient le centre du chargeur : anneau gris à f337, déploiement jusqu'à ≈ 55 % de la hauteur en ≈ 5 im (f337-f342, ease-out). Point d'arrivée f337 sur le temps (barre f338,3).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 318, "to": 341, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chargeur radial et compteur de pourcentage",
+      "name_en": "radial loader with percent counter",
+      "t": "0:11.23-0:12.73",
+      "frames": "f337-f382",
+      "fps": 30,
+      "mechanics": "Anneau extérieur ≈ 55 % de la hauteur, 16 petits carrés qui passent au bleu dans le sens horaire, arc de progression blanc à l'extérieur, couronne de graduations, point bleu central ≈ 8 %. Compteur blanc gras ≈ 2 % de la hauteur : 2 % à f338, 12 % à f342, 31 % à f350, 50 % à f358, 67 % à f365, 100 % vers f382 (≈ +2,3 % par image, presque linéaire). Il fabrique l'attente avant le lancement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Anticipation : contraction et écrasement avant le départ",
+      "name_en": "anticipation wind-up",
+      "t": "0:12.77-0:13.07",
+      "frames": "f383-f392",
+      "fps": 30,
+      "mechanics": "À 100 %, la couronne de repères se contracte vers le centre (f384-f387) et le point s'écrase horizontalement jusqu'à ≈ 2,6:1 en 5 im ; à f388 il s'étire verticalement (≈ 1:2,2) et part vers le haut, traînée floue f389, hors champ f390-f391 ; il retombe à droite à f392 en traînée verticale. Départ f388 sur un demi-temps (barre f387,6).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f394.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Impact qui ouvre une révélation circulaire à anneaux",
+      "name_en": "impact-triggered ringed iris reveal",
+      "t": "0:13.10-0:13.20",
+      "frames": "f393-f396",
+      "fps": 30,
+      "mechanics": "La balle s'écrase en (80 %, 69 %) et un disque clair à ≈ 12 anneaux concentriques en dégradé étagé (#F3F3F5 vers le gris du fond) s'ouvre depuis l'impact : rayon ≈ 25 % de la largeur à f393, ≈ 70 % à f394, plein cadre f395-f396 (ease-out, 3 im). La scène finale est déjà en mouvement dans le disque. Impact f393, barre f394,6, attaque grave à 13,13 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f394.jpg",
+      "illus": {"from": 383, "to": 397, "n": 8}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin en miroir de l'ouverture et signature",
+      "name_en": "bookend sign-off",
+      "t": "0:13.17-0:15.06",
+      "frames": "f395-f449",
+      "fps": 30,
+      "mechanics": "« CLAUDE. » sort du sol de droite à gauche depuis la balle-point (f395-f402), « MOTION DESIGNER » tombe lettre par lettre en rotation (f396-f409, posé sur le temps f408,7) : même grammaire que « I MAKE THINGS MOVE. ». Puis « open to new projects » s'écrit avec une flèche vers le point, le point fait une petite pulsation vers f435 (probable), label « hello » sur la timeline ; la musique s'éteint en fondu dès 13,75 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f394.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "HUD de logiciel de montage : timeline à losanges et timecode",
+      "name_en": "editor timeline HUD overlay",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Ligne grise #7A7C80 de 1 px à ≈ 95 % de la hauteur (de 2 à 98 % de la largeur), ≈ 7 losanges (pleins = passés, vides = à venir), tête de lecture qui avance en continu, nom du chapitre en script au-dessus ; timecode SMPTE en haut à droite (≈ 1,5 % de la hauteur) qui défile image par image. Calque fixe au-dessus de toutes les scènes, y compris pendant le whip : il unifie le film et raconte la progression.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-005-move-f250.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance clair/sombre par chapitre, un seul accent bleu",
+      "name_en": "light-dark chapter alternation",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Clair (#F3F3F5 au centre, #D0D0D2 aux bords) pour les chapitres explicatifs (spacing, easing, hello) ; sombre #18191E pour les chapitres d'énergie (type, follow-through, anticipation). Le bleu #317DF7 suit l'objet héros (balle, point, courbe, perles, centre du chargeur) ; le rouge #F8324A marque l'erreur ou le choc (squash!, linear = robotic, SNAP).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond clair à vignettage radial, fond sombre à anneaux discrets",
+      "name_en": "radial vignette backgrounds",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Dégradé radial #F3F3F5 au centre vers #D0D0D2 aux coins ; sur le sombre #18191E, anneaux concentriques à peine visibles (+2 à 3 % de luminance) centrés sur le cadre. Profondeur sans distraction.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-002-cut-f112.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou de mouvement directionnel proportionnel à la vitesse",
+      "name_en": "directional motion blur",
+      "t": "0:01.90-0:13.63",
+      "frames": "f57-f409",
+      "fps": 30,
+      "mechanics": "Flou vertical sur les lettres qui tombent ou montent (traînée ≈ 15 à 25 % de la hauteur), horizontal sur STRETCH, SPIN, le carré eased et le whip (≈ 30 % de la largeur) ; aucun flou sur les éléments lents. Le flou suit la vitesse : il rend l'ease lisible.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f112.jpg, microM-005-move-f250.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracés qui se dessinent et se rétractent",
+      "name_en": "stroke draw-on and draw-off",
+      "t": "0:00.00-0:00.20 et 0:02.10-0:02.43",
+      "frames": "f0-f5, f63-f73",
+      "fps": 30,
+      "mechanics": "Ligne de sol tracée de gauche à droite en 6 im (≈ 21, 38, 50, 70, 80, 85 % de la largeur : ease-out) ; elle se rétracte vers la droite f63-f67 une fois le titre posé. Soulignement pinceau bleu sous « MOVE. » tracé en 4 im (f70-f73), départ sur le temps (barre f70,9).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, microM-001-move-f62.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Une action par temps : 14 images = 1 temps à 128 BPM",
+      "name_en": "one action per beat grid",
+      "t": "0:00.43-0:13.63",
+      "frames": "f13-f409",
+      "fps": 30,
+      "mechanics": "Impacts de balle f13, f27, f41, f55 et mots BOUNCE f112, STRETCH f126, SPIN f140, SNAP f154 : écart constant de 14 im (0,467 s = 128,6 BPM). Les autres jalons tombent sur la même grille : entrée de la scène claire f168, « ease in-out » f212, atterrissage du whip f254, chargeur f337, impact final f393, signature posée f409. Avance constante de 1,1 à 1,8 im (≈ 40 à 60 ms) sur la barre de temps : l'image précède légèrement le son. Caractère : rebonds et coupes sèches sur un kick à chaque temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f112.jpg, microM-003-move-f136.jpg, microM-004-cut-f166.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Arrangement musical calqué sur les chapitres (pont et retour)",
+      "name_en": "music arrangement mapped to chapters",
+      "t": "0:00.00-0:15.06",
+      "frames": "f0-f449",
+      "fps": 30,
+      "mechanics": "Silence jusqu'à 0,5 s : la balle tombe en silence et son 1er impact arrive avec le 1er kick. Intro à −20 dB, groove plein (−10 dB) dès ≈ 1,9 s quand « MOVE. » surgit, pont plus calme (−15 à −16 dB) de 5,75 à 8,5 s, soit exactement le chapitre easing, retour à 8,48 s sur l'atterrissage du whip (f254), attaque grave à 13,13 s sur l'impact final, fondu de 13,75 à 15 s sous la signature. Charleston en croches, puis en doubles croches (9,4-10,8 s) pendant le serpent.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-005-move-f250.jpg, microM-006-cut-f394.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt d'une ligne sans marque, palette, texte ni musique : tout le contenu (principes d'animation, annotations, signature « MOTION DESIGNER CLAUDE. », « open to new projects ») est inventé par le modèle."},
+    {"kind": "direction", "insight": "« like it's your showreel for a résumé » a poussé le modèle à prouver des compétences plutôt qu'à faire joli : il a pris les principes de l'animation comme preuves et les a annotés comme un breakdown de studio. C'est l'idée qui porte toute la vidéo."},
+    {"kind": "direction", "insight": "« go all out » s'est traduit en densité : 6 chapitres en 15 s, un mot par temps dans le chapitre typo, aucun temps mort ; mais aussi en excès de vitesse (volet de 2 images, annotations de 0,3 s)."},
+    {"kind": "structure", "insight": "Les 15 s imposées ont donné des chapitres de 1,8 à 3,7 s, rendus lisibles par une timeline HUD nommée ; un seul objet héros (la balle) relie les chapitres et boucle le film."},
+    {"kind": "build", "insight": "La grille exacte de 14 images par temps (128 BPM à 30 fps) et un arrangement musical qui épouse les chapitres indiquent probablement une constante de tempo partagée par la timeline et la bande-son ; le prompt n'en dit rien."},
+    {"kind": "qa", "insight": "Aucune règle de lisibilité dans le prompt : annotations à ≈ 2,5 % de la hauteur, dépassement de STRETCH qui sort du cadre, volet de 2 images. À préciser : « texte ≥ 4 % de la hauteur et visible ≥ 1 s, transitions ≥ 8 images, rien ne sort du cadre »."}
+  ],
+  "steal": [
+    "Fais d'un objet le fil rouge : la balle qui rebondit devient le point du titre au début, puis le point de la signature à la fin.",
+    "En typo cinétique, anime chaque mot selon son sens (BOUNCE rebondit, STRETCH s'étire, SPIN tourne, SNAP claque) et donne-lui exactement un temps (14 images à 128 BPM).",
+    "Pour un choc, ajoute 1 image d'un calque plein cadre couleur d'accent en mode différence, juste avant le temps : la scène s'inverse dans la couleur de marque.",
+    "Transition effondrement : bascule le plan en 3D, fais-le tourner et rétrécir en point en ≈ 17 images (ease-in), puis fais naître la scène suivante de ce point.",
+    "Garde un HUD fixe (timeline à losanges + timecode) au-dessus de toutes les scènes : il unifie le système et montre la progression."
+  ],
+  "flaws": [
+    "Annotations manuscrites à ≈ 2,5 % de la hauteur, visibles 0,3 à 1 s : illisibles à vitesse réelle, elles deviennent du décor.",
+    "Volet en bandes de gris de 2 images entre SNAP et les courbes : trop rapide, il se lit comme un scintillement.",
+    "Le chapitre follow-through montre une traîne : la tête du serpent ne s'arrête jamais, donc la suite du mouvement après l'arrêt n'est pas visible.",
+    "Au pic élastique de STRETCH, le mot touche et déborde les bords du cadre pendant 2 images.",
+    "Serpent de perles sur grille de points : visuel générique de démo de librairie, en dessous du reste du film."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui, image par image à 30 fps (cadence native) : catalogue compact des principes d'animation (espacement, squash, stagger, élastique, rotateY, hold, ease, anticipation) calé à 14 images par temps. Support idéal pour la leçon sur les 12 principes, avec des courbes mesurables."
+  }
+}

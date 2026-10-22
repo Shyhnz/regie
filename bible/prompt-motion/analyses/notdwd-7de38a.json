@@ -1,0 +1,553 @@
+{
+  "slug": "notdwd-7de38a",
+  "title": "Frame by Frame launch video",
+  "handle": "@notdwd",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Exécution très précise (entrées exponentielles, flou calé sur la vitesse, coupes en avance sur le temps, raccords de forme) ; perd un point sur le creux du disque logo et des mots coupés au bord.",
+  "summary": "Sting produit carré de 12 s façon keynote Apple pour « Frame by Frame », un cours pour refaire une vidéo de lancement image par image. Huit plans : fenêtre et clic, icône et carrés en orbite, barre de menus, prompt tapé, page de leçon, cartes, logo, carte noire. Remarquable par la mécanique (tout entre lancé, tout atterrit sur la grosse caisse), plus faible par le récit et la fin molle.",
+  "prompt_vs_result": [
+    "Prompt-cahier des charges : 8 plans décrits image par image (positions en px, opacités, flous), palette hexadécimale, Inter, formule des temps à 124 BPM, images de coupe exactes, bande-son et bruitages datés, interdits (fondus, images figées, violet).",
+    "Peu de liberté : Claude a surtout choisi le contenu des images (illustrations des cartes, ligne graphique du fond d'écran, textes de la leçon) et l'implémentation des flous, du verre dépoli et de la traînée de zoom.",
+    "Excellent cadrage : les 7 coupes tombent à l'image près sur les valeurs demandées. Manquait une règle de zone de sécurité (le pill « on Whop » et la carte sont coupés au bord) et un vrai appel à l'action final."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#FDFDFB",
+        "role": "page blanc cassé, fond principal"
+      },
+      {
+        "hex": "#B7CFEB",
+        "role": "brume bleue d'ouverture"
+      },
+      {
+        "hex": "#E6F0FA",
+        "role": "glace : anneau de survol, teinte de flash"
+      },
+      {
+        "hex": "#294376",
+        "role": "haut du dégradé fond d'écran et de l'icône"
+      },
+      {
+        "hex": "#769CC2",
+        "role": "bas du dégradé ciel"
+      },
+      {
+        "hex": "#1E2F52",
+        "role": "bleu marine : icône, barre de menus"
+      },
+      {
+        "hex": "#2F6BFF",
+        "role": "accent bleu : carré, point, bouton d'envoi"
+      },
+      {
+        "hex": "#3CC8F0",
+        "role": "accent cyan : carré, point"
+      },
+      {
+        "hex": "#4ED6A0",
+        "role": "accent menthe : carré, point"
+      },
+      {
+        "hex": "#BCBCBA",
+        "role": "corps de texte gris de la page de leçon"
+      },
+      {
+        "hex": "#020204",
+        "role": "fond noir radial de la carte finale (≈ #272729 autour du mot)"
+      },
+      {
+        "hex": "#F3F3F5",
+        "role": "mot-symbole final avec halo"
+      }
+    ],
+    "type": "Inter (400 à 700). En-tête 500 ≈ 3 % de la hauteur ; corps 400 gris ≈ 4,4 %, expression clé en noir 600 ; titres géants en verre dépoli ≈ 9 % ; mot final 600 ≈ 48 % de la largeur.",
+    "texture": "Flou omniprésent et calé sur la vitesse : flou rond à l'entrée des éléments (12 à 24 px qui tombent à 0), flou directionnel vertical 6 à 8 px sur le panoramique fouetté, traînée de zoom horizontale de 20 à 30 copies sur le mot final. Verre dépoli (copie floutée et éclaircie du fond découpée à la forme), ombres douces, halo serré + halo large sur le mot final. Pas de grain.",
+    "style": "Keynote Apple, interface en verre dépoli",
+    "coherence": "Tient par une seule loi de mouvement (entrée en ease-out exponentiel avec flou, sortie en accélération ou rampe de flou), une palette stricte blanc / bleus / menthe et la même flèche de curseur réutilisée dans 3 plans. Les carrés colorés deviennent les points de la barre de menus : la couleur relie les plans. La carte finale noire casse volontairement le système pour signer."
+  },
+  "rhythm": {
+    "bpm": 124,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "124 BPM (1 temps = 0,484 s = 29 im à 59,94 fps). La grille automatique (début 0,329 s) tombe sur les contretemps de charleston ; les grosses caisses sont sur ses demi-temps (barres bleu clair), comme le confirme le volume (−19 dB d'intro, drop à −9 dB vers 2,50 s, puis maxima sur 6,38 / 6,86 / 7,35 s…). Les 7 coupes mesurées (2,386 ; 3,353 ; 5,289 ; 6,223 ; 7,157 ; 8,158 ; 10,027 s) correspondent à 1 im près aux images demandées (f72, f101, f159, f187, f215, f245, f301 à 29,97 fps). Elles tombent 5 à 7 im avant la grosse caisse, et l'élément entrant atterrit sur la grosse caisse. 4 maintiens (33 %) : la croix d'icônes (0,45 s), la saisie du prompt (0,5 s, seul le texte bouge), le disque logo (8,17-10,01 s, 1,85 s quasi immobile : vrai creux) et le mot final qui rétrécit de 1 px par image (1,2 s).",
+    "timeline": [
+      {
+        "t": "0:00-0:00.5",
+        "what": "Brume bleue ; l'en-tête (disque FF, « Frame by Frame », pill « on Whop ») monte du bas en flou et se pose ; impact sonore à 0,10 s",
+        "technique": "montée exponentielle sortie de la brume"
+      },
+      {
+        "t": "0:00.25-0:00.8",
+        "what": "La fenêtre du hub apparaît autour (opacité 0 → 0,53 → 0,7 → 1), carte de cours qui déborde à droite et en bas",
+        "technique": "interface qui déborde du cadre"
+      },
+      {
+        "t": "0:00.9-0:02.0",
+        "what": "Le curseur glisse en freinant, pivote vers sa cible, plonge sur le disque, grossit ×1,55 au survol ; anneau glacé autour du disque ; zoom caméra 1,0 → 1,2",
+        "technique": "jeu d'acteur du curseur, zoom de survol"
+      },
+      {
+        "t": "0:02.0-0:02.39",
+        "what": "Le curseur presse (−15 %), la caméra recule en accélérant avec flou",
+        "technique": "sortie en accélération"
+      },
+      {
+        "t": "0:02.39-0:02.9",
+        "what": "Coupe franche avant le drop : icône marine qui rétrécit, 4 carrés tournent en sens inverse des aiguilles et se verrouillent en croix sur un halo gris",
+        "technique": "orbite qui freine et se verrouille"
+      },
+      {
+        "t": "0:02.9-0:03.35",
+        "what": "L'icône s'effondre en accélérant, les carrés glissent en ligne à sa droite, flou 0,3 → 6 px",
+        "technique": "effondrement + rampe de flou"
+      },
+      {
+        "t": "0:03.35-0:03.9",
+        "what": "Barre de menus Mac sur fond d'écran bleu à traits blancs ; les carrés sont devenus les 3 points de la barre ; le curseur monte et clique l'icône",
+        "technique": "raccord de forme carrés → points"
+      },
+      {
+        "t": "0:03.87-0:05.0",
+        "what": "Une boîte de prompt en verre dépoli jaillit en ressort ; panoramique de +125 px ; « Make a launch video for my app » se tape",
+        "technique": "ressort, saisie irrégulière"
+      },
+      {
+        "t": "0:04.5-0:05.29",
+        "what": "Toute la scène monte en accélérant, teinte bleu glacé",
+        "technique": "panoramique fouetté vertical"
+      },
+      {
+        "t": "0:05.29-0:06.22",
+        "what": "Flash bleu glacé, la page de leçon arrive 420 px trop bas, floue, et se cale ; « frame for frame » en noir dans le gris ; curseur vers le haut sous l'expression",
+        "technique": "défilement exponentiel, mot clé en contraste"
+      },
+      {
+        "t": "0:06.22-0:07.16",
+        "what": "Une carte blanche monte par-dessus la page (poignée en haut), la page se floute derrière, puis la carte rétrécit et tout se floute",
+        "technique": "feuille modale + fondu flou"
+      },
+      {
+        "t": "0:07.16-0:08.16",
+        "what": "Deux cartes empilées « Launch » / « Sound » entrent floues et décalées, titres géants en verre dépoli coupés par le bas des cartes ; elles repartent vers le haut",
+        "technique": "titres en verre dépoli"
+      },
+      {
+        "t": "0:08.16-0:10.03",
+        "what": "Le disque logo monte au centre, maintien (seul arrêt voulu), puis rétrécit en accélérant",
+        "technique": "repos du logo"
+      },
+      {
+        "t": "0:10.03-0:12.07",
+        "what": "Carte noire : « Frame by Frame » arrive à 153 % de la largeur avec traînée de zoom, se pose vers 50 %, glisse lentement puis s'effondre en flou ; le film coupe en plein effondrement",
+        "technique": "traînée de zoom + halo"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Indice automatique fort (départs/temps : R = 0,836, p = 2,8e-6, décalage constant +96 ms par rapport à la grille, donc verrou de phase). À l'œil, un événement par geste : 13 sur 26 à ±2 im d'une barre (hasard ≈ 34 % à 124 BPM). Mais le motif est systématique : les 7 coupes tombent 5 à 7 im avant la barre bleu clair (grosse caisse), et les 7 atterrissages qui suivent tombent dessus : menu net f208 (barre f208), boîte de prompt en pleine éclosion f237 (barre f237), expression clé lisible f324 (barre f324), carte arrivée à 72 % de sa course f382 (barre f382), deux cartes nettes f440 (barre f440), disque arrivé à 69 % f500 (barre f498), mot final lisible f614 (barre f614). Aussi calés : pic du zoom de survol f121 (barre f121), croix verrouillée vers f164 (barre f165), coupe finale f601 (barre bleue f600), effondrement final f700 (barre f701). Libres : apparition et plongée du curseur, début de saisie, départ des cartes vers le haut. Drop réel vers 2,47-2,50 s (−19 → −9 dB), 4 à 7 im après la coupe vers l'icône ; le « drop à 12,03 s » de l'indice est un faux positif de fin de fichier.",
+    "synced": [
+      "coupes",
+      "atterrissages",
+      "impacts",
+      "camera",
+      "drop"
+    ],
+    "style_match": "House à 124 BPM, intro douce puis grosse caisse régulière : ses temps nets et aérés collent aux ease-out exponentiels, au blanc lumineux et aux flous doux. Aucune courbe sèche.",
+    "how_built": "Le prompt donne la formule des temps (temps k = 0,048 + 0,4838·k s), impose 3 coupes « 2 images avant un temps » et un drop à 2,47 s calé juste après la première coupe ; la piste (Mixkit « Rising Forest » ralentie à 124 BPM, probable) et les bruitages synthétisés sont datés à la milliseconde (impact 0,10 s, clics 2,33 et 3,83 s, souffles au pic des coupes, tic de touches 4,04-5,00 s). Mesurés : impact à 0,104 s, clic à 3,855 s. La synchro vient donc d'une timeline écrite en images et en temps avant toute animation."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Parcours utilisateur en 8 plans, une action par plan",
+      "name_en": "8-shot user journey, one action per shot",
+      "t": "0:00-0:12.07",
+      "frames": "f0-f719",
+      "fps": 59.94,
+      "mechanics": "Produit → clic → icône → barre de menus → prompt tapé → page réponse → cartes de modules → logo → mot final. Plans de 0,93 à 2,4 s (médiane 1,43 s). Chaque plan montre un seul geste et sert d'entrée au suivant.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ne jamais couper sur une image immobile",
+      "name_en": "Every shot enters already moving",
+      "t": "0:00-0:12.07",
+      "frames": "f0-f719",
+      "fps": 59.94,
+      "mechanics": "Chaque plan démarre à la vitesse maximale de son entrée et freine (page de leçon : 420 px trop bas à f317, en place à f330 ; carte : 59 % de la hauteur à f373, 42 % à f382) et sort soit en accélération (icône, disque), soit par une rampe de flou. Aucune coupe ne relie deux images fixes.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f317.jpg, microM-003-move-f376.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Ease-out exponentiel en pourcentage de la distance restante",
+      "name_en": "Exponential decay ease-out (12-19 % of remaining distance per frame)",
+      "t": "0:05.29-0:06.0",
+      "frames": "f317-f360",
+      "fps": 59.94,
+      "mechanics": "Recette du prompt, conforme aux planches : décalages de la page 420, 315, 210 px (pas linéaires de 105 px par image à 30 fps) puis 170, 140, 116, 96, 81… (chaque pas ≈ 83 % du précédent, soit 17 % de la distance restante par image) jusqu'à 0 à f180 (30 fps), puis dérive de −6 px. L'œil lit un arrêt très doux sans fin brutale.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f317.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flou proportionnel à la vitesse",
+      "name_en": "Speed-matched directional blur",
+      "t": "0:00-0:12.07",
+      "frames": "f0-f719",
+      "fps": 59.94,
+      "mechanics": "Le flou suit la vitesse et la direction : page 24 px (f317) → 1,5 px (f330) → 0 ; menu 3 px qui se résorbe en ≈ 9 im ; flou vertical 6 à 8 px sur le panoramique fouetté (f310-f316) ; flou horizontal en traînée sur le mot final. Les éléments immobiles sont toujours nets.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f201.jpg, microM-002-cut-f317.jpg, microM-005-cut-f601.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "En-tête qui sort d'une brume en montant",
+      "name_en": "Header rising out of a haze",
+      "t": "0:00-0:00.8",
+      "frames": "f0-f48",
+      "fps": 59.94,
+      "mechanics": "Fond brume #B7CFEB qui vire au blanc #FDFDFB en ≈ 0,9 s. L'ensemble disque + nom + pill monte de y932 à y536 avec décélération exponentielle (932, 776, 683, 608 aux images 0, 2, 5, 10 à 30 fps) ; le nom apparaît flou, le pill très flou glisse de 15 px vers la gauche en se nettoyant. Impact sonore à 0,10 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre d'application qui déborde du cadre",
+      "name_en": "Bleeding app window",
+      "t": "0:00.25-0:02.39",
+      "frames": "f15-f143",
+      "fps": 59.94,
+      "mechanics": "Fenêtre claire (rayon ≈ 9 % du cadre) qui part du coin (408,405) et sort à droite et en bas, opacité 0 → 0,53 → 0,7 → 1 en ≈ 10 im ; colonne d'icônes, champ de recherche, carte de cours avec image. Le débord donne l'échelle, mais coupe aussi « Remake any lau… » et le pill « on » au bord droit.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, extra-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur acteur : freine, pivote, plonge, grossit, presse",
+      "name_en": "Acting cursor",
+      "t": "0:00.9-0:02.37",
+      "frames": "f54-f142",
+      "fps": 59.94,
+      "mechanics": "Flèche macOS noire à contour blanc. Glisse vers la gauche en freinant (0,9 à 1,47 s), pivote pour pointer en bas à gauche en ≈ 8 im en plongeant (flou de mouvement visible f108-f110), se pose sur le disque, grossit ×1,55 au survol, rétrécit de 15 % sur la pression (f138-f142). Même flèche réutilisée sur la barre de menus et la page de leçon.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom de survol puis recul accéléré au clic",
+      "name_en": "Hover push-in, accelerating release on click",
+      "t": "0:01.53-0:02.39",
+      "frames": "f92-f143",
+      "fps": 59.94,
+      "mechanics": "Zoom autour du centre 1,0 → 1,2 en ease-in-out (f92-f120), maintien d'une image, puis recul en accélérant vers 1,04 avec flou (f136-f142) pendant la pression du curseur, et coupe. Le pic du zoom tombe sur la grosse caisse f121.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe franche juste avant le drop",
+      "name_en": "Hard cut leading the drop",
+      "t": "0:02.386",
+      "frames": "f142-f150",
+      "fps": 59.94,
+      "mechanics": "Coupe à f143 de la fenêtre floutée vers l'icône déjà en mouvement (carrés flous en rotation). La musique passe de −19 à −9 dB vers 2,47-2,50 s : la coupe précède le drop de 4 à 7 im, l'image nouvelle est donc installée quand le coup arrive.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Orbite qui freine et se verrouille en croix",
+      "name_en": "Decelerating orbit locking into a cross",
+      "t": "0:02.39-0:02.9",
+      "frames": "f143-f174",
+      "fps": 59.94,
+      "mechanics": "Quatre carrés arrondis (92 px, blanc à bord 1 px, #2F6BFF, #3CC8F0, #4ED6A0) tournent en sens inverse des aiguilles autour de l'icône marine : grands pas de rotation f143-f150 avec flou, petits pas ensuite, verrouillage en croix (rayon ≈ 20 % du cadre) vers f160-f165. L'icône passe de 276 à 178 px en ease-out, un halo gris #E9E9E7 grandit derrière (240 → 326 px).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 143,
+        "to": 172,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effondrement avec rampe de flou, carrés qui deviennent les points du menu",
+      "name_en": "Accelerating collapse into a shape match cut",
+      "t": "0:02.93-0:03.37",
+      "frames": "f176-f202",
+      "fps": 59.94,
+      "mechanics": "L'icône rétrécit en accélérant jusqu'à ≈ 40 px, les carrés glissent en rangée à sa droite (le blanc passe derrière), flou 0,3 → 6 px, coupe au pic du flou (f201). Plan suivant : l'icône FF et 3 points bleu / cyan / menthe dans la barre de menus. La forme et la couleur relient les deux plans.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f201.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Gros plan de barre de menus Mac",
+      "name_en": "Mac menu bar close-up",
+      "t": "0:03.35-0:05.29",
+      "frames": "f201-f317",
+      "fps": 59.94,
+      "mechanics": "Bande blanche en haut, bord noir de l'écran, barre marine avec Wi-Fi, batterie, réglages, icône FF, 3 points colorés et « Mon Jun 22 9:41 AM » ; fond d'écran en dégradé #294376 → #769CC2 avec cercle, lignes fines et étincelle à 4 branches, lueur turquoise en haut à droite. Entre flou de 3 px et se nettoie en ≈ 9 im ; le curseur monte du bas avec flou.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f201.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Boîte de prompt en verre qui jaillit en ressort",
+      "name_en": "Spring-out frosted prompt box",
+      "t": "0:03.87-0:04.3",
+      "frames": "f232-f258",
+      "fps": 59.94,
+      "mechanics": "La boîte (rayon ≈ 5,5 % du cadre) sort de sous l'icône à f232, petite et floue, s'élargit jusqu'à ≈ 69 % de la largeur (pic f252) puis revient à ≈ 67 % (dépassement ≈ 2,5 %) ; flou qui tombe à 0 vers f240. Verre : copie floutée et éclaircie du ciel, liseré clair en haut, 3 icônes contour, bouton d'envoi bleu. Éclosion maximale sur la grosse caisse f237.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 228,
+        "to": 259,
+        "n": 6
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Panoramique qui accompagne l'ouverture",
+      "name_en": "Pan following the reveal",
+      "t": "0:03.84-0:04.35",
+      "frames": "f230-f261",
+      "fps": 59.94,
+      "mechanics": "Le contenu glisse de +125 px vers la droite (≈ 12 % du cadre), plus rapide vers f236-f240, pendant que la boîte s'ouvre : la date sort à droite (« 9:41 A »). La caméra suit l'objet au lieu de rester fixe.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Frappe irrégulière façon humain",
+      "name_en": "Human-rhythm typing",
+      "t": "0:04.0-0:05.0",
+      "frames": "f240-f300",
+      "fps": 59.94,
+      "mechanics": "≈ 1 caractère toutes les 2 im à 59,94 fps, avec une image de pause toutes les 2 à 3 lettres (« Make » f240, « Make a » f245, « Make a l » f249, « lau » f253, « launch » f259), curseur texte toujours visible. Tics de clavier très discrets demandés en son.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Panoramique fouetté vers le haut avec flash glacé",
+      "name_en": "Whip-tilt through a light flash",
+      "t": "0:04.5-0:05.5",
+      "frames": "f272-f330",
+      "fps": 59.94,
+      "mechanics": "La scène dérive vers le haut puis accélère (≈ 25 px/im à 30 fps à la fin), flou vertical 6 à 8 px, teinte #E6F4FE qui monte sur 4 im ; coupe à f317 sur un flash #E2F4FE où la page de leçon arrive floue (24 px) et basse, puis se cale en ease-out exponentiel. L'expression clé devient lisible pile sur la grosse caisse (f324).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f317.jpg",
+      "illus": {
+        "from": 308,
+        "to": 330,
+        "n": 6
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Expression clé en noir dans un texte gris",
+      "name_en": "Key phrase in black within grey body",
+      "t": "0:05.29-0:06.22",
+      "frames": "f317-f373",
+      "fps": 59.94,
+      "mechanics": "Corps Inter 400 gris #BCBCBA (≈ 4,4 % de la hauteur, interligne 58 px), une seule expression « frame for frame » en noir 600. Le contraste de valeur guide l'œil sans couleur ni surlignage ; le curseur (flèche vers le haut) monte avec le défilement et s'arrête juste dessous.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f317.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Carte qui monte comme une feuille modale",
+      "name_en": "Bottom-sheet card rise",
+      "t": "0:06.22-0:06.9",
+      "frames": "f373-f414",
+      "fps": 59.94,
+      "mechanics": "Carte blanche avec poignée grise en haut, image bleue arrondie (rayon ≈ 6 %), légende semi-grasse. Le haut de l'image passe de 59 % à 42 % de la hauteur en 9 im (f373-f382) puis à 32 % vers f410 en continuant de dériver ; flou de la carte maximal à f377 (≈ 4 px), net vers f400 ; la page derrière se floute à ≈ 2,5 px (profondeur).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f376.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu flou au lieu d'un fondu enchaîné",
+      "name_en": "Blur-dissolve cut",
+      "t": "0:06.9-0:07.35",
+      "frames": "f414-f440",
+      "fps": 59.94,
+      "mechanics": "La carte rétrécit de ≈ 5 % et monte pendant que tout le cadre se floute de 1 à 7 px ; coupe au pic du flou (f429) vers deux cartes floues de 12 px qui deviennent nettes à f440, sur la grosse caisse. Aucun mélange d'images : le flou masque la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f432.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titres géants en verre dépoli coupés par la carte",
+      "name_en": "Frosted-glass giant titles cropped by card edge",
+      "t": "0:07.16-0:08.16",
+      "frames": "f429-f489",
+      "fps": 59.94,
+      "mechanics": "Sur chaque carte (≈ 50 × 32 % du cadre, rayon ≈ 5 %), le titre « Launch » ou « Sound » en Inter grasse ≈ 9 % de la hauteur, rempli d'une copie floutée et éclaircie de l'image de la carte, coupé par le bord bas. Pastille « Module 3 / 5 » et rond « ••• » en verre en haut.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f432.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Deux cartes empilées à entrée décalée",
+      "name_en": "Staggered stacked cards",
+      "t": "0:07.16-0:08.16",
+      "frames": "f429-f489",
+      "fps": 59.94,
+      "mechanics": "Carte du haut entrée 8 % trop grande depuis y264, carte du bas depuis y927 avec un léger retard ; posées à y168 et y552 (écart 36 px), centrées. Dérive vers le haut de 3 px/im puis accélération et flou dans la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f432.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Repos du disque logo",
+      "name_en": "Logo disc rest beat",
+      "t": "0:08.16-0:10.03",
+      "frames": "f489-f601",
+      "fps": 59.94,
+      "mechanics": "Disque gris clair ⌀ 168 px (≈ 16 % de la largeur) avec la marque FF : monte au centre (69 % de la course à f500, sur la grosse caisse), seul arrêt voulu (≈ 0,6 s), puis rétrécit en accélérant jusqu'à ⌀ 123 px. Sur fond blanc et à cette taille, le plan reste presque immobile 1,85 s : creux d'énergie.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, microM-005-cut-f601.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot final en traînée de zoom",
+      "name_en": "Zoom-smear wordmark slam",
+      "t": "0:10.03-0:10.6",
+      "frames": "f601-f634",
+      "fps": 59.94,
+      "mechanics": "Coupe sur fond noir : « Frame by Frame » arrive à ≈ 153 % de la largeur, étiré horizontalement avec 20 à 30 copies agrandies et estompées (traînées), puis 125 %, 103 %, 97 %… en ease-out exponentiel, lisible vers f610 et à ≈ 76 % sur la grosse caisse f614, puis ≈ 52 % et dérive de 1 px par image.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f601.jpg",
+      "illus": {
+        "from": 600,
+        "to": 621,
+        "n": 6
+      }
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Halo double sur le mot final",
+      "name_en": "Tight glow plus wide halo",
+      "t": "0:10.03-0:12.07",
+      "frames": "f601-f719",
+      "fps": 59.94,
+      "mechanics": "Texte #F3F3F5 avec un halo serré et un halo large et doux, sur un fond radial #272729 autour du mot vers #020204 aux coins : le mot éclaire son propre fond.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Fin en plein effondrement",
+      "name_en": "Cut mid-collapse ending",
+      "t": "0:11.68-0:12.07",
+      "frames": "f700-f719",
+      "fps": 59.94,
+      "mechanics": "Le mot passe de ≈ 45 % à ≈ 25 % de la largeur en ease-in avec flou montant à 3,5 px, départ sur la grosse caisse f701 ; le film s'arrête avant la fin du geste. Effet de sortie rapide, mais aucune adresse ni appel à l'action.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette stricte et contre-point noir final",
+      "name_en": "Strict palette with black end-card counterpoint",
+      "t": "0:00-0:12.07",
+      "frames": "f0-f719",
+      "fps": 59.94,
+      "mechanics": "11 s en blanc cassé, glace et bleus avec trois accents (bleu, cyan, menthe) qui reviennent sur les carrés, les points du menu et les boutons ; violet et orange interdits. La carte finale noire avec halo est le seul contraste de valeur fort du film.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Couper en avance, atterrir sur la grosse caisse",
+      "name_en": "Cut ahead of the beat, land on the kick",
+      "t": "0:02.39-0:10.25",
+      "frames": "f143-f614",
+      "fps": 59.94,
+      "mechanics": "Les 7 coupes tombent 5 à 7 im (≈ 0,1 s) avant la grosse caisse ; l'élément entrant, lancé à pleine vitesse, finit l'essentiel de sa course sur la grosse caisse : f208, f237, f324, f382, f440, f500, f614 (barres bleu clair à ±2 im). L'œil enregistre la coupe, l'oreille l'atterrissage.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f201.jpg, microM-002-cut-f317.jpg, microM-003-move-f376.jpg, microM-004-move-f432.jpg, microM-005-cut-f601.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Intro douce, drop sur l'entrée de l'icône",
+      "name_en": "Soft intro, drop on the icon reveal",
+      "t": "0:00-0:02.5",
+      "frames": "f0-f150",
+      "fps": 59.94,
+      "mechanics": "−19 dB pendant la séquence de la fenêtre et du curseur, drop à −9 dB vers 2,47-2,50 s juste après la coupe vers l'icône en orbite. La partie « interface calme » reste sur l'intro, l'énergie arrive avec la marque.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bruitages synthétisés calés sur l'image",
+      "name_en": "Synthesized SFX timed to picture",
+      "t": "0:00.10-0:10.05",
+      "frames": "f6-f602",
+      "fps": 59.94,
+      "mechanics": "Le prompt date chaque effet : impact 0,10 s (mesuré 0,104 s), clics 2,33 et 3,83 s sur les pressions du curseur (mesuré 3,855 s), souffles au pic de chaque coupe, tics de touches pendant la frappe, scintillement à 10,05 s. Les autres effets ne ressortent pas des attaques mesurées : discrets ou absents (probable).",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "structure",
+      "insight": "Prompt de rétro-ingénierie : chaque plan est décrit avec des positions en px par image (y932 → 776 → 683 → 608…), ce qui ressemble à la transcription d'un film de référence. Résultat : les 7 coupes tombent à 1 image près sur les valeurs demandées."
+    },
+    {
+      "kind": "direction",
+      "insight": "Une loi de mouvement unique écrite en chiffres (« entrée en ease-out exponentiel à 12-19 % de la distance restante par image, flou qui suit la vitesse ») donne plus de cohérence qu'une liste d'adjectifs."
+    },
+    {
+      "kind": "structure",
+      "insight": "La formule des temps (0,048 + 0,4838·k s) et la règle « 3 coupes 2 images avant un temps » ont produit un verrou de phase mesurable (p = 2,8e-6). Écrire la grille musicale dans le prompt est ce qui crée la synchro."
+    },
+    {
+      "kind": "banned",
+      "insight": "Les interdits (pas de fondu enchaîné, pas d'image figée sauf une, pas de violet, pas de Math.random) ont forcé des solutions plus riches : fondu flou, coupe au pic du flou, verre dépoli."
+    },
+    {
+      "kind": "build",
+      "insight": "Rendu comme fonction pure du numéro d'image (seek(t)), tables d'images clés interpolées, valeurs continues pour un master à 59,94 fps rendu à demi-images, Playwright une capture par image : exactement le modèle HyperFrames."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Le bloc <inputs> demande nom, logo, prompt, page, cartes et musique avec des valeurs par défaut : le prompt est un gabarit réutilisable pour n'importe quel produit."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le prompt prévoit 4 images de contrôle avant le rendu complet et prévient que le pill peut sortir du cadre ; pourtant « on Whop » et la carte de cours sont coupés au bord pendant le zoom de survol : la règle visait la mise en page, pas le zoom."
+    },
+    {
+      "kind": "other",
+      "insight": "Mise en abyme : le produit enseigne à refaire une vidéo de lancement « frame for frame », et le prompt lui-même est un exemple de cette méthode."
+    }
+  ],
+  "steal": [
+    "Coupe 4 à 6 im (à 60 fps) avant la grosse caisse et fais finir la course de l'élément entrant dessus : la coupe se voit, l'atterrissage s'entend.",
+    "Chaque plan entre déjà lancé : ease-out exponentiel à ≈ 17 % de la distance restante par image, flou proportionnel à la vitesse qui tombe à 0 à l'arrêt.",
+    "Remplace le fondu enchaîné par un fondu flou : flou plein cadre 1 → 7 px, coupe au pic, plan suivant flou 12 px qui se nettoie sur le temps.",
+    "Relie deux plans par la forme et la couleur : les carrés en orbite deviennent les points colorés de la barre de menus.",
+    "Mot final en traînée de zoom : 20 à 30 copies estompées, de 150 % à 50 % de la largeur en ease-out, halo double sur fond noir radial."
+  ],
+  "flaws": [
+    "Disque logo minuscule et presque immobile pendant 1,85 s sur fond blanc : l'énergie s'effondre aux deux tiers du film.",
+    "Mots coupés au bord pendant le zoom de survol : « Remake any lau… » et le pill « on Whop » réduit à « on ».",
+    "Récit d'interface difficile à suivre sans connaître le produit : on ne comprend qu'à la page de leçon ce que fait Frame by Frame.",
+    "Fin sur un mot qui s'effondre, sans adresse ni appel à l'action."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : c'est le meilleur exemple du corpus de synchro écrite à l'avance (coupe en avance, atterrissage sur la grosse caisse) et de loi de mouvement chiffrée, avec des tables d'images clés directement transposables dans HyperFrames. À étudier image par image de f136 à f210, de f300 à f330 et de f595 à f625."
+  }
+}

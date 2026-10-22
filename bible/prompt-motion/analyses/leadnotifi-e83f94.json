@@ -1,0 +1,419 @@
+{
+  "slug": "leadnotifi-e83f94",
+  "title": "Lead Notifi product ad",
+  "handle": "@leadnotifi",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Système graphique cohérent (point, goutte, cercle, liquide) posé sur une grille de 128 BPM avec silences et impacts ; mais trucs répétés (7 cercles plein cadre), maintiens et durée triplée.",
+  "summary": "Pub de 45 s pour Lead Notifi (automatisation WhatsApp), construite avec des points, gouttes et liquides sur une grille de 128 BPM : goutte qui se divise en leads, cercles qui envahissent l'écran, morphing des logos de canaux, compteur, cartes de chiffres au temps, flux vers une boîte unique, jauge de score, intégrations en pieuvre. Force : synchro et système de formes. Faiblesse : répétitions, longueur.",
+  "prompt_vs_result": [
+    "Une ligne : une vidéo de motion « dynamique » de 15 s, digne de la bande démo d'un motion designer, « go all out ». Rien sur le produit, la musique, la charte ou le format.",
+    "Le contexte produit (Lead Notifi, chiffres, intégrations) vient d'ailleurs, probablement du projet. Claude a choisi le langage point/goutte/liquide, la palette noir/jaune néon/crème, 14 scènes et une bande-son à 128 BPM calée image par image.",
+    "La durée n'est pas tenue : 45 s au lieu de 15. « Showreel » a produit un catalogue de virtuosité ; il fallait fixer durée, nombre de scènes et limiter le motif de transition."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#141414", "role": "fond sombre principal"},
+      {"hex": "#E2FA1F", "role": "jaune néon : goutte, cercles plein cadre, fonds des cartes de chiffres, flux, CTA, point du logo"},
+      {"hex": "#EDEDE8", "role": "crème clair : fonds des scènes de données (compteur, organigramme, jauge, intégrations)"},
+      {"hex": "#FFFFFF", "role": "texte et anneaux fins sur noir"},
+      {"hex": "#8E9199", "role": "gris : flux Messenger, légendes secondaires, anneaux de radar"},
+      {"hex": "#DADDE2", "role": "blanc-gris ombré des formes Messenger et Instagram"},
+      {"hex": "#B5D334", "role": "vert-jaune des cellules allumées de la grille de points (approx.)"}
+    ],
+    "type": "Grotesque étendue très large (type Monument Extended / Unbounded, probable), capitales, titres ≈ 9-10 % et chiffres ≈ 25-30 % de la hauteur ; mono espacée minuscule pour légendes ; logo néo-grotesque grasse en bas-de-casse, point jaune.",
+    "texture": "Aplats nets sans grain ; ombrage doux type argile sur les formes morphées (reflet en haut à gauche) ; reflets spéculaires blancs sur les gouttes noires (aspect laqué) ; flou gaussien d'entrée sur les mots et chiffres ; flou de mouvement horizontal sur le défilement de texte ; nuages de points 3D et filaires fins (anneaux de radar, cube, boîte englobante) ; vagues et bulles dans la jauge.",
+    "style": "Formes liquides et point jaune néon",
+    "coherence": "Tout dérive d'un seul objet, le point : goutte qui tombe, cellule qui se divise, cercle qui envahit l'écran, nœud d'organigramme, cœur de la boîte de réception, jauge, centre des anneaux de texte, point du logo. Trois fonds (noir, jaune, crème) alternent à chaque cercle plein cadre, et la musique à 128 BPM sert de squelette commun. Ce qui casse un peu : la séquence IA (plan de points, sphère, cube filaire) emprunte un vocabulaire 3D froid moins liquide, et le logo final change de police (néo-grotesque en bas-de-casse au lieu de l'étendue en capitales)."
+  },
+  "rhythm": {
+    "bpm": 128,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "128 BPM constants (netteté 6,52) ; grille vérifiée du début à la fin : temps n à l'image ≈ 29,8 + 28,125 × n (la goutte atterrit sur le temps 0 à f30, l'impact final tombe sur le temps 87 à f2477). 13 coupes détectées, 12 à 50 ms d'un temps ou d'un demi-temps ; mon comptage sur les planches : 16 gestes clés sur 19 à ±2 im d'une barre (84 %, hasard ≈ 36 % à 128 BPM / 60 fps). Les cartes de chiffres durent exactement 1 temps (coupes f1238, f1266, f1294, f1322, f1350, chacune 1-2 im avant le temps). Structure musicale suivie : intro sans grosse caisse (0-3,5 s) pendant le rituel de la goutte, entrée du kick avec le cercle jaune (f213-f226), pause des basses 26,0-29,9 s (-28 à -34 dB) sur la scène calme des flux, retour de la basse à f1803 avec la jauge, silences de 6-8 im puis impacts (f1916, f2000), montée sous le dernier cercle (f2460-f2478). Densité : un changement d'état par temps dans les séquences fortes (division, morphing des formes, chiffres). Temps morts : 11 maintiens ≥ 0,4 s = 9,78 s (22 %), dont titre tenu 5,5-6,3 s, noir vide 7,07-7,65 s, cadre presque vide 26,0-26,87 s, jauge figée 32,15-33,4 s et carton final 2,1 s.",
+    "timeline": [
+      {"t": "0:00-0:00.50", "what": "Goutte jaune étirée qui tombe du haut au centre", "technique": "chute avec étirement, atterrissage sur le temps 0"},
+      {"t": "0:00.50-0:00.97", "what": "Le point atterrit, anneaux de radar qui s'élargissent", "technique": "ondes concentriques"},
+      {"t": "0:00.97-0:02.03", "what": "Le point se divise 1 → 2 → 4 → 8 sur trois temps, étiquette « NEW LEAD +2/+4/+8 »", "technique": "division cellulaire sur les temps"},
+      {"t": "0:02.03-0:03.30", "what": "Anneau de 8 points qui tourne ; NEW LEADS DON'T WAIT. en bas à gauche", "technique": "titre en fondu, rotation lente"},
+      {"t": "0:03.30-0:03.62", "what": "Les 8 points fusionnent en un, qui grossit jusqu'à remplir l'écran de jaune", "technique": "point → cercle plein cadre (sur l'entrée du kick)"},
+      {"t": "0:03.62-0:06.57", "what": "EVERY [LEAD] ANSWERED. : flou → net, crochets de sélection, deuxième ligne qui glisse de la gauche", "technique": "typo cinétique au temps"},
+      {"t": "0:06.57-0:07.05", "what": "Gouttelettes noires puis marée noire liquide qui monte du bas", "technique": "volet liquide en métaballes (1 temps)"},
+      {"t": "0:07.05-0:09.35", "what": "Noir 0,6 s, puis LEAD NOTIFI qui se déplie lettre à lettre, soulignement jaune liquide qui coule en gouttes", "technique": "révélation du logo, coulure"},
+      {"t": "0:09.35-0:12.95", "what": "Formes WhatsApp, Messenger, Live chat, Instagram qui se transforment dans une boîte englobante qui tourne", "technique": "carrousel de morphing, interface d'outil de design"},
+      {"t": "0:12.95-0:13.13", "what": "La forme Messenger fonce vers la caméra et devient le fond crème", "technique": "zoom à travers la forme"},
+      {"t": "0:13.13-0:16.47", "what": "Étiquette « 0 », sphère de points qui s'aplatit en grille ; ondes vert-jaune ; compteur 0 → 10 000 « MESSAGES SENT »", "technique": "compteur qui roule sur grille de points"},
+      {"t": "0:16.47-0:16.77", "what": "La grille recule en rectangle, rétrécit en point, cercle noir qui envahit l'écran", "technique": "rétrécir en point puis révélation circulaire"},
+      {"t": "0:16.77-0:20.63", "what": "Plan de points 3D, sphère de points avec salutations en orbite (HOLA, BONJOUR…), cube filaire, traversée de caméra ; AI AGENT", "technique": "nuage de points 3D, texte en orbite"},
+      {"t": "0:20.63-0:22.50", "what": "<1s / 30+ / 24/7 / 500+ sur jaune, un par temps, tache noire qui saute de coin en coin", "technique": "cartes de chiffres au temps"},
+      {"t": "0:22.50-0:25.90", "what": "Goutte noire laquée qui tombe, se divise en nœuds reliés par des tubes gluants ; NO CODE. JUST FLOW. ; points jaunes qui circulent", "technique": "organigramme liquide"},
+      {"t": "0:25.90-0:26.25", "what": "Les nœuds fusionnent en une tache qui envahit l'écran, les points jaunes convergent et s'éteignent", "technique": "fusion de métaballes"},
+      {"t": "0:26.25-0:29.80", "what": "Flux jaune, blanc et gris venus de trois bords qui se jettent dans un cercle crème ; ONE INBOX. EVERY CHANNEL.", "technique": "flux convergents (pause musicale)"},
+      {"t": "0:29.80-0:33.45", "what": "Jauge à graduations qui se remplit de liquide, score 1 → 92, tag HOT LEAD tamponné, → HANDED TO SALES", "technique": "remplissage piloté par la donnée"},
+      {"t": "0:33.45-0:33.75", "what": "Point noir dans la jauge qui grossit en cercle plein cadre", "technique": "point → cercle"},
+      {"t": "0:33.75-0:37.10", "what": "4 rangs de fonctionnalités qui défilent, fondu enchaîné vers 4 anneaux de texte concentriques qui tournent", "technique": "défilement → anneaux de texte"},
+      {"t": "0:37.10-0:37.40", "what": "Les anneaux s'effacent, le point central devient blanc et grossit en fond crème", "technique": "point → cercle"},
+      {"t": "0:37.40-0:41.07", "what": "Boule noire qui pousse 8 tentacules vers les intégrations ; PLUGS INTO YOUR STACK. ; repli, point, cercle noir", "technique": "pieuvre d'intégrations"},
+      {"t": "0:41.07-0:42.90", "what": "Noir, goutte jaune qui tombe, orbite sur anneaux de radar, logo Lead Notifi. qui se construit", "technique": "carton final en miroir de l'ouverture"},
+      {"t": "0:42.90-0:45.06", "what": "Logo, accroche, bouton « Start your free 14-day trial », URL ; tenu 2,1 s", "technique": "appel à l'action"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 128 BPM (netteté 6,52), stable du début à la fin. Planches microscope : 16 gestes clés sur 19 à ±2 im d'une barre bleue ou bleu clair (84 %, hasard ≈ 36 %) : cercle jaune f213-f214 (demi-temps), EVERY f225 (temps f227), ANSWERED. posé f283 (temps + attaque), marée noire f395 → f423 (exactement 1 temps), zoom Messenger f774 (demi-temps f775, attaque), étiquette 0 f788, plan de points f1013, coupes f1238 et f1322 (1 im avant le temps), fusion des points jaunes f1562, cercle crème f1788, jauge f1800, cercle noir f2014, défilement f2025, point noir f2251, dernier cercle f2465. Ratés : cercle noir f1005 (+5), tache f1559 (-3), cercle crème f2243 (+5). En plus, sur extra-01 (pas de 4 im) : goutte posée f30 (temps 0), divisions f58 / f86 / f114 (temps 1, 2, 3), fusion f198 (temps 6). Enveloppe des basses : silence f1908-f1914 puis impact f1916 sous le tag HOT LEAD (posé f1929, demi-temps) ; silence f1995-f1998 puis impact f2000 sous le point noir ; silence f2443-f2460, montée f2460-f2478 pendant que le cercle grossit, impact f2478. L'indice automatique (« aucune synchro ») est démenti par l'image : départs/demi-temps p = 0,009.",
+    "synced": ["coupes", "departs", "impacts", "atterrissages", "apparitions", "texte", "couleur", "drop"],
+    "style_match": "Électro à 128 BPM (probable), pulsation nette, silences et impacts : colle aux formes liquides élastiques, aux cercles explosifs et au jaune néon sur noir.",
+    "how_built": "Timeline entière posée sur une grille de 128 BPM : chaque scène commence sur un temps ou un demi-temps, les cartes de chiffres durent exactement 1 temps (28 im), et les silences, impacts et montées tombent sous des transitions précises. Cette précision suggère une bande-son générée en code sur la même timeline (grosse caisse par temps, impacts programmés aux changements de scène), probable. Le prompt ne parlait pas de musique : Claude a raisonné en temps musicaux de lui-même."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Récit en preuves successives, ouverture et fin en miroir",
+      "name_en": "Feature proof chain with bookend",
+      "t": "0:00-0:45.06",
+      "frames": "f0-f2699",
+      "fps": 60,
+      "mechanics": "Promesse (NEW LEADS DON'T WAIT → EVERY LEAD ANSWERED) → marque (LEAD NOTIFI) → canaux → messages en masse → agent IA → chiffres → flux sans code → boîte unique → score → fonctionnalités → intégrations → logo + CTA. La goutte jaune qui tombe et les anneaux de radar ouvrent (0-1 s) et ferment (41,5-42,5 s) la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Goutte qui tombe en s'étirant puis ondes de radar",
+      "name_en": "Stretched drop fall with ripple rings",
+      "t": "0:00.30-0:00.97",
+      "frames": "f18-f58",
+      "fps": 60,
+      "mechanics": "Goutte jaune étirée verticalement (≈ 1,6:1) qui tombe de ≈ 5 % à 50 % de la hauteur en ≈ 12 im en accélérant (gravité), redevient ronde à l'atterrissage f30 (≈ 9 % de la hauteur) ; 2-3 anneaux fins gris s'élargissent jusqu'à ≈ 90 % de la hauteur en s'estompant (f30-f58). Atterrissage pile sur le premier temps de la grille (0,496 s).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Division cellulaire sur les temps (1 → 2 → 4 → 8)",
+      "name_en": "On-beat cell division",
+      "t": "0:00.97-0:03.30",
+      "frames": "f58-f198",
+      "fps": 60,
+      "mechanics": "Le point s'étire en deux lobes (métaballe) et se sépare en ≈ 4-6 im : 2 points à f58-f62, 4 à f84-f90, 8 à f112-f118, soit sur les temps 1, 2 et 3 (f58, f86, f114) ; micro-étiquette mono « NEW LEAD +2 / +4 / +8 » en haut à droite. Les 8 points forment un anneau qui tourne lentement (≈ 20°/s), puis convergent en un seul point en ≈ 4 im (f194-f198, temps 6) qui grossit puis se resserre (≈ 9 % → 5 % de la hauteur). Métaphore directe des leads qui se multiplient.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 18, "to": 118, "n": 8}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Point → cercle plein cadre (iris inversé)",
+      "name_en": "Dot-to-fullscreen circle wipe",
+      "t": "0:03.48-0:03.62",
+      "frames": "f209-f217",
+      "fps": 60,
+      "mechanics": "Le point jaune (≈ 6 % de la hauteur) grossit en accélérant : ≈ 12, 20, 30, 45, 75, 100 % de la hauteur (f210-f215), recouvre tout le cadre à f217. 8 im = 0,13 s, ease-in quasi exponentiel, bord net, sans flou. Le jaune devient le fond de la scène suivante. Moitié du geste sur le demi-temps f213, au moment où la grosse caisse entre. Même mécanisme réutilisé à f997-f1006 (noir), f1777-f1788 (crème), f2004-f2014 (noir), f2233-f2243 (crème), f2455-f2466 (noir).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f214.jpg, microM-010-cut-f2011.jpg, microM-012-cut-f2464.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot ou chiffre en flou → net",
+      "name_en": "Blur-in reveal",
+      "t": "0:03.75-0:03.82",
+      "frames": "f225-f229",
+      "fps": 60,
+      "mechanics": "EVERY apparaît fortement flou (flou gaussien ≈ 1 % de la largeur) et devient net en 4-5 im (f225-f229), sans déplacement notable. Même entrée pour les chiffres : <1s flou f1238 → net f1243 (5 im), 500+ flou f1322 → net f1325 (3 im). Le mot tombe sur le temps (f227).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f214.jpg, microM-006-cut-f1238.jpg, microM-007-move-f1325.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Deuxième ligne qui glisse de la gauche et pousse la première",
+      "name_en": "Slide-in line with re-centering push",
+      "t": "0:04.60-0:04.72",
+      "frames": "f276-f283",
+      "fps": 60,
+      "mechanics": "ANSWERED. entre par le bord gauche et parcourt ≈ 60 % de la largeur en 7 im, ease-out (grands pas puis petits), pendant que EVERY [LEAD] remonte de ≈ 4 % de la hauteur pour recentrer le bloc. Atterrissage f283 pile sur le temps, avec une attaque audio.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f279.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Crochets de sélection autour du mot-clé",
+      "name_en": "Selection-bracket emphasis",
+      "t": "0:04.30-0:06.57",
+      "frames": "f258-f394",
+      "fps": 60,
+      "mechanics": "LEAD est encadré par quatre coins fins noirs (comme une sélection dans un outil de design), seule emphase de la phrase EVERY [LEAD] ANSWERED. Grotesque étendue en capitales noires ≈ 9 % de la hauteur sur jaune, centrée.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f279.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Marée noire liquide qui monte du bas",
+      "name_en": "Rising metaball liquid wipe",
+      "t": "0:06.58-0:07.05",
+      "frames": "f395-f423",
+      "fps": 60,
+      "mechanics": "Des gouttelettes noires flottent sur le jaune (f390-f402), puis des colonnes noires à têtes arrondies (métaballes) montent du bas à des vitesses inégales et engloutissent le titre ; il ne reste que de fines coulures jaunes en haut à f415-f420, noir complet à f423. Durée exacte : 1 temps (f395 → f423), accélération progressive.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f409.jpg",
+      "illus": {"from": 392, "to": 422, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logo qui se déplie lettre à lettre et soulignement qui coule",
+      "name_en": "Unfolding logotype with dripping underline",
+      "t": "0:07.50-0:09.35",
+      "frames": "f450-f561",
+      "fps": 60,
+      "mechanics": "LEAD NOTIFI (≈ 7 % de la hauteur, ≈ 55 % de la largeur) part d'une ligne écrasée (échelle verticale ≈ 0,05) à f450, sur le temps, et chaque lettre se déplie verticalement de gauche à droite (≈ 2 im de décalage, ≈ 10 im par lettre), complet à f480. Soulignement jaune liquide qui pousse du centre vers les bords (f474-f486), bord ondulant ; des coulures descendent (f507-f528) puis tombent en gouttes (f528-f555) ; accroche mono « YOUR WHATSAPP. NOW A SALES MACHINE. » à f510 ; fondu au noir f552-f561 (demi-temps f550).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Carrousel de morphing des canaux dans une boîte englobante",
+      "name_en": "Channel-shape morph carousel with transform box",
+      "t": "0:09.40-0:12.95",
+      "frames": "f564-f777",
+      "fps": 60,
+      "mechanics": "Une forme (≈ 30 % de la hauteur) se transforme environ une fois par temps : cercle jaune WhatsApp → squircle → trèfle blanc Messenger → badge festonné jaune Live chat → cercle WhatsApp → carré arrondi blanc Instagram → Messenger. Elle est entourée d'une boîte englobante qui tourne (8 poignées, croix centrale) avec lecture mono « ROT 56.7° SHAPE WHATSAPP ». Le nom du canal (capitales étendues ≈ 7 %) change par masque vertical en bas à gauche. Ombrage doux type argile sur les formes.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom à travers la forme, sa couleur devient le fond",
+      "name_en": "Shape zoom-through colour match",
+      "t": "0:12.88-0:12.98",
+      "frames": "f773-f779",
+      "fps": 60,
+      "mechanics": "La forme Messenger grossit de ≈ 30 % à plus de 150 % de la hauteur en ≈ 5 im (f773-f778), ease-in, et traverse la caméra ; son blanc-gris se confond avec le crème de la scène suivante (f779). Départ sur le demi-temps f775 (attaque audio), étiquette « 0 » qui apparaît f788 sur le temps suivant.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f778.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur qui roule sur une grille de points en ondes",
+      "name_en": "Rolling counter over rippling dot grid",
+      "t": "0:13.13-0:16.47",
+      "frames": "f788-f988",
+      "fps": 60,
+      "mechanics": "Étiquette noire « 0 » + légende mono « MESSAGES SENT · ONE CLICK » ; une sphère de points grossit derrière (f792-f810), bombée comme un fisheye, puis s'aplatit en grille régulière ; des cellules vert-jaune s'allument en ondes concentriques puis en arcs qui traversent la grille. Le compteur roule 0 → 7 116 (14,0 s) → 9 720 (14,5 s) → 10 000 (15,0 s), ease-out, puis tient 10 000 ; l'étiquette glisse vers le bas à gauche.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f778.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Rétrécir en point puis révélation circulaire",
+      "name_en": "Shrink-to-dot then circular reveal",
+      "t": "0:16.47-0:16.77",
+      "frames": "f988-f1006",
+      "fps": 60,
+      "mechanics": "La grille de points recule en rectangle puis rétrécit jusqu'à un carré noir minuscule en ≈ 8 im (f988-f996), devient un point noir (f997), qui grossit en cercle noir et recouvre le cadre en ≈ 8 im (f997-f1006), ease-in. Le plan de points 3D apparaît f1013, 1 im avant le temps f1014.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f1003.jpg",
+      "illus": {"from": 988, "to": 1006, "n": 8}
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Nuage de points : plan → sphère avec salutations en orbite → cube filaire → traversée",
+      "name_en": "Point-cloud sphere with orbiting greetings",
+      "t": "0:16.88-0:20.63",
+      "frames": "f1013-f1237",
+      "fps": 60,
+      "mechanics": "Plan de points en perspective sur noir (f1013) dont les points s'élèvent (17,5 s) pour former une sphère de points ; des salutations (HOLA, BONJOUR, OLÁ, CIAO, HALLO, scripts tamoul et devanagari) orbitent autour en 3D, plus sombres et petites à l'arrière ; la sphère devient un cube filaire de points qui tourne (19,5-20,0 s), puis la caméra fonce dans un coin du cube, particules qui défilent (20,5 s). Titre AI AGENT + légende mono « < 15 REPLIES · 30+ LANGUAGES · NEVER SLEEPS ».",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg, overview-04.jpg, microM-006-cut-f1238.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Cartes de chiffres à un temps chacune, tache qui saute de coin en coin",
+      "name_en": "One-beat stat cards",
+      "t": "0:20.63-0:22.50",
+      "frames": "f1238-f1350",
+      "fps": 60,
+      "mechanics": "Quatre coupes franches sur jaune exactement espacées de 28 im (1 temps à 128 BPM) : <1s RESPONSE TIME, 30+ LANGUAGES, 24/7 ALWAYS ON, 500+ BUSINESSES. Chiffre géant (≈ 25-30 % de la hauteur) en flou → net (3-5 im), légende mono minuscule. Une tache noire liquide change de coin à chaque carte (haut-gauche, bas-droite, haut-droite, bas-gauche), se déforme et lâche des gouttelettes : elle relie les coupes. Chaque coupe tombe 1-2 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1238.jpg, microM-007-move-f1325.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Organigramme liquide : goutte laquée, nœuds reliés par des tubes gluants",
+      "name_en": "Gooey node flowchart",
+      "t": "0:22.50-0:25.90",
+      "frames": "f1350-f1543",
+      "fps": 60,
+      "mechanics": "Sur crème : une goutte noire laquée (reflet blanc) tombe en s'étirant (23,0 s), se divise en boules (23,5 s) qui deviennent 4 nœuds étiquetés TRIGGER, AI REPLY, HANDOFF, CRM (pastilles mono jaunes sur noir) ; des tubes noirs gluants (ponts de métaballes) les relient en ligne brisée (24,5 s) ; des points jaunes circulent d'un nœud à l'autre (25,0-25,5 s). Titre NO CODE. JUST FLOW. en haut à gauche (≈ 6 % de la hauteur), montée par masque.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg, microM-008-move-f1556.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fusion des nœuds en une tache plein cadre, points jaunes qui convergent",
+      "name_en": "Metaball merge to fullscreen",
+      "t": "0:25.72-0:26.25",
+      "frames": "f1543-f1575",
+      "fps": 60,
+      "mechanics": "Le nœud central gonfle (f1543-f1549) et avale les autres nœuds et les tubes, devient un cercle noir qui recouvre le cadre vers f1559 ; le titre s'efface en fondu (f1545-f1550). Les points jaunes restés à l'intérieur convergent au centre et fusionnent en un seul (f1562, demi-temps), qui rétrécit et disparaît (f1565-f1575).",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f1556.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Flux liquides de trois canaux qui convergent vers une boîte unique",
+      "name_en": "Converging liquid streams",
+      "t": "0:26.25-0:29.80",
+      "frames": "f1575-f1788",
+      "fps": 60,
+      "mechanics": "Sur noir : un flux jaune entre par la gauche (WHATSAPP), un flux blanc par le haut (INSTAGRAM), un flux gris pointillé par la droite (MESSENGER) ; chaque flux se termine en gouttes de taille décroissante et se jette dans un cercle crème à cœur jaune (≈ 25 % de la hauteur) qui les absorbe. ONE INBOX. EVERY CHANNEL. en bas à gauche. Scène calme posée sur la pause des basses (26,0-29,9 s). Le cercle grossit ensuite jusqu'au plein cadre (f1777-f1788).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg, microM-009-move-f1783.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Jauge remplie de liquide pilotée par le score",
+      "name_en": "Data-driven liquid gauge",
+      "t": "0:30.00-0:33.40",
+      "frames": "f1800-f2004",
+      "fps": 60,
+      "mechanics": "Cercle à trait noir fin (≈ 45 % de la hauteur) entouré de 24 graduations, sur le temps f1800-f1802. Le liquide jaune monte avec une surface en vagues (deux vagues décalées) et des bulles, pendant que le score roule 1 (30,5 s) → 31 (31,0 s) → 86 (31,5 s) → 92 (32,0 s), chiffre ≈ 22 % de la hauteur, légendes mono LEAD SCORE et « PRIYA SHARMA · 38NK · ₹65L BUDGET ». « → HANDED TO SALES » passe du gris au noir (32,5-33,0 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, microM-010-cut-f2011.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Tag « HOT LEAD » tamponné après un silence",
+      "name_en": "Stamped tag after a stop",
+      "t": "0:31.97-0:32.15",
+      "frames": "f1918-f1929",
+      "fps": 60,
+      "mechanics": "Étiquette noire inclinée ≈ -8° à texte jaune, en capitales étendues : apparaît f1918-f1919 à ≈ 2,2× en débordant du cadre, puis 2,1 → 1,8 → 1,5 → 1,15 → 1,0 (f1921-f1929), ease-in-out, léger rebond ≈ 3 % (f1931). La musique se tait f1908-f1914, l'impact tombe f1916 (temps) ; le tag apparaît 3 im après et se pose f1929, sur le demi-temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Défilement de fonctionnalités → anneaux de texte concentriques en rotation",
+      "name_en": "Marquee rows to rotating text rings",
+      "t": "0:33.75-0:37.10",
+      "frames": "f2025-f2231",
+      "fps": 60,
+      "mechanics": "Quatre rangs de fonctionnalités séparées par des points jaunes défilent horizontalement, tailles décroissantes (≈ 3 % → 1 % de la hauteur), sens alternés probables ; apparition f2025, sur le temps. Fondu enchaîné de ≈ 8 im (f2112-f2122, départ sur le temps f2111) : les rangs prennent un flou de mouvement horizontal et s'effacent pendant que quatre anneaux de texte concentriques apparaissent (même hiérarchie de tailles, du plus grand à l'extérieur), centrés sur un point jaune. Les anneaux tournent lentement jusqu'à f2225, puis s'éteignent en ≈ 6 im.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-06.jpg, overview-07.jpg, microM-011-cut-f2240.jpg",
+      "illus": {"from": 2108, "to": 2124, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Pieuvre d'intégrations",
+      "name_en": "Tentacle integration hub",
+      "t": "0:37.52-0:41.00",
+      "frames": "f2251-f2460",
+      "fps": 60,
+      "mechanics": "Point noir qui apparaît f2251 (temps) et grossit en boule ; PLUGS INTO YOUR STACK. en haut. La boule pousse des tentacules gluants et ondulants vers 8 étiquettes (CALENDAR, ODOO, SHOPIFY, WOOCOMMERCE, RAZORPAY, GOOGLE SHEETS…), chaque bout terminé par un nœud à point jaune ; des points jaunes circulent entre le centre et les intégrations (39,5-40,5 s). Repli des tentacules f2449-f2454 dans le silence musical, réduction en point f2455.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, microM-012-cut-f2464.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton final en miroir de l'ouverture",
+      "name_en": "Bookended end card",
+      "t": "0:41.07-0:45.06",
+      "frames": "f2464-f2699",
+      "fps": 60,
+      "mechanics": "Noir f2466-f2489 ; goutte jaune qui tombe à f2490 (demi-temps après l'impact f2478) ; orbite sur anneaux de radar (42,0 s) ; Lead Notifi. se construit lettre à lettre pendant que les anneaux s'élargissent (42,5 s) ; accroche mono, bouton jaune « Start your free 14-day trial », URL, mention « OFFICIAL WHATSAPP BUSINESS API · TRUSTED BY 500+ BUSINESSES » (43,0-43,5 s) ; carton tenu 2,1 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Un geste par temps ou demi-temps sur une grille fixe de 128 BPM",
+      "name_en": "Beat-grid choreography",
+      "t": "0:00.50-0:42.00",
+      "frames": "f30-f2490",
+      "fps": 60,
+      "mechanics": "Temps n à l'image ≈ 29,8 + 28,125 × n. Les départs (divisions, marée, zoom, défilement) partent sur le temps ; les fins de transition et les atterrissages (cercle jaune, cercle crème, cercle noir, tag) tombent sur le demi-temps suivant ; les apparitions de texte et de chiffres arrivent 0-2 im avant le temps (coupes f1238, f1322 à -1 im). Résultat mesuré : 16 gestes sur 19 à ±2 im d'une barre (hasard ≈ 36 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f214.jpg à microM-012-cut-f2464.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Silence avant impact sous les gestes clés",
+      "name_en": "Stop-time before the hit",
+      "t": "0:31.80-0:41.30",
+      "frames": "f1908-f2478",
+      "fps": 60,
+      "mechanics": "Basses mesurées (< 120 Hz) : silence f1908-f1914 (-46 à -61 dB) puis impact f1916 (-7 dB) sous le tag HOT LEAD ; silence f1995-f1998 puis impact f2000 sous le point noir de la jauge ; silence f2443-f2460, montée f2460-f2478 synchronisée avec le cercle noir qui grossit, impact f2478. Le vide sonore d'un demi-temps rend le geste suivant plus fort.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f2011.jpg, microM-012-cut-f2464.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Structure musicale reprise par les scènes",
+      "name_en": "Music sections mapped to scenes",
+      "t": "0:00-0:30.05",
+      "frames": "f0-f1803",
+      "fps": 60,
+      "mechanics": "Intro sans grosse caisse (basses ≈ -53 dB, 0-3,5 s) pendant le rituel de la goutte ; entrée de la basse f213-f226 au moment où le cercle jaune remplit l'écran et où EVERY apparaît ; accents de basse aux transitions (7,5 s logo, 13,0 s zoom, 16,5 s point) ; pause des basses 26,0-29,9 s (≈ -30 dB) sur la scène calme des flux convergents ; retour de la basse f1803 avec l'apparition de la jauge (f1800).",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, microM-001-cut-f214.jpg, microM-009-move-f1783.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Rotation de trois fonds à chaque cercle",
+      "name_en": "Three-background rotation",
+      "t": "0:00-0:41.07",
+      "frames": "f0-f2466",
+      "fps": 60,
+      "mechanics": "Noir #141414 → jaune #E2FA1F (f217) → noir (f423) → crème #EDEDE8 (f779) → noir (f1006) → jaune (f1238) → crème (f1350) → noir (f1559) → crème (f1788) → noir (f2014) → crème (f2243) → noir (f2466). Le changement de fond porte le rythme et sépare les chapitres.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-08.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Titres en capitales étendues, micro-légendes mono",
+      "name_en": "Wide caps headlines with mono micro-labels",
+      "t": "0:02.03-0:43.50",
+      "frames": "f122-f2610",
+      "fps": 60,
+      "mechanics": "Titres de 2 lignes en bas à gauche (marge ≈ 5 % de la largeur, bas ≈ 75-85 % de la hauteur) ou centrés pour les manifestes ; légendes mono espacées de ≈ 1 % de la hauteur (ROT 6.6°, SHAPE WHATSAPP, PRIYA SHARMA…) qui imitent une interface. En 1280×720 ces légendes sont illisibles : pur décor.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens et répétition du cercle plein cadre",
+      "name_en": "Holds and overused wipe",
+      "t": "0:05.50-0:44.98",
+      "frames": "f330-f2699",
+      "fps": 60,
+      "mechanics": "11 maintiens ≥ 0,4 s = 9,78 s (22 %) : titre 5,5-6,3 s, noir vide 7,07-7,65 s (0,6 s), cadre presque vide 26,0-26,87 s, jauge 32,15-33,4 s, carton final 2,1 s. Le cercle plein cadre revient 7 fois (f217, f1006, f1559, f1788, f2014, f2243, f2466), dont 4 en 13 s entre 29 et 41 s.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, microM-009-move-f1783.jpg, microM-011-cut-f2240.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« Show what an incredible motion designer you are… go all out » a donné 14 scènes de démonstration (morphing, métaballes, nuage de points 3D, anneaux de texte, jauge liquide). Le langage unique du point a évité l'effet catalogue, mais pas la longueur."},
+    {"kind": "inputs", "insight": "Le prompt ne nomme ni le produit ni ses chiffres (500+ entreprises, 30+ langues, intégrations) : ces données viennent du contexte (projet ou site, probable). Sans elles, le modèle n'aurait eu que de l'abstrait à animer."},
+    {"kind": "structure", "insight": "« 15-second » n'a pas été respecté : 45 s. Une contrainte de durée isolée ne suffit pas ; il aurait fallu un nombre de scènes ou un découpage en temps musicaux (par exemple 32 temps à 128 BPM = 15 s)."},
+    {"kind": "build", "insight": "Toute la timeline est pensée en temps de 128 BPM (cartes de 28 im, transitions sur temps et demi-temps, silences et montées sous les gestes) : signe probable d'une bande-son générée en code sur la même grille que l'animation."},
+    {"kind": "other", "insight": "Aucune consigne de musique, et pourtant une synchro serrée : quand Claude construit lui-même la bande-son, il cale naturellement l'image sur la grille. Pour la reproduire, demander explicitement « timeline en temps de X BPM, coupes sur les temps »."},
+    {"kind": "qa", "insight": "Pas de consigne anti-répétition : le cercle plein cadre revient 7 fois et 22 % du temps est en maintien. Une règle « chaque transition au plus deux fois » aurait suffi."}
+  ],
+  "steal": [
+    "Grammaire point → cercle : chaque scène se réduit à un point qui grossit en cercle plein cadre (8 im, ease-in) et devient le fond suivant, sur un demi-temps.",
+    "Division cellulaire au temps : une goutte tombe sur le temps 1, puis se divise 1 → 2 → 4 → 8 sur les temps suivants, compteur « +N » à l'appui.",
+    "Cartes de chiffres d'un temps chacune (28 im à 128 BPM) : nombre géant en flou → net (4 im), tache liquide qui saute de coin en coin pour lier les coupes.",
+    "Silence d'un demi-temps puis impact : couper la musique 6-8 im avant un geste clé et faire apparaître le geste sur le retour du son.",
+    "Défilement de fonctionnalités en rangs qui se fondent en anneaux de texte concentriques en rotation, même hiérarchie de tailles, point de marque au centre."
+  ],
+  "flaws": [
+    "Le cercle plein cadre revient 7 fois, dont 4 en 13 s : la grammaire devient un tic.",
+    "45 s au lieu des 15 s demandées : 14 scènes de démonstration, le message produit se dilue.",
+    "22 % de maintiens statiques (9,8 s), dont 0,6 s de noir vide à 7,1 s et 0,9 s presque vide à 26 s.",
+    "Micro-légendes mono (ROT 6.6°, PRIYA SHARMA…) illisibles en 1280×720 : décor sans information.",
+    "Séquence IA en nuage de points 3D froid, hors du langage liquide du reste, et logo final dans une autre police."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Oui : c'est le cas d'école de l'animation posée sur une grille de 128 BPM (16 gestes sur 19 au temps, silences avant impact, montée sous le cercle). Les transitions point → cercle de 8 im, les métaballes et la division cellulaire se mesurent image par image."
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "slug": "gabrielbuzziv-4ff0c6",
+  "title": "Enxovaly baby app promo",
+  "handle": "@gabrielbuzziv",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo produit soignée et cohérente (marque, interface réelle, chambre 3D), arc problème → solution limpide, entrées calées au temps près ; mais entrées floues génériques et trois transitions par le blanc.",
+  "summary": "Promo de 15 s pour Enxovaly, appli de trousseau de bébé en portugais, née du prompt générique « showreel ». Acte sombre et saturé (« Mil listas. Mil dúvidas. » sur un champ d'icônes), bascule lumineuse sur un drop musical, puis démonstration de l'appli (téléphone, critères, scan de photo, chambre 3D qui se meuble) et logo. Titres et étapes tombent sur les temps à 120 BPM.",
+  "prompt_vs_result": [
+    "Même prompt d'une ligne que fionntobin-97b7af : 15 s de motion graphics « dynamiques » façon showreel, « go all out ». Rien sur un produit, une marque, une langue ou une musique.",
+    "Claude a fait une pub produit pour Enxovaly en portugais : arc problème → solution, six titres serif, téléphone, puces, scan de photo, chambre 3D, logo, et une structure musicale à 120 BPM avec coupure avant la révélation.",
+    "Le contexte du projet (marque, écrans, images, langue) a pesé plus que le prompt : la même phrase donne un showreel ailleurs. Pour une promo, nommer le produit, le public, la musique et le message final."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#311D44", "role": "violet nuit : bords et vignette de l'acte sombre"},
+      {"hex": "#472C62", "role": "violet du champ d'icônes"},
+      {"hex": "#FEF5FF", "role": "texte clair sur violet"},
+      {"hex": "#F5F1F7", "role": "fond lavande de l'acte clair"},
+      {"hex": "#38312D", "role": "encre brun-noir des titres"},
+      {"hex": "#634187", "role": "violet des mots en italique"},
+      {"hex": "#845DAC", "role": "violet de l'en-tête de l'appli"},
+      {"hex": "#E8DCF3", "role": "lilas du fond radial du logo"}
+    ],
+    "type": "Serif douce à empattements en boule, type Fraunces (probable) : romain encre + italique violet, titres ≈9-13 % de la hauteur, point final ; sans arrondie type Nunito (probable) pour puces et interface ; logotype en italique.",
+    "texture": "Lumière douce partout : vignette sombre à l'acte 1, halos blancs, ombres portées violettes floues sous le téléphone, les cartes et la chambre ; flou de mise au point sur les titres, flou de mouvement sur la plongée dans l'écran ; photo et rendus 3D aux coins arrondis ; scintillements dorés en fin.",
+    "style": "Promo d'appli douce en lavande",
+    "coherence": "Une seule famille serif (titres, interface, logotype), le duo romain encre + italique violet sur chaque titre, une palette violette du plus sombre au plus clair, les mêmes ombres douces et coins arrondis sur cartes, téléphone, photo et pastilles. La bascule sombre → clair est le seul changement de monde, motivé par le récit. Ce qui casse : trois flashs blancs presque identiques."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, grosse caisse sur t = 0 + n × 0,5 s (15 im par temps à 30 fps) ; la grille automatique (0,526 s) est juste à la latence près. Mesures de 2 s : les titres arrivent sur l'image même du temps (« Mil dúvidas. » f60, « Sem » f120, « Sob » f165, « Peça por » f240, « Com calma » f315, slogan f420), les puces sur trois demi-temps successifs, la jauge sur les doubles-croches. Les transitions occupent le dernier temps de la mesure, quand la musique se creuse ; la révélation suivante tombe sur le premier temps. Une seule coupe franche détectée (f109, cachée dans le halo) : la vidéo enchaîne par transitions continues. Six maintiens > 0,4 s (4,2 s cumulés, 28 %) : 4,33-4,87 s (lecture du titre), 5,87-7,03 s (téléphone et puces, seuls des points circulent), 11,03-12,03 s (petites apparitions de meubles, peu visibles au détecteur), 12,97-13,5 s (icône du logo), 14,1-14,93 s (carte de fin). Densité : un geste toutes les 7 à 30 im.",
+    "timeline": [
+      {"t": "0:00.00-0:00.43", "what": "Fond violet nuit en vignette ; une tuile (body de bébé au trait) surgit au centre à f4, sur la première attaque audio (0,116 s), ease-out sur 8 im", "technique": "tuile unique"},
+      {"t": "0:00.43-0:01.00", "what": "Les tuiles voisines apparaissent en onde depuis le centre (temps 1), puis le plan bascule en perspective oblique (f24-f30) et dérive en continu", "technique": "champ d'icônes en onde et bascule"},
+      {"t": "0:01.00-0:01.93", "what": "« Mil listas. » (romain blanc + italique lilas) passe du flou au net sur le temps 2", "technique": "entrée par mise au point"},
+      {"t": "0:01.90-0:03.10", "what": "Permutation floue vers « Mil dúvidas. » sur le temps 4, premier temps de la mesure 2", "technique": "permutation de mot sur le premier temps"},
+      {"t": "0:03.10-0:03.43", "what": "La musique se coupe : le titre s'efface 1 à 2 im après, champ d'icônes seul dans le silence", "technique": "silence = titre retiré"},
+      {"t": "0:03.43-0:03.80", "what": "Montée sonore : traînée de lumière, 5 cartes blanches (Touca, Macacão, Body, Manta, Meias) au temps 7, halo blanc qui envahit l'écran ; les cartes se redressent de face dans le monde clair", "technique": "halo blanc porté par les cartes"},
+      {"t": "0:04.00-0:04.90", "what": "Drop : « Sem exageros. » (encre + italique violet) au temps 8, au-dessus des 5 cartes en ligne", "technique": "révélation sur le drop"},
+      {"t": "0:04.90-0:05.50", "what": "Un téléphone entre par la droite ; au temps 10, les cartes sont aspirées dans l'écran et le titre sort", "technique": "téléphone qui aspire les cartes"},
+      {"t": "0:05.50-0:07.05", "what": "« Sob medida. » au temps 11 ; puces « Nasce em janeiro », « Verão », « RN a 12 meses » sur trois demi-temps, reliées au téléphone par des pointillés où circulent des points", "technique": "puces de critères et pointillés vivants"},
+      {"t": "0:07.07-0:07.50", "what": "Plongée dans l'écran du téléphone (ease-in, flou de mouvement), puis blanc", "technique": "plongée dans l'écran"},
+      {"t": "0:07.50-0:09.37", "what": "Photo de vêtements au temps 15, scan, crochets et étiquettes ; « Peça por peça. » au temps 16 ; les pièces volent vers les cartes de taille RN, 3m, 6m, 9m ; « 6 peças identificadas »", "technique": "scan d'identification et pièces qui volent vers leur case"},
+      {"t": "0:09.37-0:09.87", "what": "Tout glisse vers le haut, la chambre isométrique monte du bas, dans le creux de fin de mesure", "technique": "poussée verticale"},
+      {"t": "0:10.03-0:12.00", "what": "Pastille « Enxoval 0% » au temps 20 ; les meubles se posent ; « Com calma e carinho. » au temps 21 ; la jauge monte en 12 pas de double-croche jusqu'à 100 %", "technique": "chambre qui se meuble et jauge"},
+      {"t": "0:12.00-0:12.50", "what": "Coche dorée et confettis au temps 24 ; éblouissement blanc depuis la fenêtre de la chambre, blanc total sur le temps 25", "technique": "éblouissement blanc"},
+      {"t": "0:12.80-0:13.50", "what": "Fond lilas radial ; l'icône (bébé emmailloté) se trace au trait et se pose sur le temps 26, puis visage et lune", "technique": "logo tracé au trait"},
+      {"t": "0:13.50-0:15.00", "what": "L'icône glisse à gauche au temps 27, « Enxovaly » s'écrit lettre à lettre, slogan au temps 28, URL, scintillements ; la musique s'éteint en fondu", "technique": "logotype écrit et carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille mesurée : 120 BPM, grosse caisse sur t = 0 + n × 0,5 s (phase des basses 21 ms, soit la latence de détection), 15 im par temps à 30 fps ; la grille du dossier est juste. 31 gestes clés (un par geste), datés par différentiel limité à la zone de chaque élément : 17/31 à ±2 im d'un temps (hasard 33 %), dont 15 à ±1 im (hasard 20 %) ; 6 autres exactement sur un demi-temps (puces 1 et 3 à f172 et f187, fin du halo f113, fond du logo f384, écriture du logotype f412). Tous les titres démarrent sur l'image du temps, à 0 ou −1 im : f30, f60, f120, f165, f240, f315, f420. La jauge avance en 12 pas de 3-4 im (f316 → f357), soit une double-croche (3,75 im), et la coche dorée tombe sur le temps 24 (f360-f361). La piste se coupe à 3,03-3,10 s (−90 dB jusqu'à 3,33 s) puis monte jusqu'au drop de 4,0 s : le titre s'efface 1 à 2 im après la coupure, la traînée de lumière grandit pendant la montée, les cartes surgissent au temps 7 (f105) et « Sem exageros. » tombe sur le drop (f120). Les transitions (plongée 7,07-7,47 s, poussée 9,37-9,87 s) sont logées dans les creux de fin de mesure (−16 à −18 dB), d'où la corrélation négative intensité/mouvement (r = −0,69). Restent libres : la dérive de la caméra, l'entrée du téléphone (f147, −3 im) et les envols de vêtements. L'indice automatique « aucune synchro » rate ces calages : il ne voit que 11 départs, noyés dans le mouvement continu du champ d'icônes.",
+    "synced": ["departs", "apparitions", "texte", "atterrissages", "drop"],
+    "style_match": "Pop électronique douce à 120 BPM (arpèges en croches, grosse caisse légère, probable) et animation feutrée : flous, glissés, halos. Ton tendre cohérent avec une marque de puériculture.",
+    "how_built": "Rien sur la musique dans le prompt. Composition HyperFrames dont les entrées sont probablement écrites en secondes rondes (pas de 0,5 s, 0,25 s et 0,125 s pour les cascades), qui tombent d'elles-mêmes sur les temps, demi-temps et doubles-croches d'une piste à 120 BPM calée sur t = 0. La coupure, la montée et le drop de 3,0-4,0 s, taillés pour la bascule sombre → clair, montrent que la piste a été générée ou montée pour la vidéo (probable)."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Problème sombre et saturé, solution claire et épurée",
+      "name_en": "dark cluttered problem, light minimal solution",
+      "t": "0:00.00-0:04.00",
+      "frames": "f0-f120",
+      "fps": 30,
+      "mechanics": "Acte 1 sur violet nuit #311D44 à #472C62 : champ d'une centaine de tuiles d'objets de bébé et « Mil listas. Mil dúvidas. » (mille listes, mille doutes). Acte 2 sur lavande #F5F1F7 : il ne reste que 5 cartes essentielles et « Sem exageros. » (sans excès). Les 5 cartes sortent du champ et traversent la transition : l'image démontre le message.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-003-cut-f109.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tuile unique puis champ d'icônes en onde",
+      "name_en": "single tile then ripple-in icon field",
+      "t": "0:00.13-0:00.73",
+      "frames": "f4-f22",
+      "fps": 30,
+      "mechanics": "Une tuile carrée arrondie (≈ 7 % de la largeur, violet plus clair, body de bébé au trait blanc) grandit de 0 à 100 % en ≈ 8 im (ease-out) à partir de f4, sur la première attaque audio (0,116 s). Les tuiles voisines apparaissent en anneaux concentriques depuis le centre (f13-f22, ≈ 1 anneau toutes les 2 im, départ au temps 1) ; la tuile centrale reste éclairée puis rentre dans le rang.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f0-f22)"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Bascule en perspective et dérive continue",
+      "name_en": "tilt into perspective and continuous drift",
+      "t": "0:00.80-0:03.43",
+      "frames": "f24-f103",
+      "fps": 30,
+      "mechanics": "Le plan de tuiles bascule de la vue de face à une perspective oblique (sol vu en biais, légère rotation dans le plan) en ≈ 6 im (f24-f30), puis dérive en diagonale sans arrêt, avec une vignette sombre sur les bords. Le champ devient un décor de fond vivant pour les titres.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f24-f34), microM-001-move-f62.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre en deux voix : romain neutre + italique coloré",
+      "name_en": "roman plus coloured italic headline",
+      "t": "0:01.00-0:12.40",
+      "frames": "f30-f372",
+      "fps": 30,
+      "mechanics": "Six titres de 2 ou 3 mots finis par un point : « Mil listas. », « Mil dúvidas. », « Sem exageros. », « Sob medida. », « Peça por peça. », « Com calma / e carinho. ». Le premier mot en romain (blanc #FEF5FF sur violet, encre #38312D sur clair), le mot porteur en italique violet #634187 (lilas sur violet). Serif douce type Fraunces (probable) ; 9 à 13 % de la hauteur, 35 à 42 % de la largeur ; centré à l'acte 1, en colonne à gauche ou à droite ensuite.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, image f200 en pleine résolution"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Entrée par mise au point (flou → net)",
+      "name_en": "blur-in focus pull",
+      "t": "0:01.00-0:10.70",
+      "frames": "f29-f321",
+      "fps": 30,
+      "mechanics": "Chaque titre passe de flou fort et transparent à net en ≈ 5 im (f29-f34 pour « Mil listas. »), le mot en italique 2 im après le mot romain (« Sem » f120, « exageros. » f122). Sortie symétrique : flou et fondu en 3 à 4 im (f56-f59, f94-f97). Même traitement pour les six titres.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg (f30-f34), microM-003-cut-f109.jpg (f120-f126)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Permutation de mot sur le premier temps",
+      "name_en": "word swap on the downbeat",
+      "t": "0:01.87-0:02.13",
+      "frames": "f56-f64",
+      "fps": 30,
+      "mechanics": "« Mil listas. » se dissout (f56-f59) et « Mil dúvidas. » se met au point au même endroit (f60-f64), avec 1 à 2 im de recouvrement. Seul le mot en italique change : anaphore visuelle. La nouvelle phrase démarre exactement sur f60, premier temps de la mesure 2 (barre bleue f61).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f62.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Coupure, montée, drop = bascule sombre → clair",
+      "name_en": "cut, riser and drop driving the world switch",
+      "t": "0:03.03-0:04.00",
+      "frames": "f91-f120",
+      "fps": 30,
+      "mechanics": "La piste se coupe à 3,03-3,10 s (−90 dB jusqu'à 3,33 s), remonte en continu de −84 à −17 dB jusqu'à 4,0 s, puis la batterie revient (−9 dB). À l'image : le titre s'efface 1 à 2 im après la coupure (f94-f97), le champ d'icônes reste seul dans le silence, une traînée de lumière grandit pendant la montée (f98-f104), les cartes surgissent au temps 7 (f105), le halo remplit l'écran au demi-temps 7,5 (f113) et « Sem exageros. » tombe sur le drop (f120).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f87.jpg, microM-003-cut-f109.jpg, enveloppe audio par fenêtres de 25 ms"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Halo blanc porté par les cartes",
+      "name_en": "light bloom with an object anchor",
+      "t": "0:03.47-0:03.80",
+      "frames": "f104-f114",
+      "fps": 30,
+      "mechanics": "Deux fines traînées blanches (≈ 10 % de la largeur) au centre à f104 ; 5 cartes blanches apparaissent à f105, inclinées comme le plan, avec une lueur derrière. La lueur radiale passe de ≈ 20 % à 100 % du cadre en ≈ 8 im (f106-f113), pendant que les cartes se redressent de face. Le champ sombre ne survit qu'en vignette (f109-f111). Les cartes deviennent le premier élément du monde clair : la coupe détectée à f109 est cachée dans la lumière.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f109.jpg",
+      "illus": {"from": 103, "to": 116, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone qui aspire les cartes",
+      "name_en": "phone absorbing the cards",
+      "t": "0:04.90-0:05.47",
+      "frames": "f147-f164",
+      "fps": 30,
+      "mechanics": "Maquette d'iPhone réaliste (≈ 23 % de la largeur, 83 % de la hauteur, légère inclinaison 3D, ombre violette floue) qui entre par la droite en ease-out (f147-f160). Sur le temps 10 (f150), les 5 cartes partent vers l'écran avec un décalage d'≈ 2 im et y disparaissent (f150-f164) pendant que « Sem exageros. » sort en flou (f149-f156). L'écran se remplit de l'interface (en-tête violet, « 31% »), puis le téléphone se décale à droite pour laisser la place au titre suivant.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f148-f168)",
+      "illus": {"from": 146, "to": 166, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Puces de critères et pointillés vivants",
+      "name_en": "criteria chips with live dotted connectors",
+      "t": "0:05.73-0:07.05",
+      "frames": "f172-f211",
+      "fps": 30,
+      "mechanics": "Trois puces blanches arrondies (≈ 25 % de la largeur, vignette d'icône 3D + texte sans arrondie) entrent par la gauche en ≈ 8 im chacune, sur trois demi-temps successifs (f172, f180, f187 : −0,5, 0, −0,5 im). Chacune est reliée à une ligne de liste du téléphone par une courbe en pointillés violets où circule un point plein (≈ 30 im par trajet). Les critères alimentent visiblement l'appli.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f168-f212), image f200 en pleine résolution",
+      "illus": {"from": 168, "to": 200, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée dans l'écran",
+      "name_en": "push-in through the phone screen",
+      "t": "0:07.07-0:07.50",
+      "frames": "f212-f225",
+      "fps": 30,
+      "mechanics": "Zoom qui accélère (différentiel 0,004 → 0,10 en 6 im) : le téléphone remplit le cadre vers f218 (vitesse maximale sur le demi-temps 14,5), flou de mouvement fort f219-f221, blanc f222-f224, nouvelle scène sur le temps 15 (f225). ≈ 13 im (0,43 s), dans le creux musical de fin de mesure.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f218.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Scan d'identification sur photo",
+      "name_en": "photo scan with detection brackets",
+      "t": "0:07.50-0:08.40",
+      "frames": "f225-f252",
+      "fps": 30,
+      "mechanics": "Photo à plat de vêtements de bébé (coins arrondis, ≈ 30 % de la largeur × 70 % de la hauteur, à gauche) qui se met au point sur le temps 15. Une ligne de scan lilas la balaie, des crochets d'angle se verrouillent sur chaque pièce avec des étiquettes violettes (« Body · 3m », « Vestido · 9m »), le statut « Identificando as peças da foto » (avec rond de chargement) devient « 6 peças identificadas » avec coche verte.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f218.jpg (f226-f235), extra-02.jpg (f228-f252)"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Pièces qui volent vers leur case",
+      "name_en": "items flying into size slots",
+      "t": "0:08.07-0:09.07",
+      "frames": "f242-f272",
+      "fps": 30,
+      "mechanics": "Grille 2 × 2 de cartes de taille (RN, 3m, 6m, 9m en grand serif, sous-titre « 0–1 meses », 3 cases en pointillés chacune) qui se met au point à partir de f242. Les vignettes des vêtements quittent la photo et volent en arc vers leur case (≈ 8 à 12 im par vol, décalées d'≈ 4 im), les compteurs en pastille lilas passent de « 0 peças » à « 1 peça » puis « 2 peças ».",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg (f244-f272), image f270 en pleine résolution"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Poussée verticale",
+      "name_en": "vertical push",
+      "t": "0:09.37-0:09.87",
+      "frames": "f281-f296",
+      "fps": 30,
+      "mechanics": "Toute la mise en page glisse vers le haut et sort (ease-in-out, vitesse maximale f288), la chambre entre par le bas et se pose vers f296 : ≈ 15 im (0,5 s), pendant le creux musical qui précède le temps 20.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f289.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Chambre isométrique qui se meuble",
+      "name_en": "isometric room furnishing itself",
+      "t": "0:09.80-0:11.90",
+      "frames": "f294-f357",
+      "fps": 30,
+      "mechanics": "Rendu isométrique d'une chambre de bébé (≈ 45 % de la largeur, flottante, ombre violette floue dessous). Armoire et commode se posent dès f303-f312, puis berceau, tapis, couffin, poussette et jouets apparaissent un par un en grandissant depuis le sol (3-4 im chacun) pendant que la jauge monte. Les objets sont probablement des rendus précalculés détourés.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f289.jpg (f294-f306), extra-03.jpg (f306-f357)",
+      "illus": {"from": 300, "to": 362, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Jauge en pastille sur les doubles-croches",
+      "name_en": "progress pill stepping on sixteenth notes",
+      "t": "0:10.03-0:12.03",
+      "frames": "f301-f361",
+      "fps": 30,
+      "mechanics": "Pastille blanche en haut à gauche, « Enxoval 0% » avec anneau de progression, qui apparaît sur le temps 20 (f301, en ≈ 7 im). La valeur monte en 12 pas de 8,33 % (f316, f320, f324, f327, f331, f335, f339, f342, f346, f350, f354, f357 : écarts de 4, 4, 3, 4… = 3,75 im, une double-croche à 120 BPM), du temps 21 au temps 23,75. À 100 %, l'icône devient une coche dorée sur le temps 24 (f360-f361).",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg, microM-006-move-f371.jpg, différentiel de la zone de la pastille"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Confettis dorés de validation",
+      "name_en": "golden confetti burst",
+      "t": "0:12.03-0:12.40",
+      "frames": "f361-f372",
+      "fps": 30,
+      "mechanics": "Une quinzaine de petits points dorés jaillissent de la pastille à 100 % et dérivent vers la droite et le bas en ≈ 10 im en s'effaçant. Accent bref qui récompense la complétion, juste avant l'éblouissement.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f371.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Éblouissement blanc vers le logo",
+      "name_en": "flare whiteout to the logo",
+      "t": "0:12.20-0:12.80",
+      "frames": "f366-f384",
+      "fps": 30,
+      "mechanics": "Une source de lumière naît à la fenêtre de la chambre (f366), grandit en halo radial doux jusqu'au blanc total sur le temps 25 (f375), tient 8 im de blanc pur (f376-f383), puis le fond lilas radial apparaît (f384). Troisième passage par le blanc de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f371.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Logo tracé au trait",
+      "name_en": "logo stroke draw-on",
+      "t": "0:12.87-0:13.50",
+      "frames": "f386-f405",
+      "fps": 30,
+      "mechanics": "L'icône (bébé emmailloté : capsule au trait noir ≈ 0,6 % de la hauteur, remplissage lilas dans la moitié basse, ≈ 25 % de la hauteur) trace son contour en ≈ 4 im et se pose sur le temps 26 (f390). Puis les yeux fermés, le sourire et une lune en croissant apparaissent (f396-f405).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f371.jpg (f386-f388), extra-03.jpg (f387-f408)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Logotype écrit lettre à lettre",
+      "name_en": "letter-by-letter wordmark reveal",
+      "t": "0:13.47-0:14.13",
+      "frames": "f404-f424",
+      "fps": 30,
+      "mechanics": "L'icône glisse à gauche sur le temps 27 (f404-f410, ease-out) pour faire place au mot. « Enxovaly » (serif italique, encre) apparaît de gauche à droite à partir du demi-temps 27,5 (f412), ≈ 1,5 im par lettre avec un court fondu. Le slogan « O enxoval do seu bebê, peça por peça, com calma e carinho. » (« peça por peça » en violet gras) arrive en fondu sur le temps 28 (f420), l'URL à f424. Le slogan reprend les titres de la vidéo.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg (f405-f426)"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Scintillements autour du logo",
+      "name_en": "twinkling sparkles",
+      "t": "0:14.30-0:14.90",
+      "frames": "f429-f447",
+      "fps": 30,
+      "mechanics": "Petites étoiles à 4 branches, lilas et blanches, qui clignotent autour de la marque pendant la tenue finale. Accent décoratif après les confettis dorés.",
+      "verdict": "cliche",
+      "evidence": "extra-03.jpg (f429-f447), overview-03.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fonds lavande à halo radial",
+      "name_en": "soft radial lavender backgrounds",
+      "t": "0:03.80-0:15.00",
+      "frames": "f114-f449",
+      "fps": 30,
+      "mechanics": "Actes clairs sur lavande #F5F1F7 avec centre légèrement plus clair et larges ombres violettes floues sous chaque objet ; scène du logo sur dégradé radial blanc → lilas #E8DCF3. Pas de motif ni d'animation de fond : la profondeur vient des ombres.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bascule de palette nuit → jour",
+      "name_en": "night-to-day palette switch",
+      "t": "0:03.53-0:03.80",
+      "frames": "f106-f114",
+      "fps": 30,
+      "mechanics": "Le monde passe du violet nuit (#311D44 à #472C62, texte clair) au lavande (#F5F1F7, texte encre) en ≈ 8 im, par la lumière et non par un fondu. Le changement de couleur porte le tournant du récit (le doute devient la solution) et ne revient plus.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f109.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Entrées de titres quantifiées au temps",
+      "name_en": "beat-quantised headline entrances",
+      "t": "0:01.00-0:14.00",
+      "frames": "f30-f420",
+      "fps": 30,
+      "mechanics": "Chaque titre démarre sur l'image même d'un temps (15 im par temps) : « Mil listas. » f30 (temps 2), « Mil dúvidas. » f60 (4), « Sem » f120 (8), « Sob » f165 (11), « Peça por » f240 (16), « Com calma » f315 (21), slogan f420 (28). Écart mesuré 0 à −1 im. Les puces sur des demi-temps, la jauge sur les doubles-croches : trois niveaux de subdivision selon l'importance de l'élément.",
+      "verdict": "reprendre",
+      "evidence": "différentiel de zone (titres), microM-001, microM-003"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Transitions dans les creux de fin de mesure",
+      "name_en": "transitions in the bar-end dips",
+      "t": "0:07.07-0:12.50",
+      "frames": "f212-f375",
+      "fps": 30,
+      "mechanics": "La musique se creuse sur le dernier temps de plusieurs mesures (−16 à −18 dB à 7,37-7,9 s, 9,37-9,9 s et 11,6-11,9 s). La plongée dans l'écran (7,07-7,47 s) et la poussée verticale (9,37-9,87 s) occupent ces creux ; la révélation suivante tombe sur le premier temps (« Peça por » à 8,0 s, pastille à 10,0 s, coche dorée à 12,0 s). D'où la corrélation négative entre intensité musicale et mouvement (r = −0,69) : l'image remplit les silences de la musique.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg, enveloppe audio par fenêtres de 0,125 s, microM-004, microM-005"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Colonnes alternées texte / appareil",
+      "name_en": "alternating text and device columns",
+      "t": "0:05.50-0:12.40",
+      "frames": "f165-f372",
+      "fps": 30,
+      "mechanics": "« Sob medida. » : titre et puces à gauche, téléphone à droite. « Peça por peça. » : photo à gauche, titre et cartes à droite. « Com calma e carinho. » : chambre au centre droit, titre en bas à gauche. Le regard change de côté à chaque scène ; marges ≈ 8 % de la largeur ; les titres restent en haut de leur colonne.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, images f200 et f270 en pleine résolution"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Arc en six titres et slogan récapitulatif",
+      "name_en": "six-headline arc with recap tagline",
+      "t": "0:01.00-0:15.00",
+      "frames": "f30-f449",
+      "fps": 30,
+      "mechanics": "Problème (« Mil listas. Mil dúvidas. ») → promesse (« Sem exageros. ») → fonctions (« Sob medida. », « Peça por peça. ») → émotion (« Com calma e carinho. ») → marque. Le slogan final « O enxoval do seu bebê, peça por peça, com calma e carinho. » reprend deux titres : la fin referme la boucle.",
+      "verdict": "reprendre",
+      "evidence": "overview-01/02/03.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Prompt identique à celui de fionntobin-97b7af, résultat opposé (pub produit en portugais) : le dossier de travail (marque Enxovaly, écrans, images, probablement) a servi de brief implicite. Le contexte pèse plus que la phrase."},
+    {"kind": "structure", "insight": "Mesures de 2 s à 120 BPM : environ un titre par mesure, posé sur un temps ; transition dans le dernier temps de la mesure ; révélation sur le premier. 15 s = 7,5 mesures."},
+    {"kind": "build", "insight": "HyperFrames : timings très probablement écrits en secondes rondes. À 120 BPM, 0,5 s = temps, 0,25 s = demi-temps, 0,125 s = double-croche : quantifier au quart ou au huitième de seconde suffit pour être sur la musique."},
+    {"kind": "direction", "insight": "« go all out » s'est traduit en densité de fonctionnalités (cinq démonstrations en 11 s) plutôt qu'en démonstration de style : l'esthétique reste celle de la marque."},
+    {"kind": "other", "insight": "La langue suit le produit (portugais du Brésil) alors que le prompt est en anglais : le modèle a priorisé la cible du produit."}
+  ],
+  "steal": [
+    "Ouvre en sombre et saturé (le problème : mille icônes), bascule en clair et épuré (la solution : cinq cartes) ; garde les cartes à travers la transition.",
+    "À 120 BPM, quantifie les entrées au quart de seconde : 0,5 s = temps, 0,25 s = demi-temps, 0,125 s = double-croche pour les cascades et compteurs.",
+    "Coupe la musique avant la révélation, fais grandir la lumière pendant la montée et pose le titre-promesse sur le drop.",
+    "Relie chaque critère au téléphone par une courbe en pointillés où circule un point : on voit les données entrer dans l'appli.",
+    "Meuble une scène 3D objet par objet pendant qu'une jauge monte de 0 à 100 % sur les doubles-croches, puis valide par une coche dorée."
+  ],
+  "flaws": [
+    "Les six titres entrent tous en flou progressif identique : propre mais générique, sans accent propre à chaque idée.",
+    "Trois transitions par le blanc (halo, plongée, éblouissement) en 15 s : le même accent revient.",
+    "Scène « Sob medida. » presque immobile 1,1 s : seuls de petits points circulent sur les pointillés.",
+    "Scintillements autour du logo après les confettis : accent décoratif de vidéo IA, superflu."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Les moments clés (bascule sombre → clair, puces, jauge, logo) sont déjà couverts image par image par les planches ; le reste est une grammaire de promo connue, en 30 fps natifs."
+  }
+}

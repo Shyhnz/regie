@@ -1,0 +1,659 @@
+{
+  "slug": "macrohou-33959d",
+  "title": "Ren app launch video",
+  "handle": "@macrohou",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Transitions motivées et enchaînées (point puis iris, plongée dans le logo, liste devenue bouton, match cut, graphe devenu nœud) calées sur une bande-son composée à l'image ; un raccord noir cassé à 13,65 s.",
+  "summary": "Lancement de 30 s pour Ren, appli qui teste un complément sur soi (« essai à un seul sujet »). Du chaos des pilules et d'avis 5 étoiles, on passe à une question, au logo, aux règles, au geste quotidien, au verdict en machine à sous, au résultat, au test suivant, puis « n = 1 » devient le logo. Chaque plan naît du précédent ; un raccord est raté.",
+  "prompt_vs_result": [
+    "Accès au dépôt de l'appli, 30 s, vidéo « dynamique » qui montre le savoir-faire en motion ET en sound design, consigne « Go crazy ». Ni script, ni palette, ni structure imposés.",
+    "Claude a tout écrit : récit en 9 temps autour de « n = 1 », DA crème-sauge-or avec intro et outro sur noir, écrans recréés depuis le dépôt, morphings de transition, et bande-son à 120 BPM composée au même minutage.",
+    "« Sound design » a poussé Claude à composer le son avec l'image : c'est ce qui donne la synchro. Le dépôt a fourni le vrai vocabulaire (Taken, verdicts, bpm). Il aurait fallu exiger une vérification image par image des raccords."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#F3EEE6",
+        "role": "fond crème des scènes produit"
+      },
+      {
+        "hex": "#0A0A0A",
+        "role": "fond noir de l'intro, du verdict et de l'outro"
+      },
+      {
+        "hex": "#1C1814",
+        "role": "encre des titres et du logo"
+      },
+      {
+        "hex": "#4A7559",
+        "role": "vert sauge : mot clé (you, one), bouton Taken, cases cochées, courbe, nœud choisi"
+      },
+      {
+        "hex": "#CCAB5D",
+        "role": "or des gélules et des étoiles d'avis"
+      },
+      {
+        "hex": "#E9DFC7",
+        "role": "bande beige de la période de test sur le graphe"
+      },
+      {
+        "hex": "#DCE8DF",
+        "role": "pastille vert pâle WORKED (probable)"
+      },
+      {
+        "hex": "#F6F0EA",
+        "role": "blanc cassé : texte sur noir, cartes, particules"
+      }
+    ],
+    "type": "Néo-grotesque demi-gras (probable Inter Tight ou Geist), casse phrase, interlettrage serré, titres ≈ 7-9 % de la hauteur, chiffres clés verts ≈ 9 % ; serif de texte dans l'interface ; « n » géant ≈ 55 %.",
+    "texture": "Profondeur de champ sur les gélules de l'intro (les proches sont floues et grandes), flou de mouvement vertical marqué dans le tambour du verdict, quadrillage papier millimétré très pâle (≈ 3 % d'opacité, vignetté) dans la scène des règles, ombres douces sous les puces et le téléphone. Pas de grain.",
+    "style": "Produit santé éditorial, sauge et crème",
+    "coherence": "Le système tient par trois fils : une seule couleur d'accent (le vert sauge = « toi, ton résultat »), un passage noir → crème → noir qui encadre le récit, et surtout des transitions où une forme devient la suivante (point, arche, pilule, courbe, nœud, particules, lettre n, logo). Seul le raccord 13,65-14,0 s casse la continuité (flash noir, ancienne scène qui réapparaît)."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Musique électro-pop générée à 120 BPM exacts (netteté 8,2), temps aux multiples de 0,5 s (grille 0,515 s : décalage d'analyse ≈ 15 ms). Les changements de scène voulus sont posés sur des secondes rondes, donc sur les temps : point de l'implosion f120 (temps f121), coupe de la plongée dans le logo f419 (temps f421, -2 im), coupe sur « Then » f840 (temps f841), match cut f960 (temps f961), iris noir lancé f1473 (temps f1471) et fermé f1486 (demi-temps f1486). Les gestes secondaires sont plus libres (fin du morphing liste → bouton f657, sortie du graphe f1222, « n » formé f1534 : 3 à 10 im hors grille). Le détecteur trouve 9 maintiens pour 12,4 s (42 %) : 2,33-3,75 s (question, 1,4 s), 4,82-6,72 s (slogan, 1,9 s), 9,5-10,6 s (règles verrouillées), 18,7-20,2 s (graphe), 25,7-28,1 s et 28,2-29,7 s (n = 1, logo). Ce sont des temps de lecture sur des phrases clés, mais ils cassent l'élan d'un spot de 30 s. Coupe parasite à f819 (+8 im du temps).",
+    "timeline": [
+      {
+        "t": "0:00-0:01.9",
+        "what": "Fond noir, essaim 3D de gélules or/vert/blanc, comprimés, croix et rangées de 5 étoiles qui fusent du centre ; « Everyone swears it works. » arrive mot à mot (≈ 7 im entre mots).",
+        "technique": "Particules sémantiques (gélules + avis 5 étoiles)"
+      },
+      {
+        "t": "0:01.88-0:02.0",
+        "what": "Tout est aspiré en tourbillon vers un point (f113-f119), il ne reste qu'un point vert à f120, sur le temps.",
+        "technique": "Implosion en point"
+      },
+      {
+        "t": "0:02.05-0:02.27",
+        "what": "Un disque crème grandit depuis le point en 7 im (f123-f130) et révèle « Does it work / for you? » ; « for you? » monte d'un masque, « you? » en vert.",
+        "technique": "Révélation circulaire (iris)"
+      },
+      {
+        "t": "0:02.27-0:03.75",
+        "what": "Maintien de la question.",
+        "technique": "Maintien de lecture"
+      },
+      {
+        "t": "0:03.85-0:04.2",
+        "what": "La question s'écrase en un point vert qui file à gauche, devient une goutte, puis une arche noire qui s'étire et s'écrase (f234-f258).",
+        "technique": "Point qui se transforme en logo"
+      },
+      {
+        "t": "0:04.23-0:04.7",
+        "what": "« Ren runs a / trial of one. » : chaque mot monte de ≈ 7 % en tournant de ≈ 8°, gris puis encre ; l'arche se fend en deux (f274) et devient le vrai logo ; « one. » en vert.",
+        "technique": "Mots qui tombent en place avec rotation"
+      },
+      {
+        "t": "0:05.03-0:05.23",
+        "what": "Soulignement manuscrit vert tracé sous « one. » de gauche à droite (12 im), départ sur le temps 5,0 s.",
+        "technique": "Trait à main levée sur le mot clé"
+      },
+      {
+        "t": "0:06.8-0:06.98",
+        "what": "Poussée exponentielle dans l'ouverture de l'arche du logo ; coupe f419 sur le crème intérieur.",
+        "technique": "Plongée dans un glyphe"
+      },
+      {
+        "t": "0:07.05-0:07.4",
+        "what": "« The rules are set up front. » se révèle lettre à lettre avec flou ; quadrillage pâle en fond.",
+        "technique": "Révélation caractère par caractère"
+      },
+      {
+        "t": "0:07.9-0:09.6",
+        "what": "Trois puces (Omega-3 · 2 g daily, Resting heart rate, Target −1.7 bpm) apparaissent une par temps ; un cadre vert avec cadenas les enferme (9,5 s).",
+        "technique": "Règles verrouillées"
+      },
+      {
+        "t": "0:10.6-0:11.0",
+        "what": "Cadre et cadenas s'effacent, les puces se vident, verdissent et glissent en diagonale les unes sur les autres jusqu'à ne faire qu'une pilule (f637-f657) ; le titre sort par le haut.",
+        "technique": "Liste qui se compresse en bouton"
+      },
+      {
+        "t": "0:11.0-0:11.6",
+        "what": "Le bouton affiche « Taken » ; un curseur vert tape « One tap a day. » dès f661 (temps) ; un appui marque le bouton.",
+        "technique": "Machine à écrire + appui"
+      },
+      {
+        "t": "0:11.9-0:13.63",
+        "what": "Téléphone à droite (écran calendrier « 8 of 14 days ») ; des carrés verts partent du bouton en arc et se posent dans le calendrier pendant que la barre de jours se remplit ; blips à hauteur montante.",
+        "technique": "Jetons qui volent vers l'interface"
+      },
+      {
+        "t": "0:13.65-0:14.0",
+        "what": "Noir franc 13 im, puis un rideau noir ondulé remonte et redévoile l'ancienne scène (f831-f839), puis noir à f840 : raccord cassé.",
+        "technique": "Volet liquide inversé (défaut)"
+      },
+      {
+        "t": "0:14.02-0:14.13",
+        "what": "« Then, an honest verdict. » arrive en resserrant son interlettrage (plus large que le cadre → normal en 7 im), sur le temps.",
+        "technique": "Interlettrage qui se resserre (tracking-in)"
+      },
+      {
+        "t": "0:14.17-0:15.5",
+        "what": "Tambour de machine à sous : SET YOU BACK, UNCLEAR, WORKED, NO CHANGE défilent avec flou vertical et perspective, ralentissent et s'arrêtent sur WORKED.",
+        "technique": "Tambour de verdict"
+      },
+      {
+        "t": "0:16.0-0:16.2",
+        "what": "Match cut sur le temps : la pastille WORKED reste au même endroit mais devient celle de l'écran de résultat, en macro ; anneau vert qui s'élargit et s'efface.",
+        "technique": "Raccord par la forme + onde"
+      },
+      {
+        "t": "0:16.53-0:16.83",
+        "what": "Recul rapide de la macro jusqu'au téléphone entier à droite.",
+        "technique": "Dézoom de révélation"
+      },
+      {
+        "t": "0:16.93-0:18.0",
+        "what": "« Resting heart rate » sort d'un masque, compteur vert « down 0.0 → 3.1 bpm ».",
+        "technique": "Compteur qui roule"
+      },
+      {
+        "t": "0:18.2-0:20.3",
+        "what": "La courbe de l'écran est tirée hors du téléphone et s'étale sur la moitié gauche : bande beige = période de test, pointillés de base et de cible.",
+        "technique": "Graphe extrait de l'écran"
+      },
+      {
+        "t": "0:20.37-0:20.73",
+        "what": "Texte sorti par le haut, téléphone sorti à droite, la courbe se tasse en ressort puis en point (f1222-f1241) ; le point grossit en nœud coché « Omega-3 ».",
+        "technique": "Graphe compressé en point → nœud"
+      },
+      {
+        "t": "0:20.8-0:23.5",
+        "what": "« It learns, / then picks your next test. » ; 5 branches courbes poussent vers des candidats ; un contour vert passe d'un nœud à l'autre à chaque temps ; Magnesium glycinate est choisi (chemin épais, autres estompés).",
+        "technique": "Arbre de décision avec balayage au temps"
+      },
+      {
+        "t": "0:24.45-0:24.8",
+        "what": "L'arbre se dissout en poussière ; un iris noir s'ouvre depuis le nœud choisi (f1473-f1486), les particules passent en blanc dedans.",
+        "technique": "Iris motivé + inversion"
+      },
+      {
+        "t": "0:24.8-0:25.9",
+        "what": "Les particules tourbillonnent et s'assemblent en « n » géant (f1500-f1534), qui rétrécit ; « = » puis « 1 » apparaissent : « n = 1 ».",
+        "technique": "Particules qui forment une lettre"
+      },
+      {
+        "t": "0:26.9-0:27.2",
+        "what": "Le n devient l'arche du logo, « =1 » glisse dedans et disparaît.",
+        "technique": "Formule qui devient logo"
+      },
+      {
+        "t": "0:28.07-0:29.76",
+        "what": "Le logo monte, « Ren » et « ren.so » apparaissent en fondu ; maintien final.",
+        "technique": "Signature finale"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Grille 120 BPM exacts (temps à 0,515 + 0,5k s, netteté 8,2), relue sur les 11 planches microscope (la barre est sous la vignette qu'elle date). Un geste clé par mouvement : 12 sur 21 à ±2 im d'une barre bleue ou bleu clair (57 %, hasard ≈ 33 %) : point de l'implosion f120 (-1), mot « trial » f270 (-1), départ du soulignement f302 (+1), coupe de la plongée f419 (-2), départ de la frappe f661 (0), coupe sur « Then » f840 (-1), match cut f960 (-1), départ du dézoom f992 (+1), fin du masque « Resting heart rate » f1020 (-1), dissolution de l'arbre f1470 (-1), iris noir complet f1486 (0), « = » f1546 (0). Hors grille : point vert f238 (-3), arche formée f250, fin du morphing liste → bouton f657 (-4), coupe parasite f819 (+8), tambour f850, sortie du graphe f1222 (+6), nœud f1242, n formé f1534 (+3), montée du logo f1684 (+3). Probables sur les temps (vus sur les vignettes à 0,5 s) : une puce de règle par temps (8,0 / 8,5 / 9,0 / 9,5 s), un nœud surligné par temps (21,5 à 23,5 s), arrêt du tambour sur WORKED ≈ 15,5 s. Indice automatique : aucune synchro (meilleur p corrigé 0,17 ; basses z = 2,17), insensible ici car l'essaim et les particules bougent en continu. Le spectrogramme montre en plus un son fait pour l'image : montées de bruit (risers) qui finissent sur les transitions de 2,0 / 7,0 / 16,0 / 24,5 s, escalier de blips de plus en plus aigus pendant que les carrés remplissent le calendrier (11,6-13,8 s), glissando montant pendant le tambour (14,4-15,4 s) et le balayage de l'arbre (21,3-23,2 s), basse qui change à la formation du n (≈ 25,8 s).",
+    "synced": [
+      "coupes",
+      "impacts",
+      "apparitions",
+      "texte",
+      "camera"
+    ],
+    "style_match": "Électro-pop propre à 120 BPM : les transitions sèches tombent sur les temps, les morphings fluides respirent entre ; bruitages pitchés qui miment l'action (remplissage, tambour). Accord net.",
+    "how_built": "Le prompt demandait de montrer le « sound design » : Claude a très probablement synthétisé la musique et les effets en code au même minutage que l'animation (tempo pile 120 BPM, temps aux multiples exacts de 0,5 s, attaques fortes toutes sur la grille). Le minutage des scènes est écrit en secondes rondes (2, 7, 14, 16, 24,5 s), donc chaque grande transition tombe sur un temps ; les gestes intermédiaires, écrits en durées libres, flottent de 3 à 10 im."
+  },
+  "techniques": [
+    {
+      "cat": "narrative",
+      "name_fr": "Du doute collectif à « n = 1 » : la promesse devient le logo",
+      "name_en": "Hype-to-proof narrative ending on brand formula",
+      "t": "0:00-0:29.76",
+      "frames": "f0-f1781",
+      "fps": 60,
+      "mechanics": "9 temps en 30 s : rumeur (« Everyone swears it works ») → question personnelle (« Does it work for you? ») → promesse + logo (« Ren runs a trial of one ») → règles fixées → geste quotidien → verdict → résultat chiffré → apprentissage (prochain test) → formule « n = 1 » qui se transforme en logo. La formule statistique clôt le récit et justifie la forme du logo (le n devient l'arche). Chaque phrase tient en 3-6 mots.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-06.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Essaim 3D de gélules et de rangées d'étoiles d'avis",
+      "name_en": "Semantic 3D particle burst",
+      "t": "0:00-0:01.9",
+      "frames": "f0-f114",
+      "fps": 60,
+      "mechanics": "Sur noir #0A0A0A, ≈ 150 objets fusent du centre vers l'extérieur en perspective : gélules bicolores or #CCAB5D / vert #4A7559 / blanc, comprimés ronds, croix blanches, et rangées de 5 petites étoiles or (les « avis 5 étoiles »). Les objets proches sont grands (≈ 10 % de la hauteur) et flous (profondeur de champ), ceux du fond nets et minuscules ; rotation propre de chaque gélule. Les particules racontent le sujet (compléments + avis), elles ne sont pas décoratives.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, microM-001-move-f4.jpg, microM-002-move-f64.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui s'allument à la double-croche",
+      "name_en": "Word-by-word blur-in on 16th notes",
+      "t": "0:00-0:00.4",
+      "frames": "f0-f24",
+      "fps": 60,
+      "mechanics": "« Everyone » présent à f0, « swears » apparaît f4-f9 (gris translucide → blanc, ≈ 5 im), « it » f12-f15, « works. » f20-f23 : ≈ 7-8 im entre mots, soit une double-croche à 120 BPM (7,5 im). Grotesque demi-gras blanc ≈ 9 % de la hauteur, centré au tiers haut, par-dessus l'essaim sans ombre (lisible grâce au fond noir).",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f4.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Implosion en point puis révélation circulaire",
+      "name_en": "Implode-to-dot iris reveal",
+      "t": "0:01.88-0:02.17",
+      "frames": "f113-f130",
+      "fps": 60,
+      "mechanics": "f113-f119 : l'essaim et le texte sont aspirés en spirale vers un point à x ≈ 64 %, y ≈ 60 % (le texte rétrécit et tourne). f120-f122 : cadre noir avec un seul point vert ≈ 0,5 % : il apparaît 1 im avant le temps f121. f123-f130 : un disque crème #F3EEE6 grandit depuis ce point, diamètre ≈ 7 %, 14 %, 37 %, 64 %, 100 %, 143 % de la hauteur : ×1,6 à ×2 par image, ease-in expo, cadre couvert en 7 im = 0,12 s. Le texte suivant est déjà dans le disque (vu à f127). Montée de bruit sur la bande-son qui finit sur le point.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f128.jpg",
+      "illus": {
+        "from": 113,
+        "to": 131,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Deuxième ligne qui monte d'un masque, mot clé en vert",
+      "name_en": "Masked line rise with accent word",
+      "t": "0:02.17-0:02.27",
+      "frames": "f130-f136",
+      "fps": 60,
+      "mechanics": "« Does it work » est posé ; « for you? » monte de ≈ 3 % de la hauteur dans un masque (le bas des lettres est coupé à f131-f132), en 6 im, ease-out sans dépassement. « you? » en vert sauge #4A7559, le reste en encre #1C1814. Grotesque demi-gras ≈ 8 % de la hauteur, centré.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f128.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La question s'écrase en point qui devient l'arche du logo",
+      "name_en": "Text-to-dot-to-logo morph",
+      "t": "0:03.85-0:04.57",
+      "frames": "f230-f274",
+      "fps": 60,
+      "mechanics": "f230-f234 : le titre s'écrase verticalement (squash) pendant qu'un point vert naît à sa gauche. f238 : le titre a disparu, disque vert ≈ 10 % de la hauteur à x ≈ 23 % (3 im avant le temps f241). f242-f246 : le disque se déforme en goutte qui fonce vers l'encre. f250 : arche noire pleine. f254 : l'arche s'étire en hauteur (≈ +15 %), f258 : elle s'écrase à l'atterrissage, jambes inégales. f274 : l'arche se fend au sommet en deux arcs : c'est la forme exacte du logo Ren. Durée totale ≈ 44 im = 0,73 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg",
+      "illus": {
+        "from": 230,
+        "to": 278,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mots qui tombent en place avec rotation",
+      "name_en": "Rotated word drop-in",
+      "t": "0:04.23-0:04.72",
+      "frames": "f254-f283",
+      "fps": 60,
+      "mechanics": "« Ren », « runs », « a », « trial », « of », « one. » arrivent un par un, ≈ 4 im d'écart : chaque mot part ≈ 7-9 % plus bas, tourné de ≈ 8-10°, en gris ≈ 50 %, et se redresse en encre en ≈ 6-8 im (ease-out, petit dépassement probable). « trial » arrive f270, 1 im avant le temps f271. « one. » se pose en vert. Graisse demi-grasse, ≈ 7 % de la hauteur, fer à gauche à côté du logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Soulignement manuscrit tracé sur le temps",
+      "name_en": "Hand-drawn underline stroke",
+      "t": "0:05.03-0:05.23",
+      "frames": "f302-f314",
+      "fps": 60,
+      "mechanics": "Trait vert légèrement courbe (sourire), épaisseur ≈ 0,4 % de la hauteur, extrémités arrondies, tracé de gauche à droite sous « one. » en 12 im (ease-in-out), départ 1 im après le temps f301. Un seul accent graphique dans toute la séquence : il désigne le mot de la promesse.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Plongée dans l'ouverture du logo",
+      "name_en": "Zoom-through into logo glyph",
+      "t": "0:06.85-0:06.98",
+      "frames": "f411-f419",
+      "fps": 60,
+      "mechanics": "Poussée caméra centrée sur l'intérieur de l'arche du logo. Largeur du logo mesurée : ×1,0 (f411), ×1,02 (f412), ×1,18 (f413), ×1,36 (f414), ×1,73 (f415), ×2,3 (f416), ×3,1 (f417), > ×5 (f418) : ease-in exponentiel, ×1,3 à ×1,4 par image, 8 im = 0,13 s, sans flou de mouvement. Le texte part à droite hors cadre. f419 : cadre crème avec une bande noire à droite (une jambe de l'arche), coupe 2 im avant le temps f421 ; le crème de l'intérieur du logo devient le fond de la scène suivante.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f419.jpg",
+      "illus": {
+        "from": 408,
+        "to": 421,
+        "n": 7
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Révélation lettre à lettre avec flou",
+      "name_en": "Per-character blur reveal",
+      "t": "0:07.07-0:07.4",
+      "frames": "f424-f444",
+      "fps": 60,
+      "mechanics": "« The rules are set up front. » (grotesque demi-gras ≈ 5 % de la hauteur, centré en haut à y ≈ 12 %) apparaît de gauche à droite, ≈ 1,3 caractère par image ; chaque lettre passe de gris flou à encre nette en ≈ 4 im. Phrase complète en ≈ 20 im = 0,33 s. Démarrage 3 im après la coupe.",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f419.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Quadrillage millimétré pâle et vignetté",
+      "name_en": "Faint graph-paper grid",
+      "t": "0:07.0-0:10.9",
+      "frames": "f420-f655",
+      "fps": 60,
+      "mechanics": "Grille carrée fine (pas ≈ 2,5 % de la largeur, ≈ 3 % d'opacité) qui apparaît en fondu derrière les règles, plus visible au centre et effacée vers les bords (vignette radiale). Évoque le protocole scientifique sans charger l'image ; disparaît avec la scène.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, microM-004-cut-f419.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Règles en puces, une par temps, puis verrouillées",
+      "name_en": "Stacked rule chips locked in a frame",
+      "t": "0:07.9-0:10.6",
+      "frames": "f474-f636",
+      "fps": 60,
+      "mechanics": "Trois puces blanc cassé (≈ 15 % de la largeur, ≈ 6 % de la hauteur, icône verte + texte grotesque ≈ 2,3 %) s'empilent au centre, une toutes les 0,5 s (8,0 / 8,5 / 9,0 s, probablement sur les temps), avec petite ombre. À 9,5 s un cadre vert arrondi (filet ≈ 2 px) entoure la pile et un cadenas vert se pose au milieu du bord haut : les règles sont « verrouillées » avant le test.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La liste se compresse en un bouton",
+      "name_en": "List-to-button collapse morph",
+      "t": "0:10.62-0:10.95",
+      "frames": "f637-f657",
+      "fps": 60,
+      "mechanics": "f637-f640 : cadre et cadenas s'effacent. f640-f642 : le texte des puces disparaît, il reste 3 rectangles vides. f643-f650 : les rectangles prennent un vert de plus en plus franc (du haut vers le bas) et glissent en diagonale vers la gauche les uns sur les autres, en escalier. f651-f657 : ils fusionnent en une seule pilule verte #4A7559 (≈ 9 % de la largeur), ease-out. Le titre monte et sort du cadre en même temps (f644-f656). 20 im = 0,33 s. La pilule devient le bouton « Taken » (texte en fondu f658-f661).",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f649.jpg",
+      "illus": {
+        "from": 636,
+        "to": 662,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire avec curseur vert",
+      "name_en": "Typewriter with accent caret",
+      "t": "0:11.02-0:11.4",
+      "frames": "f661-f684",
+      "fps": 60,
+      "mechanics": "Un curseur vertical vert (≈ 4 % de la hauteur) apparaît à f661, pile sur le temps, puis « One tap a day. » s'écrit ≈ 1 lettre toutes les 1-2 im (O f665, On f667, One f668). Grotesque demi-gras ≈ 6 %, fer à gauche au-dessus du bouton.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f649.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Appui marqué sur le bouton",
+      "name_en": "Tap ripple on button",
+      "t": "0:11.5",
+      "frames": "f690",
+      "fps": 60,
+      "mechanics": "Un disque blanc translucide (≈ 3 % de la hauteur) apparaît sur le bouton « Taken » comme un doigt qui appuie, puis s'efface ; le bouton ne s'enfonce pas.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Jetons qui volent du bouton vers le calendrier",
+      "name_en": "Tokens flying into UI grid",
+      "t": "0:11.9-0:13.63",
+      "frames": "f714-f818",
+      "fps": 60,
+      "mechanics": "Téléphone recréé (barre d'état 9:41, îlot, anneau « 8 of 14 days ») à droite, ≈ 85 % de la hauteur. Des carrés verts arrondis (≈ 1,5 % de la hauteur) partent du bouton, tournent sur eux-mêmes et suivent un arc vers le haut à droite jusqu'à leur case du calendrier ; en bas à gauche, une barre de 18 cases se remplit de gauche à droite au même rythme (≈ 1 case toutes les 6-8 im, double-croche probable). Sur la bande-son, un blip par case, chaque blip plus aigu que le précédent : la progression s'entend.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-006-cut-f819.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet liquide noir inversé (raccord cassé)",
+      "name_en": "Broken inverted liquid wipe",
+      "t": "0:13.65-0:14.0",
+      "frames": "f819-f840",
+      "fps": 60,
+      "mechanics": "f819 : coupe franche au noir, 8 im après le temps. f819-f831 : 13 im de noir total (0,22 s). f831-f839 : un bord noir ondulé remonte depuis le bas et redévoile la scène précédente (carrés, téléphone), soit l'inverse d'un rideau qui couvre. f840 : coupe au noir sur le temps f841. Le volet liquide était sans doute prévu pour descendre et couvrir ; le résultat est un flash noir puis un retour parasite de l'ancienne scène.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, microM-006-cut-f819.jpg",
+      "illus": {
+        "from": 816,
+        "to": 842,
+        "n": 7
+      }
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Interlettrage qui se resserre (tracking-in)",
+      "name_en": "Tracking-in title",
+      "t": "0:14.02-0:14.13",
+      "frames": "f841-f848",
+      "fps": 60,
+      "mechanics": "« Then, an honest verdict. » apparaît à f841 (sur le temps) avec un interlettrage si large que la phrase dépasse le cadre des deux côtés, en gris ; elle se resserre jusqu'à l'interlettrage normal en 7 im (ease-out) en passant au blanc. Grotesque demi-gras ≈ 5 % de la hauteur, centré à y ≈ 28 %.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Tambour de machine à sous pour le verdict",
+      "name_en": "Slot-machine drum reveal",
+      "t": "0:14.17-0:15.5",
+      "frames": "f850-f930",
+      "fps": 60,
+      "mechanics": "Fenêtre noire arrondie (≈ 22 % de la largeur, 16 % de la hauteur, filet gris très sombre). Quatre pastilles-verdicts (SET YOU BACK or pâle, UNCLEAR beige, WORKED vert pâle, NO CHANGE gris) tournent sur un cylindre vertical : celle du centre est pleine taille et claire, celles du haut et du bas sont écrasées en perspective et assombries. Flou de mouvement vertical fort. Vitesse : ≈ 1 pastille toutes les 3-4 im à f856-f871, toutes les 5 im à f875-f889, puis ralentissement jusqu'à l'arrêt sur WORKED vers 15,5 s (temps f931, probable). Glissando montant sur la bande-son pendant la rotation.",
+      "verdict": "reprendre",
+      "evidence": "microM-007-move-f871.jpg, overview-03.jpg",
+      "illus": {
+        "from": 856,
+        "to": 892,
+        "n": 8
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Match cut de la pastille WORKED + onde",
+      "name_en": "Shape match cut with ring pulse",
+      "t": "0:16.0-0:16.2",
+      "frames": "f960-f972",
+      "fps": 60,
+      "mechanics": "La pastille WORKED du tambour est à x = 50 %, y ≈ 63 % ; à f960 (1 im avant le temps f961), coupe vers une macro de l'écran de résultat de l'appli (« an answer », « 99% likely th… » en serif ≈ 12 % de la hauteur) où la pastille WORKED de l'interface est exactement au même endroit, à la même taille. À f961 un anneau vert sauge (trait ≈ 0,4 %) part de la pastille : diamètre ≈ 30 % → 100 % de la hauteur en 8 im, ease-out, opacité 60 % → 0 à f970. Une montée de bruit finit sur la coupe.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f960.jpg, extra-02.jpg",
+      "illus": {
+        "from": 954,
+        "to": 972,
+        "n": 6
+      }
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul rapide de la macro au téléphone entier",
+      "name_en": "Macro-to-device pull-out",
+      "t": "0:16.53-0:16.83",
+      "frames": "f992-f1010",
+      "fps": 60,
+      "mechanics": "Après ≈ 0,5 s de macro presque fixe (léger glissement), départ f992 (+1 im du temps f991) : échelle ≈ ×4,5 → ×1 en 18 im = 0,3 s, ease-in-out (pas les plus grands à f996-f1002), le téléphone se recentre vers x ≈ 75 %. Aucun flou de mouvement. Le spectateur lit d'abord le verdict en très grand, puis comprend où il se trouve.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur « down 0.0 → 3.1 bpm »",
+      "name_en": "Decimal counter roll-up",
+      "t": "0:16.93-0:18.0",
+      "frames": "f1016-f1080",
+      "fps": 60,
+      "mechanics": "« Resting heart rate » (grotesque ≈ 4 %) sort d'un masque par le bas en ≈ 4 im (f1016-f1020, 1 im avant le temps f1021). « down 0.0 bpm » (vert ≈ 9 %, demi-gras) sort à son tour d'un masque (f1024-f1028) puis roule : 0.2 (f1028), 0.6, 0.9, 1.2, 1.5, 1.8 (f1038), 2.8 (f1050), 3.1 (≈ f1075) : rapide au début (+0,3 par 2 im) puis freinage, ease-out sur ≈ 0,9 s. Chiffres à chasse fixe probable (le mot « bpm » ne bouge pas).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe tirée hors de l'écran du téléphone",
+      "name_en": "Chart pulled out of device",
+      "t": "0:18.2-0:19.0",
+      "frames": "f1092-f1140",
+      "fps": 60,
+      "mechanics": "La courbe de fréquence cardiaque de l'écran grandit et s'étire hors du téléphone vers la gauche (à 18,5 s elle traverse tout le cadre, par-dessus le téléphone), puis se pose sous le titre, ≈ 50 % de la largeur. Une bande beige #E9DFC7 marque la période de test ; une ligne pointillée de base et une de cible ; la courbe chute après la bande. Trait vert ≈ 0,3 % de la hauteur. Le détail de l'interface devient le visuel principal.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Graphe tassé en ressort puis en point qui devient nœud",
+      "name_en": "Chart squash-to-dot node match",
+      "t": "0:20.37-0:20.75",
+      "frames": "f1222-f1245",
+      "fps": 60,
+      "mechanics": "f1222-f1227 : titre et chiffre montent et sortent par le haut, le téléphone part à droite (f1224-f1229, ease-in). f1225-f1241 : la courbe se comprime horizontalement depuis la droite comme un ressort (≈ 50 % → 2 % de la largeur en 16 im), son amplitude se froisse, puis elle devient un point vert (f1241). f1242-f1245 : le point grossit en disque, qui deviendra le nœud coché « Omega-3 » ; « It » puis « learns, » apparaissent en fondu au-dessus. Départ 6 im après le demi-temps : hors grille.",
+      "verdict": "reprendre",
+      "evidence": "microM-009-move-f1224.jpg",
+      "illus": {
+        "from": 1220,
+        "to": 1246,
+        "n": 7
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Arbre de décision avec balayage au temps",
+      "name_en": "Decision tree with beat-timed scan",
+      "t": "0:20.8-0:24.4",
+      "frames": "f1248-f1466",
+      "fps": 60,
+      "mechanics": "Nœud coché vert « Omega-3 » à x ≈ 20 % ; 5 branches courbes grises (≈ 0,15 % d'épaisseur, petits points de jonction) poussent vers 5 pastilles blanches (Melatonin, L-theanine, Magnesium glycinate, Ashwagandha, Glycine). Un contour vert épais saute d'une pastille à l'autre une fois toutes les 0,5 s (21,5 / 22,0 / 22,5 / 23,0 s, sur les temps probables), comme une recherche. À 23,5 s Magnesium glycinate se remplit de vert, sa branche devient un trait vert épais et droit, les 4 autres passent à ≈ 30 % d'opacité.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Dissolution en particules puis iris noir motivé",
+      "name_en": "Particle dissolve + node-origin iris",
+      "t": "0:24.5-0:24.77",
+      "frames": "f1470-f1486",
+      "fps": 60,
+      "mechanics": "f1470 (1 im avant le temps f1471) : l'arbre se dissout en milliers de points verts qui gardent sa silhouette. f1473 : un disque noir naît à l'emplacement du nœud choisi (x ≈ 69 %, y ≈ 63 %) et grandit en ease-in : diamètre ≈ 2 %, 5 %, 9 %, 16 %, 24 %, 34 %, 46 %, 62 %, 80 % de la largeur… cadre couvert à f1486, pile sur le demi-temps : 13 im = 0,22 s. Dans le disque, les particules passent du vert au blanc (inversion). L'iris part du choix que l'appli vient de faire.",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f1483.jpg",
+      "illus": {
+        "from": 1468,
+        "to": 1488,
+        "n": 7
+      }
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Particules qui s'assemblent en lettre « n »",
+      "name_en": "Particles converge into glyph",
+      "t": "0:24.8-0:25.9",
+      "frames": "f1488-f1549",
+      "fps": 60,
+      "mechanics": "Les ≈ 2 000 points blancs tourbillonnent en nuage (f1488-f1520) puis convergent vers la silhouette d'un « n » géant (≈ 55 % de la hauteur) : bord granuleux à f1523, plein à f1534 (3 im après le temps f1531). Le n rétrécit ensuite jusqu'à ≈ 8 % en 8 im (ease-out, f1535-f1542) ; « = » apparaît en fondu f1543-f1546 (sur le demi-temps), « 1 » f1547-f1549 : « n = 1 », notation statistique d'un essai à un seul sujet. Changement de basse sur la bande-son à la formation du n.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-move-f1538.jpg, microM-010-cut-f1483.jpg",
+      "illus": {
+        "from": 1520,
+        "to": 1550,
+        "n": 7
+      }
+    },
+    {
+      "cat": "shape",
+      "name_fr": "La formule « n = 1 » devient le logo",
+      "name_en": "Formula-to-logo morph",
+      "t": "0:26.85-0:28.33",
+      "frames": "f1611-f1700",
+      "fps": 60,
+      "mechanics": "f1611-f1628 : le « n » se transforme en arche du logo (deux arcs séparés au sommet) pendant que « =1 » glisse vers la gauche, passe derrière et disparaît ; ≈ 17 im autour du temps f1621. Maintien ≈ 1 s. f1684-f1700 : le logo monte de ≈ 6 % de la hauteur (ease-out) et « Ren » (grotesque ≈ 6 %) + « ren.so » (≈ 1,2 %) apparaissent en fondu dessous (gris → blanc). Fin tenue 1,4 s.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Bande-son composée au minutage de l'image",
+      "name_en": "Score and SFX built on the edit grid",
+      "t": "0:00-0:29.76",
+      "frames": "f0-f1781",
+      "fps": 60,
+      "mechanics": "Tempo 120 BPM exact (1 temps = 30 im à 60 fps), scènes posées en secondes rondes : implosion → point 2,0 s, plongée 7,0 s, « Then » 14,0 s, match cut 16,0 s, iris 24,5 s, tous à ±2 im d'un temps. Montées de bruit (risers) qui se terminent sur ces transitions. Bruitages pitchés qui imitent l'action : blips montants pendant le remplissage des cases (11,6-13,8 s), glissando pendant le tambour (14,4-15,4 s) et pendant le balayage de l'arbre (21,3-23,2 s), basse qui change quand le n se forme (≈ 25,8 s). Les gestes intermédiaires (morphings, sorties) restent libres de 3 à 10 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f128.jpg, microM-004-cut-f419.jpg, microM-008-cut-f960.jpg, microM-010-cut-f1483.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Encadrement noir → crème → noir",
+      "name_en": "Dark bookends around light product act",
+      "t": "0:00-0:29.76",
+      "frames": "f0-f1781",
+      "fps": 60,
+      "mechanics": "Intro (la rumeur) sur noir, acte produit (question, règles, geste, résultat, arbre) sur crème, verdict (moment de suspense) sur noir, puis retour au noir pour « n = 1 » et le logo. Chaque passage clair ↔ sombre se fait par une forme (iris crème, plongée dans l'arche, iris noir), jamais par un fondu.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un seul vert pour « toi » et « ton résultat »",
+      "name_en": "Single semantic accent",
+      "t": "0:02.0-0:24.5",
+      "frames": "f120-f1470",
+      "fps": 60,
+      "mechanics": "Le vert sauge #4A7559 marque uniquement ce qui concerne l'utilisateur et la preuve : « you? », « one. », le soulignement, le bouton Taken, les cases cochées, « down 3.1 bpm », la courbe, le nœud choisi. L'or #CCAB5D n'existe que dans l'intro (les promesses du marché). Fond crème #F3EEE6, encre #1C1814.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Grotesque demi-grasse pour le récit, serif dans l'interface",
+      "name_en": "Grotesque narration / serif UI pairing",
+      "t": "0:00-0:29.76",
+      "frames": "f0-f1781",
+      "fps": 60,
+      "mechanics": "Toute la narration en néo-grotesque demi-grasse (probable Inter Tight ou Geist), interlettrage serré, casse phrase, 5 à 9 % de la hauteur ; phrases de 3-6 mots, 1 ou 2 lignes. L'interface de l'appli utilise une serif de texte (« Your experiment has an answer », « 99% likely this helped »), ce qui distingue nettement « la marque parle » de « l'appli montre ».",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture sur les phrases clés",
+      "name_en": "Reading holds on key lines",
+      "t": "0:02.33-0:06.72",
+      "frames": "f140-f403",
+      "fps": 60,
+      "mechanics": "Le détecteur compte 9 maintiens pour 12,4 s (42 %) : question 1,4 s, slogan 1,9 s, règles 1,1 s, graphe 1,5 s, « n = 1 » et logo ≈ 3,9 s cumulés. Lisibles, mais dans un spot de 30 s qui promettait « Go crazy », ces trous font retomber l'énergie entre des transitions très vives ; un micro-mouvement (dérive lente, respiration d'échelle) aurait suffi.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "inputs",
+      "insight": "L'accès au dépôt a donné le vrai vocabulaire et les vrais écrans (bouton « Taken », verdicts WORKED / UNCLEAR / NO CHANGE / SET YOU BACK, « 99% likely this helped », « 8 of 14 days ») : l'interface est recréée nette, pas une capture floue."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Shows off your motion and sound design » : la consigne de son est ce qui a produit une bande-son composée au minutage de l'image (risers, blips pitchés, glissandos) et donc une vraie synchro. Demander explicitement le son change tout."
+    },
+    {
+      "kind": "direction",
+      "insight": "« Go crazy » a été interprété comme « une transition inventive par scène » (implosion, morphings, plongée, tambour, match cut, particules → lettre), pas comme du chaos : le récit reste lisible."
+    },
+    {
+      "kind": "structure",
+      "insight": "Aucune structure imposée : Claude a construit un récit en 9 temps autour de « n = 1 », qui relie le concept statistique à la forme du logo. Une bonne idée de fin naît quand le modèle comprend le produit."
+    },
+    {
+      "kind": "qa",
+      "insight": "Le raccord 13,65-14,0 s (flash noir, ancienne scène qui réapparaît sous un volet inversé) aurait été vu avec un contrôle image par image des transitions ; le prompt ne demandait aucune vérification."
+    }
+  ],
+  "steal": [
+    "Fin de scène : tout aspirer en un point sur le temps, puis ouvrir un iris de la couleur suivante depuis ce point en 7 im, ease-in expo.",
+    "Changer de scène en plongeant dans l'ouverture du logo : échelle ×1,3-1,4 par image sur 8 im, l'intérieur du glyphe devient le nouveau fond.",
+    "Match cut : terminer une scène sur un élément (pastille WORKED) placé exactement là où il existe dans l'écran suivant, plus une onde qui part sur le temps.",
+    "Faire naître le plan suivant de la forme du précédent : liste → bouton, courbe → point → nœud, particules → lettre → logo.",
+    "Composer le son avec l'image : risers qui finissent sur les coupes, un blip de plus en plus aigu par élément qui se remplit."
+  ],
+  "flaws": [
+    "Raccord cassé à 13,65 s : 13 im de noir, retour de l'ancienne scène sous un volet ondulé à l'envers, puis noir.",
+    "42 % de maintiens : question, slogan et logo tenus 1,4 à 1,9 s sans aucun mouvement.",
+    "Texte de l'interface dans le téléphone trop petit pour être lu, sauf pendant la macro.",
+    "Révélation lettre à lettre avec flou et machine à écrire : effets génériques à côté des morphings."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Sept transitions motivées en 30 s, rendues à 60 fps, avec des courbes mesurables image par image (iris expo, plongée ×1,35/im, onde, tambour qui freine) et des placements sur la grille 120 BPM : un catalogue de transitions enchaînées à décortiquer et reproduire."
+  }
+}

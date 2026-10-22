@@ -1,0 +1,275 @@
+{
+  "slug": "davidshulmanfl-371638",
+  "title": "Clay-style music video",
+  "handle": "@DavidShulmanFL",
+  "family": "personnages",
+  "craft": 3,
+  "craft_reason": "Rendu pâte à modeler riche (probablement un modèle vidéo), paroles bien illustrées, mais montage mécanique de 8 plans de 7,5 s, mouvement trop lisse pour du stop-motion et artefacts de génération.",
+  "summary": "Clip d'une minute façon « Sledgehammer » et « Big Time » de Peter Gabriel : un homme en pâte à modeler gagne la célébrité numérique (notifications, réseau, pop-ups, coches bleues, montagnes russes de la viralité, drones et cloud) jusqu'à recevoir sa coche bleue sur scène. Chanson originale qui parodie « Big Time ». Fort : jeux de mots visuels sur chaque ligne. Faible : 8 plans égaux sans rythme de montage, lissé numérique.",
+  "prompt_vs_result": [
+    "Le prompt imposait : clip de 60 s dans le style de Sledgehammer et Big Time, références et personnages modernes, et une chanson originale qui irait sur l'album So.",
+    "Claude a choisi la satire des réseaux sociaux (coche bleue, viralité), les paroles qui détournent « Big Time », le personnage et sa trajectoire, et 8 plans de 7,5 s à 104 BPM.",
+    "Les références de clips cadrent bien le matériau (pâte à modeler, grille, visage peint) mais pas le rythme : rien sur la pixilation saccadée ni sur des coupes sur les mesures. Résultat lisse et régulier."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#1F7FB8", "role": "fond studio bleu du plan 1"},
+      {"hex": "#E8B08A", "role": "peau pâte à modeler"},
+      {"hex": "#4A4A4A", "role": "costume gris du personnage"},
+      {"hex": "#FFD21A", "role": "titre BLUE CHECK et fond jaune du plan 5"},
+      {"hex": "#E5252A", "role": "bulles de notification, voiture, flèches de baisse"},
+      {"hex": "#4CC3E0", "role": "ciel du plan 2"},
+      {"hex": "#C9437A", "role": "mur magenta et fenêtres pop-up"},
+      {"hex": "#1FB5C0", "role": "pop-ups et cases turquoise de la grille"},
+      {"hex": "#F26A1B", "role": "flèche orange « refresh »"},
+      {"hex": "#1E88E5", "role": "coches bleues"},
+      {"hex": "#3DAA3A", "role": "rail en flèche de tendance verte"},
+      {"hex": "#A88A64", "role": "carton de la ville et des montagnes russes"},
+      {"hex": "#C8262A", "role": "rideau rouge de la scène finale"}
+    ],
+    "type": "Une seule carte de titre : « BLUE CHECK » en grotesque condensée très grasse (Impact ou Anton probable), jaune, ombre décalée violette, ≈ 14 % de la hauteur, centrée ; « BARNABY BEAT » blanc gras ≈ 4 %.",
+    "texture": "Pâte à modeler avec traces de doigts, carton ondulé, coton pour les nuages ; lumière de studio douce, faible profondeur de champ, flou de mouvement sur les gestes rapides (bras, flèche refresh). Rendu de modèle vidéo probable.",
+    "style": "Clip pâte à modeler satirique",
+    "coherence": "La matière (pâte à modeler et carton) et le personnage tiennent le tout ; chaque plan change de fond saturé comme un bloc de couleur. Ce qui casse : la fluidité numérique, qui trahit le stop-motion promis, et les morphings flous."
+  },
+  "rhythm": {
+    "bpm": 104,
+    "sync": "lache",
+    "dead_time": "aucun",
+    "notes": "Tempo stable de 104,0 BPM sur toute la durée (netteté 5,2 à 5,95, mesuré à 0-30 s et 30-60 s). Plans de 7,5 s exactement (f180, f360, f540, f720, f900, f1080, f1260), soit 13 temps de 0,577 s : les 8 coupes tombent 1 im avant un temps (−46 ms), mais pas sur le premier temps de la mesure, car 13 temps = 3 mesures + 1 temps, et la coupe glisse d'un temps à chaque plan. Une coupe parasite à 44,5 s (f1068, changement d'axe dans le plan des montagnes russes). Aucun maintien statique hors de l'image noire initiale (0-0,38 s) : quelque chose bouge toujours dans le plan (danse, drones, rotation), mais le montage reste lent et régulier, sans accélération au refrain.",
+    "timeline": [
+      {"t": "0:00-0:07.5", "what": "Gros plan visage sur fond bleu ; titre « BLUE CHECK / BARNABY BEAT » en fondu ; bulles de notification rouges puis émojis en pâte à modeler autour de la tête", "technique": "carte de titre + notifications"},
+      {"t": "0:07.5-0:15.0", "what": "Plan large dans le ciel : drones-livreurs et voiture rouge en orbite, nuages de coton ; un arc wifi rouge au-dessus de la tête se remplit puis devient des barres de réseau", "technique": "morphing d'icône (« one bar »)"},
+      {"t": "0:15.0-0:22.5", "what": "Personnage dans un anneau lumineux (ring light) devant un mur de fenêtres pop-up ; la caméra avance et traverse l'anneau ; le visage se couvre d'icônes d'apps", "technique": "travelling à travers l'anneau + visage peint"},
+      {"t": "0:22.5-0:30.0", "what": "Grille de 12 cases colorées, le personnage danse dans chacune ; flèche orange « refresh » qui tourne au centre", "technique": "grille façon pixilation"},
+      {"t": "0:30.0-0:37.5", "what": "Fond jaune, il danse devant des gadgets à yeux (écouteurs, boisson à l'avocat, toast, casque VR, téléphone) ; des coches bleues tombent et se collent à son costume", "technique": "pluie de coches bleues"},
+      {"t": "0:37.5-0:44.5", "what": "Montagnes russes en carton dont le rail est une flèche de tendance verte ; globe terrestre et soleil, flèches rouges de baisse, foule de téléphones allumés", "technique": "métaphore de la viralité"},
+      {"t": "0:44.5-0:45.0", "what": "Plan plus large des montagnes russes (changement d'axe)", "technique": "coupe parasite"},
+      {"t": "0:45.0-0:52.5", "what": "Debout dans un écran de smartphone géant au-dessus d'une ville en carton ; drones, nuage-serveur ; la tête disparaît puis revient ; la ville prend feu", "technique": "téléphone portail + morphing"},
+      {"t": "0:52.5-1:00.0", "what": "Scène à rideau rouge : il danse avec des objets personnifiés (ring light, carton-robot, doudoune, bulle de dialogue), canons à confettis ; une coche bleue descend sur sa tête, image finale tenue", "technique": "final en récompense"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Chanson chantée continue (Whisper retrouve des paroles cohérentes, dont « my drone is getting bigger, my cloud is getting higher, my screen is getting brighter » qui détourne « Big Time »), tempo fixe 104,0 BPM. Coupes : 8/8 à 50 ms d'un temps, toutes 1 im avant la barre bleue (f180, f360, f540, f720, f900, f1080, f1260 ; barres à f181, f361, f541, f721, f901, f1081, f1261). Hasard pour ±1 im autour des temps ≈ 16 %, donc verrouillage réel, mais mécanique : 7,5 s = 13 temps exactement. Dans les plans, rien n'est calé : le bras qui fouette (f846-f851), la flèche rouge qui entre (f977), le globe souriant (f1010-f1012) tombent près d'une barre, mais à 24 im/s et 104 BPM une fenêtre de ±2 im autour des temps et demi-temps couvre ≈ 70 % des images : pas de preuve. Le test automatique ne trouve rien (meilleur p corrigé 0,79). Le lien fort est sémantique : chaque plan illustre la ligne de paroles qu'on entend à peu près au même moment (« one bar » → barres de réseau, « pop-up window » → mur de pop-ups, « refresh refresh » → flèche refresh à 22,5 s, « blue check on me » → coches bleues à 30 s, « my drone… my cloud… » → drones et nuage à 45 s).",
+    "synced": ["coupes"],
+    "style_match": "Pop funky d'environ 104 BPM façon années 1980 (probable) et pâte à modeler joyeuse s'accordent ; mais le mouvement lisse et continu ne pulse pas sur le temps, là où Sledgehammer saccade en rythme.",
+    "how_built": "Coupes sur le temps obtenues par la durée fixe des plans : 7,5 s = 13 temps à 104 BPM (toute pulsation multiple de 8 BPM donne un nombre entier de temps). Les plans viennent probablement d'un modèle vidéo qui n'entend pas la musique, d'où l'absence de synchro interne. La chanson chantée vient probablement d'un modèle musical à partir des paroles de Claude."
+  },
+  "techniques": [
+    {
+      "cat": "image",
+      "name_fr": "Pâte à modeler photoréaliste générée",
+      "name_en": "Generated claymation look",
+      "t": "0:00-1:00",
+      "frames": "f0-f1440",
+      "fps": 24,
+      "mechanics": "Personnage et décors en pâte à modeler avec traces de doigts, carton ondulé, coton ; lumière de studio douce, faible profondeur de champ (arrière-plans flous à ≈ 50 %), flou de mouvement sur les gestes rapides. Chaque image diffère de la précédente (animation sur 1 image, pas sur 2), ce qui donne un rendu 3D lisse plutôt qu'un vrai stop-motion. Rendu de modèle vidéo probable (non HyperFrames).",
+      "verdict": "adapter",
+      "evidence": "microM-006-move-f821.jpg, microM-007-move-f848.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Plans d'un nombre entier de temps : coupe toujours sur le temps",
+      "name_en": "Beat-multiple shot length",
+      "t": "0:07.5-0:52.5",
+      "frames": "f180-f1260",
+      "fps": 24,
+      "mechanics": "Chaque plan dure 180 im = 7,5 s = 13 temps à 104 BPM. Les 7 coupes franches tombent 1 im avant la barre bleue (−46 ms), ce qui donne à l'oreille une coupe juste sur le temps. Limite : 13 temps = 3 mesures + 1 temps, donc la coupe ne tombe sur le premier temps de la mesure qu'un plan sur quatre. Avec 12 temps (96 BPM) ou 16 temps, chaque coupe serait sur une mesure.",
+      "verdict": "adapter",
+      "evidence": "microM-001-cut-f180.jpg, microM-002-cut-f360.jpg, microM-005-cut-f720.jpg, microM-012-cut-f1260.jpg",
+      "illus": {"from": 176, "to": 184, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Montage régulier sans accélération",
+      "name_en": "Uniform shot pacing",
+      "t": "0:00-1:00",
+      "frames": "f0-f1440",
+      "fps": 24,
+      "mechanics": "8 plans égaux de 7,5 s, coupes franches, aucune transition, aucun plan court au refrain (sauf la coupe parasite de 0,5 s à 44,5 s). Médiane 7,5 s, contre 0,5 à 1 s dans la grammaire 1600 et dans Sledgehammer. Le mouvement interne compense (danse, drones, rotation), mais la structure reste une suite de vignettes.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Carte de titre en fondu sur le visage",
+      "name_en": "Title card fade over close-up",
+      "t": "0:00.5-0:04.0",
+      "frames": "f12-f96",
+      "fps": 24,
+      "mechanics": "« BLUE CHECK » (≈ 14 % de la hauteur, grotesque condensée grasse jaune, ombre décalée violette) et « BARNABY BEAT » (≈ 4 %, blanc) apparaissent en fondu d'opacité de ≈ 12 im (f12-f24, 0,5 s), tiennent ≈ 2,5 s centrés sur le visage, puis disparaissent en fondu de ≈ 12 im (f84-f96). Aucun mouvement de lettre. Surimpression en code probable.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bulles de notification et émojis en pâte à modeler",
+      "name_en": "Floating notification badges",
+      "t": "0:02.0-0:07.5",
+      "frames": "f48-f180",
+      "fps": 24,
+      "mechanics": "Bulles rouges à cœur avec compteur (≈ 4 % de la hauteur) qui dérivent autour de la tête, les chiffres changent (538, 326, 297, 2175…) ; à 4 s, des émojis ronds en pâte à modeler (jaunes, bleu, rouge, ≈ 15 % de la hauteur) entrent en flottant. Les chiffres sont parfois flous ou illisibles. Métaphore claire de l'attention en ligne.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg, overview-02.jpg, microM-001-cut-f180.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Arcs wifi qui deviennent des barres de réseau",
+      "name_en": "Icon morph illustrating lyrics",
+      "t": "0:07.5-0:14.5",
+      "frames": "f180-f348",
+      "fps": 24,
+      "mechanics": "Au-dessus de la tête, un arc gris (≈ 12 % de la largeur) puis un deuxième arc rouge apparaissent (9,5 s), puis les arcs se redressent en 4 barres verticales rouges (12,5-14 s) : l'icône de signal se remplit, comme dans les paroles « one bar in the rain ». Morphing de matière en ≈ 1 s, flou pendant la transformation.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Traversée de l'anneau lumineux",
+      "name_en": "Dolly through ring light",
+      "t": "0:15.0-0:18.5",
+      "frames": "f360-f444",
+      "fps": 24,
+      "mechanics": "Plan d'ensemble : le personnage cadré dans un anneau blanc (≈ 85 % de la hauteur). La caméra avance en continu : l'anneau grossit puis sort du cadre par les bords à ≈ f437-f444 (accélération progressive, ease-in), et l'on finit en plan rapproché devant le mur de pop-ups. L'anneau sert de cadre dans le cadre puis de passage.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f427.jpg, overview-03.jpg",
+      "illus": {"from": 400, "to": 444, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Visage couvert d'icônes d'apps",
+      "name_en": "App-icon face paint",
+      "t": "0:19.5-0:22.0",
+      "frames": "f468-f528",
+      "fps": 24,
+      "mechanics": "Clin d'œil au visage peint de Sledgehammer : des tuiles colorées d'icônes d'apps (bleu, vert, rose, jaune) recouvrent le visage en ≈ 0,5 s (f468-f480) en partant de l'œil, puis se résorbent vers 22 s. Transition de matière sur le personnage, sans coupe.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Grille de 12 cases dansantes avec flèche refresh",
+      "name_en": "Multi-panel grid with central icon",
+      "t": "0:22.5-0:30.0",
+      "frames": "f540-f720",
+      "fps": 24,
+      "mechanics": "Grille 4 × 3 de cases à fonds unis saturés (jaune, rose, turquoise, vert, gris), séparées par des filets blancs ; un personnage danse dans chaque case avec une pose différente. Au centre, une flèche circulaire orange en pâte à modeler (≈ 35 % de la hauteur) tourne vite, avec flou de mouvement, et change parfois de sens. Arrive pile sur « refresh refresh ». Hommage à la mosaïque des clips de Gabriel.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-cut-f540.jpg, overview-05.jpg",
+      "illus": {"from": 540, "to": 553, "n": 6}
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Pluie de coches bleues qui collent au costume",
+      "name_en": "Sticking icon rain",
+      "t": "0:32.0-0:37.5",
+      "frames": "f768-f900",
+      "fps": 24,
+      "mechanics": "Des coches bleues en pâte à modeler (≈ 3 % de la hauteur) tombent du haut, rebondissent au sol ou se collent sur le costume ; leur nombre grandit jusqu'à couvrir veste et pantalon (≈ 30 coches à 36 s), le sol se jonche. Illustration littérale de « put a blue check on me ». Les impacts ne suivent pas le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f821.jpg, microM-007-move-f848.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Gadgets personnifiés en rang",
+      "name_en": "Anthropomorphic gadget chorus",
+      "t": "0:30.0-0:37.5 et 0:52.5-1:00",
+      "frames": "f720-f900, f1260-f1440",
+      "fps": 24,
+      "mechanics": "Écouteurs sans fil, boisson à l'avocat, toast, casque VR, téléphone, tous avec gros yeux, alignés comme des choristes ; au final, ring light, carton-robot, doudoune sans manches et bulle de dialogue dansent sur scène. Les objets du quotidien numérique remplacent les poulets et figurants des clips de 1986.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg, overview-09.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Montagnes russes sur une courbe de tendance",
+      "name_en": "Trend-line roller coaster",
+      "t": "0:37.5-0:45.0",
+      "frames": "f900-f1080",
+      "fps": 24,
+      "mechanics": "Le rail est une flèche verte de graphique boursier ; des flèches rouges de baisse pendent du ciel, le personnage dans un wagon en carton monte et plonge, la caméra suit en travelling latéral continu. Globe terrestre et soleil en fond, foule de silhouettes brandissant des téléphones allumés au premier plan flou. Métaphore de la viralité en 3D maquette.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-cut-f900.jpg, microM-009-move-f977.jpg, microM-010-move-f1008.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Le personnage dans l'écran du téléphone",
+      "name_en": "Figure inside giant phone",
+      "t": "0:45.0-0:52.5",
+      "frames": "f1080-f1260",
+      "fps": 24,
+      "mechanics": "Smartphone géant (≈ 90 % de la hauteur) à écran blanc lumineux, le personnage debout dedans, ville en carton devant, drones et nuage-serveur. Un drone descend sur sa tête (46,5 s), la tête disparaît (48 s), revient sous forme d'œuf chauve (49 s) puis redevient visage (49,5 s) ; des flammes orange montent devant la ville (51,5-52,5 s). Morphing voulu ou artefact : flou dans les deux cas.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg, overview-09.jpg, microM-011-cut-f1080.jpg, microM-012-cut-f1260.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Une ligne de paroles, un jeu de mots visuel",
+      "name_en": "Literal lyric illustration",
+      "t": "0:07.5-0:52.5",
+      "frames": "f180-f1260",
+      "fps": 24,
+      "mechanics": "Chaque plan de 7,5 s traduit littéralement la ligne entendue : « one bar » → barres de réseau, « pop-up window » → mur de pop-ups, « refresh refresh » → flèche refresh (le plan commence à 22,5 s, juste avant le mot à ≈ 23 s), « blue check on me » → pluie de coches, « spinning around the sun » → globe et soleil, « my drone… my cloud… my screen » → drones, nuage, écran. Environ 5 lignes sur 6 tombent dans le bon plan ; seule « ring light burning » arrive après l'anneau.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-09.jpg, transcription"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Final en récompense : la coche bleue sur la tête",
+      "name_en": "Payoff ending",
+      "t": "0:58.3-1:00",
+      "frames": "f1400-f1440",
+      "fps": 24,
+      "mechanics": "Après les confettis, le personnage s'immobilise, mains sur les hanches, sourire large ; une grande coche bleue (≈ 15 % de la hauteur) descend du haut du cadre et s'arrête au-dessus de sa tête comme une étiquette, image tenue ≈ 1,5 s. La promesse du refrain est tenue au dernier plan.",
+      "verdict": "reprendre",
+      "evidence": "overview-10.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Un fond saturé par section",
+      "name_en": "Color-blocked sections",
+      "t": "0:00-1:00",
+      "frames": "f0-f1440",
+      "fps": 24,
+      "mechanics": "Chaque plan a sa couleur dominante : bleu studio, cyan ciel, magenta, mosaïque multicolore, jaune, carton, noir, rouge et jaune de scène. Le changement de couleur à chaque coupe signale le changement de section du morceau, à la manière des aplats des clips de 1986.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-10.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Stop-motion trahi par la fluidité",
+      "name_en": "Missing on-twos stop-motion cadence",
+      "t": "0:34.0-0:36.0",
+      "frames": "f811-f861",
+      "fps": 24,
+      "mechanics": "Le bras qui fouette (f846-f851) se déplace d'un peu à chaque image, avec flou de mouvement : animation sur 1 image à 24 im/s, sans le tremblement de matière d'une pose à l'autre. Sledgehammer est en pixilation saccadée (poses tenues 2 im ou plus). Pour imiter : tenir chaque pose 2 im (12 poses/s) et décaler légèrement texture et lumière entre poses.",
+      "verdict": "adapter",
+      "evidence": "microM-007-move-f848.jpg",
+      "illus": {"from": 844, "to": 853, "n": 6}
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Citer deux clips précis (Sledgehammer, Big Time) a suffi à fixer la matière (pâte à modeler, visage peint, grille de cases, objets qui grossissent). Les références nommées sont plus efficaces qu'une liste d'adjectifs."},
+    {"kind": "direction", "insight": "« Modern references and figures » a été traduit en satire des réseaux (coche bleue, viralité, drones, cloud, ring light) ; les paroles détournent directement « Big Time » (« my drone is getting bigger, my cloud is getting higher »)."},
+    {"kind": "structure", "insight": "Le prompt ne dit rien du montage : Claude a divisé 60 s en 8 plans égaux de 7,5 s. Il aurait fallu demander des coupes sur les mesures, des plans courts au refrain et une pixilation saccadée."},
+    {"kind": "build", "insight": "Les plans viennent probablement d'un modèle vidéo à durée fixe : le mouvement interne ne peut pas suivre la musique. La seule synchro possible passe par la durée des plans, ici 13 temps à 104 BPM."},
+    {"kind": "qa", "insight": "Aucune vérification visible des artefacts : tête qui disparaît, chiffres de notifications illisibles, coupe parasite à 44,5 s. Une passe de contrôle plan par plan les aurait écartés."},
+    {"kind": "other", "insight": "« Also create the song » a donné une vraie chanson chantée (paroles cohérentes, tempo fixe) : la bande-son est pensée avec les images, et chaque plan illustre une ligne."}
+  ],
+  "steal": [
+    "Donne à chaque plan un nombre entier de mesures (12 ou 16 temps), pas seulement de temps : la coupe tombe alors toujours sur le premier temps.",
+    "Illustre chaque ligne de paroles par un jeu de mots visuel littéral : le clip se comprend sans le son et la chanson devient le storyboard.",
+    "Paie la promesse du refrain au dernier plan : l'objet chanté tout du long (la coche bleue) descend enfin sur le héros, image tenue 1,5 s.",
+    "Pour un faux stop-motion, tiens chaque pose 2 images (12 poses/s) et fais trembler légèrement la matière entre les poses.",
+    "Change de fond saturé à chaque section du morceau : le bloc de couleur annonce le changement de partie."
+  ],
+  "flaws": [
+    "Huit plans de 7,5 s identiques, sans accélération au refrain : loin de la frénésie de Sledgehammer.",
+    "Mouvement fluide à 24 im/s sur de la pâte à modeler : on lit de la 3D lissée, pas du stop-motion.",
+    "Artefacts de génération : tête qui disparaît (47-49 s), chiffres illisibles, morphings flous.",
+    "Coupes sur le temps mais pas sur la mesure : 13 temps par plan, la coupe glisse d'un temps à chaque fois.",
+    "Danse, impacts et rotations sans lien avec le rythme : le modèle vidéo n'entendait pas la musique."
+  ],
+  "deep_study": {"worth": false, "why": "Non : le mouvement vient d'un modèle vidéo et ne se reproduit pas image par image dans HyperFrames. Les leçons utiles sont structurelles (plans de durée multiple du temps, paroles illustrées, final en récompense) et se lisent sur les planches d'ensemble."}
+}

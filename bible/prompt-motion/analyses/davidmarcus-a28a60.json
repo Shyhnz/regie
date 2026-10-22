@@ -1,0 +1,338 @@
+{
+  "slug": "davidmarcus-a28a60",
+  "title": "Lightspark social promo video",
+  "handle": "@davidmarcus",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Typographie éditoriale suisse impeccable, hiérarchie par la valeur (ligne active noire, précédentes grises) et synchro exemplaire ; mais vocabulaire de mouvement limité (montée sous masque, coupes) et moitié basse du 9:16 souvent vide.",
+  "summary": "Promo verticale 23 s pour Lightspark, tout en typographie. Accroche « l'argent circule comme en 1973 », puis paiement partout (codes de devises qui défilent tous les demi-temps, compteur 0→60+), règlement en secondes, liste de produits, API pour agents IA avec terminal, triade « Open. Neutral. Global. », mission et logo. Alternance clair/sombre à chaque coupe, tout calé sur 120 BPM. Sobre, lisible, rythmé ; peu de surprise visuelle.",
+  "prompt_vs_result": [
+    "Une vidéo courte « punchy et moderne » pour les réseaux, promouvant les capacités de @lightspark, de « qualité production » et avec du son. Ni format, ni durée, ni texte, ni style.",
+    "Format vertical, durée 23 s, tout le texte, la structure problème→preuve→mission, le style éditorial monochrome, les codes de devises, le compteur, le terminal, la bande-son à 120 BPM et la grille en secondes rondes.",
+    "« with sound » a produit une bande-son réellement calée. « Punchy » a été rendu par le rythme, pas par l'image : aucun mouvement de caméra ni transition. Il aurait fallu préciser charte, couleur d'accent et occupation du cadre."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#F4F4F0", "role": "fond clair cassé"},
+      {"hex": "#1A1A1A", "role": "fond sombre"},
+      {"hex": "#111111", "role": "texte actif sur fond clair"},
+      {"hex": "#FFFFFF", "role": "texte actif sur fond sombre"},
+      {"hex": "#8E8E8E", "role": "ligne précédente atténuée, contre-proposition (« Anywhere. », « Not days. »)"},
+      {"hex": "#555555", "role": "liste atténuée sur fond sombre"},
+      {"hex": "#E8E8E4", "role": "grille de fond à peine visible"}
+    ],
+    "type": "Néo-grotesque (Inter Display ou Suisse Int'l probable), graisse regular, casse phrase avec point final, interlettrage serré. Titres ≈75 % de la largeur ; « 1973. » ≈87 % ; libellés ≈0,8 % de la hauteur ; code en mono.",
+    "texture": "Aucune : aplats, pas d'ombre, pas de grain, pas de flou de mouvement. Seule matière : une grille carrée très pâle sur les deux fonds.",
+    "style": "Éditorial suisse monochrome, typographie seule",
+    "coherence": "Système strict : en-tête « Lightspark / A Money Company » fixe, libellé de section avec filet, alignement à gauche à ≈6 % de marge, une seule police, hiérarchie par la seule valeur (noir/gris ou blanc/gris). Les coupes inversent la polarité clair/sombre à chaque chapitre. Rien ne casse le système ; il manque un accent de couleur pour la marque."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "120 BPM, pulsation très nette (9,01), un temps = 15 im à 30 fps = 0,5 s, premier temps à 0,515 s. Les 7 coupes tombent sur des secondes rondes (2, 3, 8, 12, 13, 16, 18 s) et le logo à 20 s, toujours 1 im avant la barre bleue (f59/f60, f89/f90, f239/f240, f359/f360, f539/f540). Les lignes de texte arrivent une par temps (0,5 s), les codes de devises un par demi-temps (7,5 im). Densité très forte de 3 à 6 s (un changement toutes les 7-8 im), plus calme ensuite. Maintiens de 0,6 à 0,8 s en fin de scène (lecture), plus longs ensuite : terminal ≈1 s (15,0-15,97 s), « TCP/IP » 1,4 s (18,53-19,93 s), carton logo 2,6 s. 45 % de maintiens au total.",
+    "timeline": [
+      {"t": "0:00-0:02", "what": "Fond clair : « Money / still moves / like it's » une ligne par temps, puis « 1973. » géant ; les lignes précédentes passent au gris ; note « SWIFT launched in 1973. »", "technique": "montée sous masque + atténuation des lignes précédentes"},
+      {"t": "0:02-0:03", "what": "Coupe au noir : le symbole de la marque se pose (tampon), « Not anymore. » monte dessous", "technique": "coupe à inversion de polarité + tampon du logo"},
+      {"t": "0:03-0:03.5", "what": "Fond clair, libellé « Grid » avec filet qui se trace ; « Pay anyone. » puis « Anywhere. » en gris", "technique": "paire proposition / complément"},
+      {"t": "0:03.5-0:05.9", "what": "USD → EUR → MXN → BRL → NGN → PHP → INR → GBP → KES → COP, un code par demi-temps ; compteur 0 → 60+ « countries on Grid »", "technique": "défilement vertical façon machine à sous + compteur roulant"},
+      {"t": "0:05.97-0:07.97", "what": "« Settlement » : un point noir file de USD à MXN sur une piste, impact et pulsation à l'arrivée ; « In seconds. » puis « Not days. »", "technique": "schéma de transfert animé"},
+      {"t": "0:07.97-0:11.97", "what": "Fond sombre « Grid Global Accounts » : Dollar accounts, Stablecoins, Bitcoin, Cards, Local payouts, Self-custody, une ligne par temps ; puis « One API. » en grand", "technique": "liste construite au temps + chute (payoff)"},
+      {"t": "0:11.97-0:12.97", "what": "Fond clair « Agent runtime » : « For humans. » puis « And AI agents. »", "technique": "paire proposition / complément"},
+      {"t": "0:12.97-0:15.97", "what": "Carte terminal sombre : « agent.pay({ to: \"maria.mx\", amount: \"250 USD\" }) » tapé avec curseur bloc, puis « ● Settled »", "technique": "frappe de code"},
+      {"t": "0:15.97-0:17.97", "what": "Fond sombre : « Open. » « Neutral. » « Global. » un mot par temps, empilés", "technique": "triade empilée"},
+      {"t": "0:17.97-0:19.97", "what": "Fond clair : « Lightspark is building » puis « The TCP/IP / of money. »", "technique": "phrase de mission"},
+      {"t": "0:20-0:21", "what": "Écran vide puis symbole tamponné, mot-symbole « lightspark » révélé de gauche à droite, URL qui monte", "technique": "construction du logo en trois temps"},
+      {"t": "0:21-0:23.06", "what": "Carton logo tenu puis fondu au blanc", "technique": "carton final"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Musique sans voix (Whisper : « [MUSIC PLAYING] »), 120 BPM, pulsation 9,01. Coupes : 7 sur 7 à −1 im d'une barre bleue (f59/60, f89/90, f179/180, f239/240, f359/360, f479/480, f539/540) ; hasard pour ±1 im d'un temps ≈20 %. Défilement des devises : 10 changements sur 10 posés sur une barre bleue ou bleu clair à 0/−1 im (f105, f112/113, f120, f127/128, f135, f142/143, f150, f157/158, f165, f172/173), avec un point vert d'attaque audio sur 8 d'entre eux (hasard ≈40 % par événement, 0,4^10 ≈ 1e-4). Arrivée du point sur MXN f195 = barre bleue + attaque. Lignes de liste et mots de la triade : un par temps sur les planches à 0,5 s. Au total ≈26 gestes clés sur 29 à ±2 im d'une barre ; ratés : « Not days. » (f213), « of money. » (f551), URL du logo (f621). Mesure automatique : départs/demi-temps R = 0,80, p = 3e-9, décalage −36 ms.",
+    "synced": ["coupes", "departs", "apparitions", "atterrissages", "texte", "pulsations"],
+    "style_match": "Électro minimale à 120 BPM avec frappes régulières (probable) : colle au caractère sec, net et régulier de la typo suisse et aux coupes franches ; aucune montée ni drop exploités.",
+    "how_built": "Le prompt exigeait « with sound ». À 120 BPM un temps vaut exactement 0,5 s : Claude a posé les scènes en secondes rondes (2, 3, 8, 12, 13, 16, 18, 20 s), les lignes toutes les 0,5 s et les devises toutes les 0,25 s, avec une piste dont le premier temps est à 0,015 s près sur la grille. Bande-son probablement générée ou choisie à ce tempo, attaques posées sur les changements."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Montée de ligne sous masque",
+      "name_en": "Masked line rise",
+      "t": "0:00-0:00.20",
+      "frames": "f0-f6",
+      "fps": 30,
+      "mechanics": "Chaque ligne monte depuis une ligne de masque située sous sa ligne de base : coupée en bas à la première image, elle monte de ≈6 % de la hauteur en 6 im (0,2 s) avec des pas de 8, 5, 3, 2, 1, 0 px (ease-out expo), sans dépassement ni flou. Même geste pour « still moves » (f15-f20), « like it's » (f30-f35), « Pay anyone. » (f90-f94), « Not anymore. » (f64-f70), « For humans. » (f360-f364).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 0, "to": 8, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Atténuation de la ligne précédente (focus par la valeur)",
+      "name_en": "Dim previous line to guide focus",
+      "t": "0:01.50-0:17.50",
+      "frames": "f45-f527",
+      "fps": 30,
+      "mechanics": "Quand une nouvelle ligne arrive, les précédentes passent du noir #111111 au gris #8E8E8E (ou du blanc au gris #555555 sur fond sombre) en 2 à 4 im, une image avant ou en même temps que l'entrée. L'œil lit toujours la ligne active seule. Vu sur « Money still moves like it's » → « 1973. », la liste de produits, « For humans. », « Open. Neutral. Global. ».",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f59.jpg, microM-007-cut-f239.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Chiffre géant avec note de source",
+      "name_en": "Oversized date with footnote",
+      "t": "0:01.50-0:02.00",
+      "frames": "f45-f58",
+      "fps": 30,
+      "mechanics": "« 1973. » occupe ≈87 % de la largeur (chiffres ≈15 % de la hauteur), sous les trois lignes d'accroche ; entre en gris puis passe au noir en ≈3 im. Une note minuscule grise « SWIFT launched in 1973. » apparaît dessous à f49. Le chiffre fait l'accroche, la note la crédibilise.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f59.jpg, overview-01.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe franche à inversion clair/sombre sur le temps",
+      "name_en": "On-beat hard cut with polarity flip",
+      "t": "0:01.97-0:17.97",
+      "frames": "f59, f89, f239, f359, f479, f539",
+      "fps": 30,
+      "mechanics": "Chaque chapitre change de polarité (clair #F4F4F0 ↔ sombre #1A1A1A) par une coupe sèche, sans fondu. La première image du nouveau plan est vide (seul l'en-tête, inversé, reste), puis le contenu se construit. Toutes les coupes tombent 1 im avant le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f59.jpg, microM-002-cut-f89.jpg, microM-008-cut-f359.jpg, microM-009-cut-f539.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Symbole de marque posé en tampon",
+      "name_en": "Logo mark stamp-in",
+      "t": "0:02.00-0:02.10",
+      "frames": "f60-f62",
+      "fps": 30,
+      "mechanics": "Le symbole apparaît d'un coup à ≈130 % de sa taille, gris et légèrement flou (f60), puis tombe à 100 % net en 1 à 2 im (f61-f62), comme un tampon. Même geste au carton final (f600-f603, symbole noir sur fond clair). Tombe pile sur le temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f59.jpg, extra-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Codes de devises en défilement de machine à sous",
+      "name_en": "Slot-machine ticker roll",
+      "t": "0:03.50-0:05.90",
+      "frames": "f105-f178",
+      "fps": 30,
+      "mechanics": "Grand code (≈60 % de la largeur, centré à ≈40 % de la hauteur) : l'ancien sort par le haut et le nouveau entre par le bas dans une fenêtre masquée ; image de transition unique où les deux sont coupés (f112 « USD »/« EUR »), puis le nouveau se pose en 2 im en remontant légèrement (ease-out). Dix codes, un par demi-temps (7,5 im), 0 ou −1 im de la barre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f113.jpg, microM-004-move-f143.jpg, microM-005-move-f173.jpg",
+      "illus": {"from": 110, "to": 122, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur roulant 0 → 60+",
+      "name_en": "Rolling counter with plus suffix",
+      "t": "0:04.00-0:04.87",
+      "frames": "f120-f146",
+      "fps": 30,
+      "mechanics": "Sous un filet, chiffre ≈20 % de largeur aligné à gauche : 0, 0, 0, 1, 1, 2, 3, 5, 6, 9, 12, 15, 20, 24, 30, 36, 40, 45, 48, 51, 54, 55, 57, 58, 59, 59, 60+. Démarrage lent, milieu rapide, fin lente (ease-in-out, 26 im = 0,87 s). Le « 0 » entre en gris, la légende « countries on Grid » apparaît à f126. Le « + » s'ajoute à la fin.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f113.jpg, microM-004-move-f143.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Mise en page éditoriale à en-tête fixe et libellé de section",
+      "name_en": "Editorial header and section label",
+      "t": "0:00-0:20",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "En-tête permanent minuscule (≈0,8 % de la hauteur) : « Lightspark » à gauche, « A Money Company » à droite, à ≈2 % du haut. Sous lui, libellé de section (« Grid », « Settlement », « Grid Global Accounts », « Agent runtime ») suivi d'un filet pleine largeur. Texte aligné à gauche, marge ≈6 %, premier titre à ≈30 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Filet de section qui se trace",
+      "name_en": "Rule draw-on",
+      "t": "0:02.97-0:03.17",
+      "frames": "f90-f95",
+      "fps": 30,
+      "mechanics": "À chaque nouvelle section, le filet sous le libellé se trace de gauche à droite : ≈40 %, 60 %, 75 %, 85 %, 90 %, 100 % de la largeur sur f90-f95 (6 im, ease-out). Repris à f180-f190 (Settlement), f240, f360.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f89.jpg, microM-005-move-f173.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Piste de transfert avec impact à l'arrivée",
+      "name_en": "Transfer track with arrival pulse",
+      "t": "0:05.97-0:06.70",
+      "frames": "f179-f201",
+      "fps": 30,
+      "mechanics": "Piste horizontale pleine largeur (« USD / Sent » à gauche, « MXN / Received » à droite, cercle vide). Un point noir part f183 et arrive f194 (≈12 im) : départ lent, milieu rapide, arrivée lente (ease-in-out), le trait noir se remplit derrière lui. À l'arrivée f195, le cercle se remplit, gonfle à ≈2× puis revient (f197-f201) avec un anneau, et « MXN » et « Received » passent du gris au noir. Arrivée pile sur la barre bleue et une attaque audio.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f173.jpg, microM-006-move-f200.jpg",
+      "illus": {"from": 181, "to": 200, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Paires proposition / complément en noir et gris",
+      "name_en": "Statement / counterpoint pairs",
+      "t": "0:03.00-0:13.00",
+      "frames": "f90-f390",
+      "fps": 30,
+      "mechanics": "Deux lignes courtes avec point final : la première en noir, la seconde en gris #8E8E8E (« Pay anyone. / Anywhere. », « In seconds. / Not days. »), ou la première qui passe au gris quand la seconde arrive (« For humans. / And AI agents. »). Lisibles en un coup d'œil, 2 à 3 mots chacune.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Liste construite une ligne par temps",
+      "name_en": "Beat-by-beat list build",
+      "t": "0:08.00-0:10.97",
+      "frames": "f240-f329",
+      "fps": 30,
+      "mechanics": "Sur fond sombre, six lignes (≈4 % de la hauteur chacune, interligne serré) arrivent une par temps (15 im) : la nouvelle entre décalée de ≈2 % vers la gauche, en gris clair, et glisse en place en blanc en 2-3 im ; la précédente s'atténue une image avant (f254 avant f255).",
+      "verdict": "reprendre",
+      "evidence": "microM-007-cut-f239.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Chute en grand après l'énumération",
+      "name_en": "Payoff line after enumeration",
+      "t": "0:10.97-0:11.97",
+      "frames": "f329-f358",
+      "fps": 30,
+      "mechanics": "« Self-custody. » s'atténue f329 ; « One API. » apparaît f330 sur le temps, déjà en place et à taille finale (≈2× la liste, ≈80 % de la largeur, à ≈75 % de la hauteur), gris puis blanc en 1 im, sans mouvement. La liste entière s'assombrit encore (#555555) en ≈4 im : contraste maximal sur la chute.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 326, "to": 334, "n": 5}
+    },
+    {
+      "cat": "code",
+      "name_fr": "Carte terminal à frappe de code",
+      "name_en": "Typed code card",
+      "t": "0:12.97-0:15.97",
+      "frames": "f389-f479",
+      "fps": 30,
+      "mechanics": "Carte sombre #1A1A1A à coins arrondis (≈84 % de la largeur, ≈17 % de la hauteur), invite « > agent » en gris, code mono blanc ≈1,5 % de la hauteur tapé avec curseur bloc à ≈1 caractère par image de 13,0 à 14,5 s, puis séparateur et « ● Settled » vers 15,0 s. La carte apparaît d'un coup sur le temps. Ensuite ≈1 s sans mouvement.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Triade empilée un mot par temps",
+      "name_en": "Stacked triad, one word per beat",
+      "t": "0:16.00-0:17.97",
+      "frames": "f480-f538",
+      "fps": 30,
+      "mechanics": "« Open. », « Neutral. », « Global. » en très grand (≈85 % de la largeur), empilés à gauche à partir de ≈40 % de la hauteur, un par temps (f480, f495, f510). Chaque mot entre gris clair et passe au blanc en ≈0,5 s ; les précédents descendent au gris #555555.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, microM-009-cut-f539.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Construction du logo en trois temps",
+      "name_en": "Three-step logo build",
+      "t": "0:19.97-0:20.80",
+      "frames": "f599-f624",
+      "fps": 30,
+      "mechanics": "f599 écran clair entièrement vide (l'en-tête disparaît aussi). f600 le symbole tombe en tampon (130 %→100 %, gris→noir, 3 im) à ≈23 % de la largeur. f606-f614 le mot « lightspark » se révèle de gauche à droite depuis le symbole (≈8 im, ease-out), le groupe se recentre de ≈3 %. f621-f623 l'URL grise monte sous masque. Tenu jusqu'à 22,5 s puis fondu.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 599, "to": 623, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Accroche par le problème daté, puis preuves et mission",
+      "name_en": "Dated-problem hook to mission",
+      "t": "0:00-0:23.06",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "Accroche « Money still moves like it's 1973. » / « Not anymore. » (3 s), preuves concrètes (60+ pays, 10 devises, règlement en secondes), gamme (6 produits → « One API. »), ouverture vers les agents IA (code), valeurs (triade), mission (« The TCP/IP of money. »), logo. Chaque chapitre = un libellé de section, comme un magazine.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Grille carrée à peine visible",
+      "name_en": "Faint square grid background",
+      "t": "0:00-0:20",
+      "frames": "f0-f599",
+      "fps": 30,
+      "mechanics": "Grille de carrés (≈6 % de la largeur) en traits très pâles (#E8E8E4 sur #F4F4F0, ≈#222 sur #1A1A1A), statique, présente sur les deux polarités. Elle évoque le produit « Grid » et donne une texture de papier millimétré sans distraire.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Monochrome strict, hiérarchie par la valeur",
+      "name_en": "Strict monochrome value hierarchy",
+      "t": "0:00-0:23.06",
+      "frames": "f0-f689",
+      "fps": 30,
+      "mechanics": "Aucune teinte : noir, blanc, deux gris et la grille. La hiérarchie passe uniquement par la valeur (actif / atténué) et la taille. Très élégant et lisible, mais aucune couleur de marque pour ancrer le souvenir.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-04.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre vertical rempli dans sa moitié haute seulement",
+      "name_en": "Top-weighted vertical layout",
+      "t": "0:03.00-0:13.00",
+      "frames": "f90-f390",
+      "fps": 30,
+      "mechanics": "Sur la plupart des plans, le contenu tient entre 10 % et 55 % de la hauteur (« Pay anyone », « Settlement », « Agent runtime ») et le bas du 9:16 reste vide (jusqu'à 45 % du cadre). Choix qui laisse la place aux interfaces des réseaux, mais déséquilibre la composition.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Maintiens de lecture de 0,6-0,8 s en fin de scène",
+      "name_en": "Reading holds before each cut",
+      "t": "0:02.33-0:19.93",
+      "frames": "f70-f598",
+      "fps": 30,
+      "mechanics": "Chaque scène se termine par un maintien immobile de 0,6 à 0,8 s (2,33-2,93 s ; 6,0-6,57 s ; 7,27-7,93 s ; 11,17-11,93 s ; 17,17-17,93 s) avant la coupe sur le temps suivant : le temps de lire la dernière ligne. Plus longs et moins justifiés : 1 s sur le terminal, 1,4 s sur « TCP/IP ».",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille en secondes rondes à 120 BPM",
+      "name_en": "Round-second timeline at 120 BPM",
+      "t": "0:00-0:20",
+      "frames": "f0-f600",
+      "fps": 30,
+      "mechanics": "À 120 BPM un temps vaut 0,5 s (15 im à 30 fps) : scènes posées sur des secondes entières (2, 3, 8, 12, 13, 16, 18, 20 s), lignes toutes les 0,5 s, devises toutes les 0,25 s. Avec une piste dont le premier temps est à ≈0 s, tout tombe sur la musique sans calcul ; image ≈1 im en avance, ce qui se perçoit comme pile.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f59.jpg, microM-002-cut-f89.jpg, microM-009-cut-f539.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Défilement calé sur les demi-temps et les attaques",
+      "name_en": "Ticker locked to eighth-note hits",
+      "t": "0:03.50-0:05.90",
+      "frames": "f105-f178",
+      "fps": 30,
+      "mechanics": "Chaque changement de devise tombe sur un temps ou un demi-temps (0/−1 im) et 8 sur 10 coïncident avec une attaque audio forte (points verts f106, f113, f121, f128, f135, f150, f158, f165) : la percussion en croches devient le moteur visible du défilement. C'est le passage le plus dense et le plus « punchy ».",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f113.jpg, microM-004-move-f143.jpg, microM-005-move-f173.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "Le prompt cite @lightspark sans fournir de contenu : les faits (SWIFT 1973, 60+ pays, devises, Grid Global Accounts, agent runtime, « TCP/IP of money ») viennent de la connaissance de Claude ou d'une recherche. Le texte est la vraie force de la vidéo."},
+    {"kind": "direction", "insight": "« punchy and modern » a été traduit en rythme (une ligne par temps, devises tous les demi-temps) et en style éditorial suisse monochrome, pas en effets : aucun mouvement de caméra, aucune transition motivée."},
+    {"kind": "build", "insight": "« with sound » a forcé une bande-son, et le choix de 120 BPM (0,5 s par temps) a rendu la synchro automatique avec un montage en secondes rondes. Recette transposable : choisir un tempo qui divise la seconde."},
+    {"kind": "structure", "insight": "Sans durée imposée, Claude a choisi 23 s et huit chapitres, chacun identifié par un libellé de section : structure claire, typique d'un format réseau social."},
+    {"kind": "other", "insight": "Le prompt ne précisait ni charte ni couleur : le résultat est entièrement monochrome, élégant mais peu identifiable. Il aurait fallu fournir la couleur de marque et le logo."}
+  ],
+  "steal": [
+    "Choisir 120 BPM (0,5 s par temps) et poser le montage en secondes rondes : coupes, lignes et changements tombent seuls sur la musique.",
+    "Atténuer en gris la ligne précédente à chaque nouvelle ligne : l'œil lit toujours un seul élément actif.",
+    "Défilement de codes en machine à sous sur chaque demi-temps, avec compteur roulant ease-in-out sous un filet.",
+    "Inverser la polarité clair/sombre à chaque chapitre par une coupe sèche sur le temps, première image vide.",
+    "Logo en trois temps : symbole tamponné (130 %→100 % en 2 im), mot révélé depuis le symbole, URL qui monte."
+  ],
+  "flaws": [
+    "Vocabulaire de mouvement très réduit : montée sous masque et coupe franche, aucune caméra ni transition motivée.",
+    "Moitié basse du cadre 9:16 souvent vide (jusqu'à 45 %) : composition déséquilibrée.",
+    "Entièrement monochrome, sans couleur de marque : élégant mais générique, proche d'un gabarit de keynote.",
+    "Maintiens trop longs en seconde moitié : terminal ≈1 s, « TCP/IP » 1,4 s, carton final 2,6 s.",
+    "Code du terminal à ≈1,5 % de la hauteur : trop petit pour un format mobile."
+  ],
+  "deep_study": {"worth": true, "why": "Oui pour 3,0-6,7 s : défilement des devises sur chaque demi-temps, compteur roulant et piste de transfert, plus les coupes à −1 im du temps. Cas d'école de synchro typo simple à reproduire dans HyperFrames ; à 30 fps natif, l'étude image par image suffit."}
+}

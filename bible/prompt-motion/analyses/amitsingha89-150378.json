@@ -1,0 +1,259 @@
+{
+  "slug": "amitsingha89-150378",
+  "title": "Handwoven textiles brand explainer",
+  "handle": "@AmitSingha89",
+  "family": "explainer",
+  "craft": 2,
+  "craft_reason": "Mise en page éditoriale soignée et palette cohérente, mais c'est un diaporama de site : 81 % d'images fixes, glissements linéaires, aucun son, surtitre coupé par le haut du cadre.",
+  "summary": "Explainer muet de 54 s en 16:9 pour Anuprerna, marque indienne de textiles tissés main. Il reprend le site section par section : accroche sur photo de métier à tisser, artisans (compteur 500+), valeurs, catalogue, clients, 3 étapes de commande, CTA. Typographie serif et italique terracotta élégante, vraies photos. Mais le mouvement se limite à des apparitions en fondu suivies de maintiens de 3 à 6 s, sans musique ni voix.",
+  "prompt_vs_result": [
+    "Le prompt demande un explainer professionnel pour le site anuprerna.com, destiné à un visiteur qui découvre la marque. Il ne fixe ni durée, ni format, ni son, ni style.",
+    "Claude a choisi seul de suivre l'ordre d'une landing page en 7 scènes, la palette brun / crème / terracotta, le serif avec italique d'accent, les vraies photos et chiffres du site, et une vidéo sans aucune piste audio.",
+    "L'URL a bien cadré le contenu : il est fidèle au site. « Professional » a donné de la lenteur et de la sobriété, pas du rythme. Il aurait fallu demander une voix-off ou une musique, une durée (≈ 30 s) et un tempo de scène."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#2A1F17", "role": "fond sombre (accroche, valeurs, fin)"},
+      {"hex": "#F3ECE1", "role": "fond crème (artisans, clients, étapes)"},
+      {"hex": "#E6D9C3", "role": "fond beige (catalogue)"},
+      {"hex": "#B5532E", "role": "terracotta : mots en italique, compteur, pastilles, bouton CTA"},
+      {"hex": "#C9A063", "role": "ocre : surtitre ANUPRERNA, filets sur fond sombre"},
+      {"hex": "#1E1A16", "role": "texte sur fond clair"},
+      {"hex": "#F5EEE3", "role": "texte sur fond sombre"},
+      {"hex": "#6B6157", "role": "texte courant secondaire"}
+    ],
+    "type": "Serif garalde à fort contraste (Cormorant Garamond probable) en regular pour les titres ≈ 4,5–6 % de la hauteur, avec le mot-clé en italique terracotta. Sans-serif grotesque (Inter probable) ≈ 1,5 % pour le corps. Surtitres en capitales très espacées, ≈ 1 %.",
+    "texture": "Photos à coins arrondis (≈ 2 % du cadre), longues ombres portées douces, cartes inclinées de -6° à +5°. Fonds sombres = photo floutée et assombrie (calque brun ≈ 80 %). Aucun grain, aucun flou de mouvement.",
+    "style": "Éditorial artisanal chaleureux, façon landing page",
+    "coherence": "Le système typographique (serif + italique terracotta + surtitre en capitales précédé d'un filet) et la palette terre tiennent l'ensemble. La grammaire de transition casse la cohérence : fondus et glissements linéaires alternent sans logique. Le surtitre coupé en haut de la scène « How to order » trahit une mise en page non vérifiée."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Aucune piste audio. Une seule « coupe » détectée car tous les passages sont des fondus ou des glissements. 13 maintiens statiques totalisent 43,5 s, soit 81 % de la durée. Les pires : 14,1–20,5 s (6,4 s sur les 3 cartes de valeurs), 41,8–47,0 s (5,2 s), 23,2–28,0 s (4,8 s), 7,7–12,0 s (4,3 s), 47,5–54,0 s (6,5 s sur la carte de fin). Chaque scène suit le même schéma : 1–1,5 s d'apparitions en cascade, puis 3 à 6 s d'immobilité. Durées de scène irrégulières, dictées par le contenu : 4,5 / 7,5 / 8,7 / 7,3 / 7,0 / 12,0 / 7,0 s. Aucun tempo.",
+    "timeline": [
+      {"t": "0:00-0:04.5", "what": "Accroche sur fond brun : photo floutée de mains au métier à tisser. « ANUPRERNA » en ocre, titre « Handwoven artisanal textiles, / straight from India's looms. » qui monte mot à mot, puis sous-titre sans-serif", "technique": "titre serif mot à mot sur photo assombrie"},
+      {"t": "0:04.5-0:12.0", "what": "Fondu vers crème. DIRECT FROM THE SOURCE : « We work directly with weavers in rural Bengal & East India. », grille 3 × 3 de portraits d'artisans inclinée à droite, compteur 149+ → 500+, ligne de mots-clés ; maintien 4,3 s", "technique": "compteur + collage photo incliné"},
+      {"t": "0:12.0-0:20.7", "what": "Le panneau crème glisse vers la gauche et révèle le fond brun. WHY IT MATTERS : 3 cartes photo Sustainable / Fair / Traceable en cascade (15 im d'écart) ; maintien 6,4 s", "technique": "glissement linéaire + cartes en cascade"},
+      {"t": "0:20.7-0:28.0", "what": "Fondu vers beige. THE COLLECTION : « 3,000+ handloom fabrics, by the metre. », liste de fibres, 4 cartes produit qui montent en fondu (10 im d'écart) ; maintien 4,8 s", "technique": "grille produit en cascade"},
+      {"t": "0:28.0-0:35.0", "what": "Glissement vers la gauche. WHO WE SERVE : 2 photos inclinées superposées, « Made for designers & brands. », paragraphe, 5 pastilles de segments clients une à une ; maintien 3 s", "technique": "collage incliné + pastilles"},
+      {"t": "0:35.0-0:47.0", "what": "Fondu. HOW TO ORDER (surtitre coupé par le haut du cadre) « Feel it first. Then order at scale. » : étape 1 à 35,5 s, pointillé tracé vers l'étape 2 à 38,5 s, puis vers l'étape 3 à 41,5 s ; maintien 5,2 s", "technique": "processus en 3 étapes avec pointillé"},
+      {"t": "0:47.0-0:54.0", "what": "Glissement vers la gauche jusqu'au fond brun avec photo assombrie. Logo A + ANUPRERNA, « Start with a swatch. », bouton terracotta « Order a SwatchKit », URL, pied de page ; maintien 3,5 s", "technique": "carte de fin CTA"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Le fichier n'a aucune piste audio (audio=no), ni musique, ni voix, ni effet sonore. Aucune synchro à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le ton feutré appellerait une musique acoustique douce ; sans son, les maintiens de 5 s paraissent encore plus longs.",
+    "how_built": "Le prompt ne mentionne ni musique ni voix-off, et Claude a rendu une composition muette. Pour un explainer, la voix-off porte normalement le récit : il faut la demander explicitement, avec une bande-son et des durées de scène calées dessus."
+  },
+  "techniques": [
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre serif qui monte mot à mot en fondu",
+      "name_en": "word-by-word rise and fade",
+      "t": "0:00.70-0:01.75",
+      "frames": "f21-f52",
+      "fps": 30,
+      "mechanics": "Chaque mot monte de ≈ 1,5 % de la hauteur en fondu sur ≈ 6 im, en ease-out. Décalage (stagger) ≈ 3 im entre mots : « Handwoven » f21–f26, « artisanal » f24–f30, « textiles, » f27–f33. La ligne 2 en italique terracotta démarre ≈ 5 im après la fin de la ligne 1 (« straight » f38, « from » f42, « India's » f45, « looms. » f48, posée à f52). Titre complet en ≈ 1 s. Même procédé pour chaque titre de scène.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 21, "to": 52, "n": 8}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Serif garalde avec mot-clé en italique terracotta",
+      "name_en": "serif headline with italic accent word",
+      "t": "0:01.00-0:54.00",
+      "frames": "f30-f1619",
+      "fps": 30,
+      "mechanics": "Titre en serif regular à fort contraste, encre crème sur fond sombre ou #1E1A16 sur fond clair. Le mot porteur de sens passe en italique terracotta #B5532E : « straight from India's looms. », « weavers », « by the metre. », « designers », « brands. », « Feel it first. », « swatch. ». Corps de texte en sans-serif ≈ 1,5 % de la hauteur. Contraste serif / sans très lisible.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Surtitre de chapitre en capitales espacées précédé d'un filet",
+      "name_en": "tracked eyebrow with leading rule",
+      "t": "0:04.70-0:47.00",
+      "frames": "f141-f1410",
+      "fps": 30,
+      "mechanics": "« — DIRECT FROM THE SOURCE », « — WHY IT MATTERS », « — THE COLLECTION », « — WHO WE SERVE », « — HOW TO ORDER » : capitales ≈ 1 % de la hauteur, interlettrage ≈ +20 %, terracotta ou ocre, filet de ≈ 3 % de largeur à gauche. Apparition en fondu ≈ 6 im avant le titre. Dans la scène « How to order », il dépasse du haut du cadre et reste coupé 12 s.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Photo floutée et assombrie en fond d'accroche",
+      "name_en": "darkened blurred photo backdrop",
+      "t": "0:00.00-0:04.50",
+      "frames": "f0-f135",
+      "fps": 30,
+      "mechanics": "Photo de mains au métier à tisser, floutée, sous un calque brun #2A1F17 à ≈ 80 %. Elle sort du noir en ≈ 15 im au début, puis reste immobile (pas de zoom lent ni de parallaxe). Même procédé sur la carte de fin, avec une photo de coupons de tissu.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Grille de portraits dans une carte inclinée avec ombre",
+      "name_en": "tilted photo-grid card",
+      "t": "0:04.80-0:12.00",
+      "frames": "f144-f360",
+      "fps": 30,
+      "mechanics": "Grille 3 × 3 de portraits d'artisans, gouttières blanches fines, dans une carte à coins arrondis inclinée de ≈ -4°, ≈ 38 % de la largeur, à droite, avec une longue ombre douce. Entrée en fondu + léger glissement pendant le fondu enchaîné (f144–f149), puis immobile 6 s.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f137.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur de preuve sociale en ease-out",
+      "name_en": "eased count-up stat",
+      "t": "0:06.30-0:08.00",
+      "frames": "f189-f240",
+      "fps": 30,
+      "mechanics": "« 500+ artisans empowered across East India ». Le nombre terracotta ≈ 7 % de la hauteur compte 149+ (6,5 s) → 414+ (7,0 s) → 495+ (7,5 s) → 500+ (8,0 s) : grands pas puis petits = ease-out fort sur ≈ 1,5 s. Libellé en 2 lignes sans-serif à droite.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Glissement linéaire du panneau qui révèle la scène suivante",
+      "name_en": "linear slide-off reveal",
+      "t": "0:11.97-0:12.47",
+      "frames": "f359-f374",
+      "fps": 30,
+      "mechanics": "Toute la scène crème glisse vers la gauche en 15 im (0,5 s) à vitesse constante, ≈ 6–7 % de la largeur par image (pas 7-6-7-7-6-7-6-8-6-7-7-6-7-7-7). C'est linéaire, avec départ et arrêt secs. Dessous, le fond brun de la scène suivante est déjà là ; son surtitre apparaît à f363 et la 1re carte se fond à partir de f370. Même procédé à f840–f855 et f1410–f1424. Aucun flou de mouvement, aucune motivation narrative.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f362.jpg",
+      "illus": {"from": 358, "to": 375, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fondu enchaîné long vers la scène suivante",
+      "name_en": "slow cross dissolve",
+      "t": "0:20.47-0:21.00",
+      "frames": "f614-f630",
+      "fps": 30,
+      "mechanics": "Fondu du fond brun vers le beige en ≈ 16 im. Les 3 cartes se dissolvent en même temps, en passant par un brun-gris délavé (#7A6A5A). Le titre suivant commence à monter mot à mot dès f628, avant la fin du fondu. Idem à 4,5 s (f135–f149, 14 im) et vers 35 s.",
+      "verdict": "cliche",
+      "evidence": "microM-003-move-f624.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Trois cartes de valeurs en cascade",
+      "name_en": "staggered value cards",
+      "t": "0:12.30-0:14.10",
+      "frames": "f369-f423",
+      "fps": 30,
+      "mechanics": "3 cartes photo de même taille (≈ 26 % de la largeur), alignées en haut sur une grille à 3 colonnes. Sous chacune : petit filet ocre, titre serif (« Sustainable », « Fair », « Traceable ») et 2 lignes de texte. Chaque carte entre en fondu sur ≈ 10 im, ≈ 15 im après la précédente (12,3 / 13,3 / 13,8 s). Puis 6,4 s d'immobilité totale.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Cartes produit qui montent en fondu, 10 im d'écart",
+      "name_en": "product card cascade",
+      "t": "0:21.85-0:23.00",
+      "frames": "f656-f690",
+      "fps": 30,
+      "mechanics": "4 cartes carrées (≈ 19 % de la largeur) avec étiquette en capitales sous chacune (HANDLOOM JACQUARD, HAND BLOCK PRINTING, DIGITAL PRINT, DYEABLE KHADI COTTON). Chacune monte de ≈ 3 % de la hauteur en fondu sur ≈ 5–6 im, ease-out. Départs à f656, f666, f675, f685 : écart ≈ 10 im (0,33 s). L'étiquette arrive avec la carte. Ombres douces sous chaque carte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 655, "to": 690, "n": 6}
+    },
+    {
+      "cat": "image",
+      "name_fr": "Deux photos inclinées superposées façon tirages posés",
+      "name_en": "overlapping tilted photo prints",
+      "t": "0:28.20-0:35.00",
+      "frames": "f846-f1050",
+      "fps": 30,
+      "mechanics": "Photo 1 (table d'atelier) inclinée de ≈ -6°, ≈ 26 % de la largeur, à gauche. Photo 2 (machine à coudre) inclinée de ≈ +4°, superposée en bas à droite de la 1re avec une ombre plus marquée. La 1re entre en fondu + rotation légère pendant le glissement (f845–f855), la 2e ≈ 0,5 s plus tard. Immobiles ensuite.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f842.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastilles de segments clients une à une",
+      "name_en": "sequential tag pills",
+      "t": "0:30.00-0:31.50",
+      "frames": "f900-f945",
+      "fps": 30,
+      "mechanics": "5 pastilles à contour terracotta fin et texte sans-serif ≈ 1 % de la hauteur (Ethical Fashion Houses, Designers & Studios, Home & Lifestyle Brands, Retailers, Interior Designers), sur 2 lignes. Chacune apparaît en fondu, gris puis plein, ≈ 7–10 im après la précédente.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Processus en 3 étapes avec pastilles numérotées et pointillé",
+      "name_en": "numbered steps with drawing dashed connector",
+      "t": "0:35.50-0:41.80",
+      "frames": "f1065-f1254",
+      "fps": 30,
+      "mechanics": "Cartes photo ≈ 19 % de la largeur, chacune avec une pastille ronde terracotta numérotée en haut à gauche. Un pointillé ocre se trace vers la droite depuis la carte précédente (f1146–f1150 pour l'étape 2, puis lentement de 40,0 à 41,3 s pour l'étape 3). La carte suivante se fond sur ≈ 8 im (f1151–f1158), sa pastille apparaît f1157–f1160. Les étapes arrivent à 35,5 / 38,5 / 41,5 s, soit 3 s d'écart chacune : beaucoup trop lent.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1144, "to": 1162, "n": 6}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Structure de landing page transposée en vidéo",
+      "name_en": "landing-page narrative order",
+      "t": "0:00.00-0:54.00",
+      "frames": "f0-f1619",
+      "fps": 30,
+      "mechanics": "Les 7 blocs suivent l'ordre du site : accroche, preuve (artisans, 500+), valeurs, catalogue (3 000+), cibles, comment commander, CTA. Logique et complet pour un primo-visiteur, mais sans tension ni chute : le récit est celui d'une page qu'on fait défiler.",
+      "verdict": "adapter"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin avec bouton CTA et URL",
+      "name_en": "CTA end card",
+      "t": "0:47.40-0:54.00",
+      "frames": "f1422-f1619",
+      "fps": 30,
+      "mechanics": "Fond brun avec photo assombrie. Logo A + ANUPRERNA ocre en haut (≈ 8 % de la hauteur), apparu pendant le glissement (f1417). Puis « Start with a swatch. » mot à mot (48,0–48,5 s). Le bouton pilule terracotta « Order a SwatchKit » grossit en fondu (49,0–49,5 s), l'URL serif arrive à 50,0 s, le pied de page à 50,5 s. Puis 3,5 s fixes.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f1412.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Alternance de fonds brun / crème / beige par chapitre",
+      "name_en": "warm background alternation",
+      "t": "0:00.00-0:54.00",
+      "frames": "f0-f1619",
+      "fps": 30,
+      "mechanics": "Brun #2A1F17 (accroche, valeurs, fin), crème #F3ECE1 (artisans, clients, étapes), beige #E6D9C3 (catalogue). L'alternance donne une respiration et reste dans une gamme terre cohérente avec le textile. L'accent terracotta est le seul chromatique fort.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Apparitions rapides puis longs maintiens",
+      "name_en": "burst-then-hold pacing",
+      "t": "0:00.00-0:54.00",
+      "frames": "f0-f1619",
+      "fps": 30,
+      "mechanics": "Chaque scène concentre ses mouvements sur 1–1,5 s (cascades de 3 à 15 im), puis reste figée 3 à 6,4 s. Bilan : 81 % du temps immobile. C'est l'inverse de la règle « quelque chose bouge toutes les 0,5 à 1 s ».",
+      "verdict": "cliche"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "La seule URL a suffi : Claude a repris les vraies photos, la vraie copie et les vrais chiffres du site (500+ artisans, 3 000+ tissus, SwatchKit, ArtisanFlow, Wholesale Partner Program). La vidéo est fidèle mais n'ajoute rien au site."},
+    {"kind": "structure", "insight": "« For a first-time visitor » a été traduit par l'ordre d'une landing page (qui, pourquoi, quoi, pour qui, comment, CTA). C'est pertinent pour l'information mais donne un site en diapositives plutôt qu'un récit."},
+    {"kind": "direction", "insight": "« Professional » a été lu comme sobre et lent : fondus, longs maintiens, aucune énergie. Sans indication de rythme ni de durée, le modèle a laissé chaque scène durer selon la quantité de texte (4,5 à 12 s)."},
+    {"kind": "other", "insight": "Aucune mention de son : rendu muet. Un « explainer » sans voix-off ni musique perd son vecteur principal. Il faut demander explicitement une voix-off (texte + durée) ou une musique et caler les scènes dessus."},
+    {"kind": "qa", "insight": "Le surtitre « HOW TO ORDER » dépasse du haut du cadre pendant 12 s : aucune vérification des marges de sécurité. À ajouter dans le prompt : contrôle des bords sur des images clés avant rendu."},
+    {"kind": "build", "insight": "Les glissements linéaires à vitesse constante (6,7 %/image) trahissent des transitions par défaut, sans courbe d'accélération. Préciser une courbe (expo.inOut ou power3.out) et une transition motivée par le contenu."}
+  ],
+  "steal": [
+    "Titre serif en deux temps : ligne neutre, puis mot-clé en italique terracotta, mots qui montent en fondu à 3 im d'écart.",
+    "Compteur de preuve en ease-out (149+ → 500+ en 1,5 s), placé juste sous le titre qui l'annonce.",
+    "Photos inclinées de ±4–6° avec longue ombre douce, posées comme des tirages sur une table : signe « artisanal » immédiat.",
+    "Étapes numérotées : un pointillé se trace vers l'emplacement de l'étape suivante avant qu'elle n'apparaisse.",
+    "Surtitre de chapitre en capitales espacées, précédé d'un filet de la couleur d'accent."
+  ],
+  "flaws": [
+    "81 % du temps immobile : jusqu'à 6,4 s sans aucun mouvement (14,1–20,5 s).",
+    "Aucune piste audio : ni voix-off ni musique pour un explainer.",
+    "Glissements de panneau linéaires, départ et arrêt secs, sans motivation ni flou.",
+    "Surtitre « HOW TO ORDER » coupé par le haut du cadre pendant 12 s.",
+    "Transitions incohérentes : fondus et glissements alternent sans logique."
+  ],
+  "deep_study": {"worth": false, "why": "Non. Les mouvements sont rares et simples (fondus, glissements linéaires, cascades de cartes) et 81 % du temps est fixe. Les planches à 2 im/s et les 3 planches denses suffisent à tout mesurer."}
+}

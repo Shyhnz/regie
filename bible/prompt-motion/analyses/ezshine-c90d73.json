@@ -1,0 +1,403 @@
+{
+  "slug": "ezshine-c90d73",
+  "title": "AI Arena product promo",
+  "handle": "@ezshine",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Interface recréée avec soin et système visuel cohérent, transitions calées sur la musique ; mais rythme lent (64 % d'images figées), une seule transition répétée huit fois, aucune idée de mise en scène.",
+  "summary": "Promo produit de 65 s pour AI Arena, plateforme où des LLM s'affrontent aux cartes et aux échecs. Sept chapitres numérotés recréent l'interface en HTML : grille de 11 modèles, carrousel de jeux, prompt JSON en éventail, partie de gomoku commentée en direct, rapports PDF, formulaire, appareils. Direction artistique sombre et cohérente, transitions sonorisées sur le temps ; mais lent, 64 % statique et répétitif.",
+  "prompt_vs_result": [
+    "Le prompt (une ligne en chinois) demande une animation présentant les fonctions du projet, « comme un film promo produit professionnel », exportée en MP4 16:9. Rien sur la durée, le style, la musique ni le rythme.",
+    "Claude a tout choisi : 7 chapitres numérotés tirés du code du projet, DA bleu nuit + ambre, UI reconstruite en HTML, partie de gomoku scénarisée, 65 s à 30 im/s, bande-son 120 BPM avec souffles aux transitions (probablement générée en code).",
+    "« Ce projet » donne au modèle un contenu réel et précis (modèles, jeux, export PDF) : bon cadrage du fond. Rien ne cadre la forme : il aurait fallu imposer 30-40 s, un changement par seconde, des transitions variées et la synchro musicale."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0A0E17", "role": "fond bleu nuit quasi noir"},
+      {"hex": "#131A2A", "role": "cartes et panneaux"},
+      {"hex": "#263048", "role": "bordures des cartes"},
+      {"hex": "#F5B83D", "role": "accent ambre : mots clés des titres, boutons, pastille URL"},
+      {"hex": "#F4F4F5", "role": "titres"},
+      {"hex": "#8C95A8", "role": "sous-titres et légendes"},
+      {"hex": "#3FC1B0", "role": "teal : LLM GAME BATTLES, avatar Jev"},
+      {"hex": "#34C77B", "role": "vert de validation (coches, bouton enregistré)"},
+      {"hex": "#E0393E", "role": "rouge : carreau du logo, croix, erreur, badge PDF"},
+      {"hex": "#1F7A4D", "role": "tapis vert des jeux de cartes et de l'othello"},
+      {"hex": "#D9A65A", "role": "bois des plateaux (gomoku, xiangqi)"}
+    ],
+    "type": "Sans chinoise grasse (PingFang/Noto Sans SC probable) ; titres ≈ 6,5 % H, mot clé ambre ; sous-titres gris ≈ 2,2 % H ; « AI Arena » ≈ 10 % H ; capitales teal très espacées (≈ 0,3 em) ; mono pour le JSON.",
+    "texture": "Lueurs douces : halo or autour de l'icône, bordures actives lumineuses à la couleur du modèle, ombres portées douces sous les cartes et les appareils ; flou gaussien réservé aux sorties de scène ; micro-étoiles fixes sur le fond ; aucun grain ni bruit.",
+    "style": "UI produit sombre, accent ambre",
+    "coherence": "Système très tenu : même fond, même gabarit de chapitre (pastille numérotée, titre bicolore, sous-titre gris), même transition, et couleurs de marque des modèles réutilisées des avatars aux bordures et aux points voyageurs. Rien ne casse le système ; c'est l'uniformité qui devient monotone (8 fois le même enchaînement construction → tenue → plongée floue)."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "120 BPM net (clarté 8,55), musique quantifiée à ±10 ms sur une grille de 0,5 s partant de t = 0. Aucune coupe franche : 9 blocs reliés par la même plongée floue (11 im) suivie de 6 à 9 im de fond vide ; la première image vide tombe sur un temps aux 8 transitions (5,5 / 12,5 / 21,5 / 29,5 / 39,0 / 46,5 / 53,0 / 59,0 s). À l'intérieur des chapitres le tempo visuel est libre : coups de gomoku toutes les 12,5 im (0,417 s, soit 144 par minute contre 120 temps), fondus d'écran du portable toutes les 1,2 s, carrousel continu de 6,6 s. Densité faible : 64 % d'images statiques, tenues de 2,2 s (intro, 3,0-5,2 s), 4,5 s (41,6-46,1 s, seule la vignette MP4 bouge) et 3,5 s (outro). Rythme de démo produit, pas de typographie cinétique : un titre par chapitre, puis le contenu se construit en 1 à 3 s et attend.",
+    "timeline": [
+      {"t": "0:00.27-0:00.60", "what": "L'icône d'app grossit de 0,3 à 1 en pivotant de −20° à 0°, halo or", "technique": "pop-in avec rotation (f8-f18)"},
+      {"t": "0:00.6-0:02.0", "what": "Trois anneaux or s'élargissent et s'effacent autour de l'icône", "technique": "anneaux d'onde"},
+      {"t": "0:01.07-0:01.53", "what": "« AI Arena » s'écrit une lettre toutes les 2 im", "technique": "révélation lettre à lettre"},
+      {"t": "0:01.67-0:02.6", "what": "Reflet or qui balaie le titre, « LLM GAME BATTLES » en teal", "technique": "balayage doré (sheen)"},
+      {"t": "0:02.6-0:05.17", "what": "Slogan chinois en fondu puis tenue de 2,2 s", "technique": "temps mort"},
+      {"t": "0:05.17-0:05.8", "what": "Plongée floue, fond vide à 5,5 s, souffle et entrée de la batterie", "technique": "transition sur le temps + drop"},
+      {"t": "0:05.8-0:07.4", "what": "Chapitre 01 : titre puis 11 cartes modèles en cascade", "technique": "stagger 3 im"},
+      {"t": "0:08.4-0:10.6", "what": "Chaque carte s'allume à sa couleur de marque, puis pastille « modèle personnalisé »", "technique": "appel nominal (highlight sweep)"},
+      {"t": "0:12.13-0:13.6", "what": "Transition, chapitre 02, cartes de jeux qui entrent par la droite", "technique": "plongée floue + entrée ease-out"},
+      {"t": "0:13.9-0:20.6", "what": "Carrousel de 7 jeux, la carte centrale grossit et se borde d'or", "technique": "carrousel à focus central"},
+      {"t": "0:21.13-0:22.3", "what": "Transition, chapitre 03, fenêtre « state.json »", "technique": "plongée floue"},
+      {"t": "0:22.5-0:25.0", "what": "JSON tapé ; à 24,1 s six courbes en pointillés partent vers six modèles", "technique": "machine à écrire + éventail"},
+      {"t": "0:25.33-0:26.6", "what": "Trois garanties ✓ ✓ ✗ en fondu, la première pile sur 25,5 s", "technique": "liste en cascade"},
+      {"t": "0:26.6-0:29.1", "what": "Seuls les points voyagent sur les courbes", "technique": "temps mort relatif"},
+      {"t": "0:29.13-0:30.4", "what": "Transition, chapitre 04, plateau de gomoku et cartes joueurs", "technique": "fondu ease-out 14 im"},
+      {"t": "0:30.77-0:36.67", "what": "15 coups alternés toutes les 0,417 s, pensée écrite en direct", "technique": "partie en direct + streaming"},
+      {"t": "0:37.37-0:38.6", "what": "Trait or sur 5 pierres, bandeau « 黑方胜 · 五连 », badge WIN", "technique": "récompense (payoff)"},
+      {"t": "0:38.6-0:40.0", "what": "Transition, chapitre 05, journal des parties en cascade", "technique": "plongée floue + stagger"},
+      {"t": "0:40.6-0:41.6", "what": "Rapport PDF puis vignette MP4 qui tombent en tournant", "technique": "drop-in avec rotation"},
+      {"t": "0:41.6-0:46.1", "what": "Tableau figé 4,5 s", "technique": "temps mort"},
+      {"t": "0:46.1-0:47.6", "what": "Transition, chapitre 06, trois sièges et formulaire", "technique": "plongée floue"},
+      {"t": "0:48.1-0:51.5", "what": "Formulaire rempli, siège 1 qui se retourne en « Jev 1.13 », bouton vert sur 51,5 s", "technique": "UI simulée + flip Y"},
+      {"t": "0:52.6-0:54.5", "what": "Transition, chapitre 07, portable puis iPhone", "technique": "maquettes d'appareils"},
+      {"t": "0:55.4-0:58.07", "what": "L'écran du portable change de jeu toutes les 1,2 s", "technique": "fondu enchaîné"},
+      {"t": "0:58.6-1:01.5", "what": "Transition, icône, « AI Arena », slogan, pastille URL, plateformes", "technique": "plan final (end card)"},
+      {"t": "1:01.5-1:05.47", "what": "Tenue 3 s puis fondu au noir de 1 s", "technique": "fin"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Planches micro : les 4 sorties floues (microM-005, -007, -008, -009) démarrent ≈ 0,4 s avant un temps et la première image vide tombe sur la barre bleue à ±1 im (f1170, f1395, f1590, f1770) ; le souffle mesuré (bruit 5-10 kHz) culmine sur ces images (39,021 / 46,521 / 53,023 / 59,014 s). Bilan : 8 transitions sur 8 sur un temps, chacune avec souffle ; la batterie entre à 5,5 s pile sur la 1re transition, le charleston en doubles croches juste après la 2e (dès 13,0 s), la musique retombe à 59 s pour le plan final. Éléments posés à la demi-seconde aussi sur un temps : balayage 8,5 s, coche 25,5 s, sièges 47,5 s, bouton vert 51,5 s, fondu final 64,5 s. Gestes internes hors grille : coups de gomoku 5/15 à ±1 im d'un temps ou demi-temps (hasard ≈ 40 % à 30 im/s), fondus d'écran 0/3, plateau et PDF à +3 im, carrousel en tween continu (ses changements de focus tombent tous les 2,5 temps par hasard, microM-001 à -003). L'indice automatique (« aucune synchro », p corrigé 0,22) rate les transitions car leurs vides n'ont pas de mouvement.",
+    "synced": ["coupes", "drop", "apparitions"],
+    "style_match": "Électro 4/4 à 120 BPM, propre et synthétique : colle au ton « tech premium », mais plus énergique que l'image, lente et souvent figée.",
+    "how_built": "Probable bande-son synthétisée en code sur la même timeline que l'image : tempo 120 BPM = 1 temps toutes les 0,5 s, attaques quantifiées à ±10 ms depuis t = 0, sections (intro douce, batterie, retombée finale) et souffles de bruit placés aux bornes de chapitre. La synchro vient de cette horloge commune, pas d'un calage geste par geste : les animations internes sont minutées en secondes libres (0,417 s, 1,2 s) et dérivent par rapport aux temps. Le prompt ne parle pas de musique."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Plongée floue vers le fond, vide sur le temps",
+      "name_en": "blur-out dip to background",
+      "t": "0:38.60-0:39.50",
+      "frames": "f1158-f1185",
+      "fps": 30,
+      "mechanics": "Toute la scène sort en 11 im (0,37 s) : flou gaussien 0 → ≈ 10 px, opacité 1 → 0, échelle 1 → ≈ 0,97, en accélération (ease-in : l'énergie par image monte de 0,4 à 9). Puis 6 à 9 im (0,2-0,3 s) de fond seul ; la première image vide (f1170 = 39,0 s) tombe sur le temps. Entrée : pastille de section à +5 im, titre en flou → net + fondu en 6 im à +9 im. Même gabarit aux 8 changements de chapitre (5,5 / 12,5 / 21,5 / 29,5 / 39,0 / 46,5 / 53,0 / 59,0 s).",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f1168.jpg, microM-007-move-f1393.jpg, microM-008-move-f1588.jpg, microM-009-move-f1768.jpg",
+      "illus": {"from": 1158, "to": 1185, "n": 6}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Souffle sur chaque changement de chapitre",
+      "name_en": "whoosh on scene change",
+      "t": "0:38.75-0:39.47",
+      "frames": "f1163-f1184",
+      "fps": 30,
+      "mechanics": "Bruit large bande (5-10 kHz) qui monte en 0,27 s (38,754 → 39,021 s), culmine à +25 dB au-dessus de la médiane exactement sur la première image vide, puis décroît en 0,45 s. Mesuré identique aux 8 transitions : pics à 5,526 / 12,527 / 21,525 / 29,524 / 39,021 / 46,521 / 53,023 / 59,014 s, soit à ±1 im de l'image vide. La montée du souffle recouvre la sortie floue : le son « aspire » l'image.",
+      "verdict": "reprendre",
+      "evidence": "mesure audio (bande 5-10 kHz) + microM-005-move-f1168.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Musique découpée sur les chapitres",
+      "name_en": "scene-structured soundtrack",
+      "t": "0:00-1:05.47",
+      "frames": "f0-f1964",
+      "fps": 30,
+      "mechanics": "Électro 4/4 à 120 BPM exactement, attaques à ±10 ms de la grille de 0,5 s depuis t = 0. Intro douce (RMS −25 dB : nappe et carillon) pendant le logo ; grosse caisse et basse entrent à 5,5 s, pile sur la 1re transition (+11 dB) ; frappes aiguës toutes les 2 s (7,5 / 9,5 / 11,5 s, claps probables) puis charleston en doubles croches dès 13,0 s, juste après la 2e transition ; texture qui change encore à 21,5 / 29,5 / 39 / 53 s ; retombée à 59 s pour le plan final, fondu 60-65,5 s.",
+      "verdict": "reprendre",
+      "evidence": "mesure audio (onsets par bande, RMS par seconde)"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Timeline sur une grille de 0,5 s = 1 temps à 120 BPM",
+      "name_en": "half-second timeline grid",
+      "t": "0:05.5-1:04.5",
+      "frames": "f165-f1935",
+      "fps": 30,
+      "mechanics": "Chapitres de 7 / 9 / 8 / 9,5 / 7,5 / 6,5 / 6 s, bornes à x,0 ou x,5 s ; à 120 BPM un temps dure 0,5 s, donc chaque borne tombe sur un temps sans calcul. Les titres arrivent tous 9 im après la borne (1,5 im après le demi-temps). Les éléments posés à la demi-seconde (balayage 8,5 s, pastille 10,5 s, coche 25,5 s, sièges 47,5 s, bouton vert 51,5 s, fondu final 64,5 s) tombent eux aussi sur un temps ; ceux minutés autrement (0,417 s, 1,2 s) dérivent.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg + mesures de mouvement image par image"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Icône qui pivote en grossissant + anneaux d'onde",
+      "name_en": "logo spin-in with ripple rings",
+      "t": "0:00.27-0:02.0",
+      "frames": "f8-f60",
+      "fps": 30,
+      "mechanics": "Icône (carré arrondi bleu nuit #1B2142, carte au carreau rouge, deux pions noir et blanc) : échelle ≈ 0,3 → 1 et rotation ≈ −20° → 0° en 10 im (f8-f18, 0,33 s), ease-out sans dépassement visible ; halo or diffus derrière. Trois anneaux or de 1 px partent du logo, s'élargissent jusqu'à ≈ 2,5 × sa taille et s'effacent en ≈ 1,5 s, décalés d'environ 5 im. Première attaque musicale à 0,44-0,48 s, 3 im avant que l'icône se pose.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre lettre à lettre puis reflet doré",
+      "name_en": "per-letter reveal + gold sheen",
+      "t": "0:01.07-0:02.80",
+      "frames": "f32-f84",
+      "fps": 30,
+      "mechanics": "« AI Arena » apparaît une lettre toutes les 2 im (0,067 s) : chaque lettre naît grise et un peu basse puis devient blanche (8 signes en 14 im). 0,15 s plus tard, un reflet or-crème (#F3D9A4 probable) balaie le mot de gauche à droite en ≈ 0,8 s (1,67 → 2,47 s). « LLM GAME BATTLES » (teal, capitales espacées ≈ 0,3 em, ≈ 1,5 % H) en fondu de 4 im à 1,87 s ; slogan chinois (mot clé ambre) en fondu de 6 im à 2,6 s.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Gabarit de chapitre : pastille numérotée, titre bicolore, sous-titre",
+      "name_en": "numbered section header",
+      "t": "0:05.8-0:59.0",
+      "frames": "f174-f1770",
+      "fps": 30,
+      "mechanics": "Chaque chapitre : pastille « 0X · nom » (≈ 1,3 % H, texte ambre, contour ambre 1 px, coins ronds) à ≈ 4 % du haut ; titre centré gras ≈ 6,5 % H et ≈ 45 % de la largeur ; sous-titre gris ≈ 2,2 % H ; contenu dans la bande 20-90 % de la hauteur, souvent 3 colonnes. Au chapitre 04 le titre passe en haut à gauche pour laisser la place au plateau et aux deux colonnes de pensée.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg à overview-10.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Mot clé en ambre dans un titre blanc",
+      "name_en": "two-tone headline",
+      "t": "0:05.8-1:01.0",
+      "frames": "f174-f1830",
+      "fps": 30,
+      "mechanics": "Titres chinois en sans très grasse (PingFang SC / Noto Sans SC Black probable) blanc #F4F4F5 ; la seconde moitié de chaque titre (« 同台竞技 », « 一个竞技场 », « 同一套提示词 », « 每一步都看得见 »…) passe en ambre #F5B83D. Même règle dans le slogan final (« 更聪明、更快 »). Interlettrage normal, pas de capitales latines sauf « AI ».",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Grille de 11 cartes en cascade puis appel nominal",
+      "name_en": "staggered grid + roll-call highlight",
+      "t": "0:06.43-0:10.1",
+      "frames": "f193-f303",
+      "fps": 30,
+      "mechanics": "11 cartes modèles (≈ 23 % × 11 % du cadre, fond #131A2A, bord #263048, avatar rond à la couleur de la marque, nom gras + éditeur gris) entrent en fondu + montée de ≈ 2 % H, décalage ≈ 3 im, 30 im au total, en rangées 4-4-3. De 8,4 à 10,1 s, chaque carte s'allume dans l'ordre de lecture (bordure et lueur à sa couleur de marque), ≈ 4-5 im d'écart, chaque lueur dure ≈ 0,4 s : plusieurs cartes brillent en même temps comme une vague.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carrousel de jeux à focus central",
+      "name_en": "center-focus carousel",
+      "t": "0:13.10-0:20.60",
+      "frames": "f393-f618",
+      "fps": 30,
+      "mechanics": "7 cartes de jeux (Dou Dizhu, Texas Hold'em, Blackjack, xiangqi, échecs, gomoku, othello) espacées de ≈ 655 px (34 % de la largeur). Entrée par la droite en ≈ 15 im ease-out, puis un seul tween ease-in-out de 6,6 s (13,9 → 20,5 s) qui fait défiler 6 intervalles : vitesse de pointe ≈ 1 500 px/s vers 17,2 s, ≈ 2,6 × la moyenne (power2/power3.inOut probable). La carte la plus proche du centre est ≈ +17 % plus grande, bordée d'or et plus claire, les autres assombries ; 7 pastilles de pagination, l'active en tiret or.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f473.jpg, microM-002-move-f511.jpg, microM-003-move-f549.jpg, overview-03.jpg, overview-04.jpg",
+      "illus": {"from": 461, "to": 566, "n": 6}
+    },
+    {
+      "cat": "code",
+      "name_fr": "JSON tapé dans une fenêtre d'éditeur",
+      "name_en": "typed JSON in editor window",
+      "t": "0:22.20-0:24.97",
+      "frames": "f666-f749",
+      "fps": 30,
+      "mechanics": "Fenêtre façon macOS (3 pastilles colorées, onglet « prompt · state.json », numéros de ligne gris) en fondu à 22,2 s, ≈ 30 % de la largeur à gauche ; l'état de partie (jeu, couleur, plateau résumé, coups légaux, conséquences de chaque coup, objectif « WIN ») se tape à ≈ 50-60 caractères/s, ≈ 11 lignes en 2,5 s, clés claires et chaînes vert-teal (probable).",
+      "verdict": "adapter",
+      "evidence": "overview-04.jpg, overview-05.jpg, extra-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Éventail : une même entrée vers 6 modèles",
+      "name_en": "one-to-many fan-out diagram",
+      "t": "0:24.10-0:25.0",
+      "frames": "f723-f750",
+      "fps": 30,
+      "mechanics": "Depuis un point au bord droit de la fenêtre JSON, 6 courbes de Bézier en pointillés se dessinent vers la droite en ≈ 4 im ; les puces modèles (GPT-6 Sol, Claude Opus 5.5, Gemini 3.1 Pro, Kimi K3, DeepSeek V4 Pro, Jev 1.13) arrivent en fondu en colonne à droite, décalées de ≈ 2,5 im (f727 → f741). Ensuite des points lumineux à la couleur de chaque modèle voyagent en boucle sur les courbes jusqu'à la fin du chapitre : le schéma dit « même donnée pour tous » sans texte.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-05.jpg",
+      "illus": {"from": 723, "to": 748, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Liste de garanties ✓ ✓ ✗",
+      "name_en": "check / cross list",
+      "t": "0:25.33-0:26.6",
+      "frames": "f760-f798",
+      "fps": 30,
+      "mechanics": "Sous le schéma, trois mentions en fondu de 5 im : deux coches vertes (prompt anglais unique, plateau complet + coups légaux) puis une croix rouge (pas de score, pas de coup conseillé). La première finit pile sur le temps de 25,5 s (f765), les suivantes ≈ 0,4-0,5 s plus tard.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Partie de gomoku en direct avec pensée en streaming",
+      "name_en": "live match with streamed reasoning",
+      "t": "0:29.90-0:36.70",
+      "frames": "f897-f1100",
+      "fps": 30,
+      "mechanics": "Plateau 15 × 15 en bois (#D9A65A, ≈ 38 % de la largeur, 66 % de la hauteur) en fondu ease-out de 14 im (40 % d'opacité dès la 1re image). Cartes joueurs à droite décalées de 4 im. 15 coups à intervalle fixe de 12,5 im (0,417 s) : chaque pierre apparaît en 1 image, sans rebond, et la carte du joueur actif (Claude orange / GPT vert) s'allume avec un badge « 思考中 1.2s ». La pensée s'écrit caractère par caractère, en chinois blanc avec traduction anglaise grise dessous.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f898.jpg, overview-06.jpg, overview-07.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Victoire : trait doré + bandeau",
+      "name_en": "win line + banner payoff",
+      "t": "0:37.37-0:38.6",
+      "frames": "f1121-f1158",
+      "fps": 30,
+      "mechanics": "Un trait or vertical traverse les 5 pierres noires alignées (≈ 4 im), un dégradé sombre monte en bas du plateau avec « 黑方胜 · 五连 » en ambre (≈ 4,5 % H) ; à 38,0 s un badge « WIN » ambre remplace le chronomètre sur la carte de Claude. Seul vrai moment de récompense de la vidéo, mais posé hors temps (37,37 s).",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg, microM-005-move-f1168.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Journal des parties en cascade avec une erreur rouge",
+      "name_en": "staggered log rows",
+      "t": "0:39.80-0:41.20",
+      "frames": "f1194-f1236",
+      "fps": 30,
+      "mechanics": "Panneau « 对局记录 » : lignes (avatar, modèle, numéro de coup, vignette de plateau) qui entrent l'une après l'autre en fondu + léger glissement, ≈ 4-5 im d'écart ; une ligne surlignée en rouge porte le badge « 请求超时 » (délai dépassé) : détail de réalisme qui rend la donnée crédible.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f1219.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Rapport PDF qui tombe en tournant",
+      "name_en": "rotating drop-in document",
+      "t": "0:40.60-0:41.13",
+      "frames": "f1218-f1233",
+      "fps": 30,
+      "mechanics": "La page de rapport apparaît à ≈ 120 % d'échelle, tournée de ≈ +8°, à 40 % d'opacité, puis se pose en 15 im (0,5 s) : échelle → 100 %, rotation → ≈ −3° résiduels, opacité → 1. Ease-out fort (expo probable) : ≈ 60 % du mouvement dans les 4 premières images. La vignette MP4 (« REC 00:42 », barre de progression rouge) suit avec le même geste 18 im plus tard (f1236). Départ 2 im après le temps de 40,53 s.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f1219.jpg",
+      "illus": {"from": 1217, "to": 1233, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Formulaire rempli en direct",
+      "name_en": "simulated form fill",
+      "t": "0:48.10-0:51.53",
+      "frames": "f1443-f1546",
+      "fps": 30,
+      "mechanics": "Le bouton ambre « 开始对局 » apparaît sous les sièges (f1443) ; l'anneau de focus ambre passe de champ en champ (URL, jeton, modèle) ; le texte se tape à ≈ 20-25 caractères/s, le jeton s'affiche masqué « sk-•••• » ; à 51,5 s, pile sur un temps, le bouton « 保存 » devient vert « ✓ 已添加到 AI 名单 ».",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Carte de siège qui se retourne",
+      "name_en": "Y-axis card flip",
+      "t": "0:49.70-0:50.13",
+      "frames": "f1491-f1504",
+      "fps": 30,
+      "mechanics": "Le siège 1 « 你 » (joueur humain) pivote sur l'axe vertical en ≈ 13 im (0,43 s) : à mi-course sa largeur tombe à ≈ 30 % ; il revient en « Jev 1.13 » (avatar teal) quand le champ jeton est rempli. Le bouton devient en même temps « 开始对局 · 全 AI 观战模式 ».",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg (vignette 0:50.00)"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Portable puis iPhone, écrans qui se fondent",
+      "name_en": "device mockups with screen crossfades",
+      "t": "0:53.80-0:58.07",
+      "frames": "f1614-f1742",
+      "fps": 30,
+      "mechanics": "MacBook (barre d'adresse ai-arena.ggemu.com) qui monte + fondu en 6 im, centré ; à 54,2 s il glisse de ≈ 7 % vers la gauche pendant que l'iPhone entre à droite et que l'écran passe à un autre jeu (8 im, trois mouvements simultanés). Puis l'écran du portable change de jeu toutes les 1,2 s par fondu enchaîné linéaire de 9 im (55,4 / 56,6 / 57,8 s), hors des temps ; l'iPhone joue une partie d'othello avec scores.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg, overview-10.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Fond nuit étoilée à halo chaud",
+      "name_en": "starry navy background with warm glow",
+      "t": "0:00-1:05.47",
+      "frames": "f0-f1964",
+      "fps": 30,
+      "mechanics": "Fond quasi noir bleuté (#0A0E17) avec halo chaud diffus en haut à gauche (#3A2A14, ≈ 30 %), halo bleu en bas à droite (#1A2340) et micro-points d'étoiles. Fixe pendant 65 s : il ne respire pas et ne participe à aucune transition.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-11.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Halo doré et lueurs d'état",
+      "name_en": "soft glow accents",
+      "t": "0:00.3-1:05.0",
+      "frames": "f10-f1950",
+      "fps": 30,
+      "mechanics": "Lueur externe or (#C9973B, rayon ≈ 25 px) autour de l'icône d'app ; bordures actives lumineuses à la couleur du modèle ou en or (carte focalisée du carrousel, joueur actif) ; ombres portées douces sous les cartes et les appareils ; flou gaussien réservé aux sorties.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Couleurs de marque par modèle réutilisées partout",
+      "name_en": "brand color coding",
+      "t": "0:06.4-0:58.0",
+      "frames": "f193-f1740",
+      "fps": 30,
+      "mechanics": "Chaque modèle garde sa couleur (GPT vert #10A37F, Claude orange #D97757, Gemini bleu #4C7DF0, Kimi violet #5B5BD6, DeepSeek bleu #4D6BFE, MiniMax rose #E2457A, Jev teal #14B8A6, valeurs probables) : avatars, bordures de l'appel nominal, points voyageurs de l'éventail, cartes joueurs du gomoku, journal. Lien visuel entre chapitres sans légende.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg, overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre de chapitre en flou → net",
+      "name_en": "blur-in headline",
+      "t": "0:39.30-0:39.50",
+      "frames": "f1179-f1185",
+      "fps": 30,
+      "mechanics": "Le titre passe de flou (≈ 6 px) et ≈ 30 % d'opacité à net et opaque en 6 im (0,2 s), sans déplacement ; la pastille de section le précède de 4 im ; le sous-titre suit ≈ 0,5 s plus tard. Identique aux 7 chapitres.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f1168.jpg, microM-007-move-f1393.jpg, microM-008-move-f1588.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "7 chapitres numérotés entre deux plans logo",
+      "name_en": "numbered feature chapters",
+      "t": "0:00-1:05.47",
+      "frames": "f0-f1964",
+      "fps": 30,
+      "mechanics": "Intro logo 5,5 s → 01 参赛选手 (modèles) 7 s → 02 游戏大厅 (jeux) 9 s → 03 公平竞技 (même prompt) 8 s → 04 实时对局 (partie en direct) 9,5 s → 05 对局记录 (rapports) 7,5 s → 06 自由组局 (modèle perso) 6,5 s → 07 全平台 (appareils) 6 s → plan final 6,5 s. Une fonction par chapitre, toujours bâti titre → contenu → tenue ; aucune accroche avant le logo.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg à overview-11.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Plan final : icône, slogan, URL",
+      "name_en": "end card CTA",
+      "t": "0:59.20-1:05.47",
+      "frames": "f1776-f1964",
+      "fps": 30,
+      "mechanics": "Icône qui grossit de 0 à 1 en 10 im avec halo ; « AI Arena » à 59,6 s ; slogan « 看看哪个 AI 更聪明、更快 » (mot clé ambre) à 60,7 s ; pastille URL ambre pleine (#F2B33D, texte sombre mono) à 61,0 s ; plateformes « Web · iPhone · Mac App Store » à 61,5 s ; tenue 3 s puis fondu au noir de 30 im (64,5 → 65,5 s, départ sur un temps).",
+      "verdict": "adapter",
+      "evidence": "microM-009-move-f1768.jpg, overview-11.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Construction puis longue tenue",
+      "name_en": "build-then-hold pacing",
+      "t": "0:41.57-0:46.10",
+      "frames": "f1247-f1383",
+      "fps": 30,
+      "mechanics": "Chaque chapitre construit son contenu en 1 à 3 s puis attend : 3,0-5,2 s (2,2 s), 26,6-29,1 s (seuls les points bougent), 41,6-46,1 s (4,5 s, seule la vignette MP4 bouge), 61,0-64,5 s (3,5 s). 64 % des images sont statiques (seuil 0,4 s) : à l'opposé du rythme 1600 (un changement toutes les 0,5-1 s).",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg, overview-01.jpg, overview-08.jpg, overview-11.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« 本项目 » (ce projet) : la vidéo a été faite dans le dépôt de l'application. Claude y a puisé un contenu exact (11 modèles nommés, 7 jeux, export PDF/MP4, modèle personnalisé, URL, icône) : interface crédible sans rien décrire dans le prompt."},
+    {"kind": "direction", "insight": "« 像是专业的产品介绍宣传片 » (comme un film promo produit professionnel) suffit à déclencher le gabarit par défaut : fond bleu nuit, accent ambre, pastilles numérotées, titres bicolores, une fonction par chapitre, plan final avec URL."},
+    {"kind": "structure", "insight": "Sans durée ni découpage imposés, le modèle fait 1 chapitre par fonction (7) + intro + outro = 65 s, chacun construit puis figé : la longueur vient de l'inventaire des fonctions, pas d'un rythme voulu."},
+    {"kind": "build", "insight": "« 最后要生成 16:9 的mp4 » : rendu HTML image par image en 1920 × 1080 à 30 im/s ; tout est reconstruit en DOM (plateaux, cartes, formulaires, appareils), aucune capture d'écran réelle, ce qui garde la netteté et la cohérence."},
+    {"kind": "other", "insight": "La musique n'est pas demandée mais existe, très probablement synthétisée en code à 120 BPM avec un souffle par transition : le calage des chapitres sur les temps vient du partage d'une même horloge (0,5 s = 1 temps), pas d'une consigne."},
+    {"kind": "qa", "insight": "Aucune consigne de lisibilité ni de rythme : textes à ≈ 2 % de la hauteur, 64 % d'images figées et une transition unique. Il aurait fallu fixer une taille minimale de texte, une durée cible et « un changement par seconde, gestes posés sur les temps »."}
+  ],
+  "steal": [
+    "Musique à 120 BPM et timeline en demi-secondes : toute borne de scène posée sur x,0 ou x,5 s tombe sur un temps, sans calcul.",
+    "Changement de chapitre : sortie floue ease-in 0,37 s, 0,2-0,3 s de vide dont la 1re image est sur le temps, souffle dont le pic tombe sur cette image.",
+    "Carrousel : un seul tween ease-in-out sur toute la bande ; la carte la plus proche du centre grossit de ≈ 17 % et prend une bordure or.",
+    "« Même entrée pour tous » : éventail de courbes pointillées depuis un point, cibles en cascade de 2,5 im, points colorés qui circulent en boucle sur les tracés.",
+    "Document qui se pose : départ à 120 %, +8°, 40 % d'opacité ; arrivée en 15 im ease-out avec 3° d'inclinaison résiduelle."
+  ],
+  "flaws": [
+    "64 % d'images figées : tenues de 2,2 s, 4,5 s et 3,5 s, très loin d'un changement toutes les 0,5-1 s.",
+    "Une seule transition (flou + vide + titre) répétée huit fois, aucune caméra, aucun passage motivé entre chapitres.",
+    "Textes trop petits : sous-titres ≈ 2,2 % de la hauteur, légendes et UI denses, illisibles sur téléphone.",
+    "Gestes internes hors musique : pierres toutes les 0,417 s, fondus d'écran toutes les 1,2 s, posés sans impact ni rebond.",
+    "Recette générique « UI sombre + accent ambre + pastille numérotée + titre bicolore », sans idée graphique propre."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : 30 im/s, peu de mouvement (64 % statique) et des gestes simples déjà lisibles sur les planches. Seule la méthode son (horloge commune 120 BPM + souffle par transition) vaut d'être retenue, et elle se mesure sur l'audio, pas image par image."
+  }
+}

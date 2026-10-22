@@ -1,0 +1,356 @@
+{
+  "slug": "nikolajankovic-ce4ff4",
+  "title": "DeFi Saver stop-motion explainer",
+  "handle": "@_nikolajankovic",
+  "family": "explainer",
+  "craft": 4,
+  "craft_reason": "Système stop-motion graphite d'une cohérence rare (tremblé image par image, cartes jetées, chiffres justes, fil rouge du thermomètre), mais texte minuscule, cadre vide et aucune bande-son.",
+  "summary": "Explainer muet de 58 s à 12 i/s où DeFi Saver se raconte à la première personne : une nuit de krach à 3 h, la réduction automatique de dette, puis ses autres outils (Loan Shifter, recettes, trailing stop, simulation). Tout est dessiné au crayon sur papier, sous-titré par une bande de papier scotchée. Force : métaphores claires et données exactes. Faiblesse : échelle trop petite, lecture obligatoire.",
+  "prompt_vs_result": [
+    "Deux lignes : animation stop-motion dessinée à la main ; récit à la première personne où le produit DeFi Saver s'explique lui-même. Ni durée, ni son, ni marque, ni format imposés.",
+    "Claude a choisi le crayon graphite sur papier vignetté, 12 i/s avec tremblé, les sous-titres sur bande scotchée, le thermomètre du ratio, la nuit de krach à 3 h, le crayon « moi » face à la clé « toi », l'archipel des 16 protocoles.",
+    "Le récit est bien cadré par « 1re personne ». Il aurait fallu préciser : voix off ou musique, taille minimale du texte pour mobile, couleurs et logo de la marque, durée cible et nombre de fonctions à montrer."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#E7EAE2", "role": "fond papier au centre"},
+      {"hex": "#BCBFB9", "role": "vignettage des coins"},
+      {"hex": "#32332E", "role": "trait graphite et texte"},
+      {"hex": "#4B4BB0", "role": "bleu stylo : annotations, « your line », valeurs positives (probable)"},
+      {"hex": "#B23A3E", "role": "rouge : seuil de liquidation, krach, trailing stop (probable)"},
+      {"hex": "#E6DC9E", "role": "surligneur jaune translucide, lune, soleil"},
+      {"hex": "#EDDA7C", "role": "crayon jaune (seul objet coloré en aplat)"},
+      {"hex": "#F6F7EF", "role": "bande de sous-titre et cartes"},
+      {"hex": "#DAD6B5", "role": "ruban adhésif"},
+      {"hex": "#1E2226", "role": "bandeau sombre du bas (15 % de la hauteur)"}
+    ],
+    "type": "Manuscrite d'imprimerie arrondie (Patrick Hand ou Short Stack probable) pour titres et sous-titres, 2,5-7 % de la hauteur, interlettrage large ; machine à écrire (Courier/Special Elite probable) pour cartes et adresses ; manuscrite fine bleue pour annotations.",
+    "texture": "Papier gris-vert avec vignettage radial marqué ; trait graphite irrégulier ; hachures dans le thermomètre et la couverture du lit ; cartes blanches à fine ombre portée ; morceaux de scotch beige translucide ; surligneur jaune en halo flou ; tremblé (boil) indépendant de chaque élément à chaque image ; pas de flou de mouvement (12 i/s pur).",
+    "style": "Carnet graphite stop-motion, explicatif intimiste",
+    "coherence": "Le système tient par quatre règles : un seul matériau (crayon sur papier), une seule cadence (12 i/s avec tremblé), un code couleur sémantique (bleu = toi/positif, rouge = danger, jaune = surligné) et un élément persistant (thermomètre) qui traverse les scènes. Rien ne le casse ; seul le crayon jaune en aplat sort du registre, volontairement."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "un-peu",
+    "notes": "Aucune piste audio (audio=no). 12 i/s natifs, 696 images. Le détecteur ne voit aucune coupe car le papier reste identique, mais l'image montre 13 scènes séparées par un effacement total en 1 image : 3,0 s (f36), 8,0 (f96), 14,0 (f168), 20,0 (f240), 27,0 (f324), 32,0 (f384), 34,5 (f414), 36,5 (f438), 38,75 (f465), 41,0 (f492), 46,0 (f552), 52,0 (f624). Durées de scène 2 à 7 s, moyenne 4,5 s, réglées sur la longueur de la phrase sous-titrée (la phrase se tape à ≈ 3 caractères par image, ≈ 35 car./s, puis reste affichée). Toutes les images diffèrent (≈ 25 000 à 30 000 pixels changent entre deux images en plein maintien, f355-f380) : le tremblé empêche tout temps mort absolu. Un nouvel élément arrive toutes les 0,25 à 0,5 s pendant les phases de construction. Maintiens « rien de neuf, seulement le tremblé » : 12,5-14,0 s (1,5 s), 18,9-20,0 s (1,1 s), 30,0-32,0 s (2 s), 54,5-56,5 s ; arrêt complet (tremblé coupé) 56,5-57,92 s (1,5 s) sur la carte de fin.",
+    "timeline": [
+      {"t": "0:00-0:03", "what": "Titre « Through DeFi Saver's eyes », soulignement bleu tracé de gauche à droite, sous-titre « a stop-motion in graphite · 12 frames a second », bande de sous-titre tapée", "technique": "titre manuscrit + tracé progressif (write-on)"},
+      {"t": "0:03-0:08", "what": "« you connected: » puis tuiles d'adresse 0x · 7a3f · … · c2le posées une à une, branches tracées vers 3 boîtes Aave / Spark / Morpho, ellipse jaune autour d'Aave, « let's follow » en bleu", "technique": "cartes jetées + arbre dessiné + surligneur"},
+      {"t": "0:08-0:14", "what": "Carte Aave v3 remplie ligne par ligne, 5 métriques flottantes autour, toutes barrées puis estompées ; thermomètre dessiné, remplissage 231 % → 250 %, ligne bleue 180 %, seuil rouge 120 %", "technique": "barrer pour focaliser + métaphore thermomètre"},
+      {"t": "0:14-0:20", "what": "Nuit : lune, étoiles, dormeur avec « zzz » ; horloge 03:12 → 03:47, courbe ETH tracée en chute, « now $3,000 → $2,160 », ratio 250 % → 180 % ; le thermomètre a survécu au changement de scène", "technique": "compteurs liés + élément persistant"},
+      {"t": "0:20-0:27", "what": "Halo jaune sur la ligne 180 %, boîte pointillée « one transaction » tracée côté par côté, 3 cartes jetées (withdraw, swap, repay) reliées par des flèches, ratio remonte 180 → 193 → 220 %, « no liquidation penalty, just a smaller loan »", "technique": "cartes jetées + flèches + compteur"},
+      {"t": "0:27-0:32", "what": "Matin : soleil remplace la lune, tasse fumante, carte Aave réécrite avec 8.15 ETH / 8,000 USDC / ratio 220 %, coche bleue", "technique": "cycle nuit/jour narratif"},
+      {"t": "0:32-0:34.5", "what": "« Loan Shifter » : deux boîtes Compound v3 et Aave v3 tracées, puce « 10 ETH · 12k USDC » glisse le long d'un arc pointillé", "technique": "objet qui voyage sur un tracé"},
+      {"t": "0:34.5-0:36.5", "what": "« Recipe creator » : conteneur pointillé, 4 cartes jetées (flash loan, swap, supply, borrow)", "technique": "cartes jetées en série"},
+      {"t": "0:36.5-0:38.75", "what": "« Hyperliquid perp · trailing stop » : courbe noire montante, escalier rouge pointillé qui suit, retournement, croix « closed, profit kept »", "technique": "graphique explicatif tracé en direct"},
+      {"t": "0:38.75-0:41", "what": "« Simulation mode » : bac à sable pointillé, 3 pièces $ posées en décalé, carte « practice / real money 0 », « no wallet needed, no real funds »", "technique": "décalage de pose (stagger)"},
+      {"t": "0:41-0:46", "what": "Archipel : îles en patates libellées (Aave, Spark, Morpho, Sky, Liquity, Compound, Fluid, crvUSD), vaguelettes, petit bateau qui navigue en laissant un sillage pointillé", "technique": "métaphore carte + trajet"},
+      {"t": "0:46-0:52", "what": "Écran partagé « you | me » : clé et « smart wallet yours » à gauche, gros crayon jaune à droite, « I can't stop a crash. » en rouge + flèche en zigzag descendante", "technique": "métaphore clé / crayon"},
+      {"t": "0:52-0:58", "what": "Retour à la nuit : dormeur, thermomètre 220 %, « DeFi Saver » écrit, « defisaver.com », arrêt sur image final 1,5 s", "technique": "bouclage nuit (bookend) + carte de fin"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Le fichier n'a pas de piste audio (audio=no, aucune barre ni attaque sur les planches). Aucun comptage possible. La bande de sous-titre tient lieu de voix off muette.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le carnet intime à 12 i/s appellerait un piano feutré ou une voix off calme, avec bruits de crayon.",
+    "how_built": "Le prompt ne parlait ni de son ni de voix ; Claude a livré une vidéo sans piste audio et a reporté toute la narration dans des sous-titres tapés."
+  },
+  "techniques": [
+    {
+      "cat": "texture",
+      "name_fr": "Tremblé indépendant par élément",
+      "name_en": "line boil / per-element jitter",
+      "t": "0:29.58-0:31.67",
+      "frames": "f355-f380",
+      "fps": 12,
+      "mechanics": "À chaque image, chaque élément est redessiné avec un décalage aléatoire indépendant de 1 à 4 px (0,1-0,3 % de la largeur) et une micro-rotation : entre f359 et f360, la carte bouge de (-1, +1) px, le thermomètre de (-3, +3), la tasse de (+3, -4). La bande de sous-titre reste fixe (décalage 0, 0). Résultat : 25 000-30 000 pixels changent à chaque image même quand rien de neuf n'arrive.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-move-f365.jpg",
+      "illus": {"from": 360, "to": 371, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence stop-motion 12 i/s en « uns »",
+      "name_en": "12 fps on ones",
+      "t": "0:00-0:58",
+      "frames": "f0-f695",
+      "fps": 12,
+      "mechanics": "Fichier natif à 12 i/s : chaque image est une pose différente (animation « en uns »). Aucun flou de mouvement, aucune interpolation douce : les mouvements avancent par sauts de 2-5 % du cadre. Le titre l'annonce lui-même : « 12 frames a second ».",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f36.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Sous-titre tapé à la machine",
+      "name_en": "typewriter caption",
+      "t": "0:20.00-0:21.00",
+      "frames": "f240-f252",
+      "fps": 12,
+      "mechanics": "La phrase apparaît caractère par caractère, ≈ 3 caractères par image (≈ 35 car./s) : « You » f240, « You drew a line » f244, « You drew a line earlier. When » f249. Une phrase de 83 caractères se tape en ≈ 30 images (2,5 s), puis reste jusqu'à la fin de la scène. Retour à la ligne quand la phrase dépasse 2 lignes de ≈ 60 caractères.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bande de sous-titre en papier scotché",
+      "name_en": "taped paper caption strip",
+      "t": "0:00-0:58",
+      "frames": "f0-f695",
+      "fps": 12,
+      "mechanics": "Bandeau sombre #1E2226 sur les 15 % inférieurs du cadre ; dessus, une bande de papier #F6F7EF de ≈ 80 % de la largeur, à cheval sur la limite papier/bandeau, tenue par deux morceaux de scotch beige inclinés aux coins supérieurs. Texte centré, manuscrite noire ≈ 2,6 % de la hauteur. La bande ne tremble pas (seul élément stable).",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Tracé progressif de ligne",
+      "name_en": "stroke write-on",
+      "t": "0:00.50-0:01.50",
+      "frames": "f6-f18",
+      "fps": 12,
+      "mechanics": "Le soulignement bleu du titre se dessine de gauche à droite : ≈ 15 % de sa longueur à f6, ≈ 55 % à f12, complet à f18, soit 12 images (1 s), progression quasi linéaire. Même procédé pour les branches de l'arbre (≈ 6 images par branche, f59-f66) et la courbe de prix (tracée sur 6 s, f168-f234).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Boîte dessinée côté par côté",
+      "name_en": "box drawn side by side",
+      "t": "0:32.08-0:32.42",
+      "frames": "f385-f389",
+      "fps": 12,
+      "mechanics": "Les rectangles se construisent un côté par image : f385 bord haut, f386 haut + début du côté droit, f387 trois côtés, f388 quatre côtés. 4 images (0,33 s) par boîte, les deux boîtes Compound v3 / Aave v3 en parallèle. Même règle pour la boîte pointillée « one transaction » (f245-f249, 5 images).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f383.jpg",
+      "illus": {"from": 383, "to": 389, "n": 6}
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Effacement total de la page",
+      "name_en": "page clear cut",
+      "t": "0:02.92-0:03.25",
+      "frames": "f35-f39",
+      "fps": 12,
+      "mechanics": "En 1 image, tout le dessin disparaît (f35 → f36) ; la page reste blanche 2-3 images (f36-f38) pendant que le sous-titre suivant commence à se taper, puis le premier élément de la scène s'écrit (f39). Utilisé à chaque changement de scène (12 fois). Pas de gomme, pas de page tournée.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f36.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Élément persistant à travers les scènes",
+      "name_en": "persistent anchor element",
+      "t": "0:11.00-0:32.00",
+      "frames": "f132-f383",
+      "fps": 12,
+      "mechanics": "Le thermomètre du ratio survit à 3 effacements de page (f168, f240, f324) en gardant sa position (tiers droit, ≈ 45 % de la hauteur) et sa valeur, alors que tout le reste disparaît ; la lune survit de 14 à 27 s. Au changement f167 → f168, seule la carte Aave disparaît et la scène de nuit se dessine autour du thermomètre. Il revient à la fin (52 s) pour boucler.",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f164.jpg",
+      "illus": {"from": 164, "to": 170, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Carte jetée qui se pose en tournant",
+      "name_en": "tossed card settle",
+      "t": "0:20.92-0:22.50",
+      "frames": "f251-f270",
+      "fps": 12,
+      "mechanics": "Chaque carte apparaît décalée vers le haut (≈ 3-5 % du cadre) et inclinée de 12-15°, souvent par-dessus la précédente, puis se pose en 3 images : rotation ≈ 15° → 8° → 4° → 0° et descente simultanée (ease-out en paliers). La flèche de liaison apparaît d'un coup à l'image où la carte se pose (f262, f270). Écart entre cartes : 8 images (0,67 s). Même geste pour les tuiles d'adresse (f53-f56) et les étapes de recette (f420-f431).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 251, "to": 270, "n": 8}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Thermomètre du ratio de santé",
+      "name_en": "health-ratio thermometer",
+      "t": "0:11.00-0:13.00",
+      "frames": "f132-f156",
+      "fps": 12,
+      "mechanics": "Tube vertical dessiné (trait f132, bulbe f138), remplissage hachuré qui monte avec une valeur à gauche (231 % f144 → 250 % f150). Deux repères : ligne pleine bleue « your line: 180% » et pointillé rouge « liquidation ~120% ». Hauteur ≈ 45 % du cadre, tiers droit. Le niveau baisse ensuite avec le krach et remonte après remboursement.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteurs liés et calculs justes",
+      "name_en": "linked counters",
+      "t": "0:14.00-0:19.50",
+      "frames": "f168-f234",
+      "fps": 12,
+      "mechanics": "Quatre indicateurs bougent ensemble sur 66 images : horloge 03:12 → 03:47, courbe ETH tracée en dents de scie vers le bas, étiquette « now $3,000 → $2,160 », ratio 250 % → 180 % avec niveau du thermomètre. Les chiffres sont exacts : 10 ETH × 3 000 / 12 000 = 250 % ; × 2 160 = 180 % ; après remboursement 8,15 × 2 160 / 8 000 = 220 %.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg",
+      "illus": {"from": 168, "to": 234, "n": 6}
+    },
+    {
+      "cat": "data",
+      "name_fr": "Barrer les chiffres inutiles pour isoler le bon",
+      "name_en": "strike-through to focus",
+      "t": "0:09.00-0:11.50",
+      "frames": "f108-f138",
+      "fps": 12,
+      "mechanics": "Cinq métriques flottantes (supply APY, borrow APY, liq. threshold, LTV, health factor) s'écrivent autour de la carte une par une (≈ 3 images d'écart), puis sont toutes barrées d'un trait à f126 en même temps que la phrase « I watch one », pâlissent (f132) et disparaissent (f138) pour laisser place au thermomètre.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f119.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Surligneur jaune",
+      "name_en": "highlighter accent",
+      "t": "0:07.00-0:21.00",
+      "frames": "f84-f252",
+      "fps": 12,
+      "mechanics": "Ellipse jaune translucide (#E6DC9E, bords flous) tracée autour de la boîte Aave à f84 pour désigner le sujet ; plus tard un halo jaune horizontal sur la ligne 180 % du thermomètre (f243) quand le ratio la touche. Utilisé deux fois seulement : l'accent reste rare.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur sémantique minimal",
+      "name_en": "semantic accent colors",
+      "t": "0:00-0:58",
+      "mechanics": "Graphite pour tout le dessin ; bleu stylo pour l'utilisateur et le positif (« your line », « yours », « let's follow », ratio 220 %, coche) ; rouge pour le danger (liquidation, krach, stop) ; jaune pour le surlignage et les astres ; un seul objet coloré en aplat (le crayon). Aucune autre couleur en 58 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Trois voix typographiques",
+      "name_en": "three type voices",
+      "t": "0:00-0:58",
+      "mechanics": "Manuscrite d'imprimerie arrondie pour titre (≈ 7 % de la hauteur), sous-titres (≈ 2,6 %) et carte de fin ; machine à écrire pour les données (adresse 0x 7a3f, cartes « withdraw 1.85 ETH », tableau Aave) ; manuscrite fine bleue ou grise pour les annotations (≈ 2 %). Chaque voix a un rôle : narrateur, machine, note en marge.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Cycle nuit → matin et bouclage nocturne",
+      "name_en": "night-to-morning arc with bookend",
+      "t": "0:14.00-0:58.00",
+      "frames": "f168-f695",
+      "fps": 12,
+      "mechanics": "La nuit (lune, étoiles, dormeur « zzz ») porte le danger ; le matin (soleil, tasse fumante) porte la résolution ; la vidéo se termine sur la même nuit avec « Been doing this since 2019. Mostly at night. ». Les astres changent d'un coup au changement de page (f324).",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Narration à la première personne",
+      "name_en": "first-person product voice",
+      "t": "0:00-0:58",
+      "mechanics": "Le produit parle : « I don't see a face. I see what it owns and what it owes. », « I can't stop a crash. I can only react the way you told me to. ». Structure : qui je suis → ce que je regarde → la nuit du krach → ce que je fais → mes autres outils → mes limites → signature. Ton modeste et honnête (limites avouées).",
+      "verdict": "reprendre",
+      "evidence": "overview-09.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Métaphore clé / crayon",
+      "name_en": "key vs pencil metaphor",
+      "t": "0:46.00-0:52.00",
+      "frames": "f552-f623",
+      "fps": 12,
+      "mechanics": "Écran coupé en deux par un pointillé vertical : « you » = une clé + « smart wallet yours » ; « me » = un gros crayon jaune incliné (≈ 35 % de la largeur), seul aplat coloré du film. Le crayon qui dessine tout le film devient le personnage du produit. « I can't stop a crash. » en rouge, puis une flèche en zigzag descendante tracée en 3 images (f604-f606).",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f575.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Archipel des protocoles et bateau",
+      "name_en": "protocol islands map",
+      "t": "0:41.00-0:46.00",
+      "frames": "f492-f551",
+      "fps": 12,
+      "mechanics": "Îles en patates dessinées une par une (f492-f510), libellées Aave, Spark, Morpho, Sky, Liquity, Compound, Fluid, crvUSD, plus de petits îlots et des vaguelettes. Un bateau de ≈ 2 % du cadre avance de 2-3 % de la largeur par image en laissant un sillage pointillé, d'île en île (f516-f551). Illustre « 16 protocols on 5 networks ».",
+      "verdict": "adapter",
+      "evidence": "microM-009-move-f539.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Trailing stop dessiné en direct",
+      "name_en": "live-drawn trailing stop chart",
+      "t": "0:36.50-0:38.75",
+      "frames": "f438-f464",
+      "fps": 12,
+      "mechanics": "Axes tracés, courbe noire qui monte par segments, escalier rouge pointillé qui la suit en dessous ; la courbe se retourne, croise l'escalier, une croix rouge « closed, profit kept » marque la sortie. ≈ 26 images (2,2 s) pour expliquer un ordre conditionnel sans un mot de jargon.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f467.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Objet qui voyage sur un arc pointillé",
+      "name_en": "object travelling along a dotted arc",
+      "t": "0:32.50-0:33.50",
+      "frames": "f390-f402",
+      "fps": 12,
+      "mechanics": "La puce « 10 ETH · 12k USDC » quitte la boîte Compound v3, suit un arc pointillé en ≈ 12 images (1 s) en passant par-dessus l'étiquette, et se pose dans la boîte Aave v3. Illustre « moving a loan to another protocol ».",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Pose décalée d'éléments en série",
+      "name_en": "stepped stagger",
+      "t": "0:39.08-0:39.42",
+      "frames": "f469-f473",
+      "fps": 12,
+      "mechanics": "Les trois pièces « $ » arrivent à 1-2 images d'écart (f469, f471, f473), la carte « practice » à f473. Les métriques flottantes de la scène Aave arrivent à ≈ 3 images d'écart ; les cartes de transaction à 8 images d'écart, calées sur la phrase.",
+      "verdict": "reprendre",
+      "evidence": "microM-008-move-f467.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Durée de scène = durée de la phrase",
+      "name_en": "scene length set by caption",
+      "t": "0:00-0:58",
+      "mechanics": "13 scènes de 2 à 7 s (moyenne 4,5 s). Chaque scène correspond à une phrase du sous-titre : la page s'efface quand une nouvelle phrase commence. Les scènes de fonctions secondaires (Recipe, trailing stop, simulation) ne durent que 2-2,25 s, la scène du krach 6 s et celle de la transaction 7 s.",
+      "verdict": "reprendre"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Titre qui annonce sa propre technique",
+      "name_en": "self-describing title card",
+      "t": "0:00-0:03",
+      "frames": "f0-f35",
+      "fps": 12,
+      "mechanics": "Sous le titre, la ligne « a stop-motion in graphite · 12 frames a second » écrite en manuscrite fine (≈ 1,5 % de la hauteur) décrit le procédé au lieu du produit. Habitude de Claude de signer sa recette technique à l'écran.",
+      "verdict": "cliche",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carte de fin dans la scène",
+      "name_en": "in-scene end card",
+      "t": "0:52.00-0:57.92",
+      "frames": "f624-f695",
+      "fps": 12,
+      "mechanics": "Pas de logo : « DeFi Saver » s'écrit en manuscrite (≈ 4 % de la hauteur) au centre de la scène de nuit (dormeur, thermomètre 220 %), « defisaver.com » dessous (≈ 1,5 %). Le tremblé s'arrête pour les 1,5 dernières secondes (56,5-57,92 s).",
+      "verdict": "adapter",
+      "evidence": "microM-012-move-f668.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« hand-drawn stop-motion » a suffi pour que Claude produise une recette technique complète : 12 i/s en uns, tremblé indépendant par élément, tracés progressifs, papier vignetté, scotch. Le mot « stop-motion » pilote la cadence, pas seulement le look."},
+    {"kind": "structure", "insight": "« explaining yourself in 1st person » a donné une vraie structure de récit (identité → regard → nuit de krach → action → autres outils → limites → signature) et un ton honnête. Une consigne de point de vue vaut mieux qu'une liste de fonctions."},
+    {"kind": "inputs", "insight": "Sans assets de marque ni couleurs, Claude ignore l'identité de DeFi Saver (pas de logo, pas de couleurs) et écrit le nom en manuscrite ; il connaît en revanche les fonctions réelles du produit (Automation, Loan Shifter, Recipe Creator, trailing stop, simulation), probablement de mémoire ou du site."},
+    {"kind": "other", "insight": "Le prompt ne mentionne ni son ni voix : la vidéo n'a pas de piste audio et tout passe par des sous-titres tapés. Pour un explainer, il faut demander explicitement une voix off ou une musique, sinon la lecture devient obligatoire."},
+    {"kind": "qa", "insight": "Les chiffres sont cohérents d'une scène à l'autre (250 % → 180 % → 220 % justes au centime), signe que Claude a calculé le scénario de prêt avant d'animer. À exiger dans tout prompt de data : « les valeurs doivent être mathématiquement cohérentes »."},
+    {"kind": "banned", "insight": "Aucune contrainte de taille de texte : les annotations font 1,5-2 % de la hauteur et les cartes 2-3 %, illisibles sur téléphone. Il aurait fallu fixer un corps minimal (≈ 4 % de la hauteur) et une échelle de cadrage plus serrée."}
+  ],
+  "steal": [
+    "Stop-motion crédible : 12 i/s en uns, chaque élément redessiné avec 1-4 px de décalage aléatoire et micro-rotation par image ; garder les sous-titres stables.",
+    "Carte jetée : apparaît 3-5 % trop haut, inclinée de 12-15°, se pose en 3 images (15° → 8° → 4° → 0°) ; flèche au contact.",
+    "Un élément-fil rouge (jauge, thermomètre) survit aux changements de scène pendant que tout le reste s'efface : continuité gratuite.",
+    "Barrer les chiffres secondaires sur la phrase « je n'en regarde qu'un », puis faire place à l'unique indicateur qui compte.",
+    "Lier horloge, prix, courbe et ratio dans une même scène, avec des valeurs calculées juste : la data raconte le drame toute seule."
+  ],
+  "flaws": [
+    "Texte et dessins trop petits (annotations ≈ 1,5-2 % de la hauteur) : illisible sur mobile, beaucoup de papier vide.",
+    "Aucune piste audio : 58 s de lecture obligatoire, pas de voix ni de bruits de crayon.",
+    "Changements de scène par simple effacement en 1 image, jamais motivés (pas de gomme, pas de page tournée).",
+    "Le titre décrit la technique (« 12 frames a second ») au lieu de promettre quelque chose au spectateur.",
+    "Pas de logo ni de couleurs de marque ; fin figée 1,5 s sans appel à l'action."
+  ],
+  "deep_study": {"worth": false, "why": "Vidéo native à 12 i/s : toutes les images sont déjà visibles sur les planches microscope et extra. L'intérêt est dans le système (tremblé, cartes jetées, fil rouge, données justes), pas dans des courbes fines qu'une étude à 60 i/s révélerait."}
+}

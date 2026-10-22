@@ -1,0 +1,348 @@
+{
+  "slug": "parkerrex-1a54fe",
+  "title": "Token bucket rate limiter",
+  "handle": "@ParkerRex",
+  "family": "explainer",
+  "craft": 3,
+  "craft_reason": "Simulation exacte et lisible, quatre vues couplées (seau, compteur, journal, courbe) sur une palette GitHub sombre cohérente ; mais aucun mouvement composé, tout change en 1 image, et 6 s figées à la fin.",
+  "summary": "Explication d'un limiteur de débit « token bucket » (capacité 10, recharge 2/s) par une simulation déterministe en canvas, carré 1080, muette. Un seau de 10 cases, un compteur géant, un journal des requêtes et une courbe en escalier racontent quatre actes : trafic calme, rafale, refus, récupération, puis une règle finale. Pédagogie limpide, mais esthétique de tableau de bord de débogage, zéro courbe d'animation et 6 s d'image figée.",
+  "prompt_vs_result": [
+    "Prompt d'une ligne : expliquer un « token bucket rate limiter », canvas seul, aucune bibliothèque, chaque image fonction pure du temps pour que le moteur de rendu puisse la capturer. Rien sur durée, format, style, son ni scénario.",
+    "Claude a tout inventé : paramètres (10 jetons, 2/s), scénario en 4 actes et calendrier des 33 requêtes, 5 légendes, disposition en 4 vues couplées, palette GitHub sombre, police mono minuscule, flashs vert et rouge, règle finale orange.",
+    "« Fonction pure du temps » a donné une simulation exacte mais des changements d'état en marche d'escalier, sans interpolation. Il fallait préciser durée (sim de 12 s dans 18 s), transitions, courbes, musique et un zoom sur la rafale."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#090F11",
+        "role": "fond unique quasi noir bleuté"
+      },
+      {
+        "hex": "#56A5FE",
+        "role": "jetons pleins, ligne de la courbe"
+      },
+      {
+        "hex": "#234265",
+        "role": "jeton en cours de recharge (remplissage partiel atténué)"
+      },
+      {
+        "hex": "#3FA658",
+        "role": "« taken », coches vertes de la frise, contour flash de la case qui vient d'être prise"
+      },
+      {
+        "hex": "#F35145",
+        "role": "« refused », coches rouges, compteur à 0"
+      },
+      {
+        "hex": "#B96264",
+        "role": "bord du seau rougi au refus (flash qui s'éteint)"
+      },
+      {
+        "hex": "#CAD0D2",
+        "role": "texte principal : en-tête, légende, « req N »"
+      },
+      {
+        "hex": "#70767B",
+        "role": "texte secondaire : temps, « left », crédit, axes, bord du seau au repos"
+      },
+      {
+        "hex": "#CB971E",
+        "role": "légende finale « capacity sets the burst… » (seul accent orange)"
+      }
+    ],
+    "type": "Une seule mono système (SF Mono ou Menlo probable, zéro barré), régulière, tout en minuscules. Compteur ≈10 % de la hauteur ; légende ≈2,8 % ; en-tête, journal, pied ≈2,4 % ; « / 10 tokens » gris ≈2,6 %.",
+    "texture": "Aucune : aplats, filets de 1-2 px, pas d'ombre, pas de glow, pas de grain, pas de flou de mouvement. Seule « lumière » : les contours verts et le bord rouge qui s'éteignent en 0,3 à 0,6 s.",
+    "style": "Tableau de bord terminal, palette GitHub",
+    "coherence": "Très cohérent : un code couleur sémantique tenu partout (bleu = jeton, vert = accepté, rouge = refusé, gris = métadonnée), même vert et même rouge dans le journal, la frise et les flashs, une seule police. Le système tient par la logique de données ; il ne casse nulle part, mais il n'a aucune ambition graphique (pas de hiérarchie autre que la taille, aucun mouvement de caméra)."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio, un seul plan de 18 s (540 im à 30 fps), aucune coupe. Le rythme est celui de la simulation : 4 prises isolées (0,50 / 1,30 / 1,90 / 2,40 s), puis une rafale de 10 requêtes en 0,79 s (f74-f98, une toutes les ≈2,4 im), puis 18 requêtes alternant refus et prises entre 3,33 et 6,18 s (une case se recharge toutes les 15 im et part aussitôt), puis une recharge régulière d'un jeton toutes les 15 im (0,5 s) de 7,6 à 11,4 s : un métronome visuel à 120 par minute. Les « maintiens » courts détectés (0,43-0,57 s entre 0 et 12 s) sont des faux : le remplissage partiel progresse lentement, de quelques pixels par image. Le vrai temps mort est la fin : la simulation s'arrête à 12 s (axe de la courbe 0-12 s) et l'image reste figée de 12,03 à 17,97 s, soit 6 s (33 % de la durée). Tous les changements (compteur, légende, lignes du journal, couleur du chiffre) se font en 1 image, sans courbe.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.50",
+        "what": "Seau plein 10/10, journal vide, courbe à 10, légende « steady traffic, refill keeps the bucket full » (f0-f14)",
+        "technique": "état initial lisible d'emblée"
+      },
+      {
+        "t": "0:00.50-0:01.00",
+        "what": "req 1 « taken » : la case du haut se vide en 1 im avec contour vert, le compteur saute de 10 à 9, une ligne s'ajoute au journal ; la case se remplit en bleu atténué de bas en haut pendant 15 im puis repasse pleine à f30 (10)",
+        "technique": "flash de consommation + remplissage fractionnaire"
+      },
+      {
+        "t": "0:01.30-0:02.40",
+        "what": "req 2, 3, 4 : même cycle, la courbe dessine des créneaux 10-9-10",
+        "technique": "courbe en escalier avec tête de lecture"
+      },
+      {
+        "t": "0:02.47-0:03.26",
+        "what": "Légende « a burst spends the saved tokens » (f75) ; 10 requêtes en 24 im, le compteur descend de 9 à 0, les cases se vident de haut en bas, la courbe plonge en escalier, les coches vertes s'agglutinent",
+        "technique": "rafale scénarisée"
+      },
+      {
+        "t": "0:03.33",
+        "what": "Premier refus (f100) : légende « empty: requests refused until a token refills », chiffre 0 en rouge, bord du seau rougi, coche rouge",
+        "technique": "flash rouge de refus"
+      },
+      {
+        "t": "0:03.33-0:06.18",
+        "what": "Alternance refus / prise : chaque jeton rechargé (15 im) est consommé aussitôt, le compteur oscille 0-1, la frise se remplit de coches rouges",
+        "technique": "régime saturé"
+      },
+      {
+        "t": "0:07.00-0:11.40",
+        "what": "Légende « traffic eases, refill at 2/s catches up » (≈f210) ; dernière prise req 33 à 7,60 s ; un jeton se remplit toutes les 15 im, compteur 2 → 10, la courbe remonte en marches régulières",
+        "technique": "récupération à cadence fixe (métronome 120/min)"
+      },
+      {
+        "t": "0:12.00",
+        "what": "Légende finale en orange « capacity sets the burst, refill rate sets the limit » (f360), courbe complète sur 0-12 s",
+        "technique": "règle à retenir en couleur d'accent"
+      },
+      {
+        "t": "0:12.03-0:17.97",
+        "what": "Image figée 6 s, rien ne bouge (f361-f539)",
+        "technique": "temps mort final"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (audio=no dans le dossier, sync null) : rien à mesurer.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. La recharge à 2/s (un jeton toutes les 15 im) donnerait pourtant une grille naturelle à 120 BPM pour une musique ou des clics.",
+    "how_built": "Le prompt ne parle pas de son et impose « canvas only » rendu par captures d'images : aucune bande-son n'est produite. Les événements sont placés en secondes de simulation (0,50, 1,30, 1,90…), pas sur une grille rythmique."
+  },
+  "techniques": [
+    {
+      "cat": "layout",
+      "name_fr": "Quatre vues couplées d'un même état (seau, compteur, journal, courbe)",
+      "name_en": "Linked multi-view dashboard",
+      "t": "0:00-0:12.00",
+      "frames": "f0-f360",
+      "fps": 30,
+      "mechanics": "Cadre carré 1080 : en-tête sur une ligne (« token bucket, capacity 10, refill 2/s » à gauche, « opus 5.5 drew this » gris à droite, y ≈5 %), légende d'acte dessous (y ≈11,5 %). Moitié haute : seau à gauche (x 9-30 %, y 16-58 %, soit ≈21 % de large et 41 % de haut), compteur géant + journal à droite (x 39-94 %). Bande basse : courbe du niveau (y 64-83 %, axe 0-12 s sur ≈84 % de la largeur), frise de coches (y ≈86 %), pied « @ParkerRex midweek update » (y ≈96 %). Les quatre vues lisent la même variable au même instant : on comprend l'algorithme en croisant objet, nombre, historique et tendance. Marges ≈5,5 % à gauche et à droite.",
+      "verdict": "reprendre",
+      "evidence": "image f120 pleine résolution, overview-01.jpg",
+      "illus": {
+        "from": 90,
+        "to": 135,
+        "n": 4
+      }
+    },
+    {
+      "cat": "data",
+      "name_fr": "Seau de 10 cases empilées, remplissage fractionnaire du jeton suivant",
+      "name_en": "Stacked-slot gauge with fractional refill",
+      "t": "0:00.50-0:01.00",
+      "frames": "f15-f30",
+      "fps": 30,
+      "mechanics": "10 cases horizontales (≈18 % de large × 3 % de haut, écart ≈1 %) dans un seau à bords gris de 1-2 px, ouvert en haut. Une case pleine est bleu #56A5FE. Quand un jeton part, la case du haut devient vide (contour seul) en 1 im. La recharge continue (2/s) se voit dans la case suivante : un aplat bleu atténué #234265 monte de bas en haut, linéairement (hauteur = fraction du jeton, 60 % à f24 soit 0,3 s après la prise), puis la case bascule en bleu plein en 1 im quand la fraction atteint 1 (f29 → f30, f101 → f102). Bonne traduction d'une grandeur continue dans un affichage discret ; il manque un petit pop d'échelle au passage plein.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg (f12-f33), image f24 recadrée, sonde pixel f96-f140",
+      "illus": {
+        "from": 14,
+        "to": 31,
+        "n": 6
+      }
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash vert sur la case qui vient d'être consommée",
+      "name_en": "Decaying green outline on consumed slot",
+      "t": "0:03.43-0:03.73",
+      "frames": "f103-f112",
+      "fps": 30,
+      "mechanics": "À chaque prise, la case vidée garde un contour vert vif #3FA658 qui s'éteint vers le gris #3D3F34 en ≈9 im (0,3 s), décroissance à peu près linéaire (sonde pixel : #3FA658 f103-f105, #378244 f107, #2E6830 f109, #33502F f111, #3D3F34 f113). Marque l'événement sans texte ; relancé à chaque prise, il fait clignoter la colonne pendant la rafale.",
+      "verdict": "reprendre",
+      "evidence": "sonde pixel f96-f140, extra-02.jpg (f72-f108)"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Bord du seau qui rougit à chaque refus",
+      "name_en": "Red border flash on rejection",
+      "t": "0:03.33-0:06.30",
+      "frames": "f100-f189",
+      "fps": 30,
+      "mechanics": "Au premier refus (f100), le bord du seau passe du gris #71767B au rouge #B96264 en 1 im, puis se délave vers #9F6E6E en ≈4 im ; chaque nouveau refus le ravive (f108 #B76264). Hors refus, il retombe au gris en ≈0,5-0,6 s (f137 #9F6C6B → f139 #757B7D). Combiné au chiffre 0 en rouge, il signale la saturation sans légende supplémentaire. Discret à l'échelle du cadre (filet de 2 px).",
+      "verdict": "reprendre",
+      "evidence": "sonde pixel f96-f140, extra-02.jpg (f100-f108)"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur géant à changement sec, rouge à zéro",
+      "name_en": "Hard-switching big counter, red at zero",
+      "t": "0:02.50-0:03.27",
+      "frames": "f75-f98",
+      "fps": 30,
+      "mechanics": "Chiffre mono ≈10 % de la hauteur, gris clair #CAD0D2, suivi de « / 10 tokens » gris ≈2,6 %. Pendant la rafale il passe 8, 7, 6, 5, 4, 3, 2, 1, 0 en 24 im, chaque changement en 1 im sans roulement, sans pop, sans flou. À 0 il devient rouge #F35145 (f98). Lisible, mais c'est l'endroit idéal pour un compteur qui roule ou un écrasement à chaque perte.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f75-f98)"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Journal de requêtes défilant sur 6 lignes",
+      "name_en": "Rolling request log",
+      "t": "0:00.50-0:07.60",
+      "frames": "f15-f228",
+      "fps": 30,
+      "mechanics": "Tableau à 5 colonnes alignées (temps gris « 3.33s », « req 15 » clair, statut « taken » vert ou « refused » rouge, « 0 left » gris), 6 lignes au plus, interligne ≈3,9 % de la hauteur. Chaque requête ajoute une ligne en bas et pousse les autres d'un cran en 1 im (pas de glissement). Pendant la rafale, 1 ligne toutes les ≈2,4 im : défilement trop rapide pour être lu, mais il donne la sensation de flot. Le journal se fige après req 33 (7,60 s).",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f72-f108), image f120 pleine résolution"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Courbe en escalier tracée en direct avec tête de lecture",
+      "name_en": "Live step chart with playhead",
+      "t": "0:00-0:12.00",
+      "frames": "f0-f360",
+      "fps": 30,
+      "mechanics": "Axe X fixe 0-12 s, axe Y 0-10 (pointillé gris à 10). Le niveau du seau s'écrit en ligne bleue #56A5FE de 2 px jusqu'à l'instant courant, marqué par un trait vertical gris (tête de lecture). Les marches montrent les prises (créneaux 10-9-10), la chute en escalier de la rafale (10 marches en 0,8 s), le plancher à 0 avec petites bosses (jeton rechargé puis consommé), et la remontée régulière (une marche toutes les 0,5 s). Sous l'axe, une frise de coches verticales verte (prise) ou rouge (refus) à l'abscisse de chaque requête. La courbe complète à 12 s résume tout le film en une image.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg (f225-f435), image f120 pleine résolution",
+      "illus": {
+        "from": 75,
+        "to": 360,
+        "n": 6
+      }
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Scénario en quatre actes avec légende par acte",
+      "name_en": "Four-act scripted scenario with act captions",
+      "t": "0:00-0:12.00",
+      "frames": "f0-f360",
+      "fps": 30,
+      "mechanics": "Le calendrier de requêtes est écrit pour illustrer chaque cas : trafic calme (4 requêtes espacées de 0,5 à 0,8 s, le seau reste plein), rafale (10 requêtes en 0,79 s), saturation (18 requêtes en 2,85 s, refus sauf quand un jeton vient d'arriver), accalmie (1 requête puis rien, recharge à 2/s). Une légende en minuscules nomme chaque acte et change pile au premier événement de l'acte (f75 au début de la rafale, f100 au premier refus, ≈f210 à l'accalmie). Puis la règle à retenir en orange à f360. C'est la meilleure décision de la vidéo : la démonstration est construite, pas aléatoire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-02.jpg, extra-02.jpg (changement de légende f74 → f75, f99 → f100)"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Légende d'acte remplacée en 1 image",
+      "name_en": "Hard caption swap",
+      "t": "0:02.47-0:02.50",
+      "frames": "f74-f75",
+      "fps": 30,
+      "mechanics": "« steady traffic… » devient « a burst spends the saved tokens » d'une image à l'autre, sans fondu, sans frappe, sans glissement. Même chose à f100, ≈f210 et f360 (la dernière change aussi de couleur, gris clair → orange #CB971E). Calé sur l'événement (bon), mais aucun signal d'attention : un changement de légende passe inaperçu pendant que l'œil suit la rafale. Une frappe machine (typewriter) de 10-15 im ou un surlignage aurait aidé.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg (f74-f75, f99-f100), extra-03.jpg (f359-f360)"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Tout en mono minuscule, façon sortie de terminal",
+      "name_en": "All-lowercase monospace terminal voice",
+      "t": "0:00-0:18.00",
+      "frames": "f0-f539",
+      "fps": 30,
+      "mechanics": "Une seule police mono (SF Mono ou Menlo probable, zéro barré), régulière, tout en minuscules, phrases avec deux-points et virgules comme des commentaires de code. Hiérarchie uniquement par la taille (compteur ≈10 % de la hauteur contre 2,4-2,8 % pour le reste) et la couleur (clair, gris, vert, rouge, orange). Cohérent avec un public de développeurs ; trop petit en vignette mobile pour le journal et le pied.",
+      "verdict": "adapter",
+      "evidence": "image f120 pleine résolution"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Code couleur sémantique à quatre teintes",
+      "name_en": "Semantic four-hue color code",
+      "t": "0:00-0:18.00",
+      "frames": "f0-f539",
+      "fps": 30,
+      "mechanics": "Bleu #56A5FE = jeton (cases, courbe), vert #3FA658 = accepté (journal, coches, flash), rouge #F35145 = refusé (journal, coches, chiffre 0, bord), orange #CB971E réservé à la règle finale ; tout le reste en deux gris. Les couleurs reprennent la palette sombre de GitHub (Primer) : familière pour des développeurs. Le même rouge et le même vert sur 4 vues rendent la frise de coches lisible sans légende.",
+      "verdict": "reprendre",
+      "evidence": "image f120 pleine résolution, overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Cadence de recharge comme métronome visuel",
+      "name_en": "Refill rate as visual metronome",
+      "t": "0:07.60-0:11.40",
+      "frames": "f228-f342",
+      "fps": 30,
+      "mechanics": "Recharge à 2 jetons/s : une case passe pleine toutes les 15 im exactement (f300 → 7, f315 → 8, f330 → 9, f342-f345 → 10), la courbe monte d'une marche à chaque fois. Le mouvement est continu (remplissage linéaire) mais l'événement visible tombe sur une grille de 0,5 s, soit 120 par minute. Une musique à 120 BPM se calerait dessus sans retouche ; ici rien ne l'exploite.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg (f225-f345), extra-03.jpg (f339-f345)"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Changements d'état en marche d'escalier, sans interpolation",
+      "name_en": "Step-function state changes, no tweening",
+      "t": "0:00-0:12.00",
+      "frames": "f0-f360",
+      "fps": 30,
+      "mechanics": "Conséquence de « chaque image fonction pure du temps » lue au plus simple : l'état discret (nombre de jetons, lignes, légende, couleur) est recalculé à chaque image et affiché tel quel. Aucune courbe d'accélération, aucun dépassement, aucun décalage (stagger), aucun flou de mouvement. Seuls deux continus existent : le remplissage linéaire et les flashs qui s'éteignent. Une fonction pure du temps peut pourtant contenir des courbes (ease calculé depuis l'instant de l'événement) : le déterminisme n'interdit pas l'animation.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, extra-02.jpg (toutes les transitions en 1 im)"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Règle finale en couleur d'accent, puis 6 s figées",
+      "name_en": "Takeaway caption then 6 s freeze",
+      "t": "0:12.00-0:18.00",
+      "frames": "f360-f539",
+      "fps": 30,
+      "mechanics": "À 12,00 s la légende devient « capacity sets the burst, refill rate sets the limit » en orange, seule occurrence de cette couleur : bonne conclusion, qui relie les deux paramètres de l'en-tête aux deux phases du film. Mais la simulation s'arrête (courbe pleine, seau à 10) et l'image reste totalement immobile 179 im (≈6 s, 33 % de la durée). 2 s auraient suffi pour lire 50 caractères.",
+      "verdict": "adapter",
+      "evidence": "overview-02.jpg, overview-03.jpg (f360-f539), extra-03.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Cadre de série : en-tête paramètres, crédit et signature",
+      "name_en": "Series frame: spec header, credit and byline",
+      "t": "0:00-0:18.00",
+      "frames": "f0-f539",
+      "fps": 30,
+      "mechanics": "En-tête qui annonce les paramètres de la démonstration (« capacity 10, refill 2/s ») comme une signature de fonction, crédit « opus 5.5 drew this » en gris à droite, pied « @ParkerRex midweek update » : gabarit récurrent probable de la série de l'auteur (non demandé dans le prompt publié). Pose le contrat de lecture avant toute animation.",
+      "verdict": "reprendre",
+      "evidence": "image f120 pleine résolution"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "build",
+      "insight": "« canvas only, no libraries » : un seul canvas 2D, police mono système, aucune bibliothèque d'animation ni de courbes. Le rendu ressemble à un outil de débogage parce qu'aucun outil de mise en mouvement n'est disponible et que rien n'en demande."
+    },
+    {
+      "kind": "build",
+      "insight": "« every frame a pure function of time » a produit une vraie simulation déterministe (calendrier de 33 requêtes codé en dur, niveau du seau calculé analytiquement), d'où l'exactitude du journal et de la courbe. Mais Claude l'a interprété comme « afficher l'état à t » : toutes les transitions sont des sauts d'1 image."
+    },
+    {
+      "kind": "direction",
+      "insight": "Prompt d'une ligne sans direction visuelle : Claude a choisi par défaut l'esthétique développeur (fond GitHub sombre, mono minuscule, vert/rouge). Cohérent avec le sujet, mais aucune idée de mise en scène (zoom sur la rafale, seau qui déborde, jetons qui tombent)."
+    },
+    {
+      "kind": "structure",
+      "insight": "« explain » a suffi à déclencher un scénario pédagogique en 4 actes avec légendes et règle finale : pour un explainer, Claude construit seul des cas démonstratifs (calme, rafale, saturation, récupération) plutôt qu'un trafic aléatoire."
+    },
+    {
+      "kind": "qa",
+      "insight": "Aucune durée imposée : la simulation dure 12 s mais la vidéo 18 s, d'où 6 s figées. Il fallait écrire la durée totale et demander que la fin tienne au plus 2 s après la dernière information."
+    },
+    {
+      "kind": "banned",
+      "insight": "Rien sur le son ni le rythme : vidéo muette alors que chaque prise, refus et recharge appelait un clic ou une note ; la recharge à 2/s offrait une grille à 120 BPM toute prête."
+    },
+    {
+      "kind": "other",
+      "insight": "Le crédit « opus 5.5 drew this » et le pied « @ParkerRex midweek update » ne figurent pas dans le prompt publié : gabarit de série ou consigne d'un autre message, probable."
+    }
+  ],
+  "steal": [
+    "Expliquer un algorithme par une simulation déterministe scénarisée, montrée en 3-4 vues couplées : objet, compteur, journal, courbe qui se trace avec tête de lecture.",
+    "Marquer chaque événement par un flash qui s'éteint en 0,3-0,6 s (contour vert pour une prise, bord rouge pour un refus) au lieu d'ajouter du texte.",
+    "Rendre une grandeur continue visible : remplir linéairement le prochain emplacement en teinte atténuée, puis passer en couleur pleine à 100 %.",
+    "Scénario en actes (calme, rafale, saturation, récupération), une légende par acte changée pile au premier événement, règle finale dans une couleur d'accent unique.",
+    "Choisir des paramètres qui tombent sur une grille : recharge 2/s = un événement toutes les 15 im à 30 fps = 120 BPM pour la musique."
+  ],
+  "flaws": [
+    "6 s d'image figée à la fin (33 % de la durée) : la simulation s'arrête à 12 s, la vidéo dure 18 s.",
+    "Tous les changements en 1 image : compteur, légendes, lignes du journal sautent sans courbe, dépassement ni transition.",
+    "Muette alors que chaque prise, refus et recharge appelait un son.",
+    "Journal, en-tête et pied à ≈2,4 % de la hauteur : illisibles en vignette mobile ; journal trop rapide pendant la rafale.",
+    "Esthétique de tableau de bord de débogage : aucune mise en scène, aucun zoom sur la rafale, aucun mouvement de caméra."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : aucune courbe d'animation à mesurer, tous les états changent en 1 image. Seuls le remplissage fractionnaire et les flashs décroissants méritaient une sonde, faite ici au pixel."
+  }
+}

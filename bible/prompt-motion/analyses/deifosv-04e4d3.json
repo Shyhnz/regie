@@ -1,0 +1,388 @@
+{
+  "slug": "deifosv-04e4d3",
+  "title": "Tennis game launch video",
+  "handle": "@deifosv",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Promo produit propre, entièrement bâtie sur une grille 120 BPM avec breakdown et drop exploités ; plombée par un flash blanc répété 14 fois, un globe générique et 2,5 s figées.",
+  "summary": "Lancement d'un jeu de tennis 3D en navigateur. 30 s en six blocs calés sur une grille de 120 BPM : trois compteurs live sur des captures du jeu, une liste « No download / No install / No sign-up / 100 % free » qui s'empile, le jeu sur téléphone, une tournée des 6 courts jusqu'à la Lune, un globe pendant le breakdown, puis le logo sur le drop. Rythme solide, accent unique (flash blanc) trop répété.",
+  "prompt_vs_result": [
+    "Le prompt demandait une vidéo de lancement très énergique, des statistiques live du site, le jeu sur ordinateur et mobile, plusieurs thèmes, et au besoin un prompt Suno pour la musique.",
+    "Claude a choisi seul : la grille d'une scène par seconde, les compteurs sur captures du jeu, la liste anaphorique « No… », la tournée des courts avec la Lune en chute, le globe, la palette marine-lime et la police condensée.",
+    "Prompt d'une ligne : bon cadrage du contenu, rien sur le style ni le minutage. « Multiple themes » a été lu comme les décors de courts. Le « desktop » n'est jamais montré. Il fallait varier les transitions."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#0B1626", "role": "fond marine (globe, carte de fin)"},
+      {"hex": "#D6F25A", "role": "accent lime : chiffres, mots-clés, surtitres, CTA, lueurs"},
+      {"hex": "#F3F1E6", "role": "titres blanc cassé"},
+      {"hex": "#1E4A5A", "role": "bloc surligneur pétrole incliné"},
+      {"hex": "#9AA0A6", "role": "lignes précédentes estompées (~45 % d'opacité)"},
+      {"hex": "#E5483B", "role": "point rouge « LIVE » (probable)"},
+      {"hex": "#2F6E9E", "role": "court dur bleu (capture du jeu)"},
+      {"hex": "#2F6B3A", "role": "court gazon (capture du jeu)"},
+      {"hex": "#B5553A", "role": "court terre battue (capture du jeu)"}
+    ],
+    "type": "Grotesque condensée très grasse type Anton (probable), capitales, titres 10 à 25 % de la hauteur ; surtitres et pastilles en sans grasse capitales interlettrées +15 % (2-3 %) ; texte courant sans semi-gras ≈3 %.",
+    "texture": "Lueur (glow) lime sur les chiffres, l'icône et le bouton ; captures du jeu assombries d'environ 45 % avec vignette radiale ; flashs blancs pleine image ; aucun grain ; aucun flou de mouvement, même sur les slams.",
+    "style": "Promo sport néon lime sur marine",
+    "coherence": "Système tenu : une seule police de titre, le lime réservé aux chiffres et mots-clés, des fonds qui sont toujours de vraies captures du jeu, des cartouches inclinés de -3°. Ce qui casse : le globe vectoriel générique, sans lien avec l'univers du jeu, et le flash blanc identique à chaque coupe."
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "serree",
+    "dead_time": "un-peu",
+    "notes": "Kick à 0,07 s + 0,5 s × n (analyse bande basse : 0,070 / 0,580 / 1,080 … 29,581 s), soit les barres bleues des planches (f2 + 15 n). Toutes les scènes durent un multiple d'une seconde = 2 temps : stats 2 s (4 temps), négations 1 s (2 temps), téléphone 5 s, courts 1 s, globe 4 s, fin 5 s. Chaque coupe tombe en x,97 s, exactement 3 im (100 ms) avant un kick ; les arrivées de contenu tombent sur le kick (0 à +2 im). Densité forte : dans la liste (6-10 s), un événement toutes les 0,5 s (slam sur le kick, surligneur sur le demi-temps, changement de court 3 im avant le kick suivant). Temps mort : 12,5-14,93 s (téléphone figé, seul le jeu bouge dans l'écran, 2,4 s), et le crash musical de 14,0 s n'a aucune réponse. Les maintiens de la carte de fin (27-29 s) sont cassés par une pulsation du bouton à chaque temps. Le détecteur compte 24 coupes, mais beaucoup sont des doubles détections du flash qui décroît (f59/f62/f65) : il y a environ 18 plans réels.",
+    "timeline": [
+      {"t": "0:00-0:02", "what": "Flash blanc, compteur 0 → 5,699 « GAMES PLAYED » sur court bleu (New York), pastille « LIVE · WORLDWIDE », sous-titre « And counting. Right now. »", "technique": "compteur roulant + pop d'arrivée + cascade de libellés"},
+      {"t": "0:02-0:04", "what": "Flash, 0 → 236 « HOURS ON COURT » sur gazon, « That's 9+ days of non-stop tennis. »", "technique": "même gabarit, nouveau court"},
+      {"t": "0:04-0:06", "what": "Flash, 0 → 2,076 « MATCHES FINISHED » sur terre battue, « Game. Set. Match. »", "technique": "même gabarit, nouveau court"},
+      {"t": "0:06-0:10", "what": "Liste « NO DOWNLOAD. / NO INSTALL. / NO SIGN-UP. / 100% FREE. », une ligne par seconde, « OPENS IN ANY BROWSER » en bas à droite", "technique": "slam incliné + bloc surligneur + lignes estompées + court qui change"},
+      {"t": "0:10-0:15", "what": "Téléphone qui monte du bas, « THE WHOLE GAME. IN YOUR POCKET. », pastilles IPHONE / ANDROID / TABLET / LAPTOP, l'écran bascule du bleu à la terre battue vers 12,3 s, puis maintien", "technique": "maquette mobile + changement de thème in-screen"},
+      {"t": "0:15-0:21", "what": "« 6 COURTS. 1 PLANET. » puis NEW YORK, LONDON, PARIS, DUBAI, THE BEACH, THE MOON (« +1 MOON. »), une ville par seconde", "technique": "flash + nom révélé par masque sur le kick"},
+      {"t": "0:21-0:24.6", "what": "Coupe sèche sur un globe filaire en rotation (breakdown), « PLAY ANYONE. » puis « ANYWHERE. » en lime, puis sous-titre", "technique": "globe à arcs + poussée lente + fondus de ligne"},
+      {"t": "0:24.6-0:25.0", "what": "L'image se surexpose jusqu'au blanc", "technique": "surexposition (white-out) sur la montée"},
+      {"t": "0:25.0-0:26.6", "what": "Icône qui naît d'un point, « TOP TENNIS », slogan, pastilles, pilule d'URL", "technique": "cascade de logo sur le drop"},
+      {"t": "0:26.6-0:29.0", "what": "Carte de fin, le bouton d'URL pulse à chaque temps", "technique": "pulsation CTA sur le temps"},
+      {"t": "0:29.0-0:30.1", "what": "Flash lime pleine image, le bouton devient « PLAY FREE NOW → », l'URL passe dessous", "technique": "flash couleur de marque + bascule du CTA"}
+    ]
+  },
+  "music": {
+    "verdict": "animee-sur-la-musique",
+    "evidence": "Le kick (bande < 150 Hz) tombe à 0,07 + 0,5 n s et les claquements de contretemps à x,32 / x,82 s. Les 14 coupes-flashs (f59, f119, f179, f209, f239, f269, f299, f449, f479, f509, f539, f569, f599, f869) tombent toutes exactement 3 im avant un kick : même phase, écart nul, donc un verrouillage par construction, pas du hasard. Les gestes d'arrivée sont sur la barre : départs de compteur f2 / f62 / f122 (0 im), sous-titre f32 (0), slams posés f214 / f244 / f274 (+2), noms de ville complets f452 / f482 / f512 / f572 / f602 (0), montée du téléphone f301 (-1), icône du logo f753 (+1 sur le kick du drop à 25,07 s). Bilan : 14 arrivées sur 14 à ±2 im d'un kick (hasard ≈33 %) ; en ajoutant les demi-temps (fin des compteurs f25, surligneur f218), 16 gestes sur 18. Macro-structure : le volume chute de -7 à -20 dB à 21,0 s, pile sur la coupe vers le globe, et remonte à 25,0 s pour le logo. Les accents forts (fenêtres à -4 dB) tombent à 0, 6, 14, 25 et 29 s : 4 sur 5 ont un événement visuel (ouverture, début de liste, logo, flash lime), seul 14,0 s est manqué. Indice auto : départs/temps R = 0,605, p = 9e-9.",
+    "synced": ["coupes", "departs", "atterrissages", "apparitions", "pulsations", "flashs", "texte", "drop"],
+    "style_match": "Électro-pop énergique à 120 BPM avec kick régulier : colle aux slams secs, aux compteurs et aux flashs ; breakdown calme sur le globe lent, drop sur le logo.",
+    "how_built": "Le prompt demandait un prompt Suno : la musique vient donc après le plan. Toute la timeline est en secondes entières, soit 2 temps à 120 BPM, ce qui rend la synchro automatique dès que le morceau est à 120 BPM et démarre à 0. Le premier kick à 0,07 s et le flash posé à l'image qui précède la scène créent l'avance constante de 3 im. Le breakdown commence en milieu de mesure (21,0 s) et le drop arrive au 3e temps (25,07 s), ce qui suggère une piste remontée à la main pour tomber sur les scènes (probable)."
+  },
+  "techniques": [
+    {
+      "cat": "sound",
+      "name_fr": "Grille de scènes en secondes entières sur 120 BPM",
+      "name_en": "Whole-second scene grid at 120 BPM",
+      "t": "0:00-0:30",
+      "frames": "f0-f901",
+      "fps": 30,
+      "mechanics": "Chaque scène dure 1, 2, 4 ou 5 s, soit 2, 4, 8 ou 10 temps. Toutes les coupes tombent en x,97 s, exactement 3 im (100 ms) avant le kick (0,07 + 0,5 n s). Le spectateur sent un montage métronomique sans voir de calcul. Dans la liste et la tournée des courts, une scène = 2 temps ; pour les stats, une scène = 4 temps.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f59.jpg, microM-005-cut-f209.jpg, microM-010-move-f482.jpg, rhythm.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Flash en anticipation, arrivée sur le kick",
+      "name_en": "Flash on the anticipation, landing on the kick",
+      "t": "0:01.97-0:02.07",
+      "frames": "f59-f62",
+      "fps": 30,
+      "mechanics": "Le pic blanc de la coupe précède le kick de 3 im, et le contenu de la scène arrive sur le kick : départ du compteur pile sur la barre (f62, f122), nom de ville complet sur la barre (f452, f482, f512…), slam posé 2 im après (f214, f244, f274). Le flash joue l'élan (comme un whoosh) et l'impact visuel tombe sur le son. L'avance de 100 ms est probablement involontaire (décalage du morceau de 70 ms + flash sur l'image f-1).",
+      "verdict": "adapter",
+      "evidence": "microM-003-cut-f59.jpg, microM-004-cut-f119.jpg, microM-009-cut-f449.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Breakdown = scène calme, drop = logo",
+      "name_en": "Breakdown-to-drop brand reveal",
+      "t": "0:20.97-0:25.5",
+      "frames": "f629-f765",
+      "fps": 30,
+      "mechanics": "Le volume passe de -7 à -15 / -28 dB à 21,0 s, pile sur la coupe sèche vers le globe (seule coupe sans flash). Le globe tourne lentement pendant 4 s de breakdown sans kick. La surexposition monte sur 12 im (f738-f749) pendant la fin de la montée. Le kick revient à 25,071 s (f752) : l'icône naît à f753 (+1 im), le titre apparaît à f758. Le volume remonte à -4 dB.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, extra-02.jpg",
+      "illus": {"from": 738, "to": 768, "n": 8}
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Pulsation du bouton CTA sur chaque temps",
+      "name_en": "Beat-pulsing CTA button",
+      "t": "0:26.97-0:28.6",
+      "frames": "f809-f860",
+      "fps": 30,
+      "mechanics": "Sur la carte de fin, seule la zone du bouton d'URL (x 32-67 %, y 75-85 %) change : 4 pulsations à f809, f824, f839 et f854, espacées de 15 im (0,5 s = 1 temps). Chaque pulsation a une attaque d'1 im puis une décroissance de 4 à 6 im (lueur et échelle, probable). Elles tombent 3 im avant le kick, la même avance que les flashs. La carte reste ainsi vivante sans rien déplacer.",
+      "verdict": "reprendre",
+      "evidence": "rhythm.jpg (maintiens gris 27,0-28,93 coupés toutes les 0,5 s) + mesure de différence d'image par zone"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Compteur roulant à décélération",
+      "name_en": "Ease-out rolling counter",
+      "t": "0:00.07-0:00.83",
+      "frames": "f2-f25",
+      "fps": 30,
+      "mechanics": "0 → 683 → 1 309 → 1 881 → 2 401 … → 5 699. Les incréments par image décroissent régulièrement (683, 626, 572, 520, 470 … 15, 8, 3), soit un ease-out quadratique à cubique (power2/3.out). La montée dure 23 im = 0,77 s = 1,5 temps, avec séparateur de milliers. Les 3 compteurs suivent le même gabarit : départ sur le kick, arrivée sur le demi-temps (f25, ≈f85, ≈f145). Chiffre lime ≈25 % de la hauteur avec lueur, centré à 45 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f2.jpg, microM-003-cut-f59.jpg, microM-004-cut-f119.jpg",
+      "illus": {"from": 0, "to": 26, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Pop d'arrivée du compteur",
+      "name_en": "Counter landing pop",
+      "t": "0:00.83-0:00.90",
+      "frames": "f25-f27",
+      "fps": 30,
+      "mechanics": "Quand le compteur atteint sa valeur finale, le chiffre grossit d'environ 10 % pendant 2 im (f25-f26), puis revient à 100 % à f27, sans ressort. L'arrivée tombe sur le demi-temps (barre bleu clair f25). C'est un point d'exclamation sur la valeur finale, presque trop bref pour être perçu à 30 fps.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f26.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Cascade du bloc statistique",
+      "name_en": "Staggered stat block reveal",
+      "t": "0:00.07-0:01.10",
+      "frames": "f2-f33",
+      "fps": 30,
+      "mechanics": "Le chiffre part à f2. Le libellé « GAMES PLAYED » (≈10 % de la hauteur, blanc cassé) passe de 0 à 100 % d'opacité entre f8 et f16 (décalage +6 im). La pastille « ● LIVE · WORLDWIDE » apparaît à f9-f12 (+7 im), le sous-titre « And counting. Right now. » à f31-f33, sur le kick suivant (f32, +30 im). C'est un fondu pur, sans translation.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f2.jpg, microM-002-move-f26.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Flash blanc à chaque coupe",
+      "name_en": "White flash cut",
+      "t": "0:01.97-0:02.20",
+      "frames": "f59-f65",
+      "fps": 30,
+      "mechanics": "Sur l'image de coupe, un voile blanc presque opaque (≈90 %) couvre la nouvelle scène. Il décroît en 6 im (f59 ≈90 %, f61 ≈55 %, f63 ≈20 %, f65 ≈0), en ease-out. Il revient 14 fois en 30 s : chaque stat, chaque ligne de la liste, chaque court, le téléphone. Seules la coupe vers le globe (sèche) et la fin (flash lime) y échappent.",
+      "verdict": "cliche",
+      "evidence": "microM-003-cut-f59.jpg, microM-008-cut-f299.jpg, microM-011-move-f512.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Slam incliné (texte qui s'écrase)",
+      "name_en": "Tilted type slam-in",
+      "t": "0:06.97-0:07.13",
+      "frames": "f209-f214",
+      "fps": 30,
+      "mechanics": "« NO INSTALL. » démarre à environ 230 % de sa taille finale (≈90 % de la largeur du cadre), incliné de ≈-3°. En 5 im, sa largeur passe de 90 à 92, 85, 74, 57 puis 40 % du cadre : le rétrécissement accélère (ease-in, power2.in), d'où l'effet d'impact. Il se pose à f214, 2 im après le kick f212, sans dépassement ni flou de mouvement. Le premier slam (« NO DOWNLO… », f180) déborde du bord droit pendant 1 à 2 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f209.jpg, microM-006-cut-f239.jpg",
+      "illus": {"from": 207, "to": 222, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Bloc surligneur incliné tracé derrière la ligne",
+      "name_en": "Skewed highlighter block wipe",
+      "t": "0:07.27-0:07.37",
+      "frames": "f218-f221",
+      "fps": 30,
+      "mechanics": "4 im après l'impact, un parallélogramme pétrole #1E4A5A incliné de -3°, haut d'environ 1,3 fois la ligne, se trace de gauche à droite en 4 im, derrière la ligne active seulement. Il démarre sur le demi-temps (f220, à -2 im). Pour la 4e ligne, les couleurs s'inversent : bloc lime #D6F25A et texte marine « 100% FREE. », tracé en f276-f280. C'est le sommet de la liste.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f209.jpg, microM-007-cut-f269.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Liste anaphorique qui s'empile",
+      "name_en": "Stacking anaphora list",
+      "t": "0:06-0:10",
+      "frames": "f179-f298",
+      "fps": 30,
+      "mechanics": "Quatre lignes « NO … » arrivent à 1 s d'intervalle, ferrées à gauche à x ≈8 %, chacune haute d'environ 11 % du cadre, en interligne serré. À chaque nouvelle ligne, les précédentes passent à ≈45 % d'opacité (gris #9AA0A6). La ligne active est blanche sur bloc pétrole, la dernière lime. Mention fixe « OPENS IN ANY BROWSER » en lime, petites capitales interlettrées, en bas à droite.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Court qui change sous le texte",
+      "name_en": "Background court swap under text",
+      "t": "0:07.47-0:09.47",
+      "frames": "f224, f284",
+      "fps": 30,
+      "mechanics": "Au milieu de chaque ligne de la liste, en x,47 s, la capture de fond passe d'un court à l'autre (gazon, terre, dur bleu…) par un fondu de 1 à 2 im, sans toucher au texte. Elle montre les thèmes demandés et ajoute un événement par demi-seconde. Elle tombe 3 im avant le kick, pas dessus.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f209.jpg, microM-007-cut-f269.jpg"
+    },
+    {
+      "cat": "image",
+      "name_fr": "Vraies captures du jeu en fond, assombries",
+      "name_en": "Darkened real gameplay as backdrop",
+      "t": "0:00-0:21",
+      "frames": "f0-f628",
+      "fps": 30,
+      "mechanics": "Le fond est une vraie partie du jeu 3D, vue d'en haut en caméra de retransmission, avec les joueurs en action et l'interface du jeu visible (score, vitesse de balle). Un voile sombre d'environ 45 % et une vignette radiale l'assombrissent. Chaque stat a son court, avec le nom de la ville en bas de l'interface. Le produit est toujours à l'écran, même sous la typo.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Téléphone qui monte en se redressant",
+      "name_en": "Phone rise-in with tilt settle",
+      "t": "0:10.03-0:10.27",
+      "frames": "f301-f308",
+      "fps": 30,
+      "mechanics": "Le téléphone entre par le bas du cadre en ≈7 im, en ease-out, et se redresse de ≈-12° à ≈-4°. Posé, il occupe ≈85 % de la hauteur, à x 10-35 %, et fait tourner le jeu en direct dans l'écran. Le bloc texte apparaît en fondu en f306-f311. Les pastilles IPHONE / ANDROID / TABLET / LAPTOP arrivent en décalé entre 11,5 et 12,0 s. L'écran bascule du court bleu à la terre battue vers 12,3 s. Puis plus rien jusqu'à 14,97 s.",
+      "verdict": "adapter",
+      "evidence": "microM-008-cut-f299.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Nom de ville révélé par masque",
+      "name_en": "Masked wipe city name reveal",
+      "t": "0:15.97-0:16.07",
+      "frames": "f479-f482",
+      "fps": 30,
+      "mechanics": "Le nom se découvre de gauche à droite par un masque en 3 im (« LO » → « LONDO » → « LONDON ») et finit pile sur le kick (f482, puis f452, f512, f572, f602). Le nom en blanc cassé mesure ≈16 % de la hauteur, ferré à x ≈6 %, base à ≈90 %. Au-dessus, la mention lime « COURT 02 / 06 · GRASS COURT » en capitales interlettrées (≈2 %).",
+      "verdict": "reprendre",
+      "evidence": "microM-010-move-f482.jpg, microM-011-move-f512.jpg, microM-012-move-f572.jpg",
+      "illus": {"from": 478, "to": 484, "n": 5}
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Titre persistant qui s'allonge (« +1 MOON. »)",
+      "name_en": "Persistent header with a punchline add-on",
+      "t": "0:15-0:21",
+      "frames": "f449-f628",
+      "fps": 30,
+      "mechanics": "« 6 COURTS. 1 PLANET. » (1 PLANET en lime) reste fixe 6 s en haut à gauche (y ≈10 %, ≈6 % de hauteur) pendant que les villes défilent. Au 6e court (f599), il s'allonge de « +1 MOON. » en lime, et la mention devient « COURT 06 / 06 · YES. THE MOON. ». Le gag sert de chute à l'énumération. Défaut : le titre est posé sur le tableau de score de l'interface du jeu.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Globe filaire en rotation avec arcs",
+      "name_en": "Rotating wireframe globe with arcs",
+      "t": "0:21-0:24.6",
+      "frames": "f629-f737",
+      "fps": 30,
+      "mechanics": "Sphère en fil de fer vert-pétrole avec liseré lime, nœuds lime et blancs, arcs en pointillé, sur fond marine étoilé. Elle tourne lentement et reste à x ≈70 %. Son diamètre passe d'environ 65 à 85 % de la hauteur en 4 s, une poussée lente (push-in) qui garde du mouvement pendant le breakdown. C'est le visuel « réseau mondial » standard.",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg, overview-04.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Lignes qui s'allument sur place",
+      "name_en": "In-place line fade-up",
+      "t": "0:21.3-0:23.5",
+      "frames": "f639-f705",
+      "fps": 30,
+      "mechanics": "« PLAY ANYONE. » passe du gris sombre au blanc en ≈10 im (f639-f648), sans bouger, à x 7-48 %, ≈8 % de la hauteur. « ANYWHERE. » s'allume en lime ≈1 s plus tard (22,3-22,6 s), puis le sous-titre vers 23,4 s. Les lignes sont décalées d'environ 1 s, en accord avec le calme du breakdown, mais le passage est le moins dense de la vidéo.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg, overview-04.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Surexposition progressive (white-out) sur la montée",
+      "name_en": "Overexposure white-out build",
+      "t": "0:24.60-0:25.30",
+      "frames": "f738-f759",
+      "fps": 30,
+      "mechanics": "La luminosité de toute l'image monte en accélérant (ease-in) sur 12 im (0,4 s, f738-f749). Le globe et le texte se dissolvent dans le blanc, qui reste plein 2 im (f749-f751). Puis le blanc décroît sur ≈8 im en découvrant la carte sombre du logo (f752-f760). C'est une montée de tension avant le drop, sans coupe visible.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Révélation du logo en cascade sur le drop",
+      "name_en": "Staggered logo reveal on the drop",
+      "t": "0:25.10-0:26.60",
+      "frames": "f753-f798",
+      "fps": 30,
+      "mechanics": "L'icône (carré arrondi pétrole, balle lime, lignes de vitesse) naît d'un point et atteint sa taille en 5 im (f753-f758), en ease-out, avec un léger dépassement probable. « TOP TENNIS » (TOP blanc, TENNIS lime, ≈17 % de la hauteur) apparaît en fondu en montant de 55 à 48 % de la hauteur en ≈10 im (f758-f768). Suivent le slogan à f772 (+14 im), les pastilles à f774-f776, puis la pilule d'URL qui monte du bas en deux temps (f787-f792 glissé, f795-f798 calage).",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Mur des 6 courts en filigrane",
+      "name_en": "Ghosted court wall backdrop",
+      "t": "0:25-0:30",
+      "frames": "f752-f901",
+      "fps": 30,
+      "mechanics": "Derrière le logo, une mosaïque de 3 × 2 captures de courts apparaît à ≈10 % d'opacité sur la marine #0B1626. C'est un rappel discret de la tournée des courts, qui donne de la matière au fond sans concurrencer le logo.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Flash lime de marque et bascule du CTA",
+      "name_en": "Brand-color flash CTA swap",
+      "t": "0:28.97-0:29.17",
+      "frames": "f869-f875",
+      "fps": 30,
+      "mechanics": "Sur le dernier accent musical (crash à 29,0 s), un aplat lime #D6F25A couvre l'image à ≈80 % d'opacité, puis décroît en 6 im. Sous le flash, le bouton « toptennisgame.com » devient « PLAY FREE NOW → » et l'URL descend en ligne lime sous le bouton. Le flash final change de couleur, ce qui le distingue des 14 flashs blancs.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 866, "to": 876, "n": 6}
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette marine avec lime réservé",
+      "name_en": "Navy palette with reserved lime accent",
+      "t": "0:00-0:30",
+      "frames": "f0-f901",
+      "fps": 30,
+      "mechanics": "Le lime #D6F25A ne sert qu'aux chiffres, aux mots-clés (PLANET, POCKET, ANYWHERE, TENNIS, 100 % FREE), aux surtitres et au CTA. Les titres sont en blanc cassé #F3F1E6 et les fonds sont soit les captures assombries, soit la marine #0B1626. Toutes les couleurs vives viennent du jeu lui-même (courts bleu, vert, terre).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg à overview-05.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Hiérarchie typographique à trois niveaux",
+      "name_en": "Three-tier type hierarchy",
+      "t": "0:00-0:30",
+      "frames": "f0-f901",
+      "fps": 30,
+      "mechanics": "Niveau 1 : grotesque condensée très grasse type Anton (probable), capitales, de 10 à 25 % de la hauteur, interlettrage serré. Niveau 2 : surtitres et pastilles en sans grasse capitales, interlettrées ≈+15 %, de 2 à 3 %, en lime ou en blanc sur pastille sombre à contour de 1 px. Niveau 3 : texte courant en sans semi-gras ≈3 % (« Touch controls built for phones… »). Le système est le même dans toutes les scènes.",
+      "verdict": "reprendre",
+      "evidence": "overview-03.jpg, overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Pastille « LIVE » à point rouge",
+      "name_en": "Live badge pill",
+      "t": "0:00.3-0:06",
+      "frames": "f9-f178",
+      "fps": 30,
+      "mechanics": "Une pilule sombre translucide avec un point rouge et « LIVE · WORLDWIDE / PLAY TIME / MATCHES » en capitales interlettrées, posée au-dessus du chiffre (y ≈23 %). Le point semble clignoter (rouge visible à 1,0 s, absent à 0,5 s, probable). Elle donne l'impression de données en temps réel pour des compteurs qui sont sans doute des valeurs figées.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Temps mort sur le téléphone",
+      "name_en": "Dead hold on the phone scene",
+      "t": "0:12.5-0:14.93",
+      "frames": "f375-f448",
+      "fps": 30,
+      "mechanics": "Une fois les pastilles posées et le thème basculé, la scène reste figée 2,4 s : seul le jeu bouge, en petit, dans l'écran du téléphone. Le crash musical de 14,0 s passe sans réponse, alors que le reste de la vidéo a un événement toutes les 0,5 à 1 s. Le bon geste aurait été une 2e bascule de thème sur le crash, ou une coupe à 14,0 s.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Sous-titres qui humanisent les chiffres",
+      "name_en": "Humanizing micro-copy under stats",
+      "t": "0:01-0:06",
+      "frames": "f31-f178",
+      "fps": 30,
+      "mechanics": "Sous chaque chiffre, une phrase courte en sans (≈3 %) arrive sur le kick qui suit l'arrivée du compteur : « And counting. Right now. », « That's 9+ days of non-stop tennis. », « Game. Set. Match. ». Elle convertit la donnée en image mentale ou en clin d'œil au sport, et finit chaque bloc de 4 temps.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "inputs", "insight": "« Live stats from the website » a donné des compteurs avec pastille LIVE et des valeurs plausibles (5 699 parties, 236 h, 2 076 matchs). Ce sont probablement des valeurs lues une fois sur le site ou fournies, puis animées, pas un flux en direct."},
+    {"kind": "direction", "insight": "« High energy » s'est traduit par une scène par seconde, des slams secs, des flashs, du lime néon et une police condensée très grasse. L'énergie vient du montage plus que du mouvement à l'intérieur des plans."},
+    {"kind": "structure", "insight": "Claude a inventé un arc de lancement classique : preuve sociale (stats), friction zéro (No download…), mobile, variété (6 courts), multijoueur mondial (globe), marque + CTA. Chaque demande du prompt devient un bloc."},
+    {"kind": "other", "insight": "« Multiple themes » est ambigu (thèmes d'interface ou décors ?). Claude l'a lu comme les décors de courts, ce qui a produit la meilleure idée de la vidéo : la tournée des villes jusqu'à la Lune."},
+    {"kind": "build", "insight": "Demander un prompt Suno signifie que la musique vient après. Construire toute la timeline en secondes entières, soit 2 temps à 120 BPM, a rendu la synchro automatique. L'avance constante de 3 im des flashs trahit un calage du morceau à l'œil."},
+    {"kind": "qa", "insight": "Rien dans le prompt sur la vérification : le titre posé sur le tableau de score du jeu, le temps mort de 2,4 s et le crash de 14 s sans réponse sont passés."},
+    {"kind": "banned", "insight": "Aucune interdiction : Claude a pris le flash blanc comme transition par défaut et l'a répété 14 fois. Interdire les transitions identiques consécutives aurait forcé la variété."}
+  ],
+  "steal": [
+    "Bâtir la timeline en secondes entières à 120 BPM : une scène = 2 ou 4 temps ; le contenu atterrit sur le kick, le flash le précède de 2-3 images.",
+    "Compteur roulant : départ sur un temps, arrivée 1,5 temps plus tard en ease-out avec un pop de 2 images, sous-titre sur le temps suivant.",
+    "Liste qui s'empile : chaque ligne s'écrase depuis 230 % en 5 images, un surligneur incliné se trace derrière, les lignes précédentes tombent à 45 % d'opacité.",
+    "Poser la scène calme sur le breakdown, une surexposition de 0,4 s sur la montée et le logo sur le retour du kick.",
+    "Sur la carte de fin, faire pulser le CTA à chaque temps, puis un flash de la couleur de marque sur le dernier crash pour révéler l'appel à l'action."
+  ],
+  "flaws": [
+    "Le même flash blanc à chaque coupe, 14 fois en 30 s : l'accent s'use et plus aucune transition ne surprend.",
+    "Le téléphone reste figé 2,4 s (12,5-14,9 s) et le crash musical de 14,0 s passe sans réponse visuelle.",
+    "Le globe filaire à points et arcs en pointillé est le visuel « réseau mondial » générique, sans lien avec l'univers du jeu.",
+    "« 6 COURTS. 1 PLANET. » est posé sur le tableau de score du jeu en arrière-plan : collision de calques en haut à gauche.",
+    "Le « desktop » demandé n'est jamais montré (pas de maquette navigateur), seulement suggéré par des pastilles."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Natif 30 fps : l'étude se fera à 30 et non à 60 fps. Elle vaut la peine pour deux passages exemplaires de synchro par construction : la liste de 6 à 10 s (slam sur le kick, surligneur sur le demi-temps, changement de fond, tous les 0,5 s) et l'enchaînement breakdown, surexposition, drop, logo de 24 à 26,6 s. C'est un modèle direct pour une promo SaaS HyperFrames calée au BPM."
+  }
+}

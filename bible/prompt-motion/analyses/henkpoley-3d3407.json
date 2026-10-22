@@ -1,0 +1,652 @@
+{
+  "slug": "henkpoley-3d3407",
+  "title": "Deliberately terrible motion showreel",
+  "handle": "@HenkPoley",
+  "family": "showreel",
+  "craft": 3,
+  "craft_reason": "Parodie très bien écrite : une quarantaine de gags lisibles, chaque erreur nommée, chute en rappel. Le mouvement reste volontairement pauvre (linéaire, 61 % de maintiens) et peu réutilisable.",
+  "summary": "Faux showreel d'un motion designer catastrophique, joué dans une page portfolio rétro. Quinze scènes de 3 à 6 s enchaînent les erreurs : mire, compte à rebours qui dépasse zéro, Comic Sans arc-en-ciel, ancre décalée, Media Offline, volets étoile et cœur, particules en grille, marche à deux poses, glitch, letterbox. Sous-titres de bruitage fictifs, chute par courriel de refus. Drôle et lisible, mais lent (61 % de maintiens).",
+  "prompt_vs_result": [
+    "Le prompt imposait : une page HTML d'environ une minute, un showreel volontairement pénible qui montre un très mauvais motion designer, au point de faire rejeter le CV, avec « le strict minimum ».",
+    "Claude a décidé seul : la fausse page portfolio rétro autour du lecteur, le catalogue de 15 erreurs nommées, les sous-titres de bruitage fictifs, le curseur qui clique « pause », la coda avec courriel de refus, et la durée exacte de 1:00 au compteur.",
+    "Prompt d'une ligne bien cadré par son intention (faire rire par l'échec) ; le modèle a lu « strict minimum » comme l'attitude du personnage, pas comme un effort réduit. Il aurait fallu préciser le rythme (pas de temps mort) et demander une vraie bande-son."
+  ],
+  "da": {
+    "palette": [
+      {
+        "hex": "#FEFEFE",
+        "role": "fond de la page portfolio (le lecteur n'occupe que 75 % × 67 % du cadre, calé à gauche)"
+      },
+      {
+        "hex": "#BA0327",
+        "role": "bandeau défilant « AVAILABLE FOR HIRE » en haut de page"
+      },
+      {
+        "hex": "#469536",
+        "role": "affiche d'ouverture, dégradé olive vers #868B16"
+      },
+      {
+        "hex": "#7DFF38",
+        "role": "bouton lecture vert acide"
+      },
+      {
+        "hex": "#3B2B1C",
+        "role": "amorce de compte à rebours « vintage » (juste marron)"
+      },
+      {
+        "hex": "#FAFA83",
+        "role": "mot « MY » jaune pâle sur blanc, illisible"
+      },
+      {
+        "hex": "#ED00F2",
+        "role": "carton « MY TRANSITIONS » et mot « PASION »"
+      },
+      {
+        "hex": "#41FF1C",
+        "role": "volet étoile"
+      },
+      {
+        "hex": "#15FFFC",
+        "role": "volet horloge"
+      },
+      {
+        "hex": "#FBFF09",
+        "role": "volet cœur"
+      },
+      {
+        "hex": "#F17C06",
+        "role": "zoom tournoyant"
+      },
+      {
+        "hex": "#7711D7",
+        "role": "faux fondu enchaîné"
+      },
+      {
+        "hex": "#B9031E",
+        "role": "écran Media Offline"
+      },
+      {
+        "hex": "#2D0B49",
+        "role": "fond des fausses particules"
+      },
+      {
+        "hex": "#55A8FA",
+        "role": "ciel de la scène personnage (herbe #39D339)"
+      },
+      {
+        "hex": "#E90049",
+        "role": "bouton HIRE ME, puis #11A9D8, #29E307 et #9D00F4 à chaque rebond"
+      },
+      {
+        "hex": "#17F6EB",
+        "role": "frange cyan du glitch RGB sur EPIC (frange rouge #E50038)"
+      },
+      {
+        "hex": "#000000",
+        "role": "fond EPIC, fermeture letterbox et coda finale"
+      }
+    ],
+    "type": "Comic Sans gras arc-en-ciel à contour noir (titres, ≈ 20 % de la hauteur du lecteur), Impact noir capitales (MOTION ≈ 20 %), Times New Roman (page), mono verte (timecode), script pinceau (Character Animation) ; aucun interlettrage travaillé.",
+    "texture": "Aucun grain. Ombres portées dures et contours noirs épais sur les titres WordArt ; flare de lentille blanc ; glitch RGB rouge/cyan ; vignettage gris autour du logo client ; filigrane diagonal gris translucide sur tout le lecteur ; aucun flou de mouvement, même sur des rotations à 11-22°/im.",
+    "style": "parodie de portfolio web 2003",
+    "coherence": "Le cadre fixe (page, bandeau, lecteur, filigrane, sous-titres, compteur, curseur) tient tout le film et la règle « une erreur nommée par scène » assure la lisibilité. À l'intérieur, police et palette changent volontairement à chaque scène : l'incohérence est le sujet, et elle est cohérente avec lui."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Pas de piste audio, donc ni BPM ni synchro. 13 coupes franches détectées plus ≈ 8 changements internes (chiffres du compte à rebours, apparitions, disparitions) ; plans de 0,2 à 8,5 s, médiane 5 s. 61 % du temps en maintien statique (42,3 s sur 69,5 s) : Media Offline tenu 2,5 s, blancs de 0,2 s (f1138-f1149) et de 1 s (23,95-24,98 s), « too cinematic? » tenu 1,1 s, coda noire de 8,5 s. Seule section pulsée : les transitions de 33,0 à 37,5 s, une toutes les ≈ 1 s (départs à 33,02 / 33,93 / 35,00 / 35,95 / 37,48 s, écarts 0,91 / 1,07 / 0,95 / 1,53 s), chacune de 23 à 33 im. Le compte à rebours bat à 41-43 im par chiffre (0,7 s). Densité d'idées forte (≈ 1 gag écrit toutes les 2 s) mais densité de mouvement faible : on lit plus qu'on ne regarde.",
+    "timeline": [
+      {
+        "t": "0:00-0:00.87",
+        "what": "Affiche « SHOWREAL 2026 » en Comic Sans arc-en-ciel, gros bouton lecture vert, « click to play · sound on (sorry) »",
+        "technique": "page portfolio rétro + titre WordArt"
+      },
+      {
+        "t": "0:00.87-0:03.45",
+        "what": "Mire SMPTE « BARS & TONE (my professor said to) », [1 kHz TEST TONE]",
+        "technique": "mire de barres"
+      },
+      {
+        "t": "0:03.45-0:06.95",
+        "what": "Amorce marron 3-2-1-0-(-1), 0,7 s par chiffre, [BEEP] puis [BEEP??], bouton « Skip intro » inerte",
+        "technique": "compte à rebours qui dépasse zéro"
+      },
+      {
+        "t": "0:06.95-0:08.83",
+        "what": "Le titre naît minuscule et tourne en grossissant jusqu'à déborder du lecteur ; fond à teinte tournante",
+        "technique": "spin-in linéaire + hue-rotate"
+      },
+      {
+        "t": "0:08.83-0:12.97",
+        "what": "Titre posé ; flare et [BOOM (LATE)] ≈ 0,7 s après ; sous-titre tapé qui sort du cadre ; [MUSIC CONTINUES, UNAWARE]",
+        "technique": "accent en retard + machine à écrire qui déborde"
+      },
+      {
+        "t": "0:12.97-0:18.97",
+        "what": "Logo client « Gary's Gutters » avec poignées de sélection, balancier autour d'une ancre décalée, bandeau jaune mal groupé",
+        "technique": "ancre décalée + lower third cassé"
+      },
+      {
+        "t": "0:18.97-0:19.17",
+        "what": "12 im de lecteur vide",
+        "technique": "trou de timeline"
+      },
+      {
+        "t": "0:19.17-0:20.60",
+        "what": "« MOTION » s'écrase en 13 im, tremblement de 18 im, [THUD] 20 im plus tard",
+        "technique": "slam ease-in + tremblement décroissant"
+      },
+      {
+        "t": "0:20.60-0:23.95",
+        "what": "« MY » jaune sur blanc, « PASION » magenta, post-it « *passion (fixing in v8) », sorties une à une",
+        "technique": "texte illisible + faute assumée"
+      },
+      {
+        "t": "0:23.95-0:24.98",
+        "what": "Lecteur vide pendant 1 s",
+        "technique": "temps mort"
+      },
+      {
+        "t": "0:24.98-0:29.98",
+        "what": "« [ COOL 3D SECTION GOES HERE ] », carré à ombre décalée, rendu bloqué à 99 %, fenêtre d'erreur « Please imagine the rest »",
+        "technique": "fausse 3D + barre qui ment + boîte d'erreur"
+      },
+      {
+        "t": "0:29.98-0:32.50",
+        "what": "Écran rouge Media Offline « explosion_FINAL_v7_REAL_actual.mov (this was the best part) », [MUSIC STOPS]",
+        "technique": "clin d'œil Premiere, plan fixe de 2,5 s"
+      },
+      {
+        "t": "0:32.50-0:37.48",
+        "what": "« MY TRANSITIONS » puis volets étoile, horloge, cœur et zoom tournoyant, un par seconde ; le curseur clique sur « pause »",
+        "technique": "catalogue de transitions nommées"
+      },
+      {
+        "t": "0:37.48-0:38.48",
+        "what": "« CROSS DISSOLVE (dissolve not included in free trial) » atteint par coupe franche",
+        "technique": "le texte contredit l'image"
+      },
+      {
+        "t": "0:38.48-0:43.48",
+        "what": "« ORGANIC PARTICLE SIMULATION » : grille d'émojis étincelles qui oscillent ensemble, « particles: 10,000 (approx.) »",
+        "technique": "fausses particules"
+      },
+      {
+        "t": "0:43.48-0:48.48",
+        "what": "Bonhomme bâton qui glisse avec 2 poses, ombre à mi-vitesse, sortie coupée par le bord, [FOOTSTEPS, NOT SYNCED]",
+        "technique": "marche à 2 poses"
+      },
+      {
+        "t": "0:48.48-0:53.40",
+        "what": "« EPIC » en glitch RGB à 12 Hz, flares, « NOW IN CINEMATIC 2.39:1 », puis letterbox qui se ferme et « too cinematic? »",
+        "technique": "glitch + fermeture letterbox"
+      },
+      {
+        "t": "0:53.40-0:57.98",
+        "what": "« HIRE ME » rebondit façon DVD, change de couleur à chaque choc, touche le coin ; la barre de rendu recule jusqu'à -2 %",
+        "technique": "rebond DVD + barre qui ment"
+      },
+      {
+        "t": "0:57.98-1:00.98",
+        "what": "« THANK YOU FOR WATCH » tapé sur dégradé, carte de contact inclinée, coupé en plein mot",
+        "technique": "machine à écrire coupée"
+      },
+      {
+        "t": "1:00.98-1:09.47",
+        "what": "Noir « the rest of my portfolio is under construction », bouton replay, notification de refus à 1:02.28",
+        "technique": "chute en rappel"
+      }
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio (dossier : audio=no ; rhythm.jpg : « no audio / no tempo ») ; les planches microscope n'ont ni barre bleue ni point vert. Le son n'existe que sous forme de 22 sous-titres entre crochets.",
+    "synced": [],
+    "style_match": "Sans objet : pas de musique. Les sous-titres fictifs ([EPIC ROYALTY-FREE MUSIC], [BASS DROP (BUDGET)]) parodient justement les musiques posées sans lien avec l'image.",
+    "how_built": "Page HTML rendue sans audio ; le prompt ne demandait pas de son. Le modèle a transformé l'absence de son en gag : chaque sous-titre décrit un défaut de synchro (en retard, pas synchronisé, même whoosh ×4, musique qui redémarre, musique coupée en plein milieu). Aucune technique de synchro à extraire."
+  },
+  "techniques": [
+    {
+      "cat": "layout",
+      "name_fr": "Page portfolio rétro autour du lecteur",
+      "name_en": "fake retro portfolio web page frame",
+      "t": "0:00-1:09.47",
+      "frames": "f0-f4167",
+      "fps": 60,
+      "mechanics": "La vidéo est une capture de page web : titre « Motion Design Portfolio » en Times gras, bandeau rouge #BA0327 qui défile vers la gauche (≈ 15 % de la largeur du cadre par seconde), phrase d'accueil (« it gets really good around 0:48 »), lecteur calé à gauche (x 0,7-75 %, y 18-85 % du cadre), commandes, pied de page « Best viewed at 800×600 · You are visitor #000001 ». Le quart droit du cadre reste blanc. Ce cadre fixe sert de second terrain de gags.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Catalogue d'erreurs, un gag nommé par scène",
+      "name_en": "one labelled failure per scene",
+      "t": "0:00-1:00.98",
+      "frames": "f0-f3659",
+      "fps": 60,
+      "mechanics": "15 scènes de 0,2 à 6 s, chacune illustre un défaut connu et le nomme à l'écran (étiquette, titre, sous-titre ou post-it) : « BARS & TONE (my professor said to) », « 'vintage film' preset (it's just brown) », « walk cycle · 2 frames · took 3 weeks », « the glitch is intentional (it is not) ». Le nom rend le défaut lisible comme une blague et non comme une maladresse. Le compteur du lecteur va de 0:00 à 1:00 pile.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Sous-titres de bruitage fictifs",
+      "name_en": "fake SDH sound captions",
+      "t": "0:01-1:00.98",
+      "frames": "f60-f3659",
+      "fps": 60,
+      "mechanics": "Pas de piste audio. 22 sous-titres entre crochets, blanc gras sur pavé noir, centrés en bas du lecteur (≈ 2 % de la hauteur du cadre), décrivent un son imaginaire et ses ratés : [1 kHz TEST TONE], [BEEP??], [BOOM (LATE)], [WHOOSH (LATE)], [WHOOSH] ×4 (SAME WHOOSH), [NO WHOOSH — NOT IN FREE TRIAL], [FOOTSTEPS, NOT SYNCED], [MUSIC RESTARTS FROM THE BEGINNING], [MUSIC CUTS OFF MID-]. Ils changent à la coupe ou 5 à 20 im après ([THUD] arrive 20 im après l'impact de MOTION). C'est une liste des fautes de synchro à éviter, pas une synchro.",
+      "verdict": "adapter",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Mire de barres puis compte à rebours qui dépasse zéro",
+      "name_en": "bars and tone + countdown past zero",
+      "t": "0:00.87-0:06.95",
+      "frames": "f52-f417",
+      "fps": 60,
+      "mechanics": "Mire SMPTE pendant 2,6 s (f52-f207). Puis amorce film marron #3B2B1C : 3 (f207), 2 (f248), 1 (f290), 0 (f332), -1 (f374), coupe à f417 ; 41 à 43 im par chiffre (0,7 s, contre 1 s sur une vraie amorce), balayage radar de 360° par chiffre, sous-titres [BEEP] → [BEEP?] → [BEEP??]. Bouton « Skip intro » inerte. Bon gag d'ouverture : la règle (compter jusqu'à zéro) est cassée d'un cran.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f417.jpg"
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Titre WordArt arc-en-ciel en Comic Sans",
+      "name_en": "rainbow Comic Sans WordArt title",
+      "t": "0:00-0:12.97",
+      "frames": "f0-f778",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) « SHOWREAL 2026 » en Comic Sans gras, une couleur par lettre (rouge, orange, jaune, vert, bleu, violet), contour noir épais, ombre portée dure ; ≈ 20 % de la hauteur du lecteur une fois posé. Sous-titre en Comic Sans orange avec curseur bloc jaune.",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Dégradé à teinte tournante",
+      "name_en": "hue-rotating gradient",
+      "t": "0:06.95-0:12.97",
+      "frames": "f417-f778",
+      "fps": 60,
+      "mechanics": "Dégradé linéaire diagonal dont la teinte tourne en continu : cyan-vert (7 s) → jaune (8 s) → orange-rouge (8,5 s) → vert (10,5 s) → bleu (11 s) → violet #6B0AE5 (12 s), soit ≈ 300° en 5 s (≈ 60°/s), probable filter: hue-rotate. Même fond pour l'outro (57,98-60,98 s : cyan #1CF0CF → jaune #FAEB1D → rose #F05A62).",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Titre qui tourne en grossissant jusqu'à déborder",
+      "name_en": "spin-in title overshooting the frame",
+      "t": "0:06.95-0:08.83",
+      "frames": "f417-f530",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Le titre naît minuscule au centre (≈ 3 % de la largeur à f417) et tourne en grossissant : ≈ 2°/im sur f417-f437, puis un tour complet en 32 im (f483-f515, ≈ 11°/im, vitesse constante) ; il passe à l'envers, déborde du lecteur (« SHOWREAL 202 » coupé sur f512-f518) puis s'arrête sec vers f522-f530. Aucune courbe d'arrivée, aucun flou de mouvement. Total ≈ 113 im (1,9 s).",
+      "verdict": "cliche",
+      "evidence": "microM-003-move-f498.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Flare et « boom » en retard",
+      "name_en": "late lens flare accent",
+      "t": "0:09.00-0:10.50",
+      "frames": "f540-f630",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Le titre se pose vers 8,8 s ; le flare blanc (en haut à gauche, ≈ 15 % de la largeur du lecteur) ne s'allume qu'à ≈ 9,5 s et [BOOM (LATE)] s'affiche de 9 à 10 s : l'accent arrive ≈ 0,7 s (≈ 40 im) après l'impact. Démonstration par l'absurde : un accent lumineux doit tomber sur l'image d'impact.",
+      "verdict": "cliche",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Machine à écrire qui déborde du cadre",
+      "name_en": "overflowing typewriter subtitle",
+      "t": "0:09.50-0:12.97",
+      "frames": "f570-f778",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) « Claude — Motion Designer / Animator / VFX Artist / Director / Visionary » tapé en Comic Sans orange avec curseur bloc jaune, ≈ 25 caractères/s ; la ligne sort du lecteur à droite (« Visionar… » coupé). Corps ≈ 5 % de la hauteur du lecteur, contraste faible sur le dégradé.",
+      "verdict": "cliche",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Outils d'éditeur oubliés dans le rendu",
+      "name_en": "editor overlays left in render",
+      "t": "0:00-1:00.98",
+      "frames": "f0-f3659",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Restent visibles : repères de zone titre roses (deux rectangles fins), voyant REC qui clignote, timecode vert « TC (25fps) » sur un rendu à 60 im/s, nom de fichier « SHOWREAL_final_FINAL_v7_USE_THIS_ONE (2).mp4 », filigrane diagonal « UNREGISTERED VERSION · FREE TRIAL (DAY 347 OF 30) » sur toute l'image, poignées de sélection bleues et réticule rouge autour du logo client, flèche de souris.",
+      "verdict": "cliche",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Rotation autour d'une ancre décalée",
+      "name_en": "off-centre anchor point swing",
+      "t": "0:12.97-0:18.97",
+      "frames": "f778-f1138",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Le logo « Gary's Gutters » (carte blanche arrondie, Comic Sans bleu, goutte) pivote autour d'un réticule rouge placé à son coin haut gauche : -70° à 13,0 s, ≈ 1,7°/im sur f777-f801, puis balancier amorti (±25° vers 14-15 s, ±10° vers 16-18 s). Le logo balaie le cadre au lieu de tourner sur lui-même. Sous-titre [UNCLE GARY, FAINTLY: « MAKE THE LOGO POP »].",
+      "verdict": "cliche",
+      "evidence": "microM-004-move-f781.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Bandeau titre (lower third) mal assemblé",
+      "name_en": "broken lower third",
+      "t": "0:15.50-0:18.97",
+      "frames": "f930-f1138",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Pavé jaune « CLIENT: Gary's Gutters (my uncle) » qui glisse depuis la gauche en ≈ 1,5 s (15,5-17,0 s), tandis que la suite « BUDGET: $0 · STATUS: ongoing dispute » reste fixe, hors du pavé : les deux moitiés ne sont pas groupées et le texte déborde du fond. [WHOOSH (LATE)] arrive après le glissement.",
+      "verdict": "cliche",
+      "evidence": "overview-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Trou blanc dans la timeline",
+      "name_en": "timeline gap flash",
+      "t": "0:18.97-0:19.17",
+      "frames": "f1138-f1149",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) 12 im (0,2 s) de lecteur vide, seuls les repères roses restent, entre le logo et MOTION ; puis 1 s de vide (23,95-24,98 s) avant la section 3D. Montre le « trou » d'un montage mal raccordé : un éclair blanc qui casse la continuité.",
+      "verdict": "cliche",
+      "evidence": "microM-005-cut-f1138.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot qui s'écrase avec tremblement décroissant",
+      "name_en": "word slam + decaying screen shake",
+      "t": "0:19.17-0:19.72",
+      "frames": "f1150-f1183",
+      "fps": 60,
+      "mechanics": "« MOTION » en Impact noir arrive à ≈ ×3 (lettres coupées « JTION », 35 % du lecteur noirci) et rétrécit jusqu'à sa place en haut à gauche (≈ 20 % de la hauteur du lecteur) en 13 im (f1150-f1163, 0,22 s) avec une courbe qui accélère (ease-in) : surface noire -0,6 %/im au début, -4 %/im à la fin. À l'impact, tout le contenu tremble : décalage aléatoire à chaque image, 8-9 px (≈ 1 % de la largeur) qui décroît jusqu'à 0 en 18 im (f1163-f1181) ; les bords noirs du conteneur apparaissent (défaut : il fallait agrandir le contenu de 2 %). [THUD] s'affiche 20 im après l'impact (f1183). Seul geste à la bonne courbe du film.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg",
+      "illus": {
+        "from": 1148,
+        "to": 1182,
+        "n": 8
+      }
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Texte jaune pâle sur blanc et faute corrigée par post-it",
+      "name_en": "unreadable yellow-on-white + typo sticky note",
+      "t": "0:20.58-0:23.95",
+      "frames": "f1235-f1437",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) « MY » jaune #FAFA83 sur fond #FEFEFE (contraste ≈ 1,1:1) arrive en tournant (vertical à 21,0 s, posé à 21,5 s) ; « PASION » magenta #EA00FA avec ombre portée chevauche « MY » à 21,63 s ; post-it jaune incliné « *passion (fixing in v8) » vers 22,5 s. Les éléments disparaissent un par un à 23,45 / 23,72 / 23,95 s, sans animation de sortie.",
+      "verdict": "cliche",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "3d",
+      "name_fr": "Fausse 3D par ombre décalée",
+      "name_en": "fake 3D via offset shadow",
+      "t": "0:24.98-0:29.98",
+      "frames": "f1499-f1799",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Sous « [ COOL 3D SECTION GOES HERE ] » en Times, un carré bleu #4883D8 marqué « 3D », doublé d'un carré marine décalé vers le bas à droite, fait office de 3D ; il oscille en 2D (±30°, une nouvelle orientation toutes les ≈ 0,5 s), sans perspective ni éclairage. [LAPTOP FAN INTENSIFIES].",
+      "verdict": "cliche",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Barres de progression qui mentent",
+      "name_en": "lying progress bars",
+      "t": "0:25.00-0:57.98",
+      "frames": "f1500-f3479",
+      "fps": 60,
+      "mechanics": "« Rendering 3D… » : 0 % (25,0 s) → 9 → 31 → 52 → 74 → 95 % (27,5 s) → « 99 % (stuck) » à 28 s, soit ≈ 20 % par 0,5 s puis blocage. Plus loin, « Rendering ending… » recule de 12 % (53,5 s) à 9, 7, 5, 3, 1, 0 puis -2 % (57,5 s). Barre verte, police mono, ≈ 40 % de la largeur du lecteur. Ressort comique réutilisable pour illustrer une douleur (« avant » le produit).",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtre d'erreur système comme chute",
+      "name_en": "system error dialog punchline",
+      "t": "0:28.18-0:29.98",
+      "frames": "f1691-f1799",
+      "fps": 60,
+      "mechanics": "Boîte de dialogue façon Windows 98 (barre de titre bleue #1566B7 → #061986, croix rouge, boutons gris « Close program » et « Ok ») qui apparaît sèchement à f1691, sans animation : « cool_3d_part.exe has stopped working. Please imagine the rest. » ; [ERROR DING]. Tenue 1,8 s puis coupe franche vers Media Offline.",
+      "verdict": "reprendre",
+      "evidence": "microM-006-cut-f1799.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "Écran Media Offline",
+      "name_en": "Media Offline slate",
+      "t": "0:29.98-0:32.50",
+      "frames": "f1799-f1950",
+      "fps": 60,
+      "mechanics": "Aplat rouge #B9031E de Premiere, « Media Offline » blanc gras (≈ 8 % de la hauteur du lecteur), nom de fichier mono « explosion_FINAL_v7_REAL_actual.mov », « (this was the best part) » en italique ; [MUSIC STOPS]. Plan fixe de 2,5 s : bon clin d'œil de métier, mais le plus long temps mort du film.",
+      "verdict": "adapter",
+      "evidence": "microM-006-cut-f1799.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet étoile",
+      "name_en": "star wipe",
+      "t": "0:33.02-0:33.42",
+      "frames": "f1981-f2005",
+      "fps": 60,
+      "mechanics": "(Gag volontaire, mais masque bien exécuté.) Étoile à 5 branches verte #41FF1C qui grandit depuis le centre et révèle la scène suivante, titre compris (« MY TR★AR WIONS » à f1991). Couverture du cadre : 0,6 % (f1983) → 14 % (f1990) → 50 % (f1996) → 89 % (f2005), soit 24 im (0,40 s) ; taille linéaire après un léger départ lent ; bord net, sans adoucissement ni flou. [WHOOSH] ×4 (SAME WHOOSH).",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg",
+      "illus": {
+        "from": 1981,
+        "to": 2005,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet horloge",
+      "name_en": "clock wipe",
+      "t": "0:33.93-0:34.48",
+      "frames": "f2036-f2069",
+      "fps": 60,
+      "mechanics": "Secteur cyan #15FFFC qui balaie depuis midi, dans le sens horaire, autour du centre : 360° en 33 im (0,55 s), vitesse angulaire constante ≈ 11°/im (la surface couverte grandit vite vers 3 h et 9 h, lentement vers 6 h et midi : signature d'un angle linéaire dans un cadre 16:9).",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Volet cœur",
+      "name_en": "heart wipe",
+      "t": "0:35.00-0:35.38",
+      "frames": "f2100-f2123",
+      "fps": 60,
+      "mechanics": "Cœur jaune #FBFF09 qui grandit depuis le centre : couverture 1 % (f2103) → 25 % (f2111) → 75 % (f2118) → 89 % (f2123), 23 im (0,38 s), même courbe que l'étoile.",
+      "verdict": "cliche",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Zoom tournoyant",
+      "name_en": "spin zoom",
+      "t": "0:35.95-0:36.48",
+      "frames": "f2157-f2189",
+      "fps": 60,
+      "mechanics": "Carte orange #F17C06 « SPIN ZOOM (PRO) » née à ≈ 1 % au centre de la scène précédente, ≈ 1,7 tour en grossissant jusqu'au plein cadre en 32 im (0,53 s) ; ≈ 20-22°/im à vitesse constante (f2172 à 0°, f2180 à 180°, f2188 à ≈ 360°), arrêt sec à 0° sur f2189 (la couverture saute de 75 % à 88 % sur la dernière image). Aucun flou de mouvement, aucune décélération.",
+      "verdict": "cliche",
+      "evidence": "microM-007-move-f2187.jpg",
+      "illus": {
+        "from": 2160,
+        "to": 2189,
+        "n": 6
+      }
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Faux fondu enchaîné (coupe franche)",
+      "name_en": "cross dissolve that is a hard cut",
+      "t": "0:37.48",
+      "frames": "f2249",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Carton violet #7711D7 « CROSS DISSOLVE » sous-titré « (dissolve not included in free trial) » : on y arrive par coupe franche à f2249, sans aucune image intermédiaire (microM-008), avec [NO WHOOSH — NOT IN FREE TRIAL]. Ressort comique : le texte annonce, l'image contredit.",
+      "verdict": "adapter",
+      "evidence": "microM-008-move-f2252.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Section transitions pulsée à ≈ 1 s",
+      "name_en": "one-transition-per-second showcase",
+      "t": "0:32.50-0:38.48",
+      "frames": "f1950-f2309",
+      "fps": 60,
+      "mechanics": "Seule partie régulière du film : départs à 33,02 / 33,93 / 35,00 / 35,95 / 37,48 s (écarts 0,91 / 1,07 / 0,95 / 1,53 s) ; chaque transition dure 23 à 33 im, puis le carton tient ≈ 0,5 s. Le titre de chaque carton est le nom de la transition qui vient de jouer : on lit le procédé en même temps qu'on le voit.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Aplats primaires saturés à 100 %",
+      "name_en": "full-saturation flat colours",
+      "t": "0:32.50-0:38.48",
+      "frames": "f1950-f2309",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Un aplat par carton, tous à saturation maximale : magenta #ED00F2, vert #41FF1C, cyan #15FFFC, jaune #FBFF09, orange #F17C06, violet #7711D7 ; titres en Comic Sans de couleur complémentaire à contour sombre. Aucune harmonie, aucun neutre : vibration optique.",
+      "verdict": "cliche",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "« Particules organiques » en grille d'émojis",
+      "name_en": "emoji grid fake particles",
+      "t": "0:38.48-0:43.48",
+      "frames": "f2309-f2609",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) ≈ 35 émojis étincelles jaunes #FFF600 alignés en grille régulière (≈ 7 colonnes × 5 rangs) sur fond violet nuit #2D0B49, qui oscillent tous en même phase ; titre « ORGANIC PARTICLE SIMULATION » rose orangé lumineux ; étiquette « particles: 10,000 (approx.) » ; [MUSIC RESTARTS FROM THE BEGINNING]. 5 s pour une seule idée.",
+      "verdict": "cliche",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Marche à deux poses qui glisse, ombre détachée",
+      "name_en": "two-pose sliding walk, unparented shadow",
+      "t": "0:43.48-0:48.48",
+      "frames": "f2609-f2909",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) Bonhomme bâton qui entre à f2623 et glisse en continu de gauche à droite (≈ 23 % de la largeur du lecteur par seconde, ≈ 3,4 px/im) ; ses jambes alternent entre 2 poses toutes les 30 im (pics de différence à f2639, f2669, f2699), soit un cycle à 2 im/s qui patine. Son ombre avance à ≈ moitié de sa vitesse : elle n'est qu'à ≈ 52 % de la largeur quand il atteint le bord droit, où il sort coupé. Titre en script pinceau à ombre portée, « walk cycle · 2 frames · took 3 weeks », [FOOTSTEPS, NOT SYNCED].",
+      "verdict": "cliche",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Glitch RGB qui saute à 12 Hz et flares en série",
+      "name_en": "12 Hz RGB-split jitter + stacked lens flares",
+      "t": "0:48.48-0:51.50",
+      "frames": "f2909-f3090",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) « EPIC » en grotesque très grasse condensée (type Impact) blanc #EEFDFF, ≈ 30 % de la hauteur du lecteur, avec franges rouge #E50038 et cyan #17F6EB décalées d'≈ 1 % ; le décalage change toutes les 5 im (12 Hz, pics réguliers de f2929 à f3024). 3 à 4 flares à anneaux dérivent lentement ; ligne verte mono « VFX SHOWCASE — the glitch is intentional (it is not) » ; « NOW IN CINEMATIC 2.39:1 » blanc très espacé. [BASS DROP (BUDGET)].",
+      "verdict": "cliche",
+      "evidence": "microM-010-cut-f2909.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Letterbox qui se referme jusqu'au noir",
+      "name_en": "letterbox close to black",
+      "t": "0:51.50-0:52.30",
+      "frames": "f3090-f3138",
+      "fps": 60,
+      "mechanics": "Les bandes noires « cinémascope » se rejoignent comme des paupières : elles mangent « NOW IN CINEMATIC » vers f3093-f3096, puis la bande visible passe de ≈ 35 % de la hauteur du lecteur (f3111) à ≈ 14 % (f3117), 3 % (f3123) et 0 (f3126). ≈ 36 im (0,6 s) en accélérant (ease-in), l'essentiel sur les 15 dernières images. 12 im de noir, puis « too cinematic? » en petit serif italique gris (f3138), tenu 1,1 s ; [CINEMATIC SILENCE (MUSIC STILL PLAYING)]. Transition au noir motivée par le texte qui la précède.",
+      "verdict": "adapter",
+      "evidence": "extra-03.jpg",
+      "illus": {
+        "from": 3093,
+        "to": 3138,
+        "n": 6
+      }
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Bouton HIRE ME en rebond d'écran de veille DVD",
+      "name_en": "DVD-screensaver bounce",
+      "t": "0:53.40-0:57.98",
+      "frames": "f3204-f3479",
+      "fps": 60,
+      "mechanics": "Sous « please enjoy this while the ending renders », bouton rouge #E90049 « HIRE ME » (≈ 9 % × 7 % du lecteur) en trajectoire rectiligne à vitesse constante (≈ 0,33 largeur/s et ≈ 0,39 hauteur/s du lecteur), réflexion instantanée sans écrasement ; couleur changée à chaque choc : bleu #11A9D8 (bord droit, 54,67 s), vert #29E307 (bas, 54,97 s), violet #9D00F4 (coin haut gauche, 57,08 s) ; « !!! IT HIT THE CORNER !!! » jaune à contour noir. [MUSIC, BUT MUFFLED, FOR SOME REASON].",
+      "verdict": "adapter",
+      "evidence": "overview-10.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Remerciement tapé puis coupé en plein mot",
+      "name_en": "typed outro cut mid-word",
+      "t": "0:58.40-1:00.98",
+      "frames": "f3504-f3659",
+      "fps": 60,
+      "mechanics": "(Gag volontaire.) « THANK YOU FOR WATCH » en Comic Sans gras blanc à contour noir (≈ 10 % de la hauteur du lecteur), tapé à ≈ 7 caractères/s (≈ 1 lettre toutes les 8-9 im) sur le dégradé à teinte tournante ; carte de contact inclinée de ≈ -3° « 555-0199 (after 2pm) · ask my mom · hire me pls » à bord magenta. Coupe franche à f3659 avant « ING » ; [TRIUMPHANT OUTRO] devient [MUSIC CUTS OFF MID-].",
+      "verdict": "cliche",
+      "evidence": "microM-012-cut-f3659.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur de spectateur qui tente de mettre en pause",
+      "name_en": "viewer cursor clicking pause",
+      "t": "0:30.00-1:09.47",
+      "frames": "f1800-f4167",
+      "fps": 60,
+      "mechanics": "Une flèche de souris se promène sur l'image (dès 1 s) ; pendant les transitions, elle clique sur le bouton du lecteur, dont l'étiquette évolue : « pause » → « pause (not implemented) » (32,5 s) → « pause (still not implemented) » (34 s) → « pause (please stop clicking) » (35,5 s) ; à la fin, le bouton devient « replay ». Un second récit, muet, dans l'interface.",
+      "verdict": "reprendre",
+      "evidence": "overview-06.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Chute : courriel de refus en notification",
+      "name_en": "rejection email toast punchline",
+      "t": "1:00.98-1:09.47",
+      "frames": "f3659-f4167",
+      "fps": 60,
+      "mechanics": "Coupe au noir : « that's it. the rest of my portfolio is under construction » en petit gris centré. À f3737 (1:02.28), une notification de messagerie blanche arrondie entre en haut à droite de la page, hors lecteur, en ≈ 6 im (ease-out : 80 % du changement sur les 2 premières images) : « Re: Senior Motion Designer application… We made it through the bars and tone. We've decided to move forward with other candidates (all of them). » Rappel (callback) du deuxième plan, puis 7,2 s de maintien.",
+      "verdict": "reprendre",
+      "evidence": "overview-11.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {
+      "kind": "direction",
+      "insight": "« painful to see… shows what an absolutely terrible motion designer you are » : le modèle n'a pas fait une vidéo réellement laide, il a fait une vidéo sur la laideur. Chaque défaut est montré puis nommé (étiquette, sous-titre, post-it), ce qui transforme l'incompétence en démonstration de culture métier."
+    },
+    {
+      "kind": "structure",
+      "insight": "« 1 minute » : le showreel fictif dure exactement 1:00 au compteur du lecteur (0:00 → 1:00) ; les 8,5 s de coda (courriel de refus) sont ajoutées hors compteur, d'où un fichier de 69,5 s."
+    },
+    {
+      "kind": "other",
+      "insight": "« designed to get your résumé immediately rejected » est pris au pied de la lettre et devient la chute : la notification de refus cite le deuxième plan (« we made it through the bars and tone »)."
+    },
+    {
+      "kind": "other",
+      "insight": "« Do the absolute bare minimum » est lu comme l'attitude du personnage (« Please imagine the rest », « dissolve not included in free trial », « 2 frames · took 3 weeks ») et non comme un effort réduit du modèle : ≈ 40 gags écrits."
+    },
+    {
+      "kind": "build",
+      "insight": "« HTML page » : le modèle a construit une page web entière autour du lecteur (bandeau défilant, compteur de visites, commandes, notification). Le cadre web devient une surface de gags, mais il réduit le lecteur à 75 % × 67 % du cadre."
+    },
+    {
+      "kind": "inputs",
+      "insight": "Ni musique ni son fournis ou demandés : le modèle a remplacé la bande-son par des sous-titres de bruitage, qui portent les blagues de synchro (en retard, pas synchronisé, même whoosh ×4)."
+    },
+    {
+      "kind": "qa",
+      "insight": "Rien dans le prompt sur le rythme : 61 % de maintiens et une coda de 8,5 s. Pour une parodie plus percutante, il aurait fallu imposer une durée maximale par gag (≈ 2-3 s) et aucun plan fixe de plus d'1 s."
+    }
+  ],
+  "steal": [
+    "Slam de mot : échelle ×3 → ×1 en 13 im en accélérant (ease-in), puis tremblement aléatoire décroissant (1 % → 0) sur 18 im, sans montrer les bords.",
+    "Fermer une scène comme des paupières : deux bandes letterbox qui se rejoignent en 0,6 s en accélérant, 12 im de noir, puis une seule ligne de texte.",
+    "Faire de l'interface un second récit : un curseur qui clique « pause », une étiquette qui change à chaque clic, une notification qui livre la chute.",
+    "Terminer sur un rappel (callback) : la dernière réplique cite un des premiers plans, ce qui referme la boucle et récompense le spectateur attentif.",
+    "Nommer chaque effet à l'écran pendant qu'il joue (titre du carton = nom de la transition) : le spectateur lit le procédé ; idéal en tutoriel ou démo."
+  ],
+  "flaws": [
+    "61 % de maintiens statiques : Media Offline tenu 2,5 s, blancs de 1 s, coda noire de 8,5 s ; les gags respirent trop.",
+    "Lecteur réduit à 75 % × 67 % du cadre : sous-titres et étiquettes à ≈ 2 % de hauteur, illisibles sur mobile.",
+    "Aucun son réel : les gags de synchro restent lus, jamais entendus.",
+    "Hors slam et letterbox, tout est linéaire et sans flou de mouvement : même volontaire, peu de courbes à apprendre."
+  ],
+  "deep_study": {
+    "worth": false,
+    "why": "Non : mouvements volontairement linéaires et pauvres ; les deux gestes soignés (slam avec tremblement, fermeture letterbox) sont déjà mesurés image par image ici (extra-01, extra-03). L'intérêt est dans l'écriture des gags, lisible à 2 im/s."
+  }
+}

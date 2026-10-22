@@ -1,0 +1,333 @@
+{
+  "slug": "kamstudiolabs-c9bb28",
+  "title": "Animated short about a bug",
+  "craft": 4,
+  "craft_reason": "Vrai récit en trois actes porté par des gags visuels malins (s'éteindre pour se cacher, imiter le curseur texte, se percher sur le chasseur, trêve par commentaire, chute WON'T FIX) dans une direction artistique cohérente ; l'animation du personnage reste une marionnette simple et le milieu (47-67 s) s'enlise.",
+  "style": {
+    "family": "animation 2D vectorielle douce, nocturne, interface de code stylisée",
+    "palette": ["#1E2046", "#0E0F29", "#56919F", "#827AD4", "#D2658D", "#E17A44", "#E7DFCB", "#E64E58", "#89333C", "#FAF3FF", "#ECE4CC"],
+    "type": ["aucun texte avant la fin", "code en pastilles arrondies + vraie ponctuation", "carton final en grotesque condensée grasse (type Bebas ou Oswald, probable), capitales, ≈ 17 % de la hauteur"],
+    "texture": "une seule source de lumière (le bug), halo doux, vignettage centré sur le personnage, ombre portée sous le curseur, flou directionnel en poursuite, grain léger probable",
+    "mood": "tendre, comique, nocturne"
+  },
+  "rhythm": {
+    "bpm": 120,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "acts": [
+      "0-5 s : chambre de nuit, plongée dans l'écran",
+      "5-16,4 s : exposition, la luciole dort, se réveille, est détectée (soulignement rouge)",
+      "16,4-27 s : le curseur arrive, elle s'éteint pour se cacher, il bondit",
+      "27-32,4 s : croix de sélection puis suppression, elle survit",
+      "32,4-47 s : poursuite, camouflage en curseur texte, cachette sur la pointe du curseur",
+      "47-67 s : siège par surbrillance rouge (long, confus)",
+      "68-77 s : résolution, commentaire tapé, l'erreur disparaît, trêve",
+      "79-88 s : endormissement (lueur sur le temps), retour dans la chambre",
+      "88-90 s : carton WON'T FIX"
+    ]
+  },
+  "family": "personnages",
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille théorique 120 BPM partant de 0 (1 temps = 30 im) : 14/23 événements à ±1 im d'un temps ou demi-temps (hasard ≈ 20 %) — coupes à 21, 27, 44, 68 et 79 s, départ de la poussée à 3,0 s, pose du curseur à 25,75 s, sélection à 30,5 s, bug de profil à 40,25 s, carton (entrée 88,0 s, plein 88,5 s, sortie 89,5 s, fin 90,0 s). La lueur finale bascule 10 fois toutes les 0,5 s, 10/10 à +1 ou +2 im. Hors grille : 3 coupes à −6 im (16,4 / 41,4 / 45,9 s), coupe de 20,2 s (−3 im), croix f1628, filé f2299, clignotement du curseur texte décalé de +3 à +6 im. Coupes de 44 et 68 s et bond de 25,6 s sur des attaques audio (points verts).",
+    "synced": [
+      "coupes",
+      "pulsations",
+      "apparitions",
+      "atterrissages",
+      "camera"
+    ],
+    "style_match": "Musique légère à 120 BPM, aiguë, presque sans grave : colle au ton tendre et nocturne ; la poursuite, elle, ne suit pas le tempo.",
+    "how_built": "Timeline écrite en secondes rondes sur une musique à 120 BPM partant de 0 : à ce tempo, chaque seconde ou demi-seconde est un temps, d'où les moments calés (coupes à 21, 27, 44, 68 et 79 s, lueur, carton de 2 s). Les coupes placées à x,4 ou x,9 s tombent à côté. Bruitages probables sur le bond (25,59 s) et deux coupes."
+  },
+  "techniques": [
+    {
+      "cat": "camera",
+      "name_fr": "Plan d'établissement puis plongée dans l'écran",
+      "name_en": "establishing shot + push into screen",
+      "t": "0:00.0-0:05.0",
+      "frames": "f0-f300",
+      "fps": 60,
+      "mechanics": "Le noir s'ouvre en 1,2 s, presque linéaire (luminance de 0 à 24), plan tenu 1,7 s, poussée de 2 s vers le moniteur ; son cadre sort du champ vers 4,6 s et le code devient le décor.",
+      "verdict": "adapter",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente de découverte",
+      "name_en": "slow reveal push-in",
+      "t": "0:05.0-0:11.0",
+      "frames": "f300-f660",
+      "fps": 60,
+      "mechanics": "Zoom ≈ ×3 sur la ligne où dort la luciole, qui passe de ≈ 3 % à ≈ 10 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "code",
+      "name_fr": "Code abstrait en pastilles",
+      "name_en": "abstracted code pills",
+      "t": "0:05.0-1:24.6",
+      "frames": "f300-f5076",
+      "fps": 60,
+      "mechanics": "Pastilles arrondies colorées par type (sarcelle #56919F, lavande #827AD4, rose #D2658D, orange, gris clair) et vraie ponctuation ( ) = . : | ; commentaires en tirets vert éteint. On lit du code sans rien lire.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Personnage jeu de mots, la luciole-bug",
+      "name_en": "pun character design",
+      "t": "0:05.0-1:24.6",
+      "frames": "f300-f5076",
+      "fps": 60,
+      "mechanics": "Luciole à abdomen lumineux #E7DFCB, tête orange #E17A44, gros yeux ronds, antennes à bouts orange, ailes translucides en vol ; ≈ 10 à 15 % de la hauteur en gros plan, ≈ 3 % en plan large.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Réveil du personnage",
+      "name_en": "wake-up beat",
+      "t": "0:10.0-0:12.0",
+      "frames": "f600-f720",
+      "fps": 60,
+      "mechanics": "Yeux qui s'ouvrent, ailes et antennes qui se dressent vers 11 s ; attaque audio à 11,47 s (action accompagnée, probable).",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Soulignement d'erreur comme signal de récit",
+      "name_en": "squiggle as story signal",
+      "t": "0:15.0 / 1:08.0-1:12.4",
+      "frames": "f900 / f4080-f4344",
+      "fps": 60,
+      "mechanics": "Soulignement ondulé #E64E58 sous la ligne du bug : il apparaît (détecté), revient à 1:08 et disparaît à 1:12,4 quand le commentaire est tapé.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur antagoniste qui change d'outil",
+      "name_en": "cursor as antagonist",
+      "t": "0:16.4-1:17.0",
+      "frames": "f984-f4620",
+      "fps": 60,
+      "mechanics": "Flèche blanche #FAF3FF à ombre portée, 4 à 6 fois la taille du bug (jusqu'à ≈ 65 % de la hauteur en gros plan), sans visage. Sa forme dit son intention : flèche (cherche), croix (sélectionne), sélection de lignes (supprime), main (clique), cercle d'attente (exécute), curseur texte (écrit).",
+      "verdict": "reprendre",
+      "evidence": "microM-002-cut-f1212.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupes axiales sur la réaction",
+      "name_en": "axial punch-in / punch-out",
+      "t": "0:16.4-1:19.0",
+      "frames": "f984, f1212, f1260, f1536, f1620, f2484, f2640, f2754, f4080, f4740",
+      "fps": 60,
+      "mechanics": "Coupes sur le même axe avec un changement d'échelle de ×0,45 à ×2,2 : plan large pour la menace, gros plan pour la réaction.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-cut-f984.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Le personnage éclaire la scène",
+      "name_en": "character as light source",
+      "t": "0:20.62-0:20.85",
+      "frames": "f1237-f1251",
+      "fps": 60,
+      "mechanics": "La luciole éteint sa lueur pour se cacher : toute l'image perd 55 % de luminance (64 à 29) en 14 im (0,23 s), courbe en S ; le curseur devient gris lui aussi. Noir tenu jusqu'à 25,4 s, puis elle rallume (luminance 45).",
+      "verdict": "reprendre",
+      "evidence": "microM-003-cut-f1260.jpg",
+      "illus": {"from": 1232, "to": 1262, "n": 6}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Bond du curseur",
+      "name_en": "cursor pounce",
+      "t": "0:25.63-0:25.75",
+      "frames": "f1538-f1545",
+      "fps": 60,
+      "mechanics": "Entrée par la gauche, 35 à 40 % de la largeur en 3 im (≈ 12 à 15 % par image), puis pose en ≈ 5 im, ease-out, sans dépassement ; attaque audio à 25,59 s (bruitage probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-004-move-f1539.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Sélection rectangle qui rate",
+      "name_en": "marquee selection chase",
+      "t": "0:27.1-0:30.4",
+      "frames": "f1628-f1824",
+      "fps": 60,
+      "mechanics": "La flèche devient une croix ; le rectangle pointillé se redessine autour du bug, qui en sort à chaque fois ; ≈ 3 s de jeu du chat et de la souris.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "particles",
+      "name_fr": "Suppression : le code tombe en miettes",
+      "name_en": "delete disintegration",
+      "t": "0:30.5-0:32.4",
+      "frames": "f1830-f1944",
+      "fps": 60,
+      "mechanics": "Cinq lignes en sélection bleue (≈ 0,4 s), puis désagrégation en fragments de gauche à droite (≈ 0,5 s) qui tombent et dérivent vers le bas à gauche (≈ 1 s) ; le bug flotte, indemne, dans le vide.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 1824, "to": 1944, "n": 8}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra qui suit la fuite",
+      "name_en": "tracking chase",
+      "t": "0:32.4-0:39.5",
+      "frames": "f1944-f2370",
+      "fps": 60,
+      "mechanics": "Le bug reste près du centre, le code défile avec un flou directionnel ; filé de 3 im (f2299-f2301, blocs étalés en rectangles) qui relance la poursuite. Pic d'énergie de mouvement du film.",
+      "verdict": "adapter",
+      "evidence": "microM-009-move-f2310.jpg"
+    },
+    {
+      "cat": "character",
+      "name_fr": "Camouflage en curseur texte",
+      "name_en": "caret mimicry gag",
+      "t": "0:39.6-0:41.4",
+      "frames": "f2376-f2484",
+      "fps": 60,
+      "mechanics": "Le bug se pose près du curseur texte, se tourne de profil en ≈ 12 im (f2415-f2427) en bâtonnet lumineux de sa taille, et clignote avec lui : éteint f2436-f2460 (0,4 s), rallumé à f2463 en même temps. Le curseur clignote ≈ 0,5 s allumé et 0,5 s éteint, sur le temps à 120 BPM (probable).",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 2400, "to": 2484, "n": 8}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Caché sur le chasseur",
+      "name_en": "hide on the hunter",
+      "t": "0:44.0-0:47.0",
+      "frames": "f2640-f2820",
+      "fps": 60,
+      "mechanics": "Le bug se perche sur la pointe de la flèche, seuls ses yeux et ses antennes dépassent (f2742-f2753) ; le curseur le transporte sans le voir.",
+      "verdict": "reprendre",
+      "evidence": "microM-011-cut-f2754.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Siège par surbrillance d'erreur",
+      "name_en": "error-line siege",
+      "t": "0:47.0-1:07.0",
+      "frames": "f2820-f4020",
+      "fps": 60,
+      "mechanics": "Clic de la main : la ligne devient une bande rouge sombre #89333C ; poussée sur le bug piégé (48-52 s) ; la bande se défait par la droite en carrés rouges (53-56 s) ; curseur d'attente (58 s, 64 s) ; la bande s'étend de nouveau (66 s) puis disparaît (67 s). Sens flou, 20 s.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Résolution par commentaire",
+      "name_en": "comment as truce",
+      "t": "1:09.7-1:12.4",
+      "frames": "f4182-f4344",
+      "fps": 60,
+      "mechanics": "Le curseur sort ; un curseur texte ouvre une ligne au-dessus et tape un commentaire (la pastille verte s'allonge de gauche à droite en ≈ 2,4 s) ; le soulignement rouge disparaît ≈ 0,2 s après : l'avertissement est réduit au silence.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 4180, "to": 4560, "n": 8}
+    },
+    {
+      "cat": "character",
+      "name_fr": "Trêve mise en scène",
+      "name_en": "truce staging",
+      "t": "1:12.7-1:17.0",
+      "frames": "f4362-f4620",
+      "fps": 60,
+      "mechanics": "Le bug vole jusqu'à la ligne de commentaire et s'assoit à sa fin (1:14,3) ; le curseur revient (1:15,2) et se pose à côté sans attaquer.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Lueur qui clignote sur le temps en faiblissant",
+      "name_en": "beat-synced fading glow",
+      "t": "1:19.5-1:24.5",
+      "frames": "f4770-f5070",
+      "fps": 60,
+      "mechanics": "La lumière de la scène s'allume et s'éteint toutes les 0,5 s (un temps à 120 BPM) ; allumée à 29, 25, 22 puis 16, éteinte à ≈ 7 ; cinq cycles : la luciole s'endort.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Retour dans la chambre",
+      "name_en": "bookend pull-back",
+      "t": "1:24.6-1:27.9",
+      "frames": "f5076-f5274",
+      "fps": 60,
+      "mechanics": "Retour au décor d'ouverture : le développeur dort sur son bureau, un point lumineux à l'écran rappelle le bug ; léger recul ; fondu au noir en 0,4 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton-chute",
+      "name_en": "punchline title card",
+      "t": "1:28.0-1:30.0",
+      "frames": "f5280-f5399",
+      "fps": 60,
+      "mechanics": "« WON'T FIX » crème #ECE4CC, ≈ 17 % de la hauteur et 56 % de la largeur, centré sur fond nuit avec vignettage ; entrée 0,5 s (ease-out), tenu 1,0 s, sortie 0,45 s : 2 s, soit une mesure à 120 BPM. Seul texte du film.",
+      "verdict": "reprendre",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Récit muet",
+      "name_en": "silent storytelling",
+      "t": "0:00.0-1:28.0",
+      "frames": "f0-f5280",
+      "fps": 60,
+      "mechanics": "Aucun dialogue, aucune bulle, aucun titre avant la chute : tout passe par le jeu, la lumière et les formes du curseur.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Grille de 0,5 s à 120 BPM",
+      "name_en": "half-second grid",
+      "t": "0:00.0-1:30.0",
+      "frames": "f0-f5399",
+      "fps": 60,
+      "mechanics": "Cinq coupes sur le temps (21,0 / 27,0 / 44,0 / 68,0 / 79,0 s, +21 ms), les autres ≈ 80 ms avant ; clignotement final et carton calés sur les temps ; attaques sonores sur le bond (25,59 s) et sur la coupe de 68 s.",
+      "verdict": "adapter",
+      "evidence": "rhythm.jpg"
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Halo, vignettage et ombre du curseur",
+      "name_en": "bloom + vignette + cast shadow",
+      "t": "0:05.0-1:24.6",
+      "frames": "f300-f5076",
+      "fps": 60,
+      "mechanics": "Halo doux autour de la lueur, vignettage centré sur le bug, ombre portée sous le curseur (en bas à droite, ≈ 1 à 2 % de la hauteur), bande plus claire sur la ligne active (probable).",
+      "verdict": "reprendre",
+      "evidence": "microM-010-cut-f2640.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "direction", "insight": "« A bug that doesn't want to be fixed » : le modèle joue sur le double sens (insecte et bogue) avec une luciole, et donne au personnage un objectif clair qui structure le film en poursuite."},
+    {"kind": "structure", "insight": "Durée imposée tenue (90,05 s) avec trois actes nets : exposition, tentatives successives (chaque forme de curseur est une tentative), résolution par renoncement et chute écrite (WON'T FIX)."},
+    {"kind": "other", "insight": "Le modèle a choisi seul un récit muet et l'interface comme personnage (le curseur antagoniste) : un prompt d'une ligne bien posé (personnage + désir + durée) suffit à obtenir de la narration."},
+    {"kind": "inputs", "insight": "Aucun style ni son imposé : la chambre de nuit lo-fi est le choix par défaut ; la bande-son à 120 BPM a pu être générée ou ajoutée par l'auteur (non vérifiable)."}
+  ],
+  "steal": [
+    "Faire de l'interface un personnage : le curseur est l'antagoniste, chaque forme de curseur (croix, main, attente, curseur texte) est une nouvelle arme. Pour un SaaS, l'interface du produit peut jouer.",
+    "Lier l'exposition de la scène à la lumière du personnage : il s'éteint pour se cacher (-55 % en 14 im, courbe en S), il clignote en faiblissant pour s'endormir.",
+    "Écrire des gags d'imitation avec des signes d'interface connus : le bug devient un curseur texte qui clignote ; un commentaire fait disparaître le soulignement d'erreur.",
+    "Garder l'unique texte pour la chute : un carton de 2 s (une mesure) qui relit toute l'histoire (WON'T FIX).",
+    "Couper sur le même axe pour le comique : plan large pour la menace, gros plan ×2 pour la réaction."
+  ],
+  "flaws": [
+    "Siège en rouge (47-67 s) : 20 s confuses, couleurs boueuses, curseurs main et attente trop petits pour être lus.",
+    "30 % de maintiens ; 44-56 s et 1:20-1:28 ralentissent nettement.",
+    "Animation de marionnette : glissements et pivots, ni écrasement à l'atterrissage ni anticipation marquée.",
+    "Chambre de nuit lo-fi (lune, plante, mug fumant, casque) : décor cliché ; silhouette figée.",
+    "Synchro musicale lâche : la moitié des coupes tombe ≈ 80 ms avant le temps."
+  ]
+}

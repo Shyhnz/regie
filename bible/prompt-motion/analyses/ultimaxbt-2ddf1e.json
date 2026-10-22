@@ -1,0 +1,344 @@
+{
+  "slug": "ultimaxbt-2ddf1e",
+  "title": "Food craving launch film",
+  "handle": "@ultimaxbt",
+  "family": "produit",
+  "craft": 3,
+  "craft_reason": "Neuf premières secondes inventives (frappe en macro, fouetté en rotation, inondation lime) ; puis fin minuscule et figée, coupes et fondus interdits par le prompt, lancers d'ingrédients illisibles.",
+  "summary": "Film de lancement d'un assistant de commande de repas : une demande tapée en très gros plan, un wok qui « cherche », une inondation lime qui révèle des cartes de plats, un chat qui propose « Fire Noodles », un clic « Order now », puis deux phrases et le nom « Cross AI ». Le début a de vraies idées de mise en scène ; la seconde moitié s'effondre en texte noir minuscule sur blanc.",
+  "prompt_vs_result": [
+    "Prompt très détaillé : carte de 32 temps à 130 BPM, plan-séquence sans coupe ni fondu, palette imposée, halo irisé, wok qui lance 4 ingrédients, inondation lime de 0,35 s, chat, clic, outro blanc sur noir 92 px, coursier, logo et mot-symbole serif.",
+    "Claude a ouvert en très gros plan puis reculé, inséré un plan macro sur la frappe et un fouetté en rotation, transformé l'inondation en rectangle arrondi quasi instantané, et réduit l'outro à du texte noir sur blanc.",
+    "Le début suit bien le prompt ; la queue (outro, coursier, épingle devenant logo, serif) est presque entièrement perdue. Un prompt long mal relu en fin : il faudrait des images de contrôle de l'outro."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#FBFBF9", "role": "fond blanc chaud (prompt #f5f5f2, rendu plus blanc)"},
+      {"hex": "#0E0E10", "role": "texte, boutons noirs, cartes"},
+      {"hex": "#CDF24F", "role": "accent lime : balle, inondation, bulles de chat"},
+      {"hex": "#F26B3A", "role": "wok orange"},
+      {"hex": "#3B5BDB", "role": "curseur de frappe et bouton d'envoi"},
+      {"hex": "#B9BEF2", "role": "traînée lavande du curseur"},
+      {"hex": "#E04FD0", "role": "halo irisé (magenta)"},
+      {"hex": "#5FE08A", "role": "halo irisé (vert) et ingrédient"},
+      {"hex": "#9B9B9B", "role": "texte en cours d'apparition"}
+    ],
+    "type": "Grotesque type Geist, graisse 400-500, casse de phrase, interlettrage normal. Macro : lettres ≈ 30 % de la hauteur. Outro ≈ 5,5 % (≈ 60 px). Nom final « Cross AI » ≈ 3 % de la hauteur, sans serif demandé.",
+    "texture": "Halo irisé flou (dégradé conique) autour du champ de saisie et sur les bords de l'écran ; flou de mouvement réel par sous-images (tmix) sur la frappe macro et le fouetté ; photos de plats sur cartes noires ; légers fantômes verts résiduels dans l'outro.",
+    "style": "UI d'assistant IA, blanc, lime",
+    "coherence": "Le système tient sur la palette (blanc, noir, lime, orange) et le halo irisé jusqu'au chat. Il casse à l'outro : plus de couleur, plus de halo, texte minuscule, aucune marque ; le wok et ses ronds abstraits ne dialoguent pas avec les vraies photos."
+  },
+  "rhythm": {
+    "bpm": 119,
+    "sync": "lache",
+    "dead_time": "beaucoup",
+    "notes": "Morceau mesuré à 119,4 BPM, pulsation nette (6,2), alors que le prompt annonçait 130 BPM. Les jalons du plan tombent souvent sur les temps du vrai morceau (fouetté f96, lancers f125, f152, f168, inondation pleine f183-184, ouverture du chat f243-245, clic f290, « Now » f348), mais les gestes libres (coupe macro f60, bande de cartes f191, coupe f219, mots) n'y sont pas. 3 coupes franches détectées (f181, f219, f295) plus 3 changements de plan non détectés (f60, f96, f407). Densité forte de 0 à 9,8 s (un événement toutes les 0,3 à 0,6 s), puis 28 % du film quasi immobile : 10,5-11,2 s, 12,3-13,4 s et 13,6-16,26 s (fin figée 2,5 s = 74 im).",
+    "timeline": [
+      {"t": "0:00-0:00.73", "what": "Très gros plan incliné sur le bouton « + » et le curseur bleu, halo magenta-vert ; recul en rotation jusqu'au téléphone pendant que la frappe commence", "technique": "recul en rotation (rotating pull-back), f0-f22"},
+      {"t": "0:00.73-0:02.0", "what": "Téléphone blanc, champ de saisie au halo irisé qui change de couleur, la demande se tape sur 2 lignes", "technique": "halo irisé conique + frappe à ≈ 1 caractère par image"},
+      {"t": "0:02.0-0:02.9", "what": "Coupe en macro : « Spicy, Crispy and Filling » tapé en géant, la caméra suit le curseur", "technique": "coupe en macro (cut-in) + caméra qui suit le curseur, flou horizontal"},
+      {"t": "0:02.9-0:03.5", "what": "La ligne tourne en accélérant avec flou, bascule sur le wok qui tourne et se pose", "technique": "fouetté en rotation (spin whip), f87-f104"},
+      {"t": "0:03.5-0:05.6", "what": "Wok orange dans le coin de l'écran, « Finding something for you… » tapé, ronds colorés lancés 4 fois", "technique": "lancers (toss) en arc avec flou vertical"},
+      {"t": "0:05.6-0:06.1", "what": "Une balle lime grossit sur le wok puis un rectangle lime remplit le cadre en 4 im", "technique": "inondation de couleur (color flood)"},
+      {"t": "0:06.1-0:07.3", "what": "Carte « Fire Noodles » qui grandit au centre, bande de cartes en fondu, glissement, carte élue soulevée", "technique": "carrousel de cartes produit"},
+      {"t": "0:07.3-0:07.9", "what": "Coupe sur fond blanc, la carte élue remonte du bas et se pose", "technique": "entrée en ressort léger (spring)"},
+      {"t": "0:07.9-0:08.6", "what": "Bulle de l'utilisateur, colonne de chat qui s'ouvre autour de la carte avec halos latéraux, bulles de réponse, deux boutons", "technique": "empilement de bulles en cascade (stagger) + recul caméra"},
+      {"t": "0:08.6-0:09.8", "what": "Poussée vers les boutons, curseur main qui clique « Order now »", "technique": "poussée vers l'appel à l'action + curseur"},
+      {"t": "0:09.8-0:11.6", "what": "Le bouton devient une barre lime puis une page blanche ; « You were craving noodles » mot à mot, dérive à gauche qui accélère", "technique": "bouton qui devient page + mot à mot montée-fondu"},
+      {"t": "0:11.6-0:13.5", "what": "« Now it's on the way » mot à mot, espacement qui se resserre, lente dérive vers le haut", "technique": "resserrement de l'espacement des mots"},
+      {"t": "0:13.5-0:16.26", "what": "Cadre vide 1 im puis « Cross AI » en fondu, minuscule, figé 2,5 s", "technique": "carton de fin (end card) statique"}
+    ]
+  },
+  "music": {
+    "verdict": "partielle",
+    "evidence": "Grille du morceau : 119,4 BPM, temps aux images f3,3 + 15,07 n (30 fps). En reportant la carte de temps du prompt sur cette grille réelle : envoi = temps 6 (f93,7) → bascule du fouetté f96 (+2) ; lancers temps 8 (f123,9) → f125 (+1), temps 9 (f139) → f134 (−5, raté), temps 10 (f154) → f152 (−2), temps 11 (f169) → f168 (−1) ; drop temps 12 (f184,2) → inondation pleine cadre f183-184 (0 à −1), et l'enveloppe sonore saute de −22 à −11 dB à f185 ; chat temps 16 (f244,5) → colonne qui s'ouvre f243-245 ; clic sur « Order now » f290 = temps 19 (f289,7) ; « Now » f348 = temps 23 (f350, −2). Outro prévue au temps 21 (f320) mais coupée à f295 (−25), « Cross » f407 (temps 27 à f410, −3). Bilan : 8 jalons sur 11 à ±2 im d'un temps (hasard ≈ 33 % sur les temps seuls). Les gestes libres ne sont pas calés : coupe macro f60 (−3,6), bande de cartes f191, coupe f219 (+4,7), mots de l'outro tous les 2-3 im. L'indice automatique ne voit rien (p = 0,35) car il mélange jalons et gestes libres. Aucun effet sonore distinct repérable : les attaques fortes sont régulières aux temps et demi-temps (musique seule probable).",
+    "synced": ["coupes", "impacts", "drop", "departs"],
+    "style_match": "Pop électro enjouée vers 120 BPM : colle à la première moitié vive et colorée, pas du tout à l'outro blanche et figée pendant que la musique continue.",
+    "how_built": "Le prompt écrit la structure en temps (32 temps, événements aux temps 6, 8-11, 12, 16, 21, départ du morceau 12 temps avant le drop). Les jalons tombent sur la grille réelle à 120 BPM, ce qui suggère que la carte a été recalée sur le morceau réel. L'export publié est en 30 fps (le prompt exigeait 60), ce qui divise la précision par deux. Les effets sonores demandés (frappe, lancers, clic) ne s'entendent pas dans l'enveloppe."
+  },
+  "techniques": [
+    {
+      "cat": "camera",
+      "name_fr": "Recul en rotation depuis le très gros plan",
+      "name_en": "rotating pull-back reveal",
+      "t": "0:00-0:00.73",
+      "frames": "f0-f22",
+      "fps": 30,
+      "mechanics": "Le champ de saisie remplit le cadre (zoom ≈ 6x), incliné d'environ 15°. De f0 à f5 peu de mouvement, de f6 à f12 grands pas (zoom divisé par ≈ 4, rotation ramenée vers 0°), de f13 à f22 petits pas : ease-in-out. Le corps du téléphone apparaît en fondu entre f11 et f14. Flou de mouvement directionnel sur le texte f5-f10.",
+      "verdict": "adapter",
+      "evidence": "microM-001-move-f5.jpg",
+      "illus": {"from": 0, "to": 22, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Halo irisé façon Apple Intelligence",
+      "name_en": "iridescent conic glow",
+      "t": "0:00-0:02.0",
+      "frames": "f0-f59",
+      "fps": 30,
+      "mechanics": "Ombre colorée floue (rayon ≈ 2-3 % de la largeur du champ) autour du champ de saisie ; la teinte tourne magenta → orange → vert → rose en ≈ 1 s par tour (f53 vert en haut, f56 magenta, f59 rose). Repris sur les bords de l'écran du wok et sur les côtés de la colonne de chat.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f65.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Curseur de frappe à traînée dégradée",
+      "name_en": "gradient caret smear",
+      "t": "0:02.0-0:02.9",
+      "frames": "f60-f87",
+      "fps": 30,
+      "mechanics": "Barre bleue #3B5BDB épaisse (≈ 1,5 % de la largeur en macro) précédée d'un bloc dégradé lavande → transparent large de 2 à 3 caractères. Chaque lettre naît en gris pâle sous le dégradé puis devient noire en 2 im. Cadence ≈ 1 caractère pour 1,2 im (25 caractères/s) : « S » f61, « Spicy » f66, « Crispy » f75, « Filling » f87.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f65.jpg",
+      "illus": {"from": 60, "to": 87, "n": 6}
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Coupe en macro sur la frappe",
+      "name_en": "macro cut-in",
+      "t": "0:02.0",
+      "frames": "f59-f60",
+      "fps": 30,
+      "mechanics": "Passage sans transition du téléphone entier (texte ≈ 1,5 % de la hauteur) au mot tapé à ≈ 30 % de la hauteur : saut de zoom ≈ 15-20x en 1 im. C'est une coupe, contraire au plan-séquence demandé, mais elle met le mot clé seul à l'écran.",
+      "verdict": "adapter",
+      "evidence": "microM-002-move-f65.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Caméra macro qui suit le curseur",
+      "name_en": "caret-tracking camera",
+      "t": "0:02.0-0:02.9",
+      "frames": "f60-f87",
+      "fps": 30,
+      "mechanics": "Le curseur reste vers 55-75 % de la largeur ; le texte défile vers la gauche à la vitesse de la frappe (≈ 1 lettre par image). Flou de mouvement horizontal net sur les lettres déjà tapées (sous-images fusionnées). Légère dérive vers le bas puis rotation finale.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f87.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Fouetté en rotation",
+      "name_en": "spin whip transition",
+      "t": "0:02.9-0:03.47",
+      "frames": "f87-f104",
+      "fps": 30,
+      "mechanics": "Sortie : « and Filling » tourne dans le sens horaire de 0° à ≈ 20° de f88 à f95, pas qui grandissent (ease-in) et flou qui augmente. Bascule f96 sur le wok, lui-même fortement incliné (≈ 60-90°, probable), qui tourne et se pose à l'horizontale de f96 à f104 (pas qui rétrécissent : ease-out). Total 17 im = 0,57 s. La bascule tombe sur le temps 6 (f93,7) à +2 im.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f87.jpg",
+      "illus": {"from": 86, "to": 104, "n": 6}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Wok en demi-disque qui lance des ingrédients",
+      "name_en": "wok toss loop",
+      "t": "0:03.5-0:05.6",
+      "frames": "f104-f169",
+      "fps": 30,
+      "mechanics": "Demi-disque orange #F26B3A (≈ 22 % de la largeur) avec un manche en trait fin terminé par un point. À chaque lancer, le wok bascule d'environ 8-10° (f125, f134, f152, f168) et des ronds (lime, vert, gris, 1 à 5 % de la largeur) montent en arc avec flou vertical, puis retombent. Lisibilité faible : rien ne ressemble à de la nourriture.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Texte d'attente tapé",
+      "name_en": "typed loading line",
+      "t": "0:03.2-0:03.7",
+      "frames": "f97-f110",
+      "fps": 30,
+      "mechanics": "« Finding something for you… » apparaît lettre à lettre (≈ 2 caractères par image), lettres grises puis noires ; petite taille (≈ 2 % de la hauteur) en haut à gauche. Un point parasite précède la phrase (« .Finding »), bug probable de ponctuation ou de sens d'écriture.",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f87.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Inondation lime depuis l'ingrédient",
+      "name_en": "color flood from object",
+      "t": "0:05.63-0:06.13",
+      "frames": "f169-f184",
+      "fps": 30,
+      "mechanics": "Une balle lime #CDF24F posée sur le wok grossit de ≈ 4 % à 8 % de la largeur entre f177 et f180, puis un rectangle arrondi lime couvre 72 % du cadre à f181, 90 % à f182, plein cadre à f183-184 : 4 im = 0,13 s au lieu des 0,35 s demandées, d'où un effet de flash. Une mini-carte de plat est déjà au centre à f181. Le plein cadre tombe sur le temps 12 (f184), 1 im avant la montée sonore (f185).",
+      "verdict": "adapter",
+      "evidence": "microM-004-cut-f181.jpg",
+      "illus": {"from": 175, "to": 198, "n": 6}
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Cartes de plats sombres",
+      "name_en": "dark food cards",
+      "t": "0:06.1-0:09.8",
+      "frames": "f183-f294",
+      "fps": 30,
+      "mechanics": "Cartes noires #0E0E10 à coins arrondis (≈ 8 % du côté), photo réelle en haut sur ≈ 55 % de la hauteur, pastille « Most Popular », note étoilée, nom en blanc gras, description grise, ligne d'infos (temps, distance, restaurant), prix « ₦5,500 » en lime. La pastille « Best match » demandée n'apparaît pas.",
+      "verdict": "reprendre",
+      "evidence": "microM-005-cut-f219.jpg"
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Carrousel qui glisse et carte élue qui se soulève",
+      "name_en": "card strip slide and lift",
+      "t": "0:06.1-0:07.27",
+      "frames": "f183-f218",
+      "fps": 30,
+      "mechanics": "La carte centrale grandit de ≈ 4 % à 12 % de la largeur (f181-f190, ease-out), puis la bande de 5 cartes apparaît en fondu (opacité ≈ 30 % à f193 → 100 % à f198, fondu pourtant interdit). La bande glisse vers la gauche d'≈ 1 largeur de carte en 20 im (f198-f218) ; « Fire Noodles » monte d'≈ 10 % de la hauteur entre f211 et f218 (ease-in-out).",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f219.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Coupe sur blanc et carte qui remonte en ressort",
+      "name_en": "cut with spring entrance",
+      "t": "0:07.3-0:07.57",
+      "frames": "f219-f227",
+      "fps": 30,
+      "mechanics": "Coupe franche du lime au blanc. Le haut de la carte passe de 66 % à 52 %, 46 %, 41 %, 38 %, 36 % de la hauteur entre f219 et f224 (ease-out fort), petit dépassement ≈ 2-3 % (carte légèrement plus grande f222-f224) puis repos à f227. Coupe à +4,7 im du temps : pas calée.",
+      "verdict": "adapter",
+      "evidence": "microM-005-cut-f219.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Colonne de chat qui s'ouvre autour de la carte",
+      "name_en": "chat column build",
+      "t": "0:07.9-0:08.6",
+      "frames": "f237-f258",
+      "fps": 30,
+      "mechanics": "Bulle lime de l'utilisateur en haut à droite en fondu (f237-f239). À f243-f246 une colonne blanche (≈ 35 % de la largeur) s'ouvre avec des halos verticaux magenta à gauche et rouge-orange à droite. Bulles de réponse en cascade toutes les 1-2 im (f243, f245, f246, f247), montée + fondu ; boutons à f252-f256. La caméra recule pendant ce temps (carte de 35 % à 26 % de la hauteur en 10 im).",
+      "verdict": "reprendre",
+      "evidence": "microM-006-move-f241.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée vers l'appel à l'action",
+      "name_en": "push-in to CTA",
+      "t": "0:08.6-0:09.6",
+      "frames": "f258-f288",
+      "fps": 30,
+      "mechanics": "Zoom ≈ 1,5x et panoramique vers le bas en ≈ 1 s (ease-in-out) : la colonne passe de ≈ 30 % à 45 % de la largeur et les boutons montent vers le centre. Un seul mouvement par scène, conforme au prompt.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Curseur main qui clique « Order now »",
+      "name_en": "cursor click",
+      "t": "0:09.0-0:09.8",
+      "frames": "f262-f294",
+      "fps": 30,
+      "mechanics": "Curseur main noir qui entre par le bas (f262-f270), se pose sur « Order now » vers f283 et clique à f289-f290, pile sur le temps 19 (f289,7). Pas de pression visible sur le bouton, ni de chargement ni de « ✓ Ordered » (demandés).",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f295.jpg"
+    },
+    {
+      "cat": "transition",
+      "name_fr": "Bouton qui devient barre lime puis page",
+      "name_en": "button-to-page expansion",
+      "t": "0:09.8-0:09.87",
+      "frames": "f294-f296",
+      "fps": 30,
+      "mechanics": "À f294 la bulle et le bouton deviennent une barre lime horizontale (≈ 30 % de la largeur) ; à f295 un rectangle blanc couvre ≈ 75 x 60 % du cadre avec « You » en gris pâle ; plein blanc à f296. 3 im seulement : lu comme un flash, l'élément partagé (étiquette du bouton) n'est pas porté jusqu'au titre.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f295.jpg"
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Mot à mot en montée et fondu gris → noir",
+      "name_en": "word-by-word rise and fade",
+      "t": "0:09.83-0:10.23",
+      "frames": "f295-f307",
+      "fps": 30,
+      "mechanics": "« You » f295, « were » f298, « craving » f299, « noodles » f301 : décalage 1 à 3 im. Chaque mot naît gris pâle #CFCFCF, un peu plus petit et ≈ 1-2 % de la hauteur plus bas, puis monte et noircit en ≈ 6-8 im (ease-out). Ligne ≈ 40 % de la largeur, corps ≈ 60 px. Noir sur blanc alors que le prompt voulait blanc sur noir en 92 px.",
+      "verdict": "adapter",
+      "evidence": "microM-007-cut-f295.jpg",
+      "illus": {"from": 346, "to": 370, "n": 6}
+    },
+    {
+      "cat": "type-anim",
+      "name_fr": "Espacement des mots qui se resserre",
+      "name_en": "word-spacing tighten",
+      "t": "0:11.6-0:12.3",
+      "frames": "f348-f369",
+      "fps": 30,
+      "mechanics": "« Now it's on the way » apparaît mot à mot tous les 2 im (f348, f350, f352, f354, f356) avec un espacement d'environ 1,8 fois la normale ; entre f356 et f369 (13 im, ease-out) l'espacement revient à 1 et la ligne se recentre de ≈ 61 % à 50 % de la largeur.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Dérive latérale qui accélère pour sortir la phrase",
+      "name_en": "accelerating drift exit",
+      "t": "0:10.5-0:11.6",
+      "frames": "f315-f347",
+      "fps": 30,
+      "mechanics": "Le centre de la ligne glisse de 50 % à 48 % (f339), 43 % (f344), 38 % (f347) : ease-in, puis la phrase disparaît en 1 im et la suivante naît à droite (≈ 61 %), comme un relais de panoramique. Sans flou ni vitesse suffisante, le relais se lit comme une coupe.",
+      "verdict": "adapter",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Carton de fin minuscule et figé",
+      "name_en": "static tiny end card",
+      "t": "0:13.53-0:16.26",
+      "frames": "f406-f487",
+      "fps": 30,
+      "mechanics": "Cadre vide à f407, « Cross » en fondu gris → noir de f408 à f413, « AI » 2 im plus tard, plus petit et plus bas, qui grandit de ≈ 70 % à 100 % jusqu'à f417. Nom ≈ 13 % de la largeur, ≈ 3 % de la hauteur, grotesque, sans logo ni serif ni « made with ». Maintien de 74 im (2,5 s) alors que le prompt interdisait plus de 1 s.",
+      "verdict": "cliche",
+      "evidence": "extra-03.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Flou de mouvement par sous-images fusionnées",
+      "name_en": "subframe motion blur (tmix)",
+      "t": "0:00-0:03.5",
+      "frames": "f5-f104",
+      "fps": 30,
+      "mechanics": "Le prompt imposait 8 sous-images par image fusionnées avec ffmpeg tmix. Résultat : flou directionnel propre sur la frappe macro, le recul en rotation et le fouetté, sans copies fantômes visibles. Le fichier publié est en 30 fps au lieu de 60.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f87.jpg"
+    },
+    {
+      "cat": "sound",
+      "name_fr": "Jalons du récit posés sur une carte de temps",
+      "name_en": "beat-mapped story beats",
+      "t": "0:03.1-0:11.7",
+      "frames": "f96-f348",
+      "fps": 30,
+      "mechanics": "Les jalons écrits en temps dans le prompt tombent sur la grille réelle à 120 BPM : fouetté (temps 6, +2 im), lancers (temps 8, 10, 11 à ±2 im, temps 9 raté de 5 im), plein cadre lime (temps 12, 0 à −1 im, juste avant la montée sonore), ouverture du chat (temps 16), clic (temps 19, 0 im), « Now » (temps 23, −2 im). 8 jalons sur 11 calés ; tout ce qui est entre les jalons reste libre.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette blanc chaud, noir UI et lime",
+      "name_en": "warm white, black UI, lime accent",
+      "t": "0:00-0:09.8",
+      "frames": "f0-f294",
+      "fps": 30,
+      "mechanics": "Fond quasi blanc, UI noire, lime #CDF24F en couleur d'action (balle, inondation, bulles), orange #F26B3A pour le wok, bleu pour le curseur ; les photos de plats rouges et les halos irisés apportent la chaleur. La couleur disparaît totalement après 9,8 s.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Écrire la structure en temps musicaux (événements aux temps 6, 8-11, 12, 16) a donné des jalons qui tombent sur les temps du vrai morceau : c'est la seule raison de la synchro partielle. Les gestes non listés dans la carte restent libres."},
+    {"kind": "structure", "insight": "Le prompt annonce 130 BPM mais le morceau mesuré est à 119,4 BPM ; les jalons suivent la grille réelle, ce qui suggère que la carte a été recalée sur le morceau fourni. Toujours mesurer le tempo du fichier audio plutôt que de faire confiance au chiffre écrit."},
+    {"kind": "banned", "insight": "Les interdits (pas de coupe, pas de fondu, pas de maintien > 1 s) ne sont pas respectés : 6 changements de plan francs, cartes et mots en fondu, fin figée 2,5 s. Les interdits sans contrôle final à l'image ne suffisent pas."},
+    {"kind": "qa", "insight": "La dernière section du prompt (outro blanc sur noir, coursier, épingle devenant logo, mot-symbole serif) est presque entièrement perdue : sur un prompt long, la queue reçoit le moins d'attention. Le prompt demandait 4 images de contrôle, dont l'outro : elles n'ont visiblement pas été exigées au rendu final."},
+    {"kind": "build", "insight": "Les 8 sous-images fusionnées (tmix) donnent un vrai flou de mouvement sur la frappe et le fouetté ; c'est la consigne technique la plus visible à l'écran."},
+    {"kind": "build", "insight": "Le fichier publié est en 30 fps alors que le prompt exigeait 60 fps : la précision de calage tombe à ±1 image = ±33 ms et la frappe rapide saccade un peu."},
+    {"kind": "direction", "insight": "« Color floods from one object » a été interprété en rectangle arrondi qui couvre 72 % du cadre en 1 image : sans durée mesurée en images, l'inondation devient un flash, exactement ce que la section gotchas redoutait."},
+    {"kind": "inputs", "insight": "L'utilisateur a fourni son produit (« Cross AI ») et des prix en naira (₦) ; il n'a visiblement pas fourni de logo, d'où une fin en simple texte. Sans marque fournie, le prompt aurait dû prévoir un repli graphique fort."}
+  ],
+  "steal": [
+    "Ouvrir une démo d'assistant IA en très gros plan sur le curseur qui tape, puis reculer en rotation (≈ 15° → 0°) jusqu'au téléphone en 0,7 s.",
+    "Curseur de frappe = barre de couleur + traînée dégradée de 2-3 caractères ; caméra macro qui suit le curseur, flou horizontal sur les lettres tapées.",
+    "Fouetté en rotation : sortie qui tourne en accélérant 8 im avec flou, entrée qui tourne en sens inverse et se pose en 8 im.",
+    "Faire naître une inondation de couleur d'un petit objet (balle sur le wok), mais l'étaler sur 8-10 im minimum pour qu'elle ne lise pas comme un flash.",
+    "Écrire les jalons du récit en numéros de temps, sur le tempo mesuré du vrai morceau : envoi, lancers, drop, chat, clic tombent alors sur la musique."
+  ],
+  "flaws": [
+    "Fin bâclée : « Cross AI » à ≈ 3 % de la hauteur, sans logo, figé 2,5 s ; 28 % du film quasi immobile.",
+    "Interdits du prompt ignorés : coupes franches, cartes et mots en fondu, texte noir sur blanc au lieu de blanc sur noir.",
+    "Lancers d'ingrédients illisibles : petits ronds abstraits de 1 à 5 % du cadre, rien ne ressemble à de la nourriture.",
+    "Point parasite devant « .Finding something for you… » et fantômes verts résiduels sur le blanc de l'outro.",
+    "Export à 30 fps au lieu de 60 ; inondation lime et bouton-page en 3-4 im, lus comme des flashs."
+  ],
+  "deep_study": {"worth": false, "why": "Le fichier publié est en 30 fps et les planches microscope suffisent pour la frappe macro, le fouetté et l'inondation ; la seconde moitié n'apporte rien à étudier image par image."}
+}

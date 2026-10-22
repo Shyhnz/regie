@@ -1,0 +1,354 @@
+{
+  "slug": "dale-vaz-cc612a",
+  "title": "Sahi trading terminal reveal",
+  "handle": "@dale_vaz",
+  "family": "produit",
+  "craft": 4,
+  "craft_reason": "Concept « puissances de dix » (Powers of Ten) original et propre : plongée jusqu'aux sous-pixels, bureau qui devient étoile, HUD de grossissement. Rythme lent : 46 % de maintiens, aucun son.",
+  "summary": "Démo d'un terminal de trading indien en un seul plan-séquence de 47 s : un point s'allume comme un vieux téléviseur, les fenêtres du terminal se posent, la caméra plonge jusqu'aux sous-pixels RVB de l'écran, ressort, puis recule jusqu'à faire du bureau une étoile « Sahi Terminal ». Elle replonge vers l'étoile « Sahi Mobile » : téléphone, ordre passé, signature. Idée forte, interface crédible ; temps morts, vidéo muette.",
+  "prompt_vs_result": [
+    "Le prompt imposait le storyboard complet : point sur fond noir, fenêtres (graphique, positions, chaîne d'options, liste de suivi), zooms à plusieurs échelles, bureau réduit à un point dans l'espace, téléphone paysage scindé, phrase finale.",
+    "Claude a inventé : l'allumage façon tube cathodique, la plongée sous-pixel, le HUD « Magnification », les deux étoiles nommées, le parcours d'ordre (tap, feuille d'achat, toast « 4.2 ms »), le slogan et le point du i rappelant le point d'ouverture.",
+    "Storyboard précis donc structure fidèle, mais aucune durée, aucun tempo ni musique : Claude tient chaque plan trop longtemps (point 3,3 s, espace 5 s, fin 3 s). Il fallait fixer la durée par séquence et une bande-son."
+  ],
+  "da": {
+    "palette": [
+      {"hex": "#000000", "role": "fond noir, espace"},
+      {"hex": "#070B10", "role": "fond des fenêtres du terminal"},
+      {"hex": "#1A2430", "role": "bordures de panneaux, grilles"},
+      {"hex": "#2EE6A6", "role": "vert menthe : bougies haussières, étiquette de prix, bouton Buy, toast"},
+      {"hex": "#F0506E", "role": "rose-rouge : bougies baissières, pertes"},
+      {"hex": "#8C9CFF", "role": "lavande : moyenne mobile, halo du point initial"},
+      {"hex": "#5B86F5", "role": "bleu : pastille du prix spot, point du i de Sahi"},
+      {"hex": "#3A2E1E", "role": "bande ambrée de la ligne à la monnaie (ATM)"},
+      {"hex": "#1B2740", "role": "nébuleuse bleue"},
+      {"hex": "#3A1832", "role": "nébuleuse magenta"},
+      {"hex": "#EEF1F6", "role": "texte principal"}
+    ],
+    "type": "Grotesque géométrique type Manrope (UI, slogan) ; « Sahi » gras ≈ 12 % de la hauteur, interlettrage serré ; accroche 3 % regular gris clair. Chiffres en mono (JetBrains Mono probable) : prix, grossissement.",
+    "texture": "Halo flou bleu-lavande autour du point initial et du point de prix ; grille de sous-pixels RVB au zoom extrême ; étoiles à aigrettes en croix ; nébuleuse en dégradés radiaux très doux ; aucun grain, aucun flou de mouvement.",
+    "style": "Terminal sombre, fintech, cosmique",
+    "coherence": "Le point est le fil rouge : point d'ouverture, point de prix lumineux, étoile, point du i final. Palette menthe/rose/lavande constante du bureau au mobile. La rupture vient du temps : de longs maintiens cassent l'élan du plan-séquence."
+  },
+  "rhythm": {
+    "bpm": null,
+    "sync": "sans-musique",
+    "dead_time": "beaucoup",
+    "notes": "Vidéo muette (aucune piste audio), 30 fps, 1 seul plan (0 coupe franche) : tout passe par la caméra. 14 maintiens statiques ≥ 0,4 s totalisant 21,8 s (46 %) : point seul 0-3,3 s, terminal complet 6,9-9,3 s, chaîne d'options 17,8-20,3 s, positions 21,5-24,0 s, dérive dans l'espace 29,9-33,8 s, carte de fin 43,2-46,3 s. Les seuls mouvements entre ces paliers sont des zooms de 0,4 à 1,8 s en ease-in-out. Les données « vivantes » (prix, P&L) bougent par sauts toutes les 10 images (3 Hz) pendant les maintiens, ce qui évite l'image figée mais ne remplace pas un vrai rythme. Densité très inférieure à la règle 1600 (un événement toutes les 0,5-1 s).",
+    "timeline": [
+      {"t": "0:00-0:03.37", "what": "Noir, un point bleu-blanc s'allume (f15-f30), halo lavande et fin anneau orbital à partir de 2 s ; maintien", "technique": "ouverture minimale sur un point (temps mort de 3,3 s)"},
+      {"t": "0:03.37-0:03.63", "what": "Le point se contracte en tête d'épingle (f101→f103, 2 im) puis s'étire en tiret", "technique": "anticipation par contraction"},
+      {"t": "0:03.63-0:04.27", "what": "Le tiret devient une ligne horizontale ≈ 90 % de la largeur (f109-f119), lueur au centre", "technique": "allumage tube cathodique (CRT power-on)"},
+      {"t": "0:04.30-0:04.83", "what": "La ligne se dédouble et s'ouvre verticalement jusqu'au plein cadre (f129-f145)", "technique": "ouverture verticale en écran"},
+      {"t": "0:04.83-0:07.50", "what": "Barre d'indices en haut, puis fenêtres posées une à une : graphique (5,2 s), liste de suivi (5,9 s), chaîne d'options (6,2 s), positions (6,9 s), courbe de gain (7,3 s)", "technique": "fenêtres vides puis remplies, décalage 0,3-0,7 s"},
+      {"t": "0:07.50-0:10.00", "what": "Terminal complet, prix et P&L qui changent par sauts", "technique": "données vivantes à 3 Hz"},
+      {"t": "0:10.00-0:13.70", "what": "Poussée lente vers le graphique puis la dernière bougie et l'étiquette 25 07x", "technique": "push-in ease-in"},
+      {"t": "0:13.70-0:14.30", "what": "Accélération dans la mèche de la bougie, halo du point de prix, apparition de la grille de sous-pixels RVB (f420)", "technique": "plongée sous-pixel"},
+      {"t": "0:14.30-0:16.53", "what": "Bougies et point de prix rendus en matrices de sous-pixels vert/rouge/bleu ; sauts de données à f450 et f460", "technique": "monde sous-pixel, HUD ≈ 45×"},
+      {"t": "0:16.53-0:17.10", "what": "Recul hors des sous-pixels, la grille disparaît d'un coup à f503→f504, retour au graphique", "technique": "pull-out avec bascule de niveau de détail"},
+      {"t": "0:17.40-0:20.30", "what": "Transfert vers la chaîne d'options (0,4 s) puis maintien sur la ligne ATM et la pastille spot bleue", "technique": "visite guidée caméra"},
+      {"t": "0:20.30-0:24.00", "what": "Recul et descente vers le panneau positions + diagramme iron condor ; maintien", "technique": "zoom-out + pan vers le panneau suivant"},
+      {"t": "0:23.70-0:25.80", "what": "Recul jusqu'au terminal entier", "technique": "zoom-out ease-in-out 0,9 s"},
+      {"t": "0:25.80-0:27.60", "what": "Le terminal rapetisse à vitesse constante en échelle log, devient une carte simplifiée (f814) puis une étoile « Sahi Terminal » (f828)", "technique": "zoom logarithmique + substitution de niveau de détail"},
+      {"t": "0:27.60-0:29.50", "what": "Champ d'étoiles, nébuleuse bleu/magenta en fondu, deuxième étoile « Sahi Mobile » ; HUD « 1.0 × 10⁻⁴ »", "technique": "constellation sémantique"},
+      {"t": "0:29.50-0:34.40", "what": "Dérive lente dans l'espace", "technique": "temps mort (5 s)"},
+      {"t": "0:34.40-0:37.10", "what": "Recadrage sur « Sahi Mobile », la nébuleuse s'efface, l'étoile devient un téléphone paysage qui grandit de 3 % à 80 % de la largeur", "technique": "zoom-in logarithmique inverse"},
+      {"t": "0:37.10-0:38.90", "what": "Téléphone : graphique à gauche, chaîne d'options à droite", "technique": "écran scindé mobile"},
+      {"t": "0:38.90-0:40.50", "what": "Feuille d'achat qui monte (« Buy NIFTY 29 Sep 25200 CE »), tap sur Buy, toast « Order placed in 4.2 ms »", "technique": "parcours d'ordre sans curseur"},
+      {"t": "0:42.20-0:43.30", "what": "Le téléphone rétrécit et monte ; « Single screen trading on / Sahi / Your Money. Your Move. » apparaît, Sahi passe du gris au blanc", "technique": "carte de fin, rappel du point sur le i"},
+      {"t": "0:43.30-0:46.97", "what": "Maintien puis fondu au noir (≈ 20 im)", "technique": "fin en fondu"}
+    ]
+  },
+  "music": {
+    "verdict": "sans-musique",
+    "evidence": "Aucune piste audio dans le fichier (dossier : « audio=no »). Rien à synchroniser.",
+    "synced": [],
+    "style_match": "Sans objet : vidéo muette. Le caractère lent et contemplatif appellerait une nappe ambient avec un impact sur l'allumage et sur la carte de fin.",
+    "how_built": "Le prompt ne demande ni musique ni sons ; la page JavaScript ne produit aucun audio. Sans grille de tempo, les paliers ont des durées arbitraires (2,5 à 5 s)."
+  },
+  "techniques": [
+    {
+      "cat": "transition",
+      "name_fr": "Allumage tube cathodique : point → ligne → écran",
+      "name_en": "CRT power-on reveal",
+      "t": "0:03.37-0:04.83",
+      "frames": "f101-f145",
+      "fps": 30,
+      "mechanics": "Le point (≈ 1 % de la hauteur, halo ≈ 6 %) s'étire en tiret à f109, puis en ligne lumineuse ≈ 90 % de la largeur à f119 (10 im = 0,33 s, ease-out : 8 % → 38 % → 75 % → 90 %). La ligne, plus claire au centre et dégradée aux bouts, tient 8 im, puis se dédouble à f129 : les deux traits s'écartent verticalement (10 % → 25 % → 50 % → 70 % → 95 % de la hauteur, 16 im = 0,53 s, quasi linéaire avec légère accélération) et sortent du cadre en laissant un rectangle de verre sombre qui devient le bureau. Aucun flou de mouvement.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg",
+      "illus": {"from": 99, "to": 145, "n": 8}
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Anticipation par contraction du point",
+      "name_en": "Anticipation squeeze",
+      "t": "0:03.37-0:03.57",
+      "frames": "f101-f107",
+      "fps": 30,
+      "mechanics": "Avant de s'étirer, le point lumineux perd son halo et rétrécit en tête d'épingle en 2 im (f101→f103), reste 4 im ainsi, puis explose en largeur. Le contraste petit → grand rend l'ouverture plus énergique.",
+      "verdict": "reprendre",
+      "evidence": "extra-01.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Point d'ouverture rappelé sur le i du logo",
+      "name_en": "Dot bookend",
+      "t": "0:00.50-0:46.30",
+      "frames": "f15-f1389",
+      "fps": 30,
+      "mechanics": "Le point bleu-lavande du début revient sous trois formes : point de prix lumineux (13-17 s), étoiles nommées (27-35 s), puis point bleu #5B86F5 à halo flou sur le i de « Sahi » dans la carte de fin. Une seule forme relie les quatre échelles.",
+      "verdict": "reprendre",
+      "evidence": "overview-01.jpg, overview-08.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Fenêtres posées vides puis remplies, en cascade",
+      "name_en": "Staggered window build-up",
+      "t": "0:04.83-0:07.50",
+      "frames": "f145-f225",
+      "fps": 30,
+      "mechanics": "Barre d'indices en fondu en haut (f141-f151). Chaque fenêtre apparaît d'abord comme un cadre de verre vide (fondu ≈ 6 im), puis son contenu se dessine 5-8 im après (bougies tracées de gauche à droite en ≈ 6 im). Ordre : graphique 5,2 s, liste de suivi 5,9 s (monte depuis le bas), chaîne d'options 6,2 s, positions 6,9 s, courbe de gain 7,3 s. Décalage 0,3 à 0,7 s.",
+      "verdict": "adapter",
+      "evidence": "extra-01.jpg, overview-02.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Données vivantes qui changent par paliers",
+      "name_en": "Live ticking data",
+      "t": "0:07.50-0:46.00",
+      "frames": "f225-f1380",
+      "fps": 30,
+      "mechanics": "Prix, pastille spot, P&L (+₹1 541 → 1 547 → 1 553…) et cellules de la chaîne d'options changent toutes les 10 im (f530, f540, f550 ; f450, f460), soit 3 Hz, sans interpolation. Donne de la vie aux maintiens, mais en très gros plan chaque palier fait sauter toute la géométrie (nouvelle bougie, point qui se déplace).",
+      "verdict": "adapter",
+      "evidence": "microM-003-move-f451.jpg, microM-005-move-f534.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Poussée lente vers le graphique",
+      "name_en": "Ease-in push-in",
+      "t": "0:10.00-0:13.70",
+      "frames": "f300-f411",
+      "fps": 30,
+      "mechanics": "Zoom continu du terminal entier vers la dernière bougie : pas presque nuls de f318 à f329, puis de plus en plus grands (ease-in) ; vers 11,5 s le graphique occupe le cadre, l'étiquette de prix passe de ≈ 4 % à ≈ 12 % de la hauteur entre 12 et 13,5 s. Ancrage sur le dernier prix, pas sur le centre.",
+      "verdict": "reprendre",
+      "evidence": "microM-001-move-f330.jpg, overview-03.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée jusqu'aux sous-pixels de l'écran",
+      "name_en": "Subpixel dive",
+      "t": "0:13.70-0:14.30",
+      "frames": "f405-f428",
+      "fps": 30,
+      "mechanics": "Accélération finale : l'étiquette 25 074 passe de ≈ 25 % à > 60 % de la largeur de la vignette en 15 im (f405-f420), le point de prix gagne un halo blanc-bleu ≈ 15 % de la hauteur. À f420 une grille de sous-pixels RVB (bandes verticales rouge/vert/bleu, cellules ≈ 1,5 % du cadre) apparaît en fondu sur 6 im : on voit l'écran physique. Le HUD affiche ≈ 45×.",
+      "verdict": "reprendre",
+      "evidence": "microM-002-move-f411.jpg",
+      "illus": {"from": 405, "to": 428, "n": 6}
+    },
+    {
+      "cat": "texture",
+      "name_fr": "Rendu en matrice de sous-pixels RVB",
+      "name_en": "RGB subpixel rendering",
+      "t": "0:14.30-0:16.80",
+      "frames": "f429-f503",
+      "fps": 30,
+      "mechanics": "Les bougies deviennent des colonnes de sous-pixels verts (haussières) ou rouges (baissières), le point de prix un disque fait de bandes R/V/B ; fond en grille bleu nuit très sombre. Dérive lente, halo bleu derrière le point. Matérialise l'idée d'« échelle ultime » sans aucune 3D.",
+      "verdict": "reprendre",
+      "evidence": "microM-003-move-f451.jpg, microM-004-move-f496.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Recul hors des sous-pixels avec bascule de détail",
+      "name_en": "Pull-out with LOD switch",
+      "t": "0:16.53-0:17.10",
+      "frames": "f496-f513",
+      "fps": 30,
+      "mechanics": "Dézoom de 17 im (0,57 s) : l'étiquette « 25 » redevient « 25,070.79 ». La grille RVB disparaît d'un coup entre f503 et f504 (seuil d'échelle, pas de fondu), puis atterrissage ease-out sur f508-f513. Le saut de rendu est visible mais masqué par la vitesse.",
+      "verdict": "adapter",
+      "evidence": "microM-004-move-f496.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Visite guidée de fenêtre en fenêtre",
+      "name_en": "Guided camera tour",
+      "t": "0:17.40-0:24.60",
+      "frames": "f522-f739",
+      "fps": 30,
+      "mechanics": "Trois déplacements caméra : graphique → chaîne d'options (f522-f534, 12 im, pan + zoom, ligne ATM posée au centre vertical), chaîne → positions (f609-f640, ≈ 1 s, recul puis descente), positions → terminal entier (f710-f739, 0,9 s, ease-in-out : pas lents f710-f716, rapides f716-f722, petits f722-f739). Chaque arrêt dure 2,5 s.",
+      "verdict": "adapter",
+      "evidence": "microM-005-move-f534.jpg, microM-006-move-f609.jpg, microM-007-move-f722.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Chaîne d'options avec ligne du prix spot",
+      "name_en": "Option chain with spot line",
+      "t": "0:17.40-0:20.30",
+      "frames": "f522-f609",
+      "fps": 30,
+      "mechanics": "Tableau strike au centre (gras blanc, IV en dessous en gris), barres d'open interest rouges à gauche, vertes à droite ; une ligne fine lavande traverse la table avec une pastille bleue #5B86F5 « 25,067.76 » qui suit le spot ; la ligne ATM a une bande ambrée #3A2E1E.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "data",
+      "name_fr": "Diagramme de gain iron condor",
+      "name_en": "Payoff diagram",
+      "t": "0:21.50-0:24.00",
+      "frames": "f645-f720",
+      "fps": 30,
+      "mechanics": "Plateau de gain vert translucide (trapèze), zones de perte rose translucide de part et d'autre, courbe « Today » lavande en cloche avec un point blanc sur le spot ; légendes « Max profit » vert et « Max loss » rouge en bas. Total P&L en vert ≈ 3 % de la hauteur.",
+      "verdict": "reprendre",
+      "evidence": "overview-04.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Zoom logarithmique jusqu'à une étoile",
+      "name_en": "Logarithmic zoom-out (Powers of Ten)",
+      "t": "0:25.80-0:27.60",
+      "frames": "f774-f828",
+      "fps": 30,
+      "mechanics": "Le terminal passe de ≈ 70 % de la largeur à un point en 54 im (1,8 s). La taille est divisée par 2 environ toutes les 10-12 im (rapport constant par image : vitesse perçue constante, sans freinage). Des étoiles apparaissent autour à partir de f822.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg",
+      "illus": {"from": 774, "to": 830, "n": 8}
+    },
+    {
+      "cat": "shape",
+      "name_fr": "Substitution de niveau de détail : interface → carte → étoile",
+      "name_en": "Level-of-detail substitution",
+      "t": "0:27.07-0:27.60",
+      "frames": "f812-f828",
+      "fps": 30,
+      "mechanics": "Sous ≈ 6 % de largeur, l'interface détaillée est remplacée par une carte simplifiée (rectangle sombre avec bloc menthe, f814) ; sous ≈ 2 %, par une étoile à aigrettes cerclée d'un anneau de visée, légendée « Sahi Terminal » (f828). Le remplacement est instantané mais invisible à cette taille.",
+      "verdict": "reprendre",
+      "evidence": "extra-02.jpg"
+    },
+    {
+      "cat": "other",
+      "name_fr": "HUD de grossissement à échelle logarithmique",
+      "name_en": "Magnification readout",
+      "t": "0:04.80-0:46.00",
+      "frames": "f145-f1380",
+      "fps": 30,
+      "mechanics": "En bas à gauche, minuscule (≈ 1,5 % de la hauteur) : « Magnification » gris + valeur mono (1.02×, 45.3×, 1.0 × 10⁻⁴) et un curseur sur une échelle 10⁻⁵ → 10². Ancre l'idée d'échelle, mais trop petit pour être lu sur mobile.",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "background",
+      "name_fr": "Champ d'étoiles et nébuleuse en fondu",
+      "name_en": "Starfield with nebula",
+      "t": "0:27.60-0:35.00",
+      "frames": "f828-f1050",
+      "fps": 30,
+      "mechanics": "Étoiles blanches à aigrettes en croix (taille variable 0,2-1,5 % du cadre), amas plus dense au centre ; nébuleuse en deux nappes radiales très floues bleu #1B2740 (centre-gauche) et magenta #3A1832 (haut-droite) qui apparaissent en fondu sur ≈ 1,2 s (f850-f885) et s'effacent en ≈ 0,3 s au retour (f1040-f1050).",
+      "verdict": "adapter",
+      "evidence": "overview-05.jpg, overview-06.jpg"
+    },
+    {
+      "cat": "narrative",
+      "name_fr": "Constellation sémantique : deux produits, deux étoiles",
+      "name_en": "Labeled star map",
+      "t": "0:28.40-0:34.40",
+      "frames": "f852-f1032",
+      "fps": 30,
+      "mechanics": "Deux étoiles cerclées et légendées (« Sahi Terminal », « Sahi Mobile ») dans le même ciel : le passage du bureau au mobile devient un voyage d'une étoile à l'autre. La transition est motivée par le récit, pas décorative.",
+      "verdict": "reprendre",
+      "evidence": "overview-05.jpg"
+    },
+    {
+      "cat": "camera",
+      "name_fr": "Plongée vers l'étoile qui devient un téléphone",
+      "name_en": "Zoom-in reveal from star to device",
+      "t": "0:34.40-0:37.10",
+      "frames": "f1032-f1112",
+      "fps": 30,
+      "mechanics": "Pan qui centre « Sahi Mobile » (f1032-f1046), zoom sur l'étoile (f1050-f1062), bascule en petit rectangle (f1064-f1066), puis le téléphone paysage grandit de ≈ 3 % à ≈ 80 % de la largeur en 42 im (1,4 s) : croissance exponentielle puis atterrissage ease-out sur f1100-f1112, sans dépassement.",
+      "verdict": "reprendre",
+      "evidence": "extra-03.jpg",
+      "illus": {"from": 1040, "to": 1112, "n": 8}
+    },
+    {
+      "cat": "layout",
+      "name_fr": "Écran mobile scindé graphique / chaîne d'options",
+      "name_en": "Split-screen mobile layout",
+      "t": "0:37.10-0:42.20",
+      "frames": "f1113-f1266",
+      "fps": 30,
+      "mechanics": "Téléphone paysage à coins très arrondis, cadre gris #2A2F36 ≈ 1 % ; moitié gauche graphique en bougies, moitié droite chaîne d'options compacte (Calls LTP / Strike / LTP Puts). Barre d'état iOS (14:06, réseau 5G) pour le réalisme.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg"
+    },
+    {
+      "cat": "ui",
+      "name_fr": "Parcours d'ordre : feuille d'achat, tap, toast de confirmation",
+      "name_en": "Order flow with toast",
+      "t": "0:38.90-0:40.50",
+      "frames": "f1167-f1215",
+      "fps": 30,
+      "mechanics": "Une feuille monte depuis le bas de la moitié droite en ≈ 0,6 s (« Buy NIFTY 29 Sep 25200 CE », bouton menthe pleine largeur) ; cercle de tap sur Buy vers 40,0 s ; la feuille redescend et une pilule « Order placed in 4.2 ms · Bought 25200 CE » avec coche menthe tombe en haut au centre ; la ligne achetée garde un contour menthe. Pas de curseur : seul le cercle de tap signale l'action.",
+      "verdict": "reprendre",
+      "evidence": "overview-07.jpg",
+      "illus": {"from": 1160, "to": 1215, "n": 6}
+    },
+    {
+      "cat": "type-design",
+      "name_fr": "Carte de fin en pile accroche / marque / slogan",
+      "name_en": "Stacked end card",
+      "t": "0:42.20-0:46.97",
+      "frames": "f1266-f1409",
+      "fps": 30,
+      "mechanics": "Le téléphone rétrécit de ≈ 75 % à ≈ 48 % de la largeur et monte dans le tiers supérieur (≈ 1,1 s, ease-in-out). Dessous : « Single screen trading on » (≈ 3 % de la hauteur, regular, gris clair), « Sahi » (≈ 12 %, gras, passe du gris #5A5F68 au blanc #EEF1F6 en ≈ 0,8 s), point bleu à halo sur le i, « Your Money. Your Move. » (≈ 2 %, gris très sombre, presque illisible). Maintien 3 s puis fondu au noir ≈ 20 im.",
+      "verdict": "adapter",
+      "evidence": "overview-08.jpg"
+    },
+    {
+      "cat": "color",
+      "name_fr": "Palette terminal sombre menthe / rose / lavande",
+      "name_en": "Dark trading palette",
+      "t": "0:04.80-0:46.00",
+      "frames": "f145-f1380",
+      "fps": 30,
+      "mechanics": "Fond quasi noir, une seule couleur positive (menthe #2EE6A6) et une négative (rose #F0506E), lavande et bleu réservés aux repères (moyenne mobile, prix spot, point). La même palette sert au bureau, aux sous-pixels, aux étoiles (halo lavande) et au mobile.",
+      "verdict": "reprendre",
+      "evidence": "overview-02.jpg"
+    },
+    {
+      "cat": "timing",
+      "name_fr": "Longs paliers entre les mouvements de caméra",
+      "name_en": "Long static holds",
+      "t": "0:00.00-0:46.97",
+      "frames": "f0-f1409",
+      "fps": 30,
+      "mechanics": "46 % de la durée en maintien : 3,3 s sur le point d'ouverture, 2,5 s par fenêtre visitée, 5 s de dérive spatiale, 3 s sur la carte de fin. Les mouvements font 0,4 à 1,8 s. Sans musique, ces paliers se lisent comme des temps morts.",
+      "verdict": "cliche",
+      "evidence": "rhythm.jpg"
+    }
+  ],
+  "prompt_insights": [
+    {"kind": "structure", "insight": "Le prompt est un storyboard en cinq étapes (point, fenêtres, zooms, bureau-point dans l'espace, mobile scindé, phrase finale). Claude le suit à la lettre et dans l'ordre : un storyboard explicite suffit à obtenir une structure fidèle."},
+    {"kind": "direction", "insight": "« zoom into and out at multiple scales » + « desktop look like a point in space » a été pris au pied de la lettre, jusqu'aux deux extrêmes (sous-pixels, étoiles) avec un HUD de grossissement : la consigne d'échelle a déclenché l'idée « Powers of Ten »."},
+    {"kind": "inputs", "insight": "Sans captures du vrai produit, Claude a inventé une interface crédible pour le marché indien (NIFTY, SENSEX, ₹, iron condor, strikes 24 850-25 300). « be detailed and accurate » a produit une densité d'interface élevée."},
+    {"kind": "build", "insight": "« use javascript » : une seule page qui simule des données en direct à 3 Hz. Avantage : interface vivante ; défaut : en gros plan, chaque mise à jour fait sauter la géométrie. Il aurait fallu figer les données pendant les zooms extrêmes."},
+    {"kind": "other", "insight": "Aucune durée, aucun tempo, aucune musique demandés : vidéo muette, paliers de 2,5 à 5 s. Préciser « 30 s, un événement toutes les 0,7 s, bande-son ambient » aurait resserré le montage."},
+    {"kind": "direction", "insight": "La fin demandée (« Single Screen Trading on SAHI », avec une faute de frappe) a été corrigée et enrichie d'un slogan inventé (« Your Money. Your Move. ») et du point bleu sur le i : Claude complète les signatures de marque."}
+  ],
+  "steal": [
+    "Ouvrir par un allumage de tube cathodique : point qui se contracte (2 im), ligne horizontale en 0,33 s, ouverture verticale en 0,5 s jusqu'au plein cadre.",
+    "Pour un zoom extrême, finir sur la grille de sous-pixels RVB de l'écran : l'échelle ultime sans 3D.",
+    "Zoom arrière logarithmique : diviser la taille par 2 toutes les 10 im, puis remplacer l'objet par une icône, puis par une étoile légendée.",
+    "Relier deux produits par une carte du ciel : chaque produit est une étoile nommée, la transition est un voyage de l'une à l'autre.",
+    "Faire revenir la forme d'ouverture (un point) dans le logo final, ici sur le i."
+  ],
+  "flaws": [
+    "46 % de maintiens statiques : 3,3 s sur un point seul, 5 s de dérive dans l'espace, 3 s de carte de fin.",
+    "Vidéo muette : aucun impact sonore sur l'allumage, les plongées ou le toast d'ordre.",
+    "Données vivantes à 3 Hz qui font sauter le cadre en très gros plan (f450, f460).",
+    "HUD de grossissement et slogan final trop petits ou trop sombres pour être lus."
+  ],
+  "deep_study": {
+    "worth": true,
+    "why": "Source à 30 fps (pas de 60 fps possible), mais les trois zooms (10-17 s sous-pixels, 25,8-27,6 s log vers l'étoile, 34,4-37,1 s étoile → téléphone) méritent une étude image par image : rapport d'échelle par image, seuils de bascule de détail, atterrissages ease-out, à reproduire en GSAP."
+  }
+}
